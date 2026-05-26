@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezepte</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.min.css">
+  <style>
+    :root {
+      --content-max-width: 60em;
+    }
+    .markdown-section table {
+      width: auto;
+      max-width: 100%;
+      display: table;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'Rezepte',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      homepage: 'CLAUDE.md',
+      search: {
+        placeholder: 'Suche',
+        noData: 'Keine Treffer',
+        depth: 3,
+      },
+      auto2top: true,
+      relativePath: true,
+    }
+  </script>
+  <!-- Docsify core -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <!-- Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+  <!-- GFM Alerts -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts@1"></script>
+</body>
+</html>

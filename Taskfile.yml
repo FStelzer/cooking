@@ -1,0 +1,37 @@
+version: '3'
+
+tasks:
+  default:
+    desc: Liste verfügbare Tasks
+    cmds:
+      - task --list
+
+  sidebar:
+    desc: Generiere _sidebar.md aus den Markdown-Dateien in Unterordnern
+    cmds:
+      - |
+        {
+          for dir in */; do
+            dir="${dir%/}"
+            case "$dir" in
+              .*) continue ;;
+            esac
+            files=""
+            for f in "$dir"/*.md; do
+              [ -e "$f" ] || continue
+              files="$files $f"
+            done
+            [ -z "$files" ] && continue
+            echo "- **${dir}**"
+            for f in $files; do
+              title=$(awk '/^# /{sub(/^# +/, ""); print; exit}' "$f")
+              [ -z "$title" ] && title=$(basename "$f" .md)
+              echo "  - [${title}](/${f})"
+            done
+          done
+        } > _sidebar.md
+
+  serve:
+    desc: Lokalen Python-Webserver auf Port 3000 starten
+    cmds:
+      - python3 -m http.server 3000
