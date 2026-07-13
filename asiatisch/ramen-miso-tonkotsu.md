@@ -15,21 +15,21 @@ Die Smashed Cucumber und die Yuzu Panna Cotta passen hier ideal rein, da sie sic
 **Benötigtes Brühen-Volumen am Ende:** ca. 2,5 - 3 Liter
 **Aktive Zeit:** ~3h
 **Gesamtzeit:** ~8-9h (Tonkotsu braucht Zeit zum Emulgieren!)
-**Topf:** Mindestens 8 Liter (besser 10L), da es stark sprudeln muss.
+**Topf:** Der 14L-Topf. Mit 5-6L Wasser plus ~2,5-3kg Knochen und aggressivem Sprudeln wäre ein 8-10L-Topf gefährlich voll — im 14er ist genug Reserve gegen Überkochen.
 
 ---
 
 ## Einkaufsliste
 
 ### 1. Selgros (Fleischtheke & Gastro-Bedarf)
-- [ ] **1,5 - 2 kg Schweinehalsknochen** (Neck bones / Nackenknochen). *Lass sie dir vom Metzger ggf. einmal durchsägen.*
-- [ ] **2 Schweinefüße (Spitzbeine, gesägt)**. *Extrem wichtig: Vom Metzger der Länge nach halbieren lassen! Die Knochen sind steinhart, du brauchst aber das Innere (Kollagen).*
+- [ ] **1,5 - 2 kg Schweinehalsknochen** (Neck bones / Nackenknochen). *Lass sie dir vom Metzger ggf. einmal durchsägen.* — *Preis: ca. 2-3 €/kg an der Metzgertheke, also ~4-6 € gesamt. Knochen sind Schlacht-"Abfall", das kostet fast nichts.*
+- [ ] **2-3 Schweinefüße (Spitzbeine, gesägt)**. *Extrem wichtig: Vom Metzger der Länge nach halbieren lassen! Die Knochen sind steinhart, du brauchst aber das Innere (Kollagen).* — *Preis: ca. 2-3 €/kg (Supermarkt-Abpackungen ~2,80 €/kg; Online-Edelmetzger verlangen 5,50-8,90 €/kg, das ist NICHT der Maßstab). Ein Fuß wiegt ~700-900g → 3 Stück ca. 4-7 €. Bei dem Preis lieber 3 statt 2 nehmen — mehr Kollagen = cremigere Brühe.*
 - [ ] **600g Schweinehackfleisch** (gern etwas fetter, z.B. gemischt aus Bauch und Schulter).
 
 ### 2. Asialaden
 - [ ] **Helle Miso-Paste (Shiro Miso)**, mind. 200g
 - [ ] **Dunkle Miso-Paste (Aka Miso)**, mind. 100g
-- [ ] **Ramen-Nudeln:** ~800g bis 1kg. *Pro-Tipp für Miso: Nimm dicke, gewellte Nudeln (Temomi-Style), sie fangen die dicke Brühe und das Hackfleisch besser ein als die ganz dünnen Hakata-Nudeln.*
+- [ ] **Ramen-Nudeln:** frisch ~900g (150g/Portion) ODER trocken ~550-600g (90-100g/Portion — z.B. Hakubaku, die haben zuverlässig Trocken-Ramen; frische vorher anrufen!). *Pro-Tipp für Miso: Nimm dicke, gewellte Nudeln (Temomi-Style), sie fangen die dicke Brühe und das Hackfleisch besser ein als die ganz dünnen Hakata-Nudeln.*
 - [ ] **Geröstetes Sesamöl**
 - [ ] **Weiße Sesamsamen** (ungeschält)
 - [ ] *(Optional)* **Rayu (japanisches Chili-Öl)** für die Erwachsenen am Tisch.
@@ -145,4 +145,4 @@ Da Tonkotsu länger kochen muss als Geflügel, fangen wir etwas früher an.
 | **18:30** | **Servieren & Genießen!** |
 | **19:30** | **Dessert servieren: Yuzu Panna Cotta mit den Agar-Agar Frucht-Kanten on top.** |
 
-Alternativ: Am Vortag bereits die Knochen wässern & blanchieren / waschen. Am Schluss die knochen gut abtropfen und danach in Tupperdose oder Gefrierbeutel in den Kühlschrank. Panna Cotta und Frucht-Kanten können ebenfalls problemlos am Vortag gemacht werden!cht werden!
+Alternativ: Am Vortag bereits die Knochen wässern & blanchieren / waschen. Am Schluss die knochen gut abtropfen und danach in Tupperdose oder Gefrierbeutel in den Kühlschrank. Panna Cotta und Frucht-Kanten können ebenfalls problemlos am Vortag gemacht werden!
