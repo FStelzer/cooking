@@ -29,34 +29,34 @@
 ### Asialaden (zuerst, vorher anrufen wegen Nudeln)
 
 **Pflicht:**
-- Frische Ramen-Nudeln, ~400-500g — ODER japanische Trocken-Ramen mit Kansui (Hakubaku organic funktioniert sehr gut)
-- Mirin, mind. 400ml
-- Kochsake (Ryorishu), mind. 400-500ml
-- Japanische Sojasauce (Kikkoman/Yamasa), mind. 500ml
-- Kombu, ~30-50g
-- Katsuobushi (Bonitoflocken)
-- Getrocknete Shiitake — **NUR 1-2 STÜCK BENÖTIGT** (siehe Learnings)
-- Nori-Blätter
+- [ ] Frische Ramen-Nudeln, ~400-500g — ODER japanische Trocken-Ramen mit Kansui (Hakubaku organic funktioniert sehr gut)
+- [ ] Mirin, mind. 400ml
+- [ ] Kochsake (Ryorishu), mind. 400-500ml
+- [ ] Japanische Sojasauce (Kikkoman/Yamasa), mind. 500ml
+- [ ] Kombu, ~30-50g
+- [ ] Katsuobushi (Bonitoflocken)
+- [ ] Getrocknete Shiitake — **NUR 1-2 STÜCK BENÖTIGT** (siehe Learnings)
+- [ ] Nori-Blätter
 
 **Empfehlenswert:**
-- Frische Frühlingszwiebeln
-- Menma (Bambussprossen im Glas)
+- [ ] Frische Frühlingszwiebeln
+- [ ] Menma (Bambussprossen im Glas)
 
 **Optional Toppings:**
-- Narutomaki/Kamaboko (TK Fischrolle)
-- Shimeji-Pilze (besser als Enoki, siehe Learnings)
+- [ ] Narutomaki/Kamaboko (TK Fischrolle)
+- [ ] Shimeji-Pilze (besser als Enoki, siehe Learnings)
 
 ### REWE Center / Metzger
 
-- 1 großes Suppenhuhn (~1,1-1,5kg) + 800g Hähnchenflügel (Alternative zu Karkassen falls nicht verfügbar)
-- 500-700g Schweinebauch ohne Knochen, am Stück (kein Bacon!)
-- 6 Eier (M, frisch)
-- 1 große Zwiebel
-- 1 Stange Lauch
-- 1 Knolle Knoblauch (+ extra für Chiyu)
-- 5-7cm Ingwer
-- 1 Bund Möhren
-- 1 Bund Frühlingszwiebeln (Backup)
+- [ ] 1 großes Suppenhuhn (~1,1-1,5kg) + 800g Hähnchenflügel (Alternative zu Karkassen falls nicht verfügbar)
+- [ ] 500-700g Schweinebauch ohne Knochen, am Stück (kein Bacon!)
+- [ ] 6 Eier (M, frisch)
+- [ ] 1 große Zwiebel
+- [ ] 1 Stange Lauch
+- [ ] 1 Knolle Knoblauch (+ extra für Chiyu)
+- [ ] 5-7cm Ingwer
+- [ ] 1 Bund Möhren
+- [ ] 1 Bund Frühlingszwiebeln (Backup)
 
 **Kosten:** ~30-40€ je nach Hausvorräten
 

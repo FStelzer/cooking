@@ -9,25 +9,25 @@
 
 ## Einkaufsliste
 
-- 1 lebender oder roher Hummer (~600 g)
-- 300–400 g rohe Garnelen **mit Schale** (oder Kaisergranat) — Karkassen für die Bisque, Fleisch als Einlage
-- ~90 g Butter gesamt: 40 g zum Rösten + 30 g eiskalt (zum Aufmontieren) + 15 g zum Glasieren
-- 2 EL Olivenöl (neutral)
-- 2 Schalotten
-- 1 Karotte (~100 g)
-- ½ kleine Fenchelknolle (~100 g)
-- 1 Stange Staudensellerie
-- 2 Knoblauchzehen
-- 2 EL Tomatenmark
-- 40 ml Cognac oder Brandy
-- 200 ml trockener Weißwein
-- 1000 ml Wasser oder heller Hühnerfond (durch die Garnelenkarkassen ist gekaufter Fischfond unnötig — Wasser gibt das reinere Krustentier-Aroma)
-- 25 g Langkornreis (roh, zum Binden)
-- 1 Lorbeerblatt, 2 Zweige Thymian, 1 Zweig Estragon
-- Cayennepfeffer (kommt **pro Teller** dazu, nicht in den Topf — siehe Kinder-Hinweis)
-- 200 ml Sahne (mind. 30 %)
-- 1 TL Zitronensaft
-- Salz (reichlich fürs Blanchierwasser)
+- [ ] 1 lebender oder roher Hummer (~600 g)
+- [ ] 300–400 g rohe Garnelen **mit Schale** (oder Kaisergranat) — Karkassen für die Bisque, Fleisch als Einlage
+- [ ] ~90 g Butter gesamt: 40 g zum Rösten + 30 g eiskalt (zum Aufmontieren) + 15 g zum Glasieren
+- [ ] 2 EL Olivenöl (neutral)
+- [ ] 2 Schalotten
+- [ ] 1 Karotte (~100 g)
+- [ ] ½ kleine Fenchelknolle (~100 g)
+- [ ] 1 Stange Staudensellerie
+- [ ] 2 Knoblauchzehen
+- [ ] 2 EL Tomatenmark
+- [ ] 40 ml Cognac oder Brandy
+- [ ] 200 ml trockener Weißwein
+- [ ] 1000 ml Wasser oder heller Hühnerfond (durch die Garnelenkarkassen ist gekaufter Fischfond unnötig — Wasser gibt das reinere Krustentier-Aroma)
+- [ ] 25 g Langkornreis (roh, zum Binden)
+- [ ] 1 Lorbeerblatt, 2 Zweige Thymian, 1 Zweig Estragon
+- [ ] Cayennepfeffer (kommt **pro Teller** dazu, nicht in den Topf — siehe Kinder-Hinweis)
+- [ ] 200 ml Sahne (mind. 30 %)
+- [ ] 1 TL Zitronensaft
+- [ ] Salz (reichlich fürs Blanchierwasser)
 
 ## Zubereitung
 

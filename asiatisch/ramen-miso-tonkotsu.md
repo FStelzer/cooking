@@ -22,32 +22,32 @@ Die Smashed Cucumber und die Yuzu Panna Cotta passen hier ideal rein, da sie sic
 ## Einkaufsliste
 
 ### 1. Selgros (Fleischtheke & Gastro-Bedarf)
-*   **1,5 - 2 kg Schweinehalsknochen** (Neck bones / Nackenknochen). *Lass sie dir vom Metzger ggf. einmal durchsägen.*
-*   **2 Schweinefüße (Spitzbeine, gesägt)**. *Extrem wichtig: Vom Metzger der Länge nach halbieren lassen! Die Knochen sind steinhart, du brauchst aber das Innere (Kollagen).*
-*   **600g Schweinehackfleisch** (gern etwas fetter, z.B. gemischt aus Bauch und Schulter).
+- [ ] **1,5 - 2 kg Schweinehalsknochen** (Neck bones / Nackenknochen). *Lass sie dir vom Metzger ggf. einmal durchsägen.*
+- [ ] **2 Schweinefüße (Spitzbeine, gesägt)**. *Extrem wichtig: Vom Metzger der Länge nach halbieren lassen! Die Knochen sind steinhart, du brauchst aber das Innere (Kollagen).*
+- [ ] **600g Schweinehackfleisch** (gern etwas fetter, z.B. gemischt aus Bauch und Schulter).
 
 ### 2. Asialaden
-*   **Helle Miso-Paste (Shiro Miso)**, mind. 200g
-*   **Dunkle Miso-Paste (Aka Miso)**, mind. 100g
-*   **Ramen-Nudeln:** ~800g bis 1kg. *Pro-Tipp für Miso: Nimm dicke, gewellte Nudeln (Temomi-Style), sie fangen die dicke Brühe und das Hackfleisch besser ein als die ganz dünnen Hakata-Nudeln.*
-*   **Geröstetes Sesamöl**
-*   **Weiße Sesamsamen** (ungeschält)
-*   *(Optional)* **Rayu (japanisches Chili-Öl)** für die Erwachsenen am Tisch.
-*   *(Optional)* **Panko** (falls du doch noch was Knuspriges willst, aber hier nicht zwingend).
-*   **Reisessig** (für die Gurken)
-*   **Yuzu-Saft** in der Flasche (für das Dessert)
-*   **Agar-Agar Pulver** (für die Frucht-Kanten)
+- [ ] **Helle Miso-Paste (Shiro Miso)**, mind. 200g
+- [ ] **Dunkle Miso-Paste (Aka Miso)**, mind. 100g
+- [ ] **Ramen-Nudeln:** ~800g bis 1kg. *Pro-Tipp für Miso: Nimm dicke, gewellte Nudeln (Temomi-Style), sie fangen die dicke Brühe und das Hackfleisch besser ein als die ganz dünnen Hakata-Nudeln.*
+- [ ] **Geröstetes Sesamöl**
+- [ ] **Weiße Sesamsamen** (ungeschält)
+- [ ] *(Optional)* **Rayu (japanisches Chili-Öl)** für die Erwachsenen am Tisch.
+- [ ] *(Optional)* **Panko** (falls du doch noch was Knuspriges willst, aber hier nicht zwingend).
+- [ ] **Reisessig** (für die Gurken)
+- [ ] **Yuzu-Saft** in der Flasche (für das Dessert)
+- [ ] **Agar-Agar Pulver** (für die Frucht-Kanten)
 
 ### 3. REWE Center / Supermarkt
-*   **Sojasauce, Sake, Mirin** (falls leer vom letzten Mal. Achtung: Durch Gurken-Marinade etwas mehr Sojasauce nötig!)
-*   **1 Dose Zuckermais** (Kinder-Favorit!)
-*   **250g Sojasprossen (Moyashi)**
-*   **Gute Butter** (z.B. Süßrahm)
-*   **6-8 Eier (M)**
-*   **Gemüse für Brühe & Topping:** 1 dicke Lauchstange, 1 Bund Lauchzwiebeln (Frühlingszwiebeln), 2 große Gemüsezwiebeln, 2 Knollen Knoblauch, 1 großes Stück Ingwer (ca. 10cm).
-*   **3 Salatgurken** (für die Vorspeise)
-*   **500ml Sahne, 200ml Vollmilch, 4 Blatt Gelatine** (für die Panna Cotta)
-*   **150g frische Beeren** (z.B. Himbeeren/Blaubeeren) oder etwas Melone (für die Frucht-Kanten)
+- [ ] **Sojasauce, Sake, Mirin** (falls leer vom letzten Mal. Achtung: Durch Gurken-Marinade etwas mehr Sojasauce nötig!)
+- [ ] **1 Dose Zuckermais** (Kinder-Favorit!)
+- [ ] **250g Sojasprossen (Moyashi)**
+- [ ] **Gute Butter** (z.B. Süßrahm)
+- [ ] **6-8 Eier (M)**
+- [ ] **Gemüse für Brühe & Topping:** 1 dicke Lauchstange, 1 Bund Lauchzwiebeln (Frühlingszwiebeln), 2 große Gemüsezwiebeln, 2 Knollen Knoblauch, 1 großes Stück Ingwer (ca. 10cm).
+- [ ] **3 Salatgurken** (für die Vorspeise)
+- [ ] **500ml Sahne, 200ml Vollmilch, 4 Blatt Gelatine** (für die Panna Cotta)
+- [ ] **150g frische Beeren** (z.B. Himbeeren/Blaubeeren) oder etwas Melone (für die Frucht-Kanten)
 
 ---
 

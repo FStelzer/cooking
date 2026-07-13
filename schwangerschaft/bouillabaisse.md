@@ -47,54 +47,54 @@ Beim Händler in dieser Reihenfolge fragen:
 
 ### Für den Fond (Samstag)
 
-- 1,5 kg Fischkarkassen von weißen Fischen (mit Köpfen, ohne Kiemen)
-- 2 mittelgroße Fenchelknollen
-- 2 mittelgroße Zwiebeln
-- 1 Lauchstange (nur weißer Teil)
-- 1 Knoblauchknolle
-- 4 reife Tomaten
-- 1 Dose (400 g) stückige Tomaten
-- 1 EL Tomatenmark
-- 3 EL Olivenöl
-- 1 g Safranfäden (Premium, La Mancha oder iranisch)
-- 1 TL Fenchelsamen
-- 1 TL schwarze Pfefferkörner
-- 1 Sternanis
-- 2 Lorbeerblätter
-- 5 Zweige frischer Thymian
-- 1 Bund Petersilie
-- 1 daumengroßer Streifen Bio-Orangenzeste
-- 1 TL Meersalz
+- [ ] 1,5 kg Fischkarkassen von weißen Fischen (mit Köpfen, ohne Kiemen)
+- [ ] 2 mittelgroße Fenchelknollen
+- [ ] 2 mittelgroße Zwiebeln
+- [ ] 1 Lauchstange (nur weißer Teil)
+- [ ] 1 Knoblauchknolle
+- [ ] 4 reife Tomaten
+- [ ] 1 Dose (400 g) stückige Tomaten
+- [ ] 1 EL Tomatenmark
+- [ ] 3 EL Olivenöl
+- [ ] 1 g Safranfäden (Premium, La Mancha oder iranisch)
+- [ ] 1 TL Fenchelsamen
+- [ ] 1 TL schwarze Pfefferkörner
+- [ ] 1 Sternanis
+- [ ] 2 Lorbeerblätter
+- [ ] 5 Zweige frischer Thymian
+- [ ] 1 Bund Petersilie
+- [ ] 1 daumengroßer Streifen Bio-Orangenzeste
+- [ ] 1 TL Meersalz
 
 ### Für die Rouille (Samstag)
 
-- 200 g mehligkochende Kartoffeln
-- 5 Knoblauchzehen
-- 0,5 g Safranfäden
-- 150 ml Olivenöl extra vergine
-- 1 EL frischer Zitronensaft
-- 1 Prise Cayennepfeffer
-- ½ TL Meersalz
+- [ ] 200 g mehligkochende Kartoffeln
+- [ ] 5 Knoblauchzehen
+- [ ] 0,5 g Safranfäden
+- [ ] 150 ml Olivenöl extra vergine
+- [ ] 1 EL frischer Zitronensaft
+- [ ] 1 Prise Cayennepfeffer
+- [ ] ½ TL Meersalz
 
 ### Für die Suppe (Sonntag)
 
-- 250 g festes weißes Filet (Heilbutt oder Seeteufel)
-- 250 g zarteres weißes Filet (Wolfsbarsch oder Petersfisch)
-- 300 g Gambas mit Schale (8–10 Stück)
-- 300 g Vongole oder Aquakultur-Miesmuscheln (optional)
+- [ ] 250 g festes weißes Filet (Heilbutt oder Seeteufel)
+- [ ] 250 g zarteres weißes Filet (Wolfsbarsch oder Petersfisch)
+- [ ] 300 g Gambas mit Schale (8–10 Stück)
+- [ ] 300 g Vongole oder Aquakultur-Miesmuscheln (optional)
 
 ### Für den Salat (Sonntag)
 
-- 1 große oder 2 kleine Fenchelknollen mit Grün
-- 2 mittelgroße Bio-Orangen (Navel)
-- ½ kleine rote Zwiebel
-- 50 g Taggiasca- oder Kalamata-Oliven, entsteint
-- 1 EL Pistazien grob gehackt (optional)
-- 3–4 EL Olivenöl extra vergine
-- Saft von ½ Zitrone
-- Meersalz, schwarzer Pfeffer
-- Frische Minze oder Fenchelgrün
-- Optional: 1 EL Kapern (statt Sardellen)
+- [ ] 1 große oder 2 kleine Fenchelknollen mit Grün
+- [ ] 2 mittelgroße Bio-Orangen (Navel)
+- [ ] ½ kleine rote Zwiebel
+- [ ] 50 g Taggiasca- oder Kalamata-Oliven, entsteint
+- [ ] 1 EL Pistazien grob gehackt (optional)
+- [ ] 3–4 EL Olivenöl extra vergine
+- [ ] Saft von ½ Zitrone
+- [ ] Meersalz, schwarzer Pfeffer
+- [ ] Frische Minze oder Fenchelgrün
+- [ ] Optional: 1 EL Kapern (statt Sardellen)
 
 ---
 

@@ -24,47 +24,47 @@
 *Mengen enthalten ca. 20% Puffer für Verschnitt, Abschmecken und kleine Pannen.*
 
 ### Fisch & Fleisch
-- 10 frische Jakobsmuscheln ohne Schale (ca. 40g/Stück) — 2 Reserve
-- 3 Entenbrüste (je ca. 350-400g) — 1 Reserve oder für größere Portionen
+- [ ] 10 frische Jakobsmuscheln ohne Schale (ca. 40g/Stück) — 2 Reserve
+- [ ] 3 Entenbrüste (je ca. 350-400g) — 1 Reserve oder für größere Portionen
 
 ### Gemüse & Obst
-- 1 großer Blumenkohl (ca. 700g) — Püree
-- 1 große Sellerieknolle (ca. 600g) — Consommé
-- 800g festkochende Kartoffeln (z.B. Annabelle, Linda) — Baumkuchen
-- 12 kleine Karotten mit Grün (Bundmöhren) — 8 zum Servieren, Rest Reserve
-- 4 Birnen (Abate Fetel ideal, oder sehr feste Williams) — Kompott
-- 2 Granny-Smith-Äpfel — 1 für Brunoise, 1 Reserve
-- 250g Sauerkirschen (TK oder Glas, Abtropfgewicht) — Sauce
-- 3 Schalotten
-- 1 Bund frischer Thymian
-- 1 Stange Staudensellerie (für die Blätter als Garnitur)
-- 3 Zitronen (Nussbutter + Apfel-Brunoise + Birnen-Kompott)
+- [ ] 1 großer Blumenkohl (ca. 700g) — Püree
+- [ ] 1 große Sellerieknolle (ca. 600g) — Consommé
+- [ ] 800g festkochende Kartoffeln (z.B. Annabelle, Linda) — Baumkuchen
+- [ ] 12 kleine Karotten mit Grün (Bundmöhren) — 8 zum Servieren, Rest Reserve
+- [ ] 4 Birnen (Abate Fetel ideal, oder sehr feste Williams) — Kompott
+- [ ] 2 Granny-Smith-Äpfel — 1 für Brunoise, 1 Reserve
+- [ ] 250g Sauerkirschen (TK oder Glas, Abtropfgewicht) — Sauce
+- [ ] 3 Schalotten
+- [ ] 1 Bund frischer Thymian
+- [ ] 1 Stange Staudensellerie (für die Blätter als Garnitur)
+- [ ] 3 Zitronen (Nussbutter + Apfel-Brunoise + Birnen-Kompott)
 
 ### Milchprodukte & Eier
-- 600ml Sahne (mind. 30% Fett) — Püree, Parfait, Karamell, Kartoffelbaumkuchen
-- 400g Butter (Markenbutter)
-- 8 Eier (Eigelb: 4 für Parfait, 2 für Kartoffelbaumkuchen, 2 Reserve)
-- 150ml Vollmilch
+- [ ] 600ml Sahne (mind. 30% Fett) — Püree, Parfait, Karamell, Kartoffelbaumkuchen
+- [ ] 400g Butter (Markenbutter)
+- [ ] 8 Eier (Eigelb: 4 für Parfait, 2 für Kartoffelbaumkuchen, 2 Reserve)
+- [ ] 150ml Vollmilch
 
 ### Nüsse & Trockenprodukte
-- 100g Haselnüsse (ganz, geschält) — Vorspeise
-- 150g Pekannüsse — Parfait + Deko
-- 1kg feiner Zucker (du brauchst ca. 250g, aber Karamell kann verbrennen — lieber Reserve!)
-- 1 Vanilleschote (oder 1 TL Vanillepaste)
-- 1 Zimtstange oder 2 Sternanis (optional, für Kompott)
-- Amarettini oder Spekulatius (optional, für extra Crunch)
+- [ ] 100g Haselnüsse (ganz, geschält) — Vorspeise
+- [ ] 150g Pekannüsse — Parfait + Deko
+- [ ] 1kg feiner Zucker (du brauchst ca. 250g, aber Karamell kann verbrennen — lieber Reserve!)
+- [ ] 1 Vanilleschote (oder 1 TL Vanillepaste)
+- [ ] 1 Zimtstange oder 2 Sternanis (optional, für Kompott)
+- [ ] Amarettini oder Spekulatius (optional, für extra Crunch)
 
 ### Gewürze & Sonstiges
-- Fleur de Sel (hochwertiges Meersalz)
-- Feines Meersalz (zum Kochen)
-- Schwarzer Pfeffer (ganze Körner, frisch gemahlen)
-- Weißer Pfeffer (für helle Pürees)
-- 1 ganze Muskatnuss
-- Gutes Olivenöl (zum Finishen)
-- 250ml Ruby Portwein
-- 800ml Geflügelfond (2 Gläser à 400ml — 1 Reserve falls Sauce zu stark einkocht)
-- Neutrales Öl zum Braten (Rapsöl oder Sonnenblumenöl)
-- Butterschmalz oder Ghee (für Kartoffelbaumkuchen)
+- [ ] Fleur de Sel (hochwertiges Meersalz)
+- [ ] Feines Meersalz (zum Kochen)
+- [ ] Schwarzer Pfeffer (ganze Körner, frisch gemahlen)
+- [ ] Weißer Pfeffer (für helle Pürees)
+- [ ] 1 ganze Muskatnuss
+- [ ] Gutes Olivenöl (zum Finishen)
+- [ ] 250ml Ruby Portwein
+- [ ] 800ml Geflügelfond (2 Gläser à 400ml — 1 Reserve falls Sauce zu stark einkocht)
+- [ ] Neutrales Öl zum Braten (Rapsöl oder Sonnenblumenöl)
+- [ ] Butterschmalz oder Ghee (für Kartoffelbaumkuchen)
 
 ---
 

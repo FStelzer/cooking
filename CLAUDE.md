@@ -115,6 +115,22 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
    wenn gut beschaffbar (im Zweifel auch amazone / online) und nicht allzu teuer oder zumindest
    für viele andere Dinge nützlich und nicht nur für ein einziges Rezept
 
+## Format: Einkaufslisten (immer so!)
+
+- **Abhakbar:** Einkaufslisten-Einträge immer als GFM-Task-Liste schreiben
+  (`- [ ] Zutat, Menge`), NICHT als normale Bullets. Die Docsify-Seite nutzt das
+  Plugin `docsify-interactive-checkboxes` (eingebunden in `index.html`), das die
+  Checkboxen im Browser anklickbar macht und den Zustand im localStorage speichert.
+- Gilt NUR für Einkaufslisten — Zubereitungsschritte, Zeitpläne etc. bleiben
+  normale Listen/Absätze.
+- **Sortierung:** Immer nach Laden gruppieren (`###`-Überschrift pro Laden, in
+  sinnvoller Besuchs-Reihenfolge, siehe Einkaufslogik oben) und/oder innerhalb
+  nach Warengruppen, wie man sie im Laden beieinander findet: Obst/Gemüse,
+  Kühltheke (Fisch/Fleisch), Milchprodukte/Eier, Trockenwaren, Gewürze, …
+- **Achtung beim Editieren:** Die Checkbox-IDs hängen am Eintragstext — wer eine
+  Zeile umformuliert, setzt deren Haken zurück. Unkritisch, aber bei Anpassungen
+  kurz erwähnen wenn eine Liste vermutlich gerade "in Benutzung" ist.
+
 ## Bisherige Projekte
 
 - ✅ **Shoyu-Ramen mit Chintan-Brühe** (siehe `asiatisch/ramen-shoyu-chintan.md`)
