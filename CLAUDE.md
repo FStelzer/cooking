@@ -18,7 +18,8 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 ## Equipment
 
 ### Vorhanden
-- **Größter Topf: 6L** (Limitierung für Brühen-Projekte!)
+- **Größter Topf: 14L** (seit Juli 2026 — Paitan/Tonkotsu-Style und große Brühen-Mengen jetzt möglich)
+- Zweitgrößter Topf: 6L
 - Bräter/Schmortopf (für Osso Buco-Style Gerichte)
 - Stabmixer
 - Fleischthermometer
@@ -28,7 +29,6 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 - Standard Pfannen, Kleinkram
 
 ### Fehlt / Wäre gut zu haben
-- 8-10L Topf (für Paitan/Tonkotsu-Style, große Mengen)
 - Bunsenbrenner (für Aburi-Effekte)
 
 ## Einkaufsquellen
@@ -90,8 +90,9 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 
 ## Generelle Patterns für Rezept-Empfehlungen
 
-1. **Topfgröße immer mitdenken:** 6L ist die harte Grenze. Rezepte für mehr Volumen
-   → explizit anmerken oder anpassen (z.B. Wassermenge reduzieren).
+1. **Topfgröße immer mitdenken:** 14L ist die harte Grenze (großer Topf), daneben
+   6L für kleinere Brühen. Rezepte für mehr Volumen → explizit anmerken oder
+   anpassen (z.B. Wassermenge reduzieren).
 
 2. **Mengen-Mathematik prüfen:** Wenn mehrere Komponenten dieselbe Zutat brauchen
    (z.B. Sojasauce für Tare + Chashu + Eier-Marinade), die Gesamtmenge auf der
@@ -132,7 +133,7 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 ## Ideen für nächste Projekte
 
 - Tokyo-Style Shoyu mit Niboshi (Fisch-Tiefe statt Pilz)
-- Tori-Paitan (sobald größerer Topf vorhanden)
+- Tori-Paitan (14L-Topf jetzt vorhanden!)
 - Andere asiatische Tiefen-Projekte (Pho, Tantanmen ohne Schärfe, etc.)
 - Weiteres Degustationsmenü (Jakobsmuscheln + starkes Dessert als Gerüst)
 
