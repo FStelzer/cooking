@@ -76,6 +76,11 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 - Großes Sortiment japanischer Spezialitäten (kein japanischer Großhandel)
 - Spezielle Sake-Sorten (nur eine einzige eher zum Trinken gedacht)
 
+### Buhara Seafood (Dietzenbach, nah)
+- Gut sortierter Fischhändler
+- **Erste Anlaufstelle für Fisch & Meeresfrüchte** (Hummer, Garnelen mit Schale etc.)
+- Bei Spezialwünschen vorher anfragen; Fallback: Selgros (TK)
+
 ### Selgros (Großhandel, weiter weg)
 - Großhandel-Charakter, große Gebinde
 - Bei einem Trip kann nicht der Asialaden besucht werden → Trade-off

@@ -1,6 +1,8 @@
 - **asiatisch**
   - [Sapporo-Style Miso-Tonkotsu-Ramen Menü](/asiatisch/ramen-miso-tonkotsu.md)
   - [Shoyu-Ramen mit Hähnchen-Chintan-Brühe](/asiatisch/ramen-shoyu-chintan.md)
+- **gerichte**
+  - [Hummerbisque](/gerichte/hummerbisque.md)
 - **menues**
   - [Degustationsmenü — Hochzeitstag](/menues/menue-hochzeitstag.md)
 - **schwangerschaft**
