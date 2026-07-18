@@ -1,8 +1,12 @@
 - **asiatisch**
   - [Sapporo-Style Miso-Tonkotsu-Ramen Menü](/asiatisch/ramen-miso-tonkotsu.md)
   - [Shoyu-Ramen mit Hähnchen-Chintan-Brühe](/asiatisch/ramen-shoyu-chintan.md)
+  - [Thịt kho trứng — Karamell-Schweinefleisch](/asiatisch/thit-kho-trung.md)
 - **gerichte**
+  - [Geschmorter Oktopus, griechische Art](/gerichte/oktopus-geschmort.md)
   - [Hummerbisque](/gerichte/hummerbisque.md)
+- **einkaufslisten**
+  - [Oktopus + Thịt kho (kombiniert)](/einkaufslisten/oktopus-thit-kho.md)
 - **menues**
   - [Degustationsmenü — Hochzeitstag](/menues/menue-hochzeitstag.md)
 - **schwangerschaft**
