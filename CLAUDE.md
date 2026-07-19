@@ -146,12 +146,29 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
     einfachere Kartoffelbeilage. Entenbrust solide aber kein Highlight.
   - Learning: Aufwand ≠ Wow. Perfekte Ausführung simpler Techniken oft wirkungsvoller.
 
+- ✅ **Thịt kho trứng** (siehe `asiatisch/thit-kho-trung.md`) — 07/2026
+  - Klarer Favorit: minimaler Aufwand, herausragendes Preis/Leistungs-Verhältnis,
+    zweimal mit Genuss gegessen. Bestätigt Learning "Aufwand ≠ Wow".
+  - Learnings: ganze Chilis früher entnehmen (geben auch unverletzt Schärfe ab),
+    Säure-Balance kommt vom Pickle, Radieschen als Daikon-Ersatz okay.
+    Mitgeschmorte Eier überzeugten nicht (fest, fad) — weglassen oder erst
+    in den letzten 20–30 Min. einlegen.
+
+- ✅ **Geschmorter Oktopus, griechische Art** (siehe `gerichte/oktopus-geschmort.md`) — 07/2026
+  - Gut, aber Aufwand/Reward schwächer als Thịt kho → besondere Anlässe.
+  - Beschaffung: Selgros-Frischetheke "Pulpo Blume Marokko" (*Octopus vulgaris*) ✓;
+    TK-Ware "Tintenfisch Tentakel" (*Dosidicus gigas*) ist KEIN Ersatz — Etikett
+    immer auf lateinischen Namen prüfen.
+  - Cantaloupe-Sorbet als Dessert dazu: sehr stimmig.
+
 ## Ideen für nächste Projekte
 
 - Tokyo-Style Shoyu mit Niboshi (Fisch-Tiefe statt Pilz)
 - Tori-Paitan (14L-Topf jetzt vorhanden!)
 - Andere asiatische Tiefen-Projekte (Pho, Tantanmen ohne Schärfe, etc.)
 - Weiteres Degustationsmenü (Jakobsmuscheln + starkes Dessert als Gerüst)
+- Mehr aus der vietnamesischen kho-Familie (gà kho gừng — Ingwer-Hähnchen,
+  cá kho tộ — karamellisierter Fisch im Tontopf): gleiche Low-Effort/High-Reward-Mechanik wie Thịt kho
 
 ## Workflow: Neues Rezept erarbeiten
 

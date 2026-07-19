@@ -61,6 +61,15 @@ Tentakel in mundgerechte Stücke schneiden, auf den Kartoffeln anrichten. Großz
 
 ## Notizen
 
+**Gekocht 07/2026 — Learnings:**
+
+- ✅ Gut, aber Aufwand/Reward-Verhältnis schwächer als z. B. Thịt kho — eher Gericht für besondere Anlässe als für die Rotation.
+- **Bezugsquelle:** Selgros-**Frischetheke** hatte "Pulpo Blume Marokko" T4 (~1,8 kg, angetaut) — echter *Octopus vulgaris*. "Flower/Blume" = ganz, geputzt, **mit Kopf** (Innereien raus); nur Schnabel-Check nötig, kein Zerlegen.
+- **Warnung TK-Regal Selgros:** "Tintenfisch Tentakel" (*Dosidicus gigas*, Humboldt-Kalmar, mit E330/E331 behandelt) ist **kein** Pulpo-Ersatz — fad, kaum Eigensaft, liegen lassen. Immer lateinischen Namen prüfen.
+- 1,8 kg: Garzeit Richtung 90 Min.+, Messerprobe ab 75 Min.
+- **Dessert-Pairing:** Cantaloupe-Sorbet danach funktioniert sehr gut.
+
+
 - **Vorbereiten:** Schritt 1–4 lassen sich Stunden vorher machen; Oktopus einfach im Sud liegen lassen und lauwarm servieren oder kurz anbraten. Ideal bei Hitze: mittags schmoren, abends essen.
 - **Sud-Reste:** Übrig gebliebenen Schmorsud einfrieren — hervorragende Basis für Fisch-/Meeresfrüchte-Pasta oder als Umami-Schub in der nächsten Bouillabaisse.
 - **Skalierung:** Zwei kleine Tiere (à ~700 g) funktionieren genauso, Garzeit eher am unteren Ende prüfen.
