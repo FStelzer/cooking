@@ -7,10 +7,38 @@ tasks:
       - task --list
 
   sidebar:
-    desc: Generiere _sidebar.md aus den Markdown-Dateien in Unterordnern
+    desc: Generiere _sidebar.md aus den Markdown-Dateien in Unterordnern (🚧-Titel → Sektion "in arbeit")
     cmds:
       - |
         {
+          get_title() {
+            t=$(awk '/^# /{sub(/^# +/, ""); print; exit}' "$1")
+            [ -z "$t" ] && t=$(basename "$1" .md)
+            printf '%s' "$t"
+          }
+          # Rezepte in Arbeit: H1-Titel beginnt mit 🚧
+          wip=""
+          for dir in */; do
+            dir="${dir%/}"
+            case "$dir" in
+              .*) continue ;;
+            esac
+            for f in "$dir"/*.md; do
+              [ -e "$f" ] || continue
+              case "$(get_title "$f")" in
+                "🚧"*) wip="$wip $f" ;;
+              esac
+            done
+          done
+          if [ -n "$wip" ]; then
+            echo "- **🚧 in arbeit**"
+            for f in $wip; do
+              title=$(get_title "$f")
+              title="${title#"🚧"}"; title="${title# }"
+              echo "  - [${title}](/${f})"
+            done
+          fi
+          # Kategorien (ohne 🚧-Rezepte)
           for dir in */; do
             dir="${dir%/}"
             case "$dir" in
@@ -19,16 +47,19 @@ tasks:
             files=""
             for f in "$dir"/*.md; do
               [ -e "$f" ] || continue
+              case "$(get_title "$f")" in
+                "🚧"*) continue ;;
+              esac
               files="$files $f"
             done
             [ -z "$files" ] && continue
             echo "- **${dir}**"
             for f in $files; do
-              title=$(awk '/^# /{sub(/^# +/, ""); print; exit}' "$f")
-              [ -z "$title" ] && title=$(basename "$f" .md)
-              echo "  - [${title}](/${f})"
+              echo "  - [$(get_title "$f")](/${f})"
             done
           done
+          # Root-Seiten (der Generator scannt nur Unterordner)
+          echo "- [Ideen-Backlog](/ideen.md)"
         } > _sidebar.md
 
   serve:

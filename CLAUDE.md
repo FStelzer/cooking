@@ -115,6 +115,23 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
    wenn gut beschaffbar (im Zweifel auch amazone / online) und nicht allzu teuer oder zumindest
    für viele andere Dinge nützlich und nicht nur für ein einziges Rezept
 
+## Repo-Struktur & Rezept-Status
+
+- **Ordner:** Alle Einzelrezepte liegen in `gerichte/` (keine Unterteilung nach
+  Küche/Region). Speziell bleiben: `menues/` (Mehrgänger), `schwangerschaft/`,
+  `einkaufslisten/` (kombinierte Listen über mehrere Rezepte).
+- **Rezepte in Arbeit (TODO):** H1-Titel beginnt mit `🚧 ` und direkt unter dem
+  Titel steht eine Status-Alertbox (`> [!NOTE]` … "Status: In Arbeit"). Solche
+  Stubs enthalten Idee, grobe Richtung, Beschaffungs-Einschätzung und offene
+  Fragen — noch keine Einkaufsliste/Zubereitung.
+- **Sidebar wird generiert:** `_sidebar.md` NIE von Hand editieren, sondern
+  `task sidebar` laufen lassen. Der Generator gruppiert 🚧-Rezepte automatisch
+  in die Sektion „🚧 in arbeit" und hängt den Link auf `ideen.md` an.
+- **Fertigstellung eines Rezepts:** `🚧 ` aus dem Titel entfernen, Statusbox
+  raus, `task sidebar` ausführen — fertig, keine Datei-Moves nötig.
+- **Ideen-Backlog:** Unkonkrete Ideen leben in `ideen.md`. Wird eine konkret →
+  🚧-Stub in `gerichte/` anlegen und aus dem Backlog streichen.
+
 ## Format: Einkaufslisten (immer so!)
 
 - **Abhakbar:** Einkaufslisten-Einträge immer als GFM-Task-Liste schreiben
@@ -133,7 +150,7 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 
 ## Bisherige Projekte
 
-- ✅ **Shoyu-Ramen mit Chintan-Brühe** (siehe `asiatisch/ramen-shoyu-chintan.md`)
+- ✅ **Shoyu-Ramen mit Chintan-Brühe** (siehe `gerichte/ramen-shoyu-chintan.md`)
   - Erfolgreich umgesetzt
   - Learnings: Pilznote reduzieren, Enoki meiden, Suppenhuhn+Flügel funktioniert
     gut als Karkassen-Ersatz
@@ -146,7 +163,7 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
     einfachere Kartoffelbeilage. Entenbrust solide aber kein Highlight.
   - Learning: Aufwand ≠ Wow. Perfekte Ausführung simpler Techniken oft wirkungsvoller.
 
-- ✅ **Thịt kho trứng** (siehe `asiatisch/thit-kho-trung.md`) — 07/2026
+- ✅ **Thịt kho trứng** (siehe `gerichte/thit-kho-trung.md`) — 07/2026
   - Klarer Favorit: minimaler Aufwand, herausragendes Preis/Leistungs-Verhältnis,
     zweimal mit Genuss gegessen. Bestätigt Learning "Aufwand ≠ Wow".
   - Learnings: ganze Chilis früher entnehmen (geben auch unverletzt Schärfe ab),
@@ -163,12 +180,8 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 
 ## Ideen für nächste Projekte
 
-- Tokyo-Style Shoyu mit Niboshi (Fisch-Tiefe statt Pilz)
-- Tori-Paitan (14L-Topf jetzt vorhanden!)
-- Andere asiatische Tiefen-Projekte (Pho, Tantanmen ohne Schärfe, etc.)
-- Weiteres Degustationsmenü (Jakobsmuscheln + starkes Dessert als Gerüst)
-- Mehr aus der vietnamesischen kho-Familie (gà kho gừng — Ingwer-Hähnchen,
-  cá kho tộ — karamellisierter Fisch im Tontopf): gleiche Low-Effort/High-Reward-Mechanik wie Thịt kho
+→ Siehe `ideen.md` (Ideen-Backlog). Aktuell in Arbeit (🚧-Stubs in `gerichte/`):
+Cá kho tộ, Cochinita Pibil, Lamm-Kleftiko, Tafelspitz.
 
 ## Workflow: Neues Rezept erarbeiten
 

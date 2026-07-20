@@ -1,6 +1,6 @@
 # Einkaufsliste — Oktopus (griechisch) + Thịt kho trứng
 
-*Kombiniert für beide Gerichte (je 4 Portionen: `gerichte/oktopus-geschmort.md` + `asiatisch/thit-kho-trung.md`). Überschneidungen (Gurke, Knoblauch, Zucker) sind bereits summiert.*
+*Kombiniert für beide Gerichte (je 4 Portionen: `gerichte/oktopus-geschmort.md` + `gerichte/thit-kho-trung.md`). Überschneidungen (Gurke, Knoblauch, Zucker) sind bereits summiert.*
 
 **Vorab klären:** Oktopus bei Buhara verfügbar? TK ist ausdrücklich okay — sogar zarter als frisch. Fallback: Selgros/Asialaden (TK). **TK-Oktopus braucht ~24 Std. Auftauzeit im Kühlschrank** — heute gekauft heißt ggf. erst morgen kochen; dann heute Thịt kho, morgen Oktopus.
 

@@ -1,13 +1,18 @@
-- **asiatisch**
-  - [Sapporo-Style Miso-Tonkotsu-Ramen Menü](/asiatisch/ramen-miso-tonkotsu.md)
-  - [Shoyu-Ramen mit Hähnchen-Chintan-Brühe](/asiatisch/ramen-shoyu-chintan.md)
-  - [Thịt kho trứng — Karamell-Schweinefleisch](/asiatisch/thit-kho-trung.md)
-- **gerichte**
-  - [Geschmorter Oktopus, griechische Art](/gerichte/oktopus-geschmort.md)
-  - [Hummerbisque](/gerichte/hummerbisque.md)
+- **🚧 in arbeit**
+  - [Cá kho tộ — karamellisierter Fisch im Tontopf](/gerichte/ca-kho-to.md)
+  - [Cochinita Pibil — Schweineschulter in Achiote-Orangen-Marinade](/gerichte/cochinita-pibil.md)
+  - [Lamm-Kleftiko — im Päckchen geschmorte Lammkeule](/gerichte/lamm-kleftiko.md)
+  - [Tafelspitz, sommerlich — mit kalten Saucen](/gerichte/tafelspitz.md)
 - **einkaufslisten**
-  - [Oktopus + Thịt kho (kombiniert)](/einkaufslisten/oktopus-thit-kho.md)
+  - [Einkaufsliste — Oktopus (griechisch) + Thịt kho trứng](/einkaufslisten/oktopus-thit-kho.md)
+- **gerichte**
+  - [Hummerbisque (4 Portionen als Vorspeise)](/gerichte/hummerbisque.md)
+  - [Geschmorter Oktopus, griechische Art (4 Portionen)](/gerichte/oktopus-geschmort.md)
+  - [Sapporo-Style Miso-Tonkotsu-Ramen Menü](/gerichte/ramen-miso-tonkotsu.md)
+  - [Shoyu-Ramen mit Hähnchen-Chintan-Brühe](/gerichte/ramen-shoyu-chintan.md)
+  - [Thịt kho trứng — vietnamesisches Karamell-Schweinefleisch mit Eiern (4 Portionen)](/gerichte/thit-kho-trung.md)
 - **menues**
   - [Degustationsmenü — Hochzeitstag](/menues/menue-hochzeitstag.md)
 - **schwangerschaft**
   - [Bouillabaisse mit Fenchel-Orange-Salat](/schwangerschaft/bouillabaisse.md)
+- [Ideen-Backlog](/ideen.md)
