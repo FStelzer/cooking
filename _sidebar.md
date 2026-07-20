@@ -1,8 +1,8 @@
 - **🚧 in arbeit**
-  - [Cá kho tộ — karamellisierter Fisch im Tontopf](/gerichte/ca-kho-to.md)
-  - [Cochinita Pibil — Schweineschulter in Achiote-Orangen-Marinade](/gerichte/cochinita-pibil.md)
-  - [Lamm-Kleftiko — im Päckchen geschmorte Lammkeule](/gerichte/lamm-kleftiko.md)
-  - [Tafelspitz, sommerlich — mit kalten Saucen](/gerichte/tafelspitz.md)
+  - [Cá kho tộ — vietnamesischer Karamell-Schmorfisch (4 Portionen)](/gerichte/ca-kho-to.md)
+  - [Cochinita Pibil — Schweineschulter in Achiote-Orangen-Marinade (4 Portionen + Reste)](/gerichte/cochinita-pibil.md)
+  - [Lamm-Kleftiko — im Päckchen geschmortes Lamm mit Kartoffeln (4 Portionen + Reste)](/gerichte/lamm-kleftiko.md)
+  - [Tafelspitz, sommerlich — mit Frittatensuppe und kalten Saucen (4 Portionen + Reste)](/gerichte/tafelspitz.md)
 - **einkaufslisten**
   - [Einkaufsliste — Oktopus (griechisch) + Thịt kho trứng](/einkaufslisten/oktopus-thit-kho.md)
 - **gerichte**
