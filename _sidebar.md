@@ -7,7 +7,9 @@
   - [Einkaufsliste — Oktopus (griechisch) + Thịt kho trứng](/einkaufslisten/oktopus-thit-kho.md)
 - **gerichte**
   - [Hummerbisque (4 Portionen als Vorspeise)](/gerichte/hummerbisque.md)
+  - [İmam bayıldı — in Olivenöl geschmorte gefüllte Auberginen (4 Portionen)](/gerichte/imam-bayildi.md)
   - [Geschmorter Oktopus, griechische Art (4 Portionen)](/gerichte/oktopus-geschmort.md)
+  - [Paneer-Projekt — selbstgemachter Paneer mit Matar & Palak (4 Portionen, 2 Saucen)](/gerichte/paneer-projekt.md)
   - [Sapporo-Style Miso-Tonkotsu-Ramen Menü](/gerichte/ramen-miso-tonkotsu.md)
   - [Shoyu-Ramen mit Hähnchen-Chintan-Brühe](/gerichte/ramen-shoyu-chintan.md)
   - [Thịt kho trứng — vietnamesisches Karamell-Schweinefleisch mit Eiern (4 Portionen)](/gerichte/thit-kho-trung.md)
