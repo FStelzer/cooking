@@ -26,10 +26,11 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 - Mandoline / Gemüsehobel
 - Kastenformen (ca. 20cm, 2 Stück)
 - Feines Sieb + Passiertuch
+- Kleiner Bunsenbrenner (Küchenbrenner — Aburi-Effekte, Bananenblätter erweichen etc.)
 - Standard Pfannen, Kleinkram
 
 ### Fehlt / Wäre gut zu haben
-- Bunsenbrenner (für Aburi-Effekte)
+- (aktuell nichts Konkretes)
 
 ## Einkaufsquellen
 
@@ -170,6 +171,15 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
     Säure-Balance kommt vom Pickle, Radieschen als Daikon-Ersatz okay.
     Mitgeschmorte Eier überzeugten nicht (fest, fad) — weglassen oder erst
     in den letzten 20–30 Min. einlegen.
+
+- ✅ **Paneer-Projekt: Matar & Palak** (siehe `gerichte/paneer-projekt.md`) — 07/2026
+  - Selbstgemachter Paneer hat gut geklappt, Technik gesetzt.
+  - Matar deutlich besser als Palak (würziger, aromatischer); Palak blieb flach —
+    ihm fehlte die langsam aufbauende indische Schärfe, die „mild by design"
+    + Schärfe-pro-Teller nicht ersetzen kann.
+  - Learning fürs nächste indische Projekt: scharfe Sauce **parallel** kochen
+    (milde Kinder-Abzweigung vor dem Schärfen abnehmen), statt nur Chiliöl am
+    Teller. Gern auch mit Hähnchen oder Lamm statt Paneer.
 
 - ✅ **Geschmorter Oktopus, griechische Art** (siehe `gerichte/oktopus-geschmort.md`) — 07/2026
   - Gut, aber Aufwand/Reward schwächer als Thịt kho → besondere Anlässe.

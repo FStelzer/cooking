@@ -13,6 +13,7 @@ und fliegt hier raus.
 
 ## Gekocht
 
+- ✅ [Paneer-Projekt — Matar & Palak](/gerichte/paneer-projekt.md) — 07/2026
 - ✅ [Geschmorter Oktopus, griechische Art](/gerichte/oktopus-geschmort.md) — 07/2026
 - ✅ [Thịt kho trứng](/gerichte/thit-kho-trung.md) — 07/2026
 
@@ -43,6 +44,20 @@ und fliegt hier raus.
 6. **Filipino Chicken Adobo** — Hähnchenschenkel in Soja, Essig, Knoblauch und
    Lorbeer geschmort, ca. 1 Std., ein Topf, fast keine Vorbereitung. Dazu Reis
    und ein kalter Tomaten-Salat. Soja-lastig, null Schärfe von Haus aus.
+
+7. **Indisches Curry, scharfe Erwachsenen-Version** — Follow-up zum
+   Paneer-Projekt: gleiche Masala-Mechanik, aber mit Hähnchen oder Lamm statt
+   Paneer und einer richtig gewürzten, langsam-aufbauend scharfen Sauce für
+   die Erwachsenen (milde Abzweigung fürs Kind vor dem Schärfen abnehmen).
+   Learning aus 07/2026: Schärfe pro Teller ersetzt die eingekochte Schärfe nicht.
+
+8. **Bún chả (Hanoi-Style)** — gegrillte marinierte Schweinehack-Bällchen und
+   Schweinebauch-Scheiben, die in einer lauwarmen Nước-chấm-Schale schwimmen;
+   dazu Reisnudeln, viele frische Kräuter, Salat und Pickle (Karotte/Kohlrabi
+   bzw. Radieschen). Verwandt mit Bún thịt nướng (Backlog Nr. 2), aber
+   Nord-Stil: Fleisch + Sauce als Schale statt Bowl mit Dressing. Ohne Grill in
+   Pfanne/Ofengrill machbar. Chili wie immer separat, Kinder-Schale milder
+   anmischen (weniger Fischsauce, mehr Wasser/Zucker).
 
 ## Aus CLAUDE.md übernommene Langzeit-Ideen
 

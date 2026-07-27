@@ -194,7 +194,23 @@ Chili oder Chiliöl pro Teller.
 
 ## Notizen
 
-**Noch nicht gekocht — Learnings folgen.**
+**Gekocht 07/2026 — Learnings:**
+
+- **Paneer selbst machen: funktioniert.** Hat gut geklappt, Ergebnis war gut —
+  die Technik (säuern, spülen, pressen) ist reproduzierbar und bleibt gesetzt.
+- **Matar klar vor Palak.** Das Matar war deutlich würziger und aromatischer
+  und hat zu Hause klar besser geschmeckt. Das Palak blieb etwas flach —
+  interessant, weil es beim Inder eigentlich der Favorit ist.
+- **Diagnose Palak:** Es fehlte die typische indische Schärfe, die sich
+  langsam aufbaut. Die „mild by design"-Entscheidung (kein Chili in der Sauce)
+  kostet beim Palak mehr als beim Matar — das Matar trägt sich über
+  Ganzgewürze, Tomate und Cashew, das Palak lebt stärker von der Schärfe.
+- **Nächstes Mal:** Die Schärfe pro Teller (Chiliöl) reicht nicht als Ersatz.
+  Stattdessen eine eigene **scharfe Sauce/Variante parallel** kochen (Kind
+  bekommt die milde) — z. B. einen Teil der Sauce abnehmen und mit grüner
+  Chili/Kashmiri-Chili separat fertig schärfen.
+- **Variante fürs nächste Mal:** Gern auch mit **Hähnchen oder Lamm** statt
+  Paneer (z. B. Saag/Palak Chicken oder Lamm-Curry auf derselben Masala-Basis).
 
 - **Vorbereiten:** Paneer komplett am Vortag (im Wasser bedeckt im Kühlschrank
   lagern, bleibt weich). Matar-Sauce hält sich 2–3 Tage und wird durchgezogen
