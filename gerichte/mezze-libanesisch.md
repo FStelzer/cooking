@@ -136,15 +136,15 @@ Die Klassiker-Falle in diesem Repo — deshalb hier explizit summiert:
 1. **Einweichen (Tag 1):** Kichererbsen in reichlich kaltem Wasser mit ¾ TL Natron mindestens 12 Std. einweichen.
 2. **Kochen (Tag 2):** Abgießen. Im 6L-Topf mit ½ TL Natron bei mittlerer Hitze 2–3 Min. **trocken** unter Rühren erhitzen (der Jerusalem-Schritt — das Natron greift die Schalen an). Mit ~1,5 L Wasser aufgießen, aufkochen. Schaum **und die aufschwimmenden Schalen** konsequent abschöpfen — das ist der halbe Cremigkeits-Gewinn. 30–60 Min. leise kochen, bis sich eine Kichererbse zwischen den Fingern mühelos zerdrücken lässt, eher Richtung zerfallend. Nicht salzen.
 3. **Mixen (Tag 3, warm!):** Kichererbsen mit etwas Kochwasser wieder heiß werden lassen, abgießen (2–3 EL zum Garnieren beiseite). Warm in den hohen Becher: Kichererbsen, Tahina, 2 EL Zitronensaft, Knoblauch, Salz, Kreuzkümmel. Mit dem Stabmixer mixen und dabei das Eiswasser nach und nach zugeben — 2–3 Minuten dranbleiben, bis die Masse hell, seidig und fast fluffig ist. **Kein Olivenöl in die Masse.**
-4. **Abschmecken & anrichten:** Zitrone/Salz nachjustieren. In flacher Schale mit dem Löffelrücken eine Mulde ziehen, Olivenöl hinein, zurückbehaltene Kichererbsen und eine Prise Aleppo-Pfeffer oder Kreuzkümmel darüber.
+4. **Abschmecken & anrichten:** Zitrone/Salz nachjustieren. In flacher Schale mit dem Löffelrücken eine Mulde ziehen, 2 EL Olivenöl hinein, zurückbehaltene Kichererbsen und eine Prise Aleppo-Pfeffer oder Kreuzkümmel darüber.
 
 ### 2. Moutabal (~400 g)
 
-*2 große Auberginen (~700 g) · 60 g Tahina · 2 EL Zitronensaft · 1 kleine Knoblauchzehe · ½ TL Salz · Olivenöl obenauf · optional Granatapfelkerne*
+*2 große Auberginen (~700 g) · 60 g Tahina · 2 EL Zitronensaft · 1 kleine Knoblauchzehe · ½ TL Salz · 1–2 EL Olivenöl obenauf · optional Granatapfelkerne*
 
 1. **Verkohlen:** Auberginen mit dem Bunsenbrenner rundum abflämmen, bis die Haut überall schwarz und blasig ist — nicht zaghaft, der Rauch ist das Gericht. Dann bei 220 °C 15–20 Min. in den Ofen, bis sie komplett kollabiert und innen butterweich sind (der Brenner allein gart das Innere nicht durch).
 2. **Abtropfen:** Längs halbieren, Fruchtfleisch herausschaben (verkohlte Hautstücke penibel aussortieren), 20–30 Min. im Sieb abtropfen lassen — das Bitterwasser soll raus.
-3. **Mischen:** Mit der Gabel zerdrücken, **nicht mixen** — etwas Textur bleibt. Tahina, Zitronensaft, fein geriebenen Knoblauch und Salz unterrühren. Abschmecken. Anrichten mit Olivenöl, optional Granatapfelkerne.
+3. **Mischen:** Mit der Gabel zerdrücken, **nicht mixen** — etwas Textur bleibt. Tahina, Zitronensaft, fein geriebenen Knoblauch und Salz unterrühren. Abschmecken. Anrichten mit 1–2 EL Olivenöl, optional Granatapfelkerne.
 
 ### 3. Muhammara (~400 g)
 
@@ -161,7 +161,7 @@ Die Klassiker-Falle in diesem Repo — deshalb hier explizit summiert:
 
 1. Joghurt mit dem Salz verrühren (**vor** dem Abtropfen salzen — zieht Molke und würzt durch statt nur oberflächlich).
 2. In das Passiertuch, im feinen Sieb über einer Schüssel 12–24 Std. im Kühlschrank abtropfen lassen. Nach 12 Std. prüfen: streichfähig wie Frischkäse = fertig; länger = fester.
-3. Anrichten: flach ausstreichen, Mulde, großzügig Olivenöl, Za'atar darüber. *Für das Kind einen Klecks ohne Za'atar abzweigen — pur mit Brot die mildeste Komponente des Abends.*
+3. Anrichten: flach ausstreichen, Mulde, 2 EL Olivenöl, 1–2 TL Za'atar darüber. *Für das Kind einen Klecks ohne Za'atar abzweigen — pur mit Brot die mildeste Komponente des Abends.*
 
 ### 5. Fatayer bi sabanekh (~18 Stück, gebacken)
 
@@ -201,8 +201,8 @@ Mehl, Salz und Zucker mischen, Butter mit den Fingerspitzen einreiben, bis es wi
 
 ### Dazu
 
-- **Fladenbrot:** kurz im Ofen aufwärmen. Optional 1 Fladen in Ecken schneiden, mit Olivenöl + Za'atar bestreichen, 8 Min. bei 200 °C → Chips für die Dips.
-- **Rohkost:** Gurke, Karotten, Radieschen in Sticks/Hälften.
+- **Fladenbrot:** kurz im Ofen aufwärmen. Optional 1 Fladen in Ecken schneiden, mit 2 EL Olivenöl + Za'atar bestreichen, 8 Min. bei 200 °C → Chips für die Dips.
+- **Rohkost:** 1 Gurke, 3 Karotten, 1 Bund Radieschen in Sticks/Hälften.
 - **Oliven** in eine kleine Schale — fertig.
 
 ## Kinder-Anpassung

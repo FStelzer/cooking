@@ -44,16 +44,16 @@ Vietnamesischer Schmorfisch aus der kho-Familie, Süd-Stil (Nam Bộ): Fischstea
 ## Zubereitung
 
 **1. Schnell-Pickle (10 Min., ganz am Anfang)**
-Karotten und Radieschen fein hobeln, mit 3 EL Reisessig, 2 EL Wasser, 1 EL Zucker und ½ TL Salz vermengen (bewährte Lake vom Thịt kho), ziehen lassen. *Learning vom Thịt kho: Die Säure-Balance des Tellers kommt vom Pickle — nicht weglassen.*
+2 Karotten und 1 Bund Radieschen fein hobeln, mit 3 EL Reisessig, 2 EL Wasser, 1 EL Zucker und ½ TL Salz vermengen (bewährte Lake vom Thịt kho), ziehen lassen. *Learning vom Thịt kho: Die Säure-Balance des Tellers kommt vom Pickle — nicht weglassen.*
 
 **2. Fisch vorbehandeln & sichern (10 Min.)**
 Steaks mit ~1 EL Salz einreiben (optional plus ein Spritzer Zitrone), 5 Min. stehen lassen, kalt abspülen, sehr gut trocken tupfen. Eventuelle dunkle Blutreste an der Mittelgräte entfernen. **Dann die beiden Bauchlappen jedes Steaks zum Ring zusammenlegen und mit Küchengarn binden oder mit einem Zahnstocher schließen** — bei Kotelett-Zuschnitt ist das aufklappende Bauchfleisch der häufigste Zerfallsgrund. **Dicke messen und notieren** (bestimmt die Simmerzeit in Schritt 5). *Salzen + Abspülen festigt das Fleisch und nimmt fischige Noten (so bei Hungry Huy; die Zitrone ist klassische Wels-Praxis, bei Lachs verzichtbar). Gegen Zerfallen zählen daneben: Haut dran, einschichtig, minimal bewegen.*
 
 **3. Marinieren (15–20 Min., passiv — nicht länger!)**
-Steaks mit 3 EL Fischsauce, 1 EL Zucker, ½ TL gemahlenem Pfeffer und der Hälfte der fein geschnittenen Schalotten und des Knoblauchs vermengen. Währenddessen Reis kochen, Gemüse putzen. *30–60 Min. ist Wels-Praxis; Lachs wird in der Salzlösung an der Oberfläche mürbe — 15–20 Min. reichen für die Würze.*
+Steaks mit 3 EL Fischsauce, 1 EL Zucker, ½ TL gemahlenem Pfeffer und der Hälfte der fein geschnittenen Schalotten und des Knoblauchs (1½ Schalotten, 2–3 Zehen) vermengen. Währenddessen 400 g Jasminreis kochen, Gemüse putzen (2 Pak Choi bzw. 1 Brokkoli). *30–60 Min. ist Wels-Praxis; Lachs wird in der Salzlösung an der Oberfläche mürbe — 15–20 Min. reichen für die Würze.*
 
 **4. Nước màu — das Karamell (5 Min.)**
-2 EL Zucker mit 1 EL Öl im Schmortopf bei mittlerer Hitze schmelzen, nicht rühren, nur schwenken. Zielfarbe wie beim Thịt kho: tief bernstein Richtung Mahagoni. **Im Zielmoment die restlichen Schalotten, Knoblauch und 3–4 Ingwerscheiben zugeben** — das kühlt das Karamell schlagartig ab und stoppt die Bräunung exakt am richtigen Punkt.
+2 EL Zucker mit 1 EL Öl im Schmortopf bei mittlerer Hitze schmelzen, nicht rühren, nur schwenken. Zielfarbe wie beim Thịt kho: tief bernstein Richtung Mahagoni. **Im Zielmoment die restlichen Schalotten und Knoblauchzehen (1½ bzw. 2–3) und 3–4 Ingwerscheiben zugeben** — das kühlt das Karamell schlagartig ab und stoppt die Bräunung exakt am richtigen Punkt.
 
 **5. Anlegen & Simmern (8–16 Min. je Dicke — nicht wenden)**
 Fischsteaks einschichtig einlegen (etwas von den Aromaten unter den Fisch schieben — Anti-Anbrenn-Schicht), Marinadenreste dazu, ~200 ml Kokoswasser angießen, bis der Fisch etwa halbhoch bedeckt ist — nicht mehr. Aufkochen, dann nur noch leise simmern. **Nicht wenden**, alle 3 Min. mit Sauce begießen. Simmerzeit nach gemessener Dicke (Schritt 2):

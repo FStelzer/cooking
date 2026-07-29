@@ -68,6 +68,7 @@ Ergebnis ist ein kleines "Thali": ein Teller, zwei Schälchen, Reis, Naan.
 - [ ] ~6 cm Ingwer
 - [ ] 400 g reife Tomaten (oder 1 Dose gehackte Tomaten als Backup)
 - [ ] 1 grüne Spitzpaprika (optional, für Palak)
+- [ ] ½ Salatgurke (Raita, optional)
 - [ ] Koriandergrün (1 Bund; Verweigerer nehmen Petersilie)
 
 **Trockenwaren / TK:**
@@ -127,9 +128,9 @@ oder eine Tasse davon zum Verdünnen der Saucen nutzen.
 ### 2. Gemeinsame Vorarbeit (15 Min.)
 
 Für beide Saucen: 4 Zwiebeln fein würfeln, 8 Knoblauchzehen + 6 cm Ingwer zu
-Paste reiben/hacken (Hälfte pro Sauce). Spinat waschen. 30 g Cashews
+Paste reiben/hacken (Hälfte pro Sauce). 500 g Spinat waschen. 30 g Cashews
 (~20 Stück) in 100 ml heißem Wasser einweichen. Optional: Paneer-Würfel in
-etwas Butter/Ghee rundum goldbraun anbraten und **in warmem, leicht
+1–2 EL Butter/Ghee rundum goldbraun anbraten und **in warmem, leicht
 gesalzenem Wasser parken** — hält die Würfel weich statt zäh (Dassana legt
 gebratenen Paneer 3–4 Min. in Wasser; Swasthi weicht Paneer 10–20 Min. in
 warmem Wasser ein — der Trick zielt v. a. auf Kaufware, frischer
@@ -138,11 +139,11 @@ weglassen.
 
 ### 3. Matar Paneer — Tomaten-Cashew-Sauce (30 Min.)
 
-**3a.** 2 EL Butter/Ghee erhitzen. 1 TL Kreuzkümmelsamen, Kardamom, Zimt,
-Nelken 30 Sek. rösten. Zwiebeln (Hälfte) goldbraun braten — dauert 8–10 Min.,
+**3a.** 2 EL Butter/Ghee erhitzen. 1 TL Kreuzkümmelsamen, 2–3 Kardamomkapseln,
+1 kleine Zimtstange, 2 Nelken 30 Sek. rösten. 2 Zwiebeln (die Hälfte) goldbraun braten — dauert 8–10 Min.,
 nicht abkürzen, das ist die Basis-Süße.
 
-**3b.** Ingwer-Knoblauch-Paste 1 Min. mitbraten. Tomaten gewürfelt dazu, plus
+**3b.** Die Hälfte der Ingwer-Knoblauch-Paste 1 Min. mitbraten. 400 g Tomaten gewürfelt dazu, plus
 ½ TL Kurkuma, 2 TL Koriander gemahlen, 2 TL Paprika edelsüß, 1 TL Salz.
 ~8 Min. köcheln, bis die Tomaten zerfallen und sich Fett am Rand absetzt.
 
@@ -150,7 +151,7 @@ nicht abkürzen, das ist die Basis-Süße.
 mit dem Stabmixer **komplett glatt** pürieren. Mit Wasser/Molke auf
 Sahnesaucen-Konsistenz bringen.
 
-**3d.** Erbsen dazu, 5–8 Min. köcheln (TK ist vorblanchiert; frische Erbsen
+**3d.** 250 g TK-Erbsen dazu, 5–8 Min. köcheln (TK ist vorblanchiert; frische Erbsen
 brauchen 10–12 Min.). Paneer-Hälfte einlegen, 1 TL Kasuri Methi
 zwischen den Handflächen zerrieben darüber, ½ TL Garam Masala, 2 EL Sahne.
 2–3 Min. ziehen lassen, abschmecken (Salz, Spritzer Zitrone, Prise Zucker
@@ -159,14 +160,14 @@ falls die Tomaten sauer waren).
 ### 4. Palak Paneer — Spinat-Sauce (30 Min.)
 
 **4a. Blanchieren — der Farb-Schritt (5 Min.)**
-Reichlich Salzwasser sprudelnd kochen, Spinat **2 Min.** blanchieren, sofort
+Reichlich Salzwasser sprudelnd kochen, den Spinat (500 g) **2 Min.** blanchieren, sofort
 in Eiswasser. *Ohne Eisbad wird das Grün oliv statt leuchtend — nicht
 verhandelbar. Und nicht länger als 2–3 Min. blanchieren: mehr Zeit = Farbe
 weg, Bitterkeit rauf.* Ausdrücken, mit dem Stabmixer fein pürieren (bei Bedarf
 1–2 EL Blanchierwasser).
 
-**4b.** 2 EL Butter/Ghee, 1 TL Kreuzkümmelsamen rösten, restliche Zwiebeln
-glasig bis leicht golden braten, Ingwer-Knoblauch-Paste + optional fein
+**4b.** 2 EL Butter/Ghee, 1 TL Kreuzkümmelsamen rösten, restliche 2 Zwiebeln
+glasig bis leicht golden braten, restliche Ingwer-Knoblauch-Paste + optional 1 fein
 gewürfelte Spitzpaprika 2 Min. mit. ½ TL Koriander gemahlen, Prise Kurkuma.
 
 **4c.** Spinatpüree einrühren und **nur 2–3 Min.** sanft erhitzen — langes
@@ -178,8 +179,8 @@ Spritzer Zitrone.
 
 ### 5. Reis & Servieren
 
-Basmati wie gewohnt. Beide Saucen in Schalen, Reis, Naan, optional Raita
-(Joghurt + geriebene Gurke + Prise Kreuzkümmel + Salz). Erwachsene: frische
+400 g Basmati wie gewohnt. Beide Saucen in Schalen, Reis, Naan, optional Raita
+(500 g Joghurt + ½ geriebene Salatgurke + Prise Kreuzkümmel + Salz). Erwachsene: frische
 Chili oder Chiliöl pro Teller.
 
 ## Kinder-Anpassung

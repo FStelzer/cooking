@@ -14,7 +14,7 @@
 - [ ] 4 Knoblauchzehen
 - [ ] 3 Lorbeerblätter
 - [ ] 1 TL schwarze Pfefferkörner
-- [ ] 100 ml Rotwein (trocken) + 3 EL Rotweinessig
+- [ ] 100 ml Rotwein (trocken) + 4 EL Rotweinessig (3 EL Schmoren, 1 EL Salat)
 - [ ] 150 ml gutes Olivenöl (davon ~50 ml zum Schmoren, Rest zum Servieren/Salat)
 - [ ] 1 kg festkochende Kartoffeln
 - [ ] 1 Zitrone
@@ -33,25 +33,25 @@
 Aufgetauten Oktopus kalt abspülen. Kopf vom Tentakelkranz trennen; Kopfbeutel umstülpen und Innereien entfernen (bei TK-Ware meist schon geputzt). Den harten Chitin-Schnabel in der Mitte des Tentakelkranzes herausdrücken. **Nicht salzen** — der Oktopus bringt genug eigenes Salz mit. *Nicht klopfen, nicht in Korken-Wasser kochen — beim TK-Tier alles unnötige Folklore.*
 
 **2. Schmoransatz (5 Min.)**
-50 ml Olivenöl im schweren Topf bei mittlerer Hitze erwärmen. Grob geschnittene Zwiebel 3–4 Min. anschwitzen, angedrückten Knoblauch, Lorbeer und Pfefferkörner 1 Min. mitrösten.
+50 ml Olivenöl im schweren Topf bei mittlerer Hitze erwärmen. 1 große rote Zwiebel, grob geschnitten, 3–4 Min. anschwitzen, 4 angedrückte Knoblauchzehen, 3 Lorbeerblätter und 1 TL Pfefferkörner 1 Min. mitrösten.
 
 **3. Schmoren im eigenen Saft (60–90 Min.)**
-Oktopus im Ganzen auf das Gemüse legen, Wein und Essig angießen — **kein Wasser**. Deckel drauf, Hitze auf klein. Der Oktopus zieht innerhalb von 15 Min. erstaunlich viel eigene Flüssigkeit und schmort darin. Ab jetzt nur alle 20–30 Min. kurz wenden. *Es soll nur sanft blubbern, nie sprudeln — sonst wird er gummig. Kein Ofen nötig, ein Topf auf kleinster Flamme heizt die Küche kaum auf.*
+Oktopus im Ganzen auf das Gemüse legen, 100 ml Rotwein und 3 EL Rotweinessig angießen — **kein Wasser**. Deckel drauf, Hitze auf klein. Der Oktopus zieht innerhalb von 15 Min. erstaunlich viel eigene Flüssigkeit und schmort darin. Ab jetzt nur alle 20–30 Min. kurz wenden. *Es soll nur sanft blubbern, nie sprudeln — sonst wird er gummig. Kein Ofen nötig, ein Topf auf kleinster Flamme heizt die Küche kaum auf.*
 
 **4. Garprobe (ab 60 Min.)**
 Ein Messer soll an der dicksten Stelle eines Tentakels ohne Widerstand einstechen — wie in gekochte Kartoffel. Je nach Tier 60–90 Min. Dann Topf vom Herd, Oktopus **im Sud 20–30 Min. entspannen lassen** — das macht den größten Unterschied bei der Zartheit.
 
 **5. Kartoffeln (parallel, letzte 30 Min.)**
-Kartoffeln schälen, in grobe Stücke schneiden, in Salzwasser garen. Abgießen, mit 2–3 EL vom Oktopus-Schmorsud, etwas Olivenöl und Oregano vermengen.
+1 kg Kartoffeln schälen, in grobe Stücke schneiden, in Salzwasser garen. Abgießen, mit 2–3 EL vom Oktopus-Schmorsud, 2 EL Olivenöl und 1 TL Oregano vermengen.
 
 **6. Salat (10 Min.)**
-Tomaten und Gurke grob schneiden, rote Zwiebel in feine Ringe, mit Oliven (ein paar für den Oktopus zurückbehalten), Olivenöl, einem Spritzer Essig und Oregano mischen. Feta als Platte obendrauf.
+400 g Tomaten und ½ Salatgurke grob schneiden, 1 rote Zwiebel in feine Ringe, mit 150 g Kalamata-Oliven (ein paar für den Oktopus zurückbehalten), 3 EL Olivenöl, 1 EL Rotweinessig und 1 TL Oregano mischen. 200 g Feta als Platte obendrauf.
 
 **7. Optional: Anbraten/Grillen (3–4 Min.)**
 Tentakel trocken tupfen und in sehr heißer (Grill-)Pfanne mit wenig Öl pro Seite 1–2 Min. rösten — gibt Röstaromen und knusprige Saugnäpfe. *Lohnt sich, ist aber bei 35 °C draußen verzichtbar — lauwarm direkt aus dem Sud ist genauso legitim.*
 
 **8. Servieren**
-Tentakel in mundgerechte Stücke schneiden, auf den Kartoffeln anrichten. Großzügig mit gutem Olivenöl beträufeln, Zitrone darüber auspressen, Oregano und ein paar Oliven darüber. Den eingekochten Schmorsud unbedingt als Sauce dazu — der ist Gold. Erwachsene: Chiliflocken pro Teller.
+Tentakel in mundgerechte Stücke schneiden, auf den Kartoffeln anrichten. Großzügig mit dem restlichen Olivenöl (~2 EL) beträufeln, 1 Zitrone darüber auspressen, Oregano und ein paar Oliven darüber. Den eingekochten Schmorsud unbedingt als Sauce dazu — der ist Gold. Erwachsene: Chiliflocken pro Teller.
 
 ## Kinder-Anpassung
 

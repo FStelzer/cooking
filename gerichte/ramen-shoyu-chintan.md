@@ -80,18 +80,18 @@
 **Schritte:**
 
 **a) Blanchieren (kritisch für klare Brühe):**
-Knochen/Hähnchen in den Topf, kaltes Wasser drüber, aufkochen, 5-10 Min stark kochen. Schaum komplett abschütten, alles unter kaltem Wasser abspülen, Topf auswaschen.
+Suppenhuhn (~1,1kg) und 800g Hähnchenflügel in den Topf, kaltes Wasser drüber, aufkochen, 5-10 Min stark kochen. Schaum komplett abschütten, alles unter kaltem Wasser abspülen, Topf auswaschen.
 
 **b) Hauptkochung:**
 Hähnchen zurück in den sauberen Topf, mit 3-3,5L kaltem Wasser. Aufkochen, dann auf **niedrige Hitze** — sanftes Simmern, fast nicht blubbern. Sichtbare Bewegung, aber keine sprudelnden Blasen.
 
 **c) Schaum abschöpfen:** Erste 1-2h alle 15-20 Min.
 
-**d) Aromaten zugeben:** Nach 2,5h Zwiebel, Lauch, Knoblauch, Ingwer, Möhren, Shiitake dazu.
+**d) Aromaten zugeben:** Nach 2,5h 1 halbierte Zwiebel, 1 Stange Lauch, 1 halbierte Knoblauchknolle, 5cm Ingwer, 2 Möhren und 1-2 getrocknete Shiitake dazu.
 
-**e) Fett abschöpfen für Chiyu:** Nach ~3h ein paar EL klares Hühnerfett abschöpfen, beiseite.
+**e) Fett abschöpfen für Chiyu:** Nach ~3h ~100ml klares Hühnerfett abschöpfen (Bedarf fürs Chiyu), beiseite.
 
-**f) Kombu:** Letzte 30 Min zugeben. Bei zerkleinertem Kombu nur 15-20 Min.
+**f) Kombu:** 1 Stück ~10x10cm letzte 30 Min zugeben. Bei zerkleinertem Kombu (~10-15g) nur 15-20 Min.
 
 **g) Gesamtdauer: 4 Stunden.** Durch feines Sieb + Mulltuch abseihen. Ergebnis: ~1,8-2L klare Brühe.
 
@@ -109,7 +109,7 @@ Hähnchen zurück in den sauberen Topf, mit 3-3,5L kaltem Wasser. Aufkochen, dan
 - **KEINE getrocknete Shiitake** (siehe Learnings — verstärkt Pilznote unnötig)
 
 **Schritte:**
-Alles außer Katsuobushi in kleinen Topf, langsam auf ~70-80°C — **nicht kochen**. Hitze aus, Katsuobushi rein, 10 Min ziehen. Abseihen.
+150ml Sojasauce, 50ml Mirin, 50ml Sake, 1 EL Zucker und das Kombu-Stück (~5x5cm) in kleinen Topf, langsam auf ~70-80°C — **nicht kochen**. Hitze aus, 5g Katsuobushi rein, 10 Min ziehen. Abseihen.
 
 **Dosierung:** ~3 EL Tare auf 400ml Brühe. Für Kleinkind 1,5 EL.
 
@@ -121,7 +121,7 @@ Alles außer Katsuobushi in kleinen Topf, langsam auf ~70-80°C — **nicht koch
 - Grüne Frühlingszwiebel-Enden
 
 **Schritte:**
-Alles in kleinen Topf, mittlere Hitze, 10-15 Min bis goldbraun (NICHT schwarz!). Abseihen.
+~100ml Hühnerfett, 4-5 fein gehackte Knoblauchzehen und die Frühlingszwiebel-Enden in kleinen Topf, mittlere Hitze, 10-15 Min bis goldbraun (NICHT schwarz!). Abseihen.
 
 **Dosierung:** 1 TL pro Schüssel.
 
@@ -144,7 +144,7 @@ Alles in kleinen Topf, mittlere Hitze, 10-15 Min bis goldbraun (NICHT schwarz!).
 
 **b) Anbraten:** Pfanne ohne Öl, von allen Seiten braun (~5 Min).
 
-**c) Schmoren:** Marinade in kleinen Topf (gerade passend), aufkochen, Fleisch rein, Hitze runter, **Deckel drauf**, 1,5-2h sanft simmern. Alle 30 Min wenden.
+**c) Schmoren:** Marinade (100ml Sojasauce, 50ml Sake, 50ml Mirin, 300ml Wasser, 3 EL Zucker, 4 Knoblauchzehen, 4cm Ingwer, 1 Frühlingszwiebel) in kleinen Topf (gerade passend), aufkochen, Fleisch rein, Hitze runter, **Deckel drauf**, 1,5-2h sanft simmern. Alle 30 Min wenden.
 
 **Wichtig:** Fleisch muss **nicht** komplett bedeckt sein — 1/2 bis 2/3 reicht. Bei zu wenig: Backpapier-Cartouche direkt aufs Fleisch legen.
 
@@ -160,9 +160,9 @@ Alles in kleinen Topf, mittlere Hitze, 10-15 Min bis goldbraun (NICHT schwarz!).
 
 **Schritte:**
 
-**a) Eier kochen:** Wasser kochen, Eier direkt aus dem Kühlschrank rein. **6:30 Min** für cremig-flüssig. Für Kleinkind **9-10 Min** für festen Kern. Sofort in Eiswasser, 5 Min, pellen.
+**a) Eier kochen:** Wasser kochen, 6 Eier direkt aus dem Kühlschrank rein. **6:30 Min** für cremig-flüssig. Für Kleinkind **9-10 Min** für festen Kern. Sofort in Eiswasser, 5 Min, pellen.
 
-**b) Marinieren:** In Gefrierbeutel mit kalter (!) Chashu-Marinade, Luft raus, mind. 2h besser über Nacht.
+**b) Marinieren:** In Gefrierbeutel mit ~300ml kalter (!) Chashu-Marinade, Luft raus, mind. 2h besser über Nacht.
 
 ### 6. Toppings
 
@@ -179,7 +179,7 @@ Pro Schüssel:
 1. 3 EL Tare (Kleinkind: 1,5 EL)
 2. 1 TL Chiyu (Kleinkind: weglassen)
 3. ~400ml heiße Brühe, mit Stäbchen umrühren
-4. Nudeln kochen (Packung -10 Sek), in Sieb **kräftig ausschütteln**, in Schüssel
+4. Nudeln kochen (~150g frisch bzw. ~100g trocken pro Erwachsenem, Kleinkind ~die Hälfte; Packungszeit -10 Sek), in Sieb **kräftig ausschütteln**, in Schüssel
 5. Toppings: 2-3 Chashu, halbes Ei (längs!), Frühlingszwiebeln, Pilze, Nori
 
 **Sofort servieren!**

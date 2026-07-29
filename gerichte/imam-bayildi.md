@@ -89,10 +89,10 @@ nachgiebig ist (Messerprobe wie beim Oktopus: kein Widerstand). *Sie dürfen
 einfallen — werden eh gefüllt.*
 
 **3. Füllung (25 Min., parallel)**
-4 EL Olivenöl (~60 ml) in großer Pfanne, Zwiebeln in feine Halbringe, bei
+4 EL Olivenöl (~60 ml) in großer Pfanne, 4 Zwiebeln in feine Halbringe, bei
 mittlerer Hitze **10–12 Min.** langsam weich und leicht golden schmoren — nicht rösten,
-nicht abkürzen. 1 Spitzpaprika in Ringen + gehackten Knoblauch 3 Min. mit.
-400 g der Tomaten gewürfelt, Tomatenmark, 1 TL Zucker, 1 TL Oregano, Salz,
+nicht abkürzen. 1 Spitzpaprika in Ringen + 5 gehackte Knoblauchzehen 3 Min. mit.
+400 g der Tomaten gewürfelt, 1 EL Tomatenmark, 1 TL Zucker, 1 TL Oregano, Salz,
 Pfeffer; ~8 Min. einkochen, bis es dick und marmeladig ist. Vom Herd, gut die
 Hälfte der gehackten Petersilie (+ optional Minze) unterheben. Abschmecken —
 die Füllung soll solo schon rund sein: süß von der Zwiebel, sauer von der
@@ -125,8 +125,8 @@ man salzig und süß schwächer wahr als heiß; was warm aus dem Ofen „rund"
 schmeckt, ist lauwarm flach. Also: Sud probieren, Salz nachziehen, deutlich
 mehr Zitrone als man vermutet.
 
-Mit Schmorsud beträufeln, restliche Petersilie, Spritzer Zitrone. Dazu
-Joghurt — **besser als pur: geriebener roher Knoblauch + Salz im Joghurt**,
+Mit Schmorsud beträufeln, restliche Petersilie, Saft der restlichen ½ Zitrone. Dazu
+500 g Joghurt — **besser als pur: 1 geriebene rohe Knoblauchzehe + Salz im Joghurt**,
 das bringt die meiste Wucht pro Aufwand. Brot zum Tunken — der Sud
 ist wie beim Oktopus Gold. Optional Bulgur-Pilav. Erwachsene: Pul Biber
 großzügig.

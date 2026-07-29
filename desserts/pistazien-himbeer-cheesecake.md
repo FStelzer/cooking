@@ -101,8 +101,8 @@ Mengen. Was ich geändert habe und warum:
 ## Zubereitung
 
 **1. Keksboden (10 Min.)**
-Kekse fein mahlen (Stabmixer/Mixer oder Beutel + Nudelholz). Butter schmelzen,
-mit Keksbröseln, 60 ml Milch und optional 1 EL weißer Schokocreme verrühren.
+300 g Kekse fein mahlen (Stabmixer/Mixer oder Beutel + Nudelholz). 125 g Butter
+schmelzen, mit Keksbröseln, 60 ml Milch und optional 1 EL weißer Schokocreme verrühren.
 In die mit Backpapier ausgelegte Form geben und mit einem Glasboden fest
 andrücken. In den Kühlschrank.
 
@@ -112,8 +112,8 @@ andrücken. In den Kühlschrank.
 > 150 g Butter nehmen.
 
 **2. Himbeerschicht (15 Min. + 1 Std. kühlen)**
-Himbeeren mit 1–2 EL Zucker, Vanillezucker und 2 EL Wasser in einen kleinen
-Topf, bei mittlerer Hitze aufkochen und ~5 Min. einkochen lassen. Durch ein
+230 g TK-Himbeeren mit 1–2 EL Zucker, 1 Pck. Vanillezucker und 2 EL Wasser in einen
+kleinen Topf, bei mittlerer Hitze aufkochen und ~5 Min. einkochen lassen. Durch ein
 feines Sieb passieren (Kerne raus) und zurück in den Topf. 1 EL Speisestärke in
 2 EL kaltem Wasser glattrühren, unter Rühren zugeben und 1–2 Min. weiterkochen,
 bis es deutlich andickt. Abkühlen lassen — **lauwarm, nicht heiß** auf den Boden
@@ -123,7 +123,7 @@ Nicht abkürzen: Kommt der Fil auf eine warme Fruchtschicht, verläuft die
 Grenze und die Sahne fällt zusammen.
 
 **3. Pistazien-Fil (10 Min.)**
-300 ml Sahne steif schlagen. In einer zweiten Schüssel Mascarpone und
+300 ml Sahne steif schlagen. In einer zweiten Schüssel 500 g Mascarpone und die
 Pistaziencreme glattrühren — **Menge nach Sorte, 300–400 g** (Staffelung
 siehe Beschaffung), zwischendurch probieren (Mascarpone nicht überschlagen —
 er wird sonst körnig). Sahne in zwei Portionen unterheben. Auf die kalte Himbeerschicht
@@ -137,7 +137,8 @@ Oberfläche des Fils an.
 
 **5. Durchkühlen (über Nacht)**
 Mindestens 4–6 Std., besser über Nacht in den Kühlschrank. Vor dem Servieren
-mit gehackten Pistazien und frischen Himbeeren belegen. Mit einem in heißem
+mit gehackten Pistazien (30 g, optional) und Himbeeren (restliche ~70 g TK,
+aufgetaut — oder frische) belegen. Mit einem in heißem
 Wasser erwärmten, trocken gewischten Messer schneiden.
 
 ## Notizen & Varianten

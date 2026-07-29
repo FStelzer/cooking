@@ -83,19 +83,20 @@ Wunsch-Filets bestellen); Fallback Selgros (TK). In dieser Reihenfolge fragen:
 
 #### 1. Karkassen vorbereiten
 
-Karkassen unter kaltem Wasser gründlich abspülen. **Alle dunkelroten
+Die 1,5 kg Karkassen unter kaltem Wasser gründlich abspülen. **Alle dunkelroten
 Kiemenreste und Blut entfernen** — das ist der wichtigste Schritt für einen
 sauberen Fond. Mit der Schere in faustgroße Stücke teilen.
 
 #### 2. Mirepoix anschwitzen (10 Min)
 
-3 EL Olivenöl im 6L-Topf erhitzen. Fenchel, Zwiebeln und Lauch grob würfeln
-und bei mittlerer Hitze weich dünsten. **Keine Farbe nehmen lassen!**
+3 EL Olivenöl im 6L-Topf erhitzen. 2 Fenchelknollen, 2 Zwiebeln und 1
+Lauchstange (nur weißer Teil) grob würfeln und bei mittlerer Hitze weich
+dünsten. **Keine Farbe nehmen lassen!**
 
 #### 3. Knoblauch & Tomatenmark anrösten (3 Min)
 
-Knoblauchknolle quer halbieren, mit Schnittfläche nach unten in den Topf
-legen. Tomatenmark dazugeben und mitrösten, bis es duftet und dunkler wird.
+1 Knoblauchknolle quer halbieren, mit Schnittfläche nach unten in den Topf
+legen. 1 EL Tomatenmark dazugeben und mitrösten, bis es duftet und dunkler wird.
 
 #### 4. Mit Weißwein ablöschen (3 Min)
 
@@ -104,8 +105,8 @@ einkochen lassen — er bringt Säure und Tiefe, keine Weinnote.
 
 #### 5. Tomaten dazu (5 Min)
 
-Frische Tomaten grob hacken, mit Dosentomaten hinzufügen, einmal aufkochen
-lassen.
+4 frische Tomaten grob hacken, mit 400 g Dosentomaten hinzufügen, einmal
+aufkochen lassen.
 
 #### 6. Karkassen einbauen (5 Min)
 
@@ -114,9 +115,11 @@ und Aroma abgeben.
 
 #### 7. Auffüllen
 
-Mit ca. 2,5 L kaltem Wasser auffüllen (alles knapp bedeckt). Dazu:
-Fenchelsamen, Pfefferkörner, Sternanis, Lorbeer, Thymian, Petersilienstiele,
-Orangenzeste, 1 TL Salz. Aufkochen, dann auf kleinste Stufe.
+Mit ca. 2,5 L kaltem Wasser auffüllen (alles knapp bedeckt). Dazu: 1 TL
+Fenchelsamen, 1 TL Pfefferkörner, 1 Sternanis, 2 Lorbeerblätter, 5 Zweige
+Thymian, die Petersilienstiele (Blätter fürs Anrichten aufheben), 1
+daumengroßer Streifen Orangenzeste, 1 TL Salz. Aufkochen, dann auf kleinste
+Stufe.
 
 #### 8. Köcheln (40 Min) — KRITISCH
 
@@ -144,11 +147,11 @@ Abkühlen, über Nacht in den Kühlschrank → **Geschmacks-Booster**.
 #### 12. Rouille zubereiten (klassisch, mit Eigelb)
 
 1. 0,5 g Safran in 1 EL warmem Wasser ziehen lassen (10 Min).
-2. Knoblauchzehen mit ½ TL Salz im Mörser zu feiner Paste verarbeiten.
+2. 4 Knoblauchzehen mit ½ TL Salz im Mörser zu feiner Paste verarbeiten.
 3. In einer Schüssel: 1 Eigelb, Knoblauchpaste und Safranwasser verrühren.
-   Olivenöl **tropfenweise** einarbeiten wie bei Mayonnaise — erst langsam,
-   dann im dünnen Strahl, bis eine dichte, rostfarbene Creme steht.
-4. Mit Zitronensaft, Cayenne und Salz abschmecken. Abgedeckt kalt stellen
+   150 ml Olivenöl **tropfenweise** einarbeiten wie bei Mayonnaise — erst
+   langsam, dann im dünnen Strahl, bis eine dichte, rostfarbene Creme steht.
+4. Mit 1 EL Zitronensaft, Cayenne und Salz abschmecken. Abgedeckt kalt stellen
    (hält 1–2 Tage — rohes Eigelb, nicht länger).
 5. *Mehr Stand gewünscht (z. B. für Crouton-Auflage): 1 kleine weichgekochte,
    gut ausgedämpfte Kartoffel durch die Presse dazu — macht sie stabiler und
@@ -194,21 +197,22 @@ Schüssel — Klecks direkt in die Suppe oder als Dip.
 **Timing:** Kochtag, während die Brühe langsam erhitzt (15 Min aktive Zeit,
 dann 5–10 Min ziehen lassen).
 
-1. **Fenchel hauchdünn hobeln** mit der Mandoline (Schutzhandschuh!). Grünes
-   Kraut abzupfen, beiseitelegen.
-2. **Orangen filetieren:** oben und unten kappen, Schale samt weißer Haut
+1. **Fenchel (1 große oder 2 kleine Knollen) hauchdünn hobeln** mit der
+   Mandoline (Schutzhandschuh!). Grünes Kraut abzupfen, beiseitelegen.
+2. **2 Orangen filetieren:** oben und unten kappen, Schale samt weißer Haut
    wegschneiden. Über einer Schüssel zwischen den Häuten die Filets
    herauslösen. **Saft auffangen!**
-3. **Rote Zwiebel** hauchdünn in Ringe schneiden, kurz in Eiswasser legen
+3. **½ kleine rote Zwiebel** hauchdünn in Ringe schneiden, kurz in Eiswasser legen
    (5 Min) — nimmt die aggressive Schärfe.
-4. **Dressing:** aufgefangener Orangensaft + Zitronensaft + 3–4 EL Olivenöl +
-   Salz + Pfeffer verquirlen. Sardellenfilets sehr fein hacken und
-   einrühren (salzige Tiefe; Alternative: Kapern grob gehackt).
+4. **Dressing:** aufgefangener Orangensaft + Saft von ½ Zitrone + 3–4 EL
+   Olivenöl + Salz + Pfeffer verquirlen. 2–3 Sardellenfilets sehr fein hacken
+   und einrühren (salzige Tiefe; Alternative: Kapern grob gehackt).
 5. **Anrichten:** Fenchel locker auf Tellern verteilen, Orangenfilets,
-   abgetropfte Zwiebel, Oliven darüber. Dressing drüberträufeln.
+   abgetropfte Zwiebel, 50 g Oliven darüber. Dressing drüberträufeln.
 6. **5–10 Min ziehen lassen** vor dem Servieren — der Fenchel wird zart statt
    roh-knackig.
-7. Pistazien und Minze/Fenchelgrün **erst direkt vor dem Servieren** darauf.
+7. 1 EL Pistazien und Minze/Fenchelgrün **erst direkt vor dem Servieren**
+   darauf.
 
 ## Kinder-Anpassung
 

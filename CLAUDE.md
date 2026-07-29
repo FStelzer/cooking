@@ -133,6 +133,15 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
    wenn gut beschaffbar (im Zweifel auch amazone / online) und nicht allzu teuer oder zumindest
    für viele andere Dinge nützlich und nicht nur für ein einziges Rezept
 
+8. **Exakte Mengen in den Zubereitungsschritten:** Jeder Schritt nennt die
+   konkrete Menge samt Einheit („2 EL Fischsauce", „400 g Paprika") — nie nur
+   „die Gewürze" oder „die Paprika". Beim Kochen darf man nie zwischen
+   Schritten und Einkaufsliste hin- und herspringen müssen. Rollenverteilung:
+   die Einkaufsliste summiert (Gesamtverbrauch pro Zutat), die Schritte
+   dosieren (Menge pro Verwendung). Gilt auch beim Überarbeiten bestehender
+   Rezepte — gemischte Angaben („mal g, mal nur Zutatenname") beim Anfassen
+   einer Datei mit bereinigen.
+
 ## Repo-Struktur & Rezept-Status
 
 - **Ordner:** Alle Einzelrezepte liegen in `gerichte/` (keine Unterteilung nach

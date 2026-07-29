@@ -65,7 +65,7 @@ Fünf Zutaten stecken in mehreren Komponenten — Gesamtverbrauch (der Fehler vo
 | **Knoblauch** | 4 Zehen | 10–12 Zehen (1 Knolle) | 1 Zehe | — | 4 Zehen | **~20 Zehen ≈ 2 Knollen** → 3 kaufen |
 | **Joghurt** | 150 g | — | — | — | — | **150 g** → 500-g-Becher reicht locker |
 | **Neutrales Öl** | 2 EL | 250 ml | — | — | — | **~280 ml** + ~3 EL zum Braten ≈ **330 ml** → 750-ml-Flasche |
-| **Olivenöl** | — | — | — | 4 EL | 5 EL | **~135 ml** (+1 EL falls Shatta selbst) |
+| **Olivenöl** | — | — | — | 4 EL | 6 EL | **~150 ml** (+1 EL falls Shatta selbst) |
 
 Bei **Variante B mit doppelter Fleischmenge** verdoppelt sich nur die Marinade (→ 6 EL Zitrone, 8 Zehen, 300 g Joghurt) — Saucen und Beilagen bleiben gleich.
 
@@ -125,12 +125,12 @@ Verhältnis **4 Teile Kräuter : 1 Teil Bulgur** — der Bulgur ist Textur, nich
 - **Dressing in ZWEI Pfannen** (Paneer-Learning — Schärfe pro Teller ersetzt eingekochte Schärfe nicht, also umgekehrt: Kinder-Öl ganz ohne Chili):
   - *Pfanne 1 (Erwachsene):* 3 EL Olivenöl sanft erwärmen, 3 Zehen Knoblauch fein gehackt + 1 TL gemahlene Koriandersaat + 1–2 TL Aleppo-Pfeffer/Pul biber 1–2 Min. ziehen lassen (Knoblauch nicht bräunen).
   - *Pfanne 2 (Kind, klein):* 1 EL Olivenöl, 1 Zehe Knoblauch, ½ TL Koriandersaat — **kein Chili**.
-- Heiße Kartoffeln aufteilen, jeweils im Öl schwenken, gehackten frischen Koriander (¾ Bund) darüber, Spritzer Zitrone, Salz.
+- Heiße Kartoffeln aufteilen, jeweils im Öl schwenken, gehackten frischen Koriander (¾ Bund) darüber, Spritzer Zitrone (insgesamt 1–2 EL), Salz.
 
 ### 7. Garmethode A — Pfanne (erster Durchgang)
 
 1. Mariniertes Fleisch in fingerbreite Streifen schneiden. Grobe Marinade abstreifen (was dranbleibt, bleibt dran — nur keine Pfützen).
-2. Schwere Pfanne **sehr heiß** werden lassen, 1 EL neutrales Öl.
+2. Schwere Pfanne **sehr heiß** werden lassen, 1 EL neutrales Öl (vor jeder weiteren Portion bei Bedarf nachölen — insgesamt ~3 EL).
 3. **In 3–4 Portionen braten, Pfanne nie überladen** — zu viel Fleisch auf einmal, und es kocht im Joghurt statt zu rösten. Pro Portion: einlegen, 2–3 Min. **nicht bewegen** (Kruste!), dann wenden und 2–3 Min. fertig braten, bis die Kanten dunkel karamellisiert sind. Zwischen den Portionen Pfanne wieder richtig heiß werden lassen.
 4. Fertige Portionen im 80-°C-Ofen warm halten. Vor dem Wickeln kurz durchmischen, damit sich Säfte und Röstkanten verteilen.
 

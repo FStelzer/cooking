@@ -68,7 +68,7 @@ Marinade verrühren: 4 EL Fischsauce, 2 EL Nước màu, 1 EL Zucker, 1 EL Auste
 - Beides abgedeckt kalt stellen: 1–3 Std., besser über Nacht.
 
 **3. Pickle (10 Min. + mind. 1 Std. Ziehzeit)**
-Kohlrabi schälen, in dünne Scheiben/Viertelscheiben hobeln (Mandoline), Karotten ebenso. Mit ½ TL Salz vermengen, 10 Min. stehen lassen, ausdrücken. Lake: 45 ml Reisessig, 1,5 EL Zucker, 3 EL Wasser, Prise Salz. Mindestens 1 Std. ziehen lassen — hält im Kühlschrank problemlos bis zum nächsten Tag. *Kohlrabi (su hào) ist hier kein Papaya-Notbehelf, sondern nord-vietnamesischer Standard.*
+Kohlrabi (~300 g) schälen, in dünne Scheiben/Viertelscheiben hobeln (Mandoline), beide Karotten ebenso. Mit ½ TL Salz vermengen, 10 Min. stehen lassen, ausdrücken. Lake: 45 ml Reisessig, 1,5 EL Zucker, 3 EL Wasser, Prise Salz. Mindestens 1 Std. ziehen lassen — hält im Kühlschrank problemlos bis zum nächsten Tag. *Kohlrabi (su hào) ist hier kein Papaya-Notbehelf, sondern nord-vietnamesischer Standard.*
 
 **4. Sauce-Basis (10 Min.)**
 Im kleinen Topf 750 ml Wasser, 120 ml Fischsauce, 80–100 g Zucker (erst 80 g — nach dem Limetten-Zugeben in Schritt 8 abschmecken und ggf. nachsüßen) und 80 ml Reisessig erwärmen, bis der Zucker gelöst ist. **Noch ohne Limette, Knoblauch, Chili** — das kommt frisch vor dem Servieren. Zielprofil: wie eine leichte, süß-salzig-saure Brühe, löffelweise trinkbar. Wirkt sie pur zu mild, ist sie richtig — das Fleisch und der Pickle salzen/säuern nach.
@@ -79,7 +79,7 @@ Im kleinen Topf 750 ml Wasser, 120 ml Fischsauce, 80–100 g Zucker (erst 80 g �
 Aus der Hackmasse flache Taler formen, **~5 cm Durchmesser, 1,5 cm dick** — flach, kein Kugelformat (gart gleichmäßiger, mehr Röstfläche). Ergibt ~12 Stück plus 3–4 Kinder-Taler. Bauchscheiben ggf. in 5–6 cm Stücke schneiden. Beides 20 Min. Zimmertemperatur annehmen lassen.
 
 **6. Nudeln & Kräuterteller (20 Min., parallel zum Grill-Vorheizen)**
-Bún nach Packung kochen (meist 4–6 Min.), **kalt abschrecken**, gut abtropfen, zimmerwarm auf einer Platte anrichten. Kräuterteller: Salat in Blättern, Minze, Koriander, Thai-Basilikum als ganze Zweige, Gurke in Stiften. Alles nur gewaschen, nichts gezupft — man reißt bei Tisch selbst.
+400 g Bún nach Packung kochen (meist 4–6 Min.), **kalt abschrecken**, gut abtropfen, zimmerwarm auf einer Platte anrichten. Kräuterteller: Salat in Blättern, Minze, Koriander, Thai-Basilikum als ganze Zweige, Gurke in Stiften. Alles nur gewaschen, nichts gezupft — man reißt bei Tisch selbst.
 
 **7. Grillen (~20 Min.)**
 Gasgrill mit Haube, **zwei Zonen**: eine Seite volle Hitze, eine Seite aus/niedrig.

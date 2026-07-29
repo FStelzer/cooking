@@ -44,22 +44,22 @@ Schwanz: dünne Unterseite des Panzers mit der Schere links und rechts längs au
 Kopf längs halbieren. **Magensack entfernen** (kleiner körniger Beutel direkt hinter den Augen) – wegwerfen. Grünliche Masse (Tomalley) darf bleiben, gibt Tiefe. **Falls Weibchen: dunkelgrünen Rogen (Corail) herauslösen und kühl stellen** — wird später mit der Montier-Butter verknetet, gibt Farbe und deutlich mehr Hummergeschmack. Alle Schalen, Beine und Kopfhälften in 3–4 cm Stücke hacken. **Alles gründlich trocken tupfen** – nasse Schalen dämpfen statt zu rösten. *Je kleiner, desto mehr Geschmack.*
 
 **5. Karkassen rösten (8–10 Min.)**
-Öl und 40 g Butter im großen Topf stark erhitzen. Hummer- und Garnelenkarkassen kräftig rösten bis tiefrot, mit Röstaromen am Boden. *Nicht zaghaft sein – zu wenig Röstung ist der häufigste Grund für fade Bisque. Braun am Boden ist gut, schwarz nicht.*
+2 EL Olivenöl und 40 g Butter im großen Topf stark erhitzen. Hummer- und Garnelenkarkassen kräftig rösten bis tiefrot, mit Röstaromen am Boden. *Nicht zaghaft sein – zu wenig Röstung ist der häufigste Grund für fade Bisque. Braun am Boden ist gut, schwarz nicht.*
 
 **6. Gemüse & Tomatenmark (5 + 2 Min.)**
-Grob gewürfelte Schalotten, Karotte, Fenchel, Sellerie und angedrückten Knoblauch 5 Min. mitrösten. Tomatenmark einrühren, 2 Min. rösten, bis es dunkler wird.
+2 Schalotten, 1 Karotte (~100 g), ½ Fenchelknolle (~100 g) und 1 Stange Sellerie grob gewürfelt mit 2 angedrückten Knoblauchzehen 5 Min. mitrösten. 2 EL Tomatenmark einrühren, 2 Min. rösten, bis es dunkler wird.
 
 **7. Flambieren & Ablöschen**
-Cognac angießen und flambieren (Dunstabzug aus, Armlänge Abstand; alternativ 1 Min. verkochen lassen). Mit Weißwein ablöschen, Bratensatz lösen, fast vollständig einkochen.
+40 ml Cognac angießen und flambieren (Dunstabzug aus, Armlänge Abstand; alternativ 1 Min. verkochen lassen). Mit 200 ml Weißwein ablöschen, Bratensatz lösen, fast vollständig einkochen.
 
 **8. Köcheln (40, max. 45 Min.!)**
-Wasser/Fond angießen (Karkassen knapp bedeckt), Reis, Lorbeer und Thymian dazu. Offen sanft köcheln, zwischendurch mit dem Stampfer die Karkassen zerdrücken. **Estragon erst die letzten 10 Min. mitziehen lassen** – länger gekocht wird er medizinisch-bitter. *Nach ~45 Min. geben Schalen Bitterstoffe ab – länger bringt nichts. Nicht sprudelnd kochen.*
+1000 ml Wasser/Fond angießen (Karkassen knapp bedeckt), 25 g Reis, 1 Lorbeerblatt und 2 Zweige Thymian dazu. Offen sanft köcheln, zwischendurch mit dem Stampfer die Karkassen zerdrücken. **1 Zweig Estragon erst die letzten 10 Min. mitziehen lassen** – länger gekocht wird er medizinisch-bitter. *Nach ~45 Min. geben Schalen Bitterstoffe ab – länger bringt nichts. Nicht sprudelnd kochen.*
 
 **9. Mixen & Passieren**
 Lorbeer, Kräuter sowie **alle harten Scherenpanzer und dicken Kopfpanzerteile entfernen** – die sind zu hart für den Stabmixer und beschädigen die Glocke. Nur die weicheren Teile (Beine, dünne Schalen, Garnelenschalen, Gemüse) mit dem Stabmixer 20–30 Sek. grob anmixen. Durch feines Sieb passieren und mit der Kelle **kräftig und geduldig ausdrücken** – da steckt viel Geschmack. Für seidige Textur ein zweites Mal durch Passiertuch/Teesieb.
 
 **10. Reduzieren & Abschmecken**
-Auf ca. 800 ml einkochen – vor der Sahne probieren, sie soll schon kräftig schmecken. Sahne zugeben, aufkochen. Mit Salz und Zitrone abschmecken – **kein Cayenne in den Topf** (kommt pro Teller). *Vorsichtig – soll die Süße des Hummers heben, nicht herausschmecken.*
+Auf ca. 800 ml einkochen – vor der Sahne probieren, sie soll schon kräftig schmecken. 200 ml Sahne zugeben, aufkochen. Mit Salz und Zitronensaft (ca. 1 TL) abschmecken – **kein Cayenne in den Topf** (kommt pro Teller). *Vorsichtig – soll die Süße des Hummers heben, nicht herausschmecken.*
 
 **11. Hummerfleisch & Garnelen glasieren (2–3 Min.)**
 Hummerfleisch in mundgerechte Stücke schneiden. 15 g Butter bei milder Hitze schäumen lassen, Hummerfleisch und Garnelen darin glasieren, bis sie gerade opak sind. Sofort raus – jede Minute länger macht es gummig.

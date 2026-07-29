@@ -30,25 +30,25 @@
 Schweinebauch in ~4 cm große Würfel schneiden. In einem Topf mit kaltem Wasser aufsetzen, aufkochen, 2–3 Min. sprudeln lassen, abgießen und Würfel kalt abspülen. *Klassischer vietnamesischer Schritt: entfernt Trübstoffe, die Sauce bleibt klar und glänzend.*
 
 **2. Marinieren (15 Min., parallel weiterarbeiten)**
-Fleisch mit 2 EL Fischsauce, 1 EL Zucker, der Hälfte des fein gehackten Knoblauchs und der Schalotten sowie reichlich Pfeffer vermengen. Beiseitestellen.
+Fleisch mit 2 EL Fischsauce, 1 EL Zucker, 2 fein gehackten Knoblauchzehen und 2 fein gehackten Schalotten (jeweils die Hälfte) sowie reichlich Pfeffer vermengen. Beiseitestellen.
 
 **3. Eier kochen (parallel)**
-Eier 9–10 Min. hart kochen, abschrecken, pellen. *Ganz lassen — sie ziehen später im Schmorsud Farbe und Geschmack.*
+6 Eier 9–10 Min. hart kochen, abschrecken, pellen. *Ganz lassen — sie ziehen später im Schmorsud Farbe und Geschmack.*
 
 **4. Karamell — der entscheidende Schritt (5 Min.)**
 3 EL Zucker mit 1 EL Wasser im Schmortopf bei mittlerer Hitze schmelzen lassen, **nicht rühren**, nur den Topf schwenken. Warten, bis das Karamell tief bernsteinfarben ist — dunkler als man sich traut, Richtung Mahagoni, es darf gerade eben erste Rauchfähnchen ziehen. *Zu hell = nur süß statt bittersüß-komplex. Zu schwarz = bitter, dann lieber neu starten (kostet 3 EL Zucker und 5 Minuten).*
 
 **5. Anbraten (5 Min.)**
-Restliche Schalotten und Knoblauch ins Karamell, 30 Sek. rühren, dann das marinierte Fleisch dazu. Einige Minuten wenden, bis alle Würfel karamellüberzogen und leicht angebraten sind. *Vorsicht: Karamell spritzt, wenn das Fleisch feucht ist — Deckel als Schild bereithalten.*
+Restliche 2 Schalotten und 2 Knoblauchzehen (fein gehackt) ins Karamell, 30 Sek. rühren, dann das marinierte Fleisch dazu. Einige Minuten wenden, bis alle Würfel karamellüberzogen und leicht angebraten sind. *Vorsicht: Karamell spritzt, wenn das Fleisch feucht ist — Deckel als Schild bereithalten.*
 
 **6. Schmoren (90–120 Min.)**
-Mit Kokoswasser auffüllen, bis das Fleisch knapp bedeckt ist. Restliche 2–3 EL Fischsauce dazu. Aufkochen, Schaum abschöpfen. Eier und **ganze** Chilis hineinlegen. Deckel halb auflegen und bei kleinster Hitze leise schmoren. Nach ~60 Min. Eier gelegentlich wenden, damit sie gleichmäßig Farbe ziehen. *Ein Topf, kleinste Flamme — auch das heizt die Küche kaum.*
+Mit 500–600 ml Kokoswasser auffüllen, bis das Fleisch knapp bedeckt ist. Restliche 2–3 EL Fischsauce dazu. Aufkochen, Schaum abschöpfen. Die 6 Eier und 2–3 **ganze** Chilis hineinlegen. Deckel halb auflegen und bei kleinster Hitze leise schmoren. Nach ~60 Min. Eier gelegentlich wenden, damit sie gleichmäßig Farbe ziehen. *Ein Topf, kleinste Flamme — auch das heizt die Küche kaum.*
 
 **7. Reduzieren & Abschmecken (letzte 20–30 Min.)**
 Deckel abnehmen und die Sauce sirupartig einreduzieren lassen — sie soll das Fleisch glänzend überziehen, nicht suppig sein. Abschmecken: Balance aus salzig (Fischsauce), süß (Karamell) und Pfeffer. Ist sie zu salzig, mit einem Schuss Kokoswasser strecken.
 
 **8. Schnell-Pickle & Reis (parallel, 20 Min.)**
-Karotten und Rettich in feine Stifte, mit Reisessig, 1 EL Zucker und Salz vermengen, 20 Min. ziehen lassen. Gurke in Scheiben. Jasminreis wie gewohnt kochen.
+2 Karotten und 1 Rettich in feine Stifte, mit 3 EL Reisessig, 1 EL Zucker und 1 Prise Salz vermengen, 20 Min. ziehen lassen. ½ Salatgurke in Scheiben. 400 g Jasminreis wie gewohnt kochen.
 
 **9. Servieren**
 Fleisch, Eier (halbiert) und viel Sauce auf Reis. Gurke und Pickle dazu — die Frische ist kein Deko-Beiwerk, sondern der nötige Kontrast zum reichen Fleisch. Frühlingszwiebeln/Koriander darüber.

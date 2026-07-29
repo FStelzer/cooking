@@ -55,19 +55,19 @@ Die Smashed Cucumber und die Yuzu Panna Cotta passen hier ideal rein, da sie sic
 
 ### 1. Die Tonkotsu-Brühe (Das weiße Gold)
 
-*   **Zutaten:** Schweinefüße, Halsknochen, 1 Zwiebel (geschält!), 1 Lauchstange, 1 Knoblauchknolle (halbiert), 5cm Ingwer, Wasser.
+*   **Zutaten:** 2-3 halbierte Schweinefüße, 1,5-2kg Halsknochen, 1 Zwiebel (geschält!), 1 Lauchstange, 1 Knoblauchknolle (halbiert), 5cm Ingwer, 5-6L Wasser.
 *   **Profi-Tipp 1 (Wässern):** Lege die Knochen vor dem Kochen für 1 Stunde in kaltes Wasser. Das zieht das restliche Blut aus dem Mark und macht die finale Brühe strahlend weiß statt gräulich.
 *   **Blanchieren:** Knochen in den Topf, mit kaltem Wasser bedecken. Aufkochen und 10 Min stark sprudeln lassen. Das Wasser wird eklig braun-grau.
 *   **Waschen (Kritisch!):** Wasser abgießen. Jeden Knochen unter fließendem kalten Wasser mit den Daumen oder einer alten Zahnbürste abschrubben. Keine dunklen Blutklumpen dürfen übrig bleiben! Topf auswaschen.
 *   **Der "Rolling Boil":** Saubere Knochen zurück in den Topf, mit reichlich kaltem Wasser (ca. 5-6 Liter) bedecken. Aufkochen. Jetzt Hitze so hochstellen, dass das Wasser **aggressiv sprudelt**. Deckel leicht schräg auflegen.
 *   **Profi-Tipp 2 (Wasser-Management):** Durch das extreme Kochen emulgiert Fett und Wasser (es wird milchig). Dabei verdampft viel Wasser. Habe immer einen Wasserkocher mit *kochendem* Wasser parat und fülle alle 45-60 Minuten nach, sodass die Knochen immer gut bedeckt sind.
-*   **Aromaten:** 2 Stunden vor Ende die Zwiebel, Lauch, Knoblauch und Ingwer in die sprudelnde Brühe werfen.
+*   **Aromaten:** 2 Stunden vor Ende 1 Zwiebel, 1 Lauchstange, 1 halbierte Knoblauchknolle und 5cm Ingwer in die sprudelnde Brühe werfen.
 *   **Abseihen:** Nach 7-8 Stunden Hitze aus. Brühe durch ein feines Sieb drücken. *Tipp:* Drück mit einer Kelle das weichgekochte Mark und Gemüse durch das Sieb in die Brühe – das gibt enormen Körper! **Ergebnis:** ca. 3L weiße, cremige, ungesalzene Brühe.
 
 ### 2. Schnelle Ajitsuke Tamago (Marinierte Eier)
 
 *   Da du kein Chashu machst, brauchst du eine **Blitz-Marinade**: 100ml Sojasauce, 100ml Wasser, 30ml Mirin, 1 EL Zucker leicht erwärmen, bis der Zucker sich löst. Abkühlen lassen!
-*   Eier kochen (Erwachsene 6:30 Min, Kinder 9-10 Min). Sofort ins Eiswasser. Pellen und mind. 4 Stunden in die Marinade.
+*   6-8 Eier kochen (Erwachsene 6:30 Min, Kinder 9-10 Min). Sofort ins Eiswasser. Pellen und mind. 4 Stunden in die Marinade.
 
 ### 3. Die Miso-Tare (Die Würzbasis)
 
@@ -78,27 +78,27 @@ Die Smashed Cucumber und die Yuzu Panna Cotta passen hier ideal rein, da sie sic
 ### 4. Niku-Miso / Soboro (Das Fleisch-Topping)
 
 *   **Zutaten:** 600g Schweinehack, 1 EL Sesamöl, 1 EL geriebener Knoblauch/Ingwer. **Für die Glasur:** 2 EL Miso (hell), 1 EL Sojasauce, 1 EL Sake, 1 EL Zucker (alles in einer Tasse vormischen).
-*   **Zubereitung:** Hackfleisch in einer Pfanne krümelig und scharf anbraten, bis das Wasser verdampft ist und es im eigenen Fett brät.
+*   **Zubereitung:** 600g Schweinehack in 1 EL Sesamöl mit 1 EL geriebenem Knoblauch/Ingwer in einer Pfanne krümelig und scharf anbraten, bis das Wasser verdampft ist und es im eigenen Fett brät.
 *   **Profi-Tipp 4 (Karamellisierung):** Warte, bis das Hackfleisch anfängt, leicht knusprig zu werden. Erst dann die Glasur dazugeben. Die Hitze leicht reduzieren und unter Rühren einkochen lassen, bis das Fleisch klebrig glänzt. Beiseite stellen (kann vor dem Servieren einfach in der Mikrowelle oder Pfanne erwärmt werden).
 
 ### 5. Gemüse-Toppings vorbereiten
 
-*   **Sojasprossen:** *Pro-Tipp:* Nicht roh lassen! In einer heißen Pfanne mit einem Tropfen Öl 30 Sekunden sehr scharf anbraten (Wok-Hei). Sie sollen knackig bleiben, aber ihr rohes Aroma verlieren.
-*   **Mais:** Abgießen, kurz in der Mikrowelle oder Pfanne erwärmen.
-*   **Frühlingszwiebeln:** In feine Ringe schneiden.
+*   **Sojasprossen:** *Pro-Tipp:* Nicht roh lassen! Die 250g in einer heißen Pfanne mit einem Tropfen Öl 30 Sekunden sehr scharf anbraten (Wok-Hei). Sie sollen knackig bleiben, aber ihr rohes Aroma verlieren.
+*   **Mais:** 1 Dose abgießen, kurz in der Mikrowelle oder Pfanne erwärmen.
+*   **Frühlingszwiebeln:** 1 Bund in feine Ringe schneiden.
 
 ### 6. Vorspeise: Smashed Cucumber (Tataki Kyuri)
 
 *   **Zutaten:** 3 Salatgurken, 4 EL Sojasauce, 3 EL Reisessig, 2 EL geröstetes Sesamöl, 1 EL Zucker. Für Erwachsene: 2 gepresste Knoblauchzehen, Chili-Öl (Rayu) oder Chiliflocken.
-*   **Zubereitung:** Gurken waschen und die Enden abschneiden. Mit einem Nudelholz oder einer schweren Pfanne leicht plattklopfen, bis die Struktur aufbricht (so nehmen sie die Marinade besser auf). In mundgerechte Stücke reißen oder schneiden.
-*   **Marinieren:** Sojasauce, Reisessig, Sesamöl und Zucker verrühren. Einen Teil (ohne Knoblauch/Chili) für die Kinder abzweigen und mit einem Teil der Gurken mischen. Den Rest mit Knoblauch und Chili mischen und über die restlichen Gurken geben. Mind. 30 Min im Kühlschrank ziehen lassen.
+*   **Zubereitung:** 3 Salatgurken waschen und die Enden abschneiden. Mit einem Nudelholz oder einer schweren Pfanne leicht plattklopfen, bis die Struktur aufbricht (so nehmen sie die Marinade besser auf). In mundgerechte Stücke reißen oder schneiden.
+*   **Marinieren:** 4 EL Sojasauce, 3 EL Reisessig, 2 EL Sesamöl und 1 EL Zucker verrühren. Einen Teil (ohne Knoblauch/Chili) für die Kinder abzweigen und mit einem Teil der Gurken mischen. Den Rest mit 2 gepressten Knoblauchzehen und Chili mischen und über die restlichen Gurken geben. Mind. 30 Min im Kühlschrank ziehen lassen.
 
 ### 7. Dessert: Yuzu Panna Cotta & Frucht-Kanten
 
 *   **Zutaten Panna Cotta:** 500ml Sahne, 200ml Milch, 60g Zucker, 3-4 EL Yuzu-Saft, 4 Blatt Gelatine.
 *   **Zutaten Frucht-Kanten:** 250ml Wasser, 1 TL Agar-Agar (ca. 2-3g), 2 EL Zucker, Spritzer Zitronensaft, ca. 150g Beeren oder Fruchtstücke.
-*   **Frucht-Kanten:** Beeren in eine kleine eckige Tupperdose legen. Wasser, Agar-Agar und Zucker in einem kleinen Topf aufkochen, 2 Min sprudeln lassen (Agar-Agar muss kochen, um zu binden!). Leicht abkühlen lassen, dann über die Beeren gießen. Im Kühlschrank fest werden lassen (geht bei Agar-Agar sehr schnell, ca. 30 Min). Später in kleine Würfel (Kanten) schneiden und als Topping für die Panna Cotta verwenden.
-*   **Panna Cotta:** Gelatine in kaltem Wasser einweichen. Sahne, Milch und Zucker in einem Topf sanft erwärmen (nicht kochen!), bis der Zucker gelöst ist. Gelatine ausdrücken und in der warmen Mischung auflösen. Vom Herd nehmen und abkühlen lassen. **Wichtig:** Yuzu-Saft erst einrühren, wenn es nicht mehr heiß ist, damit die Säure die Milch nicht gerinnen lässt. In 6 Gläschen füllen und mind. 4 Stunden in den Kühlschrank.
+*   **Frucht-Kanten:** 150g Beeren in eine kleine eckige Tupperdose legen. 250ml Wasser, 1 TL Agar-Agar, 2 EL Zucker und einen Spritzer Zitronensaft in einem kleinen Topf aufkochen, 2 Min sprudeln lassen (Agar-Agar muss kochen, um zu binden!). Leicht abkühlen lassen, dann über die Beeren gießen. Im Kühlschrank fest werden lassen (geht bei Agar-Agar sehr schnell, ca. 30 Min). Später in kleine Würfel (Kanten) schneiden und als Topping für die Panna Cotta verwenden.
+*   **Panna Cotta:** 4 Blatt Gelatine in kaltem Wasser einweichen. 500ml Sahne, 200ml Milch und 60g Zucker in einem Topf sanft erwärmen (nicht kochen!), bis der Zucker gelöst ist. Gelatine ausdrücken und in der warmen Mischung auflösen. Vom Herd nehmen und abkühlen lassen. **Wichtig:** 3-4 EL Yuzu-Saft erst einrühren, wenn es nicht mehr heiß ist, damit die Säure die Milch nicht gerinnen lässt. In 6 Gläschen füllen und mind. 4 Stunden in den Kühlschrank.
 
 ---
 

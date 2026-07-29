@@ -44,13 +44,13 @@ Griechischer Schmorklassiker („wie gestohlen" gegart): Lamm mit Knoblauch gesp
 
 **Vortag: Spicken & Marinieren (20 Min.)**
 
-**1.** Fleisch trocken tupfen. Mit spitzem Messer ~10 tiefe Einschnitte, in jeden einen Knoblauchstift + ein paar Rosmarinnadeln schieben. *Die Spickung würzt von innen — Marinade allein erreicht den Kern eines 2-kg-Stücks nicht.*
+**1.** Fleisch trocken tupfen. Mit spitzem Messer ~10 tiefe Einschnitte, in jeden einen Knoblauchstift (Stifte aus ~4 Zehen) + ein paar Rosmarinnadeln schieben. *Die Spickung würzt von innen — Marinade allein erreicht den Kern eines 2-kg-Stücks nicht.*
 
 **2.** Marinade: Saft + Zeste von 1½ Zitronen, 5 gehackte Knoblauchzehen, 2 EL Rigani, ~80 ml Olivenöl, Salz großzügig, Pfeffer. Rundum einmassieren, abgedeckt über Nacht kalt stellen.
 
 **Kochtag**
 
-**3. Päckchen bauen (30 Min.):** Ofen auf 160 °C Ober-/Unterhitze. Bräter mit Doppellage Backpapier kreuzweise auslegen (großzügig überstehen lassen). Unten: Kartoffelspalten (4–5 cm, geschält), Zwiebelspalten, Tomatenscheiben, halbierte Knoblauchzehen, Lorbeer — salzen. Fleisch mit aller Marinade darauf, Käsewürfel darum verteilen, optional Wein angießen (max. 150 ml, **kein Wasser ins Päckchen** — es macht seinen eigenen Jus). Papier dicht einschlagen und mit Garn zubinden — *undicht = Dampf entweicht = trocken.* Deckel auf den Bräter, ~150 ml Wasser in den Bräter UNTER das Päckchen (austretender Saft brennt sonst an).
+**3. Päckchen bauen (30 Min.):** Ofen auf 160 °C Ober-/Unterhitze. Bräter mit Doppellage Backpapier kreuzweise auslegen (großzügig überstehen lassen). Unten: 1–1,2 kg Kartoffeln in Spalten (4–5 cm, geschält), 2 rote Zwiebeln in Spalten, 2 Tomaten in Scheiben, 5 halbierte Knoblauchzehen, optional 1 grüne Paprika in Streifen, 2 Lorbeerblätter — salzen. Fleisch mit aller Marinade darauf, Käsewürfel (150–200 g Graviera/Kefalotyri) darum verteilen, optional Wein angießen (max. 150 ml, **kein Wasser ins Päckchen** — es macht seinen eigenen Jus). Papier dicht einschlagen und mit Garn zubinden — *undicht = Dampf entweicht = trocken.* Deckel auf den Bräter, ~150 ml Wasser in den Bräter UNTER das Päckchen (austretender Saft brennt sonst an).
 
 **4. Garen (4 Std., null Arbeit):** 160 °C, ganze Schulter/Keule ~4 Std. (Ziel: ~90–95 °C Kern). Entscheidend ist der **Gabeltest**: löst sich das Fleisch nicht mühelos, wieder verschließen und +30 Min. — im Zweifel länger, nie heißer.
 
@@ -60,7 +60,7 @@ Griechischer Schmorklassiker („wie gestohlen" gegart): Lamm mit Knoblauch gesp
 
 **7. Servieren:** Kartoffeln aus dem Jus heben, Fleisch grob zupfen/portionieren, Jus darüber.
 
-**Horiatiki-Salat (10 Min., während der Ruhe):** Tomaten in Spalten direkt in der Schüssel schneiden (Saft bleibt drin), Gurke in dicken Halbmonden, Zwiebelringe, Paprika, Oliven. Feta als ganzer Block obenauf, Rigani darüber, gutes Olivenöl + Spritzer Rotweinessig. Kein Blattsalat, sparsam salzen (Feta + Oliven sind salzig genug). Brot dazu — tunkt Salatsaft und Lammjus.
+**Horiatiki-Salat (10 Min., während der Ruhe):** 3 Tomaten in Spalten direkt in der Schüssel schneiden (Saft bleibt drin), 1 Salatgurke in dicken Halbmonden, 1 rote Zwiebel in Ringen, 1 grüne Paprika, ~16 Kalamata-Oliven. 200 g Feta als ganzer Block obenauf, Rigani darüber, gutes Olivenöl + Spritzer Rotweinessig. Kein Blattsalat, sparsam salzen (Feta + Oliven sind salzig genug). Brot dazu — tunkt Salatsaft und Lammjus.
 
 ## Zeitplan (Essen um 18:30)
 

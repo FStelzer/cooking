@@ -144,7 +144,7 @@ Verwende große, warme Teller mit viel Weißraum. Kleine, präzise Portionen wir
 
 **Für das Blumenkohlpüree:**
 
-1. Blumenkohl putzen, in gleichmäßige Röschen teilen (wichtig für gleichmäßiges Garen).
+1. 1 Blumenkohl (ca. 700g) putzen, in gleichmäßige Röschen teilen (wichtig für gleichmäßiges Garen).
 2. In reichlich Salzwasser sehr weich kochen (ca. 15-18 Min) — eine Gabel sollte ohne Widerstand durchgehen.
 3. In ein Sieb abgießen und 5 Minuten abtropfen lassen. Überschüssiges Wasser ist der Feind eines guten Pürees!
 4. Noch heißen Blumenkohl mit 60g Butter und 60ml warmer Sahne im Mixer/Stabmixer pürieren.
@@ -164,7 +164,7 @@ Verwende große, warme Teller mit viel Weißraum. Kleine, präzise Portionen wir
 
 **Für die Jakobsmuscheln:**
 
-15. Muscheln auf Küchenpapier legen und SEHR gründlich trocken tupfen — von allen Seiten!
+15. Die Jakobsmuscheln (8 Stück + 2 Reserve) auf Küchenpapier legen und SEHR gründlich trocken tupfen — von allen Seiten!
 16. Idealerweise 10-15 Min offen im Kühlschrank antrocknen lassen.
 17. Erst kurz vor dem Braten mit Salz würzen (Salz zieht Feuchtigkeit!).
 18. Schwere Pfanne mit 1 EL neutralem Öl auf höchster Stufe erhitzen bis es leicht raucht.
@@ -231,7 +231,7 @@ Verwende große, warme Teller mit viel Weißraum. Kleine, präzise Portionen wir
 
 **Für die Entenbrust:**
 
-26. Entenbrust mindestens 30 Min, besser 1 Stunde vor dem Braten aus dem Kühlschrank nehmen.
+26. 2 Entenbrüste (die 3. ist Reserve — oder alle 3 für größere Portionen) mindestens 30 Min, besser 1 Stunde vor dem Braten aus dem Kühlschrank nehmen.
 27. Haut mit einem scharfen Messer rautenförmig einschneiden (ca. 5mm tief, 1cm Abstand).
 28. WICHTIG: Nicht ins Fleisch schneiden, nur die Haut und Fettschicht!
 29. Fleischseite mit Salz und Pfeffer würzen. Haut nur salzen, kein Pfeffer (verbrennt).
@@ -298,7 +298,7 @@ Entenbrust quer zur Faser in 1cm dicke Scheiben schneiden. Kartoffelbaumkuchen-S
 28. Zimtstange/Sternanis entfernen. Abkühlen lassen, dann kühl stellen.
 
 **Anrichten:**
-Parfait 10-15 Min vor dem Servieren aus dem Gefrierfach nehmen. Aus der Form stürzen, Folie entfernen. Mit einem heißen Messer (in heißes Wasser tauchen, abtrocknen) in ca. 2cm dicke Scheiben schneiden. Je eine Scheibe auf Teller legen. Birnen-Kompott daneben anrichten. Restliches Salzkaramell in Fäden darüber ziehen. Mit gehackten Pekannüssen bestreuen. Ein paar Kristalle Fleur de Sel direkt auf das Parfait geben — das Knuspern auf der Zunge zusammen mit dem kalten Eis ist eine Geschmacksexplosion!
+Parfait 10-15 Min vor dem Servieren aus dem Gefrierfach nehmen. Aus der Form stürzen, Folie entfernen. Mit einem heißen Messer (in heißes Wasser tauchen, abtrocknen) in ca. 2cm dicke Scheiben schneiden. Je eine Scheibe auf Teller legen. Birnen-Kompott daneben anrichten. Restliches Salzkaramell in Fäden darüber ziehen. Mit gehackten Pekannüssen (restliche 50g) bestreuen. Ein paar Kristalle Fleur de Sel direkt auf das Parfait geben — das Knuspern auf der Zunge zusammen mit dem kalten Eis ist eine Geschmacksexplosion!
 
 *Optional für extra Crunch: 2-3 Amarettini oder Spekulatius grob zerbröseln und darüber streuen.*
 
