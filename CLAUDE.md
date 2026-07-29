@@ -82,6 +82,19 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 - **Erste Anlaufstelle für Fisch & Meeresfrüchte** (Hummer, Garnelen mit Schale etc.)
 - Bei Spezialwünschen vorher anfragen; Fallback: Selgros (TK)
 
+### Türkischer / arabischer Laden (NOCH NICHT IDENTIFIZIERT)
+
+- Bislang keine Quelle im Repo — **Lücke**, die für alle levantinischen Projekte
+  blockierend ist (Shawarma, Mezze). Im Raum Dietzenbach/Offenbach sehr
+  wahrscheinlich vorhanden, muss noch gesucht und geprüft werden.
+- **Zu erwarten / dort zu prüfen:** Markook bzw. Saj (papierdünnes Fladenbrot),
+  Yufka als Fallback, 7-Gewürz/Baharat, Sumach, Za'atar, Aleppo-Pfeffer/Pul biber,
+  Granatapfelsirup, feiner Bulgur (Nr. 1), salzige Essiggurken, eingelegte rosa
+  Rüben, ggf. fertige Shatta.
+- **Wichtigster Einzelposten: gute Tahina** (libanesische/palästinensische Marke).
+  Supermarkt-Tahina ist oft bitter und dominiert Hummus wie Baba ghanoush —
+  größter Qualitätshebel des levantinischen Blocks. Großes Glas kaufen.
+
 ### Selgros (Großhandel, weiter weg)
 - Großhandel-Charakter, große Gebinde
 - Bei einem Trip kann nicht der Asialaden besucht werden → Trade-off
@@ -191,7 +204,8 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 ## Ideen für nächste Projekte
 
 → Siehe `ideen.md` (Ideen-Backlog). Aktuell in Arbeit (🚧-Stubs in `gerichte/`):
-Cá kho tộ, Cochinita Pibil, Lamm-Kleftiko, Tafelspitz.
+Bún chả, Cá kho tộ, Cochinita Pibil, Hähnchen-Shawarma, Lamm-Kleftiko,
+libanesische Mezze, Tafelspitz.
 
 ## Workflow: Neues Rezept erarbeiten
 

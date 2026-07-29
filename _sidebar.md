@@ -1,7 +1,10 @@
 - **🚧 in arbeit**
+  - [Bún chả (Hanoi-Style) — gegrilltes Schweinefleisch in warmem Nước chấm (4 Portionen)](/gerichte/bun-cha.md)
   - [Cá kho tộ — vietnamesischer Karamell-Schmorfisch (4 Portionen)](/gerichte/ca-kho-to.md)
   - [Cochinita Pibil — Schweineschulter in Achiote-Orangen-Marinade (4 Portionen + Reste)](/gerichte/cochinita-pibil.md)
   - [Lamm-Kleftiko — im Päckchen geschmortes Lamm mit Kartoffeln (4 Portionen + Reste)](/gerichte/lamm-kleftiko.md)
+  - [Libanesische Mezze — Hummus, Baba ghanoush, Muhammara, Labneh, Fatayer & Sambousek (4 Personen als Hauptmahlzeit)](/gerichte/mezze-libanesisch.md)
+  - [Hähnchen-Shawarma, libanesisch — mit Toum, Tabbouleh und Batata harra (4 Portionen)](/gerichte/shawarma-libanesisch.md)
   - [Tafelspitz, sommerlich — mit Frittatensuppe und kalten Saucen (4 Portionen + Reste)](/gerichte/tafelspitz.md)
 - **einkaufslisten**
   - [Einkaufsliste — Oktopus (griechisch) + Thịt kho trứng](/einkaufslisten/oktopus-thit-kho.md)
