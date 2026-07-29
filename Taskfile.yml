@@ -57,7 +57,12 @@ tasks:
             [ -z "$files" ] && continue
             echo "- **${dir}**"
             for f in $files; do
-              echo "  - [$(get_title "$f")](/${f})"
+              # ✅-Präfix für gekochte Rezepte (= ## Learnings-Sektion vorhanden)
+              if grep -q '^## Learnings' "$f"; then
+                echo "  - [✅ $(get_title "$f")](/${f})"
+              else
+                echo "  - [$(get_title "$f")](/${f})"
+              fi
             done
           done
         } > _sidebar.md

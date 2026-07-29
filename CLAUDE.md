@@ -136,7 +136,7 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 ## Repo-Struktur & Rezept-Status
 
 - **Ordner:** Alle Einzelrezepte liegen in `gerichte/` (keine Unterteilung nach
-  Küche/Region). Speziell bleiben: `menues/` (Mehrgänger), `schwangerschaft/`.
+  Küche/Region). Speziell bleibt: `menues/` (Mehrgänger).
   Einkaufslisten leben direkt in den Rezepten (kein eigener Ordner mehr);
   `ideen.md` ist die Einstiegsseite der Docsify-Site.
 - **Rezepte in Arbeit (TODO):** H1-Titel beginnt mit `🚧 ` und direkt unter dem
@@ -145,7 +145,8 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
   Fragen — noch keine Einkaufsliste/Zubereitung.
 - **Sidebar wird generiert:** `_sidebar.md` NIE von Hand editieren, sondern
   `task sidebar` laufen lassen. Der Generator setzt den Link auf `ideen.md`
-  zuoberst und gruppiert 🚧-Rezepte automatisch in die Sektion „🚧 in arbeit".
+  zuoberst, gruppiert 🚧-Rezepte automatisch in die Sektion „🚧 in arbeit" und
+  markiert gekochte Rezepte (= `## Learnings`-Sektion vorhanden) mit ✅-Präfix.
 - **Learnings werden generiert:** Einzige Quelle ist die `## Learnings`-Sektion
   der jeweiligen Rezeptdatei — Kurzfassung als Fließtext direkt unter der
   Überschrift (mit „Gekocht MM/JJJJ"), Details in `###`-Untersektionen darunter.
