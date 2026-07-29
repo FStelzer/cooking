@@ -19,3 +19,7 @@
   - [✅ Thịt kho trứng — vietnamesisches Karamell-Schweinefleisch mit Eiern (4 Portionen)](/gerichte/thit-kho-trung.md)
 - **menues**
   - [✅ Degustationsmenü — Hochzeitstag](/menues/menue-hochzeitstag.md)
+- **technik**
+  - [Abschmecken & Retten — Spickzettel](/technik/abschmecken.md)
+  - [Frittieren — Spickzettel](/technik/frittieren.md)
+  - [Garpunkte & Kerntemperaturen — Spickzettel](/technik/garpunkte.md)
