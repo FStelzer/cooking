@@ -136,7 +136,8 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 ## Repo-Struktur & Rezept-Status
 
 - **Ordner:** Alle Einzelrezepte liegen in `gerichte/` (keine Unterteilung nach
-  Küche/Region). Speziell bleibt: `menues/` (Mehrgänger).
+  Küche/Region). Speziell bleiben: `menues/` (Mehrgänger) und `desserts/`
+  (Einzeldesserts/Kuchen — Unterteilung nach Gangart, nicht nach Region).
   Einkaufslisten leben direkt in den Rezepten (kein eigener Ordner mehr);
   `ideen.md` ist die Einstiegsseite der Docsify-Site.
 - **Rezepte in Arbeit (TODO):** H1-Titel beginnt mit `🚧 ` und direkt unter dem

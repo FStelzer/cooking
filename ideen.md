@@ -13,6 +13,7 @@ und fliegt hier raus.
 - [Lamm-Kleftiko](/gerichte/lamm-kleftiko.md) — 07/2026
 - [Libanesische Mezze](/gerichte/mezze-libanesisch.md) — 07/2026
 - [Tafelspitz, sommerlich](/gerichte/tafelspitz.md) — 07/2026
+- [Pistazien-Himbeer-Cheesecake (no-bake)](/desserts/pistazien-himbeer-cheesecake.md) — 07/2026, Pistaziencreme ist Vorlauf-/Kostenposten
 
 ## Gekocht
 
