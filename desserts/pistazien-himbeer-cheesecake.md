@@ -49,6 +49,12 @@ Mengen. Was ich geändert habe und warum:
   Bronte-Produkte) sind der Referenzpunkt, im italienischen Feinkostladen oder
   online. REWE Center hat manchmal eine Sorte in der Italien-Ecke — nicht
   darauf verlassen, das ist ein Vorlauf-Artikel.
+  * **Dosierung nach Sorte** (Praxis-Feedback der Nachbarn, 07/2026 — mit
+    Supermarkt-Creme gekocht, Ergebnis traumhaft, aber sie nimmt bewusst
+    weniger Creme als das Original, sonst zu süß): **Supermarkt-Creme
+    (zuckerlastig): 300–320 g. Hochwertige Creme (>25 % Pistazie): 350–400 g.**
+    Selbstgemachte Variante (s. u.): ~350 g, plus Prise Salz. Beim Einrühren
+    probieren — Ziel ist deutlich Pistazie, nicht Dessertcreme pur.
   * *Selbst machen (Fallback und geschmacklich meist besser):* 200 g
     Pistazienmark/-paste (100 % Pistazie) + 150 g weiße Schokolade + 50 ml
     Sahne verrühren. Pistazienpaste gibt es online zuverlässiger als fertige
@@ -87,7 +93,8 @@ Mengen. Was ich geändert habe und warum:
 ### Feinkost / online (Vorlauf einplanen!)
 
 - [ ] 400 g Pistaziencreme, Pistazienanteil > 25 %
-      *(oder 200 g Pistazienpaste + 150 g weiße Schokolade extra, s. o.)*
+      *(oder 200 g Pistazienpaste + 150 g weiße Schokolade extra, s. o. —
+      verwendet werden je nach Sorte 300–400 g, siehe Beschaffung)*
 - [ ] Optional: 30 g Pistazienkerne, gesalzen-geröstet, gehackt — als Topping.
       Salz und Crunch sind hier kein Deko-Gag, sondern Gegengewicht zur Süße.
 
@@ -117,8 +124,9 @@ Grenze und die Sahne fällt zusammen.
 
 **3. Pistazien-Fil (10 Min.)**
 300 ml Sahne steif schlagen. In einer zweiten Schüssel Mascarpone und
-Pistaziencreme glattrühren (Mascarpone nicht überschlagen — er wird sonst
-körnig). Sahne in zwei Portionen unterheben. Auf die kalte Himbeerschicht
+Pistaziencreme glattrühren — **Menge nach Sorte, 300–400 g** (Staffelung
+siehe Beschaffung), zwischendurch probieren (Mascarpone nicht überschlagen —
+er wird sonst körnig). Sahne in zwei Portionen unterheben. Auf die kalte Himbeerschicht
 geben, glattstreichen, 30 Min. kühlen, damit die Oberfläche fest wird.
 
 **4. Weiße Ganache (5 Min.)**
