@@ -34,9 +34,13 @@ mittags kochen, abends essen, Küche bleibt kühl.
   (dann eher 2–3 große, halbiert statt geschlitzt — siehe Variante in den
   Notizen).
 - **Salzen ja/nein:** Moderne Auberginen sind kaum noch bitter. Salzen
-  (30 Min.) lohnt hier trotzdem — nicht gegen Bitterkeit, sondern weil
+  (15 Min.) lohnt hier trotzdem — nicht gegen Bitterkeit, sondern weil
   entwässerte Auberginen beim Rösten cremiger garen. *(Quellenlage: 10–30 Min.
-  oder ganz weglassen — 30 Min. sind das obere, unschädliche Ende.)*
+  oder ganz weglassen; 15 Min. reichen für den Textur-Effekt.)* **Dosiert
+  salzen: 0,75–1 % des Auberginengewichts, also ~½ TL feines Salz pro
+  275-g-Aubergine, innen und außen zusammen.** Dann nur abtupfen, nicht
+  abspülen — nasse Auberginen dampfen im Ofen statt zu rösten. Wer großzügig
+  gesalzen hat, spült kurz ab und tupft dafür sehr trocken.
 - **Olivenöl:** ~180 ml Verbrauch — ein Öl, das man auch pur aufs Brot geben
   würde. 200 ml einplanen (Rest zum Servieren).
 
@@ -69,8 +73,14 @@ mittags kochen, abends essen, Küche bleibt kühl.
 **1. Auberginen vorbereiten (10 Min. + 30 Min. Wartezeit)**
 Auberginen längs zebraartig schälen (Streifen stehen lassen — hält die Form).
 Ganz lassen, aber längs eine tiefe Tasche einschneiden (nicht durchstechen,
-Enden geschlossen lassen). Innen und außen salzen, mit Schnitt nach unten
-30 Min. auf Küchenpapier entwässern lassen. Abtupfen.
+Enden geschlossen lassen). Innen und außen salzen (~½ TL feines Salz pro
+Aubergine, nicht nach Gefühl schütten), mit Schnitt nach unten 15–30 Min. auf
+Küchenpapier entwässern lassen. Abtupfen, nicht abspülen.
+
+> **Salz-Budget:** Das Gericht wird an drei Stellen gesalzen (Aubergine,
+> Füllung, Angießflüssigkeit) und der Sud kocht danach stark ein. Bei jedem
+> Schritt für sich zurückhaltend bleiben — aber am Ende, kalt, konsequent
+> nachsalzen (Schritt 6). Beides gilt gleichzeitig; siehe Learnings.
 
 **2. Rösten (30 Min., parallel zu Schritt 3)**
 Ofen 200 °C Ober-/Unterhitze (Umluft 180 °C). Auberginen rundum mit 3 EL
@@ -93,8 +103,12 @@ Ofen auf 180 °C Ober-/Unterhitze (Umluft 160 °C). Auberginen dicht
 nebeneinander in den Bräter, Taschen aufklappen und großzügig füllen (ruhig
 überhäufen). Restliche 100 g Tomaten in Scheiben obendrauf, dazu je ein
 Streifen der übrigen Spitzpaprika (klassische Optik). Restliches Olivenöl
-(~5 EL / 75 ml) darübergießen, 150 ml Wasser + Saft ½ Zitrone + Prise Zucker
-+ Salz angießen. Deckel/Folie drauf, 45–60 Min. schmoren, letzte 10–15 Min.
+(~5 EL / 75 ml) über die Auberginen gießen. Dann die Schmorflüssigkeit
+anrühren — 150 ml Wasser + Saft ½ Zitrone + Prise Zucker + kleine Prise Salz
+im Messbecher, Salz und Zucker darin auflösen — und **am Rand des Bräters
+angießen, nicht über die Füllung** (spült sie sonst aus den Taschen). Die
+150 ml kochen stark ein, deshalb hier sparsam salzen und später über den Sud
+korrigieren. Deckel/Folie drauf, 45–60 Min. schmoren, letzte 10–15 Min.
 offen — dabei kurz prüfen: Der Boden darf nie trocken laufen, notfalls einen
 Schluck Wasser nach. *Ziel: Auberginen konfiert-weich, unten eine glänzende,
 leicht gebundene Öl-Tomaten-Sauce. Es soll leise blubbern — niedrig und lang
@@ -105,10 +119,17 @@ Aus dem Ofen und **abkühlen lassen**. İmam bayıldı wird lauwarm oder
 zimmerwarm gegessen, nie ofenheiß — erst beim Abkühlen ziehen Öl und Aromen
 in die Aubergine ein. Am Vortag gekocht ist das Gericht dokumentiert besser.
 
-**6. Servieren**
+**6. Servieren — hier wird final abgeschmeckt**
+**Erst im lauwarmen/kalten Zustand endgültig salzen und säuern.** Kalt nimmt
+man salzig und süß schwächer wahr als heiß; was warm aus dem Ofen „rund"
+schmeckt, ist lauwarm flach. Also: Sud probieren, Salz nachziehen, deutlich
+mehr Zitrone als man vermutet.
+
 Mit Schmorsud beträufeln, restliche Petersilie, Spritzer Zitrone. Dazu
-Joghurt (pur mit Salz oder mit geriebener Gurke), Brot zum Tunken — der Sud
-ist wie beim Oktopus Gold. Optional Bulgur-Pilav. Erwachsene: Pul Biber.
+Joghurt — **besser als pur: geriebener roher Knoblauch + Salz im Joghurt**,
+das bringt die meiste Wucht pro Aufwand. Brot zum Tunken — der Sud
+ist wie beim Oktopus Gold. Optional Bulgur-Pilav. Erwachsene: Pul Biber
+großzügig.
 
 ## Kinder-Anpassung
 
@@ -120,7 +141,41 @@ ist wie beim Oktopus Gold. Optional Bulgur-Pilav. Erwachsene: Pul Biber.
 
 ## Notizen
 
-**Noch nicht gekocht — Learnings folgen.**
+**Status: gekocht (Juli 2026). Urteil: in Ordnung, lecker, aber haut einen
+nicht um. Technik saß, Würze war zu flach.** Rezept oben entsprechend
+angepasst (Salz-Dosierung, Abschmecken kalt, Knoblauch-Joghurt).
+
+### Learnings 1. Durchgang
+
+- **Hauptproblem war Salz, nicht Gewürz.** „Lecker, aber unspektakulär" ist
+  die Signatur von untersalzen. Der Fehler war, an allen drei Salzstellen
+  gleichzeitig zurückhaltend zu sein *und* nie kalt nachzuschmecken. Richtig
+  ist: pro Schritt sparsam, am Ende kalt konsequent korrigieren.
+- **Lauwarm braucht mehr Salz und mehr Säure.** Bei zeytinyağlı muss es warm
+  fast schon zu kräftig wirken, damit es lauwarm stimmt. Nächstes Mal beim
+  Servieren spürbar mehr Zitrone und Salz direkt in den Sud.
+- **Öl als Verdünner unterschätzt.** 180 ml eines milden Öls flachen alles ab.
+  Ein kräftiges, pfeffriges Olivenöl ist hier Geschmacksträger, nicht Luxus —
+  beim nächsten Mal explizit ein bitteres/scharfes Öl wählen.
+- **Größte Hebel für Durchgang 2** (in dieser Reihenfolge): kalt abschmecken →
+  Knoblauch-Joghurt statt purem Joghurt → mehr Zitrone → etwas roher Knoblauch
+  in die Taschen vor dem Schmoren → Pul Biber großzügiger.
+- **Kreuzkümmel? Erwogen, verworfen.** Würde die Richtung ändern, nicht die
+  Intensität — und der eigentliche Mangel war Salz/Säure. Kreuzkümmel ist in
+  zeytinyağlı-Gerichten untypisch (gehört eher zu Köfte, karnıyarık oder
+  levantinischen gefüllten Auberginen). Die traditionelle warme Note bei
+  türkischen Füllungen ist **Yenibahar (Piment)**, teils mit Zimt, plus
+  getrocknete Minze. Das wäre der erste Gewürz-Versuch, wenn Salz allein nicht
+  reicht.
+- **Erwartungsmanagement:** İmam bayıldı ist konzeptionell ein leises, öl- und
+  tomatengetriebenes Gericht. Wer Wucht will, will eigentlich **karnıyarık**
+  (mit Hackfleisch) oder eine levantinische Variante mit Kreuzkümmel und
+  Koriander — nicht dieses Rezept mit mehr Gewürz.
+- **Über Nacht: Kühlschrank, nicht ausgeschalteter Ofen.** Der Ofen isoliert,
+  das Gericht bleibt stundenlang zwischen 5 und 60 °C — plus Knoblauch unter
+  einer Ölschicht. Abkühlen lassen (1–1,5 Std.), dann abgedeckt im Sud in den
+  Kühlschrank, 1 Std. vor dem Essen rausnehmen. Das „besser am nächsten Tag"
+  kommt vom Durchziehen, nicht von der Lagertemperatur.
 
 - **Vorbereiten:** Idealer Vortags-Koch — komplett fertig schmoren, abgedeckt
   kalt stellen, 1 Std. vor dem Essen rausnehmen. Nicht wieder aufheizen nötig.
