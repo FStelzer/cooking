@@ -16,6 +16,8 @@ tasks:
             [ -z "$t" ] && t=$(basename "$1" .md)
             printf '%s' "$t"
           }
+          # Ideen-Backlog zuoberst (Einstiegspunkt)
+          echo "- [Ideen-Backlog](/ideen.md)"
           # Rezepte in Arbeit: H1-Titel beginnt mit 🚧
           wip=""
           for dir in */; do
@@ -58,9 +60,48 @@ tasks:
               echo "  - [$(get_title "$f")](/${f})"
             done
           done
-          # Root-Seiten (der Generator scannt nur Unterordner)
-          echo "- [Ideen-Backlog](/ideen.md)"
         } > _sidebar.md
+
+  learnings:
+    desc: Generiere den "Bisherige Projekte"-Block in CLAUDE.md aus den ## Learnings-Sektionen der Rezepte
+    cmds:
+      - |
+        tmp=$(mktemp) gen=$(mktemp)
+        for f in */*.md; do
+          case "$f" in
+            _*) continue ;;
+          esac
+          awk -v path="$f" '
+            /^# / { if (!title) { title = $0; sub(/^# +/, "", title); sub(/^🚧 */, "", title) } }
+            /^## Learnings/ { inlearn = 1; next }
+            inlearn && /^##/ { exit }
+            inlearn { body = body $0 "\n" }
+            END {
+              sub(/^\n+/, "", body); sub(/\n+$/, "", body)
+              if (body == "") exit
+              # Sortierschlüssel: erstes MM/JJJJ in der Kurzfassung, sonst 0000-00 (undatiert zuerst)
+              key = "0000-00"
+              if (match(body, /[0-9][0-9]\/[0-9][0-9][0-9][0-9]/)) {
+                d = substr(body, RSTART, RLENGTH)
+                key = substr(d, 4, 4) "-" substr(d, 1, 2)
+              }
+              n = split(body, lines, "\n")
+              out = "- ✅ **" title "** (siehe `" path "`)"
+              for (i = 1; i <= n; i++) out = out "\n" (lines[i] == "" ? "" : "  " lines[i])
+              gsub(/\n/, "\x01", out)
+              print key "\t" out
+            }
+          ' "$f"
+        done | sort > "$tmp"
+        while IFS="$(printf '\t')" read -r _key entry; do
+          printf '%s\n\n' "$entry" | tr '\001' '\n'
+        done < "$tmp" > "$gen"
+        awk -v gen="$gen" '
+          /<!-- learnings:start -->/ { print; print ""; while ((getline line < gen) > 0) print line; skip = 1; next }
+          /<!-- learnings:end -->/ { skip = 0 }
+          !skip
+        ' CLAUDE.md > CLAUDE.md.new && mv CLAUDE.md.new CLAUDE.md
+        rm -f "$tmp" "$gen"
 
   serve:
     desc: Lokalen Python-Webserver auf Port 3000 starten

@@ -1,7 +1,4 @@
-# 🚧 Tafelspitz, sommerlich — mit Frittatensuppe und kalten Saucen (4 Portionen + Reste)
-
-> [!NOTE]
-> **Status: Ausgearbeitet, noch nicht gekocht** — Rezept steht, Learnings folgen nach dem ersten Durchgang.
+# Tafelspitz, sommerlich — mit Frittatensuppe und kalten Saucen (4 Portionen + Reste)
 
 *Aktive Zeit ~1 Std. (verteilt), gesamt ~4 Std. Equipment: 14L-Topf (der 6L wird zu knapp zum Abschäumen), feines Sieb + Passiertuch, Mandoline, Fleischgabel.*
 

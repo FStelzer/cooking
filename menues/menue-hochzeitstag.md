@@ -387,7 +387,9 @@ Parfait 10-15 Min vor dem Servieren aus dem Gefrierfach nehmen. Aus der Form st�
 
 ---
 
-## Feedback & Learnings
+## Learnings
+
+**Gekocht (Hochzeitstag, vor 07/2026).** Vier Gänge erfolgreich umgesetzt, Zeitplan hat funktioniert. Highlights: Jakobsmuscheln und Karamell-Pekannuss-Parfait; die glasierten Karotten wurden trotz Einfachheit sehr gelobt. Kartoffelbaumkuchen: Aufwand/Wow-Verhältnis schlecht → nächstes Mal einfachere Kartoffelbeilage. Entenbrust solide, aber kein Highlight. Kern-Learning: Aufwand ≠ Wow — perfekte Ausführung simpler Techniken wirkt oft mehr als Komplexität.
 
 ### Highlights
 - **Jakobsmuscheln** — absolutes Highlight des Abends. Perfekte Kruste, Blumenkohlpüree als Basis hervorragend, Zitronen-Haselnussbutter bringt Säure + Nuss-Röstaromen die das Gericht komplett machen.

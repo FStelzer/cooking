@@ -59,16 +59,18 @@ Tentakel in mundgerechte Stücke schneiden, auf den Kartoffeln anrichten. Großz
 - Alkohol: 100 ml Wein auf 90+ Min. offenes/halboffenes Schmoren plus Reduktion — praktisch vollständig verkocht.
 - Weiche Tentakelspitzen und Oliven sind erfahrungsgemäß der Kinder-Hit; Saugnäpfe sehen spannend aus.
 
-## Notizen
+## Learnings
 
-**Gekocht 07/2026 — Learnings:**
+**Gekocht 07/2026.** ✅ Gut, aber Aufwand/Reward-Verhältnis schwächer als Thịt kho — eher für besondere Anlässe als für die Rotation. Beschaffung: Selgros-Frischetheke „Pulpo Blume Marokko" (*Octopus vulgaris*) ✓; TK-Ware „Tintenfisch Tentakel" (*Dosidicus gigas*) ist KEIN Ersatz — Etikett immer auf lateinischen Namen prüfen. Cantaloupe-Sorbet als Dessert dazu: sehr stimmig.
 
-- ✅ Gut, aber Aufwand/Reward-Verhältnis schwächer als z. B. Thịt kho — eher Gericht für besondere Anlässe als für die Rotation.
+### Details
+
 - **Bezugsquelle:** Selgros-**Frischetheke** hatte "Pulpo Blume Marokko" T4 (~1,8 kg, angetaut) — echter *Octopus vulgaris*. "Flower/Blume" = ganz, geputzt, **mit Kopf** (Innereien raus); nur Schnabel-Check nötig, kein Zerlegen.
 - **Warnung TK-Regal Selgros:** "Tintenfisch Tentakel" (*Dosidicus gigas*, Humboldt-Kalmar, mit E330/E331 behandelt) ist **kein** Pulpo-Ersatz — fad, kaum Eigensaft, liegen lassen. Immer lateinischen Namen prüfen.
 - 1,8 kg: Garzeit Richtung 90 Min.+, Messerprobe ab 75 Min.
 - **Dessert-Pairing:** Cantaloupe-Sorbet danach funktioniert sehr gut.
 
+## Notizen
 
 - **Vorbereiten:** Schritt 1–4 lassen sich Stunden vorher machen; Oktopus einfach im Sud liegen lassen und lauwarm servieren oder kurz anbraten. Ideal bei Hitze: mittags schmoren, abends essen.
 - **Sud-Reste:** Übrig gebliebenen Schmorsud einfrieren — hervorragende Basis für Fisch-/Meeresfrüchte-Pasta oder als Umami-Schub in der nächsten Bouillabaisse.

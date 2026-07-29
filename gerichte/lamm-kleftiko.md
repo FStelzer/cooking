@@ -1,7 +1,4 @@
-# 🚧 Lamm-Kleftiko — im Päckchen geschmortes Lamm mit Kartoffeln (4 Portionen + Reste)
-
-> [!NOTE]
-> **Status: Ausgearbeitet, noch nicht gekocht** — Rezept steht, Learnings folgen nach dem ersten Durchgang.
+# Lamm-Kleftiko — im Päckchen geschmortes Lamm mit Kartoffeln (4 Portionen + Reste)
 
 *Aktive Zeit ~45 Min., gesamt ~6 Std. (davon 4 Std. Ofen ohne Arbeit) + Marinieren über Nacht. Equipment: Bräter mit Deckel, Backpapier (Doppellage), Küchengarn, Fleischthermometer.*
 

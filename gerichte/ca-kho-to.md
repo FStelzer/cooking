@@ -1,7 +1,4 @@
-# 🚧 Cá kho tộ — vietnamesischer Karamell-Schmorfisch (4 Portionen)
-
-> [!NOTE]
-> **Status: Fisch eingekauft, noch nicht gekocht** — Zeiten nach dem Einkauf auf Lachs neu kalibriert (siehe Quellen & Entscheidungen), Learnings folgen nach dem ersten Durchgang.
+# Cá kho tộ — vietnamesischer Karamell-Schmorfisch (4 Portionen)
 
 *Aktive Zeit ~40 Min., gesamt ~1,25 Std. Equipment: Bräter oder schwerer flacher Topf, in dem die Fischsteaks einschichtig liegen. Kein Tontopf nötig (siehe Quellen & Entscheidungen).*
 

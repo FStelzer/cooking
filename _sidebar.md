@@ -1,23 +1,20 @@
-- **🚧 in arbeit**
+- [Ideen-Backlog](/ideen.md)
+- **gerichte**
   - [Bún chả (Hanoi-Style) — gegrilltes Schweinefleisch in warmem Nước chấm (4 Portionen)](/gerichte/bun-cha.md)
   - [Cá kho tộ — vietnamesischer Karamell-Schmorfisch (4 Portionen)](/gerichte/ca-kho-to.md)
   - [Cochinita Pibil — Schweineschulter in Achiote-Orangen-Marinade (4 Portionen + Reste)](/gerichte/cochinita-pibil.md)
-  - [Lamm-Kleftiko — im Päckchen geschmortes Lamm mit Kartoffeln (4 Portionen + Reste)](/gerichte/lamm-kleftiko.md)
-  - [Libanesische Mezze — Hummus, Baba ghanoush, Muhammara, Labneh, Fatayer & Sambousek (4 Personen als Hauptmahlzeit)](/gerichte/mezze-libanesisch.md)
-  - [Hähnchen-Shawarma, libanesisch — mit Toum, Tabbouleh und Batata harra (4 Portionen)](/gerichte/shawarma-libanesisch.md)
-  - [Tafelspitz, sommerlich — mit Frittatensuppe und kalten Saucen (4 Portionen + Reste)](/gerichte/tafelspitz.md)
-- **einkaufslisten**
-  - [Einkaufsliste — Oktopus (griechisch) + Thịt kho trứng](/einkaufslisten/oktopus-thit-kho.md)
-- **gerichte**
   - [Hummerbisque (4 Portionen als Vorspeise)](/gerichte/hummerbisque.md)
   - [İmam bayıldı — in Olivenöl geschmorte gefüllte Auberginen (4 Portionen)](/gerichte/imam-bayildi.md)
+  - [Lamm-Kleftiko — im Päckchen geschmortes Lamm mit Kartoffeln (4 Portionen + Reste)](/gerichte/lamm-kleftiko.md)
+  - [Libanesische Mezze — Hummus, Moutabal, Muhammara, Labneh, Fatayer & Sambousek (4 Personen als Hauptmahlzeit)](/gerichte/mezze-libanesisch.md)
   - [Geschmorter Oktopus, griechische Art (4 Portionen)](/gerichte/oktopus-geschmort.md)
   - [Paneer-Projekt — selbstgemachter Paneer mit Matar & Palak (4 Portionen, 2 Saucen)](/gerichte/paneer-projekt.md)
   - [Sapporo-Style Miso-Tonkotsu-Ramen Menü](/gerichte/ramen-miso-tonkotsu.md)
   - [Shoyu-Ramen mit Hähnchen-Chintan-Brühe](/gerichte/ramen-shoyu-chintan.md)
+  - [Hähnchen-Shawarma, libanesisch — mit Toum, Tabbouleh und Batata harra (4 Portionen)](/gerichte/shawarma-libanesisch.md)
+  - [Tafelspitz, sommerlich — mit Frittatensuppe und kalten Saucen (4 Portionen + Reste)](/gerichte/tafelspitz.md)
   - [Thịt kho trứng — vietnamesisches Karamell-Schweinefleisch mit Eiern (4 Portionen)](/gerichte/thit-kho-trung.md)
 - **menues**
   - [Degustationsmenü — Hochzeitstag](/menues/menue-hochzeitstag.md)
 - **schwangerschaft**
   - [Bouillabaisse mit Fenchel-Orange-Salat](/schwangerschaft/bouillabaisse.md)
-- [Ideen-Backlog](/ideen.md)

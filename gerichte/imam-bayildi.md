@@ -139,13 +139,15 @@ großzügig.
   falls die Auberginen-Textur nicht ankommt, ist Füllung + Sud + Brot allein
   schon eine valide Kinderportion.
 
-## Notizen
+## Learnings
 
-**Status: gekocht (Juli 2026). Urteil: in Ordnung, lecker, aber haut einen
-nicht um. Technik saß, Würze war zu flach.** Rezept oben entsprechend
-angepasst (Salz-Dosierung, Abschmecken kalt, Knoblauch-Joghurt).
+**Gekocht 07/2026.** In Ordnung, lecker, aber haut einen nicht um — Technik
+saß, Würze war zu flach. Hauptproblem: untersalzen (lauwarm braucht mehr Salz
+und Säure) plus zu mildes Olivenöl; Rezept entsprechend angepasst
+(Salz-Dosierung, kalt abschmecken, Knoblauch-Joghurt). Erwartungsmanagement:
+İmam bayıldı ist konzeptionell leise — wer Wucht will, will karnıyarık.
 
-### Learnings 1. Durchgang
+### Details 1. Durchgang
 
 - **Hauptproblem war Salz, nicht Gewürz.** „Lecker, aber unspektakulär" ist
   die Signatur von untersalzen. Der Fehler war, an allen drei Salzstellen
@@ -176,6 +178,8 @@ angepasst (Salz-Dosierung, Abschmecken kalt, Knoblauch-Joghurt).
   einer Ölschicht. Abkühlen lassen (1–1,5 Std.), dann abgedeckt im Sud in den
   Kühlschrank, 1 Std. vor dem Essen rausnehmen. Das „besser am nächsten Tag"
   kommt vom Durchziehen, nicht von der Lagertemperatur.
+
+## Notizen
 
 - **Vorbereiten:** Idealer Vortags-Koch — komplett fertig schmoren, abgedeckt
   kalt stellen, 1 Std. vor dem Essen rausnehmen. Nicht wieder aufheizen nötig.

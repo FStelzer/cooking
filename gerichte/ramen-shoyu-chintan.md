@@ -212,7 +212,9 @@ Pro Schüssel:
 
 ---
 
-## Learnings & Anpassungen für nächstes Mal
+## Learnings
+
+**Gekocht (vor 07/2026, erstes großes Repo-Projekt).** Erfolgreich umgesetzt — Familie zufrieden, Sohn (3) hat mitgegessen. Suppenhuhn + Flügel funktioniert sehr gut als Karkassen-Ersatz. Fürs nächste Mal: Pilznote reduzieren (weniger Shiitake, keine im Tare) und Enoki meiden (Textur) — stattdessen Shimeji oder Champignons.
 
 ### Was sehr gut funktioniert hat
 - **Chintan-Stil im 6L-Topf** — richtige Entscheidung, kein Stress mit Volumen

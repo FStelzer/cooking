@@ -1,7 +1,4 @@
-# 🚧 Cochinita Pibil — Schweineschulter in Achiote-Orangen-Marinade (4 Portionen + Reste)
-
-> [!NOTE]
-> **Status: Ausgearbeitet, noch nicht gekocht** — Rezept steht, Learnings folgen nach dem ersten Durchgang.
+# Cochinita Pibil — Schweineschulter in Achiote-Orangen-Marinade (4 Portionen + Reste)
 
 *Aktive Zeit ~1,5 Std. (Großteil: Tortillas), gesamt: Vorabend 20 Min. + ~4 Std. Ofen. Equipment: Bräter/Schmortopf mit Deckel, Stabmixer, Mörser, Küchenbrenner (Bananenblätter). Achtung Vorlauf: Online-Bestellung 1–2 Wochen vorher!*
 

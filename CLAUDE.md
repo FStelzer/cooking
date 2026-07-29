@@ -13,6 +13,9 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
   - Mag: Reichhaltig/kräftig, komplexe Umami-Profile, klare elegante Brühen
   - Mag weniger: Sehr intensive Pilznoten (kein großer Pilz-Fan)
   - Enoki-Pilze: Textur nicht beliebt → Shimeji/Champignons bevorzugen
+  - Risotto kommt bei Frau und Kind nicht gut an (Erfahrung: Ossobuco alla
+    Milanese + Safranrisotto, vor Repo-Start gekocht — Ossobuco selbst sehr gut)
+    → als Beilage lieber Pasta vorschlagen
 - **Toleranz für lange Zubereitung:** Hoch (6-7h für Brühe ist okay)
 
 ## Equipment
@@ -27,6 +30,7 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 - Kastenformen (ca. 20cm, 2 Stück)
 - Feines Sieb + Passiertuch
 - Kleiner Bunsenbrenner (Küchenbrenner — Aburi-Effekte, Bananenblätter erweichen etc.)
+- Gasgrill mit Haube (Zwei-Zonen-Führung möglich)
 - Standard Pfannen, Kleinkram
 
 ### Fehlt / Wäre gut zu haben
@@ -132,15 +136,22 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 ## Repo-Struktur & Rezept-Status
 
 - **Ordner:** Alle Einzelrezepte liegen in `gerichte/` (keine Unterteilung nach
-  Küche/Region). Speziell bleiben: `menues/` (Mehrgänger), `schwangerschaft/`,
-  `einkaufslisten/` (kombinierte Listen über mehrere Rezepte).
+  Küche/Region). Speziell bleiben: `menues/` (Mehrgänger), `schwangerschaft/`.
+  Einkaufslisten leben direkt in den Rezepten (kein eigener Ordner mehr);
+  `ideen.md` ist die Einstiegsseite der Docsify-Site.
 - **Rezepte in Arbeit (TODO):** H1-Titel beginnt mit `🚧 ` und direkt unter dem
   Titel steht eine Status-Alertbox (`> [!NOTE]` … "Status: In Arbeit"). Solche
   Stubs enthalten Idee, grobe Richtung, Beschaffungs-Einschätzung und offene
   Fragen — noch keine Einkaufsliste/Zubereitung.
 - **Sidebar wird generiert:** `_sidebar.md` NIE von Hand editieren, sondern
-  `task sidebar` laufen lassen. Der Generator gruppiert 🚧-Rezepte automatisch
-  in die Sektion „🚧 in arbeit" und hängt den Link auf `ideen.md` an.
+  `task sidebar` laufen lassen. Der Generator setzt den Link auf `ideen.md`
+  zuoberst und gruppiert 🚧-Rezepte automatisch in die Sektion „🚧 in arbeit".
+- **Learnings werden generiert:** Einzige Quelle ist die `## Learnings`-Sektion
+  der jeweiligen Rezeptdatei — Kurzfassung als Fließtext direkt unter der
+  Überschrift (mit „Gekocht MM/JJJJ"), Details in `###`-Untersektionen darunter.
+  `task learnings` hebt die Kurzfassungen in den markierten Block unter
+  „Bisherige Projekte" in CLAUDE.md — dort nie von Hand editieren. Eine
+  vorhandene `## Learnings`-Sektion markiert ein Rezept zugleich als gekocht.
 - **Fertigstellung eines Rezepts:** `🚧 ` aus dem Titel entfernen, Statusbox
   raus, `task sidebar` ausführen — fertig, keine Datei-Moves nötig.
 - **Ideen-Backlog:** Unkonkrete Ideen leben in `ideen.md`. Wird eine konkret →
@@ -164,48 +175,46 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 
 ## Bisherige Projekte
 
-- ✅ **Shoyu-Ramen mit Chintan-Brühe** (siehe `gerichte/ramen-shoyu-chintan.md`)
-  - Erfolgreich umgesetzt
-  - Learnings: Pilznote reduzieren, Enoki meiden, Suppenhuhn+Flügel funktioniert
-    gut als Karkassen-Ersatz
+Gekocht = die Rezeptdatei hat eine `## Learnings`-Sektion. Der folgende Block
+ist aus deren Kurzfassungen **generiert** (`task learnings`) — hier nie von
+Hand editieren, Learnings gehören in die Rezeptdatei.
 
-- ✅ **Degustationsmenü Hochzeitstag** (siehe `menues/menue-hochzeitstag.md`)
-  - 4 Gänge erfolgreich umgesetzt, Zeitplan hat funktioniert
-  - Highlights: Jakobsmuscheln (Vorspeise) und Karamell-Pekannuss-Parfait (Dessert)
-  - Glasierte Karotten trotz Einfachheit sehr gelobt
-  - Learning: Kartoffelbaumkuchen — Aufwand/Wow-Verhältnis schlecht, nächstes Mal
-    einfachere Kartoffelbeilage. Entenbrust solide aber kein Highlight.
-  - Learning: Aufwand ≠ Wow. Perfekte Ausführung simpler Techniken oft wirkungsvoller.
+<!-- learnings:start -->
 
-- ✅ **Thịt kho trứng** (siehe `gerichte/thit-kho-trung.md`) — 07/2026
-  - Klarer Favorit: minimaler Aufwand, herausragendes Preis/Leistungs-Verhältnis,
-    zweimal mit Genuss gegessen. Bestätigt Learning "Aufwand ≠ Wow".
-  - Learnings: ganze Chilis früher entnehmen (geben auch unverletzt Schärfe ab),
-    Säure-Balance kommt vom Pickle, Radieschen als Daikon-Ersatz okay.
-    Mitgeschmorte Eier überzeugten nicht (fest, fad) — weglassen oder erst
-    in den letzten 20–30 Min. einlegen.
+- ✅ **Degustationsmenü — Hochzeitstag** (siehe `menues/menue-hochzeitstag.md`)
+  **Gekocht (Hochzeitstag, vor 07/2026).** Vier Gänge erfolgreich umgesetzt, Zeitplan hat funktioniert. Highlights: Jakobsmuscheln und Karamell-Pekannuss-Parfait; die glasierten Karotten wurden trotz Einfachheit sehr gelobt. Kartoffelbaumkuchen: Aufwand/Wow-Verhältnis schlecht → nächstes Mal einfachere Kartoffelbeilage. Entenbrust solide, aber kein Highlight. Kern-Learning: Aufwand ≠ Wow — perfekte Ausführung simpler Techniken wirkt oft mehr als Komplexität.
 
-- ✅ **Paneer-Projekt: Matar & Palak** (siehe `gerichte/paneer-projekt.md`) — 07/2026
-  - Selbstgemachter Paneer hat gut geklappt, Technik gesetzt.
-  - Matar deutlich besser als Palak (würziger, aromatischer); Palak blieb flach —
-    ihm fehlte die langsam aufbauende indische Schärfe, die „mild by design"
-    + Schärfe-pro-Teller nicht ersetzen kann.
-  - Learning fürs nächste indische Projekt: scharfe Sauce **parallel** kochen
-    (milde Kinder-Abzweigung vor dem Schärfen abnehmen), statt nur Chiliöl am
-    Teller. Gern auch mit Hähnchen oder Lamm statt Paneer.
+- ✅ **Geschmorter Oktopus, griechische Art (4 Portionen)** (siehe `gerichte/oktopus-geschmort.md`)
+  **Gekocht 07/2026.** ✅ Gut, aber Aufwand/Reward-Verhältnis schwächer als Thịt kho — eher für besondere Anlässe als für die Rotation. Beschaffung: Selgros-Frischetheke „Pulpo Blume Marokko" (*Octopus vulgaris*) ✓; TK-Ware „Tintenfisch Tentakel" (*Dosidicus gigas*) ist KEIN Ersatz — Etikett immer auf lateinischen Namen prüfen. Cantaloupe-Sorbet als Dessert dazu: sehr stimmig.
 
-- ✅ **Geschmorter Oktopus, griechische Art** (siehe `gerichte/oktopus-geschmort.md`) — 07/2026
-  - Gut, aber Aufwand/Reward schwächer als Thịt kho → besondere Anlässe.
-  - Beschaffung: Selgros-Frischetheke "Pulpo Blume Marokko" (*Octopus vulgaris*) ✓;
-    TK-Ware "Tintenfisch Tentakel" (*Dosidicus gigas*) ist KEIN Ersatz — Etikett
-    immer auf lateinischen Namen prüfen.
-  - Cantaloupe-Sorbet als Dessert dazu: sehr stimmig.
+- ✅ **İmam bayıldı — in Olivenöl geschmorte gefüllte Auberginen (4 Portionen)** (siehe `gerichte/imam-bayildi.md`)
+  **Gekocht 07/2026.** In Ordnung, lecker, aber haut einen nicht um — Technik
+  saß, Würze war zu flach. Hauptproblem: untersalzen (lauwarm braucht mehr Salz
+  und Säure) plus zu mildes Olivenöl; Rezept entsprechend angepasst
+  (Salz-Dosierung, kalt abschmecken, Knoblauch-Joghurt). Erwartungsmanagement:
+  İmam bayıldı ist konzeptionell leise — wer Wucht will, will karnıyarık.
+
+- ✅ **Paneer-Projekt — selbstgemachter Paneer mit Matar & Palak (4 Portionen, 2 Saucen)** (siehe `gerichte/paneer-projekt.md`)
+  **Gekocht 07/2026.** Selbstgemachter Paneer hat gut geklappt — Technik
+  gesetzt. Matar deutlich besser als Palak (würziger, aromatischer); dem Palak
+  fehlte die langsam aufbauende indische Schärfe, die „mild by design" +
+  Schärfe-pro-Teller nicht ersetzen kann. Nächstes Mal: scharfe Sauce parallel
+  kochen (milde Kinder-Abzweigung vor dem Schärfen abnehmen), gern auch mit
+  Hähnchen oder Lamm statt Paneer.
+
+- ✅ **Shoyu-Ramen mit Hähnchen-Chintan-Brühe** (siehe `gerichte/ramen-shoyu-chintan.md`)
+  **Gekocht (vor 07/2026, erstes großes Repo-Projekt).** Erfolgreich umgesetzt — Familie zufrieden, Sohn (3) hat mitgegessen. Suppenhuhn + Flügel funktioniert sehr gut als Karkassen-Ersatz. Fürs nächste Mal: Pilznote reduzieren (weniger Shiitake, keine im Tare) und Enoki meiden (Textur) — stattdessen Shimeji oder Champignons.
+
+- ✅ **Thịt kho trứng — vietnamesisches Karamell-Schweinefleisch mit Eiern (4 Portionen)** (siehe `gerichte/thit-kho-trung.md`)
+  **Gekocht 07/2026.** ✅✅ Klarer Favorit: minimaler Aufwand, Preis/Leistung herausragend — zweimal mit Genuss gegessen, fester Rotations-Kandidat. Ganze Chilis früher entnehmen (geben auch unverletzt Schärfe ab), Säure-Balance kommt vom Pickle (Radieschen als Daikon-Ersatz okay). Mitgeschmorte Eier überzeugten nicht (fest, fad) — weglassen oder erst in den letzten 20–30 Min. einlegen.
+
+<!-- learnings:end -->
 
 ## Ideen für nächste Projekte
 
-→ Siehe `ideen.md` (Ideen-Backlog). Aktuell in Arbeit (🚧-Stubs in `gerichte/`):
-Bún chả, Cá kho tộ, Cochinita Pibil, Hähnchen-Shawarma, Lamm-Kleftiko,
-libanesische Mezze, Tafelspitz.
+→ Siehe `ideen.md` (Ideen-Backlog, zugleich Startseite der Docsify-Site).
+Was gerade in Arbeit ist, zeigt die generierte Sidebar-Sektion „🚧 in arbeit" —
+hier bewusst keine Aufzählung (Drift-Vermeidung).
 
 ## Workflow: Neues Rezept erarbeiten
 
@@ -218,4 +227,6 @@ Vorgehensweise für neue Rezepte in diesem Repo:
 3. **Rezept-Entwurf:** Vollständiges Rezept mit Einkaufsliste, Zeitplan,
    Mengen-Check (Gesamtverbrauch pro Zutat!) und Kinder-Anpassungen.
 4. **Review & Feinschliff:** Kritische Prüfung, ggf. Vereinfachungen.
-5. **Nach dem Kochen:** Feedback & Learnings ergänzen, CLAUDE.md updaten.
+5. **Nach dem Kochen:** `## Learnings`-Sektion in der Rezeptdatei ergänzen
+   (Kurzfassung vor den `###`-Details), dann `task learnings` laufen lassen —
+   der Block in CLAUDE.md wird generiert, nicht von Hand gepflegt.

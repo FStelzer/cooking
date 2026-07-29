@@ -59,17 +59,19 @@ Fleisch, Eier (halbiert) und viel Sauce auf Reis. Gurke und Pickle dazu — die 
 - Süß-salziges Fleisch, weiche Eier, Reis: erfahrungsgemäß ein sicherer Treffer bei Soja-/Umami-Fans im Kleinkindalter. Ei-Hälfte mit Sauce zuerst anbieten.
 - Kein Alkohol im Gericht.
 
-## Notizen
+## Learnings
 
-**Gekocht 07/2026 — Learnings:**
+**Gekocht 07/2026.** ✅✅ Klarer Favorit: minimaler Aufwand, Preis/Leistung herausragend — zweimal mit Genuss gegessen, fester Rotations-Kandidat. Ganze Chilis früher entnehmen (geben auch unverletzt Schärfe ab), Säure-Balance kommt vom Pickle (Radieschen als Daikon-Ersatz okay). Mitgeschmorte Eier überzeugten nicht (fest, fad) — weglassen oder erst in den letzten 20–30 Min. einlegen.
 
-- ✅✅ Klarer Favorit, Preis/Leistung herausragend — zweimal mit Genuss gegessen. Fester Rotations-Kandidat.
+### Details
+
 - **Chilis:** Geben auch unverletzt mit der Zeit etwas Schärfe ab. Beim nächsten Mal erst zur Halbzeit einlegen oder nach ~45 Min. entnehmen — spätestens **vor** der Reduzierphase raus (Reduzieren konzentriert Capsaicin).
 - **Säure:** Sauce wirkt solo etwas stumpf — gewollt; die Balance kommt vom Teller-Ensemble mit Pickle/Gurke. Erst komplett probieren, bevor man Limette/Essig nachjustiert.
 - **Eier:** Nach 90+ Min. Schmoren Haut fest/gummiartig und fad — hat uns nicht überzeugt. Nächstes Mal **weglassen** oder erst in den letzten 20–30 Min. einlegen; Alternative: wachsweiches Ei frisch beim Servieren dazu (Ramen-Ei-Logik).
 - **Pickle:** Radieschen funktionieren als Daikon-Ersatz (Lake: 3 EL Reisessig, 1 EL Zucker, ½ TL Salz, 2 EL Wasser, 20–30 Min.).
 - **Topfwahl:** 6L-Topf, nicht der Bräter — Karamell auf einer Platte kontrollierbar, Flüssigkeit bedeckt kompakt.
 
+## Notizen
 
 - **Vorbereiten/Reste:** Schmeckt am nächsten Tag durchgezogen noch besser — problemlos komplett vorkochbar. In Vietnam ein klassisches Gericht, das in großen Mengen für mehrere Tage gekocht wird (traditionell zu Tết).
 - **Kokoswasser vs. Wasser:** Wasser funktioniert zur Not, Kokoswasser gibt aber die typische milde Süße und Tiefe — der Einkauf lohnt.
