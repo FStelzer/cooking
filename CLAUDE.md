@@ -194,6 +194,9 @@ Hand editieren, Learnings gehören in die Rezeptdatei.
 
 <!-- learnings:start -->
 
+- ✅ **Cá kho tộ — vietnamesischer Karamell-Schmorfisch (4 Portionen)** (siehe `gerichte/ca-kho-to.md`)
+  **Gekocht 07/2026.** Lachs war ziemlich gut, Rezept hat rund funktioniert (Vorbehandlung, Karamell, Garzeiten — kein Zerfall). Schwachpunkt: Nach dem Reduzieren blieb deutlich weniger Sauce übrig als beim Thịt kho — dabei ist die Sauce bei beiden kho-Gerichten das Beste am Teller. Ursache ist Geometrie, kein Fehler: flache Fischscheiben „halbhoch" bedecken heißt schlicht wenig Flüssigkeit im Topf (Schweinebauch-Würfel stapeln höher). Fix im Rezept ergänzt: in Schritt 6 zusätzlich ~100–150 ml Kokoswasser mitreduzieren. Nächstes Mal Pangasius-Steaks probieren (Tipp von Freunden aus Vietnam: bleibt fester und zieht die Sauce mehr auf — als cá tra ohnehin der Originalfisch des Gerichts).
+
 - ✅ **Degustationsmenü — Hochzeitstag** (siehe `menues/menue-hochzeitstag.md`)
   **Gekocht (Hochzeitstag, vor 07/2026).** Vier Gänge erfolgreich umgesetzt, Zeitplan hat funktioniert. Highlights: Jakobsmuscheln und Karamell-Pekannuss-Parfait; die glasierten Karotten wurden trotz Einfachheit sehr gelobt. Kartoffelbaumkuchen: Aufwand/Wow-Verhältnis schlecht → nächstes Mal einfachere Kartoffelbeilage. Entenbrust solide, aber kein Highlight. Kern-Learning: Aufwand ≠ Wow — perfekte Ausführung simpler Techniken wirkt oft mehr als Komplexität.
 

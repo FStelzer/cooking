@@ -9,7 +9,7 @@ Vietnamesischer Schmorfisch aus der kho-Familie, Süd-Stil (Nam Bộ): Fischstea
 - **Fisch — die Kernentscheidung (erledigt, 07/2026):** Gekauft bei Buhara: **3 Lachssteaks, quer geschnitten, mit Haut, gesamt ~1 kg für knapp 11 €** (~11 €/kg — auffällig günstig, Referenzpreis für ganzen Lachs liegt bei ~19 €/kg). Cá hồi kho (Lachs-kho) ist eine etablierte vietnamesische Variante, kein Verlegenheits-Ersatz.
   - **Eigentliche 1. Wahl wäre Wels gewesen** (cá tra = Welsartige, biologisch am nächsten am Original; fest, kollagenreich, nur eine kräftige Mittelgräte, keine feinen Zwischenmuskelgräten → fürs Kind sogar besser als Lachs, und schmortolerant). War nicht verfügbar → beim nächsten Durchgang erneut anfragen.
   - **Seeteufel-Schwanzstück** (grätenfrei, praktisch unzerstörbar beim Schmoren) hätte der Händler wegen Zuschnitt-Aufwand und Verschnitt mit **40 €/kg statt der ausgeschriebenen 24 €/kg** berechnet — abgelehnt, sachlich aber nachvollziehbar (aus dem Schwanz quer geschnitten bleibt viel Restmasse übrig).
-  - **Nicht:** Makrele (Nord-Stil-klassisch, aber viele feine Gräten → fürs Kind ungünstig), Karpfen (Y-Gräten, noch schlechter), dünne TK-Pangasiusfilets (zerfallen), Zander (grobblättrig, zerfällt).
+  - **Nicht:** Makrele (Nord-Stil-klassisch, aber viele feine Gräten → fürs Kind ungünstig), Karpfen (Y-Gräten, noch schlechter), dünne TK-Pangasiusfilets (zerfallen — Pangasius-**Steaks** quer mit Haut sind dagegen fürs nächste Mal gesetzt, siehe Learnings), Zander (grobblättrig, zerfällt).
 - **Wichtig: Steaks mit Haut** — die Haut hält die Stücke beim Schmoren zusammen.
 - **Vor dem Kochen prüfen:** (a) **Dicke messen** — davon hängt die Simmerzeit ab (Schritt 5); (b) **war der Fisch aufgetaut?** Bei dem Preis plausibel und in DE kennzeichnungspflichtig. Aufgetauter Lachs verliert mehr Flüssigkeit und zerfällt schneller → dann konsequent gar nicht wenden, nur begießen.
 - **Asialaden:** Fischsauce, pures Kokoswasser (ungesüßt, Tetrapak/Dose — **keine Kokosmilch**). Beides notfalls auch REWE.
@@ -22,8 +22,8 @@ Vietnamesischer Schmorfisch aus der kho-Familie, Süd-Stil (Nam Bộ): Fischstea
 
 ### Asialaden
 
-- [ ] Fischsauce (gesamt ~5 EL nötig)
-- [ ] 1 kleine Packung Kokoswasser (330 ml), pur/ungesüßt — ~200 ml ins Gericht, Rest zum Nachjustieren falls zu salzig
+- [ ] Fischsauce (gesamt ~6 EL nötig: 3 EL Marinade + 1 EL Extra-Sauce + 1–2 EL Abschmecken)
+- [ ] 1 kleine Packung Kokoswasser (330 ml), pur/ungesüßt — ~200 ml zum Schmoren + 100–150 ml für die Extra-Sauce in der Reduktion (Schritt 6)
 - [ ] 400 g Jasminreis (falls nicht vorrätig)
 
 ### REWE / Aldi
@@ -67,7 +67,7 @@ Fischsteaks einschichtig einlegen (etwas von den Aromaten unter den Fisch schieb
 *Thermometer-Check am dicksten Steak: bei **50–52 °C** herausnehmen, nicht bei 60. Durch Nachziehen und das Glasieren in Schritt 7 landet der Kern bei ~57–60 °C.*
 
 **6. Fisch heraus, Kinderportion, Sauce reduzieren (8–10 Min., dabeibleiben!)**
-Steaks mit einem breiten Wender **vollständig aus dem Topf heben** und auf einen Teller legen (locker mit Folie abdecken). Kinderportion jetzt abnehmen (siehe unten). **Dann optional 1–2 aufgeschlitzte Chilis für die Erwachsenen in die Sauce geben** — Reduzieren konzentriert Capsaicin (Thịt-kho-Learning), deshalb zwingend erst nach der Kinderportion; eingekochte Schärfe trägt besser als nur Chili am Tisch. Sauce offen bei mittlerer Hitze sirupartig einreduzieren, bis sie glasiert und nur noch den Topfboden bedeckt. **Erst jetzt mit 1–2 EL Fischsauce abschmecken** — vor der Reduktion würde man gegen ein Salzniveau justieren, das sich noch verschiebt. *Der Grat zwischen glasiert und angebrannt ist schmal — diese Minuten nicht verlassen (auch Delightful Plate warnt genau vor dieser Phase).*
+Steaks mit einem breiten Wender **vollständig aus dem Topf heben** und auf einen Teller legen (locker mit Folie abdecken). Kinderportion jetzt abnehmen (siehe unten). **Für mehr Sauce (Learning 07/2026): jetzt zusätzlich 100–150 ml Kokoswasser und 1 EL Fischsauce angießen** — flache Fischscheiben lassen in Schritt 5 nur wenig Flüssigkeit zu, sonst bleibt nach der Reduktion kaum Sauce übrig. **Dann optional 1–2 aufgeschlitzte Chilis für die Erwachsenen in die Sauce geben** — Reduzieren konzentriert Capsaicin (Thịt-kho-Learning), deshalb zwingend erst nach der Kinderportion; eingekochte Schärfe trägt besser als nur Chili am Tisch. Sauce offen bei mittlerer Hitze sirupartig einreduzieren, bis sie glasiert und nur noch den Topfboden bedeckt. **Erst jetzt mit 1–2 EL Fischsauce abschmecken** — vor der Reduktion würde man gegen ein Salzniveau justieren, das sich noch verschiebt. *Der Grat zwischen glasiert und angebrannt ist schmal — diese Minuten nicht verlassen (auch Delightful Plate warnt genau vor dieser Phase).*
 
 **7. Glasieren (2–3 Min.)**
 Fisch zurück in die Glasur legen, Hitze niedrig, nur noch begießen bis die Steaks glänzend überzogen sind. Nicht wenden.
@@ -99,6 +99,16 @@ Beispiel für **3 cm** dicke Steaks (bei anderer Dicke Simmerzeit aus der Tabell
 - Am Teller Haut, Garn/Zahnstocher und Gräten entfernen und Fleisch zerpflücken — bei Lachssteaks sind es nur die Mittelgräte und wenige große Rippengräten, trotzdem jedes Stück prüfen.
 - Noch sicherer: ein kleines hautloses, grätenfrei gezupftes Lachsfiletstück in den letzten ~5 Min. der Simmerphase mit einlegen.
 - Chili berührt die Kinderportion nie: in den Topf erst nach deren Entnahme (Schritt 6), ansonsten nur separat am Tisch.
+
+## Learnings
+
+**Gekocht 07/2026.** Lachs war ziemlich gut, Rezept hat rund funktioniert (Vorbehandlung, Karamell, Garzeiten — kein Zerfall). Schwachpunkt: Nach dem Reduzieren blieb deutlich weniger Sauce übrig als beim Thịt kho — dabei ist die Sauce bei beiden kho-Gerichten das Beste am Teller. Ursache ist Geometrie, kein Fehler: flache Fischscheiben „halbhoch" bedecken heißt schlicht wenig Flüssigkeit im Topf (Schweinebauch-Würfel stapeln höher). Fix im Rezept ergänzt: in Schritt 6 zusätzlich ~100–150 ml Kokoswasser mitreduzieren. Nächstes Mal Pangasius-Steaks probieren (Tipp von Freunden aus Vietnam: bleibt fester und zieht die Sauce mehr auf — als cá tra ohnehin der Originalfisch des Gerichts).
+
+### Details
+
+- **Saucen-Menge:** Der limitierende Faktor ist die „halbhoch bedecken"-Regel in Schritt 5 — bei flachen Steaks passt kaum Flüssigkeit in den Topf, und die Reduktion halbiert das nochmal. Lösung nicht: mehr Flüssigkeit in der Simmerphase (verändert Garverhalten, Fisch schwimmt auf). Sondern: nach dem Herausheben des Fischs zusätzlich 100–150 ml Kokoswasser + 1 EL Fischsauce angießen und mitreduzieren — der Fisch ist da schon raus, es kostet nur 2–3 Min. mehr Reduktionszeit. Schritt 6 und Einkaufsliste entsprechend angepasst.
+- **Pangasius statt Lachs (nächster Durchgang):** Empfehlung von Freunden aus Vietnam — bleibt beim Schmoren fester und saugt die Sauce besser auf. Passt zur ursprünglichen Beschaffungs-Analyse: Pangasius *ist* cá tra, der klassische Fisch für cá kho tộ (die Beschaffungsnotiz nannte das „Wels"). Wichtig: **Steaks quer mit Haut**, nicht die dünnen TK-Filets (die zerfallen — deshalb standen sie auf der Nicht-Liste). Beschaffung: Asialaden nach TK-Pangasius-Steaks fragen, alternativ Buhara.
+- **Lachs-Fazit:** Funktioniert gut als Variante (cá hồi kho), kein Zerfall dank Binden + nicht wenden + 50–52 °C-Ausstieg. Bleibt aber zweite Wahl hinter festeren, kollagenreicheren Fischen.
 
 ## Quellen & Entscheidungen
 

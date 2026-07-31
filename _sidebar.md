@@ -4,7 +4,7 @@
 - **gerichte**
   - [Bouillabaisse mit Fenchel-Orange-Salat (2 Erwachsene + Kind)](/gerichte/bouillabaisse.md)
   - [Bún chả (Hanoi-Style) — gegrilltes Schweinefleisch in warmem Nước chấm (4 Portionen)](/gerichte/bun-cha.md)
-  - [Cá kho tộ — vietnamesischer Karamell-Schmorfisch (4 Portionen)](/gerichte/ca-kho-to.md)
+  - [✅ Cá kho tộ — vietnamesischer Karamell-Schmorfisch (4 Portionen)](/gerichte/ca-kho-to.md)
   - [Cochinita Pibil — Schweineschulter in Achiote-Orangen-Marinade (4 Portionen + Reste)](/gerichte/cochinita-pibil.md)
   - [Hummerbisque (4 Portionen als Vorspeise)](/gerichte/hummerbisque.md)
   - [✅ İmam bayıldı — in Olivenöl geschmorte gefüllte Auberginen (4 Portionen)](/gerichte/imam-bayildi.md)
