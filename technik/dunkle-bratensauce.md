@@ -18,7 +18,9 @@ Kantinen-Bratensoße:
    Zwiebeln, Knochen und Schwarte. Das ist der Hauptträger, *nicht* das Bier.
 2. **Fond / Gelatine** — gibt Körper und das Gefühl von Sauce statt Brühe.
    Aus Knochen und Schwarte, oder ersatzweise aus dem Konzentrat.
-3. **Dunkles Bier** — Münchner Dunkel, malzig-brotig. Beisteuer: Malzsüße und Tiefe.
+3. **Dunkles Bier** — Münchner Dunkel, malzig-brotig (z. B. Augustiner Dunkel,
+   Ayinger Altbairisch Dunkel, König Ludwig Dunkel — alle realistisch im REWE
+   Center). Beisteuer: Malzsüße und Tiefe.
    Nicht Schwarzbier (ostdeutsch, deutlich röstiger/kaffeeartig) — das kippt
    die Sauce ins Bittere.
 4. **Kümmel + Majoran** — macht die Sauce erst *bayerisch*. Ohne das ist es
@@ -38,6 +40,10 @@ Kantinen-Bratensoße:
 - **Nicht binden.** Die Biergarten-Optik (ungleichmäßig, Fettaugen, nicht homogen) ist
   kein Fehler, sondern das Kennzeichen von echtem Bratensaft. Fertigsoße ist immer
   glatt und glänzend gebunden. Wer bindet, macht die Sauce optisch zur Fertigsoße.
+
+Die Mini-Version derselben Saucen-Grammatik (Röstsatz → Reduktion → Montage) ist
+der Pfannensaucen-Drill in den [Mini-Projekten](/technik/mini-projekte.md) — dort
+können die Fond-Würfel von hier die Brühe ersetzen.
 
 ### Warum nicht einfach nur Konzentrat?
 
@@ -59,7 +65,10 @@ Passt in den 14-L-Topf; der 6-L-Topf reicht nicht.
 
 ### Zutaten
 
-- 3 kg Schweineknochen, gesägt (Selgros)
+- 3 kg Schweineknochen, gesägt (Selgros) — **fleischige Knochen bevorzugen**:
+  Geschmack kommt aus dem Fleisch daran, Gelatine aus Knochen und Schwarte
+  (blanke Sandknochen = viel Körper, wenig Aroma)
+- optional 1 Schweinefuß, gespalten (Selgros) — der Gelatine-Turbo, mitrösten
 - 500 g Schweineschwarte oder Bauchabschnitte
 - 400 g Zwiebeln, mit Schale halbiert
 - 200 g Karotte, grob
@@ -74,10 +83,13 @@ Passt in den 14-L-Topf; der 6-L-Topf reicht nicht.
 
 ### Zubereitung
 
-1. **Knochen rösten (Ofen):** Ofen 220 °C Umluft. Knochen und Schwarte **einlagig** auf
-   zwei Bleche verteilen, zwei Ebenen, nach der Hälfte tauschen. 45–55 Min, nach 25 Min
-   wenden. Ziel ist tiefbraun, an den Kanten fast schwarz. 3 kg auf ein Blech gequetscht
-   dünsten statt zu rösten.
+1. **Knochen rösten (Ofen):** Ofen 220 °C Umluft. Knochen und Schwarte dünn mit
+   neutralem Öl einpinseln (bräunt gleichmäßiger, trocknet weniger aus) und
+   **einlagig** auf zwei Bleche verteilen, zwei Ebenen, nach der Hälfte tauschen.
+   45–55 Min, nach 25 Min wenden. Ziel ist tiefbraun, an den Kanten fast schwarz.
+   3 kg auf ein Blech gequetscht dünsten statt zu rösten. Knochen dunkel ist
+   gewollt — aber ausgetretenes Fett darf nicht verbrennen (kratzig-bitter),
+   notfalls Blech wechseln.
 2. **Gemüse rösten (Herd, direkt im 14-L-Topf):** Parallel Zwiebeln, Karotte und Sellerie
    im Topf mit etwas Butterschmalz anrösten, bis die Schnittflächen tief dunkelbraun sind.
    Dann Tomatenmark unterrühren und 1–2 Min mitrösten.
@@ -93,12 +105,14 @@ Passt in den 14-L-Topf; der 6-L-Topf reicht nicht.
    **Bleche nicht auf die Induktionsplatte stellen:** zu dünn, oft nicht plan, koppeln
    schlecht und verziehen sich; Email kann abplatzen.
 5. **Ziehen:** 5 L kaltes Wasser dazu, langsam erhitzen. **Nicht kochen** — bei ca. 90 °C
-   halten, sonst wird der Fond trüb und emulgiert das Fett ein. 5 Stunden. Anfangs
-   aufsteigenden Schaum abschöpfen.
+   halten, sonst wird der Fond trüb und emulgiert das Fett ein. 5–7 Stunden (mehr
+   schadet nicht). Anfangs aufsteigenden Schaum abschöpfen.
 6. **Passieren:** Durch feines Sieb, dann durch Passiertuch. Topf im Spülbecken in
    kaltem Wasser auf lauwarm herunterkühlen (4 L heißer Fond gehören nicht heiß in den
    Kühlschrank), dann über Nacht kalt stellen und am nächsten Tag den festen
-   Fettdeckel abheben.
+   Fettdeckel abheben. **Den Fettdeckel aufheben** (Schraubglas, Kühlschrank) —
+   das ist geröstetes Schweineschmalz: fürs Fettaugen-Finish, Bratkartoffeln
+   und die Röstzwiebeln unten.
 7. **Reduzieren:** Von ca. 4 L auf ca. 800 ml einkochen, offen und bei mittlerer Hitze.
    Für die letzten 500 ml in einen kleineren Topf umziehen, sonst brennt es an.
    Fertig, wenn es sirupartig ist und beim Erkalten fest geliert.
@@ -119,12 +133,19 @@ Saucen-Stärke — lieber knapp anrühren und bei Bedarf verlängern.
 Hier kommen auch die Gewürze rein — der Fond selbst ist bewusst neutral
 (Regel „Basis neutral halten, Gewürze ans Ende").
 
-1. 60–75 ml Reduktion (4–5 Eiswürfel bzw. 1 große Mulde) mit 200–250 ml Wasser
-   erhitzen.
-2. ¼–½ TL Kümmel (gemörsert — löst sich in der Sauce, kein Passieren nötig),
+1. **Optionales Sterne-Upgrade (+5 Min):** ½ Zwiebel in Ringen in 1 TL Schmalz
+   oder Fond-Fett tief braun braten, mit ~30 ml Bier ablöschen, fast trocken
+   einkochen. Aufgewärmte Reduktion allein schmeckt immer einen Tick nach
+   aufgewärmt — ein frisches Röstelement pro Mahlzeit nimmt ihr genau das.
+   Zwiebeln drinlassen oder am Ende abpassieren.
+2. 60–75 ml Reduktion (4–5 Eiswürfel bzw. 1 große Mulde) mit 200–250 ml Wasser
+   erhitzen (ggf. direkt zu den Zwiebeln gießen).
+3. ¼–½ TL Kümmel (gemörsert — löst sich in der Sauce, kein Passieren nötig),
    1 TL Majoran und 1 Lorbeerblatt dazu, 5–10 Min bei kleiner Hitze ziehen
-   lassen. Lorbeer entfernen.
-3. Weiter mit dem Finish (unten).
+   lassen; optional 1 kleiner Zweig Liebstöckel mitziehen („Maggikraut" — die
+   unterschätzte Biergarten-Note; getrocknet nur eine Messerspitze). Lorbeer
+   und Liebstöckel entfernen.
+4. Weiter mit dem Finish (unten).
 
 ---
 
@@ -166,7 +187,16 @@ Nachsalzen kann man am Ende immer.
 1. Abschmecken: Salz zurückhaltend, Pfeffer. Wenn es flach schmeckt, fehlt meist Salz
    oder Säure — 1 TL Apfelessig hebt die Sauce oft mehr als mehr Salz
    (Diagnose-Reihenfolge → [Abschmecken-Spickzettel](/technik/abschmecken.md)).
-2. Vom Herd nehmen, 30 g eiskalte Butter in Stücken einschwenken. Nicht mehr kochen.
+   Fehlt Tiefe statt Helligkeit: ein paar Tropfen Sojasauce (unterhalb der
+   Erkennungsschwelle dosiert), optional dazu ½ TL mittelscharfer Senf —
+   klassisch zur Schweinsbraten-Sauce.
+2. Butter — zwei Wege, bewusst wählen:
+   - **Rund & glänzend:** vom Herd nehmen, 30 g eiskalte Butter in Stücken
+     einschwenken, nicht mehr kochen. Homogen-elegant — eher Wirtshaus als
+     Biergarten.
+   - **Authentisch Biergarten:** nur 10–15 g Butter einschwenken und 1 TL vom
+     aufgehobenen Fond-Fett obenauf geben. Die Fettaugen aus der vierten Regel
+     entstehen nur so — 30 g montierte Butter emulgieren die Sauce glatt.
 3. Optional für mehr Tiefe: 1 TL Zuckerrübensirup oder ein Stück Lebkuchen (5 g)
    mitziehen lassen.
 
@@ -198,7 +228,7 @@ reduzieren — manche Kinder mögen die Note nicht; bei meinem Kind bisher unget
 | Dunkles Bier | 500 ml (1 Flasche) | 150 ml |
 | Zwiebeln | 400 g | 250 g |
 | Tomatenmark | 40 g | 15 g |
-| Butter (Finish) | 30 g pro Mahlzeit | 30 g |
+| Butter (Finish) | 10–30 g pro Mahlzeit (je nach Finish-Weg) | 10–30 g |
 
 Bei Variante A gehen von der 0,5-l-Flasche exakt 500 ml drauf — keine Reserve, also
 zwei Flaschen kaufen.
@@ -209,7 +239,8 @@ zwei Flaschen kaufen.
 
 ### Selgros
 
-- [ ] Schweineknochen, gesägt, 3 kg
+- [ ] Schweineknochen, gesägt, fleischig, 3 kg
+- [ ] Schweinefuß, gespalten, 1 Stück (optional — Gelatine)
 - [ ] Schweineschwarte oder Bauchabschnitte, 500 g
 - [ ] Bratenfond-Konzentrat (für Variante B), 1 Gebinde
 
@@ -226,6 +257,8 @@ zwei Flaschen kaufen.
 - [ ] Majoran, getrocknet, 1 kleines Glas
 - [ ] Lorbeerblätter, 1 Packung
 - [ ] Zuckerrübensirup (optional)
+- [ ] Senf, mittelscharf (Vorrats-Check)
+- [ ] Liebstöckel, 1 Topf oder getrocknet (optional)
 
 ---
 
@@ -236,7 +269,9 @@ zwei Flaschen kaufen.
   Qualitätsunterschied ist erheblich; ob das Sortiment sie führt, ist ungeprüft.
 - **Reduktionsgrad Variante A** ist geschätzt. Beim ersten Batch die tatsächliche
   Ausbeute notieren und die ml-Dosierung pro Mahlzeit hier korrigieren.
-- Zu testen, ob 5 h Ziehzeit reichen oder ob mehr Gelatine aus den Knochen zu holen ist.
+- Ob die Gelatine reicht, zeigt der Geliertest nach dem Kühlen (Schritt 7: fest
+  gelieren). Falls zu schwach: nächstes Mal den optionalen Schweinefuß mitrösten —
+  bringt mehr als längere Ziehzeit.
 
 ## Quellen
 
