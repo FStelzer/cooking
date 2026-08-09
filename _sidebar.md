@@ -21,5 +21,7 @@
   - [✅ Degustationsmenü — Hochzeitstag](/menues/menue-hochzeitstag.md)
 - **technik**
   - [Abschmecken & Retten — Spickzettel](/technik/abschmecken.md)
+  - [Dunkle Bratensauce (Biergarten-Stil)](/technik/dunkle-bratensauce.md)
   - [Frittieren — Spickzettel](/technik/frittieren.md)
   - [Garpunkte & Kerntemperaturen — Spickzettel](/technik/garpunkte.md)
+  - [Mini-Projekte — Grundlagen-Drills für unter der Woche](/technik/mini-projekte.md)

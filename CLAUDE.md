@@ -29,6 +29,8 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 - Mandoline / Gemüsehobel
 - Kastenformen (ca. 20cm, 2 Stück)
 - Feines Sieb + Passiertuch
+- Eiswürfelformen + Babybrei-Gefrierform mit großen Mulden (fürs Portionieren
+  von Fonds/Reduktionen; Muldenvolumen noch ausmessen und hier nachtragen)
 - Kleiner Bunsenbrenner (Küchenbrenner — Aburi-Effekte, Bananenblätter erweichen etc.)
 - Gasgrill mit Haube (Zwei-Zonen-Führung möglich)
 - Standard Pfannen, Kleinkram
@@ -147,8 +149,9 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 - **Ordner:** Alle Einzelrezepte liegen in `gerichte/` (keine Unterteilung nach
   Küche/Region). Speziell bleiben: `menues/` (Mehrgänger), `desserts/`
   (Einzeldesserts/Kuchen — Unterteilung nach Gangart, nicht nach Region) und
-  `technik/` (kurze Nachschlage-Spickzettel fürs Kochen selbst, keine Rezepte —
-  z. B. `technik/abschmecken.md`).
+  `technik/` (kurze Nachschlage-Spickzettel und Grundlagen-Bausteine fürs Kochen
+  selbst — Technik-Drills, Grundsaucen —, keine Gerichte; z. B.
+  `technik/abschmecken.md`, `technik/mini-projekte.md`).
   Einkaufslisten leben direkt in den Rezepten (kein eigener Ordner mehr);
   `ideen.md` ist die Einstiegsseite der Docsify-Site.
 - **Rezepte in Arbeit (TODO):** H1-Titel beginnt mit `🚧 ` und direkt unter dem
