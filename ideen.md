@@ -98,3 +98,10 @@ und fliegt hier raus.
     Qualität anfragen), sonst nur Standardzutaten. Kind isst Sushi → milde
     Version machbar.
 
+15. **New England Clam Chowder** — nach USA-Reise vor Jahren schon einmal
+    nachgekocht, war super. Cremige Muschelsuppe mit Speck, Kartoffeln,
+    Sellerie; Muschelsud als Basis (frische Venusmuscheln/Vongole bei Buhara
+    anfragen, Fallback Dosenmuscheln + Clam Juice). Reichhaltig, null Schärfe —
+    Kind kann direkt mitessen. Optional dazu: Sauerteig-/Weißbrot statt
+    Bread Bowl.
+
