@@ -25,3 +25,4 @@
   - [Frittieren — Spickzettel](/technik/frittieren.md)
   - [Garpunkte & Kerntemperaturen — Spickzettel](/technik/garpunkte.md)
   - [Mini-Projekte — Grundlagen-Drills für unter der Woche](/technik/mini-projekte.md)
+  - [Teriyaki-Glasur (Grill)](/technik/teriyaki-glasur.md)
