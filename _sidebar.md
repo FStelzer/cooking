@@ -3,6 +3,7 @@
   - [Pistazien-Himbeer-Cheesecake (no-bake, Ø 22 cm, ~12 Stücke)](/desserts/pistazien-himbeer-cheesecake.md)
 - **gerichte**
   - [Bouillabaisse mit Fenchel-Orange-Salat (2 Erwachsene + Kind)](/gerichte/bouillabaisse.md)
+  - [✅ Bulgogi — koreanisches „Feuerfleisch" mit Salat-Wraps (4 Portionen)](/gerichte/bulgogi.md)
   - [Bún chả (Hanoi-Style) — gegrilltes Schweinefleisch in warmem Nước chấm (4 Portionen)](/gerichte/bun-cha.md)
   - [✅ Cá kho tộ — vietnamesischer Karamell-Schmorfisch (4 Portionen)](/gerichte/ca-kho-to.md)
   - [Cochinita Pibil — Schweineschulter in Achiote-Orangen-Marinade (4 Portionen + Reste)](/gerichte/cochinita-pibil.md)

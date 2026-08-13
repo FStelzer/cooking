@@ -17,6 +17,7 @@ und fliegt hier raus.
 
 ## Gekocht
 
+- ✅ [Bulgogi — koreanisches „Feuerfleisch"](/gerichte/bulgogi.md) — 2× gekocht vor 08/2026, Rezept 08/2026 rekonstruiert
 - ✅ [Paneer-Projekt — Matar & Palak](/gerichte/paneer-projekt.md) — 07/2026
 - ✅ [Geschmorter Oktopus, griechische Art](/gerichte/oktopus-geschmort.md) — 07/2026
 - ✅ [Thịt kho trứng](/gerichte/thit-kho-trung.md) — 07/2026

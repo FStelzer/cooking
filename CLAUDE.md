@@ -229,6 +229,9 @@ Hand editieren, Learnings gehören in die Rezeptdatei.
 - ✅ **Thịt kho trứng — vietnamesisches Karamell-Schweinefleisch mit Eiern (4 Portionen)** (siehe `gerichte/thit-kho-trung.md`)
   **Gekocht 07/2026.** ✅✅ Klarer Favorit: minimaler Aufwand, Preis/Leistung herausragend — zweimal mit Genuss gegessen, fester Rotations-Kandidat. Ganze Chilis früher entnehmen (geben auch unverletzt Schärfe ab), Säure-Balance kommt vom Pickle (Radieschen als Daikon-Ersatz okay). Mitgeschmorte Eier überzeugten nicht (fest, fad) — weglassen oder erst in den letzten 20–30 Min. einlegen.
 
+- ✅ **Bulgogi — koreanisches „Feuerfleisch" mit Salat-Wraps (4 Portionen)** (siehe `gerichte/bulgogi.md`)
+  **Gekocht 2× (vor 08/2026, mit verlorenem Vorgänger-Rezept).** Beide Male fantastisch — die Kombination aus Birnenmarinade (2–3 Std.), 15 Min. Anfrieren fürs dünne Schneiden, sehr scharfem Anbraten und Salat-Wraps mit Reis funktioniert hervorragend und ist Rotations-Material. Zuletzt mit Roastbeef gekocht: sehr gutes Ergebnis. Bekannter Schwachpunkt beider Durchgänge: übel eingebrannte Pfanne — der Fix (kleine Chargen, Fleisch abtropfen, Wasser-Deglaze zwischen den Chargen, Zucker am unteren Ende) ist in dieses Rezept eingebaut und beim nächsten Mal zu validieren.
+
 <!-- learnings:end -->
 
 ## Ideen für nächste Projekte
