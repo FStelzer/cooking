@@ -14,11 +14,126 @@
       max-width: 100%;
       display: table;
     }
+    .einkauf-export-btn {
+      margin-left: .6em;
+      padding: .1em .7em;
+      font-size: .75rem;
+      font-weight: normal;
+      font-family: inherit;
+      vertical-align: middle;
+      border: 1px solid var(--theme-color, #0074d9);
+      color: var(--theme-color, #0074d9);
+      background: transparent;
+      border-radius: 1em;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .einkauf-export-btn:hover {
+      background: var(--theme-color, #0074d9);
+      color: #fff;
+    }
   </style>
 </head>
 <body>
   <div id="app"></div>
   <script>
+    // Einkaufslisten-Export: Buttons an "## Einkaufsliste" und jeder ###-Laden-Gruppe.
+    // Sammelt nur NICHT abgehakte Items (Abhak-Zustand kommt von docsify-interactive-checkboxes)
+    // und übergibt sie zeilenweise via Web-Share-Sheet (iOS → Kurzbefehl "Zur Einkaufsliste",
+    // siehe EINKAUF-EXPORT.md); ohne Share-API (Desktop) landet der Text in der Zwischenablage.
+    function einkaufExportPlugin(hook) {
+      function ladenName(h3) {
+        // Annotationen wie "(vorher anrufen: …)" oder "— 1–2 Wochen vorher" gehören nicht zum Namen
+        return h3.textContent.split(/\s+[—(]/)[0].trim();
+      }
+
+      function itemLines(uls) {
+        var lines = [];
+        uls.forEach(function (ul) {
+          Array.prototype.forEach.call(ul.children, function (li) {
+            if (li.tagName !== 'LI') return;
+            var input = li.querySelector('input[type="checkbox"]');
+            if (!input || input.checked) return;
+            var clone = li.cloneNode(true);
+            Array.prototype.forEach.call(clone.querySelectorAll('input'), function (i) { i.remove(); });
+            // kompakt: abschließende kursive Anmerkung *(…)* weglassen
+            var last = clone.lastElementChild;
+            if (last && last.tagName === 'EM' &&
+                !(last.nextSibling && last.nextSibling.textContent.trim())) {
+              last.remove();
+            }
+            var text = clone.textContent.replace(/\s+/g, ' ').trim();
+            if (text) lines.push(text);
+          });
+        });
+        return lines;
+      }
+
+      function flash(btn, msg, orig) {
+        btn.textContent = msg;
+        setTimeout(function () { btn.textContent = orig; }, 2000);
+      }
+
+      function makeButton(label, getUls, title) {
+        var btn = document.createElement('button');
+        btn.className = 'einkauf-export-btn';
+        btn.type = 'button';
+        btn.textContent = label;
+        btn.addEventListener('click', function () {
+          var lines = itemLines(getUls());
+          if (!lines.length) return flash(btn, 'alles abgehakt ✓', label);
+          var text = lines.join('\n');
+          if (navigator.share) {
+            navigator.share({ title: title, text: text }).catch(function () {});
+          } else if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(function () {
+              flash(btn, lines.length + ' Posten kopiert ✓', label);
+            });
+          } else {
+            window.prompt('Kopieren:', text);
+          }
+        });
+        return btn;
+      }
+
+      hook.doneEach(function () {
+        var h2 = Array.prototype.find.call(
+          document.querySelectorAll('.markdown-section h2'),
+          function (h) { return h.textContent.trim() === 'Einkaufsliste'; }
+        );
+        if (!h2 || h2.querySelector('.einkauf-export-btn')) return;
+        var h1 = document.querySelector('.markdown-section h1');
+        var rezept = h1 ? h1.textContent.replace(/^🚧\s*/, '').trim() : 'Einkaufsliste';
+
+        var allUls = [];
+        var curH3 = null;
+        var curUls = [];
+        function flushGroup() {
+          if (curH3 && curUls.length) {
+            var uls = curUls.slice();
+            curH3.appendChild(makeButton('📲 Export', function () { return uls; },
+              ladenName(curH3) + ' – ' + rezept));
+          }
+          curUls = [];
+        }
+        var el = h2.nextElementSibling;
+        while (el && el.tagName !== 'H2') {
+          if (el.tagName === 'H3') { flushGroup(); curH3 = el; }
+          else if (el.tagName === 'UL' && el.querySelector('input[type="checkbox"]')) {
+            curUls.push(el);
+            allUls.push(el);
+          }
+          el = el.nextElementSibling;
+        }
+        flushGroup();
+        if (allUls.length) {
+          h2.appendChild(makeButton(
+            allUls.length > 1 ? '📲 Alles exportieren' : '📲 Export',
+            function () { return allUls; }, rezept));
+        }
+      });
+    }
+
     window.$docsify = {
       name: 'Rezepte',
       loadSidebar: true,
@@ -31,6 +146,7 @@
       },
       auto2top: true,
       relativePath: true,
+      plugins: [einkaufExportPlugin],
     }
   </script>
   <!-- Docsify core -->

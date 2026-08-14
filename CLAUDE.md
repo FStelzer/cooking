@@ -199,6 +199,10 @@ schreiben (rendert als normales `~`). Tabellenzellen sind unkritisch
 - **Achtung beim Editieren:** Die Checkbox-IDs hängen am Eintragstext — wer eine
   Zeile umformuliert, setzt deren Haken zurück. Unkritisch, aber bei Anpassungen
   kurz erwähnen wenn eine Liste vermutlich gerade "in Benutzung" ist.
+- **Export nach Apple Erinnerungen:** Die Site injiziert 📲-Export-Buttons an
+  `## Einkaufsliste` und jeder `###`-Gruppe (Plugin in `index.html`); exportiert
+  werden nur nicht abgehakte Items, gekürzt um kursive Anmerkungen. Setup und
+  Nutzung: siehe `EINKAUF-EXPORT.md`.
 
 ## Bisherige Projekte
 
