@@ -18,9 +18,9 @@ Das Original ist ein Hobby-Post ohne Formangabe und mit ein paar unplausiblen
 Mengen. Was ich geändert habe und warum:
 
 - **Formgröße fehlt im Original komplett** (ein Kommentar fragt danach, ohne
-  Antwort). Rechnung: ~500 g Boden + ~250 g Himbeer + ~1200 g Fil + ~280 g
-  Ganache ≈ 2,2 kg. Bei Ø 22 cm (380 cm²) ergibt das ~6 cm Höhe — ein richtiger
-  Cheesecake. Bei Ø 24 cm wird er flacher (~4,5 cm), bei Ø 20 cm mit ~7 cm
+  Antwort). Rechnung: \~500 g Boden + \~250 g Himbeer + \~1200 g Fil + \~280 g
+  Ganache ≈ 2,2 kg. Bei Ø 22 cm (380 cm²) ergibt das \~6 cm Höhe — ein richtiger
+  Cheesecake. Bei Ø 24 cm wird er flacher (\~4,5 cm), bei Ø 20 cm mit \~7 cm
   grenzwertig hoch zum Schneiden. **Ø 22 cm ist die Empfehlung**, 24 cm die
   sichere Variante.
 - **Speisestärke 2 EL → 1 EL.** 2 EL auf 230 g Himbeeren ist sehr viel; das gibt
@@ -113,11 +113,11 @@ andrücken. In den Kühlschrank.
 
 **2. Himbeerschicht (15 Min. + 1 Std. kühlen)**
 230 g TK-Himbeeren mit 1–2 EL Zucker, 1 Pck. Vanillezucker und 2 EL Wasser in einen
-kleinen Topf, bei mittlerer Hitze aufkochen und ~5 Min. einkochen lassen. Durch ein
+kleinen Topf, bei mittlerer Hitze aufkochen und \~5 Min. einkochen lassen. Durch ein
 feines Sieb passieren (Kerne raus) und zurück in den Topf. 1 EL Speisestärke in
 2 EL kaltem Wasser glattrühren, unter Rühren zugeben und 1–2 Min. weiterkochen,
 bis es deutlich andickt. Abkühlen lassen — **lauwarm, nicht heiß** auf den Boden
-gießen, glattstreichen und komplett durchkühlen lassen (~1 Std.).
+gießen, glattstreichen und komplett durchkühlen lassen (\~1 Std.).
 
 Nicht abkürzen: Kommt der Fil auf eine warme Fruchtschicht, verläuft die
 Grenze und die Sahne fällt zusammen.

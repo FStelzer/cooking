@@ -33,10 +33,10 @@ Ergebnis ist ein kleines "Thali": ein Teller, zwei Schälchen, Reis, Naan.
   Frisch ist erste Wahl, ESL funktioniert; **H-Milch vermeiden** — beide
   Referenzen (Dassana, Swasthi) raten explizit von UHT ab: gerinnt schlechter
   und liefert weniger Ausbeute. **Keine fettarme Milch** — weniger Ausbeute,
-  krümeliger Käse. Ausbeute-Angaben streuen stark: Dassana ~200 g/L, Swasthi
-  nur ~100–125 g/L bei homogenisierter Milch. Realistische Annahme für
-  deutsche Frischmilch: **~150–180 g/L** → 3,5 L ≈ 500–600 g, genug für zwei
-  Saucen à 4 Portionen (je ~250 g) plus Probier-Würfel. 3 L wären auf Kante
+  krümeliger Käse. Ausbeute-Angaben streuen stark: Dassana \~200 g/L, Swasthi
+  nur \~100–125 g/L bei homogenisierter Milch. Realistische Annahme für
+  deutsche Frischmilch: **\~150–180 g/L** → 3,5 L ≈ 500–600 g, genug für zwei
+  Saucen à 4 Portionen (je \~250 g) plus Probier-Würfel. 3 L wären auf Kante
   genäht.
 - **Kasuri Methi (getrocknete Bockshornkleeblätter):** Der eine
   Spezialeinkauf, und er lohnt sich — das typische "Restaurant-Aroma" beider

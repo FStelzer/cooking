@@ -210,7 +210,7 @@ Mehl, Salz und Zucker mischen, Butter mit den Fingerspitzen einreiben, bis es wi
 Von allen aktuellen Projekten das kinderfreundlichste — Dips, Brot, Oliven (bekannter Treffer) und Teigtaschen sind praktisch garantiert. Konkret:
 
 - **Muhammara** ist das einzige Schärfethema und im Rezept bewusst am unteren Ende gewürzt (1 TL Aleppo-Pfeffer auf ~400 g = mild-fruchtig). Aleppo-Pfeffer steht **zusätzlich am Tisch** für die Erwachsenen. Wer ganz sicher gehen will: vor dem Aleppo-Pfeffer eine kleine Portion abnehmen.
-- **Beim Formen (Tag 2) mitmachen lassen** — der Hefeteig verzeiht alles. Ein paar Mini-Exemplare in Kinderhand-Größe mitformen. Die Käse-Sambousek sind der wahrscheinliche Favorit → dort großzügig planen; das Rezept liefert ohnehin mehr Sambousek (~20) als Fatayer (~18).
+- **Beim Formen (Tag 2) mitmachen lassen** — der Hefeteig verzeiht alles. Ein paar Mini-Exemplare in Kinderhand-Größe mitformen. Die Käse-Sambousek sind der wahrscheinliche Favorit → dort großzügig planen; das Rezept liefert ohnehin mehr Sambousek (\~20) als Fatayer (\~18).
 - **Frittiertes mindestens 5 Min. abkühlen lassen**, bevor es auf den Kinderteller kommt — der Käse innen ist deutlich heißer als die Kruste und zieht Fäden.
 - **Roher Knoblauch** in Hummus und Moutabal ist bewusst knapp dosiert (1–2 bzw. 1 Zehe) — beides wird über Nacht spürbar schärfer; Reste am Folgetag fürs Kind vorher probieren.
 - **Labneh ohne Za'atar** als Klecks abzweigen — mildeste Einstiegskomponente mit Brot.

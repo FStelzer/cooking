@@ -6,7 +6,7 @@ Vietnamesischer Schmorfisch aus der kho-Familie, Süd-Stil (Nam Bộ): Fischstea
 
 ## Beschaffung
 
-- **Fisch — die Kernentscheidung (erledigt, 07/2026):** Gekauft bei Buhara: **3 Lachssteaks, quer geschnitten, mit Haut, gesamt ~1 kg für knapp 11 €** (~11 €/kg — auffällig günstig, Referenzpreis für ganzen Lachs liegt bei ~19 €/kg). Cá hồi kho (Lachs-kho) ist eine etablierte vietnamesische Variante, kein Verlegenheits-Ersatz.
+- **Fisch — die Kernentscheidung (erledigt, 07/2026):** Gekauft bei Buhara: **3 Lachssteaks, quer geschnitten, mit Haut, gesamt \~1 kg für knapp 11 €** (\~11 €/kg — auffällig günstig, Referenzpreis für ganzen Lachs liegt bei \~19 €/kg). Cá hồi kho (Lachs-kho) ist eine etablierte vietnamesische Variante, kein Verlegenheits-Ersatz.
   - **Eigentliche 1. Wahl wäre Wels gewesen** (cá tra = Welsartige, biologisch am nächsten am Original; fest, kollagenreich, nur eine kräftige Mittelgräte, keine feinen Zwischenmuskelgräten → fürs Kind sogar besser als Lachs, und schmortolerant). War nicht verfügbar → beim nächsten Durchgang erneut anfragen.
   - **Seeteufel-Schwanzstück** (grätenfrei, praktisch unzerstörbar beim Schmoren) hätte der Händler wegen Zuschnitt-Aufwand und Verschnitt mit **40 €/kg statt der ausgeschriebenen 24 €/kg** berechnet — abgelehnt, sachlich aber nachvollziehbar (aus dem Schwanz quer geschnitten bleibt viel Restmasse übrig).
   - **Nicht:** Makrele (Nord-Stil-klassisch, aber viele feine Gräten → fürs Kind ungünstig), Karpfen (Y-Gräten, noch schlechter), dünne TK-Pangasiusfilets (zerfallen — Pangasius-**Steaks** quer mit Haut sind dagegen fürs nächste Mal gesetzt, siehe Learnings), Zander (grobblättrig, zerfällt).

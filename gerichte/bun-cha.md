@@ -91,7 +91,7 @@ Gasgrill mit Haube, **zwei Zonen**: eine Seite volle Hitze, eine Seite aus/niedr
 *Ausbaustufe für Durchgang 2: Räucherbox mit mildem Obstholz (Kirsche/Apfel) auf den Brenner — kein Hickory/Mesquite, das überfährt die Sauce. Erster Durchgang bewusst ohne, um eine Referenz zu haben.*
 
 **8. Sauce fertigstellen & Anrichten (5 Min.)**
-Sauce-Basis auf **lauwarm** bringen (~50–60 °C, nicht heiß), Saft von 2–3 Limetten und 3 Zehen fein gehackten Knoblauch einrühren, abschmecken. Pro Erwachsenem eine große Schale (~300 ml) füllen, gehackte Chili nur in die Erwachsenen-Schalen. Gegrilltes Fleisch **direkt in die Schalen** geben, ein paar Löffel Pickle dazu — es zieht 2–3 Min., während alle sich setzen. Nudeln, Kräuterteller und restlicher Pickle in die Tischmitte.
+Sauce-Basis auf **lauwarm** bringen (\~50–60 °C, nicht heiß), Saft von 2–3 Limetten und 3 Zehen fein gehackten Knoblauch einrühren, abschmecken. Pro Erwachsenem eine große Schale (\~300 ml) füllen, gehackte Chili nur in die Erwachsenen-Schalen. Gegrilltes Fleisch **direkt in die Schalen** geben, ein paar Löffel Pickle dazu — es zieht 2–3 Min., während alle sich setzen. Nudeln, Kräuterteller und restlicher Pickle in die Tischmitte.
 
 ## Zeitplan
 

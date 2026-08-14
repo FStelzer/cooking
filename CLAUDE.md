@@ -144,6 +144,15 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
    Rezepte — gemischte Angaben („mal g, mal nur Zutatenname") beim Anfassen
    einer Datei mit bereinigen.
 
+## Format: Zirka-Tilde escapen
+
+Docsify (marked) interpretiert auch **einzelne** Tilden als Durchstreichung:
+zwei `~` im selben Absatz/Listenpunkt (z.B. `~50 °C … (~300 ml)`) streichen
+alles dazwischen durch, sobald die zweite Tilde direkt hinter einem
+Nicht-Leerzeichen steht. Daher Zirka-Tilden im Fließtext immer als `\~`
+schreiben (rendert als normales `~`). Tabellenzellen sind unkritisch
+(werden zellenweise geparst), Konsistenz schadet aber nicht.
+
 ## Repo-Struktur & Rezept-Status
 
 - **Ordner:** Alle Einzelrezepte liegen in `gerichte/` (keine Unterteilung nach

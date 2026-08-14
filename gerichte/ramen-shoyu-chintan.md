@@ -91,7 +91,7 @@ Hähnchen zurück in den sauberen Topf, mit 3-3,5L kaltem Wasser. Aufkochen, dan
 
 **e) Fett abschöpfen für Chiyu:** Nach ~3h ~100ml klares Hühnerfett abschöpfen (Bedarf fürs Chiyu), beiseite.
 
-**f) Kombu:** 1 Stück ~10x10cm letzte 30 Min zugeben. Bei zerkleinertem Kombu (~10-15g) nur 15-20 Min.
+**f) Kombu:** 1 Stück \~10x10cm letzte 30 Min zugeben. Bei zerkleinertem Kombu (\~10-15g) nur 15-20 Min.
 
 **g) Gesamtdauer: 4 Stunden.** Durch feines Sieb + Mulltuch abseihen. Ergebnis: ~1,8-2L klare Brühe.
 

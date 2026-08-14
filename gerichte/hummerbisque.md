@@ -47,7 +47,7 @@ Kopf längs halbieren. **Magensack entfernen** (kleiner körniger Beutel direkt 
 2 EL Olivenöl und 40 g Butter im großen Topf stark erhitzen. Hummer- und Garnelenkarkassen kräftig rösten bis tiefrot, mit Röstaromen am Boden. *Nicht zaghaft sein – zu wenig Röstung ist der häufigste Grund für fade Bisque. Braun am Boden ist gut, schwarz nicht.*
 
 **6. Gemüse & Tomatenmark (5 + 2 Min.)**
-2 Schalotten, 1 Karotte (~100 g), ½ Fenchelknolle (~100 g) und 1 Stange Sellerie grob gewürfelt mit 2 angedrückten Knoblauchzehen 5 Min. mitrösten. 2 EL Tomatenmark einrühren, 2 Min. rösten, bis es dunkler wird.
+2 Schalotten, 1 Karotte (\~100 g), ½ Fenchelknolle (\~100 g) und 1 Stange Sellerie grob gewürfelt mit 2 angedrückten Knoblauchzehen 5 Min. mitrösten. 2 EL Tomatenmark einrühren, 2 Min. rösten, bis es dunkler wird.
 
 **7. Flambieren & Ablöschen**
 40 ml Cognac angießen und flambieren (Dunstabzug aus, Armlänge Abstand; alternativ 1 Min. verkochen lassen). Mit 200 ml Weißwein ablöschen, Bratensatz lösen, fast vollständig einkochen.
