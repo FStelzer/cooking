@@ -23,12 +23,19 @@ In der **Kurzbefehle**-App einen neuen Kurzbefehl erstellen, Name z. B.
 **„Zur Einkaufsliste"**:
 
 1. Oben auf das ⓘ-Symbol → **„Im Share-Sheet anzeigen"** aktivieren.
-   Bei den akzeptierten Eingabetypen nur **Text** anhaken.
+   Bei den akzeptierten Eingabetypen nur **Text** anhaken; „Wenn es keine
+   Eingabe gibt" auf **„Fortfahren"**.
 2. Aktionen hinzufügen (die erste Aktion „Empfange **Text** aus Share-Sheet"
    entsteht durch Schritt 1 automatisch):
-   - **„Text trennen"** — Eingabe: der empfangene Text, Trennen mit: **Zeilenumbrüche**
-   - **„Mit jedem Element wiederholen"** — und *innerhalb* der Wiederholung:
-     - **„Neue Erinnerung erstellen"** — Erinnerung: **Wiederholungselement**,
+   - **„Text trennen"** — Trennen mit: **Zeilenumbrüche**.
+     ⚠️ Auf die Eingabe-Variable der Aktion tippen und explizit
+     **„Kurzbefehl-Eingabe"** auswählen — Shortcuts verdrahtet das nicht
+     zuverlässig automatisch; bleibt sie leer, passiert beim Teilen einfach nichts.
+   - **„Mit jedem Element wiederholen"** — und *innerhalb* der Wiederholung
+     (eingerückt zwischen „Wiederholen" und „Ende Wiederholung"):
+     - **„Neue Erinnerung erstellen"** — als Erinnerungs-Text die Variable
+       **„Wiederholungselement"** einsetzen (⚠️ nicht „Text"/„Kurzbefehl-Eingabe" —
+       sonst landet in jeder Erinnerung die komplette Liste),
        Liste: **„Bei jeder Ausführung fragen"** (oder fest die Einkaufsliste aus Schritt 1)
 
 ### 3. Benutzung
