@@ -245,6 +245,9 @@ Hand editieren, Learnings gehören in die Rezeptdatei.
 - ✅ **Bulgogi — koreanisches „Feuerfleisch" mit Salat-Wraps (4 Portionen)** (siehe `gerichte/bulgogi.md`)
   **Gekocht 2× (vor 08/2026, mit verlorenem Vorgänger-Rezept).** Beide Male fantastisch — die Kombination aus Birnenmarinade (2–3 Std.), 15 Min. Anfrieren fürs dünne Schneiden, sehr scharfem Anbraten und Salat-Wraps mit Reis funktioniert hervorragend und ist Rotations-Material. Zuletzt mit Roastbeef gekocht: sehr gutes Ergebnis. Bekannter Schwachpunkt beider Durchgänge: übel eingebrannte Pfanne — der Fix (kleine Chargen, Fleisch abtropfen, Wasser-Deglaze zwischen den Chargen, Zucker am unteren Ende) ist in dieses Rezept eingebaut und beim nächsten Mal zu validieren.
 
+- ✅ **Bún chả (Hanoi-Style) — gegrilltes Schweinefleisch in warmem Nước chấm (4 Portionen)** (siehe `gerichte/bun-cha.md`)
+  **Gekocht 08/2026.** Grundsätzlich lecker, aber nicht auf Thịt-kho-Niveau — Hauptschwäche war die Sauce: über die Mahlzeit hinweg ermüdend, weil zu intensiv. Die Rezept-Wassermenge war zu knapp bemessen und die nötige Verdünnung ist stark **markenabhängig**: Chin-su (Lachs-Version) brauchte +300 ml Wasser, selbst Red Boat +100 ml — Schritt 4 entsprechend auf 850 ml angehoben, mit Hinweis für kräftige Marken (\~1.050 ml). Nach dem Verdünnen war die Balance okay, aber Säure leicht dominant → Limette jetzt vorsichtiger dosiert (erst 2, dritte nur nach Abschmecken). Der Dreijährige mochte auch die milde Kinder-Sauce gar nicht, hat aber Nudeln + Gemüse + Fleisch pur gern gegessen. Geschmacks-Split bei den Fleischsorten: mir schmeckten die Frikadellen am besten, Frau & Kind bevorzugten den Schweinebauch.
+
 <!-- learnings:end -->
 
 ## Ideen für nächste Projekte

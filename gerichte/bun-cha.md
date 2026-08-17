@@ -71,7 +71,7 @@ Marinade verrühren: 4 EL Fischsauce, 2 EL Nước màu, 1 EL Zucker, 1 EL Auste
 Kohlrabi (~300 g) schälen, in dünne Scheiben/Viertelscheiben hobeln (Mandoline), beide Karotten ebenso. Mit ½ TL Salz vermengen, 10 Min. stehen lassen, ausdrücken. Lake: 45 ml Reisessig, 1,5 EL Zucker, 3 EL Wasser, Prise Salz. Mindestens 1 Std. ziehen lassen — hält im Kühlschrank problemlos bis zum nächsten Tag. *Kohlrabi (su hào) ist hier kein Papaya-Notbehelf, sondern nord-vietnamesischer Standard.*
 
 **4. Sauce-Basis (10 Min.)**
-Im kleinen Topf 750 ml Wasser, 120 ml Fischsauce, 80–100 g Zucker (erst 80 g — nach dem Limetten-Zugeben in Schritt 8 abschmecken und ggf. nachsüßen) und 80 ml Reisessig erwärmen, bis der Zucker gelöst ist. **Noch ohne Limette, Knoblauch, Chili** — das kommt frisch vor dem Servieren. Zielprofil: wie eine leichte, süß-salzig-saure Brühe, löffelweise trinkbar. Wirkt sie pur zu mild, ist sie richtig — das Fleisch und der Pickle salzen/säuern nach.
+Im kleinen Topf 850 ml Wasser, 120 ml Fischsauce, 80–100 g Zucker (erst 80 g — nach dem Limetten-Zugeben in Schritt 8 abschmecken und ggf. nachsüßen) und 80 ml Reisessig erwärmen, bis der Zucker gelöst ist. **Wassermenge ist markenabhängig** (siehe Learnings): 850 ml passen zu Red Boat; kräftig-salzige Saucen wie Chin-su (Lachs) brauchen eher 1.050 ml. Im Zweifel mit 850 ml starten und schluckweise verdünnen, bis sie wirklich löffelweise trinkbar ist. **Noch ohne Limette, Knoblauch, Chili** — das kommt frisch vor dem Servieren. Zielprofil: wie eine leichte, süß-salzig-saure Brühe, löffelweise trinkbar. Wirkt sie pur zu mild, ist sie richtig — das Fleisch und der Pickle salzen/säuern nach.
 
 ### Kochtag (~1 Std. vor dem Essen)
 
@@ -91,7 +91,7 @@ Gasgrill mit Haube, **zwei Zonen**: eine Seite volle Hitze, eine Seite aus/niedr
 *Ausbaustufe für Durchgang 2: Räucherbox mit mildem Obstholz (Kirsche/Apfel) auf den Brenner — kein Hickory/Mesquite, das überfährt die Sauce. Erster Durchgang bewusst ohne, um eine Referenz zu haben.*
 
 **8. Sauce fertigstellen & Anrichten (5 Min.)**
-Sauce-Basis auf **lauwarm** bringen (\~50–60 °C, nicht heiß), Saft von 2–3 Limetten und 3 Zehen fein gehackten Knoblauch einrühren, abschmecken. Pro Erwachsenem eine große Schale (\~300 ml) füllen, gehackte Chili nur in die Erwachsenen-Schalen. Gegrilltes Fleisch **direkt in die Schalen** geben, ein paar Löffel Pickle dazu — es zieht 2–3 Min., während alle sich setzen. Nudeln, Kräuterteller und restlicher Pickle in die Tischmitte.
+Sauce-Basis auf **lauwarm** bringen (\~50–60 °C, nicht heiß), Saft von 2 Limetten und 3 Zehen fein gehackten Knoblauch einrühren, abschmecken — die dritte Limette nur, wenn Säure wirklich fehlt (beim ersten Durchgang war Säure eher die dominante Note). Pro Erwachsenem eine große Schale (\~300 ml) füllen, gehackte Chili nur in die Erwachsenen-Schalen. Gegrilltes Fleisch **direkt in die Schalen** geben, ein paar Löffel Pickle dazu — es zieht 2–3 Min., während alle sich setzen. Nudeln, Kräuterteller und restlicher Pickle in die Tischmitte.
 
 ## Zeitplan
 
@@ -108,6 +108,7 @@ Strukturell das kinderfreundlichste Gericht des Backlogs: Bällchen, Nudeln, Gur
 
 - **Hackmasse:** ~150 g **vor dem Pfeffern** abnehmen (Schritt 2), daraus 3–4 kleine Taler.
 - **Eigene Sauce-Schale** (~150 ml): 120 ml warmes Wasser, 1 TL Zucker, 1 TL Fischsauce, Spritzer Limette — deutlich wässriger und süßer als die Erwachsenen-Version, **kein Chili, kein roher Knoblauch**. Chili kommt ausschließlich in die Erwachsenen-Schalen.
+- **Praxis-Erfahrung (08/2026):** Auch die milde Sauce kam beim Dreijährigen nicht an — Nudeln + Gurke/Pickle + Fleisch „trocken" wurden dafür problemlos gegessen. Die Kinder-Schale anbieten, aber nicht drauf bauen; das Gericht funktioniert fürs Kind auch komplett ohne Sauce.
 - Bauchscheiben sind mild genug zum Mitessen; der Pfeffer sitzt vor allem in den Erwachsenen-Bällchen.
 
 ## Variante: Bún thịt nướng (Süd-Stil)
@@ -119,6 +120,24 @@ Hier verbucht statt als eigenes Rezept, weil sich der Einkauf zu ~90 % deckt. De
 - **Serviert als Bowl:** Nudeln unten, Kräuter und Gurke, Fleisch obenauf, geröstete gehackte **Erdnüsse** darüber (einziger Zusatzposten auf der Einkaufsliste).
 
 → Sinnvoll als zweiter Durchgang, wenn die Grillmechanik sitzt.
+
+## Learnings
+
+**Gekocht 08/2026.** Grundsätzlich lecker, aber nicht auf Thịt-kho-Niveau — Hauptschwäche war die Sauce: über die Mahlzeit hinweg ermüdend, weil zu intensiv. Die Rezept-Wassermenge war zu knapp bemessen und die nötige Verdünnung ist stark **markenabhängig**: Chin-su (Lachs-Version) brauchte +300 ml Wasser, selbst Red Boat +100 ml — Schritt 4 entsprechend auf 850 ml angehoben, mit Hinweis für kräftige Marken (\~1.050 ml). Nach dem Verdünnen war die Balance okay, aber Säure leicht dominant → Limette jetzt vorsichtiger dosiert (erst 2, dritte nur nach Abschmecken). Der Dreijährige mochte auch die milde Kinder-Sauce gar nicht, hat aber Nudeln + Gemüse + Fleisch pur gern gegessen. Geschmacks-Split bei den Fleischsorten: mir schmeckten die Frikadellen am besten, Frau & Kind bevorzugten den Schweinebauch.
+
+### Sauce: Verdünnung & Fischsaucen-Marke
+
+- Direkter A/B-Vergleich beim Kochen: **Chin-su (Lachs)** deutlich kräftiger/salziger als **Red Boat** — mit den ursprünglichen 750 ml Wasser bei beiden zu intensiv, Chin-su brauchte insgesamt \~1.050 ml, Red Boat \~850 ml.
+- Kern-Learning fürs ganze Nước-chấm-Genre: Wassermengen aus Rezepten nie blind übernehmen, die Fischsauce bestimmt die Ratio. Immer probieren, ob die Sauce wirklich „löffelweise trinkbar" ist — genau das war hier das Zielprofil und es wurde zunächst verfehlt.
+- Auch nach dem Verdünnen blieb die Sauce auf Schalen-Volumen (\~300 ml) ermüdend. Fürs nächste Mal überlegen: kleinere Schalen (\~200 ml) und lieber nachschenken.
+
+### Balance
+
+Endergebnis bei beiden Saucen relativ ausgeglichen (salzig/süß/sauer/scharf), Säure aber etwas dominant. Fix im Rezept: Limettensaft in Schritt 8 gestaffelt (2 Limetten, dritte nur bei Bedarf).
+
+### Fleisch
+
+Frikadellen (chả) und Schweinebauch kamen beide gut an, mit klarem Split: mir die Frikadellen am liebsten, Frau & Kind der Bauch. Beide Sorten bleiben gesetzt — genau dafür sind sie konstitutiv.
 
 ## Quellen & Entscheidungen
 
