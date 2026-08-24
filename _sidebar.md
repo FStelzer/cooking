@@ -1,4 +1,6 @@
 - [Ideen-Backlog](/ideen.md)
+- **🚧 in arbeit**
+  - [Menü November — Tomatenwasser / Jakobsmuschel / Lamm / Espresso-Martini-Parfait](/menues/menue-november.md)
 - **desserts**
   - [Pistazien-Himbeer-Cheesecake (no-bake, Ø 22 cm, ~12 Stücke)](/desserts/pistazien-himbeer-cheesecake.md)
 - **gerichte**
