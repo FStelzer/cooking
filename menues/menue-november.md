@@ -64,7 +64,7 @@ für Testläufe (Gang 2, Parfait) die jeweiligen Posten einzeln herauspicken.*
 
 **Kühltheke / Milchprodukte:**
 - [ ] Butter, 500 g (2 × 250 g) — Gang 2 (\~205 g) + Gang 3 (\~120 g) + Gang 4 (30 g)
-- [ ] Ziegenfrischkäse-Rolle, 150 g — Gang 2
+- [ ] Ziegenfrischkäse, **mild**, 150 g — Gang 2 *(z. B. Chavroux; Petit Billy falls da — kräftig-rustikale Sorten (Caprinsäure) dominieren die feine Muschel)*
 - [ ] Sahne, 500 ml — Gang 4 (300 ml) + Beurre-blanc-Stabilisierung
 - [ ] Vollmilch, 1 L — Püree Gang 3
 - [ ] Eier, 6 Stück — Gang 4 (4 Eigelb; Eiweiß-Verwertung einplanen)
@@ -148,7 +148,8 @@ Pro Portion: 60–70 ml | Equipment: Passiertuch (doppelt), feines Sieb, Gefrier
 
 6. Grundwürzung **1–2 h vor Service** auf \~350 ml Tomatenwasser: 6–8 Tropfen
    Worcestershire (**tropfenweise — trübt!**), 2 Prisen Selleriesalz (\~0,5 g),
-   1 Umdrehung weißer Pfeffer. Kalt ziehen lassen.
+   1 Umdrehung weißer Pfeffer. Kalt ziehen lassen — dabei setzen sich die
+   Worcestershire-Schwebstoffe am Boden ab.
    **Vorher \~60 ml für die Kinder-Portion abzweigen** (nur Mini-Prise Salz).
 7. **Bei Serviertemperatur abschmecken, nie bei Raumtemperatur:** Kälte dämpft
    Umami und Salz-Wahrnehmung deutlich — kalt muss es einen Tick kräftiger
@@ -157,10 +158,12 @@ Pro Portion: 60–70 ml | Equipment: Passiertuch (doppelt), feines Sieb, Gefrier
 8. Concassé: 100 g Cherry-/Datteltomaten kreuzweise einritzen, 10–15 Sek.
    blanchieren, Eiswasser, häuten, entkernen, 3–4-mm-Würfel. **Erst kurz vor
    dem Servieren** mit 1 Prise Salz würzen (zieht sonst Wasser).
-9. Kurz vor dem Ausgießen: 10 ml Limettensaft einrühren, abschmecken, ggf. auf
+9. Kurz vor dem Ausgießen: 10 ml Limettensaft **vorsichtig oben einrühren**
+   (das abgesetzte Sediment am Boden nicht aufwirbeln), abschmecken, ggf. auf
    max. 15 ml erhöhen (Bún-chả-Learning: Säure dominiert schnell — vorsichtig).
 10. Anrichten: vorgekühlte Gläser/Espressotassen (kein Eis — verwässert),
-    je 1 TL Concassé, 60–70 ml Tomatenwasser angießen. Pro Erwachsenen-Glas
+    je 1 TL Concassé, 60–70 ml Tomatenwasser angießen — vom Sediment weg,
+    der letzte Schluck bleibt im Gefäß. Pro Erwachsenen-Glas
     2–3 Tropfen mildes Chiliöl (schwimmt als glänzende Perlen — Schärfe kurz
     und präzise) und optional 3–5 ml Fino-Sherry. Basilikumspitze oder zartes
     Selleriegrün aufsetzen; alternativ 2 Tropfen Kräuteröl
@@ -182,6 +185,8 @@ Worcestershire und Sherry, mit Concassé und Basilikum. Oder auslassen.
 - [ ] Klarheit + Aroma nach dem Auftauen: Weg A (Drip-Thaw) gegen Weg B
       (klassisch) verkosten — Gewinner wird Standard
 - [ ] Chiliöl: gekauft (mild) oder selbst angesetzt (Drill)?
+- [ ] Mit vs. ohne Fino-Sherry (3–5 ml) verkosten — Dritt-Feedback votiert
+      klar für „rein", bleibt aber optional, bis der Gaumen entscheidet
 
 ---
 
@@ -224,7 +229,7 @@ gestrichen: teuer, dominant, doppelte Exotik-Säure zur Mango).
 
 **Ziegenkäse-Pralinen (Vortag formen, Wälzen erst am Abend):**
 
-6. 120 g Ziegenfrischkäse mit 1 TL Honig (nicht mehr — Masse wird klebrig,
+6. 120 g **milden** Ziegenfrischkäse (s. Einkaufsliste) mit 1 TL Honig (nicht mehr — Masse wird klebrig,
    Süße kommt am Teller vom Gel) und Pfeffer verkneten. 5 Kugeln à \~25 g
    formen — 10–15 Min. anfrieren macht das Rollen sauber. Kalt lagern.
 7. Wälzmischung bereitstellen: 30 g Walnüsse fein gehackt + 2 EL fein gehackte
@@ -286,7 +291,8 @@ Mini-Portion ohne Sauce, dafür Extra-Bratbutter über die Muschel.
 **Offen (Testlauf):**
 - [ ] Volle Testportion: Gel-Süße vs. Muschel über den ganzen Teller — letzter
       Bissen noch gut?
-- [ ] Praline 20 g vs. 25 g und gewälzt vs. Crumble-Bett — auf Testteller entscheiden
+- [ ] Praline 20 g vs. 25 g und gewälzt vs. Crumble-Bett — auf Testteller
+      entscheiden *(Tendenz: 20 g — auch Dritt-Feedback votiert für kleiner)*
 - [ ] Buhara: frische Jakobsmuscheln verfügbar & Preis?
 
 ---
@@ -422,7 +428,9 @@ Extra-Version.
       auf Zuruf). Dieser Gang wäre der Anlass.
 - [ ] Bitter-Balance: Rosenkohl ist milder als der ursprünglich geplante
       Chicorée — fehlt dem Menü der herbe Gegenpol? Auf Testteller: evtl.
-      wenige rohe Radicchio-Streifen für Farbe + Bitterkick.
+      wenige rohe Radicchio-Streifen für Farbe + Bitterkick. *(Tendenz laut
+      Dritt-Feedback: unnötig — die frittierten Blätter bringen selbst genug
+      Röst-/Bitternoten. Erst pur testen.)*
 - [ ] Karree-Größe real prüfen (2 oder 3 Rippen p. P. — hängt vom Karree ab)
 
 ---
@@ -480,7 +488,9 @@ gleichzeitig den Espresso auf 80 ml erhöhen (nur eine Stellschraube drehen).
 
 **Service (à la minute):**
 
-8. Dessertteller ins Gefrierfach (15 Min. reichen). Espresso für den Schuss
+8. Dessertteller ins Gefrierfach (15 Min. reichen) — **Teller mit leichter
+   Vertiefung** (Coup-Teller / tiefer Teller mit breitem Rand): auf komplett
+   flachem Teller läuft der Schuss sofort an den Rand. Espresso für den Schuss
    **erst jetzt** brühen — die Crema ist das Schaummittel, abgestandener
    Espresso schäumt nicht.
 9. Parfait an der Folie aus der Form heben. Messer in heißem Wasser erwärmen,
@@ -515,6 +525,8 @@ Walnusscrumble-Reste.
       genug oder Stufe 2 (+20 ml Wodka)?
 - [ ] Schuss-Menge 20 vs. 25 ml pro Teller (zu viel ertränkt die Scheibe)
 - [ ] Kakaonibs im REWE Center beschaffbar oder Schoko-Fallback?
+- [ ] Dessertteller mit Vertiefung (Coup) vorhanden? Sonst besorgen oder
+      tiefe Teller mit breitem Rand nehmen — flacher Teller geht nicht
 - [ ] Shaker anschaffen oder Schraubglas? (Shaker ist billig und
       vielseitig — Kandidat für die Equipment-Liste)
 
