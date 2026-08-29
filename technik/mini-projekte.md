@@ -47,6 +47,13 @@ noch spitz-sauer.
 
 **Perfekt wenn:** steht am Löffel und glänzt seidig statt ölig — und die
 gerettete Charge ist von der ersten nicht zu unterscheiden.
+**Gemacht 08/2026:** Emulsion war problemlos, ohne Brechen. Zwei Punkte: Zitrone
+wirklich **abmessen** (1 TL zu Beginn, Rest erst zum Abschmecken) — frei aus der
+Frucht wurde es leicht zu sauer. Und das eigentlich Schwierige ist die Mechanik:
+Schüssel halten, rühren und Öl gießen gleichzeitig. Fix: Schüssel auf ein
+zusammengerolltes feuchtes Küchentuch (Ring) oder in einen Topf mit Tuch
+stellen, dann bleiben beide Hände frei; Öl aus einer Flasche mit Ausgießer oder
+Spritzflasche in dünnem Faden laufen lassen.
 **Achtung:** rohes Ei — frische Eier, gekühlt, binnen 1–2 Tagen verbrauchen.
 Fürs Kind im Zweifel weglassen oder auf pasteurisiertes Eigelb ausweichen.
 **Einsatz:** Pommes/Ofenkartoffeln, Sandwiches, kalter Tafelspitz-Rest, Fisch.

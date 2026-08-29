@@ -248,6 +248,9 @@ Hand editieren, Learnings gehören in die Rezeptdatei.
 - ✅ **Bún chả (Hanoi-Style) — gegrilltes Schweinefleisch in warmem Nước chấm (4 Portionen)** (siehe `gerichte/bun-cha.md`)
   **Gekocht 08/2026.** Grundsätzlich lecker, aber nicht auf Thịt-kho-Niveau — Hauptschwäche war die Sauce: über die Mahlzeit hinweg ermüdend, weil zu intensiv. Die Rezept-Wassermenge war zu knapp bemessen und die nötige Verdünnung ist stark **markenabhängig**: Chin-su (Lachs-Version) brauchte +300 ml Wasser, selbst Red Boat +100 ml — Schritt 4 entsprechend auf 850 ml angehoben, mit Hinweis für kräftige Marken (\~1.050 ml). Nach dem Verdünnen war die Balance okay, aber Säure leicht dominant → Limette jetzt vorsichtiger dosiert (erst 2, dritte nur nach Abschmecken). Der Dreijährige mochte auch die milde Kinder-Sauce gar nicht, hat aber Nudeln + Gemüse + Fleisch pur gern gegessen. Geschmacks-Split bei den Fleischsorten: mir schmeckten die Frikadellen am besten, Frau & Kind bevorzugten den Schweinebauch.
 
+- ✅ **Pistazien-Himbeer-Cheesecake (no-bake, Ø 22 cm, ~12 Stücke)** (siehe `desserts/pistazien-himbeer-cheesecake.md`)
+  **Gebacken 08/2026.** Konsistenz insgesamt ziemlich traumhaft, beim Publikum extrem gut angekommen — Technik (no-bake, Schichtaufbau, Ganache-Ratio) sitzt. Mit einer 40 %-Pistaziencreme brauchte es die **vollen 500 g**, damit der Pistaziengeschmack im Fil deutlich genug war; dadurch relativ süß, aber noch okay, nicht überladen — der Kuchen ist konzeptionell ohnehin sehr süß. Säuerliches Himbeerkompott plus reichhaltige Garnitur (Johannis-/Him-/Blaubeeren, gehackte gesalzene Pistazien) funktionierten als Gegenpol, dürften aber noch stärker sein. Fürs nächste Mal: reines Pistazienmus statt Fertigcreme (mehr Pistazie ohne mehr Zucker), dunkle Bitterschokoladen-Ganache statt weißer und ggf. selbst geröstete Salzkaramell-Pistazien obendrauf — alle drei als Varianten im Rezept angelegt, ungetestet.
+
 <!-- learnings:end -->
 
 ## Ideen für nächste Projekte
