@@ -23,7 +23,14 @@
 - **menues**
   - [✅ Degustationsmenü — Hochzeitstag](/menues/menue-hochzeitstag.md)
 - **schwangerschaft**
+  - [Bouillabaisse mit Fenchel-Orange-Salat (Schwangerschafts-Version, 2 Erwachsene + Kind)](/schwangerschaft/bouillabaisse.md)
+  - [Dal-Baukasten — Grundrezept Masoor/Toor Dal + vier Varianten (4 Portionen als Hauptgericht)](/schwangerschaft/dal-baukasten.md)
   - [Schwangerschaft & Gestationsdiabetes — Leitfaden und Rezept-Eignung](/schwangerschaft/leitfaden.md)
+  - [Libanesischer Mezze-Teller — Hummus, Moutabal, Muhammara, Labneh & Kafta (Schwangerschafts-Version, 4 Personen)](/schwangerschaft/mezze-teller.md)
+  - [Pescado a la sal — Wolfsbarsch in der Salzkruste mit Salsa verde, Grillgemüse und Linsensalat (2 Erwachsene + Kind)](/schwangerschaft/pescado-a-la-sal.md)
+  - [Poulet au vinaigre (Lyon) — Hähnchenschenkel in Essig-Tomaten-Sauce mit grünen Bohnen (4 Portionen)](/schwangerschaft/poulet-au-vinaigre.md)
+  - [Hähnchen-Shawarma-Teller, libanesisch — mit Toum, Tabbouleh und Blumenkohl harra (Schwangerschafts-Version, 4 Portionen)](/schwangerschaft/shawarma-teller.md)
+  - [Tandoori-Hähnchen vom Gasgrill mit Dal tadka & Baingan bharta (4 Portionen)](/schwangerschaft/tandoori-haehnchen.md)
 - **technik**
   - [Abschmecken & Retten — Spickzettel](/technik/abschmecken.md)
   - [Dunkle Bratensauce (Biergarten-Stil)](/technik/dunkle-bratensauce.md)

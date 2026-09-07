@@ -15,6 +15,16 @@ und fliegt hier raus.
 - [Tafelspitz, sommerlich](/gerichte/tafelspitz.md) — 07/2026
 - [Pistazien-Himbeer-Cheesecake (no-bake)](/desserts/pistazien-himbeer-cheesecake.md) — 07/2026, Pistaziencreme ist Vorlauf-/Kostenposten
 
+**Schwangerschafts-Versionen (09/2026, Ordner `schwangerschaft/`):**
+
+- [Bouillabaisse (Schwangerschafts-Version)](/schwangerschaft/bouillabaisse.md) — neue Fischliste, ohne Wein/Pastis, Kartoffel-Rouille
+- [Mezze-Teller mit Kafta (Schwangerschafts-Version)](/schwangerschaft/mezze-teller.md) — Dips 1:1, Teigtaschen raus, Kafta rein
+- [Shawarma-Teller (Schwangerschafts-Version)](/schwangerschaft/shawarma-teller.md) — Teller statt Wrap, Blumenkohl harra
+- [Tandoori-Hähnchen vom Gasgrill + Dal tadka + Baingan bharta](/schwangerschaft/tandoori-haehnchen.md) — Kinder-Abzweigung vor dem Chili
+- [Pescado a la sal — Wolfsbarsch in der Salzkruste](/schwangerschaft/pescado-a-la-sal.md) — Buhara vorher anrufen (1,2–1,5 kg, mit Schuppen)
+- [Poulet au vinaigre (Lyon)](/schwangerschaft/poulet-au-vinaigre.md) — ohne Wein, Standard-REWE-Einkauf, unter 1¼ Std.
+- [Dal-Baukasten](/schwangerschaft/dal-baukasten.md) — Grundrezept + 4 Varianten, Rotationsgericht (Linsen als GDM-Anker)
+
 ## Gekocht
 
 - ✅ [Bulgogi — koreanisches „Feuerfleisch"](/gerichte/bulgogi.md) — 2× gekocht vor 08/2026, Rezept 08/2026 rekonstruiert
@@ -151,38 +161,19 @@ erreicht keine 70 °C, Nudeln).
    Levante-Block sowieso beschafft (gute Tahina!). Kein Fladenbrot, komplett
    durchgegart. Kombiniert mit der Mezze-Teller-Kopie ein voller Abend.
 
-5. **Pescado a la sal — Fisch in der Salzkruste** — ganze Dorade oder
-   Wolfsbarsch (Buhara) in grobem Meersalz + Eiweiß gebacken (Eiweiß wird
-   durchgegart), dazu Salsa verde und gegrilltes Gemüse. Null KH, minimale
-   aktive Zeit, großer Tisch-Effekt beim Aufklopfen. Funktioniert auch auf
-   dem Gasgrill mit Haube. „Aufwand ≠ Wow" in Reinform.
-
-6. **Tandoori-Hähnchen vom Gasgrill + Dal tadka + Baingan bharta** —
-   Follow-up zum Paneer-Projekt: Joghurt-Marinade über Nacht, Zwei-Zonen-Grill
-   oder Ofen + Küchenbrenner für die Röstnote. Dal ist die „richtige"
-   KH-Beilage (Hülsenfrüchte, niedriger GI, Protein), Bharta die Aubergine
-   über der Gasflamme geröstet. Kein Naan/Reis oder ein kleines Vollkorn-Roti.
-   Kind: Marinade ohne Chili abzweigen.
-
-7. **Griechischer Ofen-Abend: Psari plaki + Gigantes plaki + Horta** — Dorade
+5. **Griechischer Ofen-Abend: Psari plaki + Gigantes plaki + Horta** — Dorade
    oder Kabeljau auf Tomaten-Zwiebel-Fenchel im Ofen, dicke weiße Bohnen in
    Tomatensauce (Hülsenfrucht als KH-Träger), gekochtes Blattgemüse mit
    Zitrone und Öl, Feta (pasteurisiert). Setzt die Oktopus-/Kleftiko-Linie
    ohne Wein und Kartoffel fort; Kind kennt Oliven und Feta.
 
-8. **Poulet au vinaigre (Lyon)** — Hähnchenschenkel mit Schalotten,
-   Knoblauch, Tomate und viel Weißweinessig geschmort, Crème fraîche zum
-   Finish. Klassisch mit Weißwein, aber der Essig trägt die Säure allein →
-   alkoholfrei ohne Verlust. Dazu grüne Bohnen. Reichhaltig, mild,
-   Standard-REWE-Einkauf, unter 1 Std.
-
-9. **Shakshuka / Menemen mit festen Eiern** — Paprika-Tomaten-Basis, Eier
+6. **Shakshuka / Menemen mit festen Eiern** — Paprika-Tomaten-Basis, Eier
    darin **komplett** stocken lassen (Deckel; Eigelb fest, kein Runny-Yolk),
    Labneh oder Feta obenauf, 1 Scheibe Vollkornbrot statt Fladen. Das
    GDM-Frühstücksproblem (empfindlichste Mahlzeit) als Wochenend-Gericht;
    Menemen-Variante ohne Knoblauch als mildere Kinder-Pfanne.
 
-10. **Frühstücks- und Snack-Baukasten (technik/)** — kein Gericht, sondern
+7. **Frühstücks- und Snack-Baukasten (technik/)** — kein Gericht, sondern
     ein Spickzettel: Skyr/griechischer Joghurt + Nüsse + Beeren,
     Haferkleie-Porridge mit Protein (Hafer bei GDM gut belegt — messen!),
     Eier-Varianten, hartgekochte Eier, Käsewürfel (pasteurisiert), Edamame,
@@ -190,7 +181,7 @@ erreicht keine 70 °C, Nudeln).
     pro Tag sind laut Leitlinie Teil der Therapie — ohne Vorrat läuft das
     auf Kekse hinaus.
 
-11. **Dessert ohne Zuckerlast** — Panna cotta mit griechischem Joghurt und
+8. **Dessert ohne Zuckerlast** — Panna cotta mit griechischem Joghurt und
     Beeren, Mascarpone-Beeren-Gratin, dunkle Schokoladen-Ganache-Mousse
     (Sahne-basiert, ohne rohes Ei), gebackener Ricotta mit Zitrone. Süße über
     Beeren/wenig Honig oder Erythrit; Portionsgröße klein, immer nach einer

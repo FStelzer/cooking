@@ -15,6 +15,9 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 - **Erfahrungslevel:** Erfahren in der Küche, scheut keinen Aufwand
 - **Geschmacksvorlieben:**
   - Mag: Reichhaltig/kräftig, komplexe Umami-Profile, klare elegante Brühen
+  - Frau: Linsen/Dal sehr gern — hat in der letzten Schwangerschaft auf Linsen
+    gesetzt, um den Gestationsdiabetes zu managen → Rotationskandidat
+    (`schwangerschaft/dal-baukasten.md`)
   - Mag weniger: Sehr intensive Pilznoten (kein großer Pilz-Fan)
   - Enoki-Pilze: Textur nicht beliebt → Shimeji/Champignons bevorzugen
   - Risotto kommt bei Frau und Kind nicht gut an (Erfahrung: Ossobuco alla

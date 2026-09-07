@@ -24,7 +24,7 @@ kohlenhydratarme Diäten sind in der Schwangerschaft nicht empfohlen.
 Daraus folgende Regeln für dieses Repo:
 
 1. **Beilage schrumpfen und tauschen, nicht streichen.** Weißer Reis, helles
-   Brot, Nudeln, Pfannkuchen → kleine Portion Vollkorn, Hülsenfrüchte (Dal,
+   Brot, Nudeln, Pfannkuchen → kleine Portion Vollkorn, Hülsenfrüchte ([Dal](/schwangerschaft/dal-baukasten.md),
    Bohnen, Kichererbsen), Hirse, Quinoa, Buchweizen; oder Gemüse als
    Tellerbasis (Salat-Wraps, Blumenkohl, Zucchini).
 2. **KH nie allein.** Jede Mahlzeit mit Protein + Fett + Ballaststoffen — das
@@ -70,14 +70,14 @@ lohnt · ❌ nicht sinnvoll anpassbar (Problem *ist* das Gericht).
 
 | Rezept | GDM | Schwangerschaft | Fazit |
 |---|---|---|---|
-| [Bouillabaisse](/gerichte/bouillabaisse.md) | Ohne Brot ideal; Kartoffel in der Rouille unkritisch | Weißwein + Pastis, rohes Eigelb (Rouille), Sardellen im Salat, **Heilbutt/Seeteufel in allen drei Fischvarianten** | ⚠️ Kopie. Frühere Schwangerschafts-Version liegt in der Git-Historie (`git show 0c391fd^:schwangerschaft/bouillabaisse.md`) — Basis, aber Fischliste neu (Kabeljau, Wolfsbarsch, Dorade) |
-| [Libanesische Mezze](/gerichte/mezze-libanesisch.md) | Fladenbrot, zwei Teige, Granatapfelsirup sind die KH-/Zucker-Träger; Hummus (Kichererbse) okay in Portion, Labneh/Moutabal ideal | Alles gegart bzw. pasteurisiert (Joghurt für Labneh: Standardware ist pasteurisiert) | ⚠️ Kopie als „Mezze-Teller": Dips + Rohkost + gegrilltes Protein statt Teigtaschen-Abend; 1 kleines Vollkorn-Fladen. Dips zugleich Snack-Vorrat |
+| [Bouillabaisse](/gerichte/bouillabaisse.md) | Ohne Brot ideal; Kartoffel in der Rouille unkritisch | Weißwein + Pastis, rohes Eigelb (Rouille), Sardellen im Salat, **Heilbutt/Seeteufel in allen drei Fischvarianten** | ⚠️ Kopie → [Bouillabaisse (Schwangerschafts-Version)](/schwangerschaft/bouillabaisse.md): Fischliste neu (Kabeljau, Wolfsbarsch, Dorade), Kartoffel-Rouille, ohne Wein/Pastis, Kapern statt Sardellen |
+| [Libanesische Mezze](/gerichte/mezze-libanesisch.md) | Fladenbrot, zwei Teige, Granatapfelsirup sind die KH-/Zucker-Träger; Hummus (Kichererbse) okay in Portion, Labneh/Moutabal ideal | Alles gegart bzw. pasteurisiert (Joghurt für Labneh: Standardware ist pasteurisiert) | ⚠️ Kopie → [Mezze-Teller mit Kafta](/schwangerschaft/mezze-teller.md): Dips 1:1 + Rohkost + gegrillte Kafta statt Teigtaschen; 1 kleines Vollkorn-Fladen. Dips zugleich Snack-Vorrat |
 | [İmam bayıldı](/gerichte/imam-bayildi.md) | Low-carb, Bulgur-Beilage klein | Durchgegart; Joghurt/Feta pasteurisiert | ✅ direkt; Protein ergänzen (Kofta, Halloumi) |
 | [Geschmorter Oktopus](/gerichte/oktopus-geschmort.md) | Kartoffeln reduzieren/ersetzen | 100 ml Rotwein im Schmorsud → Essig + Wasser; Oktopus ist durchgegart; Feta pasteurisiert | ✅ mit Anpassung |
 | [Tafelspitz](/gerichte/tafelspitz.md) | Frittaten (Weißmehl), Kartoffeln, Zucker in Apfelkren/Gurkensalat | Schnittlauchsauce enthält rohes Eigelb → weglassen oder Joghurt-Variante; Fleisch ist durch | ✅ mit Anpassung: Suppe klar mit Gemüse statt Frittaten, Wurzelgemüse statt Kartoffeln |
 | [Bulgogi](/gerichte/bulgogi.md) | Zucker + Birne in der Marinade (moderat, teils verkocht); Salat-Wraps ohne Reis sind ideal | Fleisch dünn, komplett durchgebraten | ✅ Zucker halbieren, Reis weglassen/klein |
 | [Paneer-Projekt](/gerichte/paneer-projekt.md) | Matar/Palak low-carb; Reis/Naan klein → Dal ergänzen | Paneer aus pasteurisierter Milch, alles gegart | ✅ |
-| [Hähnchen-Shawarma](/gerichte/shawarma-libanesisch.md) | Fladen weg, Batata harra klein, Tabbouleh (petersilienlastig) okay | Hähnchen durch; Toum ist Knoblauch-Öl-Emulsion ohne Ei | ✅ als Teller statt Wrap |
+| [Hähnchen-Shawarma](/gerichte/shawarma-libanesisch.md) | Fladen weg, Batata harra klein, Tabbouleh (petersilienlastig) okay | Hähnchen durch; Toum ist Knoblauch-Öl-Emulsion ohne Ei | ✅ als Teller statt Wrap → [Shawarma-Teller](/schwangerschaft/shawarma-teller.md) (Blumenkohl harra statt Batata harra) |
 | [Lamm-Kleftiko](/gerichte/lamm-kleftiko.md) | Kartoffeln → Fenchel/Zucchini/Paprika | Weißwein ist optional → weglassen; Lamm ist durch; Feta pasteurisiert | ✅ mit Anpassung |
 | [Cochinita Pibil](/gerichte/cochinita-pibil.md) | Tortillas → Salatblätter oder wenige Mais-Tortillas; Orangensaft in der Marinade moderat | Schwein durchgegart; Habanero ohnehin separat | ✅ mit Anpassung |
 | [Hummerbisque](/gerichte/hummerbisque.md) | Reis nur als Bindung (25 g) unkritisch | Cognac + 200 ml Weißwein → weglassen, Säure über Tomate/Essig | ✅ mit Anpassung |
@@ -86,6 +86,14 @@ lohnt · ❌ nicht sinnvoll anpassbar (Problem *ist* das Gericht).
 | [Shoyu-Ramen](/gerichte/ramen-shoyu-chintan.md), [Miso-Tonkotsu](/gerichte/ramen-miso-tonkotsu.md) | Nudeln | Kombu-Dashi (Jod), Sake/Mirin im Tare, wachsweiches Ajitama | ❌ in der Schwangerschaft aussetzen |
 | [Teriyaki-Glasur](/technik/teriyaki-glasur.md), [Pfannkuchen](/technik/pfannkuchen-fluffig.md), [Cheesecake](/desserts/pistazien-himbeer-cheesecake.md) | Zucker/Weißmehl | Mirin (Teriyaki) | ❌ |
 | [Menü Hochzeitstag](/menues/menue-hochzeitstag.md), [Menü November](/menues/menue-november.md) | Parfaits, Kartoffelbaumkuchen | Wein/Rotwein, Espresso-Martini-Parfait (Alkohol + Koffein + rohes Ei) | ❌ als Ganzes; einzelne Gänge (Jakobsmuscheln durchgegart, Karotten) sind übernehmbar |
+
+## Eigene Rezepte in diesem Ordner
+
+Von Haus aus nach diesem Leitfaden gebaut (kein Kompromiss-Umbau nötig):
+[Tandoori-Hähnchen + Dal tadka + Baingan bharta](/schwangerschaft/tandoori-haehnchen.md) ·
+[Pescado a la sal](/schwangerschaft/pescado-a-la-sal.md) ·
+[Poulet au vinaigre](/schwangerschaft/poulet-au-vinaigre.md) ·
+[Dal-Baukasten](/schwangerschaft/dal-baukasten.md) (Rotationsgericht, Grundrezept + Varianten).
 
 Neue Ideen für diesen Ordner: siehe [Ideen-Backlog](/ideen.md), Sektion „Backlog — Schwangerschaft & Gestationsdiabetes".
 
