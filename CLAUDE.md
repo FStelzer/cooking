@@ -30,6 +30,11 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 ### Vorhanden
 - **Größter Topf: 14L** (seit Juli 2026 — Paitan/Tonkotsu-Style und große Brühen-Mengen jetzt möglich)
 - Zweitgrößter Topf: 6L
+- **Elektrischer Schnellkochtopf** (Instant-Pot-Typ, No-Name, ca. 6 L Innentopf) —
+  Druckgaren sehr gut (Pulled Pork mehrfach bewährt): Hülsenfrüchte/Bohnen,
+  Brühen, Schmorgerichte. Sauté-/Anbrat-Funktion schwach (begrenzte Leistung)
+  → Anbraten immer separat in Pfanne/Bräter, Gerät nur für Druck + Simmern/
+  Warmhalten
 - Bräter/Schmortopf (für Osso Buco-Style Gerichte)
 - Stabmixer
 - Fleischthermometer
@@ -119,7 +124,9 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 
 1. **Topfgröße immer mitdenken:** 14L ist die harte Grenze (großer Topf), daneben
    6L für kleinere Brühen. Rezepte für mehr Volumen → explizit anmerken oder
-   anpassen (z.B. Wassermenge reduzieren).
+   anpassen (z.B. Wassermenge reduzieren). Bei Hülsenfrüchten, Bohnen,
+   Schmorfleisch und Knochenbrühen den elektrischen Schnellkochtopf als Option
+   mitdenken (Füllgrenze ½ bei schäumendem Gargut, sonst ⅔; Anbraten separat).
 
 2. **Mengen-Mathematik prüfen:** Wenn mehrere Komponenten dieselbe Zutat brauchen
    (z.B. Sojasauce für Tare + Chashu + Eier-Marinade), die Gesamtmenge auf der

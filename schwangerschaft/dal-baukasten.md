@@ -1,6 +1,6 @@
 # Dal-Baukasten — Grundrezept Masoor/Toor Dal + vier Varianten (4 Portionen als Hauptgericht)
 
-*Grundrezept \~50 Min., davon 25 passiv; Varianten 45 Min. bis 3 Std. (siehe Tabelle). Equipment: 6L-Topf, Pfanne (Masala), kleine Pfanne (Tadka), kleiner Topf (Kinder-Anteil), Stabmixer nur für Variante D, Bunsenbrenner optional (Dhungar), Pfanne für Roti.*
+*Grundrezept \~50 Min., davon 25 passiv; Varianten 45 Min. bis 3 Std. (siehe Tabelle). Equipment: 6L-Topf oder elektrischer Schnellkochtopf (nur Schritt 1; lohnt bei Variante B und D, siehe [Schnellkochtopf-Fassung](#schnellkochtopf-fassung)), Pfanne (Masala), kleine Pfanne (Tadka), kleiner Topf (Kinder-Anteil), Stabmixer nur für Variante D, Bunsenbrenner optional (Dhungar), Pfanne für Roti.*
 
 Dal ist in diesem Haushalt Rotationsessen, kein Projekt: eine Mechanik — Linsen mit Kurkuma weichkochen, eine Zwiebel-Tomaten-Basis unterrühren, zum Schluss das **Tadka** (in Ghee aufgeblühte Gewürze) darübergießen — und daraus vier verschiedene Abende. Ein Dal ist zugleich Protein *und* KH-Träger; deshalb steht es hier als Hauptgericht mit Gemüse-Beilage, Joghurt und einem kleinen Vollkorn-Roti, nicht als Beilage. Die Beilagen-Skalierung (200 g Toor zu Tandoori-Hähnchen) steht in [`tandoori-haehnchen.md`](/schwangerschaft/tandoori-haehnchen.md).
 
@@ -8,15 +8,15 @@ Dal ist in diesem Haushalt Rotationsessen, kein Projekt: eine Mechanik — Linse
 
 ## Linsen-Kunde
 
-| Sorte (Hindi) | Was es ist | Einweichen | Topf-Kochzeit | Textur | Bezug | GI (Tabellenwerte) |
-|---|---|---|---|---|---|---|
-| **Masoor** (rote Linsen, geschält) | Alltags-Standard | nein | 15–25 Min. | zerfällt cremig | REWE/Aldi | 18–32 |
-| **Toor / Arhar** (Straucherbse, geschält) | der klassische Dal-tadka-Charakter, nussiger | 30 Min. heiß | 30–45 Min. | cremig mit Körnung | indischer Laden / online | \~30 |
-| **Moong** (gelbe Mungbohnen, geschält) | leichteste, mildeste Linse | 30 Min. heiß | 20–25 Min. | weich, wird schnell klebrig | Asialaden (prüfen) / online | \~42 |
-| **Chana Dal** (Kichererbsen-Spalt) | körnig, nussig, süßlich | 1 Std. (oder 30 Min. heiß) | 45–60 Min. | bleibt körnig | indischer Laden / online | **11–13** |
-| **Urad ganz** (schwarze Linsen) | nur für Makhani | 8–12 Std. | 60–90 Min. | cremig-schwer | indischer Laden / online | \~30 (Kidney 24) |
+| Sorte (Hindi) | Was es ist | Einweichen | Topf-Kochzeit | Schnellkochtopf (elektr., Hochdruck, natürlich ablassen) | Textur | Bezug | GI (Tabellenwerte) |
+|---|---|---|---|---|---|---|---|
+| **Masoor** (rote Linsen, geschält) | Alltags-Standard | nein | 15–25 Min. | 7 Min. (kein Zeitgewinn) | zerfällt cremig | REWE/Aldi | 18–32 |
+| **Toor / Arhar** (Straucherbse, geschält) | der klassische Dal-tadka-Charakter, nussiger | 30 Min. heiß | 30–45 Min. | 10 Min. | cremig mit Körnung | indischer Laden / online | \~30 |
+| **Moong** (gelbe Mungbohnen, geschält) | leichteste, mildeste Linse | 30 Min. heiß | 20–25 Min. | 8 Min. (nicht länger) | weich, wird schnell klebrig | Asialaden (prüfen) / online | \~42 |
+| **Chana Dal** (Kichererbsen-Spalt) | körnig, nussig, süßlich | 1 Std. (oder 30 Min. heiß) | 45–60 Min. | 10–13 Min. | bleibt körnig | indischer Laden / online | **11–13** |
+| **Urad ganz** (schwarze Linsen) | nur für Makhani | 8–12 Std. | 60–90 Min. | 25–30 Min. | cremig-schwer | indischer Laden / online | \~30 (Kidney 24) |
 
-**Realistische Beschaffung:** Masoor gibt es überall. Toor, Chana Dal, Urad, Hing und Kashmiri-Chili sind **Online-Posten** (TRS/Natco, je 500 g–1 kg, 3–5 €, halten ewig) — mit dem Kasuri-Methi/Toor-Einkauf aus dem Tandoori-Rezept bündeln. Der lokale Asialaden ist ostasiatisch sortiert; gelbe Moong und TK-Curryblätter sind dort möglich, nicht sicher — anrufen. **Kein Schnellkochtopf** im Equipment → alle Zeiten sind Topfzeiten; ältere Linsen brauchen länger, Wasser ggf. nachgießen.
+**Realistische Beschaffung:** Masoor gibt es überall. Toor, Chana Dal, Urad, Hing und Kashmiri-Chili sind **Online-Posten** (TRS/Natco, je 500 g–1 kg, 3–5 €, halten ewig) — mit dem Kasuri-Methi/Toor-Einkauf aus dem Tandoori-Rezept bündeln. Der lokale Asialaden ist ostasiatisch sortiert; gelbe Moong und TK-Curryblätter sind dort möglich, nicht sicher — anrufen. Die Topfzeiten sind der Standard (ältere Linsen brauchen länger, Wasser ggf. nachgießen); die **Schnellkochtopf**-Spalte gilt für den elektrischen Schnellkochtopf, Details unten in der [Schnellkochtopf-Fassung](#schnellkochtopf-fassung).
 
 ## Die Mechanik (gilt für alles)
 
@@ -25,6 +25,28 @@ Dal ist in diesem Haushalt Rotationsessen, kein Projekt: eine Mechanik — Linse
 3. **Teilen — vor dem Chili.** \~¼ in den kleinen Topf für das Kind. Das Paneer-Learning: Schärfe pro Teller nachrüsten funktioniert nicht, umgekehrt abzweigen schon. Die Erwachsenen-Version wird dadurch **nicht** verwässert.
 4. **Zwei Tadkas:** Erwachsene mit getrockneter Chili + Kashmiri, Kind ohne. Das Tadka ist der Aromaschritt — Gewürze blühen in heißem Ghee in Sekunden auf und verbrennen ebenso schnell; Pfanne vom Herd, bevor Chilipulver reinkommt.
 5. **Finish:** Kasuri Methi, Garam Masala, Zitrone, Koriandergrün. Dal dickt beim Stehen nach → mit heißem Wasser auf „dicke Suppe" zurückstellen.
+
+## Schnellkochtopf-Fassung
+
+Der elektrische Schnellkochtopf (Instant-Pot-Typ, ca. 6 L) übernimmt **nur den Linsen-Schritt** — und bei Variante D zusätzlich das lange Simmern. Masala und beide Tadkas bleiben in der Pfanne: die Sauté-Funktion des Geräts hat zu wenig Leistung, um Zwiebeln in 8–10 Min. goldbraun zu bekommen, und das Rezept läuft ohnehin parallel auf zwei Stellen.
+
+**Ehrliche Einordnung, bevor man umbaut:** Druckaufbau (\~10 Min.) und natürliches Ablassen (10–15 Min.) kommen auf jede Garzeit obendrauf. Für **Masoor** heißt das \~30 Min. Gerät gegen 20 Min. Topf — kein Gewinn außer „Deckel drauf, vergessen, nichts kocht über". **Toor** marginal. **Chana Dal (B)** spart 20–30 Min. und das Wasser-Nachgießen, **Urad + Rajma (D)** spart 30–40 Min. und macht das Simmern unbeaufsichtigt — da lohnt es sich.
+
+**Regeln fürs Gerät:**
+
+- **Füllgrenze ½** — Linsen schäumen. 300 g Linsen + 1 L Wasser ≈ 1,5 L; das Grundrezept ×1,5 fürs Einfrieren passt noch, ×2 nicht.
+- **1 TL Ghee** (bzw. Kokosöl bei C) ins Kochwasser — bricht den Schaum, der sonst ins Ventil steigt.
+- **Immer natürlich ablassen.** Schnellablassen sprüht Stärkeschaum durchs Ventil und lässt Linsen platzen.
+- **Weniger Wasser** als im Topf (\~15–20 %, es verdunstet nichts). Konsistenz danach mit heißem Wasser einstellen, nicht vorher.
+- **Erste Runde mit Referenzzeit**, dann ±2 Min. fürs eigene Gerät unter „Notizen" nachtragen — No-Name-Geräte liegen oft etwas unter Instant-Pot-Druck.
+
+**Ersetzungen pro Variante** (alles andere unverändert):
+
+- **Grundrezept Schritt 1:** 300 g Masoor gewaschen mit **900 ml Wasser, ½ TL Kurkuma, 1 TL Ghee** in den Innentopf, Hochdruck **7 Min.**, natürlich ablassen, mit dem Schneebesen durchrühren. Nicht salzen. *Toor: 300 g 30 Min. heiß eingeweicht, abgegossen, **1 L Wasser**, **10 Min.***
+- **Variante B Schritt 2:** 300 g Chana Dal (30 Min. heiß eingeweicht, abgegossen) mit **1 L Wasser, ½ TL Kurkuma, 1 TL Ghee**, Hochdruck **10–13 Min.**, natürlich ablassen — Spalten zerdrückbar, aber ganz. **Kürbis nicht mit unter Druck** (zerfällt zu Brei). Stattdessen Masala (Schritt 4) in den Innentopf rühren, **1½ TL Salz**, **400 g Hokkaido-Würfel** dazu, mit Sauté-/Slow-Cook-Funktion **15 Min. offen simmern** (Zucchini: 10 Min.) — hier passt die schwache Heizleistung. Oder alles in den 6L-Topf umfüllen.
+- **Variante C Schritt 1:** 300 g Moong (30 Min. heiß eingeweicht, abgegossen) mit **1 L Wasser, ½ TL Kurkuma, 1 TL Kokosöl**, Hochdruck **8 Min.**, natürlich ablassen. Lieber zu kurz als zu lang — Moong wird klebrig; Reste am Boden zeigen zu viel Zeit an.
+- **Variante D Schritt 2:** 250 g Urad + 60 g Kidneybohnen (über Nacht eingeweicht, gespült) mit **1,2 L Wasser, ½ TL Kurkuma, 1 TL Ghee**, Hochdruck **25–30 Min.**, natürlich ablassen. **Test:** eine Kidneybohne muss sich zwischen den Fingern mühelos zerdrücken lassen — sonst **5 Min.** nachdrücken. Druckgaren zerstört das Bohnenlektin (Phytohämagglutinin) zuverlässig; **rohe Kidneybohnen nie nur im Slow-Cook-Modus** garen (zu wenig Hitze). Danach \~⅓ andrücken wie im Topf-Rezept.
+- **Variante D Schritt 4 (Simmern):** Masala in den Innentopf, **1½ TL Salz**, Sauté auf niedrigster Stufe oder Slow-Cook, Deckel angelehnt (nicht verriegelt), **45–90 Min.**, alle 10 Min. rühren und am Rand zerdrücken, heißes Wasser nach Bedarf. Alternativ in den 6L-Topf umfüllen. Das Dhungar (Schritt 7) funktioniert im Innentopf genauso.
 
 ## Einkaufsliste
 
@@ -136,6 +158,7 @@ Pro Teller **eine gute Kelle Dal (\~300 g)**, Kachumber oder Raita daneben, 1 Ro
 |---|---|---|---|---|
 | **Ändert sich** | + 400 g Spinat, Ingwer-Tadka | andere Linse, Kürbis, Senfsamen-Tadka | Moong, Kokospaste, kein Knoblauch/Tomate, Curryblatt-Tadka | Urad + Rajma, Butter-Tomaten-Masala, Sahne, langes Simmern |
 | **Zeit** | 55 Min. | 1 Std. Einweichen + 1¼ Std. | 30 Min. Einweichen + 50 Min. | 8–12 Std. Einweichen + 2½–3 Std. |
+| **Zeit mit Schnellkochtopf** | wie Grundrezept (\~55 Min.) | 30 Min. Einweichen + \~55 Min. | 30 Min. Einweichen + \~50 Min. | über Nacht + \~1¾–2 Std. |
 | **Charakter** | grün, herb, Alltag | körnig, süßlich, sättigend | mild, cremig, Kinder-Einstieg | reichhaltig, samtig, Wochenende |
 | **GDM-Einordnung** | wie Grundrezept | **günstigste Variante** (GI \~12) | GI höher (\~42), Kokosfett bremst | GI gut, aber energiedicht → kleinere Portion |
 
@@ -199,7 +222,7 @@ Pro Teller **eine gute Kelle Dal (\~300 g)**, Kachumber oder Raita daneben, 1 Ro
 - **–0:10** Teilen. Beide Tadkas. Kachumber salzen
 - **0:00** Anrichten
 
-*Variante B: Einweichen 1 Std. vorher, Kochzeit +30–40 Min. Variante D: Vortag einweichen, Kochtag 2½–3 Std. ab Aufsetzen — Masala und Simmern laufen nebenher.*
+*Variante B: Einweichen 1 Std. vorher, Kochzeit +30–40 Min. (Schnellkochtopf: 30 Min. Einweichen, dann wie Grundrezept + 15 Min. Kürbis-Simmern). Variante D: Vortag einweichen, Kochtag 2½–3 Std. ab Aufsetzen — Masala und Simmern laufen nebenher (Schnellkochtopf: \~1¾–2 Std., davon Druckphase 45–50 Min. unbeaufsichtigt).*
 
 ## Vorrat & Einfrieren
 
@@ -248,18 +271,18 @@ Das ist eine **volle Hauptmahlzeit am oberen Ende** — bewusst, weil das Dal hi
 ## Notizen
 
 - **Toor statt Masoor** lohnt, sobald der Online-Posten da ist: nussiger, mehr Körnung, das „Restaurant-Dal". Masoor ist der Alltag.
-- **Kein Schnellkochtopf, mit Absicht:** Die Topfzeiten sind länger, aber alles läuft passiv; ein Schnellkochtopf würde Variante D von 90 auf 25 Min. bringen — falls Dal wirklich wöchentlich wird, ist das der eine Equipment-Kauf, der sich lohnt (auch für Brühen und Bohnen).
+- **Schnellkochtopf:** lohnt für B und D, nicht fürs Grundrezept (Druckaufbau + Ablassen fressen den Vorteil bei Masoor auf). Eigene Gerätezeiten nach der ersten Runde hier nachtragen: Masoor … Min., Chana … Min., Urad+Rajma … Min.
 - **Nächste Ausbaustufe:** Sambar (südindisch, Tamarinde, Gemüse) als Variante E, sobald Sambar-Pulver und Tamarinde da sind; Dal mit Hähnchen oder Lamm (Dhansak-Richtung) als Fleischvariante fürs Paneer-Learning „Hähnchen statt Paneer".
 - **Nach der Schwangerschaft:** Nichts zu ändern; Reis kommt zurück.
 
 ## Quellen & Entscheidungen
 
-- **Masoor im Topf:** [Swasthi — Masoor Dal](https://www.indianhealthyrecipes.com/masoor-dal-recipe/) (95 g, 1¼–1½ cups Wasser, \~15 Min., kein Einweichen, dickt nach; Salz beim Tadka) und [Dassana — Masoor Dal](https://www.vegrecipesofindia.com/masoor-dal-easy-masoor-dal/) („neither thick nor thin", Salz nach dem Kochen). Unsere 300 g / 1,1 L folgen dem Verhältnis, 15–20 Min. wegen der größeren Menge.
-- **Toor & Dal-tadka-Formel:** [Swasthi — Dal Tadka](https://www.indianhealthyrecipes.com/dal-tadka/) (200 g Toor, 30 Min. heiß einweichen, 20–30 Min., Tadka Ghee/Kreuzkümmel/Knoblauch/getr. Chili/Hing/Kashmiri) und [Dassana — Dal Tadka](https://www.vegrecipesofindia.com/restaurant-style-dal-tadka/) (45–60 Min. im Topf, Kasuri Methi, „Kashmiri oder Paprika"). Paprika edelsüß in der Masala als Farbgeber ohne Schärfe → Paneer-Learning.
+- **Masoor im Topf:** [Swasthi — Masoor Dal](https://www.indianhealthyrecipes.com/masoor-dal-recipe/) (95 g, 1¼–1½ cups Wasser, \~15 Min., kein Einweichen, dickt nach; Salz beim Tadka; **Instant Pot 7 Min., 1 cup Wasser, natürlich ablassen**) und [Dassana — Masoor Dal](https://www.vegrecipesofindia.com/masoor-dal-easy-masoor-dal/) („neither thick nor thin", Salz nach dem Kochen). Unsere 300 g / 1,1 L folgen dem Verhältnis, 15–20 Min. wegen der größeren Menge.
+- **Toor & Dal-tadka-Formel:** [Swasthi — Dal Tadka](https://www.indianhealthyrecipes.com/dal-tadka/) (200 g Toor, 30 Min. heiß einweichen, 20–30 Min., Tadka Ghee/Kreuzkümmel/Knoblauch/getr. Chili/Hing/Kashmiri; **Instant Pot 10 Min. Hochdruck, 1 : 3 cups Wasser, natürlich ablassen**) und [Dassana — Dal Tadka](https://www.vegrecipesofindia.com/restaurant-style-dal-tadka/) (45–60 Min. im Topf, Kasuri Methi, „Kashmiri oder Paprika"). Paprika edelsüß in der Masala als Farbgeber ohne Schärfe → Paneer-Learning.
 - **Dal Palak:** [Swasthi — Dal Palak](https://www.indianhealthyrecipes.com/dal-palak/) (100 g Spinat auf ½ cup Dal, roh gehackt 3–4 Min. im Tadka, Ingwer, Kasuri Methi) und [Dassana — Palak Dal](https://www.vegrecipesofindia.com/palak-dal-spinach-dal/) (Tuvar + Masoor halbe-halbe, 2 cups Spinat roh 4–5 Min. gedünstet). **Abweichung vom ersten Entwurf:** kein Blanchieren — beide Quellen geben rohen, gehackten Spinat ins Tadka; das Farb-Learning aus dem Paneer-Projekt gilt für püriertes Palak, nicht für Blattstücke im Dal. Andhra-Alternative (Spinat direkt ins heiße Dal): [Swasthi — Palakura Pappu](https://www.indianhealthyrecipes.com/palakura-pesarapappu-spinach-moong-dal-curry/).
-- **Chana Dal:** [Swasthi — Chana Dal](https://www.indianhealthyrecipes.com/chana-dal-recipe/) (205 g, 30 Min. heiß einweichen, \~30 Min. halb bedeckt „tender, nicht matschig", nennt Kürbis/Lauki/Gurke als Gemüse-Einlage) und [Dassana — Chana Dal](https://www.vegrecipesofindia.com/chana-dal-recipe/) (200 g, 1 Std. einweichen, **4 cups Wasser, 45–60 Min. im Topf**, Amchur, Kasuri Methi; nennt Zucchini/Lauki/Spinat). Gemüse-Timing nach [Dassana — Lauki Chana Dal](https://www.vegrecipesofindia.com/lauki-chana-dal-curry-recipe/). Wir folgen Dassanas längerer Topfzeit als Obergrenze.
-- **Dal makhani:** [Swasthi — Dal Makhani](https://www.indianhealthyrecipes.com/dal-makhani-recipe/) (200 g Urad : 55 g Rajma, ≥ 8 Std. einweichen, **Topf 60–90 Min.**, 2 EL Ghee + 3 EL Butter, 220 g Tomatenpüree, 60–80 ml Sahne, danach \~90 Min. simmern, Dhungar) und [Dassana — Dal Makhani](https://www.vegrecipesofindia.com/dal-makhani-restaurant-style-recipe/) (140 g : 40 g, Topf 45–60 Min.+, 3 EL Butter, Ganzgewürze inkl. Kardamom/Zimt/Nelke, Muskat, „the more you slow cook it, the better"). Unsere 250 g : 60 g und 60 g Butter / 80 ml Sahne liegen zwischen beiden; Kashmiri erst im Finish, damit die Kinderportion nach dem Simmern abgezweigt werden kann.
-- **Kerala Parippu:** [Dassana — Kerala Parippu Curry](https://www.vegrecipesofindia.com/kerala-parippu-curry-recipe/) (70 g Moong, Paste aus ⅓ cup frischer Kokosnuss + Kreuzkümmel + 1 grüne Chili + Schalotte, 7–8 Min. simmern, Tadka Kokosöl/Senf/getr. Chili/Curryblätter/Schalotten, kein Knoblauch). Auf 300 g skaliert (×4); grüne Chili aus der Paste gestrichen. Moong-Topfzeit und „nicht überkochen, wird klebrig": [Swasthi — Moong Dal](https://www.indianhealthyrecipes.com/moong-dal-recipe/).
+- **Chana Dal:** [Swasthi — Chana Dal](https://www.indianhealthyrecipes.com/chana-dal-recipe/) (205 g, 30 Min. heiß einweichen, \~30 Min. halb bedeckt „tender, nicht matschig", nennt Kürbis/Lauki/Gurke als Gemüse-Einlage) und [Dassana — Chana Dal](https://www.vegrecipesofindia.com/chana-dal-recipe/) (200 g, 1 Std. einweichen, **4 cups Wasser, 45–60 Min. im Topf**, Amchur, Kasuri Methi; nennt Zucchini/Lauki/Spinat). Gemüse-Timing nach [Dassana — Lauki Chana Dal](https://www.vegrecipesofindia.com/lauki-chana-dal-curry-recipe/). Wir folgen Dassanas längerer Topfzeit als Obergrenze. **Schnellkochtopf:** Swasthi Instant Pot 10 Min. (Variante 13 Min.), 3 cups Wasser auf 205 g, natürlich ablassen.
+- **Dal makhani:** [Swasthi — Dal Makhani](https://www.indianhealthyrecipes.com/dal-makhani-recipe/) (200 g Urad : 55 g Rajma, ≥ 8 Std. einweichen, **Topf 60–90 Min.**, 2 EL Ghee + 3 EL Butter, 220 g Tomatenpüree, 60–80 ml Sahne, danach \~90 Min. simmern, Dhungar; **Instant Pot 20 Min. Hochdruck auf 4 cups Wasser, natürlich ablassen, dann Sauté 12–15 Min.** — wir setzen 25–30 Min. wegen No-Name-Druck und Kidneybohnen-Sicherheit) und [Dassana — Dal Makhani](https://www.vegrecipesofindia.com/dal-makhani-restaurant-style-recipe/) (140 g : 40 g, Topf 45–60 Min.+, 3 EL Butter, Ganzgewürze inkl. Kardamom/Zimt/Nelke, Muskat, „the more you slow cook it, the better"). Unsere 250 g : 60 g und 60 g Butter / 80 ml Sahne liegen zwischen beiden; Kashmiri erst im Finish, damit die Kinderportion nach dem Simmern abgezweigt werden kann.
+- **Kerala Parippu:** [Dassana — Kerala Parippu Curry](https://www.vegrecipesofindia.com/kerala-parippu-curry-recipe/) (70 g Moong, Paste aus ⅓ cup frischer Kokosnuss + Kreuzkümmel + 1 grüne Chili + Schalotte, 7–8 Min. simmern, Tadka Kokosöl/Senf/getr. Chili/Curryblätter/Schalotten, kein Knoblauch). Auf 300 g skaliert (×4); grüne Chili aus der Paste gestrichen. Moong-Topfzeit und „nicht überkochen, wird klebrig": [Swasthi — Moong Dal](https://www.indianhealthyrecipes.com/moong-dal-recipe/) (Instant Pot 10 Min. eingeweicht — wir nehmen 8 Min. wegen der Klebrigkeits-Warnung).
 - **GI-Werte:** Atkinson, Foster-Powell, Brand-Miller, [International Tables of GI and GL Values 2008](https://pmc.ncbi.nlm.nih.gov/articles/PMC2584181/), Diabetes Care 31(12): Linsen 32 ± 5, Kichererbsen 28 ± 9, Kidneybohnen 24 ± 4. Atkinson et al. 2021 (AJCN), Supplement-Tabellen: [Tabelle 1](https://nutritotal.com.br/pro/wp-content/uploads/2021/09/Tabela1_IG.pdf) (kanadische Linsen 10–23), [Tabelle 2](https://nutritotal.com.br/pro/wp-content/uploads/2021/09/Tabela2_IG.pdf) (rote Linsen 18–32, Chana Dhal 13 ± 2, Mungbohne 42 ± 4).
 - **Linsen statt Reis/Kartoffel:** Moravek D. et al., *Carbohydrate Replacement of Rice or Potato with Lentils Reduces the Postprandial Glycemic Response in Healthy Adults*, J Nutr 2018;148(4):535–541 — \~20 % (Reis) bzw. \~35 % (Kartoffel) niedrigere Glukoseantwort; [Pressetext University of Guelph via ScienceDaily](https://www.sciencedaily.com/releases/2018/06/180613162701.htm). Einschränkung: gesunde Probanden.
 - **Meta-Analyse:** Sievenpiper J. L. et al., Diabetologia 2009;52:1479–95 — [Zusammenfassung (NIHR/NCBI Bookshelf)](https://www.ncbi.nlm.nih.gov/books/NBK77976/).
