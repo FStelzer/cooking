@@ -8,6 +8,10 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 - **Personen:** 2 Erwachsene + 1 Kind (Stand: 3 Jahre, Stand April 2026)
 - **Kind isst:** Gerne ausgefallene Dinge — Sushi, Sojasauce, Eier, Oliven
 - **Kind nicht:** Scharf
+- **Schwangerschaft mit Gestationsdiabetes (Stand 09/2026, bis zur Geburt):**
+  Neue Rezepte und Anpassungen gegen `schwangerschaft/leitfaden.md` prüfen —
+  alles durchgegart, kein Alkohol/rohes Ei/Kombu/Quecksilber-Fisch, KH klein
+  und niedrig-glykämisch, immer mit Protein. Nicht Low-Carb, nicht Keto.
 - **Erfahrungslevel:** Erfahren in der Küche, scheut keinen Aufwand
 - **Geschmacksvorlieben:**
   - Mag: Reichhaltig/kräftig, komplexe Umami-Profile, klare elegante Brühen
@@ -162,7 +166,12 @@ schreiben (rendert als normales `~`). Tabellenzellen sind unkritisch
   selbst — Technik-Drills, Grundsaucen, einfache Basis-/Komponentenrezepte wie
   Pfannkuchen —, keine eigenständigen Gerichte-Projekte; z. B.
   `technik/abschmecken.md`, `technik/mini-projekte.md`. Sollten sich hier viele
-  Komponentenrezepte ansammeln, ggf. später in eigenen Ordner ausgliedern).
+  Komponentenrezepte ansammeln, ggf. später in eigenen Ordner ausgliedern) und
+  `schwangerschaft/` (Rezepte, die während Schwangerschaft + Gestationsdiabetes
+  ohne Sonderbehandlung passen; `leitfaden.md` dort ist Filter und
+  Eignungstabelle. Kopien bestehender Rezepte heißen „… (Schwangerschafts-
+  Version)" und verweisen aufs Original; Ideen dazu haben eine eigene Sektion
+  in `ideen.md`).
   Einkaufslisten leben direkt in den Rezepten (kein eigener Ordner mehr);
   `ideen.md` ist die Einstiegsseite der Docsify-Site.
 - **Rezepte in Arbeit (TODO):** H1-Titel beginnt mit `🚧 ` und direkt unter dem

@@ -22,6 +22,8 @@
   - [✅ Thịt kho trứng — vietnamesisches Karamell-Schweinefleisch mit Eiern (4 Portionen)](/gerichte/thit-kho-trung.md)
 - **menues**
   - [✅ Degustationsmenü — Hochzeitstag](/menues/menue-hochzeitstag.md)
+- **schwangerschaft**
+  - [Schwangerschaft & Gestationsdiabetes — Leitfaden und Rezept-Eignung](/schwangerschaft/leitfaden.md)
 - **technik**
   - [Abschmecken & Retten — Spickzettel](/technik/abschmecken.md)
   - [Dunkle Bratensauce (Biergarten-Stil)](/technik/dunkle-bratensauce.md)

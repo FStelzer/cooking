@@ -106,3 +106,92 @@ und fliegt hier raus.
     Kind kann direkt mitessen. Optional dazu: Sauerteig-/Weißbrot statt
     Bread Bowl.
 
+## Backlog — Schwangerschaft & Gestationsdiabetes
+
+Filter und Regeln: [Leitfaden](/schwangerschaft/leitfaden.md). Kurz: nicht
+Low-Carb, sondern KH klein + niedrig-glykämisch + immer mit Protein; alles
+durchgegart; kein Alkohol, kein rohes Ei, kein Kombu, keine
+Quecksilber-Fische. Wird eine Idee konkret → 🚧-Stub in `schwangerschaft/`.
+
+**Aus dem allgemeinen Backlog hierher passend:** Nr. 10 *Qing Zheng Yu*
+(Wolfsbarsch/Dorade sind unkritisch; Shaoxing weglassen), Nr. 12 *Blanquette
+de Veau* (Liaison auf ≥ 75 °C ziehen, kein Wein nötig), Nr. 5 *Adobo*
+(Reis klein). **Nicht geeignet:** Nr. 2 Vitello tonnato (Thunfisch + rohes Ei
+in der Mayo — zwei Treffer), Nr. 14 Ceviche (roher Fisch), Nr. 4 Hainanese
+Chicken Rice (Reis ist das Gericht), Nr. 13 Pasta-Trilogie (Carbonara-Ei
+erreicht keine 70 °C, Nudeln).
+
+1. **Mizutaki (Hakata-Style Hühner-Hotpot)** — Hähnchenteile 2–3 Std. zu einer
+   milchig-weißen, kollagenreichen Brühe gekocht (14L-Topf, Selgros-Karkassen +
+   Schenkel), dann am Tisch Kohl, Lauch, Shimeji, Tofu und Hähnchenbällchen
+   darin gegart; Ponzu mit Frühlingszwiebel und Yuzukosho als Dip. Exakt das
+   „klare elegante Brühe"-Profil, ohne Nudeln vollständig, Hähnchen-Dashi
+   statt Kombu (Jod). Kind: Brühe pur + Bällchen. Ponzu-Alkoholgehalt prüfen
+   (manche Marken enthalten Mirin) → sonst Sojasauce + Yuzu/Zitrone + etwas
+   Dashi selbst mischen.
+
+2. **Samgyetang — koreanische Ginseng-Hühnersuppe** — kleines Huhn (oder
+   Stubenküken) gefüllt mit wenig Klebreis, Ginseng, Jujube, Knoblauch,
+   sanft gekocht. Der Reis ist bewusst klein und sitzt in Brühe + Protein
+   (leitlinienkonform), Ginseng/Jujube im Asialaden (getrocknet, prüfen).
+   Mild by design, Salz/Pfeffer am Tisch. Hinweis: Ginseng in der
+   Schwangerschaft ist in der Fachliteratur nicht eindeutig bewertet →
+   vorher mit der Ärztin klären oder weglassen (dann ist es Baeksuk).
+
+3. **Bossam — gekochter Schweinebauch mit Salzkohl-Wraps** — Schweinebauch
+   in Doenjang-Brühe mit Ingwer und Lauch 1 Std. gekocht, dünn geschnitten;
+   dazu gesalzene Chinakohlblätter, Ssamjang, Rettich-Salat (Zucker
+   reduzieren), Knoblauch, Perilla. Bulgogi-Wrap-Logik ohne Zucker-Marinade;
+   die klassische Austern-Beilage entfällt (roh). Kind hat Wraps bereits
+   akzeptiert. Doenjang + Ssamjang aus dem Asialaden.
+
+4. **Kofta bil tahini** — Lamm-/Rind-Kofta im Ofen in Tahina-Zitronen-Sauce
+   gebacken, dazu geröstete Blumenkohl-Röschen und Gurken-Joghurt. Schließt
+   die Lücke „Protein zu den Mezze-Dips" und braucht nur, was der
+   Levante-Block sowieso beschafft (gute Tahina!). Kein Fladenbrot, komplett
+   durchgegart. Kombiniert mit der Mezze-Teller-Kopie ein voller Abend.
+
+5. **Pescado a la sal — Fisch in der Salzkruste** — ganze Dorade oder
+   Wolfsbarsch (Buhara) in grobem Meersalz + Eiweiß gebacken (Eiweiß wird
+   durchgegart), dazu Salsa verde und gegrilltes Gemüse. Null KH, minimale
+   aktive Zeit, großer Tisch-Effekt beim Aufklopfen. Funktioniert auch auf
+   dem Gasgrill mit Haube. „Aufwand ≠ Wow" in Reinform.
+
+6. **Tandoori-Hähnchen vom Gasgrill + Dal tadka + Baingan bharta** —
+   Follow-up zum Paneer-Projekt: Joghurt-Marinade über Nacht, Zwei-Zonen-Grill
+   oder Ofen + Küchenbrenner für die Röstnote. Dal ist die „richtige"
+   KH-Beilage (Hülsenfrüchte, niedriger GI, Protein), Bharta die Aubergine
+   über der Gasflamme geröstet. Kein Naan/Reis oder ein kleines Vollkorn-Roti.
+   Kind: Marinade ohne Chili abzweigen.
+
+7. **Griechischer Ofen-Abend: Psari plaki + Gigantes plaki + Horta** — Dorade
+   oder Kabeljau auf Tomaten-Zwiebel-Fenchel im Ofen, dicke weiße Bohnen in
+   Tomatensauce (Hülsenfrucht als KH-Träger), gekochtes Blattgemüse mit
+   Zitrone und Öl, Feta (pasteurisiert). Setzt die Oktopus-/Kleftiko-Linie
+   ohne Wein und Kartoffel fort; Kind kennt Oliven und Feta.
+
+8. **Poulet au vinaigre (Lyon)** — Hähnchenschenkel mit Schalotten,
+   Knoblauch, Tomate und viel Weißweinessig geschmort, Crème fraîche zum
+   Finish. Klassisch mit Weißwein, aber der Essig trägt die Säure allein →
+   alkoholfrei ohne Verlust. Dazu grüne Bohnen. Reichhaltig, mild,
+   Standard-REWE-Einkauf, unter 1 Std.
+
+9. **Shakshuka / Menemen mit festen Eiern** — Paprika-Tomaten-Basis, Eier
+   darin **komplett** stocken lassen (Deckel; Eigelb fest, kein Runny-Yolk),
+   Labneh oder Feta obenauf, 1 Scheibe Vollkornbrot statt Fladen. Das
+   GDM-Frühstücksproblem (empfindlichste Mahlzeit) als Wochenend-Gericht;
+   Menemen-Variante ohne Knoblauch als mildere Kinder-Pfanne.
+
+10. **Frühstücks- und Snack-Baukasten (technik/)** — kein Gericht, sondern
+    ein Spickzettel: Skyr/griechischer Joghurt + Nüsse + Beeren,
+    Haferkleie-Porridge mit Protein (Hafer bei GDM gut belegt — messen!),
+    Eier-Varianten, hartgekochte Eier, Käsewürfel (pasteurisiert), Edamame,
+    Rohkost mit Mezze-Dips als Spätmahlzeit. Zwei bis drei Zwischenmahlzeiten
+    pro Tag sind laut Leitlinie Teil der Therapie — ohne Vorrat läuft das
+    auf Kekse hinaus.
+
+11. **Dessert ohne Zuckerlast** — Panna cotta mit griechischem Joghurt und
+    Beeren, Mascarpone-Beeren-Gratin, dunkle Schokoladen-Ganache-Mousse
+    (Sahne-basiert, ohne rohes Ei), gebackener Ricotta mit Zitrone. Süße über
+    Beeren/wenig Honig oder Erythrit; Portionsgröße klein, immer nach einer
+    proteinreichen Mahlzeit. Gegenentwurf zum Cheesecake-Zuckerbomben-Learning.
