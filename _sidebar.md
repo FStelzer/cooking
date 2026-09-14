@@ -1,9 +1,12 @@
 - [Ideen-Backlog](/ideen.md)
 - **🚧 in arbeit**
   - [Menü November — Tomatenwasser / Jakobsmuschel / Lamm / Espresso-Martini-Parfait](/menues/menue-november.md)
+- **backen**
+  - [✅ Vollkornbrötchen auf Vorrat — Weizen als Leitrezept, Dinkel und Weizen-Roggen als Varianten (12 Stück)](/backen/vollkornbroetchen.md)
 - **desserts**
   - [✅ Pistazien-Himbeer-Cheesecake (no-bake, Ø 22 cm, ~12 Stücke)](/desserts/pistazien-himbeer-cheesecake.md)
 - **gerichte**
+  - [✅ Bò lúc lắc — vietnamesisches „Shaking Beef" mit Brunnenkresse-Salat (4 Portionen)](/gerichte/bo-luc-lac.md)
   - [Bouillabaisse mit Fenchel-Orange-Salat (2 Erwachsene + Kind)](/gerichte/bouillabaisse.md)
   - [✅ Bulgogi — koreanisches „Feuerfleisch" mit Salat-Wraps (4 Portionen)](/gerichte/bulgogi.md)
   - [✅ Bún chả (Hanoi-Style) — gegrilltes Schweinefleisch in warmem Nước chấm (4 Portionen)](/gerichte/bun-cha.md)

@@ -27,6 +27,8 @@ und fliegt hier raus.
 
 ## Gekocht
 
+- ✅ [Bò lúc lắc — vietnamesisches „Shaking Beef"](/gerichte/bo-luc-lac.md) — 2× gekocht vor 09/2026, Rezept 09/2026 ausgearbeitet (Einbrenn-Fix eingebaut, zu validieren)
+- ✅ [Vollkornbrötchen auf Vorrat](/backen/vollkornbroetchen.md) — Weizen 09/2026 gebacken, Rezept 09/2026 vereinheitlicht (Handkneten-Fix, zu validieren)
 - ✅ [Bulgogi — koreanisches „Feuerfleisch"](/gerichte/bulgogi.md) — 2× gekocht vor 08/2026, Rezept 08/2026 rekonstruiert
 - ✅ [Paneer-Projekt — Matar & Palak](/gerichte/paneer-projekt.md) — 07/2026
 - ✅ [Geschmorter Oktopus, griechische Art](/gerichte/oktopus-geschmort.md) — 07/2026

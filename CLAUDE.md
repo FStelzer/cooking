@@ -45,10 +45,16 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
   von Fonds/Reduktionen; Muldenvolumen noch ausmessen und hier nachtragen)
 - Kleiner Bunsenbrenner (Küchenbrenner — Aburi-Effekte, Bananenblätter erweichen etc.)
 - Gasgrill mit Haube (Zwei-Zonen-Führung möglich)
-- Standard Pfannen, Kleinkram
+- Standard Pfannen (Edelstahl, beschichtet — keine Gusseisenpfanne), Kleinkram
 
 ### Fehlt / Wäre gut zu haben
-- (aktuell nichts Konkretes)
+- **Küchenmaschine mit Knethaken** — Brötchen-Rezept (`backen/`) ist auf Handarbeit
+  gebaut (weniger Wasser, Dehnen & Falten); eine Maschine macht die höhere
+  Hydration der Original-Führung erst praktikabel. Kein Vakuumierer vorhanden,
+  Gefrierfach ohne Platz für ein ganzes Blech (→ Anfrieren in Schüben).
+- **Schwere Gusseisenpfanne** — Plan B gegen das Einbrenn-Thema bei Maximalhitze
+  (Bulgogi, Bò lúc lắc); mehrfach nützlich (Steaks, Smashburger). Erst die
+  Chargen-/Deglaze-Fixes in Edelstahl validieren.
 
 ## Einkaufsquellen
 
@@ -171,7 +177,8 @@ schreiben (rendert als normales `~`). Tabellenzellen sind unkritisch
 
 - **Ordner:** Alle Einzelrezepte liegen in `gerichte/` (keine Unterteilung nach
   Küche/Region). Speziell bleiben: `menues/` (Mehrgänger), `desserts/`
-  (Einzeldesserts/Kuchen — Unterteilung nach Gangart, nicht nach Region) und
+  (Einzeldesserts/Kuchen — Unterteilung nach Gangart, nicht nach Region),
+  `backen/` (Brot und Brötchen — wie `desserts/` nach Gangart) und
   `technik/` (kurze Nachschlage-Spickzettel und Grundlagen-Bausteine fürs Kochen
   selbst — Technik-Drills, Grundsaucen, einfache Basis-/Komponentenrezepte wie
   Pfannkuchen —, keine eigenständigen Gerichte-Projekte; z. B.
@@ -269,6 +276,12 @@ Hand editieren, Learnings gehören in die Rezeptdatei.
 
 - ✅ **Pistazien-Himbeer-Cheesecake (no-bake, Ø 22 cm, ~12 Stücke)** (siehe `desserts/pistazien-himbeer-cheesecake.md`)
   **Gebacken 08/2026.** Konsistenz insgesamt ziemlich traumhaft, beim Publikum extrem gut angekommen — Technik (no-bake, Schichtaufbau, Ganache-Ratio) sitzt. Mit einer 40 %-Pistaziencreme brauchte es die **vollen 500 g**, damit der Pistaziengeschmack im Fil deutlich genug war; dadurch relativ süß, aber noch okay, nicht überladen — der Kuchen ist konzeptionell ohnehin sehr süß. Säuerliches Himbeerkompott plus reichhaltige Garnitur (Johannis-/Him-/Blaubeeren, gehackte gesalzene Pistazien) funktionierten als Gegenpol, dürften aber noch stärker sein. Fürs nächste Mal: reines Pistazienmus statt Fertigcreme (mehr Pistazie ohne mehr Zucker), dunkle Bitterschokoladen-Ganache statt weißer und ggf. selbst geröstete Salzkaramell-Pistazien obendrauf — alle drei als Varianten im Rezept angelegt, ungetestet.
+
+- ✅ **Bò lúc lắc — vietnamesisches „Shaking Beef" mit Brunnenkresse-Salat (4 Portionen)** (siehe `gerichte/bo-luc-lac.md`)
+  **Gekocht 2× (vor 09/2026, mit dem Import-Rezept).** Super lecker — einmal mit Sauce, einmal ohne, beides funktioniert und wandert in die Rotation. Schwachpunkt beide Male: eine fiese schwarze, eingebrannte Kruste in der Edelstahlpfanne. Ursache analysiert: gehackter Knoblauch plus Austernsauce/Zucker in der Marinade auf Maximalhitze, dazu zu volle Chargen (300 g). Fix in dieses Rezept eingebaut (Phan-Struktur: trockene Marinade, Knoblauch und Sauce erst nach dem Anbraten; 3–4 kleine Chargen; Wasser-Deglaze zwischendurch) — beim nächsten Mal zu validieren.
+
+- ✅ **Vollkornbrötchen auf Vorrat — Weizen als Leitrezept, Dinkel und Weizen-Roggen als Varianten (12 Stück)** (siehe `backen/vollkornbroetchen.md`)
+  **Gebacken 09/2026 (Weizen rein, von Hand).** Fluffig und geschmacklich gut, vor allem mit Sonnenblumenkernen — die Rezeptbasis (Poolish + Kochstück + Quellstück) stimmt. Schwächen: von Hand zu kurz geknetet, Teig sehr klebrig, Rundschleifen hat nicht funktioniert → etwas flache, verlaufene Brötchen. Fix in diese Fassung eingebaut: Hauptteig-Wasser für Handarbeit von 120 g auf 80 g gesenkt, Kneten durch Slap & Fold plus 3× Dehnen & Falten ersetzt, 10 Min. Zwischengare vor dem Schleifen, Teigkarten-Technik für weichen Teig — beim nächsten Mal zu validieren.
 
 <!-- learnings:end -->
 
