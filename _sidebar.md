@@ -5,6 +5,8 @@
   - [✅ Vollkornbrötchen auf Vorrat — Weizen als Leitrezept, Dinkel und Weizen-Roggen als Varianten (12 Stück)](/backen/vollkornbroetchen.md)
 - **desserts**
   - [✅ Pistazien-Himbeer-Cheesecake (no-bake, Ø 22 cm, ~12 Stücke)](/desserts/pistazien-himbeer-cheesecake.md)
+- **eis**
+  - [✅ Dunkles Schokoladeneis — Crème-anglaise-Basis (ca. 1 l, 8–10 Kugeln)](/eis/schokoladeneis-dunkel.md)
 - **gerichte**
   - [✅ Bò lúc lắc — vietnamesisches „Shaking Beef" mit Brunnenkresse-Salat (4 Portionen)](/gerichte/bo-luc-lac.md)
   - [Bouillabaisse mit Fenchel-Orange-Salat (2 Erwachsene + Kind)](/gerichte/bouillabaisse.md)

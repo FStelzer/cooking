@@ -86,7 +86,7 @@ lohnt · ❌ nicht sinnvoll anpassbar (Problem *ist* das Gericht).
 | [Thịt kho](/gerichte/thit-kho-trung.md), [Cá kho tộ](/gerichte/ca-kho-to.md) | Karamell ist die Basis, Reis das Fundament | Sonst unkritisch (Lachs okay) | ❌ Zucker + Reis *sind* das Gericht |
 | [Bún chả](/gerichte/bun-cha.md) | Nudeln + gezuckerte Sauce | Fleisch durch | ❌ (Fleisch + Kräuter + Salat als Teller wäre ein anderes Gericht) |
 | [Shoyu-Ramen](/gerichte/ramen-shoyu-chintan.md), [Miso-Tonkotsu](/gerichte/ramen-miso-tonkotsu.md) | Nudeln | Kombu-Dashi (Jod), Sake/Mirin im Tare, wachsweiches Ajitama | ❌ in der Schwangerschaft aussetzen |
-| [Teriyaki-Glasur](/technik/teriyaki-glasur.md), [Pfannkuchen](/technik/pfannkuchen-fluffig.md), [Cheesecake](/desserts/pistazien-himbeer-cheesecake.md) | Zucker/Weißmehl | Mirin (Teriyaki) | ❌ |
+| [Teriyaki-Glasur](/technik/teriyaki-glasur.md), [Pfannkuchen](/technik/pfannkuchen-fluffig.md), [Cheesecake](/desserts/pistazien-himbeer-cheesecake.md), [Schokoladeneis](/eis/schokoladeneis-dunkel.md) | Zucker/Weißmehl | Mirin (Teriyaki); Eigelb im Eis ist durchgegart (82–84 °C) | ❌ |
 | [Menü Hochzeitstag](/menues/menue-hochzeitstag.md), [Menü November](/menues/menue-november.md) | Parfaits, Kartoffelbaumkuchen | Wein/Rotwein, Espresso-Martini-Parfait (Alkohol + Koffein + rohes Ei) | ❌ als Ganzes; einzelne Gänge (Jakobsmuscheln durchgegart, Karotten) sind übernehmbar |
 
 ## Eigene Rezepte in diesem Ordner

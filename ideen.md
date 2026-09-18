@@ -27,6 +27,7 @@ und fliegt hier raus.
 
 ## Gekocht
 
+- ✅ [Dunkles Schokoladeneis (Crème-anglaise-Basis)](/eis/schokoladeneis-dunkel.md) — 09/2026, Leitrezept für den neuen Ordner `eis/`
 - ✅ [Bò lúc lắc — vietnamesisches „Shaking Beef"](/gerichte/bo-luc-lac.md) — 2× gekocht vor 09/2026, Rezept 09/2026 ausgearbeitet (Einbrenn-Fix eingebaut, zu validieren)
 - ✅ [Vollkornbrötchen auf Vorrat](/backen/vollkornbroetchen.md) — Weizen 09/2026 gebacken, Rezept 09/2026 vereinheitlicht (Handkneten-Fix, zu validieren)
 - ✅ [Bulgogi — koreanisches „Feuerfleisch"](/gerichte/bulgogi.md) — 2× gekocht vor 08/2026, Rezept 08/2026 rekonstruiert
@@ -117,6 +118,28 @@ und fliegt hier raus.
     anfragen, Fallback Dosenmuscheln + Clam Juice). Reichhaltig, null Schärfe —
     Kind kann direkt mitessen. Optional dazu: Sauerteig-/Weißbrot statt
     Bread Bowl.
+
+## Backlog — Eis
+
+Alle auf der Custard-Basis aus dem [Schokoladeneis](/eis/schokoladeneis-dunkel.md),
+sofern nicht anders vermerkt. Wird eine Sorte konkret → 🚧-Stub in `eis/`.
+
+1. **Vanille** — die Basis pur (Schokolade + Kakao raus, 1 Vanilleschote, Zucker
+   \~130 g). Referenzsorte, um Härte und Süße der Basis ohne Kakaobutter zu
+   beurteilen; zugleich die Kinder-Alternative zum 70 %-Schokoeis.
+2. **Cantaloupe-Sorbet** — 07/2026 zum Oktopus bereits gemacht und als „sehr
+   stimmig" notiert, aber ohne Rezept im Repo → rekonstruieren (Zucker-/
+   Dextrose-Anteil und Zitronensaft nachhalten). Erstes Sorbet des Ordners.
+3. **Salzkaramell** — trockenes Karamell dunkel ziehen, mit der Milch ablöschen,
+   dann normale Custard-Führung; Salz deutlich. Bekannt harter Test fürs
+   Karamell-Timing.
+4. **Pistazie** — Pistazienmus 100 % statt Schokolade in die Basis emulgieren
+   (Learning aus dem Cheesecake: Fertigcreme bringt Zucker statt Nuss).
+5. **Kaffee** — ganze Bohnen 1 Std. in der warmen Milch ziehen lassen, absieben
+   (klarer als Espresso-Zugabe). Koffein → nicht in der Schwangerschaft.
+6. **Frozen Yogurt mit Beeren** — griechischer Joghurt + Beerenpüree, Süße über
+   wenig Zucker/Erythrit; einzige Sorte, die als GDM-taugliches Dessert
+   (Backlog Schwangerschaft Nr. 8) durchgehen könnte.
 
 ## Backlog — Schwangerschaft & Gestationsdiabetes
 

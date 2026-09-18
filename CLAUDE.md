@@ -38,6 +38,7 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 - Bräter/Schmortopf (für Osso Buco-Style Gerichte)
 - Stabmixer
 - Fleischthermometer
+- Zucker-/Fett-Topfthermometer (Clip-Thermometer für Karamell, Frittieröl, Crème anglaise)
 - Mandoline / Gemüsehobel
 - Kastenformen (ca. 20cm, 2 Stück)
 - Feines Sieb + Passiertuch
@@ -45,6 +46,9 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
   von Fonds/Reduktionen; Muldenvolumen noch ausmessen und hier nachtragen)
 - Kleiner Bunsenbrenner (Küchenbrenner — Aburi-Effekte, Bananenblätter erweichen etc.)
 - Gasgrill mit Haube (Zwei-Zonen-Führung möglich)
+- Eismaschine Medion, Kompressor, 1,5 l Behälter, 150 W — kein Vorfrieren nötig,
+  \~1,1 kg Custard-Masse in einem Durchgang bewährt (Eis-Rezepte auf \~1 l
+  Ausbeute auslegen; mehr braucht zwei Chargen)
 - Standard Pfannen (Edelstahl, beschichtet — keine Gusseisenpfanne), Kleinkram
 
 ### Fehlt / Wäre gut zu haben
@@ -178,7 +182,9 @@ schreiben (rendert als normales `~`). Tabellenzellen sind unkritisch
 - **Ordner:** Alle Einzelrezepte liegen in `gerichte/` (keine Unterteilung nach
   Küche/Region). Speziell bleiben: `menues/` (Mehrgänger), `desserts/`
   (Einzeldesserts/Kuchen — Unterteilung nach Gangart, nicht nach Region),
-  `backen/` (Brot und Brötchen — wie `desserts/` nach Gangart) und
+  `backen/` (Brot und Brötchen — wie `desserts/` nach Gangart), `eis/`
+  (Eiscreme und Sorbets — eigener Ordner, weil die Sammlung wachsen soll;
+  `schokoladeneis-dunkel.md` ist das Leitrezept für die Custard-Basis) und
   `technik/` (kurze Nachschlage-Spickzettel und Grundlagen-Bausteine fürs Kochen
   selbst — Technik-Drills, Grundsaucen, einfache Basis-/Komponentenrezepte wie
   Pfannkuchen —, keine eigenständigen Gerichte-Projekte; z. B.
@@ -279,6 +285,9 @@ Hand editieren, Learnings gehören in die Rezeptdatei.
 
 - ✅ **Bò lúc lắc — vietnamesisches „Shaking Beef" mit Brunnenkresse-Salat (4 Portionen)** (siehe `gerichte/bo-luc-lac.md`)
   **Gekocht 2× (vor 09/2026, mit dem Import-Rezept).** Super lecker — einmal mit Sauce, einmal ohne, beides funktioniert und wandert in die Rotation. Schwachpunkt beide Male: eine fiese schwarze, eingebrannte Kruste in der Edelstahlpfanne. Ursache analysiert: gehackter Knoblauch plus Austernsauce/Zucker in der Marinade auf Maximalhitze, dazu zu volle Chargen (300 g). Fix in dieses Rezept eingebaut (Phan-Struktur: trockene Marinade, Knoblauch und Sauce erst nach dem Anbraten; 3–4 kleine Chargen; Wasser-Deglaze zwischendurch) — beim nächsten Mal zu validieren.
+
+- ✅ **Dunkles Schokoladeneis — Crème-anglaise-Basis (ca. 1 l, 8–10 Kugeln)** (siehe `eis/schokoladeneis-dunkel.md`)
+  **Gemacht 09/2026.** Fantastisch — intensiv, cremig, nicht zu süß, schmeckt fast wie gefrorenes Mousse au chocolat. Rezept hat auf Anhieb funktioniert, Technik (Crème anglaise auf 82–84 °C, Stabmixer-Emulsion, 24 Std. Reifen) ist gesetzt und wird die Basis für weitere Custard-Eissorten. Einziger Punkt: **recht hart gefroren** — bei Schokoeis erwartbar (Kakaobutter setzt im Gefrierfach steinhart aus, Kakaofeststoffe binden Wasser, und dieses Rezept ist bewusst zuckerarm), aber verbesserbar. Fürs nächste Mal eine Stellschraube testen (Dextrose 40 → 60 g als erster Versuch; Details im Rezept), nicht mehrere gleichzeitig.
 
 - ✅ **Vollkornbrötchen auf Vorrat — Weizen als Leitrezept, Dinkel und Weizen-Roggen als Varianten (12 Stück)** (siehe `backen/vollkornbroetchen.md`)
   **Gebacken 09/2026 (Weizen rein, von Hand).** Fluffig und geschmacklich gut, vor allem mit Sonnenblumenkernen — die Rezeptbasis (Poolish + Kochstück + Quellstück) stimmt. Schwächen: von Hand zu kurz geknetet, Teig sehr klebrig, Rundschleifen hat nicht funktioniert → etwas flache, verlaufene Brötchen. Fix in diese Fassung eingebaut: Hauptteig-Wasser für Handarbeit von 120 g auf 80 g gesenkt, Kneten durch Slap & Fold plus 3× Dehnen & Falten ersetzt, 10 Min. Zwischengare vor dem Schleifen, Teigkarten-Technik für weichen Teig — beim nächsten Mal zu validieren.
