@@ -85,7 +85,8 @@ lohnt · ❌ nicht sinnvoll anpassbar (Problem *ist* das Gericht).
 | [Hummerbisque](/gerichte/hummerbisque.md) | Reis nur als Bindung (25 g) unkritisch | Cognac + 200 ml Weißwein → weglassen, Säure über Tomate/Essig | ✅ mit Anpassung |
 | [Thịt kho](/gerichte/thit-kho-trung.md), [Cá kho tộ](/gerichte/ca-kho-to.md) | Karamell ist die Basis, Reis das Fundament | Sonst unkritisch (Lachs okay) | ❌ Zucker + Reis *sind* das Gericht |
 | [Bún chả](/gerichte/bun-cha.md) | Nudeln + gezuckerte Sauce | Fleisch durch | ❌ (Fleisch + Kräuter + Salat als Teller wäre ein anderes Gericht) |
-| [Shoyu-Ramen](/gerichte/ramen-shoyu-chintan.md), [Miso-Tonkotsu](/gerichte/ramen-miso-tonkotsu.md) | Nudeln | Kombu-Dashi (Jod), Sake/Mirin im Tare, wachsweiches Ajitama | ❌ in der Schwangerschaft aussetzen |
+| [Shoyu-Ramen](/gerichte/ramen-shoyu-chintan.md) | Nudeln | Kombu-Dashi (Jod), Sake/Mirin im Tare, wachsweiches Ajitama | ❌ in der Schwangerschaft aussetzen |
+| [Miso-Tonkotsu](/gerichte/ramen-miso-tonkotsu.md) | Nudeln → GDM-Schüssel mit halber Nudelmenge (75 g frisch), dafür mehr Niku-Miso, Sprossen, ganzes Ei; Mais klein | Kein Kombu/Dashi (reine Schweinebrühe, 8 Std. gekocht); Sake aus Tare + Glasur ersetzt (Reisessig/Wasser), Mirin-Würzsauce 0,9 % bleibt; Ajitama fest; Sprossen blanchiert; Hack durch; Yuzu pasteurisiert | ✅ mit Anpassung — direkt im Rezept eingebaut, keine Kopie |
 | [Teriyaki-Glasur](/technik/teriyaki-glasur.md), [Pfannkuchen](/technik/pfannkuchen-fluffig.md), [Cheesecake](/desserts/pistazien-himbeer-cheesecake.md), [Schokoladeneis](/eis/schokoladeneis-dunkel.md) | Zucker/Weißmehl | Mirin (Teriyaki); Eigelb im Eis ist durchgegart (82–84 °C) | ❌ |
 | [Menü Hochzeitstag](/menues/menue-hochzeitstag.md), [Menü November](/menues/menue-november.md) | Parfaits, Kartoffelbaumkuchen | Wein/Rotwein, Espresso-Martini-Parfait (Alkohol + Koffein + rohes Ei) | ❌ als Ganzes; einzelne Gänge (Jakobsmuscheln durchgegart, Karotten) sind übernehmbar |
 

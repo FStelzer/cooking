@@ -11,37 +11,49 @@ Die Smashed Cucumber und die Yuzu Panna Cotta passen hier ideal rein, da sie sic
 **Hauptgang:** Miso-Tonkotsu-Ramen mit Niku-Miso
 **Dessert:** Yuzu Panna Cotta mit Agar-Agar Frucht-Kanten
 
-**Portionen:** 4 Erwachsene, 2 Kinder (~5-6 volle Portionen)
+**Portionen:** 4 Erwachsene, 2 Kinder (\~5-6 volle Portionen)
 **Benötigtes Brühen-Volumen am Ende:** ca. 2,5 - 3 Liter
-**Aktive Zeit:** ~3h
-**Gesamtzeit:** ~8-9h (Tonkotsu braucht Zeit zum Emulgieren!)
-**Topf:** Der 14L-Topf. Mit 5-6L Wasser plus ~2,5-3kg Knochen und aggressivem Sprudeln wäre ein 8-10L-Topf gefährlich voll — im 14er ist genug Reserve gegen Überkochen.
+**Aktive Zeit:** \~3h
+**Gesamtzeit:** \~8-9h (Tonkotsu braucht Zeit zum Emulgieren!)
+**Topf:** Der 14L-Topf. Mit 5-6L Wasser plus \~2,5-3kg Knochen und aggressivem Sprudeln wäre ein 8-10L-Topf gefährlich voll — im 14er ist genug Reserve gegen Überkochen.
+
+> [!NOTE]
+> **Schwangerschaft + Gestationsdiabetes (Stand 09/2026):** Dieses Rezept ist
+> direkt angepasst, keine Kopie in `schwangerschaft/` nötig — die Brühe ist
+> reines Schwein ohne Kombu/Dashi (kein Jod-Thema), die Änderungen sind klein
+> und sind hier eingebaut: Ajitama mit festem Eigelb, Sprossen blanchiert statt
+> nur kurz gebraten, Sake raus (Reisessig + Wasser statt dessen), Mirin bleibt
+> (0,9 %-Würzsauce, \~0,3 ml Alkohol auf 6 Schüsseln), Hack komplett durch,
+> Niku-Miso und Eier in den Kühlschrank statt auf die Arbeitsplatte,
+> Yuzu-Saft pasteurisiert. Für die GDM-Portion: halbe Nudelmenge, dafür mehr
+> Toppings — Details im Anrichten-Teil. Prüfgrundlage:
+> [Leitfaden](/schwangerschaft/leitfaden.md).
 
 ---
 
 ## Einkaufsliste
 
 ### 1. Selgros (Fleischtheke & Gastro-Bedarf)
-- [ ] **1,5 - 2 kg Schweinehalsknochen** (Neck bones / Nackenknochen). *Lass sie dir vom Metzger ggf. einmal durchsägen.* — *Preis: ca. 2-3 €/kg an der Metzgertheke, also ~4-6 € gesamt. Knochen sind Schlacht-"Abfall", das kostet fast nichts.*
-- [ ] **2-3 Schweinefüße (Spitzbeine, gesägt)**. *Extrem wichtig: Vom Metzger der Länge nach halbieren lassen! Die Knochen sind steinhart, du brauchst aber das Innere (Kollagen).* — *Preis: ca. 2-3 €/kg (Supermarkt-Abpackungen ~2,80 €/kg; Online-Edelmetzger verlangen 5,50-8,90 €/kg, das ist NICHT der Maßstab). Ein Fuß wiegt ~700-900g → 3 Stück ca. 4-7 €. Bei dem Preis lieber 3 statt 2 nehmen — mehr Kollagen = cremigere Brühe.*
+- [ ] **1,5 - 2 kg Schweinehalsknochen** (Neck bones / Nackenknochen). *Lass sie dir vom Metzger ggf. einmal durchsägen.* — *Preis: ca. 2-3 €/kg an der Metzgertheke, also \~4-6 € gesamt. Knochen sind Schlacht-"Abfall", das kostet fast nichts.*
+- [ ] **2-3 Schweinefüße (Spitzbeine, gesägt)**. *Extrem wichtig: Vom Metzger der Länge nach halbieren lassen! Die Knochen sind steinhart, du brauchst aber das Innere (Kollagen).* — *Preis: ca. 2-3 €/kg (Supermarkt-Abpackungen \~2,80 €/kg; Online-Edelmetzger verlangen 5,50-8,90 €/kg, das ist NICHT der Maßstab). Ein Fuß wiegt \~700-900g → 3 Stück ca. 4-7 €. Bei dem Preis lieber 3 statt 2 nehmen — mehr Kollagen = cremigere Brühe.*
 - [ ] **600g Schweinehackfleisch** (gern etwas fetter, z.B. gemischt aus Bauch und Schulter).
 
 ### 2. Asialaden
 - [ ] **Helle Miso-Paste (Shiro Miso)**, mind. 200g
 - [ ] **Dunkle Miso-Paste (Aka Miso)**, mind. 100g
-- [ ] **Ramen-Nudeln:** frisch ~900g (150g/Portion) ODER trocken ~550-600g (90-100g/Portion — z.B. Hakubaku, die haben zuverlässig Trocken-Ramen; frische vorher anrufen!). *Pro-Tipp für Miso: Nimm dicke, gewellte Nudeln (Temomi-Style), sie fangen die dicke Brühe und das Hackfleisch besser ein als die ganz dünnen Hakata-Nudeln.*
+- [ ] **Ramen-Nudeln:** frisch \~825g (150g/Portion, GDM-Portion nur 75g) ODER trocken \~500-550g (90-100g/Portion, GDM-Portion 50g — z.B. Hakubaku, die haben zuverlässig Trocken-Ramen; frische vorher anrufen!). *Pro-Tipp für Miso: Nimm dicke, gewellte Nudeln (Temomi-Style), sie fangen die dicke Brühe und das Hackfleisch besser ein als die ganz dünnen Hakata-Nudeln.*
 - [ ] **Geröstetes Sesamöl**
 - [ ] **Weiße Sesamsamen** (ungeschält)
 - [ ] *(Optional)* **Rayu (japanisches Chili-Öl)** für die Erwachsenen am Tisch.
 - [ ] *(Optional)* **Panko** (falls du doch noch was Knuspriges willst, aber hier nicht zwingend).
 - [ ] **Reisessig** (für die Gurken)
-- [ ] **Yuzu-Saft** in der Flasche (für das Dessert)
+- [ ] **Yuzu-Saft** in der Flasche (für das Dessert). *Etikett prüfen: pasteurisiert — kommt erst in die abgekühlte Masse und wird nicht mehr erhitzt.*
 - [ ] **Agar-Agar Pulver** (für die Frucht-Kanten)
 
 ### 3. REWE Center / Supermarkt
-- [ ] **Sojasauce, Sake, Mirin** (falls leer vom letzten Mal. Achtung: Durch Gurken-Marinade etwas mehr Sojasauce nötig!)
+- [ ] **Sojasauce, Mirin** (falls leer vom letzten Mal. Achtung: Durch Gurken-Marinade etwas mehr Sojasauce nötig! Kein Sake — in Tare und Glasur durch Reisessig/Wasser ersetzt. Mirin-Würzsauce mit \~0,9 % Alkohol ist okay.)
 - [ ] **1 Dose Zuckermais** (Kinder-Favorit!)
-- [ ] **250g Sojasprossen (Moyashi)**
+- [ ] **300g Sojasprossen (Moyashi)** *(werden blanchiert; die GDM-Schüssel bekommt eine Extraportion)*
 - [ ] **Gute Butter** (z.B. Süßrahm)
 - [ ] **6-8 Eier (M)**
 - [ ] **Gemüse für Brühe & Topping:** 1 dicke Lauchstange, 1 Bund Lauchzwiebeln (Frühlingszwiebeln), 2 große Gemüsezwiebeln, 2 Knollen Knoblauch, 1 großes Stück Ingwer (ca. 10cm).
@@ -67,23 +79,23 @@ Die Smashed Cucumber und die Yuzu Panna Cotta passen hier ideal rein, da sie sic
 ### 2. Schnelle Ajitsuke Tamago (Marinierte Eier)
 
 *   Da du kein Chashu machst, brauchst du eine **Blitz-Marinade**: 100ml Sojasauce, 100ml Wasser, 30ml Mirin, 1 EL Zucker leicht erwärmen, bis der Zucker sich löst. Abkühlen lassen!
-*   6-8 Eier kochen (Erwachsene 6:30 Min, Kinder 9-10 Min). Sofort ins Eiswasser. Pellen und mind. 4 Stunden in die Marinade.
+*   6-8 Eier kochen: **9-10 Min (Eigelb fest)** für Kinder und die Schwangere; die übrigen Erwachsenen-Eier nach Wunsch 6:30 Min wachsweich (getrennt kochen oder nach 6:30 Min die ersten herausfischen). Sofort ins Eiswasser. Pellen und mind. 4 Stunden **im Kühlschrank** in der Marinade ziehen lassen. Die festen Eier markieren (z.B. mit Filzstift aufs Ei), damit beim Anrichten nichts vertauscht wird.
 
 ### 3. Die Miso-Tare (Die Würzbasis)
 
-*   **Zutaten (für 6 Schüsseln):** 5 EL Shiro Miso (hell), 3 EL Aka Miso (dunkel), 3 EL Sojasauce, 2 EL Sake, 2 EL Mirin, 1 EL geröstetes Sesamöl, 2 geriebene Knoblauchzehen, 2cm geriebener Ingwer.
+*   **Zutaten (für 6 Schüsseln):** 5 EL Shiro Miso (hell), 3 EL Aka Miso (dunkel), 3 EL Sojasauce, 1 EL Reisessig, 1 EL Wasser, 2 EL Mirin, 1 EL geröstetes Sesamöl, 2 geriebene Knoblauchzehen, 2cm geriebener Ingwer. *(Reisessig + Wasser ersetzen die früheren 2 EL Sake — die Tare wird nicht erhitzt, also würde der Alkohol nicht verkochen. Miso, Sesam, Knoblauch und Ingwer liefern genug Tiefe, der Essig die Frische.)*
 *   **Profi-Tipp 3 (Sesam-Macht):** Röste 3 EL weiße Sesamsamen kurz in der Pfanne ohne Fett an. Zerstoße sie in einem Mörser zu einer groben Paste und rühre sie unter die Tare. Das gibt der Miso-Tare ein unfassbar nussiges, tiefes Aroma, das wie im Sternerestaurant schmeckt!
 *   **Mischen:** Alles in einer Schüssel zu einer homogenen Paste verrühren. *Nicht kochen! Miso verliert beim Kochen seine probiotische Komplexität.*
 
 ### 4. Niku-Miso / Soboro (Das Fleisch-Topping)
 
-*   **Zutaten:** 600g Schweinehack, 1 EL Sesamöl, 1 EL geriebener Knoblauch/Ingwer. **Für die Glasur:** 2 EL Miso (hell), 1 EL Sojasauce, 1 EL Sake, 1 EL Zucker (alles in einer Tasse vormischen).
-*   **Zubereitung:** 600g Schweinehack in 1 EL Sesamöl mit 1 EL geriebenem Knoblauch/Ingwer in einer Pfanne krümelig und scharf anbraten, bis das Wasser verdampft ist und es im eigenen Fett brät.
-*   **Profi-Tipp 4 (Karamellisierung):** Warte, bis das Hackfleisch anfängt, leicht knusprig zu werden. Erst dann die Glasur dazugeben. Die Hitze leicht reduzieren und unter Rühren einkochen lassen, bis das Fleisch klebrig glänzt. Beiseite stellen (kann vor dem Servieren einfach in der Mikrowelle oder Pfanne erwärmt werden).
+*   **Zutaten:** 600g Schweinehack, 1 EL Sesamöl, 1 EL geriebener Knoblauch/Ingwer. **Für die Glasur:** 2 EL Miso (hell), 1 EL Sojasauce, 1 EL Wasser, 1 EL Zucker (alles in einer Tasse vormischen).
+*   **Zubereitung:** 600g Schweinehack in 1 EL Sesamöl mit 1 EL geriebenem Knoblauch/Ingwer in einer Pfanne krümelig und scharf anbraten, bis das Wasser verdampft ist und es im eigenen Fett brät. **Komplett durchgaren** — nichts Rosa übrig lassen (Toxoplasmose); das passiert beim Knusprig-Braten ohnehin, nur große Klumpen zerteilen.
+*   **Profi-Tipp 4 (Karamellisierung):** Warte, bis das Hackfleisch anfängt, leicht knusprig zu werden. Erst dann die Glasur dazugeben. Die Hitze leicht reduzieren und unter Rühren einkochen lassen, bis das Fleisch klebrig glänzt. Abkühlen lassen und **abgedeckt in den Kühlschrank** (nicht stundenlang auf der Arbeitsplatte stehen lassen); vor dem Servieren in der Mikrowelle oder Pfanne wieder heiß machen.
 
 ### 5. Gemüse-Toppings vorbereiten
 
-*   **Sojasprossen:** *Pro-Tipp:* Nicht roh lassen! Die 250g in einer heißen Pfanne mit einem Tropfen Öl 30 Sekunden sehr scharf anbraten (Wok-Hei). Sie sollen knackig bleiben, aber ihr rohes Aroma verlieren.
+*   **Sojasprossen:** Nicht roh lassen! Die 300g **2 Min in kochendem Salzwasser blanchieren** (kleiner Topf, oder im Nudelwasser, bevor die ersten Nudeln reingehen), abgießen, gut abtropfen. Rohe oder nur 30 Sekunden angebratene Sprossen sind ein klassisches Listerien-/EHEC-Vehikel — der Leitfaden sagt „nur gegart". Kostet etwas Knackigkeit, ist aber die einzige Stelle, an der das Rezept wirklich etwas opfert. Optional danach mit einem Tropfen Sesamöl und einer Prise Salz mischen.
 *   **Mais:** 1 Dose abgießen, kurz in der Mikrowelle oder Pfanne erwärmen.
 *   **Frühlingszwiebeln:** 1 Bund in feine Ringe schneiden.
 
@@ -98,7 +110,7 @@ Die Smashed Cucumber und die Yuzu Panna Cotta passen hier ideal rein, da sie sic
 *   **Zutaten Panna Cotta:** 500ml Sahne, 200ml Milch, 60g Zucker, 3-4 EL Yuzu-Saft, 4 Blatt Gelatine.
 *   **Zutaten Frucht-Kanten:** 250ml Wasser, 1 TL Agar-Agar (ca. 2-3g), 2 EL Zucker, Spritzer Zitronensaft, ca. 150g Beeren oder Fruchtstücke.
 *   **Frucht-Kanten:** 150g Beeren in eine kleine eckige Tupperdose legen. 250ml Wasser, 1 TL Agar-Agar, 2 EL Zucker und einen Spritzer Zitronensaft in einem kleinen Topf aufkochen, 2 Min sprudeln lassen (Agar-Agar muss kochen, um zu binden!). Leicht abkühlen lassen, dann über die Beeren gießen. Im Kühlschrank fest werden lassen (geht bei Agar-Agar sehr schnell, ca. 30 Min). Später in kleine Würfel (Kanten) schneiden und als Topping für die Panna Cotta verwenden.
-*   **Panna Cotta:** 4 Blatt Gelatine in kaltem Wasser einweichen. 500ml Sahne, 200ml Milch und 60g Zucker in einem Topf sanft erwärmen (nicht kochen!), bis der Zucker gelöst ist. Gelatine ausdrücken und in der warmen Mischung auflösen. Vom Herd nehmen und abkühlen lassen. **Wichtig:** 3-4 EL Yuzu-Saft erst einrühren, wenn es nicht mehr heiß ist, damit die Säure die Milch nicht gerinnen lässt. In 6 Gläschen füllen und mind. 4 Stunden in den Kühlschrank.
+*   **Panna Cotta:** 4 Blatt Gelatine in kaltem Wasser einweichen. 500ml Sahne, 200ml Milch und 60g Zucker in einem Topf sanft erwärmen (nicht kochen!), bis der Zucker gelöst ist. Gelatine ausdrücken und in der warmen Mischung auflösen. Vom Herd nehmen und abkühlen lassen. **Wichtig:** 3-4 EL Yuzu-Saft erst einrühren, wenn es nicht mehr heiß ist, damit die Säure die Milch nicht gerinnen lässt. In 6 Gläschen füllen und mind. 4 Stunden in den Kühlschrank. *(GDM: 60g Zucker auf 6 Gläser sind \~10g pro Portion in einer fett- und proteinreichen Matrix — eher unproblematisch, aber nach dem Essen messen.)*
 
 ---
 
@@ -109,9 +121,10 @@ Hier unterscheidet sich Miso-Ramen von Shoyu!
 1.  **Vorbereitung (Mise en Place):** Schüsseln mit heißem Wasser vorwärmen. Wasser wegkippen.
 2.  **Tare dosieren:** In jede Erwachsenen-Schüssel ca. **2 bis 2,5 EL Miso-Tare** geben. Für die Kleinkinder nur ca. **1 EL**.
 3.  **Das Miso-Geheimnis:** Gib einen ganz kleinen Schuss heiße Tonkotsu-Brühe in die Schüsseln und verrühre die Tare mit einem Schneebesen, bis keine Klumpen mehr da sind.
-4.  **Brühe:** Fülle die Schüsseln mit der kochend heißen Tonkotsu-Brühe auf (~400ml pro Erwachsener).
-5.  **Nudeln:** Nudeln kochen. *Achtung: Koche niemals 6 Portionen auf einmal, sonst verkleben sie und das Wasser kühlt zu stark ab. Koche zuerst die Nudeln für die Kinder, fische sie heraus, und dann die Nudeln für die Erwachsenen.* Extrem gut ausschütteln, in die Schüsseln geben. Mit Stäbchen einmal falten.
-6.  **Toppings:** Jeweils 2-3 Esslöffel Niku-Miso (Hack) in die Mitte. Darum herum: Ein Häufchen Mais, ein Häufchen Sojasprossen, Frühlingszwiebeln und das halbierte Ei.
+4.  **Brühe:** Fülle die Schüsseln mit der kochend heißen Tonkotsu-Brühe auf (\~400ml pro Erwachsener).
+5.  **Nudeln:** Nudeln kochen (150g frisch bzw. 90-100g trocken pro Erwachsenen-Schüssel; **GDM-Schüssel: 75g frisch bzw. 50g trocken**). *Achtung: Koche niemals 6 Portionen auf einmal, sonst verkleben sie und das Wasser kühlt zu stark ab. Koche zuerst die Nudeln für die Kinder, fische sie heraus, und dann die Nudeln für die Erwachsenen.* Extrem gut ausschütteln, in die Schüsseln geben. Mit Stäbchen einmal falten.
+6.  **Toppings:** Jeweils 2-3 Esslöffel Niku-Miso (Hack) in die Mitte. Darum herum: Ein Häufchen Mais, ein Häufchen blanchierte Sojasprossen, Frühlingszwiebeln und das halbierte Ei.
+    **GDM-Schüssel:** Die halbe Nudelmenge mit Toppings auffüllen — 4-5 EL Niku-Miso, doppelte Portion Sprossen, ein **ganzes festes Ei** statt einer Hälfte; Mais weglassen oder auf 1 EL begrenzen. Der Fettgehalt der Tonkotsu-Brühe plus die Butter dämpfen die Blutzuckerspitze zusätzlich. Am Tisch: Toppings und Brühe zuerst, Nudeln zuletzt. Der Abstand bis zum Dessert (Spaziergang zwischen 18:30 und 19:30) passt genau in die Choreografie. Die konkrete Nudelmenge ist eine Schätzung — das Messgerät und die Ernährungsberatung entscheiden, nicht das Rezept.
 7.  **Der krönende Abschluss:** Ein **haselnussgroßes eiskaltes Stück Butter** direkt auf den Mais oder die Nudeln legen. Die Butter schmilzt in die heiße Brühe und macht sie unglaublich samtig.
 8.  **Für die Erwachsenen:** Ein paar Tropfen Rayu (Chiliöl) über die Suppe träufeln.
 
@@ -130,13 +143,13 @@ Da Tonkotsu länger kochen muss als Geflügel, fangen wir etwas früher an.
 | **10:30** | Knochen blanchieren (10 Min kochen). Wasser abgießen. |
 | **10:45** | Knochen intensiv schrubben & Topf reinigen. |
 | **11:00** | Saubere Knochen + frisches Wasser aufkochen. Hitze auf "Rolling Boil" (starkes Sprudeln). Timer auf 45 Min setzen (für Wasser-Check). |
-| **11:30** | Eier-Marinade aufkochen und abkühlen lassen. Eier kochen, pellen und in die abgekühlte Marinade legen. |
+| **11:30** | Eier-Marinade aufkochen und abkühlen lassen. Eier kochen (9-10 Min fest für Kinder + Schwangere, Rest nach Wunsch 6:30), pellen und in die abgekühlte Marinade legen. **Ab in den Kühlschrank.** |
 | **13:00** | Miso-Tare anrühren (inklusive Sesam rösten & mörsern). Abgedeckt beiseite stellen. |
-| **14:00** | Niku-Miso (Hackfleisch) braten und glasieren. Beiseite stellen. |
+| **14:00** | Niku-Miso (Hackfleisch) braten und glasieren, komplett durch. Abkühlen lassen, **abgedeckt in den Kühlschrank.** |
 | **14:30** | Gemüse putzen (Zwiebel, Lauch, Knoblauch, Ingwer für die Brühe hinlegen). Frühlingszwiebeln schneiden. |
 | **16:00** | Aromaten (Zwiebel, Lauch, Knoblauch, Ingwer) in die kochende Brühe geben. |
 | **16:30** | **Smashed Cucumber klopfen, Marinaden anrühren (Kinder/Erwachsene trennen). In den Kühlschrank stellen.** |
-| **17:45** | Topping-Station aufbauen: Sprossen kurz anbraten, Mais erwärmen, Eier halbieren. Hackfleisch leicht erwärmen. |
+| **17:45** | Topping-Station aufbauen: Sprossen 2 Min blanchieren und abtropfen, Mais erwärmen, Eier halbieren (festes Ei für die GDM-Schüssel ganz lassen). Hackfleisch aus dem Kühlschrank, heiß machen. |
 | **18:00** | Nudelwasser aufsetzen (großer Topf, stark kochend). |
 | **18:15** | Hitze unter der Brühe aus. Brühe durch feines Sieb in einen sauberen Topf abseihen. Brühe sanft warmhalten. **Smashed Cucumber servieren – perfekter Snack für die Gäste am Tisch, während du den Sprint vorbereitest.** |
 | **18:20** | Schüsseln vorwärmen. Tare in die Schüsseln geben und mit etwas Brühe glattrühren. |
