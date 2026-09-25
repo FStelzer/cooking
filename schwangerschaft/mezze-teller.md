@@ -87,20 +87,6 @@ des Proteins und steht als eigener Punkt im [Ideen-Backlog](/ideen.md).
 - [ ] Piment und Zimt, gemahlen (Vorrat prüfen — nur falls Baharat selbst gemischt wird)
 - [ ] Gutes Olivenöl (Gesamtverbrauch \~150 ml — Vorrat prüfen)
 
-## Mengen-Check: Zutaten in mehreren Komponenten
-
-| Zutat | Hummus | Moutabal | Muhammara | Kafta | Labneh/Sonstiges | **Gesamt** |
-|---|---|---|---|---|---|---|
-| **Tahina** | 140 g | 60 g | — | — | — | **\~200 g** → großes Glas (≥300 g) |
-| **Zitronensaft** | 2–3 EL | 2 EL | 1 TL | — | Spalten zum Servieren | **\~5 EL ≈ 2 Zitronen** → 4 kaufen (Spalten zur Kafta) |
-| **Knoblauch** | 1–2 Zehen | 1 Zehe | 1 Zehe | 1 Zehe | — | **4–5 Zehen** (bewusst wenig — Kind) |
-| **Olivenöl** | 2 EL obenauf | 1–2 EL obenauf | 3 EL | 1 EL (Pfanne) | 2 EL Labneh | **\~10 EL ≈ 120–150 ml** |
-| **Petersilie** | — | — | — | ½ Bund (fein) | Rest Deko | **1 großer Bund** |
-| **Natron** | ¾ TL (Einweichen) + ½ TL (Kochen) | — | — | — | — | **1¼ TL** |
-| **Aleppo-Pfeffer** | Prise obenauf | — | 1 TL | — | am Tisch | **\~2 TL** |
-
-**Labneh-Schwund:** 1 kg Joghurt → \~450–500 g Labneh. Die Hälfte geht als Molke verloren — nicht kleiner kaufen.
-
 ## Zeitplan (2 Tage)
 
 ### Tag 1 — Abend, \~15 Min. aktiv
@@ -221,3 +207,22 @@ Bleiben zwei getrennte Abende. Für ein großes libanesisches Menü: Dips halbie
 Shawarma-Teller (`schwangerschaft/shawarma-teller.md`) als Hauptgang, dann die Kafta weglassen
 (zweimal Fleisch ist zu viel). Komponenten sind disjunkt; nur die Einkäufe (Tahina, Baharat,
 Aleppo-Pfeffer, Zitronen) überschneiden sich — hält alles.
+
+## Mengen-Check: Zutaten in mehreren Komponenten
+
+<details>
+<summary>Gesamtverbrauch pro Zutat — aufklappen</summary>
+
+| Zutat | Hummus | Moutabal | Muhammara | Kafta | Labneh/Sonstiges | **Gesamt** |
+|---|---|---|---|---|---|---|
+| **Tahina** | 140 g | 60 g | — | — | — | **\~200 g** → großes Glas (≥300 g) |
+| **Zitronensaft** | 2–3 EL | 2 EL | 1 TL | — | Spalten zum Servieren | **\~5 EL ≈ 2 Zitronen** → 4 kaufen (Spalten zur Kafta) |
+| **Knoblauch** | 1–2 Zehen | 1 Zehe | 1 Zehe | 1 Zehe | — | **4–5 Zehen** (bewusst wenig — Kind) |
+| **Olivenöl** | 2 EL obenauf | 1–2 EL obenauf | 3 EL | 1 EL (Pfanne) | 2 EL Labneh | **\~10 EL ≈ 120–150 ml** |
+| **Petersilie** | — | — | — | ½ Bund (fein) | Rest Deko | **1 großer Bund** |
+| **Natron** | ¾ TL (Einweichen) + ½ TL (Kochen) | — | — | — | — | **1¼ TL** |
+| **Aleppo-Pfeffer** | Prise obenauf | — | 1 TL | — | am Tisch | **\~2 TL** |
+
+**Labneh-Schwund:** 1 kg Joghurt → \~450–500 g Labneh. Die Hälfte geht als Molke verloren — nicht kleiner kaufen.
+
+</details>

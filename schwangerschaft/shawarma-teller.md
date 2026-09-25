@@ -67,18 +67,6 @@ damit wird die letzte halbe Stunde deutlich entspannter als im Original.
 - [ ] Weißweinessig oder Apfelessig (Vorrat prüfen: 2–3 EL)
 - [ ] Edelsüßes Paprikapulver, Kumin, gem. Koriander, Koriandersaat, Kurkuma, Cayenne (Vorrat prüfen)
 
-## Mengen-Check
-
-Fünf Zutaten stecken in mehreren Komponenten — Gesamtverbrauch:
-
-| Zutat | Marinade | Toum | Tahinsauce | Tabbouleh | Blumenkohl harra | **Summe** |
-|---|---|---|---|---|---|---|
-| **Zitronensaft** | 3 EL | 3 EL | 3 EL | 4 EL | 1–2 EL | **\~14–15 EL ≈ 5–6 Zitronen** → 7 kaufen |
-| **Knoblauch** | 4 Zehen | 10–12 Zehen (1 Knolle) | 1 Zehe | — | 4 Zehen | **\~20 Zehen ≈ 2 Knollen** → 3 kaufen |
-| **Joghurt** | 150 g | — | — | — | — | **150 g** → 500-g-Becher reicht locker |
-| **Neutrales Öl** | 2 EL | 250 ml | — | — | — | **\~280 ml** + \~3 EL zum Braten ≈ **330 ml** → 750-ml-Flasche |
-| **Olivenöl** | — | — | — | 4 EL | 6 EL | **\~150 ml** (+1 EL falls Shatta selbst) |
-
 ## Zubereitung
 
 ### 1. Hähnchen entbeinen & marinieren (Vortag, \~30 Min.)
@@ -195,3 +183,20 @@ Dieselbe Idee wie Batata harra — geröstet, dann in Knoblauch-Koriander-Öl ge
 - **Blumenkohl harra** ist keine Erfindung: geröstete Blumenkohl-Vorspeisen mit Tahina oder Knoblauch-Koriander-Öl (*arnabeet mekle*, meist frittiert) sind libanesischer Mezze-Standard; hier als Ofenvariante mit dem Batata-harra-Dressing aus dem Original ([A Kitchen in Istanbul — Batata harra](https://vidarbergum.com/recipe/batata-harra-lebanese-spicy-potatoes-with-garlic-coriander/) für das Öl).
 - **Kerntemperatur 75 °C** entspricht der Empfehlung im Leitfaden (Geflügel ≥ 70 °C durchgehend, hier mit Puffer) und Swasthis Tandoori-Referenz (75 °C), die im Tandoori-Rezept dieses Ordners verwendet wird.
 - **Kastenform-Variante bewusst nicht kopiert:** Sie liefert die geschabte Textur, braucht aber einen Tag Vorlauf und die doppelte Fleischmenge; für die Schwangerschafts-Version zählt der einfachere Ablauf. Wer sie will: im Original, Kerntemperatur dort ohnehin > 75 °C.
+
+## Mengen-Check
+
+<details>
+<summary>Gesamtverbrauch pro Zutat — aufklappen</summary>
+
+Fünf Zutaten stecken in mehreren Komponenten — Gesamtverbrauch:
+
+| Zutat | Marinade | Toum | Tahinsauce | Tabbouleh | Blumenkohl harra | **Summe** |
+|---|---|---|---|---|---|---|
+| **Zitronensaft** | 3 EL | 3 EL | 3 EL | 4 EL | 1–2 EL | **\~14–15 EL ≈ 5–6 Zitronen** → 7 kaufen |
+| **Knoblauch** | 4 Zehen | 10–12 Zehen (1 Knolle) | 1 Zehe | — | 4 Zehen | **\~20 Zehen ≈ 2 Knollen** → 3 kaufen |
+| **Joghurt** | 150 g | — | — | — | — | **150 g** → 500-g-Becher reicht locker |
+| **Neutrales Öl** | 2 EL | 250 ml | — | — | — | **\~280 ml** + \~3 EL zum Braten ≈ **330 ml** → 750-ml-Flasche |
+| **Olivenöl** | — | — | — | 4 EL | 6 EL | **\~150 ml** (+1 EL falls Shatta selbst) |
+
+</details>

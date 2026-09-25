@@ -61,22 +61,6 @@ Der Fix hat drei Teile: trockene Marinade (nur Salz, Pfeffer, 1 TL Zucker, Öl),
 **Vorrat:**
 - [ ] Neutrales Öl (Verbrauch \~5 EL), Zucker (3 TL), Salz, schwarzer Pfeffer aus der Mühle (grob)
 
-## Mengen-Check (Zutaten in mehreren Komponenten)
-
-| Zutat | Marinade | Sauce | Zwiebel-Pickle | Dip | Pfanne | **Gesamt** |
-|---|---|---|---|---|---|---|
-| Sojasauce | — | 2 EL | — | — | — | **2 EL** |
-| Fischsauce | — | 1½ EL | — | — | — | **1½ EL** |
-| Austernsauce | — | 1 EL | — | — | — | **1 EL** |
-| Reisessig | — | 1 EL | 1½ EL | — | — | **2½ EL** |
-| Zucker | 1 TL | 1 TL | 1 TL | — | — | **3 TL (\~12 g)** |
-| Salz | ¾ TL | — | 1 Prise | 1 TL | — | **\~2 TL** |
-| Schwarzer Pfeffer, grob | 1 TL | — | 3 Umdrehungen | ½ TL | — | **\~1¾ TL** |
-| Neutrales Öl | 1 EL | — | — | — | 3–4 EL | **\~5 EL** |
-| Rote Zwiebel | — | — | ½ | — | ½ | **1 Stück** |
-| Limette | — | — | — | 1 (Saft) | — | **+1 in Spalten = 2** |
-| Wasser | — | 2 EL | 2 EL | — | ggf. 30 ml Deglaze | — |
-
 ## Zubereitung
 
 **1. Fleisch würfeln und trocken marinieren (10 Min. + 2 Std. passiv)**
@@ -159,3 +143,24 @@ Geprüft gegen den [Leitfaden](/schwangerschaft/leitfaden.md), Stand 09/2026:
 - **Cơm đỏ — Tomatenreis (klassische Beilage, nach der Schwangerschaft):** 600 g gekochten, erkalteten Jasminreis in 2 EL Öl mit 2 gehackten Knoblauchzehen anbraten, 2 EL Tomatenmark und 1 TL Fischsauce einrühren, 3–4 Min. rösten. Genau das rote Reis-Bett, auf dem das Gericht in Saigon serviert wird.
 - **Plan B gegen Einbrennen — Gusseisenpfanne:** Falls der Chargen-Fix in Edelstahl nicht reicht: eine schwere Gusseisenpfanne speichert die Hitze, die beim Einlegen der Charge nicht einbricht, und ein eingebrannter Rest lässt sich einfach ausbrennen. Mehrfach nützlich (Bulgogi, Steaks, Smashburger, Pfannenbrot) und günstig — Pattern 7 in CLAUDE.md. Erst den Fix hier validieren.
 - **Reste:** Kaltes Lúc lắc auf dem Kresse-Rest mit den Essig-Zwiebeln ist am nächsten Tag ein sehr guter Salat; nicht aufwärmen (übergart in Sekunden).
+
+## Mengen-Check (Zutaten in mehreren Komponenten)
+
+<details>
+<summary>Gesamtverbrauch pro Zutat — aufklappen</summary>
+
+| Zutat | Marinade | Sauce | Zwiebel-Pickle | Dip | Pfanne | **Gesamt** |
+|---|---|---|---|---|---|---|
+| Sojasauce | — | 2 EL | — | — | — | **2 EL** |
+| Fischsauce | — | 1½ EL | — | — | — | **1½ EL** |
+| Austernsauce | — | 1 EL | — | — | — | **1 EL** |
+| Reisessig | — | 1 EL | 1½ EL | — | — | **2½ EL** |
+| Zucker | 1 TL | 1 TL | 1 TL | — | — | **3 TL (\~12 g)** |
+| Salz | ¾ TL | — | 1 Prise | 1 TL | — | **\~2 TL** |
+| Schwarzer Pfeffer, grob | 1 TL | — | 3 Umdrehungen | ½ TL | — | **\~1¾ TL** |
+| Neutrales Öl | 1 EL | — | — | — | 3–4 EL | **\~5 EL** |
+| Rote Zwiebel | — | — | ½ | — | ½ | **1 Stück** |
+| Limette | — | — | — | 1 (Saft) | — | **+1 in Spalten = 2** |
+| Wasser | — | 2 EL | 2 EL | — | ggf. 30 ml Deglaze | — |
+
+</details>

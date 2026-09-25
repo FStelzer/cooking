@@ -236,6 +236,32 @@ schreiben (rendert als normales `~`). Tabellenzellen sind unkritisch
   werden nur nicht abgehakte Items, gekürzt um kursive Anmerkungen. Setup und
   Nutzung: siehe `EINKAUF-EXPORT.md`.
 
+## Format: Mengen-Check (immer ans Ende, zugeklappt)
+
+- **Position:** `## Mengen-Check` ist immer die **letzte `##`-Sektion der Datei**
+  (nach Zeitplan, Learnings, Quellen, Notizen) — nie zwischen Einkaufsliste
+  und Zubereitung, sonst scrollt man beim Kochen ständig drüber.
+- **Zugeklappt:** Der Inhalt steht in einem `<details>`-Block. Die `##`-
+  Überschrift bleibt **außerhalb** (Anker, Sidebar-Subnav und der Learnings-
+  Generator brauchen die `##`-Grenze). Docsify rendert das HTML; Markdown im
+  Block (Tabellen, Listen) wird nur geparst, wenn nach `<summary>` und vor
+  `</details>` je eine **Leerzeile** steht:
+
+  ```markdown
+  ## Mengen-Check
+
+  <details>
+  <summary>Gesamtverbrauch pro Zutat — aufklappen</summary>
+
+  | Zutat | Komponente A | Komponente B | **Gesamt** |
+  |---|---|---|---|
+  | … |
+
+  </details>
+  ```
+- Einkaufslisten-Einträge dürfen weiter „siehe Mengen-Check" sagen; der
+  Verweis bleibt gültig, nur der Ort ist jetzt das Dateiende.
+
 ## Bisherige Projekte
 
 Gekocht = die Rezeptdatei hat eine `## Learnings`-Sektion. Der folgende Block

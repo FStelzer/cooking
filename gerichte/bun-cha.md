@@ -42,16 +42,6 @@ Zwei Dinge unterscheiden das vom bisherigen Vietnam-Repertoire:
 
 *Nicht auf der Liste, aber dokumentierte Ausbaustufe: Räucherchips (mildes Obstholz) + Räucherbox — siehe Grill-Führung. Erster Durchgang bewusst pur auf Gas.*
 
-## Mengen-Check (Zutaten in mehreren Komponenten)
-
-| Zutat | Marinade | Sauce | Pickle | Nước màu | **Gesamt** |
-|---|---|---|---|---|---|
-| Fischsauce | 4 EL (~60 ml) | 120 ml | — | — | **~180 ml** |
-| Zucker | 1 EL (~15 g) | 80–100 g | 1,5 EL (~20 g) | 3 EL (~40 g) | **~170–190 g** |
-| Knoblauch | 4 Zehen | 3 Zehen | — | — | **7 Zehen** |
-| Limetten | — | 2–3 Stück | — | — | **+1 für Tisch-Spalten = 4** |
-| Reisessig | — | 80 ml | 45 ml | — | **~125 ml** |
-
 ## Zubereitung
 
 ### Vortag oder Kochtag früh (~45 Min.)
@@ -157,3 +147,18 @@ Frikadellen (chả) und Schweinebauch kamen beide gut an, mit klarem Split: mir 
 - **Nem rán:** Nicht im ersten Durchgang — eigenes Projekt, würde den Abend verdoppeln.
 - **Kräuter:** Thai-Basilikum auf der Liste mit Anruf-Hinweis; **Perilla gestrichen** (realistisch nicht zu bekommen, kein Beinbruch).
 - **Nước màu:** Ja, selbst ansetzen — Technik sitzt seit dem Thịt kho, Verweis statt Wiederholung.
+
+## Mengen-Check (Zutaten in mehreren Komponenten)
+
+<details>
+<summary>Gesamtverbrauch pro Zutat — aufklappen</summary>
+
+| Zutat | Marinade | Sauce | Pickle | Nước màu | **Gesamt** |
+|---|---|---|---|---|---|
+| Fischsauce | 4 EL (~60 ml) | 120 ml | — | — | **~180 ml** |
+| Zucker | 1 EL (~15 g) | 80–100 g | 1,5 EL (~20 g) | 3 EL (~40 g) | **~170–190 g** |
+| Knoblauch | 4 Zehen | 3 Zehen | — | — | **7 Zehen** |
+| Limetten | — | 2–3 Stück | — | — | **+1 für Tisch-Spalten = 4** |
+| Reisessig | — | 80 ml | 45 ml | — | **~125 ml** |
+
+</details>

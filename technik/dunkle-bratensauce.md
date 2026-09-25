@@ -221,20 +221,6 @@ reduzieren — manche Kinder mögen die Note nicht; bei meinem Kind bisher unget
 
 ---
 
-## Mengen-Check
-
-| Zutat | Variante A (1 Batch) | Variante B (1 Ansatz) |
-|---|---|---|
-| Dunkles Bier | 500 ml (1 Flasche) | 150 ml |
-| Zwiebeln | 400 g | 250 g |
-| Tomatenmark | 40 g | 15 g |
-| Butter (Finish) | 10–30 g pro Mahlzeit (je nach Finish-Weg) | 10–30 g |
-
-Bei Variante A gehen von der 0,5-l-Flasche exakt 500 ml drauf — keine Reserve, also
-zwei Flaschen kaufen.
-
----
-
 ## Einkaufsliste
 
 ### Selgros
@@ -278,3 +264,20 @@ zwei Flaschen kaufen.
 - Zutatenliste Knorr Professional Bratenjus pastös:
   [Unilever Food Solutions](https://www.unileverfoodsolutions.de/product/knorr-professional-bratenjus-pastoes-1-4-kg-4007801106593.html)
 - USDA Table of Nutrient Retention Factors (Alkoholretention beim Kochen)
+
+## Mengen-Check
+
+<details>
+<summary>Gesamtverbrauch pro Zutat — aufklappen</summary>
+
+| Zutat | Variante A (1 Batch) | Variante B (1 Ansatz) |
+|---|---|---|
+| Dunkles Bier | 500 ml (1 Flasche) | 150 ml |
+| Zwiebeln | 400 g | 250 g |
+| Tomatenmark | 40 g | 15 g |
+| Butter (Finish) | 10–30 g pro Mahlzeit (je nach Finish-Weg) | 10–30 g |
+
+Bei Variante A gehen von der 0,5-l-Flasche exakt 500 ml drauf — keine Reserve, also
+zwei Flaschen kaufen.
+
+</details>

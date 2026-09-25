@@ -73,24 +73,6 @@ Follow-up zum [Paneer-Projekt](/gerichte/paneer-projekt.md) mit dessen Learning 
 - [ ] Kashmiri-Chilipulver
 - [ ] Atta (Vollkorn-Chapati-Mehl), optional
 
-## Mengen-Check
-
-| Zutat | Marinade | Dal tadka | Baingan bharta | Raita/Servieren | **Gesamt** |
-|---|---|---|---|---|---|
-| **Joghurt** | 250 g | — | — | 250 g | **500 g** |
-| **Knoblauch** | 4 Zehen (in der Paste) | 5–6 Zehen (Tadka) | 4 Zehen (in die Aubergine) + 3 Zehen (Masala) | — | **\~17 Zehen ≈ 2 Knollen** |
-| **Ingwer** | 4 cm | 2 cm | 2 cm | — | **\~8 cm** |
-| **Tomaten** | — | 200 g | 300 g | — | **500 g** |
-| **Zwiebeln** | — | 1 | 1 | 1 rote | **3** |
-| **Zitrone** | 2 EL | 1 TL | 1 EL | Spalten | **\~3 Zitronen** |
-| **Ghee/Butter** | — | 3 EL Tadka | — | — | **\~3–4 EL** |
-| **Öl** | 3 EL | — | 2 EL | — | **\~5 EL** |
-| **Koriandergrün** | — | 2 EL | 2 EL | Rest Deko | **1 Bund** |
-| **Garam Masala** | 2 TL | ½ TL | ½ TL | — | **3 TL** |
-| **Kasuri Methi** | 2 TL | 1 TL | — | — | **3 TL** |
-| **Paprika edelsüß** | 2 TL | ½ TL | — | — | **2½ TL** |
-| **Kashmiri (nur Erwachsene)** | 2 TL | ½ TL Tadka | ½ TL Masala | — | **3 TL** |
-
 ## Zubereitung
 
 ### 1. Hähnchen marinieren (Vortag, 30 Min. aktiv + über Nacht)
@@ -198,3 +180,26 @@ Pro Teller: 2 Stücke Hähnchen, **\~150 g Dal** (eine gute Kelle), 3 EL Bharta,
 - **Chili-Position / Kinder-Abzweigung:** In allen drei Gerichten sitzt die Schärfe in Kashmiri/Chilipulver bzw. grünen und getrockneten Chilis, die jeweils spät dazukommen — beide Quellen markieren sie als „optional/may omit". Die saubere Trennung vor dem Chili ist damit ohne Rezeptverbiegung möglich; grüne Chili haben wir überall weggelassen (Schärfe kommt aus Kashmiri/Trockenchili, kontrollierbarer).
 - **GI Hülsenfrüchte:** International Tables of Glycemic Index (Atkinson et al., 2008/2021): Linsen GI \~30, Basmati \~55–60, Weizen-Roti \~60. Näherungen — Messgerät entscheidet (Leitfaden).
 - **Kasuri Methi / Toor Dal Bezug:** TRS/Natco via Amazon.de oder asia4friends.de, Verfügbarkeit 07/2026 beim Paneer-Projekt geprüft.
+
+## Mengen-Check
+
+<details>
+<summary>Gesamtverbrauch pro Zutat — aufklappen</summary>
+
+| Zutat | Marinade | Dal tadka | Baingan bharta | Raita/Servieren | **Gesamt** |
+|---|---|---|---|---|---|
+| **Joghurt** | 250 g | — | — | 250 g | **500 g** |
+| **Knoblauch** | 4 Zehen (in der Paste) | 5–6 Zehen (Tadka) | 4 Zehen (in die Aubergine) + 3 Zehen (Masala) | — | **\~17 Zehen ≈ 2 Knollen** |
+| **Ingwer** | 4 cm | 2 cm | 2 cm | — | **\~8 cm** |
+| **Tomaten** | — | 200 g | 300 g | — | **500 g** |
+| **Zwiebeln** | — | 1 | 1 | 1 rote | **3** |
+| **Zitrone** | 2 EL | 1 TL | 1 EL | Spalten | **\~3 Zitronen** |
+| **Ghee/Butter** | — | 3 EL Tadka | — | — | **\~3–4 EL** |
+| **Öl** | 3 EL | — | 2 EL | — | **\~5 EL** |
+| **Koriandergrün** | — | 2 EL | 2 EL | Rest Deko | **1 Bund** |
+| **Garam Masala** | 2 TL | ½ TL | ½ TL | — | **3 TL** |
+| **Kasuri Methi** | 2 TL | 1 TL | — | — | **3 TL** |
+| **Paprika edelsüß** | 2 TL | ½ TL | — | — | **2½ TL** |
+| **Kashmiri (nur Erwachsene)** | 2 TL | ½ TL Tadka | ½ TL Masala | — | **3 TL** |
+
+</details>

@@ -98,19 +98,6 @@ für Testläufe (Gang 2, Parfait) die jeweiligen Posten einzeln herauspicken.*
 - [ ] Espressobohnen — Gang 4 (\~150 ml gebrüht + 1 TL gemahlen)
 - [ ] Panko oder Mehl, Zucker, Honig, Muskat, Tomatenmark, Lorbeer — Kleinmengen
 
-## Mengen-Check (gangübergreifend)
-
-| Zutat | Gang 1 | Gang 2 | Gang 3 | Gang 4 | Gesamt |
-|---|---|---|---|---|---|
-| Butter | — | \~205 g (Beurre blanc 170 + Crumble 20 + Arrosieren 15) | \~120 g (Püree 45 + Jus 25 + Blätter 20 + Arrosieren 30) | 30 g (Crumble) | **\~355 g → 500 g kaufen** |
-| Limetten | ½–1 (Saft 10–15 ml) | 1 (Beurre blanc) + ½ (Gel) + 1 Reserve | — | — | **4 Stück** |
-| Sahne | — | 2 EL (Stabilisierung) | — | 300 ml | **\~330 ml → 500 ml kaufen** |
-| Espresso | — | — | — | 60 ml Masse + 75 ml Schuss + 1 TL gemahlen | **\~150 ml, 2 Chargen** |
-| Knollensellerie | — | — | 600 g Püree + 150 g Chips + 100 g Jus + Schälverlust | — | **1 Knolle \~1,2 kg** |
-| Walnüsse | — | 30 g Praline + 50 g Crumble | — | — | **80 g** |
-| Wodka | — | — | — | 55 ml Masse + 75 ml Schuss | **\~130 ml (+ Testlauf-Reserve)** |
-| Kahlúa | — | — | — | 45 ml Masse + 50 ml Schuss | **\~95 ml (+ Testlauf)** |
-
 ## Rezepte
 
 ### 1. Klares Tomatenwasser „feine Bloody Mary“ (Amuse)
@@ -603,3 +590,21 @@ und danach 80 °C (Teller). Kein Konflikt mehr.
   Desserts.
 - **Ein kombinierter Einkauf statt Listen pro Gang:** Export-Buttons der Site
   hängen an `## Einkaufsliste` + Laden-Gruppen; Gang-Zuordnung steht am Posten.
+
+## Mengen-Check (gangübergreifend)
+
+<details>
+<summary>Gesamtverbrauch pro Zutat — aufklappen</summary>
+
+| Zutat | Gang 1 | Gang 2 | Gang 3 | Gang 4 | Gesamt |
+|---|---|---|---|---|---|
+| Butter | — | \~205 g (Beurre blanc 170 + Crumble 20 + Arrosieren 15) | \~120 g (Püree 45 + Jus 25 + Blätter 20 + Arrosieren 30) | 30 g (Crumble) | **\~355 g → 500 g kaufen** |
+| Limetten | ½–1 (Saft 10–15 ml) | 1 (Beurre blanc) + ½ (Gel) + 1 Reserve | — | — | **4 Stück** |
+| Sahne | — | 2 EL (Stabilisierung) | — | 300 ml | **\~330 ml → 500 ml kaufen** |
+| Espresso | — | — | — | 60 ml Masse + 75 ml Schuss + 1 TL gemahlen | **\~150 ml, 2 Chargen** |
+| Knollensellerie | — | — | 600 g Püree + 150 g Chips + 100 g Jus + Schälverlust | — | **1 Knolle \~1,2 kg** |
+| Walnüsse | — | 30 g Praline + 50 g Crumble | — | — | **80 g** |
+| Wodka | — | — | — | 55 ml Masse + 75 ml Schuss | **\~130 ml (+ Testlauf-Reserve)** |
+| Kahlúa | — | — | — | 45 ml Masse + 50 ml Schuss | **\~95 ml (+ Testlauf)** |
+
+</details>

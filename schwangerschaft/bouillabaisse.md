@@ -92,18 +92,6 @@ Das gilt auch für die **Karkassen** — Seeteufel-Köpfe sind sonst ein klassis
 
 - [ ] Vollkorn-Sauerteigbrot, 3 Scheiben (1 pro Person, siehe GDM-Sektion)
 
-## Mengen-Check
-
-| Zutat | Fond | Rouille | Salat | **Gesamt** |
-|---|---|---|---|---|
-| **Fenchel** | 2 Knollen | — | 1 große / 2 kleine | **3–4 Knollen** |
-| **Knoblauch** | 1 Knolle (halbiert) | 5 Zehen | — | **1 Knolle + 5 Zehen** → 2 Knollen kaufen |
-| **Olivenöl** | 3 EL | 150 ml | 3–4 EL | **\~250 ml** |
-| **Safran** | 1 g | 0,5 g | — | **1,5 g** |
-| **Orangen** | Zeste von 1 | — | 2 (Filets) | **3 Bio-Orangen** |
-| **Zitrone** | — | 1 EL | Saft von ½ | **1 Zitrone** |
-| **Fenchelsamen** | 1 TL + ½ TL | — | — | **1½ TL** |
-
 ## Bouillabaisse
 
 ### Vortag: Fond & Rouille
@@ -308,3 +296,20 @@ statt 2 Orangen (Grapefruit hat \~⅓ weniger Zucker und passt zur Brühe sogar 
   \~35 %, nach 2,5 Std. \~5 % der zugegebenen Menge. Bei 40 Min. Fond + 25 Min. Reduktion wäre
   vom Wein noch ein spürbarer Rest übrig; deshalb weglassen statt „verkochen".
 - **Karkassen ohne Kiemen, max. 45 Min:** Standard-Fischfond-Regeln gegen Bitterkeit und Trübung.
+
+## Mengen-Check
+
+<details>
+<summary>Gesamtverbrauch pro Zutat — aufklappen</summary>
+
+| Zutat | Fond | Rouille | Salat | **Gesamt** |
+|---|---|---|---|---|
+| **Fenchel** | 2 Knollen | — | 1 große / 2 kleine | **3–4 Knollen** |
+| **Knoblauch** | 1 Knolle (halbiert) | 5 Zehen | — | **1 Knolle + 5 Zehen** → 2 Knollen kaufen |
+| **Olivenöl** | 3 EL | 150 ml | 3–4 EL | **\~250 ml** |
+| **Safran** | 1 g | 0,5 g | — | **1,5 g** |
+| **Orangen** | Zeste von 1 | — | 2 (Filets) | **3 Bio-Orangen** |
+| **Zitrone** | — | 1 EL | Saft von ½ | **1 Zitrone** |
+| **Fenchelsamen** | 1 TL + ½ TL | — | — | **1½ TL** |
+
+</details>

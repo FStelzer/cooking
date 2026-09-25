@@ -49,15 +49,6 @@ Lyoner Bistro-Klassiker: Hähnchen in Butter angebraten, mit Schalotten, Knoblau
 - [ ] 200 g Vollkorn-Bandnudeln oder Vollkorn-Spirelli (\~50 g roh pro Person)
 - [ ] 1 EL neutrales Öl, Salz, schwarzer Pfeffer (Vorrat)
 
-## Mengen-Check
-
-| Zutat | Hähnchen/Sauce | Bohnen | **Gesamt** |
-|---|---|---|---|
-| **Butter** | 30 g + 1 EL (15 g) | 30 g | **\~75 g** → Vorrat prüfen |
-| **Knoblauch** | 4 Zehen | — | **4 Zehen** |
-| **Zitrone** | Spritzer zum Abschmecken (optional) | Saft von ½ | **1 Zitrone** |
-| **Salz** | Hähnchen 1½ TL + Sauce nach Bedarf | Kochwasser + Prise | — (Brühe salzt mit — zurückhaltend beginnen) |
-
 ## Zubereitung
 
 ### 1. Hähnchen vorbereiten (10 Min. + optional 1 Std. Vorlauf)
@@ -138,3 +129,17 @@ Schenkel mit Sauce nappieren, restlichen Estragon darüber. Bohnen und eine klei
 - **Beilagen-Kanon** (Pilawreis, Nudeln, Püree, grüne Bohnen): FCA und Dumas; Boulud/Blanc-Variante mit Brühe statt Wein bei [Vinegar Professor](https://www.vinegarprofessor.com/blog/vinegar-chicken-around-the-world).
 - **Nicht gefunden:** eine Felicity-Cloake-Kolumne zum Gericht existiert nicht; David Lebovitz hat keins.
 - **Alkohol-Restgehalt:** USDA Table of Nutrient Retention Factors (\~35 % nach 30 Min. Kochen) — siehe Leitfaden.
+
+## Mengen-Check
+
+<details>
+<summary>Gesamtverbrauch pro Zutat — aufklappen</summary>
+
+| Zutat | Hähnchen/Sauce | Bohnen | **Gesamt** |
+|---|---|---|---|
+| **Butter** | 30 g + 1 EL (15 g) | 30 g | **\~75 g** → Vorrat prüfen |
+| **Knoblauch** | 4 Zehen | — | **4 Zehen** |
+| **Zitrone** | Spritzer zum Abschmecken (optional) | Saft von ½ | **1 Zitrone** |
+| **Salz** | Hähnchen 1½ TL + Sauce nach Bedarf | Kochwasser + Prise | — (Brühe salzt mit — zurückhaltend beginnen) |
+
+</details>

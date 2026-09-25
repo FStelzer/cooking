@@ -49,19 +49,6 @@ Koreanischer Klassiker: hauchdünn geschnittenes Rind in einer pürierten Marina
 - [ ] Honig (~2 TL: Ssamjang + Kinder-Dip)
 - [ ] Schwarzer Pfeffer, neutrales Öl, Salz
 
-## Mengen-Check (Zutaten in mehreren Komponenten)
-
-| Zutat | Marinade | Ssamjang | Kinder-Dip | Pa Muchim | Pickle | **Gesamt** |
-|---|---|---|---|---|---|---|
-| Sojasauce | 3½ EL | — | 1 EL | 1 EL | — | **~5½–6 EL** |
-| Sesamöl | 1½ EL | 1 TL | 1 TL | 2 TL | — | **~3 EL** |
-| Brauner Zucker | 2½ EL | — | — | 2 TL | 1 EL | **~4 EL** |
-| Frühlingszwiebeln | 2 St. | 1 St. | — | 4 St. | — | **+1 Finish = 8 St.** |
-| Knoblauch | 5 Zehen | 1 Zehe | — | — | — | **6 Zehen** |
-| Reisessig | — | — | — | 1 EL | 3 EL | **4 EL** |
-| Sesam | — | 1 TL | ½ TL | 1 TL | — | **+2 TL Finish ≈ 1½ EL** |
-| Honig | — | 1 TL | 1 TL | — | — | **2 TL** |
-
 ## Zubereitung
 
 **1. Fleisch anfrieren (15 Min., passiv)**
@@ -132,3 +119,21 @@ Fleisch auf der Platte mit 2 TL Sesam und 1 Frühlingszwiebel in feinen Ringen b
 - **Plan B / Ausbaustufe gegen das Einbrennen: Gusseisenplatte (Plancha) für den Gasgrill.** Löst das Problem strukturell — draußen darf einbrennen, die Platte wird einfach abgeflammt und abgeschabt, und über echter Flamme kommt das „Feuerfleisch"-Aroma dazu. Als Anschaffung mehrfach nützlich (Smashburger, Bún-chả-Bällchen, Gemüse), ~25–50 €. Erst den Chargen-Fix aus Schritt 5 validieren, dann entscheiden.
 - **Gochujang-Synergie:** Der angebrochene Becher ist die halbe Einkaufsliste der Backlog-Idee „Korean Fried Chicken (Dakgangjeong)" — guter Kandidat für eines der nächsten Projekte, solange der Becher offen ist.
 - **Reste:** Gebratenes Bulgogi hält 2–3 Tage im Kühlschrank und ist kalt oder kurz aufgewärmt eine sehr gute Reisbowl (Reis, Fleisch, Gurken-Pickle, Sesam, ggf. Spiegelei).
+
+## Mengen-Check (Zutaten in mehreren Komponenten)
+
+<details>
+<summary>Gesamtverbrauch pro Zutat — aufklappen</summary>
+
+| Zutat | Marinade | Ssamjang | Kinder-Dip | Pa Muchim | Pickle | **Gesamt** |
+|---|---|---|---|---|---|---|
+| Sojasauce | 3½ EL | — | 1 EL | 1 EL | — | **~5½–6 EL** |
+| Sesamöl | 1½ EL | 1 TL | 1 TL | 2 TL | — | **~3 EL** |
+| Brauner Zucker | 2½ EL | — | — | 2 TL | 1 EL | **~4 EL** |
+| Frühlingszwiebeln | 2 St. | 1 St. | — | 4 St. | — | **+1 Finish = 8 St.** |
+| Knoblauch | 5 Zehen | 1 Zehe | — | — | — | **6 Zehen** |
+| Reisessig | — | — | — | 1 EL | 3 EL | **4 EL** |
+| Sesam | — | 1 TL | ½ TL | 1 TL | — | **+2 TL Finish ≈ 1½ EL** |
+| Honig | — | 1 TL | 1 TL | — | — | **2 TL** |
+
+</details>

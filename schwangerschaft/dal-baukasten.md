@@ -105,23 +105,6 @@ Der elektrische Schnellkochtopf (Instant-Pot-Typ, ca. 6 L) übernimmt **nur den 
 - [ ] Muskatnuss *(Bestand)*
 - [ ] Optional: 1 Stück Holzkohle (Dhungar-Rauch, mit dem Bunsenbrenner glühend machen)
 
-## Mengen-Check (Grundrezept + Beilagen)
-
-| Zutat | Linsen kochen | Masala | Tadka Erw. | Tadka Kind | Kachumber/Raita | **Gesamt** |
-|---|---|---|---|---|---|---|
-| **Ghee** | 1 TL | 2 EL | 2 EL | 1 EL | — | **\~5 EL** |
-| **Knoblauch** | — | 4 Zehen | 4 Zehen | 1–2 Zehen | — | **\~10 Zehen = 1 Knolle** |
-| **Ingwer** | — | 3 cm | — | — | 2 cm (optional) | **\~5 cm** |
-| **Zwiebel** | — | 2 (250 g) | — | — | 1 rote | **2 + 1 rote** |
-| **Tomaten** | — | 300 g | — | — | 200 g | **500 g** |
-| **Kreuzkümmel ganz** | — | 1 TL | 1 TL | ½ TL | ½ TL geröstet | **3 TL** |
-| **Kurkuma** | ½ TL | ½ TL | — | — | — | **1 TL** |
-| **Zitrone** | — | — | 1 EL (Finish) | Spritzer | Saft von ½ | **\~1½ → 2 kaufen** |
-| **Koriandergrün** | — | — | 3 EL | 1 EL | 2 EL | **1 Bund** |
-| **Salz** | 1½ TL (am Ende) | — | — | — | ½ TL | — Brühe-frei, also nach Gefühl nachziehen |
-
-Varianten: die Zusatzposten stehen jeweils in der Variante; die Grundgewürze bleiben.
-
 ## Grundrezept: Dal tadka als Hauptgericht (Masoor oder Toor)
 
 ### 1. Linsen kochen (25 Min., passiv)
@@ -288,3 +271,25 @@ Das ist eine **volle Hauptmahlzeit am oberen Ende** — bewusst, weil das Dal hi
 - **Meta-Analyse:** Sievenpiper J. L. et al., Diabetologia 2009;52:1479–95 — [Zusammenfassung (NIHR/NCBI Bookshelf)](https://www.ncbi.nlm.nih.gov/books/NBK77976/).
 - **Leitlinien:** [DDG-Praxisempfehlung Gestationsdiabetes 2024](https://www.ddg.info/fileadmin/user_upload/DuS_2024_S02_Praxisempfehlungen_Schaefer-Graf_Gestationsdiabetes.pdf) (KH 40–50 %, niedriger GI bevorzugen, 3 + 2–3 Mahlzeiten); [Diabetes UK — Gestational diabetes and diet](https://www.diabetes.org.uk/living-with-diabetes/eating/gestational-diabetes) (Pulses als bessere KH-Wahl, Menge und Individualität entscheidend).
 - **KH-Näherungen:** USDA FoodData Central (rote Linsen trocken \~60 g KH/100 g, davon \~11 g Ballaststoffe; gekocht \~20 g/100 g). Das Messgerät entscheidet — steht so im Leitfaden.
+
+## Mengen-Check (Grundrezept + Beilagen)
+
+<details>
+<summary>Gesamtverbrauch pro Zutat — aufklappen</summary>
+
+| Zutat | Linsen kochen | Masala | Tadka Erw. | Tadka Kind | Kachumber/Raita | **Gesamt** |
+|---|---|---|---|---|---|---|
+| **Ghee** | 1 TL | 2 EL | 2 EL | 1 EL | — | **\~5 EL** |
+| **Knoblauch** | — | 4 Zehen | 4 Zehen | 1–2 Zehen | — | **\~10 Zehen = 1 Knolle** |
+| **Ingwer** | — | 3 cm | — | — | 2 cm (optional) | **\~5 cm** |
+| **Zwiebel** | — | 2 (250 g) | — | — | 1 rote | **2 + 1 rote** |
+| **Tomaten** | — | 300 g | — | — | 200 g | **500 g** |
+| **Kreuzkümmel ganz** | — | 1 TL | 1 TL | ½ TL | ½ TL geröstet | **3 TL** |
+| **Kurkuma** | ½ TL | ½ TL | — | — | — | **1 TL** |
+| **Zitrone** | — | — | 1 EL (Finish) | Spritzer | Saft von ½ | **\~1½ → 2 kaufen** |
+| **Koriandergrün** | — | — | 3 EL | 1 EL | 2 EL | **1 Bund** |
+| **Salz** | 1½ TL (am Ende) | — | — | — | ½ TL | — Brühe-frei, also nach Gefühl nachziehen |
+
+Varianten: die Zusatzposten stehen jeweils in der Variante; die Grundgewürze bleiben.
+
+</details>

@@ -81,22 +81,6 @@ Vegetarischer Mezze-Abend, bewusst als **eigenständige Richtung** gebaut und ni
 - [ ] Gutes Olivenöl (Gesamtverbrauch ~150 ml — Vorrat prüfen!)
 - [ ] Optional: Pinienkerne, 30 g (Fatayer-Füllung)
 
-## Mengen-Check: Zutaten in mehreren Komponenten
-
-Die Klassiker-Falle in diesem Repo — deshalb hier explizit summiert:
-
-| Zutat | Hummus | Moutabal | Muhammara | Fatayer | Labneh/Sonstiges | **Gesamt** |
-|---|---|---|---|---|---|---|
-| **Tahina** | 140 g | 60 g | — | — | — | **~200 g** → großes Glas (≥300 g) |
-| **Zitronensaft** | 2–3 EL | 2 EL | 1 TL | 2 EL | Spalten zum Servieren | **~8 EL ≈ 3 Zitronen** → 4 kaufen |
-| **Knoblauch** | 1–2 Zehen | 1 Zehe | 1 Zehe | — | — | **3–4 Zehen** (bewusst wenig — s. Kinder-Anpassung) |
-| **Olivenöl** | 2 EL obenauf | 1–2 EL obenauf | 3 EL | 2 EL Teig + 2 EL Füllung | 2 EL Labneh + 2 EL Brotchips | **~150 ml** |
-| **Mehl** | — | — | — | 300 g | 300 g (Sambousek) | **600 g** |
-| **Ei** | — | — | — | Eigelb (Streiche) | Eiweiß (Käsefüllung) | **1 Ei, beide Hälften genutzt** |
-| **Natron** | ¾ TL (Einweichen) + ½ TL (Kochen) | — | — | — | — | **1¼ TL** |
-
-**Labneh-Schwund:** 1 kg Joghurt → ~450–500 g Labneh. Die Hälfte geht als Molke verloren — nicht kleiner kaufen.
-
 ## Zeitplan (3 Tage)
 
 ### Tag 1 — Abend, ~15 Min. aktiv
@@ -245,3 +229,24 @@ Von allen aktuellen Projekten das kinderfreundlichste — Dips, Brot, Oliven (be
 ## Notiz: Kombination mit dem Shawarma-Abend
 
 Bleiben zwei getrennte Abende. Perspektivisch lassen sich beide aber zu einem großen libanesischen Menü verbinden — Mezze als Vorspiel (Dips halbiert, Teigtaschen aus dem Frost), Shawarma (`shawarma-libanesisch.md`) als Hauptgang. Da beide Projekte disjunkte Komponenten haben (hier kein Toum/Tabbouleh/Batata harra, dort keine Dips/Teigtaschen), gibt es keine Doppelungen; nur die Einkäufe (Tahina, Fladenbrot, Sumach) überschneiden sich — hält alles, unkritisch.
+
+## Mengen-Check: Zutaten in mehreren Komponenten
+
+<details>
+<summary>Gesamtverbrauch pro Zutat — aufklappen</summary>
+
+Die Klassiker-Falle in diesem Repo — deshalb hier explizit summiert:
+
+| Zutat | Hummus | Moutabal | Muhammara | Fatayer | Labneh/Sonstiges | **Gesamt** |
+|---|---|---|---|---|---|---|
+| **Tahina** | 140 g | 60 g | — | — | — | **~200 g** → großes Glas (≥300 g) |
+| **Zitronensaft** | 2–3 EL | 2 EL | 1 TL | 2 EL | Spalten zum Servieren | **~8 EL ≈ 3 Zitronen** → 4 kaufen |
+| **Knoblauch** | 1–2 Zehen | 1 Zehe | 1 Zehe | — | — | **3–4 Zehen** (bewusst wenig — s. Kinder-Anpassung) |
+| **Olivenöl** | 2 EL obenauf | 1–2 EL obenauf | 3 EL | 2 EL Teig + 2 EL Füllung | 2 EL Labneh + 2 EL Brotchips | **~150 ml** |
+| **Mehl** | — | — | — | 300 g | 300 g (Sambousek) | **600 g** |
+| **Ei** | — | — | — | Eigelb (Streiche) | Eiweiß (Käsefüllung) | **1 Ei, beide Hälften genutzt** |
+| **Natron** | ¾ TL (Einweichen) + ½ TL (Kochen) | — | — | — | — | **1¼ TL** |
+
+**Labneh-Schwund:** 1 kg Joghurt → ~450–500 g Labneh. Die Hälfte geht als Molke verloren — nicht kleiner kaufen.
+
+</details>

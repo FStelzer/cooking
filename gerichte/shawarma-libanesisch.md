@@ -55,20 +55,6 @@ Beiruter Straßen-Shawarma in der schlanken Ausführung: sehr dünnes, sehr fris
 - [ ] Weißweinessig oder Apfelessig (Vorrat prüfen: 2–3 EL)
 - [ ] Edelsüßes Paprikapulver, Kumin, gem. Koriander, Koriandersaat, Cayenne (Vorrat prüfen)
 
-## Mengen-Check
-
-Fünf Zutaten stecken in mehreren Komponenten — Gesamtverbrauch (der Fehler von früher war, pro Rezept zu schätzen):
-
-| Zutat | Marinade | Toum | Tahinsauce | Tabbouleh | Batata harra | **Summe** |
-|---|---|---|---|---|---|---|
-| **Zitronensaft** | 3 EL | 3 EL | 3 EL | 4 EL | 1–2 EL | **~14–15 EL ≈ 5–6 Zitronen** → 7 kaufen |
-| **Knoblauch** | 4 Zehen | 10–12 Zehen (1 Knolle) | 1 Zehe | — | 4 Zehen | **~20 Zehen ≈ 2 Knollen** → 3 kaufen |
-| **Joghurt** | 150 g | — | — | — | — | **150 g** → 500-g-Becher reicht locker |
-| **Neutrales Öl** | 2 EL | 250 ml | — | — | — | **~280 ml** + ~3 EL zum Braten ≈ **330 ml** → 750-ml-Flasche |
-| **Olivenöl** | — | — | — | 4 EL | 6 EL | **~150 ml** (+1 EL falls Shatta selbst) |
-
-Bei **Variante B mit doppelter Fleischmenge** verdoppelt sich nur die Marinade (→ 6 EL Zitrone, 8 Zehen, 300 g Joghurt) — Saucen und Beilagen bleiben gleich.
-
 ## Zubereitung
 
 ### 1. Hähnchen entbeinen & marinieren (Vortag, ~30 Min.)
@@ -202,3 +188,22 @@ Die echte geschabte Shawarma-Textur mit karamellisierten Kanten, die Variante A 
 - **Schenkel statt Brust:** mehr Fett, verzeiht hohe Hitze und liegt in den meisten Referenzen vorn; die Gegenposition (Brust, schneller) kommt praktisch nur von Zaatar and Zaytoun.
 - **Batata harra = die „patatas bravas":** Kartoffelwürfel mit Knoblauch, Chili, gemahlenem Koriander und frischem Koriandergrün, dazu Zitrone — eine der bekanntesten warmen libanesischen Vorspeisen. Ofen funktioniert statt Fritteuse ([A Kitchen in Istanbul](https://vidarbergum.com/recipe/batata-harra-lebanese-spicy-potatoes-with-garlic-coriander/), [Urban Farm and Kitchen](https://urbanfarmandkitchen.com/batata-harra-spicy-lebanese-potatoes/), [Chef Tariq](https://www.cheftariq.com/recipe/batata-harra/)).
 - Weitere Referenzen: [Alphafoodie — Shawarma](https://www.alphafoodie.com/lebanese-chicken-shawarma/) · [Hungry Paprikas](https://www.hungrypaprikas.com/chicken-shawarma/)
+
+## Mengen-Check
+
+<details>
+<summary>Gesamtverbrauch pro Zutat — aufklappen</summary>
+
+Fünf Zutaten stecken in mehreren Komponenten — Gesamtverbrauch (der Fehler von früher war, pro Rezept zu schätzen):
+
+| Zutat | Marinade | Toum | Tahinsauce | Tabbouleh | Batata harra | **Summe** |
+|---|---|---|---|---|---|---|
+| **Zitronensaft** | 3 EL | 3 EL | 3 EL | 4 EL | 1–2 EL | **~14–15 EL ≈ 5–6 Zitronen** → 7 kaufen |
+| **Knoblauch** | 4 Zehen | 10–12 Zehen (1 Knolle) | 1 Zehe | — | 4 Zehen | **~20 Zehen ≈ 2 Knollen** → 3 kaufen |
+| **Joghurt** | 150 g | — | — | — | — | **150 g** → 500-g-Becher reicht locker |
+| **Neutrales Öl** | 2 EL | 250 ml | — | — | — | **~280 ml** + ~3 EL zum Braten ≈ **330 ml** → 750-ml-Flasche |
+| **Olivenöl** | — | — | — | 4 EL | 6 EL | **~150 ml** (+1 EL falls Shatta selbst) |
+
+Bei **Variante B mit doppelter Fleischmenge** verdoppelt sich nur die Marinade (→ 6 EL Zitrone, 8 Zehen, 300 g Joghurt) — Saucen und Beilagen bleiben gleich.
+
+</details>

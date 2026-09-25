@@ -55,18 +55,6 @@ Ganzer Fisch, in 2 kg feuchtem Meersalz vergraben und gebacken. Die Kruste wird 
 - [ ] 1 Lorbeerblatt (Linsen)
 - [ ] Schwarzer Pfeffer, Salz (Vorrat)
 
-## Mengen-Check
-
-| Zutat | Fisch | Salsa verde | Grillgemüse | Linsen | **Gesamt** |
-|---|---|---|---|---|---|
-| **Olivenöl** | — | 120 ml | 3 EL | 3 EL | **\~210 ml** → 250-ml-Flasche oder Vorrat |
-| **Zitrone** | 1 (Scheiben) | Saft + Zeste von ½ | — | — | **2** (Rest ½ zum Servieren) |
-| **Petersilie** | ein paar Stiele | 1½ Bund | — | ½ Bund | **2 Bund** |
-| **Knoblauch** | 2 Zehen | 1 Zehe | — | — | **3 Zehen** |
-| **Rote Zwiebel / Schalotte** | — | — | 1 rote Zwiebel | 2 Schalotten | **1 + 2** |
-| **Essig** | — | — | — | 3 EL | **3 EL** |
-| **Salz** | 2 kg grob (Kruste) | Prise | ½ TL | ½ TL | Kruste separat — nicht in die Rechnung |
-
 ## Zubereitung
 
 ### 1. Linsen (30 Min., ganz am Anfang — werden lauwarm serviert)
@@ -160,3 +148,20 @@ Fisch in der Kruste auf einem **grillfesten Blech** (Alublech oder Edelstahl-Auf
 - **Kerntemperatur:** [FDA — Food Safety for Moms-to-Be](https://www.fda.gov/food/people-risk-foodborne-illness/cooking-food-safety-moms-be): „Finfish should be cooked to an internal temperature of 145 °F (63 °C)". Praxiswerte für saftigen weißen Fisch 54–57 °C: [ThermoWorks — Seafood Temperatures](https://blog.thermoworks.com/recommended-temperatures-seafood/) — bewusst nicht gewählt (Schwangerschaft).
 - **Fischauswahl:** BfR-FAQ Methylquecksilber (04/2026), verlinkt im Leitfaden — Wolfsbarsch, Dorade unkritisch.
 - **Begleiter-Kanon Spanien** (Alioli, Salsa tártara, Öl mit Knoblauch/Petersilie, *ajada*, *patatas panadera*, *ensalada mixta*): Directo al Paladar, Hogarmania. Alioli/Tártara (rohes Ei) hier bewusst durch Salsa verde ersetzt.
+
+## Mengen-Check
+
+<details>
+<summary>Gesamtverbrauch pro Zutat — aufklappen</summary>
+
+| Zutat | Fisch | Salsa verde | Grillgemüse | Linsen | **Gesamt** |
+|---|---|---|---|---|---|
+| **Olivenöl** | — | 120 ml | 3 EL | 3 EL | **\~210 ml** → 250-ml-Flasche oder Vorrat |
+| **Zitrone** | 1 (Scheiben) | Saft + Zeste von ½ | — | — | **2** (Rest ½ zum Servieren) |
+| **Petersilie** | ein paar Stiele | 1½ Bund | — | ½ Bund | **2 Bund** |
+| **Knoblauch** | 2 Zehen | 1 Zehe | — | — | **3 Zehen** |
+| **Rote Zwiebel / Schalotte** | — | — | 1 rote Zwiebel | 2 Schalotten | **1 + 2** |
+| **Essig** | — | — | — | 3 EL | **3 EL** |
+| **Salz** | 2 kg grob (Kruste) | Prise | ½ TL | ½ TL | Kruste separat — nicht in die Rechnung |
+
+</details>
