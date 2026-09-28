@@ -1,30 +1,53 @@
-# 🚧 Menü November — Tomatenwasser / Jakobsmuschel / Lamm / Espresso-Martini-Parfait
+# 🚧 Menü November — Tomatenwasser / Kaisergranat / Schmorlamm / Espresso-Parfait
 
 > [!NOTE]
 > **Status: In Arbeit** — alle vier Rezepte sind vollständig ausgearbeitet
-> (Stand 08/2026, recherchiert), aber Testläufe stehen aus (Gang 2 Balance,
-> Parfait-Textur, Tomatenwasser-Klärweg). Abend-Zeitplan ist bewusst nur ein
-> Skelett — Feinschliff nach den Testläufen. 4–5 Personen (2 Erw. + Gäste + Kind 3 J.).
-> **⚠️ Saisonkritisch: Tomaten JETZT (Aug/Sep) kaufen und einfrieren — s. Gang 1.**
+> (Stand 08/2026, recherchiert; **Umbau 09/2026 für Schwangerschaft + GDM**,
+> s. Box unten), aber Testläufe stehen aus: Gang 2 (Kaisergranat-Garpunkt +
+> Verjus-Beurre-blanc), Parfait (alkoholfrei, Decaf, Textur), Tomatenwasser
+> (Weg A gegen Weg B verkosten). Abend-Zeitplan ist bewusst nur ein Skelett —
+> Feinschliff nach den Testläufen. 4–5 Personen (2 Erw. + Gäste + Kind 3 J.).
+> Tomatenwasser liegt seit 09/2026 in beiden Klärwegen im Gefrierfach.
+
+> [!NOTE]
+> **Schwangerschaft + Gestationsdiabetes (Umbau 09/2026):** Die Frau isst mit,
+> deshalb ist das ganze Menü umgebaut statt Sonderportionen — geprüft gegen den
+> [Leitfaden](/schwangerschaft/leitfaden.md), keine Kopie in `schwangerschaft/`.
+> **Gang 1:** Sherry gestrichen; Worcestershire (fermentierte, pasteurisierte
+> Fertigsauce, 6–8 Tropfen) unkritisch. **Gang 2:** Kaisergranat statt glasiger
+> Jakobsmuschel — wird ohnehin durchgegart serviert (63–65 °C Kern), Beurre
+> blanc für alle auf Verjus statt Wein/Noilly, Ziegenfrischkäse pasteurisiert.
+> **Gang 3:** geschmorte, gepresste Lammschulter statt rosa Karree — geschmort
+> und am Abend auf ≥ 70 °C Kern durchgewärmt; Rotwein in der Jus wird in
+> Schüben bis fast trocken reduziert, bevor Flüssigkeit dazukommt (Verjus-
+> Option im Rezept). **Gang 4:** kein Alkohol in der Parfait-Masse, die Pâte à
+> bombe wird auf 75–82 °C gezogen (pasteurisiert, kein rohes Ei), durchgehend
+> Decaf; Schuss am Tisch als Espresso-Shakerato (alkoholfrei) oder
+> Espresso-Martini. **GDM:** Menü ist praktisch stärkefrei; KH nur in den
+> Mango-Gel-Punkten und im Dessert (kleine Scheibe + Crumble \~20 g KH) → nach
+> dem Essen messen.
 
 ## Menüfolge & Dramaturgie
 
 | # | Gang | Charakter |
 |---|------|-----------|
 | 1 | **Amuse: Klares Tomatenwasser „feine Bloody Mary“** — Concassé-Einlage, kurze präzise Schärfe | Statement-Einstieg: klar, kalt, kurzer Kick |
-| 2 | **Jakobsmuscheln, Limetten-Beurre-blanc, Mango-Gel, Ziegenkäse-Praline** | Sanfte Pause nach dem Statement: cremig, süß-sauer-balanciert |
-| 3 | **Lammkarree rückwärts, Selleriepüree, Rosenkohl zweierlei, Rotwein-Lammjus** | Erdig, herzhaft, Jus statt Sahne |
-| 4 | **Espresso-Martini-Parfait mit Martini-Schuss am Tisch** | Kräftiges Finale + Show-Moment |
+| 2 | **Kaisergranat, Verjus-Limetten-Beurre-blanc, Mango-Gel, Ziegenkäse-Praline** | Sanfte Pause nach dem Statement: süß, cremig, säure-balanciert |
+| 3 | **Geschmorte, gepresste Lammschulter, Selleriepüree, Rosenkohl zweierlei, Lammjus** | Erdig, herzhaft, Jus statt Sahne — knuspriger Block, zartes Inneres |
+| 4 | **Espresso-Parfait (Decaf) mit Schuss am Tisch** — Espresso-Martini oder Shakerato | Kräftiges Finale + Show-Moment |
 
 **Bögen & Balance-Checks:**
 - Selleriesalz im Amuse ↔ Selleriepüree im Hauptgang (bewusster Bogen)
 - Schärfe nur in Gang 1, **kurz und präzise** (Tropfen Chiliöl) — kein lingerndes
-  Brennen vor der feinen Jakobsmuschel
-- Fett-Verteilung: Beurre blanc (2) und Parfait (4) sind reich → Amuse klar/fettfrei,
-  Hauptgang-Püree mit Milch, Jus statt Sahnesauce
+  Brennen vor dem feinen Kaisergranat
+- Fett-Verteilung: Beurre blanc (2) und Parfait (4) sind reich, Schmorlamm (3)
+  ist fetter als Karree → Amuse klar/fettfrei, Püree mit Milch, Jus entfettet
+  und nur montiert, Lammblock knusprig ausgebraten statt in Sauce
 - Säure-Führung in Gang 2: die **Beurre blanc führt die Limette**, das Mango-Gel
   bleibt fruchtig-mild — nicht beide Komponenten sauer abschmecken
-- Keine Frucht-/Exotik-Doppelung: Mango nur in Gang 2, Dessert Kaffee/Alkohol
+- Keine Frucht-/Exotik-Doppelung: Mango nur in Gang 2, Dessert Kaffee
+- Alkohol nur noch im optionalen Espresso-Martini-Schuss (Gang 4) — Menü ist
+  sonst komplett alkoholfrei
 - Farbe: Knallgrüne Rosenkohlblätter brechen den sonst beigen Hauptgang
 
 ## Einkaufsliste
@@ -32,26 +55,28 @@
 *Kombiniert für alle vier Gänge, 4–5 Personen. Zutaten mit Gang-Zuordnung —
 für Testläufe (Gang 2, Parfait) die jeweiligen Posten einzeln herauspicken.*
 
-### Sofort im Aug/Sep — Wochenmarkt / REWE
+### Online / Weinhandel / Specialty-Röster (vorab bestellen)
 
-- [ ] Tomaten, vollreif, 2 kg — Gang 1, JETZT verarbeiten & einfrieren *(fleischige Salatsorten/Ochsenherz als Basis + \~500 g aromatische Cherry-/Datteltomaten)*
+- [ ] Verjus, 500 ml — Gang 2 (110 ml) + optional Jus Gang 3 (150 ml) *(Weinhandel oder online, \~8–12 €; vielseitig: Vinaigretten, Poulet au vinaigre)*
+- [ ] Espressobohnen **entkoffeiniert**, 250 g, Specialty-Röster (Swiss-Water- oder CO2-Verfahren, dunklere Röstung) — Gang 4 *(billiger Decaf schmeckt flach/sauer — zeigt sich vor allem im Shakerato)*
+- [ ] Instant-Espressopulver **entkoffeiniert**, klein — Gang 4 *(Nescafé Gold/Lavazza Dek; Fallback: 1 TL sehr fein gemahlener Decaf)*
 
 ### Buhara Seafood (vorher anfragen!)
 
-- [ ] Jakobsmuscheln, 15 Stück, küchenfertig ohne Schale/Corail — Gang 2 *(Fallback: Selgros TK, dann über Nacht im Kühlschrank auftauen)*
+- [ ] Kaisergranat, **TK roh, ganz**, 12 Stück (\~1 kg, Größe 10–15 St./kg) — Gang 2 *(Etikett: Nephrops norvegicus; nicht vorgekocht, keine argentinischen Rotgarnelen. Fallback: Selgros TK)*
 
 ### Selgros (ein Trip; Lamm ggf. vorbestellen)
 
-- [ ] Lammkarree, frenched, 2 Stück à \~700–900 g — Gang 3
-- [ ] Lammknochen, gesägt, 1 kg — Jus Gang 3 *(Parüren vom Karree kommen dazu)*
-- [ ] Jakobsmuscheln TK — nur als Fallback, falls Buhara nicht liefert
+- [ ] Lammschulter **mit Knochen**, 2–2,2 kg — Gang 3 *(Alternative: türkischer Metzger, s. Offen)*
+- [ ] Lammknochen, gesägt, 500 g — Jus Gang 3
+- [ ] Kaisergranat TK — nur als Fallback, falls Buhara nicht liefert
 
 ### REWE Center
 
 **Obst & Gemüse:**
 - [ ] Cherry-/Datteltomaten, 150 g — Concassé Gang 1
 - [ ] Limetten, 4 Stück — Gang 1 + 2
-- [ ] Zitrone, 1 Stück — Gang 3
+- [ ] Zitronen, 2 Stück — Gang 3 (Püree + Lamm-Abrieb)
 - [ ] Mango, reif, 1 Stück — Gang 2
 - [ ] Ingwer, kleines Stück — Gang 2
 - [ ] Schalotten, 3 Stück — Gang 2
@@ -63,8 +88,8 @@ für Testläufe (Gang 2, Parfait) die jeweiligen Posten einzeln herauspicken.*
 - [ ] Basilikum, 1 Töpfchen — Garnitur Gang 1
 
 **Kühltheke / Milchprodukte:**
-- [ ] Butter, 500 g (2 × 250 g) — Gang 2 (\~205 g) + Gang 3 (\~120 g) + Gang 4 (30 g)
-- [ ] Ziegenfrischkäse, **mild**, 150 g — Gang 2 *(z. B. Chavroux; Petit Billy falls da — kräftig-rustikale Sorten (Caprinsäure) dominieren die feine Muschel)*
+- [ ] Butter, 500 g (2 × 250 g) — Gang 2 (\~220 g) + Gang 3 (\~90 g) + Gang 4 (30 g)
+- [ ] Ziegenfrischkäse, **mild, pasteurisiert**, 150 g — Gang 2 *(z. B. Chavroux; Petit Billy falls da — kräftig-rustikale Sorten (Caprinsäure) dominieren den feinen Kaisergranat; Etikett auf pasteurisierte Milch prüfen)*
 - [ ] Sahne, 500 ml — Gang 4 (300 ml) + Beurre-blanc-Stabilisierung
 - [ ] Vollmilch, 1 L — Püree Gang 3
 - [ ] Eier, 6 Stück — Gang 4 (4 Eigelb; Eiweiß-Verwertung einplanen)
@@ -73,15 +98,13 @@ für Testläufe (Gang 2, Parfait) die jeweiligen Posten einzeln herauspicken.*
 - [ ] Walnüsse, 100 g — Gang 2 (Praline 30 g + Crumble 50 g)
 - [ ] Agar-Agar, 1 Päckchen — Gang 2 *(Bio-/Backregal; Fallback: Chutney-Variante ohne Agar)*
 - [ ] Kakaonibs, klein — Gang 4 *(Bio-Regal; Fallback: Zartbitter 70 %+ gehackt)*
-- [ ] Instant-Espressopulver, klein — Gang 4
+- [ ] Dextrose (Traubenzucker), 25 g — Gang 4 *(Vorrat aus `eis/` prüfen)*
 - [ ] Brauner Zucker, 500 g — Gang 4 *(falls kein Vorrat)*
 
 **Getränke / Spirituosen:**
-- [ ] Weißwein, trocken, 1 Flasche — Gang 2 (80 ml)
-- [ ] Rotwein, kräftig, 1 Flasche — Jus Gang 3 (300 ml)
-- [ ] Wodka, kleine Flasche (350 ml) — Gang 4 (\~130–150 ml inkl. Schuss) *(neutraler 40%er reicht)*
-- [ ] Kahlúa o. ä. Kaffeelikör, 350 ml — Gang 4 (\~95 ml + Testlauf)
-- [ ] Fino- oder Oloroso-Sherry, klein — Gang 1, optional *(elegante Umami-Brücke)*
+- [ ] Rotwein, kräftig, 1 Flasche — Jus Gang 3 (300 ml, wird in Schüben trocken reduziert) *(alkoholfreie Option: 150 ml Verjus + 150 ml Wasser)*
+- [ ] Wodka, kleine Flasche — **nur Espresso-Martini-Schuss** Gang 4 (\~15 ml pro Trinker) *(neutraler 40%er reicht)*
+- [ ] Kahlúa o. ä. Kaffeelikör, klein — **nur Schuss** Gang 4 (\~10 ml pro Trinker)
 - [ ] Frittieröl, 1–2 L — Chips Gang 3
 
 **Gewürze:**
@@ -90,22 +113,23 @@ für Testläufe (Gang 2, Parfait) die jeweiligen Posten einzeln herauspicken.*
 
 ### Vorrat prüfen
 
+- [x] Tomatenwasser — Gang 1: **beide Klärwege (Püree-Block + klares Wasser) liegen seit 09/2026 im Gefrierfach**
 - [ ] Worcestershire-Sauce — Gang 1
 - [ ] Mildes Chiliöl — Gang 1 *(oder selbst ansetzen → Chili-Öl-Drill in `technik/mini-projekte.md`)*
-- [ ] Noilly Prat, 30 ml — Gang 2, optional
 - [ ] Weißweinessig — Gang 2
 - [ ] Butterschmalz — Gang 2 + 3
-- [ ] Espressobohnen — Gang 4 (\~150 ml gebrüht + 1 TL gemahlen)
-- [ ] Panko oder Mehl, Zucker, Honig, Muskat, Tomatenmark, Lorbeer — Kleinmengen
+- [ ] Gelatine, 1 Blatt — Gang 3, nur als Option für die Block-Bindung
+- [ ] Zucker (auch für 1:1-Zuckersirup, Shakerato), Panko oder Mehl, Honig, Muskat, Tomatenmark, Lorbeer — Kleinmengen
 
 ## Rezepte
 
 ### 1. Klares Tomatenwasser „feine Bloody Mary“ (Amuse)
 
-*Jetzt (Aug/Sep): \~30 Min. aktiv + Abtropf-/Gefrierzeit | Am Abend: \~15 Min. |
-Pro Portion: 60–70 ml | Equipment: Passiertuch (doppelt), feines Sieb, Gefrierbeutel*
+*Saison-Teil (Aug/Sep): \~30 Min. aktiv + Abtropf-/Gefrierzeit — **erledigt
+09/2026** | Am Abend: \~15 Min. | Pro Portion: 60–70 ml | Equipment:
+Passiertuch (doppelt), feines Sieb, Gefrierbeutel*
 
-**⚠️ Saison-Teil — JETZT erledigen (Aug/Sep):**
+**Saison-Teil (erledigt — zur Referenz fürs nächste Jahr):**
 
 1. 2 kg vollreife Tomaten (fleischige Salatsorten + \~500 g aromatische
    Cherry-/Datteltomaten) grob würfeln, mit 7 g Salz (3,5 g/kg) mischen.
@@ -152,12 +176,13 @@ Pro Portion: 60–70 ml | Equipment: Passiertuch (doppelt), feines Sieb, Gefrier
     je 1 TL Concassé, 60–70 ml Tomatenwasser angießen — vom Sediment weg,
     der letzte Schluck bleibt im Gefäß. Pro Erwachsenen-Glas
     2–3 Tropfen mildes Chiliöl (schwimmt als glänzende Perlen — Schärfe kurz
-    und präzise) und optional 3–5 ml Fino-Sherry. Basilikumspitze oder zartes
-    Selleriegrün aufsetzen; alternativ 2 Tropfen Kräuteröl
-    (→ `technik/mini-projekte.md`, größter Optik-Hebel).
+    und präzise). Basilikumspitze oder zartes Selleriegrün aufsetzen;
+    alternativ 2 Tropfen Kräuteröl (→ `technik/mini-projekte.md`, größter
+    Optik-Hebel). *(Der früher optionale Fino-Sherry ist gestrichen —
+    Schwangerschaft, und das Dritt-Feedback votierte ohnehin für „rein“.)*
 
-**Kind (3 J.):** eigenes Glas aus der Abzweigung (Schritt 6) — ohne Chiliöl,
-Worcestershire und Sherry, mit Concassé und Basilikum. Oder auslassen.
+**Kind (3 J.):** eigenes Glas aus der Abzweigung (Schritt 6) — ohne Chiliöl
+und Worcestershire, mit Concassé und Basilikum. Oder auslassen.
 
 > **Profi-Tipps:**
 > - Pressen/Quetschen des Tuchs ist Trübungs-Fehler Nr. 1 — Geduld schlägt Druck.
@@ -172,22 +197,32 @@ Worcestershire und Sherry, mit Concassé und Basilikum. Oder auslassen.
 - [ ] Klarheit + Aroma nach dem Auftauen: Weg A (Drip-Thaw) gegen Weg B
       (klassisch) verkosten — Gewinner wird Standard
 - [ ] Chiliöl: gekauft (mild) oder selbst angesetzt (Drill)?
-- [ ] Mit vs. ohne Fino-Sherry (3–5 ml) verkosten — Dritt-Feedback votiert
-      klar für „rein", bleibt aber optional, bis der Gaumen entscheidet
 
 ---
 
-### 2. Jakobsmuscheln, Limetten-Beurre-blanc, Mango-Gel & Ziegenkäse-Praline
+### 2. Kaisergranat, Verjus-Limetten-Beurre-blanc, Mango-Gel & Ziegenkäse-Praline
 
-*Vortag: \~45 Min. (Gel, Crumble, Pralinen) | Am Abend: \~25 Min., davon \~10 à la
-minute | Pro Portion: 2–3 Muscheln | Equipment: Feinwaage (0,1 g) fürs Agar,
-Spritzflasche (Fallback: Gefrierbeutel mit Eckschnitt), Küchenthermometer, 2 Pfannen*
+*Vortag: \~45 Min. (Gel, Crumble, Pralinen) + Kaisergranat auftauen | Am Tag:
+\~20 Min. Schwänze auslösen | Am Abend: \~25 Min., davon \~8 à la minute | Pro
+Portion: 2 Schwänze (Kind 1) | Equipment: Feinwaage (0,1 g) fürs Agar,
+Spritzflasche (Fallback: Gefrierbeutel mit Eckschnitt), Küchenthermometer,
+Küchenschere, 2 Pfannen*
 
-**Teller-Logik:** Muschel ist der Star. Mango nur als Akzent-Punkte (\~5–10 g
-pro Teller), nicht als Basis — sonst süß-penetrant. Praline klein und
-untergeordnet (\~25 g) auf Crumble-„Insel“ am Rand. Die Beurre blanc verbindet
-und **führt die Säure** — das Gel bleibt fruchtig-mild. Kein Yuzu (bewusst
-gestrichen: teuer, dominant, doppelte Exotik-Säure zur Mango).
+**Teller-Logik:** Kaisergranat ist der Star — süßer und zarter als Garnele, die
+klassische Partnerin von Beurre blanc und Limette. Anders als die ursprünglich
+geplante Jakobsmuschel wird er **ohnehin durchgegart** serviert (63–65 °C
+Kern, durchgehend opak), das Gericht verliert durch die Schwangerschafts-Regel
+also nichts. Mango nur als Akzent-Punkte (\~5–10 g pro Teller), nicht als Basis
+— sonst süß-penetrant. Praline klein und untergeordnet (\~25 g) auf
+Crumble-„Insel“ am Rand. Die Beurre blanc verbindet und **führt die Säure** —
+das Gel bleibt fruchtig-mild. Kein Yuzu (bewusst gestrichen: teuer, dominant,
+doppelte Exotik-Säure zur Mango).
+
+**Beschaffung, ehrlich:** Frischer Kaisergranat ist im Inland selten und teuer.
+Realistisch ist **TK roh, ganz, glasiert** (Buhara vorher anfragen, Fallback
+Selgros TK), \~30–40 €/kg. Nicht vorgekocht kaufen (wird beim zweiten Erhitzen
+gummiartig). Etikett: *Nephrops norvegicus* — „Langostinos“/argentinische
+Rotgarnelen sind eine andere Art und schmecken anders.
 
 **Mango-Gel (bis 2 Tage vorher, ideal am Vortag — Agar nässt ab Tag 3):**
 
@@ -216,123 +251,158 @@ gestrichen: teuer, dominant, doppelte Exotik-Säure zur Mango).
 
 **Ziegenkäse-Pralinen (Vortag formen, Wälzen erst am Abend):**
 
-6. 120 g **milden** Ziegenfrischkäse (s. Einkaufsliste) mit 1 TL Honig (nicht mehr — Masse wird klebrig,
-   Süße kommt am Teller vom Gel) und Pfeffer verkneten. 5 Kugeln à \~25 g
-   formen — 10–15 Min. anfrieren macht das Rollen sauber. Kalt lagern.
+6. 120 g **milden, pasteurisierten** Ziegenfrischkäse (s. Einkaufsliste) mit
+   1 TL Honig (nicht mehr — Masse wird klebrig, Süße kommt am Teller vom Gel)
+   und Pfeffer verkneten. 5 Kugeln à \~25 g formen — 10–15 Min. anfrieren
+   macht das Rollen sauber. Kalt lagern.
 7. Wälzmischung bereitstellen: 30 g Walnüsse fein gehackt + 2 EL fein gehackte
    Kräuter (Petersilie, Schnittlauch, etwas Thymian).
 8. **Erst ≤30 Min. vor dem Anrichten** wälzen (Panade zieht sonst Feuchtigkeit),
    dann Zimmertemperatur annehmen lassen. Noch sicherer: gar nicht wälzen,
    Praline aufs Crumble-Bett setzen und Wälzmischung darüber streuen.
 
-**Limetten-Beurre-blanc (\~20 Min. vor dem Gang):**
+**Kaisergranat vorbereiten (Vortag auftauen, am Tag auslösen):**
 
-9. 2 Schalotten (\~60 g) fein würfeln, mit 80 ml Weißwein, 30 ml Noilly Prat
-   (optional — sonst 110 ml Wein) und 25 ml Weißweinessig auf \~3 EL sirupös
-   einreduzieren.
-10. 2 EL Sahne einkochen — stabilisiert die Emulsion spürbar
+9. 12 Kaisergranat **über Nacht im Kühlschrank** auftauen (nie warm, nie im
+   Wasser — laugt aus). Köpfe abdrehen; Schwanz mit der Küchenschere an der
+   Bauchseite längs aufschneiden, Fleisch herausheben, den dunklen Darmfaden
+   ziehen. Köpfe und Schalen einfrieren — beste Basis für eine Bisque
+   (→ `gerichte/hummerbisque.md`).
+10. Schwänze sehr gründlich trockentupfen und **1–2 h offen auf
+    Gitter/Küchenpapier im Kühlschrank antrocknen** — Feuchtigkeit ist der
+    Feind der Kruste, TK-Ware zieht besonders Wasser.
+
+**Verjus-Limetten-Beurre-blanc (\~20 Min. vor dem Gang):**
+
+11. 2 Schalotten (\~60 g) fein würfeln, mit 110 ml Verjus und 25 ml
+    Weißweinessig auf \~3 EL sirupös einreduzieren. *(Verjus ersetzt Weißwein +
+    Noilly Prat 1:1 — gleiche Säure- und Fruchtrolle, kein Alkohol. Fallback
+    ohne Verjus: 60 ml Weißweinessig + 60 ml Wasser + 1 TL Zucker.)*
+12. 2 EL Sahne einkochen — stabilisiert die Emulsion spürbar
     (→ Beurre-blanc-Baustein in `technik/mini-projekte.md`).
-11. Bei kleinster Hitze 170 g eiskalte Butter würfelweise einschlagen — nächstes
+13. Bei kleinster Hitze 170 g eiskalte Butter würfelweise einschlagen — nächstes
     Stück erst, wenn das vorige emulgiert ist. **Nie über \~58 °C, nie kochen**
     (Thermometer!). Durch das feine Sieb passieren, salzen.
     Ergibt \~240 ml → 5 Spiegel à 35–40 ml + Reserve.
-12. Warm halten bei 50–55 °C (Wasserbad; oder vorgewärmte Thermoskanne — hält
+14. Warm halten bei 50–55 °C (Wasserbad; oder vorgewärmte Thermoskanne — hält
     bis 2 h). **Erst unmittelbar vor dem Anrichten**, vom Herd: Abrieb 1 Limette
     + 2 TL Saft einrühren, tropfenweise bis max. 3 TL abschmecken — Zitrus-Öle
     sind hitzeflüchtig, und Limette ist aggressiver als Zitrone.
     *(Gebrochen? → Emulsions-Notfall in `technik/abschmecken.md`.)*
 
-**Jakobsmuscheln (à la minute):**
+**Kaisergranat braten (à la minute):**
 
-13. Vorarbeit: 12–15 Muscheln (TK: über Nacht im Kühlschrank aufgetaut) sehr
-    gründlich trockentupfen, Seitenmuskel entfernen, dann **1–4 h offen auf
-    Gitter/Küchenpapier im Kühlschrank antrocknen** — Feuchtigkeit ist der
-    Feind der Kruste, TK-Ware zieht besonders Wasser.
-14. Teller vorwärmen (nicht heiß — Praline!). **Erst direkt vor dem Braten**
-    salzen.
-15. 2 Pfannen mit je 1 EL Butterschmalz sehr heiß werden lassen (leicht
-    rauchend). Max. 6–8 Muscheln pro 28er-Pfanne, 2–3 cm Abstand — zwei Pfannen
-    parallel schlagen zwei Chargen, denn Jakobsmuscheln verzeihen kein Warten.
-16. 90 Sek. braten ohne zu bewegen (goldbraune Kruste), wenden, \~60 Sek.,
-    dabei je 1 EL Butter zugeben und arrosieren. **Bei 46–48 °C Kern raus**
-    (Carryover → final \~52–54 °C: glasig-zart, nicht roh).
+15. Teller vorwärmen (nicht heiß — Praline!). Schwänze **erst direkt vor dem
+    Braten** salzen.
+16. 2 Pfannen mit je 1 EL Butterschmalz sehr heiß werden lassen (leicht
+    rauchend). 5–6 Schwänze pro Pfanne mit Abstand — zwei Pfannen parallel
+    schlagen zwei Chargen, Kaisergranat verzeiht kein Warten.
+17. 45–60 Sek. braten ohne zu bewegen (Röstfarbe), wenden, je 15 g Butter
+    zugeben und 45–60 Sek. arrosieren. **Bei 60–62 °C Kern raus** (Fühler längs
+    in den dicksten Teil) → Carryover auf \~63–65 °C: durchgehend opak,
+    fest-saftig — das ist „durchgegart“ im Sinne der Schwangerschafts-Regel und
+    zugleich der Punkt, an dem Kaisergranat am besten ist. Über \~70 °C wird er
+    gummiartig, also Thermometer statt Uhr.
 
-**Anrichten:** Knapper Spiegel Beurre blanc (35–40 ml), Muscheln (Bratseite
+**Anrichten:** Knapper Spiegel Beurre blanc (35–40 ml), 2 Schwänze (Bratseite
 oben) hineinsetzen. 3–5 Punkte Mango-Gel **neben/an den Rand des Spiegels**
 spritzen — im Saucenspiegel verlaufen sie. Am Tellerrand Crumble-Häufchen,
 Praline daraufsetzen, evtl. Kräuterspitzen.
 
-**Kind (3 J.):** Muschel + etwas Mango-Gel funktioniert direkt (Gel ist ohne
-Chili). Beurre blanc: Alkohol ist stark reduziert; wer sichergehen will →
-Mini-Portion ohne Sauce, dafür Extra-Bratbutter über die Muschel.
+**Kind (3 J.):** 1 Schwanz + etwas Mango-Gel funktioniert direkt (Gel ist ohne
+Chili). Beurre blanc ist alkoholfrei → Mini-Spiegel ist unkritisch.
 
 > **Profi-Tipps:**
-> - Agar-Punkte verlaufen auch neben heißen Muscheln nicht — das Gel ist bis
->   \~80 °C stabil. Genau deshalb Gel statt Chutney.
+> - Agar-Punkte verlaufen auch neben heißem Kaisergranat nicht — das Gel ist
+>   bis \~80 °C stabil. Genau deshalb Gel statt Chutney.
 > - Beurre blanc bricht unter \~35 °C (Butter erstarrt) genauso wie über
 >   \~58 °C — das Fenster ist breiter als sein Ruf, aber ein Thermometer
 >   nimmt den Stress.
-> - Eine Test-Muschel vorab braten und aufschneiden — kalibriert Pfanne und
->   Timing (Hochzeitstags-Learning: die Muscheln waren das Highlight).
+> - Einen Test-Schwanz vorab braten und aufschneiden — kalibriert Pfanne und
+>   Timing (Hochzeitstags-Learning: die Meeresfrüchte waren das Highlight).
+> - Die zwei überzähligen Schwänze sind die Reserve für den Test-Schwanz und
+>   einen misslungenen.
 
 **Offen (Testlauf):**
-- [ ] Volle Testportion: Gel-Süße vs. Muschel über den ganzen Teller — letzter
-      Bissen noch gut?
+- [ ] Volle Testportion: Gel-Süße vs. Kaisergranat über den ganzen Teller —
+      letzter Bissen noch gut? (Kaisergranat ist selbst süß — evtl. Gel-Zucker
+      auf 1 EL)
+- [ ] Garpunkt: 60–62 °C Ausstieg reicht für „durchgehend opak“? Test-Schwanz
+      aufschneiden
+- [ ] Verjus-Beurre-blanc gegen die Erinnerung an die Wein-Version: fehlt
+      Tiefe? (dann 1 TL mehr Essig, nicht mehr Verjus)
 - [ ] Praline 20 g vs. 25 g und gewälzt vs. Crumble-Bett — auf Testteller
       entscheiden *(Tendenz: 20 g — auch Dritt-Feedback votiert für kleiner)*
-- [ ] Buhara: frische Jakobsmuscheln verfügbar & Preis?
+- [ ] Buhara: Kaisergranat TK roh verfügbar, Größe & Preis? Sonst Selgros
+- [ ] Verjus-Quelle (Weinhandel vor Ort oder online)
 
 ---
 
-### 3. Lammkarree rückwärts, Selleriepüree, Rosenkohl zweierlei, Rotwein-Lammjus
+### 3. Geschmorte, gepresste Lammschulter, Selleriepüree, Rosenkohl zweierlei, Lammjus
 
-*Jus: 1–2 Tage vorher, \~4–5 Std. (meist passiv) | Vortag: Karree parieren +
-Dry-Brine | Am Tag: \~2 Std. verteilt, \~15 Min. à la minute | Pro Portion:
-3 Koteletts (Kind 1–2) | Equipment: Fleischthermometer, Bräter, Mandoline,
-Passiertuch, Topf zum Frittieren*
+*T-1: \~1 h aktiv + 3–3,5 h Schmoren (passiv) + Pressen über Nacht | Am Tag:
+\~2 Std. verteilt (Püree, Rosenkohl, Chips, Jus reduzieren), \~20 Min. à la
+minute | Pro Portion: 1 Block (\~150 g, Kind ½) | Equipment: Bräter mit
+Deckel, 2 Kastenformen 20 cm (eine als Gewicht), Fleischthermometer,
+Mandoline, Passiertuch, Topf zum Frittieren*
 
-**Teller-Logik:** Karree rückwärts gegart (gleichmäßig rosa, kaum Ruhezeit,
-Sear à la minute), Selleriepüree bewusst leicht (Milch statt Sahne — Fett-Bilanz
-des Menüs), Rosenkohl zweigleisig (kross UND knallgrün geht nicht im selben
-Blatt), Jus statt Sahnesauce. Sellerie-Chips als zweites Crunch-Element.
-November = volle Rosenkohl-Saison.
+**Teller-Logik:** Lammschulter am Vortag geschmort, gezupft und in der
+Kastenform gepresst; am Abend werden Blöcke rundum knusprig gebraten und im
+Ofen auf ≥ 70 °C Kern durchgewärmt — Restaurant-Format („pressed lamb
+shoulder“), sauber zu tellern, und die Schwangerschafts-Regel „durch“ ist
+damit automatisch erfüllt, ohne dass irgendwer trockenes Fleisch bekommt.
+Schmorflüssigkeit und Jus sind **ein** Prozess. Selleriepüree bewusst leicht
+(Milch statt Sahne — Fett-Bilanz, Schmorlamm ist fetter als Karree), Rosenkohl
+zweigleisig (kross UND knallgrün geht nicht im selben Blatt), Jus statt
+Sahnesauce. Sellerie-Chips als zweites Crunch-Element. November = volle
+Rosenkohl-Saison. Nebeneffekt: Der Abend ist entspannt — kein Rückwärtsgaren,
+keine Ofen-Kollision, Gang 3 ist zu 90 % vom Vortag.
 
-**Rotwein-Lammjus (1–2 Tage vorher, ergibt \~250 ml):**
+**Schmoren + Jus (T-1, ergibt \~800 g gezupftes Fleisch + \~250–300 ml Jus):**
 
-1. Ofen 220 °C: 1 kg Lammknochen + Parüren vom Karree dünn mit Öl bepinseln,
-   einlagig aufs Blech, 20–30 Min. **goldbraun** rösten — nicht tiefdunkel!
-   Anders als beim Schweinefond (→ `technik/dunkle-bratensauce.md`): Lammknochen
-   werden dunkel geröstet **bitter**. Die Saucen-Grammatik von dort (Reduktion
-   in Schüben, Gewürze ans Ende, Montage) gilt trotzdem.
-2. Im Bräter 150 g Zwiebel, 100 g Karotte und 100 g Sellerie (von der
-   Püree-Knolle) grob gewürfelt in 1 EL Öl tief braun anrösten. 1 EL (15 g)
-   Tomatenmark zugeben, 1–2 Min. mitrösten, **ständig rühren** (verbrannt =
-   bitter).
-3. Knochen zugeben, mit 100 ml Rotwein ablöschen und fast trocken einkochen.
-   Zweimal wiederholen (insgesamt 300 ml) — in Etappen reduziert statt in einem
-   Schwung dominiert die Wein-Säure nicht.
-4. 1,5 L kaltes Wasser angießen, 1 Lorbeerblatt, 1 Zweig Thymian. 3–4 Std. bei
-   \~90 °C sanft ziehen lassen — **nicht kochen** (trüb), anfangs Schaum
-   abschöpfen.
-5. Durch feines Sieb + Passiertuch passieren, entfetten (am einfachsten: über
-   Nacht kalt stellen, Fettdeckel abheben). Auf \~250 ml sanft reduzieren —
-   zu heftiges Reduzieren macht bitter und trüb. **Kein Salz bis zum Schluss**
-   (Konzentration!).
-6. Am Abend: Jus erwärmen, jetzt erst salzen, vom Herd 25 g eiskalte Butter
-   einschwenken (montieren), danach nicht mehr kochen. Übrige Menge in
-   Eiswürfelform einfrieren.
-   *(Fallback ohne Knochen: nur Parüren + gekaufter Lammfond, kräftig
-   reduziert — funktioniert, wird aber flacher.)*
-
-**Karree vorbereiten (Vortag):**
-
-7. Fettdeckel auf 3–5 mm parieren (nicht ganz entfernen — viel Lamm-Aroma
-   sitzt im Fett; wer es dezenter mag, pariert knapper), Silberhaut darunter
-   entfernen. Fettdeckel kreuzweise im 1-cm-Raster einschneiden — bis aufs
-   Fleisch, nicht hinein (rendert besser, krosser).
-8. Beide Karrees rundum mit insgesamt \~8–10 g Salz (1,5 TL) würzen und
-   **unabgedeckt** auf einem Gitter über Nacht in den Kühlschrank
-   (Dry-Brine: würzt durch + trocknet die Oberfläche für den Sear).
+1. Ofen 220 °C: 500 g Lammknochen dünn mit Öl bepinseln, einlagig aufs Blech,
+   20–30 Min. **goldbraun** rösten — nicht tiefdunkel! Anders als beim
+   Schweinefond (→ `technik/dunkle-bratensauce.md`): Lammknochen werden dunkel
+   geröstet **bitter**. Die Saucen-Grammatik von dort (Reduktion in Schüben,
+   Gewürze ans Ende, Montage) gilt trotzdem.
+2. Lammschulter (2–2,2 kg mit Knochen) trockentupfen, Fettdeckel auf \~5 mm
+   parieren (Parüren zu den Knochen), rundum mit 2,5–3 TL Salz (\~15–18 g)
+   würzen — gern schon am T-2 als Dry-Brine unabgedeckt im Kühlschrank. Im
+   Bräter in 1 EL Öl bei hoher Hitze rundum tief braun anbraten (\~10 Min.),
+   herausnehmen.
+3. Im selben Bräter 150 g Zwiebel, 100 g Karotte und 100 g Sellerie (von der
+   Püree-Knolle) grob gewürfelt tief braun anrösten. 1 EL (15 g) Tomatenmark
+   zugeben, 1–2 Min. mitrösten, **ständig rühren** (verbrannt = bitter).
+4. Mit 100 ml Rotwein ablöschen und **fast trocken** einkochen. Zweimal
+   wiederholen (insgesamt 300 ml) — in Etappen reduziert dominiert die
+   Wein-Säure nicht, und der Alkohol ist praktisch komplett verkocht, bevor
+   Flüssigkeit dazukommt (Schwangerschaft: das ist der Grund, warum der Wein
+   hier bleiben darf). *(Null-Risiko-Option: 150 ml Verjus + 150 ml Wasser
+   statt Wein, gleich reduziert — Jus wird etwas flacher.)*
+5. Knochen und Schulter in den Bräter, kaltes Wasser bis \~⅔ Höhe der Schulter
+   angießen (\~1–1,5 L), 1 Lorbeerblatt, 2 Zweige Thymian, 4 angedrückte
+   Knoblauchzehen. Aufkochen, Schaum abschöpfen, Deckel drauf, im Ofen bei
+   **150 °C 3–3,5 Std.** schmoren, bis das Fleisch vom Knochen fällt (Gabel
+   dreht sich ohne Widerstand). Nach der Hälfte einmal wenden.
+6. Schulter herausheben, 10 Min. abkühlen lassen, dann **warm** zupfen: Haut,
+   Fett, Sehnen und Knochen raus, Fleisch grob in 1–2-cm-Stücke zerpflücken
+   (nicht zu fein — Struktur bleibt). Mit 4–5 EL passierter, noch unreduzierter
+   Schmorflüssigkeit, Abrieb ½ Zitrone, 1 EL gehackter Petersilie, ½ TL fein
+   gehacktem Rosmarin, Pfeffer und Salz abschmecken — **kräftig**: der Block
+   wird kalt gegessen probiert, aber warm serviert, und die Jus kommt dazu.
+7. Kastenform mit Frischhaltefolie auslegen (Überstand), Fleisch einfüllen und
+   **fest** andrücken (\~4 cm hoch). Folie darüberschlagen, zweite Kastenform
+   hineinsetzen, mit 2–3 Dosen beschweren, über Nacht kalt stellen. Die
+   Gelatine der Schmorflüssigkeit bindet den Block.
+   *(Option, falls der Block beim ersten Mal zerfällt: 1 Blatt Gelatine in den
+   4–5 EL Fond auflösen — notieren, nicht vorsorglich.)*
+8. Schmorflüssigkeit durch feines Sieb + Passiertuch passieren, über Nacht kalt
+   stellen, **Fettdeckel abheben** (Schulter gibt viel Fett ab — der Deckel ist
+   das wichtigste Werkzeug gegen ein schweres Menü). Am Tag auf \~250–300 ml
+   **sanft** reduzieren — zu heftiges Reduzieren macht bitter und trüb. **Kein
+   Salz bis zum Schluss** (Konzentration!). Am Abend erwärmen, salzen, vom Herd
+   25 g eiskalte Butter einschwenken (montieren), danach nicht mehr kochen.
+   Übrige Menge in Eiswürfelform einfrieren.
 
 **Selleriepüree (am Nachmittag, hält warm):**
 
@@ -369,127 +439,151 @@ November = volle Rosenkohl-Saison.
     Servieren.** *(Ofen-Fallback für beide: 150–160 °C, 15–25 Min., einlagig —
     einfacher, aber weniger kross.)*
 
-**Karree garen & Service:**
+**Lammblöcke & Service:**
 
-16. Karrees \~1 Std. vor Garstart aus dem Kühlschrank. Ofen 120 °C
-    Ober-/Unterhitze. Karrees auf Gitter + Blech, Thermometer-Fühler in die
-    dickste Stelle: **bis 48–50 °C Kern** ziehen lassen (\~25–40 Min. je nach
-    Dicke — nach Thermometer arbeiten, nicht nach Uhr).
-17. Karrees raus, locker mit Folie decken, **10–20 Min. parken** (bis \~30 Min.
-    okay) — das ist das Puffer-Fenster: Ofen auf 80 °C für die Teller drehen,
-    Püree finalisieren, Jus erwärmen.
-18. À la minute: Pfanne mit 1 EL Butterschmalz sehr heiß. **Fettdeckel-Seite
-    zuerst**, \~3 Min. bis tief gebräunt und das Fett gerendert ist; übrige
-    Seiten je 30–45 Sek. 30 g Butter, 2 Zweige Rosmarin, 2 Zweige Thymian,
-    2 angedrückte Knoblauchzehen zugeben, 1 Min. arrosieren.
-19. Nur 3–5 Min. ruhen lassen (Rückwärts-Vorteil: flacher Temperaturgradient,
-    final \~54–56 °C = rosa). Zwischen den Rippen tranchieren.
-20. Parallel: blanchierte Rosenkohlblätter in 20 g aufschäumender Butter
+16. Block \~1 Std. vor Gang 3 aus dem Kühlschrank (temperiert wärmt schneller
+    durch), an der Folie aus der Form heben, in 5 Scheiben à \~4 cm schneiden
+    (≈ 4 × 4 × 10 cm, \~150 g). Kanten glatt — das ist der Look.
+17. Nach Gang 2: Ofen von 80 °C (Teller) auf **140 °C** stellen, Teller solange
+    gestapelt daneben (halten die Wärme). Pfanne mit 1 EL Butterschmalz
+    mittel-hoch, Blöcke **in 2 Chargen** allseitig je 1–2 Min. knusprig braten
+    (Edelstahl: nicht überladen, Chargen-Learning aus Bulgogi/Bò lúc lắc; die
+    Schnittflächen zuerst, sie halten den Block zusammen).
+18. Blöcke auf Gitter + Blech, Thermometer in den dicksten, im **140 °C Ofen
+    12–18 Min.** bis **≥ 70 °C Kern** — nach Thermometer, nicht nach Uhr. Das
+    ist die Schwangerschafts-Grenze (Listerien nach Lagerung) und zugleich der
+    Punkt, an dem der Block innen wieder saftig-warm ist.
+19. Parallel: blanchierte Rosenkohlblätter in 20 g aufschäumender Butter
     1–2 Min. schwenken (nur erwärmen), 1 Prise Salz, kleiner Spritzer Zitrone.
-    Jus montieren (Schritt 6).
+    Jus montieren (Schritt 8). Chips salzen.
 
-**Anrichten:** Püree-Spiegel oder -Nocke, 3 Koteletts angelehnt, grüne Blätter
-und Chips-Blätter gemischt darüber/daneben, Sellerie-Chips aufgestellt, Jus
-angegossen (nicht über die Chips — weichen auf).
+**Anrichten:** Püree-Spiegel oder -Nocke, Lammblock daraufgesetzt, grüne
+Blätter und Chips-Blätter gemischt darüber/daneben, Sellerie-Chips
+aufgestellt, Jus angegossen (nicht über die Chips — weichen auf).
 
-**Kind (3 J.):** Die dünneren End-Koteletts nehmen — sie sind
-natürlicherweise weiter gegart. Dazu Püree und weiche grüne Blätter; Jus ist
-unkritisch (nicht scharf, Rotwein voll reduziert). Funktioniert ohne
-Extra-Version.
+**Kind (3 J.):** halber Block — weich, mild, nichts Scharfes. Dazu Püree und
+weiche grüne Blätter; Jus ist unkritisch (nicht scharf, Wein verkocht).
+Funktioniert ohne Extra-Version.
 
 > **Profi-Tipps:**
 > - Der Röstgrad-Unterschied ist das wichtigste Jus-Learning: Schweineknochen
 >   „fast schwarz“, **Lammknochen nur goldbraun** — sonst bitter.
-> - Rückwärtsgaren entschärft das Timing komplett: der Sear passiert auf dem
->   Herd, der Ofen ist nach Schritt 17 frei, und das Park-Fenster (10–30 Min.)
->   ist eingebauter Puffer statt Stress.
-> - Ausbeute pro frenched Karree ist nur \~350–450 g Fleisch — 2 Karrees für
->   4–5 Personen sind kein Luxus, sondern passend.
+> - Der Block ist der Grund, warum dieser Gang am Abend keinen Stress macht:
+>   alles Handwerk passiert am Vortag, der Abend ist Anbraten + Ofen mit
+>   Thermometer-Alarm.
+> - Fettdeckel der Schmorflüssigkeit konsequent abheben — Lammschulter ist
+>   deutlich fetter als Karree, und die Jus soll klar und leicht bleiben.
 > - Chips-Regel: alles, was knuspern soll, bleibt bis zur letzten Sekunde
 >   offen, trocken und ungesalzen.
 
 **Offen (Testlauf / Beschaffung):**
-- [ ] **Lammquelle klären:** Selgros (Karree + Knochen in einem Trip) vs.
+- [ ] **Lammquelle klären:** Selgros (Schulter + Knochen in einem Trip) vs.
       türkischen Metzger identifizieren — der ist in CLAUDE.md ohnehin als
       Lücke markiert und meist die beste Lammquelle (Qualität, Preis, Knochen
       auf Zuruf). Dieser Gang wäre der Anlass.
+- [ ] Block-Bindung: hält der Block beim Anbraten? Sonst Gelatine-Option
+      (Schritt 7) fürs nächste Mal notieren.
 - [ ] Bitter-Balance: Rosenkohl ist milder als der ursprünglich geplante
       Chicorée — fehlt dem Menü der herbe Gegenpol? Auf Testteller: evtl.
       wenige rohe Radicchio-Streifen für Farbe + Bitterkick. *(Tendenz laut
       Dritt-Feedback: unnötig — die frittierten Blätter bringen selbst genug
       Röst-/Bitternoten. Erst pur testen.)*
-- [ ] Karree-Größe real prüfen (2 oder 3 Rippen p. P. — hängt vom Karree ab)
+- [ ] Rotwein-Reduktion vs. Verjus-Option in der Jus — Default bleibt Wein
+      (trocken reduziert), bei Unbehagen Verjus
 
 ---
 
-### 4. Espresso-Martini-Parfait mit Martini-Schuss am Tisch
+### 4. Espresso-Parfait (Decaf) mit Schuss am Tisch — Espresso-Martini oder Shakerato
 
 *Parfait: 1–2 Tage vorher, \~30 Min. aktiv + über Nacht TK | Crumble: Vortag |
 Am Abend: \~5 Min. à la minute | 4–5 Erwachsenen-Portionen (Kastenform 20 cm) |
 Equipment: Küchenthermometer, Handrührer, Shaker (Fallback: dickwandiges
 Schraubglas), feines Sieb*
 
-**Konzept:** Kälte unterdrückt Aroma- und Alkoholwahrnehmung, Wodka ist fast
-neutral — nur Alkohol in die Masse macht das Parfait weicher, aber kaum
-„martiniger“. Deshalb zweistufig: kräftige Parfait-Masse (Espresso + Kahlúa +
-so viel Wodka, wie die Textur trägt) **plus** frisch geshakter, eiskalter
-Martini-Schuss am Tisch — der liefert die scharfe, präsente Alkoholnote, die
-im Gefrorenen physikalisch nicht geht, und der frische Espresso schäumt beim
-Shaken von selbst → Crema-Schicht ohne Siphon.
+**Konzept:** Kälte unterdrückt Aroma- und Alkoholwahrnehmung — Alkohol in der
+Parfait-Masse macht sie vor allem weicher, aber kaum „martiniger“. Deshalb
+war das Konzept von Anfang an zweistufig: kräftige Espresso-Masse **plus**
+frisch geshakter, eiskalter Schuss am Tisch. Der Umbau zieht die Konsequenz:
+**die Masse ist komplett alkoholfrei** (Schwangerschaft), die Weichheit kommt
+stattdessen von etwas Dextrose und kurzem Temperieren, und der Schuss gibt es
+in zwei Versionen aus demselben Espresso-Brühgang — **Espresso-Martini** für
+die Trinker, **Espresso-Shakerato** (Espresso + Zuckersirup, hart geshakt) für
+die Schwangere und alle, die wollen. Beide schäumen beim Shaken → Crema-Schicht
+ohne Siphon, gleicher Show-Moment.
 
-**Ethanol-Check (verifiziert):** Masse \~625 g, davon \~375 g Wasser. Stufe 1
-(55 ml Wodka + 45 ml Kahlúa) ≈ 23 g Ethanol = 3,7 Gew.-% ≈ **6 % vom
-Wassergewicht** — klar unter der 8–10-%-Grenze für schnittfeste Semifreddi
-bei −18 °C, Gefrierpunkt der Masse \~−3,7 °C. **Stufe 2** (+20 ml Wodka) ≈
-7,5 % vom Wasser — noch drin, aber nahe der Kante: mehr nicht, und nicht
-gleichzeitig den Espresso auf 80 ml erhöhen (nur eine Stellschraube drehen).
+**Decaf für alle:** Masse, Crumble und beide Shakes laufen auf entkoffeiniertem
+Espresso — passt zur späten Stunde und nimmt der Schwangeren die
+Koffein-Rechnung ab (koffeinhaltig wären \~90–100 mg pro Portion, also ein
+halbes Tagesbudget). Geschmacks-Bedingung: **Specialty-Decaf** (Swiss-Water-
+oder CO2-Verfahren, frisch geröstet, dunklere Röstung). In der Masse (Zucker,
+Sahne, Nibs) ist der Unterschied kaum wahrnehmbar; im Shakerato zeigt sich
+billiger Decaf als flach und sauer. Im Testlauf die Decaf-Charge probieren,
+Röster ggf. wechseln.
+
+**Ei-Check:** Die Pâte à bombe wird auf **75–82 °C** gezogen — das ist
+pasteurisiert (Leitfaden: ≥ 70 °C), kein rohes Ei. Thermometer ist deshalb
+Pflicht, nicht Kür.
+
+**Textur-Check (ersetzt die alte Ethanol-Rechnung):** Ohne Alkohol friert das
+Parfait fester als die Martini-Version. Masse \~560 g, Zucker 70 g + 25 g
+Dextrose ≈ 15 % Gesamtzucker (Dextrose bringt \~1,9× die Gefrierpunkt-
+Senkung von Haushaltszucker bei \~70 % Süße — sie ersetzt den Kahlúa-Zucker
+und federt die Härte ab). Standard-Parfaits ohne Alkohol sind so gebaut und
+schnittfest-cremig, wenn man sie **10–15 Min. im Kühlschrank temperiert**
+oder gefroren schneidet und 3–4 Min. auf dem Teller wartet, bevor der Schuss
+kommt. Zu hart im Testlauf → **eine** Stellschraube: Dextrose 25 → 40 g
+(Schokoladeneis-Learning), nicht gleichzeitig Zucker oder Espresso ändern.
 
 **Kaffee-Crumble (Vortag):**
 
 1. 40 g Mehl, 30 g weiche Butter, 25 g brauner Zucker, 1 TL fein gemahlener
-   Espresso, 20 g Kakaonibs und 1 Prise Salz krümelig verreiben (Nibs von
-   Anfang an mit — sie sind schon geröstet und leiden nicht). 160 °C,
+   Decaf-Espresso, 20 g Kakaonibs und 1 Prise Salz krümelig verreiben (Nibs
+   von Anfang an mit — sie sind schon geröstet und leiden nicht). 160 °C,
    12–15 Min., einmal durchrühren. Auskühlen lassen (härtet nach), luftdicht
    bei Raumtemperatur. **Nie einfrieren oder kühlen** — zieht Feuchtigkeit.
 
 **Parfait (1–2 Tage vorher):**
 
-2. 4 Eigelb, 70 g Zucker, 60 ml ausgekühlten doppelt starken Espresso, 2 TL
-   Instant-Espressopulver und 2 g Salz (\~⅓ TL) in einer Schüssel über dem
-   Wasserbad „zur Rose“ dick-cremig aufschlagen: **75–82 °C** (Thermometer —
-   ab 70 °C pasteurisiert, über 84 °C gerinnt es). Espresso von Anfang an mit:
-   so bindet er ein, statt später Volumen zu kosten.
+2. 4 Eigelb, 70 g Zucker, 25 g Dextrose, 90 ml ausgekühlten doppelt starken
+   Decaf-Espresso, 2 TL entkoffeiniertes Instant-Espressopulver und 2 g Salz
+   (\~⅓ TL) in einer Schüssel über dem Wasserbad „zur Rose“ dick-cremig
+   aufschlagen: **75–82 °C** (Thermometer — ab 70 °C pasteurisiert, über 84 °C
+   gerinnt es). Espresso von Anfang an mit: so bindet er ein, statt später
+   Volumen zu kosten.
 3. Vom Wasserbad nehmen und kaltschlagen, bis die Masse unter \~30 °C ist
    (Handrührer, 5–8 Min.) — warme Masse schmilzt gleich die Sahne.
-4. 45 ml Kahlúa + 55 ml Wodka (beides kalt) einschlagen — **komplett in die
-   Eigelbmasse, bevor die Sahne kommt**: nur so verteilt sich der Alkohol
-   homogen und schichtet sich nicht ab.
-5. 300 ml Sahne zu **weichen Spitzen** schlagen — ausdrücklich nicht steif
+4. 300 ml Sahne zu **weichen Spitzen** schlagen — ausdrücklich nicht steif
    (beim Falten kommt Scherung dazu, übersteift wird’s buttrig-körnig).
-6. ⅓ der Eigelbmasse in die Sahne rühren (Konsistenzen angleichen), dann den
+5. ⅓ der Eigelbmasse in die Sahne rühren (Konsistenzen angleichen), dann den
    Rest mit dem Teigschaber locker unterheben — zügig, nicht rühren.
-7. In die mit Folie ausgelegte 20-cm-Kastenform, glattstreichen, Folie
-   aufflegen. **Mind. über Nacht** bei voller Gefrierleistung — Alkohol-Parfait
-   braucht länger und bleibt weicher als normales. Die ungefrorene Masse darf
-   ruhig einen Tick zu süß/zu kräftig schmecken: Kälte dämpft beides.
+6. In die mit Folie ausgelegte 20-cm-Kastenform, glattstreichen, Folie
+   auflegen. **Mind. über Nacht** bei voller Gefrierleistung. Die ungefrorene
+   Masse darf ruhig einen Tick zu süß/zu kräftig schmecken: Kälte dämpft
+   beides.
 
 **Service (à la minute):**
 
-8. Dessertteller ins Gefrierfach (15 Min. reichen) — **Teller mit leichter
+7. Parfait **10–15 Min. vor dem Dessert** in den Kühlschrank (temperieren).
+   Dessertteller ins Gefrierfach (15 Min. reichen) — **Teller mit leichter
    Vertiefung** (Coup-Teller / tiefer Teller mit breitem Rand): auf komplett
-   flachem Teller läuft der Schuss sofort an den Rand. Espresso für den Schuss
-   **erst jetzt** brühen — die Crema ist das Schaummittel, abgestandener
-   Espresso schäumt nicht.
-9. Parfait an der Folie aus der Form heben. Messer in heißem Wasser erwärmen,
+   flachem Teller läuft der Schuss sofort an den Rand. Decaf-Espresso für die
+   Schüsse **erst jetzt** brühen (\~30 ml pro Person) — die Crema ist das
+   Schaummittel, abgestandener Espresso schäumt nicht. Zuckersirup (1:1,
+   Zucker in gleich viel heißem Wasser gelöst, abgekühlt) bereithalten.
+8. Parfait an der Folie aus der Form heben. Messer in heißem Wasser erwärmen,
    abwischen, 2,5–3-cm-Scheiben schneiden, nach jedem Schnitt Messer neu
    erwärmen. Scheiben auf die gefrosteten Teller, Crumble als Streifen
-   daneben/darunter, 3 Kaffeebohnen. **Nicht antauen lassen** — der Schuss
-   übernimmt das Anschmelzen.
-10. Ein Shake für den ganzen Tisch: 75 ml Wodka, 50 ml Kahlúa, 75 ml frischer
-    Espresso (optional 10 ml Zuckersirup — IBA-klassisch, hilft dem Schaum)
-    auf 4–5 Eiswürfel. 15–20 Sek. **hart** shaken bis der Shaker beschlägt,
-    durch das feine Sieb doppelt abseihen. Ergibt \~130 ml = 5–6 Schüsse.
-11. **Am Tisch** je 20–25 ml über die Scheibe gießen — aus leichter Höhe, das
+   daneben/darunter, 3 Kaffeebohnen. *(GDM-Portion: Scheibe \~2 cm, das sind
+   \~15 g Zucker + \~5 g aus dem Crumble.)*
+9. **Shake 1 — Espresso-Shakerato (alkoholfrei), pro Person:** 30 ml frischer
+   Decaf-Espresso + 10 ml Zuckersirup auf 3–4 Eiswürfel, 15–20 Sek. **hart**
+   shaken, bis der Shaker beschlägt, durch das feine Sieb abseihen — dichter,
+   heller Schaum.
+   **Shake 2 — Espresso-Martini, pro Trinker:** 15 ml Wodka + 10 ml Kahlúa +
+   15 ml frischer Decaf-Espresso (optional 2 ml Zuckersirup — IBA-klassisch,
+   hilft dem Schaum), gleiche Technik. Für 3 Trinker also 45/30/45 ml in einem
+   Shake.
+10. **Am Tisch** je 20–25 ml über die Scheibe gießen — aus leichter Höhe, das
     fördert den Schaum obendrauf („Crema“). Sofort essen: der Rand schmilzt
     bewusst cremig an, aber nicht trödeln.
 
@@ -501,15 +595,15 @@ Walnusscrumble-Reste.
 > - Schraubglas als Shaker funktioniert: dickwandiges Glas (dünnes kann beim
 >   Temperaturschock springen), 3–4 Eiswürfel, 30 Sek. shaken, Deckel mit
 >   Spalt als Vorsieb + feines Sieb.
-> - Der Schuss zählt nicht in die Ethanol-Rechnung der Masse — genau deshalb
->   trägt das Konzept: schnittfestes Parfait UND präsente Alkoholnote.
-> - Kahlúa bringt \~16 g Zucker auf 45 ml mit — wer den Likör erhöht, süßt mit.
+> - Zwei Shakes nacheinander aus einem Brühgang: erst den Shakerato (kein
+>   Alkohol-Rest im Shaker), dann den Martini.
 > - Eiweiß-Verwertung: 4 Eiweiß → Financiers (Beurre-noisette-Drill in
 >   `technik/mini-projekte.md`) oder einfrieren.
 
 **Offen (Testlauf):**
-- [ ] Textur Stufe 1 (3,7 %) bei −18 °C: schnittfest? Alkoholnote präsent
-      genug oder Stufe 2 (+20 ml Wodka)?
+- [ ] Textur ohne Alkohol bei −18 °C nach 10–15 Min. Temperieren: schnittfest
+      und cremig? Sonst Dextrose 40 g
+- [ ] Decaf-Qualität: Shakerato solo probieren — flach/sauer = Röster wechseln
 - [ ] Schuss-Menge 20 vs. 25 ml pro Teller (zu viel ertränkt die Scheibe)
 - [ ] Kakaonibs im REWE Center beschaffbar oder Schoko-Fallback?
 - [ ] Dessertteller mit Vertiefung (Coup) vorhanden? Sonst besorgen oder
@@ -520,39 +614,54 @@ Walnusscrumble-Reste.
 ## Zeitplan-Skelett (Abend, grob — Feinschliff nach Testläufen)
 
 **Vortage:**
-- T-2: Lammjus kochen (kalt stellen) · Parfait einfrieren · **Weg A: Tomaten-
-  Püree-Block ins Passiertuch (Drip-Thaw braucht 24–48 h!)**
-- T-1: Jus entfetten & reduzieren · Mango-Gel · beide Crumbles ·
-  Ziegenkäse-Pralinen formen (ungewälzt) · **Karree parieren + Dry-Brine** ·
-  Weg B: Tomatenwasser in den Kühlschrank zum Auftauen
+- T-2: **Tomaten-Püree-Block (Weg A) aus dem Gefrierfach ins Passiertuch
+  (Drip-Thaw braucht 24–48 h!)** · Parfait einfrieren · Lammschulter salzen
+  (Dry-Brine, optional) · Lammknochen ggf. schon rösten
+- T-1: **Lammschulter schmoren (3–3,5 h), zupfen, pressen; Schmorflüssigkeit
+  passieren und kalt stellen** · Mango-Gel · beide Crumbles · Ziegenkäse-
+  Pralinen formen (ungewälzt) · Kaisergranat im Kühlschrank auftauen · Weg B:
+  Tomatenwasser in den Kühlschrank zum Auftauen
 
 **Am Tag:**
+- Vormittags: Fettdeckel von der Schmorflüssigkeit, Jus auf 250–300 ml
+  reduzieren · Kaisergranat auslösen, Schalen einfrieren
 - Nachmittags: Rosenkohlblätter lösen, Hälfte blanchieren · Selleriepüree ·
-  Chips frittieren (Sellerie, dann Rosenkohl — halten 1–2 h) ·
-  Karree 1 h vor Garstart aus dem Kühlschrank
+  Chips frittieren (Sellerie, dann Rosenkohl — halten 1–2 h) · Kaisergranat
+  offen antrocknen · Lammblock 1 h vor Gang 3 aus dem Kühlschrank, schneiden ·
+  Ofen 80 °C für Teller
 - Gang 1 (0:00): Tomatenwasser abschmecken, anrichten — kein Herd nötig
   (Grundwürzung schon 1–2 h vorher)
-- Gang 2 (+0:20): Beurre blanc montieren, Muscheln à la minute (\~10 Min. aktiv)
-- Gang 3 (+1:00): Karree war parallel im 120-°C-Ofen (Thermometer-Alarm 48 °C),
-  parkt während Gang 2 gegessen wird · Sear + Püree/Blätter/Jus à la minute
-- Gang 4 (+1:45): Parfait-Scheiben gefroren schneiden, Schuss am Tisch shaken
+- Gang 2 (+0:20): Beurre blanc montieren, Kaisergranat à la minute (\~8 Min.
+  aktiv)
+- Gang 3 (+0:55): Ofen auf 140 °C, Blöcke anbraten, 12–18 Min. Ofen bis
+  ≥ 70 °C Kern (Thermometer-Alarm) · parallel Rosenkohl schwenken, Jus
+  montieren, Chips salzen
+- Gang 4 (+1:45): Parfait 10–15 Min. vorher in den Kühlschrank, Scheiben
+  schneiden, Espresso brühen, Shakerato und Martini am Tisch shaken
 
-**Ofen-Kollision (gelöst):** Chips werden frittiert statt gebacken, der
-Karree-Sear passiert auf dem Herd — der Ofen macht nur noch 120 °C (Karree)
-und danach 80 °C (Teller). Kein Konflikt mehr.
+**Ofen-Plan (entschärft):** Chips werden frittiert, das Lamm ist geschmort —
+der Ofen macht am Abend nur 80 °C (Teller) und dann 140 °C (Blöcke
+durchwärmen). Der frühere Konflikt Karree/Chips/Teller existiert nicht mehr.
 
 ## To-do gesamt
 
-- [ ] **SOFORT: 2 kg Tomaten kaufen, beide Klärwege einfrieren (Saisonfenster!)**
-- [ ] Testlauf Gang 2 (volle Portion — Balance-Check)
-- [ ] Testlauf Parfait (Alkohol-Stufe 1 vs. 2, Textur, Schuss-Menge)
+- [x] 2 kg Tomaten kaufen, beide Klärwege einfrieren (erledigt 09/2026)
+- [ ] Verjus + Specialty-Decaf (Bohnen + Instant) bestellen
+- [ ] Buhara: Kaisergranat TK roh anfragen (Größe, Preis); Fallback Selgros
+- [ ] Testlauf Gang 2 (volle Portion — Kaisergranat-Garpunkt, Verjus-Beurre-
+      blanc, Gel-Süße)
+- [ ] Testlauf Parfait (alkoholfrei mit 25 g Dextrose: Textur; Decaf-Qualität;
+      Shakerato-Schaum; Schuss-Menge)
 - [ ] Probelauf Tomatenwasser: Weg A vs. Weg B verkosten
-- [ ] Lammquelle klären (Selgros vs. türkischen Metzger finden — Repo-Lücke)
+- [ ] Lammquelle klären (Selgros vs. türkischen Metzger finden — Repo-Lücke);
+      Schulter mit Knochen 2–2,2 kg
+- [ ] Block-Bindung beim ersten Anbraten beobachten (Gelatine-Option)
 - [x] Kinder-Dessert: **Rest Mango-Gel (Gang 2) + Kugel Vanilleeis (gekauft)**,
       optional Walnusscrumble-Reste. Dafür: kein Chili im Mango-Gel.
 - [ ] Nach den Testläufen: Abend-Zeitplan ausformulieren (absolute Uhrzeiten
       wie im Hochzeitstagsmenü)
-- [ ] Weinbegleitung? (optional — bei Interesse separat durchdenken)
+- [ ] Getränkebegleitung? (alkoholfrei mitdenken — Verjus-Schorle, Tomatenwasser-
+      Rest; optional Wein für die Gäste)
 
 ## Quellen & Entscheidungen
 
@@ -562,32 +671,39 @@ und danach 80 °C (Teller). Kein Konflikt mehr.
 - Klare Bloody-Mary-Würzung: [Looye — „Ghost of Mary“](https://www.looye.com/en/recipes/clear-bloody-mary), [Cocktails Distilled — Clarified Bloody Mary](https://cocktailsdistilled.com/clarify-bloody-mary/)
 - Kälte dämpft Umami: [Mashed — Ideal Soup Temperature (Chemical Senses 2016)](https://www.mashed.com/707361/science-says-this-is-the-ideal-temperature-for-soup/)
 
-**Gang 2 — Jakobsmuscheln:**
+**Gang 2 — Kaisergranat:**
 - Agar-Fluid-Gel (0,8 %, Säure nach dem Kochen): [Amazing Food Made Easy — Agar](https://www.amazingfoodmadeeasy.com/info/modernist-ingredients/more/agar-agar), [eathealthy365 — Fruit Fluid Gel](https://eathealthy365.com/how-to-make-a-basic-fruit-fluid-gel/)
-- Beurre blanc (Ratio, Ausbeute, Temperaturfenster): [Serious Eats — Beurre Blanc](https://www.seriouseats.com/beurre-blanc-recipe), [CooksInfo — Beurre Blanc](https://www.cooksinfo.com/beurre-blanc)
-- Braten & Kerntemperatur: [ThermoWorks — Pan-Seared Scallops](https://blog.thermoworks.com/pan-seared-scallops-a-how-to-with-critical-temperatures/), [Fifteen Spatulas — Wet vs. Dry Scallops](https://www.fifteenspatulas.com/how-to-sear-scallops-wet-vs-dry-scallops/)
+- Beurre blanc (Ratio, Ausbeute, Temperaturfenster): [Serious Eats — Beurre Blanc](https://www.seriouseats.com/beurre-blanc-recipe), [CooksInfo — Beurre Blanc](https://www.cooksinfo.com/beurre-blanc); Verjus als Wein-Ersatz ist Standard in der alkoholfreien Saucenküche (gleiche Säure/Frucht, kein Ethanol)
+- Garpunkt Schalentiere: [FDA — Safe Minimum Internal Temperatures](https://www.fda.gov/food/buy-store-serve-safe-food/safe-minimum-internal-temperatures) (63 °C / 145 °F für Fisch und Schalentiere, „opak“); Kaisergranat wird über \~70 °C gummiartig — deshalb Ausstieg bei 60–62 °C mit Carryover
+- Artbezeichnung: Kaisergranat = *Nephrops norvegicus* (auch „Langustine“, „Scampi“); argentinische Rotgarnele (*Pleoticus muelleri*) ist ein anderes Tier
 
 **Gang 3 — Lamm:**
-- Reverse Sear Karree: [Cook Primal Gourmet](https://cookprimalgourmet.com/recipes/reverse-seared-rack-lamb/), [ThermoWorks — Rack of Lamb](https://blog.thermoworks.com/how-to-roast-a-rack-of-lamb/), [Grillfürst — Kerntemperatur Lammkarree](https://www.grillfuerst.de/magazin/kerntemperatur/lamm/lammkarree/)
-- Dry-Brine & Fettdeckel: [Nom Nom Paleo — Rack of Lamb](https://nomnompaleo.com/rack-of-lamb), [America's Test Kitchen — Roasted Rack of Lamb](https://www.americastestkitchen.com/recipes/8560-roasted-rack-of-lamb-with-roasted-red-pepper-relish)
+- Gepresste Lammschulter: Great British Chefs, „pressed lamb shoulder“ (mehrere Varianten — Prinzip: schmoren, zupfen, in Form pressen, kalt schneiden, anbraten); intern Schmor-Grundlagen aus [Lamm-Kleftiko](/gerichte/lamm-kleftiko.md)
 - Lammjus (Röstgrad, Mengen): [tobiaskocht — Lammjus](https://www.tobiaskocht.com/kochrezept/lamm-jus.html), [eat.de — Lammsoße mit Knochen](https://eat.de/rezept/lammsosse-mit-knochen-zubereiten/), [ichkoche.at — Lammjus](https://www.ichkoche.at/lammjus-rezept-1544)
 - Selleriepüree in Milch: [küchegemacht — Selleriepüree](https://kuechegemacht.de/rezepte/selleriepueree-rezept/)
 - Rosenkohl-Chips frittiert: [Saveur — Fried Brussels Sprout Chips](https://www.saveur.com/article/Recipes/Fried-Brussel-Sprout-Chips-with-Sweet-Chili-Sauce)
+- Schwangerschaft: Kerntemperatur ≥ 70 °C, Alkohol-Restgehalt beim Kochen → [Leitfaden](/schwangerschaft/leitfaden.md)
 
 **Gang 4 — Parfait:**
-- Alkohol-Grenzen Semifreddo (8–10 % vom Wasser): [Spirited Licks — Alcohol in Ice Cream](https://spiritedlicks.com/recipes/alcohol-in-ice-cream-the-complete-guide/)
-- PAC/Gefrierpunkt (Ethanol-Faktor 740): [Eisfunke — Freezing Point Depression](https://www.eisfunke.com/notes/freezing-point-depression)
 - Pâte à bombe & Falttechnik: [Kitchen Projects #34 — All About Parfait (Nicola Lamb)](https://kitchenprojects.substack.com/p/kitchen-project-34-all-about-parfait)
+- PAC/Gefrierpunkt (Dextrose \~190 vs. Saccharose 100): [Eisfunke — Freezing Point Depression](https://www.eisfunke.com/notes/freezing-point-depression); Dextrose-Stellschraube intern aus [Schokoladeneis](/eis/schokoladeneis-dunkel.md)
 - Espresso-Martini-Schaum: [The Double Strainer — Espresso Martini Guide](https://www.thedoublestrainer.com/post/espresso-martini-the-complete-recipe-technique-and-foam-troubleshooting-guide)
+- Caffè shakerato: italienischer Standard (Espresso + Zuckersirup auf Eis, hart geshakt, ohne Eis serviert) — keine Einzelquelle nötig
 - Kakaonib-Streusel: [Videri Chocolate Factory — Cocoa Nib Streusel](https://viderichocolatefactory.com/blog/recipie-cocoa-nib-streusel)
 
 **Zentrale Entscheidungen:**
-- **Rückwärtsgaren statt vorwärts** (Gang 3): gleichmäßiger rosa, minimale
-  Ruhezeit, Sear à la minute — und löst die Ofen-Kollision nebenbei.
+- **Umbau statt Sonderportionen (09/2026):** Schwangerschaft + GDM der Frau
+  → Kaisergranat statt Jakobsmuschel (durchgegart ohne Verlust), Schmor-Block
+  statt Karree (durch ≥ 70 °C, entlastet zugleich den Abend), Alkohol nur noch
+  im optionalen Schuss (das Konzept trug das schon), Verjus-Beurre-blanc und
+  Decaf durchgehend für alle.
+- **Schmoren und Jus als ein Prozess:** Schmorflüssigkeit = Jus. Spart den
+  separaten Fond und gibt der Jus die Schulter mit.
 - **Chips frittiert statt Ofen:** krosser, hält länger, Ofen bleibt frei.
-- **Zucker im Parfait 70 g statt 60 g:** Kälte dämpft Süße überproportional;
-  13–14 % Gesamtzucker (inkl. Kahlúa) ist bereits das untere Ende für Frozen
-  Desserts.
+- **Zucker im Parfait 70 g + 25 g Dextrose:** Kälte dämpft Süße
+  überproportional; ohne Alkohol übernimmt die Dextrose die Gefrierpunkt-
+  Senkung des früheren Wodka/Kahlúa-Anteils — teilweise, nicht ganz, deshalb
+  temperieren.
 - **Ein kombinierter Einkauf statt Listen pro Gang:** Export-Buttons der Site
   hängen an `## Einkaufsliste` + Laden-Gruppen; Gang-Zuordnung steht am Posten.
 
@@ -598,13 +714,21 @@ und danach 80 °C (Teller). Kein Konflikt mehr.
 
 | Zutat | Gang 1 | Gang 2 | Gang 3 | Gang 4 | Gesamt |
 |---|---|---|---|---|---|
-| Butter | — | \~205 g (Beurre blanc 170 + Crumble 20 + Arrosieren 15) | \~120 g (Püree 45 + Jus 25 + Blätter 20 + Arrosieren 30) | 30 g (Crumble) | **\~355 g → 500 g kaufen** |
+| Butter | — | \~220 g (Beurre blanc 170 + Crumble 20 + Arrosieren 2 × 15) | \~90 g (Püree 45 + Jus 25 + Blätter 20) | 30 g (Crumble) | **\~340 g → 500 g kaufen** |
 | Limetten | ½–1 (Saft 10–15 ml) | 1 (Beurre blanc) + ½ (Gel) + 1 Reserve | — | — | **4 Stück** |
+| Zitronen | — | — | 1 TL Saft (Püree) + Abrieb ½ (Block) + Spritzer (Blätter) | — | **2 Stück** |
+| Verjus | — | 110 ml | optional 150 ml (statt Rotwein) | — | **110–260 ml → 500 ml** |
+| Weißweinessig | — | 25 ml | — | — | **25 ml (Vorrat)** |
+| Rotwein | — | — | 300 ml (in Schüben trocken reduziert) | — | **1 Flasche** |
 | Sahne | — | 2 EL (Stabilisierung) | — | 300 ml | **\~330 ml → 500 ml kaufen** |
-| Espresso | — | — | — | 60 ml Masse + 75 ml Schuss + 1 TL gemahlen | **\~150 ml, 2 Chargen** |
-| Knollensellerie | — | — | 600 g Püree + 150 g Chips + 100 g Jus + Schälverlust | — | **1 Knolle \~1,2 kg** |
+| Decaf-Espresso | — | — | — | 90 ml Masse + \~30 ml pro Schuss (5 P. ≈ 150 ml) + 1 TL gemahlen | **\~250 ml gebrüht, 2–3 Chargen; 250 g Bohnen reichen weit** |
+| Wodka | — | — | — | 15 ml pro Trinker (3 → 45 ml) | **\~50 ml + Testlauf → kleine Flasche** |
+| Kahlúa | — | — | — | 10 ml pro Trinker (3 → 30 ml) | **\~35 ml + Testlauf → kleine Flasche** |
+| Zucker / Dextrose | — | 1–2 EL (Gel) | — | 70 g + 25 g Dextrose (Masse) + 25 g brauner (Crumble) + Sirup \~20 g | **\~150 g Zucker, 25 g Dextrose** |
+| Kaisergranat | — | 12 Stück (\~1 kg): 2 × 4 Erw. + 1 Kind + 2–3 Reserve/Test | — | — | **12 Stück TK** |
+| Lamm | — | — | Schulter 2–2,2 kg mit Knochen + 500 g Knochen | — | **\~2,7 kg** |
+| Knollensellerie | — | — | 600 g Püree + 150 g Chips + 100 g Schmoransatz + Schälverlust | — | **1 Knolle \~1,2 kg** |
 | Walnüsse | — | 30 g Praline + 50 g Crumble | — | — | **80 g** |
-| Wodka | — | — | — | 55 ml Masse + 75 ml Schuss | **\~130 ml (+ Testlauf-Reserve)** |
-| Kahlúa | — | — | — | 45 ml Masse + 50 ml Schuss | **\~95 ml (+ Testlauf)** |
+| Eier | — | — | — | 4 Eigelb | **6 kaufen** |
 
 </details>

@@ -1,6 +1,6 @@
 - [Ideen-Backlog](/ideen.md)
 - **🚧 in arbeit**
-  - [Menü November — Tomatenwasser / Jakobsmuschel / Lamm / Espresso-Martini-Parfait](/menues/menue-november.md)
+  - [Menü November — Tomatenwasser / Kaisergranat / Schmorlamm / Espresso-Parfait](/menues/menue-november.md)
 - **backen**
   - [✅ Vollkornbrötchen auf Vorrat — Weizen als Leitrezept, Dinkel und Weizen-Roggen als Varianten (12 Stück)](/backen/vollkornbroetchen.md)
 - **desserts**
