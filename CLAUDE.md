@@ -315,6 +315,20 @@ Hand editieren, Learnings gehören in die Rezeptdatei.
 - ✅ **Dunkles Schokoladeneis — Crème-anglaise-Basis (ca. 1 l, 8–10 Kugeln)** (siehe `eis/schokoladeneis-dunkel.md`)
   **Gemacht 09/2026.** Fantastisch — intensiv, cremig, nicht zu süß, schmeckt fast wie gefrorenes Mousse au chocolat. Rezept hat auf Anhieb funktioniert, Technik (Crème anglaise auf 82–84 °C, Stabmixer-Emulsion, 24 Std. Reifen) ist gesetzt und wird die Basis für weitere Custard-Eissorten. Einziger Punkt: **recht hart gefroren** — bei Schokoeis erwartbar (Kakaobutter setzt im Gefrierfach steinhart aus, Kakaofeststoffe binden Wasser, und dieses Rezept ist bewusst zuckerarm), aber verbesserbar. Fürs nächste Mal eine Stellschraube testen (Dextrose 40 → 60 g als erster Versuch; Details im Rezept), nicht mehrere gleichzeitig.
 
+- ✅ **Sapporo-Style Miso-Tonkotsu-Ramen — Menü (6 Schüsseln)** (siehe `gerichte/ramen-miso-tonkotsu.md`)
+  **Gekocht 09/2026 (komplettes Menü, 4 Erwachsene + 2 Kinder).** Technisch hat
+  alles funktioniert, aber das Menü war als Ganzes **zu heftig**. Vorspeise:
+  einfach und lecker, bleibt. Hauptgang: sehr schwer — niemand hat die Schüssel
+  ganz geschafft, den Frauen war es zu fettig/cremig; mir hat es gut geschmeckt,
+  die Kinder haben zumindest etwas davon gegessen. Dessert: Panna Cotta gut und
+  sehr einfach, Yuzu präsent, aber dezent — nach dem schweren, würzigen Hauptgang
+  zu mild, es fehlte der Kontrast. Kern-Learning: Sapporo-Miso auf Tonkotsu ist
+  konzeptionell einer der schwersten Ramen-Stile, und in dieser Schüssel ist
+  **jede** Komponente reichhaltig (emulgierte Brühe, Sesam-Miso-Tare, Wok-Schmalz,
+  Niku-Miso, Butter). Für den Haushalt („klare elegante Brühen") ist das die
+  falsche Ecke — nächstes Miso-Ramen auf Hähnchen-Chintan-Basis bauen, und das
+  Dessert nach einem fetten Hauptgang immer sauer/kalt/leicht statt cremig.
+
 - ✅ **Vollkornbrötchen auf Vorrat — Weizen als Leitrezept, Dinkel und Weizen-Roggen als Varianten (12 Stück)** (siehe `backen/vollkornbroetchen.md`)
   **Gebacken 09/2026 (Weizen rein, von Hand).** Fluffig und geschmacklich gut, vor allem mit Sonnenblumenkernen — die Rezeptbasis (Poolish + Kochstück + Quellstück) stimmt. Schwächen: von Hand zu kurz geknetet, Teig sehr klebrig, Rundschleifen hat nicht funktioniert → etwas flache, verlaufene Brötchen. Fix in diese Fassung eingebaut: Hauptteig-Wasser für Handarbeit von 120 g auf 80 g gesenkt, Kneten durch Slap & Fold plus 3× Dehnen & Falten ersetzt, 10 Min. Zwischengare vor dem Schleifen, Teigkarten-Technik für weichen Teig — beim nächsten Mal zu validieren.
 

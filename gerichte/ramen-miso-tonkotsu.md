@@ -416,6 +416,72 @@ Die Brühe bekommt hier nur 7-7,5 h — Untergrenze. Dafür alle Vorarbeiten am 
 - Ivan Orkin, „Ivan Ramen" — Tare-Dosierung und Schüssel-Choreografie.
 - Intern: [Leitfaden Schwangerschaft](/schwangerschaft/leitfaden.md) (Eier, Sprossen, Alkohol, Hack), [Abschmecken](/technik/abschmecken.md) (Salz-Startwert 0,8-1,0 %), [Garpunkte](/technik/garpunkte.md) (Eier-Tabelle, Hack ≥ 72 °C), Chargen-Learning aus [Bulgogi](/gerichte/bulgogi.md) und [Bò lúc lắc](/gerichte/bo-luc-lac.md).
 
+## Learnings
+
+**Gekocht 09/2026 (komplettes Menü, 4 Erwachsene + 2 Kinder).** Technisch hat
+alles funktioniert, aber das Menü war als Ganzes **zu heftig**. Vorspeise:
+einfach und lecker, bleibt. Hauptgang: sehr schwer — niemand hat die Schüssel
+ganz geschafft, den Frauen war es zu fettig/cremig; mir hat es gut geschmeckt,
+die Kinder haben zumindest etwas davon gegessen. Dessert: Panna Cotta gut und
+sehr einfach, Yuzu präsent, aber dezent — nach dem schweren, würzigen Hauptgang
+zu mild, es fehlte der Kontrast. Kern-Learning: Sapporo-Miso auf Tonkotsu ist
+konzeptionell einer der schwersten Ramen-Stile, und in dieser Schüssel ist
+**jede** Komponente reichhaltig (emulgierte Brühe, Sesam-Miso-Tare, Wok-Schmalz,
+Niku-Miso, Butter). Für den Haushalt („klare elegante Brühen") ist das die
+falsche Ecke — nächstes Miso-Ramen auf Hähnchen-Chintan-Basis bauen, und das
+Dessert nach einem fetten Hauptgang immer sauer/kalt/leicht statt cremig.
+
+### Hauptgang: Warum so schwer
+
+- Fettquellen addiert pro Erwachsenen-Schüssel: \~420 ml emulgierte Tonkotsu
+  (Fett bewusst nicht abgeschöpft, Stabmixer-Emulsion), 1,5 EL Wok-Schmalz pro
+  Durchgang, Sesampaste + Sesamöl in der Tare, Niku-Miso aus Hack, 10 g Butter.
+  Dazu 150 g frische Nudeln. Kein Element in der Schüssel bringt Säure oder
+  Frische — der einzige Gegenpol im Menü war die Gurken-Vorspeise.
+- Das ist kein Ausführungsfehler, sondern der Stil: Sapporo-Läden (Sumire &
+  Co.) servieren genau so, mit Schmalzdeckel. Wer das mag (ich), bekommt hier
+  das Richtige. Für Frau und Gäste passt es nicht.
+
+### Fürs nächste Mal — drei Stufen (alle ungetestet)
+
+1. **Gleiche Brühe, kleinere und weniger fette Schüssel:** 300–320 ml Brühe
+   und 110–120 g Nudeln statt 420 ml / 150 g (Tare proportional, \~1,7 EL pro
+   300 ml). Wok-Fett von 1,5 EL auf 1 TL pro Durchgang, Butter weglassen oder
+   nur für die Kinder-Schüsseln. Brühe am Vortag gelieren lassen und den
+   **Fettdeckel komplett abnehmen** (nur davon das Wok-Fett nehmen) — das
+   emulgierte Fett bleibt, das freie Fett ist raus. Kleinster Eingriff, aber
+   der Charakter „cremig-schwer" bleibt; löst nur den „niemand schafft es"-Teil.
+2. **Frische in die Schüssel bauen:** Beni Shoga (eingelegter roter Ingwer,
+   Asialaden), Yuzu-Kosho oder ein Hauch Yuzu-Zeste auf den Erwachsenen-
+   Schüsseln, mehr Frühlingszwiebel, blanchierter Spitzkohl statt eines Teils
+   der Sprossen, Nori. Säure und Bitterkeit schneiden durch das Fett — das ist
+   das, was der Schüssel wirklich fehlte.
+3. **Brühe wechseln (Empfehlung):** Miso-Tare + Niku-Miso + Wok-Methode
+   funktionieren genauso auf **Hähnchen-Chintan** (bewährt aus
+   [Shoyu-Ramen](/gerichte/ramen-shoyu-chintan.md), Suppenhuhn + Flügel) —
+   Röstaroma und Miso-Wucht bleiben, das schwere Schweinefett fällt weg. Als
+   Mittelweg 50/50 Tonkotsu + Chintan („Tori-Ton"), wenn die 14-L-Brühe
+   sowieso läuft und portionsweise eingefroren wird. Ehrlich gesagt: Bei den
+   Vorlieben im Haushalt ist Tonkotsu als Basis eher eine Sache für mich allein
+   oder für Gäste, die es explizit wollen.
+
+### Dessert: Kontrast statt Wiederholung
+
+- Panna Cotta als Rezept ist gut und trivial im Aufwand — behalten, aber nach
+  einem **leichten** Hauptgang (Fisch, klare Brühe). Nach Fett + Miso wirkt
+  Sahne-auf-Sahne stumpf, egal wie viel Yuzu drin ist.
+- Nach schwerem Hauptgang: **Sorbet** (Yuzu-/Zitronen- oder Cantaloupe-Sorbet
+  aus der Eismaschine — das Cantaloupe-Sorbet hat nach dem
+  [Oktopus](/gerichte/oktopus-geschmort.md) genau diese Rolle gut erfüllt),
+  oder wenigstens ein sauer-kalter Gegenpol auf der Panna Cotta:
+  Passionsfrucht-/Himbeer-Coulis statt der süßen Agar-Kanten und Yuzu am oberen
+  Ende (4 EL, ggf. mehr — bei ≤ 30 °C einrühren, flockt nicht).
+
+### Kinder
+
+Haben mitgegessen, ohne Begeisterung, aber auch nicht abgeneigt — die
+Kinder-Dosierung (2–3 EL Tare gesamt, kein Doubanjiang, Eiswürfel) war passend.
+
 ## Mengen-Check
 
 <details>
