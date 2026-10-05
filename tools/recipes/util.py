@@ -208,3 +208,13 @@ def sentence_prefixes(text: str) -> list[str]:
     """Alle Präfixe aus ganzen Sätzen (Kandidaten für action)."""
     ends = [m.start() + 1 for m in _SENT_END.finditer(text)] + [len(text.rstrip())]
     return [text[:e].strip() for e in ends]
+
+
+def slugify(s: str) -> str:
+    import unicodedata
+    s = re.sub(r"[*_`]", "", s).lower()
+    for a, b in (("ä", "ae"), ("ö", "oe"), ("ü", "ue"), ("ß", "ss")):
+        s = s.replace(a, b)
+    s = "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c))
+    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+    return s or "x"

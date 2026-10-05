@@ -2,7 +2,7 @@
 import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
 import { escapeTilde, fmtAmount, fmtClock, highlight, isoSeconds, noteMarkdown, normalizeState, remainderAfterAction, textWithAction,
-         scaleAmount, scaleStepText, timerChoices } from "../kochmodus/lib.js";
+         scaleAmount, scaleStepText, timerChoices, isActive, selection, selectionKey, variantText } from "../kochmodus/lib.js";
 
 const r = JSON.parse(readFileSync(new URL("../schema/beispiele/thit-kho-trung.json", import.meta.url), "utf8"));
 const ing = Object.fromEntries(r.ingredients.map((i) => [i.id, i]));
@@ -69,12 +69,32 @@ t("Alter localStorage-Zustand (timers als Objekt) wird migriert, Müll verworfen
   assert.equal(s.factor, 2); assert.equal(s.done.karamell, true); assert.deepEqual(s.shop, {});
   assert.deepEqual(normalizeState(null).timers, []);
   assert.equal(s.note, "");
-  assert.deepEqual(normalizeState({ timers: "quatsch", done: [], factor: -1 }), { done: {}, note: "", shop: {}, timers: [], factor: 1, order: "ablauf" });
+  assert.deepEqual(normalizeState({ timers: "quatsch", done: [], factor: -1 }), { done: {}, note: "", shop: {}, timers: [], factor: 1, order: "ablauf", variant: {} });
 });
 t("Gemischter Bruch: 1½ EL ×2 → 3 EL, ×0,5 → ¾ EL; 1,5 wird „1½“", () => {
   const st = { ingredients: [{ ref: "fischsauce", amount: { text: "1½ EL Fischsauce", value: 1.5, unit: "EL" } }] };
   assert.equal(scaleStepText("1½ EL Fischsauce dazu", st, 2, {}), "3 EL Fischsauce dazu");
   assert.equal(scaleStepText("1½ EL Fischsauce dazu", st, 0.5, {}), "¾ EL Fischsauce dazu");
   assert.equal(fmtAmount({ value: 1.5, unit: "EL" }), "1½ EL");
+});
+t("Varianten: Auswahl mit Default, only = oder je Dimension, und über Dimensionen", () => {
+  const rec = { variants: [{ id: "mehl", default: "weizen", choices: [{ id: "weizen" }, { id: "dinkel" }] }, { id: "weg", default: "einfrieren", choices: [{ id: "einfrieren" }, { id: "kombi" }] }] };
+  const sel = selection(rec, { mehl: "dinkel", weg: "quatsch" });
+  assert.deepEqual(sel, { mehl: "dinkel", weg: "einfrieren" });
+  assert.equal(selectionKey(sel), "mehl=dinkel,weg=einfrieren");
+  assert.ok(isActive(["weg=einfrieren", "weg=kombi"], sel));
+  assert.ok(!isActive(["weg=kombi"], sel));
+  assert.ok(!isActive(["mehl=dinkel", "weg=kombi"], sel));
+  assert.ok(isActive(undefined, sel));
+});
+t("Varianten: Menge tauschen, Klammer ohne Menge filtern, Dosierungen mitziehen", () => {
+  const st = { alts: [{ text: "(Weizen-Roggen: 90 g, Dinkel: 40 g)", base: "80 g Wasser", options: [{ when: "mehl=weizen-roggen", text: "90 g" }, { when: "mehl=dinkel", text: "40 g" }] },
+                      { text: "(Dinkel: 25, 50, 75)", options: [{ when: "mehl=dinkel", text: "25, 50, 75" }] }],
+               ingredients: [{ ref: "wasser", amount: { text: "80 g Wasser", value: 80, unit: "g" }, byVariant: { "mehl=dinkel": [{ ref: "wasser", amount: { text: "40 g", value: 40, unit: "g" } }] } }] };
+  const txt = "80 g Wasser (Weizen-Roggen: 90 g, Dinkel: 40 g) dazu. Nach 30, 60 und 90 Min. (Dinkel: 25, 50, 75) falten.";
+  assert.equal(variantText(txt, st, { mehl: "weizen" }).text, "80 g Wasser dazu. Nach 30, 60 und 90 Min. falten.");
+  const d = variantText(txt, st, { mehl: "dinkel" });
+  assert.equal(d.text, '<mark class="variant">40 g Wasser</mark> dazu. Nach 30, 60 und 90 Min. <mark class="variant">(Dinkel: 25, 50, 75)</mark> falten.');
+  assert.equal(scaleStepText(d.text, { ingredients: d.ingredients }, 2, {}), '<mark class="variant">80 g Wasser</mark> dazu. Nach 30, 60 und 90 Min. <mark class="variant">(Dinkel: 25, 50, 75)</mark> falten.');
 });
 console.log(`${n} Tests ok`);

@@ -109,6 +109,11 @@ def check_d(recipe: dict) -> tuple[list[str], list[str]]:
                 used.add(si["ref"])
                 if f"ingredient:{si['ref']}" not in ids:
                     errs.append(f"D step:{step['id']}.ingredients[{j}] ref '{si['ref']}' unbekannt")
+                for when, alts in si.get("byVariant", {}).items():  # Varianten-Dosierungen (AP6)
+                    for a in alts:
+                        used.add(a["ref"])
+                        if f"ingredient:{a['ref']}" not in ids:
+                            errs.append(f"D step:{step['id']}.ingredients[{j}].byVariant[{when}] ref '{a['ref']}' unbekannt")
                 if si.get("spanForm") == "derived":
                     derived.append(f"step:{step['id']}.ingredients[{j}]")
     # Schritt-Graph: after/start lösen auf, kein Selbstbezug, keine Zyklen (Vorgänger-Default eingeschlossen)
@@ -175,6 +180,19 @@ def check_d(recipe: dict) -> tuple[list[str], list[str]]:
         errs += [f"D learnings.notes[{i}].ref '{n['ref']}' löst nicht auf" for i, n in enumerate(sec.get("notes", [])) if n["ref"] not in ids]
     for sec in [*sections(recipe, "todo"), *[s for c in iter_courses(recipe) for s in sections(c, "todo")]]:
         errs += [f"D todo.items[{i}].ref '{it['ref']}' löst nicht auf" for i, it in enumerate(sec["items"]) if it.get("ref") and it["ref"] not in ids]
+    choices = {f"{d['id']}={c['id']}" for d in recipe.get("variants", []) for c in d["choices"]}
+    def chk(where: str, refs) -> None:
+        errs.extend(f"D {where}: Wahl '{r}' nicht deklariert" for r in refs or [] if r not in choices)
+    for i in recipe.get("ingredients", []): chk(f"ingredient:{i['id']}.only", i.get("only"))
+    for task in iter_tasks(recipe):
+        chk(f"task:{task['id']}.only", task.get("only"))
+        for step in task["steps"]:
+            chk(f"step:{step['id']}.only", step.get("only"))
+            chk(f"step:{step['id']}.alts", [o["when"] for a in step.get("alts", []) for o in a["options"]])
+            chk(f"step:{step['id']}.byVariant", [k for si in step["ingredients"] for k in si.get("byVariant", {})])
+    for sec in sections(recipe, "schedule"):
+        chk(f"schedule:{sec['schedule']['id']}.only", sec["schedule"].get("only"))
+        for e in sec["schedule"]["entries"]: chk(f"schedule:{sec['schedule']['id']}.entry.only", e.get("only"))
     if unused := [i["id"] for i in recipe.get("ingredients", []) if i["id"] not in used]:
         reps.append(f"D Zutaten ohne Dosierung in Schritten: {', '.join(unused)}")
     reps.append(f"D {len(derived)} derived-Feld(er)" + (": " + ", ".join(derived) if derived else ""))

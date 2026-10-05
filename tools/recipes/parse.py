@@ -9,7 +9,11 @@ import re
 from dataclasses import dataclass, field
 
 from .shopping import parse_qty
-from .util import NUM, sentence_prefixes, split_h2, ws_key
+from . import variants as V
+from .util import NUM, sentence_prefixes, slugify, split_h2, ws_key
+
+# Varianten des gerade geparsten Rezepts (parse_recipe setzt sie, bevor Einkaufsliste und Schritte gelesen werden)
+DIMS: list[dict] = []
 
 # ------------------------------------------------------------------ Vokabular
 STORES = [("asialaden", "Asialaden"), ("rewe center", "REWE Center"), ("rewe / aldi", "Aldi / REWE"), ("aldi / rewe", "Aldi / REWE"),
@@ -22,7 +26,7 @@ GROUP_WORDS = [("obst", "Obst & Gemüse"), ("gemüse", "Obst & Gemüse"), ("flei
 SECTION_TAGS = [("kind", "kind"), ("schwangerschaft", "schwangerschaft"), ("beschaffung", "beschaffung"), ("quellen", "quellen"),
                 ("notizen", "notizen"), ("stil-entscheidung", "stil"), ("teller-logik", "teller-logik"), ("konzept", "teller-logik"),
                 ("profi-tipps", "profi-tipps"), ("fehlerbild", "fehlerbild")]
-DOSE_UNITS = ("kg", "g", "ml", "l", "L", "EL", "TL", "Prisen", "Prise", "Tropfen", "Zweige", "Zweig", "Blatt", "Umdrehung", "Schuss",
+DOSE_UNITS = ("kg", "g", "ml", "l", "L", "cm", "EL", "TL", "Prisen", "Prise", "Tropfen", "Zweige", "Zweig", "Blatt", "Umdrehung", "Schuss",
               "Stück", "Zehen", "Zehe", "Bund", "Päckchen", "Dose", "Dosen", "Glas", "Scheiben", "Scheibe", "Eigelb", "Eiweiß")
 ALIASES = {"eigelb": "eier", "eiweiß": "eier", "eiweiss": "eier", "ei": "eier"}  # Textwort → Zutaten-ID
 QTY_WORDS = ("reichlich", "etwas", "einen Schuss", "einem Schuss", "ein Schuss", "eine Prise", "einige", "großzügig")
@@ -42,14 +46,6 @@ TASK_ITEM = re.compile(r"^\s*-\s+\[([ x])\]\s+(.*)$")
 H3_RE = re.compile(r"^###\s+(.*)$")
 
 
-def slugify(s: str) -> str:
-    import unicodedata
-    s = re.sub(r"[*_`]", "", s).lower()
-    for a, b in (("ä", "ae"), ("ö", "oe"), ("ü", "ue"), ("ß", "ss")):
-        s = s.replace(a, b)
-    s = "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c))
-    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
-    return s or "x"
 
 
 def head_noun(name: str) -> str:
@@ -206,6 +202,11 @@ def parse_shopping(text: str, lint: Lint) -> list[dict]:
         core = item[: note_m.start()].strip() if note_m else item
         core, _, tail = core.partition(" — ")
         courses = [f"gang-{n}" for n in re.findall(r"Gang (\d)", tail + " " + (note or ""))]
+        only = None
+        if DIMS and (om := re.match(r"^nur\s+(.+)$", tail)):
+            only, unknown = V.parse_only(om.group(1), DIMS)
+            if unknown: lint.add("Einkaufsliste", f"„nur …“: unbekannte Wahl {', '.join(unknown)}")
+            tail = tail[: om.start()].strip()
         optional = False
         if re.match(r"(?i)^optional:\s*", core):
             optional, core = True, re.sub(r"(?i)^optional:\s*", "", core)
@@ -228,6 +229,7 @@ def parse_shopping(text: str, lint: Lint) -> list[dict]:
                         if group: ing["group"] = group
                         if store == "Vorrat": ing["pantry"] = True
                         if courses: ing["courses"] = sorted(set(courses))
+                        if only: ing["only"] = only
                         ings.append(ing)
                     continue
                 if nm and not re.search(r"\d|½|¼|¾", nm["qty"]):
@@ -245,6 +247,7 @@ def parse_shopping(text: str, lint: Lint) -> list[dict]:
             if checked: ing["inStock"] = True
             if optional: ing["optional"] = True
             if store == "Vorrat": ing["pantry"] = True
+            if only: ing["only"] = only
             notes = [x for x in (extra, note, tail if tail and not re.fullmatch(r"(Gang \d.*)", tail) else None) if x]
             if notes: ing["note"] = "; ".join(notes)
             ings.append(ing)
@@ -276,6 +279,10 @@ def parse_meta(meta: str, lint: Lint, where: str) -> dict:
             out["_after_titles"] = []
         elif low.startswith("nach "):
             out["_after_titles"] = [t.strip() for t in re.split(r",\s*", c[5:]) if t.strip()]
+        elif low.startswith("nur "):
+            refs, unknown = V.parse_only(c[4:], DIMS)
+            if unknown or not DIMS: lint.add(where, f"„nur …“: unbekannte Wahl {', '.join(unknown) or c[4:]}")
+            if refs: out["only"] = out.get("only", []) + refs
         elif low == "parallel":
             out["parallel"] = True
         elif low == "passiv":
@@ -363,8 +370,40 @@ def annotate_text(step: dict, text: str, ingredients: list[dict], lint: Lint, wh
         else: t["value"] = int(m["lo"])
         temps.append(t)
     if temps: step["temps"] = temps
-    # Dosierungen
-    step["ingredients"] = find_doses(text, ingredients, lint, where, seen_doses if seen_doses is not None else set())
+    # Dosierungen; Inline-Alternativen („80 g Wasser (Dinkel: 40 g)“) werden für die Grund-Dosierung maskiert
+    alts, masked = [], text
+    if (pat := V.alt_pattern(DIMS)) is not None:
+        for m in pat.finditer(text):
+            alts.append(m)
+            masked = masked[:m.start()] + " " * (m.end() - m.start()) + masked[m.end():]
+    step["ingredients"] = find_doses(masked, ingredients, lint, where, seen_doses if seen_doses is not None else set(), original=text)
+    if alts:
+        step["alts"] = [variant_alt(m, text, step["ingredients"], ingredients, lint, where) for m in alts]
+
+
+def variant_alt(m: re.Match, text: str, doses: list[dict], ingredients: list[dict], lint: Lint, where: str) -> dict:
+    """Klammer mit Alternativen → {text, base?, options[{when, text}]}. Steht sie direkt hinter einer Grund-Dosierung,
+    bekommt diese `byVariant`: reine Mengen („90 g“) behalten die Zutat, Text mit Zutatenwort wird neu gelesen."""
+    options = [{"when": ref, "text": t} for ref, t in V.split_alt(m["body"], DIMS)]
+    alt = {"text": m.group(0), "options": options}
+    before = text[:m.start()].rstrip()
+    base = next((d for d in doses if before.endswith(d["amount"]["text"])), None)
+    if base is None:
+        return alt
+    alt["base"] = base["amount"]["text"]
+    by = {}
+    for o in options:
+        q = re.fullmatch(rf"(?:ca\.\s?|\\?~)?(?P<lo>{NUMW})(?:\s?[–-]\s?(?P<hi>{NUMW}))?\s?(?P<unit>{'|'.join(DOSE_UNITS)})?", o["text"])
+        if q:
+            am = {"text": o["text"], "value": num(q["lo"]), "unit": q["unit"] or base["amount"].get("unit") or "Stück"}
+            if q["hi"]: am["max"] = num(q["hi"])
+            by[o["when"]] = [{"ref": base["ref"], "amount": am}]
+        else:
+            ds = find_doses(o["text"], ingredients, lint, where, set())
+            if not ds: lint.add(where, f"Alternative „{o['text']}“ ohne erkannte Menge")
+            by[o["when"]] = ds
+    base["byVariant"] = by
+    return alt
 
 
 def sentence_at(text: str, pos: int) -> str:
@@ -427,8 +466,9 @@ def phrase_match(toks: list, i: int, idx: list[tuple[str, str]]):
     return None
 
 
-def find_doses(text: str, ingredients: list[dict], lint: Lint, where: str, seen_doses: set) -> list[dict]:
+def find_doses(text: str, ingredients: list[dict], lint: Lint, where: str, seen_doses: set, original: str | None = None) -> list[dict]:
     idx = ingredient_index(ingredients)
+    original = original if original is not None else text
     out, seen_counts = [], {}
     plain = text
     im = re.search(r"\*(?!\*)\(?[^*]+?\)?\*\s*$", plain)  # kursiver Schluss (Warum/Rettung) enthält keine Dosierung
@@ -444,6 +484,8 @@ def find_doses(text: str, ingredients: list[dict], lint: Lint, where: str, seen_
         for i, tok in enumerate(toks):
             if i and tok.group(0).strip("*").lower() in DOSE_STOP:
                 break  # „2 EL Lake über die Kresse“: hinter der Präposition beginnt etwas anderes
+            if i and m["unit"] == "cm" and "," in ahead.group(0)[:tok.start()]:
+                break  # „1 cm breite Spalten, 3 Frühlingszwiebeln“: Längenangabe, keine Dosierung
             pm_ = phrase_match(toks, i, idx)
             if pm_:
                 hit, end_tok = pm_; break
@@ -471,11 +513,9 @@ def find_doses(text: str, ingredients: list[dict], lint: Lint, where: str, seen_
         if m["je"]: amount["per"] = "Pfanne"
         tm = re.search(r"(\d+)\s?×\s?$", plain[:span_start])
         if tm: amount["times"] = int(tm.group(1))
-        n = plain.count(span)
         dose = {"ref": hit[1], "amount": amount}
-        if n > 1:
-            seen_counts[span] = seen_counts.get(span, 0) + 1
-            dose["occurrence"] = seen_counts[span]
+        if original.count(span) > 1:  # Position im Originaltext (Alternativen-Klammern zählen mit)
+            dose["occurrence"] = original.count(span, 0, span_start) + 1
         key = (hit[1], lo, hi)
         article = re.search(r"\b(die|den|das|der|dem)\s+$", plain[:span_start], re.I)
         if key in seen_doses and article:
@@ -491,9 +531,10 @@ def find_doses(text: str, ingredients: list[dict], lint: Lint, where: str, seen_
         amount = {"text": span, "value": num(m["lo"]), "unit": m["unit"]}
         if m["hi"]: amount["max"] = num(m["hi"])
         dose = {"ref": bm[1], "amount": amount}
-        if plain.count(span) > 1:
-            seen_counts[span] = seen_counts.get(span, 0) + 1
-            dose["occurrence"] = seen_counts[span]
+        if any(k[0] == bm[1] for k in seen_doses):
+            dose["reuse"] = True  # „restlicher Spinat (100 g)“: Aufteilung einer schon dosierten Zutat
+        if original.count(span) > 1:
+            dose["occurrence"] = original.count(span, 0, m.start("lo")) + 1
         out.append(dose)
     # „insgesamt N Einheit“ → Vervielfacher auf die Dosierung gleicher Einheit
     for m in re.finditer(rf"insgesamt\s+({NUMW})\s?({'|'.join(DOSE_UNITS)})", plain):
@@ -583,7 +624,7 @@ def parse_body(text: str, scope: str, ingredients: list[dict], lint: Lint, cours
             cur_step["meta"] = f"*{cur_meta}*"
             meta = parse_meta(cur_meta, lint, where)
             cur_step["_meta"] = meta
-            for k in ("parallel", "attention", "claims", "endCondition", "technique"):
+            for k in ("parallel", "attention", "claims", "endCondition", "technique", "only"):
                 if k in meta: cur_step[k] = meta[k]
             if meta.get("_produces") and cur_task:
                 cur_task["produces"] = [product_from_label(meta["_produces"], meta.get("_hold"))[0]]
@@ -646,7 +687,15 @@ def parse_body(text: str, scope: str, ingredients: list[dict], lint: Lint, cours
         h3 = H3_RE.match(stripped)
         if h3 and course_id is None:
             flush_step()
-            cur_task = new_task(h3.group(1).strip(), None, None)
+            cur_task = new_task(h3.group(1).strip(), stripped, None)
+            k = i + 1
+            while k < len(lines) and not lines[k].strip(): k += 1
+            if k < len(lines) and (om := re.match(r"^\*nur\s+(.+?)\*$", lines[k].strip())):  # Abschnitt gilt nur für diese Wahl
+                refs, unknown = V.parse_only(om.group(1), DIMS)
+                if unknown: lint.add(f"{scope}/{cur_task['name']}", f"„nur …“: unbekannte Wahl {', '.join(unknown)}")
+                if refs: cur_task["only"] = refs
+                cur_task["heading"] += "\n\n" + lines[k].strip()
+                i = k
             i += 1; continue
         if cur_step is not None and not stripped.startswith("> ") and not (LABEL_TEXT_RE.match(stripped) and lines[i - 1].strip() == ""):
             cur_text.append(line); i += 1; continue
@@ -740,6 +789,7 @@ PHASE_RE = [(r"^T-(\d)$", lambda m: {"day": -int(m.group(1))}), (r"^(\d) Tage vo
 
 
 _WB = r"(?<![\wäöüÄÖÜß])%s(?![\wäöüÄÖÜß])"
+ENTRY_ONLY = re.compile(r"^\*nur\s+([^*]+)\*\s*")
 CLOCK_PHASE = re.compile(r"^(?P<label>(?P<h>\d{1,2}):(?P<m>\d{2})\s?Uhr(?:\s*\((?P<off>[^)]*)\))?(?:\s+—\s+(?P<event>[^:]+?))?):\s+(?P<rest>.*)$")
 
 
@@ -819,11 +869,17 @@ def parse_schedule(title: str, text: str, tasks_all: list[tuple[str | None, dict
     seen = {}
     bullets: list[str] = []
     in_note = False
+    sched_only = None
+    if om := re.search(r"^\*nur\s+(.+?)\*\s*$", text, re.M):  # ganzer Zeitplan gilt nur für diese Wahl
+        sched_only, unknown = V.parse_only(om.group(1), DIMS)
+        if unknown: lint.add("Zeitplan", f"„nur …“: unbekannte Wahl {', '.join(unknown)}")
     for line in text.split("\n"):
         if line.startswith("- "): bullets.append(line[2:]); in_note = False
         elif line.startswith("  ") and bullets: bullets[-1] += " " + line.strip()
         elif line.startswith("**") and ":**" in line and len(line) > 20: note = (note + "\n\n" if note else "") + line; in_note = True
         elif in_note and line.strip() and not line.startswith("|"): note += "\n" + line
+        elif ITALIC_RE.match(line.strip()) and not line.strip().startswith("*nur ") and not re.search(r"\bum \d{1,2}:\d{2} Uhr", line):
+            note = (note + "\n\n" if note else "") + line.strip()  # kursiver Hinweis zum Zeitplan („Variante B: …“)
         elif line.startswith("|"):
             in_note = False
             cells = [c.strip() for c in line.strip("|").split("|")]
@@ -867,12 +923,18 @@ def parse_schedule(title: str, text: str, tasks_all: list[tuple[str | None, dict
             seg = seg.strip()
             if seg: entries.append({"phase": pid, "text": seg})
     for e in entries:
+        if om := ENTRY_ONLY.match(e["text"]):  # „*nur Einfrieren, Kombi* Einfrieren: …“
+            refs, unknown = V.parse_only(om.group(1), DIMS)
+            if unknown: lint.add("Zeitplan", f"„nur …“: unbekannte Wahl {', '.join(unknown)}")
+            if refs: e["only"] = refs
+            e["text"] = e["text"][om.end():].strip()
         match_entry(e, tasks_all, lint)
         if m := re.search(rf"\(?(?:\\?~)?({RANGE})\s?({DUR_UNITS})\s+vor dem Gang\)?", e["text"]):
             d = duration_range(m.group(1) + " " + m.group(2))
             e["at"] = {"ref": f"course:{e.get('course', 'gang-1')}:serve", "offset": "-" + (d.get("typical") or d["max"])}
             e["source"] = m.group(0).strip("()")
     sched = {"id": slugify(title), "label": title, "phases": phases, "entries": entries}
+    if sched_only: sched["only"] = sched_only
     if anchor: sched["_anchor"] = anchor
     return sched, note
 
@@ -906,6 +968,9 @@ def parse_recipe(md: str, recipe_id: str) -> tuple[dict, Lint]:
     head, secs = parts[0][1], parts[1:]
     recipe = {"$schema": "../schema/recipe.schema.json", "schemaVersion": "0.1", "id": recipe_id, "kind": "dish"}
     recipe.update(parse_head(head, lint))
+    global DIMS
+    DIMS = V.parse_declaration(head)
+    if DIMS: recipe["variants"] = DIMS
     recipe.setdefault("yields", {"text": "?"})
     titles = {t: x for t, x in secs}
     shop = next((x for t, x in secs if t.startswith("Einkaufsliste")), "")
@@ -962,6 +1027,8 @@ def parse_recipe(md: str, recipe_id: str) -> tuple[dict, Lint]:
         sec["schedule"] = sched
         if note: sec["note"] = note
         anchor = sched.pop("_anchor", None)
+        if anchor and not is_menu:
+            sched["anchorOverride"] = {"time": anchor["time"]}
         if is_menu and anchor:
             # Uhrzeit-Zeitplan: ein Gang wird in der letzten Uhrzeit-Phase serviert, die Einträge von ihm hat
             clock = {p["id"]: p for p in sched["phases"] if p.get("clock")}
@@ -983,7 +1050,8 @@ def parse_recipe(md: str, recipe_id: str) -> tuple[dict, Lint]:
         recipe["anchor"] = {"label": "Service"}
     recipe["sections"] = sections
     # Zutaten ohne Dosierung
-    used = {si["ref"] for _, t in tasks_all for st in t["steps"] for si in st["ingredients"]}
+    used = {x["ref"] for _, t in tasks_all for st in t["steps"] for si in st["ingredients"]
+            for x in [si, *[d for ds in si.get("byVariant", {}).values() for d in ds]]}
     unused = [i["id"] for i in ingredients if i["id"] not in used]
     if unused: lint.add("Einkaufsliste", "Zutaten ohne Dosierung in Schritten: " + ", ".join(unused))
     return recipe, lint

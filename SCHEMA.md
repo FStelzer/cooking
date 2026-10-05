@@ -37,6 +37,7 @@ Einzige Abhängigkeit: `jsonschema` (siehe `tools/requirements.txt`).
 | 2026-10-05 | **Entscheidung zu den Ermessensfeldern (L18):** Parität von Warum/Grenzen/Cues akzeptiert, Nachziehen bei Gelegenheit. Timer-Übergenerierung behoben (Haltbarkeit, Vorlauf, Obergrenze sind keine Timer): November 36 → 40/58, Rest sind Garzeiten, die die Hand-Annotation ausgelassen hatte. |
 | 2026-10-05 | **AP5: Hochzeitstag normalisiert und per Parser gebaut.** Neu in Konvention und Parser: Zeitplan nach Uhrzeit (`17:30 Uhr (1,5h vorher)`, `19:15 Uhr — Nach dem Amuse`) mit Anker aus „… Dinner um 19:00 Uhr“, Phase `N Tage vorher`, Servierzeit eines Gangs = letzte Uhrzeit-Phase mit seinen Einträgen, gangübergreifende Einträge (Ente startet während des Amuse). Dazu Parser-Lücken geschlossen: Rest-Segment neben einem getroffenen Titel trifft keine Komponente mehr, `→` trennt Segmente, `Eigelb` als Einheit dosiert die Eier, Umlaut-Plural (Apfel/Äpfel). Check H rechnet die Koch-Belegung pro Schritt statt pro Task (verteilte Tasks belegten sonst den ganzen Nachmittag). Siehe Messwerte AP5. |
 | 2026-10-05 | **Bò lúc lắc normalisiert (Praxistest vor AP6).** 10 Schritte, 18 Zutaten, Treue ohne Verlust, Lint 0. Parser-Lücken: gemischte Brüche (`1½ EL` wurde `½ EL`), Mengenspan ohne `**`, Dosierungs-Suche stoppt an Präposition/Artikel (`2 EL Lake über die Kresse`), `Öl` als Zutatenwort, Einheit `L`. Check F liest jetzt auch Zeitplan-Tabellen. Kochmodus: `1½` beim Skalieren und in der Anzeige; Einkauf zeigt das Gebinde vorne, den Bedarf nur bei Abweichung („· braucht 3“). |
+| 2026-10-05 | **AP6: Varianten.** Konvention (REZEPTFORMAT §11): `*Varianten: Dim = A | B · …*` im Kopf, `nur …` an Schritt, Abschnitt, Posten, Zeitplan und Eintrag, Inline-Alternativen `(Dinkel: 40 g)`. Entscheidungen des Users: nur `only`, kein `replaces`; zwei Zeitpläne bei den Brötchen; Mengen tauschen, sonst filtern. Schema: `variants[]`, `only`, `step.alts`, `byVariant`, `derived.variants[]` (Python rechnet jede Kombination vor, Brötchen 3×3, Dal 5×2). Kochmodus: ein Auswahlfeld pro Dimension, die Wahl gilt für Kochen, Plan, Einkauf und Timer und wird pro Rezept gespeichert, Lesen zeigt alles. Normalisiert und gebaut: `backen/vollkornbroetchen.md` (16 Schritte, zwei Zeitpläne) und `schwangerschaft/dal-baukasten.md` (32 Schritte, 5 Varianten + Beilage). Parser nebenbei: Einheit `cm`, Klammer-Mengen hinter schon dosierter Zutat = Aufteilung, kursive Zeitplan-Hinweise als `note`. |
 | 2026-10-05 | **Phase 2b, AP4 umgesetzt** (Entscheidungspunkt auf User-Entscheidung übersprungen: erst ein großes Menü ist der echte Test, bei bekannten Rezepten entsteht kaum Feedback). Schema v0.2: Menü/Gänge/Zeitplan/Ressourcen/Constraints. `menue-november.json`: Rahmen, Gang 2 vollständig (8 Tasks, 7 Produkte, 18 Steps), Stubs für 1/3/4, 50 Zutaten, 8 Phasen + 24 Einträge. `timing.py` mit Checks E–H, L. Kochmodus menüfähig mit Plan-Raster. Siehe Messwerte AP4. |
 | 2026-10-05 | **Durchstich** gebaut: `kochmodus/` (statische Seite, vanilla JS, `marked` vom CDN wie Docsify). Ansichten Kochen (Kurzansicht + Details mit Hervorhebung, Abhaken, Timer mit Endzeit im localStorage, Ereignisse, Notiz pro Schritt, Export im `learnings.notes[]`-Format, Voraussetzungen aus `after`), Einkauf (aus `derived.shopping`, abhakbar, skaliert) und Lesen (Sektionen in Dokumentreihenfolge). Skalieren ersetzt Spans inline (L11) mit Rundung nach Einheit (`kochmodus/lib.js`). 10 Node-Tests, Playwright-Rauchtest im Container grün. **Nächster Schritt: Thịt kho damit kochen, dann Entscheidungspunkt vor Phase 2b.** |
 | 2026-10-05 | AP3 umgesetzt: zweite unabhängige Konvertierung von thit-kho durch einen frischen Agenten (nur SCHEMA.md + Schema + Quelle), `cli diff` misst Übereinstimmung pro Feld. Ergebnis: alle verbatim-nahen Felder 100 %, Ermessensfelder streuen (siehe Messwerte). Daraus Anleitung v2 mit regelbasiertem `action` (= erster Satz, Check C erzwingt das), festem Warengruppen-Vokabular, klaren Regeln für `priority`/`optional`/`note`/`scale`. Phase 2a damit abgeschlossen; nächster Schritt: Durchstich (Kochmodus-Seite mit thit-kho). |
@@ -466,30 +467,6 @@ Fehlt `after` irgendwo? Welche Notizen entstehen, und passen sie ins Format?
 
 ## Nächste Schritte
 
-- **AP6:** Varianten (dal-baukasten, vollkornbrötchen): `variants[]`, `only`,
-  `replaces`, `byVariant`, `next`; zwei Schedules (Backtag, aus dem Frost).
-  Vorschlag (10/2026, noch nicht entschieden):
-  - Zwei Muster. Brötchen hat orthogonale Dimensionen (Mehl: Weizen | Weizen-Roggen |
-    Dinkel; Weg: Einfrieren | Direkt backen | Beides), die Unterschiede stehen meist im
-    Schritt selbst. Dal ist ein Grundrezept plus Alternativen A–D, die eigene Schritte und
-    eigene Einkaufsblöcke haben.
-  - Ein Rezept deklariert seine Dimensionen mit Wahlmöglichkeiten, jede mit Default.
-    Schreibweise: `*Varianten: Mehl = Weizen | Weizen-Roggen | Dinkel · Weg = …*`.
-  - Ganze Schritte, Zeitplan-Einträge und Einkaufsposten tragen `only` (Zeile
-    `*nur Einfrieren, Beides*` unter dem Schritt-Titel) oder `replaces` (über den
-    Titel, nie über die Nummer).
-  - Unterschiede innerhalb eines Satzes laufen als Spans mit derselben Mechanik wie beim
-    Skalieren: „80 g Wasser (Weizen-Roggen: 90 g, Dinkel: 40 g)“. Die bestehenden
-    Schreibweisen der Brötchen-Datei vereinheitlichen.
-  - Einkaufsliste und Mengen-Check rechnet Python vor, pro Kombination unter einem
-    Schlüssel (Brötchen 3×3, Dal 5). Der Browser wählt nur aus und hat keine eigene
-    Aggregation.
-  - Kochmodus: eine Auswahlleiste oben mit einem Segment pro Dimension. Die Wahl wird pro
-    Rezept im localStorage gemerkt und gilt für Kochen, Plan, Timer und Einkauf. Nicht
-    gewählte Schritte verschwinden ganz. „Beides“ muss die Dimension ausdrücklich
-    erlauben. Lesen zeigt weiterhin den vollen Text.
-  - Am Text zu klären: Ersetzt eine Dal-Variante Grundschritte oder hängt sie Schritte an?
-    Gibt es einen Zeitplan pro Weg oder einen Zeitplan mit `only`-Einträgen?
 - **AP7:** Abnahme über alle fünf Dateien, Review-Checkliste, PRD-Delta.
 - Kochmodus alltagstauglich (nach AP7, vor dem November-Menü und vor Phase 5):
   Wake-Lock, Alarm, Offline, Personen-Multiplikator für `per`-Mengen in der Ableitung,
@@ -500,4 +477,5 @@ Fehlt `after` irgendwo? Welche Notizen entstehen, und passen sie ins Format?
 - **Phase 5:** Einkaufsliste und Mengen-Check aus dem JSON in Docsify (Skalieren,
   Löffel-Regel, Variantenwahl). Der Apple-Export kommt dann aus der generierten Liste,
   danach entfallen beide Sektionen im Markdown. Erst nach AP6, weil die Varianten die
-  Struktur der Liste ändern.
+  Struktur der Liste ändern. Dabei TL/EL in der Summe umrechnen (Dal: „1 TL (+ EL
+  ungemischt)“ beim Ghee) und Mengen pro Teller (`1 halbiertes Ei`) nicht zum Einkauf zählen.

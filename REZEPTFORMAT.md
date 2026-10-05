@@ -387,3 +387,47 @@ Titel · Mengen im Text ohne passende Zutat in der Einkaufsliste · Zutaten ohne
 Dosierung in Schritten · Komponenten ohne Zeitangabe · Zeitplan-Einträge ohne Treffer
 · unbekannte Phasen oder Meta-Klauseln. Hinweise sind keine Fehler; sie zeigen, wo
 das JSON Lücken hat.
+
+## 11. Varianten
+
+Ein Rezept mit Wahlmöglichkeiten (Mehlsorte, Weg nach dem Formen, Dal-Variante,
+Beilage) deklariert sie im Kopf. Der Kochmodus zeigt pro Dimension ein Auswahlfeld
+und blendet Schritte, Zeitpläne und Einkaufsposten passend ein und aus. Lesen und
+Docsify zeigen weiter den vollen Text.
+
+```markdown
+*Varianten: Mehl = Weizen | Weizen-Roggen | Dinkel · Weg = Einfrieren | Direkt backen | Kombi*
+```
+
+- Eine Zeile `*Varianten: …*` im Kopf, Dimensionen mit ` · ` getrennt, Wahlmöglichkeiten
+  mit ` | `. Die **erste** Wahl ist der Default. Wahl-Namen sind im Rezept eindeutig,
+  über Dimensionen hinweg.
+- **Nur bei einer Wahl** gilt, was `nur …` trägt. Mehrere Namen derselben Dimension
+  heißen oder, Namen verschiedener Dimensionen und.
+
+| Wo | Schreibweise |
+|---|---|
+| Schritt | Meta-Klausel: `*nur Einfrieren, Kombi · nach Topping*` |
+| ganzer Abschnitt | Zeile direkt unter der `###`-Überschrift: `*nur Palak*` |
+| Einkaufsposten | Anhang wie bei Gängen: `- [ ] 1 kg Dinkelvollkornmehl — nur Dinkel` |
+| ganzer Zeitplan | Zeile im `## Zeitplan …`: `*nur Einfrieren, Kombi*` |
+| Zeitplan-Eintrag | vorangestellt: `- 12:30 Uhr: *nur Direkt backen, Kombi* Stückgare …` |
+
+- **Unterschiede im Satz** stehen in einer Klammer, deren Teile alle mit einem Wahl-Namen
+  beginnen: `80 g Wasser (Weizen-Roggen: 90 g, Dinkel: 40 g)`. Steht die Klammer direkt
+  hinter einer Menge, tauscht der Kochmodus die Menge aus. Eine reine Menge (`90 g`)
+  behält die Zutat, Text mit Zutatenwort ersetzt sie
+  (`390 g Weizenvollkornmehl (Dinkel: 390 g Dinkelvollkornmehl)`). Einkauf und
+  Skalieren rechnen mit der getauschten Menge. Jede andere Klammer
+  (`Nach 30, 60 und 90 Min. (Dinkel: 25, 50, 75)`) bleibt Text und ist nur bei passender
+  Wahl zu sehen.
+- Weil ein ausgeblendeter Vorgänger fehlen kann, bekommt der erste Schritt einer Variante
+  eine eigene Meta-Zeile (`jederzeit` oder `nach …`). Gemeinsame Schritte danach nennen
+  alle möglichen Vorgänger (`nach Tadka Kind, Palak-Tadka Kind, …`), ausgeblendete zählen
+  als erledigt.
+- Ein Zeitplan pro Weg ist erlaubt (`## Zeitplan Backtag`, `## Zeitplan aus dem Frost`).
+  Bei einem Gericht setzt `*Für einen Teigbeginn um 9:00 Uhr*` den Anker dieses Zeitplans.
+- Einkaufsliste und Mengen-Check werden pro Kombination vorgerechnet
+  (`derived.variants[]`). Varianten-Ideen, die nur im Text stehen (Schnellkochtopf,
+  Küchenmaschine), bleiben Text.
+

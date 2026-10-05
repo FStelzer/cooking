@@ -112,3 +112,8 @@ textarea{width:100%;border:1px solid var(--line);border-radius:8px;background:va
 .phase h2{margin:26px 0 8px}
 .entry-head{margin:12px 0 6px;font-weight:700;color:var(--muted);font-size:14px}
 .row.plain{border-left-color:var(--line)}.row.plain .body{cursor:default}.row .t.plain{font-family:var(--body);font-weight:400;font-size:16px}
+.variants{display:flex;flex-wrap:wrap;gap:8px 16px;margin:0 0 14px}
+.variants label.var{display:inline-flex;align-items:center;gap:8px;font-weight:700}
+.variants select{font:inherit;font-weight:700;min-height:40px;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+mark.variant{background:var(--why);outline:1px solid var(--line);border-radius:3px;padding:0 2px}
+

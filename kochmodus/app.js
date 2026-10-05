@@ -1,5 +1,5 @@
-import { escapeTilde, fmtAmount, fmtClock, highlight, isoSeconds, noteMarkdown, normalizeState,
-         scaleAmount, scaleStepText, textWithAction, timerChoices } from "./lib.js";
+import { escapeTilde, fmtAmount, fmtClock, highlight, isActive, isoSeconds, noteMarkdown, normalizeState,
+         scaleAmount, scaleStepText, selection, selectionKey, textWithAction, timerChoices, variantText } from "./lib.js";
 
 const params = new URLSearchParams(location.search);
 const RECIPE_URL = params.get("r") || "../gerichte/thit-kho-trung.json";
@@ -24,16 +24,25 @@ const factor = () => +state.factor || 1;
 // ---- Rezept-Helfer (Menü = Gänge mit eigenen Tasks) -------------------------
 const isMenu = () => recipe.kind === "menu";
 function courses() { return recipe.sections.filter((s) => s.type === "courses").flatMap((s) => s.courses); }
+// Varianten: nur Tasks/Schritte/Zeitpläne der aktuellen Wahl (Lesen zeigt weiter alles)
+const sel = () => selection(recipe, state.variant);
+const live = (x) => isActive(x.only, sel());
 function tasksOf(r, course = null) {
-  const own = r.sections.filter((s) => s.type === "tasks").flatMap((s) => s.tasks.map((task) => ({ course, task })));
+  const own = r.sections.filter((s) => s.type === "tasks").flatMap((s) => s.tasks.filter(live)
+    .map((task) => ({ course, task: task.only || task.steps.some((st) => st.only) ? { ...task, steps: task.steps.filter(live) } : task })));
   return own.concat(courses().flatMap((c) => (r === recipe ? tasksOf(c, c) : [])));
 }
 function steps() { return tasksOf(recipe).flatMap(({ course, task }) => task.steps.map((step) => ({ course, task, step }))); }
 const stepOf = (id) => steps().find((x) => x.step.id === id)?.step;
-const labelOf = (ref) => stepOf(ref.replace(/^step:/, ""))?.label;
-const scaled = (text, step) => scaleStepText(text, step, factor(), ingById);
+const labelOf = (ref) => stepOf(ref.replace(/^step:/, ""))?.label; // ausgeblendete Vorgänger fallen weg
+function scaled(text, step) {
+  const v = variantText(text, step, sel());
+  return scaleStepText(v.text, { ...step, ingredients: v.ingredients }, factor(), ingById);
+}
 function courseTitle(c) { return c ? (recipe.courses?.find((x) => x.ref === c.id)?.name || c.title.replace(/^\d+\.\s*/, "")) : "Menü"; }
-function schedule() { return recipe.sections.find((s) => s.type === "schedule"); }
+function schedules() { return recipe.sections.filter((s) => s.type === "schedule" && live(s.schedule)); }
+function schedule() { return schedules()[0]; }
+const liveEntries = (sch) => sch.entries.filter(live);
 
 // ---- Ansichten -------------------------------------------------------------
 function runBadge(step) {
@@ -84,7 +93,7 @@ function renderKochen() {
   const byTask = {}; for (const x of all) (byTask[x.task.id] ||= []).push(x);
   const placed = new Set();
   for (const p of sec.schedule.phases) {
-    const es = sec.schedule.entries.filter((e) => e.phase === p.id);
+    const es = liveEntries(sec.schedule).filter((e) => e.phase === p.id);
     if (!es.length) continue;
     html += `<section class="phase"><h2>${esc(p.label)}</h2>`;
     for (const e of es) {
@@ -104,9 +113,12 @@ function renderKochen() {
   main.innerHTML = html;
 }
 function renderPlan() {
-  const sec = schedule();
-  if (!sec) { main.innerHTML = `<p class="empty">Kein Zeitplan im Rezept.</p>`; return; }
-  const sch = sec.schedule, lanes = [{ id: null, name: "Menü" }, ...courses().map((c) => ({ id: c.id, name: courseTitle(c) }))];
+  const secs = schedules();
+  if (!secs.length) { main.innerHTML = `<p class="empty">Kein Zeitplan für diese Auswahl.</p>`; return; }
+  main.innerHTML = secs.map((sec) => (secs.length > 1 ? `<h2>${mdInline(sec.title)}</h2>` : "") + planHtml(sec)).join("");
+}
+function planHtml(sec) {
+  const sch = { ...sec.schedule, entries: liveEntries(sec.schedule) }, lanes = [{ id: null, name: "Menü" }, ...courses().map((c) => ({ id: c.id, name: courseTitle(c) }))];
   const allTasks = Object.fromEntries(tasksOf(recipe).map(({ task }) => [task.id, task]));
   const done = (e) => {
     const ids = [...(e.steps || []), ...(e.tasks || []).flatMap((t) => (allTasks[t]?.steps || []).map((s) => s.id))];
@@ -125,11 +137,12 @@ function renderPlan() {
       }).join("") + `</div>`;
     }
   }
-  main.innerHTML = h + `</div></div>` + (sec.note ? `<div class="md fine" style="margin-top:12px">${md(sec.note)}</div>` : "")
+  return h + `</div></div>` + (sec.note ? `<div class="md fine" style="margin-top:12px">${md(sec.note)}</div>` : "")
     + `<p class="fine">Chips mit Rand sind modellierte Aufgaben (antippen öffnet den ersten Schritt), graue sind nur Text. Gestrichelt = aus dem Rezept abgeleitet, steht nicht im Original-Zeitplan.</p>`;
 }
 function shoppingHtml() {
-  const d = recipe.derived;
+  const top = recipe.derived, key = selectionKey(sel());
+  const d = !top?.variants || selectionKey(top.select || {}) === key ? top : top.variants.find((v) => v.key === key) || top;
   if (!d) return `<p class="empty">Kein <code>derived</code>-Block im JSON — <code>cli derive</code> ausführen.</p>`;
   const f = factor();
   let html = "", store = null;
@@ -160,7 +173,7 @@ function renderSections(r, level) {
     else if (sec.type === "shopping") html += shoppingHtml();
     else if (sec.type === "tasks") for (const task of sec.tasks) {
       if (task.heading) html += `<div class="md">${md(task.heading)}</div>`;
-      for (const s of task.steps) html += `<div class="card"><div class="md">${md(s.heading || `**${s.label}. ${s.title || ""}**`)}${md(highlight(scaled(s.text, s), s))}</div></div>`;
+      for (const s of task.steps) html += `<div class="card"><div class="md">${md(s.heading || `**${s.label}. ${s.title || ""}**`)}${md(highlight(scaleStepText(s.text, s, factor(), ingById), s))}</div></div>`;
     } else if (sec.type === "courses") for (const c of sec.courses) {
       html += `<h${level + 1}>${mdInline(c.title)}</h${level + 1}>` + (c.intro ? `<div class="md">${md(c.intro)}</div>` : "") + renderSections(c, level + 2);
     } else if (sec.type === "schedule") {
@@ -189,8 +202,16 @@ function renderNotizen() {
   const nb = $("#noteBox"); let nt;
   nb.oninput = () => { state.note = nb.value; clearTimeout(nt); nt = setTimeout(() => { save(); $("#mdOut").value = exportMarkdown(); $("#copyMd").disabled = !state.note.trim(); }, 300); };
 }
+function renderVariants() {
+  const el = $("#variants"), dims = recipe.variants || [];
+  el.hidden = !dims.length;
+  const cur = sel();
+  el.innerHTML = dims.map((d) => `<label class="var">${esc(d.label)} <select data-variant="${d.id}">` +
+    d.choices.map((c) => `<option value="${c.id}" ${c.id === cur[d.id] ? "selected" : ""}>${esc(c.label)}</option>`).join("") + `</select></label>`).join("");
+}
 function renderHeader() {
   $("#title").textContent = recipe.title;
+  renderVariants();
   const y = recipe.yields?.value ? fmtAmount(scaleAmount({ value: recipe.yields.value, unit: recipe.yields.unit }, factor())) : recipe.yields?.text || "";
   $("#meta").textContent = [recipe.persons?.text || y, recipe.times?.text].filter(Boolean).join(" · ");
   const all = steps(), d = all.filter(({ step }) => state.done[step.id]).length;
@@ -210,7 +231,7 @@ function renderSheet() {
   if (!ctx) return;
   const { step: s, task, course } = ctx;
   const timers = (s.timers || []).flatMap((t, i) => timerChoices(t.duration).map((secs) => ({ i, label: t.label, secs })));
-  const lbl = [course ? courseTitle(course) : null, task.name !== recipe.title ? task.name : null, `Schritt ${s.label}`].filter(Boolean).join(" · ");
+  const lbl = [course ? courseTitle(course) : null, task.name !== recipe.title ? task.name.replace(/\\~/g, "~") : null, `Schritt ${s.label}`].filter(Boolean).join(" · ");
   const scaledStep = { ...s, action: scaled(s.action, s) };
   const body = highlight(textWithAction(scaled(s.text, s), scaledStep), s);
   const details = [];
@@ -326,6 +347,7 @@ document.addEventListener("change", (e) => {
   if (t.dataset.done) { if (t.checked) state.done[t.dataset.done] = true; else delete state.done[t.dataset.done]; save(); renderAll(); }
   else if (t.dataset.shop) { state.shop[t.dataset.shop] = t.checked; save(); t.closest("li").classList.toggle("have", t.checked); }
   else if (t.id === "factor") { state.factor = +t.value || 1; save(); renderAll(); }
+  else if (t.dataset.variant) { state.variant = { ...state.variant, [t.dataset.variant]: t.value }; save(); renderAll(); }
 });
 let toastT; function toast(m) { const el = $("#toast"); el.textContent = m; el.style.display = "block"; clearTimeout(toastT); toastT = setTimeout(() => (el.style.display = "none"), 2200); }
 

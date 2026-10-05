@@ -59,7 +59,20 @@ def _group_key(key: tuple[str, str | None]) -> tuple:
 
 
 def derive(recipe: dict) -> dict:
-    """Vorbedingung: Check D ist grün (alle step.ingredients[].ref bekannt)."""
+    """Vorbedingung: Check D ist grün (alle step.ingredients[].ref bekannt). Mit Varianten gelten quantities/shopping
+    für die Default-Wahl; `variants[]` hat dieselben Sichten für jede andere Kombination (Python rechnet, der Browser wählt)."""
+    from . import variants as V
+    head = {"generatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "sourceHash": source_hash(recipe)}
+    dims = recipe.get("variants") or []
+    if not dims:
+        return head | _derive(recipe)
+    sels = V.selections(dims)
+    out = head | {"select": sels[0]} | _derive(V.view(recipe, sels[0]))
+    out["variants"] = [{"key": V.selection_key(sel), "select": sel} | _derive(V.view(recipe, sel)) for sel in sels[1:]]
+    return out
+
+
+def _derive(recipe: dict) -> dict:
     ings = {i["id"]: i for i in recipe.get("ingredients", [])}
     acc = {i: {"value": None, "max": None, "unit": None, "approx": False, "mixed": set(), "unitless": [], "perTask": {}, "perCourse": {}}
            for i in ings}
@@ -113,8 +126,6 @@ def derive(recipe: dict) -> dict:
         groups.setdefault((ing["store"], ing.get("group")), []).append(item)
 
     return {
-        "generatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "sourceHash": source_hash(recipe),
         "quantities": list(quantities.values()),
         "shopping": [{"store": s, "group": g, "items": groups[(s, g)]} for s, g in sorted(groups, key=_group_key)],
     }
@@ -199,7 +210,7 @@ def check_k(recipe: dict, source: str) -> tuple[list[str], list[str]]:
     elif status == "missing":
         reps.append("K derived-Block fehlt — `cli derive` schreibt ihn; Vergleich läuft gegen eine frische Ableitung")
     ings = {i["id"]: i for i in recipe["ingredients"]}
-    qty = {q["ingredient"]: q for q in derive(recipe)["quantities"]}
+    qty = {q["ingredient"]: q for q in _derive(recipe)["quantities"]}  # alle Varianten zugleich, wie die Markdown-Liste
     names = {iid: quote_key(i["name"]).lower() for iid, i in ings.items()}
     all_words = [words(i["name"]) for i in ings.values()]
     common = {w for ws in all_words for w in ws if sum(w in x for x in all_words) > 1}

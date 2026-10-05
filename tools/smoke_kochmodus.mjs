@@ -120,6 +120,27 @@ try {
   assert.equal(await page.locator("ul.shop li").count(), 55, "55 Zutaten in der generierten Einkaufsliste");
   await page.click('button[data-view="lesen"]');
   assert.ok((await page.locator("#main h2").allInnerTexts()).includes("Rezepte"));
+  // Varianten: Auswahl blendet Schritte ein/aus, tauscht Mengen, wechselt Einkauf und Zeitpläne, überlebt Reload
+  await page.goto(`http://127.0.0.1:${PORT}/kochmodus/?r=../backen/vollkornbroetchen.json`);
+  await page.waitForSelector(".row[data-step]");
+  assert.equal(await page.locator("select[data-variant]").count(), 2, "zwei Dimensionen: Mehl, Weg");
+  assert.equal(await page.locator('.row[data-step="einfrieren"]').count(), 1);
+  assert.equal(await page.locator('.row[data-step="stueckgare"]').count(), 0, "Weg B ausgeblendet");
+  await page.selectOption('select[data-variant="mehl"]', "dinkel");
+  await page.selectOption('select[data-variant="weg"]', "direkt-backen");
+  assert.equal(await page.locator('.row[data-step="einfrieren"]').count(), 0, "Weg A ausgeblendet");
+  assert.equal(await page.locator('.row[data-step="stueckgare"]').count(), 1);
+  assert.match(await page.locator('.row[data-step="autolyse"]').innerText(), /390 g Dinkelvollkornmehl, 40 g Wasser/);
+  await page.click('button[data-view="einkauf"]');
+  const shop = await page.locator("#main").innerText();
+  assert.ok(shop.includes("Dinkelvollkornmehl") && !shop.includes("Weizenvollkornmehl"), "Einkauf der Dinkel-Variante");
+  await page.reload(); await page.waitForSelector("select[data-variant]");
+  assert.equal(await page.locator('select[data-variant="mehl"]').inputValue(), "dinkel", "Wahl überlebt Reload");
+  await page.selectOption('select[data-variant="weg"]', "kombi");
+  await page.click('button[data-view="plan"]');
+  assert.deepEqual(await page.locator("#main > h2").allInnerTexts(), ["Zeitplan Backtag", "Zeitplan aus dem Frost"]);
+  await page.click('button[data-view="lesen"]');
+  assert.ok((await page.locator("#main").innerText()).includes("(Weizen-Roggen: 90 g, Dinkel: 40 g)"), "Lesen zeigt alle Varianten");
   if (SHOT) {
     await page.click('button[data-view="plan"]');
     await page.screenshot({ path: SHOT.replace(/\.png$/, "-plan.png") });
@@ -136,4 +157,4 @@ try {
   server.close();
 }
 if (errors.length) { console.log("Browser-Fehler:\n  " + errors.join("\n  ")); process.exit(1); }
-console.log("Rauchtest ok: thit-kho (9 Schritte, Sheet, Notiz, Skalierung, Timer, Export, Einkauf, Lesen) + Menü (Plan 9×5, 32 Chips, 60 Schritte, 55 Posten)");
+console.log("Rauchtest ok: thit-kho (9 Schritte, Sheet, Notiz, Skalierung, Timer, Export, Einkauf, Lesen) + Menü (Plan 9×5, 32 Chips, 60 Schritte, 55 Posten) + Varianten (Brötchen: Ein-/Ausblenden, Mengen, Einkauf, Zeitpläne)");

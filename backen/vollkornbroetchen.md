@@ -2,6 +2,8 @@
 
 *Vorabend \~20 Min. Arbeit (Poolish, Kochstück). Backtag \~3½ Std., davon \~40 Min. echte Arbeit. Backen aus dem Frost: 2,5–3,5 Std. Gare + 20 Min. Backzeit. Equipment: Küchenwaage (1 g), Fleischthermometer, Teigkarte, Backpapier, 2 Backbleche, Rasierklinge oder sehr scharfes glattes Messer, Sprühflasche oder kleine Metallschale. **Keine Küchenmaschine nötig — dieses Rezept ist für Handarbeit gebaut.***
 
+*Varianten: Mehl = Weizen | Weizen-Roggen | Dinkel · Weg = Einfrieren | Direkt backen | Kombi*
+
 100-%-Vollkornbrötchen mit drei Vorstufen — **Poolish** (Aroma, Frische, weniger Kleie-Bitterkeit), **Kochstück** (saftige Krume über Tage) und **Flohsamen-Quellstück** (Stabilität beim Einfrieren) — die als geformte Teiglinge einzeln eingefroren und bei Bedarf morgens frisch gebacken werden. Ein Ablauf, drei Mehl-Varianten (Weizen, Weizen + 15 % Roggen, Dinkel), drei Wege nach dem Formen (einfrieren, direkt backen, beides kombiniert).
 
 **Leitrezept ist Weizen:** einmal gebacken (09/2026), fluffig und lecker, vor allem mit Sonnenblumenkernen — aber von Hand zu kurz geknetet, der Teig sehr klebrig, das Rundschleifen missraten, deshalb etwas flache Brötchen. Diese Fassung zieht daraus die Konsequenzen: **weniger Wasser für die Handversion, Kneten durch Dehnen & Falten ersetzt, Zwischengare vor dem Schleifen.**
@@ -32,28 +34,35 @@
 
 ## Einkaufsliste
 
-### REWE / Aldi
+### Aldi / REWE
 
 **Trockenwaren:**
-- [ ] 1 kg Weizenvollkornmehl, fein (Bedarf 600 g; Roggen-Variante 510 g)
-- [ ] Optional für die Roggen-Variante: 1 Packung Roggenvollkornmehl (Bedarf 90 g)
-- [ ] Optional für die Dinkel-Variante: 1 kg Dinkelvollkornmehl, fein (Bedarf 600 g, statt Weizen)
-- [ ] 1 Glas Honig (Bedarf 12 g)
-- [ ] 100 g Sonnenblumenkerne zum Wälzen (Bedarf \~60 g; Alternativen: Haferflocken, Sesam, Mohn, Dinkelflocken)
-- [ ] Salz, fein (Bedarf 13 g — Vorrat)
+- [ ] 1 kg Weizenvollkornmehl, fein — nur Weizen, Weizen-Roggen *(Bedarf 600 g; Roggen-Variante 510 g)*
+- [ ] Roggenvollkornmehl, 1 Packung — nur Weizen-Roggen *(Bedarf 90 g)*
+- [ ] 1 kg Dinkelvollkornmehl, fein — nur Dinkel *(Bedarf 600 g, statt Weizen)*
+- [ ] 1 Glas Honig *(Bedarf 12 g)*
+- [ ] 100 g Sonnenblumenkerne zum Wälzen *(Bedarf \~60 g; Alternativen: Haferflocken, Sesam, Mohn, Dinkelflocken)*
 
-**Kühlregal:**
-- [ ] 1 Würfel Frischhefe, 42 g (Bedarf 12,2 g; Rest einfrieren oder für Weg B/C)
-- [ ] Butter (Bedarf 18 g — Vorrat)
+**Milchprodukte & Eier:**
+- [ ] Frischhefe, 1 Würfel (42 g) *(Bedarf 12,2 g; Rest einfrieren oder für Weg B/C)*
 
-### Drogerie (dm/Rossmann) oder Bio-Regal
+### Drogerie
 
-- [ ] 1 Packung Flohsamenschalen (Bedarf 6 g)
+*dm/Rossmann oder Bio-Regal*
 
-### Optional online / Bio-Laden
+- [ ] Flohsamenschalen, 1 Packung *(Bedarf 6 g)*
 
-- [ ] Inaktives Backmalz / Gerstenmalzmehl (Bedarf 6 g)
-- [ ] Brotgewürz gemahlen (Kümmel, Fenchel, Koriander, Anis; Bedarf 4–6 g — passt zur Roggen-Variante)
+### Online
+
+*Optional, auch Bio-Laden*
+
+- [ ] Optional: Backmalz, inaktiv (Gerstenmalzmehl) *(Bedarf 6 g)*
+- [ ] Optional: Brotgewürz, gemahlen (Kümmel, Fenchel, Koriander, Anis) — nur Weizen-Roggen *(Bedarf 4–6 g — passt zur Roggen-Variante)*
+
+### Vorrat prüfen
+
+- [ ] Salz, fein *(Bedarf 13 g)*
+- [ ] Butter *(Bedarf 18 g)*
 
 ## Mengen — alle Varianten auf einen Blick
 
@@ -91,33 +100,38 @@ Ergibt 12 Teiglinge à \~100 g (Dinkel \~95 g). **Fett gedruckt = Leitrezept Wei
 
 ### Vorabend (20 Min.)
 
-**1. Poolish ansetzen**
-0,2 g Frischhefe (ein erbsengroßes Stück) in 150 g Wasser (\~20 °C) zerdrücken, 150 g Vollkornmehl einrühren, bis kein trockenes Mehl mehr sichtbar ist. Abdecken, **12–16 Std. bei \~20 °C**. Warme Küche (> 24 °C): 10–12 Std. *Eilvariante: 2 g Hefe, 3–4 Std. bei 24–26 °C — weniger Aroma, funktioniert.*
+**1. Poolish ansetzen (12–16 Std., passiv)**
+*jederzeit*
+0,2 g Frischhefe (ein erbsengroßes Stück) in 150 g Wasser (\~20 °C) zerdrücken, 150 g Weizenvollkornmehl (Dinkel: 150 g Dinkelvollkornmehl) einrühren, bis kein trockenes Mehl mehr sichtbar ist. Abdecken, **12–16 Std. bei \~20 °C**. Warme Küche (> 24 °C): 10–12 Std. *Eilvariante: 2 g Hefe, 3–4 Std. bei 24–26 °C — weniger Aroma, funktioniert.*
 
-**2. Kochstück kochen**
-60 g Vollkornmehl, 240 g Wasser und 13 g Salz **kalt** in einem kleinen Topf mit dem Schneebesen glatt rühren (sonst Klumpen). Bei mittlerer Hitze unter ständigem Rühren erhitzen — nach 2–4 Min. dickt es plötzlich puddingartig ein. **1 Min. weiterrühren**, vom Herd, in eine Schüssel umfüllen, Frischhaltefolie **direkt auf die Oberfläche** (keine Haut), abkühlen, dann in den Kühlschrank. Hält 2 Tage, wird kalt verarbeitet. *Zu lange gekocht = klumpig = trockene Krume; nur bis zum Eindicken plus eine Minute.*
+**2. Kochstück kochen (ca. 10 Min.)**
+*jederzeit · Herd*
+60 g Weizenvollkornmehl (Dinkel: 60 g Dinkelvollkornmehl), 240 g Wasser und 13 g Salz **kalt** in einem kleinen Topf mit dem Schneebesen glatt rühren (sonst Klumpen). Bei mittlerer Hitze unter ständigem Rühren erhitzen — nach 2–4 Min. dickt es plötzlich puddingartig ein. **1 Min. weiterrühren**, vom Herd, in eine Schüssel umfüllen, Frischhaltefolie **direkt auf die Oberfläche** (keine Haut), abkühlen, dann in den Kühlschrank. Hält 2 Tage, wird kalt verarbeitet. *Zu lange gekocht = klumpig = trockene Krume; nur bis zum Eindicken plus eine Minute.*
 
 ### Backtag — Teig (\~3 Std., davon \~30 Min. Arbeit)
 
-**3. Quellstück (30 Min. vor Teigbeginn)**
-6 g Flohsamenschalen mit 60 g Wasser verrühren, 15 Min. stehen lassen — es entsteht ein festes Gel. *Bei Weg B (direkt backen) kann es entfallen; dann 30 g Wasser weniger im Hauptteig.*
+**3. Quellstück ansetzen (15 Min., passiv)**
+*jederzeit*
+30 Min. vor Teigbeginn: 6 g Flohsamenschalen mit 60 g Wasser verrühren, 15 Min. stehen lassen — es entsteht ein festes Gel. *Bei Weg B (direkt backen) kann es entfallen; dann 30 g Wasser weniger im Hauptteig.*
 
-**4. Autolyse (45 Min. Weizen / 30 Min. Dinkel)**
-In einer großen Schüssel: 390 g Vollkornmehl (Roggen-Variante: 300 g Weizen + 90 g Roggen), 80 g Wasser (\~28 °C; Roggen-Variante 90 g, Dinkel 40 g), den kompletten Poolish, das komplette Kochstück und das komplette Quellstück mit der Teigkarte und nassen Händen **nur so lange mischen, bis kein trockenes Mehl mehr sichtbar ist** (2–3 Min., darf klumpig aussehen). Abdecken, ruhen lassen. *Kein Kneten — das Mehl arbeitet allein.*
+**4. Autolyse (45 Min., passiv)**
+*nach Poolish ansetzen, Kochstück kochen, Quellstück ansetzen*
+In einer großen Schüssel: 390 g Weizenvollkornmehl (Weizen-Roggen: 300 g Weizenvollkornmehl + 90 g Roggenvollkornmehl, Dinkel: 390 g Dinkelvollkornmehl), 80 g Wasser (Weizen-Roggen: 90 g, Dinkel: 40 g) von \~28 °C, den kompletten Poolish, das komplette Kochstück und das komplette Quellstück mit der Teigkarte und nassen Händen **nur so lange mischen, bis kein trockenes Mehl mehr sichtbar ist** (2–3 Min., darf klumpig aussehen). Abdecken, 45 Min. ruhen lassen (Dinkel: 30 Min.). *Kein Kneten — das Mehl arbeitet allein.*
 
-**5. Hefe einarbeiten — Slap & Fold statt Kneten (5 Min.)**
-12 g Frischhefe (Weg A; 6 g für Weg B, 9 g für Weg C) zerbröseln, mit 12 g Honig (und ggf. 6 g Backmalz, 4–6 g Brotgewürz) auf den Teig geben. Teig auf die **unbemehlte** Arbeitsfläche kippen. **Slap & Fold:** Teig mit beiden Händen an einer Seite hochheben, mit Schwung auf die Fläche schlagen, den hängenden Teil über den liegenden falten, um 90° drehen, wiederholen — **3 Min.**, dann 18 g weiche Butter darauf und **weitere 2 Min.**, bis sie eingearbeitet ist. Der Teig klebt anfangs stark — **nicht mehlen, nasse Hände und Teigkarte**. Nach 5 Min. hält er beim Hochheben schon kurz zusammen; mehr muss er hier nicht können, den Rest macht das Falten. **Dinkel: nur 3 Min. gesamt** (Butter nach 2 Min.), sobald der Teig glänzt und schmiert sofort aufhören.
+**5. Slap & Fold (5 Min.)**
+Hefe einarbeiten — Slap & Fold statt Kneten: 12 g Frischhefe (Direkt backen: 6 g, Kombi: 9 g) zerbröseln, mit 12 g Honig (und ggf. 6 g Backmalz, 4–6 g Brotgewürz) auf den Teig geben. Teig auf die **unbemehlte** Arbeitsfläche kippen. **Slap & Fold:** Teig mit beiden Händen an einer Seite hochheben, mit Schwung auf die Fläche schlagen, den hängenden Teil über den liegenden falten, um 90° drehen, wiederholen — **3 Min.**, dann 18 g weiche Butter darauf und **weitere 2 Min.**, bis sie eingearbeitet ist. Der Teig klebt anfangs stark — **nicht mehlen, nasse Hände und Teigkarte**. Nach 5 Min. hält er beim Hochheben schon kurz zusammen; mehr muss er hier nicht können, den Rest macht das Falten. **Dinkel: nur 3 Min. gesamt** (Butter nach 2 Min.), sobald der Teig glänzt und schmiert sofort aufhören.
 
-**Teigtemperatur messen** (Fleischthermometer): Ziel **25–26 °C** (Dinkel 24–25 °C). Unter 24 °C → Stockgare um 20 Min. verlängern; über 27 °C → um 15 Min. kürzen, Dinkel dann kühl stellen.
+**6. Temperatur messen (1 Min.)**
+Teigtemperatur mit dem Fleischthermometer messen: Ziel **25–26 °C** (Dinkel: 24–25 °C). Unter 24 °C → Stockgare um 20 Min. verlängern; über 27 °C → um 15 Min. kürzen, Dinkel dann kühl stellen.
 
-**6. Stockgare mit 3× Dehnen & Falten (90–120 Min. Weizen / 75–90 Min. Dinkel)**
-Teig in eine leicht geölte Schüssel, abdecken, bei \~24 °C gehen lassen. **Nach 30, 60 und 90 Min.** (Dinkel: 25, 50, 75) **Dehnen & Falten:** nasse Hände, unter eine Seite greifen, den Teig hochziehen bis zum Widerstand (nicht reißen), über die Mitte auf die gegenüberliegende Seite legen, Schüssel vierteldrehen, insgesamt viermal — 20 Sek. *Das ist das Kneten dieses Rezepts: jedes Falten schichtet die Kleberstränge und baut sichtbar Spannung auf. Beim zweiten Mal ist der Teig merklich straffer und weniger klebrig, beim dritten hält er die Form.* **Fenstertest nach dem 3. Falten:** ein walnussgroßes Stück langsam auseinanderziehen — Weizen gibt ein fast durchsichtiges Häutchen mit Kleiepunkten; Dinkel reißt früher, „dünn und dehnbar" reicht. Reißt Weizen sofort: ein 4. Falten nach weiteren 20 Min. **Reservewasser** (20–30 g) nur, wenn sich der Teig beim 2. Falten fest und trocken anfühlt — dann mit nassen Händen einfalten. Fertig, wenn Weizen etwa **verdoppelt** (Roggen-Variante \~1,8-fach, Dinkel \~1,5-fach) ist und Blasen an der Oberfläche zeigt.
+**7. Stockgare (90–120 Min., passiv)**
+Teig in eine leicht geölte Schüssel, abdecken, bei \~24 °C 90–120 Min. gehen lassen (Dinkel: 75–90 Min.), dabei 3× Dehnen & Falten. **Nach 30, 60 und 90 Min.** (Dinkel: 25, 50, 75) **Dehnen & Falten:** nasse Hände, unter eine Seite greifen, den Teig hochziehen bis zum Widerstand (nicht reißen), über die Mitte auf die gegenüberliegende Seite legen, Schüssel vierteldrehen, insgesamt viermal — 20 Sek. *Das ist das Kneten dieses Rezepts: jedes Falten schichtet die Kleberstränge und baut sichtbar Spannung auf. Beim zweiten Mal ist der Teig merklich straffer und weniger klebrig, beim dritten hält er die Form.* **Fenstertest nach dem 3. Falten:** ein walnussgroßes Stück langsam auseinanderziehen — Weizen gibt ein fast durchsichtiges Häutchen mit Kleiepunkten; Dinkel reißt früher, „dünn und dehnbar" reicht. Reißt Weizen sofort: ein 4. Falten nach weiteren 20 Min. **Reservewasser** (20–30 g) nur, wenn sich der Teig beim 2. Falten fest und trocken anfühlt — dann mit nassen Händen einfalten. Fertig, wenn Weizen etwa **verdoppelt** (Weizen-Roggen: \~1,8-fach, Dinkel: \~1,5-fach) ist und Blasen an der Oberfläche zeigt.
 
-**7. Abstechen und Vorformen (10 Min. + 10 Min. Zwischengare)**
-Arbeitsfläche **dünn** bemehlen, Teig mit der Teigkarte aus der Schüssel kippen — nicht drücken, das Gas soll bleiben. In **12 Stücke à \~100 g** (Dinkel \~95 g) schneiden; wiegen lohnt sich, dann sind alle gleichzeitig gar. **Vorformen:** jedes Stück mit nassen Händen einmal von allen Seiten zur Mitte falten, mit der Faltseite nach unten ablegen. **Alle 12 abgedeckt 10 Min. entspannen lassen.** *Das ist neu gegenüber dem ersten Versuch: frisch geteilter Teig zieht sich zusammen und reißt beim Schleifen — entspannter Teig lässt sich spannen.*
+**8. Vorformen (10 Min. + 10 Min. Zwischengare)**
+Abstechen und Vorformen: Arbeitsfläche **dünn** bemehlen, Teig mit der Teigkarte aus der Schüssel kippen — nicht drücken, das Gas soll bleiben. In **12 Stücke à \~100 g** (Dinkel: \~95 g) schneiden; wiegen lohnt sich, dann sind alle gleichzeitig gar. **Vorformen:** jedes Stück mit nassen Händen einmal von allen Seiten zur Mitte falten, mit der Faltseite nach unten ablegen. **Alle 12 abgedeckt 10 Min. entspannen lassen.** *Das ist neu gegenüber dem ersten Versuch: frisch geteilter Teig zieht sich zusammen und reißt beim Schleifen — entspannter Teig lässt sich spannen.*
 
-**8. Rundschleifen — der wichtigste Handgriff (10 Min.)**
-**Ziel:** eine Kugel mit straffer, glatter Haut oben und einem **Schluss** (zusammengezogener „Nabel") unten. Die gespannte Haut hält das Gas wie ein Ballon — so geht das Brötchen nach oben statt in die Breite.
+**9. Rundschleifen (10 Min.)**
+Rundschleifen — der wichtigste Handgriff. **Ziel:** eine Kugel mit straffer, glatter Haut oben und einem **Schluss** (zusammengezogener „Nabel") unten. Die gespannte Haut hält das Gas wie ein Ballon — so geht das Brötchen nach oben statt in die Breite.
 
 1. Vorgeformtes Stück mit der glatten Seite nach unten flach drücken, die vier Ränder nacheinander zur Mitte falten und andrücken — wie ein Päckchen. Die raue Faltseite wird der Schluss.
 2. Umdrehen: glatte Seite oben. **Hände jetzt trocken, Fläche nur hauchdünn bemehlt** — der Teig muss leicht haften, denn die Reibung zieht die Haut unten zusammen.
@@ -125,57 +139,75 @@ Arbeitsfläche **dünn** bemehlen, Teig mit der Teigkarte aus der Schüssel kipp
 4. **Für sehr weichen Teig (so war es beim ersten Mal):** statt zu kreisen den Teigling mit der Teigkarte von der Seite untergreifen und 6–8-mal über die Fläche zu sich ziehen — die Karte spannt die Haut, ohne dass die Hand klebt. Klebt er trotzdem: Hände anfeuchten, nicht mehlen. Rutscht er ohne Spannung: Mehl von der Fläche wischen.
 5. Umdrehen und prüfen: unten ein zusammengezogener Punkt = Schluss.
 
-**Topping:** Oberseite mit feuchter Hand betupfen und in 60 g Sonnenblumenkerne (oder andere Saaten) drücken. **Ablegen:** Schluss nach unten, mindestens 4 cm Abstand, auf Backpapier. *Wer sich das Schleifen noch nicht zutraut: Schluss nach oben ablegen und nicht einschneiden — der Schluss reißt rustikal auf und verzeiht weniger Spannung.*
+**10. Topping (ca. 5 Min.)**
+Oberseite mit feuchter Hand betupfen und in 60 g Sonnenblumenkerne (oder andere Saaten) drücken. **Ablegen:** Schluss nach unten, mindestens 4 cm Abstand, auf Backpapier. *Wer sich das Schleifen noch nicht zutraut: Schluss nach oben ablegen und nicht einschneiden — der Schluss reißt rustikal auf und verzeiht weniger Spannung.*
 
 ### Nach dem Formen — drei Wege
 
-**Weg A — Einfrieren (Vorrat; 12 g Hefe)**
-**20 Min.** abgedeckt bei Raumtemperatur entspannen — **nicht länger**. Hefe, die noch nicht aktiv gärt, überlebt den Frost deutlich besser; die Stückgare findet erst *nach* dem Auftauen statt. Dann einfrieren, **ohne Blech-Platz in Schüben:** je 4–6 Teiglinge ohne Kontakt auf ein kleines Brett, einen Teller oder in eine flache Dose mit Backpapier, **2–3 Std. offen anfrieren**, hartgefroren in einen Gefrierbeutel, Luft herausdrücken, **den Beutel in einen zweiten Beutel oder eine Dose** (ohne Vakuumierer ist Doppelverpackung der Gefrierbrand-Schutz), Datum draufschreiben, nächsten Schub aufs Brett. Die wartenden Teiglinge in der Zwischenzeit **in den Kühlschrank** (bremst die Hefe). **Innerhalb von 3 Wochen** verbrauchen — ohne Vakuum konservativ. Weiter bei Schritt 9.
+**Weg C — Kombi (9 g Hefe): 6 einfrieren, 6 direkt backen.** Die praktischste Variante für einen Test-Ansatz: 6 Teiglinge nach Weg A einfrieren, 6 nach Weg B in die Stückgare (**50–60 Min.**, Fingertest) und backen. So sieht man am selben Tag, ob Teigführung und Formen stimmen, bevor die Frost-Charge dran ist.
 
-**Weg B — direkt backen (6 g Hefe)**
-Geformte Teiglinge mit 5 cm Abstand auf Backpapier, abdecken (umgedrehte Schüssel, Folie, feuchtes Tuch), bei \~24 °C **60–75 Min.** (Dinkel 50–60 Min.) gehen lassen. **Ofen 30–40 Min. vor Ende** mit zweitem Blech auf mittlerer Schiene auf **250 °C Ober-/Unterhitze** vorheizen, Metallschale auf den Ofenboden. Backreife per **Fingertest** (Schritt 9). Weizen darf recht voll gehen (\~1,8-fach), Dinkel lieber eine Spur früher in den Ofen. Weiter bei Schritt 10.
+**11. Einfrieren (20 Min. + 2–3 Std. passiv)**
+*nur Einfrieren, Kombi*
+Weg A — Einfrieren (Vorrat; 12 g Hefe): **20 Min.** abgedeckt bei Raumtemperatur entspannen — **nicht länger**. Hefe, die noch nicht aktiv gärt, überlebt den Frost deutlich besser; die Stückgare findet erst *nach* dem Auftauen statt. Dann einfrieren, **ohne Blech-Platz in Schüben:** je 4–6 Teiglinge ohne Kontakt auf ein kleines Brett, einen Teller oder in eine flache Dose mit Backpapier, **2–3 Std. offen anfrieren**, hartgefroren in einen Gefrierbeutel, Luft herausdrücken, **den Beutel in einen zweiten Beutel oder eine Dose** (ohne Vakuumierer ist Doppelverpackung der Gefrierbrand-Schutz), Datum draufschreiben, nächsten Schub aufs Brett. Die wartenden Teiglinge in der Zwischenzeit **in den Kühlschrank** (bremst die Hefe). **Innerhalb von 3 Wochen** verbrauchen — ohne Vakuum konservativ. Weiter bei „Auftauen und Stückgare“.
 
-**Weg C — Kombi (9 g Hefe): 6 einfrieren, 6 direkt backen**
-Die praktischste Variante für einen Test-Ansatz: 6 Teiglinge nach Weg A einfrieren, 6 nach Weg B in die Stückgare (**50–60 Min.**, Fingertest) und backen. So sieht man am selben Tag, ob Teigführung und Formen stimmen, bevor die Frost-Charge dran ist.
+**12. Stückgare (60–75 Min., passiv)**
+*nur Direkt backen, Kombi · nach Topping*
+Weg B — direkt backen (6 g Hefe): Geformte Teiglinge mit 5 cm Abstand auf Backpapier, abdecken (umgedrehte Schüssel, Folie, feuchtes Tuch), bei \~24 °C **60–75 Min.** (Dinkel: 50–60 Min., Kombi: 50–60 Min.) gehen lassen. **Ofen 30–40 Min. vor Ende** mit zweitem Blech auf mittlerer Schiene auf **250 °C Ober-/Unterhitze** vorheizen, Metallschale auf den Ofenboden. Backreife per **Fingertest** (siehe unten). Weizen darf recht voll gehen (\~1,8-fach), Dinkel lieber eine Spur früher in den Ofen. Weiter bei „Einschneiden“.
 
 ### Backen (alle Wege)
 
-**9. Nur Weg A: Auftauen und Stückgare (2,5–3,5 Std.)**
-Gefrorene Teiglinge mit 5 cm Abstand, Schluss nach unten, auf Backpapier, abdecken. Bei 22–24 °C gehen lassen, bis sie etwa das **1,8-Fache** der gefrorenen Größe haben (Dinkel 1,5–1,8-fach) — 2,5–3,5 Std. **Alternative:** abgedeckt über Nacht im Kühlschrank auftauen, morgens 60–90 Min. bei Raumtemperatur fertig gehen lassen. **Ofen 30–40 Min. vor Backreife** mit zweitem Blech auf **250 °C Ober-/Unterhitze**, Metallschale (kein Glas, kein Emaille) auf den Ofenboden.
+**13. Auftauen und Stückgare (2,5–3,5 Std., passiv)**
+*nur Einfrieren, Kombi · nach Einfrieren*
+Nur Weg A: Gefrorene Teiglinge mit 5 cm Abstand, Schluss nach unten, auf Backpapier, abdecken. Bei 22–24 °C gehen lassen, bis sie etwa das **1,8-Fache** der gefrorenen Größe haben (Dinkel: 1,5–1,8-fach) — 2,5–3,5 Std. **Alternative:** abgedeckt über Nacht im Kühlschrank auftauen, morgens 60–90 Min. bei Raumtemperatur fertig gehen lassen. **Ofen 30–40 Min. vor Backreife** mit zweitem Blech auf **250 °C Ober-/Unterhitze**, Metallschale (kein Glas, kein Emaille) auf den Ofenboden.
 
 **Fingertest** (gilt für alle Wege): leicht bemehlten Finger 1 cm tief in die Seite drücken.
 - Delle springt sofort zurück → 20 Min. warten
 - Delle kommt **langsam** zurück, bleibt minimal sichtbar → **jetzt backen**
 - Delle bleibt stehen, Teig sackt → übergar; trotzdem backen, **nicht** einschneiden, nächstes Mal früher
 
-**10. Einschneiden**
+**14. Einschneiden (ca. 1 Min.)**
+*nach Auftauen und Stückgare, Stückgare*
 Direkt vor dem Einschießen: mit Rasierklinge, Cutter oder sehr scharfem glatten Messer **0,5–1 cm tief** in einer zügigen Bewegung über die Mitte, Klinge \~30° schräg. Nicht sägen, nicht zögern. *Der Schnitt ist die Sollbruchstelle für den Ofentrieb — ohne ihn reißt die Kruste irgendwo unkontrolliert.* Bei Saaten-Topping oder Schluss-oben kann er entfallen.
 
-**11. Einschießen und Schwaden**
+**15. Einschießen und Schwaden (ca. 1 Min.)**
+*Ofen 250 °C*
 Backpapier mit den Brötchen an zwei Ecken fassen und auf das heiße Blech im Ofen ziehen (oder per Brett/kaltem Blech als Schaufel hineingleiten lassen). Sofort Dampf: **50–80 ml heißes Wasser** in die vorgeheizte Metallschale (Gesicht weg, Handschuh) **oder 10–15 Sprühstöße** gegen die Ofenwände. Tür sofort zu. *Dampf hält die Oberfläche dehnbar, bis der Ofentrieb durch ist — mehr Volumen, dünne, glänzende, splitternde Kruste.*
 
-**12. Backen (18–20 Min.)**
+**16. Backen (18–20 Min.)**
+*Ofen 250 °C · fertig bei ≥ 96 °C Kern*
+In zwei Phasen backen:
+
 1. **10 Min. bei 250 °C** mit Dampf, Tür zu.
 2. Tür 5–10 Sek. weit öffnen, Dampf raus, Schale entfernen, Ofen auf **220 °C**.
 3. **8–10 Min.** trocken ausbacken.
 
 Fertig bei kräftig goldbrauner Kruste, hohlem Klang beim Klopfen auf den Boden und **Kerntemperatur ≥ 96 °C** (Fleischthermometer seitlich bis zur Mitte). **Ab Minute 14 beobachten** — Honig, Malz und Vollkorn bräunen schnell; werden sie zu dunkel, auf 200 °C runter und 2–3 Min. länger. Auf dem Gitter **mindestens 20 Min.** auskühlen lassen — die Krume gart nach, zu früh angeschnitten wird sie klitschig.
 
-## Zeitplan
+## Zeitplan Backtag
 
-| Wann | Was | Dauer |
-|---|---|---|
-| **Vorabend 20:00** | Poolish ansetzen, Kochstück kochen, Kochstück nach dem Erkalten kühlen | 20 Min. |
-| **Backtag 9:00** | Quellstück ansetzen | 2 Min. |
-| 9:15 | Autolyse (Weizen 45 Min.) | 3 Min. Arbeit |
-| 10:00 | Hefe, Honig, Butter per Slap & Fold einarbeiten, Temperatur messen | 6 Min. |
-| 10:05–12:00 | Stockgare, Dehnen & Falten 10:35 / 11:05 / 11:35 | 3 × 1 Min. |
-| 12:00 | Abstechen, Vorformen, 10 Min. Zwischengare | 10 Min. |
-| 12:15 | Rundschleifen, Topping | 10 Min. |
-| 12:30 | **Weg A:** 20 Min. entspannen → 12:50 erster Schub ins Gefrierfach, Rest in den Kühlschrank; Schübe um 15:30 und 18:00 umbeuteln/nachlegen | je 5 Min. |
-| 12:30 | **Weg B:** Stückgare bis \~13:30, Ofen 13:00 an, backen 13:35–13:55 | 5 Min. Arbeit |
-| **Backen aus dem Frost** | 6:30 Teiglinge raus (abgedeckt, Raumtemperatur) · 9:15 Ofen an · 9:45 Fingertest, backen · 10:05 fertig · 10:30 Frühstück | 10 Min. Arbeit |
-| Alternative | Abends Teiglinge in den Kühlschrank, morgens 60–90 Min. Raumtemperatur, dann backen | |
+*Für einen Teigbeginn um 9:00 Uhr*
+
+- Vorabend (20:00 Uhr): Poolish ansetzen · Kochstück kochen · Kochstück nach dem Erkalten kühlen (20 Min.)
+- 9:00 Uhr: Quellstück ansetzen (2 Min.)
+- 9:15 Uhr: Autolyse (Weizen 45 Min.; 3 Min. Arbeit)
+- 10:00 Uhr: Hefe, Honig, Butter per Slap & Fold einarbeiten, Temperatur messen (6 Min.)
+- 10:05 Uhr: Stockgare (bis 12:00), Dehnen & Falten 10:35 / 11:05 / 11:35 (3 × 1 Min.)
+- 12:00 Uhr: Abstechen, Vorformen, 10 Min. Zwischengare (10 Min.)
+- 12:15 Uhr: Rundschleifen, Topping (10 Min.)
+- 12:30 Uhr: *nur Einfrieren, Kombi* Einfrieren: 20 Min. entspannen → 12:50 erster Schub ins Gefrierfach, Rest in den Kühlschrank; Schübe um 15:30 und 18:00 umbeuteln/nachlegen (je 5 Min.) · *nur Direkt backen, Kombi* Stückgare (bis \~13:30), Ofen 13:00 an, Backen 13:35–13:55 (5 Min. Arbeit)
+
+## Zeitplan aus dem Frost
+
+*nur Einfrieren, Kombi*
+
+*Für ein Frühstück um 10:30 Uhr*
+
+- Vorabend: Alternative: Abends Teiglinge in den Kühlschrank, morgens 60–90 Min. Raumtemperatur, dann backen
+- 6:30 Uhr: Auftauen und Stückgare: Teiglinge raus (abgedeckt, Raumtemperatur)
+- 9:15 Uhr: Ofen an
+- 9:45 Uhr: Fingertest, Backen
+- 10:05 Uhr: fertig
+- 10:30 Uhr: Frühstück (10 Min. Arbeit)
 
 ## Fehlerbild und Ursache
 

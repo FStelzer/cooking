@@ -2,6 +2,8 @@
 
 *Grundrezept \~50 Min., davon 25 passiv; Varianten 45 Min. bis 3 Std. (siehe Tabelle). Equipment: 6L-Topf oder elektrischer Schnellkochtopf (nur Schritt 1; lohnt bei Variante B und D, siehe [Schnellkochtopf-Fassung](#schnellkochtopf-fassung)), Pfanne (Masala), kleine Pfanne (Tadka), kleiner Topf (Kinder-Anteil), Stabmixer nur für Variante D, Bunsenbrenner optional (Dhungar), Pfanne für Roti.*
 
+*Varianten: Variante = Grundrezept | Palak | Chana | Kokos | Makhani · Beilage = Kachumber | Raita*
+
 Dal ist in diesem Haushalt Rotationsessen, kein Projekt: eine Mechanik — Linsen mit Kurkuma weichkochen, eine Zwiebel-Tomaten-Basis unterrühren, zum Schluss das **Tadka** (in Ghee aufgeblühte Gewürze) darübergießen — und daraus vier verschiedene Abende. Ein Dal ist zugleich Protein *und* KH-Träger; deshalb steht es hier als Hauptgericht mit Gemüse-Beilage, Joghurt und einem kleinen Vollkorn-Roti, nicht als Beilage. Die Beilagen-Skalierung (200 g Toor zu Tandoori-Hähnchen) steht in [`tandoori-haehnchen.md`](/schwangerschaft/tandoori-haehnchen.md).
 
 **Von Haus aus schwangerschaftstauglich** ([Leitfaden](/schwangerschaft/leitfaden.md)): alles gegart, Joghurt pasteurisiert, kein Alkohol, kein Ei außer optional hartgekocht. Linsen sind der Grund für dieses Rezept — niedriger glykämischer Index, viel Protein und Ballaststoffe, und in der letzten Schwangerschaft der bewährte Anker fürs Blutzucker-Management (Evidenz und Portionsrechnung unten).
@@ -50,90 +52,62 @@ Der elektrische Schnellkochtopf (Instant-Pot-Typ, ca. 6 L) übernimmt **nur den 
 
 ## Einkaufsliste
 
-### Grundrezept + Beilagen (Pflichtblock)
+### Aldi / REWE
 
-**REWE / Aldi — Obst & Gemüse:**
-- [ ] 2 große Zwiebeln (\~250 g)
-- [ ] 1 Knolle Knoblauch (\~10 Zehen: 4 Masala, 4 Tadka Erwachsene, 1–2 Tadka Kind)
-- [ ] \~5 cm Ingwer (3 cm Masala, 2 cm Kachumber optional)
-- [ ] 500 g reife Tomaten (300 g Masala, 200 g Kachumber)
-- [ ] 1 Salatgurke (Kachumber oder Raita)
-- [ ] 1 rote Zwiebel (Kachumber)
-- [ ] 2 Zitronen (Dal + Kachumber)
+**Obst & Gemüse:**
+- [ ] 2 Zwiebeln, groß (\~250 g)
+- [ ] 1 Knolle Knoblauch *(\~10 Zehen: 4 Masala, 4 Tadka Erwachsene, 1–2 Tadka Kind)*
+- [ ] Ingwer, \~5 cm *(3 cm Masala, 2 cm Kachumber optional; Palak: +2 cm Julienne fürs Tadka)*
+- [ ] 500 g Tomaten, reif *(300 g Masala, 200 g Kachumber)*
+- [ ] 1 Salatgurke *(Kachumber oder Raita)*
+- [ ] 1 Rote Zwiebel — nur Kachumber
+- [ ] 2 Zitronen *(Dal + Kachumber)*
 - [ ] 1 Bund Koriandergrün
+- [ ] 400 g Blattspinat, frisch — nur Palak *(REWE Beutel; Fallback 300 g TK-Blattspinat, aufgetaut und ausgedrückt)*
+- [ ] 1 Hokkaido, klein (\~600 g → 400 g Würfel) — nur Chana *(oder 400 g Zucchini)*
+- [ ] 4–5 Schalotten — nur Kokos *(1 in die Paste, 3–4 ins Tadka)*
 
-**REWE / Aldi — Milchprodukte / Eier:**
-- [ ] Ghee, 1 Glas (Verbrauch \~5 EL; Fallback Butterschmalz oder Butter)
-- [ ] 250 g griechischer Joghurt 10 % (Raita; pasteurisiert — Standardware) — entfällt bei Kachumber
-- [ ] 4 Eier (optional, hartgekocht als Protein-Booster)
+**Milchprodukte & Eier:**
+- [ ] Ghee, 1 Glas *(Verbrauch \~5 EL; Fallback Butterschmalz oder Butter)*
+- [ ] 250 g Joghurt, griechisch 10 % — nur Raita *(pasteurisiert — Standardware)*
+- [ ] Optional: 4 Eier *(hartgekocht als Protein-Booster)*
+- [ ] 80 g Butter — nur Makhani *(30 g Masala + 15 g Kashmiri-Butter + 20 g Finish + 10 g Kind)*
+- [ ] 80 ml Sahne — nur Makhani
 
-**REWE / Aldi — Trockenwaren:**
-- [ ] 300 g rote Linsen (Masoor) — Standard fürs Grundrezept
-- [ ] 200 g Weizen-Vollkornmehl (Roti)
+**Trockenwaren:**
+- [ ] 300 g Masoor (rote Linsen) — nur Grundrezept, Palak *(Standard fürs Grundrezept)*
+- [ ] 200 g Weizen-Vollkornmehl *(Roti)*
+- [ ] 60 g Kidneybohnen, getrocknet (Rajma) — nur Makhani
+- [ ] 250 g Passierte Tomaten (Tetrapak) — nur Makhani
 
-**Gewürze (Bestand prüfen):**
+### Asialaden
+
+- [ ] Curryblätter (TK oder frisch) — nur Chana, Kokos *(Kokos: 15–20 Blätter — hier wichtig, nicht optional; Chana: optional)*
+- [ ] 100 g Kokosnuss, frisch gerieben — nur Kokos *(TK „grated coconut“ — Fallback 200 ml Kokosmilch)*
+- [ ] 300 g Moong Dal, gelb — nur Kokos *(Asialaden prüfen / online; Fallback 300 g Masoor)*
+- [ ] 2 EL Kokosöl — nur Kokos *(Fallback Ghee)*
+- [ ] Senfsamen (schwarz/braun), kleine Packung — nur Chana, Kokos *(Asialaden oder REWE Gewürzregal)*
+
+### Online
+
+- [ ] Kashmiri-Chili (Pulver) *(Fallback ½ Paprika + ½ Cayenne)*
+- [ ] Optional: Hing (Asafoetida) *(winzige Dose, hält Jahre)*
+- [ ] 300 g Chana Dal — nur Chana *(online/indischer Laden — kein Ersatz durch Kichererbsen, andere Garzeit)*
+- [ ] Optional: Amchur (Mangopulver) — nur Chana *(sonst Zitrone)*
+- [ ] 250 g Urad (ganze schwarze Linsen) — nur Makhani *(online/indischer Laden)*
+
+### Vorrat prüfen
+
 - [ ] Kurkuma, Kreuzkümmel ganz, Koriander gemahlen, Garam Masala, Paprika edelsüß
-- [ ] Getrocknete rote Chilis (3–4 Stück, Tadka Erwachsene)
-- [ ] Kasuri Methi (Vorrat vom Paneer-/Tandoori-Projekt)
-- [ ] Kashmiri-Chilipulver *(online; Fallback ½ Paprika + ½ Cayenne)*
-- [ ] Asafoetida/Hing *(optional, online — winzige Dose, hält Jahre)*
-
-### Nur Variante A — Dal Palak
-- [ ] 400 g frischer Blattspinat (REWE Beutel; Fallback 300 g TK-Blattspinat, aufgetaut und ausgedrückt)
-- [ ] Ingwer +2 cm (Julienne fürs Tadka)
-
-### Nur Variante B — Chana Dal mit Kürbis
-- [ ] 300 g Chana Dal *(online/indischer Laden — kein Ersatz durch Kichererbsen, andere Garzeit)*
-- [ ] 1 kleiner Hokkaido (\~600 g → 400 g Würfel) oder 400 g Zucchini
-- [ ] Senfsamen (schwarz/braun), kleine Packung *(Asialaden oder REWE Gewürzregal)*
-- [ ] Curryblätter, TK oder frisch *(Asialaden, optional)*
-- [ ] Amchur (Mangopulver) *(optional, online — sonst Zitrone)*
-
-### Nur Variante C — Kokos-Dal (Kerala-Stil)
-- [ ] 300 g gelbe Moong Dal *(Asialaden prüfen / online; Fallback 300 g Masoor)*
-- [ ] 100 g frisch geriebene Kokosnuss *(TK „grated coconut" im Asialaden)* — Fallback 200 ml Kokosmilch
-- [ ] 4–5 Schalotten (1 in die Paste, 3–4 ins Tadka)
-- [ ] Senfsamen, Curryblätter (15–20 Blätter, TK/frisch — hier wichtig, nicht optional)
-- [ ] 2 EL Kokosöl *(Fallback Ghee)*
-
-### Nur Variante D — Dal makhani
-- [ ] 250 g ganze schwarze Urad-Linsen *(online/indischer Laden)*
-- [ ] 60 g getrocknete Kidneybohnen (Rajma) *(REWE)*
-- [ ] 250 g passierte Tomaten (Tetrapak)
-- [ ] 80 g Butter + 80 ml Sahne (30 g Masala + 15 g Kashmiri-Butter + 20 g Finish + 10 g Kind)
-- [ ] Ganzgewürze: 2 grüne Kardamomkapseln, 1 Zimtstange, 2 Nelken, 1 Lorbeerblatt *(Bestand prüfen)*
-- [ ] Muskatnuss *(Bestand)*
-- [ ] Optional: 1 Stück Holzkohle (Dhungar-Rauch, mit dem Bunsenbrenner glühend machen)
-
-## Grundrezept: Dal tadka als Hauptgericht (Masoor oder Toor)
-
-### 1. Linsen kochen (25 Min., passiv)
-
-300 g Masoor waschen, bis das Wasser klar ist (kein Einweichen). Im 6L-Topf mit **1,1 L Wasser, ½ TL Kurkuma, 1 TL Ghee** aufkochen, Schaum abschöpfen, Deckel halb auf, **15–20 Min.** leise kochen, bis die Linsen zerfallen. *Mit Toor: 300 g 30 Min. in heißem Wasser einweichen, abgießen, 1,2 L Wasser, 30–45 Min.; Toor darf noch leichte Körnung haben.* Mit dem Schneebesen kurz durchrühren — grobe Creme, keine Suppe, kein Brei. **Nicht salzen.**
-
-### 2. Masala (15 Min., parallel)
-
-**2 EL Ghee** in der Pfanne, **1 TL Kreuzkümmel ganz** 20 Sek. knistern lassen. **2 Zwiebeln** (250 g) fein gewürfelt bei mittlerer Hitze **8–10 Min.** goldbraun — nicht abkürzen, das ist die Basis-Süße. **4 Knoblauchzehen + 3 cm Ingwer** gerieben, 1 Min. **300 g Tomaten** gewürfelt, **½ TL Kurkuma, 1 TL Koriander gemahlen, ½ TL Paprika edelsüß** (Farbe, keine Schärfe), 8–10 Min. einkochen, bis die Tomaten zerfallen und sich Fett am Rand absetzt.
-
-### 3. Vereinen & salzen (5 Min.)
-
-Masala in den Linsentopf rühren, **1½ TL Salz**, 5 Min. köcheln. Konsistenz: soll vom Löffel fließen, nicht stehen — bei Bedarf **100–200 ml heißes Wasser**. Abschmecken.
-
-### 4. Teilen
-
-**\~¼ des Dals (\~400 g)** in den kleinen Topf → Kind. Rest bleibt im großen Topf.
-
-### 5. Tadka Erwachsene (3 Min.)
-
-In der kleinen Pfanne **2 EL Ghee** heiß. **1 TL Kreuzkümmel ganz** 20 Sek., **4 Knoblauchzehen** in Scheiben goldgelb (nicht braun — wird bitter), **3 getrocknete rote Chilis** (Kerne raus = weniger Schärfe) 20 Sek. **Pfanne vom Herd**, **½ TL Kashmiri-Chili + 1 Prise Hing** einrühren — 5 Sekunden, dann sofort über den großen Topf gießen. Zischen ist richtig. **1 TL Kasuri Methi** zwischen den Handflächen zerrieben, **½ TL Garam Masala, 1 EL Zitronensaft, 3 EL Koriandergrün** unterrühren.
-
-### 6. Tadka Kind (2 Min.)
-
-**1 EL Ghee, ½ TL Kreuzkümmel, 1–2 Knoblauchzehen** in Scheiben goldgelb, Pfanne vom Herd, **1 Prise Paprika edelsüß** — **kein Chili** — über den kleinen Topf. **1 Prise Garam Masala**, Spritzer Zitrone, 1 EL Koriander (oder weglassen, falls Koriander-Verweigerung).
-
-### 7. Anrichten
-
-Pro Teller **eine gute Kelle Dal (\~300 g)**, Kachumber oder Raita daneben, 1 Roti, optional 1 halbiertes hartgekochtes Ei. Zitronenviertel und Zwiebelringe auf den Tisch. Erwachsene: restliches Tadka-Ghee aus der Pfanne darüber.
+- [ ] Chilis, getrocknet, rot *(3–4 Stück, Tadka Erwachsene)*
+- [ ] Kasuri Methi *(Vorrat vom Paneer-/Tandoori-Projekt)*
+- [ ] Salz
+- [ ] Kardamomkapseln, grün (2 Stück) — nur Makhani
+- [ ] Zimtstange (1 Stück) — nur Makhani
+- [ ] Nelken (2 Stück) — nur Makhani
+- [ ] Lorbeerblatt (1 Stück) — nur Makhani
+- [ ] Muskat (Muskatnuss) — nur Makhani
+- [ ] Optional: Holzkohle, 1 Stück — nur Makhani *(Dhungar-Rauch, mit dem Bunsenbrenner glühend machen)*
 
 ## Varianten
 
@@ -145,65 +119,180 @@ Pro Teller **eine gute Kelle Dal (\~300 g)**, Kachumber oder Raita daneben, 1 Ro
 | **Charakter** | grün, herb, Alltag | körnig, süßlich, sättigend | mild, cremig, Kinder-Einstieg | reichhaltig, samtig, Wochenende |
 | **GDM-Einordnung** | wie Grundrezept | **günstigste Variante** (GI \~12) | GI höher (\~42), Kokosfett bremst | GI gut, aber energiedicht → kleinere Portion |
 
+## Zubereitung
+
+### Grundrezept: Dal tadka als Hauptgericht (Masoor oder Toor)
+
+*nur Grundrezept, Palak*
+
+**1. Linsen kochen (25 Min., passiv)**
+*jederzeit · Herd*
+300 g Masoor waschen, bis das Wasser klar ist (kein Einweichen). Im 6L-Topf mit **1,1 L Wasser, ½ TL Kurkuma, 1 TL Ghee** aufkochen, Schaum abschöpfen, Deckel halb auf, **15–20 Min.** leise kochen, bis die Linsen zerfallen. *Mit Toor: 300 g 30 Min. in heißem Wasser einweichen, abgießen, 1,2 L Wasser, 30–45 Min.; Toor darf noch leichte Körnung haben.* Mit dem Schneebesen kurz durchrühren — grobe Creme, keine Suppe, kein Brei. **Nicht salzen.**
+
+**2. Masala (15 Min., parallel)**
+*jederzeit · Herd*
+**2 EL Ghee** in der Pfanne, **1 TL Kreuzkümmel ganz** 20 Sek. knistern lassen. **2 Zwiebeln** (250 g) fein gewürfelt bei mittlerer Hitze **8–10 Min.** goldbraun — nicht abkürzen, das ist die Basis-Süße. **4 Knoblauchzehen + 3 cm Ingwer** gerieben, 1 Min. **300 g Tomaten** gewürfelt, **½ TL Kurkuma, 1 TL Koriander gemahlen, ½ TL Paprika edelsüß** (Farbe, keine Schärfe), 8–10 Min. einkochen, bis die Tomaten zerfallen und sich Fett am Rand absetzt.
+
+**3. Vereinen & salzen (5 Min.)**
+*nach Linsen kochen, Masala*
+Masala in den Linsentopf rühren, **1½ TL Salz**, 5 Min. köcheln. Konsistenz: soll vom Löffel fließen, nicht stehen — bei Bedarf **100–200 ml heißes Wasser**. Abschmecken.
+
+**4. Teilen (ca. 2 Min.)**
+**\~¼ des Dals (\~400 g)** in den kleinen Topf → Kind. Rest bleibt im großen Topf.
+
+**5. Tadka Erwachsene (3 Min.)**
+*nur Grundrezept · Herd*
+In der kleinen Pfanne **2 EL Ghee** heiß. **1 TL Kreuzkümmel ganz** 20 Sek., **4 Knoblauchzehen** in Scheiben goldgelb (nicht braun — wird bitter), **3 getrocknete rote Chilis** (Kerne raus = weniger Schärfe) 20 Sek. **Pfanne vom Herd**, **½ TL Kashmiri-Chili + 1 Prise Hing** einrühren — 5 Sekunden, dann sofort über den großen Topf gießen. Zischen ist richtig. **1 TL Kasuri Methi** zwischen den Handflächen zerrieben, **½ TL Garam Masala, 1 EL Zitronensaft, 3 EL Koriandergrün** unterrühren.
+
+**6. Tadka Kind (2 Min.)**
+*nur Grundrezept · Herd*
+**1 EL Ghee, ½ TL Kreuzkümmel, 1–2 Knoblauchzehen** in Scheiben goldgelb, Pfanne vom Herd, **1 Prise Paprika edelsüß** — **kein Chili** — über den kleinen Topf. **1 Prise Garam Masala**, Spritzer Zitrone, 1 EL Koriander (oder weglassen, falls Koriander-Verweigerung).
+
 ### Variante A — Dal Palak (Spinat-Dal)
+
+*nur Palak*
 
 *Grundrezept Schritt 1–4 unverändert (Masoor, oder 150 g Masoor + 150 g Toor nach Dassana). Zusätzlich: 400 g frischer Blattspinat, 2 cm Ingwer in Julienne.*
 
-1. **400 g Spinat** waschen, trocken schleudern, **fein hacken** (Stiele mit, wenn zart). Die Referenzen geben ihn **roh gehackt** dazu, nicht blanchiert — bei gehacktem Spinat im Dal spielt die Farbe keine Rolle wie beim pürierten Palak Paneer.
-2. **Tadka Erwachsene:** **2 EL Ghee, 1 TL Kreuzkümmel, 2 cm Ingwer-Julienne, 2–3 getrocknete Chilis, 1 Prise Hing** 30 Sek. Dann **¾ des Spinats** (300 g) in die Pfanne, **3–4 Min.** bei mittlerer Hitze zusammenfallen lassen. Vom Herd, **½ TL Kashmiri** einrühren, alles in den großen Topf, 2–3 Min. mitköcheln. **1 TL Kasuri Methi, ½ TL Garam Masala, 1 EL Zitrone.**
-3. **Tadka Kind:** **1 EL Ghee, ½ TL Kreuzkümmel, 1 Knoblauchzehe**, restlicher Spinat (100 g) 2–3 Min. welken, in den kleinen Topf. Prise Garam Masala, Spritzer Zitrone.
-4. Bei TK-Spinat (300 g aufgetaut, gut ausgedrückt, gehackt): identisch, nur 2 Min. im Tadka.
+**7. Spinat hacken (ca. 10 Min.)**
+*jederzeit*
+**400 g Spinat** waschen, trocken schleudern, **fein hacken** (Stiele mit, wenn zart). Die Referenzen geben ihn **roh gehackt** dazu, nicht blanchiert — bei gehacktem Spinat im Dal spielt die Farbe keine Rolle wie beim pürierten Palak Paneer. Bei TK-Spinat (300 g aufgetaut, gut ausgedrückt, gehackt): identisch, nur 2 Min. im Tadka.
+
+**8. Palak-Tadka Erwachsene (ca. 8 Min.)**
+*nach Teilen, Spinat hacken · Herd*
+**2 EL Ghee, 1 TL Kreuzkümmel, 2 cm Ingwer-Julienne, 2–3 getrocknete Chilis, 1 Prise Hing** 30 Sek. Dann **¾ des Spinats** (300 g) in die Pfanne, **3–4 Min.** bei mittlerer Hitze zusammenfallen lassen. Vom Herd, **½ TL Kashmiri** einrühren, alles in den großen Topf, 2–3 Min. mitköcheln. **1 TL Kasuri Methi, ½ TL Garam Masala, 1 EL Zitrone.**
+
+**9. Palak-Tadka Kind (ca. 3 Min.)**
+*Herd*
+**1 EL Ghee, ½ TL Kreuzkümmel, 1 Knoblauchzehe**, restlicher Spinat (100 g) 2–3 Min. welken, in den kleinen Topf. Prise Garam Masala, Spritzer Zitrone.
 
 ### Variante B — Chana Dal mit Kürbis
 
+*nur Chana*
+
 *Ersetzt Schritt 1 komplett; Masala und Tadka angepasst. 300 g Chana Dal, 400 g Kürbiswürfel, Senfsamen, Curryblätter optional.*
 
-1. **Einweichen:** 300 g Chana Dal waschen, **1 Std. in kaltem Wasser** (oder 30 Min. in kochend heißem). Abgießen.
-2. **Kochen:** mit **1,3 L Wasser, ½ TL Kurkuma, 1 TL Ghee** aufkochen, 5 Min. offen (Schaum abschöpfen), dann halb bedeckt **45–60 Min.**, bis die Spalten zart sind und sich zwischen den Fingern zerdrücken lassen, aber **nicht zerfallen** — Chana Dal soll körnig bleiben, das ist ihr Reiz. Ältere Ware braucht bis 75 Min.; heißes Wasser nachgießen, wenn es zu dick wird.
-3. **Kürbis:** **400 g Hokkaido** in 2-cm-Würfeln (Schale dran) **in den letzten 20 Min.** in den Linsentopf — er soll weich, nicht zerfallen sein. Zucchini: letzte 10 Min.
-4. **Masala:** **2 EL Ghee, 1 TL Kreuzkümmel, 2 Zwiebeln** goldbraun 8–10 Min., **4 Knoblauchzehen + 3 cm Ingwer**, **300 g Tomaten, ½ TL Kurkuma, 1 TL Koriander gemahlen, ½ TL Paprika edelsüß**, 8–10 Min. einkochen. In den Topf, **1½ TL Salz, 1 TL Kasuri Methi, ½ TL Garam Masala, ½ TL Amchur oder 1 EL Zitrone**. 5 Min. köcheln, teilen (¼ → Kind).
-5. **Tadka Erwachsene:** **2 EL Ghee, ½ TL Senfsamen** bis sie springen, **½ TL Kreuzkümmel, 3 Knoblauchzehen** in Scheiben, **2–3 getrocknete Chilis, 10 Curryblätter** (falls da — Vorsicht, spritzt), vom Herd **½ TL Kashmiri, 1 Prise Hing**, über den großen Topf. 2 EL Koriander.
-6. **Tadka Kind:** **1 EL Ghee, ¼ TL Senfsamen, ¼ TL Kreuzkümmel, 1 Knoblauchzehe**, 3 Curryblätter, kein Chili → kleiner Topf.
+**10. Chana einweichen (1 Std., passiv)**
+*jederzeit*
+300 g Chana Dal waschen, **1 Std. in kaltem Wasser** (oder 30 Min. in kochend heißem). Abgießen.
+
+**11. Chana kochen (45–60 Min., passiv)**
+*Herd*
+Mit **1,3 L Wasser, ½ TL Kurkuma, 1 TL Ghee** aufkochen, 5 Min. offen (Schaum abschöpfen), dann halb bedeckt **45–60 Min.**, bis die Spalten zart sind und sich zwischen den Fingern zerdrücken lassen, aber **nicht zerfallen** — Chana Dal soll körnig bleiben, das ist ihr Reiz. Ältere Ware braucht bis 75 Min.; heißes Wasser nachgießen, wenn es zu dick wird.
+
+**12. Kürbis zugeben (20 Min., passiv)**
+*letzte 20 Min. von Chana kochen*
+**400 g Hokkaido** in 2-cm-Würfeln (Schale dran) **in den letzten 20 Min.** in den Linsentopf — er soll weich, nicht zerfallen sein. Zucchini: letzte 10 Min.
+
+**13. Chana-Masala (ca. 25 Min.)**
+*jederzeit · Herd*
+**2 EL Ghee, 1 TL Kreuzkümmel, 2 Zwiebeln** goldbraun 8–10 Min., **4 Knoblauchzehen + 3 cm Ingwer**, **300 g Tomaten, ½ TL Kurkuma, 1 TL Koriander gemahlen, ½ TL Paprika edelsüß**, 8–10 Min. einkochen. In den Topf, **1½ TL Salz, 1 TL Kasuri Methi, ½ TL Garam Masala, ½ TL Amchur oder 1 EL Zitrone**. 5 Min. köcheln, teilen (¼ → Kind).
+
+**14. Chana-Tadka Erwachsene (3 Min.)**
+*nach Chana-Masala, Kürbis zugeben · Herd*
+**2 EL Ghee, ½ TL Senfsamen** bis sie springen, **½ TL Kreuzkümmel, 3 Knoblauchzehen** in Scheiben, **2–3 getrocknete Chilis, 10 Curryblätter** (falls da — Vorsicht, spritzt), vom Herd **½ TL Kashmiri, 1 Prise Hing**, über den großen Topf. 2 EL Koriander.
+
+**15. Chana-Tadka Kind (2 Min.)**
+*Herd*
+**1 EL Ghee, ¼ TL Senfsamen, ¼ TL Kreuzkümmel, 1 Knoblauchzehe**, 3 Curryblätter, kein Chili → kleiner Topf.
 
 ### Variante C — Kokos-Dal, Kerala-Stil (Parippu Curry)
 
+*nur Kokos*
+
 *Anderes Profil: kein Knoblauch, keine Tomate, keine Zwiebel-Masala — stattdessen Kokospaste und ein Curryblatt-Senf-Tadka. 300 g gelbe Moong (Fallback Masoor), 100 g frische Kokosnuss oder 200 ml Kokosmilch, 4–5 Schalotten.*
 
-1. **Moong:** 300 g waschen, **30 Min. in heißem Wasser** einweichen, abgießen. Mit **1,1 L Wasser, ½ TL Kurkuma, 1 TL Kokosöl** aufkochen, **20–25 Min.** halb bedeckt — weich, aber **nicht länger**, Moong wird sonst klebrig. Grob zerdrücken. *(Masoor: kein Einweichen, 15–20 Min.)*
-2. **Kokospaste:** **100 g frisch geriebene Kokosnuss** (TK, aufgetaut) mit **½ TL Kreuzkümmel ganz, 1 Schalotte, ¼ TL Kurkuma** und **50 ml Wasser** mit dem Stabmixer zur feinen Paste. *Fallback: 200 ml Kokosmilch + ½ TL Kreuzkümmel gemahlen + 1 fein gehackte Schalotte direkt in den Topf.* Kein grüner Chili in der Paste (Quellen haben 1 — hier weggelassen, Schärfe kommt übers Tadka).
-3. Paste in den Linsentopf, **1½ TL Salz**, **7–8 Min.** sanft simmern — Konsistenz dick-fließend, mit **bis zu 200 ml heißem Wasser** einstellen. Teilen (¼ → Kind).
-4. **Tadka Erwachsene:** **2 EL Kokosöl** (oder Ghee) heiß, **¾ TL Senfsamen** bis sie springen, **2–3 getrocknete Chilis**, **15 Curryblätter** (spritzt!), **3 Schalotten** in Scheiben goldbraun 2 Min. Über den großen Topf. Kein Koriander, keine Zitrone — Parippu ist puristisch.
-5. **Tadka Kind:** **1 EL Kokosöl, ¼ TL Senfsamen, 4 Curryblätter, 1 Schalotte** in Scheiben, kein Chili → kleiner Topf.
-6. **Dazu** passt statt Kachumber ein **Gurken-Joghurt** (Raita) besser, Roti oder — nach der Schwangerschaft — Reis.
+**16. Moong kochen (20–25 Min., passiv)**
+*jederzeit · Herd*
+300 g Moong waschen, **30 Min. in heißem Wasser** einweichen, abgießen. Mit **1,1 L Wasser, ½ TL Kurkuma, 1 TL Kokosöl** aufkochen, **20–25 Min.** halb bedeckt — weich, aber **nicht länger**, Moong wird sonst klebrig. Grob zerdrücken. *(Masoor: kein Einweichen, 15–20 Min.)*
+
+**17. Kokospaste (ca. 5 Min.)**
+*jederzeit*
+**100 g frisch geriebene Kokosnuss** (TK, aufgetaut) mit **½ TL Kreuzkümmel ganz, 1 Schalotte, ¼ TL Kurkuma** und **50 ml Wasser** mit dem Stabmixer zur feinen Paste. *Fallback: 200 ml Kokosmilch + ½ TL Kreuzkümmel gemahlen + 1 fein gehackte Schalotte direkt in den Topf.* Kein grüner Chili in der Paste (Quellen haben 1 — hier weggelassen, Schärfe kommt übers Tadka).
+
+**18. Paste einrühren (7–8 Min.)**
+*nach Moong kochen, Kokospaste · Herd*
+Paste in den Linsentopf, **1½ TL Salz**, **7–8 Min.** sanft simmern — Konsistenz dick-fließend, mit **bis zu 200 ml heißem Wasser** einstellen. Teilen (¼ → Kind).
+
+**19. Kokos-Tadka Erwachsene (ca. 3 Min.)**
+*Herd*
+**2 EL Kokosöl** (oder Ghee) heiß, **¾ TL Senfsamen** bis sie springen, **2–3 getrocknete Chilis**, **15 Curryblätter** (spritzt!), **3 Schalotten** in Scheiben goldbraun 2 Min. Über den großen Topf. Kein Koriander, keine Zitrone — Parippu ist puristisch.
+
+**20. Kokos-Tadka Kind (ca. 2 Min.)**
+*Herd*
+**1 EL Kokosöl, ¼ TL Senfsamen, 4 Curryblätter, 1 Schalotte** in Scheiben, kein Chili → kleiner Topf.
+
+> **Dazu** passt statt Kachumber ein **Gurken-Joghurt** (Raita) besser, Roti oder — nach der Schwangerschaft — Reis.
 
 ### Variante D — Dal makhani, Wochenend-Fassung
 
+*nur Makhani*
+
 *Ersetzt das Grundrezept komplett. 250 g Urad ganz + 60 g Kidneybohnen (\~4:1 wie Swasthi), 60 g Butter, 80 ml Sahne — bewusst unter Restaurant-Niveau, aber nicht „light": das Gericht heißt Butter-Dal.*
 
-1. **Einweichen (Vortag):** 250 g Urad + 60 g Kidneybohnen zusammen waschen, **8–12 Std.** in reichlich kaltem Wasser. Abgießen, spülen.
-2. **Kochen (60–90 Min.):** mit **1,5 L Wasser, ½ TL Kurkuma, 1 TL Ghee** aufkochen, Schaum abschöpfen, halb bedeckt leise kochen, bis sich Urad **und** Kidneybohnen mühelos zerdrücken lassen — Kidneybohnen müssen vollständig durch sein (rohe Kidneybohnen sind giftig, gekocht unbedenklich). Heißes Wasser nachgießen, sodass immer alles knapp bedeckt ist. Am Ende \~⅓ mit dem Kartoffelstampfer oder Schneebesen andrücken — das macht die Cremigkeit.
-3. **Masala:** **2 EL Ghee + 30 g Butter**, **½ TL Kreuzkümmel, 2 grüne Kardamomkapseln, 1 Zimtstange, 2 Nelken, 1 Lorbeerblatt** 30 Sek. **1 Zwiebel** (120 g) fein 8 Min. goldbraun, **1 EL Ingwer-Knoblauch-Paste** (3 Zehen + 2 cm) 1 Min., **250 g passierte Tomaten, 1 TL Paprika edelsüß, 1 TL Koriander gemahlen**, 10 Min. einkochen, bis das Fett sich absetzt.
-4. **Vereinen & lange simmern:** Masala in den Linsentopf, **1½ TL Salz**, **mind. 45 Min., gern 90 Min.** auf kleinster Stufe, alle 10 Min. umrühren und am Topfrand zerdrücken, heißes Wasser nach Bedarf. „Je länger, desto besser" — beide Referenzen; das Dal wird samtig und dunkel. Ganzgewürze herausfischen. **Teilen** (¼ → Kind) — hier erst jetzt, weil bis hierher kein Chili drin ist.
-5. **Finish Erwachsene:** **1 EL Butter** mit **1 TL Kashmiri** kurz erwärmen (nicht braten), in den großen Topf; **1 EL Kasuri Methi, 1 TL Garam Masala, 60 ml Sahne, 20 g Butter, 1 Prise Muskat**. 5 Min. ziehen.
-6. **Finish Kind:** **20 ml Sahne, 10 g Butter, Prise Garam Masala, Prise Kasuri Methi** → kleiner Topf.
-7. **Dhungar (optional, 5 Min.):** 1 Stück Holzkohle mit dem Bunsenbrenner glühend machen, in eine kleine Metallschale mitten ins Dal setzen, **½ TL Ghee** darauf träufeln (raucht sofort), Deckel drauf, **3–4 Min.**, Schale entfernen. Das Restaurant-Raucharoma ohne Tandoor.
-8. Portion **kleiner als beim Grundrezept** (\~220–250 g) — Butter und Sahne machen es energiedicht. Koriander darüber, Zwiebelringe, Roti.
+**21. Urad einweichen (8–12 Std., passiv)**
+*jederzeit*
+Vortag: 250 g Urad + 60 g Kidneybohnen zusammen waschen, **8–12 Std.** in reichlich kaltem Wasser. Abgießen, spülen.
 
-## Dazu — macht das Hauptgericht komplett
+**22. Urad kochen (60–90 Min., passiv)**
+*Herd*
+Mit **1,5 L Wasser, ½ TL Kurkuma, 1 TL Ghee** aufkochen, Schaum abschöpfen, halb bedeckt leise kochen, bis sich Urad **und** Kidneybohnen mühelos zerdrücken lassen — Kidneybohnen müssen vollständig durch sein (rohe Kidneybohnen sind giftig, gekocht unbedenklich). Heißes Wasser nachgießen, sodass immer alles knapp bedeckt ist. Am Ende \~⅓ mit dem Kartoffelstampfer oder Schneebesen andrücken — das macht die Cremigkeit.
 
-- **Kachumber (10 Min.):** **1 Salatgurke** entkernt und **200 g Tomaten** gewürfelt, **1 rote Zwiebel** fein gewürfelt (10 Min. in Eiswasser gegen die Schärfe), **2 EL Koriandergrün**, Saft von **½ Zitrone**, **½ TL Salz, ½ TL geröstetes Kreuzkümmelpulver**, optional 2 cm Ingwer fein. Erst kurz vor dem Essen salzen. Das Gemüse zum Dal — und roh, frisch, kalt gegen das warme Weiche.
-- **Alternativ Raita (5 Min.):** **250 g Joghurt 10 %** mit **½ geriebener, ausgedrückter Gurke, ½ TL geröstetem Kreuzkümmel, ½ TL Salz**. Bei Variante C und D die bessere Wahl.
-- **Vollkorn-Roti (6 Stück, 20 Min., parallel zum Linsenkochen):** **200 g Vollkornmehl + ½ TL Salz + \~130 ml warmes Wasser** 5 Min. zu glattem Teig kneten, 15 Min. ruhen, 6 Kugeln dünn (\~15 cm) ausrollen, in trockener, sehr heißer Pfanne 30–40 Sek. pro Seite, bis Blasen kommen; über der Gasflamme des Grills oder mit dem Brenner kurz aufpuffen. In ein Tuch stapeln. **1 pro Person**, Rest einfrieren.
-- **Protein-Booster (optional):** **4 Eier** 9–10 Min. hart kochen, halbiert auf das Dal — Kind isst Eier gern, und es hebt das Protein pro Mahlzeit ohne KH. Oder gebratene Paneer-Würfel aus dem Vorrat ([`paneer-projekt.md`](/gerichte/paneer-projekt.md)).
+**23. Makhani-Masala (ca. 20 Min.)**
+*jederzeit · Herd*
+**2 EL Ghee + 30 g Butter**, **½ TL Kreuzkümmel, 2 grüne Kardamomkapseln, 1 Zimtstange, 2 Nelken, 1 Lorbeerblatt** 30 Sek. **1 Zwiebel** (120 g) fein 8 Min. goldbraun, **1 EL Ingwer-Knoblauch-Paste** (3 Zehen + 2 cm) 1 Min., **250 g passierte Tomaten, 1 TL Paprika edelsüß, 1 TL Koriander gemahlen**, 10 Min. einkochen, bis das Fett sich absetzt.
+
+**24. Lange simmern (45–90 Min.)**
+*nach Urad kochen, Makhani-Masala · Herd*
+Masala in den Linsentopf, **1½ TL Salz**, **mind. 45 Min., gern 90 Min.** auf kleinster Stufe, alle 10 Min. umrühren und am Topfrand zerdrücken, heißes Wasser nach Bedarf. „Je länger, desto besser" — beide Referenzen; das Dal wird samtig und dunkel. Ganzgewürze herausfischen. **Teilen** (¼ → Kind) — hier erst jetzt, weil bis hierher kein Chili drin ist.
+
+**25. Finish Erwachsene (5 Min.)**
+**1 EL Butter** mit **1 TL Kashmiri** kurz erwärmen (nicht braten), in den großen Topf; **1 EL Kasuri Methi, 1 TL Garam Masala, 60 ml Sahne, 20 g Butter, 1 Prise Muskat**. 5 Min. ziehen.
+
+**26. Finish Kind (ca. 2 Min.)**
+**20 ml Sahne, 10 g Butter, Prise Garam Masala, Prise Kasuri Methi** → kleiner Topf.
+
+**27. Dhungar (5 Min.)**
+Optional: 1 Stück Holzkohle mit dem Bunsenbrenner glühend machen, in eine kleine Metallschale mitten ins Dal setzen, **½ TL Ghee** darauf träufeln (raucht sofort), Deckel drauf, **3–4 Min.**, Schale entfernen. Das Restaurant-Raucharoma ohne Tandoor.
+
+> Portion **kleiner als beim Grundrezept** (\~220–250 g) — Butter und Sahne machen es energiedicht. Koriander darüber, Zwiebelringe, Roti.
+
+### Dazu — macht das Hauptgericht komplett
+
+**28. Kachumber (10 Min.)**
+*nur Kachumber · jederzeit*
+**1 Salatgurke** entkernt und **200 g Tomaten** gewürfelt, **1 rote Zwiebel** fein gewürfelt (10 Min. in Eiswasser gegen die Schärfe), **2 EL Koriandergrün**, Saft von **½ Zitrone**, **½ TL Salz, ½ TL geröstetes Kreuzkümmelpulver**, optional 2 cm Ingwer fein. Erst kurz vor dem Essen salzen. Das Gemüse zum Dal — und roh, frisch, kalt gegen das warme Weiche.
+
+**29. Raita (5 Min.)**
+*nur Raita · jederzeit*
+Alternativ zum Kachumber: **250 g Joghurt 10 %** mit **½ geriebener, ausgedrückter Gurke, ½ TL geröstetem Kreuzkümmel, ½ TL Salz**. Bei Variante C und D die bessere Wahl.
+
+**30. Vollkorn-Roti (20 Min., parallel)**
+*jederzeit · Herd*
+6 Stück, parallel zum Linsenkochen: **200 g Vollkornmehl + ½ TL Salz + \~130 ml warmes Wasser** 5 Min. zu glattem Teig kneten, 15 Min. ruhen, 6 Kugeln dünn (\~15 cm) ausrollen, in trockener, sehr heißer Pfanne 30–40 Sek. pro Seite, bis Blasen kommen; über der Gasflamme des Grills oder mit dem Brenner kurz aufpuffen. In ein Tuch stapeln. **1 pro Person**, Rest einfrieren.
+
+**31. Eier kochen (9–10 Min.)**
+*jederzeit · Herd*
+Protein-Booster (optional): **4 Eier** 9–10 Min. hart kochen, halbiert auf das Dal — Kind isst Eier gern, und es hebt das Protein pro Mahlzeit ohne KH. Oder gebratene Paneer-Würfel aus dem Vorrat ([`paneer-projekt.md`](/gerichte/paneer-projekt.md)).
+
+### Servieren
+
+**32. Anrichten (ca. 5 Min.)**
+*nach Tadka Kind, Palak-Tadka Kind, Chana-Tadka Kind, Kokos-Tadka Kind, Finish Kind, Vollkorn-Roti*
+Pro Teller **eine gute Kelle Dal (\~300 g)**, Kachumber oder Raita daneben, 1 Roti, optional 1 halbiertes hartgekochtes Ei. Zitronenviertel und Zwiebelringe auf den Tisch. Erwachsene: restliches Tadka-Ghee aus der Pfanne darüber.
 
 ## Zeitplan Grundrezept (\~50 Min.)
 
-- **–0:50** Linsen waschen, aufsetzen. Roti-Teig kneten, ruhen lassen
-- **–0:45** Zwiebeln schneiden, Masala starten (Zwiebeln brauchen 10 Min.)
-- **–0:35** Tomaten in die Masala. Kachumber schneiden (ohne Salz). Eier aufsetzen (optional)
-- **–0:25** Masala in die Linsen, salzen. Rotis ausrollen und ausbacken
-- **–0:10** Teilen. Beide Tadkas. Kachumber salzen
-- **0:00** Anrichten
+*nur Grundrezept*
+
+| Zeit | Was |
+|---|---|
+| T−0:50 | Linsen waschen, aufsetzen (Linsen kochen). Roti-Teig kneten, ruhen lassen (Vollkorn-Roti) |
+| T−0:45 | Zwiebeln schneiden, Masala starten (Zwiebeln brauchen 10 Min.) |
+| T−0:35 | Tomaten in die Masala. Kachumber schneiden (ohne Salz). Eier aufsetzen (optional) |
+| T−0:25 | Masala in die Linsen, salzen (Vereinen & salzen). Rotis ausrollen und ausbacken |
+| T−0:10 | Teilen. Beide Tadkas (Tadka Erwachsene, Tadka Kind). Kachumber salzen |
+| T−0:00 | Anrichten |
 
 *Variante B: Einweichen 1 Std. vorher, Kochzeit +30–40 Min. (Schnellkochtopf: 30 Min. Einweichen, dann wie Grundrezept + 15 Min. Kürbis-Simmern). Variante D: Vortag einweichen, Kochtag 2½–3 Std. ab Aufsetzen — Masala und Simmern laufen nebenher (Schnellkochtopf: \~1¾–2 Std., davon Druckphase 45–50 Min. unbeaufsichtigt).*
 

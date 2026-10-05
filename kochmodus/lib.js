@@ -151,5 +151,53 @@ export function normalizeState(raw) {
   timers = timers.filter((t) => t && typeof t === "object" && typeof t.end === "number");
   const factor = Number(s.factor);
   return { done: obj(s.done), note: typeof s.note === "string" ? s.note : "", shop: obj(s.shop), timers, factor: factor > 0 ? factor : 1,
-           order: s.order === "gang" ? "gang" : "ablauf" };
+           order: s.order === "gang" ? "gang" : "ablauf", variant: obj(s.variant) };
+}
+
+// ---- Varianten (AP6): Auswahl pro Dimension, Filter, Inline-Alternativen ----
+// Auswahl: { mehl: "dinkel", weg: "kombi" }; fehlende Dimensionen fallen auf den Default.
+export function selection(recipe, chosen = {}) {
+  return Object.fromEntries((recipe.variants || []).map((d) => [d.id, d.choices.some((c) => c.id === chosen[d.id]) ? chosen[d.id] : d.default]));
+}
+export const selectionKey = (sel) => Object.keys(sel).sort().map((k) => `${k}=${sel[k]}`).join(",");
+// only: ["weg=einfrieren", "weg=kombi"] — innerhalb einer Dimension oder, über Dimensionen und.
+export function isActive(only, sel) {
+  if (!only?.length) return true;
+  const byDim = {};
+  for (const ref of only) { const [d, c] = ref.split("="); (byDim[d] ||= new Set()).add(c); }
+  return Object.entries(byDim).every(([d, cs]) => cs.has(sel[d]));
+}
+const NUMX = "(?:\\d*[½¼¾]|\\d+(?:[,.]\\d+)?)";
+const UNITX = "(?:kg|g|ml|l|L|EL|TL|Prisen|Prise|Stück|Bund|Zehen|Zehe|Scheiben|Scheibe|Tropfen|Eigelb|Eiweiß)";
+const QTYU = new RegExp(`^~?${NUMX}(?:\\s?[–-]\\s?${NUMX})?(?:\\s?${UNITX}(?![\\wäöüß]))?`); // „12 g“, „4–6 g“, „2“
+// Text und wirksame Dosierungen eines Schritts bei dieser Wahl. Klammer hinter einer Menge: Menge tauschen
+// („80 g Wasser (Dinkel: 40 g)“ → „40 g Wasser“), sonst nur die passende Alternative zeigen, die anderen ausblenden.
+export function variantText(text, step, sel) {
+  const keys = new Set(Object.entries(sel).map(([k, v]) => `${k}=${v}`));
+  let out = text;
+  for (const alt of step.alts || []) {
+    const idx = out.indexOf(alt.text);
+    if (idx < 0) continue;
+    const opt = alt.options.find((o) => keys.has(o.when));
+    let from = idx, to = idx + alt.text.length, repl;
+    const baseAt = alt.base ? idx - 1 - alt.base.length : -1;
+    if (alt.base && baseAt >= 0 && out.slice(baseAt, idx - 1) === alt.base) {
+      from = baseAt;
+      if (!opt) repl = alt.base;
+      else {
+        const baseQ = QTYU.exec(alt.base)?.[0], qtyOnly = QTYU.exec(opt.text)?.[0] === opt.text.trim();
+        repl = `<mark class="variant">${qtyOnly && baseQ ? opt.text + alt.base.slice(baseQ.length) : opt.text}</mark>`;
+      }
+    } else {
+      if (out[from - 1] === " ") from -= 1;
+      const seg = opt && alt.text.slice(1, -1).split(/, (?=[^,:]+: )/).find((x) => x.endsWith(": " + opt.text));
+      repl = opt ? ` <mark class="variant">(${seg || opt.text})</mark>` : "";
+    }
+    out = out.slice(0, from) + repl + out.slice(to);
+  }
+  const ingredients = (step.ingredients || []).flatMap((si) => {
+    const k = Object.keys(si.byVariant || {}).find((x) => keys.has(x));
+    return k ? si.byVariant[k].map((d) => ({ ...d, occurrence: undefined })) : [si];
+  });
+  return { text: out, ingredients };
 }

@@ -74,7 +74,7 @@ def schedule_segments(text: str, labels: list[str]) -> list[str]:
             if b.startswith(lab + ":"):
                 b = b[len(lab) + 1:]
                 break
-        segs += [s.strip() for s in re.split(r"\s·\s", b) if s.strip()]
+        segs += [re.sub(r"^\*nur\s+[^*]+\*\s*", "", s.strip()) for s in re.split(r"\s·\s", b) if s.strip()]
     return segs
 
 

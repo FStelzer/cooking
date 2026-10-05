@@ -1,0 +1,4708 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "backen/vollkornbroetchen",
+  "kind": "dish",
+  "title": "Vollkornbrötchen auf Vorrat — Weizen als Leitrezept, Dinkel und Weizen-Roggen als Varianten (12 Stück)",
+  "status": "done",
+  "yields": {
+    "text": "12 Stück",
+    "value": 12.0,
+    "unit": "Stück"
+  },
+  "intro": "*Vorabend \\~20 Min. Arbeit (Poolish, Kochstück). Backtag \\~3½ Std., davon \\~40 Min. echte Arbeit. Backen aus dem Frost: 2,5–3,5 Std. Gare + 20 Min. Backzeit. Equipment: Küchenwaage (1 g), Fleischthermometer, Teigkarte, Backpapier, 2 Backbleche, Rasierklinge oder sehr scharfes glattes Messer, Sprühflasche oder kleine Metallschale. **Keine Küchenmaschine nötig — dieses Rezept ist für Handarbeit gebaut.***\n\n*Varianten: Mehl = Weizen | Weizen-Roggen | Dinkel · Weg = Einfrieren | Direkt backen | Kombi*\n\n100-%-Vollkornbrötchen mit drei Vorstufen — **Poolish** (Aroma, Frische, weniger Kleie-Bitterkeit), **Kochstück** (saftige Krume über Tage) und **Flohsamen-Quellstück** (Stabilität beim Einfrieren) — die als geformte Teiglinge einzeln eingefroren und bei Bedarf morgens frisch gebacken werden. Ein Ablauf, drei Mehl-Varianten (Weizen, Weizen + 15 % Roggen, Dinkel), drei Wege nach dem Formen (einfrieren, direkt backen, beides kombiniert).\n\n**Leitrezept ist Weizen:** einmal gebacken (09/2026), fluffig und lecker, vor allem mit Sonnenblumenkernen — aber von Hand zu kurz geknetet, der Teig sehr klebrig, das Rundschleifen missraten, deshalb etwas flache Brötchen. Diese Fassung zieht daraus die Konsequenzen: **weniger Wasser für die Handversion, Kneten durch Dehnen & Falten ersetzt, Zwischengare vor dem Schleifen.**",
+  "equipment": [
+    "Küchenwaage (1 g)",
+    "Fleischthermometer",
+    "Teigkarte",
+    "Backpapier",
+    "2 Backbleche",
+    "Rasierklinge oder sehr scharfes glattes Messer",
+    "Sprühflasche oder kleine Metallschale. **Keine Küchenmaschine nötig — dieses Rezept ist für Handarbeit gebaut"
+  ],
+  "variants": [
+    {
+      "id": "mehl",
+      "label": "Mehl",
+      "choices": [
+        {
+          "id": "weizen",
+          "label": "Weizen"
+        },
+        {
+          "id": "weizen-roggen",
+          "label": "Weizen-Roggen"
+        },
+        {
+          "id": "dinkel",
+          "label": "Dinkel"
+        }
+      ],
+      "default": "weizen"
+    },
+    {
+      "id": "weg",
+      "label": "Weg",
+      "choices": [
+        {
+          "id": "einfrieren",
+          "label": "Einfrieren"
+        },
+        {
+          "id": "direkt-backen",
+          "label": "Direkt backen"
+        },
+        {
+          "id": "kombi",
+          "label": "Kombi"
+        }
+      ],
+      "default": "einfrieren"
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "weizenvollkornmehl",
+      "name": "Weizenvollkornmehl, fein",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 kg"
+      },
+      "only": [
+        "mehl=weizen",
+        "mehl=weizen-roggen"
+      ],
+      "note": "Bedarf 600 g; Roggen-Variante 510 g"
+    },
+    {
+      "id": "roggenvollkornmehl",
+      "name": "Roggenvollkornmehl",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 Packung"
+      },
+      "only": [
+        "mehl=weizen-roggen"
+      ],
+      "note": "Bedarf 90 g"
+    },
+    {
+      "id": "dinkelvollkornmehl",
+      "name": "Dinkelvollkornmehl, fein",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 kg"
+      },
+      "only": [
+        "mehl=dinkel"
+      ],
+      "note": "Bedarf 600 g, statt Weizen"
+    },
+    {
+      "id": "honig",
+      "name": "Honig",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 Glas"
+      },
+      "note": "Bedarf 12 g"
+    },
+    {
+      "id": "sonnenblumenkerne",
+      "name": "Sonnenblumenkerne zum Wälzen",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "100 g"
+      },
+      "note": "Bedarf \\~60 g; Alternativen: Haferflocken, Sesam, Mohn, Dinkelflocken"
+    },
+    {
+      "id": "frischhefe",
+      "name": "Frischhefe",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "1 Würfel"
+      },
+      "note": "42 g; Bedarf 12,2 g; Rest einfrieren oder für Weg B/C"
+    },
+    {
+      "id": "flohsamenschalen",
+      "name": "Flohsamenschalen",
+      "store": "Drogerie",
+      "buy": {
+        "text": "1 Packung"
+      },
+      "note": "Bedarf 6 g"
+    },
+    {
+      "id": "backmalz",
+      "name": "Backmalz, inaktiv",
+      "store": "Online",
+      "optional": true,
+      "note": "Gerstenmalzmehl; Bedarf 6 g"
+    },
+    {
+      "id": "brotgewuerz",
+      "name": "Brotgewürz, gemahlen",
+      "store": "Online",
+      "optional": true,
+      "only": [
+        "mehl=weizen-roggen"
+      ],
+      "note": "Kümmel, Fenchel, Koriander, Anis; Bedarf 4–6 g — passt zur Roggen-Variante"
+    },
+    {
+      "id": "salz",
+      "name": "Salz, fein",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Bedarf 13 g"
+    },
+    {
+      "id": "butter",
+      "name": "Butter",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Bedarf 18 g"
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Warum drei Vorstufen — die Begriffe kurz",
+      "level": 2,
+      "markdown": "- **Poolish (Vorteig):** Mehl und Wasser 1:1 mit einer winzigen Hefemenge, 12–16 Std. bei Raumtemperatur. Die Hefe vermehrt sich langsam, Enzyme bauen Stärke ab, Aroma und leichte Säure entstehen, die Kleie weicht vor. Ergebnis: nussig statt „hefig\", weniger Bitterkeit, längere Frische. Fertig, wenn er blasig ist, nach Joghurt/Apfel riecht und in der Mitte gerade einsinkt.\n- **Kochstück (Mehlkochstück):** Ein Teil des Mehls wird mit viel Wasser und dem gesamten Salz zu einem Pudding gekocht. Ab \\~60 °C verkleistert die Stärke und bindet ein Vielfaches ihres Gewichts an Wasser dauerhaft — deshalb sind die Brötchen auch am dritten Tag nicht strohig. Das Salz kommt komplett hier hinein: gelöst, und im Hauptteig nicht mehr zu vergessen.\n- **Quellstück (Flohsamenschalen):** Flohsamenschalen binden das 10–20-Fache an Wasser als Gel. Beim Einfrieren zerschneiden Eiskristalle das Klebergerüst, beim Auftauen läuft Wasser aus — das Gel hält es fest. Beim direkten Backen verzichtbar (dann 30 g weniger Wasser im Hauptteig).\n- **Autolyse:** Mehl, Wasser und Vorstufen nur grob mischen und ohne Hefe ruhen lassen. Das Mehl quillt, die Kleie wird weich, der Kleber vernetzt sich von selbst. Für Handarbeit doppelt wertvoll: Sie ersetzt den größten Teil der Knetzeit."
+    },
+    {
+      "type": "markdown",
+      "title": "Welche Variante?",
+      "level": 2,
+      "markdown": "| | **Weizen (Leitrezept)** | **Weizen + 15 % Roggen** | **Dinkel** |\n|---|---|---|---|\n| Handling | stabiler Kleber, verzeiht alles außer zu kurzem Kneten | etwas klebriger, weniger elastisch | schwacher Kleber — **überkneten schmiert unwiderruflich**, lieber zu kurz |\n| Ergebnis | höchstes Volumen, lockere Krume, neutral-getreidig | saftiger, herzhafter, beste Frischhaltung, etwas weniger Volumen | nussig-mild, dichtere Krume, trocknet ohne Kochstück schnell |\n| GDM | Vollkorn ✓ | niedrigster glykämischer Index der drei | Vollkorn ✓ |\n| Empfehlung | erste und zweite Charge — Technik festigen | dritte Charge, sobald das Formen sitzt | wenn Dinkelgeschmack gewünscht; am wenigsten fehlertolerant |"
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Mehl, fein gemahlen — der wichtigste Einkauf.** Grobes Vollkornmehl gibt dichte, bröselige, bitterere Brötchen (grobe Kleie schneidet den Kleber). Auf der Packung steht „fein\" oder „Feinmehl\"; im Zweifel Mühlenmehl aus dem Bio-Regal statt Discounter. Weizen- und Dinkelvollkornmehl führt REWE zuverlässig, Roggenvollkornmehl meist auch (sonst Bio-Laden). Vollkornmehl wird ranzig — frisch kaufen, kühl lagern, innerhalb weniger Wochen verbrauchen.\n- **Flohsamenschalen:** dm/Rossmann (Nahrungsergänzung) oder Bio-Regal. „Schalen\", nicht ganze Samen und keine Kapseln. Kleinste Packung reicht für Monate.\n- **Frischhefe:** Kühlregal, hell und bröckelig, nicht dunkel/schmierig. Trockenhefe als Ersatz: ⅓ der Menge.\n- **Inaktives Backmalz (Gerstenmalzmehl), optional:** Bio-Laden oder online. Rundere Bräunung, malziges „Bäckerbrötchen\"-Aroma. Kein Muss — Honig übernimmt die Bräunung. Nur kaufen, wenn ohnehin Brot-Ambitionen bestehen.\n- **Ohne Vakuumierer und ohne Blech-Platz im Gefrierfach** funktioniert das Rezept — Anfrieren in Schüben auf Brettern/Tellern, doppelt eingebeutelt (siehe Weg A).",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "markdown",
+      "title": "Mengen — alle Varianten auf einen Blick",
+      "level": 2,
+      "markdown": "Ergibt 12 Teiglinge à \\~100 g (Dinkel \\~95 g). **Fett gedruckt = Leitrezept Weizen, von Hand.**\n\n| Stufe | Zutat | **Weizen** | Weizen + Roggen | Dinkel |\n|---|---|---|---|---|\n| **Poolish** (Vorabend) | Vollkornmehl der Sorte (Roggen-Variante: Weizen) | **150 g** | 150 g | 150 g |\n| | Wasser, \\~20 °C | **150 g** | 150 g | 150 g |\n| | Frischhefe | **0,2 g (erbsengroß)** | 0,2 g | 0,2 g |\n| **Kochstück** (Vorabend) | Vollkornmehl der Sorte (Roggen-Variante: Weizen) | **60 g** | 60 g | 60 g |\n| | Wasser | **240 g** | 240 g | 240 g |\n| | Salz | **13 g** | 13 g | 13 g |\n| **Quellstück** (Backtag) | Flohsamenschalen | **6 g** | 6 g | 6 g |\n| | Wasser | **60 g** | 60 g | 60 g |\n| **Hauptteig** | Vollkornmehl | **390 g Weizen** | 300 g Weizen + 90 g Roggen | 390 g Dinkel |\n| | Wasser, \\~28 °C — **von Hand** | **80 g + 20–30 g Reserve** | 90 g + 20–30 g Reserve | 40 g + 20 g Reserve |\n| | Wasser, \\~28 °C — mit Küchenmaschine | 120 g + Reserve | 130 g + Reserve | 60 g + Reserve |\n| | Frischhefe: Weg A einfrieren / B direkt / C Kombi | **12 g / 6 g / 9 g** | 12 / 6 / 9 g | 12 / 6 / 9 g |\n| | Honig | **12 g** | 12 g | 12 g |\n| | Butter, weich | **18 g** | 18 g | 18 g |\n| | Optional: inaktives Backmalz | 6 g | 6 g | 6 g |\n| | Optional: Brotgewürz | — | 4–6 g | — |\n| **Führung** | Autolyse | **45 Min.** | 45 Min. | 30 Min. |\n| | Teigtemperatur nach dem Kneten | **25–26 °C** | 25–26 °C | 24–25 °C |\n| | Stockgare (mit 3× Dehnen & Falten) | **90–120 Min.** | 90–120 Min. | 75–90 Min. |\n| | Volumen am Ende der Stockgare | **\\~doppelt** | \\~1,8-fach | \\~1,5-fach |\n| | Stückgare bei Weg B (direkt) | **60–75 Min.** | 60–75 Min. | 50–60 Min. |\n\n**Zur Wassermenge:** Die Import-Rezepte rechneten mit 120 g Hauptteig-Wasser (Weizen) für die Küchenmaschine. Von Hand war genau das der Fehler: 95 % Gesamt-Hydration klebt so, dass man zu früh aufhört zu kneten und beim Schleifen keine Spannung bekommt. Mit 80 g liegt die Gesamt-Hydration bei \\~88 % — davon sind 300 g Wasser in Kochstück und Quellstück gebunden, frei im Teig sind also \\~65 %, was sich von Hand wie ein normaler weicher Brötchenteig anfühlt. **Reservewasser erst nach dem zweiten Falten zugeben, wenn der Teig fest wirkt — nie vorher.** Bäckerprozente: Salz 2,2 %, Fett 3 %, Honig 2 %.\n\n**Halbe Menge (6 Stück):** alle Mengen × 0,5. Zwei Sonderfälle: Poolish-Hefe 0,1 g ist nicht abwiegbar → Eilvariante mit 1 g Hefe, 3–4 Std. warm (24–26 °C); und das Kochstück im kleinsten Topf kochen, sonst brennt es an, bevor es eindickt. Für Handarbeit ist die halbe Menge sogar angenehmer."
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "vorabend-20-min",
+          "name": "Vorabend (20 Min.)",
+          "steps": [
+            {
+              "id": "poolish-ansetzen",
+              "label": "1",
+              "heading": "**1. Poolish ansetzen (12–16 Std., passiv)**",
+              "title": "Poolish ansetzen",
+              "duration": {
+                "min": "PT12H",
+                "max": "PT16H",
+                "source": "12–16 Std."
+              },
+              "attention": "passive",
+              "text": "0,2 g Frischhefe (ein erbsengroßes Stück) in 150 g Wasser (\\~20 °C) zerdrücken, 150 g Weizenvollkornmehl (Dinkel: 150 g Dinkelvollkornmehl) einrühren, bis kein trockenes Mehl mehr sichtbar ist. Abdecken, **12–16 Std. bei \\~20 °C**. Warme Küche (> 24 °C): 10–12 Std. *Eilvariante: 2 g Hefe, 3–4 Std. bei 24–26 °C — weniger Aroma, funktioniert.*",
+              "action": "0,2 g Frischhefe (ein erbsengroßes Stück) in 150 g Wasser (\\~20 °C) zerdrücken, 150 g Weizenvollkornmehl (Dinkel: 150 g Dinkelvollkornmehl) einrühren, bis kein trockenes Mehl mehr sichtbar ist.",
+              "limits": [
+                "12–16 Std. bei \\~20 °C"
+              ],
+              "why": "Eilvariante: 2 g Hefe, 3–4 Std. bei 24–26 °C — weniger Aroma, funktioniert.",
+              "timers": [
+                {
+                  "label": "Poolish ansetzen",
+                  "duration": {
+                    "min": "PT12H",
+                    "max": "PT16H"
+                  },
+                  "text": "12–16 Std."
+                },
+                {
+                  "label": "Poolish ansetzen",
+                  "duration": {
+                    "min": "PT10H",
+                    "max": "PT12H"
+                  },
+                  "text": "10–12 Std."
+                },
+                {
+                  "label": "Poolish ansetzen",
+                  "duration": {
+                    "min": "PT3H",
+                    "max": "PT4H"
+                  },
+                  "text": "3–4 Std."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "20 °C",
+                  "value": 20
+                },
+                {
+                  "kind": "ziel",
+                  "text": "20 °C",
+                  "value": 20
+                },
+                {
+                  "kind": "halten",
+                  "text": "> 24 °C",
+                  "value": 24
+                },
+                {
+                  "kind": "ziel",
+                  "text": "24–26 °C",
+                  "min": 24,
+                  "max": 26
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "frischhefe",
+                  "amount": {
+                    "text": "0,2 g Frischhefe",
+                    "value": 0.2,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "150 g Wasser",
+                    "value": 150.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "weizenvollkornmehl",
+                  "amount": {
+                    "text": "150 g Weizenvollkornmehl",
+                    "value": 150.0,
+                    "unit": "g"
+                  },
+                  "byVariant": {
+                    "mehl=dinkel": [
+                      {
+                        "ref": "dinkelvollkornmehl",
+                        "amount": {
+                          "text": "150 g Dinkelvollkornmehl",
+                          "value": 150.0,
+                          "unit": "g"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "alts": [
+                {
+                  "text": "(Dinkel: 150 g Dinkelvollkornmehl)",
+                  "options": [
+                    {
+                      "when": "mehl=dinkel",
+                      "text": "150 g Dinkelvollkornmehl"
+                    }
+                  ],
+                  "base": "150 g Weizenvollkornmehl"
+                }
+              ],
+              "meta": "*jederzeit*",
+              "after": []
+            },
+            {
+              "id": "kochstueck-kochen",
+              "label": "2",
+              "heading": "**2. Kochstück kochen (ca. 10 Min.)**",
+              "title": "Kochstück kochen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "text": "60 g Weizenvollkornmehl (Dinkel: 60 g Dinkelvollkornmehl), 240 g Wasser und 13 g Salz **kalt** in einem kleinen Topf mit dem Schneebesen glatt rühren (sonst Klumpen). Bei mittlerer Hitze unter ständigem Rühren erhitzen — nach 2–4 Min. dickt es plötzlich puddingartig ein. **1 Min. weiterrühren**, vom Herd, in eine Schüssel umfüllen, Frischhaltefolie **direkt auf die Oberfläche** (keine Haut), abkühlen, dann in den Kühlschrank. Hält 2 Tage, wird kalt verarbeitet. *Zu lange gekocht = klumpig = trockene Krume; nur bis zum Eindicken plus eine Minute.*",
+              "action": "60 g Weizenvollkornmehl (Dinkel: 60 g Dinkelvollkornmehl), 240 g Wasser und 13 g Salz **kalt** in einem kleinen Topf mit dem Schneebesen glatt rühren (sonst Klumpen).",
+              "limits": [
+                "1 Min. weiterrühren",
+                "direkt auf die Oberfläche"
+              ],
+              "why": "Zu lange gekocht = klumpig = trockene Krume; nur bis zum Eindicken plus eine Minute.",
+              "cues": [
+                "bis zum Eindicken plus eine Minute"
+              ],
+              "timers": [
+                {
+                  "label": "Kochstück kochen",
+                  "duration": {
+                    "typical": "PT1M"
+                  },
+                  "text": "1 Min."
+                },
+                {
+                  "label": "Kochstück kochen",
+                  "duration": {
+                    "typical": "P2D"
+                  },
+                  "text": "2 Tage"
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "min": "PT2M",
+                    "max": "PT4M",
+                    "source": "2–4 Min."
+                  },
+                  "text": "Bei mittlerer Hitze unter ständigem Rühren erhitzen — nach 2–4 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "weizenvollkornmehl",
+                  "amount": {
+                    "text": "60 g Weizenvollkornmehl",
+                    "value": 60.0,
+                    "unit": "g"
+                  },
+                  "byVariant": {
+                    "mehl=dinkel": [
+                      {
+                        "ref": "dinkelvollkornmehl",
+                        "amount": {
+                          "text": "60 g Dinkelvollkornmehl",
+                          "value": 60.0,
+                          "unit": "g"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "240 g Wasser",
+                    "value": 240.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "13 g Salz",
+                    "value": 13.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "alts": [
+                {
+                  "text": "(Dinkel: 60 g Dinkelvollkornmehl)",
+                  "options": [
+                    {
+                      "when": "mehl=dinkel",
+                      "text": "60 g Dinkelvollkornmehl"
+                    }
+                  ],
+                  "base": "60 g Weizenvollkornmehl"
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": []
+            }
+          ],
+          "heading": "### Vorabend (20 Min.)",
+          "produces": [
+            {
+              "id": "vorabend-20-min",
+              "name": "Vorabend (20 Min.)"
+            }
+          ]
+        },
+        {
+          "id": "backtag-teig-3-std-davon-30-min-arbeit",
+          "name": "Backtag — Teig (\\~3 Std., davon \\~30 Min. Arbeit)",
+          "steps": [
+            {
+              "id": "quellstueck-ansetzen",
+              "label": "3",
+              "heading": "**3. Quellstück ansetzen (15 Min., passiv)**",
+              "title": "Quellstück ansetzen",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "attention": "passive",
+              "text": "30 Min. vor Teigbeginn: 6 g Flohsamenschalen mit 60 g Wasser verrühren, 15 Min. stehen lassen — es entsteht ein festes Gel. *Bei Weg B (direkt backen) kann es entfallen; dann 30 g Wasser weniger im Hauptteig.*",
+              "action": "30 Min. vor Teigbeginn: 6 g Flohsamenschalen mit 60 g Wasser verrühren, 15 Min. stehen lassen — es entsteht ein festes Gel.",
+              "rescue": "Bei Weg B (direkt backen) kann es entfallen; dann 30 g Wasser weniger im Hauptteig.",
+              "timers": [
+                {
+                  "label": "Quellstück ansetzen",
+                  "duration": {
+                    "typical": "PT15M"
+                  },
+                  "text": "15 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "flohsamenschalen",
+                  "amount": {
+                    "text": "6 g Flohsamenschalen",
+                    "value": 6.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "60 g Wasser",
+                    "value": 60.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "after": []
+            },
+            {
+              "id": "autolyse",
+              "label": "4",
+              "heading": "**4. Autolyse (45 Min., passiv)**",
+              "title": "Autolyse",
+              "duration": {
+                "typical": "PT45M",
+                "source": "45 Min."
+              },
+              "attention": "passive",
+              "text": "In einer großen Schüssel: 390 g Weizenvollkornmehl (Weizen-Roggen: 300 g Weizenvollkornmehl + 90 g Roggenvollkornmehl, Dinkel: 390 g Dinkelvollkornmehl), 80 g Wasser (Weizen-Roggen: 90 g, Dinkel: 40 g) von \\~28 °C, den kompletten Poolish, das komplette Kochstück und das komplette Quellstück mit der Teigkarte und nassen Händen **nur so lange mischen, bis kein trockenes Mehl mehr sichtbar ist** (2–3 Min., darf klumpig aussehen). Abdecken, 45 Min. ruhen lassen (Dinkel: 30 Min.). *Kein Kneten — das Mehl arbeitet allein.*",
+              "action": "In einer großen Schüssel: 390 g Weizenvollkornmehl (Weizen-Roggen: 300 g Weizenvollkornmehl + 90 g Roggenvollkornmehl, Dinkel: 390 g Dinkelvollkornmehl), 80 g Wasser (Weizen-Roggen: 90 g, Dinkel: 40 g) von \\~28 °C, den kompletten Poolish, das komplette Kochstück und das komplette Quellstück mit der Teigkarte und nassen Händen **nur so lange mischen, bis kein trockenes Mehl mehr sichtbar ist** (2–3 Min., darf klumpig aussehen).",
+              "limits": [
+                "nur so lange mischen, bis kein trockenes Mehl mehr sichtbar ist"
+              ],
+              "why": "Kein Kneten — das Mehl arbeitet allein.",
+              "timers": [
+                {
+                  "label": "Autolyse",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                },
+                {
+                  "label": "Autolyse",
+                  "duration": {
+                    "typical": "PT45M"
+                  },
+                  "text": "45 Min."
+                },
+                {
+                  "label": "Autolyse",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "30 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "28 °C",
+                  "value": 28
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "weizenvollkornmehl",
+                  "amount": {
+                    "text": "390 g Weizenvollkornmehl",
+                    "value": 390.0,
+                    "unit": "g"
+                  },
+                  "byVariant": {
+                    "mehl=weizen-roggen": [
+                      {
+                        "ref": "weizenvollkornmehl",
+                        "amount": {
+                          "text": "300 g Weizenvollkornmehl",
+                          "value": 300.0,
+                          "unit": "g"
+                        }
+                      },
+                      {
+                        "ref": "roggenvollkornmehl",
+                        "amount": {
+                          "text": "90 g Roggenvollkornmehl",
+                          "value": 90.0,
+                          "unit": "g"
+                        }
+                      }
+                    ],
+                    "mehl=dinkel": [
+                      {
+                        "ref": "dinkelvollkornmehl",
+                        "amount": {
+                          "text": "390 g Dinkelvollkornmehl",
+                          "value": 390.0,
+                          "unit": "g"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "80 g Wasser",
+                    "value": 80.0,
+                    "unit": "g"
+                  },
+                  "byVariant": {
+                    "mehl=weizen-roggen": [
+                      {
+                        "ref": "wasser",
+                        "amount": {
+                          "text": "90 g",
+                          "value": 90.0,
+                          "unit": "g"
+                        }
+                      }
+                    ],
+                    "mehl=dinkel": [
+                      {
+                        "ref": "wasser",
+                        "amount": {
+                          "text": "40 g",
+                          "value": 40.0,
+                          "unit": "g"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "alts": [
+                {
+                  "text": "(Weizen-Roggen: 300 g Weizenvollkornmehl + 90 g Roggenvollkornmehl, Dinkel: 390 g Dinkelvollkornmehl)",
+                  "options": [
+                    {
+                      "when": "mehl=weizen-roggen",
+                      "text": "300 g Weizenvollkornmehl + 90 g Roggenvollkornmehl"
+                    },
+                    {
+                      "when": "mehl=dinkel",
+                      "text": "390 g Dinkelvollkornmehl"
+                    }
+                  ],
+                  "base": "390 g Weizenvollkornmehl"
+                },
+                {
+                  "text": "(Weizen-Roggen: 90 g, Dinkel: 40 g)",
+                  "options": [
+                    {
+                      "when": "mehl=weizen-roggen",
+                      "text": "90 g"
+                    },
+                    {
+                      "when": "mehl=dinkel",
+                      "text": "40 g"
+                    }
+                  ],
+                  "base": "80 g Wasser"
+                },
+                {
+                  "text": "(Dinkel: 30 Min.)",
+                  "options": [
+                    {
+                      "when": "mehl=dinkel",
+                      "text": "30 Min."
+                    }
+                  ]
+                }
+              ],
+              "meta": "*nach Poolish ansetzen, Kochstück kochen, Quellstück ansetzen*",
+              "after": [
+                "step:poolish-ansetzen",
+                "step:kochstueck-kochen",
+                "step:quellstueck-ansetzen"
+              ]
+            },
+            {
+              "id": "slap-fold",
+              "label": "5",
+              "heading": "**5. Slap & Fold (5 Min.)**",
+              "title": "Slap & Fold",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Hefe einarbeiten — Slap & Fold statt Kneten: 12 g Frischhefe (Direkt backen: 6 g, Kombi: 9 g) zerbröseln, mit 12 g Honig (und ggf. 6 g Backmalz, 4–6 g Brotgewürz) auf den Teig geben. Teig auf die **unbemehlte** Arbeitsfläche kippen. **Slap & Fold:** Teig mit beiden Händen an einer Seite hochheben, mit Schwung auf die Fläche schlagen, den hängenden Teil über den liegenden falten, um 90° drehen, wiederholen — **3 Min.**, dann 18 g weiche Butter darauf und **weitere 2 Min.**, bis sie eingearbeitet ist. Der Teig klebt anfangs stark — **nicht mehlen, nasse Hände und Teigkarte**. Nach 5 Min. hält er beim Hochheben schon kurz zusammen; mehr muss er hier nicht können, den Rest macht das Falten. **Dinkel: nur 3 Min. gesamt** (Butter nach 2 Min.), sobald der Teig glänzt und schmiert sofort aufhören.",
+              "action": "Hefe einarbeiten — Slap & Fold statt Kneten: 12 g Frischhefe (Direkt backen: 6 g, Kombi: 9 g) zerbröseln, mit 12 g Honig (und ggf.",
+              "limits": [
+                "3 Min.",
+                "weitere 2 Min.",
+                "nicht mehlen, nasse Hände und Teigkarte",
+                "Dinkel: nur 3 Min. gesamt"
+              ],
+              "cues": [
+                "bis sie eingearbeitet ist"
+              ],
+              "timers": [
+                {
+                  "label": "Slap & Fold",
+                  "duration": {
+                    "typical": "PT3M"
+                  },
+                  "text": "3 Min."
+                },
+                {
+                  "label": "Slap & Fold",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                },
+                {
+                  "label": "Slap & Fold",
+                  "duration": {
+                    "typical": "PT3M"
+                  },
+                  "text": "3 Min."
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT5M",
+                    "source": "5 Min."
+                  },
+                  "text": "Nach 5 Min."
+                },
+                {
+                  "at": {
+                    "typical": "PT2M",
+                    "source": "2 Min."
+                  },
+                  "text": "gesamt** (Butter nach 2 Min.), sobald der Teig glänzt und schmiert sofort aufhören."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "frischhefe",
+                  "amount": {
+                    "text": "12 g Frischhefe",
+                    "value": 12.0,
+                    "unit": "g"
+                  },
+                  "byVariant": {
+                    "weg=direkt-backen": [
+                      {
+                        "ref": "frischhefe",
+                        "amount": {
+                          "text": "6 g",
+                          "value": 6.0,
+                          "unit": "g"
+                        }
+                      }
+                    ],
+                    "weg=kombi": [
+                      {
+                        "ref": "frischhefe",
+                        "amount": {
+                          "text": "9 g",
+                          "value": 9.0,
+                          "unit": "g"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "ref": "honig",
+                  "amount": {
+                    "text": "12 g Honig",
+                    "value": 12.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "backmalz",
+                  "amount": {
+                    "text": "6 g Backmalz",
+                    "value": 6.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "brotgewuerz",
+                  "amount": {
+                    "text": "4–6 g Brotgewürz",
+                    "value": 4.0,
+                    "unit": "g",
+                    "max": 6.0
+                  }
+                },
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "18 g weiche Butter",
+                    "value": 18.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "alts": [
+                {
+                  "text": "(Direkt backen: 6 g, Kombi: 9 g)",
+                  "options": [
+                    {
+                      "when": "weg=direkt-backen",
+                      "text": "6 g"
+                    },
+                    {
+                      "when": "weg=kombi",
+                      "text": "9 g"
+                    }
+                  ],
+                  "base": "12 g Frischhefe"
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "temperatur-messen",
+              "label": "6",
+              "heading": "**6. Temperatur messen (1 Min.)**",
+              "title": "Temperatur messen",
+              "duration": {
+                "typical": "PT1M",
+                "source": "1 Min."
+              },
+              "text": "Teigtemperatur mit dem Fleischthermometer messen: Ziel **25–26 °C** (Dinkel: 24–25 °C). Unter 24 °C → Stockgare um 20 Min. verlängern; über 27 °C → um 15 Min. kürzen, Dinkel dann kühl stellen.",
+              "action": "Teigtemperatur mit dem Fleischthermometer messen: Ziel **25–26 °C** (Dinkel: 24–25 °C).",
+              "limits": [
+                "25–26 °C"
+              ],
+              "timers": [
+                {
+                  "label": "Temperatur messen",
+                  "duration": {
+                    "typical": "PT20M"
+                  },
+                  "text": "20 Min."
+                },
+                {
+                  "label": "Temperatur messen",
+                  "duration": {
+                    "typical": "PT15M"
+                  },
+                  "text": "15 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "25–26 °C",
+                  "min": 25,
+                  "max": 26
+                },
+                {
+                  "kind": "ziel",
+                  "text": "24–25 °C",
+                  "min": 24,
+                  "max": 25
+                },
+                {
+                  "kind": "ziel",
+                  "text": "24 °C",
+                  "value": 24
+                },
+                {
+                  "kind": "max",
+                  "text": "27 °C",
+                  "value": 27
+                }
+              ],
+              "ingredients": [],
+              "alts": [
+                {
+                  "text": "(Dinkel: 24–25 °C)",
+                  "options": [
+                    {
+                      "when": "mehl=dinkel",
+                      "text": "24–25 °C"
+                    }
+                  ]
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "stockgare",
+              "label": "7",
+              "heading": "**7. Stockgare (90–120 Min., passiv)**",
+              "title": "Stockgare",
+              "duration": {
+                "min": "PT1H30M",
+                "max": "PT2H",
+                "source": "90–120 Min."
+              },
+              "attention": "passive",
+              "text": "Teig in eine leicht geölte Schüssel, abdecken, bei \\~24 °C 90–120 Min. gehen lassen (Dinkel: 75–90 Min.), dabei 3× Dehnen & Falten. **Nach 30, 60 und 90 Min.** (Dinkel: 25, 50, 75) **Dehnen & Falten:** nasse Hände, unter eine Seite greifen, den Teig hochziehen bis zum Widerstand (nicht reißen), über die Mitte auf die gegenüberliegende Seite legen, Schüssel vierteldrehen, insgesamt viermal — 20 Sek. *Das ist das Kneten dieses Rezepts: jedes Falten schichtet die Kleberstränge und baut sichtbar Spannung auf. Beim zweiten Mal ist der Teig merklich straffer und weniger klebrig, beim dritten hält er die Form.* **Fenstertest nach dem 3. Falten:** ein walnussgroßes Stück langsam auseinanderziehen — Weizen gibt ein fast durchsichtiges Häutchen mit Kleiepunkten; Dinkel reißt früher, „dünn und dehnbar\" reicht. Reißt Weizen sofort: ein 4. Falten nach weiteren 20 Min. **Reservewasser** (20–30 g) nur, wenn sich der Teig beim 2. Falten fest und trocken anfühlt — dann mit nassen Händen einfalten. Fertig, wenn Weizen etwa **verdoppelt** (Weizen-Roggen: \\~1,8-fach, Dinkel: \\~1,5-fach) ist und Blasen an der Oberfläche zeigt.",
+              "action": "Teig in eine leicht geölte Schüssel, abdecken, bei \\~24 °C 90–120 Min. gehen lassen (Dinkel: 75–90 Min.), dabei 3× Dehnen & Falten.",
+              "limits": [
+                "Nach 30, 60 und 90 Min."
+              ],
+              "cues": [
+                "bis zum Widerstand (nicht reißen"
+              ],
+              "timers": [
+                {
+                  "label": "Stockgare",
+                  "duration": {
+                    "min": "PT1H30M",
+                    "max": "PT2H"
+                  },
+                  "text": "90–120 Min."
+                },
+                {
+                  "label": "Stockgare",
+                  "duration": {
+                    "min": "PT1H15M",
+                    "max": "PT1H30M"
+                  },
+                  "text": "75–90 Min."
+                },
+                {
+                  "label": "Stockgare",
+                  "duration": {
+                    "typical": "PT1H30M"
+                  },
+                  "text": "90 Min."
+                },
+                {
+                  "label": "Stockgare",
+                  "duration": {
+                    "typical": "PT20S"
+                  },
+                  "text": "20 Sek."
+                },
+                {
+                  "label": "Stockgare",
+                  "duration": {
+                    "typical": "PT20M"
+                  },
+                  "text": "20 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "24 °C",
+                  "value": 24
+                }
+              ],
+              "ingredients": [],
+              "alts": [
+                {
+                  "text": "(Dinkel: 75–90 Min.)",
+                  "options": [
+                    {
+                      "when": "mehl=dinkel",
+                      "text": "75–90 Min."
+                    }
+                  ]
+                },
+                {
+                  "text": "(Dinkel: 25, 50, 75)",
+                  "options": [
+                    {
+                      "when": "mehl=dinkel",
+                      "text": "25, 50, 75"
+                    }
+                  ]
+                },
+                {
+                  "text": "(Weizen-Roggen: \\~1,8-fach, Dinkel: \\~1,5-fach)",
+                  "options": [
+                    {
+                      "when": "mehl=weizen-roggen",
+                      "text": "\\~1,8-fach"
+                    },
+                    {
+                      "when": "mehl=dinkel",
+                      "text": "\\~1,5-fach"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "vorformen",
+              "label": "8",
+              "heading": "**8. Vorformen (10 Min. + 10 Min. Zwischengare)**",
+              "title": "Vorformen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Abstechen und Vorformen: Arbeitsfläche **dünn** bemehlen, Teig mit der Teigkarte aus der Schüssel kippen — nicht drücken, das Gas soll bleiben. In **12 Stücke à \\~100 g** (Dinkel: \\~95 g) schneiden; wiegen lohnt sich, dann sind alle gleichzeitig gar. **Vorformen:** jedes Stück mit nassen Händen einmal von allen Seiten zur Mitte falten, mit der Faltseite nach unten ablegen. **Alle 12 abgedeckt 10 Min. entspannen lassen.** *Das ist neu gegenüber dem ersten Versuch: frisch geteilter Teig zieht sich zusammen und reißt beim Schleifen — entspannter Teig lässt sich spannen.*",
+              "action": "Abstechen und Vorformen: Arbeitsfläche **dünn** bemehlen, Teig mit der Teigkarte aus der Schüssel kippen — nicht drücken, das Gas soll bleiben.",
+              "limits": [
+                "12 Stücke à \\~100 g",
+                "Alle 12 abgedeckt 10 Min. entspannen lassen."
+              ],
+              "why": "Das ist neu gegenüber dem ersten Versuch: frisch geteilter Teig zieht sich zusammen und reißt beim Schleifen — entspannter Teig lässt sich spannen.",
+              "timers": [
+                {
+                  "label": "Vorformen",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
+              "ingredients": [],
+              "alts": [
+                {
+                  "text": "(Dinkel: \\~95 g)",
+                  "options": [
+                    {
+                      "when": "mehl=dinkel",
+                      "text": "\\~95 g"
+                    }
+                  ]
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "rundschleifen",
+              "label": "9",
+              "heading": "**9. Rundschleifen (10 Min.)**",
+              "title": "Rundschleifen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Rundschleifen — der wichtigste Handgriff. **Ziel:** eine Kugel mit straffer, glatter Haut oben und einem **Schluss** (zusammengezogener „Nabel\") unten. Die gespannte Haut hält das Gas wie ein Ballon — so geht das Brötchen nach oben statt in die Breite. 1. Vorgeformtes Stück mit der glatten Seite nach unten flach drücken, die vier Ränder nacheinander zur Mitte falten und andrücken — wie ein Päckchen. Die raue Faltseite wird der Schluss. 2. Umdrehen: glatte Seite oben. **Hände jetzt trocken, Fläche nur hauchdünn bemehlt** — der Teig muss leicht haften, denn die Reibung zieht die Haut unten zusammen. 3. Hand locker gewölbt über den Teig, Fingerspitzen und Handballen auf der Fläche, in kleinen Kreisen bewegen und dabei leicht zu sich heranziehen. **10–20 Kreise**, bis die Oberfläche glatt und prall ist. Reißt die Haut: aufhören, das war zu viel. 4. **Für sehr weichen Teig (so war es beim ersten Mal):** statt zu kreisen den Teigling mit der Teigkarte von der Seite untergreifen und 6–8-mal über die Fläche zu sich ziehen — die Karte spannt die Haut, ohne dass die Hand klebt. Klebt er trotzdem: Hände anfeuchten, nicht mehlen. Rutscht er ohne Spannung: Mehl von der Fläche wischen. 5. Umdrehen und prüfen: unten ein zusammengezogener Punkt = Schluss.",
+              "action": "Rundschleifen — der wichtigste Handgriff.",
+              "limits": [
+                "Hände jetzt trocken, Fläche nur hauchdünn bemehlt",
+                "10–20 Kreise"
+              ],
+              "cues": [
+                "bis die Oberfläche glatt und prall ist"
+              ],
+              "ingredients": [],
+              "attention": "active"
+            },
+            {
+              "id": "topping",
+              "label": "10",
+              "heading": "**10. Topping (ca. 5 Min.)**",
+              "title": "Topping",
+              "duration": {
+                "typical": "PT5M",
+                "source": "ca. 5 Min.",
+                "estimated": true
+              },
+              "text": "Oberseite mit feuchter Hand betupfen und in 60 g Sonnenblumenkerne (oder andere Saaten) drücken. **Ablegen:** Schluss nach unten, mindestens 4 cm Abstand, auf Backpapier. *Wer sich das Schleifen noch nicht zutraut: Schluss nach oben ablegen und nicht einschneiden — der Schluss reißt rustikal auf und verzeiht weniger Spannung.*",
+              "action": "Oberseite mit feuchter Hand betupfen und in 60 g Sonnenblumenkerne (oder andere Saaten) drücken.",
+              "why": "Wer sich das Schleifen noch nicht zutraut: Schluss nach oben ablegen und nicht einschneiden — der Schluss reißt rustikal auf und verzeiht weniger Spannung.",
+              "ingredients": [
+                {
+                  "ref": "sonnenblumenkerne",
+                  "amount": {
+                    "text": "60 g Sonnenblumenkerne",
+                    "value": 60.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "attention": "active"
+            }
+          ],
+          "heading": "### Backtag — Teig (\\~3 Std., davon \\~30 Min. Arbeit)",
+          "produces": [
+            {
+              "id": "backtag-teig-3-std-davon-30-min-arbeit",
+              "name": "Backtag — Teig (\\~3 Std., davon \\~30 Min. Arbeit)"
+            }
+          ]
+        },
+        {
+          "id": "nach-dem-formen-drei-wege",
+          "name": "Nach dem Formen — drei Wege",
+          "steps": [
+            {
+              "id": "einfrieren",
+              "label": "11",
+              "heading": "**11. Einfrieren (20 Min. + 2–3 Std. passiv)**",
+              "title": "Einfrieren",
+              "duration": {
+                "typical": "PT20M",
+                "source": "20 Min."
+              },
+              "attention": "passive",
+              "text": "Weg A — Einfrieren (Vorrat; 12 g Hefe): **20 Min.** abgedeckt bei Raumtemperatur entspannen — **nicht länger**. Hefe, die noch nicht aktiv gärt, überlebt den Frost deutlich besser; die Stückgare findet erst *nach* dem Auftauen statt. Dann einfrieren, **ohne Blech-Platz in Schüben:** je 4–6 Teiglinge ohne Kontakt auf ein kleines Brett, einen Teller oder in eine flache Dose mit Backpapier, **2–3 Std. offen anfrieren**, hartgefroren in einen Gefrierbeutel, Luft herausdrücken, **den Beutel in einen zweiten Beutel oder eine Dose** (ohne Vakuumierer ist Doppelverpackung der Gefrierbrand-Schutz), Datum draufschreiben, nächsten Schub aufs Brett. Die wartenden Teiglinge in der Zwischenzeit **in den Kühlschrank** (bremst die Hefe). **Innerhalb von 3 Wochen** verbrauchen — ohne Vakuum konservativ. Weiter bei „Auftauen und Stückgare“.",
+              "action": "Weg A — Einfrieren (Vorrat; 12 g Hefe): **20 Min.** abgedeckt bei Raumtemperatur entspannen — **nicht länger**.",
+              "limits": [
+                "20 Min.",
+                "nicht länger",
+                "2–3 Std. offen anfrieren",
+                "den Beutel in einen zweiten Beutel oder eine Dose",
+                "in den Kühlschrank",
+                "Innerhalb von 3 Wochen"
+              ],
+              "timers": [
+                {
+                  "label": "Einfrieren",
+                  "duration": {
+                    "typical": "PT20M"
+                  },
+                  "text": "20 Min."
+                },
+                {
+                  "label": "Einfrieren",
+                  "duration": {
+                    "min": "PT2H",
+                    "max": "PT3H"
+                  },
+                  "text": "2–3 Std."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nur Einfrieren, Kombi*",
+              "only": [
+                "weg=einfrieren",
+                "weg=kombi"
+              ]
+            },
+            {
+              "id": "stueckgare",
+              "label": "12",
+              "heading": "**12. Stückgare (60–75 Min., passiv)**",
+              "title": "Stückgare",
+              "duration": {
+                "min": "PT1H",
+                "max": "PT1H15M",
+                "source": "60–75 Min."
+              },
+              "attention": "passive",
+              "text": "Weg B — direkt backen (6 g Hefe): Geformte Teiglinge mit 5 cm Abstand auf Backpapier, abdecken (umgedrehte Schüssel, Folie, feuchtes Tuch), bei \\~24 °C **60–75 Min.** (Dinkel: 50–60 Min., Kombi: 50–60 Min.) gehen lassen. **Ofen 30–40 Min. vor Ende** mit zweitem Blech auf mittlerer Schiene auf **250 °C Ober-/Unterhitze** vorheizen, Metallschale auf den Ofenboden. Backreife per **Fingertest** (siehe unten). Weizen darf recht voll gehen (\\~1,8-fach), Dinkel lieber eine Spur früher in den Ofen. Weiter bei „Einschneiden“.",
+              "action": "Weg B — direkt backen (6 g Hefe): Geformte Teiglinge mit 5 cm Abstand auf Backpapier, abdecken (umgedrehte Schüssel, Folie, feuchtes Tuch), bei \\~24 °C **60–75 Min.** (Dinkel: 50–60 Min., Kombi: 50–60 Min.) gehen lassen.",
+              "limits": [
+                "60–75 Min.",
+                "Ofen 30–40 Min. vor Ende",
+                "250 °C Ober-/Unterhitze"
+              ],
+              "timers": [
+                {
+                  "label": "Stückgare",
+                  "duration": {
+                    "min": "PT1H",
+                    "max": "PT1H15M"
+                  },
+                  "text": "60–75 Min."
+                },
+                {
+                  "label": "Stückgare",
+                  "duration": {
+                    "min": "PT50M",
+                    "max": "PT1H"
+                  },
+                  "text": "50–60 Min."
+                },
+                {
+                  "label": "Stückgare",
+                  "duration": {
+                    "min": "PT50M",
+                    "max": "PT1H"
+                  },
+                  "text": "50–60 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "24 °C",
+                  "value": 24
+                },
+                {
+                  "kind": "ziel",
+                  "text": "250 °C",
+                  "value": 250
+                }
+              ],
+              "ingredients": [],
+              "alts": [
+                {
+                  "text": "(Dinkel: 50–60 Min., Kombi: 50–60 Min.)",
+                  "options": [
+                    {
+                      "when": "mehl=dinkel",
+                      "text": "50–60 Min."
+                    },
+                    {
+                      "when": "weg=kombi",
+                      "text": "50–60 Min."
+                    }
+                  ]
+                }
+              ],
+              "meta": "*nur Direkt backen, Kombi · nach Topping*",
+              "only": [
+                "weg=direkt-backen",
+                "weg=kombi"
+              ],
+              "after": [
+                "step:topping"
+              ]
+            }
+          ],
+          "heading": "### Nach dem Formen — drei Wege",
+          "produces": [
+            {
+              "id": "nach-dem-formen-drei-wege",
+              "name": "Nach dem Formen — drei Wege"
+            }
+          ]
+        },
+        {
+          "id": "backen-alle-wege",
+          "name": "Backen (alle Wege)",
+          "steps": [
+            {
+              "id": "auftauen-und-stueckgare",
+              "label": "13",
+              "heading": "**13. Auftauen und Stückgare (2,5–3,5 Std., passiv)**",
+              "title": "Auftauen und Stückgare",
+              "duration": {
+                "min": "PT2H30M",
+                "max": "PT3H30M",
+                "source": "2,5–3,5 Std."
+              },
+              "attention": "passive",
+              "text": "Nur Weg A: Gefrorene Teiglinge mit 5 cm Abstand, Schluss nach unten, auf Backpapier, abdecken. Bei 22–24 °C gehen lassen, bis sie etwa das **1,8-Fache** der gefrorenen Größe haben (Dinkel: 1,5–1,8-fach) — 2,5–3,5 Std. **Alternative:** abgedeckt über Nacht im Kühlschrank auftauen, morgens 60–90 Min. bei Raumtemperatur fertig gehen lassen. **Ofen 30–40 Min. vor Backreife** mit zweitem Blech auf **250 °C Ober-/Unterhitze**, Metallschale (kein Glas, kein Emaille) auf den Ofenboden.\n**Fingertest** (gilt für alle Wege): leicht bemehlten Finger 1 cm tief in die Seite drücken.\n- Delle springt sofort zurück → 20 Min. warten\n- Delle kommt **langsam** zurück, bleibt minimal sichtbar → **jetzt backen**\n- Delle bleibt stehen, Teig sackt → übergar; trotzdem backen, **nicht** einschneiden, nächstes Mal früher",
+              "action": "Nur Weg A: Gefrorene Teiglinge mit 5 cm Abstand, Schluss nach unten, auf Backpapier, abdecken.",
+              "limits": [
+                "Ofen 30–40 Min. vor Backreife",
+                "250 °C Ober-/Unterhitze",
+                "jetzt backen"
+              ],
+              "cues": [
+                "bis sie etwa das"
+              ],
+              "timers": [
+                {
+                  "label": "Auftauen und Stückgare",
+                  "duration": {
+                    "min": "PT2H30M",
+                    "max": "PT3H30M"
+                  },
+                  "text": "2,5–3,5 Std."
+                },
+                {
+                  "label": "Auftauen und Stückgare",
+                  "duration": {
+                    "min": "PT1H",
+                    "max": "PT1H30M"
+                  },
+                  "text": "60–90 Min."
+                },
+                {
+                  "label": "Auftauen und Stückgare",
+                  "duration": {
+                    "typical": "PT20M"
+                  },
+                  "text": "20 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "22–24 °C",
+                  "min": 22,
+                  "max": 24
+                },
+                {
+                  "kind": "ziel",
+                  "text": "250 °C",
+                  "value": 250
+                }
+              ],
+              "ingredients": [],
+              "alts": [
+                {
+                  "text": "(Dinkel: 1,5–1,8-fach)",
+                  "options": [
+                    {
+                      "when": "mehl=dinkel",
+                      "text": "1,5–1,8-fach"
+                    }
+                  ]
+                }
+              ],
+              "meta": "*nur Einfrieren, Kombi · nach Einfrieren*",
+              "only": [
+                "weg=einfrieren",
+                "weg=kombi"
+              ],
+              "after": [
+                "step:einfrieren"
+              ]
+            },
+            {
+              "id": "einschneiden",
+              "label": "14",
+              "heading": "**14. Einschneiden (ca. 1 Min.)**",
+              "title": "Einschneiden",
+              "duration": {
+                "typical": "PT1M",
+                "source": "ca. 1 Min.",
+                "estimated": true
+              },
+              "text": "Direkt vor dem Einschießen: mit Rasierklinge, Cutter oder sehr scharfem glatten Messer **0,5–1 cm tief** in einer zügigen Bewegung über die Mitte, Klinge \\~30° schräg. Nicht sägen, nicht zögern. *Der Schnitt ist die Sollbruchstelle für den Ofentrieb — ohne ihn reißt die Kruste irgendwo unkontrolliert.* Bei Saaten-Topping oder Schluss-oben kann er entfallen.",
+              "action": "Direkt vor dem Einschießen: mit Rasierklinge, Cutter oder sehr scharfem glatten Messer **0,5–1 cm tief** in einer zügigen Bewegung über die Mitte, Klinge \\~30° schräg.",
+              "limits": [
+                "0,5–1 cm tief"
+              ],
+              "ingredients": [],
+              "meta": "*nach Auftauen und Stückgare, Stückgare*",
+              "attention": "active",
+              "after": [
+                "step:auftauen-und-stueckgare",
+                "step:stueckgare"
+              ]
+            },
+            {
+              "id": "einschiessen-und-schwaden",
+              "label": "15",
+              "heading": "**15. Einschießen und Schwaden (ca. 1 Min.)**",
+              "title": "Einschießen und Schwaden",
+              "duration": {
+                "typical": "PT1M",
+                "source": "ca. 1 Min.",
+                "estimated": true
+              },
+              "text": "Backpapier mit den Brötchen an zwei Ecken fassen und auf das heiße Blech im Ofen ziehen (oder per Brett/kaltem Blech als Schaufel hineingleiten lassen). Sofort Dampf: **50–80 ml heißes Wasser** in die vorgeheizte Metallschale (Gesicht weg, Handschuh) **oder 10–15 Sprühstöße** gegen die Ofenwände. Tür sofort zu. *Dampf hält die Oberfläche dehnbar, bis der Ofentrieb durch ist — mehr Volumen, dünne, glänzende, splitternde Kruste.*",
+              "action": "Backpapier mit den Brötchen an zwei Ecken fassen und auf das heiße Blech im Ofen ziehen (oder per Brett/kaltem Blech als Schaufel hineingleiten lassen).",
+              "limits": [
+                "50–80 ml heißes Wasser",
+                "oder 10–15 Sprühstöße"
+              ],
+              "why": "Dampf hält die Oberfläche dehnbar, bis der Ofentrieb durch ist — mehr Volumen, dünne, glänzende, splitternde Kruste.",
+              "cues": [
+                "bis der Ofentrieb durch ist"
+              ],
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "50–80 ml heißes Wasser",
+                    "value": 50.0,
+                    "unit": "ml",
+                    "max": 80.0
+                  }
+                }
+              ],
+              "meta": "*Ofen 250 °C*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 250
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "backen",
+              "label": "16",
+              "heading": "**16. Backen (18–20 Min.)**",
+              "title": "Backen",
+              "duration": {
+                "min": "PT18M",
+                "max": "PT20M",
+                "source": "18–20 Min."
+              },
+              "text": "In zwei Phasen backen: 1. **10 Min. bei 250 °C** mit Dampf, Tür zu. 2. Tür 5–10 Sek. weit öffnen, Dampf raus, Schale entfernen, Ofen auf **220 °C**. 3. **8–10 Min.** trocken ausbacken. Fertig bei kräftig goldbrauner Kruste, hohlem Klang beim Klopfen auf den Boden und **Kerntemperatur ≥ 96 °C** (Fleischthermometer seitlich bis zur Mitte). **Ab Minute 14 beobachten** — Honig, Malz und Vollkorn bräunen schnell; werden sie zu dunkel, auf 200 °C runter und 2–3 Min. länger. Auf dem Gitter **mindestens 20 Min.** auskühlen lassen — die Krume gart nach, zu früh angeschnitten wird sie klitschig.",
+              "action": "In zwei Phasen backen: 1.",
+              "limits": [
+                "10 Min. bei 250 °C",
+                "220 °C",
+                "8–10 Min.",
+                "Kerntemperatur ≥ 96 °C",
+                "Ab Minute 14 beobachten",
+                "mindestens 20 Min."
+              ],
+              "cues": [
+                "bis zur Mitte"
+              ],
+              "timers": [
+                {
+                  "label": "Backen",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                },
+                {
+                  "label": "Backen",
+                  "duration": {
+                    "min": "PT5S",
+                    "max": "PT10S"
+                  },
+                  "text": "5–10 Sek."
+                },
+                {
+                  "label": "Backen",
+                  "duration": {
+                    "min": "PT8M",
+                    "max": "PT10M"
+                  },
+                  "text": "8–10 Min."
+                },
+                {
+                  "label": "Backen",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "250 °C",
+                  "value": 250
+                },
+                {
+                  "kind": "ofen",
+                  "text": "220 °C",
+                  "value": 220
+                },
+                {
+                  "kind": "kern",
+                  "text": "≥ 96 °C",
+                  "value": 96
+                },
+                {
+                  "kind": "ziel",
+                  "text": "200 °C",
+                  "value": 200
+                }
+              ],
+              "ingredients": [],
+              "meta": "*Ofen 250 °C · fertig bei ≥ 96 °C Kern*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 250
+                }
+              ],
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei ≥ 96 °C Kern",
+                "value": 96
+              },
+              "attention": "attended"
+            }
+          ],
+          "heading": "### Backen (alle Wege)",
+          "produces": [
+            {
+              "id": "backen-alle-wege",
+              "name": "Backen (alle Wege)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "**Weg C — Kombi (9 g Hefe): 6 einfrieren",
+      "level": "bold",
+      "markdown": "**Weg C — Kombi (9 g Hefe): 6 einfrieren, 6 direkt backen.** Die praktischste Variante für einen Test-Ansatz: 6 Teiglinge nach Weg A einfrieren, 6 nach Weg B in die Stückgare (**50–60 Min.**, Fingertest) und backen. So sieht man am selben Tag, ob Teigführung und Formen stimmen, bevor die Frost-Charge dran ist."
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan Backtag",
+      "schedule": {
+        "id": "zeitplan-backtag",
+        "label": "Zeitplan Backtag",
+        "phases": [
+          {
+            "id": "vorabend-20-00-uhr",
+            "label": "Vorabend (20:00 Uhr)",
+            "day": -1,
+            "part": "evening"
+          },
+          {
+            "id": "uhr-09-00",
+            "label": "9:00 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "PT0M",
+            "clock": "09:00"
+          },
+          {
+            "id": "uhr-09-15",
+            "label": "9:15 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "+PT15M",
+            "clock": "09:15"
+          },
+          {
+            "id": "uhr-10-00",
+            "label": "10:00 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "+PT1H",
+            "clock": "10:00"
+          },
+          {
+            "id": "uhr-10-05",
+            "label": "10:05 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "+PT1H5M",
+            "clock": "10:05"
+          },
+          {
+            "id": "uhr-12-00",
+            "label": "12:00 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "+PT3H",
+            "clock": "12:00"
+          },
+          {
+            "id": "uhr-12-15",
+            "label": "12:15 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "+PT3H15M",
+            "clock": "12:15"
+          },
+          {
+            "id": "uhr-12-30",
+            "label": "12:30 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "+PT3H30M",
+            "clock": "12:30"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "vorabend-20-00-uhr",
+            "text": "Poolish ansetzen",
+            "steps": [
+              "poolish-ansetzen"
+            ]
+          },
+          {
+            "phase": "vorabend-20-00-uhr",
+            "text": "Kochstück kochen",
+            "steps": [
+              "kochstueck-kochen"
+            ]
+          },
+          {
+            "phase": "vorabend-20-00-uhr",
+            "text": "Kochstück nach dem Erkalten kühlen (20 Min.)"
+          },
+          {
+            "phase": "uhr-09-00",
+            "text": "Quellstück ansetzen (2 Min.)",
+            "steps": [
+              "quellstueck-ansetzen"
+            ]
+          },
+          {
+            "phase": "uhr-09-15",
+            "text": "Autolyse (Weizen 45 Min.; 3 Min. Arbeit)",
+            "steps": [
+              "autolyse"
+            ]
+          },
+          {
+            "phase": "uhr-10-00",
+            "text": "Hefe, Honig, Butter per Slap & Fold einarbeiten, Temperatur messen (6 Min.)",
+            "steps": [
+              "slap-fold",
+              "temperatur-messen"
+            ]
+          },
+          {
+            "phase": "uhr-10-05",
+            "text": "Stockgare (bis 12:00), Dehnen & Falten 10:35 / 11:05 / 11:35 (3 × 1 Min.)",
+            "steps": [
+              "stockgare"
+            ]
+          },
+          {
+            "phase": "uhr-12-00",
+            "text": "Abstechen, Vorformen, 10 Min. Zwischengare (10 Min.)",
+            "steps": [
+              "vorformen"
+            ]
+          },
+          {
+            "phase": "uhr-12-15",
+            "text": "Rundschleifen, Topping (10 Min.)",
+            "steps": [
+              "rundschleifen",
+              "topping"
+            ]
+          },
+          {
+            "phase": "uhr-12-30",
+            "text": "Einfrieren: 20 Min. entspannen → 12:50 erster Schub ins Gefrierfach, Rest in den Kühlschrank; Schübe um 15:30 und 18:00 umbeuteln/nachlegen (je 5 Min.)",
+            "only": [
+              "weg=einfrieren",
+              "weg=kombi"
+            ],
+            "steps": [
+              "einfrieren"
+            ]
+          },
+          {
+            "phase": "uhr-12-30",
+            "text": "Stückgare (bis \\~13:30), Ofen 13:00 an, Backen 13:35–13:55 (5 Min. Arbeit)",
+            "only": [
+              "weg=direkt-backen",
+              "weg=kombi"
+            ],
+            "steps": [
+              "backen",
+              "stueckgare"
+            ]
+          }
+        ],
+        "anchorOverride": {
+          "time": "09:00"
+        }
+      }
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan aus dem Frost",
+      "schedule": {
+        "id": "zeitplan-aus-dem-frost",
+        "label": "Zeitplan aus dem Frost",
+        "phases": [
+          {
+            "id": "vorabend",
+            "label": "Vorabend",
+            "day": -1,
+            "part": "evening"
+          },
+          {
+            "id": "uhr-06-30",
+            "label": "6:30 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT4H",
+            "clock": "06:30"
+          },
+          {
+            "id": "uhr-09-15",
+            "label": "9:15 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT1H15M",
+            "clock": "09:15"
+          },
+          {
+            "id": "uhr-09-45",
+            "label": "9:45 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT45M",
+            "clock": "09:45"
+          },
+          {
+            "id": "uhr-10-05",
+            "label": "10:05 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT25M",
+            "clock": "10:05"
+          },
+          {
+            "id": "uhr-10-30",
+            "label": "10:30 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "PT0M",
+            "clock": "10:30"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "vorabend",
+            "text": "Alternative: Abends Teiglinge in den Kühlschrank, morgens 60–90 Min. Raumtemperatur, dann backen",
+            "steps": [
+              "backen"
+            ]
+          },
+          {
+            "phase": "uhr-06-30",
+            "text": "Auftauen und Stückgare: Teiglinge raus (abgedeckt, Raumtemperatur)",
+            "steps": [
+              "auftauen-und-stueckgare"
+            ]
+          },
+          {
+            "phase": "uhr-09-15",
+            "text": "Ofen an"
+          },
+          {
+            "phase": "uhr-09-45",
+            "text": "Fingertest, Backen",
+            "steps": [
+              "backen"
+            ]
+          },
+          {
+            "phase": "uhr-10-05",
+            "text": "fertig"
+          },
+          {
+            "phase": "uhr-10-30",
+            "text": "Frühstück (10 Min. Arbeit)"
+          }
+        ],
+        "only": [
+          "weg=einfrieren",
+          "weg=kombi"
+        ],
+        "anchorOverride": {
+          "time": "10:30"
+        }
+      }
+    },
+    {
+      "type": "markdown",
+      "title": "Fehlerbild und Ursache",
+      "level": 2,
+      "markdown": "| Beobachtung | Wahrscheinliche Ursache | Nächstes Mal |\n|---|---|---|\n| **Brötchen laufen breit, flach** (unser 1. Versuch) | Teig zu weich (zu viel Wasser für Handarbeit), zu wenig Struktur (zu kurz geknetet / zu wenig Falten), zu wenig Spannung beim Schleifen | Handmenge Wasser (80 g), 3× Dehnen & Falten, Zwischengare vor dem Schleifen, Teigkarten-Technik; Dinkel zusätzlich: Teigtemperatur prüfen, ggf. überknetet |\n| **Teig klebt so, dass Formen unmöglich ist** | Hydration zu hoch für Handarbeit; zu früh geformt; Mehl statt Wasser an den Händen | Reservewasser weglassen, Zwischengare einhalten, nasse Hände beim Falten / trockene beim Schleifen; Roggen-Variante klebt von Natur aus mehr |\n| Brötchen dicht, wenig Volumen | Zu wenig Struktur (Fenstertest nicht bestanden) oder Stockgare/Stückgare zu kurz | 4. Falten, Volumen abwarten, Fingertest ernst nehmen |\n| Krume dicht und feucht, klitschig | Zu kurz gebacken oder zu früh angeschnitten | 96 °C Kern, 20 Min. auskühlen |\n| Krume trocken, bröselig | Kochstück zu lange gekocht (klumpig), grobes Mehl oder zu wenig Wasser | Kochstück nur bis zum Eindicken + 1 Min.; feines Mehl; Reservewasser beim 2. Falten |\n| Bitterer Nachgeschmack | Grobes oder altes Mehl (Vollkorn wird ranzig), Poolish zu kurz | Frisches, feines Mehl; Poolish volle 14–16 Std. |\n| Wenig Volumen aus dem Frost | Zu lange gelagert, Beutel undicht, Stückgare zu kurz | Innerhalb 3 Wochen backen, doppelt einbeuteln, 1,8-faches Volumen abwarten |\n| Kruste matt, dick, kein Ausbund | Zu wenig Dampf, Ofen/Blech nicht heiß genug | 30–40 Min. vorheizen, 80 ml schwaden |\n| Oberfläche reißt beim Schleifen | Zu viel Spannung oder Teig zu trocken | Weniger Kreise, Reservewasser nutzen |\n| Poolish riecht stechend nach Alkohol/Aceton | Zu warm oder zu lange gestanden | Trotzdem verwenden, nächstes Mal kürzer/kühler |\n| **Dinkel:** Teig wird plötzlich glänzend, weich, zieht Fäden | Überknetet — nicht rückgängig zu machen | Slap & Fold auf 3 Min. begrenzen, ab Minute 2 alle 30 Sek. prüfen; Struktur nur über Falten |",
+      "tags": [
+        "fehlerbild"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "Geprüft gegen den [Leitfaden](/schwangerschaft/leitfaden.md):\n\n- **Genau die Leitfaden-Regel „Beilage tauschen, nicht streichen\":** 100 % Vollkorn mit Vorteig — deutlich niedrigerer glykämischer Index als Weißmehlbrötchen; die Roggen-Variante liegt am niedrigsten.\n- **KH-Überschlag:** 100 g Teigling ≈ 50 g Vollkornmehl ≈ **\\~30 g KH pro Brötchen** (Vollkornweizen \\~60 g KH/100 g; der Honig steuert 1 g pro Brötchen bei, Flohsamenschalen sind reiner Ballaststoff).\n- **Frühstück ist die empfindlichste Mahlzeit** → **ein halbes Brötchen (\\~15 g KH) mit Protein und Fett**: Ei, Käse (pasteurisiert), Labneh aus dem Mezze-Rezept, Frischkäse mit Lachs *durchgegart* — nicht Marmelade oder Honig. Und messen: die individuelle Reaktion auf Vollkorn variiert.\n- **Zutaten-Ampel:** alles gebacken, keine Treffer. Saaten unkritisch.\n- Ideal als Vorrat für die Pflicht-Zwischenmahlzeiten: ein halbes Brötchen mit Käse als Spätmahlzeit.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Kind",
+      "level": 2,
+      "markdown": "Unproblematisch — mild, weich, kein Gewürz. Sonnenblumenkerne sind für einen Dreijährigen okay (kleine, weiche Kerne; ganze Nüsse wären das Problem), Mohn und Sesam ebenso. Brotgewürz mit Kümmel eher nicht für seine Brötchen — die Roggen-Variante dann ohne Gewürz.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "learnings",
+      "title": "Learnings",
+      "cooked": "09/2026",
+      "summary": "**Gebacken 09/2026 (Weizen rein, von Hand).** Fluffig und geschmacklich gut, vor allem mit Sonnenblumenkernen — die Rezeptbasis (Poolish + Kochstück + Quellstück) stimmt. Schwächen: von Hand zu kurz geknetet, Teig sehr klebrig, Rundschleifen hat nicht funktioniert → etwas flache, verlaufene Brötchen. Fix in diese Fassung eingebaut: Hauptteig-Wasser für Handarbeit von 120 g auf 80 g gesenkt, Kneten durch Slap & Fold plus 3× Dehnen & Falten ersetzt, 10 Min. Zwischengare vor dem Schleifen, Teigkarten-Technik für weichen Teig — beim nächsten Mal zu validieren.",
+      "details": "### Details\n\n- **Warum es klebte:** Die Import-Rezepte waren mit Küchenmaschine gedacht (5 + 6–8 Min. Knethaken), dort ist 95 % Gesamt-Hydration bei Vollkorn mit Kochstück normal. Von Hand hört man bei so einem Teig zu früh auf — er fühlt sich nie „fertig\" an. Weniger Wasser plus Falten statt Kneten ist die Standard-Antwort der Hand-Bäcker (Geißler, Tartine-Methode).\n- **Rundschleifen:** Zwei Ursachen fürs Misslingen — zu weicher Teig und kein Entspannen nach dem Teilen. Beides jetzt im Ablauf (Schritt 7/8).\n- **Topping-Favorit:** Sonnenblumenkerne. Als Standard gesetzt.\n- **Offen:** Ob die Frost-Charge nach 3 Wochen noch genug Trieb hat, ist noch nicht validiert; Weg C (Kombi) ist der sinnvolle nächste Ansatz."
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Methodik (Poolish + Kochstück für Vollkorn, Dinkel-Führung, Teigtemperatur, Dehnen & Falten statt intensivem Kneten):** Lutz Geißler, [ploetzblog.de](https://www.ploetzblog.de) und „Brotbackbuch Nr. 1\"; Peter Reinhart, „Whole Grain Breads\" (Vorteig-plus-Brühstück-Prinzip für 100 % Vollkorn).\n- **Hydration:** \\~80 % freies Wasser ist bei feinem Weizenvollkorn mit Maschine üblich (±5 % je nach Mehl). Für Handarbeit hier bewusst auf \\~65 % frei / \\~88 % gesamt gesenkt — eigene Erfahrung 09/2026, siehe Learnings.\n- **Einfrieren roher Teiglinge vor der Stückgare, erhöhte Hefemenge, Lagerung 3–4 Wochen:** Standardpraxis industrieller Tiefkühl-Teigware; 3 Wochen ohne Vakuum ist ein konservativer Haushaltswert.\n- **Import-Rezepte** (Weizen- und Dinkel-Fassung, jeweils mit Küchenmaschinen-Führung und eigenen Halbe-Menge-Tabellen) sind in diese Datei zusammengeführt; die Dinkel-Eigenheiten stehen in der Varianten-Tabelle, im Schritt 5/6 und im Fehlerbild.",
+      "tags": [
+        "quellen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Mit Küchenmaschine (falls später vorhanden):** Wassermenge der Maschinen-Zeile, 5 Min. langsamste Stufe, Butter zugeben, dann 6–8 Min. zweite Stufe (Dinkel: 4 + 2–3 Min.), Stockgare 90 Min. mit 2× Falten — die Original-Führung der Import-Rezepte.\n- **Ohne Quellstück (nur Weg B):** 6 g Flohsamenschalen und 60 g Wasser weglassen, Hauptteig-Wasser um 30 g erhöhen. Bei Weg A immer mit.\n- **Dinkel-Variante — was anders ist, kompakt:** schwacher, dehnbarer Kleber → Autolyse 30 Min., Slap & Fold max. 3 Min., Teig 24–25 °C, Stockgare 75–90 Min. mit Falten nach 25/50/75 Min., Volumen nur 1,5-fach, Stückgare kürzer, eher untergar in den Ofen (guter Ofentrieb, übergar fällt zusammen). Belohnung: nussiger Geschmack, den Weizen nicht hat.\n- **Brötchen für Gäste / Wochenende:** Weg B mit halber Menge am Samstagabend Poolish, Sonntag 9 Uhr los, 13:30 warme Brötchen.",
+      "tags": [
+        "notizen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T14:52:43Z",
+    "sourceHash": "2a36b2009367be89",
+    "select": {
+      "mehl": "weizen",
+      "weg": "einfrieren"
+    },
+    "quantities": [
+      {
+        "ingredient": "weizenvollkornmehl",
+        "total": {
+          "text": "600 g",
+          "value": 600.0,
+          "max": 600.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "vorabend-20-min": "150 g Weizenvollkornmehl + 60 g Weizenvollkornmehl",
+          "backtag-teig-3-std-davon-30-min-arbeit": "390 g Weizenvollkornmehl"
+        }
+      },
+      {
+        "ingredient": "honig",
+        "total": {
+          "text": "12 g",
+          "value": 12.0,
+          "max": 12.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "backtag-teig-3-std-davon-30-min-arbeit": "12 g Honig"
+        }
+      },
+      {
+        "ingredient": "sonnenblumenkerne",
+        "total": {
+          "text": "60 g",
+          "value": 60.0,
+          "max": 60.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "backtag-teig-3-std-davon-30-min-arbeit": "60 g Sonnenblumenkerne"
+        }
+      },
+      {
+        "ingredient": "frischhefe",
+        "total": {
+          "text": "12,2 g",
+          "value": 12.2,
+          "max": 12.2,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "vorabend-20-min": "0,2 g Frischhefe",
+          "backtag-teig-3-std-davon-30-min-arbeit": "12 g Frischhefe"
+        }
+      },
+      {
+        "ingredient": "flohsamenschalen",
+        "total": {
+          "text": "6 g",
+          "value": 6.0,
+          "max": 6.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "backtag-teig-3-std-davon-30-min-arbeit": "6 g Flohsamenschalen"
+        }
+      },
+      {
+        "ingredient": "backmalz",
+        "total": {
+          "text": "6 g",
+          "value": 6.0,
+          "max": 6.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "backtag-teig-3-std-davon-30-min-arbeit": "6 g Backmalz"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "13 g",
+          "value": 13.0,
+          "max": 13.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "vorabend-20-min": "13 g Salz"
+        }
+      },
+      {
+        "ingredient": "butter",
+        "total": {
+          "text": "18 g",
+          "value": 18.0,
+          "max": 18.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "backtag-teig-3-std-davon-30-min-arbeit": "18 g weiche Butter"
+        }
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "530 g (+ ml ungemischt)",
+          "value": 530.0,
+          "max": 530.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "vorabend-20-min": "150 g Wasser + 240 g Wasser",
+          "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 80 g Wasser"
+        },
+        "unitMixed": true
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Online",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "backmalz",
+            "name": "Backmalz, inaktiv",
+            "need": {
+              "text": "6 g",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "6 g",
+            "inStock": false,
+            "optional": true,
+            "note": "Gerstenmalzmehl; Bedarf 6 g"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "frischhefe",
+            "name": "Frischhefe",
+            "need": {
+              "text": "12,2 g",
+              "value": 12.2,
+              "max": 12.2,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "12,2 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 Würfel"
+            },
+            "note": "42 g; Bedarf 12,2 g; Rest einfrieren oder für Weg B/C"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "weizenvollkornmehl",
+            "name": "Weizenvollkornmehl, fein",
+            "need": {
+              "text": "600 g",
+              "value": 600.0,
+              "max": 600.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "600 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 kg"
+            },
+            "note": "Bedarf 600 g; Roggen-Variante 510 g"
+          },
+          {
+            "ingredient": "honig",
+            "name": "Honig",
+            "need": {
+              "text": "12 g",
+              "value": 12.0,
+              "max": 12.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "12 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 Glas"
+            },
+            "note": "Bedarf 12 g"
+          },
+          {
+            "ingredient": "sonnenblumenkerne",
+            "name": "Sonnenblumenkerne zum Wälzen",
+            "need": {
+              "text": "60 g",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "60 g",
+            "inStock": false,
+            "buy": {
+              "text": "100 g"
+            },
+            "note": "Bedarf \\~60 g; Alternativen: Haferflocken, Sesam, Mohn, Dinkelflocken"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "salz",
+            "name": "Salz, fein",
+            "need": {
+              "text": "13 g",
+              "value": 13.0,
+              "max": 13.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "13 g",
+            "inStock": false,
+            "pantry": true,
+            "note": "Bedarf 13 g"
+          },
+          {
+            "ingredient": "butter",
+            "name": "Butter",
+            "need": {
+              "text": "18 g",
+              "value": 18.0,
+              "max": 18.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "18 g",
+            "inStock": false,
+            "pantry": true,
+            "note": "Bedarf 18 g"
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "530 g (+ ml ungemischt)",
+              "value": 530.0,
+              "max": 530.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "530 g",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      },
+      {
+        "store": "Drogerie",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "flohsamenschalen",
+            "name": "Flohsamenschalen",
+            "need": {
+              "text": "6 g",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "6 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 Packung"
+            },
+            "note": "Bedarf 6 g"
+          }
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "key": "mehl=weizen,weg=direkt-backen",
+        "select": {
+          "mehl": "weizen",
+          "weg": "direkt-backen"
+        },
+        "quantities": [
+          {
+            "ingredient": "weizenvollkornmehl",
+            "total": {
+              "text": "600 g",
+              "value": 600.0,
+              "max": 600.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "150 g Weizenvollkornmehl + 60 g Weizenvollkornmehl",
+              "backtag-teig-3-std-davon-30-min-arbeit": "390 g Weizenvollkornmehl"
+            }
+          },
+          {
+            "ingredient": "honig",
+            "total": {
+              "text": "12 g",
+              "value": 12.0,
+              "max": 12.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "12 g Honig"
+            }
+          },
+          {
+            "ingredient": "sonnenblumenkerne",
+            "total": {
+              "text": "60 g",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Sonnenblumenkerne"
+            }
+          },
+          {
+            "ingredient": "frischhefe",
+            "total": {
+              "text": "6,2 g",
+              "value": 6.2,
+              "max": 6.2,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "0,2 g Frischhefe",
+              "backtag-teig-3-std-davon-30-min-arbeit": "6 g"
+            }
+          },
+          {
+            "ingredient": "flohsamenschalen",
+            "total": {
+              "text": "6 g",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "6 g Flohsamenschalen"
+            }
+          },
+          {
+            "ingredient": "backmalz",
+            "total": {
+              "text": "6 g",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "6 g Backmalz"
+            }
+          },
+          {
+            "ingredient": "salz",
+            "total": {
+              "text": "13 g",
+              "value": 13.0,
+              "max": 13.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "13 g Salz"
+            }
+          },
+          {
+            "ingredient": "butter",
+            "total": {
+              "text": "18 g",
+              "value": 18.0,
+              "max": 18.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "18 g weiche Butter"
+            }
+          },
+          {
+            "ingredient": "wasser",
+            "total": {
+              "text": "530 g (+ ml ungemischt)",
+              "value": 530.0,
+              "max": 530.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "150 g Wasser + 240 g Wasser",
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 80 g Wasser"
+            },
+            "unitMixed": true
+          }
+        ],
+        "shopping": [
+          {
+            "store": "Online",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "backmalz",
+                "name": "Backmalz, inaktiv",
+                "need": {
+                  "text": "6 g",
+                  "value": 6.0,
+                  "max": 6.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "6 g",
+                "inStock": false,
+                "optional": true,
+                "note": "Gerstenmalzmehl; Bedarf 6 g"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Milchprodukte & Eier",
+            "items": [
+              {
+                "ingredient": "frischhefe",
+                "name": "Frischhefe",
+                "need": {
+                  "text": "6,2 g",
+                  "value": 6.2,
+                  "max": 6.2,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "6,2 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Würfel"
+                },
+                "note": "42 g; Bedarf 12,2 g; Rest einfrieren oder für Weg B/C"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Trockenwaren",
+            "items": [
+              {
+                "ingredient": "weizenvollkornmehl",
+                "name": "Weizenvollkornmehl, fein",
+                "need": {
+                  "text": "600 g",
+                  "value": 600.0,
+                  "max": 600.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "600 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 kg"
+                },
+                "note": "Bedarf 600 g; Roggen-Variante 510 g"
+              },
+              {
+                "ingredient": "honig",
+                "name": "Honig",
+                "need": {
+                  "text": "12 g",
+                  "value": 12.0,
+                  "max": 12.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "12 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Glas"
+                },
+                "note": "Bedarf 12 g"
+              },
+              {
+                "ingredient": "sonnenblumenkerne",
+                "name": "Sonnenblumenkerne zum Wälzen",
+                "need": {
+                  "text": "60 g",
+                  "value": 60.0,
+                  "max": 60.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "60 g",
+                "inStock": false,
+                "buy": {
+                  "text": "100 g"
+                },
+                "note": "Bedarf \\~60 g; Alternativen: Haferflocken, Sesam, Mohn, Dinkelflocken"
+              }
+            ]
+          },
+          {
+            "store": "Vorrat",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "salz",
+                "name": "Salz, fein",
+                "need": {
+                  "text": "13 g",
+                  "value": 13.0,
+                  "max": 13.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "13 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "Bedarf 13 g"
+              },
+              {
+                "ingredient": "butter",
+                "name": "Butter",
+                "need": {
+                  "text": "18 g",
+                  "value": 18.0,
+                  "max": 18.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "18 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "Bedarf 18 g"
+              },
+              {
+                "ingredient": "wasser",
+                "name": "Wasser",
+                "need": {
+                  "text": "530 g (+ ml ungemischt)",
+                  "value": 530.0,
+                  "max": 530.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "530 g",
+                "inStock": false,
+                "pantry": true
+              }
+            ]
+          },
+          {
+            "store": "Drogerie",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "flohsamenschalen",
+                "name": "Flohsamenschalen",
+                "need": {
+                  "text": "6 g",
+                  "value": 6.0,
+                  "max": 6.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "6 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Packung"
+                },
+                "note": "Bedarf 6 g"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mehl=weizen,weg=kombi",
+        "select": {
+          "mehl": "weizen",
+          "weg": "kombi"
+        },
+        "quantities": [
+          {
+            "ingredient": "weizenvollkornmehl",
+            "total": {
+              "text": "600 g",
+              "value": 600.0,
+              "max": 600.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "150 g Weizenvollkornmehl + 60 g Weizenvollkornmehl",
+              "backtag-teig-3-std-davon-30-min-arbeit": "390 g Weizenvollkornmehl"
+            }
+          },
+          {
+            "ingredient": "honig",
+            "total": {
+              "text": "12 g",
+              "value": 12.0,
+              "max": 12.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "12 g Honig"
+            }
+          },
+          {
+            "ingredient": "sonnenblumenkerne",
+            "total": {
+              "text": "60 g",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Sonnenblumenkerne"
+            }
+          },
+          {
+            "ingredient": "frischhefe",
+            "total": {
+              "text": "9,2 g",
+              "value": 9.2,
+              "max": 9.2,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "0,2 g Frischhefe",
+              "backtag-teig-3-std-davon-30-min-arbeit": "9 g"
+            }
+          },
+          {
+            "ingredient": "flohsamenschalen",
+            "total": {
+              "text": "6 g",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "6 g Flohsamenschalen"
+            }
+          },
+          {
+            "ingredient": "backmalz",
+            "total": {
+              "text": "6 g",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "6 g Backmalz"
+            }
+          },
+          {
+            "ingredient": "salz",
+            "total": {
+              "text": "13 g",
+              "value": 13.0,
+              "max": 13.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "13 g Salz"
+            }
+          },
+          {
+            "ingredient": "butter",
+            "total": {
+              "text": "18 g",
+              "value": 18.0,
+              "max": 18.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "18 g weiche Butter"
+            }
+          },
+          {
+            "ingredient": "wasser",
+            "total": {
+              "text": "530 g (+ ml ungemischt)",
+              "value": 530.0,
+              "max": 530.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "150 g Wasser + 240 g Wasser",
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 80 g Wasser"
+            },
+            "unitMixed": true
+          }
+        ],
+        "shopping": [
+          {
+            "store": "Online",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "backmalz",
+                "name": "Backmalz, inaktiv",
+                "need": {
+                  "text": "6 g",
+                  "value": 6.0,
+                  "max": 6.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "6 g",
+                "inStock": false,
+                "optional": true,
+                "note": "Gerstenmalzmehl; Bedarf 6 g"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Milchprodukte & Eier",
+            "items": [
+              {
+                "ingredient": "frischhefe",
+                "name": "Frischhefe",
+                "need": {
+                  "text": "9,2 g",
+                  "value": 9.2,
+                  "max": 9.2,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "9,2 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Würfel"
+                },
+                "note": "42 g; Bedarf 12,2 g; Rest einfrieren oder für Weg B/C"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Trockenwaren",
+            "items": [
+              {
+                "ingredient": "weizenvollkornmehl",
+                "name": "Weizenvollkornmehl, fein",
+                "need": {
+                  "text": "600 g",
+                  "value": 600.0,
+                  "max": 600.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "600 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 kg"
+                },
+                "note": "Bedarf 600 g; Roggen-Variante 510 g"
+              },
+              {
+                "ingredient": "honig",
+                "name": "Honig",
+                "need": {
+                  "text": "12 g",
+                  "value": 12.0,
+                  "max": 12.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "12 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Glas"
+                },
+                "note": "Bedarf 12 g"
+              },
+              {
+                "ingredient": "sonnenblumenkerne",
+                "name": "Sonnenblumenkerne zum Wälzen",
+                "need": {
+                  "text": "60 g",
+                  "value": 60.0,
+                  "max": 60.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "60 g",
+                "inStock": false,
+                "buy": {
+                  "text": "100 g"
+                },
+                "note": "Bedarf \\~60 g; Alternativen: Haferflocken, Sesam, Mohn, Dinkelflocken"
+              }
+            ]
+          },
+          {
+            "store": "Vorrat",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "salz",
+                "name": "Salz, fein",
+                "need": {
+                  "text": "13 g",
+                  "value": 13.0,
+                  "max": 13.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "13 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "Bedarf 13 g"
+              },
+              {
+                "ingredient": "butter",
+                "name": "Butter",
+                "need": {
+                  "text": "18 g",
+                  "value": 18.0,
+                  "max": 18.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "18 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "Bedarf 18 g"
+              },
+              {
+                "ingredient": "wasser",
+                "name": "Wasser",
+                "need": {
+                  "text": "530 g (+ ml ungemischt)",
+                  "value": 530.0,
+                  "max": 530.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "530 g",
+                "inStock": false,
+                "pantry": true
+              }
+            ]
+          },
+          {
+            "store": "Drogerie",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "flohsamenschalen",
+                "name": "Flohsamenschalen",
+                "need": {
+                  "text": "6 g",
+                  "value": 6.0,
+                  "max": 6.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "6 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Packung"
+                },
+                "note": "Bedarf 6 g"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mehl=weizen-roggen,weg=einfrieren",
+        "select": {
+          "mehl": "weizen-roggen",
+          "weg": "einfrieren"
+        },
+        "quantities": [
+          {
+            "ingredient": "weizenvollkornmehl",
+            "total": {
+              "text": "510 g",
+              "value": 510.0,
+              "max": 510.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "150 g Weizenvollkornmehl + 60 g Weizenvollkornmehl",
+              "backtag-teig-3-std-davon-30-min-arbeit": "300 g Weizenvollkornmehl"
+            }
+          },
+          {
+            "ingredient": "roggenvollkornmehl",
+            "total": {
+              "text": "90 g",
+              "value": 90.0,
+              "max": 90.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "90 g Roggenvollkornmehl"
+            }
+          },
+          {
+            "ingredient": "honig",
+            "total": {
+              "text": "12 g",
+              "value": 12.0,
+              "max": 12.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "12 g Honig"
+            }
+          },
+          {
+            "ingredient": "sonnenblumenkerne",
+            "total": {
+              "text": "60 g",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Sonnenblumenkerne"
+            }
+          },
+          {
+            "ingredient": "frischhefe",
+            "total": {
+              "text": "12,2 g",
+              "value": 12.2,
+              "max": 12.2,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "0,2 g Frischhefe",
+              "backtag-teig-3-std-davon-30-min-arbeit": "12 g Frischhefe"
+            }
+          },
+          {
+            "ingredient": "flohsamenschalen",
+            "total": {
+              "text": "6 g",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "6 g Flohsamenschalen"
+            }
+          },
+          {
+            "ingredient": "backmalz",
+            "total": {
+              "text": "6 g",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "6 g Backmalz"
+            }
+          },
+          {
+            "ingredient": "brotgewuerz",
+            "total": {
+              "text": "4–6 g",
+              "value": 4.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "4–6 g Brotgewürz"
+            }
+          },
+          {
+            "ingredient": "salz",
+            "total": {
+              "text": "13 g",
+              "value": 13.0,
+              "max": 13.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "13 g Salz"
+            }
+          },
+          {
+            "ingredient": "butter",
+            "total": {
+              "text": "18 g",
+              "value": 18.0,
+              "max": 18.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "18 g weiche Butter"
+            }
+          },
+          {
+            "ingredient": "wasser",
+            "total": {
+              "text": "540 g (+ ml ungemischt)",
+              "value": 540.0,
+              "max": 540.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "150 g Wasser + 240 g Wasser",
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 90 g"
+            },
+            "unitMixed": true
+          }
+        ],
+        "shopping": [
+          {
+            "store": "Online",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "backmalz",
+                "name": "Backmalz, inaktiv",
+                "need": {
+                  "text": "6 g",
+                  "value": 6.0,
+                  "max": 6.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "6 g",
+                "inStock": false,
+                "optional": true,
+                "note": "Gerstenmalzmehl; Bedarf 6 g"
+              },
+              {
+                "ingredient": "brotgewuerz",
+                "name": "Brotgewürz, gemahlen",
+                "need": {
+                  "text": "4–6 g",
+                  "value": 4.0,
+                  "max": 6.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "4–6 g",
+                "inStock": false,
+                "optional": true,
+                "note": "Kümmel, Fenchel, Koriander, Anis; Bedarf 4–6 g — passt zur Roggen-Variante"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Milchprodukte & Eier",
+            "items": [
+              {
+                "ingredient": "frischhefe",
+                "name": "Frischhefe",
+                "need": {
+                  "text": "12,2 g",
+                  "value": 12.2,
+                  "max": 12.2,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "12,2 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Würfel"
+                },
+                "note": "42 g; Bedarf 12,2 g; Rest einfrieren oder für Weg B/C"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Trockenwaren",
+            "items": [
+              {
+                "ingredient": "weizenvollkornmehl",
+                "name": "Weizenvollkornmehl, fein",
+                "need": {
+                  "text": "510 g",
+                  "value": 510.0,
+                  "max": 510.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "510 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 kg"
+                },
+                "note": "Bedarf 600 g; Roggen-Variante 510 g"
+              },
+              {
+                "ingredient": "roggenvollkornmehl",
+                "name": "Roggenvollkornmehl",
+                "need": {
+                  "text": "90 g",
+                  "value": 90.0,
+                  "max": 90.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "90 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Packung"
+                },
+                "note": "Bedarf 90 g"
+              },
+              {
+                "ingredient": "honig",
+                "name": "Honig",
+                "need": {
+                  "text": "12 g",
+                  "value": 12.0,
+                  "max": 12.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "12 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Glas"
+                },
+                "note": "Bedarf 12 g"
+              },
+              {
+                "ingredient": "sonnenblumenkerne",
+                "name": "Sonnenblumenkerne zum Wälzen",
+                "need": {
+                  "text": "60 g",
+                  "value": 60.0,
+                  "max": 60.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "60 g",
+                "inStock": false,
+                "buy": {
+                  "text": "100 g"
+                },
+                "note": "Bedarf \\~60 g; Alternativen: Haferflocken, Sesam, Mohn, Dinkelflocken"
+              }
+            ]
+          },
+          {
+            "store": "Vorrat",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "salz",
+                "name": "Salz, fein",
+                "need": {
+                  "text": "13 g",
+                  "value": 13.0,
+                  "max": 13.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "13 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "Bedarf 13 g"
+              },
+              {
+                "ingredient": "butter",
+                "name": "Butter",
+                "need": {
+                  "text": "18 g",
+                  "value": 18.0,
+                  "max": 18.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "18 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "Bedarf 18 g"
+              },
+              {
+                "ingredient": "wasser",
+                "name": "Wasser",
+                "need": {
+                  "text": "540 g (+ ml ungemischt)",
+                  "value": 540.0,
+                  "max": 540.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "540 g",
+                "inStock": false,
+                "pantry": true
+              }
+            ]
+          },
+          {
+            "store": "Drogerie",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "flohsamenschalen",
+                "name": "Flohsamenschalen",
+                "need": {
+                  "text": "6 g",
+                  "value": 6.0,
+                  "max": 6.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "6 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Packung"
+                },
+                "note": "Bedarf 6 g"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mehl=weizen-roggen,weg=direkt-backen",
+        "select": {
+          "mehl": "weizen-roggen",
+          "weg": "direkt-backen"
+        },
+        "quantities": [
+          {
+            "ingredient": "weizenvollkornmehl",
+            "total": {
+              "text": "510 g",
+              "value": 510.0,
+              "max": 510.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "150 g Weizenvollkornmehl + 60 g Weizenvollkornmehl",
+              "backtag-teig-3-std-davon-30-min-arbeit": "300 g Weizenvollkornmehl"
+            }
+          },
+          {
+            "ingredient": "roggenvollkornmehl",
+            "total": {
+              "text": "90 g",
+              "value": 90.0,
+              "max": 90.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "90 g Roggenvollkornmehl"
+            }
+          },
+          {
+            "ingredient": "honig",
+            "total": {
+              "text": "12 g",
+              "value": 12.0,
+              "max": 12.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "12 g Honig"
+            }
+          },
+          {
+            "ingredient": "sonnenblumenkerne",
+            "total": {
+              "text": "60 g",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Sonnenblumenkerne"
+            }
+          },
+          {
+            "ingredient": "frischhefe",
+            "total": {
+              "text": "6,2 g",
+              "value": 6.2,
+              "max": 6.2,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "0,2 g Frischhefe",
+              "backtag-teig-3-std-davon-30-min-arbeit": "6 g"
+            }
+          },
+          {
+            "ingredient": "flohsamenschalen",
+            "total": {
+              "text": "6 g",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "6 g Flohsamenschalen"
+            }
+          },
+          {
+            "ingredient": "backmalz",
+            "total": {
+              "text": "6 g",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "6 g Backmalz"
+            }
+          },
+          {
+            "ingredient": "brotgewuerz",
+            "total": {
+              "text": "4–6 g",
+              "value": 4.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "4–6 g Brotgewürz"
+            }
+          },
+          {
+            "ingredient": "salz",
+            "total": {
+              "text": "13 g",
+              "value": 13.0,
+              "max": 13.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "13 g Salz"
+            }
+          },
+          {
+            "ingredient": "butter",
+            "total": {
+              "text": "18 g",
+              "value": 18.0,
+              "max": 18.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "18 g weiche Butter"
+            }
+          },
+          {
+            "ingredient": "wasser",
+            "total": {
+              "text": "540 g (+ ml ungemischt)",
+              "value": 540.0,
+              "max": 540.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "150 g Wasser + 240 g Wasser",
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 90 g"
+            },
+            "unitMixed": true
+          }
+        ],
+        "shopping": [
+          {
+            "store": "Online",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "backmalz",
+                "name": "Backmalz, inaktiv",
+                "need": {
+                  "text": "6 g",
+                  "value": 6.0,
+                  "max": 6.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "6 g",
+                "inStock": false,
+                "optional": true,
+                "note": "Gerstenmalzmehl; Bedarf 6 g"
+              },
+              {
+                "ingredient": "brotgewuerz",
+                "name": "Brotgewürz, gemahlen",
+                "need": {
+                  "text": "4–6 g",
+                  "value": 4.0,
+                  "max": 6.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "4–6 g",
+                "inStock": false,
+                "optional": true,
+                "note": "Kümmel, Fenchel, Koriander, Anis; Bedarf 4–6 g — passt zur Roggen-Variante"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Milchprodukte & Eier",
+            "items": [
+              {
+                "ingredient": "frischhefe",
+                "name": "Frischhefe",
+                "need": {
+                  "text": "6,2 g",
+                  "value": 6.2,
+                  "max": 6.2,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "6,2 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Würfel"
+                },
+                "note": "42 g; Bedarf 12,2 g; Rest einfrieren oder für Weg B/C"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Trockenwaren",
+            "items": [
+              {
+                "ingredient": "weizenvollkornmehl",
+                "name": "Weizenvollkornmehl, fein",
+                "need": {
+                  "text": "510 g",
+                  "value": 510.0,
+                  "max": 510.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "510 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 kg"
+                },
+                "note": "Bedarf 600 g; Roggen-Variante 510 g"
+              },
+              {
+                "ingredient": "roggenvollkornmehl",
+                "name": "Roggenvollkornmehl",
+                "need": {
+                  "text": "90 g",
+                  "value": 90.0,
+                  "max": 90.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "90 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Packung"
+                },
+                "note": "Bedarf 90 g"
+              },
+              {
+                "ingredient": "honig",
+                "name": "Honig",
+                "need": {
+                  "text": "12 g",
+                  "value": 12.0,
+                  "max": 12.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "12 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Glas"
+                },
+                "note": "Bedarf 12 g"
+              },
+              {
+                "ingredient": "sonnenblumenkerne",
+                "name": "Sonnenblumenkerne zum Wälzen",
+                "need": {
+                  "text": "60 g",
+                  "value": 60.0,
+                  "max": 60.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "60 g",
+                "inStock": false,
+                "buy": {
+                  "text": "100 g"
+                },
+                "note": "Bedarf \\~60 g; Alternativen: Haferflocken, Sesam, Mohn, Dinkelflocken"
+              }
+            ]
+          },
+          {
+            "store": "Vorrat",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "salz",
+                "name": "Salz, fein",
+                "need": {
+                  "text": "13 g",
+                  "value": 13.0,
+                  "max": 13.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "13 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "Bedarf 13 g"
+              },
+              {
+                "ingredient": "butter",
+                "name": "Butter",
+                "need": {
+                  "text": "18 g",
+                  "value": 18.0,
+                  "max": 18.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "18 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "Bedarf 18 g"
+              },
+              {
+                "ingredient": "wasser",
+                "name": "Wasser",
+                "need": {
+                  "text": "540 g (+ ml ungemischt)",
+                  "value": 540.0,
+                  "max": 540.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "540 g",
+                "inStock": false,
+                "pantry": true
+              }
+            ]
+          },
+          {
+            "store": "Drogerie",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "flohsamenschalen",
+                "name": "Flohsamenschalen",
+                "need": {
+                  "text": "6 g",
+                  "value": 6.0,
+                  "max": 6.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "6 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Packung"
+                },
+                "note": "Bedarf 6 g"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mehl=weizen-roggen,weg=kombi",
+        "select": {
+          "mehl": "weizen-roggen",
+          "weg": "kombi"
+        },
+        "quantities": [
+          {
+            "ingredient": "weizenvollkornmehl",
+            "total": {
+              "text": "510 g",
+              "value": 510.0,
+              "max": 510.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "150 g Weizenvollkornmehl + 60 g Weizenvollkornmehl",
+              "backtag-teig-3-std-davon-30-min-arbeit": "300 g Weizenvollkornmehl"
+            }
+          },
+          {
+            "ingredient": "roggenvollkornmehl",
+            "total": {
+              "text": "90 g",
+              "value": 90.0,
+              "max": 90.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "90 g Roggenvollkornmehl"
+            }
+          },
+          {
+            "ingredient": "honig",
+            "total": {
+              "text": "12 g",
+              "value": 12.0,
+              "max": 12.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "12 g Honig"
+            }
+          },
+          {
+            "ingredient": "sonnenblumenkerne",
+            "total": {
+              "text": "60 g",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Sonnenblumenkerne"
+            }
+          },
+          {
+            "ingredient": "frischhefe",
+            "total": {
+              "text": "9,2 g",
+              "value": 9.2,
+              "max": 9.2,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "0,2 g Frischhefe",
+              "backtag-teig-3-std-davon-30-min-arbeit": "9 g"
+            }
+          },
+          {
+            "ingredient": "flohsamenschalen",
+            "total": {
+              "text": "6 g",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "6 g Flohsamenschalen"
+            }
+          },
+          {
+            "ingredient": "backmalz",
+            "total": {
+              "text": "6 g",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "6 g Backmalz"
+            }
+          },
+          {
+            "ingredient": "brotgewuerz",
+            "total": {
+              "text": "4–6 g",
+              "value": 4.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "4–6 g Brotgewürz"
+            }
+          },
+          {
+            "ingredient": "salz",
+            "total": {
+              "text": "13 g",
+              "value": 13.0,
+              "max": 13.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "13 g Salz"
+            }
+          },
+          {
+            "ingredient": "butter",
+            "total": {
+              "text": "18 g",
+              "value": 18.0,
+              "max": 18.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "18 g weiche Butter"
+            }
+          },
+          {
+            "ingredient": "wasser",
+            "total": {
+              "text": "540 g (+ ml ungemischt)",
+              "value": 540.0,
+              "max": 540.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "150 g Wasser + 240 g Wasser",
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 90 g"
+            },
+            "unitMixed": true
+          }
+        ],
+        "shopping": [
+          {
+            "store": "Online",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "backmalz",
+                "name": "Backmalz, inaktiv",
+                "need": {
+                  "text": "6 g",
+                  "value": 6.0,
+                  "max": 6.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "6 g",
+                "inStock": false,
+                "optional": true,
+                "note": "Gerstenmalzmehl; Bedarf 6 g"
+              },
+              {
+                "ingredient": "brotgewuerz",
+                "name": "Brotgewürz, gemahlen",
+                "need": {
+                  "text": "4–6 g",
+                  "value": 4.0,
+                  "max": 6.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "4–6 g",
+                "inStock": false,
+                "optional": true,
+                "note": "Kümmel, Fenchel, Koriander, Anis; Bedarf 4–6 g — passt zur Roggen-Variante"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Milchprodukte & Eier",
+            "items": [
+              {
+                "ingredient": "frischhefe",
+                "name": "Frischhefe",
+                "need": {
+                  "text": "9,2 g",
+                  "value": 9.2,
+                  "max": 9.2,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "9,2 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Würfel"
+                },
+                "note": "42 g; Bedarf 12,2 g; Rest einfrieren oder für Weg B/C"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Trockenwaren",
+            "items": [
+              {
+                "ingredient": "weizenvollkornmehl",
+                "name": "Weizenvollkornmehl, fein",
+                "need": {
+                  "text": "510 g",
+                  "value": 510.0,
+                  "max": 510.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "510 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 kg"
+                },
+                "note": "Bedarf 600 g; Roggen-Variante 510 g"
+              },
+              {
+                "ingredient": "roggenvollkornmehl",
+                "name": "Roggenvollkornmehl",
+                "need": {
+                  "text": "90 g",
+                  "value": 90.0,
+                  "max": 90.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "90 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Packung"
+                },
+                "note": "Bedarf 90 g"
+              },
+              {
+                "ingredient": "honig",
+                "name": "Honig",
+                "need": {
+                  "text": "12 g",
+                  "value": 12.0,
+                  "max": 12.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "12 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Glas"
+                },
+                "note": "Bedarf 12 g"
+              },
+              {
+                "ingredient": "sonnenblumenkerne",
+                "name": "Sonnenblumenkerne zum Wälzen",
+                "need": {
+                  "text": "60 g",
+                  "value": 60.0,
+                  "max": 60.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "60 g",
+                "inStock": false,
+                "buy": {
+                  "text": "100 g"
+                },
+                "note": "Bedarf \\~60 g; Alternativen: Haferflocken, Sesam, Mohn, Dinkelflocken"
+              }
+            ]
+          },
+          {
+            "store": "Vorrat",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "salz",
+                "name": "Salz, fein",
+                "need": {
+                  "text": "13 g",
+                  "value": 13.0,
+                  "max": 13.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "13 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "Bedarf 13 g"
+              },
+              {
+                "ingredient": "butter",
+                "name": "Butter",
+                "need": {
+                  "text": "18 g",
+                  "value": 18.0,
+                  "max": 18.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "18 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "Bedarf 18 g"
+              },
+              {
+                "ingredient": "wasser",
+                "name": "Wasser",
+                "need": {
+                  "text": "540 g (+ ml ungemischt)",
+                  "value": 540.0,
+                  "max": 540.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "540 g",
+                "inStock": false,
+                "pantry": true
+              }
+            ]
+          },
+          {
+            "store": "Drogerie",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "flohsamenschalen",
+                "name": "Flohsamenschalen",
+                "need": {
+                  "text": "6 g",
+                  "value": 6.0,
+                  "max": 6.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "6 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Packung"
+                },
+                "note": "Bedarf 6 g"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mehl=dinkel,weg=einfrieren",
+        "select": {
+          "mehl": "dinkel",
+          "weg": "einfrieren"
+        },
+        "quantities": [
+          {
+            "ingredient": "dinkelvollkornmehl",
+            "total": {
+              "text": "600 g",
+              "value": 600.0,
+              "max": 600.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "150 g Dinkelvollkornmehl + 60 g Dinkelvollkornmehl",
+              "backtag-teig-3-std-davon-30-min-arbeit": "390 g Dinkelvollkornmehl"
+            }
+          },
+          {
+            "ingredient": "honig",
+            "total": {
+              "text": "12 g",
+              "value": 12.0,
+              "max": 12.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "12 g Honig"
+            }
+          },
+          {
+            "ingredient": "sonnenblumenkerne",
+            "total": {
+              "text": "60 g",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Sonnenblumenkerne"
+            }
+          },
+          {
+            "ingredient": "frischhefe",
+            "total": {
+              "text": "12,2 g",
+              "value": 12.2,
+              "max": 12.2,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "0,2 g Frischhefe",
+              "backtag-teig-3-std-davon-30-min-arbeit": "12 g Frischhefe"
+            }
+          },
+          {
+            "ingredient": "flohsamenschalen",
+            "total": {
+              "text": "6 g",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "6 g Flohsamenschalen"
+            }
+          },
+          {
+            "ingredient": "backmalz",
+            "total": {
+              "text": "6 g",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "6 g Backmalz"
+            }
+          },
+          {
+            "ingredient": "salz",
+            "total": {
+              "text": "13 g",
+              "value": 13.0,
+              "max": 13.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "13 g Salz"
+            }
+          },
+          {
+            "ingredient": "butter",
+            "total": {
+              "text": "18 g",
+              "value": 18.0,
+              "max": 18.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "18 g weiche Butter"
+            }
+          },
+          {
+            "ingredient": "wasser",
+            "total": {
+              "text": "490 g (+ ml ungemischt)",
+              "value": 490.0,
+              "max": 490.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "150 g Wasser + 240 g Wasser",
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 40 g"
+            },
+            "unitMixed": true
+          }
+        ],
+        "shopping": [
+          {
+            "store": "Online",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "backmalz",
+                "name": "Backmalz, inaktiv",
+                "need": {
+                  "text": "6 g",
+                  "value": 6.0,
+                  "max": 6.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "6 g",
+                "inStock": false,
+                "optional": true,
+                "note": "Gerstenmalzmehl; Bedarf 6 g"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Milchprodukte & Eier",
+            "items": [
+              {
+                "ingredient": "frischhefe",
+                "name": "Frischhefe",
+                "need": {
+                  "text": "12,2 g",
+                  "value": 12.2,
+                  "max": 12.2,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "12,2 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Würfel"
+                },
+                "note": "42 g; Bedarf 12,2 g; Rest einfrieren oder für Weg B/C"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Trockenwaren",
+            "items": [
+              {
+                "ingredient": "dinkelvollkornmehl",
+                "name": "Dinkelvollkornmehl, fein",
+                "need": {
+                  "text": "600 g",
+                  "value": 600.0,
+                  "max": 600.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "600 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 kg"
+                },
+                "note": "Bedarf 600 g, statt Weizen"
+              },
+              {
+                "ingredient": "honig",
+                "name": "Honig",
+                "need": {
+                  "text": "12 g",
+                  "value": 12.0,
+                  "max": 12.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "12 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Glas"
+                },
+                "note": "Bedarf 12 g"
+              },
+              {
+                "ingredient": "sonnenblumenkerne",
+                "name": "Sonnenblumenkerne zum Wälzen",
+                "need": {
+                  "text": "60 g",
+                  "value": 60.0,
+                  "max": 60.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "60 g",
+                "inStock": false,
+                "buy": {
+                  "text": "100 g"
+                },
+                "note": "Bedarf \\~60 g; Alternativen: Haferflocken, Sesam, Mohn, Dinkelflocken"
+              }
+            ]
+          },
+          {
+            "store": "Vorrat",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "salz",
+                "name": "Salz, fein",
+                "need": {
+                  "text": "13 g",
+                  "value": 13.0,
+                  "max": 13.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "13 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "Bedarf 13 g"
+              },
+              {
+                "ingredient": "butter",
+                "name": "Butter",
+                "need": {
+                  "text": "18 g",
+                  "value": 18.0,
+                  "max": 18.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "18 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "Bedarf 18 g"
+              },
+              {
+                "ingredient": "wasser",
+                "name": "Wasser",
+                "need": {
+                  "text": "490 g (+ ml ungemischt)",
+                  "value": 490.0,
+                  "max": 490.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "490 g",
+                "inStock": false,
+                "pantry": true
+              }
+            ]
+          },
+          {
+            "store": "Drogerie",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "flohsamenschalen",
+                "name": "Flohsamenschalen",
+                "need": {
+                  "text": "6 g",
+                  "value": 6.0,
+                  "max": 6.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "6 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Packung"
+                },
+                "note": "Bedarf 6 g"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mehl=dinkel,weg=direkt-backen",
+        "select": {
+          "mehl": "dinkel",
+          "weg": "direkt-backen"
+        },
+        "quantities": [
+          {
+            "ingredient": "dinkelvollkornmehl",
+            "total": {
+              "text": "600 g",
+              "value": 600.0,
+              "max": 600.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "150 g Dinkelvollkornmehl + 60 g Dinkelvollkornmehl",
+              "backtag-teig-3-std-davon-30-min-arbeit": "390 g Dinkelvollkornmehl"
+            }
+          },
+          {
+            "ingredient": "honig",
+            "total": {
+              "text": "12 g",
+              "value": 12.0,
+              "max": 12.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "12 g Honig"
+            }
+          },
+          {
+            "ingredient": "sonnenblumenkerne",
+            "total": {
+              "text": "60 g",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Sonnenblumenkerne"
+            }
+          },
+          {
+            "ingredient": "frischhefe",
+            "total": {
+              "text": "6,2 g",
+              "value": 6.2,
+              "max": 6.2,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "0,2 g Frischhefe",
+              "backtag-teig-3-std-davon-30-min-arbeit": "6 g"
+            }
+          },
+          {
+            "ingredient": "flohsamenschalen",
+            "total": {
+              "text": "6 g",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "6 g Flohsamenschalen"
+            }
+          },
+          {
+            "ingredient": "backmalz",
+            "total": {
+              "text": "6 g",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "6 g Backmalz"
+            }
+          },
+          {
+            "ingredient": "salz",
+            "total": {
+              "text": "13 g",
+              "value": 13.0,
+              "max": 13.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "13 g Salz"
+            }
+          },
+          {
+            "ingredient": "butter",
+            "total": {
+              "text": "18 g",
+              "value": 18.0,
+              "max": 18.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "18 g weiche Butter"
+            }
+          },
+          {
+            "ingredient": "wasser",
+            "total": {
+              "text": "490 g (+ ml ungemischt)",
+              "value": 490.0,
+              "max": 490.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "150 g Wasser + 240 g Wasser",
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 40 g"
+            },
+            "unitMixed": true
+          }
+        ],
+        "shopping": [
+          {
+            "store": "Online",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "backmalz",
+                "name": "Backmalz, inaktiv",
+                "need": {
+                  "text": "6 g",
+                  "value": 6.0,
+                  "max": 6.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "6 g",
+                "inStock": false,
+                "optional": true,
+                "note": "Gerstenmalzmehl; Bedarf 6 g"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Milchprodukte & Eier",
+            "items": [
+              {
+                "ingredient": "frischhefe",
+                "name": "Frischhefe",
+                "need": {
+                  "text": "6,2 g",
+                  "value": 6.2,
+                  "max": 6.2,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "6,2 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Würfel"
+                },
+                "note": "42 g; Bedarf 12,2 g; Rest einfrieren oder für Weg B/C"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Trockenwaren",
+            "items": [
+              {
+                "ingredient": "dinkelvollkornmehl",
+                "name": "Dinkelvollkornmehl, fein",
+                "need": {
+                  "text": "600 g",
+                  "value": 600.0,
+                  "max": 600.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "600 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 kg"
+                },
+                "note": "Bedarf 600 g, statt Weizen"
+              },
+              {
+                "ingredient": "honig",
+                "name": "Honig",
+                "need": {
+                  "text": "12 g",
+                  "value": 12.0,
+                  "max": 12.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "12 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Glas"
+                },
+                "note": "Bedarf 12 g"
+              },
+              {
+                "ingredient": "sonnenblumenkerne",
+                "name": "Sonnenblumenkerne zum Wälzen",
+                "need": {
+                  "text": "60 g",
+                  "value": 60.0,
+                  "max": 60.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "60 g",
+                "inStock": false,
+                "buy": {
+                  "text": "100 g"
+                },
+                "note": "Bedarf \\~60 g; Alternativen: Haferflocken, Sesam, Mohn, Dinkelflocken"
+              }
+            ]
+          },
+          {
+            "store": "Vorrat",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "salz",
+                "name": "Salz, fein",
+                "need": {
+                  "text": "13 g",
+                  "value": 13.0,
+                  "max": 13.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "13 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "Bedarf 13 g"
+              },
+              {
+                "ingredient": "butter",
+                "name": "Butter",
+                "need": {
+                  "text": "18 g",
+                  "value": 18.0,
+                  "max": 18.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "18 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "Bedarf 18 g"
+              },
+              {
+                "ingredient": "wasser",
+                "name": "Wasser",
+                "need": {
+                  "text": "490 g (+ ml ungemischt)",
+                  "value": 490.0,
+                  "max": 490.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "490 g",
+                "inStock": false,
+                "pantry": true
+              }
+            ]
+          },
+          {
+            "store": "Drogerie",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "flohsamenschalen",
+                "name": "Flohsamenschalen",
+                "need": {
+                  "text": "6 g",
+                  "value": 6.0,
+                  "max": 6.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "6 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Packung"
+                },
+                "note": "Bedarf 6 g"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mehl=dinkel,weg=kombi",
+        "select": {
+          "mehl": "dinkel",
+          "weg": "kombi"
+        },
+        "quantities": [
+          {
+            "ingredient": "dinkelvollkornmehl",
+            "total": {
+              "text": "600 g",
+              "value": 600.0,
+              "max": 600.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "150 g Dinkelvollkornmehl + 60 g Dinkelvollkornmehl",
+              "backtag-teig-3-std-davon-30-min-arbeit": "390 g Dinkelvollkornmehl"
+            }
+          },
+          {
+            "ingredient": "honig",
+            "total": {
+              "text": "12 g",
+              "value": 12.0,
+              "max": 12.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "12 g Honig"
+            }
+          },
+          {
+            "ingredient": "sonnenblumenkerne",
+            "total": {
+              "text": "60 g",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Sonnenblumenkerne"
+            }
+          },
+          {
+            "ingredient": "frischhefe",
+            "total": {
+              "text": "9,2 g",
+              "value": 9.2,
+              "max": 9.2,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "0,2 g Frischhefe",
+              "backtag-teig-3-std-davon-30-min-arbeit": "9 g"
+            }
+          },
+          {
+            "ingredient": "flohsamenschalen",
+            "total": {
+              "text": "6 g",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "6 g Flohsamenschalen"
+            }
+          },
+          {
+            "ingredient": "backmalz",
+            "total": {
+              "text": "6 g",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "6 g Backmalz"
+            }
+          },
+          {
+            "ingredient": "salz",
+            "total": {
+              "text": "13 g",
+              "value": 13.0,
+              "max": 13.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "13 g Salz"
+            }
+          },
+          {
+            "ingredient": "butter",
+            "total": {
+              "text": "18 g",
+              "value": 18.0,
+              "max": 18.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "backtag-teig-3-std-davon-30-min-arbeit": "18 g weiche Butter"
+            }
+          },
+          {
+            "ingredient": "wasser",
+            "total": {
+              "text": "490 g (+ ml ungemischt)",
+              "value": 490.0,
+              "max": 490.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "vorabend-20-min": "150 g Wasser + 240 g Wasser",
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 40 g"
+            },
+            "unitMixed": true
+          }
+        ],
+        "shopping": [
+          {
+            "store": "Online",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "backmalz",
+                "name": "Backmalz, inaktiv",
+                "need": {
+                  "text": "6 g",
+                  "value": 6.0,
+                  "max": 6.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "6 g",
+                "inStock": false,
+                "optional": true,
+                "note": "Gerstenmalzmehl; Bedarf 6 g"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Milchprodukte & Eier",
+            "items": [
+              {
+                "ingredient": "frischhefe",
+                "name": "Frischhefe",
+                "need": {
+                  "text": "9,2 g",
+                  "value": 9.2,
+                  "max": 9.2,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "9,2 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Würfel"
+                },
+                "note": "42 g; Bedarf 12,2 g; Rest einfrieren oder für Weg B/C"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Trockenwaren",
+            "items": [
+              {
+                "ingredient": "dinkelvollkornmehl",
+                "name": "Dinkelvollkornmehl, fein",
+                "need": {
+                  "text": "600 g",
+                  "value": 600.0,
+                  "max": 600.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "600 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 kg"
+                },
+                "note": "Bedarf 600 g, statt Weizen"
+              },
+              {
+                "ingredient": "honig",
+                "name": "Honig",
+                "need": {
+                  "text": "12 g",
+                  "value": 12.0,
+                  "max": 12.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "12 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Glas"
+                },
+                "note": "Bedarf 12 g"
+              },
+              {
+                "ingredient": "sonnenblumenkerne",
+                "name": "Sonnenblumenkerne zum Wälzen",
+                "need": {
+                  "text": "60 g",
+                  "value": 60.0,
+                  "max": 60.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "60 g",
+                "inStock": false,
+                "buy": {
+                  "text": "100 g"
+                },
+                "note": "Bedarf \\~60 g; Alternativen: Haferflocken, Sesam, Mohn, Dinkelflocken"
+              }
+            ]
+          },
+          {
+            "store": "Vorrat",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "salz",
+                "name": "Salz, fein",
+                "need": {
+                  "text": "13 g",
+                  "value": 13.0,
+                  "max": 13.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "13 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "Bedarf 13 g"
+              },
+              {
+                "ingredient": "butter",
+                "name": "Butter",
+                "need": {
+                  "text": "18 g",
+                  "value": 18.0,
+                  "max": 18.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "18 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "Bedarf 18 g"
+              },
+              {
+                "ingredient": "wasser",
+                "name": "Wasser",
+                "need": {
+                  "text": "490 g (+ ml ungemischt)",
+                  "value": 490.0,
+                  "max": 490.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "490 g",
+                "inStock": false,
+                "pantry": true
+              }
+            ]
+          },
+          {
+            "store": "Drogerie",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "flohsamenschalen",
+                "name": "Flohsamenschalen",
+                "need": {
+                  "text": "6 g",
+                  "value": 6.0,
+                  "max": 6.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "6 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Packung"
+                },
+                "note": "Bedarf 6 g"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
