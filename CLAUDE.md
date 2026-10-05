@@ -210,9 +210,9 @@ schreiben (rendert als normales `~`). Tabellenzellen sind unkritisch
   Schreibkonvention (Schritte `**N. Titel (Dauer)**`, Meta-Zeile, Einkaufsliste nach
   Laden); `task build` erzeugt daraus per Parser das JSON **neben der `.md`**
   (`gerichte/x.json`, wird committed), `cli lint` zeigt Parser-Lücken, `task validate`
-  ist das Gate (Parser-Tests, Checks A–L, JSON/Sidebar/Learnings aktuell) und läuft
+  ist das Gate (Parser-Tests, Checks A–P, JSON/Sidebar/Learnings aktuell) und läuft
   per Pre-Commit-Hook (`task hooks` einmalig aktivieren; kein CI). Hintergrund in
-  `SCHEMA.md` (Leitentscheidungen, Checks, Log), `schema/` (JSON Schema + eingefrorene
+  `ARCHITEKTUR.md` (Leitentscheidungen, Checks, Offenes), `schema/` (JSON Schema + eingefrorene
   Hand-Beispiele als Parität-Soll), `kochmodus/` (Kochmodus-Seite: `task serve` →
   `/kochmodus/`; Docsify zeigt den Knopf, sobald ein JSON neben der `.md` liegt;
   installierbar und offline, Rezeptliste `kochmodus/rezepte.json` wird von `task build`

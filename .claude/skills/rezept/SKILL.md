@@ -16,8 +16,8 @@ Lies zuerst, in dieser Reihenfolge, und halte dich daran:
    andere ist freier Text.
 2. `CLAUDE.md` — Haushalt (2 Erwachsene + Kind 3 J., Schwangerschaft mit GDM),
    Vorlieben, Equipment, Einkaufsquellen (Läden-Vokabular), Patterns.
-3. `SCHEMA.md`, Abschnitt „Konvertierungs-Anleitung" und „Zeit-Grammatik" — nur
-   wenn eine Zeitangabe unklar ist.
+3. `ARCHITEKTUR.md`, Abschnitt „Leitentscheidungen" — nur wenn unklar ist, warum der
+   Parser etwas so liest (Zeitangaben, Zeitpläne und Varianten stehen in REZEPTFORMAT.md).
 
 ## Modus `neu`
 
