@@ -118,11 +118,16 @@ export function fmtClock(secs) {
   return (h ? `${h}:` : "") + String(m).padStart(h ? 2 : 1, "0") + ":" + String(r).padStart(2, "0");
 }
 
-// Export im learnings.notes[]-Format (L13) als Markdown-Block zum Einfügen.
-export function notesMarkdown(recipeId, notes, date) {
-  const lines = [`### Notizen aus dem Kochmodus (${date})`, "", `<!-- ${recipeId}, Format: learnings.notes[] -->`];
-  for (const n of notes) lines.push(`- **Schritt ${n.label} (step:${n.slug}):** ${n.text.trim().replace(/\n+/g, " ")}`);
-  return lines.join("\n") + "\n";
+// Export der allgemeinen Notiz als Markdown-Block zum Einfügen unter ## Learnings.
+export function noteMarkdown(recipeId, text, date) {
+  return [`### Notizen aus dem Kochmodus (${date})`, "", `<!-- ${recipeId} -->`, "", text.trim(), ""].join("\n");
+}
+
+// Volltext mit der Kurzansicht als fettem Präfix (keine Wiederholung, nichts fehlt).
+export function textWithAction(text, step) {
+  if (step.actionDerived) return text;
+  const a = step.action.trim();
+  return text.startsWith(a) ? `<strong class="action-span">${a}</strong>` + text.slice(a.length) : text;
 }
 
 // Rest des Schrittes nach der Kurzansicht (damit Details den ersten Satz nicht wiederholen).
@@ -144,6 +149,6 @@ export function normalizeState(raw) {
   }
   timers = timers.filter((t) => t && typeof t === "object" && typeof t.end === "number");
   const factor = Number(s.factor);
-  return { done: obj(s.done), notes: obj(s.notes), shop: obj(s.shop), timers, factor: factor > 0 ? factor : 1,
+  return { done: obj(s.done), note: typeof s.note === "string" ? s.note : "", shop: obj(s.shop), timers, factor: factor > 0 ? factor : 1,
            order: s.order === "gang" ? "gang" : "ablauf" };
 }

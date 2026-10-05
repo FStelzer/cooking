@@ -43,15 +43,22 @@ try {
   const k4 = page.locator('.row[data-step="karamell"]');
   assert.match(await k4.innerText(), /3 EL Zucker/);
   assert.equal(await k4.locator("textarea").count(), 0, "Notiz darf in der Zeile nicht sichtbar sein");
-  // Sheet: Details ohne Wiederholung der Kurzansicht, Hervorhebung, Timer, Notiz
+  // Sheet: Volltext einmal, Kurzansicht fett, Hervorhebung, Details, keine Notiz
   await k4.locator("[data-open]").click();
   await page.waitForSelector("#sheet.open");
   const sheetText = await page.locator("#sheet").innerText();
   assert.equal((sheetText.match(/3 EL Zucker mit 1 EL Wasser/g) || []).length, 1, "Kurzansicht wird im Sheet wiederholt");
+  assert.ok(sheetText.includes("kostet 3 EL Zucker und 5 Minuten"), "Volltext unvollständig");
+  assert.equal(await page.locator("#sheet .action-span").count(), 1);
   assert.ok((await page.locator("#sheet mark.cue").count()) >= 1, "Cue-Hervorhebung fehlt");
-  await page.fill("#noteBox", "dunkler als gedacht ging gut");
+  assert.equal(await page.locator("#sheet textarea").count(), 0, "keine Notiz pro Schritt");
+  assert.match(await page.locator("#sheet .details").innerText(), /Dauer/);
   await page.click("#sheet .close");
-  assert.equal(await k4.locator(".hasnote").count(), 1, "Notiz-Punkt fehlt");
+  // Allgemeine Notiz in der Notizen-Ansicht
+  await page.click('button[data-view="notizen"]');
+  await page.fill("#noteBox", "dunkler als gedacht ging gut");
+  await page.waitForTimeout(500);
+  await page.click('button[data-view="kochen"]');
   // Skalieren ×2 ersetzt inline
   await page.click('button[data-factor="2"]');
   assert.match(await page.locator('.row[data-step="karamell"]').innerText(), /6 EL Zucker mit 2 EL Wasser/);
@@ -68,10 +75,10 @@ try {
   assert.equal(await page.locator(".dock .tm").count(), 1, "Timer überlebt Reload nicht");
   assert.ok(await page.locator('.row[data-step="blanchieren"] input[data-done]').isChecked());
   assert.match(await page.locator("#progress").innerText(), /1 von 9/);
-  // Notizen-Ansicht + Export
+  // Notizen-Ansicht + Export (nach Reload)
   await page.click('button[data-view="notizen"]');
   const out = await page.locator("#mdOut").inputValue();
-  assert.ok(out.includes("step:karamell") && out.includes("dunkler als gedacht"), out);
+  assert.ok(out.includes("Notizen aus dem Kochmodus") && out.includes("dunkler als gedacht"), out);
   // Einkauf
   await page.click('button[data-view="einkauf"]');
   assert.equal(await page.locator("ul.shop li").count(), 17);

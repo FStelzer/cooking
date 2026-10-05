@@ -75,7 +75,8 @@ textarea{width:100%;border:1px solid var(--line);border-radius:8px;background:va
 .sheet-head h2{font-size:24px;line-height:1.15;margin:0;flex:1}
 .sheet-head .lbl{display:block;font-family:var(--body);font-weight:700;font-size:14px;color:var(--c);margin-bottom:2px}
 .close{border:0;background:var(--surface);width:44px;height:44px;border-radius:50%;font-size:22px;cursor:pointer;flex:none}
-.sheet .action{font-weight:700}
+.sheet .fulltext{font-size:17px}.sheet .fulltext p{margin:.5em 0}.action-span{font-weight:700}
+.details{display:grid;grid-template-columns:max-content 1fr;gap:4px 12px;margin:14px 0 0;font-size:14px}.details dt{color:var(--muted);font-weight:700}.details dd{margin:0}
 .tbtns{display:flex;flex-wrap:wrap;gap:8px}
 .tbtn{border:2px solid var(--c);background:var(--raised);border-radius:8px;padding:8px 12px;cursor:pointer;font-weight:700;min-height:44px}
 .tbtn small{font-weight:400;color:var(--muted);margin-left:4px}

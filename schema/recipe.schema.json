@@ -993,13 +993,13 @@
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "ref",
         "text"
       ],
       "properties": {
         "ref": {
           "type": "string",
-          "pattern": "^(step|task|product):[a-z0-9-]+$"
+          "pattern": "^(step|task|product):[a-z0-9-]+$",
+          "description": "Optionaler Bezug; ohne ref gilt die Notiz dem ganzen Rezept/Menü"
         },
         "date": {
           "type": "string",

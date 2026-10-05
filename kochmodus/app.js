@@ -1,5 +1,5 @@
-import { escapeTilde, fmtAmount, fmtClock, highlight, isoSeconds, normalizeState, notesMarkdown,
-         remainderAfterAction, scaleAmount, scaleStepText, timerChoices } from "./lib.js";
+import { escapeTilde, fmtAmount, fmtClock, highlight, isoSeconds, noteMarkdown, normalizeState,
+         scaleAmount, scaleStepText, textWithAction, timerChoices } from "./lib.js";
 
 const params = new URLSearchParams(location.search);
 const RECIPE_URL = params.get("r") || "../schema/beispiele/thit-kho-trung.json";
@@ -32,7 +32,6 @@ function steps() { return tasksOf(recipe).flatMap(({ course, task }) => task.ste
 const stepOf = (id) => steps().find((x) => x.step.id === id)?.step;
 const labelOf = (ref) => stepOf(ref.replace(/^step:/, ""))?.label;
 const scaled = (text, step) => scaleStepText(text, step, factor(), ingById);
-function hasNote(id) { return !!state.notes[id]?.trim(); }
 function courseTitle(c) { return c ? (recipe.courses?.find((x) => x.ref === c.id)?.name || c.title.replace(/^\d+\.\s*/, "")) : "Menü"; }
 function schedule() { return recipe.sections.find((s) => s.type === "schedule"); }
 
@@ -51,7 +50,7 @@ function stepRow(s, course = null, task = null) {
   return `<div class="row ${state.done[s.id] ? "done" : ""} ${s.after && !s.after.length ? "free" : ""}" data-step="${s.id}">
     <input type="checkbox" class="chk" data-done="${s.id}" aria-label="${esc(title || s.label)} erledigt" ${state.done[s.id] ? "checked" : ""}>
     <div class="body" data-open="${s.id}">
-      <div class="t">${esc(s.label)}. ${mdInline(title)}${hasNote(s.id) ? '<span class="hasnote" title="Notiz vorhanden"></span>' : ""}</div>
+      <div class="t">${esc(s.label)}. ${mdInline(title)}</div>
       ${meta ? `<div class="m">${esc(meta)}</div>` : ""}
       <div class="a md">${md(scaled(s.action, s))}</div>${runBadge(s)}
     </div></div>`;
@@ -170,14 +169,15 @@ function renderLesen() {
 }
 function exportMarkdown() {
   const d = new Date(), date = `${String(d.getMonth() + 1).padStart(2, "0")}/${d.getFullYear()}`;
-  return notesMarkdown(recipe.id, steps().filter(({ step }) => hasNote(step.id)).map(({ step, course }) => ({ slug: step.id, label: (course ? course.id.replace("gang-", "G") + "/" : "") + step.label, text: state.notes[step.id] })), date);
+  return noteMarkdown(recipe.id, state.note || "", date);
 }
 function renderNotizen() {
-  const noted = steps().filter(({ step }) => hasNote(step.id));
-  if (!noted.length) { main.innerHTML = `<p class="empty">Noch keine Notizen. Öffne einen Schritt und halte fest, was beim nächsten Mal anders laufen soll.</p>`; return; }
-  main.innerHTML = `<div class="toolbar"><button class="btn primary" id="copyMd">Als Markdown kopieren</button><span class="status">Zum Einfügen unter „## Learnings“ im Rezept.</span></div>`
-    + noted.map(({ step }) => `<div class="note" data-open="${step.id}"><b>${esc(step.label)}. ${esc(step.title || "")}</b>${esc(state.notes[step.id])}</div>`).join("")
-    + `<h3>Vorschau</h3><textarea id="mdOut" readonly rows="8">${esc(exportMarkdown())}</textarea>`;
+  main.innerHTML = `<p class="fine">Eine Notiz zum ganzen ${isMenu() ? "Menü" : "Rezept"}: was lief gut, was beim nächsten Mal anders. Einarbeiten ins Rezept ist später Rezeptarbeit.</p>
+    <textarea id="noteBox" rows="10" placeholder="z. B. Gang 2: Gel-Süße passte, Beurre blanc hätte 10 Min. früher starten müssen …">${esc(state.note || "")}</textarea>
+    <div class="toolbar"><button class="btn primary" id="copyMd" ${state.note?.trim() ? "" : "disabled"}>Als Markdown kopieren</button><span class="status">Zum Einfügen unter „## Learnings“.</span></div>
+    <h3>Vorschau</h3><textarea id="mdOut" readonly rows="6">${esc(exportMarkdown())}</textarea>`;
+  const nb = $("#noteBox"); let nt;
+  nb.oninput = () => { state.note = nb.value; clearTimeout(nt); nt = setTimeout(() => { save(); $("#mdOut").value = exportMarkdown(); $("#copyMd").disabled = !state.note.trim(); }, 300); };
 }
 function renderHeader() {
   $("#title").textContent = recipe.title;
@@ -199,20 +199,27 @@ function renderSheet() {
   const ctx = steps().find((x) => x.step.id === openId);
   if (!ctx) return;
   const { step: s, task, course } = ctx;
-  const rest = remainderAfterAction(scaled(s.text, s), { ...s, action: scaled(s.action, s) });
   const timers = (s.timers || []).flatMap((t, i) => timerChoices(t.duration).map((secs) => ({ i, label: t.label, secs })));
-  const lbl = [course ? courseTitle(course) : null, task.name !== (recipe.title) ? task.name : null, `Schritt ${s.label}`, s.duration?.source].filter(Boolean).join(" · ");
+  const lbl = [course ? courseTitle(course) : null, task.name !== recipe.title ? task.name : null, `Schritt ${s.label}`].filter(Boolean).join(" · ");
+  const scaledStep = { ...s, action: scaled(s.action, s) };
+  const body = highlight(textWithAction(scaled(s.text, s), scaledStep), s);
+  const details = [];
+  if (s.duration) details.push(["Dauer", `${s.duration.source || [s.duration.min, s.duration.max].filter(Boolean).join("–") || s.duration.typical}${s.duration.estimated ? " (geschätzt)" : ""}`]);
+  if (s.after) details.push(["Voraussetzung", s.after.length ? "Schritt " + s.after.map(labelOf).filter(Boolean).join(", ") : "keine — jederzeit möglich"]);
+  if (s.start) details.push(["Zeitpunkt", `${s.start.offset.source || s.start.offset.min || s.start.offset.typical} (relativ zu ${esc(s.start.ref)})`]);
+  if (s.temps?.length) details.push(["Temperatur", s.temps.map((t) => t.text).join(" · ")]);
+  if (s.endCondition) details.push(["Fertig wenn", s.endCondition.text]);
+  if (s.equipment?.length) details.push(["Gerät", s.equipment.join(", ")]);
+  if (s.technique) details.push(["Technik", s.technique]);
+  for (const p of task.produces || []) if (task.steps[task.steps.length - 1].id === s.id) details.push(["Ergibt", `${p.name}${p.hold?.source ? " — " + p.hold.source : ""}${p.storage?.note ? " (" + p.storage.note + ")" : ""}`]);
+  if (task.consumes?.length && task.steps[0].id === s.id) details.push(["Braucht", task.consumes.map((c) => c.replace("product:", "")).join(", ")]);
   sheet.innerHTML = `
     <div class="sheet-head"><h2 id="sheetTitle"><span class="lbl">${esc(lbl)}</span>${mdInline(s.title || task.name)}</h2><button class="close" aria-label="Schließen">✕</button></div>
-    <div class="md action">${md(scaled(s.action, s))}</div>
-    ${rest ? `<div class="md">${md(highlight(rest, s))}</div>` : ""}
+    <div class="md fulltext">${md(body)}</div>
+    ${details.length ? `<dl class="details">${details.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${mdInline(v)}</dd>`).join("")}</dl>` : ""}
     ${s.events?.length ? `<h3>Zwischendurch</h3><ul>${s.events.map((e) => `<li>⏱ ${fmtClock(isoSeconds(e.at.typical || e.at.min))}: ${mdInline(e.text)}</li>`).join("")}</ul>` : ""}
     ${timers.length ? `<h3>Timer</h3><div class="tbtns">${timers.map((t) => `<button class="tbtn" data-start="${t.i}" data-secs="${t.secs}" data-label="${esc(t.label)}">▶ ${esc(t.label)}<small>${fmtClock(t.secs)}</small></button>`).join("")}</div>` : ""}
-    <label class="donebar"><input type="checkbox" class="chk" data-done="${s.id}" ${state.done[s.id] ? "checked" : ""}><b>${state.done[s.id] ? "Erledigt" : "Als erledigt abhaken"}</b></label>
-    <h3>Notiz fürs nächste Mal</h3>
-    <textarea id="noteBox" placeholder="Was lief gut, was ändern? z. B. Karamell dunkler, nächstes Mal 30 Sek. länger.">${esc(state.notes[s.id] || "")}</textarea>`;
-  const nb = $("#noteBox", sheet); let nt;
-  nb.oninput = () => { state.notes[s.id] = nb.value; clearTimeout(nt); nt = setTimeout(save, 400); };
+    <label class="donebar"><input type="checkbox" class="chk" data-done="${s.id}" ${state.done[s.id] ? "checked" : ""}><b>${state.done[s.id] ? "Erledigt" : "Als erledigt abhaken"}</b></label>`;
 }
 function openSheet(id) { openId = id; renderSheet(); sheet.classList.add("open"); backdrop.classList.add("open"); sheet.scrollTop = 0; }
 function closeSheet() { openId = null; sheet.classList.remove("open"); backdrop.classList.remove("open"); renderMain(); }
@@ -301,6 +308,7 @@ document.addEventListener("click", (e) => {
     const txt = exportMarkdown();
     (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => toast("Kopiert"))
       .catch(() => { const ta = $("#mdOut"); ta.focus(); ta.select(); toast("Markiert, jetzt kopieren"); });
+    return;
   }
 });
 document.addEventListener("change", (e) => {

@@ -89,8 +89,11 @@ Einzige Abhängigkeit: `jsonschema` (siehe `tools/requirements.txt`).
   Slugs aus Titel oder Verb+Objekt (`karamell`, `pickle-und-reis`), rezeptweit
   eindeutig, nie numerisch, nie aus der Nummer. Die Nummer ist nur `label`. Slugs
   werden einmal vergeben und nie umbenannt (Abhak-Zustand, Notizen, Verweise).
-- **L13 Feedback-Ziel.** `learnings.notes[]` mit `ref: step:<slug>|task:<id>|product:<id>`,
-  `date`, `status: open|applied`. Der Kochmodus exportiert genau diese Struktur.
+- **L13 Feedback-Ziel.** `learnings.notes[]` mit optionalem `ref: step:<slug>|task:<id>|
+  product:<id>`, `date`, `status: open|applied`. Ohne `ref` gilt die Notiz dem ganzen
+  Rezept. Der Kochmodus erfasst **eine allgemeine Notiz** pro Rezept/Menü (User-
+  Entscheidung 10/2026: Notizen pro Schritt lohnen nicht, das Einarbeiten ist ohnehin
+  Rezeptarbeit) und exportiert sie als Markdown-Block unter `## Learnings`.
 - **L16 Konvertierungsskripte.** Für große Dateien liegt die Konvertierung als
   Python-Skript unter `tools/convert/` (verbatim-Schnitt der Prosa plus Hand-
   Annotation der Modellierung). Die JSON-Datei ist das Ergebnis, das Skript die
@@ -391,9 +394,11 @@ vorher.
 `kochmodus/index.html` + `app.js` + `lib.js` + `style.css`, kein Build. Lädt ein
 Rezept-JSON per `?r=<pfad>` (Default thit-kho). Optik und Interaktion folgen dem
 Artifact-Prototyp `claude-cook.html` (Repo-Root, vom User mit Claude im Web gebaut):
-Schritt-Zeilen mit Checkbox, Antippen öffnet ein Bottom-Sheet mit Kurzansicht
-(fett), dem **Rest** des Textes mit Hervorhebung (nie die Wiederholung des ersten
-Satzes), Timer-Start, Abhaken und Notiz; Timer laufen in einem Dock am unteren Rand
+Schritt-Zeilen mit Checkbox, Antippen öffnet ein Bottom-Sheet mit dem **vollständigen
+Schritt-Text** (Kurzansicht als fetter Anfang, Cues/Grenzen/Warum/Rettung markiert),
+darunter eine Details-Liste (Dauer, Voraussetzung, Zeitpunkt, Temperatur, Fertig-wenn,
+Gerät, Technik, erzeugtes Produkt mit Haltbarkeit, benötigte Produkte), Timer-Start und
+Abhaken; eine allgemeine Notiz pro Rezept/Menü in der Notizen-Ansicht; Timer laufen in einem Dock am unteren Rand
 über alle Ansichten (+1 Min., Pause, Stopp); Ansichten Kochen / Einkauf / Lesen /
 Notizen (mit Markdown-Export); Wach-halten-Knopf. Nicht übernommen: Gantt (braucht
 Phasen × Gänge aus Phase 2b) und die claude.ai-Anbindung (Rückfragen, DB-Sync). Zustand (Abhaken, Timer-Endzeiten,

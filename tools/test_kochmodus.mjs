@@ -1,7 +1,7 @@
 // Node-Tests der reinen Kochmodus-Funktionen gegen das thit-kho-Beispiel.
 import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
-import { escapeTilde, fmtAmount, fmtClock, highlight, isoSeconds, normalizeState, notesMarkdown, remainderAfterAction,
+import { escapeTilde, fmtAmount, fmtClock, highlight, isoSeconds, noteMarkdown, normalizeState, remainderAfterAction, textWithAction,
          scaleAmount, scaleStepText, timerChoices } from "../kochmodus/lib.js";
 
 const r = JSON.parse(readFileSync(new URL("../schema/beispiele/thit-kho-trung.json", import.meta.url), "utf8"));
@@ -46,9 +46,15 @@ t("ISO-Dauern und Timer-Angebot", () => {
   assert.deepEqual(timerChoices(steps.marinieren.timers[0].duration), [900]);
   assert.equal(fmtClock(5400), "1:30:00"); assert.equal(fmtClock(90), "1:30");
 });
-t("Notizen-Export im learnings.notes-Format", () => {
-  const out = notesMarkdown("gerichte/thit-kho-trung", [{ slug: "karamell", label: "4", text: "dunkler\nging" }], "10/2026");
-  assert.match(out, /- \*\*Schritt 4 \(step:karamell\):\*\* dunkler ging/);
+t("Allgemeine Notiz als Markdown-Block", () => {
+  const out = noteMarkdown("gerichte/thit-kho-trung", "Karamell dunkler\nging gut", "10/2026");
+  assert.match(out, /^### Notizen aus dem Kochmodus \(10\/2026\)\n\n<!-- gerichte\/thit-kho-trung -->\n\nKaramell dunkler\nging gut\n$/);
+});
+t("Volltext mit fettem action-Präfix, nichts doppelt", () => {
+  const h = textWithAction(steps.karamell.text, steps.karamell);
+  assert.ok(h.startsWith('<strong class="action-span">3 EL Zucker'), h.slice(0, 60));
+  assert.equal((h.match(/3 EL Zucker mit 1 EL Wasser/g) || []).length, 1);
+  assert.equal(textWithAction(steps.schmoren.text, steps.schmoren), steps.schmoren.text); // abgeleitet → nur Text
 });
 t("Details wiederholen die Kurzansicht nicht", () => {
   const rest = remainderAfterAction(steps.karamell.text, steps.karamell);
@@ -57,11 +63,12 @@ t("Details wiederholen die Kurzansicht nicht", () => {
   assert.equal(remainderAfterAction(steps.schmoren.text, steps.schmoren), steps.schmoren.text); // abgeleitet → alles
 });
 t("Alter localStorage-Zustand (timers als Objekt) wird migriert, Müll verworfen", () => {
-  const old = { done: { karamell: true }, notes: { karamell: "x" }, timers: { "schmoren#0.0": 1760000000000, kaputt: "nein" }, factor: "2" };
+  const old = { done: { karamell: true }, notes: { karamell: "x" }, note: 7, timers: { "schmoren#0.0": 1760000000000, kaputt: "nein" }, factor: "2" };
   const s = normalizeState(old);
   assert.deepEqual(s.timers.map((t) => [t.step, t.end]), [["schmoren", 1760000000000]]);
   assert.equal(s.factor, 2); assert.equal(s.done.karamell, true); assert.deepEqual(s.shop, {});
   assert.deepEqual(normalizeState(null).timers, []);
-  assert.deepEqual(normalizeState({ timers: "quatsch", done: [], factor: -1 }), { done: {}, notes: {}, shop: {}, timers: [], factor: 1, order: "ablauf" });
+  assert.equal(s.note, "");
+  assert.deepEqual(normalizeState({ timers: "quatsch", done: [], factor: -1 }), { done: {}, note: "", shop: {}, timers: [], factor: 1, order: "ablauf" });
 });
 console.log(`${n} Tests ok`);
