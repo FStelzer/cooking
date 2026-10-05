@@ -49,6 +49,13 @@
   "cooked": true
  },
  {
+  "path": "../gerichte/tafelspitz.json",
+  "title": "Tafelspitz, sommerlich — mit Frittatensuppe und kalten Saucen (4 Portionen + Reste)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": false
+ },
+ {
   "path": "../gerichte/thit-kho-trung.json",
   "title": "Thịt kho trứng — vietnamesisches Karamell-Schweinefleisch mit Eiern (4 Portionen)",
   "group": "gerichte",
