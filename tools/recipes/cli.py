@@ -8,6 +8,7 @@ from pathlib import Path
 import json
 
 from .coverage import check_b, check_c, check_d
+from .diff import diff
 from .shopping import check_k, derive, render_shopping
 from .schema import check_a
 from .util import load_json, read_source, source_path
@@ -60,6 +61,12 @@ def cmd_shopping(path: str) -> int:
     return 0
 
 
+def cmd_diff(a: str, b: str) -> int:
+    for line in diff(load_json(Path(a)), load_json(Path(b))):
+        print(line)
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="tools.recipes.cli")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -70,6 +77,9 @@ def main(argv: list[str] | None = None) -> int:
     d.add_argument("paths", nargs="+")
     s = sub.add_parser("shopping", help="Einkaufsliste als Markdown ausgeben")
     s.add_argument("path")
+    f = sub.add_parser("diff", help="Feld-Diff zweier Konvertierungen derselben Quelle (Check I)")
+    f.add_argument("a")
+    f.add_argument("b")
     args = ap.parse_args(argv)
     if args.cmd == "check":
         return cmd_check(args.paths, args.verbose)
@@ -77,6 +87,8 @@ def main(argv: list[str] | None = None) -> int:
         return cmd_derive(args.paths)
     if args.cmd == "shopping":
         return cmd_shopping(args.path)
+    if args.cmd == "diff":
+        return cmd_diff(args.a, args.b)
     return 2
 
 

@@ -4,7 +4,7 @@ from __future__ import annotations
 import re
 from collections import Counter
 
-from .util import (GENERATED_SECTIONS, UNIT_TOKEN, annotation_quotes, iter_steps, iter_tasks,
+from .util import (GENERATED_SECTIONS, UNIT_TOKEN, annotation_quotes, first_sentence, iter_steps, iter_tasks,
                    normalize, source_without_generated, split_h2, unit_tokens, verbatim_strings)
 
 SLUG = re.compile(r"^[a-z0-9][a-z0-9-]*$")
@@ -59,8 +59,9 @@ def check_c(recipe: dict, source: str) -> tuple[list[str], list[str]]:
         p = f"step:{step['id']}"
         ntext = normalize(step["text"])
         if not step.get("actionDerived"):
-            if not ntext.startswith(normalize(step["action"])):
-                errs.append(f"C {p}.action ist kein verbatim-Präfix von text")
+            fs = normalize(first_sentence(step["text"]))
+            if normalize(step["action"]) != fs:
+                errs.append(f"C {p}.action ≠ erster Satz von text (Anleitung v2): erwartet '{fs[:60]}'")
         else:
             toks = UNIT_TOKEN.findall(step["action"])
             if toks and not any(si.get("actionOccurrence") for si in step.get("ingredients", [])):

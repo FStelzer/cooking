@@ -145,3 +145,19 @@ def annotation_quotes(recipe: dict) -> list[tuple[str, str]]:
             if hold.get("source"):
                 q.append((f"product:{prod['id']}.hold.source", hold["source"]))
     return q
+
+
+_ABBREV = {"z", "b", "ca", "bzw", "ggf", "evtl", "min", "std", "sek", "nr", "st", "inkl", "max", "vgl", "u", "a", "s", "o"}
+_SENT_END = re.compile(r"[.!?]\s+(?=[A-ZÄÖÜ0-9„\"*(½¼¾])")
+
+
+def first_sentence(text: str) -> str:
+    """Erster Satz eines Schrittes (verbatim), Abkürzungen wie „Min.“, „z. B.“ gelten
+    nicht als Satzende. Grundlage für action (L7, Anleitung v2)."""
+    for m in _SENT_END.finditer(text):
+        before = text[:m.start()]
+        word = re.findall(r"[\wäöüÄÖÜß]+$", before.rstrip("*)"))
+        if word and word[-1].lower() in _ABBREV:
+            continue
+        return text[:m.start() + 1]
+    return text.strip()

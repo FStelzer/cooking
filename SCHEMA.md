@@ -13,6 +13,7 @@ python3 -m tools.recipes.cli check schema/beispiele/*.json      # Checks A–D
 python3 -m tools.recipes.cli check schema/beispiele/x.json -v   # mit Reports
 python3 -m tools.recipes.cli derive schema/beispiele/x.json      # derived-Block (Einkaufsliste, Mengen) schreiben
 python3 -m tools.recipes.cli shopping schema/beispiele/x.json    # Einkaufsliste als Markdown
+python3 -m tools.recipes.cli diff a.json b.json                 # Feld-Diff zweier Konvertierungen (Check I)
 ```
 
 Einzige Abhängigkeit: `jsonschema` (siehe `tools/requirements.txt`).
@@ -22,7 +23,8 @@ Einzige Abhängigkeit: `jsonschema` (siehe `tools/requirements.txt`).
 | Datum | Stand |
 |---|---|
 | 2026-10-05 | Plan freigegeben. AP0 (Festlegungen, Werkzeug-Skelett) und AP1 (Schema v0.1, thit-kho Minimum + Anreicherung) umgesetzt. Checks A–D grün, Mutationstest 11/11 erkannt. |
-| 2026-10-05 | AP2 umgesetzt: `tools/recipes/shopping.py` berechnet `derived.quantities` und `derived.shopping`, `cli derive` schreibt sie ins JSON (reproduzierbar bis auf `generatedAt`, Hash-Prüfung gegen veraltete Blöcke), `cli shopping` rendert Markdown im heutigen Format, Check K vergleicht mit der Original-Einkaufsliste. Nächster Schritt: AP3 (zweite unabhängige Konvertierung, Feld-Diff). |
+| 2026-10-05 | AP2 umgesetzt: `tools/recipes/shopping.py` berechnet `derived.quantities` und `derived.shopping`, `cli derive` schreibt sie ins JSON (reproduzierbar bis auf `generatedAt`, Hash-Prüfung gegen veraltete Blöcke), `cli shopping` rendert Markdown im heutigen Format, Check K vergleicht mit der Original-Einkaufsliste. |
+| 2026-10-05 | AP3 umgesetzt: zweite unabhängige Konvertierung von thit-kho durch einen frischen Agenten (nur SCHEMA.md + Schema + Quelle), `cli diff` misst Übereinstimmung pro Feld. Ergebnis: alle verbatim-nahen Felder 100 %, Ermessensfelder streuen (siehe Messwerte). Daraus Anleitung v2 mit regelbasiertem `action` (= erster Satz, Check C erzwingt das), festem Warengruppen-Vokabular, klaren Regeln für `priority`/`optional`/`note`/`scale`. Phase 2a damit abgeschlossen; nächster Schritt: Durchstich (Kochmodus-Seite mit thit-kho). |
 
 ## Phase 1: Testsammlung und harte Stellen
 
@@ -111,32 +113,74 @@ US-Quellen vorgesehen.
 | **Minimum** (Schema `required`) | Recipe: `id`, `kind`, `title`, `yields`, `ingredients`, `sections` · Ingredient: `id`, `name`, `store` · Task: `id`, `name`, `steps` · Step: `id`, `label`, `text`, `action`, `ingredients` · StepIngredient: `ref`, `amount.text` · learnings: `cooked`, `summary` |
 | **Anreicherung** | `intro`, `times`, `equipment`, `status`; Step: `heading`, `title`, `attention`, `duration`, `timers`, `temps`, `endCondition`, `cues`, `why`, `rescue`, `limits`, `technique`, `parallel`, `equipment`; Amount: `value`, `max`, `approx`, `unit`, `per`; Ingredient: `group`, `buy`, `inStock`, `pantry`, `priority`, `optional`, `fallback`, `unitHint`, `scale`; Task: `intro`, `phaseHint`, `duration`, `produces`, `consumes`; learnings: `details`, `notes` |
 
-## Konvertierungs-Anleitung (v1, nach AP1)
+## Konvertierungs-Anleitung (v2, nach AP3)
+
+Regeln, die der Validator erzwingt, sind mit **[C]**/**[D]** markiert. Alles andere ist
+Konvention; wo zwei Konverter in AP3 abgewichen sind, steht jetzt eine feste Regel.
 
 1. **Kopf.** `id` = Pfad ohne `.md`. `title` = H1 ohne `🚧`; `status: wip` bei `🚧`.
    `intro` = alles zwischen H1 und erster `##`, verbatim. `yields` aus dem Titel.
-2. **Sektionen in Dokumentreihenfolge.** `## Einkaufsliste` → `{type: shopping}`
-   (nur Platzhalter). `## Zubereitung`/`## Rezept` → `tasks`. `## Learnings` →
-   `learnings` (`summary` = Fließtext bis zur ersten `###`, `details` = Rest ab `###`,
-   beides verbatim). `## To-do`/„Offen"-Listen → `todo`. `## Mengen-Check` entfällt.
-   Alles andere → `markdown` (verbatim, `tags` nach Inhalt).
-3. **Schritte.** Ein Markdown-Schritt = ein Step, nie splitten. `heading` = die
-   Überschriftzeile ohne `**`. `label` = Nummer. `title` = Zitat aus `heading` ohne
-   Nummer und Dauer. `text` = ganzer Absatz verbatim. `action` nach L7.
-   Slug nach L12. `duration.source` = Dauer-Angabe aus der Überschrift.
-4. **Dosierungen.** Jede Mengenangabe im Schritt wird ein `StepIngredient` mit
-   `amount.text` als Span (L11). Zutat ohne Zahl („reichlich Pfeffer", „Schuss
-   Kokoswasser") bekommt nur `text`, kein `value`. Zweite Nennung derselben Menge
-   („Die 6 Eier") → `reuse: true`. Menge nur in der Einkaufsliste → am ersten
-   verwendenden Schritt mit `spanForm: "derived"`.
-5. **Zutaten (Rezept-Ebene).** Ein `Ingredient` pro Zutat (nicht pro Einkaufsposten):
-   Sammelposten und „A + B"-Posten werden aufgeteilt. `store` aus `## Beschaffung`
-   bzw. CLAUDE.md-Einkaufsquellen; `pantry: true` für Salz, Pfeffer, Wasser; `note` =
-   kursive Anmerkung des Postens verbatim.
-6. **Annotationen** nur als Zitate (L3): `cues` = Erkennungszeichen („bis …",
-   „tief bernsteinfarben"), `limits` = Grenzen/Warnungen, `why` = Begründung (meist
-   kursiv am Ende), `rescue` = „wenn schiefgeht". Nicht erfinden, nicht umformulieren.
-7. **Zeitangaben** nach dieser Grammatik:
+   `times`/`equipment` aus der kursiven Meta-Zeile, soweit vorhanden.
+2. **Sektionen in Dokumentreihenfolge** **[B]**. `## Einkaufsliste` → `{type: shopping}`
+   (Platzhalter). `## Zubereitung`/`## Rezept` → `tasks`. `## Learnings` → `learnings`
+   (`summary` = Fließtext bis zur ersten `###`, `details` = Rest ab `###`, verbatim).
+   `## To-do`/„Offen"-Listen → `todo`. `## Mengen-Check` entfällt. Alles andere →
+   `markdown` verbatim mit `tags`.
+3. **Task.** Einfaches Rezept = genau ein Task mit `id: "main"`, `name` = Gerichtname.
+4. **Schritte.** Ein Markdown-Schritt = ein Step, nie splitten. `heading` = Überschrift-
+   zeile ohne `**`. `label` = Nummer. `title` = Zitat aus `heading` ohne Nummer und
+   Dauer **[C]**. `text` = ganzer Absatz verbatim. `duration` **nur** aus der
+   Überschrift (`source` = die Klammerangabe); Dauern im Text werden `timers`, nie
+   `duration`. `parallel: true` bei „parallel" in der Überschrift.
+5. **`action` = exakt der erste Satz von `text`** **[C]**, verbatim. Satzende ist
+   `.`/`!`/`?` plus Leerzeichen plus Großbuchstabe/Ziffer; Abkürzungen (`Min.`,
+   `Std.`, `z. B.`, `ca.`) zählen nicht. Nur wenn der erste Satz keine Handlung ist
+   (Erklärung, Überschrift-Wiederholung), eine **mengenfreie** Kurzfassung mit
+   `actionDerived: true`. Die Kurzansicht zeigt `heading` + `action`; dass der erste
+   Satz nicht alles abdeckt (Schritt 6: nur „auffüllen", Schmoren steht in der
+   Überschrift), ist akzeptiert. Deterministisch statt treffend.
+6. **Slugs** **[D]**: Step aus `title` (ohne Füllwörter, `&` → `und`, Umlaute
+   ae/oe/ue/ss): „Schnell-Pickle & Reis" → `pickle-und-reis`. Zutat = erstes
+   Hauptnomen des Einkaufspostens in der Schreibweise der Liste: „2–3 frische rote
+   Chilis" → `chilis`, „Frühlingszwiebeln oder Koriander" → `fruehlingszwiebeln`.
+7. **Dosierungen (StepIngredient)** **[C]**. Genau dann ein Eintrag, wenn im Schritt
+   ein Mengen-Span steht: Zahl + Einheit/Nomen („3 EL Zucker", „6 Eier", „½ Salat-
+   gurke") oder Mengenwort („reichlich Pfeffer", „Prise Salz", „Schuss Kokoswasser";
+   dann `unit` = Mengenwort, kein `value`). Reine Nennungen ohne Menge („das
+   marinierte Fleisch", „Fleisch mit …") werden **nicht** erfasst. Wiederholt ein
+   Schritt eine schon dosierte Zahl („Die 6 Eier") → `reuse: true`. Span bei
+   Mehrdeutigkeit um das Nomen verlängern; kommt er trotzdem mehrfach vor →
+   `occurrence`. Markdown im Span bleibt drin („2–3 **ganze** Chilis"). Menge nur in
+   der Einkaufsliste → am ersten verwendenden Schritt mit `spanForm: "derived"`.
+   `unit: "Stück"` für Stückzahlen (auch Zehen, Eier).
+8. **Zutaten (Rezept-Ebene).** Ein `Ingredient` pro Zutat; Sammel- und „A + B"-Posten
+   aufteilen; „A oder B" bleibt **eine** Zutat. `name` = Posten ohne Mengen- und
+   Klammer-/Kursivteil. `note` = Klammer- oder Kursivzusatz des Postens verbatim.
+   `storeNote` = Beschaffungs-Prosa aus `## Beschaffung`. `prep` **nicht** setzen
+   (Vorbereitung steht im Schritt). `store` aus `## Beschaffung`, sonst CLAUDE.md-
+   Einkaufsquellen; Default „Aldi / REWE". `group` aus dem festen Vokabular:
+   *Obst & Gemüse · Fleisch & Fisch · Milchprodukte & Eier · Trockenwaren ·
+   Würzmittel & Gewürze · Getränke · Tiefkühl · Sonstiges*; bei `store: Vorrat`
+   keine Gruppe. `pantry: true` für Salz, Pfeffer, Wasser, Öl zum Braten.
+   `optional: true` bei „Optional:"/„optional"; `priority` **nur**, wenn die Liste ein
+   Label trägt (Pflicht/Empfehlenswert/Optional/„empfohlen"), sonst weglassen.
+   `scale` **nur** für Ausnahmen (`fixed` Bratfett, `note` mit `scaleNote`);
+   Default-Verhalten (Stück → runden, Mengenwort → nicht skalieren) leitet der
+   Generator ab. `fallback` aus Learnings/Notizen, kurz.
+9. **Annotationen** nur als Zitate (L3) **[C]**: `cues` = Erkennungszeichen („bis …",
+   „tief bernsteinfarben"), `limits` = Grenzen/Warnungen (mit „Vorsicht:"-Präfix,
+   falls vorhanden), `why` = Begründung (kursiver Schlusssatz, ganz, mit Punkt),
+   `rescue` = „wenn schiefgeht". Satzgrenzen ganz übernehmen, nicht in Teilphrasen
+   splitten. `step.equipment` nicht erfassen (steht im Text, Rezept-Ebene reicht).
+10. **`attention`.** `active` = Hände dauernd am Werk (schneiden, kneten, anrichten);
+    `attended` = auf dem Herd, Blick nötig, Hände zwischendurch frei (Karamell,
+    Anbraten, Reduzieren, Eier kochen); `passive` = man kann weggehen (Schmoren,
+    Marinieren, Ziehen lassen, Auftauen). Im Zweifel `attended`.
+11. **Learnings-Notizen** **[D]**: jeder Bullet der `### Details` wird eine Note;
+    `text` = Bullet ohne das fette Label, verbatim; `ref` auf den Schritt, den der
+    Bullet ändert (Topfwahl → Schritt mit dem Topf); `date` = „Gekocht MM/JJJJ";
+    `status: open`, solange der Rezepttext die Erkenntnis nicht umsetzt.
+12. **Zeitangaben** nach dieser Grammatik:
 
 | Quellphrase | Ziel | Regel |
 |---|---|---|
@@ -210,6 +254,35 @@ einem Schritt).
 
 **Rendering-Entscheidungen** (`cli shopping`): `###` pro Laden in Besuchsreihenfolge (Online, Buhara, Asialaden, Selgros, REWE Center, Aldi/REWE, Vorrat), darunter `**Warengruppe:**`, Einträge `- [ ] Menge Name, prep *(note)*`, `Optional:`-Präfix, `[x]` bei `inStock`. Das 📲-Export-Plugin würde auf dieser Ausgabe unverändert funktionieren.
 
+### thit-kho-trung, Determinismus (AP3, 2026-10-05)
+
+Zweitkonvertierung durch einen frischen Agenten mit SCHEMA.md (Anleitung v1), Schema
+und Quelle. Einschränkung: Der Agent hat zusätzlich den Validator-Code gelesen und
+`main` stand in den Messwerten, die Unabhängigkeit ist also nicht perfekt.
+`cli diff` gegen die Erstkonvertierung (Stand v1):
+
+| Feld | Übereinstimmung | Befund → Regel in v2 |
+|---|---|---|
+| Verbatim-Felder (title, intro, text, heading, title, summary, details), Sektionsfolge, Zutatenanzahl, Timer, rescue, parallel | 100 % | stabil, keine Änderung |
+| Step-Slugs | 9/9 | Slug-Regel funktioniert |
+| Dosierungen (`amount.text`, spanForm, reuse, occurrence) | 25/25 | Span-Regel funktioniert; B erfasste zusätzlich „Fleisch" in Schritt 2 → Regel 7: nur Spans mit Menge |
+| Learnings-Refs | 5/5 | stabil; Texte differierten (Teilsatz vs. ganzer Bullet) → Regel 11 |
+| `action` | 4/9 | Ermessen („ganze Sätze", „reine Handlung") → Regel 5: exakt erster Satz, Check C erzwingt |
+| `attention` | 5/9 | keine Regel → Regel 10 |
+| `cues`, `limits`, `why` | 7/9 | Phrasengrenzen („Vorsicht:"-Präfix, Satz geteilt) → Regel 9: ganze Sätze |
+| `step.equipment` | 7/9 | Mehrwert gering → nicht erfassen |
+| `duration` | 8/9 | B nahm Dauer aus dem Text → Regel 4: nur Überschrift |
+| Zutaten `group` | 6/17 | freie Benennung → festes Vokabular (Regel 8) |
+| Zutaten `priority` | 3/17 | B setzte überall `pflicht` → nur bei Label in der Quelle |
+| Zutaten `scale` | 11/17 | keine Regel → nur Ausnahmen, Default im Generator |
+| Zutaten `prep`/`note` | 13/17, 11/17 | Abgrenzung unklar → `prep` entfällt, `note` = Klammer-/Kursivtext |
+| Zutaten `id`, `store` | 15/17, 16/17 | Singular/Plural (chili/chilis), Jasminreis Asialaden vs. REWE → Slug-Regel; Store bleibt Ermessen |
+
+Nach Umstellung auf v2 hat thit-kho **0 abgeleitete `action`** (vorher 1) und 23 exakte
+Spans (vorher 24, „das marinierte Fleisch" entfällt). Eine Wiederholung der Messung
+mit v2 ist sinnvoll, sobald die nächste Datei konvertiert wird (Phase 2b), nicht
+vorher.
+
 ## Entscheidungen
 
 | Datum | Entscheidung |
@@ -219,9 +292,13 @@ einem Schritt).
 | 2026-10-05 | `reuse: true` an `StepIngredient` ergänzt (Eier, mariniertes Fleisch): skalieren ja, summieren nein. |
 | 2026-10-05 | Check B verschärft: fehlende Sektionen und nicht abgedeckte Zeilen sind Fehler, nicht nur Report. |
 | 2026-10-05 | Löffel-Anzeigeregel (User-Anforderung): Rohwerte in ml bleiben, Kochansicht zeigt TL/EL mit Rohwert in Klammern; `amount.display` als expliziter Hinweis. |
+| 2026-10-05 | `action` ist per Regel der exakte erste Satz (Check C erzwingt), nicht mehr ein frei gewählter Präfix. Deterministisch schlägt treffend; die Kurzansicht zeigt ohnehin `heading` dazu. |
+| 2026-10-05 | `step.equipment` und `Ingredient.prep` werden nicht mehr erfasst (bleiben im Schema, Anleitung setzt sie nicht). `Ingredient.scale` nur für Ausnahmen. |
 | 2026-10-05 | `derived.sourceHash` = SHA-256 (gekürzt) des JSON ohne `derived`; `cli check` verlangt einen aktuellen Block, sobald die Quelle eine Einkaufsliste hat. Mengen werden intern auf g/ml normiert; `Stück` wird in der Anzeige weggelassen. |
 
 ## Nächste Schritte
 
-- **AP3:** zweite unabhängige Konvertierung von thit-kho, Feld-Diff; Anleitung v2.
-- Danach Durchstich (Kochmodus-Seite mit thit-kho), dann Entscheidungspunkt vor 2b.
+- **Durchstich:** statische Kochmodus-Seite, die `schema/beispiele/thit-kho-trung.json`
+  lädt (Kurz-/Vollansicht, `derived.shopping`, Skalieren mit Inline-Ersetzung,
+  Abhaken, Timer, Notizen-Export im `learnings.notes[]`-Format). Eigener Detailplan.
+- Thịt kho damit kochen, dann **Entscheidungspunkt** vor Phase 2b (siehe Plan).
