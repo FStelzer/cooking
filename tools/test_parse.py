@@ -90,10 +90,10 @@ t("Menü: Komponenten → Tasks mit Produkt, Hold, Lagerort, Verbrauch", lambda:
     assert_(tk["mango-gel"]["produces"][0]["hold"]["ideal"] == "P1D" and tk["mango-gel"]["produces"][0]["storage"]["place"] == "fridge"),
     assert_(tk["beurre-blanc"]["produces"][0]["hold"]["max"] == "PT2H" and tk["beurre-blanc"]["produces"][0]["storage"] == {"place": "warm", "temp": {"min": 50, "max": 55}}),
     assert_(tk["mango-gel"]["phaseHint"] == "Vortag"),
-    assert_(MS["anrichten"]["after"] == ["step:montieren", "step:mango-kochen"]),
+    assert_(MS["gang-2-anrichten"]["after"] == ["step:gang-2-montieren", "step:gang-2-mango-kochen"], MS["gang-2-anrichten"].get("after")),
     assert_("product:mango-gel" in tk["beurre-blanc"].get("consumes", []), tk["beurre-blanc"].get("consumes"))))
 t("Menü: Anker relativ zum Service, Prosa-Blöcke, Offen-Liste", lambda: (
-    assert_(MS["grundwuerzung"]["start"] == {"ref": "course:gang-1:serve", "offset": {"min": "-PT2H", "max": "-PT1H", "source": "1–2 h vor Service"}}, MS["grundwuerzung"].get("start")),
+    assert_(MS["gang-1-grundwuerzung"]["start"] == {"ref": "course:gang-1:serve", "offset": {"min": "-PT2H", "max": "-PT1H", "source": "1–2 h vor Service"}}, MS["gang-1-grundwuerzung"].get("start")),
     assert_([s["title"] for s in courses[1]["sections"] if s["type"] == "markdown"] == ["Kind (3 J.)", "Profi-Tipps"]),
     assert_(next(s for s in courses[1]["sections"] if s["type"] == "todo")["items"][0]["text"].startswith("Gel-Süße"))))
 t("Menü: Zeitplan-Phasen, Zuordnung per Namen, Anker im Eintrag", lambda: (

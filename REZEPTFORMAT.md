@@ -217,7 +217,7 @@ Text des Schritts, beliebig lang, Zeilenumbrüche egal.
 
 | Klausel | Bedeutung |
 |---|---|
-| `nach Karamell, Marinieren` | Voraussetzungen, über **Titel** anderer Schritte, nie über Nummern |
+| `nach Karamell, Marinieren` | Voraussetzungen, über **Titel** anderer Schritte, nie über Nummern. Titel dürfen selbst Kommas enthalten (`nach Durchwärmen, Blätter, Jus, Chips`): die längste passende Verkettung gewinnt |
 | `jederzeit` | keine Voraussetzung |
 | `≤ 30 Min. vor dem Anrichten` | muss innerhalb dieser Spanne vor dem Schritt „Anrichten" liegen |
 | `letzte 20–30 Min. von Schmoren` | läuft am Ende des Schritts „Schmoren" mit |
@@ -244,7 +244,9 @@ Mengen und Zeiten im Text werden erkannt, wenn sie so geschrieben sind:
 
 | Form | Beispiel | Bedeutung |
 |---|---|---|
-| Zahl Einheit Zutat | `3 EL Zucker`, `500–600 ml Kokoswasser`, `½ Limette`, `1 Prise Salz`, `6 Eier` | Dosierung; das Zutatenwort muss in der Einkaufsliste vorkommen |
+| Zahl Einheit Zutat | `3 EL Zucker`, `500–600 ml Kokoswasser`, `½ Limette`, `1 Prise Salz`, `6 Eier` | Dosierung; das Zutatenwort muss in der Einkaufsliste vorkommen (s. u.) |
+| … mit Qualifizierern | `120 g milden, pasteurisierten Ziegenfrischkäse`, `1 kleine Prise Muskat`, `1 EL (15 g) Tomatenmark` | bis vier Wörter zwischen Zahl und Zutat; Umrechnung in Klammern hinter der Einheit |
+| Zutat (Zahl Einheit …) | `Lammschulter (2–2,2 kg mit Knochen)` | Menge in der Klammer direkt hinter der Zutat |
 | Mengenwort Zutat | `reichlich Pfeffer`, `ein Schuss Kokoswasser` | Dosierung ohne Zahl |
 | `je 15 g Butter` | | Menge pro Pfanne/Person |
 | `2 × 15 g Butter` | | Vervielfacher |
@@ -254,6 +256,16 @@ Mengen und Zeiten im Text werden erkannt, wenn sie so geschrieben sind:
 | Zahl + °C | `60–62 °C Kern`, `Ofen 160 °C`, `nie über 58 °C` | Temperatur (Art nach dem Wort davor) |
 
 Zirka immer als `ca.` oder `\~` (Backslash-Tilde, sonst streicht Docsify durch).
+
+**Zutatenwort ↔ Einkaufsliste.** Verglichen wird das Hauptwort des Postens (bei
+`Cherry-/Datteltomaten` beide Teile) mit dem Wort im Text, in dieser Reihenfolge:
+gleich (`Zucker`) · Textwort ist Kompositum des Listenworts (`Limettensaft` →
+Limetten, `Sellerie-Scheiben` → Sellerie) · Listenwort ist Kompositum des Textworts
+(`Sellerie` → Knollensellerie) · Beugung um höchstens zwei Zeichen (`Schalotte` →
+Schalotten). Mehrwortige Posten (`Brauner Zucker`, `Weißer Pfeffer`) zählen nur als
+ganze Phrase im Text (`25 g brauner Zucker`). Feste Aliasse: `Eigelb`, `Eiweiß`, `Ei`
+→ Eier. Nicht abgedeckt: Zwischenprodukte (`10 ml Zuckersirup` landet beim Zucker,
+`90 ml Decaf-Espresso` bei keiner Zutat) — `cli lint` nennt Zutaten ohne Dosierung.
 
 ## 7. Einkaufsliste
 
@@ -281,7 +293,10 @@ Zirka immer als `ca.` oder `\~` (Backslash-Tilde, sonst streicht Docsify durch).
   ist das Gebinde (was man kauft); der Bedarf wird aus den Schritten gerechnet.
   `[x]` = vorhanden. `Optional:` am Anfang = optional. `A + B` sind zwei Zutaten,
   `A oder B` eine. Das erste Hauptwort des Namens ist die Kennung; es muss in den
-  Schritten wiederkehren (`Schalotten` ↔ `2 Schalotten`).
+  Schritten wiederkehren (`Schalotten` ↔ `2 Schalotten`). Teilen sich zwei Posten das
+  Hauptwort (`Zucker` im Vorrat, `500 g Brauner Zucker`), behält der nackte Name die
+  Kennung `zucker`, der qualifizierte wird `brauner-zucker` — egal in welcher
+  Reihenfolge sie stehen. Gleicher Name zweimal ist eine Dublette (Hinweis).
 
 ## 8. Zeitplan
 
@@ -295,10 +310,26 @@ Für Menüs und Vorbereitungen über mehrere Tage:
 - Gang 2 (+0:20): Beurre blanc (20 Min. vor dem Gang) · Kaisergranat braten · Anrichten
 ```
 
-Phasen: `T-2`, `T-1`, `Vortag`, `Vorabend`, `Vormittags`, `Nachmittags`, `Am Abend`,
-`Am Tag`, `Gang N (+h:mm)`. Einträge mit ` · ` getrennt. Ein Eintrag wird einem
-Schritt oder einer Komponente zugeordnet, wenn er deren **Titel bzw. Namen** nennt;
-Einträge ohne Treffer bleiben Text (Tisch decken, Gäste da).
+Phasen: `Saison-Teil (…)` (lange vorher, erledigt), `T-2`, `T-1`, `Vortag`, `Vorabend`,
+`Vormittags`, `Nachmittags`, `Am Abend`, `Am Tag`, `Gang N (+h:mm)`. Einträge mit ` · `
+getrennt. Ein Eintrag wird Schritten oder Komponenten zugeordnet, wenn er deren
+**Titel bzw. Namen** nennt; Einträge ohne Treffer bleiben Text (Tisch decken, Gäste da).
+So wird gelesen:
+
+- Mehrwortige Schritt-Titel zählen als Phrase irgendwo im Eintrag: `Kaisergranat
+  auslösen, Schalen einfrieren` → „Kaisergranat auslösen“. Längste zuerst.
+- Danach wird der Rest an `, ` ` · ` `: ` ` — ` `; ` und ` und ` zerlegt, Klammern
+  fallen weg. Ein Segment trifft eine **Komponente**, wenn es ihrem Namen gleicht
+  (`Mango-Gel`, `Parfait (herstellen, einfrieren)`, `Lammschulter und Jus: schmoren,
+  zupfen, pressen`) — dann liegen alle ihre Schritte in dieser Phase. Ein Segment
+  trifft einen **Ein-Wort-Titel**, wenn es ihm gleicht (`Concassé`), mit ihm endet
+  (`Parfait einfrieren` → „Einfrieren“) oder vor einer Zahl mit ihm beginnt
+  (`Durchwärmen 12–18 Min.` → „Durchwärmen“).
+- Gibt es einen Titel in mehreren Gängen (`Anrichten`), zählt in `Gang N`-Phasen der
+  Gang der Phase, sonst der Gang des ersten Treffers im Eintrag; ohne Gang bleibt der
+  Eintrag Text (Hinweis). Eindeutige Namen dürfen aus jedem Gang kommen.
+- Ein Schritt darf in mehreren Phasen stehen (`Knochen rösten (ggf. schon)` am T-2
+  und über „Lammschulter und Jus“ am T-1).
 
 Für ein einzelnes Gericht reicht eine Tabelle relativ zum Essen:
 

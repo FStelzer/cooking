@@ -1,11 +1,12 @@
 """Check I: Feld-Diff zweier unabhängiger Konvertierungen derselben Quelle.
 
-Schritte werden über (Task-Index, label) gepaart, Zutaten über id oder Namenswörter.
+Schritte werden über (Gang, label) gepaart — Labels sind pro Rezept bzw. Gang eindeutig, die
+Task-Aufteilung darf abweichen —, Zutaten über id oder Namenswörter.
 Ausgabe: Übereinstimmung pro Feld und die konkreten Abweichungen.
 """
 from __future__ import annotations
 
-from .util import iter_tasks, quote_key, section, words
+from .util import iter_tasks, iter_tasks_with_course, quote_key, section, words
 
 Rows = dict[str, list[tuple[str, object, object]]]
 
@@ -29,8 +30,13 @@ def _dur(d: dict | None):
     return (d.get("min"), d.get("max"), d.get("typical")) if d else None
 
 
-def _keyed(r: dict) -> dict[tuple[int, str], tuple[dict, dict]]:
-    return {(ti, st["label"]): (task, st) for ti, task in enumerate(iter_tasks(r)) for st in task["steps"]}
+def _keyed(r: dict) -> dict[tuple[str | None, str], tuple[dict, dict]]:
+    out = {}
+    for course, task in iter_tasks_with_course(r):
+        cid = course if isinstance(course, str) or course is None else course.get("id")
+        for st in task["steps"]:
+            out[(cid, st["label"])] = (task, st)
+    return out
 
 
 def diff(a: dict, b: dict) -> list[str]:

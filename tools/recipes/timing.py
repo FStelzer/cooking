@@ -44,7 +44,7 @@ def check_e(recipe: dict, source: str) -> tuple[list[str], list[str]]:
         tasks = [t for sec in sections(course, "tasks") for t in sec["tasks"]]
         if not tasks:
             continue
-        want = {m[1] for m in re.finditer(r"^(\d+)\. ", blocks.get(course["id"], ""), re.M)}
+        want = {m[1] for m in re.finditer(r"^(?:\*\*)?(\d+)\. ", blocks.get(course["id"], ""), re.M)}
         have = {st["label"] for t in tasks for st in t["steps"]}
         missing, extra = sorted(want - have, key=int), sorted(h for h in have - want if h.isdigit())
         if missing:
@@ -130,8 +130,10 @@ def service_times(recipe: dict) -> dict[str, tuple[int, int, dict]]:
     serve = {c["ref"]: secs(c["serve"]) or 0 for c in recipe.get("courses", [])}
     tasks = {t["id"]: t for t in iter_tasks(recipe)}
     out = {}
+    step_task = {st["id"]: t["id"] for t in tasks.values() for st in t["steps"]}
     for sec in sections(recipe, "schedule"):
         phases = {p["id"]: p for p in sec["schedule"]["phases"]}
+        phase_cursor: dict[str, int] = {}
         for e in sec["schedule"]["entries"]:
             ph = phases[e["phase"]]
             if e.get("at"):
@@ -139,14 +141,17 @@ def service_times(recipe: dict) -> dict[str, tuple[int, int, dict]]:
                 base = serve.get(ref.split(":")[1], 0) if ref.startswith("course:") else 0
                 t0 = base + off
             elif ph.get("at") is not None and ph.get("part") == "service":
-                t0 = secs(ph["at"]) or 0
+                t0 = max(secs(ph["at"]) or 0, phase_cursor.get(e["phase"], -10**9))  # ohne eigene Zeit: nach dem vorigen Eintrag der Phase
             else:
                 continue
             cur = t0
-            for tid in e.get("tasks", []):
-                span = task_span(tasks[tid])
-                out[tid] = (cur, cur + span, e)
+            units = [(tid, task_span(tasks[tid])) for tid in e.get("tasks", [])]
+            units += [(step_task[s], sum(_dur(x) for x in tasks[step_task[s]]["steps"] if x["id"] == s)) for s in e.get("steps", []) if s in step_task]
+            for tid, span in units:
+                start = min(out[tid][0], cur) if tid in out else cur
+                out[tid] = (start, max(out[tid][1] if tid in out else 0, cur + span), e)
                 cur += span
+            phase_cursor[e["phase"]] = cur
     return out
 
 

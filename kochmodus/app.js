@@ -88,7 +88,11 @@ function renderKochen() {
     if (!es.length) continue;
     html += `<section class="phase"><h2>${esc(p.label)}</h2>`;
     for (const e of es) {
-      const xs = e.steps?.length ? e.steps.map((id) => byId[id]).filter(Boolean) : (e.tasks || []).flatMap((t) => byTask[t] || []);
+      // Eintrag nennt Schritte und/oder Tasks: Vereinigung, Schritte zuerst, ohne Dubletten
+      const seen = new Set(), xs = [];
+      for (const x of [...(e.steps || []).map((id) => byId[id]), ...(e.tasks || []).flatMap((t) => byTask[t] || [])]) {
+        if (x && !seen.has(x.step.id)) { seen.add(x.step.id); xs.push(x); }
+      }
       if (!xs.length) { html += plainRow(`e:${p.id}:${e.text}`, e.text, e.course ? courseTitle(courses().find((c) => c.id === e.course)) : ""); continue; }
       html += `<p class="entry-head">${mdInline(e.text)}${e.derived ? ' <span class="fine">(abgeleitet)</span>' : ""}</p>`;
       for (const x of xs) { placed.add(x.step.id); html += stepRow(x.step, x.course, x.task); }
@@ -104,7 +108,10 @@ function renderPlan() {
   if (!sec) { main.innerHTML = `<p class="empty">Kein Zeitplan im Rezept.</p>`; return; }
   const sch = sec.schedule, lanes = [{ id: null, name: "Menü" }, ...courses().map((c) => ({ id: c.id, name: courseTitle(c) }))];
   const allTasks = Object.fromEntries(tasksOf(recipe).map(({ task }) => [task.id, task]));
-  const done = (e) => (e.tasks || []).length && e.tasks.every((t) => allTasks[t]?.steps.every((s) => state.done[s.id]));
+  const done = (e) => {
+    const ids = [...(e.steps || []), ...(e.tasks || []).flatMap((t) => (allTasks[t]?.steps || []).map((s) => s.id))];
+    return ids.length && ids.every((id) => state.done[id]);
+  };
   let h = `<div class="gantt-scroll"><div class="gantt" style="--cols:${sch.phases.length}"><div class="ph corner"></div>`;
   h += sch.phases.map((p) => `<div class="ph">${esc(p.label)}</div>`).join("");
   for (const lane of lanes) {
