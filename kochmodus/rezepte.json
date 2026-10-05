@@ -98,6 +98,13 @@
   "cooked": true
  },
  {
+  "path": "../gerichte/paneer-projekt.json",
+  "title": "Paneer-Projekt — selbstgemachter Paneer mit Matar & Palak (4 Portionen, 2 Saucen)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": true
+ },
+ {
   "path": "../gerichte/shawarma-libanesisch.json",
   "title": "Hähnchen-Shawarma, libanesisch — mit Toum, Tabbouleh und Batata harra (4 Portionen)",
   "group": "gerichte",

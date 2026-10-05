@@ -1,0 +1,2141 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/paneer-projekt",
+  "kind": "dish",
+  "title": "Paneer-Projekt — selbstgemachter Paneer mit Matar & Palak (4 Portionen, 2 Saucen)",
+  "status": "done",
+  "yields": {
+    "text": "4 Portionen, 2 Saucen",
+    "value": 4.0,
+    "unit": "Portionen"
+  },
+  "intro": "*Aktive Zeit \\~1,5 Std., gesamt am Stück \\~3,5–4 Std. (Paneer: \\~25 Min. Milch aufkochen + 1–2 Std. Presszeit + 30 Min. kühlen). Entspannter Weg: Paneer komplett am Vortag. Am Kochtag dann nur noch Vorarbeit + 2 Saucen ≈ 1,25 Std. Wer alles an einem Tag macht: während der Paneer presst, Vorarbeit erledigen und die Matar-Basis (Matar anbraten bis Matar pürieren) schon bauen. Equipment: 6L-Topf für die Milch, Passiertuch + feines Sieb (vorhanden ✓), Stabmixer (vorhanden ✓), 2 Pfannen/Töpfe für die Saucen.*\n\nZwei Saucen parallel klingt nach viel, ist es aber nicht: Beide teilen sich die\nZwiebel-Ingwer-Knoblauch-Vorarbeit, und der Paneer ist ohnehin eine Charge.\nErgebnis ist ein kleines \"Thali\": ein Teller, zwei Schälchen, Reis, Naan.",
+  "times": {
+    "text": "Aktive Zeit ~1,5 Std., gesamt am Stück ~3,5–4 Std.",
+    "active": {
+      "typical": "PT1H30M",
+      "source": "1,5 Std."
+    },
+    "total": {
+      "min": "PT3H30M",
+      "max": "PT4H",
+      "source": "~3,5–4 Std.",
+      "estimated": true
+    }
+  },
+  "equipment": [
+    "6L-Topf für die Milch",
+    "Passiertuch + feines Sieb (vorhanden ✓)",
+    "Stabmixer (vorhanden ✓)",
+    "2 Pfannen/Töpfe für die Saucen"
+  ],
+  "ingredients": [
+    {
+      "id": "vollmilch",
+      "name": "frische Vollmilch 3,8 %",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "4 L"
+      },
+      "note": "4 × 1 L; Verbrauch 3,5 L, Rest fürs Frühstück"
+    },
+    {
+      "id": "sahne",
+      "name": "Sahne",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "200 ml"
+      },
+      "note": "je \\~2 EL pro Sauce, Rest für Raita/Kaffee"
+    },
+    {
+      "id": "joghurt",
+      "name": "Joghurt",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "500 g"
+      },
+      "optional": true,
+      "note": "Raita"
+    },
+    {
+      "id": "butter",
+      "name": "Butter",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "note": "\\~90 g Verbrauch: 2 EL pro Sauce, Stich Butter, Paneer anbraten — oder Ghee, falls vorhanden"
+    },
+    {
+      "id": "zitronen",
+      "name": "Zitronen",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3"
+      },
+      "note": "\\~5–6 EL Saft zum Säuern von 3,5 L und Abschmecken beider Saucen"
+    },
+    {
+      "id": "blattspinat",
+      "name": "frischer Blattspinat",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "500 g"
+      }
+    },
+    {
+      "id": "zwiebeln",
+      "name": "mittlere Zwiebeln",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "4"
+      },
+      "note": "2 pro Sauce"
+    },
+    {
+      "id": "knoblauch",
+      "name": "Knoblauch",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Knolle"
+      },
+      "note": "\\~8 Zehen Verbrauch"
+    },
+    {
+      "id": "ingwer",
+      "name": "cm Ingwer",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "6"
+      }
+    },
+    {
+      "id": "tomaten",
+      "name": "reife Tomaten",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "400 g"
+      },
+      "note": "oder 1 Dose gehackte Tomaten als Backup"
+    },
+    {
+      "id": "spitzpaprika",
+      "name": "grüne Spitzpaprika",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "optional": true,
+      "note": "für Palak"
+    },
+    {
+      "id": "salatgurke",
+      "name": "Salatgurke",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "½"
+      },
+      "optional": true,
+      "note": "Raita"
+    },
+    {
+      "id": "koriandergruen",
+      "name": "Koriandergrün",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      },
+      "note": "Verweigerer nehmen Petersilie"
+    },
+    {
+      "id": "tk-erbsen",
+      "name": "TK-Erbsen",
+      "store": "Aldi / REWE",
+      "group": "Tiefkühl",
+      "buy": {
+        "text": "300 g"
+      },
+      "note": "Verbrauch \\~250 g"
+    },
+    {
+      "id": "cashews",
+      "name": "Cashews, natur",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "note": "kleinste Packung; Verbrauch \\~30 g"
+    },
+    {
+      "id": "basmatireis",
+      "name": "Basmatireis",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "400 g"
+      },
+      "note": "reichlich für 2+1 — bewusst, gekochter Reis + Matar-Reste tragen einen zweiten Tag"
+    },
+    {
+      "id": "naan",
+      "name": "Naan oder Fladenbrot",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "optional": true,
+      "note": "REWE Backregal hat meist welches"
+    },
+    {
+      "id": "kasuri",
+      "name": "Kasuri Methi",
+      "store": "Online",
+      "buy": {
+        "text": "1 Packung"
+      },
+      "note": "getrocknete Bockshornkleeblätter"
+    },
+    {
+      "id": "kreuzkuemmel",
+      "name": "Kreuzkümmel ganz",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Samen"
+    },
+    {
+      "id": "garam",
+      "name": "Garam Masala",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "kurkuma",
+      "name": "Kurkuma",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "koriander",
+      "name": "Koriander gemahlen",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "paprika",
+      "name": "Paprika edelsüß",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "kardamomkapseln",
+      "name": "grüne Kardamomkapseln",
+      "store": "Vorrat",
+      "buy": {
+        "text": "2–3"
+      },
+      "pantry": true,
+      "note": "für Matar"
+    },
+    {
+      "id": "zimtstange",
+      "name": "kleine Zimtstange",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1"
+      },
+      "pantry": true,
+      "note": "für Matar"
+    },
+    {
+      "id": "nelken",
+      "name": "Nelken",
+      "store": "Vorrat",
+      "buy": {
+        "text": "2"
+      },
+      "pantry": true,
+      "note": "für Matar"
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "zucker",
+      "name": "Zucker",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Komponenten",
+      "level": 2,
+      "markdown": "1. Paneer (aus 3,5 L Milch, realistisch \\~500–600 g)\n2. Matar Paneer — Tomaten-Cashew-Sauce mit Erbsen\n3. Palak Paneer — Spinat-Sauce\n4. Basmatireis + optional Naan/Fladenbrot, Joghurt-Raita"
+    },
+    {
+      "type": "markdown",
+      "title": "Stil-Entscheidung",
+      "level": 2,
+      "markdown": "- **Paneer selbst machen statt kaufen:** Der eigentliche Punkt des Projekts.\n  Frischer Paneer ist weicher und milchiger als jede Vakuumware; Aufwand ist\n  minimal (Milch kochen, säuern, pressen). Säuerung mit Zitronensaft — gibt\n  weiche, buttrige Bruchstücke; Essig geht als Backup, wenn die Milch nicht\n  gerinnen will.\n- **Milde by design:** Beide Saucen ohne Chili gebaut. Farbe und Wärme kommen\n  aus Paprika edelsüß + Garam Masala statt Chilipulver. Schärfe wie immer\n  pro Teller (frische Chili / Chiliöl).\n- **Kaschmir-Chili-Ersatz:** Klassische Rezepte nutzen Kashmiri Chili (viel\n  Farbe, wenig Schärfe). Paprika edelsüß ist funktional derselbe Move und\n  liegt eh im Schrank.",
+      "tags": [
+        "stil"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Milch:** 3,5 L **frische Vollmilch** (3,8 %, Kühlregal — REWE/Aldi).\n  Frisch ist erste Wahl, ESL funktioniert; **H-Milch vermeiden** — beide\n  Referenzen (Dassana, Swasthi) raten explizit von UHT ab: gerinnt schlechter\n  und liefert weniger Ausbeute. **Keine fettarme Milch** — weniger Ausbeute,\n  krümeliger Käse. Ausbeute-Angaben streuen stark: Dassana \\~200 g/L, Swasthi\n  nur \\~100–125 g/L bei homogenisierter Milch. Realistische Annahme für\n  deutsche Frischmilch: **\\~150–180 g/L** → 3,5 L ≈ 500–600 g, genug für zwei\n  Saucen à 4 Portionen (je \\~250 g) plus Probier-Würfel. 3 L wären auf Kante\n  genäht.\n- **Kasuri Methi (getrocknete Bockshornkleeblätter):** Der eine\n  Spezialeinkauf, und er lohnt sich — das typische \"Restaurant-Aroma\" beider\n  Saucen. **Realistische Einschätzung: hat unser Asialaden vermutlich NICHT**\n  (ist auf Ostasien sortiert). Quellen: indischer/pakistanischer Laden oder\n  online — z. B. TRS Kasuri Methi 100 g, \\~2–4 € (Amazon.de, asia4friends.de\n  u. a.; verifiziert verfügbar). Hält ewig, taugt auch für Butter Chicken & Co.\n  Zur Not weglassen — funktioniert, verliert aber den letzten Schliff.\n- **Spinat:** 500 g **frischer Blattspinat** (REWE, Beutelware ist fein).\n  Fallback: 450 g TK-Blattspinat (ganze Blätter, **kein Rahmspinat**) — Farbe\n  wird etwas stumpfer, geht aber.\n- **Cashews:** Natur, ungesalzen (REWE Backregal/Nüsse).",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "paneer",
+          "name": "Paneer",
+          "steps": [
+            {
+              "id": "milch-kochen",
+              "label": "1",
+              "heading": "**1. Milch kochen (20–25 Min.)**",
+              "title": "Milch kochen",
+              "duration": {
+                "min": "PT20M",
+                "max": "PT25M",
+                "source": "20–25 Min."
+              },
+              "text": "3,5 L Vollmilch im 6L-Topf unter gelegentlichem Rühren (Boden!) zum Kochen bringen — dauert bei der Menge gut 20 Min., beim Aufwallen dabeibleiben. Herd ausschalten, 1 Min. warten.",
+              "action": "3,5 L Vollmilch im 6L-Topf unter gelegentlichem Rühren (Boden!) zum Kochen bringen — dauert bei der Menge gut 20 Min., beim Aufwallen dabeibleiben.",
+              "timers": [
+                {
+                  "label": "Milch kochen",
+                  "duration": {
+                    "typical": "PT20M"
+                  },
+                  "text": "20 Min."
+                },
+                {
+                  "label": "Milch kochen",
+                  "duration": {
+                    "typical": "PT1M"
+                  },
+                  "text": "1 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "vollmilch",
+                  "amount": {
+                    "text": "3,5 L Vollmilch",
+                    "value": 3.5,
+                    "unit": "l"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "saeuern",
+              "label": "2",
+              "heading": "**2. Säuern (5 Min.)**",
+              "title": "Säuern",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Saft von 1–1,5 Zitronen (\\~5 EL) mit 5 EL Wasser mischen. **Schrittweise** einrühren: erst die Hälfte, sanft rühren, zuschauen. Die Milch trennt sich in weiße Bruchstücke und gelblich-klare Molke. Ist die Molke nach 1 Min. noch milchig, löffelweise mehr Zitronensaft. *Sobald sauber getrennt: aufhören. Mehr Säure und mehr Hitze = harter, grießiger Paneer. Gerinnt nichts (kann bei stark homogenisierter Milch dauern), kurz wieder auf kleinste Hitze und 1 EL Essig nachhelfen.*",
+              "action": "Saft von 1–1,5 Zitronen (\\~5 EL) mit 5 EL Wasser mischen.",
+              "why": "Sobald sauber getrennt: aufhören. Mehr Säure und mehr Hitze = harter, grießiger Paneer. Gerinnt nichts (kann bei stark homogenisierter Milch dauern), kurz wieder auf kleinste Hitze und 1 EL Essig nachhelfen.",
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT1M",
+                    "source": "1 Min."
+                  },
+                  "text": "Ist die Molke nach 1 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "1–1,5 Zitronen",
+                    "value": 1.0,
+                    "unit": "Stück",
+                    "max": 1.5
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "5 EL Wasser",
+                    "value": 5.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "abgiessen-spuelen",
+              "label": "3",
+              "heading": "**3. Abgießen & spülen (5 Min.)**",
+              "title": "Abgießen & spülen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Sieb mit Passiertuch über einen zweiten Topf (Molke auffangen!). Bruch hineingießen, kurz abtropfen, dann unter kaltem Wasser durchspülen — *wichtig, sonst schmeckt der Käse nach Zitrone* — und sanft ausdrücken.",
+              "action": "Sieb mit Passiertuch über einen zweiten Topf (Molke auffangen!).",
+              "ingredients": [],
+              "attention": "active"
+            },
+            {
+              "id": "pressen",
+              "label": "4",
+              "heading": "**4. Pressen (1–2 Std. + 30 Min. passiv)**",
+              "title": "Pressen",
+              "duration": {
+                "min": "PT1H30M",
+                "max": "PT2H30M",
+                "source": "1–2 Std. + 30 Min."
+              },
+              "attention": "passive",
+              "text": "Tuch straff zum Paket wickeln, auf einen Teller, Brett drauf, mit \\~2–3 kg beschweren (der wassergefüllte 6L-Topf passt). Referenzen streuen: Dassana sagt 30–40 Min. reichen für fest, Swasthi presst 3–4 Std. für schnittfest. Praxis-Mittelweg: **mindestens 1 Std., bei Zeit (Vortag!) eher 2 Std.** — länger = fester, die Würfel überleben das Umrühren besser. Danach (im Tuch) 30 Min. kühlen und in \\~2,5 cm Würfel schneiden. *Einen Würfel mit einer Prise Salz probieren — Pflichtprogramm.*",
+              "action": "Tuch straff zum Paket wickeln, auf einen Teller, Brett drauf, mit \\~2–3 kg beschweren (der wassergefüllte 6L-Topf passt).",
+              "limits": [
+                "mindestens 1 Std., bei Zeit (Vortag!) eher 2 Std."
+              ],
+              "why": "Einen Würfel mit einer Prise Salz probieren — Pflichtprogramm.",
+              "timers": [
+                {
+                  "label": "Pressen",
+                  "duration": {
+                    "min": "PT30M",
+                    "max": "PT40M"
+                  },
+                  "text": "30–40 Min."
+                },
+                {
+                  "label": "Pressen",
+                  "duration": {
+                    "min": "PT3H",
+                    "max": "PT4H"
+                  },
+                  "text": "3–4 Std."
+                },
+                {
+                  "label": "Pressen",
+                  "duration": {
+                    "typical": "PT2H"
+                  },
+                  "text": "2 Std."
+                },
+                {
+                  "label": "Pressen",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "30 Min."
+                }
+              ],
+              "ingredients": []
+            },
+            {
+              "id": "molke-nicht-wegkippen",
+              "label": "5",
+              "heading": "**5. Molke nicht wegkippen (ca. 2 Min.)**",
+              "title": "Molke nicht wegkippen",
+              "duration": {
+                "typical": "PT2M",
+                "source": "ca. 2 Min.",
+                "estimated": true
+              },
+              "text": "Ergibt \\~2,5–3 L. Ersetzt Wasser im Naan-/Brotteig, in Dal oder beim Reiskochen — oder eine Tasse davon zum Verdünnen der Saucen nutzen.",
+              "action": "Ergibt \\~2,5–3 L.",
+              "ingredients": [],
+              "meta": "*nach Abgießen & spülen*",
+              "attention": "active",
+              "after": [
+                "step:abgiessen-spuelen"
+              ]
+            }
+          ],
+          "heading": "**Paneer (Vortag, \\~35 Min. aktiv + 1–2 Std. pressen, Kühlschrank):**",
+          "phaseHint": "Vortag",
+          "produces": [
+            {
+              "id": "paneer",
+              "name": "Paneer",
+              "storage": {
+                "place": "fridge"
+              }
+            }
+          ],
+          "consumes": [
+            "product:saucen"
+          ]
+        },
+        {
+          "id": "saucen",
+          "name": "Saucen",
+          "steps": [
+            {
+              "id": "gemeinsame-vorarbeit",
+              "label": "6",
+              "heading": "**6. Gemeinsame Vorarbeit (15 Min.)**",
+              "title": "Gemeinsame Vorarbeit",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "Für beide Saucen: 4 Zwiebeln fein würfeln, 8 Knoblauchzehen + 6 cm Ingwer zu Paste reiben/hacken (Hälfte pro Sauce). 500 g Spinat waschen. 30 g Cashews (\\~20 Stück) in 100 ml heißem Wasser einweichen. Optional: Paneer-Würfel in 1–2 EL Butter/Ghee rundum goldbraun anbraten und **in warmem, leicht gesalzenem Wasser parken** — hält die Würfel weich statt zäh (Dassana legt gebratenen Paneer 3–4 Min. in Wasser; Swasthi weicht Paneer 10–20 Min. in warmem Wasser ein — der Trick zielt v. a. auf Kaufware, frischer selbstgemachter Paneer braucht ihn kaum). Wer es weicher mag: Anbraten ganz weglassen.",
+              "action": "Für beide Saucen: 4 Zwiebeln fein würfeln, 8 Knoblauchzehen + 6 cm Ingwer zu Paste reiben/hacken (Hälfte pro Sauce).",
+              "limits": [
+                "in warmem, leicht gesalzenem Wasser parken"
+              ],
+              "timers": [
+                {
+                  "label": "Gemeinsame Vorarbeit",
+                  "duration": {
+                    "min": "PT3M",
+                    "max": "PT4M"
+                  },
+                  "text": "3–4 Min."
+                },
+                {
+                  "label": "Gemeinsame Vorarbeit",
+                  "duration": {
+                    "min": "PT10M",
+                    "max": "PT20M"
+                  },
+                  "text": "10–20 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "zwiebeln",
+                  "amount": {
+                    "text": "4 Zwiebeln",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "8 Knoblauchzehen",
+                    "value": 8.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "ingwer",
+                  "amount": {
+                    "text": "6 cm Ingwer",
+                    "value": 6.0,
+                    "unit": "cm"
+                  }
+                },
+                {
+                  "ref": "blattspinat",
+                  "amount": {
+                    "text": "500 g Spinat",
+                    "value": 500.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "cashews",
+                  "amount": {
+                    "text": "30 g Cashews",
+                    "value": 30.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "100 ml heißem Wasser",
+                    "value": 100.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "1–2 EL Butter/Ghee",
+                    "value": 1.0,
+                    "unit": "EL",
+                    "max": 2.0
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            }
+          ],
+          "heading": "**Saucen (Kochtag, \\~1,25 Std.):**",
+          "produces": [
+            {
+              "id": "saucen",
+              "name": "Saucen"
+            }
+          ],
+          "consumes": [
+            "product:paneer"
+          ]
+        },
+        {
+          "id": "matar-paneer-tomaten-cashew-sauce",
+          "name": "Matar Paneer — Tomaten-Cashew-Sauce",
+          "steps": [
+            {
+              "id": "matar-anbraten",
+              "label": "7",
+              "heading": "**7. Matar anbraten (10 Min.)**",
+              "title": "Matar anbraten",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "2 EL Butter/Ghee erhitzen. 1 TL Kreuzkümmelsamen, 2–3 Kardamomkapseln, 1 kleine Zimtstange, 2 Nelken 30 Sek. rösten. 2 Zwiebeln (die Hälfte) goldbraun braten — dauert 8–10 Min., nicht abkürzen, das ist die Basis-Süße.",
+              "action": "2 EL Butter/Ghee erhitzen.",
+              "timers": [
+                {
+                  "label": "Matar anbraten",
+                  "duration": {
+                    "typical": "PT30S"
+                  },
+                  "text": "30 Sek."
+                },
+                {
+                  "label": "Matar anbraten",
+                  "duration": {
+                    "min": "PT8M",
+                    "max": "PT10M"
+                  },
+                  "text": "8–10 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "2 EL Butter/Ghee",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "kreuzkuemmel",
+                  "amount": {
+                    "text": "1 TL Kreuzkümmelsamen",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "kardamomkapseln",
+                  "amount": {
+                    "text": "2–3 Kardamomkapseln",
+                    "value": 2.0,
+                    "unit": "Stück",
+                    "max": 3.0
+                  }
+                },
+                {
+                  "ref": "zimtstange",
+                  "amount": {
+                    "text": "1 kleine Zimtstange",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "nelken",
+                  "amount": {
+                    "text": "2 Nelken",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "zwiebeln",
+                  "amount": {
+                    "text": "2 Zwiebeln",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*nach Gemeinsame Vorarbeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:gemeinsame-vorarbeit"
+              ]
+            },
+            {
+              "id": "tomaten-einkochen",
+              "label": "8",
+              "heading": "**8. Tomaten einkochen (10 Min.)**",
+              "title": "Tomaten einkochen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Die Hälfte der Ingwer-Knoblauch-Paste 1 Min. mitbraten. 400 g Tomaten gewürfelt dazu, plus ½ TL Kurkuma, 2 TL Koriander gemahlen, 2 TL Paprika edelsüß, 1 TL Salz. \\~8 Min. köcheln, bis die Tomaten zerfallen und sich Fett am Rand absetzt.",
+              "action": "Die Hälfte der Ingwer-Knoblauch-Paste 1 Min. mitbraten.",
+              "cues": [
+                "bis die Tomaten zerfallen und sich Fett am Rand absetzt"
+              ],
+              "timers": [
+                {
+                  "label": "Tomaten einkochen",
+                  "duration": {
+                    "typical": "PT1M"
+                  },
+                  "text": "1 Min."
+                },
+                {
+                  "label": "Tomaten einkochen",
+                  "duration": {
+                    "typical": "PT8M",
+                    "estimated": true
+                  },
+                  "text": "\\~8 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "tomaten",
+                  "amount": {
+                    "text": "400 g Tomaten",
+                    "value": 400.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "kurkuma",
+                  "amount": {
+                    "text": "½ TL Kurkuma",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "koriander",
+                  "amount": {
+                    "text": "2 TL Koriander gemahlen",
+                    "value": 2.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "paprika",
+                  "amount": {
+                    "text": "2 TL Paprika edelsüß",
+                    "value": 2.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended"
+            },
+            {
+              "id": "matar-puerieren",
+              "label": "9",
+              "heading": "**9. Matar pürieren (5 Min.)**",
+              "title": "Matar pürieren",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Cashews samt Einweichwasser dazu, Zimt/Kardamom/Nelken herausfischen, mit dem Stabmixer **komplett glatt** pürieren. Mit Wasser/Molke auf Sahnesaucen-Konsistenz bringen.",
+              "action": "Cashews samt Einweichwasser dazu, Zimt/Kardamom/Nelken herausfischen, mit dem Stabmixer **komplett glatt** pürieren.",
+              "limits": [
+                "komplett glatt"
+              ],
+              "ingredients": [],
+              "attention": "active"
+            },
+            {
+              "id": "matar-fertigstellen",
+              "label": "10",
+              "heading": "**10. Matar fertigstellen (10 Min.)**",
+              "title": "Matar fertigstellen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "250 g TK-Erbsen dazu, 5–8 Min. köcheln (TK ist vorblanchiert; frische Erbsen brauchen 10–12 Min.). Paneer-Hälfte einlegen, 1 TL Kasuri Methi zwischen den Handflächen zerrieben darüber, ½ TL Garam Masala, 2 EL Sahne. 2–3 Min. ziehen lassen, abschmecken (Salz, Spritzer Zitrone, Prise Zucker falls die Tomaten sauer waren).",
+              "action": "250 g TK-Erbsen dazu, 5–8 Min. köcheln (TK ist vorblanchiert; frische Erbsen brauchen 10–12 Min.).",
+              "timers": [
+                {
+                  "label": "Matar fertigstellen",
+                  "duration": {
+                    "min": "PT5M",
+                    "max": "PT8M"
+                  },
+                  "text": "5–8 Min."
+                },
+                {
+                  "label": "Matar fertigstellen",
+                  "duration": {
+                    "min": "PT10M",
+                    "max": "PT12M"
+                  },
+                  "text": "10–12 Min."
+                },
+                {
+                  "label": "Matar fertigstellen",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "tk-erbsen",
+                  "amount": {
+                    "text": "250 g TK-Erbsen",
+                    "value": 250.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "kasuri",
+                  "amount": {
+                    "text": "1 TL Kasuri Methi",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "garam",
+                  "amount": {
+                    "text": "½ TL Garam Masala",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "sahne",
+                  "amount": {
+                    "text": "2 EL Sahne",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Matar pürieren, Pressen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:matar-puerieren",
+                "step:pressen"
+              ]
+            }
+          ],
+          "heading": "**Matar Paneer — Tomaten-Cashew-Sauce (30 Min.):**",
+          "produces": [
+            {
+              "id": "matar-paneer-tomaten-cashew-sauce",
+              "name": "Matar Paneer — Tomaten-Cashew-Sauce"
+            }
+          ],
+          "consumes": [
+            "product:paneer"
+          ]
+        },
+        {
+          "id": "palak-paneer-spinat-sauce",
+          "name": "Palak Paneer — Spinat-Sauce",
+          "steps": [
+            {
+              "id": "spinat-blanchieren",
+              "label": "11",
+              "heading": "**11. Spinat blanchieren (5 Min.)**",
+              "title": "Spinat blanchieren",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Der Farb-Schritt: Reichlich Salzwasser sprudelnd kochen, den Spinat (500 g) **2 Min.** blanchieren, sofort in Eiswasser. *Ohne Eisbad wird das Grün oliv statt leuchtend — nicht verhandelbar. Und nicht länger als 2–3 Min. blanchieren: mehr Zeit = Farbe weg, Bitterkeit rauf.* Ausdrücken, mit dem Stabmixer fein pürieren (bei Bedarf 1–2 EL Blanchierwasser).",
+              "action": "Der Farb-Schritt: Reichlich Salzwasser sprudelnd kochen, den Spinat (500 g) **2 Min.** blanchieren, sofort in Eiswasser.",
+              "limits": [
+                "2 Min."
+              ],
+              "timers": [
+                {
+                  "label": "Spinat blanchieren",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                },
+                {
+                  "label": "Spinat blanchieren",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "blattspinat",
+                  "amount": {
+                    "text": "500 g",
+                    "value": 500.0,
+                    "unit": "g"
+                  },
+                  "reuse": true
+                }
+              ],
+              "meta": "*nach Gemeinsame Vorarbeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:gemeinsame-vorarbeit"
+              ]
+            },
+            {
+              "id": "palak-anbraten",
+              "label": "12",
+              "heading": "**12. Palak anbraten (5 Min.)**",
+              "title": "Palak anbraten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "2 EL Butter/Ghee, 1 TL Kreuzkümmelsamen rösten, restliche 2 Zwiebeln glasig bis leicht golden braten, restliche Ingwer-Knoblauch-Paste + optional 1 fein gewürfelte Spitzpaprika 2 Min. mit. ½ TL Koriander gemahlen, Prise Kurkuma.",
+              "action": "2 EL Butter/Ghee, 1 TL Kreuzkümmelsamen rösten, restliche 2 Zwiebeln glasig bis leicht golden braten, restliche Ingwer-Knoblauch-Paste + optional 1 fein gewürfelte Spitzpaprika 2 Min. mit.",
+              "timers": [
+                {
+                  "label": "Palak anbraten",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "2 EL Butter/Ghee",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "kreuzkuemmel",
+                  "amount": {
+                    "text": "1 TL Kreuzkümmelsamen",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "zwiebeln",
+                  "amount": {
+                    "text": "2 Zwiebeln",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "spitzpaprika",
+                  "amount": {
+                    "text": "1 fein gewürfelte Spitzpaprika",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "koriander",
+                  "amount": {
+                    "text": "½ TL Koriander gemahlen",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*nach Gemeinsame Vorarbeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:gemeinsame-vorarbeit"
+              ]
+            },
+            {
+              "id": "spinat-einruehren",
+              "label": "13",
+              "heading": "**13. Spinat einrühren (3 Min.)**",
+              "title": "Spinat einrühren",
+              "duration": {
+                "typical": "PT3M",
+                "source": "3 Min."
+              },
+              "text": "Spinatpüree einrühren und **nur 2–3 Min.** sanft erhitzen — langes Kochen ab hier kostet wieder Farbe. Mit Wasser/Molke einstellen.",
+              "action": "Spinatpüree einrühren und **nur 2–3 Min.** sanft erhitzen — langes Kochen ab hier kostet wieder Farbe.",
+              "limits": [
+                "nur 2–3 Min."
+              ],
+              "timers": [
+                {
+                  "label": "Spinat einrühren",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Spinat blanchieren, Palak anbraten · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:spinat-blanchieren",
+                "step:palak-anbraten"
+              ]
+            },
+            {
+              "id": "palak-fertigstellen",
+              "label": "14",
+              "heading": "**14. Palak fertigstellen (2 Min.)**",
+              "title": "Palak fertigstellen",
+              "duration": {
+                "typical": "PT2M",
+                "source": "2 Min."
+              },
+              "text": "Paneer-Hälfte dazu, 1 TL zerriebenes Kasuri Methi, ½ TL Garam Masala, 2 EL Sahne + Stich Butter. 2 Min. ziehen lassen, nicht mehr kochen. Salz, Spritzer Zitrone.",
+              "action": "Paneer-Hälfte dazu, 1 TL zerriebenes Kasuri Methi, ½ TL Garam Masala, 2 EL Sahne + Stich Butter.",
+              "timers": [
+                {
+                  "label": "Palak fertigstellen",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "kasuri",
+                  "amount": {
+                    "text": "1 TL zerriebenes Kasuri Methi",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "garam",
+                  "amount": {
+                    "text": "½ TL Garam Masala",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "sahne",
+                  "amount": {
+                    "text": "2 EL Sahne",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Spinat einrühren, Pressen*",
+              "attention": "active",
+              "after": [
+                "step:spinat-einruehren",
+                "step:pressen"
+              ]
+            }
+          ],
+          "heading": "**Palak Paneer — Spinat-Sauce (30 Min.):**",
+          "produces": [
+            {
+              "id": "palak-paneer-spinat-sauce",
+              "name": "Palak Paneer — Spinat-Sauce"
+            }
+          ],
+          "consumes": [
+            "product:paneer"
+          ]
+        },
+        {
+          "id": "reis-servieren",
+          "name": "Reis & Servieren",
+          "steps": [
+            {
+              "id": "reis",
+              "label": "15",
+              "heading": "**15. Reis (ca. 20 Min., parallel)**",
+              "title": "Reis",
+              "duration": {
+                "typical": "PT20M",
+                "source": "ca. 20 Min.",
+                "estimated": true
+              },
+              "parallel": true,
+              "text": "400 g Basmatireis wie gewohnt.",
+              "action": "400 g Basmatireis wie gewohnt.",
+              "ingredients": [
+                {
+                  "ref": "basmatireis",
+                  "amount": {
+                    "text": "400 g Basmatireis",
+                    "value": 400.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "timers": [
+                {
+                  "label": "Reis",
+                  "duration": {
+                    "typical": "PT20M"
+                  },
+                  "text": "ca. 20 Min."
+                }
+              ],
+              "after": []
+            },
+            {
+              "id": "servieren",
+              "label": "16",
+              "heading": "**16. Servieren (ca. 5 Min.)**",
+              "title": "Servieren",
+              "duration": {
+                "typical": "PT5M",
+                "source": "ca. 5 Min.",
+                "estimated": true
+              },
+              "text": "Beide Saucen in Schalen, Reis, Naan, optional Raita (500 g Joghurt + ½ geriebene Salatgurke + Prise Kreuzkümmel + Salz). Erwachsene: frische Chili oder Chiliöl pro Teller.",
+              "action": "Beide Saucen in Schalen, Reis, Naan, optional Raita (500 g Joghurt + ½ geriebene Salatgurke + Prise Kreuzkümmel + Salz).",
+              "ingredients": [
+                {
+                  "ref": "joghurt",
+                  "amount": {
+                    "text": "500 g Joghurt",
+                    "value": 500.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "salatgurke",
+                  "amount": {
+                    "text": "½ geriebene Salatgurke",
+                    "value": 0.5,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*nach Matar fertigstellen, Palak fertigstellen, Reis*",
+              "attention": "active",
+              "after": [
+                "step:matar-fertigstellen",
+                "step:palak-fertigstellen",
+                "step:reis"
+              ]
+            }
+          ],
+          "heading": "**Reis & Servieren (à la minute):**",
+          "phaseHint": "à la minute",
+          "produces": [
+            {
+              "id": "reis-servieren",
+              "name": "Reis & Servieren"
+            }
+          ],
+          "consumes": [
+            "product:saucen"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- Beide Saucen sind von Haus aus mild — keine Anpassung nötig, Schärfe kommt\n  ausschließlich pro Teller.\n- Matar ist der wahrscheinlichere Kinder-Hit (süßlich-tomatig, Erbsen);\n  Palak über den \"grüne Sauce\"-Neuigkeitswert probieren.\n- Paneer-Würfel pur mit Salz sind ein guter Snack für zwischendurch beim\n  Kochen — quietscht beim Kauen, erfahrungsgemäß ein Feature.\n- Kein Alkohol im Gericht.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "learnings",
+      "title": "Learnings",
+      "cooked": "07/2026",
+      "summary": "**Gekocht 07/2026.** Selbstgemachter Paneer hat gut geklappt — Technik\ngesetzt. Matar deutlich besser als Palak (würziger, aromatischer); dem Palak\nfehlte die langsam aufbauende indische Schärfe, die „mild by design\" +\nSchärfe-pro-Teller nicht ersetzen kann. Nächstes Mal: scharfe Sauce parallel\nkochen (milde Kinder-Abzweigung vor dem Schärfen abnehmen), gern auch mit\nHähnchen oder Lamm statt Paneer.",
+      "details": "### Details\n\n- **Paneer selbst machen: funktioniert.** Hat gut geklappt, Ergebnis war gut —\n  die Technik (säuern, spülen, pressen) ist reproduzierbar und bleibt gesetzt.\n- **Matar klar vor Palak.** Das Matar war deutlich würziger und aromatischer\n  und hat zu Hause klar besser geschmeckt. Das Palak blieb etwas flach —\n  interessant, weil es beim Inder eigentlich der Favorit ist.\n- **Diagnose Palak:** Es fehlte die typische indische Schärfe, die sich\n  langsam aufbaut. Die „mild by design\"-Entscheidung (kein Chili in der Sauce)\n  kostet beim Palak mehr als beim Matar — das Matar trägt sich über\n  Ganzgewürze, Tomate und Cashew, das Palak lebt stärker von der Schärfe.\n- **Nächstes Mal:** Die Schärfe pro Teller (Chiliöl) reicht nicht als Ersatz.\n  Stattdessen eine eigene **scharfe Sauce/Variante parallel** kochen (Kind\n  bekommt die milde) — z. B. einen Teil der Sauce abnehmen und mit grüner\n  Chili/Kashmiri-Chili separat fertig schärfen.\n- **Variante fürs nächste Mal:** Gern auch mit **Hähnchen oder Lamm** statt\n  Paneer (z. B. Saag/Palak Chicken oder Lamm-Curry auf derselben Masala-Basis)."
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Vorbereiten:** Paneer komplett am Vortag (im Wasser bedeckt im Kühlschrank\n  lagern, bleibt weich). Matar-Sauce hält sich 2–3 Tage und wird durchgezogen\n  besser; Palak möglichst frisch machen (Farbe).\n- **Nur eine Sauce?** Dann Mengen der Sauce ×1,5 und trotzdem die volle\n  Paneer-Menge — Reste-Paneer hält 3–4 Tage in Wasser und taugt gebraten als\n  Salat-/Bowl-Topping.\n- **Skalierung Milch:** Ausbeute schwankt stark mit Milchsorte und Presszeit\n  (\\~150–200 g/L bei Frischmilch); die 3,5 L sind bereits der\n  Sicherheitspuffer. Fällt die Ausbeute trotzdem unter \\~450 g: einfach etwas\n  weniger Würfel pro Sauce, die Saucen tragen das.\n- **Quellen (geprüft):**\n  - Paneer-Technik & Ausbeute: Dassana, „How to make Paneer\"\n    (vegrecipesofindia.com/how-to-make-paneer/) — \\~200 g/L Vollmilch, 30–40\n    Min. pressen („länger = fester\"), Warnung vor UHT und fettarmer Milch,\n    Bruch spülen gegen Zitronengeschmack. Swasthi, „How to make Paneer\"\n    (indianhealthyrecipes.com/how-to-make-paneer/) — Herd aus vor der Säure,\n    Säure schrittweise, nur \\~100 g/L bei homogenisierter Milch (Rohmilch bis\n    220–250 g/L), 3–4 Std. pressen mit 2,5–3 kg für schnittfest, UHT gerinnt\n    schlecht.\n  - Palak: Swasthi (indianhealthyrecipes.com/palak-paneer/) — Blanchieren\n    2 Min. + Eiswasser, Püree nur \\~2 Min. erhitzen, „cooking for long …\n    discolors the gravy\". Dassana (vegrecipesofindia.com/palak-paneer/) —\n    blanchiert nur \\~1 Min., köchelt das Püree dafür 6–7 Min.; wir folgen beim\n    Kochen der kurzen Swasthi-Variante (Farbe).\n  - Matar: Swasthi (indianhealthyrecipes.com/matar-paneer/) — Kardamom, Zimt,\n    (Nelken), Kreuzkümmel als Ganzgewürze, Zwiebel-Tomaten-Masala pürieren,\n    1 TL Kasuri Methi, ¾–1 TL Garam Masala. Sie nimmt nur 12 Cashews (\\~18 g)\n    auf 4 Portionen — unsere 30 g machen es bewusst einen Tick cremiger.\n  - Warmwasser-Trick: Swasthi (matar-paneer-Artikel: 15–20 Min. warmes\n    Wasser gegen zähen Paneer), Dassana (palak-paneer-Artikel: gebratenen\n    Paneer 3–4 Min. wässern).\n  - Kasuri Methi online: TRS 100 g via Amazon.de / asia4friends.de (\\~2–4 €),\n    Verfügbarkeit Juli 2026 geprüft.",
+      "tags": [
+        "notizen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T19:01:27Z",
+    "sourceHash": "f2dec378af4e8b47",
+    "quantities": [
+      {
+        "ingredient": "vollmilch",
+        "total": {
+          "text": "3500 ml",
+          "value": 3500.0,
+          "max": 3500.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "paneer": "3,5 L Vollmilch"
+        }
+      },
+      {
+        "ingredient": "sahne",
+        "total": {
+          "text": "4 EL",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "matar-paneer-tomaten-cashew-sauce": "2 EL Sahne",
+          "palak-paneer-spinat-sauce": "2 EL Sahne"
+        }
+      },
+      {
+        "ingredient": "joghurt",
+        "total": {
+          "text": "500 g",
+          "value": 500.0,
+          "max": 500.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "reis-servieren": "500 g Joghurt"
+        }
+      },
+      {
+        "ingredient": "butter",
+        "total": {
+          "text": "5–6 EL",
+          "value": 5.0,
+          "max": 6.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "saucen": "1–2 EL Butter/Ghee",
+          "matar-paneer-tomaten-cashew-sauce": "2 EL Butter/Ghee",
+          "palak-paneer-spinat-sauce": "2 EL Butter/Ghee"
+        }
+      },
+      {
+        "ingredient": "zitronen",
+        "total": {
+          "text": "1–1½",
+          "value": 1.0,
+          "max": 1.5,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "paneer": "1–1,5 Zitronen"
+        }
+      },
+      {
+        "ingredient": "blattspinat",
+        "total": {
+          "text": "500 g",
+          "value": 500.0,
+          "max": 500.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "saucen": "500 g Spinat"
+        }
+      },
+      {
+        "ingredient": "zwiebeln",
+        "total": {
+          "text": "8",
+          "value": 8.0,
+          "max": 8.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "saucen": "4 Zwiebeln",
+          "matar-paneer-tomaten-cashew-sauce": "2 Zwiebeln",
+          "palak-paneer-spinat-sauce": "2 Zwiebeln"
+        }
+      },
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": "8",
+          "value": 8.0,
+          "max": 8.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "saucen": "8 Knoblauchzehen"
+        }
+      },
+      {
+        "ingredient": "ingwer",
+        "total": {
+          "text": "6 cm",
+          "value": 6.0,
+          "max": 6.0,
+          "unit": "cm",
+          "approx": false
+        },
+        "perTask": {
+          "saucen": "6 cm Ingwer"
+        }
+      },
+      {
+        "ingredient": "tomaten",
+        "total": {
+          "text": "400 g",
+          "value": 400.0,
+          "max": 400.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "matar-paneer-tomaten-cashew-sauce": "400 g Tomaten"
+        }
+      },
+      {
+        "ingredient": "spitzpaprika",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "palak-paneer-spinat-sauce": "1 fein gewürfelte Spitzpaprika"
+        }
+      },
+      {
+        "ingredient": "salatgurke",
+        "total": {
+          "text": "½",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "reis-servieren": "½ geriebene Salatgurke"
+        }
+      },
+      {
+        "ingredient": "koriandergruen",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "tk-erbsen",
+        "total": {
+          "text": "250 g",
+          "value": 250.0,
+          "max": 250.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "matar-paneer-tomaten-cashew-sauce": "250 g TK-Erbsen"
+        }
+      },
+      {
+        "ingredient": "cashews",
+        "total": {
+          "text": "30 g",
+          "value": 30.0,
+          "max": 30.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "saucen": "30 g Cashews"
+        }
+      },
+      {
+        "ingredient": "basmatireis",
+        "total": {
+          "text": "400 g",
+          "value": 400.0,
+          "max": 400.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "reis-servieren": "400 g Basmatireis"
+        }
+      },
+      {
+        "ingredient": "naan",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "kasuri",
+        "total": {
+          "text": "2 TL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "matar-paneer-tomaten-cashew-sauce": "1 TL Kasuri Methi",
+          "palak-paneer-spinat-sauce": "1 TL zerriebenes Kasuri Methi"
+        }
+      },
+      {
+        "ingredient": "kreuzkuemmel",
+        "total": {
+          "text": "2 TL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "matar-paneer-tomaten-cashew-sauce": "1 TL Kreuzkümmelsamen",
+          "palak-paneer-spinat-sauce": "1 TL Kreuzkümmelsamen"
+        }
+      },
+      {
+        "ingredient": "garam",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "matar-paneer-tomaten-cashew-sauce": "½ TL Garam Masala",
+          "palak-paneer-spinat-sauce": "½ TL Garam Masala"
+        }
+      },
+      {
+        "ingredient": "kurkuma",
+        "total": {
+          "text": "½ TL",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "matar-paneer-tomaten-cashew-sauce": "½ TL Kurkuma"
+        }
+      },
+      {
+        "ingredient": "koriander",
+        "total": {
+          "text": "2½ TL",
+          "value": 2.5,
+          "max": 2.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "matar-paneer-tomaten-cashew-sauce": "2 TL Koriander gemahlen",
+          "palak-paneer-spinat-sauce": "½ TL Koriander gemahlen"
+        }
+      },
+      {
+        "ingredient": "paprika",
+        "total": {
+          "text": "2 TL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "matar-paneer-tomaten-cashew-sauce": "2 TL Paprika edelsüß"
+        }
+      },
+      {
+        "ingredient": "kardamomkapseln",
+        "total": {
+          "text": "2–3",
+          "value": 2.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "matar-paneer-tomaten-cashew-sauce": "2–3 Kardamomkapseln"
+        }
+      },
+      {
+        "ingredient": "zimtstange",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "matar-paneer-tomaten-cashew-sauce": "1 kleine Zimtstange"
+        }
+      },
+      {
+        "ingredient": "nelken",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "matar-paneer-tomaten-cashew-sauce": "2 Nelken"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "matar-paneer-tomaten-cashew-sauce": "1 TL Salz"
+        }
+      },
+      {
+        "ingredient": "zucker",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "5 EL (+ ml ungemischt)",
+          "value": 5.0,
+          "max": 5.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "paneer": "5 EL Wasser"
+        },
+        "unitMixed": true
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Online",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "kasuri",
+            "name": "Kasuri Methi",
+            "need": {
+              "text": "2 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "2 TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Packung"
+            },
+            "note": "getrocknete Bockshornkleeblätter"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "zitronen",
+            "name": "Zitronen",
+            "need": {
+              "text": "1–1½",
+              "value": 1.0,
+              "max": 1.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1–1½",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            },
+            "note": "\\~5–6 EL Saft zum Säuern von 3,5 L und Abschmecken beider Saucen"
+          },
+          {
+            "ingredient": "blattspinat",
+            "name": "frischer Blattspinat",
+            "need": {
+              "text": "500 g",
+              "value": 500.0,
+              "max": 500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "500 g",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            }
+          },
+          {
+            "ingredient": "zwiebeln",
+            "name": "mittlere Zwiebeln",
+            "need": {
+              "text": "8",
+              "value": 8.0,
+              "max": 8.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "8",
+            "inStock": false,
+            "buy": {
+              "text": "4"
+            },
+            "note": "2 pro Sauce"
+          },
+          {
+            "ingredient": "knoblauch",
+            "name": "Knoblauch",
+            "need": {
+              "text": "8",
+              "value": 8.0,
+              "max": 8.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "8",
+            "inStock": false,
+            "buy": {
+              "text": "1 Knolle"
+            },
+            "note": "\\~8 Zehen Verbrauch"
+          },
+          {
+            "ingredient": "ingwer",
+            "name": "cm Ingwer",
+            "need": {
+              "text": "6 cm",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "cm",
+              "approx": false
+            },
+            "display": "6 cm",
+            "inStock": false,
+            "buy": {
+              "text": "6"
+            }
+          },
+          {
+            "ingredient": "tomaten",
+            "name": "reife Tomaten",
+            "need": {
+              "text": "400 g",
+              "value": 400.0,
+              "max": 400.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "400 g",
+            "inStock": false,
+            "buy": {
+              "text": "400 g"
+            },
+            "note": "oder 1 Dose gehackte Tomaten als Backup"
+          },
+          {
+            "ingredient": "spitzpaprika",
+            "name": "grüne Spitzpaprika",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "optional": true,
+            "note": "für Palak"
+          },
+          {
+            "ingredient": "salatgurke",
+            "name": "Salatgurke",
+            "need": {
+              "text": "½",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "½",
+            "inStock": false,
+            "buy": {
+              "text": "½"
+            },
+            "optional": true,
+            "note": "Raita"
+          },
+          {
+            "ingredient": "koriandergruen",
+            "name": "Koriandergrün",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            },
+            "note": "Verweigerer nehmen Petersilie"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "vollmilch",
+            "name": "frische Vollmilch 3,8 %",
+            "need": {
+              "text": "3500 ml",
+              "value": 3500.0,
+              "max": 3500.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "3500 ml",
+            "inStock": false,
+            "buy": {
+              "text": "4 L"
+            },
+            "note": "4 × 1 L; Verbrauch 3,5 L, Rest fürs Frühstück"
+          },
+          {
+            "ingredient": "sahne",
+            "name": "Sahne",
+            "need": {
+              "text": "4 EL",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "4 EL",
+            "inStock": false,
+            "buy": {
+              "text": "200 ml"
+            },
+            "note": "je \\~2 EL pro Sauce, Rest für Raita/Kaffee"
+          },
+          {
+            "ingredient": "joghurt",
+            "name": "Joghurt",
+            "need": {
+              "text": "500 g",
+              "value": 500.0,
+              "max": 500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "500 g",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            },
+            "optional": true,
+            "note": "Raita"
+          },
+          {
+            "ingredient": "butter",
+            "name": "Butter",
+            "need": {
+              "text": "5–6 EL",
+              "value": 5.0,
+              "max": 6.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "5–6 EL",
+            "inStock": false,
+            "note": "\\~90 g Verbrauch: 2 EL pro Sauce, Stich Butter, Paneer anbraten — oder Ghee, falls vorhanden"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "cashews",
+            "name": "Cashews, natur",
+            "need": {
+              "text": "30 g",
+              "value": 30.0,
+              "max": 30.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "30 g",
+            "inStock": false,
+            "note": "kleinste Packung; Verbrauch \\~30 g"
+          },
+          {
+            "ingredient": "basmatireis",
+            "name": "Basmatireis",
+            "need": {
+              "text": "400 g",
+              "value": 400.0,
+              "max": 400.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "400 g",
+            "inStock": false,
+            "buy": {
+              "text": "400 g"
+            },
+            "note": "reichlich für 2+1 — bewusst, gekochter Reis + Matar-Reste tragen einen zweiten Tag"
+          },
+          {
+            "ingredient": "naan",
+            "name": "Naan oder Fladenbrot",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "optional": true,
+            "note": "REWE Backregal hat meist welches"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Tiefkühl",
+        "items": [
+          {
+            "ingredient": "tk-erbsen",
+            "name": "TK-Erbsen",
+            "need": {
+              "text": "250 g",
+              "value": 250.0,
+              "max": 250.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "250 g",
+            "inStock": false,
+            "buy": {
+              "text": "300 g"
+            },
+            "note": "Verbrauch \\~250 g"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "kreuzkuemmel",
+            "name": "Kreuzkümmel ganz",
+            "need": {
+              "text": "2 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "2 TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "Samen"
+          },
+          {
+            "ingredient": "garam",
+            "name": "Garam Masala",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "kurkuma",
+            "name": "Kurkuma",
+            "need": {
+              "text": "½ TL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "½ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "koriander",
+            "name": "Koriander gemahlen",
+            "need": {
+              "text": "2½ TL",
+              "value": 2.5,
+              "max": 2.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "2½ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "paprika",
+            "name": "Paprika edelsüß",
+            "need": {
+              "text": "2 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "2 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "kardamomkapseln",
+            "name": "grüne Kardamomkapseln",
+            "need": {
+              "text": "2–3",
+              "value": 2.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2–3",
+            "inStock": false,
+            "buy": {
+              "text": "2–3"
+            },
+            "pantry": true,
+            "note": "für Matar"
+          },
+          {
+            "ingredient": "zimtstange",
+            "name": "kleine Zimtstange",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "pantry": true,
+            "note": "für Matar"
+          },
+          {
+            "ingredient": "nelken",
+            "name": "Nelken",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "pantry": true,
+            "note": "für Matar"
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "zucker",
+            "name": "Zucker",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "5 EL (+ ml ungemischt)",
+              "value": 5.0,
+              "max": 5.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "5 EL",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}
