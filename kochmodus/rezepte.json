@@ -208,5 +208,12 @@
   "group": "technik",
   "wip": false,
   "cooked": false
+ },
+ {
+  "path": "../technik/teriyaki-glasur.json",
+  "title": "Teriyaki-Glasur für den Grill (1–2 Lachssteaks)",
+  "group": "technik",
+  "wip": false,
+  "cooked": false
  }
 ]

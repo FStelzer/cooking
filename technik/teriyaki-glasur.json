@@ -1,0 +1,484 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "technik/teriyaki-glasur",
+  "kind": "dish",
+  "title": "Teriyaki-Glasur für den Grill (1–2 Lachssteaks)",
+  "status": "done",
+  "yields": {
+    "text": "1–2 Lachssteaks",
+    "value": 1.0,
+    "unit": "Lachssteaks"
+  },
+  "intro": "*Aktive Zeit 10 Min., gesamt 10 Min. Equipment: kleiner Topf, Pinsel, Gasgrill.*\n\nGlasur nach Teriyaki-Prinzip für Lachs vom Gasgrill — erprobt 08/2026, kam sehr\ngut an. Funktioniert genauso für Hähnchen (Flügel, Spieße), Schweinebauch oder\nAuberginen.\n\n---",
+  "times": {
+    "text": "Aktive Zeit 10 Min., gesamt 10 Min.",
+    "active": {
+      "typical": "PT10M",
+      "source": "10 Min."
+    },
+    "total": {
+      "typical": "PT10M",
+      "source": "10 Min."
+    }
+  },
+  "equipment": [
+    "kleiner Topf",
+    "Pinsel",
+    "Gasgrill"
+  ],
+  "ingredients": [
+    {
+      "id": "sojasauce",
+      "name": "Sojasauce",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "3 EL"
+    },
+    {
+      "id": "mirin",
+      "name": "Mirin",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "3 EL"
+    },
+    {
+      "id": "honig",
+      "name": "Honig oder brauner Zucker",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "1 EL"
+    },
+    {
+      "id": "ingwer",
+      "name": "Ingwer",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "1 Scheibe"
+    },
+    {
+      "id": "knoblauch",
+      "name": "Knoblauch",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "1 Zehe"
+    },
+    {
+      "id": "sesamoel",
+      "name": "Sesamöl",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "½ TL"
+    },
+    {
+      "id": "fischsauce",
+      "name": "Fischsauce",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "3–4 Tropfen"
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Prinzip",
+      "level": 2,
+      "markdown": "Teriyaki ist ein Mengenverhältnis, kein Rezept: **Sojasauce und Mirin 1:1**,\ndazu etwa **⅓ Teil Süße** (Honig oder brauner Zucker). Aromaten ziehen nur mit,\ndas Finish kommt erst vom Herd genommen dazu — Sesamöl verliert beim Kochen\nsein Aroma, Fischsauce wird gekocht schnell dominant.\n\n### Regeln\n\n- **Erst kurz vor Schluss aufstreichen.** Zucker und Honig verbrennen über\n  direkter Hitze in Minuten. Fisch/Fleisch fast fertig grillen, dann glasieren\n  und nur noch 1–2 Minuten pro Seite Farbe nehmen lassen. Bei Zwei-Zonen-Führung:\n  glasiert nur noch auf die indirekte Zone oder mit viel Aufmerksamkeit direkt.\n- **Vorher leicht einreduzieren.** Die Mischung kurz sirupartig einkochen, sonst\n  läuft sie vom Grillgut ab statt zu haften.\n- **Finish immer vom Herd:** Sesamöl und Fischsauce erst nach dem Reduzieren\n  einrühren.\n- **Kind:** unproblematisch — nicht scharf, Sojasauce mag er ohnehin."
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Teriyaki-Glasur für den Grill (1–2 Lachssteaks)",
+          "steps": [
+            {
+              "id": "reduzieren",
+              "label": "1",
+              "heading": "**1. Reduzieren (5 Min.)**",
+              "title": "Reduzieren",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "3 EL Sojasauce, 3 EL Mirin und 1 EL Honig oder brauner Zucker mit 1 Scheibe Ingwer und 1 angedrückten Knoblauchzehe kurz aufkochen und 2–3 Minuten leicht sirupartig reduzieren, Ingwer und Knoblauch dabei mitziehen lassen. Für mehr Portionen linear skalieren (Verhältnis 3 : 3 : 1 halten).",
+              "action": "3 EL Sojasauce, 3 EL Mirin und 1 EL Honig oder brauner Zucker mit 1 Scheibe Ingwer und 1 angedrückten Knoblauchzehe kurz aufkochen und 2–3 Minuten leicht sirupartig reduzieren, Ingwer und Knoblauch dabei mitziehen lassen.",
+              "timers": [
+                {
+                  "label": "Reduzieren",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "sojasauce",
+                  "amount": {
+                    "text": "3 EL Sojasauce",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "mirin",
+                  "amount": {
+                    "text": "3 EL Mirin",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "honig",
+                  "amount": {
+                    "text": "1 EL Honig",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "ingwer",
+                  "amount": {
+                    "text": "1 Scheibe Ingwer",
+                    "value": 1.0,
+                    "unit": "Scheibe"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "1 angedrückten Knoblauchzehe",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "finish",
+              "label": "2",
+              "heading": "**2. Finish (1 Min.)**",
+              "title": "Finish",
+              "duration": {
+                "typical": "PT1M",
+                "source": "1 Min."
+              },
+              "text": "**Erst vom Herd genommen:** ½ TL Sesamöl + 3–4 Tropfen Fischsauce einrühren. Ingwer und Knoblauch vor dem Aufstreichen entfernen.",
+              "action": "**Erst vom Herd genommen:** ½ TL Sesamöl + 3–4 Tropfen Fischsauce einrühren.",
+              "ingredients": [
+                {
+                  "ref": "sesamoel",
+                  "amount": {
+                    "text": "½ TL Sesamöl",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "fischsauce",
+                  "amount": {
+                    "text": "3–4 Tropfen Fischsauce",
+                    "value": 3.0,
+                    "unit": "Tropfen",
+                    "max": 4.0
+                  }
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "glasieren",
+              "label": "3",
+              "heading": "**3. Glasieren (2–4 Min.)**",
+              "title": "Glasieren",
+              "duration": {
+                "min": "PT2M",
+                "max": "PT4M",
+                "source": "2–4 Min."
+              },
+              "text": "Erst kurz vor Schluss aufstreichen: Fisch/Fleisch fast fertig grillen, dann glasieren und nur noch 1–2 Minuten pro Seite Farbe nehmen lassen.",
+              "action": "Erst kurz vor Schluss aufstreichen: Fisch/Fleisch fast fertig grillen, dann glasieren und nur noch 1–2 Minuten pro Seite Farbe nehmen lassen.",
+              "timers": [
+                {
+                  "label": "Glasieren",
+                  "duration": {
+                    "min": "PT1M",
+                    "max": "PT2M"
+                  },
+                  "text": "1–2 Min"
+                }
+              ],
+              "ingredients": [],
+              "meta": "*Grill*",
+              "claims": [
+                {
+                  "resource": "grill",
+                  "units": 1
+                }
+              ],
+              "attention": "active"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "Alles Standard-Vorrat: Sojasauce, Mirin und Fischsauce aus dem Asialaden,\nRest Aldi/REWE. Keine Engpass-Artikel.",
+      "tags": [
+        "beschaffung"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T19:13:10Z",
+    "sourceHash": "09ff9e72e6657a68",
+    "quantities": [
+      {
+        "ingredient": "sojasauce",
+        "total": {
+          "text": "3 EL",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "3 EL Sojasauce"
+        }
+      },
+      {
+        "ingredient": "mirin",
+        "total": {
+          "text": "3 EL",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "3 EL Mirin"
+        }
+      },
+      {
+        "ingredient": "honig",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 EL Honig"
+        }
+      },
+      {
+        "ingredient": "ingwer",
+        "total": {
+          "text": "1 Scheibe",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Scheibe",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Scheibe Ingwer"
+        }
+      },
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 angedrückten Knoblauchzehe"
+        }
+      },
+      {
+        "ingredient": "sesamoel",
+        "total": {
+          "text": "½ TL",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "½ TL Sesamöl"
+        }
+      },
+      {
+        "ingredient": "fischsauce",
+        "total": {
+          "text": "3–4 Tropfen",
+          "value": 3.0,
+          "max": 4.0,
+          "unit": "Tropfen",
+          "approx": false
+        },
+        "perTask": {
+          "main": "3–4 Tropfen Fischsauce"
+        }
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "sojasauce",
+            "name": "Sojasauce",
+            "need": {
+              "text": "3 EL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "3 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "3 EL"
+          },
+          {
+            "ingredient": "mirin",
+            "name": "Mirin",
+            "need": {
+              "text": "3 EL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "3 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "3 EL"
+          },
+          {
+            "ingredient": "honig",
+            "name": "Honig oder brauner Zucker",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "1 EL"
+          },
+          {
+            "ingredient": "ingwer",
+            "name": "Ingwer",
+            "need": {
+              "text": "1 Scheibe",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Scheibe",
+              "approx": false
+            },
+            "display": "1 Scheibe",
+            "inStock": false,
+            "pantry": true,
+            "note": "1 Scheibe"
+          },
+          {
+            "ingredient": "knoblauch",
+            "name": "Knoblauch",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "pantry": true,
+            "note": "1 Zehe"
+          },
+          {
+            "ingredient": "sesamoel",
+            "name": "Sesamöl",
+            "need": {
+              "text": "½ TL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "½ TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "½ TL"
+          },
+          {
+            "ingredient": "fischsauce",
+            "name": "Fischsauce",
+            "need": {
+              "text": "3–4 Tropfen",
+              "value": 3.0,
+              "max": 4.0,
+              "unit": "Tropfen",
+              "approx": false
+            },
+            "display": "3–4 Tropfen",
+            "inStock": false,
+            "pantry": true,
+            "note": "3–4 Tropfen"
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}

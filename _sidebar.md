@@ -43,4 +43,4 @@
   - [Garpunkte & Kerntemperaturen — Spickzettel](/technik/garpunkte.md)
   - [Mini-Projekte — Grundlagen-Drills für unter der Woche](/technik/mini-projekte.md)
   - [Fluffige Eierpfannkuchen — Buttermilch + Eischnee (10–12 Stück)](/technik/pfannkuchen-fluffig.md)
-  - [Teriyaki-Glasur (Grill)](/technik/teriyaki-glasur.md)
+  - [Teriyaki-Glasur für den Grill (1–2 Lachssteaks)](/technik/teriyaki-glasur.md)
