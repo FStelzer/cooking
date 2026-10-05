@@ -110,6 +110,28 @@ def cmd_lint(args) -> int:
     return 0
 
 
+def cmd_treue(args) -> int:
+    """Inhaltstreue einer Normalisierung: Token-Multiset und Zeilenabdeckung alt → neu."""
+    import re
+    from .util import source_without_generated, unit_tokens, ws_key
+    old = Path(args.alt).read_text(encoding="utf-8")
+    new = Path(args.neu).read_text(encoding="utf-8")
+    to, tn = unit_tokens(source_without_generated(old)), unit_tokens(source_without_generated(new))
+    print(f"Zahl+Einheit-Token (ohne Einkaufsliste): alt {to.total()}, neu {tn.total()}")
+    if to - tn:
+        print("  FEHLT im neuen Text:", dict(to - tn))
+    if tn - to:
+        print("  NEU (Ergänzungen, z. B. Schätz-Dauern):", dict(tn - to))
+    blob = ws_key(new)
+    pre = re.compile(r"^\s*(?:[-*]\s+\[[ x]\]\s+|[-*]\s+|\d+\.\s+|#+\s+|>\s*|\*\*\d+[a-z]?\.\s+)")
+    miss = [ws_key(pre.sub("", l)) for l in old.splitlines()]
+    miss = [l for l in miss if len(l) >= 20 and l not in blob]
+    print(f"Alte Zeilen ≥ 20 Zeichen, die nicht mehr wörtlich vorkommen: {len(miss)}")
+    for l in miss:
+        print("  ", l[:100])
+    return 1 if (to - tn) else 0
+
+
 def cmd_diff(args) -> int:
     print("\n".join(diff(load_json(args.a), load_json(args.b))))
     return 0
@@ -135,6 +157,10 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("lint", help="Parser-Hinweise zu einer Markdown-Datei")
     p.add_argument("paths", nargs="+")
     p.set_defaults(run=cmd_lint)
+    p = sub.add_parser("treue", help="Inhaltstreue alt.md → neu.md (Token-Multiset, Zeilenabdeckung)")
+    p.add_argument("alt")
+    p.add_argument("neu")
+    p.set_defaults(run=cmd_treue)
     p = sub.add_parser("diff", help="Feld-Diff zweier Konvertierungen derselben Quelle (Check I)")
     p.add_argument("a")
     p.add_argument("b")
