@@ -1,0 +1,2504 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/bouillabaisse",
+  "kind": "dish",
+  "title": "Bouillabaisse mit Fenchel-Orange-Salat (2 Erwachsene + Kind)",
+  "status": "done",
+  "yields": {
+    "text": "2 Erwachsene + Kind",
+    "value": 2.0,
+    "unit": "Erwachsene"
+  },
+  "intro": "*Aktive Zeit \\~2 Std. am Vortag (Fond & Rouille) + \\~30 Min. am Kochtag, gesamt über Nacht. Equipment: 6L-Topf, zweiter Topf zum Passieren, feines Sieb + Passiertuch, Mörser, Schneebesen, Mandoline (Salat).*\n\nMediterrane Fischsuppe mit Safran, Weißwein und Pastis, dazu klassische\nEigelb-Rouille und ein sizilianischer Fenchel-Orange-Salat, dessen Aromen die\nBrühe spiegeln. Aufteilung: Vortag Fond ansetzen (wird über Nacht besser),\nam Kochtag in \\~25 Minuten servieren.",
+  "times": {
+    "text": "Aktive Zeit ~2 Std. am Vortag (Fond & Rouille) + ~30 Min. am Kochtag, gesamt über Nacht",
+    "active": {
+      "typical": "PT2H",
+      "source": "2 Std."
+    },
+    "total": {
+      "min": "PT8H",
+      "max": "PT14H",
+      "source": "über Nacht"
+    }
+  },
+  "equipment": [
+    "6L-Topf",
+    "zweiter Topf zum Passieren",
+    "feines Sieb + Passiertuch",
+    "Mörser",
+    "Schneebesen",
+    "Mandoline (Salat)"
+  ],
+  "ingredients": [
+    {
+      "id": "fischkarkassen",
+      "name": "Fischkarkassen von weißen Fischen",
+      "store": "Buhara Seafood",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "1,5 kg"
+      },
+      "note": "mit Köpfen, ohne Kiemen"
+    },
+    {
+      "id": "heilbutt",
+      "name": "Heilbutt oder Seeteufel",
+      "store": "Buhara Seafood",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "250 g"
+      },
+      "note": "festes weißes Filet"
+    },
+    {
+      "id": "wolfsbarsch",
+      "name": "Wolfsbarsch oder Petersfisch",
+      "store": "Buhara Seafood",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "250 g"
+      },
+      "note": "zarteres weißes Filet"
+    },
+    {
+      "id": "gambas",
+      "name": "Gambas mit Schale",
+      "store": "Buhara Seafood",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "300 g"
+      },
+      "note": "8–10 Stück"
+    },
+    {
+      "id": "vongole",
+      "name": "Vongole oder Aquakultur-Miesmuscheln",
+      "store": "Buhara Seafood",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "300 g"
+      },
+      "optional": true
+    },
+    {
+      "id": "fenchelknollen",
+      "name": "Fenchelknollen",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3"
+      },
+      "note": "2 mittelgroße für den Fond, 1 große oder 2 kleine mit Grün für den Salat"
+    },
+    {
+      "id": "zwiebeln",
+      "name": "mittelgroße Zwiebeln",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "note": "Fond"
+    },
+    {
+      "id": "zwiebel",
+      "name": "kleine rote Zwiebel",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "½"
+      },
+      "note": "Salat"
+    },
+    {
+      "id": "lauchstange",
+      "name": "Lauchstange",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "nur weißer Teil"
+    },
+    {
+      "id": "knoblauchknolle",
+      "name": "Knoblauchknolle",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "Fond"
+    },
+    {
+      "id": "knoblauchzehen",
+      "name": "Knoblauchzehen",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "4"
+      },
+      "note": "Rouille"
+    },
+    {
+      "id": "tomaten",
+      "name": "reife Tomaten",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "4"
+      }
+    },
+    {
+      "id": "thymian",
+      "name": "frischer Thymian",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "5 Zweige"
+      }
+    },
+    {
+      "id": "petersilie",
+      "name": "Petersilie",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      }
+    },
+    {
+      "id": "orangen",
+      "name": "Orangen, bio",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3"
+      },
+      "note": "1 für einen daumengroßen Streifen Zeste im Fond, 2 mittelgroße Navel für den Salat"
+    },
+    {
+      "id": "zitrone",
+      "name": "Zitrone",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "1 EL Saft für die Rouille, Saft von ½ für das Dressing"
+    },
+    {
+      "id": "minze",
+      "name": "Frische Minze",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "note": "oder das Fenchelgrün verwenden"
+    },
+    {
+      "id": "kartoffel",
+      "name": "kleine mehligkochende Kartoffel",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "optional": true,
+      "note": "\\~80 g, für mehr Stand in der Rouille"
+    },
+    {
+      "id": "eier",
+      "name": "sehr frisches Ei",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "1"
+      },
+      "note": "nur das Eigelb, roh verarbeitet"
+    },
+    {
+      "id": "dosentomaten",
+      "name": "Dosentomaten, stückig",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "400 g"
+      },
+      "note": "1 Dose"
+    },
+    {
+      "id": "oliven",
+      "name": "Oliven, entsteint",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "50 g"
+      },
+      "note": "Taggiasca oder Kalamata"
+    },
+    {
+      "id": "sardellenfilets",
+      "name": "Sardellenfilets",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "2–3"
+      },
+      "note": "oder 1 EL Kapern"
+    },
+    {
+      "id": "pistazien",
+      "name": "Pistazien",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 EL"
+      },
+      "optional": true,
+      "note": "grob gehackt"
+    },
+    {
+      "id": "weisswein",
+      "name": "trockener Weißwein",
+      "store": "REWE Center",
+      "group": "Getränke",
+      "buy": {
+        "text": "200 ml"
+      }
+    },
+    {
+      "id": "pastis",
+      "name": "kleine Flasche Pastis/Pernod",
+      "store": "REWE Center",
+      "group": "Getränke",
+      "buy": {
+        "text": "1"
+      },
+      "note": "gebraucht: 2 EL — Rest hält ewig, klassischer Küchen-Anis"
+    },
+    {
+      "id": "safran",
+      "name": "Safran",
+      "store": "REWE Center",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1,5 g"
+      },
+      "note": "Fäden, gesamt; Premium, La Mancha oder iranisch — 1 g Fond, 0,5 g Rouille"
+    },
+    {
+      "id": "fenchelsamen",
+      "name": "Fenchelsamen",
+      "store": "REWE Center",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1 TL"
+      }
+    },
+    {
+      "id": "sternanis",
+      "name": "Sternanis",
+      "store": "REWE Center",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1"
+      }
+    },
+    {
+      "id": "olivenoel",
+      "name": "Olivenöl extra vergine",
+      "store": "Vorrat",
+      "buy": {
+        "text": "250 ml"
+      },
+      "pantry": true,
+      "note": "mild — kein bitter-scharfes für die Emulsion; 150 ml Rouille, 3 EL Fond, 3–4 EL Salat"
+    },
+    {
+      "id": "tomatenmark",
+      "name": "Tomatenmark",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1 EL"
+      },
+      "pantry": true
+    },
+    {
+      "id": "pfefferkoerner",
+      "name": "schwarze Pfefferkörner",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1 TL"
+      },
+      "pantry": true
+    },
+    {
+      "id": "lorbeerblaetter",
+      "name": "Lorbeerblätter",
+      "store": "Vorrat",
+      "buy": {
+        "text": "2"
+      },
+      "pantry": true
+    },
+    {
+      "id": "cayennepfeffer",
+      "name": "Cayennepfeffer",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "pfeffer",
+      "name": "Pfeffer",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Fisch-Optionen",
+      "level": 2,
+      "markdown": "**Erste Anlaufstelle: Buhara Seafood** (vorher anrufen — Karkassen und\nWunsch-Filets bestellen); Fallback Selgros (TK). In dieser Reihenfolge fragen:\n\n| Variante | Fisch | Anmerkung |\n|---|---|---|\n| **A – Premium** | Seeteufel + Petersfisch (St. Pierre) + Gambas | Authentisch mediterran, selten verfügbar |\n| **B – Empfehlung** | Heilbutt + Wolfsbarsch-Filet + Gambas | Zuverlässig gräten-frei, hält Garzeit gut aus |\n| **C – Plan B** | Kabeljau-Rückenfilet (dickes Mittelstück) + Seeteufel + Gambas | Solider Backup |\n\n**Bonus:** 200–300 g Vongole (Venusmuscheln), falls frisch verfügbar.\n\n**Beim Bestellen wichtig:**\n\n- Fischkarkassen (1,5 kg, mit Köpfen, **ohne Kiemen** — machen den Fond bitter)\n- Keine fetten Fische wie Lachs/Makrele in den Karkassen\n- Filets pinzetten-geprüft bestellen (wegen Kind)\n- Knurrhahn-/Drachenkopf-Karkassen wären der Jackpot"
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "fond",
+          "name": "Fond",
+          "steps": [
+            {
+              "id": "karkassen-vorbereiten",
+              "label": "1",
+              "heading": "**1. Karkassen vorbereiten (ca. 10 Min.)**",
+              "title": "Karkassen vorbereiten",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "text": "Die 1,5 kg Karkassen unter kaltem Wasser gründlich abspülen. **Alle dunkelroten Kiemenreste und Blut entfernen** — das ist der wichtigste Schritt für einen sauberen Fond. Mit der Schere in faustgroße Stücke teilen.",
+              "action": "Die 1,5 kg Karkassen unter kaltem Wasser gründlich abspülen.",
+              "limits": [
+                "Alle dunkelroten Kiemenreste und Blut entfernen"
+              ],
+              "ingredients": [
+                {
+                  "ref": "fischkarkassen",
+                  "amount": {
+                    "text": "1,5 kg Karkassen",
+                    "value": 1.5,
+                    "unit": "kg"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "mirepoix-anschwitzen",
+              "label": "2",
+              "heading": "**2. Mirepoix anschwitzen (10 Min.)**",
+              "title": "Mirepoix anschwitzen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "3 EL Olivenöl im 6L-Topf erhitzen. 2 Fenchelknollen, 2 Zwiebeln und 1 Lauchstange (nur weißer Teil) grob würfeln und bei mittlerer Hitze weich dünsten. **Keine Farbe nehmen lassen!**",
+              "action": "3 EL Olivenöl im 6L-Topf erhitzen.",
+              "limits": [
+                "Keine Farbe nehmen lassen!"
+              ],
+              "ingredients": [
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "3 EL Olivenöl",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "fenchelknollen",
+                  "amount": {
+                    "text": "2 Fenchelknollen",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "zwiebeln",
+                  "amount": {
+                    "text": "2 Zwiebeln",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "lauchstange",
+                  "amount": {
+                    "text": "1 Lauchstange",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "knoblauch-tomatenmark-anroesten",
+              "label": "3",
+              "heading": "**3. Knoblauch & Tomatenmark anrösten (3 Min.)**",
+              "title": "Knoblauch & Tomatenmark anrösten",
+              "duration": {
+                "typical": "PT3M",
+                "source": "3 Min."
+              },
+              "text": "1 Knoblauchknolle quer halbieren, mit Schnittfläche nach unten in den Topf legen. 1 EL Tomatenmark dazugeben und mitrösten, bis es duftet und dunkler wird.",
+              "action": "1 Knoblauchknolle quer halbieren, mit Schnittfläche nach unten in den Topf legen.",
+              "cues": [
+                "bis es duftet und dunkler wird"
+              ],
+              "ingredients": [
+                {
+                  "ref": "knoblauchknolle",
+                  "amount": {
+                    "text": "1 Knoblauchknolle",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "tomatenmark",
+                  "amount": {
+                    "text": "1 EL Tomatenmark",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "mit-weisswein-abloeschen",
+              "label": "4",
+              "heading": "**4. Mit Weißwein ablöschen (3 Min.)**",
+              "title": "Mit Weißwein ablöschen",
+              "duration": {
+                "typical": "PT3M",
+                "source": "3 Min."
+              },
+              "text": "200 ml Weißwein angießen, den Bratsatz lösen und den Wein fast vollständig einkochen lassen — er bringt Säure und Tiefe, keine Weinnote.",
+              "action": "200 ml Weißwein angießen, den Bratsatz lösen und den Wein fast vollständig einkochen lassen — er bringt Säure und Tiefe, keine Weinnote.",
+              "ingredients": [
+                {
+                  "ref": "weisswein",
+                  "amount": {
+                    "text": "200 ml Weißwein",
+                    "value": 200.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "tomaten-dazu",
+              "label": "5",
+              "heading": "**5. Tomaten dazu (5 Min.)**",
+              "title": "Tomaten dazu",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "4 frische Tomaten grob hacken, mit 400 g Dosentomaten hinzufügen, einmal aufkochen lassen.",
+              "action": "4 frische Tomaten grob hacken, mit 400 g Dosentomaten hinzufügen, einmal aufkochen lassen.",
+              "ingredients": [
+                {
+                  "ref": "tomaten",
+                  "amount": {
+                    "text": "4 frische Tomaten",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "dosentomaten",
+                  "amount": {
+                    "text": "400 g Dosentomaten",
+                    "value": 400.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "karkassen-einbauen",
+              "label": "6",
+              "heading": "**6. Karkassen einbauen (5 Min.)**",
+              "title": "Karkassen einbauen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Karkassen dazugeben, unter Rühren mitrösten, bis sie leicht aufgehellt sind und Aroma abgeben.",
+              "action": "Karkassen dazugeben, unter Rühren mitrösten, bis sie leicht aufgehellt sind und Aroma abgeben.",
+              "cues": [
+                "bis sie leicht aufgehellt sind und Aroma abgeben"
+              ],
+              "ingredients": [],
+              "meta": "*nach Tomaten dazu, Karkassen vorbereiten*",
+              "attention": "active",
+              "after": [
+                "step:tomaten-dazu",
+                "step:karkassen-vorbereiten"
+              ]
+            },
+            {
+              "id": "auffuellen",
+              "label": "7",
+              "heading": "**7. Auffüllen (ca. 10 Min.)**",
+              "title": "Auffüllen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "text": "Mit ca. 2,5 L kaltem Wasser auffüllen (alles knapp bedeckt). Dazu: 1 TL Fenchelsamen, 1 TL Pfefferkörner, 1 Sternanis, 2 Lorbeerblätter, 5 Zweige Thymian, die Petersilienstiele (Blätter fürs Anrichten aufheben), 1 daumengroßer Streifen Orangenzeste, 1 TL Salz. Aufkochen, dann auf kleinste Stufe.",
+              "action": "Mit ca.",
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "2,5 L kaltem Wasser",
+                    "value": 2.5,
+                    "unit": "l"
+                  }
+                },
+                {
+                  "ref": "fenchelsamen",
+                  "amount": {
+                    "text": "1 TL Fenchelsamen",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "pfefferkoerner",
+                  "amount": {
+                    "text": "1 TL Pfefferkörner",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "sternanis",
+                  "amount": {
+                    "text": "1 Sternanis",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "lorbeerblaetter",
+                  "amount": {
+                    "text": "2 Lorbeerblätter",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "thymian",
+                  "amount": {
+                    "text": "5 Zweige Thymian",
+                    "value": 5.0,
+                    "unit": "Zweige"
+                  }
+                },
+                {
+                  "ref": "orangen",
+                  "amount": {
+                    "text": "1 daumengroßer Streifen Orangenzeste",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "koecheln",
+              "label": "8",
+              "heading": "**8. Köcheln (40 Min.)**",
+              "title": "Köcheln",
+              "duration": {
+                "typical": "PT40M",
+                "source": "40 Min."
+              },
+              "text": "KRITISCH: Sanft köcheln lassen, **ohne Deckel**. Regelmäßig grauen Schaum abschöpfen.",
+              "action": "KRITISCH: Sanft köcheln lassen, **ohne Deckel**.",
+              "limits": [
+                "ohne Deckel"
+              ],
+              "ingredients": [],
+              "meta": "*Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Köcheln",
+                  "duration": {
+                    "typical": "PT40M"
+                  },
+                  "text": "40 Min."
+                }
+              ]
+            },
+            {
+              "id": "passieren",
+              "label": "9",
+              "heading": "**9. Passieren (ca. 10 Min.)**",
+              "title": "Passieren",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "text": "Durch grobes Sieb in zweiten Topf, Feststoffe mit Schöpflöffel kräftig ausdrücken. Dann nochmal durch feines Sieb mit Passiertuch für klare Brühe.",
+              "action": "Durch grobes Sieb in zweiten Topf, Feststoffe mit Schöpflöffel kräftig ausdrücken.",
+              "ingredients": [],
+              "attention": "active"
+            },
+            {
+              "id": "reduzieren-pastis",
+              "label": "10",
+              "heading": "**10. Reduzieren & Pastis (25 Min.)**",
+              "title": "Reduzieren & Pastis",
+              "duration": {
+                "typical": "PT25M",
+                "source": "25 Min."
+              },
+              "text": "Auf ca. 1,5 L einreduzieren — intensiv wie konzentrierte Fischessenz.\n**2 EL Pastis in den letzten 10 Minuten der Reduktion** zugeben (so verkocht der Alkohol weitgehend und die Anisnote verbindet sich mit Fenchel und Sternanis, statt obenauf zu liegen). Abschmecken.",
+              "action": "Auf ca.",
+              "limits": [
+                "2 EL Pastis in den letzten 10 Minuten der Reduktion"
+              ],
+              "timers": [
+                {
+                  "label": "Reduzieren & Pastis",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "pastis",
+                  "amount": {
+                    "text": "2 EL Pastis",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended"
+            },
+            {
+              "id": "safran-einarbeiten",
+              "label": "11",
+              "heading": "**11. Safran einarbeiten (5 Min.)**",
+              "title": "Safran einarbeiten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "1 g Safran in 2 EL heißem Fond ziehen lassen (5 Min), zurück in den Topf.",
+              "action": "1 g Safran in 2 EL heißem Fond ziehen lassen (5 Min), zurück in den Topf.",
+              "timers": [
+                {
+                  "label": "Safran einarbeiten",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "safran",
+                  "amount": {
+                    "text": "1 g Safran",
+                    "value": 1.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "durchziehen",
+              "label": "12",
+              "heading": "**12. Durchziehen (über Nacht, passiv)**",
+              "title": "Durchziehen",
+              "duration": {
+                "min": "PT8H",
+                "max": "PT14H",
+                "source": "über Nacht"
+              },
+              "attention": "passive",
+              "text": "Abkühlen, über Nacht in den Kühlschrank → **Geschmacks-Booster**.",
+              "action": "Abkühlen, über Nacht in den Kühlschrank → **Geschmacks-Booster**.",
+              "ingredients": [],
+              "timers": [
+                {
+                  "label": "Durchziehen",
+                  "duration": {
+                    "min": "PT8H",
+                    "max": "PT14H"
+                  },
+                  "text": "über Nacht"
+                }
+              ]
+            }
+          ],
+          "heading": "**Fond (Vortag, hält 3 Tage, Kühlschrank):**",
+          "phaseHint": "Vortag",
+          "produces": [
+            {
+              "id": "fond",
+              "name": "Fond",
+              "hold": {
+                "max": "P3D",
+                "source": "Vortag, hält 3 Tage, Kühlschrank"
+              },
+              "storage": {
+                "place": "fridge"
+              }
+            }
+          ]
+        },
+        {
+          "id": "rouille",
+          "name": "Rouille",
+          "steps": [
+            {
+              "id": "rouille-zubereiten",
+              "label": "13",
+              "heading": "**13. Rouille zubereiten (ca. 25 Min.)**",
+              "title": "Rouille zubereiten",
+              "duration": {
+                "typical": "PT25M",
+                "source": "ca. 25 Min.",
+                "estimated": true
+              },
+              "text": "Klassisch, mit Eigelb: 1. 0,5 g Safran in 1 EL warmem Wasser ziehen lassen (10 Min). 2. 4 Knoblauchzehen mit ½ TL Salz im Mörser zu feiner Paste verarbeiten. 3. In einer Schüssel: 1 Eigelb, Knoblauchpaste und Safranwasser verrühren.    150 ml Olivenöl **tropfenweise** einarbeiten wie bei Mayonnaise — erst    langsam, dann im dünnen Strahl, bis eine dichte, rostfarbene Creme steht. 4. Mit 1 EL Zitronensaft, Cayenne und Salz abschmecken. Abgedeckt kalt stellen    (hält 1–2 Tage — rohes Eigelb, nicht länger). 5. *Mehr Stand gewünscht (z. B. für Crouton-Auflage): 1 kleine weichgekochte,    gut ausgedämpfte Kartoffel durch die Presse dazu — macht sie stabiler und    milder. Bricht die Emulsion: 1 TL warmes Wasser in sauberer Schüssel, die    gebrochene Masse löffelweise wieder einschlagen.*",
+              "action": "Klassisch, mit Eigelb: 1.",
+              "why": "Mehr Stand gewünscht (z. B. für Crouton-Auflage): 1 kleine weichgekochte,    gut ausgedämpfte Kartoffel durch die Presse dazu — macht sie stabiler und    milder. Bricht die Emulsion: 1 TL warmes Wasser in sauberer Schüssel, die    gebrochene Masse löffelweise wieder einschlagen.",
+              "timers": [
+                {
+                  "label": "Rouille zubereiten",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "safran",
+                  "amount": {
+                    "text": "0,5 g Safran",
+                    "value": 0.5,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "1 EL warmem Wasser",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "knoblauchzehen",
+                  "amount": {
+                    "text": "4 Knoblauchzehen",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "eier",
+                  "amount": {
+                    "text": "1 Eigelb",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "150 ml Olivenöl",
+                    "value": 150.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "zitrone",
+                  "amount": {
+                    "text": "1 EL Zitronensaft",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            }
+          ],
+          "heading": "**Rouille (Vortag, hält 1–2 Tage, Kühlschrank):**",
+          "phaseHint": "Vortag",
+          "produces": [
+            {
+              "id": "rouille",
+              "name": "Rouille",
+              "hold": {
+                "min": "P1D",
+                "max": "P2D",
+                "source": "Vortag, hält 1–2 Tage, Kühlschrank"
+              },
+              "storage": {
+                "place": "fridge"
+              }
+            }
+          ]
+        },
+        {
+          "id": "servieren",
+          "name": "Servieren",
+          "steps": [
+            {
+              "id": "fisch-vorbereiten",
+              "label": "14",
+              "heading": "**14. Fisch vorbereiten (ca. 15 Min.)**",
+              "title": "Fisch vorbereiten",
+              "duration": {
+                "typical": "PT15M",
+                "source": "ca. 15 Min.",
+                "estimated": true
+              },
+              "text": "Die Filets — 250 g Heilbutt oder Seeteufel, 250 g Wolfsbarsch oder Petersfisch — mit Pinzette nochmal auf Restgräten kontrollieren — **besonders für das Kind**. In mundgerechte Stücke (ca. 4×4 cm) schneiden. 300 g Gambas: Schwanz dranlassen, Rest pellen. Muscheln (300 g Vongole) waschen, geöffnete Exemplare wegwerfen.",
+              "action": "Die Filets — 250 g Heilbutt oder Seeteufel, 250 g Wolfsbarsch oder Petersfisch — mit Pinzette nochmal auf Restgräten kontrollieren — **besonders für das Kind**.",
+              "limits": [
+                "besonders für das Kind"
+              ],
+              "ingredients": [
+                {
+                  "ref": "heilbutt",
+                  "amount": {
+                    "text": "250 g Heilbutt oder Seeteufel",
+                    "value": 250.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "wolfsbarsch",
+                  "amount": {
+                    "text": "250 g Wolfsbarsch oder Petersfisch",
+                    "value": 250.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "gambas",
+                  "amount": {
+                    "text": "300 g Gambas",
+                    "value": 300.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "vongole",
+                  "amount": {
+                    "text": "300 g Vongole",
+                    "value": 300.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "bruehe-erhitzen",
+              "label": "15",
+              "heading": "**15. Brühe erhitzen (10 Min.)**",
+              "title": "Brühe erhitzen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Fond aus dem Kühlschrank in breiten Topf, langsam erhitzen.",
+              "action": "Fond aus dem Kühlschrank in breiten Topf, langsam erhitzen.",
+              "ingredients": [],
+              "meta": "*nach Durchziehen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:durchziehen"
+              ]
+            },
+            {
+              "id": "fisch-garen",
+              "label": "16",
+              "heading": "**16. Fisch garen (12 Min.)**",
+              "title": "Fisch garen",
+              "duration": {
+                "typical": "PT12M",
+                "source": "12 Min."
+              },
+              "text": "Gestaffelt garen:\n| Schritt | Zeit | Was |\n|---|---|---|\n| Erst | 6 Min | Heilbutt/Seeteufel (festerer Fisch) |\n| Dann | 3 Min | Wolfsbarsch/Petersfisch (zarter) |\n| Zuletzt | 3 Min | Gambas + Muscheln | Geschlossen gebliebene Muscheln wegwerfen.",
+              "action": "Gestaffelt garen:\n| Schritt | Zeit | Was |\n|---|---|---|\n| Erst | 6 Min | Heilbutt/Seeteufel (festerer Fisch) |\n| Dann | 3 Min | Wolfsbarsch/Petersfisch (zarter) |\n| Zuletzt | 3 Min | Gambas + Muscheln | Geschlossen gebliebene Muscheln wegwerfen.",
+              "timers": [
+                {
+                  "label": "Fisch garen",
+                  "duration": {
+                    "typical": "PT6M"
+                  },
+                  "text": "6 Min"
+                },
+                {
+                  "label": "Fisch garen",
+                  "duration": {
+                    "typical": "PT3M"
+                  },
+                  "text": "3 Min"
+                },
+                {
+                  "label": "Fisch garen",
+                  "duration": {
+                    "typical": "PT3M"
+                  },
+                  "text": "3 Min"
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Brühe erhitzen, Fisch vorbereiten · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:bruehe-erhitzen",
+                "step:fisch-vorbereiten"
+              ]
+            },
+            {
+              "id": "anrichten",
+              "label": "17",
+              "heading": "**17. Anrichten (ca. 5 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "ca. 5 Min.",
+                "estimated": true
+              },
+              "text": "In tiefe, **vorgewärmte Teller**: erst Fisch und Schalentiere, dann mit heißem Fond übergießen. Gehackte Petersilie darüber. Rouille separat in einer Schüssel — Klecks direkt in die Suppe oder als Dip.",
+              "action": "In tiefe, **vorgewärmte Teller**: erst Fisch und Schalentiere, dann mit heißem Fond übergießen.",
+              "limits": [
+                "vorgewärmte Teller"
+              ],
+              "ingredients": [],
+              "meta": "*nach Fisch garen, Rouille zubereiten*",
+              "attention": "active",
+              "after": [
+                "step:fisch-garen",
+                "step:rouille-zubereiten"
+              ]
+            }
+          ],
+          "heading": "**Servieren (Kochtag, à la minute):**",
+          "phaseHint": "à la minute",
+          "produces": [
+            {
+              "id": "servieren",
+              "name": "Servieren"
+            }
+          ],
+          "consumes": [
+            "product:fond",
+            "product:rouille"
+          ]
+        },
+        {
+          "id": "fenchel-orange-salat",
+          "name": "Fenchel-Orange-Salat",
+          "steps": [
+            {
+              "id": "fenchel-hobeln",
+              "label": "18",
+              "heading": "**18. Fenchel hobeln (5 Min.)**",
+              "title": "Fenchel hobeln",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "**1 große Fenchelknolle (oder 2 kleine) hauchdünn hobeln** mit der Mandoline (Schutzhandschuh!). Grünes Kraut abzupfen, beiseitelegen.",
+              "action": "**1 große Fenchelknolle (oder 2 kleine) hauchdünn hobeln** mit der Mandoline (Schutzhandschuh!).",
+              "limits": [
+                "1 große Fenchelknolle (oder 2 kleine) hauchdünn hobeln"
+              ],
+              "ingredients": [
+                {
+                  "ref": "fenchelknollen",
+                  "amount": {
+                    "text": "1 große Fenchelknolle",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "orangen-filetieren",
+              "label": "19",
+              "heading": "**19. Orangen filetieren (5 Min.)**",
+              "title": "Orangen filetieren",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "**2 Orangen filetieren:** oben und unten kappen, Schale samt weißer Haut wegschneiden. Über einer Schüssel zwischen den Häuten die Filets herauslösen. **Saft auffangen!**",
+              "action": "**2 Orangen filetieren:** oben und unten kappen, Schale samt weißer Haut wegschneiden.",
+              "limits": [
+                "Saft auffangen!"
+              ],
+              "ingredients": [
+                {
+                  "ref": "orangen",
+                  "amount": {
+                    "text": "2 Orangen",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "zwiebel-waessern",
+              "label": "20",
+              "heading": "**20. Zwiebel wässern (5 Min.)**",
+              "title": "Zwiebel wässern",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "**½ kleine rote Zwiebel** hauchdünn in Ringe schneiden, kurz in Eiswasser legen (5 Min) — nimmt die aggressive Schärfe.",
+              "action": "**½ kleine rote Zwiebel** hauchdünn in Ringe schneiden, kurz in Eiswasser legen (5 Min) — nimmt die aggressive Schärfe.",
+              "limits": [
+                "½ kleine rote Zwiebel"
+              ],
+              "timers": [
+                {
+                  "label": "Zwiebel wässern",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "zwiebel",
+                  "amount": {
+                    "text": "½ kleine rote Zwiebel",
+                    "value": 0.5,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "dressing",
+              "label": "21",
+              "heading": "**21. Dressing (3 Min.)**",
+              "title": "Dressing",
+              "duration": {
+                "typical": "PT3M",
+                "source": "3 Min."
+              },
+              "text": "Aufgefangener Orangensaft + Saft von ½ Zitrone + 3–4 EL Olivenöl + Salz + Pfeffer verquirlen. 2–3 Sardellenfilets sehr fein hacken und einrühren (salzige Tiefe; Alternative: Kapern grob gehackt).",
+              "action": "Aufgefangener Orangensaft + Saft von ½ Zitrone + 3–4 EL Olivenöl + Salz + Pfeffer verquirlen.",
+              "ingredients": [
+                {
+                  "ref": "zitrone",
+                  "amount": {
+                    "text": "½ Zitrone",
+                    "value": 0.5,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "3–4 EL Olivenöl",
+                    "value": 3.0,
+                    "unit": "EL",
+                    "max": 4.0
+                  }
+                },
+                {
+                  "ref": "sardellenfilets",
+                  "amount": {
+                    "text": "2–3 Sardellenfilets",
+                    "value": 2.0,
+                    "unit": "Stück",
+                    "max": 3.0
+                  }
+                }
+              ],
+              "meta": "*nach Orangen filetieren*",
+              "attention": "active",
+              "after": [
+                "step:orangen-filetieren"
+              ]
+            },
+            {
+              "id": "salat-anrichten",
+              "label": "22",
+              "heading": "**22. Salat anrichten (5–10 Min.)**",
+              "title": "Salat anrichten",
+              "duration": {
+                "min": "PT5M",
+                "max": "PT10M",
+                "source": "5–10 Min."
+              },
+              "text": "Fenchel locker auf Tellern verteilen, Orangenfilets, abgetropfte Zwiebel, 50 g Oliven darüber. Dressing drüberträufeln.\n**5–10 Min ziehen lassen** vor dem Servieren — der Fenchel wird zart statt roh-knackig. 1 EL Pistazien und Minze/Fenchelgrün **erst direkt vor dem Servieren** darauf.",
+              "action": "Fenchel locker auf Tellern verteilen, Orangenfilets, abgetropfte Zwiebel, 50 g Oliven darüber.",
+              "limits": [
+                "5–10 Min ziehen lassen",
+                "erst direkt vor dem Servieren"
+              ],
+              "timers": [
+                {
+                  "label": "Salat anrichten",
+                  "duration": {
+                    "min": "PT5M",
+                    "max": "PT10M"
+                  },
+                  "text": "5–10 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "oliven",
+                  "amount": {
+                    "text": "50 g Oliven",
+                    "value": 50.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "pistazien",
+                  "amount": {
+                    "text": "1 EL Pistazien",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Fenchel hobeln, Zwiebel wässern, Dressing*",
+              "attention": "active",
+              "after": [
+                "step:fenchel-hobeln",
+                "step:zwiebel-waessern",
+                "step:dressing"
+              ]
+            }
+          ],
+          "heading": "**Fenchel-Orange-Salat (Kochtag, während die Brühe erhitzt):**",
+          "produces": [
+            {
+              "id": "fenchel-orange-salat",
+              "name": "Fenchel-Orange-Salat"
+            }
+          ],
+          "consumes": [
+            "product:servieren"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "> ⚠️ **Nicht länger als 45 Min köcheln**",
+      "level": "bold",
+      "markdown": "> ⚠️ **Nicht länger als 45 Min köcheln**, sonst werden die Karkassen bitter."
+    },
+    {
+      "type": "markdown",
+      "title": "> ⚠️ Nur **knapp unter dem Sieden** halt",
+      "level": "bold",
+      "markdown": "> ⚠️ Nur **knapp unter dem Sieden** halten, nicht sprudelnd kochen — sonst\n> wird die Brühe trüb und der Fisch zerfällt."
+    },
+    {
+      "type": "markdown",
+      "title": "> Klassischer sizilianischer *Insalata d",
+      "level": "bold",
+      "markdown": "> Klassischer sizilianischer *Insalata di Finocchi e Arance*. Die Aromen\n> spiegeln die Brühe — verbindet Vorspeise und Hauptgang harmonisch."
+    },
+    {
+      "type": "markdown",
+      "title": "Timing",
+      "level": "bold",
+      "markdown": "**Timing:** Kochtag, während die Brühe langsam erhitzt (15 Min aktive Zeit,\ndann 5–10 Min ziehen lassen)."
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "vortag",
+            "label": "Vortag",
+            "day": -1
+          },
+          {
+            "id": "am-abend",
+            "label": "Am Abend",
+            "day": 0,
+            "part": "evening"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "vortag",
+            "text": "Fond",
+            "tasks": [
+              "fond"
+            ]
+          },
+          {
+            "phase": "vortag",
+            "text": "Rouille",
+            "tasks": [
+              "rouille"
+            ]
+          },
+          {
+            "phase": "am-abend",
+            "text": "Fisch vorbereiten",
+            "steps": [
+              "fisch-vorbereiten"
+            ]
+          },
+          {
+            "phase": "am-abend",
+            "text": "Brühe erhitzen",
+            "steps": [
+              "bruehe-erhitzen"
+            ]
+          },
+          {
+            "phase": "am-abend",
+            "text": "Fenchel-Orange-Salat",
+            "tasks": [
+              "fenchel-orange-salat"
+            ]
+          },
+          {
+            "phase": "am-abend",
+            "text": "Fisch garen",
+            "steps": [
+              "fisch-garen"
+            ]
+          },
+          {
+            "phase": "am-abend",
+            "text": "Anrichten",
+            "steps": [
+              "anrichten"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Suppe:** Mini-Schüssel mit klarer Brühe und kleinen Fischstücken, Rouille\n  daneben (selbst entscheiden lassen). Alkohol: Wein und Pastis kochen 25–40\n  Min. offen mit bzw. ein — die Restmenge in einer Kinderportion ist\n  vernachlässigbar; wer ganz sicher gehen will, zweigt die Kinderbrühe vor\n  der Pastis-Zugabe (siehe „Reduzieren & Pastis“) ab.\n- **Rouille enthält rohes Eigelb** — beim Kleinkind sparsam bzw. nach eigenem\n  Ermessen; sehr frische Eier verwenden.\n- **Salat:** separate Schale mit Fenchel + Orangenstücken + mildem Dressing\n  (weniger Zitrone, ohne Sardellen). Oliven nach Gusto — bekannter Treffer.\n- **Gambas/Muscheln:** Schwänze und Schalen vorm Servieren entfernen, jedes\n  Fischstück nochmal auf Gräten prüfen.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Safran:** bei 1,5 g nicht knausern — Billigware funktioniert kaum, La\n  Mancha oder iranisch. Bei schlechtem Safran fehlt der Suppe das Rückgrat.\n- **Fisch:** was der Händler heute am frischsten hat, schlägt jede\n  Empfehlung. Explizit fragen.\n- **Olivenöl:** gutes extra vergine; in der Rouille schmeckt man jeden\n  Tropfen — dort ein mildes wählen, sonst kippt sie bitter.\n- **Reste:** pure Brühe (ohne Fisch) 3 Tage im Kühlschrank, friert sehr gut\n  ein (Eiswürfelformen → Basis für später; auch der Oktopus-Schmorsud-Trick\n  funktioniert umgekehrt). Mit Fisch: nur 1 Tag, danach gummig. Rouille:\n  1–2 Tage (rohes Ei). Salat: nicht aufbewahren, Fenchel wird wässrig.",
+      "tags": [
+        "notizen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Re-Klassifizierung 07/2026:** Das Rezept war ursprünglich als\n  schwangerschafts-sichere Version angelegt (ohne Alkohol, Kartoffel-Rouille\n  nach Reine Sammut, *Cuisine de Provence*, keine Sardellen, KH-Tracking).\n  Jetzt zurückgebaut auf die klassische Form: Weißwein zum Ablöschen, Pastis\n  in der Reduktion, Rouille als Eigelb-Emulsion, Sardellen im Salat-Dressing.\n  Die Kartoffel bleibt als dokumentierte Stand-Option in der Rouille —\n  beide Formen sind provenzalisch belegt.\n- **Pastis in die Reduktion statt am Ende:** verkocht den Alkohol weitgehend\n  und integriert die Anisnote — roh zugegossen liegt sie obenauf.\n- **Karkassen ohne Kiemen, max. 45 Min:** Standard-Fischfond-Regeln gegen\n  Bitterkeit und Trübung.",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T18:51:58Z",
+    "sourceHash": "56a9521cb36569e6",
+    "quantities": [
+      {
+        "ingredient": "fischkarkassen",
+        "total": {
+          "text": "1500 g",
+          "value": 1500.0,
+          "max": 1500.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "fond": "1,5 kg Karkassen"
+        }
+      },
+      {
+        "ingredient": "heilbutt",
+        "total": {
+          "text": "250 g",
+          "value": 250.0,
+          "max": 250.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "servieren": "250 g Heilbutt oder Seeteufel"
+        }
+      },
+      {
+        "ingredient": "wolfsbarsch",
+        "total": {
+          "text": "250 g",
+          "value": 250.0,
+          "max": 250.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "servieren": "250 g Wolfsbarsch oder Petersfisch"
+        }
+      },
+      {
+        "ingredient": "gambas",
+        "total": {
+          "text": "300 g",
+          "value": 300.0,
+          "max": 300.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "servieren": "300 g Gambas"
+        }
+      },
+      {
+        "ingredient": "vongole",
+        "total": {
+          "text": "300 g",
+          "value": 300.0,
+          "max": 300.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "servieren": "300 g Vongole"
+        }
+      },
+      {
+        "ingredient": "fenchelknollen",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "fond": "2 Fenchelknollen",
+          "fenchel-orange-salat": "1 große Fenchelknolle"
+        }
+      },
+      {
+        "ingredient": "zwiebeln",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "fond": "2 Zwiebeln"
+        }
+      },
+      {
+        "ingredient": "zwiebel",
+        "total": {
+          "text": "½",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "fenchel-orange-salat": "½ kleine rote Zwiebel"
+        }
+      },
+      {
+        "ingredient": "lauchstange",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "fond": "1 Lauchstange"
+        }
+      },
+      {
+        "ingredient": "knoblauchknolle",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "fond": "1 Knoblauchknolle"
+        }
+      },
+      {
+        "ingredient": "knoblauchzehen",
+        "total": {
+          "text": "4",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "rouille": "4 Knoblauchzehen"
+        }
+      },
+      {
+        "ingredient": "tomaten",
+        "total": {
+          "text": "4",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "fond": "4 frische Tomaten"
+        }
+      },
+      {
+        "ingredient": "thymian",
+        "total": {
+          "text": "5 Zweige",
+          "value": 5.0,
+          "max": 5.0,
+          "unit": "Zweige",
+          "approx": false
+        },
+        "perTask": {
+          "fond": "5 Zweige Thymian"
+        }
+      },
+      {
+        "ingredient": "petersilie",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "orangen",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "fond": "1 daumengroßer Streifen Orangenzeste",
+          "fenchel-orange-salat": "2 Orangen"
+        }
+      },
+      {
+        "ingredient": "zitrone",
+        "total": {
+          "text": "1 EL (+ Stück ungemischt)",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "rouille": "1 EL Zitronensaft"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "minze",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "kartoffel",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "eier",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "rouille": "1 Eigelb"
+        }
+      },
+      {
+        "ingredient": "dosentomaten",
+        "total": {
+          "text": "400 g",
+          "value": 400.0,
+          "max": 400.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "fond": "400 g Dosentomaten"
+        }
+      },
+      {
+        "ingredient": "oliven",
+        "total": {
+          "text": "50 g",
+          "value": 50.0,
+          "max": 50.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "fenchel-orange-salat": "50 g Oliven"
+        }
+      },
+      {
+        "ingredient": "sardellenfilets",
+        "total": {
+          "text": "2–3",
+          "value": 2.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "fenchel-orange-salat": "2–3 Sardellenfilets"
+        }
+      },
+      {
+        "ingredient": "pistazien",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "fenchel-orange-salat": "1 EL Pistazien"
+        }
+      },
+      {
+        "ingredient": "weisswein",
+        "total": {
+          "text": "200 ml",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "fond": "200 ml Weißwein"
+        }
+      },
+      {
+        "ingredient": "pastis",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "fond": "2 EL Pastis"
+        }
+      },
+      {
+        "ingredient": "safran",
+        "total": {
+          "text": "1½ g",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "fond": "1 g Safran",
+          "rouille": "0,5 g Safran"
+        }
+      },
+      {
+        "ingredient": "fenchelsamen",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "fond": "1 TL Fenchelsamen"
+        }
+      },
+      {
+        "ingredient": "sternanis",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "fond": "1 Sternanis"
+        }
+      },
+      {
+        "ingredient": "olivenoel",
+        "total": {
+          "text": "6–7 EL (+ ml ungemischt)",
+          "value": 6.0,
+          "max": 7.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "fond": "3 EL Olivenöl",
+          "fenchel-orange-salat": "3–4 EL Olivenöl"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "tomatenmark",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "fond": "1 EL Tomatenmark"
+        }
+      },
+      {
+        "ingredient": "pfefferkoerner",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "fond": "1 TL Pfefferkörner"
+        }
+      },
+      {
+        "ingredient": "lorbeerblaetter",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "fond": "2 Lorbeerblätter"
+        }
+      },
+      {
+        "ingredient": "cayennepfeffer",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "1½ TL",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "fond": "1 TL Salz",
+          "rouille": "½ TL Salz"
+        }
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "2500 ml (+ EL ungemischt)",
+          "value": 2500.0,
+          "max": 2500.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "fond": "2,5 L kaltem Wasser"
+        },
+        "unitMixed": true
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Buhara Seafood",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "fischkarkassen",
+            "name": "Fischkarkassen von weißen Fischen",
+            "need": {
+              "text": "1500 g",
+              "value": 1500.0,
+              "max": 1500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "1500 g",
+            "inStock": false,
+            "buy": {
+              "text": "1,5 kg"
+            },
+            "note": "mit Köpfen, ohne Kiemen"
+          },
+          {
+            "ingredient": "heilbutt",
+            "name": "Heilbutt oder Seeteufel",
+            "need": {
+              "text": "250 g",
+              "value": 250.0,
+              "max": 250.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "250 g",
+            "inStock": false,
+            "buy": {
+              "text": "250 g"
+            },
+            "note": "festes weißes Filet"
+          },
+          {
+            "ingredient": "wolfsbarsch",
+            "name": "Wolfsbarsch oder Petersfisch",
+            "need": {
+              "text": "250 g",
+              "value": 250.0,
+              "max": 250.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "250 g",
+            "inStock": false,
+            "buy": {
+              "text": "250 g"
+            },
+            "note": "zarteres weißes Filet"
+          },
+          {
+            "ingredient": "gambas",
+            "name": "Gambas mit Schale",
+            "need": {
+              "text": "300 g",
+              "value": 300.0,
+              "max": 300.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "300 g",
+            "inStock": false,
+            "buy": {
+              "text": "300 g"
+            },
+            "note": "8–10 Stück"
+          },
+          {
+            "ingredient": "vongole",
+            "name": "Vongole oder Aquakultur-Miesmuscheln",
+            "need": {
+              "text": "300 g",
+              "value": 300.0,
+              "max": 300.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "300 g",
+            "inStock": false,
+            "buy": {
+              "text": "300 g"
+            },
+            "optional": true
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "fenchelknollen",
+            "name": "Fenchelknollen",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            },
+            "note": "2 mittelgroße für den Fond, 1 große oder 2 kleine mit Grün für den Salat"
+          },
+          {
+            "ingredient": "zwiebeln",
+            "name": "mittelgroße Zwiebeln",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "Fond"
+          },
+          {
+            "ingredient": "zwiebel",
+            "name": "kleine rote Zwiebel",
+            "need": {
+              "text": "½",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "½",
+            "inStock": false,
+            "buy": {
+              "text": "½"
+            },
+            "note": "Salat"
+          },
+          {
+            "ingredient": "lauchstange",
+            "name": "Lauchstange",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "nur weißer Teil"
+          },
+          {
+            "ingredient": "knoblauchknolle",
+            "name": "Knoblauchknolle",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "Fond"
+          },
+          {
+            "ingredient": "knoblauchzehen",
+            "name": "Knoblauchzehen",
+            "need": {
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "4",
+            "inStock": false,
+            "buy": {
+              "text": "4"
+            },
+            "note": "Rouille"
+          },
+          {
+            "ingredient": "tomaten",
+            "name": "reife Tomaten",
+            "need": {
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "4",
+            "inStock": false,
+            "buy": {
+              "text": "4"
+            }
+          },
+          {
+            "ingredient": "thymian",
+            "name": "frischer Thymian",
+            "need": {
+              "text": "5 Zweige",
+              "value": 5.0,
+              "max": 5.0,
+              "unit": "Zweige",
+              "approx": false
+            },
+            "display": "5 Zweige",
+            "inStock": false,
+            "buy": {
+              "text": "5 Zweige"
+            }
+          },
+          {
+            "ingredient": "petersilie",
+            "name": "Petersilie",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            }
+          },
+          {
+            "ingredient": "orangen",
+            "name": "Orangen, bio",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            },
+            "note": "1 für einen daumengroßen Streifen Zeste im Fond, 2 mittelgroße Navel für den Salat"
+          },
+          {
+            "ingredient": "zitrone",
+            "name": "Zitrone",
+            "need": {
+              "text": "1 EL (+ Stück ungemischt)",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "1 EL Saft für die Rouille, Saft von ½ für das Dressing"
+          },
+          {
+            "ingredient": "minze",
+            "name": "Frische Minze",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "note": "oder das Fenchelgrün verwenden"
+          },
+          {
+            "ingredient": "kartoffel",
+            "name": "kleine mehligkochende Kartoffel",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "optional": true,
+            "note": "\\~80 g, für mehr Stand in der Rouille"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "eier",
+            "name": "sehr frisches Ei",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "nur das Eigelb, roh verarbeitet"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "dosentomaten",
+            "name": "Dosentomaten, stückig",
+            "need": {
+              "text": "400 g",
+              "value": 400.0,
+              "max": 400.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "400 g",
+            "inStock": false,
+            "buy": {
+              "text": "400 g"
+            },
+            "note": "1 Dose"
+          },
+          {
+            "ingredient": "oliven",
+            "name": "Oliven, entsteint",
+            "need": {
+              "text": "50 g",
+              "value": 50.0,
+              "max": 50.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "50 g",
+            "inStock": false,
+            "buy": {
+              "text": "50 g"
+            },
+            "note": "Taggiasca oder Kalamata"
+          },
+          {
+            "ingredient": "sardellenfilets",
+            "name": "Sardellenfilets",
+            "need": {
+              "text": "2–3",
+              "value": 2.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2–3",
+            "inStock": false,
+            "buy": {
+              "text": "2–3"
+            },
+            "note": "oder 1 EL Kapern"
+          },
+          {
+            "ingredient": "pistazien",
+            "name": "Pistazien",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 EL"
+            },
+            "optional": true,
+            "note": "grob gehackt"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Würzmittel & Gewürze",
+        "items": [
+          {
+            "ingredient": "safran",
+            "name": "Safran",
+            "need": {
+              "text": "1½ g",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "1½ g",
+            "inStock": false,
+            "buy": {
+              "text": "1,5 g"
+            },
+            "note": "Fäden, gesamt; Premium, La Mancha oder iranisch — 1 g Fond, 0,5 g Rouille"
+          },
+          {
+            "ingredient": "fenchelsamen",
+            "name": "Fenchelsamen",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 TL"
+            }
+          },
+          {
+            "ingredient": "sternanis",
+            "name": "Sternanis",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            }
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Getränke",
+        "items": [
+          {
+            "ingredient": "weisswein",
+            "name": "trockener Weißwein",
+            "need": {
+              "text": "200 ml",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "200 ml",
+            "inStock": false,
+            "buy": {
+              "text": "200 ml"
+            }
+          },
+          {
+            "ingredient": "pastis",
+            "name": "kleine Flasche Pastis/Pernod",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "gebraucht: 2 EL — Rest hält ewig, klassischer Küchen-Anis"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "olivenoel",
+            "name": "Olivenöl extra vergine",
+            "need": {
+              "text": "6–7 EL (+ ml ungemischt)",
+              "value": 6.0,
+              "max": 7.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "6–7 EL",
+            "inStock": false,
+            "buy": {
+              "text": "250 ml"
+            },
+            "pantry": true,
+            "note": "mild — kein bitter-scharfes für die Emulsion; 150 ml Rouille, 3 EL Fond, 3–4 EL Salat"
+          },
+          {
+            "ingredient": "tomatenmark",
+            "name": "Tomatenmark",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 EL"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "pfefferkoerner",
+            "name": "schwarze Pfefferkörner",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 TL"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "lorbeerblaetter",
+            "name": "Lorbeerblätter",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "cayennepfeffer",
+            "name": "Cayennepfeffer",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "1½ TL",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1½ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Pfeffer",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "2500 ml (+ EL ungemischt)",
+              "value": 2500.0,
+              "max": 2500.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "2500 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}

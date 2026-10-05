@@ -28,6 +28,13 @@
   "cooked": true
  },
  {
+  "path": "../gerichte/bouillabaisse.json",
+  "title": "Bouillabaisse mit Fenchel-Orange-Salat (2 Erwachsene + Kind)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": false
+ },
+ {
   "path": "../gerichte/bulgogi.json",
   "title": "Bulgogi — koreanisches „Feuerfleisch\" mit Salat-Wraps (4 Portionen)",
   "group": "gerichte",
