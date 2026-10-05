@@ -33,6 +33,7 @@ RESCUE_COND = re.compile(r"^(Ist|Wird|Wenn|Sollte|Falls)\b[^.]*,")
 DUR_UNITS = r"(?:Min\.?|Minuten|Sek\.?|Sekunden|Std\.?|Stunden|h\b|Tage?\b)"
 
 DUR_RE = re.compile(rf"(?P<ca>ca\.\s?|\\?~\s?)?(?P<lo>{NUMW})(?:\s?[–-]\s?(?P<hi>{NUMW}))?\s?(?P<u>{DUR_UNITS})")
+DUR_SUM_RE = re.compile(rf"(?:(?:ca\.\s?|\\?~\s?)?{RANGE}\s?{DUR_UNITS}\s?\+\s?)+(?:ca\.\s?|\\?~\s?)?{RANGE}\s?{DUR_UNITS}")  # „10 Min. + 30 Min.“
 STEP_RE = re.compile(r"^\*\*(?P<n>\d+[a-z]?)\.\s+(?P<title>.+?)(?:\s+\((?P<paren>[^()]*(?:\([^()]*\)[^()]*)*)\))?\*\*\s*$")
 LABEL_RE = re.compile(r"^\*\*(?P<label>[^*]+?):\*\*\s*$")
 LABEL_TEXT_RE = re.compile(r"^\*\*(?P<label>[^*]+?):\*\*\s+(?P<text>.+)$")
@@ -72,6 +73,11 @@ def iso(value: float, unit: str) -> str:
     return f"PT{m // 60}H{m % 60}M" if m >= 60 and m % 60 else (f"PT{m // 60}H" if m >= 60 else f"PT{m}M")
 
 
+def in_minutes(value: float, unit: str) -> float:
+    u = unit.lower()
+    return value * 1440 if u.startswith("tag") else value / 60 if u.startswith("sek") else value * 60 if u.startswith("std") or u.startswith("stund") or u == "h" else value
+
+
 def duration_range(text: str) -> dict | None:
     """„5 Min.“, „90–120 Min.“, „ca. 8 Min.“, „über Nacht“ → DurationRange."""
     if re.search(r"über Nacht", text):
@@ -79,6 +85,15 @@ def duration_range(text: str) -> dict | None:
     m = DUR_RE.search(text)
     if not m:
         return None
+    if chain := DUR_SUM_RE.match(text, m.start()):  # „10 Min. + 30 Min. passiv“: Arbeit plus Wartezeit = Summe
+        parts = list(DUR_RE.finditer(chain.group(0)))
+        lo = sum(in_minutes(parse_num(p["lo"]), p["u"]) for p in parts)
+        hi = sum(in_minutes(parse_num(p["hi"] or p["lo"]), p["u"]) for p in parts)
+        d = {"min": iso(lo, "Min."), "max": iso(hi, "Min.")} if hi != lo else {"typical": iso(lo, "Min.")}
+        d["source"] = chain.group(0).strip()
+        if any(p["ca"] for p in parts):
+            d["estimated"] = True
+        return d
     lo = parse_num(m["lo"]); hi = parse_num(m["hi"]) if m["hi"] else None
     d = {"min": iso(lo, m["u"]), "max": iso(hi, m["u"])} if hi else {"typical": iso(lo, m["u"])}
     d["source"] = m.group(0).strip()
@@ -215,7 +230,7 @@ def parse_shopping(text: str, lint: Lint) -> list[dict]:
             part = part.strip()
             paren0 = re.search(r"\(([^()]*)\)", part)
             part_np = re.sub(r"\s*\([^()]*\)", "", part).strip()
-            pm = re.match(rf"^(?P<qty>(?:ca\.\s?|\\?~)?{RANGE}(?:\s?(?:kg|g|ml|L|l|EL|TL|Stück|St\.|Blatt|Bund|Töpfchen|Päckchen|Glas|Dose|Flasche|Knolle|Zehen))?)\s+(?P<name>.+)$", part_np)
+            pm = re.match(rf"^(?P<qty>(?:ca\.\s?|\\?~)?{RANGE}(?:\s?(?:kg|g|ml|L|l|EL|TL|Stück|St\.|Blatt|Bund|Töpfchen|Päckchen|Pck\.|Packung|Glas|Dose|Flasche|Knolle|Zehen|Zweige?|Stangen?|Kopf|Köpfe|Becher|Tüte|Beutel|Tafeln?))?)\s+(?P<name>.+)$", part_np)
             if pm:
                 buy, name = pm["qty"].strip(), pm["name"].strip()
             else:
@@ -530,7 +545,7 @@ def find_doses(text: str, ingredients: list[dict], lint: Lint, where: str, seen_
         seen_doses.add(key)
         out.append(dose)
     # „Lammschulter (2–2,2 kg mit Knochen)“: Menge in der Klammer hinter dem Zutatenwort
-    for m in re.finditer(rf"([\wäöüÄÖÜß-]+)\s\((?:ca\.\s?)?(?P<lo>{NUMW})(?:\s?[–-]\s?(?P<hi>{NUMW}))?\s?(?P<unit>{'|'.join(DOSE_UNITS)})\b", plain):
+    for m in re.finditer(rf"([\wäöüÄÖÜß-]+)\s\({APPROX}\s?(?P<lo>{NUMW})(?:\s?[–-]\s?(?P<hi>{NUMW}))?\s?(?P<unit>{'|'.join(DOSE_UNITS)})\b", plain):
         if m.start() >= skip_from: continue
         bm = best_match(m.group(1).lower(), idx)
         if not bm or any(d["ref"] == bm[1] for d in out): continue

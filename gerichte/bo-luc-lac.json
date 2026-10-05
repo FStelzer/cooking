@@ -383,8 +383,8 @@
               "heading": "**4. Essig-Zwiebeln ansetzen (5 Min. + 15 Min. passiv)**",
               "title": "Essig-Zwiebeln ansetzen",
               "duration": {
-                "typical": "PT5M",
-                "source": "5 Min."
+                "typical": "PT20M",
+                "source": "5 Min. + 15 Min."
               },
               "attention": "passive",
               "text": "½ rote Zwiebel in hauchdünne Ringe hobeln (Mandoline), 1 Min. in kaltem Wasser spülen (nimmt die Schärfe), abtropfen. Lake aus **1½ EL Reisessig, 1 TL Zucker, 1 Prise Salz, 3 Umdrehungen Pfeffer und 2 EL Wasser** anrühren, Zwiebelringe darin mindestens 15 Min. ziehen lassen. *Andrea Nguyens Dressing — die Säure gegen das reiche Fleisch. Ein Teil davon wird am Ende über die Kresse gegeben.*",
@@ -1018,8 +1018,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T17:05:09Z",
-    "sourceHash": "e4c97a3350686280",
+    "generatedAt": "2026-10-05T18:41:05Z",
+    "sourceHash": "29aa9d3047cba861",
     "quantities": [
       {
         "ingredient": "rindfleisch",

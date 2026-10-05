@@ -193,8 +193,11 @@ endet. Die Klammer nennt, wann sie gemacht wird und wie lange sie hält:
 
 Jede Komponente erzeugt ein Produkt mit ihrem Namen. Nennt ein Schritt einer anderen
 Komponente diesen Namen, gilt das als Verbrauch. Ein Rezept ohne solche Zeilen ist
-eine einzige Komponente. Fette Zeilen **mit Text dahinter** (`**Teller-Logik:** …`,
-`**Kind (3 J.):** …`) sind Prosa-Blöcke, keine Komponenten.
+eine einzige Komponente. Eine Komponente reicht bis zur nächsten Komponenten-Zeile —
+wer nur ein paar Schritte überschreiben will („Beilagen nebenher“), schreibt eine
+Prosa-Zeile. Fette Zeilen **mit Text dahinter** (`**Teller-Logik:** …`,
+`**Kind (3 J.):** …`, `**Beilagen während der Marinierzeit:** \~40 Min. aktiv.`) sind
+Prosa-Blöcke, keine Komponenten.
 
 **Schritte** haben immer diese Form:
 
@@ -209,7 +212,9 @@ Text des Schritts, beliebig lang, Zeilenumbrüche egal.
   eindeutig und wird nach dem ersten Kochen nicht mehr umbenannt. Zwei bis vier
   Wörter: „Karamell", „Blöcke anbraten", „Pralinen wälzen".
 - **Dauer** in der Klammer: `5 Min.`, `90–120 Min.`, `3–3,5 Std.`, `30 Sek.`,
-  `über Nacht`. Geschätzt: `ca. 8 Min.`. Zusätze in derselben Klammer: `parallel`
+  `über Nacht`. Geschätzt: `ca. 8 Min.`. Arbeit plus Wartezeit: `10 Min. + 30 Min. passiv`
+  zählt als Summe; braucht die Wartezeit einen eigenen Timer oder gehört sie in eine
+  andere Phase, lieber einen eigenen Schritt daraus machen. Zusätze in derselben Klammer: `parallel`
   (läuft nebenher weiter), `passiv` (braucht niemanden am Herd), `jederzeit` (keine
   Voraussetzung). Jeder Schritt soll eine Dauer haben; sonst kann kein Zeitplan
   gerechnet werden.
@@ -246,7 +251,7 @@ Mengen und Zeiten im Text werden erkannt, wenn sie so geschrieben sind:
 |---|---|---|
 | Zahl Einheit Zutat | `3 EL Zucker`, `500–600 ml Kokoswasser`, `½ Limette`, `1 Prise Salz`, `6 Eier` | Dosierung; das Zutatenwort muss in der Einkaufsliste vorkommen (s. u.) |
 | … mit Qualifizierern | `120 g milden, pasteurisierten Ziegenfrischkäse`, `1 kleine Prise Muskat`, `1 EL (15 g) Tomatenmark` | bis vier Wörter zwischen Zahl und Zutat; Umrechnung in Klammern hinter der Einheit |
-| Zutat (Zahl Einheit …) | `Lammschulter (2–2,2 kg mit Knochen)` | Menge in der Klammer direkt hinter der Zutat |
+| Zutat (Zahl Einheit …) | `Lammschulter (2–2,2 kg mit Knochen)`, `Oktopus (\~1,2–1,5 kg)` | Menge in der Klammer direkt hinter der Zutat |
 | Mengenwort Zutat | `reichlich Pfeffer`, `ein Schuss Kokoswasser` | Dosierung ohne Zahl |
 | `je 15 g Butter` | | Menge pro Pfanne/Person |
 | `2 × 15 g Butter` | | Vervielfacher |

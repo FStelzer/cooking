@@ -154,11 +154,11 @@
     },
     {
       "id": "staudensellerie",
-      "name": "Stange Staudensellerie",
+      "name": "Staudensellerie",
       "store": "REWE Center",
       "group": "Obst & Gemüse",
       "buy": {
-        "text": "1"
+        "text": "1 Stange"
       },
       "courses": [
         "gang-1"
@@ -2959,8 +2959,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T17:04:25Z",
-    "sourceHash": "75ee8b7dc8555e27",
+    "generatedAt": "2026-10-05T18:41:05Z",
+    "sourceHash": "1e18f9d8dca7110c",
     "quantities": [
       {
         "ingredient": "jakobsmuscheln",
@@ -3767,14 +3767,14 @@
           },
           {
             "ingredient": "staudensellerie",
-            "name": "Stange Staudensellerie",
+            "name": "Staudensellerie",
             "need": {
               "text": ""
             },
             "display": "",
             "inStock": false,
             "buy": {
-              "text": "1"
+              "text": "1 Stange"
             },
             "note": "für die Blätter als Garnitur"
           },

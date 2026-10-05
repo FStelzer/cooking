@@ -79,12 +79,12 @@
       "note": "2 Tafeln, Kuvertüre besser als Tafelschokolade"
     },
     {
-      "id": "pck",
-      "name": "Pck. Vanillezucker",
+      "id": "vanillezucker",
+      "name": "Vanillezucker",
       "store": "Aldi / REWE",
       "group": "Trockenwaren",
       "buy": {
-        "text": "1"
+        "text": "1 Pck."
       }
     },
     {
@@ -310,14 +310,6 @@
                     "text": "1 EL Zucker",
                     "value": 1.0,
                     "unit": "EL"
-                  }
-                },
-                {
-                  "ref": "pck",
-                  "amount": {
-                    "text": "1 Pck",
-                    "value": 1.0,
-                    "unit": "Stück"
                   }
                 },
                 {
@@ -643,8 +635,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T18:37:51Z",
-    "sourceHash": "5a0917ad52e0fb54",
+    "generatedAt": "2026-10-05T18:41:05Z",
+    "sourceHash": "c5cb9d599786928f",
     "quantities": [
       {
         "ingredient": "mascarpone",
@@ -712,17 +704,11 @@
         }
       },
       {
-        "ingredient": "pck",
+        "ingredient": "vanillezucker",
         "total": {
-          "text": "1",
-          "value": 1.0,
-          "max": 1.0,
-          "unit": "Stück",
-          "approx": false
+          "text": ""
         },
-        "perTask": {
-          "main": "1 Pck"
-        }
+        "perTask": {}
       },
       {
         "ingredient": "zitrone",
@@ -1092,19 +1078,15 @@
             "note": "2 Tafeln, Kuvertüre besser als Tafelschokolade"
           },
           {
-            "ingredient": "pck",
-            "name": "Pck. Vanillezucker",
+            "ingredient": "vanillezucker",
+            "name": "Vanillezucker",
             "need": {
-              "text": "1",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "Stück",
-              "approx": false
+              "text": ""
             },
-            "display": "1",
+            "display": "",
             "inStock": false,
             "buy": {
-              "text": "1"
+              "text": "1 Pck."
             }
           }
         ]

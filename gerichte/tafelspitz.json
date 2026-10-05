@@ -71,11 +71,11 @@
     },
     {
       "id": "lauch",
-      "name": "Stange Lauch",
+      "name": "Lauch",
       "store": "Aldi / REWE",
       "group": "Obst & Gemüse",
       "buy": {
-        "text": "1"
+        "text": "1 Stange"
       }
     },
     {
@@ -440,6 +440,14 @@
                     "value": 1.0,
                     "unit": "Stück"
                   }
+                },
+                {
+                  "ref": "wurzelwerk",
+                  "amount": {
+                    "text": "175 g",
+                    "value": 175.0,
+                    "unit": "g"
+                  }
                 }
               ],
               "meta": "*Herd*",
@@ -763,6 +771,14 @@
                     "value": 1.0,
                     "unit": "EL"
                   }
+                },
+                {
+                  "ref": "wurzelwerk",
+                  "amount": {
+                    "text": "175 g",
+                    "value": 175.0,
+                    "unit": "g"
+                  }
                 }
               ],
               "meta": "*letzte 30 Min. von Gabeltest · Herd*",
@@ -1011,8 +1027,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T18:36:40Z",
-    "sourceHash": "4e75bab07ba16cf8",
+    "generatedAt": "2026-10-05T18:41:05Z",
+    "sourceHash": "60687dd21690437e",
     "quantities": [
       {
         "ingredient": "tafelspitz",
@@ -1056,9 +1072,15 @@
       {
         "ingredient": "wurzelwerk",
         "total": {
-          "text": ""
+          "text": "350 g",
+          "value": 350.0,
+          "max": 350.0,
+          "unit": "g",
+          "approx": false
         },
-        "perTask": {}
+        "perTask": {
+          "main": "175 g + 175 g"
+        }
       },
       {
         "ingredient": "lauch",
@@ -1403,9 +1425,13 @@
             "ingredient": "wurzelwerk",
             "name": "Wurzelwerk",
             "need": {
-              "text": ""
+              "text": "350 g",
+              "value": 350.0,
+              "max": 350.0,
+              "unit": "g",
+              "approx": false
             },
-            "display": "",
+            "display": "350 g",
             "inStock": false,
             "buy": {
               "text": "350 g"
@@ -1414,7 +1440,7 @@
           },
           {
             "ingredient": "lauch",
-            "name": "Stange Lauch",
+            "name": "Lauch",
             "need": {
               "text": "1",
               "value": 1.0,
@@ -1425,7 +1451,7 @@
             "display": "1",
             "inStock": false,
             "buy": {
-              "text": "1"
+              "text": "1 Stange"
             }
           },
           {

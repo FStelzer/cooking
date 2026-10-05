@@ -232,7 +232,17 @@
                 "Nicht salzen"
               ],
               "why": "Nicht klopfen, nicht in Korken-Wasser kochen — beim TK-Tier alles unnötige Folklore.",
-              "ingredients": [],
+              "ingredients": [
+                {
+                  "ref": "oktopus",
+                  "amount": {
+                    "text": "1,2–1,5 kg",
+                    "value": 1.2,
+                    "unit": "kg",
+                    "max": 1.5
+                  }
+                }
+              ],
               "meta": "*jederzeit*",
               "attention": "active",
               "after": []
@@ -631,6 +641,15 @@
                     "value": 1.0,
                     "unit": "Stück"
                   }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "2 EL",
+                    "value": 2.0,
+                    "unit": "EL"
+                  },
+                  "reuse": true
                 }
               ],
               "meta": "*nach Anbraten, Kartoffeln, Salat*",
@@ -672,15 +691,21 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T18:32:50Z",
-    "sourceHash": "36bf69ac899faad5",
+    "generatedAt": "2026-10-05T18:41:05Z",
+    "sourceHash": "bbc521f058b42b9e",
     "quantities": [
       {
         "ingredient": "oktopus",
         "total": {
-          "text": ""
+          "text": "1200–1500 g",
+          "value": 1200.0,
+          "max": 1500.0,
+          "unit": "g",
+          "approx": false
         },
-        "perTask": {}
+        "perTask": {
+          "main": "1,2–1,5 kg"
+        }
       },
       {
         "ingredient": "zwiebeln",
@@ -903,9 +928,13 @@
             "ingredient": "oktopus",
             "name": "Oktopus, \\~1,2–1,5 kg",
             "need": {
-              "text": ""
+              "text": "1200–1500 g",
+              "value": 1200.0,
+              "max": 1500.0,
+              "unit": "g",
+              "approx": false
             },
-            "display": "",
+            "display": "1200–1500 g",
             "inStock": false,
             "buy": {
               "text": "1"

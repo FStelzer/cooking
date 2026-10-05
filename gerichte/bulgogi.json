@@ -14,8 +14,8 @@
   "times": {
     "text": "Aktive Zeit ~1 Std. + 15 Min. Anfrieren + 2–3 Std. Marinieren (passiv), gesamt ~3,5 Std.",
     "active": {
-      "typical": "PT1H",
-      "source": "1 Std."
+      "typical": "PT1H15M",
+      "source": "1 Std. + 15 Min."
     },
     "total": {
       "typical": "PT3H30M",
@@ -31,31 +31,31 @@
   "ingredients": [
     {
       "id": "gochujang",
-      "name": "Becher Gochujang",
+      "name": "Gochujang",
       "store": "Asialaden",
       "group": "Würzmittel & Gewürze",
       "buy": {
-        "text": "1"
+        "text": "1 Becher"
       },
       "note": "Verbrauch nur 1 EL — hält ewig gekühlt, und Backlog-Idee „Korean Fried Chicken\" braucht ihn auch"
     },
     {
       "id": "doenjang",
-      "name": "Becher Doenjang",
+      "name": "Doenjang",
       "store": "Asialaden",
       "group": "Würzmittel & Gewürze",
       "buy": {
-        "text": "1"
+        "text": "1 Becher"
       },
       "note": "Verbrauch 2 EL; falls nicht da: fertiges Ssamjang im Becher kaufen, dann Gochujang fürs Ssamjang streichen"
     },
     {
       "id": "gochugaru",
-      "name": "Tüte Gochugaru",
+      "name": "Gochugaru",
       "store": "Asialaden",
       "group": "Würzmittel & Gewürze",
       "buy": {
-        "text": "1"
+        "text": "1 Tüte"
       },
       "note": "Verbrauch 1 EL; Fallback: ½ EL Gochujang ins Dressing"
     },
@@ -511,8 +511,8 @@
               "heading": "**6. Gurken-Pickle (10 Min. + 30 Min. passiv)**",
               "title": "Gurken-Pickle",
               "duration": {
-                "typical": "PT10M",
-                "source": "10 Min."
+                "typical": "PT40M",
+                "source": "10 Min. + 30 Min."
               },
               "attention": "passive",
               "text": "1 Salatgurke in dünne Scheiben hobeln, mit 1 TL Salz 10 Min. ziehen lassen, ausdrücken. Lake aus 3 EL Reisessig, 1 EL braunem Zucker und 2 EL Wasser darüber, mindestens 30 Min. ziehen lassen. *Mild — das Kind darf mitessen.*",
@@ -719,8 +719,8 @@
               "heading": "**9. Pa Muchim vorbereiten (5 Min. + 10 Min. passiv)**",
               "title": "Pa Muchim vorbereiten",
               "duration": {
-                "typical": "PT5M",
-                "source": "5 Min."
+                "typical": "PT15M",
+                "source": "5 Min. + 10 Min."
               },
               "attention": "passive",
               "text": "4 Frühlingszwiebeln längs in feine Streifen schneiden und 10 Min. in eiskaltem Wasser wässern (nimmt Schärfe, macht sie knackig-gekringelt), sehr gut trocknen. Dressing separat anrühren: 1 EL Gochugaru, 1 EL Sojasauce, 1 EL Reisessig, 2 TL brauner Zucker, 2 TL geröstetes Sesamöl, 1 TL Sesam. **Erst kurz vor dem Essen mischen**, sonst fällt der Salat zusammen. *Nur für die Erwachsenen — Gochugaru ist scharf.*",
@@ -1098,8 +1098,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T18:35:20Z",
-    "sourceHash": "a3418df5e2715290",
+    "generatedAt": "2026-10-05T18:41:05Z",
+    "sourceHash": "f760d47e25887c14",
     "quantities": [
       {
         "ingredient": "gochujang",
@@ -1472,7 +1472,7 @@
         "items": [
           {
             "ingredient": "gochujang",
-            "name": "Becher Gochujang",
+            "name": "Gochujang",
             "need": {
               "text": "1 EL",
               "value": 1.0,
@@ -1483,13 +1483,13 @@
             "display": "1 EL",
             "inStock": false,
             "buy": {
-              "text": "1"
+              "text": "1 Becher"
             },
             "note": "Verbrauch nur 1 EL — hält ewig gekühlt, und Backlog-Idee „Korean Fried Chicken\" braucht ihn auch"
           },
           {
             "ingredient": "doenjang",
-            "name": "Becher Doenjang",
+            "name": "Doenjang",
             "need": {
               "text": "2 EL",
               "value": 2.0,
@@ -1500,13 +1500,13 @@
             "display": "2 EL",
             "inStock": false,
             "buy": {
-              "text": "1"
+              "text": "1 Becher"
             },
             "note": "Verbrauch 2 EL; falls nicht da: fertiges Ssamjang im Becher kaufen, dann Gochujang fürs Ssamjang streichen"
           },
           {
             "ingredient": "gochugaru",
-            "name": "Tüte Gochugaru",
+            "name": "Gochugaru",
             "need": {
               "text": "1 EL",
               "value": 1.0,
@@ -1517,7 +1517,7 @@
             "display": "1 EL",
             "inStock": false,
             "buy": {
-              "text": "1"
+              "text": "1 Tüte"
             },
             "note": "Verbrauch 1 EL; Fallback: ½ EL Gochujang ins Dressing"
           }

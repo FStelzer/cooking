@@ -17,10 +17,10 @@ try {
   await page.waitForSelector(".markdown-section h1 .kochmodus-btn", { timeout: 20000 });
   const href = await page.locator(".kochmodus-btn").getAttribute("href");
   assert.equal(href, "kochmodus/?r=../gerichte/thit-kho-trung.json");
-  await page.goto(`http://127.0.0.1:${PORT}/#/gerichte/bulgogi`);
+  await page.goto(`http://127.0.0.1:${PORT}/#/schwangerschaft/leitfaden`);
   await page.waitForSelector(".markdown-section h1");
   await page.waitForTimeout(800);
-  assert.equal(await page.locator(".kochmodus-btn").count(), 0, "Bulgogi hat kein JSON, darf keinen Knopf haben");
+  assert.equal(await page.locator(".kochmodus-btn").count(), 0, "Leitfaden hat kein JSON, darf keinen Knopf haben");
   await page.goto(`http://127.0.0.1:${PORT}/${href}`);
   await page.waitForSelector(".row[data-step]");
   assert.equal(await page.locator(".row[data-step]").count(), 9);

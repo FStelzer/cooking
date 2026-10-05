@@ -82,11 +82,11 @@
     },
     {
       "id": "staudensellerie",
-      "name": "Stange Staudensellerie",
+      "name": "Staudensellerie",
       "store": "REWE Center",
       "group": "Obst & Gemüse",
       "buy": {
-        "text": "1"
+        "text": "1 Stange"
       }
     },
     {
@@ -100,20 +100,20 @@
     },
     {
       "id": "thymian",
-      "name": "Zweige Thymian",
+      "name": "Thymian",
       "store": "REWE Center",
       "group": "Obst & Gemüse",
       "buy": {
-        "text": "2"
+        "text": "2 Zweige"
       }
     },
     {
-      "id": "zweig",
-      "name": "Zweig Estragon",
+      "id": "estragon",
+      "name": "Estragon",
       "store": "REWE Center",
       "group": "Obst & Gemüse",
       "buy": {
-        "text": "1"
+        "text": "1 Zweig"
       }
     },
     {
@@ -600,6 +600,14 @@
                     "value": 2.0,
                     "unit": "Zweige"
                   }
+                },
+                {
+                  "ref": "estragon",
+                  "amount": {
+                    "text": "1 Zweig Estragon",
+                    "value": 1.0,
+                    "unit": "Zweig"
+                  }
                 }
               ],
               "attention": "active"
@@ -764,8 +772,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T18:34:23Z",
-    "sourceHash": "20c0fcf59c5be10a",
+    "generatedAt": "2026-10-05T18:41:05Z",
+    "sourceHash": "0798cb14bd9e2a11",
     "quantities": [
       {
         "ingredient": "hummer",
@@ -872,11 +880,17 @@
         }
       },
       {
-        "ingredient": "zweig",
+        "ingredient": "estragon",
         "total": {
-          "text": ""
+          "text": "1 Zweig",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Zweig",
+          "approx": false
         },
-        "perTask": {}
+        "perTask": {
+          "main": "1 Zweig Estragon"
+        }
       },
       {
         "ingredient": "zitrone",
@@ -1129,7 +1143,7 @@
           },
           {
             "ingredient": "staudensellerie",
-            "name": "Stange Staudensellerie",
+            "name": "Staudensellerie",
             "need": {
               "text": "1",
               "value": 1.0,
@@ -1140,7 +1154,7 @@
             "display": "1",
             "inStock": false,
             "buy": {
-              "text": "1"
+              "text": "1 Stange"
             }
           },
           {
@@ -1161,7 +1175,7 @@
           },
           {
             "ingredient": "thymian",
-            "name": "Zweige Thymian",
+            "name": "Thymian",
             "need": {
               "text": "2 Zweige",
               "value": 2.0,
@@ -1172,19 +1186,23 @@
             "display": "2 Zweige",
             "inStock": false,
             "buy": {
-              "text": "2"
+              "text": "2 Zweige"
             }
           },
           {
-            "ingredient": "zweig",
-            "name": "Zweig Estragon",
+            "ingredient": "estragon",
+            "name": "Estragon",
             "need": {
-              "text": ""
+              "text": "1 Zweig",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Zweig",
+              "approx": false
             },
-            "display": "",
+            "display": "1 Zweig",
             "inStock": false,
             "buy": {
-              "text": "1"
+              "text": "1 Zweig"
             }
           },
           {

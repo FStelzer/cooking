@@ -538,6 +538,15 @@
                     "value": 0.5,
                     "unit": "Stück"
                   }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "5 EL",
+                    "value": 5.0,
+                    "unit": "EL"
+                  },
+                  "reuse": true
                 }
               ],
               "meta": "*nach Rösten, Füllung · Ofen 180 °C*",
@@ -667,8 +676,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T18:33:47Z",
-    "sourceHash": "d9127ff03708f8e7",
+    "generatedAt": "2026-10-05T18:41:05Z",
+    "sourceHash": "ab57f073bd62be44",
     "quantities": [
       {
         "ingredient": "auberginen",

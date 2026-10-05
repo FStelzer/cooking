@@ -194,6 +194,27 @@ t("Dosierungen: Artikel nach der Menge, Einheit als Zutat, Präposition stoppt, 
             == [("tomaten", "400 g der Tomaten"), ("eier", "2 Eiweiß"), ("lammschulter", "2–2,2 kg")], DS["fuellung"]["ingredients"]),
     assert_(DS["teig"]["alts"][0]["baseQty"] == "2 gehäufte EL" and DS["teig"]["alts"][0]["options"][0].get("qty") is True, DS["teig"]["alts"]),
     assert_(parse_qty("1–1½ EL") == (1.0, 1.5, "EL"), parse_qty("1–1½ EL"))))
+GAPS = """# Test (2 Portionen)
+
+## Einkaufsliste
+
+### Aldi / REWE
+- [ ] 1 Oktopus, \\~1,2 kg
+- [ ] 1 Zweig Estragon
+- [ ] 1 Pck. Vanillezucker
+- [ ] 1 Kopf Brokkoli
+
+## Zubereitung
+
+**1. Pickle (10 Min. + 30 Min. passiv)**
+Aufgetauten Oktopus (\\~1,2–1,5 kg) abspülen. 1 Zweig Estragon, 1 Pck. Vanillezucker und 1 Kopf Brokkoli dazu.
+"""
+g, _ = parse_recipe(GAPS, "test/luecken")
+GS = steps_of(g)
+t("Welle 1: Dauer-Summe, Klammer-Menge mit \\~, Gebinde-Einheiten", lambda: (
+    assert_(GS["pickle"]["duration"] == {"typical": "PT40M", "source": "10 Min. + 30 Min."}, GS["pickle"]["duration"]),
+    assert_({x["ref"]: x["amount"].get("max") for x in GS["pickle"]["ingredients"]}.get("oktopus") == 1.5, GS["pickle"]["ingredients"]),
+    assert_([i["id"] for i in g["ingredients"]][:4] == ["oktopus", "estragon", "vanillezucker", "brokkoli"], [i["id"] for i in g["ingredients"]])))
 print(f"{n} Tests ok")
 if lint.msgs or mlint.msgs:
     print("Lint (Gericht):", *lint.msgs, sep="\n  ") if lint.msgs else None
