@@ -138,7 +138,7 @@ def verbatim_strings(recipe: dict) -> list[str]:
         elif t == "learnings":
             out += [sec["summary"], sec.get("details", "")]
         elif t == "todo":
-            out += [i["text"] for i in sec["items"]]
+            out += [sec.get("intro", "")] + [i["text"] for i in sec["items"]]
         elif t == "courses":
             out.append(sec.get("intro", ""))
             for c in sec["courses"]:

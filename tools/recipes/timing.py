@@ -298,6 +298,8 @@ def check_l(recipe: dict, source: str) -> tuple[list[str], list[str]]:
             else:
                 dev += 1
                 msg = f"L {cells[0]} / {cid}: Tabelle {want[0]:g}{'–' + format(want[1], 'g') if want[1] != want[0] else ''} {want[2]} ↔ JSON {hv:g}{'–' + format(hm, 'g') if hm != hv else ''} {have['unit']} ('{cells[col[cid]][:40]}')"
-                (reps if re.search(r"Reserve|Test", cells[col[cid]]) else errs).append(msg)
+                # Nur ein sauberer Fall ist ein Fehler: gleiche Einheit, keine Pro-/Reserve-/Sammelangaben
+                soft = have["unit"] != want[2] or re.search(r"pro |je |Reserve|Test|≈|/", cells[col[cid]] + cells[0])
+                (reps if soft else errs).append(msg)
     reps.insert(0, f"L Mengen-Check: {ok} Zellen passend, {dev} abweichend, {skipped} Zeilen ohne Zutat; geprüfte Gänge: {', '.join(sorted(converted & set(col))) or '—'}")
     return errs, reps

@@ -1260,6 +1260,10 @@
                     }
                   }
                 }
+              },
+              "intro": {
+                "$ref": "#/$defs/markdown",
+                "description": "Label-Zeile vor der Liste, verbatim (z. B. „**Offen (Testlauf):**“)"
               }
             }
           }

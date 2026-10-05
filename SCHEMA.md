@@ -28,6 +28,7 @@ Einzige Abhängigkeit: `jsonschema` (siehe `tools/requirements.txt`).
 |---|---|
 | 2026-10-05 | Plan freigegeben. AP0 (Festlegungen, Werkzeug-Skelett) und AP1 (Schema v0.1, thit-kho Minimum + Anreicherung) umgesetzt. Checks A–D grün, Mutationstest 11/11 erkannt. |
 | 2026-10-05 | AP2 umgesetzt: `tools/recipes/shopping.py` berechnet `derived.quantities` und `derived.shopping`, `cli derive` schreibt sie ins JSON (reproduzierbar bis auf `generatedAt`, Hash-Prüfung gegen veraltete Blöcke), `cli shopping` rendert Markdown im heutigen Format, Check K vergleicht mit der Original-Einkaufsliste. |
+| 2026-10-05 | **November-Menü vollständig modelliert** (User: „damit man es ehrlich testen kann"). Alle vier Gänge als Tasks/Produkte/Schritte: 60 Schritte (58 nummeriert + 2 Anrichten), 84 Dosierungen, 22 Produkte, 23 Erzeuger→Verbraucher-Paare, 28 Zeitplan-Einträge (5 abgeleitet), 53 Zutaten. Konvertierung als versioniertes Skript `tools/convert/menue_november.py` (Verbatim-Schnitt + Hand-Annotation). Zwei Format-Anpassungen am Markdown (Schritte, die über mehrere Tage liefen, aufgetrennt; Inhalt unverändert, eigener Commit). Kochen-Ansicht ordnet nach Ablauf, optional nach Gang. |
 | 2026-10-05 | **Phase 2b, AP4 umgesetzt** (Entscheidungspunkt auf User-Entscheidung übersprungen: erst ein großes Menü ist der echte Test, bei bekannten Rezepten entsteht kaum Feedback). Schema v0.2: Menü/Gänge/Zeitplan/Ressourcen/Constraints. `menue-november.json`: Rahmen, Gang 2 vollständig (8 Tasks, 7 Produkte, 18 Steps), Stubs für 1/3/4, 50 Zutaten, 8 Phasen + 24 Einträge. `timing.py` mit Checks E–H, L. Kochmodus menüfähig mit Plan-Raster. Siehe Messwerte AP4. |
 | 2026-10-05 | **Durchstich** gebaut: `kochmodus/` (statische Seite, vanilla JS, `marked` vom CDN wie Docsify). Ansichten Kochen (Kurzansicht + Details mit Hervorhebung, Abhaken, Timer mit Endzeit im localStorage, Ereignisse, Notiz pro Schritt, Export im `learnings.notes[]`-Format, Voraussetzungen aus `after`), Einkauf (aus `derived.shopping`, abhakbar, skaliert) und Lesen (Sektionen in Dokumentreihenfolge). Skalieren ersetzt Spans inline (L11) mit Rundung nach Einheit (`kochmodus/lib.js`). 10 Node-Tests, Playwright-Rauchtest im Container grün. **Nächster Schritt: Thịt kho damit kochen, dann Entscheidungspunkt vor Phase 2b.** |
 | 2026-10-05 | AP3 umgesetzt: zweite unabhängige Konvertierung von thit-kho durch einen frischen Agenten (nur SCHEMA.md + Schema + Quelle), `cli diff` misst Übereinstimmung pro Feld. Ergebnis: alle verbatim-nahen Felder 100 %, Ermessensfelder streuen (siehe Messwerte). Daraus Anleitung v2 mit regelbasiertem `action` (= erster Satz, Check C erzwingt das), festem Warengruppen-Vokabular, klaren Regeln für `priority`/`optional`/`note`/`scale`. Phase 2a damit abgeschlossen; nächster Schritt: Durchstich (Kochmodus-Seite mit thit-kho). |
@@ -90,6 +91,10 @@ Einzige Abhängigkeit: `jsonschema` (siehe `tools/requirements.txt`).
   werden einmal vergeben und nie umbenannt (Abhak-Zustand, Notizen, Verweise).
 - **L13 Feedback-Ziel.** `learnings.notes[]` mit `ref: step:<slug>|task:<id>|product:<id>`,
   `date`, `status: open|applied`. Der Kochmodus exportiert genau diese Struktur.
+- **L16 Konvertierungsskripte.** Für große Dateien liegt die Konvertierung als
+  Python-Skript unter `tools/convert/` (verbatim-Schnitt der Prosa plus Hand-
+  Annotation der Modellierung). Die JSON-Datei ist das Ergebnis, das Skript die
+  Quelle der Annotation; Markdown bleibt Quelle des Inhalts.
 - **L15 Stub-Gänge.** Ein Gang, der noch nicht modelliert ist, ist ein `Recipe{kind:
   course}` mit genau einer verbatim-`markdown`-Sektion. Seine Zutaten tragen `buy`
   (Kaufmenge aus der Liste) statt Dosierungen; Check K wertet das als passend,
@@ -281,6 +286,34 @@ einem Schritt).
 
 **Rendering-Entscheidungen** (`cli shopping`): `###` pro Laden in Besuchsreihenfolge (Online, Buhara, Asialaden, Selgros, REWE Center, Aldi/REWE, Vorrat), darunter `**Warengruppe:**`, Einträge `- [ ] Menge Name, prep *(note)*`, `Optional:`-Präfix, `[x]` bei `inStock`. Das 📲-Export-Plugin würde auf dieser Ausgabe unverändert funktionieren.
 
+### menue-november, vollständig (AP4, 2026-10-05)
+
+| Kennzahl | Wert | Bemerkung |
+|---|---|---|
+| Schritte | 60 (10 + 19 + 21 + 10) | je Gang 1–N nummeriert plus Anrichten bei Gang 2 und 3 |
+| Tasks / Produkte / Kanten | 25 / 22 / 23 Erzeuger→Verbraucher | alle über Phasen konsistent (Check G) |
+| Dosierungen exact / derived | 84 / 0 | `times` für Rotwein in 3 Schüben und je-Pfanne-Angaben |
+| Zutaten | 53 aus 42 Posten | 12 nur im JSON (Vorrat: Salz, Wasser, Öl, gebrühter Espresso, Sirup …) |
+| Check K | 43 / 43 passend | |
+| Check F | 23 / 23 Segmente, 13 mit Task, 5 abgeleitet | Saison-Teil, Concassé, Grundwürzung, Pralinen wälzen, Anrichten Gang 3 |
+| Check L | 13 / 20 Zellen passend, 7 Hinweise | alle Hinweise = gemischte Einheiten (Limette Stück vs. ml Saft, EL vs. g), Pro-Person-Angaben oder Sammelzeile „Zucker / Dextrose" |
+| Check H | 3 Warnungen | Anrichten Gang 2 +0:22 vs. +0:20; Dessert +1:57 vs. +1:45 (Temperieren beginnt erst bei −15); Limette 7 statt ≤ 5 Min. |
+| Token Quelle / JSON | 249 / 249 | |
+
+**Markdown-Anpassungen (Format, Inhalt unverändert):** Gang 2 Schritt 9 (auftauen am
+Vortag) und 10 (auslösen am Tag) getrennt; Gang 3 Schritt 8 (passieren, Fettdeckel) und
+9 (am Tag reduzieren) getrennt, der Montier-Satz in den Abend-Schritt 20 verschoben, der
+vorher nur „Jus montieren (Schritt 8)" sagte. Regel daraus: **ein Schritt gehört zu
+einer Phase**; läuft ein Schritt über Tage, wird er in der Quelle geteilt.
+
+**Was die Vollmodellierung gezeigt hat:** (1) Der Zeitplan-Skelett-Text deckt nur die
+Hälfte der Tasks ab; fünf Platzierungen mussten aus den Rezeptschritten abgeleitet
+werden (`derived`). (2) Mengen-Check-Zellen mischen Einheiten; Check L kann sie nur
+als Hinweis vergleichen. (3) Mehrfach-Dosierungen derselben Zutat mit verschiedenen
+Einheiten (Limette als Stück und als Saft in ml, Kräuter als EL, Zweige, TL) sind
+häufig; `unitMixed` macht das sichtbar statt zu erfinden. (4) Pro-Person-Angaben
+(Shakes) brauchen in der Ableitung einen Personen-Multiplikator — offen.
+
 ### menue-november, Gang 2 (AP4, 2026-10-05)
 
 | Kennzahl | Wert | Bemerkung |
@@ -386,6 +419,6 @@ Fehlt `after` irgendwo? Welche Notizen entstehen, und passen sie ins Format?
 - **AP6:** Varianten (dal-baukasten, vollkornbrötchen): `variants[]`, `only`,
   `replaces`, `byVariant`, `next`; zwei Schedules (Backtag, aus dem Frost).
 - **AP7:** Abnahme über alle fünf Dateien, Review-Checkliste, PRD-Delta.
-- Offen aus AP4: Kritischer-Pfad-Linter gegen `times.total`; Gang-2-Dauern beim
-  Testlauf messen und die `estimated`-Flags ablösen; November-Menü im Kochmodus
-  benutzen (Testlauf Gang 2).
+- Offen aus AP4: Kritischer-Pfad-Linter gegen `times.total`; Dauern beim Testlauf
+  messen und die `estimated`-Flags ablösen; Personen-Multiplikator für `per`-Mengen in
+  der Ableitung; November-Menü im Kochmodus benutzen (Testlauf Gang 2).
