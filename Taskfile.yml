@@ -109,6 +109,28 @@ tasks:
         rm -f "$tmp" "$gen"
 
   serve:
-    desc: Lokalen Python-Webserver auf Port 3000 starten
+    desc: Lokalen Python-Webserver auf Port 3000 starten (Kochmodus unter /kochmodus/)
     cmds:
       - python3 -m http.server 3000
+
+  validate:
+    desc: Rezeptformat — Checks A–D, K gegen alle Beispiel-JSONs (tools/recipes)
+    cmds:
+      - python3 -m tools.recipes.cli check schema/beispiele/*.json
+
+  test-kochmodus:
+    desc: Kochmodus — Node-Tests der reinen Funktionen (lib.js)
+    cmds:
+      - node tools/test_kochmodus.mjs
+
+  smoke-kochmodus:
+    desc: Kochmodus — Playwright-Rauchtest im Container (podman, Image wie auf dem Dev-Server)
+    vars:
+      PW_VERSION: '{{.PW_VERSION | default "1.59.1"}}'
+      PW_IMAGE: '{{.PW_IMAGE | default "container.ams1.ops.xxx/mirrored/playwright:v1.59.1"}}'
+    cmds:
+      - >-
+        podman run --rm --network=host -v .:/work:rw,Z -w /work {{.PW_IMAGE}}
+        env PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 npx -y -p playwright@{{.PW_VERSION}} sh -c
+        'export PLAYWRIGHT_DIR="$(dirname "$(dirname "$(command -v playwright)")")/";
+        node tools/smoke_kochmodus.mjs {{.CLI_ARGS}}'

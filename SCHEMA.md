@@ -14,6 +14,10 @@ python3 -m tools.recipes.cli check schema/beispiele/x.json -v   # mit Reports
 python3 -m tools.recipes.cli derive schema/beispiele/x.json      # derived-Block (Einkaufsliste, Mengen) schreiben
 python3 -m tools.recipes.cli shopping schema/beispiele/x.json    # Einkaufsliste als Markdown
 python3 -m tools.recipes.cli diff a.json b.json                 # Feld-Diff zweier Konvertierungen (Check I)
+task validate            # Checks über alle Beispiele
+task test-kochmodus      # Node-Tests der Kochmodus-Funktionen (kochmodus/lib.js)
+task smoke-kochmodus     # Playwright-Rauchtest im Container (podman)
+task serve               # dann http://localhost:3000/kochmodus/?r=schema/beispiele/thit-kho-trung.json
 ```
 
 Einzige Abhängigkeit: `jsonschema` (siehe `tools/requirements.txt`).
@@ -24,6 +28,7 @@ Einzige Abhängigkeit: `jsonschema` (siehe `tools/requirements.txt`).
 |---|---|
 | 2026-10-05 | Plan freigegeben. AP0 (Festlegungen, Werkzeug-Skelett) und AP1 (Schema v0.1, thit-kho Minimum + Anreicherung) umgesetzt. Checks A–D grün, Mutationstest 11/11 erkannt. |
 | 2026-10-05 | AP2 umgesetzt: `tools/recipes/shopping.py` berechnet `derived.quantities` und `derived.shopping`, `cli derive` schreibt sie ins JSON (reproduzierbar bis auf `generatedAt`, Hash-Prüfung gegen veraltete Blöcke), `cli shopping` rendert Markdown im heutigen Format, Check K vergleicht mit der Original-Einkaufsliste. |
+| 2026-10-05 | **Durchstich** gebaut: `kochmodus/` (statische Seite, vanilla JS, `marked` vom CDN wie Docsify). Ansichten Kochen (Kurzansicht + Details mit Hervorhebung, Abhaken, Timer mit Endzeit im localStorage, Ereignisse, Notiz pro Schritt, Export im `learnings.notes[]`-Format, Voraussetzungen aus `after`), Einkauf (aus `derived.shopping`, abhakbar, skaliert) und Lesen (Sektionen in Dokumentreihenfolge). Skalieren ersetzt Spans inline (L11) mit Rundung nach Einheit (`kochmodus/lib.js`). 10 Node-Tests, Playwright-Rauchtest im Container grün. **Nächster Schritt: Thịt kho damit kochen, dann Entscheidungspunkt vor Phase 2b.** |
 | 2026-10-05 | AP3 umgesetzt: zweite unabhängige Konvertierung von thit-kho durch einen frischen Agenten (nur SCHEMA.md + Schema + Quelle), `cli diff` misst Übereinstimmung pro Feld. Ergebnis: alle verbatim-nahen Felder 100 %, Ermessensfelder streuen (siehe Messwerte). Daraus Anleitung v2 mit regelbasiertem `action` (= erster Satz, Check C erzwingt das), festem Warengruppen-Vokabular, klaren Regeln für `priority`/`optional`/`note`/`scale`. Phase 2a damit abgeschlossen; nächster Schritt: Durchstich (Kochmodus-Seite mit thit-kho). |
 
 ## Phase 1: Testsammlung und harte Stellen
@@ -316,12 +321,30 @@ vorher.
 | 2026-10-05 | Externes Schema-Feedback bewertet. **Übernommen (Phase 2a):** Schritt-Kanten `after` (Default: Vorgänger, `[]` = frei), relative Anker `start`, `events[]` getrennt von Timern, `duration.estimated`, `consumes` mit `product:`-Präfix, `derived.inStock` statt `checked` (Abhak-Zustand ist Renderer-State), `hold` dokumentiert relativ zu `product:ready`, Einheit „Zehen" aus den Beispielen gestrichen. **Verschoben auf AP4:** Ressourcen mit ID/Kapazität und Ofen-Temperatur-Bindung (war dort geplant), Summen-/Kritischer-Pfad-Linter gegen `times.total` (braucht den Graph, jetzt vorhanden). **Nicht übernommen:** Schritte splitten (verletzt L2 „ein Markdown-Schritt = ein Step"; stattdessen Schreibkonvention: unabhängige Stränge in der Quelle als eigene Schritte schreiben, Bestand bleibt wie er ist). |
 | 2026-10-05 | `derived.sourceHash` = SHA-256 (gekürzt) des JSON ohne `derived`; `cli check` verlangt einen aktuellen Block, sobald die Quelle eine Einkaufsliste hat. Mengen werden intern auf g/ml normiert; `Stück` wird in der Anzeige weggelassen. |
 
+## Kochmodus (Durchstich)
+
+`kochmodus/index.html` + `app.js` + `lib.js` + `style.css`, kein Build. Lädt ein
+Rezept-JSON per `?r=<pfad>` (Default thit-kho). Zustand (Abhaken, Timer-Endzeiten,
+Notizen, Einkaufs-Häkchen, Faktor) liegt im localStorage unter `km:<recipe.id>`,
+Schlüssel sind die Step-/Zutaten-Slugs (L12). Timer-Alarm: Ton + Vibration + Titel;
+bekannte Grenze (Prototyp): bei gesperrtem Bildschirm unzuverlässig. Wake Lock wird
+angefragt, wo erlaubt. Mengen: Spans werden roh im Text ersetzt, nur `spanForm:
+exact` mit `value`; Rundung: Stück auf halbe, EL/TL auf Viertel, g/ml ab 100 auf 5er.
+Einkaufsliste bei Faktor 1 zeigt `display` (Löffel-Regel), sonst den skalierten
+Rohwert. Notizen-Export: Markdown-Block mit `step:<slug>`-Bezug, zum Einfügen unter
+`## Learnings`; Parser (Phase 4) liest ihn in `learnings.notes[]` zurück.
+
+Was beim Kochen beobachtet werden soll (Input für den Entscheidungspunkt): Reicht
+Kurzansicht + Überschrift zum Ausführen? Werden Details aufgeklappt, und wofür?
+Timer benutzt oder Uhr? Stört die Sticky-Kopfzeile auf dem Handy (ca. 210 px)?
+Fehlt `after` irgendwo? Welche Notizen entstehen, und passen sie ins Format?
+
 ## Nächste Schritte
 
-- **Durchstich:** statische Kochmodus-Seite, die `schema/beispiele/thit-kho-trung.json`
-  lädt (Kurz-/Vollansicht, `derived.shopping`, Skalieren mit Inline-Ersetzung,
-  Abhaken, Timer, Notizen-Export im `learnings.notes[]`-Format). Eigener Detailplan.
-- Thịt kho damit kochen, dann **Entscheidungspunkt** vor Phase 2b (siehe Plan).
+- Thịt kho mit dem Kochmodus kochen, Notizen exportieren.
+- **Entscheidungspunkt** vor Phase 2b (siehe Plan): Modellfehler aus dem Kochen,
+  Kennzahlen aus 2a, Syntax-Wünsche; dann AP4 (Menü, Zeit, Ressourcen) unverändert
+  oder umgebaut.
 - **AP4 zusätzlich:** Ressourcen (`resources[]` mit Kapazität, `claims[]` mit Ofen-
   Temperatur), Linter „Summe entlang des kritischen Pfads vs. `times.total`"
   (thit-kho: sequenziell 145–185 Min., mit Anker Reduzieren-im-Schmoren 125–155,

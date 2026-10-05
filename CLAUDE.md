@@ -201,6 +201,13 @@ schreiben (rendert als normales `~`). Tabellenzellen sind unkritisch
   Titel steht eine Status-Alertbox (`> [!NOTE]` … "Status: In Arbeit"). Solche
   Stubs enthalten Idee, grobe Richtung, Beschaffungs-Einschätzung und offene
   Fragen — noch keine Einkaufsliste/Zubereitung.
+- **Strukturiertes Rezeptformat (in Arbeit, Stand 10/2026):** `SCHEMA.md` (Leit-
+  entscheidungen, Konvertierungs-Anleitung, Checks, Entscheidungslog),
+  `schema/` (JSON Schema + handkonvertierte Beispiele), `tools/recipes/` (Python-
+  Validator: `task validate`), `kochmodus/` (statische Kochmodus-Seite:
+  `task serve` → `/kochmodus/`). Markdown bleibt Quelle; Einkaufsliste und
+  Mengen-Check sollen mittelfristig generiert werden. Keine `.md` unter `schema/`,
+  `tools/`, `kochmodus/` (Sidebar-Generator).
 - **Sidebar wird generiert:** `_sidebar.md` NIE von Hand editieren, sondern
   `task sidebar` laufen lassen. Der Generator setzt den Link auf `ideen.md`
   zuoberst, gruppiert 🚧-Rezepte automatisch in die Sektion „🚧 in arbeit" und
