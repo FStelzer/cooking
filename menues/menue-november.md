@@ -335,6 +335,10 @@ Chili). Beurre blanc ist alkoholfrei → Mini-Spiegel ist unkritisch.
       entscheiden *(Tendenz: 20 g — auch Dritt-Feedback votiert für kleiner)*
 - [ ] Buhara: Kaisergranat TK roh verfügbar, Größe & Preis? Sonst Selgros
 - [ ] Verjus-Quelle (Weinhandel vor Ort oder online)
+- [ ] Zeitfenster Gang 1 → Gang 2 (20 Min.) ist knapper als Beurre blanc
+      (\~15 Min. Arbeit, Schritt 11–14) + à la minute (\~8 Min.): Reduktion
+      (Schritt 11) schon vor dem Anrichten von Gang 1 starten oder Gang 2 auf
+      +0:25 legen
 
 ---
 
