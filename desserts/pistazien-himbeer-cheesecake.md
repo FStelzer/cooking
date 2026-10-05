@@ -1,6 +1,6 @@
-# Pistazien-Himbeer-Cheesecake (no-bake, Ø 22 cm, ~12 Stücke)
+# Pistazien-Himbeer-Cheesecake (no-bake, Ø 22 cm, \~12 Stücke)
 
-*Aktive Zeit ~45 Min., dazu Kühlzeit: Himbeerschicht ~1 Std., Torte über Nacht.
+*Aktive Zeit \~45 Min., gesamt über Nacht (Kühlzeit: Himbeerschicht \~1 Std., Torte über Nacht).
 Equipment: Springform Ø 22 cm mit herausnehmbarem Boden, Handmixer,
 kleiner Topf, feines Sieb, Waage.*
 
@@ -25,7 +25,7 @@ Mengen. Was ich geändert habe und warum:
   sichere Variante.
 - **Speisestärke 2 EL → 1 EL.** 2 EL auf 230 g Himbeeren ist sehr viel; das gibt
   eine schnittfeste, puddingartige Schicht statt einer Fruchtschicht. 1 EL
-  (~10 g) reicht für „streichfähig, aber nicht flüssig".
+  (\~10 g) reicht für „streichfähig, aber nicht flüssig".
 - **Wasser: „2,3 žlice"** ist im Original offensichtlich ein Tippfehler
   (kroatisches Dezimalkomma). Gemeint sind 2–3 EL. Ich nehme 2 EL für die
   Himbeeren + 2 EL kaltes Wasser zum Anrühren der Stärke.
@@ -67,11 +67,11 @@ Mengen. Was ich geändert habe und warum:
     (Bio-Nussmus-Anbieter, sizilianische Paste) zuverlässiger als gute
     Fertigcreme.
 - **Springform: nicht im Equipment-Bestand.** Im Repo stehen nur Kastenformen
-  (~20 cm). Für dieses Rezept braucht es eine Springform oder einen Tortenring
+  (\~20 cm). Für dieses Rezept braucht es eine Springform oder einen Tortenring
   Ø 22 cm mit Boden — Standard-Anschaffung, für alle künftigen Torten nützlich.
   *Notlösung ohne Springform:* Kastenform mit Backpapier auslegen und als
   Schichtdessert servieren (Mengen dann halbieren, eine 20-cm-Kastenform fasst
-  ~1,2 l).
+  \~1,2 l).
 - **TK-Himbeeren:** 230 g gebraucht, verkauft werden 300-g-Beutel. Rest
   einfrieren oder als Deko auftauen.
 - **Kekse:** Butterkeks oder Digestive, gemahlen. Digestive (Vollkorn, salziger)
@@ -81,41 +81,43 @@ Mengen. Was ich geändert habe und warum:
 
 ### REWE / Aldi
 
-**Kühltheke / Milchprodukte:**
-- [ ] 500 g Mascarpone (2 × 250 g)
-- [ ] 500 ml Schlagsahne (Verbrauch: 300 ml Fil + 100–120 ml Ganache = \~420 ml; bei dunkler Ganache 200 ml → genau 500 ml)
+**Milchprodukte & Eier:**
+- [ ] 500 g Mascarpone *(2 × 250 g)*
+- [ ] 500 ml Schlagsahne *(Verbrauch: 300 ml Fil und 100–120 ml Ganache = \~420 ml; bei dunkler Ganache 200 ml → genau 500 ml)*
 - [ ] 125 g Butter
 
-**Trockenwaren / Süßes:**
-- [ ] 300 g Butterkekse oder Digestive (gemahlen oder selbst mahlen)
-- [ ] 200 g weiße Schokolade (2 Tafeln, Kuvertüre besser als Tafelschokolade)
+**Trockenwaren:**
+- [ ] 300 g Butterkekse oder Digestive *(gemahlen oder selbst mahlen)*
+- [ ] 200 g weiße Schokolade *(2 Tafeln, Kuvertüre besser als Tafelschokolade)*
 - [ ] 1 Pck. Vanillezucker
-- [ ] Zucker (Bestand, 1–2 EL)
-- [ ] Speisestärke (Bestand, 1 EL)
-- [ ] 60 ml Milch (Bestand)
 
-**Obst:**
-- [ ] 1 Zitrone (1 TL Saft für die Himbeerschicht)
-- [ ] Frische Beeren zum Garnieren, gemischt \~300 g: je \~100 g Himbeeren,
-      rote Johannisbeeren, Blaubeeren *(Johannisbeeren sind der sauerste
-      Gegenspieler — nicht weglassen)*
+**Obst & Gemüse:**
+- [ ] 1 Zitrone *(1 TL Saft für die Himbeerschicht)*
+- [ ] 100 g frische Himbeeren *(Garnitur)*
+- [ ] 100 g rote Johannisbeeren *(Garnitur — der sauerste Gegenspieler, nicht weglassen)*
+- [ ] 100 g Blaubeeren *(Garnitur)*
 
 **Tiefkühl:**
-- [ ] 300 g TK-Himbeeren (230 g gebraucht — oder alle 300 g für eine dickere Fruchtschicht, s. Schritt 2)
+- [ ] 300 g TK-Himbeeren *(230 g gebraucht — oder alle 300 g für eine dickere Fruchtschicht, s. „Himbeerschicht“)*
 
-### Feinkost / online (Vorlauf einplanen!)
+### Online
 
-- [ ] 500 g Pistaziencreme, Pistazienanteil \~40 % *(bei 40 % werden alle 500 g
-      gebraucht; Alternative: 250–300 g Pistazienmus 100 % + 100 g weiße
-      Schokolade extra, siehe Beschaffung)*
-- [ ] 50 g Pistazienkerne, gesalzen-geröstet, gehackt — als Topping.
-      Salz und Crunch sind hier kein Deko-Gag, sondern Gegengewicht zur Süße.
-      *(Für die Salzkaramell-Variante: 80 g ungesalzene Kerne + 40 g Zucker +
-      ½ TL Salz, siehe Varianten)*
+*Feinkost oder online — Vorlauf einplanen!*
+
+- [ ] 500 g Pistaziencreme *(Pistazienanteil \~40 %; bei 40 % werden alle 500 g gebraucht; Alternative: 250–300 g Pistazienmus 100 % + 100 g weiße Schokolade extra, siehe Beschaffung)*
+- [ ] 50 g Pistazienkerne, gesalzen-geröstet, gehackt *(als Topping. Salz und Crunch sind hier kein Deko-Gag, sondern Gegengewicht zur Süße. Für die Salzkaramell-Variante: 80 g ungesalzene Kerne + 40 g Zucker + ½ TL Salz, siehe Varianten)*
+
+### Vorrat prüfen
+
+- [ ] Zucker *(1–2 EL)*
+- [ ] Speisestärke *(1 EL)*
+- [ ] 60 ml Milch
+- [ ] Salz
 
 ## Zubereitung
 
 **1. Keksboden (10 Min.)**
+*jederzeit*
 300 g Kekse fein mahlen (Stabmixer/Mixer oder Beutel + Nudelholz). 125 g Butter
 schmelzen, mit Keksbröseln, 60 ml Milch und optional 1 EL weißer Schokocreme verrühren.
 In die mit Backpapier ausgelegte Form geben und mit einem Glasboden fest
@@ -126,36 +128,49 @@ andrücken. In den Kühlschrank.
 > mit der Gabel isst. Wer einen knackigen Boden will: Milch weglassen und
 > 150 g Butter nehmen.
 
-**2. Himbeerschicht (15 Min. + 1 Std. kühlen)**
+**2. Himbeerschicht (15 Min.)**
+*jederzeit · Herd*
 230 g TK-Himbeeren mit 1 EL Zucker, 1 Pck. Vanillezucker und 2 EL Wasser in einen
 kleinen Topf, bei mittlerer Hitze aufkochen und \~5 Min. einkochen lassen. Durch ein
 feines Sieb passieren (Kerne raus), 1 TL Zitronensaft zugeben und zurück in den Topf.
 1 EL Speisestärke (\~10 g) in 2 EL kaltem Wasser glattrühren, unter Rühren zugeben und
-1–2 Min. weiterkochen, bis es deutlich andickt. *Kräftigerer Gegenpol:* alle 300 g
-Himbeeren nehmen, dann 1 gestrichener EL + 1 TL Stärke (\~13 g) und 3 EL Wasser. Abkühlen lassen — **lauwarm, nicht heiß** auf den Boden
-gießen, glattstreichen und komplett durchkühlen lassen (\~1 Std.).
+1–2 Min. weiterkochen, bis es deutlich andickt. *Kräftigerer Gegenpol:* den ganzen
+300-g-Beutel Himbeeren nehmen, dann 1 gestrichener EL + 1 TL Stärke (\~13 g) und 3 EL Wasser. Abkühlen lassen — **lauwarm, nicht heiß** auf den Boden
+gießen, glattstreichen.
+
+**3. Fruchtschicht kühlen (1 Std., passiv)**
+*nach Keksboden, Himbeerschicht*
+Komplett durchkühlen lassen (\~1 Std.).
 
 Nicht abkürzen: Kommt der Fil auf eine warme Fruchtschicht, verläuft die
 Grenze und die Sahne fällt zusammen.
 
-**3. Pistazien-Fil (10 Min.)**
+**4. Pistazien-Fil (10 Min.)**
 300 ml Sahne steif schlagen. In einer zweiten Schüssel 500 g Mascarpone, die
-Pistaziencreme und 1 kräftige Prise Salz glattrühren — **Menge nach Sorte:
+Pistaziencreme (500 g) und 1 kräftige Prise Salz glattrühren — **Menge nach Sorte:
 40 %-Creme 500 g, hochwertige Creme (>25 %) 400–500 g** (Details siehe
 Beschaffung), zwischendurch probieren (Mascarpone nicht überschlagen —
 er wird sonst körnig). Sahne in zwei Portionen unterheben. Auf die kalte Himbeerschicht
-geben, glattstreichen, 30 Min. kühlen, damit die Oberfläche fest wird.
+geben, glattstreichen.
 
-**4. Weiße Ganache (5 Min.)**
+**5. Fil kühlen (30 Min., passiv)**
+30 Min. kühlen, damit die Oberfläche fest wird.
+
+**6. Weiße Ganache (5 Min.)**
+*jederzeit · Herd*
 100–120 ml Sahne aufkochen, vom Herd nehmen, 200 g gehackte weiße Schokolade
-einrühren und 1 Min. stehen lassen, dann glattrühren. Auf ~30 °C abkühlen
+einrühren und 1 Min. stehen lassen, dann glattrühren. Auf \~30 °C abkühlen
 lassen (handwarm) und über den Fil gießen. Zu heiß gegossen schmilzt sie die
 Oberfläche des Fils an.
 
-**5. Durchkühlen (über Nacht)**
-Mindestens 4–6 Std., besser über Nacht in den Kühlschrank. Vor dem Servieren
-großzügig belegen: 50 g gehackte gesalzene Pistazien und \~300 g gemischte frische
-Beeren (je \~100 g Himbeeren, rote Johannisbeeren, Blaubeeren). Die Garnitur ist
+**7. Durchkühlen (über Nacht, passiv)**
+*nach Fil kühlen, Weiße Ganache*
+Mindestens 4–6 Std., besser über Nacht in den Kühlschrank.
+
+**8. Garnieren (ca. 10 Min.)**
+Vor dem Servieren
+großzügig belegen: 50 g gehackte gesalzene Pistazienkerne und gemischte frische
+Beeren (100 g Himbeeren, 100 g rote Johannisbeeren, 100 g Blaubeeren — zusammen \~300 g). Die Garnitur ist
 hier Teil der Balance, nicht Deko — Salz, Crunch und Säure gegen einen sehr süßen
 Kuchen. Mit einem in heißem
 Wasser erwärmten, trocken gewischten Messer schneiden.

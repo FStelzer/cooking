@@ -4,7 +4,7 @@
 - **backen**
   - [✅ Vollkornbrötchen auf Vorrat — Weizen als Leitrezept, Dinkel und Weizen-Roggen als Varianten (12 Stück)](/backen/vollkornbroetchen.md)
 - **desserts**
-  - [✅ Pistazien-Himbeer-Cheesecake (no-bake, Ø 22 cm, ~12 Stücke)](/desserts/pistazien-himbeer-cheesecake.md)
+  - [✅ Pistazien-Himbeer-Cheesecake (no-bake, Ø 22 cm, \~12 Stücke)](/desserts/pistazien-himbeer-cheesecake.md)
 - **eis**
   - [✅ Dunkles Schokoladeneis — Crème-anglaise-Basis (ca. 1 l, 8–10 Kugeln)](/eis/schokoladeneis-dunkel.md)
 - **gerichte**

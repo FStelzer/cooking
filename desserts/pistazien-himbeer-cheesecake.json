@@ -1,0 +1,1218 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "desserts/pistazien-himbeer-cheesecake",
+  "kind": "dish",
+  "title": "Pistazien-Himbeer-Cheesecake (no-bake, Ø 22 cm, \\~12 Stücke)",
+  "status": "done",
+  "yields": {
+    "text": "no-bake, Ø 22 cm, \\~12 Stücke"
+  },
+  "intro": "*Aktive Zeit \\~45 Min., gesamt über Nacht (Kühlzeit: Himbeerschicht \\~1 Std., Torte über Nacht).\nEquipment: Springform Ø 22 cm mit herausnehmbarem Boden, Handmixer,\nkleiner Topf, feines Sieb, Waage.*\n\nNo-bake-Cheesecake aus vier Schichten: Keksboden, passierte Himbeergrütze,\nMascarpone-Pistaziencreme, weiße Schokoladen-Ganache. Kein Ei, kein Ofen,\nkeine Gelatine — die Stabilität kommt allein aus Fett und Kälte.\n\nQuelle: [Pistacija malina cheesecake, „Andrea's cakes\" auf Coolinarika](https://www.coolinarika.com/recept/pistacija-malina-cheesecake-a5ab491e-d0d5-11ef-b49c-5ef010537e0d)\n(kroatisch, 01/2025). Übersetzt und ergänzt — das Original ist knapp gehalten\nund lässt einiges offen, siehe nächster Abschnitt.",
+  "times": {
+    "text": "Aktive Zeit ~45 Min., gesamt über Nacht (Kühlzeit: Himbeerschicht ~1 Std.",
+    "active": {
+      "typical": "PT45M",
+      "source": "45 Min."
+    },
+    "total": {
+      "min": "PT8H",
+      "max": "PT14H",
+      "source": "über Nacht"
+    }
+  },
+  "equipment": [
+    "Springform Ø 22 cm mit herausnehmbarem Boden",
+    "Handmixer",
+    "kleiner Topf",
+    "feines Sieb",
+    "Waage"
+  ],
+  "ingredients": [
+    {
+      "id": "mascarpone",
+      "name": "Mascarpone",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "500 g"
+      },
+      "note": "2 × 250 g"
+    },
+    {
+      "id": "schlagsahne",
+      "name": "Schlagsahne",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "500 ml"
+      },
+      "note": "Verbrauch: 300 ml Fil und 100–120 ml Ganache = \\~420 ml; bei dunkler Ganache 200 ml → genau 500 ml"
+    },
+    {
+      "id": "butter",
+      "name": "Butter",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "125 g"
+      }
+    },
+    {
+      "id": "butterkekse",
+      "name": "Butterkekse oder Digestive",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "300 g"
+      },
+      "note": "gemahlen oder selbst mahlen"
+    },
+    {
+      "id": "schokolade",
+      "name": "weiße Schokolade",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "200 g"
+      },
+      "note": "2 Tafeln, Kuvertüre besser als Tafelschokolade"
+    },
+    {
+      "id": "pck",
+      "name": "Pck. Vanillezucker",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1"
+      }
+    },
+    {
+      "id": "zitrone",
+      "name": "Zitrone",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "1 TL Saft für die Himbeerschicht"
+    },
+    {
+      "id": "himbeeren",
+      "name": "frische Himbeeren",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "100 g"
+      },
+      "note": "Garnitur"
+    },
+    {
+      "id": "johannisbeeren",
+      "name": "rote Johannisbeeren",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "100 g"
+      },
+      "note": "Garnitur — der sauerste Gegenspieler, nicht weglassen"
+    },
+    {
+      "id": "blaubeeren",
+      "name": "Blaubeeren",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "100 g"
+      },
+      "note": "Garnitur"
+    },
+    {
+      "id": "tk-himbeeren",
+      "name": "TK-Himbeeren",
+      "store": "Aldi / REWE",
+      "group": "Tiefkühl",
+      "buy": {
+        "text": "300 g"
+      },
+      "note": "230 g gebraucht — oder alle 300 g für eine dickere Fruchtschicht, s. „Himbeerschicht“"
+    },
+    {
+      "id": "pistaziencreme",
+      "name": "Pistaziencreme",
+      "store": "Online",
+      "buy": {
+        "text": "500 g"
+      },
+      "note": "Pistazienanteil \\~40 %; bei 40 % werden alle 500 g gebraucht; Alternative: 250–300 g Pistazienmus 100 % + 100 g weiße Schokolade extra, siehe Beschaffung"
+    },
+    {
+      "id": "pistazienkerne",
+      "name": "Pistazienkerne, gesalzen-geröstet, gehackt",
+      "store": "Online",
+      "buy": {
+        "text": "50 g"
+      },
+      "note": "als Topping. Salz und Crunch sind hier kein Deko-Gag, sondern Gegengewicht zur Süße. Für die Salzkaramell-Variante: 80 g ungesalzene Kerne + 40 g Zucker + ½ TL Salz, siehe Varianten"
+    },
+    {
+      "id": "zucker",
+      "name": "Zucker",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "1–2 EL"
+    },
+    {
+      "id": "speisestaerke",
+      "name": "Speisestärke",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "1 EL"
+    },
+    {
+      "id": "milch",
+      "name": "Milch",
+      "store": "Vorrat",
+      "buy": {
+        "text": "60 ml"
+      },
+      "pantry": true
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Abweichungen vom Original (bewusst)",
+      "level": 2,
+      "markdown": "Das Original ist ein Hobby-Post ohne Formangabe und mit ein paar unplausiblen\nMengen. Was ich geändert habe und warum:\n\n- **Formgröße fehlt im Original komplett** (ein Kommentar fragt danach, ohne\n  Antwort). Rechnung: \\~500 g Boden + \\~250 g Himbeer + \\~1200 g Fil + \\~280 g\n  Ganache ≈ 2,2 kg. Bei Ø 22 cm (380 cm²) ergibt das \\~6 cm Höhe — ein richtiger\n  Cheesecake. Bei Ø 24 cm wird er flacher (\\~4,5 cm), bei Ø 20 cm mit \\~7 cm\n  grenzwertig hoch zum Schneiden. **Ø 22 cm ist die Empfehlung**, 24 cm die\n  sichere Variante.\n- **Speisestärke 2 EL → 1 EL.** 2 EL auf 230 g Himbeeren ist sehr viel; das gibt\n  eine schnittfeste, puddingartige Schicht statt einer Fruchtschicht. 1 EL\n  (\\~10 g) reicht für „streichfähig, aber nicht flüssig\".\n- **Wasser: „2,3 žlice\"** ist im Original offensichtlich ein Tippfehler\n  (kroatisches Dezimalkomma). Gemeint sind 2–3 EL. Ich nehme 2 EL für die\n  Himbeeren + 2 EL kaltes Wasser zum Anrühren der Stärke.\n- **Ganache 200 g Schokolade : 80 ml Sahne** = 2,5:1. Das setzt hart aus und\n  reißt beim Schneiden. **100–120 ml Sahne** (≈ 2:1) bleibt schnittfähig.\n- **Zucker in der Himbeerschicht 3 EL → 1–2 EL.** Pistaziencreme und weiße\n  Schokolade bringen schon sehr viel Süße mit; die Säure der Himbeeren ist der\n  einzige Gegenspieler im ganzen Kuchen. Nicht wegzuckern.\n- **Lino Lada bijela (1 EL)** ist ein kroatischer weißer Nusscreme-Aufstrich von\n  Podravka. Bei 1 EL auf 300 g Keks ist der Beitrag rein kosmetisch —\n  **weglassen oder 1 EL von der geschmolzenen weißen Schokolade nehmen**, statt\n  dafür ein Glas Spezialaufstrich zu kaufen."
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Pistaziencreme, 500 g — der kritische und mit Abstand teuerste Posten.**\n  Preisrahmen 15–30 € für 400 g, je nach Qualität. Achtung: Viele Produkte im\n  Supermarkt-Regal sind Zucker + Pflanzenöl + Magermilchpulver mit 5–15 %\n  Pistazie und schmecken flach-süß. **Zutatenliste prüfen: Pistazienanteil\n  möglichst > 25 %, ohne Palmöl.** Sizilianische Marken (Pistì, Babbi,\n  Bronte-Produkte) sind der Referenzpunkt, im italienischen Feinkostladen oder\n  online. REWE Center hat manchmal eine Sorte in der Italien-Ecke — nicht\n  darauf verlassen, das ist ein Vorlauf-Artikel.\n  * **Dosierung nach Sorte.** Eigene Erfahrung 08/2026 mit einer\n    **40 %-Creme: die vollen 500 g** waren nötig, damit die Pistazie deutlich\n    durchkommt — der Fil wird damit süß, aber nicht überladen. Zum Vergleich\n    das Feedback der Nachbarn (07/2026, Supermarkt-Creme, bewusst weniger als\n    das Original, sonst zu süß): 300–320 g. Das ist Geschmackssache — bei uns\n    darf es klar mehr Pistazie sein. Faustregel: bei Fertigcremes wächst die\n    Süße schneller als der Pistaziengeschmack (60 % der Creme sind Zucker/Fett),\n    deshalb lohnt sich der Weg über reines Pistazienmus (s. u.) mehr als noch\n    mehr Creme. Beim Einrühren probieren — Ziel ist deutlich Pistazie, nicht\n    Dessertcreme pur; eine kräftige Prise Salz hilft.\n  * *Selbst machen — fürs nächste Mal die bevorzugte Route (ungetestet):*\n    250–300 g Pistazienmus (100 % Pistazie) + 100 g weiße Schokolade\n    (geschmolzen) + 50 ml Sahne + ¼ TL Salz verrühren; erst danach nach\n    Probieren 30–50 g Puderzucker. Süße bringen Boden und Ganache ohnehin genug\n    mit, der Fil darf nussig-herb bleiben. Pistazienmus gibt es online\n    (Bio-Nussmus-Anbieter, sizilianische Paste) zuverlässiger als gute\n    Fertigcreme.\n- **Springform: nicht im Equipment-Bestand.** Im Repo stehen nur Kastenformen\n  (\\~20 cm). Für dieses Rezept braucht es eine Springform oder einen Tortenring\n  Ø 22 cm mit Boden — Standard-Anschaffung, für alle künftigen Torten nützlich.\n  *Notlösung ohne Springform:* Kastenform mit Backpapier auslegen und als\n  Schichtdessert servieren (Mengen dann halbieren, eine 20-cm-Kastenform fasst\n  \\~1,2 l).\n- **TK-Himbeeren:** 230 g gebraucht, verkauft werden 300-g-Beutel. Rest\n  einfrieren oder als Deko auftauen.\n- **Kekse:** Butterkeks oder Digestive, gemahlen. Digestive (Vollkorn, salziger)\n  passt besser gegen die Süße als reiner Butterkeks.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Pistazien-Himbeer-Cheesecake (no-bake, Ø 22 cm, \\~12 Stücke)",
+          "steps": [
+            {
+              "id": "keksboden",
+              "label": "1",
+              "heading": "**1. Keksboden (10 Min.)**",
+              "title": "Keksboden",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "300 g Kekse fein mahlen (Stabmixer/Mixer oder Beutel + Nudelholz). 125 g Butter schmelzen, mit Keksbröseln, 60 ml Milch und optional 1 EL weißer Schokocreme verrühren. In die mit Backpapier ausgelegte Form geben und mit einem Glasboden fest andrücken. In den Kühlschrank.",
+              "action": "300 g Kekse fein mahlen (Stabmixer/Mixer oder Beutel + Nudelholz).",
+              "ingredients": [
+                {
+                  "ref": "butterkekse",
+                  "amount": {
+                    "text": "300 g Kekse",
+                    "value": 300.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "125 g Butter",
+                    "value": 125.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "milch",
+                  "amount": {
+                    "text": "60 ml Milch",
+                    "value": 60.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "himbeerschicht",
+              "label": "2",
+              "heading": "**2. Himbeerschicht (15 Min.)**",
+              "title": "Himbeerschicht",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "230 g TK-Himbeeren mit 1 EL Zucker, 1 Pck. Vanillezucker und 2 EL Wasser in einen kleinen Topf, bei mittlerer Hitze aufkochen und \\~5 Min. einkochen lassen. Durch ein feines Sieb passieren (Kerne raus), 1 TL Zitronensaft zugeben und zurück in den Topf. 1 EL Speisestärke (\\~10 g) in 2 EL kaltem Wasser glattrühren, unter Rühren zugeben und 1–2 Min. weiterkochen, bis es deutlich andickt. *Kräftigerer Gegenpol:* den ganzen 300-g-Beutel Himbeeren nehmen, dann 1 gestrichener EL + 1 TL Stärke (\\~13 g) und 3 EL Wasser. Abkühlen lassen — **lauwarm, nicht heiß** auf den Boden gießen, glattstreichen.",
+              "action": "230 g TK-Himbeeren mit 1 EL Zucker, 1 Pck.",
+              "limits": [
+                "lauwarm, nicht heiß"
+              ],
+              "cues": [
+                "bis es deutlich andickt"
+              ],
+              "timers": [
+                {
+                  "label": "Himbeerschicht",
+                  "duration": {
+                    "typical": "PT5M",
+                    "estimated": true
+                  },
+                  "text": "\\~5 Min."
+                },
+                {
+                  "label": "Himbeerschicht",
+                  "duration": {
+                    "min": "PT1M",
+                    "max": "PT2M"
+                  },
+                  "text": "1–2 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "tk-himbeeren",
+                  "amount": {
+                    "text": "230 g TK-Himbeeren",
+                    "value": 230.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "1 EL Zucker",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "pck",
+                  "amount": {
+                    "text": "1 Pck",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "2 EL Wasser",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zitrone",
+                  "amount": {
+                    "text": "1 TL Zitronensaft",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "speisestaerke",
+                  "amount": {
+                    "text": "1 EL Speisestärke",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "2 EL kaltem Wasser",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "speisestaerke",
+                  "amount": {
+                    "text": "1 TL Stärke",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "3 EL Wasser",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "fruchtschicht-kuehlen",
+              "label": "3",
+              "heading": "**3. Fruchtschicht kühlen (1 Std., passiv)**",
+              "title": "Fruchtschicht kühlen",
+              "duration": {
+                "typical": "PT1H",
+                "source": "1 Std."
+              },
+              "attention": "passive",
+              "text": "Komplett durchkühlen lassen (\\~1 Std.). Nicht abkürzen: Kommt der Fil auf eine warme Fruchtschicht, verläuft die Grenze und die Sahne fällt zusammen.",
+              "action": "Komplett durchkühlen lassen (\\~1 Std.).",
+              "timers": [
+                {
+                  "label": "Fruchtschicht kühlen",
+                  "duration": {
+                    "typical": "PT1H",
+                    "estimated": true
+                  },
+                  "text": "\\~1 Std."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Keksboden, Himbeerschicht*",
+              "after": [
+                "step:keksboden",
+                "step:himbeerschicht"
+              ]
+            },
+            {
+              "id": "pistazien-fil",
+              "label": "4",
+              "heading": "**4. Pistazien-Fil (10 Min.)**",
+              "title": "Pistazien-Fil",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "300 ml Sahne steif schlagen. In einer zweiten Schüssel 500 g Mascarpone, die Pistaziencreme (500 g) und 1 kräftige Prise Salz glattrühren — **Menge nach Sorte: 40 %-Creme 500 g, hochwertige Creme (>25 %) 400–500 g** (Details siehe Beschaffung), zwischendurch probieren (Mascarpone nicht überschlagen — er wird sonst körnig). Sahne in zwei Portionen unterheben. Auf die kalte Himbeerschicht geben, glattstreichen.",
+              "action": "300 ml Sahne steif schlagen.",
+              "limits": [
+                "Menge nach Sorte: 40 %-Creme 500 g, hochwertige Creme (>25 %) 400–500 g"
+              ],
+              "ingredients": [
+                {
+                  "ref": "schlagsahne",
+                  "amount": {
+                    "text": "300 ml Sahne",
+                    "value": 300.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "mascarpone",
+                  "amount": {
+                    "text": "500 g Mascarpone",
+                    "value": 500.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 kräftige Prise Salz",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "pistaziencreme",
+                  "amount": {
+                    "text": "500 g, hochwertige Creme",
+                    "value": 500.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "fil-kuehlen",
+              "label": "5",
+              "heading": "**5. Fil kühlen (30 Min., passiv)**",
+              "title": "Fil kühlen",
+              "duration": {
+                "typical": "PT30M",
+                "source": "30 Min."
+              },
+              "attention": "passive",
+              "text": "30 Min. kühlen, damit die Oberfläche fest wird.",
+              "action": "30 Min. kühlen, damit die Oberfläche fest wird.",
+              "timers": [
+                {
+                  "label": "Fil kühlen",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "30 Min."
+                }
+              ],
+              "ingredients": []
+            },
+            {
+              "id": "weisse-ganache",
+              "label": "6",
+              "heading": "**6. Weiße Ganache (5 Min.)**",
+              "title": "Weiße Ganache",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "100–120 ml Sahne aufkochen, vom Herd nehmen, 200 g gehackte weiße Schokolade einrühren und 1 Min. stehen lassen, dann glattrühren. Auf \\~30 °C abkühlen lassen (handwarm) und über den Fil gießen. Zu heiß gegossen schmilzt sie die Oberfläche des Fils an.",
+              "action": "100–120 ml Sahne aufkochen, vom Herd nehmen, 200 g gehackte weiße Schokolade einrühren und 1 Min. stehen lassen, dann glattrühren.",
+              "timers": [
+                {
+                  "label": "Weiße Ganache",
+                  "duration": {
+                    "typical": "PT1M"
+                  },
+                  "text": "1 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "30 °C",
+                  "value": 30
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "schlagsahne",
+                  "amount": {
+                    "text": "100–120 ml Sahne",
+                    "value": 100.0,
+                    "unit": "ml",
+                    "max": 120.0
+                  }
+                },
+                {
+                  "ref": "schokolade",
+                  "amount": {
+                    "text": "200 g gehackte weiße Schokolade",
+                    "value": 200.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "durchkuehlen",
+              "label": "7",
+              "heading": "**7. Durchkühlen (über Nacht, passiv)**",
+              "title": "Durchkühlen",
+              "duration": {
+                "min": "PT8H",
+                "max": "PT14H",
+                "source": "über Nacht"
+              },
+              "attention": "passive",
+              "text": "Mindestens 4–6 Std., besser über Nacht in den Kühlschrank.",
+              "action": "Mindestens 4–6 Std., besser über Nacht in den Kühlschrank.",
+              "timers": [
+                {
+                  "label": "Durchkühlen",
+                  "duration": {
+                    "min": "PT4H",
+                    "max": "PT6H"
+                  },
+                  "text": "4–6 Std."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Fil kühlen, Weiße Ganache*",
+              "after": [
+                "step:fil-kuehlen",
+                "step:weisse-ganache"
+              ]
+            },
+            {
+              "id": "garnieren",
+              "label": "8",
+              "heading": "**8. Garnieren (ca. 10 Min.)**",
+              "title": "Garnieren",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "text": "Vor dem Servieren großzügig belegen: 50 g gehackte gesalzene Pistazienkerne und gemischte frische Beeren (100 g Himbeeren, 100 g rote Johannisbeeren, 100 g Blaubeeren — zusammen \\~300 g). Die Garnitur ist hier Teil der Balance, nicht Deko — Salz, Crunch und Säure gegen einen sehr süßen Kuchen. Mit einem in heißem Wasser erwärmten, trocken gewischten Messer schneiden.",
+              "action": "Vor dem Servieren großzügig belegen: 50 g gehackte gesalzene Pistazienkerne und gemischte frische Beeren (100 g Himbeeren, 100 g rote Johannisbeeren, 100 g Blaubeeren — zusammen \\~300 g).",
+              "ingredients": [
+                {
+                  "ref": "pistazienkerne",
+                  "amount": {
+                    "text": "50 g gehackte gesalzene Pistazienkerne",
+                    "value": 50.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "himbeeren",
+                  "amount": {
+                    "text": "100 g Himbeeren",
+                    "value": 100.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "johannisbeeren",
+                  "amount": {
+                    "text": "100 g rote Johannisbeeren",
+                    "value": 100.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "blaubeeren",
+                  "amount": {
+                    "text": "100 g Blaubeeren",
+                    "value": 100.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "attention": "active"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "> Die 60 ml Milch sind ungewöhnlich (kla",
+      "level": "bold",
+      "markdown": "> Die 60 ml Milch sind ungewöhnlich (klassisch: nur Butter). Sie machen den\n> Boden weicher und weniger krümelig — passend zu einem no-bake-Kuchen, den man\n> mit der Gabel isst. Wer einen knackigen Boden will: Milch weglassen und\n> 150 g Butter nehmen."
+    },
+    {
+      "type": "learnings",
+      "title": "Learnings",
+      "cooked": "08/2026",
+      "summary": "**Gebacken 08/2026.** Konsistenz insgesamt ziemlich traumhaft, beim Publikum extrem gut angekommen — Technik (no-bake, Schichtaufbau, Ganache-Ratio) sitzt. Mit einer 40 %-Pistaziencreme brauchte es die **vollen 500 g**, damit der Pistaziengeschmack im Fil deutlich genug war; dadurch relativ süß, aber noch okay, nicht überladen — der Kuchen ist konzeptionell ohnehin sehr süß. Säuerliches Himbeerkompott plus reichhaltige Garnitur (Johannis-/Him-/Blaubeeren, gehackte gesalzene Pistazien) funktionierten als Gegenpol, dürften aber noch stärker sein. Fürs nächste Mal: reines Pistazienmus statt Fertigcreme (mehr Pistazie ohne mehr Zucker), dunkle Bitterschokoladen-Ganache statt weißer und ggf. selbst geröstete Salzkaramell-Pistazien obendrauf — alle drei als Varianten im Rezept angelegt, ungetestet.",
+      "details": "### Pistaziencreme: Menge vs. Sorte\n\n- 40 %-Creme, 500 g auf 500 g Mascarpone + 300 ml Sahne: Pistazie klar erkennbar, Süße hoch aber tragbar. Die Staffelung 300–400 g aus dem Nachbarn-Feedback war für unseren Geschmack zu wenig Pistazie.\n- Bei Fertigcremes skaliert die Süße schneller als der Nussgeschmack — noch mehr Creme ist der falsche Hebel. Richtiger Hebel: höherer Pistazienanteil (Mus 100 %) und Salz im Fil.\n\n### Gegenpol\n\n- Kompott (1–2 EL Zucker) und Garnitur waren „okay als Gegenpol\", nicht mehr. Im Rezept angezogen: Zucker im Kompott fix 1 EL + 1 TL Zitrone, Option auf 300 g Himbeeren, Garnitur von „optional 30 g\" auf 50 g gesalzene Pistazien + \\~300 g gemischte Beeren mit Johannisbeeren als Pflicht.\n- Größter noch ungenutzter Hebel ist die Ganache: 200 g weiße Schokolade obendrauf ist die süßeste Schicht des ganzen Kuchens. Dunkle Ganache tauscht Süße gegen Bitterkeit — siehe Varianten."
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen & Varianten",
+      "level": 2,
+      "markdown": "- **Standfestigkeit:** Ohne Gelatine trägt sich der Kuchen über Mascarpone,\n  Schlagsahne und das Fett der Pistaziencreme — nach einer Nacht schnittfest,\n  aber weich. Bei sommerlicher Zimmertemperatur zügig servieren. *Versicherung\n  (nicht im Original):* 4 Blatt Gelatine einweichen, in 50 ml warmer Sahne\n  lösen, unter die Mascarpone-Pistazien-Masse rühren, bevor die Sahne\n  untergehoben wird.\n- **Dunkle Ganache statt weißer (ungetestet, nächster Versuch):** 200 g\n  Zartbitter 60–70 % mit 200 ml heißer Sahne (1:1 — dunkle Schokolade setzt\n  härter als weiße, deshalb mehr Sahne als die 2:1 der weißen) und 1 Prise Salz\n  zur Ganache rühren, handwarm aufgießen. Pistazie + Bitterschokolade ist eine\n  klassische Kombination und nimmt der Torte spürbar Süße; Optik wird\n  grün/rot/dunkelbraun statt hell. Wer die weiße Optik halbwegs behalten will:\n  50/50 weiße + Zartbitter, oder eine dünnere dunkle Schicht (120 g : 120 ml).\n- **Salzkaramell-Pistazien als Topping (ungetestet, Idee 08/2026):** 80 g\n  ungesalzene Pistazienkerne bei 160 °C \\~8 Min. rösten, grob hacken. 40 g\n  Zucker mit 1 EL Wasser trocken zu bernsteinfarbenem Karamell kochen, vom Herd,\n  Pistazien und ½ TL Salz (Flocken) hineinschwenken, auf Backpapier ausbreiten,\n  erkaltet zerbrechen. Hält im Schraubglas mehrere Tage. Zusammen mit der\n  dunklen Ganache das stärkere Gegengewicht: bitter + salzig + Crunch statt\n  weiß + süß. Achtung: das Karamell zieht in den Kühlschrank-Stunden Feuchtigkeit\n  und wird klebrig — **erst direkt vor dem Servieren** aufstreuen. Fürs Kind\n  weiterhin keine ganzen/grob gehackten Kerne auf dem Stück.\n- **Kind (3 J.):** unproblematisch — Nüsse nur gemahlen/als Creme, keine ganzen\n  Kerne als Topping auf dem Kinderstück. Insgesamt sehr süß, kleine Stücke.\n- **Allergien:** Pistazie (Schalenfrucht), Milch, Gluten (Kekse). Bei Gästen\n  vorher ansagen, Pistazie ist ein häufiges Nussallergen.\n- **Vorbereitung:** Muss sowieso über Nacht stehen — ideal, wenn ein Dessert\n  einen Tag vorher fertig sein soll. Hält im Kühlschrank 3 Tage.",
+      "tags": [
+        "notizen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T18:37:51Z",
+    "sourceHash": "5a0917ad52e0fb54",
+    "quantities": [
+      {
+        "ingredient": "mascarpone",
+        "total": {
+          "text": "500 g",
+          "value": 500.0,
+          "max": 500.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "500 g Mascarpone"
+        }
+      },
+      {
+        "ingredient": "schlagsahne",
+        "total": {
+          "text": "400–420 ml",
+          "value": 400.0,
+          "max": 420.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "300 ml Sahne + 100–120 ml Sahne"
+        }
+      },
+      {
+        "ingredient": "butter",
+        "total": {
+          "text": "125 g",
+          "value": 125.0,
+          "max": 125.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "125 g Butter"
+        }
+      },
+      {
+        "ingredient": "butterkekse",
+        "total": {
+          "text": "300 g",
+          "value": 300.0,
+          "max": 300.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "300 g Kekse"
+        }
+      },
+      {
+        "ingredient": "schokolade",
+        "total": {
+          "text": "200 g",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "200 g gehackte weiße Schokolade"
+        }
+      },
+      {
+        "ingredient": "pck",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Pck"
+        }
+      },
+      {
+        "ingredient": "zitrone",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 TL Zitronensaft"
+        }
+      },
+      {
+        "ingredient": "himbeeren",
+        "total": {
+          "text": "100 g",
+          "value": 100.0,
+          "max": 100.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "100 g Himbeeren"
+        }
+      },
+      {
+        "ingredient": "johannisbeeren",
+        "total": {
+          "text": "100 g",
+          "value": 100.0,
+          "max": 100.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "100 g rote Johannisbeeren"
+        }
+      },
+      {
+        "ingredient": "blaubeeren",
+        "total": {
+          "text": "100 g",
+          "value": 100.0,
+          "max": 100.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "100 g Blaubeeren"
+        }
+      },
+      {
+        "ingredient": "tk-himbeeren",
+        "total": {
+          "text": "230 g",
+          "value": 230.0,
+          "max": 230.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "230 g TK-Himbeeren"
+        }
+      },
+      {
+        "ingredient": "pistaziencreme",
+        "total": {
+          "text": "500",
+          "value": 500.0,
+          "max": 500.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "500 g, hochwertige Creme"
+        }
+      },
+      {
+        "ingredient": "pistazienkerne",
+        "total": {
+          "text": "50 g",
+          "value": 50.0,
+          "max": 50.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "50 g gehackte gesalzene Pistazienkerne"
+        }
+      },
+      {
+        "ingredient": "zucker",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 EL Zucker"
+        }
+      },
+      {
+        "ingredient": "speisestaerke",
+        "total": {
+          "text": "1 EL (+ TL ungemischt)",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 EL Speisestärke"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "milch",
+        "total": {
+          "text": "60 ml",
+          "value": 60.0,
+          "max": 60.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "60 ml Milch"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 kräftige Prise Salz"
+        }
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "7 EL",
+          "value": 7.0,
+          "max": 7.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 EL Wasser + 2 EL kaltem Wasser + 3 EL Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Online",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "pistaziencreme",
+            "name": "Pistaziencreme",
+            "need": {
+              "text": "500",
+              "value": 500.0,
+              "max": 500.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "500",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            },
+            "note": "Pistazienanteil \\~40 %; bei 40 % werden alle 500 g gebraucht; Alternative: 250–300 g Pistazienmus 100 % + 100 g weiße Schokolade extra, siehe Beschaffung"
+          },
+          {
+            "ingredient": "pistazienkerne",
+            "name": "Pistazienkerne, gesalzen-geröstet, gehackt",
+            "need": {
+              "text": "50 g",
+              "value": 50.0,
+              "max": 50.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "50 g",
+            "inStock": false,
+            "buy": {
+              "text": "50 g"
+            },
+            "note": "als Topping. Salz und Crunch sind hier kein Deko-Gag, sondern Gegengewicht zur Süße. Für die Salzkaramell-Variante: 80 g ungesalzene Kerne + 40 g Zucker + ½ TL Salz, siehe Varianten"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "zitrone",
+            "name": "Zitrone",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "1 TL Saft für die Himbeerschicht"
+          },
+          {
+            "ingredient": "himbeeren",
+            "name": "frische Himbeeren",
+            "need": {
+              "text": "100 g",
+              "value": 100.0,
+              "max": 100.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "100 g",
+            "inStock": false,
+            "buy": {
+              "text": "100 g"
+            },
+            "note": "Garnitur"
+          },
+          {
+            "ingredient": "johannisbeeren",
+            "name": "rote Johannisbeeren",
+            "need": {
+              "text": "100 g",
+              "value": 100.0,
+              "max": 100.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "100 g",
+            "inStock": false,
+            "buy": {
+              "text": "100 g"
+            },
+            "note": "Garnitur — der sauerste Gegenspieler, nicht weglassen"
+          },
+          {
+            "ingredient": "blaubeeren",
+            "name": "Blaubeeren",
+            "need": {
+              "text": "100 g",
+              "value": 100.0,
+              "max": 100.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "100 g",
+            "inStock": false,
+            "buy": {
+              "text": "100 g"
+            },
+            "note": "Garnitur"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "mascarpone",
+            "name": "Mascarpone",
+            "need": {
+              "text": "500 g",
+              "value": 500.0,
+              "max": 500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "500 g",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            },
+            "note": "2 × 250 g"
+          },
+          {
+            "ingredient": "schlagsahne",
+            "name": "Schlagsahne",
+            "need": {
+              "text": "400–420 ml",
+              "value": 400.0,
+              "max": 420.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "400–420 ml",
+            "inStock": false,
+            "buy": {
+              "text": "500 ml"
+            },
+            "note": "Verbrauch: 300 ml Fil und 100–120 ml Ganache = \\~420 ml; bei dunkler Ganache 200 ml → genau 500 ml"
+          },
+          {
+            "ingredient": "butter",
+            "name": "Butter",
+            "need": {
+              "text": "125 g",
+              "value": 125.0,
+              "max": 125.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "125 g",
+            "inStock": false,
+            "buy": {
+              "text": "125 g"
+            }
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "butterkekse",
+            "name": "Butterkekse oder Digestive",
+            "need": {
+              "text": "300 g",
+              "value": 300.0,
+              "max": 300.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "300 g",
+            "inStock": false,
+            "buy": {
+              "text": "300 g"
+            },
+            "note": "gemahlen oder selbst mahlen"
+          },
+          {
+            "ingredient": "schokolade",
+            "name": "weiße Schokolade",
+            "need": {
+              "text": "200 g",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "200 g",
+            "inStock": false,
+            "buy": {
+              "text": "200 g"
+            },
+            "note": "2 Tafeln, Kuvertüre besser als Tafelschokolade"
+          },
+          {
+            "ingredient": "pck",
+            "name": "Pck. Vanillezucker",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            }
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Tiefkühl",
+        "items": [
+          {
+            "ingredient": "tk-himbeeren",
+            "name": "TK-Himbeeren",
+            "need": {
+              "text": "230 g",
+              "value": 230.0,
+              "max": 230.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "230 g",
+            "inStock": false,
+            "buy": {
+              "text": "300 g"
+            },
+            "note": "230 g gebraucht — oder alle 300 g für eine dickere Fruchtschicht, s. „Himbeerschicht“"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "zucker",
+            "name": "Zucker",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "1–2 EL"
+          },
+          {
+            "ingredient": "speisestaerke",
+            "name": "Speisestärke",
+            "need": {
+              "text": "1 EL (+ TL ungemischt)",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "1 EL"
+          },
+          {
+            "ingredient": "milch",
+            "name": "Milch",
+            "need": {
+              "text": "60 ml",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "60 ml",
+            "inStock": false,
+            "buy": {
+              "text": "60 ml"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "7 EL",
+              "value": 7.0,
+              "max": 7.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "7 EL",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}

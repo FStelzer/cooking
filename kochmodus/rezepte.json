@@ -7,6 +7,13 @@
   "cooked": true
  },
  {
+  "path": "../desserts/pistazien-himbeer-cheesecake.json",
+  "title": "Pistazien-Himbeer-Cheesecake (no-bake, Ø 22 cm, \\~12 Stücke)",
+  "group": "desserts",
+  "wip": false,
+  "cooked": true
+ },
+ {
   "path": "../gerichte/bo-luc-lac.json",
   "title": "Bò lúc lắc — vietnamesisches „Shaking Beef\" mit Brunnenkresse-Salat (4 Portionen)",
   "group": "gerichte",
