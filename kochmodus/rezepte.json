@@ -84,6 +84,13 @@
   "cooked": false
  },
  {
+  "path": "../gerichte/mezze-libanesisch.json",
+  "title": "Libanesische Mezze — Hummus, Moutabal, Muhammara, Labneh, Fatayer & Sambousek (4 Personen als Hauptmahlzeit)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": false
+ },
+ {
   "path": "../gerichte/oktopus-geschmort.json",
   "title": "Geschmorter Oktopus, griechische Art (4 Portionen)",
   "group": "gerichte",

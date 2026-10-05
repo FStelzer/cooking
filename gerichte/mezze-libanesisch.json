@@ -1,0 +1,3208 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/mezze-libanesisch",
+  "kind": "dish",
+  "title": "Libanesische Mezze — Hummus, Moutabal, Muhammara, Labneh, Fatayer & Sambousek (4 Personen als Hauptmahlzeit)",
+  "status": "done",
+  "yields": {
+    "text": "4 Personen als Hauptmahlzeit",
+    "value": 4.0,
+    "unit": "Personen"
+  },
+  "intro": "*Aktive Zeit \\~3 Std., gesamt 3 Tage. Verteilt auf 3 Tage, viel davon passiv (Einweichen, Labneh, Einfrieren). Aktive Zeit gesamt \\~3 Std.: Tag 1 \\~15 Min., Tag 2 (Teigtag) \\~2,5 Std., Mezze-Abend \\~75 Min. Equipment: Stabmixer mit hohem Becher, feines Sieb + Passiertuch, Bunsenbrenner, Backblech, kleiner Topf zum Frittieren, Fleischthermometer (fürs Öl), Ausstecher oder Glas (8–10 cm).*\n\nVegetarischer Mezze-Abend, bewusst als **eigenständige Richtung** gebaut und nicht als Beilagensammlung zum Shawarma. Das Prinzip von Mezze ist Vielzahl kleiner Teller statt eines Hauptgangs — die Dips sind kalt und komplett vorbereitbar, die Teigtaschen werden **roh eingefroren** und am Abend nur noch gebacken bzw. frittiert. Damit hat der Abend selbst kaum Zeitdruck, obwohl sechs Komponenten auf dem Tisch stehen.\n\n**Abgrenzung zum Shawarma-Projekt** (`shawarma-libanesisch.md`): Dort stehen Toum, Tahinsauce, Tabbouleh, Batata harra und gegrilltes Fleisch. Hier bewusst **kein** Petersiliensalat, **keine** Kartoffel, **keine** Knoblauchemulsion und kein Fleisch. Die Aroma-Achsen hier: geröstete Nuss/Granatapfel (Muhammara), Milchsäure (Labneh), Rauch (Aubergine) und Teig (Fatayer, Sambousek).",
+  "times": {
+    "text": "Aktive Zeit ~3 Std., gesamt 3 Tage",
+    "active": {
+      "typical": "PT3H",
+      "source": "3 Std."
+    },
+    "total": {
+      "typical": "P3D",
+      "source": "3 Tage"
+    }
+  },
+  "equipment": [
+    "Stabmixer mit hohem Becher",
+    "feines Sieb + Passiertuch",
+    "Bunsenbrenner",
+    "Backblech",
+    "kleiner Topf zum Frittieren",
+    "Fleischthermometer (fürs Öl)",
+    "Ausstecher oder Glas (8–10 cm)"
+  ],
+  "ingredients": [
+    {
+      "id": "tahina",
+      "name": "Tahina",
+      "store": "Türkischer/arabischer Laden",
+      "note": "1 großes Glas, mind. 300 g; Verbrauch \\~200 g — libanesische/palästinensische Marke; Fallback: online bestellen, nicht die bittere Supermarkt-Tahina"
+    },
+    {
+      "id": "granatapfelsirup",
+      "name": "Granatapfelsirup",
+      "store": "Türkischer/arabischer Laden",
+      "buy": {
+        "text": "1 Flasche"
+      },
+      "note": "Dibs rumman; Fallback: online — nicht ersetzbar"
+    },
+    {
+      "id": "za",
+      "name": "Za'atar",
+      "store": "Türkischer/arabischer Laden",
+      "buy": {
+        "text": "1 Packung"
+      },
+      "note": "Fallback: online"
+    },
+    {
+      "id": "sumach",
+      "name": "Sumach",
+      "store": "Türkischer/arabischer Laden",
+      "buy": {
+        "text": "1 Packung"
+      },
+      "note": "Fallback: online"
+    },
+    {
+      "id": "aleppo-pfeffer",
+      "name": "Aleppo-Pfeffer oder Pul biber",
+      "store": "Türkischer/arabischer Laden",
+      "buy": {
+        "text": "1 Packung"
+      },
+      "note": "Fallback: online oder türkisches Regal im REWE"
+    },
+    {
+      "id": "akkawi",
+      "name": "Akkawi in Salzlake",
+      "store": "Türkischer/arabischer Laden",
+      "buy": {
+        "text": "\\~200 g"
+      },
+      "note": "Fallback: Hellim/Beyaz peynir; Komplett-Fallback REWE: Mozzarella + Feta, s. u."
+    },
+    {
+      "id": "fladenbrote",
+      "name": "große arabische/libanesische Fladenbrote",
+      "store": "Türkischer/arabischer Laden",
+      "buy": {
+        "text": "3–4"
+      },
+      "note": "Fallback: türkisches Fladenbrot/Pide vom REWE"
+    },
+    {
+      "id": "oliven",
+      "name": "Oliven, gemischt",
+      "store": "Türkischer/arabischer Laden",
+      "buy": {
+        "text": "200 g"
+      },
+      "note": "Fallback: REWE"
+    },
+    {
+      "id": "auberginen",
+      "name": "große Auberginen",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "note": "\\~700 g"
+    },
+    {
+      "id": "spitzpaprika",
+      "name": "rote Spitzpaprika",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "note": "Abkürzung: 1 Glas geröstete Paprika, \\~220 g Abtropfgewicht"
+    },
+    {
+      "id": "zitronen",
+      "name": "Zitronen",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "4"
+      }
+    },
+    {
+      "id": "knoblauch",
+      "name": "Knoblauch",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Knolle"
+      }
+    },
+    {
+      "id": "zwiebeln",
+      "name": "Zwiebeln",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      }
+    },
+    {
+      "id": "spinat",
+      "name": "Spinat, frisch",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "450 g"
+      },
+      "note": "oder 300 g TK-Blattspinat"
+    },
+    {
+      "id": "petersilie",
+      "name": "glatte Petersilie",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      }
+    },
+    {
+      "id": "salatgurke",
+      "name": "Salatgurke",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "Rohkost zum Dippen"
+    },
+    {
+      "id": "karotten",
+      "name": "Karotten",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3"
+      },
+      "note": "Rohkost zum Dippen"
+    },
+    {
+      "id": "radieschen",
+      "name": "Radieschen",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      },
+      "note": "Rohkost zum Dippen"
+    },
+    {
+      "id": "granatapfel",
+      "name": "Granatapfel",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "optional": true,
+      "note": "Kerne als Deko auf Moutabal/Muhammara"
+    },
+    {
+      "id": "joghurt",
+      "name": "griechischer Joghurt",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "1 kg"
+      },
+      "note": "10 % Fett — wird zu \\~450–500 g Labneh"
+    },
+    {
+      "id": "mozzarella",
+      "name": "Mozzarella, niedrigfeucht",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "200 g"
+      },
+      "note": "Block oder gerieben"
+    },
+    {
+      "id": "feta",
+      "name": "Feta",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "125 g"
+      },
+      "note": "nur falls kein Akkawi/Hellim beschafft — Fallback-Käsemischung"
+    },
+    {
+      "id": "butter",
+      "name": "Butter",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "70 g"
+      },
+      "note": "Sambousek-Teig; alternativ 60 ml neutrales Öl"
+    },
+    {
+      "id": "eier",
+      "name": "Ei",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "1"
+      },
+      "note": "Eiweiß in die Käsefüllung, Eigelb als Streiche auf die Fatayer"
+    },
+    {
+      "id": "kichererbsen",
+      "name": "getrocknete Kichererbsen",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "500 g"
+      },
+      "note": "Packung; Verbrauch 200 g — alternativ im Arabladen, falls dort gute Qualität"
+    },
+    {
+      "id": "mehl",
+      "name": "Mehl, Weizen Type 550",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 kg"
+      },
+      "note": "Verbrauch 600 g für zwei Teige"
+    },
+    {
+      "id": "trockenhefe",
+      "name": "Trockenhefe",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 Päckchen"
+      }
+    },
+    {
+      "id": "natron",
+      "name": "Natron",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 Päckchen"
+      }
+    },
+    {
+      "id": "walnusskerne",
+      "name": "Walnusskerne",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "100 g"
+      }
+    },
+    {
+      "id": "semmelbroesel",
+      "name": "Semmelbrösel",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "note": "kleine Packung; Verbrauch \\~40 g; alternativ altbackenes Weißbrot"
+    },
+    {
+      "id": "oel",
+      "name": "neutrales Öl",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 L"
+      },
+      "note": "zum Frittieren"
+    },
+    {
+      "id": "pinienkerne",
+      "name": "Pinienkerne",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "30 g"
+      },
+      "optional": true,
+      "note": "Fatayer-Füllung"
+    },
+    {
+      "id": "kreuzkuemmel",
+      "name": "Kreuzkümmel, gemahlen",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "olivenoel",
+      "name": "Gutes Olivenöl",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Gesamtverbrauch \\~150 ml!"
+    },
+    {
+      "id": "zucker",
+      "name": "Zucker",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "pfeffer",
+      "name": "Pfeffer",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Zusammenstellung",
+      "level": 2,
+      "markdown": "1. **Hummus** — das Technikprojekt des Abends: aus getrockneten Kichererbsen, Natron-Methode nach Ottolenghi, warm mit viel Tahina und Eiswasser gemixt.\n2. **Moutabal** — Aubergine über der Flamme verkohlt (der Rauch *ist* das Gericht), cremig mit Tahina. *Naming: die cremige Tahina-Version heißt in libanesischer Praxis meist moutabal, „baba ghanoush\" bezeichnet je nach Quelle die stückigere Variante — wir machen die cremige.*\n3. **Muhammara** — Paprika, Walnuss, Granatapfelsirup, Aleppo-Pfeffer. Süß-säuerlich-nussig, der stärkste Kontrast auf dem Tisch. Herkunft ehrlich: Aleppo/Syrien, in Beirut aber Standard.\n4. **Labneh mit Za'atar** — praktisch null aktive Arbeit für eine eigenständige Komponente.\n5. + 6. **Zwei Teigtaschen, bewusst gegeneinander gestellt:**\n\n| | **Fatayer bi sabanekh** | **Sambousek bi jibneh** |\n|---|---|---|\n| Form | Dreieck, drei Nähte | Halbmond, Rand gekerbt |\n| Teig | Hefeteig mit Olivenöl, weich | ohne Hefe, Fett ins Mehl gerieben, mürb-blättrig |\n| Füllung | Spinat, Zwiebel, Sumach + Zitrone → sauer, herb | Akkawi + Mozzarella, Petersilie → salzig, fett, ziehend |\n| Garart | gebacken | frittiert |\n\n→ Keine Spinat-Sambousek, keine Käse-Fatayer — sonst kollabiert der Unterschied auf die Form. Kerbmuster je Füllung unterschiedlich setzen, dann sieht man nach dem Garen, was drin ist.\n\n**Dazu:** gekauftes Fladenbrot (warm + ein Teil als Za'atar-Chips), Oliven, Rohkost zum Dippen."
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Türkischer/arabischer Laden — NOCH NICHT IDENTIFIZIERT.** Das ist die einzige echte Beschaffungshürde des Projekts. Vor dem Einkaufstag im Raum Dietzenbach/Offenbach einen Laden suchen und idealerweise kurz reinschauen/anrufen. Falls bis dahin keiner gefunden ist: **alles auf der Liste hat einen dokumentierten Fallback** (siehe Einkaufsliste), notfalls online bestellen — Tahina, Granatapfelsirup, Za'atar, Sumach und Aleppo-Pfeffer sind alle problemlos per Versand zu bekommen und lange haltbar.\n- **Tahina ist der größte Hebel des ganzen Projekts**, nicht das Rezept: sie steckt in Hummus *und* Moutabal und dominiert beide. Supermarktware ist oft bitter → libanesische/palästinensische Marke, großes Glas.\n- **Granatapfelsirup** ist für Muhammara nicht ersetzbar — die fruchtige Säure ist das Definierende.\n- **Akkawi** wird in Salzlake verkauft und muss entsalzt werden (siehe Zubereitung). Verfügbarkeit ungewiss, solange der Laden nicht identifiziert ist → der Fallback **niedrigfeuchter Mozzarella + Feta** aus dem REWE ist fest eingeplant und in den Quellen die genannte Standard-Ersatzmischung. Türkisches Regal als Zwischenlösung: Hellim (Halloumi) oder Beyaz peynir.\n- **Fladenbrot wird gekauft**, nicht gebacken — der Teigtag ist mit zwei Teigen voll genug. (Wer unbedingt will: ein Rest Fatayer-Teig lässt sich flach ausgerollt bei 250 °C zu Brot backen — optionale Spielerei, nicht eingeplant.)",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan (3 Tage)",
+      "schedule": {
+        "id": "zeitplan-3-tage",
+        "label": "Zeitplan (3 Tage)",
+        "phases": [
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
+          },
+          {
+            "id": "t-2",
+            "label": "T-2",
+            "day": -2
+          },
+          {
+            "id": "t-1",
+            "label": "T-1",
+            "day": -1
+          }
+        ],
+        "entries": [
+          {
+            "phase": "kochtag",
+            "text": "Ofen auf 220 °C. Auberginen mit dem Brenner verkohlen, im Ofen fertig garen, dann abtropfen lassen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT75M"
+            },
+            "source": "T−75",
+            "steps": [
+              "verkohlen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Kichererbsen mit etwas Kochwasser erhitzen → **warm** zu Hummus mixen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT60M"
+            },
+            "source": "T−60",
+            "steps": [
+              "hummus-mixen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Ofen auf 200 °C. Fatayer backen: aus dem Frost aufs Blech, Eigelb-Streiche, backen (20–22 Min.)",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT45M"
+            },
+            "source": "T−45",
+            "steps": [
+              "fatayer-backen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Moutabal mischen (fertig rühren). Labneh anrichten, Muhammara abschmecken, Hummus anrichten (Mulde, Öl, Topping)",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT40M"
+            },
+            "source": "T−40",
+            "steps": [
+              "hummus-anrichten",
+              "labneh-anrichten",
+              "moutabal-mischen",
+              "muhammara-abschmecken"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Frittieröl auf 170–175 °C. Sambousek frittieren (in Chargen), abtropfen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT20M"
+            },
+            "source": "T−20",
+            "steps": [
+              "sambousek-frittieren"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Brot, Rohkost, Oliven: Fladenbrot kurz in den Ofen, Rohkost schneiden, alles auf den Tisch",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT5M"
+            },
+            "source": "T−5",
+            "steps": [
+              "brot-rohkost-oliven"
+            ]
+          },
+          {
+            "phase": "t-2",
+            "text": "Abend, \\~15 Min. aktiv"
+          },
+          {
+            "phase": "t-2",
+            "text": "Einweichen: Kichererbsen (200 g) in reichlich kaltem Wasser mit ¾ TL Natron einweichen (mind. 12 Std.).",
+            "steps": [
+              "einweichen"
+            ]
+          },
+          {
+            "phase": "t-2",
+            "text": "Labneh salzen, Labneh abtropfen: Joghurt (1 kg) mit 1 TL Salz verrühren, ins Passiertuch, im Sieb über einer Schüssel in den Kühlschrank → Labneh.",
+            "steps": [
+              "labneh-abtropfen",
+              "labneh-salzen"
+            ]
+          },
+          {
+            "phase": "t-2",
+            "text": "Akkawi entsalzen (falls beschafft)",
+            "steps": [
+              "akkawi-entsalzen"
+            ]
+          },
+          {
+            "phase": "t-1",
+            "text": "Teigtag, \\~2,5 Std. aktiv"
+          },
+          {
+            "phase": "t-1",
+            "text": "Kochen: Kichererbsen kochen (läuft nebenher, 30–60 Min. — Details unter Zubereitung/Hummus). Abkühlen lassen, **im Kochwasser** in den Kühlschrank.",
+            "steps": [
+              "kochen"
+            ]
+          },
+          {
+            "phase": "t-1",
+            "text": "Hefeteig: für Fatayer ansetzen → geht 1 Std.",
+            "steps": [
+              "hefeteig"
+            ]
+          },
+          {
+            "phase": "t-1",
+            "text": "Währenddessen: Mürbteig (Sambousek-Teig: reiben, 30 Min. Ruhe) und beide Füllungen vorbereiten (Zwiebel salzen, Spinat ausdrücken, Füllung mischen, Käsefüllung).",
+            "steps": [
+              "fuellung-mischen",
+              "muerbteig",
+              "spinat-ausdruecken",
+              "zwiebel-salzen"
+            ]
+          },
+          {
+            "phase": "t-1",
+            "text": "Paprika rösten → Muhammara komplett fertigstellen (Walnüsse rösten, Muhammara mixen; wird über Nacht besser).",
+            "steps": [
+              "muhammara-mixen",
+              "paprika-roesten",
+              "walnuesse-roesten"
+            ]
+          },
+          {
+            "phase": "t-1",
+            "text": "Formen: alle Fatayer und Sambousek, auf Blechen 1–2 Std. vorfrosten, dann in Gefrierbeutel (Fatayer formen, Fatayer vorfrosten, Sambousek formen, Sambousek vorfrosten). Halten Monate — Überschuss ist Vorrat für Abende ohne Kochlust.",
+            "steps": [
+              "fatayer-formen",
+              "fatayer-vorfrosten",
+              "sambousek-formen",
+              "sambousek-vorfrosten"
+            ]
+          },
+          {
+            "phase": "t-1",
+            "text": "Labneh-Check: nach 12–24 Std. streichfähig → aus dem Tuch in eine Dose, kalt stellen."
+          }
+        ]
+      },
+      "note": "*Tag 3 — Mezze-Abend, \\~75 Min.:*\n\n*Komprimierte 2-Tage-Variante: Tag 2 und 3 zusammenlegen geht, macht den Kochtag aber zu einem 4-Std.-Block und verschenkt den Über-Nacht-Gewinn der Muhammara. Nicht empfohlen beim ersten Durchgang.*"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "hummus",
+          "name": "Hummus",
+          "steps": [
+            {
+              "id": "einweichen",
+              "label": "1",
+              "heading": "**1. Einweichen (über Nacht, passiv)**",
+              "title": "Einweichen",
+              "duration": {
+                "min": "PT8H",
+                "max": "PT14H",
+                "source": "über Nacht"
+              },
+              "attention": "passive",
+              "text": "Tag 1: 200 g Kichererbsen in reichlich kaltem Wasser mit ¾ TL Natron mindestens 12 Std. einweichen.",
+              "action": "Tag 1: 200 g Kichererbsen in reichlich kaltem Wasser mit ¾ TL Natron mindestens 12 Std. einweichen.",
+              "ingredients": [
+                {
+                  "ref": "kichererbsen",
+                  "amount": {
+                    "text": "200 g Kichererbsen",
+                    "value": 200.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "natron",
+                  "amount": {
+                    "text": "¾ TL Natron",
+                    "value": 0.75,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "timers": [
+                {
+                  "label": "Einweichen",
+                  "duration": {
+                    "min": "PT8H",
+                    "max": "PT14H"
+                  },
+                  "text": "über Nacht"
+                }
+              ],
+              "after": []
+            },
+            {
+              "id": "kochen",
+              "label": "2",
+              "heading": "**2. Kochen (30–60 Min.)**",
+              "title": "Kochen",
+              "duration": {
+                "min": "PT30M",
+                "max": "PT1H",
+                "source": "30–60 Min."
+              },
+              "text": "Tag 2: Abgießen. Im 6L-Topf mit ½ TL Natron bei mittlerer Hitze 2–3 Min. **trocken** unter Rühren erhitzen (der Jerusalem-Schritt — das Natron greift die Schalen an). Mit \\~1,5 L Wasser aufgießen, aufkochen. Schaum **und die aufschwimmenden Schalen** konsequent abschöpfen — das ist der halbe Cremigkeits-Gewinn. 30–60 Min. leise kochen, bis sich eine Kichererbse zwischen den Fingern mühelos zerdrücken lässt, eher Richtung zerfallend. Nicht salzen.",
+              "action": "Tag 2: Abgießen.",
+              "limits": [
+                "und die aufschwimmenden Schalen"
+              ],
+              "cues": [
+                "bis sich eine Kichererbse zwischen den Fingern mühelos zerdrücken lässt"
+              ],
+              "timers": [
+                {
+                  "label": "Kochen",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                },
+                {
+                  "label": "Kochen",
+                  "duration": {
+                    "min": "PT30M",
+                    "max": "PT1H"
+                  },
+                  "text": "30–60 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "natron",
+                  "amount": {
+                    "text": "½ TL Natron",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "1,5 L Wasser",
+                    "value": 1.5,
+                    "unit": "l"
+                  }
+                }
+              ],
+              "meta": "*nach Einweichen · Herd · fertig wenn sich eine Kichererbse zwischen den Fingern mühelos zerdrücken lässt*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "endCondition": {
+                "type": "visual",
+                "text": "wenn sich eine Kichererbse zwischen den Fingern mühelos zerdrücken lässt"
+              },
+              "attention": "attended",
+              "after": [
+                "step:einweichen"
+              ]
+            },
+            {
+              "id": "hummus-mixen",
+              "label": "3",
+              "heading": "**3. Hummus mixen (10 Min.)**",
+              "title": "Hummus mixen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Tag 3, warm! Kichererbsen mit etwas Kochwasser wieder heiß werden lassen, abgießen (2–3 EL zum Garnieren beiseite). Warm in den hohen Becher: Kichererbsen, 140 g Tahina, 2 EL Zitronensaft, 1–2 Knoblauchzehen, 1 TL Salz, 1 Prise Kreuzkümmel. Mit dem Stabmixer mixen und dabei 60–100 ml Eiswasser nach und nach zugeben — 2–3 Minuten dranbleiben, bis die Masse hell, seidig und fast fluffig ist. **Kein Olivenöl in die Masse.**",
+              "action": "Tag 3, warm!",
+              "limits": [
+                "Kein Olivenöl in die Masse."
+              ],
+              "cues": [
+                "bis die Masse hell"
+              ],
+              "timers": [
+                {
+                  "label": "Hummus mixen",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "tahina",
+                  "amount": {
+                    "text": "140 g Tahina",
+                    "value": 140.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "2 EL Zitronensaft",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "1–2 Knoblauchzehen",
+                    "value": 1.0,
+                    "unit": "Stück",
+                    "max": 2.0
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "kreuzkuemmel",
+                  "amount": {
+                    "text": "1 Prise Kreuzkümmel",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                }
+              ],
+              "meta": "*nach Kochen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:kochen"
+              ]
+            },
+            {
+              "id": "hummus-anrichten",
+              "label": "4",
+              "heading": "**4. Hummus anrichten (5 Min.)**",
+              "title": "Hummus anrichten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Abschmecken & anrichten: Zitrone/Salz nachjustieren. In flacher Schale mit dem Löffelrücken eine Mulde ziehen, 2 EL Olivenöl hinein, zurückbehaltene Kichererbsen und eine Prise Aleppo-Pfeffer oder Kreuzkümmel darüber.",
+              "action": "Abschmecken & anrichten: Zitrone/Salz nachjustieren.",
+              "ingredients": [
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "2 EL Olivenöl",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "aleppo-pfeffer",
+                  "amount": {
+                    "text": "eine Prise Aleppo-Pfeffer"
+                  }
+                }
+              ],
+              "attention": "active"
+            }
+          ],
+          "heading": "**Hummus (T-2 bis Abend, Ottolenghi-Methode, \\~500 g):**",
+          "phaseHint": "T-2",
+          "produces": [
+            {
+              "id": "hummus",
+              "name": "Hummus"
+            }
+          ]
+        },
+        {
+          "id": "moutabal",
+          "name": "Moutabal",
+          "steps": [
+            {
+              "id": "verkohlen",
+              "label": "5",
+              "heading": "**5. Verkohlen (25 Min.)**",
+              "title": "Verkohlen",
+              "duration": {
+                "typical": "PT25M",
+                "source": "25 Min."
+              },
+              "text": "2 große Auberginen mit dem Bunsenbrenner rundum abflämmen, bis die Haut überall schwarz und blasig ist — nicht zaghaft, der Rauch ist das Gericht. Dann bei 220 °C 15–20 Min. in den Ofen, bis sie komplett kollabiert und innen butterweich sind (der Brenner allein gart das Innere nicht durch).",
+              "action": "2 große Auberginen mit dem Bunsenbrenner rundum abflämmen, bis die Haut überall schwarz und blasig ist — nicht zaghaft, der Rauch ist das Gericht.",
+              "cues": [
+                "bis die Haut überall schwarz und blasig ist",
+                "bis sie komplett kollabiert und innen butterweich sind (der Brenner allein gart das Innere nicht durch"
+              ],
+              "timers": [
+                {
+                  "label": "Verkohlen",
+                  "duration": {
+                    "min": "PT15M",
+                    "max": "PT20M"
+                  },
+                  "text": "15–20 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "220 °C",
+                  "value": 220
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "auberginen",
+                  "amount": {
+                    "text": "2 große Auberginen",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Ofen 220 °C*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 220
+                }
+              ],
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "auberginen-abtropfen",
+              "label": "6",
+              "heading": "**6. Auberginen abtropfen (20–30 Min., passiv)**",
+              "title": "Auberginen abtropfen",
+              "duration": {
+                "min": "PT20M",
+                "max": "PT30M",
+                "source": "20–30 Min."
+              },
+              "attention": "passive",
+              "text": "Längs halbieren, Fruchtfleisch herausschaben (verkohlte Hautstücke penibel aussortieren), 20–30 Min. im Sieb abtropfen lassen — das Bitterwasser soll raus.",
+              "action": "Längs halbieren, Fruchtfleisch herausschaben (verkohlte Hautstücke penibel aussortieren), 20–30 Min. im Sieb abtropfen lassen — das Bitterwasser soll raus.",
+              "timers": [
+                {
+                  "label": "Auberginen abtropfen",
+                  "duration": {
+                    "min": "PT20M",
+                    "max": "PT30M"
+                  },
+                  "text": "20–30 Min."
+                }
+              ],
+              "ingredients": []
+            },
+            {
+              "id": "moutabal-mischen",
+              "label": "7",
+              "heading": "**7. Moutabal mischen (5 Min.)**",
+              "title": "Moutabal mischen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Mit der Gabel zerdrücken, **nicht mixen** — etwas Textur bleibt. 60 g Tahina, 2 EL Zitronensaft, 1 kleine fein geriebene Knoblauchzehe und ½ TL Salz unterrühren. Abschmecken. Anrichten mit 1–2 EL Olivenöl, optional Granatapfelkerne.",
+              "action": "Mit der Gabel zerdrücken, **nicht mixen** — etwas Textur bleibt.",
+              "limits": [
+                "nicht mixen"
+              ],
+              "ingredients": [
+                {
+                  "ref": "tahina",
+                  "amount": {
+                    "text": "60 g Tahina",
+                    "value": 60.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "2 EL Zitronensaft",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "1 kleine fein geriebene Knoblauchzehe",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "1–2 EL Olivenöl",
+                    "value": 1.0,
+                    "unit": "EL",
+                    "max": 2.0
+                  }
+                }
+              ],
+              "attention": "active"
+            }
+          ],
+          "heading": "**Moutabal (Abend, \\~400 g):**",
+          "phaseHint": "Abend",
+          "produces": [
+            {
+              "id": "moutabal",
+              "name": "Moutabal"
+            }
+          ]
+        },
+        {
+          "id": "muhammara",
+          "name": "Muhammara",
+          "steps": [
+            {
+              "id": "paprika-roesten",
+              "label": "8",
+              "heading": "**8. Paprika rösten (20 Min.)**",
+              "title": "Paprika rösten",
+              "duration": {
+                "typical": "PT20M",
+                "source": "20 Min."
+              },
+              "text": "2 rote Spitzpaprika unter dem Ofengrill (oder mit dem Brenner) rundum schwarz rösten, 10 Min. abgedeckt in einer Schüssel dämpfen, häuten und entkernen. **Nicht abwaschen** — das spült das Röstaroma weg. *Abkürzung: Glasware abtropfen und trocken tupfen; funktioniert, schmeckt aber flacher.*",
+              "action": "2 rote Spitzpaprika unter dem Ofengrill (oder mit dem Brenner) rundum schwarz rösten, 10 Min. abgedeckt in einer Schüssel dämpfen, häuten und entkernen.",
+              "limits": [
+                "Nicht abwaschen"
+              ],
+              "why": "Abkürzung: Glasware abtropfen und trocken tupfen; funktioniert, schmeckt aber flacher.",
+              "timers": [
+                {
+                  "label": "Paprika rösten",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "spitzpaprika",
+                  "amount": {
+                    "text": "2 rote Spitzpaprika",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "walnuesse-roesten",
+              "label": "9",
+              "heading": "**9. Walnüsse rösten (5 Min.)**",
+              "title": "Walnüsse rösten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "100 g Walnusskerne in der trockenen Pfanne rösten, bis sie duften. Abkühlen lassen.",
+              "action": "100 g Walnusskerne in der trockenen Pfanne rösten, bis sie duften.",
+              "cues": [
+                "bis sie duften"
+              ],
+              "ingredients": [
+                {
+                  "ref": "walnusskerne",
+                  "amount": {
+                    "text": "100 g Walnusskerne",
+                    "value": 100.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Walnüsse rösten",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
+              "after": []
+            },
+            {
+              "id": "muhammara-mixen",
+              "label": "10",
+              "heading": "**10. Muhammara mixen (5 Min.)**",
+              "title": "Muhammara mixen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Alles zusammen — Paprika, Walnüsse, 40 g Semmelbrösel, 1½ EL Granatapfelsirup, 1 TL Aleppo-Pfeffer, ½ TL Kreuzkümmel, ½ TL Salz, 1 Knoblauchzehe, 3 EL Olivenöl, 1 TL Zitronensaft — mit dem Stabmixer **stoßweise** pulsen — Paste mit Biss, die Nüsse gemahlen, aber nicht zu Butter zerschlagen. Zu dick: Schluck Olivenöl. Über Nacht kalt ziehen lassen.",
+              "action": "Alles zusammen — Paprika, Walnüsse, 40 g Semmelbrösel, 1½ EL Granatapfelsirup, 1 TL Aleppo-Pfeffer, ½ TL Kreuzkümmel, ½ TL Salz, 1 Knoblauchzehe, 3 EL Olivenöl, 1 TL Zitronensaft — mit dem Stabmixer **stoßweise** pulsen — Paste mit Biss, die Nüsse gemahlen, aber nicht zu Butter zerschlagen.",
+              "ingredients": [
+                {
+                  "ref": "semmelbroesel",
+                  "amount": {
+                    "text": "40 g Semmelbrösel",
+                    "value": 40.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "granatapfelsirup",
+                  "amount": {
+                    "text": "1½ EL Granatapfelsirup",
+                    "value": 1.5,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "aleppo-pfeffer",
+                  "amount": {
+                    "text": "1 TL Aleppo-Pfeffer",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "kreuzkuemmel",
+                  "amount": {
+                    "text": "½ TL Kreuzkümmel",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "1 Knoblauchzehe",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "3 EL Olivenöl",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "1 TL Zitronensaft",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*nach Paprika rösten, Walnüsse rösten*",
+              "attention": "active",
+              "after": [
+                "step:paprika-roesten",
+                "step:walnuesse-roesten"
+              ]
+            },
+            {
+              "id": "muhammara-abschmecken",
+              "label": "11",
+              "heading": "**11. Muhammara abschmecken (5 Min.)**",
+              "title": "Muhammara abschmecken",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Tag 3: Balance süß (Sirup) – sauer (Sirup/Zitrone) – nussig prüfen, Salz nachziehen. Mit Olivenöl-Faden anrichten. *Bewusst am unteren Schärfe-Ende gewürzt — Aleppo-Pfeffer kommt für die Erwachsenen zusätzlich auf den Tisch.*",
+              "action": "Tag 3: Balance süß (Sirup) – sauer (Sirup/Zitrone) – nussig prüfen, Salz nachziehen.",
+              "why": "Bewusst am unteren Schärfe-Ende gewürzt — Aleppo-Pfeffer kommt für die Erwachsenen zusätzlich auf den Tisch.",
+              "ingredients": [],
+              "attention": "active"
+            }
+          ],
+          "heading": "**Muhammara (T-1, \\~400 g, Kühlschrank):**",
+          "phaseHint": "T-1",
+          "produces": [
+            {
+              "id": "muhammara",
+              "name": "Muhammara",
+              "storage": {
+                "place": "fridge"
+              }
+            }
+          ]
+        },
+        {
+          "id": "labneh-mit-za-atar",
+          "name": "Labneh mit Za'atar",
+          "steps": [
+            {
+              "id": "labneh-salzen",
+              "label": "12",
+              "heading": "**12. Labneh salzen (5 Min.)**",
+              "title": "Labneh salzen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "1 kg Joghurt mit 1 TL Salz verrühren (**vor** dem Abtropfen salzen — zieht Molke und würzt durch statt nur oberflächlich).",
+              "action": "1 kg Joghurt mit 1 TL Salz verrühren (**vor** dem Abtropfen salzen — zieht Molke und würzt durch statt nur oberflächlich).",
+              "ingredients": [
+                {
+                  "ref": "joghurt",
+                  "amount": {
+                    "text": "1 kg Joghurt",
+                    "value": 1.0,
+                    "unit": "kg"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "labneh-abtropfen",
+              "label": "13",
+              "heading": "**13. Labneh abtropfen (12–24 Std., passiv)**",
+              "title": "Labneh abtropfen",
+              "duration": {
+                "min": "PT12H",
+                "max": "PT24H",
+                "source": "12–24 Std."
+              },
+              "attention": "passive",
+              "text": "In das Passiertuch, im feinen Sieb über einer Schüssel 12–24 Std. im Kühlschrank abtropfen lassen. Nach 12 Std. prüfen: streichfähig wie Frischkäse = fertig; länger = fester.",
+              "action": "In das Passiertuch, im feinen Sieb über einer Schüssel 12–24 Std. im Kühlschrank abtropfen lassen.",
+              "timers": [
+                {
+                  "label": "Labneh abtropfen",
+                  "duration": {
+                    "min": "PT12H",
+                    "max": "PT24H"
+                  },
+                  "text": "12–24 Std."
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT12H",
+                    "source": "12 Std."
+                  },
+                  "text": "Nach 12 Std."
+                }
+              ],
+              "ingredients": []
+            },
+            {
+              "id": "labneh-anrichten",
+              "label": "14",
+              "heading": "**14. Labneh anrichten (5 Min.)**",
+              "title": "Labneh anrichten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Flach ausstreichen, Mulde, 2 EL Olivenöl, 1–2 TL Za'atar darüber. *Für das Kind einen Klecks ohne Za'atar abzweigen — pur mit Brot die mildeste Komponente des Abends.*",
+              "action": "Flach ausstreichen, Mulde, 2 EL Olivenöl, 1–2 TL Za'atar darüber.",
+              "why": "Für das Kind einen Klecks ohne Za'atar abzweigen — pur mit Brot die mildeste Komponente des Abends.",
+              "ingredients": [
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "2 EL Olivenöl",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "za",
+                  "amount": {
+                    "text": "1–2 TL Za",
+                    "value": 1.0,
+                    "unit": "TL",
+                    "max": 2.0
+                  }
+                }
+              ],
+              "attention": "active"
+            }
+          ],
+          "heading": "**Labneh mit Za'atar (T-2 bis T-1, \\~450–500 g, Kühlschrank):**",
+          "phaseHint": "T-2",
+          "produces": [
+            {
+              "id": "labneh-mit-za-atar",
+              "name": "Labneh mit Za'atar",
+              "storage": {
+                "place": "fridge"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fatayer-bi-sabanekh",
+          "name": "Fatayer bi sabanekh",
+          "steps": [
+            {
+              "id": "hefeteig",
+              "label": "15",
+              "heading": "**15. Hefeteig (10 Min. + 1 Std. passiv)**",
+              "title": "Hefeteig",
+              "duration": {
+                "typical": "PT1H10M",
+                "source": "10 Min. + 1 Std."
+              },
+              "attention": "passive",
+              "text": "300 g Mehl, 1 TL Trockenhefe, ½ TL Salz, ½ TL Zucker, 2 EL Olivenöl und \\~170 ml lauwarmes Wasser verkneten, 8–10 Min. zu einem weichen, glatten Teig. Abgedeckt \\~1 Std. gehen lassen (verdoppelt).",
+              "action": "300 g Mehl, 1 TL Trockenhefe, ½ TL Salz, ½ TL Zucker, 2 EL Olivenöl und \\~170 ml lauwarmes Wasser verkneten, 8–10 Min. zu einem weichen, glatten Teig.",
+              "timers": [
+                {
+                  "label": "Hefeteig",
+                  "duration": {
+                    "min": "PT8M",
+                    "max": "PT10M"
+                  },
+                  "text": "8–10 Min."
+                },
+                {
+                  "label": "Hefeteig",
+                  "duration": {
+                    "typical": "PT1H",
+                    "estimated": true
+                  },
+                  "text": "\\~1 Std."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "mehl",
+                  "amount": {
+                    "text": "300 g Mehl",
+                    "value": 300.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "trockenhefe",
+                  "amount": {
+                    "text": "1 TL Trockenhefe",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "½ TL Zucker",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "2 EL Olivenöl",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "170 ml lauwarmes Wasser",
+                    "value": 170.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "after": []
+            },
+            {
+              "id": "zwiebel-salzen",
+              "label": "16",
+              "heading": "**16. Zwiebel salzen (15 Min.)**",
+              "title": "Zwiebel salzen",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "1 große Zwiebel fein würfeln, mit 1 TL Salz mischen, 10 Min. stehen lassen, **kräftig ausdrücken**.",
+              "action": "1 große Zwiebel fein würfeln, mit 1 TL Salz mischen, 10 Min. stehen lassen, **kräftig ausdrücken**.",
+              "limits": [
+                "kräftig ausdrücken"
+              ],
+              "timers": [
+                {
+                  "label": "Zwiebel salzen",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "zwiebeln",
+                  "amount": {
+                    "text": "1 große Zwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "spinat-ausdruecken",
+              "label": "17",
+              "heading": "**17. Spinat ausdrücken (10 Min.)**",
+              "title": "Spinat ausdrücken",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "450 g frischen Spinat kurz zusammenfallen lassen (Topf, ohne Wasser) bzw. TK-Spinat auftauen — in beiden Fällen portionsweise **sehr gut ausdrücken**, dann hacken.",
+              "action": "450 g frischen Spinat kurz zusammenfallen lassen (Topf, ohne Wasser) bzw.",
+              "limits": [
+                "sehr gut ausdrücken"
+              ],
+              "ingredients": [
+                {
+                  "ref": "spinat",
+                  "amount": {
+                    "text": "450 g frischen Spinat",
+                    "value": 450.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "fuellung-mischen",
+              "label": "18",
+              "heading": "**18. Füllung mischen (5 Min.)**",
+              "title": "Füllung mischen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Spinat, Zwiebel, 1½ EL Sumach, 2 EL Olivenöl, Pfeffer mischen (optional 2 EL geröstete Pinienkerne). **2 EL Zitronensaft erst unmittelbar vor dem Füllen** unterrühren — eine nasse Füllung ist der Hauptgrund für aufplatzende Nähte.",
+              "action": "Spinat, Zwiebel, 1½ EL Sumach, 2 EL Olivenöl, Pfeffer mischen (optional 2 EL geröstete Pinienkerne).",
+              "limits": [
+                "2 EL Zitronensaft erst unmittelbar vor dem Füllen"
+              ],
+              "ingredients": [
+                {
+                  "ref": "sumach",
+                  "amount": {
+                    "text": "1½ EL Sumach",
+                    "value": 1.5,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "2 EL Olivenöl",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "pinienkerne",
+                  "amount": {
+                    "text": "2 EL geröstete Pinienkerne",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "2 EL Zitronensaft",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Zwiebel salzen, Spinat ausdrücken*",
+              "attention": "active",
+              "after": [
+                "step:zwiebel-salzen",
+                "step:spinat-ausdruecken"
+              ]
+            },
+            {
+              "id": "fatayer-formen",
+              "label": "19",
+              "heading": "**19. Fatayer formen (30 Min.)**",
+              "title": "Fatayer formen",
+              "duration": {
+                "typical": "PT30M",
+                "source": "30 Min."
+              },
+              "text": "1. Teig in \\~18 Kugeln teilen, zu Kreisen von 9–10 cm ausrollen (Arbeitsfläche nur leicht bemehlt, Ränder trocken halten). 2. Je 1 gehäufter EL Füllung in die Mitte, den Kreis an drei Punkten fassen und über der Mitte zum Dreieck zusammenkneifen — Nähte **fest** verschließen.",
+              "action": "1.",
+              "ingredients": [],
+              "meta": "*nach Hefeteig, Füllung mischen*",
+              "attention": "active",
+              "after": [
+                "step:hefeteig",
+                "step:fuellung-mischen"
+              ]
+            },
+            {
+              "id": "fatayer-vorfrosten",
+              "label": "20",
+              "heading": "**20. Fatayer vorfrosten (1–2 Std., passiv)**",
+              "title": "Fatayer vorfrosten",
+              "duration": {
+                "min": "PT1H",
+                "max": "PT2H",
+                "source": "1–2 Std."
+              },
+              "attention": "passive",
+              "text": "Auf dem Blech 1–2 Std. vorfrosten, dann in den Gefrierbeutel.",
+              "action": "Auf dem Blech 1–2 Std. vorfrosten, dann in den Gefrierbeutel.",
+              "timers": [
+                {
+                  "label": "Fatayer vorfrosten",
+                  "duration": {
+                    "min": "PT1H",
+                    "max": "PT2H"
+                  },
+                  "text": "1–2 Std."
+                }
+              ],
+              "ingredients": []
+            },
+            {
+              "id": "fatayer-backen",
+              "label": "21",
+              "heading": "**21. Fatayer backen (20–22 Min., passiv)**",
+              "title": "Fatayer backen",
+              "duration": {
+                "min": "PT20M",
+                "max": "PT22M",
+                "source": "20–22 Min."
+              },
+              "attention": "passive",
+              "text": "**Am Abend:** gefroren aufs Blech, mit Eigelb + 1 EL Wasser bestreichen, 200 °C Ober-/Unterhitze 20–22 Min. goldbraun (frisch statt gefroren: 15–18 Min.).",
+              "action": "**Am Abend:** gefroren aufs Blech, mit Eigelb + 1 EL Wasser bestreichen, 200 °C Ober-/Unterhitze 20–22 Min. goldbraun (frisch statt gefroren: 15–18 Min.).",
+              "timers": [
+                {
+                  "label": "Fatayer backen",
+                  "duration": {
+                    "min": "PT20M",
+                    "max": "PT22M"
+                  },
+                  "text": "20–22 Min."
+                },
+                {
+                  "label": "Fatayer backen",
+                  "duration": {
+                    "min": "PT15M",
+                    "max": "PT18M"
+                  },
+                  "text": "15–18 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "200 °C",
+                  "value": 200
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "1 EL Wasser",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Fatayer vorfrosten · Ofen 200 °C*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 200
+                }
+              ],
+              "after": [
+                "step:fatayer-vorfrosten"
+              ]
+            }
+          ],
+          "heading": "**Fatayer bi sabanekh (T-1, roh eingefroren, hält Monate, Tiefkühler):**",
+          "phaseHint": "T-1",
+          "produces": [
+            {
+              "id": "fatayer-bi-sabanekh",
+              "name": "Fatayer bi sabanekh"
+            }
+          ]
+        },
+        {
+          "id": "sambousek-bi-jibneh",
+          "name": "Sambousek bi jibneh",
+          "steps": [
+            {
+              "id": "akkawi-entsalzen",
+              "label": "22",
+              "heading": "**22. Akkawi entsalzen (5 Min.)**",
+              "title": "Akkawi entsalzen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Falls Akkawi beschafft (Tag 1): in \\~1 cm Scheiben schneiden, in kaltem Wasser einlegen, Wasser bis Tag 2 zwei-, dreimal wechseln. Vor Verwendung probieren — er soll noch leicht salzig sein, nicht mehr aggressiv.",
+              "action": "Falls Akkawi beschafft (Tag 1): in \\~1 cm Scheiben schneiden, in kaltem Wasser einlegen, Wasser bis Tag 2 zwei-, dreimal wechseln.",
+              "rescue": "Falls Akkawi beschafft (Tag 1): in \\~1 cm Scheiben schneiden, in kaltem Wasser einlegen, Wasser bis Tag 2 zwei-, dreimal wechseln.",
+              "ingredients": [],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "muerbteig",
+              "label": "23",
+              "heading": "**23. Mürbteig (10 Min. + 30 Min. passiv)**",
+              "title": "Mürbteig",
+              "duration": {
+                "typical": "PT40M",
+                "source": "10 Min. + 30 Min."
+              },
+              "attention": "passive",
+              "text": "300 g Mehl, 1 TL Salz und ½ TL Zucker mischen, 70 g Butter mit den Fingerspitzen einreiben, bis es wie feuchter Sand aussieht. \\~140 ml warmes Wasser zugeben, **nur kurz** zu einem glatten Teig zusammenfügen — nicht auskneten, sonst wird er zäh statt mürb. Abgedeckt 30 Min. ruhen lassen.",
+              "action": "300 g Mehl, 1 TL Salz und ½ TL Zucker mischen, 70 g Butter mit den Fingerspitzen einreiben, bis es wie feuchter Sand aussieht. \\~140 ml warmes Wasser zugeben, **nur kurz** zu einem glatten Teig zusammenfügen — nicht auskneten, sonst wird er zäh statt mürb.",
+              "limits": [
+                "nur kurz"
+              ],
+              "cues": [
+                "bis es wie feuchter Sand aussieht"
+              ],
+              "timers": [
+                {
+                  "label": "Mürbteig",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "30 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "mehl",
+                  "amount": {
+                    "text": "300 g Mehl",
+                    "value": 300.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "½ TL Zucker",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "70 g Butter",
+                    "value": 70.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "140 ml warmes Wasser",
+                    "value": 140.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "after": []
+            },
+            {
+              "id": "kaesefuellung",
+              "label": "24",
+              "heading": "**24. Käsefüllung (10 Min.)**",
+              "title": "Käsefüllung",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "150 g Akkawi und 150 g Mozzarella grob reiben, mit 1 Eiweiß und 2 EL gehackter Petersilie mischen. *Fallback ohne Akkawi: 180 g Mozzarella (niedrigfeucht) + 120 g zerbröselter Feta.* Alles mischen. **Vor dem Salzen probieren** — Akkawi/Feta bringen meist genug Salz mit.",
+              "action": "150 g Akkawi und 150 g Mozzarella grob reiben, mit 1 Eiweiß und 2 EL gehackter Petersilie mischen.",
+              "limits": [
+                "Vor dem Salzen probieren"
+              ],
+              "ingredients": [
+                {
+                  "ref": "akkawi",
+                  "amount": {
+                    "text": "150 g Akkawi",
+                    "value": 150.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "mozzarella",
+                  "amount": {
+                    "text": "150 g Mozzarella",
+                    "value": 150.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "eier",
+                  "amount": {
+                    "text": "1 Eiweiß",
+                    "value": 1.0,
+                    "unit": "Eiweiß"
+                  }
+                },
+                {
+                  "ref": "petersilie",
+                  "amount": {
+                    "text": "2 EL gehackter Petersilie",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "mozzarella",
+                  "amount": {
+                    "text": "180 g Mozzarella",
+                    "value": 180.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "feta",
+                  "amount": {
+                    "text": "120 g zerbröselter Feta",
+                    "value": 120.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nach Akkawi entsalzen*",
+              "attention": "active",
+              "after": [
+                "step:akkawi-entsalzen"
+              ]
+            },
+            {
+              "id": "sambousek-formen",
+              "label": "25",
+              "heading": "**25. Sambousek formen (30 Min.)**",
+              "title": "Sambousek formen",
+              "duration": {
+                "typical": "PT30M",
+                "source": "30 Min."
+              },
+              "text": "1. Teig dünn ausrollen (\\~2 mm), Kreise von 8–10 cm ausstechen (Glas). Teigreste neu verkneten und weiter ausrollen. 2. Je 1 knapper TL Füllung, zum Halbmond klappen, Rand mit den Gabelzinken festdrücken und kerben. **Nicht überfüllen**, sonst platzen sie im Öl. *(Der Kerbmuster-Trick aus den Quellen — pro Füllung anders kerben — wird erst relevant, falls später eine zweite Sambousek-Füllung dazukommt, z. B. die Fleischvariante; hier reicht die Form als Unterscheidung zu den Fatayer-Dreiecken.)*",
+              "action": "1.",
+              "limits": [
+                "Nicht überfüllen"
+              ],
+              "why": "Der Kerbmuster-Trick aus den Quellen — pro Füllung anders kerben — wird erst relevant, falls später eine zweite Sambousek-Füllung dazukommt, z. B. die Fleischvariante; hier reicht die Form als Unterscheidung zu den Fatayer-Dreiecken.",
+              "ingredients": [],
+              "meta": "*nach Mürbteig, Käsefüllung*",
+              "attention": "active",
+              "after": [
+                "step:muerbteig",
+                "step:kaesefuellung"
+              ]
+            },
+            {
+              "id": "sambousek-vorfrosten",
+              "label": "26",
+              "heading": "**26. Sambousek vorfrosten (1–2 Std., passiv)**",
+              "title": "Sambousek vorfrosten",
+              "duration": {
+                "min": "PT1H",
+                "max": "PT2H",
+                "source": "1–2 Std."
+              },
+              "attention": "passive",
+              "text": "Auf dem Blech vorfrosten, dann in den Gefrierbeutel.",
+              "action": "Auf dem Blech vorfrosten, dann in den Gefrierbeutel.",
+              "ingredients": [],
+              "timers": [
+                {
+                  "label": "Sambousek vorfrosten",
+                  "duration": {
+                    "min": "PT1H",
+                    "max": "PT2H"
+                  },
+                  "text": "1–2 Std."
+                }
+              ]
+            },
+            {
+              "id": "sambousek-frittieren",
+              "label": "27",
+              "heading": "**27. Sambousek frittieren (ca. 20 Min.)**",
+              "title": "Sambousek frittieren",
+              "duration": {
+                "typical": "PT20M",
+                "source": "ca. 20 Min.",
+                "estimated": true
+              },
+              "text": "**Am Abend:** kleinen Topf mit 4–5 cm neutralem Öl auf **170–175 °C** (Fleischthermometer). 4–5 Stück pro Charge, gefroren direkt ins Öl (nicht antauen): 4–5 Min. goldbraun (frisch: 2–3 Min.). Zwischen den Chargen das Öl wieder auf Temperatur kommen lassen — zu kaltes Öl macht sie fettig, zu heißes verbrennt sie außen bei rohem Teig innen. Auf Küchenpapier abtropfen.",
+              "action": "**Am Abend:** kleinen Topf mit 4–5 cm neutralem Öl auf **170–175 °C** (Fleischthermometer).",
+              "limits": [
+                "170–175 °C"
+              ],
+              "timers": [
+                {
+                  "label": "Sambousek frittieren",
+                  "duration": {
+                    "min": "PT4M",
+                    "max": "PT5M"
+                  },
+                  "text": "4–5 Min."
+                },
+                {
+                  "label": "Sambousek frittieren",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "170–175 °C",
+                  "min": 170,
+                  "max": 175
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "4–5 cm neutralem Öl",
+                    "value": 4.0,
+                    "unit": "cm",
+                    "max": 5.0
+                  }
+                }
+              ],
+              "meta": "*nach Sambousek vorfrosten · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:sambousek-vorfrosten"
+              ]
+            }
+          ],
+          "heading": "**Sambousek bi jibneh (T-1, roh eingefroren, hält Monate, Tiefkühler):**",
+          "phaseHint": "T-1",
+          "produces": [
+            {
+              "id": "sambousek-bi-jibneh",
+              "name": "Sambousek bi jibneh"
+            }
+          ]
+        },
+        {
+          "id": "dazu",
+          "name": "Dazu",
+          "steps": [
+            {
+              "id": "brot-rohkost-oliven",
+              "label": "28",
+              "heading": "**28. Brot, Rohkost, Oliven (10 Min.)**",
+              "title": "Brot, Rohkost, Oliven",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "- **Fladenbrot:** kurz im Ofen aufwärmen. Optional 1 Fladen in Ecken schneiden, mit 2 EL Olivenöl + Za'atar bestreichen, 8 Min. bei 200 °C → Chips für die Dips.\n- **Rohkost:** 1 Gurke, 3 Karotten, 1 Bund Radieschen in Sticks/Hälften.\n- **Oliven** in eine kleine Schale — fertig.",
+              "action": "- **Fladenbrot:** kurz im Ofen aufwärmen.",
+              "timers": [
+                {
+                  "label": "Brot, Rohkost, Oliven",
+                  "duration": {
+                    "typical": "PT8M"
+                  },
+                  "text": "8 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "200 °C",
+                  "value": 200
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "2 EL Olivenöl",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "salatgurke",
+                  "amount": {
+                    "text": "1 Gurke",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "karotten",
+                  "amount": {
+                    "text": "3 Karotten",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "radieschen",
+                  "amount": {
+                    "text": "1 Bund Radieschen",
+                    "value": 1.0,
+                    "unit": "Bund"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Ofen 200 °C*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 200
+                }
+              ],
+              "attention": "active",
+              "after": []
+            }
+          ],
+          "heading": "**Dazu (Abend, à la minute):**",
+          "phaseHint": "Abend",
+          "produces": [
+            {
+              "id": "dazu",
+              "name": "Dazu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "*200 g getrocknete Kichererbsen · 1¼ TL ",
+      "level": "bold",
+      "markdown": "*200 g getrocknete Kichererbsen · 1¼ TL Natron · 140 g Tahina · 2–3 EL Zitronensaft · 1–2 Knoblauchzehen · 1 TL Salz · Prise Kreuzkümmel · 60–100 ml Eiswasser (oder 2–3 Eiswürfel)*"
+    },
+    {
+      "type": "markdown",
+      "title": "*2 große Auberginen (\\~700 g) · 60 g Tah",
+      "level": "bold",
+      "markdown": "*2 große Auberginen (\\~700 g) · 60 g Tahina · 2 EL Zitronensaft · 1 kleine Knoblauchzehe · ½ TL Salz · 1–2 EL Olivenöl obenauf · optional Granatapfelkerne*"
+    },
+    {
+      "type": "markdown",
+      "title": "*2 rote Spitzpaprika (oder 1 Glas geröst",
+      "level": "bold",
+      "markdown": "*2 rote Spitzpaprika (oder 1 Glas geröstete Paprika, abgetropft \\~220 g) · 100 g Walnusskerne · 40 g Semmelbrösel · 1½ EL Granatapfelsirup · 1 TL Aleppo-Pfeffer · ½ TL Kreuzkümmel · ½ TL Salz · 1 Knoblauchzehe · 3 EL Olivenöl · 1 TL Zitronensaft*"
+    },
+    {
+      "type": "markdown",
+      "title": "*1 kg griechischer Joghurt (10 %) · 1 TL",
+      "level": "bold",
+      "markdown": "*1 kg griechischer Joghurt (10 %) · 1 TL Salz · 2 EL Olivenöl · 1–2 TL Za'atar*"
+    },
+    {
+      "type": "markdown",
+      "title": "\\~18 Stück, gebacken.",
+      "level": "bold",
+      "markdown": "\\~18 Stück, gebacken."
+    },
+    {
+      "type": "markdown",
+      "title": "Teig",
+      "level": "bold",
+      "markdown": "**Teig:** *300 g Mehl · 1 TL Trockenhefe · ½ TL Salz · ½ TL Zucker · 2 EL Olivenöl · \\~170 ml lauwarmes Wasser*"
+    },
+    {
+      "type": "markdown",
+      "title": "Füllung",
+      "level": "bold",
+      "markdown": "**Füllung:** *450 g frischer Spinat (oder 300 g TK, aufgetaut) · 1 große Zwiebel · 1½ EL Sumach · 2 EL Zitronensaft · 2 EL Olivenöl · Salz, Pfeffer · optional 2 EL geröstete Pinienkerne*"
+    },
+    {
+      "type": "markdown",
+      "title": "\\~20 Stück, frittiert.",
+      "level": "bold",
+      "markdown": "\\~20 Stück, frittiert."
+    },
+    {
+      "type": "markdown",
+      "title": "Teig",
+      "level": "bold",
+      "markdown": "**Teig:** *300 g Mehl · 1 TL Salz · ½ TL Zucker · 70 g weiche Butter (oder 60 ml neutrales Öl) · \\~140 ml warmes Wasser*"
+    },
+    {
+      "type": "markdown",
+      "title": "Füllung",
+      "level": "bold",
+      "markdown": "**Füllung:** *150 g entsalzter Akkawi + 150 g Mozzarella (niedrigfeucht), beide grob gerieben · 1 Eiweiß · 2 EL gehackte Petersilie (oder 1 TL getrocknete Minze)*"
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "Von allen aktuellen Projekten das kinderfreundlichste — Dips, Brot, Oliven (bekannter Treffer) und Teigtaschen sind praktisch garantiert. Konkret:\n\n- **Muhammara** ist das einzige Schärfethema und im Rezept bewusst am unteren Ende gewürzt (1 TL Aleppo-Pfeffer auf \\~400 g = mild-fruchtig). Aleppo-Pfeffer steht **zusätzlich am Tisch** für die Erwachsenen. Wer ganz sicher gehen will: vor dem Aleppo-Pfeffer eine kleine Portion abnehmen.\n- **Beim Formen (Tag 2) mitmachen lassen** — der Hefeteig verzeiht alles. Ein paar Mini-Exemplare in Kinderhand-Größe mitformen. Die Käse-Sambousek sind der wahrscheinliche Favorit → dort großzügig planen; das Rezept liefert ohnehin mehr Sambousek (\\~20) als Fatayer (\\~18).\n- **Frittiertes mindestens 5 Min. abkühlen lassen**, bevor es auf den Kinderteller kommt — der Käse innen ist deutlich heißer als die Kruste und zieht Fäden.\n- **Roher Knoblauch** in Hummus und Moutabal ist bewusst knapp dosiert (1–2 bzw. 1 Zehe) — beides wird über Nacht spürbar schärfer; Reste am Folgetag fürs Kind vorher probieren.\n- **Labneh ohne Za'atar** als Klecks abzweigen — mildeste Einstiegskomponente mit Brot.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "### Getroffene Entscheidungen (07/2026)\n\n- **Zwei Teige, nicht einer:** Hefeteig für Fatayer, fettgeriebener Teig ohne Hefe für Sambousek. Der Texturkontrast (weich-brotig vs. mürb-blättrig) ist der Grund, warum zwei Gebäcke auf einem Tisch überhaupt gerechtfertigt sind — die Ein-Teig-Hausabkürzung würde genau das kosten. Erster Durchgang = Referenzpunkt.\n- **Fatayer gebacken, Sambousek frittiert** (kleiner Topf, Chargen) — die Quellen sind einig, dass Frittieren bei Sambousek deutlich besser ist, und die Garart-Trennung verstärkt den Kontrast zusätzlich.\n- **Alle sechs Komponenten bleiben**, auch die Muhammara (Streichkandidat, aber größter Aroma-Kontrast). Gegen das Mengenproblem sind die Dips moderat dimensioniert (\\~400–500 g je) statt großzügig; Teigtaschen-Überschuss ist als Frost-Vorrat eingeplant, kein Problem.\n- **Akkawi** steht auf der Liste für den arabischen Laden (mit Entsalzung), aber da der Laden noch nicht identifiziert ist, ist der Fallback Mozzarella (niedrigfeucht) + Feta fest ins Rezept geschrieben — kein Plan, der an einer unbestätigten Bezugsquelle hängt.\n- **Fladenbrot: kaufen.** Der Teigtag ist mit zwei Teigen voll. Selbst backen bleibt optionale Notiz.\n- **Paprika: selbst rösten** (Grill/Brenner vorhanden, Röstaroma trägt die Muhammara). Glasware als dokumentierte Abkürzung, wenn es schnell gehen muss.\n- **Getrennter Abend vom Shawarma-Projekt.** Doppelt gekaufte Zutaten (Tahina, Fladenbrot, Sumach) sind unkritisch — hält alles.\n\n### Quellen\n\n- **Hummus aus getrockneten Kichererbsen mit Natron und Schalenentfernung:** Die Methode geht auf Ottolenghi/Tamimi (*Jerusalem*) zurück — Kichererbsen nach dem Einweichen mit Natron kurz trocken erhitzen, dann weichkochen, bis sie zerfallen; die Schalen lösen sich dabei größtenteils und lassen sich abschöpfen. Warm mit viel Tahina und Eiswasser mixen ([Ottolenghi](https://ottolenghi.co.uk/pages/recipes/hummus-recipe) — Mengengerüst dort: 200 g getrocknete Kichererbsen, 120–150 g Tahina, Eiswasser; hiesige Mengen daran kalibriert). America's Test Kitchen bestätigt den Effekt der Schalenentfernung auf die Cremigkeit und nennt das Natron als das, was den Schritt praktikabel macht ([ATK](https://www.americastestkitchen.com/how_tos/6634-for-creamier-hummus-skin-your-chickpeas)). Gegenstimmen halten das Schalenpflücken für verzichtbar ([Pamela Salzman](https://pamelasalzman.com/supersmooth-light-as-air-hummus/) hält den Unterschied für gering) — beim ersten Durchgang trotzdem konsequent machen, um den Referenzpunkt zu haben.\n- **Eiswasser statt Kochwasser** emulgiert das Tahina-Fett und macht die Masse heller und luftiger; kein Olivenöl in die Masse, nur obenauf ([Ottolenghi](https://ottolenghi.co.uk/pages/recipes/hummus-recipe), [Smitten Kitchen](https://smittenkitchen.com/2013/01/ethereally-smooth-hummus/)).\n- **Muhammara als drittes Dip statt eines weiteren Salats:** eigene Aroma-Achse (Nuss, Granatapfel, milde Chilifrucht) mit null Überlappung zum Shawarma-Teller. Herkunft Aleppo/Syrien, im libanesischen Mezze etabliert ([Wikipedia](https://en.wikipedia.org/wiki/Muhammara), [Tasting Table](https://www.tastingtable.com/1590383/lebanese-mezze-dishes-try-once/), [Grantourismo](https://grantourismotravels.com/mezze-recipes/) arbeitet nach der Fassung der Académie Syrienne de Gastronomie). Granatapfelsirup gilt einheitlich als nicht verhandelbar.\n- **Labneh:** vor dem Abtropfen salzen (zieht Molke und würzt durch, nicht nur oberflächlich), 12–24 Std. abtropfen ([Olive Wok Whisk — Mezze-Guide](https://www.olivewokwhisk.com/2026/05/mediterranean-mezze-guide.html), [Amazing Food & Drink — Mezze-Guide](https://amazingfoodanddrink.com/lebanese-mezze-guide-every-dish-on-the-table-and-how-to-serve-it/)).\n- **Kalt/warm-Aufteilung** folgt der klassischen Mezze-Logik: Dips, Käse, Salate kalt und vorbereitbar; Gebäck, Teigtaschen, Frittiertes warm ([Grantourismo](https://grantourismotravels.com/mezze-recipes/)).\n- **Fatayer bi sabanekh** — Spinat mit Zwiebel und Sumach ist die im Levante verbreitete Standardfüllung ([Wikipedia](https://en.wikipedia.org/wiki/Fatayer)).\n- **Sambousek, Käsefüllung statt Fleisch:** Halbmondform, klassisch frittiert, gebacken bei \\~190 °C aber ausdrücklich vorgesehen ([Little Sunny Kitchen](https://littlesunnykitchen.com/sambousek/), [The Hungry Goddess](https://thehungrygoddess.com/cheese-filled-lebanese-sambousek-with-crispy-dough/)). Klassischer Käse ist Akkawi, Standard-Ersatz eine Mischung aus Mozzarella und Feta/Halloumi, Eiweiß als Bindung, dazu Petersilie oder trockene Minze ([Baiti Ana](https://baitiana.com/2025/02/03/cheese-sambousek/), [Hadia's Lebanese Cuisine](https://hadiaslebanesecuisine.com/blog/cheese-sambousek/)). Die Fleischvariante mit Pinienkernen und Granatapfelsirup wäre die häufigere ([Zaatar and Zaytoun](https://zaatarandzaytoun.com/sambousek-lahme/), [But First Chai](https://butfirstchai.com/sambousek-recipe/)) — hier bewusst verworfen, um die vegetarische Klammer und die Abgrenzung zum Shawarma zu halten. Bleibt als Option, wenn das Mezze irgendwann doch zum Fleischtisch wird.\n- **Teigunterschied:** Der Sambousek-Teig wird typischerweise gebaut, indem Öl oder Butter ins Mehl gerieben wird, bis es sandig ist, dann warmes Wasser — ohne Hefe ([Baiti Ana](https://baitiana.com/2025/02/03/cheese-sambousek/) — Mengengerüst dort: 2 cups Mehl / ¼ cup Fett / ¾ cup Wasser, hier auf 300 g Mehl skaliert; [Jamil Ghar](https://jamilghar.com/sambousek/)). Es existieren auch Hefe-Milch-Joghurt-Varianten ([The Hungry Goddess](https://thehungrygoddess.com/cheese-filled-lebanese-sambousek-with-crispy-dough/)) — Beleg dafür, dass ein gemeinsamer Teig für beide Gebäcke vertretbar wäre; hier bewusst nicht gewählt (s. Entscheidungen).\n- **Roh einfrieren** ist in den Quellen die ausdrücklich empfohlene Vorgehensweise, teils bis zu zwei Monaten, mit direktem Garen aus dem Frost ([Hadia's](https://hadiaslebanesecuisine.com/blog/cheese-sambousek/), [Camellia Recipes](https://www.camelliarecipes.net/crispy-sambousek-middle-eastern-pastries/), [Baiti Ana](https://baitiana.com/2025/02/03/cheese-sambousek/): „no need to thaw\"). Das ist der Grund, warum sechs Komponenten organisatorisch aufgehen.\n- **Füllung trocken halten und nicht überfüllen** ist in mehreren Quellen der zentrale Fehler-Hinweis (platzt beim Frittieren, Naht geht auf); Ränder mit der Gabelzinke kerben ([Little Sunny Kitchen](https://littlesunnykitchen.com/sambousek/), [Camellia Recipes](https://www.camelliarecipes.net/crispy-sambousek-middle-eastern-pastries/)). Unterschiedliche Kerbmuster als Füllungs-Markierung: [Zaatar and Zaytoun](https://zaatarandzaytoun.com/sambousek-lahme/).\n- **Bewusst nicht dabei:** Batata harra und Tabbouleh (beide beim Shawarma), Falafel (nochmals Kichererbse plus zweites Frittiergut), Kibbeh nayyeh (rohes Lamm), Makdous und Shanklish (Wochen Vorlauf bzw. praktisch nicht beschaffbar). Als kalte Ausweich-Alternative, falls die Teigarbeit einmal entfallen soll: **Loubieh bi zeit** oder **Hindbeh bi zeit** (*bi zeit*-Kategorie; die İmam-bayıldı-Erfahrung überträgt sich direkt, Bitterkeit beim Kind bedenken).\n- Übersicht zum Repertoire: [Maureen Abood — Mezze](https://maureenabood.com/category/all-recipes/all-lebanese-recipes/lebanese-mezze-recipes/)",
+      "tags": [
+        "quellen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notiz: Kombination mit dem Shawarma-Abend",
+      "level": 2,
+      "markdown": "Bleiben zwei getrennte Abende. Perspektivisch lassen sich beide aber zu einem großen libanesischen Menü verbinden — Mezze als Vorspiel (Dips halbiert, Teigtaschen aus dem Frost), Shawarma (`shawarma-libanesisch.md`) als Hauptgang. Da beide Projekte disjunkte Komponenten haben (hier kein Toum/Tabbouleh/Batata harra, dort keine Dips/Teigtaschen), gibt es keine Doppelungen; nur die Einkäufe (Tahina, Fladenbrot, Sumach) überschneiden sich — hält alles, unkritisch."
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T18:59:09Z",
+    "sourceHash": "69adf1fbb643414d",
+    "quantities": [
+      {
+        "ingredient": "tahina",
+        "total": {
+          "text": "200 g",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "hummus": "140 g Tahina",
+          "moutabal": "60 g Tahina"
+        }
+      },
+      {
+        "ingredient": "granatapfelsirup",
+        "total": {
+          "text": "1½ EL",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "muhammara": "1½ EL Granatapfelsirup"
+        }
+      },
+      {
+        "ingredient": "za",
+        "total": {
+          "text": "1–2 TL",
+          "value": 1.0,
+          "max": 2.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "labneh-mit-za-atar": "1–2 TL Za"
+        }
+      },
+      {
+        "ingredient": "sumach",
+        "total": {
+          "text": "1½ EL",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "fatayer-bi-sabanekh": "1½ EL Sumach"
+        }
+      },
+      {
+        "ingredient": "aleppo-pfeffer",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "muhammara": "1 TL Aleppo-Pfeffer"
+        },
+        "unitless": [
+          "eine Prise Aleppo-Pfeffer"
+        ]
+      },
+      {
+        "ingredient": "akkawi",
+        "total": {
+          "text": "150 g",
+          "value": 150.0,
+          "max": 150.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "sambousek-bi-jibneh": "150 g Akkawi"
+        }
+      },
+      {
+        "ingredient": "fladenbrote",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "oliven",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "auberginen",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "moutabal": "2 große Auberginen"
+        }
+      },
+      {
+        "ingredient": "spitzpaprika",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "muhammara": "2 rote Spitzpaprika"
+        }
+      },
+      {
+        "ingredient": "zitronen",
+        "total": {
+          "text": "6 EL (+ TL ungemischt)",
+          "value": 6.0,
+          "max": 6.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "hummus": "2 EL Zitronensaft",
+          "moutabal": "2 EL Zitronensaft",
+          "fatayer-bi-sabanekh": "2 EL Zitronensaft"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": "3–4",
+          "value": 3.0,
+          "max": 4.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "hummus": "1–2 Knoblauchzehen",
+          "moutabal": "1 kleine fein geriebene Knoblauchzehe",
+          "muhammara": "1 Knoblauchzehe"
+        }
+      },
+      {
+        "ingredient": "zwiebeln",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "fatayer-bi-sabanekh": "1 große Zwiebel"
+        }
+      },
+      {
+        "ingredient": "spinat",
+        "total": {
+          "text": "450 g",
+          "value": 450.0,
+          "max": 450.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "fatayer-bi-sabanekh": "450 g frischen Spinat"
+        }
+      },
+      {
+        "ingredient": "petersilie",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "sambousek-bi-jibneh": "2 EL gehackter Petersilie"
+        }
+      },
+      {
+        "ingredient": "salatgurke",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "dazu": "1 Gurke"
+        }
+      },
+      {
+        "ingredient": "karotten",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "dazu": "3 Karotten"
+        }
+      },
+      {
+        "ingredient": "radieschen",
+        "total": {
+          "text": "1 Bund",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Bund",
+          "approx": false
+        },
+        "perTask": {
+          "dazu": "1 Bund Radieschen"
+        }
+      },
+      {
+        "ingredient": "granatapfel",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "joghurt",
+        "total": {
+          "text": "1000 g",
+          "value": 1000.0,
+          "max": 1000.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "labneh-mit-za-atar": "1 kg Joghurt"
+        }
+      },
+      {
+        "ingredient": "mozzarella",
+        "total": {
+          "text": "330 g",
+          "value": 330.0,
+          "max": 330.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "sambousek-bi-jibneh": "150 g Mozzarella + 180 g Mozzarella"
+        }
+      },
+      {
+        "ingredient": "feta",
+        "total": {
+          "text": "120 g",
+          "value": 120.0,
+          "max": 120.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "sambousek-bi-jibneh": "120 g zerbröselter Feta"
+        }
+      },
+      {
+        "ingredient": "butter",
+        "total": {
+          "text": "70 g",
+          "value": 70.0,
+          "max": 70.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "sambousek-bi-jibneh": "70 g Butter"
+        }
+      },
+      {
+        "ingredient": "eier",
+        "total": {
+          "text": "1 Eiweiß",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Eiweiß",
+          "approx": false
+        },
+        "perTask": {
+          "sambousek-bi-jibneh": "1 Eiweiß"
+        }
+      },
+      {
+        "ingredient": "kichererbsen",
+        "total": {
+          "text": "200 g",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "hummus": "200 g Kichererbsen"
+        }
+      },
+      {
+        "ingredient": "mehl",
+        "total": {
+          "text": "600 g",
+          "value": 600.0,
+          "max": 600.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "fatayer-bi-sabanekh": "300 g Mehl",
+          "sambousek-bi-jibneh": "300 g Mehl"
+        }
+      },
+      {
+        "ingredient": "trockenhefe",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "fatayer-bi-sabanekh": "1 TL Trockenhefe"
+        }
+      },
+      {
+        "ingredient": "natron",
+        "total": {
+          "text": "1¼ TL",
+          "value": 1.25,
+          "max": 1.25,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "hummus": "¾ TL Natron + ½ TL Natron"
+        }
+      },
+      {
+        "ingredient": "walnusskerne",
+        "total": {
+          "text": "100 g",
+          "value": 100.0,
+          "max": 100.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "muhammara": "100 g Walnusskerne"
+        }
+      },
+      {
+        "ingredient": "semmelbroesel",
+        "total": {
+          "text": "40 g",
+          "value": 40.0,
+          "max": 40.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "muhammara": "40 g Semmelbrösel"
+        }
+      },
+      {
+        "ingredient": "oel",
+        "total": {
+          "text": "4–5 cm",
+          "value": 4.0,
+          "max": 5.0,
+          "unit": "cm",
+          "approx": false
+        },
+        "perTask": {
+          "sambousek-bi-jibneh": "4–5 cm neutralem Öl"
+        }
+      },
+      {
+        "ingredient": "pinienkerne",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "fatayer-bi-sabanekh": "2 EL geröstete Pinienkerne"
+        }
+      },
+      {
+        "ingredient": "kreuzkuemmel",
+        "total": {
+          "text": "1 Prise (+ TL ungemischt)",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Prise",
+          "approx": false
+        },
+        "perTask": {
+          "hummus": "1 Prise Kreuzkümmel"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "olivenoel",
+        "total": {
+          "text": "14–15 EL",
+          "value": 14.0,
+          "max": 15.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "hummus": "2 EL Olivenöl",
+          "moutabal": "1–2 EL Olivenöl",
+          "muhammara": "3 EL Olivenöl",
+          "labneh-mit-za-atar": "2 EL Olivenöl",
+          "fatayer-bi-sabanekh": "2 EL Olivenöl + 2 EL Olivenöl",
+          "dazu": "2 EL Olivenöl"
+        }
+      },
+      {
+        "ingredient": "zucker",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "fatayer-bi-sabanekh": "½ TL Zucker",
+          "sambousek-bi-jibneh": "½ TL Zucker"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "5½ TL",
+          "value": 5.5,
+          "max": 5.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "hummus": "1 TL Salz",
+          "moutabal": "½ TL Salz",
+          "muhammara": "½ TL Salz",
+          "labneh-mit-za-atar": "1 TL Salz",
+          "fatayer-bi-sabanekh": "½ TL Salz + 1 TL Salz",
+          "sambousek-bi-jibneh": "1 TL Salz"
+        }
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "1810 ml (+ EL ungemischt)",
+          "value": 1810.0,
+          "max": 1810.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "hummus": "1,5 L Wasser",
+          "fatayer-bi-sabanekh": "170 ml lauwarmes Wasser",
+          "sambousek-bi-jibneh": "140 ml warmes Wasser"
+        },
+        "unitMixed": true
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Aldi / REWE",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "auberginen",
+            "name": "große Auberginen",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "\\~700 g"
+          },
+          {
+            "ingredient": "spitzpaprika",
+            "name": "rote Spitzpaprika",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "Abkürzung: 1 Glas geröstete Paprika, \\~220 g Abtropfgewicht"
+          },
+          {
+            "ingredient": "zitronen",
+            "name": "Zitronen",
+            "need": {
+              "text": "6 EL (+ TL ungemischt)",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "6 EL",
+            "inStock": false,
+            "buy": {
+              "text": "4"
+            }
+          },
+          {
+            "ingredient": "knoblauch",
+            "name": "Knoblauch",
+            "need": {
+              "text": "3–4",
+              "value": 3.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3–4",
+            "inStock": false,
+            "buy": {
+              "text": "1 Knolle"
+            }
+          },
+          {
+            "ingredient": "zwiebeln",
+            "name": "Zwiebeln",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            }
+          },
+          {
+            "ingredient": "spinat",
+            "name": "Spinat, frisch",
+            "need": {
+              "text": "450 g",
+              "value": 450.0,
+              "max": 450.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "450 g",
+            "inStock": false,
+            "buy": {
+              "text": "450 g"
+            },
+            "note": "oder 300 g TK-Blattspinat"
+          },
+          {
+            "ingredient": "petersilie",
+            "name": "glatte Petersilie",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            }
+          },
+          {
+            "ingredient": "salatgurke",
+            "name": "Salatgurke",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "Rohkost zum Dippen"
+          },
+          {
+            "ingredient": "karotten",
+            "name": "Karotten",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            },
+            "note": "Rohkost zum Dippen"
+          },
+          {
+            "ingredient": "radieschen",
+            "name": "Radieschen",
+            "need": {
+              "text": "1 Bund",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Bund",
+              "approx": false
+            },
+            "display": "1 Bund",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            },
+            "note": "Rohkost zum Dippen"
+          },
+          {
+            "ingredient": "granatapfel",
+            "name": "Granatapfel",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "optional": true,
+            "note": "Kerne als Deko auf Moutabal/Muhammara"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "joghurt",
+            "name": "griechischer Joghurt",
+            "need": {
+              "text": "1000 g",
+              "value": 1000.0,
+              "max": 1000.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "1000 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 kg"
+            },
+            "note": "10 % Fett — wird zu \\~450–500 g Labneh"
+          },
+          {
+            "ingredient": "mozzarella",
+            "name": "Mozzarella, niedrigfeucht",
+            "need": {
+              "text": "330 g",
+              "value": 330.0,
+              "max": 330.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "330 g",
+            "inStock": false,
+            "buy": {
+              "text": "200 g"
+            },
+            "note": "Block oder gerieben"
+          },
+          {
+            "ingredient": "feta",
+            "name": "Feta",
+            "need": {
+              "text": "120 g",
+              "value": 120.0,
+              "max": 120.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "120 g",
+            "inStock": false,
+            "buy": {
+              "text": "125 g"
+            },
+            "note": "nur falls kein Akkawi/Hellim beschafft — Fallback-Käsemischung"
+          },
+          {
+            "ingredient": "butter",
+            "name": "Butter",
+            "need": {
+              "text": "70 g",
+              "value": 70.0,
+              "max": 70.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "70 g",
+            "inStock": false,
+            "buy": {
+              "text": "70 g"
+            },
+            "note": "Sambousek-Teig; alternativ 60 ml neutrales Öl"
+          },
+          {
+            "ingredient": "eier",
+            "name": "Ei",
+            "need": {
+              "text": "1 Eiweiß",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Eiweiß",
+              "approx": false
+            },
+            "display": "1 Eiweiß",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "Eiweiß in die Käsefüllung, Eigelb als Streiche auf die Fatayer"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "kichererbsen",
+            "name": "getrocknete Kichererbsen",
+            "need": {
+              "text": "200 g",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "200 g",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            },
+            "note": "Packung; Verbrauch 200 g — alternativ im Arabladen, falls dort gute Qualität"
+          },
+          {
+            "ingredient": "mehl",
+            "name": "Mehl, Weizen Type 550",
+            "need": {
+              "text": "600 g",
+              "value": 600.0,
+              "max": 600.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "600 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 kg"
+            },
+            "note": "Verbrauch 600 g für zwei Teige"
+          },
+          {
+            "ingredient": "trockenhefe",
+            "name": "Trockenhefe",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Päckchen"
+            }
+          },
+          {
+            "ingredient": "natron",
+            "name": "Natron",
+            "need": {
+              "text": "1¼ TL",
+              "value": 1.25,
+              "max": 1.25,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1¼ TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Päckchen"
+            }
+          },
+          {
+            "ingredient": "walnusskerne",
+            "name": "Walnusskerne",
+            "need": {
+              "text": "100 g",
+              "value": 100.0,
+              "max": 100.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "100 g",
+            "inStock": false,
+            "buy": {
+              "text": "100 g"
+            }
+          },
+          {
+            "ingredient": "semmelbroesel",
+            "name": "Semmelbrösel",
+            "need": {
+              "text": "40 g",
+              "value": 40.0,
+              "max": 40.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "40 g",
+            "inStock": false,
+            "note": "kleine Packung; Verbrauch \\~40 g; alternativ altbackenes Weißbrot"
+          },
+          {
+            "ingredient": "oel",
+            "name": "neutrales Öl",
+            "need": {
+              "text": "4–5 cm",
+              "value": 4.0,
+              "max": 5.0,
+              "unit": "cm",
+              "approx": false
+            },
+            "display": "4–5 cm",
+            "inStock": false,
+            "buy": {
+              "text": "1 L"
+            },
+            "note": "zum Frittieren"
+          },
+          {
+            "ingredient": "pinienkerne",
+            "name": "Pinienkerne",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "buy": {
+              "text": "30 g"
+            },
+            "optional": true,
+            "note": "Fatayer-Füllung"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "kreuzkuemmel",
+            "name": "Kreuzkümmel, gemahlen",
+            "need": {
+              "text": "1 Prise (+ TL ungemischt)",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            },
+            "display": "1 Prise",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "olivenoel",
+            "name": "Gutes Olivenöl",
+            "need": {
+              "text": "14–15 EL",
+              "value": 14.0,
+              "max": 15.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "14–15 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "Gesamtverbrauch \\~150 ml!"
+          },
+          {
+            "ingredient": "zucker",
+            "name": "Zucker",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "5½ TL",
+              "value": 5.5,
+              "max": 5.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "5½ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Pfeffer",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "1810 ml (+ EL ungemischt)",
+              "value": 1810.0,
+              "max": 1810.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "1810 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      },
+      {
+        "store": "Türkischer/arabischer Laden",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "tahina",
+            "name": "Tahina",
+            "need": {
+              "text": "200 g",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "200 g",
+            "inStock": false,
+            "note": "1 großes Glas, mind. 300 g; Verbrauch \\~200 g — libanesische/palästinensische Marke; Fallback: online bestellen, nicht die bittere Supermarkt-Tahina"
+          },
+          {
+            "ingredient": "granatapfelsirup",
+            "name": "Granatapfelsirup",
+            "need": {
+              "text": "1½ EL",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1½ EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Flasche"
+            },
+            "note": "Dibs rumman; Fallback: online — nicht ersetzbar"
+          },
+          {
+            "ingredient": "za",
+            "name": "Za'atar",
+            "need": {
+              "text": "1–2 TL",
+              "value": 1.0,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1–2 TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Packung"
+            },
+            "note": "Fallback: online"
+          },
+          {
+            "ingredient": "sumach",
+            "name": "Sumach",
+            "need": {
+              "text": "1½ EL",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1½ EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Packung"
+            },
+            "note": "Fallback: online"
+          },
+          {
+            "ingredient": "aleppo-pfeffer",
+            "name": "Aleppo-Pfeffer oder Pul biber",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Packung"
+            },
+            "note": "Fallback: online oder türkisches Regal im REWE"
+          },
+          {
+            "ingredient": "akkawi",
+            "name": "Akkawi in Salzlake",
+            "need": {
+              "text": "150 g",
+              "value": 150.0,
+              "max": 150.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "150 g",
+            "inStock": false,
+            "buy": {
+              "text": "\\~200 g"
+            },
+            "note": "Fallback: Hellim/Beyaz peynir; Komplett-Fallback REWE: Mozzarella + Feta, s. u."
+          },
+          {
+            "ingredient": "fladenbrote",
+            "name": "große arabische/libanesische Fladenbrote",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "3–4"
+            },
+            "note": "Fallback: türkisches Fladenbrot/Pide vom REWE"
+          },
+          {
+            "ingredient": "oliven",
+            "name": "Oliven, gemischt",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "200 g"
+            },
+            "note": "Fallback: REWE"
+          }
+        ]
+      }
+    ]
+  }
+}
