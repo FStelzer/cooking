@@ -1,0 +1,2490 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "technik/dunkle-bratensauce",
+  "kind": "dish",
+  "title": "Dunkle Bratensauce — Biergarten-Stil (ca. 400 ml)",
+  "status": "done",
+  "yields": {
+    "text": "ca. 400 ml",
+    "value": 400.0,
+    "unit": "ml"
+  },
+  "intro": "*Aktive Zeit \\~1,5 Std. (Vorrats-Fond) bzw. 25 Min. (Schnell), gesamt \\~2 Tage bzw. 25 Min. Equipment: 14-L-Topf, 2 Backbleche, weite Pfanne oder Sauteuse, feines Sieb + Passiertuch, Gefrierformen.*\n\n*Varianten: Weg = Vorrats-Fond | Schnell*\n\nDie fast schwarze Sauce, die in bayerischen Biergärten zu Semmelknödel und Spätzle\nkommt. Referenz: Biergarten-Besuch 08/2026 — Kind war begeistert.\n\nZwei Wege zum selben Ergebnis: ein **Vorrats-Fond** (einmal Aufwand, danach 10 Minuten\npro Mahlzeit) und eine **Schnellvariante mit Gastro-Konzentrat** (25 Minuten, ohne\nVorbereitung). Beide enden im selben Finish-Schritt.\n\n---",
+  "times": {
+    "text": "Aktive Zeit ~1,5 Std. (Vorrats-Fond) bzw. 25 Min. (Schnell), gesamt ~2 Tage",
+    "active": {
+      "typical": "PT1H30M",
+      "source": "1,5 Std."
+    },
+    "total": {
+      "typical": "P2D",
+      "source": "2 Tage"
+    }
+  },
+  "equipment": [
+    "14-L-Topf",
+    "2 Backbleche",
+    "weite Pfanne oder Sauteuse",
+    "feines Sieb + Passiertuch",
+    "Gefrierformen"
+  ],
+  "variants": [
+    {
+      "id": "weg",
+      "label": "Weg",
+      "choices": [
+        {
+          "id": "vorrats-fond",
+          "label": "Vorrats-Fond"
+        },
+        {
+          "id": "schnell",
+          "label": "Schnell"
+        }
+      ],
+      "default": "vorrats-fond"
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "schweineknochen",
+      "name": "Schweineknochen, gesägt, fleischig",
+      "store": "Selgros",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "3 kg"
+      },
+      "only": [
+        "weg=vorrats-fond"
+      ]
+    },
+    {
+      "id": "schweinefuss",
+      "name": "Schweinefuß, gespalten",
+      "store": "Selgros",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "1"
+      },
+      "optional": true,
+      "only": [
+        "weg=vorrats-fond"
+      ],
+      "note": "Gelatine"
+    },
+    {
+      "id": "schweineschwarte",
+      "name": "Schweineschwarte oder Bauchabschnitte",
+      "store": "Selgros",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "500 g"
+      },
+      "only": [
+        "weg=vorrats-fond"
+      ]
+    },
+    {
+      "id": "bratenfond-konzentrat",
+      "name": "Gebinde Bratenfond-Konzentrat",
+      "store": "Selgros",
+      "group": "Sonstiges",
+      "buy": {
+        "text": "1"
+      },
+      "only": [
+        "weg=schnell"
+      ]
+    },
+    {
+      "id": "zwiebeln",
+      "name": "Zwiebeln",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 kg"
+      }
+    },
+    {
+      "id": "karotten",
+      "name": "Karotten",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "250 g"
+      },
+      "only": [
+        "weg=vorrats-fond"
+      ]
+    },
+    {
+      "id": "knollensellerie",
+      "name": "kleine Knolle Knollensellerie",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "only": [
+        "weg=vorrats-fond"
+      ]
+    },
+    {
+      "id": "liebstoeckel",
+      "name": "Liebstöckel",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "optional": true,
+      "note": "1 Topf oder getrocknet"
+    },
+    {
+      "id": "butter",
+      "name": "Butter",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "250 g"
+      }
+    },
+    {
+      "id": "bier",
+      "name": "Dunkles Bier",
+      "store": "Aldi / REWE",
+      "group": "Getränke",
+      "buy": {
+        "text": "1 l"
+      },
+      "note": "Münchner Dunkel, 2 × 0,5 l"
+    },
+    {
+      "id": "tomatenmark",
+      "name": "Tube Tomatenmark",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1"
+      },
+      "pantry": true
+    },
+    {
+      "id": "butterschmalz",
+      "name": "Butterschmalz",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1 Glas"
+      },
+      "pantry": true
+    },
+    {
+      "id": "kuemmel",
+      "name": "Kümmel, ganz",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "1 kleines Glas"
+    },
+    {
+      "id": "majoran",
+      "name": "Majoran, getrocknet",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "1 kleines Glas"
+    },
+    {
+      "id": "lorbeerblaetter",
+      "name": "Lorbeerblätter",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "1 Packung"
+    },
+    {
+      "id": "pfefferkoerner",
+      "name": "Pfefferkörner",
+      "store": "Vorrat",
+      "pantry": true,
+      "only": [
+        "weg=vorrats-fond"
+      ]
+    },
+    {
+      "id": "oel",
+      "name": "Öl, neutral",
+      "store": "Vorrat",
+      "pantry": true,
+      "only": [
+        "weg=vorrats-fond"
+      ],
+      "note": "zum Einpinseln der Knochen"
+    },
+    {
+      "id": "zuckerruebensirup",
+      "name": "Zuckerrübensirup",
+      "store": "Vorrat",
+      "optional": true,
+      "pantry": true
+    },
+    {
+      "id": "senf",
+      "name": "Senf, mittelscharf",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "apfelessig",
+      "name": "Apfelessig",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "zum Abschmecken"
+    },
+    {
+      "id": "sojasauce",
+      "name": "Sojasauce",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "zum Abschmecken"
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "pfeffer",
+      "name": "Pfeffer",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Prinzip",
+      "level": 2,
+      "markdown": "Die Sauce hat vier Geschmacksträger. Wer einen davon wegoptimiert, bekommt\nKantinen-Bratensoße:\n\n1. **Röstaromen** — Maillard und Karamellisierung aus fast schwarz gerösteten\n   Zwiebeln, Knochen und Schwarte. Das ist der Hauptträger, *nicht* das Bier.\n2. **Fond / Gelatine** — gibt Körper und das Gefühl von Sauce statt Brühe.\n   Aus Knochen und Schwarte, oder ersatzweise aus dem Konzentrat.\n3. **Dunkles Bier** — Münchner Dunkel, malzig-brotig (z. B. Augustiner Dunkel,\n   Ayinger Altbairisch Dunkel, König Ludwig Dunkel — alle realistisch im REWE\n   Center). Beisteuer: Malzsüße und Tiefe.\n   Nicht Schwarzbier (ostdeutsch, deutlich röstiger/kaffeeartig) — das kippt\n   die Sauce ins Bittere.\n4. **Kümmel + Majoran** — macht die Sauce erst *bayerisch*. Ohne das ist es\n   eine beliebige braune Sauce.\n\n### Vier Regeln\n\n- **Die Farbe kommt aus der Röstung, nicht aus dem Bier.** Wer dunkle Farbe über\n  mehr Bier erzwingen will, bekommt Bitterkeit statt Schwärze. Röstet lieber\n  weiter, als sich richtig anfühlt — bis kurz vor verbrannt.\n- **Bier immer fast trocken einkochen, in mehreren kleinen Schüben.** Hopfenbitterstoffe\n  konzentrieren sich beim Reduzieren; in einem Schwung angegossen und dann lange\n  geköchelt wird die Sauce bitter. Drei Schübe à 50 ml schlagen einen Schub à 150 ml.\n- **Basis neutral halten, Gewürze ans Ende.** Kümmel und Majoran stundenlang mitkochen\n  → muffig-heuig. Der Vorrats-Fond bleibt deshalb ungewürzt; gewürzt wird erst im Finish.\n  Das macht denselben Fond auch für andere Saucen brauchbar.\n- **Nicht binden.** Die Biergarten-Optik (ungleichmäßig, Fettaugen, nicht homogen) ist\n  kein Fehler, sondern das Kennzeichen von echtem Bratensaft. Fertigsoße ist immer\n  glatt und glänzend gebunden. Wer bindet, macht die Sauce optisch zur Fertigsoße.\n\nDie Mini-Version derselben Saucen-Grammatik (Röstsatz → Reduktion → Montage) ist\nder Pfannensaucen-Drill in den [Mini-Projekten](/technik/mini-projekte.md) — dort\nkönnen die Fond-Würfel von hier die Brühe ersetzen.\n\n### Warum nicht einfach nur Konzentrat?\n\nDer Gastro-Standard (Knorr Professional Bratenjus pastös) ist als *alleinige* Basis\nschwach: an erster Stelle der Zutatenliste stehen pflanzliche Öle, Maltodextrin,\nStärke und Salz — echter Fond macht 5,7 % aus, die dunkle Farbe kommt zu einem\nguten Teil aus Karamellzuckersirup. Als Grundflüssigkeit ist es brauchbar, die\nRöstaromen muss man selbst beisteuern. Deshalb ist Variante B ein Hybrid und keine\nreine Tütensauce.\n\n---"
+    },
+    {
+      "type": "markdown",
+      "title": "Einmal ein halber Tag, danach dauerhaft ",
+      "level": "bold",
+      "markdown": "Einmal ein halber Tag, danach dauerhaft besser als jedes Konzentrat.\nPasst in den 14-L-Topf; der 6-L-Topf reicht nicht."
+    },
+    {
+      "type": "markdown",
+      "title": "Ausbeute",
+      "level": "bold",
+      "markdown": "**Ausbeute:** ca. 800 ml Reduktion → bei 60–75 ml pro Mahlzeit ca. 11–13 Mahlzeiten."
+    },
+    {
+      "type": "markdown",
+      "title": "*Zutaten:*",
+      "level": "bold",
+      "markdown": "*Zutaten:*"
+    },
+    {
+      "type": "markdown",
+      "title": "- 3 kg Schweineknochen, gesägt (Selgros)",
+      "level": "bold",
+      "markdown": "- 3 kg Schweineknochen, gesägt (Selgros) — **fleischige Knochen bevorzugen**:\n  Geschmack kommt aus dem Fleisch daran, Gelatine aus Knochen und Schwarte\n  (blanke Sandknochen = viel Körper, wenig Aroma)\n- optional 1 Schweinefuß, gespalten (Selgros) — der Gelatine-Turbo, mitrösten\n- 500 g Schweineschwarte oder Bauchabschnitte\n- 400 g Zwiebeln, mit Schale halbiert\n- 200 g Karotte, grob\n- 150 g Knollensellerie, grob\n- 40 g (2 EL) Tomatenmark\n- 500 ml dunkles Bier (Münchner Dunkel)\n- 20 g Butterschmalz (zum Anrösten des Gemüses)\n- 5 L kaltes Wasser\n- 2 Lorbeerblätter, 1 TL Pfefferkörner"
+    },
+    {
+      "type": "markdown",
+      "title": "**Kein Salz.** Der Fond wird auf rund ei",
+      "level": "bold",
+      "markdown": "**Kein Salz.** Der Fond wird auf rund ein Fünftel reduziert — gesalzen wird erst im Finish."
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "variante-a-vorrats-fond",
+          "name": "Variante A — Vorrats-Fond",
+          "steps": [
+            {
+              "id": "knochen-roesten",
+              "label": "1",
+              "heading": "**1. Knochen rösten (45–55 Min.)**",
+              "title": "Knochen rösten",
+              "duration": {
+                "min": "PT45M",
+                "max": "PT55M",
+                "source": "45–55 Min."
+              },
+              "text": "Ofen 220 °C Umluft. 3 kg Knochen und 500 g Schwarte (optional mit 1 Schweinefuß) dünn mit neutralem Öl einpinseln (bräunt gleichmäßiger, trocknet weniger aus) und\n**einlagig** auf zwei Bleche verteilen, zwei Ebenen, nach der Hälfte tauschen. 45–55 Min, nach 25 Min wenden. Ziel ist tiefbraun, an den Kanten fast schwarz. 3 kg auf ein Blech gequetscht dünsten statt zu rösten. Knochen dunkel ist gewollt — aber ausgetretenes Fett darf nicht verbrennen (kratzig-bitter), notfalls Blech wechseln.",
+              "action": "Ofen 220 °C Umluft.",
+              "timers": [
+                {
+                  "label": "Knochen rösten",
+                  "duration": {
+                    "min": "PT45M",
+                    "max": "PT55M"
+                  },
+                  "text": "45–55 Min"
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT25M",
+                    "source": "25 Min"
+                  },
+                  "text": "45–55 Min, nach 25 Min wenden."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ofen",
+                  "text": "220 °C",
+                  "value": 220
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "schweineknochen",
+                  "amount": {
+                    "text": "3 kg Knochen",
+                    "value": 3.0,
+                    "unit": "kg"
+                  }
+                },
+                {
+                  "ref": "schweineschwarte",
+                  "amount": {
+                    "text": "500 g Schwarte",
+                    "value": 500.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "schweinefuss",
+                  "amount": {
+                    "text": "1 Schweinefuß",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*nur Vorrats-Fond · jederzeit · Ofen 220 °C*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 220
+                }
+              ],
+              "only": [
+                "weg=vorrats-fond"
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "gemuese-roesten",
+              "label": "2",
+              "heading": "**2. Gemüse rösten (ca. 20 Min., parallel)**",
+              "title": "Gemüse rösten",
+              "duration": {
+                "typical": "PT20M",
+                "source": "ca. 20 Min.",
+                "estimated": true
+              },
+              "parallel": true,
+              "text": "Direkt im 14-L-Topf, parallel 400 g Zwiebeln, 200 g Karotte und 150 g Knollensellerie im Topf mit etwas Butterschmalz (20 g) anrösten, bis die Schnittflächen tief dunkelbraun sind. Dann 40 g (2 EL) Tomatenmark unterrühren und 1–2 Min mitrösten. → Auf Induktion **nicht auf voller Stufe**, ca. 2/3 und dafür länger: die Platte heizt ringförmig in der Bodenmitte, dort brennt Tomatenmark zuerst an. Regelmäßig umrühren. Bei dünnem Topfboden besser eine breite Pfanne nehmen und anschließend in den Topf umfüllen.",
+              "action": "Direkt im 14-L-Topf, parallel 400 g Zwiebeln, 200 g Karotte und 150 g Knollensellerie im Topf mit etwas Butterschmalz (20 g) anrösten, bis die Schnittflächen tief dunkelbraun sind.",
+              "limits": [
+                "nicht auf voller Stufe"
+              ],
+              "cues": [
+                "bis die Schnittflächen tief dunkelbraun sind"
+              ],
+              "timers": [
+                {
+                  "label": "Gemüse rösten",
+                  "duration": {
+                    "min": "PT1M",
+                    "max": "PT2M"
+                  },
+                  "text": "1–2 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "zwiebeln",
+                  "amount": {
+                    "text": "400 g Zwiebeln",
+                    "value": 400.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "karotten",
+                  "amount": {
+                    "text": "200 g Karotte",
+                    "value": 200.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "knollensellerie",
+                  "amount": {
+                    "text": "150 g Knollensellerie",
+                    "value": 150.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "tomatenmark",
+                  "amount": {
+                    "text": "40 g (2 EL) Tomatenmark",
+                    "value": 40.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "butterschmalz",
+                  "amount": {
+                    "text": "20 g",
+                    "value": 20.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nur Vorrats-Fond · jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "only": [
+                "weg=vorrats-fond"
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "abloeschen",
+              "label": "3",
+              "heading": "**3. Ablöschen (ca. 15 Min.)**",
+              "title": "Ablöschen",
+              "duration": {
+                "typical": "PT15M",
+                "source": "ca. 15 Min.",
+                "estimated": true
+              },
+              "text": "Mit 150 ml Bier ablöschen, den Bratensatz vom Topfboden lösen, fast trocken einkochen. Zweimal wiederholen (insgesamt 500 ml).",
+              "action": "Mit 150 ml Bier ablöschen, den Bratensatz vom Topfboden lösen, fast trocken einkochen.",
+              "ingredients": [
+                {
+                  "ref": "bier",
+                  "amount": {
+                    "text": "150 ml Bier",
+                    "value": 150.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*nur Vorrats-Fond · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "only": [
+                "weg=vorrats-fond"
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Ablöschen",
+                  "duration": {
+                    "typical": "PT15M"
+                  },
+                  "text": "ca. 15 Min."
+                }
+              ]
+            },
+            {
+              "id": "bleche-entfetten",
+              "label": "4",
+              "heading": "**4. Bleche entfetten (10 Min.)**",
+              "title": "Bleche entfetten",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Bleche entfetten, mit je ca. 100 ml **heißem** Wasser übergießen und 5 Min zurück in den Ofen. Danach löst sich der Satz mit dem Holzspatel fast von allein — Flüssigkeit in den Topf, Knochen und Schwarte hinterher. → Heißes Wasser statt kaltem Bier, damit emailliertes Blech keinen Thermoschock bekommt.\n**Bleche nicht auf die Induktionsplatte stellen:** zu dünn, oft nicht plan, koppeln schlecht und verziehen sich; Email kann abplatzen.",
+              "action": "Bleche entfetten, mit je ca.",
+              "timers": [
+                {
+                  "label": "Bleche entfetten",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "100 ml **heißem** Wasser",
+                    "value": 100.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*nur Vorrats-Fond · nach Knochen rösten*",
+              "only": [
+                "weg=vorrats-fond"
+              ],
+              "attention": "active",
+              "after": [
+                "step:knochen-roesten"
+              ]
+            },
+            {
+              "id": "ziehen",
+              "label": "5",
+              "heading": "**5. Ziehen (5–7 Std., passiv)**",
+              "title": "Ziehen",
+              "duration": {
+                "min": "PT5H",
+                "max": "PT7H",
+                "source": "5–7 Std."
+              },
+              "attention": "passive",
+              "text": "5 L kaltes Wasser dazu (mit 2 Lorbeerblättern und 1 TL Pfefferkörnern), langsam erhitzen. **Nicht kochen** — bei ca. 90 °C halten, sonst wird der Fond trüb und emulgiert das Fett ein. 5–7 Stunden (mehr schadet nicht). Anfangs aufsteigenden Schaum abschöpfen.",
+              "action": "5 L kaltes Wasser dazu (mit 2 Lorbeerblättern und 1 TL Pfefferkörnern), langsam erhitzen.",
+              "limits": [
+                "Nicht kochen"
+              ],
+              "timers": [
+                {
+                  "label": "Ziehen",
+                  "duration": {
+                    "min": "PT5M",
+                    "max": "PT7M"
+                  },
+                  "text": "5–7 Stunden"
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "90 °C",
+                  "value": 90
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "5 L kaltes Wasser",
+                    "value": 5.0,
+                    "unit": "l"
+                  }
+                },
+                {
+                  "ref": "lorbeerblaetter",
+                  "amount": {
+                    "text": "2 Lorbeerblättern",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "pfefferkoerner",
+                  "amount": {
+                    "text": "1 TL Pfefferkörnern",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*nur Vorrats-Fond · nach Bleche entfetten, Ablöschen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "only": [
+                "weg=vorrats-fond"
+              ],
+              "after": [
+                "step:bleche-entfetten",
+                "step:abloeschen"
+              ]
+            },
+            {
+              "id": "passieren",
+              "label": "6",
+              "heading": "**6. Passieren (ca. 30 Min.)**",
+              "title": "Passieren",
+              "duration": {
+                "typical": "PT30M",
+                "source": "ca. 30 Min.",
+                "estimated": true
+              },
+              "text": "Durch feines Sieb, dann durch Passiertuch. Topf im Spülbecken in kaltem Wasser auf lauwarm herunterkühlen (4 L heißer Fond gehören nicht heiß in den Kühlschrank), dann über Nacht kalt stellen.",
+              "action": "Durch feines Sieb, dann durch Passiertuch.",
+              "ingredients": [],
+              "meta": "*nur Vorrats-Fond*",
+              "only": [
+                "weg=vorrats-fond"
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "fett-abheben",
+              "label": "7",
+              "heading": "**7. Fett abheben (über Nacht, passiv)**",
+              "title": "Fett abheben",
+              "duration": {
+                "min": "PT8H",
+                "max": "PT14H",
+                "source": "über Nacht"
+              },
+              "attention": "passive",
+              "text": "Am nächsten Tag den festen Fettdeckel abheben. **Den Fettdeckel aufheben** (Schraubglas, Kühlschrank) — das ist geröstetes Schweineschmalz: fürs Fettaugen-Finish, Bratkartoffeln und die Röstzwiebeln unten.",
+              "action": "Am nächsten Tag den festen Fettdeckel abheben.",
+              "limits": [
+                "Den Fettdeckel aufheben"
+              ],
+              "ingredients": [],
+              "meta": "*nur Vorrats-Fond*",
+              "only": [
+                "weg=vorrats-fond"
+              ],
+              "timers": [
+                {
+                  "label": "Fett abheben",
+                  "duration": {
+                    "min": "PT8H",
+                    "max": "PT14H"
+                  },
+                  "text": "über Nacht"
+                }
+              ]
+            },
+            {
+              "id": "reduzieren",
+              "label": "8",
+              "heading": "**8. Reduzieren (ca. 1,5 Std.)**",
+              "title": "Reduzieren",
+              "duration": {
+                "typical": "PT1H30M",
+                "source": "ca. 1,5 Std.",
+                "estimated": true
+              },
+              "text": "Von ca. 4 L auf ca. 800 ml einkochen, offen und bei mittlerer Hitze. Für die letzten 500 ml in einen kleineren Topf umziehen, sonst brennt es an. Fertig, wenn es sirupartig ist und beim Erkalten fest geliert.",
+              "action": "Von ca.",
+              "ingredients": [],
+              "meta": "*nur Vorrats-Fond · Herd · fertig wenn es sirupartig ist und beim Erkalten fest geliert*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "endCondition": {
+                "type": "visual",
+                "text": "wenn es sirupartig ist und beim Erkalten fest geliert"
+              },
+              "only": [
+                "weg=vorrats-fond"
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Reduzieren",
+                  "duration": {
+                    "typical": "PT1H30M"
+                  },
+                  "text": "ca. 1,5 Std."
+                }
+              ]
+            },
+            {
+              "id": "portionieren",
+              "label": "9",
+              "heading": "**9. Portionieren (ca. 15 Min.)**",
+              "title": "Portionieren",
+              "duration": {
+                "typical": "PT15M",
+                "source": "ca. 15 Min.",
+                "estimated": true
+              },
+              "text": "In Gefrierformen einfrieren, dann in Beutel umfüllen. Haltbar ca. 6 Monate. Zielgröße pro Mahlzeit: **60–75 ml Reduktion.**\n- Standard-Eiswürfelform (\\~15 ml pro Mulde): 4–5 Würfel = 1 Mahlzeit.\n- Babybrei-Gefrierform (große Mulden, je nach Modell \\~50–75 ml):   **1 Mulde = 1 Mahlzeit** — die bequemste Lösung.\n- Muldenvolumen einmal bestimmen: eine Mulde mit Wasser füllen und abwiegen   (1 g ≈ 1 ml), Wert hier notieren: ___ ml.",
+              "action": "In Gefrierformen einfrieren, dann in Beutel umfüllen.",
+              "limits": [
+                "60–75 ml Reduktion.",
+                "1 Mulde = 1 Mahlzeit"
+              ],
+              "ingredients": [],
+              "meta": "*nur Vorrats-Fond*",
+              "only": [
+                "weg=vorrats-fond"
+              ],
+              "attention": "active"
+            }
+          ],
+          "heading": "### Variante A — Vorrats-Fond\n\n*nur Vorrats-Fond*",
+          "produces": [
+            {
+              "id": "variante-a-vorrats-fond",
+              "name": "Variante A — Vorrats-Fond"
+            }
+          ],
+          "only": [
+            "weg=vorrats-fond"
+          ]
+        },
+        {
+          "id": "aus-dem-vorrat-sauce-in-10-minuten",
+          "name": "Aus dem Vorrat: Sauce in 10 Minuten",
+          "steps": [
+            {
+              "id": "sterne-upgrade",
+              "label": "10",
+              "heading": "**10. Sterne-Upgrade (5 Min.)**",
+              "title": "Sterne-Upgrade",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Optionales Sterne-Upgrade (+5 Min): ½ Zwiebel in Ringen in 1 TL Schmalz oder Fond-Fett tief braun braten, mit \\~30 ml Bier ablöschen, fast trocken einkochen. Aufgewärmte Reduktion allein schmeckt immer einen Tick nach aufgewärmt — ein frisches Röstelement pro Mahlzeit nimmt ihr genau das. Zwiebeln drinlassen oder am Ende abpassieren.",
+              "action": "Optionales Sterne-Upgrade (+5 Min): ½ Zwiebel in Ringen in 1 TL Schmalz oder Fond-Fett tief braun braten, mit \\~30 ml Bier ablöschen, fast trocken einkochen.",
+              "timers": [
+                {
+                  "label": "Sterne-Upgrade",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "zwiebeln",
+                  "amount": {
+                    "text": "½ Zwiebel",
+                    "value": 0.5,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "butterschmalz",
+                  "amount": {
+                    "text": "1 TL Schmalz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "bier",
+                  "amount": {
+                    "text": "30 ml Bier",
+                    "value": 30.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*nur Vorrats-Fond · jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "only": [
+                "weg=vorrats-fond"
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "reduktion-erhitzen",
+              "label": "11",
+              "heading": "**11. Reduktion erhitzen (3 Min.)**",
+              "title": "Reduktion erhitzen",
+              "duration": {
+                "typical": "PT3M",
+                "source": "3 Min."
+              },
+              "text": "60–75 ml Reduktion (4–5 Eiswürfel bzw. 1 große Mulde) mit 200–250 ml Wasser erhitzen (ggf. direkt zu den Zwiebeln gießen).",
+              "action": "60–75 ml Reduktion (4–5 Eiswürfel bzw.",
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "200–250 ml Wasser",
+                    "value": 200.0,
+                    "unit": "ml",
+                    "max": 250.0
+                  }
+                }
+              ],
+              "meta": "*nur Vorrats-Fond · nach Portionieren · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "only": [
+                "weg=vorrats-fond"
+              ],
+              "attention": "active",
+              "after": [
+                "step:portionieren"
+              ]
+            },
+            {
+              "id": "gewuerze-ziehen",
+              "label": "12",
+              "heading": "**12. Gewürze ziehen (5–10 Min.)**",
+              "title": "Gewürze ziehen",
+              "duration": {
+                "min": "PT5M",
+                "max": "PT10M",
+                "source": "5–10 Min."
+              },
+              "text": "¼–½ TL Kümmel (gemörsert — löst sich in der Sauce, kein Passieren nötig), 1 TL Majoran und 1 Lorbeerblatt dazu, 5–10 Min bei kleiner Hitze ziehen lassen; optional 1 kleiner Zweig Liebstöckel mitziehen („Maggikraut\" — die unterschätzte Biergarten-Note; getrocknet nur eine Messerspitze). Lorbeer und Liebstöckel entfernen. Weiter mit dem Finish (unten).",
+              "action": "¼–½ TL Kümmel (gemörsert — löst sich in der Sauce, kein Passieren nötig), 1 TL Majoran und 1 Lorbeerblatt dazu, 5–10 Min bei kleiner Hitze ziehen lassen; optional 1 kleiner Zweig Liebstöckel mitziehen („Maggikraut\" — die unterschätzte Biergarten-Note; getrocknet nur eine Messerspitze).",
+              "timers": [
+                {
+                  "label": "Gewürze ziehen",
+                  "duration": {
+                    "min": "PT5M",
+                    "max": "PT10M"
+                  },
+                  "text": "5–10 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "kuemmel",
+                  "amount": {
+                    "text": "¼–½ TL Kümmel",
+                    "value": 0.25,
+                    "unit": "TL",
+                    "max": 0.5
+                  }
+                },
+                {
+                  "ref": "majoran",
+                  "amount": {
+                    "text": "1 TL Majoran",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "lorbeerblaetter",
+                  "amount": {
+                    "text": "1 Lorbeerblatt",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "liebstoeckel",
+                  "amount": {
+                    "text": "1 kleiner Zweig Liebstöckel",
+                    "value": 1.0,
+                    "unit": "Zweig"
+                  }
+                }
+              ],
+              "meta": "*nur Vorrats-Fond · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "only": [
+                "weg=vorrats-fond"
+              ],
+              "attention": "attended"
+            }
+          ],
+          "heading": "### Aus dem Vorrat: Sauce in 10 Minuten\n\n*nur Vorrats-Fond*",
+          "produces": [
+            {
+              "id": "aus-dem-vorrat-sauce-in-10-minuten",
+              "name": "Aus dem Vorrat: Sauce in 10 Minuten"
+            }
+          ],
+          "only": [
+            "weg=vorrats-fond"
+          ]
+        },
+        {
+          "id": "variante-b-schnellvariante-mit-konzentrat",
+          "name": "Variante B — Schnellvariante mit Konzentrat",
+          "steps": [
+            {
+              "id": "zwiebeln-roesten",
+              "label": "13",
+              "heading": "**13. Zwiebeln rösten (8–10 Min.)**",
+              "title": "Zwiebeln rösten",
+              "duration": {
+                "min": "PT8M",
+                "max": "PT10M",
+                "source": "8–10 Min."
+              },
+              "text": "20 g Butterschmalz in einer weiten Pfanne oder Sauteuse erhitzen. 250 g Zwiebeln mit der Schnittfläche nach unten einlegen, 8–10 Min bei mittlerer bis hoher Hitze braten, bis die Schnittflächen **tief dunkelbraun bis fast schwarz** sind. Die Schale bleibt dran — sie färbt mit.",
+              "action": "20 g Butterschmalz in einer weiten Pfanne oder Sauteuse erhitzen.",
+              "limits": [
+                "tief dunkelbraun bis fast schwarz"
+              ],
+              "cues": [
+                "bis die Schnittflächen"
+              ],
+              "timers": [
+                {
+                  "label": "Zwiebeln rösten",
+                  "duration": {
+                    "min": "PT8M",
+                    "max": "PT10M"
+                  },
+                  "text": "8–10 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "butterschmalz",
+                  "amount": {
+                    "text": "20 g Butterschmalz",
+                    "value": 20.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "zwiebeln",
+                  "amount": {
+                    "text": "250 g Zwiebeln",
+                    "value": 250.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nur Schnell · jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "only": [
+                "weg=schnell"
+              ],
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "tomatenmark-roesten",
+              "label": "14",
+              "heading": "**14. Tomatenmark rösten (1 Min.)**",
+              "title": "Tomatenmark rösten",
+              "duration": {
+                "typical": "PT1M",
+                "source": "1 Min."
+              },
+              "text": "15 g (1 EL) Tomatenmark dazu, 1 Min mitrösten bis es dunkel wird und nussig riecht.",
+              "action": "15 g (1 EL) Tomatenmark dazu, 1 Min mitrösten bis es dunkel wird und nussig riecht.",
+              "cues": [
+                "bis es dunkel wird und nussig riecht"
+              ],
+              "timers": [
+                {
+                  "label": "Tomatenmark rösten",
+                  "duration": {
+                    "typical": "PT1M"
+                  },
+                  "text": "1 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "tomatenmark",
+                  "amount": {
+                    "text": "15 g (1 EL) Tomatenmark",
+                    "value": 15.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nur Schnell · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "only": [
+                "weg=schnell"
+              ],
+              "attention": "attended"
+            },
+            {
+              "id": "bier-einkochen",
+              "label": "15",
+              "heading": "**15. Bier einkochen (ca. 8 Min.)**",
+              "title": "Bier einkochen",
+              "duration": {
+                "typical": "PT8M",
+                "source": "ca. 8 Min.",
+                "estimated": true
+              },
+              "text": "Mit 50 ml Bier ablöschen, fast vollständig einkochen. Zweimal wiederholen.",
+              "action": "Mit 50 ml Bier ablöschen, fast vollständig einkochen.",
+              "ingredients": [
+                {
+                  "ref": "bier",
+                  "amount": {
+                    "text": "50 ml Bier",
+                    "value": 50.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*nur Schnell · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "only": [
+                "weg=schnell"
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Bier einkochen",
+                  "duration": {
+                    "typical": "PT8M"
+                  },
+                  "text": "ca. 8 Min."
+                }
+              ]
+            },
+            {
+              "id": "fond-ziehen",
+              "label": "16",
+              "heading": "**16. Fond ziehen (10 Min.)**",
+              "title": "Fond ziehen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "400 ml Fond aus Konzentrat angießen, ½ TL Kümmel, 1 TL Majoran und 1 Lorbeerblatt dazu. 10 Min bei kleiner Hitze ziehen lassen.",
+              "action": "400 ml Fond aus Konzentrat angießen, ½ TL Kümmel, 1 TL Majoran und 1 Lorbeerblatt dazu.",
+              "timers": [
+                {
+                  "label": "Fond ziehen",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "kuemmel",
+                  "amount": {
+                    "text": "½ TL Kümmel",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "majoran",
+                  "amount": {
+                    "text": "1 TL Majoran",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "lorbeerblaetter",
+                  "amount": {
+                    "text": "1 Lorbeerblatt",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*nur Schnell · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "only": [
+                "weg=schnell"
+              ],
+              "attention": "attended"
+            },
+            {
+              "id": "sieben",
+              "label": "17",
+              "heading": "**17. Sieben (2 Min.)**",
+              "title": "Sieben",
+              "duration": {
+                "typical": "PT2M",
+                "source": "2 Min."
+              },
+              "text": "Durch ein Sieb passieren, Zwiebeln dabei gut ausdrücken.",
+              "action": "Durch ein Sieb passieren, Zwiebeln dabei gut ausdrücken.",
+              "ingredients": [],
+              "meta": "*nur Schnell*",
+              "only": [
+                "weg=schnell"
+              ],
+              "attention": "active"
+            }
+          ],
+          "heading": "### Variante B — Schnellvariante mit Konzentrat\n\n*nur Schnell*",
+          "produces": [
+            {
+              "id": "variante-b-schnellvariante-mit-konzentrat",
+              "name": "Variante B — Schnellvariante mit Konzentrat"
+            }
+          ],
+          "only": [
+            "weg=schnell"
+          ]
+        },
+        {
+          "id": "finish-beide-varianten",
+          "name": "Finish (beide Varianten)",
+          "steps": [
+            {
+              "id": "abschmecken",
+              "label": "18",
+              "heading": "**18. Abschmecken (ca. 3 Min.)**",
+              "title": "Abschmecken",
+              "duration": {
+                "typical": "PT3M",
+                "source": "ca. 3 Min.",
+                "estimated": true
+              },
+              "text": "Salz zurückhaltend, Pfeffer. Wenn es flach schmeckt, fehlt meist Salz oder Säure — 1 TL Apfelessig hebt die Sauce oft mehr als mehr Salz (Diagnose-Reihenfolge → [Abschmecken-Spickzettel](/technik/abschmecken.md)). Fehlt Tiefe statt Helligkeit: ein paar Tropfen Sojasauce (unterhalb der Erkennungsschwelle dosiert), optional dazu ½ TL mittelscharfer Senf — klassisch zur Schweinsbraten-Sauce.",
+              "action": "Salz zurückhaltend, Pfeffer.",
+              "rescue": "Wenn es flach schmeckt, fehlt meist Salz oder Säure — 1 TL Apfelessig hebt die Sauce oft mehr als mehr Salz (Diagnose-Reihenfolge → [Abschmecken-Spickzettel](/technik/abschmecken.md)).",
+              "ingredients": [
+                {
+                  "ref": "apfelessig",
+                  "amount": {
+                    "text": "1 TL Apfelessig",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "senf",
+                  "amount": {
+                    "text": "½ TL mittelscharfer Senf",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*nach Gewürze ziehen, Sieben*",
+              "attention": "active",
+              "after": [
+                "step:gewuerze-ziehen",
+                "step:sieben"
+              ]
+            },
+            {
+              "id": "butter",
+              "label": "19",
+              "heading": "**19. Butter (1 Min.)**",
+              "title": "Butter",
+              "duration": {
+                "typical": "PT1M",
+                "source": "1 Min."
+              },
+              "text": "Zwei Wege, bewusst wählen:\n- **Rund & glänzend:** vom Herd nehmen, 30 g eiskalte Butter in Stücken   einschwenken, nicht mehr kochen. Homogen-elegant — eher Wirtshaus als   Biergarten.\n- **Authentisch Biergarten:** nur 10–15 g Butter einschwenken und 1 TL vom   aufgehobenen Fond-Fett obenauf geben. Die Fettaugen aus der vierten Regel   entstehen nur so — 30 g montierte Butter emulgieren die Sauce glatt.",
+              "action": "Zwei Wege, bewusst wählen:\n- **Rund & glänzend:** vom Herd nehmen, 30 g eiskalte Butter in Stücken   einschwenken, nicht mehr kochen.",
+              "ingredients": [
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "30 g eiskalte Butter",
+                    "value": 30.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "10–15 g Butter",
+                    "value": 10.0,
+                    "unit": "g",
+                    "max": 15.0
+                  }
+                },
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "30 g montierte Butter",
+                    "value": 30.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "mehr-tiefe",
+              "label": "20",
+              "heading": "**20. Mehr Tiefe (ca. 5 Min.)**",
+              "title": "Mehr Tiefe",
+              "duration": {
+                "typical": "PT5M",
+                "source": "ca. 5 Min.",
+                "estimated": true
+              },
+              "text": "Optional für mehr Tiefe: 1 TL Zuckerrübensirup oder ein Stück Lebkuchen (5 g) mitziehen lassen.\n**Bewusst nicht gebunden.** Falls doch gewünscht: 1 TL Speisestärke in kaltem Wasser anrühren, einrühren, einmal aufkochen — dann aber vor dem Buttern.",
+              "action": "Optional für mehr Tiefe: 1 TL Zuckerrübensirup oder ein Stück Lebkuchen (5 g) mitziehen lassen.",
+              "limits": [
+                "Bewusst nicht gebunden."
+              ],
+              "ingredients": [
+                {
+                  "ref": "zuckerruebensirup",
+                  "amount": {
+                    "text": "1 TL Zuckerrübensirup",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "attention": "active"
+            }
+          ],
+          "heading": "### Finish (beide Varianten)",
+          "produces": [
+            {
+              "id": "finish-beide-varianten",
+              "name": "Finish (beide Varianten)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Dosierung",
+      "level": "bold",
+      "markdown": "**Dosierung:** 60–75 ml Reduktion + 200–250 ml Wasser = ca. 250–300 ml kräftige\nSauce für eine Mahlzeit (2 Erw. + 1 Kind). Mehr Wasser ergibt Brühen- statt\nSaucen-Stärke — lieber knapp anrühren und bei Bedarf verlängern."
+    },
+    {
+      "type": "markdown",
+      "title": "Hier kommen auch die Gewürze rein — der ",
+      "level": "bold",
+      "markdown": "Hier kommen auch die Gewürze rein — der Fond selbst ist bewusst neutral\n(Regel „Basis neutral halten, Gewürze ans Ende\")."
+    },
+    {
+      "type": "markdown",
+      "title": "25 Minuten, ergibt ca. 400 ml (2 Erwachs",
+      "level": "bold",
+      "markdown": "25 Minuten, ergibt ca. 400 ml (2 Erwachsene + 1 Kind)."
+    },
+    {
+      "type": "markdown",
+      "title": "*Zutaten:*",
+      "level": "bold",
+      "markdown": "*Zutaten:*"
+    },
+    {
+      "type": "markdown",
+      "title": "- 20 g Butterschmalz",
+      "level": "bold",
+      "markdown": "- 20 g Butterschmalz\n- 250 g Zwiebeln, mit Schale geviertelt\n- 15 g (1 EL) Tomatenmark\n- 150 ml dunkles Bier\n- 400 ml Fond aus Konzentrat — **nur ca. 60 % der Packungsdosierung ansetzen**\n- ½ TL Kümmel, ganz\n- 1 TL Majoran, getrocknet\n- 1 Lorbeerblatt\n- 30 g kalte Butter"
+    },
+    {
+      "type": "markdown",
+      "title": "Die Unterdosierung ist wichtig: Das Konz",
+      "level": "bold",
+      "markdown": "Die Unterdosierung ist wichtig: Das Konzentrat ist stark gesalzen, und die Sauce\nreduziert im Verlauf noch. Volle Packungsdosierung + Einkochen = ungenießbar salzig.\nNachsalzen kann man am Ende immer."
+    },
+    {
+      "type": "markdown",
+      "title": "Kind & Alkohol",
+      "level": 2,
+      "markdown": "150 ml Dunkles (5 % vol) entsprechen ca. 7,5 ml reinem Alkohol. Durch das dreifache\nFast-Trocken-Einkochen verdampft davon der allergrößte Teil — Alkohol (Siedepunkt\n78 °C) verdunstet aus der Mischung bevorzugt vor dem Wasser. Belastbare Zahlen für *diese* Zubereitung gibt es\nnicht: die häufig zitierte USDA-Tabelle zur Alkoholretention (nach 15 Min Köcheln noch\nca. 40 % des zugesetzten Alkohols) gilt für Schmoren *in* Flüssigkeit, nicht fürs\nReduzieren bis zur Trockenheit. Der Restwert liegt hier deutlich darunter, aber nicht\nbei null.\n\nWer es ganz vermeiden will: alkoholfreies Dunkles verwenden. Der Malzcharakter bleibt,\nweil er aus dem Röstmalz und nicht aus der Gärung kommt. Kümmel eventuell auf ¼ TL\nreduzieren — manche Kinder mögen die Note nicht; bei meinem Kind bisher ungetestet.\n\n---",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "todo",
+      "title": "Offene Punkte",
+      "items": [
+        {
+          "text": "**Konzentrat noch nicht ausgewählt.** Beim Selgros vor Ort prüfen, ob es echte Fonds im Glas gibt (z. B. Lacroix) statt nur pastöser Bratensaft-Mischungen. Der Qualitätsunterschied ist erheblich; ob das Sortiment sie führt, ist ungeprüft.",
+          "checked": false
+        },
+        {
+          "text": "**Reduktionsgrad Variante A** ist geschätzt. Beim ersten Batch die tatsächliche Ausbeute notieren und die ml-Dosierung pro Mahlzeit hier korrigieren.",
+          "checked": false
+        },
+        {
+          "text": "Ob die Gelatine reicht, zeigt der Geliertest nach dem Kühlen („Reduzieren“: fest gelieren). Falls zu schwach: nächstes Mal den optionalen Schweinefuß mitrösten — bringt mehr als längere Ziehzeit.",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen",
+      "level": 2,
+      "markdown": "- Zutatenliste Knorr Professional Bratenjus pastös:\n  [Unilever Food Solutions](https://www.unileverfoodsolutions.de/product/knorr-professional-bratenjus-pastoes-1-4-kg-4007801106593.html)\n- USDA Table of Nutrient Retention Factors (Alkoholretention beim Kochen)",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T19:16:07Z",
+    "sourceHash": "3f07b8f6b6e4bf9e",
+    "select": {
+      "weg": "vorrats-fond"
+    },
+    "quantities": [
+      {
+        "ingredient": "schweineknochen",
+        "total": {
+          "text": "3000 g",
+          "value": 3000.0,
+          "max": 3000.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "variante-a-vorrats-fond": "3 kg Knochen"
+        }
+      },
+      {
+        "ingredient": "schweinefuss",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "variante-a-vorrats-fond": "1 Schweinefuß"
+        }
+      },
+      {
+        "ingredient": "schweineschwarte",
+        "total": {
+          "text": "500 g",
+          "value": 500.0,
+          "max": 500.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "variante-a-vorrats-fond": "500 g Schwarte"
+        }
+      },
+      {
+        "ingredient": "zwiebeln",
+        "total": {
+          "text": "400 g (+ Stück ungemischt)",
+          "value": 400.0,
+          "max": 400.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "variante-a-vorrats-fond": "400 g Zwiebeln"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "karotten",
+        "total": {
+          "text": "200 g",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "variante-a-vorrats-fond": "200 g Karotte"
+        }
+      },
+      {
+        "ingredient": "knollensellerie",
+        "total": {
+          "text": "150 g",
+          "value": 150.0,
+          "max": 150.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "variante-a-vorrats-fond": "150 g Knollensellerie"
+        }
+      },
+      {
+        "ingredient": "liebstoeckel",
+        "total": {
+          "text": "1 Zweig",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Zweig",
+          "approx": false
+        },
+        "perTask": {
+          "aus-dem-vorrat-sauce-in-10-minuten": "1 kleiner Zweig Liebstöckel"
+        }
+      },
+      {
+        "ingredient": "butter",
+        "total": {
+          "text": "70–75 g",
+          "value": 70.0,
+          "max": 75.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "finish-beide-varianten": "30 g eiskalte Butter + 10–15 g Butter + 30 g montierte Butter"
+        }
+      },
+      {
+        "ingredient": "bier",
+        "total": {
+          "text": "180 ml",
+          "value": 180.0,
+          "max": 180.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "variante-a-vorrats-fond": "150 ml Bier",
+          "aus-dem-vorrat-sauce-in-10-minuten": "30 ml Bier"
+        }
+      },
+      {
+        "ingredient": "tomatenmark",
+        "total": {
+          "text": "40 g",
+          "value": 40.0,
+          "max": 40.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "variante-a-vorrats-fond": "40 g (2 EL) Tomatenmark"
+        }
+      },
+      {
+        "ingredient": "butterschmalz",
+        "total": {
+          "text": "20 g (+ TL ungemischt)",
+          "value": 20.0,
+          "max": 20.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "variante-a-vorrats-fond": "20 g"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "kuemmel",
+        "total": {
+          "text": "¼–½ TL",
+          "value": 0.25,
+          "max": 0.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "aus-dem-vorrat-sauce-in-10-minuten": "¼–½ TL Kümmel"
+        }
+      },
+      {
+        "ingredient": "majoran",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "aus-dem-vorrat-sauce-in-10-minuten": "1 TL Majoran"
+        }
+      },
+      {
+        "ingredient": "lorbeerblaetter",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "variante-a-vorrats-fond": "2 Lorbeerblättern",
+          "aus-dem-vorrat-sauce-in-10-minuten": "1 Lorbeerblatt"
+        }
+      },
+      {
+        "ingredient": "pfefferkoerner",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "variante-a-vorrats-fond": "1 TL Pfefferkörnern"
+        }
+      },
+      {
+        "ingredient": "oel",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "zuckerruebensirup",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "finish-beide-varianten": "1 TL Zuckerrübensirup"
+        }
+      },
+      {
+        "ingredient": "senf",
+        "total": {
+          "text": "½ TL",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "finish-beide-varianten": "½ TL mittelscharfer Senf"
+        }
+      },
+      {
+        "ingredient": "apfelessig",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "finish-beide-varianten": "1 TL Apfelessig"
+        }
+      },
+      {
+        "ingredient": "sojasauce",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "5300–5350 ml",
+          "value": 5300.0,
+          "max": 5350.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "variante-a-vorrats-fond": "100 ml **heißem** Wasser + 5 L kaltes Wasser",
+          "aus-dem-vorrat-sauce-in-10-minuten": "200–250 ml Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Selgros",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "schweineknochen",
+            "name": "Schweineknochen, gesägt, fleischig",
+            "need": {
+              "text": "3000 g",
+              "value": 3000.0,
+              "max": 3000.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "3000 g",
+            "inStock": false,
+            "buy": {
+              "text": "3 kg"
+            }
+          },
+          {
+            "ingredient": "schweinefuss",
+            "name": "Schweinefuß, gespalten",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "optional": true,
+            "note": "Gelatine"
+          },
+          {
+            "ingredient": "schweineschwarte",
+            "name": "Schweineschwarte oder Bauchabschnitte",
+            "need": {
+              "text": "500 g",
+              "value": 500.0,
+              "max": 500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "500 g",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            }
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "zwiebeln",
+            "name": "Zwiebeln",
+            "need": {
+              "text": "400 g (+ Stück ungemischt)",
+              "value": 400.0,
+              "max": 400.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "400 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 kg"
+            }
+          },
+          {
+            "ingredient": "karotten",
+            "name": "Karotten",
+            "need": {
+              "text": "200 g",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "200 g",
+            "inStock": false,
+            "buy": {
+              "text": "250 g"
+            }
+          },
+          {
+            "ingredient": "knollensellerie",
+            "name": "kleine Knolle Knollensellerie",
+            "need": {
+              "text": "150 g",
+              "value": 150.0,
+              "max": 150.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "150 g",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            }
+          },
+          {
+            "ingredient": "liebstoeckel",
+            "name": "Liebstöckel",
+            "need": {
+              "text": "1 Zweig",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Zweig",
+              "approx": false
+            },
+            "display": "1 Zweig",
+            "inStock": false,
+            "optional": true,
+            "note": "1 Topf oder getrocknet"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "butter",
+            "name": "Butter",
+            "need": {
+              "text": "70–75 g",
+              "value": 70.0,
+              "max": 75.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "70–75 g",
+            "inStock": false,
+            "buy": {
+              "text": "250 g"
+            }
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Getränke",
+        "items": [
+          {
+            "ingredient": "bier",
+            "name": "Dunkles Bier",
+            "need": {
+              "text": "180 ml",
+              "value": 180.0,
+              "max": 180.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "180 ml",
+            "inStock": false,
+            "buy": {
+              "text": "1 l"
+            },
+            "note": "Münchner Dunkel, 2 × 0,5 l"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "tomatenmark",
+            "name": "Tube Tomatenmark",
+            "need": {
+              "text": "40 g",
+              "value": 40.0,
+              "max": 40.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "40 g",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "butterschmalz",
+            "name": "Butterschmalz",
+            "need": {
+              "text": "20 g (+ TL ungemischt)",
+              "value": 20.0,
+              "max": 20.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "20 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 Glas"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "kuemmel",
+            "name": "Kümmel, ganz",
+            "need": {
+              "text": "¼–½ TL",
+              "value": 0.25,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "¼–½ TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "1 kleines Glas"
+          },
+          {
+            "ingredient": "majoran",
+            "name": "Majoran, getrocknet",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "1 kleines Glas"
+          },
+          {
+            "ingredient": "lorbeerblaetter",
+            "name": "Lorbeerblätter",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "pantry": true,
+            "note": "1 Packung"
+          },
+          {
+            "ingredient": "pfefferkoerner",
+            "name": "Pfefferkörner",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "oel",
+            "name": "Öl, neutral",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true,
+            "note": "zum Einpinseln der Knochen"
+          },
+          {
+            "ingredient": "zuckerruebensirup",
+            "name": "Zuckerrübensirup",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "optional": true,
+            "pantry": true
+          },
+          {
+            "ingredient": "senf",
+            "name": "Senf, mittelscharf",
+            "need": {
+              "text": "½ TL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "½ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "apfelessig",
+            "name": "Apfelessig",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "zum Abschmecken"
+          },
+          {
+            "ingredient": "sojasauce",
+            "name": "Sojasauce",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true,
+            "note": "zum Abschmecken"
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Pfeffer",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "5300–5350 ml",
+              "value": 5300.0,
+              "max": 5350.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "5300–5350 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "key": "weg=schnell",
+        "select": {
+          "weg": "schnell"
+        },
+        "quantities": [
+          {
+            "ingredient": "bratenfond-konzentrat",
+            "total": {
+              "text": ""
+            },
+            "perTask": {}
+          },
+          {
+            "ingredient": "zwiebeln",
+            "total": {
+              "text": "250 g",
+              "value": 250.0,
+              "max": 250.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "variante-b-schnellvariante-mit-konzentrat": "250 g Zwiebeln"
+            }
+          },
+          {
+            "ingredient": "liebstoeckel",
+            "total": {
+              "text": ""
+            },
+            "perTask": {}
+          },
+          {
+            "ingredient": "butter",
+            "total": {
+              "text": "70–75 g",
+              "value": 70.0,
+              "max": 75.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "finish-beide-varianten": "30 g eiskalte Butter + 10–15 g Butter + 30 g montierte Butter"
+            }
+          },
+          {
+            "ingredient": "bier",
+            "total": {
+              "text": "50 ml",
+              "value": 50.0,
+              "max": 50.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "perTask": {
+              "variante-b-schnellvariante-mit-konzentrat": "50 ml Bier"
+            }
+          },
+          {
+            "ingredient": "tomatenmark",
+            "total": {
+              "text": "15 g",
+              "value": 15.0,
+              "max": 15.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "variante-b-schnellvariante-mit-konzentrat": "15 g (1 EL) Tomatenmark"
+            }
+          },
+          {
+            "ingredient": "butterschmalz",
+            "total": {
+              "text": "20 g",
+              "value": 20.0,
+              "max": 20.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "variante-b-schnellvariante-mit-konzentrat": "20 g Butterschmalz"
+            }
+          },
+          {
+            "ingredient": "kuemmel",
+            "total": {
+              "text": "½ TL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "variante-b-schnellvariante-mit-konzentrat": "½ TL Kümmel"
+            }
+          },
+          {
+            "ingredient": "majoran",
+            "total": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "variante-b-schnellvariante-mit-konzentrat": "1 TL Majoran"
+            }
+          },
+          {
+            "ingredient": "lorbeerblaetter",
+            "total": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "variante-b-schnellvariante-mit-konzentrat": "1 Lorbeerblatt"
+            }
+          },
+          {
+            "ingredient": "zuckerruebensirup",
+            "total": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "finish-beide-varianten": "1 TL Zuckerrübensirup"
+            }
+          },
+          {
+            "ingredient": "senf",
+            "total": {
+              "text": "½ TL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "finish-beide-varianten": "½ TL mittelscharfer Senf"
+            }
+          },
+          {
+            "ingredient": "apfelessig",
+            "total": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "finish-beide-varianten": "1 TL Apfelessig"
+            }
+          },
+          {
+            "ingredient": "sojasauce",
+            "total": {
+              "text": ""
+            },
+            "perTask": {}
+          },
+          {
+            "ingredient": "salz",
+            "total": {
+              "text": ""
+            },
+            "perTask": {}
+          },
+          {
+            "ingredient": "pfeffer",
+            "total": {
+              "text": ""
+            },
+            "perTask": {}
+          },
+          {
+            "ingredient": "wasser",
+            "total": {
+              "text": ""
+            },
+            "perTask": {}
+          }
+        ],
+        "shopping": [
+          {
+            "store": "Selgros",
+            "group": "Sonstiges",
+            "items": [
+              {
+                "ingredient": "bratenfond-konzentrat",
+                "name": "Gebinde Bratenfond-Konzentrat",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                }
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Obst & Gemüse",
+            "items": [
+              {
+                "ingredient": "zwiebeln",
+                "name": "Zwiebeln",
+                "need": {
+                  "text": "250 g",
+                  "value": 250.0,
+                  "max": 250.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "250 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 kg"
+                }
+              },
+              {
+                "ingredient": "liebstoeckel",
+                "name": "Liebstöckel",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "optional": true,
+                "note": "1 Topf oder getrocknet"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Milchprodukte & Eier",
+            "items": [
+              {
+                "ingredient": "butter",
+                "name": "Butter",
+                "need": {
+                  "text": "70–75 g",
+                  "value": 70.0,
+                  "max": 75.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "70–75 g",
+                "inStock": false,
+                "buy": {
+                  "text": "250 g"
+                }
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Getränke",
+            "items": [
+              {
+                "ingredient": "bier",
+                "name": "Dunkles Bier",
+                "need": {
+                  "text": "50 ml",
+                  "value": 50.0,
+                  "max": 50.0,
+                  "unit": "ml",
+                  "approx": false
+                },
+                "display": "50 ml",
+                "inStock": false,
+                "buy": {
+                  "text": "1 l"
+                },
+                "note": "Münchner Dunkel, 2 × 0,5 l"
+              }
+            ]
+          },
+          {
+            "store": "Vorrat",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "tomatenmark",
+                "name": "Tube Tomatenmark",
+                "need": {
+                  "text": "15 g",
+                  "value": 15.0,
+                  "max": 15.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "15 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                },
+                "pantry": true
+              },
+              {
+                "ingredient": "butterschmalz",
+                "name": "Butterschmalz",
+                "need": {
+                  "text": "20 g",
+                  "value": 20.0,
+                  "max": 20.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "20 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Glas"
+                },
+                "pantry": true
+              },
+              {
+                "ingredient": "kuemmel",
+                "name": "Kümmel, ganz",
+                "need": {
+                  "text": "½ TL",
+                  "value": 0.5,
+                  "max": 0.5,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "½ TL",
+                "inStock": false,
+                "pantry": true,
+                "note": "1 kleines Glas"
+              },
+              {
+                "ingredient": "majoran",
+                "name": "Majoran, getrocknet",
+                "need": {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "1 TL",
+                "inStock": false,
+                "pantry": true,
+                "note": "1 kleines Glas"
+              },
+              {
+                "ingredient": "lorbeerblaetter",
+                "name": "Lorbeerblätter",
+                "need": {
+                  "text": "1",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "1",
+                "inStock": false,
+                "pantry": true,
+                "note": "1 Packung"
+              },
+              {
+                "ingredient": "zuckerruebensirup",
+                "name": "Zuckerrübensirup",
+                "need": {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "1 TL",
+                "inStock": false,
+                "optional": true,
+                "pantry": true
+              },
+              {
+                "ingredient": "senf",
+                "name": "Senf, mittelscharf",
+                "need": {
+                  "text": "½ TL",
+                  "value": 0.5,
+                  "max": 0.5,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "½ TL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "apfelessig",
+                "name": "Apfelessig",
+                "need": {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "1 TL",
+                "inStock": false,
+                "pantry": true,
+                "note": "zum Abschmecken"
+              },
+              {
+                "ingredient": "sojasauce",
+                "name": "Sojasauce",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "pantry": true,
+                "note": "zum Abschmecken"
+              },
+              {
+                "ingredient": "salz",
+                "name": "Salz",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "pfeffer",
+                "name": "Pfeffer",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "wasser",
+                "name": "Wasser",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "pantry": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

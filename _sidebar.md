@@ -38,7 +38,7 @@
   - [Tandoori-Hähnchen vom Gasgrill mit Dal tadka & Baingan bharta (4 Portionen)](/schwangerschaft/tandoori-haehnchen.md)
 - **technik**
   - [Abschmecken & Retten — Spickzettel](/technik/abschmecken.md)
-  - [Dunkle Bratensauce (Biergarten-Stil)](/technik/dunkle-bratensauce.md)
+  - [Dunkle Bratensauce — Biergarten-Stil (ca. 400 ml)](/technik/dunkle-bratensauce.md)
   - [Frittieren — Spickzettel](/technik/frittieren.md)
   - [Garpunkte & Kerntemperaturen — Spickzettel](/technik/garpunkte.md)
   - [Mini-Projekte — Grundlagen-Drills für unter der Woche](/technik/mini-projekte.md)

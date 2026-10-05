@@ -203,6 +203,13 @@
   "cooked": false
  },
  {
+  "path": "../technik/dunkle-bratensauce.json",
+  "title": "Dunkle Bratensauce — Biergarten-Stil (ca. 400 ml)",
+  "group": "technik",
+  "wip": false,
+  "cooked": false
+ },
+ {
   "path": "../technik/pfannkuchen-fluffig.json",
   "title": "Fluffige Eierpfannkuchen — Buttermilch + Eischnee (10–12 Stück)",
   "group": "technik",
