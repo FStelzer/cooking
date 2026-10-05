@@ -1,11 +1,13 @@
-# Fluffige Eierpfannkuchen (Buttermilch + Eischnee)
+# Fluffige Eierpfannkuchen — Buttermilch + Eischnee (10–12 Stück)
+
+*Aktive Zeit \~30 Min., gesamt \~45 Min. Equipment: beschichtete Pfanne mit Deckel, Handmixer, Teigschaber.*
 
 Extra dicke, hohe Pfannkuchen — Buttermilch-Teig mit untergehobenem Eischnee,
 in der Pfanne mit Deckel gebacken. Erprobt, Basisrezept steht; Rückmeldung
 bisher: man schmeckt das Ei deutlich (gewollt — wer das nicht will, siehe
 Variante unten).
 
-**Ergibt:** ca. 10–12 Stück (Ø ~10 cm) — reichlich für 2 Erwachsene + 1 Kind.
+**Ergibt:** ca. 10–12 Stück (Ø \~10 cm) — reichlich für 2 Erwachsene + 1 Kind.
 
 ---
 
@@ -28,37 +30,60 @@ Pfannkuchen dick UND durchgebacken.
 - **Zu viel gerührt beim Zusammenführen:** entwickelt Gluten → zäh statt
   fluffig. Kleine Klümpchen sind gewollt.
 
-## Zutaten
+## Einkaufsliste
 
-- 300 g Weizenmehl Type 405
-- 2 TL Backpulver
-- 2 EL Zucker
-- ½ TL Salz
-- 4 Eier (Größe L), getrennt
-- 400 ml Buttermilch
-- 50 g Butter, geschmolzen (plus 30 g Butter zum Braten)
-- 1 Prise Salz für den Eischnee
+### Aldi / REWE
+
+**Milchprodukte & Eier:**
+- [ ] 4 Eier *(Größe L)*
+- [ ] 400 ml Buttermilch
+- [ ] 80 g Butter *(50 g geschmolzen für den Teig, 30 g zum Braten)*
+
+### Vorrat prüfen
+
+- [ ] 300 g Mehl, Weizen Type 405
+- [ ] 2 TL Backpulver
+- [ ] 2 EL Zucker
+- [ ] Salz *(½ TL und 1 Prise für den Eischnee)*
 
 ## Zubereitung
 
-1. **Trockenes mischen:** 300 g Mehl, 2 TL Backpulver, 2 EL Zucker und ½ TL
-   Salz gründlich verrühren, damit das Backpulver gleichmäßig verteilt ist.
-2. **Nasses verrühren:** 4 Eigelbe mit 400 ml Buttermilch und 50 g
-   geschmolzener, leicht abgekühlter Butter glatt verquirlen.
-3. **Zusammenführen:** Flüssiges zum Mehl geben und nur so lange rühren, bis
-   keine großen Mehlnester mehr da sind — kleine Klümpchen bleiben drin.
-4. **Ruhen lassen:** Abgedeckt 10–15 Min. Das Mehl quillt, der Teig wird
-   dicker und lässt sich besser hoch aufhäufen.
-5. **Eischnee unterheben:** 4 Eiweiße mit 1 Prise Salz steif schlagen. Ein
-   Drittel kräftig unter den Teig rühren (lockert an), den Rest vorsichtig
-   mit dem Teigschaber unterheben.
-6. **Erste Seite:** Etwas von den 30 g Butter in einer beschichteten Pfanne
-   bei mittlerer bis niedriger Hitze schmelzen. Pro Pfannkuchen 1 gehäufte
-   Kelle Teig einfüllen, **nicht verstreichen**. Deckel auflegen und ca.
-   3–4 Min backen, bis die Oberfläche matt ist und Bläschen aufsteigen.
-7. **Zweite Seite:** Wenden, mit Deckel weitere 2–3 Min, bis der Pfannkuchen
-   sich beim Andrücken federnd anfühlt. Rest genauso, zwischendurch Butter
-   nachgeben. Fertige Stücke bei 90 °C im Ofen warm halten.
+**1. Trockenes mischen (3 Min.)**
+*jederzeit*
+300 g Mehl, 2 TL Backpulver, 2 EL Zucker und ½ TL
+Salz gründlich verrühren, damit das Backpulver gleichmäßig verteilt ist.
+
+**2. Nasses verrühren (5 Min.)**
+*jederzeit*
+4 Eier (Größe L) trennen. Die 4 Eigelbe mit 400 ml Buttermilch und 50 g
+geschmolzener, leicht abgekühlter Butter glatt verquirlen.
+
+**3. Zusammenführen (2 Min.)**
+*nach Trockenes mischen, Nasses verrühren*
+Flüssiges zum Mehl geben und nur so lange rühren, bis
+keine großen Mehlnester mehr da sind — kleine Klümpchen bleiben drin.
+
+**4. Ruhen lassen (10–15 Min., passiv)**
+Abgedeckt 10–15 Min. Das Mehl quillt, der Teig wird
+dicker und lässt sich besser hoch aufhäufen.
+
+**5. Eischnee unterheben (5 Min.)**
+Die 4 Eiweiße mit 1 Prise Salz steif schlagen. Ein
+Drittel kräftig unter den Teig rühren (lockert an), den Rest vorsichtig
+mit dem Teigschaber unterheben.
+
+**6. Erste Seite (3–4 Min.)**
+*Herd*
+Etwas von den 30 g Butter in einer beschichteten Pfanne
+bei mittlerer bis niedriger Hitze schmelzen. Pro Pfannkuchen 1 gehäufte
+Kelle Teig einfüllen, **nicht verstreichen**. Deckel auflegen und ca.
+3–4 Min backen, bis die Oberfläche matt ist und Bläschen aufsteigen.
+
+**7. Zweite Seite (2–3 Min.)**
+*Herd*
+Wenden, mit Deckel weitere 2–3 Min, bis der Pfannkuchen
+sich beim Andrücken federnd anfühlt. Rest genauso, zwischendurch Butter
+nachgeben. Fertige Stücke bei 90 °C im Ofen warm halten.
 
 ## Varianten
 
@@ -89,4 +114,4 @@ Unproblematisch — mild, süß, Ei mag er. Ohne Anpassung servierbar.
 ## Beschaffung
 
 Alles Aldi/REWE-Standard (Mehl, Buttermilch, Eier, Butter). Keine
-Engpass-Artikel, keine eigene Einkaufsliste nötig.
+Engpass-Artikel.

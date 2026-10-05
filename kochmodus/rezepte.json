@@ -201,5 +201,12 @@
   "group": "schwangerschaft",
   "wip": false,
   "cooked": false
+ },
+ {
+  "path": "../technik/pfannkuchen-fluffig.json",
+  "title": "Fluffige Eierpfannkuchen — Buttermilch + Eischnee (10–12 Stück)",
+  "group": "technik",
+  "wip": false,
+  "cooked": false
  }
 ]

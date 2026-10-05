@@ -35,7 +35,7 @@ tasks:
   build:
     desc: Rezeptformat — Markdown nach REZEPTFORMAT.md → JSON daneben (alle Rezepte mit JSON, oder CLI_ARGS)
     cmds:
-      - python3 -m tools.recipes.cli build {{if .CLI_ARGS}}{{.CLI_ARGS}}{{else}}$(ls {gerichte,menues,desserts,backen,eis,schwangerschaft}/*.json 2>/dev/null | sed 's/\.json$/.md/'){{end}}
+      - python3 -m tools.recipes.cli build {{if .CLI_ARGS}}{{.CLI_ARGS}}{{else}}$(ls {gerichte,menues,desserts,backen,eis,schwangerschaft,technik}/*.json 2>/dev/null | sed 's/\.json$/.md/'){{end}}
       - python3 -m tools.recipes.site index
       - python3 -m tools.recipes.site sw
 
@@ -43,8 +43,8 @@ tasks:
     desc: Rezeptformat — Parser-Tests, Checks A–L gegen alle gebauten JSONs, JSON/Sidebar/Learnings aktuell? (Pre-Commit-Gate, s. task hooks)
     cmds:
       - python3 tools/test_parse.py
-      - python3 -m tools.recipes.cli check $(ls {gerichte,menues,desserts,backen,eis,schwangerschaft}/*.json 2>/dev/null)
-      - python3 -m tools.recipes.cli build --check $(ls {gerichte,menues,desserts,backen,eis,schwangerschaft}/*.json 2>/dev/null | sed 's/\.json$/.md/')
+      - python3 -m tools.recipes.cli check $(ls {gerichte,menues,desserts,backen,eis,schwangerschaft,technik}/*.json 2>/dev/null)
+      - python3 -m tools.recipes.cli build --check $(ls {gerichte,menues,desserts,backen,eis,schwangerschaft,technik}/*.json 2>/dev/null | sed 's/\.json$/.md/')
       - python3 -m tools.recipes.site sidebar --check
       - python3 -m tools.recipes.site learnings --check
       - python3 -m tools.recipes.site index --check
