@@ -42,6 +42,13 @@
   "cooked": true
  },
  {
+  "path": "../gerichte/cochinita-pibil.json",
+  "title": "Cochinita Pibil — Schweineschulter in Achiote-Orangen-Marinade (4 Portionen + Reste)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": false
+ },
+ {
   "path": "../gerichte/hummerbisque.json",
   "title": "Hummerbisque (4 Portionen als Vorspeise)",
   "group": "gerichte",
