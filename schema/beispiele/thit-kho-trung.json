@@ -6,212 +6,1137 @@
   "title": "Thịt kho trứng — vietnamesisches Karamell-Schweinefleisch mit Eiern (4 Portionen)",
   "status": "done",
   "intro": "*Aktive Zeit ~30 Min., gesamt ~2–2,5 Std. Equipment: schwerer Topf oder tiefe Pfanne mit Deckel, kleiner Topf zum Eierkochen.*",
-  "yields": { "text": "4 Portionen", "value": 4, "unit": "Portionen" },
+  "yields": {
+    "text": "4 Portionen",
+    "value": 4,
+    "unit": "Portionen"
+  },
   "times": {
     "text": "Aktive Zeit ~30 Min., gesamt ~2–2,5 Std.",
-    "active": { "typical": "PT30M", "source": "~30 Min." },
-    "total": { "min": "PT2H", "max": "PT2H30M", "source": "~2–2,5 Std." }
+    "active": {
+      "typical": "PT30M",
+      "source": "~30 Min."
+    },
+    "total": {
+      "min": "PT2H",
+      "max": "PT2H30M",
+      "source": "~2–2,5 Std."
+    }
   },
-  "equipment": ["schwerer Topf oder tiefe Pfanne mit Deckel", "kleiner Topf zum Eierkochen"],
-
-  "ingredients": [
-    { "id": "schweinebauch", "name": "Schweinebauch am Stück", "store": "REWE Center", "group": "Fleisch",
-      "note": "Am Stück, gerne mit Schwarte", "scale": "linear" },
-    { "id": "eier", "name": "Eier", "store": "Aldi / REWE", "group": "Milchprodukte / Eier", "scale": "step" },
-    { "id": "zucker", "name": "Zucker", "store": "Aldi / REWE", "group": "Trockenwaren" },
-    { "id": "fischsauce", "name": "Fischsauce", "store": "Asialaden",
-      "note": "z. B. Red Boat, Squid oder Three Crabs" },
-    { "id": "schalotten", "name": "Schalotten", "store": "Aldi / REWE", "group": "Obst & Gemüse", "scale": "step" },
-    { "id": "knoblauch", "name": "Knoblauchzehen", "store": "Aldi / REWE", "group": "Obst & Gemüse", "scale": "step" },
-    { "id": "kokoswasser", "name": "Kokoswasser (ungesüßt)", "store": "Asialaden",
-      "note": "pur, ungesüßt — Tetrapak oder Dose, **kein Kokosmilch!**" },
-    { "id": "pfeffer", "name": "Schwarzer Pfeffer", "prep": "frisch gemahlen, großzügig", "store": "Vorrat", "pantry": true, "scale": "note", "scaleNote": "nach Geschmack" },
-    { "id": "jasminreis", "name": "Jasminreis", "store": "Asialaden", "group": "Trockenwaren" },
-    { "id": "salatgurke", "name": "Salatgurke", "store": "Aldi / REWE", "group": "Obst & Gemüse",
-      "note": "*(→ die andere Hälfte kommt in den griechischen Salat des Oktopus-Rezepts)*", "scale": "step" },
-    { "id": "karotten", "name": "Karotten", "store": "Aldi / REWE", "group": "Obst & Gemüse",
-      "note": "fürs Schnell-Pickle, optional aber empfohlen", "priority": "empfohlen", "optional": true, "scale": "step" },
-    { "id": "rettich", "name": "kleiner Rettich/Daikon", "store": "Aldi / REWE", "group": "Obst & Gemüse",
-      "note": "fürs Schnell-Pickle, optional aber empfohlen", "priority": "empfohlen", "optional": true, "scale": "step",
-      "fallback": "Radieschen (siehe Learnings)" },
-    { "id": "reisessig", "name": "Reisessig", "store": "Asialaden" },
-    { "id": "salz", "name": "Salz", "store": "Vorrat", "pantry": true },
-    { "id": "chili", "name": "frische rote Chilis", "store": "Aldi / REWE", "group": "Obst & Gemüse",
-      "note": "bleiben ganz — siehe Kinder-Hinweis", "scale": "step" },
-    { "id": "fruehlingszwiebeln", "name": "Frühlingszwiebeln oder Koriander zum Servieren", "store": "Aldi / REWE", "group": "Obst & Gemüse",
-      "optional": true, "priority": "optional", "scale": "note", "scaleNote": "nach Bedarf" },
-    { "id": "wasser", "name": "Wasser", "store": "Vorrat", "pantry": true }
+  "equipment": [
+    "schwerer Topf oder tiefe Pfanne mit Deckel",
+    "kleiner Topf zum Eierkochen"
   ],
-
+  "ingredients": [
+    {
+      "id": "schweinebauch",
+      "name": "Schweinebauch am Stück",
+      "store": "REWE Center",
+      "group": "Fleisch",
+      "note": "Am Stück, gerne mit Schwarte",
+      "scale": "linear"
+    },
+    {
+      "id": "eier",
+      "name": "Eier",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte / Eier",
+      "scale": "step"
+    },
+    {
+      "id": "zucker",
+      "name": "Zucker",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren"
+    },
+    {
+      "id": "fischsauce",
+      "name": "Fischsauce",
+      "store": "Asialaden",
+      "note": "z. B. Red Boat, Squid oder Three Crabs"
+    },
+    {
+      "id": "schalotten",
+      "name": "Schalotten",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "scale": "step"
+    },
+    {
+      "id": "knoblauch",
+      "name": "Knoblauchzehen",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "scale": "step"
+    },
+    {
+      "id": "kokoswasser",
+      "name": "Kokoswasser (ungesüßt)",
+      "store": "Asialaden",
+      "note": "pur, ungesüßt — Tetrapak oder Dose, **kein Kokosmilch!**"
+    },
+    {
+      "id": "pfeffer",
+      "name": "Schwarzer Pfeffer",
+      "prep": "frisch gemahlen, großzügig",
+      "store": "Vorrat",
+      "pantry": true,
+      "scale": "note",
+      "scaleNote": "nach Geschmack"
+    },
+    {
+      "id": "jasminreis",
+      "name": "Jasminreis",
+      "store": "Asialaden",
+      "group": "Trockenwaren"
+    },
+    {
+      "id": "salatgurke",
+      "name": "Salatgurke",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "note": "*(→ die andere Hälfte kommt in den griechischen Salat des Oktopus-Rezepts)*",
+      "scale": "step"
+    },
+    {
+      "id": "karotten",
+      "name": "Karotten",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "note": "fürs Schnell-Pickle, optional aber empfohlen",
+      "priority": "empfohlen",
+      "optional": true,
+      "scale": "step"
+    },
+    {
+      "id": "rettich",
+      "name": "kleiner Rettich/Daikon",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "note": "fürs Schnell-Pickle, optional aber empfohlen",
+      "priority": "empfohlen",
+      "optional": true,
+      "scale": "step",
+      "fallback": "Radieschen (siehe Learnings)"
+    },
+    {
+      "id": "reisessig",
+      "name": "Reisessig",
+      "store": "Asialaden"
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "chili",
+      "name": "frische rote Chilis",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "note": "bleiben ganz — siehe Kinder-Hinweis",
+      "scale": "step"
+    },
+    {
+      "id": "fruehlingszwiebeln",
+      "name": "Frühlingszwiebeln oder Koriander zum Servieren",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "optional": true,
+      "priority": "optional",
+      "scale": "note",
+      "scaleNote": "nach Bedarf"
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
   "sections": [
-    { "type": "markdown", "title": "Beschaffung", "level": 2, "tags": ["beschaffung"],
-      "markdown": "- **Schweinebauch:** Am Stück, gerne mit Schwarte (traditionell; wird beim Schmoren weich-gelatinös). Wer Schwarte nicht mag: ohne. Zuverlässig im REWE Center.\n- **Asialaden:** Fischsauce (z. B. Red Boat, Squid oder Three Crabs), Kokoswasser (pur, ungesüßt — Tetrapak oder Dose, **kein Kokosmilch!**). Beides gibt es notfalls auch im gut sortierten Supermarkt." },
-
-    { "type": "shopping", "title": "Einkaufsliste" },
-
-    { "type": "tasks", "title": "Zubereitung", "tasks": [
-      { "id": "main", "name": "Thịt kho trứng", "steps": [
-
-        { "id": "blanchieren", "label": "1",
-          "heading": "1. Fleisch vorbereiten & blanchieren (10 Min.)",
-          "title": "Fleisch vorbereiten & blanchieren",
-          "text": "Schweinebauch in ~4 cm große Würfel schneiden. In einem Topf mit kaltem Wasser aufsetzen, aufkochen, 2–3 Min. sprudeln lassen, abgießen und Würfel kalt abspülen. *Klassischer vietnamesischer Schritt: entfernt Trübstoffe, die Sauce bleibt klar und glänzend.*",
-          "action": "Schweinebauch in ~4 cm große Würfel schneiden. In einem Topf mit kaltem Wasser aufsetzen, aufkochen, 2–3 Min. sprudeln lassen, abgießen und Würfel kalt abspülen.",
-          "attention": "attended",
-          "duration": { "typical": "PT10M", "source": "10 Min." },
-          "timers": [ { "label": "Sprudeln lassen", "duration": { "min": "PT2M", "max": "PT3M" }, "text": "2–3 Min." } ],
-          "ingredients": [
-            { "ref": "schweinebauch", "amount": { "text": "900 g – 1 kg", "value": 900, "max": 1000, "unit": "g" },
-              "spanForm": "derived", "note": "Menge steht nur in der Einkaufsliste, nicht im Schritt" }
-          ],
-          "equipment": ["Topf"],
-          "why": "Klassischer vietnamesischer Schritt: entfernt Trübstoffe, die Sauce bleibt klar und glänzend." },
-
-        { "id": "marinieren", "label": "2",
-          "heading": "2. Marinieren (15 Min., parallel weiterarbeiten)",
-          "title": "Marinieren",
-          "text": "Fleisch mit 2 EL Fischsauce, 1 EL Zucker, 2 fein gehackten Knoblauchzehen und 2 fein gehackten Schalotten (jeweils die Hälfte) sowie reichlich Pfeffer vermengen. Beiseitestellen.",
-          "action": "Fleisch mit 2 EL Fischsauce, 1 EL Zucker, 2 fein gehackten Knoblauchzehen und 2 fein gehackten Schalotten (jeweils die Hälfte) sowie reichlich Pfeffer vermengen.",
-          "attention": "passive", "parallel": true,
-          "duration": { "typical": "PT15M", "source": "15 Min." },
-          "timers": [ { "label": "Marinieren", "duration": { "typical": "PT15M" }, "text": "15 Min." } ],
-          "ingredients": [
-            { "ref": "fischsauce", "amount": { "text": "2 EL Fischsauce", "value": 2, "unit": "EL" } },
-            { "ref": "zucker", "amount": { "text": "1 EL Zucker", "value": 1, "unit": "EL" } },
-            { "ref": "knoblauch", "amount": { "text": "2 fein gehackten Knoblauchzehen", "value": 2, "unit": "Stück" }, "note": "jeweils die Hälfte" },
-            { "ref": "schalotten", "amount": { "text": "2 fein gehackten Schalotten", "value": 2, "unit": "Stück" }, "note": "jeweils die Hälfte" },
-            { "ref": "pfeffer", "amount": { "text": "reichlich Pfeffer" } }
-          ] },
-
-        { "id": "eier-kochen", "label": "3",
-          "heading": "3. Eier kochen (parallel)",
-          "title": "Eier kochen",
-          "text": "6 Eier 9–10 Min. hart kochen, abschrecken, pellen. *Ganz lassen — sie ziehen später im Schmorsud Farbe und Geschmack.*",
-          "action": "6 Eier 9–10 Min. hart kochen, abschrecken, pellen.",
-          "attention": "attended", "parallel": true,
-          "timers": [ { "label": "Eier hart kochen", "duration": { "min": "PT9M", "max": "PT10M" }, "text": "9–10 Min." } ],
-          "ingredients": [ { "ref": "eier", "amount": { "text": "6 Eier", "value": 6, "unit": "Stück" } } ],
-          "equipment": ["kleiner Topf"],
-          "why": "Ganz lassen — sie ziehen später im Schmorsud Farbe und Geschmack." },
-
-        { "id": "karamell", "label": "4",
-          "heading": "4. Karamell — der entscheidende Schritt (5 Min.)",
-          "title": "Karamell — der entscheidende Schritt",
-          "text": "3 EL Zucker mit 1 EL Wasser im Schmortopf bei mittlerer Hitze schmelzen lassen, **nicht rühren**, nur den Topf schwenken. Warten, bis das Karamell tief bernsteinfarben ist — dunkler als man sich traut, Richtung Mahagoni, es darf gerade eben erste Rauchfähnchen ziehen. *Zu hell = nur süß statt bittersüß-komplex. Zu schwarz = bitter, dann lieber neu starten (kostet 3 EL Zucker und 5 Minuten).*",
-          "action": "3 EL Zucker mit 1 EL Wasser im Schmortopf bei mittlerer Hitze schmelzen lassen, **nicht rühren**, nur den Topf schwenken.",
-          "attention": "active",
-          "duration": { "typical": "PT5M", "source": "5 Min." },
-          "ingredients": [
-            { "ref": "zucker", "amount": { "text": "3 EL Zucker", "value": 3, "unit": "EL" }, "occurrence": 1 },
-            { "ref": "wasser", "amount": { "text": "1 EL Wasser", "value": 1, "unit": "EL" } }
-          ],
-          "equipment": ["Schmortopf"],
-          "cues": ["tief bernsteinfarben", "dunkler als man sich traut, Richtung Mahagoni, es darf gerade eben erste Rauchfähnchen ziehen"],
-          "limits": ["**nicht rühren**, nur den Topf schwenken"],
-          "why": "Zu hell = nur süß statt bittersüß-komplex.",
-          "rescue": "Zu schwarz = bitter, dann lieber neu starten (kostet 3 EL Zucker und 5 Minuten)." },
-
-        { "id": "anbraten", "label": "5",
-          "heading": "5. Anbraten (5 Min.)",
-          "title": "Anbraten",
-          "text": "Restliche 2 Schalotten und 2 Knoblauchzehen (fein gehackt) ins Karamell, 30 Sek. rühren, dann das marinierte Fleisch dazu. Einige Minuten wenden, bis alle Würfel karamellüberzogen und leicht angebraten sind. *Vorsicht: Karamell spritzt, wenn das Fleisch feucht ist — Deckel als Schild bereithalten.*",
-          "action": "Restliche 2 Schalotten und 2 Knoblauchzehen (fein gehackt) ins Karamell, 30 Sek. rühren, dann das marinierte Fleisch dazu.",
-          "attention": "active",
-          "duration": { "typical": "PT5M", "source": "5 Min." },
-          "timers": [ { "label": "Rühren", "duration": { "typical": "PT30S" }, "text": "30 Sek." } ],
-          "ingredients": [
-            { "ref": "schalotten", "amount": { "text": "2 Schalotten", "value": 2, "unit": "Stück" }, "note": "Restliche" },
-            { "ref": "knoblauch", "amount": { "text": "2 Knoblauchzehen", "value": 2, "unit": "Stück" }, "note": "Restliche" },
-            { "ref": "schweinebauch", "amount": { "text": "das marinierte Fleisch" }, "reuse": true }
-          ],
-          "cues": ["bis alle Würfel karamellüberzogen und leicht angebraten sind"],
-          "limits": ["Vorsicht: Karamell spritzt, wenn das Fleisch feucht ist — Deckel als Schild bereithalten."] },
-
-        { "id": "schmoren", "label": "6",
-          "heading": "6. Schmoren (90–120 Min.)",
-          "title": "Schmoren",
-          "text": "Mit 500–600 ml Kokoswasser auffüllen, bis das Fleisch knapp bedeckt ist. Restliche 2–3 EL Fischsauce dazu. Aufkochen, Schaum abschöpfen. Die 6 Eier und 2–3 **ganze** Chilis hineinlegen. Deckel halb auflegen und bei kleinster Hitze leise schmoren. Nach ~60 Min. Eier gelegentlich wenden, damit sie gleichmäßig Farbe ziehen. *Ein Topf, kleinste Flamme — auch das heizt die Küche kaum.*",
-          "action": "Mit Kokoswasser knapp bedecken, restliche Fischsauce, Eier und ganze Chilis zugeben, halb bedeckt bei kleinster Hitze leise schmoren; nach der Hälfte Eier wenden.",
-          "actionDerived": true,
-          "attention": "passive",
-          "duration": { "min": "PT90M", "max": "PT120M", "source": "90–120 Min." },
-          "timers": [
-            { "label": "Schmoren", "duration": { "min": "PT90M", "max": "PT120M" }, "text": "90–120 Min." },
-            { "label": "Eier wenden ab", "duration": { "typical": "PT60M" }, "text": "~60 Min." }
-          ],
-          "ingredients": [
-            { "ref": "kokoswasser", "amount": { "text": "500–600 ml Kokoswasser", "value": 500, "max": 600, "unit": "ml" } },
-            { "ref": "fischsauce", "amount": { "text": "2–3 EL Fischsauce", "value": 2, "max": 3, "unit": "EL" }, "note": "Restliche" },
-            { "ref": "eier", "amount": { "text": "6 Eier", "value": 6, "unit": "Stück" }, "reuse": true },
-            { "ref": "chili", "amount": { "text": "2–3 **ganze** Chilis", "value": 2, "max": 3, "unit": "Stück" } }
-          ],
-          "cues": ["bis das Fleisch knapp bedeckt ist"],
-          "why": "Ein Topf, kleinste Flamme — auch das heizt die Küche kaum." },
-
-        { "id": "reduzieren", "label": "7",
-          "heading": "7. Reduzieren & Abschmecken (letzte 20–30 Min.)",
-          "title": "Reduzieren & Abschmecken",
-          "text": "Deckel abnehmen und die Sauce sirupartig einreduzieren lassen — sie soll das Fleisch glänzend überziehen, nicht suppig sein. Abschmecken: Balance aus salzig (Fischsauce), süß (Karamell) und Pfeffer. Ist sie zu salzig, mit einem Schuss Kokoswasser strecken.",
-          "action": "Deckel abnehmen und die Sauce sirupartig einreduzieren lassen — sie soll das Fleisch glänzend überziehen, nicht suppig sein.",
-          "attention": "attended",
-          "duration": { "min": "PT20M", "max": "PT30M", "source": "20–30 Min." },
-          "ingredients": [
-            { "ref": "kokoswasser", "amount": { "text": "einem Schuss Kokoswasser" }, "note": "nur zum Korrigieren" }
-          ],
-          "cues": ["sie soll das Fleisch glänzend überziehen, nicht suppig sein", "Balance aus salzig (Fischsauce), süß (Karamell) und Pfeffer"],
-          "rescue": "Ist sie zu salzig, mit einem Schuss Kokoswasser strecken." },
-
-        { "id": "pickle-und-reis", "label": "8",
-          "heading": "8. Schnell-Pickle & Reis (parallel, 20 Min.)",
-          "title": "Schnell-Pickle & Reis",
-          "text": "2 Karotten und 1 Rettich in feine Stifte, mit 3 EL Reisessig, 1 EL Zucker und 1 Prise Salz vermengen, 20 Min. ziehen lassen. ½ Salatgurke in Scheiben. 400 g Jasminreis wie gewohnt kochen.",
-          "action": "2 Karotten und 1 Rettich in feine Stifte, mit 3 EL Reisessig, 1 EL Zucker und 1 Prise Salz vermengen, 20 Min. ziehen lassen. ½ Salatgurke in Scheiben. 400 g Jasminreis wie gewohnt kochen.",
-          "attention": "active", "parallel": true,
-          "duration": { "typical": "PT20M", "source": "20 Min." },
-          "timers": [ { "label": "Pickle ziehen lassen", "duration": { "typical": "PT20M" }, "text": "20 Min." } ],
-          "ingredients": [
-            { "ref": "karotten", "amount": { "text": "2 Karotten", "value": 2, "unit": "Stück" } },
-            { "ref": "rettich", "amount": { "text": "1 Rettich", "value": 1, "unit": "Stück" } },
-            { "ref": "reisessig", "amount": { "text": "3 EL Reisessig", "value": 3, "unit": "EL" } },
-            { "ref": "zucker", "amount": { "text": "1 EL Zucker", "value": 1, "unit": "EL" } },
-            { "ref": "salz", "amount": { "text": "1 Prise Salz", "value": 1, "unit": "Prise" } },
-            { "ref": "salatgurke", "amount": { "text": "½ Salatgurke", "value": 0.5, "unit": "Stück" } },
-            { "ref": "jasminreis", "amount": { "text": "400 g Jasminreis", "value": 400, "unit": "g" } }
-          ] },
-
-        { "id": "servieren", "label": "9",
-          "heading": "9. Servieren",
-          "title": "Servieren",
-          "text": "Fleisch, Eier (halbiert) und viel Sauce auf Reis. Gurke und Pickle dazu — die Frische ist kein Deko-Beiwerk, sondern der nötige Kontrast zum reichen Fleisch. Frühlingszwiebeln/Koriander darüber.",
-          "action": "Fleisch, Eier (halbiert) und viel Sauce auf Reis.",
-          "attention": "active",
-          "ingredients": [
-            { "ref": "fruehlingszwiebeln", "amount": { "text": "Frühlingszwiebeln/Koriander" } }
-          ],
-          "why": "die Frische ist kein Deko-Beiwerk, sondern der nötige Kontrast zum reichen Fleisch" }
-      ] }
-    ] },
-
-    { "type": "markdown", "title": "Kinder-Anpassung", "level": 2, "tags": ["kind"],
-      "markdown": "- Die Chilis bleiben **ganz** und unverletzt — sie parfümieren nur mild. Erwachsene zerdrücken ihre Chili auf dem eigenen Teller oder schneiden frische Chili als Topping. Kinderportion ist automatisch mild.\n- Süß-salziges Fleisch, weiche Eier, Reis: erfahrungsgemäß ein sicherer Treffer bei Soja-/Umami-Fans im Kleinkindalter. Ei-Hälfte mit Sauce zuerst anbieten.\n- Kein Alkohol im Gericht." },
-
-    { "type": "learnings", "title": "Learnings", "cooked": "07/2026",
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "tags": [
+        "beschaffung"
+      ],
+      "markdown": "- **Schweinebauch:** Am Stück, gerne mit Schwarte (traditionell; wird beim Schmoren weich-gelatinös). Wer Schwarte nicht mag: ohne. Zuverlässig im REWE Center.\n- **Asialaden:** Fischsauce (z. B. Red Boat, Squid oder Three Crabs), Kokoswasser (pur, ungesüßt — Tetrapak oder Dose, **kein Kokosmilch!**). Beides gibt es notfalls auch im gut sortierten Supermarkt."
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Thịt kho trứng",
+          "steps": [
+            {
+              "id": "blanchieren",
+              "label": "1",
+              "heading": "1. Fleisch vorbereiten & blanchieren (10 Min.)",
+              "title": "Fleisch vorbereiten & blanchieren",
+              "text": "Schweinebauch in ~4 cm große Würfel schneiden. In einem Topf mit kaltem Wasser aufsetzen, aufkochen, 2–3 Min. sprudeln lassen, abgießen und Würfel kalt abspülen. *Klassischer vietnamesischer Schritt: entfernt Trübstoffe, die Sauce bleibt klar und glänzend.*",
+              "action": "Schweinebauch in ~4 cm große Würfel schneiden. In einem Topf mit kaltem Wasser aufsetzen, aufkochen, 2–3 Min. sprudeln lassen, abgießen und Würfel kalt abspülen.",
+              "attention": "attended",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "timers": [
+                {
+                  "label": "Sprudeln lassen",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "schweinebauch",
+                  "amount": {
+                    "text": "900 g – 1 kg",
+                    "value": 900,
+                    "max": 1000,
+                    "unit": "g"
+                  },
+                  "spanForm": "derived",
+                  "note": "Menge steht nur in der Einkaufsliste, nicht im Schritt"
+                }
+              ],
+              "equipment": [
+                "Topf"
+              ],
+              "why": "Klassischer vietnamesischer Schritt: entfernt Trübstoffe, die Sauce bleibt klar und glänzend."
+            },
+            {
+              "id": "marinieren",
+              "label": "2",
+              "heading": "2. Marinieren (15 Min., parallel weiterarbeiten)",
+              "title": "Marinieren",
+              "text": "Fleisch mit 2 EL Fischsauce, 1 EL Zucker, 2 fein gehackten Knoblauchzehen und 2 fein gehackten Schalotten (jeweils die Hälfte) sowie reichlich Pfeffer vermengen. Beiseitestellen.",
+              "action": "Fleisch mit 2 EL Fischsauce, 1 EL Zucker, 2 fein gehackten Knoblauchzehen und 2 fein gehackten Schalotten (jeweils die Hälfte) sowie reichlich Pfeffer vermengen.",
+              "attention": "passive",
+              "parallel": true,
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "timers": [
+                {
+                  "label": "Marinieren",
+                  "duration": {
+                    "typical": "PT15M"
+                  },
+                  "text": "15 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "fischsauce",
+                  "amount": {
+                    "text": "2 EL Fischsauce",
+                    "value": 2,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "1 EL Zucker",
+                    "value": 1,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "2 fein gehackten Knoblauchzehen",
+                    "value": 2,
+                    "unit": "Stück"
+                  },
+                  "note": "jeweils die Hälfte"
+                },
+                {
+                  "ref": "schalotten",
+                  "amount": {
+                    "text": "2 fein gehackten Schalotten",
+                    "value": 2,
+                    "unit": "Stück"
+                  },
+                  "note": "jeweils die Hälfte"
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "reichlich Pfeffer"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "eier-kochen",
+              "label": "3",
+              "heading": "3. Eier kochen (parallel)",
+              "title": "Eier kochen",
+              "text": "6 Eier 9–10 Min. hart kochen, abschrecken, pellen. *Ganz lassen — sie ziehen später im Schmorsud Farbe und Geschmack.*",
+              "action": "6 Eier 9–10 Min. hart kochen, abschrecken, pellen.",
+              "attention": "attended",
+              "parallel": true,
+              "timers": [
+                {
+                  "label": "Eier hart kochen",
+                  "duration": {
+                    "min": "PT9M",
+                    "max": "PT10M"
+                  },
+                  "text": "9–10 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "eier",
+                  "amount": {
+                    "text": "6 Eier",
+                    "value": 6,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "equipment": [
+                "kleiner Topf"
+              ],
+              "why": "Ganz lassen — sie ziehen später im Schmorsud Farbe und Geschmack."
+            },
+            {
+              "id": "karamell",
+              "label": "4",
+              "heading": "4. Karamell — der entscheidende Schritt (5 Min.)",
+              "title": "Karamell — der entscheidende Schritt",
+              "text": "3 EL Zucker mit 1 EL Wasser im Schmortopf bei mittlerer Hitze schmelzen lassen, **nicht rühren**, nur den Topf schwenken. Warten, bis das Karamell tief bernsteinfarben ist — dunkler als man sich traut, Richtung Mahagoni, es darf gerade eben erste Rauchfähnchen ziehen. *Zu hell = nur süß statt bittersüß-komplex. Zu schwarz = bitter, dann lieber neu starten (kostet 3 EL Zucker und 5 Minuten).*",
+              "action": "3 EL Zucker mit 1 EL Wasser im Schmortopf bei mittlerer Hitze schmelzen lassen, **nicht rühren**, nur den Topf schwenken.",
+              "attention": "active",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "ingredients": [
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "3 EL Zucker",
+                    "value": 3,
+                    "unit": "EL"
+                  },
+                  "occurrence": 1
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "1 EL Wasser",
+                    "value": 1,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "equipment": [
+                "Schmortopf"
+              ],
+              "cues": [
+                "tief bernsteinfarben",
+                "dunkler als man sich traut, Richtung Mahagoni, es darf gerade eben erste Rauchfähnchen ziehen"
+              ],
+              "limits": [
+                "**nicht rühren**, nur den Topf schwenken"
+              ],
+              "why": "Zu hell = nur süß statt bittersüß-komplex.",
+              "rescue": "Zu schwarz = bitter, dann lieber neu starten (kostet 3 EL Zucker und 5 Minuten)."
+            },
+            {
+              "id": "anbraten",
+              "label": "5",
+              "heading": "5. Anbraten (5 Min.)",
+              "title": "Anbraten",
+              "text": "Restliche 2 Schalotten und 2 Knoblauchzehen (fein gehackt) ins Karamell, 30 Sek. rühren, dann das marinierte Fleisch dazu. Einige Minuten wenden, bis alle Würfel karamellüberzogen und leicht angebraten sind. *Vorsicht: Karamell spritzt, wenn das Fleisch feucht ist — Deckel als Schild bereithalten.*",
+              "action": "Restliche 2 Schalotten und 2 Knoblauchzehen (fein gehackt) ins Karamell, 30 Sek. rühren, dann das marinierte Fleisch dazu.",
+              "attention": "active",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "timers": [
+                {
+                  "label": "Rühren",
+                  "duration": {
+                    "typical": "PT30S"
+                  },
+                  "text": "30 Sek."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "schalotten",
+                  "amount": {
+                    "text": "2 Schalotten",
+                    "value": 2,
+                    "unit": "Stück"
+                  },
+                  "note": "Restliche"
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "2 Knoblauchzehen",
+                    "value": 2,
+                    "unit": "Stück"
+                  },
+                  "note": "Restliche"
+                },
+                {
+                  "ref": "schweinebauch",
+                  "amount": {
+                    "text": "das marinierte Fleisch"
+                  },
+                  "reuse": true
+                }
+              ],
+              "cues": [
+                "bis alle Würfel karamellüberzogen und leicht angebraten sind"
+              ],
+              "limits": [
+                "Vorsicht: Karamell spritzt, wenn das Fleisch feucht ist — Deckel als Schild bereithalten."
+              ]
+            },
+            {
+              "id": "schmoren",
+              "label": "6",
+              "heading": "6. Schmoren (90–120 Min.)",
+              "title": "Schmoren",
+              "text": "Mit 500–600 ml Kokoswasser auffüllen, bis das Fleisch knapp bedeckt ist. Restliche 2–3 EL Fischsauce dazu. Aufkochen, Schaum abschöpfen. Die 6 Eier und 2–3 **ganze** Chilis hineinlegen. Deckel halb auflegen und bei kleinster Hitze leise schmoren. Nach ~60 Min. Eier gelegentlich wenden, damit sie gleichmäßig Farbe ziehen. *Ein Topf, kleinste Flamme — auch das heizt die Küche kaum.*",
+              "action": "Mit Kokoswasser knapp bedecken, restliche Fischsauce, Eier und ganze Chilis zugeben, halb bedeckt bei kleinster Hitze leise schmoren; nach der Hälfte Eier wenden.",
+              "actionDerived": true,
+              "attention": "passive",
+              "duration": {
+                "min": "PT90M",
+                "max": "PT120M",
+                "source": "90–120 Min."
+              },
+              "timers": [
+                {
+                  "label": "Schmoren",
+                  "duration": {
+                    "min": "PT90M",
+                    "max": "PT120M"
+                  },
+                  "text": "90–120 Min."
+                },
+                {
+                  "label": "Eier wenden ab",
+                  "duration": {
+                    "typical": "PT60M"
+                  },
+                  "text": "~60 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "kokoswasser",
+                  "amount": {
+                    "text": "500–600 ml Kokoswasser",
+                    "value": 500,
+                    "max": 600,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "fischsauce",
+                  "amount": {
+                    "text": "2–3 EL Fischsauce",
+                    "value": 2,
+                    "max": 3,
+                    "unit": "EL"
+                  },
+                  "note": "Restliche"
+                },
+                {
+                  "ref": "eier",
+                  "amount": {
+                    "text": "6 Eier",
+                    "value": 6,
+                    "unit": "Stück"
+                  },
+                  "reuse": true
+                },
+                {
+                  "ref": "chili",
+                  "amount": {
+                    "text": "2–3 **ganze** Chilis",
+                    "value": 2,
+                    "max": 3,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "cues": [
+                "bis das Fleisch knapp bedeckt ist"
+              ],
+              "why": "Ein Topf, kleinste Flamme — auch das heizt die Küche kaum."
+            },
+            {
+              "id": "reduzieren",
+              "label": "7",
+              "heading": "7. Reduzieren & Abschmecken (letzte 20–30 Min.)",
+              "title": "Reduzieren & Abschmecken",
+              "text": "Deckel abnehmen und die Sauce sirupartig einreduzieren lassen — sie soll das Fleisch glänzend überziehen, nicht suppig sein. Abschmecken: Balance aus salzig (Fischsauce), süß (Karamell) und Pfeffer. Ist sie zu salzig, mit einem Schuss Kokoswasser strecken.",
+              "action": "Deckel abnehmen und die Sauce sirupartig einreduzieren lassen — sie soll das Fleisch glänzend überziehen, nicht suppig sein.",
+              "attention": "attended",
+              "duration": {
+                "min": "PT20M",
+                "max": "PT30M",
+                "source": "20–30 Min."
+              },
+              "ingredients": [
+                {
+                  "ref": "kokoswasser",
+                  "amount": {
+                    "text": "einem Schuss Kokoswasser"
+                  },
+                  "note": "nur zum Korrigieren"
+                }
+              ],
+              "cues": [
+                "sie soll das Fleisch glänzend überziehen, nicht suppig sein",
+                "Balance aus salzig (Fischsauce), süß (Karamell) und Pfeffer"
+              ],
+              "rescue": "Ist sie zu salzig, mit einem Schuss Kokoswasser strecken."
+            },
+            {
+              "id": "pickle-und-reis",
+              "label": "8",
+              "heading": "8. Schnell-Pickle & Reis (parallel, 20 Min.)",
+              "title": "Schnell-Pickle & Reis",
+              "text": "2 Karotten und 1 Rettich in feine Stifte, mit 3 EL Reisessig, 1 EL Zucker und 1 Prise Salz vermengen, 20 Min. ziehen lassen. ½ Salatgurke in Scheiben. 400 g Jasminreis wie gewohnt kochen.",
+              "action": "2 Karotten und 1 Rettich in feine Stifte, mit 3 EL Reisessig, 1 EL Zucker und 1 Prise Salz vermengen, 20 Min. ziehen lassen. ½ Salatgurke in Scheiben. 400 g Jasminreis wie gewohnt kochen.",
+              "attention": "active",
+              "parallel": true,
+              "duration": {
+                "typical": "PT20M",
+                "source": "20 Min."
+              },
+              "timers": [
+                {
+                  "label": "Pickle ziehen lassen",
+                  "duration": {
+                    "typical": "PT20M"
+                  },
+                  "text": "20 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "karotten",
+                  "amount": {
+                    "text": "2 Karotten",
+                    "value": 2,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "rettich",
+                  "amount": {
+                    "text": "1 Rettich",
+                    "value": 1,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "reisessig",
+                  "amount": {
+                    "text": "3 EL Reisessig",
+                    "value": 3,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "1 EL Zucker",
+                    "value": 1,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 Prise Salz",
+                    "value": 1,
+                    "unit": "Prise"
+                  }
+                },
+                {
+                  "ref": "salatgurke",
+                  "amount": {
+                    "text": "½ Salatgurke",
+                    "value": 0.5,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "jasminreis",
+                  "amount": {
+                    "text": "400 g Jasminreis",
+                    "value": 400,
+                    "unit": "g"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "servieren",
+              "label": "9",
+              "heading": "9. Servieren",
+              "title": "Servieren",
+              "text": "Fleisch, Eier (halbiert) und viel Sauce auf Reis. Gurke und Pickle dazu — die Frische ist kein Deko-Beiwerk, sondern der nötige Kontrast zum reichen Fleisch. Frühlingszwiebeln/Koriander darüber.",
+              "action": "Fleisch, Eier (halbiert) und viel Sauce auf Reis.",
+              "attention": "active",
+              "ingredients": [
+                {
+                  "ref": "fruehlingszwiebeln",
+                  "amount": {
+                    "text": "Frühlingszwiebeln/Koriander"
+                  }
+                }
+              ],
+              "why": "die Frische ist kein Deko-Beiwerk, sondern der nötige Kontrast zum reichen Fleisch"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "tags": [
+        "kind"
+      ],
+      "markdown": "- Die Chilis bleiben **ganz** und unverletzt — sie parfümieren nur mild. Erwachsene zerdrücken ihre Chili auf dem eigenen Teller oder schneiden frische Chili als Topping. Kinderportion ist automatisch mild.\n- Süß-salziges Fleisch, weiche Eier, Reis: erfahrungsgemäß ein sicherer Treffer bei Soja-/Umami-Fans im Kleinkindalter. Ei-Hälfte mit Sauce zuerst anbieten.\n- Kein Alkohol im Gericht."
+    },
+    {
+      "type": "learnings",
+      "title": "Learnings",
+      "cooked": "07/2026",
       "summary": "**Gekocht 07/2026.** ✅✅ Klarer Favorit: minimaler Aufwand, Preis/Leistung herausragend — zweimal mit Genuss gegessen, fester Rotations-Kandidat. Ganze Chilis früher entnehmen (geben auch unverletzt Schärfe ab), Säure-Balance kommt vom Pickle (Radieschen als Daikon-Ersatz okay). Mitgeschmorte Eier überzeugten nicht (fest, fad) — weglassen oder erst in den letzten 20–30 Min. einlegen.",
       "details": "### Details\n\n- **Chilis:** Geben auch unverletzt mit der Zeit etwas Schärfe ab. Beim nächsten Mal erst zur Halbzeit einlegen oder nach ~45 Min. entnehmen — spätestens **vor** der Reduzierphase raus (Reduzieren konzentriert Capsaicin).\n- **Säure:** Sauce wirkt solo etwas stumpf — gewollt; die Balance kommt vom Teller-Ensemble mit Pickle/Gurke. Erst komplett probieren, bevor man Limette/Essig nachjustiert.\n- **Eier:** Nach 90+ Min. Schmoren Haut fest/gummiartig und fad — hat uns nicht überzeugt. Nächstes Mal **weglassen** oder erst in den letzten 20–30 Min. einlegen; Alternative: wachsweiches Ei frisch beim Servieren dazu (Ramen-Ei-Logik).\n- **Pickle:** Radieschen funktionieren als Daikon-Ersatz (Lake: 3 EL Reisessig, 1 EL Zucker, ½ TL Salz, 2 EL Wasser, 20–30 Min.).\n- **Topfwahl:** 6L-Topf, nicht der Bräter — Karamell auf einer Platte kontrollierbar, Flüssigkeit bedeckt kompakt.",
       "notes": [
-        { "ref": "step:schmoren", "date": "07/2026", "status": "open",
-          "text": "Beim nächsten Mal erst zur Halbzeit einlegen oder nach ~45 Min. entnehmen — spätestens **vor** der Reduzierphase raus (Reduzieren konzentriert Capsaicin)." },
-        { "ref": "step:schmoren", "date": "07/2026", "status": "open",
-          "text": "Nächstes Mal **weglassen** oder erst in den letzten 20–30 Min. einlegen; Alternative: wachsweiches Ei frisch beim Servieren dazu (Ramen-Ei-Logik)." },
-        { "ref": "step:reduzieren", "date": "07/2026", "status": "applied",
-          "text": "Erst komplett probieren, bevor man Limette/Essig nachjustiert." },
-        { "ref": "step:pickle-und-reis", "date": "07/2026", "status": "applied",
-          "text": "Radieschen funktionieren als Daikon-Ersatz (Lake: 3 EL Reisessig, 1 EL Zucker, ½ TL Salz, 2 EL Wasser, 20–30 Min.)." },
-        { "ref": "step:karamell", "date": "07/2026", "status": "applied",
-          "text": "6L-Topf, nicht der Bräter — Karamell auf einer Platte kontrollierbar, Flüssigkeit bedeckt kompakt." }
-      ] },
-
-    { "type": "markdown", "title": "Notizen", "level": 2, "tags": ["notizen"],
-      "markdown": "- **Vorbereiten/Reste:** Schmeckt am nächsten Tag durchgezogen noch besser — problemlos komplett vorkochbar. In Vietnam ein klassisches Gericht, das in großen Mengen für mehrere Tage gekocht wird (traditionell zu Tết).\n- **Kokoswasser vs. Wasser:** Wasser funktioniert zur Not, Kokoswasser gibt aber die typische milde Süße und Tiefe — der Einkauf lohnt.\n- **Fischsauce-Dosierung:** Marken unterscheiden sich stark im Salzgehalt (Red Boat ist intensiver als Supermarktware) — lieber erst 4 EL gesamt, am Ende nachjustieren.\n- **Ramen-Synergie:** Übrige Fleischwürfel samt Sauce sind ein exzellentes inoffizielles Ramen-Topping — die Karamell-Fischsauce-Richtung funktioniert überraschend gut auf Miso-Basis." }
-  ]
+        {
+          "ref": "step:schmoren",
+          "date": "07/2026",
+          "status": "open",
+          "text": "Beim nächsten Mal erst zur Halbzeit einlegen oder nach ~45 Min. entnehmen — spätestens **vor** der Reduzierphase raus (Reduzieren konzentriert Capsaicin)."
+        },
+        {
+          "ref": "step:schmoren",
+          "date": "07/2026",
+          "status": "open",
+          "text": "Nächstes Mal **weglassen** oder erst in den letzten 20–30 Min. einlegen; Alternative: wachsweiches Ei frisch beim Servieren dazu (Ramen-Ei-Logik)."
+        },
+        {
+          "ref": "step:reduzieren",
+          "date": "07/2026",
+          "status": "applied",
+          "text": "Erst komplett probieren, bevor man Limette/Essig nachjustiert."
+        },
+        {
+          "ref": "step:pickle-und-reis",
+          "date": "07/2026",
+          "status": "applied",
+          "text": "Radieschen funktionieren als Daikon-Ersatz (Lake: 3 EL Reisessig, 1 EL Zucker, ½ TL Salz, 2 EL Wasser, 20–30 Min.)."
+        },
+        {
+          "ref": "step:karamell",
+          "date": "07/2026",
+          "status": "applied",
+          "text": "6L-Topf, nicht der Bräter — Karamell auf einer Platte kontrollierbar, Flüssigkeit bedeckt kompakt."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "tags": [
+        "notizen"
+      ],
+      "markdown": "- **Vorbereiten/Reste:** Schmeckt am nächsten Tag durchgezogen noch besser — problemlos komplett vorkochbar. In Vietnam ein klassisches Gericht, das in großen Mengen für mehrere Tage gekocht wird (traditionell zu Tết).\n- **Kokoswasser vs. Wasser:** Wasser funktioniert zur Not, Kokoswasser gibt aber die typische milde Süße und Tiefe — der Einkauf lohnt.\n- **Fischsauce-Dosierung:** Marken unterscheiden sich stark im Salzgehalt (Red Boat ist intensiver als Supermarktware) — lieber erst 4 EL gesamt, am Ende nachjustieren.\n- **Ramen-Synergie:** Übrige Fleischwürfel samt Sauce sind ein exzellentes inoffizielles Ramen-Topping — die Karamell-Fischsauce-Richtung funktioniert überraschend gut auf Miso-Basis."
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T07:58:26Z",
+    "sourceHash": "bdafedfb7604ad5e",
+    "quantities": [
+      {
+        "ingredient": "schweinebauch",
+        "total": {
+          "text": "900–1000 g",
+          "value": 900,
+          "max": 1000,
+          "unit": "g"
+        },
+        "perTask": {
+          "main": "900 g – 1 kg"
+        }
+      },
+      {
+        "ingredient": "eier",
+        "total": {
+          "text": "6",
+          "value": 6,
+          "max": 6,
+          "unit": "Stück"
+        },
+        "perTask": {
+          "main": "6 Eier"
+        }
+      },
+      {
+        "ingredient": "zucker",
+        "total": {
+          "text": "5 EL",
+          "value": 5,
+          "max": 5,
+          "unit": "EL"
+        },
+        "perTask": {
+          "main": "1 EL Zucker + 3 EL Zucker + 1 EL Zucker"
+        }
+      },
+      {
+        "ingredient": "fischsauce",
+        "total": {
+          "text": "4–5 EL",
+          "value": 4,
+          "max": 5,
+          "unit": "EL"
+        },
+        "perTask": {
+          "main": "2 EL Fischsauce + 2–3 EL Fischsauce"
+        }
+      },
+      {
+        "ingredient": "schalotten",
+        "total": {
+          "text": "4",
+          "value": 4,
+          "max": 4,
+          "unit": "Stück"
+        },
+        "perTask": {
+          "main": "2 fein gehackten Schalotten + 2 Schalotten"
+        }
+      },
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": "4",
+          "value": 4,
+          "max": 4,
+          "unit": "Stück"
+        },
+        "perTask": {
+          "main": "2 fein gehackten Knoblauchzehen + 2 Knoblauchzehen"
+        }
+      },
+      {
+        "ingredient": "kokoswasser",
+        "total": {
+          "text": "500–600 ml",
+          "value": 500,
+          "max": 600,
+          "unit": "ml"
+        },
+        "unitless": [
+          "einem Schuss Kokoswasser"
+        ],
+        "perTask": {
+          "main": "500–600 ml Kokoswasser"
+        }
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": ""
+        },
+        "unitless": [
+          "reichlich Pfeffer"
+        ],
+        "perTask": {}
+      },
+      {
+        "ingredient": "jasminreis",
+        "total": {
+          "text": "400 g",
+          "value": 400,
+          "max": 400,
+          "unit": "g"
+        },
+        "perTask": {
+          "main": "400 g Jasminreis"
+        }
+      },
+      {
+        "ingredient": "salatgurke",
+        "total": {
+          "text": "½",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "Stück"
+        },
+        "perTask": {
+          "main": "½ Salatgurke"
+        }
+      },
+      {
+        "ingredient": "karotten",
+        "total": {
+          "text": "2",
+          "value": 2,
+          "max": 2,
+          "unit": "Stück"
+        },
+        "perTask": {
+          "main": "2 Karotten"
+        }
+      },
+      {
+        "ingredient": "rettich",
+        "total": {
+          "text": "1",
+          "value": 1,
+          "max": 1,
+          "unit": "Stück"
+        },
+        "perTask": {
+          "main": "1 Rettich"
+        }
+      },
+      {
+        "ingredient": "reisessig",
+        "total": {
+          "text": "3 EL",
+          "value": 3,
+          "max": 3,
+          "unit": "EL"
+        },
+        "perTask": {
+          "main": "3 EL Reisessig"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "1 Prise",
+          "value": 1,
+          "max": 1,
+          "unit": "Prise"
+        },
+        "perTask": {
+          "main": "1 Prise Salz"
+        }
+      },
+      {
+        "ingredient": "chili",
+        "total": {
+          "text": "2–3",
+          "value": 2,
+          "max": 3,
+          "unit": "Stück"
+        },
+        "perTask": {
+          "main": "2–3 **ganze** Chilis"
+        }
+      },
+      {
+        "ingredient": "fruehlingszwiebeln",
+        "total": {
+          "text": ""
+        },
+        "unitless": [
+          "Frühlingszwiebeln/Koriander"
+        ],
+        "perTask": {}
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "1 EL",
+          "value": 1,
+          "max": 1,
+          "unit": "EL"
+        },
+        "perTask": {
+          "main": "1 EL Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Asialaden",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "fischsauce",
+            "name": "Fischsauce",
+            "text": "4–5 EL Fischsauce *(z. B. Red Boat, Squid oder Three Crabs)*",
+            "need": {
+              "text": "4–5 EL",
+              "value": 4,
+              "max": 5,
+              "unit": "EL"
+            },
+            "checked": false
+          },
+          {
+            "ingredient": "kokoswasser",
+            "name": "Kokoswasser (ungesüßt)",
+            "text": "500–600 ml Kokoswasser (ungesüßt) *(pur, ungesüßt — Tetrapak oder Dose, **kein Kokosmilch!**)*",
+            "need": {
+              "text": "500–600 ml",
+              "value": 500,
+              "max": 600,
+              "unit": "ml"
+            },
+            "checked": false
+          },
+          {
+            "ingredient": "reisessig",
+            "name": "Reisessig",
+            "text": "3 EL Reisessig",
+            "need": {
+              "text": "3 EL",
+              "value": 3,
+              "max": 3,
+              "unit": "EL"
+            },
+            "checked": false
+          }
+        ]
+      },
+      {
+        "store": "Asialaden",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "jasminreis",
+            "name": "Jasminreis",
+            "text": "400 g Jasminreis",
+            "need": {
+              "text": "400 g",
+              "value": 400,
+              "max": 400,
+              "unit": "g"
+            },
+            "checked": false
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Fleisch",
+        "items": [
+          {
+            "ingredient": "schweinebauch",
+            "name": "Schweinebauch am Stück",
+            "text": "900–1000 g Schweinebauch am Stück *(Am Stück, gerne mit Schwarte)*",
+            "need": {
+              "text": "900–1000 g",
+              "value": 900,
+              "max": 1000,
+              "unit": "g"
+            },
+            "checked": false
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Milchprodukte / Eier",
+        "items": [
+          {
+            "ingredient": "eier",
+            "name": "Eier",
+            "text": "6 Eier",
+            "need": {
+              "text": "6",
+              "value": 6,
+              "max": 6,
+              "unit": "Stück"
+            },
+            "checked": false
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "schalotten",
+            "name": "Schalotten",
+            "text": "4 Schalotten",
+            "need": {
+              "text": "4",
+              "value": 4,
+              "max": 4,
+              "unit": "Stück"
+            },
+            "checked": false
+          },
+          {
+            "ingredient": "knoblauch",
+            "name": "Knoblauchzehen",
+            "text": "4 Knoblauchzehen",
+            "need": {
+              "text": "4",
+              "value": 4,
+              "max": 4,
+              "unit": "Stück"
+            },
+            "checked": false
+          },
+          {
+            "ingredient": "salatgurke",
+            "name": "Salatgurke",
+            "text": "½ Salatgurke *(→ die andere Hälfte kommt in den griechischen Salat des Oktopus-Rezepts)*",
+            "need": {
+              "text": "½",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Stück"
+            },
+            "checked": false
+          },
+          {
+            "ingredient": "karotten",
+            "name": "Karotten",
+            "text": "Optional: 2 Karotten *(fürs Schnell-Pickle, optional aber empfohlen)*",
+            "need": {
+              "text": "2",
+              "value": 2,
+              "max": 2,
+              "unit": "Stück"
+            },
+            "checked": false,
+            "priority": "empfohlen",
+            "optional": true
+          },
+          {
+            "ingredient": "rettich",
+            "name": "kleiner Rettich/Daikon",
+            "text": "Optional: 1 kleiner Rettich/Daikon *(fürs Schnell-Pickle, optional aber empfohlen)*",
+            "need": {
+              "text": "1",
+              "value": 1,
+              "max": 1,
+              "unit": "Stück"
+            },
+            "checked": false,
+            "priority": "empfohlen",
+            "optional": true
+          },
+          {
+            "ingredient": "chili",
+            "name": "frische rote Chilis",
+            "text": "2–3 frische rote Chilis *(bleiben ganz — siehe Kinder-Hinweis)*",
+            "need": {
+              "text": "2–3",
+              "value": 2,
+              "max": 3,
+              "unit": "Stück"
+            },
+            "checked": false
+          },
+          {
+            "ingredient": "fruehlingszwiebeln",
+            "name": "Frühlingszwiebeln oder Koriander zum Servieren",
+            "text": "Optional: Frühlingszwiebeln oder Koriander zum Servieren",
+            "need": {
+              "text": ""
+            },
+            "checked": false,
+            "priority": "optional",
+            "optional": true
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "zucker",
+            "name": "Zucker",
+            "text": "5 EL Zucker",
+            "need": {
+              "text": "5 EL",
+              "value": 5,
+              "max": 5,
+              "unit": "EL"
+            },
+            "checked": false
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "pfeffer",
+            "name": "Schwarzer Pfeffer",
+            "text": "Schwarzer Pfeffer, frisch gemahlen, großzügig",
+            "need": {
+              "text": ""
+            },
+            "checked": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "text": "1 Prise Salz",
+            "need": {
+              "text": "1 Prise",
+              "value": 1,
+              "max": 1,
+              "unit": "Prise"
+            },
+            "checked": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "text": "1 EL Wasser",
+            "need": {
+              "text": "1 EL",
+              "value": 1,
+              "max": 1,
+              "unit": "EL"
+            },
+            "checked": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -5,7 +5,10 @@ import argparse
 import sys
 from pathlib import Path
 
+import json
+
 from .coverage import check_b, check_c, check_d
+from .shopping import check_k, derive, render_shopping
 from .schema import check_a
 from .util import load_json, read_source, source_path
 
@@ -23,7 +26,7 @@ def cmd_check(paths: list[str], verbose: bool) -> int:
                 errs.append(f"Quelle fehlt: {source_path(recipe)}")
             else:
                 src = read_source(recipe)
-                for fn in (lambda r, s: check_b(r, s), lambda r, s: check_c(r, s), lambda r, s: check_d(r)):
+                for fn in (check_b, check_c, lambda r, s: check_d(r), check_k):
                     e, r = fn(recipe, src)
                     errs += e
                     reps += r
@@ -40,15 +43,40 @@ def cmd_check(paths: list[str], verbose: bool) -> int:
     return 1 if failed else 0
 
 
+def cmd_derive(paths: list[str]) -> int:
+    for p in paths:
+        path = Path(p)
+        recipe = load_json(path)
+        recipe["derived"] = derive(recipe)
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(recipe, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+        print(f"derived → {path} ({len(recipe['derived']['quantities'])} Zutaten, hash {recipe['derived']['sourceHash']})")
+    return 0
+
+
+def cmd_shopping(path: str) -> int:
+    print(render_shopping(load_json(Path(path))), end="")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="tools.recipes.cli")
     sub = ap.add_subparsers(dest="cmd", required=True)
     c = sub.add_parser("check", help="Checks A–D gegen die Quelle laufen lassen")
     c.add_argument("paths", nargs="+")
     c.add_argument("-v", "--verbose", action="store_true")
+    d = sub.add_parser("derive", help="derived-Block (Einkaufsliste, Mengen) berechnen und ins JSON schreiben")
+    d.add_argument("paths", nargs="+")
+    s = sub.add_parser("shopping", help="Einkaufsliste als Markdown ausgeben")
+    s.add_argument("path")
     args = ap.parse_args(argv)
     if args.cmd == "check":
         return cmd_check(args.paths, args.verbose)
+    if args.cmd == "derive":
+        return cmd_derive(args.paths)
+    if args.cmd == "shopping":
+        return cmd_shopping(args.path)
     return 2
 
 

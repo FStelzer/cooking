@@ -11,6 +11,8 @@ Aufruf:
 ```sh
 python3 -m tools.recipes.cli check schema/beispiele/*.json      # Checks A–D
 python3 -m tools.recipes.cli check schema/beispiele/x.json -v   # mit Reports
+python3 -m tools.recipes.cli derive schema/beispiele/x.json      # derived-Block (Einkaufsliste, Mengen) schreiben
+python3 -m tools.recipes.cli shopping schema/beispiele/x.json    # Einkaufsliste als Markdown
 ```
 
 Einzige Abhängigkeit: `jsonschema` (siehe `tools/requirements.txt`).
@@ -19,7 +21,8 @@ Einzige Abhängigkeit: `jsonschema` (siehe `tools/requirements.txt`).
 
 | Datum | Stand |
 |---|---|
-| 2026-10-05 | Plan freigegeben. AP0 (Festlegungen, Werkzeug-Skelett) und AP1 (Schema v0.1, thit-kho Minimum + Anreicherung) umgesetzt. Checks A–D grün, Mutationstest 11/11 erkannt. Nächster Schritt: AP2 (Ableitung Einkaufsliste, `cli derive`, Check K). |
+| 2026-10-05 | Plan freigegeben. AP0 (Festlegungen, Werkzeug-Skelett) und AP1 (Schema v0.1, thit-kho Minimum + Anreicherung) umgesetzt. Checks A–D grün, Mutationstest 11/11 erkannt. |
+| 2026-10-05 | AP2 umgesetzt: `tools/recipes/shopping.py` berechnet `derived.quantities` und `derived.shopping`, `cli derive` schreibt sie ins JSON (reproduzierbar bis auf `generatedAt`, Hash-Prüfung gegen veraltete Blöcke), `cli shopping` rendert Markdown im heutigen Format, Check K vergleicht mit der Original-Einkaufsliste. Nächster Schritt: AP3 (zweite unabhängige Konvertierung, Feld-Diff). |
 
 ## Phase 1: Testsammlung und harte Stellen
 
@@ -140,7 +143,7 @@ Einzige Abhängigkeit: `jsonschema` (siehe `tools/requirements.txt`).
 | B | B1 jede `##`-Sektion der Quelle (außer generierte) hat eine Section gleichen Titels · B2 Multiset aller Zahl+Einheit-Token der Quelle (ohne Einkaufsliste/Mengen-Check) = Multiset der verbatim-Felder · B3 jede Quellzeile ≥ 20 Zeichen ist verbatim im JSON | fail | AP1 |
 | C | Zitat-Treue aller Annotationen (L3); nicht-derived `action` ist Präfix von `text`; `title` in `heading`; exakte Spans eindeutig oder mit `occurrence`; abgeleitete `action` mengenfrei | fail | AP1 |
 | D | Slugs gültig und rezeptweit eindeutig; `ref`, `consumes`, `notes[].ref`, `todo[].ref` lösen auf; Report der derived-Felder und der Zutaten ohne Dosierung | fail | AP1 |
-| K | Einkaufsliste rekonstruierbar (`derived.shopping` vs. Original) | fail/Report | AP2 |
+| K | `derived` vorhanden und aktuell (`sourceHash`); jeder Original-Posten der `## Einkaufsliste` (Teile an ` + ` getrennt) findet eine Zutat per Namenswort; Menge des Postens (inkl. `900 g – 1 kg`, `4–5 EL`, `½`) gegen `derived.quantities.total`; Gebinde (`buy`) zählt als passend; Zutaten nur im JSON als Info | fail bei Posten ohne Zutat oder veraltetem Block, Abweichungen als Report | AP2 |
 | E–H, L | Schritt-/Zeitplan-Abdeckung, Hold-Konsistenz, Service-Intervalle, Mengen-Check | | AP4 |
 
 **Mutationstest (2026-10-05):** 11 absichtlich fehlerhafte Kopien von thit-kho
@@ -175,9 +178,19 @@ an der Schrittüberschrift hängen können. (5) Für die Kurzansicht genügt in 
 Fällen die bestehende Schreibweise; Schritt 6 zeigt die Grenze (viele Handlungen in
 einem Schritt).
 
-**Erwartete K-Abweichung (AP2):** Zucker summiert sich aus Schritten 2, 4, 8 auf 5 EL;
-die Original-Einkaufsliste führt 4 EL (Karamell + Marinade) und 1 EL (Pickle-Lake)
-als zwei Posten. Fischsauce 4–5 EL (2 + 2–3) passt zum Original.
+### thit-kho-trung, Ableitung (AP2, 2026-10-05)
+
+| Kennzahl | Wert | Bemerkung |
+|---|---|---|
+| Original-Posten → Zutat-Zuordnungen | 14 → 17 | zwei Posten enthalten je mehrere Zutaten |
+| passend / abweichend | 15 / 2 | beide Abweichungen = Zucker: Original 4 EL + 1 EL in zwei Posten, generiert 5 EL in einem |
+| Zutaten nur im JSON | 1 | Wasser (1 EL fürs Karamell, `pantry`) |
+| Zutaten ohne summierbare Menge | 3 | Pfeffer „reichlich", Frühlingszwiebeln, Kokoswasser-„Schuss" zusätzlich zur Hauptmenge |
+| Reproduzierbar | ja | zweimal `derive` identisch bis auf `generatedAt` |
+
+**Härtefälle, Stand nach AP2:** Sammelposten (aufgeteilt in Zutaten) ✓ · Dosierung ohne Zahl (`unitless`, erscheint ohne Menge) ✓ · Spannen-Summen (`4–5 EL`) ✓ · `kg`/`l` werden auf `g`/`ml` normiert, Anzeige dann `900–1000 g` statt `900 g – 1 kg` (kosmetisch, offen) · gemischte Einheiten pro Zutat (`unitHint`, `unitMixed`) implementiert, in thit-kho nicht vorgekommen · Gebinde ≠ Bedarf (`buy`) implementiert, erst in vollkornbrötchen testbar · Varianten-abhängige Posten erst in AP6.
+
+**Rendering-Entscheidungen** (`cli shopping`): `###` pro Laden in Besuchsreihenfolge (Online, Buhara, Asialaden, Selgros, REWE Center, Aldi/REWE, Vorrat), darunter `**Warengruppe:**`, Einträge `- [ ] Menge Name, prep *(note)*`, `Optional:`-Präfix, `[x]` bei `inStock`. Das 📲-Export-Plugin würde auf dieser Ausgabe unverändert funktionieren.
 
 ## Entscheidungen
 
@@ -187,11 +200,9 @@ als zwei Posten. Fischsauce 4–5 EL (2 + 2–3) passt zum Original.
 | 2026-10-05 | `action` darf ein Präfix aus mehreren Sätzen sein (nicht nur der erste Satz), solange es reine Handlung ist. Grenze nach Augenmaß: wird der Block fast so lang wie der Text, lieber abgeleitet und mengenfrei. |
 | 2026-10-05 | `reuse: true` an `StepIngredient` ergänzt (Eier, mariniertes Fleisch): skalieren ja, summieren nein. |
 | 2026-10-05 | Check B verschärft: fehlende Sektionen und nicht abgedeckte Zeilen sind Fehler, nicht nur Report. |
+| 2026-10-05 | `derived.sourceHash` = SHA-256 (gekürzt) des JSON ohne `derived`; `cli check` verlangt einen aktuellen Block, sobald die Quelle eine Einkaufsliste hat. Mengen werden intern auf g/ml normiert; `Stück` wird in der Anzeige weggelassen. |
 
 ## Nächste Schritte
 
-- **AP2:** `tools/recipes/shopping.py` + `cli derive` (schreibt `derived.shopping`,
-  `derived.quantities`, `sourceHash`) + `cli shopping` (Markdown im heutigen
-  Format) + Check K gegen die Original-Einkaufsliste. Schema um `derived` erweitern.
 - **AP3:** zweite unabhängige Konvertierung von thit-kho, Feld-Diff; Anleitung v2.
 - Danach Durchstich (Kochmodus-Seite mit thit-kho), dann Entscheidungspunkt vor 2b.
