@@ -468,8 +468,8 @@
       "ref": "gang-1",
       "n": 1,
       "name": "Vorspeise: Smashed Cucumber (Tataki Kyuri)",
-      "serve": "-PT15M",
-      "source": "18:15 Uhr"
+      "serve": "-PT13M",
+      "source": "18:17 Uhr"
     },
     {
       "ref": "gang-2",
@@ -1104,12 +1104,37 @@
                           "text": "20-30 Min"
                         }
                       ],
-                      "ingredients": []
+                      "ingredients": [],
+                      "meta": "*nur Vortag*",
+                      "only": [
+                        "ablauf=vortag"
+                      ]
+                    },
+                    {
+                      "id": "gang-2-fett-abheben",
+                      "label": "10",
+                      "heading": "**10. Fett abheben (2 Min.)**",
+                      "title": "Fett abheben",
+                      "duration": {
+                        "typical": "PT2M",
+                        "source": "2 Min."
+                      },
+                      "text": "Plan B (keine Zeit zum Ruhen): Fett abheben, so viel oben schwimmt — ersatzweise das gekaufte Schweineschmalz nehmen. Die Brühe im 6L-Topf kochend halten.",
+                      "action": "Plan B (keine Zeit zum Ruhen): Fett abheben, so viel oben schwimmt — ersatzweise das gekaufte Schweineschmalz nehmen.",
+                      "ingredients": [],
+                      "meta": "*nur Ein Tag · nach Abseihen + Emulsion*",
+                      "only": [
+                        "ablauf=ein-tag"
+                      ],
+                      "attention": "active",
+                      "after": [
+                        "step:gang-2-abseihen-emulsion"
+                      ]
                     },
                     {
                       "id": "gang-2-abkuehlen-und-lagern",
-                      "label": "10",
-                      "heading": "**10. Abkühlen und lagern (ca. 30 Min.)**",
+                      "label": "11",
+                      "heading": "**11. Abkühlen und lagern (ca. 30 Min.)**",
                       "title": "Abkühlen und lagern",
                       "duration": {
                         "typical": "PT30M",
@@ -1140,8 +1165,8 @@
                     },
                     {
                       "id": "gang-2-bruehe-aufkochen",
-                      "label": "11",
-                      "heading": "**11. Brühe aufkochen (ca. 15 Min.)**",
+                      "label": "12",
+                      "heading": "**12. Brühe aufkochen (ca. 15 Min.)**",
                       "title": "Brühe aufkochen",
                       "duration": {
                         "typical": "PT15M",
@@ -1205,8 +1230,8 @@
                   "steps": [
                     {
                       "id": "gang-2-sesam-roesten",
-                      "label": "12",
-                      "heading": "**12. Sesam rösten (5 Min.)**",
+                      "label": "13",
+                      "heading": "**13. Sesam rösten (5 Min.)**",
                       "title": "Sesam rösten",
                       "duration": {
                         "typical": "PT5M",
@@ -1256,8 +1281,8 @@
                     },
                     {
                       "id": "gang-2-tare-mischen",
-                      "label": "13",
-                      "heading": "**13. Tare mischen (5 Min.)**",
+                      "label": "14",
+                      "heading": "**14. Tare mischen (5 Min.)**",
                       "title": "Tare mischen",
                       "duration": {
                         "typical": "PT5M",
@@ -1343,8 +1368,8 @@
                     },
                     {
                       "id": "gang-2-tare-abschmecken",
-                      "label": "14",
-                      "heading": "**14. Tare abschmecken (2 Min.)**",
+                      "label": "15",
+                      "heading": "**15. Tare abschmecken (2 Min.)**",
                       "title": "Tare abschmecken",
                       "duration": {
                         "typical": "PT2M",
@@ -1399,8 +1424,8 @@
                   "steps": [
                     {
                       "id": "gang-2-hack-braten",
-                      "label": "15",
-                      "heading": "**15. Hack braten (ca. 16 Min.)**",
+                      "label": "16",
+                      "heading": "**16. Hack braten (ca. 16 Min.)**",
                       "title": "Hack braten",
                       "duration": {
                         "typical": "PT16M",
@@ -1475,8 +1500,8 @@
                     },
                     {
                       "id": "gang-2-hack-aromaten",
-                      "label": "16",
-                      "heading": "**16. Hack-Aromaten (1 Min.)**",
+                      "label": "17",
+                      "heading": "**17. Hack-Aromaten (1 Min.)**",
                       "title": "Hack-Aromaten",
                       "duration": {
                         "typical": "PT1M",
@@ -1517,8 +1542,8 @@
                     },
                     {
                       "id": "gang-2-glasieren",
-                      "label": "17",
-                      "heading": "**17. Glasieren (3 Min.)**",
+                      "label": "18",
+                      "heading": "**18. Glasieren (3 Min.)**",
                       "title": "Glasieren",
                       "duration": {
                         "typical": "PT3M",
@@ -1581,8 +1606,8 @@
                     },
                     {
                       "id": "gang-2-durchgaren-check",
-                      "label": "18",
-                      "heading": "**18. Durchgaren-Check (1 Min.)**",
+                      "label": "19",
+                      "heading": "**19. Durchgaren-Check (1 Min.)**",
                       "title": "Durchgaren-Check",
                       "duration": {
                         "typical": "PT1M",
@@ -1608,8 +1633,8 @@
                     },
                     {
                       "id": "gang-2-lagern",
-                      "label": "19",
-                      "heading": "**19. Lagern (ca. 30 Min., passiv)**",
+                      "label": "20",
+                      "heading": "**20. Lagern (ca. 30 Min., passiv)**",
                       "title": "Lagern",
                       "duration": {
                         "typical": "PT30M",
@@ -1655,8 +1680,8 @@
                   "steps": [
                     {
                       "id": "gang-2-eier-marinade",
-                      "label": "20",
-                      "heading": "**20. Eier-Marinade (ca. 30 Min.)**",
+                      "label": "21",
+                      "heading": "**21. Eier-Marinade (ca. 30 Min.)**",
                       "title": "Eier-Marinade",
                       "duration": {
                         "typical": "PT30M",
@@ -1714,8 +1739,8 @@
                     },
                     {
                       "id": "gang-2-eier-kochen",
-                      "label": "21",
-                      "heading": "**21. Eier kochen (ca. 12 Min.)**",
+                      "label": "22",
+                      "heading": "**22. Eier kochen (ca. 12 Min.)**",
                       "title": "Eier kochen",
                       "duration": {
                         "typical": "PT12M",
@@ -1784,8 +1809,8 @@
                     },
                     {
                       "id": "gang-2-schocken-pellen",
-                      "label": "22",
-                      "heading": "**22. Schocken + pellen (10 Min.)**",
+                      "label": "23",
+                      "heading": "**23. Schocken + pellen (10 Min.)**",
                       "title": "Schocken + pellen",
                       "duration": {
                         "typical": "PT10M",
@@ -1807,8 +1832,8 @@
                     },
                     {
                       "id": "gang-2-eier-marinieren",
-                      "label": "23",
-                      "heading": "**23. Eier marinieren (4 Std., passiv)**",
+                      "label": "24",
+                      "heading": "**24. Eier marinieren (4 Std., passiv)**",
                       "title": "Eier marinieren",
                       "duration": {
                         "typical": "PT4H",
@@ -1838,8 +1863,8 @@
                     },
                     {
                       "id": "gang-2-eier-schneiden",
-                      "label": "24",
-                      "heading": "**24. Eier schneiden (2 Min.)**",
+                      "label": "25",
+                      "heading": "**25. Eier schneiden (2 Min.)**",
                       "title": "Eier schneiden",
                       "duration": {
                         "typical": "PT2M",
@@ -1876,8 +1901,8 @@
                   "steps": [
                     {
                       "id": "gang-2-sprossen",
-                      "label": "25",
-                      "heading": "**25. Sprossen (ca. 10 Min.)**",
+                      "label": "26",
+                      "heading": "**26. Sprossen (ca. 10 Min.)**",
                       "title": "Sprossen",
                       "duration": {
                         "typical": "PT10M",
@@ -1962,8 +1987,8 @@
                     },
                     {
                       "id": "gang-2-zwiebel-fuer-den-wok",
-                      "label": "26",
-                      "heading": "**26. Zwiebel für den Wok (5 Min.)**",
+                      "label": "27",
+                      "heading": "**27. Zwiebel für den Wok (5 Min.)**",
                       "title": "Zwiebel für den Wok",
                       "duration": {
                         "typical": "PT5M",
@@ -1987,8 +2012,8 @@
                     },
                     {
                       "id": "gang-2-fruehlingszwiebeln",
-                      "label": "27",
-                      "heading": "**27. Frühlingszwiebeln (10 Min.)**",
+                      "label": "28",
+                      "heading": "**28. Frühlingszwiebeln (10 Min.)**",
                       "title": "Frühlingszwiebeln",
                       "duration": {
                         "typical": "PT10M",
@@ -2012,8 +2037,8 @@
                     },
                     {
                       "id": "gang-2-mais",
-                      "label": "28",
-                      "heading": "**28. Mais (5 Min.)**",
+                      "label": "29",
+                      "heading": "**29. Mais (5 Min.)**",
                       "title": "Mais",
                       "duration": {
                         "typical": "PT5M",
@@ -2060,8 +2085,8 @@
                     },
                     {
                       "id": "gang-2-butter",
-                      "label": "29",
-                      "heading": "**29. Butter (2 Min.)**",
+                      "label": "30",
+                      "heading": "**30. Butter (2 Min.)**",
                       "title": "Butter",
                       "duration": {
                         "typical": "PT2M",
@@ -2076,8 +2101,8 @@
                     },
                     {
                       "id": "gang-2-wok-aromaten",
-                      "label": "30",
-                      "heading": "**30. Wok-Aromaten (5 Min.)**",
+                      "label": "31",
+                      "heading": "**31. Wok-Aromaten (5 Min.)**",
                       "title": "Wok-Aromaten",
                       "duration": {
                         "typical": "PT5M",
@@ -2125,14 +2150,15 @@
                   "steps": [
                     {
                       "id": "gang-2-nudelwasser",
-                      "label": "31",
-                      "heading": "**31. Nudelwasser (ca. 15 Min.)**",
+                      "label": "32",
+                      "heading": "**32. Nudelwasser (ca. 15 Min., passiv)**",
                       "title": "Nudelwasser",
                       "duration": {
                         "typical": "PT15M",
                         "source": "ca. 15 Min.",
                         "estimated": true
                       },
+                      "attention": "passive",
                       "text": "- **Wasser:** Der zweite große Topf (6L, oder der 14er nach dem Abseihen) mit **mind. 4 L Wasser**, sprudelnd kochend, **ungesalzen** — Ramen-Nudeln werden in Japan ohne Salz gekocht, das Kansui gibt ihnen Geschmack, das Salz kommt aus der Tare.\n- **Pro Durchgang nur 2 Portionen** (Kinder: 2 × 75-100 g frisch; Durchgang 2: 75 g GDM + 150 g; Durchgang 3: 2 × 150 g; trocken jeweils \\~⅔ davon). Mehr auf einmal lässt das Wasser einbrechen, die Nudeln verkleben und werden außen matschig.\n- **Zeit:** Packungsangabe **minus 10-15 Sek.** — sie garen in der kochend heißen Brühe nach. Frische dicke Nudeln \\~2-2,5 Min, Hakubaku trocken \\~4 Min. Die ersten 10 Sek. mit Stäbchen auseinanderrühren.\n- **Abgießen:** In ein Sieb, **kräftig ausschütteln** (Nudelwasser verdünnt die Brühe und macht sie schleimig), sofort in die Schüssel, mit den Stäbchen einmal zusammenfalten.\n- **Zwischen den Durchgängen** das Wasser wieder sprudeln lassen, bevor die nächsten Nudeln reingehen.",
                       "action": "- **Wasser:** Der zweite große Topf (6L, oder der 14er nach dem Abseihen) mit **mind.",
                       "limits": [
@@ -2193,13 +2219,12 @@
                           "units": 1
                         }
                       ],
-                      "attention": "attended",
                       "after": []
                     },
                     {
                       "id": "gang-2-mise-en-place",
-                      "label": "32",
-                      "heading": "**32. Mise en Place (ca. 15 Min.)**",
+                      "label": "33",
+                      "heading": "**33. Mise en Place (ca. 15 Min.)**",
                       "title": "Mise en Place",
                       "duration": {
                         "typical": "PT15M",
@@ -2209,7 +2234,7 @@
                       "text": "Sapporo-Wok-Choreografie (3 Durchgänge à 2 Schüsseln). **Gefäß:** Die größte Edelstahlpfanne mit hohem Rand (28-30 cm) oder der 6L-Topf — ein echter Wok wäre ideal, geht aber auch so. Der Topf mit der kochenden Brühe steht direkt daneben, die Kelle (\\~150 ml) liegt bereit. Alles griffbereit, bevor der erste Durchgang startet:\n- 6 Schüsseln mit heißem Wasser vorgewärmt, Wasser erst unmittelbar vor dem Füllen ausschütten\n- Brühe **kochend**, Nudelwasser **sprudelnd**\n- Tare, Wok-Fett, Aromaten (3 Portionen), Zwiebelwürfel (3 × 60 g), Sprossen (3 × 100 g), Niku-Miso kalt, Eier halbiert, Mais geröstet, Frühlingszwiebeln, Butterwürfel, Rayu, Doubanjiang\n- Timer, Küchenschere (Kinder), Schneebesen",
                       "action": "Sapporo-Wok-Choreografie (3 Durchgänge à 2 Schüsseln).",
                       "ingredients": [],
-                      "meta": "*nach Lagern, Eier schneiden, Sprossen, Zwiebel für den Wok, Frühlingszwiebeln, Mais, Butter, Wok-Aromaten, Tare abschmecken, Wok-Fett sichern*",
+                      "meta": "*nach Lagern, Eier schneiden, Sprossen, Zwiebel für den Wok, Frühlingszwiebeln, Mais, Butter, Wok-Aromaten, Tare abschmecken, Wok-Fett sichern, Fett abheben*",
                       "attention": "active",
                       "after": [
                         "step:gang-2-lagern",
@@ -2221,13 +2246,14 @@
                         "step:gang-2-butter",
                         "step:gang-2-wok-aromaten",
                         "step:gang-2-tare-abschmecken",
-                        "step:gang-2-wok-fett-sichern"
+                        "step:gang-2-wok-fett-sichern",
+                        "step:gang-2-fett-abheben"
                       ]
                     },
                     {
                       "id": "gang-2-wok-durchgaenge",
-                      "label": "33",
-                      "heading": "**33. Wok-Durchgänge (ca. 12 Min.)**",
+                      "label": "34",
+                      "heading": "**34. Wok-Durchgänge (ca. 12 Min.)**",
                       "title": "Wok-Durchgänge",
                       "duration": {
                         "typical": "PT12M",
@@ -3098,6 +3124,7 @@
             "text": "21:30 Wok-Fett sichern: Wok-Fett abheben. Abkühlen und lagern: Brühe im Eiswasser-Bad abkühlen, Kühlschrank.",
             "steps": [
               "gang-2-abkuehlen-und-lagern",
+              "gang-2-fett-abheben",
               "gang-2-wok-fett-sichern"
             ],
             "course": "gang-2"
@@ -3314,12 +3341,20 @@
             "clock": "16:30"
           },
           {
-            "id": "uhr-17-45",
-            "label": "17:45 Uhr",
+            "id": "uhr-17-15",
+            "label": "17:15 Uhr",
             "day": 0,
             "part": "service",
-            "at": "-PT45M",
-            "clock": "17:45"
+            "at": "-PT1H15M",
+            "clock": "17:15"
+          },
+          {
+            "id": "uhr-17-40",
+            "label": "17:40 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT50M",
+            "clock": "17:40"
           },
           {
             "id": "uhr-18-00",
@@ -3330,20 +3365,12 @@
             "clock": "18:00"
           },
           {
-            "id": "uhr-18-05",
-            "label": "18:05 Uhr",
+            "id": "uhr-18-17",
+            "label": "18:17 Uhr",
             "day": 0,
             "part": "service",
-            "at": "-PT25M",
-            "clock": "18:05"
-          },
-          {
-            "id": "uhr-18-15",
-            "label": "18:15 Uhr",
-            "day": 0,
-            "part": "service",
-            "at": "-PT15M",
-            "clock": "18:15"
+            "at": "-PT13M",
+            "clock": "18:17"
           },
           {
             "id": "uhr-18-20",
@@ -3476,35 +3503,35 @@
             "course": "gang-1"
           },
           {
-            "phase": "uhr-17-45",
-            "text": "Sprossen (GDM-Extraportion blanchieren), Mais: rösten, Mise en Place: Topping-Station, Eier schneiden: halbieren.",
+            "phase": "uhr-17-15",
+            "text": "Sprossen (GDM-Extraportion blanchieren), Mais: rösten, Eier schneiden: halbieren.",
             "steps": [
               "gang-2-eier-schneiden",
               "gang-2-mais",
-              "gang-2-mise-en-place",
               "gang-2-sprossen"
             ],
             "course": "gang-2"
           },
           {
-            "phase": "uhr-18-00",
-            "text": "Nudelwasser: aufsetzen.",
+            "phase": "uhr-17-40",
+            "text": "Mise en Place: Topping-Station. Nudelwasser: aufsetzen.",
             "steps": [
+              "gang-2-mise-en-place",
               "gang-2-nudelwasser"
             ],
             "course": "gang-2"
           },
           {
-            "phase": "uhr-18-05",
-            "text": "Abseihen + Emulsion: Brühe abseihen, durchdrücken, **Stabmixer**, auf \\~3 L bringen; Wok-Fett sichern: Fett abheben (ersatzweise gekauftes Schmalz), im 6L-Topf kochend halten.",
+            "phase": "uhr-18-00",
+            "text": "Abseihen + Emulsion: Brühe abseihen, durchdrücken, **Stabmixer**, auf \\~3 L bringen (Brühe hat dann 7 h); Fett abheben (ersatzweise gekauftes Schmalz), im 6L-Topf kochend halten.",
             "steps": [
               "gang-2-abseihen-emulsion",
-              "gang-2-wok-fett-sichern"
+              "gang-2-fett-abheben"
             ],
             "course": "gang-2"
           },
           {
-            "phase": "uhr-18-15",
+            "phase": "uhr-18-17",
             "text": "Schüsseln vorwärmen. **Gurken servieren** (Smashed Cucumber).",
             "steps": [
               "gang-1-gurken-servieren"
@@ -3560,8 +3587,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T19:29:42Z",
-    "sourceHash": "de574913259ceecb",
+    "generatedAt": "2026-10-05T19:32:56Z",
+    "sourceHash": "c4a97d7f43d8a781",
     "select": {
       "ablauf": "vortag"
     },

@@ -98,11 +98,13 @@ Vegetarischer Mezze-Abend, bewusst als **eigenständige Richtung** gebaut und ni
 | Zeit | Schritt |
 |---|---|
 | T−75 | Ofen auf 220 °C. Auberginen mit dem Brenner verkohlen, im Ofen fertig garen, dann abtropfen lassen |
-| T−60 | Kichererbsen mit etwas Kochwasser erhitzen → **warm** zu Hummus mixen |
+| T−70 | Rohkost schneiden, während die Auberginen im Ofen sind |
+| T−60 | Kichererbsen mit etwas Kochwasser erhitzen → **warm** zu Hummus mixen, gleich anrichten (Hummus anrichten: Mulde, Öl, Topping) |
 | T−45 | Ofen auf 200 °C. Fatayer backen: aus dem Frost aufs Blech, Eigelb-Streiche, backen (20–22 Min.) |
-| T−40 | Moutabal mischen (fertig rühren). Labneh anrichten, Muhammara abschmecken, Hummus anrichten (Mulde, Öl, Topping) |
+| T−40 | Moutabal mischen (fertig rühren). Labneh anrichten, Muhammara abschmecken (Mulde, Öl, Topping) |
+| T−25 | Brot und Oliven: Fatayer raus, Fladenbrot in den warmen Ofen, Oliven in die Schale |
 | T−20 | Frittieröl auf 170–175 °C. Sambousek frittieren (in Chargen), abtropfen |
-| T−5 | Brot, Rohkost, Oliven: Fladenbrot kurz in den Ofen, Rohkost schneiden, alles auf den Tisch |
+| T−0 | Alles auf den Tisch |
 
 *Komprimierte 2-Tage-Variante: Tag 2 und 3 zusammenlegen geht, macht den Kochtag aber zu einem 4-Std.-Block und verschenkt den Über-Nacht-Gewinn der Muhammara. Nicht empfohlen beim ersten Durchgang.*
 
@@ -248,10 +250,13 @@ Auf dem Blech vorfrosten, dann in den Gefrierbeutel.
 
 **Dazu (Abend, à la minute):**
 
-**29. Brot, Rohkost, Oliven (10 Min.)**
+**29. Rohkost (10 Min.)**
+*jederzeit*
+1 Gurke, 3 Karotten, 1 Bund Radieschen in Sticks/Hälften.
+
+**30. Brot und Oliven (5 Min.)**
 *jederzeit · Ofen 200 °C*
 - **Fladenbrot:** kurz im Ofen aufwärmen. Optional 1 Fladen in Ecken schneiden, mit 2 EL Olivenöl + Za'atar bestreichen, 8 Min. bei 200 °C → Chips für die Dips.
-- **Rohkost:** 1 Gurke, 3 Karotten, 1 Bund Radieschen in Sticks/Hälften.
 - **Oliven** in eine kleine Schale — fertig.
 
 ## Kinder-Anpassung

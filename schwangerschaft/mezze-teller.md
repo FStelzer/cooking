@@ -104,10 +104,11 @@ des Proteins und steht als eigener Punkt im [Ideen-Backlog](/ideen.md).
 | Zeit | Schritt |
 |---|---|
 | T−60 | Ofen auf 220 °C. Auberginen mit dem Brenner verkohlen, im Ofen fertig garen, dann abtropfen lassen. Gasgrill vorheizen (falls Kafta vom Grill) |
-| T−45 | Kichererbsen mit etwas Kochwasser erhitzen → **warm** zu Hummus mixen |
-| T−30 | Moutabal mischen (fertig rühren). Labneh anrichten, Muhammara abschmecken, Hummus anrichten (Mulde, Öl, Topping). Rohkost schneiden |
+| T−55 | Rohkost schneiden, während die Auberginen im Ofen sind |
+| T−45 | Kichererbsen mit etwas Kochwasser erhitzen → **warm** zu Hummus mixen, gleich anrichten (Hummus anrichten: Mulde, Öl, Topping) |
+| T−30 | Moutabal mischen (fertig rühren). Labneh anrichten, Muhammara abschmecken (Mulde, Öl, Topping) |
 | T−15 | Kafta garen (grillen/braten), **Kerntemperatur prüfen**, kurz ruhen lassen |
-| T−5 | Fladen, Rohkost, Oliven: Fladen kurz in den Ofen, alles auf den Tisch |
+| T−5 | Fladen und Oliven: Fladen kurz in den Ofen, alles auf den Tisch |
 
 ## Zubereitung
 
@@ -202,12 +203,15 @@ In 12 Portionen à \~50 g teilen. Mit nassen Händen zu \~10 cm langen, 2–2,5 
 
 **Dazu (Abend, à la minute):**
 
-**19. Fladen, Rohkost, Oliven (15 Min.)**
+**19. Rohkost (10 Min.)**
 *jederzeit*
 - **Rohkost:** 1 Gurke, 3 Karotten, 1 Bund Radieschen, 1 Paprika, 1 Kohlrabi, 2 Stangen Sellerie in Sticks/Hälften — großzügig, das ist der Hauptträger für die Dips.
+- **Optional Beilagensalat zur Kafta:** 2 Tomaten + ½ Gurke gewürfelt, Rest Petersilie, Zitrone, Salz, Schuss Olivenöl.
+
+**20. Fladen und Oliven (5 Min.)**
+*jederzeit*
 - **Vollkorn-Fladen:** 4 Fladen 3–4 Min. im Ofen aufwärmen, halbieren.
 - **Oliven** in eine kleine Schale — fertig.
-- **Optional Beilagensalat zur Kafta:** 2 Tomaten + ½ Gurke gewürfelt, Rest Petersilie, Zitrone, Salz, Schuss Olivenöl.
 
 ## Schwangerschaft & GDM
 

@@ -210,13 +210,18 @@ Ab 8 h, ideal 10-12 h: Fertig ist die Brühe, wenn sie **milchig-beige und dickf
 Hitze aus. Brühe durch das feine Sieb in den 6L-Topf gießen (Passiertuch **nicht** nötig, sie soll nicht klar sein). Mit der Kelle das weiche Mark, das Gemüse und die zerfallenen Füße durchs Sieb drücken — das ist Körper. Dann **30 Sek. mit dem Stabmixer** in der heißen Brühe mixen: Das zwingt das Fett, das sich beim Stehen oben absetzt, zurück in die Emulsion (Trick aus dem Book of Ramen). Ausbeute-Ziel: **3 L**. Bei mehr: offen einkochen. Bei weniger als 2,7 L: mit kochendem Wasser strecken (sie verträgt bis \~20 % Wasser, ohne dünn zu wirken). **Nicht salzen** — das macht die Tare.
 
 **9. Wok-Fett sichern (20–30 Min., passiv)**
+*nur Vortag*
 Brühe 20-30 Min ruhen lassen, oben schwimmt eine Fettschicht — davon \~100-150 ml abheben, in ein Glas, kalt stellen. Das ist das Schmalz für die Wok-Durchgänge (siehe „Wok-Durchgänge“). Bei zu wenig: das gekaufte Schweineschmalz nehmen.
 
-**10. Abkühlen und lagern (ca. 30 Min.)**
+**10. Fett abheben (2 Min.)**
+*nur Ein Tag · nach Abseihen + Emulsion*
+Plan B (keine Zeit zum Ruhen): Fett abheben, so viel oben schwimmt — ersatzweise das gekaufte Schweineschmalz nehmen. Die Brühe im 6L-Topf kochend halten.
+
+**11. Abkühlen und lagern (ca. 30 Min.)**
 *nur Vortag · nach Wok-Fett sichern*
 Vortag (Plan A): Topf in die Spüle, kaltes Wasser drumherum, gelegentlich rühren, bis lauwarm (\~30 Min); abgedeckt in den Kühlschrank. Sie geliert zu einem festen Block — genau richtig.
 
-**11. Brühe aufkochen (ca. 15 Min.)**
+**12. Brühe aufkochen (ca. 15 Min.)**
 *nur Vortag · nach Abkühlen und lagern · Herd*
 Am Kochtag im 6L-Topf aufkochen, 1 Min sprudeln lassen, nochmal 15 Sek. mixen, dann auf kleiner Flamme **kochend** halten (Miso-Ramen wird sehr heiß serviert).
 
@@ -233,14 +238,14 @@ Am Kochtag im 6L-Topf aufkochen, 1 Min sprudeln lassen, nochmal 15 Sek. mixen, d
 - 2 Knoblauchzehen, fein gerieben
 - 2 cm Ingwer, fein gerieben
 
-**12. Sesam rösten (5 Min.)**
+**13. Sesam rösten (5 Min.)**
 *jederzeit · Herd*
 3 EL weiße Sesamsamen in der trockenen Pfanne bei mittlerer Hitze 3-4 Min unter Schwenken rösten, bis sie hellgold sind und nussig riechen — nicht braun, dann werden sie bitter. Im Mörser zu einer groben, leicht öligen Paste zerstoßen (alternativ Stabmixer-Becher, 20 Sek.). Das ist der Unterschied zwischen Supermarkt-Miso-Ramen und Sapporo: die Sesampaste gibt der Tare Fett, Nussigkeit und Bindung.
 
-**13. Tare mischen (5 Min.)**
+**14. Tare mischen (5 Min.)**
 5 EL Shiro Miso, 3 EL Aka Miso, 3 EL Sojasauce, 1 EL Reisessig, 1 EL Wasser, 2 EL Mirin, 1 EL Sesamöl, die Sesampaste, 2 geriebene Knoblauchzehen und 2 cm geriebenen Ingwer in einer Schüssel mit dem Schneebesen zu einer homogenen, streichfähigen Paste verrühren. Sie soll dick sein wie Erdnussbutter — nicht dünner, sonst schmilzt sie im Wok, statt anzurösten.
 
-**14. Tare abschmecken (2 Min.)**
+**15. Tare abschmecken (2 Min.)**
 1 TL Tare in 60 ml heißem Wasser auflösen und probieren — so schmeckt sie später verdünnt. Zu flach → 1 EL Aka Miso mehr. Zu salzig → 1 EL Shiro Miso mehr (Shiro ist milder). Abgedeckt in den Kühlschrank; sie wird über Nacht runder.
 
 **Dosierung:** 2,5 EL pro Erwachsenen-Schüssel, 1-1,5 EL pro Kinder-Schüssel (siehe Wok-Durchgänge). Nicht kochen — nur die 20 Sek. Anrösten im Wok, dann sofort Brühe drauf.
@@ -253,23 +258,23 @@ Am Kochtag im 6L-Topf aufkochen, 1 Min sprudeln lassen, nochmal 15 Sek. mixen, d
 - 1 EL geriebener Knoblauch + Ingwer (je \~½ EL)
 - **Glasur (vormischen):** 2 EL (\~36 g) Shiro Miso, 1 EL (15 ml) Sojasauce, 1 EL (15 ml) Wasser, 1 EL Zucker
 
-**15. Hack braten (ca. 16 Min.)**
+**16. Hack braten (ca. 16 Min.)**
 *jederzeit · Herd*
 600 g Schweinehack in zwei Chargen braten: Edelstahlpfanne (28 cm) mit ½ EL Sesamöl auf hoher Stufe heiß werden lassen, **300 g Hack** hineingeben, mit dem Pfannenwender flach andrücken und **2 Min liegen lassen**, bis die Unterseite braun ist. Erst dann zerkrümeln und weiterbraten, bis der Fleischsaft verdampft ist und das Hack in seinem eigenen Fett brutzelt und stellenweise knusprig wird (\~6-8 Min). Rausnehmen, mit den zweiten 300 g und dem restlichen ½ EL Sesamöl wiederholen. Zwei Chargen sind kein Perfektionismus: 600 g auf einmal kochen im eigenen Saft grau, statt zu bräunen (Bulgogi-Learning).
 
-**16. Hack-Aromaten (1 Min.)**
+**17. Hack-Aromaten (1 Min.)**
 *Herd*
 Beide Chargen zurück in die Pfanne, Hitze auf mittel, 1 EL geriebenen Knoblauch/Ingwer 30 Sek. mitbraten, bis es duftet.
 
-**17. Glasieren (3 Min.)**
+**18. Glasieren (3 Min.)**
 *Herd*
 Die vorgemischte Glasur (2 EL Shiro Miso, 1 EL Sojasauce, 1 EL Wasser, 1 EL Zucker) über das Hack, Hitze auf mittel-niedrig, 2-3 Min rühren, bis nichts mehr flüssig ist und das Fleisch klebrig glänzt. Nicht auf hoher Stufe: Miso + Zucker setzen in Edelstahl sofort schwarz an.
 
-**18. Durchgaren-Check (1 Min.)**
+**19. Durchgaren-Check (1 Min.)**
 *fertig bei ≥ 72 °C Kern*
 Nach dem Knusprig-Braten ist das ohnehin erledigt, aber sicherheitshalber: keine rosa Krümel, größere Klumpen zerteilen, Kerntemperatur ≥ 72 °C (Toxoplasmose-Regel aus dem Leitfaden).
 
-**19. Lagern (ca. 30 Min., passiv)**
+**20. Lagern (ca. 30 Min., passiv)**
 Abkühlen lassen, **abgedeckt in den Kühlschrank** (hält 3 Tage). Es kommt kalt in den Wok — nicht vorher aufwärmen.
 
 **Ajitsuke Tamago — marinierte Eier (Kochtag früh, mind. 4 h, max. 24 h, Kühlschrank):**
@@ -278,54 +283,54 @@ Abkühlen lassen, **abgedeckt in den Kühlschrank** (hält 3 Tage). Es kommt kal
 - 6 Eier (M), aus dem Kühlschrank
 - **Blitz-Marinade:** 100 ml Sojasauce, 100 ml Wasser, 30 ml Mirin, 1 EL Zucker
 
-**20. Eier-Marinade (ca. 30 Min.)**
+**21. Eier-Marinade (ca. 30 Min.)**
 *jederzeit · Herd*
 100 ml Sojasauce, 100 ml Wasser, 30 ml Mirin und 1 EL Zucker in einem kleinen Topf erwärmen, bis der Zucker gelöst ist. Komplett abkühlen lassen — warme Marinade gart die Eier nach.
 
-**21. Eier kochen (ca. 12 Min.)**
+**22. Eier kochen (ca. 12 Min.)**
 *jederzeit · Herd*
 Wasser in einem mittleren Topf sprudelnd aufkochen. Jedes Ei am stumpfen Ende mit einer Nadel anpieken (Luftkammer — verhindert Platzen und erleichtert das Pellen). 6 Eier mit einem Löffel einzeln ins Wasser gleiten lassen, Timer sofort starten, Hitze so, dass es leise sprudelt. **3 Eier nach 9:30 Min** herausfischen (Eigelb fest, aber noch nicht mehlig — für die Kinder und die Schwangere). **3 Eier nach 6:30 Min** herausfischen (wachsweich, für die übrigen Erwachsenen). Praktisch: die 6:30-Eier zuerst rausnehmen, die anderen weiterkochen lassen.
 
-**22. Schocken + pellen (10 Min.)**
+**23. Schocken + pellen (10 Min.)**
 Sofort für 5 Min in Eiswasser. Dann pellen — am besten unter Wasser oder unter dem laufenden Hahn, die Schale löst sich sauberer, und das weiche Ei reißt nicht.
 
-**23. Eier marinieren (4 Std., passiv)**
+**24. Eier marinieren (4 Std., passiv)**
 *nach Schocken + pellen, Eier-Marinade*
 Eier in einen Gefrierbeutel, kalte Marinade drauf, Luft rausdrücken, verschließen (so sind sie rundum bedeckt, ohne Marinade zu verschwenden). **Mind. 4 h, max. 24 h im Kühlschrank** — länger wird das Eiweiß gummiartig und zu salzig. Die festen Eier vorher mit Filzstift markieren, damit beim Anrichten nichts vertauscht wird.
 
-**24. Eier schneiden (2 Min.)**
+**25. Eier schneiden (2 Min.)**
 *nach Eier marinieren*
 Kurz vor dem Anrichten mit einem dünnen, nassen Messer **längs** halbieren (nicht sägen — ein Zug). Das GDM-Ei bleibt ganz.
 
 **Gemüse-Toppings (Kochtag nachmittags, Kühlschrank):**
 
-**25. Sprossen (ca. 10 Min.)**
+**26. Sprossen (ca. 10 Min.)**
 *jederzeit · Herd*
 400 g Sojasprossen kurz abbrausen, abtropfen lassen. **300 g** (3 × 100 g) gehen roh in die Wok-Durchgänge — dort werden sie 1-2 Min scharf gebraten und danach 30-60 Sek. in kochender Brühe mitgekocht, also durchgegart. **\~100 g** für die GDM-Extraportion separat 2 Min in kochendem Wasser blanchieren, abgießen, mit 1 TL Sesamöl und 1 Prise Salz mischen. Rohe oder nur 30 Sek. angebratene Sprossen sind ein klassisches Listerien-/EHEC-Vehikel — der Leitfaden sagt „nur gegart". Bei der Fallback-Schüssel-Methode alle 400 g blanchieren.
 
-**26. Zwiebel für den Wok (5 Min.)**
+**27. Zwiebel für den Wok (5 Min.)**
 *jederzeit*
 1 Gemüsezwiebel (\~200 g) in feine Würfel, 3 Portionen à \~60 g.
 
-**27. Frühlingszwiebeln (10 Min.)**
+**28. Frühlingszwiebeln (10 Min.)**
 *jederzeit*
 1 Bund in feine Ringe, 10 Min in Eiswasser (werden kross und milder), abtropfen.
 
-**28. Mais (5 Min.)**
+**29. Mais (5 Min.)**
 *jederzeit · Herd*
 1 Dose Zuckermais abgießen. Kurz vor dem Servieren in der Pfanne mit 1 TL Butter 2 Min anrösten, bis einzelne Körner Farbe nehmen (Mikrowelle geht auch, schmeckt aber nur nach Dose).
 
-**29. Butter (2 Min.)**
+**30. Butter (2 Min.)**
 *jederzeit*
 60 g in 6 Würfel à \~10 g schneiden, zurück in den Kühlschrank — sie soll **eiskalt** auf die Schüssel.
 
-**30. Wok-Aromaten (5 Min.)**
+**31. Wok-Aromaten (5 Min.)**
 *jederzeit*
 3 Knoblauchzehen und 2 cm Ingwer fein reiben, in 3 Portionen à \~1 TL aufteilen.
 
 **Nudeln und Anrichten (à la minute):**
 
-**31. Nudelwasser (ca. 15 Min.)**
+**32. Nudelwasser (ca. 15 Min., passiv)**
 *jederzeit · Herd*
 - **Wasser:** Der zweite große Topf (6L, oder der 14er nach dem Abseihen) mit **mind. 4 L Wasser**, sprudelnd kochend, **ungesalzen** — Ramen-Nudeln werden in Japan ohne Salz gekocht, das Kansui gibt ihnen Geschmack, das Salz kommt aus der Tare.
 - **Pro Durchgang nur 2 Portionen** (Kinder: 2 × 75-100 g frisch; Durchgang 2: 75 g GDM + 150 g; Durchgang 3: 2 × 150 g; trocken jeweils \~⅔ davon). Mehr auf einmal lässt das Wasser einbrechen, die Nudeln verkleben und werden außen matschig.
@@ -333,8 +338,8 @@ Kurz vor dem Anrichten mit einem dünnen, nassen Messer **längs** halbieren (ni
 - **Abgießen:** In ein Sieb, **kräftig ausschütteln** (Nudelwasser verdünnt die Brühe und macht sie schleimig), sofort in die Schüssel, mit den Stäbchen einmal zusammenfalten.
 - **Zwischen den Durchgängen** das Wasser wieder sprudeln lassen, bevor die nächsten Nudeln reingehen.
 
-**32. Mise en Place (ca. 15 Min.)**
-*nach Lagern, Eier schneiden, Sprossen, Zwiebel für den Wok, Frühlingszwiebeln, Mais, Butter, Wok-Aromaten, Tare abschmecken, Wok-Fett sichern*
+**33. Mise en Place (ca. 15 Min.)**
+*nach Lagern, Eier schneiden, Sprossen, Zwiebel für den Wok, Frühlingszwiebeln, Mais, Butter, Wok-Aromaten, Tare abschmecken, Wok-Fett sichern, Fett abheben*
 Sapporo-Wok-Choreografie (3 Durchgänge à 2 Schüsseln). **Gefäß:** Die größte Edelstahlpfanne mit hohem Rand (28-30 cm) oder der 6L-Topf — ein echter Wok wäre ideal, geht aber auch so. Der Topf mit der kochenden Brühe steht direkt daneben, die Kelle (\~150 ml) liegt bereit.
 
 Alles griffbereit, bevor der erste Durchgang startet:
@@ -343,7 +348,7 @@ Alles griffbereit, bevor der erste Durchgang startet:
 - Tare, Wok-Fett, Aromaten (3 Portionen), Zwiebelwürfel (3 × 60 g), Sprossen (3 × 100 g), Niku-Miso kalt, Eier halbiert, Mais geröstet, Frühlingszwiebeln, Butterwürfel, Rayu, Doubanjiang
 - Timer, Küchenschere (Kinder), Schneebesen
 
-**33. Wok-Durchgänge (ca. 12 Min.)**
+**34. Wok-Durchgänge (ca. 12 Min.)**
 *nach Mise en Place, Brühe aufkochen, Abseihen + Emulsion, Nudelwasser · 2 Pfannen*
 3 × ein Durchgang (\~3,5 Min, für 2 Erwachsenen-Schüsseln):
 
@@ -509,10 +514,10 @@ Jetzt 3-4 EL Yuzu-Saft einrühren (erst bei ≤ 30 °C, damit die Säure die Mil
 - 15:00 Uhr: Gemüse und Wok-Portionen vorbereiten: Zwiebel für den Wok, Wok-Aromaten, Frühlingszwiebeln, Sprossen, Butter: Butterwürfel.
 - 16:00 Uhr: Aromaten: in die Brühe.
 - 16:30 Uhr: Klopfen, Entwässern, Dressing: Gurken klopfen, salzen, marinieren (Ziehen lassen).
-- 17:45 Uhr: Sprossen (GDM-Extraportion blanchieren), Mais: rösten, Mise en Place: Topping-Station, Eier schneiden: halbieren.
-- 18:00 Uhr: Nudelwasser: aufsetzen.
-- 18:05 Uhr: Abseihen + Emulsion: Brühe abseihen, durchdrücken, **Stabmixer**, auf \~3 L bringen; Wok-Fett sichern: Fett abheben (ersatzweise gekauftes Schmalz), im 6L-Topf kochend halten.
-- 18:15 Uhr: Schüsseln vorwärmen. **Gurken servieren** (Smashed Cucumber).
+- 17:15 Uhr: Sprossen (GDM-Extraportion blanchieren), Mais: rösten, Eier schneiden: halbieren.
+- 17:40 Uhr: Mise en Place: Topping-Station. Nudelwasser: aufsetzen.
+- 18:00 Uhr: Abseihen + Emulsion: Brühe abseihen, durchdrücken, **Stabmixer**, auf \~3 L bringen (Brühe hat dann 7 h); Fett abheben (ersatzweise gekauftes Schmalz), im 6L-Topf kochend halten.
+- 18:17 Uhr: Schüsseln vorwärmen. **Gurken servieren** (Smashed Cucumber).
 - 18:20 Uhr: Wok-Durchgänge: Durchgang 1 (Kinder), 18:24 Durchgang 2, 18:28 Durchgang 3.
 - 18:32 Uhr: Wok-Durchgänge: **Servieren.**
 - 19:30 Uhr: Dessert servieren.

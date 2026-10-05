@@ -431,13 +431,23 @@
           },
           {
             "phase": "kochtag",
-            "text": "Kichererbsen mit etwas Kochwasser erhitzen → **warm** zu Hummus mixen",
+            "text": "Rohkost schneiden, während die Auberginen im Ofen sind",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT70M"
+            },
+            "source": "T−70"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Kichererbsen mit etwas Kochwasser erhitzen → **warm** zu Hummus mixen, gleich anrichten (Hummus anrichten: Mulde, Öl, Topping)",
             "at": {
               "ref": "anchor",
               "offset": "-PT60M"
             },
             "source": "T−60",
             "steps": [
+              "hummus-anrichten",
               "hummus-mixen"
             ]
           },
@@ -455,17 +465,28 @@
           },
           {
             "phase": "kochtag",
-            "text": "Moutabal mischen (fertig rühren). Labneh anrichten, Muhammara abschmecken, Hummus anrichten (Mulde, Öl, Topping)",
+            "text": "Moutabal mischen (fertig rühren). Labneh anrichten, Muhammara abschmecken (Mulde, Öl, Topping)",
             "at": {
               "ref": "anchor",
               "offset": "-PT40M"
             },
             "source": "T−40",
             "steps": [
-              "hummus-anrichten",
               "labneh-anrichten",
               "moutabal-mischen",
               "muhammara-abschmecken"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Brot und Oliven: Fatayer raus, Fladenbrot in den warmen Ofen, Oliven in die Schale",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT25M"
+            },
+            "source": "T−25",
+            "steps": [
+              "brot-und-oliven"
             ]
           },
           {
@@ -482,15 +503,12 @@
           },
           {
             "phase": "kochtag",
-            "text": "Brot, Rohkost, Oliven: Fladenbrot kurz in den Ofen, Rohkost schneiden, alles auf den Tisch",
+            "text": "Alles auf den Tisch",
             "at": {
               "ref": "anchor",
-              "offset": "-PT5M"
+              "offset": "-PT0M"
             },
-            "source": "T−5",
-            "steps": [
-              "brot-rohkost-oliven"
-            ]
+            "source": "T−0"
           },
           {
             "phase": "t-2",
@@ -1922,41 +1940,17 @@
           "name": "Dazu",
           "steps": [
             {
-              "id": "brot-rohkost-oliven",
+              "id": "rohkost",
               "label": "29",
-              "heading": "**29. Brot, Rohkost, Oliven (10 Min.)**",
-              "title": "Brot, Rohkost, Oliven",
+              "heading": "**29. Rohkost (10 Min.)**",
+              "title": "Rohkost",
               "duration": {
                 "typical": "PT10M",
                 "source": "10 Min."
               },
-              "text": "- **Fladenbrot:** kurz im Ofen aufwärmen. Optional 1 Fladen in Ecken schneiden, mit 2 EL Olivenöl + Za'atar bestreichen, 8 Min. bei 200 °C → Chips für die Dips.\n- **Rohkost:** 1 Gurke, 3 Karotten, 1 Bund Radieschen in Sticks/Hälften.\n- **Oliven** in eine kleine Schale — fertig.",
-              "action": "- **Fladenbrot:** kurz im Ofen aufwärmen.",
-              "timers": [
-                {
-                  "label": "Brot, Rohkost, Oliven",
-                  "duration": {
-                    "typical": "PT8M"
-                  },
-                  "text": "8 Min."
-                }
-              ],
-              "temps": [
-                {
-                  "kind": "ziel",
-                  "text": "200 °C",
-                  "value": 200
-                }
-              ],
+              "text": "1 Gurke, 3 Karotten, 1 Bund Radieschen in Sticks/Hälften.",
+              "action": "1 Gurke, 3 Karotten, 1 Bund Radieschen in Sticks/Hälften.",
               "ingredients": [
-                {
-                  "ref": "olivenoel",
-                  "amount": {
-                    "text": "2 EL Olivenöl",
-                    "value": 2.0,
-                    "unit": "EL"
-                  }
-                },
                 {
                   "ref": "salatgurke",
                   "amount": {
@@ -1979,6 +1973,47 @@
                     "text": "1 Bund Radieschen",
                     "value": 1.0,
                     "unit": "Bund"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "brot-und-oliven",
+              "label": "30",
+              "heading": "**30. Brot und Oliven (5 Min.)**",
+              "title": "Brot und Oliven",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "- **Fladenbrot:** kurz im Ofen aufwärmen. Optional 1 Fladen in Ecken schneiden, mit 2 EL Olivenöl + Za'atar bestreichen, 8 Min. bei 200 °C → Chips für die Dips.\n- **Oliven** in eine kleine Schale — fertig.",
+              "action": "- **Fladenbrot:** kurz im Ofen aufwärmen.",
+              "timers": [
+                {
+                  "label": "Brot und Oliven",
+                  "duration": {
+                    "typical": "PT8M"
+                  },
+                  "text": "8 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "200 °C",
+                  "value": 200
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "2 EL Olivenöl",
+                    "value": 2.0,
+                    "unit": "EL"
                   }
                 }
               ],
@@ -2090,8 +2125,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T19:29:42Z",
-    "sourceHash": "f5752629f069b844",
+    "generatedAt": "2026-10-05T19:32:43Z",
+    "sourceHash": "0d8e417709b553aa",
     "quantities": [
       {
         "ingredient": "tahina",

@@ -383,26 +383,35 @@
           },
           {
             "phase": "kochtag",
-            "text": "Kichererbsen mit etwas Kochwasser erhitzen → **warm** zu Hummus mixen",
+            "text": "Rohkost schneiden, während die Auberginen im Ofen sind",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT55M"
+            },
+            "source": "T−55"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Kichererbsen mit etwas Kochwasser erhitzen → **warm** zu Hummus mixen, gleich anrichten (Hummus anrichten: Mulde, Öl, Topping)",
             "at": {
               "ref": "anchor",
               "offset": "-PT45M"
             },
             "source": "T−45",
             "steps": [
+              "hummus-anrichten",
               "hummus-mixen"
             ]
           },
           {
             "phase": "kochtag",
-            "text": "Moutabal mischen (fertig rühren). Labneh anrichten, Muhammara abschmecken, Hummus anrichten (Mulde, Öl, Topping). Rohkost schneiden",
+            "text": "Moutabal mischen (fertig rühren). Labneh anrichten, Muhammara abschmecken (Mulde, Öl, Topping)",
             "at": {
               "ref": "anchor",
               "offset": "-PT30M"
             },
             "source": "T−30",
             "steps": [
-              "hummus-anrichten",
               "labneh-anrichten",
               "moutabal-mischen",
               "muhammara-abschmecken"
@@ -422,14 +431,14 @@
           },
           {
             "phase": "kochtag",
-            "text": "Fladen, Rohkost, Oliven: Fladen kurz in den Ofen, alles auf den Tisch",
+            "text": "Fladen und Oliven: Fladen kurz in den Ofen, alles auf den Tisch",
             "at": {
               "ref": "anchor",
               "offset": "-PT5M"
             },
             "source": "T−5",
             "steps": [
-              "fladen-rohkost-oliven"
+              "fladen-und-oliven"
             ]
           },
           {
@@ -1412,26 +1421,16 @@
           "name": "Dazu",
           "steps": [
             {
-              "id": "fladen-rohkost-oliven",
+              "id": "rohkost",
               "label": "19",
-              "heading": "**19. Fladen, Rohkost, Oliven (15 Min.)**",
-              "title": "Fladen, Rohkost, Oliven",
+              "heading": "**19. Rohkost (10 Min.)**",
+              "title": "Rohkost",
               "duration": {
-                "typical": "PT15M",
-                "source": "15 Min."
+                "typical": "PT10M",
+                "source": "10 Min."
               },
-              "text": "- **Rohkost:** 1 Gurke, 3 Karotten, 1 Bund Radieschen, 1 Paprika, 1 Kohlrabi, 2 Stangen Sellerie in Sticks/Hälften — großzügig, das ist der Hauptträger für die Dips.\n- **Vollkorn-Fladen:** 4 Fladen 3–4 Min. im Ofen aufwärmen, halbieren.\n- **Oliven** in eine kleine Schale — fertig.\n- **Optional Beilagensalat zur Kafta:** 2 Tomaten + ½ Gurke gewürfelt, Rest Petersilie, Zitrone, Salz, Schuss Olivenöl.",
-              "action": "- **Rohkost:** 1 Gurke, 3 Karotten, 1 Bund Radieschen, 1 Paprika, 1 Kohlrabi, 2 Stangen Sellerie in Sticks/Hälften — großzügig, das ist der Hauptträger für die Dips.\n- **Vollkorn-Fladen:** 4 Fladen 3–4 Min. im Ofen aufwärmen, halbieren.\n- **Oliven** in eine kleine Schale — fertig.\n- **Optional Beilagensalat zur Kafta:** 2 Tomaten + ½ Gurke gewürfelt, Rest Petersilie, Zitrone, Salz, Schuss Olivenöl.",
-              "timers": [
-                {
-                  "label": "Fladen, Rohkost, Oliven",
-                  "duration": {
-                    "min": "PT3M",
-                    "max": "PT4M"
-                  },
-                  "text": "3–4 Min."
-                }
-              ],
+              "text": "- **Rohkost:** 1 Gurke, 3 Karotten, 1 Bund Radieschen, 1 Paprika, 1 Kohlrabi, 2 Stangen Sellerie in Sticks/Hälften — großzügig, das ist der Hauptträger für die Dips.\n- **Optional Beilagensalat zur Kafta:** 2 Tomaten + ½ Gurke gewürfelt, Rest Petersilie, Zitrone, Salz, Schuss Olivenöl.",
+              "action": "- **Rohkost:** 1 Gurke, 3 Karotten, 1 Bund Radieschen, 1 Paprika, 1 Kohlrabi, 2 Stangen Sellerie in Sticks/Hälften — großzügig, das ist der Hauptträger für die Dips.\n- **Optional Beilagensalat zur Kafta:** 2 Tomaten + ½ Gurke gewürfelt, Rest Petersilie, Zitrone, Salz, Schuss Olivenöl.",
               "ingredients": [
                 {
                   "ref": "salatgurke",
@@ -1482,14 +1481,6 @@
                   }
                 },
                 {
-                  "ref": "vollkorn-fladen",
-                  "amount": {
-                    "text": "4 Fladen",
-                    "value": 4.0,
-                    "unit": "Stück"
-                  }
-                },
-                {
                   "ref": "tomaten",
                   "amount": {
                     "text": "2 Tomaten",
@@ -1502,6 +1493,41 @@
                   "amount": {
                     "text": "½ Gurke",
                     "value": 0.5,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "fladen-und-oliven",
+              "label": "20",
+              "heading": "**20. Fladen und Oliven (5 Min.)**",
+              "title": "Fladen und Oliven",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "- **Vollkorn-Fladen:** 4 Fladen 3–4 Min. im Ofen aufwärmen, halbieren.\n- **Oliven** in eine kleine Schale — fertig.",
+              "action": "- **Vollkorn-Fladen:** 4 Fladen 3–4 Min. im Ofen aufwärmen, halbieren.\n- **Oliven** in eine kleine Schale — fertig.",
+              "timers": [
+                {
+                  "label": "Fladen und Oliven",
+                  "duration": {
+                    "min": "PT3M",
+                    "max": "PT4M"
+                  },
+                  "text": "3–4 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "vollkorn-fladen",
+                  "amount": {
+                    "text": "4 Fladen",
+                    "value": 4.0,
                     "unit": "Stück"
                   }
                 }
@@ -1602,8 +1628,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T19:29:43Z",
-    "sourceHash": "bbf906a30ca71b39",
+    "generatedAt": "2026-10-05T19:32:44Z",
+    "sourceHash": "d983c97640aeb5d7",
     "quantities": [
       {
         "ingredient": "tahina",
