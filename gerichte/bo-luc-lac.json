@@ -628,7 +628,7 @@
                 "max": "PT10M",
                 "source": "8–10 Min."
               },
-              "text": "Der Einbrenn-Fix: Die schwere Edelstahlpfanne bei **höchster Stufe** aufheizen, bis ein Wassertropfen sofort zerspringt und verdampft (\\~2–3 Min.). **1 EL Öl** hinein (pro Charge, insgesamt 3 EL), kurz warten, bis es flimmert. **150–200 g Würfel einschichtig mit Abstand** einlegen — sie dürfen sich nicht berühren. **1½–2 Min. nicht bewegen**, bis die Unterseite tief braun ist (nicht schwarz — wenn es schwarz wird, war Marinade an den Würfeln oder die Pfanne noch nicht heiß genug). Dann die Pfanne kräftig schütteln oder mit der Zange wenden, weitere **45–60 Sek.** für die restlichen Seiten, raus auf einen Teller. **Auf Induktion nach dem ersten scharfen Anbraten die Hitze leicht zurücknehmen** — der Edelstahl hält genug Temperatur, und der Bratensatz bleibt braun statt schwarz. **Innen sind die Würfel jetzt medium-rare** (Kern \\~52–55 °C, zieht beim Ruhen nach). Pfanne **wieder 30–60 Sek. aufheizen**, nächstes Öl, nächste Charge. **Ist der Boden zwischen zwei Chargen dunkel gesprenkelt:** 30 ml Wasser hinein, Ansatz mit dem Pfannenwender lösen, über das fertige Fleisch gießen, Pfanne mit Küchenpapier auswischen, neu aufheizen. *Das Wasser kostet 45 Sekunden und ist der Unterschied zwischen Sauce und Kohle.*",
+              "text": "Der Einbrenn-Fix: Die schwere Edelstahlpfanne bei **höchster Stufe** aufheizen, bis ein Wassertropfen sofort zerspringt und verdampft (\\~2–3 Min.). **1 EL Öl** hinein (pro Charge, insgesamt 3 EL), kurz warten, bis es flimmert. **150–200 g Würfel einschichtig mit Abstand** einlegen — sie dürfen sich nicht berühren. **1½–2 Min. nicht bewegen**, bis die Unterseite tief braun ist (nicht schwarz — wenn es schwarz wird, war Marinade an den Würfeln oder die Pfanne noch nicht heiß genug). Dann die Pfanne kräftig schütteln oder mit der Zange wenden, weitere **45–60 Sek.** für die restlichen Seiten, raus auf einen Teller. **Auf Induktion pro Charge:** auf höchster Stufe scharf anbraten, dann die Hitze leicht zurücknehmen, deglasieren und für die nächste Charge wieder hochdrehen — der Bratensatz bleibt braun statt schwarz. **Innen sind die Würfel jetzt medium-rare** (Kern \\~52–55 °C, zieht beim Ruhen nach). Pfanne **wieder 30–60 Sek. aufheizen**, nächstes Öl, nächste Charge. **Ist der Boden zwischen zwei Chargen dunkel gesprenkelt:** 30 ml Wasser hinein, Ansatz mit dem Pfannenwender lösen, über das fertige Fleisch gießen, Pfanne mit Küchenpapier auswischen, neu aufheizen. *Das Wasser kostet 45 Sekunden und ist der Unterschied zwischen Sauce und Kohle.*",
               "action": "Der Einbrenn-Fix: Die schwere Edelstahlpfanne bei **höchster Stufe** aufheizen, bis ein Wassertropfen sofort zerspringt und verdampft (\\~2–3 Min.).",
               "limits": [
                 "höchster Stufe",
@@ -636,7 +636,6 @@
                 "150–200 g Würfel einschichtig mit Abstand",
                 "1½–2 Min. nicht bewegen",
                 "45–60 Sek.",
-                "Auf Induktion nach dem ersten scharfen Anbraten die Hitze leicht zurücknehmen",
                 "Innen sind die Würfel jetzt medium-rare",
                 "wieder 30–60 Sek. aufheizen"
               ],
@@ -996,7 +995,7 @@
       "type": "learnings",
       "title": "Learnings",
       "cooked": "10/2026",
-      "summary": "**Gekocht 3× (zuletzt 10/2026 mit diesem Rezept und dem Kochmodus).** Der Einbrenn-Fix hat hervorragend gehalten: trockene Marinade, kleine Chargen, Sauce erst zum Schluss — keine schwarze Kruste mehr in der Edelstahlpfanne. Zusätzlich auf dem Induktionsherd nach dem initialen scharfen Anbraten die Hitze leicht reduziert; das steht jetzt in „Chargen braten“. Damit ist Plan B (Gusseisenpfanne) für dieses Gericht nicht nötig.",
+      "summary": "**Gekocht 3× (zuletzt 10/2026 mit diesem Rezept und dem Kochmodus).** Der Einbrenn-Fix hat hervorragend gehalten: trockene Marinade, kleine Chargen, Sauce erst zum Schluss — keine schwarze Kruste mehr in der Edelstahlpfanne. Zusätzlich auf dem Induktionsherd pro Charge: Hitze hoch, scharf anbraten, leicht runterdrehen, deglasieren, wieder hoch für die nächste Charge; das steht jetzt in „Chargen braten“. Damit ist Plan B (Gusseisenpfanne) für dieses Gericht nicht nötig.",
       "details": "### Die ersten beiden Durchgänge\n\n**Gekocht 2× (vor 09/2026, mit dem Import-Rezept).** Super lecker — einmal mit Sauce, einmal ohne, beides funktioniert und wandert in die Rotation. Schwachpunkt beide Male: eine fiese schwarze, eingebrannte Kruste in der Edelstahlpfanne. Ursache analysiert: gehackter Knoblauch plus Austernsauce/Zucker in der Marinade auf Maximalhitze, dazu zu volle Chargen (300 g). Fix in dieses Rezept eingebaut (Phan-Struktur: trockene Marinade, Knoblauch und Sauce erst nach dem Anbraten; 3–4 kleine Chargen; Wasser-Deglaze zwischendurch) — beim nächsten Mal zu validieren.\n\n### Details\n\n- **Kruste-Analyse:** Nicht das Gericht ist schuld, sondern die Reihenfolge. Die Marinade-Schule (Austernsauce + Knoblauch am Fleisch) stammt aus der Wok-Küche über Gasflamme, wo die Marinade sofort verdampft. In einer Edelstahlpfanne mit Haushaltsherd poolt sie stattdessen. Charles Phans Slanted-Door-Rezept löst genau das: Marinade nur Salz/Pfeffer/Öl, alles andere in den letzten 90 Sekunden.\n- **Mit oder ohne Sauce:** Beide Durchgänge waren gut. Die Sauce-Version ist reicher und näher am Restaurant-Bild, die Version ohne (nur Marinade + Dip) puristischer und schneller. Rezept-Standard ist mit Sauce; „ohne\" steht in den Notizen.\n- **Import-Rezept** (Kurzformat, INGREDIENTS/STEPS) war eine Nguyen-Marinade mit Phan-Butter-Finish — 600 g Filet oder Ribeye, 4 Knoblauchzehen, 2 EL Austernsauce, 1 EL Fischsauce, 1 TL Zucker, 1 TL Pfeffer in der Marinade; Sauce 2 EL Soja, 1 EL Austernsauce, 1 EL Reisessig, 1 TL Zucker; Butter. Mengen hier weitgehend übernommen, nur umverteilt."
     },
     {
@@ -1019,8 +1018,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T17:03:51Z",
-    "sourceHash": "83445e727b8c07a0",
+    "generatedAt": "2026-10-05T17:05:09Z",
+    "sourceHash": "e4c97a3350686280",
     "quantities": [
       {
         "ingredient": "rindfleisch",

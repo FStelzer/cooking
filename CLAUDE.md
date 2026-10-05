@@ -53,8 +53,8 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 - **Induktionsherd, 5 Felder:** zwei kleine links, ein großes in der Mitte, zwei
   mittelgroße rechts, die sich zur Bräterzone koppeln lassen (für Bräter oder lange
   Pfannen). Schwere Pfanne für Maximalhitze aufs große Mittelfeld. Bei Maximalhitze in
-  Edelstahl nach dem ersten scharfen Anbraten leicht zurückregeln (Bò lúc lắc 10/2026:
-  kein Einbrennen mehr)
+  Edelstahl pro Charge: hoch, scharf anbraten, leicht runter, deglasieren, wieder hoch
+  (Bò lúc lắc 10/2026: kein Einbrennen mehr)
 
 ### Fehlt / Wäre gut zu haben
 - **Küchenmaschine mit Knethaken** — Brötchen-Rezept (`backen/`) ist auf Handarbeit
@@ -346,7 +346,7 @@ Hand editieren, Learnings gehören in die Rezeptdatei.
   **Gebacken 09/2026 (Weizen rein, von Hand).** Fluffig und geschmacklich gut, vor allem mit Sonnenblumenkernen — die Rezeptbasis (Poolish + Kochstück + Quellstück) stimmt. Schwächen: von Hand zu kurz geknetet, Teig sehr klebrig, Rundschleifen hat nicht funktioniert → etwas flache, verlaufene Brötchen. Fix in diese Fassung eingebaut: Hauptteig-Wasser für Handarbeit von 120 g auf 80 g gesenkt, Kneten durch Slap & Fold plus 3× Dehnen & Falten ersetzt, 10 Min. Zwischengare vor dem Schleifen, Teigkarten-Technik für weichen Teig — beim nächsten Mal zu validieren.
 
 - ✅ **Bò lúc lắc — vietnamesisches „Shaking Beef" mit Brunnenkresse-Salat (4 Portionen)** (siehe `gerichte/bo-luc-lac.md`)
-  **Gekocht 3× (zuletzt 10/2026 mit diesem Rezept und dem Kochmodus).** Der Einbrenn-Fix hat hervorragend gehalten: trockene Marinade, kleine Chargen, Sauce erst zum Schluss — keine schwarze Kruste mehr in der Edelstahlpfanne. Zusätzlich auf dem Induktionsherd nach dem initialen scharfen Anbraten die Hitze leicht reduziert; das steht jetzt in „Chargen braten“. Damit ist Plan B (Gusseisenpfanne) für dieses Gericht nicht nötig.
+  **Gekocht 3× (zuletzt 10/2026 mit diesem Rezept und dem Kochmodus).** Der Einbrenn-Fix hat hervorragend gehalten: trockene Marinade, kleine Chargen, Sauce erst zum Schluss — keine schwarze Kruste mehr in der Edelstahlpfanne. Zusätzlich auf dem Induktionsherd pro Charge: Hitze hoch, scharf anbraten, leicht runterdrehen, deglasieren, wieder hoch für die nächste Charge; das steht jetzt in „Chargen braten“. Damit ist Plan B (Gusseisenpfanne) für dieses Gericht nicht nötig.
 
 <!-- learnings:end -->
 
