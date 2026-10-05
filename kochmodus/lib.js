@@ -159,10 +159,14 @@ export function normalizeState(raw) {
 export function normalizeTimers(raw) {
   return (Array.isArray(raw) ? raw : []).filter((t) => t && typeof t === "object" && typeof t.end === "number" && t.id != null);
 }
+// Titel als Klartext (Kopfzeile, Rezeptliste, Dock): Zirka-Tilde der Quelle (`\~`) ohne Backslash
+export function plainTitle(title) {
+  return String(title || "").replace(/\\~/g, "~");
+}
 // Kurzname fürs Dock: „Bò lúc lắc — vietnamesisches …“ → „Bò lúc lắc“. Die Schluss-Klammer fällt weg, wenn sie die
 // Ausbeute nennt („(4 Portionen)“); eine Fassung bleibt unterscheidbar: „Bouillabaisse … (Schwangerschafts-Version)“.
 export function shortTitle(title) {
-  const t = String(title || "").replace(/^🚧\s*/, "");
+  const t = plainTitle(title).replace(/^🚧\s*/, "");
   const head = t.split(/\s[—–]\s/)[0].replace(/\s*\([^)]*\)\s*$/, "").trim();
   const paren = /\(([^)]*)\)\s*$/.exec(t)?.[1].split(",")[0].trim();
   return paren && !/^\d/.test(paren) ? `${head} (${paren})` : head;

@@ -1,4 +1,4 @@
-import { escapeTilde, fmtAmount, fmtClock, highlight, isActive, isoSeconds, moreCount, normalizeState, normalizeTimers,
+import { escapeTilde, plainTitle, fmtAmount, fmtClock, highlight, isActive, isoSeconds, moreCount, normalizeState, normalizeTimers,
          noteMarkdown, resetState, shortTitle, timerOrigin,
          scaleAmount, scaleStepText, selection, selectionKey, textWithAction, timerChoices, variantText } from "./lib.js";
 
@@ -233,7 +233,7 @@ function renderVariants() {
     d.choices.map((c) => `<option value="${c.id}" ${c.id === cur[d.id] ? "selected" : ""}>${esc(c.label)}</option>`).join("") + `</select></label>`).join("");
 }
 function renderHeader() {
-  $("#title").textContent = recipe.title;
+  $("#title").textContent = plainTitle(recipe.title);
   renderVariants();
   const y = recipe.yields?.value ? fmtAmount(scaleAmount({ value: recipe.yields.value, unit: recipe.yields.unit }, factor())) : recipe.yields?.text || "";
   $("#meta").textContent = [recipe.persons?.text || y, recipe.times?.text].filter(Boolean).join(" · ");
@@ -466,7 +466,7 @@ async function renderPicker() {
   let html = "", group = null;
   for (const r of list) {
     if (r.group !== group) { group = r.group; html += `<h2>${esc(group)}</h2>`; }
-    html += `<a class="pick" href="?r=${encodeURIComponent(r.path)}">${r.cooked ? "✅ " : ""}${r.wip ? "🚧 " : ""}${esc(r.title)}</a>`;
+    html += `<a class="pick" href="?r=${encodeURIComponent(r.path)}">${r.cooked ? "✅ " : ""}${r.wip ? "🚧 " : ""}${esc(plainTitle(r.title))}</a>`;
   }
   main.innerHTML = html;
 }

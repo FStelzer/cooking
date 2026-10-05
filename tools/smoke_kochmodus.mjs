@@ -26,6 +26,7 @@ const server = http.createServer(async (rq, res) => {
 await new Promise((r) => server.listen(PORT, "127.0.0.1", r));
 
 const errors = [];
+let allCount = 0;
 const browser = await chromium.launch();
 try {
   const page = await browser.newPage({ viewport: { width: 390, height: 844 } }); // Smartphone
@@ -215,6 +216,17 @@ try {
   await page.reload(); await page.waitForSelector(".row[data-step]");
   assert.match(await page.locator("#title").innerText(), /Bò lúc lắc/, "offline geladen");
   await page.context().setOffline(false);
+  // Alle Rezepte der Liste: laden, Titel ohne `\~`, Kochen-Ansicht zeigt Schritte
+  const all = JSON.parse(await readFile(path.join(ROOT, "kochmodus/rezepte.json"), "utf8"));
+  for (const r of all) {
+    await page.goto(`http://127.0.0.1:${PORT}/kochmodus/?r=${encodeURIComponent(r.path)}`);
+    await page.waitForFunction(() => document.querySelector("#title")?.textContent.trim());
+    assert.ok(!(await page.locator("#title").textContent()).includes("\\~"), `${r.path}: Titel mit \\~`);
+    await page.click('button[data-view="kochen"]');
+    await page.waitForSelector(".row[data-step]", { timeout: 10000 });
+  }
+  allCount = all.length;
+
   if (SHOT) {
     await page.click('button[data-view="plan"]');
     await page.screenshot({ path: SHOT.replace(/\.png$/, "-plan.png") });
@@ -231,4 +243,4 @@ try {
   server.close();
 }
 if (errors.length) { console.log("Browser-Fehler:\n  " + errors.join("\n  ")); process.exit(1); }
-console.log("Rauchtest ok: thit-kho (9 Schritte, Sheet, Notiz, Skalierung, Timer, Export, Einkauf, Lesen) + Menü (Plan 9×5, 32 Chips, 60 Schritte, 55 Posten) + Varianten (Brötchen: Ein-/Ausblenden, Mengen, Einkauf, Zeitpläne) + App (Liste, zuletzt geöffnet, Schnell-Timer, Split, offline)");
+console.log(`Rauchtest ok: thit-kho (9 Schritte, Sheet, Notiz, Skalierung, Timer, Export, Einkauf, Lesen) + Menü (Plan 9×5, 32 Chips, 60 Schritte, 55 Posten) + Varianten (Brötchen: Ein-/Ausblenden, Mengen, Einkauf, Zeitpläne) + App (Liste, zuletzt geöffnet, Schnell-Timer, Split, offline) + alle ${allCount} Rezepte laden`);

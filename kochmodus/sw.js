@@ -4,7 +4,7 @@
 //   `task build` gesetzt (`task validate` prüft ihn), jede App-Änderung installiert also eine neue Hülle in einem Zug.
 // - Rezepte und Rezeptliste: eigener Cache, den ein Update nicht löscht. Netz zuerst, Cache als Rückfall (auch wenn
 //   das Netz hängt) — ein neu gebautes Rezept ist sofort da, im Funkloch gilt der letzte Stand.
-const VERSION = "km-d166d5ad00";
+const VERSION = "km-992ef32e71";
 const DATA = "km-daten";
 const SHELL = ["index.html", "app.js", "lib.js", "style.css", "manifest.webmanifest",
                "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png", "icons/apple-touch-icon.png"];

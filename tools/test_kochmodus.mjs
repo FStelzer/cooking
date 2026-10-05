@@ -2,7 +2,7 @@
 import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
 import { escapeTilde, fmtAmount, fmtClock, highlight, isoSeconds, noteMarkdown, normalizeState, remainderAfterAction, textWithAction,
-         scaleAmount, scaleStepText, timerChoices, moreCount, resetState, isActive, normalizeTimers, shortTitle, timerOrigin, selection, selectionKey, variantText } from "../kochmodus/lib.js";
+         scaleAmount, scaleStepText, timerChoices, moreCount, resetState, isActive, normalizeTimers, plainTitle, shortTitle, timerOrigin, selection, selectionKey, variantText } from "../kochmodus/lib.js";
 
 const r = JSON.parse(readFileSync(new URL("../schema/beispiele/thit-kho-trung.json", import.meta.url), "utf8"));
 const ing = Object.fromEntries(r.ingredients.map((i) => [i.id, i]));
@@ -107,6 +107,7 @@ t("Neu kochen: Haken, Timer, Einkauf weg; Notiz, Faktor, Wahl bleiben", () => {
 t("Timer rezeptübergreifend: Herkunft nur bei fremdem Rezept, Kurztitel", () => {
   assert.equal(shortTitle("🚧 Bò lúc lắc — vietnamesisches „Shaking Beef“ (4 Portionen)"), "Bò lúc lắc");
   assert.equal(shortTitle("Degustationsmenü — Hochzeitstag (4 Personen)"), "Degustationsmenü");
+  assert.equal(plainTitle("Cheesecake (no-bake, Ø 22 cm, \\~12 Stücke)"), "Cheesecake (no-bake, Ø 22 cm, ~12 Stücke)");
   assert.equal(shortTitle("Bouillabaisse mit Fenchel-Orange-Salat (2 Erwachsene + Kind)"), "Bouillabaisse mit Fenchel-Orange-Salat");
   assert.equal(shortTitle("Bouillabaisse mit Fenchel-Orange-Salat (Schwangerschafts-Version, 2 Erwachsene + Kind)"), "Bouillabaisse mit Fenchel-Orange-Salat (Schwangerschafts-Version)");
   const t = { id: "a", end: 1, recipe: "gerichte/bo-luc-lac", recipeTitle: "Bò lúc lắc", stepText: "8. Chargen braten" };
