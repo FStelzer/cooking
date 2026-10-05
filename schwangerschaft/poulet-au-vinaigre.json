@@ -1,0 +1,1545 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "schwangerschaft/poulet-au-vinaigre",
+  "kind": "dish",
+  "title": "Poulet au vinaigre (Lyon) — Hähnchenschenkel in Essig-Tomaten-Sauce mit grünen Bohnen (4 Portionen)",
+  "status": "done",
+  "yields": {
+    "text": "4 Portionen",
+    "value": 4.0,
+    "unit": "Portionen"
+  },
+  "intro": "*Aktive Zeit \\~40 Min., gesamt \\~1 Std. 15 Min. Equipment: Bräter/Schmortopf mit Deckel (ofenfest), Fleischthermometer, zweiter Topf für Bohnen und Nudeln.*\n\nLyoner Bistro-Klassiker: Hähnchen in Butter angebraten, mit Schalotten, Knoblauch und einer ordentlichen Menge Essig geschmort, Tomate für Körper, Crème fraîche zum Finish. Die Sauce ist das Gericht — säuerlich, aber rund, weil der Essig zu Sirup reduziert wird, bevor Brühe und Tomate dazukommen. Reichhaltig, mild, unter 1¼ Std., kompletter Standard-REWE-Einkauf.\n\n**Dieses Rezept ist von Haus aus schwangerschaftstauglich gebaut** (kein Wein, alles durch, Crème fraîche pasteurisiert) — mit Verweis auf den [Leitfaden](/schwangerschaft/leitfaden.md). Klassische Versionen deglacieren zusätzlich mit Weißwein; Bocuse selbst kam in allen drei dokumentierten Fassungen ohne aus (siehe Quellen). Der Essig trägt die Säure allein, die Brühe ersetzt die Flüssigkeit — kein Verlust.",
+  "times": {
+    "text": "Aktive Zeit ~40 Min., gesamt ~1 Std.",
+    "active": {
+      "typical": "PT40M",
+      "source": "40 Min."
+    },
+    "total": {
+      "typical": "PT1H15M",
+      "source": "1 Std. 15 Min."
+    }
+  },
+  "equipment": [
+    "Bräter/Schmortopf mit Deckel (ofenfest)",
+    "Fleischthermometer",
+    "zweiter Topf für Bohnen und Nudeln"
+  ],
+  "ingredients": [
+    {
+      "id": "haehnchenschenkel",
+      "name": "Hähnchenschenkel mit Knochen und Haut",
+      "store": "Aldi / REWE",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "8"
+      },
+      "note": "à 180–220 g, gesamt \\~1,6 kg"
+    },
+    {
+      "id": "creme",
+      "name": "Crème fraîche",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "100 g"
+      },
+      "note": "150-g-Becher; pasteurisiert — Standardware"
+    },
+    {
+      "id": "butter",
+      "name": "Butter",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "80 g"
+      },
+      "note": "30 g Anbraten, 1 EL Sauce, 30 g Bohnen"
+    },
+    {
+      "id": "schalotten",
+      "name": "Schalotten",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "4"
+      },
+      "note": "\\~150 g"
+    },
+    {
+      "id": "knoblauchzehen",
+      "name": "Knoblauchzehen",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "4"
+      }
+    },
+    {
+      "id": "tomaten",
+      "name": "reife Tomaten",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "300 g"
+      },
+      "note": "oder 1 kleine Dose geschälte Tomaten, 400 g"
+    },
+    {
+      "id": "bohnen",
+      "name": "grüne Bohnen",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "500 g"
+      },
+      "note": "frisch; Fallback 450 g TK"
+    },
+    {
+      "id": "estragon",
+      "name": "Estragon",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      },
+      "note": "Fallback: ½ Bund glatte Petersilie"
+    },
+    {
+      "id": "thymian",
+      "name": "Thymian",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "4 Zweige"
+      }
+    },
+    {
+      "id": "zitrone",
+      "name": "Zitrone",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "Bohnen"
+    },
+    {
+      "id": "vollkorn-bandnudeln",
+      "name": "Vollkorn-Bandnudeln",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "200 g"
+      },
+      "note": "oder Vollkorn-Spirelli, \\~50 g roh pro Person"
+    },
+    {
+      "id": "weissweinessig",
+      "name": "gereifter Weißweinessig",
+      "store": "Vorrat",
+      "buy": {
+        "text": "120 ml"
+      },
+      "pantry": true,
+      "note": "oder Rotweinessig, s. o."
+    },
+    {
+      "id": "huehnerbruehe",
+      "name": "Hühnerbrühe",
+      "store": "Vorrat",
+      "buy": {
+        "text": "350 ml"
+      },
+      "pantry": true,
+      "note": "Vorrat/TK oder 1 Glas Geflügelfond 400 ml"
+    },
+    {
+      "id": "tomatenmark",
+      "name": "Tomatenmark",
+      "store": "Vorrat",
+      "buy": {
+        "text": "2 EL"
+      },
+      "pantry": true
+    },
+    {
+      "id": "lorbeerblaetter",
+      "name": "Lorbeerblätter",
+      "store": "Vorrat",
+      "buy": {
+        "text": "2"
+      },
+      "pantry": true
+    },
+    {
+      "id": "oel",
+      "name": "neutrales Öl",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1 EL"
+      },
+      "pantry": true
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "pfeffer",
+      "name": "Schwarzer Pfeffer",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Stil-Entscheidung",
+      "level": 2,
+      "markdown": "- **Schenkel mit Knochen und Haut**, nicht das ganze Huhn zerlegt: dunkles Fleisch verzeiht 40 Min. Schmoren und wird bei 85–90 °C seidig statt trocken (America's Test Kitchen argumentiert genau so). Brust würde in derselben Zeit strohig.\n- **Essig zuerst zu Sirup reduzieren, dann erst Brühe** — die Reihenfolge aus allen französischen Referenzen. Roh eingegossener Essig bleibt stechend, reduzierter wird süßlich-tief.\n- **Weißweinessig, gereift**, 120 ml: liegt zwischen ATK (80 ml Rotweinessig + Wein) und Bocuse (120 ml Weißweinessig, kein Wein). Ohne Wein braucht es die höhere Menge, sonst fehlt der Sauce das Rückgrat. Rotweinessig ist die Lyoner Alternative — färbt die Sauce bräunlich, schmeckt kräftiger.\n- **Crème fraîche + Butter zum Finish**: Bocuse montiert nur Butter, Bistro-Versionen nehmen Sahne satt. Hier 100 g Crème fraîche für Bindung und 1 EL kalte Butter für Glanz — reichhaltig, ohne die Säure zuzukleistern.\n- **Beilage: Vollkorn-Bandnudeln, klein**, statt Reis oder Püree. Pasta kommt zu Hause besser an als Risotto/Kartoffel (Repo-Erfahrung) und Vollkorn hält den GI niedrig. Grüne Bohnen in Butter als zweites — der französische Kanon (Bohnen, Reis, Nudeln, Püree) gibt das her.",
+      "tags": [
+        "stil"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **REWE / Aldi, alles Standard.** Hähnchenschenkel mit Knochen (Keule + Oberschenkel, „Hähnchenschenkel ganz\") — 8 Stück à 180–220 g. Wer nur Oberschenkel bekommt: 8 Oberschenkel mit Knochen, Garzeit 5 Min. kürzer.\n- **Essig ist die Hauptzutat** — kein 79-Cent-Weißweinessig, sondern ein gereifter (z. B. Champagner- oder Weißwein-Essig aus Holzfass, REWE Feinkost, oder der Vorrat vom Bulgogi-Pickle prüfen). Estragon-Essig, falls vorhanden, ist die Luxusvariante.\n- **Hühnerbrühe:** eigener Vorrat aus dem TK (Ramen-/Shawarma-Knochen) ist ideal; Glas-Fond aus dem REWE geht. Kein Brühwürfel — zu salzig, die Sauce wird reduziert.\n- **Tomaten:** 300 g reife Strauchtomaten, gehäutet — oder 1 kleine Dose (240 g Abtropfgewicht) geschälte Tomaten, im September nur zweite Wahl.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Poulet au vinaigre (Lyon) — Hähnchenschenkel in Essig-Tomaten-Sauce mit grünen Bohnen (4 Portionen)",
+          "steps": [
+            {
+              "id": "haehnchen-wuerzen",
+              "label": "1",
+              "heading": "**1. Hähnchen würzen (5 Min.)**",
+              "title": "Hähnchen würzen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "8 Schenkel trocken tupfen. Haut mit 1½ TL Salz und reichlich Pfeffer würzen. **Optional, aber gut:** 1 Std. offen im Kühlschrank ruhen lassen — die Haut trocknet und brät später knuspriger (Trockensalz-Prinzip nach Meathead/AmazingRibs).",
+              "action": "8 Schenkel trocken tupfen.",
+              "timers": [
+                {
+                  "label": "Hähnchen würzen",
+                  "duration": {
+                    "typical": "PT1H"
+                  },
+                  "text": "1 Std."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "haehnchenschenkel",
+                  "amount": {
+                    "text": "8 Schenkel",
+                    "value": 8.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1½ TL Salz",
+                    "value": 1.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "reichlich Pfeffer"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "vorbereiten",
+              "label": "2",
+              "heading": "**2. Vorbereiten (10 Min.)**",
+              "title": "Vorbereiten",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "4 Schalotten in feine Streifen, 4 Knoblauchzehen andrücken (ganz lassen). 300 g Tomaten kreuzweise einritzen, 30 Sek. in kochendes Wasser, häuten, entkernen, grob würfeln (Dose: abtropfen, grob würfeln). Ofen auf 165 °C Ober-/Unterhitze vorheizen.",
+              "action": "4 Schalotten in feine Streifen, 4 Knoblauchzehen andrücken (ganz lassen).",
+              "timers": [
+                {
+                  "label": "Vorbereiten",
+                  "duration": {
+                    "typical": "PT30S"
+                  },
+                  "text": "30 Sek."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ofen",
+                  "text": "165 °C",
+                  "value": 165
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "schalotten",
+                  "amount": {
+                    "text": "4 Schalotten",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauchzehen",
+                  "amount": {
+                    "text": "4 Knoblauchzehen",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "tomaten",
+                  "amount": {
+                    "text": "300 g Tomaten",
+                    "value": 300.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Ofen 165 °C*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 165
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "anbraten",
+              "label": "3",
+              "heading": "**3. Anbraten (12 Min.)**",
+              "title": "Anbraten",
+              "duration": {
+                "typical": "PT12M",
+                "source": "12 Min."
+              },
+              "text": "30 g Butter + 1 EL neutrales Öl im Bräter bei mittelhoher Hitze schäumen lassen. Schenkel **mit der Haut nach unten** einlegen, in zwei Chargen, nicht bewegen: **7–8 Min.**, bis die Haut tief goldbraun ist. Wenden, 2 Min. auf der Fleischseite. Herausnehmen, auf einen Teller. Braunes Fett bis auf \\~2 EL abgießen.",
+              "action": "30 g Butter + 1 EL neutrales Öl im Bräter bei mittelhoher Hitze schäumen lassen.",
+              "limits": [
+                "mit der Haut nach unten",
+                "7–8 Min."
+              ],
+              "cues": [
+                "bis die Haut tief goldbraun ist",
+                "bis auf \\~2 EL abgießen"
+              ],
+              "timers": [
+                {
+                  "label": "Anbraten",
+                  "duration": {
+                    "min": "PT7M",
+                    "max": "PT8M"
+                  },
+                  "text": "7–8 Min."
+                },
+                {
+                  "label": "Anbraten",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "30 g Butter",
+                    "value": 30.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "1 EL neutrales Öl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Hähnchen würzen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:haehnchen-wuerzen"
+              ]
+            },
+            {
+              "id": "schalotten-essig",
+              "label": "4",
+              "heading": "**4. Schalotten & Essig (6 Min.)**",
+              "title": "Schalotten & Essig",
+              "duration": {
+                "typical": "PT6M",
+                "source": "6 Min."
+              },
+              "text": "Hitze auf mittel. Die 4 Schalotten + die 4 Knoblauchzehen ins Fett, 2–3 Min. glasig, nicht bräunen. 2 EL Tomatenmark dazu, 1 Min. mitrösten.\n**120 ml Weißweinessig** angießen — es dampft heftig, Fenster auf — und unter Rühren **auf etwa ⅓ einkochen, bis es sirupartig wird** (\\~3 Min.). Das ist der Schritt, der aus stechend „rund\" macht; nicht abkürzen.",
+              "action": "Hitze auf mittel.",
+              "limits": [
+                "120 ml Weißweinessig",
+                "auf etwa ⅓ einkochen, bis es sirupartig wird"
+              ],
+              "cues": [
+                "bis es sirupartig wird"
+              ],
+              "timers": [
+                {
+                  "label": "Schalotten & Essig",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                },
+                {
+                  "label": "Schalotten & Essig",
+                  "duration": {
+                    "typical": "PT1M"
+                  },
+                  "text": "1 Min."
+                },
+                {
+                  "label": "Schalotten & Essig",
+                  "duration": {
+                    "typical": "PT3M",
+                    "estimated": true
+                  },
+                  "text": "\\~3 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "schalotten",
+                  "amount": {
+                    "text": "4 Schalotten",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  },
+                  "reuse": true
+                },
+                {
+                  "ref": "knoblauchzehen",
+                  "amount": {
+                    "text": "4 Knoblauchzehen",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  },
+                  "reuse": true
+                },
+                {
+                  "ref": "tomatenmark",
+                  "amount": {
+                    "text": "2 EL Tomatenmark",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "weissweinessig",
+                  "amount": {
+                    "text": "120 ml Weißweinessig",
+                    "value": 120.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*nach Anbraten, Vorbereiten · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:anbraten",
+                "step:vorbereiten"
+              ]
+            },
+            {
+              "id": "aufgiessen-schmoren",
+              "label": "5",
+              "heading": "**5. Aufgießen & schmoren (40 Min.)**",
+              "title": "Aufgießen & schmoren",
+              "duration": {
+                "typical": "PT40M",
+                "source": "40 Min."
+              },
+              "text": "**350 ml Hühnerbrühe** und die 300 g Tomatenwürfel dazu, 2 Lorbeerblätter, 4 Zweige Thymian, aufkochen. Schenkel **mit der Haut nach oben** einlegen — die Haut soll aus der Flüssigkeit ragen, sonst wird sie labberig. **Ohne Deckel** in den Ofen bei 165 °C, **35–40 Min.**",
+              "action": "**350 ml Hühnerbrühe** und die 300 g Tomatenwürfel dazu, 2 Lorbeerblätter, 4 Zweige Thymian, aufkochen.",
+              "limits": [
+                "350 ml Hühnerbrühe",
+                "mit der Haut nach oben",
+                "Ohne Deckel",
+                "35–40 Min."
+              ],
+              "timers": [
+                {
+                  "label": "Aufgießen & schmoren",
+                  "duration": {
+                    "min": "PT35M",
+                    "max": "PT40M"
+                  },
+                  "text": "35–40 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ofen",
+                  "text": "165 °C",
+                  "value": 165
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "huehnerbruehe",
+                  "amount": {
+                    "text": "350 ml Hühnerbrühe",
+                    "value": 350.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "tomaten",
+                  "amount": {
+                    "text": "300 g Tomatenwürfel",
+                    "value": 300.0,
+                    "unit": "g"
+                  },
+                  "reuse": true
+                },
+                {
+                  "ref": "lorbeerblaetter",
+                  "amount": {
+                    "text": "2 Lorbeerblätter",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "thymian",
+                  "amount": {
+                    "text": "4 Zweige Thymian",
+                    "value": 4.0,
+                    "unit": "Zweige"
+                  }
+                }
+              ],
+              "meta": "*Ofen 165 °C · fertig bei 85–90 °C Kern*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 165
+                }
+              ],
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei 85–90 °C Kern",
+                "value": 85
+              },
+              "attention": "attended"
+            },
+            {
+              "id": "bohnen",
+              "label": "6",
+              "heading": "**6. Bohnen (ca. 10 Min., parallel)**",
+              "title": "Bohnen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "parallel": true,
+              "text": "500 g grüne Bohnen putzen. In reichlich Salzwasser 5–6 Min. sprudelnd kochen (bissfest, aber nicht quietschend), abgießen, kurz abschrecken. Kurz vor dem Servieren in 30 g Butter schwenken, Saft von ½ Zitrone, Salz, Pfeffer.",
+              "action": "500 g grüne Bohnen putzen.",
+              "timers": [
+                {
+                  "label": "Bohnen",
+                  "duration": {
+                    "min": "PT5M",
+                    "max": "PT6M"
+                  },
+                  "text": "5–6 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "bohnen",
+                  "amount": {
+                    "text": "500 g grüne Bohnen",
+                    "value": 500.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "30 g Butter",
+                    "value": 30.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "zitrone",
+                  "amount": {
+                    "text": "½ Zitrone",
+                    "value": 0.5,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "reichlich Salzwasser"
+                  }
+                }
+              ],
+              "meta": "*letzte 20 Min. von Aufgießen & schmoren · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "start": {
+                "ref": "step:aufgiessen-schmoren:end",
+                "offset": {
+                  "min": "-PT20M",
+                  "max": "-PT20M",
+                  "source": "letzte 20 Min. von Aufgießen & schmoren"
+                }
+              }
+            },
+            {
+              "id": "nudeln",
+              "label": "7",
+              "heading": "**7. Nudeln (ca. 12 Min., parallel)**",
+              "title": "Nudeln",
+              "duration": {
+                "typical": "PT12M",
+                "source": "ca. 12 Min.",
+                "estimated": true
+              },
+              "parallel": true,
+              "text": "200 g Vollkorn-Bandnudeln nach Packung kochen (meist 8–10 Min.), abgießen, 1 TL Butter oder etwas Sauce darüber.",
+              "action": "200 g Vollkorn-Bandnudeln nach Packung kochen (meist 8–10 Min.), abgießen, 1 TL Butter oder etwas Sauce darüber.",
+              "timers": [
+                {
+                  "label": "Nudeln",
+                  "duration": {
+                    "min": "PT8M",
+                    "max": "PT10M"
+                  },
+                  "text": "8–10 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "vollkorn-bandnudeln",
+                  "amount": {
+                    "text": "200 g Vollkorn-Bandnudeln",
+                    "value": 200.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "1 TL Butter",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*letzte 20 Min. von Aufgießen & schmoren · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "start": {
+                "ref": "step:aufgiessen-schmoren:end",
+                "offset": {
+                  "min": "-PT20M",
+                  "max": "-PT20M",
+                  "source": "letzte 20 Min. von Aufgießen & schmoren"
+                }
+              }
+            },
+            {
+              "id": "sauce-fertigstellen",
+              "label": "8",
+              "heading": "**8. Sauce fertigstellen (8 Min.)**",
+              "title": "Sauce fertigstellen",
+              "duration": {
+                "typical": "PT8M",
+                "source": "8 Min."
+              },
+              "text": "Bräter aus dem Ofen, Schenkel auf eine vorgewärmte Platte, im ausgeschalteten Ofen bei offener Tür warm halten. Lorbeer und Thymian herausfischen, Knoblauchzehen mit der Gabel an der Topfwand zerdrücken und einrühren. Sauce auf dem Herd bei starker Hitze **auf \\~300 ml einkochen** (3–5 Min. — sie soll einen Löffelrücken überziehen). **100 g Crème fraîche** einrühren, einmal aufwallen lassen, dann vom Herd und **1 EL kalte Butter** einschwenken. Abschmecken: Salz, Pfeffer, und — wichtig — ist die Säure zu leise geworden, **1 TL frischen Essig** zugeben (die Sauce soll deutlich säuerlich sein, das ist ihr Name). 2 EL gehackten Estragon unterrühren.",
+              "action": "Bräter aus dem Ofen, Schenkel auf eine vorgewärmte Platte, im ausgeschalteten Ofen bei offener Tür warm halten.",
+              "limits": [
+                "auf \\~300 ml einkochen",
+                "100 g Crème fraîche",
+                "1 EL kalte Butter",
+                "1 TL frischen Essig"
+              ],
+              "timers": [
+                {
+                  "label": "Sauce fertigstellen",
+                  "duration": {
+                    "min": "PT3M",
+                    "max": "PT5M"
+                  },
+                  "text": "3–5 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "creme",
+                  "amount": {
+                    "text": "100 g Crème fraîche",
+                    "value": 100.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "1 EL kalte Butter",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "weissweinessig",
+                  "amount": {
+                    "text": "1 TL frischen Essig",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "estragon",
+                  "amount": {
+                    "text": "2 EL gehackten Estragon",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Aufgießen & schmoren · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:aufgiessen-schmoren"
+              ]
+            },
+            {
+              "id": "anrichten",
+              "label": "9",
+              "heading": "**9. Anrichten (ca. 3 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT3M",
+                "source": "ca. 3 Min.",
+                "estimated": true
+              },
+              "text": "Schenkel mit Sauce nappieren, restlichen Estragon darüber. Bohnen und eine kleine Portion Nudeln daneben — die Sauce ist für die Nudeln, nicht umgekehrt.",
+              "action": "Schenkel mit Sauce nappieren, restlichen Estragon darüber.",
+              "ingredients": [],
+              "meta": "*nach Sauce fertigstellen, Bohnen, Nudeln*",
+              "attention": "active",
+              "after": [
+                "step:sauce-fertigstellen",
+                "step:bohnen",
+                "step:nudeln"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Gar-Check",
+      "level": "bold",
+      "markdown": "**Gar-Check:** Thermometer neben dem Knochen in den dicksten Oberschenkel: **Ziel 85–90 °C** — bei dunklem Fleisch ist das kein Übergaren, sondern der Punkt, an dem das Bindegewebe zu Gelatine wird und das Fleisch seidig vom Knochen fällt. Die Schwangerschafts-Untergrenze von 75 °C ist damit weit überschritten. Kein Rosa am Knochen, Saft klar."
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "kochtag",
+            "text": "Hähnchen salzen, offen kühlen (optional). Schalotten, Knoblauch, Tomaten vorbereiten.",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT75M"
+            },
+            "source": "T−1:15",
+            "steps": [
+              "vorbereiten"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Ofen an, Anbraten",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT55M"
+            },
+            "source": "T−0:55",
+            "steps": [
+              "anbraten"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Schalotten, Essig reduzieren, aufgießen → in den Ofen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT45M"
+            },
+            "source": "T−0:45"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Bohnenwasser und Nudelwasser aufsetzen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT20M"
+            },
+            "source": "T−0:20"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Nudeln rein, Bohnen kochen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT12M"
+            },
+            "source": "T−0:12"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Schenkel raus (Thermometer), Sauce reduzieren, Crème fraîche, Butter",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT8M"
+            },
+            "source": "T−0:08"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Bohnen in Butter schwenken",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT3M"
+            },
+            "source": "T−0:03"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Anrichten",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT0M"
+            },
+            "source": "T−0",
+            "steps": [
+              "anrichten"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "- **Ohne Wein, ohne Verlust:** Bocuse hat das Gericht in drei dokumentierten Fassungen ohne Wein gekocht (Essig + Butter, Essig + Brühe + Tomatenmark, Essig + Tomaten). Der Wein in Bistro-Versionen liefert Flüssigkeit und etwas Süße — beides übernehmen hier Brühe und Tomate. Nach 40 Min. offenem Schmoren wären laut USDA noch \\~35 % des Alkohols im Topf; deshalb weglassen statt „verkochen\".\n- **Durchgegart:** 85–90 °C Kern liegt weit über der 75-°C-Grenze für Geflügel.\n- **Crème fraîche und Butter** aus dem Kühlregal sind pasteurisiert.\n- **Essig** ist kein Alkoholthema (Restalkohol in Weinessig < 0,5 %, beim Reduzieren weg).\n- **KH pro Portion:** 50 g Vollkornnudeln roh ≈ 30 g KH (niedriger GI als Weißmehl), Sauce + Tomate + Schalotte ≈ 6 g, Bohnen ≈ 5 g → **\\~40 g KH**, eingebettet in viel Protein und Fett. Genau die „kleine, gedämpfte\" KH-Portion, die der Leitfaden verlangt. Wer strenger sein muss: 40 g Nudeln roh oder Nudeln weg und Bohnen verdoppeln — dann aber woanders am Tag KH einplanen. Kartoffel-Alternative (2–3 kleine festkochende, \\~120 g gekocht ≈ 18 g KH) ist im GI schlechter als Vollkornnudeln, geht aber.\n- Nach dem Essen ein Spaziergang.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Mild by design** — kein Chili, kein roher Knoblauch, keine Schärfe. Die Säure ist das Einzige, was ein Dreijähriger kommentieren könnte: für die Kinderkelle 1 TL Crème fraîche extra einrühren, dann ist sie sahnig-mild.\n- Ein Schenkel vom Knochen gelöst, mit Nudeln und Bohnen — Sauce zum Tunken. Nudeln sind bekannter Treffer.\n- Kein Alkohol im Gericht.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Vorbereiten:** Schritte 1–4 lassen sich am Vortag machen; am Kochtag Schenkel in der Sauce 20 Min. bei 165 °C aufwärmen, dann Schritt 6. Wird durchgezogen eher besser.\n- **Reste:** Sauce friert gut ein (Eiswürfelformen) — Basis für ein schnelles Hähnchen-Pfannengericht. Für Schwangere aufgewärmt vollständig durchhitzen.\n- **Variante Lyon-klassisch (nach der Schwangerschaft):** 200 ml Weißwein nach dem Essigsirup angießen und 2 Min. einkochen, Brühe auf 200 ml reduzieren; Rest identisch.\n- **Variante Rotweinessig:** 100 ml statt 120 ml (kräftiger), Sauce wird bräunlich — die Version der Bocuse-Küche.",
+      "tags": [
+        "notizen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Grundgerüst 8 Schenkel, offen im Ofen, 85–90 °C, Butter-Finish:** [America's Test Kitchen — Poulet au Vinaigre](https://www.americastestkitchen.com/recipes/13150-poulet-au-vinaigre-chicken-with-vinegar) und der [Entwicklungsartikel](https://www.americastestkitchen.com/articles/2450-poulet-au-vinaigre): 8 Schenkel mit Knochen, 80 ml Rotweinessig (von 120 ml runtergesetzt, „zu scharf\" — allerdings mit 240 ml Wein daneben), 240 ml Brühe, 1 EL Tomatenmark, 163 °C offen 35–40 Min. bis 90 °C Kern, Butter statt Sahne. Wir ersetzen den Wein durch Brühe und gehen dafür beim Essig auf 120 ml — den Wert, den Bocuse ohne Wein nutzt.\n- **Bocuse ohne Wein — drei Fassungen:** Buchversion (100 ml gereifter Rotweinessig, Butter, kein Wein/keine Brühe/keine Sahne) via [The French Cooking Academy](https://www.thefrenchcookingacademy.com/recipes/bocuse-poulet-au-vinaigre); Restaurant-Version Olivier Couvin (Rotweinessig, 2 TL Tomatenmark, 100 ml Geflügelbrühe, Estragon, kein Wein) im France-3-Beitrag ([telereplay.fr](https://www.telereplay.fr/emission/495207/Mto_La_Carte.html)); Food-&-Wine-Fassung 2018 (120 ml milder Weißweinessig, 340 g Tomatenwürfel, 4 Knoblauchzehen, Butter, kein Wein), wiedergegeben bei [Chewing the Fat](https://chewingthefat.us.com/2020/05/chef-paul-bocuses-poulet-au-vinaigre-chicken-in-vinegar-sauce-and-a-virtual-visit-to-lyon-his-hometown.html). Unsere Tomaten + Tomatenmark + Brühe kombinieren Couvin und Food & Wine.\n- **Reihenfolge Essig → Sirup → Flüssigkeit:** [French Cooking Academy, klassische Bistro-Version](https://www.thefrenchcookingacademy.com/recipes/how-to-make-poulet-au-vinaigre) (200 ml Essig, 400 ml Wein, 500 ml Brühe, 400 ml Sahne — die Maximalversion) und [Michel Dumas](https://www.micheldumas.com/en/chicken-with-vinegar-an-easy-french-recipe/) (200 ml Essig auf 1,5 kg). Beide reduzieren den Essig zuerst.\n- **Beilagen-Kanon** (Pilawreis, Nudeln, Püree, grüne Bohnen): FCA und Dumas; Boulud/Blanc-Variante mit Brühe statt Wein bei [Vinegar Professor](https://www.vinegarprofessor.com/blog/vinegar-chicken-around-the-world).\n- **Nicht gefunden:** eine Felicity-Cloake-Kolumne zum Gericht existiert nicht; David Lebovitz hat keins.\n- **Alkohol-Restgehalt:** USDA Table of Nutrient Retention Factors (\\~35 % nach 30 Min. Kochen) — siehe Leitfaden.",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T18:45:26Z",
+    "sourceHash": "e7b558a4a3c0496d",
+    "quantities": [
+      {
+        "ingredient": "haehnchenschenkel",
+        "total": {
+          "text": "8",
+          "value": 8.0,
+          "max": 8.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "8 Schenkel"
+        }
+      },
+      {
+        "ingredient": "creme",
+        "total": {
+          "text": "100 g",
+          "value": 100.0,
+          "max": 100.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "100 g Crème fraîche"
+        }
+      },
+      {
+        "ingredient": "butter",
+        "total": {
+          "text": "60 g (+ EL, TL ungemischt)",
+          "value": 60.0,
+          "max": 60.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "30 g Butter + 30 g Butter"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "schalotten",
+        "total": {
+          "text": "4",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "4 Schalotten"
+        }
+      },
+      {
+        "ingredient": "knoblauchzehen",
+        "total": {
+          "text": "4",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "4 Knoblauchzehen"
+        }
+      },
+      {
+        "ingredient": "tomaten",
+        "total": {
+          "text": "300 g",
+          "value": 300.0,
+          "max": 300.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "300 g Tomaten"
+        }
+      },
+      {
+        "ingredient": "bohnen",
+        "total": {
+          "text": "500 g",
+          "value": 500.0,
+          "max": 500.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "500 g grüne Bohnen"
+        }
+      },
+      {
+        "ingredient": "estragon",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 EL gehackten Estragon"
+        }
+      },
+      {
+        "ingredient": "thymian",
+        "total": {
+          "text": "4 Zweige",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "Zweige",
+          "approx": false
+        },
+        "perTask": {
+          "main": "4 Zweige Thymian"
+        }
+      },
+      {
+        "ingredient": "zitrone",
+        "total": {
+          "text": "½",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "½ Zitrone"
+        }
+      },
+      {
+        "ingredient": "vollkorn-bandnudeln",
+        "total": {
+          "text": "200 g",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "200 g Vollkorn-Bandnudeln"
+        }
+      },
+      {
+        "ingredient": "weissweinessig",
+        "total": {
+          "text": "120 ml (+ TL ungemischt)",
+          "value": 120.0,
+          "max": 120.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "120 ml Weißweinessig"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "huehnerbruehe",
+        "total": {
+          "text": "350 ml",
+          "value": 350.0,
+          "max": 350.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "350 ml Hühnerbrühe"
+        }
+      },
+      {
+        "ingredient": "tomatenmark",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 EL Tomatenmark"
+        }
+      },
+      {
+        "ingredient": "lorbeerblaetter",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 Lorbeerblätter"
+        }
+      },
+      {
+        "ingredient": "oel",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 EL neutrales Öl"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "1½ TL",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1½ TL Salz"
+        },
+        "unitless": [
+          "reichlich Salzwasser"
+        ]
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": ""
+        },
+        "perTask": {},
+        "unitless": [
+          "reichlich Pfeffer"
+        ]
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Aldi / REWE",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "schalotten",
+            "name": "Schalotten",
+            "need": {
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "4",
+            "inStock": false,
+            "buy": {
+              "text": "4"
+            },
+            "note": "\\~150 g"
+          },
+          {
+            "ingredient": "knoblauchzehen",
+            "name": "Knoblauchzehen",
+            "need": {
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "4",
+            "inStock": false,
+            "buy": {
+              "text": "4"
+            }
+          },
+          {
+            "ingredient": "tomaten",
+            "name": "reife Tomaten",
+            "need": {
+              "text": "300 g",
+              "value": 300.0,
+              "max": 300.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "300 g",
+            "inStock": false,
+            "buy": {
+              "text": "300 g"
+            },
+            "note": "oder 1 kleine Dose geschälte Tomaten, 400 g"
+          },
+          {
+            "ingredient": "bohnen",
+            "name": "grüne Bohnen",
+            "need": {
+              "text": "500 g",
+              "value": 500.0,
+              "max": 500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "500 g",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            },
+            "note": "frisch; Fallback 450 g TK"
+          },
+          {
+            "ingredient": "estragon",
+            "name": "Estragon",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            },
+            "note": "Fallback: ½ Bund glatte Petersilie"
+          },
+          {
+            "ingredient": "thymian",
+            "name": "Thymian",
+            "need": {
+              "text": "4 Zweige",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Zweige",
+              "approx": false
+            },
+            "display": "4 Zweige",
+            "inStock": false,
+            "buy": {
+              "text": "4 Zweige"
+            }
+          },
+          {
+            "ingredient": "zitrone",
+            "name": "Zitrone",
+            "need": {
+              "text": "½",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "½",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "Bohnen"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "haehnchenschenkel",
+            "name": "Hähnchenschenkel mit Knochen und Haut",
+            "need": {
+              "text": "8",
+              "value": 8.0,
+              "max": 8.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "8",
+            "inStock": false,
+            "buy": {
+              "text": "8"
+            },
+            "note": "à 180–220 g, gesamt \\~1,6 kg"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "creme",
+            "name": "Crème fraîche",
+            "need": {
+              "text": "100 g",
+              "value": 100.0,
+              "max": 100.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "100 g",
+            "inStock": false,
+            "buy": {
+              "text": "100 g"
+            },
+            "note": "150-g-Becher; pasteurisiert — Standardware"
+          },
+          {
+            "ingredient": "butter",
+            "name": "Butter",
+            "need": {
+              "text": "60 g (+ EL, TL ungemischt)",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "60 g",
+            "inStock": false,
+            "buy": {
+              "text": "80 g"
+            },
+            "note": "30 g Anbraten, 1 EL Sauce, 30 g Bohnen"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "vollkorn-bandnudeln",
+            "name": "Vollkorn-Bandnudeln",
+            "need": {
+              "text": "200 g",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "200 g",
+            "inStock": false,
+            "buy": {
+              "text": "200 g"
+            },
+            "note": "oder Vollkorn-Spirelli, \\~50 g roh pro Person"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "weissweinessig",
+            "name": "gereifter Weißweinessig",
+            "need": {
+              "text": "120 ml (+ TL ungemischt)",
+              "value": 120.0,
+              "max": 120.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "120 ml",
+            "inStock": false,
+            "buy": {
+              "text": "120 ml"
+            },
+            "pantry": true,
+            "note": "oder Rotweinessig, s. o."
+          },
+          {
+            "ingredient": "huehnerbruehe",
+            "name": "Hühnerbrühe",
+            "need": {
+              "text": "350 ml",
+              "value": 350.0,
+              "max": 350.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "350 ml",
+            "inStock": false,
+            "buy": {
+              "text": "350 ml"
+            },
+            "pantry": true,
+            "note": "Vorrat/TK oder 1 Glas Geflügelfond 400 ml"
+          },
+          {
+            "ingredient": "tomatenmark",
+            "name": "Tomatenmark",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "buy": {
+              "text": "2 EL"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "lorbeerblaetter",
+            "name": "Lorbeerblätter",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "oel",
+            "name": "neutrales Öl",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 EL"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "1½ TL",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1½ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Schwarzer Pfeffer",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}

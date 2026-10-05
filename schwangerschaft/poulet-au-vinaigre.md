@@ -25,79 +25,91 @@ Lyoner Bistro-Klassiker: Hähnchen in Butter angebraten, mit Schalotten, Knoblau
 
 ### REWE / Aldi
 
-**Kühltheke / Fleisch:**
-- [ ] 8 Hähnchenschenkel mit Knochen und Haut (à 180–220 g, gesamt \~1,6 kg)
+**Fleisch & Fisch:**
+- [ ] 8 Hähnchenschenkel mit Knochen und Haut *(à 180–220 g, gesamt \~1,6 kg)*
 
-**Milchprodukte:**
-- [ ] 100 g Crème fraîche (150-g-Becher; pasteurisiert — Standardware)
-- [ ] 80 g Butter (30 g Anbraten + 1 EL Sauce + 30 g Bohnen)
+**Milchprodukte & Eier:**
+- [ ] 100 g Crème fraîche *(150-g-Becher; pasteurisiert — Standardware)*
+- [ ] 80 g Butter *(30 g Anbraten, 1 EL Sauce, 30 g Bohnen)*
 
-**Obst / Gemüse:**
-- [ ] 4 Schalotten (\~150 g)
+**Obst & Gemüse:**
+- [ ] 4 Schalotten *(\~150 g)*
 - [ ] 4 Knoblauchzehen
-- [ ] 300 g reife Tomaten (oder 1 kleine Dose geschälte Tomaten, 400 g)
-- [ ] 500 g grüne Bohnen (frisch; Fallback 450 g TK)
-- [ ] 1 Bund Estragon (Fallback: ½ Bund glatte Petersilie)
+- [ ] 300 g reife Tomaten *(oder 1 kleine Dose geschälte Tomaten, 400 g)*
+- [ ] 500 g grüne Bohnen *(frisch; Fallback 450 g TK)*
+- [ ] 1 Bund Estragon *(Fallback: ½ Bund glatte Petersilie)*
 - [ ] 4 Zweige Thymian
-- [ ] 1 Zitrone (Bohnen)
+- [ ] 1 Zitrone *(Bohnen)*
 
-**Trockenwaren / Vorrat:**
-- [ ] 120 ml gereifter Weißweinessig (oder Rotweinessig, s. o.) — Vorrat prüfen
-- [ ] 350 ml Hühnerbrühe (Vorrat/TK oder 1 Glas Geflügelfond 400 ml)
+**Trockenwaren:**
+- [ ] 200 g Vollkorn-Bandnudeln *(oder Vollkorn-Spirelli, \~50 g roh pro Person)*
+
+### Vorrat prüfen
+
+- [ ] 120 ml gereifter Weißweinessig *(oder Rotweinessig, s. o.)*
+- [ ] 350 ml Hühnerbrühe *(Vorrat/TK oder 1 Glas Geflügelfond 400 ml)*
 - [ ] 2 EL Tomatenmark
 - [ ] 2 Lorbeerblätter
-- [ ] 200 g Vollkorn-Bandnudeln oder Vollkorn-Spirelli (\~50 g roh pro Person)
-- [ ] 1 EL neutrales Öl, Salz, schwarzer Pfeffer (Vorrat)
+- [ ] 1 EL neutrales Öl
+- [ ] Salz
+- [ ] Schwarzer Pfeffer
 
 ## Zubereitung
 
-### 1. Hähnchen vorbereiten (10 Min. + optional 1 Std. Vorlauf)
-
+**1. Hähnchen würzen (5 Min.)**
+*jederzeit*
 8 Schenkel trocken tupfen. Haut mit 1½ TL Salz und reichlich Pfeffer würzen. **Optional, aber gut:** 1 Std. offen im Kühlschrank ruhen lassen — die Haut trocknet und brät später knuspriger (Trockensalz-Prinzip nach Meathead/AmazingRibs).
 
+**2. Vorbereiten (10 Min.)**
+*jederzeit · Ofen 165 °C*
 4 Schalotten in feine Streifen, 4 Knoblauchzehen andrücken (ganz lassen). 300 g Tomaten kreuzweise einritzen, 30 Sek. in kochendes Wasser, häuten, entkernen, grob würfeln (Dose: abtropfen, grob würfeln). Ofen auf 165 °C Ober-/Unterhitze vorheizen.
 
-### 2. Anbraten (12 Min.)
-
+**3. Anbraten (12 Min.)**
+*nach Hähnchen würzen · Herd*
 30 g Butter + 1 EL neutrales Öl im Bräter bei mittelhoher Hitze schäumen lassen. Schenkel **mit der Haut nach unten** einlegen, in zwei Chargen, nicht bewegen: **7–8 Min.**, bis die Haut tief goldbraun ist. Wenden, 2 Min. auf der Fleischseite. Herausnehmen, auf einen Teller. Braunes Fett bis auf \~2 EL abgießen.
 
-### 3. Schalotten & Essig (6 Min.)
-
-Hitze auf mittel. 4 Schalotten + 4 Knoblauchzehen ins Fett, 2–3 Min. glasig, nicht bräunen. 2 EL Tomatenmark dazu, 1 Min. mitrösten.
+**4. Schalotten & Essig (6 Min.)**
+*nach Anbraten, Vorbereiten · Herd*
+Hitze auf mittel. Die 4 Schalotten + die 4 Knoblauchzehen ins Fett, 2–3 Min. glasig, nicht bräunen. 2 EL Tomatenmark dazu, 1 Min. mitrösten.
 
 **120 ml Weißweinessig** angießen — es dampft heftig, Fenster auf — und unter Rühren **auf etwa ⅓ einkochen, bis es sirupartig wird** (\~3 Min.). Das ist der Schritt, der aus stechend „rund" macht; nicht abkürzen.
 
-### 4. Aufgießen & schmoren (40 Min., Ofen)
-
+**5. Aufgießen & schmoren (40 Min.)**
+*Ofen 165 °C · fertig bei 85–90 °C Kern*
 **350 ml Hühnerbrühe** und die 300 g Tomatenwürfel dazu, 2 Lorbeerblätter, 4 Zweige Thymian, aufkochen. Schenkel **mit der Haut nach oben** einlegen — die Haut soll aus der Flüssigkeit ragen, sonst wird sie labberig. **Ohne Deckel** in den Ofen bei 165 °C, **35–40 Min.**
 
 **Gar-Check:** Thermometer neben dem Knochen in den dicksten Oberschenkel: **Ziel 85–90 °C** — bei dunklem Fleisch ist das kein Übergaren, sondern der Punkt, an dem das Bindegewebe zu Gelatine wird und das Fleisch seidig vom Knochen fällt. Die Schwangerschafts-Untergrenze von 75 °C ist damit weit überschritten. Kein Rosa am Knochen, Saft klar.
 
-### 5. Bohnen & Nudeln (parallel, letzte 20 Min.)
+**6. Bohnen (ca. 10 Min., parallel)**
+*letzte 20 Min. von Aufgießen & schmoren · Herd*
+500 g grüne Bohnen putzen. In reichlich Salzwasser 5–6 Min. sprudelnd kochen (bissfest, aber nicht quietschend), abgießen, kurz abschrecken. Kurz vor dem Servieren in 30 g Butter schwenken, Saft von ½ Zitrone, Salz, Pfeffer.
 
-- 500 g grüne Bohnen putzen. In reichlich Salzwasser 5–6 Min. sprudelnd kochen (bissfest, aber nicht quietschend), abgießen, kurz abschrecken. Kurz vor dem Servieren in 30 g Butter schwenken, Saft von ½ Zitrone, Salz, Pfeffer.
-- 200 g Vollkorn-Bandnudeln nach Packung kochen (meist 8–10 Min.), abgießen, 1 TL Butter oder etwas Sauce darüber.
+**7. Nudeln (ca. 12 Min., parallel)**
+*letzte 20 Min. von Aufgießen & schmoren · Herd*
+200 g Vollkorn-Bandnudeln nach Packung kochen (meist 8–10 Min.), abgießen, 1 TL Butter oder etwas Sauce darüber.
 
-### 6. Sauce fertigstellen (8 Min.)
-
+**8. Sauce fertigstellen (8 Min.)**
+*nach Aufgießen & schmoren · Herd*
 Bräter aus dem Ofen, Schenkel auf eine vorgewärmte Platte, im ausgeschalteten Ofen bei offener Tür warm halten. Lorbeer und Thymian herausfischen, Knoblauchzehen mit der Gabel an der Topfwand zerdrücken und einrühren.
 
 Sauce auf dem Herd bei starker Hitze **auf \~300 ml einkochen** (3–5 Min. — sie soll einen Löffelrücken überziehen). **100 g Crème fraîche** einrühren, einmal aufwallen lassen, dann vom Herd und **1 EL kalte Butter** einschwenken. Abschmecken: Salz, Pfeffer, und — wichtig — ist die Säure zu leise geworden, **1 TL frischen Essig** zugeben (die Sauce soll deutlich säuerlich sein, das ist ihr Name). 2 EL gehackten Estragon unterrühren.
 
-### 7. Anrichten
-
+**9. Anrichten (ca. 3 Min.)**
+*nach Sauce fertigstellen, Bohnen, Nudeln*
 Schenkel mit Sauce nappieren, restlichen Estragon darüber. Bohnen und eine kleine Portion Nudeln daneben — die Sauce ist für die Nudeln, nicht umgekehrt.
 
 ## Zeitplan
 
-- **–1:15** Hähnchen salzen, offen kühlen (optional). Schalotten, Knoblauch, Tomaten vorbereiten.
-- **–0:55** Ofen an, Anbraten
-- **–0:45** Schalotten, Essig reduzieren, aufgießen → in den Ofen
-- **–0:20** Bohnenwasser und Nudelwasser aufsetzen
-- **–0:12** Nudeln rein, Bohnen kochen
-- **–0:08** Schenkel raus (Thermometer), Sauce reduzieren, Crème fraîche, Butter
-- **–0:03** Bohnen in Butter schwenken
-- **0:00** Anrichten
+| Zeit | Schritt |
+|---|---|
+| T−1:15 | Hähnchen salzen, offen kühlen (optional). Schalotten, Knoblauch, Tomaten vorbereiten. |
+| T−0:55 | Ofen an, Anbraten |
+| T−0:45 | Schalotten, Essig reduzieren, aufgießen → in den Ofen |
+| T−0:20 | Bohnenwasser und Nudelwasser aufsetzen |
+| T−0:12 | Nudeln rein, Bohnen kochen |
+| T−0:08 | Schenkel raus (Thermometer), Sauce reduzieren, Crème fraîche, Butter |
+| T−0:03 | Bohnen in Butter schwenken |
+| T−0 | Anrichten |
 
 ## Schwangerschaft & GDM
 
