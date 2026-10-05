@@ -10,7 +10,18 @@
     "value": 4.0,
     "unit": "Portionen"
   },
-  "intro": "*Grundrezept \\~50 Min., davon 25 passiv; Varianten 45 Min. bis 3 Std. (siehe Tabelle). Equipment: 6L-Topf oder elektrischer Schnellkochtopf (nur Schritt 1; lohnt bei Variante B und D, siehe [Schnellkochtopf-Fassung](#schnellkochtopf-fassung)), Pfanne (Masala), kleine Pfanne (Tadka), kleiner Topf (Kinder-Anteil), Stabmixer nur für Variante D, Bunsenbrenner optional (Dhungar), Pfanne für Roti.*\n\n*Varianten: Variante = Grundrezept | Palak | Chana | Kokos | Makhani · Beilage = Kachumber | Raita*\n\nDal ist in diesem Haushalt Rotationsessen, kein Projekt: eine Mechanik — Linsen mit Kurkuma weichkochen, eine Zwiebel-Tomaten-Basis unterrühren, zum Schluss das **Tadka** (in Ghee aufgeblühte Gewürze) darübergießen — und daraus vier verschiedene Abende. Ein Dal ist zugleich Protein *und* KH-Träger; deshalb steht es hier als Hauptgericht mit Gemüse-Beilage, Joghurt und einem kleinen Vollkorn-Roti, nicht als Beilage. Die Beilagen-Skalierung (200 g Toor zu Tandoori-Hähnchen) steht in [`tandoori-haehnchen.md`](/schwangerschaft/tandoori-haehnchen.md).\n\n**Von Haus aus schwangerschaftstauglich** ([Leitfaden](/schwangerschaft/leitfaden.md)): alles gegart, Joghurt pasteurisiert, kein Alkohol, kein Ei außer optional hartgekocht. Linsen sind der Grund für dieses Rezept — niedriger glykämischer Index, viel Protein und Ballaststoffe, und in der letzten Schwangerschaft der bewährte Anker fürs Blutzucker-Management (Evidenz und Portionsrechnung unten).",
+  "intro": "*Aktive Zeit \\~25 Min., gesamt \\~50 Min. (Grundrezept). Grundrezept \\~50 Min., davon 25 passiv; Varianten 45 Min. bis 3 Std. (siehe Tabelle). Equipment: 6L-Topf oder elektrischer Schnellkochtopf (nur Schritt 1; lohnt bei Variante B und D, siehe [Schnellkochtopf-Fassung](#schnellkochtopf-fassung)), Pfanne (Masala), kleine Pfanne (Tadka), kleiner Topf (Kinder-Anteil), Stabmixer nur für Variante D, Bunsenbrenner optional (Dhungar), Pfanne für Roti.*\n\n*Varianten: Variante = Grundrezept | Palak | Chana | Kokos | Makhani · Beilage = Kachumber | Raita*\n\nDal ist in diesem Haushalt Rotationsessen, kein Projekt: eine Mechanik — Linsen mit Kurkuma weichkochen, eine Zwiebel-Tomaten-Basis unterrühren, zum Schluss das **Tadka** (in Ghee aufgeblühte Gewürze) darübergießen — und daraus vier verschiedene Abende. Ein Dal ist zugleich Protein *und* KH-Träger; deshalb steht es hier als Hauptgericht mit Gemüse-Beilage, Joghurt und einem kleinen Vollkorn-Roti, nicht als Beilage. Die Beilagen-Skalierung (200 g Toor zu Tandoori-Hähnchen) steht in [`tandoori-haehnchen.md`](/schwangerschaft/tandoori-haehnchen.md).\n\n**Von Haus aus schwangerschaftstauglich** ([Leitfaden](/schwangerschaft/leitfaden.md)): alles gegart, Joghurt pasteurisiert, kein Alkohol, kein Ei außer optional hartgekocht. Linsen sind der Grund für dieses Rezept — niedriger glykämischer Index, viel Protein und Ballaststoffe, und in der letzten Schwangerschaft der bewährte Anker fürs Blutzucker-Management (Evidenz und Portionsrechnung unten).",
+  "times": {
+    "text": "Aktive Zeit ~25 Min., gesamt ~50 Min.",
+    "active": {
+      "typical": "PT25M",
+      "source": "25 Min."
+    },
+    "total": {
+      "typical": "PT50M",
+      "source": "50 Min."
+    }
+  },
   "equipment": [
     "6L-Topf oder elektrischer Schnellkochtopf (nur Schritt 1; lohnt bei Variante B und D",
     "siehe [Schnellkochtopf-Fassung](#schnellkochtopf-fassung))",
@@ -3242,8 +3253,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T18:49:08Z",
-    "sourceHash": "913398bfc9accc4c",
+    "generatedAt": "2026-10-05T19:24:50Z",
+    "sourceHash": "72b4adc93c763edc",
     "select": {
       "variante": "grundrezept",
       "beilage": "kachumber"

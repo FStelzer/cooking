@@ -1,6 +1,6 @@
 # Dal-Baukasten — Grundrezept Masoor/Toor Dal + vier Varianten (4 Portionen als Hauptgericht)
 
-*Grundrezept \~50 Min., davon 25 passiv; Varianten 45 Min. bis 3 Std. (siehe Tabelle). Equipment: 6L-Topf oder elektrischer Schnellkochtopf (nur Schritt 1; lohnt bei Variante B und D, siehe [Schnellkochtopf-Fassung](#schnellkochtopf-fassung)), Pfanne (Masala), kleine Pfanne (Tadka), kleiner Topf (Kinder-Anteil), Stabmixer nur für Variante D, Bunsenbrenner optional (Dhungar), Pfanne für Roti.*
+*Aktive Zeit \~25 Min., gesamt \~50 Min. (Grundrezept). Grundrezept \~50 Min., davon 25 passiv; Varianten 45 Min. bis 3 Std. (siehe Tabelle). Equipment: 6L-Topf oder elektrischer Schnellkochtopf (nur Schritt 1; lohnt bei Variante B und D, siehe [Schnellkochtopf-Fassung](#schnellkochtopf-fassung)), Pfanne (Masala), kleine Pfanne (Tadka), kleiner Topf (Kinder-Anteil), Stabmixer nur für Variante D, Bunsenbrenner optional (Dhungar), Pfanne für Roti.*
 
 *Varianten: Variante = Grundrezept | Palak | Chana | Kokos | Makhani · Beilage = Kachumber | Raita*
 

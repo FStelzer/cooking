@@ -10,7 +10,18 @@
     "value": 12.0,
     "unit": "Stück"
   },
-  "intro": "*Vorabend \\~20 Min. Arbeit (Poolish, Kochstück). Backtag \\~3½ Std., davon \\~40 Min. echte Arbeit. Backen aus dem Frost: 2,5–3,5 Std. Gare + 20 Min. Backzeit. Equipment: Küchenwaage (1 g), Fleischthermometer, Teigkarte, Backpapier, 2 Backbleche, Rasierklinge oder sehr scharfes glattes Messer, Sprühflasche oder kleine Metallschale. **Keine Küchenmaschine nötig — dieses Rezept ist für Handarbeit gebaut.***\n\n*Varianten: Mehl = Weizen | Weizen-Roggen | Dinkel · Weg = Einfrieren | Direkt backen | Kombi*\n\n100-%-Vollkornbrötchen mit drei Vorstufen — **Poolish** (Aroma, Frische, weniger Kleie-Bitterkeit), **Kochstück** (saftige Krume über Tage) und **Flohsamen-Quellstück** (Stabilität beim Einfrieren) — die als geformte Teiglinge einzeln eingefroren und bei Bedarf morgens frisch gebacken werden. Ein Ablauf, drei Mehl-Varianten (Weizen, Weizen + 15 % Roggen, Dinkel), drei Wege nach dem Formen (einfrieren, direkt backen, beides kombiniert).\n\n**Leitrezept ist Weizen:** einmal gebacken (09/2026), fluffig und lecker, vor allem mit Sonnenblumenkernen — aber von Hand zu kurz geknetet, der Teig sehr klebrig, das Rundschleifen missraten, deshalb etwas flache Brötchen. Diese Fassung zieht daraus die Konsequenzen: **weniger Wasser für die Handversion, Kneten durch Dehnen & Falten ersetzt, Zwischengare vor dem Schleifen.**",
+  "intro": "*Aktive Zeit \\~1 Std., gesamt 2 Tage (Vorabend und Backtag; aus dem Frost auch später). Vorabend \\~20 Min. Arbeit (Poolish, Kochstück). Backtag \\~3½ Std., davon \\~40 Min. echte Arbeit. Backen aus dem Frost: 2,5–3,5 Std. Gare + 20 Min. Backzeit. Equipment: Küchenwaage (1 g), Fleischthermometer, Teigkarte, Backpapier, 2 Backbleche, Rasierklinge oder sehr scharfes glattes Messer, Sprühflasche oder kleine Metallschale. **Keine Küchenmaschine nötig — dieses Rezept ist für Handarbeit gebaut.***\n\n*Varianten: Mehl = Weizen | Weizen-Roggen | Dinkel · Weg = Einfrieren | Direkt backen | Kombi*\n\n100-%-Vollkornbrötchen mit drei Vorstufen — **Poolish** (Aroma, Frische, weniger Kleie-Bitterkeit), **Kochstück** (saftige Krume über Tage) und **Flohsamen-Quellstück** (Stabilität beim Einfrieren) — die als geformte Teiglinge einzeln eingefroren und bei Bedarf morgens frisch gebacken werden. Ein Ablauf, drei Mehl-Varianten (Weizen, Weizen + 15 % Roggen, Dinkel), drei Wege nach dem Formen (einfrieren, direkt backen, beides kombiniert).\n\n**Leitrezept ist Weizen:** einmal gebacken (09/2026), fluffig und lecker, vor allem mit Sonnenblumenkernen — aber von Hand zu kurz geknetet, der Teig sehr klebrig, das Rundschleifen missraten, deshalb etwas flache Brötchen. Diese Fassung zieht daraus die Konsequenzen: **weniger Wasser für die Handversion, Kneten durch Dehnen & Falten ersetzt, Zwischengare vor dem Schleifen.**",
+  "times": {
+    "text": "Aktive Zeit ~1 Std., gesamt 2 Tage",
+    "active": {
+      "typical": "PT1H",
+      "source": "1 Std."
+    },
+    "total": {
+      "typical": "P2D",
+      "source": "2 Tage"
+    }
+  },
   "equipment": [
     "Küchenwaage (1 g)",
     "Fleischthermometer",
@@ -1788,8 +1799,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T18:41:05Z",
-    "sourceHash": "c341e56b56e1508c",
+    "generatedAt": "2026-10-05T19:24:50Z",
+    "sourceHash": "5ba664c194f5f346",
     "select": {
       "mehl": "weizen",
       "weg": "einfrieren"

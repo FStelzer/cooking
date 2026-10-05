@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from tools.recipes.parse import duration_range, parse_recipe  # noqa: E402
-from tools.recipes.timing import critical_path  # noqa: E402
+from tools.recipes.timing import check_p, critical_path  # noqa: E402
 
 SPEC = (ROOT / "REZEPTFORMAT.md").read_text(encoding="utf-8")
 BLOCKS = re.findall(r"```markdown\n(.*?)```", SPEC, re.S)
@@ -224,6 +224,26 @@ t("Welle 1: Dauer-Summe, Klammer-Menge mit \\~, Gebinde-Einheiten", lambda: (
     assert_(any(x["ref"] == "eier" and x["amount"]["text"] == "1 Eigelb" for x in GS["pickle"]["ingredients"]), GS["pickle"]["ingredients"]),
     assert_(any(x["ref"] == "tomatenmark" and x["amount"]["text"] == "40 g (2 EL) Tomatenmark" for x in GS["pickle"]["ingredients"]), GS["pickle"]["ingredients"]),
     assert_([i["id"] for i in g["ingredients"]][:5] == ["oktopus", "estragon", "vanillezucker", "brokkoli", "eier"], [i["id"] for i in g["ingredients"]])))
+DAYS = """# Test (2 Portionen)
+
+*Aktive Zeit 20 Min., gesamt 2 Tage. Equipment: Topf.*
+
+## Einkaufsliste
+
+### Aldi / REWE
+- [ ] 1 kg Joghurt
+
+## Zubereitung
+
+**1. Salzen (5 Min.)**
+1 kg Joghurt salzen.
+
+**2. Abtropfen (12 Std., passiv)**
+Abtropfen lassen.
+"""
+dd, _ = parse_recipe(DAYS, "test/tage")
+t("Check P: Gesamtzeit in Kalendertagen prüft nur die Obergrenze", lambda: (
+    assert_(any("Kalendertagen" in r for r in check_p(dd)[1]) and not any("kürzer" in r for r in check_p(dd)[1]), check_p(dd)[1]),))
 print(f"{n} Tests ok")
 if lint.msgs or mlint.msgs:
     print("Lint (Gericht):", *lint.msgs, sep="\n  ") if lint.msgs else None

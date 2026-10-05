@@ -1,6 +1,6 @@
 # Vollkornbrötchen auf Vorrat — Weizen als Leitrezept, Dinkel und Weizen-Roggen als Varianten (12 Stück)
 
-*Vorabend \~20 Min. Arbeit (Poolish, Kochstück). Backtag \~3½ Std., davon \~40 Min. echte Arbeit. Backen aus dem Frost: 2,5–3,5 Std. Gare + 20 Min. Backzeit. Equipment: Küchenwaage (1 g), Fleischthermometer, Teigkarte, Backpapier, 2 Backbleche, Rasierklinge oder sehr scharfes glattes Messer, Sprühflasche oder kleine Metallschale. **Keine Küchenmaschine nötig — dieses Rezept ist für Handarbeit gebaut.***
+*Aktive Zeit \~1 Std., gesamt 2 Tage (Vorabend und Backtag; aus dem Frost auch später). Vorabend \~20 Min. Arbeit (Poolish, Kochstück). Backtag \~3½ Std., davon \~40 Min. echte Arbeit. Backen aus dem Frost: 2,5–3,5 Std. Gare + 20 Min. Backzeit. Equipment: Küchenwaage (1 g), Fleischthermometer, Teigkarte, Backpapier, 2 Backbleche, Rasierklinge oder sehr scharfes glattes Messer, Sprühflasche oder kleine Metallschale. **Keine Küchenmaschine nötig — dieses Rezept ist für Handarbeit gebaut.***
 
 *Varianten: Mehl = Weizen | Weizen-Roggen | Dinkel · Weg = Einfrieren | Direkt backen | Kombi*
 

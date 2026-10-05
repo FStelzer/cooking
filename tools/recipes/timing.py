@@ -387,9 +387,14 @@ def check_p(recipe: dict) -> tuple[list[str], list[str]]:
     tot = (recipe.get("times") or {}).get("total") or {}
     lo = secs(tot.get("min") or tot.get("typical") or tot.get("max"))  # Schema erlaubt auch nur min oder nur max
     hi = secs(tot.get("max") or tot.get("typical") or tot.get("min"))
+    # „gesamt 3 Tage“ (PnD, L7) ist eine Kalenderspanne mit Nächten und Pausen, die nie Schritte sind:
+    # nur die Obergrenze ist prüfbar, „Pfad deutlich kürzer“ wäre dort immer wahr.
+    calendar = any(re.match(r"^P\d+D$", tot.get(k) or "") for k in ("min", "max", "typical"))
     if lo is not None:
         if length > hi * 1.15:
             reps.append(f"P ⚠ Pfad {fmt(length)} länger als „gesamt {tot.get('source', '')}“ — Dauern oder Kanten prüfen")
+        elif calendar:
+            reps.append(f"P Gesamtzeit in Kalendertagen („{tot.get('source', '')}“) — nur die Obergrenze geprüft")
         elif length < lo * 0.6:
             reps.append(f"P ⚠ Pfad {fmt(length)} deutlich kürzer als „gesamt {tot.get('source', '')}“ — fehlt eine Wartezeit als Schritt?")
     else:

@@ -1,6 +1,6 @@
 # Bò lúc lắc — vietnamesisches „Shaking Beef" mit Brunnenkresse-Salat (4 Portionen)
 
-*Aktive Zeit \~35 Min. + 2 Std. Marinieren (passiv). Equipment: schwere Edelstahlpfanne (groß, damit 150–200 g Fleisch einschichtig liegen), Fleischthermometer, kleiner Topf für Reis.*
+*Aktive Zeit \~35 Min., gesamt \~2,5 Std. (inkl. 2 Std. Marinieren, passiv). Equipment: schwere Edelstahlpfanne (groß, damit 150–200 g Fleisch einschichtig liegen), Fleischthermometer, kleiner Topf für Reis.*
 
 Saigoner Klassiker aus der französisch-vietnamesischen Küche: Rinderwürfel bei Maximalhitze scharf angebraten und dabei geschüttelt (*lúc lắc* = „schütteln"), mit Zwiebeln, Knoblauch und einer Soja-Fischsaucen-Glasur, auf Brunnenkresse mit Tomaten und Essig-Zwiebeln, dazu ein Limetten-Salz-Pfeffer-Dip und Reis. Zweimal gekocht (einmal mit, einmal ohne Sauce), beide Male super lecker — aber beide Male mit einer fiesen schwarzen Kruste in der Pfanne. Dieses Rezept ist die vollständig ausgearbeitete Fassung und baut den Fix dafür ein: **die Marinade wird trocken, alles Zuckrige und der Knoblauch wandern in die Pfanne, wenn das Fleisch schon gebräunt ist.**
 
