@@ -442,7 +442,36 @@ Fehlt `after` irgendwo? Welche Notizen entstehen, und passen sie ins Format?
   während des Amuse (gangübergreifend), Learnings eines gekochten Menüs.
 - **AP6:** Varianten (dal-baukasten, vollkornbrötchen): `variants[]`, `only`,
   `replaces`, `byVariant`, `next`; zwei Schedules (Backtag, aus dem Frost).
+  Vorschlag (10/2026, noch nicht entschieden):
+  - Zwei Muster. Brötchen hat orthogonale Dimensionen (Mehl: Weizen | Weizen-Roggen |
+    Dinkel; Weg: Einfrieren | Direkt backen | Beides), die Unterschiede stehen meist im
+    Schritt selbst. Dal ist ein Grundrezept plus Alternativen A–D, die eigene Schritte und
+    eigene Einkaufsblöcke haben.
+  - Ein Rezept deklariert seine Dimensionen mit Wahlmöglichkeiten, jede mit Default.
+    Schreibweise: `*Varianten: Mehl = Weizen | Weizen-Roggen | Dinkel · Weg = …*`.
+  - Ganze Schritte, Zeitplan-Einträge und Einkaufsposten tragen `only` (Zeile
+    `*nur Einfrieren, Beides*` unter dem Schritt-Titel) oder `replaces` (über den
+    Titel, nie über die Nummer).
+  - Unterschiede innerhalb eines Satzes laufen als Spans mit derselben Mechanik wie beim
+    Skalieren: „80 g Wasser (Weizen-Roggen: 90 g, Dinkel: 40 g)“. Die bestehenden
+    Schreibweisen der Brötchen-Datei vereinheitlichen.
+  - Einkaufsliste und Mengen-Check rechnet Python vor, pro Kombination unter einem
+    Schlüssel (Brötchen 3×3, Dal 5). Der Browser wählt nur aus und hat keine eigene
+    Aggregation.
+  - Kochmodus: eine Auswahlleiste oben mit einem Segment pro Dimension. Die Wahl wird pro
+    Rezept im localStorage gemerkt und gilt für Kochen, Plan, Timer und Einkauf. Nicht
+    gewählte Schritte verschwinden ganz. „Beides“ muss die Dimension ausdrücklich
+    erlauben. Lesen zeigt weiterhin den vollen Text.
+  - Am Text zu klären: Ersetzt eine Dal-Variante Grundschritte oder hängt sie Schritte an?
+    Gibt es einen Zeitplan pro Weg oder einen Zeitplan mit `only`-Einträgen?
 - **AP7:** Abnahme über alle fünf Dateien, Review-Checkliste, PRD-Delta.
-- Offen aus AP4: Kritischer-Pfad-Linter gegen `times.total`; Dauern beim Testlauf
-  messen und die `estimated`-Flags ablösen; Personen-Multiplikator für `per`-Mengen in
-  der Ableitung; November-Menü im Kochmodus benutzen (Testlauf Gang 2).
+- Kochmodus alltagstauglich (nach AP7, vor dem November-Menü und vor Phase 5):
+  Wake-Lock, Alarm, Offline, Personen-Multiplikator für `per`-Mengen in der Ableitung,
+  Kritischer-Pfad-Linter gegen `times.total`. Generische Schnell-Timer (Quick-Set ohne
+  Schrittbezug). „Claude zum Schritt fragen“ mit dem Rezept als Kontext. Danach den
+  November-Menü-Testlauf (Gang 2) machen, die Dauern dabei messen und die
+  `estimated`-Flags ablösen. Klären, was mit `claude-cook.html` passiert.
+- **Phase 5:** Einkaufsliste und Mengen-Check aus dem JSON in Docsify (Skalieren,
+  Löffel-Regel, Variantenwahl). Der Apple-Export kommt dann aus der generierten Liste,
+  danach entfallen beide Sektionen im Markdown. Erst nach AP6, weil die Varianten die
+  Struktur der Liste ändern.
