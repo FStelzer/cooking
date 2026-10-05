@@ -13,7 +13,7 @@ from datetime import datetime, timezone
 
 from .fmt import COUNT_UNIT, FRACTION_VALUES, fmt_amount
 from .spoons import display_text
-from .util import (NUM, SHOPPING_SECTION, TASK_ITEM, UNITS_MASS_VOL, iter_steps, quote_key,
+from .util import (NUM, SHOPPING_SECTION, TASK_ITEM, UNITS_MASS_VOL, iter_tasks_with_course, quote_key,
                    split_h2, unit_alt, words)
 
 # Besuchs-Reihenfolge laut CLAUDE.md (Asialaden zuerst, dann REWE); Vorrat zuletzt.
@@ -61,9 +61,10 @@ def _group_key(key: tuple[str, str | None]) -> tuple:
 def derive(recipe: dict) -> dict:
     """Vorbedingung: Check D ist grün (alle step.ingredients[].ref bekannt)."""
     ings = {i["id"]: i for i in recipe.get("ingredients", [])}
-    acc = {i: {"value": None, "max": None, "unit": None, "approx": False, "mixed": set(), "unitless": [], "perTask": {}}
+    acc = {i: {"value": None, "max": None, "unit": None, "approx": False, "mixed": set(), "unitless": [], "perTask": {}, "perCourse": {}}
            for i in ings}
-    for task, step in iter_steps(recipe):
+    for course, task in iter_tasks_with_course(recipe):
+      for step in task["steps"]:
         for si in step["ingredients"]:
             if si.get("reuse"):
                 continue
@@ -73,9 +74,9 @@ def derive(recipe: dict) -> dict:
             if am.get("value") is None:
                 a["unitless"].append(am["text"])
                 continue
-            hint = ings[si["ref"]].get("unitHint")
-            v, u = _base(am["value"], am.get("unit"), hint)
-            mx, _ = _base(am.get("max", am["value"]), am.get("unit"), hint)
+            hint, n = ings[si["ref"]].get("unitHint"), am.get("times", 1)
+            v, u = _base(am["value"] * n, am.get("unit"), hint)
+            mx, _ = _base(am.get("max", am["value"]) * n, am.get("unit"), hint)
             if a["value"] is None:
                 a["unit"] = u
             elif a["unit"] != u:
@@ -84,7 +85,10 @@ def derive(recipe: dict) -> dict:
             a["value"] = (a["value"] or 0) + v
             a["max"] = (a["max"] or 0) + mx
             a["approx"] = a["approx"] or bool(am.get("approx"))
-            a["perTask"].setdefault(task["id"], []).append(am["text"])
+            a["perTask"].setdefault(task["id"], []).append(am["text"] + (f" ×{n}" if n > 1 else ""))
+            if course:
+                pc = a["perCourse"].setdefault(course, [0, 0])
+                pc[0] += v; pc[1] += mx
 
     quantities, groups = {}, {}
     for iid, a in acc.items():
@@ -92,6 +96,8 @@ def derive(recipe: dict) -> dict:
         if a["value"] is not None:
             total.update(value=a["value"], max=a["max"], unit=a["unit"], approx=a["approx"])
         q = {"ingredient": iid, "total": total, "perTask": {t: " + ".join(xs) for t, xs in a["perTask"].items()}}
+        if a["perCourse"]:
+            q["perCourse"] = {c: {"value": lo, "max": hi, "unit": a["unit"]} for c, (lo, hi) in a["perCourse"].items()}
         if a["unitless"]:
             q["unitless"] = a["unitless"]
         if a["mixed"]:

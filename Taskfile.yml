@@ -133,4 +133,4 @@ tasks:
         podman run --rm --network=host -v .:/work:rw,Z -w /work {{.PW_IMAGE}}
         env PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 npx -y -p playwright@{{.PW_VERSION}} sh -c
         'export PLAYWRIGHT_DIR="$(dirname "$(dirname "$(command -v playwright)")")/";
-        node tools/smoke_kochmodus.mjs {{.CLI_ARGS}}'
+        node tools/smoke_kochmodus.mjs {{.CLI_ARGS}} && node tools/smoke_docsify_link.mjs'

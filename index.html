@@ -28,6 +28,7 @@
       cursor: pointer;
       white-space: nowrap;
     }
+    a.einkauf-export-btn { text-decoration: none; }
     .einkauf-export-btn:hover {
       background: var(--theme-color, #0074d9);
       color: #fff;
@@ -134,6 +135,33 @@
       });
     }
 
+    // Kochmodus-Link: gibt es zum Rezept ein JSON (schema/beispiele/<name>.json oder
+    // <pfad>.json neben der .md), hängt ein Knopf an die H1, der den Kochmodus mit
+    // genau diesem JSON öffnet. Keine Änderung am Markdown nötig.
+    function kochmodusPlugin(hook, vm) {
+      hook.doneEach(function () {
+        var file = (vm.route && vm.route.file) || '';
+        if (!/\.md$/.test(file) || file === 'ideen.md') return;
+        var h1 = document.querySelector('.markdown-section h1');
+        if (!h1 || h1.querySelector('.kochmodus-btn')) return;
+        var base = file.replace(/^\/+/, '').replace(/\.md$/, '');
+        var candidates = ['schema/beispiele/' + base.split('/').pop() + '.json', base + '.json'];
+        (function probe(i) {
+          if (i >= candidates.length) return;
+          fetch(candidates[i], { method: 'HEAD' }).then(function (r) {
+            if (!r.ok) return probe(i + 1);
+            var a = document.createElement('a');
+            a.className = 'einkauf-export-btn kochmodus-btn';
+            a.textContent = '🍳 Kochmodus';
+            a.href = 'kochmodus/?r=../' + candidates[i];
+            a.target = '_blank';
+            a.rel = 'noopener';
+            h1.appendChild(a);
+          }).catch(function () { probe(i + 1); });
+        })(0);
+      });
+    }
+
     window.$docsify = {
       name: 'Rezepte',
       loadSidebar: true,
@@ -146,7 +174,7 @@
       },
       auto2top: true,
       relativePath: true,
-      plugins: [einkaufExportPlugin],
+      plugins: [einkaufExportPlugin, kochmodusPlugin],
     }
   </script>
   <!-- Docsify core -->

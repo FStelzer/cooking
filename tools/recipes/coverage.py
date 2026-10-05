@@ -4,7 +4,7 @@ from __future__ import annotations
 import re
 from collections import Counter
 
-from .util import (UNIT_TOKEN, annotation_quotes, is_generated, iter_steps, iter_tasks, quote_key,
+from .util import (UNIT_TOKEN, annotation_quotes, is_generated, iter_courses, iter_steps, iter_tasks, quote_key,
                    sections, sentence_prefixes, source_without_generated, split_h2, unit_tokens,
                    verbatim_strings, ws_key)
 
@@ -87,6 +87,8 @@ def check_d(recipe: dict) -> tuple[list[str], list[str]]:
 
     for ing in recipe.get("ingredients", []):
         reg("ingredient", ing["id"])
+    for c in iter_courses(recipe):
+        reg("course", c["id"])
     for task in iter_tasks(recipe):
         reg("task", task["id"])
         for prod in task.get("produces", []):
@@ -114,7 +116,8 @@ def check_d(recipe: dict) -> tuple[list[str], list[str]]:
             me = f"step:{step['id']}"
             after = step.get("after")
             preds[me] = list(after) if after is not None else ([prev] if prev else [])
-            for ref in preds[me] + ([step["start"]["ref"].rsplit(":", 1)[0]] if step.get("start") else []):
+            srefs = [step["start"]["ref"].rsplit(":", 1)[0]] if step.get("start", {}).get("ref", "").startswith("step:") else []
+            for ref in preds[me] + srefs:
                 if ref not in ids:
                     errs.append(f"D {me}: Referenz '{ref}' löst nicht auf")
                 elif ref == me:
@@ -134,9 +137,40 @@ def check_d(recipe: dict) -> tuple[list[str], list[str]]:
         return False
 
     errs += [f"D Zyklus im Schritt-Graph bei {n}" for n in preds if cyclic(n)][:1]
-    for sec in sections(recipe, "learnings"):
+    def ev(ref: str) -> bool:  # EventRef → existiert das Objekt?
+        if ref == "anchor":
+            return True
+        kind, rest = ref.split(":", 1)
+        obj = rest.rsplit(":", 1)[0] if kind != "event" else rest
+        return f"{kind}:{obj}" in ids or kind == "event"
+
+    for i, cs in enumerate(recipe.get("constraints", [])):
+        for k in ("from", "to"):
+            if not ev(cs[k]):
+                errs.append(f"D constraints[{i}].{k} '{cs[k]}' löst nicht auf")
+    for i, co in enumerate(recipe.get("courses", [])):
+        if f"course:{co['ref']}" not in ids:
+            errs.append(f"D courses[{i}].ref '{co['ref']}' löst nicht auf")
+    for sec in sections(recipe, "schedule"):
+        sch = sec["schedule"]
+        phases = {ph["id"] for ph in sch["phases"]}
+        for i, e in enumerate(sch["entries"]):
+            if e["phase"] not in phases:
+                errs.append(f"D schedule.entries[{i}].phase '{e['phase']}' unbekannt")
+            errs += [f"D schedule.entries[{i}].tasks '{tk}' unbekannt" for tk in e.get("tasks", []) if f"task:{tk}" not in ids]
+            if e.get("course") and f"course:{e['course']}" not in ids:
+                errs.append(f"D schedule.entries[{i}].course '{e['course']}' unbekannt")
+            if e.get("at") and not ev(e["at"]["ref"]):
+                errs.append(f"D schedule.entries[{i}].at.ref '{e['at']['ref']}' löst nicht auf")
+    for _, step in iter_steps(recipe):
+        if step.get("start") and not ev(step["start"]["ref"]):
+            errs.append(f"D step:{step['id']}.start.ref '{step['start']['ref']}' löst nicht auf")
+        for j, cl in enumerate(step.get("claims", [])):
+            if cl.get("until") and not ev(cl["until"]):
+                errs.append(f"D step:{step['id']}.claims[{j}].until '{cl['until']}' löst nicht auf")
+    for sec in [*sections(recipe, "learnings"), *[s for c in iter_courses(recipe) for s in sections(c, "learnings")]]:
         errs += [f"D learnings.notes[{i}].ref '{n['ref']}' löst nicht auf" for i, n in enumerate(sec.get("notes", [])) if n["ref"] not in ids]
-    for sec in sections(recipe, "todo"):
+    for sec in [*sections(recipe, "todo"), *[s for c in iter_courses(recipe) for s in sections(c, "todo")]]:
         errs += [f"D todo.items[{i}].ref '{it['ref']}' löst nicht auf" for i, it in enumerate(sec["items"]) if it.get("ref") and it["ref"] not in ids]
     if unused := [i["id"] for i in recipe.get("ingredients", []) if i["id"] not in used]:
         reps.append(f"D Zutaten ohne Dosierung in Schritten: {', '.join(unused)}")

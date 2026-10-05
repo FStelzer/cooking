@@ -98,9 +98,22 @@ def section(recipe: dict, type_: str) -> dict | None:
     return next(iter(sections(recipe, type_)), None)
 
 
-def iter_tasks(recipe: dict) -> Iterator[dict]:
+def iter_courses(recipe: dict) -> Iterator[dict]:
+    for sec in sections(recipe, "courses"):
+        yield from sec["courses"]
+
+
+def iter_tasks_with_course(recipe: dict, course: str | None = None) -> Iterator[tuple[str | None, dict]]:
     for sec in sections(recipe, "tasks"):
-        yield from sec["tasks"]
+        for task in sec["tasks"]:
+            yield course, task
+    for c in iter_courses(recipe):
+        yield from iter_tasks_with_course(c, c["id"])
+
+
+def iter_tasks(recipe: dict) -> Iterator[dict]:
+    for _, task in iter_tasks_with_course(recipe):
+        yield task
 
 
 def iter_steps(recipe: dict) -> Iterator[tuple[dict, dict]]:
@@ -119,13 +132,21 @@ def verbatim_strings(recipe: dict) -> list[str]:
         elif t == "tasks":
             out.append(sec.get("intro", ""))
             for task in sec["tasks"]:
-                out.append(task.get("intro", ""))
+                out += [task.get("heading", ""), task.get("intro", "")]
                 for step in task["steps"]:
                     out += [step.get("heading", ""), step["text"]]
         elif t == "learnings":
             out += [sec["summary"], sec.get("details", "")]
         elif t == "todo":
             out += [i["text"] for i in sec["items"]]
+        elif t == "courses":
+            out.append(sec.get("intro", ""))
+            for c in sec["courses"]:
+                out += verbatim_strings(c)
+        elif t == "schedule":
+            out += [sec.get("intro", ""), sec.get("note", "")]
+            out += [e["text"] for e in sec["schedule"]["entries"]]
+            out += [ph["label"] for ph in sec["schedule"]["phases"]]
     return [s for s in out if s]
 
 
@@ -142,6 +163,16 @@ def annotation_quotes(recipe: dict) -> list[tuple[str, str]]:
     src("times.total", times.get("total"))
     for sec in sections(recipe, "learnings"):
         q += [(f"learnings.notes[{i}].text", n["text"]) for i, n in enumerate(sec.get("notes", []))]
+    for c in iter_courses(recipe):
+        q += [(f"{c['id']}/{path}", quote) for path, quote in annotation_quotes(c) if not path.startswith("step:")]
+    for i, c in enumerate(recipe.get("constraints", [])):
+        if c.get("source"):
+            q.append((f"constraints[{i}].source", c["source"]))
+    for i, c in enumerate(recipe.get("courses", [])):
+        if c.get("source"):
+            q.append((f"courses[{i}].source", c["source"]))
+    for sec in sections(recipe, "schedule"):
+        q += [(f"schedule.entries[{i}].source", e["source"]) for i, e in enumerate(sec["schedule"]["entries"]) if e.get("source") and not e.get("derived")]
     for task in iter_tasks(recipe):
         for prod in task.get("produces", []):
             src(f"product:{prod['id']}.hold", prod.get("hold"))
