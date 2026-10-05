@@ -2,8 +2,23 @@
 from __future__ import annotations
 
 FRACTIONS = {0.5: "½", 0.25: "¼", 0.75: "¾"}
-FRACTION_VALUES = {v: k for k, v in FRACTIONS.items()}
+FRACTION_VALUES = {v: k for k, v in FRACTIONS.items()} | {"⅓": .33}
+FRAC_NUM = r"\d*[½¼¾⅓]"  # „½“, „1½“ — Zahl mit Bruchzeichen
 COUNT_UNIT = "Stück"  # kanonische Einheit für Zählmengen; wird in der Anzeige weggelassen
+
+
+def parse_num(s: str) -> float:
+    """„1½“ → 1.5, „½“ → 0.5, „2,5“ → 2.5 — einzige Stelle, die Zahlen aus dem Text liest."""
+    if s and s[-1] in FRACTION_VALUES:
+        return (int(s[:-1]) if s[:-1] else 0) + FRACTION_VALUES[s[-1]]
+    return float(s.replace(",", "."))
+
+
+def fmt_hm(secs: int, signed: bool = False) -> str:
+    """Sekunden → „2:05“ (signed: „+0:15“ / „−1:30“)."""
+    sign = ("+" if secs >= 0 else "−") if signed else ""
+    secs = abs(secs) if signed else secs
+    return f"{sign}{secs // 3600}:{secs % 3600 // 60:02d}"
 
 
 def fmt_num(x: float) -> str:

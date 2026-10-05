@@ -87,7 +87,7 @@ t("Varianten: Auswahl mit Default, only = oder je Dimension, und über Dimension
   assert.ok(isActive(undefined, sel));
 });
 t("Varianten: Menge tauschen, Klammer ohne Menge filtern, Dosierungen mitziehen", () => {
-  const st = { alts: [{ text: "(Weizen-Roggen: 90 g, Dinkel: 40 g)", base: "80 g Wasser", options: [{ when: "mehl=weizen-roggen", text: "90 g" }, { when: "mehl=dinkel", text: "40 g" }] },
+  const st = { alts: [{ text: "(Weizen-Roggen: 90 g, Dinkel: 40 g)", base: "80 g Wasser", baseQty: "80 g", options: [{ when: "mehl=weizen-roggen", text: "90 g", qty: true }, { when: "mehl=dinkel", text: "40 g", qty: true }] },
                       { text: "(Dinkel: 25, 50, 75)", options: [{ when: "mehl=dinkel", text: "25, 50, 75" }] }],
                ingredients: [{ ref: "wasser", amount: { text: "80 g Wasser", value: 80, unit: "g" }, byVariant: { "mehl=dinkel": [{ ref: "wasser", amount: { text: "40 g", value: 40, unit: "g" } }] } }] };
   const txt = "80 g Wasser (Weizen-Roggen: 90 g, Dinkel: 40 g) dazu. Nach 30, 60 und 90 Min. (Dinkel: 25, 50, 75) falten.";

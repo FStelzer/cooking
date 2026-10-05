@@ -331,7 +331,8 @@
                       "text": "150 g Dinkelvollkornmehl"
                     }
                   ],
-                  "base": "150 g Weizenvollkornmehl"
+                  "base": "150 g Weizenvollkornmehl",
+                  "baseQty": "150 g"
                 }
               ],
               "meta": "*jederzeit*",
@@ -430,7 +431,8 @@
                       "text": "60 g Dinkelvollkornmehl"
                     }
                   ],
-                  "base": "60 g Weizenvollkornmehl"
+                  "base": "60 g Weizenvollkornmehl",
+                  "baseQty": "60 g"
                 }
               ],
               "meta": "*jederzeit · Herd*",
@@ -629,21 +631,25 @@
                       "text": "390 g Dinkelvollkornmehl"
                     }
                   ],
-                  "base": "390 g Weizenvollkornmehl"
+                  "base": "390 g Weizenvollkornmehl",
+                  "baseQty": "390 g"
                 },
                 {
                   "text": "(Weizen-Roggen: 90 g, Dinkel: 40 g)",
                   "options": [
                     {
                       "when": "mehl=weizen-roggen",
-                      "text": "90 g"
+                      "text": "90 g",
+                      "qty": true
                     },
                     {
                       "when": "mehl=dinkel",
-                      "text": "40 g"
+                      "text": "40 g",
+                      "qty": true
                     }
                   ],
-                  "base": "80 g Wasser"
+                  "base": "80 g Wasser",
+                  "baseQty": "80 g"
                 },
                 {
                   "text": "(Dinkel: 30 Min.)",
@@ -792,14 +798,17 @@
                   "options": [
                     {
                       "when": "weg=direkt-backen",
-                      "text": "6 g"
+                      "text": "6 g",
+                      "qty": true
                     },
                     {
                       "when": "weg=kombi",
-                      "text": "9 g"
+                      "text": "9 g",
+                      "qty": true
                     }
                   ],
-                  "base": "12 g Frischhefe"
+                  "base": "12 g Frischhefe",
+                  "baseQty": "12 g"
                 }
               ],
               "attention": "active"
@@ -1778,8 +1787,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T17:11:48Z",
-    "sourceHash": "cc9bf424a6cdc35e",
+    "generatedAt": "2026-10-05T18:07:19Z",
+    "sourceHash": "96d1cdef04eab05e",
     "select": {
       "mehl": "weizen",
       "weg": "einfrieren"

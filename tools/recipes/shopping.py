@@ -11,7 +11,8 @@ import json
 import re
 from datetime import datetime, timezone
 
-from .fmt import COUNT_UNIT, FRACTION_VALUES, fmt_amount
+from . import variants as V
+from .fmt import COUNT_UNIT, FRAC_NUM, fmt_amount, parse_num
 from .spoons import display_text
 from .util import (NUM, SHOPPING_SECTION, TASK_ITEM, UNITS_MASS_VOL, iter_tasks_with_course, quote_key,
                    split_h2, unit_alt, words)
@@ -61,7 +62,6 @@ def _group_key(key: tuple[str, str | None]) -> tuple:
 def derive(recipe: dict) -> dict:
     """Vorbedingung: Check D ist grün (alle step.ingredients[].ref bekannt). Mit Varianten gelten quantities/shopping
     für die Default-Wahl; `variants[]` hat dieselben Sichten für jede andere Kombination (Python rechnet, der Browser wählt)."""
-    from . import variants as V
     head = {"generatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "sourceHash": source_hash(recipe)}
     dims = recipe.get("variants") or []
     if not dims:
@@ -158,15 +158,10 @@ def render_shopping(recipe: dict) -> str:
 
 # ---------------------------------------------------------------- Check K
 
-_FRAC_ALT = "|".join(FRACTION_VALUES)
 _U = unit_alt(UNITS_MASS_VOL)
-_QTY = re.compile(rf"^\s*(?:(?i:optional):\s*)?(?P<lo>{NUM}|{_FRAC_ALT})\s*(?P<u1>{_U})?"
+_QTY = re.compile(rf"^\s*(?:(?i:optional):\s*)?(?P<lo>{FRAC_NUM}|{NUM})\s*(?P<u1>{_U})?"
                   rf"(?:\s*[–-]\s*(?P<hi>{NUM})\s*(?P<u2>{_U})?)?")
 _NOTE = re.compile(r"\*\(.*?\)\*")
-
-
-def _num(s: str) -> float:
-    return FRACTION_VALUES.get(s) or float(s.replace(",", "."))
 
 
 def parse_qty(part: str) -> tuple[float, float, str] | None:
@@ -174,8 +169,8 @@ def parse_qty(part: str) -> tuple[float, float, str] | None:
     m = _QTY.match(part)
     if not m or not m.group("lo"):
         return None
-    hi = _num(m.group("hi")) if m.group("hi") else None
-    lo, unit = _base(_num(m.group("lo")), m.group("u1") or m.group("u2"))
+    hi = parse_num(m.group("hi")) if m.group("hi") else None
+    lo, unit = _base(parse_num(m.group("lo")), m.group("u1") or m.group("u2"))
     hi, _ = _base(hi, m.group("u2") or m.group("u1"))
     return lo, hi if hi is not None else lo, unit
 

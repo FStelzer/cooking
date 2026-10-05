@@ -1090,9 +1090,17 @@
                     },
                     "text": {
                       "type": "string"
+                    },
+                    "qty": {
+                      "type": "boolean",
+                      "description": "Option ist nur eine Menge („90 g“): ersetzt baseQty, Zutat bleibt"
                     }
                   }
                 }
+              },
+              "baseQty": {
+                "type": "string",
+                "description": "Mengenteil von base („80 g“), den eine reine Mengen-Option ersetzt"
               }
             }
           }

@@ -16,6 +16,15 @@ SHOPPING_SECTION = GENERATED_SECTIONS[0]
 
 # Regex-Bausteine, aus denen Check B (util) und Check K (shopping) ihre Muster bauen.
 NUM = r"\d+(?:[,.]\d+)?"
+# Ressourcen eines Menüs: 1 Ofen, 5-Felder-Induktion (CLAUDE.md), ein Koch
+DEFAULT_RESOURCES = [{"id": "oven", "count": 1}, {"id": "hob", "count": 5}, {"id": "cook", "count": 1}]
+
+
+def all_doses(si: dict):
+    """Eine Dosierung und ihre Varianten-Alternativen (`byVariant`)."""
+    yield si
+    for ds in si.get("byVariant", {}).values():
+        yield from ds
 NOT_WORD = r"(?![\wäöüßÄÖÜ])"
 UNITS_MASS_VOL = ("kg", "g", "ml", "l", "EL", "TL", "Prise")
 UNITS_ALL = UNITS_MASS_VOL + ("Min.", "Min", "Std.", "Std", "Sek.", "Sek", "h", "°C", "%", "cm")

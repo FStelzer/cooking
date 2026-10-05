@@ -4,7 +4,8 @@ from __future__ import annotations
 import re
 from collections import Counter
 
-from .util import (UNIT_TOKEN, annotation_quotes, is_generated, iter_courses, iter_steps, iter_tasks, quote_key,
+from . import variants as V
+from .util import (UNIT_TOKEN, all_doses, annotation_quotes, is_generated, iter_courses, iter_steps, iter_tasks, quote_key,
                    sections, sentence_prefixes, source_without_generated, split_h2, unit_tokens,
                    verbatim_strings, ws_key)
 
@@ -106,14 +107,10 @@ def check_d(recipe: dict) -> tuple[list[str], list[str]]:
             if step.get("actionDerived"):
                 derived.append(f"step:{step['id']}.action")
             for j, si in enumerate(step["ingredients"]):
-                used.add(si["ref"])
-                if f"ingredient:{si['ref']}" not in ids:
-                    errs.append(f"D step:{step['id']}.ingredients[{j}] ref '{si['ref']}' unbekannt")
-                for when, alts in si.get("byVariant", {}).items():  # Varianten-Dosierungen (AP6)
-                    for a in alts:
-                        used.add(a["ref"])
-                        if f"ingredient:{a['ref']}" not in ids:
-                            errs.append(f"D step:{step['id']}.ingredients[{j}].byVariant[{when}] ref '{a['ref']}' unbekannt")
+                for d in all_doses(si):  # inkl. Varianten-Dosierungen (byVariant)
+                    used.add(d["ref"])
+                    if f"ingredient:{d['ref']}" not in ids:
+                        errs.append(f"D step:{step['id']}.ingredients[{j}] ref '{d['ref']}' unbekannt")
                 if si.get("spanForm") == "derived":
                     derived.append(f"step:{step['id']}.ingredients[{j}]")
     # Schritt-Graph: after/start lösen auf, kein Selbstbezug, keine Zyklen (Vorgänger-Default eingeschlossen)
@@ -180,7 +177,7 @@ def check_d(recipe: dict) -> tuple[list[str], list[str]]:
         errs += [f"D learnings.notes[{i}].ref '{n['ref']}' löst nicht auf" for i, n in enumerate(sec.get("notes", [])) if n["ref"] not in ids]
     for sec in [*sections(recipe, "todo"), *[s for c in iter_courses(recipe) for s in sections(c, "todo")]]:
         errs += [f"D todo.items[{i}].ref '{it['ref']}' löst nicht auf" for i, it in enumerate(sec["items"]) if it.get("ref") and it["ref"] not in ids]
-    choices = {f"{d['id']}={c['id']}" for d in recipe.get("variants", []) for c in d["choices"]}
+    choices = set(V.choice_index(recipe.get("variants", [])).values())
     def chk(where: str, refs) -> None:
         errs.extend(f"D {where}: Wahl '{r}' nicht deklariert" for r in refs or [] if r not in choices)
     for i in recipe.get("ingredients", []): chk(f"ingredient:{i['id']}.only", i.get("only"))

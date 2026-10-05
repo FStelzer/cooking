@@ -49,21 +49,23 @@ def parse_only(text: str, dims: list[dict]) -> tuple[list[str] | None, list[str]
     return (refs or None), unknown
 
 
+def _label_alt(dims: list[dict]) -> str:
+    """Alle Wahl-Namen als Regex-Alternative, längste zuerst („Weizen-Roggen“ vor „Weizen“)."""
+    return "|".join(re.escape(x) for x in sorted({c["label"] for d in dims for c in d["choices"]}, key=len, reverse=True))
+
+
 def alt_pattern(dims: list[dict]) -> re.Pattern | None:
     """Klammer, deren Teile alle mit „<Wahl>:“ beginnen: „(Weizen-Roggen: 90 g, Dinkel: 40 g)“."""
-    labels = sorted({c["label"] for d in dims for c in d["choices"]}, key=len, reverse=True)
-    if not labels:
+    if not dims:
         return None
-    lab = "|".join(re.escape(x) for x in labels)
+    lab = _label_alt(dims)
     return re.compile(rf"\((?P<body>(?:{lab}):\s[^()]*(?:\([^()]*\)[^()]*)*)\)")
 
 
 def split_alt(body: str, dims: list[dict]) -> list[tuple[str, str]]:
     """„Weizen-Roggen: 90 g, Dinkel: 40 g“ → [(„weizen-roggen“-Ref, „90 g“), …]."""
     idx = choice_index(dims)
-    labels = sorted({c["label"] for d in dims for c in d["choices"]}, key=len, reverse=True)
-    lab = "|".join(re.escape(x) for x in labels)
-    parts = re.split(rf",\s(?=(?:{lab}):\s)", body)
+    parts = re.split(rf",\s(?=(?:{_label_alt(dims)}):\s)", body)
     out = []
     for p in parts:
         name, _, text = p.partition(":")
@@ -102,7 +104,7 @@ def active(only: list[str] | None, sel: dict[str, str]) -> bool:
 def view(recipe: dict, sel: dict[str, str]) -> dict:
     """Rezept, wie es bei dieser Wahl gekocht wird: inaktive Tasks/Schritte/Zutaten/Zeitplan-Einträge fallen weg,
     Dosierungen mit `byVariant` werden durch die Alternative ersetzt. Grundlage für derive() pro Kombination."""
-    r = copy.deepcopy(recipe)
+    r = copy.deepcopy({k: v for k, v in recipe.items() if k != "derived"})  # der alte derived-Block wird nicht gebraucht
     keys = {f"{k}={v}" for k, v in sel.items()}
     live = {i["id"] for i in r["ingredients"] if active(i.get("only"), sel)}  # „ggf. 4–6 g Brotgewürz“ fällt mit der Zutat weg
 

@@ -3,9 +3,15 @@ H (Service-Intervalle, warn) und L (Mengen-Check rekonstruierbar)."""
 from __future__ import annotations
 
 import re
+from typing import NamedTuple
 
 from .shopping import _match_ingredient, derive, parse_qty, words
-from .util import (iter_courses, iter_tasks, iter_tasks_with_course, quote_key, sections, split_h2, ws_key)
+from . import variants as V
+from .fmt import fmt_hm
+from .util import (DEFAULT_RESOURCES, iter_courses, iter_tasks, iter_tasks_with_course, quote_key, sections, split_h2,
+                   ws_key)
+
+HOBS = next(r["count"] for r in DEFAULT_RESOURCES if r["id"] == "hob")
 
 _ISO = re.compile(r"^([+-]?)P(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?)?$")
 PART_RANK = {None: 0, "morning": 1, "afternoon": 2, "evening": 3, "service": 4}
@@ -129,13 +135,18 @@ def task_span(task: dict) -> int:
     return sum(_dur(s) for s in task["steps"])
 
 
-def service_times(recipe: dict) -> dict[str, tuple[int, int, dict]]:
-    """task-id → (start, end, entry) in Sekunden relativ zum Anker, nur verzeitete Einträge."""
-    return _service(recipe)[0]
+class Seg(NamedTuple):
+    """Ein Schritt im Service-Zeitplan (Sekunden relativ zum Anker)."""
+    task: str
+    step: str
+    start: int
+    end: int
+    entry: dict
+    passive: bool  # passiv oder parallel: belegt den Koch nicht
 
 
-def _service(recipe: dict) -> tuple[dict, list[tuple]]:
-    """(task-id → (start, end, letzter Eintrag), Segmente pro Schritt: (task, step, start, end, entry, passiv)).
+def service_times(recipe: dict) -> tuple[dict, list[Seg]]:
+    """(task-id → (start, end, letzter Eintrag), Segmente pro Schritt), nur verzeitete Einträge.
     Ein Task, der über mehrere Phasen verteilt ist, hat ein langes Gesamt-Intervall, belegt den Koch aber nur
     in seinen Segmenten."""
     serve = {c["ref"]: secs(c["serve"]) or 0 for c in recipe.get("courses", [])}
@@ -161,7 +172,7 @@ def _service(recipe: dict) -> tuple[dict, list[tuple]]:
             for tid, steps in units:
                 begin = cur
                 for x in steps:
-                    segs.append((tid, x["id"], cur, cur + _dur(x), e, x.get("attention") == "passive" or bool(x.get("parallel"))))
+                    segs.append(Seg(tid, x["id"], cur, cur + _dur(x), e, x.get("attention") == "passive" or bool(x.get("parallel"))))
                     cur += _dur(x)
                 start = min(out[tid][0], begin) if tid in out else begin
                 out[tid] = (start, max(out[tid][1] if tid in out else -10**9, cur), e)
@@ -209,33 +220,33 @@ def check_g(recipe: dict) -> tuple[list[str], list[str]]:
 # ---------------------------------------------------------------- H (warn)
 def check_h(recipe: dict) -> tuple[list[str], list[str]]:
     reps = []
-    st, segs = _service(recipe)
+    st, segs = service_times(recipe)
     tasks = {t["id"]: t for t in iter_tasks(recipe)}
     cook = {r["id"]: r["count"] for r in recipe.get("resources", [])}
     if not st:
         return [], ["H keine verzeiteten Service-Einträge"]
     ids = sorted(st, key=lambda k: st[k][0])
-    fmt = lambda s: f"{'+' if s >= 0 else '−'}{abs(s) // 3600}:{abs(s) % 3600 // 60:02d}"
+    fmt = lambda s: fmt_hm(s, signed=True)
     reps.append("H Service-Intervalle (relativ zu Gang 1): " + "; ".join(f"{k} {fmt(st[k][0])}–{fmt(st[k][1])}" for k in ids))
     # Koch: zwei aktive Schritte aus verschiedenen Einträgen gleichzeitig (passive/parallele zählen nicht)
     seen = set()
     for i, a in enumerate(segs):
         for b in segs[i + 1:]:
-            if a[4] is b[4] or a[5] or b[5] or a[0] == b[0] or (a[0], b[0]) in seen:
+            if a.entry is b.entry or a.passive or b.passive or a.task == b.task or (a.task, b.task) in seen:
                 continue
-            if a[2] < b[3] and b[2] < a[3] and cook.get("cook", 1) == 1:
-                seen.add((a[0], b[0]))
-                reps.append(f"H ⚠ Koch doppelt belegt: {a[1]} ({fmt(a[2])}–{fmt(a[3])}) und {b[1]} ({fmt(b[2])}–{fmt(b[3])})")
+            if a.start < b.end and b.start < a.end and cook.get("cook", 1) == 1:
+                seen.add((a.task, b.task))
+                reps.append(f"H ⚠ Koch doppelt belegt: {a.step} ({fmt(a.start)}–{fmt(a.end)}) und {b.step} ({fmt(b.start)}–{fmt(b.end)})")
     # Ofen: überlappende Claims mit verschiedener Temperatur; Herd: Einheiten > Kapazität
     by_id = {x["id"]: x for t in tasks.values() for x in t["steps"]}
-    claims = [(cl["resource"], cl.get("temp"), cl.get("units", 1), t0, t1, sid)
-              for _, sid, t0, t1, _, _ in segs for cl in by_id[sid].get("claims", [])]
+    claims = [(cl["resource"], cl.get("temp"), cl.get("units", 1), g.start, g.end, g.step)
+              for g in segs for cl in by_id[g.step].get("claims", [])]
     for i, a in enumerate(claims):
         for b in claims[i + 1:]:
             if a[0] == b[0] and a[3] < b[4] and b[3] < a[4]:
                 if a[0] == "oven" and a[1] != b[1]:
                     reps.append(f"H ⚠ Ofen: {a[5]} bei {a[1]} °C und {b[5]} bei {b[1]} °C überlappen")
-                if a[0] == "hob" and a[2] + b[2] > cook.get("hob", 5):
+                if a[0] == "hob" and a[2] + b[2] > cook.get("hob", HOBS):
                     reps.append(f"H ⚠ Herd: {a[5]} + {b[5]} brauchen {a[2] + b[2]} Platten")
     # Gang-Abstände vs. Task-Spannen
     serve = {c["ref"]: secs(c["serve"]) or 0 for c in recipe.get("courses", [])}
@@ -341,18 +352,14 @@ def critical_path(recipe: dict) -> tuple[int, int, list[str]]:
         preds = [r.removeprefix("step:") for r in after if r.startswith("step:") and r.removeprefix("step:") in steps]
         for p in preds:
             if fin(p, seen + (sid,)) > t0: t0, prev[sid] = end[p], p
-        ref = (st.get("start") or {}).get("ref", "")
-        if ref.startswith("step:") and ref.endswith(":end") and ref[5:-4] in steps:
+        kind, x, edge = ((st.get("start") or {}).get("ref", "") + "::").split(":")[:3]
+        if kind == "step" and x in steps and edge in ("start", "end"):
             off = st["start"].get("offset", {})
-            # Offset passend zu _dur (typical, sonst min = kürzeste Dauer) wählen: „letzte 20–30 Min.“ ist
-            # offset {min: -30, max: -20} bei Dauer 20–30 — kurze Dauer + spätester Start endet mit dem Anker
-            base = fin(ref[5:-4], seen + (sid,)) + (secs(off.get("typical") or off.get("max") or off.get("min")) or 0)
-            if base > t0: t0, prev[sid] = base, ref[5:-4]
-        elif ref.startswith("step:") and ref.endswith(":start") and ref[5:-6] in steps:
-            # „≤ 30 Min. vor dem Anrichten“: frühestens erlaubter Start relativ zum Beginn des Ankerschritts
-            x = ref[5:-6]
-            off = st["start"].get("offset", {})
-            base = max(0, fin(x, seen + (sid,)) - _dur(steps[x]) + (secs(off.get("min") or off.get("typical")) or 0))
+            # Ende: „letzte 20–30 Min. von X“ = offset {min: -30, max: -20} bei Dauer 20–30 → spätester Offset passt zu
+            # _dur (kürzeste Dauer). Start: „≤ 30 Min. vor dem Anrichten“ → frühester erlaubter Start.
+            pick = ("typical", "max", "min") if edge == "end" else ("min", "typical")
+            point = fin(x, seen + (sid,)) - (_dur(steps[x]) if edge == "start" else 0)
+            base = max(0, point + (secs(next((off[k] for k in pick if off.get(k)), None)) or 0))
             if base > t0: t0, prev[sid] = base, x
         end[sid] = t0 + _dur(st)
         return end[sid]
@@ -370,10 +377,9 @@ def check_p(recipe: dict) -> tuple[list[str], list[str]]:
     """Kritischer Pfad gegen `times.total` (nur Gerichte; Menüs prüft H über den Zeitplan). Mit Varianten: Default-Wahl."""
     if recipe.get("kind") == "menu":
         return [], []
-    from . import variants as V
     r = V.view(recipe, V.default_selection(recipe["variants"])) if recipe.get("variants") else recipe
     length, active, path = critical_path(r)
-    fmt = lambda x: f"{x // 3600}:{x % 3600 // 60:02d}"
+    fmt = fmt_hm
     reps = [f"P kritischer Pfad {fmt(length)} ({len(path)} Schritte: {' → '.join(path)}), aktiv {fmt(active)}"]
     tot = (recipe.get("times") or {}).get("total") or {}
     lo = secs(tot.get("min") or tot.get("typical") or tot.get("max"))  # Schema erlaubt auch nur min oder nur max

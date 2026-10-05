@@ -2,7 +2,6 @@
 // Keine Aggregation (L10): Einkaufsliste und Mengen kommen aus derived.*.
 
 export const FRACTIONS = { 0.5: "½", 0.25: "¼", 0.75: "¾" };
-const FRACTION_VALUES = { "½": 0.5, "¼": 0.25, "¾": 0.75 };
 
 export function fmtNum(x) {
   if (FRACTIONS[x]) return FRACTIONS[x];
@@ -150,13 +149,11 @@ export function moreCount(step) {
 export function normalizeState(raw) {
   const s = raw && typeof raw === "object" ? raw : {};
   const obj = (v) => (v && typeof v === "object" && !Array.isArray(v) ? v : {});
-  const factor = Number(s.factor);  // Timer liegen nicht mehr hier, sondern rezeptübergreifend in „km:timers“
+  const factor = Number(s.factor);
   return { done: obj(s.done), note: typeof s.note === "string" ? s.note : "", shop: obj(s.shop), factor: factor > 0 ? factor : 1,
            order: s.order === "gang" ? "gang" : "ablauf", variant: obj(s.variant) };
 }
 
-// ---- Varianten (AP6): Auswahl pro Dimension, Filter, Inline-Alternativen ----
-// Auswahl: { mehl: "dinkel", weg: "kombi" }; fehlende Dimensionen fallen auf den Default.
 // ---- Timer, rezeptübergreifend (localStorage „km:timers“) ----------------------
 // Ein Timer: { id, label, end, paused, left, recipe: Rezept-ID|null, recipeTitle, step, stepText }.
 export function normalizeTimers(raw) {
@@ -169,11 +166,14 @@ export function timerOrigin(t, currentId) {
   const foreign = t.recipe && t.recipe !== currentId;
   return { foreign: !!foreign, text: [foreign ? t.recipeTitle || t.recipe : "", t.stepText || ""].filter(Boolean).join(" · ") };
 }
-// „Neu kochen“: Haken, Timer und Einkaufs-Haken weg; Notiz, Faktor, Reihenfolge und Varianten-Wahl bleiben.
+// „Neu kochen“: Haken und Einkaufs-Haken weg; Notiz, Faktor, Reihenfolge und Varianten-Wahl bleiben
+// (die Timer des Rezepts löscht die Seite im gemeinsamen Timer-Speicher).
 export function resetState(state) {
   return { ...state, done: {}, shop: {} };
 }
 
+// ---- Varianten (AP6): Auswahl pro Dimension, Filter, Inline-Alternativen ----
+// Auswahl: { mehl: "dinkel", weg: "kombi" }; fehlende Dimensionen fallen auf den Default.
 export function selection(recipe, chosen = {}) {
   return Object.fromEntries((recipe.variants || []).map((d) => [d.id, d.choices.some((c) => c.id === chosen[d.id]) ? chosen[d.id] : d.default]));
 }
@@ -185,11 +185,9 @@ export function isActive(only, sel) {
   for (const ref of only) { const [d, c] = ref.split("="); (byDim[d] ||= new Set()).add(c); }
   return Object.entries(byDim).every(([d, cs]) => cs.has(sel[d]));
 }
-const NUMX = "(?:\\d*[½¼¾]|\\d+(?:[,.]\\d+)?)";
-const UNITX = "(?:kg|g|ml|l|L|EL|TL|Prisen|Prise|Stück|Bund|Zehen|Zehe|Scheiben|Scheibe|Tropfen|Eigelb|Eiweiß)";
-const QTYU = new RegExp(`^~?${NUMX}(?:\\s?[–-]\\s?${NUMX})?(?:\\s?${UNITX}(?![\\wäöüß]))?`); // „12 g“, „4–6 g“, „2“
 // Text und wirksame Dosierungen eines Schritts bei dieser Wahl. Klammer hinter einer Menge: Menge tauschen
 // („80 g Wasser (Dinkel: 40 g)“ → „40 g Wasser“), sonst nur die passende Alternative zeigen, die anderen ausblenden.
+// Was eine reine Menge ist, hat der Parser entschieden (`opt.qty`, `alt.baseQty`) — keine zweite Einheitenliste hier.
 export function variantText(text, step, sel) {
   const keys = new Set(Object.entries(sel).map(([k, v]) => `${k}=${v}`));
   let out = text;
@@ -203,8 +201,7 @@ export function variantText(text, step, sel) {
       from = baseAt;
       if (!opt) repl = alt.base;
       else {
-        const baseQ = QTYU.exec(alt.base)?.[0], qtyOnly = QTYU.exec(opt.text)?.[0] === opt.text.trim();
-        repl = `<mark class="variant">${qtyOnly && baseQ ? opt.text + alt.base.slice(baseQ.length) : opt.text}</mark>`;
+        repl = `<mark class="variant">${opt.qty && alt.baseQty ? opt.text + alt.base.slice(alt.baseQty.length) : opt.text}</mark>`;
       }
     } else {
       if (out[from - 1] === " ") from -= 1;

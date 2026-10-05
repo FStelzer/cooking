@@ -4,7 +4,7 @@ import { escapeTilde, fmtAmount, fmtClock, highlight, isActive, isoSeconds, more
 
 const params = new URLSearchParams(location.search);
 // Rezept: ?r=…, sonst das zuletzt geöffnete (installierte App), sonst die Rezeptliste
-const lastRecipe = (() => { try { return localStorage.getItem("km:last"); } catch { return null; } })();
+const lastRecipe = (() => { try { return localStorage.getItem("km:last"); } catch { return null; } })();  // Klartext, kein JSON
 const RECIPE_URL = params.has("liste") ? null : params.get("r") || lastRecipe;
 const $ = (sel, el = document) => el.querySelector(sel);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -15,17 +15,25 @@ let recipe, state, view = "kochen", openId = null;
 const ingById = {};
 const main = $("#main"), sheet = $("#sheet"), backdrop = $("#backdrop"), dock = $("#dock");
 
-// ---- Zustand (localStorage, Schlüssel = Rezept-ID + Slug) -----------------
-function loadState(id) {
-  let raw = null;
-  try { raw = JSON.parse(localStorage.getItem("km:" + id)); } catch {}
-  return normalizeState(raw);
-}
-function save() { try { localStorage.setItem("km:" + recipe.id, JSON.stringify(state)); } catch {} }
+// ---- Zustand (localStorage: „km:<Rezept-ID>“, „km:timers“, „km:last“) ------------------
+// Privates Fenster, gesperrter Speicher: alles läuft weiter, nur ohne Gedächtnis.
+const store = {
+  get(k) { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
+  del(k) { try { localStorage.removeItem(k); } catch {} },
+};
+const loadState = (id) => normalizeState(store.get("km:" + id));
+function save() { store.set("km:" + recipe.id, state); }
 // Timer gelten rezeptübergreifend (ein Nudel-Timer klingelt auch, wenn man zum nächsten Rezept wechselt)
-const loadTimers = () => { try { return normalizeTimers(JSON.parse(localStorage.getItem("km:timers"))); } catch { return []; } };
+const loadTimers = () => normalizeTimers(store.get("km:timers"));
 let timers = loadTimers();
-function saveTimers() { try { localStorage.setItem("km:timers", JSON.stringify(timers)); } catch {} }
+function saveTimers() { store.set("km:timers", timers); }
+// Nach einer Timer-Änderung: Dock und die Laufzeit-Badges der Kochen-Liste, nicht die ganze Seite
+function timersChanged() {
+  saveTimers(); renderDock();
+  if (recipe && view === "kochen") renderMain();
+  if (openId) renderSheet();
+}
 const myTimers = () => timers.filter((t) => recipe && t.recipe === recipe.id);
 window.addEventListener("storage", (e) => { if (e.key === "km:timers") { timers = loadTimers(); renderDock(); } });
 const factor = () => +state.factor || 1;
@@ -54,10 +62,14 @@ function schedule() { return schedules()[0]; }
 const liveEntries = (sch) => sch.entries.filter(live);
 
 // ---- Ansichten -------------------------------------------------------------
+// Kürzeste Restzeit der laufenden Timer eines Schritts (null = keiner)
+function stepRemaining(stepId) {
+  const ts = myTimers().filter((t) => t.step === stepId);
+  return ts.length ? Math.min(...ts.map(remaining)) : null;
+}
 function runBadge(step) {
-  const ts = myTimers().filter((t) => t.step === step.id);
-  if (!ts.length) return "";
-  const rem = Math.min(...ts.map(remaining));
+  const rem = stepRemaining(step.id);
+  if (rem === null) return "";
   return `<span class="run ${rem <= 0 ? "ring" : ""}" data-run="${step.id}">${rem <= 0 ? "Fertig" : fmtClock(rem / 1000)}</span>`;
 }
 function stepRow(s, course = null, task = null) {
@@ -239,7 +251,7 @@ function renderSheet() {
   const ctx = steps().find((x) => x.step.id === openId);
   if (!ctx) return;
   const { step: s, task, course } = ctx;
-  const timers = (s.timers || []).flatMap((t, i) => timerChoices(t.duration).map((secs) => ({ i, label: t.label, secs })));
+  const choices = (s.timers || []).flatMap((t, i) => timerChoices(t.duration).map((secs) => ({ i, label: t.label, secs })));
   const lbl = [course ? courseTitle(course) : null, task.name !== recipe.title ? task.name.replace(/\\~/g, "~") : null, `Schritt ${s.label}`].filter(Boolean).join(" · ");
   const scaledStep = { ...s, action: scaled(s.action, s) };
   const body = highlight(textWithAction(scaled(s.text, s), scaledStep), s);
@@ -260,7 +272,7 @@ function renderSheet() {
     <div class="md fulltext">${md(body)}</div>
     ${details.length ? `<dl class="details">${details.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${mdInline(v)}</dd>`).join("")}</dl>` : ""}
     ${s.events?.length ? `<h3>Zwischendurch</h3><ul>${s.events.map((e) => `<li>⏱ ${fmtClock(isoSeconds(e.at.typical || e.at.min))}: ${mdInline(e.text)}</li>`).join("")}</ul>` : ""}
-    ${timers.length ? `<h3>Timer</h3><div class="tbtns">${timers.map((t) => `<button class="tbtn" data-start="${t.i}" data-secs="${t.secs}" data-label="${esc(t.label)}">▶ ${esc(t.label)}<small>${fmtClock(t.secs)}</small></button>`).join("")}</div>` : ""}
+    ${choices.length ? `<h3>Timer</h3><div class="tbtns">${choices.map((t) => `<button class="tbtn" data-start="${t.i}" data-secs="${t.secs}" data-label="${esc(t.label)}">▶ ${esc(t.label)}<small>${fmtClock(t.secs)}</small></button>`).join("")}</div>` : ""}
     <label class="donebar"><input type="checkbox" class="chk" data-done="${s.id}" ${state.done[s.id] ? "checked" : ""}><b>${state.done[s.id] ? "Erledigt" : "Als erledigt abhaken"}</b></label>`;
 }
 // Reihenfolge, wie die Hauptansicht sie gerade zeigt (Ablauf, nach Gang, Plan …); Dubletten nur einmal
@@ -315,14 +327,14 @@ function startTimer(step, label, secs) {  // step = null: Schnell-Timer ohne Sch
   timers.push({ id: Math.random().toString(36).slice(2, 9), label, end: Date.now() + secs * 1000, paused: false, left: 0,
                 recipe: recipe?.id ?? null, recipeTitle: shortTitle(recipe?.title), step: step?.id ?? null,
                 stepText: step ? `${step.label}. ${step.title || ""}`.trim() : "" });
-  saveTimers(); recipe ? renderAll() : renderDock(); toast(`Timer läuft: ${label}`);
+  timersChanged(); toast(`Timer läuft: ${label}`);
 }
 function timerAction(id, act) {
   const t = timers.find((x) => x.id === id); if (!t) return;
   if (act === "stop") timers = timers.filter((x) => x.id !== id);
   else if (act === "plus") { if (t.paused) t.left += 60000; else t.end = Math.max(t.end, Date.now()) + 60000; }
   else if (act === "pause") { if (t.paused) { t.end = Date.now() + t.left; t.paused = false; } else { t.left = t.end - Date.now(); t.paused = true; } }
-  saveTimers(); recipe ? renderAll() : renderDock();
+  timersChanged();
 }
 const QUICK = [1, 2, 3, 5, 8, 10, 12, 15, 20, 30, 45, 60];
 function quickHtml() {
@@ -365,6 +377,7 @@ function beep() {
 }
 let lastBeep = 0; const wasRinging = new Set();
 setInterval(() => {
+  if (!timers.length) return;
   let ringing = false, structural = false;
   for (const t of timers) {
     const rem = remaining(t);
@@ -373,8 +386,7 @@ setInterval(() => {
     const el = document.querySelector(`[data-time="${t.id}"]`); if (el && rem > 0) el.textContent = fmtClock(rem / 1000);
   }
   document.querySelectorAll("[data-run]").forEach((el) => {
-    const ts = myTimers().filter((t) => t.step === el.dataset.run); if (!ts.length) return;
-    const rem = Math.min(...ts.map(remaining)); if (rem > 0) el.textContent = fmtClock(rem / 1000);
+    const rem = stepRemaining(el.dataset.run); if (rem > 0) el.textContent = fmtClock(rem / 1000);
   });
   if (structural) { renderDock(); if (recipe) renderMain(); }
   if (ringing && Date.now() - lastBeep > 2000) { lastBeep = Date.now(); beep(); try { navigator.vibrate?.([300, 150, 300]); } catch {} }
@@ -467,14 +479,14 @@ const sameOrigin = (u) => { try { return new URL(u, location.href).origin === lo
   catch (err) {
     // Zuletzt geöffnetes Rezept nicht ladbar: Liste zeigen; umbenannt/gelöscht (kein reiner Netzfehler) → vergessen
     if (fromLast) {
-      if (!(err instanceof TypeError)) try { localStorage.removeItem("km:last"); } catch {}
+      if (!(err instanceof TypeError)) store.del("km:last");
       return renderPicker();
     }
     main.innerHTML = `<p class="empty">Rezept konnte nicht geladen werden: <code>${esc(RECIPE_URL)}</code> (${esc(err.message)})</p>`; return;
   }
   for (const i of recipe.ingredients || []) ingById[i.id] = i;
   state = loadState(recipe.id);
-  if (isMenu() && schedule() && !state.viewSeen) view = "plan";
+  if (isMenu() && schedule()) view = "plan";
   renderAll();
   // Erst merken, wenn es sich rendern ließ — und nur Rezepte dieser Seite (der Start ohne ?r= lädt es ungefragt)
   if (sameOrigin(RECIPE_URL)) try { localStorage.setItem("km:last", RECIPE_URL); } catch {}

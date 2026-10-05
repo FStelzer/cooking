@@ -2176,15 +2176,6 @@
                       ],
                       "ingredients": [
                         {
-                          "ref": "lammknochen",
-                          "amount": {
-                            "text": "2–2,2 kg mit Knochen",
-                            "value": 2.0,
-                            "unit": "kg",
-                            "max": 2.2
-                          }
-                        },
-                        {
                           "ref": "salz",
                           "amount": {
                             "text": "2,5–3 TL Salz",
@@ -4169,8 +4160,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T17:04:25Z",
-    "sourceHash": "ccfd93c1474c54b9",
+    "generatedAt": "2026-10-05T18:07:19Z",
+    "sourceHash": "22b3c1774ff94bdc",
     "quantities": [
       {
         "ingredient": "verjus",
@@ -4266,20 +4257,20 @@
       {
         "ingredient": "lammknochen",
         "total": {
-          "text": "2500–2700 g",
-          "value": 2500.0,
-          "max": 2700.0,
+          "text": "500 g",
+          "value": 500.0,
+          "max": 500.0,
           "unit": "g",
           "approx": false
         },
         "perTask": {
-          "lammschulter-und-jus": "500 g Lammknochen + 2–2,2 kg mit Knochen"
+          "lammschulter-und-jus": "500 g Lammknochen"
         },
         "perCourse": {
           "gang-3": {
-            "text": "2500–2700 g",
-            "value": 2500.0,
-            "max": 2700.0,
+            "text": "500 g",
+            "value": 500.0,
+            "max": 500.0,
             "unit": "g"
           }
         }
@@ -5396,13 +5387,13 @@
             "ingredient": "lammknochen",
             "name": "Lammknochen",
             "need": {
-              "text": "2500–2700 g",
-              "value": 2500.0,
-              "max": 2700.0,
+              "text": "500 g",
+              "value": 500.0,
+              "max": 500.0,
               "unit": "g",
               "approx": false
             },
-            "display": "2500–2700 g",
+            "display": "500 g",
             "inStock": false,
             "buy": {
               "text": "gesägt, 500 g"
