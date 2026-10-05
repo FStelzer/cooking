@@ -100,7 +100,7 @@ def derive(recipe: dict) -> dict:
         quantities[iid] = q
         ing = ings[iid]
         item = {"ingredient": iid, "name": ing["name"], "need": total,
-                "display": display_text(total, ing), "checked": bool(ing.get("inStock"))}
+                "display": display_text(total, ing), "inStock": bool(ing.get("inStock"))}
         for k in ("buy", "priority", "optional", "pantry", "note"):
             if ing.get(k) is not None:
                 item[k] = ing[k]
@@ -123,7 +123,7 @@ def _item_line(it: dict) -> str:
         line = "Optional: " + line
     if n := it.get("note"):
         line += " " + (n if n.startswith("*") else f"*({n})*")
-    return f"- [{'x' if it['checked'] else ' '}] {line}"
+    return f"- [{'x' if it['inStock'] else ' '}] {line}"
 
 
 def render_shopping(recipe: dict) -> str:

@@ -187,7 +187,17 @@ Konvention; wo zwei Konverter in AP3 abgewichen sind, steht jetzt eine feste Reg
     `text` = Bullet ohne das fette Label, verbatim; `ref` auf den Schritt, den der
     Bullet ändert (Topfwahl → Schritt mit dem Topf); `date` = „Gekocht MM/JJJJ";
     `status: open`, solange der Rezepttext die Erkenntnis nicht umsetzt.
-12. **Zeitangaben** nach dieser Grammatik:
+12. **Abhängigkeiten und Zeitanker** **[D]**. `after: ["step:…"]` nennt die Schritte,
+    die abgeschlossen sein müssen. Fehlt das Feld, gilt der vorhergehende Schritt des
+    Tasks; `[]` heißt „keine Voraussetzung" (Eier kochen, Pickle). Daraus leitet die
+    Planung Parallelität ab; `parallel` bleibt nur verbatim-Marker der Überschrift.
+    `start: {ref: "step:x:end", offset: {min, max}}` verankert einen Schritt relativ
+    zu Start/Ende eines anderen („letzte 20–30 Min." des Schmorens → `-PT30M`/`-PT20M`
+    vor `step:schmoren:end`). `events[]` sind Zeitpunkte *innerhalb* eines Schritts
+    („nach ~60 Min. Eier wenden"), keine Timer. Fehlt eine Dauer in der Quelle und wird
+    sie für die Planung gebraucht („Reis wie gewohnt kochen"), darf sie geschätzt
+    werden, dann `estimated: true` (L6).
+13. **Zeitangaben** nach dieser Grammatik:
 
 | Quellphrase | Ziel | Regel |
 |---|---|---|
@@ -211,7 +221,7 @@ Konvention; wo zwei Konverter in AP3 abgewichen sind, steht jetzt eine feste Reg
 | A | JSON Schema (Pflichtfelder, Enums, ISO-Dauern, Slug-Muster) | fail | AP0 |
 | B | B1 jede `##`-Sektion der Quelle (außer generierte) hat eine Section gleichen Titels · B2 Multiset aller Zahl+Einheit-Token der Quelle (ohne Einkaufsliste/Mengen-Check) = Multiset der verbatim-Felder · B3 jede Quellzeile ≥ 20 Zeichen ist verbatim im JSON | fail | AP1 |
 | C | Zitat-Treue aller Annotationen (L3); nicht-derived `action` ist Präfix von `text`; `title` in `heading`; exakte Spans eindeutig oder mit `occurrence`; abgeleitete `action` mengenfrei | fail | AP1 |
-| D | Slugs gültig und rezeptweit eindeutig; `ref`, `consumes`, `notes[].ref`, `todo[].ref` lösen auf; Report der derived-Felder und der Zutaten ohne Dosierung | fail | AP1 |
+| D | Slugs gültig und rezeptweit eindeutig; `ref`, `consumes` (`product:`-Präfix), `notes[].ref`, `todo[].ref`, `after`, `start.ref` lösen auf; Schritt-Graph (inkl. Vorgänger-Default) ohne Selbstbezug und Zyklen; Report der derived-Felder und der Zutaten ohne Dosierung | fail | AP1 |
 | K | Status des gespeicherten `derived`-Blocks (fehlt → Hinweis, veraltet → Fehler); Vergleich immer gegen eine frische Ableitung; jeder Original-Posten der `## Einkaufsliste` (Teile an ` + ` getrennt) findet eine Zutat per Namenswort; Menge des Postens (inkl. `900 g – 1 kg`, `4–5 EL`, `½`) gegen `derived.quantities.total`; Gebinde (`buy`) zählt als passend; Zutaten nur im JSON als Info | fail bei Posten ohne Zutat oder veraltetem Block, Abweichungen als Report | AP2 |
 | E–H, L | Schritt-/Zeitplan-Abdeckung, Hold-Konsistenz, Service-Intervalle, Mengen-Check | | AP4 |
 
@@ -303,6 +313,7 @@ vorher.
 | 2026-10-05 | `step.equipment` und `Ingredient.prep` werden nicht mehr erfasst (bleiben im Schema, Anleitung setzt sie nicht). `Ingredient.scale` nur für Ausnahmen. |
 | 2026-10-05 | Code-Review (10 Befunde) eingearbeitet: Einheiten-Regex mit Wortgrenze, Sentinel für „Einheit noch nicht gesetzt" (Stück + g wird jetzt als gemischt gemeldet statt summiert), `~` bei Zirka-Mengen in der Liste als `\~`, Diff paart Schritte über (Task, Label), `__pycache__` aus dem Index und `.gitignore`, `cli shopping` prüft den Hash, fehlender `derived`-Block ist kein Fehler mehr, Zutaten-Zuordnung mit Stoppwörtern und exaktem Namen zuerst, „20 Min." vor Großbuchstabe ist ein Satzende, Warengruppen in Laden-Laufreihenfolge. |
 | 2026-10-05 | `/simplify` (4 Reviews, ~50 Funde) eingearbeitet: ein Formatierer (`fmt.py`), `Stück` als kanonische Zähleinheit (kein Sentinel, `value` verlangt `unit`), zwei Normalisierungsschlüssel `ws_key` (L2) / `quote_key` (L3), Spans roh gezählt, `derived` enthält nur Daten (`display` statt Markdown-Zeile), eine Stelle für den Block-Status, `derive` verlangt Check D (Fehler statt Schweigen), Schema-Sektionen per `if/then` ohne Python-Nachfilter, Abkürzungs-Heuristik für Satzgrenzen gestrichen (Check C ist Präfix-tolerant), Stoppwortliste durch datengeleitete Gewichte ersetzt, `heading` verbatim inkl. `**`. |
+| 2026-10-05 | Externes Schema-Feedback bewertet. **Übernommen (Phase 2a):** Schritt-Kanten `after` (Default: Vorgänger, `[]` = frei), relative Anker `start`, `events[]` getrennt von Timern, `duration.estimated`, `consumes` mit `product:`-Präfix, `derived.inStock` statt `checked` (Abhak-Zustand ist Renderer-State), `hold` dokumentiert relativ zu `product:ready`, Einheit „Zehen" aus den Beispielen gestrichen. **Verschoben auf AP4:** Ressourcen mit ID/Kapazität und Ofen-Temperatur-Bindung (war dort geplant), Summen-/Kritischer-Pfad-Linter gegen `times.total` (braucht den Graph, jetzt vorhanden). **Nicht übernommen:** Schritte splitten (verletzt L2 „ein Markdown-Schritt = ein Step"; stattdessen Schreibkonvention: unabhängige Stränge in der Quelle als eigene Schritte schreiben, Bestand bleibt wie er ist). |
 | 2026-10-05 | `derived.sourceHash` = SHA-256 (gekürzt) des JSON ohne `derived`; `cli check` verlangt einen aktuellen Block, sobald die Quelle eine Einkaufsliste hat. Mengen werden intern auf g/ml normiert; `Stück` wird in der Anzeige weggelassen. |
 
 ## Nächste Schritte
@@ -311,3 +322,7 @@ vorher.
   lädt (Kurz-/Vollansicht, `derived.shopping`, Skalieren mit Inline-Ersetzung,
   Abhaken, Timer, Notizen-Export im `learnings.notes[]`-Format). Eigener Detailplan.
 - Thịt kho damit kochen, dann **Entscheidungspunkt** vor Phase 2b (siehe Plan).
+- **AP4 zusätzlich:** Ressourcen (`resources[]` mit Kapazität, `claims[]` mit Ofen-
+  Temperatur), Linter „Summe entlang des kritischen Pfads vs. `times.total`"
+  (thit-kho: sequenziell 145–185 Min., mit Anker Reduzieren-im-Schmoren 125–155,
+  Quelle sagt 2–2,5 Std.) und Ableitung von `parallel` aus `after`.

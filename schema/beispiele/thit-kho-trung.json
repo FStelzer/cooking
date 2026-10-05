@@ -300,7 +300,8 @@
                   }
                 }
               ],
-              "why": "Ganz lassen — sie ziehen später im Schmorsud Farbe und Geschmack."
+              "why": "Ganz lassen — sie ziehen später im Schmorsud Farbe und Geschmack.",
+              "after": []
             },
             {
               "id": "karamell",
@@ -341,7 +342,8 @@
                 "**nicht rühren**, nur den Topf schwenken"
               ],
               "why": "Zu hell = nur süß statt bittersüß-komplex.",
-              "rescue": "Zu schwarz = bitter, dann lieber neu starten (kostet 3 EL Zucker und 5 Minuten)."
+              "rescue": "Zu schwarz = bitter, dann lieber neu starten (kostet 3 EL Zucker und 5 Minuten).",
+              "after": []
             },
             {
               "id": "anbraten",
@@ -389,6 +391,10 @@
               ],
               "limits": [
                 "Vorsicht: Karamell spritzt, wenn das Fleisch feucht ist — Deckel als Schild bereithalten."
+              ],
+              "after": [
+                "step:karamell",
+                "step:marinieren"
               ]
             },
             {
@@ -412,13 +418,6 @@
                     "max": "PT120M"
                   },
                   "text": "90–120 Min."
-                },
-                {
-                  "label": "Eier wenden ab",
-                  "duration": {
-                    "typical": "PT60M"
-                  },
-                  "text": "~60 Min."
                 }
               ],
               "ingredients": [
@@ -464,7 +463,20 @@
                 "bis das Fleisch knapp bedeckt ist"
               ],
               "why": "Ein Topf, kleinste Flamme — auch das heizt die Küche kaum.",
-              "actionDerived": true
+              "actionDerived": true,
+              "after": [
+                "step:anbraten",
+                "step:eier-kochen"
+              ],
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT60M",
+                    "source": "Nach ~60 Min."
+                  },
+                  "text": "Nach ~60 Min. Eier gelegentlich wenden, damit sie gleichmäßig Farbe ziehen."
+                }
+              ]
             },
             {
               "id": "reduzieren",
@@ -493,7 +505,15 @@
                 "sie soll das Fleisch glänzend überziehen, nicht suppig sein",
                 "Balance aus salzig (Fischsauce), süß (Karamell) und Pfeffer"
               ],
-              "rescue": "Ist sie zu salzig, mit einem Schuss Kokoswasser strecken."
+              "rescue": "Ist sie zu salzig, mit einem Schuss Kokoswasser strecken.",
+              "start": {
+                "ref": "step:schmoren:end",
+                "offset": {
+                  "min": "-PT30M",
+                  "max": "-PT20M",
+                  "source": "letzte 20–30 Min."
+                }
+              }
             },
             {
               "id": "pickle-und-reis",
@@ -574,7 +594,8 @@
                     "unit": "g"
                   }
                 }
-              ]
+              ],
+              "after": []
             },
             {
               "id": "servieren",
@@ -592,7 +613,11 @@
                   }
                 }
               ],
-              "why": "die Frische ist kein Deko-Beiwerk, sondern der nötige Kontrast zum reichen Fleisch"
+              "why": "die Frische ist kein Deko-Beiwerk, sondern der nötige Kontrast zum reichen Fleisch",
+              "after": [
+                "step:reduzieren",
+                "step:pickle-und-reis"
+              ]
             }
           ]
         }
@@ -657,8 +682,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T08:45:26Z",
-    "sourceHash": "127e325a33f6e94a",
+    "generatedAt": "2026-10-05T08:48:15Z",
+    "sourceHash": "59d9d1b9d1c9f3a4",
     "quantities": [
       {
         "ingredient": "schweinebauch",
@@ -895,7 +920,7 @@
               "approx": false
             },
             "display": "400 g",
-            "checked": false
+            "inStock": false
           }
         ]
       },
@@ -914,7 +939,7 @@
               "approx": false
             },
             "display": "4–5 EL",
-            "checked": false
+            "inStock": false
           },
           {
             "ingredient": "reisessig",
@@ -927,7 +952,7 @@
               "approx": false
             },
             "display": "3 EL",
-            "checked": false
+            "inStock": false
           }
         ]
       },
@@ -946,7 +971,7 @@
               "approx": false
             },
             "display": "500–600 ml",
-            "checked": false,
+            "inStock": false,
             "note": "ungesüßt"
           }
         ]
@@ -966,7 +991,7 @@
               "approx": false
             },
             "display": "900–1000 g",
-            "checked": false
+            "inStock": false
           }
         ]
       },
@@ -985,7 +1010,7 @@
               "approx": false
             },
             "display": "4",
-            "checked": false
+            "inStock": false
           },
           {
             "ingredient": "knoblauch",
@@ -998,7 +1023,7 @@
               "approx": false
             },
             "display": "4",
-            "checked": false
+            "inStock": false
           },
           {
             "ingredient": "salatgurke",
@@ -1011,7 +1036,7 @@
               "approx": false
             },
             "display": "½",
-            "checked": false,
+            "inStock": false,
             "note": "*(→ die andere Hälfte kommt in den griechischen Salat des Oktopus-Rezepts)*"
           },
           {
@@ -1025,7 +1050,7 @@
               "approx": false
             },
             "display": "2",
-            "checked": false,
+            "inStock": false,
             "priority": "empfohlen",
             "optional": true,
             "note": "fürs Schnell-Pickle, optional aber empfohlen"
@@ -1041,7 +1066,7 @@
               "approx": false
             },
             "display": "1",
-            "checked": false,
+            "inStock": false,
             "priority": "empfohlen",
             "optional": true,
             "note": "fürs Schnell-Pickle, optional aber empfohlen"
@@ -1057,7 +1082,7 @@
               "approx": false
             },
             "display": "2–3",
-            "checked": false,
+            "inStock": false,
             "note": "bleiben ganz — siehe Kinder-Hinweis"
           },
           {
@@ -1067,7 +1092,7 @@
               "text": ""
             },
             "display": "",
-            "checked": false,
+            "inStock": false,
             "priority": "optional",
             "optional": true
           }
@@ -1088,7 +1113,7 @@
               "approx": false
             },
             "display": "6",
-            "checked": false
+            "inStock": false
           }
         ]
       },
@@ -1107,7 +1132,7 @@
               "approx": false
             },
             "display": "5 EL",
-            "checked": false
+            "inStock": false
           }
         ]
       },
@@ -1122,7 +1147,7 @@
               "text": ""
             },
             "display": "",
-            "checked": false,
+            "inStock": false,
             "pantry": true,
             "note": "frisch gemahlen, großzügig"
           },
@@ -1137,7 +1162,7 @@
               "approx": false
             },
             "display": "1 Prise",
-            "checked": false,
+            "inStock": false,
             "pantry": true
           },
           {
@@ -1151,7 +1176,7 @@
               "approx": false
             },
             "display": "1 EL",
-            "checked": false,
+            "inStock": false,
             "pantry": true
           }
         ]

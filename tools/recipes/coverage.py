@@ -106,6 +106,34 @@ def check_d(recipe: dict) -> tuple[list[str], list[str]]:
                     errs.append(f"D step:{step['id']}.ingredients[{j}] ref '{si['ref']}' unbekannt")
                 if si.get("spanForm") == "derived":
                     derived.append(f"step:{step['id']}.ingredients[{j}]")
+    # Schritt-Graph: after/start lösen auf, kein Selbstbezug, keine Zyklen (Vorgänger-Default eingeschlossen)
+    preds: dict[str, list[str]] = {}
+    for task in iter_tasks(recipe):
+        prev = None
+        for step in task["steps"]:
+            me = f"step:{step['id']}"
+            after = step.get("after")
+            preds[me] = list(after) if after is not None else ([prev] if prev else [])
+            for ref in preds[me] + ([step["start"]["ref"].rsplit(":", 1)[0]] if step.get("start") else []):
+                if ref not in ids:
+                    errs.append(f"D {me}: Referenz '{ref}' löst nicht auf")
+                elif ref == me:
+                    errs.append(f"D {me}: bezieht sich auf sich selbst")
+            prev = me
+    state: dict[str, int] = {}
+
+    def cyclic(n: str) -> bool:
+        if state.get(n) == 1:
+            return True
+        if state.get(n) == 2:
+            return False
+        state[n] = 1
+        if any(cyclic(m) for m in preds.get(n, []) if m in preds):
+            return True
+        state[n] = 2
+        return False
+
+    errs += [f"D Zyklus im Schritt-Graph bei {n}" for n in preds if cyclic(n)][:1]
     for sec in sections(recipe, "learnings"):
         errs += [f"D learnings.notes[{i}].ref '{n['ref']}' löst nicht auf" for i, n in enumerate(sec.get("notes", [])) if n["ref"] not in ids]
     for sec in sections(recipe, "todo"):

@@ -162,6 +162,11 @@ def annotation_quotes(recipe: dict) -> list[tuple[str, str]]:
                 q.append((f"{p}.timers[{j}].text", t["text"]))
             src(f"{p}.timers[{j}].duration", t.get("duration"))
         q += [(f"{p}.temps[{j}].text", t["text"]) for j, t in enumerate(step.get("temps", []))]
+        for j, ev in enumerate(step.get("events", [])):
+            q.append((f"{p}.events[{j}].text", ev["text"]))
+            src(f"{p}.events[{j}].at", ev.get("at"))
+        if step.get("start"):
+            src(p + ".start.offset", step["start"].get("offset"))
         if step.get("endCondition"):
             q.append((p + ".endCondition.text", step["endCondition"]["text"]))
         q += [(f"{p}.ingredients[{j}].amount.text", si["amount"]["text"]) for j, si in enumerate(step.get("ingredients", []))]

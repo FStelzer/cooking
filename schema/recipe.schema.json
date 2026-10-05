@@ -188,7 +188,7 @@
                     "name",
                     "need",
                     "display",
-                    "checked"
+                    "inStock"
                   ],
                   "properties": {
                     "ingredient": {
@@ -199,9 +199,6 @@
                     },
                     "need": {
                       "$ref": "#/$defs/amount"
-                    },
-                    "checked": {
-                      "type": "boolean"
                     },
                     "buy": {
                       "$ref": "#/$defs/amount"
@@ -221,6 +218,10 @@
                     },
                     "note": {
                       "type": "string"
+                    },
+                    "inStock": {
+                      "type": "boolean",
+                      "description": "Autor-Angabe aus Ingredient.inStock. Abhak-Zustand beim Einkaufen ist Renderer-State (localStorage), nie Teil der Datei."
                     }
                   }
                 }
@@ -264,6 +265,10 @@
         "source": {
           "type": "string",
           "description": "Originalphrase, Zitat"
+        },
+        "estimated": {
+          "type": "boolean",
+          "description": "Dauer steht nicht in der Quelle, sondern ist geschätzt (L6: markiert)"
         }
       },
       "anyOf": [
@@ -316,7 +321,6 @@
             "TL",
             "Prise",
             "Stück",
-            "Zehen",
             "Bund",
             "Schuss",
             "cm",
@@ -672,7 +676,54 @@
           "pattern": "^[a-z0-9/_-]+(\\.md)?#[a-z0-9-]+$"
         },
         "parallel": {
-          "type": "boolean"
+          "type": "boolean",
+          "description": "Verbatim-Marker aus der Überschrift („parallel“). Planung leitet Parallelität aus `after` ab, nicht hieraus."
+        },
+        "after": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/stepRef"
+          },
+          "description": "Schritte, die abgeschlossen sein müssen. Fehlt das Feld: der vorhergehende Schritt des Tasks. Leeres Array: keine Voraussetzung (kann jederzeit laufen)."
+        },
+        "start": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ref",
+            "offset"
+          ],
+          "description": "Relativer Zeitanker: Start dieses Schritts relativ zu Start/Ende eines anderen (z. B. „letzte 20–30 Min. des Schmorens“).",
+          "properties": {
+            "ref": {
+              "type": "string",
+              "pattern": "^step:[a-z0-9][a-z0-9-]*:(start|end)$"
+            },
+            "offset": {
+              "$ref": "#/$defs/offsetRange"
+            }
+          }
+        },
+        "events": {
+          "type": "array",
+          "description": "Zeitpunkte innerhalb des Schritts (kein Timer): „nach ~60 Min. Eier wenden“.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "at",
+              "text"
+            ],
+            "properties": {
+              "at": {
+                "$ref": "#/$defs/durationRange"
+              },
+              "text": {
+                "type": "string",
+                "description": "Zitat"
+              }
+            }
+          }
         }
       }
     },
@@ -720,7 +771,8 @@
             "source": {
               "type": "string"
             }
-          }
+          },
+          "description": "Haltbarkeitsfenster relativ zu product:ready (= Ende des erzeugenden Tasks): min = mindestens so lange ruhen, max = spätestens so lange vorher fertig."
         },
         "storage": {
           "type": "object",
@@ -794,7 +846,8 @@
         "consumes": {
           "type": "array",
           "items": {
-            "$ref": "#/$defs/slug"
+            "type": "string",
+            "pattern": "^product:[a-z0-9][a-z0-9-]*$"
           }
         },
         "produces": {
@@ -1086,6 +1139,50 @@
           }
         }
       ]
+    },
+    "offset": {
+      "type": "string",
+      "pattern": "^[+-]?P(?!$)(\\d+D)?(T(?=\\d)(\\d+H)?(\\d+M)?(\\d+S)?)?$",
+      "description": "Signierte ISO-8601-Dauer relativ zu einem Ereignis; negativ = davor."
+    },
+    "offsetRange": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "min": {
+          "$ref": "#/$defs/offset"
+        },
+        "max": {
+          "$ref": "#/$defs/offset"
+        },
+        "typical": {
+          "$ref": "#/$defs/offset"
+        },
+        "source": {
+          "type": "string"
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "min"
+          ]
+        },
+        {
+          "required": [
+            "max"
+          ]
+        },
+        {
+          "required": [
+            "typical"
+          ]
+        }
+      ]
+    },
+    "stepRef": {
+      "type": "string",
+      "pattern": "^step:[a-z0-9][a-z0-9-]*$"
     }
   }
 }
