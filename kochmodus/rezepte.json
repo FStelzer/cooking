@@ -14,6 +14,13 @@
   "cooked": true
  },
  {
+  "path": "../gerichte/bulgogi.json",
+  "title": "Bulgogi — koreanisches „Feuerfleisch\" mit Salat-Wraps (4 Portionen)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": true
+ },
+ {
   "path": "../gerichte/thit-kho-trung.json",
   "title": "Thịt kho trứng — vietnamesisches Karamell-Schweinefleisch mit Eiern (4 Portionen)",
   "group": "gerichte",

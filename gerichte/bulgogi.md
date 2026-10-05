@@ -1,12 +1,12 @@
 # Bulgogi — koreanisches „Feuerfleisch" mit Salat-Wraps (4 Portionen)
 
-*Aktive Zeit ~1 Std. + 15 Min. Anfrieren + 2–3 Std. Marinieren (passiv). Equipment: Mandoline oder sehr scharfes Messer, Stabmixer, große schwere Pfanne (Alternative: Gusseisenplatte auf dem Gasgrill, siehe Notizen).*
+*Aktive Zeit \~1 Std. + 15 Min. Anfrieren + 2–3 Std. Marinieren (passiv), gesamt \~3,5 Std. Equipment: Mandoline oder sehr scharfes Messer, Stabmixer, große schwere Pfanne (Alternative: Gusseisenplatte auf dem Gasgrill, siehe Notizen).*
 
 Koreanischer Klassiker: hauchdünn geschnittenes Rind in einer pürierten Marinade aus Nashi-Birne, Sojasauce, Knoblauch und Sesamöl, sehr heiß und kurz gebraten, am Tisch in Salatblätter mit Reis gewickelt (*Ssam*). Zweimal gekocht, beide Male fantastisch — dieses Rezept rekonstruiert das verlorene Vorgänger-Rezept auf Basis der Maangchi-Ratios und baut den Fix für den bekannten Schwachpunkt gleich ein: die eingebrannte Pfanne. Dazu diesmal das volle Ssam-Programm: Ssamjang, Pa Muchim (Frühlingszwiebel-Salat), Gurken-Pickle, optional Kimchi.
 
 ## Beschaffung
 
-- **Fleisch — drei gangbare Cuts (~800 g am Stück, REWE Center):**
+- **Fleisch — drei gangbare Cuts (\~800 g am Stück, REWE Center):**
   - **Entrecôte/Ribeye — Erstwahl:** die Marmorierung schmilzt beim scharfen Anbraten und hält die dünnen Scheiben saftig; in Korea der Standard-Cut für gutes Bulgogi (deungsim).
   - **Roastbeef — bewährt:** so beim letzten (sehr guten) Durchgang verwendet. Entspricht dem koreanischen Striploin-Zuschnitt, etwas magerer als Entrecôte, lässt sich angefroren sehr sauber hobeln.
   - **Hüfte — Budget-Option:** deutlich magerer; funktioniert dank Birnen-Enzym trotzdem zart, wird aber weniger reichhaltig — eher zweite Wahl.
@@ -18,60 +18,101 @@ Koreanischer Klassiker: hauchdünn geschnittenes Rind in einer pürierten Marina
 
 ## Einkaufsliste
 
-### Asialaden (vorher anrufen: Doenjang, Gochugaru, Kimchi)
+### Asialaden
 
-- [ ] 1 Becher Gochujang (Verbrauch nur 1 EL — hält ewig gekühlt, und Backlog-Idee „Korean Fried Chicken" braucht ihn auch)
-- [ ] 1 Becher Doenjang (Verbrauch 2 EL; *falls nicht da: fertiges Ssamjang im Becher kaufen, dann Gochujang fürs Ssamjang streichen*)
-- [ ] 1 Tüte Gochugaru (Verbrauch 1 EL; *Fallback: ½ EL Gochujang ins Dressing*)
-- [ ] 400 g Kurzkorn-/Sushireis (falls nicht vorrätig)
-- [ ] 2 Bund Frühlingszwiebeln (Gesamtverbrauch ~8 Stück — siehe Mengen-Check)
-- [ ] Optional: 1 Glas Kimchi (Kühlregal)
-- [ ] Optional: Perilla-/Shiso-Blätter (unwahrscheinlich — nur falls zufällig da)
+*Vorher anrufen: Doenjang, Gochugaru, Kimchi.*
+
+**Würzmittel & Gewürze:**
+- [ ] 1 Becher Gochujang *(Verbrauch nur 1 EL — hält ewig gekühlt, und Backlog-Idee „Korean Fried Chicken" braucht ihn auch)*
+- [ ] 1 Becher Doenjang *(Verbrauch 2 EL; falls nicht da: fertiges Ssamjang im Becher kaufen, dann Gochujang fürs Ssamjang streichen)*
+- [ ] 1 Tüte Gochugaru *(Verbrauch 1 EL; Fallback: ½ EL Gochujang ins Dressing)*
+
+**Trockenwaren:**
+- [ ] 400 g Kurzkornreis *(Kurzkorn-/Sushireis, falls nicht vorrätig)*
+
+**Obst & Gemüse:**
+- [ ] 2 Bund Frühlingszwiebeln *(Gesamtverbrauch \~8 Stück — siehe Mengen-Check)*
+
+**Kühlregal:**
+- [ ] Optional: 1 Glas Kimchi
+- [ ] Optional: Perilla-Blätter *(oder Shiso; unwahrscheinlich — nur falls zufällig da)*
 
 ### REWE Center
 
-- [ ] 800 g Entrecôte/Ribeye **am Stück** (Alternativen: Roastbeef — beim letzten Mal bewährt — oder Hüfte, siehe Beschaffung)
-- [ ] 1 große Nashi-Birne (~250 g; Fallback: 1 reife Williams-Birne)
+**Fleisch & Fisch:**
+- [ ] 800 g Rindfleisch, Entrecôte/Ribeye **am Stück** *(Alternativen: Roastbeef — beim letzten Mal bewährt — oder Hüfte, siehe Beschaffung)*
+
+**Obst & Gemüse:**
+- [ ] 1 große Nashi-Birne *(\~250 g; Fallback: 1 reife Williams-Birne)*
 - [ ] 1 Zwiebel
-- [ ] 1 Knolle Knoblauch (Gesamtverbrauch 6 Zehen)
-- [ ] 1 Stück Ingwer (daumengroß)
-- [ ] 1 Karotte (optional, für die Marinade)
-- [ ] 2 Kopfsalate oder 3 Romana-Herzen (Wrap-Blätter — lieber zu viel als zu wenig)
-- [ ] 1 Salatgurke (Pickle)
+- [ ] 1 Knolle Knoblauch *(Gesamtverbrauch 6 Zehen)*
+- [ ] 1 Stück Ingwer *(daumengroß)*
+- [ ] Optional: 1 Karotte *(für die Marinade)*
+- [ ] 2 Kopfsalate *(oder 3 Romana-Herzen; Wrap-Blätter — lieber zu viel als zu wenig)*
+- [ ] 1 Salatgurke *(Pickle)*
 
 ### Vorrat prüfen
 
-- [ ] Sojasauce (~6 EL gesamt — siehe Mengen-Check)
-- [ ] Geröstetes Sesamöl (~3 EL gesamt)
-- [ ] Gerösteter Sesam (~1½ EL; sonst ungerösteten in der Pfanne rösten)
-- [ ] Brauner Zucker (~4 EL gesamt)
-- [ ] Reisessig (~4 EL: Pickle + Pa Muchim)
-- [ ] Honig (~2 TL: Ssamjang + Kinder-Dip)
-- [ ] Schwarzer Pfeffer, neutrales Öl, Salz
+- [ ] Sojasauce *(\~6 EL gesamt — siehe Mengen-Check)*
+- [ ] Sesamöl, geröstet *(\~3 EL gesamt)*
+- [ ] Sesam, geröstet *(\~1½ EL; sonst ungerösteten in der Pfanne rösten)*
+- [ ] Brauner Zucker *(\~4 EL gesamt)*
+- [ ] Reisessig *(\~4 EL: Pickle und Pa Muchim)*
+- [ ] Honig *(\~2 TL: Ssamjang und Kinder-Dip)*
+- [ ] Pfeffer, schwarz
+- [ ] Öl, neutral
+- [ ] Salz
 
 ## Zubereitung
 
 **1. Fleisch anfrieren (15 Min., passiv)**
-800 g Fleisch straff in Frischhaltefolie wickeln und 15 Min. ins Gefrierfach — angefroren lässt es sich hauchdünn schneiden. Währenddessen Schritt 2. *Zweimal erprobt, funktioniert zuverlässig; länger als ~25 Min. macht den Kern zu hart für die Mandoline.*
+*jederzeit*
+800 g Fleisch straff in Frischhaltefolie wickeln und 15 Min. ins Gefrierfach — angefroren lässt es sich hauchdünn schneiden. Währenddessen „Marinade mixen“. *Zweimal erprobt, funktioniert zuverlässig; länger als \~25 Min. macht den Kern zu hart für die Mandoline.*
 
 **2. Marinade mixen (10 Min.)**
-Mit dem Stabmixer glatt pürieren: 200 g Nashi-Birne (geschält, entkernt), 80 g Zwiebel, 5 Knoblauchzehen, 2 TL fein geriebener Ingwer, 3½ EL Sojasauce, 2½ EL brauner Zucker, 1½ EL geröstetes Sesamöl, ½ TL schwarzer Pfeffer. *Zucker bewusst am unteren Ende der üblichen Ratios — die Birne bringt eigene Süße, und weniger Zucker heißt weniger Einbrennen (Schritt 5).*
+*jederzeit*
+Mit dem Stabmixer glatt pürieren: 200 g Nashi-Birne (geschält, entkernt), 80 g Zwiebel, 5 Knoblauchzehen, 2 TL fein geriebener Ingwer, 3½ EL Sojasauce, 2½ EL brauner Zucker, 1½ EL geröstetes Sesamöl, ½ TL schwarzer Pfeffer. *Zucker bewusst am unteren Ende der üblichen Ratios — die Birne bringt eigene Süße, und weniger Zucker heißt weniger Einbrennen (siehe „In Chargen braten“).*
 
-**3. Schneiden & marinieren (15 Min. + 2–3 Std. passiv)**
-Angefrorenes Fleisch **quer zur Faser** in 2–3 mm dünne Scheiben hobeln (Mandoline mit Schutz) oder mit sehr scharfem Messer schneiden. Mit der Marinade, 2 Frühlingszwiebeln in Ringen und optional ½ Karotte in feinen Stiften gründlich vermengen, abgedeckt **2–3 Std.** kalt stellen. *Das erprobte Fenster. Nicht über Nacht: die Birnen-Protease arbeitet auf 2–3-mm-Scheiben schnell — länger wird die Textur mehlig-weich statt zart.*
+**3. Schneiden (15 Min.)**
+*nach Fleisch anfrieren*
+Angefrorenes Fleisch **quer zur Faser** in 2–3 mm dünne Scheiben hobeln (Mandoline mit Schutz) oder mit sehr scharfem Messer schneiden.
 
-**4. Beilagen während der Marinierzeit (~40 Min. aktiv, gut vorzubereiten)**
-- **Reis:** 400 g Kurzkorn-/Sushireis waschen und garen.
-- **Gurken-Pickle:** 1 Salatgurke in dünne Scheiben hobeln, mit 1 TL Salz 10 Min. ziehen lassen, ausdrücken. Lake aus 3 EL Reisessig, 1 EL braunem Zucker und 2 EL Wasser darüber, mindestens 30 Min. ziehen lassen. *Mild — das Kind darf mitessen.*
-- **Ssamjang:** 2 EL Doenjang, 1 EL Gochujang, 1 TL geröstetes Sesamöl, 1 TL Honig, 1 sehr fein gehackte Knoblauchzehe, 1 fein geschnittene Frühlingszwiebel, 1 TL Sesam und 1–2 TL Wasser glatt rühren. *(Bei Fertig-Ssamjang: nur Frühlingszwiebel, Sesam und 1 TL Sesamöl einrühren.)*
-- **Kinder-Dip:** 1 EL Sojasauce, 1 TL geröstetes Sesamöl, 1 TL Honig, ½ TL Sesam, 1 TL Wasser verrühren — die milde Ssamjang-Entsprechung.
-- **Pa Muchim vorbereiten:** 4 Frühlingszwiebeln längs in feine Streifen schneiden und 10 Min. in eiskaltem Wasser wässern (nimmt Schärfe, macht sie knackig-gekringelt), sehr gut trocknen. Dressing separat anrühren: 1 EL Gochugaru, 1 EL Sojasauce, 1 EL Reisessig, 2 TL brauner Zucker, 2 TL geröstetes Sesamöl, 1 TL Sesam. **Erst kurz vor dem Essen mischen**, sonst fällt der Salat zusammen. *Nur für die Erwachsenen — Gochugaru ist scharf.*
-- **Salat:** Blätter einzeln ablösen, waschen, sehr gut trockenschleudern, als „Stapel" anrichten.
+**4. Marinieren (2–3 Std., passiv)**
+*nach Schneiden, Marinade mixen*
+Mit der Marinade, 2 Frühlingszwiebeln in Ringen und optional ½ Karotte in feinen Stiften gründlich vermengen, abgedeckt **2–3 Std.** kalt stellen. *Das erprobte Fenster. Nicht über Nacht: die Birnen-Protease arbeitet auf 2–3-mm-Scheiben schnell — länger wird die Textur mehlig-weich statt zart.*
 
-**5. In Chargen braten (10–15 Min.) — der Einbrenn-Fix**
-Fleisch ~10 Min. in einem Sieb über einer Schüssel abtropfen lassen. Die schwere Pfanne auf höchster Stufe aufheizen bis sie raucht, 1 EL neutrales Öl hinein, dann das Fleisch in **3–4 kleinen Chargen** braten: einschichtig einlegen, **1–2 Min. nicht bewegen**, bis die Unterseite dunkel karamellisiert ist, wenden, weitere ~1 Min., raus auf die Platte. **Zwischen den Chargen ~50 ml Wasser in die heiße Pfanne**, den Bratensatz mit dem Pfannenwender lösen und die entstehende Sauce über das fertige Fleisch gießen; Pfanne kurz mit Küchenpapier auswischen, neues Öl, nächste Charge. *Das ist der Fix für die eingebrannte Pfanne der ersten beiden Durchgänge: Eingebrannt wird immer dann, wenn eine volle Pfanne die Temperatur einbrechen lässt, die Marinade sich sammelt und ihr Zucker auf dem Stahl verkohlt. Kleine Chargen halten die Hitze, und das Deglazieren verwandelt den Ansatz in Sauce statt in Schrubbarbeit — die Pfanne danach nur noch heiß ausspülen.*
+**Beilagen während der Marinierzeit (\~40 Min. aktiv, gut vorzubereiten):**
 
-**6. Anrichten**
+**5. Reis (ca. 30 Min., parallel)**
+*jederzeit · Herd*
+400 g Kurzkornreis (Kurzkorn-/Sushireis) waschen und garen.
+
+**6. Gurken-Pickle (10 Min. + 30 Min. passiv)**
+*jederzeit*
+1 Salatgurke in dünne Scheiben hobeln, mit 1 TL Salz 10 Min. ziehen lassen, ausdrücken. Lake aus 3 EL Reisessig, 1 EL braunem Zucker und 2 EL Wasser darüber, mindestens 30 Min. ziehen lassen. *Mild — das Kind darf mitessen.*
+
+**7. Ssamjang (5 Min.)**
+*jederzeit*
+2 EL Doenjang, 1 EL Gochujang, 1 TL geröstetes Sesamöl, 1 TL Honig, 1 sehr fein gehackte Knoblauchzehe, 1 fein geschnittene Frühlingszwiebel, 1 TL Sesam und 1–2 TL Wasser glatt rühren. *(Bei Fertig-Ssamjang: nur Frühlingszwiebel, Sesam und 1 TL Sesamöl einrühren.)*
+
+**8. Kinder-Dip (2 Min.)**
+*jederzeit*
+1 EL Sojasauce, 1 TL geröstetes Sesamöl, 1 TL Honig, ½ TL Sesam, 1 TL Wasser verrühren — die milde Ssamjang-Entsprechung.
+
+**9. Pa Muchim vorbereiten (5 Min. + 10 Min. passiv)**
+*jederzeit*
+4 Frühlingszwiebeln längs in feine Streifen schneiden und 10 Min. in eiskaltem Wasser wässern (nimmt Schärfe, macht sie knackig-gekringelt), sehr gut trocknen. Dressing separat anrühren: 1 EL Gochugaru, 1 EL Sojasauce, 1 EL Reisessig, 2 TL brauner Zucker, 2 TL geröstetes Sesamöl, 1 TL Sesam. **Erst kurz vor dem Essen mischen**, sonst fällt der Salat zusammen. *Nur für die Erwachsenen — Gochugaru ist scharf.*
+
+**10. Salat (ca. 10 Min.)**
+*jederzeit*
+2 Kopfsalate (oder 3 Romana-Herzen): Blätter einzeln ablösen, waschen, sehr gut trockenschleudern, als „Stapel" anrichten.
+
+**11. In Chargen braten (10–15 Min.)**
+*nach Marinieren · Herd*
+Der Einbrenn-Fix: Fleisch \~10 Min. in einem Sieb über einer Schüssel abtropfen lassen. Die schwere Pfanne auf höchster Stufe aufheizen bis sie raucht, 1 EL neutrales Öl hinein, dann das Fleisch in **3–4 kleinen Chargen** braten: einschichtig einlegen, **1–2 Min. nicht bewegen**, bis die Unterseite dunkel karamellisiert ist, wenden, weitere \~1 Min., raus auf die Platte. **Zwischen den Chargen \~50 ml Wasser in die heiße Pfanne**, den Bratensatz mit dem Pfannenwender lösen und die entstehende Sauce über das fertige Fleisch gießen; Pfanne kurz mit Küchenpapier auswischen, neues Öl, nächste Charge. *Das ist der Fix für die eingebrannte Pfanne der ersten beiden Durchgänge: Eingebrannt wird immer dann, wenn eine volle Pfanne die Temperatur einbrechen lässt, die Marinade sich sammelt und ihr Zucker auf dem Stahl verkohlt. Kleine Chargen halten die Hitze, und das Deglazieren verwandelt den Ansatz in Sauce statt in Schrubbarbeit — die Pfanne danach nur noch heiß ausspülen.*
+
+**12. Anrichten (ca. 5 Min.)**
+*nach In Chargen braten, Reis, Gurken-Pickle, Ssamjang, Kinder-Dip, Pa Muchim vorbereiten, Salat*
 Fleisch auf der Platte mit 2 TL Sesam und 1 Frühlingszwiebel in feinen Ringen bestreuen. Pa Muchim jetzt mit dem Dressing mischen. Alles in die Tischmitte: Fleischplatte, Salatstapel, Reis, Ssamjang, Kinder-Dip, Pa Muchim, Gurken-Pickle, ggf. Kimchi. Gewickelt wird selbst: Blatt in die Hand, 1 Löffel Reis, Fleisch, ein kleiner Klecks Ssamjang, ggf. Pa Muchim — einmal zusammenfalten, **ein Bissen** (koreanische Etikette: Ssam wird nicht angebissen).
 
 ## Zeitplan
@@ -90,7 +131,7 @@ Fleisch auf der Platte mit 2 TL Sesam und 1 Frühlingszwiebel in feinen Ringen b
 ## Kinder-Anpassung
 
 - Das Fleisch selbst ist komplett mild (keine Chili in der Marinade) — das Kind isst dasselbe Bulgogi wie alle. ✓
-- **Kinder-Dip statt Ssamjang** (Schritt 4) — Ssamjang enthält Gochujang. Pa Muchim und Kimchi sind nur für die Erwachsenen; der Gurken-Pickle ist mild und darf.
+- **Kinder-Dip statt Ssamjang** (siehe „Kinder-Dip“) — Ssamjang enthält Gochujang. Pa Muchim und Kimchi sind nur für die Erwachsenen; der Gurken-Pickle ist mild und darf.
 - Wraps für einen Dreijährigen eher als offenes „Schiffchen" oder dekonstruiert (Reis + Fleisch + Gurke getrennt auf dem Teller, Salatblatt zum Selberknautschen) — das Ein-Bissen-Format ist für kleine Münder zu groß.
 - Achtung beim Anrichten: Fleischplatte kommt direkt aus der sehr heißen Pfanne.
 
@@ -101,13 +142,13 @@ Fleisch auf der Platte mit 2 TL Sesam und 1 Frühlingszwiebel in feinen Ringen b
 ### Details
 
 - **Froster-Trick bestätigt:** 15 Min. anfrieren reicht für saubere 2–3-mm-Scheiben, auch mit Messer statt Mandoline.
-- **Pfannen-Problem analysiert:** Nicht die Marinade an sich ist schuld, sondern Überladung — volle Pfanne → Temperatureinbruch → Marinade poolt statt zu verdampfen → Zucker verkohlt auf dem Stahl. Fix siehe Schritt 5; falls das nicht reicht, ist die Gusseisenplatte auf dem Gasgrill der Plan B (siehe Notizen).
+- **Pfannen-Problem analysiert:** Nicht die Marinade an sich ist schuld, sondern Überladung — volle Pfanne → Temperatureinbruch → Marinade poolt statt zu verdampfen → Zucker verkohlt auf dem Stahl. Fix siehe „In Chargen braten“; falls das nicht reicht, ist die Gusseisenplatte auf dem Gasgrill der Plan B (siehe Notizen).
 - **Ssam-Vollausbau (Ssamjang, Pa Muchim, Pickle, Kimchi) ab diesem Rezept neu** — bisher puristisch nur Salat + Reis. Nach dem nächsten Kochen bewerten, was davon bleibt.
 
 ## Quellen & Entscheidungen
 
-- **Marinade-Ratios** nach Maangchi (pro ~450 g Rind: ½ Cup Birne, ¼ Cup Zwiebel, 4 Knoblauchzehen, 1 TL Ingwer, 2 EL Sojasauce, 2 EL brauner Zucker, 1 EL Sesamöl, Pfeffer), hier auf 800 g skaliert (×1,75) und der Zucker leicht reduziert — die Birne süßt mit, und weniger Zucker entschärft das Einbrenn-Problem.
-- **Marinierdauer 2–3 Std.** statt „über Nacht" mancher Rezepte: auf hauchdünnen Scheiben arbeitet die Birnen-Protease schnell; das 2–3-Std.-Fenster ist zweifach selbst erprobt. Maangchis Easy-Variante mariniert sogar nur ~30 Min. — untere Schmerzgrenze, falls es mal schnell gehen muss.
+- **Marinade-Ratios** nach Maangchi (pro \~450 g Rind: ½ Cup Birne, ¼ Cup Zwiebel, 4 Knoblauchzehen, 1 TL Ingwer, 2 EL Sojasauce, 2 EL brauner Zucker, 1 EL Sesamöl, Pfeffer), hier auf 800 g skaliert (×1,75) und der Zucker leicht reduziert — die Birne süßt mit, und weniger Zucker entschärft das Einbrenn-Problem.
+- **Marinierdauer 2–3 Std.** statt „über Nacht" mancher Rezepte: auf hauchdünnen Scheiben arbeitet die Birnen-Protease schnell; das 2–3-Std.-Fenster ist zweifach selbst erprobt. Maangchis Easy-Variante mariniert sogar nur \~30 Min. — untere Schmerzgrenze, falls es mal schnell gehen muss.
 - **Keine Pilze in der Marinade:** viele Rezepte (auch Maangchi) geben Shiitake dazu — hier bewusst weggelassen (Haushalts-Vorliebe: intensive Pilznoten meiden).
 - **Kein Kiwi als Birnen-Ersatz:** Actinidain ist deutlich aggressiver als das Birnen-Enzym — bei dünnen Scheiben und 2–3 Std. sicher matschig. Reife Williams-Birne ist der richtige Fallback.
 - **Cut-Entscheidung:** Ribeye/Sirloin sind die kanonischen Bulgogi-Cuts (so auch My Korean Kitchen); Roastbeef entspricht Sirloin/Striploin — deshalb hat es beim letzten Durchgang so gut funktioniert. Hüfte dokumentiert als Budget-Option, nicht als Empfehlung.
@@ -116,20 +157,20 @@ Fleisch auf der Platte mit 2 TL Sesam und 1 Frühlingszwiebel in feinen Ringen b
 
 ## Notizen
 
-- **Plan B / Ausbaustufe gegen das Einbrennen: Gusseisenplatte (Plancha) für den Gasgrill.** Löst das Problem strukturell — draußen darf einbrennen, die Platte wird einfach abgeflammt und abgeschabt, und über echter Flamme kommt das „Feuerfleisch"-Aroma dazu. Als Anschaffung mehrfach nützlich (Smashburger, Bún-chả-Bällchen, Gemüse), ~25–50 €. Erst den Chargen-Fix aus Schritt 5 validieren, dann entscheiden.
+- **Plan B / Ausbaustufe gegen das Einbrennen: Gusseisenplatte (Plancha) für den Gasgrill.** Löst das Problem strukturell — draußen darf einbrennen, die Platte wird einfach abgeflammt und abgeschabt, und über echter Flamme kommt das „Feuerfleisch"-Aroma dazu. Als Anschaffung mehrfach nützlich (Smashburger, Bún-chả-Bällchen, Gemüse), \~25–50 €. Erst den Chargen-Fix aus „In Chargen braten“ validieren, dann entscheiden.
 - **Gochujang-Synergie:** Der angebrochene Becher ist die halbe Einkaufsliste der Backlog-Idee „Korean Fried Chicken (Dakgangjeong)" — guter Kandidat für eines der nächsten Projekte, solange der Becher offen ist.
 - **Reste:** Gebratenes Bulgogi hält 2–3 Tage im Kühlschrank und ist kalt oder kurz aufgewärmt eine sehr gute Reisbowl (Reis, Fleisch, Gurken-Pickle, Sesam, ggf. Spiegelei).
 
-## Mengen-Check (Zutaten in mehreren Komponenten)
+## Mengen-Check
 
 <details>
 <summary>Gesamtverbrauch pro Zutat — aufklappen</summary>
 
 | Zutat | Marinade | Ssamjang | Kinder-Dip | Pa Muchim | Pickle | **Gesamt** |
 |---|---|---|---|---|---|---|
-| Sojasauce | 3½ EL | — | 1 EL | 1 EL | — | **~5½–6 EL** |
-| Sesamöl | 1½ EL | 1 TL | 1 TL | 2 TL | — | **~3 EL** |
-| Brauner Zucker | 2½ EL | — | — | 2 TL | 1 EL | **~4 EL** |
+| Sojasauce | 3½ EL | — | 1 EL | 1 EL | — | **\~5½–6 EL** |
+| Sesamöl | 1½ EL | 1 TL | 1 TL | 2 TL | — | **\~3 EL** |
+| Brauner Zucker | 2½ EL | — | — | 2 TL | 1 EL | **\~4 EL** |
 | Frühlingszwiebeln | 2 St. | 1 St. | — | 4 St. | — | **+1 Finish = 8 St.** |
 | Knoblauch | 5 Zehen | 1 Zehe | — | — | — | **6 Zehen** |
 | Reisessig | — | — | — | 1 EL | 3 EL | **4 EL** |

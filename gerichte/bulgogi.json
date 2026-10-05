@@ -1,0 +1,1869 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/bulgogi",
+  "kind": "dish",
+  "title": "Bulgogi — koreanisches „Feuerfleisch\" mit Salat-Wraps (4 Portionen)",
+  "status": "done",
+  "yields": {
+    "text": "4 Portionen",
+    "value": 4.0,
+    "unit": "Portionen"
+  },
+  "intro": "*Aktive Zeit \\~1 Std. + 15 Min. Anfrieren + 2–3 Std. Marinieren (passiv), gesamt \\~3,5 Std. Equipment: Mandoline oder sehr scharfes Messer, Stabmixer, große schwere Pfanne (Alternative: Gusseisenplatte auf dem Gasgrill, siehe Notizen).*\n\nKoreanischer Klassiker: hauchdünn geschnittenes Rind in einer pürierten Marinade aus Nashi-Birne, Sojasauce, Knoblauch und Sesamöl, sehr heiß und kurz gebraten, am Tisch in Salatblätter mit Reis gewickelt (*Ssam*). Zweimal gekocht, beide Male fantastisch — dieses Rezept rekonstruiert das verlorene Vorgänger-Rezept auf Basis der Maangchi-Ratios und baut den Fix für den bekannten Schwachpunkt gleich ein: die eingebrannte Pfanne. Dazu diesmal das volle Ssam-Programm: Ssamjang, Pa Muchim (Frühlingszwiebel-Salat), Gurken-Pickle, optional Kimchi.",
+  "times": {
+    "text": "Aktive Zeit ~1 Std. + 15 Min. Anfrieren + 2–3 Std. Marinieren (passiv), gesamt ~3,5 Std.",
+    "active": {
+      "typical": "PT1H",
+      "source": "1 Std."
+    },
+    "total": {
+      "typical": "PT3H30M",
+      "source": "3,5 Std."
+    }
+  },
+  "equipment": [
+    "Mandoline oder sehr scharfes Messer",
+    "Stabmixer",
+    "große schwere Pfanne (Alternative: Gusseisenplatte auf dem Gasgrill",
+    "siehe Notizen)"
+  ],
+  "ingredients": [
+    {
+      "id": "gochujang",
+      "name": "Becher Gochujang",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1"
+      },
+      "note": "Verbrauch nur 1 EL — hält ewig gekühlt, und Backlog-Idee „Korean Fried Chicken\" braucht ihn auch"
+    },
+    {
+      "id": "doenjang",
+      "name": "Becher Doenjang",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1"
+      },
+      "note": "Verbrauch 2 EL; falls nicht da: fertiges Ssamjang im Becher kaufen, dann Gochujang fürs Ssamjang streichen"
+    },
+    {
+      "id": "gochugaru",
+      "name": "Tüte Gochugaru",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1"
+      },
+      "note": "Verbrauch 1 EL; Fallback: ½ EL Gochujang ins Dressing"
+    },
+    {
+      "id": "kurzkornreis",
+      "name": "Kurzkornreis",
+      "store": "Asialaden",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "400 g"
+      },
+      "note": "Kurzkorn-/Sushireis, falls nicht vorrätig"
+    },
+    {
+      "id": "fruehlingszwiebeln",
+      "name": "Frühlingszwiebeln",
+      "store": "Asialaden",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2 Bund"
+      },
+      "note": "Gesamtverbrauch \\~8 Stück — siehe Mengen-Check"
+    },
+    {
+      "id": "kimchi",
+      "name": "Kimchi",
+      "store": "Asialaden",
+      "group": "Kühlregal",
+      "buy": {
+        "text": "1 Glas"
+      },
+      "optional": true
+    },
+    {
+      "id": "perilla-blaetter",
+      "name": "Perilla-Blätter",
+      "store": "Asialaden",
+      "group": "Kühlregal",
+      "optional": true,
+      "note": "oder Shiso; unwahrscheinlich — nur falls zufällig da"
+    },
+    {
+      "id": "rindfleisch",
+      "name": "Rindfleisch, Entrecôte/Ribeye **am Stück**",
+      "store": "REWE Center",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "800 g"
+      },
+      "note": "Alternativen: Roastbeef — beim letzten Mal bewährt — oder Hüfte, siehe Beschaffung"
+    },
+    {
+      "id": "nashi-birne",
+      "name": "große Nashi-Birne",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "\\~250 g; Fallback: 1 reife Williams-Birne"
+    },
+    {
+      "id": "zwiebel",
+      "name": "Zwiebel",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      }
+    },
+    {
+      "id": "knoblauch",
+      "name": "Knoblauch",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Knolle"
+      },
+      "note": "Gesamtverbrauch 6 Zehen"
+    },
+    {
+      "id": "ingwer",
+      "name": "Ingwer",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Stück"
+      },
+      "note": "daumengroß"
+    },
+    {
+      "id": "karotte",
+      "name": "Karotte",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "optional": true,
+      "note": "für die Marinade"
+    },
+    {
+      "id": "kopfsalate",
+      "name": "Kopfsalate",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "note": "oder 3 Romana-Herzen; Wrap-Blätter — lieber zu viel als zu wenig"
+    },
+    {
+      "id": "salatgurke",
+      "name": "Salatgurke",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "Pickle"
+    },
+    {
+      "id": "sojasauce",
+      "name": "Sojasauce",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "\\~6 EL gesamt — siehe Mengen-Check"
+    },
+    {
+      "id": "sesamoel",
+      "name": "Sesamöl, geröstet",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "\\~3 EL gesamt"
+    },
+    {
+      "id": "sesam",
+      "name": "Sesam, geröstet",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "\\~1½ EL; sonst ungerösteten in der Pfanne rösten"
+    },
+    {
+      "id": "zucker",
+      "name": "Brauner Zucker",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "\\~4 EL gesamt"
+    },
+    {
+      "id": "reisessig",
+      "name": "Reisessig",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "\\~4 EL: Pickle und Pa Muchim"
+    },
+    {
+      "id": "honig",
+      "name": "Honig",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "\\~2 TL: Ssamjang und Kinder-Dip"
+    },
+    {
+      "id": "pfeffer",
+      "name": "Pfeffer, schwarz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "oel",
+      "name": "Öl, neutral",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Fleisch — drei gangbare Cuts (\\~800 g am Stück, REWE Center):**\n  - **Entrecôte/Ribeye — Erstwahl:** die Marmorierung schmilzt beim scharfen Anbraten und hält die dünnen Scheiben saftig; in Korea der Standard-Cut für gutes Bulgogi (deungsim).\n  - **Roastbeef — bewährt:** so beim letzten (sehr guten) Durchgang verwendet. Entspricht dem koreanischen Striploin-Zuschnitt, etwas magerer als Entrecôte, lässt sich angefroren sehr sauber hobeln.\n  - **Hüfte — Budget-Option:** deutlich magerer; funktioniert dank Birnen-Enzym trotzdem zart, wird aber weniger reichhaltig — eher zweite Wahl.\n  - Immer **am Stück** kaufen, nie geschnitten — die 2–3-mm-Scheiben entstehen selbst (15 Min. Froster, dann Mandoline/Messer). Bei größeren Mengen ist Selgros günstiger, lohnt für dieses Rezept allein aber keinen Trip.\n- **Nashi-Birne:** REWE Center führt Nashi meist (Obstabteilung), mancher Asialaden auch. Fallback: 1 reife normale Birne (z. B. Williams) — etwas weniger Enzymwirkung, geschmacklich gleichwertig. **Kein Kiwi als Ersatz** — dessen Protease ist deutlich aggressiver und macht das Fleisch in 2–3 Std. matschig.\n- **Koreanische Würzmittel (Asialaden, ☎ vorher anrufen):** Gochujang ist in fast jedem Asialaden Standard. **Doenjang** (fermentierte Sojabohnenpaste, fürs Ssamjang) und **Gochugaru** (koreanische Chiliflocken, fürs Pa Muchim) sind unsicher — anrufen. Fallbacks: fertiges **Ssamjang im Becher** (ersetzt Doenjang + Gochujang in einem), bzw. ½ EL Gochujang ins Pa-Muchim-Dressing statt Gochugaru.\n- **Kimchi:** fertig aus dem Kühlregal des Asialadens, falls vorhanden — eigenes Fermentations-Projekt wäre ein anderes Kapitel. Optionaler Posten.\n- **Perilla-/Shiso-Blätter** (klassische zweite Wrap-Lage): realistisch nicht zu bekommen — nur mitnehmen, falls zufällig da. Kopfsalat trägt den Abend allein.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Bulgogi — koreanisches „Feuerfleisch\" mit Salat-Wraps (4 Portionen)",
+          "steps": [
+            {
+              "id": "fleisch-anfrieren",
+              "label": "1",
+              "heading": "**1. Fleisch anfrieren (15 Min., passiv)**",
+              "title": "Fleisch anfrieren",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "attention": "passive",
+              "text": "800 g Fleisch straff in Frischhaltefolie wickeln und 15 Min. ins Gefrierfach — angefroren lässt es sich hauchdünn schneiden. Währenddessen „Marinade mixen“. *Zweimal erprobt, funktioniert zuverlässig; länger als \\~25 Min. macht den Kern zu hart für die Mandoline.*",
+              "action": "800 g Fleisch straff in Frischhaltefolie wickeln und 15 Min. ins Gefrierfach — angefroren lässt es sich hauchdünn schneiden.",
+              "why": "Zweimal erprobt, funktioniert zuverlässig; länger als \\~25 Min. macht den Kern zu hart für die Mandoline.",
+              "timers": [
+                {
+                  "label": "Fleisch anfrieren",
+                  "duration": {
+                    "typical": "PT15M"
+                  },
+                  "text": "15 Min."
+                },
+                {
+                  "label": "Fleisch anfrieren",
+                  "duration": {
+                    "typical": "PT25M",
+                    "estimated": true
+                  },
+                  "text": "\\~25 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "rindfleisch",
+                  "amount": {
+                    "text": "800 g Fleisch",
+                    "value": 800.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "after": []
+            },
+            {
+              "id": "marinade-mixen",
+              "label": "2",
+              "heading": "**2. Marinade mixen (10 Min.)**",
+              "title": "Marinade mixen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Mit dem Stabmixer glatt pürieren: 200 g Nashi-Birne (geschält, entkernt), 80 g Zwiebel, 5 Knoblauchzehen, 2 TL fein geriebener Ingwer, 3½ EL Sojasauce, 2½ EL brauner Zucker, 1½ EL geröstetes Sesamöl, ½ TL schwarzer Pfeffer. *Zucker bewusst am unteren Ende der üblichen Ratios — die Birne bringt eigene Süße, und weniger Zucker heißt weniger Einbrennen (siehe „In Chargen braten“).*",
+              "action": "Mit dem Stabmixer glatt pürieren: 200 g Nashi-Birne (geschält, entkernt), 80 g Zwiebel, 5 Knoblauchzehen, 2 TL fein geriebener Ingwer, 3½ EL Sojasauce, 2½ EL brauner Zucker, 1½ EL geröstetes Sesamöl, ½ TL schwarzer Pfeffer.",
+              "why": "Zucker bewusst am unteren Ende der üblichen Ratios — die Birne bringt eigene Süße, und weniger Zucker heißt weniger Einbrennen (siehe „In Chargen braten“).",
+              "ingredients": [
+                {
+                  "ref": "nashi-birne",
+                  "amount": {
+                    "text": "200 g Nashi-Birne",
+                    "value": 200.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "zwiebel",
+                  "amount": {
+                    "text": "80 g Zwiebel",
+                    "value": 80.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "5 Knoblauchzehen",
+                    "value": 5.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "ingwer",
+                  "amount": {
+                    "text": "2 TL fein geriebener Ingwer",
+                    "value": 2.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "sojasauce",
+                  "amount": {
+                    "text": "3½ EL Sojasauce",
+                    "value": 3.5,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "2½ EL brauner Zucker",
+                    "value": 2.5,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "sesamoel",
+                  "amount": {
+                    "text": "1½ EL geröstetes Sesamöl",
+                    "value": 1.5,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "½ TL schwarzer Pfeffer",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "schneiden",
+              "label": "3",
+              "heading": "**3. Schneiden (15 Min.)**",
+              "title": "Schneiden",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "Angefrorenes Fleisch **quer zur Faser** in 2–3 mm dünne Scheiben hobeln (Mandoline mit Schutz) oder mit sehr scharfem Messer schneiden.",
+              "action": "Angefrorenes Fleisch **quer zur Faser** in 2–3 mm dünne Scheiben hobeln (Mandoline mit Schutz) oder mit sehr scharfem Messer schneiden.",
+              "limits": [
+                "quer zur Faser"
+              ],
+              "ingredients": [],
+              "meta": "*nach Fleisch anfrieren*",
+              "attention": "active",
+              "after": [
+                "step:fleisch-anfrieren"
+              ]
+            },
+            {
+              "id": "marinieren",
+              "label": "4",
+              "heading": "**4. Marinieren (2–3 Std., passiv)**",
+              "title": "Marinieren",
+              "duration": {
+                "min": "PT2H",
+                "max": "PT3H",
+                "source": "2–3 Std."
+              },
+              "attention": "passive",
+              "text": "Mit der Marinade, 2 Frühlingszwiebeln in Ringen und optional ½ Karotte in feinen Stiften gründlich vermengen, abgedeckt **2–3 Std.** kalt stellen. *Das erprobte Fenster. Nicht über Nacht: die Birnen-Protease arbeitet auf 2–3-mm-Scheiben schnell — länger wird die Textur mehlig-weich statt zart.*",
+              "action": "Mit der Marinade, 2 Frühlingszwiebeln in Ringen und optional ½ Karotte in feinen Stiften gründlich vermengen, abgedeckt **2–3 Std.** kalt stellen.",
+              "limits": [
+                "2–3 Std."
+              ],
+              "why": "Das erprobte Fenster. Nicht über Nacht: die Birnen-Protease arbeitet auf 2–3-mm-Scheiben schnell — länger wird die Textur mehlig-weich statt zart.",
+              "timers": [
+                {
+                  "label": "Marinieren",
+                  "duration": {
+                    "min": "PT2H",
+                    "max": "PT3H"
+                  },
+                  "text": "2–3 Std."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "fruehlingszwiebeln",
+                  "amount": {
+                    "text": "2 Frühlingszwiebeln",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "karotte",
+                  "amount": {
+                    "text": "½ Karotte",
+                    "value": 0.5,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*nach Schneiden, Marinade mixen*",
+              "after": [
+                "step:schneiden",
+                "step:marinade-mixen"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "beilagen-waehrend-der-marinierzeit",
+          "name": "Beilagen während der Marinierzeit",
+          "steps": [
+            {
+              "id": "reis",
+              "label": "5",
+              "heading": "**5. Reis (ca. 30 Min., parallel)**",
+              "title": "Reis",
+              "duration": {
+                "typical": "PT30M",
+                "source": "ca. 30 Min.",
+                "estimated": true
+              },
+              "parallel": true,
+              "text": "400 g Kurzkornreis (Kurzkorn-/Sushireis) waschen und garen.",
+              "action": "400 g Kurzkornreis (Kurzkorn-/Sushireis) waschen und garen.",
+              "ingredients": [
+                {
+                  "ref": "kurzkornreis",
+                  "amount": {
+                    "text": "400 g Kurzkornreis",
+                    "value": 400.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Reis",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "ca. 30 Min."
+                }
+              ],
+              "after": []
+            },
+            {
+              "id": "gurken-pickle",
+              "label": "6",
+              "heading": "**6. Gurken-Pickle (10 Min. + 30 Min. passiv)**",
+              "title": "Gurken-Pickle",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "attention": "passive",
+              "text": "1 Salatgurke in dünne Scheiben hobeln, mit 1 TL Salz 10 Min. ziehen lassen, ausdrücken. Lake aus 3 EL Reisessig, 1 EL braunem Zucker und 2 EL Wasser darüber, mindestens 30 Min. ziehen lassen. *Mild — das Kind darf mitessen.*",
+              "action": "1 Salatgurke in dünne Scheiben hobeln, mit 1 TL Salz 10 Min. ziehen lassen, ausdrücken.",
+              "why": "Mild — das Kind darf mitessen.",
+              "timers": [
+                {
+                  "label": "Gurken-Pickle",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "salatgurke",
+                  "amount": {
+                    "text": "1 Salatgurke",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "reisessig",
+                  "amount": {
+                    "text": "3 EL Reisessig",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "1 EL braunem Zucker",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "2 EL Wasser",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "after": []
+            },
+            {
+              "id": "ssamjang",
+              "label": "7",
+              "heading": "**7. Ssamjang (5 Min.)**",
+              "title": "Ssamjang",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "2 EL Doenjang, 1 EL Gochujang, 1 TL geröstetes Sesamöl, 1 TL Honig, 1 sehr fein gehackte Knoblauchzehe, 1 fein geschnittene Frühlingszwiebel, 1 TL Sesam und 1–2 TL Wasser glatt rühren. *(Bei Fertig-Ssamjang: nur Frühlingszwiebel, Sesam und 1 TL Sesamöl einrühren.)*",
+              "action": "2 EL Doenjang, 1 EL Gochujang, 1 TL geröstetes Sesamöl, 1 TL Honig, 1 sehr fein gehackte Knoblauchzehe, 1 fein geschnittene Frühlingszwiebel, 1 TL Sesam und 1–2 TL Wasser glatt rühren.",
+              "why": "Bei Fertig-Ssamjang: nur Frühlingszwiebel, Sesam und 1 TL Sesamöl einrühren.",
+              "ingredients": [
+                {
+                  "ref": "doenjang",
+                  "amount": {
+                    "text": "2 EL Doenjang",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "gochujang",
+                  "amount": {
+                    "text": "1 EL Gochujang",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "sesamoel",
+                  "amount": {
+                    "text": "1 TL geröstetes Sesamöl",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "honig",
+                  "amount": {
+                    "text": "1 TL Honig",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "1 sehr fein gehackte Knoblauchzehe",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "fruehlingszwiebeln",
+                  "amount": {
+                    "text": "1 fein geschnittene Frühlingszwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "sesam",
+                  "amount": {
+                    "text": "1 TL Sesam",
+                    "value": 1.0,
+                    "unit": "TL"
+                  },
+                  "occurrence": 1
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "1–2 TL Wasser",
+                    "value": 1.0,
+                    "unit": "TL",
+                    "max": 2.0
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "kinder-dip",
+              "label": "8",
+              "heading": "**8. Kinder-Dip (2 Min.)**",
+              "title": "Kinder-Dip",
+              "duration": {
+                "typical": "PT2M",
+                "source": "2 Min."
+              },
+              "text": "1 EL Sojasauce, 1 TL geröstetes Sesamöl, 1 TL Honig, ½ TL Sesam, 1 TL Wasser verrühren — die milde Ssamjang-Entsprechung.",
+              "action": "1 EL Sojasauce, 1 TL geröstetes Sesamöl, 1 TL Honig, ½ TL Sesam, 1 TL Wasser verrühren — die milde Ssamjang-Entsprechung.",
+              "ingredients": [
+                {
+                  "ref": "sojasauce",
+                  "amount": {
+                    "text": "1 EL Sojasauce",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "sesamoel",
+                  "amount": {
+                    "text": "1 TL geröstetes Sesamöl",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "honig",
+                  "amount": {
+                    "text": "1 TL Honig",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "sesam",
+                  "amount": {
+                    "text": "½ TL Sesam",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "1 TL Wasser",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "pa-muchim-vorbereiten",
+              "label": "9",
+              "heading": "**9. Pa Muchim vorbereiten (5 Min. + 10 Min. passiv)**",
+              "title": "Pa Muchim vorbereiten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "attention": "passive",
+              "text": "4 Frühlingszwiebeln längs in feine Streifen schneiden und 10 Min. in eiskaltem Wasser wässern (nimmt Schärfe, macht sie knackig-gekringelt), sehr gut trocknen. Dressing separat anrühren: 1 EL Gochugaru, 1 EL Sojasauce, 1 EL Reisessig, 2 TL brauner Zucker, 2 TL geröstetes Sesamöl, 1 TL Sesam. **Erst kurz vor dem Essen mischen**, sonst fällt der Salat zusammen. *Nur für die Erwachsenen — Gochugaru ist scharf.*",
+              "action": "4 Frühlingszwiebeln längs in feine Streifen schneiden und 10 Min. in eiskaltem Wasser wässern (nimmt Schärfe, macht sie knackig-gekringelt), sehr gut trocknen.",
+              "limits": [
+                "Erst kurz vor dem Essen mischen"
+              ],
+              "why": "Nur für die Erwachsenen — Gochugaru ist scharf.",
+              "timers": [
+                {
+                  "label": "Pa Muchim vorbereiten",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "fruehlingszwiebeln",
+                  "amount": {
+                    "text": "4 Frühlingszwiebeln",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "gochugaru",
+                  "amount": {
+                    "text": "1 EL Gochugaru",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "sojasauce",
+                  "amount": {
+                    "text": "1 EL Sojasauce",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "reisessig",
+                  "amount": {
+                    "text": "1 EL Reisessig",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "2 TL brauner Zucker",
+                    "value": 2.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "sesamoel",
+                  "amount": {
+                    "text": "2 TL geröstetes Sesamöl",
+                    "value": 2.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "sesam",
+                  "amount": {
+                    "text": "1 TL Sesam",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "after": []
+            },
+            {
+              "id": "salat",
+              "label": "10",
+              "heading": "**10. Salat (ca. 10 Min.)**",
+              "title": "Salat",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "text": "2 Kopfsalate (oder 3 Romana-Herzen): Blätter einzeln ablösen, waschen, sehr gut trockenschleudern, als „Stapel\" anrichten.",
+              "action": "2 Kopfsalate (oder 3 Romana-Herzen): Blätter einzeln ablösen, waschen, sehr gut trockenschleudern, als „Stapel\" anrichten.",
+              "ingredients": [
+                {
+                  "ref": "kopfsalate",
+                  "amount": {
+                    "text": "2 Kopfsalate",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "in-chargen-braten",
+              "label": "11",
+              "heading": "**11. In Chargen braten (10–15 Min.)**",
+              "title": "In Chargen braten",
+              "duration": {
+                "min": "PT10M",
+                "max": "PT15M",
+                "source": "10–15 Min."
+              },
+              "text": "Der Einbrenn-Fix: Fleisch \\~10 Min. in einem Sieb über einer Schüssel abtropfen lassen. Die schwere Pfanne auf höchster Stufe aufheizen bis sie raucht, 1 EL neutrales Öl hinein, dann das Fleisch in **3–4 kleinen Chargen** braten: einschichtig einlegen, **1–2 Min. nicht bewegen**, bis die Unterseite dunkel karamellisiert ist, wenden, weitere \\~1 Min., raus auf die Platte. **Zwischen den Chargen \\~50 ml Wasser in die heiße Pfanne**, den Bratensatz mit dem Pfannenwender lösen und die entstehende Sauce über das fertige Fleisch gießen; Pfanne kurz mit Küchenpapier auswischen, neues Öl, nächste Charge. *Das ist der Fix für die eingebrannte Pfanne der ersten beiden Durchgänge: Eingebrannt wird immer dann, wenn eine volle Pfanne die Temperatur einbrechen lässt, die Marinade sich sammelt und ihr Zucker auf dem Stahl verkohlt. Kleine Chargen halten die Hitze, und das Deglazieren verwandelt den Ansatz in Sauce statt in Schrubbarbeit — die Pfanne danach nur noch heiß ausspülen.*",
+              "action": "Der Einbrenn-Fix: Fleisch \\~10 Min. in einem Sieb über einer Schüssel abtropfen lassen.",
+              "limits": [
+                "3–4 kleinen Chargen",
+                "1–2 Min. nicht bewegen",
+                "Zwischen den Chargen \\~50 ml Wasser in die heiße Pfanne"
+              ],
+              "why": "Das ist der Fix für die eingebrannte Pfanne der ersten beiden Durchgänge: Eingebrannt wird immer dann, wenn eine volle Pfanne die Temperatur einbrechen lässt, die Marinade sich sammelt und ihr Zucker auf dem Stahl verkohlt. Kleine Chargen halten die Hitze, und das Deglazieren verwandelt den Ansatz in Sauce statt in Schrubbarbeit — die Pfanne danach nur noch heiß ausspülen.",
+              "cues": [
+                "bis sie raucht",
+                "bis die Unterseite dunkel karamellisiert ist"
+              ],
+              "timers": [
+                {
+                  "label": "In Chargen braten",
+                  "duration": {
+                    "typical": "PT10M",
+                    "estimated": true
+                  },
+                  "text": "\\~10 Min."
+                },
+                {
+                  "label": "In Chargen braten",
+                  "duration": {
+                    "min": "PT1M",
+                    "max": "PT2M"
+                  },
+                  "text": "1–2 Min."
+                },
+                {
+                  "label": "In Chargen braten",
+                  "duration": {
+                    "typical": "PT1M",
+                    "estimated": true
+                  },
+                  "text": "\\~1 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "1 EL neutrales Öl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "50 ml Wasser",
+                    "value": 50.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*nach Marinieren · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:marinieren"
+              ]
+            },
+            {
+              "id": "anrichten",
+              "label": "12",
+              "heading": "**12. Anrichten (ca. 5 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "ca. 5 Min.",
+                "estimated": true
+              },
+              "text": "Fleisch auf der Platte mit 2 TL Sesam und 1 Frühlingszwiebel in feinen Ringen bestreuen. Pa Muchim jetzt mit dem Dressing mischen. Alles in die Tischmitte: Fleischplatte, Salatstapel, Reis, Ssamjang, Kinder-Dip, Pa Muchim, Gurken-Pickle, ggf. Kimchi. Gewickelt wird selbst: Blatt in die Hand, 1 Löffel Reis, Fleisch, ein kleiner Klecks Ssamjang, ggf. Pa Muchim — einmal zusammenfalten, **ein Bissen** (koreanische Etikette: Ssam wird nicht angebissen).",
+              "action": "Fleisch auf der Platte mit 2 TL Sesam und 1 Frühlingszwiebel in feinen Ringen bestreuen.",
+              "limits": [
+                "ein Bissen"
+              ],
+              "ingredients": [
+                {
+                  "ref": "sesam",
+                  "amount": {
+                    "text": "2 TL Sesam",
+                    "value": 2.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "fruehlingszwiebeln",
+                  "amount": {
+                    "text": "1 Frühlingszwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "rindfleisch",
+                  "amount": {
+                    "text": "1 Löffel Reis, Fleisch",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*nach In Chargen braten, Reis, Gurken-Pickle, Ssamjang, Kinder-Dip, Pa Muchim vorbereiten, Salat*",
+              "attention": "active",
+              "after": [
+                "step:in-chargen-braten",
+                "step:reis",
+                "step:gurken-pickle",
+                "step:ssamjang",
+                "step:kinder-dip",
+                "step:pa-muchim-vorbereiten",
+                "step:salat"
+              ]
+            }
+          ],
+          "heading": "**Beilagen während der Marinierzeit (\\~40 Min. aktiv, gut vorzubereiten):**",
+          "produces": [
+            {
+              "id": "beilagen-waehrend-der-marinierzeit",
+              "name": "Beilagen während der Marinierzeit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "kochtag",
+            "text": "Fleisch in den Froster; Marinade mixen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT210M"
+            },
+            "source": "T−3:30",
+            "steps": [
+              "marinade-mixen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Fleisch hobeln, marinieren (2–3 Std. kalt)",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT195M"
+            },
+            "source": "T−3:15",
+            "steps": [
+              "marinieren"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Gurken-Pickle ansetzen; Ssamjang + Kinder-Dip anrühren",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT60M"
+            },
+            "source": "T−1:00"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Reis aufsetzen; Frühlingszwiebeln wässern, Pa-Muchim-Dressing anrühren",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT45M"
+            },
+            "source": "T−0:45"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Salat waschen und schleudern, Tisch decken",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT30M"
+            },
+            "source": "T−0:30"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Fleisch abtropfen lassen; Pfanne rauchend heiß aufheizen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT15M"
+            },
+            "source": "T−0:15"
+          },
+          {
+            "phase": "kochtag",
+            "text": "3–4 Chargen braten, dazwischen deglazieren",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT10M"
+            },
+            "source": "T−0:10"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Pa Muchim anmachen, Sesam aufs Fleisch, alles in die Mitte",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT0M"
+            },
+            "source": "T−0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- Das Fleisch selbst ist komplett mild (keine Chili in der Marinade) — das Kind isst dasselbe Bulgogi wie alle. ✓\n- **Kinder-Dip statt Ssamjang** (siehe „Kinder-Dip“) — Ssamjang enthält Gochujang. Pa Muchim und Kimchi sind nur für die Erwachsenen; der Gurken-Pickle ist mild und darf.\n- Wraps für einen Dreijährigen eher als offenes „Schiffchen\" oder dekonstruiert (Reis + Fleisch + Gurke getrennt auf dem Teller, Salatblatt zum Selberknautschen) — das Ein-Bissen-Format ist für kleine Münder zu groß.\n- Achtung beim Anrichten: Fleischplatte kommt direkt aus der sehr heißen Pfanne.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "learnings",
+      "title": "Learnings",
+      "cooked": "08/2026",
+      "summary": "**Gekocht 2× (vor 08/2026, mit verlorenem Vorgänger-Rezept).** Beide Male fantastisch — die Kombination aus Birnenmarinade (2–3 Std.), 15 Min. Anfrieren fürs dünne Schneiden, sehr scharfem Anbraten und Salat-Wraps mit Reis funktioniert hervorragend und ist Rotations-Material. Zuletzt mit Roastbeef gekocht: sehr gutes Ergebnis. Bekannter Schwachpunkt beider Durchgänge: übel eingebrannte Pfanne — der Fix (kleine Chargen, Fleisch abtropfen, Wasser-Deglaze zwischen den Chargen, Zucker am unteren Ende) ist in dieses Rezept eingebaut und beim nächsten Mal zu validieren.",
+      "details": "### Details\n\n- **Froster-Trick bestätigt:** 15 Min. anfrieren reicht für saubere 2–3-mm-Scheiben, auch mit Messer statt Mandoline.\n- **Pfannen-Problem analysiert:** Nicht die Marinade an sich ist schuld, sondern Überladung — volle Pfanne → Temperatureinbruch → Marinade poolt statt zu verdampfen → Zucker verkohlt auf dem Stahl. Fix siehe „In Chargen braten“; falls das nicht reicht, ist die Gusseisenplatte auf dem Gasgrill der Plan B (siehe Notizen).\n- **Ssam-Vollausbau (Ssamjang, Pa Muchim, Pickle, Kimchi) ab diesem Rezept neu** — bisher puristisch nur Salat + Reis. Nach dem nächsten Kochen bewerten, was davon bleibt."
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Marinade-Ratios** nach Maangchi (pro \\~450 g Rind: ½ Cup Birne, ¼ Cup Zwiebel, 4 Knoblauchzehen, 1 TL Ingwer, 2 EL Sojasauce, 2 EL brauner Zucker, 1 EL Sesamöl, Pfeffer), hier auf 800 g skaliert (×1,75) und der Zucker leicht reduziert — die Birne süßt mit, und weniger Zucker entschärft das Einbrenn-Problem.\n- **Marinierdauer 2–3 Std.** statt „über Nacht\" mancher Rezepte: auf hauchdünnen Scheiben arbeitet die Birnen-Protease schnell; das 2–3-Std.-Fenster ist zweifach selbst erprobt. Maangchis Easy-Variante mariniert sogar nur \\~30 Min. — untere Schmerzgrenze, falls es mal schnell gehen muss.\n- **Keine Pilze in der Marinade:** viele Rezepte (auch Maangchi) geben Shiitake dazu — hier bewusst weggelassen (Haushalts-Vorliebe: intensive Pilznoten meiden).\n- **Kein Kiwi als Birnen-Ersatz:** Actinidain ist deutlich aggressiver als das Birnen-Enzym — bei dünnen Scheiben und 2–3 Std. sicher matschig. Reife Williams-Birne ist der richtige Fallback.\n- **Cut-Entscheidung:** Ribeye/Sirloin sind die kanonischen Bulgogi-Cuts (so auch My Korean Kitchen); Roastbeef entspricht Sirloin/Striploin — deshalb hat es beim letzten Durchgang so gut funktioniert. Hüfte dokumentiert als Budget-Option, nicht als Empfehlung.\n- **Pfanne statt Grill als Standard:** Bulgogi heißt wörtlich „Feuerfleisch\" und gehört klassisch über offene Glut — die Pfannen-Version ist aber der etablierte Hausstandard (Maangchi brät ebenfalls in der Pfanne). Grill-Option siehe Notizen.\n- Referenzen: [Maangchi — Bulgogi](https://www.maangchi.com/recipe/bulgogi) · [Maangchi — Easy Bulgogi](https://www.maangchi.com/recipe/easy-bulgogi) · [Maangchi — Ssamjang](https://www.maangchi.com/recipe/ssamjang) · [My Korean Kitchen — Bulgogi](https://mykoreankitchen.com/bulgogi-korean-bbq-beef/)",
+      "tags": [
+        "quellen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Plan B / Ausbaustufe gegen das Einbrennen: Gusseisenplatte (Plancha) für den Gasgrill.** Löst das Problem strukturell — draußen darf einbrennen, die Platte wird einfach abgeflammt und abgeschabt, und über echter Flamme kommt das „Feuerfleisch\"-Aroma dazu. Als Anschaffung mehrfach nützlich (Smashburger, Bún-chả-Bällchen, Gemüse), \\~25–50 €. Erst den Chargen-Fix aus „In Chargen braten“ validieren, dann entscheiden.\n- **Gochujang-Synergie:** Der angebrochene Becher ist die halbe Einkaufsliste der Backlog-Idee „Korean Fried Chicken (Dakgangjeong)\" — guter Kandidat für eines der nächsten Projekte, solange der Becher offen ist.\n- **Reste:** Gebratenes Bulgogi hält 2–3 Tage im Kühlschrank und ist kalt oder kurz aufgewärmt eine sehr gute Reisbowl (Reis, Fleisch, Gurken-Pickle, Sesam, ggf. Spiegelei).",
+      "tags": [
+        "notizen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T18:30:33Z",
+    "sourceHash": "7251d187d59d89eb",
+    "quantities": [
+      {
+        "ingredient": "gochujang",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "beilagen-waehrend-der-marinierzeit": "1 EL Gochujang"
+        }
+      },
+      {
+        "ingredient": "doenjang",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "beilagen-waehrend-der-marinierzeit": "2 EL Doenjang"
+        }
+      },
+      {
+        "ingredient": "gochugaru",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "beilagen-waehrend-der-marinierzeit": "1 EL Gochugaru"
+        }
+      },
+      {
+        "ingredient": "kurzkornreis",
+        "total": {
+          "text": "400 g",
+          "value": 400.0,
+          "max": 400.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "beilagen-waehrend-der-marinierzeit": "400 g Kurzkornreis"
+        }
+      },
+      {
+        "ingredient": "fruehlingszwiebeln",
+        "total": {
+          "text": "8",
+          "value": 8.0,
+          "max": 8.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 Frühlingszwiebeln",
+          "beilagen-waehrend-der-marinierzeit": "1 fein geschnittene Frühlingszwiebel + 4 Frühlingszwiebeln + 1 Frühlingszwiebel"
+        }
+      },
+      {
+        "ingredient": "kimchi",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "perilla-blaetter",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "rindfleisch",
+        "total": {
+          "text": "800 g (+ Stück ungemischt)",
+          "value": 800.0,
+          "max": 800.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "800 g Fleisch"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "nashi-birne",
+        "total": {
+          "text": "200 g",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "200 g Nashi-Birne"
+        }
+      },
+      {
+        "ingredient": "zwiebel",
+        "total": {
+          "text": "80 g",
+          "value": 80.0,
+          "max": 80.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "80 g Zwiebel"
+        }
+      },
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": "6",
+          "value": 6.0,
+          "max": 6.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "5 Knoblauchzehen",
+          "beilagen-waehrend-der-marinierzeit": "1 sehr fein gehackte Knoblauchzehe"
+        }
+      },
+      {
+        "ingredient": "ingwer",
+        "total": {
+          "text": "2 TL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 TL fein geriebener Ingwer"
+        }
+      },
+      {
+        "ingredient": "karotte",
+        "total": {
+          "text": "½",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "½ Karotte"
+        }
+      },
+      {
+        "ingredient": "kopfsalate",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "beilagen-waehrend-der-marinierzeit": "2 Kopfsalate"
+        }
+      },
+      {
+        "ingredient": "salatgurke",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "beilagen-waehrend-der-marinierzeit": "1 Salatgurke"
+        }
+      },
+      {
+        "ingredient": "sojasauce",
+        "total": {
+          "text": "5½ EL",
+          "value": 5.5,
+          "max": 5.5,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "3½ EL Sojasauce",
+          "beilagen-waehrend-der-marinierzeit": "1 EL Sojasauce + 1 EL Sojasauce"
+        }
+      },
+      {
+        "ingredient": "sesamoel",
+        "total": {
+          "text": "1½ EL (+ TL ungemischt)",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1½ EL geröstetes Sesamöl"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "sesam",
+        "total": {
+          "text": "4½ TL",
+          "value": 4.5,
+          "max": 4.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "beilagen-waehrend-der-marinierzeit": "1 TL Sesam + ½ TL Sesam + 1 TL Sesam + 2 TL Sesam"
+        }
+      },
+      {
+        "ingredient": "zucker",
+        "total": {
+          "text": "3½ EL (+ TL ungemischt)",
+          "value": 3.5,
+          "max": 3.5,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2½ EL brauner Zucker",
+          "beilagen-waehrend-der-marinierzeit": "1 EL braunem Zucker"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "reisessig",
+        "total": {
+          "text": "4 EL",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "beilagen-waehrend-der-marinierzeit": "3 EL Reisessig + 1 EL Reisessig"
+        }
+      },
+      {
+        "ingredient": "honig",
+        "total": {
+          "text": "2 TL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "beilagen-waehrend-der-marinierzeit": "1 TL Honig + 1 TL Honig"
+        }
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": "½ TL",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "½ TL schwarzer Pfeffer"
+        }
+      },
+      {
+        "ingredient": "oel",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "beilagen-waehrend-der-marinierzeit": "1 EL neutrales Öl"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "beilagen-waehrend-der-marinierzeit": "1 TL Salz"
+        }
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "2 EL (+ TL, ml ungemischt)",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "beilagen-waehrend-der-marinierzeit": "2 EL Wasser"
+        },
+        "unitMixed": true
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Asialaden",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "fruehlingszwiebeln",
+            "name": "Frühlingszwiebeln",
+            "need": {
+              "text": "8",
+              "value": 8.0,
+              "max": 8.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "8",
+            "inStock": false,
+            "buy": {
+              "text": "2 Bund"
+            },
+            "note": "Gesamtverbrauch \\~8 Stück — siehe Mengen-Check"
+          }
+        ]
+      },
+      {
+        "store": "Asialaden",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "kurzkornreis",
+            "name": "Kurzkornreis",
+            "need": {
+              "text": "400 g",
+              "value": 400.0,
+              "max": 400.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "400 g",
+            "inStock": false,
+            "buy": {
+              "text": "400 g"
+            },
+            "note": "Kurzkorn-/Sushireis, falls nicht vorrätig"
+          }
+        ]
+      },
+      {
+        "store": "Asialaden",
+        "group": "Würzmittel & Gewürze",
+        "items": [
+          {
+            "ingredient": "gochujang",
+            "name": "Becher Gochujang",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "Verbrauch nur 1 EL — hält ewig gekühlt, und Backlog-Idee „Korean Fried Chicken\" braucht ihn auch"
+          },
+          {
+            "ingredient": "doenjang",
+            "name": "Becher Doenjang",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "Verbrauch 2 EL; falls nicht da: fertiges Ssamjang im Becher kaufen, dann Gochujang fürs Ssamjang streichen"
+          },
+          {
+            "ingredient": "gochugaru",
+            "name": "Tüte Gochugaru",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "Verbrauch 1 EL; Fallback: ½ EL Gochujang ins Dressing"
+          }
+        ]
+      },
+      {
+        "store": "Asialaden",
+        "group": "Kühlregal",
+        "items": [
+          {
+            "ingredient": "kimchi",
+            "name": "Kimchi",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1 Glas"
+            },
+            "optional": true
+          },
+          {
+            "ingredient": "perilla-blaetter",
+            "name": "Perilla-Blätter",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "optional": true,
+            "note": "oder Shiso; unwahrscheinlich — nur falls zufällig da"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "nashi-birne",
+            "name": "große Nashi-Birne",
+            "need": {
+              "text": "200 g",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "200 g",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "\\~250 g; Fallback: 1 reife Williams-Birne"
+          },
+          {
+            "ingredient": "zwiebel",
+            "name": "Zwiebel",
+            "need": {
+              "text": "80 g",
+              "value": 80.0,
+              "max": 80.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "80 g",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            }
+          },
+          {
+            "ingredient": "knoblauch",
+            "name": "Knoblauch",
+            "need": {
+              "text": "6",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "6",
+            "inStock": false,
+            "buy": {
+              "text": "1 Knolle"
+            },
+            "note": "Gesamtverbrauch 6 Zehen"
+          },
+          {
+            "ingredient": "ingwer",
+            "name": "Ingwer",
+            "need": {
+              "text": "2 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "2 TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Stück"
+            },
+            "note": "daumengroß"
+          },
+          {
+            "ingredient": "karotte",
+            "name": "Karotte",
+            "need": {
+              "text": "½",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "½",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "optional": true,
+            "note": "für die Marinade"
+          },
+          {
+            "ingredient": "kopfsalate",
+            "name": "Kopfsalate",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "oder 3 Romana-Herzen; Wrap-Blätter — lieber zu viel als zu wenig"
+          },
+          {
+            "ingredient": "salatgurke",
+            "name": "Salatgurke",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "Pickle"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "rindfleisch",
+            "name": "Rindfleisch, Entrecôte/Ribeye **am Stück**",
+            "need": {
+              "text": "800 g (+ Stück ungemischt)",
+              "value": 800.0,
+              "max": 800.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "800 g",
+            "inStock": false,
+            "buy": {
+              "text": "800 g"
+            },
+            "note": "Alternativen: Roastbeef — beim letzten Mal bewährt — oder Hüfte, siehe Beschaffung"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "sojasauce",
+            "name": "Sojasauce",
+            "need": {
+              "text": "5½ EL",
+              "value": 5.5,
+              "max": 5.5,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "5½ EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "\\~6 EL gesamt — siehe Mengen-Check"
+          },
+          {
+            "ingredient": "sesamoel",
+            "name": "Sesamöl, geröstet",
+            "need": {
+              "text": "1½ EL (+ TL ungemischt)",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1½ EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "\\~3 EL gesamt"
+          },
+          {
+            "ingredient": "sesam",
+            "name": "Sesam, geröstet",
+            "need": {
+              "text": "4½ TL",
+              "value": 4.5,
+              "max": 4.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "4½ TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "\\~1½ EL; sonst ungerösteten in der Pfanne rösten"
+          },
+          {
+            "ingredient": "zucker",
+            "name": "Brauner Zucker",
+            "need": {
+              "text": "3½ EL (+ TL ungemischt)",
+              "value": 3.5,
+              "max": 3.5,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "3½ EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "\\~4 EL gesamt"
+          },
+          {
+            "ingredient": "reisessig",
+            "name": "Reisessig",
+            "need": {
+              "text": "4 EL",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "4 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "\\~4 EL: Pickle und Pa Muchim"
+          },
+          {
+            "ingredient": "honig",
+            "name": "Honig",
+            "need": {
+              "text": "2 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "2 TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "\\~2 TL: Ssamjang und Kinder-Dip"
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Pfeffer, schwarz",
+            "need": {
+              "text": "½ TL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "½ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "oel",
+            "name": "Öl, neutral",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "2 EL (+ TL, ml ungemischt)",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}
