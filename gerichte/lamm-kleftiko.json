@@ -1,0 +1,1490 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/lamm-kleftiko",
+  "kind": "dish",
+  "title": "Lamm-Kleftiko — im Päckchen geschmortes Lamm mit Kartoffeln (4 Portionen + Reste)",
+  "status": "done",
+  "yields": {
+    "text": "4 Portionen + Reste",
+    "value": 4.0,
+    "unit": "Portionen"
+  },
+  "intro": "*Aktive Zeit \\~45 Min., gesamt über Nacht + \\~6 Std. (Marinieren über Nacht, dann \\~6 Std., davon 4 Std. Ofen ohne Arbeit). Equipment: Bräter mit Deckel, Backpapier (Doppellage), Küchengarn, Fleischthermometer.*\n\nGriechischer Schmorklassiker („wie gestohlen\" gegart): Lamm mit Knoblauch gespickt, über Nacht in Zitrone-Rigani-Öl mariniert, mit Kartoffeln und Käse im dicht verschlossenen Backpapier-Päckchen bei 160 °C, bis es vom Knochen fällt — die Kartoffeln garen dabei im Lammsaft und sind die heimliche Hauptattraktion. Dazu bewusst leichte, kalte Beilagen: Horiatiki-Salat und Brot.",
+  "times": {
+    "text": "Aktive Zeit ~45 Min., gesamt über Nacht + ~6 Std.",
+    "active": {
+      "typical": "PT45M",
+      "source": "45 Min."
+    },
+    "total": {
+      "min": "PT8H",
+      "max": "PT14H",
+      "source": "über Nacht"
+    }
+  },
+  "equipment": [
+    "Bräter mit Deckel",
+    "Backpapier (Doppellage)",
+    "Küchengarn",
+    "Fleischthermometer"
+  ],
+  "ingredients": [
+    {
+      "id": "rigani",
+      "name": "Rigani",
+      "store": "Online",
+      "note": "griechischer Bergoregano, online, \\~2 EL nötig + Salat"
+    },
+    {
+      "id": "graviera",
+      "name": "Graviera oder Kefalotyri",
+      "store": "Online",
+      "buy": {
+        "text": "150–200 g"
+      },
+      "note": "griech. Laden oder online; Fallback: +1 Feta-Block"
+    },
+    {
+      "id": "lammschulter",
+      "name": "Lammschulter mit Knochen",
+      "store": "Online",
+      "buy": {
+        "text": "1,8–2,2 kg"
+      },
+      "note": "vorbestellen, REWE Center anfragen — sonst Selgros: frische NZ-Keule m. Knochen \\~1,75 kg"
+    },
+    {
+      "id": "kartoffeln",
+      "name": "festkochende Kartoffeln",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1–1,2 kg"
+      }
+    },
+    {
+      "id": "knoblauch",
+      "name": "große Knolle Knoblauch",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "\\~14 Zehen: Spickstifte, 5 für die Marinade, 5 halbiert ins Päckchen"
+    },
+    {
+      "id": "zitronen",
+      "name": "Zitronen",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3"
+      },
+      "note": "2 für Marinade/Päckchen, 1 fürs Säure-Finish — Mengen-Check!"
+    },
+    {
+      "id": "zwiebeln",
+      "name": "rote Zwiebeln",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3"
+      },
+      "note": "2 Päckchen, 1 Salat"
+    },
+    {
+      "id": "tomaten",
+      "name": "Tomaten, reif",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "5"
+      },
+      "note": "2 Päckchen, 3 Salat"
+    },
+    {
+      "id": "paprika",
+      "name": "grüne Paprika",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "note": "1 Päckchen optional, 1 Salat"
+    },
+    {
+      "id": "salatgurke",
+      "name": "Salatgurke",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      }
+    },
+    {
+      "id": "rosmarin",
+      "name": "frischer Rosmarin",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2–3 Zweige"
+      }
+    },
+    {
+      "id": "feta",
+      "name": "Feta",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "200 g"
+      },
+      "note": "Block! für den Salat"
+    },
+    {
+      "id": "kalamata-oliven",
+      "name": "Kalamata-Oliven",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "16"
+      }
+    },
+    {
+      "id": "weissbrot",
+      "name": "Weißbrot / Fladenbrot",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren"
+    },
+    {
+      "id": "weisswein",
+      "name": "trockener Weißwein",
+      "store": "Aldi / REWE",
+      "group": "Getränke",
+      "buy": {
+        "text": "100–150 ml"
+      },
+      "optional": true
+    },
+    {
+      "id": "olivenoel",
+      "name": "gutes Olivenöl",
+      "store": "Vorrat",
+      "buy": {
+        "text": "150 ml"
+      },
+      "pantry": true,
+      "note": "gesamt: Marinade und Salat"
+    },
+    {
+      "id": "rotweinessig",
+      "name": "Rotweinessig",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "lorbeerblaetter",
+      "name": "Lorbeerblätter",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "pfeffer",
+      "name": "Pfeffer",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "backpapier",
+      "name": "Backpapier",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "kuechengarn",
+      "name": "Küchengarn",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Fleisch — Rangfolge (realistisch):**\n  1. **Frische Lammschulter mit Knochen** (1,8–2,2 kg) — fetter, kollagenreicher, verzeiht 4 Std. am besten. Weder bei REWE Center noch Selgros sicher gelistet → **telefonisch vorbestellen/anfragen.**\n  2. **Frische NZ-Lammkeule mit Knochen von Selgros (\\~1,75 kg)** — die einzige *sicher* verfügbare Frischware (steht im Sortiment). Im versiegelten Päckchen auch mit Keule bewährt (Stein, Akis, Kopiaste), nur weniger Sicherheitsmarge — Gabeltest ernst nehmen.\n  3. TK-Lammschulter ohne Knochen (Selgros): fürs Schmoren okay; mit Garn kompakt binden, Garzeit \\~3–3,5 Std. **Auftauzeit 1–2 Tage Kühlschrank fest einplanen.**\n- **Rigani (griechischer Bergoregano): der größte Aroma-Hebel.** Deutlich mehr ätherische Öle als Supermarkt-Oregano; REWE führt keinen echten. Online bestellen (z.B. gesundesgriechenland.de, thespiceshop.de) — hält lange, vielseitig.\n- **Käse:** Graviera oder Kefalotyri (150–200 g) — REWE Center führt das praktisch nie. Griechischer Laden in FFM (vorher anrufen) oder online mitbestellen. **Fallback fest einplanen:** Feta-Block stattdessen erst in der offenen Bräunungsphase zugeben, dann Salat-Feta reduzieren.\n- Kartoffeln **festkochend** (z.B. Annabelle) — vorwiegend festkochende zerfallen nach 4 Std.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "markdown",
+      "title": "Vortag",
+      "level": "bold",
+      "markdown": "**Vortag:** Spicken & Marinieren, 20 Min."
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Lamm-Kleftiko — im Päckchen geschmortes Lamm mit Kartoffeln (4 Portionen + Reste)",
+          "steps": [
+            {
+              "id": "spicken",
+              "label": "1",
+              "heading": "**1. Spicken (10 Min.)**",
+              "title": "Spicken",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Lammschulter (1,8–2,2 kg, oder Keule) trocken tupfen. Mit spitzem Messer \\~10 tiefe Einschnitte, in jeden einen Knoblauchstift (Stifte aus \\~4 Knoblauchzehen) + ein paar Rosmarinnadeln schieben. *Die Spickung würzt von innen — Marinade allein erreicht den Kern eines 2-kg-Stücks nicht.*",
+              "action": "Lammschulter (1,8–2,2 kg, oder Keule) trocken tupfen.",
+              "why": "Die Spickung würzt von innen — Marinade allein erreicht den Kern eines 2-kg-Stücks nicht.",
+              "ingredients": [
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "4 Knoblauchzehen",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "lammschulter",
+                  "amount": {
+                    "text": "1,8–2,2 kg",
+                    "value": 1.8,
+                    "unit": "kg",
+                    "max": 2.2
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "marinade",
+              "label": "2",
+              "heading": "**2. Marinade (10 Min.)**",
+              "title": "Marinade",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Marinade: Saft + Zeste von 1½ Zitronen, 5 gehackte Knoblauchzehen, 2 EL Rigani, \\~80 ml Olivenöl, großzügig Salz, Pfeffer. Rundum einmassieren.",
+              "action": "Marinade: Saft + Zeste von 1½ Zitronen, 5 gehackte Knoblauchzehen, 2 EL Rigani, \\~80 ml Olivenöl, großzügig Salz, Pfeffer.",
+              "ingredients": [
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "1½ Zitronen",
+                    "value": 1.5,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "5 gehackte Knoblauchzehen",
+                    "value": 5.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "rigani",
+                  "amount": {
+                    "text": "2 EL Rigani",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "80 ml Olivenöl",
+                    "value": 80.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "großzügig Salz"
+                  }
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "marinieren",
+              "label": "3",
+              "heading": "**3. Marinieren (über Nacht, passiv)**",
+              "title": "Marinieren",
+              "duration": {
+                "min": "PT8H",
+                "max": "PT14H",
+                "source": "über Nacht"
+              },
+              "attention": "passive",
+              "text": "Abgedeckt über Nacht kalt stellen.",
+              "action": "Abgedeckt über Nacht kalt stellen.",
+              "ingredients": [],
+              "timers": [
+                {
+                  "label": "Marinieren",
+                  "duration": {
+                    "min": "PT8H",
+                    "max": "PT14H"
+                  },
+                  "text": "über Nacht"
+                }
+              ]
+            },
+            {
+              "id": "paeckchen-bauen",
+              "label": "4",
+              "heading": "**4. Päckchen bauen (30 Min.)**",
+              "title": "Päckchen bauen",
+              "duration": {
+                "typical": "PT30M",
+                "source": "30 Min."
+              },
+              "text": "Ofen auf 160 °C Ober-/Unterhitze. Bräter mit Doppellage Backpapier kreuzweise auslegen (großzügig überstehen lassen). Unten: 1–1,2 kg Kartoffeln in Spalten (4–5 cm, geschält), 2 rote Zwiebeln in Spalten, 2 Tomaten in Scheiben, 5 halbierte Knoblauchzehen, optional 1 grüne Paprika in Streifen, 2 Lorbeerblätter — salzen. Fleisch mit aller Marinade darauf, Käsewürfel (150–200 g Graviera/Kefalotyri) darum verteilen, optional Weißwein (100–150 ml, max. 150 ml) angießen — **kein Wasser ins Päckchen**, es macht seinen eigenen Jus. Papier dicht einschlagen und mit Garn zubinden — *undicht = Dampf entweicht = trocken.* Deckel auf den Bräter, \\~150 ml Wasser in den Bräter UNTER das Päckchen (austretender Saft brennt sonst an).",
+              "action": "Ofen auf 160 °C Ober-/Unterhitze.",
+              "limits": [
+                "kein Wasser ins Päckchen"
+              ],
+              "temps": [
+                {
+                  "kind": "ofen",
+                  "text": "160 °C",
+                  "value": 160
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "kartoffeln",
+                  "amount": {
+                    "text": "1–1,2 kg Kartoffeln",
+                    "value": 1.0,
+                    "unit": "kg",
+                    "max": 1.2
+                  }
+                },
+                {
+                  "ref": "zwiebeln",
+                  "amount": {
+                    "text": "2 rote Zwiebeln",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "tomaten",
+                  "amount": {
+                    "text": "2 Tomaten",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "5 halbierte Knoblauchzehen",
+                    "value": 5.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "paprika",
+                  "amount": {
+                    "text": "1 grüne Paprika",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "lorbeerblaetter",
+                  "amount": {
+                    "text": "2 Lorbeerblätter",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "graviera",
+                  "amount": {
+                    "text": "150–200 g Graviera/Kefalotyri",
+                    "value": 150.0,
+                    "unit": "g",
+                    "max": 200.0
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "150 ml Wasser",
+                    "value": 150.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "weisswein",
+                  "amount": {
+                    "text": "100–150 ml",
+                    "value": 100.0,
+                    "unit": "ml",
+                    "max": 150.0
+                  }
+                }
+              ],
+              "meta": "*nach Marinieren · Ofen 160 °C*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 160
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:marinieren"
+              ]
+            },
+            {
+              "id": "garen",
+              "label": "5",
+              "heading": "**5. Garen (4 Std., passiv)**",
+              "title": "Garen",
+              "duration": {
+                "typical": "PT4H",
+                "source": "4 Std."
+              },
+              "attention": "passive",
+              "text": "Null Arbeit: 160 °C, ganze Schulter/Keule \\~4 Std. (Ziel: \\~90–95 °C Kern). Entscheidend ist der **Gabeltest**: löst sich das Fleisch nicht mühelos, wieder verschließen und +30 Min. — im Zweifel länger, nie heißer.",
+              "action": "Null Arbeit: 160 °C, ganze Schulter/Keule \\~4 Std.",
+              "timers": [
+                {
+                  "label": "Garen",
+                  "duration": {
+                    "typical": "PT4H",
+                    "estimated": true
+                  },
+                  "text": "\\~4 Std."
+                },
+                {
+                  "label": "Garen",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "30 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "160 °C",
+                  "value": 160
+                },
+                {
+                  "kind": "kern",
+                  "text": "90–95 °C",
+                  "min": 90,
+                  "max": 95
+                }
+              ],
+              "ingredients": [],
+              "meta": "*Ofen 160 °C · fertig wenn sich das Fleisch mühelos löst*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 160
+                }
+              ],
+              "endCondition": {
+                "type": "visual",
+                "text": "wenn sich das Fleisch mühelos löst"
+              }
+            },
+            {
+              "id": "braeunen",
+              "label": "6",
+              "heading": "**6. Bräunen (15–20 Min.)**",
+              "title": "Bräunen",
+              "duration": {
+                "min": "PT15M",
+                "max": "PT20M",
+                "source": "15–20 Min."
+              },
+              "text": "Päckchen aufschneiden und aufklappen, Ofen auf 210 °C, Fleisch und Kartoffeln Farbe nehmen lassen. *(Feta-Fallback: jetzt Blöcke zugeben.)*",
+              "action": "Päckchen aufschneiden und aufklappen, Ofen auf 210 °C, Fleisch und Kartoffeln Farbe nehmen lassen.",
+              "why": "Feta-Fallback: jetzt Blöcke zugeben.",
+              "temps": [
+                {
+                  "kind": "ofen",
+                  "text": "210 °C",
+                  "value": 210
+                }
+              ],
+              "ingredients": [],
+              "meta": "*Ofen 210 °C*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 210
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "ruhe-finish",
+              "label": "7",
+              "heading": "**7. Ruhe & Finish (25–30 Min.)**",
+              "title": "Ruhe & Finish",
+              "duration": {
+                "min": "PT25M",
+                "max": "PT30M",
+                "source": "25–30 Min."
+              },
+              "text": "Locker abgedeckt ruhen lassen — Pflicht, sonst läuft der Saft beim Zupfen aus. Währenddessen Salat. Vor dem Servieren Jus abschmecken: nach 4 Std. kippt die Säure ins Milde — meist braucht es einen Spritzer frische Zitrone.",
+              "action": "Locker abgedeckt ruhen lassen — Pflicht, sonst läuft der Saft beim Zupfen aus.",
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT4H",
+                    "source": "4 Std."
+                  },
+                  "text": "Vor dem Servieren Jus abschmecken: nach 4 Std."
+                }
+              ],
+              "ingredients": [],
+              "attention": "active"
+            },
+            {
+              "id": "horiatiki-salat",
+              "label": "8",
+              "heading": "**8. Horiatiki-Salat (10 Min., parallel)**",
+              "title": "Horiatiki-Salat",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "parallel": true,
+              "text": "Während der Ruhe: 3 Tomaten in Spalten direkt in der Schüssel schneiden (Saft bleibt drin), 1 Salatgurke in dicken Halbmonden, 1 rote Zwiebel in Ringen, 1 grüne Paprika, \\~16 Kalamata-Oliven. 200 g Feta als ganzer Block obenauf, Rigani darüber, gutes Olivenöl + Spritzer Rotweinessig. Kein Blattsalat, sparsam salzen (Feta + Oliven sind salzig genug). Brot dazu — tunkt Salatsaft und Lammjus.",
+              "action": "Während der Ruhe: 3 Tomaten in Spalten direkt in der Schüssel schneiden (Saft bleibt drin), 1 Salatgurke in dicken Halbmonden, 1 rote Zwiebel in Ringen, 1 grüne Paprika, \\~16 Kalamata-Oliven.",
+              "ingredients": [
+                {
+                  "ref": "tomaten",
+                  "amount": {
+                    "text": "3 Tomaten",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salatgurke",
+                  "amount": {
+                    "text": "1 Salatgurke",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "zwiebeln",
+                  "amount": {
+                    "text": "1 rote Zwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "paprika",
+                  "amount": {
+                    "text": "1 grüne Paprika",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "kalamata-oliven",
+                  "amount": {
+                    "text": "16 Kalamata-Oliven",
+                    "value": 16.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "feta",
+                  "amount": {
+                    "text": "200 g Feta",
+                    "value": 200.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nach Bräunen*",
+              "attention": "active",
+              "timers": [
+                {
+                  "label": "Horiatiki-Salat",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
+              "after": [
+                "step:braeunen"
+              ]
+            },
+            {
+              "id": "servieren",
+              "label": "9",
+              "heading": "**9. Servieren (ca. 5 Min.)**",
+              "title": "Servieren",
+              "duration": {
+                "typical": "PT5M",
+                "source": "ca. 5 Min.",
+                "estimated": true
+              },
+              "text": "Kartoffeln aus dem Jus heben, Fleisch grob zupfen/portionieren, Jus darüber.",
+              "action": "Kartoffeln aus dem Jus heben, Fleisch grob zupfen/portionieren, Jus darüber.",
+              "ingredients": [],
+              "meta": "*nach Ruhe & Finish, Horiatiki-Salat*",
+              "attention": "active",
+              "after": [
+                "step:ruhe-finish",
+                "step:horiatiki-salat"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Kochtag",
+      "level": "bold",
+      "markdown": "**Kochtag:** Ofen, Ruhe, Salat."
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan (Essen um 18:30)",
+      "schedule": {
+        "id": "zeitplan-essen-um-18-30",
+        "label": "Zeitplan (Essen um 18:30)",
+        "phases": [
+          {
+            "id": "3-tage-vorher",
+            "label": "3 Tage vorher",
+            "day": -3
+          },
+          {
+            "id": "vorabend",
+            "label": "Vorabend",
+            "day": -1,
+            "part": "evening"
+          },
+          {
+            "id": "uhr-12-45",
+            "label": "12:45 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT5H45M",
+            "clock": "12:45"
+          },
+          {
+            "id": "uhr-13-15",
+            "label": "13:15 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT5H15M",
+            "clock": "13:15"
+          },
+          {
+            "id": "uhr-17-15",
+            "label": "17:15 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT1H15M",
+            "clock": "17:15"
+          },
+          {
+            "id": "uhr-17-35",
+            "label": "17:35 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT55M",
+            "clock": "17:35"
+          },
+          {
+            "id": "uhr-18-05",
+            "label": "18:05 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT25M",
+            "clock": "18:05"
+          },
+          {
+            "id": "uhr-18-30",
+            "label": "18:30 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "PT0M",
+            "clock": "18:30"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "3-tage-vorher",
+            "text": "Fleisch vorbestellen; Rigani/Käse online, falls noch nicht da"
+          },
+          {
+            "phase": "vorabend",
+            "text": "Spicken und marinieren (TK-Fleisch: schon 1–2 Tage vorher in den Kühlschrank)",
+            "steps": [
+              "marinieren",
+              "spicken"
+            ]
+          },
+          {
+            "phase": "vorabend",
+            "text": "Marinade",
+            "steps": [
+              "marinade"
+            ]
+          },
+          {
+            "phase": "vorabend",
+            "text": "Marinieren",
+            "steps": [
+              "marinieren"
+            ]
+          },
+          {
+            "phase": "uhr-12-45",
+            "text": "Ofen 160 °C, Päckchen bauen",
+            "steps": [
+              "paeckchen-bauen"
+            ]
+          },
+          {
+            "phase": "uhr-13-15",
+            "text": "Garen: Ofen — null Arbeit (bis 17:15)",
+            "steps": [
+              "garen"
+            ]
+          },
+          {
+            "phase": "uhr-17-15",
+            "text": "Gabeltest; Bräunen: offen bei 210 °C",
+            "steps": [
+              "braeunen"
+            ]
+          },
+          {
+            "phase": "uhr-17-35",
+            "text": "Ruhe & Finish; Horiatiki-Salat",
+            "steps": [
+              "horiatiki-salat",
+              "ruhe-finish"
+            ]
+          },
+          {
+            "phase": "uhr-18-05",
+            "text": "Jus abschmecken (Zitrone!), zupfen"
+          },
+          {
+            "phase": "uhr-18-30",
+            "text": "Servieren",
+            "steps": [
+              "servieren"
+            ]
+          }
+        ],
+        "anchorOverride": {
+          "time": "18:30"
+        }
+      }
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Hinweis",
+      "level": 2,
+      "markdown": "Nichts anzupassen — keine Schärfe im Gericht, und die Oliven im Salat sind ein garantierter Treffer. Nur die rohen Zwiebelringe aus der Kinderportion des Salats lassen. Weiches Zupffleisch + Jus-Kartoffeln sind ideal für 3-Jährige.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Reste",
+      "level": 2,
+      "markdown": "Aus \\~2 kg mit Knochen bleiben realistisch 1–2 Portionen übrig: klassisch im warmen Fladenbrot mit etwas Salat (Rick-Stein-Empfehlung), oder mit den restlichen Jus-Kartoffeln aufgebraten."
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Schulter vor Keule:** mehr Fett/Kollagen → seidig statt faserig bei 4 Std.; Tranchierbarkeit (das Hauptargument für Keule) ist irrelevant, weil gezupft wird. Zypriotische Tradition (Theo Michaels: „not leg\") bestätigt das. Die Selgros-Frischkeule bleibt als sicherste Beschaffung ein gleichwertiger Plan B — viele griechische Referenzen (Akis, Stein, Argiro) nutzen Keule.\n- **Backpapier-Päckchen im Bräter statt Tontopf:** dicht verschlossen ist dicht verschlossen — Papier konzentriert den Jus und verhindert Alu-Kontakt; kein belegter Tontopf-Vorteil.\n- **160 °C/4 Std. konstant, kein Anbraten:** keine Referenzquelle brät an; niedrig und lang ist die sichere Route zum Kollagen-Schmelz. Ofto Kleftiko (Zypern) steht als Technik sogar auf der UNESCO-Kulturerbe-Liste.\n- **Käse im Päckchen (Graviera/Kefalotyri) + Feta nur im Salat** — beides authentisch belegt; doppelt Feta wäre Salz-Overload. Kein Senf/keine Tomate-Overload: puristische griechische Linie (Akis/Argiro) statt Diaspora-Versionen.\n- Referenzen: [Theo Michaels — Kleftiko (zypriotisch)](https://www.theocooks.com/kleftiko-slow-cooked-lamb-greek-style/) · [My Greek Dish — Lamb Kleftiko](https://www.mygreekdish.com/recipe/lamb-kleftiko-recipe-greek-lamb-cooked-in-parchment-paper/) · [Argiro Barbarigou — Arni Kleftiko](https://www.argiro.gr/recipe/arni-kleftiko-sti-ladokolla/) · [Real Greek Recipes](https://realgreekrecipes.com/kleftiko/) · [Rick Stein — Lamb Kleftiko](https://thehappyfoodie.co.uk/recipes/lamb-kleftiko/) · [Kopiaste — zypriotisches Ofto](https://www.kopiaste.org/2007/12/kleftiko/) · [My Greek Dish — Horiatiki](https://www.mygreekdish.com/recipe/greek-feta-salad/) · Bezug: [Selgros NZ-Keule frisch](https://www.selgros.de/markt-sortiment/product/neuseelaendische-lammkeule-frisch-ca175g-615469) · [Rigani-Bezug](https://www.gesundesgriechenland.de/products/wilder-oregano-vom-berg-pangeo)",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T18:44:11Z",
+    "sourceHash": "43be339ef609d79b",
+    "quantities": [
+      {
+        "ingredient": "rigani",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 EL Rigani"
+        }
+      },
+      {
+        "ingredient": "graviera",
+        "total": {
+          "text": "150–200 g",
+          "value": 150.0,
+          "max": 200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "150–200 g Graviera/Kefalotyri"
+        }
+      },
+      {
+        "ingredient": "lammschulter",
+        "total": {
+          "text": "1800–2200 g",
+          "value": 1800.0,
+          "max": 2200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1,8–2,2 kg"
+        }
+      },
+      {
+        "ingredient": "kartoffeln",
+        "total": {
+          "text": "1000–1200 g",
+          "value": 1000.0,
+          "max": 1200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1–1,2 kg Kartoffeln"
+        }
+      },
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": "14",
+          "value": 14.0,
+          "max": 14.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "4 Knoblauchzehen + 5 gehackte Knoblauchzehen + 5 halbierte Knoblauchzehen"
+        }
+      },
+      {
+        "ingredient": "zitronen",
+        "total": {
+          "text": "1½",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1½ Zitronen"
+        }
+      },
+      {
+        "ingredient": "zwiebeln",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 rote Zwiebeln + 1 rote Zwiebel"
+        }
+      },
+      {
+        "ingredient": "tomaten",
+        "total": {
+          "text": "5",
+          "value": 5.0,
+          "max": 5.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 Tomaten + 3 Tomaten"
+        }
+      },
+      {
+        "ingredient": "paprika",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 grüne Paprika + 1 grüne Paprika"
+        }
+      },
+      {
+        "ingredient": "salatgurke",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Salatgurke"
+        }
+      },
+      {
+        "ingredient": "rosmarin",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "feta",
+        "total": {
+          "text": "200 g",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "200 g Feta"
+        }
+      },
+      {
+        "ingredient": "kalamata-oliven",
+        "total": {
+          "text": "16",
+          "value": 16.0,
+          "max": 16.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "16 Kalamata-Oliven"
+        }
+      },
+      {
+        "ingredient": "weissbrot",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "weisswein",
+        "total": {
+          "text": "100–150 ml",
+          "value": 100.0,
+          "max": 150.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "100–150 ml"
+        }
+      },
+      {
+        "ingredient": "olivenoel",
+        "total": {
+          "text": "80 ml",
+          "value": 80.0,
+          "max": 80.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "80 ml Olivenöl"
+        }
+      },
+      {
+        "ingredient": "rotweinessig",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "lorbeerblaetter",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 Lorbeerblätter"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": ""
+        },
+        "perTask": {},
+        "unitless": [
+          "großzügig Salz"
+        ]
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "backpapier",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "kuechengarn",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "150 ml",
+          "value": 150.0,
+          "max": 150.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "150 ml Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Online",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "rigani",
+            "name": "Rigani",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "note": "griechischer Bergoregano, online, \\~2 EL nötig + Salat"
+          },
+          {
+            "ingredient": "graviera",
+            "name": "Graviera oder Kefalotyri",
+            "need": {
+              "text": "150–200 g",
+              "value": 150.0,
+              "max": 200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "150–200 g",
+            "inStock": false,
+            "buy": {
+              "text": "150–200 g"
+            },
+            "note": "griech. Laden oder online; Fallback: +1 Feta-Block"
+          },
+          {
+            "ingredient": "lammschulter",
+            "name": "Lammschulter mit Knochen",
+            "need": {
+              "text": "1800–2200 g",
+              "value": 1800.0,
+              "max": 2200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "1800–2200 g",
+            "inStock": false,
+            "buy": {
+              "text": "1,8–2,2 kg"
+            },
+            "note": "vorbestellen, REWE Center anfragen — sonst Selgros: frische NZ-Keule m. Knochen \\~1,75 kg"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "kartoffeln",
+            "name": "festkochende Kartoffeln",
+            "need": {
+              "text": "1000–1200 g",
+              "value": 1000.0,
+              "max": 1200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "1000–1200 g",
+            "inStock": false,
+            "buy": {
+              "text": "1–1,2 kg"
+            }
+          },
+          {
+            "ingredient": "knoblauch",
+            "name": "große Knolle Knoblauch",
+            "need": {
+              "text": "14",
+              "value": 14.0,
+              "max": 14.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "14",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "\\~14 Zehen: Spickstifte, 5 für die Marinade, 5 halbiert ins Päckchen"
+          },
+          {
+            "ingredient": "zitronen",
+            "name": "Zitronen",
+            "need": {
+              "text": "1½",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1½",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            },
+            "note": "2 für Marinade/Päckchen, 1 fürs Säure-Finish — Mengen-Check!"
+          },
+          {
+            "ingredient": "zwiebeln",
+            "name": "rote Zwiebeln",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            },
+            "note": "2 Päckchen, 1 Salat"
+          },
+          {
+            "ingredient": "tomaten",
+            "name": "Tomaten, reif",
+            "need": {
+              "text": "5",
+              "value": 5.0,
+              "max": 5.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "5",
+            "inStock": false,
+            "buy": {
+              "text": "5"
+            },
+            "note": "2 Päckchen, 3 Salat"
+          },
+          {
+            "ingredient": "paprika",
+            "name": "grüne Paprika",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "1 Päckchen optional, 1 Salat"
+          },
+          {
+            "ingredient": "salatgurke",
+            "name": "Salatgurke",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            }
+          },
+          {
+            "ingredient": "rosmarin",
+            "name": "frischer Rosmarin",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "2–3 Zweige"
+            }
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "feta",
+            "name": "Feta",
+            "need": {
+              "text": "200 g",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "200 g",
+            "inStock": false,
+            "buy": {
+              "text": "200 g"
+            },
+            "note": "Block! für den Salat"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "kalamata-oliven",
+            "name": "Kalamata-Oliven",
+            "need": {
+              "text": "16",
+              "value": 16.0,
+              "max": 16.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "16",
+            "inStock": false,
+            "buy": {
+              "text": "16"
+            }
+          },
+          {
+            "ingredient": "weissbrot",
+            "name": "Weißbrot / Fladenbrot",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Getränke",
+        "items": [
+          {
+            "ingredient": "weisswein",
+            "name": "trockener Weißwein",
+            "need": {
+              "text": "100–150 ml",
+              "value": 100.0,
+              "max": 150.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "100–150 ml",
+            "inStock": false,
+            "buy": {
+              "text": "100–150 ml"
+            },
+            "optional": true
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "olivenoel",
+            "name": "gutes Olivenöl",
+            "need": {
+              "text": "80 ml",
+              "value": 80.0,
+              "max": 80.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "80 ml",
+            "inStock": false,
+            "buy": {
+              "text": "150 ml"
+            },
+            "pantry": true,
+            "note": "gesamt: Marinade und Salat"
+          },
+          {
+            "ingredient": "rotweinessig",
+            "name": "Rotweinessig",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "lorbeerblaetter",
+            "name": "Lorbeerblätter",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Pfeffer",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "backpapier",
+            "name": "Backpapier",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "kuechengarn",
+            "name": "Küchengarn",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "150 ml",
+              "value": 150.0,
+              "max": 150.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "150 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}

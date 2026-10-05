@@ -63,6 +63,13 @@
   "cooked": true
  },
  {
+  "path": "../gerichte/lamm-kleftiko.json",
+  "title": "Lamm-Kleftiko — im Päckchen geschmortes Lamm mit Kartoffeln (4 Portionen + Reste)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": false
+ },
+ {
   "path": "../gerichte/oktopus-geschmort.json",
   "title": "Geschmorter Oktopus, griechische Art (4 Portionen)",
   "group": "gerichte",
