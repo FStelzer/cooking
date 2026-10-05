@@ -105,6 +105,13 @@
   "cooked": true
  },
  {
+  "path": "../gerichte/ramen-shoyu-chintan.json",
+  "title": "Shoyu-Ramen mit Hähnchen-Chintan-Brühe (3 Portionen)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": true
+ },
+ {
   "path": "../gerichte/shawarma-libanesisch.json",
   "title": "Hähnchen-Shawarma, libanesisch — mit Toum, Tabbouleh und Batata harra (4 Portionen)",
   "group": "gerichte",

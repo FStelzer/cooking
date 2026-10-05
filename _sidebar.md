@@ -21,7 +21,7 @@
   - [✅ Geschmorter Oktopus, griechische Art (4 Portionen)](/gerichte/oktopus-geschmort.md)
   - [✅ Paneer-Projekt — selbstgemachter Paneer mit Matar & Palak (4 Portionen, 2 Saucen)](/gerichte/paneer-projekt.md)
   - [✅ Sapporo-Style Miso-Tonkotsu-Ramen — Menü (6 Schüsseln)](/gerichte/ramen-miso-tonkotsu.md)
-  - [✅ Shoyu-Ramen mit Hähnchen-Chintan-Brühe](/gerichte/ramen-shoyu-chintan.md)
+  - [✅ Shoyu-Ramen mit Hähnchen-Chintan-Brühe (3 Portionen)](/gerichte/ramen-shoyu-chintan.md)
   - [Hähnchen-Shawarma, libanesisch — mit Toum, Tabbouleh und Batata harra (4 Portionen)](/gerichte/shawarma-libanesisch.md)
   - [Tafelspitz, sommerlich — mit Frittatensuppe und kalten Saucen (4 Portionen + Reste)](/gerichte/tafelspitz.md)
   - [✅ Thịt kho trứng — vietnamesisches Karamell-Schweinefleisch mit Eiern (4 Portionen)](/gerichte/thit-kho-trung.md)

@@ -312,7 +312,7 @@ Hand editieren, Learnings gehören in die Rezeptdatei.
   kochen (milde Kinder-Abzweigung vor dem Schärfen abnehmen), gern auch mit
   Hähnchen oder Lamm statt Paneer.
 
-- ✅ **Shoyu-Ramen mit Hähnchen-Chintan-Brühe** (siehe `gerichte/ramen-shoyu-chintan.md`)
+- ✅ **Shoyu-Ramen mit Hähnchen-Chintan-Brühe (3 Portionen)** (siehe `gerichte/ramen-shoyu-chintan.md`)
   **Gekocht (vor 07/2026, erstes großes Repo-Projekt).** Erfolgreich umgesetzt — Familie zufrieden, Sohn (3) hat mitgegessen. Suppenhuhn + Flügel funktioniert sehr gut als Karkassen-Ersatz. Fürs nächste Mal: Pilznote reduzieren (weniger Shiitake, keine im Tare) und Enoki meiden (Textur) — stattdessen Shimeji oder Champignons.
 
 - ✅ **Thịt kho trứng — vietnamesisches Karamell-Schweinefleisch mit Eiern (4 Portionen)** (siehe `gerichte/thit-kho-trung.md`)

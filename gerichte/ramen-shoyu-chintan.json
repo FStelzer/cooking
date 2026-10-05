@@ -1,0 +1,2318 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/ramen-shoyu-chintan",
+  "kind": "dish",
+  "title": "Shoyu-Ramen mit Hähnchen-Chintan-Brühe (3 Portionen)",
+  "status": "done",
+  "yields": {
+    "text": "3 Portionen",
+    "value": 3.0,
+    "unit": "Portionen"
+  },
+  "intro": "*Aktive Zeit \\~2,5h, gesamt \\~7h (inkl. Brühe simmern). Schwierigkeit: Anspruchsvoll, aber machbar an einem Tag. Equipment: 6L-Topf, feines Sieb + Mulltuch, 2 kleine Töpfe, Pfanne, Gefrierbeutel, Bunsenbrenner (optional).*\n\n**Portionen:** 3 Personen (2 Erwachsene + Kleinkind)",
+  "times": {
+    "text": "Aktive Zeit ~2,5h, gesamt ~7h",
+    "active": {
+      "typical": "PT2H30M",
+      "source": "2,5h"
+    },
+    "total": {
+      "typical": "PT7H",
+      "source": "7h"
+    }
+  },
+  "equipment": [
+    "6L-Topf",
+    "feines Sieb + Mulltuch",
+    "2 kleine Töpfe",
+    "Pfanne",
+    "Gefrierbeutel",
+    "Bunsenbrenner (optional)"
+  ],
+  "ingredients": [
+    {
+      "id": "ramen-nudeln",
+      "name": "frische Ramen-Nudeln",
+      "store": "Asialaden",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "400–500 g"
+      },
+      "note": "— ODER japanische Trocken-Ramen mit Kansui; Hakubaku organic funktioniert sehr gut"
+    },
+    {
+      "id": "kombu",
+      "name": "Kombu",
+      "store": "Asialaden",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "30–50 g"
+      }
+    },
+    {
+      "id": "katsuobushi",
+      "name": "Katsuobushi",
+      "store": "Asialaden",
+      "group": "Trockenwaren",
+      "note": "Bonitoflocken"
+    },
+    {
+      "id": "shiitake",
+      "name": "Getrocknete Shiitake",
+      "store": "Asialaden",
+      "group": "Trockenwaren",
+      "note": "**NUR 1-2 STÜCK BENÖTIGT**, siehe Learnings"
+    },
+    {
+      "id": "nori",
+      "name": "Nori",
+      "store": "Asialaden",
+      "group": "Trockenwaren",
+      "note": "Blätter"
+    },
+    {
+      "id": "menma",
+      "name": "Menma",
+      "store": "Asialaden",
+      "group": "Trockenwaren",
+      "note": "Bambussprossen im Glas; empfehlenswert"
+    },
+    {
+      "id": "mirin",
+      "name": "Mirin",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "400 ml"
+      },
+      "note": "mind."
+    },
+    {
+      "id": "sake",
+      "name": "Sake",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "400–500 ml"
+      },
+      "note": "Kochsake/Ryorishu, mind."
+    },
+    {
+      "id": "sojasauce",
+      "name": "japanische Sojasauce",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "500 ml"
+      },
+      "note": "Kikkoman/Yamasa, mind."
+    },
+    {
+      "id": "fruehlingszwiebeln",
+      "name": "Frühlingszwiebeln",
+      "store": "Asialaden",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      },
+      "note": "frisch, empfehlenswert — Backup: REWE"
+    },
+    {
+      "id": "shimeji-pilze",
+      "name": "Shimeji-Pilze",
+      "store": "Asialaden",
+      "group": "Obst & Gemüse",
+      "optional": true,
+      "note": "besser als Enoki, siehe Learnings"
+    },
+    {
+      "id": "narutomaki",
+      "name": "Narutomaki/Kamaboko",
+      "store": "Asialaden",
+      "group": "Tiefkühl",
+      "optional": true,
+      "note": "TK Fischrolle"
+    },
+    {
+      "id": "suppenhuhn",
+      "name": "großes Suppenhuhn",
+      "store": "REWE Center",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "1"
+      },
+      "note": "\\~1,1-1,5kg"
+    },
+    {
+      "id": "haehnchenfluegel",
+      "name": "Hähnchenflügel",
+      "store": "REWE Center",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "800 g"
+      },
+      "note": "Alternative zu Karkassen falls nicht verfügbar"
+    },
+    {
+      "id": "schweinebauch",
+      "name": "Schweinebauch ohne Knochen, am Stück",
+      "store": "REWE Center",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "500–700 g"
+      },
+      "note": "kein Bacon!"
+    },
+    {
+      "id": "eier",
+      "name": "Eier",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "6"
+      },
+      "note": "M, frisch"
+    },
+    {
+      "id": "zwiebel",
+      "name": "große Zwiebel",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      }
+    },
+    {
+      "id": "lauch",
+      "name": "Lauch",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Stange"
+      }
+    },
+    {
+      "id": "knoblauch",
+      "name": "Knoblauch",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Knolle"
+      },
+      "note": "+ extra für Chiyu"
+    },
+    {
+      "id": "ingwer",
+      "name": "cm Ingwer",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "5–7"
+      }
+    },
+    {
+      "id": "moehren",
+      "name": "Möhren",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      }
+    },
+    {
+      "id": "zucker",
+      "name": "Zucker",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "1 EL Tare, 3 EL Chashu"
+    },
+    {
+      "id": "butter",
+      "name": "Butter oder Öl",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Pilze"
+    },
+    {
+      "id": "kuechengarn",
+      "name": "Küchengarn",
+      "store": "Vorrat",
+      "optional": true,
+      "pantry": true,
+      "note": "Chashu rollen"
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Stil-Entscheidung",
+      "level": 2,
+      "markdown": "**Chintan** (klare Brühe) statt Paitan/Tonkotsu, weil:\n- Funktioniert in 6L-Topf (Paitan braucht mehr Volumen + rolling boil)\n- Reichhaltigkeit kommt über Tare + Aroma-Öl, nicht über Emulgierung\n- Kindgeeignet, nicht zu schwer\n- Anfängerfreundlicher",
+      "tags": [
+        "stil"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Komponenten",
+      "level": 2,
+      "markdown": "1. Brühe (Hähnchen-Chintan)\n2. Shoyu-Tare (Würzbasis)\n3. Chiyu (goldenes Aroma-Öl)\n4. Chashu (geschmorter Schweinebauch)\n5. Ajitsuke Tamago (marinierte Eier in Chashu-Marinade)\n6. Toppings + Nudeln\n\n---"
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "bruehe-haehnchen-chintan",
+          "name": "Brühe — Hähnchen-Chintan",
+          "steps": [
+            {
+              "id": "blanchieren",
+              "label": "1",
+              "heading": "**1. Blanchieren (15 Min.)**",
+              "title": "Blanchieren",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "Kritisch für klare Brühe: Suppenhuhn (\\~1,1kg) und 800g Hähnchenflügel in den Topf, kaltes Wasser drüber, aufkochen, 5-10 Min stark kochen. Schaum komplett abschütten, alles unter kaltem Wasser abspülen, Topf auswaschen.",
+              "action": "Kritisch für klare Brühe: Suppenhuhn (\\~1,1kg) und 800g Hähnchenflügel in den Topf, kaltes Wasser drüber, aufkochen, 5-10 Min stark kochen.",
+              "timers": [
+                {
+                  "label": "Blanchieren",
+                  "duration": {
+                    "min": "PT5M",
+                    "max": "PT10M"
+                  },
+                  "text": "5-10 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "haehnchenfluegel",
+                  "amount": {
+                    "text": "800g Hähnchenflügel",
+                    "value": 800.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "suppenhuhn",
+                  "amount": {
+                    "text": "1,1kg",
+                    "value": 1.1,
+                    "unit": "kg"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "hauptkochung",
+              "label": "2",
+              "heading": "**2. Hauptkochung (ca. 15 Min.)**",
+              "title": "Hauptkochung",
+              "duration": {
+                "typical": "PT15M",
+                "source": "ca. 15 Min.",
+                "estimated": true
+              },
+              "text": "Hähnchen zurück in den sauberen Topf, mit 3-3,5L kaltem Wasser. Aufkochen, dann auf **niedrige Hitze** — sanftes Simmern, fast nicht blubbern. Sichtbare Bewegung, aber keine sprudelnden Blasen.",
+              "action": "Hähnchen zurück in den sauberen Topf, mit 3-3,5L kaltem Wasser.",
+              "limits": [
+                "niedrige Hitze"
+              ],
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "3-3,5L kaltem Wasser",
+                    "value": 3.0,
+                    "unit": "l",
+                    "max": 3.5
+                  }
+                }
+              ],
+              "meta": "*Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Hauptkochung",
+                  "duration": {
+                    "typical": "PT15M"
+                  },
+                  "text": "ca. 15 Min."
+                }
+              ]
+            },
+            {
+              "id": "simmern",
+              "label": "3",
+              "heading": "**3. Simmern (4 Std., passiv)**",
+              "title": "Simmern",
+              "duration": {
+                "typical": "PT4H",
+                "source": "4 Std."
+              },
+              "attention": "passive",
+              "text": "Schaum abschöpfen: Erste 1-2h alle 15-20 Min. **Gesamtdauer: 4 Stunden.**",
+              "action": "Schaum abschöpfen: Erste 1-2h alle 15-20 Min.",
+              "limits": [
+                "Gesamtdauer: 4 Stunden."
+              ],
+              "timers": [
+                {
+                  "label": "Simmern",
+                  "duration": {
+                    "min": "PT1H",
+                    "max": "PT2H"
+                  },
+                  "text": "1-2h"
+                },
+                {
+                  "label": "Simmern",
+                  "duration": {
+                    "typical": "PT4M"
+                  },
+                  "text": "4 Stunden"
+                }
+              ],
+              "ingredients": [],
+              "meta": "*Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ]
+            },
+            {
+              "id": "aromaten-zugeben",
+              "label": "4",
+              "heading": "**4. Aromaten zugeben (5 Min.)**",
+              "title": "Aromaten zugeben",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Nach 2,5h 1 halbierte Zwiebel, 1 Stange Lauch, 1 halbierte Knoblauchknolle, 5cm Ingwer, 2 Möhren und 1-2 getrocknete Shiitake dazu.",
+              "action": "Nach 2,5h 1 halbierte Zwiebel, 1 Stange Lauch, 1 halbierte Knoblauchknolle, 5cm Ingwer, 2 Möhren und 1-2 getrocknete Shiitake dazu.",
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT2H30M",
+                    "source": "2,5h"
+                  },
+                  "text": "Nach 2,5h 1 halbierte Zwiebel, 1 Stange Lauch, 1 halbierte Knoblauchknolle, 5cm Ingwer, 2 Möhren und 1-2 getrocknete Shiitake dazu."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "zwiebel",
+                  "amount": {
+                    "text": "1 halbierte Zwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "lauch",
+                  "amount": {
+                    "text": "1 Stange Lauch",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "1 halbierte Knoblauchknolle",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "ingwer",
+                  "amount": {
+                    "text": "5cm Ingwer",
+                    "value": 5.0,
+                    "unit": "cm"
+                  }
+                },
+                {
+                  "ref": "moehren",
+                  "amount": {
+                    "text": "2 Möhren",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "shiitake",
+                  "amount": {
+                    "text": "1-2 getrocknete Shiitake",
+                    "value": 1.0,
+                    "unit": "Stück",
+                    "max": 2.0
+                  }
+                }
+              ],
+              "meta": "*letzte 1,5 Std. von Simmern*",
+              "attention": "active",
+              "start": {
+                "ref": "step:simmern:end",
+                "offset": {
+                  "min": "-PT1H30M",
+                  "max": "-PT1H30M",
+                  "source": "letzte 1,5 Std. von Simmern"
+                }
+              }
+            },
+            {
+              "id": "fett-abschoepfen",
+              "label": "5",
+              "heading": "**5. Fett abschöpfen (5 Min.)**",
+              "title": "Fett abschöpfen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Für Chiyu: Nach \\~3h \\~100ml klares Hühnerfett abschöpfen (Bedarf fürs Chiyu), beiseite.",
+              "action": "Für Chiyu: Nach \\~3h \\~100ml klares Hühnerfett abschöpfen (Bedarf fürs Chiyu), beiseite.",
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT3H",
+                    "source": "\\~3h",
+                    "estimated": true
+                  },
+                  "text": "Für Chiyu: Nach \\~3h \\~100ml klares Hühnerfett abschöpfen (Bedarf fürs Chiyu), beiseite."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*letzte 1 Std. von Simmern*",
+              "attention": "active",
+              "start": {
+                "ref": "step:simmern:end",
+                "offset": {
+                  "min": "-PT1H",
+                  "max": "-PT1H",
+                  "source": "letzte 1 Std. von Simmern"
+                }
+              }
+            },
+            {
+              "id": "kombu",
+              "label": "6",
+              "heading": "**6. Kombu (ca. 2 Min.)**",
+              "title": "Kombu",
+              "duration": {
+                "typical": "PT2M",
+                "source": "ca. 2 Min.",
+                "estimated": true
+              },
+              "text": "1 Stück \\~10x10cm letzte 30 Min zugeben. Bei zerkleinertem Kombu (\\~10-15g) nur 15-20 Min.",
+              "action": "1 Stück \\~10x10cm letzte 30 Min zugeben.",
+              "timers": [
+                {
+                  "label": "Kombu",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "30 Min"
+                },
+                {
+                  "label": "Kombu",
+                  "duration": {
+                    "min": "PT15M",
+                    "max": "PT20M"
+                  },
+                  "text": "15-20 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "kombu",
+                  "amount": {
+                    "text": "10-15g",
+                    "value": 10.0,
+                    "unit": "g",
+                    "max": 15.0
+                  }
+                }
+              ],
+              "meta": "*letzte 30 Min. von Simmern*",
+              "attention": "active",
+              "start": {
+                "ref": "step:simmern:end",
+                "offset": {
+                  "min": "-PT30M",
+                  "max": "-PT30M",
+                  "source": "letzte 30 Min. von Simmern"
+                }
+              }
+            },
+            {
+              "id": "abseihen",
+              "label": "7",
+              "heading": "**7. Abseihen (15 Min.)**",
+              "title": "Abseihen",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "Durch feines Sieb + Mulltuch abseihen. Ergebnis: \\~1,8-2L klare Brühe.",
+              "action": "Durch feines Sieb + Mulltuch abseihen.",
+              "ingredients": [],
+              "meta": "*nach Simmern*",
+              "attention": "active",
+              "after": [
+                "step:simmern"
+              ]
+            }
+          ],
+          "heading": "**Brühe — Hähnchen-Chintan (am Tag, \\~4h):**",
+          "phaseHint": "am Tag",
+          "produces": [
+            {
+              "id": "bruehe-haehnchen-chintan",
+              "name": "Brühe — Hähnchen-Chintan"
+            }
+          ]
+        },
+        {
+          "id": "shoyu-tare",
+          "name": "Shoyu-Tare",
+          "steps": [
+            {
+              "id": "tare",
+              "label": "8",
+              "heading": "**8. Tare (20 Min.)**",
+              "title": "Tare",
+              "duration": {
+                "typical": "PT20M",
+                "source": "20 Min."
+              },
+              "text": "150ml Sojasauce, 50ml Mirin, 50ml Sake, 1 EL Zucker und das Kombu-Stück (\\~5x5cm) in kleinen Topf, langsam auf \\~70-80°C — **nicht kochen**. Hitze aus, 5g Katsuobushi rein, 10 Min ziehen. Abseihen.",
+              "action": "150ml Sojasauce, 50ml Mirin, 50ml Sake, 1 EL Zucker und das Kombu-Stück (\\~5x5cm) in kleinen Topf, langsam auf \\~70-80°C — **nicht kochen**.",
+              "limits": [
+                "nicht kochen"
+              ],
+              "timers": [
+                {
+                  "label": "Tare",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min"
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "70-80°C",
+                  "min": 70,
+                  "max": 80
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "sojasauce",
+                  "amount": {
+                    "text": "150ml Sojasauce",
+                    "value": 150.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "mirin",
+                  "amount": {
+                    "text": "50ml Mirin",
+                    "value": 50.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "sake",
+                  "amount": {
+                    "text": "50ml Sake",
+                    "value": 50.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "1 EL Zucker",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "katsuobushi",
+                  "amount": {
+                    "text": "5g Katsuobushi",
+                    "value": 5.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            }
+          ],
+          "heading": "**Shoyu-Tare (am Tag, hält mehrere Tage, Kühlschrank):**",
+          "phaseHint": "am Tag",
+          "produces": [
+            {
+              "id": "shoyu-tare",
+              "name": "Shoyu-Tare",
+              "storage": {
+                "place": "fridge"
+              }
+            }
+          ]
+        },
+        {
+          "id": "chiyu-goldenes-aroma-oel",
+          "name": "Chiyu — goldenes Aroma-Öl",
+          "steps": [
+            {
+              "id": "chiyu",
+              "label": "9",
+              "heading": "**9. Chiyu (15 Min.)**",
+              "title": "Chiyu",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "\\~100ml Hühnerfett, 4-5 fein gehackte Knoblauchzehen und die Frühlingszwiebel-Enden in kleinen Topf, mittlere Hitze, 10-15 Min bis goldbraun (NICHT schwarz!). Abseihen.",
+              "action": "\\~100ml Hühnerfett, 4-5 fein gehackte Knoblauchzehen und die Frühlingszwiebel-Enden in kleinen Topf, mittlere Hitze, 10-15 Min bis goldbraun (NICHT schwarz!).",
+              "timers": [
+                {
+                  "label": "Chiyu",
+                  "duration": {
+                    "min": "PT10M",
+                    "max": "PT15M"
+                  },
+                  "text": "10-15 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "4-5 fein gehackte Knoblauchzehen",
+                    "value": 4.0,
+                    "unit": "Stück",
+                    "max": 5.0
+                  }
+                }
+              ],
+              "meta": "*nach Fett abschöpfen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:fett-abschoepfen"
+              ]
+            }
+          ],
+          "heading": "**Chiyu — goldenes Aroma-Öl (am Tag):**",
+          "phaseHint": "am Tag",
+          "produces": [
+            {
+              "id": "chiyu-goldenes-aroma-oel",
+              "name": "Chiyu — goldenes Aroma-Öl"
+            }
+          ]
+        },
+        {
+          "id": "chashu",
+          "name": "Chashu",
+          "steps": [
+            {
+              "id": "rollen",
+              "label": "10",
+              "heading": "**10. Rollen (5 Min.)**",
+              "title": "Rollen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Optional rollen mit Küchengarn, oder am Stück lassen.",
+              "action": "Optional rollen mit Küchengarn, oder am Stück lassen.",
+              "ingredients": [],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "anbraten",
+              "label": "11",
+              "heading": "**11. Anbraten (5 Min.)**",
+              "title": "Anbraten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "500-700g Schweinebauch: Pfanne ohne Öl, von allen Seiten braun (\\~5 Min).",
+              "action": "500-700g Schweinebauch: Pfanne ohne Öl, von allen Seiten braun (\\~5 Min).",
+              "timers": [
+                {
+                  "label": "Anbraten",
+                  "duration": {
+                    "typical": "PT5M",
+                    "estimated": true
+                  },
+                  "text": "\\~5 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "schweinebauch",
+                  "amount": {
+                    "text": "500-700g Schweinebauch",
+                    "value": 500.0,
+                    "unit": "g",
+                    "max": 700.0
+                  }
+                }
+              ],
+              "meta": "*Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "schmoren",
+              "label": "12",
+              "heading": "**12. Schmoren (1,5–2 Std., passiv)**",
+              "title": "Schmoren",
+              "duration": {
+                "min": "PT1H30M",
+                "max": "PT2H",
+                "source": "1,5–2 Std."
+              },
+              "attention": "passive",
+              "text": "Marinade (100ml Sojasauce, 50ml Sake, 50ml Mirin, 300ml Wasser, 3 EL Zucker, 4 Knoblauchzehen, 4cm Ingwer, 1 Frühlingszwiebel) in kleinen Topf (gerade passend), aufkochen, Fleisch rein, Hitze runter, **Deckel drauf**, 1,5-2h sanft simmern. Alle 30 Min wenden.",
+              "action": "Marinade (100ml Sojasauce, 50ml Sake, 50ml Mirin, 300ml Wasser, 3 EL Zucker, 4 Knoblauchzehen, 4cm Ingwer, 1 Frühlingszwiebel) in kleinen Topf (gerade passend), aufkochen, Fleisch rein, Hitze runter, **Deckel drauf**, 1,5-2h sanft simmern.",
+              "limits": [
+                "Deckel drauf"
+              ],
+              "timers": [
+                {
+                  "label": "Schmoren",
+                  "duration": {
+                    "min": "PT1H30M",
+                    "max": "PT2H"
+                  },
+                  "text": "1,5-2h"
+                },
+                {
+                  "label": "Schmoren",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "30 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "sojasauce",
+                  "amount": {
+                    "text": "100ml Sojasauce",
+                    "value": 100.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "sake",
+                  "amount": {
+                    "text": "50ml Sake",
+                    "value": 50.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "mirin",
+                  "amount": {
+                    "text": "50ml Mirin",
+                    "value": 50.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "300ml Wasser",
+                    "value": 300.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "3 EL Zucker",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "4 Knoblauchzehen",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "ingwer",
+                  "amount": {
+                    "text": "4cm Ingwer",
+                    "value": 4.0,
+                    "unit": "cm"
+                  }
+                },
+                {
+                  "ref": "fruehlingszwiebeln",
+                  "amount": {
+                    "text": "1 Frühlingszwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ]
+            },
+            {
+              "id": "abkuehlen",
+              "label": "13",
+              "heading": "**13. Abkühlen (ca. 30 Min., passiv)**",
+              "title": "Abkühlen",
+              "duration": {
+                "typical": "PT30M",
+                "source": "ca. 30 Min.",
+                "estimated": true
+              },
+              "attention": "passive",
+              "text": "In Marinade abkühlen lassen.",
+              "action": "In Marinade abkühlen lassen.",
+              "ingredients": [],
+              "timers": [
+                {
+                  "label": "Abkühlen",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "ca. 30 Min."
+                }
+              ]
+            },
+            {
+              "id": "chashu-schneiden",
+              "label": "14",
+              "heading": "**14. Chashu schneiden (30–40 Min., passiv)**",
+              "title": "Chashu schneiden",
+              "duration": {
+                "min": "PT30M",
+                "max": "PT40M",
+                "source": "30–40 Min."
+              },
+              "attention": "passive",
+              "text": "30-40 Min vor Servieren ins **Gefrierfach** (gefriert nicht, aber Fett wird fest → saubere dünne Scheiben). Vor Servieren kurz in Pfanne anbraten oder mit Bunsenbrenner anrösten.",
+              "action": "30-40 Min vor Servieren ins **Gefrierfach** (gefriert nicht, aber Fett wird fest → saubere dünne Scheiben).",
+              "ingredients": [],
+              "meta": "*≤ 40 Min. vor dem Anrichten*",
+              "timers": [
+                {
+                  "label": "Chashu schneiden",
+                  "duration": {
+                    "min": "PT30M",
+                    "max": "PT40M"
+                  },
+                  "text": "30–40 Min."
+                }
+              ],
+              "start": {
+                "ref": "step:anrichten:start",
+                "offset": {
+                  "min": "-PT40M",
+                  "max": "PT0M",
+                  "source": "≤ 40 Min. vor dem Anrichten"
+                }
+              }
+            }
+          ],
+          "heading": "**Chashu (am Tag):**",
+          "phaseHint": "am Tag",
+          "produces": [
+            {
+              "id": "chashu",
+              "name": "Chashu"
+            }
+          ]
+        },
+        {
+          "id": "ajitsuke-tamago",
+          "name": "Ajitsuke Tamago",
+          "steps": [
+            {
+              "id": "eier-kochen",
+              "label": "15",
+              "heading": "**15. Eier kochen (ca. 15 Min.)**",
+              "title": "Eier kochen",
+              "duration": {
+                "typical": "PT15M",
+                "source": "ca. 15 Min.",
+                "estimated": true
+              },
+              "text": "Wasser kochen, 6 Eier direkt aus dem Kühlschrank rein. **6:30 Min** für cremig-flüssig. Für Kleinkind **9-10 Min** für festen Kern. Sofort in Eiswasser, 5 Min, pellen.",
+              "action": "Wasser kochen, 6 Eier direkt aus dem Kühlschrank rein.",
+              "limits": [
+                "6:30 Min",
+                "9-10 Min"
+              ],
+              "timers": [
+                {
+                  "label": "Eier kochen",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "30 Min"
+                },
+                {
+                  "label": "Eier kochen",
+                  "duration": {
+                    "min": "PT9M",
+                    "max": "PT10M"
+                  },
+                  "text": "9-10 Min"
+                },
+                {
+                  "label": "Eier kochen",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "eier",
+                  "amount": {
+                    "text": "6 Eier",
+                    "value": 6.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "eier-marinieren",
+              "label": "16",
+              "heading": "**16. Eier marinieren (2 Std., passiv)**",
+              "title": "Eier marinieren",
+              "duration": {
+                "typical": "PT2H",
+                "source": "2 Std."
+              },
+              "attention": "passive",
+              "text": "In Gefrierbeutel mit \\~300ml kalter (!) Chashu-Marinade, Luft raus, mind. 2h besser über Nacht.",
+              "action": "In Gefrierbeutel mit \\~300ml kalter (!) Chashu-Marinade, Luft raus, mind.",
+              "ingredients": [],
+              "meta": "*nach Eier kochen, Abkühlen*",
+              "timers": [
+                {
+                  "label": "Eier marinieren",
+                  "duration": {
+                    "typical": "PT2H"
+                  },
+                  "text": "2 Std."
+                }
+              ],
+              "after": [
+                "step:eier-kochen",
+                "step:abkuehlen"
+              ]
+            }
+          ],
+          "heading": "**Ajitsuke Tamago (am Tag, mind. 2 Std., Kühlschrank):**",
+          "phaseHint": "am Tag",
+          "produces": [
+            {
+              "id": "ajitsuke-tamago",
+              "name": "Ajitsuke Tamago",
+              "hold": {
+                "min": "PT2H",
+                "source": "am Tag, mind. 2 Std., Kühlschrank"
+              },
+              "storage": {
+                "place": "fridge"
+              }
+            }
+          ],
+          "consumes": [
+            "product:chashu"
+          ]
+        },
+        {
+          "id": "toppings",
+          "name": "Toppings",
+          "steps": [
+            {
+              "id": "toppings",
+              "label": "17",
+              "heading": "**17. Toppings (ca. 15 Min.)**",
+              "title": "Toppings",
+              "duration": {
+                "typical": "PT15M",
+                "source": "ca. 15 Min.",
+                "estimated": true
+              },
+              "text": "- **Frühlingszwiebeln** fein schneiden, in kaltes Wasser (wird kross)\n- **Pilze** (Shimeji empfohlen, Enoki eher meiden): kurz in Butter/Öl anbraten\n- **Nori** in 5x8cm Streifen\n- **Naruto/Menma** falls vorhanden",
+              "action": "- **Frühlingszwiebeln** fein schneiden, in kaltes Wasser (wird kross)\n- **Pilze** (Shimeji empfohlen, Enoki eher meiden): kurz in Butter/Öl anbraten\n- **Nori** in 5x8cm Streifen\n- **Naruto/Menma** falls vorhanden",
+              "ingredients": [
+                {
+                  "ref": "menma",
+                  "amount": {
+                    "text": "8cm Streifen\n- **Naruto/Menma",
+                    "value": 8.0,
+                    "unit": "cm"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            }
+          ],
+          "heading": "**Toppings (am Tag):**",
+          "phaseHint": "am Tag",
+          "produces": [
+            {
+              "id": "toppings",
+              "name": "Toppings"
+            }
+          ]
+        },
+        {
+          "id": "anrichten-choreografie",
+          "name": "Anrichten — Choreografie",
+          "steps": [
+            {
+              "id": "anrichten",
+              "label": "18",
+              "heading": "**18. Anrichten (ca. 15 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT15M",
+                "source": "ca. 15 Min.",
+                "estimated": true
+              },
+              "text": "**Mise en Place** komplett bereitstellen, Schüsseln mit heißem Wasser vorwärmen. Pro Schüssel: 1. 3 EL Tare (Kleinkind: 1,5 EL) 2. 1 TL Chiyu (Kleinkind: weglassen) 3. \\~400ml heiße Brühe, mit Stäbchen umrühren 4. Nudeln kochen (\\~150g frisch bzw. \\~100g trocken pro Erwachsenem, Kleinkind \\~die Hälfte; Packungszeit -10 Sek), in Sieb **kräftig ausschütteln**, in Schüssel 5. Toppings: 2-3 Chashu, halbes Ei (längs!), Frühlingszwiebeln, Pilze, Nori\n**Sofort servieren!**",
+              "action": "**Mise en Place** komplett bereitstellen, Schüsseln mit heißem Wasser vorwärmen.",
+              "limits": [
+                "Mise en Place",
+                "kräftig ausschütteln",
+                "Sofort servieren!"
+              ],
+              "timers": [
+                {
+                  "label": "Anrichten",
+                  "duration": {
+                    "typical": "PT10S"
+                  },
+                  "text": "10 Sek"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "eier",
+                  "amount": {
+                    "text": "2-3 Chashu, halbes Ei",
+                    "value": 2.0,
+                    "unit": "Stück",
+                    "max": 3.0
+                  }
+                }
+              ],
+              "meta": "*nach Abseihen, Tare, Chiyu, Chashu schneiden, Eier marinieren, Toppings · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:abseihen",
+                "step:tare",
+                "step:chiyu",
+                "step:chashu-schneiden",
+                "step:eier-marinieren",
+                "step:toppings"
+              ]
+            }
+          ],
+          "heading": "**Anrichten — Choreografie (à la minute):**",
+          "phaseHint": "à la minute",
+          "produces": [
+            {
+              "id": "anrichten-choreografie",
+              "name": "Anrichten — Choreografie"
+            }
+          ],
+          "consumes": [
+            "product:chashu",
+            "product:toppings"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "*Zutaten:*",
+      "level": "bold",
+      "markdown": "*Zutaten:*\n- 1 Suppenhuhn (\\~1,1kg) + 800g Hähnchenflügel\n- 1 Zwiebel, halbiert (mit Schale)\n- 1 Stange Lauch, grob geschnitten\n- 1 Knoblauchknolle, quer halbiert\n- 5cm Ingwer in Scheiben\n- 2 Möhren\n- **1-2 getrocknete Shiitake** (NICHT 4-5, gibt sonst zu intensive Pilznote)\n- 1 Stück Kombu \\~10x10cm (oder \\~10-15g zerkleinert)\n- 3-3,5L Wasser"
+    },
+    {
+      "type": "markdown",
+      "title": "Wichtig",
+      "level": "bold",
+      "markdown": "**Wichtig:** Nicht salzen!"
+    },
+    {
+      "type": "markdown",
+      "title": "*Zutaten:*",
+      "level": "bold",
+      "markdown": "*Zutaten:*\n- 150ml japanische Sojasauce\n- 50ml Mirin\n- 50ml Sake\n- 1 EL Zucker\n- 1 Stück Kombu \\~5x5cm (oder \\~3-5g zerkleinert)\n- \\~5g Katsuobushi\n- **KEINE getrocknete Shiitake** (siehe Learnings — verstärkt Pilznote unnötig)"
+    },
+    {
+      "type": "markdown",
+      "title": "Dosierung",
+      "level": "bold",
+      "markdown": "**Dosierung:** \\~3 EL Tare auf 400ml Brühe. Für Kleinkind 1,5 EL."
+    },
+    {
+      "type": "markdown",
+      "title": "*Zutaten:*",
+      "level": "bold",
+      "markdown": "*Zutaten:*\n- \\~100ml abgeschöpftes Hühnerfett (oder neutrales Öl)\n- 4-5 Knoblauchzehen, fein gehackt\n- Grüne Frühlingszwiebel-Enden"
+    },
+    {
+      "type": "markdown",
+      "title": "Dosierung",
+      "level": "bold",
+      "markdown": "**Dosierung:** 1 TL pro Schüssel."
+    },
+    {
+      "type": "markdown",
+      "title": "*Zutaten:*",
+      "level": "bold",
+      "markdown": "*Zutaten:*\n- 500-700g Schweinebauch ohne Knochen\n- 100ml Sojasauce\n- 50ml Sake\n- 50ml Mirin\n- 300ml Wasser\n- 3 EL Zucker\n- 4 Knoblauchzehen, angedrückt\n- 4cm Ingwer in Scheiben\n- 1 Frühlingszwiebel"
+    },
+    {
+      "type": "markdown",
+      "title": "Wichtig",
+      "level": "bold",
+      "markdown": "**Wichtig:** Fleisch muss **nicht** komplett bedeckt sein — 1/2 bis 2/3 reicht. Bei zu wenig: Backpapier-Cartouche direkt aufs Fleisch legen."
+    },
+    {
+      "type": "markdown",
+      "title": "*Zutaten:*",
+      "level": "bold",
+      "markdown": "*Zutaten:*\n- 6 Eier\n- \\~300ml abgekühlte Chashu-Marinade"
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan (für 19:00 Essen)",
+      "schedule": {
+        "id": "zeitplan-fuer-19-00-essen",
+        "label": "Zeitplan (für 19:00 Essen)",
+        "phases": [
+          {
+            "id": "uhr-09-00",
+            "label": "9:00 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT10H",
+            "clock": "09:00"
+          },
+          {
+            "id": "uhr-11-30",
+            "label": "11:30 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT7H30M",
+            "clock": "11:30"
+          },
+          {
+            "id": "uhr-11-45",
+            "label": "11:45 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT7H15M",
+            "clock": "11:45"
+          },
+          {
+            "id": "uhr-12-00",
+            "label": "12:00 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT7H",
+            "clock": "12:00"
+          },
+          {
+            "id": "uhr-12-30",
+            "label": "12:30 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT6H30M",
+            "clock": "12:30"
+          },
+          {
+            "id": "uhr-13-30",
+            "label": "13:30 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT5H30M",
+            "clock": "13:30"
+          },
+          {
+            "id": "uhr-13-45",
+            "label": "13:45 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT5H15M",
+            "clock": "13:45"
+          },
+          {
+            "id": "uhr-14-30",
+            "label": "14:30 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT4H30M",
+            "clock": "14:30"
+          },
+          {
+            "id": "uhr-15-00",
+            "label": "15:00 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT4H",
+            "clock": "15:00"
+          },
+          {
+            "id": "uhr-15-15",
+            "label": "15:15 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT3H45M",
+            "clock": "15:15"
+          },
+          {
+            "id": "uhr-15-30",
+            "label": "15:30 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT3H30M",
+            "clock": "15:30"
+          },
+          {
+            "id": "uhr-16-00",
+            "label": "16:00 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT3H",
+            "clock": "16:00"
+          },
+          {
+            "id": "uhr-17-30",
+            "label": "17:30 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT1H30M",
+            "clock": "17:30"
+          },
+          {
+            "id": "uhr-18-20",
+            "label": "18:20 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT40M",
+            "clock": "18:20"
+          },
+          {
+            "id": "uhr-18-45",
+            "label": "18:45 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT15M",
+            "clock": "18:45"
+          },
+          {
+            "id": "uhr-18-50",
+            "label": "18:50 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT10M",
+            "clock": "18:50"
+          },
+          {
+            "id": "uhr-18-55",
+            "label": "18:55 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT5M",
+            "clock": "18:55"
+          },
+          {
+            "id": "uhr-18-57",
+            "label": "18:57 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT3M",
+            "clock": "18:57"
+          },
+          {
+            "id": "uhr-19-00",
+            "label": "19:00 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "PT0M",
+            "clock": "19:00"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "uhr-09-00",
+            "text": "Einkaufen (Asialaden → REWE)"
+          },
+          {
+            "phase": "uhr-11-30",
+            "text": "Auspacken"
+          },
+          {
+            "phase": "uhr-11-45",
+            "text": "Blanchieren: Knochen blanchieren",
+            "steps": [
+              "blanchieren"
+            ]
+          },
+          {
+            "phase": "uhr-12-00",
+            "text": "Hauptkochung, Simmern: Brühe ansetzen, niedrige Hitze",
+            "steps": [
+              "hauptkochung",
+              "simmern"
+            ]
+          },
+          {
+            "phase": "uhr-12-30",
+            "text": "Eier kochen (6:30 + 1x 9-10 Min für Kleinkind)",
+            "steps": [
+              "eier-kochen"
+            ]
+          },
+          {
+            "phase": "uhr-13-30",
+            "text": "Rollen und Anbraten: Chashu vorbereiten, anbraten",
+            "steps": [
+              "anbraten",
+              "rollen"
+            ]
+          },
+          {
+            "phase": "uhr-13-45",
+            "text": "Schmoren: Chashu schmoren (1,5-2h)",
+            "steps": [
+              "schmoren"
+            ]
+          },
+          {
+            "phase": "uhr-14-30",
+            "text": "Aromaten zugeben: Aromaten zur Brühe",
+            "steps": [
+              "aromaten-zugeben"
+            ]
+          },
+          {
+            "phase": "uhr-15-00",
+            "text": "Tare; Fett abschöpfen: Hühnerfett abschöpfen",
+            "steps": [
+              "fett-abschoepfen",
+              "tare"
+            ]
+          },
+          {
+            "phase": "uhr-15-15",
+            "text": "Chiyu",
+            "steps": [
+              "chiyu"
+            ]
+          },
+          {
+            "phase": "uhr-15-30",
+            "text": "Kombu: in die Brühe; Abkühlen: Chashu fertig, Marinade aufbewahren",
+            "steps": [
+              "abkuehlen",
+              "kombu"
+            ]
+          },
+          {
+            "phase": "uhr-16-00",
+            "text": "Abseihen: Brühe abseihen, warm halten; Eier marinieren: Eier in abgekühlte Marinade",
+            "steps": [
+              "abseihen",
+              "eier-marinieren"
+            ]
+          },
+          {
+            "phase": "uhr-17-30",
+            "text": "Toppings",
+            "steps": [
+              "toppings"
+            ],
+            "tasks": [
+              "toppings"
+            ]
+          },
+          {
+            "phase": "uhr-18-20",
+            "text": "Chashu schneiden: Chashu ins Gefrierfach",
+            "steps": [
+              "chashu-schneiden"
+            ]
+          },
+          {
+            "phase": "uhr-18-45",
+            "text": "Wasser für Nudeln aufsetzen"
+          },
+          {
+            "phase": "uhr-18-50",
+            "text": "Chashu schneiden, kurz in der Pfanne rösten",
+            "steps": [
+              "chashu-schneiden"
+            ]
+          },
+          {
+            "phase": "uhr-18-55",
+            "text": "Schüsseln vorwärmen, Tare + Chiyu rein"
+          },
+          {
+            "phase": "uhr-18-57",
+            "text": "Brühe drauf, Nudeln rein"
+          },
+          {
+            "phase": "uhr-19-00",
+            "text": "Anrichten: servieren",
+            "steps": [
+              "anrichten"
+            ]
+          }
+        ],
+        "anchorOverride": {
+          "time": "19:00"
+        }
+      }
+    },
+    {
+      "type": "learnings",
+      "title": "Learnings",
+      "cooked": "07/2026",
+      "summary": "**Gekocht (vor 07/2026, erstes großes Repo-Projekt).** Erfolgreich umgesetzt — Familie zufrieden, Sohn (3) hat mitgegessen. Suppenhuhn + Flügel funktioniert sehr gut als Karkassen-Ersatz. Fürs nächste Mal: Pilznote reduzieren (weniger Shiitake, keine im Tare) und Enoki meiden (Textur) — stattdessen Shimeji oder Champignons.",
+      "details": "### Was sehr gut funktioniert hat\n- **Chintan-Stil im 6L-Topf** — richtige Entscheidung, kein Stress mit Volumen\n- **Suppenhuhn + Hähnchenflügel** statt reine Karkassen — sehr gute Brühe, gut beschaffbar\n- **Chashu in reduzierter Marinade** — Aroma top, keine Verschwendung\n- **Eier in Chashu-Marinade** — spart Aufwand, Geschmack super\n- **Chiyu mit Brühenfett** — gibt Tiefe ohne Bitterkeit, klare Empfehlung über Mayu\n- **Chashu-Gefrierfach-Trick** für sauberes Schneiden\n\n### Was beim nächsten Mal anders\n- **Pilznote reduzieren:** Nur 1-2 Shiitake in Brühe (nicht 4-5), keine Shiitake im Tare. Stattdessen mehr Katsuobushi + Kombu für \"saubereren\" Umami\n- **Enoki-Pilze meiden** (Textur war eigenartig) — stattdessen Shimeji oder Champignons\n- **Niboshi (getrocknete Sardellen) testen** für Tokyo-Style Variante mit Fisch-Tiefe statt Pilz-Tiefe\n\n### Nice-to-have Erweiterungen\n- Frische Ramen-Nudeln statt Trocken (vorbestellen!)\n- Bunsenbrenner für Chashu-Aburi (angeflämmte Optik)\n- Größerer Topf (8-10L) würde Paitan-Variante ermöglichen\n\n### Family-Feedback\n- ✅ Ehefrau: sehr gut\n- ✅ Sohn (3J): hat mitgegessen (großes Kompliment bei dem Komplexitätsgrad)\n- ⚠️ Selbst: Pilznote zu intensiv (kein großer Pilz-Fan)\n\n---"
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen / Inspirationen",
+      "level": 2,
+      "markdown": "- Way of Ramen (YouTube): Tare- und Brühen-Grundlagen\n- Ivan Orkin \"Ivan Ramen\" — Chintan-Philosophie\n- Allgemeine Recherche zu Tokyo-Style Shoyu",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T19:06:41Z",
+    "sourceHash": "42967e55bef784f4",
+    "quantities": [
+      {
+        "ingredient": "ramen-nudeln",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "kombu",
+        "total": {
+          "text": "10–15 g",
+          "value": 10.0,
+          "max": 15.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "bruehe-haehnchen-chintan": "10-15g"
+        }
+      },
+      {
+        "ingredient": "katsuobushi",
+        "total": {
+          "text": "5 g",
+          "value": 5.0,
+          "max": 5.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "shoyu-tare": "5g Katsuobushi"
+        }
+      },
+      {
+        "ingredient": "shiitake",
+        "total": {
+          "text": "1–2",
+          "value": 1.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "bruehe-haehnchen-chintan": "1-2 getrocknete Shiitake"
+        }
+      },
+      {
+        "ingredient": "nori",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "menma",
+        "total": {
+          "text": "8 cm",
+          "value": 8.0,
+          "max": 8.0,
+          "unit": "cm",
+          "approx": false
+        },
+        "perTask": {
+          "toppings": "8cm Streifen\n- **Naruto/Menma"
+        }
+      },
+      {
+        "ingredient": "mirin",
+        "total": {
+          "text": "100 ml",
+          "value": 100.0,
+          "max": 100.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "shoyu-tare": "50ml Mirin",
+          "chashu": "50ml Mirin"
+        }
+      },
+      {
+        "ingredient": "sake",
+        "total": {
+          "text": "100 ml",
+          "value": 100.0,
+          "max": 100.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "shoyu-tare": "50ml Sake",
+          "chashu": "50ml Sake"
+        }
+      },
+      {
+        "ingredient": "sojasauce",
+        "total": {
+          "text": "250 ml",
+          "value": 250.0,
+          "max": 250.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "shoyu-tare": "150ml Sojasauce",
+          "chashu": "100ml Sojasauce"
+        }
+      },
+      {
+        "ingredient": "fruehlingszwiebeln",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "chashu": "1 Frühlingszwiebel"
+        }
+      },
+      {
+        "ingredient": "shimeji-pilze",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "narutomaki",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "suppenhuhn",
+        "total": {
+          "text": "1100 g",
+          "value": 1100.0,
+          "max": 1100.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "bruehe-haehnchen-chintan": "1,1kg"
+        }
+      },
+      {
+        "ingredient": "haehnchenfluegel",
+        "total": {
+          "text": "800 g",
+          "value": 800.0,
+          "max": 800.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "bruehe-haehnchen-chintan": "800g Hähnchenflügel"
+        }
+      },
+      {
+        "ingredient": "schweinebauch",
+        "total": {
+          "text": "500–700 g",
+          "value": 500.0,
+          "max": 700.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "chashu": "500-700g Schweinebauch"
+        }
+      },
+      {
+        "ingredient": "eier",
+        "total": {
+          "text": "8–9",
+          "value": 8.0,
+          "max": 9.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "ajitsuke-tamago": "6 Eier",
+          "anrichten-choreografie": "2-3 Chashu, halbes Ei"
+        }
+      },
+      {
+        "ingredient": "zwiebel",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "bruehe-haehnchen-chintan": "1 halbierte Zwiebel"
+        }
+      },
+      {
+        "ingredient": "lauch",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "bruehe-haehnchen-chintan": "1 Stange Lauch"
+        }
+      },
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": "9–10",
+          "value": 9.0,
+          "max": 10.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "bruehe-haehnchen-chintan": "1 halbierte Knoblauchknolle",
+          "chiyu-goldenes-aroma-oel": "4-5 fein gehackte Knoblauchzehen",
+          "chashu": "4 Knoblauchzehen"
+        }
+      },
+      {
+        "ingredient": "ingwer",
+        "total": {
+          "text": "9 cm",
+          "value": 9.0,
+          "max": 9.0,
+          "unit": "cm",
+          "approx": false
+        },
+        "perTask": {
+          "bruehe-haehnchen-chintan": "5cm Ingwer",
+          "chashu": "4cm Ingwer"
+        }
+      },
+      {
+        "ingredient": "moehren",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "bruehe-haehnchen-chintan": "2 Möhren"
+        }
+      },
+      {
+        "ingredient": "zucker",
+        "total": {
+          "text": "4 EL",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "shoyu-tare": "1 EL Zucker",
+          "chashu": "3 EL Zucker"
+        }
+      },
+      {
+        "ingredient": "butter",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "kuechengarn",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "3300–3800 ml",
+          "value": 3300.0,
+          "max": 3800.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "bruehe-haehnchen-chintan": "3-3,5L kaltem Wasser",
+          "chashu": "300ml Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Asialaden",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "fruehlingszwiebeln",
+            "name": "Frühlingszwiebeln",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            },
+            "note": "frisch, empfehlenswert — Backup: REWE"
+          },
+          {
+            "ingredient": "shimeji-pilze",
+            "name": "Shimeji-Pilze",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "optional": true,
+            "note": "besser als Enoki, siehe Learnings"
+          }
+        ]
+      },
+      {
+        "store": "Asialaden",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "ramen-nudeln",
+            "name": "frische Ramen-Nudeln",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "400–500 g"
+            },
+            "note": "— ODER japanische Trocken-Ramen mit Kansui; Hakubaku organic funktioniert sehr gut"
+          },
+          {
+            "ingredient": "kombu",
+            "name": "Kombu",
+            "need": {
+              "text": "10–15 g",
+              "value": 10.0,
+              "max": 15.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "10–15 g",
+            "inStock": false,
+            "buy": {
+              "text": "30–50 g"
+            }
+          },
+          {
+            "ingredient": "katsuobushi",
+            "name": "Katsuobushi",
+            "need": {
+              "text": "5 g",
+              "value": 5.0,
+              "max": 5.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "5 g",
+            "inStock": false,
+            "note": "Bonitoflocken"
+          },
+          {
+            "ingredient": "shiitake",
+            "name": "Getrocknete Shiitake",
+            "need": {
+              "text": "1–2",
+              "value": 1.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1–2",
+            "inStock": false,
+            "note": "**NUR 1-2 STÜCK BENÖTIGT**, siehe Learnings"
+          },
+          {
+            "ingredient": "nori",
+            "name": "Nori",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "note": "Blätter"
+          },
+          {
+            "ingredient": "menma",
+            "name": "Menma",
+            "need": {
+              "text": "8 cm",
+              "value": 8.0,
+              "max": 8.0,
+              "unit": "cm",
+              "approx": false
+            },
+            "display": "8 cm",
+            "inStock": false,
+            "note": "Bambussprossen im Glas; empfehlenswert"
+          }
+        ]
+      },
+      {
+        "store": "Asialaden",
+        "group": "Würzmittel & Gewürze",
+        "items": [
+          {
+            "ingredient": "mirin",
+            "name": "Mirin",
+            "need": {
+              "text": "100 ml",
+              "value": 100.0,
+              "max": 100.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "100 ml",
+            "inStock": false,
+            "buy": {
+              "text": "400 ml"
+            },
+            "note": "mind."
+          },
+          {
+            "ingredient": "sake",
+            "name": "Sake",
+            "need": {
+              "text": "100 ml",
+              "value": 100.0,
+              "max": 100.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "100 ml",
+            "inStock": false,
+            "buy": {
+              "text": "400–500 ml"
+            },
+            "note": "Kochsake/Ryorishu, mind."
+          },
+          {
+            "ingredient": "sojasauce",
+            "name": "japanische Sojasauce",
+            "need": {
+              "text": "250 ml",
+              "value": 250.0,
+              "max": 250.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "250 ml",
+            "inStock": false,
+            "buy": {
+              "text": "500 ml"
+            },
+            "note": "Kikkoman/Yamasa, mind."
+          }
+        ]
+      },
+      {
+        "store": "Asialaden",
+        "group": "Tiefkühl",
+        "items": [
+          {
+            "ingredient": "narutomaki",
+            "name": "Narutomaki/Kamaboko",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "optional": true,
+            "note": "TK Fischrolle"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "zwiebel",
+            "name": "große Zwiebel",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            }
+          },
+          {
+            "ingredient": "lauch",
+            "name": "Lauch",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1 Stange"
+            }
+          },
+          {
+            "ingredient": "knoblauch",
+            "name": "Knoblauch",
+            "need": {
+              "text": "9–10",
+              "value": 9.0,
+              "max": 10.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "9–10",
+            "inStock": false,
+            "buy": {
+              "text": "1 Knolle"
+            },
+            "note": "+ extra für Chiyu"
+          },
+          {
+            "ingredient": "ingwer",
+            "name": "cm Ingwer",
+            "need": {
+              "text": "9 cm",
+              "value": 9.0,
+              "max": 9.0,
+              "unit": "cm",
+              "approx": false
+            },
+            "display": "9 cm",
+            "inStock": false,
+            "buy": {
+              "text": "5–7"
+            }
+          },
+          {
+            "ingredient": "moehren",
+            "name": "Möhren",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            }
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "suppenhuhn",
+            "name": "großes Suppenhuhn",
+            "need": {
+              "text": "1100 g",
+              "value": 1100.0,
+              "max": 1100.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "1100 g",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "\\~1,1-1,5kg"
+          },
+          {
+            "ingredient": "haehnchenfluegel",
+            "name": "Hähnchenflügel",
+            "need": {
+              "text": "800 g",
+              "value": 800.0,
+              "max": 800.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "800 g",
+            "inStock": false,
+            "buy": {
+              "text": "800 g"
+            },
+            "note": "Alternative zu Karkassen falls nicht verfügbar"
+          },
+          {
+            "ingredient": "schweinebauch",
+            "name": "Schweinebauch ohne Knochen, am Stück",
+            "need": {
+              "text": "500–700 g",
+              "value": 500.0,
+              "max": 700.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "500–700 g",
+            "inStock": false,
+            "buy": {
+              "text": "500–700 g"
+            },
+            "note": "kein Bacon!"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "eier",
+            "name": "Eier",
+            "need": {
+              "text": "8–9",
+              "value": 8.0,
+              "max": 9.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "8–9",
+            "inStock": false,
+            "buy": {
+              "text": "6"
+            },
+            "note": "M, frisch"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "zucker",
+            "name": "Zucker",
+            "need": {
+              "text": "4 EL",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "4 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "1 EL Tare, 3 EL Chashu"
+          },
+          {
+            "ingredient": "butter",
+            "name": "Butter oder Öl",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true,
+            "note": "Pilze"
+          },
+          {
+            "ingredient": "kuechengarn",
+            "name": "Küchengarn",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "optional": true,
+            "pantry": true,
+            "note": "Chashu rollen"
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "3300–3800 ml",
+              "value": 3300.0,
+              "max": 3800.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "3300–3800 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}
