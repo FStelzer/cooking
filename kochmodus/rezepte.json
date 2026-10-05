@@ -119,6 +119,13 @@
   "cooked": false
  },
  {
+  "path": "../schwangerschaft/pescado-a-la-sal.json",
+  "title": "Pescado a la sal — Wolfsbarsch in der Salzkruste mit Salsa verde, Grillgemüse und Linsensalat (2 Erwachsene + Kind)",
+  "group": "schwangerschaft",
+  "wip": false,
+  "cooked": false
+ },
+ {
   "path": "../schwangerschaft/poulet-au-vinaigre.json",
   "title": "Poulet au vinaigre (Lyon) — Hähnchenschenkel in Essig-Tomaten-Sauce mit grünen Bohnen (4 Portionen)",
   "group": "schwangerschaft",

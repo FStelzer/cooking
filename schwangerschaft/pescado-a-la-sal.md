@@ -2,6 +2,8 @@
 
 *Aktive Zeit \~45 Min., gesamt \~1 Std. 20 Min. Equipment: Ofen (oder Gasgrill mit Haube, indirekt) + tiefes Backblech oder Bräter, Fleischthermometer, Mandoline (Gemüse), großer Löffel/Palette zum Aufklopfen, kleiner Topf (Linsen).*
 
+*Varianten: Garen = Ofen | Grill*
+
 Ganzer Fisch, in 2 kg feuchtem Meersalz vergraben und gebacken. Die Kruste wird zur Dampfkammer: der Fisch gart in seiner eigenen Feuchtigkeit gleichmäßig von allen Seiten, die Haut hält das Salz draußen, und er wird **nicht** salzig — eher perfekt gewürzt. Aktiv ist fast nichts zu tun, der Tisch-Effekt beim Aufklopfen der Kruste ist enorm: „Aufwand ≠ Wow" in Reinform. Dazu eine grüne Kräutersauce, Grillgemüse von der Mandoline und ein lauwarmer Linsensalat als KH-Träger.
 
 **Von Haus aus schwangerschaftstauglich** ([Leitfaden](/schwangerschaft/leitfaden.md)): Wolfsbarsch und Dorade sind quecksilberarm, das Eiweiß in der Kruste wird mitgebacken und nicht gegessen, die Salsa verde ist ohne Sardellen gebaut, der Fisch wird mit Thermometer auf ≥ 63 °C gegart.
@@ -24,96 +26,106 @@ Ganzer Fisch, in 2 kg feuchtem Meersalz vergraben und gebacken. Die Kruste wird 
 
 ## Einkaufsliste
 
-### Buhara Seafood (vorher anrufen & bestellen)
+### Buhara Seafood
 
-- [ ] 1 ganzer Wolfsbarsch oder Dorade, 1,2–1,5 kg — ausgenommen, Kiemen raus, **mit Schuppen** (Fallback: 2 Stück à 600 g)
+*Vorher anrufen & bestellen.*
+
+**Fleisch & Fisch:**
+- [ ] 1 ganzer Wolfsbarsch oder Dorade, 1,2–1,5 kg *(ausgenommen, Kiemen raus, **mit Schuppen**; Fallback: 2 Stück à 600 g)*
 
 ### REWE / Aldi
 
-**Obst / Gemüse:**
-- [ ] 2 Zitronen (1 in den Fisch, 1 Salsa verde + Servieren)
-- [ ] 1 Fenchelknolle mit Grün (Grün in den Fisch, Knolle ins Grillgemüse)
-- [ ] 2 mittlere Zucchini (\~500 g)
+**Obst & Gemüse:**
+- [ ] 2 Zitronen *(1 in den Fisch, 1 Salsa verde und Servieren)*
+- [ ] 1 Fenchelknolle mit Grün *(Grün in den Fisch, Knolle ins Grillgemüse)*
+- [ ] 2 mittlere Zucchini *(\~500 g)*
 - [ ] 2 rote Spitzpaprika
-- [ ] 1 rote Zwiebel (Grillgemüse)
-- [ ] 2 Schalotten (Linsensalat)
-- [ ] 2 Bund glatte Petersilie (1½ Salsa verde, ½ Linsen)
+- [ ] 1 rote Zwiebel *(Grillgemüse)*
+- [ ] 2 Schalotten *(Linsensalat)*
+- [ ] 2 Bund glatte Petersilie *(1½ Salsa verde, ½ Linsen)*
 - [ ] 4 Zweige Thymian
-- [ ] 3 Knoblauchzehen (1 Salsa verde, 2 in den Fisch)
-- [ ] Optional: 1 Bund Basilikum oder Minze (Salsa verde)
+- [ ] 3 Knoblauchzehen *(1 Salsa verde, 2 in den Fisch)*
+- [ ] Optional: 1 Bund Basilikum oder Minze *(Salsa verde)*
 
-**Kühltheke / Eier:**
-- [ ] 4 Eier (nur Eiweiß, 3–4 Stück — Eigelb für anderes aufheben; Eiweiß wird nicht gegessen)
+**Milchprodukte & Eier:**
+- [ ] 4 Eier *(nur Eiweiß, 3–4 Stück — Eigelb für anderes aufheben; Eiweiß wird nicht gegessen)*
 
-**Trockenwaren / Vorrat:**
-- [ ] 2 kg grobes Meersalz (2 Pakete à 1 kg; bei 2 Fischen 3 Pakete)
-- [ ] 200 g Beluga- oder Berglinsen
-- [ ] 2 EL Kapern (Glas — Vorrat prüfen)
-- [ ] 250 ml gutes Olivenöl (Gesamtverbrauch \~210 ml, davon 120 ml Salsa verde — Vorrat prüfen)
-- [ ] 3 EL Weißweinessig oder Sherryessig (Linsen)
-- [ ] 1 TL Dijon-Senf (Linsen)
-- [ ] 1 Lorbeerblatt (Linsen)
-- [ ] Schwarzer Pfeffer, Salz (Vorrat)
+**Trockenwaren:**
+- [ ] 2 kg grobes Meersalz *(2 Pakete à 1 kg; bei 2 Fischen 3 Pakete)*
+- [ ] 200 g Linsen *(Beluga- oder Berglinsen)*
+
+### Vorrat prüfen
+
+- [ ] 2 EL Kapern *(Glas)*
+- [ ] 250 ml gutes Olivenöl *(Gesamtverbrauch \~210 ml, davon 120 ml Salsa verde)*
+- [ ] 3 EL Weißweinessig oder Sherryessig *(Linsen)*
+- [ ] 1 TL Dijon-Senf *(Linsen)*
+- [ ] 1 Lorbeerblatt *(Linsen)*
+- [ ] Schwarzer Pfeffer
+- [ ] Salz
 
 ## Zubereitung
 
-### 1. Linsen (30 Min., ganz am Anfang — werden lauwarm serviert)
+**1. Linsen (30 Min.)**
+*jederzeit · Herd*
+Ganz am Anfang — werden lauwarm serviert: 200 g Linsen abspülen, mit 1 Lorbeerblatt und 600 ml Wasser aufsetzen, **ohne Salz** aufkochen, 20–25 Min. sanft köcheln (Beluga eher 20, Berglinsen 25) — bissfest, nicht matschig. Abgießen, Lorbeer raus. Noch warm mit dem Dressing mischen: 2 Schalotten sehr fein gewürfelt, 3 EL Essig, 1 TL Dijon-Senf, 3 EL Olivenöl, ½ TL Salz, Pfeffer. Ziehen lassen; ½ Bund gehackte Petersilie erst kurz vor dem Servieren unterheben.
 
-200 g Linsen abspülen, mit 1 Lorbeerblatt und 600 ml Wasser aufsetzen, **ohne Salz** aufkochen, 20–25 Min. sanft köcheln (Beluga eher 20, Berglinsen 25) — bissfest, nicht matschig. Abgießen, Lorbeer raus. Noch warm mit dem Dressing mischen: 2 Schalotten sehr fein gewürfelt, 3 EL Essig, 1 TL Dijon-Senf, 3 EL Olivenöl, ½ TL Salz, Pfeffer. Ziehen lassen; ½ Bund gehackte Petersilie erst kurz vor dem Servieren unterheben.
-
-### 2. Fisch vorbereiten (10 Min.)
-
-Ofen auf **200 °C Ober-/Unterhitze** vorheizen (Umluft 180 °C). Fisch innen und außen unter kaltem Wasser abspülen, **gründlich trocken tupfen** — auch die Bauchhöhle. Restliche Kiemenreste entfernen (bitter). **Nicht salzen, nicht einschneiden** — jeder Schnitt ist eine Tür fürs Salz.
+**2. Fisch vorbereiten (10 Min.)**
+*jederzeit*
+Ofen auf **200 °C Ober-/Unterhitze** vorheizen (Umluft 180 °C). Den Wolfsbarsch (1,2–1,5 kg, oder Dorade) innen und außen unter kaltem Wasser abspülen, **gründlich trocken tupfen** — auch die Bauchhöhle. Restliche Kiemenreste entfernen (bitter). **Nicht salzen, nicht einschneiden** — jeder Schnitt ist eine Tür fürs Salz.
 
 Bauchhöhle füllen mit: 1 Zitrone in Scheiben, dem Fenchelgrün, 4 Zweigen Thymian, 2 angedrückten Knoblauchzehen, ein paar Petersilienstielen. Nicht überstopfen — die Bauchlappen sollen anliegen.
 
-### 3. Salzkruste (10 Min.)
-
+**3. Salzkruste (10 Min.)**
 3–4 Eiweiß (\~120 g) in einer großen Schüssel mit dem Schneebesen schaumig, nicht steif schlagen. 2 kg grobes Meersalz dazu, mit den Händen mischen, dann **\~80–100 ml Wasser** schluckweise einarbeiten, bis die Masse wie **nasser Strandsand** zusammenhält, wenn man sie drückt — nicht nass, nicht rieselnd.
 
-Tiefes Blech oder Bräter (der Fisch muss mit 2 cm Rand rundum reinpassen; ein 14L-Topf ist zu hoch, das große Ofenblech mit Backpapier geht) mit **1 cm Salzmasse** als Bett ausstreichen, etwas größer als der Fisch. Fisch drauflegen. Rest der Masse darüber verteilen und **1,5–2 cm dick** fest andrücken, Seiten geschlossen. **Kopf und Schwanzflosse dürfen herausschauen** — die Schwanzflosse ist die Garprobe (Schritt 4). Mit dem Messerrücken die Fisch-Silhouette in die Kruste ritzen, dann findet man später die Bauchlinie.
+Tiefes Blech oder Bräter (der Fisch muss mit 2 cm Rand rundum reinpassen; ein 14L-Topf ist zu hoch, das große Ofenblech mit Backpapier geht) mit **1 cm Salzmasse** als Bett ausstreichen, etwas größer als der Fisch. Fisch drauflegen. Rest der Masse darüber verteilen und **1,5–2 cm dick** fest andrücken, Seiten geschlossen. **Kopf und Schwanzflosse dürfen herausschauen** — die Schwanzflosse ist die Garprobe (siehe „Garprobe & Ruhen“). Mit dem Messerrücken die Fisch-Silhouette in die Kruste ritzen, dann findet man später die Bauchlinie.
 
-### 4. Backen (25–30 Min.) + Garprobe
-
+**4. Backen (25–30 Min.)**
+*nur Ofen · nach Salzkruste · Ofen 200 °C*
 Bei **200 °C auf der mittleren Schiene 25–30 Min.** (Faustregel aller Quellen: \~20 Min. pro kg + 5 Min.; 1,2 kg → 25 Min., 1,5 kg → 30 Min.; **zwei Fische à 600 g: 18–20 Min.**). Die Kruste wird hart, hellbeige und bekommt feine Risse (Dampfdruck = Fisch ist heiß).
 
+**5. Grillen (25–30 Min.)**
+*nur Grill · nach Salzkruste · Grill*
+Gasgrill mit Haube, indirekt: Fisch in der Kruste auf einem **grillfesten Blech** (Alublech oder Edelstahl-Auflaufform) in die **indirekte Zone**; Brenner darunter aus, seitliche Brenner auf **200–220 °C Haubenthermometer**. Haube zu, **25–30 Min.**, Thermometer wie unten. Der Vorteil: Ofen bleibt frei fürs Gemüse, und das Gemüse geht direkt über der Flamme in den letzten 10 Min. Wer ein paar Holzchips in eine Räucherbox legt, bekommt ein sanftes Raucharoma — die Kruste lässt genug davon durch.
+
+**6. Garprobe & Ruhen (5 Min.)**
+*nach Backen, Grillen · fertig bei ≥ 63 °C Kern*
 **Garprobe, zwei Wege:**
 1. **Thermometer** (verbindlich): durch die Kiemenöffnung oder eine kleine Lücke in der Kruste hinter dem Kopf **schräg ins dickste Rückenfilet** stechen, nicht bis an die Wirbelsäule. **Ziel ≥ 63 °C.** Bei 60–62 °C: 3 Min. länger. Beim Ruhen steigt die Temperatur noch um 2–3 °C.
 2. **Schwanzflosse ziehen** (spanische Tradition): löst sie sich mit sanftem Zug leicht aus der Haut, ist der Fisch gar. Nur als Vorcheck — messen trotzdem.
 
 **5 Min. ruhen lassen** in der Kruste (fertig garen, Saft setzt sich).
 
-### 5. Grillgemüse (parallel, letzte 15 Min.)
+**7. Grillgemüse (15 Min., parallel)**
+*jederzeit*
+In den letzten 15 Min.: 2 Zucchini und 1 Fenchelknolle auf der Mandoline in 4–5 mm Scheiben, 2 Spitzpaprika längs in Viertel, 1 rote Zwiebel in 1 cm Ringe. Mit 3 EL Olivenöl und ½ TL Salz mischen. **Ofen:** auf einem zweiten Blech mit Backpapier bei 200 °C (oberes Drittel) **15 Min.**, einmal wenden — oder **Grillpfanne** auf dem Herd, portionsweise 2–3 Min. pro Seite. Wer den Gasgrill nutzt: direkt über der Flamme, 2–3 Min. pro Seite. Vor dem Servieren Spritzer Zitrone.
 
-2 Zucchini und 1 Fenchelknolle auf der Mandoline in 4–5 mm Scheiben, 2 Spitzpaprika längs in Viertel, 1 rote Zwiebel in 1 cm Ringe. Mit 3 EL Olivenöl und ½ TL Salz mischen. **Ofen:** auf einem zweiten Blech mit Backpapier bei 200 °C (oberes Drittel) **15 Min.**, einmal wenden — oder **Grillpfanne** auf dem Herd, portionsweise 2–3 Min. pro Seite. Wer den Gasgrill nutzt (s. u.): direkt über der Flamme, 2–3 Min. pro Seite. Vor dem Servieren Spritzer Zitrone.
+**8. Salsa verde (10 Min., parallel)**
+*jederzeit*
+Während der Fisch backt: 1½ Bund Petersilie (nur Blätter) mit optional einer Handvoll Basilikum/Minze fein hacken — **mit dem Messer, nicht mixen** (Mixer macht sie bitter und braun). 2 EL Kapern abgetropft und fein gehackt, 1 kleine Knoblauchzehe fein gerieben, Zeste von ½ Zitrone und 1 EL Zitronensaft, **120 ml Olivenöl**, Pfeffer. Salz nur nach Probieren — Kapern bringen genug. In 20 Min. Ziehzeit wird sie runder. *Ohne Sardellen (Leitfaden: salzgereift, nicht erhitzt). Wer Umami vermisst: 1 TL fein gehackte Kapern extra.*
 
-### 6. Salsa verde (10 Min., während der Fisch backt)
-
-1½ Bund Petersilie (nur Blätter) mit optional einer Handvoll Basilikum/Minze fein hacken — **mit dem Messer, nicht mixen** (Mixer macht sie bitter und braun). 2 EL Kapern abgetropft und fein gehackt, 1 kleine Knoblauchzehe fein gerieben, Zeste von ½ Zitrone und 1 EL Zitronensaft, **120 ml Olivenöl**, Pfeffer. Salz nur nach Probieren — Kapern bringen genug. In 20 Min. Ziehzeit wird sie runder. *Ohne Sardellen (Leitfaden: salzgereift, nicht erhitzt). Wer Umami vermisst: 1 TL fein gehackte Kapern extra.*
-
-### 7. Aufklopfen & Tranchieren (am Tisch oder am Herd)
-
-Blech auf den Tisch (Untersetzer!). Mit dem Löffelrücken entlang der geritzten Bauchlinie **kräftig klopfen**, bis die Kruste bricht; obere Platte in Stücken abheben, Salzreste vom Fisch wegpinseln (Backpinsel oder Küchenpapier). **Haut vom Kopf zum Schwanz abziehen** — kommt mit den Schuppen in einem Stück. Oberes Filet mit zwei Löffeln entlang der Mittellinie vom Rückgrat lösen und abheben, Bauchgräten mitnehmen. Rückgrat samt Kopf abheben, unteres Filet freilegen, Haut unten drin lassen.
+**9. Aufklopfen & Tranchieren (ca. 10 Min.)**
+*nach Garprobe & Ruhen*
+Am Tisch oder am Herd: Blech auf den Tisch (Untersetzer!). Mit dem Löffelrücken entlang der geritzten Bauchlinie **kräftig klopfen**, bis die Kruste bricht; obere Platte in Stücken abheben, Salzreste vom Fisch wegpinseln (Backpinsel oder Küchenpapier). **Haut vom Kopf zum Schwanz abziehen** — kommt mit den Schuppen in einem Stück. Oberes Filet mit zwei Löffeln entlang der Mittellinie vom Rückgrat lösen und abheben, Bauchgräten mitnehmen. Rückgrat samt Kopf abheben, unteres Filet freilegen, Haut unten drin lassen.
 
 **Wichtig fürs Kind (und alle):** Filets auf dem Teller nochmal mit den Fingern auf Gräten prüfen — Wolfsbarsch hat feine Rückengräten am Filetrand.
 
-### 8. Anrichten
-
+**10. Anrichten (ca. 3 Min.)**
+*nach Aufklopfen & Tranchieren, Linsen, Grillgemüse, Salsa verde*
 Fisch pur mit Salsa verde daneben (und etwas Olivenöl + Zitronenviertel — die spanische Minimalvariante), Grillgemüse und 3–4 EL lauwarmer Linsensalat pro Person.
-
-## Variante: Gasgrill mit Haube (indirekt)
-
-Fisch in der Kruste auf einem **grillfesten Blech** (Alublech oder Edelstahl-Auflaufform) in die **indirekte Zone**; Brenner darunter aus, seitliche Brenner auf **200–220 °C Haubenthermometer**. Haube zu, **25–30 Min.**, Thermometer wie oben. Der Vorteil: Ofen bleibt frei fürs Gemüse, und das Gemüse geht direkt über der Flamme in den letzten 10 Min. Wer ein paar Holzchips in eine Räucherbox legt, bekommt ein sanftes Raucharoma — die Kruste lässt genug davon durch.
 
 ## Zeitplan
 
-- **–1:20** Linsen aufsetzen, Dressing anrühren
-- **–1:00** Ofen an, Fisch vorbereiten, Kruste bauen
-- **–0:45** Fisch in den Ofen. Gemüse schneiden und ölen
-- **–0:35** Salsa verde hacken
-- **–0:15** Gemüse in den Ofen (oberes Drittel) bzw. auf den Grill
-- **–0:05** Fisch raus (Thermometer ≥ 63 °C), 5 Min. ruhen. Petersilie in die Linsen
-- **0:00** Kruste aufklopfen, tranchieren, essen
+| Zeit | Schritt |
+|---|---|
+| T−1:20 | Linsen aufsetzen, Dressing anrühren |
+| T−1:00 | Ofen an, Fisch vorbereiten, Kruste bauen |
+| T−0:45 | Fisch in den Ofen. Gemüse schneiden und ölen |
+| T−0:35 | Salsa verde hacken |
+| T−0:15 | Gemüse in den Ofen (oberes Drittel) bzw. auf den Grill |
+| T−0:05 | Fisch raus (Thermometer ≥ 63 °C), 5 Min. ruhen. Petersilie in die Linsen |
+| T−0 | Kruste aufklopfen, tranchieren, essen |
 
 ## Schwangerschaft & GDM
 

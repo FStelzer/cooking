@@ -1,0 +1,2493 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "schwangerschaft/pescado-a-la-sal",
+  "kind": "dish",
+  "title": "Pescado a la sal — Wolfsbarsch in der Salzkruste mit Salsa verde, Grillgemüse und Linsensalat (2 Erwachsene + Kind)",
+  "status": "done",
+  "yields": {
+    "text": "2 Erwachsene + Kind",
+    "value": 2.0,
+    "unit": "Erwachsene"
+  },
+  "intro": "*Aktive Zeit \\~45 Min., gesamt \\~1 Std. 20 Min. Equipment: Ofen (oder Gasgrill mit Haube, indirekt) + tiefes Backblech oder Bräter, Fleischthermometer, Mandoline (Gemüse), großer Löffel/Palette zum Aufklopfen, kleiner Topf (Linsen).*\n\n*Varianten: Garen = Ofen | Grill*\n\nGanzer Fisch, in 2 kg feuchtem Meersalz vergraben und gebacken. Die Kruste wird zur Dampfkammer: der Fisch gart in seiner eigenen Feuchtigkeit gleichmäßig von allen Seiten, die Haut hält das Salz draußen, und er wird **nicht** salzig — eher perfekt gewürzt. Aktiv ist fast nichts zu tun, der Tisch-Effekt beim Aufklopfen der Kruste ist enorm: „Aufwand ≠ Wow\" in Reinform. Dazu eine grüne Kräutersauce, Grillgemüse von der Mandoline und ein lauwarmer Linsensalat als KH-Träger.\n\n**Von Haus aus schwangerschaftstauglich** ([Leitfaden](/schwangerschaft/leitfaden.md)): Wolfsbarsch und Dorade sind quecksilberarm, das Eiweiß in der Kruste wird mitgebacken und nicht gegessen, die Salsa verde ist ohne Sardellen gebaut, der Fisch wird mit Thermometer auf ≥ 63 °C gegart.",
+  "times": {
+    "text": "Aktive Zeit ~45 Min., gesamt ~1 Std.",
+    "active": {
+      "typical": "PT45M",
+      "source": "45 Min."
+    },
+    "total": {
+      "typical": "PT1H20M",
+      "source": "1 Std. 20 Min."
+    }
+  },
+  "equipment": [
+    "Ofen (oder Gasgrill mit Haube",
+    "indirekt) + tiefes Backblech oder Bräter",
+    "Fleischthermometer",
+    "Mandoline (Gemüse)",
+    "großer Löffel/Palette zum Aufklopfen",
+    "kleiner Topf (Linsen)"
+  ],
+  "variants": [
+    {
+      "id": "garen",
+      "label": "Garen",
+      "choices": [
+        {
+          "id": "ofen",
+          "label": "Ofen"
+        },
+        {
+          "id": "grill",
+          "label": "Grill"
+        }
+      ],
+      "default": "ofen"
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "wolfsbarsch",
+      "name": "ganzer Wolfsbarsch oder Dorade, 1,2–1,5 kg",
+      "store": "Buhara Seafood",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "1"
+      },
+      "note": "ausgenommen, Kiemen raus, **mit Schuppen**; Fallback: 2 Stück à 600 g"
+    },
+    {
+      "id": "zitronen",
+      "name": "Zitronen",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "note": "1 in den Fisch, 1 Salsa verde und Servieren"
+    },
+    {
+      "id": "fenchelknolle",
+      "name": "Fenchelknolle mit Grün",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "Grün in den Fisch, Knolle ins Grillgemüse"
+    },
+    {
+      "id": "zucchini",
+      "name": "mittlere Zucchini",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "note": "\\~500 g"
+    },
+    {
+      "id": "spitzpaprika",
+      "name": "rote Spitzpaprika",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      }
+    },
+    {
+      "id": "zwiebel",
+      "name": "rote Zwiebel",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "Grillgemüse"
+    },
+    {
+      "id": "schalotten",
+      "name": "Schalotten",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "note": "Linsensalat"
+    },
+    {
+      "id": "petersilie",
+      "name": "glatte Petersilie",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2 Bund"
+      },
+      "note": "1½ Salsa verde, ½ Linsen"
+    },
+    {
+      "id": "thymian",
+      "name": "Thymian",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "4 Zweige"
+      }
+    },
+    {
+      "id": "knoblauchzehen",
+      "name": "Knoblauchzehen",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3"
+      },
+      "note": "1 Salsa verde, 2 in den Fisch"
+    },
+    {
+      "id": "basilikum",
+      "name": "Basilikum oder Minze",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      },
+      "optional": true,
+      "note": "Salsa verde"
+    },
+    {
+      "id": "eier",
+      "name": "Eier",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "4"
+      },
+      "note": "nur Eiweiß, 3–4 Stück — Eigelb für anderes aufheben; Eiweiß wird nicht gegessen"
+    },
+    {
+      "id": "meersalz",
+      "name": "grobes Meersalz",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "2 kg"
+      },
+      "note": "2 Pakete à 1 kg; bei 2 Fischen 3 Pakete"
+    },
+    {
+      "id": "linsen",
+      "name": "Linsen",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "200 g"
+      },
+      "note": "Beluga- oder Berglinsen"
+    },
+    {
+      "id": "kapern",
+      "name": "Kapern",
+      "store": "Vorrat",
+      "buy": {
+        "text": "2 EL"
+      },
+      "pantry": true,
+      "note": "Glas"
+    },
+    {
+      "id": "olivenoel",
+      "name": "gutes Olivenöl",
+      "store": "Vorrat",
+      "buy": {
+        "text": "250 ml"
+      },
+      "pantry": true,
+      "note": "Gesamtverbrauch \\~210 ml, davon 120 ml Salsa verde"
+    },
+    {
+      "id": "weissweinessig",
+      "name": "Weißweinessig oder Sherryessig",
+      "store": "Vorrat",
+      "buy": {
+        "text": "3 EL"
+      },
+      "pantry": true,
+      "note": "Linsen"
+    },
+    {
+      "id": "dijon-senf",
+      "name": "Dijon-Senf",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1 TL"
+      },
+      "pantry": true,
+      "note": "Linsen"
+    },
+    {
+      "id": "lorbeerblatt",
+      "name": "Lorbeerblatt",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1"
+      },
+      "pantry": true,
+      "note": "Linsen"
+    },
+    {
+      "id": "pfeffer",
+      "name": "Schwarzer Pfeffer",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Stil-Entscheidung",
+      "level": 2,
+      "markdown": "- **Ein großer Fisch statt zwei kleiner:** 1,2–1,5 kg Wolfsbarsch (*lubina*) oder Dorade (*dorada*) — der Effekt ist größer, das Fleisch dicker und saftiger, die Garzeit besser kontrollierbar. Zwei Fische à 600 g sind der Fallback, wenn Buhara nichts Großes hat.\n- **Nicht entschuppen.** Die Schuppen sind die Barriere zwischen Salz und Fleisch; fast alle spanischen und französischen Quellen lassen sie dran. Die Haut wird sowieso abgezogen. (America's Test Kitchen entschuppt — Minderheitsposition.)\n- **Kruste: Salz + Eiweiß + wenig Wasser.** Eiweiß macht die Kruste fest („Kleber\", Proteinkoagulation), sodass sie in Platten abzuheben ist. Reines Salz + Wasser funktioniert auch, bröselt beim Öffnen aber mehr.\n- **Kerntemperatur 63 °C**, nicht 55 °C: Die FDA nennt für Schwangere ausdrücklich 63 °C (145 °F) Kern für Fisch; Praxisempfehlungen für saftigen weißen Fisch liegen bei 54–57 °C. Wir gehen bewusst auf den sicheren Wert — in der Salzkruste ist das verschmerzbar, weil der Dampf die Trockenheit puffert. Nach der Schwangerschaft: bei 57 °C rausnehmen.\n- **Salsa verde italienisch** (Petersilie, Kapern, Knoblauch, Zitrone, Öl) statt Alioli: kein Ei, frischer, passt zum Linsensalat. Wer Alioli will: nach der Schwangerschaft.\n- **Linsen als KH-Träger** statt *patatas panadera*: niedriger GI, Protein, kalt oder lauwarm gut — und der Rest ist am nächsten Tag Mittagessen.",
+      "tags": [
+        "stil"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Buhara Seafood (vorher anrufen):** 1 ganzer Wolfsbarsch oder Dorade, **1,2–1,5 kg**, ausgenommen, **Kiemen entfernt, nicht entschuppt** — beim Bestellen genau so sagen, sonst wird er routinemäßig geschuppt. Wildfang oder Aquakultur ist geschmacklich beides okay; die Größe ist wichtiger. Fallback: 2 Fische à \\~600 g. Selgros TK ist bei ganzem Fisch zweite Wahl (Auftauen dauert, Textur leidet).\n- **Grobes Meersalz:** 2 kg (1,2–1,5-kg-Fisch), bei zwei Fischen nebeneinander 2,5 kg. REWE/Aldi „grobes Meersalz\" im 1-kg-Paket, \\~1 € — **kein feines Salz** (wird zu dicht, zieht Feuchtigkeit aus dem Fisch) und kein Fleur de Sel (Geldverschwendung).\n- **Linsen:** Beluga (schwarz) oder Berglinsen (REWE) — beide bleiben bissfest. Keine roten/gelben Linsen (zerfallen).\n- **Gemüse nach Markt:** Zucchini, Paprika, Fenchel, rote Zwiebel — was fest und frisch ist.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Pescado a la sal — Wolfsbarsch in der Salzkruste mit Salsa verde, Grillgemüse und Linsensalat (2 Erwachsene + Kind)",
+          "steps": [
+            {
+              "id": "linsen",
+              "label": "1",
+              "heading": "**1. Linsen (30 Min.)**",
+              "title": "Linsen",
+              "duration": {
+                "typical": "PT30M",
+                "source": "30 Min."
+              },
+              "text": "Ganz am Anfang — werden lauwarm serviert: 200 g Linsen abspülen, mit 1 Lorbeerblatt und 600 ml Wasser aufsetzen, **ohne Salz** aufkochen, 20–25 Min. sanft köcheln (Beluga eher 20, Berglinsen 25) — bissfest, nicht matschig. Abgießen, Lorbeer raus. Noch warm mit dem Dressing mischen: 2 Schalotten sehr fein gewürfelt, 3 EL Essig, 1 TL Dijon-Senf, 3 EL Olivenöl, ½ TL Salz, Pfeffer. Ziehen lassen; ½ Bund gehackte Petersilie erst kurz vor dem Servieren unterheben.",
+              "action": "Ganz am Anfang — werden lauwarm serviert: 200 g Linsen abspülen, mit 1 Lorbeerblatt und 600 ml Wasser aufsetzen, **ohne Salz** aufkochen, 20–25 Min. sanft köcheln (Beluga eher 20, Berglinsen 25) — bissfest, nicht matschig.",
+              "limits": [
+                "ohne Salz"
+              ],
+              "timers": [
+                {
+                  "label": "Linsen",
+                  "duration": {
+                    "min": "PT20M",
+                    "max": "PT25M"
+                  },
+                  "text": "20–25 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "linsen",
+                  "amount": {
+                    "text": "200 g Linsen",
+                    "value": 200.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "lorbeerblatt",
+                  "amount": {
+                    "text": "1 Lorbeerblatt",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "600 ml Wasser",
+                    "value": 600.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "schalotten",
+                  "amount": {
+                    "text": "2 Schalotten",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "weissweinessig",
+                  "amount": {
+                    "text": "3 EL Essig",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "dijon-senf",
+                  "amount": {
+                    "text": "1 TL Dijon-Senf",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "3 EL Olivenöl",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "petersilie",
+                  "amount": {
+                    "text": "½ Bund gehackte Petersilie",
+                    "value": 0.5,
+                    "unit": "Bund"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "fisch-vorbereiten",
+              "label": "2",
+              "heading": "**2. Fisch vorbereiten (10 Min.)**",
+              "title": "Fisch vorbereiten",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Ofen auf **200 °C Ober-/Unterhitze** vorheizen (Umluft 180 °C). Den Wolfsbarsch (1,2–1,5 kg, oder Dorade) innen und außen unter kaltem Wasser abspülen, **gründlich trocken tupfen** — auch die Bauchhöhle. Restliche Kiemenreste entfernen (bitter). **Nicht salzen, nicht einschneiden** — jeder Schnitt ist eine Tür fürs Salz. Bauchhöhle füllen mit: 1 Zitrone in Scheiben, dem Fenchelgrün, 4 Zweigen Thymian, 2 angedrückten Knoblauchzehen, ein paar Petersilienstielen. Nicht überstopfen — die Bauchlappen sollen anliegen.",
+              "action": "Ofen auf **200 °C Ober-/Unterhitze** vorheizen (Umluft 180 °C).",
+              "limits": [
+                "200 °C Ober-/Unterhitze",
+                "gründlich trocken tupfen",
+                "Nicht salzen, nicht einschneiden"
+              ],
+              "temps": [
+                {
+                  "kind": "ofen",
+                  "text": "200 °C",
+                  "value": 200
+                },
+                {
+                  "kind": "ziel",
+                  "text": "180 °C",
+                  "value": 180
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "1 Zitrone",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "thymian",
+                  "amount": {
+                    "text": "4 Zweigen Thymian",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauchzehen",
+                  "amount": {
+                    "text": "2 angedrückten Knoblauchzehen",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "wolfsbarsch",
+                  "amount": {
+                    "text": "1,2–1,5 kg",
+                    "value": 1.2,
+                    "unit": "kg",
+                    "max": 1.5
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "salzkruste",
+              "label": "3",
+              "heading": "**3. Salzkruste (10 Min.)**",
+              "title": "Salzkruste",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "3–4 Eiweiß (\\~120 g) in einer großen Schüssel mit dem Schneebesen schaumig, nicht steif schlagen. 2 kg grobes Meersalz dazu, mit den Händen mischen, dann **\\~80–100 ml Wasser** schluckweise einarbeiten, bis die Masse wie **nasser Strandsand** zusammenhält, wenn man sie drückt — nicht nass, nicht rieselnd. Tiefes Blech oder Bräter (der Fisch muss mit 2 cm Rand rundum reinpassen; ein 14L-Topf ist zu hoch, das große Ofenblech mit Backpapier geht) mit **1 cm Salzmasse** als Bett ausstreichen, etwas größer als der Fisch. Fisch drauflegen. Rest der Masse darüber verteilen und **1,5–2 cm dick** fest andrücken, Seiten geschlossen. **Kopf und Schwanzflosse dürfen herausschauen** — die Schwanzflosse ist die Garprobe (siehe „Garprobe & Ruhen“). Mit dem Messerrücken die Fisch-Silhouette in die Kruste ritzen, dann findet man später die Bauchlinie.",
+              "action": "3–4 Eiweiß (\\~120 g) in einer großen Schüssel mit dem Schneebesen schaumig, nicht steif schlagen.",
+              "limits": [
+                "\\~80–100 ml Wasser",
+                "nasser Strandsand",
+                "1 cm Salzmasse",
+                "1,5–2 cm dick",
+                "Kopf und Schwanzflosse dürfen herausschauen"
+              ],
+              "cues": [
+                "bis die Masse wie"
+              ],
+              "ingredients": [
+                {
+                  "ref": "eier",
+                  "amount": {
+                    "text": "3–4 Eiweiß",
+                    "value": 3.0,
+                    "unit": "Stück",
+                    "max": 4.0
+                  }
+                },
+                {
+                  "ref": "meersalz",
+                  "amount": {
+                    "text": "2 kg grobes Meersalz",
+                    "value": 2.0,
+                    "unit": "kg"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "80–100 ml Wasser",
+                    "value": 80.0,
+                    "unit": "ml",
+                    "max": 100.0
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 cm Salzmasse",
+                    "value": 1.0,
+                    "unit": "cm"
+                  }
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "backen",
+              "label": "4",
+              "heading": "**4. Backen (25–30 Min.)**",
+              "title": "Backen",
+              "duration": {
+                "min": "PT25M",
+                "max": "PT30M",
+                "source": "25–30 Min."
+              },
+              "text": "Bei **200 °C auf der mittleren Schiene 25–30 Min.** (Faustregel aller Quellen: \\~20 Min. pro kg + 5 Min.; 1,2 kg → 25 Min., 1,5 kg → 30 Min.; **zwei Fische à 600 g: 18–20 Min.**). Die Kruste wird hart, hellbeige und bekommt feine Risse (Dampfdruck = Fisch ist heiß).",
+              "action": "Bei **200 °C auf der mittleren Schiene 25–30 Min.** (Faustregel aller Quellen: \\~20 Min. pro kg + 5 Min.; 1,2 kg → 25 Min., 1,5 kg → 30 Min.; **zwei Fische à 600 g: 18–20 Min.**).",
+              "limits": [
+                "200 °C auf der mittleren Schiene 25–30 Min.",
+                "zwei Fische à 600 g: 18–20 Min."
+              ],
+              "timers": [
+                {
+                  "label": "Backen",
+                  "duration": {
+                    "min": "PT25M",
+                    "max": "PT30M"
+                  },
+                  "text": "25–30 Min."
+                },
+                {
+                  "label": "Backen",
+                  "duration": {
+                    "typical": "PT20M",
+                    "estimated": true
+                  },
+                  "text": "\\~20 Min."
+                },
+                {
+                  "label": "Backen",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                },
+                {
+                  "label": "Backen",
+                  "duration": {
+                    "typical": "PT25M"
+                  },
+                  "text": "25 Min."
+                },
+                {
+                  "label": "Backen",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "30 Min."
+                },
+                {
+                  "label": "Backen",
+                  "duration": {
+                    "min": "PT18M",
+                    "max": "PT20M"
+                  },
+                  "text": "18–20 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "200 °C",
+                  "value": 200
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nur Ofen · nach Salzkruste · Ofen 200 °C*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 200
+                }
+              ],
+              "only": [
+                "garen=ofen"
+              ],
+              "attention": "active",
+              "after": [
+                "step:salzkruste"
+              ]
+            },
+            {
+              "id": "grillen",
+              "label": "5",
+              "heading": "**5. Grillen (25–30 Min.)**",
+              "title": "Grillen",
+              "duration": {
+                "min": "PT25M",
+                "max": "PT30M",
+                "source": "25–30 Min."
+              },
+              "text": "Gasgrill mit Haube, indirekt: Fisch in der Kruste auf einem **grillfesten Blech** (Alublech oder Edelstahl-Auflaufform) in die **indirekte Zone**; Brenner darunter aus, seitliche Brenner auf **200–220 °C Haubenthermometer**. Haube zu, **25–30 Min.**, Thermometer wie unten. Der Vorteil: Ofen bleibt frei fürs Gemüse, und das Gemüse geht direkt über der Flamme in den letzten 10 Min. Wer ein paar Holzchips in eine Räucherbox legt, bekommt ein sanftes Raucharoma — die Kruste lässt genug davon durch.",
+              "action": "Gasgrill mit Haube, indirekt: Fisch in der Kruste auf einem **grillfesten Blech** (Alublech oder Edelstahl-Auflaufform) in die **indirekte Zone**; Brenner darunter aus, seitliche Brenner auf **200–220 °C Haubenthermometer**.",
+              "limits": [
+                "grillfesten Blech",
+                "indirekte Zone",
+                "200–220 °C Haubenthermometer",
+                "25–30 Min."
+              ],
+              "timers": [
+                {
+                  "label": "Grillen",
+                  "duration": {
+                    "min": "PT25M",
+                    "max": "PT30M"
+                  },
+                  "text": "25–30 Min."
+                },
+                {
+                  "label": "Grillen",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "200–220 °C",
+                  "min": 200,
+                  "max": 220
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nur Grill · nach Salzkruste · Grill*",
+              "claims": [
+                {
+                  "resource": "grill",
+                  "units": 1
+                }
+              ],
+              "only": [
+                "garen=grill"
+              ],
+              "attention": "active",
+              "after": [
+                "step:salzkruste"
+              ]
+            },
+            {
+              "id": "garprobe-ruhen",
+              "label": "6",
+              "heading": "**6. Garprobe & Ruhen (5 Min.)**",
+              "title": "Garprobe & Ruhen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "**Garprobe, zwei Wege:** 1. **Thermometer** (verbindlich): durch die Kiemenöffnung oder eine kleine Lücke in der Kruste hinter dem Kopf **schräg ins dickste Rückenfilet** stechen, nicht bis an die Wirbelsäule. **Ziel ≥ 63 °C.** Bei 60–62 °C: 3 Min. länger. Beim Ruhen steigt die Temperatur noch um 2–3 °C. 2. **Schwanzflosse ziehen** (spanische Tradition): löst sie sich mit sanftem Zug leicht aus der Haut, ist der Fisch gar. Nur als Vorcheck — messen trotzdem.\n**5 Min. ruhen lassen** in der Kruste (fertig garen, Saft setzt sich).",
+              "action": "**Garprobe, zwei Wege:** 1.",
+              "limits": [
+                "schräg ins dickste Rückenfilet",
+                "Ziel ≥ 63 °C.",
+                "Schwanzflosse ziehen",
+                "5 Min. ruhen lassen"
+              ],
+              "timers": [
+                {
+                  "label": "Garprobe & Ruhen",
+                  "duration": {
+                    "typical": "PT3M"
+                  },
+                  "text": "3 Min."
+                },
+                {
+                  "label": "Garprobe & Ruhen",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "≥ 63 °C",
+                  "value": 63
+                },
+                {
+                  "kind": "ziel",
+                  "text": "60–62 °C",
+                  "min": 60,
+                  "max": 62
+                },
+                {
+                  "kind": "ziel",
+                  "text": "2–3 °C",
+                  "min": 2,
+                  "max": 3
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Backen, Grillen · fertig bei ≥ 63 °C Kern*",
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei ≥ 63 °C Kern",
+                "value": 63
+              },
+              "attention": "active",
+              "after": [
+                "step:backen",
+                "step:grillen"
+              ]
+            },
+            {
+              "id": "grillgemuese",
+              "label": "7",
+              "heading": "**7. Grillgemüse (15 Min., parallel)**",
+              "title": "Grillgemüse",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "parallel": true,
+              "text": "In den letzten 15 Min.: 2 Zucchini und 1 Fenchelknolle auf der Mandoline in 4–5 mm Scheiben, 2 Spitzpaprika längs in Viertel, 1 rote Zwiebel in 1 cm Ringe. Mit 3 EL Olivenöl und ½ TL Salz mischen. **Ofen:** auf einem zweiten Blech mit Backpapier bei 200 °C (oberes Drittel) **15 Min.**, einmal wenden — oder **Grillpfanne** auf dem Herd, portionsweise 2–3 Min. pro Seite. Wer den Gasgrill nutzt: direkt über der Flamme, 2–3 Min. pro Seite. Vor dem Servieren Spritzer Zitrone.",
+              "action": "In den letzten 15 Min.: 2 Zucchini und 1 Fenchelknolle auf der Mandoline in 4–5 mm Scheiben, 2 Spitzpaprika längs in Viertel, 1 rote Zwiebel in 1 cm Ringe.",
+              "limits": [
+                "15 Min."
+              ],
+              "timers": [
+                {
+                  "label": "Grillgemüse",
+                  "duration": {
+                    "typical": "PT15M"
+                  },
+                  "text": "15 Min."
+                },
+                {
+                  "label": "Grillgemüse",
+                  "duration": {
+                    "typical": "PT15M"
+                  },
+                  "text": "15 Min."
+                },
+                {
+                  "label": "Grillgemüse",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                },
+                {
+                  "label": "Grillgemüse",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "200 °C",
+                  "value": 200
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "zucchini",
+                  "amount": {
+                    "text": "2 Zucchini",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "fenchelknolle",
+                  "amount": {
+                    "text": "1 Fenchelknolle",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "spitzpaprika",
+                  "amount": {
+                    "text": "2 Spitzpaprika",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "zwiebel",
+                  "amount": {
+                    "text": "1 rote Zwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "3 EL Olivenöl",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "salsa-verde",
+              "label": "8",
+              "heading": "**8. Salsa verde (10 Min., parallel)**",
+              "title": "Salsa verde",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "parallel": true,
+              "text": "Während der Fisch backt: 1½ Bund Petersilie (nur Blätter) mit optional einer Handvoll Basilikum/Minze fein hacken — **mit dem Messer, nicht mixen** (Mixer macht sie bitter und braun). 2 EL Kapern abgetropft und fein gehackt, 1 kleine Knoblauchzehe fein gerieben, Zeste von ½ Zitrone und 1 EL Zitronensaft, **120 ml Olivenöl**, Pfeffer. Salz nur nach Probieren — Kapern bringen genug. In 20 Min. Ziehzeit wird sie runder. *Ohne Sardellen (Leitfaden: salzgereift, nicht erhitzt). Wer Umami vermisst: 1 TL fein gehackte Kapern extra.*",
+              "action": "Während der Fisch backt: 1½ Bund Petersilie (nur Blätter) mit optional einer Handvoll Basilikum/Minze fein hacken — **mit dem Messer, nicht mixen** (Mixer macht sie bitter und braun).",
+              "limits": [
+                "mit dem Messer, nicht mixen",
+                "120 ml Olivenöl"
+              ],
+              "why": "Ohne Sardellen (Leitfaden: salzgereift, nicht erhitzt). Wer Umami vermisst: 1 TL fein gehackte Kapern extra.",
+              "timers": [
+                {
+                  "label": "Salsa verde",
+                  "duration": {
+                    "typical": "PT20M"
+                  },
+                  "text": "20 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "petersilie",
+                  "amount": {
+                    "text": "1½ Bund Petersilie",
+                    "value": 1.5,
+                    "unit": "Bund"
+                  }
+                },
+                {
+                  "ref": "kapern",
+                  "amount": {
+                    "text": "2 EL Kapern",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "knoblauchzehen",
+                  "amount": {
+                    "text": "1 kleine Knoblauchzehe",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "½ Zitrone",
+                    "value": 0.5,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "1 EL Zitronensaft",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "120 ml Olivenöl",
+                    "value": 120.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "aufklopfen-tranchieren",
+              "label": "9",
+              "heading": "**9. Aufklopfen & Tranchieren (ca. 10 Min.)**",
+              "title": "Aufklopfen & Tranchieren",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "text": "Am Tisch oder am Herd: Blech auf den Tisch (Untersetzer!). Mit dem Löffelrücken entlang der geritzten Bauchlinie **kräftig klopfen**, bis die Kruste bricht; obere Platte in Stücken abheben, Salzreste vom Fisch wegpinseln (Backpinsel oder Küchenpapier). **Haut vom Kopf zum Schwanz abziehen** — kommt mit den Schuppen in einem Stück. Oberes Filet mit zwei Löffeln entlang der Mittellinie vom Rückgrat lösen und abheben, Bauchgräten mitnehmen. Rückgrat samt Kopf abheben, unteres Filet freilegen, Haut unten drin lassen.",
+              "action": "Am Tisch oder am Herd: Blech auf den Tisch (Untersetzer!).",
+              "limits": [
+                "kräftig klopfen",
+                "Haut vom Kopf zum Schwanz abziehen"
+              ],
+              "cues": [
+                "bis die Kruste bricht"
+              ],
+              "ingredients": [],
+              "meta": "*nach Garprobe & Ruhen*",
+              "attention": "active",
+              "after": [
+                "step:garprobe-ruhen"
+              ]
+            },
+            {
+              "id": "anrichten",
+              "label": "10",
+              "heading": "**10. Anrichten (ca. 3 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT3M",
+                "source": "ca. 3 Min.",
+                "estimated": true
+              },
+              "text": "Fisch pur mit Salsa verde daneben (und etwas Olivenöl + Zitronenviertel — die spanische Minimalvariante), Grillgemüse und 3–4 EL lauwarmer Linsensalat pro Person.",
+              "action": "Fisch pur mit Salsa verde daneben (und etwas Olivenöl + Zitronenviertel — die spanische Minimalvariante), Grillgemüse und 3–4 EL lauwarmer Linsensalat pro Person.",
+              "ingredients": [
+                {
+                  "ref": "linsen",
+                  "amount": {
+                    "text": "3–4 EL lauwarmer Linsensalat",
+                    "value": 3.0,
+                    "unit": "EL",
+                    "max": 4.0
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "etwas Olivenöl"
+                  }
+                }
+              ],
+              "meta": "*nach Aufklopfen & Tranchieren, Linsen, Grillgemüse, Salsa verde*",
+              "attention": "active",
+              "after": [
+                "step:aufklopfen-tranchieren",
+                "step:linsen",
+                "step:grillgemuese",
+                "step:salsa-verde"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Wichtig fürs Kind (und alle)",
+      "level": "bold",
+      "markdown": "**Wichtig fürs Kind (und alle):** Filets auf dem Teller nochmal mit den Fingern auf Gräten prüfen — Wolfsbarsch hat feine Rückengräten am Filetrand.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "kochtag",
+            "text": "Linsen aufsetzen, Dressing anrühren",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT80M"
+            },
+            "source": "T−1:20"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Ofen an, Fisch vorbereiten, Kruste bauen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT60M"
+            },
+            "source": "T−1:00",
+            "steps": [
+              "fisch-vorbereiten"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Fisch in den Ofen. Gemüse schneiden und ölen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT45M"
+            },
+            "source": "T−0:45"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Salsa verde hacken",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT35M"
+            },
+            "source": "T−0:35",
+            "steps": [
+              "salsa-verde"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Gemüse in den Ofen (oberes Drittel) bzw. auf den Grill",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT15M"
+            },
+            "source": "T−0:15"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Fisch raus (Thermometer ≥ 63 °C), 5 Min. ruhen. Petersilie in die Linsen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT5M"
+            },
+            "source": "T−0:05",
+            "steps": [
+              "linsen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Kruste aufklopfen, tranchieren, essen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT0M"
+            },
+            "source": "T−0"
+          }
+        ]
+      }
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "- **Fisch:** Wolfsbarsch und Dorade stehen auf der BfR-Liste der unkritischen Arten (niedriger Methylquecksilbergehalt), 2 Portionen Seefisch pro Woche sind ausdrücklich erwünscht (Jod, Omega-3). **Nicht ersetzen durch:** Heilbutt, Seeteufel, Rotbarsch, Thunfisch — die typischen Alternativ-Vorschläge beim Händler.\n- **Kerntemperatur ≥ 63 °C** nach FDA-Empfehlung für Schwangere („Finfish … 145 °F\"); der Leitfaden verlangt ohnehin durchgegart. Nicht am Rückgrat messen (kältester Punkt ist die Filetmitte, nicht der Knochen).\n- **Eiweiß in der Kruste** wird 25–30 Min. bei 200 °C gebacken und nicht gegessen — kein Rohei-Thema. Eigelbe aufheben (Pasta, Kuchen).\n- **Salsa verde ohne Sardellen** (salzgereift, nicht erhitzt — der Leitfaden ist hier konservativ). Kapern sind essig-/salzkonserviert, unkritisch.\n- **KH pro Portion:** Linsensalat 3–4 EL (\\~80 g gekocht ≈ 15 g KH, niedriger GI, 7 g Protein), Grillgemüse \\~6 g → **\\~20 g KH**, mit sehr viel Protein aus dem Fisch. Das ist am unteren Ende der Leitfaden-Spanne — bewusst, weil der Fisch die Mahlzeit ist; wer mehr braucht: doppelte Linsen oder 1 Scheibe Vollkornbrot zur Salsa verde. **Kartoffel-Option** (spanischer Kanon, *patatas panadera*): 2–3 kleine festkochende Kartoffeln pro Person in Scheiben unters Grillgemüse — höherer GI, aber mit Fisch und Öl abgepuffert; Messgerät entscheidet.\n- **Reste:** Fisch am nächsten Tag kalt mit Salsa verde und Linsen ist ausgezeichnet — für Schwangere aber nur, wenn er sofort nach dem Essen gekühlt wurde; sonst Reste den anderen überlassen.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Gräten:** Rückenmitte des oberen Filets (grätenärmster Teil) fürs Kind, mit den Fingern durchgehen. Kein Bauchlappen (Gräten), kein Randstreifen.\n- **Salsa verde** für das Kind ohne Knoblauch: 2 EL vor dem Knoblauch abnehmen, oder einfach Olivenöl + Zitrone. Fisch pur mit Zitrone ist ohnehin die sicherere Wette.\n- **Mitmachen:** Salz-Sand kneten und den Fisch „vergraben\" ist ein Kinder-Highlight; Aufklopfen mit dem Löffel auch (Untersetzer, heiße Kruste — Hand führen).\n- **Linsen + Gemüse** sind neutral; Zucchini/Paprika bekannt.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Salz nicht wiederverwenden** (Fischsaft, Eiweiß) — in den Müll, nicht in den Abfluss (verklumpt). Backpapier unterlegen macht die Reinigung trivial.\n- **Zwei kleine Fische:** nebeneinander mit 3 cm Abstand, 2,5 kg Salz, 18–20 Min. — jeder einzeln messen.\n- **Warum nicht der 14L-Topf:** zu hoch, zu dick — die Kruste braucht direkte Strahlungshitze von oben. Blech oder flacher Bräter.\n- **Kruste zu nass:** sie wird glasig und läuft; **zu trocken:** sie zerfällt beim Aufklopfen zu Sand statt zu Platten. Der Test „nasser Strandsand, hält geformt\" ist verlässlich.\n- **Menü-Gedanke:** funktioniert mit dem Fenchel-Orange-Salat aus der Bouillabaisse als Vorspeise; Linsen dann weglassen.",
+      "tags": [
+        "notizen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Verhältnis, Temperatur, Zeit pro kg (spanisch):** [Directo al Paladar — Cómo cocinar un pescado a la sal](https://www.directoalpaladar.com/curso-de-cocina/como-cocinar-pescado-a-sal-te-quede-perfecto-no-hayas-hecho-nunca): \\~2 kg *sal gruesa* pro Fisch mit geschlagenem Eiweiß, 190 °C, 1 kg → 20 Min., 1,5 kg → 28 Min., **nicht entschuppen**, Schwanzflossen-Test. Silhouette in die Kruste ritzen: [Directo al Paladar — Lubina a la sal](https://www.directoalpaladar.com/recetas-de-pescados-y-mariscos/como-hacer-la-lubina-a-la-sal-y-dos-trucos-para-que-salga-perfecta). Eiweiß als „Kleber\", Wasser reicht auch, Risse = gar, 5 Min. ruhen: [Directo al Paladar — López Nicolás (Biochemie)](https://www.directoalpaladar.com/curso-de-cocina/secreto-para-cocinar-mejor-dorada-a-sal-esta-ciencia-este-experto-bioquimica-tiene-claves). [Hogarmania/Arguiñano — Dorada a la sal](https://www.hogarmania.com/cocina/recetas/pescados-mariscos/dorada-a-la-sal.html): Salz = 2× Fischgewicht, 200–240 °C, 25–30 Min./kg, Garprobe „Auge wird weiß\". [Aceites de Oliva de España](https://www.aceitesdeolivadeespana.com/recetas/dorada-a-la-sal/): Schicht „un dedo\" dick, Schuppen dran.\n- **Französisch:** [Un déjeuner de soleil — Bar en croûte de sel](https://www.undejeunerdesoleil.com/2019/01/bar-croute-sel.html): 1,2 kg Fisch, 1,6 kg Salz, 1–2 Eiweiß optional, 200 °C, 25–30 Min., 5 Min. Ruhe — die Vorlage für unsere Zeit. [Le Guérandais](https://www.leguerandais.fr/en/our-recipes/sea-bass-guerande-salt-crust) geht mit 45 Min. deutlich länger (bei 210 °C und 3 Eiweiß) — zeigt die Spanne; deshalb Thermometer statt Uhr. Bocuses berühmter *Loup en croûte* ist Blätterteig, keine Salzkruste — nicht die Referenz.\n- **Getestete Gegenposition:** [America's Test Kitchen — Salt-Baked Whole Branzino](https://www.americastestkitchen.com/recipes/13572-salt-baked-whole-branzino): 2 Fische à 680–900 g, 1,36 kg Salz + 4 Eiweiß + 160 ml Wasser, 163 °C, 40–45 Min. auf 57 °C, Thermometer durch die Kiemenöffnung, **entschuppt**. Wir übernehmen die Thermometer-Route und die Eiweißmenge, bleiben aber bei Schuppen dran und 200 °C (Mehrheit der Quellen, kürzer).\n- **Grill indirekt:** [Kamado Joe — Salt Crusted Branzino](https://www.kamadojoe.com/blogs/recipes/salt-crusted-bronzino): indirekt 220 °C, Fisch im grillfesten Blech, bis 63 °C, 5 Min. Ruhe. Carry-over 3–6 °C beim ganzen Fisch: [Weber — Baked Snapper](https://anz.weber.com/en-au/blogs/recipes/baked-snapper).\n- **Kerntemperatur:** [FDA — Food Safety for Moms-to-Be](https://www.fda.gov/food/people-risk-foodborne-illness/cooking-food-safety-moms-be): „Finfish should be cooked to an internal temperature of 145 °F (63 °C)\". Praxiswerte für saftigen weißen Fisch 54–57 °C: [ThermoWorks — Seafood Temperatures](https://blog.thermoworks.com/recommended-temperatures-seafood/) — bewusst nicht gewählt (Schwangerschaft).\n- **Fischauswahl:** BfR-FAQ Methylquecksilber (04/2026), verlinkt im Leitfaden — Wolfsbarsch, Dorade unkritisch.\n- **Begleiter-Kanon Spanien** (Alioli, Salsa tártara, Öl mit Knoblauch/Petersilie, *ajada*, *patatas panadera*, *ensalada mixta*): Directo al Paladar, Hogarmania. Alioli/Tártara (rohes Ei) hier bewusst durch Salsa verde ersetzt.",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T18:49:22Z",
+    "sourceHash": "cfbb06e0a6964393",
+    "select": {
+      "garen": "ofen"
+    },
+    "quantities": [
+      {
+        "ingredient": "wolfsbarsch",
+        "total": {
+          "text": "1200–1500 g",
+          "value": 1200.0,
+          "max": 1500.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1,2–1,5 kg"
+        }
+      },
+      {
+        "ingredient": "zitronen",
+        "total": {
+          "text": "1½ (+ EL ungemischt)",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Zitrone + ½ Zitrone"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "fenchelknolle",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Fenchelknolle"
+        }
+      },
+      {
+        "ingredient": "zucchini",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 Zucchini"
+        }
+      },
+      {
+        "ingredient": "spitzpaprika",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 Spitzpaprika"
+        }
+      },
+      {
+        "ingredient": "zwiebel",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 rote Zwiebel"
+        }
+      },
+      {
+        "ingredient": "schalotten",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 Schalotten"
+        }
+      },
+      {
+        "ingredient": "petersilie",
+        "total": {
+          "text": "2 Bund",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Bund",
+          "approx": false
+        },
+        "perTask": {
+          "main": "½ Bund gehackte Petersilie + 1½ Bund Petersilie"
+        }
+      },
+      {
+        "ingredient": "thymian",
+        "total": {
+          "text": "4",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "4 Zweigen Thymian"
+        }
+      },
+      {
+        "ingredient": "knoblauchzehen",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 angedrückten Knoblauchzehen + 1 kleine Knoblauchzehe"
+        }
+      },
+      {
+        "ingredient": "basilikum",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "eier",
+        "total": {
+          "text": "3–4",
+          "value": 3.0,
+          "max": 4.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "3–4 Eiweiß"
+        }
+      },
+      {
+        "ingredient": "meersalz",
+        "total": {
+          "text": "2000 g",
+          "value": 2000.0,
+          "max": 2000.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 kg grobes Meersalz"
+        }
+      },
+      {
+        "ingredient": "linsen",
+        "total": {
+          "text": "200 g (+ EL ungemischt)",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "200 g Linsen"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "kapern",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 EL Kapern"
+        }
+      },
+      {
+        "ingredient": "olivenoel",
+        "total": {
+          "text": "6 EL (+ ml ungemischt)",
+          "value": 6.0,
+          "max": 6.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "3 EL Olivenöl + 3 EL Olivenöl"
+        },
+        "unitless": [
+          "etwas Olivenöl"
+        ],
+        "unitMixed": true
+      },
+      {
+        "ingredient": "weissweinessig",
+        "total": {
+          "text": "3 EL",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "3 EL Essig"
+        }
+      },
+      {
+        "ingredient": "dijon-senf",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 TL Dijon-Senf"
+        }
+      },
+      {
+        "ingredient": "lorbeerblatt",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Lorbeerblatt"
+        }
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "1 TL (+ cm ungemischt)",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "½ TL Salz + ½ TL Salz"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "680–700 ml",
+          "value": 680.0,
+          "max": 700.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "600 ml Wasser + 80–100 ml Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Buhara Seafood",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "wolfsbarsch",
+            "name": "ganzer Wolfsbarsch oder Dorade, 1,2–1,5 kg",
+            "need": {
+              "text": "1200–1500 g",
+              "value": 1200.0,
+              "max": 1500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "1200–1500 g",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "ausgenommen, Kiemen raus, **mit Schuppen**; Fallback: 2 Stück à 600 g"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "zitronen",
+            "name": "Zitronen",
+            "need": {
+              "text": "1½ (+ EL ungemischt)",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1½",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "1 in den Fisch, 1 Salsa verde und Servieren"
+          },
+          {
+            "ingredient": "fenchelknolle",
+            "name": "Fenchelknolle mit Grün",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "Grün in den Fisch, Knolle ins Grillgemüse"
+          },
+          {
+            "ingredient": "zucchini",
+            "name": "mittlere Zucchini",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "\\~500 g"
+          },
+          {
+            "ingredient": "spitzpaprika",
+            "name": "rote Spitzpaprika",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            }
+          },
+          {
+            "ingredient": "zwiebel",
+            "name": "rote Zwiebel",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "Grillgemüse"
+          },
+          {
+            "ingredient": "schalotten",
+            "name": "Schalotten",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "Linsensalat"
+          },
+          {
+            "ingredient": "petersilie",
+            "name": "glatte Petersilie",
+            "need": {
+              "text": "2 Bund",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Bund",
+              "approx": false
+            },
+            "display": "2 Bund",
+            "inStock": false,
+            "buy": {
+              "text": "2 Bund"
+            },
+            "note": "1½ Salsa verde, ½ Linsen"
+          },
+          {
+            "ingredient": "thymian",
+            "name": "Thymian",
+            "need": {
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "4",
+            "inStock": false,
+            "buy": {
+              "text": "4 Zweige"
+            }
+          },
+          {
+            "ingredient": "knoblauchzehen",
+            "name": "Knoblauchzehen",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            },
+            "note": "1 Salsa verde, 2 in den Fisch"
+          },
+          {
+            "ingredient": "basilikum",
+            "name": "Basilikum oder Minze",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            },
+            "optional": true,
+            "note": "Salsa verde"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "eier",
+            "name": "Eier",
+            "need": {
+              "text": "3–4",
+              "value": 3.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3–4",
+            "inStock": false,
+            "buy": {
+              "text": "4"
+            },
+            "note": "nur Eiweiß, 3–4 Stück — Eigelb für anderes aufheben; Eiweiß wird nicht gegessen"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "meersalz",
+            "name": "grobes Meersalz",
+            "need": {
+              "text": "2000 g",
+              "value": 2000.0,
+              "max": 2000.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "2000 g",
+            "inStock": false,
+            "buy": {
+              "text": "2 kg"
+            },
+            "note": "2 Pakete à 1 kg; bei 2 Fischen 3 Pakete"
+          },
+          {
+            "ingredient": "linsen",
+            "name": "Linsen",
+            "need": {
+              "text": "200 g (+ EL ungemischt)",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "200 g",
+            "inStock": false,
+            "buy": {
+              "text": "200 g"
+            },
+            "note": "Beluga- oder Berglinsen"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "kapern",
+            "name": "Kapern",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "buy": {
+              "text": "2 EL"
+            },
+            "pantry": true,
+            "note": "Glas"
+          },
+          {
+            "ingredient": "olivenoel",
+            "name": "gutes Olivenöl",
+            "need": {
+              "text": "6 EL (+ ml ungemischt)",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "6 EL",
+            "inStock": false,
+            "buy": {
+              "text": "250 ml"
+            },
+            "pantry": true,
+            "note": "Gesamtverbrauch \\~210 ml, davon 120 ml Salsa verde"
+          },
+          {
+            "ingredient": "weissweinessig",
+            "name": "Weißweinessig oder Sherryessig",
+            "need": {
+              "text": "3 EL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "3 EL",
+            "inStock": false,
+            "buy": {
+              "text": "3 EL"
+            },
+            "pantry": true,
+            "note": "Linsen"
+          },
+          {
+            "ingredient": "dijon-senf",
+            "name": "Dijon-Senf",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 TL"
+            },
+            "pantry": true,
+            "note": "Linsen"
+          },
+          {
+            "ingredient": "lorbeerblatt",
+            "name": "Lorbeerblatt",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "pantry": true,
+            "note": "Linsen"
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Schwarzer Pfeffer",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "1 TL (+ cm ungemischt)",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "680–700 ml",
+              "value": 680.0,
+              "max": 700.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "680–700 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "key": "garen=grill",
+        "select": {
+          "garen": "grill"
+        },
+        "quantities": [
+          {
+            "ingredient": "wolfsbarsch",
+            "total": {
+              "text": "1200–1500 g",
+              "value": 1200.0,
+              "max": 1500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1,2–1,5 kg"
+            }
+          },
+          {
+            "ingredient": "zitronen",
+            "total": {
+              "text": "1½ (+ EL ungemischt)",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 Zitrone + ½ Zitrone"
+            },
+            "unitMixed": true
+          },
+          {
+            "ingredient": "fenchelknolle",
+            "total": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 Fenchelknolle"
+            }
+          },
+          {
+            "ingredient": "zucchini",
+            "total": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "main": "2 Zucchini"
+            }
+          },
+          {
+            "ingredient": "spitzpaprika",
+            "total": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "main": "2 Spitzpaprika"
+            }
+          },
+          {
+            "ingredient": "zwiebel",
+            "total": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 rote Zwiebel"
+            }
+          },
+          {
+            "ingredient": "schalotten",
+            "total": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "main": "2 Schalotten"
+            }
+          },
+          {
+            "ingredient": "petersilie",
+            "total": {
+              "text": "2 Bund",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Bund",
+              "approx": false
+            },
+            "perTask": {
+              "main": "½ Bund gehackte Petersilie + 1½ Bund Petersilie"
+            }
+          },
+          {
+            "ingredient": "thymian",
+            "total": {
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "main": "4 Zweigen Thymian"
+            }
+          },
+          {
+            "ingredient": "knoblauchzehen",
+            "total": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "main": "2 angedrückten Knoblauchzehen + 1 kleine Knoblauchzehe"
+            }
+          },
+          {
+            "ingredient": "basilikum",
+            "total": {
+              "text": ""
+            },
+            "perTask": {}
+          },
+          {
+            "ingredient": "eier",
+            "total": {
+              "text": "3–4",
+              "value": 3.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "main": "3–4 Eiweiß"
+            }
+          },
+          {
+            "ingredient": "meersalz",
+            "total": {
+              "text": "2000 g",
+              "value": 2000.0,
+              "max": 2000.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "2 kg grobes Meersalz"
+            }
+          },
+          {
+            "ingredient": "linsen",
+            "total": {
+              "text": "200 g (+ EL ungemischt)",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "200 g Linsen"
+            },
+            "unitMixed": true
+          },
+          {
+            "ingredient": "kapern",
+            "total": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "main": "2 EL Kapern"
+            }
+          },
+          {
+            "ingredient": "olivenoel",
+            "total": {
+              "text": "6 EL (+ ml ungemischt)",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "main": "3 EL Olivenöl + 3 EL Olivenöl"
+            },
+            "unitless": [
+              "etwas Olivenöl"
+            ],
+            "unitMixed": true
+          },
+          {
+            "ingredient": "weissweinessig",
+            "total": {
+              "text": "3 EL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "main": "3 EL Essig"
+            }
+          },
+          {
+            "ingredient": "dijon-senf",
+            "total": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 TL Dijon-Senf"
+            }
+          },
+          {
+            "ingredient": "lorbeerblatt",
+            "total": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 Lorbeerblatt"
+            }
+          },
+          {
+            "ingredient": "pfeffer",
+            "total": {
+              "text": ""
+            },
+            "perTask": {}
+          },
+          {
+            "ingredient": "salz",
+            "total": {
+              "text": "1 TL (+ cm ungemischt)",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "main": "½ TL Salz + ½ TL Salz"
+            },
+            "unitMixed": true
+          },
+          {
+            "ingredient": "wasser",
+            "total": {
+              "text": "680–700 ml",
+              "value": 680.0,
+              "max": 700.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "perTask": {
+              "main": "600 ml Wasser + 80–100 ml Wasser"
+            }
+          }
+        ],
+        "shopping": [
+          {
+            "store": "Buhara Seafood",
+            "group": "Fleisch & Fisch",
+            "items": [
+              {
+                "ingredient": "wolfsbarsch",
+                "name": "ganzer Wolfsbarsch oder Dorade, 1,2–1,5 kg",
+                "need": {
+                  "text": "1200–1500 g",
+                  "value": 1200.0,
+                  "max": 1500.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "1200–1500 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                },
+                "note": "ausgenommen, Kiemen raus, **mit Schuppen**; Fallback: 2 Stück à 600 g"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Obst & Gemüse",
+            "items": [
+              {
+                "ingredient": "zitronen",
+                "name": "Zitronen",
+                "need": {
+                  "text": "1½ (+ EL ungemischt)",
+                  "value": 1.5,
+                  "max": 1.5,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "1½",
+                "inStock": false,
+                "buy": {
+                  "text": "2"
+                },
+                "note": "1 in den Fisch, 1 Salsa verde und Servieren"
+              },
+              {
+                "ingredient": "fenchelknolle",
+                "name": "Fenchelknolle mit Grün",
+                "need": {
+                  "text": "1",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "1",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                },
+                "note": "Grün in den Fisch, Knolle ins Grillgemüse"
+              },
+              {
+                "ingredient": "zucchini",
+                "name": "mittlere Zucchini",
+                "need": {
+                  "text": "2",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "2",
+                "inStock": false,
+                "buy": {
+                  "text": "2"
+                },
+                "note": "\\~500 g"
+              },
+              {
+                "ingredient": "spitzpaprika",
+                "name": "rote Spitzpaprika",
+                "need": {
+                  "text": "2",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "2",
+                "inStock": false,
+                "buy": {
+                  "text": "2"
+                }
+              },
+              {
+                "ingredient": "zwiebel",
+                "name": "rote Zwiebel",
+                "need": {
+                  "text": "1",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "1",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                },
+                "note": "Grillgemüse"
+              },
+              {
+                "ingredient": "schalotten",
+                "name": "Schalotten",
+                "need": {
+                  "text": "2",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "2",
+                "inStock": false,
+                "buy": {
+                  "text": "2"
+                },
+                "note": "Linsensalat"
+              },
+              {
+                "ingredient": "petersilie",
+                "name": "glatte Petersilie",
+                "need": {
+                  "text": "2 Bund",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "Bund",
+                  "approx": false
+                },
+                "display": "2 Bund",
+                "inStock": false,
+                "buy": {
+                  "text": "2 Bund"
+                },
+                "note": "1½ Salsa verde, ½ Linsen"
+              },
+              {
+                "ingredient": "thymian",
+                "name": "Thymian",
+                "need": {
+                  "text": "4",
+                  "value": 4.0,
+                  "max": 4.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "4",
+                "inStock": false,
+                "buy": {
+                  "text": "4 Zweige"
+                }
+              },
+              {
+                "ingredient": "knoblauchzehen",
+                "name": "Knoblauchzehen",
+                "need": {
+                  "text": "3",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "3",
+                "inStock": false,
+                "buy": {
+                  "text": "3"
+                },
+                "note": "1 Salsa verde, 2 in den Fisch"
+              },
+              {
+                "ingredient": "basilikum",
+                "name": "Basilikum oder Minze",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Bund"
+                },
+                "optional": true,
+                "note": "Salsa verde"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Milchprodukte & Eier",
+            "items": [
+              {
+                "ingredient": "eier",
+                "name": "Eier",
+                "need": {
+                  "text": "3–4",
+                  "value": 3.0,
+                  "max": 4.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "3–4",
+                "inStock": false,
+                "buy": {
+                  "text": "4"
+                },
+                "note": "nur Eiweiß, 3–4 Stück — Eigelb für anderes aufheben; Eiweiß wird nicht gegessen"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Trockenwaren",
+            "items": [
+              {
+                "ingredient": "meersalz",
+                "name": "grobes Meersalz",
+                "need": {
+                  "text": "2000 g",
+                  "value": 2000.0,
+                  "max": 2000.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "2000 g",
+                "inStock": false,
+                "buy": {
+                  "text": "2 kg"
+                },
+                "note": "2 Pakete à 1 kg; bei 2 Fischen 3 Pakete"
+              },
+              {
+                "ingredient": "linsen",
+                "name": "Linsen",
+                "need": {
+                  "text": "200 g (+ EL ungemischt)",
+                  "value": 200.0,
+                  "max": 200.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "200 g",
+                "inStock": false,
+                "buy": {
+                  "text": "200 g"
+                },
+                "note": "Beluga- oder Berglinsen"
+              }
+            ]
+          },
+          {
+            "store": "Vorrat",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "kapern",
+                "name": "Kapern",
+                "need": {
+                  "text": "2 EL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "2 EL",
+                "inStock": false,
+                "buy": {
+                  "text": "2 EL"
+                },
+                "pantry": true,
+                "note": "Glas"
+              },
+              {
+                "ingredient": "olivenoel",
+                "name": "gutes Olivenöl",
+                "need": {
+                  "text": "6 EL (+ ml ungemischt)",
+                  "value": 6.0,
+                  "max": 6.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "6 EL",
+                "inStock": false,
+                "buy": {
+                  "text": "250 ml"
+                },
+                "pantry": true,
+                "note": "Gesamtverbrauch \\~210 ml, davon 120 ml Salsa verde"
+              },
+              {
+                "ingredient": "weissweinessig",
+                "name": "Weißweinessig oder Sherryessig",
+                "need": {
+                  "text": "3 EL",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "3 EL",
+                "inStock": false,
+                "buy": {
+                  "text": "3 EL"
+                },
+                "pantry": true,
+                "note": "Linsen"
+              },
+              {
+                "ingredient": "dijon-senf",
+                "name": "Dijon-Senf",
+                "need": {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "1 TL",
+                "inStock": false,
+                "buy": {
+                  "text": "1 TL"
+                },
+                "pantry": true,
+                "note": "Linsen"
+              },
+              {
+                "ingredient": "lorbeerblatt",
+                "name": "Lorbeerblatt",
+                "need": {
+                  "text": "1",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "1",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                },
+                "pantry": true,
+                "note": "Linsen"
+              },
+              {
+                "ingredient": "pfeffer",
+                "name": "Schwarzer Pfeffer",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "salz",
+                "name": "Salz",
+                "need": {
+                  "text": "1 TL (+ cm ungemischt)",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "1 TL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "wasser",
+                "name": "Wasser",
+                "need": {
+                  "text": "680–700 ml",
+                  "value": 680.0,
+                  "max": 700.0,
+                  "unit": "ml",
+                  "approx": false
+                },
+                "display": "680–700 ml",
+                "inStock": false,
+                "pantry": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
