@@ -1,7 +1,7 @@
 // Node-Tests der reinen Kochmodus-Funktionen gegen das thit-kho-Beispiel.
 import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
-import { escapeTilde, fmtAmount, fmtClock, highlight, isoSeconds, notesMarkdown, remainderAfterAction,
+import { escapeTilde, fmtAmount, fmtClock, highlight, isoSeconds, normalizeState, notesMarkdown, remainderAfterAction,
          scaleAmount, scaleStepText, timerChoices } from "../kochmodus/lib.js";
 
 const r = JSON.parse(readFileSync(new URL("../schema/beispiele/thit-kho-trung.json", import.meta.url), "utf8"));
@@ -55,5 +55,13 @@ t("Details wiederholen die Kurzansicht nicht", () => {
   assert.ok(rest.startsWith("Warten, bis das Karamell"), rest);
   assert.equal(remainderAfterAction(steps["pickle-und-reis"].text, steps["pickle-und-reis"]), "");
   assert.equal(remainderAfterAction(steps.schmoren.text, steps.schmoren), steps.schmoren.text); // abgeleitet → alles
+});
+t("Alter localStorage-Zustand (timers als Objekt) wird migriert, Müll verworfen", () => {
+  const old = { done: { karamell: true }, notes: { karamell: "x" }, timers: { "schmoren#0.0": 1760000000000, kaputt: "nein" }, factor: "2" };
+  const s = normalizeState(old);
+  assert.deepEqual(s.timers.map((t) => [t.step, t.end]), [["schmoren", 1760000000000]]);
+  assert.equal(s.factor, 2); assert.equal(s.done.karamell, true); assert.deepEqual(s.shop, {});
+  assert.deepEqual(normalizeState(null).timers, []);
+  assert.deepEqual(normalizeState({ timers: "quatsch", done: [], factor: -1 }), { done: {}, notes: {}, shop: {}, timers: [], factor: 1 });
 });
 console.log(`${n} Tests ok`);

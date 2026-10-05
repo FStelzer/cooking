@@ -131,3 +131,18 @@ export function remainderAfterAction(text, step) {
   const a = step.action.trim();
   return text.startsWith(a) ? text.slice(a.length).trim() : text;
 }
+
+// Gespeicherten Zustand auf die aktuelle Form bringen (alte Fassungen, kaputte Werte).
+export function normalizeState(raw) {
+  const s = raw && typeof raw === "object" ? raw : {};
+  const obj = (v) => (v && typeof v === "object" && !Array.isArray(v) ? v : {});
+  let timers = Array.isArray(s.timers) ? s.timers : [];
+  if (!Array.isArray(s.timers) && s.timers && typeof s.timers === "object") {
+    // Erste Fassung: { "<step>#i.j": endTs }
+    timers = Object.entries(s.timers).filter(([, end]) => typeof end === "number")
+      .map(([key, end]) => ({ id: key, step: key.split("#")[0], label: "Timer", end, paused: false, left: 0 }));
+  }
+  timers = timers.filter((t) => t && typeof t === "object" && typeof t.end === "number");
+  const factor = Number(s.factor);
+  return { done: obj(s.done), notes: obj(s.notes), shop: obj(s.shop), timers, factor: factor > 0 ? factor : 1 };
+}

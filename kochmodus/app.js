@@ -1,5 +1,5 @@
-import { escapeTilde, fmtAmount, fmtClock, highlight, isoSeconds, notesMarkdown, remainderAfterAction,
-         scaleAmount, scaleStepText, timerChoices } from "./lib.js";
+import { escapeTilde, fmtAmount, fmtClock, highlight, isoSeconds, normalizeState, notesMarkdown,
+         remainderAfterAction, scaleAmount, scaleStepText, timerChoices } from "./lib.js";
 
 const params = new URLSearchParams(location.search);
 const RECIPE_URL = params.get("r") || "../schema/beispiele/thit-kho-trung.json";
@@ -14,8 +14,9 @@ const main = $("#main"), sheet = $("#sheet"), backdrop = $("#backdrop"), dock = 
 
 // ---- Zustand (localStorage, Schlüssel = Rezept-ID + Slug) -----------------
 function loadState(id) {
-  try { return Object.assign({ done: {}, notes: {}, timers: [], shop: {}, factor: 1 }, JSON.parse(localStorage.getItem("km:" + id)) || {}); }
-  catch { return { done: {}, notes: {}, timers: [], shop: {}, factor: 1 }; }
+  let raw = null;
+  try { raw = JSON.parse(localStorage.getItem("km:" + id)); } catch {}
+  return normalizeState(raw);
 }
 function save() { try { localStorage.setItem("km:" + recipe.id, JSON.stringify(state)); } catch {} }
 const factor = () => +state.factor || 1;

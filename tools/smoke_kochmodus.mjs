@@ -31,9 +31,14 @@ try {
   const page = await browser.newPage({ viewport: { width: 390, height: 844 } }); // Smartphone
   page.on("pageerror", (e) => errors.push(String(e)));
   page.on("console", (m) => { if (m.type() === "error") errors.push(m.text()); });
+  // Alten Zustand der ersten Fassung vorab setzen (timers als Objekt) — darf nicht crashen
+  await page.addInitScript(() => { if (!localStorage.getItem("km:gerichte/thit-kho-trung"))
+    localStorage.setItem("km:gerichte/thit-kho-trung", JSON.stringify({ timers: { "schmoren#0.0": Date.now() + 60000 } })); });
   await page.goto(`http://127.0.0.1:${PORT}/kochmodus/`);
   await page.waitForSelector(".row[data-step]");
   assert.equal(await page.locator(".row[data-step]").count(), 9, "9 Schritte erwartet");
+  assert.equal(await page.locator(".dock .tm").count(), 1, "migrierter Timer fehlt im Dock");
+  await page.click('.dock [data-tact="stop"]');
   assert.match(await page.locator("#title").innerText(), /Thịt kho/);
   const k4 = page.locator('.row[data-step="karamell"]');
   assert.match(await k4.innerText(), /3 EL Zucker/);
