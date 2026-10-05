@@ -32,47 +32,63 @@ try {
   page.on("pageerror", (e) => errors.push(String(e)));
   page.on("console", (m) => { if (m.type() === "error") errors.push(m.text()); });
   await page.goto(`http://127.0.0.1:${PORT}/kochmodus/`);
-  await page.waitForSelector(".card");
-  assert.equal(await page.locator(".card").count(), 9, "9 Schritte erwartet");
+  await page.waitForSelector(".row[data-step]");
+  assert.equal(await page.locator(".row[data-step]").count(), 9, "9 Schritte erwartet");
   assert.match(await page.locator("#title").innerText(), /Thịt kho/);
-  const k4 = page.locator('.card[data-step="karamell"]');
+  const k4 = page.locator('.row[data-step="karamell"]');
   assert.match(await k4.innerText(), /3 EL Zucker/);
-  assert.ok((await k4.locator("mark.cue").count()) >= 1, "Cue-Hervorhebung fehlt");
+  assert.equal(await k4.locator("textarea").count(), 0, "Notiz darf in der Zeile nicht sichtbar sein");
+  // Sheet: Details ohne Wiederholung der Kurzansicht, Hervorhebung, Timer, Notiz
+  await k4.locator("[data-open]").click();
+  await page.waitForSelector("#sheet.open");
+  const sheetText = await page.locator("#sheet").innerText();
+  assert.equal((sheetText.match(/3 EL Zucker mit 1 EL Wasser/g) || []).length, 1, "Kurzansicht wird im Sheet wiederholt");
+  assert.ok((await page.locator("#sheet mark.cue").count()) >= 1, "Cue-Hervorhebung fehlt");
+  await page.fill("#noteBox", "dunkler als gedacht ging gut");
+  await page.click("#sheet .close");
+  assert.equal(await k4.locator(".hasnote").count(), 1, "Notiz-Punkt fehlt");
   // Skalieren ×2 ersetzt inline
   await page.click('button[data-factor="2"]');
-  assert.match(await page.locator('.card[data-step="karamell"]').innerText(), /6 EL Zucker mit 2 EL Wasser/);
+  assert.match(await page.locator('.row[data-step="karamell"]').innerText(), /6 EL Zucker mit 2 EL Wasser/);
   assert.match(await page.locator("#meta").innerText(), /8 Portionen/);
   await page.click('button[data-factor="1"]');
-  // Timer, Notiz, Abhaken überleben einen Reload
-  await page.click('button[data-timer="schmoren#0.0"]');
-  assert.equal(await page.locator(".timer.running").count(), 1);
-  await page.fill('textarea[data-note="karamell"]', "dunkler als gedacht ging gut");
-  await page.check('input[data-done="blanchieren"]');
+  // Timer aus dem Sheet starten, Dock zeigt ihn, überlebt Reload
+  await page.locator('.row[data-step="schmoren"] [data-open]').click();
+  await page.click('#sheet [data-start="0"]');
+  assert.equal(await page.locator(".dock .tm").count(), 1);
+  await page.click("#sheet .close");
+  await page.check('.row[data-step="blanchieren"] input[data-done]');
   await page.reload();
-  await page.waitForSelector(".card");
-  assert.equal(await page.locator(".timer.running").count(), 1, "Timer überlebt Reload nicht");
-  assert.ok(await page.locator('input[data-done="blanchieren"]').isChecked());
-  assert.match(await page.locator('textarea[data-note="karamell"]').inputValue(), /^dunkler/);
-  // Export
-  await page.click("#export");
-  const out = await page.locator("#exportOut").innerText();
+  await page.waitForSelector(".row[data-step]");
+  assert.equal(await page.locator(".dock .tm").count(), 1, "Timer überlebt Reload nicht");
+  assert.ok(await page.locator('.row[data-step="blanchieren"] input[data-done]').isChecked());
+  assert.match(await page.locator("#progress").innerText(), /1 von 9/);
+  // Notizen-Ansicht + Export
+  await page.click('button[data-view="notizen"]');
+  const out = await page.locator("#mdOut").inputValue();
   assert.ok(out.includes("step:karamell") && out.includes("dunkler als gedacht"), out);
   // Einkauf
-  await page.click('nav button[data-view="einkauf"]');
+  await page.click('button[data-view="einkauf"]');
   assert.equal(await page.locator("ul.shop li").count(), 17);
   assert.match(await page.locator("#main").innerText(), /4–5 EL Fischsauce/);
   await page.click('button[data-factor="2"]');
   assert.match(await page.locator("#main").innerText(), /8–10 EL Fischsauce/);
   await page.click('button[data-factor="1"]');
   // Lesen: Sektionen in Dokumentreihenfolge
-  await page.click('nav button[data-view="lesen"]');
+  await page.click('button[data-view="lesen"]');
   const h2 = await page.locator("#main h2").allInnerTexts();
   assert.deepEqual(h2.slice(0, 3), ["Beschaffung", "Einkaufsliste", "Zubereitung"], h2.join(", "));
   assert.ok(h2.includes("Learnings") && h2.includes("Notizen"));
-  if (SHOT) { await page.click('nav button[data-view="kochen"]'); await page.screenshot({ path: SHOT }); }
+  if (SHOT) {
+    await page.click('button[data-view="kochen"]');
+    await page.screenshot({ path: SHOT });
+    await page.locator('.row[data-step="karamell"] [data-open]').click();
+    await page.waitForSelector("#sheet.open");
+    await page.screenshot({ path: SHOT.replace(/\.png$/, "-sheet.png") });
+  }
 } finally {
   await browser.close();
   server.close();
 }
 if (errors.length) { console.log("Browser-Fehler:\n  " + errors.join("\n  ")); process.exit(1); }
-console.log("Rauchtest ok: 9 Schritte, Skalierung, Timer/Notiz/Abhaken persistent, Export, Einkauf 17 Posten, Lesen in Reihenfolge");
+console.log("Rauchtest ok: 9 Schritte, Sheet ohne Wiederholung, Notiz im Sheet, Skalierung, Timer-Dock/Abhaken persistent, Export, Einkauf 17 Posten, Lesen in Reihenfolge");

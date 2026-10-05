@@ -324,7 +324,14 @@ vorher.
 ## Kochmodus (Durchstich)
 
 `kochmodus/index.html` + `app.js` + `lib.js` + `style.css`, kein Build. Lädt ein
-Rezept-JSON per `?r=<pfad>` (Default thit-kho). Zustand (Abhaken, Timer-Endzeiten,
+Rezept-JSON per `?r=<pfad>` (Default thit-kho). Optik und Interaktion folgen dem
+Artifact-Prototyp `claude-cook.html` (Repo-Root, vom User mit Claude im Web gebaut):
+Schritt-Zeilen mit Checkbox, Antippen öffnet ein Bottom-Sheet mit Kurzansicht
+(fett), dem **Rest** des Textes mit Hervorhebung (nie die Wiederholung des ersten
+Satzes), Timer-Start, Abhaken und Notiz; Timer laufen in einem Dock am unteren Rand
+über alle Ansichten (+1 Min., Pause, Stopp); Ansichten Kochen / Einkauf / Lesen /
+Notizen (mit Markdown-Export); Wach-halten-Knopf. Nicht übernommen: Gantt (braucht
+Phasen × Gänge aus Phase 2b) und die claude.ai-Anbindung (Rückfragen, DB-Sync). Zustand (Abhaken, Timer-Endzeiten,
 Notizen, Einkaufs-Häkchen, Faktor) liegt im localStorage unter `km:<recipe.id>`,
 Schlüssel sind die Step-/Zutaten-Slugs (L12). Timer-Alarm: Ton + Vibration + Titel;
 bekannte Grenze (Prototyp): bei gesperrtem Bildschirm unzuverlässig. Wake Lock wird

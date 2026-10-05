@@ -1,8 +1,8 @@
 // Node-Tests der reinen Kochmodus-Funktionen gegen das thit-kho-Beispiel.
 import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
-import { escapeTilde, fmtAmount, fmtClock, highlight, isoSeconds, notesMarkdown, scaleAmount,
-         scaleStepText, timerChoices } from "../kochmodus/lib.js";
+import { escapeTilde, fmtAmount, fmtClock, highlight, isoSeconds, notesMarkdown, remainderAfterAction,
+         scaleAmount, scaleStepText, timerChoices } from "../kochmodus/lib.js";
 
 const r = JSON.parse(readFileSync(new URL("../schema/beispiele/thit-kho-trung.json", import.meta.url), "utf8"));
 const ing = Object.fromEntries(r.ingredients.map((i) => [i.id, i]));
@@ -49,5 +49,11 @@ t("ISO-Dauern und Timer-Angebot", () => {
 t("Notizen-Export im learnings.notes-Format", () => {
   const out = notesMarkdown("gerichte/thit-kho-trung", [{ slug: "karamell", label: "4", text: "dunkler\nging" }], "10/2026");
   assert.match(out, /- \*\*Schritt 4 \(step:karamell\):\*\* dunkler ging/);
+});
+t("Details wiederholen die Kurzansicht nicht", () => {
+  const rest = remainderAfterAction(steps.karamell.text, steps.karamell);
+  assert.ok(rest.startsWith("Warten, bis das Karamell"), rest);
+  assert.equal(remainderAfterAction(steps["pickle-und-reis"].text, steps["pickle-und-reis"]), "");
+  assert.equal(remainderAfterAction(steps.schmoren.text, steps.schmoren), steps.schmoren.text); // abgeleitet → alles
 });
 console.log(`${n} Tests ok`);

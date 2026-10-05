@@ -124,3 +124,10 @@ export function notesMarkdown(recipeId, notes, date) {
   for (const n of notes) lines.push(`- **Schritt ${n.label} (step:${n.slug}):** ${n.text.trim().replace(/\n+/g, " ")}`);
   return lines.join("\n") + "\n";
 }
+
+// Rest des Schrittes nach der Kurzansicht (damit Details den ersten Satz nicht wiederholen).
+export function remainderAfterAction(text, step) {
+  if (step.actionDerived) return text;
+  const a = step.action.trim();
+  return text.startsWith(a) ? text.slice(a.length).trim() : text;
+}
