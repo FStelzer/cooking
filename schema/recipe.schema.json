@@ -1,0 +1,258 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fstelzer.github.io/cooking/schema/recipe.schema.json",
+  "title": "Rezept / Menü (v0.1, Phase 2a)",
+  "description": "Kanonisches Zwischenformat. Markdown bleibt Quelle; verbatim-Felder tragen den Quelltext wortgleich, typisierte Felder sind Annotationen (Zitate) oder normalisierte Werte. Siehe SCHEMA.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "kind", "title", "yields", "ingredients", "sections"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "type": "string", "const": "0.1" },
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9/_-]*$", "description": "Pfad der Quelldatei ohne .md, z. B. gerichte/thit-kho-trung" },
+    "kind": { "enum": ["dish", "menu", "course", "guide"] },
+    "title": { "type": "string", "description": "H1 ohne 🚧, verbatim" },
+    "status": { "enum": ["wip", "done"], "default": "done" },
+    "statusNote": { "$ref": "#/$defs/markdown" },
+    "intro": { "$ref": "#/$defs/markdown", "description": "Kursive Meta-Zeile und Absätze vor der ersten ##, verbatim" },
+    "yields": {
+      "type": "object", "additionalProperties": false, "required": ["text"],
+      "properties": { "text": { "type": "string" }, "value": { "type": "number" }, "unit": { "type": "string" } }
+    },
+    "times": {
+      "type": "object", "additionalProperties": false, "required": ["text"],
+      "properties": {
+        "text": { "type": "string" },
+        "active": { "$ref": "#/$defs/durationRange" },
+        "total": { "$ref": "#/$defs/durationRange" }
+      }
+    },
+    "equipment": { "type": "array", "items": { "type": "string" } },
+    "ingredients": { "type": "array", "items": { "$ref": "#/$defs/ingredient" } },
+    "sections": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/section" } }
+  },
+  "$defs": {
+    "markdown": { "type": "string", "description": "Docsify-Markdown, verbatim aus der Quelle" },
+    "slug": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$", "not": { "pattern": "^[0-9]+$" } },
+    "duration": {
+      "type": "string",
+      "pattern": "^P(?!$)(\\d+D)?(T(?=\\d)(\\d+H)?(\\d+M)?(\\d+S)?)?$",
+      "description": "ISO 8601. Konvention: PnD = Kalendertage, PTnH = Uhrzeit-Stunden (P1D ≠ PT24H)."
+    },
+    "durationRange": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "min": { "$ref": "#/$defs/duration" },
+        "max": { "$ref": "#/$defs/duration" },
+        "typical": { "$ref": "#/$defs/duration" },
+        "source": { "type": "string", "description": "Originalphrase, Zitat" }
+      },
+      "anyOf": [ { "required": ["min"] }, { "required": ["max"] }, { "required": ["typical"] } ]
+    },
+    "amount": {
+      "type": "object", "additionalProperties": false, "required": ["text"],
+      "properties": {
+        "text": { "type": "string", "description": "Span, wie er in der Quelle steht (Zahl + Einheit, ggf. + Nomen zur Eindeutigkeit)" },
+        "value": { "type": "number" },
+        "max": { "type": "number", "description": "Obergrenze bei Spannen" },
+        "approx": { "type": "boolean" },
+        "unit": { "type": "string", "examples": ["g", "kg", "ml", "l", "EL", "TL", "Prise", "Stück", "Zehen", "Bund", "Schuss", "cm", "%"] },
+        "per": { "type": "string", "examples": ["Pfanne", "Person", "Portion"] }
+      }
+    },
+    "ingredient": {
+      "type": "object", "additionalProperties": false, "required": ["id", "name", "store"],
+      "properties": {
+        "id": { "$ref": "#/$defs/slug" },
+        "name": { "type": "string" },
+        "prep": { "type": "string" },
+        "note": { "$ref": "#/$defs/markdown", "description": "Kursive Anmerkung aus der Einkaufsliste (Marke, Preis, Fallback)" },
+        "store": { "type": "string", "examples": ["Asialaden", "REWE Center", "Selgros", "Buhara Seafood", "Aldi / REWE", "Online", "Vorrat"] },
+        "group": { "type": "string", "description": "Warengruppe im Laden" },
+        "storeNote": { "type": "string" },
+        "buy": { "$ref": "#/$defs/amount", "description": "Kaufgebinde, wenn ≠ Bedarf" },
+        "inStock": { "type": "boolean" },
+        "pantry": { "type": "boolean", "description": "Kleinmengen-/Vorratsposten" },
+        "priority": { "enum": ["pflicht", "empfohlen", "optional"] },
+        "optional": { "type": "boolean" },
+        "fallback": { "type": "string" },
+        "unitHint": {
+          "type": "object", "additionalProperties": false, "required": ["from", "to", "factor"],
+          "properties": { "from": { "type": "string" }, "to": { "type": "string" }, "factor": { "type": "number" } }
+        },
+        "scale": { "enum": ["linear", "fixed", "step", "note"], "default": "linear" },
+        "scaleNote": { "type": "string" }
+      }
+    },
+    "stepIngredient": {
+      "type": "object", "additionalProperties": false, "required": ["ref", "amount"],
+      "properties": {
+        "ref": { "$ref": "#/$defs/slug" },
+        "amount": { "$ref": "#/$defs/amount" },
+        "occurrence": { "type": "integer", "minimum": 1, "description": "n-tes Vorkommen von amount.text in step.text, wenn mehrdeutig" },
+        "actionOccurrence": { "type": "integer", "minimum": 1 },
+        "spanForm": { "enum": ["exact", "derived"], "default": "exact" },
+        "reuse": { "type": "boolean", "description": "Zutat wurde schon in einem früheren Schritt dosiert; wird skaliert, aber nicht summiert" },
+        "note": { "type": "string" }
+      }
+    },
+    "timer": {
+      "type": "object", "additionalProperties": false, "required": ["label", "duration"],
+      "properties": {
+        "label": { "type": "string" },
+        "duration": { "$ref": "#/$defs/durationRange" },
+        "text": { "type": "string", "description": "Zitat" }
+      }
+    },
+    "temp": {
+      "type": "object", "additionalProperties": false, "required": ["kind", "text"],
+      "properties": {
+        "kind": { "enum": ["kern", "ofen", "halten", "max", "ziel"] },
+        "value": { "type": "number" }, "min": { "type": "number" }, "max": { "type": "number" },
+        "text": { "type": "string" }
+      }
+    },
+    "endCondition": {
+      "type": "object", "additionalProperties": false, "required": ["type", "text"],
+      "properties": {
+        "type": { "enum": ["time", "temperature", "visual"] },
+        "value": { "type": "number" },
+        "text": { "type": "string" }
+      }
+    },
+    "step": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "label", "text", "action", "ingredients"],
+      "properties": {
+        "id": { "$ref": "#/$defs/slug", "description": "Stabiler Slug, nie aus der Nummer" },
+        "label": { "type": "string", "description": "Anzeige-Nummer verbatim" },
+        "heading": { "type": "string", "description": "Überschriftzeile des Schritts verbatim (ohne Markdown-Marker), falls vorhanden" },
+        "title": { "type": "string", "description": "Titel ohne Nummer und Dauer, Zitat aus heading" },
+        "text": { "$ref": "#/$defs/markdown", "description": "Ganzer Schrittabsatz verbatim" },
+        "action": { "type": "string", "description": "Kurzansicht: verbatim Präfix von text (ganze Sätze) oder mengenfreie Kurzfassung mit actionDerived" },
+        "actionDerived": { "type": "boolean" },
+        "attention": { "enum": ["active", "attended", "passive"] },
+        "duration": { "$ref": "#/$defs/durationRange" },
+        "timers": { "type": "array", "items": { "$ref": "#/$defs/timer" } },
+        "temps": { "type": "array", "items": { "$ref": "#/$defs/temp" } },
+        "endCondition": { "$ref": "#/$defs/endCondition" },
+        "ingredients": { "type": "array", "items": { "$ref": "#/$defs/stepIngredient" } },
+        "equipment": { "type": "array", "items": { "type": "string" } },
+        "cues": { "type": "array", "items": { "type": "string" } },
+        "why": { "type": "string" },
+        "rescue": { "type": "string" },
+        "limits": { "type": "array", "items": { "type": "string" } },
+        "technique": { "type": "string", "pattern": "^[a-z0-9/_-]+(\\.md)?#[a-z0-9-]+$" },
+        "parallel": { "type": "boolean" }
+      }
+    },
+    "product": {
+      "type": "object", "additionalProperties": false, "required": ["id", "name"],
+      "properties": {
+        "id": { "$ref": "#/$defs/slug" },
+        "name": { "type": "string" },
+        "hold": {
+          "type": "object", "additionalProperties": false,
+          "properties": {
+            "min": { "oneOf": [ { "$ref": "#/$defs/duration" }, { "type": "null" } ] },
+            "max": { "oneOf": [ { "$ref": "#/$defs/duration" }, { "type": "null" } ] },
+            "ideal": { "$ref": "#/$defs/duration" },
+            "source": { "type": "string" }
+          }
+        },
+        "storage": {
+          "type": "object", "additionalProperties": false, "required": ["place"],
+          "properties": {
+            "place": { "enum": ["fridge", "freezer", "room", "warm", "oven"] },
+            "temp": { "type": "object", "additionalProperties": false, "properties": { "min": { "type": "number" }, "max": { "type": "number" } } },
+            "covered": { "type": "boolean" },
+            "note": { "type": "string" }
+          }
+        },
+        "note": { "type": "string" }
+      }
+    },
+    "task": {
+      "type": "object", "additionalProperties": false, "required": ["id", "name", "steps"],
+      "properties": {
+        "id": { "$ref": "#/$defs/slug" },
+        "name": { "type": "string" },
+        "intro": { "$ref": "#/$defs/markdown" },
+        "phaseHint": { "type": "string", "description": "Verbatim-Slot wie „Vortag“; nie Hold, nie Dauer" },
+        "duration": { "$ref": "#/$defs/durationRange" },
+        "service": { "type": "boolean" },
+        "consumes": { "type": "array", "items": { "$ref": "#/$defs/slug" } },
+        "produces": { "type": "array", "items": { "$ref": "#/$defs/product" } },
+        "steps": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/step" } }
+      }
+    },
+    "note": {
+      "type": "object", "additionalProperties": false, "required": ["ref", "text"],
+      "properties": {
+        "ref": { "type": "string", "pattern": "^(step|task|product):[a-z0-9-]+$" },
+        "date": { "type": "string", "pattern": "^(0[1-9]|1[0-2])/20[0-9]{2}$" },
+        "text": { "$ref": "#/$defs/markdown" },
+        "status": { "enum": ["open", "applied"] }
+      }
+    },
+    "section": {
+      "type": "object", "required": ["type"],
+      "oneOf": [
+        {
+          "additionalProperties": false, "required": ["type", "title", "markdown"],
+          "properties": {
+            "type": { "const": "markdown" },
+            "title": { "type": "string" },
+            "level": { "enum": [2, 3, "bold"], "default": 2 },
+            "markdown": { "$ref": "#/$defs/markdown" },
+            "tags": { "type": "array", "items": { "type": "string", "examples": ["kind", "schwangerschaft", "beschaffung", "quellen", "notizen", "teller-logik", "fehlerbild", "profi-tipps"] } },
+            "collapsed": { "type": "boolean" }
+          }
+        },
+        {
+          "additionalProperties": false, "required": ["type", "title"],
+          "description": "Platzhalter: hier rendert der Renderer derived.shopping. Kein Inhalt in der Quelle nötig.",
+          "properties": { "type": { "const": "shopping" }, "title": { "type": "string" } }
+        },
+        {
+          "additionalProperties": false, "required": ["type", "title", "tasks"],
+          "properties": {
+            "type": { "const": "tasks" },
+            "title": { "type": "string" },
+            "intro": { "$ref": "#/$defs/markdown" },
+            "tasks": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/task" } }
+          }
+        },
+        {
+          "additionalProperties": false, "required": ["type", "title", "cooked", "summary"],
+          "properties": {
+            "type": { "const": "learnings" },
+            "title": { "type": "string" },
+            "cooked": { "oneOf": [ { "type": "string", "pattern": "^(0[1-9]|1[0-2])/20[0-9]{2}$" }, { "type": "null" } ] },
+            "summary": { "$ref": "#/$defs/markdown", "description": "Kurzfassung verbatim, beginnt mit **Gekocht MM/JJJJ.**" },
+            "details": { "$ref": "#/$defs/markdown", "description": "Alles ab der ersten ###-Untersektion, verbatim" },
+            "notes": { "type": "array", "items": { "$ref": "#/$defs/note" } }
+          }
+        },
+        {
+          "additionalProperties": false, "required": ["type", "title", "items"],
+          "properties": {
+            "type": { "const": "todo" },
+            "title": { "type": "string" },
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "object", "additionalProperties": false, "required": ["text", "checked"],
+                "properties": {
+                  "text": { "$ref": "#/$defs/markdown" },
+                  "checked": { "type": "boolean" },
+                  "ref": { "type": "string", "pattern": "^(step|task|product):[a-z0-9-]+$" }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
