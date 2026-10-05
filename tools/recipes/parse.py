@@ -33,7 +33,7 @@ RESCUE_COND = re.compile(r"^(Ist|Wird|Wenn|Sollte|Falls)\b[^.]*,")
 DUR_UNITS = r"(?:Min\.?|Minuten|Sek\.?|Sekunden|Std\.?|Stunden|h\b|Tage?\b)"
 
 DUR_RE = re.compile(rf"(?P<ca>ca\.\s?|\\?~\s?)?(?P<lo>{NUMW})(?:\s?[–-]\s?(?P<hi>{NUMW}))?\s?(?P<u>{DUR_UNITS})")
-DUR_SUM_RE = re.compile(rf"(?:(?:ca\.\s?|\\?~\s?)?{RANGE}\s?{DUR_UNITS}\s?\+\s?)+(?:ca\.\s?|\\?~\s?)?{RANGE}\s?{DUR_UNITS}")  # „10 Min. + 30 Min.“
+DUR_SUM_RE = re.compile(rf"(?:(?:ca\.\s?|\\?~\s?)?{RANGE}\s?{DUR_UNITS}(?:\s?\+\s?|\s(?=\d+\s?Min)))+(?:ca\.\s?|\\?~\s?)?{RANGE}\s?{DUR_UNITS}")  # „10 Min. + 30 Min.“, „1 Std. 15 Min.“
 STEP_RE = re.compile(r"^\*\*(?P<n>\d+[a-z]?)\.\s+(?P<title>.+?)(?:\s+\((?P<paren>[^()]*(?:\([^()]*\)[^()]*)*)\))?\*\*\s*$")
 LABEL_RE = re.compile(r"^\*\*(?P<label>[^*]+?):\*\*\s*$")
 LABEL_TEXT_RE = re.compile(r"^\*\*(?P<label>[^*]+?):\*\*\s+(?P<text>.+)$")

@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from tools.recipes.parse import parse_recipe  # noqa: E402
+from tools.recipes.parse import duration_range, parse_recipe  # noqa: E402
 from tools.recipes.timing import critical_path  # noqa: E402
 
 SPEC = (ROOT / "REZEPTFORMAT.md").read_text(encoding="utf-8")
@@ -213,6 +213,7 @@ g, _ = parse_recipe(GAPS, "test/luecken")
 GS = steps_of(g)
 t("Welle 1: Dauer-Summe, Klammer-Menge mit \\~, Gebinde-Einheiten", lambda: (
     assert_(GS["pickle"]["duration"] == {"typical": "PT40M", "source": "10 Min. + 30 Min."}, GS["pickle"]["duration"]),
+    assert_(duration_range("\\~1 Std. 15 Min.")["typical"] == "PT1H15M", duration_range("\\~1 Std. 15 Min.")),
     assert_({x["ref"]: x["amount"].get("max") for x in GS["pickle"]["ingredients"]}.get("oktopus") == 1.5, GS["pickle"]["ingredients"]),
     assert_([i["id"] for i in g["ingredients"]][:4] == ["oktopus", "estragon", "vanillezucker", "brokkoli"], [i["id"] for i in g["ingredients"]])))
 print(f"{n} Tests ok")
