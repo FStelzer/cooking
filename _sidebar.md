@@ -26,7 +26,7 @@
   - [Tafelspitz, sommerlich — mit Frittatensuppe und kalten Saucen (4 Portionen + Reste)](/gerichte/tafelspitz.md)
   - [✅ Thịt kho trứng — vietnamesisches Karamell-Schweinefleisch mit Eiern (4 Portionen)](/gerichte/thit-kho-trung.md)
 - **menues**
-  - [✅ Degustationsmenü — Hochzeitstag](/menues/menue-hochzeitstag.md)
+  - [✅ Degustationsmenü — Hochzeitstag (4 Personen)](/menues/menue-hochzeitstag.md)
 - **schwangerschaft**
   - [Bouillabaisse mit Fenchel-Orange-Salat (Schwangerschafts-Version, 2 Erwachsene + Kind)](/schwangerschaft/bouillabaisse.md)
   - [Dal-Baukasten — Grundrezept Masoor/Toor Dal + vier Varianten (4 Portionen als Hauptgericht)](/schwangerschaft/dal-baukasten.md)

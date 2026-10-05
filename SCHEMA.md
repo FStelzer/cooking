@@ -35,6 +35,7 @@ Einzige Abhängigkeit: `jsonschema` (siehe `tools/requirements.txt`).
 | 2026-10-05 | **November-Menü vollständig modelliert** (User: „damit man es ehrlich testen kann"). Alle vier Gänge als Tasks/Produkte/Schritte: 60 Schritte (58 nummeriert + 2 Anrichten), 84 Dosierungen, 22 Produkte, 23 Erzeuger→Verbraucher-Paare, 28 Zeitplan-Einträge (5 abgeleitet), 53 Zutaten. Konvertierung als versioniertes Skript `tools/convert/menue_november.py` (Verbatim-Schnitt + Hand-Annotation). Zwei Format-Anpassungen am Markdown (Schritte, die über mehrere Tage liefen, aufgetrennt; Inhalt unverändert, eigener Commit). Kochen-Ansicht ordnet nach Ablauf, optional nach Gang. |
 | 2026-10-05 | **AP-E: November-Menü normalisiert und per Parser gebaut.** `menues/menue-november.md` auf die Konvention (60 Schritte als `**N. Titel (Dauer)**` mit Meta-Zeilen, Komponenten-Labels mit Zeit-Grammatik, Einkaufsposten `Menge Name`, Zeitplan-Einträge nennen Schritt-/Komponentennamen; Saison-Phase, drei `[x]`-Vorratsposten und vier Schätz-Dauern ergänzt). Inhaltstreue: alle Zahl+Einheit-Token der alten Fassung erhalten, 50 Zeilen nur umformatiert. `menues/menue-november.json` gebaut: Checks A–L grün, K 44/44, alle 60 Schritte im Zeitplan platziert, Rauchtest grün (Plan 9×5, 32 Einträge, 55 Posten). Parität gegen `schema/beispiele/menue-november.json`: Schritttexte 58/58, Kurzansicht 57/58, Dosierungen 58/60 (Text) bzw. 57/60 (Wert), Rettung 53/58, Dauern 51/58, Zutaten pro Schritt 45/58 — zusammen 87 % auf Inhaltsfeldern (1294/1491). **Unter 90 % liegen nur Ermessensfelder:** Warum 19/58, Grenzen 21/58, Erkennungszeichen 33/58, Timer 36/58 — die Hand-Annotation hatte Klammern, Gedankenstriche und Teilsätze zitiert, die Konvention kennt nur Kursiv am Ende, Fett und „bis …“. Entscheidung offen: akzeptieren (Anzeige-Annotationen) oder Markdown dafür umbauen. Parser-Lücken aus dem Lauf geschlossen (Zutaten-Phrasen und Komposita, ID-Kollision, Mengen in Klammern, Komma-Titel in `nach …`, Zeitplan-Zuordnung über Phrasen/Segmente/Gang). `tools/convert/menue_november.py` gelöscht (L16). |
 | 2026-10-05 | **Entscheidung zu den Ermessensfeldern (L18):** Parität von Warum/Grenzen/Cues akzeptiert, Nachziehen bei Gelegenheit. Timer-Übergenerierung behoben (Haltbarkeit, Vorlauf, Obergrenze sind keine Timer): November 36 → 40/58, Rest sind Garzeiten, die die Hand-Annotation ausgelassen hatte. |
+| 2026-10-05 | **AP5: Hochzeitstag normalisiert und per Parser gebaut.** Neu in Konvention und Parser: Zeitplan nach Uhrzeit (`17:30 Uhr (1,5h vorher)`, `19:15 Uhr — Nach dem Amuse`) mit Anker aus „… Dinner um 19:00 Uhr“, Phase `N Tage vorher`, Servierzeit eines Gangs = letzte Uhrzeit-Phase mit seinen Einträgen, gangübergreifende Einträge (Ente startet während des Amuse). Dazu Parser-Lücken geschlossen: Rest-Segment neben einem getroffenen Titel trifft keine Komponente mehr, `→` trennt Segmente, `Eigelb` als Einheit dosiert die Eier, Umlaut-Plural (Apfel/Äpfel). Check H rechnet die Koch-Belegung pro Schritt statt pro Task (verteilte Tasks belegten sonst den ganzen Nachmittag). Siehe Messwerte AP5. |
 | 2026-10-05 | **Phase 2b, AP4 umgesetzt** (Entscheidungspunkt auf User-Entscheidung übersprungen: erst ein großes Menü ist der echte Test, bei bekannten Rezepten entsteht kaum Feedback). Schema v0.2: Menü/Gänge/Zeitplan/Ressourcen/Constraints. `menue-november.json`: Rahmen, Gang 2 vollständig (8 Tasks, 7 Produkte, 18 Steps), Stubs für 1/3/4, 50 Zutaten, 8 Phasen + 24 Einträge. `timing.py` mit Checks E–H, L. Kochmodus menüfähig mit Plan-Raster. Siehe Messwerte AP4. |
 | 2026-10-05 | **Durchstich** gebaut: `kochmodus/` (statische Seite, vanilla JS, `marked` vom CDN wie Docsify). Ansichten Kochen (Kurzansicht + Details mit Hervorhebung, Abhaken, Timer mit Endzeit im localStorage, Ereignisse, Notiz pro Schritt, Export im `learnings.notes[]`-Format, Voraussetzungen aus `after`), Einkauf (aus `derived.shopping`, abhakbar, skaliert) und Lesen (Sektionen in Dokumentreihenfolge). Skalieren ersetzt Spans inline (L11) mit Rundung nach Einheit (`kochmodus/lib.js`). 10 Node-Tests, Playwright-Rauchtest im Container grün. **Nächster Schritt: Thịt kho damit kochen, dann Entscheidungspunkt vor Phase 2b.** |
 | 2026-10-05 | AP3 umgesetzt: zweite unabhängige Konvertierung von thit-kho durch einen frischen Agenten (nur SCHEMA.md + Schema + Quelle), `cli diff` misst Übereinstimmung pro Feld. Ergebnis: alle verbatim-nahen Felder 100 %, Ermessensfelder streuen (siehe Messwerte). Daraus Anleitung v2 mit regelbasiertem `action` (= erster Satz, Check C erzwingt das), festem Warengruppen-Vokabular, klaren Regeln für `priority`/`optional`/`note`/`scale`. Phase 2a damit abgeschlossen; nächster Schritt: Durchstich (Kochmodus-Seite mit thit-kho). |
@@ -363,6 +364,33 @@ verbatim-Markdown plus `buy` an den Zutaten reicht für Einkaufsliste und Checks
 auch außerhalb des Service (per Schlüsselwort gesetzt, `course` am Eintrag).
 (5) Offen für AP5/AP6: absolute Uhrzeiten (Hochzeitstag), Varianten.
 
+### menue-hochzeitstag (AP5, 2026-10-05)
+
+| Kennzahl | Wert | Bemerkung |
+|---|---|---|
+| Schritte | 47 (7 + 9 + 19 + 12) | aus 101 Unterpunkten zusammengefasst, Anrichten-Absätze als Schritte pro Gang |
+| Tasks / Dosierungen | 19 / 41 exact, 0 derived | |
+| Zutaten | 34 aus 33 Posten | 12 ohne Dosierung: Kräuter, Gewürze, Fette ohne Mengenangabe in der Quelle, Vollmilch (wird in keinem Schritt verwendet) |
+| Token Quelle / JSON | 142 / 142 | Treue alt → neu: alle Token erhalten, `1/2` → `½` |
+| Check K | 33 / 33 passend | |
+| Check F | 42 / 42 Segmente, alle 47 Schritte platziert | 9 Logistik-Einträge bleiben Text (Tisch decken, Aperitif …) |
+| Check H | 3 Warnungen | Jakobsmuscheln tupfen und Karotten glasieren überlappen um 17:30/18:15 (Schätzdauer); Entenbrust salzen läuft in den Amuse; Ente ruht bis +0:40, Hauptgang-Phase beginnt +0:35 |
+| Schätz-Dauern | 33 / 47 | die Quelle nennt fast nur Teilzeiten im Text |
+
+**Markdown-Anpassungen (Form):** Stores zugeordnet (Buhara Seafood für Jakobsmuscheln,
+Rest REWE Center, Gewürze und Öle unter Vorrat). „Für das …“-Überschriften zu Komponenten
+mit Zeitangabe. Die Kirsch-Jus wurde nach dem Zeitplan in Sauce-Basis (2 Tage vorher) und
+Kirsch-Jus (à la minute) geteilt, ebenso Kartoffelbaumkuchen und die Scheiben am Tag.
+Schritt-Titel wurden so gewählt, wie der Zeitplan sie nennt. Drei Zeitplan-Einträge haben
+ihren Zusatz in Klammern bekommen, damit der Komponentenname allein steht
+(„Parfait (komplett zubereiten …)“).
+
+**Widersprüche in der Quelle (nicht aufgelöst, beim nächsten Kochen klären):** Der Zeitplan
+holt das Parfait um 18:45 aus dem Gefrierfach, das Rezept sagt 10–15 Min. vor dem Servieren.
+Die Kinder-Sauce wird im Zeitplan mit Butter montiert, im Rezept nur abgeschmeckt. Die
+Baumkuchen-Scheiben sollen um 16:00 bei 80 °C warmgehalten werden, der Ofen wird aber
+erst um 18:15 vorgeheizt.
+
 ### thit-kho-trung, Determinismus (AP3, 2026-10-05)
 
 Zweitkonvertierung durch einen frischen Agenten mit SCHEMA.md (Anleitung v1), Schema
@@ -437,9 +465,6 @@ Fehlt `after` irgendwo? Welche Notizen entstehen, und passen sie ins Format?
 
 ## Nächste Schritte
 
-- **AP5:** `menues/menue-hochzeitstag.md` — absolute Uhrzeiten mit Offset-Klammern,
-  Ereignis-Phasen („Nach dem Amuse“), Logistik-Einträge ohne Task, Ente startet
-  während des Amuse (gangübergreifend), Learnings eines gekochten Menüs.
 - **AP6:** Varianten (dal-baukasten, vollkornbrötchen): `variants[]`, `only`,
   `replaces`, `byVariant`, `next`; zwei Schedules (Backtag, aus dem Frost).
   Vorschlag (10/2026, noch nicht entschieden):

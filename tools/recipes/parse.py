@@ -392,13 +392,17 @@ DOSE_RE = re.compile(
 )
 
 
+UMLAUT_FOLD = str.maketrans("äöü", "aou")
+
+
 def best_match(cand: str, idx: list[tuple[str, str]]):
     """Zutatenwort zu einem Textwort (ohne Phrasen): Alias > exakt > Textwort beginnt mit Zutatenwort („Limettensaft“)
     > Zutatenwort endet auf Textwort („Sellerie“ → Knollensellerie) > Beugung (höchstens 2 Zeichen länger)."""
     cand = ALIASES.get(cand, cand)
     words = [x for x in idx if " " not in x[0]]
+    fold = lambda w: w.translate(UMLAUT_FOLD)  # Umlaut-Plural: Apfel ↔ Äpfel
     for part in dict.fromkeys([cand] + [p for p in re.split(r"[-/]", cand) if len(p) >= 4]):
-        exact = [x for x in words if x[0] == part]
+        exact = [x for x in words if x[0] == part] or [x for x in words if fold(x[0]) == fold(part)]
         if exact: return exact[0]
         pre = [x for x in words if part.startswith(x[0]) and len(x[0]) >= 4]
         if pre: return max(pre, key=lambda x: len(x[0]))
@@ -441,10 +445,16 @@ def find_doses(text: str, ingredients: list[dict], lint: Lint, where: str, seen_
             hit = best_match(cand, idx)
             if hit:
                 end_tok = tok; break
-        if not hit:
+        if m["unit"] in ("Eigelb", "Eiweiß"):  # „2 Eigelb verquirlen“, „4 Eigelb und 80g Zucker“: die Einheit ist die Zutat
+            hit = best_match(m["unit"].lower(), idx)
+            if not hit: continue
+            span_start = m.start("je") if m["je"] else m.start("lo")
+            span_end = m.end("unit")
+        elif not hit:
             continue
-        span_start = m.start("je") if m["je"] else m.start("lo")
-        span_end = m.start("words") + end_tok.end()
+        else:
+            span_start = m.start("je") if m["je"] else m.start("lo")
+            span_end = m.start("words") + end_tok.end()
         span = plain[span_start:span_end]
         lo = num(m["lo"]); hi = num(m["hi"]) if m["hi"] else None
         unit = m["unit"] or "Stück"
@@ -716,13 +726,35 @@ def resolve_refs(tasks: list[dict], lint: Lint, scope: str, course_id: str | Non
 
 
 # ------------------------------------------------------------------ Zeitplan
-PHASE_RE = [(r"^T-(\d)$", lambda m: {"day": -int(m.group(1))}), (r"^Saison", lambda m: {"day": -60}), (r"^Vortag", lambda m: {"day": -1}), (r"^Vorabend", lambda m: {"day": -1, "part": "evening"}),
+PHASE_RE = [(r"^T-(\d)$", lambda m: {"day": -int(m.group(1))}), (r"^(\d) Tage vorher$", lambda m: {"day": -int(m.group(1))}), (r"^Saison", lambda m: {"day": -60}), (r"^Vortag", lambda m: {"day": -1}), (r"^Vorabend", lambda m: {"day": -1, "part": "evening"}),
             (r"^Vormittag", lambda m: {"day": 0, "part": "morning"}), (r"^Nachmittag", lambda m: {"day": 0, "part": "afternoon"}),
             (r"^(Am )?Abend", lambda m: {"day": 0, "part": "evening"}), (r"^Am Tag", lambda m: {"day": 0}),
             (r"^Gang (\d) \((\+?)(\d+):(\d+)\)$", lambda m: {"day": 0, "part": "service", "at": f"{'+' if m.group(2) else ''}PT{int(m.group(3))}H{int(m.group(4))}M".replace("PT0H", "PT").replace("H0M", "H").replace("PT0M", "PT0M")})]
 
 
 _WB = r"(?<![\wäöüÄÖÜß])%s(?![\wäöüÄÖÜß])"
+CLOCK_PHASE = re.compile(r"^(?P<label>(?P<h>\d{1,2}):(?P<m>\d{2})\s?Uhr(?:\s*\((?P<off>[^)]*)\))?(?:\s+—\s+(?P<event>[^:]+?))?):\s+(?P<rest>.*)$")
+
+
+def clock_phase(cm: re.Match, anchor: dict | None, lint: Lint) -> dict | None:
+    """„17:30 Uhr (1,5h vorher)“, „19:15 Uhr — Nach dem Amuse“ → Phase am Service-Tag, Lage relativ zum Anker
+    (Uhrzeit im Zeitplan-Satz „… um 19:00 Uhr“). Die Klammer ist Kontrolle, keine Quelle."""
+    clock = f"{int(cm['h']):02d}:{cm['m']}"
+    if anchor is None:
+        lint.add("Zeitplan", f"Uhrzeit-Phase '{cm['label']}' ohne Anker („Dinner um 19:00 Uhr“)"); return None
+    ah, amin = map(int, anchor["time"].split(":"))
+    mins = int(cm["h"]) * 60 + int(cm["m"]) - (ah * 60 + amin)
+    if cm["off"]:
+        om = re.match(r"^(?:ca\.\s?)?([\d,]+)\s?(h|min)\s+vorher$", cm["off"].strip())
+        if om and round(float(om.group(1).replace(",", ".")) * (60 if om.group(2) == "h" else 1)) != -mins:
+            lint.add("Zeitplan", f"'{cm['label']}': Klammer passt nicht zu {anchor['time']} Uhr")
+        elif not om:
+            lint.add("Zeitplan", f"'{cm['label']}': Klammer nicht erkannt")
+    sign = "-" if mins < 0 else ("+" if mins > 0 else "")
+    h, mm = divmod(abs(mins), 60)
+    spec = {"day": 0, "part": "service", "at": sign + "PT" + (f"{h}H" if h else "") + (f"{mm}M" if mm or not h else ""), "clock": clock}
+    if cm["event"]: spec["event"] = cm["event"].strip()
+    return spec
 
 
 def match_entry(e: dict, tasks_all: list[tuple[str | None, dict]], lint: Lint) -> None:
@@ -757,13 +789,14 @@ def match_entry(e: dict, tasks_all: list[tuple[str | None, dict]], lint: Lint) -
         m = re.search(_WB % re.escape(title), masked, re.I)
         if m:
             take(same, "step", title)
-            masked = masked[:m.start()] + " " * (m.end() - m.start()) + masked[m.end():]
+            masked = masked[:m.start()] + "§" + masked[m.end():]  # Rest-Segment („Consommé §“) trifft keine Komponente
     segs: list[str] = []
-    for seg in re.split(r",\s|\s·\s|:\s|\s—\s|;\s", re.sub(r"\s*\([^)]*\)", "", masked)):
+    for seg in re.split(r",\s|\s·\s|:\s|\s—\s|;\s|\s→\s", re.sub(r"\s*\([^)]*\)", "", masked)):
         seg = seg.strip(" .")
         if not seg: continue
         segs.append(seg); segs += [x.strip() for x in re.split(r"\sund\s", seg) if x.strip() and x.strip() != seg]
     for seg in segs:
+        if "§" in seg: continue
         low = seg.lower()
         take([(cid, t["id"]) for cid, t in tasks_all if t["id"] != "main" and t["name"].lower() == low], "task", seg)
         take([(cid, st["id"]) for cid, st in steps if len(st["title"].split()) == 1 and len(st["title"]) > 3
@@ -796,7 +829,21 @@ def parse_schedule(title: str, text: str, tasks_all: list[tuple[str | None, dict
                 entries.append({"phase": pid, "text": cells[1], "at": {"ref": "anchor", "offset": f"-PT{mins}M"}, "source": cells[0]})
         else:
             in_note = False
+    anchor = None
+    if am := re.search(r"([\wäöüÄÖÜß-]+) um (\d{1,2}):(\d{2}) Uhr", text):
+        anchor = {"label": am.group(1), "time": f"{int(am.group(2)):02d}:{am.group(3)}"}
     for b in bullets:
+        if cm := CLOCK_PHASE.match(b):
+            label, rest = cm["label"].strip(), cm["rest"]
+            spec = clock_phase(cm, anchor, lint)
+            if spec is None: continue
+            pid = "uhr-" + spec["clock"].replace(":", "-")
+            if pid not in seen:
+                seen[pid] = True
+                phases.append({"id": pid, "label": label, **spec})
+            for seg in re.split(r"\s·\s", rest.strip()):
+                if seg.strip(): entries.append({"phase": pid, "text": seg.strip()})
+            continue
         lm = re.match(r"^(?P<label>[^:(]*(?:\([^)]*\))?):\s*(?P<rest>.*)$", b)
         if not lm:
             lint.add("Zeitplan", f"Bullet ohne Phasen-Präfix: '{b[:40]}'"); continue
@@ -819,6 +866,7 @@ def parse_schedule(title: str, text: str, tasks_all: list[tuple[str | None, dict
             e["at"] = {"ref": f"course:{e.get('course', 'gang-1')}:serve", "offset": "-" + (d.get("typical") or d["max"])}
             e["source"] = m.group(0).strip("()")
     sched = {"id": slugify(title), "label": title, "phases": phases, "entries": entries}
+    if anchor: sched["_anchor"] = anchor
     return sched, note
 
 
@@ -906,12 +954,24 @@ def parse_recipe(md: str, recipe_id: str) -> tuple[dict, Lint]:
         sec = next(s for s in sections if s.get("type") == "schedule" and s["title"] == title)
         sec["schedule"] = sched
         if note: sec["note"] = note
-        if is_menu:
+        anchor = sched.pop("_anchor", None)
+        if is_menu and anchor:
+            # Uhrzeit-Zeitplan: ein Gang wird in der letzten Uhrzeit-Phase serviert, die Einträge von ihm hat
+            clock = {p["id"]: p for p in sched["phases"] if p.get("clock")}
+            last = {}
+            for e in sched["entries"]:
+                if e["phase"] in clock and e.get("course"): last[e["course"]] = clock[e["phase"]]
+            names = {c["id"]: c["title"] for s in sections if s.get("type") == "courses" for c in s["courses"]}
+            recipe["courses"] = [{"ref": cid, "n": int(cid[5:]), "name": re.sub(r"^\d+\.\s*", "", names[cid]), "serve": last[cid]["at"], "source": last[cid]["label"]}
+                                 for cid in names if cid in last]
+            recipe["anchor"] = anchor
+            recipe["resources"] = [{"id": "oven", "count": 1}, {"id": "hob", "count": 4}, {"id": "cook", "count": 1}]
+        elif is_menu:
             recipe["courses"] = [{"ref": p["id"], "n": int(p["id"][5:]), "name": p["label"].split(" (")[0], "serve": p["at"], "source": p["label"]}
                                  for p in sched["phases"] if p["id"].startswith("gang-")]
             recipe["anchor"] = {"label": "Gang 1 serviert"}
             recipe["resources"] = [{"id": "oven", "count": 1}, {"id": "hob", "count": 4}, {"id": "cook", "count": 1}]
-    if is_menu and "courses" not in recipe:
+    if is_menu and not recipe.get("courses"):
         recipe["courses"] = [{"ref": c["id"], "n": int(c["id"][5:]), "name": c["title"], "serve": "PT0M"} for s in sections if s.get("type") == "courses" for c in s["courses"]]
         recipe["anchor"] = {"label": "Service"}
     recipe["sections"] = sections

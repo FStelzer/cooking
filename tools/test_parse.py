@@ -102,6 +102,65 @@ t("Menü: Zeitplan-Phasen, Zuordnung per Namen, Anker im Eintrag", lambda: (
     assert_(next(e for e in sch["schedule"]["entries"] if e["text"] == "Mango-Gel")["tasks"] == ["mango-gel"]),
     assert_((bb := next(e for e in sch["schedule"]["entries"] if e["text"].startswith("Beurre blanc")))["at"] == {"ref": "course:gang-2:serve", "offset": "-PT20M"}, bb),
     assert_(next(e for e in sch["schedule"]["entries"] if e["text"] == "Anrichten")["steps"] == ["anrichten"] or True)))
+CLOCK = """# Menü Test (2 Personen)
+
+## Einkaufsliste
+
+### REWE Center
+- [ ] 2 Entenbrüste — Gang 2
+- [ ] 2 Granny-Smith-Äpfel — Gang 1
+- [ ] 6 Eier — Gang 2
+- [ ] 500 g Zucker — Gang 2
+
+## Rezepte
+
+### 1. Amuse
+
+**Consommé (Vortag):**
+
+**1. Langsam erwärmen (5 Min.)**
+*jederzeit*
+½ Granny-Smith-Apfel würfeln.
+
+**2. Amuse anrichten (ca. 3 Min.)**
+Anrichten.
+
+### 2. Ente
+
+**Entenbrust (am Abend):**
+
+**1. Ente starten (12–15 Min.)**
+*jederzeit*
+2 Entenbrüste in die kalte Pfanne. 4 Eigelb und 80g Zucker verrühren.
+
+**2. Hauptgang anrichten (ca. 5 Min.)**
+Anrichten.
+
+## Zeitplan
+
+*Für ein Dinner um 19:00 Uhr*
+
+- 2 Tage vorher: Einkaufen
+- 18:45 Uhr (15min vorher): Consommé langsam erwärmen
+- 19:00 Uhr — Gäste da: Amuse anrichten und servieren · Ente starten
+- 19:30 Uhr (1h vorher) — Nach dem Amuse: Hauptgang anrichten und servieren
+"""
+c, clint = parse_recipe(CLOCK, "test/uhrzeit")
+csch = next(s for s in c["sections"] if s["type"] == "schedule")["schedule"]
+CS = {s["id"]: s for sec in c["sections"] if sec["type"] == "courses" for co in sec["courses"] for cs in co["sections"] if cs["type"] == "tasks" for tk in cs["tasks"] for s in tk["steps"]}
+t("Uhrzeit-Zeitplan: Anker, Phasen, Ereignis, Klammer-Kontrolle", lambda: (
+    assert_(c["anchor"] == {"label": "Dinner", "time": "19:00"}, c.get("anchor")),
+    assert_(csch["phases"][0] == {"id": "2-tage-vorher", "label": "2 Tage vorher", "day": -2}),
+    assert_(csch["phases"][1] == {"id": "uhr-18-45", "label": "18:45 Uhr (15min vorher)", "day": 0, "part": "service", "at": "-PT15M", "clock": "18:45"}, csch["phases"][1]),
+    assert_(csch["phases"][2]["event"] == "Gäste da" and csch["phases"][2]["at"] == "PT0M"),
+    assert_(any("Klammer passt nicht" in x for x in clint.msgs), clint.msgs)))
+t("Uhrzeit-Zeitplan: Gang serviert in seiner letzten Phase, gangübergreifende Einträge", lambda: (
+    assert_([(x["ref"], x["serve"]) for x in c["courses"]] == [("gang-1", "PT0M"), ("gang-2", "+PT30M")], c["courses"]),
+    assert_(next(e for e in csch["entries"] if e["text"] == "Ente starten")["course"] == "gang-2"),
+    assert_(next(e for e in csch["entries"] if e["text"] == "Consommé langsam erwärmen").get("tasks") is None)))
+t("Dosierung: Eigelb als Einheit, Umlaut-Plural", lambda: (
+    assert_([(d["ref"], d["amount"]["text"]) for d in CS["gang-2-ente-starten"]["ingredients"]] == [("entenbrueste", "2 Entenbrüste"), ("eier", "4 Eigelb"), ("zucker", "80g Zucker")], CS["gang-2-ente-starten"]["ingredients"]),
+    assert_(CS["gang-1-langsam-erwaermen"]["ingredients"][0]["ref"] == "granny-smith-aepfel")))
 print(f"{n} Tests ok")
 if lint.msgs or mlint.msgs:
     print("Lint (Gericht):", *lint.msgs, sep="\n  ") if lint.msgs else None

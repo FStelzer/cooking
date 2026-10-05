@@ -1500,6 +1500,15 @@
         "after": {
           "$ref": "#/$defs/eventRef",
           "description": "dokumentarisch: „Nach dem Amuse“"
+        },
+        "clock": {
+          "type": "string",
+          "pattern": "^\\d{2}:\\d{2}$",
+          "description": "Uhrzeit der Phase („17:30 Uhr“); `at` ist daraus relativ zu anchor.time gerechnet"
+        },
+        "event": {
+          "type": "string",
+          "description": "verbatim, was die Phase markiert: „Gäste da“, „Nach dem Amuse“"
         }
       }
     },

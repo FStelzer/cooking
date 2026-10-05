@@ -262,9 +262,9 @@ Zirka immer als `ca.` oder `\~` (Backslash-Tilde, sonst streicht Docsify durch).
 gleich (`Zucker`) · Textwort ist Kompositum des Listenworts (`Limettensaft` →
 Limetten, `Sellerie-Scheiben` → Sellerie) · Listenwort ist Kompositum des Textworts
 (`Sellerie` → Knollensellerie) · Beugung um höchstens zwei Zeichen (`Schalotte` →
-Schalotten). Mehrwortige Posten (`Brauner Zucker`, `Weißer Pfeffer`) zählen nur als
+Schalotten), Umlaut-Plural zählt als gleich (`Apfel` → Äpfel). Mehrwortige Posten (`Brauner Zucker`, `Weißer Pfeffer`) zählen nur als
 ganze Phrase im Text (`25 g brauner Zucker`). Feste Aliasse: `Eigelb`, `Eiweiß`, `Ei`
-→ Eier. Nicht abgedeckt: Zwischenprodukte (`10 ml Zuckersirup` landet beim Zucker,
+→ Eier, auch als Einheit (`4 Eigelb und 80g Zucker` dosiert die Eier). Nicht abgedeckt: Zwischenprodukte (`10 ml Zuckersirup` landet beim Zucker,
 `90 ml Decaf-Espresso` bei keiner Zutat) — `cli lint` nennt Zutaten ohne Dosierung.
 
 ## 7. Einkaufsliste
@@ -310,16 +310,42 @@ Für Menüs und Vorbereitungen über mehrere Tage:
 - Gang 2 (+0:20): Beurre blanc (20 Min. vor dem Gang) · Kaisergranat braten · Anrichten
 ```
 
-Phasen: `Saison-Teil (…)` (lange vorher, erledigt), `T-2`, `T-1`, `Vortag`, `Vorabend`,
-`Vormittags`, `Nachmittags`, `Am Abend`, `Am Tag`, `Gang N (+h:mm)`. Einträge mit ` · `
-getrennt. Ein Eintrag wird Schritten oder Komponenten zugeordnet, wenn er deren
+Phasen: `Saison-Teil (…)` (lange vorher, erledigt), `T-2` oder `2 Tage vorher`, `T-1`,
+`Vortag`, `Vorabend`, `Vormittags`, `Nachmittags`, `Am Abend`, `Am Tag`, `Gang N (+h:mm)`.
+Einträge mit ` · ` getrennt. Fette Zeilen wie `**Am Tag:**` gliedern nur.
+
+**Zeitplan nach Uhrzeit** (ein fester Abend statt Gang-Offsets):
+
+```markdown
+## Zeitplan
+
+*Für ein stressfreies Dinner um 19:00 Uhr*
+
+- Vortag: Birnen-Kompott kochen
+- 17:30 Uhr (1,5h vorher): Entenbrüste aus dem Kühlschrank nehmen, Haut einschneiden · Tisch decken
+- 19:00 Uhr — Gäste da: Amuse anrichten und servieren · **ENTE STARTEN:** in kalte Pfanne
+- 19:15 Uhr — Nach dem Amuse: Ente wenden · Vorspeise anrichten und servieren
+```
+
+- Der Satz `… <Wort> um HH:MM Uhr` setzt den Anker (`anchor`: Label = das Wort vor „um“,
+  hier „Dinner“). Ohne ihn werden Uhrzeit-Phasen nicht gelesen (Hinweis).
+- `HH:MM Uhr` ist eine Phase am Service-Tag; ihre Lage rechnet sich aus Uhrzeit minus
+  Anker. Die Klammer `(4h vorher)`, `(45min vorher)` ist optional und wird nur gegen
+  die Uhrzeit geprüft. ` — Gäste da`, ` — Nach dem Amuse` hinter der Uhrzeit ist das
+  Ereignis der Phase.
+- Ein Gang wird in der **letzten** Uhrzeit-Phase serviert, in der Einträge von ihm stehen
+  („ab 19:15“). Einträge eines anderen Gangs dürfen in jeder Phase stehen (die Ente
+  startet während des Amuse).
+- Tipp für die Zuordnung: Schritt-Titel so wählen, wie der Zeitplan sie nennt
+  („Ente wenden“, „Vorspeise anrichten“), und `Anrichten` pro Gang benennen. Ein Eintrag wird Schritten oder Komponenten zugeordnet, wenn er deren
 **Titel bzw. Namen** nennt; Einträge ohne Treffer bleiben Text (Tisch decken, Gäste da).
 So wird gelesen:
 
 - Mehrwortige Schritt-Titel zählen als Phrase irgendwo im Eintrag: `Kaisergranat
   auslösen, Schalen einfrieren` → „Kaisergranat auslösen“. Längste zuerst.
-- Danach wird der Rest an `, ` ` · ` `: ` ` — ` `; ` und ` und ` zerlegt, Klammern
-  fallen weg. Ein Segment trifft eine **Komponente**, wenn es ihrem Namen gleicht
+- Danach wird der Rest an `, ` ` · ` `: ` ` — ` `; ` ` → ` und ` und ` zerlegt, Klammern
+  fallen weg. Was neben einem schon getroffenen Titel übrig bleibt („Consommé“ aus
+  „Consommé langsam erwärmen“), trifft keine Komponente mehr. Ein Segment trifft eine **Komponente**, wenn es ihrem Namen gleicht
   (`Mango-Gel`, `Parfait (herstellen, einfrieren)`, `Lammschulter und Jus: schmoren,
   zupfen, pressen`) — dann liegen alle ihre Schritte in dieser Phase. Ein Segment
   trifft einen **Ein-Wort-Titel**, wenn es ihm gleicht (`Concassé`), mit ihm endet

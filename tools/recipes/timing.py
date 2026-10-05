@@ -127,9 +127,16 @@ def task_span(task: dict) -> int:
 
 def service_times(recipe: dict) -> dict[str, tuple[int, int, dict]]:
     """task-id → (start, end, entry) in Sekunden relativ zum Anker, nur verzeitete Einträge."""
+    return _service(recipe)[0]
+
+
+def _service(recipe: dict) -> tuple[dict, list[tuple]]:
+    """(task-id → (start, end, letzter Eintrag), Segmente pro Schritt: (task, step, start, end, entry, passiv)).
+    Ein Task, der über mehrere Phasen verteilt ist, hat ein langes Gesamt-Intervall, belegt den Koch aber nur
+    in seinen Segmenten."""
     serve = {c["ref"]: secs(c["serve"]) or 0 for c in recipe.get("courses", [])}
     tasks = {t["id"]: t for t in iter_tasks(recipe)}
-    out = {}
+    out, segs = {}, []
     step_task = {st["id"]: t["id"] for t in tasks.values() for st in t["steps"]}
     for sec in sections(recipe, "schedule"):
         phases = {p["id"]: p for p in sec["schedule"]["phases"]}
@@ -145,14 +152,17 @@ def service_times(recipe: dict) -> dict[str, tuple[int, int, dict]]:
             else:
                 continue
             cur = t0
-            units = [(tid, task_span(tasks[tid])) for tid in e.get("tasks", [])]
-            units += [(step_task[s], sum(_dur(x) for x in tasks[step_task[s]]["steps"] if x["id"] == s)) for s in e.get("steps", []) if s in step_task]
-            for tid, span in units:
-                start = min(out[tid][0], cur) if tid in out else cur
-                out[tid] = (start, max(out[tid][1] if tid in out else 0, cur + span), e)
-                cur += span
+            units = [(tid, tasks[tid]["steps"]) for tid in e.get("tasks", [])]
+            units += [(step_task[s], [x for x in tasks[step_task[s]]["steps"] if x["id"] == s]) for s in e.get("steps", []) if s in step_task]
+            for tid, steps in units:
+                begin = cur
+                for x in steps:
+                    segs.append((tid, x["id"], cur, cur + _dur(x), e, x.get("attention") == "passive" or bool(x.get("parallel"))))
+                    cur += _dur(x)
+                start = min(out[tid][0], begin) if tid in out else begin
+                out[tid] = (start, max(out[tid][1] if tid in out else -10**9, cur), e)
             phase_cursor[e["phase"]] = cur
-    return out
+    return out, segs
 
 
 # ---------------------------------------------------------------- G
@@ -195,7 +205,7 @@ def check_g(recipe: dict) -> tuple[list[str], list[str]]:
 # ---------------------------------------------------------------- H (warn)
 def check_h(recipe: dict) -> tuple[list[str], list[str]]:
     reps = []
-    st = service_times(recipe)
+    st, segs = _service(recipe)
     tasks = {t["id"]: t for t in iter_tasks(recipe)}
     cook = {r["id"]: r["count"] for r in recipe.get("resources", [])}
     if not st:
@@ -203,22 +213,19 @@ def check_h(recipe: dict) -> tuple[list[str], list[str]]:
     ids = sorted(st, key=lambda k: st[k][0])
     fmt = lambda s: f"{'+' if s >= 0 else '−'}{abs(s) // 3600}:{abs(s) % 3600 // 60:02d}"
     reps.append("H Service-Intervalle (relativ zu Gang 1): " + "; ".join(f"{k} {fmt(st[k][0])}–{fmt(st[k][1])}" for k in ids))
-    # Koch: zwei aktive Tasks gleichzeitig
-    for i, a in enumerate(ids):
-        for b in ids[i + 1:]:
-            if st[a][2] is st[b][2]:
-                continue  # sequenziell im selben Eintrag
-            if st[a][0] < st[b][1] and st[b][0] < st[a][1] and cook.get("cook", 1) == 1:
-                reps.append(f"H ⚠ Koch doppelt belegt: {a} ({fmt(st[a][0])}–{fmt(st[a][1])}) und {b} ({fmt(st[b][0])}–{fmt(st[b][1])})")
+    # Koch: zwei aktive Schritte aus verschiedenen Einträgen gleichzeitig (passive/parallele zählen nicht)
+    seen = set()
+    for i, a in enumerate(segs):
+        for b in segs[i + 1:]:
+            if a[4] is b[4] or a[5] or b[5] or a[0] == b[0] or (a[0], b[0]) in seen:
+                continue
+            if a[2] < b[3] and b[2] < a[3] and cook.get("cook", 1) == 1:
+                seen.add((a[0], b[0]))
+                reps.append(f"H ⚠ Koch doppelt belegt: {a[1]} ({fmt(a[2])}–{fmt(a[3])}) und {b[1]} ({fmt(b[2])}–{fmt(b[3])})")
     # Ofen: überlappende Claims mit verschiedener Temperatur; Herd: Einheiten > Kapazität
-    claims = []
-    for tid, (t0, t1, _) in st.items():
-        cur = t0
-        for s in tasks[tid]["steps"]:
-            d = _dur(s)
-            for cl in s.get("claims", []):
-                claims.append((cl["resource"], cl.get("temp"), cl.get("units", 1), cur, cur + d, s["id"]))
-            cur += d
+    by_id = {x["id"]: x for t in tasks.values() for x in t["steps"]}
+    claims = [(cl["resource"], cl.get("temp"), cl.get("units", 1), t0, t1, sid)
+              for _, sid, t0, t1, _, _ in segs for cl in by_id[sid].get("claims", [])]
     for i, a in enumerate(claims):
         for b in claims[i + 1:]:
             if a[0] == b[0] and a[3] < b[4] and b[3] < a[4]:
@@ -228,8 +235,12 @@ def check_h(recipe: dict) -> tuple[list[str], list[str]]:
                     reps.append(f"H ⚠ Herd: {a[5]} + {b[5]} brauchen {a[2] + b[2]} Platten")
     # Gang-Abstände vs. Task-Spannen
     serve = {c["ref"]: secs(c["serve"]) or 0 for c in recipe.get("courses", [])}
+    phase_of = {p["id"]: p for sec in sections(recipe, "schedule") for p in sec["schedule"]["phases"]}
     for tid, (t0, t1, e) in st.items():
         c = e.get("course")
+        ph = phase_of.get(e["phase"], {})
+        if ph.get("clock") and c in serve and secs(ph.get("at")) == serve[c]:
+            continue  # Uhrzeit-Phase des Gangs: „ab 19:15“, Servieren ist ihr letzter Eintrag
         if c in serve and t1 > serve[c]:
             reps.append(f"H ⚠ {tid} endet {fmt(t1)}, Gang {c} wird {fmt(serve[c])} serviert")
     # explizite Constraints (nur wenn beide Ereignisse verzeitet)

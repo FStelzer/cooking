@@ -1,0 +1,4129 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "menues/menue-hochzeitstag",
+  "kind": "menu",
+  "title": "Degustationsmenü — Hochzeitstag (4 Personen)",
+  "status": "done",
+  "yields": {
+    "text": "4 Personen",
+    "value": 4.0,
+    "unit": "Personen"
+  },
+  "intro": "**Ein kulinarisches Erlebnis in vier Gängen**\n\n**Portionen:** 4 Personen (großzügig kalkuliert mit Reserve)\n**Gesamtaufwand:** 3 Tage Vorbereitung + Kochtag\n**Schwierigkeit:** Anspruchsvoll (Sterneküche-Niveau zuhause)\n\n---",
+  "ingredients": [
+    {
+      "id": "jakobsmuscheln",
+      "name": "Jakobsmuscheln, frisch, ohne Schale",
+      "store": "Buhara Seafood",
+      "buy": {
+        "text": "10"
+      },
+      "courses": [
+        "gang-2"
+      ],
+      "note": "ca. 40g/Stück; 2 Reserve"
+    },
+    {
+      "id": "entenbrueste",
+      "name": "Entenbrüste",
+      "store": "REWE Center",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "3"
+      },
+      "courses": [
+        "gang-3"
+      ],
+      "note": "je ca. 350-400g; 1 Reserve oder für größere Portionen"
+    },
+    {
+      "id": "blumenkohl",
+      "name": "Blumenkohl, groß",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "courses": [
+        "gang-2"
+      ],
+      "note": "ca. 700g; Püree"
+    },
+    {
+      "id": "sellerieknolle",
+      "name": "Sellerieknolle, groß",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "courses": [
+        "gang-1"
+      ],
+      "note": "ca. 600g; Consommé"
+    },
+    {
+      "id": "kartoffeln",
+      "name": "Kartoffeln, festkochend",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "800g"
+      },
+      "courses": [
+        "gang-3"
+      ],
+      "note": "z.B. Annabelle, Linda; Baumkuchen"
+    },
+    {
+      "id": "bundmoehren",
+      "name": "Bundmöhren",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "12"
+      },
+      "courses": [
+        "gang-3"
+      ],
+      "note": "kleine Karotten mit Grün; 8 zum Servieren, Rest Reserve"
+    },
+    {
+      "id": "birnen",
+      "name": "Birnen",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "4"
+      },
+      "courses": [
+        "gang-4"
+      ],
+      "note": "Abate Fetel ideal, oder sehr feste Williams; Kompott"
+    },
+    {
+      "id": "granny-smith-aepfel",
+      "name": "Granny-Smith-Äpfel",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "courses": [
+        "gang-1"
+      ],
+      "note": "1 für Brunoise, 1 Reserve"
+    },
+    {
+      "id": "sauerkirschen",
+      "name": "Sauerkirschen",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "250g"
+      },
+      "courses": [
+        "gang-3"
+      ],
+      "note": "TK oder Glas, Abtropfgewicht; Sauce"
+    },
+    {
+      "id": "schalotten",
+      "name": "Schalotten",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3"
+      },
+      "courses": [
+        "gang-3"
+      ]
+    },
+    {
+      "id": "thymian",
+      "name": "Thymian, frisch",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      },
+      "courses": [
+        "gang-3"
+      ]
+    },
+    {
+      "id": "staudensellerie",
+      "name": "Stange Staudensellerie",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "courses": [
+        "gang-1"
+      ],
+      "note": "für die Blätter als Garnitur"
+    },
+    {
+      "id": "zitronen",
+      "name": "Zitronen",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3"
+      },
+      "courses": [
+        "gang-1",
+        "gang-2",
+        "gang-4"
+      ],
+      "note": "Nussbutter + Apfel-Brunoise + Birnen-Kompott"
+    },
+    {
+      "id": "sahne",
+      "name": "Sahne",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "600ml"
+      },
+      "courses": [
+        "gang-2",
+        "gang-3",
+        "gang-4"
+      ],
+      "note": "mind. 30% Fett; Püree, Parfait, Karamell, Kartoffelbaumkuchen"
+    },
+    {
+      "id": "butter",
+      "name": "Butter",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "400g"
+      },
+      "courses": [
+        "gang-2",
+        "gang-3",
+        "gang-4"
+      ],
+      "note": "Markenbutter"
+    },
+    {
+      "id": "eier",
+      "name": "Eier",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "8"
+      },
+      "courses": [
+        "gang-3",
+        "gang-4"
+      ],
+      "note": "Eigelb: 4 für Parfait, 2 für Kartoffelbaumkuchen, 2 Reserve"
+    },
+    {
+      "id": "vollmilch",
+      "name": "Vollmilch",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "150ml"
+      }
+    },
+    {
+      "id": "haselnuesse",
+      "name": "Haselnüsse",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "100g"
+      },
+      "courses": [
+        "gang-2"
+      ],
+      "note": "ganz, geschält; Vorspeise"
+    },
+    {
+      "id": "pekannuesse",
+      "name": "Pekannüsse",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "150g"
+      },
+      "courses": [
+        "gang-4"
+      ],
+      "note": "Parfait + Deko"
+    },
+    {
+      "id": "zucker",
+      "name": "Zucker, fein",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1kg"
+      },
+      "courses": [
+        "gang-1",
+        "gang-3",
+        "gang-4"
+      ],
+      "note": "du brauchst ca. 250g, aber Karamell kann verbrennen — lieber Reserve!"
+    },
+    {
+      "id": "vanilleschote",
+      "name": "Vanilleschote",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1"
+      },
+      "courses": [
+        "gang-4"
+      ],
+      "note": "oder 1 TL Vanillepaste"
+    },
+    {
+      "id": "zimtstange",
+      "name": "Zimtstange oder 2 Sternanis",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1"
+      },
+      "courses": [
+        "gang-4"
+      ],
+      "optional": true,
+      "note": "für Kompott"
+    },
+    {
+      "id": "amarettini",
+      "name": "Amarettini oder Spekulatius",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "courses": [
+        "gang-4"
+      ],
+      "optional": true,
+      "note": "für extra Crunch"
+    },
+    {
+      "id": "fleur",
+      "name": "Fleur de Sel",
+      "store": "REWE Center",
+      "group": "Würzmittel & Gewürze",
+      "courses": [
+        "gang-2",
+        "gang-4"
+      ],
+      "note": "hochwertiges Meersalz"
+    },
+    {
+      "id": "gefluegelfond",
+      "name": "Geflügelfond",
+      "store": "REWE Center",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "800ml"
+      },
+      "courses": [
+        "gang-3"
+      ],
+      "note": "2 Gläser à 400ml; 1 Reserve falls Sauce zu stark einkocht"
+    },
+    {
+      "id": "butterschmalz",
+      "name": "Butterschmalz oder Ghee",
+      "store": "REWE Center",
+      "group": "Würzmittel & Gewürze",
+      "courses": [
+        "gang-3"
+      ],
+      "note": "für Kartoffelbaumkuchen"
+    },
+    {
+      "id": "portwein",
+      "name": "Portwein",
+      "store": "REWE Center",
+      "group": "Getränke",
+      "buy": {
+        "text": "250ml"
+      },
+      "courses": [
+        "gang-3"
+      ],
+      "note": "Ruby"
+    },
+    {
+      "id": "salz",
+      "name": "Salz, fein",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Meersalz, zum Kochen"
+    },
+    {
+      "id": "pfeffer",
+      "name": "Pfeffer, schwarz",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "ganze Körner, frisch gemahlen"
+    },
+    {
+      "id": "weisser-pfeffer",
+      "name": "Weißer Pfeffer",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "für helle Pürees"
+    },
+    {
+      "id": "muskatnuss",
+      "name": "Muskatnuss",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1"
+      },
+      "pantry": true,
+      "note": "ganz"
+    },
+    {
+      "id": "olivenoel",
+      "name": "Olivenöl, gut",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "zum Finishen"
+    },
+    {
+      "id": "oel",
+      "name": "Öl, neutral, zum Braten",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Rapsöl oder Sonnenblumenöl"
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "courses": [
+    {
+      "ref": "gang-1",
+      "n": 1,
+      "name": "Sellerie-Consommé mit Granny Smith",
+      "serve": "PT0M",
+      "source": "19:00 Uhr — Gäste da"
+    },
+    {
+      "ref": "gang-2",
+      "n": 2,
+      "name": "Jakobsmuscheln mit Blumenkohlpüree & Zitronen-Haselnussbutter",
+      "serve": "+PT15M",
+      "source": "19:15 Uhr — Nach dem Amuse"
+    },
+    {
+      "ref": "gang-3",
+      "n": 3,
+      "name": "Entenbrust mit Kirsch-Jus, Kartoffelbaumkuchen & glasierten Karotten",
+      "serve": "+PT35M",
+      "source": "19:35 Uhr — Nach der Vorspeise"
+    },
+    {
+      "ref": "gang-4",
+      "n": 4,
+      "name": "Karamell-Pekannuss-Parfait mit Birnen-Kompott",
+      "serve": "+PT1H15M",
+      "source": "20:15 Uhr — Nach dem Hauptgang"
+    }
+  ],
+  "anchor": {
+    "label": "Dinner",
+    "time": "19:00"
+  },
+  "resources": [
+    {
+      "id": "oven",
+      "count": 1
+    },
+    {
+      "id": "hob",
+      "count": 4
+    },
+    {
+      "id": "cook",
+      "count": 1
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Menükarte",
+      "level": 2,
+      "markdown": "| Gang | Gericht | Begleitung |\n|------|---------|------------|\n| **Amuse-Bouche** | Sellerie-Consommé | Granny Smith · Sellerieblatt |\n| **Vorspeise** | Gebratene Jakobsmuscheln | Blumenkohlpüree · Zitronen-Haselnussbutter |\n| **Hauptgang** | Rosa gebratene Entenbrust | Kirsch-Jus · Kartoffelbaumkuchen · Glasierte Karotten |\n| **Dessert** | Karamell-Pekannuss-Parfait | Birnen-Kompott · Salzkaramell |\n\n---"
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "markdown",
+      "title": "Benötigtes Equipment",
+      "level": 2,
+      "markdown": "- Feines Passiertuch oder Kaffeefilter (für Consommé)\n- Feines Sieb (für Pürees)\n- Stabmixer oder Standmixer\n- Kastenform für Parfait (ca. 20cm)\n- Zweite Kastenform oder Form für Kartoffelbaumkuchen (ca. 20cm)\n- Mandoline oder Gemüsehobel (für dünne Kartoffelscheiben)\n- Gewichte zum Beschweren (Konservendosen o.ä.)\n- Frischhaltefolie\n- Fleischthermometer (sehr empfohlen!)\n- 4 Espressotassen oder kleine Schälchen (für Amuse)\n\n---"
+    },
+    {
+      "type": "markdown",
+      "title": "Grundlegende Tipps für Sterneküche zuhause",
+      "level": 2,
+      "markdown": "### Mise en Place — Das A und O\nProfis bereiten ALLES vor dem Kochen vor. Alle Zutaten abgewogen, geschnitten, portioniert. Alle Utensilien griffbereit. Das reduziert Stress und Fehler massiv.\n\n### Temperaturen beachten\n- Fleisch immer 30-60 Min vor dem Braten aus dem Kühlschrank nehmen\n- Teller vorwärmen (80°C im Ofen oder mit heißem Wasser)\n- Pürees warmhalten: Schüssel über Wasserbad, mit Folie abdecken\n- Kerntemperatur Entenbrust: 54°C = rosa, 58°C = medium\n\n### Abschmecken\nSchmecke JEDE Komponente einzeln ab, bevor du anrichtest. Pürees brauchen oft mehr Salz als man denkt. Eine Prise Zucker hebt Aromen. Säure (Zitrone) bringt Frische.\n\n### Ruhezeiten respektieren\nDie Ente MUSS 10 Minuten ruhen — der Saft verteilt sich, das Fleisch wird zarter. Das Parfait braucht 10 Min Antauzeit — dann ist es cremig statt eisig.\n\n### Weniger ist mehr beim Anrichten\nVerwende große, warme Teller mit viel Weißraum. Kleine, präzise Portionen wirken eleganter als überladene Teller. Wische Tellerränder vor dem Servieren sauber.\n\n---"
+    },
+    {
+      "type": "courses",
+      "title": "Rezepte",
+      "courses": [
+        {
+          "id": "gang-1",
+          "kind": "course",
+          "title": "1. Sellerie-Consommé mit Granny Smith",
+          "sections": [
+            {
+              "type": "tasks",
+              "title": "Zubereitung",
+              "tasks": [
+                {
+                  "id": "consomme",
+                  "name": "Consommé",
+                  "steps": [
+                    {
+                      "id": "gang-1-raspeln",
+                      "label": "1",
+                      "heading": "**1. Raspeln (ca. 10 Min.)**",
+                      "title": "Raspeln",
+                      "duration": {
+                        "typical": "PT10M",
+                        "source": "ca. 10 Min.",
+                        "estimated": true
+                      },
+                      "text": "500g Sellerieknolle schälen, braune Stellen großzügig entfernen. Sellerie grob raspeln (Küchenreibe, grobe Seite). Je feiner, desto mehr Aroma.",
+                      "action": "500g Sellerieknolle schälen, braune Stellen großzügig entfernen.",
+                      "ingredients": [
+                        {
+                          "ref": "sellerieknolle",
+                          "amount": {
+                            "text": "500g Sellerieknolle",
+                            "value": 500.0,
+                            "unit": "g"
+                          }
+                        }
+                      ],
+                      "meta": "*jederzeit*",
+                      "attention": "active",
+                      "after": []
+                    },
+                    {
+                      "id": "gang-1-kaltextraktion-ansetzen",
+                      "label": "2",
+                      "heading": "**2. Kaltextraktion ansetzen (12–24 Std., passiv)**",
+                      "title": "Kaltextraktion ansetzen",
+                      "duration": {
+                        "min": "PT12H",
+                        "max": "PT24H",
+                        "source": "12–24 Std."
+                      },
+                      "attention": "passive",
+                      "text": "In eine Schüssel geben, mit 1 TL feinem Salz vermengen und mit 600ml kaltem Wasser bedecken. Mit Frischhaltefolie luftdicht abdecken. Mindestens 12 Stunden, besser 24 Stunden im Kühlschrank ziehen lassen.",
+                      "action": "In eine Schüssel geben, mit 1 TL feinem Salz vermengen und mit 600ml kaltem Wasser bedecken.",
+                      "timers": [
+                        {
+                          "label": "Kaltextraktion ansetzen",
+                          "duration": {
+                            "typical": "PT12M"
+                          },
+                          "text": "12 Stunden"
+                        },
+                        {
+                          "label": "Kaltextraktion ansetzen",
+                          "duration": {
+                            "typical": "PT24M"
+                          },
+                          "text": "24 Stunden"
+                        }
+                      ],
+                      "ingredients": [
+                        {
+                          "ref": "salz",
+                          "amount": {
+                            "text": "1 TL feinem Salz",
+                            "value": 1.0,
+                            "unit": "TL"
+                          }
+                        },
+                        {
+                          "ref": "wasser",
+                          "amount": {
+                            "text": "600ml kaltem Wasser",
+                            "value": 600.0,
+                            "unit": "ml"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "gang-1-passieren",
+                      "label": "3",
+                      "heading": "**3. Passieren (ca. 10 Min.)**",
+                      "title": "Passieren",
+                      "duration": {
+                        "typical": "PT10M",
+                        "source": "ca. 10 Min.",
+                        "estimated": true
+                      },
+                      "text": "Durch ein feines Tuch oder Kaffeefilter in einen Topf passieren. NICHT drücken — nur die klare Flüssigkeit verwenden!",
+                      "action": "Durch ein feines Tuch oder Kaffeefilter in einen Topf passieren.",
+                      "ingredients": [],
+                      "attention": "active"
+                    },
+                    {
+                      "id": "gang-1-langsam-erwaermen",
+                      "label": "4",
+                      "heading": "**4. Langsam erwärmen (ca. 5 Min.)**",
+                      "title": "Langsam erwärmen",
+                      "duration": {
+                        "typical": "PT5M",
+                        "source": "ca. 5 Min.",
+                        "estimated": true
+                      },
+                      "text": "Consommé kurz vor dem Servieren vorsichtig erwärmen (ca. 70°C, nicht kochen!). Mit Salz und einer kleinen Prise Zucker abschmecken. Der Geschmack soll intensiv-sellerieartig sein.",
+                      "action": "Consommé kurz vor dem Servieren vorsichtig erwärmen (ca.",
+                      "temps": [
+                        {
+                          "kind": "ziel",
+                          "text": "70°C",
+                          "value": 70
+                        }
+                      ],
+                      "ingredients": [],
+                      "meta": "*Herd*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "attention": "attended",
+                      "timers": [
+                        {
+                          "label": "Langsam erwärmen",
+                          "duration": {
+                            "typical": "PT5M"
+                          },
+                          "text": "ca. 5 Min."
+                        }
+                      ]
+                    }
+                  ],
+                  "heading": "**Consommé (Vortag ansetzen, hält 2–3 Tage im Kühlschrank, ergibt ca. 350ml):**",
+                  "phaseHint": "Vortag",
+                  "produces": [
+                    {
+                      "id": "consomme",
+                      "name": "Consommé",
+                      "hold": {
+                        "min": "P2D",
+                        "max": "P3D",
+                        "source": "Vortag ansetzen, hält 2–3 Tage im Kühlschrank, ergibt ca. 350ml"
+                      },
+                      "storage": {
+                        "place": "fridge"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "garnitur",
+                  "name": "Garnitur",
+                  "steps": [
+                    {
+                      "id": "gang-1-brunoise-schneiden",
+                      "label": "5",
+                      "heading": "**5. Brunoise schneiden (ca. 10 Min.)**",
+                      "title": "Brunoise schneiden",
+                      "duration": {
+                        "typical": "PT10M",
+                        "source": "ca. 10 Min.",
+                        "estimated": true
+                      },
+                      "text": "½ Granny-Smith-Apfel schälen und in sehr feine Brunoise schneiden (2-3mm Würfel). Präzision zählt! Sofort mit wenig Zitronensaft beträufeln und vermengen (verhindert Braunwerden).",
+                      "action": "½ Granny-Smith-Apfel schälen und in sehr feine Brunoise schneiden (2-3mm Würfel).",
+                      "ingredients": [
+                        {
+                          "ref": "granny-smith-aepfel",
+                          "amount": {
+                            "text": "½ Granny-Smith-Apfel",
+                            "value": 0.5,
+                            "unit": "Stück"
+                          }
+                        }
+                      ],
+                      "meta": "*jederzeit*",
+                      "attention": "active",
+                      "after": []
+                    },
+                    {
+                      "id": "gang-1-sellerieblaetter-zupfen",
+                      "label": "6",
+                      "heading": "**6. Sellerieblätter zupfen (ca. 3 Min.)**",
+                      "title": "Sellerieblätter zupfen",
+                      "duration": {
+                        "typical": "PT3M",
+                        "source": "ca. 3 Min.",
+                        "estimated": true
+                      },
+                      "text": "Zarte, hellgrüne Sellerieblätter vom Staudensellerie zupfen, beiseite stellen.",
+                      "action": "Zarte, hellgrüne Sellerieblätter vom Staudensellerie zupfen, beiseite stellen.",
+                      "ingredients": [],
+                      "meta": "*jederzeit*",
+                      "attention": "active",
+                      "after": []
+                    }
+                  ],
+                  "heading": "**Garnitur (am Tag, kühl stellen):**",
+                  "phaseHint": "am Tag",
+                  "produces": [
+                    {
+                      "id": "garnitur",
+                      "name": "Garnitur"
+                    }
+                  ]
+                },
+                {
+                  "id": "anrichten-amuse",
+                  "name": "Anrichten Amuse",
+                  "steps": [
+                    {
+                      "id": "gang-1-amuse-anrichten",
+                      "label": "7",
+                      "heading": "**7. Amuse anrichten (ca. 5 Min.)**",
+                      "title": "Amuse anrichten",
+                      "duration": {
+                        "typical": "PT5M",
+                        "source": "ca. 5 Min.",
+                        "estimated": true
+                      },
+                      "text": "1 EL Apfelwürfel in vorgewärmte Espressotassen oder kleine Schälchen geben. Warmes Consommé vorsichtig angießen (ca. 50-60ml). Mit 2-3 Sellerieblättern garnieren. Einen Tropfen gutes Olivenöl daraufgeben. Sofort servieren.",
+                      "action": "1 EL Apfelwürfel in vorgewärmte Espressotassen oder kleine Schälchen geben.",
+                      "ingredients": [],
+                      "meta": "*nach Langsam erwärmen, Brunoise schneiden, Sellerieblätter zupfen*",
+                      "attention": "active",
+                      "after": [
+                        "step:gang-1-langsam-erwaermen",
+                        "step:gang-1-brunoise-schneiden",
+                        "step:gang-1-sellerieblaetter-zupfen"
+                      ]
+                    }
+                  ],
+                  "heading": "**Anrichten Amuse (à la minute):**",
+                  "phaseHint": "à la minute",
+                  "produces": [
+                    {
+                      "id": "anrichten-amuse",
+                      "name": "Anrichten Amuse"
+                    }
+                  ],
+                  "consumes": [
+                    "product:consomme"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "markdown",
+              "title": "Profi-Tipps",
+              "level": "bold",
+              "markdown": "> **Profi-Tipps:**\n> - Je länger die Ziehzeit, desto intensiver der Geschmack — 24h sind ideal.\n> - Das Consommé kann 2-3 Tage im Kühlschrank aufbewahrt werden.\n> - Test vorab: Mache einen Tag vorher eine kleine Menge, um den Geschmack zu prüfen.",
+              "tags": [
+                "profi-tipps"
+              ]
+            }
+          ],
+          "intro": "*Vorbereitung: 12-24 Stunden | Aktiv: 25 Minuten | Pro Portion: ca. 60ml*"
+        },
+        {
+          "id": "gang-2",
+          "kind": "course",
+          "title": "2. Jakobsmuscheln mit Blumenkohlpüree & Zitronen-Haselnussbutter",
+          "sections": [
+            {
+              "type": "tasks",
+              "title": "Zubereitung",
+              "tasks": [
+                {
+                  "id": "blumenkohlpueree",
+                  "name": "Blumenkohlpüree",
+                  "steps": [
+                    {
+                      "id": "gang-2-blumenkohl-kochen",
+                      "label": "1",
+                      "heading": "**1. Blumenkohl kochen (ca. 25 Min.)**",
+                      "title": "Blumenkohl kochen",
+                      "duration": {
+                        "typical": "PT25M",
+                        "source": "ca. 25 Min.",
+                        "estimated": true
+                      },
+                      "text": "1 Blumenkohl (ca. 700g) putzen, in gleichmäßige Röschen teilen (wichtig für gleichmäßiges Garen). In reichlich Salzwasser sehr weich kochen (ca. 15-18 Min) — eine Gabel sollte ohne Widerstand durchgehen. In ein Sieb abgießen und 5 Minuten abtropfen lassen. Überschüssiges Wasser ist der Feind eines guten Pürees!",
+                      "action": "1 Blumenkohl (ca.",
+                      "timers": [
+                        {
+                          "label": "Blumenkohl kochen",
+                          "duration": {
+                            "min": "PT15M",
+                            "max": "PT18M",
+                            "estimated": true
+                          },
+                          "text": "ca. 15-18 Min"
+                        },
+                        {
+                          "label": "Blumenkohl kochen",
+                          "duration": {
+                            "typical": "PT5M"
+                          },
+                          "text": "5 Min"
+                        }
+                      ],
+                      "ingredients": [
+                        {
+                          "ref": "blumenkohl",
+                          "amount": {
+                            "text": "1 Blumenkohl",
+                            "value": 1.0,
+                            "unit": "Stück"
+                          }
+                        },
+                        {
+                          "ref": "salz",
+                          "amount": {
+                            "text": "reichlich Salzwasser"
+                          }
+                        }
+                      ],
+                      "meta": "*jederzeit · Herd · fertig wenn eine Gabel ohne Widerstand durchgeht*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "endCondition": {
+                        "type": "visual",
+                        "text": "wenn eine Gabel ohne Widerstand durchgeht"
+                      },
+                      "attention": "attended",
+                      "after": []
+                    },
+                    {
+                      "id": "gang-2-puerieren",
+                      "label": "2",
+                      "heading": "**2. Pürieren (ca. 8 Min.)**",
+                      "title": "Pürieren",
+                      "duration": {
+                        "typical": "PT8M",
+                        "source": "ca. 8 Min.",
+                        "estimated": true
+                      },
+                      "text": "Noch heißen Blumenkohl mit 60g Butter und 60ml warmer Sahne im Mixer/Stabmixer pürieren. Für Sternekonsistenz: Püree durch ein feines Sieb streichen. Dieser Schritt macht den Unterschied!",
+                      "action": "Noch heißen Blumenkohl mit 60g Butter und 60ml warmer Sahne im Mixer/Stabmixer pürieren.",
+                      "ingredients": [
+                        {
+                          "ref": "butter",
+                          "amount": {
+                            "text": "60g Butter",
+                            "value": 60.0,
+                            "unit": "g"
+                          }
+                        },
+                        {
+                          "ref": "sahne",
+                          "amount": {
+                            "text": "60ml warmer Sahne",
+                            "value": 60.0,
+                            "unit": "ml"
+                          }
+                        }
+                      ],
+                      "attention": "active"
+                    },
+                    {
+                      "id": "gang-2-abschmecken-und-warmhalten",
+                      "label": "3",
+                      "heading": "**3. Abschmecken und warmhalten (ca. 3 Min.)**",
+                      "title": "Abschmecken und warmhalten",
+                      "duration": {
+                        "typical": "PT3M",
+                        "source": "ca. 3 Min.",
+                        "estimated": true
+                      },
+                      "text": "Mit Salz, weißem Pfeffer (keine schwarzen Punkte!) und frisch geriebener Muskatnuss abschmecken. In einer Schüssel über einem Topf mit heißem Wasser warmhalten, mit Folie abdecken.",
+                      "action": "Mit Salz, weißem Pfeffer (keine schwarzen Punkte!) und frisch geriebener Muskatnuss abschmecken.",
+                      "ingredients": [],
+                      "attention": "active"
+                    }
+                  ],
+                  "heading": "**Blumenkohlpüree (am Tag, hält bis 2 h warm über dem Wasserbad):**",
+                  "phaseHint": "am Tag",
+                  "produces": [
+                    {
+                      "id": "blumenkohlpueree",
+                      "name": "Blumenkohlpüree",
+                      "hold": {
+                        "max": "PT2H",
+                        "source": "am Tag, hält bis 2 h warm über dem Wasserbad"
+                      },
+                      "storage": {
+                        "place": "warm"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "haselnuesse",
+                  "name": "Haselnüsse",
+                  "steps": [
+                    {
+                      "id": "gang-2-haselnuesse-roesten",
+                      "label": "4",
+                      "heading": "**4. Haselnüsse rösten (ca. 4 Min.)**",
+                      "title": "Haselnüsse rösten",
+                      "duration": {
+                        "typical": "PT4M",
+                        "source": "ca. 4 Min.",
+                        "estimated": true
+                      },
+                      "text": "60g Haselnüsse grob hacken und in einer trockenen Pfanne bei mittlerer Hitze rösten. Ständig schwenken bis sie duften und leicht Farbe annehmen (ca. 3-4 Min). Beiseite stellen.",
+                      "action": "60g Haselnüsse grob hacken und in einer trockenen Pfanne bei mittlerer Hitze rösten.",
+                      "cues": [
+                        "bis sie duften und leicht Farbe annehmen (ca"
+                      ],
+                      "timers": [
+                        {
+                          "label": "Haselnüsse rösten",
+                          "duration": {
+                            "min": "PT3M",
+                            "max": "PT4M",
+                            "estimated": true
+                          },
+                          "text": "ca. 3-4 Min"
+                        }
+                      ],
+                      "ingredients": [
+                        {
+                          "ref": "haselnuesse",
+                          "amount": {
+                            "text": "60g Haselnüsse",
+                            "value": 60.0,
+                            "unit": "g"
+                          }
+                        }
+                      ],
+                      "meta": "*jederzeit · Herd*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "attention": "attended",
+                      "after": []
+                    }
+                  ],
+                  "heading": "**Haselnüsse (Vortag rösten, Raumtemperatur):**",
+                  "phaseHint": "Vortag",
+                  "produces": [
+                    {
+                      "id": "haselnuesse",
+                      "name": "Haselnüsse",
+                      "storage": {
+                        "place": "room"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "zitronen-haselnussbutter",
+                  "name": "Zitronen-Haselnussbutter",
+                  "steps": [
+                    {
+                      "id": "gang-2-haselnussbutter-machen",
+                      "label": "5",
+                      "heading": "**5. Haselnussbutter machen (ca. 5 Min.)**",
+                      "title": "Haselnussbutter machen",
+                      "duration": {
+                        "typical": "PT5M",
+                        "source": "ca. 5 Min.",
+                        "estimated": true
+                      },
+                      "text": "100g Butter in einem kleinen Topf bei mittlerer Hitze schmelzen. Weiter erhitzen bis die Butter schäumt, dann nussbraun wird und herrlich duftet (Beurre noisette). Sofort vom Herd nehmen (Butter brennt schnell an!), Haselnüsse dazugeben. 1-2 EL frischen Zitronensaft einrühren — es zischt kurz auf, das ist normal! Mit ½ TL Fleur de Sel würzen. Warmhalten.",
+                      "action": "100g Butter in einem kleinen Topf bei mittlerer Hitze schmelzen.",
+                      "cues": [
+                        "bis die Butter schäumt"
+                      ],
+                      "ingredients": [
+                        {
+                          "ref": "butter",
+                          "amount": {
+                            "text": "100g Butter",
+                            "value": 100.0,
+                            "unit": "g"
+                          }
+                        },
+                        {
+                          "ref": "zitronen",
+                          "amount": {
+                            "text": "1-2 EL frischen Zitronensaft",
+                            "value": 1.0,
+                            "unit": "EL",
+                            "max": 2.0
+                          }
+                        },
+                        {
+                          "ref": "fleur",
+                          "amount": {
+                            "text": "½ TL Fleur de Sel",
+                            "value": 0.5,
+                            "unit": "TL"
+                          }
+                        }
+                      ],
+                      "meta": "*nach Haselnüsse rösten · Herd*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "attention": "active",
+                      "after": [
+                        "step:gang-2-haselnuesse-roesten"
+                      ]
+                    }
+                  ],
+                  "heading": "**Zitronen-Haselnussbutter (à la minute, warmhalten):**",
+                  "phaseHint": "à la minute",
+                  "produces": [
+                    {
+                      "id": "zitronen-haselnussbutter",
+                      "name": "Zitronen-Haselnussbutter",
+                      "storage": {
+                        "place": "warm"
+                      }
+                    }
+                  ],
+                  "consumes": [
+                    "product:haselnuesse"
+                  ]
+                },
+                {
+                  "id": "jakobsmuscheln",
+                  "name": "Jakobsmuscheln",
+                  "steps": [
+                    {
+                      "id": "gang-2-trocken-tupfen",
+                      "label": "6",
+                      "heading": "**6. Trocken tupfen (ca. 15 Min.)**",
+                      "title": "Trocken tupfen",
+                      "duration": {
+                        "typical": "PT15M",
+                        "source": "ca. 15 Min.",
+                        "estimated": true
+                      },
+                      "text": "Die Jakobsmuscheln (8 Stück + 2 Reserve) auf Küchenpapier legen und SEHR gründlich trocken tupfen — von allen Seiten! Idealerweise 10-15 Min offen im Kühlschrank antrocknen lassen.",
+                      "action": "Die Jakobsmuscheln (8 Stück + 2 Reserve) auf Küchenpapier legen und SEHR gründlich trocken tupfen — von allen Seiten!",
+                      "timers": [
+                        {
+                          "label": "Trocken tupfen",
+                          "duration": {
+                            "min": "PT10M",
+                            "max": "PT15M"
+                          },
+                          "text": "10-15 Min"
+                        }
+                      ],
+                      "ingredients": [
+                        {
+                          "ref": "jakobsmuscheln",
+                          "amount": {
+                            "text": "8 Stück",
+                            "value": 8.0,
+                            "unit": "Stück"
+                          }
+                        }
+                      ],
+                      "meta": "*jederzeit*",
+                      "attention": "active",
+                      "after": []
+                    },
+                    {
+                      "id": "gang-2-jakobsmuscheln-salzen",
+                      "label": "7",
+                      "heading": "**7. Jakobsmuscheln salzen (ca. 3 Min.)**",
+                      "title": "Jakobsmuscheln salzen",
+                      "duration": {
+                        "typical": "PT3M",
+                        "source": "ca. 3 Min.",
+                        "estimated": true
+                      },
+                      "text": "Erst kurz vor dem Braten mit Salz würzen (Salz zieht Feuchtigkeit!). Schwere Pfanne mit 1 EL neutralem Öl auf höchster Stufe erhitzen bis es leicht raucht.",
+                      "action": "Erst kurz vor dem Braten mit Salz würzen (Salz zieht Feuchtigkeit!).",
+                      "cues": [
+                        "bis es leicht raucht"
+                      ],
+                      "ingredients": [],
+                      "meta": "*Herd*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "attention": "active"
+                    },
+                    {
+                      "id": "gang-2-muscheln-braten",
+                      "label": "8",
+                      "heading": "**8. Muscheln braten (ca. 3 Min.)**",
+                      "title": "Muscheln braten",
+                      "duration": {
+                        "typical": "PT3M",
+                        "source": "ca. 3 Min.",
+                        "estimated": true
+                      },
+                      "text": "Muscheln vorsichtig einlegen — mit Abstand! Nicht bewegen! 90 Sekunden braten bis sich eine goldbraune Kruste bildet. Mit einer Palette oder Pfannenwender vorsichtig wenden. Weitere 60 Sekunden braten. Der Kern soll glasig-transluzent bleiben! Sofort aus der Pfanne nehmen.",
+                      "action": "Muscheln vorsichtig einlegen — mit Abstand!",
+                      "cues": [
+                        "bis sich eine goldbraune Kruste bildet"
+                      ],
+                      "timers": [
+                        {
+                          "label": "Muscheln braten",
+                          "duration": {
+                            "typical": "PT90S"
+                          },
+                          "text": "90 Sek"
+                        },
+                        {
+                          "label": "Muscheln braten",
+                          "duration": {
+                            "typical": "PT60S"
+                          },
+                          "text": "60 Sek"
+                        }
+                      ],
+                      "ingredients": [],
+                      "meta": "*Herd*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "attention": "active"
+                    }
+                  ],
+                  "heading": "**Jakobsmuscheln (à la minute):**",
+                  "phaseHint": "à la minute",
+                  "produces": [
+                    {
+                      "id": "jakobsmuscheln",
+                      "name": "Jakobsmuscheln"
+                    }
+                  ]
+                },
+                {
+                  "id": "anrichten-vorspeise",
+                  "name": "Anrichten Vorspeise",
+                  "steps": [
+                    {
+                      "id": "gang-2-vorspeise-anrichten",
+                      "label": "9",
+                      "heading": "**9. Vorspeise anrichten (ca. 3 Min.)**",
+                      "title": "Vorspeise anrichten",
+                      "duration": {
+                        "typical": "PT3M",
+                        "source": "ca. 3 Min.",
+                        "estimated": true
+                      },
+                      "text": "2 EL Püree mittig auf vorgewärmte Teller geben und mit einem Löffelrücken zu einem Spiegel ausstreichen. Je 2 Muscheln daraufsetzen (Bratseite nach oben!). Zitronen-Haselnussbutter großzügig darüber löffeln. Sofort servieren!",
+                      "action": "2 EL Püree mittig auf vorgewärmte Teller geben und mit einem Löffelrücken zu einem Spiegel ausstreichen.",
+                      "ingredients": [
+                        {
+                          "ref": "jakobsmuscheln",
+                          "amount": {
+                            "text": "2 Muscheln",
+                            "value": 2.0,
+                            "unit": "Stück"
+                          }
+                        }
+                      ],
+                      "meta": "*nach Muscheln braten, Abschmecken und warmhalten, Haselnussbutter machen*",
+                      "attention": "active",
+                      "after": [
+                        "step:gang-2-muscheln-braten",
+                        "step:gang-2-abschmecken-und-warmhalten",
+                        "step:gang-2-haselnussbutter-machen"
+                      ]
+                    }
+                  ],
+                  "heading": "**Anrichten Vorspeise (à la minute):**",
+                  "phaseHint": "à la minute",
+                  "produces": [
+                    {
+                      "id": "anrichten-vorspeise",
+                      "name": "Anrichten Vorspeise"
+                    }
+                  ],
+                  "consumes": [
+                    "product:zitronen-haselnussbutter"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "markdown",
+              "title": "Profi-Tipps",
+              "level": "bold",
+              "markdown": "> **Profi-Tipps:**\n> - Die Zitrone bringt Frische und schneidet durch die Fettigkeit — ein Game-Changer!\n> - Feuchtigkeit = kein Karamellisieren. Jakobsmuscheln müssen KNOCHENTROCKEN sein.\n> - Nicht zu viele Muscheln gleichzeitig — die Pfanne kühlt sonst ab.\n> - Das Püree kann 2h im Voraus gemacht und warmgehalten werden.\n> - Teste eine Muschel vorher, um das Timing deiner Pfanne kennenzulernen.",
+              "tags": [
+                "profi-tipps"
+              ]
+            }
+          ],
+          "intro": "*Vorbereitung: 20 Minuten | Zubereitung: 25 Minuten | Pro Portion: 2 Muscheln*"
+        },
+        {
+          "id": "gang-3",
+          "kind": "course",
+          "title": "3. Entenbrust mit Kirsch-Jus, Kartoffelbaumkuchen & glasierten Karotten",
+          "sections": [
+            {
+              "type": "tasks",
+              "title": "Zubereitung",
+              "tasks": [
+                {
+                  "id": "kartoffelbaumkuchen",
+                  "name": "Kartoffelbaumkuchen",
+                  "steps": [
+                    {
+                      "id": "gang-3-schichten",
+                      "label": "1",
+                      "heading": "**1. Schichten (ca. 30 Min.)**",
+                      "title": "Schichten",
+                      "duration": {
+                        "typical": "PT30M",
+                        "source": "ca. 30 Min.",
+                        "estimated": true
+                      },
+                      "text": "700g festkochende Kartoffeln schälen. Mit Mandoline oder scharfem Messer in sehr dünne Scheiben schneiden (2-3mm). NICHT wässern — die Stärke ist wichtig für den Zusammenhalt! 200ml Sahne mit 2 Eigelb verquirlen. Mit 1 TL Salz, Pfeffer und frisch geriebener Muskatnuss kräftig würzen. Kastenform (ca. 20cm) mit Backpapier auslegen (Überhang lassen!). Kartoffelscheiben schichtweise einlegen (wie Lasagne), jede Schicht mit etwas Sahne-Ei-Mischung bestreichen.",
+                      "action": "700g festkochende Kartoffeln schälen.",
+                      "ingredients": [
+                        {
+                          "ref": "kartoffeln",
+                          "amount": {
+                            "text": "700g festkochende Kartoffeln",
+                            "value": 700.0,
+                            "unit": "g"
+                          }
+                        },
+                        {
+                          "ref": "sahne",
+                          "amount": {
+                            "text": "200ml Sahne",
+                            "value": 200.0,
+                            "unit": "ml"
+                          }
+                        },
+                        {
+                          "ref": "eier",
+                          "amount": {
+                            "text": "2 Eigelb",
+                            "value": 2.0,
+                            "unit": "Eigelb"
+                          }
+                        },
+                        {
+                          "ref": "salz",
+                          "amount": {
+                            "text": "1 TL Salz",
+                            "value": 1.0,
+                            "unit": "TL"
+                          }
+                        }
+                      ],
+                      "meta": "*jederzeit*",
+                      "attention": "active",
+                      "after": []
+                    },
+                    {
+                      "id": "gang-3-backen",
+                      "label": "2",
+                      "heading": "**2. Backen (50–60 Min., passiv)**",
+                      "title": "Backen",
+                      "duration": {
+                        "min": "PT50M",
+                        "max": "PT1H",
+                        "source": "50–60 Min."
+                      },
+                      "attention": "passive",
+                      "text": "Im vorgeheizten Ofen bei 160°C Umluft ca. 50-60 Min backen bis goldbraun und ein Messer ohne Widerstand durchgeht.",
+                      "action": "Im vorgeheizten Ofen bei 160°C Umluft ca.",
+                      "timers": [
+                        {
+                          "label": "Backen",
+                          "duration": {
+                            "min": "PT50M",
+                            "max": "PT1H",
+                            "estimated": true
+                          },
+                          "text": "ca. 50-60 Min"
+                        }
+                      ],
+                      "temps": [
+                        {
+                          "kind": "ofen",
+                          "text": "160°C",
+                          "value": 160
+                        }
+                      ],
+                      "ingredients": [],
+                      "meta": "*Ofen 160 °C · fertig wenn ein Messer ohne Widerstand durchgeht*",
+                      "claims": [
+                        {
+                          "resource": "oven",
+                          "temp": 160
+                        }
+                      ],
+                      "endCondition": {
+                        "type": "visual",
+                        "text": "wenn ein Messer ohne Widerstand durchgeht"
+                      }
+                    },
+                    {
+                      "id": "gang-3-pressen",
+                      "label": "3",
+                      "heading": "**3. Pressen (über Nacht, passiv)**",
+                      "title": "Pressen",
+                      "duration": {
+                        "min": "PT8H",
+                        "max": "PT14H",
+                        "source": "über Nacht"
+                      },
+                      "attention": "passive",
+                      "text": "Aus dem Ofen nehmen. Zweites Backpapier auflegen, passendes Brett oder zweite Form daraufsetzen. Mit Konservendosen beschweren (ca. 1-2kg Gewicht). ÜBER NACHT im Kühlschrank pressen — macht die Schichten kompakt und schnittfest.",
+                      "action": "Aus dem Ofen nehmen.",
+                      "ingredients": [],
+                      "timers": [
+                        {
+                          "label": "Pressen",
+                          "duration": {
+                            "min": "PT8H",
+                            "max": "PT14H"
+                          },
+                          "text": "über Nacht"
+                        }
+                      ]
+                    }
+                  ],
+                  "heading": "**Kartoffelbaumkuchen (AM VORTAG ZUBEREITEN!, Kühlschrank):**",
+                  "produces": [
+                    {
+                      "id": "kartoffelbaumkuchen",
+                      "name": "Kartoffelbaumkuchen",
+                      "storage": {
+                        "place": "fridge"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "kartoffelbaumkuchen-scheiben",
+                  "name": "Kartoffelbaumkuchen-Scheiben",
+                  "steps": [
+                    {
+                      "id": "gang-3-in-scheiben-schneiden",
+                      "label": "4",
+                      "heading": "**4. In Scheiben schneiden (ca. 5 Min.)**",
+                      "title": "In Scheiben schneiden",
+                      "duration": {
+                        "typical": "PT5M",
+                        "source": "ca. 5 Min.",
+                        "estimated": true
+                      },
+                      "text": "Am Tag des Dinners: Den festen Block aus der Form stürzen, Backpapier entfernen. In 4 gleichmäßige Scheiben schneiden (ca. 2cm dick).",
+                      "action": "Am Tag des Dinners: Den festen Block aus der Form stürzen, Backpapier entfernen.",
+                      "ingredients": [],
+                      "meta": "*nach Pressen*",
+                      "attention": "active",
+                      "after": [
+                        "step:gang-3-pressen"
+                      ]
+                    },
+                    {
+                      "id": "gang-3-knusprig-anbraten",
+                      "label": "5",
+                      "heading": "**5. Knusprig anbraten (ca. 8 Min.)**",
+                      "title": "Knusprig anbraten",
+                      "duration": {
+                        "typical": "PT8M",
+                        "source": "ca. 8 Min.",
+                        "estimated": true
+                      },
+                      "text": "In einer Pfanne mit Butterschmalz bei mittlerer Hitze von beiden Seiten goldbraun und knusprig braten (je 3-4 Min pro Seite). Im Ofen bei 80°C warmhalten.",
+                      "action": "In einer Pfanne mit Butterschmalz bei mittlerer Hitze von beiden Seiten goldbraun und knusprig braten (je 3-4 Min pro Seite).",
+                      "timers": [
+                        {
+                          "label": "Knusprig anbraten",
+                          "duration": {
+                            "min": "PT3M",
+                            "max": "PT4M"
+                          },
+                          "text": "3-4 Min"
+                        }
+                      ],
+                      "temps": [
+                        {
+                          "kind": "ofen",
+                          "text": "80°C",
+                          "value": 80
+                        }
+                      ],
+                      "ingredients": [],
+                      "meta": "*Herd*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "attention": "active"
+                    }
+                  ],
+                  "heading": "**Kartoffelbaumkuchen-Scheiben (am Tag, im Ofen bei 80°C warmhalten):**",
+                  "phaseHint": "am Tag",
+                  "produces": [
+                    {
+                      "id": "kartoffelbaumkuchen-scheiben",
+                      "name": "Kartoffelbaumkuchen-Scheiben",
+                      "storage": {
+                        "place": "warm",
+                        "temp": {
+                          "min": 80,
+                          "max": 80
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "glasierte-karotten",
+                  "name": "Glasierte Karotten",
+                  "steps": [
+                    {
+                      "id": "gang-3-karotten-glasieren",
+                      "label": "6",
+                      "heading": "**6. Karotten glasieren (15–18 Min.)**",
+                      "title": "Karotten glasieren",
+                      "duration": {
+                        "min": "PT15M",
+                        "max": "PT18M",
+                        "source": "15–18 Min."
+                      },
+                      "text": "8 Bundmöhren schälen, Grün bis auf 2cm kürzen. In einer weiten Pfanne nebeneinander legen. 40g Butter, 1 EL Zucker, ½ TL Salz und 150ml Wasser dazugeben. Bei mittlerer Hitze köcheln lassen, regelmäßig schwenken. Wenn das Wasser fast verdampft ist und die Karotten glasig glänzen: fertig (ca. 15-18 Min). Karotten sollen bissfest sein, nicht weich! Mit Thymianblättchen bestreuen.",
+                      "action": "8 Bundmöhren schälen, Grün bis auf 2cm kürzen.",
+                      "cues": [
+                        "bis auf 2cm kürzen"
+                      ],
+                      "timers": [
+                        {
+                          "label": "Karotten glasieren",
+                          "duration": {
+                            "min": "PT15M",
+                            "max": "PT18M",
+                            "estimated": true
+                          },
+                          "text": "ca. 15-18 Min"
+                        }
+                      ],
+                      "ingredients": [
+                        {
+                          "ref": "bundmoehren",
+                          "amount": {
+                            "text": "8 Bundmöhren",
+                            "value": 8.0,
+                            "unit": "Stück"
+                          }
+                        },
+                        {
+                          "ref": "butter",
+                          "amount": {
+                            "text": "40g Butter",
+                            "value": 40.0,
+                            "unit": "g"
+                          }
+                        },
+                        {
+                          "ref": "zucker",
+                          "amount": {
+                            "text": "1 EL Zucker",
+                            "value": 1.0,
+                            "unit": "EL"
+                          }
+                        },
+                        {
+                          "ref": "salz",
+                          "amount": {
+                            "text": "½ TL Salz",
+                            "value": 0.5,
+                            "unit": "TL"
+                          }
+                        },
+                        {
+                          "ref": "wasser",
+                          "amount": {
+                            "text": "150ml Wasser",
+                            "value": 150.0,
+                            "unit": "ml"
+                          }
+                        }
+                      ],
+                      "meta": "*jederzeit · Herd*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "attention": "attended",
+                      "after": []
+                    }
+                  ],
+                  "heading": "**Glasierte Karotten (am Abend):**",
+                  "phaseHint": "am Abend",
+                  "produces": [
+                    {
+                      "id": "glasierte-karotten",
+                      "name": "Glasierte Karotten"
+                    }
+                  ]
+                },
+                {
+                  "id": "sauce-basis",
+                  "name": "Sauce-Basis",
+                  "steps": [
+                    {
+                      "id": "gang-3-schalotte-anschwitzen",
+                      "label": "7",
+                      "heading": "**7. Schalotte anschwitzen (ca. 5 Min.)**",
+                      "title": "Schalotte anschwitzen",
+                      "duration": {
+                        "typical": "PT5M",
+                        "source": "ca. 5 Min.",
+                        "estimated": true
+                      },
+                      "text": "1 Schalotte fein würfeln, in 1 EL Butter glasig anschwitzen. 200g abgetropfte Kirschen dazugeben, 1 Min mitbraten.",
+                      "action": "1 Schalotte fein würfeln, in 1 EL Butter glasig anschwitzen.",
+                      "timers": [
+                        {
+                          "label": "Schalotte anschwitzen",
+                          "duration": {
+                            "typical": "PT1M"
+                          },
+                          "text": "1 Min"
+                        }
+                      ],
+                      "ingredients": [
+                        {
+                          "ref": "schalotten",
+                          "amount": {
+                            "text": "1 Schalotte",
+                            "value": 1.0,
+                            "unit": "Stück"
+                          }
+                        },
+                        {
+                          "ref": "butter",
+                          "amount": {
+                            "text": "1 EL Butter",
+                            "value": 1.0,
+                            "unit": "EL"
+                          }
+                        },
+                        {
+                          "ref": "sauerkirschen",
+                          "amount": {
+                            "text": "200g abgetropfte Kirschen",
+                            "value": 200.0,
+                            "unit": "g"
+                          }
+                        }
+                      ],
+                      "meta": "*jederzeit · Herd*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "attention": "active",
+                      "after": []
+                    },
+                    {
+                      "id": "gang-3-fond-aufgiessen",
+                      "label": "8",
+                      "heading": "**8. Fond aufgießen (10 Min.)**",
+                      "title": "Fond aufgießen",
+                      "duration": {
+                        "typical": "PT10M",
+                        "source": "10 Min."
+                      },
+                      "text": "Mit 400ml Geflügelfond aufgießen. 10 Min köcheln lassen bis leicht eingedickt.",
+                      "action": "Mit 400ml Geflügelfond aufgießen.",
+                      "timers": [
+                        {
+                          "label": "Fond aufgießen",
+                          "duration": {
+                            "typical": "PT10M"
+                          },
+                          "text": "10 Min"
+                        }
+                      ],
+                      "ingredients": [
+                        {
+                          "ref": "gefluegelfond",
+                          "amount": {
+                            "text": "400ml Geflügelfond",
+                            "value": 400.0,
+                            "unit": "ml"
+                          }
+                        }
+                      ],
+                      "meta": "*Herd*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "attention": "attended"
+                    }
+                  ],
+                  "heading": "**Sauce-Basis (bis 2 Tage vorher, Kühlschrank):**",
+                  "produces": [
+                    {
+                      "id": "sauce-basis",
+                      "name": "Sauce-Basis",
+                      "hold": {
+                        "max": "P2D",
+                        "source": "bis 2 Tage vorher, Kühlschrank"
+                      },
+                      "storage": {
+                        "place": "fridge"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "kirsch-jus",
+                  "name": "Kirsch-Jus",
+                  "steps": [
+                    {
+                      "id": "gang-3-teilen",
+                      "label": "9",
+                      "heading": "**9. Teilen (ca. 3 Min.)**",
+                      "title": "Teilen",
+                      "duration": {
+                        "typical": "PT3M",
+                        "source": "ca. 3 Min.",
+                        "estimated": true
+                      },
+                      "text": "Sauce-Basis erwärmen, dann die Kinder-Portion abzweigen.",
+                      "action": "Sauce-Basis erwärmen, dann die Kinder-Portion abzweigen.",
+                      "ingredients": [],
+                      "meta": "*nach Fond aufgießen · Herd*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "attention": "active",
+                      "after": [
+                        "step:gang-3-fond-aufgiessen"
+                      ]
+                    },
+                    {
+                      "id": "gang-3-einkochen",
+                      "label": "10",
+                      "heading": "**10. Einkochen (8–10 Min.)**",
+                      "title": "Einkochen",
+                      "duration": {
+                        "min": "PT8M",
+                        "max": "PT10M",
+                        "source": "8–10 Min."
+                      },
+                      "text": "Zur restlichen Sauce 200ml Portwein geben. Achtung: Flamme möglich bei Gas! Auf ca. 200ml einreduzieren (ca. 8-10 Min).",
+                      "action": "Zur restlichen Sauce 200ml Portwein geben.",
+                      "timers": [
+                        {
+                          "label": "Einkochen",
+                          "duration": {
+                            "min": "PT8M",
+                            "max": "PT10M",
+                            "estimated": true
+                          },
+                          "text": "ca. 8-10 Min"
+                        }
+                      ],
+                      "ingredients": [
+                        {
+                          "ref": "portwein",
+                          "amount": {
+                            "text": "200ml Portwein",
+                            "value": 200.0,
+                            "unit": "ml"
+                          }
+                        }
+                      ],
+                      "meta": "*Herd*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "attention": "attended"
+                    },
+                    {
+                      "id": "gang-3-montieren",
+                      "label": "11",
+                      "heading": "**11. Montieren (ca. 2 Min.)**",
+                      "title": "Montieren",
+                      "duration": {
+                        "typical": "PT2M",
+                        "source": "ca. 2 Min.",
+                        "estimated": true
+                      },
+                      "text": "Vom Herd nehmen, 30g kalte Butter in Stücken unterschwenken (montieren) — gibt Glanz und Bindung. Mit Salz und evtl. einem Spritzer Zitrone abschmecken. Warmhalten.",
+                      "action": "Vom Herd nehmen, 30g kalte Butter in Stücken unterschwenken (montieren) — gibt Glanz und Bindung.",
+                      "ingredients": [
+                        {
+                          "ref": "butter",
+                          "amount": {
+                            "text": "30g kalte Butter",
+                            "value": 30.0,
+                            "unit": "g"
+                          }
+                        }
+                      ],
+                      "attention": "active"
+                    }
+                  ],
+                  "heading": "**Kirsch-Jus (Erwachsene + Kinder-Variante, à la minute):**",
+                  "phaseHint": "à la minute",
+                  "produces": [
+                    {
+                      "id": "kirsch-jus",
+                      "name": "Kirsch-Jus"
+                    }
+                  ],
+                  "consumes": [
+                    "product:sauce-basis"
+                  ]
+                },
+                {
+                  "id": "entenbrust",
+                  "name": "Entenbrust",
+                  "steps": [
+                    {
+                      "id": "gang-3-aus-dem-kuehlschrank",
+                      "label": "12",
+                      "heading": "**12. Aus dem Kühlschrank (30–60 Min., passiv)**",
+                      "title": "Aus dem Kühlschrank",
+                      "duration": {
+                        "min": "PT30M",
+                        "max": "PT1H",
+                        "source": "30–60 Min."
+                      },
+                      "attention": "passive",
+                      "text": "2 Entenbrüste (die 3. ist Reserve — oder alle 3 für größere Portionen) mindestens 30 Min, besser 1 Stunde vor dem Braten aus dem Kühlschrank nehmen.",
+                      "action": "2 Entenbrüste (die 3. ist Reserve — oder alle 3 für größere Portionen) mindestens 30 Min, besser 1 Stunde vor dem Braten aus dem Kühlschrank nehmen.",
+                      "ingredients": [
+                        {
+                          "ref": "entenbrueste",
+                          "amount": {
+                            "text": "2 Entenbrüste",
+                            "value": 2.0,
+                            "unit": "Stück"
+                          }
+                        }
+                      ],
+                      "meta": "*jederzeit*",
+                      "timers": [
+                        {
+                          "label": "Aus dem Kühlschrank",
+                          "duration": {
+                            "min": "PT30M",
+                            "max": "PT1H"
+                          },
+                          "text": "30–60 Min."
+                        }
+                      ],
+                      "after": []
+                    },
+                    {
+                      "id": "gang-3-haut-einschneiden",
+                      "label": "13",
+                      "heading": "**13. Haut einschneiden (ca. 5 Min.)**",
+                      "title": "Haut einschneiden",
+                      "duration": {
+                        "typical": "PT5M",
+                        "source": "ca. 5 Min.",
+                        "estimated": true
+                      },
+                      "text": "Haut mit einem scharfen Messer rautenförmig einschneiden (ca. 5mm tief, 1cm Abstand). WICHTIG: Nicht ins Fleisch schneiden, nur die Haut und Fettschicht!",
+                      "action": "Haut mit einem scharfen Messer rautenförmig einschneiden (ca.",
+                      "ingredients": [],
+                      "attention": "active"
+                    },
+                    {
+                      "id": "gang-3-entenbrust-salzen",
+                      "label": "14",
+                      "heading": "**14. Entenbrust salzen (ca. 2 Min.)**",
+                      "title": "Entenbrust salzen",
+                      "duration": {
+                        "typical": "PT2M",
+                        "source": "ca. 2 Min.",
+                        "estimated": true
+                      },
+                      "text": "Fleischseite mit Salz und Pfeffer würzen. Haut nur salzen, kein Pfeffer (verbrennt).",
+                      "action": "Fleischseite mit Salz und Pfeffer würzen.",
+                      "ingredients": [],
+                      "attention": "active"
+                    },
+                    {
+                      "id": "gang-3-ente-starten",
+                      "label": "15",
+                      "heading": "**15. Ente starten (12–15 Min.)**",
+                      "title": "Ente starten",
+                      "duration": {
+                        "min": "PT12M",
+                        "max": "PT15M",
+                        "source": "12–15 Min."
+                      },
+                      "text": "KALTE Pfanne nehmen. Entenbrust mit Hautseite nach unten einlegen. DANN erst auf mittlere Hitze schalten. Langsam erhitzen! Das Fett langsam ausbraten lassen (12-15 Min). Ausgelassenes Fett regelmäßig abgießen.",
+                      "action": "KALTE Pfanne nehmen.",
+                      "timers": [
+                        {
+                          "label": "Ente starten",
+                          "duration": {
+                            "min": "PT12M",
+                            "max": "PT15M"
+                          },
+                          "text": "12-15 Min"
+                        }
+                      ],
+                      "ingredients": [],
+                      "meta": "*Herd*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "attention": "active"
+                    },
+                    {
+                      "id": "gang-3-ente-wenden",
+                      "label": "16",
+                      "heading": "**16. Ente wenden (3–4 Min.)**",
+                      "title": "Ente wenden",
+                      "duration": {
+                        "min": "PT3M",
+                        "max": "PT4M",
+                        "source": "3–4 Min."
+                      },
+                      "text": "Wenn die Haut gleichmäßig goldbraun und knusprig ist: wenden. Fleischseite 3-4 Min bei mittlerer Hitze braten. Kerntemperatur messen: 52-54°C für rosa (medium rare), 58°C für medium.",
+                      "action": "Wenn die Haut gleichmäßig goldbraun und knusprig ist: wenden.",
+                      "timers": [
+                        {
+                          "label": "Ente wenden",
+                          "duration": {
+                            "min": "PT3M",
+                            "max": "PT4M"
+                          },
+                          "text": "3-4 Min"
+                        }
+                      ],
+                      "temps": [
+                        {
+                          "kind": "kern",
+                          "text": "52-54°C",
+                          "min": 52,
+                          "max": 54
+                        },
+                        {
+                          "kind": "ziel",
+                          "text": "58°C",
+                          "value": 58
+                        }
+                      ],
+                      "ingredients": [],
+                      "meta": "*Herd · fertig bei 52–54 °C Kern*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "endCondition": {
+                        "type": "temperature",
+                        "text": "bei 52–54 °C Kern",
+                        "value": 52
+                      },
+                      "attention": "active"
+                    },
+                    {
+                      "id": "gang-3-ruhen-lassen",
+                      "label": "17",
+                      "heading": "**17. Ruhen lassen (8–10 Min., passiv)**",
+                      "title": "Ruhen lassen",
+                      "duration": {
+                        "min": "PT8M",
+                        "max": "PT10M",
+                        "source": "8–10 Min."
+                      },
+                      "attention": "passive",
+                      "text": "Aus der Pfanne nehmen, auf ein Brett legen, LOCKER mit Alufolie abdecken. MINDESTENS 8-10 Minuten ruhen lassen! Das ist nicht verhandelbar!",
+                      "action": "Aus der Pfanne nehmen, auf ein Brett legen, LOCKER mit Alufolie abdecken.",
+                      "timers": [
+                        {
+                          "label": "Ruhen lassen",
+                          "duration": {
+                            "min": "PT8M",
+                            "max": "PT10M"
+                          },
+                          "text": "8-10 Min"
+                        }
+                      ],
+                      "ingredients": []
+                    }
+                  ],
+                  "heading": "**Entenbrust (am Abend):**",
+                  "phaseHint": "am Abend",
+                  "produces": [
+                    {
+                      "id": "entenbrust",
+                      "name": "Entenbrust"
+                    }
+                  ]
+                },
+                {
+                  "id": "anrichten-hauptgang",
+                  "name": "Anrichten Hauptgang",
+                  "steps": [
+                    {
+                      "id": "gang-3-ente-aufschneiden",
+                      "label": "18",
+                      "heading": "**18. Ente aufschneiden (ca. 3 Min.)**",
+                      "title": "Ente aufschneiden",
+                      "duration": {
+                        "typical": "PT3M",
+                        "source": "ca. 3 Min.",
+                        "estimated": true
+                      },
+                      "text": "Entenbrust quer zur Faser in 1cm dicke Scheiben schneiden.",
+                      "action": "Entenbrust quer zur Faser in 1cm dicke Scheiben schneiden.",
+                      "ingredients": [],
+                      "meta": "*nach Ruhen lassen*",
+                      "attention": "active",
+                      "after": [
+                        "step:gang-3-ruhen-lassen"
+                      ]
+                    },
+                    {
+                      "id": "gang-3-hauptgang-anrichten",
+                      "label": "19",
+                      "heading": "**19. Hauptgang anrichten (ca. 5 Min.)**",
+                      "title": "Hauptgang anrichten",
+                      "duration": {
+                        "typical": "PT5M",
+                        "source": "ca. 5 Min.",
+                        "estimated": true
+                      },
+                      "text": "Kartoffelbaumkuchen-Scheibe mittig auf vorgewärmte Teller setzen. Entenscheiben daneben fächern. 2 Karotten anlegen. Sauce (je nach Gast die passende Variante) um das Fleisch verteilen. Sofort servieren.",
+                      "action": "Kartoffelbaumkuchen-Scheibe mittig auf vorgewärmte Teller setzen.",
+                      "ingredients": [],
+                      "meta": "*nach Ente aufschneiden, Knusprig anbraten, Karotten glasieren, Montieren, Teilen*",
+                      "attention": "active",
+                      "after": [
+                        "step:gang-3-ente-aufschneiden",
+                        "step:gang-3-knusprig-anbraten",
+                        "step:gang-3-karotten-glasieren",
+                        "step:gang-3-montieren",
+                        "step:gang-3-teilen"
+                      ]
+                    }
+                  ],
+                  "heading": "**Anrichten Hauptgang (à la minute):**",
+                  "phaseHint": "à la minute",
+                  "produces": [
+                    {
+                      "id": "anrichten-hauptgang",
+                      "name": "Anrichten Hauptgang"
+                    }
+                  ],
+                  "consumes": [
+                    "product:entenbrust",
+                    "product:kartoffelbaumkuchen"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "markdown",
+              "title": "> **JETZT KINDER-PORTION ABZWEIGEN:** Ca",
+              "level": "bold",
+              "markdown": "> **JETZT KINDER-PORTION ABZWEIGEN:** Ca. 100ml der Sauce in ein separates Töpfchen geben. Mit Salz abschmecken, warmhalten. Diese Version ist alkoholfrei!",
+              "tags": [
+                "kind"
+              ]
+            },
+            {
+              "type": "markdown",
+              "title": "Profi-Tipps",
+              "level": "bold",
+              "markdown": "> **Profi-Tipps:**\n> - Der KALTSTART ist das Geheimnis für knusprige Haut!\n> - Den Kartoffelbaumkuchen am Vortag zu machen ist der Profi-Trick: Perfekte Schichten, null Stress am Tag, sieht großartig aus!\n> - Kerntemperatur steigt beim Ruhen noch ca. 3-4°C an.\n> - Die Kinder-Sauce ist milder, aber trotzdem lecker — fruchtig-herzhaft.\n> - Entenfett aufheben — perfekt für Bratkartoffeln am nächsten Tag!",
+              "tags": [
+                "profi-tipps"
+              ]
+            }
+          ],
+          "intro": "*Kartoffelbaumkuchen: Vortag (1h aktiv + über Nacht pressen) | Rest: Zubereitung 50 Min | Ruhezeit Ente: 10 Min*"
+        },
+        {
+          "id": "gang-4",
+          "kind": "course",
+          "title": "4. Karamell-Pekannuss-Parfait mit Birnen-Kompott",
+          "sections": [
+            {
+              "type": "tasks",
+              "title": "Zubereitung",
+              "tasks": [
+                {
+                  "id": "salzkaramell",
+                  "name": "Salzkaramell",
+                  "steps": [
+                    {
+                      "id": "gang-4-karamell-schmelzen",
+                      "label": "1",
+                      "heading": "**1. Karamell schmelzen (5–7 Min.)**",
+                      "title": "Karamell schmelzen",
+                      "duration": {
+                        "min": "PT5M",
+                        "max": "PT7M",
+                        "source": "5–7 Min."
+                      },
+                      "text": "120g Zucker in einen TROCKENEN Topf mit schwerem Boden geben. Bei mittlerer Hitze schmelzen lassen. NICHT RÜHREN! Nur leicht schwenken wenn nötig. Sobald der Zucker bernsteinfarben ist (ca. 5-7 Min): Topf vom Herd nehmen.",
+                      "action": "120g Zucker in einen TROCKENEN Topf mit schwerem Boden geben.",
+                      "timers": [
+                        {
+                          "label": "Karamell schmelzen",
+                          "duration": {
+                            "min": "PT5M",
+                            "max": "PT7M",
+                            "estimated": true
+                          },
+                          "text": "ca. 5-7 Min"
+                        }
+                      ],
+                      "ingredients": [
+                        {
+                          "ref": "zucker",
+                          "amount": {
+                            "text": "120g Zucker",
+                            "value": 120.0,
+                            "unit": "g"
+                          }
+                        }
+                      ],
+                      "meta": "*jederzeit · Herd*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "attention": "active",
+                      "after": []
+                    },
+                    {
+                      "id": "gang-4-sahne-einruehren",
+                      "label": "2",
+                      "heading": "**2. Sahne einrühren (ca. 5 Min.)**",
+                      "title": "Sahne einrühren",
+                      "duration": {
+                        "typical": "PT5M",
+                        "source": "ca. 5 Min.",
+                        "estimated": true
+                      },
+                      "text": "100ml WARME Sahne langsam einrühren. VORSICHT: Das Karamell spritzt und blubbert stark! Zurück auf niedrige Hitze, rühren bis alles glatt ist. 30g Butter und 1 TL Fleur de Sel einrühren. In ein Glas füllen. 2/3 für das Parfait, 1/3 als Sauce zum Anrichten aufheben.",
+                      "action": "100ml WARME Sahne langsam einrühren.",
+                      "ingredients": [
+                        {
+                          "ref": "sahne",
+                          "amount": {
+                            "text": "100ml WARME Sahne",
+                            "value": 100.0,
+                            "unit": "ml"
+                          }
+                        },
+                        {
+                          "ref": "butter",
+                          "amount": {
+                            "text": "30g Butter",
+                            "value": 30.0,
+                            "unit": "g"
+                          }
+                        },
+                        {
+                          "ref": "fleur",
+                          "amount": {
+                            "text": "1 TL Fleur de Sel",
+                            "value": 1.0,
+                            "unit": "TL"
+                          }
+                        }
+                      ],
+                      "meta": "*Herd*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "attention": "active"
+                    }
+                  ],
+                  "heading": "**Salzkaramell (3 Tage vorher, Kühlschrank; ergibt ca. 150ml):**",
+                  "produces": [
+                    {
+                      "id": "salzkaramell",
+                      "name": "Salzkaramell",
+                      "storage": {
+                        "place": "fridge"
+                      }
+                    }
+                  ],
+                  "consumes": [
+                    "product:parfait"
+                  ]
+                },
+                {
+                  "id": "parfait",
+                  "name": "Parfait",
+                  "steps": [
+                    {
+                      "id": "gang-4-pekannuesse-roesten",
+                      "label": "3",
+                      "heading": "**3. Pekannüsse rösten (ca. 10 Min.)**",
+                      "title": "Pekannüsse rösten",
+                      "duration": {
+                        "typical": "PT10M",
+                        "source": "ca. 10 Min.",
+                        "estimated": true
+                      },
+                      "text": "100g Pekannüsse in einer trockenen Pfanne bei mittlerer Hitze rösten (ca. 4-5 Min). Abkühlen lassen, dann grob hacken (nicht zu fein — Textur ist wichtig!).",
+                      "action": "100g Pekannüsse in einer trockenen Pfanne bei mittlerer Hitze rösten (ca.",
+                      "timers": [
+                        {
+                          "label": "Pekannüsse rösten",
+                          "duration": {
+                            "min": "PT4M",
+                            "max": "PT5M",
+                            "estimated": true
+                          },
+                          "text": "ca. 4-5 Min"
+                        }
+                      ],
+                      "ingredients": [
+                        {
+                          "ref": "pekannuesse",
+                          "amount": {
+                            "text": "100g Pekannüsse",
+                            "value": 100.0,
+                            "unit": "g"
+                          }
+                        }
+                      ],
+                      "meta": "*jederzeit · Herd*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "attention": "attended",
+                      "after": []
+                    },
+                    {
+                      "id": "gang-4-eigelbmasse-aufschlagen",
+                      "label": "4",
+                      "heading": "**4. Eigelbmasse aufschlagen (8–10 Min.)**",
+                      "title": "Eigelbmasse aufschlagen",
+                      "duration": {
+                        "min": "PT8M",
+                        "max": "PT10M",
+                        "source": "8–10 Min."
+                      },
+                      "text": "4 Eigelb und 80g Zucker in einer Metallschüssel verrühren. Schüssel über einen Topf mit leicht köchelndem Wasser setzen (Wasserbad). Mit dem Handrührer 8-10 Min aufschlagen bis die Masse dick, cremig und hellgelb ist. Test: Wenn der Schneebesen eine 'Spur' hinterlässt die kurz sichtbar bleibt = perfekt (Ribbon-Stage).",
+                      "action": "4 Eigelb und 80g Zucker in einer Metallschüssel verrühren.",
+                      "cues": [
+                        "bis die Masse dick"
+                      ],
+                      "timers": [
+                        {
+                          "label": "Eigelbmasse aufschlagen",
+                          "duration": {
+                            "min": "PT8M",
+                            "max": "PT10M"
+                          },
+                          "text": "8-10 Min"
+                        }
+                      ],
+                      "ingredients": [
+                        {
+                          "ref": "eier",
+                          "amount": {
+                            "text": "4 Eigelb",
+                            "value": 4.0,
+                            "unit": "Eigelb"
+                          }
+                        },
+                        {
+                          "ref": "zucker",
+                          "amount": {
+                            "text": "80g Zucker",
+                            "value": 80.0,
+                            "unit": "g"
+                          }
+                        }
+                      ],
+                      "meta": "*jederzeit · Herd*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "attention": "attended",
+                      "after": []
+                    },
+                    {
+                      "id": "gang-4-kaltschlagen",
+                      "label": "5",
+                      "heading": "**5. Kaltschlagen (ca. 5 Min.)**",
+                      "title": "Kaltschlagen",
+                      "duration": {
+                        "typical": "PT5M",
+                        "source": "ca. 5 Min.",
+                        "estimated": true
+                      },
+                      "text": "Schüssel vom Wasserbad nehmen und weiterschlagen bis die Masse Raumtemperatur hat.",
+                      "action": "Schüssel vom Wasserbad nehmen und weiterschlagen bis die Masse Raumtemperatur hat.",
+                      "cues": [
+                        "bis die Masse Raumtemperatur hat"
+                      ],
+                      "ingredients": [],
+                      "attention": "active"
+                    },
+                    {
+                      "id": "gang-4-sahne-schlagen",
+                      "label": "6",
+                      "heading": "**6. Sahne schlagen (ca. 3 Min.)**",
+                      "title": "Sahne schlagen",
+                      "duration": {
+                        "typical": "PT3M",
+                        "source": "ca. 3 Min.",
+                        "estimated": true
+                      },
+                      "text": "180ml kalte Sahne steif schlagen (nicht zu fest, sollte noch glänzen).",
+                      "action": "180ml kalte Sahne steif schlagen (nicht zu fest, sollte noch glänzen).",
+                      "ingredients": [
+                        {
+                          "ref": "sahne",
+                          "amount": {
+                            "text": "180ml kalte Sahne",
+                            "value": 180.0,
+                            "unit": "ml"
+                          }
+                        }
+                      ],
+                      "meta": "*jederzeit*",
+                      "attention": "active",
+                      "after": []
+                    },
+                    {
+                      "id": "gang-4-unterheben",
+                      "label": "7",
+                      "heading": "**7. Unterheben (ca. 5 Min.)**",
+                      "title": "Unterheben",
+                      "duration": {
+                        "typical": "PT5M",
+                        "source": "ca. 5 Min.",
+                        "estimated": true
+                      },
+                      "text": "2/3 des lauwarmen Karamells (ca. 100ml) in die Eigelbmasse einrühren. Geschlagene Sahne in 2 Portionen vorsichtig unterheben — nicht rühren, heben! Pekannüsse unterheben.",
+                      "action": "2/3 des lauwarmen Karamells (ca.",
+                      "ingredients": [],
+                      "meta": "*nach Kaltschlagen, Sahne schlagen, Sahne einrühren, Pekannüsse rösten*",
+                      "attention": "active",
+                      "after": [
+                        "step:gang-4-kaltschlagen",
+                        "step:gang-4-sahne-schlagen",
+                        "step:gang-4-sahne-einruehren",
+                        "step:gang-4-pekannuesse-roesten"
+                      ]
+                    },
+                    {
+                      "id": "gang-4-einfrieren",
+                      "label": "8",
+                      "heading": "**8. Einfrieren (mind. 6 Std., passiv)**",
+                      "title": "Einfrieren",
+                      "duration": {
+                        "typical": "PT6H",
+                        "source": "6 Std."
+                      },
+                      "attention": "passive",
+                      "text": "Kastenform (ca. 20cm) mit Frischhaltefolie auskleiden (Folie überhängen lassen). Parfait-Masse einfüllen, Oberfläche glattstreichen. Mit überhängender Folie abdecken, mindestens 6 Stunden oder über Nacht einfrieren.",
+                      "action": "Kastenform (ca.",
+                      "ingredients": [],
+                      "timers": [
+                        {
+                          "label": "Einfrieren",
+                          "duration": {
+                            "typical": "PT6H"
+                          },
+                          "text": "6 Std."
+                        }
+                      ]
+                    }
+                  ],
+                  "heading": "**Parfait (3 Tage vorher, mind. 6 h im Gefrierfach):**",
+                  "produces": [
+                    {
+                      "id": "parfait",
+                      "name": "Parfait",
+                      "hold": {
+                        "min": "PT6H",
+                        "source": "3 Tage vorher, mind. 6 h im Gefrierfach"
+                      },
+                      "storage": {
+                        "place": "freezer"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "birnen-kompott",
+                  "name": "Birnen-Kompott",
+                  "steps": [
+                    {
+                      "id": "gang-4-kompott-kochen",
+                      "label": "9",
+                      "heading": "**9. Kompott kochen (ca. 20 Min.)**",
+                      "title": "Kompott kochen",
+                      "duration": {
+                        "typical": "PT20M",
+                        "source": "ca. 20 Min.",
+                        "estimated": true
+                      },
+                      "text": "3 Birnen schälen, vierteln, Kerngehäuse entfernen. In 1cm Würfel schneiden. Mit 50g Zucker, Mark einer halben Vanilleschote, Saft einer halben Zitrone und 3 EL Wasser in einen Topf geben. Optional für weihnachtliche Note: Eine Zimtstange oder einen Sternanis mitgeben. Bei mittlerer Hitze unter gelegentlichem Rühren dünsten (ca. 10 Min). Die Birnen sollen weich sein aber noch Biss haben — nicht zu Mus kochen! Zimtstange/Sternanis entfernen. Abkühlen lassen, dann kühl stellen.",
+                      "action": "3 Birnen schälen, vierteln, Kerngehäuse entfernen.",
+                      "timers": [
+                        {
+                          "label": "Kompott kochen",
+                          "duration": {
+                            "typical": "PT10M",
+                            "estimated": true
+                          },
+                          "text": "ca. 10 Min"
+                        }
+                      ],
+                      "ingredients": [
+                        {
+                          "ref": "birnen",
+                          "amount": {
+                            "text": "3 Birnen",
+                            "value": 3.0,
+                            "unit": "Stück"
+                          }
+                        },
+                        {
+                          "ref": "zucker",
+                          "amount": {
+                            "text": "50g Zucker",
+                            "value": 50.0,
+                            "unit": "g"
+                          }
+                        },
+                        {
+                          "ref": "wasser",
+                          "amount": {
+                            "text": "3 EL Wasser",
+                            "value": 3.0,
+                            "unit": "EL"
+                          }
+                        }
+                      ],
+                      "meta": "*jederzeit · Herd*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "attention": "attended",
+                      "after": []
+                    }
+                  ],
+                  "heading": "**Birnen-Kompott (Vortag, Kühlschrank):**",
+                  "phaseHint": "Vortag",
+                  "produces": [
+                    {
+                      "id": "birnen-kompott",
+                      "name": "Birnen-Kompott",
+                      "storage": {
+                        "place": "fridge"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "anrichten-dessert",
+                  "name": "Anrichten Dessert",
+                  "steps": [
+                    {
+                      "id": "gang-4-aus-dem-gefrierfach",
+                      "label": "10",
+                      "heading": "**10. Aus dem Gefrierfach (10–15 Min., passiv)**",
+                      "title": "Aus dem Gefrierfach",
+                      "duration": {
+                        "min": "PT10M",
+                        "max": "PT15M",
+                        "source": "10–15 Min."
+                      },
+                      "attention": "passive",
+                      "text": "Parfait 10-15 Min vor dem Servieren aus dem Gefrierfach nehmen.",
+                      "action": "Parfait 10-15 Min vor dem Servieren aus dem Gefrierfach nehmen.",
+                      "ingredients": [],
+                      "meta": "*nach Einfrieren · 10–15 Min. vor Gang 4*",
+                      "timers": [
+                        {
+                          "label": "Aus dem Gefrierfach",
+                          "duration": {
+                            "min": "PT10M",
+                            "max": "PT15M"
+                          },
+                          "text": "10–15 Min."
+                        }
+                      ],
+                      "after": [
+                        "step:gang-4-einfrieren"
+                      ],
+                      "start": {
+                        "ref": "course:gang-4:serve",
+                        "offset": {
+                          "min": "-PT15M",
+                          "max": "-PT10M",
+                          "source": "10–15 Min. vor Gang 4"
+                        }
+                      }
+                    },
+                    {
+                      "id": "gang-4-parfait-aufschneiden",
+                      "label": "11",
+                      "heading": "**11. Parfait aufschneiden (ca. 5 Min.)**",
+                      "title": "Parfait aufschneiden",
+                      "duration": {
+                        "typical": "PT5M",
+                        "source": "ca. 5 Min.",
+                        "estimated": true
+                      },
+                      "text": "Aus der Form stürzen, Folie entfernen. Mit einem heißen Messer (in heißes Wasser tauchen, abtrocknen) in ca. 2cm dicke Scheiben schneiden.",
+                      "action": "Aus der Form stürzen, Folie entfernen.",
+                      "ingredients": [],
+                      "attention": "active"
+                    },
+                    {
+                      "id": "gang-4-dessert-anrichten",
+                      "label": "12",
+                      "heading": "**12. Dessert anrichten (ca. 5 Min.)**",
+                      "title": "Dessert anrichten",
+                      "duration": {
+                        "typical": "PT5M",
+                        "source": "ca. 5 Min.",
+                        "estimated": true
+                      },
+                      "text": "Je eine Scheibe auf Teller legen. Birnen-Kompott daneben anrichten. Restliches Salzkaramell in Fäden darüber ziehen. Mit gehackten Pekannüssen (restliche 50g) bestreuen. Ein paar Kristalle Fleur de Sel direkt auf das Parfait geben — das Knuspern auf der Zunge zusammen mit dem kalten Eis ist eine Geschmacksexplosion!\n*Optional für extra Crunch: 2-3 Amarettini oder Spekulatius grob zerbröseln und darüber streuen.*",
+                      "action": "Je eine Scheibe auf Teller legen.",
+                      "rescue": "Optional für extra Crunch: 2-3 Amarettini oder Spekulatius grob zerbröseln und darüber streuen.",
+                      "ingredients": [],
+                      "meta": "*nach Parfait aufschneiden, Kompott kochen, Sahne einrühren*",
+                      "attention": "active",
+                      "after": [
+                        "step:gang-4-parfait-aufschneiden",
+                        "step:gang-4-kompott-kochen",
+                        "step:gang-4-sahne-einruehren"
+                      ]
+                    }
+                  ],
+                  "heading": "**Anrichten Dessert (à la minute):**",
+                  "phaseHint": "à la minute",
+                  "produces": [
+                    {
+                      "id": "anrichten-dessert",
+                      "name": "Anrichten Dessert"
+                    }
+                  ],
+                  "consumes": [
+                    "product:birnen-kompott",
+                    "product:parfait",
+                    "product:salzkaramell"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "markdown",
+              "title": "Profi-Tipps",
+              "level": "bold",
+              "markdown": "> **Profi-Tipps:**\n> - Birnen: Abate Fetel sind ideal. Williams werden schnell matschig — nimm nur sehr feste!\n> - Die Zitrone im Kompott ist WICHTIG! Birnen sind säurearm, Karamell ist süß, Parfait ist fettig — das Dessert braucht diese frische Spitze als Gegengewicht.\n> - Zimtstange oder Sternanis machen das Kompott weihnachtlich und aromatischer — passt perfekt zur Jahreszeit.\n> - Pekannuss + Karamell + Salz = Pecan Pie Vibes — eine Traumkombination!\n> - Das grobe Fleur de Sel auf dem Parfait knuspert auf der Zunge — zusammen mit dem kalten Eis ein Erlebnis!\n> - Parfait kann bis zu 1 Woche eingefroren werden.\n> - Heißes Messer = saubere Schnitte. Nach jedem Schnitt neu eintauchen.\n> - Kompott schmeckt am nächsten Tag sogar besser.\n> - Karamell zu fest? Kurz erwärmen, es wird wieder flüssig.",
+              "tags": [
+                "profi-tipps"
+              ]
+            }
+          ],
+          "intro": "*Vorbereitung: 40 Minuten | Gefrierzeit: mindestens 6 Stunden (am besten über Nacht)*"
+        }
+      ]
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "3-tage-vorher",
+            "label": "3 Tage vorher",
+            "day": -3
+          },
+          {
+            "id": "2-tage-vorher",
+            "label": "2 Tage vorher",
+            "day": -2
+          },
+          {
+            "id": "vortag",
+            "label": "Vortag",
+            "day": -1
+          },
+          {
+            "id": "uhr-15-00",
+            "label": "15:00 Uhr (4h vorher)",
+            "day": 0,
+            "part": "service",
+            "at": "-PT4H",
+            "clock": "15:00"
+          },
+          {
+            "id": "uhr-16-00",
+            "label": "16:00 Uhr (3h vorher)",
+            "day": 0,
+            "part": "service",
+            "at": "-PT3H",
+            "clock": "16:00"
+          },
+          {
+            "id": "uhr-17-30",
+            "label": "17:30 Uhr (1,5h vorher)",
+            "day": 0,
+            "part": "service",
+            "at": "-PT1H30M",
+            "clock": "17:30"
+          },
+          {
+            "id": "uhr-18-15",
+            "label": "18:15 Uhr (45min vorher)",
+            "day": 0,
+            "part": "service",
+            "at": "-PT45M",
+            "clock": "18:15"
+          },
+          {
+            "id": "uhr-18-45",
+            "label": "18:45 Uhr (15min vorher)",
+            "day": 0,
+            "part": "service",
+            "at": "-PT15M",
+            "clock": "18:45"
+          },
+          {
+            "id": "uhr-19-00",
+            "label": "19:00 Uhr — Gäste da",
+            "day": 0,
+            "part": "service",
+            "at": "PT0M",
+            "clock": "19:00",
+            "event": "Gäste da"
+          },
+          {
+            "id": "uhr-19-15",
+            "label": "19:15 Uhr — Nach dem Amuse",
+            "day": 0,
+            "part": "service",
+            "at": "+PT15M",
+            "clock": "19:15",
+            "event": "Nach dem Amuse"
+          },
+          {
+            "id": "uhr-19-35",
+            "label": "19:35 Uhr — Nach der Vorspeise",
+            "day": 0,
+            "part": "service",
+            "at": "+PT35M",
+            "clock": "19:35",
+            "event": "Nach der Vorspeise"
+          },
+          {
+            "id": "uhr-20-15",
+            "label": "20:15 Uhr — Nach dem Hauptgang",
+            "day": 0,
+            "part": "service",
+            "at": "+PT1H15M",
+            "clock": "20:15",
+            "event": "Nach dem Hauptgang"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "3-tage-vorher",
+            "text": "Einkaufen (außer Jakobsmuscheln — die am Tag selbst)"
+          },
+          {
+            "phase": "3-tage-vorher",
+            "text": "Parfait (komplett zubereiten und einfrieren, hält ewig)",
+            "tasks": [
+              "parfait"
+            ],
+            "course": "gang-4"
+          },
+          {
+            "phase": "3-tage-vorher",
+            "text": "Salzkaramell (kochen, ins Glas füllen, hält ewig im Kühlschrank)",
+            "tasks": [
+              "salzkaramell"
+            ],
+            "course": "gang-4"
+          },
+          {
+            "phase": "2-tage-vorher",
+            "text": "Kartoffelbaumkuchen: Schichten, backen, pressen, kalt stellen (zieht gut durch)",
+            "steps": [
+              "gang-3-backen",
+              "gang-3-pressen",
+              "gang-3-schichten"
+            ],
+            "tasks": [
+              "kartoffelbaumkuchen"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "2-tage-vorher",
+            "text": "Sauce-Basis: Schalotten/Kirschen/Fond kochen und einreduzieren (noch KEIN Portwein/Butter!) — kalt stellen",
+            "tasks": [
+              "sauce-basis"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "vortag",
+            "text": "Sellerie für Consommé raspeln und Kaltextraktion ansetzen",
+            "steps": [
+              "gang-1-kaltextraktion-ansetzen",
+              "gang-1-raspeln"
+            ],
+            "course": "gang-1"
+          },
+          {
+            "phase": "vortag",
+            "text": "Birnen-Kompott kochen (schmeckt durchgezogen besser!)",
+            "steps": [
+              "gang-4-kompott-kochen"
+            ],
+            "course": "gang-4"
+          },
+          {
+            "phase": "vortag",
+            "text": "Haselnüsse rösten",
+            "steps": [
+              "gang-2-haselnuesse-roesten"
+            ],
+            "course": "gang-2"
+          },
+          {
+            "phase": "vortag",
+            "text": "Jakobsmuscheln kaufen (frischeste Ware!)"
+          },
+          {
+            "phase": "uhr-15-00",
+            "text": "Sellerie-Consommé durch Tuch passieren",
+            "steps": [
+              "gang-1-passieren"
+            ],
+            "course": "gang-1"
+          },
+          {
+            "phase": "uhr-15-00",
+            "text": "Apfel-Brunoise schneiden, mit Zitrone marinieren, kühl stellen",
+            "steps": [
+              "gang-1-brunoise-schneiden"
+            ],
+            "course": "gang-1"
+          },
+          {
+            "phase": "uhr-15-00",
+            "text": "Sellerieblätter zupfen und in feuchtes Küchenpapier wickeln",
+            "steps": [
+              "gang-1-sellerieblaetter-zupfen"
+            ],
+            "course": "gang-1"
+          },
+          {
+            "phase": "uhr-15-00",
+            "text": "Kartoffelbaumkuchen in Scheiben schneiden (noch nicht braten)",
+            "steps": [
+              "gang-3-in-scheiben-schneiden"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "uhr-16-00",
+            "text": "Blumenkohlpüree (zubereiten → warmhalten)",
+            "tasks": [
+              "blumenkohlpueree"
+            ],
+            "course": "gang-2"
+          },
+          {
+            "phase": "uhr-16-00",
+            "text": "Kartoffelbaumkuchen-Scheiben knusprig anbraten → im Ofen bei 80°C warmhalten",
+            "steps": [
+              "gang-3-knusprig-anbraten"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "uhr-17-30",
+            "text": "Entenbrüste aus dem Kühlschrank nehmen, Haut einschneiden",
+            "steps": [
+              "gang-3-aus-dem-kuehlschrank",
+              "gang-3-haut-einschneiden"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "uhr-17-30",
+            "text": "Jakobsmuscheln trocken tupfen, offen in den Kühlschrank",
+            "steps": [
+              "gang-2-trocken-tupfen"
+            ],
+            "course": "gang-2"
+          },
+          {
+            "phase": "uhr-17-30",
+            "text": "Tisch decken, Kerzen aufstellen"
+          },
+          {
+            "phase": "uhr-18-15",
+            "text": "Backofen auf 80°C vorheizen (zum Warmhalten)"
+          },
+          {
+            "phase": "uhr-18-15",
+            "text": "Teller für Vorspeise und Hauptgang in den Ofen"
+          },
+          {
+            "phase": "uhr-18-15",
+            "text": "Karotten glasieren",
+            "steps": [
+              "gang-3-karotten-glasieren"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "uhr-18-45",
+            "text": "Espressotassen für Amuse bereitstellen"
+          },
+          {
+            "phase": "uhr-18-45",
+            "text": "Consommé langsam erwärmen",
+            "steps": [
+              "gang-1-langsam-erwaermen"
+            ],
+            "course": "gang-1"
+          },
+          {
+            "phase": "uhr-18-45",
+            "text": "Parfait aus dem Gefrierfach nehmen (Antauzeit!)",
+            "steps": [
+              "gang-4-aus-dem-gefrierfach"
+            ],
+            "course": "gang-4"
+          },
+          {
+            "phase": "uhr-18-45",
+            "text": "Entenbrust salzen",
+            "steps": [
+              "gang-3-entenbrust-salzen"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "uhr-19-00",
+            "text": "Aperitif einschenken"
+          },
+          {
+            "phase": "uhr-19-00",
+            "text": "Amuse anrichten und servieren",
+            "steps": [
+              "gang-1-amuse-anrichten"
+            ],
+            "course": "gang-1"
+          },
+          {
+            "phase": "uhr-19-00",
+            "text": "**ENTE STARTEN:** In KALTE Pfanne legen, auf niedrige Hitze schalten — läuft während dem Amuse",
+            "steps": [
+              "gang-3-ente-starten"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "uhr-19-15",
+            "text": "Ente wenden (Haut sollte jetzt goldbraun sein)",
+            "steps": [
+              "gang-3-ente-wenden"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "uhr-19-15",
+            "text": "Jakobsmuscheln salzen, Pfanne aufheizen",
+            "steps": [
+              "gang-2-jakobsmuscheln-salzen"
+            ],
+            "course": "gang-2"
+          },
+          {
+            "phase": "uhr-19-15",
+            "text": "Zitronen-Haselnussbutter machen",
+            "steps": [
+              "gang-2-haselnussbutter-machen"
+            ],
+            "course": "gang-2"
+          },
+          {
+            "phase": "uhr-19-15",
+            "text": "Muscheln braten (2,5 Min total)",
+            "steps": [
+              "gang-2-muscheln-braten"
+            ],
+            "course": "gang-2"
+          },
+          {
+            "phase": "uhr-19-15",
+            "text": "Vorspeise anrichten und servieren",
+            "steps": [
+              "gang-2-vorspeise-anrichten"
+            ],
+            "course": "gang-2"
+          },
+          {
+            "phase": "uhr-19-15",
+            "text": "Ente aus Pfanne nehmen → ruhen lassen (während Gäste Vorspeise essen)",
+            "steps": [
+              "gang-3-ruhen-lassen"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "uhr-19-35",
+            "text": "Sauce-Basis erwärmen, teilen: Kinder-Portion mit Butter montieren",
+            "steps": [
+              "gang-3-montieren",
+              "gang-3-teilen"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "uhr-19-35",
+            "text": "Erwachsenen-Portion: Portwein dazu, einkochen, dann mit Butter montieren",
+            "steps": [
+              "gang-3-einkochen",
+              "gang-3-montieren"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "uhr-19-35",
+            "text": "Kartoffelbaumkuchen aus dem Ofen holen"
+          },
+          {
+            "phase": "uhr-19-35",
+            "text": "Ente aufschneiden (hat jetzt perfekt geruht!)",
+            "steps": [
+              "gang-3-ente-aufschneiden"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "uhr-19-35",
+            "text": "Hauptgang anrichten und servieren",
+            "steps": [
+              "gang-3-hauptgang-anrichten"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "uhr-20-15",
+            "text": "Kurze Pause, Teller abräumen"
+          },
+          {
+            "phase": "uhr-20-15",
+            "text": "Parfait aufschneiden",
+            "steps": [
+              "gang-4-parfait-aufschneiden"
+            ],
+            "course": "gang-4"
+          },
+          {
+            "phase": "uhr-20-15",
+            "text": "Dessert anrichten und servieren",
+            "steps": [
+              "gang-4-dessert-anrichten"
+            ],
+            "course": "gang-4"
+          }
+        ]
+      }
+    },
+    {
+      "type": "learnings",
+      "title": "Learnings",
+      "cooked": "07/2026",
+      "summary": "**Gekocht (Hochzeitstag, vor 07/2026).** Vier Gänge erfolgreich umgesetzt, Zeitplan hat funktioniert. Highlights: Jakobsmuscheln und Karamell-Pekannuss-Parfait; die glasierten Karotten wurden trotz Einfachheit sehr gelobt. Kartoffelbaumkuchen: Aufwand/Wow-Verhältnis schlecht → nächstes Mal einfachere Kartoffelbeilage. Entenbrust solide, aber kein Highlight. Kern-Learning: Aufwand ≠ Wow — perfekte Ausführung simpler Techniken wirkt oft mehr als Komplexität.",
+      "details": "### Highlights\n- **Jakobsmuscheln** — absolutes Highlight des Abends. Perfekte Kruste, Blumenkohlpüree als Basis hervorragend, Zitronen-Haselnussbutter bringt Säure + Nuss-Röstaromen die das Gericht komplett machen.\n- **Karamell-Pekannuss-Parfait** — das beste Gericht des Menüs. Die Kombination Salzkaramell + Pekannuss + Fleur de Sel auf kaltem Parfait ist eine Geschmacksexplosion. Birnen-Kompott als frischer Kontrast perfekt.\n- **Glasierte Karotten** — trotz der Einfachheit eines der am meisten gelobten Elemente. Beweis, dass perfekte Ausführung simpler Techniken mehr beeindruckt als Komplexität.\n- **Sellerie-Consommé** — kam als Amuse gut an. Eleganter, überraschender Einstieg.\n\n### Was okay war, aber nicht großartig\n- **Entenbrust** — technisch gelungen (rosa, knusprige Haut), aber insgesamt kein Wow-Moment. Der Gang als Ganzes hat nicht so überzeugt wie Vorspeise oder Dessert. Mögliche Gründe: Entenbrust ist als Produkt weniger spannend, die Kirsch-Jus war solide aber nicht herausragend.\n\n### Was enttäuschend war\n- **Kartoffelbaumkuchen** — gemessen am Aufwand (Vortag vorbereiten, über Nacht pressen, am Tag anbraten) war das Ergebnis enttäuschend. Viel Arbeit für eine Beilage, die geschmacklich nicht proportional zum Aufwand überzeugt hat. Beim nächsten Mal eine einfachere, aber geschmacklich stärkere Kartoffelbeilage wählen (z.B. Gratin Dauphinois, Pommes Duchesse, oder einfach perfekte Bratkartoffeln im Entenfett).\n\n### Learnings für nächste Menüs\n- **Aufwand/Wow-Verhältnis beachten:** Nicht jede aufwändige Technik liefert proportional bessere Ergebnisse. Die simplen glasierten Karotten haben mehr Eindruck gemacht als der aufwändige Baumkuchen.\n- **Stärken des Menüs:** Jakobsmuscheln und Dessert waren die Stars — bei zukünftigen Menüs diese Formel (perfekte Vorspeise + starkes Dessert) als Gerüst nutzen.\n- **Mehrgängiges Menü als Format:** Zeitplan hat gut funktioniert, Stress war beherrschbar. Dieses Format eignet sich für weitere besondere Anlässe.\n\n---"
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen / Inspirationen",
+      "level": 2,
+      "markdown": "- Klassische französische Küche (Beurre noisette, Consommé-Technik)\n- Sterneküche-Anrichtetechniken\n- Kartoffelbaumkuchen inspiriert von Thomas Keller / French Laundry Pommes Maxim",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T14:25:43Z",
+    "sourceHash": "c1f6332fb6b69c43",
+    "quantities": [
+      {
+        "ingredient": "jakobsmuscheln",
+        "total": {
+          "text": "10",
+          "value": 10.0,
+          "max": 10.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "jakobsmuscheln": "8 Stück",
+          "anrichten-vorspeise": "2 Muscheln"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "10",
+            "value": 10.0,
+            "max": 10.0,
+            "unit": "Stück"
+          }
+        }
+      },
+      {
+        "ingredient": "entenbrueste",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "entenbrust": "2 Entenbrüste"
+        },
+        "perCourse": {
+          "gang-3": {
+            "text": "2",
+            "value": 2.0,
+            "max": 2.0,
+            "unit": "Stück"
+          }
+        }
+      },
+      {
+        "ingredient": "blumenkohl",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "blumenkohlpueree": "1 Blumenkohl"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "1",
+            "value": 1.0,
+            "max": 1.0,
+            "unit": "Stück"
+          }
+        }
+      },
+      {
+        "ingredient": "sellerieknolle",
+        "total": {
+          "text": "500 g",
+          "value": 500.0,
+          "max": 500.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "consomme": "500g Sellerieknolle"
+        },
+        "perCourse": {
+          "gang-1": {
+            "text": "500 g",
+            "value": 500.0,
+            "max": 500.0,
+            "unit": "g"
+          }
+        }
+      },
+      {
+        "ingredient": "kartoffeln",
+        "total": {
+          "text": "700 g",
+          "value": 700.0,
+          "max": 700.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "kartoffelbaumkuchen": "700g festkochende Kartoffeln"
+        },
+        "perCourse": {
+          "gang-3": {
+            "text": "700 g",
+            "value": 700.0,
+            "max": 700.0,
+            "unit": "g"
+          }
+        }
+      },
+      {
+        "ingredient": "bundmoehren",
+        "total": {
+          "text": "8",
+          "value": 8.0,
+          "max": 8.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "glasierte-karotten": "8 Bundmöhren"
+        },
+        "perCourse": {
+          "gang-3": {
+            "text": "8",
+            "value": 8.0,
+            "max": 8.0,
+            "unit": "Stück"
+          }
+        }
+      },
+      {
+        "ingredient": "birnen",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "birnen-kompott": "3 Birnen"
+        },
+        "perCourse": {
+          "gang-4": {
+            "text": "3",
+            "value": 3.0,
+            "max": 3.0,
+            "unit": "Stück"
+          }
+        }
+      },
+      {
+        "ingredient": "granny-smith-aepfel",
+        "total": {
+          "text": "½",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "garnitur": "½ Granny-Smith-Apfel"
+        },
+        "perCourse": {
+          "gang-1": {
+            "text": "½",
+            "value": 0.5,
+            "max": 0.5,
+            "unit": "Stück"
+          }
+        }
+      },
+      {
+        "ingredient": "sauerkirschen",
+        "total": {
+          "text": "200 g",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "sauce-basis": "200g abgetropfte Kirschen"
+        },
+        "perCourse": {
+          "gang-3": {
+            "text": "200 g",
+            "value": 200.0,
+            "max": 200.0,
+            "unit": "g"
+          }
+        }
+      },
+      {
+        "ingredient": "schalotten",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "sauce-basis": "1 Schalotte"
+        },
+        "perCourse": {
+          "gang-3": {
+            "text": "1",
+            "value": 1.0,
+            "max": 1.0,
+            "unit": "Stück"
+          }
+        }
+      },
+      {
+        "ingredient": "thymian",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "staudensellerie",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "zitronen",
+        "total": {
+          "text": "1–2 EL",
+          "value": 1.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "zitronen-haselnussbutter": "1-2 EL frischen Zitronensaft"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "1–2 EL",
+            "value": 1.0,
+            "max": 2.0,
+            "unit": "EL"
+          }
+        }
+      },
+      {
+        "ingredient": "sahne",
+        "total": {
+          "text": "540 ml",
+          "value": 540.0,
+          "max": 540.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "blumenkohlpueree": "60ml warmer Sahne",
+          "kartoffelbaumkuchen": "200ml Sahne",
+          "salzkaramell": "100ml WARME Sahne",
+          "parfait": "180ml kalte Sahne"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "60 ml",
+            "value": 60.0,
+            "max": 60.0,
+            "unit": "ml"
+          },
+          "gang-3": {
+            "text": "200 ml",
+            "value": 200.0,
+            "max": 200.0,
+            "unit": "ml"
+          },
+          "gang-4": {
+            "text": "280 ml",
+            "value": 280.0,
+            "max": 280.0,
+            "unit": "ml"
+          }
+        }
+      },
+      {
+        "ingredient": "butter",
+        "total": {
+          "text": "260 g (+ EL ungemischt)",
+          "value": 260.0,
+          "max": 260.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "blumenkohlpueree": "60g Butter",
+          "zitronen-haselnussbutter": "100g Butter",
+          "glasierte-karotten": "40g Butter",
+          "kirsch-jus": "30g kalte Butter",
+          "salzkaramell": "30g Butter"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "160 g",
+            "value": 160.0,
+            "max": 160.0,
+            "unit": "g"
+          },
+          "gang-3": {
+            "text": "70 g",
+            "value": 70.0,
+            "max": 70.0,
+            "unit": "g"
+          },
+          "gang-4": {
+            "text": "30 g",
+            "value": 30.0,
+            "max": 30.0,
+            "unit": "g"
+          }
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "eier",
+        "total": {
+          "text": "6 Eigelb",
+          "value": 6.0,
+          "max": 6.0,
+          "unit": "Eigelb",
+          "approx": false
+        },
+        "perTask": {
+          "kartoffelbaumkuchen": "2 Eigelb",
+          "parfait": "4 Eigelb"
+        },
+        "perCourse": {
+          "gang-3": {
+            "text": "2 Eigelb",
+            "value": 2.0,
+            "max": 2.0,
+            "unit": "Eigelb"
+          },
+          "gang-4": {
+            "text": "4 Eigelb",
+            "value": 4.0,
+            "max": 4.0,
+            "unit": "Eigelb"
+          }
+        }
+      },
+      {
+        "ingredient": "vollmilch",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "haselnuesse",
+        "total": {
+          "text": "60 g",
+          "value": 60.0,
+          "max": 60.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "haselnuesse": "60g Haselnüsse"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "60 g",
+            "value": 60.0,
+            "max": 60.0,
+            "unit": "g"
+          }
+        }
+      },
+      {
+        "ingredient": "pekannuesse",
+        "total": {
+          "text": "100 g",
+          "value": 100.0,
+          "max": 100.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "parfait": "100g Pekannüsse"
+        },
+        "perCourse": {
+          "gang-4": {
+            "text": "100 g",
+            "value": 100.0,
+            "max": 100.0,
+            "unit": "g"
+          }
+        }
+      },
+      {
+        "ingredient": "zucker",
+        "total": {
+          "text": "1 EL (+ g ungemischt)",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "glasierte-karotten": "1 EL Zucker"
+        },
+        "perCourse": {
+          "gang-3": {
+            "text": "1 EL",
+            "value": 1.0,
+            "max": 1.0,
+            "unit": "EL"
+          }
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "vanilleschote",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "zimtstange",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "amarettini",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "fleur",
+        "total": {
+          "text": "1,5 TL",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "zitronen-haselnussbutter": "½ TL Fleur de Sel",
+          "salzkaramell": "1 TL Fleur de Sel"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "½ TL",
+            "value": 0.5,
+            "max": 0.5,
+            "unit": "TL"
+          },
+          "gang-4": {
+            "text": "1 TL",
+            "value": 1.0,
+            "max": 1.0,
+            "unit": "TL"
+          }
+        }
+      },
+      {
+        "ingredient": "gefluegelfond",
+        "total": {
+          "text": "400 ml",
+          "value": 400.0,
+          "max": 400.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "sauce-basis": "400ml Geflügelfond"
+        },
+        "perCourse": {
+          "gang-3": {
+            "text": "400 ml",
+            "value": 400.0,
+            "max": 400.0,
+            "unit": "ml"
+          }
+        }
+      },
+      {
+        "ingredient": "butterschmalz",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "portwein",
+        "total": {
+          "text": "200 ml",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "kirsch-jus": "200ml Portwein"
+        },
+        "perCourse": {
+          "gang-3": {
+            "text": "200 ml",
+            "value": 200.0,
+            "max": 200.0,
+            "unit": "ml"
+          }
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "2,5 TL",
+          "value": 2.5,
+          "max": 2.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "consomme": "1 TL feinem Salz",
+          "kartoffelbaumkuchen": "1 TL Salz",
+          "glasierte-karotten": "½ TL Salz"
+        },
+        "perCourse": {
+          "gang-1": {
+            "text": "1 TL",
+            "value": 1.0,
+            "max": 1.0,
+            "unit": "TL"
+          },
+          "gang-3": {
+            "text": "1,5 TL",
+            "value": 1.5,
+            "max": 1.5,
+            "unit": "TL"
+          }
+        },
+        "unitless": [
+          "reichlich Salzwasser"
+        ]
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "weisser-pfeffer",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "muskatnuss",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "olivenoel",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "oel",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "750 ml (+ EL ungemischt)",
+          "value": 750.0,
+          "max": 750.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "consomme": "600ml kaltem Wasser",
+          "glasierte-karotten": "150ml Wasser"
+        },
+        "perCourse": {
+          "gang-1": {
+            "text": "600 ml",
+            "value": 600.0,
+            "max": 600.0,
+            "unit": "ml"
+          },
+          "gang-3": {
+            "text": "150 ml",
+            "value": 150.0,
+            "max": 150.0,
+            "unit": "ml"
+          }
+        },
+        "unitMixed": true
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Buhara Seafood",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "jakobsmuscheln",
+            "name": "Jakobsmuscheln, frisch, ohne Schale",
+            "need": {
+              "text": "10",
+              "value": 10.0,
+              "max": 10.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "10",
+            "inStock": false,
+            "buy": {
+              "text": "10"
+            },
+            "note": "ca. 40g/Stück; 2 Reserve"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "blumenkohl",
+            "name": "Blumenkohl, groß",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "ca. 700g; Püree"
+          },
+          {
+            "ingredient": "sellerieknolle",
+            "name": "Sellerieknolle, groß",
+            "need": {
+              "text": "500 g",
+              "value": 500.0,
+              "max": 500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "500 g",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "ca. 600g; Consommé"
+          },
+          {
+            "ingredient": "kartoffeln",
+            "name": "Kartoffeln, festkochend",
+            "need": {
+              "text": "700 g",
+              "value": 700.0,
+              "max": 700.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "700 g",
+            "inStock": false,
+            "buy": {
+              "text": "800g"
+            },
+            "note": "z.B. Annabelle, Linda; Baumkuchen"
+          },
+          {
+            "ingredient": "bundmoehren",
+            "name": "Bundmöhren",
+            "need": {
+              "text": "8",
+              "value": 8.0,
+              "max": 8.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "8",
+            "inStock": false,
+            "buy": {
+              "text": "12"
+            },
+            "note": "kleine Karotten mit Grün; 8 zum Servieren, Rest Reserve"
+          },
+          {
+            "ingredient": "birnen",
+            "name": "Birnen",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "buy": {
+              "text": "4"
+            },
+            "note": "Abate Fetel ideal, oder sehr feste Williams; Kompott"
+          },
+          {
+            "ingredient": "granny-smith-aepfel",
+            "name": "Granny-Smith-Äpfel",
+            "need": {
+              "text": "½",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "½",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "1 für Brunoise, 1 Reserve"
+          },
+          {
+            "ingredient": "sauerkirschen",
+            "name": "Sauerkirschen",
+            "need": {
+              "text": "200 g",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "200 g",
+            "inStock": false,
+            "buy": {
+              "text": "250g"
+            },
+            "note": "TK oder Glas, Abtropfgewicht; Sauce"
+          },
+          {
+            "ingredient": "schalotten",
+            "name": "Schalotten",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            }
+          },
+          {
+            "ingredient": "thymian",
+            "name": "Thymian, frisch",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            }
+          },
+          {
+            "ingredient": "staudensellerie",
+            "name": "Stange Staudensellerie",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "für die Blätter als Garnitur"
+          },
+          {
+            "ingredient": "zitronen",
+            "name": "Zitronen",
+            "need": {
+              "text": "1–2 EL",
+              "value": 1.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1–2 EL",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            },
+            "note": "Nussbutter + Apfel-Brunoise + Birnen-Kompott"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "entenbrueste",
+            "name": "Entenbrüste",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            },
+            "note": "je ca. 350-400g; 1 Reserve oder für größere Portionen"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "sahne",
+            "name": "Sahne",
+            "need": {
+              "text": "540 ml",
+              "value": 540.0,
+              "max": 540.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "540 ml",
+            "inStock": false,
+            "buy": {
+              "text": "600ml"
+            },
+            "note": "mind. 30% Fett; Püree, Parfait, Karamell, Kartoffelbaumkuchen"
+          },
+          {
+            "ingredient": "butter",
+            "name": "Butter",
+            "need": {
+              "text": "260 g (+ EL ungemischt)",
+              "value": 260.0,
+              "max": 260.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "260 g",
+            "inStock": false,
+            "buy": {
+              "text": "400g"
+            },
+            "note": "Markenbutter"
+          },
+          {
+            "ingredient": "eier",
+            "name": "Eier",
+            "need": {
+              "text": "6 Eigelb",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "Eigelb",
+              "approx": false
+            },
+            "display": "6 Eigelb",
+            "inStock": false,
+            "buy": {
+              "text": "8"
+            },
+            "note": "Eigelb: 4 für Parfait, 2 für Kartoffelbaumkuchen, 2 Reserve"
+          },
+          {
+            "ingredient": "vollmilch",
+            "name": "Vollmilch",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "150ml"
+            }
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "haselnuesse",
+            "name": "Haselnüsse",
+            "need": {
+              "text": "60 g",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "60 g",
+            "inStock": false,
+            "buy": {
+              "text": "100g"
+            },
+            "note": "ganz, geschält; Vorspeise"
+          },
+          {
+            "ingredient": "pekannuesse",
+            "name": "Pekannüsse",
+            "need": {
+              "text": "100 g",
+              "value": 100.0,
+              "max": 100.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "100 g",
+            "inStock": false,
+            "buy": {
+              "text": "150g"
+            },
+            "note": "Parfait + Deko"
+          },
+          {
+            "ingredient": "zucker",
+            "name": "Zucker, fein",
+            "need": {
+              "text": "1 EL (+ g ungemischt)",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1kg"
+            },
+            "note": "du brauchst ca. 250g, aber Karamell kann verbrennen — lieber Reserve!"
+          },
+          {
+            "ingredient": "vanilleschote",
+            "name": "Vanilleschote",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "oder 1 TL Vanillepaste"
+          },
+          {
+            "ingredient": "zimtstange",
+            "name": "Zimtstange oder 2 Sternanis",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "optional": true,
+            "note": "für Kompott"
+          },
+          {
+            "ingredient": "amarettini",
+            "name": "Amarettini oder Spekulatius",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "optional": true,
+            "note": "für extra Crunch"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Würzmittel & Gewürze",
+        "items": [
+          {
+            "ingredient": "fleur",
+            "name": "Fleur de Sel",
+            "need": {
+              "text": "1,5 TL",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1,5 TL",
+            "inStock": false,
+            "note": "hochwertiges Meersalz"
+          },
+          {
+            "ingredient": "gefluegelfond",
+            "name": "Geflügelfond",
+            "need": {
+              "text": "400 ml",
+              "value": 400.0,
+              "max": 400.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "400 ml",
+            "inStock": false,
+            "buy": {
+              "text": "800ml"
+            },
+            "note": "2 Gläser à 400ml; 1 Reserve falls Sauce zu stark einkocht"
+          },
+          {
+            "ingredient": "butterschmalz",
+            "name": "Butterschmalz oder Ghee",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "note": "für Kartoffelbaumkuchen"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Getränke",
+        "items": [
+          {
+            "ingredient": "portwein",
+            "name": "Portwein",
+            "need": {
+              "text": "200 ml",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "200 ml",
+            "inStock": false,
+            "buy": {
+              "text": "250ml"
+            },
+            "note": "Ruby"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "salz",
+            "name": "Salz, fein",
+            "need": {
+              "text": "2,5 TL",
+              "value": 2.5,
+              "max": 2.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "2,5 TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "Meersalz, zum Kochen"
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Pfeffer, schwarz",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true,
+            "note": "ganze Körner, frisch gemahlen"
+          },
+          {
+            "ingredient": "weisser-pfeffer",
+            "name": "Weißer Pfeffer",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true,
+            "note": "für helle Pürees"
+          },
+          {
+            "ingredient": "muskatnuss",
+            "name": "Muskatnuss",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "pantry": true,
+            "note": "ganz"
+          },
+          {
+            "ingredient": "olivenoel",
+            "name": "Olivenöl, gut",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true,
+            "note": "zum Finishen"
+          },
+          {
+            "ingredient": "oel",
+            "name": "Öl, neutral, zum Braten",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true,
+            "note": "Rapsöl oder Sonnenblumenöl"
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "750 ml (+ EL ungemischt)",
+              "value": 750.0,
+              "max": 750.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "750 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}

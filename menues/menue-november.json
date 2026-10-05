@@ -4083,6 +4083,9 @@
               "gang-4-shaken",
               "gang-4-temperieren-und-teller-frosten"
             ],
+            "tasks": [
+              "dessert-service"
+            ],
             "course": "gang-4"
           }
         ]
@@ -4150,8 +4153,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T12:01:27Z",
-    "sourceHash": "38a26574566fbd8e",
+    "generatedAt": "2026-10-05T14:25:43Z",
+    "sourceHash": "6248b762412c0e64",
     "quantities": [
       {
         "ingredient": "verjus",
