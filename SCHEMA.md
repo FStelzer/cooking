@@ -465,11 +465,88 @@ Kurzansicht + Überschrift zum Ausführen? Werden Details aufgeklappt, und wofü
 Timer benutzt oder Uhr? Stört die Sticky-Kopfzeile auf dem Handy (ca. 210 px)?
 Fehlt `after` irgendwo? Welche Notizen entstehen, und passen sie ins Format?
 
+## Abnahme (AP7, 2026-10-05)
+
+Testsammlung aus Phase 1 plus Bò lúc lắc als erster Praxistest (gekocht 10/2026 mit dem
+Kochmodus). Alle gebaut, `task validate` grün, Rauchtest grün (Thịt kho, November,
+Brötchen-Varianten). Treue alt → neu bei jeder Normalisierung ohne Token-Verlust geprüft.
+
+| Datei | Art | Schritte | Dosierungen | Zutaten | Zeitplan (Einträge mit Treffer) | Varianten | Schätz-Dauern | Lint | Check H |
+|---|---|---|---|---|---|---|---|---|---|
+| `gerichte/thit-kho-trung` | linear | 9 | 23 | 17 | — | — | 2 | 1 | — |
+| `gerichte/bo-luc-lac` | linear, Tabelle | 10 | 34 | 18 | 6/8 | — | 2 | 0 | 0 |
+| `menues/menue-november` | Menü, Gang-Offsets | 60 | 82 | 55 | 29/32 | — | 44 | 3 | 7 ⚠ |
+| `menues/menue-hochzeitstag` | Menü, Uhrzeit, gekocht | 47 | 42 | 34 | 33/42 | — | 33 | 1 | 3 ⚠ |
+| `backen/vollkornbroetchen` | Backen, Verhältnisse | 16 | 17 | 12 | 13/17, 2 Zeitpläne | 2 Dim., 9 Komb. | 4 | 0 | 0 |
+| `schwangerschaft/dal-baukasten` | Baukasten | 32 | 145 | 45 | 4/6 | 2 Dim., 10 Komb. | 11 | 0 | 0 |
+
+Offene Lint-Hinweise sind bewusst: Zutaten ohne Mengenangabe in der Quelle (Kräuter,
+Gewürze „nach Gefühl“), zwei Saison-Schritte im November ohne Dauer (09/2026 erledigt).
+Einträge ohne Treffer sind Logistik („Tisch decken“, „Ofen an“).
+
+### Review-Checkliste
+
+| Kriterium (PRD) | Stand | Beleg |
+|---|---|---|
+| Roh gut lesbar (GitHub, Editor, LLM) | ✓ | Konvention = fette Schritt-Überschrift + kursive Meta-Zeile; Docsify unverändert |
+| LLM-schreibbar | ✓ | `/rezept neu|normalisieren`, sechs Dateien damit gebaut; Determinismus-Test AP3 |
+| Kein Informationsverlust | ✓ | Check B (alle Zahl+Einheit-Token verbatim), `cli treue` bei jeder Normalisierung |
+| Validiert gegen das Schema | ✓ | Check A in `task validate`, Pre-Commit-Hook |
+| Zeitabfolgen, Abhängigkeiten | ✓ | `after`, Anker, Phasen (Tage, Gang-Offsets, Uhrzeit), Checks E–H |
+| Materialplanung (Einkauf, Mengen) | ✓ | `derived` in Python, pro Variante; Check K/L |
+| Wissensebenen action/why/cues/rescue | ✓ mit Einschränkung | nur aus Markierungen (L18); Hochzeitstag ohne Markierungen → kaum Warum/Grenzen |
+| Kochmodus: Zeitplan, Timer, Abhaken | ✓ | gekocht: Bò lúc lắc; Neu kochen, Blättern, Varianten-Auswahl |
+
+### Abgleich mit dem PRD
+
+**Umgesetzt wie geplant:** JSON + JSON Schema als kanonisches Format, Markdown bleibt
+Quelle, Parser in Python, JSON neben jeder `.md`, Kochmodus-Seite liest nur JSON,
+Testsammlung (November, linear, Backen, Varianten) + Hochzeitstag, Haltbarkeit am
+Produkt, aktiv/passiv, Ressourcen Ofen (mit Temperatur) und Herd, Konfliktprüfung statt
+Planer, Notizen/Offenes strukturiert, Feedback-Rückweg als Markdown-Export.
+
+**Bewusst anders entschieden:**
+- Keine YAML-Blöcke: Planung steckt in der Meta-Zeile unter dem Schritt und im Zeitplan.
+  Beides ist auch ungerendert lesbar.
+- Kein GitHub Action, sondern ein lokaler Pre-Commit-Hook (User-Entscheidung).
+- Ermessensfelder (Warum, Grenzen, Cues) werden nur aus Markierungen gelesen (L18).
+- Varianten nur über `only`, ohne `replaces` (AP6).
+- Notizen nur pro Rezept, nicht pro Schritt (L13).
+- Kein Simple Temporal Network: Es gibt Anker und Kanten, Check H warnt.
+
+**Offen gegenüber dem PRD:**
+- Docsify-Plugin, das aus dem JSON rendert: Phase 5. Heute zeigt Docsify das Markdown
+  und einen Knopf zum Kochmodus.
+- Ebenen ein-/ausblendbar (Anfänger vs. Profi): Heute hebt der Kochmodus die Ebenen nur
+  farbig hervor. Ein Schalter fehlt.
+- Technik-Bibliothek mit Detailschritten: Heute gibt es nur Verweise (`Technik: …`) auf
+  `technik/`.
+- Kochmodus mit mehreren URLs füttern (Komponenten zu einem Plan): Heute lädt er ein
+  Rezept pro `?r=`.
+- Kühlschrank- und TK-Platz als Ressource.
+- Menge pro Person und Personen-Multiplikator (Paket „Kochmodus alltagstauglich“).
+- Alarm bei gesperrtem Bildschirm: Die Grenze aus dem Prototyp besteht weiter.
+- Einheiten: Löffel-Anzeige ist entschieden. TL↔EL beim Summieren und g↔EL fehlen
+  noch (Phase 5).
+
+**Offene Fragen des PRD, beantwortet:**
+- Repo öffentlich inkl. Gesundheitsdaten: vom User akzeptiert.
+- Technik-Bibliothek: Ordner `technik/`, Verweis per Meta-Klausel.
+- Feedback ohne Backend: Markdown-Export unter `## Learnings`.
+- Einheiten: Anzeige-Regel ja, Umrechnung nur beim Summieren.
+
+**Beobachtungen aus dem ersten Kochen (Bò lúc lắc):**
+- Die Kurzansicht wirkte wie der ganze Schritt. Jetzt zeigt die Liste „+ N weitere
+  Handgriffe“, und bei solchen Schritten öffnet der Haken die Details.
+- Timer wurden wenig genutzt.
+- Auf dem Handy fehlte das Blättern. Jetzt gibt es Wischen und ‹ ›, eine Tablet-Ansicht
+  steht noch aus.
+
 ## Nächste Schritte
 
-- **AP7:** Abnahme über alle fünf Dateien, Review-Checkliste, PRD-Delta.
-- Kochmodus alltagstauglich (nach AP7, vor dem November-Menü und vor Phase 5):
-  Wake-Lock, Alarm, Offline, Personen-Multiplikator für `per`-Mengen in der Ableitung,
+- Kochmodus alltagstauglich (vor dem November-Menü und vor Phase 5):
+  Alarm bei gesperrtem Bildschirm, Offline, Tablet-Ansicht (zweispaltig: Liste +
+  Detailblatt), Personen-Multiplikator für `per`-Mengen in der Ableitung,
   Kritischer-Pfad-Linter gegen `times.total`. Generische Schnell-Timer (Quick-Set ohne
   Schrittbezug). „Claude zum Schritt fragen“ mit dem Rezept als Kontext. Danach den
   November-Menü-Testlauf (Gang 2) machen, die Dauern dabei messen und die
@@ -479,3 +556,6 @@ Fehlt `after` irgendwo? Welche Notizen entstehen, und passen sie ins Format?
   danach entfallen beide Sektionen im Markdown. Erst nach AP6, weil die Varianten die
   Struktur der Liste ändern. Dabei TL/EL in der Summe umrechnen (Dal: „1 TL (+ EL
   ungemischt)“ beim Ghee) und Mengen pro Teller (`1 halbiertes Ei`) nicht zum Einkauf zählen.
+- Später, aus dem PRD-Abgleich: Ebenen-Schalter (Warum/Rettung ein-/ausblenden),
+  Technik-Bibliothek mit Detailschritten, Kochmodus mit mehreren Rezepten zu einem Plan,
+  Kühlschrank-/TK-Platz als Ressource.
