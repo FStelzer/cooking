@@ -29,13 +29,15 @@ const loadTimers = () => normalizeTimers(store.get("km:timers"));
 let timers = loadTimers();
 function saveTimers() { store.set("km:timers", timers); }
 // Nach einer Timer-Änderung: Dock und die Laufzeit-Badges der Kochen-Liste, nicht die ganze Seite
-function timersChanged() {
-  saveTimers(); renderDock();
+function timersChanged({ persist = true } = {}) {
+  if (persist) saveTimers();
+  renderDock();
   if (recipe && view === "kochen") renderMain();
   if (openId) renderSheet();
 }
 const myTimers = () => timers.filter((t) => recipe && t.recipe === recipe.id);
-window.addEventListener("storage", (e) => { if (e.key === "km:timers") { timers = loadTimers(); renderDock(); } });
+// Anderer Tab hat Timer geändert: übernehmen und alles neu zeichnen, was Timer zeigt (Dock, Badges, Blatt)
+window.addEventListener("storage", (e) => { if (e.key === "km:timers") { timers = loadTimers(); timersChanged({ persist: false }); } });
 const factor = () => +state.factor || 1;
 
 // ---- Rezept-Helfer (Menü = Gänge mit eigenen Tasks) -------------------------
@@ -475,11 +477,19 @@ const fromLast = RECIPE_URL && RECIPE_URL === lastRecipe && !params.get("r");
 const sameOrigin = (u) => { try { return new URL(u, location.href).origin === location.origin; } catch { return false; } };
 (async () => {
   if (!RECIPE_URL) return renderPicker();
-  try { recipe = await (await fetch(RECIPE_URL)).json(); }
-  catch (err) {
-    // Zuletzt geöffnetes Rezept nicht ladbar: Liste zeigen; umbenannt/gelöscht (kein reiner Netzfehler) → vergessen
+  // Nur Rezepte dieser Seite: Rezepttext wird als Markdown/HTML gerendert, fremde Quellen hätten Zugriff auf km:*
+  if (!sameOrigin(RECIPE_URL)) {
+    main.innerHTML = `<p class="empty">Nur Rezepte dieser Seite können geöffnet werden: <code>${esc(RECIPE_URL)}</code></p>`; return;
+  }
+  try {
+    const res = await fetch(RECIPE_URL);
+    if (!res.ok) throw Object.assign(new Error(`HTTP ${res.status}`), { status: res.status });
+    recipe = await res.json();
+  } catch (err) {
+    // Zuletzt geöffnetes Rezept nicht ladbar: Liste zeigen. Vergessen nur, wenn es das Rezept nicht mehr gibt (404) —
+    // offline (Netzfehler, 503 vom Service Worker) bleibt die Erinnerung
     if (fromLast) {
-      if (!(err instanceof TypeError)) store.del("km:last");
+      if (err.status === 404) store.del("km:last");
       return renderPicker();
     }
     main.innerHTML = `<p class="empty">Rezept konnte nicht geladen werden: <code>${esc(RECIPE_URL)}</code> (${esc(err.message)})</p>`; return;
@@ -489,7 +499,7 @@ const sameOrigin = (u) => { try { return new URL(u, location.href).origin === lo
   if (isMenu() && schedule()) view = "plan";
   renderAll();
   // Erst merken, wenn es sich rendern ließ — und nur Rezepte dieser Seite (der Start ohne ?r= lädt es ungefragt)
-  if (sameOrigin(RECIPE_URL)) try { localStorage.setItem("km:last", RECIPE_URL); } catch {}
+  try { localStorage.setItem("km:last", RECIPE_URL); } catch {}
   // Erster Besuch: das Rezept kam, bevor der Service Worker die Seite übernahm — einmal durch ihn holen, damit es offline da ist
   const sw = navigator.serviceWorker;
   if (sw && !sw.controller) sw.addEventListener("controllerchange", () => fetch(RECIPE_URL).catch(() => {}), { once: true });

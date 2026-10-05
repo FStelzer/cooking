@@ -8,7 +8,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass, field
 
-from .fmt import parse_num
+from .fmt import APPROX, NUMW, RANGE, SIZE_WORD, parse_num
 from .shopping import parse_qty
 from . import variants as V
 from .util import DEFAULT_RESOURCES, NUM, all_doses, sentence_prefixes, slugify, split_h2, ws_key
@@ -32,8 +32,6 @@ RESCUE_START = ("Fallback", "Rettung", "Gebrochen", "Falls", "Option", "Notfall"
 RESCUE_COND = re.compile(r"^(Ist|Wird|Wenn|Sollte|Falls)\b[^.]*,")
 DUR_UNITS = r"(?:Min\.?|Minuten|Sek\.?|Sekunden|Std\.?|Stunden|h\b|Tage?\b)"
 
-NUMW = r"(?:\d*[½¼¾⅓]|\d+(?:[,.]\d+)?)"
-RANGE = rf"{NUMW}(?:\s?[–-]\s?{NUMW})?"
 DUR_RE = re.compile(rf"(?P<ca>ca\.\s?|\\?~\s?)?(?P<lo>{NUMW})(?:\s?[–-]\s?(?P<hi>{NUMW}))?\s?(?P<u>{DUR_UNITS})")
 STEP_RE = re.compile(r"^\*\*(?P<n>\d+[a-z]?)\.\s+(?P<title>.+?)(?:\s+\((?P<paren>[^()]*(?:\([^()]*\)[^()]*)*)\))?\*\*\s*$")
 LABEL_RE = re.compile(r"^\*\*(?P<label>[^*]+?):\*\*\s*$")
@@ -59,7 +57,6 @@ def head_noun(name: str) -> str:
     return max(w.split("/"), key=lambda x: len(x.strip("-"))).strip("-")
 
 
-num = parse_num
 
 
 def iso(value: float, unit: str) -> str:
@@ -82,7 +79,7 @@ def duration_range(text: str) -> dict | None:
     m = DUR_RE.search(text)
     if not m:
         return None
-    lo = num(m["lo"]); hi = num(m["hi"]) if m["hi"] else None
+    lo = parse_num(m["lo"]); hi = parse_num(m["hi"]) if m["hi"] else None
     d = {"min": iso(lo, m["u"]), "max": iso(hi, m["u"])} if hi else {"typical": iso(lo, m["u"])}
     d["source"] = m.group(0).strip()
     if m["ca"]:
@@ -124,7 +121,7 @@ def parse_head(head: str, lint: Lint) -> dict:
         out["yields"] = {"text": yt}
         ym = re.match(rf"\s*(?:ca\.\s?|\\?~)?({NUMW})(?:\s?[–-]\s?{NUMW})?\s+(\w+)", yt)
         if ym:
-            out["yields"].update(value=num(ym.group(1)), unit=ym.group(2))
+            out["yields"].update(value=parse_num(ym.group(1)), unit=ym.group(2))
     notes = [p for p in paras if p.startswith("> [!NOTE]")]
     if notes:
         out["statusNote"] = "\n\n".join(notes)
@@ -383,8 +380,8 @@ def annotate_text(step: dict, text: str, ingredients: list[dict], lint: Lint, wh
         step["alts"] = [variant_alt(m, text, step["ingredients"], ingredients, lint, where) for m in alts]
 
 
-QTY_ONLY = re.compile(rf"(?:ca\.\s?|\\?~)?(?P<lo>{NUMW})(?:\s?[–-]\s?(?P<hi>{NUMW}))?\s?(?P<unit>{'|'.join(DOSE_UNITS)})?")
-QTY_PREFIX = re.compile(rf"(?:ca\.\s?|\\?~)?{NUMW}(?:\s?[–-]\s?{NUMW})?(?:\s?(?:{'|'.join(DOSE_UNITS)})(?![\wäöüÄÖÜß]))?")
+QTY_ONLY = re.compile(rf"{APPROX}(?P<lo>{NUMW})(?:\s?[–-]\s?(?P<hi>{NUMW}))?{SIZE_WORD}\s?(?P<unit>{'|'.join(DOSE_UNITS)})?")
+QTY_PREFIX = re.compile(rf"{APPROX}{RANGE}(?:{SIZE_WORD}\s?(?:{'|'.join(DOSE_UNITS)})(?![\wäöüÄÖÜß]))?")
 
 
 def variant_alt(m: re.Match, text: str, doses: list[dict], ingredients: list[dict], lint: Lint, where: str) -> dict:
@@ -405,8 +402,8 @@ def variant_alt(m: re.Match, text: str, doses: list[dict], ingredients: list[dic
         q = QTY_ONLY.fullmatch(o["text"])
         if q:
             o["qty"] = True
-            am = {"text": o["text"], "value": num(q["lo"]), "unit": q["unit"] or base["amount"].get("unit") or "Stück"}
-            if q["hi"]: am["max"] = num(q["hi"])
+            am = {"text": o["text"], "value": parse_num(q["lo"]), "unit": q["unit"] or base["amount"].get("unit") or "Stück"}
+            if q["hi"]: am["max"] = parse_num(q["hi"])
             by[o["when"]] = [{"ref": base["ref"], "amount": am}]
         else:
             ds = find_doses(o["text"], ingredients, lint, where, set())
@@ -440,12 +437,13 @@ def ingredient_index(ingredients: list[dict]) -> list[tuple[str, str]]:
 
 
 DOSE_RE = re.compile(
-    rf"(?P<times>\d+)\s?×\s?|(?P<je>je\s+)?(?P<lo>{NUMW})(?:\s?[–-]\s?(?P<hi>{NUMW}))?(?:\s(?:kleine|große|gute|gehäufte|gestrichene)[nrs]?)?\s?(?P<unit>{'|'.join(DOSE_UNITS)})?(?:\s?\((?:ca\.\s?)?{NUMW}\s?(?:kg|g|ml)\))?\s+(?P<words>(?:[\wäöüÄÖÜß*-]+\s+){{0,3}}?[\wäöüÄÖÜß*/-]+)"
+    rf"(?P<times>\d+)\s?×\s?|(?P<je>je\s+)?(?P<lo>{NUMW})(?:\s?[–-]\s?(?P<hi>{NUMW}))?{SIZE_WORD}\s?(?P<unit>{'|'.join(DOSE_UNITS)})?(?:\s?\((?:ca\.\s?)?{NUMW}\s?(?:kg|g|ml)\))?\s+(?P<words>(?:[\wäöüÄÖÜß*-]+\s+){{0,3}}?[\wäöüÄÖÜß*/-]+)"
 )
 
 
 UMLAUT_FOLD = str.maketrans("äöü", "aou")
-DOSE_STOP = {"über", "auf", "in", "im", "mit", "von", "vom", "zu", "zum", "zur", "aus", "für", "die", "der", "den", "das", "dem", "und"}
+PREP_STOP = {"über", "auf", "in", "im", "mit", "von", "vom", "zu", "zum", "zur", "aus", "für"}  # „(2 kg mit Knochen)“
+DOSE_STOP = PREP_STOP | {"die", "der", "den", "das", "dem", "und"}  # Artikel erst ab dem zweiten Wort: „400 g der Tomaten“
 
 
 def best_match(cand: str, idx: list[tuple[str, str]]):
@@ -491,8 +489,8 @@ def find_doses(text: str, ingredients: list[dict], lint: Lint, where: str, seen_
         toks = list(re.finditer(r"[\wäöüÄÖÜß*/-]+", ahead.group(0)))
         hit, end_tok = None, None
         for i, tok in enumerate(toks):
-            if tok.group(0).strip("*").lower() in DOSE_STOP:
-                break  # „2 EL Lake über die Kresse“, „(2 kg mit Knochen)“: ab der Präposition beginnt etwas anderes
+            if tok.group(0).strip("*").lower() in (DOSE_STOP if i else PREP_STOP):
+                break  # „2 EL Lake über die Kresse“, „(2 kg mit Knochen)“: ab hier beginnt etwas anderes
             if i and m["unit"] == "cm" and "," in ahead.group(0)[:tok.start()]:
                 break  # „1 cm breite Spalten, 3 Frühlingszwiebeln“: Längenangabe, keine Dosierung
             pm_ = phrase_match(toks, i, idx)
@@ -502,7 +500,7 @@ def find_doses(text: str, ingredients: list[dict], lint: Lint, where: str, seen_
             hit = best_match(cand, idx)
             if hit:
                 end_tok = tok; break
-        if not hit and m["unit"] and m["unit"].lower() in ALIASES:  # „4 Eigelb und 80g Zucker“: die Einheit ist die Zutat
+        if m["unit"] and m["unit"].lower() in ALIASES:  # „2 Eiweiß steif schlagen, Zucker …“: die Einheit ist die Zutat
             hit = best_match(m["unit"].lower(), idx)
             if not hit: continue
             span_start = m.start("je") if m["je"] else m.start("lo")
@@ -513,7 +511,7 @@ def find_doses(text: str, ingredients: list[dict], lint: Lint, where: str, seen_
             span_start = m.start("je") if m["je"] else m.start("lo")
             span_end = m.start("words") + end_tok.end() - (len(end_tok.group(0)) - len(end_tok.group(0).rstrip("*")))
         span = plain[span_start:span_end]
-        lo = num(m["lo"]); hi = num(m["hi"]) if m["hi"] else None
+        lo = parse_num(m["lo"]); hi = parse_num(m["hi"]) if m["hi"] else None
         unit = m["unit"] or "Stück"
         if unit == "Prisen": unit = "Prise"
         if unit == "L": unit = "l"
@@ -537,8 +535,8 @@ def find_doses(text: str, ingredients: list[dict], lint: Lint, where: str, seen_
         bm = best_match(m.group(1).lower(), idx)
         if not bm or any(d["ref"] == bm[1] for d in out): continue
         span = plain[m.start("lo"):m.end("unit")]
-        amount = {"text": span, "value": num(m["lo"]), "unit": m["unit"]}
-        if m["hi"]: amount["max"] = num(m["hi"])
+        amount = {"text": span, "value": parse_num(m["lo"]), "unit": m["unit"]}
+        if m["hi"]: amount["max"] = parse_num(m["hi"])
         dose = {"ref": bm[1], "amount": amount}
         if any(k[0] == bm[1] for k in seen_doses):
             dose["reuse"] = True  # „restlicher Spinat (100 g)“: Aufteilung einer schon dosierten Zutat
@@ -547,7 +545,7 @@ def find_doses(text: str, ingredients: list[dict], lint: Lint, where: str, seen_
         out.append(dose)
     # „insgesamt N Einheit“ → Vervielfacher auf die Dosierung gleicher Einheit
     for m in re.finditer(rf"insgesamt\s+({NUMW})\s?({'|'.join(DOSE_UNITS)})", plain):
-        total, unit = num(m.group(1)), m.group(2)
+        total, unit = parse_num(m.group(1)), m.group(2)
         for d in out:
             a = d["amount"]
             if a.get("unit") == unit and a.get("value") and not a.get("times") and total % a["value"] == 0 and total > a["value"]:
@@ -570,17 +568,17 @@ def product_from_label(name: str, paren: str | None) -> tuple[dict, str | None]:
         hold, storage = {}, {}
         low = paren.lower()
         if m := re.search(rf"bis ({NUMW})\s?(Tage|Tag|h|Std\.|Min\.)\s+vorher", paren):
-            v, u = num(m.group(1)), m.group(2)
+            v, u = parse_num(m.group(1)), m.group(2)
             hold["max"] = f"P{int(v)}D" if u.startswith("Tag") else iso(v, u)
         if "ideal am vortag" in low: hold["ideal"] = "P1D"
         if m := re.search(rf"hält (?:bis )?({NUMW})(?:\s?[–-]\s?({NUMW}))?\s?(h|Std\.|Min\.|Tage)", paren):
-            v, u = num(m.group(1)), m.group(3)
+            v, u = parse_num(m.group(1)), m.group(3)
             if m.group(2):
-                hold["min"] = iso(v, u); hold["max"] = iso(num(m.group(2)), u)
+                hold["min"] = iso(v, u); hold["max"] = iso(parse_num(m.group(2)), u)
             else:
                 hold["max"] = f"P{int(v)}D" if u == "Tage" else iso(v, u)
         if m := re.search(rf"(?:mind\.|mindestens)\s+({NUMW})\s?(h|Std\.|Min\.)", paren):
-            hold["min"] = iso(num(m.group(1)), m.group(2))
+            hold["min"] = iso(parse_num(m.group(1)), m.group(2))
         if hold:
             hold["source"] = paren; prod["hold"] = hold
         if "kühlschrank" in low or "kalt" in low: storage["place"] = "fridge"
@@ -1042,12 +1040,12 @@ def parse_recipe(md: str, recipe_id: str) -> tuple[dict, Lint]:
             recipe["courses"] = [{"ref": cid, "n": int(cid[5:]), "name": re.sub(r"^\d+\.\s*", "", names[cid]), "serve": last[cid]["at"], "source": last[cid]["label"]}
                                  for cid in names if cid in last]
             recipe["anchor"] = anchor
-            recipe["resources"] = DEFAULT_RESOURCES
+            recipe["resources"] = [dict(r) for r in DEFAULT_RESOURCES]
         elif is_menu:
             recipe["courses"] = [{"ref": p["id"], "n": int(p["id"][5:]), "name": p["label"].split(" (")[0], "serve": p["at"], "source": p["label"]}
                                  for p in sched["phases"] if p["id"].startswith("gang-")]
             recipe["anchor"] = {"label": "Gang 1 serviert"}
-            recipe["resources"] = DEFAULT_RESOURCES
+            recipe["resources"] = [dict(r) for r in DEFAULT_RESOURCES]
     if is_menu and not recipe.get("courses"):
         recipe["courses"] = [{"ref": c["id"], "n": int(c["id"][5:]), "name": c["title"], "serve": "PT0M"} for s in sections if s.get("type") == "courses" for c in s["courses"]]
         recipe["anchor"] = {"label": "Service"}

@@ -4,7 +4,6 @@ from __future__ import annotations
 import re
 from collections import Counter
 
-from . import variants as V
 from .util import (UNIT_TOKEN, all_doses, annotation_quotes, is_generated, iter_courses, iter_steps, iter_tasks, quote_key,
                    sections, sentence_prefixes, source_without_generated, split_h2, unit_tokens,
                    verbatim_strings, ws_key)
@@ -177,7 +176,7 @@ def check_d(recipe: dict) -> tuple[list[str], list[str]]:
         errs += [f"D learnings.notes[{i}].ref '{n['ref']}' löst nicht auf" for i, n in enumerate(sec.get("notes", [])) if n["ref"] not in ids]
     for sec in [*sections(recipe, "todo"), *[s for c in iter_courses(recipe) for s in sections(c, "todo")]]:
         errs += [f"D todo.items[{i}].ref '{it['ref']}' löst nicht auf" for i, it in enumerate(sec["items"]) if it.get("ref") and it["ref"] not in ids]
-    choices = set(V.choice_index(recipe.get("variants", [])).values())
+    choices = {f"{d['id']}={c['id']}" for d in recipe.get("variants", []) for c in d["choices"]}  # direkt aus der Deklaration
     def chk(where: str, refs) -> None:
         errs.extend(f"D {where}: Wahl '{r}' nicht deklariert" for r in refs or [] if r not in choices)
     for i in recipe.get("ingredients", []): chk(f"ingredient:{i['id']}.only", i.get("only"))

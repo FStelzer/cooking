@@ -65,8 +65,10 @@ Sidebar-Generator liest `*/*.md`).
   exportiert als Markdown-Block unter `## Learnings` (`learnings.notes[]`).
 - **L14 Kochmodus-Zustand im Browser.** `km:<rezept-id>` (Haken, Einkauf, Notiz, Faktor,
   Wahl), `km:timers` rezeptübergreifend mit absoluter Endzeit (überlebt Reload), `km:last`.
-  Statische Seite, installierbar, offline über den Service Worker (App-Hülle aus dem
-  Cache, Rezepte Netz zuerst). Kein Alarm bei gesperrtem Bildschirm (ohne Push-Server
+  Statische Seite, installierbar, offline über den Service Worker: App-Hülle als ein
+  Cache pro Version (Hash der Hülle, von `task build` gesetzt, atomar installiert), Rezepte
+  in einem eigenen Cache, Netz zuerst. Beim Entwickeln mit `task serve`: nach Änderungen
+  an der App `task build` und zweimal neu laden (oder in den DevTools „Update on reload“). Kein Alarm bei gesperrtem Bildschirm (ohne Push-Server
   nicht verlässlich), dafür „Bildschirm wach halten“.
 - **L15 Gates lokal.** `task validate` als Pre-Commit-Hook, kein CI.
 

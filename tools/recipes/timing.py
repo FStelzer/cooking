@@ -353,7 +353,10 @@ def critical_path(recipe: dict) -> tuple[int, int, list[str]]:
         for p in preds:
             if fin(p, seen + (sid,)) > t0: t0, prev[sid] = end[p], p
         kind, x, edge = ((st.get("start") or {}).get("ref", "") + "::").split(":")[:3]
-        if kind == "step" and x in steps and edge in ("start", "end"):
+        # „≤ 30 Min. vor dem <x>“, wenn x ohnehin direkt auf diesen Schritt folgt: nur ein Zeitfenster, keine Kante
+        # (sonst Kreis: x wartet auf diesen Schritt, dieser auf den Start von x)
+        window = edge == "start" and "after" not in steps.get(x, {}) and before.get(x) == sid
+        if kind == "step" and x in steps and edge in ("start", "end") and not window:
             off = st["start"].get("offset", {})
             # Ende: „letzte 20–30 Min. von X“ = offset {min: -30, max: -20} bei Dauer 20–30 → spätester Offset passt zu
             # _dur (kürzeste Dauer). Start: „≤ 30 Min. vor dem Anrichten“ → frühester erlaubter Start.

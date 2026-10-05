@@ -3,6 +3,7 @@
     python3 -m tools.recipes.site sidebar     # schreibt _sidebar.md
     python3 -m tools.recipes.site learnings   # ersetzt den Block zwischen <!-- learnings:start/end -->
     python3 -m tools.recipes.site index       # schreibt kochmodus/rezepte.json (Rezeptliste der Kochmodus-App)
+    python3 -m tools.recipes.site sw          # setzt die Cache-Version in kochmodus/sw.js (Hash der App-Hülle)
     python3 -m tools.recipes.site --check …   # schreibt nichts, Exit 1 wenn etwas veraltet ist
 
 Ersetzt die früheren awk-Blöcke im Taskfile; die Ausgabe ist zeichengleich (per Diff
@@ -110,14 +111,24 @@ def recipe_index() -> str:
     return json.dumps(items, ensure_ascii=False, indent=1) + "\n"
 
 
+def sw_with_version(sw: str) -> str:
+    """kochmodus/sw.js mit Cache-Version = Hash der App-Hülle (die Dateien aus `SHELL` in sw.js): jede Änderung an
+    der App installiert eine neue Hülle in einem Zug (kein Mix aus neuem HTML und altem JS)."""
+    import hashlib
+    shell = re.findall(r'"([^"]+)"', re.search(r"const SHELL = \[(.*?)\];", sw, re.S).group(1))
+    h = hashlib.sha256(b"".join((ROOT / "kochmodus" / f).read_bytes() for f in shell)).hexdigest()[:10]
+    return re.sub(r'const VERSION = "[^"]*";', f'const VERSION = "km-{h}";', sw, count=1)
+
+
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    p.add_argument("what", choices=["sidebar", "learnings", "index"])
+    p.add_argument("what", choices=["sidebar", "learnings", "index", "sw"])
     p.add_argument("--check", action="store_true", help="nur prüfen, nichts schreiben")
     a = p.parse_args(argv)
-    target = ROOT / {"sidebar": "_sidebar.md", "learnings": "CLAUDE.md", "index": "kochmodus/rezepte.json"}[a.what]
+    target = ROOT / {"sidebar": "_sidebar.md", "learnings": "CLAUDE.md", "index": "kochmodus/rezepte.json", "sw": "kochmodus/sw.js"}[a.what]
     old = target.read_text(encoding="utf-8") if target.exists() else ""
-    new = {"sidebar": sidebar, "index": recipe_index, "learnings": lambda: learnings_block(old)}[a.what]()
+    new = {"sidebar": sidebar, "index": recipe_index, "learnings": lambda: learnings_block(old),
+           "sw": lambda: sw_with_version(old)}[a.what]()
     if a.check:
         print(f"{target.name}: {'aktuell' if new == old else 'VERALTET (task ' + a.what + ')'}")
         return int(new != old)

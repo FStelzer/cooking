@@ -164,6 +164,14 @@ try {
   await page.goto(`http://127.0.0.1:${PORT}/kochmodus/`);
   await page.waitForSelector(".row[data-step]");
   assert.match(await page.locator("#title").innerText(), /Vollkornbrötchen/, "zuletzt geöffnetes Rezept");
+  // Fremde Quelle wird nicht geladen; gelöschtes zuletzt geöffnetes Rezept (404) → Liste, Erinnerung weg
+  await page.goto(`http://127.0.0.1:${PORT}/kochmodus/?r=${encodeURIComponent("https://example.com/x.json")}`);
+  assert.match(await page.locator("#main").innerText(), /Nur Rezepte dieser Seite/);
+  await page.evaluate(() => localStorage.setItem("km:last", "../gerichte/gibt-es-nicht.json"));
+  await page.goto(`http://127.0.0.1:${PORT}/kochmodus/`);
+  await page.waitForSelector("a.pick");
+  assert.equal(await page.evaluate(() => localStorage.getItem("km:last")), null, "404 vergisst km:last");
+  errors.splice(0, errors.length, ...errors.filter((e) => !/status of 404/.test(e)));  // die 404 war Absicht
   await page.goto(`http://127.0.0.1:${PORT}/kochmodus/?liste=1`);
   await page.waitForSelector("a.pick");
   const n = JSON.parse(await (await fetch(`http://127.0.0.1:${PORT}/kochmodus/rezepte.json`)).text()).length;

@@ -12,7 +12,7 @@ import re
 from datetime import datetime, timezone
 
 from . import variants as V
-from .fmt import COUNT_UNIT, FRAC_NUM, fmt_amount, parse_num
+from .fmt import COUNT_UNIT, NUMW, fmt_amount, parse_num
 from .spoons import display_text
 from .util import (NUM, SHOPPING_SECTION, TASK_ITEM, UNITS_MASS_VOL, iter_tasks_with_course, quote_key,
                    split_h2, unit_alt, words)
@@ -159,8 +159,8 @@ def render_shopping(recipe: dict) -> str:
 # ---------------------------------------------------------------- Check K
 
 _U = unit_alt(UNITS_MASS_VOL)
-_QTY = re.compile(rf"^\s*(?:(?i:optional):\s*)?(?P<lo>{FRAC_NUM}|{NUM})\s*(?P<u1>{_U})?"
-                  rf"(?:\s*[–-]\s*(?P<hi>{NUM})\s*(?P<u2>{_U})?)?")
+_QTY = re.compile(rf"^\s*(?:(?i:optional):\s*)?(?P<lo>{NUMW})\s*(?P<u1>{_U})?"
+                  rf"(?:\s*[–-]\s*(?P<hi>{NUMW})\s*(?P<u2>{_U})?)?")
 _NOTE = re.compile(r"\*\(.*?\)\*")
 
 

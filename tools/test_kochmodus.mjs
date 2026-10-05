@@ -107,6 +107,8 @@ t("Neu kochen: Haken, Timer, Einkauf weg; Notiz, Faktor, Wahl bleiben", () => {
 t("Timer rezeptübergreifend: Herkunft nur bei fremdem Rezept, Kurztitel", () => {
   assert.equal(shortTitle("🚧 Bò lúc lắc — vietnamesisches „Shaking Beef“ (4 Portionen)"), "Bò lúc lắc");
   assert.equal(shortTitle("Degustationsmenü — Hochzeitstag (4 Personen)"), "Degustationsmenü");
+  assert.equal(shortTitle("Bouillabaisse mit Fenchel-Orange-Salat (2 Erwachsene + Kind)"), "Bouillabaisse mit Fenchel-Orange-Salat");
+  assert.equal(shortTitle("Bouillabaisse mit Fenchel-Orange-Salat (Schwangerschafts-Version, 2 Erwachsene + Kind)"), "Bouillabaisse mit Fenchel-Orange-Salat (Schwangerschafts-Version)");
   const t = { id: "a", end: 1, recipe: "gerichte/bo-luc-lac", recipeTitle: "Bò lúc lắc", stepText: "8. Chargen braten" };
   assert.deepEqual(timerOrigin(t, "gerichte/bo-luc-lac"), { foreign: false, text: "8. Chargen braten" });
   assert.deepEqual(timerOrigin(t, "backen/vollkornbroetchen"), { foreign: true, text: "Bò lúc lắc · 8. Chargen braten" });

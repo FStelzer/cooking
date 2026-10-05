@@ -164,6 +164,36 @@ t("Uhrzeit-Zeitplan: Gang serviert in seiner letzten Phase, gangübergreifende E
 t("Dosierung: Eigelb als Einheit, Umlaut-Plural", lambda: (
     assert_([(d["ref"], d["amount"]["text"]) for d in CS["gang-2-ente-starten"]["ingredients"]] == [("entenbrueste", "2 Entenbrüste"), ("eier", "4 Eigelb"), ("zucker", "80g Zucker")], CS["gang-2-ente-starten"]["ingredients"]),
     assert_(CS["gang-1-langsam-erwaermen"]["ingredients"][0]["ref"] == "granny-smith-aepfel")))
+DOSES = """# Test (2 Portionen)
+
+*Varianten: Mehl = Weizen | Dinkel*
+
+## Einkaufsliste
+
+### Aldi / REWE
+- [ ] 500 g Tomaten
+- [ ] 6 Eier
+- [ ] 1 kg Zucker
+- [ ] 1 Lammschulter
+- [ ] 500 g Lammknochen
+- [ ] 1 kg Mehl
+
+## Zubereitung
+
+**1. Füllung (5 Min.)**
+400 g der Tomaten würfeln. 2 Eiweiß steif schlagen, Zucker einrieseln lassen. Lammschulter (2–2,2 kg mit Knochen) salzen.
+
+**2. Teig (5 Min.)**
+2 gehäufte EL Mehl (Dinkel: 3 EL) einrühren.
+"""
+d, _ = parse_recipe(DOSES, "test/dosen")
+DS = steps_of(d)
+from tools.recipes.shopping import parse_qty  # noqa: E402
+t("Dosierungen: Artikel nach der Menge, Einheit als Zutat, Präposition stoppt, Größenwort im Mengenteil", lambda: (
+    assert_([(x["ref"], x["amount"]["text"]) for x in DS["fuellung"]["ingredients"]]
+            == [("tomaten", "400 g der Tomaten"), ("eier", "2 Eiweiß"), ("lammschulter", "2–2,2 kg")], DS["fuellung"]["ingredients"]),
+    assert_(DS["teig"]["alts"][0]["baseQty"] == "2 gehäufte EL" and DS["teig"]["alts"][0]["options"][0].get("qty") is True, DS["teig"]["alts"]),
+    assert_(parse_qty("1–1½ EL") == (1.0, 1.5, "EL"), parse_qty("1–1½ EL"))))
 print(f"{n} Tests ok")
 if lint.msgs or mlint.msgs:
     print("Lint (Gericht):", *lint.msgs, sep="\n  ") if lint.msgs else None

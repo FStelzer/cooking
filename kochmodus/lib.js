@@ -159,8 +159,14 @@ export function normalizeState(raw) {
 export function normalizeTimers(raw) {
   return (Array.isArray(raw) ? raw : []).filter((t) => t && typeof t === "object" && typeof t.end === "number" && t.id != null);
 }
-// Kurzname fürs Dock: „Bò lúc lắc — vietnamesisches …“ → „Bò lúc lắc“
-export const shortTitle = (title) => String(title || "").split(/\s[—–]\s/)[0].replace(/\s*\([^)]*\)\s*$/, "").replace(/^🚧\s*/, "").trim();
+// Kurzname fürs Dock: „Bò lúc lắc — vietnamesisches …“ → „Bò lúc lắc“. Die Schluss-Klammer fällt weg, wenn sie die
+// Ausbeute nennt („(4 Portionen)“); eine Fassung bleibt unterscheidbar: „Bouillabaisse … (Schwangerschafts-Version)“.
+export function shortTitle(title) {
+  const t = String(title || "").replace(/^🚧\s*/, "");
+  const head = t.split(/\s[—–]\s/)[0].replace(/\s*\([^)]*\)\s*$/, "").trim();
+  const paren = /\(([^)]*)\)\s*$/.exec(t)?.[1].split(",")[0].trim();
+  return paren && !/^\d/.test(paren) ? `${head} (${paren})` : head;
+}
 // Zweite Zeile im Dock: Herkunftsrezept nur, wenn der Timer aus einem anderen Rezept stammt
 export function timerOrigin(t, currentId) {
   const foreign = t.recipe && t.recipe !== currentId;

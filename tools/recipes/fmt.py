@@ -3,7 +3,11 @@ from __future__ import annotations
 
 FRACTIONS = {0.5: "½", 0.25: "¼", 0.75: "¾"}
 FRACTION_VALUES = {v: k for k, v in FRACTIONS.items()} | {"⅓": .33}
-FRAC_NUM = r"\d*[½¼¾⅓]"  # „½“, „1½“ — Zahl mit Bruchzeichen
+# Zahlen-Grammatik (einzige Stelle): „½“, „1½“, „2,5“; Spanne „4–5“; Zirka-Präfix „ca. “ oder „\~“
+NUMW = r"(?:\d*[½¼¾⅓]|\d+(?:[,.]\d+)?)"
+RANGE = rf"{NUMW}(?:\s?[–-]\s?{NUMW})?"
+APPROX = r"(?:ca\.\s?|\\?~)?"
+SIZE_WORD = r"(?:\s(?:kleine|große|gute|gehäufte|gestrichene)[nrs]?)?"  # „2 gehäufte EL“
 COUNT_UNIT = "Stück"  # kanonische Einheit für Zählmengen; wird in der Anzeige weggelassen
 
 
