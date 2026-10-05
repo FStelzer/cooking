@@ -182,6 +182,7 @@ def ingredient_id(name: str, ings: list[dict], lint: Lint) -> str | None:
     nackte Name die kurze Kennung, der qualifizierte bekommt den ganzen Kernnamen („brauner-zucker“) —
     egal in welcher Reihenfolge sie stehen. Gleicher Kernname = Dublette."""
     iid, full = slugify(head_noun(name)), slugify(name_core(name))
+    iid = ALIASES.get(iid, iid)  # „1 Ei“ heißt eier, damit „1 Eigelb“ im Text es dosiert
     taken = {i["id"]: i for i in ings}
     if iid not in taken:
         return iid
@@ -464,6 +465,8 @@ DOSE_STOP = PREP_STOP | {"die", "der", "den", "das", "dem", "und"}  # Artikel er
 def best_match(cand: str, idx: list[tuple[str, str]]):
     """Zutatenwort zu einem Textwort (ohne Phrasen): Alias > exakt > Textwort beginnt mit Zutatenwort („Limettensaft“)
     > Zutatenwort endet auf Textwort („Sellerie“ → Knollensellerie) > Beugung (höchstens 2 Zeichen länger)."""
+    if cand in ALIASES and any(iid == ALIASES[cand] for _, iid in idx):
+        return ALIASES[cand], ALIASES[cand]  # „1 Eigelb“ → Posten „1 Ei“ (Kennung eier)
     cand = ALIASES.get(cand, cand).translate(UMLAUT_FOLD)  # Umlaut-Plural: Apfel ↔ Äpfel
     words = [(w.translate(UMLAUT_FOLD), iid) for w, iid in idx if " " not in w]
     for part in dict.fromkeys([cand] + [p for p in re.split(r"[-/]", cand) if len(p) >= 4]):
