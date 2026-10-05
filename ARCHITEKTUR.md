@@ -117,10 +117,14 @@ eingefrorene Hand-Annotationen als Paritäts-Soll für `cli diff`, keine Quelle.
 - **Kochmodus:** November-Menü (Gang 2) als Testlauf kochen, Dauern messen und
   `estimated` ablösen; „Claude zum Schritt fragen“ (zurückgestellt, bessere Integration
   später); Personen-Multiplikator, sobald mehr Rezepte Mengen pro Person haben.
-- **Rezepte:** Gesamtzeit-Kopfzeilen nach Check P nachtragen (Bò lúc lắc \~2:25,
-  Dal \~0:45, Brötchen); übrige \~25 Rezepte bekommen JSON, wenn sie über
-  `/rezept normalisieren` angefasst werden (Bulgogi als nächster Praxistest);
-  Ermessensfelder (L5) beim Bearbeiten markieren.
+- **Rezepte:** Seit 10/2026 haben alle Rezepte ein JSON, auch die drei Komponenten-Rezepte
+  unter `technik/` (Pfannkuchen, Teriyaki, Bratensauce). Ohne JSON bleiben nur die
+  Spickzettel und `schwangerschaft/leitfaden.md`. Offen: Gesamtzeit-Kopfzeilen nach Check P
+  nachtragen (Bò lúc lắc \~2:25, Dal \~0:45, Brötchen); Ermessensfelder (L5) beim
+  Bearbeiten markieren.
+- **Technik:** Check P vergleicht bei mehrtägigen Rezepten (Mezze „gesamt 3 Tage“,
+  Bratensauce „\~2 Tage“) den Pfad über die Schritt-Kanten mit der Kalenderdauer und warnt
+  dann immer; die Tagesgrenzen aus dem Zeitplan fehlen im Pfad.
 - **Technik:** Check H modelliert bei Uhrzeit-Menüs das Ende der Servier-Phase nicht
   (Aufgaben, die in die nächste Phase laufen, bleiben unbemerkt); Check D und P teilen
   sich die Vorgänger-Regel nicht; Zeitplan-Grammatik steht in Parser und Check F doppelt.
