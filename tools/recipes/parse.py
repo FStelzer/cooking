@@ -453,7 +453,7 @@ def ingredient_index(ingredients: list[dict]) -> list[tuple[str, str]]:
 
 
 DOSE_RE = re.compile(
-    rf"(?P<times>\d+)\s?×\s?|(?P<je>je\s+)?(?P<lo>{NUMW})(?:\s?[–-]\s?(?P<hi>{NUMW}))?{SIZE_WORD}\s?(?P<unit>{'|'.join(DOSE_UNITS)})?(?:\s?\((?:ca\.\s?)?{NUMW}\s?(?:kg|g|ml)\))?\s+(?P<words>(?:[\wäöüÄÖÜß*-]+\s+){{0,3}}?[\wäöüÄÖÜß*/-]+)"
+    rf"(?P<times>\d+)\s?×\s?|(?P<je>je\s+)?(?P<lo>{NUMW})(?:\s?[–-]\s?(?P<hi>{NUMW}))?{SIZE_WORD}\s?(?P<unit>{'|'.join(DOSE_UNITS)})?(?:\s?\({APPROX}\s?{NUMW}\s?(?:kg|g|ml|EL|TL)\))?\s+(?P<words>(?:[\wäöüÄÖÜß*-]+\s+){{0,3}}?[\wäöüÄÖÜß*/-]+)"
 )
 
 

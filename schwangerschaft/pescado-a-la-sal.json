@@ -489,7 +489,7 @@
                   "amount": {
                     "text": "3–4 Eiweiß",
                     "value": 3.0,
-                    "unit": "Stück",
+                    "unit": "Eiweiß",
                     "max": 4.0
                   }
                 },
@@ -1124,8 +1124,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T18:49:22Z",
-    "sourceHash": "cfbb06e0a6964393",
+    "generatedAt": "2026-10-05T19:16:07Z",
+    "sourceHash": "3ac0a66ee0673c10",
     "select": {
       "garen": "ofen"
     },
@@ -1271,10 +1271,10 @@
       {
         "ingredient": "eier",
         "total": {
-          "text": "3–4",
+          "text": "3–4 Eiweiß",
           "value": 3.0,
           "max": 4.0,
-          "unit": "Stück",
+          "unit": "Eiweiß",
           "approx": false
         },
         "perTask": {
@@ -1615,13 +1615,13 @@
             "ingredient": "eier",
             "name": "Eier",
             "need": {
-              "text": "3–4",
+              "text": "3–4 Eiweiß",
               "value": 3.0,
               "max": 4.0,
-              "unit": "Stück",
+              "unit": "Eiweiß",
               "approx": false
             },
-            "display": "3–4",
+            "display": "3–4 Eiweiß",
             "inStock": false,
             "buy": {
               "text": "4"
@@ -1953,10 +1953,10 @@
           {
             "ingredient": "eier",
             "total": {
-              "text": "3–4",
+              "text": "3–4 Eiweiß",
               "value": 3.0,
               "max": 4.0,
-              "unit": "Stück",
+              "unit": "Eiweiß",
               "approx": false
             },
             "perTask": {
@@ -2297,13 +2297,13 @@
                 "ingredient": "eier",
                 "name": "Eier",
                 "need": {
-                  "text": "3–4",
+                  "text": "3–4 Eiweiß",
                   "value": 3.0,
                   "max": 4.0,
-                  "unit": "Stück",
+                  "unit": "Eiweiß",
                   "approx": false
                 },
-                "display": "3–4",
+                "display": "3–4 Eiweiß",
                 "inStock": false,
                 "buy": {
                   "text": "4"

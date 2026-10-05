@@ -204,6 +204,7 @@ GAPS = """# Test (2 Portionen)
 - [ ] 1 Pck. Vanillezucker
 - [ ] 1 Kopf Brokkoli
 - [ ] 1 Ei
+- [ ] 1 Tube Tomatenmark
 
 ## Zubereitung
 
@@ -211,6 +212,7 @@ GAPS = """# Test (2 Portionen)
 Aufgetauten Oktopus (\\~1,2–1,5 kg) abspülen. 1 Zweig Estragon, 1 Pck. Vanillezucker und 1 Kopf Brokkoli dazu.
 Estragon in 4–5 mm Scheiben, 1 Brokkoli.
 1 Eigelb verrühren.
+40 g (2 EL) Tomatenmark einrühren.
 """
 g, _ = parse_recipe(GAPS, "test/luecken")
 GS = steps_of(g)
@@ -220,6 +222,7 @@ t("Welle 1: Dauer-Summe, Klammer-Menge mit \\~, Gebinde-Einheiten", lambda: (
     assert_({x["ref"]: x["amount"].get("max") for x in GS["pickle"]["ingredients"]}.get("oktopus") == 1.5, GS["pickle"]["ingredients"]),
     assert_(not any("mm" in x["amount"]["text"] for x in GS["pickle"]["ingredients"]), GS["pickle"]["ingredients"]),
     assert_(any(x["ref"] == "eier" and x["amount"]["text"] == "1 Eigelb" for x in GS["pickle"]["ingredients"]), GS["pickle"]["ingredients"]),
+    assert_(any(x["ref"] == "tomatenmark" and x["amount"]["text"] == "40 g (2 EL) Tomatenmark" for x in GS["pickle"]["ingredients"]), GS["pickle"]["ingredients"]),
     assert_([i["id"] for i in g["ingredients"]][:5] == ["oktopus", "estragon", "vanillezucker", "brokkoli", "eier"], [i["id"] for i in g["ingredients"]])))
 print(f"{n} Tests ok")
 if lint.msgs or mlint.msgs:
