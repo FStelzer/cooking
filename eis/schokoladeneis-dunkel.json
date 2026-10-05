@@ -1,0 +1,823 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "eis/schokoladeneis-dunkel",
+  "kind": "dish",
+  "title": "Dunkles Schokoladeneis — Crème-anglaise-Basis (ca. 1 l, 8–10 Kugeln)",
+  "status": "done",
+  "yields": {
+    "text": "ca. 1 l, 8–10 Kugeln",
+    "value": 1.0,
+    "unit": "l"
+  },
+  "intro": "*Aktive Zeit \\~40 Min., gesamt \\~17–29 Std. (12–24 Std. Reifen im Kühlschrank, \\~30 Min.\nEismaschine, \\~4 Std. Härten). Equipment: Eismaschine, Zucker-/Fett-Topfthermometer\n(Clip an den Topfrand, zwingend für 82–84 °C), Stabmixer, feines Sieb, Schneebesen, flacher\ngefriertauglicher Behälter, große Schüssel fürs Eiswasserbad.*\n\nIntensiv, cremig, nicht zu süß — das Ergebnis liegt näher an gefrorenem Mousse\nau chocolat als an Supermarkt-Schokoeis. Die Basis ist eine klassische Crème\nanglaise (Eigelb, Milch, Sahne, zur Rose abgezogen), in die 70 %-Schokolade\n**und** Kakaopulver emulgiert werden: Die Schokolade bringt Kakaobutter und\nSchmelz, das Kakaopulver die dunkle Bitternote ohne zusätzliche Süße. Dextrose\nersetzt einen Teil des Haushaltszuckers, damit das Eis weniger süß und trotzdem\nlöffelbar bleibt. Das Rezept ist das erste des Eis-Ordners und dient als\n**Leitrezept für die Custard-Basis** — Vanille, Kaffee, Salzkaramell & Co. sind\nVariationen derselben Technik.",
+  "times": {
+    "text": "Aktive Zeit ~40 Min., gesamt ~17–29 Std.",
+    "active": {
+      "typical": "PT40M",
+      "source": "40 Min."
+    },
+    "total": {
+      "min": "PT17H",
+      "max": "PT29H",
+      "source": "17–29 Std."
+    }
+  },
+  "equipment": [
+    "Eismaschine",
+    "Zucker-/Fett-Topfthermometer (Clip an den Topfrand",
+    "zwingend für 82–84 °C)",
+    "Stabmixer",
+    "feines Sieb",
+    "Schneebesen",
+    "flacher gefriertauglicher Behälter",
+    "große Schüssel fürs Eiswasserbad"
+  ],
+  "ingredients": [
+    {
+      "id": "vollmilch",
+      "name": "Vollmilch",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "550 ml"
+      },
+      "note": "3,5 %"
+    },
+    {
+      "id": "schlagsahne",
+      "name": "Schlagsahne",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "200 ml"
+      },
+      "note": "min. 32 %"
+    },
+    {
+      "id": "eier",
+      "name": "Eier",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "5"
+      },
+      "note": "Gr. M, nur Eigelb; Eiweiß einfrieren"
+    },
+    {
+      "id": "zartbitterschokolade",
+      "name": "Zartbitterschokolade 70 %",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "150 g"
+      },
+      "note": "65–72 %, Tafel oder Callets"
+    },
+    {
+      "id": "kakaopulver",
+      "name": "Kakaopulver, ungesüßt",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "20 g"
+      },
+      "note": "stark entölt bevorzugt, schwach entölt okay"
+    },
+    {
+      "id": "dextrose",
+      "name": "Dextrose",
+      "store": "Drogerie",
+      "buy": {
+        "text": "40 g"
+      },
+      "note": "Traubenzucker-Pulver; *Vorrat kaufen (500 g–1 kg),"
+    },
+    {
+      "id": "zucker",
+      "name": "Zucker",
+      "store": "Vorrat",
+      "buy": {
+        "text": "110 g"
+      },
+      "pantry": true
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "¼ TL"
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Warum die Schritte so sind (kurz)",
+      "level": 2,
+      "markdown": "- **82–84 °C, nie über 85 °C.** Darunter bindet das Eigelb nicht voll (dünne,\n  eisige Textur), darüber gerinnt es. Thermometer statt Gefühl — die\n  Fingerstrich-Probe (Notiz unten) ist nur der Fallback.\n- **Emulgieren mit dem Stabmixer** nach dem Einschmelzen der Schokolade ist der\n  Unterschied zwischen körnig und samtig: Die Kakaobutter muss fein verteilt\n  sein, sonst bilden sich beim Gefrieren Fettklümpchen.\n- **12–24 Std. Reifen** lässt Fett und Milchproteine hydratisieren — das Eis\n  wird spürbar cremiger und schmilzt langsamer. Hobbyrezepte überspringen das,\n  Profis nie.\n- **Dextrose** senkt den Gefrierpunkt etwa doppelt so stark wie Haushaltszucker\n  bei nur \\~70 % der Süße. Deshalb: weniger süß, weicher. (Und trotzdem ist\n  Schokoeis das härteste Eis der Custard-Familie — siehe Learnings.)\n- **Schnell kühlen im Eiswasserbad**, statt die Masse langsam im Kühlschrank\n  abkühlen zu lassen: hygienisch (Ei-Masse zügig aus dem 20–60 °C-Bereich) und\n  besser für die Textur."
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Dextrose (Traubenzucker-Pulver):** Drogerie (dm/Rossmann, „Traubenzucker\n  Pulver\") oder Apotheke; online 1 kg für wenige Euro — lohnt sich, denn jedes\n  weitere Eisrezept braucht sie. Alternativen: 40 g Glukosesirup oder 30 g\n  Invertzucker. Nur Haushaltszucker geht auch (dann 140 g gesamt), wird aber\n  härter und süßer.\n- **Schokolade 65–72 %:** REWE hat Lindt 70 %/Edelbitter-Tafeln; besser sind\n  Kuvertüre-Callets (Callebaut 70-30-38, Valrhona Guanaja 70 %) online oder im\n  Backfachhandel — gleichmäßiger Schmelz, und für Ganache/Cheesecake ohnehin\n  nützlich. Kein Kakao mit Zucker (Trinkschokolade), keine Schokolade unter\n  60 %.\n- **Kakaopulver, stark entölt (10–12 % Fett):** Supermarkt-Backkakao (Dr.\n  Oetker & Co.) ist meist *schwach* entölt (20–22 %). Bei 20 g im Rezept ist der\n  Unterschied klein (\\~2 g Fett) — schwach entölt funktioniert, stark entölt\n  (Bensdorp, de Zaan; Bio-Regal, online) gibt die etwas dunklere, herbere\n  Note. Nicht kaufkritisch.\n- **Sahne ≥ 32 %:** Standard-Schlagsahne hat 30–33 % — REWE „Schlagsahne 32 %\"\n  oder Bio-Sahne nehmen, keine 30 %-Sprühsahne.\n- **Eiweiß-Rest:** 5 Eiweiß bleiben übrig — in der Eiswürfelform einfrieren\n  (1 Eiweiß ≈ 30–35 g) oder direkt Baiser/Financiers.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Dunkles Schokoladeneis — Crème-anglaise-Basis (ca. 1 l, 8–10 Kugeln)",
+          "steps": [
+            {
+              "id": "vorbereitung",
+              "label": "1",
+              "heading": "**1. Vorbereitung (5 Min.)**",
+              "title": "Vorbereitung",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Behälter fürs fertige Eis (flach, \\~1,2 l) ins Gefrierfach. Eismaschine (Medion-Kompressor, 1,5 l) vor „Gefrieren“ \\~10 Min. leer vorkühlen lassen. Große Schüssel mit Eiswasser bereitstellen. 150 g Schokolade fein hacken (Callets: so lassen).",
+              "action": "Behälter fürs fertige Eis (flach, \\~1,2 l) ins Gefrierfach.",
+              "timers": [
+                {
+                  "label": "Vorbereitung",
+                  "duration": {
+                    "typical": "PT10M",
+                    "estimated": true
+                  },
+                  "text": "\\~10 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "zartbitterschokolade",
+                  "amount": {
+                    "text": "150 g Schokolade",
+                    "value": 150.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "kakao-einruehren",
+              "label": "2",
+              "heading": "**2. Kakao einrühren (5 Min.)**",
+              "title": "Kakao einrühren",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "550 ml Vollmilch, 200 ml Sahne und ¼ TL Salz (\\~1,5 g) in einem Topf erhitzen, bis es dampft — nicht kochen (\\~80 °C). 20 g Kakaopulver mit dem Schneebesen glatt einrühren, bis keine Klümpchen mehr da sind. Vom Herd nehmen.",
+              "action": "550 ml Vollmilch, 200 ml Sahne und ¼ TL Salz (\\~1,5 g) in einem Topf erhitzen, bis es dampft — nicht kochen (\\~80 °C).",
+              "cues": [
+                "bis es dampft"
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "80 °C",
+                  "value": 80
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "vollmilch",
+                  "amount": {
+                    "text": "550 ml Vollmilch",
+                    "value": 550.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "schlagsahne",
+                  "amount": {
+                    "text": "200 ml Sahne",
+                    "value": 200.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "¼ TL Salz",
+                    "value": 0.25,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "kakaopulver",
+                  "amount": {
+                    "text": "20 g Kakaopulver",
+                    "value": 20.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "eigelb-aufschlagen",
+              "label": "3",
+              "heading": "**3. Eigelb aufschlagen (3 Min.)**",
+              "title": "Eigelb aufschlagen",
+              "duration": {
+                "typical": "PT3M",
+                "source": "3 Min."
+              },
+              "text": "5 Eigelb mit 110 g Zucker und 40 g Dextrose in einer Schüssel hell und cremig aufschlagen (Schneebesen oder Handmixer, \\~2 Min.).",
+              "action": "5 Eigelb mit 110 g Zucker und 40 g Dextrose in einer Schüssel hell und cremig aufschlagen (Schneebesen oder Handmixer, \\~2 Min.).",
+              "timers": [
+                {
+                  "label": "Eigelb aufschlagen",
+                  "duration": {
+                    "typical": "PT2M",
+                    "estimated": true
+                  },
+                  "text": "\\~2 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "eier",
+                  "amount": {
+                    "text": "5 Eigelb",
+                    "value": 5.0,
+                    "unit": "Eigelb"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "110 g Zucker",
+                    "value": 110.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "dextrose",
+                  "amount": {
+                    "text": "40 g Dextrose",
+                    "value": 40.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "angleichen",
+              "label": "4",
+              "heading": "**4. Angleichen (2 Min.)**",
+              "title": "Angleichen",
+              "duration": {
+                "typical": "PT2M",
+                "source": "2 Min."
+              },
+              "text": "Die heiße Kakao-Milch unter ständigem Rühren in dünnem Strahl zu den Eigelben gießen (erst \\~100 ml, dann zügiger). Alles zurück in den Topf.",
+              "action": "Die heiße Kakao-Milch unter ständigem Rühren in dünnem Strahl zu den Eigelben gießen (erst \\~100 ml, dann zügiger).",
+              "ingredients": [],
+              "meta": "*nach Kakao einrühren, Eigelb aufschlagen*",
+              "attention": "active",
+              "after": [
+                "step:kakao-einruehren",
+                "step:eigelb-aufschlagen"
+              ]
+            },
+            {
+              "id": "zur-rose-abziehen",
+              "label": "5",
+              "heading": "**5. Zur Rose abziehen (8–12 Min.)**",
+              "title": "Zur Rose abziehen",
+              "duration": {
+                "min": "PT8M",
+                "max": "PT12M",
+                "source": "8–12 Min."
+              },
+              "text": "Bei kleiner bis mittlerer Hitze unter ständigem Rühren mit dem Spatel (Boden und Ecken!) auf **82–84 °C** bringen. Die Masse ist fertig, wenn sie dicklich ist und ein Strich auf dem Spatel stehen bleibt. **Nie über 85 °C** — sonst gerinnt das Eigelb. Bei Unsicherheit lieber bei 82 °C vom Herd, der Topf gibt noch Wärme nach.",
+              "action": "Bei kleiner bis mittlerer Hitze unter ständigem Rühren mit dem Spatel (Boden und Ecken!) auf **82–84 °C** bringen.",
+              "limits": [
+                "82–84 °C",
+                "Nie über 85 °C"
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "82–84 °C",
+                  "min": 82,
+                  "max": 84
+                },
+                {
+                  "kind": "max",
+                  "text": "85 °C",
+                  "value": 85
+                },
+                {
+                  "kind": "ziel",
+                  "text": "82 °C",
+                  "value": 82
+                }
+              ],
+              "ingredients": [],
+              "attention": "active"
+            },
+            {
+              "id": "schokolade-emulgieren",
+              "label": "6",
+              "heading": "**6. Schokolade emulgieren (3 Min.)**",
+              "title": "Schokolade emulgieren",
+              "duration": {
+                "typical": "PT3M",
+                "source": "3 Min."
+              },
+              "text": "Die 150 g gehackte Schokolade in eine Schüssel geben, die heiße Crème durch ein feines Sieb darüber gießen (fängt eventuelle Ei-Flöckchen ab). 1 Min. stehen lassen, dann mit dem Stabmixer 30 Sek. glatt emulgieren — der Mixer bleibt dabei unter der Oberfläche, damit keine Luft eingeschlagen wird.",
+              "action": "Die 150 g gehackte Schokolade in eine Schüssel geben, die heiße Crème durch ein feines Sieb darüber gießen (fängt eventuelle Ei-Flöckchen ab).",
+              "timers": [
+                {
+                  "label": "Schokolade emulgieren",
+                  "duration": {
+                    "typical": "PT1M"
+                  },
+                  "text": "1 Min."
+                },
+                {
+                  "label": "Schokolade emulgieren",
+                  "duration": {
+                    "typical": "PT30S"
+                  },
+                  "text": "30 Sek."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "zartbitterschokolade",
+                  "amount": {
+                    "text": "150 g gehackte Schokolade",
+                    "value": 150.0,
+                    "unit": "g"
+                  },
+                  "reuse": true
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "schnell-kuehlen",
+              "label": "7",
+              "heading": "**7. Schnell kühlen (10–15 Min.)**",
+              "title": "Schnell kühlen",
+              "duration": {
+                "min": "PT10M",
+                "max": "PT15M",
+                "source": "10–15 Min."
+              },
+              "text": "Schüssel ins Eiswasserbad stellen und gelegentlich rühren, bis die Masse unter 20 °C ist. Abgedeckt in den Kühlschrank.",
+              "action": "Schüssel ins Eiswasserbad stellen und gelegentlich rühren, bis die Masse unter 20 °C ist.",
+              "cues": [
+                "bis die Masse unter 20 °C ist"
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "20 °C",
+                  "value": 20
+                }
+              ],
+              "ingredients": [],
+              "attention": "active"
+            },
+            {
+              "id": "reifen-lassen",
+              "label": "8",
+              "heading": "**8. Reifen lassen (12–24 Std., passiv)**",
+              "title": "Reifen lassen",
+              "duration": {
+                "min": "PT12H",
+                "max": "PT24H",
+                "source": "12–24 Std."
+              },
+              "attention": "passive",
+              "text": "Mindestens 12 Std., ideal 24 Std. im Kühlschrank reifen — nicht abkürzen.",
+              "action": "Mindestens 12 Std., ideal 24 Std. im Kühlschrank reifen — nicht abkürzen.",
+              "timers": [
+                {
+                  "label": "Reifen lassen",
+                  "duration": {
+                    "typical": "PT12H"
+                  },
+                  "text": "12 Std."
+                },
+                {
+                  "label": "Reifen lassen",
+                  "duration": {
+                    "typical": "PT24H"
+                  },
+                  "text": "24 Std."
+                }
+              ],
+              "ingredients": []
+            },
+            {
+              "id": "gefrieren",
+              "label": "9",
+              "heading": "**9. Gefrieren (\\~30–40 Min., passiv)**",
+              "title": "Gefrieren",
+              "duration": {
+                "min": "PT30M",
+                "max": "PT40M",
+                "source": "\\~30–40 Min.",
+                "estimated": true
+              },
+              "attention": "passive",
+              "text": "Masse nochmals kurz mit dem Stabmixer durchmixen (sie ist nach dem Reifen puddingartig fest) und in die vorgekühlte, laufende Eismaschine geben. Rühren, bis die Konsistenz wie festes Softeis ist (\\~−5 °C; die Masse zieht sich vom Rand und türmt sich am Rührer).",
+              "action": "Masse nochmals kurz mit dem Stabmixer durchmixen (sie ist nach dem Reifen puddingartig fest) und in die vorgekühlte, laufende Eismaschine geben.",
+              "cues": [
+                "bis die Konsistenz wie festes Softeis ist (\\~−5 °C"
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "5 °C",
+                  "value": 5
+                }
+              ],
+              "ingredients": [],
+              "timers": [
+                {
+                  "label": "Gefrieren",
+                  "duration": {
+                    "min": "PT30M",
+                    "max": "PT40M"
+                  },
+                  "text": "\\~30–40 Min."
+                }
+              ]
+            },
+            {
+              "id": "haerten",
+              "label": "10",
+              "heading": "**10. Härten (\\~4 Std., passiv)**",
+              "title": "Härten",
+              "duration": {
+                "typical": "PT4H",
+                "source": "\\~4 Std.",
+                "estimated": true
+              },
+              "attention": "passive",
+              "text": "Sofort in den vorgefrorenen, flachen Behälter füllen, Oberfläche mit Frischhaltefolie direkt abdecken (gegen Eiskristalle), Deckel drauf und im Gefrierfach durchfrieren. Zum Servieren **10–15 Min.** vorher herausnehmen (Schokoeis braucht länger als Vanille, siehe Learnings), Kugeln mit einem in heißes Wasser getauchten Löffel formen.",
+              "action": "Sofort in den vorgefrorenen, flachen Behälter füllen, Oberfläche mit Frischhaltefolie direkt abdecken (gegen Eiskristalle), Deckel drauf und im Gefrierfach durchfrieren.",
+              "limits": [
+                "10–15 Min."
+              ],
+              "timers": [
+                {
+                  "label": "Härten",
+                  "duration": {
+                    "min": "PT10M",
+                    "max": "PT15M"
+                  },
+                  "text": "10–15 Min."
+                }
+              ],
+              "ingredients": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Kind",
+      "level": 2,
+      "markdown": "Isst direkt mit — kein Alkohol, keine Schärfe. 70 %-Schokolade ist für Kinder\noft bitterer als gewohnt; wenn es nicht ankommt, ist die Kinder-Variante nicht\n„weniger Kakao\", sondern ein zweites Eis (Vanille aus derselben Basis, siehe\nBacklog „Eis\" in `ideen.md`). Schwangerschaft/GDM: Eigelb ist durchgegart, aber\nals Zucker-Dessert bewusst kein Kandidat für `schwangerschaft/` (siehe\nLeitfaden).",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "learnings",
+      "title": "Learnings",
+      "cooked": "09/2026",
+      "summary": "**Gemacht 09/2026.** Fantastisch — intensiv, cremig, nicht zu süß, schmeckt fast wie gefrorenes Mousse au chocolat. Rezept hat auf Anhieb funktioniert, Technik (Crème anglaise auf 82–84 °C, Stabmixer-Emulsion, 24 Std. Reifen) ist gesetzt und wird die Basis für weitere Custard-Eissorten. Einziger Punkt: **recht hart gefroren** — bei Schokoeis erwartbar (Kakaobutter setzt im Gefrierfach steinhart aus, Kakaofeststoffe binden Wasser, und dieses Rezept ist bewusst zuckerarm), aber verbesserbar. Fürs nächste Mal eine Stellschraube testen (Dextrose 40 → 60 g als erster Versuch; Details im Rezept), nicht mehrere gleichzeitig.",
+      "details": "### Härte — Ursache und Stellschrauben\n\n- **Warum härter als Vanille aus derselben Basis:** 150 g 70 %-Schokolade bringen\n  \\~55–60 g Kakaobutter mit, die bei −18 °C komplett kristallisiert; dazu\n  binden Kakaofeststoffe (Schokolade + 20 g Kakao) freies Wasser. Beides macht\n  fester, unabhängig von der Zuckermenge. Und die Zuckermenge ist hier mit\n  110 g + 40 g Dextrose auf \\~1,1 kg Masse eher am unteren Ende — genau das\n  macht es „nicht zu süß\", aber auch härter.\n- **Stellschrauben (ungetestet, je einzeln probieren):**\n  1. **Dextrose 40 → 60 g**, Zucker bleibt 110 g. Mehr Gefrierpunktsenkung bei\n     kaum mehr Süße — der sauberste Hebel und der erste Versuch.\n  2. **20 g Zucker durch 20–25 g Invertzucker oder flüssigen Honig ersetzen.**\n     Ähnlicher Effekt, Honig bringt aber Eigengeschmack.\n  3. **1 EL (15 ml) Rum oder Cognac** in „Schnell kühlen“ einrühren — klassischer\n     Profi-Trick, klar spürbar in der Löffelbarkeit. **Nicht in der\n     Schwangerschaft, nicht fürs Kind** → erst nach der Geburt eine Option.\n  4. **Servieren:** 10–15 Min. antauen (statt 5–10) und einen flachen Behälter\n     nutzen, damit das Eis gleichmäßig weich wird. Kein Rezeptfix, aber ohne\n     Nebenwirkung.\n- **Was nicht der Hebel ist:** weniger Schokolade oder weniger Kakao. Das würde\n  weicher machen, aber die Intensität ist der Punkt des Rezepts. Mehr Zucker\n  (140 g Haushaltszucker ohne Dextrose) macht weicher, aber deutlich süßer —\n  das war die Original-Notiz und ist bewusst nicht der Weg."
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen & Varianten",
+      "level": 2,
+      "markdown": "- **Ohne Thermometer** (Notfall): Die Crème ist fertig, wenn sie beim Rühren am\n  Spatel haftet und ein Fingerstrich darauf nicht zusammenläuft. Mit\n  Thermometer ist das aber deutlich reproduzierbarer — das Topfthermometer\n  am Rand eingeklippt hat sich bewährt (Spitze darf den Boden nicht berühren,\n  sonst misst es den Topf statt die Crème); Fleischthermometer geht notfalls\n  auch.\n- **Ausbeute und Maschine:** \\~1,1 kg Masse → mit Luftaufschlag 1–1,3 l Eis.\n  Passt in einem Durchgang in den 1,5-l-Behälter der Medion-Kompressormaschine\n  (bewährt 09/2026); der Behälter ist damit gut gefüllt, mehr Masse nicht\n  ansetzen. Kompressor-Maschine mit 150 W braucht für diese Menge eher 30–40\n  Min. als 20 — lieber auf die Konsistenz achten als auf die Uhr.\n- **Haltbarkeit:** Im Gefrierfach 2–3 Wochen ohne Qualitätsverlust; danach\n  wird es langsam kristalliner (Haushaltsgefrierfächer haben Temperatur-\n  schwankungen, die Profi-Tiefkühler nicht haben).\n- **Varianten aus derselben Basis** (jeweils eigene Datei, wenn konkret —\n  siehe Backlog „Eis\" in `ideen.md`): Vanille (Schokolade + Kakao raus, 1\n  Vanilleschote in „Kakao einrühren“, Zucker 130 g), Salzkaramell, Kaffee, Pistazie\n  (Pistazienmus 100 % statt Schokolade — Learning aus dem Cheesecake).",
+      "tags": [
+        "notizen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T18:38:39Z",
+    "sourceHash": "0184c44a3e7a189a",
+    "quantities": [
+      {
+        "ingredient": "vollmilch",
+        "total": {
+          "text": "550 ml",
+          "value": 550.0,
+          "max": 550.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "550 ml Vollmilch"
+        }
+      },
+      {
+        "ingredient": "schlagsahne",
+        "total": {
+          "text": "200 ml",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "200 ml Sahne"
+        }
+      },
+      {
+        "ingredient": "eier",
+        "total": {
+          "text": "5 Eigelb",
+          "value": 5.0,
+          "max": 5.0,
+          "unit": "Eigelb",
+          "approx": false
+        },
+        "perTask": {
+          "main": "5 Eigelb"
+        }
+      },
+      {
+        "ingredient": "zartbitterschokolade",
+        "total": {
+          "text": "150 g",
+          "value": 150.0,
+          "max": 150.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "150 g Schokolade"
+        }
+      },
+      {
+        "ingredient": "kakaopulver",
+        "total": {
+          "text": "20 g",
+          "value": 20.0,
+          "max": 20.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "20 g Kakaopulver"
+        }
+      },
+      {
+        "ingredient": "dextrose",
+        "total": {
+          "text": "40 g",
+          "value": 40.0,
+          "max": 40.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "40 g Dextrose"
+        }
+      },
+      {
+        "ingredient": "zucker",
+        "total": {
+          "text": "110 g",
+          "value": 110.0,
+          "max": 110.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "110 g Zucker"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "¼ TL",
+          "value": 0.25,
+          "max": 0.25,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "¼ TL Salz"
+        }
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Aldi / REWE",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "vollmilch",
+            "name": "Vollmilch",
+            "need": {
+              "text": "550 ml",
+              "value": 550.0,
+              "max": 550.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "550 ml",
+            "inStock": false,
+            "buy": {
+              "text": "550 ml"
+            },
+            "note": "3,5 %"
+          },
+          {
+            "ingredient": "schlagsahne",
+            "name": "Schlagsahne",
+            "need": {
+              "text": "200 ml",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "200 ml",
+            "inStock": false,
+            "buy": {
+              "text": "200 ml"
+            },
+            "note": "min. 32 %"
+          },
+          {
+            "ingredient": "eier",
+            "name": "Eier",
+            "need": {
+              "text": "5 Eigelb",
+              "value": 5.0,
+              "max": 5.0,
+              "unit": "Eigelb",
+              "approx": false
+            },
+            "display": "5 Eigelb",
+            "inStock": false,
+            "buy": {
+              "text": "5"
+            },
+            "note": "Gr. M, nur Eigelb; Eiweiß einfrieren"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "zartbitterschokolade",
+            "name": "Zartbitterschokolade 70 %",
+            "need": {
+              "text": "150 g",
+              "value": 150.0,
+              "max": 150.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "150 g",
+            "inStock": false,
+            "buy": {
+              "text": "150 g"
+            },
+            "note": "65–72 %, Tafel oder Callets"
+          },
+          {
+            "ingredient": "kakaopulver",
+            "name": "Kakaopulver, ungesüßt",
+            "need": {
+              "text": "20 g",
+              "value": 20.0,
+              "max": 20.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "20 g",
+            "inStock": false,
+            "buy": {
+              "text": "20 g"
+            },
+            "note": "stark entölt bevorzugt, schwach entölt okay"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "zucker",
+            "name": "Zucker",
+            "need": {
+              "text": "110 g",
+              "value": 110.0,
+              "max": 110.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "110 g",
+            "inStock": false,
+            "buy": {
+              "text": "110 g"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "¼ TL",
+              "value": 0.25,
+              "max": 0.25,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "¼ TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "¼ TL"
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      },
+      {
+        "store": "Drogerie",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "dextrose",
+            "name": "Dextrose",
+            "need": {
+              "text": "40 g",
+              "value": 40.0,
+              "max": 40.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "40 g",
+            "inStock": false,
+            "buy": {
+              "text": "40 g"
+            },
+            "note": "Traubenzucker-Pulver; *Vorrat kaufen (500 g–1 kg),"
+          }
+        ]
+      }
+    ]
+  }
+}

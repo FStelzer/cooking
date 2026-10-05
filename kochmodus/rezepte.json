@@ -14,6 +14,13 @@
   "cooked": true
  },
  {
+  "path": "../eis/schokoladeneis-dunkel.json",
+  "title": "Dunkles Schokoladeneis — Crème-anglaise-Basis (ca. 1 l, 8–10 Kugeln)",
+  "group": "eis",
+  "wip": false,
+  "cooked": true
+ },
+ {
   "path": "../gerichte/bo-luc-lac.json",
   "title": "Bò lúc lắc — vietnamesisches „Shaking Beef\" mit Brunnenkresse-Salat (4 Portionen)",
   "group": "gerichte",

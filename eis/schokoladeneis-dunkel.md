@@ -1,7 +1,7 @@
 # Dunkles Schokoladeneis — Crème-anglaise-Basis (ca. 1 l, 8–10 Kugeln)
 
-*Aktive Zeit \~40 Min., dazu 12–24 Std. Reifen im Kühlschrank, \~30 Min.
-Eismaschine, \~4 Std. Härten. Equipment: Eismaschine, Zucker-/Fett-Topfthermometer
+*Aktive Zeit \~40 Min., gesamt \~17–29 Std. (12–24 Std. Reifen im Kühlschrank, \~30 Min.
+Eismaschine, \~4 Std. Härten). Equipment: Eismaschine, Zucker-/Fett-Topfthermometer
 (Clip an den Topfrand, zwingend für 82–84 °C), Stabmixer, feines Sieb, Schneebesen, flacher
 gefriertauglicher Behälter, große Schüssel fürs Eiswasserbad.*
 
@@ -59,70 +59,79 @@ Variationen derselben Technik.
 
 ### REWE / Aldi
 
-**Milchprodukte / Eier:**
+**Milchprodukte & Eier:**
 - [ ] 550 ml Vollmilch (3,5 %)
 - [ ] 200 ml Schlagsahne (min. 32 %)
-- [ ] 5 Eier Gr. M *(nur Eigelb; Eiweiß einfrieren)*
+- [ ] 5 Eier *(Gr. M, nur Eigelb; Eiweiß einfrieren)*
 
-**Trockenwaren / Backen:**
-- [ ] 150 g Zartbitterschokolade 70 % (65–72 %, Tafel oder Callets)
-- [ ] 20 g Kakaopulver, ungesüßt (stark entölt bevorzugt, schwach entölt okay)
-- [ ] 110 g Zucker (Bestand)
-- [ ] Salz (Bestand, ¼ TL)
+**Trockenwaren:**
+- [ ] 150 g Zartbitterschokolade 70 % *(65–72 %, Tafel oder Callets)*
+- [ ] 20 g Kakaopulver, ungesüßt *(stark entölt bevorzugt, schwach entölt okay)*
 
-### Drogerie / Apotheke / online
+### Drogerie
+
+*Oder Apotheke / online.*
 
 - [ ] 40 g Dextrose (Traubenzucker-Pulver) — *Vorrat kaufen (500 g–1 kg),
       braucht jedes weitere Eis; Alternative 40 g Glukosesirup oder 30 g
       Invertzucker*
 
+### Vorrat prüfen
+
+- [ ] 110 g Zucker
+- [ ] Salz *(¼ TL)*
+
 ## Zubereitung
 
-**Vorbereitung:** Behälter fürs fertige Eis (flach, \~1,2 l) ins Gefrierfach.
-Eismaschine (Medion-Kompressor, 1,5 l) vor Schritt 8 \~10 Min. leer vorkühlen
+**1. Vorbereitung (5 Min.)**
+*jederzeit*
+Behälter fürs fertige Eis (flach, \~1,2 l) ins Gefrierfach.
+Eismaschine (Medion-Kompressor, 1,5 l) vor „Gefrieren“ \~10 Min. leer vorkühlen
 lassen. Große Schüssel mit Eiswasser
 bereitstellen. 150 g Schokolade fein hacken (Callets: so lassen).
 
-**1. Kakao einrühren (5 Min.)**
+**2. Kakao einrühren (5 Min.)**
 550 ml Vollmilch, 200 ml Sahne und ¼ TL Salz (\~1,5 g) in einem Topf erhitzen,
 bis es dampft — nicht kochen (\~80 °C). 20 g Kakaopulver mit dem Schneebesen
 glatt einrühren, bis keine Klümpchen mehr da sind. Vom Herd nehmen.
 
-**2. Eigelb aufschlagen (3 Min.)**
+**3. Eigelb aufschlagen (3 Min.)**
+*jederzeit*
 5 Eigelb mit 110 g Zucker und 40 g Dextrose in einer Schüssel hell und cremig
 aufschlagen (Schneebesen oder Handmixer, \~2 Min.).
 
-**3. Angleichen (2 Min.)**
+**4. Angleichen (2 Min.)**
+*nach Kakao einrühren, Eigelb aufschlagen*
 Die heiße Kakao-Milch unter ständigem Rühren in dünnem Strahl zu den Eigelben
 gießen (erst \~100 ml, dann zügiger). Alles zurück in den Topf.
 
-**4. Zur Rose abziehen (8–12 Min.)**
+**5. Zur Rose abziehen (8–12 Min.)**
 Bei kleiner bis mittlerer Hitze unter ständigem Rühren mit dem Spatel (Boden
 und Ecken!) auf **82–84 °C** bringen. Die Masse ist fertig, wenn sie dicklich
 ist und ein Strich auf dem Spatel stehen bleibt. **Nie über 85 °C** — sonst
 gerinnt das Eigelb. Bei Unsicherheit lieber bei 82 °C vom Herd, der Topf gibt
 noch Wärme nach.
 
-**5. Schokolade emulgieren (3 Min.)**
-150 g gehackte Schokolade in eine Schüssel geben, die heiße Crème durch ein
+**6. Schokolade emulgieren (3 Min.)**
+Die 150 g gehackte Schokolade in eine Schüssel geben, die heiße Crème durch ein
 feines Sieb darüber gießen (fängt eventuelle Ei-Flöckchen ab). 1 Min. stehen
 lassen, dann mit dem Stabmixer 30 Sek. glatt emulgieren — der Mixer bleibt
 dabei unter der Oberfläche, damit keine Luft eingeschlagen wird.
 
-**6. Schnell kühlen (10–15 Min.)**
+**7. Schnell kühlen (10–15 Min.)**
 Schüssel ins Eiswasserbad stellen und gelegentlich rühren, bis die Masse unter
 20 °C ist. Abgedeckt in den Kühlschrank.
 
-**7. Reifen lassen (12–24 Std.)**
+**8. Reifen lassen (12–24 Std., passiv)**
 Mindestens 12 Std., ideal 24 Std. im Kühlschrank reifen — nicht abkürzen.
 
-**8. Gefrieren (\~30–40 Min.)**
+**9. Gefrieren (\~30–40 Min., passiv)**
 Masse nochmals kurz mit dem Stabmixer durchmixen (sie ist nach dem Reifen
 puddingartig fest) und in die vorgekühlte, laufende Eismaschine geben. Rühren,
 bis die Konsistenz wie festes Softeis ist (\~−5 °C; die Masse zieht sich vom
 Rand und türmt sich am Rührer).
 
-**9. Härten (\~4 Std.)**
+**10. Härten (\~4 Std., passiv)**
 Sofort in den vorgefrorenen, flachen Behälter füllen, Oberfläche mit
 Frischhaltefolie direkt abdecken (gegen Eiskristalle), Deckel drauf und im
 Gefrierfach durchfrieren. Zum Servieren **10–15 Min.** vorher herausnehmen
@@ -155,7 +164,7 @@ Leitfaden).
      kaum mehr Süße — der sauberste Hebel und der erste Versuch.
   2. **20 g Zucker durch 20–25 g Invertzucker oder flüssigen Honig ersetzen.**
      Ähnlicher Effekt, Honig bringt aber Eigengeschmack.
-  3. **1 EL (15 ml) Rum oder Cognac** in Schritt 6 einrühren — klassischer
+  3. **1 EL (15 ml) Rum oder Cognac** in „Schnell kühlen“ einrühren — klassischer
      Profi-Trick, klar spürbar in der Löffelbarkeit. **Nicht in der
      Schwangerschaft, nicht fürs Kind** → erst nach der Geburt eine Option.
   4. **Servieren:** 10–15 Min. antauen (statt 5–10) und einen flachen Behälter
@@ -184,5 +193,5 @@ Leitfaden).
   schwankungen, die Profi-Tiefkühler nicht haben).
 - **Varianten aus derselben Basis** (jeweils eigene Datei, wenn konkret —
   siehe Backlog „Eis" in `ideen.md`): Vanille (Schokolade + Kakao raus, 1
-  Vanilleschote in Schritt 1, Zucker 130 g), Salzkaramell, Kaffee, Pistazie
+  Vanilleschote in „Kakao einrühren“, Zucker 130 g), Salzkaramell, Kaffee, Pistazie
   (Pistazienmus 100 % statt Schokolade — Learning aus dem Cheesecake).
