@@ -508,6 +508,8 @@ def find_doses(text: str, ingredients: list[dict], lint: Lint, where: str, seen_
                 break  # „2 EL Lake über die Kresse“, „(2 kg mit Knochen)“: ab hier beginnt etwas anderes
             if i and m["unit"] == "cm" and "," in ahead.group(0)[:tok.start()]:
                 break  # „1 cm breite Spalten, 3 Frühlingszwiebeln“: Längenangabe, keine Dosierung
+            if i and re.match(r"\d", tok.group(0)):
+                break  # „4–5 mm Scheiben, 2 Spitzpaprika“: neue Zahl = neue Menge
             pm_ = phrase_match(toks, i, idx)
             if pm_:
                 hit, end_tok = pm_; break

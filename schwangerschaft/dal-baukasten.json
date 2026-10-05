@@ -1753,14 +1753,6 @@
                 {
                   "ref": "hing",
                   "amount": {
-                    "text": "½ TL Kashmiri, 1 Prise Hing",
-                    "value": 0.5,
-                    "unit": "TL"
-                  }
-                },
-                {
-                  "ref": "hing",
-                  "amount": {
                     "text": "1 Prise Hing",
                     "value": 1.0,
                     "unit": "Prise"
@@ -3250,8 +3242,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T18:41:05Z",
-    "sourceHash": "b8ae3c597cc14024",
+    "generatedAt": "2026-10-05T18:49:08Z",
+    "sourceHash": "913398bfc9accc4c",
     "select": {
       "variante": "grundrezept",
       "beilage": "kachumber"
@@ -6325,16 +6317,15 @@
           {
             "ingredient": "hing",
             "total": {
-              "text": "½ TL (+ Prise ungemischt)",
-              "value": 0.5,
-              "max": 0.5,
-              "unit": "TL",
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
               "approx": false
             },
             "perTask": {
-              "variante-b-chana-dal-mit-kuerbis": "½ TL Kashmiri, 1 Prise Hing"
-            },
-            "unitMixed": true
+              "variante-b-chana-dal-mit-kuerbis": "1 Prise Hing"
+            }
           },
           {
             "ingredient": "chana",
@@ -6503,13 +6494,13 @@
                 "ingredient": "hing",
                 "name": "Hing",
                 "need": {
-                  "text": "½ TL (+ Prise ungemischt)",
-                  "value": 0.5,
-                  "max": 0.5,
-                  "unit": "TL",
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
                   "approx": false
                 },
-                "display": "½ TL",
+                "display": "1 Prise",
                 "inStock": false,
                 "optional": true,
                 "note": "Asafoetida; winzige Dose, hält Jahre"
@@ -7134,16 +7125,15 @@
           {
             "ingredient": "hing",
             "total": {
-              "text": "½ TL (+ Prise ungemischt)",
-              "value": 0.5,
-              "max": 0.5,
-              "unit": "TL",
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
               "approx": false
             },
             "perTask": {
-              "variante-b-chana-dal-mit-kuerbis": "½ TL Kashmiri, 1 Prise Hing"
-            },
-            "unitMixed": true
+              "variante-b-chana-dal-mit-kuerbis": "1 Prise Hing"
+            }
           },
           {
             "ingredient": "chana",
@@ -7312,13 +7302,13 @@
                 "ingredient": "hing",
                 "name": "Hing",
                 "need": {
-                  "text": "½ TL (+ Prise ungemischt)",
-                  "value": 0.5,
-                  "max": 0.5,
-                  "unit": "TL",
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
                   "approx": false
                 },
-                "display": "½ TL",
+                "display": "1 Prise",
                 "inStock": false,
                 "optional": true,
                 "note": "Asafoetida; winzige Dose, hält Jahre"

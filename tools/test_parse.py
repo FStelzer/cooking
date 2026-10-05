@@ -208,6 +208,7 @@ GAPS = """# Test (2 Portionen)
 
 **1. Pickle (10 Min. + 30 Min. passiv)**
 Aufgetauten Oktopus (\\~1,2–1,5 kg) abspülen. 1 Zweig Estragon, 1 Pck. Vanillezucker und 1 Kopf Brokkoli dazu.
+Estragon in 4–5 mm Scheiben, 1 Brokkoli.
 """
 g, _ = parse_recipe(GAPS, "test/luecken")
 GS = steps_of(g)
@@ -215,6 +216,7 @@ t("Welle 1: Dauer-Summe, Klammer-Menge mit \\~, Gebinde-Einheiten", lambda: (
     assert_(GS["pickle"]["duration"] == {"typical": "PT40M", "source": "10 Min. + 30 Min."}, GS["pickle"]["duration"]),
     assert_(duration_range("\\~1 Std. 15 Min.")["typical"] == "PT1H15M", duration_range("\\~1 Std. 15 Min.")),
     assert_({x["ref"]: x["amount"].get("max") for x in GS["pickle"]["ingredients"]}.get("oktopus") == 1.5, GS["pickle"]["ingredients"]),
+    assert_(not any("mm" in x["amount"]["text"] for x in GS["pickle"]["ingredients"]), GS["pickle"]["ingredients"]),
     assert_([i["id"] for i in g["ingredients"]][:4] == ["oktopus", "estragon", "vanillezucker", "brokkoli"], [i["id"] for i in g["ingredients"]])))
 print(f"{n} Tests ok")
 if lint.msgs or mlint.msgs:
