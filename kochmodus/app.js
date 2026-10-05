@@ -21,12 +21,20 @@ function loadState(id) {
 function save() { try { localStorage.setItem("km:" + recipe.id, JSON.stringify(state)); } catch {} }
 const factor = () => +state.factor || 1;
 
-// ---- Rezept-Helfer ---------------------------------------------------------
-const steps = () => recipe.sections.filter((s) => s.type === "tasks").flatMap((s) => s.tasks.flatMap((t) => t.steps));
-const stepOf = (id) => steps().find((s) => s.id === id);
+// ---- Rezept-Helfer (Menü = Gänge mit eigenen Tasks) -------------------------
+const isMenu = () => recipe.kind === "menu";
+function courses() { return recipe.sections.filter((s) => s.type === "courses").flatMap((s) => s.courses); }
+function tasksOf(r, course = null) {
+  const own = r.sections.filter((s) => s.type === "tasks").flatMap((s) => s.tasks.map((task) => ({ course, task })));
+  return own.concat(courses().flatMap((c) => (r === recipe ? tasksOf(c, c) : [])));
+}
+function steps() { return tasksOf(recipe).flatMap(({ course, task }) => task.steps.map((step) => ({ course, task, step }))); }
+const stepOf = (id) => steps().find((x) => x.step.id === id)?.step;
 const labelOf = (ref) => stepOf(ref.replace(/^step:/, ""))?.label;
 const scaled = (text, step) => scaleStepText(text, step, factor(), ingById);
 function hasNote(id) { return !!state.notes[id]?.trim(); }
+function courseTitle(c) { return c ? c.title.replace(/^\d+\.\s*/, "") : "Menü"; }
+function schedule() { return recipe.sections.find((s) => s.type === "schedule"); }
 
 // ---- Ansichten -------------------------------------------------------------
 function runBadge(step) {
@@ -35,20 +43,57 @@ function runBadge(step) {
   const rem = Math.min(...ts.map(remaining));
   return `<span class="run ${rem <= 0 ? "ring" : ""}" data-run="${step.id}">${rem <= 0 ? "Fertig" : fmtClock(rem / 1000)}</span>`;
 }
+function stepRow(s) {
+  const dur = s.duration ? `${s.duration.source || ""}${s.duration.estimated ? " (geschätzt)" : ""}` : "";
+  const deps = !s.after ? "" : s.after.length ? "nach " + s.after.map(labelOf).filter(Boolean).join(", ") : "jederzeit";
+  const meta = [dur, deps].filter(Boolean).join(" · ");
+  return `<div class="row ${state.done[s.id] ? "done" : ""} ${s.after && !s.after.length ? "free" : ""}" data-step="${s.id}">
+    <input type="checkbox" class="chk" data-done="${s.id}" aria-label="${esc(s.title || s.label)} erledigt" ${state.done[s.id] ? "checked" : ""}>
+    <div class="body" data-open="${s.id}">
+      <div class="t">${esc(s.label)}. ${mdInline(s.title || "")}${hasNote(s.id) ? '<span class="hasnote" title="Notiz vorhanden"></span>' : ""}</div>
+      ${meta ? `<div class="m">${esc(meta)}</div>` : ""}
+      <div class="a md">${md(scaled(s.action, s))}</div>${runBadge(s)}
+    </div></div>`;
+}
 function renderKochen() {
-  const legend = `<p class="legend">Antippen öffnet Details, Timer und Notiz. <span class="free-hint">Gestrichelter Rand</span> = jederzeit möglich, ohne Vorgänger. <mark class="cue">Erkennungszeichen</mark><mark class="limit">Grenze</mark><mark class="why">Warum</mark><mark class="rescue">Rettung</mark></p>`;
-  main.innerHTML = legend + steps().map((s) => {
-    const dur = s.duration ? `${s.duration.source || ""}${s.duration.estimated ? " (geschätzt)" : ""}` : "";
-    const deps = !s.after ? "" : s.after.length ? "nach " + s.after.map(labelOf).filter(Boolean).join(", ") : "jederzeit";
-    const meta = [dur, deps].filter(Boolean).join(" · ");
-    return `<div class="row ${state.done[s.id] ? "done" : ""} ${s.after && !s.after.length ? "free" : ""}" data-step="${s.id}">
-      <input type="checkbox" class="chk" data-done="${s.id}" aria-label="${esc(s.title || s.label)} erledigt" ${state.done[s.id] ? "checked" : ""}>
-      <div class="body" data-open="${s.id}">
-        <div class="t">${s.label}. ${mdInline(s.title || "")}${hasNote(s.id) ? '<span class="hasnote" title="Notiz vorhanden"></span>' : ""}</div>
-        ${meta ? `<div class="m">${esc(meta)}</div>` : ""}
-        <div class="a md">${md(scaled(s.action, s))}</div>${runBadge(s)}
-      </div></div>`;
-  }).join("");
+  let html = `<p class="legend">Antippen öffnet Details, Timer und Notiz. <span class="free-hint">Gestrichelter Rand</span> = jederzeit möglich, ohne Vorgänger. <mark class="cue">Erkennungszeichen</mark><mark class="limit">Grenze</mark><mark class="why">Warum</mark><mark class="rescue">Rettung</mark></p>`;
+  if (!isMenu()) {
+    html += tasksOf(recipe).flatMap(({ task }) => task.steps.map(stepRow)).join("");
+  } else {
+    for (const c of courses()) {
+      const ts = tasksOf(c);
+      html += `<section class="course" id="course-${c.id}"><h2>${mdInline(c.title)}</h2>`;
+      if (!ts.length) { html += `<p class="empty">Noch nicht als Schritte modelliert — Text unter „Lesen“.</p></section>`; continue; }
+      for (const { task } of ts) {
+        html += `<h3 id="task-${task.id}">${esc(task.name)}${task.phaseHint ? ` <span class="fine">· ${esc(task.phaseHint)}</span>` : ""}</h3>`;
+        html += task.steps.map(stepRow).join("");
+      }
+      html += `</section>`;
+    }
+  }
+  main.innerHTML = html;
+}
+function renderPlan() {
+  const sec = schedule();
+  if (!sec) { main.innerHTML = `<p class="empty">Kein Zeitplan im Rezept.</p>`; return; }
+  const sch = sec.schedule, lanes = [{ id: null, name: "Menü" }, ...courses().map((c) => ({ id: c.id, name: courseTitle(c) }))];
+  const allTasks = Object.fromEntries(tasksOf(recipe).map(({ task }) => [task.id, task]));
+  const done = (e) => (e.tasks || []).length && e.tasks.every((t) => allTasks[t]?.steps.every((s) => state.done[s.id]));
+  let h = `<div class="gantt-scroll"><div class="gantt" style="--cols:${sch.phases.length}"><div class="ph corner"></div>`;
+  h += sch.phases.map((p) => `<div class="ph">${esc(p.label)}</div>`).join("");
+  for (const lane of lanes) {
+    h += `<div class="lane">${esc(lane.name)}</div>`;
+    for (const p of sch.phases) {
+      const es = sch.entries.filter((e) => e.phase === p.id && (e.course || null) === lane.id);
+      h += `<div class="cell">` + es.map((e) => {
+        const first = (e.tasks || []).map((t) => allTasks[t]?.steps[0]?.id).find(Boolean) || (e.steps || [])[0];
+        return `<button class="chip ${done(e) ? "done" : ""} ${e.derived ? "derived" : ""} ${first ? "" : "plain"}" ${first ? `data-open="${first}"` : ""}>
+          <span class="t">${mdInline(e.text)}</span>${e.at ? `<span class="m">${esc(e.at.offset.replace(/^([+-]?)PT/, "$1").toLowerCase())} zu ${esc(e.at.ref.split(":")[1])}</span>` : ""}</button>`;
+      }).join("") + `</div>`;
+    }
+  }
+  main.innerHTML = h + `</div></div>` + (sec.note ? `<div class="md fine" style="margin-top:12px">${md(sec.note)}</div>` : "")
+    + `<p class="fine">Chips mit Rand sind modellierte Aufgaben (antippen öffnet den ersten Schritt), graue sind nur Text. Gestrichelt = aus dem Rezept abgeleitet, steht nicht im Original-Zeitplan.</p>`;
 }
 function shoppingHtml() {
   const d = recipe.derived;
@@ -62,61 +107,76 @@ function shoppingHtml() {
       const have = it.inStock || state.shop[it.ingredient];
       const need = f === 1 ? it.display : fmtAmount(scaleAmount(it.need, f, ingById[it.ingredient]));
       const note = it.note ? ` <span class="fine">${mdInline(it.note.replace(/^\*\(?|\)?\*$/g, ""))}</span>` : "";
+      const crs = (ingById[it.ingredient]?.courses || []).map((c) => c.replace("gang-", "G")).join("+");
       return `<li class="${have ? "have" : ""}"><input type="checkbox" class="chk" data-shop="${it.ingredient}" ${have ? "checked" : ""}>
-        <span>${it.optional ? "Optional: " : ""}${it.buy ? esc(it.buy.text) + " " : ""}${need ? esc(need) + " " : ""}${esc(it.name)}${note}</span></li>`;
+        <span>${it.optional ? "Optional: " : ""}${it.buy ? esc(it.buy.text) + " " : ""}${need ? esc(need) + " " : ""}${esc(it.name)}${crs ? ` <span class="fine">(${crs})</span>` : ""}${note}</span></li>`;
     }).join("") + `</ul>`;
   }
   return html;
 }
 function renderEinkauf() { main.innerHTML = shoppingHtml() + `<p class="fine">Häkchen bleiben nur in diesem Browser. Mengen ×${factor()}.</p>`; }
-function renderLesen() {
-  let html = `<div class="md">${md(recipe.intro)}</div>`;
-  for (const sec of recipe.sections) {
-    html += `<h2>${esc(sec.title)}</h2>`;
+function renderSections(r, level) {
+  let html = "";
+  for (const sec of r.sections) {
+    const hx = `h${level}`;
+    html += `<${hx}>${mdInline(sec.title)}</${hx}>`;
     if (sec.type === "markdown") html += `<div class="md">${md(sec.markdown)}</div>`;
     else if (sec.type === "shopping") html += shoppingHtml();
-    else if (sec.type === "tasks") for (const task of sec.tasks) for (const s of task.steps)
-      html += `<div class="card"><div class="md">${md(s.heading || `**${s.label}. ${s.title || ""}**`)}${md(highlight(scaled(s.text, s), s))}</div></div>`;
-    else if (sec.type === "learnings") {
+    else if (sec.type === "tasks") for (const task of sec.tasks) {
+      if (task.heading) html += `<div class="md">${md(task.heading)}</div>`;
+      for (const s of task.steps) html += `<div class="card"><div class="md">${md(s.heading || `**${s.label}. ${s.title || ""}**`)}${md(highlight(scaled(s.text, s), s))}</div></div>`;
+    } else if (sec.type === "courses") for (const c of sec.courses) {
+      html += `<h${level + 1}>${mdInline(c.title)}</h${level + 1}>` + (c.intro ? `<div class="md">${md(c.intro)}</div>` : "") + renderSections(c, level + 2);
+    } else if (sec.type === "schedule") {
+      const sch = sec.schedule;
+      html += sch.phases.map((p) => `<p><b>${esc(p.label)}</b></p><ul>` + sch.entries.filter((e) => e.phase === p.id).map((e) => `<li>${mdInline(e.text)}${e.derived ? " <span class='fine'>(abgeleitet)</span>" : ""}</li>`).join("") + `</ul>`).join("");
+      if (sec.note) html += `<div class="md">${md(sec.note)}</div>`;
+    } else if (sec.type === "learnings") {
       html += `<div class="md">${md(sec.summary)}${md(sec.details)}</div>`;
-      if (sec.notes?.length) html += `<h3>Notizen mit Schritt-Bezug</h3><ul>` + sec.notes.map((n) => `<li><code>${esc(n.ref)}</code> ${n.status === "open" ? "⏳" : "✓"} ${mdInline(n.text)}</li>`).join("") + `</ul>`;
+      if (sec.notes?.length) html += `<p><b>Notizen mit Schritt-Bezug</b></p><ul>` + sec.notes.map((n) => `<li><code>${esc(n.ref)}</code> ${n.status === "open" ? "⏳" : "✓"} ${mdInline(n.text)}</li>`).join("") + `</ul>`;
     } else if (sec.type === "todo") html += `<ul>` + sec.items.map((i) => `<li>${i.checked ? "☑" : "☐"} ${mdInline(i.text)}</li>`).join("") + `</ul>`;
   }
-  main.innerHTML = html;
+  return html;
+}
+function renderLesen() {
+  main.innerHTML = (recipe.statusNote ? `<div class="md">${md(recipe.statusNote)}</div>` : "") + (recipe.intro ? `<div class="md">${md(recipe.intro)}</div>` : "") + renderSections(recipe, 2);
 }
 function exportMarkdown() {
   const d = new Date(), date = `${String(d.getMonth() + 1).padStart(2, "0")}/${d.getFullYear()}`;
-  return notesMarkdown(recipe.id, steps().filter((s) => hasNote(s.id)).map((s) => ({ slug: s.id, label: s.label, text: state.notes[s.id] })), date);
+  return notesMarkdown(recipe.id, steps().filter(({ step }) => hasNote(step.id)).map(({ step, course }) => ({ slug: step.id, label: (course ? course.id.replace("gang-", "G") + "/" : "") + step.label, text: state.notes[step.id] })), date);
 }
 function renderNotizen() {
-  const noted = steps().filter((s) => hasNote(s.id));
+  const noted = steps().filter(({ step }) => hasNote(step.id));
   if (!noted.length) { main.innerHTML = `<p class="empty">Noch keine Notizen. Öffne einen Schritt und halte fest, was beim nächsten Mal anders laufen soll.</p>`; return; }
   main.innerHTML = `<div class="toolbar"><button class="btn primary" id="copyMd">Als Markdown kopieren</button><span class="status">Zum Einfügen unter „## Learnings“ im Rezept.</span></div>`
-    + noted.map((s) => `<div class="note" data-open="${s.id}"><b>${s.label}. ${esc(s.title || "")}</b>${esc(state.notes[s.id])}</div>`).join("")
+    + noted.map(({ step }) => `<div class="note" data-open="${step.id}"><b>${esc(step.label)}. ${esc(step.title || "")}</b>${esc(state.notes[step.id])}</div>`).join("")
     + `<h3>Vorschau</h3><textarea id="mdOut" readonly rows="8">${esc(exportMarkdown())}</textarea>`;
 }
 function renderHeader() {
   $("#title").textContent = recipe.title;
   const y = recipe.yields?.value ? fmtAmount(scaleAmount({ value: recipe.yields.value, unit: recipe.yields.unit }, factor())) : recipe.yields?.text || "";
-  $("#meta").textContent = [y, recipe.times?.text].filter(Boolean).join(" · ");
-  const all = steps(), d = all.filter((s) => state.done[s.id]).length;
+  $("#meta").textContent = [recipe.persons?.text || y, recipe.times?.text].filter(Boolean).join(" · ");
+  const all = steps(), d = all.filter(({ step }) => state.done[step.id]).length;
   $("#progress").textContent = `${d} von ${all.length} Schritten`;
   $("#fill").style.width = `${all.length ? (d / all.length) * 100 : 0}%`;
+  $("#planBtn").hidden = !schedule();
   document.querySelectorAll("[data-view]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.view === view)));
   document.querySelectorAll("[data-factor]").forEach((b) => b.setAttribute("aria-pressed", String(+b.dataset.factor === factor())));
   $("#factor").value = factor();
 }
-function renderMain() { ({ kochen: renderKochen, einkauf: renderEinkauf, lesen: renderLesen, notizen: renderNotizen })[view](); }
+function renderMain() { ({ kochen: renderKochen, plan: renderPlan, einkauf: renderEinkauf, lesen: renderLesen, notizen: renderNotizen })[view](); }
 function renderAll() { renderHeader(); renderMain(); renderDock(); if (openId) renderSheet(); }
 
 // ---- Sheet (Details, Timer, Notiz) ----------------------------------------
 function renderSheet() {
-  const s = stepOf(openId);
-  if (!s) return;
+  const ctx = steps().find((x) => x.step.id === openId);
+  if (!ctx) return;
+  const { step: s, task, course } = ctx;
   const rest = remainderAfterAction(scaled(s.text, s), { ...s, action: scaled(s.action, s) });
   const timers = (s.timers || []).flatMap((t, i) => timerChoices(t.duration).map((secs) => ({ i, label: t.label, secs })));
+  const lbl = [course ? courseTitle(course) : null, task.name !== (recipe.title) ? task.name : null, `Schritt ${s.label}`, s.duration?.source].filter(Boolean).join(" · ");
   sheet.innerHTML = `
-    <div class="sheet-head"><h2 id="sheetTitle"><span class="lbl">Schritt ${esc(s.label)}${s.duration?.source ? " · " + esc(s.duration.source) : ""}</span>${mdInline(s.title || "")}</h2><button class="close" aria-label="Schließen">✕</button></div>
+    <div class="sheet-head"><h2 id="sheetTitle"><span class="lbl">${esc(lbl)}</span>${mdInline(s.title || task.name)}</h2><button class="close" aria-label="Schließen">✕</button></div>
     <div class="md action">${md(scaled(s.action, s))}</div>
     ${rest ? `<div class="md">${md(highlight(rest, s))}</div>` : ""}
     ${s.events?.length ? `<h3>Zwischendurch</h3><ul>${s.events.map((e) => `<li>⏱ ${fmtClock(isoSeconds(e.at.typical || e.at.min))}: ${mdInline(e.text)}</li>`).join("")}</ul>` : ""}
@@ -229,5 +289,6 @@ let toastT; function toast(m) { const el = $("#toast"); el.textContent = m; el.s
   catch (err) { main.innerHTML = `<p class="empty">Rezept konnte nicht geladen werden: <code>${esc(RECIPE_URL)}</code> (${esc(err.message)})</p>`; return; }
   for (const i of recipe.ingredients || []) ingById[i.id] = i;
   state = loadState(recipe.id);
+  if (isMenu() && schedule() && !state.viewSeen) view = "plan";
   renderAll();
 })();

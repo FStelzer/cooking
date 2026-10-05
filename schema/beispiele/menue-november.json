@@ -1758,44 +1758,52 @@
         "entries": [
           {
             "phase": "t-2",
-            "text": "**Tomaten-Püree-Block (Weg A) aus dem Gefrierfach ins Passiertuch (Drip-Thaw braucht 24–48 h!)**"
+            "text": "**Tomaten-Püree-Block (Weg A) aus dem Gefrierfach ins Passiertuch (Drip-Thaw braucht 24–48 h!)**",
+            "course": "gang-1"
           },
           {
             "phase": "t-2",
-            "text": "Parfait einfrieren"
+            "text": "Parfait einfrieren",
+            "course": "gang-4"
           },
           {
             "phase": "t-2",
-            "text": "Lammschulter salzen (Dry-Brine, optional)"
+            "text": "Lammschulter salzen (Dry-Brine, optional)",
+            "course": "gang-3"
           },
           {
             "phase": "t-2",
-            "text": "Lammknochen ggf. schon rösten"
+            "text": "Lammknochen ggf. schon rösten",
+            "course": "gang-3"
           },
           {
             "phase": "t-1",
-            "text": "**Lammschulter schmoren (3–3,5 h), zupfen, pressen; Schmorflüssigkeit passieren und kalt stellen**"
+            "text": "**Lammschulter schmoren (3–3,5 h), zupfen, pressen; Schmorflüssigkeit passieren und kalt stellen**",
+            "course": "gang-3"
           },
           {
             "phase": "t-1",
             "text": "Mango-Gel",
             "tasks": [
               "mango-gel"
-            ]
+            ],
+            "course": "gang-2"
           },
           {
             "phase": "t-1",
             "text": "beide Crumbles",
             "tasks": [
               "walnuss-crumble"
-            ]
+            ],
+            "course": "gang-2"
           },
           {
             "phase": "t-1",
             "text": "Ziegenkäse- Pralinen formen (ungewälzt)",
             "tasks": [
               "pralinen-formen"
-            ]
+            ],
+            "course": "gang-2"
           },
           {
             "phase": "t-1",
@@ -1805,15 +1813,18 @@
             ],
             "steps": [
               "auftauen-ausloesen"
-            ]
+            ],
+            "course": "gang-2"
           },
           {
             "phase": "t-1",
-            "text": "Weg B: Tomatenwasser in den Kühlschrank zum Auftauen"
+            "text": "Weg B: Tomatenwasser in den Kühlschrank zum Auftauen",
+            "course": "gang-1"
           },
           {
             "phase": "vormittags",
-            "text": "Fettdeckel von der Schmorflüssigkeit, Jus auf 250–300 ml reduzieren"
+            "text": "Fettdeckel von der Schmorflüssigkeit, Jus auf 250–300 ml reduzieren",
+            "course": "gang-3"
           },
           {
             "phase": "vormittags",
@@ -1823,19 +1834,23 @@
             ],
             "steps": [
               "auftauen-ausloesen"
-            ]
+            ],
+            "course": "gang-2"
           },
           {
             "phase": "nachmittags",
-            "text": "Rosenkohlblätter lösen, Hälfte blanchieren"
+            "text": "Rosenkohlblätter lösen, Hälfte blanchieren",
+            "course": "gang-3"
           },
           {
             "phase": "nachmittags",
-            "text": "Selleriepüree"
+            "text": "Selleriepüree",
+            "course": "gang-3"
           },
           {
             "phase": "nachmittags",
-            "text": "Chips frittieren (Sellerie, dann Rosenkohl — halten 1–2 h)"
+            "text": "Chips frittieren (Sellerie, dann Rosenkohl — halten 1–2 h)",
+            "course": "gang-3"
           },
           {
             "phase": "nachmittags",
@@ -1845,11 +1860,13 @@
             ],
             "steps": [
               "trockentupfen"
-            ]
+            ],
+            "course": "gang-2"
           },
           {
             "phase": "nachmittags",
-            "text": "Lammblock 1 h vor Gang 3 aus dem Kühlschrank, schneiden"
+            "text": "Lammblock 1 h vor Gang 3 aus dem Kühlschrank, schneiden",
+            "course": "gang-3"
           },
           {
             "phase": "nachmittags",
@@ -1968,8 +1985,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T09:36:22Z",
-    "sourceHash": "4bd0ff855b332ec0",
+    "generatedAt": "2026-10-05T09:38:54Z",
+    "sourceHash": "41730b3092ae582a",
     "quantities": [
       {
         "ingredient": "verjus",

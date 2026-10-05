@@ -84,7 +84,29 @@ try {
   const h2 = await page.locator("#main h2").allInnerTexts();
   assert.deepEqual(h2.slice(0, 3), ["Beschaffung", "Einkaufsliste", "Zubereitung"], h2.join(", "));
   assert.ok(h2.includes("Learnings") && h2.includes("Notizen"));
+  // Menü: Plan-Ansicht (Phasen × Gänge), Gang-Gruppierung, Stub-Hinweis
+  await page.goto(`http://127.0.0.1:${PORT}/kochmodus/?r=../schema/beispiele/menue-november.json`);
+  await page.waitForSelector(".gantt");
+  assert.equal(await page.locator(".gantt .ph:not(.corner)").count(), 8, "8 Phasen erwartet");
+  assert.equal(await page.locator(".gantt .lane").count(), 5, "Menü + 4 Gänge");
+  assert.equal(await page.locator(".chip").count(), 24, "24 Zeitplan-Einträge");
+  assert.equal(await page.locator(".chip.derived").count(), 1);
+  await page.locator('.chip[data-open="reduktion"]').click();
+  await page.waitForSelector("#sheet.open");
+  assert.match(await page.locator("#sheet .lbl").innerText(), /Kaisergranat.*Beurre-blanc.*Schritt 11/);
+  await page.click("#sheet .close");
+  await page.click('button[data-view="kochen"]');
+  assert.equal(await page.locator(".row[data-step]").count(), 18, "18 Schritte in Gang 2");
+  assert.equal(await page.locator(".course .empty").count(), 3, "3 Stub-Gänge");
+  await page.click('button[data-view="einkauf"]');
+  assert.equal(await page.locator("ul.shop li").count(), 50);
+  await page.click('button[data-view="lesen"]');
+  assert.ok((await page.locator("#main h2").allInnerTexts()).includes("Rezepte"));
   if (SHOT) {
+    await page.click('button[data-view="plan"]');
+    await page.screenshot({ path: SHOT.replace(/\.png$/, "-plan.png") });
+    await page.goto(`http://127.0.0.1:${PORT}/kochmodus/`);
+    await page.waitForSelector(".row[data-step]");
     await page.click('button[data-view="kochen"]');
     await page.screenshot({ path: SHOT });
     await page.locator('.row[data-step="karamell"] [data-open]').click();
@@ -96,4 +118,4 @@ try {
   server.close();
 }
 if (errors.length) { console.log("Browser-Fehler:\n  " + errors.join("\n  ")); process.exit(1); }
-console.log("Rauchtest ok: 9 Schritte, Sheet ohne Wiederholung, Notiz im Sheet, Skalierung, Timer-Dock/Abhaken persistent, Export, Einkauf 17 Posten, Lesen in Reihenfolge");
+console.log("Rauchtest ok: thit-kho (9 Schritte, Sheet, Notiz, Skalierung, Timer, Export, Einkauf, Lesen) + Menü (Plan 8×5, 24 Chips, 18 Schritte, 50 Posten)");

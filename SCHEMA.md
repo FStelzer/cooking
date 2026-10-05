@@ -28,6 +28,7 @@ Einzige Abhängigkeit: `jsonschema` (siehe `tools/requirements.txt`).
 |---|---|
 | 2026-10-05 | Plan freigegeben. AP0 (Festlegungen, Werkzeug-Skelett) und AP1 (Schema v0.1, thit-kho Minimum + Anreicherung) umgesetzt. Checks A–D grün, Mutationstest 11/11 erkannt. |
 | 2026-10-05 | AP2 umgesetzt: `tools/recipes/shopping.py` berechnet `derived.quantities` und `derived.shopping`, `cli derive` schreibt sie ins JSON (reproduzierbar bis auf `generatedAt`, Hash-Prüfung gegen veraltete Blöcke), `cli shopping` rendert Markdown im heutigen Format, Check K vergleicht mit der Original-Einkaufsliste. |
+| 2026-10-05 | **Phase 2b, AP4 umgesetzt** (Entscheidungspunkt auf User-Entscheidung übersprungen: erst ein großes Menü ist der echte Test, bei bekannten Rezepten entsteht kaum Feedback). Schema v0.2: Menü/Gänge/Zeitplan/Ressourcen/Constraints. `menue-november.json`: Rahmen, Gang 2 vollständig (8 Tasks, 7 Produkte, 18 Steps), Stubs für 1/3/4, 50 Zutaten, 8 Phasen + 24 Einträge. `timing.py` mit Checks E–H, L. Kochmodus menüfähig mit Plan-Raster. Siehe Messwerte AP4. |
 | 2026-10-05 | **Durchstich** gebaut: `kochmodus/` (statische Seite, vanilla JS, `marked` vom CDN wie Docsify). Ansichten Kochen (Kurzansicht + Details mit Hervorhebung, Abhaken, Timer mit Endzeit im localStorage, Ereignisse, Notiz pro Schritt, Export im `learnings.notes[]`-Format, Voraussetzungen aus `after`), Einkauf (aus `derived.shopping`, abhakbar, skaliert) und Lesen (Sektionen in Dokumentreihenfolge). Skalieren ersetzt Spans inline (L11) mit Rundung nach Einheit (`kochmodus/lib.js`). 10 Node-Tests, Playwright-Rauchtest im Container grün. **Nächster Schritt: Thịt kho damit kochen, dann Entscheidungspunkt vor Phase 2b.** |
 | 2026-10-05 | AP3 umgesetzt: zweite unabhängige Konvertierung von thit-kho durch einen frischen Agenten (nur SCHEMA.md + Schema + Quelle), `cli diff` misst Übereinstimmung pro Feld. Ergebnis: alle verbatim-nahen Felder 100 %, Ermessensfelder streuen (siehe Messwerte). Daraus Anleitung v2 mit regelbasiertem `action` (= erster Satz, Check C erzwingt das), festem Warengruppen-Vokabular, klaren Regeln für `priority`/`optional`/`note`/`scale`. Phase 2a damit abgeschlossen; nächster Schritt: Durchstich (Kochmodus-Seite mit thit-kho). |
 
@@ -89,6 +90,10 @@ Einzige Abhängigkeit: `jsonschema` (siehe `tools/requirements.txt`).
   werden einmal vergeben und nie umbenannt (Abhak-Zustand, Notizen, Verweise).
 - **L13 Feedback-Ziel.** `learnings.notes[]` mit `ref: step:<slug>|task:<id>|product:<id>`,
   `date`, `status: open|applied`. Der Kochmodus exportiert genau diese Struktur.
+- **L15 Stub-Gänge.** Ein Gang, der noch nicht modelliert ist, ist ein `Recipe{kind:
+  course}` mit genau einer verbatim-`markdown`-Sektion. Seine Zutaten tragen `buy`
+  (Kaufmenge aus der Liste) statt Dosierungen; Check K wertet das als passend,
+  Check E/L prüfen nur modellierte Gänge. So wächst ein Menü gangweise.
 - **L14 Ablage.** `schema/recipe.schema.json`, `schema/beispiele/*.json`,
   `tools/recipes/*.py`, `tools/requirements.txt`, dieses `SCHEMA.md` im Root.
   Keine `.md` unter `schema/` oder `tools/` (der Sidebar-Generator iteriert `*/*.md`).
@@ -276,6 +281,33 @@ einem Schritt).
 
 **Rendering-Entscheidungen** (`cli shopping`): `###` pro Laden in Besuchsreihenfolge (Online, Buhara, Asialaden, Selgros, REWE Center, Aldi/REWE, Vorrat), darunter `**Warengruppe:**`, Einträge `- [ ] Menge Name, prep *(note)*`, `Optional:`-Präfix, `[x]` bei `inStock`. Das 📲-Export-Plugin würde auf dieser Ausgabe unverändert funktionieren.
 
+### menue-november, Gang 2 (AP4, 2026-10-05)
+
+| Kennzahl | Wert | Bemerkung |
+|---|---|---|
+| Zahl+Einheit-Token Quelle / JSON | 249 / 249 | Stubs und Prosa verbatim per Skript geschnitten |
+| Schritte Gang 2 | 17 nummeriert + 1 (Anrichten) | Nummerierung 1–17 über 6 Komponentenblöcke, als `label` erhalten |
+| Tasks / Produkte / Kanten | 8 / 7 / 5 explizite `after` + 1 `start`-Anker | Praline roh/gewälzt als zwei Produkte |
+| Dosierungen exact / derived | 26 / 0 | `times: 2` für „2 Pfannen mit je 1 EL“ |
+| `action` verbatim / abgeleitet | 18 / 0 | 4 Hinweise „> 70 %“ bei kurzen Schritten ohne Annotationen-Mehrwert |
+| Zutaten | 50 aus 42 Posten | Gang-Zuordnung an jeder Zutat |
+| Check K | 43 / 43 passend | Stub-Gänge über `buy` (Gebinde) |
+| Check F (Zeitplan) | 23 / 23 Segmente, 8 mit Task, 1 abgeleitet | „Pralinen wälzen“ steht nicht im Skelett |
+| Check G | 7 Erzeuger→Verbraucher-Paare konsistent | Tagesgranularität über Phasen |
+| Check L (Gang 2) | 7 / 8 Zellen | Limetten: Tabelle zählt 1 Reserve mit |
+| Check H | 2 Warnungen | Anrichten endet +0:22 bei Service +0:20 (Beurre blanc ab −20 Min. + Braten + Anrichten = 22 Min.); Limette 7 statt ≤5 Min. vor dem Anrichten |
+
+**Was AP4 gezeigt hat:** (1) Das Zeitmodell trägt: Phasen mit verbatim-Einträgen
+decken das Skelett vollständig ab, Hold-Fenster und Kanten lassen sich ohne
+Erfindung aus dem Text holen. (2) Check H findet mit geschätzten Step-Dauern den
+Zeitfenster-Konflikt, der bei der ersten Analyse von Hand auffiel. Alle Dauern der
+Gang-2-Schritte außer drei sind `estimated: true` — das Menü nennt nur Summen pro
+Phase („Am Abend: \~25 Min., davon \~8 à la minute“). (3) Stub-Gänge kosten nichts:
+verbatim-Markdown plus `buy` an den Zutaten reicht für Einkaufsliste und Checks.
+(4) Die Kochmodus-Plan-Ansicht braucht an Zeitplan-Einträgen eine Gang-Zuordnung
+auch außerhalb des Service (per Schlüsselwort gesetzt, `course` am Eintrag).
+(5) Offen für AP5/AP6: absolute Uhrzeiten (Hochzeitstag), Varianten.
+
 ### thit-kho-trung, Determinismus (AP3, 2026-10-05)
 
 Zweitkonvertierung durch einen frischen Agenten mit SCHEMA.md (Anleitung v1), Schema
@@ -348,11 +380,12 @@ Fehlt `after` irgendwo? Welche Notizen entstehen, und passen sie ins Format?
 
 ## Nächste Schritte
 
-- Thịt kho mit dem Kochmodus kochen, Notizen exportieren.
-- **Entscheidungspunkt** vor Phase 2b (siehe Plan): Modellfehler aus dem Kochen,
-  Kennzahlen aus 2a, Syntax-Wünsche; dann AP4 (Menü, Zeit, Ressourcen) unverändert
-  oder umgebaut.
-- **AP4 zusätzlich:** Ressourcen (`resources[]` mit Kapazität, `claims[]` mit Ofen-
-  Temperatur), Linter „Summe entlang des kritischen Pfads vs. `times.total`"
-  (thit-kho: sequenziell 145–185 Min., mit Anker Reduzieren-im-Schmoren 125–155,
-  Quelle sagt 2–2,5 Std.) und Ableitung von `parallel` aus `after`.
+- **AP5:** `menues/menue-hochzeitstag.md` — absolute Uhrzeiten mit Offset-Klammern,
+  Ereignis-Phasen („Nach dem Amuse“), Logistik-Einträge ohne Task, Ente startet
+  während des Amuse (gangübergreifend), Learnings eines gekochten Menüs.
+- **AP6:** Varianten (dal-baukasten, vollkornbrötchen): `variants[]`, `only`,
+  `replaces`, `byVariant`, `next`; zwei Schedules (Backtag, aus dem Frost).
+- **AP7:** Abnahme über alle fünf Dateien, Review-Checkliste, PRD-Delta.
+- Offen aus AP4: Kritischer-Pfad-Linter gegen `times.total`; Gang-2-Dauern beim
+  Testlauf messen und die `estimated`-Flags ablösen; November-Menü im Kochmodus
+  benutzen (Testlauf Gang 2).
