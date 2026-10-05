@@ -28,6 +28,13 @@
   "cooked": true
  },
  {
+  "path": "../gerichte/hummerbisque.json",
+  "title": "Hummerbisque (4 Portionen als Vorspeise)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": false
+ },
+ {
   "path": "../gerichte/imam-bayildi.json",
   "title": "İmam bayıldı — in Olivenöl geschmorte gefüllte Auberginen (4 Portionen)",
   "group": "gerichte",

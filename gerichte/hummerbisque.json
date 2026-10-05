@@ -1,0 +1,1409 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/hummerbisque",
+  "kind": "dish",
+  "title": "Hummerbisque (4 Portionen als Vorspeise)",
+  "status": "done",
+  "yields": {
+    "text": "4 Portionen als Vorspeise",
+    "value": 4.0,
+    "unit": "Portionen"
+  },
+  "intro": "*Aktive Zeit \\~1 Std., gesamt \\~2 Std. Equipment: großer Topf, Küchenschere, schweres Messer/Beil, Stabmixer, feines Sieb (Chinois), Kartoffelstampfer.*",
+  "times": {
+    "text": "Aktive Zeit ~1 Std., gesamt ~2 Std.",
+    "active": {
+      "typical": "PT1H",
+      "source": "1 Std."
+    },
+    "total": {
+      "typical": "PT2H",
+      "source": "2 Std."
+    }
+  },
+  "equipment": [
+    "großer Topf",
+    "Küchenschere",
+    "schweres Messer/Beil",
+    "Stabmixer",
+    "feines Sieb (Chinois)",
+    "Kartoffelstampfer"
+  ],
+  "ingredients": [
+    {
+      "id": "hummer",
+      "name": "lebender oder roher Hummer",
+      "store": "Buhara Seafood",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "1"
+      },
+      "note": "\\~600 g"
+    },
+    {
+      "id": "garnelen",
+      "name": "rohe Garnelen **mit Schale**",
+      "store": "Buhara Seafood",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "300–400 g"
+      },
+      "note": "(oder Kaisergranat) — Karkassen für die Bisque, Fleisch als Einlage"
+    },
+    {
+      "id": "schalotten",
+      "name": "Schalotten",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      }
+    },
+    {
+      "id": "karotte",
+      "name": "Karotte",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "\\~100 g"
+    },
+    {
+      "id": "fenchelknolle",
+      "name": "kleine Fenchelknolle",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "½"
+      },
+      "note": "\\~100 g"
+    },
+    {
+      "id": "staudensellerie",
+      "name": "Stange Staudensellerie",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      }
+    },
+    {
+      "id": "knoblauchzehen",
+      "name": "Knoblauchzehen",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      }
+    },
+    {
+      "id": "thymian",
+      "name": "Zweige Thymian",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      }
+    },
+    {
+      "id": "zweig",
+      "name": "Zweig Estragon",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      }
+    },
+    {
+      "id": "zitrone",
+      "name": "Zitrone",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "für 1 TL Zitronensaft"
+    },
+    {
+      "id": "butter",
+      "name": "Butter",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "90 g"
+      },
+      "note": "gesamt: 40 g zum Rösten, 30 g eiskalt zum Aufmontieren, 15 g zum Glasieren"
+    },
+    {
+      "id": "sahne",
+      "name": "Sahne",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "200 ml"
+      },
+      "note": "mind. 30 %"
+    },
+    {
+      "id": "cognac",
+      "name": "Cognac oder Brandy",
+      "store": "REWE Center",
+      "group": "Getränke",
+      "buy": {
+        "text": "40 ml"
+      }
+    },
+    {
+      "id": "weisswein",
+      "name": "trockener Weißwein",
+      "store": "REWE Center",
+      "group": "Getränke",
+      "buy": {
+        "text": "200 ml"
+      }
+    },
+    {
+      "id": "olivenoel",
+      "name": "Olivenöl",
+      "store": "Vorrat",
+      "buy": {
+        "text": "2 EL"
+      },
+      "pantry": true,
+      "note": "neutral"
+    },
+    {
+      "id": "tomatenmark",
+      "name": "Tomatenmark",
+      "store": "Vorrat",
+      "buy": {
+        "text": "2 EL"
+      },
+      "pantry": true
+    },
+    {
+      "id": "langkornreis",
+      "name": "Langkornreis",
+      "store": "Vorrat",
+      "buy": {
+        "text": "25 g"
+      },
+      "pantry": true,
+      "note": "roh, zum Binden"
+    },
+    {
+      "id": "lorbeerblatt",
+      "name": "Lorbeerblatt",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1"
+      },
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser oder heller Hühnerfond",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1000 ml"
+      },
+      "pantry": true,
+      "note": "durch die Garnelenkarkassen ist gekaufter Fischfond unnötig — Wasser gibt das reinere Krustentier-Aroma"
+    },
+    {
+      "id": "cayennepfeffer",
+      "name": "Cayennepfeffer",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "kommt **pro Teller** dazu, nicht in den Topf — siehe Kinder-Anpassung"
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "reichlich fürs Blanchierwasser"
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Hummer:** Zuerst bei **Buhara Seafood (Dietzenbach)** anfragen — frisch oder roh ist erste Wahl. Falls nicht verfügbar: **roher TK-Hummer bei Selgros** (dort dann auch gleich die Garnelen mitnehmen). Rechtzeitig vor dem Kochtag klären!\n- **Garnelen mit Schale:** Buhara, Selgros (TK) oder Asialaden.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Hummerbisque (4 Portionen als Vorspeise)",
+          "steps": [
+            {
+              "id": "hummer-blanchieren",
+              "label": "1",
+              "heading": "**1. Hummer blanchieren (3–4 Min.)**",
+              "title": "Hummer blanchieren",
+              "duration": {
+                "min": "PT3M",
+                "max": "PT4M",
+                "source": "3–4 Min."
+              },
+              "text": "Großen Topf mit Wasser und reichlich Salz (stark gesalzen, wie Meerwasser) sprudelnd aufkochen. 1 Hummer kopfüber zügig hineingeben, Deckel drauf, genau 3–4 Min. blanchieren, sofort in Eiswasser abschrecken. *Tipp: Das Fleisch bleibt bewusst fast roh – es löst sich so aus der Schale und gart erst am Ende schonend fertig. TK-Ware über Nacht im Kühlschrank auftauen — auch aufgetauter roher TK-Hummer wird genauso kurz blanchiert, der Auslöse-Trick funktioniert identisch.*",
+              "action": "Großen Topf mit Wasser und reichlich Salz (stark gesalzen, wie Meerwasser) sprudelnd aufkochen.",
+              "why": "Tipp: Das Fleisch bleibt bewusst fast roh – es löst sich so aus der Schale und gart erst am Ende schonend fertig. TK-Ware über Nacht im Kühlschrank auftauen — auch aufgetauter roher TK-Hummer wird genauso kurz blanchiert, der Auslöse-Trick funktioniert identisch.",
+              "timers": [
+                {
+                  "label": "Hummer blanchieren",
+                  "duration": {
+                    "min": "PT3M",
+                    "max": "PT4M"
+                  },
+                  "text": "3–4 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "hummer",
+                  "amount": {
+                    "text": "1 Hummer",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "reichlich Salz"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "zerlegen",
+              "label": "2",
+              "heading": "**2. Zerlegen (ca. 3 Min.)**",
+              "title": "Zerlegen",
+              "duration": {
+                "typical": "PT3M",
+                "source": "ca. 3 Min.",
+                "estimated": true
+              },
+              "text": "Schwanz mit einer Drehbewegung vom Kopf abdrehen. Beide Scheren samt Gelenken abdrehen. *Über einer Schüssel arbeiten – auslaufende Flüssigkeit später mit in den Topf.*",
+              "action": "Schwanz mit einer Drehbewegung vom Kopf abdrehen.",
+              "why": "Über einer Schüssel arbeiten – auslaufende Flüssigkeit später mit in den Topf.",
+              "ingredients": [],
+              "attention": "active"
+            },
+            {
+              "id": "fleisch-ausloesen",
+              "label": "3",
+              "heading": "**3. Fleisch auslösen (ca. 15 Min.)**",
+              "title": "Fleisch auslösen",
+              "duration": {
+                "typical": "PT15M",
+                "source": "ca. 15 Min.",
+                "estimated": true
+              },
+              "text": "Schwanz: dünne Unterseite des Panzers mit der Schere links und rechts längs aufschneiden, Bauchplatte abziehen, Fleisch am Stück herauslösen. Rücken des Fleischs längs flach einschneiden, dunklen Darmfaden herausziehen. Scheren: mit Messerrücken/Nussknacker anknacken, Fleisch auslösen – auch im Gelenk sitzt Fleisch. 300–400 g Garnelen schälen und entdarmen: Schalen und Köpfe zu den Hummerkarkassen, Fleisch zum Hummerfleisch. Alles Fleisch abgedeckt kühl stellen.",
+              "action": "Schwanz: dünne Unterseite des Panzers mit der Schere links und rechts längs aufschneiden, Bauchplatte abziehen, Fleisch am Stück herauslösen.",
+              "ingredients": [
+                {
+                  "ref": "garnelen",
+                  "amount": {
+                    "text": "300–400 g Garnelen",
+                    "value": 300.0,
+                    "unit": "g",
+                    "max": 400.0
+                  }
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "karkassen-vorbereiten",
+              "label": "4",
+              "heading": "**4. Karkassen vorbereiten (ca. 10 Min.)**",
+              "title": "Karkassen vorbereiten",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "text": "Kopf längs halbieren. **Magensack entfernen** (kleiner körniger Beutel direkt hinter den Augen) – wegwerfen. Grünliche Masse (Tomalley) darf bleiben, gibt Tiefe. **Falls Weibchen: dunkelgrünen Rogen (Corail) herauslösen und kühl stellen** — wird später mit der Montier-Butter verknetet, gibt Farbe und deutlich mehr Hummergeschmack. Alle Schalen, Beine und Kopfhälften in 3–4 cm Stücke hacken. **Alles gründlich trocken tupfen** – nasse Schalen dämpfen statt zu rösten. *Je kleiner, desto mehr Geschmack.*",
+              "action": "Kopf längs halbieren.",
+              "limits": [
+                "Magensack entfernen",
+                "Falls Weibchen: dunkelgrünen Rogen (Corail) herauslösen und kühl stellen",
+                "Alles gründlich trocken tupfen"
+              ],
+              "why": "Je kleiner, desto mehr Geschmack.",
+              "rescue": "**Falls Weibchen: dunkelgrünen Rogen (Corail) herauslösen und kühl stellen** — wird später mit der Montier-Butter verknetet, gibt Farbe und deutlich mehr Hummergeschmack.",
+              "ingredients": [],
+              "attention": "active"
+            },
+            {
+              "id": "karkassen-roesten",
+              "label": "5",
+              "heading": "**5. Karkassen rösten (8–10 Min.)**",
+              "title": "Karkassen rösten",
+              "duration": {
+                "min": "PT8M",
+                "max": "PT10M",
+                "source": "8–10 Min."
+              },
+              "text": "2 EL Olivenöl und 40 g Butter im großen Topf stark erhitzen. Hummer- und Garnelenkarkassen kräftig rösten bis tiefrot, mit Röstaromen am Boden. *Nicht zaghaft sein – zu wenig Röstung ist der häufigste Grund für fade Bisque. Braun am Boden ist gut, schwarz nicht.*",
+              "action": "2 EL Olivenöl und 40 g Butter im großen Topf stark erhitzen.",
+              "why": "Nicht zaghaft sein – zu wenig Röstung ist der häufigste Grund für fade Bisque. Braun am Boden ist gut, schwarz nicht.",
+              "ingredients": [
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "2 EL Olivenöl",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "40 g Butter",
+                    "value": 40.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Karkassen rösten",
+                  "duration": {
+                    "min": "PT8M",
+                    "max": "PT10M"
+                  },
+                  "text": "8–10 Min."
+                }
+              ]
+            },
+            {
+              "id": "gemuese-tomatenmark",
+              "label": "6",
+              "heading": "**6. Gemüse & Tomatenmark (7 Min.)**",
+              "title": "Gemüse & Tomatenmark",
+              "duration": {
+                "typical": "PT7M",
+                "source": "7 Min."
+              },
+              "text": "2 Schalotten, 1 Karotte (\\~100 g), ½ Fenchelknolle (\\~100 g) und 1 Stange Sellerie grob gewürfelt mit 2 angedrückten Knoblauchzehen 5 Min. mitrösten. 2 EL Tomatenmark einrühren, 2 Min. rösten, bis es dunkler wird.",
+              "action": "2 Schalotten, 1 Karotte (\\~100 g), ½ Fenchelknolle (\\~100 g) und 1 Stange Sellerie grob gewürfelt mit 2 angedrückten Knoblauchzehen 5 Min. mitrösten.",
+              "cues": [
+                "bis es dunkler wird"
+              ],
+              "timers": [
+                {
+                  "label": "Gemüse & Tomatenmark",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                },
+                {
+                  "label": "Gemüse & Tomatenmark",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "schalotten",
+                  "amount": {
+                    "text": "2 Schalotten",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "karotte",
+                  "amount": {
+                    "text": "1 Karotte",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "fenchelknolle",
+                  "amount": {
+                    "text": "½ Fenchelknolle",
+                    "value": 0.5,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "staudensellerie",
+                  "amount": {
+                    "text": "1 Stange Sellerie",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauchzehen",
+                  "amount": {
+                    "text": "2 angedrückten Knoblauchzehen",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "tomatenmark",
+                  "amount": {
+                    "text": "2 EL Tomatenmark",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "flambieren-abloeschen",
+              "label": "7",
+              "heading": "**7. Flambieren & Ablöschen (ca. 5 Min.)**",
+              "title": "Flambieren & Ablöschen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "ca. 5 Min.",
+                "estimated": true
+              },
+              "text": "40 ml Cognac angießen und flambieren (Dunstabzug aus, Armlänge Abstand; alternativ 1 Min. verkochen lassen). Mit 200 ml Weißwein ablöschen, Bratensatz lösen, fast vollständig einkochen.",
+              "action": "40 ml Cognac angießen und flambieren (Dunstabzug aus, Armlänge Abstand; alternativ 1 Min. verkochen lassen).",
+              "timers": [
+                {
+                  "label": "Flambieren & Ablöschen",
+                  "duration": {
+                    "typical": "PT1M"
+                  },
+                  "text": "1 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "cognac",
+                  "amount": {
+                    "text": "40 ml Cognac",
+                    "value": 40.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "weisswein",
+                  "amount": {
+                    "text": "200 ml Weißwein",
+                    "value": 200.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "koecheln",
+              "label": "8",
+              "heading": "**8. Köcheln (40 Min.)**",
+              "title": "Köcheln",
+              "duration": {
+                "typical": "PT40M",
+                "source": "40 Min."
+              },
+              "text": "1000 ml Wasser/Fond angießen (Karkassen knapp bedeckt), 25 g Langkornreis, 1 Lorbeerblatt und 2 Zweige Thymian dazu. Offen sanft köcheln (40, max. 45 Min.!), zwischendurch mit dem Stampfer die Karkassen zerdrücken. **1 Zweig Estragon erst die letzten 10 Min. mitziehen lassen** – länger gekocht wird er medizinisch-bitter. *Nach \\~45 Min. geben Schalen Bitterstoffe ab – länger bringt nichts. Nicht sprudelnd kochen.*",
+              "action": "1000 ml Wasser/Fond angießen (Karkassen knapp bedeckt), 25 g Langkornreis, 1 Lorbeerblatt und 2 Zweige Thymian dazu.",
+              "limits": [
+                "1 Zweig Estragon erst die letzten 10 Min. mitziehen lassen"
+              ],
+              "why": "Nach \\~45 Min. geben Schalen Bitterstoffe ab – länger bringt nichts. Nicht sprudelnd kochen.",
+              "timers": [
+                {
+                  "label": "Köcheln",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT45M",
+                    "source": "\\~45 Min.",
+                    "estimated": true
+                  },
+                  "text": "*Nach \\~45 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "1000 ml Wasser/Fond",
+                    "value": 1000.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "langkornreis",
+                  "amount": {
+                    "text": "25 g Langkornreis",
+                    "value": 25.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "lorbeerblatt",
+                  "amount": {
+                    "text": "1 Lorbeerblatt",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "thymian",
+                  "amount": {
+                    "text": "2 Zweige Thymian",
+                    "value": 2.0,
+                    "unit": "Zweige"
+                  }
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "mixen-passieren",
+              "label": "9",
+              "heading": "**9. Mixen & Passieren (ca. 10 Min.)**",
+              "title": "Mixen & Passieren",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "text": "Lorbeer, Kräuter sowie **alle harten Scherenpanzer und dicken Kopfpanzerteile entfernen** – die sind zu hart für den Stabmixer und beschädigen die Glocke. Nur die weicheren Teile (Beine, dünne Schalen, Garnelenschalen, Gemüse) mit dem Stabmixer 20–30 Sek. grob anmixen. Durch feines Sieb passieren und mit der Kelle **kräftig und geduldig ausdrücken** – da steckt viel Geschmack. Für seidige Textur ein zweites Mal durch Passiertuch/Teesieb.",
+              "action": "Lorbeer, Kräuter sowie **alle harten Scherenpanzer und dicken Kopfpanzerteile entfernen** – die sind zu hart für den Stabmixer und beschädigen die Glocke.",
+              "limits": [
+                "alle harten Scherenpanzer und dicken Kopfpanzerteile entfernen",
+                "kräftig und geduldig ausdrücken"
+              ],
+              "timers": [
+                {
+                  "label": "Mixen & Passieren",
+                  "duration": {
+                    "min": "PT20S",
+                    "max": "PT30S"
+                  },
+                  "text": "20–30 Sek."
+                }
+              ],
+              "ingredients": [],
+              "attention": "active"
+            },
+            {
+              "id": "reduzieren-abschmecken",
+              "label": "10",
+              "heading": "**10. Reduzieren & Abschmecken (ca. 10 Min.)**",
+              "title": "Reduzieren & Abschmecken",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "text": "Auf ca. 800 ml einkochen – vor der Sahne probieren, sie soll schon kräftig schmecken. 200 ml Sahne zugeben, aufkochen. Mit Salz und Zitronensaft (ca. 1 TL) abschmecken – **kein Cayenne in den Topf** (kommt pro Teller). *Vorsichtig – soll die Süße des Hummers heben, nicht herausschmecken.*",
+              "action": "Auf ca.",
+              "limits": [
+                "kein Cayenne in den Topf",
+                "Vorsichtig – soll die Süße des Hummers heben, nicht herausschmecken."
+              ],
+              "ingredients": [
+                {
+                  "ref": "sahne",
+                  "amount": {
+                    "text": "200 ml Sahne",
+                    "value": 200.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "zitrone",
+                  "amount": {
+                    "text": "1 TL",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "hummerfleisch-garnelen-glasieren",
+              "label": "11",
+              "heading": "**11. Hummerfleisch & Garnelen glasieren (2–3 Min.)**",
+              "title": "Hummerfleisch & Garnelen glasieren",
+              "duration": {
+                "min": "PT2M",
+                "max": "PT3M",
+                "source": "2–3 Min."
+              },
+              "text": "Hummerfleisch in mundgerechte Stücke schneiden. 15 g Butter bei milder Hitze schäumen lassen, Hummerfleisch und Garnelen darin glasieren, bis sie gerade opak sind. Sofort raus – jede Minute länger macht es gummig.",
+              "action": "Hummerfleisch in mundgerechte Stücke schneiden.",
+              "cues": [
+                "bis sie gerade opak sind"
+              ],
+              "ingredients": [
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "15 g Butter",
+                    "value": 15.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nach Reduzieren & Abschmecken, Fleisch auslösen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:reduzieren-abschmecken",
+                "step:fleisch-ausloesen"
+              ]
+            },
+            {
+              "id": "aufmontieren-servieren",
+              "label": "12",
+              "heading": "**12. Aufmontieren & Servieren (ca. 3 Min.)**",
+              "title": "Aufmontieren & Servieren",
+              "duration": {
+                "typical": "PT3M",
+                "source": "ca. 3 Min.",
+                "estimated": true
+              },
+              "text": "Falls Corail vorhanden: mit den 30 g eiskalter Butter verkneten. Suppe heiß, aber nicht mehr kochend: die (Corail-)Butter zugeben, mit dem Stabmixer schräg gehalten kräftig aufmixen bis leicht schaumig. Fleisch in vorgewärmte Teller, Bisque angießen, Erwachsenen-Teller mit je 1 Prise Cayennepfeffer würzen, sofort servieren.",
+              "action": "Falls Corail vorhanden: mit den 30 g eiskalter Butter verkneten.",
+              "ingredients": [
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "30 g eiskalter Butter",
+                    "value": 30.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "cayennepfeffer",
+                  "amount": {
+                    "text": "je 1 Prise Cayennepfeffer",
+                    "value": 1.0,
+                    "unit": "Prise",
+                    "per": "Pfanne"
+                  }
+                }
+              ],
+              "attention": "active"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- Cayenne nur pro Teller (Erwachsene), Kinderportion bleibt mild.\n- Alkohol ist nach Flambieren + 40 Min. offenem Köcheln + Reduktion praktisch vollständig verkocht — unbedenklich.\n- Ein paar extra Stücke Hummer/Garnele für den Kinderteller einplanen.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Vorbereiten:** Bis „Reduzieren & Abschmecken“ am Vortag machbar – durchgezogen schmeckt sie sogar besser. Fleisch erst kurz vor dem Servieren garen.\n- **Intensität:** Die Garnelenkarkassen sind fester Bestandteil, kein Fallback — ein 600-g-Hummer allein auf 1 L Flüssigkeit ergibt eine zu milde Bisque. Restaurants nutzen deutlich mehr Karkassen pro Liter.",
+      "tags": [
+        "notizen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T18:34:23Z",
+    "sourceHash": "20c0fcf59c5be10a",
+    "quantities": [
+      {
+        "ingredient": "hummer",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Hummer"
+        }
+      },
+      {
+        "ingredient": "garnelen",
+        "total": {
+          "text": "300–400 g",
+          "value": 300.0,
+          "max": 400.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "300–400 g Garnelen"
+        }
+      },
+      {
+        "ingredient": "schalotten",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 Schalotten"
+        }
+      },
+      {
+        "ingredient": "karotte",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Karotte"
+        }
+      },
+      {
+        "ingredient": "fenchelknolle",
+        "total": {
+          "text": "½",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "½ Fenchelknolle"
+        }
+      },
+      {
+        "ingredient": "staudensellerie",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Stange Sellerie"
+        }
+      },
+      {
+        "ingredient": "knoblauchzehen",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 angedrückten Knoblauchzehen"
+        }
+      },
+      {
+        "ingredient": "thymian",
+        "total": {
+          "text": "2 Zweige",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Zweige",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 Zweige Thymian"
+        }
+      },
+      {
+        "ingredient": "zweig",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "zitrone",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 TL"
+        }
+      },
+      {
+        "ingredient": "butter",
+        "total": {
+          "text": "85 g",
+          "value": 85.0,
+          "max": 85.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "40 g Butter + 15 g Butter + 30 g eiskalter Butter"
+        }
+      },
+      {
+        "ingredient": "sahne",
+        "total": {
+          "text": "200 ml",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "200 ml Sahne"
+        }
+      },
+      {
+        "ingredient": "cognac",
+        "total": {
+          "text": "40 ml",
+          "value": 40.0,
+          "max": 40.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "40 ml Cognac"
+        }
+      },
+      {
+        "ingredient": "weisswein",
+        "total": {
+          "text": "200 ml",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "200 ml Weißwein"
+        }
+      },
+      {
+        "ingredient": "olivenoel",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 EL Olivenöl"
+        }
+      },
+      {
+        "ingredient": "tomatenmark",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 EL Tomatenmark"
+        }
+      },
+      {
+        "ingredient": "langkornreis",
+        "total": {
+          "text": "25 g",
+          "value": 25.0,
+          "max": 25.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "25 g Langkornreis"
+        }
+      },
+      {
+        "ingredient": "lorbeerblatt",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Lorbeerblatt"
+        }
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "1000 ml",
+          "value": 1000.0,
+          "max": 1000.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1000 ml Wasser/Fond"
+        }
+      },
+      {
+        "ingredient": "cayennepfeffer",
+        "total": {
+          "text": "1 Prise",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Prise",
+          "approx": false
+        },
+        "perTask": {
+          "main": "je 1 Prise Cayennepfeffer"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": ""
+        },
+        "perTask": {},
+        "unitless": [
+          "reichlich Salz"
+        ]
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Buhara Seafood",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "hummer",
+            "name": "lebender oder roher Hummer",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "\\~600 g"
+          },
+          {
+            "ingredient": "garnelen",
+            "name": "rohe Garnelen **mit Schale**",
+            "need": {
+              "text": "300–400 g",
+              "value": 300.0,
+              "max": 400.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "300–400 g",
+            "inStock": false,
+            "buy": {
+              "text": "300–400 g"
+            },
+            "note": "(oder Kaisergranat) — Karkassen für die Bisque, Fleisch als Einlage"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "schalotten",
+            "name": "Schalotten",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            }
+          },
+          {
+            "ingredient": "karotte",
+            "name": "Karotte",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "\\~100 g"
+          },
+          {
+            "ingredient": "fenchelknolle",
+            "name": "kleine Fenchelknolle",
+            "need": {
+              "text": "½",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "½",
+            "inStock": false,
+            "buy": {
+              "text": "½"
+            },
+            "note": "\\~100 g"
+          },
+          {
+            "ingredient": "staudensellerie",
+            "name": "Stange Staudensellerie",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            }
+          },
+          {
+            "ingredient": "knoblauchzehen",
+            "name": "Knoblauchzehen",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            }
+          },
+          {
+            "ingredient": "thymian",
+            "name": "Zweige Thymian",
+            "need": {
+              "text": "2 Zweige",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Zweige",
+              "approx": false
+            },
+            "display": "2 Zweige",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            }
+          },
+          {
+            "ingredient": "zweig",
+            "name": "Zweig Estragon",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            }
+          },
+          {
+            "ingredient": "zitrone",
+            "name": "Zitrone",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "für 1 TL Zitronensaft"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "butter",
+            "name": "Butter",
+            "need": {
+              "text": "85 g",
+              "value": 85.0,
+              "max": 85.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "85 g",
+            "inStock": false,
+            "buy": {
+              "text": "90 g"
+            },
+            "note": "gesamt: 40 g zum Rösten, 30 g eiskalt zum Aufmontieren, 15 g zum Glasieren"
+          },
+          {
+            "ingredient": "sahne",
+            "name": "Sahne",
+            "need": {
+              "text": "200 ml",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "200 ml",
+            "inStock": false,
+            "buy": {
+              "text": "200 ml"
+            },
+            "note": "mind. 30 %"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Getränke",
+        "items": [
+          {
+            "ingredient": "cognac",
+            "name": "Cognac oder Brandy",
+            "need": {
+              "text": "40 ml",
+              "value": 40.0,
+              "max": 40.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "40 ml",
+            "inStock": false,
+            "buy": {
+              "text": "40 ml"
+            }
+          },
+          {
+            "ingredient": "weisswein",
+            "name": "trockener Weißwein",
+            "need": {
+              "text": "200 ml",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "200 ml",
+            "inStock": false,
+            "buy": {
+              "text": "200 ml"
+            }
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "olivenoel",
+            "name": "Olivenöl",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "buy": {
+              "text": "2 EL"
+            },
+            "pantry": true,
+            "note": "neutral"
+          },
+          {
+            "ingredient": "tomatenmark",
+            "name": "Tomatenmark",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "buy": {
+              "text": "2 EL"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "langkornreis",
+            "name": "Langkornreis",
+            "need": {
+              "text": "25 g",
+              "value": 25.0,
+              "max": 25.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "25 g",
+            "inStock": false,
+            "buy": {
+              "text": "25 g"
+            },
+            "pantry": true,
+            "note": "roh, zum Binden"
+          },
+          {
+            "ingredient": "lorbeerblatt",
+            "name": "Lorbeerblatt",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser oder heller Hühnerfond",
+            "need": {
+              "text": "1000 ml",
+              "value": 1000.0,
+              "max": 1000.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "1000 ml",
+            "inStock": false,
+            "buy": {
+              "text": "1000 ml"
+            },
+            "pantry": true,
+            "note": "durch die Garnelenkarkassen ist gekaufter Fischfond unnötig — Wasser gibt das reinere Krustentier-Aroma"
+          },
+          {
+            "ingredient": "cayennepfeffer",
+            "name": "Cayennepfeffer",
+            "need": {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            },
+            "display": "1 Prise",
+            "inStock": false,
+            "pantry": true,
+            "note": "kommt **pro Teller** dazu, nicht in den Topf — siehe Kinder-Anpassung"
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true,
+            "note": "reichlich fürs Blanchierwasser"
+          }
+        ]
+      }
+    ]
+  }
+}
