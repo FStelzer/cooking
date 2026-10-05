@@ -1,5 +1,9 @@
 # Sapporo-Style Miso-Tonkotsu-Ramen — Menü (6 Schüsseln)
 
+*Aktive Zeit \~4 h, gesamt Vortag + Kochtag (Brühe 8-12 h). Equipment: 14L-Topf, 6L-Topf, große Edelstahlpfanne (Wok-Ersatz), Stabmixer, feines Sieb, Mörser, Fleischthermometer, Wasserkocher, 6 Gläser.*
+
+*Varianten: Ablauf = Vortag | Ein Tag*
+
 **Vorspeise:** Smashed Cucumber (Tataki Kyuri)
 **Hauptgang:** Miso-Tonkotsu-Ramen mit Niku-Miso, Sapporo-Wok-Methode
 **Dessert:** Yuzu Panna Cotta mit Agar-Agar Frucht-Kanten
@@ -67,46 +71,105 @@
 
 ## Einkaufsliste
 
-### 1. Selgros (Fleischtheke & Gastro-Bedarf)
-- [ ] **1,5 - 2 kg Schweinehalsknochen** (Neck bones / Nackenknochen). *Lass sie dir vom Metzger ggf. einmal durchsägen.* — *Preis: ca. 2-3 €/kg an der Metzgertheke, also \~4-6 € gesamt. Knochen sind Schlacht-"Abfall", das kostet fast nichts.*
-- [ ] **2-3 Schweinefüße (Spitzbeine, gesägt)**. *Extrem wichtig: Vom Metzger der Länge nach halbieren lassen! Die Knochen sind steinhart, du brauchst aber das Innere (Kollagen).* — *Preis: ca. 2-3 €/kg (Supermarkt-Abpackungen \~2,80 €/kg; Online-Edelmetzger verlangen 5,50-8,90 €/kg, das ist NICHT der Maßstab). Ein Fuß wiegt \~700-900g → 3 Stück ca. 4-7 €. Bei dem Preis lieber 3 statt 2 nehmen — mehr Kollagen = cremigere Brühe.*
-- [ ] **600g Schweinehackfleisch** (gern etwas fetter, z.B. gemischt aus Bauch und Schulter).
-- [ ] *(Optional)* **200-300 g Rückenspeck** (fetter Speck ohne Schwarte, „fetter Speck" / „grüner Speck"). *Kocht in der Brühe mit und liefert das Fett, das für die milchige Emulsion fehlt, wenn die Halsknochen mager ausfallen. Kenji nutzt ihn in seiner Tonkotsu genau dafür.*
+### Selgros
 
-### 2. Asialaden
-- [ ] **Helle Miso-Paste (Shiro Miso)**, mind. 200g
-- [ ] **Dunkle Miso-Paste (Aka Miso)**, mind. 100g
-- [ ] **Ramen-Nudeln:** frisch \~825g (150g/Portion, GDM-Portion nur 75g) ODER trocken \~500-550g (90-100g/Portion, GDM-Portion 50g — z.B. Hakubaku, die haben zuverlässig Trocken-Ramen; frische vorher anrufen!). *Pro-Tipp für Miso: Nimm dicke, gewellte Nudeln (Temomi-Style), sie fangen die dicke Brühe und das Hackfleisch besser ein als die ganz dünnen Hakata-Nudeln.*
-- [ ] **Geröstetes Sesamöl**
-- [ ] **Weiße Sesamsamen** (ungeschält)
-- [ ] *(Optional)* **Rayu (japanisches Chili-Öl)** für die Erwachsenen am Tisch.
-- [ ] *(Optional)* **Doubanjiang / Tobanjan** (fermentierte Chili-Bohnenpaste, kleines Glas). *1 TL in den Erwachsenen-Wok-Durchgängen — die klassische Schärfe- und Tiefen-Ergänzung in Sapporo-Miso. Hält ewig, taugt für Mapo Tofu und alle Schmorsachen.*
-- [ ] *(Optional)* **Panko** (falls du doch noch was Knuspriges willst, aber hier nicht zwingend).
-- [ ] **Reisessig** (für die Gurken)
-- [ ] **Yuzu-Saft** in der Flasche (für das Dessert). *Etikett prüfen: pasteurisiert — kommt erst in die abgekühlte Masse und wird nicht mehr erhitzt.*
-- [ ] **Agar-Agar Pulver** (für die Frucht-Kanten)
+*Fleischtheke & Gastro-Bedarf.*
 
-### 3. REWE Center / Supermarkt
-- [ ] **Sojasauce, Mirin** (falls leer vom letzten Mal. Achtung: Durch Gurken-Marinade etwas mehr Sojasauce nötig! Kein Sake — in Tare und Glasur durch Reisessig/Wasser ersetzt. Mirin-Würzsauce mit \~0,9 % Alkohol ist okay.)
-- [ ] **1 Dose Zuckermais** (Kinder-Favorit!)
-- [ ] **400g Sojasprossen (Moyashi)** *(300 g gehen durch den Wok, \~100 g werden für die GDM-Extraportion blanchiert)*
-- [ ] **Gute Butter** (z.B. Süßrahm)
-- [ ] **1 Packung Schweineschmalz** (\~100 g, Fallback fürs Wok-Fett, falls von der Brühe nicht genug Fett abzuheben ist)
-- [ ] **6-8 Eier (M)**
-- [ ] **Gemüse für Brühe & Topping:** 1 dicke Lauchstange, 1 Bund Lauchzwiebeln (Frühlingszwiebeln), 2 große Gemüsezwiebeln, 2 Knollen Knoblauch, 1 großes Stück Ingwer (ca. 10cm).
-- [ ] **3 Salatgurken** (für die Vorspeise)
-- [ ] **500ml Sahne, 200ml Vollmilch, 4 Blatt Gelatine** (für die Panna Cotta)
-- [ ] **150g frische Beeren** (z.B. Himbeeren/Blaubeeren) oder etwas Melone (für die Frucht-Kanten)
+**Fleisch & Fisch:**
+- [ ] 1,5–2 kg Schweinehalsknochen — Gang 2 *(Neck bones / Nackenknochen. Lass sie dir vom Metzger ggf. einmal durchsägen. Preis: ca. 2-3 €/kg an der Metzgertheke, also \~4-6 € gesamt. Knochen sind Schlacht-"Abfall", das kostet fast nichts.)*
+- [ ] 3 Schweinefüße, gesägt — Gang 2 *(2-3 Spitzbeine. Extrem wichtig: Vom Metzger der Länge nach halbieren lassen! Die Knochen sind steinhart, du brauchst aber das Innere (Kollagen). Preis: ca. 2-3 €/kg (Supermarkt-Abpackungen \~2,80 €/kg; Online-Edelmetzger verlangen 5,50-8,90 €/kg, das ist NICHT der Maßstab). Ein Fuß wiegt \~700-900g → 3 Stück ca. 4-7 €. Bei dem Preis lieber 3 statt 2 nehmen — mehr Kollagen = cremigere Brühe.)*
+- [ ] 600 g Schweinehack — Gang 2 *(gern etwas fetter, z.B. gemischt aus Bauch und Schulter)*
+- [ ] Optional: 200–300 g Rückenspeck — Gang 2 *(fetter Speck ohne Schwarte, „fetter Speck" / „grüner Speck". Kocht in der Brühe mit und liefert das Fett, das für die milchige Emulsion fehlt, wenn die Halsknochen mager ausfallen. Kenji nutzt ihn in seiner Tonkotsu genau dafür.)*
+
+### Asialaden
+
+**Würzmittel & Gewürze:**
+- [ ] 200 g Shiro Miso — Gang 2 *(helle Miso-Paste, mind.)*
+- [ ] 100 g Aka Miso — Gang 2 *(dunkle Miso-Paste, mind.)*
+- [ ] Geröstetes Sesamöl — Gang 1, Gang 2
+- [ ] Weiße Sesamsamen — Gang 1, Gang 2 *(ungeschält)*
+- [ ] Optional: Rayu — Gang 1, Gang 2 *(japanisches Chili-Öl für die Erwachsenen am Tisch)*
+- [ ] Optional: Doubanjiang — Gang 2 *(Tobanjan, fermentierte Chili-Bohnenpaste, kleines Glas. 1 TL in den Erwachsenen-Wok-Durchgängen — die klassische Schärfe- und Tiefen-Ergänzung in Sapporo-Miso. Hält ewig, taugt für Mapo Tofu und alle Schmorsachen.)*
+- [ ] Reisessig — Gang 1, Gang 2 *(für die Gurken und die Tare)*
+- [ ] Yuzu-Saft — Gang 3 *(in der Flasche, für das Dessert. Etikett prüfen: pasteurisiert — kommt erst in die abgekühlte Masse und wird nicht mehr erhitzt.)*
+- [ ] Agar-Agar Pulver — Gang 3 *(für die Frucht-Kanten)*
+
+**Trockenwaren:**
+- [ ] 825 g Ramen-Nudeln, frisch — Gang 2 *(150g/Portion, GDM-Portion nur 75g) ODER trocken \~500-550g (90-100g/Portion, GDM-Portion 50g — z.B. Hakubaku, die haben zuverlässig Trocken-Ramen; frische vorher anrufen!). Pro-Tipp für Miso: Nimm dicke, gewellte Nudeln (Temomi-Style), sie fangen die dicke Brühe und das Hackfleisch besser ein als die ganz dünnen Hakata-Nudeln.*
+- [ ] Optional: Panko *(falls du doch noch was Knuspriges willst, aber hier nicht zwingend)*
+
+### REWE Center
+
+*Oder Supermarkt.*
+
+**Obst & Gemüse:**
+- [ ] 400 g Sojasprossen — Gang 2 *(Moyashi; 300 g gehen durch den Wok, \~100 g werden für die GDM-Extraportion blanchiert)*
+- [ ] 1 dicke Lauchstange — Gang 2
+- [ ] 1 Bund Frühlingszwiebeln — Gang 2 *(Lauchzwiebeln)*
+- [ ] 2 große Gemüsezwiebeln — Gang 2
+- [ ] 2 Knollen Knoblauch — Gang 1, Gang 2
+- [ ] 10 cm Ingwer — Gang 2 *(1 großes Stück)*
+- [ ] 3 Salatgurken — Gang 1 *(für die Vorspeise)*
+- [ ] 150 g frische Beeren — Gang 3 *(z.B. Himbeeren/Blaubeeren) oder etwas Melone (für die Frucht-Kanten)*
+
+**Milchprodukte & Eier:**
+- [ ] Gute Butter — Gang 2 *(z.B. Süßrahm)*
+- [ ] 6–8 Eier — Gang 2 *(M)*
+- [ ] 500 ml Sahne — Gang 3 *(für die Panna Cotta)*
+- [ ] 200 ml Vollmilch — Gang 3
+
+**Trockenwaren:**
+- [ ] 1 Dose Zuckermais — Gang 2 *(Kinder-Favorit!)*
+- [ ] 4 Blatt Gelatine — Gang 3
+- [ ] 1 Packung Schweineschmalz — Gang 2 *(\~100 g, Fallback fürs Wok-Fett, falls von der Brühe nicht genug Fett abzuheben ist)*
+
+### Vorrat prüfen
+
+- [ ] Sojasauce — Gang 1, Gang 2 *(falls leer vom letzten Mal. Achtung: Durch Gurken-Marinade etwas mehr Sojasauce nötig!)*
+- [ ] Mirin — Gang 2 *(Kein Sake — in Tare und Glasur durch Reisessig/Wasser ersetzt. Mirin-Würzsauce mit \~0,9 % Alkohol ist okay.)*
+- [ ] Zucker
+- [ ] Salz
+- [ ] Zitrone *(1 Spritzer für die Frucht-Kanten)*
 
 **Kosten:** \~35-45 € je nach Hausvorräten (Miso, Nudeln, Yuzu und Sahne sind die Posten; die Knochen kosten fast nichts).
 
 ---
 
-## Rezept
+## Rezepte
 
-### 1. Die Tonkotsu-Brühe (das weiße Gold)
+### 1. Vorspeise: Smashed Cucumber (Tataki Kyuri)
 
-**Zutaten:**
+*Am Abend 15 Min. aktiv, 1–1,5 Std. gesamt. Equipment: Nudelholz oder schwerer Topf, Sieb.*
+
+*Zutaten:*
+- 3 Salatgurken (\~1 kg)
+- 1 TL Salz (zum Entwässern)
+- **Dressing:** 4 EL (60 ml) Sojasauce, 3 EL (45 ml) Reisessig, 2 EL (30 ml) geröstetes Sesamöl, 1 EL Zucker
+- Erwachsene: 2 Knoblauchzehen, gepresst; Rayu oder Chiliflocken; 1 EL gerösteter Sesam
+
+**1. Klopfen (10 Min.)**
+*jederzeit*
+3 Gurken waschen, Enden abschneiden, längs halbieren, Kerne mit einem Teelöffel ausschaben (die Kerne sind 90 % Wasser und verwässern das Dressing). Halbierte Gurken mit der Schnittfläche nach unten auf ein Brett, mit dem Nudelholz oder dem Boden eines schweren Topfes kräftig, aber kontrolliert klopfen, bis sie aufplatzen und die Ränder ausfransen. In mundgerechte Stücke reißen oder schräg schneiden — die rauen Bruchflächen nehmen mehr Dressing auf als glatte Scheiben.
+
+**2. Entwässern (15–20 Min., passiv)**
+Stücke mit 1 TL Salz mischen, im Sieb über der Spüle 15-20 Min ziehen lassen, dann kurz abschütteln (nicht abspülen), mit Küchenpapier trocken tupfen. Das Salz zieht das Wasser raus, das sonst 30 Min später als Pfütze in der Schüssel steht.
+
+**3. Dressing (5 Min.)**
+4 EL Sojasauce, 3 EL Reisessig, 2 EL Sesamöl und 1 EL Zucker verrühren, bis der Zucker gelöst ist. **Ein Drittel** (\~3 EL) abzweigen und mit einem Drittel der Gurken mischen — die Kinder-Portion, ohne Knoblauch und Chili. In den Rest 2 gepresste Knoblauchzehen und Chili nach Geschmack, mit den übrigen Gurken mischen.
+
+**4. Ziehen lassen (30–60 Min., passiv)**
+30-60 Min im Kühlschrank, **nicht länger als 1 h** — danach werden sie wieder wässrig und die Säure wird stumpf.
+
+**5. Gurken servieren (2 Min.)**
+Direkt vor dem Servieren mit 1 EL geröstetem Sesam bestreuen, Rayu für die Erwachsenen am Tisch.
+
+### 2. Hauptgang: Miso-Tonkotsu-Ramen mit Niku-Miso
+
+*Vortag \~1,5 h, Kochtag \~2,5 h (Plan A); \~3,5 h an einem Tag (Plan B). Equipment: 14L-Topf, 6L-Topf, große Edelstahlpfanne (Wok-Ersatz), Stabmixer, feines Sieb, Mörser, Fleischthermometer, Wasserkocher.*
+
+**Die Tonkotsu-Brühe — das weiße Gold (Vortag, hält 3 Tage, Kühlschrank):**
+
+*Zutaten:*
 - 2-3 halbierte Schweinefüße (\~2-2,5 kg)
 - 1,5-2 kg Schweinehalsknochen
 - optional 200-300 g Rückenspeck
@@ -116,31 +179,50 @@
 - 5 cm Ingwer in Scheiben
 - 5-6 L Wasser (plus 2-3 L kochendes Nachfüllwasser über die Kochzeit)
 
-**Schritte:**
+**1. Wässern (1 Std., passiv)**
+*jederzeit*
+Alle Knochen und Füße (1,5-2 kg Schweinehalsknochen, 3 Schweinefüße) in den 14L-Topf, mit kaltem Wasser bedecken, 1 h stehen lassen, dabei 1× das Wasser wechseln. Das Wasser färbt sich rosa — das ist Blut aus dem Mark, das sonst als graue Flocken und als „schweiniger" Nebengeruch in der Brühe landet.
 
-**a) Wässern (1 h):** Alle Knochen und Füße in den 14L-Topf, mit kaltem Wasser bedecken, 1 h stehen lassen, dabei 1× das Wasser wechseln. Das Wasser färbt sich rosa — das ist Blut aus dem Mark, das sonst als graue Flocken und als „schweiniger" Nebengeruch in der Brühe landet.
+**2. Blanchieren (10 Min.)**
+*Herd*
+Wasser abgießen, frisches kaltes Wasser drauf, aufkochen, 10 Min stark sprudeln lassen. Es bildet sich grau-brauner Schaum, das Wasser wird trüb. Alles in die Spüle abgießen.
 
-**b) Blanchieren (10 Min):** Wasser abgießen, frisches kaltes Wasser drauf, aufkochen, 10 Min stark sprudeln lassen. Es bildet sich grau-brauner Schaum, das Wasser wird trüb. Alles in die Spüle abgießen.
+**3. Waschen (ca. 15 Min.)**
+Kritisch: Jeden Knochen und jede Fußhälfte unter fließendem kaltem Wasser mit den Daumen oder einer alten Zahnbürste abschrubben — besonders in den Gelenkspalten der Füße und im Markkanal der Halsknochen sitzen dunkle Blutklumpen. Nichts Dunkles darf übrig bleiben: Was jetzt drinbleibt, kocht 10 Stunden mit und macht die Brühe grau. Topf komplett auswaschen (der Rand ist voller Schaumreste).
 
-**c) Waschen (kritisch, \~15 Min):** Jeden Knochen und jede Fußhälfte unter fließendem kaltem Wasser mit den Daumen oder einer alten Zahnbürste abschrubben — besonders in den Gelenkspalten der Füße und im Markkanal der Halsknochen sitzen dunkle Blutklumpen. Nichts Dunkles darf übrig bleiben: Was jetzt drinbleibt, kocht 10 Stunden mit und macht die Brühe grau. Topf komplett auswaschen (der Rand ist voller Schaumreste).
+**4. Rolling Boil starten (ca. 20 Min.)**
+*Herd*
+Saubere Knochen, Füße und den optionalen 200-300 g Rückenspeck zurück in den Topf, 5-6 L kaltes Wasser drauf (Knochen 3-4 cm bedeckt), auf dem **größten Brenner** aufkochen. Wasserstand merken: Holzlöffel senkrecht reinhalten und die Höhe markieren, oder die Kelle als Maß nehmen. Dann die Hitze so einstellen, dass es **durchgehend aggressiv sprudelt** — nicht simmern. Deckel schräg auflegen (mehr Hitze im Topf, weniger Verdunstung, Dampf kann raus). In den ersten 15 Min den grauen Schaum abschöpfen; **danach nichts mehr abschöpfen**, auch kein Fett — das Fett soll durch das Sprudeln in die Brühe emulgiert werden, es ist die Cremigkeit.
 
-**d) Rolling Boil starten:** Saubere Knochen, Füße und den optionalen 200-300 g Rückenspeck zurück in den Topf, 5-6 L kaltes Wasser drauf (Knochen 3-4 cm bedeckt), auf dem **größten Brenner** aufkochen. Wasserstand merken: Holzlöffel senkrecht reinhalten und die Höhe markieren, oder die Kelle als Maß nehmen. Dann die Hitze so einstellen, dass es **durchgehend aggressiv sprudelt** — nicht simmern. Deckel schräg auflegen (mehr Hitze im Topf, weniger Verdunstung, Dampf kann raus). In den ersten 15 Min den grauen Schaum abschöpfen; **danach nichts mehr abschöpfen**, auch kein Fett — das Fett soll durch das Sprudeln in die Brühe emulgiert werden, es ist die Cremigkeit.
+**5. Wasser-Management (8–12 Std., passiv)**
+*Herd*
+Alle 45-60 Min: Beim Sprudeln verdampfen 0,5-1 L pro Stunde. Wasserkocher mit **kochendem** Wasser bereithalten und bis zur Markierung nachfüllen, sobald die obersten Knochen rausschauen. Kaltes Wasser würde den Boil unterbrechen und die Emulsion trennen. Ehrliche Einschränkung: Ein Haushaltsherd bringt 14 L nur knapp ins echte Sprudeln. Wenn der Topf trotz voller Stufe nur blubbert, Deckel fast ganz schließen (kleiner Spalt), bei 5 L statt 6 L bleiben und am Ende mit dem Stabmixer nachhelfen (siehe „Abseihen + Emulsion“). Dunstabzug an oder Fenster auf — Tonkotsu riecht 10 Stunden lang nach Schwein.
 
-**e) Wasser-Management (alle 45-60 Min):** Beim Sprudeln verdampfen 0,5-1 L pro Stunde. Wasserkocher mit **kochendem** Wasser bereithalten und bis zur Markierung nachfüllen, sobald die obersten Knochen rausschauen. Kaltes Wasser würde den Boil unterbrechen und die Emulsion trennen. Ehrliche Einschränkung: Ein Haushaltsherd bringt 14 L nur knapp ins echte Sprudeln. Wenn der Topf trotz voller Stufe nur blubbert, Deckel fast ganz schließen (kleiner Spalt), bei 5 L statt 6 L bleiben und am Ende mit dem Stabmixer nachhelfen (Schritt h). Dunstabzug an oder Fenster auf — Tonkotsu riecht 10 Stunden lang nach Schwein.
+**6. Aromaten (5 Min.)**
+*letzte 2 Std. von Wasser-Management*
+2 h vor Ende: 1 halbierte Gemüsezwiebel, 1 grob geschnittene Lauchstange, 1 halbierte Knoblauchknolle und 5 cm Ingwer in Scheiben in die sprudelnde Brühe geben. Nicht früher — nach 6+ Stunden wären sie geschmacklich weggekocht und würden nur noch bitter.
 
-**f) Aromaten (2 h vor Ende):** 1 halbierte Gemüsezwiebel, 1 grob geschnittene Lauchstange, 1 halbierte Knoblauchknolle und 5 cm Ingwer in Scheiben in die sprudelnde Brühe geben. Nicht früher — nach 6+ Stunden wären sie geschmacklich weggekocht und würden nur noch bitter.
+**7. Reifetest (ca. 5 Min.)**
+*nach Wasser-Management · fertig wenn die Brühe milchig-beige und dickflüssig ist*
+Ab 8 h, ideal 10-12 h: Fertig ist die Brühe, wenn sie **milchig-beige und dickflüssig** ist, die Löffel-Rückseite deckend überzieht und die Lippen nach dem Probieren leicht kleben (Gelatine). Die Füße zerfallen, das Fleisch fällt von den Halsknochen. Ist sie nach 8 h noch dünn und eher klar: weiterkochen, nicht nachfüllen — sie soll jetzt einkochen. Optional exakter: Refraktometer (\~15 €, für die Sorbet-Rezepte in `eis/` ohnehin nützlich), Richtwert grob 8-10 °Brix; beim ersten Mal messen, wenn der Löffel-Test passt, und den Wert notieren.
 
-**g) Reifetest (ab 8 h, ideal 10-12 h):** Fertig ist die Brühe, wenn sie **milchig-beige und dickflüssig** ist, die Löffel-Rückseite deckend überzieht und die Lippen nach dem Probieren leicht kleben (Gelatine). Die Füße zerfallen, das Fleisch fällt von den Halsknochen. Ist sie nach 8 h noch dünn und eher klar: weiterkochen, nicht nachfüllen — sie soll jetzt einkochen. Optional exakter: Refraktometer (\~15 €, für die Sorbet-Rezepte in `eis/` ohnehin nützlich), Richtwert grob 8-10 °Brix; beim ersten Mal messen, wenn der Löffel-Test passt, und den Wert notieren.
+**8. Abseihen + Emulsion (ca. 15 Min.)**
+Hitze aus. Brühe durch das feine Sieb in den 6L-Topf gießen (Passiertuch **nicht** nötig, sie soll nicht klar sein). Mit der Kelle das weiche Mark, das Gemüse und die zerfallenen Füße durchs Sieb drücken — das ist Körper. Dann **30 Sek. mit dem Stabmixer** in der heißen Brühe mixen: Das zwingt das Fett, das sich beim Stehen oben absetzt, zurück in die Emulsion (Trick aus dem Book of Ramen). Ausbeute-Ziel: **3 L**. Bei mehr: offen einkochen. Bei weniger als 2,7 L: mit kochendem Wasser strecken (sie verträgt bis \~20 % Wasser, ohne dünn zu wirken). **Nicht salzen** — das macht die Tare.
 
-**h) Abseihen + Emulsion:** Hitze aus. Brühe durch das feine Sieb in den 6L-Topf gießen (Passiertuch **nicht** nötig, sie soll nicht klar sein). Mit der Kelle das weiche Mark, das Gemüse und die zerfallenen Füße durchs Sieb drücken — das ist Körper. Dann **30 Sek. mit dem Stabmixer** in der heißen Brühe mixen: Das zwingt das Fett, das sich beim Stehen oben absetzt, zurück in die Emulsion (Trick aus dem Book of Ramen). Ausbeute-Ziel: **3 L**. Bei mehr: offen einkochen. Bei weniger als 2,7 L: mit kochendem Wasser strecken (sie verträgt bis \~20 % Wasser, ohne dünn zu wirken). **Nicht salzen** — das macht die Tare.
+**9. Wok-Fett sichern (20–30 Min., passiv)**
+Brühe 20-30 Min ruhen lassen, oben schwimmt eine Fettschicht — davon \~100-150 ml abheben, in ein Glas, kalt stellen. Das ist das Schmalz für die Wok-Durchgänge (siehe „Wok-Durchgänge“). Bei zu wenig: das gekaufte Schweineschmalz nehmen.
 
-**i) Wok-Fett sichern:** Brühe 20-30 Min ruhen lassen, oben schwimmt eine Fettschicht — davon \~100-150 ml abheben, in ein Glas, kalt stellen. Das ist das Schmalz für die Wok-Durchgänge (Schritt 7). Bei zu wenig: das gekaufte Schweineschmalz nehmen.
+**10. Abkühlen und lagern (ca. 30 Min.)**
+*nur Vortag · nach Wok-Fett sichern*
+Vortag (Plan A): Topf in die Spüle, kaltes Wasser drumherum, gelegentlich rühren, bis lauwarm (\~30 Min); abgedeckt in den Kühlschrank. Sie geliert zu einem festen Block — genau richtig.
 
-**j) Vortag (Plan A):** Topf in die Spüle, kaltes Wasser drumherum, gelegentlich rühren, bis lauwarm (\~30 Min); abgedeckt in den Kühlschrank. Sie geliert zu einem festen Block — genau richtig. Am Kochtag im 6L-Topf aufkochen, 1 Min sprudeln lassen, nochmal 15 Sek. mixen, dann auf kleiner Flamme **kochend** halten (Miso-Ramen wird sehr heiß serviert).
+**11. Brühe aufkochen (ca. 15 Min.)**
+*nur Vortag · nach Abkühlen und lagern · Herd*
+Am Kochtag im 6L-Topf aufkochen, 1 Min sprudeln lassen, nochmal 15 Sek. mixen, dann auf kleiner Flamme **kochend** halten (Miso-Ramen wird sehr heiß serviert).
 
-### 2. Die Miso-Tare (die Würzbasis)
+**Miso-Tare — die Würzbasis (Vortag, hält 2 Wochen, Kühlschrank):**
 
-**Zutaten (für 6 Schüsseln, ergibt \~300 g, Rest hält 2 Wochen im Kühlschrank):**
+*Zutaten (für 6 Schüsseln, ergibt \~300 g, Rest hält 2 Wochen im Kühlschrank):*
 - 5 EL (\~90 g) Shiro Miso (hell)
 - 3 EL (\~55 g) Aka Miso (dunkel)
 - 3 EL (45 ml) Sojasauce
@@ -151,82 +233,119 @@
 - 2 Knoblauchzehen, fein gerieben
 - 2 cm Ingwer, fein gerieben
 
-**Schritte:**
+**12. Sesam rösten (5 Min.)**
+*jederzeit · Herd*
+3 EL weiße Sesamsamen in der trockenen Pfanne bei mittlerer Hitze 3-4 Min unter Schwenken rösten, bis sie hellgold sind und nussig riechen — nicht braun, dann werden sie bitter. Im Mörser zu einer groben, leicht öligen Paste zerstoßen (alternativ Stabmixer-Becher, 20 Sek.). Das ist der Unterschied zwischen Supermarkt-Miso-Ramen und Sapporo: die Sesampaste gibt der Tare Fett, Nussigkeit und Bindung.
 
-**a) Sesam rösten:** 3 EL weiße Sesamsamen in der trockenen Pfanne bei mittlerer Hitze 3-4 Min unter Schwenken rösten, bis sie hellgold sind und nussig riechen — nicht braun, dann werden sie bitter. Im Mörser zu einer groben, leicht öligen Paste zerstoßen (alternativ Stabmixer-Becher, 20 Sek.). Das ist der Unterschied zwischen Supermarkt-Miso-Ramen und Sapporo: die Sesampaste gibt der Tare Fett, Nussigkeit und Bindung.
+**13. Tare mischen (5 Min.)**
+5 EL Shiro Miso, 3 EL Aka Miso, 3 EL Sojasauce, 1 EL Reisessig, 1 EL Wasser, 2 EL Mirin, 1 EL Sesamöl, die Sesampaste, 2 geriebene Knoblauchzehen und 2 cm geriebenen Ingwer in einer Schüssel mit dem Schneebesen zu einer homogenen, streichfähigen Paste verrühren. Sie soll dick sein wie Erdnussbutter — nicht dünner, sonst schmilzt sie im Wok, statt anzurösten.
 
-**b) Mischen:** 5 EL Shiro Miso, 3 EL Aka Miso, 3 EL Sojasauce, 1 EL Reisessig, 1 EL Wasser, 2 EL Mirin, 1 EL Sesamöl, die Sesampaste, 2 geriebene Knoblauchzehen und 2 cm geriebenen Ingwer in einer Schüssel mit dem Schneebesen zu einer homogenen, streichfähigen Paste verrühren. Sie soll dick sein wie Erdnussbutter — nicht dünner, sonst schmilzt sie im Wok, statt anzurösten.
-
-**c) Abschmecken:** 1 TL Tare in 60 ml heißem Wasser auflösen und probieren — so schmeckt sie später verdünnt. Zu flach → 1 EL Aka Miso mehr. Zu salzig → 1 EL Shiro Miso mehr (Shiro ist milder). Abgedeckt in den Kühlschrank; sie wird über Nacht runder.
+**14. Tare abschmecken (2 Min.)**
+1 TL Tare in 60 ml heißem Wasser auflösen und probieren — so schmeckt sie später verdünnt. Zu flach → 1 EL Aka Miso mehr. Zu salzig → 1 EL Shiro Miso mehr (Shiro ist milder). Abgedeckt in den Kühlschrank; sie wird über Nacht runder.
 
 **Dosierung:** 2,5 EL pro Erwachsenen-Schüssel, 1-1,5 EL pro Kinder-Schüssel (siehe Wok-Durchgänge). Nicht kochen — nur die 20 Sek. Anrösten im Wok, dann sofort Brühe drauf.
 
-### 3. Niku-Miso / Soboro (das Fleisch-Topping)
+**Niku-Miso / Soboro — das Fleisch-Topping (Kochtag früh, hält 3 Tage, Kühlschrank):**
 
-**Zutaten:**
+*Zutaten:*
 - 600 g Schweinehack
 - 1 EL (15 ml) geröstetes Sesamöl
 - 1 EL geriebener Knoblauch + Ingwer (je \~½ EL)
 - **Glasur (vormischen):** 2 EL (\~36 g) Shiro Miso, 1 EL (15 ml) Sojasauce, 1 EL (15 ml) Wasser, 1 EL Zucker
 
-**Schritte:**
+**15. Hack braten (ca. 16 Min.)**
+*jederzeit · Herd*
+600 g Schweinehack in zwei Chargen braten: Edelstahlpfanne (28 cm) mit ½ EL Sesamöl auf hoher Stufe heiß werden lassen, **300 g Hack** hineingeben, mit dem Pfannenwender flach andrücken und **2 Min liegen lassen**, bis die Unterseite braun ist. Erst dann zerkrümeln und weiterbraten, bis der Fleischsaft verdampft ist und das Hack in seinem eigenen Fett brutzelt und stellenweise knusprig wird (\~6-8 Min). Rausnehmen, mit den zweiten 300 g und dem restlichen ½ EL Sesamöl wiederholen. Zwei Chargen sind kein Perfektionismus: 600 g auf einmal kochen im eigenen Saft grau, statt zu bräunen (Bulgogi-Learning).
 
-**a) In zwei Chargen braten:** Edelstahlpfanne (28 cm) mit ½ EL Sesamöl auf hoher Stufe heiß werden lassen, **300 g Hack** hineingeben, mit dem Pfannenwender flach andrücken und **2 Min liegen lassen**, bis die Unterseite braun ist. Erst dann zerkrümeln und weiterbraten, bis der Fleischsaft verdampft ist und das Hack in seinem eigenen Fett brutzelt und stellenweise knusprig wird (\~6-8 Min). Rausnehmen, mit den zweiten 300 g und dem restlichen ½ EL Sesamöl wiederholen. Zwei Chargen sind kein Perfektionismus: 600 g auf einmal kochen im eigenen Saft grau, statt zu bräunen (Bulgogi-Learning).
+**16. Hack-Aromaten (1 Min.)**
+*Herd*
+Beide Chargen zurück in die Pfanne, Hitze auf mittel, 1 EL geriebenen Knoblauch/Ingwer 30 Sek. mitbraten, bis es duftet.
 
-**b) Aromaten:** Beide Chargen zurück in die Pfanne, Hitze auf mittel, 1 EL geriebenen Knoblauch/Ingwer 30 Sek. mitbraten, bis es duftet.
+**17. Glasieren (3 Min.)**
+*Herd*
+Die vorgemischte Glasur (2 EL Shiro Miso, 1 EL Sojasauce, 1 EL Wasser, 1 EL Zucker) über das Hack, Hitze auf mittel-niedrig, 2-3 Min rühren, bis nichts mehr flüssig ist und das Fleisch klebrig glänzt. Nicht auf hoher Stufe: Miso + Zucker setzen in Edelstahl sofort schwarz an.
 
-**c) Glasieren:** Die vorgemischte Glasur (2 EL Shiro Miso, 1 EL Sojasauce, 1 EL Wasser, 1 EL Zucker) über das Hack, Hitze auf mittel-niedrig, 2-3 Min rühren, bis nichts mehr flüssig ist und das Fleisch klebrig glänzt. Nicht auf hoher Stufe: Miso + Zucker setzen in Edelstahl sofort schwarz an.
+**18. Durchgaren-Check (1 Min.)**
+*fertig bei ≥ 72 °C Kern*
+Nach dem Knusprig-Braten ist das ohnehin erledigt, aber sicherheitshalber: keine rosa Krümel, größere Klumpen zerteilen, Kerntemperatur ≥ 72 °C (Toxoplasmose-Regel aus dem Leitfaden).
 
-**d) Durchgaren-Check:** Nach dem Knusprig-Braten ist das ohnehin erledigt, aber sicherheitshalber: keine rosa Krümel, größere Klumpen zerteilen, Kerntemperatur ≥ 72 °C (Toxoplasmose-Regel aus dem Leitfaden).
+**19. Lagern (ca. 30 Min., passiv)**
+Abkühlen lassen, **abgedeckt in den Kühlschrank** (hält 3 Tage). Es kommt kalt in den Wok — nicht vorher aufwärmen.
 
-**e) Lagern:** Abkühlen lassen, **abgedeckt in den Kühlschrank** (hält 3 Tage). Es kommt kalt in den Wok — nicht vorher aufwärmen.
+**Ajitsuke Tamago — marinierte Eier (Kochtag früh, mind. 4 h, max. 24 h, Kühlschrank):**
 
-### 4. Ajitsuke Tamago (marinierte Eier)
-
-**Zutaten:**
+*Zutaten:*
 - 6 Eier (M), aus dem Kühlschrank
 - **Blitz-Marinade:** 100 ml Sojasauce, 100 ml Wasser, 30 ml Mirin, 1 EL Zucker
 
-**Schritte:**
+**20. Eier-Marinade (ca. 30 Min.)**
+*jederzeit · Herd*
+100 ml Sojasauce, 100 ml Wasser, 30 ml Mirin und 1 EL Zucker in einem kleinen Topf erwärmen, bis der Zucker gelöst ist. Komplett abkühlen lassen — warme Marinade gart die Eier nach.
 
-**a) Marinade:** 100 ml Sojasauce, 100 ml Wasser, 30 ml Mirin und 1 EL Zucker in einem kleinen Topf erwärmen, bis der Zucker gelöst ist. Komplett abkühlen lassen — warme Marinade gart die Eier nach.
+**21. Eier kochen (ca. 12 Min.)**
+*jederzeit · Herd*
+Wasser in einem mittleren Topf sprudelnd aufkochen. Jedes Ei am stumpfen Ende mit einer Nadel anpieken (Luftkammer — verhindert Platzen und erleichtert das Pellen). 6 Eier mit einem Löffel einzeln ins Wasser gleiten lassen, Timer sofort starten, Hitze so, dass es leise sprudelt. **3 Eier nach 9:30 Min** herausfischen (Eigelb fest, aber noch nicht mehlig — für die Kinder und die Schwangere). **3 Eier nach 6:30 Min** herausfischen (wachsweich, für die übrigen Erwachsenen). Praktisch: die 6:30-Eier zuerst rausnehmen, die anderen weiterkochen lassen.
 
-**b) Kochen:** Wasser in einem mittleren Topf sprudelnd aufkochen. Jedes Ei am stumpfen Ende mit einer Nadel anpieken (Luftkammer — verhindert Platzen und erleichtert das Pellen). 6 Eier mit einem Löffel einzeln ins Wasser gleiten lassen, Timer sofort starten, Hitze so, dass es leise sprudelt. **3 Eier nach 9:30 Min** herausfischen (Eigelb fest, aber noch nicht mehlig — für die Kinder und die Schwangere). **3 Eier nach 6:30 Min** herausfischen (wachsweich, für die übrigen Erwachsenen). Praktisch: die 6:30-Eier zuerst rausnehmen, die anderen weiterkochen lassen.
+**22. Schocken + pellen (10 Min.)**
+Sofort für 5 Min in Eiswasser. Dann pellen — am besten unter Wasser oder unter dem laufenden Hahn, die Schale löst sich sauberer, und das weiche Ei reißt nicht.
 
-**c) Schocken + pellen:** Sofort für 5 Min in Eiswasser. Dann pellen — am besten unter Wasser oder unter dem laufenden Hahn, die Schale löst sich sauberer, und das weiche Ei reißt nicht.
+**23. Eier marinieren (4 Std., passiv)**
+*nach Schocken + pellen, Eier-Marinade*
+Eier in einen Gefrierbeutel, kalte Marinade drauf, Luft rausdrücken, verschließen (so sind sie rundum bedeckt, ohne Marinade zu verschwenden). **Mind. 4 h, max. 24 h im Kühlschrank** — länger wird das Eiweiß gummiartig und zu salzig. Die festen Eier vorher mit Filzstift markieren, damit beim Anrichten nichts vertauscht wird.
 
-**d) Marinieren:** Eier in einen Gefrierbeutel, kalte Marinade drauf, Luft rausdrücken, verschließen (so sind sie rundum bedeckt, ohne Marinade zu verschwenden). **Mind. 4 h, max. 24 h im Kühlschrank** — länger wird das Eiweiß gummiartig und zu salzig. Die festen Eier vorher mit Filzstift markieren, damit beim Anrichten nichts vertauscht wird.
+**24. Eier schneiden (2 Min.)**
+*nach Eier marinieren*
+Kurz vor dem Anrichten mit einem dünnen, nassen Messer **längs** halbieren (nicht sägen — ein Zug). Das GDM-Ei bleibt ganz.
 
-**e) Schneiden:** Kurz vor dem Anrichten mit einem dünnen, nassen Messer **längs** halbieren (nicht sägen — ein Zug). Das GDM-Ei bleibt ganz.
+**Gemüse-Toppings (Kochtag nachmittags, Kühlschrank):**
 
-### 5. Gemüse-Toppings
+**25. Sprossen (ca. 10 Min.)**
+*jederzeit · Herd*
+400 g Sojasprossen kurz abbrausen, abtropfen lassen. **300 g** (3 × 100 g) gehen roh in die Wok-Durchgänge — dort werden sie 1-2 Min scharf gebraten und danach 30-60 Sek. in kochender Brühe mitgekocht, also durchgegart. **\~100 g** für die GDM-Extraportion separat 2 Min in kochendem Wasser blanchieren, abgießen, mit 1 TL Sesamöl und 1 Prise Salz mischen. Rohe oder nur 30 Sek. angebratene Sprossen sind ein klassisches Listerien-/EHEC-Vehikel — der Leitfaden sagt „nur gegart". Bei der Fallback-Schüssel-Methode alle 400 g blanchieren.
 
-- **Sojasprossen:** 400 g kurz abbrausen, abtropfen lassen. **300 g** (3 × 100 g) gehen roh in die Wok-Durchgänge — dort werden sie 1-2 Min scharf gebraten und danach 30-60 Sek. in kochender Brühe mitgekocht, also durchgegart. **\~100 g** für die GDM-Extraportion separat 2 Min in kochendem Wasser blanchieren, abgießen, mit 1 TL Sesamöl und 1 Prise Salz mischen. Rohe oder nur 30 Sek. angebratene Sprossen sind ein klassisches Listerien-/EHEC-Vehikel — der Leitfaden sagt „nur gegart". Bei der Fallback-Schüssel-Methode alle 400 g blanchieren.
-- **Zwiebel für den Wok:** 1 Gemüsezwiebel (\~200 g) in feine Würfel, 3 Portionen à \~60 g.
-- **Frühlingszwiebeln:** 1 Bund in feine Ringe, 10 Min in Eiswasser (werden kross und milder), abtropfen.
-- **Mais:** 1 Dose abgießen. Kurz vor dem Servieren in der Pfanne mit 1 TL Butter 2 Min anrösten, bis einzelne Körner Farbe nehmen (Mikrowelle geht auch, schmeckt aber nur nach Dose).
-- **Butter:** 60 g in 6 Würfel à \~10 g schneiden, zurück in den Kühlschrank — sie soll **eiskalt** auf die Schüssel.
-- **Wok-Aromaten:** 3 Knoblauchzehen und 2 cm Ingwer fein reiben, in 3 Portionen à \~1 TL aufteilen.
+**26. Zwiebel für den Wok (5 Min.)**
+*jederzeit*
+1 Gemüsezwiebel (\~200 g) in feine Würfel, 3 Portionen à \~60 g.
 
-### 6. Nudeln
+**27. Frühlingszwiebeln (10 Min.)**
+*jederzeit*
+1 Bund in feine Ringe, 10 Min in Eiswasser (werden kross und milder), abtropfen.
 
+**28. Mais (5 Min.)**
+*jederzeit · Herd*
+1 Dose Zuckermais abgießen. Kurz vor dem Servieren in der Pfanne mit 1 TL Butter 2 Min anrösten, bis einzelne Körner Farbe nehmen (Mikrowelle geht auch, schmeckt aber nur nach Dose).
+
+**29. Butter (2 Min.)**
+*jederzeit*
+60 g in 6 Würfel à \~10 g schneiden, zurück in den Kühlschrank — sie soll **eiskalt** auf die Schüssel.
+
+**30. Wok-Aromaten (5 Min.)**
+*jederzeit*
+3 Knoblauchzehen und 2 cm Ingwer fein reiben, in 3 Portionen à \~1 TL aufteilen.
+
+**Nudeln und Anrichten (à la minute):**
+
+**31. Nudelwasser (ca. 15 Min.)**
+*jederzeit · Herd*
 - **Wasser:** Der zweite große Topf (6L, oder der 14er nach dem Abseihen) mit **mind. 4 L Wasser**, sprudelnd kochend, **ungesalzen** — Ramen-Nudeln werden in Japan ohne Salz gekocht, das Kansui gibt ihnen Geschmack, das Salz kommt aus der Tare.
 - **Pro Durchgang nur 2 Portionen** (Kinder: 2 × 75-100 g frisch; Durchgang 2: 75 g GDM + 150 g; Durchgang 3: 2 × 150 g; trocken jeweils \~⅔ davon). Mehr auf einmal lässt das Wasser einbrechen, die Nudeln verkleben und werden außen matschig.
 - **Zeit:** Packungsangabe **minus 10-15 Sek.** — sie garen in der kochend heißen Brühe nach. Frische dicke Nudeln \~2-2,5 Min, Hakubaku trocken \~4 Min. Die ersten 10 Sek. mit Stäbchen auseinanderrühren.
 - **Abgießen:** In ein Sieb, **kräftig ausschütteln** (Nudelwasser verdünnt die Brühe und macht sie schleimig), sofort in die Schüssel, mit den Stäbchen einmal zusammenfalten.
 - **Zwischen den Durchgängen** das Wasser wieder sprudeln lassen, bevor die nächsten Nudeln reingehen.
 
-### 7. Anrichten — Sapporo-Wok-Choreografie (3 Durchgänge à 2 Schüsseln)
+**32. Mise en Place (ca. 15 Min.)**
+*nach Lagern, Eier schneiden, Sprossen, Zwiebel für den Wok, Frühlingszwiebeln, Mais, Butter, Wok-Aromaten, Tare abschmecken, Wok-Fett sichern*
+Sapporo-Wok-Choreografie (3 Durchgänge à 2 Schüsseln). **Gefäß:** Die größte Edelstahlpfanne mit hohem Rand (28-30 cm) oder der 6L-Topf — ein echter Wok wäre ideal, geht aber auch so. Der Topf mit der kochenden Brühe steht direkt daneben, die Kelle (\~150 ml) liegt bereit.
 
-**Gefäß:** Die größte Edelstahlpfanne mit hohem Rand (28-30 cm) oder der 6L-Topf — ein echter Wok wäre ideal, geht aber auch so. Der Topf mit der kochenden Brühe steht direkt daneben, die Kelle (\~150 ml) liegt bereit.
-
-**Mise en Place (alles griffbereit, bevor der erste Durchgang startet):**
+Alles griffbereit, bevor der erste Durchgang startet:
 - 6 Schüsseln mit heißem Wasser vorgewärmt, Wasser erst unmittelbar vor dem Füllen ausschütten
 - Brühe **kochend**, Nudelwasser **sprudelnd**
 - Tare, Wok-Fett, Aromaten (3 Portionen), Zwiebelwürfel (3 × 60 g), Sprossen (3 × 100 g), Niku-Miso kalt, Eier halbiert, Mais geröstet, Frühlingszwiebeln, Butterwürfel, Rayu, Doubanjiang
 - Timer, Küchenschere (Kinder), Schneebesen
 
-**Ein Durchgang (\~3,5 Min, für 2 Erwachsenen-Schüsseln):**
+**33. Wok-Durchgänge (ca. 12 Min.)**
+*nach Mise en Place, Brühe aufkochen, Abseihen + Emulsion, Nudelwasser · 2 Pfannen*
+3 × ein Durchgang (\~3,5 Min, für 2 Erwachsenen-Schüsseln):
 
 | Zeit | Nudel-Topf | Wok-Pfanne |
 |---|---|---|
@@ -240,7 +359,7 @@
 | 3:15 | | Wok-Inhalt gleichmäßig über die Nudeln verteilen (Kelle: erst Brühe, dann die Einlage obendrauf) |
 | 3:30 | Toppings: 2 Ei-Hälften, 1 EL Mais, Frühlingszwiebeln, **1 Butterwürfel** auf den Mais; Erwachsene: Rayu am Tisch | Pfanne mit 50 ml Brühe ablöschen, Bodensatz lösen, auf die 2 Schüsseln verteilen; bei dunklen Stellen kurz auswischen |
 
-**Reihenfolge der Durchgänge:**
+*Reihenfolge der Durchgänge:*
 1. **Kinder** (2 Schüsseln): 2 × 75-100 g Nudeln, nur **2-3 EL Tare gesamt**, 600 ml Brühe, 60 g Sprossen, 3 EL Niku-Miso, kein Doubanjiang. Nudeln mit der Küchenschere in der Schüssel kürzen, 1 Eiswürfel in die Brühe. Die Kinder-Schüsseln müssen ohnehin 5 Min abkühlen — deshalb zuerst.
 2. **GDM-Schüssel + 1 Erwachsener:** 75 g + 150 g Nudeln, 5 EL Tare, 900 ml Brühe. GDM-Schüssel: **4-5 EL Niku-Miso**, die blanchierte Sprossen-Extraportion obendrauf, **ganzes festes Ei**, Mais weglassen oder 1 EL, Butter normal (Fett + Protein dämpfen die Blutzuckerspitze). Am Tisch: Toppings und Brühe zuerst, Nudeln zuletzt. Die konkrete Nudelmenge ist eine Schätzung — das Messgerät und die Ernährungsberatung entscheiden, nicht das Rezept.
 3. **Die übrigen 2 Erwachsenen:** Standard-Durchgang wie in der Tabelle.
@@ -249,59 +368,57 @@
 
 **Fallback — Schüssel-Methode (wenn der Wok-Sprint nicht drin ist):** 2,5 EL Tare (Kinder 1 EL) in die vorgewärmte Schüssel, 1 kleine Kelle heiße Brühe drauf, mit dem Schneebesen klumpenfrei rühren, mit \~420 ml **kochender** Brühe auffüllen, Nudeln rein, dann 2-3 EL heißes Niku-Miso, blanchierte Sprossen (alle 400 g blanchieren), Mais, Ei, Frühlingszwiebeln, Butter. Weniger Röstaroma, aber alle 6 Schüsseln in 4 Minuten.
 
-### 8. Vorspeise: Smashed Cucumber (Tataki Kyuri)
+### 3. Dessert: Yuzu Panna Cotta & Frucht-Kanten
 
-**Zutaten:**
-- 3 Salatgurken (\~1 kg)
-- 1 TL Salz (zum Entwässern)
-- **Dressing:** 4 EL (60 ml) Sojasauce, 3 EL (45 ml) Reisessig, 2 EL (30 ml) geröstetes Sesamöl, 1 EL Zucker
-- Erwachsene: 2 Knoblauchzehen, gepresst; Rayu oder Chiliflocken; 1 EL gerösteter Sesam
+*Vortag 45 Min. aktiv, mind. 4 Std. gesamt. Equipment: kleine eckige Dose (\~12 × 12 cm), 6 Gläser, Thermometer, Eiswasser-Schüssel.*
 
-**Schritte:**
-
-**a) Klopfen:** 3 Gurken waschen, Enden abschneiden, längs halbieren, Kerne mit einem Teelöffel ausschaben (die Kerne sind 90 % Wasser und verwässern das Dressing). Halbierte Gurken mit der Schnittfläche nach unten auf ein Brett, mit dem Nudelholz oder dem Boden eines schweren Topfes kräftig, aber kontrolliert klopfen, bis sie aufplatzen und die Ränder ausfransen. In mundgerechte Stücke reißen oder schräg schneiden — die rauen Bruchflächen nehmen mehr Dressing auf als glatte Scheiben.
-
-**b) Entwässern (15-20 Min):** Stücke mit 1 TL Salz mischen, im Sieb über der Spüle 15-20 Min ziehen lassen, dann kurz abschütteln (nicht abspülen), mit Küchenpapier trocken tupfen. Das Salz zieht das Wasser raus, das sonst 30 Min später als Pfütze in der Schüssel steht.
-
-**c) Dressing:** 4 EL Sojasauce, 3 EL Reisessig, 2 EL Sesamöl und 1 EL Zucker verrühren, bis der Zucker gelöst ist. **Ein Drittel** (\~3 EL) abzweigen und mit einem Drittel der Gurken mischen — die Kinder-Portion, ohne Knoblauch und Chili. In den Rest 2 gepresste Knoblauchzehen und Chili nach Geschmack, mit den übrigen Gurken mischen.
-
-**d) Ziehen lassen:** 30-60 Min im Kühlschrank, **nicht länger als 1 h** — danach werden sie wieder wässrig und die Säure wird stumpf. Direkt vor dem Servieren mit 1 EL geröstetem Sesam bestreuen, Rayu für die Erwachsenen am Tisch.
-
-### 9. Dessert: Yuzu Panna Cotta & Frucht-Kanten
-
-**Zutaten Panna Cotta (6 Gläser à \~120 ml):**
+*Zutaten Panna Cotta (6 Gläser à \~120 ml):*
 - 500 ml Sahne
 - 200 ml Vollmilch
 - 60 g Zucker
 - 4 Blatt Gelatine (\~6,5 g)
 - 3-4 EL (45-60 ml) Yuzu-Saft, pasteurisiert
 
-**Zutaten Frucht-Kanten:**
+*Zutaten Frucht-Kanten:*
 - 250 ml Wasser
 - 3 g Agar-Agar Pulver (\~1 gehäufter TL)
 - 2 EL Zucker
 - 1 Spritzer Zitronensaft
 - 150 g Beeren oder Fruchtstücke (Blaubeeren und Melone halten die Form; Himbeeren zerfallen beim Übergießen, dann lieber als Schicht am Boden)
 
-**Frucht-Kanten:**
+**Frucht-Kanten (Vortag, Kühlschrank):**
 
-**a)** 150 g Beeren in eine kleine eckige Dose (\~12 × 12 cm) legen — Höhe der Masse später \~1,5-2 cm.
+**1. Beeren einlegen (2 Min.)**
+*jederzeit*
+150 g Beeren in eine kleine eckige Dose (\~12 × 12 cm) legen — Höhe der Masse später \~1,5-2 cm.
 
-**b)** 250 ml Wasser, 3 g Agar-Agar, 2 EL Zucker und 1 Spritzer Zitronensaft in einem kleinen Topf mit dem Schneebesen verrühren, aufkochen, **2 Min sprudeln lassen** (Agar bindet erst, wenn es gekocht hat; die Fruchtsäure schwächt die Bindung leicht, deshalb 3 g statt 2 g).
+**2. Agar kochen (5 Min.)**
+*jederzeit · Herd*
+250 ml Wasser, 3 g Agar-Agar, 2 EL Zucker und 1 Spritzer Zitronensaft in einem kleinen Topf mit dem Schneebesen verrühren, aufkochen, **2 Min sprudeln lassen** (Agar bindet erst, wenn es gekocht hat; die Fruchtsäure schwächt die Bindung leicht, deshalb 3 g statt 2 g).
 
-**c)** 2 Min abkühlen lassen (auf \~60-70 °C, damit die Beeren nicht garen), über die Beeren gießen. Bei Raumtemperatur fest werden lassen (Agar geliert schon bei \~40 °C), dann 1 h in den Kühlschrank. In 1-cm-Würfel schneiden — die glatten Kanten sind der optische Effekt.
+**3. Kanten gelieren (ca. 1,5 Std., passiv)**
+*nach Beeren einlegen, Agar kochen*
+2 Min abkühlen lassen (auf \~60-70 °C, damit die Beeren nicht garen), über die Beeren gießen. Bei Raumtemperatur fest werden lassen (Agar geliert schon bei \~40 °C), dann 1 h in den Kühlschrank. In 1-cm-Würfel schneiden — die glatten Kanten sind der optische Effekt.
 
-**Panna Cotta:**
+**Panna Cotta (Vortag, Kühlschrank):**
 
-**d)** 4 Blatt Gelatine 5 Min in kaltem Wasser einweichen.
+**4. Gelatine einweichen (5 Min.)**
+*jederzeit*
+4 Blatt Gelatine 5 Min in kaltem Wasser einweichen.
 
-**e)** 500 ml Sahne, 200 ml Milch und 60 g Zucker in einem Topf auf **60-70 °C** erwärmen (dampft, keine Blasen) — nicht kochen, gekochte Sahne schmeckt flach und die Gelatine verliert Kraft. Vom Herd nehmen, Gelatine ausdrücken und mit dem Schneebesen einrühren, bis sie komplett gelöst ist.
+**5. Sahne erwärmen (10 Min.)**
+*nach Gelatine einweichen · Herd*
+500 ml Sahne, 200 ml Milch und 60 g Zucker in einem Topf auf **60-70 °C** erwärmen (dampft, keine Blasen) — nicht kochen, gekochte Sahne schmeckt flach und die Gelatine verliert Kraft. Vom Herd nehmen, Gelatine ausdrücken und mit dem Schneebesen einrühren, bis sie komplett gelöst ist.
 
-**f) Kaltrühren (der entscheidende Schritt):** Topf in eine Schüssel mit Eiswasser, unter gelegentlichem Rühren auf \~25-30 °C bringen, bis die Masse leicht dicklich wird (\~10 Min). Wer sie heiß in die Gläser gießt, bekommt eine Fettschicht oben und einen wässrigen Boden, weil sich Sahne und Milch beim langsamen Abkühlen trennen.
+**6. Kaltrühren (10 Min.)**
+Der entscheidende Schritt: Topf in eine Schüssel mit Eiswasser, unter gelegentlichem Rühren auf \~25-30 °C bringen, bis die Masse leicht dicklich wird (\~10 Min). Wer sie heiß in die Gläser gießt, bekommt eine Fettschicht oben und einen wässrigen Boden, weil sich Sahne und Milch beim langsamen Abkühlen trennen.
 
-**g)** Jetzt 3-4 EL Yuzu-Saft einrühren (erst bei ≤ 30 °C, damit die Säure die Milch nicht ausflockt; 3 EL für dezent, 4 EL für deutlich zitrisch). In 6 Gläser füllen, mit Folie abdecken, **mind. 4 h** in den Kühlschrank, besser über Nacht.
+**7. Yuzu & abfüllen (5 Min. + 4 Std. passiv)**
+Jetzt 3-4 EL Yuzu-Saft einrühren (erst bei ≤ 30 °C, damit die Säure die Milch nicht ausflockt; 3 EL für dezent, 4 EL für deutlich zitrisch). In 6 Gläser füllen, mit Folie abdecken, **mind. 4 h** in den Kühlschrank, besser über Nacht.
 
-**h) Servieren:** 5-6 Agar-Würfel pro Glas obendrauf, ein paar frische Beeren dazu. Konsistenz-Ziel: wackelt beim Antippen, hält aber die Form — 4 Blatt auf \~760 ml ist die weiche Glas-Version; zum Stürzen bräuchte es 6 Blatt. *(GDM: 60 g Zucker auf 6 Gläser sind \~10 g pro Portion in einer fett- und proteinreichen Matrix — eher unproblematisch, aber nach dem Essen messen.)*
+**8. Dessert servieren (5 Min.)**
+*nach Yuzu & abfüllen, Kanten gelieren*
+5-6 Agar-Würfel pro Glas obendrauf, ein paar frische Beeren dazu. Konsistenz-Ziel: wackelt beim Antippen, hält aber die Form — 4 Blatt auf \~760 ml ist die weiche Glas-Version; zum Stürzen bräuchte es 6 Blatt. *(GDM: 60 g Zucker auf 6 Gläser sind \~10 g pro Portion in einer fett- und proteinreichen Matrix — eher unproblematisch, aber nach dem Essen messen.)*
 
 ---
 
@@ -327,7 +444,7 @@
 
 | Beobachtung | Wahrscheinliche Ursache | Gegenmaßnahme / nächstes Mal |
 |---|---|---|
-| Brühe grau, metallischer Nebenton | Blut nicht ausgeschrubbt, Blanchieren zu kurz | Jetzt: nichts zu retten, mit Tare überdecken. Nächstes Mal: Schritt c) ernst nehmen, Zahnbürste, Gelenkspalten |
+| Brühe grau, metallischer Nebenton | Blut nicht ausgeschrubbt, Blanchieren zu kurz | Jetzt: nichts zu retten, mit Tare überdecken. Nächstes Mal: „Waschen“ ernst nehmen, Zahnbürste, Gelenkspalten |
 | Brühe klar/gelblich statt milchig | Kein echter Rolling Boil, zu viel Wasser, zu kurz gekocht | Deckel fast schließen, weiterkochen, am Ende Stabmixer (rettet viel) |
 | Brühe dünn, Löffel bleibt blank | Zu viel nachgefüllt, zu wenig Füße | Offen einkochen bis 2,7-3 L; nächstes Mal 3 Füße |
 | Brühe so dick, dass sie klebt | Zu stark reduziert | Mit kochendem Wasser strecken (bis 20 %), Tare-Dosis unverändert |
@@ -340,7 +457,7 @@
 | Nudeln matschig/verklebt | Zu viele auf einmal, Wasser nicht sprudelnd, Schüssel gewartet | 2 Portionen pro Durchgang, Wasser wieder aufkochen, nicht vorfüllen |
 | Eier gummiartig, zu salzig | > 24 h mariniert, Marinade unverdünnt | 1:1 mit Wasser, max. 24 h |
 | Wachsweiches Ei zerreißt beim Pellen | Nicht angepiekt, zu warm gepellt | Nadel ins stumpfe Ende, 5 Min Eiswasser, unter Wasser pellen |
-| Gurken wässrig, Dressing verdünnt | Nicht vorgesalzen, Kerne drin, > 1 h mariniert | Schritt b), max. 1 h |
+| Gurken wässrig, Dressing verdünnt | Nicht vorgesalzen, Kerne drin, > 1 h mariniert | „Entwässern“, max. 1 h |
 | Panna Cotta zweischichtig (Fett oben) | Heiß in die Gläser gegossen | Über Eiswasser kaltrühren bis dicklich |
 | Panna Cotta flockig | Yuzu zu heiß eingerührt | Erst bei ≤ 30 °C |
 | Agar-Kanten weich | Nicht 2 Min gekocht, zu viel Säure | 3 g auf 250 ml, sprudeln lassen |
@@ -349,61 +466,56 @@
 
 ## Zeitplan A — Brühe am Vortag (Standard, Essen 18:30)
 
-**Vortag**
+*nur Vortag*
 
-| Zeit | Aktion |
-|---|---|
-| 09:30 | Knochen und Füße wässern (1 h, 1× Wasser wechseln). |
-| 10:30 | Blanchieren (10 Min), abgießen, schrubben, Topf auswaschen. |
-| 11:00 | Rolling Boil starten, Wasserstand markieren. Timer alle 45-60 Min: kochendes Wasser nachfüllen. |
-| 11:30 | **Yuzu Panna Cotta + Agar-Kanten** machen, Kühlschrank. |
-| 13:00 | Miso-Tare anrühren (Sesam rösten, mörsern). Kühlschrank. |
-| 19:00 | Aromaten (Zwiebel, Lauch, Knoblauch, Ingwer) in die Brühe. |
-| 21:00 | Reifetest (10 h). Abseihen, durchdrücken, Stabmixer, auf 3 L bringen. |
-| 21:30 | Wok-Fett abheben. Brühe im Eiswasser-Bad abkühlen, Kühlschrank. |
+*Für ein Essen um 18:30 Uhr*
 
-**Kochtag**
+**Vortag:**
 
-| Zeit | Aktion |
-|---|---|
-| 12:30 | Eier-Marinade aufkochen, abkühlen lassen. |
-| 13:00 | Eier kochen (3× 6:30, 3× 9:30), Eiswasser, pellen, in die kalte Marinade, Kühlschrank. Feste Eier markieren. |
-| 14:00 | Niku-Miso in 2 Chargen braten, glasieren, Kühlschrank. |
-| 15:00 | Gemüse: Zwiebelwürfel (3 × 60 g), Wok-Aromaten (3 × 1 TL), Frühlingszwiebeln ins Eiswasser, Sprossen abbrausen (3 × 100 g + 100 g), Butterwürfel. |
-| 16:30 | Gurken klopfen, entkernen, salzen (20 Min), dann Dressing an, Kühlschrank (max. 1 h vor dem Servieren). |
-| 17:15 | Brühe im 6L-Topf aufkochen, 15 Sek. mixen, kochend halten. GDM-Sprossen blanchieren. Mais rösten. |
-| 17:45 | Topping-Station aufbauen (Mise-en-Place-Liste aus Schritt 7). Eier halbieren. |
-| 18:00 | Nudelwasser aufsetzen (4 L, ungesalzen). Schüsseln mit heißem Wasser füllen. |
-| 18:15 | **Smashed Cucumber servieren** — die Gäste essen, während der Sprint läuft. |
-| 18:20 | Durchgang 1: Kinder (Eiswürfel, Schere). |
-| 18:24 | Durchgang 2: GDM-Schüssel + 1 Erwachsener. |
-| 18:28 | Durchgang 3: die übrigen 2 Erwachsenen. |
-| 18:32 | **Alle sitzen, servieren.** |
-| 19:30 | Dessert: Panna Cotta mit Agar-Kanten. |
+- Vortag: 09:30 Wässern: Knochen und Füße wässern (1 h, 1× Wasser wechseln). · 10:30 Blanchieren (10 Min), abgießen, Waschen: schrubben, Topf auswaschen. · 11:00 Rolling Boil starten, Wasserstand markieren. Wasser-Management: Timer alle 45-60 Min, kochendes Wasser nachfüllen. · 11:30 Frucht-Kanten, Panna Cotta: **Yuzu Panna Cotta + Agar-Kanten** machen, Kühlschrank. · 13:00 Miso-Tare anrühren (Sesam rösten, mörsern; Tare mischen, Tare abschmecken). Kühlschrank. · 19:00 Aromaten: Zwiebel, Lauch, Knoblauch, Ingwer in die Brühe. · 21:00 Reifetest (10 h). Abseihen + Emulsion: abseihen, durchdrücken, Stabmixer, auf 3 L bringen. · 21:30 Wok-Fett sichern: Wok-Fett abheben. Abkühlen und lagern: Brühe im Eiswasser-Bad abkühlen, Kühlschrank.
+
+**Kochtag:**
+
+- 12:30 Uhr: Eier-Marinade: aufkochen, abkühlen lassen.
+- 13:00 Uhr: Eier kochen (3× 6:30, 3× 9:30), Schocken + pellen: Eiswasser, pellen; Eier marinieren: in die kalte Marinade, Kühlschrank. Feste Eier markieren.
+- 14:00 Uhr: Hack braten (2 Chargen), Hack-Aromaten, Glasieren, Durchgaren-Check, Lagern: Kühlschrank.
+- 15:00 Uhr: Gemüse: Zwiebel für den Wok (3 × 60 g), Wok-Aromaten (3 × 1 TL), Frühlingszwiebeln: ins Eiswasser, Sprossen: abbrausen (3 × 100 g + 100 g), Butter: Butterwürfel.
+- 16:30 Uhr: Klopfen: Gurken klopfen, entkernen; Entwässern: salzen (20 Min); Dressing an; Ziehen lassen: Kühlschrank (max. 1 h vor dem Servieren).
+- 17:15 Uhr: Brühe aufkochen: im 6L-Topf, 15 Sek. mixen, kochend halten. Sprossen (GDM-Extraportion blanchieren). Mais: rösten.
+- 17:45 Uhr: Mise en Place: Topping-Station aufbauen (Mise-en-Place-Liste aus „Mise en Place“). Eier schneiden: Eier halbieren.
+- 18:00 Uhr: Nudelwasser: aufsetzen (4 L, ungesalzen). Schüsseln mit heißem Wasser füllen.
+- 18:15 Uhr: **Gurken servieren** (Smashed Cucumber) — die Gäste essen, während der Sprint läuft.
+- 18:20 Uhr: Wok-Durchgänge: Durchgang 1 Kinder (Eiswürfel, Schere).
+- 18:24 Uhr: Durchgang 2: GDM-Schüssel + 1 Erwachsener.
+- 18:28 Uhr: Durchgang 3: die übrigen 2 Erwachsenen.
+- 18:32 Uhr: Wok-Durchgänge: **Alle sitzen, servieren.**
+- 19:30 Uhr: Dessert servieren: Panna Cotta mit Agar-Kanten.
 
 ## Zeitplan B — alles an einem Tag (Essen 18:30)
 
-Die Brühe bekommt hier nur 7-7,5 h — Untergrenze. Dafür alle Vorarbeiten am Vortag, die gehen: Knochen wässern, blanchieren und schrubben (abgetropft in Gefrierbeutel in den Kühlschrank), Panna Cotta, Tare.
+*nur Ein Tag*
 
-| Zeit | Aktion |
-|---|---|
-| 09:30 | Knochen wässern (entfällt bei Vortag-Vorbereitung → Start 10:30). |
-| 09:45 | Panna Cotta + Agar-Kanten (falls nicht am Vortag). |
-| 10:30 | Blanchieren, schrubben, Topf reinigen. |
-| 11:00 | Rolling Boil, Wasserstand markieren, Timer 45 Min. |
-| 11:30 | Eier-Marinade aufkochen; Eier kochen (3× 6:30, 3× 9:30), pellen, marinieren, Kühlschrank. |
-| 13:00 | Miso-Tare (falls nicht am Vortag). |
-| 14:00 | Niku-Miso in 2 Chargen, glasieren, Kühlschrank. |
-| 15:00 | Gemüse und Wok-Portionen vorbereiten, Butterwürfel. |
-| 16:00 | Aromaten in die Brühe. |
-| 16:30 | Gurken klopfen, salzen, marinieren. |
-| 17:45 | GDM-Sprossen blanchieren, Mais rösten, Topping-Station, Eier halbieren. |
-| 18:00 | Nudelwasser aufsetzen. |
-| 18:05 | Brühe abseihen, durchdrücken, **Stabmixer**, auf \~3 L bringen, Fett abheben (ersatzweise gekauftes Schmalz), im 6L-Topf kochend halten. |
-| 18:15 | Schüsseln vorwärmen. **Smashed Cucumber servieren.** |
-| 18:20 | Durchgang 1 (Kinder), 18:24 Durchgang 2, 18:28 Durchgang 3. |
-| 18:32 | **Servieren.** |
-| 19:30 | Dessert. |
+*Für ein Essen um 18:30 Uhr*
+
+*Die Brühe bekommt hier nur 7-7,5 h — Untergrenze. Dafür alle Vorarbeiten am Vortag, die gehen: Knochen wässern, blanchieren und schrubben (abgetropft in Gefrierbeutel in den Kühlschrank), Panna Cotta, Tare.*
+
+- 09:30 Uhr: Wässern: Knochen wässern (entfällt bei Vortag-Vorbereitung → Start 10:30).
+- 09:45 Uhr: Frucht-Kanten · Panna Cotta (falls nicht am Vortag).
+- 10:30 Uhr: Blanchieren, Waschen: schrubben, Topf reinigen.
+- 11:00 Uhr: Rolling Boil starten, Wasserstand markieren; Wasser-Management: Timer 45 Min.
+- 11:30 Uhr: Eier-Marinade: aufkochen; Eier kochen (3× 6:30, 3× 9:30), Schocken + pellen, Eier marinieren, Kühlschrank.
+- 13:00 Uhr: Sesam rösten, Tare mischen, Tare abschmecken (Miso-Tare, falls nicht am Vortag).
+- 14:00 Uhr: Hack braten (2 Chargen), Glasieren, Lagern: Kühlschrank.
+- 15:00 Uhr: Gemüse und Wok-Portionen vorbereiten: Zwiebel für den Wok, Wok-Aromaten, Frühlingszwiebeln, Sprossen, Butter: Butterwürfel.
+- 16:00 Uhr: Aromaten: in die Brühe.
+- 16:30 Uhr: Klopfen, Entwässern, Dressing: Gurken klopfen, salzen, marinieren (Ziehen lassen).
+- 17:45 Uhr: Sprossen (GDM-Extraportion blanchieren), Mais: rösten, Mise en Place: Topping-Station, Eier schneiden: halbieren.
+- 18:00 Uhr: Nudelwasser: aufsetzen.
+- 18:05 Uhr: Abseihen + Emulsion: Brühe abseihen, durchdrücken, **Stabmixer**, auf \~3 L bringen; Wok-Fett sichern: Fett abheben (ersatzweise gekauftes Schmalz), im 6L-Topf kochend halten.
+- 18:15 Uhr: Schüsseln vorwärmen. **Gurken servieren** (Smashed Cucumber).
+- 18:20 Uhr: Wok-Durchgänge: Durchgang 1 (Kinder), 18:24 Durchgang 2, 18:28 Durchgang 3.
+- 18:32 Uhr: Wok-Durchgänge: **Servieren.**
+- 19:30 Uhr: Dessert servieren.
 
 ---
 

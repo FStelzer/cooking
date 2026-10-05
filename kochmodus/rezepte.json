@@ -105,6 +105,13 @@
   "cooked": true
  },
  {
+  "path": "../gerichte/ramen-miso-tonkotsu.json",
+  "title": "Sapporo-Style Miso-Tonkotsu-Ramen — Menü (6 Schüsseln)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": true
+ },
+ {
   "path": "../gerichte/ramen-shoyu-chintan.json",
   "title": "Shoyu-Ramen mit Hähnchen-Chintan-Brühe (3 Portionen)",
   "group": "gerichte",
