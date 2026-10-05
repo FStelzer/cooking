@@ -796,13 +796,6 @@
                         {
                           "label": "Auftauen und klären",
                           "duration": {
-                            "typical": "P2D"
-                          },
-                          "text": "2 Tage"
-                        },
-                        {
-                          "label": "Auftauen und klären",
-                          "duration": {
                             "min": "PT24H",
                             "max": "PT48H"
                           },
@@ -853,16 +846,6 @@
                         "1–2 h vor Service",
                         "tropfenweise — trübt!",
                         "Vorher \\~60 ml für die Kinder-Portion abzweigen"
-                      ],
-                      "timers": [
-                        {
-                          "label": "Grundwürzung",
-                          "duration": {
-                            "min": "PT1H",
-                            "max": "PT2H"
-                          },
-                          "text": "1–2 h"
-                        }
                       ],
                       "ingredients": [
                         {
@@ -1513,15 +1496,6 @@
                       "limits": [
                         "Erst ≤30 Min. vor dem Anrichten"
                       ],
-                      "timers": [
-                        {
-                          "label": "Pralinen wälzen",
-                          "duration": {
-                            "typical": "PT30M"
-                          },
-                          "text": "30 Min."
-                        }
-                      ],
                       "ingredients": [],
                       "meta": "*jederzeit · ≤ 30 Min. vor dem Anrichten · ergibt Pralinen gewälzt · hält bis 30 Min.*",
                       "attention": "active",
@@ -1824,15 +1798,6 @@
                         "Erst unmittelbar vor dem Anrichten"
                       ],
                       "rescue": "Gebrochen? → Emulsions-Notfall in `technik/abschmecken.md`.",
-                      "timers": [
-                        {
-                          "label": "Warm halten und Limette",
-                          "duration": {
-                            "typical": "PT2H"
-                          },
-                          "text": "2 h"
-                        }
-                      ],
                       "temps": [
                         {
                           "kind": "halten",
@@ -2825,14 +2790,6 @@
                         {
                           "label": "Chips frittieren",
                           "duration": {
-                            "min": "PT1H",
-                            "max": "PT2H"
-                          },
-                          "text": "1–2 Std."
-                        },
-                        {
-                          "label": "Chips frittieren",
-                          "duration": {
                             "min": "PT2M",
                             "max": "PT3M"
                           },
@@ -2966,16 +2923,6 @@
                       },
                       "text": "Block \\~1 Std. vor Gang 3 aus dem Kühlschrank (temperiert wärmt schneller durch), an der Folie aus der Form heben, in 5 Scheiben à \\~4 cm schneiden (≈ 4 × 4 × 10 cm, \\~150 g). Kanten glatt — das ist der Look.",
                       "action": "Block \\~1 Std. vor Gang 3 aus dem Kühlschrank (temperiert wärmt schneller durch), an der Folie aus der Form heben, in 5 Scheiben à \\~4 cm schneiden (≈ 4 × 4 × 10 cm, \\~150 g).",
-                      "timers": [
-                        {
-                          "label": "Block temperieren und schneiden",
-                          "duration": {
-                            "typical": "PT1H",
-                            "estimated": true
-                          },
-                          "text": "\\~1 Std."
-                        }
-                      ],
                       "ingredients": [],
                       "meta": "*jederzeit · 1 Std. vor Gang 3*",
                       "attention": "active",
@@ -3617,14 +3564,6 @@
                         {
                           "label": "Temperieren und Teller frosten",
                           "duration": {
-                            "min": "PT10M",
-                            "max": "PT15M"
-                          },
-                          "text": "10–15 Min."
-                        },
-                        {
-                          "label": "Temperieren und Teller frosten",
-                          "duration": {
                             "typical": "PT15M"
                           },
                           "text": "15 Min."
@@ -4211,8 +4150,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T11:51:51Z",
-    "sourceHash": "bd01c29dd79d1f11",
+    "generatedAt": "2026-10-05T12:01:27Z",
+    "sourceHash": "38a26574566fbd8e",
     "quantities": [
       {
         "ingredient": "verjus",

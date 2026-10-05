@@ -344,6 +344,9 @@ def annotate_text(step: dict, text: str, ingredients: list[dict], lint: Lint, wh
         d = duration_range(m.group(0))
         if re.search(r"[Nn]ach\s*$", before):
             events.append({"at": d, "text": sentence_at(text, m.start())})
+        elif re.search(r"(hält|haltbar|bis zu|bis|≤|<|mind\.|mindestens|höchstens|max\.|maximal|alle|seit)\s*$", text[max(0, m.start() - 12): m.start()]) \
+                or re.match(r"\s*(vor\b|vorher|früher|später|lang haltbar)", text[m.end(): m.end() + 14]):
+            continue  # Haltbarkeit, Vorlauf, Obergrenze — keine Garzeit, also kein Timer
         else:
             timers.append({"label": step.get("title", "Timer"), "duration": {k: v for k, v in d.items() if k != "source"}, "text": m.group(0).strip()})
     if timers: step["timers"] = timers
