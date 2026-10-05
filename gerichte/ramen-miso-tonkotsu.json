@@ -903,12 +903,12 @@
                     {
                       "id": "gang-2-wasser-management",
                       "label": "5",
-                      "heading": "**5. Wasser-Management (8–12 Std., passiv)**",
+                      "heading": "**5. Wasser-Management (7–12 Std., passiv)**",
                       "title": "Wasser-Management",
                       "duration": {
-                        "min": "PT8H",
+                        "min": "PT7H",
                         "max": "PT12H",
-                        "source": "8–12 Std."
+                        "source": "7–12 Std."
                       },
                       "attention": "passive",
                       "text": "Alle 45-60 Min: Beim Sprudeln verdampfen 0,5-1 L pro Stunde. Wasserkocher mit **kochendem** Wasser bereithalten und bis zur Markierung nachfüllen, sobald die obersten Knochen rausschauen. Kaltes Wasser würde den Boil unterbrechen und die Emulsion trennen. Ehrliche Einschränkung: Ein Haushaltsherd bringt 14 L nur knapp ins echte Sprudeln. Wenn der Topf trotz voller Stufe nur blubbert, Deckel fast ganz schließen (kleiner Spalt), bei 5 L statt 6 L bleiben und am Ende mit dem Stabmixer nachhelfen (siehe „Abseihen + Emulsion“). Dunstabzug an oder Fenster auf — Tonkotsu riecht 10 Stunden lang nach Schwein.",
@@ -3560,8 +3560,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T19:11:18Z",
-    "sourceHash": "95fb7658da443752",
+    "generatedAt": "2026-10-05T19:29:42Z",
+    "sourceHash": "de574913259ceecb",
     "select": {
       "ablauf": "vortag"
     },

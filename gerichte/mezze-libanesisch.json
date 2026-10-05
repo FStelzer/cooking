@@ -425,6 +425,7 @@
             },
             "source": "T−75",
             "steps": [
+              "im-ofen-fertig-garen",
               "verkohlen"
             ]
           },
@@ -822,21 +823,50 @@
             {
               "id": "verkohlen",
               "label": "5",
-              "heading": "**5. Verkohlen (25 Min.)**",
+              "heading": "**5. Verkohlen (5 Min.)**",
               "title": "Verkohlen",
               "duration": {
-                "typical": "PT25M",
-                "source": "25 Min."
+                "typical": "PT5M",
+                "source": "5 Min."
               },
-              "text": "2 große Auberginen mit dem Bunsenbrenner rundum abflämmen, bis die Haut überall schwarz und blasig ist — nicht zaghaft, der Rauch ist das Gericht. Dann bei 220 °C 15–20 Min. in den Ofen, bis sie komplett kollabiert und innen butterweich sind (der Brenner allein gart das Innere nicht durch).",
+              "text": "2 große Auberginen mit dem Bunsenbrenner rundum abflämmen, bis die Haut überall schwarz und blasig ist — nicht zaghaft, der Rauch ist das Gericht.",
               "action": "2 große Auberginen mit dem Bunsenbrenner rundum abflämmen, bis die Haut überall schwarz und blasig ist — nicht zaghaft, der Rauch ist das Gericht.",
               "cues": [
-                "bis die Haut überall schwarz und blasig ist",
+                "bis die Haut überall schwarz und blasig ist"
+              ],
+              "ingredients": [
+                {
+                  "ref": "auberginen",
+                  "amount": {
+                    "text": "2 große Auberginen",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "im-ofen-fertig-garen",
+              "label": "6",
+              "heading": "**6. Im Ofen fertig garen (15–20 Min., passiv)**",
+              "title": "Im Ofen fertig garen",
+              "duration": {
+                "min": "PT15M",
+                "max": "PT20M",
+                "source": "15–20 Min."
+              },
+              "attention": "passive",
+              "text": "Dann bei 220 °C 15–20 Min. in den Ofen, bis sie komplett kollabiert und innen butterweich sind (der Brenner allein gart das Innere nicht durch).",
+              "action": "Dann bei 220 °C 15–20 Min. in den Ofen, bis sie komplett kollabiert und innen butterweich sind (der Brenner allein gart das Innere nicht durch).",
+              "cues": [
                 "bis sie komplett kollabiert und innen butterweich sind (der Brenner allein gart das Innere nicht durch"
               ],
               "timers": [
                 {
-                  "label": "Verkohlen",
+                  "label": "Im Ofen fertig garen",
                   "duration": {
                     "min": "PT15M",
                     "max": "PT20M"
@@ -851,30 +881,19 @@
                   "value": 220
                 }
               ],
-              "ingredients": [
-                {
-                  "ref": "auberginen",
-                  "amount": {
-                    "text": "2 große Auberginen",
-                    "value": 2.0,
-                    "unit": "Stück"
-                  }
-                }
-              ],
-              "meta": "*jederzeit · Ofen 220 °C*",
+              "ingredients": [],
+              "meta": "*Ofen 220 °C*",
               "claims": [
                 {
                   "resource": "oven",
                   "temp": 220
                 }
-              ],
-              "attention": "active",
-              "after": []
+              ]
             },
             {
               "id": "auberginen-abtropfen",
-              "label": "6",
-              "heading": "**6. Auberginen abtropfen (20–30 Min., passiv)**",
+              "label": "7",
+              "heading": "**7. Auberginen abtropfen (20–30 Min., passiv)**",
               "title": "Auberginen abtropfen",
               "duration": {
                 "min": "PT20M",
@@ -898,8 +917,8 @@
             },
             {
               "id": "moutabal-mischen",
-              "label": "7",
-              "heading": "**7. Moutabal mischen (5 Min.)**",
+              "label": "8",
+              "heading": "**8. Moutabal mischen (5 Min.)**",
               "title": "Moutabal mischen",
               "duration": {
                 "typical": "PT5M",
@@ -971,8 +990,8 @@
           "steps": [
             {
               "id": "paprika-roesten",
-              "label": "8",
-              "heading": "**8. Paprika rösten (20 Min.)**",
+              "label": "9",
+              "heading": "**9. Paprika rösten (20 Min.)**",
               "title": "Paprika rösten",
               "duration": {
                 "typical": "PT20M",
@@ -1009,8 +1028,8 @@
             },
             {
               "id": "walnuesse-roesten",
-              "label": "9",
-              "heading": "**9. Walnüsse rösten (5 Min.)**",
+              "label": "10",
+              "heading": "**10. Walnüsse rösten (5 Min.)**",
               "title": "Walnüsse rösten",
               "duration": {
                 "typical": "PT5M",
@@ -1052,8 +1071,8 @@
             },
             {
               "id": "muhammara-mixen",
-              "label": "10",
-              "heading": "**10. Muhammara mixen (5 Min.)**",
+              "label": "11",
+              "heading": "**11. Muhammara mixen (5 Min.)**",
               "title": "Muhammara mixen",
               "duration": {
                 "typical": "PT5M",
@@ -1136,8 +1155,8 @@
             },
             {
               "id": "muhammara-abschmecken",
-              "label": "11",
-              "heading": "**11. Muhammara abschmecken (5 Min.)**",
+              "label": "12",
+              "heading": "**12. Muhammara abschmecken (5 Min.)**",
               "title": "Muhammara abschmecken",
               "duration": {
                 "typical": "PT5M",
@@ -1168,8 +1187,8 @@
           "steps": [
             {
               "id": "labneh-salzen",
-              "label": "12",
-              "heading": "**12. Labneh salzen (5 Min.)**",
+              "label": "13",
+              "heading": "**13. Labneh salzen (5 Min.)**",
               "title": "Labneh salzen",
               "duration": {
                 "typical": "PT5M",
@@ -1201,8 +1220,8 @@
             },
             {
               "id": "labneh-abtropfen",
-              "label": "13",
-              "heading": "**13. Labneh abtropfen (12–24 Std., passiv)**",
+              "label": "14",
+              "heading": "**14. Labneh abtropfen (12–24 Std., passiv)**",
               "title": "Labneh abtropfen",
               "duration": {
                 "min": "PT12H",
@@ -1235,8 +1254,8 @@
             },
             {
               "id": "labneh-anrichten",
-              "label": "14",
-              "heading": "**14. Labneh anrichten (5 Min.)**",
+              "label": "15",
+              "heading": "**15. Labneh anrichten (5 Min.)**",
               "title": "Labneh anrichten",
               "duration": {
                 "typical": "PT5M",
@@ -1285,8 +1304,8 @@
           "steps": [
             {
               "id": "hefeteig",
-              "label": "15",
-              "heading": "**15. Hefeteig (10 Min. + 1 Std. passiv)**",
+              "label": "16",
+              "heading": "**16. Hefeteig (10 Min. + 1 Std. passiv)**",
               "title": "Hefeteig",
               "duration": {
                 "typical": "PT1H10M",
@@ -1368,8 +1387,8 @@
             },
             {
               "id": "zwiebel-salzen",
-              "label": "16",
-              "heading": "**16. Zwiebel salzen (15 Min.)**",
+              "label": "17",
+              "heading": "**17. Zwiebel salzen (15 Min.)**",
               "title": "Zwiebel salzen",
               "duration": {
                 "typical": "PT15M",
@@ -1413,8 +1432,8 @@
             },
             {
               "id": "spinat-ausdruecken",
-              "label": "17",
-              "heading": "**17. Spinat ausdrücken (10 Min.)**",
+              "label": "18",
+              "heading": "**18. Spinat ausdrücken (10 Min.)**",
               "title": "Spinat ausdrücken",
               "duration": {
                 "typical": "PT10M",
@@ -1447,8 +1466,8 @@
             },
             {
               "id": "fuellung-mischen",
-              "label": "18",
-              "heading": "**18. Füllung mischen (5 Min.)**",
+              "label": "19",
+              "heading": "**19. Füllung mischen (5 Min.)**",
               "title": "Füllung mischen",
               "duration": {
                 "typical": "PT5M",
@@ -1502,8 +1521,8 @@
             },
             {
               "id": "fatayer-formen",
-              "label": "19",
-              "heading": "**19. Fatayer formen (30 Min.)**",
+              "label": "20",
+              "heading": "**20. Fatayer formen (30 Min.)**",
               "title": "Fatayer formen",
               "duration": {
                 "typical": "PT30M",
@@ -1521,8 +1540,8 @@
             },
             {
               "id": "fatayer-vorfrosten",
-              "label": "20",
-              "heading": "**20. Fatayer vorfrosten (1–2 Std., passiv)**",
+              "label": "21",
+              "heading": "**21. Fatayer vorfrosten (1–2 Std., passiv)**",
               "title": "Fatayer vorfrosten",
               "duration": {
                 "min": "PT1H",
@@ -1546,8 +1565,8 @@
             },
             {
               "id": "fatayer-backen",
-              "label": "21",
-              "heading": "**21. Fatayer backen (20–22 Min., passiv)**",
+              "label": "22",
+              "heading": "**22. Fatayer backen (20–22 Min., passiv)**",
               "title": "Fatayer backen",
               "duration": {
                 "min": "PT20M",
@@ -1619,8 +1638,8 @@
           "steps": [
             {
               "id": "akkawi-entsalzen",
-              "label": "22",
-              "heading": "**22. Akkawi entsalzen (5 Min.)**",
+              "label": "23",
+              "heading": "**23. Akkawi entsalzen (5 Min.)**",
               "title": "Akkawi entsalzen",
               "duration": {
                 "typical": "PT5M",
@@ -1636,8 +1655,8 @@
             },
             {
               "id": "muerbteig",
-              "label": "23",
-              "heading": "**23. Mürbteig (10 Min. + 30 Min. passiv)**",
+              "label": "24",
+              "heading": "**24. Mürbteig (10 Min. + 30 Min. passiv)**",
               "title": "Mürbteig",
               "duration": {
                 "typical": "PT40M",
@@ -1708,8 +1727,8 @@
             },
             {
               "id": "kaesefuellung",
-              "label": "24",
-              "heading": "**24. Käsefüllung (10 Min.)**",
+              "label": "25",
+              "heading": "**25. Käsefüllung (10 Min.)**",
               "title": "Käsefüllung",
               "duration": {
                 "typical": "PT10M",
@@ -1778,8 +1797,8 @@
             },
             {
               "id": "sambousek-formen",
-              "label": "25",
-              "heading": "**25. Sambousek formen (30 Min.)**",
+              "label": "26",
+              "heading": "**26. Sambousek formen (30 Min.)**",
               "title": "Sambousek formen",
               "duration": {
                 "typical": "PT30M",
@@ -1801,8 +1820,8 @@
             },
             {
               "id": "sambousek-vorfrosten",
-              "label": "26",
-              "heading": "**26. Sambousek vorfrosten (1–2 Std., passiv)**",
+              "label": "27",
+              "heading": "**27. Sambousek vorfrosten (1–2 Std., passiv)**",
               "title": "Sambousek vorfrosten",
               "duration": {
                 "min": "PT1H",
@@ -1826,8 +1845,8 @@
             },
             {
               "id": "sambousek-frittieren",
-              "label": "27",
-              "heading": "**27. Sambousek frittieren (ca. 20 Min.)**",
+              "label": "28",
+              "heading": "**28. Sambousek frittieren (ca. 20 Min.)**",
               "title": "Sambousek frittieren",
               "duration": {
                 "typical": "PT20M",
@@ -1904,8 +1923,8 @@
           "steps": [
             {
               "id": "brot-rohkost-oliven",
-              "label": "28",
-              "heading": "**28. Brot, Rohkost, Oliven (10 Min.)**",
+              "label": "29",
+              "heading": "**29. Brot, Rohkost, Oliven (10 Min.)**",
               "title": "Brot, Rohkost, Oliven",
               "duration": {
                 "typical": "PT10M",
@@ -2071,8 +2090,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T18:59:09Z",
-    "sourceHash": "69adf1fbb643414d",
+    "generatedAt": "2026-10-05T19:29:42Z",
+    "sourceHash": "f5752629f069b844",
     "quantities": [
       {
         "ingredient": "tahina",

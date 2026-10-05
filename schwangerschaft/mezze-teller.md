@@ -134,47 +134,51 @@ Abschmecken & anrichten: Zitrone/Salz nachjustieren. In flacher Schale mit dem L
 
 *2 große Auberginen (\~700 g) · 60 g Tahina · 2 EL Zitronensaft · 1 kleine Knoblauchzehe · ½ TL Salz · 1–2 EL Olivenöl obenauf · optional Granatapfelkerne*
 
-**5. Verkohlen (25 Min.)**
-*jederzeit · Ofen 220 °C*
-2 Auberginen mit dem Bunsenbrenner rundum abflämmen, bis die Haut überall schwarz und blasig ist — nicht zaghaft, der Rauch ist das Gericht. Dann bei 220 °C 15–20 Min. in den Ofen, bis sie komplett kollabiert und innen butterweich sind (der Brenner allein gart das Innere nicht durch).
+**5. Verkohlen (5 Min.)**
+*jederzeit*
+2 Auberginen mit dem Bunsenbrenner rundum abflämmen, bis die Haut überall schwarz und blasig ist — nicht zaghaft, der Rauch ist das Gericht.
 
-**6. Auberginen abtropfen (20–30 Min., passiv)**
+**6. Im Ofen fertig garen (15–20 Min., passiv)**
+*Ofen 220 °C*
+Dann bei 220 °C 15–20 Min. in den Ofen, bis sie komplett kollabiert und innen butterweich sind (der Brenner allein gart das Innere nicht durch).
+
+**7. Auberginen abtropfen (20–30 Min., passiv)**
 Längs halbieren, Fruchtfleisch herausschaben (verkohlte Hautstücke penibel aussortieren), 20–30 Min. im Sieb abtropfen lassen — das Bitterwasser soll raus.
 
-**7. Moutabal mischen (5 Min.)**
+**8. Moutabal mischen (5 Min.)**
 Mit der Gabel zerdrücken, **nicht mixen** — etwas Textur bleibt. 60 g Tahina, 2 EL Zitronensaft, 1 fein geriebene Knoblauchzehe und ½ TL Salz unterrühren. Abschmecken. Anrichten mit 1–2 EL Olivenöl, optional Granatapfelkerne.
 
 **Muhammara (Vormittags, \~400 g, Kühlschrank):**
 
 *2 rote Spitzpaprika (oder 1 Glas geröstete Paprika, abgetropft \~220 g) · 100 g Walnusskerne · 40 g Semmelbrösel · 1½ EL Granatapfelsirup · 1 TL Aleppo-Pfeffer · ½ TL Kreuzkümmel · ½ TL Salz · 1 Knoblauchzehe · 3 EL Olivenöl · 1 TL Zitronensaft*
 
-**8. Paprika rösten (20 Min.)**
+**9. Paprika rösten (20 Min.)**
 *jederzeit*
 2 Spitzpaprika unter dem Ofengrill (oder mit dem Brenner) rundum schwarz rösten, 10 Min. abgedeckt in einer Schüssel dämpfen, häuten und entkernen. **Nicht abwaschen** — das spült das Röstaroma weg. *Abkürzung: Glasware abtropfen und trocken tupfen; funktioniert, schmeckt aber flacher.*
 
-**9. Walnüsse rösten (5 Min.)**
+**10. Walnüsse rösten (5 Min.)**
 *jederzeit · Herd*
 100 g Walnusskerne in der trockenen Pfanne rösten, bis sie duften. Abkühlen lassen.
 
-**10. Muhammara mixen (5 Min.)**
+**11. Muhammara mixen (5 Min.)**
 *nach Paprika rösten, Walnüsse rösten*
 Paprika, Walnüsse, 40 g Semmelbrösel, 1½ EL Granatapfelsirup, 1 TL Aleppo-Pfeffer, ½ TL Kreuzkümmel, ½ TL Salz, 1 Knoblauchzehe, 3 EL Olivenöl, 1 TL Zitronensaft mit dem Stabmixer **stoßweise** pulsen — Paste mit Biss, die Nüsse gemahlen, aber nicht zu Butter zerschlagen. Zu dick: Schluck Olivenöl. Bis abends kalt ziehen lassen.
 
-**11. Muhammara abschmecken (5 Min.)**
+**12. Muhammara abschmecken (5 Min.)**
 Abend: Balance süß (Sirup) – sauer (Sirup/Zitrone) – nussig prüfen, Salz nachziehen. Mit Olivenöl-Faden anrichten. *Bewusst am unteren Schärfe-Ende gewürzt — Aleppo-Pfeffer kommt für die Erwachsenen zusätzlich auf den Tisch.*
 
 **Labneh mit Za'atar (Vortag, \~450–500 g, Kühlschrank):**
 
 *1 kg griechischer Joghurt (10 %) · 1 TL Salz · 2 EL Olivenöl · 1–2 TL Za'atar*
 
-**12. Labneh salzen (5 Min.)**
+**13. Labneh salzen (5 Min.)**
 *jederzeit*
 1 kg Joghurt mit 1 TL Salz verrühren (**vor** dem Abtropfen salzen — zieht Molke und würzt durch statt nur oberflächlich).
 
-**13. Labneh abtropfen (12–24 Std., passiv)**
+**14. Labneh abtropfen (12–24 Std., passiv)**
 In das Passiertuch, im feinen Sieb über einer Schüssel 12–24 Std. im Kühlschrank abtropfen lassen. Nach 12 Std. prüfen: streichfähig wie Frischkäse = fertig; länger = fester.
 
-**14. Labneh anrichten (5 Min.)**
+**15. Labneh anrichten (5 Min.)**
 Flach ausstreichen, Mulde, 2 EL Olivenöl, 1–2 TL Za'atar darüber. *Für das Kind einen Klecks ohne Za'atar abzweigen — pur mit Brot die mildeste Komponente des Abends.*
 
 **Kafta (Vormittags, \~12 Stück, Kühlschrank):**
@@ -183,14 +187,14 @@ Gegrillt oder gebraten.
 
 *600 g Lamm- oder Rinderhack (\~20 % Fett) · 1 mittlere Zwiebel · ½ Bund glatte Petersilie · 1 Knoblauchzehe · 1½ TL Baharat · 1 TL Salz · ½ TL schwarzer Pfeffer · ¼ TL Piment (falls Baharat gekauft und mild) · 1 EL Olivenöl (nur Pfanne)*
 
-**15. Kafta-Masse (15 Min.)**
+**16. Kafta-Masse (15 Min.)**
 *jederzeit*
 Tag 2 mittags: 1 Zwiebel sehr fein reiben oder hacken und im Sieb **kräftig ausdrücken** — Zwiebelwasser ist der Grund, warum Kafta vom Spieß rutscht. ½ Bund Petersilie fein schneiden. 600 g Lammhack (oder Rinderhack) mit Zwiebel, Petersilie, 1 fein geriebener Knoblauchzehe, 1½ TL Baharat, 1 TL Salz, ½ TL Pfeffer 2–3 Min. **mit den Händen kneten**, bis die Masse klebrig und homogen ist (das bindet ohne Ei und ohne Brösel). Kleine Probe in der Pfanne braten, abschmecken.
 
-**16. Kafta formen (15 Min. + 1 Std. passiv)**
+**17. Kafta formen (15 Min. + 1 Std. passiv)**
 In 12 Portionen à \~50 g teilen. Mit nassen Händen zu \~10 cm langen, 2–2,5 cm dicken Rollen formen — auf flache Metallspieße gedrückt (klassisch) oder ohne Spieß als Röllchen. Abgedeckt mind. 1 Std. kühlen; dann fallen sie beim Grillen nicht auseinander.
 
-**17. Kafta garen (8–10 Min.)**
+**18. Kafta garen (8–10 Min.)**
 *nach Kafta formen · Grill · fertig bei ≥ 72 °C Kern*
 **Gasgrill:** Rost sauber und geölt, direkte Zone hoch vorgeheizt. Kafta auflegen, **2 Min. nicht bewegen**, dann alle 2 Min. um eine Vierteldrehung wenden — insgesamt 8–10 Min., bis rundum dunkel gebräunt. **Pfanne:** 1 EL Olivenöl in der schweren Pfanne stark erhitzen, in zwei Chargen 8–10 Min. rundum braten, Deckel in den letzten 2 Min. auflegen.
 
@@ -198,7 +202,7 @@ In 12 Portionen à \~50 g teilen. Mit nassen Händen zu \~10 cm langen, 2–2,5 
 
 **Dazu (Abend, à la minute):**
 
-**18. Fladen, Rohkost, Oliven (15 Min.)**
+**19. Fladen, Rohkost, Oliven (15 Min.)**
 *jederzeit*
 - **Rohkost:** 1 Gurke, 3 Karotten, 1 Bund Radieschen, 1 Paprika, 1 Kohlrabi, 2 Stangen Sellerie in Sticks/Hälften — großzügig, das ist der Hauptträger für die Dips.
 - **Vollkorn-Fladen:** 4 Fladen 3–4 Min. im Ofen aufwärmen, halbieren.

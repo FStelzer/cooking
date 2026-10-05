@@ -194,7 +194,7 @@ Kritisch: Jeden Knochen und jede Fußhälfte unter fließendem kaltem Wasser mit
 *Herd*
 Saubere Knochen, Füße und den optionalen 200-300 g Rückenspeck zurück in den Topf, 5-6 L kaltes Wasser drauf (Knochen 3-4 cm bedeckt), auf dem **größten Brenner** aufkochen. Wasserstand merken: Holzlöffel senkrecht reinhalten und die Höhe markieren, oder die Kelle als Maß nehmen. Dann die Hitze so einstellen, dass es **durchgehend aggressiv sprudelt** — nicht simmern. Deckel schräg auflegen (mehr Hitze im Topf, weniger Verdunstung, Dampf kann raus). In den ersten 15 Min den grauen Schaum abschöpfen; **danach nichts mehr abschöpfen**, auch kein Fett — das Fett soll durch das Sprudeln in die Brühe emulgiert werden, es ist die Cremigkeit.
 
-**5. Wasser-Management (8–12 Std., passiv)**
+**5. Wasser-Management (7–12 Std., passiv)**
 *Herd*
 Alle 45-60 Min: Beim Sprudeln verdampfen 0,5-1 L pro Stunde. Wasserkocher mit **kochendem** Wasser bereithalten und bis zur Markierung nachfüllen, sobald die obersten Knochen rausschauen. Kaltes Wasser würde den Boil unterbrechen und die Emulsion trennen. Ehrliche Einschränkung: Ein Haushaltsherd bringt 14 L nur knapp ins echte Sprudeln. Wenn der Topf trotz voller Stufe nur blubbert, Deckel fast ganz schließen (kleiner Spalt), bei 5 L statt 6 L bleiben und am Ende mit dem Stabmixer nachhelfen (siehe „Abseihen + Emulsion“). Dunstabzug an oder Fenster auf — Tonkotsu riecht 10 Stunden lang nach Schwein.
 

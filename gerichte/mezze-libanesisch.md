@@ -131,47 +131,51 @@ Abschmecken & anrichten: Zitrone/Salz nachjustieren. In flacher Schale mit dem L
 
 *2 große Auberginen (\~700 g) · 60 g Tahina · 2 EL Zitronensaft · 1 kleine Knoblauchzehe · ½ TL Salz · 1–2 EL Olivenöl obenauf · optional Granatapfelkerne*
 
-**5. Verkohlen (25 Min.)**
-*jederzeit · Ofen 220 °C*
-2 große Auberginen mit dem Bunsenbrenner rundum abflämmen, bis die Haut überall schwarz und blasig ist — nicht zaghaft, der Rauch ist das Gericht. Dann bei 220 °C 15–20 Min. in den Ofen, bis sie komplett kollabiert und innen butterweich sind (der Brenner allein gart das Innere nicht durch).
+**5. Verkohlen (5 Min.)**
+*jederzeit*
+2 große Auberginen mit dem Bunsenbrenner rundum abflämmen, bis die Haut überall schwarz und blasig ist — nicht zaghaft, der Rauch ist das Gericht.
 
-**6. Auberginen abtropfen (20–30 Min., passiv)**
+**6. Im Ofen fertig garen (15–20 Min., passiv)**
+*Ofen 220 °C*
+Dann bei 220 °C 15–20 Min. in den Ofen, bis sie komplett kollabiert und innen butterweich sind (der Brenner allein gart das Innere nicht durch).
+
+**7. Auberginen abtropfen (20–30 Min., passiv)**
 Längs halbieren, Fruchtfleisch herausschaben (verkohlte Hautstücke penibel aussortieren), 20–30 Min. im Sieb abtropfen lassen — das Bitterwasser soll raus.
 
-**7. Moutabal mischen (5 Min.)**
+**8. Moutabal mischen (5 Min.)**
 Mit der Gabel zerdrücken, **nicht mixen** — etwas Textur bleibt. 60 g Tahina, 2 EL Zitronensaft, 1 kleine fein geriebene Knoblauchzehe und ½ TL Salz unterrühren. Abschmecken. Anrichten mit 1–2 EL Olivenöl, optional Granatapfelkerne.
 
 **Muhammara (T-1, \~400 g, Kühlschrank):**
 
 *2 rote Spitzpaprika (oder 1 Glas geröstete Paprika, abgetropft \~220 g) · 100 g Walnusskerne · 40 g Semmelbrösel · 1½ EL Granatapfelsirup · 1 TL Aleppo-Pfeffer · ½ TL Kreuzkümmel · ½ TL Salz · 1 Knoblauchzehe · 3 EL Olivenöl · 1 TL Zitronensaft*
 
-**8. Paprika rösten (20 Min.)**
+**9. Paprika rösten (20 Min.)**
 *jederzeit*
 2 rote Spitzpaprika unter dem Ofengrill (oder mit dem Brenner) rundum schwarz rösten, 10 Min. abgedeckt in einer Schüssel dämpfen, häuten und entkernen. **Nicht abwaschen** — das spült das Röstaroma weg. *Abkürzung: Glasware abtropfen und trocken tupfen; funktioniert, schmeckt aber flacher.*
 
-**9. Walnüsse rösten (5 Min.)**
+**10. Walnüsse rösten (5 Min.)**
 *jederzeit · Herd*
 100 g Walnusskerne in der trockenen Pfanne rösten, bis sie duften. Abkühlen lassen.
 
-**10. Muhammara mixen (5 Min.)**
+**11. Muhammara mixen (5 Min.)**
 *nach Paprika rösten, Walnüsse rösten*
 Alles zusammen — Paprika, Walnüsse, 40 g Semmelbrösel, 1½ EL Granatapfelsirup, 1 TL Aleppo-Pfeffer, ½ TL Kreuzkümmel, ½ TL Salz, 1 Knoblauchzehe, 3 EL Olivenöl, 1 TL Zitronensaft — mit dem Stabmixer **stoßweise** pulsen — Paste mit Biss, die Nüsse gemahlen, aber nicht zu Butter zerschlagen. Zu dick: Schluck Olivenöl. Über Nacht kalt ziehen lassen.
 
-**11. Muhammara abschmecken (5 Min.)**
+**12. Muhammara abschmecken (5 Min.)**
 Tag 3: Balance süß (Sirup) – sauer (Sirup/Zitrone) – nussig prüfen, Salz nachziehen. Mit Olivenöl-Faden anrichten. *Bewusst am unteren Schärfe-Ende gewürzt — Aleppo-Pfeffer kommt für die Erwachsenen zusätzlich auf den Tisch.*
 
 **Labneh mit Za'atar (T-2 bis T-1, \~450–500 g, Kühlschrank):**
 
 *1 kg griechischer Joghurt (10 %) · 1 TL Salz · 2 EL Olivenöl · 1–2 TL Za'atar*
 
-**12. Labneh salzen (5 Min.)**
+**13. Labneh salzen (5 Min.)**
 *jederzeit*
 1 kg Joghurt mit 1 TL Salz verrühren (**vor** dem Abtropfen salzen — zieht Molke und würzt durch statt nur oberflächlich).
 
-**13. Labneh abtropfen (12–24 Std., passiv)**
+**14. Labneh abtropfen (12–24 Std., passiv)**
 In das Passiertuch, im feinen Sieb über einer Schüssel 12–24 Std. im Kühlschrank abtropfen lassen. Nach 12 Std. prüfen: streichfähig wie Frischkäse = fertig; länger = fester.
 
-**14. Labneh anrichten (5 Min.)**
+**15. Labneh anrichten (5 Min.)**
 Flach ausstreichen, Mulde, 2 EL Olivenöl, 1–2 TL Za'atar darüber. *Für das Kind einen Klecks ohne Za'atar abzweigen — pur mit Brot die mildeste Komponente des Abends.*
 
 **Fatayer bi sabanekh (T-1, roh eingefroren, hält Monate, Tiefkühler):**
@@ -180,33 +184,33 @@ Flach ausstreichen, Mulde, 2 EL Olivenöl, 1–2 TL Za'atar darüber. *Für das 
 
 **Teig:** *300 g Mehl · 1 TL Trockenhefe · ½ TL Salz · ½ TL Zucker · 2 EL Olivenöl · \~170 ml lauwarmes Wasser*
 
-**15. Hefeteig (10 Min. + 1 Std. passiv)**
+**16. Hefeteig (10 Min. + 1 Std. passiv)**
 *jederzeit*
 300 g Mehl, 1 TL Trockenhefe, ½ TL Salz, ½ TL Zucker, 2 EL Olivenöl und \~170 ml lauwarmes Wasser verkneten, 8–10 Min. zu einem weichen, glatten Teig. Abgedeckt \~1 Std. gehen lassen (verdoppelt).
 
 **Füllung:** *450 g frischer Spinat (oder 300 g TK, aufgetaut) · 1 große Zwiebel · 1½ EL Sumach · 2 EL Zitronensaft · 2 EL Olivenöl · Salz, Pfeffer · optional 2 EL geröstete Pinienkerne*
 
-**16. Zwiebel salzen (15 Min.)**
+**17. Zwiebel salzen (15 Min.)**
 *jederzeit*
 1 große Zwiebel fein würfeln, mit 1 TL Salz mischen, 10 Min. stehen lassen, **kräftig ausdrücken**.
 
-**17. Spinat ausdrücken (10 Min.)**
+**18. Spinat ausdrücken (10 Min.)**
 *jederzeit · Herd*
 450 g frischen Spinat kurz zusammenfallen lassen (Topf, ohne Wasser) bzw. TK-Spinat auftauen — in beiden Fällen portionsweise **sehr gut ausdrücken**, dann hacken.
 
-**18. Füllung mischen (5 Min.)**
+**19. Füllung mischen (5 Min.)**
 *nach Zwiebel salzen, Spinat ausdrücken*
 Spinat, Zwiebel, 1½ EL Sumach, 2 EL Olivenöl, Pfeffer mischen (optional 2 EL geröstete Pinienkerne). **2 EL Zitronensaft erst unmittelbar vor dem Füllen** unterrühren — eine nasse Füllung ist der Hauptgrund für aufplatzende Nähte.
 
-**19. Fatayer formen (30 Min.)**
+**20. Fatayer formen (30 Min.)**
 *nach Hefeteig, Füllung mischen*
 1. Teig in \~18 Kugeln teilen, zu Kreisen von 9–10 cm ausrollen (Arbeitsfläche nur leicht bemehlt, Ränder trocken halten).
 2. Je 1 gehäufter EL Füllung in die Mitte, den Kreis an drei Punkten fassen und über der Mitte zum Dreieck zusammenkneifen — Nähte **fest** verschließen.
 
-**20. Fatayer vorfrosten (1–2 Std., passiv)**
+**21. Fatayer vorfrosten (1–2 Std., passiv)**
 Auf dem Blech 1–2 Std. vorfrosten, dann in den Gefrierbeutel.
 
-**21. Fatayer backen (20–22 Min., passiv)**
+**22. Fatayer backen (20–22 Min., passiv)**
 *nach Fatayer vorfrosten · Ofen 200 °C*
 **Am Abend:** gefroren aufs Blech, mit Eigelb + 1 EL Wasser bestreichen, 200 °C Ober-/Unterhitze 20–22 Min. goldbraun (frisch statt gefroren: 15–18 Min.).
 
@@ -216,35 +220,35 @@ Auf dem Blech 1–2 Std. vorfrosten, dann in den Gefrierbeutel.
 
 **Teig:** *300 g Mehl · 1 TL Salz · ½ TL Zucker · 70 g weiche Butter (oder 60 ml neutrales Öl) · \~140 ml warmes Wasser*
 
-**22. Akkawi entsalzen (5 Min.)**
+**23. Akkawi entsalzen (5 Min.)**
 *jederzeit*
 Falls Akkawi beschafft (Tag 1): in \~1 cm Scheiben schneiden, in kaltem Wasser einlegen, Wasser bis Tag 2 zwei-, dreimal wechseln. Vor Verwendung probieren — er soll noch leicht salzig sein, nicht mehr aggressiv.
 
-**23. Mürbteig (10 Min. + 30 Min. passiv)**
+**24. Mürbteig (10 Min. + 30 Min. passiv)**
 *jederzeit*
 300 g Mehl, 1 TL Salz und ½ TL Zucker mischen, 70 g Butter mit den Fingerspitzen einreiben, bis es wie feuchter Sand aussieht. \~140 ml warmes Wasser zugeben, **nur kurz** zu einem glatten Teig zusammenfügen — nicht auskneten, sonst wird er zäh statt mürb. Abgedeckt 30 Min. ruhen lassen.
 
 **Füllung:** *150 g entsalzter Akkawi + 150 g Mozzarella (niedrigfeucht), beide grob gerieben · 1 Eiweiß · 2 EL gehackte Petersilie (oder 1 TL getrocknete Minze)*
 
-**24. Käsefüllung (10 Min.)**
+**25. Käsefüllung (10 Min.)**
 *nach Akkawi entsalzen*
 150 g Akkawi und 150 g Mozzarella grob reiben, mit 1 Eiweiß und 2 EL gehackter Petersilie mischen. *Fallback ohne Akkawi: 180 g Mozzarella (niedrigfeucht) + 120 g zerbröselter Feta.* Alles mischen. **Vor dem Salzen probieren** — Akkawi/Feta bringen meist genug Salz mit.
 
-**25. Sambousek formen (30 Min.)**
+**26. Sambousek formen (30 Min.)**
 *nach Mürbteig, Käsefüllung*
 1. Teig dünn ausrollen (\~2 mm), Kreise von 8–10 cm ausstechen (Glas). Teigreste neu verkneten und weiter ausrollen.
 2. Je 1 knapper TL Füllung, zum Halbmond klappen, Rand mit den Gabelzinken festdrücken und kerben. **Nicht überfüllen**, sonst platzen sie im Öl. *(Der Kerbmuster-Trick aus den Quellen — pro Füllung anders kerben — wird erst relevant, falls später eine zweite Sambousek-Füllung dazukommt, z. B. die Fleischvariante; hier reicht die Form als Unterscheidung zu den Fatayer-Dreiecken.)*
 
-**26. Sambousek vorfrosten (1–2 Std., passiv)**
+**27. Sambousek vorfrosten (1–2 Std., passiv)**
 Auf dem Blech vorfrosten, dann in den Gefrierbeutel.
 
-**27. Sambousek frittieren (ca. 20 Min.)**
+**28. Sambousek frittieren (ca. 20 Min.)**
 *nach Sambousek vorfrosten · Herd*
 **Am Abend:** kleinen Topf mit 4–5 cm neutralem Öl auf **170–175 °C** (Fleischthermometer). 4–5 Stück pro Charge, gefroren direkt ins Öl (nicht antauen): 4–5 Min. goldbraun (frisch: 2–3 Min.). Zwischen den Chargen das Öl wieder auf Temperatur kommen lassen — zu kaltes Öl macht sie fettig, zu heißes verbrennt sie außen bei rohem Teig innen. Auf Küchenpapier abtropfen.
 
 **Dazu (Abend, à la minute):**
 
-**28. Brot, Rohkost, Oliven (10 Min.)**
+**29. Brot, Rohkost, Oliven (10 Min.)**
 *jederzeit · Ofen 200 °C*
 - **Fladenbrot:** kurz im Ofen aufwärmen. Optional 1 Fladen in Ecken schneiden, mit 2 EL Olivenöl + Za'atar bestreichen, 8 Min. bei 200 °C → Chips für die Dips.
 - **Rohkost:** 1 Gurke, 3 Karotten, 1 Bund Radieschen in Sticks/Hälften.

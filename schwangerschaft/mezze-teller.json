@@ -377,6 +377,7 @@
             },
             "source": "T−60",
             "steps": [
+              "im-ofen-fertig-garen",
               "verkohlen"
             ]
           },
@@ -727,21 +728,50 @@
             {
               "id": "verkohlen",
               "label": "5",
-              "heading": "**5. Verkohlen (25 Min.)**",
+              "heading": "**5. Verkohlen (5 Min.)**",
               "title": "Verkohlen",
               "duration": {
-                "typical": "PT25M",
-                "source": "25 Min."
+                "typical": "PT5M",
+                "source": "5 Min."
               },
-              "text": "2 Auberginen mit dem Bunsenbrenner rundum abflämmen, bis die Haut überall schwarz und blasig ist — nicht zaghaft, der Rauch ist das Gericht. Dann bei 220 °C 15–20 Min. in den Ofen, bis sie komplett kollabiert und innen butterweich sind (der Brenner allein gart das Innere nicht durch).",
+              "text": "2 Auberginen mit dem Bunsenbrenner rundum abflämmen, bis die Haut überall schwarz und blasig ist — nicht zaghaft, der Rauch ist das Gericht.",
               "action": "2 Auberginen mit dem Bunsenbrenner rundum abflämmen, bis die Haut überall schwarz und blasig ist — nicht zaghaft, der Rauch ist das Gericht.",
               "cues": [
-                "bis die Haut überall schwarz und blasig ist",
+                "bis die Haut überall schwarz und blasig ist"
+              ],
+              "ingredients": [
+                {
+                  "ref": "auberginen",
+                  "amount": {
+                    "text": "2 Auberginen",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "im-ofen-fertig-garen",
+              "label": "6",
+              "heading": "**6. Im Ofen fertig garen (15–20 Min., passiv)**",
+              "title": "Im Ofen fertig garen",
+              "duration": {
+                "min": "PT15M",
+                "max": "PT20M",
+                "source": "15–20 Min."
+              },
+              "attention": "passive",
+              "text": "Dann bei 220 °C 15–20 Min. in den Ofen, bis sie komplett kollabiert und innen butterweich sind (der Brenner allein gart das Innere nicht durch).",
+              "action": "Dann bei 220 °C 15–20 Min. in den Ofen, bis sie komplett kollabiert und innen butterweich sind (der Brenner allein gart das Innere nicht durch).",
+              "cues": [
                 "bis sie komplett kollabiert und innen butterweich sind (der Brenner allein gart das Innere nicht durch"
               ],
               "timers": [
                 {
-                  "label": "Verkohlen",
+                  "label": "Im Ofen fertig garen",
                   "duration": {
                     "min": "PT15M",
                     "max": "PT20M"
@@ -756,30 +786,19 @@
                   "value": 220
                 }
               ],
-              "ingredients": [
-                {
-                  "ref": "auberginen",
-                  "amount": {
-                    "text": "2 Auberginen",
-                    "value": 2.0,
-                    "unit": "Stück"
-                  }
-                }
-              ],
-              "meta": "*jederzeit · Ofen 220 °C*",
+              "ingredients": [],
+              "meta": "*Ofen 220 °C*",
               "claims": [
                 {
                   "resource": "oven",
                   "temp": 220
                 }
-              ],
-              "attention": "active",
-              "after": []
+              ]
             },
             {
               "id": "auberginen-abtropfen",
-              "label": "6",
-              "heading": "**6. Auberginen abtropfen (20–30 Min., passiv)**",
+              "label": "7",
+              "heading": "**7. Auberginen abtropfen (20–30 Min., passiv)**",
               "title": "Auberginen abtropfen",
               "duration": {
                 "min": "PT20M",
@@ -803,8 +822,8 @@
             },
             {
               "id": "moutabal-mischen",
-              "label": "7",
-              "heading": "**7. Moutabal mischen (5 Min.)**",
+              "label": "8",
+              "heading": "**8. Moutabal mischen (5 Min.)**",
               "title": "Moutabal mischen",
               "duration": {
                 "typical": "PT5M",
@@ -876,8 +895,8 @@
           "steps": [
             {
               "id": "paprika-roesten",
-              "label": "8",
-              "heading": "**8. Paprika rösten (20 Min.)**",
+              "label": "9",
+              "heading": "**9. Paprika rösten (20 Min.)**",
               "title": "Paprika rösten",
               "duration": {
                 "typical": "PT20M",
@@ -914,8 +933,8 @@
             },
             {
               "id": "walnuesse-roesten",
-              "label": "9",
-              "heading": "**9. Walnüsse rösten (5 Min.)**",
+              "label": "10",
+              "heading": "**10. Walnüsse rösten (5 Min.)**",
               "title": "Walnüsse rösten",
               "duration": {
                 "typical": "PT5M",
@@ -957,8 +976,8 @@
             },
             {
               "id": "muhammara-mixen",
-              "label": "10",
-              "heading": "**10. Muhammara mixen (5 Min.)**",
+              "label": "11",
+              "heading": "**11. Muhammara mixen (5 Min.)**",
               "title": "Muhammara mixen",
               "duration": {
                 "typical": "PT5M",
@@ -1041,8 +1060,8 @@
             },
             {
               "id": "muhammara-abschmecken",
-              "label": "11",
-              "heading": "**11. Muhammara abschmecken (5 Min.)**",
+              "label": "12",
+              "heading": "**12. Muhammara abschmecken (5 Min.)**",
               "title": "Muhammara abschmecken",
               "duration": {
                 "typical": "PT5M",
@@ -1073,8 +1092,8 @@
           "steps": [
             {
               "id": "labneh-salzen",
-              "label": "12",
-              "heading": "**12. Labneh salzen (5 Min.)**",
+              "label": "13",
+              "heading": "**13. Labneh salzen (5 Min.)**",
               "title": "Labneh salzen",
               "duration": {
                 "typical": "PT5M",
@@ -1106,8 +1125,8 @@
             },
             {
               "id": "labneh-abtropfen",
-              "label": "13",
-              "heading": "**13. Labneh abtropfen (12–24 Std., passiv)**",
+              "label": "14",
+              "heading": "**14. Labneh abtropfen (12–24 Std., passiv)**",
               "title": "Labneh abtropfen",
               "duration": {
                 "min": "PT12H",
@@ -1140,8 +1159,8 @@
             },
             {
               "id": "labneh-anrichten",
-              "label": "14",
-              "heading": "**14. Labneh anrichten (5 Min.)**",
+              "label": "15",
+              "heading": "**15. Labneh anrichten (5 Min.)**",
               "title": "Labneh anrichten",
               "duration": {
                 "typical": "PT5M",
@@ -1190,8 +1209,8 @@
           "steps": [
             {
               "id": "kafta-masse",
-              "label": "15",
-              "heading": "**15. Kafta-Masse (15 Min.)**",
+              "label": "16",
+              "heading": "**16. Kafta-Masse (15 Min.)**",
               "title": "Kafta-Masse",
               "duration": {
                 "typical": "PT15M",
@@ -1280,8 +1299,8 @@
             },
             {
               "id": "kafta-formen",
-              "label": "16",
-              "heading": "**16. Kafta formen (15 Min. + 1 Std. passiv)**",
+              "label": "17",
+              "heading": "**17. Kafta formen (15 Min. + 1 Std. passiv)**",
               "title": "Kafta formen",
               "duration": {
                 "typical": "PT1H15M",
@@ -1303,8 +1322,8 @@
             },
             {
               "id": "kafta-garen",
-              "label": "17",
-              "heading": "**17. Kafta garen (8–10 Min.)**",
+              "label": "18",
+              "heading": "**18. Kafta garen (8–10 Min.)**",
               "title": "Kafta garen",
               "duration": {
                 "min": "PT8M",
@@ -1394,8 +1413,8 @@
           "steps": [
             {
               "id": "fladen-rohkost-oliven",
-              "label": "18",
-              "heading": "**18. Fladen, Rohkost, Oliven (15 Min.)**",
+              "label": "19",
+              "heading": "**19. Fladen, Rohkost, Oliven (15 Min.)**",
               "title": "Fladen, Rohkost, Oliven",
               "duration": {
                 "typical": "PT15M",
@@ -1583,8 +1602,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T19:00:22Z",
-    "sourceHash": "1b87c6f9bb3570ee",
+    "generatedAt": "2026-10-05T19:29:43Z",
+    "sourceHash": "bbf906a30ca71b39",
     "quantities": [
       {
         "ingredient": "tahina",

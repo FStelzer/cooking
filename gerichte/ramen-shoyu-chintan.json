@@ -612,25 +612,16 @@
             {
               "id": "tare",
               "label": "8",
-              "heading": "**8. Tare (20 Min.)**",
+              "heading": "**8. Tare (10 Min.)**",
               "title": "Tare",
               "duration": {
-                "typical": "PT20M",
-                "source": "20 Min."
+                "typical": "PT10M",
+                "source": "10 Min."
               },
-              "text": "150ml Sojasauce, 50ml Mirin, 50ml Sake, 1 EL Zucker und das Kombu-Stück (\\~5x5cm) in kleinen Topf, langsam auf \\~70-80°C — **nicht kochen**. Hitze aus, 5g Katsuobushi rein, 10 Min ziehen. Abseihen.",
+              "text": "150ml Sojasauce, 50ml Mirin, 50ml Sake, 1 EL Zucker und das Kombu-Stück (\\~5x5cm) in kleinen Topf, langsam auf \\~70-80°C — **nicht kochen**.",
               "action": "150ml Sojasauce, 50ml Mirin, 50ml Sake, 1 EL Zucker und das Kombu-Stück (\\~5x5cm) in kleinen Topf, langsam auf \\~70-80°C — **nicht kochen**.",
               "limits": [
                 "nicht kochen"
-              ],
-              "timers": [
-                {
-                  "label": "Tare",
-                  "duration": {
-                    "typical": "PT10M"
-                  },
-                  "text": "10 Min"
-                }
               ],
               "temps": [
                 {
@@ -672,14 +663,6 @@
                     "value": 1.0,
                     "unit": "EL"
                   }
-                },
-                {
-                  "ref": "katsuobushi",
-                  "amount": {
-                    "text": "5g Katsuobushi",
-                    "value": 5.0,
-                    "unit": "g"
-                  }
                 }
               ],
               "meta": "*jederzeit · Herd*",
@@ -690,7 +673,48 @@
                 }
               ],
               "attention": "attended",
+              "timers": [
+                {
+                  "label": "Tare",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
               "after": []
+            },
+            {
+              "id": "tare-ziehen-lassen",
+              "label": "9",
+              "heading": "**9. Tare ziehen lassen (10 Min., passiv)**",
+              "title": "Tare ziehen lassen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "attention": "passive",
+              "text": "Hitze aus, 5g Katsuobushi rein, 10 Min ziehen. Abseihen.",
+              "action": "Hitze aus, 5g Katsuobushi rein, 10 Min ziehen.",
+              "timers": [
+                {
+                  "label": "Tare ziehen lassen",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "katsuobushi",
+                  "amount": {
+                    "text": "5g Katsuobushi",
+                    "value": 5.0,
+                    "unit": "g"
+                  }
+                }
+              ]
             }
           ],
           "heading": "**Shoyu-Tare (am Tag, hält mehrere Tage, Kühlschrank):**",
@@ -711,8 +735,8 @@
           "steps": [
             {
               "id": "chiyu",
-              "label": "9",
-              "heading": "**9. Chiyu (15 Min.)**",
+              "label": "10",
+              "heading": "**10. Chiyu (15 Min.)**",
               "title": "Chiyu",
               "duration": {
                 "typical": "PT15M",
@@ -769,8 +793,8 @@
           "steps": [
             {
               "id": "rollen",
-              "label": "10",
-              "heading": "**10. Rollen (5 Min.)**",
+              "label": "11",
+              "heading": "**11. Rollen (5 Min.)**",
               "title": "Rollen",
               "duration": {
                 "typical": "PT5M",
@@ -785,8 +809,8 @@
             },
             {
               "id": "anbraten",
-              "label": "11",
-              "heading": "**11. Anbraten (5 Min.)**",
+              "label": "12",
+              "heading": "**12. Anbraten (5 Min.)**",
               "title": "Anbraten",
               "duration": {
                 "typical": "PT5M",
@@ -826,8 +850,8 @@
             },
             {
               "id": "schmoren",
-              "label": "12",
-              "heading": "**12. Schmoren (1,5–2 Std., passiv)**",
+              "label": "13",
+              "heading": "**13. Schmoren (1,5–2 Std., passiv)**",
               "title": "Schmoren",
               "duration": {
                 "min": "PT1H30M",
@@ -933,8 +957,8 @@
             },
             {
               "id": "abkuehlen",
-              "label": "13",
-              "heading": "**13. Abkühlen (ca. 30 Min., passiv)**",
+              "label": "14",
+              "heading": "**14. Abkühlen (ca. 30 Min., passiv)**",
               "title": "Abkühlen",
               "duration": {
                 "typical": "PT30M",
@@ -957,8 +981,8 @@
             },
             {
               "id": "chashu-schneiden",
-              "label": "14",
-              "heading": "**14. Chashu schneiden (30–40 Min., passiv)**",
+              "label": "15",
+              "heading": "**15. Chashu schneiden (30–40 Min., passiv)**",
               "title": "Chashu schneiden",
               "duration": {
                 "min": "PT30M",
@@ -1005,8 +1029,8 @@
           "steps": [
             {
               "id": "eier-kochen",
-              "label": "15",
-              "heading": "**15. Eier kochen (ca. 15 Min.)**",
+              "label": "16",
+              "heading": "**16. Eier kochen (ca. 15 Min.)**",
               "title": "Eier kochen",
               "duration": {
                 "typical": "PT15M",
@@ -1065,8 +1089,8 @@
             },
             {
               "id": "eier-marinieren",
-              "label": "16",
-              "heading": "**16. Eier marinieren (2 Std., passiv)**",
+              "label": "17",
+              "heading": "**17. Eier marinieren (2 Std., passiv)**",
               "title": "Eier marinieren",
               "duration": {
                 "typical": "PT2H",
@@ -1117,8 +1141,8 @@
           "steps": [
             {
               "id": "toppings",
-              "label": "17",
-              "heading": "**17. Toppings (ca. 15 Min.)**",
+              "label": "18",
+              "heading": "**18. Toppings (ca. 15 Min.)**",
               "title": "Toppings",
               "duration": {
                 "typical": "PT15M",
@@ -1157,8 +1181,8 @@
           "steps": [
             {
               "id": "anrichten",
-              "label": "18",
-              "heading": "**18. Anrichten (ca. 15 Min.)**",
+              "label": "19",
+              "heading": "**19. Anrichten (ca. 15 Min.)**",
               "title": "Anrichten",
               "duration": {
                 "typical": "PT15M",
@@ -1590,8 +1614,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T19:06:41Z",
-    "sourceHash": "42967e55bef784f4",
+    "generatedAt": "2026-10-05T19:29:42Z",
+    "sourceHash": "9a2ad5c59e9763d1",
     "quantities": [
       {
         "ingredient": "ramen-nudeln",

@@ -134,9 +134,12 @@ Durch feines Sieb + Mulltuch abseihen. Ergebnis: \~1,8-2L klare Brühe.
 - \~5g Katsuobushi
 - **KEINE getrocknete Shiitake** (siehe Learnings — verstärkt Pilznote unnötig)
 
-**8. Tare (20 Min.)**
+**8. Tare (10 Min.)**
 *jederzeit · Herd*
-150ml Sojasauce, 50ml Mirin, 50ml Sake, 1 EL Zucker und das Kombu-Stück (\~5x5cm) in kleinen Topf, langsam auf \~70-80°C — **nicht kochen**. Hitze aus, 5g Katsuobushi rein, 10 Min ziehen. Abseihen.
+150ml Sojasauce, 50ml Mirin, 50ml Sake, 1 EL Zucker und das Kombu-Stück (\~5x5cm) in kleinen Topf, langsam auf \~70-80°C — **nicht kochen**.
+
+**9. Tare ziehen lassen (10 Min., passiv)**
+Hitze aus, 5g Katsuobushi rein, 10 Min ziehen. Abseihen.
 
 **Dosierung:** \~3 EL Tare auf 400ml Brühe. Für Kleinkind 1,5 EL.
 
@@ -147,7 +150,7 @@ Durch feines Sieb + Mulltuch abseihen. Ergebnis: \~1,8-2L klare Brühe.
 - 4-5 Knoblauchzehen, fein gehackt
 - Grüne Frühlingszwiebel-Enden
 
-**9. Chiyu (15 Min.)**
+**10. Chiyu (15 Min.)**
 *nach Fett abschöpfen · Herd*
 \~100ml Hühnerfett, 4-5 fein gehackte Knoblauchzehen und die Frühlingszwiebel-Enden in kleinen Topf, mittlere Hitze, 10-15 Min bis goldbraun (NICHT schwarz!). Abseihen.
 
@@ -166,24 +169,24 @@ Durch feines Sieb + Mulltuch abseihen. Ergebnis: \~1,8-2L klare Brühe.
 - 4cm Ingwer in Scheiben
 - 1 Frühlingszwiebel
 
-**10. Rollen (5 Min.)**
+**11. Rollen (5 Min.)**
 *jederzeit*
 Optional rollen mit Küchengarn, oder am Stück lassen.
 
-**11. Anbraten (5 Min.)**
+**12. Anbraten (5 Min.)**
 *Herd*
 500-700g Schweinebauch: Pfanne ohne Öl, von allen Seiten braun (\~5 Min).
 
-**12. Schmoren (1,5–2 Std., passiv)**
+**13. Schmoren (1,5–2 Std., passiv)**
 *Herd*
 Marinade (100ml Sojasauce, 50ml Sake, 50ml Mirin, 300ml Wasser, 3 EL Zucker, 4 Knoblauchzehen, 4cm Ingwer, 1 Frühlingszwiebel) in kleinen Topf (gerade passend), aufkochen, Fleisch rein, Hitze runter, **Deckel drauf**, 1,5-2h sanft simmern. Alle 30 Min wenden.
 
 **Wichtig:** Fleisch muss **nicht** komplett bedeckt sein — 1/2 bis 2/3 reicht. Bei zu wenig: Backpapier-Cartouche direkt aufs Fleisch legen.
 
-**13. Abkühlen (ca. 30 Min., passiv)**
+**14. Abkühlen (ca. 30 Min., passiv)**
 In Marinade abkühlen lassen.
 
-**14. Chashu schneiden (30–40 Min., passiv)**
+**15. Chashu schneiden (30–40 Min., passiv)**
 *≤ 40 Min. vor dem Anrichten*
 30-40 Min vor Servieren ins **Gefrierfach** (gefriert nicht, aber Fett wird fest → saubere dünne Scheiben). Vor Servieren kurz in Pfanne anbraten oder mit Bunsenbrenner anrösten.
 
@@ -193,17 +196,17 @@ In Marinade abkühlen lassen.
 - 6 Eier
 - \~300ml abgekühlte Chashu-Marinade
 
-**15. Eier kochen (ca. 15 Min.)**
+**16. Eier kochen (ca. 15 Min.)**
 *jederzeit · Herd*
 Wasser kochen, 6 Eier direkt aus dem Kühlschrank rein. **6:30 Min** für cremig-flüssig. Für Kleinkind **9-10 Min** für festen Kern. Sofort in Eiswasser, 5 Min, pellen.
 
-**16. Eier marinieren (2 Std., passiv)**
+**17. Eier marinieren (2 Std., passiv)**
 *nach Eier kochen, Abkühlen*
 In Gefrierbeutel mit \~300ml kalter (!) Chashu-Marinade, Luft raus, mind. 2h besser über Nacht.
 
 **Toppings (am Tag):**
 
-**17. Toppings (ca. 15 Min.)**
+**18. Toppings (ca. 15 Min.)**
 *jederzeit*
 - **Frühlingszwiebeln** fein schneiden, in kaltes Wasser (wird kross)
 - **Pilze** (Shimeji empfohlen, Enoki eher meiden): kurz in Butter/Öl anbraten
@@ -212,7 +215,7 @@ In Gefrierbeutel mit \~300ml kalter (!) Chashu-Marinade, Luft raus, mind. 2h bes
 
 **Anrichten — Choreografie (à la minute):**
 
-**18. Anrichten (ca. 15 Min.)**
+**19. Anrichten (ca. 15 Min.)**
 *nach Abseihen, Tare, Chiyu, Chashu schneiden, Eier marinieren, Toppings · Herd*
 **Mise en Place** komplett bereitstellen, Schüsseln mit heißem Wasser vorwärmen.
 
