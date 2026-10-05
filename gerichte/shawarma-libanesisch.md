@@ -1,6 +1,8 @@
 # Hähnchen-Shawarma, libanesisch — mit Toum, Tabbouleh und Batata harra (4 Portionen)
 
-*Variante A (Pfanne): ~1,5 Std. aktiv am Kochtag + Marinieren über Nacht + ~30 Min. Toum am Vortag. Variante B (Kastenform-Stack): verteilt auf 2 Tage. Equipment: schwere Pfanne (Guss/Edelstahl), Stabmixer + hohes schmales Gefäß (Toum), Backblech, 20-cm-Kastenform (nur Variante B), Fleischthermometer (nur Variante B).*
+*Aktive Zeit \~2 Std., gesamt über Nacht + \~2 Std. Variante A (Pfanne): \~1,5 Std. aktiv am Kochtag + Marinieren über Nacht + \~30 Min. Toum am Vortag. Variante B (Kastenform-Stack): verteilt auf 2 Tage. Equipment: schwere Pfanne (Guss/Edelstahl), Stabmixer + hohes schmales Gefäß (Toum), Backblech, 20-cm-Kastenform (nur Variante B), Fleischthermometer (nur Variante B).*
+
+*Varianten: Garmethode = Pfanne | Kastenform*
 
 Beiruter Straßen-Shawarma in der schlanken Ausführung: sehr dünnes, sehr frisches Fladenbrot, dünn mit Toum bestrichen, ein Hauch Tahinsauce, punktuell Shatta, dazu mariniertes Hähnchen und salzige Essiggurken — und **sonst nichts**. Der Wrap wird straff gewickelt und in der trockenen Pfanne flach und knusprig gepresst. Beilagen kommen auf den Teller, nicht in den Wrap: Tabbouleh und Batata harra.
 
@@ -23,149 +25,216 @@ Beiruter Straßen-Shawarma in der schlanken Ausführung: sehr dünnes, sehr fris
 
 > **Laden noch nicht identifiziert** (Raum Dietzenbach/Offenbach — suchen, Sortiment prüfen, danach die Einkaufsquellen in CLAUDE.md ergänzen). Bis dahin gilt für jede Position der genannte Fallback.
 
-- [ ] Markook/Saj-Fladenbrot, 8 Stück *(Fallback: 1 Paket Yufka/Lavash aus dem REWE-Türkei-Regal)*
-- [ ] 7-Gewürz/Baharat, 1 kleine Dose *(Fallback: selbst mischen — je ½ TL Piment, Zimt, gem. Koriander, Kumin, Pfeffer, ¼ TL Nelke + Muskat)*
+- [ ] 8 Stück Markook/Saj-Fladenbrot *(Fallback: 1 Paket Yufka/Lavash aus dem REWE-Türkei-Regal)*
+- [ ] 7-Gewürz/Baharat *(1 kleine Dose; Fallback: selbst mischen — je ½ TL Piment, Zimt, gem. Koriander, Kumin, Pfeffer, ¼ TL Nelke + Muskat)*
 - [ ] Feiner Bulgur Nr. 1, kleinste Packung *(Fallback: REWE-Bulgur fein; grober Bulgur geht NICHT fürs Tabbouleh)*
-- [ ] Salzige Essiggurken (Salz-Dill, NICHT süß-sauer), 1 großes Glas *(Fallback: polnische/russische Salzgurken, gibt es im REWE Center)*
-- [ ] Rosa eingelegte Rüben (*kabees lift*), 1 Glas — optional *(Fallback: weglassen)*
-- [ ] Tahina, libanesische/palästinensische Marke, großes Glas *(Fallback: REWE-Tahin — funktioniert, oft aber bitterer; sparsamer dosieren)*
-- [ ] Shatta, 1 Glas — falls vorhanden *(Fallback: selbst ansetzen, siehe Box im Rezept → dann 150 g rote Chilis frisch dazukaufen)*
-- [ ] Aleppo-Pfeffer/Pul biber, 1 Packung *(Fallback: Pul biber gibt es auch im REWE-Türkei-Regal)*
+- [ ] Salzige Essiggurken *(1 großes Glas; Salz-Dill, NICHT süß-sauer; Fallback: polnische/russische Salzgurken, gibt es im REWE Center)*
+- [ ] Optional: 1 Glas rosa eingelegte Rüben *(kabees lift; Fallback: weglassen)*
+- [ ] Tahina, libanesische/palästinensische Marke *(1 großes Glas; Fallback: REWE-Tahin — funktioniert, oft aber bitterer; sparsamer dosieren)*
+- [ ] 1 Glas Shatta, falls vorhanden *(Fallback: selbst ansetzen, siehe „Shatta“ → dann 150 g rote Chilis frisch dazukaufen)*
+- [ ] 1 Packung Aleppo-Pfeffer/Pul biber *(Fallback: Pul biber gibt es auch im REWE-Türkei-Regal)*
 
 ### REWE Center
 
-**Kühltheke / Fleisch:**
-- [ ] 1,4–1,5 kg Hähnchenschenkel mit Knochen (≈ 8 Stück → ergibt ~1 kg entbeint; **für Variante B doppelte Menge**)
-- [ ] 500 g griechischer Joghurt (10 %; gebraucht: ~150 g)
+**Fleisch & Fisch:**
+- [ ] 1,4–1,5 kg Hähnchenschenkel mit Knochen *(≈ 8 Stück → ergibt \~1 kg entbeint; **für Variante B doppelte Menge**)*
 
-**Obst / Gemüse:**
-- [ ] 7 Zitronen (unbehandelt; Gesamtverbrauch siehe Mengen-Check)
-- [ ] 3 Knollen Knoblauch (Toum allein frisst ~1 Knolle)
+**Milchprodukte & Eier:**
+- [ ] 500 g griechischer Joghurt *(10 %; gebraucht: \~150 g)*
+
+**Obst & Gemüse:**
+- [ ] 7 Zitronen *(unbehandelt; Gesamtverbrauch siehe Mengen-Check)*
+- [ ] 3 Knollen Knoblauch *(Toum allein frisst \~1 Knolle)*
 - [ ] 800 g mehligkochende Kartoffeln
-- [ ] 3 Bund glatte Petersilie (fürs Tabbouleh — wirklich 3)
+- [ ] 3 Bund glatte Petersilie *(fürs Tabbouleh — wirklich 3)*
 - [ ] 1 Bund Minze
-- [ ] 1 Bund Koriander (nur für die Batata harra)
+- [ ] 1 Bund Koriander *(nur für die Batata harra)*
 - [ ] 1 Bund Frühlingszwiebeln
 - [ ] 3 feste Tomaten
-- [ ] 150 g frische rote Chilis *(nur falls Shatta selbst angesetzt wird)*
+- [ ] Optional: 150 g frische rote Chilis *(nur falls Shatta selbst angesetzt wird)*
 
-**Trockenwaren / Gewürze:**
-- [ ] 750 ml neutrales Öl (Sonnenblume/Raps — Toum + Marinade + Braten)
-- [ ] Olivenöl (Vorrat prüfen: ~150 ml gebraucht)
-- [ ] Weißweinessig oder Apfelessig (Vorrat prüfen: 2–3 EL)
-- [ ] Edelsüßes Paprikapulver, Kumin, gem. Koriander, Koriandersaat, Cayenne (Vorrat prüfen)
+**Trockenwaren:**
+- [ ] 750 ml neutrales Öl *(Sonnenblume/Raps — Toum, Marinade, Braten)*
+
+### Vorrat prüfen
+
+- [ ] Olivenöl *(\~150 ml gebraucht)*
+- [ ] Weißweinessig oder Apfelessig *(2–3 EL)*
+- [ ] Edelsüßes Paprikapulver
+- [ ] Kumin
+- [ ] Koriandersaat, gemahlen
+- [ ] Cayenne
+- [ ] Salz
+- [ ] Schwarzer Pfeffer
 
 ## Zubereitung
 
-### 1. Hähnchen entbeinen & marinieren (Vortag, ~30 Min.)
+**Hähnchen (Vortag, hält bis 24 Std., Kühlschrank):**
 
-Schenkel entbeinen und enthäuten (Knochen + Haut einfrieren → Brühen-Vorrat). Fleisch flach lassen, nicht schneiden — geschnitten wird nach dem Marinieren.
+**1. Entbeinen (ca. 20 Min.)**
+*jederzeit*
+1,4–1,5 kg Hähnchenschenkel entbeinen und enthäuten (Knochen + Haut einfrieren → Brühen-Vorrat). Fleisch flach lassen, nicht schneiden — geschnitten wird nach dem Marinieren.
 
+**2. Marinade (10 Min.)**
+*jederzeit*
 **Marinade** verrühren:
 - 150 g griechischer Joghurt
 - 3 EL Zitronensaft + 1 EL Weißweinessig
 - 4 Knoblauchzehen, fein gerieben
 - 2 EL Baharat/7-Gewürz
-- 1 TL edelsüßes Paprikapulver, 1 TL Kumin, 1 TL gem. Koriander
+- 1 TL edelsüßes Paprikapulver, 1 TL Kumin, 1 TL gem. Koriandersaat
 - ¼ TL Cayenne — **nicht mehr**, die Schärfe kommt aus der Shatta am Teller
 - 2 EL neutrales Öl, 1,5 TL Salz, viel schwarzer Pfeffer
 
+**3. Marinieren (über Nacht, passiv)**
+*nach Entbeinen, Marinade*
 Fleisch gründlich darin wenden, abgedeckt **über Nacht** (mind. 8, gern 24 Std.) in den Kühlschrank.
 
-### 2. Toum (Vortag, 15 Min. — hält 3–4 Wochen)
+**Toum (Vortag, hält 3–4 Wochen, Kühlschrank):**
 
+**4. Toum (15 Min.)**
+*jederzeit*
 Moderate Menge, nach der Stub-Warnung („roher Knoblauch heftiger als erwartet"): **1 Knolle**, nicht mehr.
 
-- 1 Knolle Knoblauch, geschält, Keime entfernt (~50–60 g Zehen)
+- 1 Knolle Knoblauch, geschält, Keime entfernt (\~50–60 g Zehen)
 - 1 TL Salz
 - 3 EL Zitronensaft
 - 250 ml neutrales Öl (kein Olivenöl — wird bitter und bricht leichter)
 - 1 EL eiskaltes Wasser
 
-**Technik (Stabmixer, gegen das Brechen):** Alles zusammen in ein **hohes, schmales Gefäß**, das kaum breiter ist als der Mixfuß. Stabmixer ganz auf den Boden aufsetzen, auf höchster Stufe starten und **30–60 Sek. unten lassen, ohne zu heben** — unten bildet sich die weiße Emulsion. Erst dann langsam (über ~30 Sek.) nach oben ziehen, bis alles weiß und fluffig ist. Häufigster Fehler ist zu frühes Anheben. Falls es doch bricht: 1 EL der gebrochenen Masse mit 1 EL Eiswasser im sauberen Gefäß neu starten, Rest langsam wieder einarbeiten.
+**Technik (Stabmixer, gegen das Brechen):** Alles zusammen in ein **hohes, schmales Gefäß**, das kaum breiter ist als der Mixfuß. Stabmixer ganz auf den Boden aufsetzen, auf höchster Stufe starten und **30–60 Sek. unten lassen, ohne zu heben** — unten bildet sich die weiße Emulsion. Erst dann langsam (über \~30 Sek.) nach oben ziehen, bis alles weiß und fluffig ist. Häufigster Fehler ist zu frühes Anheben. Falls es doch bricht: 1 EL der gebrochenen Masse mit 1 EL Eiswasser im sauberen Gefäß neu starten, Rest langsam wieder einarbeiten.
 
 **Schärfe-Optionen:** Toum wird über Nacht im Kühlschrank runder und milder — auch deshalb am Vortag machen. Wer es von vornherein sanfter will: Zehen 60 Sek. in kochendes Wasser, eiskalt abschrecken, **gründlich trocken tupfen** (Wasser stört die Emulsion), dann wie beschrieben — kostet etwas von der rohen Aggressivität, die Emulsion funktioniert trotzdem.
 
-### 3. Shatta — kaufen oder ansetzen
+**Shatta-Ansatz (2–3 Tage vorher, hält Wochen, Kühlschrank):**
 
-**Erste Wahl: kaufen**, falls der orientalische Laden sie führt. Sonst:
+**5. Shatta (10 Min.)**
+*jederzeit*
+Kaufen oder ansetzen — **erste Wahl: kaufen**, falls der orientalische Laden sie führt. Sonst:
 
 > **Shatta-Selbstansatz (10 Min. + 2–3 Tage Reifung):** 150 g rote Chilis entstielen, grob hacken, mit 1 TL Salz im schmalen Gefäß per Stabmixer zur groben Paste pulsen (nicht fein pürieren). 1 EL Essig + 1 EL Zitronensaft unterrühren. In ein sauberes Glas, Oberfläche mit Olivenöl bedecken, 2–3 Tage bei Raumtemperatur anziehen lassen, dann kühlen. Hält Wochen. Ab Tag 1 verwendbar, wird mit Reifung runder.
 
-### 4. Tahinsauce (Kochtag, 5 Min.)
+**Tahinsauce (Kochtag):**
 
+**6. Tahinsauce (5 Min.)**
+*jederzeit*
 3 EL Tahina mit 3 EL Zitronensaft verrühren — sie zieht erst fest an (normal), dann **esslöffelweise kaltes Wasser** einrühren (4–6 EL), bis sie dünn vom Löffel läuft: Konsistenz Sahne, nicht Creme. 1 kleine Knoblauchzehe gerieben, Salz. Sie ist hier nur ein Hauch im Wrap, keine Hauptsauce.
 
-### 5. Tabbouleh (Kochtag, 45 Min. — komplett kalt vorbereitbar)
+**Tabbouleh (Kochtag, 45 Min. — komplett kalt vorbereitbar):**
 
 Verhältnis **4 Teile Kräuter : 1 Teil Bulgur** — der Bulgur ist Textur, nicht Basis. **Kein Koriander.**
 
-- 50 g feiner Bulgur (Nr. 1) kalt abspülen. **Nicht kochen:** mit dem Saft von 1 Zitrone (~4 EL) und den austretenden Tomatenwürfel-Säften 30 Min. quellen lassen.
-- 3 Bund glatte Petersilie: Blätter zupfen, **trocken schleudern/tupfen** (nasses Kraut = matschiges Tabbouleh), fein schneiden — schneiden, nicht hacken, sonst wird es Brei. Ergibt ~150 g. Von der Minze die Blätter von ½ Bund ebenso fein schneiden.
-- 3 Tomaten entkernen, fein würfeln. 2 Frühlingszwiebeln in feine Ringe (Kinder-Hinweis: sparsam, Rest als Topping für die Erwachsenen).
-- Alles mischen, 4 EL Olivenöl, Salz. Abschmecken: es soll deutlich zitronig sein. Erst kurz vor dem Essen final salzen, sonst zieht es Wasser.
+**7. Bulgur quellen (30 Min., passiv)**
+*jederzeit*
+50 g feiner Bulgur (Nr. 1) kalt abspülen. **Nicht kochen:** mit dem Saft von 1 Zitrone (\~4 EL) und den austretenden Tomatenwürfel-Säften 30 Min. quellen lassen.
 
-### 6. Batata harra (Kochtag, Ofen ~50 Min., parallel)
+**8. Kräuter schneiden (15 Min.)**
+*jederzeit*
+3 Bund glatte Petersilie: Blätter zupfen, **trocken schleudern/tupfen** (nasses Kraut = matschiges Tabbouleh), fein schneiden — schneiden, nicht hacken, sonst wird es Brei. Ergibt \~150 g. Von der Minze die Blätter von ½ Bund ebenso fein schneiden.
 
-- 800 g mehligkochende Kartoffeln schälen, in 2-cm-Würfel, 10 Min. in kaltem Salzwasser wässern, **sehr gründlich trocknen**. Mit 2 EL Olivenöl und Salz auf dem Blech verteilen, 220 °C Ober-/Unterhitze ~35–40 Min. rösten, nach 20 Min. wenden, bis tief goldbraun. (Ofen statt Fritteuse — funktioniert, siehe Quellen.)
-- **Dressing in ZWEI Pfannen** (Paneer-Learning — Schärfe pro Teller ersetzt eingekochte Schärfe nicht, also umgekehrt: Kinder-Öl ganz ohne Chili):
-  - *Pfanne 1 (Erwachsene):* 3 EL Olivenöl sanft erwärmen, 3 Zehen Knoblauch fein gehackt + 1 TL gemahlene Koriandersaat + 1–2 TL Aleppo-Pfeffer/Pul biber 1–2 Min. ziehen lassen (Knoblauch nicht bräunen).
-  - *Pfanne 2 (Kind, klein):* 1 EL Olivenöl, 1 Zehe Knoblauch, ½ TL Koriandersaat — **kein Chili**.
-- Heiße Kartoffeln aufteilen, jeweils im Öl schwenken, gehackten frischen Koriander (¾ Bund) darüber, Spritzer Zitrone (insgesamt 1–2 EL), Salz.
+**9. Tomaten & Zwiebeln (10 Min.)**
+*jederzeit*
+3 Tomaten entkernen, fein würfeln. 2 Frühlingszwiebeln in feine Ringe (Kinder-Hinweis: sparsam, Rest als Topping für die Erwachsenen).
 
-### 7. Garmethode A — Pfanne (erster Durchgang)
+**10. Tabbouleh mischen (5 Min.)**
+*nach Bulgur quellen, Kräuter schneiden, Tomaten & Zwiebeln*
+Alles mischen, 4 EL Olivenöl, Salz. Abschmecken: es soll deutlich zitronig sein. Erst kurz vor dem Essen final salzen, sonst zieht es Wasser.
 
-1. Mariniertes Fleisch in fingerbreite Streifen schneiden. Grobe Marinade abstreifen (was dranbleibt, bleibt dran — nur keine Pfützen).
-2. Schwere Pfanne **sehr heiß** werden lassen, 1 EL neutrales Öl (vor jeder weiteren Portion bei Bedarf nachölen — insgesamt ~3 EL).
-3. **In 3–4 Portionen braten, Pfanne nie überladen** — zu viel Fleisch auf einmal, und es kocht im Joghurt statt zu rösten. Pro Portion: einlegen, 2–3 Min. **nicht bewegen** (Kruste!), dann wenden und 2–3 Min. fertig braten, bis die Kanten dunkel karamellisiert sind. Zwischen den Portionen Pfanne wieder richtig heiß werden lassen.
-4. Fertige Portionen im 80-°C-Ofen warm halten. Vor dem Wickeln kurz durchmischen, damit sich Säfte und Röstkanten verteilen.
+**Batata harra (Kochtag, Ofen \~50 Min., parallel):**
 
-### 8. Garmethode B — Kastenform-Stack (für später, 2 Tage)
+**11. Kartoffeln vorbereiten (15 Min.)**
+*jederzeit*
+800 g mehligkochende Kartoffeln schälen, in 2-cm-Würfel, 10 Min. in kaltem Salzwasser wässern, **sehr gründlich trocknen**.
+
+**12. Kartoffeln rösten (35–40 Min., passiv)**
+*nach Kartoffeln vorbereiten · Ofen 220 °C*
+Mit 2 EL Olivenöl und Salz auf dem Blech verteilen, 220 °C Ober-/Unterhitze \~35–40 Min. rösten, nach 20 Min. wenden, bis tief goldbraun. (Ofen statt Fritteuse — funktioniert, siehe Quellen.)
+
+**13. Würzöle (5 Min.)**
+*jederzeit · 2 Pfannen*
+**Dressing in ZWEI Pfannen** (Paneer-Learning — Schärfe pro Teller ersetzt eingekochte Schärfe nicht, also umgekehrt: Kinder-Öl ganz ohne Chili):
+- *Pfanne 1 (Erwachsene):* 3 EL Olivenöl sanft erwärmen, 3 Zehen Knoblauch fein gehackt + 1 TL gemahlene Koriandersaat + 1–2 TL Aleppo-Pfeffer/Pul biber 1–2 Min. ziehen lassen (Knoblauch nicht bräunen).
+- *Pfanne 2 (Kind, klein):* 1 EL Olivenöl, 1 Zehe Knoblauch, ½ TL Koriandersaat — **kein Chili**.
+
+**14. Kartoffeln schwenken (5 Min.)**
+*nach Kartoffeln rösten, Würzöle*
+Heiße Kartoffeln aufteilen, jeweils im Öl schwenken, gehackten frischen Koriander (¾ Bund) darüber, Spritzer Zitrone (insgesamt 1–2 EL), Salz.
+
+**Garmethode A — Pfanne (Kochtag, erster Durchgang):**
+
+**15. Fleisch schneiden (10 Min.)**
+*nur Pfanne · nach Marinieren*
+Mariniertes Fleisch in fingerbreite Streifen schneiden. Grobe Marinade abstreifen (was dranbleibt, bleibt dran — nur keine Pfützen).
+
+**16. Portionen braten (ca. 20 Min.)**
+*nur Pfanne · Herd*
+1. Schwere Pfanne **sehr heiß** werden lassen, 1 EL neutrales Öl (vor jeder weiteren Portion bei Bedarf nachölen — insgesamt \~3 EL).
+2. **In 3–4 Portionen braten, Pfanne nie überladen** — zu viel Fleisch auf einmal, und es kocht im Joghurt statt zu rösten. Pro Portion: einlegen, 2–3 Min. **nicht bewegen** (Kruste!), dann wenden und 2–3 Min. fertig braten, bis die Kanten dunkel karamellisiert sind. Zwischen den Portionen Pfanne wieder richtig heiß werden lassen.
+3. Fertige Portionen im 80-°C-Ofen warm halten. Vor dem Wickeln kurz durchmischen, damit sich Säfte und Röstkanten verteilen.
+
+**Garmethode B — Kastenform-Stack (Vortag, hält 3–4 Tage, Kühlschrank):**
 
 Die echte geschabte Shawarma-Textur mit karamellisierten Kanten, die Variante A nicht liefert. **Direkt doppelte Menge garen** (2 kg entbeint, Marinade verdoppeln) — der Block hält sich gekühlt 3–4 Tage und lässt sich portionsweise hobeln.
 
+**17. Block schichten (20 Min.)**
+*nur Kastenform · nach Marinieren*
 1. Marinierte Schenkel einzeln flach klopfen.
 2. 20-cm-Kastenform mit Backpapier auslegen (Überhang lassen). Schenkel **quer und dicht** einschichten, jede Lage fest andrücken — je kompakter, desto schnittfester der Block. Papierüberhang darüberschlagen, mit Alufolie abdecken.
-3. Bei **170 °C** Ober-/Unterhitze garen bis **Kerntemperatur >75 °C** in der Blockmitte (Thermometer! je nach Füllhöhe ~60–90 Min.).
-4. Aus dem Ofen, ausgetretenen Fond **auffangen und aufheben**. Block in der Form beschweren (zweite Kastenform + Dosen drauf) und **über Nacht durchkühlen** — erst dadurch wird er schnittfest. Warm schneiden funktioniert nicht.
-5. Am Essenstag: Block stürzen, mit scharfem Messer **sehr dünn** aufschneiden bzw. hobeln (Mandoline geht bei kaltem, festem Block — Finger!). Scheiben portionsweise in der heißen Pfanne im eigenen Fett + 1–2 EL des aufgefangenen Fonds knusprig nachrösten.
 
-### 9. Wickeln & Pressen
+**18. Block garen (60–90 Min., passiv)**
+*nur Kastenform · Ofen 170 °C · fertig bei > 75 °C Kern*
+Bei **170 °C** Ober-/Unterhitze garen bis **Kerntemperatur >75 °C** in der Blockmitte (Thermometer! je nach Füllhöhe \~60–90 Min.).
 
-1. Fladenbrot einzeln kurz erwärmen (5 Sek. pro Seite in der trockenen Pfanne) — warm wickelt es sich ohne zu brechen. Yufka braucht etwas länger und darf leicht anfeuchten (nasse Hand drüberstreichen).
+**19. Block pressen (über Nacht, passiv)**
+*nur Kastenform*
+Aus dem Ofen, ausgetretenen Fond **auffangen und aufheben**. Block in der Form beschweren (zweite Kastenform + Dosen drauf) und **über Nacht durchkühlen** — erst dadurch wird er schnittfest. Warm schneiden funktioniert nicht.
+
+**20. Block hobeln & rösten (20 Min.)**
+*nur Kastenform · Herd*
+Am Essenstag: Block stürzen, mit scharfem Messer **sehr dünn** aufschneiden bzw. hobeln (Mandoline geht bei kaltem, festem Block — Finger!). Scheiben portionsweise in der heißen Pfanne im eigenen Fett + 1–2 EL des aufgefangenen Fonds knusprig nachrösten.
+
+**Wraps (à la minute):**
+
+**21. Wickeln & Pressen (ca. 20 Min.)**
+*nach Portionen braten, Block hobeln & rösten, Toum, Tahinsauce, Tabbouleh mischen, Kartoffeln schwenken · Herd*
+1. Fladenbrot (8 Stück) einzeln kurz erwärmen (5 Sek. pro Seite in der trockenen Pfanne) — warm wickelt es sich ohne zu brechen. Yufka braucht etwas länger und darf leicht anfeuchten (nasse Hand drüberstreichen).
 2. **Dünn** Toum auf die ganze Fläche streichen, einen Streifen Tahinsauce, für Erwachsene punktuell Shatta.
-3. Hähnchen als **kompakten Riegel** ins untere Drittel, Gurkenscheiben (längs geviertelt) daneben, optional rosa Rüben. **Nicht überfüllen** — der Beirut-Wrap ist dünn, eher Zigarre als Burrito.
+3. Hähnchen als **kompakten Riegel** ins untere Drittel, Essiggurken-Scheiben (längs geviertelt) daneben, optional rosa Rüben. **Nicht überfüllen** — der Beirut-Wrap ist dünn, eher Zigarre als Burrito.
 4. Untere Kante über die Füllung, Seiten einschlagen, dann **straff** aufrollen — bei jeder Umdrehung die Füllung mit den Fingerspitzen zurückdrücken.
 5. Wraps mit der Naht nach unten in die trockene, mittelheiße Pfanne. Mit einem zweiten Topf/einer Pfanne **flach pressen**, 2–3 Min. pro Seite, bis die Oberfläche knusprig und fleckig gebräunt ist. Halbieren, sofort servieren — Tabbouleh und Batata harra daneben auf den Teller, nicht in den Wrap.
 
-## Zeitplan
+## Zeitplan Pfanne
 
-### Variante A (Empfehlung erster Durchgang)
+*nur Pfanne*
 
-**Vortag (abends, ~45 Min. aktiv):**
-- Schenkel entbeinen, Marinade anrühren, Fleisch einlegen → Kühlschrank
-- Toum machen → Kühlschrank (wird über Nacht milder)
-- Falls Shatta selbst: eigentlich schon 2–3 Tage vorher ansetzen — sonst jetzt, geht ab Tag 1
+Variante A (Empfehlung erster Durchgang):
 
-**Kochtag:**
-- **–2:00** Petersilie/Minze waschen und trocknen lassen, Bulgur mit Zitrone/Tomatenwasser quellen
-- **–1:15** Ofen auf 220 °C, Kartoffeln vorbereiten und rein
-- **–1:00** Tabbouleh fertig schneiden und mischen (Salz erst am Ende), Tahinsauce anrühren, Gurken schneiden, Fleisch aus dem Kühlschrank (Raumtemperatur brät besser)
-- **–0:40** Kinder-Öl und Erwachsenen-Öl für die Batata harra ansetzen
-- **–0:30** Fleisch in 3–4 Portionen braten, im 80-°C-Ofen sammeln (Kartoffeln sind dann raus)
-- **–0:10** Kartoffeln in zwei Pfannen schwenken; parallel Wraps wickeln und pressen
-- **0:00** Essen — Wraps halbiert, Beilagen auf dem Teller, Shatta und restliches Toum am Tisch
+- Vorabend: Entbeinen, Marinade, Marinieren (Schenkel entbeinen, Marinade anrühren, Fleisch einlegen → Kühlschrank, \~45 Min. aktiv) · Toum (→ Kühlschrank, wird über Nacht milder) · Shatta: falls selbst, eigentlich schon 2–3 Tage vorher ansetzen — sonst jetzt, geht ab Tag 1
 
-### Variante B (2 Tage)
+| Zeit | Schritt |
+|---|---|
+| T−2:00 | Petersilie/Minze waschen und trocknen lassen, Bulgur mit Zitrone/Tomatenwasser quellen |
+| T−1:15 | Ofen auf 220 °C, Kartoffeln vorbereiten und rein |
+| T−1:00 | Tabbouleh fertig schneiden und mischen (Salz erst am Ende), Tahinsauce anrühren, Gurken schneiden, Fleisch aus dem Kühlschrank (Raumtemperatur brät besser) |
+| T−0:40 | Kinder-Öl und Erwachsenen-Öl für die Batata harra ansetzen |
+| T−0:30 | Fleisch in 3–4 Portionen braten, im 80-°C-Ofen sammeln (Kartoffeln sind dann raus) |
+| T−0:10 | Kartoffeln in zwei Pfannen schwenken; parallel Wraps wickeln und pressen |
+| T−0 | Essen — Wraps halbiert, Beilagen auf dem Teller, Shatta und restliches Toum am Tisch |
 
-- **Tag 1, morgens:** entbeinen + marinieren (8+ Std. reichen)
-- **Tag 1, abends:** Kastenform schichten, garen bis >75 °C Kern, beschweren → über Nacht kühlen. Toum machen, Shatta-Check.
-- **Tag 2:** Beilagen-Ablauf wie Kochtag Variante A; statt Braten: Block hobeln und portionsweise knusprig rösten (–0:20). Rest identisch.
+## Zeitplan Kastenform
+
+*nur Kastenform*
+
+Variante B (2 Tage):
+
+- Vortag: Entbeinen + marinieren, morgens (8+ Std. reichen)
+- Vorabend: Kastenform schichten, garen bis >75 °C Kern, beschweren → über Nacht kühlen (Block schichten · Block garen · Block pressen). Toum, Shatta-Check.
+- Am Tag: Beilagen-Ablauf wie Kochtag Variante A; statt Braten: Block hobeln und portionsweise knusprig rösten (–0:20). Rest identisch.
 
 ## Kinder-Anpassung
 
 - **Marinade ist mild by design** (¼ TL Cayenne auf 1 kg ist Aroma, keine Schärfe) — Schärfe kommt ausschließlich über die Shatta am Teller. Kinder-Wrap: Toum nur hauchdünn (roher Knoblauch!) oder stattdessen pur Joghurt, Hähnchen, Gurke.
-- **Batata harra: zwei Pfannen, konsequent** (siehe Schritt 6). Die Kinderportion bekommt nur Knoblauch-Koriander-Öl — das Paneer-Learning war genau, dass „Schärfe am Teller nachrüsten" in die eine Richtung nicht funktioniert; umgekehrt (mild abzweigen, bevor Chili reinkommt) schon.
+- **Batata harra: zwei Pfannen, konsequent** (siehe „Würzöle“). Die Kinderportion bekommt nur Knoblauch-Koriander-Öl — das Paneer-Learning war genau, dass „Schärfe am Teller nachrüsten" in die eine Richtung nicht funktioniert; umgekehrt (mild abzweigen, bevor Chili reinkommt) schon.
 - **Tabbouleh:** Frühlingszwiebel sparsam in die Basis, Rest als Topping für die Erwachsenen. Sauer + Kräuter kann beim Kind gut ankommen, ist aber kein sicherer Treffer — Gurken, Brot und mildes Hähnchen sind es.
 - Ein kleiner, locker gewickelter Kinder-Wrap, nur kurz gepresst (innen nicht zu heiß servieren).
 
@@ -178,7 +247,7 @@ Die echte geschabte Shawarma-Textur mit karamellisierten Kanten, die Variante A 
 ## Quellen & Entscheidungen
 
 - **Garmethode für den ersten Durchgang: A (Pfanne).** Schnell, verlässlich, gutes Aufwand/Wow-Verhältnis — passt zum Repo-Learning „Aufwand ≠ Wow". B bleibt vollständig dokumentiert; die Kastenform-Methode ist als Heim-Ersatz für den Vertikalspieß etabliert ([Feel Good Foodie](https://feelgoodfoodie.net/recipe/chicken-shawarma/) beschreibt sie explizit).
-- **Shatta: kaufen, falls der Laden sie führt** — Selbstansatz nur als Fallback (Box in Schritt 3). Ein gutes gekauftes Glas ist konsistenter als der erste eigene Ansatz.
+- **Shatta: kaufen, falls der Laden sie führt** — Selbstansatz nur als Fallback (Box in „Shatta“). Ein gutes gekauftes Glas ist konsistenter als der erste eigene Ansatz.
 - **Tabbouleh UND Batata harra beide ausgearbeitet**, weil Tabbouleh kalt vorbereitbar ist und die Ofen-Kartoffeln weitgehend passiv laufen. Streichkandidat ist die Batata harra (Begründung in den Notizen).
 - **Toum moderat: 1 Knolle auf 250 ml Öl.** Die Stub-Warnung (roher Knoblauch heftiger als erwartet, bleibt stundenlang präsent) spricht gegen die klassischen Großrezepte mit 1 Cup Knoblauch auf 3 Cups Öl. Kleinmengen-Ratio und Stabmixer-Bodentechnik nach [Hungry Paprikas — 5-Minute Toum](https://www.hungrypaprikas.com/5-minute-toum/) und [Forks and Foliage](https://forksandfoliage.com/easiest-toum-garlic-dip/); Blanchier-Option als dokumentierte Entschärfung.
 - **Getrennt vom Mezze-Abend** (`mezze-libanesisch.md`); Abgrenzung: Tabbouleh, Batata harra und Toum gehören hierher. Kombination zum großen Menü bleibt möglich, dann eine Beilage streichen.
@@ -198,11 +267,11 @@ Fünf Zutaten stecken in mehreren Komponenten — Gesamtverbrauch (der Fehler vo
 
 | Zutat | Marinade | Toum | Tahinsauce | Tabbouleh | Batata harra | **Summe** |
 |---|---|---|---|---|---|---|
-| **Zitronensaft** | 3 EL | 3 EL | 3 EL | 4 EL | 1–2 EL | **~14–15 EL ≈ 5–6 Zitronen** → 7 kaufen |
-| **Knoblauch** | 4 Zehen | 10–12 Zehen (1 Knolle) | 1 Zehe | — | 4 Zehen | **~20 Zehen ≈ 2 Knollen** → 3 kaufen |
+| **Zitronensaft** | 3 EL | 3 EL | 3 EL | 4 EL | 1–2 EL | **\~14–15 EL ≈ 5–6 Zitronen** → 7 kaufen |
+| **Knoblauch** | 4 Zehen | 10–12 Zehen (1 Knolle) | 1 Zehe | — | 4 Zehen | **\~20 Zehen ≈ 2 Knollen** → 3 kaufen |
 | **Joghurt** | 150 g | — | — | — | — | **150 g** → 500-g-Becher reicht locker |
-| **Neutrales Öl** | 2 EL | 250 ml | — | — | — | **~280 ml** + ~3 EL zum Braten ≈ **330 ml** → 750-ml-Flasche |
-| **Olivenöl** | — | — | — | 4 EL | 6 EL | **~150 ml** (+1 EL falls Shatta selbst) |
+| **Neutrales Öl** | 2 EL | 250 ml | — | — | — | **\~280 ml** + \~3 EL zum Braten ≈ **330 ml** → 750-ml-Flasche |
+| **Olivenöl** | — | — | — | 4 EL | 6 EL | **\~150 ml** (+1 EL falls Shatta selbst) |
 
 Bei **Variante B mit doppelter Fleischmenge** verdoppelt sich nur die Marinade (→ 6 EL Zitrone, 8 Zehen, 300 g Joghurt) — Saucen und Beilagen bleiben gleich.
 

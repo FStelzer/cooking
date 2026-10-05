@@ -231,7 +231,7 @@ def parse_shopping(text: str, lint: Lint) -> list[dict]:
             part = part.strip()
             paren0 = re.search(r"\(([^()]*)\)", part)
             part_np = re.sub(r"\s*\([^()]*\)", "", part).strip()
-            pm = re.match(rf"^(?P<qty>(?:ca\.\s?|\\?~)?{RANGE}(?:\s?(?:kg|g|ml|L|l|EL|TL|Stück|St\.|Blatt|Bund|Töpfchen|Päckchen|Pck\.|Packung|Glas|Dose|Flasche|Knolle|Zehen|Zweige?|Stangen?|Kopf|Köpfe|Becher|Tüte|Beutel|Tafeln?))?)\s+(?P<name>.+)$", part_np)
+            pm = re.match(rf"^(?P<qty>(?:ca\.\s?|\\?~)?{RANGE}(?:\s?(?:kg|g|ml|L|l|EL|TL|Stück|St\.|Blatt|Bund|Töpfchen|Päckchen|Pck\.|Packung|Glas|Dose|Flasche|Knollen?|Zehen|Zweige?|Stangen?|Kopf|Köpfe|Becher|Tüte|Beutel|Tafeln?))?)\s+(?P<name>.+)$", part_np)
             if pm:
                 buy, name = pm["qty"].strip(), pm["name"].strip()
             else:
