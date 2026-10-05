@@ -86,6 +86,24 @@ Einzige Abhängigkeit: `jsonschema` (siehe `tools/requirements.txt`).
   `tools/recipes/*.py`, `tools/requirements.txt`, dieses `SCHEMA.md` im Root.
   Keine `.md` unter `schema/` oder `tools/` (der Sidebar-Generator iteriert `*/*.md`).
 
+## Löffel und Milliliter (Anzeige-Regel)
+
+Rohwerte bleiben wie in der Quelle (`value`/`unit`). Für die Anzeige gilt, umgesetzt
+in `tools/recipes/spoons.py` und ab Phase 5 im Renderer:
+
+- Löffelangaben (TL/EL) bleiben Löffel. Hat die Zutat einen `unitHint` (z. B.
+  EL → g, Faktor 12), steht der metrische Wert in Klammern: „5 EL (≈ 60 g)".
+- Metrische Werte aus US-Umrechnungen (14,79 ml = 1 EL, 4,93 ml = 1 TL, Vielfache
+  in halben Schritten, ±1 %) werden als Löffel gezeigt, der Rohwert in Klammern:
+  „14,7 ml" → „1 EL (14,7 ml)". In der Einkaufsliste nur diese Fälle; in der
+  Kochansicht optional auch glatte 15/5-ml-Vielfache („45 ml" → „3 EL (45 ml)").
+- `amount.display: {value, unit}` setzt die Anzeige explizit und hat Vorrang.
+- Beim Skalieren wird der Rohwert skaliert, die Anzeige neu abgeleitet.
+
+Stand im Repo (10/2026): keine 4,9-/14,7-ml-Angaben vorhanden; bestehende Rezepte
+schreiben „1 EL (15 ml)" oder „15 g (1 EL)". Die Regel ist für Importe aus
+US-Quellen vorgesehen.
+
 ## Minimum vs. Anreicherung
 
 | Ebene | Felder |
@@ -200,6 +218,7 @@ einem Schritt).
 | 2026-10-05 | `action` darf ein Präfix aus mehreren Sätzen sein (nicht nur der erste Satz), solange es reine Handlung ist. Grenze nach Augenmaß: wird der Block fast so lang wie der Text, lieber abgeleitet und mengenfrei. |
 | 2026-10-05 | `reuse: true` an `StepIngredient` ergänzt (Eier, mariniertes Fleisch): skalieren ja, summieren nein. |
 | 2026-10-05 | Check B verschärft: fehlende Sektionen und nicht abgedeckte Zeilen sind Fehler, nicht nur Report. |
+| 2026-10-05 | Löffel-Anzeigeregel (User-Anforderung): Rohwerte in ml bleiben, Kochansicht zeigt TL/EL mit Rohwert in Klammern; `amount.display` als expliziter Hinweis. |
 | 2026-10-05 | `derived.sourceHash` = SHA-256 (gekürzt) des JSON ohne `derived`; `cli check` verlangt einen aktuellen Block, sobald die Quelle eine Einkaufsliste hat. Mengen werden intern auf g/ml normiert; `Stück` wird in der Anzeige weggelassen. |
 
 ## Nächste Schritte

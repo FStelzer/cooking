@@ -326,6 +326,30 @@
             "Person",
             "Portion"
           ]
+        },
+        "display": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "unit"
+          ],
+          "description": "Anzeige-Hinweis für die Kochansicht (z. B. 14,7 ml → 1 EL). Rohwert bleibt value/unit. Ohne display greift die Löffel-Heuristik (tools/recipes/spoons.py).",
+          "properties": {
+            "value": {
+              "type": "number"
+            },
+            "max": {
+              "type": "number"
+            },
+            "unit": {
+              "type": "string",
+              "examples": [
+                "EL",
+                "TL"
+              ]
+            }
+          }
         }
       }
     },

@@ -12,6 +12,7 @@ import re
 from collections import OrderedDict
 from datetime import datetime, timezone
 
+from .spoons import display_text
 from .util import iter_tasks, normalize, split_h2
 
 # Besuchs-Reihenfolge laut CLAUDE.md (Asialaden zuerst, dann REWE); Vorrat zuletzt.
@@ -100,9 +101,7 @@ def derive(recipe: dict) -> dict:
     for iid, ing in ings.items():
         q = qmap[iid]
         need = q["total"]
-        text = need["text"]
-        if not text and q.get("unitless"):
-            text = ""
+        text = display_text(need, ing) if need.get("value") is not None else need["text"]
         name = ing["name"] + (f", {ing['prep']}" if ing.get("prep") else "")
         line = f"{text} {name}".strip() if text else name
         if ing.get("buy"):
