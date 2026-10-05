@@ -150,23 +150,28 @@ export function moreCount(step) {
 export function normalizeState(raw) {
   const s = raw && typeof raw === "object" ? raw : {};
   const obj = (v) => (v && typeof v === "object" && !Array.isArray(v) ? v : {});
-  let timers = Array.isArray(s.timers) ? s.timers : [];
-  if (!Array.isArray(s.timers) && s.timers && typeof s.timers === "object") {
-    // Erste Fassung: { "<step>#i.j": endTs }
-    timers = Object.entries(s.timers).filter(([, end]) => typeof end === "number")
-      .map(([key, end]) => ({ id: key, step: key.split("#")[0], label: "Timer", end, paused: false, left: 0 }));
-  }
-  timers = timers.filter((t) => t && typeof t === "object" && typeof t.end === "number");
-  const factor = Number(s.factor);
-  return { done: obj(s.done), note: typeof s.note === "string" ? s.note : "", shop: obj(s.shop), timers, factor: factor > 0 ? factor : 1,
+  const factor = Number(s.factor);  // Timer liegen nicht mehr hier, sondern rezeptübergreifend in „km:timers“
+  return { done: obj(s.done), note: typeof s.note === "string" ? s.note : "", shop: obj(s.shop), factor: factor > 0 ? factor : 1,
            order: s.order === "gang" ? "gang" : "ablauf", variant: obj(s.variant) };
 }
 
 // ---- Varianten (AP6): Auswahl pro Dimension, Filter, Inline-Alternativen ----
 // Auswahl: { mehl: "dinkel", weg: "kombi" }; fehlende Dimensionen fallen auf den Default.
+// ---- Timer, rezeptübergreifend (localStorage „km:timers“) ----------------------
+// Ein Timer: { id, label, end, paused, left, recipe: Rezept-ID|null, recipeTitle, step, stepText }.
+export function normalizeTimers(raw) {
+  return (Array.isArray(raw) ? raw : []).filter((t) => t && typeof t === "object" && typeof t.end === "number" && t.id != null);
+}
+// Kurzname fürs Dock: „Bò lúc lắc — vietnamesisches …“ → „Bò lúc lắc“
+export const shortTitle = (title) => String(title || "").split(/\s[—–]\s/)[0].replace(/\s*\([^)]*\)\s*$/, "").replace(/^🚧\s*/, "").trim();
+// Zweite Zeile im Dock: Herkunftsrezept nur, wenn der Timer aus einem anderen Rezept stammt
+export function timerOrigin(t, currentId) {
+  const foreign = t.recipe && t.recipe !== currentId;
+  return { foreign: !!foreign, text: [foreign ? t.recipeTitle || t.recipe : "", t.stepText || ""].filter(Boolean).join(" · ") };
+}
 // „Neu kochen“: Haken, Timer und Einkaufs-Haken weg; Notiz, Faktor, Reihenfolge und Varianten-Wahl bleiben.
 export function resetState(state) {
-  return { ...state, done: {}, timers: [], shop: {} };
+  return { ...state, done: {}, shop: {} };
 }
 
 export function selection(recipe, chosen = {}) {

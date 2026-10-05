@@ -1,4 +1,5 @@
-import { escapeTilde, fmtAmount, fmtClock, highlight, isActive, isoSeconds, moreCount, noteMarkdown, normalizeState, resetState,
+import { escapeTilde, fmtAmount, fmtClock, highlight, isActive, isoSeconds, moreCount, normalizeState, normalizeTimers,
+         noteMarkdown, resetState, shortTitle, timerOrigin,
          scaleAmount, scaleStepText, selection, selectionKey, textWithAction, timerChoices, variantText } from "./lib.js";
 
 const params = new URLSearchParams(location.search);
@@ -21,6 +22,12 @@ function loadState(id) {
   return normalizeState(raw);
 }
 function save() { try { localStorage.setItem("km:" + recipe.id, JSON.stringify(state)); } catch {} }
+// Timer gelten rezeptübergreifend (ein Nudel-Timer klingelt auch, wenn man zum nächsten Rezept wechselt)
+const loadTimers = () => { try { return normalizeTimers(JSON.parse(localStorage.getItem("km:timers"))); } catch { return []; } };
+let timers = loadTimers();
+function saveTimers() { try { localStorage.setItem("km:timers", JSON.stringify(timers)); } catch {} }
+const myTimers = () => timers.filter((t) => recipe && t.recipe === recipe.id);
+window.addEventListener("storage", (e) => { if (e.key === "km:timers") { timers = loadTimers(); renderDock(); } });
 const factor = () => +state.factor || 1;
 
 // ---- Rezept-Helfer (Menü = Gänge mit eigenen Tasks) -------------------------
@@ -48,7 +55,7 @@ const liveEntries = (sch) => sch.entries.filter(live);
 
 // ---- Ansichten -------------------------------------------------------------
 function runBadge(step) {
-  const ts = state.timers.filter((t) => t.step === step.id);
+  const ts = myTimers().filter((t) => t.step === step.id);
   if (!ts.length) return "";
   const rem = Math.min(...ts.map(remaining));
   return `<span class="run ${rem <= 0 ? "ring" : ""}" data-run="${step.id}">${rem <= 0 ? "Fertig" : fmtClock(rem / 1000)}</span>`;
@@ -305,15 +312,17 @@ document.addEventListener("keydown", (e) => {
 const remaining = (t) => (t.paused ? t.left : t.end - Date.now());
 function startTimer(step, label, secs) {  // step = null: Schnell-Timer ohne Schrittbezug
   unlockAudio();
-  state.timers.push({ id: Math.random().toString(36).slice(2, 9), step: step?.id ?? null, label, end: Date.now() + secs * 1000, paused: false, left: 0 });
-  save(); renderAll(); toast(`Timer läuft: ${label}`);
+  timers.push({ id: Math.random().toString(36).slice(2, 9), label, end: Date.now() + secs * 1000, paused: false, left: 0,
+                recipe: recipe?.id ?? null, recipeTitle: shortTitle(recipe?.title), step: step?.id ?? null,
+                stepText: step ? `${step.label}. ${step.title || ""}`.trim() : "" });
+  saveTimers(); recipe ? renderAll() : renderDock(); toast(`Timer läuft: ${label}`);
 }
 function timerAction(id, act) {
-  const t = state.timers.find((x) => x.id === id); if (!t) return;
-  if (act === "stop") state.timers = state.timers.filter((x) => x.id !== id);
+  const t = timers.find((x) => x.id === id); if (!t) return;
+  if (act === "stop") timers = timers.filter((x) => x.id !== id);
   else if (act === "plus") { if (t.paused) t.left += 60000; else t.end = Math.max(t.end, Date.now()) + 60000; }
   else if (act === "pause") { if (t.paused) { t.end = Date.now() + t.left; t.paused = false; } else { t.left = t.end - Date.now(); t.paused = true; } }
-  save(); renderAll();
+  saveTimers(); recipe ? renderAll() : renderDock();
 }
 const QUICK = [1, 2, 3, 5, 8, 10, 12, 15, 20, 30, 45, 60];
 function quickHtml() {
@@ -331,11 +340,12 @@ function startQuick(secs) {
 }
 function renderDock() {
   const add = `<button class="addtimer" id="addTimer" aria-label="Schnell-Timer stellen">＋ Timer</button>`;
-  if (!state.timers.length) { dock.innerHTML = add + `<span class="lead">Keine Timer aktiv — im Schritt oder hier per ＋.</span>`; return; }
-  dock.innerHTML = add + `<span class="lead">${state.timers.length} Timer</span>` + state.timers.slice().sort((a, b) => remaining(a) - remaining(b)).map((t) => {
-    const s = stepOf(t.step), rem = remaining(t), ring = rem <= 0;
-    return `<div class="tm ${ring ? "ring" : ""} ${t.paused ? "paused" : ""}" data-tid="${t.id}">
-      <div class="lab"><b>${esc(t.label)}</b><span>${s ? esc(s.label + ". " + (s.title || "")) : ""}</span></div>
+  if (!timers.length) { dock.innerHTML = add + `<span class="lead">Keine Timer aktiv — im Schritt oder hier per ＋.</span>`; return; }
+  dock.innerHTML = add + `<span class="lead">${timers.length} Timer</span>` + timers.slice().sort((a, b) => remaining(a) - remaining(b)).map((t) => {
+    const rem = remaining(t), ring = rem <= 0, o = timerOrigin(t, recipe?.id);
+    const sub = o.foreign ? `<a class="origin" href="?r=${encodeURIComponent("../" + t.recipe + ".json")}">${esc(o.text)}</a>` : esc(o.text);
+    return `<div class="tm ${ring ? "ring" : ""} ${t.paused ? "paused" : ""} ${o.foreign ? "foreign" : ""}" data-tid="${t.id}">
+      <div class="lab"><b>${esc(t.label)}</b><span>${sub}</span></div>
       <div class="time" data-time="${t.id}">${ring ? "Fertig" : fmtClock(rem / 1000)}</div>
       ${ring ? `<button data-tact="stop" aria-label="Timer beenden">OK</button><button data-tact="plus" aria-label="Eine Minute mehr">+1</button>`
              : `<button data-tact="plus" aria-label="Eine Minute mehr">+1</button><button data-tact="pause" aria-label="${t.paused ? "Fortsetzen" : "Pausieren"}">${t.paused ? "▶" : "❚❚"}</button><button data-tact="stop" aria-label="Timer löschen">✕</button>`}
@@ -355,19 +365,18 @@ function beep() {
 }
 let lastBeep = 0; const wasRinging = new Set();
 setInterval(() => {
-  if (!recipe) return;
   let ringing = false, structural = false;
-  for (const t of state.timers) {
+  for (const t of timers) {
     const rem = remaining(t);
     if (rem <= 0) { ringing = true; if (!wasRinging.has(t.id)) { wasRinging.add(t.id); structural = true; } }
     else if (wasRinging.has(t.id)) { wasRinging.delete(t.id); structural = true; }
     const el = document.querySelector(`[data-time="${t.id}"]`); if (el && rem > 0) el.textContent = fmtClock(rem / 1000);
   }
   document.querySelectorAll("[data-run]").forEach((el) => {
-    const ts = state.timers.filter((t) => t.step === el.dataset.run); if (!ts.length) return;
+    const ts = myTimers().filter((t) => t.step === el.dataset.run); if (!ts.length) return;
     const rem = Math.min(...ts.map(remaining)); if (rem > 0) el.textContent = fmtClock(rem / 1000);
   });
-  if (structural) { renderDock(); renderMain(); }
+  if (structural) { renderDock(); if (recipe) renderMain(); }
   if (ringing && Date.now() - lastBeep > 2000) { lastBeep = Date.now(); beep(); try { navigator.vibrate?.([300, 150, 300]); } catch {} }
 }, 500);
 
@@ -399,7 +408,9 @@ document.addEventListener("click", (e) => {
   if (q) { const secs = q.dataset.quick === "custom" ? customSecs() : +q.dataset.quick; if (secs > 0) startQuick(secs); return; }
   const nv = e.target.closest("[data-nav]"); if (nv) { stepNav(+nv.dataset.nav); return; }
   if (e.target.id === "reset") {
-    if (confirm("Alle Haken, Timer und Einkaufs-Haken dieses Rezepts zurücksetzen?\nNotiz, Menge und Varianten-Wahl bleiben.")) { state = resetState(state); save(); renderAll(); toast("Zurückgesetzt — bereit zum Kochen"); }
+    if (confirm("Alle Haken, Timer und Einkaufs-Haken dieses Rezepts zurücksetzen?\nNotiz, Menge und Varianten-Wahl bleiben.")) {
+      state = resetState(state); save(); timers = timers.filter((t) => t.recipe !== recipe.id); saveTimers(); renderAll(); toast("Zurückgesetzt — bereit zum Kochen");
+    }
     return;
   }
   const st = e.target.closest("[data-start]"); if (st) { startTimer(stepOf(openId), st.dataset.label, +st.dataset.secs); return; }
@@ -432,6 +443,7 @@ let toastT; function toast(m) { const el = $("#toast"); el.textContent = m; el.s
 // ---- Rezeptliste (generiert: kochmodus/rezepte.json) ---------------------------
 async function renderPicker() {
   document.body.classList.add("picker");
+  renderDock();  // laufende Timer bleiben auch in der Rezeptliste sichtbar
   $("#title").textContent = "Kochmodus";
   $("#meta").textContent = "Rezept wählen";
   let list = [];

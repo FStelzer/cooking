@@ -2,7 +2,7 @@
 import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
 import { escapeTilde, fmtAmount, fmtClock, highlight, isoSeconds, noteMarkdown, normalizeState, remainderAfterAction, textWithAction,
-         scaleAmount, scaleStepText, timerChoices, moreCount, resetState, isActive, selection, selectionKey, variantText } from "../kochmodus/lib.js";
+         scaleAmount, scaleStepText, timerChoices, moreCount, resetState, isActive, normalizeTimers, shortTitle, timerOrigin, selection, selectionKey, variantText } from "../kochmodus/lib.js";
 
 const r = JSON.parse(readFileSync(new URL("../schema/beispiele/thit-kho-trung.json", import.meta.url), "utf8"));
 const ing = Object.fromEntries(r.ingredients.map((i) => [i.id, i]));
@@ -62,14 +62,13 @@ t("Details wiederholen die Kurzansicht nicht", () => {
   assert.equal(remainderAfterAction(steps["pickle-und-reis"].text, steps["pickle-und-reis"]), "");
   assert.equal(remainderAfterAction(steps.schmoren.text, steps.schmoren), steps.schmoren.text); // abgeleitet → alles
 });
-t("Alter localStorage-Zustand (timers als Objekt) wird migriert, Müll verworfen", () => {
-  const old = { done: { karamell: true }, notes: { karamell: "x" }, note: 7, timers: { "schmoren#0.0": 1760000000000, kaputt: "nein" }, factor: "2" };
+t("Alter localStorage-Zustand: Timer-Felder fallen weg, Müll verworfen", () => {
+  const old = { done: { karamell: true }, notes: { karamell: "x" }, note: 7, timers: { "schmoren#0.0": 1760000000000 }, factor: "2" };
   const s = normalizeState(old);
-  assert.deepEqual(s.timers.map((t) => [t.step, t.end]), [["schmoren", 1760000000000]]);
+  assert.equal("timers" in s, false, "Timer leben in km:timers, nicht im Rezept-Zustand");
   assert.equal(s.factor, 2); assert.equal(s.done.karamell, true); assert.deepEqual(s.shop, {});
-  assert.deepEqual(normalizeState(null).timers, []);
   assert.equal(s.note, "");
-  assert.deepEqual(normalizeState({ timers: "quatsch", done: [], factor: -1 }), { done: {}, note: "", shop: {}, timers: [], factor: 1, order: "ablauf", variant: {} });
+  assert.deepEqual(normalizeState({ timers: "quatsch", done: [], factor: -1 }), { done: {}, note: "", shop: {}, factor: 1, order: "ablauf", variant: {} });
 });
 t("Gemischter Bruch: 1½ EL ×2 → 3 EL, ×0,5 → ¾ EL; 1,5 wird „1½“", () => {
   const st = { ingredients: [{ ref: "fischsauce", amount: { text: "1½ EL Fischsauce", value: 1.5, unit: "EL" } }] };
@@ -102,7 +101,16 @@ t("Mehr-Hinweis zählt Handgriffe nach der Kurzansicht, nicht den kursiven Schlu
   assert.equal(moreCount({ text: "Pfanne heiß machen. 1 EL Öl hinein, warten. Würfel einlegen, nicht bewegen. *Sonst dünstet es.*", action: "Pfanne heiß machen." }), 2);
 });
 t("Neu kochen: Haken, Timer, Einkauf weg; Notiz, Faktor, Wahl bleiben", () => {
-  const s = resetState({ done: { a: true }, timers: [{ id: 1 }], shop: { x: true }, note: "n", factor: 2, order: "gang", variant: { mehl: "dinkel" } });
-  assert.deepEqual(s, { done: {}, timers: [], shop: {}, note: "n", factor: 2, order: "gang", variant: { mehl: "dinkel" } });
+  const s = resetState({ done: { a: true }, shop: { x: true }, note: "n", factor: 2, order: "gang", variant: { mehl: "dinkel" } });
+  assert.deepEqual(s, { done: {}, shop: {}, note: "n", factor: 2, order: "gang", variant: { mehl: "dinkel" } });
+});
+t("Timer rezeptübergreifend: Herkunft nur bei fremdem Rezept, Kurztitel", () => {
+  assert.equal(shortTitle("🚧 Bò lúc lắc — vietnamesisches „Shaking Beef“ (4 Portionen)"), "Bò lúc lắc");
+  assert.equal(shortTitle("Degustationsmenü — Hochzeitstag (4 Personen)"), "Degustationsmenü");
+  const t = { id: "a", end: 1, recipe: "gerichte/bo-luc-lac", recipeTitle: "Bò lúc lắc", stepText: "8. Chargen braten" };
+  assert.deepEqual(timerOrigin(t, "gerichte/bo-luc-lac"), { foreign: false, text: "8. Chargen braten" });
+  assert.deepEqual(timerOrigin(t, "backen/vollkornbroetchen"), { foreign: true, text: "Bò lúc lắc · 8. Chargen braten" });
+  assert.deepEqual(timerOrigin({ id: "q", end: 1, recipe: null, stepText: "" }, "x"), { foreign: false, text: "" }, "Schnell-Timer aus der Liste");
+  assert.deepEqual(normalizeTimers([null, { id: 1 }, { id: 2, end: 5 }]), [{ id: 2, end: 5 }]);
 });
 console.log(`${n} Tests ok`);

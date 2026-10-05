@@ -31,14 +31,13 @@ try {
   const page = await browser.newPage({ viewport: { width: 390, height: 844 } }); // Smartphone
   page.on("pageerror", (e) => errors.push(String(e)));
   page.on("console", (m) => { if (m.type() === "error") errors.push(m.text()); });
-  // Alten Zustand der ersten Fassung vorab setzen (timers als Objekt) — darf nicht crashen
+  // Alter Zustand mit Timer-Feld (frühere Fassung) — darf nicht crashen, Timer werden verworfen
   await page.addInitScript(() => { if (!localStorage.getItem("km:gerichte/thit-kho-trung"))
     localStorage.setItem("km:gerichte/thit-kho-trung", JSON.stringify({ timers: { "schmoren#0.0": Date.now() + 60000 } })); });
   await page.goto(`http://127.0.0.1:${PORT}/kochmodus/?r=../gerichte/thit-kho-trung.json`);
   await page.waitForSelector(".row[data-step]");
   assert.equal(await page.locator(".row[data-step]").count(), 9, "9 Schritte erwartet");
-  assert.equal(await page.locator(".dock .tm").count(), 1, "migrierter Timer fehlt im Dock");
-  await page.click('.dock [data-tact="stop"]');
+  assert.equal(await page.locator(".dock .tm").count(), 0, "alte Timer werden nicht übernommen");
   assert.match(await page.locator("#title").innerText(), /Thịt kho/);
   const k4 = page.locator('.row[data-step="karamell-der-entscheidende-schritt"]');
   assert.match(await k4.innerText(), /3 EL Zucker/);
@@ -176,6 +175,18 @@ try {
   await page.fill("#qlabel", "Nudeln");
   await page.click('#quick [data-quick="300"]');
   assert.match(await page.locator(".dock .tm").innerText(), /Nudeln/);
+  assert.equal(await page.locator(".dock .tm.foreign").count(), 0, "eigener Timer ohne Herkunft");
+  // Timer sind rezeptübergreifend: Liste zeigt ihn, anderes Rezept nennt die Herkunft, Link führt zurück
+  await page.goto(`http://127.0.0.1:${PORT}/kochmodus/?liste=1`);
+  await page.waitForSelector("a.pick");
+  assert.match(await page.locator(".dock .tm").innerText(), /Nudeln/, "Timer in der Rezeptliste");
+  await page.locator('a.pick:has-text("Vollkornbrötchen")').click();
+  await page.waitForSelector(".row[data-step]");
+  assert.match(await page.locator(".dock .tm.foreign .origin").innerText(), /^Bò lúc lắc$/, "Herkunft beim fremden Rezept");
+  await page.click(".dock .tm.foreign .origin");
+  await page.waitForSelector(".row[data-step]");
+  assert.match(await page.locator("#title").innerText(), /Bò lúc lắc/);
+  assert.equal(await page.locator(".dock .tm.foreign").count(), 0);
   await page.click('.dock [data-tact="stop"]');
   // Tablet quer: Detailblatt rechts neben der Liste, offener Schritt markiert
   await page.setViewportSize({ width: 1200, height: 800 });
