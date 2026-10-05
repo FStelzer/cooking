@@ -132,13 +132,19 @@ Konvention; wo zwei Konverter in AP3 abgewichen sind, steht jetzt eine feste Reg
    Dauer **[C]**. `text` = ganzer Absatz verbatim. `duration` **nur** aus der
    Überschrift (`source` = die Klammerangabe); Dauern im Text werden `timers`, nie
    `duration`. `parallel: true` bei „parallel" in der Überschrift.
-5. **`action` = exakt der erste Satz von `text`** **[C]**, verbatim. Satzende ist
-   `.`/`!`/`?` plus Leerzeichen plus Großbuchstabe/Ziffer; Abkürzungen (`Min.`,
-   `Std.`, `z. B.`, `ca.`) zählen nicht. Nur wenn der erste Satz keine Handlung ist
-   (Erklärung, Überschrift-Wiederholung), eine **mengenfreie** Kurzfassung mit
-   `actionDerived: true`. Die Kurzansicht zeigt `heading` + `action`; dass der erste
-   Satz nicht alles abdeckt (Schritt 6: nur „auffüllen", Schmoren steht in der
-   Überschrift), ist akzeptiert. Deterministisch statt treffend.
+5. **`action` — die Kurzansicht.** Intention: Wer nur `heading` + `action` liest,
+   kann den Schritt korrekt ausführen, wenn er das Rezept kennt. Also: Handlung,
+   Zutat, Menge, Gerät, Hitze. **Nicht** hinein gehören Erklärung (Warum),
+   Erkennungszeichen (Cues), Grenzwerte und Rettung; die stehen in der Vollansicht
+   und werden dort hervorgehoben. Praktisch: der kürzeste Präfix aus **ganzen
+   Sätzen** **[C]**, der die Kernhandlung enthält. Meist ist das der erste Satz
+   (Schritt 4: „Zucker … schmelzen lassen, nicht rühren"), manchmal zwei (Schritt 1:
+   würfeln **und** blanchieren, die Überschrift heißt so), bei einem Schritt ohne
+   Annotationen auch der ganze Text (Schritt 8: Pickle, Gurke, Reis). Wäre der nötige
+   Präfix fast der ganze Text, obwohl er Annotationen enthält (Schritt 6: Schmoren
+   steht erst im fünften Satz), dann eine **mengenfreie** Kurzfassung mit
+   `actionDerived: true`. Der Validator meldet als Hinweis, wenn ein verbatim-Präfix
+   über 70 % eines annotierten Textes umfasst.
 6. **Slugs** **[D]**: Step aus `title` (ohne Füllwörter, `&` → `und`, Umlaute
    ae/oe/ue/ss): „Schnell-Pickle & Reis" → `pickle-und-reis`. Zutat = erstes
    Hauptnomen des Einkaufspostens in der Schreibweise der Liste: „2–3 frische rote
@@ -267,7 +273,7 @@ und Quelle. Einschränkung: Der Agent hat zusätzlich den Validator-Code gelesen
 | Step-Slugs | 9/9 | Slug-Regel funktioniert |
 | Dosierungen (`amount.text`, spanForm, reuse, occurrence) | 25/25 | Span-Regel funktioniert; B erfasste zusätzlich „Fleisch" in Schritt 2 → Regel 7: nur Spans mit Menge |
 | Learnings-Refs | 5/5 | stabil; Texte differierten (Teilsatz vs. ganzer Bullet) → Regel 11 |
-| `action` | 4/9 | Ermessen („ganze Sätze", „reine Handlung") → Regel 5: exakt erster Satz, Check C erzwingt |
+| `action` | 4/9 | Ermessen („ganze Sätze", „reine Handlung") → Regel 5 formuliert die Intention aus (Kurzansicht muss zum Ausführen reichen); Check C prüft Satzgrenzen, erzwingt keine Länge |
 | `attention` | 5/9 | keine Regel → Regel 10 |
 | `cues`, `limits`, `why` | 7/9 | Phrasengrenzen („Vorsicht:"-Präfix, Satz geteilt) → Regel 9: ganze Sätze |
 | `step.equipment` | 7/9 | Mehrwert gering → nicht erfassen |
@@ -278,7 +284,7 @@ und Quelle. Einschränkung: Der Agent hat zusätzlich den Validator-Code gelesen
 | Zutaten `prep`/`note` | 13/17, 11/17 | Abgrenzung unklar → `prep` entfällt, `note` = Klammer-/Kursivtext |
 | Zutaten `id`, `store` | 15/17, 16/17 | Singular/Plural (chili/chilis), Jasminreis Asialaden vs. REWE → Slug-Regel; Store bleibt Ermessen |
 
-Nach Umstellung auf v2 hat thit-kho **0 abgeleitete `action`** (vorher 1) und 23 exakte
+Nach Umstellung auf v2 hat thit-kho 1 abgeleitete `action` (Schritt 6) und 23 exakte
 Spans (vorher 24, „das marinierte Fleisch" entfällt). Eine Wiederholung der Messung
 mit v2 ist sinnvoll, sobald die nächste Datei konvertiert wird (Phase 2b), nicht
 vorher.
@@ -292,7 +298,7 @@ vorher.
 | 2026-10-05 | `reuse: true` an `StepIngredient` ergänzt (Eier, mariniertes Fleisch): skalieren ja, summieren nein. |
 | 2026-10-05 | Check B verschärft: fehlende Sektionen und nicht abgedeckte Zeilen sind Fehler, nicht nur Report. |
 | 2026-10-05 | Löffel-Anzeigeregel (User-Anforderung): Rohwerte in ml bleiben, Kochansicht zeigt TL/EL mit Rohwert in Klammern; `amount.display` als expliziter Hinweis. |
-| 2026-10-05 | `action` ist per Regel der exakte erste Satz (Check C erzwingt), nicht mehr ein frei gewählter Präfix. Deterministisch schlägt treffend; die Kurzansicht zeigt ohnehin `heading` dazu. |
+| 2026-10-05 | `action`: Nach der AP3-Streuung (4/9) kurz als „exakt erster Satz" festgelegt, auf User-Einwand zurückgenommen: zu hart, trifft nicht immer die Handlung. Jetzt Intentions-Regel (Anleitung 5): kürzester Satz-Präfix, mit dem man den Schritt ausführen kann; Check C prüft nur Satzgrenzen und gibt bei > 70 % eines annotierten Textes einen Hinweis. Streuung wird in Kauf genommen, Intention schlägt Determinismus. |
 | 2026-10-05 | `step.equipment` und `Ingredient.prep` werden nicht mehr erfasst (bleiben im Schema, Anleitung setzt sie nicht). `Ingredient.scale` nur für Ausnahmen. |
 | 2026-10-05 | `derived.sourceHash` = SHA-256 (gekürzt) des JSON ohne `derived`; `cli check` verlangt einen aktuellen Block, sobald die Quelle eine Einkaufsliste hat. Mengen werden intern auf g/ml normiert; `Stück` wird in der Anzeige weggelassen. |
 

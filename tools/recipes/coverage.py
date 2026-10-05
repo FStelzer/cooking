@@ -4,8 +4,8 @@ from __future__ import annotations
 import re
 from collections import Counter
 
-from .util import (GENERATED_SECTIONS, UNIT_TOKEN, annotation_quotes, first_sentence, iter_steps, iter_tasks,
-                   normalize, source_without_generated, split_h2, unit_tokens, verbatim_strings)
+from .util import (GENERATED_SECTIONS, UNIT_TOKEN, annotation_quotes, iter_steps, iter_tasks,
+                   normalize, sentence_prefixes, source_without_generated, split_h2, unit_tokens, verbatim_strings)
 
 SLUG = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 
@@ -59,9 +59,12 @@ def check_c(recipe: dict, source: str) -> tuple[list[str], list[str]]:
         p = f"step:{step['id']}"
         ntext = normalize(step["text"])
         if not step.get("actionDerived"):
-            fs = normalize(first_sentence(step["text"]))
-            if normalize(step["action"]) != fs:
-                errs.append(f"C {p}.action ≠ erster Satz von text (Anleitung v2): erwartet '{fs[:60]}'")
+            na = normalize(step["action"])
+            prefixes = [normalize(x) for x in sentence_prefixes(step["text"])]
+            if na not in prefixes:
+                errs.append(f"C {p}.action ist kein verbatim-Präfix aus ganzen Sätzen von text")
+            elif len(na) > 0.7 * len(ntext) and any(step.get(k) for k in ("cues", "why", "rescue", "limits")):
+                reps.append(f"C {p}.action umfasst {100 * len(na) // len(ntext)} % des Textes — mengenfreie Kurzfassung (actionDerived) erwägen")
         else:
             toks = UNIT_TOKEN.findall(step["action"])
             if toks and not any(si.get("actionOccurrence") for si in step.get("ingredients", [])):

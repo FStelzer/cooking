@@ -151,13 +151,24 @@ _ABBREV = {"z", "b", "ca", "bzw", "ggf", "evtl", "min", "std", "sek", "nr", "st"
 _SENT_END = re.compile(r"[.!?]\s+(?=[A-ZÄÖÜ0-9„\"*(½¼¾])")
 
 
-def first_sentence(text: str) -> str:
-    """Erster Satz eines Schrittes (verbatim), Abkürzungen wie „Min.“, „z. B.“ gelten
-    nicht als Satzende. Grundlage für action (L7, Anleitung v2)."""
+def sentence_ends(text: str) -> list[int]:
+    """Indizes (exklusiv) aller Satzenden; Abkürzungen wie „Min.“, „z. B.“ zählen
+    nicht als Satzende. Der Textschluss ist immer ein Satzende."""
+    ends = []
     for m in _SENT_END.finditer(text):
         before = text[:m.start()]
         word = re.findall(r"[\wäöüÄÖÜß]+$", before.rstrip("*)"))
         if word and word[-1].lower() in _ABBREV:
             continue
-        return text[:m.start() + 1]
-    return text.strip()
+        ends.append(m.start() + 1)
+    ends.append(len(text.rstrip()))
+    return ends
+
+
+def first_sentence(text: str) -> str:
+    return text[: sentence_ends(text)[0]]
+
+
+def sentence_prefixes(text: str) -> list[str]:
+    """Alle Präfixe aus ganzen Sätzen (Kandidaten für action)."""
+    return [text[:e].strip() for e in sentence_ends(text)]

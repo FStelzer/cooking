@@ -175,7 +175,7 @@
               "heading": "1. Fleisch vorbereiten & blanchieren (10 Min.)",
               "title": "Fleisch vorbereiten & blanchieren",
               "text": "Schweinebauch in ~4 cm große Würfel schneiden. In einem Topf mit kaltem Wasser aufsetzen, aufkochen, 2–3 Min. sprudeln lassen, abgießen und Würfel kalt abspülen. *Klassischer vietnamesischer Schritt: entfernt Trübstoffe, die Sauce bleibt klar und glänzend.*",
-              "action": "Schweinebauch in ~4 cm große Würfel schneiden.",
+              "action": "Schweinebauch in ~4 cm große Würfel schneiden. In einem Topf mit kaltem Wasser aufsetzen, aufkochen, 2–3 Min. sprudeln lassen, abgießen und Würfel kalt abspülen.",
               "attention": "attended",
               "duration": {
                 "typical": "PT10M",
@@ -397,7 +397,7 @@
               "heading": "6. Schmoren (90–120 Min.)",
               "title": "Schmoren",
               "text": "Mit 500–600 ml Kokoswasser auffüllen, bis das Fleisch knapp bedeckt ist. Restliche 2–3 EL Fischsauce dazu. Aufkochen, Schaum abschöpfen. Die 6 Eier und 2–3 **ganze** Chilis hineinlegen. Deckel halb auflegen und bei kleinster Hitze leise schmoren. Nach ~60 Min. Eier gelegentlich wenden, damit sie gleichmäßig Farbe ziehen. *Ein Topf, kleinste Flamme — auch das heizt die Küche kaum.*",
-              "action": "Mit 500–600 ml Kokoswasser auffüllen, bis das Fleisch knapp bedeckt ist.",
+              "action": "Mit Kokoswasser knapp bedecken, restliche Fischsauce, Eier und ganze Chilis zugeben, halb bedeckt bei kleinster Hitze leise schmoren; nach der Hälfte Eier wenden.",
               "attention": "passive",
               "duration": {
                 "min": "PT90M",
@@ -463,7 +463,8 @@
               "cues": [
                 "bis das Fleisch knapp bedeckt ist"
               ],
-              "why": "Ein Topf, kleinste Flamme — auch das heizt die Küche kaum."
+              "why": "Ein Topf, kleinste Flamme — auch das heizt die Küche kaum.",
+              "actionDerived": true
             },
             {
               "id": "reduzieren",
@@ -500,7 +501,7 @@
               "heading": "8. Schnell-Pickle & Reis (parallel, 20 Min.)",
               "title": "Schnell-Pickle & Reis",
               "text": "2 Karotten und 1 Rettich in feine Stifte, mit 3 EL Reisessig, 1 EL Zucker und 1 Prise Salz vermengen, 20 Min. ziehen lassen. ½ Salatgurke in Scheiben. 400 g Jasminreis wie gewohnt kochen.",
-              "action": "2 Karotten und 1 Rettich in feine Stifte, mit 3 EL Reisessig, 1 EL Zucker und 1 Prise Salz vermengen, 20 Min. ziehen lassen.",
+              "action": "2 Karotten und 1 Rettich in feine Stifte, mit 3 EL Reisessig, 1 EL Zucker und 1 Prise Salz vermengen, 20 Min. ziehen lassen. ½ Salatgurke in Scheiben. 400 g Jasminreis wie gewohnt kochen.",
               "attention": "active",
               "parallel": true,
               "duration": {
@@ -656,8 +657,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T08:23:32Z",
-    "sourceHash": "a0d0741ee6b90b06",
+    "generatedAt": "2026-10-05T08:27:30Z",
+    "sourceHash": "975651683432d1a4",
     "quantities": [
       {
         "ingredient": "schweinebauch",
