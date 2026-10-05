@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from pathlib import Path
 
 from .coverage import check_b, check_c, check_d
 from .diff import diff
