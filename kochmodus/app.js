@@ -43,34 +43,61 @@ function runBadge(step) {
   const rem = Math.min(...ts.map(remaining));
   return `<span class="run ${rem <= 0 ? "ring" : ""}" data-run="${step.id}">${rem <= 0 ? "Fertig" : fmtClock(rem / 1000)}</span>`;
 }
-function stepRow(s) {
+function stepRow(s, course = null, task = null) {
   const dur = s.duration ? `${s.duration.source || ""}${s.duration.estimated ? " (geschätzt)" : ""}` : "";
   const deps = !s.after ? "" : s.after.length ? "nach " + s.after.map(labelOf).filter(Boolean).join(", ") : "jederzeit";
-  const meta = [dur, deps].filter(Boolean).join(" · ");
+  const meta = [course ? courseTitle(course) : "", dur, deps].filter(Boolean).join(" · ");
+  const title = s.title || (task && task.name !== recipe.title ? task.name : "");
   return `<div class="row ${state.done[s.id] ? "done" : ""} ${s.after && !s.after.length ? "free" : ""}" data-step="${s.id}">
-    <input type="checkbox" class="chk" data-done="${s.id}" aria-label="${esc(s.title || s.label)} erledigt" ${state.done[s.id] ? "checked" : ""}>
+    <input type="checkbox" class="chk" data-done="${s.id}" aria-label="${esc(title || s.label)} erledigt" ${state.done[s.id] ? "checked" : ""}>
     <div class="body" data-open="${s.id}">
-      <div class="t">${esc(s.label)}. ${mdInline(s.title || "")}${hasNote(s.id) ? '<span class="hasnote" title="Notiz vorhanden"></span>' : ""}</div>
+      <div class="t">${esc(s.label)}. ${mdInline(title)}${hasNote(s.id) ? '<span class="hasnote" title="Notiz vorhanden"></span>' : ""}</div>
       ${meta ? `<div class="m">${esc(meta)}</div>` : ""}
       <div class="a md">${md(scaled(s.action, s))}</div>${runBadge(s)}
     </div></div>`;
 }
+function plainRow(key, text, extra = "") {
+  return `<div class="row plain ${state.done[key] ? "done" : ""}">
+    <input type="checkbox" class="chk" data-done="${esc(key)}" aria-label="erledigt" ${state.done[key] ? "checked" : ""}>
+    <div class="body"><div class="t plain">${mdInline(text)}</div>${extra ? `<div class="m">${esc(extra)}</div>` : ""}</div></div>`;
+}
 function renderKochen() {
   let html = `<p class="legend">Antippen öffnet Details, Timer und Notiz. <span class="free-hint">Gestrichelter Rand</span> = jederzeit möglich, ohne Vorgänger. <mark class="cue">Erkennungszeichen</mark><mark class="limit">Grenze</mark><mark class="why">Warum</mark><mark class="rescue">Rettung</mark></p>`;
-  if (!isMenu()) {
-    html += tasksOf(recipe).flatMap(({ task }) => task.steps.map(stepRow)).join("");
-  } else {
+  const sec = schedule();
+  if (!isMenu() || !sec) {
+    html += steps().map(({ step, course, task }) => stepRow(step, course, task)).join("");
+    main.innerHTML = html; return;
+  }
+  const byCourse = state.order === "gang";
+  html += `<div class="seg" role="group" aria-label="Reihenfolge" style="margin-bottom:10px"><button data-order="ablauf" aria-pressed="${!byCourse}">Ablauf</button><button data-order="gang" aria-pressed="${byCourse}">Nach Gang</button></div>`;
+  if (byCourse) {
     for (const c of courses()) {
       const ts = tasksOf(c);
-      html += `<section class="course" id="course-${c.id}"><h2>${mdInline(c.title)}</h2>`;
+      html += `<section class="course"><h2>${mdInline(c.title)}</h2>`;
       if (!ts.length) { html += `<p class="empty">Noch nicht als Schritte modelliert — Text unter „Lesen“.</p></section>`; continue; }
-      for (const { task } of ts) {
-        html += `<h3 id="task-${task.id}">${esc(task.name)}${task.phaseHint ? ` <span class="fine">· ${esc(task.phaseHint)}</span>` : ""}</h3>`;
-        html += task.steps.map(stepRow).join("");
-      }
+      for (const { task } of ts) html += `<h3>${esc(task.name)}${task.phaseHint ? ` <span class="fine">· ${esc(task.phaseHint)}</span>` : ""}</h3>` + task.steps.map((st) => stepRow(st, null, task)).join("");
       html += `</section>`;
     }
+    main.innerHTML = html; return;
   }
+  // Ablauf (Default): Reihenfolge = Zeitplan (Phasen → Einträge → Schritte); Gänge mischen sich.
+  const all = steps(), byId = Object.fromEntries(all.map((x) => [x.step.id, x]));
+  const byTask = {}; for (const x of all) (byTask[x.task.id] ||= []).push(x);
+  const placed = new Set();
+  for (const p of sec.schedule.phases) {
+    const es = sec.schedule.entries.filter((e) => e.phase === p.id);
+    if (!es.length) continue;
+    html += `<section class="phase"><h2>${esc(p.label)}</h2>`;
+    for (const e of es) {
+      const xs = e.steps?.length ? e.steps.map((id) => byId[id]).filter(Boolean) : (e.tasks || []).flatMap((t) => byTask[t] || []);
+      if (!xs.length) { html += plainRow(`e:${p.id}:${e.text}`, e.text, e.course ? courseTitle(courses().find((c) => c.id === e.course)) : ""); continue; }
+      html += `<p class="entry-head">${mdInline(e.text)}${e.derived ? ' <span class="fine">(abgeleitet)</span>' : ""}</p>`;
+      for (const x of xs) { placed.add(x.step.id); html += stepRow(x.step, x.course, x.task); }
+    }
+    html += `</section>`;
+  }
+  const rest = all.filter((x) => !placed.has(x.step.id));
+  if (rest.length) html += `<section class="phase"><h2>Ohne Platz im Zeitplan</h2>` + rest.map((x) => stepRow(x.step, x.course, x.task)).join("") + `</section>`;
   main.innerHTML = html;
 }
 function renderPlan() {
@@ -269,6 +296,7 @@ document.addEventListener("click", (e) => {
   const ta = e.target.closest("[data-tact]"); if (ta) { timerAction(ta.closest("[data-tid]").dataset.tid, ta.dataset.tact); return; }
   const v = e.target.closest("[data-view]"); if (v) { view = v.dataset.view; renderAll(); return; }
   const f = e.target.closest("[data-factor]"); if (f) { state.factor = +f.dataset.factor; save(); renderAll(); return; }
+  const od = e.target.closest("[data-order]"); if (od) { state.order = od.dataset.order; save(); renderMain(); return; }
   if (e.target.id === "copyMd") {
     const txt = exportMarkdown();
     (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => toast("Kopiert"))

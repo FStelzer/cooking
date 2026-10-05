@@ -62,6 +62,6 @@ t("Alter localStorage-Zustand (timers als Objekt) wird migriert, Müll verworfen
   assert.deepEqual(s.timers.map((t) => [t.step, t.end]), [["schmoren", 1760000000000]]);
   assert.equal(s.factor, 2); assert.equal(s.done.karamell, true); assert.deepEqual(s.shop, {});
   assert.deepEqual(normalizeState(null).timers, []);
-  assert.deepEqual(normalizeState({ timers: "quatsch", done: [], factor: -1 }), { done: {}, notes: {}, shop: {}, timers: [], factor: 1 });
+  assert.deepEqual(normalizeState({ timers: "quatsch", done: [], factor: -1 }), { done: {}, notes: {}, shop: {}, timers: [], factor: 1, order: "ablauf" });
 });
 console.log(`${n} Tests ok`);

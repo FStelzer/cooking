@@ -144,5 +144,6 @@ export function normalizeState(raw) {
   }
   timers = timers.filter((t) => t && typeof t === "object" && typeof t.end === "number");
   const factor = Number(s.factor);
-  return { done: obj(s.done), notes: obj(s.notes), shop: obj(s.shop), timers, factor: factor > 0 ? factor : 1 };
+  return { done: obj(s.done), notes: obj(s.notes), shop: obj(s.shop), timers, factor: factor > 0 ? factor : 1,
+           order: s.order === "gang" ? "gang" : "ablauf" };
 }

@@ -108,3 +108,6 @@ textarea{width:100%;border:1px solid var(--line);border-radius:8px;background:va
 .chip.done{opacity:.5}.chip.done .t{text-decoration:line-through}
 .chip .m{display:block;color:var(--muted);font-size:11px;margin-top:2px}
 @media (max-width:640px){.gantt{grid-template-columns:84px repeat(var(--cols),140px);min-width:0}.lane{padding:8px 6px;font-size:12px}}
+.phase h2{margin:26px 0 8px}
+.entry-head{margin:12px 0 6px;font-weight:700;color:var(--muted);font-size:14px}
+.row.plain{border-left-color:var(--line)}.row.plain .body{cursor:default}.row .t.plain{font-family:var(--body);font-weight:400;font-size:16px}
