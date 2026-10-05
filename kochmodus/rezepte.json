@@ -28,6 +28,13 @@
   "cooked": true
  },
  {
+  "path": "../gerichte/imam-bayildi.json",
+  "title": "İmam bayıldı — in Olivenöl geschmorte gefüllte Auberginen (4 Portionen)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": true
+ },
+ {
   "path": "../gerichte/oktopus-geschmort.json",
   "title": "Geschmorter Oktopus, griechische Art (4 Portionen)",
   "group": "gerichte",

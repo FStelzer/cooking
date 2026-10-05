@@ -1,6 +1,6 @@
 # İmam bayıldı — in Olivenöl geschmorte gefüllte Auberginen (4 Portionen)
 
-*Aktive Zeit ~40 Min., gesamt ~2,5 Std. inkl. Ruhen — oder besser: am Vortag
+*Aktive Zeit \~40 Min., gesamt \~2,5 Std. inkl. Ruhen — oder besser: am Vortag
 kochen, lauwarm servieren. Equipment: Ofen + Bräter oder tiefe Auflaufform mit Deckel/Folie,
 große Pfanne.*
 
@@ -17,7 +17,7 @@ mittags kochen, abends essen, Küche bleibt kühl.
   Bruchteil von Öl, Spritzerei und Aufwand — und die Auberginen saugen sich
   nicht voll, bevor sie überhaupt gefüllt sind. Das Olivenöl kommt stattdessen
   gezielt in Füllung und Schmorflüssigkeit, wo es Träger ist statt Ballast.
-- **Olivenöl ist Zutat, nicht Medium.** ~180 ml im Gericht sind gewollt und
+- **Olivenöl ist Zutat, nicht Medium.** \~180 ml im Gericht sind gewollt und
   nicht verhandelbar — daher gutes Öl nehmen. Rechnung: 3 EL Einpinseln +
   4 EL Füllung + 5 EL Angießen ≈ 180 ml (Referenzrezepte für 4 Auberginen
   liegen bei 150–200 ml). Wie beim Oktopus: niedrige
@@ -28,7 +28,7 @@ mittags kochen, abends essen, Küche bleibt kühl.
 
 ## Beschaffung
 
-- **Auberginen:** 4 Stück, klein bis mittel (à ~250–300 g), schlank, fest,
+- **Auberginen:** 4 Stück, klein bis mittel (à \~250–300 g), schlank, fest,
   glänzend. Türkischer Gemüsehändler hat oft die schlanken Sorten, die
   perfekt passen; die dicken REWE-Standardauberginen funktionieren aber auch
   (dann eher 2–3 große, halbiert statt geschlitzt — siehe Variante in den
@@ -37,73 +37,89 @@ mittags kochen, abends essen, Küche bleibt kühl.
   (15 Min.) lohnt hier trotzdem — nicht gegen Bitterkeit, sondern weil
   entwässerte Auberginen beim Rösten cremiger garen. *(Quellenlage: 10–30 Min.
   oder ganz weglassen; 15 Min. reichen für den Textur-Effekt.)* **Dosiert
-  salzen: 0,75–1 % des Auberginengewichts, also ~½ TL feines Salz pro
+  salzen: 0,75–1 % des Auberginengewichts, also \~½ TL feines Salz pro
   275-g-Aubergine, innen und außen zusammen.** Dann nur abtupfen, nicht
   abspülen — nasse Auberginen dampfen im Ofen statt zu rösten. Wer großzügig
   gesalzen hat, spült kurz ab und tupft dafür sehr trocken.
-- **Olivenöl:** ~180 ml Verbrauch — ein Öl, das man auch pur aufs Brot geben
+- **Olivenöl:** \~180 ml Verbrauch — ein Öl, das man auch pur aufs Brot geben
   würde. 200 ml einplanen (Rest zum Servieren).
 
 ## Einkaufsliste
 
-### REWE / Aldi (ggf. türkischer Gemüsehändler für Auberginen)
+### REWE / Aldi
+
+*Ggf. türkischer Gemüsehändler für Auberginen.*
 
 **Obst & Gemüse:**
-- [ ] 4 kleine/mittlere Auberginen (à ~250–300 g)
-- [ ] 4 große Zwiebeln (~600–700 g)
+- [ ] 4 kleine/mittlere Auberginen *(à \~250–300 g)*
+- [ ] 4 große Zwiebeln *(\~600–700 g)*
 - [ ] 6 Knoblauchzehen
-- [ ] 500 g reife Tomaten (aromatisch — das Gericht steht und fällt damit)
-- [ ] 2 grüne Spitzpaprika (1 in die Füllung, 1 in Streifen obendrauf)
+- [ ] 500 g reife Tomaten *(aromatisch — das Gericht steht und fällt damit)*
+- [ ] 2 grüne Spitzpaprika *(1 in die Füllung, 1 in Streifen obendrauf)*
 - [ ] 1 Bund glatte Petersilie
 - [ ] 1 Zitrone
-- [ ] Optional: frische Minze (ein paar Blätter in die Füllung)
+- [ ] Optional: frische Minze *(ein paar Blätter in die Füllung)*
 
-**Sonstiges:**
-- [ ] 200 ml gutes Olivenöl (Verbrauch ~180 ml, siehe Rechnung oben)
+**Milchprodukte & Eier:**
+- [ ] 500 g Joghurt *(türkischer/griechischer, 10 %)*
+
+**Trockenwaren:**
+- [ ] Fladenbrot oder Baguette
+- [ ] Optional: 250 g grober Bulgur *(Beilage, Pilav — sonst reicht Brot)*
+
+### Vorrat prüfen
+
+- [ ] 200 ml gutes Olivenöl *(Verbrauch \~180 ml, siehe Rechnung oben)*
 - [ ] 1 EL Tomatenmark
 - [ ] 1–2 TL Zucker
-- [ ] Getrockneter Oregano (Bestand; griechischer vom Oktopus-Projekt passt)
-- [ ] 500 g Joghurt (türkischer/griechischer, 10 %)
-- [ ] Fladenbrot oder Baguette
-- [ ] Optional Beilage: 250 g grober Bulgur (Pilav) — sonst reicht Brot
-- [ ] Optional: Pul Biber / Chiliflocken (nur Erwachsenen-Teller)
+- [ ] Getrockneter Oregano *(Bestand; griechischer vom Oktopus-Projekt passt)*
+- [ ] Salz
+- [ ] Pfeffer
+- [ ] Optional: Pul Biber / Chiliflocken *(nur Erwachsenen-Teller)*
 
 ## Zubereitung
 
-**1. Auberginen vorbereiten (10 Min. + 30 Min. Wartezeit)**
-Auberginen längs zebraartig schälen (Streifen stehen lassen — hält die Form).
+**1. Auberginen vorbereiten (10 Min.)**
+*jederzeit*
+4 Auberginen längs zebraartig schälen (Streifen stehen lassen — hält die Form).
 Ganz lassen, aber längs eine tiefe Tasche einschneiden (nicht durchstechen,
-Enden geschlossen lassen). Innen und außen salzen (~½ TL feines Salz pro
-Aubergine, nicht nach Gefühl schütten), mit Schnitt nach unten 15–30 Min. auf
+Enden geschlossen lassen). Innen und außen salzen (\~½ TL feines Salz pro
+Aubergine, nicht nach Gefühl schütten).
+
+**2. Entwässern (15–30 Min., passiv)**
+Mit Schnitt nach unten 15–30 Min. auf
 Küchenpapier entwässern lassen. Abtupfen, nicht abspülen.
 
 > **Salz-Budget:** Das Gericht wird an drei Stellen gesalzen (Aubergine,
 > Füllung, Angießflüssigkeit) und der Sud kocht danach stark ein. Bei jedem
 > Schritt für sich zurückhaltend bleiben — aber am Ende, kalt, konsequent
-> nachsalzen (Schritt 6). Beides gilt gleichzeitig; siehe Learnings.
+> nachsalzen (siehe „Servieren“). Beides gilt gleichzeitig; siehe Learnings.
 
-**2. Rösten (30 Min., parallel zu Schritt 3)**
-Ofen 200 °C Ober-/Unterhitze (Umluft 180 °C). Auberginen rundum mit 3 EL
+**3. Rösten (30 Min., parallel)**
+*nach Entwässern · Ofen 200 °C*
+Parallel zur Füllung: Ofen 200 °C Ober-/Unterhitze (Umluft 180 °C). Auberginen rundum mit 3 EL
 Olivenöl einpinseln, auf Blech/Gitter 25–30 Min. rösten, bis das Fleisch
 nachgiebig ist (Messerprobe wie beim Oktopus: kein Widerstand). *Sie dürfen
 einfallen — werden eh gefüllt.*
 
-**3. Füllung (25 Min., parallel)**
-4 EL Olivenöl (~60 ml) in großer Pfanne, 4 Zwiebeln in feine Halbringe, bei
+**4. Füllung (25 Min., parallel)**
+*jederzeit · Herd*
+4 EL Olivenöl (\~60 ml) in großer Pfanne, 4 Zwiebeln in feine Halbringe, bei
 mittlerer Hitze **10–12 Min.** langsam weich und leicht golden schmoren — nicht rösten,
 nicht abkürzen. 1 Spitzpaprika in Ringen + 5 gehackte Knoblauchzehen 3 Min. mit.
 400 g der Tomaten gewürfelt, 1 EL Tomatenmark, 1 TL Zucker, 1 TL Oregano, Salz,
-Pfeffer; ~8 Min. einkochen, bis es dick und marmeladig ist. Vom Herd, gut die
-Hälfte der gehackten Petersilie (+ optional Minze) unterheben. Abschmecken —
+Pfeffer; \~8 Min. einkochen, bis es dick und marmeladig ist. Vom Herd, gut die
+Hälfte von 1 Bund gehackter Petersilie (+ optional Minze) unterheben. Abschmecken —
 die Füllung soll solo schon rund sein: süß von der Zwiebel, sauer von der
 Tomate, kräftig gesalzen.
 
-**4. Füllen & Schmoren (45–60 Min., passiv)**
+**5. Füllen & Schmoren (45–60 Min., passiv)**
+*nach Rösten, Füllung · Ofen 180 °C*
 Ofen auf 180 °C Ober-/Unterhitze (Umluft 160 °C). Auberginen dicht
 nebeneinander in den Bräter, Taschen aufklappen und großzügig füllen (ruhig
 überhäufen). Restliche 100 g Tomaten in Scheiben obendrauf, dazu je ein
 Streifen der übrigen Spitzpaprika (klassische Optik). Restliches Olivenöl
-(~5 EL / 75 ml) über die Auberginen gießen. Dann die Schmorflüssigkeit
+(\~5 EL / 75 ml) über die Auberginen gießen. Dann die Schmorflüssigkeit
 anrühren — 150 ml Wasser + Saft ½ Zitrone + Prise Zucker + kleine Prise Salz
 im Messbecher, Salz und Zucker darin auflösen — und **am Rand des Bräters
 angießen, nicht über die Füllung** (spült sie sonst aus den Taschen). Die
@@ -114,21 +130,21 @@ Schluck Wasser nach. *Ziel: Auberginen konfiert-weich, unten eine glänzende,
 leicht gebundene Öl-Tomaten-Sauce. Es soll leise blubbern — niedrig und lang
 schlägt heiß und kurz.*
 
-**5. Ruhen — der wichtigste Schritt (mind. 30 Min., besser über Nacht)**
-Aus dem Ofen und **abkühlen lassen**. İmam bayıldı wird lauwarm oder
+**6. Ruhen (30 Min., passiv)**
+Der wichtigste Schritt (mindestens 30 Min., besser über Nacht): Aus dem Ofen und **abkühlen lassen**. İmam bayıldı wird lauwarm oder
 zimmerwarm gegessen, nie ofenheiß — erst beim Abkühlen ziehen Öl und Aromen
 in die Aubergine ein. Am Vortag gekocht ist das Gericht dokumentiert besser.
 
-**6. Servieren — hier wird final abgeschmeckt**
-**Erst im lauwarmen/kalten Zustand endgültig salzen und säuern.** Kalt nimmt
+**7. Servieren (ca. 10 Min.)**
+Hier wird final abgeschmeckt: **Erst im lauwarmen/kalten Zustand endgültig salzen und säuern.** Kalt nimmt
 man salzig und süß schwächer wahr als heiß; was warm aus dem Ofen „rund"
 schmeckt, ist lauwarm flach. Also: Sud probieren, Salz nachziehen, deutlich
 mehr Zitrone als man vermutet.
 
 Mit Schmorsud beträufeln, restliche Petersilie, Saft der restlichen ½ Zitrone. Dazu
 500 g Joghurt — **besser als pur: 1 geriebene rohe Knoblauchzehe + Salz im Joghurt**,
-das bringt die meiste Wucht pro Aufwand. Brot zum Tunken — der Sud
-ist wie beim Oktopus Gold. Optional Bulgur-Pilav. Erwachsene: Pul Biber
+das bringt die meiste Wucht pro Aufwand. Fladenbrot oder Baguette zum Tunken — der Sud
+ist wie beim Oktopus Gold. Optional Bulgur-Pilav aus 250 g grobem Bulgur. Erwachsene: Pul Biber
 großzügig.
 
 ## Kinder-Anpassung
@@ -200,11 +216,11 @@ und Säure) plus zu mildes Olivenöl; Rezept entsprechend angepasst
     Wasser+Öl+Zitrone+Zucker abgedeckt 45–50 Min., zimmerwarm/kalt servieren.
   - [Cooking Gorgeous — Imam Bayildi](https://cookingorgeous.com/blog/imam-bayildi-turkish-stuffed-eggplant/)
     (türkische Autorin): 4 Auberginen à 250–300 g, Ofen-Vorrösten 200 °C
-    ~30 Min. explizit als Alternative zum Frittieren, finales Schmoren 180 °C
+    \~30 Min. explizit als Alternative zum Frittieren, finales Schmoren 180 °C
     abgedeckt + offenes Finish, 1 EL Tomatenmark, „over night besser".
   - [Give Recipe — Imam Bayildi](https://www.giverecipe.com/imam-bayildi/)
     (türkischer Blog): reine Ofen-Variante (200 °C, 30 Min. Vorrösten),
-    Tomatenmark in der Angieß-Sauce, leichtere Öl-Auslegung (~90 ml).
+    Tomatenmark in der Angieß-Sauce, leichtere Öl-Auslegung (\~90 ml).
   - [Whats4eats — Imam Bayildi](https://www.whats4eats.com/vegetables/imam-bayildi-recipe):
-    Salzen 30 Min., 175 °C abgedeckt 40–50 Min., 1 Tasse Wasser, ~120 ml Öl
+    Salzen 30 Min., 175 °C abgedeckt 40–50 Min., 1 Tasse Wasser, \~120 ml Öl
     für 3 Auberginen, Zitrone/Zucker optional, zimmerwarm servieren.
