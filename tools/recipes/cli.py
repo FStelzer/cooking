@@ -9,13 +9,16 @@ from .coverage import check_b, check_c, check_d
 from .diff import diff
 from .schema import check_a
 from .shopping import check_k, derive, render_shopping
+from .timing import check_e, check_f, check_g, check_h, check_l
 from .util import load_json, read_source, source_path
 
 
 def _structural(recipe: dict) -> list[str]:
-    """A und D: Vorbedingung für alles, was den Zutaten-Graph auswertet (derive, K)."""
-    errs = check_a(recipe)
-    return errs or check_d(recipe)[0]
+    """A und D: Vorbedingung für alles, was den Zutaten-Graph auswertet (derive, K).
+    Ein vorhandener derived-Block wird ignoriert — er wird ohnehin neu geschrieben."""
+    body = {k: v for k, v in recipe.items() if k != "derived"}
+    errs = check_a(body)
+    return errs or check_d(body)[0]
 
 
 def cmd_check(args) -> int:
@@ -30,7 +33,8 @@ def cmd_check(args) -> int:
             errs.append(f"Quelle fehlt: {source_path(recipe)}")
         if not errs:
             src = read_source(recipe)
-            for e, r in (check_b(recipe, src), check_c(recipe, src), check_k(recipe, src)):
+            for e, r in (check_b(recipe, src), check_c(recipe, src), check_k(recipe, src),
+                         check_e(recipe, src), check_f(recipe, src), check_g(recipe), check_h(recipe), check_l(recipe, src)):
                 errs += e
                 reps += r
         for e in errs:

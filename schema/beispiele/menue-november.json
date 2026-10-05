@@ -1,0 +1,3325 @@
+{
+  "$schema": "../recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "menues/menue-november",
+  "kind": "menu",
+  "title": "Menü November — Tomatenwasser / Kaisergranat / Schmorlamm / Espresso-Parfait",
+  "status": "wip",
+  "statusNote": "> [!NOTE]\n> **Status: In Arbeit** — alle vier Rezepte sind vollständig ausgearbeitet\n> (Stand 08/2026, recherchiert; **Umbau 09/2026 für Schwangerschaft + GDM**,\n> s. Box unten), aber Testläufe stehen aus: Gang 2 (Kaisergranat-Garpunkt +\n> Verjus-Beurre-blanc), Parfait (alkoholfrei, Decaf, Textur), Tomatenwasser\n> (Weg A gegen Weg B verkosten). Abend-Zeitplan ist bewusst nur ein Skelett —\n> Feinschliff nach den Testläufen. 4–5 Personen (2 Erw. + Gäste + Kind 3 J.).\n> Tomatenwasser liegt seit 09/2026 in beiden Klärwegen im Gefrierfach.\n\n> [!NOTE]\n> **Schwangerschaft + Gestationsdiabetes (Umbau 09/2026):** Die Frau isst mit,\n> deshalb ist das ganze Menü umgebaut statt Sonderportionen — geprüft gegen den\n> [Leitfaden](/schwangerschaft/leitfaden.md), keine Kopie in `schwangerschaft/`.\n> **Gang 1:** Sherry gestrichen; Worcestershire (fermentierte, pasteurisierte\n> Fertigsauce, 6–8 Tropfen) unkritisch. **Gang 2:** Kaisergranat statt glasiger\n> Jakobsmuschel — wird ohnehin durchgegart serviert (63–65 °C Kern), Beurre\n> blanc für alle auf Verjus statt Wein/Noilly, Ziegenfrischkäse pasteurisiert.\n> **Gang 3:** geschmorte, gepresste Lammschulter statt rosa Karree — geschmort\n> und am Abend auf ≥ 70 °C Kern durchgewärmt; Rotwein in der Jus wird in\n> Schüben bis fast trocken reduziert, bevor Flüssigkeit dazukommt (Verjus-\n> Option im Rezept). **Gang 4:** kein Alkohol in der Parfait-Masse, die Pâte à\n> bombe wird auf 75–82 °C gezogen (pasteurisiert, kein rohes Ei), durchgehend\n> Decaf; Schuss am Tisch als Espresso-Shakerato (alkoholfrei) oder\n> Espresso-Martini. **GDM:** Menü ist praktisch stärkefrei; KH nur in den\n> Mango-Gel-Punkten und im Dessert (kleine Scheibe + Crumble \\~20 g KH) → nach\n> dem Essen messen.",
+  "yields": {
+    "text": "4–5 Personen",
+    "value": 5,
+    "unit": "Personen"
+  },
+  "persons": {
+    "text": "4–5 Personen (2 Erw. + Gäste + Kind 3 J.)",
+    "adults": 2,
+    "kids": 1
+  },
+  "anchor": {
+    "label": "Gang 1 serviert"
+  },
+  "courses": [
+    {
+      "ref": "gang-1",
+      "n": 1,
+      "name": "Tomatenwasser",
+      "serve": "PT0M",
+      "source": "Gang 1 (0:00)"
+    },
+    {
+      "ref": "gang-2",
+      "n": 2,
+      "name": "Kaisergranat",
+      "serve": "+PT20M",
+      "source": "Gang 2 (+0:20)"
+    },
+    {
+      "ref": "gang-3",
+      "n": 3,
+      "name": "Lammschulter",
+      "serve": "+PT55M",
+      "source": "Gang 3 (+0:55)"
+    },
+    {
+      "ref": "gang-4",
+      "n": 4,
+      "name": "Espresso-Parfait",
+      "serve": "+PT1H45M",
+      "source": "Gang 4 (+1:45)"
+    }
+  ],
+  "resources": [
+    {
+      "id": "oven",
+      "count": 1
+    },
+    {
+      "id": "hob",
+      "count": 4
+    },
+    {
+      "id": "cook",
+      "count": 1
+    }
+  ],
+  "constraints": [
+    {
+      "type": "max-gap",
+      "from": "step:warmhalten-limette:end",
+      "to": "task:anrichten:start",
+      "value": "PT5M",
+      "source": "Erst unmittelbar vor dem Anrichten"
+    },
+    {
+      "type": "max-gap",
+      "from": "step:salzen:end",
+      "to": "step:pfannen:start",
+      "value": "PT2M",
+      "source": "erst direkt vor dem Braten"
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "verjus",
+      "name": "Verjus",
+      "store": "Online",
+      "buy": {
+        "text": "500 ml"
+      },
+      "courses": [
+        "gang-2",
+        "gang-3"
+      ],
+      "note": "Weinhandel oder online, \\~8–12 €; vielseitig: Vinaigretten, Poulet au vinaigre"
+    },
+    {
+      "id": "espressobohnen",
+      "name": "Espressobohnen **entkoffeiniert**",
+      "store": "Online",
+      "buy": {
+        "text": "250 g"
+      },
+      "courses": [
+        "gang-4"
+      ],
+      "note": "Specialty-Röster (Swiss-Water- oder CO2-Verfahren, dunklere Röstung); billiger Decaf schmeckt flach/sauer"
+    },
+    {
+      "id": "instant-espresso",
+      "name": "Instant-Espressopulver **entkoffeiniert**",
+      "store": "Online",
+      "buy": {
+        "text": "klein"
+      },
+      "courses": [
+        "gang-4"
+      ],
+      "note": "Nescafé Gold/Lavazza Dek; Fallback: 1 TL sehr fein gemahlener Decaf"
+    },
+    {
+      "id": "kaisergranat",
+      "name": "Kaisergranat",
+      "store": "Buhara Seafood",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "12 Stück"
+      },
+      "courses": [
+        "gang-2"
+      ],
+      "storeNote": "vorher anfragen!",
+      "note": "**TK roh, ganz**, \\~1 kg, Größe 10–15 St./kg; Etikett: Nephrops norvegicus; nicht vorgekocht, keine argentinischen Rotgarnelen",
+      "fallback": "Selgros TK"
+    },
+    {
+      "id": "lammschulter",
+      "name": "Lammschulter **mit Knochen**",
+      "store": "Selgros",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "2–2,2 kg"
+      },
+      "courses": [
+        "gang-3"
+      ],
+      "note": "Alternative: türkischer Metzger, s. Offen"
+    },
+    {
+      "id": "lammknochen",
+      "name": "Lammknochen, gesägt",
+      "store": "Selgros",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "500 g"
+      },
+      "courses": [
+        "gang-3"
+      ]
+    },
+    {
+      "id": "kaisergranat-fallback",
+      "name": "Kaisergranat TK (Selgros)",
+      "store": "Selgros",
+      "group": "Fleisch & Fisch",
+      "courses": [
+        "gang-2"
+      ],
+      "optional": true,
+      "priority": "optional",
+      "note": "nur als Fallback, falls Buhara nicht liefert"
+    },
+    {
+      "id": "cherrytomaten",
+      "name": "Cherry-/Datteltomaten",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "150 g"
+      },
+      "courses": [
+        "gang-1"
+      ]
+    },
+    {
+      "id": "limetten",
+      "name": "Limetten",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "4 Stück"
+      },
+      "courses": [
+        "gang-1",
+        "gang-2"
+      ]
+    },
+    {
+      "id": "zitronen",
+      "name": "Zitronen",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2 Stück"
+      },
+      "courses": [
+        "gang-3"
+      ]
+    },
+    {
+      "id": "mango",
+      "name": "Mango, reif",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Stück"
+      },
+      "courses": [
+        "gang-2"
+      ]
+    },
+    {
+      "id": "ingwer",
+      "name": "Ingwer",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "kleines Stück"
+      },
+      "courses": [
+        "gang-2"
+      ]
+    },
+    {
+      "id": "schalotten",
+      "name": "Schalotten",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3 Stück"
+      },
+      "courses": [
+        "gang-2"
+      ]
+    },
+    {
+      "id": "zwiebel",
+      "name": "Zwiebel",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "150 g"
+      },
+      "courses": [
+        "gang-3"
+      ]
+    },
+    {
+      "id": "karotte",
+      "name": "Karotte",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Stück"
+      },
+      "courses": [
+        "gang-3"
+      ]
+    },
+    {
+      "id": "knollensellerie",
+      "name": "Knollensellerie",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 große Knolle (\\~1,2 kg)"
+      },
+      "courses": [
+        "gang-3"
+      ]
+    },
+    {
+      "id": "rosenkohl",
+      "name": "Rosenkohl",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "700 g"
+      },
+      "courses": [
+        "gang-3"
+      ]
+    },
+    {
+      "id": "knoblauch",
+      "name": "Knoblauch",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Knolle"
+      },
+      "courses": [
+        "gang-3"
+      ]
+    },
+    {
+      "id": "kraeuter",
+      "name": "Petersilie, Schnittlauch, Thymian, Rosmarin",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "je 1 Bund/Töpfchen"
+      },
+      "courses": [
+        "gang-2",
+        "gang-3"
+      ]
+    },
+    {
+      "id": "basilikum",
+      "name": "Basilikum",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Töpfchen"
+      },
+      "courses": [
+        "gang-1"
+      ]
+    },
+    {
+      "id": "butter",
+      "name": "Butter",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "500 g (2 × 250 g)"
+      },
+      "courses": [
+        "gang-2",
+        "gang-3",
+        "gang-4"
+      ]
+    },
+    {
+      "id": "ziegenfrischkaese",
+      "name": "Ziegenfrischkäse, **mild, pasteurisiert**",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "150 g"
+      },
+      "courses": [
+        "gang-2"
+      ],
+      "note": "z. B. Chavroux; Petit Billy falls da — kräftig-rustikale Sorten (Caprinsäure) dominieren den feinen Kaisergranat; Etikett auf pasteurisierte Milch prüfen"
+    },
+    {
+      "id": "sahne",
+      "name": "Sahne",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "500 ml"
+      },
+      "courses": [
+        "gang-2",
+        "gang-4"
+      ]
+    },
+    {
+      "id": "vollmilch",
+      "name": "Vollmilch",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "1 L"
+      },
+      "courses": [
+        "gang-3"
+      ]
+    },
+    {
+      "id": "eier",
+      "name": "Eier",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "6 Stück"
+      },
+      "courses": [
+        "gang-4"
+      ],
+      "note": "4 Eigelb; Eiweiß-Verwertung einplanen"
+    },
+    {
+      "id": "walnuesse",
+      "name": "Walnüsse",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "100 g"
+      },
+      "courses": [
+        "gang-2"
+      ]
+    },
+    {
+      "id": "agar",
+      "name": "Agar-Agar",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 Päckchen"
+      },
+      "courses": [
+        "gang-2"
+      ],
+      "note": "Bio-/Backregal; Fallback: Chutney-Variante ohne Agar"
+    },
+    {
+      "id": "kakaonibs",
+      "name": "Kakaonibs",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "klein"
+      },
+      "courses": [
+        "gang-4"
+      ],
+      "note": "Bio-Regal; Fallback: Zartbitter 70 %+ gehackt"
+    },
+    {
+      "id": "dextrose",
+      "name": "Dextrose (Traubenzucker)",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "25 g"
+      },
+      "courses": [
+        "gang-4"
+      ],
+      "note": "Vorrat aus `eis/` prüfen"
+    },
+    {
+      "id": "brauner-zucker",
+      "name": "Brauner Zucker",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "500 g"
+      },
+      "courses": [
+        "gang-4"
+      ],
+      "note": "falls kein Vorrat"
+    },
+    {
+      "id": "rotwein",
+      "name": "Rotwein, kräftig",
+      "store": "REWE Center",
+      "group": "Getränke",
+      "buy": {
+        "text": "1 Flasche"
+      },
+      "courses": [
+        "gang-3"
+      ],
+      "note": "300 ml, wird in Schüben trocken reduziert; alkoholfreie Option: 150 ml Verjus + 150 ml Wasser"
+    },
+    {
+      "id": "wodka",
+      "name": "Wodka",
+      "store": "REWE Center",
+      "group": "Getränke",
+      "buy": {
+        "text": "kleine Flasche"
+      },
+      "courses": [
+        "gang-4"
+      ],
+      "optional": true,
+      "note": "**nur Espresso-Martini-Schuss**, \\~15 ml pro Trinker; neutraler 40%er reicht"
+    },
+    {
+      "id": "kahlua",
+      "name": "Kahlúa o. ä. Kaffeelikör",
+      "store": "REWE Center",
+      "group": "Getränke",
+      "buy": {
+        "text": "klein"
+      },
+      "courses": [
+        "gang-4"
+      ],
+      "optional": true,
+      "note": "**nur Schuss**, \\~10 ml pro Trinker"
+    },
+    {
+      "id": "frittieroel",
+      "name": "Frittieröl",
+      "store": "REWE Center",
+      "group": "Getränke",
+      "buy": {
+        "text": "1–2 L"
+      },
+      "courses": [
+        "gang-3"
+      ]
+    },
+    {
+      "id": "selleriesalz",
+      "name": "Selleriesalz",
+      "store": "REWE Center",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1 Glas"
+      },
+      "courses": [
+        "gang-1"
+      ]
+    },
+    {
+      "id": "pfeffer-weiss",
+      "name": "Weißer Pfeffer, ganz",
+      "store": "REWE Center",
+      "group": "Würzmittel & Gewürze",
+      "courses": [
+        "gang-1",
+        "gang-2"
+      ],
+      "note": "falls kein Vorrat — kein schwarzer: sichtbare Punkte"
+    },
+    {
+      "id": "tomatenwasser",
+      "name": "Tomatenwasser",
+      "store": "Vorrat",
+      "courses": [
+        "gang-1"
+      ],
+      "inStock": true,
+      "note": "**beide Klärwege (Püree-Block + klares Wasser) liegen seit 09/2026 im Gefrierfach**"
+    },
+    {
+      "id": "worcestershire",
+      "name": "Worcestershire-Sauce",
+      "store": "Vorrat",
+      "courses": [
+        "gang-1"
+      ],
+      "pantry": true
+    },
+    {
+      "id": "chilioel",
+      "name": "Mildes Chiliöl",
+      "store": "Vorrat",
+      "courses": [
+        "gang-1"
+      ],
+      "pantry": true,
+      "note": "oder selbst ansetzen → Chili-Öl-Drill in `technik/mini-projekte.md`"
+    },
+    {
+      "id": "weissweinessig",
+      "name": "Weißweinessig",
+      "store": "Vorrat",
+      "courses": [
+        "gang-2"
+      ],
+      "pantry": true
+    },
+    {
+      "id": "butterschmalz",
+      "name": "Butterschmalz",
+      "store": "Vorrat",
+      "courses": [
+        "gang-2",
+        "gang-3"
+      ],
+      "pantry": true
+    },
+    {
+      "id": "gelatine",
+      "name": "Gelatine",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1 Blatt"
+      },
+      "courses": [
+        "gang-3"
+      ],
+      "optional": true,
+      "note": "nur als Option für die Block-Bindung"
+    },
+    {
+      "id": "zucker",
+      "name": "Zucker",
+      "store": "Vorrat",
+      "courses": [
+        "gang-2",
+        "gang-4"
+      ],
+      "pantry": true,
+      "note": "auch für 1:1-Zuckersirup, Shakerato"
+    },
+    {
+      "id": "panko",
+      "name": "Panko oder Mehl",
+      "store": "Vorrat",
+      "courses": [
+        "gang-2",
+        "gang-4"
+      ],
+      "pantry": true
+    },
+    {
+      "id": "honig",
+      "name": "Honig",
+      "store": "Vorrat",
+      "courses": [
+        "gang-2"
+      ],
+      "pantry": true
+    },
+    {
+      "id": "muskat",
+      "name": "Muskat",
+      "store": "Vorrat",
+      "courses": [
+        "gang-3"
+      ],
+      "pantry": true
+    },
+    {
+      "id": "tomatenmark",
+      "name": "Tomatenmark",
+      "store": "Vorrat",
+      "courses": [
+        "gang-3"
+      ],
+      "pantry": true
+    },
+    {
+      "id": "lorbeer",
+      "name": "Lorbeer",
+      "store": "Vorrat",
+      "courses": [
+        "gang-3"
+      ],
+      "pantry": true
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Menüfolge & Dramaturgie",
+      "level": 2,
+      "markdown": "| # | Gang | Charakter |\n|---|------|-----------|\n| 1 | **Amuse: Klares Tomatenwasser „feine Bloody Mary“** — Concassé-Einlage, kurze präzise Schärfe | Statement-Einstieg: klar, kalt, kurzer Kick |\n| 2 | **Kaisergranat, Verjus-Limetten-Beurre-blanc, Mango-Gel, Ziegenkäse-Praline** | Sanfte Pause nach dem Statement: süß, cremig, säure-balanciert |\n| 3 | **Geschmorte, gepresste Lammschulter, Selleriepüree, Rosenkohl zweierlei, Lammjus** | Erdig, herzhaft, Jus statt Sahne — knuspriger Block, zartes Inneres |\n| 4 | **Espresso-Parfait (Decaf) mit Schuss am Tisch** — Espresso-Martini oder Shakerato | Kräftiges Finale + Show-Moment |\n\n**Bögen & Balance-Checks:**\n- Selleriesalz im Amuse ↔ Selleriepüree im Hauptgang (bewusster Bogen)\n- Schärfe nur in Gang 1, **kurz und präzise** (Tropfen Chiliöl) — kein lingerndes\n  Brennen vor dem feinen Kaisergranat\n- Fett-Verteilung: Beurre blanc (2) und Parfait (4) sind reich, Schmorlamm (3)\n  ist fetter als Karree → Amuse klar/fettfrei, Püree mit Milch, Jus entfettet\n  und nur montiert, Lammblock knusprig ausgebraten statt in Sauce\n- Säure-Führung in Gang 2: die **Beurre blanc führt die Limette**, das Mango-Gel\n  bleibt fruchtig-mild — nicht beide Komponenten sauer abschmecken\n- Keine Frucht-/Exotik-Doppelung: Mango nur in Gang 2, Dessert Kaffee\n- Alkohol nur noch im optionalen Espresso-Martini-Schuss (Gang 4) — Menü ist\n  sonst komplett alkoholfrei\n- Farbe: Knallgrüne Rosenkohlblätter brechen den sonst beigen Hauptgang"
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "courses",
+      "title": "Rezepte",
+      "courses": [
+        {
+          "id": "gang-1",
+          "kind": "course",
+          "title": "1. Klares Tomatenwasser „feine Bloody Mary“ (Amuse)",
+          "sections": [
+            {
+              "type": "markdown",
+              "title": "1. Klares Tomatenwasser „feine Bloody Mary“ (Amuse)",
+              "level": 3,
+              "markdown": "*Saison-Teil (Aug/Sep): \\~30 Min. aktiv + Abtropf-/Gefrierzeit — **erledigt\n09/2026** | Am Abend: \\~15 Min. | Pro Portion: 60–70 ml | Equipment:\nPassiertuch (doppelt), feines Sieb, Gefrierbeutel*\n\n**Saison-Teil (erledigt — zur Referenz fürs nächste Jahr):**\n\n1. 2 kg vollreife Tomaten (fleischige Salatsorten + \\~500 g aromatische\n   Cherry-/Datteltomaten) grob würfeln, mit 7 g Salz (3,5 g/kg) mischen.\n2. Nur **kurz pulsierend** mixen — grob-pulpig, nicht fein! Zu feines Mixen\n   zermahlt die Kerne (Bitterstoffe) und erzeugt Trübstoffe, die durchs Tuch gehen.\n   *(Bewusst wenig Salz: es wandert komplett ins Wasser — 5 g/kg ergäbe bereits\n   \\~1,4 % Salzgehalt; final wird im November hochgesalzen, nicht umgekehrt.)*\n3. **Weg A — Gefrierklärung (Empfehlung, im Testlauf bestätigen):** Die Hälfte\n   des gesalzenen Rohpürees (\\~1 kg) direkt flach im Gefrierbeutel einfrieren.\n   Klärung passiert erst im November beim Auftauen (Schritt 5) — Eiskristalle\n   schließen die Zellen auf: kristallklarer + höhere Ausbeute.\n4. **Weg B — klassisch:** Die andere Hälfte über Nacht (12 h) im doppelten\n   Passiertuch über einer Schüssel im Kühlschrank abtropfen lassen — **nicht\n   pressen, nicht rühren** (wird trüb). Ausbeute \\~300–400 ml/kg. Das klare\n   Wasser randvoll (Oxidation) einfrieren.\n\n**Im November — Vortage:**\n\n5. **Weg A:** Gefrorenen Püree-Block **2 Tage vor dem Abend** ins doppelte\n   Passiertuch über ein Sieb legen und im Kühlschrank 24–48 h auftauen lassen —\n   es tropft kristallklares Tomatenwasser ab (Drip-Thaw). Nicht drücken.\n   **Weg B:** Beutel am Vortag langsam im Kühlschrank auftauen, **nicht\n   schütteln**; vorsichtig vom Sediment dekantieren, notfalls durch\n   Kaffeefilter nachfiltern.\n\n**Am Abend:**\n\n6. Grundwürzung **1–2 h vor Service** auf \\~350 ml Tomatenwasser: 6–8 Tropfen\n   Worcestershire (**tropfenweise — trübt!**), 2 Prisen Selleriesalz (\\~0,5 g),\n   1 Umdrehung weißer Pfeffer. Kalt ziehen lassen — dabei setzen sich die\n   Worcestershire-Schwebstoffe am Boden ab.\n   **Vorher \\~60 ml für die Kinder-Portion abzweigen** (nur Mini-Prise Salz).\n7. **Bei Serviertemperatur abschmecken, nie bei Raumtemperatur:** Kälte dämpft\n   Umami und Salz-Wahrnehmung deutlich — kalt muss es einen Tick kräftiger\n   gewürzt sein, als sich „richtig“ anfühlt. Wirkt es ungewürzt fad/blass:\n   normal, erst würzen, dann urteilen.\n8. Concassé: 100 g Cherry-/Datteltomaten kreuzweise einritzen, 10–15 Sek.\n   blanchieren, Eiswasser, häuten, entkernen, 3–4-mm-Würfel. **Erst kurz vor\n   dem Servieren** mit 1 Prise Salz würzen (zieht sonst Wasser).\n9. Kurz vor dem Ausgießen: 10 ml Limettensaft **vorsichtig oben einrühren**\n   (das abgesetzte Sediment am Boden nicht aufwirbeln), abschmecken, ggf. auf\n   max. 15 ml erhöhen (Bún-chả-Learning: Säure dominiert schnell — vorsichtig).\n10. Anrichten: vorgekühlte Gläser/Espressotassen (kein Eis — verwässert),\n    je 1 TL Concassé, 60–70 ml Tomatenwasser angießen — vom Sediment weg,\n    der letzte Schluck bleibt im Gefäß. Pro Erwachsenen-Glas\n    2–3 Tropfen mildes Chiliöl (schwimmt als glänzende Perlen — Schärfe kurz\n    und präzise). Basilikumspitze oder zartes Selleriegrün aufsetzen;\n    alternativ 2 Tropfen Kräuteröl (→ `technik/mini-projekte.md`, größter\n    Optik-Hebel). *(Der früher optionale Fino-Sherry ist gestrichen —\n    Schwangerschaft, und das Dritt-Feedback votierte ohnehin für „rein“.)*\n\n**Kind (3 J.):** eigenes Glas aus der Abzweigung (Schritt 6) — ohne Chiliöl\nund Worcestershire, mit Concassé und Basilikum. Oder auslassen.\n\n> **Profi-Tipps:**\n> - Pressen/Quetschen des Tuchs ist Trübungs-Fehler Nr. 1 — Geduld schlägt Druck.\n> - Trüb geworden? Bester Rettungsweg ist die Gefrierklärung: einfrieren und\n>   per Drip-Thaw (Schritt 5, Weg A) neu klären.\n> - Tabasco wäre stilecht, trübt aber und bringt Essig-Säure — Chiliöl-Tropfen\n>   liefern die Schärfe klarer und sind fürs Kind einfach weglassbar.\n> - Ausbeute schwankt stark mit Sorte/Reife (240–400 ml/kg) — 2 kg geben Puffer;\n>   Rest-Tomatenwasser ist eine Top-Vinaigrette-Basis.\n\n**Offen (Testlauf):**\n- [ ] Klarheit + Aroma nach dem Auftauen: Weg A (Drip-Thaw) gegen Weg B\n      (klassisch) verkosten — Gewinner wird Standard\n- [ ] Chiliöl: gekauft (mild) oder selbst angesetzt (Drill)?"
+            }
+          ]
+        },
+        {
+          "id": "gang-2",
+          "kind": "course",
+          "title": "2. Kaisergranat, Verjus-Limetten-Beurre-blanc, Mango-Gel & Ziegenkäse-Praline",
+          "intro": "*Vortag: \\~45 Min. (Gel, Crumble, Pralinen) + Kaisergranat auftauen | Am Tag:\n\\~20 Min. Schwänze auslösen | Am Abend: \\~25 Min., davon \\~8 à la minute | Pro\nPortion: 2 Schwänze (Kind 1) | Equipment: Feinwaage (0,1 g) fürs Agar,\nSpritzflasche (Fallback: Gefrierbeutel mit Eckschnitt), Küchenthermometer,\nKüchenschere, 2 Pfannen*",
+          "sections": [
+            {
+              "type": "markdown",
+              "title": "Teller-Logik",
+              "level": "bold",
+              "tags": [
+                "teller-logik"
+              ],
+              "markdown": "**Teller-Logik:** Kaisergranat ist der Star — süßer und zarter als Garnele, die\nklassische Partnerin von Beurre blanc und Limette. Anders als die ursprünglich\ngeplante Jakobsmuschel wird er **ohnehin durchgegart** serviert (63–65 °C\nKern, durchgehend opak), das Gericht verliert durch die Schwangerschafts-Regel\nalso nichts. Mango nur als Akzent-Punkte (\\~5–10 g pro Teller), nicht als Basis\n— sonst süß-penetrant. Praline klein und untergeordnet (\\~25 g) auf\nCrumble-„Insel“ am Rand. Die Beurre blanc verbindet und **führt die Säure** —\ndas Gel bleibt fruchtig-mild. Kein Yuzu (bewusst gestrichen: teuer, dominant,\ndoppelte Exotik-Säure zur Mango)."
+            },
+            {
+              "type": "markdown",
+              "title": "Beschaffung, ehrlich",
+              "level": "bold",
+              "tags": [
+                "beschaffung"
+              ],
+              "markdown": "**Beschaffung, ehrlich:** Frischer Kaisergranat ist im Inland selten und teuer.\nRealistisch ist **TK roh, ganz, glasiert** (Buhara vorher anfragen, Fallback\nSelgros TK), \\~30–40 €/kg. Nicht vorgekocht kaufen (wird beim zweiten Erhitzen\ngummiartig). Etikett: *Nephrops norvegicus* — „Langostinos“/argentinische\nRotgarnelen sind eine andere Art und schmecken anders."
+            },
+            {
+              "type": "tasks",
+              "title": "Zubereitung",
+              "tasks": [
+                {
+                  "id": "mango-gel",
+                  "name": "Mango-Gel",
+                  "heading": "**Mango-Gel (bis 2 Tage vorher, ideal am Vortag — Agar nässt ab Tag 3):**",
+                  "phaseHint": "bis 2 Tage vorher, ideal am Vortag",
+                  "produces": [
+                    {
+                      "id": "mango-gel",
+                      "name": "Mango-Gel in der Spritzflasche",
+                      "hold": {
+                        "max": "P2D",
+                        "ideal": "P1D",
+                        "source": "bis 2 Tage vorher, ideal am Vortag — Agar nässt ab Tag 3"
+                      },
+                      "storage": {
+                        "place": "fridge",
+                        "note": "Spritzflasche; vor dem Anrichten kurz durchschütteln"
+                      }
+                    }
+                  ],
+                  "steps": [
+                    {
+                      "id": "mango-kochen",
+                      "label": "1",
+                      "text": "Fruchtfleisch von 1 reifer Mango (\\~300 g) mit 1–2 EL Zucker, 5 g fein geriebenem Ingwer und 2 EL Wasser 5–10 Min. weich kochen. Glatt mixen, durch das feine Sieb streichen → \\~250 ml Masse. Abkühlen lassen. **Kein Chili** — der Gel-Rest wird Kinder-Dessert (s. unten).",
+                      "action": "Fruchtfleisch von 1 reifer Mango (\\~300 g) mit 1–2 EL Zucker, 5 g fein geriebenem Ingwer und 2 EL Wasser 5–10 Min. weich kochen.",
+                      "ingredients": [
+                        {
+                          "ref": "mango",
+                          "amount": {
+                            "text": "1 reifer Mango",
+                            "value": 1,
+                            "unit": "Stück"
+                          }
+                        },
+                        {
+                          "ref": "zucker",
+                          "amount": {
+                            "text": "1–2 EL Zucker",
+                            "value": 1,
+                            "max": 2,
+                            "unit": "EL"
+                          }
+                        },
+                        {
+                          "ref": "ingwer",
+                          "amount": {
+                            "text": "5 g fein geriebenem Ingwer",
+                            "value": 5,
+                            "unit": "g"
+                          }
+                        },
+                        {
+                          "ref": "wasser",
+                          "amount": {
+                            "text": "2 EL Wasser",
+                            "value": 2,
+                            "unit": "EL"
+                          }
+                        }
+                      ],
+                      "attention": "attended",
+                      "duration": {
+                        "min": "PT5M",
+                        "max": "PT10M",
+                        "source": "5–10 Min."
+                      },
+                      "timers": [
+                        {
+                          "label": "Mango weich kochen",
+                          "duration": {
+                            "min": "PT5M",
+                            "max": "PT10M"
+                          },
+                          "text": "5–10 Min."
+                        }
+                      ],
+                      "cues": [
+                        "durch das feine Sieb streichen → \\~250 ml Masse"
+                      ],
+                      "limits": [
+                        "**Kein Chili** — der Gel-Rest wird Kinder-Dessert (s. unten)."
+                      ],
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ]
+                    },
+                    {
+                      "id": "agar-einmixen",
+                      "label": "2",
+                      "text": "2 g Agar-Agar (Feinwaage — 0,8 %, ±0,5 g verändert die Textur deutlich!) in die **kalte** Masse einmixen (Stabmixer, gegen Klümpchen), dann unter Rühren aufkochen und 2–3 Min. sprudelnd kochen (volle Hydratation).",
+                      "action": "2 g Agar-Agar (Feinwaage — 0,8 %, ±0,5 g verändert die Textur deutlich!) in die **kalte** Masse einmixen (Stabmixer, gegen Klümpchen), dann unter Rühren aufkochen und 2–3 Min. sprudelnd kochen (volle Hydratation).",
+                      "ingredients": [
+                        {
+                          "ref": "agar",
+                          "amount": {
+                            "text": "2 g Agar-Agar",
+                            "value": 2,
+                            "unit": "g"
+                          }
+                        }
+                      ],
+                      "attention": "active",
+                      "duration": {
+                        "min": "PT4M",
+                        "max": "PT6M",
+                        "estimated": true
+                      },
+                      "timers": [
+                        {
+                          "label": "Sprudelnd kochen",
+                          "duration": {
+                            "min": "PT2M",
+                            "max": "PT3M"
+                          },
+                          "text": "2–3 Min."
+                        }
+                      ],
+                      "equipment": [
+                        "Feinwaage",
+                        "Stabmixer"
+                      ],
+                      "limits": [
+                        "±0,5 g verändert die Textur deutlich!",
+                        "in die **kalte** Masse einmixen"
+                      ],
+                      "why": "volle Hydratation",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ]
+                    },
+                    {
+                      "id": "saeure-einruehren",
+                      "label": "3",
+                      "text": "Vom Herd: Saft von ½ Limette + 1 Prise Salz einrühren — **Säure erst nach dem Kochen** (mitgekocht schwächt sie das Agar-Gel). Das Gel soll solo süß-sauer-hell schmecken, nicht bonbonsüß.",
+                      "action": "Vom Herd: Saft von ½ Limette + 1 Prise Salz einrühren — **Säure erst nach dem Kochen** (mitgekocht schwächt sie das Agar-Gel).",
+                      "ingredients": [
+                        {
+                          "ref": "limetten",
+                          "amount": {
+                            "text": "½ Limette",
+                            "value": 0.5,
+                            "unit": "Stück"
+                          }
+                        },
+                        {
+                          "ref": "salz",
+                          "amount": {
+                            "text": "1 Prise Salz",
+                            "value": 1,
+                            "unit": "Prise"
+                          }
+                        }
+                      ],
+                      "attention": "active",
+                      "limits": [
+                        "**Säure erst nach dem Kochen**"
+                      ],
+                      "why": "mitgekocht schwächt sie das Agar-Gel",
+                      "cues": [
+                        "Das Gel soll solo süß-sauer-hell schmecken, nicht bonbonsüß."
+                      ]
+                    },
+                    {
+                      "id": "gel-fest-und-mixen",
+                      "label": "4",
+                      "text": "Flach ausgießen, 1–2 h kalt fest werden lassen. Würfeln, 1–3 Min. glatt mixen, durch das feine Sieb → Spritzflasche, kühl lagern. Vor dem Anrichten kurz durchschütteln, falls sich Flüssigkeit abgesetzt hat. *(Fallback ohne Agar: Masse dick einkochen und glatt mixen — Chutney-Nocken statt präziser Punkte.)*",
+                      "action": "Flach ausgießen, 1–2 h kalt fest werden lassen.",
+                      "ingredients": [],
+                      "attention": "passive",
+                      "duration": {
+                        "min": "PT1H",
+                        "max": "PT2H",
+                        "source": "1–2 h"
+                      },
+                      "timers": [
+                        {
+                          "label": "Gel fest werden",
+                          "duration": {
+                            "min": "PT1H",
+                            "max": "PT2H"
+                          },
+                          "text": "1–2 h"
+                        },
+                        {
+                          "label": "Glatt mixen",
+                          "duration": {
+                            "min": "PT1M",
+                            "max": "PT3M"
+                          },
+                          "text": "1–3 Min."
+                        }
+                      ],
+                      "rescue": "Fallback ohne Agar: Masse dick einkochen und glatt mixen — Chutney-Nocken statt präziser Punkte.",
+                      "equipment": [
+                        "Spritzflasche"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "walnuss-crumble",
+                  "name": "Walnusscrumble",
+                  "heading": "**Walnusscrumble (Vortag):**",
+                  "phaseHint": "Vortag",
+                  "produces": [
+                    {
+                      "id": "walnuss-crumble",
+                      "name": "Walnusscrumble",
+                      "hold": {
+                        "min": "PT30M",
+                        "max": null,
+                        "source": "Komplett auskühlen lassen"
+                      },
+                      "storage": {
+                        "place": "room",
+                        "covered": true,
+                        "note": "luftdicht bei Raumtemperatur — nicht im Kühlschrank (Kondensfeuchte)"
+                      }
+                    }
+                  ],
+                  "steps": [
+                    {
+                      "id": "crumble-roesten",
+                      "label": "5",
+                      "text": "50 g Walnüsse grob gehackt mit 20 g Butter, 20 g Panko, ½ TL Honig und 1 Prise Salz mischen, bei 160 °C (oder in der Pfanne) goldbraun und **vollständig trocken** rösten. Komplett auskühlen lassen, luftdicht bei **Raumtemperatur** lagern — nicht im Kühlschrank (Kondensfeuchte).",
+                      "action": "50 g Walnüsse grob gehackt mit 20 g Butter, 20 g Panko, ½ TL Honig und 1 Prise Salz mischen, bei 160 °C (oder in der Pfanne) goldbraun und **vollständig trocken** rösten.",
+                      "ingredients": [
+                        {
+                          "ref": "walnuesse",
+                          "amount": {
+                            "text": "50 g Walnüsse",
+                            "value": 50,
+                            "unit": "g"
+                          }
+                        },
+                        {
+                          "ref": "butter",
+                          "amount": {
+                            "text": "20 g Butter",
+                            "value": 20,
+                            "unit": "g"
+                          }
+                        },
+                        {
+                          "ref": "panko",
+                          "amount": {
+                            "text": "20 g Panko",
+                            "value": 20,
+                            "unit": "g"
+                          }
+                        },
+                        {
+                          "ref": "honig",
+                          "amount": {
+                            "text": "½ TL Honig",
+                            "value": 0.5,
+                            "unit": "TL"
+                          }
+                        },
+                        {
+                          "ref": "salz",
+                          "amount": {
+                            "text": "1 Prise Salz",
+                            "value": 1,
+                            "unit": "Prise"
+                          }
+                        }
+                      ],
+                      "attention": "attended",
+                      "duration": {
+                        "min": "PT10M",
+                        "max": "PT15M",
+                        "estimated": true
+                      },
+                      "temps": [
+                        {
+                          "kind": "ofen",
+                          "value": 160,
+                          "text": "160 °C"
+                        }
+                      ],
+                      "claims": [
+                        {
+                          "resource": "oven",
+                          "temp": 160,
+                          "alt": [
+                            {
+                              "resource": "hob",
+                              "units": 1
+                            }
+                          ]
+                        }
+                      ],
+                      "cues": [
+                        "goldbraun und **vollständig trocken**"
+                      ],
+                      "limits": [
+                        "nicht im Kühlschrank (Kondensfeuchte)"
+                      ],
+                      "after": []
+                    }
+                  ]
+                },
+                {
+                  "id": "pralinen-formen",
+                  "name": "Ziegenkäse-Pralinen formen",
+                  "heading": "**Ziegenkäse-Pralinen (Vortag formen, Wälzen erst am Abend):**",
+                  "phaseHint": "Vortag formen, Wälzen erst am Abend",
+                  "produces": [
+                    {
+                      "id": "pralinen-roh",
+                      "name": "Pralinen, ungewälzt",
+                      "hold": {
+                        "min": "PT10M",
+                        "max": "P1D",
+                        "source": "10–15 Min. anfrieren macht das Rollen sauber. Kalt lagern."
+                      },
+                      "storage": {
+                        "place": "fridge"
+                      }
+                    },
+                    {
+                      "id": "waelzmischung",
+                      "name": "Wälzmischung (Walnuss + Kräuter)",
+                      "hold": {
+                        "max": "P1D",
+                        "source": "Wälzmischung bereitstellen"
+                      },
+                      "storage": {
+                        "place": "fridge",
+                        "covered": true
+                      }
+                    }
+                  ],
+                  "steps": [
+                    {
+                      "id": "pralinen-kneten",
+                      "label": "6",
+                      "text": "120 g **milden, pasteurisierten** Ziegenfrischkäse (s. Einkaufsliste) mit 1 TL Honig (nicht mehr — Masse wird klebrig, Süße kommt am Teller vom Gel) und Pfeffer verkneten. 5 Kugeln à \\~25 g formen — 10–15 Min. anfrieren macht das Rollen sauber. Kalt lagern.",
+                      "action": "120 g **milden, pasteurisierten** Ziegenfrischkäse (s.",
+                      "ingredients": [
+                        {
+                          "ref": "ziegenfrischkaese",
+                          "amount": {
+                            "text": "120 g",
+                            "value": 120,
+                            "unit": "g"
+                          }
+                        },
+                        {
+                          "ref": "honig",
+                          "amount": {
+                            "text": "1 TL Honig",
+                            "value": 1,
+                            "unit": "TL"
+                          }
+                        },
+                        {
+                          "ref": "pfeffer-weiss",
+                          "amount": {
+                            "text": "Pfeffer"
+                          }
+                        }
+                      ],
+                      "attention": "active",
+                      "duration": {
+                        "typical": "PT10M",
+                        "estimated": true
+                      },
+                      "timers": [
+                        {
+                          "label": "Pralinen anfrieren",
+                          "duration": {
+                            "min": "PT10M",
+                            "max": "PT15M"
+                          },
+                          "text": "10–15 Min."
+                        }
+                      ],
+                      "limits": [
+                        "nicht mehr — Masse wird klebrig, Süße kommt am Teller vom Gel"
+                      ],
+                      "why": "10–15 Min. anfrieren macht das Rollen sauber.",
+                      "after": []
+                    },
+                    {
+                      "id": "waelzmischung",
+                      "label": "7",
+                      "text": "Wälzmischung bereitstellen: 30 g Walnüsse fein gehackt + 2 EL fein gehackte Kräuter (Petersilie, Schnittlauch, etwas Thymian).",
+                      "action": "Wälzmischung bereitstellen: 30 g Walnüsse fein gehackt + 2 EL fein gehackte Kräuter (Petersilie, Schnittlauch, etwas Thymian).",
+                      "ingredients": [
+                        {
+                          "ref": "walnuesse",
+                          "amount": {
+                            "text": "30 g Walnüsse",
+                            "value": 30,
+                            "unit": "g"
+                          }
+                        },
+                        {
+                          "ref": "kraeuter",
+                          "amount": {
+                            "text": "2 EL fein gehackte Kräuter",
+                            "value": 2,
+                            "unit": "EL"
+                          }
+                        }
+                      ],
+                      "attention": "active",
+                      "duration": {
+                        "typical": "PT5M",
+                        "estimated": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "pralinen-waelzen",
+                  "name": "Pralinen wälzen",
+                  "phaseHint": "am Abend",
+                  "consumes": [
+                    "product:pralinen-roh",
+                    "product:waelzmischung"
+                  ],
+                  "produces": [
+                    {
+                      "id": "pralinen-gewaelzt",
+                      "name": "Pralinen gewälzt, temperiert",
+                      "hold": {
+                        "max": "PT30M",
+                        "source": "Erst ≤30 Min. vor dem Anrichten"
+                      },
+                      "storage": {
+                        "place": "room"
+                      }
+                    }
+                  ],
+                  "steps": [
+                    {
+                      "id": "waelzen",
+                      "label": "8",
+                      "text": "**Erst ≤30 Min. vor dem Anrichten** wälzen (Panade zieht sonst Feuchtigkeit), dann Zimmertemperatur annehmen lassen. Noch sicherer: gar nicht wälzen, Praline aufs Crumble-Bett setzen und Wälzmischung darüber streuen.",
+                      "action": "**Erst ≤30 Min. vor dem Anrichten** wälzen (Panade zieht sonst Feuchtigkeit), dann Zimmertemperatur annehmen lassen.",
+                      "ingredients": [],
+                      "attention": "active",
+                      "duration": {
+                        "typical": "PT5M",
+                        "estimated": true
+                      },
+                      "after": [],
+                      "start": {
+                        "ref": "task:anrichten:start",
+                        "offset": {
+                          "min": "-PT30M",
+                          "max": "PT0M",
+                          "source": "Erst ≤30 Min. vor dem Anrichten"
+                        }
+                      },
+                      "why": "Panade zieht sonst Feuchtigkeit",
+                      "rescue": "Noch sicherer: gar nicht wälzen, Praline aufs Crumble-Bett setzen und Wälzmischung darüber streuen."
+                    }
+                  ]
+                },
+                {
+                  "id": "kaisergranat-vorbereiten",
+                  "name": "Kaisergranat vorbereiten",
+                  "heading": "**Kaisergranat vorbereiten (Vortag auftauen, am Tag auslösen):**",
+                  "phaseHint": "Vortag auftauen, am Tag auslösen",
+                  "produces": [
+                    {
+                      "id": "kaisergranat-angetrocknet",
+                      "name": "Schwänze ausgelöst, angetrocknet",
+                      "hold": {
+                        "min": "PT1H",
+                        "max": "PT2H",
+                        "source": "1–2 h offen auf Gitter/Küchenpapier im Kühlschrank antrocknen"
+                      },
+                      "storage": {
+                        "place": "fridge",
+                        "covered": false
+                      }
+                    }
+                  ],
+                  "steps": [
+                    {
+                      "id": "auftauen-ausloesen",
+                      "label": "9",
+                      "text": "12 Kaisergranat **über Nacht im Kühlschrank** auftauen (nie warm, nie im Wasser — laugt aus). Köpfe abdrehen; Schwanz mit der Küchenschere an der Bauchseite längs aufschneiden, Fleisch herausheben, den dunklen Darmfaden ziehen. Köpfe und Schalen einfrieren — beste Basis für eine Bisque (→ `gerichte/hummerbisque.md`).",
+                      "action": "12 Kaisergranat **über Nacht im Kühlschrank** auftauen (nie warm, nie im Wasser — laugt aus). Köpfe abdrehen; Schwanz mit der Küchenschere an der Bauchseite längs aufschneiden, Fleisch herausheben, den dunklen Darmfaden ziehen.",
+                      "ingredients": [
+                        {
+                          "ref": "kaisergranat",
+                          "amount": {
+                            "text": "12 Kaisergranat",
+                            "value": 12,
+                            "unit": "Stück"
+                          }
+                        }
+                      ],
+                      "attention": "active",
+                      "duration": {
+                        "typical": "PT20M",
+                        "source": "\\~20 Min. Schwänze auslösen"
+                      },
+                      "timers": [
+                        {
+                          "label": "Auftauen",
+                          "duration": {
+                            "min": "PT8H",
+                            "max": "PT14H"
+                          },
+                          "text": "über Nacht"
+                        }
+                      ],
+                      "equipment": [
+                        "Küchenschere"
+                      ],
+                      "limits": [
+                        "nie warm, nie im Wasser — laugt aus"
+                      ],
+                      "why": "beste Basis für eine Bisque",
+                      "after": []
+                    },
+                    {
+                      "id": "trockentupfen",
+                      "label": "10",
+                      "text": "Schwänze sehr gründlich trockentupfen und **1–2 h offen auf Gitter/Küchenpapier im Kühlschrank antrocknen** — Feuchtigkeit ist der Feind der Kruste, TK-Ware zieht besonders Wasser.",
+                      "action": "Schwänze sehr gründlich trockentupfen und **1–2 h offen auf Gitter/Küchenpapier im Kühlschrank antrocknen** — Feuchtigkeit ist der Feind der Kruste, TK-Ware zieht besonders Wasser.",
+                      "ingredients": [],
+                      "attention": "active",
+                      "duration": {
+                        "typical": "PT5M",
+                        "estimated": true
+                      },
+                      "why": "Feuchtigkeit ist der Feind der Kruste, TK-Ware zieht besonders Wasser"
+                    }
+                  ]
+                },
+                {
+                  "id": "beurre-blanc",
+                  "name": "Verjus-Limetten-Beurre-blanc",
+                  "heading": "**Verjus-Limetten-Beurre-blanc (\\~20 Min. vor dem Gang):**",
+                  "phaseHint": "\\~20 Min. vor dem Gang",
+                  "produces": [
+                    {
+                      "id": "beurre-blanc",
+                      "name": "Beurre blanc (ohne Limette), warm",
+                      "hold": {
+                        "max": "PT2H",
+                        "source": "hält bis 2 h"
+                      },
+                      "storage": {
+                        "place": "warm",
+                        "temp": {
+                          "min": 50,
+                          "max": 55
+                        },
+                        "note": "Wasserbad oder vorgewärmte Thermoskanne"
+                      }
+                    }
+                  ],
+                  "steps": [
+                    {
+                      "id": "reduktion",
+                      "label": "11",
+                      "text": "2 Schalotten (\\~60 g) fein würfeln, mit 110 ml Verjus und 25 ml Weißweinessig auf \\~3 EL sirupös einreduzieren. *(Verjus ersetzt Weißwein + Noilly Prat 1:1 — gleiche Säure- und Fruchtrolle, kein Alkohol. Fallback ohne Verjus: 60 ml Weißweinessig + 60 ml Wasser + 1 TL Zucker.)*",
+                      "action": "2 Schalotten (\\~60 g) fein würfeln, mit 110 ml Verjus und 25 ml Weißweinessig auf \\~3 EL sirupös einreduzieren.",
+                      "ingredients": [
+                        {
+                          "ref": "schalotten",
+                          "amount": {
+                            "text": "2 Schalotten",
+                            "value": 2,
+                            "unit": "Stück"
+                          }
+                        },
+                        {
+                          "ref": "verjus",
+                          "amount": {
+                            "text": "110 ml Verjus",
+                            "value": 110,
+                            "unit": "ml"
+                          }
+                        },
+                        {
+                          "ref": "weissweinessig",
+                          "amount": {
+                            "text": "25 ml Weißweinessig",
+                            "value": 25,
+                            "unit": "ml"
+                          }
+                        }
+                      ],
+                      "attention": "attended",
+                      "duration": {
+                        "min": "PT6M",
+                        "max": "PT8M",
+                        "estimated": true
+                      },
+                      "cues": [
+                        "auf \\~3 EL sirupös einreduzieren"
+                      ],
+                      "why": "Verjus ersetzt Weißwein + Noilly Prat 1:1 — gleiche Säure- und Fruchtrolle, kein Alkohol.",
+                      "rescue": "Fallback ohne Verjus: 60 ml Weißweinessig + 60 ml Wasser + 1 TL Zucker.",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "after": []
+                    },
+                    {
+                      "id": "sahne",
+                      "label": "12",
+                      "text": "2 EL Sahne einkochen — stabilisiert die Emulsion spürbar (→ Beurre-blanc-Baustein in `technik/mini-projekte.md`).",
+                      "action": "2 EL Sahne einkochen — stabilisiert die Emulsion spürbar (→ Beurre-blanc-Baustein in `technik/mini-projekte.md`).",
+                      "ingredients": [
+                        {
+                          "ref": "sahne",
+                          "amount": {
+                            "text": "2 EL Sahne",
+                            "value": 2,
+                            "unit": "EL"
+                          }
+                        }
+                      ],
+                      "attention": "attended",
+                      "duration": {
+                        "typical": "PT1M",
+                        "estimated": true
+                      },
+                      "why": "stabilisiert die Emulsion spürbar",
+                      "technique": "technik/mini-projekte.md#beurre-blanc",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ]
+                    },
+                    {
+                      "id": "montieren",
+                      "label": "13",
+                      "text": "Bei kleinster Hitze 170 g eiskalte Butter würfelweise einschlagen — nächstes Stück erst, wenn das vorige emulgiert ist. **Nie über \\~58 °C, nie kochen** (Thermometer!). Durch das feine Sieb passieren, salzen. Ergibt \\~240 ml → 5 Spiegel à 35–40 ml + Reserve.",
+                      "action": "Bei kleinster Hitze 170 g eiskalte Butter würfelweise einschlagen — nächstes Stück erst, wenn das vorige emulgiert ist.",
+                      "ingredients": [
+                        {
+                          "ref": "butter",
+                          "amount": {
+                            "text": "170 g eiskalte Butter",
+                            "value": 170,
+                            "unit": "g"
+                          }
+                        }
+                      ],
+                      "attention": "active",
+                      "duration": {
+                        "min": "PT5M",
+                        "max": "PT7M",
+                        "estimated": true
+                      },
+                      "temps": [
+                        {
+                          "kind": "max",
+                          "value": 58,
+                          "text": "Nie über \\~58 °C"
+                        }
+                      ],
+                      "limits": [
+                        "**Nie über \\~58 °C, nie kochen**"
+                      ],
+                      "cues": [
+                        "nächstes Stück erst, wenn das vorige emulgiert ist"
+                      ],
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "equipment": [
+                        "Thermometer",
+                        "feines Sieb"
+                      ]
+                    },
+                    {
+                      "id": "warmhalten-limette",
+                      "label": "14",
+                      "text": "Warm halten bei 50–55 °C (Wasserbad; oder vorgewärmte Thermoskanne — hält bis 2 h). **Erst unmittelbar vor dem Anrichten**, vom Herd: Abrieb 1 Limette + 2 TL Saft einrühren, tropfenweise bis max. 3 TL abschmecken — Zitrus-Öle sind hitzeflüchtig, und Limette ist aggressiver als Zitrone. *(Gebrochen? → Emulsions-Notfall in `technik/abschmecken.md`.)*",
+                      "action": "Warm halten bei 50–55 °C (Wasserbad; oder vorgewärmte Thermoskanne — hält bis 2 h).",
+                      "ingredients": [
+                        {
+                          "ref": "limetten",
+                          "amount": {
+                            "text": "1 Limette",
+                            "value": 1,
+                            "unit": "Stück"
+                          }
+                        }
+                      ],
+                      "attention": "attended",
+                      "temps": [
+                        {
+                          "kind": "halten",
+                          "min": 50,
+                          "max": 55,
+                          "text": "50–55 °C"
+                        }
+                      ],
+                      "limits": [
+                        "**Erst unmittelbar vor dem Anrichten**"
+                      ],
+                      "why": "Zitrus-Öle sind hitzeflüchtig, und Limette ist aggressiver als Zitrone",
+                      "rescue": "Gebrochen? → Emulsions-Notfall in `technik/abschmecken.md`.",
+                      "technique": "technik/abschmecken.md#emulsions-notfall"
+                    }
+                  ]
+                },
+                {
+                  "id": "braten",
+                  "name": "Kaisergranat braten",
+                  "heading": "**Kaisergranat braten (à la minute):**",
+                  "phaseHint": "à la minute",
+                  "consumes": [
+                    "product:kaisergranat-angetrocknet"
+                  ],
+                  "steps": [
+                    {
+                      "id": "salzen",
+                      "label": "15",
+                      "text": "Teller vorwärmen (nicht heiß — Praline!). Schwänze **erst direkt vor dem Braten** salzen.",
+                      "action": "Teller vorwärmen (nicht heiß — Praline!).",
+                      "ingredients": [],
+                      "attention": "active",
+                      "duration": {
+                        "typical": "PT2M",
+                        "estimated": true
+                      },
+                      "limits": [
+                        "nicht heiß — Praline!"
+                      ],
+                      "after": [
+                        "step:trockentupfen"
+                      ]
+                    },
+                    {
+                      "id": "pfannen",
+                      "label": "16",
+                      "text": "2 Pfannen mit je 1 EL Butterschmalz sehr heiß werden lassen (leicht rauchend). 5–6 Schwänze pro Pfanne mit Abstand — zwei Pfannen parallel schlagen zwei Chargen, Kaisergranat verzeiht kein Warten.",
+                      "action": "2 Pfannen mit je 1 EL Butterschmalz sehr heiß werden lassen (leicht rauchend).",
+                      "ingredients": [
+                        {
+                          "ref": "butterschmalz",
+                          "amount": {
+                            "text": "je 1 EL Butterschmalz",
+                            "value": 1,
+                            "unit": "EL",
+                            "per": "Pfanne",
+                            "times": 2
+                          }
+                        }
+                      ],
+                      "attention": "active",
+                      "duration": {
+                        "typical": "PT3M",
+                        "estimated": true
+                      },
+                      "cues": [
+                        "leicht rauchend"
+                      ],
+                      "why": "zwei Pfannen parallel schlagen zwei Chargen, Kaisergranat verzeiht kein Warten",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 2
+                        }
+                      ]
+                    },
+                    {
+                      "id": "braten-arrosieren",
+                      "label": "17",
+                      "text": "45–60 Sek. braten ohne zu bewegen (Röstfarbe), wenden, je 15 g Butter zugeben und 45–60 Sek. arrosieren. **Bei 60–62 °C Kern raus** (Fühler längs in den dicksten Teil) → Carryover auf \\~63–65 °C: durchgehend opak, fest-saftig — das ist „durchgegart“ im Sinne der Schwangerschafts-Regel und zugleich der Punkt, an dem Kaisergranat am besten ist. Über \\~70 °C wird er gummiartig, also Thermometer statt Uhr.",
+                      "action": "45–60 Sek. braten ohne zu bewegen (Röstfarbe), wenden, je 15 g Butter zugeben und 45–60 Sek. arrosieren.",
+                      "ingredients": [
+                        {
+                          "ref": "butter",
+                          "amount": {
+                            "text": "je 15 g Butter",
+                            "value": 15,
+                            "unit": "g",
+                            "per": "Pfanne",
+                            "times": 2
+                          }
+                        }
+                      ],
+                      "attention": "active",
+                      "duration": {
+                        "min": "PT2M",
+                        "max": "PT3M",
+                        "estimated": true
+                      },
+                      "timers": [
+                        {
+                          "label": "Seite 1",
+                          "duration": {
+                            "min": "PT45S",
+                            "max": "PT60S"
+                          },
+                          "text": "45–60 Sek."
+                        },
+                        {
+                          "label": "Arrosieren",
+                          "duration": {
+                            "min": "PT45S",
+                            "max": "PT60S"
+                          },
+                          "text": "45–60 Sek."
+                        }
+                      ],
+                      "temps": [
+                        {
+                          "kind": "kern",
+                          "min": 60,
+                          "max": 62,
+                          "text": "Bei 60–62 °C Kern raus"
+                        },
+                        {
+                          "kind": "max",
+                          "value": 70,
+                          "text": "Über \\~70 °C wird er gummiartig"
+                        }
+                      ],
+                      "endCondition": {
+                        "type": "temperature",
+                        "value": 61,
+                        "text": "Bei 60–62 °C Kern raus"
+                      },
+                      "cues": [
+                        "durchgehend opak, fest-saftig"
+                      ],
+                      "limits": [
+                        "Über \\~70 °C wird er gummiartig, also Thermometer statt Uhr."
+                      ],
+                      "why": "das ist „durchgegart“ im Sinne der Schwangerschafts-Regel und zugleich der Punkt, an dem Kaisergranat am besten ist",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 2
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "anrichten",
+                  "name": "Anrichten",
+                  "heading": "**Anrichten:**",
+                  "service": true,
+                  "consumes": [
+                    "product:mango-gel",
+                    "product:walnuss-crumble",
+                    "product:pralinen-gewaelzt",
+                    "product:beurre-blanc"
+                  ],
+                  "steps": [
+                    {
+                      "id": "anrichten",
+                      "label": "Anrichten",
+                      "text": "Knapper Spiegel Beurre blanc (35–40 ml), 2 Schwänze (Bratseite\noben) hineinsetzen. 3–5 Punkte Mango-Gel **neben/an den Rand des Spiegels**\nspritzen — im Saucenspiegel verlaufen sie. Am Tellerrand Crumble-Häufchen,\nPraline daraufsetzen, evtl. Kräuterspitzen.",
+                      "action": "Knapper Spiegel Beurre blanc (35–40 ml), 2 Schwänze (Bratseite\noben) hineinsetzen.",
+                      "attention": "active",
+                      "duration": {
+                        "typical": "PT3M",
+                        "estimated": true
+                      },
+                      "after": [
+                        "step:braten-arrosieren",
+                        "step:warmhalten-limette",
+                        "step:waelzen"
+                      ],
+                      "ingredients": [],
+                      "why": "im Saucenspiegel verlaufen sie"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "markdown",
+              "title": "Kind (3 J.)",
+              "level": "bold",
+              "tags": [
+                "kind"
+              ],
+              "markdown": "**Kind (3 J.):** 1 Schwanz + etwas Mango-Gel funktioniert direkt (Gel ist ohne\nChili). Beurre blanc ist alkoholfrei → Mini-Spiegel ist unkritisch."
+            },
+            {
+              "type": "markdown",
+              "title": "Profi-Tipps",
+              "level": "bold",
+              "tags": [
+                "profi-tipps"
+              ],
+              "markdown": "> **Profi-Tipps:**\n> - Agar-Punkte verlaufen auch neben heißem Kaisergranat nicht — das Gel ist\n>   bis \\~80 °C stabil. Genau deshalb Gel statt Chutney.\n> - Beurre blanc bricht unter \\~35 °C (Butter erstarrt) genauso wie über\n>   \\~58 °C — das Fenster ist breiter als sein Ruf, aber ein Thermometer\n>   nimmt den Stress.\n> - Einen Test-Schwanz vorab braten und aufschneiden — kalibriert Pfanne und\n>   Timing (Hochzeitstags-Learning: die Meeresfrüchte waren das Highlight).\n> - Die zwei überzähligen Schwänze sind die Reserve für den Test-Schwanz und\n>   einen misslungenen."
+            },
+            {
+              "type": "todo",
+              "title": "Offen (Testlauf)",
+              "items": [
+                {
+                  "text": "Volle Testportion: Gel-Süße vs. Kaisergranat über den ganzen Teller — letzter Bissen noch gut? (Kaisergranat ist selbst süß — evtl. Gel-Zucker auf 1 EL)",
+                  "checked": false
+                },
+                {
+                  "text": "Garpunkt: 60–62 °C Ausstieg reicht für „durchgehend opak“? Test-Schwanz aufschneiden",
+                  "checked": false
+                },
+                {
+                  "text": "Verjus-Beurre-blanc gegen die Erinnerung an die Wein-Version: fehlt Tiefe? (dann 1 TL mehr Essig, nicht mehr Verjus)",
+                  "checked": false
+                },
+                {
+                  "text": "Praline 20 g vs. 25 g und gewälzt vs. Crumble-Bett — auf Testteller entscheiden *(Tendenz: 20 g — auch Dritt-Feedback votiert für kleiner)*",
+                  "checked": false
+                },
+                {
+                  "text": "Buhara: Kaisergranat TK roh verfügbar, Größe & Preis? Sonst Selgros",
+                  "checked": false
+                },
+                {
+                  "text": "Verjus-Quelle (Weinhandel vor Ort oder online)",
+                  "checked": false
+                },
+                {
+                  "text": "Zeitfenster Gang 1 → Gang 2 (20 Min.) ist knapper als Beurre blanc (\\~15 Min. Arbeit, Schritt 11–14) + à la minute (\\~8 Min.): Reduktion (Schritt 11) schon vor dem Anrichten von Gang 1 starten oder Gang 2 auf +0:25 legen",
+                  "checked": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gang-3",
+          "kind": "course",
+          "title": "3. Geschmorte, gepresste Lammschulter, Selleriepüree, Rosenkohl zweierlei, Lammjus",
+          "sections": [
+            {
+              "type": "markdown",
+              "title": "3. Geschmorte, gepresste Lammschulter, Selleriepüree, Rosenkohl zweierlei, Lammjus",
+              "level": 3,
+              "markdown": "*T-1: \\~1 h aktiv + 3–3,5 h Schmoren (passiv) + Pressen über Nacht | Am Tag:\n\\~2 Std. verteilt (Püree, Rosenkohl, Chips, Jus reduzieren), \\~20 Min. à la\nminute | Pro Portion: 1 Block (\\~150 g, Kind ½) | Equipment: Bräter mit\nDeckel, 2 Kastenformen 20 cm (eine als Gewicht), Fleischthermometer,\nMandoline, Passiertuch, Topf zum Frittieren*\n\n**Teller-Logik:** Lammschulter am Vortag geschmort, gezupft und in der\nKastenform gepresst; am Abend werden Blöcke rundum knusprig gebraten und im\nOfen auf ≥ 70 °C Kern durchgewärmt — Restaurant-Format („pressed lamb\nshoulder“), sauber zu tellern, und die Schwangerschafts-Regel „durch“ ist\ndamit automatisch erfüllt, ohne dass irgendwer trockenes Fleisch bekommt.\nSchmorflüssigkeit und Jus sind **ein** Prozess. Selleriepüree bewusst leicht\n(Milch statt Sahne — Fett-Bilanz, Schmorlamm ist fetter als Karree), Rosenkohl\nzweigleisig (kross UND knallgrün geht nicht im selben Blatt), Jus statt\nSahnesauce. Sellerie-Chips als zweites Crunch-Element. November = volle\nRosenkohl-Saison. Nebeneffekt: Der Abend ist entspannt — kein Rückwärtsgaren,\nkeine Ofen-Kollision, Gang 3 ist zu 90 % vom Vortag.\n\n**Schmoren + Jus (T-1, ergibt \\~800 g gezupftes Fleisch + \\~250–300 ml Jus):**\n\n1. Ofen 220 °C: 500 g Lammknochen dünn mit Öl bepinseln, einlagig aufs Blech,\n   20–30 Min. **goldbraun** rösten — nicht tiefdunkel! Anders als beim\n   Schweinefond (→ `technik/dunkle-bratensauce.md`): Lammknochen werden dunkel\n   geröstet **bitter**. Die Saucen-Grammatik von dort (Reduktion in Schüben,\n   Gewürze ans Ende, Montage) gilt trotzdem.\n2. Lammschulter (2–2,2 kg mit Knochen) trockentupfen, Fettdeckel auf \\~5 mm\n   parieren (Parüren zu den Knochen), rundum mit 2,5–3 TL Salz (\\~15–18 g)\n   würzen — gern schon am T-2 als Dry-Brine unabgedeckt im Kühlschrank. Im\n   Bräter in 1 EL Öl bei hoher Hitze rundum tief braun anbraten (\\~10 Min.),\n   herausnehmen.\n3. Im selben Bräter 150 g Zwiebel, 100 g Karotte und 100 g Sellerie (von der\n   Püree-Knolle) grob gewürfelt tief braun anrösten. 1 EL (15 g) Tomatenmark\n   zugeben, 1–2 Min. mitrösten, **ständig rühren** (verbrannt = bitter).\n4. Mit 100 ml Rotwein ablöschen und **fast trocken** einkochen. Zweimal\n   wiederholen (insgesamt 300 ml) — in Etappen reduziert dominiert die\n   Wein-Säure nicht, und der Alkohol ist praktisch komplett verkocht, bevor\n   Flüssigkeit dazukommt (Schwangerschaft: das ist der Grund, warum der Wein\n   hier bleiben darf). *(Null-Risiko-Option: 150 ml Verjus + 150 ml Wasser\n   statt Wein, gleich reduziert — Jus wird etwas flacher.)*\n5. Knochen und Schulter in den Bräter, kaltes Wasser bis \\~⅔ Höhe der Schulter\n   angießen (\\~1–1,5 L), 1 Lorbeerblatt, 2 Zweige Thymian, 4 angedrückte\n   Knoblauchzehen. Aufkochen, Schaum abschöpfen, Deckel drauf, im Ofen bei\n   **150 °C 3–3,5 Std.** schmoren, bis das Fleisch vom Knochen fällt (Gabel\n   dreht sich ohne Widerstand). Nach der Hälfte einmal wenden.\n6. Schulter herausheben, 10 Min. abkühlen lassen, dann **warm** zupfen: Haut,\n   Fett, Sehnen und Knochen raus, Fleisch grob in 1–2-cm-Stücke zerpflücken\n   (nicht zu fein — Struktur bleibt). Mit 4–5 EL passierter, noch unreduzierter\n   Schmorflüssigkeit, Abrieb ½ Zitrone, 1 EL gehackter Petersilie, ½ TL fein\n   gehacktem Rosmarin, Pfeffer und Salz abschmecken — **kräftig**: der Block\n   wird kalt gegessen probiert, aber warm serviert, und die Jus kommt dazu.\n7. Kastenform mit Frischhaltefolie auslegen (Überstand), Fleisch einfüllen und\n   **fest** andrücken (\\~4 cm hoch). Folie darüberschlagen, zweite Kastenform\n   hineinsetzen, mit 2–3 Dosen beschweren, über Nacht kalt stellen. Die\n   Gelatine der Schmorflüssigkeit bindet den Block.\n   *(Option, falls der Block beim ersten Mal zerfällt: 1 Blatt Gelatine in den\n   4–5 EL Fond auflösen — notieren, nicht vorsorglich.)*\n8. Schmorflüssigkeit durch feines Sieb + Passiertuch passieren, über Nacht kalt\n   stellen, **Fettdeckel abheben** (Schulter gibt viel Fett ab — der Deckel ist\n   das wichtigste Werkzeug gegen ein schweres Menü). Am Tag auf \\~250–300 ml\n   **sanft** reduzieren — zu heftiges Reduzieren macht bitter und trüb. **Kein\n   Salz bis zum Schluss** (Konzentration!). Am Abend erwärmen, salzen, vom Herd\n   25 g eiskalte Butter einschwenken (montieren), danach nicht mehr kochen.\n   Übrige Menge in Eiswürfelform einfrieren.\n\n**Selleriepüree (am Nachmittag, hält warm):**\n\n9. 600 g Knollensellerie **großzügig** schälen (Außenschicht und grünliche\n   Stellen sind die Bitter-Quelle), 2-cm-Würfel. Mit 500 ml Vollmilch und\n   ½ TL Salz 20–25 Min. sanft köcheln bis sehr weich — gelegentlich rühren,\n   Milch brennt gern an.\n10. Abgießen und die **Garmilch auffangen**. Sellerie 2 Min. ausdampfen lassen\n    (gegen Wässrigkeit), dann mit 45 g Butter und nur schluckweise 100–150 ml\n    Garmilch glatt mixen (Stabmixer — bei Sellerie darf man aggressiv mixen,\n    er kleistert nicht wie Kartoffel).\n11. Durch das feine Sieb streichen — **der** Schritt für seidige\n    Sterne-Textur. Mit Salz, 1 kleinen Prise Muskat und 1 TL Zitronensaft\n    abschmecken. Abgedeckt warmhalten, vor dem Anrichten ggf. kurz remixen.\n\n**Rosenkohl zweierlei + Sellerie-Chips (Nachmittag):**\n\n12. 700 g Rosenkohl: Strunk keilförmig ausschneiden, äußere Blätter lösen,\n    Strunk nachschneiden, weiterzupfen — Fleißarbeit, \\~30 Min. einplanen.\n    Feste Herzen anderweitig verwenden (z. B. fürs Personal-Abendessen).\n13. Hälfte der Blätter 30–60 Sek. in kräftig gesalzenem Wasser (12 g Salz/L)\n    blanchieren, sofort in Eiswasser, gut abtropfen — fixiert das Knallgrün,\n    kann Stunden vorher passieren.\n14. Chips frittieren (1–2 Std. vor Service, eine Öl-Session, \\~1 L Öl im Topf,\n    Thermometer): zuerst 150 g Sellerie-Scheiben von der Mandoline (1,5–2 mm,\n    gut trockengetupft — nicht wässern nötig) bei 170–180 °C 2–3 Min. bis\n    **hellgold** (färben nach dem Rausnehmen nach!, schrumpfen um \\~70 % —\n    großzügig hobeln). Dann die restlichen Rosenkohlblätter (**knochentrocken**,\n    sonst spritzt es) in kleinen Chargen \\~30 Sek. bei 175 °C — dunkelgrün und\n    knusprig, nicht braun (bitter).\n15. Beide Chips-Sorten **offen** auf Küchenpapier an warmem, trockenem Ort\n    lagern (z. B. ausgeschalteter Ofen, Tür einen Spalt auf) — niemals\n    abdecken (Dampf = zäh). Halten 1–2 Std. **Salzen erst kurz vor dem\n    Servieren.** *(Ofen-Fallback für beide: 150–160 °C, 15–25 Min., einlagig —\n    einfacher, aber weniger kross.)*\n\n**Lammblöcke & Service:**\n\n16. Block \\~1 Std. vor Gang 3 aus dem Kühlschrank (temperiert wärmt schneller\n    durch), an der Folie aus der Form heben, in 5 Scheiben à \\~4 cm schneiden\n    (≈ 4 × 4 × 10 cm, \\~150 g). Kanten glatt — das ist der Look.\n17. Nach Gang 2: Ofen von 80 °C (Teller) auf **140 °C** stellen, Teller solange\n    gestapelt daneben (halten die Wärme). Pfanne mit 1 EL Butterschmalz\n    mittel-hoch, Blöcke **in 2 Chargen** allseitig je 1–2 Min. knusprig braten\n    (Edelstahl: nicht überladen, Chargen-Learning aus Bulgogi/Bò lúc lắc; die\n    Schnittflächen zuerst, sie halten den Block zusammen).\n18. Blöcke auf Gitter + Blech, Thermometer in den dicksten, im **140 °C Ofen\n    12–18 Min.** bis **≥ 70 °C Kern** — nach Thermometer, nicht nach Uhr. Das\n    ist die Schwangerschafts-Grenze (Listerien nach Lagerung) und zugleich der\n    Punkt, an dem der Block innen wieder saftig-warm ist.\n19. Parallel: blanchierte Rosenkohlblätter in 20 g aufschäumender Butter\n    1–2 Min. schwenken (nur erwärmen), 1 Prise Salz, kleiner Spritzer Zitrone.\n    Jus montieren (Schritt 8). Chips salzen.\n\n**Anrichten:** Püree-Spiegel oder -Nocke, Lammblock daraufgesetzt, grüne\nBlätter und Chips-Blätter gemischt darüber/daneben, Sellerie-Chips\naufgestellt, Jus angegossen (nicht über die Chips — weichen auf).\n\n**Kind (3 J.):** halber Block — weich, mild, nichts Scharfes. Dazu Püree und\nweiche grüne Blätter; Jus ist unkritisch (nicht scharf, Wein verkocht).\nFunktioniert ohne Extra-Version.\n\n> **Profi-Tipps:**\n> - Der Röstgrad-Unterschied ist das wichtigste Jus-Learning: Schweineknochen\n>   „fast schwarz“, **Lammknochen nur goldbraun** — sonst bitter.\n> - Der Block ist der Grund, warum dieser Gang am Abend keinen Stress macht:\n>   alles Handwerk passiert am Vortag, der Abend ist Anbraten + Ofen mit\n>   Thermometer-Alarm.\n> - Fettdeckel der Schmorflüssigkeit konsequent abheben — Lammschulter ist\n>   deutlich fetter als Karree, und die Jus soll klar und leicht bleiben.\n> - Chips-Regel: alles, was knuspern soll, bleibt bis zur letzten Sekunde\n>   offen, trocken und ungesalzen.\n\n**Offen (Testlauf / Beschaffung):**\n- [ ] **Lammquelle klären:** Selgros (Schulter + Knochen in einem Trip) vs.\n      türkischen Metzger identifizieren — der ist in CLAUDE.md ohnehin als\n      Lücke markiert und meist die beste Lammquelle (Qualität, Preis, Knochen\n      auf Zuruf). Dieser Gang wäre der Anlass.\n- [ ] Block-Bindung: hält der Block beim Anbraten? Sonst Gelatine-Option\n      (Schritt 7) fürs nächste Mal notieren.\n- [ ] Bitter-Balance: Rosenkohl ist milder als der ursprünglich geplante\n      Chicorée — fehlt dem Menü der herbe Gegenpol? Auf Testteller: evtl.\n      wenige rohe Radicchio-Streifen für Farbe + Bitterkick. *(Tendenz laut\n      Dritt-Feedback: unnötig — die frittierten Blätter bringen selbst genug\n      Röst-/Bitternoten. Erst pur testen.)*\n- [ ] Rotwein-Reduktion vs. Verjus-Option in der Jus — Default bleibt Wein\n      (trocken reduziert), bei Unbehagen Verjus"
+            }
+          ]
+        },
+        {
+          "id": "gang-4",
+          "kind": "course",
+          "title": "4. Espresso-Parfait (Decaf) mit Schuss am Tisch — Espresso-Martini oder Shakerato",
+          "sections": [
+            {
+              "type": "markdown",
+              "title": "4. Espresso-Parfait (Decaf) mit Schuss am Tisch — Espresso-Martini oder Shakerato",
+              "level": 3,
+              "markdown": "*Parfait: 1–2 Tage vorher, \\~30 Min. aktiv + über Nacht TK | Crumble: Vortag |\nAm Abend: \\~5 Min. à la minute | 4–5 Erwachsenen-Portionen (Kastenform 20 cm) |\nEquipment: Küchenthermometer, Handrührer, Shaker (Fallback: dickwandiges\nSchraubglas), feines Sieb*\n\n**Konzept:** Kälte unterdrückt Aroma- und Alkoholwahrnehmung — Alkohol in der\nParfait-Masse macht sie vor allem weicher, aber kaum „martiniger“. Deshalb\nwar das Konzept von Anfang an zweistufig: kräftige Espresso-Masse **plus**\nfrisch geshakter, eiskalter Schuss am Tisch. Der Umbau zieht die Konsequenz:\n**die Masse ist komplett alkoholfrei** (Schwangerschaft), die Weichheit kommt\nstattdessen von etwas Dextrose und kurzem Temperieren, und der Schuss gibt es\nin zwei Versionen aus demselben Espresso-Brühgang — **Espresso-Martini** für\ndie Trinker, **Espresso-Shakerato** (Espresso + Zuckersirup, hart geshakt) für\ndie Schwangere und alle, die wollen. Beide schäumen beim Shaken → Crema-Schicht\nohne Siphon, gleicher Show-Moment.\n\n**Decaf für alle:** Masse, Crumble und beide Shakes laufen auf entkoffeiniertem\nEspresso — passt zur späten Stunde und nimmt der Schwangeren die\nKoffein-Rechnung ab (koffeinhaltig wären \\~90–100 mg pro Portion, also ein\nhalbes Tagesbudget). Geschmacks-Bedingung: **Specialty-Decaf** (Swiss-Water-\noder CO2-Verfahren, frisch geröstet, dunklere Röstung). In der Masse (Zucker,\nSahne, Nibs) ist der Unterschied kaum wahrnehmbar; im Shakerato zeigt sich\nbilliger Decaf als flach und sauer. Im Testlauf die Decaf-Charge probieren,\nRöster ggf. wechseln.\n\n**Ei-Check:** Die Pâte à bombe wird auf **75–82 °C** gezogen — das ist\npasteurisiert (Leitfaden: ≥ 70 °C), kein rohes Ei. Thermometer ist deshalb\nPflicht, nicht Kür.\n\n**Textur-Check (ersetzt die alte Ethanol-Rechnung):** Ohne Alkohol friert das\nParfait fester als die Martini-Version. Masse \\~560 g, Zucker 70 g + 25 g\nDextrose ≈ 15 % Gesamtzucker (Dextrose bringt \\~1,9× die Gefrierpunkt-\nSenkung von Haushaltszucker bei \\~70 % Süße — sie ersetzt den Kahlúa-Zucker\nund federt die Härte ab). Standard-Parfaits ohne Alkohol sind so gebaut und\nschnittfest-cremig, wenn man sie **10–15 Min. im Kühlschrank temperiert**\noder gefroren schneidet und 3–4 Min. auf dem Teller wartet, bevor der Schuss\nkommt. Zu hart im Testlauf → **eine** Stellschraube: Dextrose 25 → 40 g\n(Schokoladeneis-Learning), nicht gleichzeitig Zucker oder Espresso ändern.\n\n**Kaffee-Crumble (Vortag):**\n\n1. 40 g Mehl, 30 g weiche Butter, 25 g brauner Zucker, 1 TL fein gemahlener\n   Decaf-Espresso, 20 g Kakaonibs und 1 Prise Salz krümelig verreiben (Nibs\n   von Anfang an mit — sie sind schon geröstet und leiden nicht). 160 °C,\n   12–15 Min., einmal durchrühren. Auskühlen lassen (härtet nach), luftdicht\n   bei Raumtemperatur. **Nie einfrieren oder kühlen** — zieht Feuchtigkeit.\n\n**Parfait (1–2 Tage vorher):**\n\n2. 4 Eigelb, 70 g Zucker, 25 g Dextrose, 90 ml ausgekühlten doppelt starken\n   Decaf-Espresso, 2 TL entkoffeiniertes Instant-Espressopulver und 2 g Salz\n   (\\~⅓ TL) in einer Schüssel über dem Wasserbad „zur Rose“ dick-cremig\n   aufschlagen: **75–82 °C** (Thermometer — ab 70 °C pasteurisiert, über 84 °C\n   gerinnt es). Espresso von Anfang an mit: so bindet er ein, statt später\n   Volumen zu kosten.\n3. Vom Wasserbad nehmen und kaltschlagen, bis die Masse unter \\~30 °C ist\n   (Handrührer, 5–8 Min.) — warme Masse schmilzt gleich die Sahne.\n4. 300 ml Sahne zu **weichen Spitzen** schlagen — ausdrücklich nicht steif\n   (beim Falten kommt Scherung dazu, übersteift wird’s buttrig-körnig).\n5. ⅓ der Eigelbmasse in die Sahne rühren (Konsistenzen angleichen), dann den\n   Rest mit dem Teigschaber locker unterheben — zügig, nicht rühren.\n6. In die mit Folie ausgelegte 20-cm-Kastenform, glattstreichen, Folie\n   auflegen. **Mind. über Nacht** bei voller Gefrierleistung. Die ungefrorene\n   Masse darf ruhig einen Tick zu süß/zu kräftig schmecken: Kälte dämpft\n   beides.\n\n**Service (à la minute):**\n\n7. Parfait **10–15 Min. vor dem Dessert** in den Kühlschrank (temperieren).\n   Dessertteller ins Gefrierfach (15 Min. reichen) — **Teller mit leichter\n   Vertiefung** (Coup-Teller / tiefer Teller mit breitem Rand): auf komplett\n   flachem Teller läuft der Schuss sofort an den Rand. Decaf-Espresso für die\n   Schüsse **erst jetzt** brühen (\\~30 ml pro Person) — die Crema ist das\n   Schaummittel, abgestandener Espresso schäumt nicht. Zuckersirup (1:1,\n   Zucker in gleich viel heißem Wasser gelöst, abgekühlt) bereithalten.\n8. Parfait an der Folie aus der Form heben. Messer in heißem Wasser erwärmen,\n   abwischen, 2,5–3-cm-Scheiben schneiden, nach jedem Schnitt Messer neu\n   erwärmen. Scheiben auf die gefrosteten Teller, Crumble als Streifen\n   daneben/darunter, 3 Kaffeebohnen. *(GDM-Portion: Scheibe \\~2 cm, das sind\n   \\~15 g Zucker + \\~5 g aus dem Crumble.)*\n9. **Shake 1 — Espresso-Shakerato (alkoholfrei), pro Person:** 30 ml frischer\n   Decaf-Espresso + 10 ml Zuckersirup auf 3–4 Eiswürfel, 15–20 Sek. **hart**\n   shaken, bis der Shaker beschlägt, durch das feine Sieb abseihen — dichter,\n   heller Schaum.\n   **Shake 2 — Espresso-Martini, pro Trinker:** 15 ml Wodka + 10 ml Kahlúa +\n   15 ml frischer Decaf-Espresso (optional 2 ml Zuckersirup — IBA-klassisch,\n   hilft dem Schaum), gleiche Technik. Für 3 Trinker also 45/30/45 ml in einem\n   Shake.\n10. **Am Tisch** je 20–25 ml über die Scheibe gießen — aus leichter Höhe, das\n    fördert den Schaum obendrauf („Crema“). Sofort essen: der Rand schmilzt\n    bewusst cremig an, aber nicht trödeln.\n\n**Kind (3 J.):** bewusst kein Ableger — eigenes Dessert: Rest Mango-Gel aus\nGang 2 (fällt reichlich an) + Kugel Vanilleeis (gekauft), optional\nWalnusscrumble-Reste.\n\n> **Profi-Tipps:**\n> - Schraubglas als Shaker funktioniert: dickwandiges Glas (dünnes kann beim\n>   Temperaturschock springen), 3–4 Eiswürfel, 30 Sek. shaken, Deckel mit\n>   Spalt als Vorsieb + feines Sieb.\n> - Zwei Shakes nacheinander aus einem Brühgang: erst den Shakerato (kein\n>   Alkohol-Rest im Shaker), dann den Martini.\n> - Eiweiß-Verwertung: 4 Eiweiß → Financiers (Beurre-noisette-Drill in\n>   `technik/mini-projekte.md`) oder einfrieren.\n\n**Offen (Testlauf):**\n- [ ] Textur ohne Alkohol bei −18 °C nach 10–15 Min. Temperieren: schnittfest\n      und cremig? Sonst Dextrose 40 g\n- [ ] Decaf-Qualität: Shakerato solo probieren — flach/sauer = Röster wechseln\n- [ ] Schuss-Menge 20 vs. 25 ml pro Teller (zu viel ertränkt die Scheibe)\n- [ ] Kakaonibs im REWE Center beschaffbar oder Schoko-Fallback?\n- [ ] Dessertteller mit Vertiefung (Coup) vorhanden? Sonst besorgen oder\n      tiefe Teller mit breitem Rand nehmen — flacher Teller geht nicht\n- [ ] Shaker anschaffen oder Schraubglas? (Shaker ist billig und\n      vielseitig — Kandidat für die Equipment-Liste)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan-Skelett (Abend, grob — Feinschliff nach Testläufen)",
+      "note": "**Ofen-Plan (entschärft):** Chips werden frittiert, das Lamm ist geschmort —\nder Ofen macht am Abend nur 80 °C (Teller) und dann 140 °C (Blöcke\ndurchwärmen). Der frühere Konflikt Karree/Chips/Teller existiert nicht mehr.",
+      "schedule": {
+        "id": "abend",
+        "label": "Zeitplan-Skelett (Abend, grob — Feinschliff nach Testläufen)",
+        "phases": [
+          {
+            "id": "t-2",
+            "label": "T-2",
+            "day": -2
+          },
+          {
+            "id": "t-1",
+            "label": "T-1",
+            "day": -1
+          },
+          {
+            "id": "vormittags",
+            "label": "Vormittags",
+            "day": 0,
+            "part": "morning"
+          },
+          {
+            "id": "nachmittags",
+            "label": "Nachmittags",
+            "day": 0,
+            "part": "afternoon"
+          },
+          {
+            "id": "gang-1",
+            "label": "Gang 1 (0:00)",
+            "day": 0,
+            "part": "service",
+            "at": "PT0M"
+          },
+          {
+            "id": "gang-2",
+            "label": "Gang 2 (+0:20)",
+            "day": 0,
+            "part": "service",
+            "at": "+PT20M"
+          },
+          {
+            "id": "gang-3",
+            "label": "Gang 3 (+0:55)",
+            "day": 0,
+            "part": "service",
+            "at": "+PT55M"
+          },
+          {
+            "id": "gang-4",
+            "label": "Gang 4 (+1:45)",
+            "day": 0,
+            "part": "service",
+            "at": "+PT1H45M"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "t-2",
+            "text": "**Tomaten-Püree-Block (Weg A) aus dem Gefrierfach ins Passiertuch (Drip-Thaw braucht 24–48 h!)**"
+          },
+          {
+            "phase": "t-2",
+            "text": "Parfait einfrieren"
+          },
+          {
+            "phase": "t-2",
+            "text": "Lammschulter salzen (Dry-Brine, optional)"
+          },
+          {
+            "phase": "t-2",
+            "text": "Lammknochen ggf. schon rösten"
+          },
+          {
+            "phase": "t-1",
+            "text": "**Lammschulter schmoren (3–3,5 h), zupfen, pressen; Schmorflüssigkeit passieren und kalt stellen**"
+          },
+          {
+            "phase": "t-1",
+            "text": "Mango-Gel",
+            "tasks": [
+              "mango-gel"
+            ]
+          },
+          {
+            "phase": "t-1",
+            "text": "beide Crumbles",
+            "tasks": [
+              "walnuss-crumble"
+            ]
+          },
+          {
+            "phase": "t-1",
+            "text": "Ziegenkäse- Pralinen formen (ungewälzt)",
+            "tasks": [
+              "pralinen-formen"
+            ]
+          },
+          {
+            "phase": "t-1",
+            "text": "Kaisergranat im Kühlschrank auftauen",
+            "tasks": [
+              "kaisergranat-vorbereiten"
+            ],
+            "steps": [
+              "auftauen-ausloesen"
+            ]
+          },
+          {
+            "phase": "t-1",
+            "text": "Weg B: Tomatenwasser in den Kühlschrank zum Auftauen"
+          },
+          {
+            "phase": "vormittags",
+            "text": "Fettdeckel von der Schmorflüssigkeit, Jus auf 250–300 ml reduzieren"
+          },
+          {
+            "phase": "vormittags",
+            "text": "Kaisergranat auslösen, Schalen einfrieren",
+            "tasks": [
+              "kaisergranat-vorbereiten"
+            ],
+            "steps": [
+              "auftauen-ausloesen"
+            ]
+          },
+          {
+            "phase": "nachmittags",
+            "text": "Rosenkohlblätter lösen, Hälfte blanchieren"
+          },
+          {
+            "phase": "nachmittags",
+            "text": "Selleriepüree"
+          },
+          {
+            "phase": "nachmittags",
+            "text": "Chips frittieren (Sellerie, dann Rosenkohl — halten 1–2 h)"
+          },
+          {
+            "phase": "nachmittags",
+            "text": "Kaisergranat offen antrocknen",
+            "tasks": [
+              "kaisergranat-vorbereiten"
+            ],
+            "steps": [
+              "trockentupfen"
+            ]
+          },
+          {
+            "phase": "nachmittags",
+            "text": "Lammblock 1 h vor Gang 3 aus dem Kühlschrank, schneiden"
+          },
+          {
+            "phase": "nachmittags",
+            "text": "Ofen 80 °C für Teller"
+          },
+          {
+            "phase": "gang-1",
+            "text": "Tomatenwasser abschmecken, anrichten — kein Herd nötig (Grundwürzung schon 1–2 h vorher)",
+            "course": "gang-1"
+          },
+          {
+            "phase": "gang-2",
+            "text": "Beurre blanc montieren, Kaisergranat à la minute (\\~8 Min. aktiv)",
+            "tasks": [
+              "beurre-blanc",
+              "braten",
+              "anrichten"
+            ],
+            "at": {
+              "ref": "course:gang-2:serve",
+              "offset": "-PT20M"
+            },
+            "source": "\\~20 Min. vor dem Gang",
+            "course": "gang-2"
+          },
+          {
+            "phase": "gang-3",
+            "text": "Ofen auf 140 °C, Blöcke anbraten, 12–18 Min. Ofen bis ≥ 70 °C Kern (Thermometer-Alarm)",
+            "course": "gang-3"
+          },
+          {
+            "phase": "gang-3",
+            "text": "parallel Rosenkohl schwenken, Jus montieren, Chips salzen",
+            "course": "gang-3"
+          },
+          {
+            "phase": "gang-4",
+            "text": "Parfait 10–15 Min. vorher in den Kühlschrank, Scheiben schneiden, Espresso brühen, Shakerato und Martini am Tisch shaken",
+            "course": "gang-4"
+          },
+          {
+            "phase": "gang-2",
+            "text": "Pralinen wälzen",
+            "tasks": [
+              "pralinen-waelzen"
+            ],
+            "course": "gang-2",
+            "derived": true,
+            "at": {
+              "ref": "course:gang-2:serve",
+              "offset": "-PT30M"
+            },
+            "source": "Erst ≤30 Min. vor dem Anrichten"
+          }
+        ]
+      }
+    },
+    {
+      "type": "todo",
+      "title": "To-do gesamt",
+      "items": [
+        {
+          "text": "2 kg Tomaten kaufen, beide Klärwege einfrieren (erledigt 09/2026)",
+          "checked": true
+        },
+        {
+          "text": "Verjus + Specialty-Decaf (Bohnen + Instant) bestellen",
+          "checked": false
+        },
+        {
+          "text": "Buhara: Kaisergranat TK roh anfragen (Größe, Preis); Fallback Selgros",
+          "checked": false
+        },
+        {
+          "text": "Testlauf Gang 2 (volle Portion — Kaisergranat-Garpunkt, Verjus-Beurre- blanc, Gel-Süße)",
+          "checked": false
+        },
+        {
+          "text": "Testlauf Parfait (alkoholfrei mit 25 g Dextrose: Textur; Decaf-Qualität; Shakerato-Schaum; Schuss-Menge)",
+          "checked": false
+        },
+        {
+          "text": "Probelauf Tomatenwasser: Weg A vs. Weg B verkosten",
+          "checked": false
+        },
+        {
+          "text": "Lammquelle klären (Selgros vs. türkischen Metzger finden — Repo-Lücke); Schulter mit Knochen 2–2,2 kg",
+          "checked": false
+        },
+        {
+          "text": "Block-Bindung beim ersten Anbraten beobachten (Gelatine-Option)",
+          "checked": false
+        },
+        {
+          "text": "Kinder-Dessert: **Rest Mango-Gel (Gang 2) + Kugel Vanilleeis (gekauft)**, optional Walnusscrumble-Reste. Dafür: kein Chili im Mango-Gel.",
+          "checked": true
+        },
+        {
+          "text": "Nach den Testläufen: Abend-Zeitplan ausformulieren (absolute Uhrzeiten wie im Hochzeitstagsmenü)",
+          "checked": false
+        },
+        {
+          "text": "Getränkebegleitung? (alkoholfrei mitdenken — Verjus-Schorle, Tomatenwasser- Rest; optional Wein für die Gäste)",
+          "checked": false
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "tags": [
+        "quellen"
+      ],
+      "markdown": "**Gang 1 — Tomatenwasser:**\n- Drip-Thaw-Klärung: [Chef's Garden — Tomato Water](https://chefs-garden.com/recipes/tomato-water-drip-thaw-clarification/)\n- Klassische Klärung, Salz/kg: [LCBO — Tomato Water](https://www.lcbo.com/en/recipe/tomato-water/200705069), [7hauben — Tomatenwasser (Jens Rittmeyer)](https://www.7hauben.com/rezept/tomatenwasser/)\n- Klare Bloody-Mary-Würzung: [Looye — „Ghost of Mary“](https://www.looye.com/en/recipes/clear-bloody-mary), [Cocktails Distilled — Clarified Bloody Mary](https://cocktailsdistilled.com/clarify-bloody-mary/)\n- Kälte dämpft Umami: [Mashed — Ideal Soup Temperature (Chemical Senses 2016)](https://www.mashed.com/707361/science-says-this-is-the-ideal-temperature-for-soup/)\n\n**Gang 2 — Kaisergranat:**\n- Agar-Fluid-Gel (0,8 %, Säure nach dem Kochen): [Amazing Food Made Easy — Agar](https://www.amazingfoodmadeeasy.com/info/modernist-ingredients/more/agar-agar), [eathealthy365 — Fruit Fluid Gel](https://eathealthy365.com/how-to-make-a-basic-fruit-fluid-gel/)\n- Beurre blanc (Ratio, Ausbeute, Temperaturfenster): [Serious Eats — Beurre Blanc](https://www.seriouseats.com/beurre-blanc-recipe), [CooksInfo — Beurre Blanc](https://www.cooksinfo.com/beurre-blanc); Verjus als Wein-Ersatz ist Standard in der alkoholfreien Saucenküche (gleiche Säure/Frucht, kein Ethanol)\n- Garpunkt Schalentiere: [FDA — Safe Minimum Internal Temperatures](https://www.fda.gov/food/buy-store-serve-safe-food/safe-minimum-internal-temperatures) (63 °C / 145 °F für Fisch und Schalentiere, „opak“); Kaisergranat wird über \\~70 °C gummiartig — deshalb Ausstieg bei 60–62 °C mit Carryover\n- Artbezeichnung: Kaisergranat = *Nephrops norvegicus* (auch „Langustine“, „Scampi“); argentinische Rotgarnele (*Pleoticus muelleri*) ist ein anderes Tier\n\n**Gang 3 — Lamm:**\n- Gepresste Lammschulter: Great British Chefs, „pressed lamb shoulder“ (mehrere Varianten — Prinzip: schmoren, zupfen, in Form pressen, kalt schneiden, anbraten); intern Schmor-Grundlagen aus [Lamm-Kleftiko](/gerichte/lamm-kleftiko.md)\n- Lammjus (Röstgrad, Mengen): [tobiaskocht — Lammjus](https://www.tobiaskocht.com/kochrezept/lamm-jus.html), [eat.de — Lammsoße mit Knochen](https://eat.de/rezept/lammsosse-mit-knochen-zubereiten/), [ichkoche.at — Lammjus](https://www.ichkoche.at/lammjus-rezept-1544)\n- Selleriepüree in Milch: [küchegemacht — Selleriepüree](https://kuechegemacht.de/rezepte/selleriepueree-rezept/)\n- Rosenkohl-Chips frittiert: [Saveur — Fried Brussels Sprout Chips](https://www.saveur.com/article/Recipes/Fried-Brussel-Sprout-Chips-with-Sweet-Chili-Sauce)\n- Schwangerschaft: Kerntemperatur ≥ 70 °C, Alkohol-Restgehalt beim Kochen → [Leitfaden](/schwangerschaft/leitfaden.md)\n\n**Gang 4 — Parfait:**\n- Pâte à bombe & Falttechnik: [Kitchen Projects #34 — All About Parfait (Nicola Lamb)](https://kitchenprojects.substack.com/p/kitchen-project-34-all-about-parfait)\n- PAC/Gefrierpunkt (Dextrose \\~190 vs. Saccharose 100): [Eisfunke — Freezing Point Depression](https://www.eisfunke.com/notes/freezing-point-depression); Dextrose-Stellschraube intern aus [Schokoladeneis](/eis/schokoladeneis-dunkel.md)\n- Espresso-Martini-Schaum: [The Double Strainer — Espresso Martini Guide](https://www.thedoublestrainer.com/post/espresso-martini-the-complete-recipe-technique-and-foam-troubleshooting-guide)\n- Caffè shakerato: italienischer Standard (Espresso + Zuckersirup auf Eis, hart geshakt, ohne Eis serviert) — keine Einzelquelle nötig\n- Kakaonib-Streusel: [Videri Chocolate Factory — Cocoa Nib Streusel](https://viderichocolatefactory.com/blog/recipie-cocoa-nib-streusel)\n\n**Zentrale Entscheidungen:**\n- **Umbau statt Sonderportionen (09/2026):** Schwangerschaft + GDM der Frau\n  → Kaisergranat statt Jakobsmuschel (durchgegart ohne Verlust), Schmor-Block\n  statt Karree (durch ≥ 70 °C, entlastet zugleich den Abend), Alkohol nur noch\n  im optionalen Schuss (das Konzept trug das schon), Verjus-Beurre-blanc und\n  Decaf durchgehend für alle.\n- **Schmoren und Jus als ein Prozess:** Schmorflüssigkeit = Jus. Spart den\n  separaten Fond und gibt der Jus die Schulter mit.\n- **Chips frittiert statt Ofen:** krosser, hält länger, Ofen bleibt frei.\n- **Zucker im Parfait 70 g + 25 g Dextrose:** Kälte dämpft Süße\n  überproportional; ohne Alkohol übernimmt die Dextrose die Gefrierpunkt-\n  Senkung des früheren Wodka/Kahlúa-Anteils — teilweise, nicht ganz, deshalb\n  temperieren.\n- **Ein kombinierter Einkauf statt Listen pro Gang:** Export-Buttons der Site\n  hängen an `## Einkaufsliste` + Laden-Gruppen; Gang-Zuordnung steht am Posten."
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T09:36:22Z",
+    "sourceHash": "4bd0ff855b332ec0",
+    "quantities": [
+      {
+        "ingredient": "verjus",
+        "total": {
+          "text": "110 ml",
+          "value": 110,
+          "max": 110,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "beurre-blanc": "110 ml Verjus"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "110 ml",
+            "value": 110,
+            "max": 110,
+            "unit": "ml"
+          }
+        }
+      },
+      {
+        "ingredient": "espressobohnen",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "instant-espresso",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "kaisergranat",
+        "total": {
+          "text": "12",
+          "value": 12,
+          "max": 12,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "kaisergranat-vorbereiten": "12 Kaisergranat"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "12",
+            "value": 12,
+            "max": 12,
+            "unit": "Stück"
+          }
+        }
+      },
+      {
+        "ingredient": "lammschulter",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "lammknochen",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "kaisergranat-fallback",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "cherrytomaten",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "limetten",
+        "total": {
+          "text": "1,5",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "mango-gel": "½ Limette",
+          "beurre-blanc": "1 Limette"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "1,5",
+            "value": 1.5,
+            "max": 1.5,
+            "unit": "Stück"
+          }
+        }
+      },
+      {
+        "ingredient": "zitronen",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "mango",
+        "total": {
+          "text": "1",
+          "value": 1,
+          "max": 1,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "mango-gel": "1 reifer Mango"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "1",
+            "value": 1,
+            "max": 1,
+            "unit": "Stück"
+          }
+        }
+      },
+      {
+        "ingredient": "ingwer",
+        "total": {
+          "text": "5 g",
+          "value": 5,
+          "max": 5,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "mango-gel": "5 g fein geriebenem Ingwer"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "5 g",
+            "value": 5,
+            "max": 5,
+            "unit": "g"
+          }
+        }
+      },
+      {
+        "ingredient": "schalotten",
+        "total": {
+          "text": "2",
+          "value": 2,
+          "max": 2,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "beurre-blanc": "2 Schalotten"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "2",
+            "value": 2,
+            "max": 2,
+            "unit": "Stück"
+          }
+        }
+      },
+      {
+        "ingredient": "zwiebel",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "karotte",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "knollensellerie",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "rosenkohl",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "kraeuter",
+        "total": {
+          "text": "2 EL",
+          "value": 2,
+          "max": 2,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "pralinen-formen": "2 EL fein gehackte Kräuter"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "2 EL",
+            "value": 2,
+            "max": 2,
+            "unit": "EL"
+          }
+        }
+      },
+      {
+        "ingredient": "basilikum",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "butter",
+        "total": {
+          "text": "220 g",
+          "value": 220,
+          "max": 220,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "walnuss-crumble": "20 g Butter",
+          "beurre-blanc": "170 g eiskalte Butter",
+          "braten": "je 15 g Butter ×2"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "220 g",
+            "value": 220,
+            "max": 220,
+            "unit": "g"
+          }
+        }
+      },
+      {
+        "ingredient": "ziegenfrischkaese",
+        "total": {
+          "text": "120 g",
+          "value": 120,
+          "max": 120,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "pralinen-formen": "120 g"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "120 g",
+            "value": 120,
+            "max": 120,
+            "unit": "g"
+          }
+        }
+      },
+      {
+        "ingredient": "sahne",
+        "total": {
+          "text": "2 EL",
+          "value": 2,
+          "max": 2,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "beurre-blanc": "2 EL Sahne"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "2 EL",
+            "value": 2,
+            "max": 2,
+            "unit": "EL"
+          }
+        }
+      },
+      {
+        "ingredient": "vollmilch",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "eier",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "walnuesse",
+        "total": {
+          "text": "80 g",
+          "value": 80,
+          "max": 80,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "walnuss-crumble": "50 g Walnüsse",
+          "pralinen-formen": "30 g Walnüsse"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "80 g",
+            "value": 80,
+            "max": 80,
+            "unit": "g"
+          }
+        }
+      },
+      {
+        "ingredient": "agar",
+        "total": {
+          "text": "2 g",
+          "value": 2,
+          "max": 2,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "mango-gel": "2 g Agar-Agar"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "2 g",
+            "value": 2,
+            "max": 2,
+            "unit": "g"
+          }
+        }
+      },
+      {
+        "ingredient": "kakaonibs",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "dextrose",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "brauner-zucker",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "rotwein",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "wodka",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "kahlua",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "frittieroel",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "selleriesalz",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "pfeffer-weiss",
+        "total": {
+          "text": ""
+        },
+        "perTask": {},
+        "unitless": [
+          "Pfeffer"
+        ]
+      },
+      {
+        "ingredient": "tomatenwasser",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "worcestershire",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "chilioel",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "weissweinessig",
+        "total": {
+          "text": "25 ml",
+          "value": 25,
+          "max": 25,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "beurre-blanc": "25 ml Weißweinessig"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "25 ml",
+            "value": 25,
+            "max": 25,
+            "unit": "ml"
+          }
+        }
+      },
+      {
+        "ingredient": "butterschmalz",
+        "total": {
+          "text": "2 EL",
+          "value": 2,
+          "max": 2,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "braten": "je 1 EL Butterschmalz ×2"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "2 EL",
+            "value": 2,
+            "max": 2,
+            "unit": "EL"
+          }
+        }
+      },
+      {
+        "ingredient": "gelatine",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "zucker",
+        "total": {
+          "text": "1–2 EL",
+          "value": 1,
+          "max": 2,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "mango-gel": "1–2 EL Zucker"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "1–2 EL",
+            "value": 1,
+            "max": 2,
+            "unit": "EL"
+          }
+        }
+      },
+      {
+        "ingredient": "panko",
+        "total": {
+          "text": "20 g",
+          "value": 20,
+          "max": 20,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "walnuss-crumble": "20 g Panko"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "20 g",
+            "value": 20,
+            "max": 20,
+            "unit": "g"
+          }
+        }
+      },
+      {
+        "ingredient": "honig",
+        "total": {
+          "text": "1,5 TL",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "walnuss-crumble": "½ TL Honig",
+          "pralinen-formen": "1 TL Honig"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "1,5 TL",
+            "value": 1.5,
+            "max": 1.5,
+            "unit": "TL"
+          }
+        }
+      },
+      {
+        "ingredient": "muskat",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "tomatenmark",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "lorbeer",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "2 Prise",
+          "value": 2,
+          "max": 2,
+          "unit": "Prise",
+          "approx": false
+        },
+        "perTask": {
+          "mango-gel": "1 Prise Salz",
+          "walnuss-crumble": "1 Prise Salz"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "2 Prise",
+            "value": 2,
+            "max": 2,
+            "unit": "Prise"
+          }
+        }
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "2 EL",
+          "value": 2,
+          "max": 2,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "mango-gel": "2 EL Wasser"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "2 EL",
+            "value": 2,
+            "max": 2,
+            "unit": "EL"
+          }
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Online",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "verjus",
+            "name": "Verjus",
+            "need": {
+              "text": "110 ml",
+              "value": 110,
+              "max": 110,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "110 ml",
+            "inStock": false,
+            "buy": {
+              "text": "500 ml"
+            },
+            "note": "Weinhandel oder online, \\~8–12 €; vielseitig: Vinaigretten, Poulet au vinaigre"
+          },
+          {
+            "ingredient": "espressobohnen",
+            "name": "Espressobohnen **entkoffeiniert**",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "250 g"
+            },
+            "note": "Specialty-Röster (Swiss-Water- oder CO2-Verfahren, dunklere Röstung); billiger Decaf schmeckt flach/sauer"
+          },
+          {
+            "ingredient": "instant-espresso",
+            "name": "Instant-Espressopulver **entkoffeiniert**",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "klein"
+            },
+            "note": "Nescafé Gold/Lavazza Dek; Fallback: 1 TL sehr fein gemahlener Decaf"
+          }
+        ]
+      },
+      {
+        "store": "Buhara Seafood",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "kaisergranat",
+            "name": "Kaisergranat",
+            "need": {
+              "text": "12",
+              "value": 12,
+              "max": 12,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "12",
+            "inStock": false,
+            "buy": {
+              "text": "12 Stück"
+            },
+            "note": "**TK roh, ganz**, \\~1 kg, Größe 10–15 St./kg; Etikett: Nephrops norvegicus; nicht vorgekocht, keine argentinischen Rotgarnelen"
+          }
+        ]
+      },
+      {
+        "store": "Selgros",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "lammschulter",
+            "name": "Lammschulter **mit Knochen**",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "2–2,2 kg"
+            },
+            "note": "Alternative: türkischer Metzger, s. Offen"
+          },
+          {
+            "ingredient": "lammknochen",
+            "name": "Lammknochen, gesägt",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            }
+          },
+          {
+            "ingredient": "kaisergranat-fallback",
+            "name": "Kaisergranat TK (Selgros)",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "priority": "optional",
+            "optional": true,
+            "note": "nur als Fallback, falls Buhara nicht liefert"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "cherrytomaten",
+            "name": "Cherry-/Datteltomaten",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "150 g"
+            }
+          },
+          {
+            "ingredient": "limetten",
+            "name": "Limetten",
+            "need": {
+              "text": "1,5",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1,5",
+            "inStock": false,
+            "buy": {
+              "text": "4 Stück"
+            }
+          },
+          {
+            "ingredient": "zitronen",
+            "name": "Zitronen",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "2 Stück"
+            }
+          },
+          {
+            "ingredient": "mango",
+            "name": "Mango, reif",
+            "need": {
+              "text": "1",
+              "value": 1,
+              "max": 1,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1 Stück"
+            }
+          },
+          {
+            "ingredient": "ingwer",
+            "name": "Ingwer",
+            "need": {
+              "text": "5 g",
+              "value": 5,
+              "max": 5,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "5 g",
+            "inStock": false,
+            "buy": {
+              "text": "kleines Stück"
+            }
+          },
+          {
+            "ingredient": "schalotten",
+            "name": "Schalotten",
+            "need": {
+              "text": "2",
+              "value": 2,
+              "max": 2,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "3 Stück"
+            }
+          },
+          {
+            "ingredient": "zwiebel",
+            "name": "Zwiebel",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "150 g"
+            }
+          },
+          {
+            "ingredient": "karotte",
+            "name": "Karotte",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1 Stück"
+            }
+          },
+          {
+            "ingredient": "knollensellerie",
+            "name": "Knollensellerie",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1 große Knolle (\\~1,2 kg)"
+            }
+          },
+          {
+            "ingredient": "rosenkohl",
+            "name": "Rosenkohl",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "700 g"
+            }
+          },
+          {
+            "ingredient": "knoblauch",
+            "name": "Knoblauch",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1 Knolle"
+            }
+          },
+          {
+            "ingredient": "kraeuter",
+            "name": "Petersilie, Schnittlauch, Thymian, Rosmarin",
+            "need": {
+              "text": "2 EL",
+              "value": 2,
+              "max": 2,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "buy": {
+              "text": "je 1 Bund/Töpfchen"
+            }
+          },
+          {
+            "ingredient": "basilikum",
+            "name": "Basilikum",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1 Töpfchen"
+            }
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "butter",
+            "name": "Butter",
+            "need": {
+              "text": "220 g",
+              "value": 220,
+              "max": 220,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "220 g",
+            "inStock": false,
+            "buy": {
+              "text": "500 g (2 × 250 g)"
+            }
+          },
+          {
+            "ingredient": "ziegenfrischkaese",
+            "name": "Ziegenfrischkäse, **mild, pasteurisiert**",
+            "need": {
+              "text": "120 g",
+              "value": 120,
+              "max": 120,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "120 g",
+            "inStock": false,
+            "buy": {
+              "text": "150 g"
+            },
+            "note": "z. B. Chavroux; Petit Billy falls da — kräftig-rustikale Sorten (Caprinsäure) dominieren den feinen Kaisergranat; Etikett auf pasteurisierte Milch prüfen"
+          },
+          {
+            "ingredient": "sahne",
+            "name": "Sahne",
+            "need": {
+              "text": "2 EL",
+              "value": 2,
+              "max": 2,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "buy": {
+              "text": "500 ml"
+            }
+          },
+          {
+            "ingredient": "vollmilch",
+            "name": "Vollmilch",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1 L"
+            }
+          },
+          {
+            "ingredient": "eier",
+            "name": "Eier",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "6 Stück"
+            },
+            "note": "4 Eigelb; Eiweiß-Verwertung einplanen"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "walnuesse",
+            "name": "Walnüsse",
+            "need": {
+              "text": "80 g",
+              "value": 80,
+              "max": 80,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "80 g",
+            "inStock": false,
+            "buy": {
+              "text": "100 g"
+            }
+          },
+          {
+            "ingredient": "agar",
+            "name": "Agar-Agar",
+            "need": {
+              "text": "2 g",
+              "value": 2,
+              "max": 2,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "2 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 Päckchen"
+            },
+            "note": "Bio-/Backregal; Fallback: Chutney-Variante ohne Agar"
+          },
+          {
+            "ingredient": "kakaonibs",
+            "name": "Kakaonibs",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "klein"
+            },
+            "note": "Bio-Regal; Fallback: Zartbitter 70 %+ gehackt"
+          },
+          {
+            "ingredient": "dextrose",
+            "name": "Dextrose (Traubenzucker)",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "25 g"
+            },
+            "note": "Vorrat aus `eis/` prüfen"
+          },
+          {
+            "ingredient": "brauner-zucker",
+            "name": "Brauner Zucker",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            },
+            "note": "falls kein Vorrat"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Würzmittel & Gewürze",
+        "items": [
+          {
+            "ingredient": "selleriesalz",
+            "name": "Selleriesalz",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1 Glas"
+            }
+          },
+          {
+            "ingredient": "pfeffer-weiss",
+            "name": "Weißer Pfeffer, ganz",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "note": "falls kein Vorrat — kein schwarzer: sichtbare Punkte"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Getränke",
+        "items": [
+          {
+            "ingredient": "rotwein",
+            "name": "Rotwein, kräftig",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1 Flasche"
+            },
+            "note": "300 ml, wird in Schüben trocken reduziert; alkoholfreie Option: 150 ml Verjus + 150 ml Wasser"
+          },
+          {
+            "ingredient": "wodka",
+            "name": "Wodka",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "kleine Flasche"
+            },
+            "optional": true,
+            "note": "**nur Espresso-Martini-Schuss**, \\~15 ml pro Trinker; neutraler 40%er reicht"
+          },
+          {
+            "ingredient": "kahlua",
+            "name": "Kahlúa o. ä. Kaffeelikör",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "klein"
+            },
+            "optional": true,
+            "note": "**nur Schuss**, \\~10 ml pro Trinker"
+          },
+          {
+            "ingredient": "frittieroel",
+            "name": "Frittieröl",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1–2 L"
+            }
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "tomatenwasser",
+            "name": "Tomatenwasser",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": true,
+            "note": "**beide Klärwege (Püree-Block + klares Wasser) liegen seit 09/2026 im Gefrierfach**"
+          },
+          {
+            "ingredient": "worcestershire",
+            "name": "Worcestershire-Sauce",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "chilioel",
+            "name": "Mildes Chiliöl",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true,
+            "note": "oder selbst ansetzen → Chili-Öl-Drill in `technik/mini-projekte.md`"
+          },
+          {
+            "ingredient": "weissweinessig",
+            "name": "Weißweinessig",
+            "need": {
+              "text": "25 ml",
+              "value": 25,
+              "max": 25,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "25 ml",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "butterschmalz",
+            "name": "Butterschmalz",
+            "need": {
+              "text": "2 EL",
+              "value": 2,
+              "max": 2,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "gelatine",
+            "name": "Gelatine",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1 Blatt"
+            },
+            "optional": true,
+            "note": "nur als Option für die Block-Bindung"
+          },
+          {
+            "ingredient": "zucker",
+            "name": "Zucker",
+            "need": {
+              "text": "1–2 EL",
+              "value": 1,
+              "max": 2,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1–2 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "auch für 1:1-Zuckersirup, Shakerato"
+          },
+          {
+            "ingredient": "panko",
+            "name": "Panko oder Mehl",
+            "need": {
+              "text": "20 g",
+              "value": 20,
+              "max": 20,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "20 g",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "honig",
+            "name": "Honig",
+            "need": {
+              "text": "1,5 TL",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1,5 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "muskat",
+            "name": "Muskat",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "tomatenmark",
+            "name": "Tomatenmark",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "lorbeer",
+            "name": "Lorbeer",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "2 Prise",
+              "value": 2,
+              "max": 2,
+              "unit": "Prise",
+              "approx": false
+            },
+            "display": "2 Prise",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "2 EL",
+              "value": 2,
+              "max": 2,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}

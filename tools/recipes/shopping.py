@@ -97,7 +97,7 @@ def derive(recipe: dict) -> dict:
             total.update(value=a["value"], max=a["max"], unit=a["unit"], approx=a["approx"])
         q = {"ingredient": iid, "total": total, "perTask": {t: " + ".join(xs) for t, xs in a["perTask"].items()}}
         if a["perCourse"]:
-            q["perCourse"] = {c: {"value": lo, "max": hi, "unit": a["unit"]} for c, (lo, hi) in a["perCourse"].items()}
+            q["perCourse"] = {c: {"text": fmt_amount(lo, hi, a["unit"]), "value": lo, "max": hi, "unit": a["unit"]} for c, (lo, hi) in a["perCourse"].items()}
         if a["unitless"]:
             q["unitless"] = a["unitless"]
         if a["mixed"]:
@@ -209,7 +209,8 @@ def check_k(recipe: dict, source: str) -> tuple[list[str], list[str]]:
     for item in items:
         wants: dict[str, list] = {}
         last = None
-        for part in re.split(r"\s\+\s", quote_key(_NOTE.sub("", item))):
+        core = re.split(r"\s—\s", quote_key(_NOTE.sub("", item)), maxsplit=1)[0]  # „— Gang-Zuordnung“ abtrennen
+        for part in re.split(r"\s\+\s", core):
             target = _match_ingredient(part, names, weighted) or last
             if target:
                 wants.setdefault(target, []).append(parse_qty(part))
@@ -225,14 +226,15 @@ def check_k(recipe: dict, source: str) -> tuple[list[str], list[str]]:
                 continue
             lo, hi, unit = sum(q[0] for q in qs), sum(q[1] for q in qs), qs[0][2]
             tot = qty[iid]["total"]
-            if tot.get("value") is None:
-                dev += 1
-                reps.append(f"K Abweichung {iid}: Original '{item[:50]}' hat Menge, JSON nur Freitext {qty[iid].get('unitless')}")
-            elif (lo, hi, unit) == (tot["value"], tot["max"], tot["unit"]):
+            if (lo, hi, unit) == (tot.get("value"), tot.get("max"), tot.get("unit")):
                 ok += 1
             elif ings[iid].get("buy"):
                 ok += 1
-                reps.append(f"K {iid}: Gebinde '{ings[iid]['buy']['text']}' statt Bedarf {tot['text']}")
+                if tot.get("value") is not None:
+                    reps.append(f"K {iid}: Gebinde '{ings[iid]['buy']['text']}' statt Bedarf {tot['text']}")
+            elif tot.get("value") is None:
+                dev += 1
+                reps.append(f"K Abweichung {iid}: Original '{item[:50]}' hat Menge, JSON nur Freitext {qty[iid].get('unitless')}")
             else:
                 dev += 1
                 if iid not in reported:

@@ -570,6 +570,13 @@
         },
         "scaleNote": {
           "type": "string"
+        },
+        "courses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/slug"
+          },
+          "description": "Gang-Zuordnung (Menü), wie am Einkaufsposten vermerkt"
         }
       }
     },
@@ -1537,6 +1544,13 @@
         },
         "source": {
           "type": "string"
+        },
+        "steps": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/slug"
+          },
+          "description": "Genauer: einzelne Schritte, wenn ein Task über mehrere Phasen läuft (Kaisergranat: auftauen T-1, auslösen vormittags)"
         }
       }
     },

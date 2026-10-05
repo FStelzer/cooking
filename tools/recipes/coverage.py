@@ -9,7 +9,7 @@ from .util import (UNIT_TOKEN, annotation_quotes, is_generated, iter_courses, it
                    verbatim_strings, ws_key)
 
 SLUG = re.compile(r"^[a-z0-9][a-z0-9-]*$")
-_LIST_PREFIX = re.compile(r"^\s*(?:[-*]\s+\[[ x]\]\s+|[-*]\s+|\d+\.\s+|#+\s+|>\s*)")
+_LIST_PREFIX = re.compile(r"^\s*(?:[-*]\s+\[[ x]\]\s+|[-*]\s+|\d+\.\s+|#+\s+(?:🚧\s+)?|>\s*)")
 
 
 def check_b(recipe: dict, source: str) -> tuple[list[str], list[str]]:
@@ -29,6 +29,9 @@ def check_b(recipe: dict, source: str) -> tuple[list[str], list[str]]:
     errs += [f"B Token im JSON, aber nicht in der Quelle: '{tok}' ×{n}" for tok, n in sorted((have - want).items())]
     reps.append(f"B {want.total()} Zahl+Einheit-Token in der Quelle, {have.total()} in verbatim-Feldern")
     blob = ws_key(" ".join(verb))
+    # Zeitplan-Sektionen verketten mehrere Einträge pro Zeile (" · ") — die prüft Check F segmentweise.
+    skip = {sec["title"] for sec in sections(recipe, "schedule")}
+    src = "\n".join(text for title, text in split_h2(source) if not is_generated(title) and title not in skip)
     for line in src.splitlines():
         ln = ws_key(_LIST_PREFIX.sub("", line))
         if len(ln) >= 20 and ln not in blob:
@@ -98,7 +101,7 @@ def check_d(recipe: dict) -> tuple[list[str], list[str]]:
     used: set[str] = set()
     derived: list[str] = []
     for task in iter_tasks(recipe):
-        errs += [f"D task:{task['id']} consumes unbekanntes Produkt '{c}'" for c in task.get("consumes", []) if f"product:{c}" not in ids]
+        errs += [f"D task:{task['id']} consumes unbekanntes Produkt '{c}'" for c in task.get("consumes", []) if c not in ids]
         for step in task["steps"]:
             if step.get("actionDerived"):
                 derived.append(f"step:{step['id']}.action")
