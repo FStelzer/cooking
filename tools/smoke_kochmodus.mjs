@@ -13,7 +13,7 @@ const { chromium } = req("playwright");
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const PORT = 3456;
 const SHOT = process.argv[2];
-const MIME = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json" };
+const MIME = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json", ".webmanifest": "application/manifest+json", ".png": "image/png" };
 
 const server = http.createServer(async (rq, res) => {
   let p = decodeURIComponent(new URL(rq.url, "http://x").pathname);
@@ -34,7 +34,7 @@ try {
   // Alten Zustand der ersten Fassung vorab setzen (timers als Objekt) — darf nicht crashen
   await page.addInitScript(() => { if (!localStorage.getItem("km:gerichte/thit-kho-trung"))
     localStorage.setItem("km:gerichte/thit-kho-trung", JSON.stringify({ timers: { "schmoren#0.0": Date.now() + 60000 } })); });
-  await page.goto(`http://127.0.0.1:${PORT}/kochmodus/`);
+  await page.goto(`http://127.0.0.1:${PORT}/kochmodus/?r=../gerichte/thit-kho-trung.json`);
   await page.waitForSelector(".row[data-step]");
   assert.equal(await page.locator(".row[data-step]").count(), 9, "9 Schritte erwartet");
   assert.equal(await page.locator(".dock .tm").count(), 1, "migrierter Timer fehlt im Dock");
@@ -161,10 +161,45 @@ try {
   assert.deepEqual(await page.locator("#main > h2").allInnerTexts(), ["Zeitplan Backtag", "Zeitplan aus dem Frost"]);
   await page.click('button[data-view="lesen"]');
   assert.ok((await page.locator("#main").innerText()).includes("(Weizen-Roggen: 90 g, Dinkel: 40 g)"), "Lesen zeigt alle Varianten");
+  // App: ohne ?r= das zuletzt geöffnete Rezept (eben: Brötchen), ?liste=1 = Rezeptliste
+  await page.goto(`http://127.0.0.1:${PORT}/kochmodus/`);
+  await page.waitForSelector(".row[data-step]");
+  assert.match(await page.locator("#title").innerText(), /Vollkornbrötchen/, "zuletzt geöffnetes Rezept");
+  await page.goto(`http://127.0.0.1:${PORT}/kochmodus/?liste=1`);
+  await page.waitForSelector("a.pick");
+  const n = JSON.parse(await (await fetch(`http://127.0.0.1:${PORT}/kochmodus/rezepte.json`)).text()).length;
+  assert.equal(await page.locator("a.pick").count(), n, "Rezeptliste = rezepte.json");
+  await page.locator('a.pick:has-text("Bò lúc lắc")').click();
+  await page.waitForSelector(".row[data-step]");
+  // Schnell-Timer ohne Schrittbezug
+  await page.click("#addTimer");
+  await page.fill("#qlabel", "Nudeln");
+  await page.click('#quick [data-quick="300"]');
+  assert.match(await page.locator(".dock .tm").innerText(), /Nudeln/);
+  await page.click('.dock [data-tact="stop"]');
+  // Tablet quer: Detailblatt rechts neben der Liste, offener Schritt markiert
+  await page.setViewportSize({ width: 1200, height: 800 });
+  await page.locator('.row[data-step="sauce-anruehren"] [data-open]').click();
+  await page.waitForSelector("#sheet.open");
+  const box = await page.locator("#sheet").boundingBox();
+  assert.ok(box.x > 500 && box.height > 600, `Sheet rechts als Spalte (x=${box.x}, h=${box.height})`);
+  assert.equal(await page.locator(".row.current").count(), 1);
+  assert.ok(!(await page.locator("#backdrop").isVisible()), "kein Abdunkeln im Split");
+  await page.click('#sheet [data-nav="1"]');
+  assert.equal(await page.locator('.row.current[data-step="essig-zwiebeln-ansetzen"]').count(), 1, "Markierung wandert mit");
+  await page.click("#sheet .close");
+  await page.setViewportSize({ width: 390, height: 844 });
+  // Offline: Service Worker liefert App-Hülle und zuletzt geladenes Rezept aus dem Cache
+  await page.evaluate(() => navigator.serviceWorker.ready);
+  await page.reload(); await page.waitForSelector(".row[data-step]");  // jetzt vom SW kontrolliert
+  await page.context().setOffline(true);
+  await page.reload(); await page.waitForSelector(".row[data-step]");
+  assert.match(await page.locator("#title").innerText(), /Bò lúc lắc/, "offline geladen");
+  await page.context().setOffline(false);
   if (SHOT) {
     await page.click('button[data-view="plan"]');
     await page.screenshot({ path: SHOT.replace(/\.png$/, "-plan.png") });
-    await page.goto(`http://127.0.0.1:${PORT}/kochmodus/`);
+    await page.goto(`http://127.0.0.1:${PORT}/kochmodus/?r=../gerichte/thit-kho-trung.json`);
     await page.waitForSelector(".row[data-step]");
     await page.click('button[data-view="kochen"]');
     await page.screenshot({ path: SHOT });
@@ -177,4 +212,4 @@ try {
   server.close();
 }
 if (errors.length) { console.log("Browser-Fehler:\n  " + errors.join("\n  ")); process.exit(1); }
-console.log("Rauchtest ok: thit-kho (9 Schritte, Sheet, Notiz, Skalierung, Timer, Export, Einkauf, Lesen) + Menü (Plan 9×5, 32 Chips, 60 Schritte, 55 Posten) + Varianten (Brötchen: Ein-/Ausblenden, Mengen, Einkauf, Zeitpläne)");
+console.log("Rauchtest ok: thit-kho (9 Schritte, Sheet, Notiz, Skalierung, Timer, Export, Einkauf, Lesen) + Menü (Plan 9×5, 32 Chips, 60 Schritte, 55 Posten) + Varianten (Brötchen: Ein-/Ausblenden, Mengen, Einkauf, Zeitpläne) + App (Liste, zuletzt geöffnet, Schnell-Timer, Split, offline)");

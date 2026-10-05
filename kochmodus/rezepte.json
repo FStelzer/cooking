@@ -1,0 +1,44 @@
+[
+ {
+  "path": "../backen/vollkornbroetchen.json",
+  "title": "Vollkornbrötchen auf Vorrat — Weizen als Leitrezept, Dinkel und Weizen-Roggen als Varianten (12 Stück)",
+  "group": "backen",
+  "wip": false,
+  "cooked": true
+ },
+ {
+  "path": "../gerichte/bo-luc-lac.json",
+  "title": "Bò lúc lắc — vietnamesisches „Shaking Beef\" mit Brunnenkresse-Salat (4 Portionen)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": true
+ },
+ {
+  "path": "../gerichte/thit-kho-trung.json",
+  "title": "Thịt kho trứng — vietnamesisches Karamell-Schweinefleisch mit Eiern (4 Portionen)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": true
+ },
+ {
+  "path": "../menues/menue-hochzeitstag.json",
+  "title": "Degustationsmenü — Hochzeitstag (4 Personen)",
+  "group": "menues",
+  "wip": false,
+  "cooked": true
+ },
+ {
+  "path": "../menues/menue-november.json",
+  "title": "Menü November — Tomatenwasser / Kaisergranat / Schmorlamm / Espresso-Parfait",
+  "group": "menues",
+  "wip": true,
+  "cooked": false
+ },
+ {
+  "path": "../schwangerschaft/dal-baukasten.json",
+  "title": "Dal-Baukasten — Grundrezept Masoor/Toor Dal + vier Varianten (4 Portionen als Hauptgericht)",
+  "group": "schwangerschaft",
+  "wip": false,
+  "cooked": false
+ }
+]

@@ -1108,10 +1108,13 @@
                 }
               ],
               "ingredients": [],
-              "meta": "*nur Einfrieren, Kombi*",
+              "meta": "*nur Einfrieren, Kombi · nach Topping*",
               "only": [
                 "weg=einfrieren",
                 "weg=kombi"
+              ],
+              "after": [
+                "step:topping"
               ]
             },
             {
@@ -1775,8 +1778,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T14:52:43Z",
-    "sourceHash": "2a36b2009367be89",
+    "generatedAt": "2026-10-05T17:11:48Z",
+    "sourceHash": "cc9bf424a6cdc35e",
     "select": {
       "mehl": "weizen",
       "weg": "einfrieren"

@@ -323,3 +323,57 @@ def check_l(recipe: dict, source: str) -> tuple[list[str], list[str]]:
                 (reps if soft else errs).append(msg)
     reps.insert(0, f"L Mengen-Check: {ok} Zellen passend, {dev} abweichend, {skipped} Zeilen ohne Zutat; geprüfte Gänge: {', '.join(sorted(converted & set(col))) or '—'}")
     return errs, reps
+
+
+# ---------------------------------------------------------------- P (kritischer Pfad, warn)
+def critical_path(recipe: dict) -> tuple[int, int, list[str]]:
+    """(Pfadlänge, aktive Summe, Pfad) in Sekunden über die Schritt-Kanten (`after`, `start` relativ zu einem
+    Schritt). Ohne Kante gilt der Vorgänger im Task; `start: …:end` mit negativem Offset läuft am Ende mit."""
+    steps = {s["id"]: s for t in iter_tasks(recipe) for s in t["steps"]}
+    order = [s["id"] for t in iter_tasks(recipe) for s in t["steps"]]
+    before = {t["steps"][i]["id"]: t["steps"][i - 1]["id"] for t in iter_tasks(recipe) for i in range(1, len(t["steps"]))}
+    end, prev = {}, {}
+    def fin(sid: str, seen=()) -> int:
+        if sid in end: return end[sid]
+        if sid in seen: return 0  # Zyklus meldet Check D
+        st, t0 = steps[sid], 0
+        after = st["after"] if "after" in st else ([f"step:{before[sid]}"] if sid in before and not st.get("start") else [])
+        preds = [r.removeprefix("step:") for r in after if r.startswith("step:") and r.removeprefix("step:") in steps]
+        for p in preds:
+            if fin(p, seen + (sid,)) > t0: t0, prev[sid] = end[p], p
+        ref = (st.get("start") or {}).get("ref", "")
+        if ref.startswith("step:") and ref.endswith(":end") and ref[5:-4] in steps:
+            off = st["start"].get("offset", {})
+            base = fin(ref[5:-4], seen + (sid,)) + (secs(off.get("min") or off.get("typical")) or 0)
+            if base > t0: t0, prev[sid] = base, ref[5:-4]
+        end[sid] = t0 + _dur(st)
+        return end[sid]
+    for sid in order: fin(sid)
+    if not end: return 0, 0, []
+    last = max(end, key=end.get)
+    path = [last]
+    while path[-1] in prev: path.append(prev[path[-1]])
+    active = sum(_dur(s) for s in steps.values() if s.get("attention") != "passive" and not s.get("parallel"))
+    return end[last], active, path[::-1]
+
+
+def check_p(recipe: dict) -> tuple[list[str], list[str]]:
+    """Kritischer Pfad gegen `times.total` (nur Gerichte; Menüs prüft H über den Zeitplan). Mit Varianten: Default-Wahl."""
+    if recipe.get("kind") == "menu":
+        return [], []
+    from . import variants as V
+    r = V.view(recipe, V.default_selection(recipe["variants"])) if recipe.get("variants") else recipe
+    length, active, path = critical_path(r)
+    fmt = lambda x: f"{x // 3600}:{x % 3600 // 60:02d}"
+    reps = [f"P kritischer Pfad {fmt(length)} ({len(path)} Schritte: {' → '.join(path)}), aktiv {fmt(active)}"]
+    tot = (recipe.get("times") or {}).get("total") or {}
+    lo, hi = secs(tot.get("min") or tot.get("typical")), secs(tot.get("max") or tot.get("typical"))
+    if lo is not None:
+        if length > hi * 1.15:
+            reps.append(f"P ⚠ Pfad {fmt(length)} länger als „gesamt {tot.get('source', '')}“ — Dauern oder Kanten prüfen")
+        elif length < lo * 0.6:
+            reps.append(f"P ⚠ Pfad {fmt(length)} deutlich kürzer als „gesamt {tot.get('source', '')}“ — fehlt eine Wartezeit als Schritt?")
+    else:
+        reps.append("P keine Gesamtzeit im Kopf („Aktive Zeit …, gesamt …“) — Vorschlag aus dem Pfad: " + fmt(length))
+    return [], reps
+

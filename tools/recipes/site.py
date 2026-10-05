@@ -2,6 +2,7 @@
 
     python3 -m tools.recipes.site sidebar     # schreibt _sidebar.md
     python3 -m tools.recipes.site learnings   # ersetzt den Block zwischen <!-- learnings:start/end -->
+    python3 -m tools.recipes.site index       # schreibt kochmodus/rezepte.json (Rezeptliste der Kochmodus-App)
     python3 -m tools.recipes.site --check …   # schreibt nichts, Exit 1 wenn etwas veraltet ist
 
 Ersetzt die früheren awk-Blöcke im Taskfile; die Ausgabe ist zeichengleich (per Diff
@@ -95,14 +96,23 @@ def learnings_block(claude_md: str) -> str:
     return claude_md[: i + len(start)] + "\n\n" + gen + claude_md[j:]
 
 
+def recipe_index() -> str:
+    """Alle Rezepte mit gebautem JSON, Ordnung wie die Sidebar: Rezeptliste der Kochmodus-App (offline-fähig)."""
+    import json
+    items = [{"path": "../" + rel(f.with_suffix(".json")), "title": title_of(f).removeprefix("🚧").lstrip(" "),
+              "group": d.name, "wip": is_wip(title_of(f)), "cooked": is_cooked(f)}
+             for d in recipe_dirs() for f in md_files(d) if f.with_suffix(".json").exists()]
+    return json.dumps(items, ensure_ascii=False, indent=1) + "\n"
+
+
 def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    p.add_argument("what", choices=["sidebar", "learnings"])
+    p.add_argument("what", choices=["sidebar", "learnings", "index"])
     p.add_argument("--check", action="store_true", help="nur prüfen, nichts schreiben")
     a = p.parse_args(argv)
-    target = ROOT / ("_sidebar.md" if a.what == "sidebar" else "CLAUDE.md")
+    target = ROOT / {"sidebar": "_sidebar.md", "learnings": "CLAUDE.md", "index": "kochmodus/rezepte.json"}[a.what]
     old = target.read_text(encoding="utf-8") if target.exists() else ""
-    new = sidebar() if a.what == "sidebar" else learnings_block(old)
+    new = {"sidebar": sidebar, "index": recipe_index}.get(a.what, lambda: learnings_block(old))()
     if a.check:
         print(f"{target.name}: {'aktuell' if new == old else 'VERALTET (task ' + a.what + ')'}")
         return int(new != old)

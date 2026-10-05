@@ -121,4 +121,23 @@ mark.variant{background:var(--why);outline:1px solid var(--line);border-radius:3
 .sheet-head .nav button{min-width:44px;min-height:44px;border:1px solid var(--line);border-radius:8px;background:var(--surface);font-size:22px;font-weight:700;cursor:pointer}
 .sheet-head .nav button:disabled{opacity:.35;cursor:default}
 .sheet-head .nav small{min-width:3.2em;text-align:center;font-weight:700}
+.dock .addtimer{flex:none;border:0;border-radius:9px;background:var(--c);color:#fff;font-weight:800;min-height:44px;padding:0 12px;cursor:pointer;font-size:15px}
+.quick{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(68px + env(safe-area-inset-bottom,0px));width:min(420px,calc(100% - 20px));z-index:60;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:12px;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+.quick .qhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.quick .qclose{border:0;background:none;font-size:20px;cursor:pointer;min-width:40px;min-height:40px}
+.quick input{font:inherit;width:100%;box-sizing:border-box;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+.quick .qgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:10px 0}
+.quick .qgrid button{min-height:44px;border:1px solid var(--line);border-radius:8px;background:var(--surface);font-weight:700;cursor:pointer;color:var(--ink)}
+.quick .qcustom{display:flex;gap:8px}.quick .qcustom input{flex:1}
 
+.row.current{outline:3px solid var(--focus);outline-offset:1px}
+@media (min-width:900px){
+  body.sheet-open .wrap{max-width:none;margin:0 min(46vw,600px) 0 0;padding-left:24px}
+  .sheet.open{left:auto;right:0;transform:none;top:0;bottom:56px;width:min(46vw,600px);max-height:none;border-radius:0;border-top:0;border-left:6px solid var(--c);padding-bottom:24px;box-shadow:-8px 0 24px rgba(0,0,0,.12)}
+  .backdrop.open{display:none}
+}
+.tolist{display:inline-block;font-weight:700;color:var(--c);text-decoration:none;margin-bottom:4px}
+body.picker .toolbar,body.picker .bar,body.picker .tolist,body.picker #variants{display:none}
+a.pick{display:block;padding:12px 14px;margin-bottom:8px;background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--c);border-radius:8px;color:var(--ink);text-decoration:none;font-weight:700}
+
+@media (min-width:900px){.quick{left:10px;transform:none}}

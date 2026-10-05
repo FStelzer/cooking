@@ -2,7 +2,9 @@ import { escapeTilde, fmtAmount, fmtClock, highlight, isActive, isoSeconds, more
          scaleAmount, scaleStepText, selection, selectionKey, textWithAction, timerChoices, variantText } from "./lib.js";
 
 const params = new URLSearchParams(location.search);
-const RECIPE_URL = params.get("r") || "../gerichte/thit-kho-trung.json";
+// Rezept: ?r=…, sonst das zuletzt geöffnete (installierte App), sonst die Rezeptliste
+const lastRecipe = (() => { try { return localStorage.getItem("km:last"); } catch { return null; } })();
+const RECIPE_URL = params.has("liste") ? null : params.get("r") || lastRecipe;
 const $ = (sel, el = document) => el.querySelector(sel);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const md = (s) => marked.parse(escapeTilde(s || ""));
@@ -56,7 +58,7 @@ function stepRow(s, course = null, task = null) {
   const deps = !s.after ? "" : s.after.length ? "nach " + s.after.map(labelOf).filter(Boolean).join(", ") : "jederzeit";
   const meta = [course ? courseTitle(course) : "", dur, deps].filter(Boolean).join(" · ");
   const title = s.title || (task && task.name !== recipe.title ? task.name : "");
-  return `<div class="row ${state.done[s.id] ? "done" : ""} ${s.after && !s.after.length ? "free" : ""}" data-step="${s.id}">
+  return `<div class="row ${state.done[s.id] ? "done" : ""} ${s.after && !s.after.length ? "free" : ""} ${s.id === openId ? "current" : ""}" data-step="${s.id}">
     <input type="checkbox" class="chk" data-done="${s.id}" aria-label="${esc(title || s.label)} erledigt" ${state.done[s.id] ? "checked" : ""}>
     <div class="body" data-open="${s.id}">
       <div class="t">${esc(s.label)}. ${mdInline(title)}</div>
@@ -261,7 +263,7 @@ function visibleOrder() {
 }
 function stepNav(dir) {
   const seq = visibleOrder(), next = seq[seq.indexOf(openId) + dir];
-  if (next) { openId = next; renderSheet(); sheet.scrollTop = 0; }
+  if (next) { openId = next; renderMain(); renderSheet(); sheet.scrollTop = 0; scrollToCurrent(); }
 }
 // Wischen im Detailblatt: links = nächster Schritt, rechts = vorheriger (nur klar horizontale Gesten)
 let touch0 = null;
@@ -271,10 +273,18 @@ sheet.addEventListener("touchend", (e) => {
   const t = e.changedTouches[0], dx = t.clientX - touch0.x, dy = t.clientY - touch0.y; touch0 = null;
   if (Math.abs(dx) > 70 && Math.abs(dx) > 2 * Math.abs(dy)) stepNav(dx < 0 ? 1 : -1);
 }, { passive: true });
-function openSheet(id) { openId = id; renderSheet(); sheet.classList.add("open"); backdrop.classList.add("open"); sheet.scrollTop = 0; }
-function closeSheet() { openId = null; sheet.classList.remove("open"); backdrop.classList.remove("open"); renderMain(); }
+// Breite Bildschirme (Tablet quer, Desktop): Detailblatt rechts neben der Liste statt darüber (CSS: body.sheet-open)
+const split = () => matchMedia("(min-width: 900px)").matches;
+function scrollToCurrent() { if (split()) main.querySelector(".row.current")?.scrollIntoView({ block: "nearest", behavior: "smooth" }); }
+function openSheet(id) {
+  openId = id; document.body.classList.add("sheet-open"); renderMain(); renderSheet();
+  sheet.classList.add("open"); backdrop.classList.add("open"); sheet.scrollTop = 0;
+}
+function closeSheet() { openId = null; document.body.classList.remove("sheet-open"); sheet.classList.remove("open"); backdrop.classList.remove("open"); renderMain(); }
 backdrop.onclick = closeSheet;
 document.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && (e.target.id === "qmin" || e.target.id === "qlabel")) { const m = +$("#qmin").value; if (m > 0) startQuick(Math.round(m * 60)); return; }
+  if (e.key === "Escape" && $("#quick")) { $("#quick").remove(); return; }
   if (!openId) return;
   if (e.key === "Escape") closeSheet();
   else if (e.key === "ArrowRight") stepNav(1);
@@ -283,9 +293,9 @@ document.addEventListener("keydown", (e) => {
 
 // ---- Timer (Dock, überlebt Reload via Endzeit) -----------------------------
 const remaining = (t) => (t.paused ? t.left : t.end - Date.now());
-function startTimer(step, label, secs) {
+function startTimer(step, label, secs) {  // step = null: Schnell-Timer ohne Schrittbezug
   unlockAudio();
-  state.timers.push({ id: Math.random().toString(36).slice(2, 9), step: step.id, label, end: Date.now() + secs * 1000, paused: false, left: 0 });
+  state.timers.push({ id: Math.random().toString(36).slice(2, 9), step: step?.id ?? null, label, end: Date.now() + secs * 1000, paused: false, left: 0 });
   save(); renderAll(); toast(`Timer läuft: ${label}`);
 }
 function timerAction(id, act) {
@@ -295,9 +305,23 @@ function timerAction(id, act) {
   else if (act === "pause") { if (t.paused) { t.end = Date.now() + t.left; t.paused = false; } else { t.left = t.end - Date.now(); t.paused = true; } }
   save(); renderAll();
 }
+const QUICK = [1, 2, 3, 5, 8, 10, 12, 15, 20, 30, 45, 60];
+function quickHtml() {
+  return `<div class="quick" id="quick" role="dialog" aria-label="Schnell-Timer">
+    <div class="qhead"><b>Schnell-Timer</b><button class="qclose" aria-label="Schließen">✕</button></div>
+    <input id="qlabel" type="text" placeholder="Wofür? (z. B. Nudeln)" maxlength="40">
+    <div class="qgrid">${QUICK.map((m) => `<button data-quick="${m * 60}">${m} Min.</button>`).join("")}</div>
+    <div class="qcustom"><input id="qmin" type="number" min="0.5" step="0.5" placeholder="Min." aria-label="Minuten"><button data-quick="custom" class="btn primary">Start</button></div>
+  </div>`;
+}
+function startQuick(secs) {
+  const label = $("#qlabel").value.trim() || `Timer ${fmtClock(secs)}`;
+  $("#quick")?.remove(); startTimer(null, label, secs);
+}
 function renderDock() {
-  if (!state.timers.length) { dock.innerHTML = `<span class="lead">Keine Timer aktiv. Timer startest du in einem Schritt.</span>`; return; }
-  dock.innerHTML = `<span class="lead">${state.timers.length} Timer</span>` + state.timers.slice().sort((a, b) => remaining(a) - remaining(b)).map((t) => {
+  const add = `<button class="addtimer" id="addTimer" aria-label="Schnell-Timer stellen">＋ Timer</button>`;
+  if (!state.timers.length) { dock.innerHTML = add + `<span class="lead">Keine Timer aktiv — im Schritt oder hier per ＋.</span>`; return; }
+  dock.innerHTML = add + `<span class="lead">${state.timers.length} Timer</span>` + state.timers.slice().sort((a, b) => remaining(a) - remaining(b)).map((t) => {
     const s = stepOf(t.step), rem = remaining(t), ring = rem <= 0;
     return `<div class="tm ${ring ? "ring" : ""} ${t.paused ? "paused" : ""}" data-tid="${t.id}">
       <div class="lab"><b>${esc(t.label)}</b><span>${s ? esc(s.label + ". " + (s.title || "")) : ""}</span></div>
@@ -353,6 +377,10 @@ document.addEventListener("visibilitychange", () => { if (document.visibilitySta
 // ---- Ereignisse -------------------------------------------------------------
 document.addEventListener("click", (e) => {
   if (e.target.closest(".close")) return closeSheet();
+  if (e.target.closest("#addTimer")) { if (!$("#quick")) { document.body.insertAdjacentHTML("beforeend", quickHtml()); $("#qlabel").focus(); } else $("#quick").remove(); return; }
+  if (e.target.closest(".qclose")) { $("#quick")?.remove(); return; }
+  const q = e.target.closest("[data-quick]");
+  if (q) { const secs = q.dataset.quick === "custom" ? Math.round((+$("#qmin").value || 0) * 60) : +q.dataset.quick; if (secs > 0) startQuick(secs); return; }
   const nv = e.target.closest("[data-nav]"); if (nv) { stepNav(+nv.dataset.nav); return; }
   if (e.target.id === "reset") {
     if (confirm("Alle Haken, Timer und Einkaufs-Haken dieses Rezepts zurücksetzen?\nNotiz, Menge und Varianten-Wahl bleiben.")) { state = resetState(state); save(); renderAll(); toast("Zurückgesetzt — bereit zum Kochen"); }
@@ -385,10 +413,29 @@ document.addEventListener("change", (e) => {
 });
 let toastT; function toast(m) { const el = $("#toast"); el.textContent = m; el.style.display = "block"; clearTimeout(toastT); toastT = setTimeout(() => (el.style.display = "none"), 2200); }
 
+// ---- Rezeptliste (generiert: kochmodus/rezepte.json) ---------------------------
+async function renderPicker() {
+  document.body.classList.add("picker");
+  $("#title").textContent = "Kochmodus";
+  $("#meta").textContent = "Rezept wählen";
+  let list = [];
+  try { list = await (await fetch("rezepte.json")).json(); } catch {}
+  if (!list.length) { main.innerHTML = `<p class="empty">Keine Rezeptliste gefunden (<code>task index</code>).</p>`; return; }
+  let html = "", group = null;
+  for (const r of list) {
+    if (r.group !== group) { group = r.group; html += `<h2>${esc(group)}</h2>`; }
+    html += `<a class="pick" href="?r=${encodeURIComponent(r.path)}">${r.cooked ? "✅ " : ""}${r.wip ? "🚧 " : ""}${esc(r.title)}</a>`;
+  }
+  main.innerHTML = html;
+}
+
 // ---- Start -------------------------------------------------------------------
+if ("serviceWorker" in navigator && location.protocol !== "file:") navigator.serviceWorker.register("sw.js").catch(() => {});
 (async () => {
+  if (!RECIPE_URL) return renderPicker();
   try { recipe = await (await fetch(RECIPE_URL)).json(); }
   catch (err) { main.innerHTML = `<p class="empty">Rezept konnte nicht geladen werden: <code>${esc(RECIPE_URL)}</code> (${esc(err.message)})</p>`; return; }
+  try { localStorage.setItem("km:last", RECIPE_URL); } catch {}
   for (const i of recipe.ingredients || []) ingById[i.id] = i;
   state = loadState(recipe.id);
   if (isMenu() && schedule() && !state.viewSeen) view = "plan";

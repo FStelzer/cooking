@@ -11,7 +11,7 @@ from .diff import diff
 from .parse import parse_recipe
 from .schema import check_a
 from .shopping import check_k, derive, render_shopping
-from .timing import check_e, check_f, check_g, check_h, check_l
+from .timing import check_e, check_f, check_g, check_h, check_l, check_p
 from .util import ROOT, load_json, read_source, source_path
 
 
@@ -36,7 +36,7 @@ def cmd_check(args) -> int:
         if not errs:
             src = read_source(recipe)
             for e, r in (check_b(recipe, src), check_c(recipe, src), check_k(recipe, src),
-                         check_e(recipe, src), check_f(recipe, src), check_g(recipe), check_h(recipe), check_l(recipe, src)):
+                         check_e(recipe, src), check_f(recipe, src), check_g(recipe), check_h(recipe), check_l(recipe, src), check_p(recipe)):
                 errs += e
                 reps += r
         for e in errs:

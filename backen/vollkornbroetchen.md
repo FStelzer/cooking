@@ -147,7 +147,7 @@ Oberseite mit feuchter Hand betupfen und in 60 g Sonnenblumenkerne (oder andere 
 **Weg C — Kombi (9 g Hefe): 6 einfrieren, 6 direkt backen.** Die praktischste Variante für einen Test-Ansatz: 6 Teiglinge nach Weg A einfrieren, 6 nach Weg B in die Stückgare (**50–60 Min.**, Fingertest) und backen. So sieht man am selben Tag, ob Teigführung und Formen stimmen, bevor die Frost-Charge dran ist.
 
 **11. Einfrieren (20 Min. + 2–3 Std. passiv)**
-*nur Einfrieren, Kombi*
+*nur Einfrieren, Kombi · nach Topping*
 Weg A — Einfrieren (Vorrat; 12 g Hefe): **20 Min.** abgedeckt bei Raumtemperatur entspannen — **nicht länger**. Hefe, die noch nicht aktiv gärt, überlebt den Frost deutlich besser; die Stückgare findet erst *nach* dem Auftauen statt. Dann einfrieren, **ohne Blech-Platz in Schüben:** je 4–6 Teiglinge ohne Kontakt auf ein kleines Brett, einen Teller oder in eine flache Dose mit Backpapier, **2–3 Std. offen anfrieren**, hartgefroren in einen Gefrierbeutel, Luft herausdrücken, **den Beutel in einen zweiten Beutel oder eine Dose** (ohne Vakuumierer ist Doppelverpackung der Gefrierbrand-Schutz), Datum draufschreiben, nächsten Schub aufs Brett. Die wartenden Teiglinge in der Zwischenzeit **in den Kühlschrank** (bremst die Hefe). **Innerhalb von 3 Wochen** verbrauchen — ohne Vakuum konservativ. Weiter bei „Auftauen und Stückgare“.
 
 **12. Stückgare (60–75 Min., passiv)**

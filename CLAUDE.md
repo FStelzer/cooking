@@ -214,7 +214,9 @@ schreiben (rendert als normales `~`). Tabellenzellen sind unkritisch
   per Pre-Commit-Hook (`task hooks` einmalig aktivieren; kein CI). Hintergrund in
   `SCHEMA.md` (Leitentscheidungen, Checks, Log), `schema/` (JSON Schema + eingefrorene
   Hand-Beispiele als Parität-Soll), `kochmodus/` (Kochmodus-Seite: `task serve` →
-  `/kochmodus/`; Docsify zeigt den Knopf, sobald ein JSON neben der `.md` liegt).
+  `/kochmodus/`; Docsify zeigt den Knopf, sobald ein JSON neben der `.md` liegt;
+  installierbar und offline, Rezeptliste `kochmodus/rezepte.json` wird von `task build`
+  generiert).
   Einkaufsliste und Mengen-Check im Markdown bleiben, bis die generierte Liste in
   Docsify angezeigt wird. Keine `.md` unter `schema/`, `tools/`, `kochmodus/`.
 - **Sidebar wird generiert:** `_sidebar.md` NIE von Hand editieren, sondern

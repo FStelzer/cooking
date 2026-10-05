@@ -11,6 +11,11 @@ tasks:
     cmds:
       - python3 -m tools.recipes.site sidebar
 
+  index:
+    desc: Generiere kochmodus/rezepte.json (Rezeptliste der Kochmodus-App, alle Rezepte mit JSON)
+    cmds:
+      - python3 -m tools.recipes.site index
+
   learnings:
     desc: Generiere den "Bisherige Projekte"-Block in CLAUDE.md aus den ## Learnings-Sektionen der Rezepte
     cmds:
@@ -30,7 +35,8 @@ tasks:
   build:
     desc: Rezeptformat — Markdown nach REZEPTFORMAT.md → JSON daneben (alle Rezepte mit JSON, oder CLI_ARGS)
     cmds:
-      - python3 -m tools.recipes.cli build {{.CLI_ARGS | default "$(ls {gerichte,menues,desserts,backen,eis,schwangerschaft}/*.json 2>/dev/null | sed 's/\.json$/.md/')"}}
+      - python3 -m tools.recipes.cli build {{if .CLI_ARGS}}{{.CLI_ARGS}}{{else}}$(ls {gerichte,menues,desserts,backen,eis,schwangerschaft}/*.json 2>/dev/null | sed 's/\.json$/.md/'){{end}}
+      - python3 -m tools.recipes.site index
 
   validate:
     desc: Rezeptformat — Parser-Tests, Checks A–L gegen alle gebauten JSONs, JSON/Sidebar/Learnings aktuell? (Pre-Commit-Gate, s. task hooks)
@@ -40,6 +46,7 @@ tasks:
       - python3 -m tools.recipes.cli build --check $(ls {gerichte,menues,desserts,backen,eis,schwangerschaft}/*.json 2>/dev/null | sed 's/\.json$/.md/')
       - python3 -m tools.recipes.site sidebar --check
       - python3 -m tools.recipes.site learnings --check
+      - python3 -m tools.recipes.site index --check
 
   test-kochmodus:
     desc: Kochmodus — Node-Tests der reinen Funktionen (lib.js)
