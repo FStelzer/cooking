@@ -128,7 +128,7 @@ Konvention; wo zwei Konverter in AP3 abgewichen sind, steht jetzt eine feste Reg
    `markdown` verbatim mit `tags`.
 3. **Task.** Einfaches Rezept = genau ein Task mit `id: "main"`, `name` = Gerichtname.
 4. **Schritte.** Ein Markdown-Schritt = ein Step, nie splitten. `heading` = Überschrift-
-   zeile ohne `**`. `label` = Nummer. `title` = Zitat aus `heading` ohne Nummer und
+   zeile verbatim inklusive `**`. `label` = Nummer. `title` = Zitat aus `heading` ohne Nummer und
    Dauer **[C]**. `text` = ganzer Absatz verbatim. `duration` **nur** aus der
    Überschrift (`source` = die Klammerangabe); Dauern im Text werden `timers`, nie
    `duration`. `parallel: true` bei „parallel" in der Überschrift.
@@ -158,7 +158,8 @@ Konvention; wo zwei Konverter in AP3 abgewichen sind, steht jetzt eine feste Reg
    Mehrdeutigkeit um das Nomen verlängern; kommt er trotzdem mehrfach vor →
    `occurrence`. Markdown im Span bleibt drin („2–3 **ganze** Chilis"). Menge nur in
    der Einkaufsliste → am ersten verwendenden Schritt mit `spanForm: "derived"`.
-   `unit: "Stück"` für Stückzahlen (auch Zehen, Eier).
+   `unit: "Stück"` für Stückzahlen (auch Zehen, Eier); ein `value` ohne `unit` lehnt das
+   Schema ab. Der Span wird roh in `step.text` gesucht (inkl. Markdown-Marker).
 8. **Zutaten (Rezept-Ebene).** Ein `Ingredient` pro Zutat; Sammel- und „A + B"-Posten
    aufteilen; „A oder B" bleibt **eine** Zutat. `name` = Posten ohne Mengen- und
    Klammer-/Kursivteil. `note` = Klammer- oder Kursivzusatz des Postens verbatim.
@@ -211,7 +212,7 @@ Konvention; wo zwei Konverter in AP3 abgewichen sind, steht jetzt eine feste Reg
 | B | B1 jede `##`-Sektion der Quelle (außer generierte) hat eine Section gleichen Titels · B2 Multiset aller Zahl+Einheit-Token der Quelle (ohne Einkaufsliste/Mengen-Check) = Multiset der verbatim-Felder · B3 jede Quellzeile ≥ 20 Zeichen ist verbatim im JSON | fail | AP1 |
 | C | Zitat-Treue aller Annotationen (L3); nicht-derived `action` ist Präfix von `text`; `title` in `heading`; exakte Spans eindeutig oder mit `occurrence`; abgeleitete `action` mengenfrei | fail | AP1 |
 | D | Slugs gültig und rezeptweit eindeutig; `ref`, `consumes`, `notes[].ref`, `todo[].ref` lösen auf; Report der derived-Felder und der Zutaten ohne Dosierung | fail | AP1 |
-| K | `derived` aktuell (`sourceHash`; fehlt der Block, rechnet `check` ihn im Speicher und meldet das als Hinweis); jeder Original-Posten der `## Einkaufsliste` (Teile an ` + ` getrennt) findet eine Zutat per Namenswort; Menge des Postens (inkl. `900 g – 1 kg`, `4–5 EL`, `½`) gegen `derived.quantities.total`; Gebinde (`buy`) zählt als passend; Zutaten nur im JSON als Info | fail bei Posten ohne Zutat oder veraltetem Block, Abweichungen als Report | AP2 |
+| K | Status des gespeicherten `derived`-Blocks (fehlt → Hinweis, veraltet → Fehler); Vergleich immer gegen eine frische Ableitung; jeder Original-Posten der `## Einkaufsliste` (Teile an ` + ` getrennt) findet eine Zutat per Namenswort; Menge des Postens (inkl. `900 g – 1 kg`, `4–5 EL`, `½`) gegen `derived.quantities.total`; Gebinde (`buy`) zählt als passend; Zutaten nur im JSON als Info | fail bei Posten ohne Zutat oder veraltetem Block, Abweichungen als Report | AP2 |
 | E–H, L | Schritt-/Zeitplan-Abdeckung, Hold-Konsistenz, Service-Intervalle, Mengen-Check | | AP4 |
 
 **Mutationstest (2026-10-05):** 11 absichtlich fehlerhafte Kopien von thit-kho
@@ -301,6 +302,7 @@ vorher.
 | 2026-10-05 | `action`: Nach der AP3-Streuung (4/9) kurz als „exakt erster Satz" festgelegt, auf User-Einwand zurückgenommen: zu hart, trifft nicht immer die Handlung. Jetzt Intentions-Regel (Anleitung 5): kürzester Satz-Präfix, mit dem man den Schritt ausführen kann; Check C prüft nur Satzgrenzen und gibt bei > 70 % eines annotierten Textes einen Hinweis. Streuung wird in Kauf genommen, Intention schlägt Determinismus. |
 | 2026-10-05 | `step.equipment` und `Ingredient.prep` werden nicht mehr erfasst (bleiben im Schema, Anleitung setzt sie nicht). `Ingredient.scale` nur für Ausnahmen. |
 | 2026-10-05 | Code-Review (10 Befunde) eingearbeitet: Einheiten-Regex mit Wortgrenze, Sentinel für „Einheit noch nicht gesetzt" (Stück + g wird jetzt als gemischt gemeldet statt summiert), `~` bei Zirka-Mengen in der Liste als `\~`, Diff paart Schritte über (Task, Label), `__pycache__` aus dem Index und `.gitignore`, `cli shopping` prüft den Hash, fehlender `derived`-Block ist kein Fehler mehr, Zutaten-Zuordnung mit Stoppwörtern und exaktem Namen zuerst, „20 Min." vor Großbuchstabe ist ein Satzende, Warengruppen in Laden-Laufreihenfolge. |
+| 2026-10-05 | `/simplify` (4 Reviews, ~50 Funde) eingearbeitet: ein Formatierer (`fmt.py`), `Stück` als kanonische Zähleinheit (kein Sentinel, `value` verlangt `unit`), zwei Normalisierungsschlüssel `ws_key` (L2) / `quote_key` (L3), Spans roh gezählt, `derived` enthält nur Daten (`display` statt Markdown-Zeile), eine Stelle für den Block-Status, `derive` verlangt Check D (Fehler statt Schweigen), Schema-Sektionen per `if/then` ohne Python-Nachfilter, Abkürzungs-Heuristik für Satzgrenzen gestrichen (Check C ist Präfix-tolerant), Stoppwortliste durch datengeleitete Gewichte ersetzt, `heading` verbatim inkl. `**`. |
 | 2026-10-05 | `derived.sourceHash` = SHA-256 (gekürzt) des JSON ohne `derived`; `cli check` verlangt einen aktuellen Block, sobald die Quelle eine Einkaufsliste hat. Mengen werden intern auf g/ml normiert; `Stück` wird in der Anzeige weggelassen. |
 
 ## Nächste Schritte

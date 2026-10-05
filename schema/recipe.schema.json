@@ -186,8 +186,8 @@
                   "required": [
                     "ingredient",
                     "name",
-                    "text",
                     "need",
+                    "display",
                     "checked"
                   ],
                   "properties": {
@@ -195,9 +195,6 @@
                       "$ref": "#/$defs/slug"
                     },
                     "name": {
-                      "type": "string"
-                    },
-                    "text": {
                       "type": "string"
                     },
                     "need": {
@@ -217,6 +214,13 @@
                     },
                     "pantry": {
                       "type": "boolean"
+                    },
+                    "display": {
+                      "type": "string",
+                      "description": "Menge als reiner Text für die Anzeige (Löffel-Regel), kein Markdown"
+                    },
+                    "note": {
+                      "type": "string"
                     }
                   }
                 }
@@ -351,6 +355,11 @@
             }
           }
         }
+      },
+      "dependentRequired": {
+        "value": [
+          "unit"
+        ]
       }
     },
     "ingredient": {
@@ -586,7 +595,7 @@
         },
         "heading": {
           "type": "string",
-          "description": "Überschriftzeile des Schritts verbatim (ohne Markdown-Marker), falls vorhanden"
+          "description": "Überschriftzeile des Schritts verbatim (inkl. Markdown-Marker), falls vorhanden"
         },
         "title": {
           "type": "string",
@@ -835,170 +844,241 @@
       "required": [
         "type"
       ],
-      "oneOf": [
+      "properties": {
+        "type": {
+          "enum": [
+            "markdown",
+            "shopping",
+            "tasks",
+            "learnings",
+            "todo"
+          ]
+        }
+      },
+      "allOf": [
         {
-          "additionalProperties": false,
-          "required": [
-            "type",
-            "title",
-            "markdown"
-          ],
-          "properties": {
-            "type": {
-              "const": "markdown"
-            },
-            "title": {
-              "type": "string"
-            },
-            "level": {
-              "enum": [
-                2,
-                3,
-                "bold"
-              ],
-              "default": 2
-            },
-            "markdown": {
-              "$ref": "#/$defs/markdown"
-            },
-            "tags": {
-              "type": "array",
-              "items": {
-                "type": "string",
-                "examples": [
-                  "kind",
-                  "schwangerschaft",
-                  "beschaffung",
-                  "quellen",
-                  "notizen",
-                  "teller-logik",
-                  "fehlerbild",
-                  "profi-tipps"
-                ]
+          "if": {
+            "properties": {
+              "type": {
+                "const": "markdown"
               }
             },
-            "collapsed": {
-              "type": "boolean"
-            }
-          }
-        },
-        {
-          "additionalProperties": false,
-          "required": [
-            "type",
-            "title"
-          ],
-          "description": "Platzhalter: hier rendert der Renderer derived.shopping. Kein Inhalt in der Quelle nötig.",
-          "properties": {
-            "type": {
-              "const": "shopping"
-            },
-            "title": {
-              "type": "string"
-            }
-          }
-        },
-        {
-          "additionalProperties": false,
-          "required": [
-            "type",
-            "title",
-            "tasks"
-          ],
-          "properties": {
-            "type": {
-              "const": "tasks"
-            },
-            "title": {
-              "type": "string"
-            },
-            "intro": {
-              "$ref": "#/$defs/markdown"
-            },
-            "tasks": {
-              "type": "array",
-              "minItems": 1,
-              "items": {
-                "$ref": "#/$defs/task"
-              }
-            }
-          }
-        },
-        {
-          "additionalProperties": false,
-          "required": [
-            "type",
-            "title",
-            "cooked",
-            "summary"
-          ],
-          "properties": {
-            "type": {
-              "const": "learnings"
-            },
-            "title": {
-              "type": "string"
-            },
-            "cooked": {
-              "oneOf": [
-                {
-                  "type": "string",
-                  "pattern": "^(0[1-9]|1[0-2])/20[0-9]{2}$"
-                },
-                {
-                  "type": "null"
-                }
-              ]
-            },
-            "summary": {
-              "$ref": "#/$defs/markdown",
-              "description": "Kurzfassung verbatim, beginnt mit **Gekocht MM/JJJJ.**"
-            },
-            "details": {
-              "$ref": "#/$defs/markdown",
-              "description": "Alles ab der ersten ###-Untersektion, verbatim"
-            },
-            "notes": {
-              "type": "array",
-              "items": {
-                "$ref": "#/$defs/note"
-              }
-            }
-          }
-        },
-        {
-          "additionalProperties": false,
-          "required": [
-            "type",
-            "title",
-            "items"
-          ],
-          "properties": {
-            "type": {
-              "const": "todo"
-            },
-            "title": {
-              "type": "string"
-            },
-            "items": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "additionalProperties": false,
-                "required": [
-                  "text",
-                  "checked"
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": [
+              "type",
+              "title",
+              "markdown"
+            ],
+            "properties": {
+              "type": {
+                "const": "markdown"
+              },
+              "title": {
+                "type": "string"
+              },
+              "level": {
+                "enum": [
+                  2,
+                  3,
+                  "bold"
                 ],
-                "properties": {
-                  "text": {
-                    "$ref": "#/$defs/markdown"
-                  },
-                  "checked": {
-                    "type": "boolean"
-                  },
-                  "ref": {
+                "default": 2
+              },
+              "markdown": {
+                "$ref": "#/$defs/markdown"
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "examples": [
+                    "kind",
+                    "schwangerschaft",
+                    "beschaffung",
+                    "quellen",
+                    "notizen",
+                    "teller-logik",
+                    "fehlerbild",
+                    "profi-tipps"
+                  ]
+                }
+              },
+              "collapsed": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "shopping"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": [
+              "type",
+              "title"
+            ],
+            "description": "Platzhalter: hier rendert der Renderer derived.shopping. Kein Inhalt in der Quelle nötig.",
+            "properties": {
+              "type": {
+                "const": "shopping"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "tasks"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": [
+              "type",
+              "title",
+              "tasks"
+            ],
+            "properties": {
+              "type": {
+                "const": "tasks"
+              },
+              "title": {
+                "type": "string"
+              },
+              "intro": {
+                "$ref": "#/$defs/markdown"
+              },
+              "tasks": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "$ref": "#/$defs/task"
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "learnings"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": [
+              "type",
+              "title",
+              "cooked",
+              "summary"
+            ],
+            "properties": {
+              "type": {
+                "const": "learnings"
+              },
+              "title": {
+                "type": "string"
+              },
+              "cooked": {
+                "oneOf": [
+                  {
                     "type": "string",
-                    "pattern": "^(step|task|product):[a-z0-9-]+$"
+                    "pattern": "^(0[1-9]|1[0-2])/20[0-9]{2}$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "summary": {
+                "$ref": "#/$defs/markdown",
+                "description": "Kurzfassung verbatim, beginnt mit **Gekocht MM/JJJJ.**"
+              },
+              "details": {
+                "$ref": "#/$defs/markdown",
+                "description": "Alles ab der ersten ###-Untersektion, verbatim"
+              },
+              "notes": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/note"
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "todo"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "additionalProperties": false,
+            "required": [
+              "type",
+              "title",
+              "items"
+            ],
+            "properties": {
+              "type": {
+                "const": "todo"
+              },
+              "title": {
+                "type": "string"
+              },
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "text",
+                    "checked"
+                  ],
+                  "properties": {
+                    "text": {
+                      "$ref": "#/$defs/markdown"
+                    },
+                    "checked": {
+                      "type": "boolean"
+                    },
+                    "ref": {
+                      "type": "string",
+                      "pattern": "^(step|task|product):[a-z0-9-]+$"
+                    }
                   }
                 }
               }
