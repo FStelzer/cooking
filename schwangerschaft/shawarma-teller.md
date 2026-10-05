@@ -1,6 +1,6 @@
 # Hähnchen-Shawarma-Teller, libanesisch — mit Toum, Tabbouleh und Blumenkohl harra (Schwangerschafts-Version, 4 Portionen)
 
-*\~1,5 Std. aktiv am Kochtag + Marinieren über Nacht + \~30 Min. Toum am Vortag. Equipment: schwere Pfanne (Guss/Edelstahl), Stabmixer + hohes schmales Gefäß (Toum), Backblech, Fleischthermometer.*
+*Aktive Zeit \~2 Std., gesamt über Nacht + \~2 Std. \~1,5 Std. aktiv am Kochtag + Marinieren über Nacht + \~30 Min. Toum am Vortag. Equipment: schwere Pfanne (Guss/Edelstahl), Stabmixer + hohes schmales Gefäß (Toum), Backblech, Fleischthermometer.*
 
 > **Kopie von [`gerichte/shawarma-libanesisch.md`](/gerichte/shawarma-libanesisch.md)**, angepasst
 > nach [Leitfaden](/schwangerschaft/leitfaden.md): **Teller statt Wrap** (kein Markook, optional
@@ -25,7 +25,7 @@ damit wird die letzte halbe Stunde deutlich entspannter als im Original.
 - **Gute Tahina ist der größte Qualitätshebel des ganzen libanesischen Blocks.** Hier ist die Menge klein (Sauce ist nur ein Hauch), aber bittere Tahina schmeckt man trotzdem.
 - **REWE Center:** Hähnchenschenkel zuverlässig — **mit Knochen kaufen und selbst entbeinen** ist günstiger, die Knochen wandern in den TK-Vorrat für die nächste Brühe. Blumenkohl, Joghurt, Zitronen (viel — siehe Mengen-Check), Knoblauch, Kräuter, neutrales Öl.
 - **Vollkorn-Fladen (optional):** REWE-Brotregal (Vollkorn-Pita/-Fladen), pro Person ein halbes. Wer ganz ohne Brot auskommt: Tabbouleh-Bulgur ist dann der KH-Träger — reicht knapp, siehe GDM-Sektion.
-- **Shatta:** kaufen, falls der Laden sie führt; Selbstansatz siehe Box in Schritt 3. Ist eine roh fermentierte Chilipaste — Salz- und Säuregehalt machen sie unkritisch, sie kommt aber ohnehin nur auf die Erwachsenenteller.
+- **Shatta:** kaufen, falls der Laden sie führt; Selbstansatz siehe Box in „Shatta“. Ist eine roh fermentierte Chilipaste — Salz- und Säuregehalt machen sie unkritisch, sie kommt aber ohnehin nur auf die Erwachsenenteller.
 
 ## Einkaufsliste
 
@@ -33,59 +33,78 @@ damit wird die letzte halbe Stunde deutlich entspannter als im Original.
 
 > **Laden noch nicht identifiziert** — für jede Position gilt der genannte Fallback.
 
-- [ ] 7-Gewürz/Baharat, 1 kleine Dose *(Fallback: selbst mischen — je ½ TL Piment, Zimt, gem. Koriander, Kumin, Pfeffer, ¼ TL Nelke + Muskat)*
+- [ ] 7-Gewürz/Baharat *(1 kleine Dose; Fallback: selbst mischen — je ½ TL Piment, Zimt, gem. Koriander, Kumin, Pfeffer, ¼ TL Nelke + Muskat)*
 - [ ] Feiner Bulgur Nr. 1, kleinste Packung *(Fallback: REWE-Bulgur fein; grober Bulgur geht NICHT fürs Tabbouleh)*
-- [ ] Salzige Essiggurken (Salz-Dill, NICHT süß-sauer), 1 großes Glas *(Fallback: polnische/russische Salzgurken, REWE Center)*
-- [ ] Rosa eingelegte Rüben (*kabees lift*), 1 Glas — optional *(Fallback: weglassen)*
-- [ ] Tahina, libanesische/palästinensische Marke, großes Glas *(Fallback: REWE-Tahin — funktioniert, oft aber bitterer; sparsamer dosieren)*
-- [ ] Shatta, 1 Glas — falls vorhanden *(Fallback: selbst ansetzen, siehe Box im Rezept → dann 150 g rote Chilis frisch dazukaufen)*
-- [ ] Aleppo-Pfeffer/Pul biber, 1 Packung *(Fallback: Pul biber im REWE-Türkei-Regal)*
+- [ ] Salzige Essiggurken *(1 großes Glas; Salz-Dill, NICHT süß-sauer; Fallback: polnische/russische Salzgurken, REWE Center)*
+- [ ] Optional: 1 Glas rosa eingelegte Rüben *(kabees lift; Fallback: weglassen)*
+- [ ] Tahina, libanesische/palästinensische Marke *(großes Glas; Fallback: REWE-Tahin — funktioniert, oft aber bitterer; sparsamer dosieren)*
+- [ ] 1 Glas Shatta, falls vorhanden *(Fallback: selbst ansetzen, siehe „Shatta“ → dann 150 g rote Chilis frisch dazukaufen)*
+- [ ] 1 Packung Aleppo-Pfeffer/Pul biber *(Fallback: Pul biber im REWE-Türkei-Regal)*
 
 ### REWE Center
 
-**Kühltheke / Fleisch:**
-- [ ] 1,4–1,5 kg Hähnchenschenkel mit Knochen (≈ 8 Stück → ergibt \~1 kg entbeint)
-- [ ] 500 g griechischer Joghurt (10 %, pasteurisiert — Standardware; gebraucht: \~150 g)
+**Fleisch & Fisch:**
+- [ ] 1,4–1,5 kg Hähnchenschenkel mit Knochen *(≈ 8 Stück → ergibt \~1 kg entbeint)*
 
-**Obst / Gemüse:**
-- [ ] 7 Zitronen (unbehandelt; Gesamtverbrauch siehe Mengen-Check)
-- [ ] 3 Knollen Knoblauch (Toum allein frisst \~1 Knolle)
-- [ ] 1 großer Blumenkohl (\~1 kg, ergibt \~800 g Röschen)
-- [ ] 3 Bund glatte Petersilie (fürs Tabbouleh — wirklich 3)
+**Milchprodukte & Eier:**
+- [ ] 500 g griechischer Joghurt *(10 %, pasteurisiert — Standardware; gebraucht: \~150 g)*
+
+**Obst & Gemüse:**
+- [ ] 7 Zitronen *(unbehandelt; Gesamtverbrauch siehe Mengen-Check)*
+- [ ] 3 Knollen Knoblauch *(Toum allein frisst \~1 Knolle)*
+- [ ] 1 großer Blumenkohl *(\~1 kg, ergibt \~800 g Röschen)*
+- [ ] 3 Bund glatte Petersilie *(fürs Tabbouleh — wirklich 3)*
 - [ ] 1 Bund Minze
-- [ ] 1 Bund Koriander (nur für den Blumenkohl harra)
+- [ ] 1 Bund Koriander *(nur für den Blumenkohl harra)*
 - [ ] 1 Bund Frühlingszwiebeln
 - [ ] 3 feste Tomaten
-- [ ] 150 g frische rote Chilis *(nur falls Shatta selbst angesetzt wird)*
+- [ ] Optional: 150 g frische rote Chilis *(nur falls Shatta selbst angesetzt wird)*
 
 **Brot:**
-- [ ] 2 Vollkorn-Pita oder kleine Vollkorn-Fladen (optional, je ½ pro Person)
+- [ ] Optional: 2 Vollkorn-Fladen *(Vollkorn-Pita oder kleine Vollkorn-Fladen, je ½ pro Person)*
 
-**Trockenwaren / Gewürze:**
-- [ ] 750 ml neutrales Öl (Sonnenblume/Raps — Toum + Marinade + Braten)
-- [ ] Olivenöl (Vorrat prüfen: \~150 ml gebraucht)
-- [ ] Weißweinessig oder Apfelessig (Vorrat prüfen: 2–3 EL)
-- [ ] Edelsüßes Paprikapulver, Kumin, gem. Koriander, Koriandersaat, Kurkuma, Cayenne (Vorrat prüfen)
+**Trockenwaren:**
+- [ ] 750 ml neutrales Öl *(Sonnenblume/Raps — Toum, Marinade, Braten)*
+
+### Vorrat prüfen
+
+- [ ] Olivenöl *(\~150 ml gebraucht)*
+- [ ] Weißweinessig oder Apfelessig *(2–3 EL)*
+- [ ] Edelsüßes Paprikapulver
+- [ ] Kumin
+- [ ] Koriandersaat, gemahlen
+- [ ] Kurkuma
+- [ ] Cayenne
+- [ ] Salz
+- [ ] Schwarzer Pfeffer
 
 ## Zubereitung
 
-### 1. Hähnchen entbeinen & marinieren (Vortag, \~30 Min.)
+**Hähnchen (Vortag, hält bis 24 Std., Kühlschrank):**
 
-Schenkel entbeinen und enthäuten (Knochen + Haut einfrieren → Brühen-Vorrat). Fleisch flach lassen, nicht schneiden — geschnitten wird nach dem Marinieren.
+**1. Entbeinen (ca. 20 Min.)**
+*jederzeit*
+1,4–1,5 kg Hähnchenschenkel entbeinen und enthäuten (Knochen + Haut einfrieren → Brühen-Vorrat). Fleisch flach lassen, nicht schneiden — geschnitten wird nach dem Marinieren.
 
+**2. Marinade (10 Min.)**
+*jederzeit*
 **Marinade** verrühren:
 - 150 g griechischer Joghurt
 - 3 EL Zitronensaft + 1 EL Weißweinessig
 - 4 Knoblauchzehen, fein gerieben
 - 2 EL Baharat/7-Gewürz
-- 1 TL edelsüßes Paprikapulver, 1 TL Kumin, 1 TL gem. Koriander
+- 1 TL edelsüßes Paprikapulver, 1 TL Kumin, 1 TL gem. Koriandersaat
 - ¼ TL Cayenne — **nicht mehr**, die Schärfe kommt aus der Shatta am Teller
 - 2 EL neutrales Öl, 1,5 TL Salz, viel schwarzer Pfeffer
 
+**3. Marinieren (über Nacht, passiv)**
+*nach Entbeinen, Marinade*
 Fleisch gründlich darin wenden, abgedeckt **über Nacht** (mind. 8, gern 24 Std.) in den Kühlschrank.
 
-### 2. Toum (Vortag, 15 Min. — hält 3–4 Wochen)
+**Toum (Vortag, hält 3–4 Wochen, Kühlschrank):**
 
+**4. Toum (15 Min.)**
+*jederzeit*
 Moderate Menge: **1 Knolle**, nicht mehr. Toum ist eine reine Knoblauch-Öl-Zitronen-Emulsion **ohne Ei** — in der Schwangerschaft unkritisch.
 
 - 1 Knolle Knoblauch, geschält, Keime entfernt (\~50–60 g Zehen)
@@ -98,77 +117,107 @@ Moderate Menge: **1 Knolle**, nicht mehr. Toum ist eine reine Knoblauch-Öl-Zitr
 
 **Schärfe-Optionen:** Toum wird über Nacht im Kühlschrank runder und milder — auch deshalb am Vortag machen. Wer es von vornherein sanfter will: Zehen 60 Sek. in kochendes Wasser, eiskalt abschrecken, **gründlich trocken tupfen** (Wasser stört die Emulsion), dann wie beschrieben.
 
-### 3. Shatta — kaufen oder ansetzen
+**Shatta-Ansatz (2–3 Tage vorher, hält Wochen, Kühlschrank):**
 
-**Erste Wahl: kaufen**, falls der orientalische Laden sie führt. Sonst:
+**5. Shatta (10 Min.)**
+*jederzeit*
+Kaufen oder ansetzen — **erste Wahl: kaufen**, falls der orientalische Laden sie führt. Sonst:
 
 > **Shatta-Selbstansatz (10 Min. + 2–3 Tage Reifung):** 150 g rote Chilis entstielen, grob hacken, mit 1 TL Salz im schmalen Gefäß per Stabmixer zur groben Paste pulsen (nicht fein pürieren). 1 EL Essig + 1 EL Zitronensaft unterrühren. In ein sauberes Glas, Oberfläche mit 1 EL Olivenöl bedecken, 2–3 Tage bei Raumtemperatur anziehen lassen, dann kühlen. Hält Wochen.
 
-### 4. Tahinsauce (Kochtag, 5 Min.)
+**Tahinsauce (Kochtag):**
 
+**6. Tahinsauce (5 Min.)**
+*jederzeit*
 3 EL Tahina mit 3 EL Zitronensaft verrühren — sie zieht erst fest an (normal), dann **esslöffelweise kaltes Wasser** einrühren (4–6 EL), bis sie dünn vom Löffel läuft: Konsistenz Sahne, nicht Creme. 1 kleine Knoblauchzehe gerieben, Salz. Sie ist hier nur ein Hauch auf dem Teller, keine Hauptsauce.
 
-### 5. Tabbouleh (Kochtag, 45 Min. — komplett kalt vorbereitbar)
+**Tabbouleh (Kochtag, 45 Min. — komplett kalt vorbereitbar):**
 
 Verhältnis **4 Teile Kräuter : 1 Teil Bulgur** — der Bulgur ist Textur, nicht Basis. **Kein Koriander.**
 
-- 50 g feiner Bulgur (Nr. 1) kalt abspülen. **Nicht kochen:** mit dem Saft von 1 Zitrone (\~4 EL) und den austretenden Tomatenwürfel-Säften 30 Min. quellen lassen.
-- 3 Bund glatte Petersilie: Blätter zupfen, **trocken schleudern/tupfen** (nasses Kraut = matschiges Tabbouleh), fein schneiden — schneiden, nicht hacken, sonst wird es Brei. Ergibt \~150 g. Von der Minze die Blätter von ½ Bund ebenso fein schneiden.
-- 3 Tomaten entkernen, fein würfeln. 2 Frühlingszwiebeln in feine Ringe (Kinder-Hinweis: sparsam, Rest als Topping für die Erwachsenen).
-- Alles mischen, 4 EL Olivenöl, Salz. Abschmecken: es soll deutlich zitronig sein. Erst kurz vor dem Essen final salzen, sonst zieht es Wasser.
+**7. Bulgur quellen (30 Min., passiv)**
+*jederzeit*
+50 g feiner Bulgur (Nr. 1) kalt abspülen. **Nicht kochen:** mit dem Saft von 1 Zitrone (\~4 EL) und den austretenden Tomatenwürfel-Säften 30 Min. quellen lassen.
 
-### 6. Blumenkohl harra (Kochtag, Ofen \~35 Min., parallel)
+**8. Kräuter schneiden (15 Min.)**
+*jederzeit*
+3 Bund glatte Petersilie: Blätter zupfen, **trocken schleudern/tupfen** (nasses Kraut = matschiges Tabbouleh), fein schneiden — schneiden, nicht hacken, sonst wird es Brei. Ergibt \~150 g. Von der Minze die Blätter von ½ Bund ebenso fein schneiden.
+
+**9. Tomaten & Zwiebeln (10 Min.)**
+*jederzeit*
+3 Tomaten entkernen, fein würfeln. 2 Frühlingszwiebeln in feine Ringe (Kinder-Hinweis: sparsam, Rest als Topping für die Erwachsenen).
+
+**10. Tabbouleh mischen (5 Min.)**
+*nach Bulgur quellen, Kräuter schneiden, Tomaten & Zwiebeln*
+Alles mischen, 4 EL Olivenöl, Salz. Abschmecken: es soll deutlich zitronig sein. Erst kurz vor dem Essen final salzen, sonst zieht es Wasser.
+
+**Blumenkohl harra (Kochtag, Ofen \~35 Min., parallel):**
 
 Dieselbe Idee wie Batata harra — geröstet, dann in Knoblauch-Koriander-Öl geschwenkt —, nur mit Blumenkohl statt Kartoffel: fast keine KH, gleiche Röstaromen, und er braucht weniger Ofenzeit.
 
-- 1 Blumenkohl (\~1 kg) in walnussgroße Röschen teilen (\~800 g), Strunk in Scheiben mitrösten. **Trocken** (nicht waschen und nass aufs Blech — dampft sonst). Mit 2 EL Olivenöl und ½ TL Salz auf dem Blech verteilen, nicht stapeln, 220 °C Ober-/Unterhitze **25–30 Min.**, nach 15 Min. wenden, bis die Kanten tief goldbraun bis dunkel sind — das Blumenkohl-Röstaroma sitzt in den dunklen Stellen.
-- **Dressing in ZWEI Pfannen** (Paneer-Learning — Kinder-Öl ganz ohne Chili):
-  - *Pfanne 1 (Erwachsene):* 3 EL Olivenöl sanft erwärmen, 3 Zehen Knoblauch fein gehackt + 1 TL gemahlene Koriandersaat + ½ TL Kurkuma + 1–2 TL Aleppo-Pfeffer/Pul biber 1–2 Min. ziehen lassen (Knoblauch nicht bräunen).
-  - *Pfanne 2 (Kind, klein):* 1 EL Olivenöl, 1 Zehe Knoblauch, ½ TL Koriandersaat — **kein Chili**.
-- Heißen Blumenkohl aufteilen, jeweils im Öl schwenken, gehackten frischen Koriander (¾ Bund) darüber, Spritzer Zitrone (insgesamt 1–2 EL), Salz.
+**11. Blumenkohl vorbereiten (10 Min.)**
+*jederzeit*
+1 Blumenkohl (\~1 kg) in walnussgroße Röschen teilen (\~800 g), Strunk in Scheiben mitrösten. **Trocken** (nicht waschen und nass aufs Blech — dampft sonst).
 
-### 7. Hähnchen braten (Pfanne)
+**12. Blumenkohl rösten (25–30 Min., passiv)**
+*nach Blumenkohl vorbereiten · Ofen 220 °C*
+Mit 2 EL Olivenöl und ½ TL Salz auf dem Blech verteilen, nicht stapeln, 220 °C Ober-/Unterhitze **25–30 Min.**, nach 15 Min. wenden, bis die Kanten tief goldbraun bis dunkel sind — das Blumenkohl-Röstaroma sitzt in den dunklen Stellen.
 
-1. Mariniertes Fleisch in fingerbreite Streifen schneiden. Grobe Marinade abstreifen (was dranbleibt, bleibt dran — nur keine Pfützen).
-2. Schwere Pfanne **sehr heiß** werden lassen, 1 EL neutrales Öl (vor jeder weiteren Portion bei Bedarf nachölen — insgesamt \~3 EL).
-3. **In 3–4 Portionen braten, Pfanne nie überladen** — zu viel Fleisch auf einmal, und es kocht im Joghurt statt zu rösten. Pro Portion: einlegen, 2–3 Min. **nicht bewegen** (Kruste!), dann wenden und 2–3 Min. fertig braten, bis die Kanten dunkel karamellisiert sind. Zwischen den Portionen Pfanne wieder richtig heiß werden lassen.
-4. **Gar-Check:** Fleischthermometer in das dickste Stück der Charge: **≥ 75 °C**, Schnittfläche durchgehend weiß, kein Rosa am ehemaligen Knochenansatz. Fingerbreite Schenkelstreifen sind nach 5–6 Min. bei voller Hitze normalerweise sicher durch — trotzdem stichprobenartig messen, Schenkelfleisch ist ungleich dick.
-5. Fertige Portionen im 80-°C-Ofen warm halten. Vor dem Anrichten kurz durchmischen, damit sich Säfte und Röstkanten verteilen.
+**13. Würzöle (5 Min.)**
+*jederzeit · 2 Pfannen*
+**Dressing in ZWEI Pfannen** (Paneer-Learning — Kinder-Öl ganz ohne Chili):
+- *Pfanne 1 (Erwachsene):* 3 EL Olivenöl sanft erwärmen, 3 Zehen Knoblauch fein gehackt + 1 TL gemahlene Koriandersaat + ½ TL Kurkuma + 1–2 TL Aleppo-Pfeffer/Pul biber 1–2 Min. ziehen lassen (Knoblauch nicht bräunen).
+- *Pfanne 2 (Kind, klein):* 1 EL Olivenöl, 1 Zehe Knoblauch, ½ TL Koriandersaat — **kein Chili**.
 
-### 8. Anrichten als Teller
+**14. Blumenkohl schwenken (5 Min.)**
+*nach Blumenkohl rösten, Würzöle*
+Heißen Blumenkohl aufteilen, jeweils im Öl schwenken, gehackten frischen Koriander (¾ Bund) darüber, Spritzer Zitrone (insgesamt 1–2 EL), Salz.
 
+**Hähnchen braten (Kochtag, à la minute):**
+
+**15. Fleisch schneiden (10 Min.)**
+*nach Marinieren*
+Mariniertes Fleisch in fingerbreite Streifen schneiden. Grobe Marinade abstreifen (was dranbleibt, bleibt dran — nur keine Pfützen).
+
+**16. Portionen braten (ca. 20 Min.)**
+*Herd · fertig bei ≥ 75 °C Kern*
+1. Schwere Pfanne **sehr heiß** werden lassen, 1 EL neutrales Öl (vor jeder weiteren Portion bei Bedarf nachölen — insgesamt \~3 EL).
+2. **In 3–4 Portionen braten, Pfanne nie überladen** — zu viel Fleisch auf einmal, und es kocht im Joghurt statt zu rösten. Pro Portion: einlegen, 2–3 Min. **nicht bewegen** (Kruste!), dann wenden und 2–3 Min. fertig braten, bis die Kanten dunkel karamellisiert sind. Zwischen den Portionen Pfanne wieder richtig heiß werden lassen.
+3. **Gar-Check:** Fleischthermometer in das dickste Stück der Charge: **≥ 75 °C**, Schnittfläche durchgehend weiß, kein Rosa am ehemaligen Knochenansatz. Fingerbreite Schenkelstreifen sind nach 5–6 Min. bei voller Hitze normalerweise sicher durch — trotzdem stichprobenartig messen, Schenkelfleisch ist ungleich dick.
+4. Fertige Portionen im 80-°C-Ofen warm halten. Vor dem Anrichten kurz durchmischen, damit sich Säfte und Röstkanten verteilen.
+
+**17. Anrichten als Teller (ca. 10 Min.)**
+*nach Portionen braten, Toum, Tahinsauce, Tabbouleh mischen, Blumenkohl schwenken*
 1. Optional 2 Vollkorn-Fladen 3 Min. im Ofen aufwärmen, halbieren.
-2. Pro Teller: Hähnchen als Haufen in die Mitte, **1 TL Toum** dünn darüber gestrichen oder daneben, 1 EL Tahinsauce als Streifen, Gurken (längs geviertelt, 2–3 Stücke) und optional rosa Rüben dazu.
+2. Pro Teller: Hähnchen als Haufen in die Mitte, **1 TL Toum** dünn darüber gestrichen oder daneben, 1 EL Tahinsauce als Streifen, Essiggurken (längs geviertelt, 2–3 Stücke) und optional rosa Rüben dazu.
 3. Tabbouleh und Blumenkohl harra als zwei Haufen daneben, halbes Fladen am Rand.
 4. Shatta und restliches Toum am Tisch — für die Erwachsenen.
 
 ## Zeitplan
 
-**Vortag (abends, \~45 Min. aktiv):**
-- Schenkel entbeinen, Marinade anrühren, Fleisch einlegen → Kühlschrank
-- Toum machen → Kühlschrank (wird über Nacht milder)
-- Falls Shatta selbst: eigentlich schon 2–3 Tage vorher ansetzen — sonst jetzt, geht ab Tag 1
+- Vorabend: Entbeinen, Marinade, Marinieren (Schenkel entbeinen, Marinade anrühren, Fleisch einlegen → Kühlschrank, \~45 Min. aktiv) · Toum (→ Kühlschrank, wird über Nacht milder) · Shatta: falls selbst, eigentlich schon 2–3 Tage vorher ansetzen — sonst jetzt, geht ab Tag 1
 
-**Kochtag:**
-- **–2:00** Petersilie/Minze waschen und trocknen lassen, Bulgur mit Zitrone/Tomatenwasser quellen
-- **–1:00** Tabbouleh fertig schneiden und mischen (Salz erst am Ende), Tahinsauce anrühren, Gurken schneiden, Fleisch aus dem Kühlschrank (Raumtemperatur brät besser)
-- **–0:50** Ofen auf 220 °C, Blumenkohl vorbereiten und rein
-- **–0:40** Kinder-Öl und Erwachsenen-Öl für den Blumenkohl ansetzen
-- **–0:30** Fleisch in 3–4 Portionen braten, Thermometer, im 80-°C-Ofen sammeln
-- **–0:10** Blumenkohl in zwei Pfannen schwenken, Fladen in den Ofen
-- **0:00** Anrichten — Teller, Shatta und Toum am Tisch
+| Zeit | Schritt |
+|---|---|
+| T−2:00 | Petersilie/Minze waschen und trocknen lassen, Bulgur mit Zitrone/Tomatenwasser quellen |
+| T−1:00 | Tabbouleh fertig schneiden und mischen (Salz erst am Ende), Tahinsauce anrühren, Gurken schneiden, Fleisch aus dem Kühlschrank (Raumtemperatur brät besser) |
+| T−0:50 | Ofen auf 220 °C, Blumenkohl vorbereiten und rein |
+| T−0:40 | Kinder-Öl und Erwachsenen-Öl für den Blumenkohl ansetzen |
+| T−0:30 | Fleisch in 3–4 Portionen braten, Thermometer, im 80-°C-Ofen sammeln |
+| T−0:10 | Blumenkohl in zwei Pfannen schwenken, Fladen in den Ofen |
+| T−0 | Anrichten — Teller, Shatta und Toum am Tisch |
 
 ## Schwangerschaft & GDM
 
 - **Warum Teller statt Wrap:** Ein Markook-Wrap ist \~40–50 g Weißmehl pro Person — der einzige große KH-Posten des Originals, und mit hohem GI. Der Teller ersetzt ihn durch ein halbes Vollkorn-Fladen (\~15 g KH, niedrigerer GI) neben Protein und Fett; der Bulgur im Tabbouleh (50 g auf 4 Portionen, Vollkorn) liefert nochmal \~9 g pro Person. Zusammen \~25 g KH pro Teller plus Gemüse — leitlinienkonform klein, aber nicht null.
 - **Warum Blumenkohl statt Kartoffel:** 200 g Ofenkartoffel sind \~35 g schnelle KH; Blumenkohl liefert die Röst- und Öl-Aromen ohne die Spitze. Wer die Kartoffel vermisst: 2–3 kleine Kartoffelwürfel pro Teller unter den Blumenkohl mischen, nicht mehr.
-- **Durchgegart:** Hähnchen ≥ 75 °C (Schritt 7). Joghurt in der Marinade ist pasteurisiert. Toum ohne Ei, Tahinsauce ohne Ei. Gurken und Rüben sind essig- bzw. salzkonserviert — unkritisch.
+- **Durchgegart:** Hähnchen ≥ 75 °C (siehe „Portionen braten“). Joghurt in der Marinade ist pasteurisiert. Toum ohne Ei, Tahinsauce ohne Ei. Gurken und Rüben sind essig- bzw. salzkonserviert — unkritisch.
 - **Nach dem Essen:** Spaziergang; Toum-Reste sind der beste Grund, am nächsten Tag Rohkost zu essen.
 
 ## Kinder-Anpassung
 
 - **Marinade ist mild by design** (¼ TL Cayenne auf 1 kg ist Aroma, keine Schärfe) — Schärfe kommt ausschließlich über die Shatta am Teller. Kinder-Teller: Toum nur hauchdünn (roher Knoblauch!) oder stattdessen ein Klecks purer Joghurt, Hähnchen, Gurke, Fladen-Viertel.
-- **Blumenkohl harra: zwei Pfannen, konsequent** (Schritt 6). Die Kinderportion bekommt nur Knoblauch-Koriander-Öl.
+- **Blumenkohl harra: zwei Pfannen, konsequent** (siehe „Würzöle“). Die Kinderportion bekommt nur Knoblauch-Koriander-Öl.
 - **Tabbouleh:** Frühlingszwiebel sparsam in die Basis, Rest als Topping für die Erwachsenen. Sauer + Kräuter kann beim Kind gut ankommen, ist aber kein sicherer Treffer — Gurken, Brot und mildes Hähnchen sind es.
 
 ## Notizen

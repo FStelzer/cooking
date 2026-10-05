@@ -152,5 +152,12 @@
   "group": "schwangerschaft",
   "wip": false,
   "cooked": false
+ },
+ {
+  "path": "../schwangerschaft/shawarma-teller.json",
+  "title": "Hähnchen-Shawarma-Teller, libanesisch — mit Toum, Tabbouleh und Blumenkohl harra (Schwangerschafts-Version, 4 Portionen)",
+  "group": "schwangerschaft",
+  "wip": false,
+  "cooked": false
  }
 ]

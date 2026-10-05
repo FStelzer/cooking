@@ -1,0 +1,2269 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "schwangerschaft/shawarma-teller",
+  "kind": "dish",
+  "title": "Hähnchen-Shawarma-Teller, libanesisch — mit Toum, Tabbouleh und Blumenkohl harra (Schwangerschafts-Version, 4 Portionen)",
+  "status": "done",
+  "yields": {
+    "text": "Schwangerschafts-Version, 4 Portionen"
+  },
+  "intro": "*Aktive Zeit \\~2 Std., gesamt über Nacht + \\~2 Std. \\~1,5 Std. aktiv am Kochtag + Marinieren über Nacht + \\~30 Min. Toum am Vortag. Equipment: schwere Pfanne (Guss/Edelstahl), Stabmixer + hohes schmales Gefäß (Toum), Backblech, Fleischthermometer.*\n\n> **Kopie von [`gerichte/shawarma-libanesisch.md`](/gerichte/shawarma-libanesisch.md)**, angepasst\n> nach [Leitfaden](/schwangerschaft/leitfaden.md): **Teller statt Wrap** (kein Markook, optional\n> ein halbes Vollkorn-Fladen), **Blumenkohl harra statt Batata harra** (Kartoffel ist der\n> GI-Ausreißer des Originals und dort ohnehin Streichkandidat), Hähnchen mit Thermometer auf\n> ≥ 75 °C. Toum ist eine Knoblauch-Öl-Emulsion ohne Ei und bleibt; Marinade, Tahinsauce und\n> Tabbouleh sind unverändert. Nur Garmethode A (Pfanne) — die Kastenform-Variante steht im Original.\n\nBeiruter Straßen-Shawarma ohne das Brot drumherum: mariniertes Hähnchen mit dunkel karamellisierten\nKanten, dünn mit Toum, ein Hauch Tahinsauce, salzige Essiggurken, rosa Rüben — auf dem Teller\nneben Tabbouleh und geröstetem Blumenkohl mit Knoblauch-Koriander-Öl. Das Wrap-Pressen entfällt,\ndamit wird die letzte halbe Stunde deutlich entspannter als im Original.\n\n> **Kombinierbarkeit:** Bewusst ein **eigener Abend**, getrennt vom Mezze-Teller\n> (`schwangerschaft/mezze-teller.md`). Tabbouleh, Blumenkohl harra und Toum gehören **hierher**.\n> Großes libanesisches Menü: Mezze-Dips als Vorspiel, dieser Teller als Hauptgang, dann dort die\n> Kafta weglassen.",
+  "times": {
+    "text": "Aktive Zeit ~2 Std., gesamt über Nacht + ~2 Std.",
+    "active": {
+      "typical": "PT2H",
+      "source": "2 Std."
+    },
+    "total": {
+      "min": "PT8H",
+      "max": "PT14H",
+      "source": "über Nacht"
+    }
+  },
+  "equipment": [
+    "schwere Pfanne (Guss/Edelstahl)",
+    "Stabmixer + hohes schmales Gefäß (Toum)",
+    "Backblech",
+    "Fleischthermometer"
+  ],
+  "ingredients": [
+    {
+      "id": "7-gewuerz",
+      "name": "7-Gewürz/Baharat",
+      "store": "Türkischer/arabischer Laden",
+      "note": "1 kleine Dose; Fallback: selbst mischen — je ½ TL Piment, Zimt, gem. Koriander, Kumin, Pfeffer, ¼ TL Nelke + Muskat"
+    },
+    {
+      "id": "bulgur",
+      "name": "Feiner Bulgur Nr. 1, kleinste Packung",
+      "store": "Türkischer/arabischer Laden",
+      "note": "Fallback: REWE-Bulgur fein; grober Bulgur geht NICHT fürs Tabbouleh"
+    },
+    {
+      "id": "essiggurken",
+      "name": "Salzige Essiggurken",
+      "store": "Türkischer/arabischer Laden",
+      "note": "1 großes Glas; Salz-Dill, NICHT süß-sauer; Fallback: polnische/russische Salzgurken, REWE Center"
+    },
+    {
+      "id": "rueben",
+      "name": "rosa eingelegte Rüben",
+      "store": "Türkischer/arabischer Laden",
+      "buy": {
+        "text": "1 Glas"
+      },
+      "optional": true,
+      "note": "kabees lift; Fallback: weglassen"
+    },
+    {
+      "id": "tahina",
+      "name": "Tahina, libanesische/palästinensische Marke",
+      "store": "Türkischer/arabischer Laden",
+      "note": "großes Glas; Fallback: REWE-Tahin — funktioniert, oft aber bitterer; sparsamer dosieren"
+    },
+    {
+      "id": "shatta",
+      "name": "Shatta, falls vorhanden",
+      "store": "Türkischer/arabischer Laden",
+      "buy": {
+        "text": "1 Glas"
+      },
+      "note": "Fallback: selbst ansetzen, siehe „Shatta“ → dann 150 g rote Chilis frisch dazukaufen"
+    },
+    {
+      "id": "aleppo-pfeffer",
+      "name": "Aleppo-Pfeffer/Pul biber",
+      "store": "Türkischer/arabischer Laden",
+      "buy": {
+        "text": "1 Packung"
+      },
+      "note": "Fallback: Pul biber im REWE-Türkei-Regal"
+    },
+    {
+      "id": "haehnchenschenkel",
+      "name": "Hähnchenschenkel mit Knochen",
+      "store": "REWE Center",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "1,4–1,5 kg"
+      },
+      "note": "≈ 8 Stück → ergibt \\~1 kg entbeint"
+    },
+    {
+      "id": "joghurt",
+      "name": "griechischer Joghurt",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "500 g"
+      },
+      "note": "10 %, pasteurisiert — Standardware; gebraucht: \\~150 g"
+    },
+    {
+      "id": "zitronen",
+      "name": "Zitronen",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "7"
+      },
+      "note": "unbehandelt; Gesamtverbrauch siehe Mengen-Check"
+    },
+    {
+      "id": "knoblauch",
+      "name": "Knoblauch",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3 Knollen"
+      },
+      "note": "Toum allein frisst \\~1 Knolle"
+    },
+    {
+      "id": "blumenkohl",
+      "name": "großer Blumenkohl",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "\\~1 kg, ergibt \\~800 g Röschen"
+    },
+    {
+      "id": "petersilie",
+      "name": "glatte Petersilie",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3 Bund"
+      },
+      "note": "fürs Tabbouleh — wirklich 3"
+    },
+    {
+      "id": "minze",
+      "name": "Minze",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      }
+    },
+    {
+      "id": "koriander",
+      "name": "Koriander",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      },
+      "note": "nur für den Blumenkohl harra"
+    },
+    {
+      "id": "fruehlingszwiebeln",
+      "name": "Frühlingszwiebeln",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      }
+    },
+    {
+      "id": "tomaten",
+      "name": "feste Tomaten",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3"
+      }
+    },
+    {
+      "id": "chilis",
+      "name": "frische rote Chilis",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "150 g"
+      },
+      "optional": true,
+      "note": "nur falls Shatta selbst angesetzt wird"
+    },
+    {
+      "id": "vollkorn-fladen",
+      "name": "Vollkorn-Fladen",
+      "store": "REWE Center",
+      "group": "Brot",
+      "buy": {
+        "text": "2"
+      },
+      "optional": true,
+      "note": "Vollkorn-Pita oder kleine Vollkorn-Fladen, je ½ pro Person"
+    },
+    {
+      "id": "oel",
+      "name": "neutrales Öl",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "750 ml"
+      },
+      "note": "Sonnenblume/Raps — Toum, Marinade, Braten"
+    },
+    {
+      "id": "olivenoel",
+      "name": "Olivenöl",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "\\~150 ml gebraucht"
+    },
+    {
+      "id": "weissweinessig",
+      "name": "Weißweinessig oder Apfelessig",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "2–3 EL"
+    },
+    {
+      "id": "paprikapulver",
+      "name": "Edelsüßes Paprikapulver",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "kumin",
+      "name": "Kumin",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "koriandersaat",
+      "name": "Koriandersaat, gemahlen",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "kurkuma",
+      "name": "Kurkuma",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "cayenne",
+      "name": "Cayenne",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "pfeffer",
+      "name": "Schwarzer Pfeffer",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Türkischer/arabischer Laden — noch zu identifizieren (Raum Dietzenbach/Offenbach).** Dort zu holen: 7-Gewürz/Baharat, feiner Bulgur (Nr. 1), salzige Gurken, rosa Rüben, gute Tahina, evtl. fertige Shatta. **Alles davon hat einen Fallback** (siehe Einkaufsliste). Markook entfällt in dieser Version ganz.\n- **Gute Tahina ist der größte Qualitätshebel des ganzen libanesischen Blocks.** Hier ist die Menge klein (Sauce ist nur ein Hauch), aber bittere Tahina schmeckt man trotzdem.\n- **REWE Center:** Hähnchenschenkel zuverlässig — **mit Knochen kaufen und selbst entbeinen** ist günstiger, die Knochen wandern in den TK-Vorrat für die nächste Brühe. Blumenkohl, Joghurt, Zitronen (viel — siehe Mengen-Check), Knoblauch, Kräuter, neutrales Öl.\n- **Vollkorn-Fladen (optional):** REWE-Brotregal (Vollkorn-Pita/-Fladen), pro Person ein halbes. Wer ganz ohne Brot auskommt: Tabbouleh-Bulgur ist dann der KH-Träger — reicht knapp, siehe GDM-Sektion.\n- **Shatta:** kaufen, falls der Laden sie führt; Selbstansatz siehe Box in „Shatta“. Ist eine roh fermentierte Chilipaste — Salz- und Säuregehalt machen sie unkritisch, sie kommt aber ohnehin nur auf die Erwachsenenteller.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "haehnchen",
+          "name": "Hähnchen",
+          "steps": [
+            {
+              "id": "entbeinen",
+              "label": "1",
+              "heading": "**1. Entbeinen (ca. 20 Min.)**",
+              "title": "Entbeinen",
+              "duration": {
+                "typical": "PT20M",
+                "source": "ca. 20 Min.",
+                "estimated": true
+              },
+              "text": "1,4–1,5 kg Hähnchenschenkel entbeinen und enthäuten (Knochen + Haut einfrieren → Brühen-Vorrat). Fleisch flach lassen, nicht schneiden — geschnitten wird nach dem Marinieren.",
+              "action": "1,4–1,5 kg Hähnchenschenkel entbeinen und enthäuten (Knochen + Haut einfrieren → Brühen-Vorrat).",
+              "ingredients": [
+                {
+                  "ref": "haehnchenschenkel",
+                  "amount": {
+                    "text": "1,4–1,5 kg Hähnchenschenkel",
+                    "value": 1.4,
+                    "unit": "kg",
+                    "max": 1.5
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "marinade",
+              "label": "2",
+              "heading": "**2. Marinade (10 Min.)**",
+              "title": "Marinade",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "**Marinade** verrühren:\n- 150 g griechischer Joghurt\n- 3 EL Zitronensaft + 1 EL Weißweinessig\n- 4 Knoblauchzehen, fein gerieben\n- 2 EL Baharat/7-Gewürz\n- 1 TL edelsüßes Paprikapulver, 1 TL Kumin, 1 TL gem. Koriandersaat\n- ¼ TL Cayenne — **nicht mehr**, die Schärfe kommt aus der Shatta am Teller\n- 2 EL neutrales Öl, 1,5 TL Salz, viel schwarzer Pfeffer",
+              "action": "**Marinade** verrühren:\n- 150 g griechischer Joghurt\n- 3 EL Zitronensaft + 1 EL Weißweinessig\n- 4 Knoblauchzehen, fein gerieben\n- 2 EL Baharat/7-Gewürz\n- 1 TL edelsüßes Paprikapulver, 1 TL Kumin, 1 TL gem.",
+              "limits": [
+                "nicht mehr"
+              ],
+              "ingredients": [
+                {
+                  "ref": "joghurt",
+                  "amount": {
+                    "text": "150 g griechischer Joghurt",
+                    "value": 150.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "3 EL Zitronensaft",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "weissweinessig",
+                  "amount": {
+                    "text": "1 EL Weißweinessig",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "4 Knoblauchzehen",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "7-gewuerz",
+                  "amount": {
+                    "text": "2 EL Baharat/7-Gewürz",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "paprikapulver",
+                  "amount": {
+                    "text": "1 TL edelsüßes Paprikapulver",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "kumin",
+                  "amount": {
+                    "text": "1 TL Kumin",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "cayenne",
+                  "amount": {
+                    "text": "¼ TL Cayenne",
+                    "value": 0.25,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "2 EL neutrales Öl",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1,5 TL Salz",
+                    "value": 1.5,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "marinieren",
+              "label": "3",
+              "heading": "**3. Marinieren (über Nacht, passiv)**",
+              "title": "Marinieren",
+              "duration": {
+                "min": "PT8H",
+                "max": "PT14H",
+                "source": "über Nacht"
+              },
+              "attention": "passive",
+              "text": "Fleisch gründlich darin wenden, abgedeckt **über Nacht** (mind. 8, gern 24 Std.) in den Kühlschrank.",
+              "action": "Fleisch gründlich darin wenden, abgedeckt **über Nacht** (mind.",
+              "limits": [
+                "über Nacht"
+              ],
+              "timers": [
+                {
+                  "label": "Marinieren",
+                  "duration": {
+                    "typical": "PT24H"
+                  },
+                  "text": "24 Std."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Entbeinen, Marinade*",
+              "after": [
+                "step:entbeinen",
+                "step:marinade"
+              ]
+            }
+          ],
+          "heading": "**Hähnchen (Vortag, hält bis 24 Std., Kühlschrank):**",
+          "phaseHint": "Vortag",
+          "produces": [
+            {
+              "id": "haehnchen",
+              "name": "Hähnchen",
+              "hold": {
+                "max": "PT24H",
+                "source": "Vortag, hält bis 24 Std., Kühlschrank"
+              },
+              "storage": {
+                "place": "fridge"
+              }
+            }
+          ]
+        },
+        {
+          "id": "toum",
+          "name": "Toum",
+          "steps": [
+            {
+              "id": "toum",
+              "label": "4",
+              "heading": "**4. Toum (15 Min.)**",
+              "title": "Toum",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "Moderate Menge: **1 Knolle**, nicht mehr. Toum ist eine reine Knoblauch-Öl-Zitronen-Emulsion **ohne Ei** — in der Schwangerschaft unkritisch.\n- 1 Knolle Knoblauch, geschält, Keime entfernt (\\~50–60 g Zehen)\n- 1 TL Salz\n- 3 EL Zitronensaft\n- 250 ml neutrales Öl (kein Olivenöl — wird bitter und bricht leichter)\n- 1 EL eiskaltes Wasser",
+              "action": "Moderate Menge: **1 Knolle**, nicht mehr.",
+              "limits": [
+                "1 Knolle",
+                "ohne Ei"
+              ],
+              "ingredients": [
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "1 Knolle Knoblauch",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "3 EL Zitronensaft",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "250 ml neutrales Öl",
+                    "value": 250.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "1 EL eiskaltes Wasser",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            }
+          ],
+          "heading": "**Toum (Vortag, hält 3–4 Wochen, Kühlschrank):**",
+          "phaseHint": "Vortag",
+          "produces": [
+            {
+              "id": "toum",
+              "name": "Toum",
+              "storage": {
+                "place": "fridge"
+              }
+            }
+          ]
+        },
+        {
+          "id": "shatta-ansatz",
+          "name": "Shatta-Ansatz",
+          "steps": [
+            {
+              "id": "shatta",
+              "label": "5",
+              "heading": "**5. Shatta (10 Min.)**",
+              "title": "Shatta",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Kaufen oder ansetzen — **erste Wahl: kaufen**, falls der orientalische Laden sie führt. Sonst:",
+              "action": "Kaufen oder ansetzen — **erste Wahl: kaufen**, falls der orientalische Laden sie führt.",
+              "limits": [
+                "erste Wahl: kaufen"
+              ],
+              "ingredients": [],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            }
+          ],
+          "heading": "**Shatta-Ansatz (2–3 Tage vorher, hält Wochen, Kühlschrank):**",
+          "produces": [
+            {
+              "id": "shatta-ansatz",
+              "name": "Shatta-Ansatz",
+              "storage": {
+                "place": "fridge"
+              }
+            }
+          ]
+        },
+        {
+          "id": "tahinsauce",
+          "name": "Tahinsauce",
+          "steps": [
+            {
+              "id": "tahinsauce",
+              "label": "6",
+              "heading": "**6. Tahinsauce (5 Min.)**",
+              "title": "Tahinsauce",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "3 EL Tahina mit 3 EL Zitronensaft verrühren — sie zieht erst fest an (normal), dann **esslöffelweise kaltes Wasser** einrühren (4–6 EL), bis sie dünn vom Löffel läuft: Konsistenz Sahne, nicht Creme. 1 kleine Knoblauchzehe gerieben, Salz. Sie ist hier nur ein Hauch auf dem Teller, keine Hauptsauce.",
+              "action": "3 EL Tahina mit 3 EL Zitronensaft verrühren — sie zieht erst fest an (normal), dann **esslöffelweise kaltes Wasser** einrühren (4–6 EL), bis sie dünn vom Löffel läuft: Konsistenz Sahne, nicht Creme.",
+              "limits": [
+                "esslöffelweise kaltes Wasser"
+              ],
+              "cues": [
+                "bis sie dünn vom Löffel läuft: Konsistenz Sahne"
+              ],
+              "ingredients": [
+                {
+                  "ref": "tahina",
+                  "amount": {
+                    "text": "3 EL Tahina",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "3 EL Zitronensaft",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "1 kleine Knoblauchzehe",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            }
+          ],
+          "heading": "**Tahinsauce (Kochtag):**",
+          "produces": [
+            {
+              "id": "tahinsauce",
+              "name": "Tahinsauce"
+            }
+          ]
+        },
+        {
+          "id": "tabbouleh",
+          "name": "Tabbouleh",
+          "steps": [
+            {
+              "id": "bulgur-quellen",
+              "label": "7",
+              "heading": "**7. Bulgur quellen (30 Min., passiv)**",
+              "title": "Bulgur quellen",
+              "duration": {
+                "typical": "PT30M",
+                "source": "30 Min."
+              },
+              "attention": "passive",
+              "text": "50 g feiner Bulgur (Nr. 1) kalt abspülen. **Nicht kochen:** mit dem Saft von 1 Zitrone (\\~4 EL) und den austretenden Tomatenwürfel-Säften 30 Min. quellen lassen.",
+              "action": "50 g feiner Bulgur (Nr.",
+              "timers": [
+                {
+                  "label": "Bulgur quellen",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "30 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "bulgur",
+                  "amount": {
+                    "text": "50 g feiner Bulgur",
+                    "value": 50.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "1 Zitrone",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "after": []
+            },
+            {
+              "id": "kraeuter-schneiden",
+              "label": "8",
+              "heading": "**8. Kräuter schneiden (15 Min.)**",
+              "title": "Kräuter schneiden",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "3 Bund glatte Petersilie: Blätter zupfen, **trocken schleudern/tupfen** (nasses Kraut = matschiges Tabbouleh), fein schneiden — schneiden, nicht hacken, sonst wird es Brei. Ergibt \\~150 g. Von der Minze die Blätter von ½ Bund ebenso fein schneiden.",
+              "action": "3 Bund glatte Petersilie: Blätter zupfen, **trocken schleudern/tupfen** (nasses Kraut = matschiges Tabbouleh), fein schneiden — schneiden, nicht hacken, sonst wird es Brei.",
+              "limits": [
+                "trocken schleudern/tupfen"
+              ],
+              "ingredients": [
+                {
+                  "ref": "petersilie",
+                  "amount": {
+                    "text": "3 Bund glatte Petersilie",
+                    "value": 3.0,
+                    "unit": "Bund"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "tomaten-zwiebeln",
+              "label": "9",
+              "heading": "**9. Tomaten & Zwiebeln (10 Min.)**",
+              "title": "Tomaten & Zwiebeln",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "3 Tomaten entkernen, fein würfeln. 2 Frühlingszwiebeln in feine Ringe (Kinder-Hinweis: sparsam, Rest als Topping für die Erwachsenen).",
+              "action": "3 Tomaten entkernen, fein würfeln.",
+              "ingredients": [
+                {
+                  "ref": "tomaten",
+                  "amount": {
+                    "text": "3 Tomaten",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "fruehlingszwiebeln",
+                  "amount": {
+                    "text": "2 Frühlingszwiebeln",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "tabbouleh-mischen",
+              "label": "10",
+              "heading": "**10. Tabbouleh mischen (5 Min.)**",
+              "title": "Tabbouleh mischen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Alles mischen, 4 EL Olivenöl, Salz. Abschmecken: es soll deutlich zitronig sein. Erst kurz vor dem Essen final salzen, sonst zieht es Wasser.",
+              "action": "Alles mischen, 4 EL Olivenöl, Salz.",
+              "ingredients": [
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "4 EL Olivenöl",
+                    "value": 4.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Bulgur quellen, Kräuter schneiden, Tomaten & Zwiebeln*",
+              "attention": "active",
+              "after": [
+                "step:bulgur-quellen",
+                "step:kraeuter-schneiden",
+                "step:tomaten-zwiebeln"
+              ]
+            }
+          ],
+          "heading": "**Tabbouleh (Kochtag, 45 Min. — komplett kalt vorbereitbar):**",
+          "produces": [
+            {
+              "id": "tabbouleh",
+              "name": "Tabbouleh",
+              "storage": {
+                "place": "fridge"
+              }
+            }
+          ]
+        },
+        {
+          "id": "blumenkohl-harra",
+          "name": "Blumenkohl harra",
+          "steps": [
+            {
+              "id": "blumenkohl-vorbereiten",
+              "label": "11",
+              "heading": "**11. Blumenkohl vorbereiten (10 Min.)**",
+              "title": "Blumenkohl vorbereiten",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "1 Blumenkohl (\\~1 kg) in walnussgroße Röschen teilen (\\~800 g), Strunk in Scheiben mitrösten. **Trocken** (nicht waschen und nass aufs Blech — dampft sonst).",
+              "action": "1 Blumenkohl (\\~1 kg) in walnussgroße Röschen teilen (\\~800 g), Strunk in Scheiben mitrösten.",
+              "ingredients": [
+                {
+                  "ref": "blumenkohl",
+                  "amount": {
+                    "text": "1 Blumenkohl",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "blumenkohl-roesten",
+              "label": "12",
+              "heading": "**12. Blumenkohl rösten (25–30 Min., passiv)**",
+              "title": "Blumenkohl rösten",
+              "duration": {
+                "min": "PT25M",
+                "max": "PT30M",
+                "source": "25–30 Min."
+              },
+              "attention": "passive",
+              "text": "Mit 2 EL Olivenöl und ½ TL Salz auf dem Blech verteilen, nicht stapeln, 220 °C Ober-/Unterhitze **25–30 Min.**, nach 15 Min. wenden, bis die Kanten tief goldbraun bis dunkel sind — das Blumenkohl-Röstaroma sitzt in den dunklen Stellen.",
+              "action": "Mit 2 EL Olivenöl und ½ TL Salz auf dem Blech verteilen, nicht stapeln, 220 °C Ober-/Unterhitze **25–30 Min.**, nach 15 Min. wenden, bis die Kanten tief goldbraun bis dunkel sind — das Blumenkohl-Röstaroma sitzt in den dunklen Stellen.",
+              "limits": [
+                "25–30 Min."
+              ],
+              "cues": [
+                "bis die Kanten tief goldbraun bis dunkel sind"
+              ],
+              "timers": [
+                {
+                  "label": "Blumenkohl rösten",
+                  "duration": {
+                    "min": "PT25M",
+                    "max": "PT30M"
+                  },
+                  "text": "25–30 Min."
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT15M",
+                    "source": "15 Min."
+                  },
+                  "text": "Mit 2 EL Olivenöl und ½ TL Salz auf dem Blech verteilen, nicht stapeln, 220 °C Ober-/Unterhitze **25–30 Min.**, nach 15 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "220 °C",
+                  "value": 220
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "2 EL Olivenöl",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*nach Blumenkohl vorbereiten · Ofen 220 °C*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 220
+                }
+              ],
+              "after": [
+                "step:blumenkohl-vorbereiten"
+              ]
+            },
+            {
+              "id": "wuerzoele",
+              "label": "13",
+              "heading": "**13. Würzöle (5 Min.)**",
+              "title": "Würzöle",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "**Dressing in ZWEI Pfannen** (Paneer-Learning — Kinder-Öl ganz ohne Chili):\n- *Pfanne 1 (Erwachsene):* 3 EL Olivenöl sanft erwärmen, 3 Zehen Knoblauch fein gehackt + 1 TL gemahlene Koriandersaat + ½ TL Kurkuma + 1–2 TL Aleppo-Pfeffer/Pul biber 1–2 Min. ziehen lassen (Knoblauch nicht bräunen).\n- *Pfanne 2 (Kind, klein):* 1 EL Olivenöl, 1 Zehe Knoblauch, ½ TL Koriandersaat — **kein Chili**.",
+              "action": "**Dressing in ZWEI Pfannen** (Paneer-Learning — Kinder-Öl ganz ohne Chili):\n- *Pfanne 1 (Erwachsene):* 3 EL Olivenöl sanft erwärmen, 3 Zehen Knoblauch fein gehackt + 1 TL gemahlene Koriandersaat + ½ TL Kurkuma + 1–2 TL Aleppo-Pfeffer/Pul biber 1–2 Min. ziehen lassen (Knoblauch nicht bräunen).\n- *Pfanne 2 (Kind, klein):* 1 EL Olivenöl, 1 Zehe Knoblauch, ½ TL Koriandersaat — **kein Chili**.",
+              "limits": [
+                "Dressing in ZWEI Pfannen",
+                "kein Chili"
+              ],
+              "timers": [
+                {
+                  "label": "Würzöle",
+                  "duration": {
+                    "min": "PT1M",
+                    "max": "PT2M"
+                  },
+                  "text": "1–2 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "3 EL Olivenöl",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "3 Zehen Knoblauch",
+                    "value": 3.0,
+                    "unit": "Zehen"
+                  }
+                },
+                {
+                  "ref": "koriandersaat",
+                  "amount": {
+                    "text": "1 TL gemahlene Koriandersaat",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "kurkuma",
+                  "amount": {
+                    "text": "½ TL Kurkuma",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "aleppo-pfeffer",
+                  "amount": {
+                    "text": "1–2 TL Aleppo-Pfeffer/Pul biber",
+                    "value": 1.0,
+                    "unit": "TL",
+                    "max": 2.0
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "1 EL Olivenöl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "1 Zehe Knoblauch",
+                    "value": 1.0,
+                    "unit": "Zehe"
+                  }
+                },
+                {
+                  "ref": "koriandersaat",
+                  "amount": {
+                    "text": "½ TL Koriandersaat",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · 2 Pfannen*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 2
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "blumenkohl-schwenken",
+              "label": "14",
+              "heading": "**14. Blumenkohl schwenken (5 Min.)**",
+              "title": "Blumenkohl schwenken",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Heißen Blumenkohl aufteilen, jeweils im Öl schwenken, gehackten frischen Koriander (¾ Bund) darüber, Spritzer Zitrone (insgesamt 1–2 EL), Salz.",
+              "action": "Heißen Blumenkohl aufteilen, jeweils im Öl schwenken, gehackten frischen Koriander (¾ Bund) darüber, Spritzer Zitrone (insgesamt 1–2 EL), Salz.",
+              "ingredients": [
+                {
+                  "ref": "koriander",
+                  "amount": {
+                    "text": "¾ Bund",
+                    "value": 0.75,
+                    "unit": "Bund"
+                  }
+                }
+              ],
+              "meta": "*nach Blumenkohl rösten, Würzöle*",
+              "attention": "active",
+              "after": [
+                "step:blumenkohl-roesten",
+                "step:wuerzoele"
+              ]
+            }
+          ],
+          "heading": "**Blumenkohl harra (Kochtag, Ofen \\~35 Min., parallel):**",
+          "produces": [
+            {
+              "id": "blumenkohl-harra",
+              "name": "Blumenkohl harra"
+            }
+          ]
+        },
+        {
+          "id": "haehnchen-braten",
+          "name": "Hähnchen braten",
+          "steps": [
+            {
+              "id": "fleisch-schneiden",
+              "label": "15",
+              "heading": "**15. Fleisch schneiden (10 Min.)**",
+              "title": "Fleisch schneiden",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Mariniertes Fleisch in fingerbreite Streifen schneiden. Grobe Marinade abstreifen (was dranbleibt, bleibt dran — nur keine Pfützen).",
+              "action": "Mariniertes Fleisch in fingerbreite Streifen schneiden.",
+              "ingredients": [],
+              "meta": "*nach Marinieren*",
+              "attention": "active",
+              "after": [
+                "step:marinieren"
+              ]
+            },
+            {
+              "id": "portionen-braten",
+              "label": "16",
+              "heading": "**16. Portionen braten (ca. 20 Min.)**",
+              "title": "Portionen braten",
+              "duration": {
+                "typical": "PT20M",
+                "source": "ca. 20 Min.",
+                "estimated": true
+              },
+              "text": "1. Schwere Pfanne **sehr heiß** werden lassen, 1 EL neutrales Öl (vor jeder weiteren Portion bei Bedarf nachölen — insgesamt \\~3 EL). 2. **In 3–4 Portionen braten, Pfanne nie überladen** — zu viel Fleisch auf einmal, und es kocht im Joghurt statt zu rösten. Pro Portion: einlegen, 2–3 Min. **nicht bewegen** (Kruste!), dann wenden und 2–3 Min. fertig braten, bis die Kanten dunkel karamellisiert sind. Zwischen den Portionen Pfanne wieder richtig heiß werden lassen. 3. **Gar-Check:** Fleischthermometer in das dickste Stück der Charge: **≥ 75 °C**, Schnittfläche durchgehend weiß, kein Rosa am ehemaligen Knochenansatz. Fingerbreite Schenkelstreifen sind nach 5–6 Min. bei voller Hitze normalerweise sicher durch — trotzdem stichprobenartig messen, Schenkelfleisch ist ungleich dick. 4. Fertige Portionen im 80-°C-Ofen warm halten. Vor dem Anrichten kurz durchmischen, damit sich Säfte und Röstkanten verteilen.",
+              "action": "1.",
+              "limits": [
+                "sehr heiß",
+                "In 3–4 Portionen braten, Pfanne nie überladen",
+                "nicht bewegen",
+                "≥ 75 °C"
+              ],
+              "cues": [
+                "bis die Kanten dunkel karamellisiert sind"
+              ],
+              "timers": [
+                {
+                  "label": "Portionen braten",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                },
+                {
+                  "label": "Portionen braten",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "min": "PT5M",
+                    "max": "PT6M",
+                    "source": "5–6 Min."
+                  },
+                  "text": "Fingerbreite Schenkelstreifen sind nach 5–6 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "≥ 75 °C",
+                  "value": 75
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "1 EL neutrales Öl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*Herd · fertig bei ≥ 75 °C Kern*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei ≥ 75 °C Kern",
+                "value": 75
+              },
+              "attention": "attended"
+            },
+            {
+              "id": "anrichten-als-teller",
+              "label": "17",
+              "heading": "**17. Anrichten als Teller (ca. 10 Min.)**",
+              "title": "Anrichten als Teller",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "text": "1. Optional 2 Vollkorn-Fladen 3 Min. im Ofen aufwärmen, halbieren. 2. Pro Teller: Hähnchen als Haufen in die Mitte, **1 TL Toum** dünn darüber gestrichen oder daneben, 1 EL Tahinsauce als Streifen, Essiggurken (längs geviertelt, 2–3 Stücke) und optional rosa Rüben dazu. 3. Tabbouleh und Blumenkohl harra als zwei Haufen daneben, halbes Fladen am Rand. 4. Shatta und restliches Toum am Tisch — für die Erwachsenen.",
+              "action": "1.",
+              "limits": [
+                "1 TL Toum"
+              ],
+              "timers": [
+                {
+                  "label": "Anrichten als Teller",
+                  "duration": {
+                    "typical": "PT3M"
+                  },
+                  "text": "3 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "vollkorn-fladen",
+                  "amount": {
+                    "text": "2 Vollkorn-Fladen",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "essiggurken",
+                  "amount": {
+                    "text": "1 EL Tahinsauce als Streifen, Essiggurken",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Portionen braten, Toum, Tahinsauce, Tabbouleh mischen, Blumenkohl schwenken*",
+              "attention": "active",
+              "after": [
+                "step:portionen-braten",
+                "step:toum",
+                "step:tahinsauce",
+                "step:tabbouleh-mischen",
+                "step:blumenkohl-schwenken"
+              ]
+            }
+          ],
+          "heading": "**Hähnchen braten (Kochtag, à la minute):**",
+          "phaseHint": "à la minute",
+          "produces": [
+            {
+              "id": "haehnchen-braten",
+              "name": "Hähnchen braten"
+            }
+          ],
+          "consumes": [
+            "product:blumenkohl-harra",
+            "product:haehnchen",
+            "product:tabbouleh",
+            "product:tahinsauce",
+            "product:toum"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Technik (Stabmixer, gegen das Brechen)",
+      "level": "bold",
+      "markdown": "**Technik (Stabmixer, gegen das Brechen):** Alles zusammen in ein **hohes, schmales Gefäß**, das kaum breiter ist als der Mixfuß. Stabmixer ganz auf den Boden aufsetzen, auf höchster Stufe starten und **30–60 Sek. unten lassen, ohne zu heben** — unten bildet sich die weiße Emulsion. Erst dann langsam (über \\~30 Sek.) nach oben ziehen, bis alles weiß und fluffig ist. Häufigster Fehler ist zu frühes Anheben. Falls es doch bricht: 1 EL der gebrochenen Masse mit 1 EL Eiswasser im sauberen Gefäß neu starten, Rest langsam wieder einarbeiten."
+    },
+    {
+      "type": "markdown",
+      "title": "Schärfe-Optionen",
+      "level": "bold",
+      "markdown": "**Schärfe-Optionen:** Toum wird über Nacht im Kühlschrank runder und milder — auch deshalb am Vortag machen. Wer es von vornherein sanfter will: Zehen 60 Sek. in kochendes Wasser, eiskalt abschrecken, **gründlich trocken tupfen** (Wasser stört die Emulsion), dann wie beschrieben."
+    },
+    {
+      "type": "markdown",
+      "title": "> **Shatta-Selbstansatz (10 Min. + 2–3 T",
+      "level": "bold",
+      "markdown": "> **Shatta-Selbstansatz (10 Min. + 2–3 Tage Reifung):** 150 g rote Chilis entstielen, grob hacken, mit 1 TL Salz im schmalen Gefäß per Stabmixer zur groben Paste pulsen (nicht fein pürieren). 1 EL Essig + 1 EL Zitronensaft unterrühren. In ein sauberes Glas, Oberfläche mit 1 EL Olivenöl bedecken, 2–3 Tage bei Raumtemperatur anziehen lassen, dann kühlen. Hält Wochen."
+    },
+    {
+      "type": "markdown",
+      "title": "Verhältnis **4 Teile Kräuter : 1 Teil Bu",
+      "level": "bold",
+      "markdown": "Verhältnis **4 Teile Kräuter : 1 Teil Bulgur** — der Bulgur ist Textur, nicht Basis. **Kein Koriander.**"
+    },
+    {
+      "type": "markdown",
+      "title": "Dieselbe Idee wie Batata harra — geröste",
+      "level": "bold",
+      "markdown": "Dieselbe Idee wie Batata harra — geröstet, dann in Knoblauch-Koriander-Öl geschwenkt —, nur mit Blumenkohl statt Kartoffel: fast keine KH, gleiche Röstaromen, und er braucht weniger Ofenzeit."
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
+          },
+          {
+            "id": "vorabend",
+            "label": "Vorabend",
+            "day": -1,
+            "part": "evening"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "kochtag",
+            "text": "Petersilie/Minze waschen und trocknen lassen, Bulgur mit Zitrone/Tomatenwasser quellen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT120M"
+            },
+            "source": "T−2:00"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Tabbouleh fertig schneiden und mischen (Salz erst am Ende), Tahinsauce anrühren, Gurken schneiden, Fleisch aus dem Kühlschrank (Raumtemperatur brät besser)",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT60M"
+            },
+            "source": "T−1:00"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Ofen auf 220 °C, Blumenkohl vorbereiten und rein",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT50M"
+            },
+            "source": "T−0:50",
+            "steps": [
+              "blumenkohl-vorbereiten"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Kinder-Öl und Erwachsenen-Öl für den Blumenkohl ansetzen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT40M"
+            },
+            "source": "T−0:40"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Fleisch in 3–4 Portionen braten, Thermometer, im 80-°C-Ofen sammeln",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT30M"
+            },
+            "source": "T−0:30",
+            "steps": [
+              "portionen-braten"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Blumenkohl in zwei Pfannen schwenken, Fladen in den Ofen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT10M"
+            },
+            "source": "T−0:10"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Anrichten — Teller, Shatta und Toum am Tisch",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT0M"
+            },
+            "source": "T−0",
+            "steps": [
+              "shatta"
+            ]
+          },
+          {
+            "phase": "vorabend",
+            "text": "Entbeinen, Marinade, Marinieren (Schenkel entbeinen, Marinade anrühren, Fleisch einlegen → Kühlschrank, \\~45 Min. aktiv)",
+            "steps": [
+              "entbeinen",
+              "marinade",
+              "marinieren"
+            ]
+          },
+          {
+            "phase": "vorabend",
+            "text": "Toum (→ Kühlschrank, wird über Nacht milder)",
+            "steps": [
+              "toum"
+            ],
+            "tasks": [
+              "toum"
+            ]
+          },
+          {
+            "phase": "vorabend",
+            "text": "Shatta: falls selbst, eigentlich schon 2–3 Tage vorher ansetzen — sonst jetzt, geht ab Tag 1",
+            "steps": [
+              "shatta"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "- **Warum Teller statt Wrap:** Ein Markook-Wrap ist \\~40–50 g Weißmehl pro Person — der einzige große KH-Posten des Originals, und mit hohem GI. Der Teller ersetzt ihn durch ein halbes Vollkorn-Fladen (\\~15 g KH, niedrigerer GI) neben Protein und Fett; der Bulgur im Tabbouleh (50 g auf 4 Portionen, Vollkorn) liefert nochmal \\~9 g pro Person. Zusammen \\~25 g KH pro Teller plus Gemüse — leitlinienkonform klein, aber nicht null.\n- **Warum Blumenkohl statt Kartoffel:** 200 g Ofenkartoffel sind \\~35 g schnelle KH; Blumenkohl liefert die Röst- und Öl-Aromen ohne die Spitze. Wer die Kartoffel vermisst: 2–3 kleine Kartoffelwürfel pro Teller unter den Blumenkohl mischen, nicht mehr.\n- **Durchgegart:** Hähnchen ≥ 75 °C (siehe „Portionen braten“). Joghurt in der Marinade ist pasteurisiert. Toum ohne Ei, Tahinsauce ohne Ei. Gurken und Rüben sind essig- bzw. salzkonserviert — unkritisch.\n- **Nach dem Essen:** Spaziergang; Toum-Reste sind der beste Grund, am nächsten Tag Rohkost zu essen.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Marinade ist mild by design** (¼ TL Cayenne auf 1 kg ist Aroma, keine Schärfe) — Schärfe kommt ausschließlich über die Shatta am Teller. Kinder-Teller: Toum nur hauchdünn (roher Knoblauch!) oder stattdessen ein Klecks purer Joghurt, Hähnchen, Gurke, Fladen-Viertel.\n- **Blumenkohl harra: zwei Pfannen, konsequent** (siehe „Würzöle“). Die Kinderportion bekommt nur Knoblauch-Koriander-Öl.\n- **Tabbouleh:** Frühlingszwiebel sparsam in die Basis, Rest als Topping für die Erwachsenen. Sauer + Kräuter kann beim Kind gut ankommen, ist aber kein sicherer Treffer — Gurken, Brot und mildes Hähnchen sind es.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- Ohne Wrap-Pressen ist die letzte halbe Stunde deutlich entspannter als im Original — Blumenkohl und Fleisch sind die einzigen zwei heißen Baustellen. Ein Streichkandidat ist deshalb nicht nötig.\n- Toum-Reste sind ein Feature, kein Problem: hält 3–4 Wochen und ist grandios zu gebratenem Gemüse, auf Brot, zu Kartoffeln.\n- Orientalischen Laden nach dem Einkauf bewerten → Einkaufsquellen in CLAUDE.md ergänzen.",
+      "tags": [
+        "notizen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Basis ist das Original** [`gerichte/shawarma-libanesisch.md`](/gerichte/shawarma-libanesisch.md) mit allen dort dokumentierten Entscheidungen (Toum-Ratio und Stabmixer-Bodentechnik nach [Hungry Paprikas](https://www.hungrypaprikas.com/5-minute-toum/), Tabbouleh ohne Koriander nach [Maureen Abood](https://maureenabood.com/lebanese-tabbouleh-salad-recipe/), Schenkel statt Brust, Tahin nur als Hauch).\n- **Blumenkohl harra** ist keine Erfindung: geröstete Blumenkohl-Vorspeisen mit Tahina oder Knoblauch-Koriander-Öl (*arnabeet mekle*, meist frittiert) sind libanesischer Mezze-Standard; hier als Ofenvariante mit dem Batata-harra-Dressing aus dem Original ([A Kitchen in Istanbul — Batata harra](https://vidarbergum.com/recipe/batata-harra-lebanese-spicy-potatoes-with-garlic-coriander/) für das Öl).\n- **Kerntemperatur 75 °C** entspricht der Empfehlung im Leitfaden (Geflügel ≥ 70 °C durchgehend, hier mit Puffer) und Swasthis Tandoori-Referenz (75 °C), die im Tandoori-Rezept dieses Ordners verwendet wird.\n- **Kastenform-Variante bewusst nicht kopiert:** Sie liefert die geschabte Textur, braucht aber einen Tag Vorlauf und die doppelte Fleischmenge; für die Schwangerschafts-Version zählt der einfachere Ablauf. Wer sie will: im Original, Kerntemperatur dort ohnehin > 75 °C.",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T18:56:45Z",
+    "sourceHash": "3eadfa738bc3eeb0",
+    "quantities": [
+      {
+        "ingredient": "7-gewuerz",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "2 EL Baharat/7-Gewürz"
+        }
+      },
+      {
+        "ingredient": "bulgur",
+        "total": {
+          "text": "50 g",
+          "value": 50.0,
+          "max": 50.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "tabbouleh": "50 g feiner Bulgur"
+        }
+      },
+      {
+        "ingredient": "essiggurken",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen-braten": "1 EL Tahinsauce als Streifen, Essiggurken"
+        }
+      },
+      {
+        "ingredient": "rueben",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "tahina",
+        "total": {
+          "text": "3 EL",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "tahinsauce": "3 EL Tahina"
+        }
+      },
+      {
+        "ingredient": "shatta",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "aleppo-pfeffer",
+        "total": {
+          "text": "1–2 TL",
+          "value": 1.0,
+          "max": 2.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "blumenkohl-harra": "1–2 TL Aleppo-Pfeffer/Pul biber"
+        }
+      },
+      {
+        "ingredient": "haehnchenschenkel",
+        "total": {
+          "text": "1400–1500 g",
+          "value": 1400.0,
+          "max": 1500.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "1,4–1,5 kg Hähnchenschenkel"
+        }
+      },
+      {
+        "ingredient": "joghurt",
+        "total": {
+          "text": "150 g",
+          "value": 150.0,
+          "max": 150.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "150 g griechischer Joghurt"
+        }
+      },
+      {
+        "ingredient": "zitronen",
+        "total": {
+          "text": "9 EL (+ Stück ungemischt)",
+          "value": 9.0,
+          "max": 9.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "3 EL Zitronensaft",
+          "toum": "3 EL Zitronensaft",
+          "tahinsauce": "3 EL Zitronensaft"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": "6 (+ Zehe, Zehen ungemischt)",
+          "value": 6.0,
+          "max": 6.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "4 Knoblauchzehen",
+          "toum": "1 Knolle Knoblauch",
+          "tahinsauce": "1 kleine Knoblauchzehe"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "blumenkohl",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "blumenkohl-harra": "1 Blumenkohl"
+        }
+      },
+      {
+        "ingredient": "petersilie",
+        "total": {
+          "text": "3 Bund",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Bund",
+          "approx": false
+        },
+        "perTask": {
+          "tabbouleh": "3 Bund glatte Petersilie"
+        }
+      },
+      {
+        "ingredient": "minze",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "koriander",
+        "total": {
+          "text": "¾ Bund",
+          "value": 0.75,
+          "max": 0.75,
+          "unit": "Bund",
+          "approx": false
+        },
+        "perTask": {
+          "blumenkohl-harra": "¾ Bund"
+        }
+      },
+      {
+        "ingredient": "fruehlingszwiebeln",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "tabbouleh": "2 Frühlingszwiebeln"
+        }
+      },
+      {
+        "ingredient": "tomaten",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "tabbouleh": "3 Tomaten"
+        }
+      },
+      {
+        "ingredient": "chilis",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "vollkorn-fladen",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen-braten": "2 Vollkorn-Fladen"
+        }
+      },
+      {
+        "ingredient": "oel",
+        "total": {
+          "text": "3 EL (+ ml ungemischt)",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "2 EL neutrales Öl",
+          "haehnchen-braten": "1 EL neutrales Öl"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "olivenoel",
+        "total": {
+          "text": "10 EL",
+          "value": 10.0,
+          "max": 10.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "tabbouleh": "4 EL Olivenöl",
+          "blumenkohl-harra": "2 EL Olivenöl + 3 EL Olivenöl + 1 EL Olivenöl"
+        }
+      },
+      {
+        "ingredient": "weissweinessig",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "1 EL Weißweinessig"
+        }
+      },
+      {
+        "ingredient": "paprikapulver",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "1 TL edelsüßes Paprikapulver"
+        }
+      },
+      {
+        "ingredient": "kumin",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "1 TL Kumin"
+        }
+      },
+      {
+        "ingredient": "koriandersaat",
+        "total": {
+          "text": "1½ TL",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "blumenkohl-harra": "1 TL gemahlene Koriandersaat + ½ TL Koriandersaat"
+        }
+      },
+      {
+        "ingredient": "kurkuma",
+        "total": {
+          "text": "½ TL",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "blumenkohl-harra": "½ TL Kurkuma"
+        }
+      },
+      {
+        "ingredient": "cayenne",
+        "total": {
+          "text": "¼ TL",
+          "value": 0.25,
+          "max": 0.25,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "¼ TL Cayenne"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "3 TL",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "1,5 TL Salz",
+          "toum": "1 TL Salz",
+          "blumenkohl-harra": "½ TL Salz"
+        }
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "toum": "1 EL eiskaltes Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "REWE Center",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "zitronen",
+            "name": "Zitronen",
+            "need": {
+              "text": "9 EL (+ Stück ungemischt)",
+              "value": 9.0,
+              "max": 9.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "9 EL",
+            "inStock": false,
+            "buy": {
+              "text": "7"
+            },
+            "note": "unbehandelt; Gesamtverbrauch siehe Mengen-Check"
+          },
+          {
+            "ingredient": "knoblauch",
+            "name": "Knoblauch",
+            "need": {
+              "text": "6 (+ Zehe, Zehen ungemischt)",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "6",
+            "inStock": false,
+            "buy": {
+              "text": "3 Knollen"
+            },
+            "note": "Toum allein frisst \\~1 Knolle"
+          },
+          {
+            "ingredient": "blumenkohl",
+            "name": "großer Blumenkohl",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "\\~1 kg, ergibt \\~800 g Röschen"
+          },
+          {
+            "ingredient": "petersilie",
+            "name": "glatte Petersilie",
+            "need": {
+              "text": "3 Bund",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Bund",
+              "approx": false
+            },
+            "display": "3 Bund",
+            "inStock": false,
+            "buy": {
+              "text": "3 Bund"
+            },
+            "note": "fürs Tabbouleh — wirklich 3"
+          },
+          {
+            "ingredient": "minze",
+            "name": "Minze",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            }
+          },
+          {
+            "ingredient": "koriander",
+            "name": "Koriander",
+            "need": {
+              "text": "¾ Bund",
+              "value": 0.75,
+              "max": 0.75,
+              "unit": "Bund",
+              "approx": false
+            },
+            "display": "¾ Bund",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            },
+            "note": "nur für den Blumenkohl harra"
+          },
+          {
+            "ingredient": "fruehlingszwiebeln",
+            "name": "Frühlingszwiebeln",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            }
+          },
+          {
+            "ingredient": "tomaten",
+            "name": "feste Tomaten",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            }
+          },
+          {
+            "ingredient": "chilis",
+            "name": "frische rote Chilis",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "150 g"
+            },
+            "optional": true,
+            "note": "nur falls Shatta selbst angesetzt wird"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "haehnchenschenkel",
+            "name": "Hähnchenschenkel mit Knochen",
+            "need": {
+              "text": "1400–1500 g",
+              "value": 1400.0,
+              "max": 1500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "1400–1500 g",
+            "inStock": false,
+            "buy": {
+              "text": "1,4–1,5 kg"
+            },
+            "note": "≈ 8 Stück → ergibt \\~1 kg entbeint"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "joghurt",
+            "name": "griechischer Joghurt",
+            "need": {
+              "text": "150 g",
+              "value": 150.0,
+              "max": 150.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "150 g",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            },
+            "note": "10 %, pasteurisiert — Standardware; gebraucht: \\~150 g"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "oel",
+            "name": "neutrales Öl",
+            "need": {
+              "text": "3 EL (+ ml ungemischt)",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "3 EL",
+            "inStock": false,
+            "buy": {
+              "text": "750 ml"
+            },
+            "note": "Sonnenblume/Raps — Toum, Marinade, Braten"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Brot",
+        "items": [
+          {
+            "ingredient": "vollkorn-fladen",
+            "name": "Vollkorn-Fladen",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "optional": true,
+            "note": "Vollkorn-Pita oder kleine Vollkorn-Fladen, je ½ pro Person"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "olivenoel",
+            "name": "Olivenöl",
+            "need": {
+              "text": "10 EL",
+              "value": 10.0,
+              "max": 10.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "10 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "\\~150 ml gebraucht"
+          },
+          {
+            "ingredient": "weissweinessig",
+            "name": "Weißweinessig oder Apfelessig",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "2–3 EL"
+          },
+          {
+            "ingredient": "paprikapulver",
+            "name": "Edelsüßes Paprikapulver",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "kumin",
+            "name": "Kumin",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "koriandersaat",
+            "name": "Koriandersaat, gemahlen",
+            "need": {
+              "text": "1½ TL",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1½ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "kurkuma",
+            "name": "Kurkuma",
+            "need": {
+              "text": "½ TL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "½ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "cayenne",
+            "name": "Cayenne",
+            "need": {
+              "text": "¼ TL",
+              "value": 0.25,
+              "max": 0.25,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "¼ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "3 TL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "3 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Schwarzer Pfeffer",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      },
+      {
+        "store": "Türkischer/arabischer Laden",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "7-gewuerz",
+            "name": "7-Gewürz/Baharat",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "note": "1 kleine Dose; Fallback: selbst mischen — je ½ TL Piment, Zimt, gem. Koriander, Kumin, Pfeffer, ¼ TL Nelke + Muskat"
+          },
+          {
+            "ingredient": "bulgur",
+            "name": "Feiner Bulgur Nr. 1, kleinste Packung",
+            "need": {
+              "text": "50 g",
+              "value": 50.0,
+              "max": 50.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "50 g",
+            "inStock": false,
+            "note": "Fallback: REWE-Bulgur fein; grober Bulgur geht NICHT fürs Tabbouleh"
+          },
+          {
+            "ingredient": "essiggurken",
+            "name": "Salzige Essiggurken",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "note": "1 großes Glas; Salz-Dill, NICHT süß-sauer; Fallback: polnische/russische Salzgurken, REWE Center"
+          },
+          {
+            "ingredient": "rueben",
+            "name": "rosa eingelegte Rüben",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1 Glas"
+            },
+            "optional": true,
+            "note": "kabees lift; Fallback: weglassen"
+          },
+          {
+            "ingredient": "tahina",
+            "name": "Tahina, libanesische/palästinensische Marke",
+            "need": {
+              "text": "3 EL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "3 EL",
+            "inStock": false,
+            "note": "großes Glas; Fallback: REWE-Tahin — funktioniert, oft aber bitterer; sparsamer dosieren"
+          },
+          {
+            "ingredient": "shatta",
+            "name": "Shatta, falls vorhanden",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1 Glas"
+            },
+            "note": "Fallback: selbst ansetzen, siehe „Shatta“ → dann 150 g rote Chilis frisch dazukaufen"
+          },
+          {
+            "ingredient": "aleppo-pfeffer",
+            "name": "Aleppo-Pfeffer/Pul biber",
+            "need": {
+              "text": "1–2 TL",
+              "value": 1.0,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1–2 TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Packung"
+            },
+            "note": "Fallback: Pul biber im REWE-Türkei-Regal"
+          }
+        ]
+      }
+    ]
+  }
+}
