@@ -7,10 +7,11 @@ import sys
 
 from .coverage import check_b, check_c, check_d
 from .diff import diff
+from .parse import parse_recipe
 from .schema import check_a
 from .shopping import check_k, derive, render_shopping
 from .timing import check_e, check_f, check_g, check_h, check_l
-from .util import load_json, read_source, source_path
+from .util import ROOT, load_json, read_source, source_path
 
 
 def _structural(recipe: dict) -> list[str]:
@@ -72,6 +73,42 @@ def cmd_shopping(args) -> int:
     return 0
 
 
+def _parse_md(path: str):
+    p = Path(path).resolve()
+    rid = str(p.relative_to(ROOT)).removesuffix(".md")
+    return parse_recipe(p.read_text(encoding="utf-8"), rid), p.with_suffix(".json")
+
+
+def cmd_build(args) -> int:
+    failed = False
+    for path in args.paths:
+        (recipe, lint), out = _parse_md(path)
+        if errs := _structural(recipe):
+            print(f"{path}: Parser-Ergebnis verletzt Schema/Referenzen:\n  " + "\n  ".join(errs))
+            failed = True
+            continue
+        recipe["derived"] = derive(recipe)
+        text = json.dumps(recipe, ensure_ascii=False, indent=2) + "\n"
+        if args.check:
+            old = out.read_text(encoding="utf-8") if out.exists() else ""
+            same = json.loads(old or "{}") | {"derived": None} == json.loads(text) | {"derived": None} if old else False
+            print(f"{out}: {'aktuell' if same else 'VERALTET'}")
+            failed |= not same
+        else:
+            out.write_text(text, encoding="utf-8")
+            print(f"{path} → {out.relative_to(ROOT)} ({len(lint.msgs)} Hinweise, `cli lint` zeigt sie)")
+    return int(failed)
+
+
+def cmd_lint(args) -> int:
+    for path in args.paths:
+        (recipe, lint), _ = _parse_md(path)
+        print(f"== {path}: {len(lint.msgs)} Hinweis(e)")
+        for m in lint.msgs:
+            print("  ", m)
+    return 0
+
+
 def cmd_diff(args) -> int:
     print("\n".join(diff(load_json(args.a), load_json(args.b))))
     return 0
@@ -90,6 +127,13 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("shopping", help="Einkaufsliste als Markdown ausgeben")
     p.add_argument("path")
     p.set_defaults(run=cmd_shopping)
+    p = sub.add_parser("build", help="Markdown (REZEPTFORMAT.md) → JSON daneben, inkl. derived")
+    p.add_argument("paths", nargs="+")
+    p.add_argument("--check", action="store_true", help="nur prüfen, ob das JSON aktuell ist (CI)")
+    p.set_defaults(run=cmd_build)
+    p = sub.add_parser("lint", help="Parser-Hinweise zu einer Markdown-Datei")
+    p.add_argument("paths", nargs="+")
+    p.set_defaults(run=cmd_lint)
     p = sub.add_parser("diff", help="Feld-Diff zweier Konvertierungen derselben Quelle (Check I)")
     p.add_argument("a")
     p.add_argument("b")
