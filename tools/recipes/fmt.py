@@ -9,6 +9,8 @@ COUNT_UNIT = "Stück"  # kanonische Einheit für Zählmengen; wird in der Anzeig
 def fmt_num(x: float) -> str:
     if x in FRACTIONS:
         return FRACTIONS[x]
+    if x > 1 and x % 1 in FRACTIONS:  # 1,5 → „1½“
+        return f"{int(x)}{FRACTIONS[x % 1]}"
     if float(x).is_integer():
         return str(int(x))
     return f"{x:g}".replace(".", ",")

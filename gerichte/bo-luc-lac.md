@@ -34,57 +34,75 @@ Der Fix hat drei Teile: trockene Marinade (nur Salz, Pfeffer, 1 TL Zucker, Öl),
 
 ## Einkaufsliste
 
-### Asialaden / Vorrat prüfen
-
-- [ ] Austernsauce (Verbrauch 1 EL)
-- [ ] Fischsauce (Verbrauch 1½ EL)
-- [ ] Helle Sojasauce (Verbrauch 2 EL)
-- [ ] Reisessig, ungewürzt (Verbrauch 2½ EL)
-- [ ] 300 g Jasminreis (*GDM: zusätzlich oder stattdessen 100 g Naturreis, siehe Schwangerschaft & GDM*)
-
 ### REWE Center
 
-**Fleisch:**
-- [ ] 600 g Entrecôte/Ribeye am Stück (Alternativen: Rinderfilet oder Hüfte/Tri-Tip, siehe Beschaffung)
+**Fleisch & Fisch:**
+- [ ] 600 g Rindfleisch, Entrecôte/Ribeye am Stück *(Alternativen: Rinderfilet oder Hüfte/Tri-Tip, siehe Beschaffung)*
 
-**Obst / Gemüse:**
-- [ ] 150 g Brunnenkresse (Fallback: Rucola oder Feldsalat)
-- [ ] 2 feste Tomaten (oder 250 g Cocktailtomaten)
-- [ ] 1 große rote Zwiebel (½ fürs Pickle, ½ für die Pfanne)
-- [ ] 1 Bund Frühlingszwiebeln (Verbrauch 3 Stück)
-- [ ] 1 Knolle Knoblauch (Verbrauch 4 Zehen)
-- [ ] 3 Limetten (Verbrauch 2 — eine Reserve, Limetten sind ungleich saftig)
+**Obst & Gemüse:**
+- [ ] 150 g Brunnenkresse *(Fallback: Rucola oder Feldsalat)*
+- [ ] 2 Tomaten, fest *(oder 250 g Cocktailtomaten)*
+- [ ] 1 Zwiebel, rot, groß *(½ fürs Pickle, ½ für die Pfanne)*
+- [ ] 1 Bund Frühlingszwiebeln *(Verbrauch 3 Stück)*
+- [ ] 1 Knolle Knoblauch *(Verbrauch 4 Zehen)*
+- [ ] 3 Limetten *(Verbrauch 2 — eine Reserve, Limetten sind ungleich saftig)*
 
-**Milchprodukte:**
+**Milchprodukte & Eier:**
 - [ ] 20 g Butter
 
-**Vorrat:**
-- [ ] Neutrales Öl (Verbrauch \~5 EL), Zucker (3 TL), Salz, schwarzer Pfeffer aus der Mühle (grob)
+### Vorrat prüfen
+
+*Fehlt etwas: Asialaden, alles auch im REWE Center (Qualität okay).*
+
+- [ ] Austernsauce *(Verbrauch 1 EL)*
+- [ ] Fischsauce *(Verbrauch 1½ EL)*
+- [ ] Sojasauce, hell *(Verbrauch 2 EL)*
+- [ ] Reisessig, ungewürzt *(Verbrauch 2½ EL)*
+- [ ] 300 g Jasminreis *(GDM: zusätzlich oder stattdessen 100 g Naturreis, siehe Schwangerschaft & GDM)*
+- [ ] Öl, neutral *(Verbrauch \~5 EL)*
+- [ ] Zucker *(3 TL)*
+- [ ] Salz
+- [ ] Pfeffer, schwarz, aus der Mühle *(grob)*
 
 ## Zubereitung
 
-**1. Fleisch würfeln und trocken marinieren (10 Min. + 2 Std. passiv)**
-600 g Fleisch von Fett- und Sehnenresten befreien, in **2,5-cm-Würfel** schneiden (Hüfte: 2 cm), mit Küchenpapier gründlich trocken tupfen. In einer Schüssel mit **¾ TL Salz, 1 TL grob gemahlenem schwarzem Pfeffer, 1 TL Zucker und 1 EL neutralem Öl** vermengen, bis jeder Würfel einen dünnen Film hat — es soll **keine Flüssigkeit** am Schüsselboden stehen. Abgedeckt **2 Std.** in den Kühlschrank, die **letzten 30 Min. bei Zimmertemperatur**. *Kinder-/Schwangerschafts-Aufteilung: siehe unten — dann vor dem Würzen 150 g bzw. 2 × 150 g abtrennen.*
+**1. Fleisch würfeln (10 Min.)**
+*jederzeit*
+600 g Fleisch von Fett- und Sehnenresten befreien, in **2,5-cm-Würfel** schneiden (Hüfte: 2 cm), mit Küchenpapier gründlich trocken tupfen.
 
-**2. Sauce anrühren (2 Min.)**
+**2. Trocken marinieren (2 Std., passiv)**
+In einer Schüssel mit **¾ TL Salz, 1 TL grob gemahlenem schwarzem Pfeffer, 1 TL Zucker und 1 EL neutralem Öl** vermengen, bis jeder Würfel einen dünnen Film hat — es soll **keine Flüssigkeit** am Schüsselboden stehen. Abgedeckt **2 Std.** in den Kühlschrank, die **letzten 30 Min. bei Zimmertemperatur**. *Kinder-/Schwangerschafts-Aufteilung: siehe unten — dann vor dem Würzen 150 g bzw. 2 × 150 g abtrennen.*
+
+**3. Sauce anrühren (2 Min.)**
+*jederzeit*
 **2 EL helle Sojasauce, 1½ EL Fischsauce, 1 EL Austernsauce, 1 EL Reisessig, 1 TL Zucker und 2 EL Wasser** verrühren, bis der Zucker gelöst ist. Beiseitestellen. *Das Wasser ist kein Verdünner, sondern gibt der Sauce die 30 Sekunden Zeit, den Bratensatz zu lösen, bevor sie eindickt.*
 
-**3. Essig-Zwiebeln fürs Salatbett (5 Min. + 15 Min. passiv)**
+**4. Essig-Zwiebeln ansetzen (5 Min. + 15 Min. passiv)**
+*jederzeit*
 ½ rote Zwiebel in hauchdünne Ringe hobeln (Mandoline), 1 Min. in kaltem Wasser spülen (nimmt die Schärfe), abtropfen. Lake aus **1½ EL Reisessig, 1 TL Zucker, 1 Prise Salz, 3 Umdrehungen Pfeffer und 2 EL Wasser** anrühren, Zwiebelringe darin mindestens 15 Min. ziehen lassen. *Andrea Nguyens Dressing — die Säure gegen das reiche Fleisch. Ein Teil davon wird am Ende über die Kresse gegeben.*
 
-**4. Dip und Salat (5 Min.)**
+**5. Dip und Salat (5 Min.)**
+*jederzeit*
 Dip: **1 TL Salz und ½ TL grob gemahlenen Pfeffer** in einem Schälchen mischen, **Saft von 1 Limette** darübergeben — erst am Tisch verrühren, das gehört zum Ritual. Zweite Limette in Spalten schneiden. 150 g Brunnenkresse waschen, dicke Stiele entfernen, sehr gut trockenschleudern, auf einer großen Platte ausbreiten. 2 Tomaten in Spalten rundherum legen.
 
-**5. Reis und Pfannen-Vorbereitung (25 Min.)**
-300 g Jasminreis waschen und garen. Parallel: ½ rote Zwiebel in 1 cm breite Spalten, 3 Frühlingszwiebeln in 3-cm-Stücke, 4 Knoblauchzehen fein hacken — **alles griffbereit neben den Herd**, die Pfannenphase dauert unter 10 Minuten. 20 g Butter abwiegen. Fleisch aus dem Kühlschrank (spätestens jetzt).
+**6. Reis aufsetzen (25 Min., passiv)**
+*jederzeit · Herd*
+300 g Jasminreis waschen und garen.
 
-**6. Anbraten in 3–4 Chargen — der Einbrenn-Fix (8–10 Min.)**
-Die schwere Edelstahlpfanne bei **höchster Stufe** aufheizen, bis ein Wassertropfen sofort zerspringt und verdampft (\~2–3 Min.). **1 EL Öl** hinein, kurz warten, bis es flimmert. **150–200 g Würfel einschichtig mit Abstand** einlegen — sie dürfen sich nicht berühren. **1½–2 Min. nicht bewegen**, bis die Unterseite tief braun ist (nicht schwarz — wenn es schwarz wird, war Marinade an den Würfeln oder die Pfanne noch nicht heiß genug). Dann die Pfanne kräftig schütteln oder mit der Zange wenden, weitere **45–60 Sek.** für die restlichen Seiten, raus auf einen Teller. **Innen sind die Würfel jetzt medium-rare** (Kern \~52–55 °C, zieht beim Ruhen nach). Pfanne **wieder 30–60 Sek. aufheizen**, nächstes Öl, nächste Charge. **Ist der Boden zwischen zwei Chargen dunkel gesprenkelt:** 30 ml Wasser hinein, Ansatz mit dem Pfannenwender lösen, über das fertige Fleisch gießen, Pfanne mit Küchenpapier auswischen, neu aufheizen. *Das Wasser kostet 45 Sekunden und ist der Unterschied zwischen Sauce und Kohle.*
+**7. Aromaten schneiden (ca. 8 Min.)**
+*jederzeit*
+Parallel zum Reis: ½ rote Zwiebel in 1 cm breite Spalten, 3 Frühlingszwiebeln in 3-cm-Stücke, 4 Knoblauchzehen fein hacken — **alles griffbereit neben den Herd**, die Pfannenphase dauert unter 10 Minuten. 20 g Butter abwiegen. Fleisch aus dem Kühlschrank (spätestens jetzt).
 
-**7. Aromaten, Sauce, Butter (2 Min.)**
-Hitze auf hoch (nicht mehr maximal). **1 EL Öl**, dann **½ rote Zwiebel in Spalten und 3 Frühlingszwiebeln in Stücken** 45 Sek. schütteln, **4 gehackte Knoblauchzehen** dazu, **15–20 Sek.** — nur bis es duftet, nicht bräunen. Fleisch samt Fleischsaft zurück in die Pfanne, **die Sauce aus Schritt 2 komplett angießen** — sie zischt, löst den Bratensatz, und in **30–60 Sek.** Schütteln zieht sie zur glänzenden Glasur an. **20 g Butter** einschwenken, sobald sie geschmolzen ist: **sofort raus.** Länger = die Glasur wird zu Sirup und das Fleisch übergart.
+**8. Chargen braten (8–10 Min.)**
+*nach Trocken marinieren, Aromaten schneiden · Herd*
+Der Einbrenn-Fix: Die schwere Edelstahlpfanne bei **höchster Stufe** aufheizen, bis ein Wassertropfen sofort zerspringt und verdampft (\~2–3 Min.). **1 EL Öl** hinein (pro Charge, insgesamt 3 EL), kurz warten, bis es flimmert. **150–200 g Würfel einschichtig mit Abstand** einlegen — sie dürfen sich nicht berühren. **1½–2 Min. nicht bewegen**, bis die Unterseite tief braun ist (nicht schwarz — wenn es schwarz wird, war Marinade an den Würfeln oder die Pfanne noch nicht heiß genug). Dann die Pfanne kräftig schütteln oder mit der Zange wenden, weitere **45–60 Sek.** für die restlichen Seiten, raus auf einen Teller. **Innen sind die Würfel jetzt medium-rare** (Kern \~52–55 °C, zieht beim Ruhen nach). Pfanne **wieder 30–60 Sek. aufheizen**, nächstes Öl, nächste Charge. **Ist der Boden zwischen zwei Chargen dunkel gesprenkelt:** 30 ml Wasser hinein, Ansatz mit dem Pfannenwender lösen, über das fertige Fleisch gießen, Pfanne mit Küchenpapier auswischen, neu aufheizen. *Das Wasser kostet 45 Sekunden und ist der Unterschied zwischen Sauce und Kohle.*
 
-**8. Anrichten**
+**9. Glasieren (2 Min.)**
+*nach Chargen braten, Sauce anrühren · Herd*
+Aromaten, Sauce, Butter: Hitze auf hoch (nicht mehr maximal). **1 EL Öl**, dann **die ½ rote Zwiebel in Spalten und die 3 Frühlingszwiebeln in Stücken** 45 Sek. schütteln, **die 4 gehackten Knoblauchzehen** dazu, **15–20 Sek.** — nur bis es duftet, nicht bräunen. Fleisch samt Fleischsaft zurück in die Pfanne, **die Sauce aus „Sauce anrühren“ komplett angießen** — sie zischt, löst den Bratensatz, und in **30–60 Sek.** Schütteln zieht sie zur glänzenden Glasur an. **Die 20 g Butter** einschwenken, sobald sie geschmolzen ist: **sofort raus.** Länger = die Glasur wird zu Sirup und das Fleisch übergart.
+
+**10. Anrichten (ca. 3 Min.)**
+*nach Glasieren, Essig-Zwiebeln ansetzen, Dip und Salat, Reis aufsetzen*
 Die Hälfte der Essig-Zwiebeln samt 2 EL Lake über die Kresse und Tomaten, das Fleisch mit aller Glasur darauf, restliche Zwiebelringe obenauf. Limettenspalten und Dip dazu, Reis separat. Jeder tunkt die Würfel in den Limetten-Pfeffer-Dip — Kresse und Tomate welken in der warmen Glasur leicht an, das ist gewollt.
 
 ## Zeitplan
@@ -92,12 +110,12 @@ Die Hälfte der Essig-Zwiebeln samt 2 EL Lake über die Kresse und Tomaten, das 
 | Zeit | Schritt |
 |---|---|
 | T−2:40 | Fleisch würfeln, trocknen, trocken marinieren → Kühlschrank |
-| T−0:50 | Sauce anrühren; Essig-Zwiebeln ansetzen; Dip, Limetten, Kresse, Tomaten vorbereiten |
-| T−0:35 | Reis aufsetzen; Zwiebel, Frühlingszwiebeln, Knoblauch schneiden, Butter abwiegen |
+| T−0:50 | Sauce anrühren; Essig-Zwiebeln ansetzen; Dip und Salat (Dip, Limetten, Kresse, Tomaten vorbereiten) |
+| T−0:35 | Reis aufsetzen; Aromaten schneiden (Zwiebel, Frühlingszwiebeln, Knoblauch), Butter abwiegen |
 | T−0:30 | Fleisch aus dem Kühlschrank |
 | T−0:12 | Pfanne auf höchster Stufe aufheizen, Tisch decken |
 | T−0:09 | 3–4 Chargen braten, zwischendurch ggf. Deglaze |
-| T−0:02 | Aromaten → Fleisch zurück → Sauce → Butter |
+| T−0:02 | Glasieren: Aromaten → Fleisch zurück → Sauce → Butter |
 | T−0 | Anrichten, sofort essen |
 
 ## Kinder-Anpassung
@@ -138,7 +156,7 @@ Geprüft gegen den [Leitfaden](/schwangerschaft/leitfaden.md), Stand 09/2026:
 
 ## Notizen
 
-- **Variante ohne Sauce (2. Durchgang):** Schritte 2 und 7 entfallen bis auf die Aromaten — nach der letzten Charge ½ rote Zwiebel, 3 Frühlingszwiebeln und 4 Knoblauchzehen 1 Min. in 1 EL Öl braten, Fleisch zurück, 20 g Butter, 15 Sek. schwenken, fertig. Dann trägt der Limetten-Pfeffer-Dip den Geschmack allein — Dip großzügiger ansetzen (2 Limetten, 1½ TL Salz, ¾ TL Pfeffer). Puristischer, schneller, weniger Umami.
+- **Variante ohne Sauce (2. Durchgang):** „Sauce anrühren“ und „Glasieren“ entfallen bis auf die Aromaten — nach der letzten Charge ½ rote Zwiebel, 3 Frühlingszwiebeln und 4 Knoblauchzehen 1 Min. in 1 EL Öl braten, Fleisch zurück, 20 g Butter, 15 Sek. schwenken, fertig. Dann trägt der Limetten-Pfeffer-Dip den Geschmack allein — Dip großzügiger ansetzen (2 Limetten, 1½ TL Salz, ¾ TL Pfeffer). Puristischer, schneller, weniger Umami.
 - **Variante mit Marinade-Schule (nach Nguyen/Huy):** Wer die Austernsauce am Fleisch will: 1 EL Austernsauce + 1 TL Soja in die Marinade, **kein Knoblauch**, und die Würfel vor dem Braten in **1 TL Speisestärke** wenden (Huy) — die Stärke hält die Marinade am Fleisch statt in der Pfanne. Chargen dann höchstens 150 g. Ungetestet, nur falls der Phan-Weg geschmacklich nicht reicht.
 - **Cơm đỏ — Tomatenreis (klassische Beilage, nach der Schwangerschaft):** 600 g gekochten, erkalteten Jasminreis in 2 EL Öl mit 2 gehackten Knoblauchzehen anbraten, 2 EL Tomatenmark und 1 TL Fischsauce einrühren, 3–4 Min. rösten. Genau das rote Reis-Bett, auf dem das Gericht in Saigon serviert wird.
 - **Plan B gegen Einbrennen — Gusseisenpfanne:** Falls der Chargen-Fix in Edelstahl nicht reicht: eine schwere Gusseisenpfanne speichert die Hitze, die beim Einlegen der Charge nicht einbricht, und ein eingebrannter Rest lässt sich einfach ausbrennen. Mehrfach nützlich (Bulgogi, Steaks, Smashburger, Pfannenbrot) und günstig — Pattern 7 in CLAUDE.md. Erst den Fix hier validieren.

@@ -1,0 +1,1575 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/bo-luc-lac",
+  "kind": "dish",
+  "title": "Bò lúc lắc — vietnamesisches „Shaking Beef\" mit Brunnenkresse-Salat (4 Portionen)",
+  "status": "done",
+  "yields": {
+    "text": "4 Portionen",
+    "value": 4.0,
+    "unit": "Portionen"
+  },
+  "intro": "*Aktive Zeit \\~35 Min. + 2 Std. Marinieren (passiv). Equipment: schwere Edelstahlpfanne (groß, damit 150–200 g Fleisch einschichtig liegen), Fleischthermometer, kleiner Topf für Reis.*\n\nSaigoner Klassiker aus der französisch-vietnamesischen Küche: Rinderwürfel bei Maximalhitze scharf angebraten und dabei geschüttelt (*lúc lắc* = „schütteln\"), mit Zwiebeln, Knoblauch und einer Soja-Fischsaucen-Glasur, auf Brunnenkresse mit Tomaten und Essig-Zwiebeln, dazu ein Limetten-Salz-Pfeffer-Dip und Reis. Zweimal gekocht (einmal mit, einmal ohne Sauce), beide Male super lecker — aber beide Male mit einer fiesen schwarzen Kruste in der Pfanne. Dieses Rezept ist die vollständig ausgearbeitete Fassung und baut den Fix dafür ein: **die Marinade wird trocken, alles Zuckrige und der Knoblauch wandern in die Pfanne, wenn das Fleisch schon gebräunt ist.**",
+  "equipment": [
+    "schwere Edelstahlpfanne (groß",
+    "damit 150–200 g Fleisch einschichtig liegen)",
+    "Fleischthermometer",
+    "kleiner Topf für Reis"
+  ],
+  "ingredients": [
+    {
+      "id": "rindfleisch",
+      "name": "Rindfleisch, Entrecôte/Ribeye am Stück",
+      "store": "REWE Center",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "600 g"
+      },
+      "note": "Alternativen: Rinderfilet oder Hüfte/Tri-Tip, siehe Beschaffung"
+    },
+    {
+      "id": "brunnenkresse",
+      "name": "Brunnenkresse",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "150 g"
+      },
+      "note": "Fallback: Rucola oder Feldsalat"
+    },
+    {
+      "id": "tomaten",
+      "name": "Tomaten, fest",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "note": "oder 250 g Cocktailtomaten"
+    },
+    {
+      "id": "zwiebel",
+      "name": "Zwiebel, rot, groß",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "½ fürs Pickle, ½ für die Pfanne"
+    },
+    {
+      "id": "fruehlingszwiebeln",
+      "name": "Frühlingszwiebeln",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      },
+      "note": "Verbrauch 3 Stück"
+    },
+    {
+      "id": "knoblauch",
+      "name": "Knoblauch",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Knolle"
+      },
+      "note": "Verbrauch 4 Zehen"
+    },
+    {
+      "id": "limetten",
+      "name": "Limetten",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3"
+      },
+      "note": "Verbrauch 2 — eine Reserve, Limetten sind ungleich saftig"
+    },
+    {
+      "id": "butter",
+      "name": "Butter",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "20 g"
+      }
+    },
+    {
+      "id": "austernsauce",
+      "name": "Austernsauce",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Verbrauch 1 EL"
+    },
+    {
+      "id": "fischsauce",
+      "name": "Fischsauce",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Verbrauch 1½ EL"
+    },
+    {
+      "id": "sojasauce",
+      "name": "Sojasauce, hell",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Verbrauch 2 EL"
+    },
+    {
+      "id": "reisessig",
+      "name": "Reisessig, ungewürzt",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Verbrauch 2½ EL"
+    },
+    {
+      "id": "jasminreis",
+      "name": "Jasminreis",
+      "store": "Vorrat",
+      "buy": {
+        "text": "300 g"
+      },
+      "pantry": true,
+      "note": "GDM: zusätzlich oder stattdessen 100 g Naturreis, siehe Schwangerschaft & GDM"
+    },
+    {
+      "id": "oel",
+      "name": "Öl, neutral",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Verbrauch \\~5 EL"
+    },
+    {
+      "id": "zucker",
+      "name": "Zucker",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "3 TL"
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "pfeffer",
+      "name": "Pfeffer, schwarz, aus der Mühle",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "grob"
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Stil-Entscheidung",
+      "level": 2,
+      "markdown": "Es gibt zwei Schulen, und das bisherige Import-Rezept hat beide gemischt — genau das war das Problem:\n\n- **Marinade-Schule (Andrea Nguyen, Hungry Huy, die meisten vietnamesischen Hausrezepte):** Austernsauce, Sojasauce, Zucker und gehackter Knoblauch kommen **ans Fleisch**. Im Wok über Gasflamme funktioniert das, weil der Wok die Marinade sofort verdampft und man ständig schüttelt.\n- **Slanted-Door-Schule (Charles Phan):** Marinade nur Salz, Pfeffer, etwas Zucker und Öl. Knoblauch, rote Zwiebel und Frühlingszwiebel kommen **erst nach dem Anbraten** 30 Sekunden in die Pfanne, dann eine fertig angerührte Sauce (Soja, Fischsauce, Essig, Zucker), zum Schluss Butter. Phan hat das Gericht für Pfanne und Restaurantküche gebaut — und für Filet, das man medium-rare will.\n\n**Hier: Phan-Struktur mit dem Geschmacksprofil der Marinade-Schule.** Die Austernsauce bleibt drin, aber in der Sauce statt in der Marinade; das Fleisch bekommt sie beim Glasieren trotzdem ab. Butter-Finish (die kolonial-französische Note) bleibt. Die puristische „ohne Sauce\"-Variante des zweiten Durchgangs steht in den Notizen.\n\n### Warum die Pfanne schwarz wurde — und warum das jetzt nicht mehr passiert\n\n1. **Gehackter Knoblauch in der Marinade** fällt in 250 °C heißes Öl auf Edelstahl und ist in Sekunden verkohlt — bevor das Fleisch überhaupt Farbe hat.\n2. **Austernsauce (\\~20–30 % Zucker) + Zucker + Fischsauce** tropfen vom Fleisch, sammeln sich zwischen den Würfeln, das Wasser verdampft, der Zucker verbrennt auf dem Stahl. Dieselbe Mechanik wie die eingebrannte Bulgogi-Pfanne (siehe [Bulgogi](/gerichte/bulgogi.md), Schritt 5).\n3. **300 g Würfel pro Charge** lassen die Pfannentemperatur einbrechen → das Fleisch dünstet in der eigenen Marinade, statt zu bräunen, und die Pfütze karamellisiert zu Kohle.\n\nDer Fix hat drei Teile: trockene Marinade (nur Salz, Pfeffer, 1 TL Zucker, Öl), **3–4 kleine Chargen à 150–200 g** mit ausreichend Hitze zwischendurch, und **die Sauce erst zum Schluss** — sie löst den Bratensatz in 30–60 Sekunden zur Glasur, statt 6 Minuten lang auf dem Stahl zu verbrennen. Bei Bedarf zwischen den Chargen 30 ml Wasser als Mini-Deglaze; der Ansatz wird Sauce statt Schrubbarbeit.",
+      "tags": [
+        "stil"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Fleisch (600 g am Stück, REWE Center):**\n  - **Entrecôte/Ribeye — Empfehlung in der Schwangerschaft:** Marmorierung hält die Würfel saftig, auch wenn eine Charge komplett durchgegart wird. In Vietnam sind marmorierte, eher günstige Cuts ohnehin der Normalfall.\n  - **Rinderfilet — die Slanted-Door-Wahl:** butterzart, aber nur medium-rare ein Genuss; durchgegart wird Filet trocken. Nach der Schwangerschaft die Erstwahl.\n  - **Hüfte / Tri-Tip (Bürgermeisterstück) — Budget-Option:** Andrea Nguyens Cut; mehr Biss, mehr Rindfleischgeschmack. Würfel eher 2 cm.\n  - Immer am Stück kaufen und selbst würfeln, nie „Gulasch\" — die Würfel müssen gleich groß und gleich trocken sein.\n- **Brunnenkresse:** REWE Center führt sie saisonal (Herbst/Frühjahr eher als Hochsommer), aber nicht zuverlässig. **Fallback: Rucola** (so auch im bisherigen Rezept) oder Feldsalat — beides pfeffrig/frisch genug. Nicht ersetzen durch Kopfsalat (zu wässrig).\n- **Asialaden / Vorrat:** Austernsauce (Lee Kum Kee Premium oder Megachef), Fischsauce (Red Boat / Squid — aus Thịt kho und Bún chả vermutlich vorrätig), Reisessig, helle Sojasauce. Alles auch im REWE Center erhältlich, Qualität dort okay.\n- **Kein Reiswein / Mirin:** Phan gibt 1 TL Kochreiswein in die Sauce — entfällt hier ersatzlos (Schwangerschaft), der Essig trägt die Säure.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Bò lúc lắc — vietnamesisches „Shaking Beef\" mit Brunnenkresse-Salat (4 Portionen)",
+          "steps": [
+            {
+              "id": "fleisch-wuerfeln",
+              "label": "1",
+              "heading": "**1. Fleisch würfeln (10 Min.)**",
+              "title": "Fleisch würfeln",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "600 g Fleisch von Fett- und Sehnenresten befreien, in **2,5-cm-Würfel** schneiden (Hüfte: 2 cm), mit Küchenpapier gründlich trocken tupfen.",
+              "action": "600 g Fleisch von Fett- und Sehnenresten befreien, in **2,5-cm-Würfel** schneiden (Hüfte: 2 cm), mit Küchenpapier gründlich trocken tupfen.",
+              "ingredients": [
+                {
+                  "ref": "rindfleisch",
+                  "amount": {
+                    "text": "600 g Fleisch",
+                    "value": 600.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "trocken-marinieren",
+              "label": "2",
+              "heading": "**2. Trocken marinieren (2 Std., passiv)**",
+              "title": "Trocken marinieren",
+              "duration": {
+                "typical": "PT2H",
+                "source": "2 Std."
+              },
+              "attention": "passive",
+              "text": "In einer Schüssel mit **¾ TL Salz, 1 TL grob gemahlenem schwarzem Pfeffer, 1 TL Zucker und 1 EL neutralem Öl** vermengen, bis jeder Würfel einen dünnen Film hat — es soll **keine Flüssigkeit** am Schüsselboden stehen. Abgedeckt **2 Std.** in den Kühlschrank, die **letzten 30 Min. bei Zimmertemperatur**. *Kinder-/Schwangerschafts-Aufteilung: siehe unten — dann vor dem Würzen 150 g bzw. 2 × 150 g abtrennen.*",
+              "action": "In einer Schüssel mit **¾ TL Salz, 1 TL grob gemahlenem schwarzem Pfeffer, 1 TL Zucker und 1 EL neutralem Öl** vermengen, bis jeder Würfel einen dünnen Film hat — es soll **keine Flüssigkeit** am Schüsselboden stehen.",
+              "limits": [
+                "¾ TL Salz, 1 TL grob gemahlenem schwarzem Pfeffer, 1 TL Zucker und 1 EL neutralem Öl",
+                "keine Flüssigkeit",
+                "2 Std.",
+                "letzten 30 Min. bei Zimmertemperatur"
+              ],
+              "why": "2 × 150 g abtrennen.",
+              "rescue": "Kinder-/Schwangerschafts-Aufteilung: siehe unten — dann vor dem Würzen 150 g bzw.",
+              "timers": [
+                {
+                  "label": "Trocken marinieren",
+                  "duration": {
+                    "typical": "PT2H"
+                  },
+                  "text": "2 Std."
+                },
+                {
+                  "label": "Trocken marinieren",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "30 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "¾ TL Salz",
+                    "value": 0.75,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "1 TL grob gemahlenem schwarzem Pfeffer",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "1 TL Zucker",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "1 EL neutralem Öl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "sauce-anruehren",
+              "label": "3",
+              "heading": "**3. Sauce anrühren (2 Min.)**",
+              "title": "Sauce anrühren",
+              "duration": {
+                "typical": "PT2M",
+                "source": "2 Min."
+              },
+              "text": "**2 EL helle Sojasauce, 1½ EL Fischsauce, 1 EL Austernsauce, 1 EL Reisessig, 1 TL Zucker und 2 EL Wasser** verrühren, bis der Zucker gelöst ist. Beiseitestellen. *Das Wasser ist kein Verdünner, sondern gibt der Sauce die 30 Sekunden Zeit, den Bratensatz zu lösen, bevor sie eindickt.*",
+              "action": "**2 EL helle Sojasauce, 1½ EL Fischsauce, 1 EL Austernsauce, 1 EL Reisessig, 1 TL Zucker und 2 EL Wasser** verrühren, bis der Zucker gelöst ist.",
+              "limits": [
+                "2 EL helle Sojasauce, 1½ EL Fischsauce, 1 EL Austernsauce, 1 EL Reisessig, 1 TL Zucker und 2 EL Wasser"
+              ],
+              "why": "Das Wasser ist kein Verdünner, sondern gibt der Sauce die 30 Sekunden Zeit, den Bratensatz zu lösen, bevor sie eindickt.",
+              "cues": [
+                "bis der Zucker gelöst ist"
+              ],
+              "timers": [
+                {
+                  "label": "Sauce anrühren",
+                  "duration": {
+                    "typical": "PT30S"
+                  },
+                  "text": "30 Sek"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "sojasauce",
+                  "amount": {
+                    "text": "2 EL helle Sojasauce",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "fischsauce",
+                  "amount": {
+                    "text": "1½ EL Fischsauce",
+                    "value": 1.5,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "austernsauce",
+                  "amount": {
+                    "text": "1 EL Austernsauce",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "reisessig",
+                  "amount": {
+                    "text": "1 EL Reisessig",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "1 TL Zucker",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "2 EL Wasser",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "essig-zwiebeln-ansetzen",
+              "label": "4",
+              "heading": "**4. Essig-Zwiebeln ansetzen (5 Min. + 15 Min. passiv)**",
+              "title": "Essig-Zwiebeln ansetzen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "attention": "passive",
+              "text": "½ rote Zwiebel in hauchdünne Ringe hobeln (Mandoline), 1 Min. in kaltem Wasser spülen (nimmt die Schärfe), abtropfen. Lake aus **1½ EL Reisessig, 1 TL Zucker, 1 Prise Salz, 3 Umdrehungen Pfeffer und 2 EL Wasser** anrühren, Zwiebelringe darin mindestens 15 Min. ziehen lassen. *Andrea Nguyens Dressing — die Säure gegen das reiche Fleisch. Ein Teil davon wird am Ende über die Kresse gegeben.*",
+              "action": "½ rote Zwiebel in hauchdünne Ringe hobeln (Mandoline), 1 Min. in kaltem Wasser spülen (nimmt die Schärfe), abtropfen.",
+              "limits": [
+                "1½ EL Reisessig, 1 TL Zucker, 1 Prise Salz, 3 Umdrehungen Pfeffer und 2 EL Wasser"
+              ],
+              "why": "Andrea Nguyens Dressing — die Säure gegen das reiche Fleisch. Ein Teil davon wird am Ende über die Kresse gegeben.",
+              "timers": [
+                {
+                  "label": "Essig-Zwiebeln ansetzen",
+                  "duration": {
+                    "typical": "PT1M"
+                  },
+                  "text": "1 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "zwiebel",
+                  "amount": {
+                    "text": "½ rote Zwiebel",
+                    "value": 0.5,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "reisessig",
+                  "amount": {
+                    "text": "1½ EL Reisessig",
+                    "value": 1.5,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "1 TL Zucker",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 Prise Salz",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "3 Umdrehungen Pfeffer",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "2 EL Wasser",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "after": []
+            },
+            {
+              "id": "dip-und-salat",
+              "label": "5",
+              "heading": "**5. Dip und Salat (5 Min.)**",
+              "title": "Dip und Salat",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Dip: **1 TL Salz und ½ TL grob gemahlenen Pfeffer** in einem Schälchen mischen, **Saft von 1 Limette** darübergeben — erst am Tisch verrühren, das gehört zum Ritual. Zweite Limette in Spalten schneiden. 150 g Brunnenkresse waschen, dicke Stiele entfernen, sehr gut trockenschleudern, auf einer großen Platte ausbreiten. 2 Tomaten in Spalten rundherum legen.",
+              "action": "Dip: **1 TL Salz und ½ TL grob gemahlenen Pfeffer** in einem Schälchen mischen, **Saft von 1 Limette** darübergeben — erst am Tisch verrühren, das gehört zum Ritual.",
+              "limits": [
+                "1 TL Salz und ½ TL grob gemahlenen Pfeffer",
+                "Saft von 1 Limette"
+              ],
+              "ingredients": [
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "½ TL grob gemahlenen Pfeffer",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "limetten",
+                  "amount": {
+                    "text": "1 Limette",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "brunnenkresse",
+                  "amount": {
+                    "text": "150 g Brunnenkresse",
+                    "value": 150.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "tomaten",
+                  "amount": {
+                    "text": "2 Tomaten",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "reis-aufsetzen",
+              "label": "6",
+              "heading": "**6. Reis aufsetzen (25 Min., passiv)**",
+              "title": "Reis aufsetzen",
+              "duration": {
+                "typical": "PT25M",
+                "source": "25 Min."
+              },
+              "attention": "passive",
+              "text": "300 g Jasminreis waschen und garen.",
+              "action": "300 g Jasminreis waschen und garen.",
+              "ingredients": [
+                {
+                  "ref": "jasminreis",
+                  "amount": {
+                    "text": "300 g Jasminreis",
+                    "value": 300.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "timers": [
+                {
+                  "label": "Reis aufsetzen",
+                  "duration": {
+                    "typical": "PT25M"
+                  },
+                  "text": "25 Min."
+                }
+              ],
+              "after": []
+            },
+            {
+              "id": "aromaten-schneiden",
+              "label": "7",
+              "heading": "**7. Aromaten schneiden (ca. 8 Min.)**",
+              "title": "Aromaten schneiden",
+              "duration": {
+                "typical": "PT8M",
+                "source": "ca. 8 Min.",
+                "estimated": true
+              },
+              "text": "Parallel zum Reis: ½ rote Zwiebel in 1 cm breite Spalten, 3 Frühlingszwiebeln in 3-cm-Stücke, 4 Knoblauchzehen fein hacken — **alles griffbereit neben den Herd**, die Pfannenphase dauert unter 10 Minuten. 20 g Butter abwiegen. Fleisch aus dem Kühlschrank (spätestens jetzt).",
+              "action": "Parallel zum Reis: ½ rote Zwiebel in 1 cm breite Spalten, 3 Frühlingszwiebeln in 3-cm-Stücke, 4 Knoblauchzehen fein hacken — **alles griffbereit neben den Herd**, die Pfannenphase dauert unter 10 Minuten.",
+              "limits": [
+                "alles griffbereit neben den Herd"
+              ],
+              "timers": [
+                {
+                  "label": "Aromaten schneiden",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "zwiebel",
+                  "amount": {
+                    "text": "½ rote Zwiebel",
+                    "value": 0.5,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "fruehlingszwiebeln",
+                  "amount": {
+                    "text": "3 Frühlingszwiebeln",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "4 Knoblauchzehen",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "20 g Butter",
+                    "value": 20.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "chargen-braten",
+              "label": "8",
+              "heading": "**8. Chargen braten (8–10 Min.)**",
+              "title": "Chargen braten",
+              "duration": {
+                "min": "PT8M",
+                "max": "PT10M",
+                "source": "8–10 Min."
+              },
+              "text": "Der Einbrenn-Fix: Die schwere Edelstahlpfanne bei **höchster Stufe** aufheizen, bis ein Wassertropfen sofort zerspringt und verdampft (\\~2–3 Min.). **1 EL Öl** hinein (pro Charge, insgesamt 3 EL), kurz warten, bis es flimmert. **150–200 g Würfel einschichtig mit Abstand** einlegen — sie dürfen sich nicht berühren. **1½–2 Min. nicht bewegen**, bis die Unterseite tief braun ist (nicht schwarz — wenn es schwarz wird, war Marinade an den Würfeln oder die Pfanne noch nicht heiß genug). Dann die Pfanne kräftig schütteln oder mit der Zange wenden, weitere **45–60 Sek.** für die restlichen Seiten, raus auf einen Teller. **Innen sind die Würfel jetzt medium-rare** (Kern \\~52–55 °C, zieht beim Ruhen nach). Pfanne **wieder 30–60 Sek. aufheizen**, nächstes Öl, nächste Charge. **Ist der Boden zwischen zwei Chargen dunkel gesprenkelt:** 30 ml Wasser hinein, Ansatz mit dem Pfannenwender lösen, über das fertige Fleisch gießen, Pfanne mit Küchenpapier auswischen, neu aufheizen. *Das Wasser kostet 45 Sekunden und ist der Unterschied zwischen Sauce und Kohle.*",
+              "action": "Der Einbrenn-Fix: Die schwere Edelstahlpfanne bei **höchster Stufe** aufheizen, bis ein Wassertropfen sofort zerspringt und verdampft (\\~2–3 Min.).",
+              "limits": [
+                "höchster Stufe",
+                "1 EL Öl",
+                "150–200 g Würfel einschichtig mit Abstand",
+                "1½–2 Min. nicht bewegen",
+                "45–60 Sek.",
+                "Innen sind die Würfel jetzt medium-rare",
+                "wieder 30–60 Sek. aufheizen"
+              ],
+              "why": "Das Wasser kostet 45 Sekunden und ist der Unterschied zwischen Sauce und Kohle.",
+              "rescue": "**Ist der Boden zwischen zwei Chargen dunkel gesprenkelt:** 30 ml Wasser hinein, Ansatz mit dem Pfannenwender lösen, über das fertige Fleisch gießen, Pfanne mit Küchenpapier auswischen, neu aufheizen.",
+              "cues": [
+                "bis es flimmert",
+                "bis die Unterseite tief braun ist (nicht schwarz"
+              ],
+              "timers": [
+                {
+                  "label": "Chargen braten",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M",
+                    "estimated": true
+                  },
+                  "text": "\\~2–3 Min."
+                },
+                {
+                  "label": "Chargen braten",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT2M"
+                  },
+                  "text": "1½–2 Min."
+                },
+                {
+                  "label": "Chargen braten",
+                  "duration": {
+                    "min": "PT45S",
+                    "max": "PT60S"
+                  },
+                  "text": "45–60 Sek."
+                },
+                {
+                  "label": "Chargen braten",
+                  "duration": {
+                    "min": "PT30S",
+                    "max": "PT60S"
+                  },
+                  "text": "30–60 Sek."
+                },
+                {
+                  "label": "Chargen braten",
+                  "duration": {
+                    "typical": "PT45S"
+                  },
+                  "text": "45 Sek"
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "kern",
+                  "text": "52–55 °C",
+                  "min": 52,
+                  "max": 55
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "1 EL Öl",
+                    "value": 1.0,
+                    "unit": "EL",
+                    "times": 3
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "30 ml Wasser",
+                    "value": 30.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*nach Trocken marinieren, Aromaten schneiden · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:trocken-marinieren",
+                "step:aromaten-schneiden"
+              ]
+            },
+            {
+              "id": "glasieren",
+              "label": "9",
+              "heading": "**9. Glasieren (2 Min.)**",
+              "title": "Glasieren",
+              "duration": {
+                "typical": "PT2M",
+                "source": "2 Min."
+              },
+              "text": "Aromaten, Sauce, Butter: Hitze auf hoch (nicht mehr maximal). **1 EL Öl**, dann **die ½ rote Zwiebel in Spalten und die 3 Frühlingszwiebeln in Stücken** 45 Sek. schütteln, **die 4 gehackten Knoblauchzehen** dazu, **15–20 Sek.** — nur bis es duftet, nicht bräunen. Fleisch samt Fleischsaft zurück in die Pfanne, **die Sauce aus „Sauce anrühren“ komplett angießen** — sie zischt, löst den Bratensatz, und in **30–60 Sek.** Schütteln zieht sie zur glänzenden Glasur an. **Die 20 g Butter** einschwenken, sobald sie geschmolzen ist: **sofort raus.** Länger = die Glasur wird zu Sirup und das Fleisch übergart.",
+              "action": "Aromaten, Sauce, Butter: Hitze auf hoch (nicht mehr maximal).",
+              "limits": [
+                "1 EL Öl",
+                "die ½ rote Zwiebel in Spalten und die 3 Frühlingszwiebeln in Stücken",
+                "die 4 gehackten Knoblauchzehen",
+                "15–20 Sek.",
+                "die Sauce aus „Sauce anrühren“ komplett angießen",
+                "30–60 Sek.",
+                "Die 20 g Butter",
+                "sofort raus."
+              ],
+              "cues": [
+                "bis es duftet"
+              ],
+              "timers": [
+                {
+                  "label": "Glasieren",
+                  "duration": {
+                    "typical": "PT45S"
+                  },
+                  "text": "45 Sek."
+                },
+                {
+                  "label": "Glasieren",
+                  "duration": {
+                    "min": "PT15S",
+                    "max": "PT20S"
+                  },
+                  "text": "15–20 Sek."
+                },
+                {
+                  "label": "Glasieren",
+                  "duration": {
+                    "min": "PT30S",
+                    "max": "PT60S"
+                  },
+                  "text": "30–60 Sek."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "1 EL Öl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zwiebel",
+                  "amount": {
+                    "text": "½ rote Zwiebel",
+                    "value": 0.5,
+                    "unit": "Stück"
+                  },
+                  "reuse": true
+                },
+                {
+                  "ref": "fruehlingszwiebeln",
+                  "amount": {
+                    "text": "3 Frühlingszwiebeln",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  },
+                  "reuse": true
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "4 gehackten Knoblauchzehen",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  },
+                  "reuse": true
+                },
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "20 g Butter",
+                    "value": 20.0,
+                    "unit": "g"
+                  },
+                  "reuse": true
+                }
+              ],
+              "meta": "*nach Chargen braten, Sauce anrühren · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:chargen-braten",
+                "step:sauce-anruehren"
+              ]
+            },
+            {
+              "id": "anrichten",
+              "label": "10",
+              "heading": "**10. Anrichten (ca. 3 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT3M",
+                "source": "ca. 3 Min.",
+                "estimated": true
+              },
+              "text": "Die Hälfte der Essig-Zwiebeln samt 2 EL Lake über die Kresse und Tomaten, das Fleisch mit aller Glasur darauf, restliche Zwiebelringe obenauf. Limettenspalten und Dip dazu, Reis separat. Jeder tunkt die Würfel in den Limetten-Pfeffer-Dip — Kresse und Tomate welken in der warmen Glasur leicht an, das ist gewollt.",
+              "action": "Die Hälfte der Essig-Zwiebeln samt 2 EL Lake über die Kresse und Tomaten, das Fleisch mit aller Glasur darauf, restliche Zwiebelringe obenauf.",
+              "ingredients": [],
+              "meta": "*nach Glasieren, Essig-Zwiebeln ansetzen, Dip und Salat, Reis aufsetzen*",
+              "attention": "active",
+              "after": [
+                "step:glasieren",
+                "step:essig-zwiebeln-ansetzen",
+                "step:dip-und-salat",
+                "step:reis-aufsetzen"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "kochtag",
+            "text": "Fleisch würfeln, trocknen, trocken marinieren → Kühlschrank",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT160M"
+            },
+            "source": "T−2:40",
+            "steps": [
+              "fleisch-wuerfeln",
+              "trocken-marinieren"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Sauce anrühren; Essig-Zwiebeln ansetzen; Dip und Salat (Dip, Limetten, Kresse, Tomaten vorbereiten)",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT50M"
+            },
+            "source": "T−0:50",
+            "steps": [
+              "dip-und-salat",
+              "essig-zwiebeln-ansetzen",
+              "sauce-anruehren"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Reis aufsetzen; Aromaten schneiden (Zwiebel, Frühlingszwiebeln, Knoblauch), Butter abwiegen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT35M"
+            },
+            "source": "T−0:35",
+            "steps": [
+              "aromaten-schneiden",
+              "reis-aufsetzen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Fleisch aus dem Kühlschrank",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT30M"
+            },
+            "source": "T−0:30"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Pfanne auf höchster Stufe aufheizen, Tisch decken",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT12M"
+            },
+            "source": "T−0:12"
+          },
+          {
+            "phase": "kochtag",
+            "text": "3–4 Chargen braten, zwischendurch ggf. Deglaze",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT9M"
+            },
+            "source": "T−0:09",
+            "steps": [
+              "chargen-braten"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Glasieren: Aromaten → Fleisch zurück → Sauce → Butter",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT2M"
+            },
+            "source": "T−0:02",
+            "steps": [
+              "glasieren"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Anrichten, sofort essen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT0M"
+            },
+            "source": "T−0",
+            "steps": [
+              "anrichten"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Kein Chili im Gericht** — die einzige Schärfe ist der grobe Pfeffer, und der sitzt in der Marinade. Vor dem Würzen **150 g Würfel abtrennen** und nur mit ⅛ TL Salz, ¼ TL Zucker und ½ TL Öl marinieren (ohne Pfeffer). Diese Portion als **erste Charge** braten (sauberste Pfanne) und **vor dem Glasieren** 4–5 Würfel für den Kinderteller herausnehmen — oder mitglasieren, die Sauce ist mild (Soja/Austernsauce hat er gern).\n- **Dip nur für Erwachsene** (½ TL Pfeffer auf 2 EL Limettensaft ist scharf-sauer). Für das Kind Tomatenspalten, ein paar Kresseblätter, Reis und Fleisch getrennt auf dem Teller; Limettenspalte zum Selberdrücken, wenn er mag.\n- Würfel für einen Dreijährigen halbieren — 2,5 cm Rind ist ein großer Bissen.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "Geprüft gegen den [Leitfaden](/schwangerschaft/leitfaden.md), Stand 09/2026:\n\n- **Rind muss durch (≥ 70 °C, Garpunkte-Spickzettel gilt nicht).** Medium-rare-Würfel sind für die Schwangere tabu → **eigene Charge**: vor dem Marinieren **150 g Würfel abtrennen und auf 2 cm nachschneiden**, normal würzen. Diese Charge **2 Min. pro Seite plus 1 Min. schüttelnd** braten und mit dem Thermometer den dicksten Würfel prüfen — **Ziel 70–72 °C** (das ist bei 2-cm-Würfeln schnell erreicht, deshalb kleiner schneiden statt länger braten). Bei Ribeye/Entrecôte bleibt das durch die Marmorierung saftig; deshalb steht dieser Cut oben als Empfehlung. Beim Glasieren am Ende die Charge einfach mitschwenken — die 60 Sekunden ändern am Garzustand nichts mehr.\n- **Kein Alkohol:** Phans Reiswein entfällt, sonst enthält das Gericht nichts Alkoholisches. Austern-, Fisch- und Sojasauce sind erhitzt und unkritisch.\n- **Zucker:** 3 TL im ganzen Gericht (\\~12 g auf 4 Portionen), davon 1 TL im Pickle, das nur anteilig mitgegessen wird. Nicht erhöhen; Phans Original hat mit ¼ Cup Zucker in der Sauce das Vierfache.\n- **KH pro Portion:** Fleisch, Kresse, Tomate, Glasur ≈ 5 g. Der Reis ist die einzige Stellschraube: **40 g Naturreis (roh) ≈ 30 g KH** als eigene kleine Portion, oder Jasminreis weglassen und den Kresse-Tomaten-Anteil verdoppeln (dann Salat mit 1 EL Olivenöl anmachen, damit Fett dabei ist). Beides eingebettet in \\~35 g Protein pro Portion — ideale GDM-Struktur.\n- **Cơm đỏ (Tomatenreis)**, die klassische Beilage, ist gebratener Jasminreis mit Tomatenmark und Fischsauce → erst nach der Schwangerschaft (siehe Notizen).\n- Rohkost (Kresse, Tomaten) gründlich waschen. Nach dem Essen ein Spaziergang.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "learnings",
+      "title": "Learnings",
+      "cooked": "09/2026",
+      "summary": "**Gekocht 2× (vor 09/2026, mit dem Import-Rezept).** Super lecker — einmal mit Sauce, einmal ohne, beides funktioniert und wandert in die Rotation. Schwachpunkt beide Male: eine fiese schwarze, eingebrannte Kruste in der Edelstahlpfanne. Ursache analysiert: gehackter Knoblauch plus Austernsauce/Zucker in der Marinade auf Maximalhitze, dazu zu volle Chargen (300 g). Fix in dieses Rezept eingebaut (Phan-Struktur: trockene Marinade, Knoblauch und Sauce erst nach dem Anbraten; 3–4 kleine Chargen; Wasser-Deglaze zwischendurch) — beim nächsten Mal zu validieren.",
+      "details": "### Details\n\n- **Kruste-Analyse:** Nicht das Gericht ist schuld, sondern die Reihenfolge. Die Marinade-Schule (Austernsauce + Knoblauch am Fleisch) stammt aus der Wok-Küche über Gasflamme, wo die Marinade sofort verdampft. In einer Edelstahlpfanne mit Haushaltsherd poolt sie stattdessen. Charles Phans Slanted-Door-Rezept löst genau das: Marinade nur Salz/Pfeffer/Öl, alles andere in den letzten 90 Sekunden.\n- **Mit oder ohne Sauce:** Beide Durchgänge waren gut. Die Sauce-Version ist reicher und näher am Restaurant-Bild, die Version ohne (nur Marinade + Dip) puristischer und schneller. Rezept-Standard ist mit Sauce; „ohne\" steht in den Notizen.\n- **Import-Rezept** (Kurzformat, INGREDIENTS/STEPS) war eine Nguyen-Marinade mit Phan-Butter-Finish — 600 g Filet oder Ribeye, 4 Knoblauchzehen, 2 EL Austernsauce, 1 EL Fischsauce, 1 TL Zucker, 1 TL Pfeffer in der Marinade; Sauce 2 EL Soja, 1 EL Austernsauce, 1 EL Reisessig, 1 TL Zucker; Butter. Mengen hier weitgehend übernommen, nur umverteilt."
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Struktur (trockene Marinade, Knoblauch in der Pfanne, Sauce zum Schluss, Butter, Watercress, Limetten-Salz-Pfeffer-Dip):** Charles Phan / The Slanted Door — Rezeptfassungen bei [7x7](https://www.7x7.com/secret-recipe-slanted-door-shaking-beef-1781315078.html), [Saveur](https://www.saveur.com/recipes/bo-luc-lac-shaking-beef/) und [The Caterer](https://www.thecaterer.com/news/shaking-beef-bo-luc-lac-by-charles-phan). Phan mariniert Filet nur mit Salz, Pfeffer und Öl (\\~2 Std.), brät in ¼ Cup Öl bei Maximalhitze 3–4 Min., gibt dann Zwiebel/Frühlingszwiebel/Knoblauch 30 Sek. dazu, Sauce (Essig, Zucker, Soja, Fischsauce, 1 TL Reiswein), Butter. Unsere Sauce hat ein Viertel seines Zuckers und keinen Reiswein.\n- **Geschmacksprofil der Marinade-Schule und das Essig-Schalotten-Dressing:** Andrea Nguyen, [Viet World Kitchen — Wok-Seared „Shaking\" Beef](https://www.vietworldkitchen.com/blog/2008/05/wok-seared-shak.html) (Tri-Tip in 2-cm-Würfeln, Marinade aus Austernsauce/Soja/Fischsauce/Zucker/Knoblauch, Dressing aus Reisessig, Zucker, Salz, Pfeffer, Wasser, Schalotte). Ihre Austernsauce ist hier in die Sauce gewandert.\n- **Cơm đỏ, Stärke-Coating, Ribeye-Argument:** [Hungry Huy — Bò Lúc Lắc](https://www.hungryhuy.com/bo-luc-lac-recipe/). Huy wendet die marinierten Würfel in Speisestärke, die bindet die Marinade am Fleisch — eine Alternative, falls man doch mit Austernsauce marinieren will (siehe Notizen).\n- **Einbrenn-Mechanik:** eigenes Bulgogi-Learning ([Bulgogi](/gerichte/bulgogi.md), Schritt 5 und Learnings) — kleine Chargen, Fleisch abtropfen, Wasser-Deglaze, Zucker niedrig.\n- **Cut-Entscheidung:** Filet ist Phans Restaurant-Wahl, Nguyen argumentiert für günstigere, marmorierte Cuts mit Biss. Wegen der Schwangerschaft (eine Charge durchgegart) steht Ribeye/Entrecôte als Empfehlung oben, Filet als Erstwahl danach.\n- Serious Eats ist per WebFetch nicht abrufbar (bekannt), daher nicht als Quelle herangezogen.",
+      "tags": [
+        "quellen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Variante ohne Sauce (2. Durchgang):** „Sauce anrühren“ und „Glasieren“ entfallen bis auf die Aromaten — nach der letzten Charge ½ rote Zwiebel, 3 Frühlingszwiebeln und 4 Knoblauchzehen 1 Min. in 1 EL Öl braten, Fleisch zurück, 20 g Butter, 15 Sek. schwenken, fertig. Dann trägt der Limetten-Pfeffer-Dip den Geschmack allein — Dip großzügiger ansetzen (2 Limetten, 1½ TL Salz, ¾ TL Pfeffer). Puristischer, schneller, weniger Umami.\n- **Variante mit Marinade-Schule (nach Nguyen/Huy):** Wer die Austernsauce am Fleisch will: 1 EL Austernsauce + 1 TL Soja in die Marinade, **kein Knoblauch**, und die Würfel vor dem Braten in **1 TL Speisestärke** wenden (Huy) — die Stärke hält die Marinade am Fleisch statt in der Pfanne. Chargen dann höchstens 150 g. Ungetestet, nur falls der Phan-Weg geschmacklich nicht reicht.\n- **Cơm đỏ — Tomatenreis (klassische Beilage, nach der Schwangerschaft):** 600 g gekochten, erkalteten Jasminreis in 2 EL Öl mit 2 gehackten Knoblauchzehen anbraten, 2 EL Tomatenmark und 1 TL Fischsauce einrühren, 3–4 Min. rösten. Genau das rote Reis-Bett, auf dem das Gericht in Saigon serviert wird.\n- **Plan B gegen Einbrennen — Gusseisenpfanne:** Falls der Chargen-Fix in Edelstahl nicht reicht: eine schwere Gusseisenpfanne speichert die Hitze, die beim Einlegen der Charge nicht einbricht, und ein eingebrannter Rest lässt sich einfach ausbrennen. Mehrfach nützlich (Bulgogi, Steaks, Smashburger, Pfannenbrot) und günstig — Pattern 7 in CLAUDE.md. Erst den Fix hier validieren.\n- **Reste:** Kaltes Lúc lắc auf dem Kresse-Rest mit den Essig-Zwiebeln ist am nächsten Tag ein sehr guter Salat; nicht aufwärmen (übergart in Sekunden).",
+      "tags": [
+        "notizen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T14:35:43Z",
+    "sourceHash": "992b52bb0b6af1df",
+    "quantities": [
+      {
+        "ingredient": "rindfleisch",
+        "total": {
+          "text": "600 g",
+          "value": 600.0,
+          "max": 600.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "600 g Fleisch"
+        }
+      },
+      {
+        "ingredient": "brunnenkresse",
+        "total": {
+          "text": "150 g",
+          "value": 150.0,
+          "max": 150.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "150 g Brunnenkresse"
+        }
+      },
+      {
+        "ingredient": "tomaten",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 Tomaten"
+        }
+      },
+      {
+        "ingredient": "zwiebel",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "½ rote Zwiebel + ½ rote Zwiebel"
+        }
+      },
+      {
+        "ingredient": "fruehlingszwiebeln",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "3 Frühlingszwiebeln"
+        }
+      },
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": "4",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "4 Knoblauchzehen"
+        }
+      },
+      {
+        "ingredient": "limetten",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Limette"
+        }
+      },
+      {
+        "ingredient": "butter",
+        "total": {
+          "text": "20 g",
+          "value": 20.0,
+          "max": 20.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "20 g Butter"
+        }
+      },
+      {
+        "ingredient": "austernsauce",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 EL Austernsauce"
+        }
+      },
+      {
+        "ingredient": "fischsauce",
+        "total": {
+          "text": "1½ EL",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1½ EL Fischsauce"
+        }
+      },
+      {
+        "ingredient": "sojasauce",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 EL helle Sojasauce"
+        }
+      },
+      {
+        "ingredient": "reisessig",
+        "total": {
+          "text": "2½ EL",
+          "value": 2.5,
+          "max": 2.5,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 EL Reisessig + 1½ EL Reisessig"
+        }
+      },
+      {
+        "ingredient": "jasminreis",
+        "total": {
+          "text": "300 g",
+          "value": 300.0,
+          "max": 300.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "300 g Jasminreis"
+        }
+      },
+      {
+        "ingredient": "oel",
+        "total": {
+          "text": "5 EL",
+          "value": 5.0,
+          "max": 5.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 EL neutralem Öl + 1 EL Öl ×3 + 1 EL Öl"
+        }
+      },
+      {
+        "ingredient": "zucker",
+        "total": {
+          "text": "3 TL",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 TL Zucker + 1 TL Zucker + 1 TL Zucker"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "1¾ TL (+ Prise ungemischt)",
+          "value": 1.75,
+          "max": 1.75,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "¾ TL Salz + 1 TL Salz"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": "1½ TL (+ Stück ungemischt)",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 TL grob gemahlenem schwarzem Pfeffer + ½ TL grob gemahlenen Pfeffer"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "4 EL (+ ml ungemischt)",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 EL Wasser + 2 EL Wasser"
+        },
+        "unitMixed": true
+      }
+    ],
+    "shopping": [
+      {
+        "store": "REWE Center",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "brunnenkresse",
+            "name": "Brunnenkresse",
+            "need": {
+              "text": "150 g",
+              "value": 150.0,
+              "max": 150.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "150 g",
+            "inStock": false,
+            "buy": {
+              "text": "150 g"
+            },
+            "note": "Fallback: Rucola oder Feldsalat"
+          },
+          {
+            "ingredient": "tomaten",
+            "name": "Tomaten, fest",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "oder 250 g Cocktailtomaten"
+          },
+          {
+            "ingredient": "zwiebel",
+            "name": "Zwiebel, rot, groß",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "½ fürs Pickle, ½ für die Pfanne"
+          },
+          {
+            "ingredient": "fruehlingszwiebeln",
+            "name": "Frühlingszwiebeln",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            },
+            "note": "Verbrauch 3 Stück"
+          },
+          {
+            "ingredient": "knoblauch",
+            "name": "Knoblauch",
+            "need": {
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "4",
+            "inStock": false,
+            "buy": {
+              "text": "1 Knolle"
+            },
+            "note": "Verbrauch 4 Zehen"
+          },
+          {
+            "ingredient": "limetten",
+            "name": "Limetten",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            },
+            "note": "Verbrauch 2 — eine Reserve, Limetten sind ungleich saftig"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "rindfleisch",
+            "name": "Rindfleisch, Entrecôte/Ribeye am Stück",
+            "need": {
+              "text": "600 g",
+              "value": 600.0,
+              "max": 600.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "600 g",
+            "inStock": false,
+            "buy": {
+              "text": "600 g"
+            },
+            "note": "Alternativen: Rinderfilet oder Hüfte/Tri-Tip, siehe Beschaffung"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "butter",
+            "name": "Butter",
+            "need": {
+              "text": "20 g",
+              "value": 20.0,
+              "max": 20.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "20 g",
+            "inStock": false,
+            "buy": {
+              "text": "20 g"
+            }
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "austernsauce",
+            "name": "Austernsauce",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "Verbrauch 1 EL"
+          },
+          {
+            "ingredient": "fischsauce",
+            "name": "Fischsauce",
+            "need": {
+              "text": "1½ EL",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1½ EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "Verbrauch 1½ EL"
+          },
+          {
+            "ingredient": "sojasauce",
+            "name": "Sojasauce, hell",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "Verbrauch 2 EL"
+          },
+          {
+            "ingredient": "reisessig",
+            "name": "Reisessig, ungewürzt",
+            "need": {
+              "text": "2½ EL",
+              "value": 2.5,
+              "max": 2.5,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2½ EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "Verbrauch 2½ EL"
+          },
+          {
+            "ingredient": "jasminreis",
+            "name": "Jasminreis",
+            "need": {
+              "text": "300 g",
+              "value": 300.0,
+              "max": 300.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "300 g",
+            "inStock": false,
+            "buy": {
+              "text": "300 g"
+            },
+            "pantry": true,
+            "note": "GDM: zusätzlich oder stattdessen 100 g Naturreis, siehe Schwangerschaft & GDM"
+          },
+          {
+            "ingredient": "oel",
+            "name": "Öl, neutral",
+            "need": {
+              "text": "5 EL",
+              "value": 5.0,
+              "max": 5.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "5 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "Verbrauch \\~5 EL"
+          },
+          {
+            "ingredient": "zucker",
+            "name": "Zucker",
+            "need": {
+              "text": "3 TL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "3 TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "3 TL"
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "1¾ TL (+ Prise ungemischt)",
+              "value": 1.75,
+              "max": 1.75,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1¾ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Pfeffer, schwarz, aus der Mühle",
+            "need": {
+              "text": "1½ TL (+ Stück ungemischt)",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1½ TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "grob"
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "4 EL (+ ml ungemischt)",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "4 EL",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}

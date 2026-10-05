@@ -133,6 +133,9 @@ function shoppingHtml() {
   if (!d) return `<p class="empty">Kein <code>derived</code>-Block im JSON — <code>cli derive</code> ausführen.</p>`;
   const f = factor();
   let html = "", store = null;
+  // Vorne das Gebinde (was man kauft), der Bedarf nur, wenn er abweicht: „1 Bund Frühlingszwiebeln · braucht 3“
+  const flat = (x) => (x || "").replace(/\s+/g, "").replace(/^~|\\~/g, "");
+  const needNote = (buy, need) => buy && need && flat(buy) !== flat(need) ? ` <span class="fine">· braucht ${esc(need)}</span>` : "";
   for (const g of d.shopping) {
     if (g.store !== store) { store = g.store; html += `<h3>${esc(store)}</h3>`; }
     if (g.group) html += `<p class="fine"><b>${esc(g.group)}</b></p>`;
@@ -142,7 +145,7 @@ function shoppingHtml() {
       const note = it.note ? ` <span class="fine">${mdInline(it.note.replace(/^\*\(?|\)?\*$/g, ""))}</span>` : "";
       const crs = (ingById[it.ingredient]?.courses || []).map((c) => c.replace("gang-", "G")).join("+");
       return `<li class="${have ? "have" : ""}"><input type="checkbox" class="chk" data-shop="${it.ingredient}" ${have ? "checked" : ""}>
-        <span>${it.optional ? "Optional: " : ""}${it.buy ? esc(it.buy.text) + " " : ""}${need ? esc(need) + " " : ""}${esc(it.name)}${crs ? ` <span class="fine">(${crs})</span>` : ""}${note}</span></li>`;
+        <span>${it.optional ? "Optional: " : ""}${esc(it.buy?.text || need || "")} ${esc(it.name)}${needNote(it.buy?.text, need)}${crs ? ` <span class="fine">(${crs})</span>` : ""}${note}</span></li>`;
     }).join("") + `</ul>`;
   }
   return html;

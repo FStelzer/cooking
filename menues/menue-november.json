@@ -2194,6 +2194,14 @@
                           }
                         },
                         {
+                          "ref": "oel",
+                          "amount": {
+                            "text": "1 EL Öl",
+                            "value": 1.0,
+                            "unit": "EL"
+                          }
+                        },
+                        {
                           "ref": "lammschulter",
                           "amount": {
                             "text": "2–2,2 kg",
@@ -2784,8 +2792,8 @@
                         "source": "ca. 25 Min.",
                         "estimated": true
                       },
-                      "text": "Chips frittieren (1–2 Std. vor Service, eine Öl-Session, \\~1 L Öl im Topf, Thermometer): zuerst 150 g Sellerie-Scheiben von der Mandoline (1,5–2 mm, gut trockengetupft — nicht wässern nötig) bei 170–180 °C 2–3 Min. bis **hellgold** (färben nach dem Rausnehmen nach!, schrumpfen um \\~70 % — großzügig hobeln). Dann die restlichen Rosenkohlblätter (**knochentrocken**, sonst spritzt es) in kleinen Chargen \\~30 Sek. bei 175 °C — dunkelgrün und knusprig, nicht braun (bitter).",
-                      "action": "Chips frittieren (1–2 Std. vor Service, eine Öl-Session, \\~1 L Öl im Topf, Thermometer): zuerst 150 g Sellerie-Scheiben von der Mandoline (1,5–2 mm, gut trockengetupft — nicht wässern nötig) bei 170–180 °C 2–3 Min. bis **hellgold** (färben nach dem Rausnehmen nach!, schrumpfen um \\~70 % — großzügig hobeln).",
+                      "text": "Chips frittieren (1–2 Std. vor Service, eine Öl-Session, \\~1 L Frittieröl im Topf, Thermometer): zuerst 150 g Sellerie-Scheiben von der Mandoline (1,5–2 mm, gut trockengetupft — nicht wässern nötig) bei 170–180 °C 2–3 Min. bis **hellgold** (färben nach dem Rausnehmen nach!, schrumpfen um \\~70 % — großzügig hobeln). Dann die restlichen Rosenkohlblätter (**knochentrocken**, sonst spritzt es) in kleinen Chargen \\~30 Sek. bei 175 °C — dunkelgrün und knusprig, nicht braun (bitter).",
+                      "action": "Chips frittieren (1–2 Std. vor Service, eine Öl-Session, \\~1 L Frittieröl im Topf, Thermometer): zuerst 150 g Sellerie-Scheiben von der Mandoline (1,5–2 mm, gut trockengetupft — nicht wässern nötig) bei 170–180 °C 2–3 Min. bis **hellgold** (färben nach dem Rausnehmen nach!, schrumpfen um \\~70 % — großzügig hobeln).",
                       "timers": [
                         {
                           "label": "Chips frittieren",
@@ -2818,6 +2826,14 @@
                         }
                       ],
                       "ingredients": [
+                        {
+                          "ref": "frittieroel",
+                          "amount": {
+                            "text": "1 L Frittieröl",
+                            "value": 1.0,
+                            "unit": "l"
+                          }
+                        },
                         {
                           "ref": "knollensellerie",
                           "amount": {
@@ -4153,8 +4169,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T14:25:43Z",
-    "sourceHash": "6248b762412c0e64",
+    "generatedAt": "2026-10-05T14:33:54Z",
+    "sourceHash": "9e08aeb241f187f3",
     "quantities": [
       {
         "ingredient": "verjus",
@@ -4887,9 +4903,23 @@
       {
         "ingredient": "frittieroel",
         "total": {
-          "text": ""
+          "text": "1000 ml",
+          "value": 1000.0,
+          "max": 1000.0,
+          "unit": "ml",
+          "approx": false
         },
-        "perTask": {}
+        "perTask": {
+          "rosenkohl-zweierlei-und-sellerie-chips": "1 L Frittieröl"
+        },
+        "perCourse": {
+          "gang-3": {
+            "text": "1000 ml",
+            "value": 1000.0,
+            "max": 1000.0,
+            "unit": "ml"
+          }
+        }
       },
       {
         "ingredient": "selleriesalz",
@@ -5105,7 +5135,7 @@
       {
         "ingredient": "honig",
         "total": {
-          "text": "1,5 TL",
+          "text": "1½ TL",
           "value": 1.5,
           "max": 1.5,
           "unit": "TL",
@@ -5117,7 +5147,7 @@
         },
         "perCourse": {
           "gang-2": {
-            "text": "1,5 TL",
+            "text": "1½ TL",
             "value": 1.5,
             "max": 1.5,
             "unit": "TL"
@@ -5226,9 +5256,23 @@
       {
         "ingredient": "oel",
         "total": {
-          "text": ""
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
         },
-        "perTask": {}
+        "perTask": {
+          "lammschulter-und-jus": "1 EL Öl"
+        },
+        "perCourse": {
+          "gang-3": {
+            "text": "1 EL",
+            "value": 1.0,
+            "max": 1.0,
+            "unit": "EL"
+          }
+        }
       },
       {
         "ingredient": "wasser",
@@ -5883,9 +5927,13 @@
             "ingredient": "frittieroel",
             "name": "Frittieröl",
             "need": {
-              "text": ""
+              "text": "1000 ml",
+              "value": 1000.0,
+              "max": 1000.0,
+              "unit": "ml",
+              "approx": false
             },
-            "display": "",
+            "display": "1000 ml",
             "inStock": false,
             "buy": {
               "text": "1–2 L"
@@ -6028,13 +6076,13 @@
             "ingredient": "honig",
             "name": "Honig",
             "need": {
-              "text": "1,5 TL",
+              "text": "1½ TL",
               "value": 1.5,
               "max": 1.5,
               "unit": "TL",
               "approx": false
             },
-            "display": "1,5 TL",
+            "display": "1½ TL",
             "inStock": false,
             "pantry": true
           },
@@ -6098,9 +6146,13 @@
             "ingredient": "oel",
             "name": "Öl",
             "need": {
-              "text": ""
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
             },
-            "display": "",
+            "display": "1 EL",
             "inStock": false,
             "pantry": true
           },

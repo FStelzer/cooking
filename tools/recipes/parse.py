@@ -22,7 +22,7 @@ GROUP_WORDS = [("obst", "Obst & Gemüse"), ("gemüse", "Obst & Gemüse"), ("flei
 SECTION_TAGS = [("kind", "kind"), ("schwangerschaft", "schwangerschaft"), ("beschaffung", "beschaffung"), ("quellen", "quellen"),
                 ("notizen", "notizen"), ("stil-entscheidung", "stil"), ("teller-logik", "teller-logik"), ("konzept", "teller-logik"),
                 ("profi-tipps", "profi-tipps"), ("fehlerbild", "fehlerbild")]
-DOSE_UNITS = ("kg", "g", "ml", "l", "EL", "TL", "Prisen", "Prise", "Tropfen", "Zweige", "Zweig", "Blatt", "Umdrehung", "Schuss",
+DOSE_UNITS = ("kg", "g", "ml", "l", "L", "EL", "TL", "Prisen", "Prise", "Tropfen", "Zweige", "Zweig", "Blatt", "Umdrehung", "Schuss",
               "Stück", "Zehen", "Zehe", "Bund", "Päckchen", "Dose", "Dosen", "Glas", "Scheiben", "Scheibe", "Eigelb", "Eiweiß")
 ALIASES = {"eigelb": "eier", "eiweiß": "eier", "eiweiss": "eier", "ei": "eier"}  # Textwort → Zutaten-ID
 QTY_WORDS = ("reichlich", "etwas", "einen Schuss", "einem Schuss", "ein Schuss", "eine Prise", "einige", "großzügig")
@@ -30,7 +30,7 @@ RESCUE_START = ("Fallback", "Rettung", "Gebrochen", "Falls", "Option", "Notfall"
 RESCUE_COND = re.compile(r"^(Ist|Wird|Wenn|Sollte|Falls)\b[^.]*,")
 DUR_UNITS = r"(?:Min\.?|Minuten|Sek\.?|Sekunden|Std\.?|Stunden|h\b|Tage?\b)"
 
-NUMW = r"(?:\d+(?:[,.]\d+)?|½|¼|¾|⅓)"
+NUMW = r"(?:\d*[½¼¾⅓]|\d+(?:[,.]\d+)?)"
 RANGE = rf"{NUMW}(?:\s?[–-]\s?{NUMW})?"
 DUR_RE = re.compile(rf"(?P<ca>ca\.\s?|\\?~\s?)?(?P<lo>{NUMW})(?:\s?[–-]\s?(?P<hi>{NUMW}))?\s?(?P<u>{DUR_UNITS})")
 STEP_RE = re.compile(r"^\*\*(?P<n>\d+[a-z]?)\.\s+(?P<title>.+?)(?:\s+\((?P<paren>[^()]*(?:\([^()]*\)[^()]*)*)\))?\*\*\s*$")
@@ -66,7 +66,10 @@ def head_noun(name: str) -> str:
 
 
 def num(s: str) -> float:
-    return {"½": .5, "¼": .25, "¾": .75, "⅓": .33}.get(s) or float(s.replace(",", "."))
+    frac = {"½": .5, "¼": .25, "¾": .75, "⅓": .33}
+    if s and s[-1] in frac:  # „1½“
+        return (int(s[:-1]) if s[:-1] else 0) + frac[s[-1]]
+    return float(s.replace(",", "."))
 
 
 def iso(value: float, unit: str) -> str:
@@ -383,7 +386,7 @@ def ingredient_index(ingredients: list[dict]) -> list[tuple[str, str]]:
             continue  # qualifizierte Dublette („Brauner Zucker“): nur die Phrase zählt
         for w in re.split(r"/", head):
             w = w.strip("-").lower()
-            if len(w) >= 3: idx.append((w, ing["id"]))
+            if len(w) >= 3 or w == "öl": idx.append((w, ing["id"]))
     return sorted(set(idx), key=lambda x: (-len(x[0]), x[0], x[1]))
 
 
@@ -393,6 +396,7 @@ DOSE_RE = re.compile(
 
 
 UMLAUT_FOLD = str.maketrans("äöü", "aou")
+DOSE_STOP = {"über", "auf", "in", "im", "mit", "von", "vom", "zu", "zum", "zur", "aus", "für", "die", "der", "den", "das", "dem", "und"}
 
 
 def best_match(cand: str, idx: list[tuple[str, str]]):
@@ -438,6 +442,8 @@ def find_doses(text: str, ingredients: list[dict], lint: Lint, where: str, seen_
         toks = list(re.finditer(r"[\wäöüÄÖÜß*/-]+", ahead.group(0)))
         hit, end_tok = None, None
         for i, tok in enumerate(toks):
+            if i and tok.group(0).strip("*").lower() in DOSE_STOP:
+                break  # „2 EL Lake über die Kresse“: hinter der Präposition beginnt etwas anderes
             pm_ = phrase_match(toks, i, idx)
             if pm_:
                 hit, end_tok = pm_; break
@@ -454,11 +460,12 @@ def find_doses(text: str, ingredients: list[dict], lint: Lint, where: str, seen_
             continue
         else:
             span_start = m.start("je") if m["je"] else m.start("lo")
-            span_end = m.start("words") + end_tok.end()
+            span_end = m.start("words") + end_tok.end() - (len(end_tok.group(0)) - len(end_tok.group(0).rstrip("*")))
         span = plain[span_start:span_end]
         lo = num(m["lo"]); hi = num(m["hi"]) if m["hi"] else None
         unit = m["unit"] or "Stück"
         if unit == "Prisen": unit = "Prise"
+        if unit == "L": unit = "l"
         amount = {"text": span, "value": lo, "unit": unit}
         if hi is not None: amount["max"] = hi
         if m["je"]: amount["per"] = "Pfanne"

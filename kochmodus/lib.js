@@ -6,6 +6,7 @@ const FRACTION_VALUES = { "½": 0.5, "¼": 0.25, "¾": 0.75 };
 
 export function fmtNum(x) {
   if (FRACTIONS[x]) return FRACTIONS[x];
+  if (x > 1 && FRACTIONS[x % 1]) return `${Math.floor(x)}${FRACTIONS[x % 1]}`; // 1,5 → „1½“
   if (Number.isInteger(x)) return String(x);
   return String(Math.round(x * 100) / 100).replace(".", ",");
 }
@@ -39,7 +40,7 @@ export function scaleAmount(a, factor, ingredient) {
   return out;
 }
 
-const LEAD = /^(~?)(\d+(?:[,.]\d+)?|½|¼|¾)(\s?[–-]\s?(\d+(?:[,.]\d+)?))?/;
+const LEAD = /^(~?)(\d*[½¼¾]|\d+(?:[,.]\d+)?)(\s?[–-]\s?(\d*[½¼¾]|\d+(?:[,.]\d+)?))?/;
 
 function nthIndex(hay, needle, n) {
   let i = -1;

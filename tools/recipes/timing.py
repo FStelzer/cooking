@@ -65,6 +65,10 @@ def schedule_segments(text: str, labels: list[str]) -> list[str]:
         elif line.startswith("  ") and bullets:
             bullets[-1] += " " + line.strip()
     segs = []
+    for line in text.splitlines():  # Tabelle relativ zum Anker: | T−0:30 | Eintrag |
+        cells = [c.strip() for c in line.strip().strip("|").split("|")] if line.startswith("|") else []
+        if len(cells) >= 2 and re.match(r"^T[−-]\d", cells[0]):
+            segs.append(cells[1])
     for b in bullets:
         for lab in sorted(labels, key=len, reverse=True):
             if b.startswith(lab + ":"):

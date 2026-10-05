@@ -84,7 +84,7 @@ try {
   assert.equal(await page.locator("ul.shop li").count(), 17);
   assert.match(await page.locator("#main").innerText(), /4–5 EL Fischsauce/);
   await page.click('button[data-factor="2"]');
-  assert.match(await page.locator("#main").innerText(), /8–10 EL Fischsauce/);
+  assert.match(await page.locator("#main").innerText(), /4–5 EL Fischsauce · braucht 8–10 EL/);
   await page.click('button[data-factor="1"]');
   // Lesen: Sektionen in Dokumentreihenfolge
   await page.click('button[data-view="lesen"]');

@@ -1082,7 +1082,16 @@
                       "cues": [
                         "bis es leicht raucht"
                       ],
-                      "ingredients": [],
+                      "ingredients": [
+                        {
+                          "ref": "oel",
+                          "amount": {
+                            "text": "1 EL neutralem Öl",
+                            "value": 1.0,
+                            "unit": "EL"
+                          }
+                        }
+                      ],
                       "meta": "*Herd*",
                       "claims": [
                         {
@@ -2950,8 +2959,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T14:25:43Z",
-    "sourceHash": "c1f6332fb6b69c43",
+    "generatedAt": "2026-10-05T14:33:54Z",
+    "sourceHash": "d047da8519287215",
     "quantities": [
       {
         "ingredient": "jakobsmuscheln",
@@ -3396,7 +3405,7 @@
       {
         "ingredient": "fleur",
         "total": {
-          "text": "1,5 TL",
+          "text": "1½ TL",
           "value": 1.5,
           "max": 1.5,
           "unit": "TL",
@@ -3473,7 +3482,7 @@
       {
         "ingredient": "salz",
         "total": {
-          "text": "2,5 TL",
+          "text": "2½ TL",
           "value": 2.5,
           "max": 2.5,
           "unit": "TL",
@@ -3492,7 +3501,7 @@
             "unit": "TL"
           },
           "gang-3": {
-            "text": "1,5 TL",
+            "text": "1½ TL",
             "value": 1.5,
             "max": 1.5,
             "unit": "TL"
@@ -3533,9 +3542,23 @@
       {
         "ingredient": "oel",
         "total": {
-          "text": ""
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
         },
-        "perTask": {}
+        "perTask": {
+          "jakobsmuscheln": "1 EL neutralem Öl"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "1 EL",
+            "value": 1.0,
+            "max": 1.0,
+            "unit": "EL"
+          }
+        }
       },
       {
         "ingredient": "wasser",
@@ -3969,13 +3992,13 @@
             "ingredient": "fleur",
             "name": "Fleur de Sel",
             "need": {
-              "text": "1,5 TL",
+              "text": "1½ TL",
               "value": 1.5,
               "max": 1.5,
               "unit": "TL",
               "approx": false
             },
-            "display": "1,5 TL",
+            "display": "1½ TL",
             "inStock": false,
             "note": "hochwertiges Meersalz"
           },
@@ -4039,13 +4062,13 @@
             "ingredient": "salz",
             "name": "Salz, fein",
             "need": {
-              "text": "2,5 TL",
+              "text": "2½ TL",
               "value": 2.5,
               "max": 2.5,
               "unit": "TL",
               "approx": false
             },
-            "display": "2,5 TL",
+            "display": "2½ TL",
             "inStock": false,
             "pantry": true,
             "note": "Meersalz, zum Kochen"
@@ -4101,9 +4124,13 @@
             "ingredient": "oel",
             "name": "Öl, neutral, zum Braten",
             "need": {
-              "text": ""
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
             },
-            "display": "",
+            "display": "1 EL",
             "inStock": false,
             "pantry": true,
             "note": "Rapsöl oder Sonnenblumenöl"

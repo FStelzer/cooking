@@ -535,7 +535,7 @@ Stunden vorher passieren.
 
 **15. Chips frittieren (ca. 25 Min.)**
 *nach Rosenkohlblätter lösen · 1–2 Std. vor Service · Herd*
-Chips frittieren (1–2 Std. vor Service, eine Öl-Session, \~1 L Öl im Topf,
+Chips frittieren (1–2 Std. vor Service, eine Öl-Session, \~1 L Frittieröl im Topf,
 Thermometer): zuerst 150 g Sellerie-Scheiben von der Mandoline (1,5–2 mm, gut
 trockengetupft — nicht wässern nötig) bei 170–180 °C 2–3 Min. bis **hellgold**
 (färben nach dem Rausnehmen nach!, schrumpfen um \~70 % — großzügig hobeln).

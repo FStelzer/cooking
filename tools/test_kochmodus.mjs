@@ -18,7 +18,7 @@ t("Skalierung ×2 ersetzt beide Spans in Schritt 4, nicht die Rettung", () => {
 t("Spanne 500–600 ml ×0,5 → 250–300 ml; Stück runden auf halbe", () => {
   const out = scaleStepText(steps.schmoren.text, steps.schmoren, 0.5, ing);
   assert.match(out, /Mit 250–300 ml Kokoswasser/);
-  assert.match(out, /Die 3 Eier und 1–1,5 \*\*ganze\*\* Chilis/);
+  assert.match(out, /Die 3 Eier und 1–1½ \*\*ganze\*\* Chilis/);
 });
 t("derived-Span (Schweinebauch) bleibt unangetastet; Freitext-Mengen auch", () => {
   assert.equal(scaleStepText(steps.blanchieren.text, steps.blanchieren, 2, ing), steps.blanchieren.text);
@@ -28,7 +28,7 @@ t("Faktor 1 ist Identität", () => assert.equal(scaleStepText(steps.karamell.tex
 t("½ Salatgurke ×2 → 1 Salatgurke", () => assert.match(scaleStepText(steps["pickle-und-reis"].text, steps["pickle-und-reis"], 2, ing), /1 Salatgurke in Scheiben/));
 t("Einkauf: need skaliert mit Rundung", () => {
   const z = r.derived.quantities.find((q) => q.ingredient === "zucker").total;
-  assert.equal(fmtAmount(scaleAmount(z, 1.5, ing.zucker)), "7,5 EL");
+  assert.equal(fmtAmount(scaleAmount(z, 1.5, ing.zucker)), "7½ EL");
   const s = r.derived.quantities.find((q) => q.ingredient === "schweinebauch").total;
   assert.equal(fmtAmount(scaleAmount(s, 0.5, ing.schweinebauch)), "450–500 g");
 });
@@ -70,5 +70,11 @@ t("Alter localStorage-Zustand (timers als Objekt) wird migriert, Müll verworfen
   assert.deepEqual(normalizeState(null).timers, []);
   assert.equal(s.note, "");
   assert.deepEqual(normalizeState({ timers: "quatsch", done: [], factor: -1 }), { done: {}, note: "", shop: {}, timers: [], factor: 1, order: "ablauf" });
+});
+t("Gemischter Bruch: 1½ EL ×2 → 3 EL, ×0,5 → ¾ EL; 1,5 wird „1½“", () => {
+  const st = { ingredients: [{ ref: "fischsauce", amount: { text: "1½ EL Fischsauce", value: 1.5, unit: "EL" } }] };
+  assert.equal(scaleStepText("1½ EL Fischsauce dazu", st, 2, {}), "3 EL Fischsauce dazu");
+  assert.equal(scaleStepText("1½ EL Fischsauce dazu", st, 0.5, {}), "¾ EL Fischsauce dazu");
+  assert.equal(fmtAmount({ value: 1.5, unit: "EL" }), "1½ EL");
 });
 console.log(`${n} Tests ok`);
