@@ -1,0 +1,1480 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/ca-kho-to",
+  "kind": "dish",
+  "title": "Cá kho tộ — vietnamesischer Karamell-Schmorfisch (4 Portionen)",
+  "status": "done",
+  "yields": {
+    "text": "4 Portionen",
+    "value": 4.0,
+    "unit": "Portionen"
+  },
+  "intro": "*Aktive Zeit \\~40 Min., gesamt \\~1,25 Std. Equipment: Bräter oder schwerer flacher Topf, in dem die Fischsteaks einschichtig liegen. Kein Tontopf nötig (siehe Quellen & Entscheidungen).*\n\nVietnamesischer Schmorfisch aus der kho-Familie, Süd-Stil (Nam Bộ): Fischsteaks in dunklem Karamell (nước màu), Fischsauce und Kokoswasser, sirupartig einreduziert, mit viel schwarzem Pfeffer zum Schluss. Gleiche Mechanik wie unser Thịt kho — aber nur ein Bruchteil der Garzeit (\\~30 Min. statt \\~2 Std.).",
+  "times": {
+    "text": "Aktive Zeit ~40 Min., gesamt ~1,25 Std.",
+    "active": {
+      "typical": "PT40M",
+      "source": "40 Min."
+    },
+    "total": {
+      "typical": "PT1H15M",
+      "source": "1,25 Std."
+    }
+  },
+  "equipment": [
+    "Bräter oder schwerer flacher Topf",
+    "in dem die Fischsteaks einschichtig liegen. Kein Tontopf nötig (siehe Quellen & Entscheidungen)"
+  ],
+  "ingredients": [
+    {
+      "id": "lachssteaks",
+      "name": "Lachssteaks à \\~330 g, quer mit Haut",
+      "store": "Buhara Seafood",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "3"
+      },
+      "inStock": true,
+      "note": "(gesamt \\~1 kg, 11 €) — gekauft; Wels war nicht verfügbar"
+    },
+    {
+      "id": "fischsauce",
+      "name": "Fischsauce",
+      "store": "Asialaden",
+      "note": "gesamt \\~6 EL nötig: 3 EL Marinade, 1 EL Extra-Sauce, 1–2 EL Abschmecken"
+    },
+    {
+      "id": "kokoswasser",
+      "name": "Kokoswasser, pur/ungesüßt",
+      "store": "Asialaden",
+      "buy": {
+        "text": "330 ml"
+      },
+      "note": "1 kleine Packung — \\~200 ml zum Schmoren und 100–150 ml für die Extra-Sauce in der Reduktion, siehe „Sauce reduzieren“"
+    },
+    {
+      "id": "jasminreis",
+      "name": "Jasminreis",
+      "store": "Asialaden",
+      "buy": {
+        "text": "400 g"
+      },
+      "note": "falls nicht vorrätig"
+    },
+    {
+      "id": "schalotten",
+      "name": "Schalotten",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3"
+      }
+    },
+    {
+      "id": "knoblauchzehen",
+      "name": "Knoblauchzehen",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "5"
+      }
+    },
+    {
+      "id": "ingwer",
+      "name": "Ingwer",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Stück"
+      },
+      "note": "daumengroß"
+    },
+    {
+      "id": "fruehlingszwiebeln",
+      "name": "Frühlingszwiebeln",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      }
+    },
+    {
+      "id": "zitrone",
+      "name": "Zitrone",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "für die Fisch-Vorbehandlung"
+    },
+    {
+      "id": "karotten",
+      "name": "Karotten",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "note": "Schnell-Pickle, bewährt vom Thịt kho"
+    },
+    {
+      "id": "radieschen",
+      "name": "Radieschen",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      },
+      "note": "Schnell-Pickle, bewährt vom Thịt kho"
+    },
+    {
+      "id": "pak",
+      "name": "Pak Choi oder 1 Kopf Brokkoli",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "note": "blanchiertes Grüngemüse als Beilage"
+    },
+    {
+      "id": "chilis",
+      "name": "frische rote Chilis",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1–2"
+      },
+      "optional": true,
+      "note": "Erwachsenen-Schärfe: erst NACH Entnahme der Kinderportion in die Reduktion, siehe „Sauce reduzieren“"
+    },
+    {
+      "id": "zucker",
+      "name": "Zucker",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "4 EL gesamt: Marinade, Karamell, Pickle"
+    },
+    {
+      "id": "pfeffer",
+      "name": "Pfeffer, schwarz, ganz",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "wird frisch grob gemörsert"
+    },
+    {
+      "id": "reisessig",
+      "name": "Reisessig",
+      "store": "Vorrat",
+      "buy": {
+        "text": "3 EL"
+      },
+      "pantry": true,
+      "note": "Pickle"
+    },
+    {
+      "id": "kuechengarn",
+      "name": "Küchengarn oder Zahnstocher",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Bauchlappen der Lachssteaks schließen, siehe „Fisch vorbehandeln & sichern“"
+    },
+    {
+      "id": "oel",
+      "name": "Öl, neutral",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Fisch — die Kernentscheidung (erledigt, 07/2026):** Gekauft bei Buhara: **3 Lachssteaks, quer geschnitten, mit Haut, gesamt \\~1 kg für knapp 11 €** (\\~11 €/kg — auffällig günstig, Referenzpreis für ganzen Lachs liegt bei \\~19 €/kg). Cá hồi kho (Lachs-kho) ist eine etablierte vietnamesische Variante, kein Verlegenheits-Ersatz.\n  - **Eigentliche 1. Wahl wäre Wels gewesen** (cá tra = Welsartige, biologisch am nächsten am Original; fest, kollagenreich, nur eine kräftige Mittelgräte, keine feinen Zwischenmuskelgräten → fürs Kind sogar besser als Lachs, und schmortolerant). War nicht verfügbar → beim nächsten Durchgang erneut anfragen.\n  - **Seeteufel-Schwanzstück** (grätenfrei, praktisch unzerstörbar beim Schmoren) hätte der Händler wegen Zuschnitt-Aufwand und Verschnitt mit **40 €/kg statt der ausgeschriebenen 24 €/kg** berechnet — abgelehnt, sachlich aber nachvollziehbar (aus dem Schwanz quer geschnitten bleibt viel Restmasse übrig).\n  - **Nicht:** Makrele (Nord-Stil-klassisch, aber viele feine Gräten → fürs Kind ungünstig), Karpfen (Y-Gräten, noch schlechter), dünne TK-Pangasiusfilets (zerfallen — Pangasius-**Steaks** quer mit Haut sind dagegen fürs nächste Mal gesetzt, siehe Learnings), Zander (grobblättrig, zerfällt).\n- **Wichtig: Steaks mit Haut** — die Haut hält die Stücke beim Schmoren zusammen.\n- **Vor dem Kochen prüfen:** (a) **Dicke messen** — davon hängt die Simmerzeit ab (siehe „Anlegen & Simmern“); (b) **war der Fisch aufgetaut?** Bei dem Preis plausibel und in DE kennzeichnungspflichtig. Aufgetauter Lachs verliert mehr Flüssigkeit und zerfällt schneller → dann konsequent gar nicht wenden, nur begießen.\n- **Asialaden:** Fischsauce, pures Kokoswasser (ungesüßt, Tetrapak/Dose — **keine Kokosmilch**). Beides notfalls auch REWE.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Cá kho tộ — vietnamesischer Karamell-Schmorfisch (4 Portionen)",
+          "steps": [
+            {
+              "id": "schnell-pickle",
+              "label": "1",
+              "heading": "**1. Schnell-Pickle (10 Min.)**",
+              "title": "Schnell-Pickle",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Ganz am Anfang: 2 Karotten und 1 Bund Radieschen fein hobeln, mit 3 EL Reisessig, 2 EL Wasser, 1 EL Zucker und ½ TL Salz vermengen (bewährte Lake vom Thịt kho), ziehen lassen. *Learning vom Thịt kho: Die Säure-Balance des Tellers kommt vom Pickle — nicht weglassen.*",
+              "action": "Ganz am Anfang: 2 Karotten und 1 Bund Radieschen fein hobeln, mit 3 EL Reisessig, 2 EL Wasser, 1 EL Zucker und ½ TL Salz vermengen (bewährte Lake vom Thịt kho), ziehen lassen.",
+              "why": "Learning vom Thịt kho: Die Säure-Balance des Tellers kommt vom Pickle — nicht weglassen.",
+              "ingredients": [
+                {
+                  "ref": "karotten",
+                  "amount": {
+                    "text": "2 Karotten",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "radieschen",
+                  "amount": {
+                    "text": "1 Bund Radieschen",
+                    "value": 1.0,
+                    "unit": "Bund"
+                  }
+                },
+                {
+                  "ref": "reisessig",
+                  "amount": {
+                    "text": "3 EL Reisessig",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "2 EL Wasser",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "1 EL Zucker",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "fisch-vorbehandeln-sichern",
+              "label": "2",
+              "heading": "**2. Fisch vorbehandeln & sichern (10 Min.)**",
+              "title": "Fisch vorbehandeln & sichern",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Die 3 Lachssteaks mit \\~1 EL Salz einreiben (optional plus ein Spritzer Zitrone), 5 Min. stehen lassen, kalt abspülen, sehr gut trocken tupfen. Eventuelle dunkle Blutreste an der Mittelgräte entfernen. **Dann die beiden Bauchlappen jedes Steaks zum Ring zusammenlegen und mit Küchengarn binden oder mit einem Zahnstocher schließen** — bei Kotelett-Zuschnitt ist das aufklappende Bauchfleisch der häufigste Zerfallsgrund. **Dicke messen und notieren** (bestimmt die Simmerzeit in „Anlegen & Simmern“). *Salzen + Abspülen festigt das Fleisch und nimmt fischige Noten (so bei Hungry Huy; die Zitrone ist klassische Wels-Praxis, bei Lachs verzichtbar). Gegen Zerfallen zählen daneben: Haut dran, einschichtig, minimal bewegen.*",
+              "action": "Die 3 Lachssteaks mit \\~1 EL Salz einreiben (optional plus ein Spritzer Zitrone), 5 Min. stehen lassen, kalt abspülen, sehr gut trocken tupfen.",
+              "limits": [
+                "Dann die beiden Bauchlappen jedes Steaks zum Ring zusammenlegen und mit Küchengarn binden oder mit einem Zahnstocher schließen",
+                "Dicke messen und notieren"
+              ],
+              "why": "Salzen + Abspülen festigt das Fleisch und nimmt fischige Noten (so bei Hungry Huy; die Zitrone ist klassische Wels-Praxis, bei Lachs verzichtbar). Gegen Zerfallen zählen daneben: Haut dran, einschichtig, minimal bewegen.",
+              "timers": [
+                {
+                  "label": "Fisch vorbehandeln & sichern",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "lachssteaks",
+                  "amount": {
+                    "text": "3 Lachssteaks",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 EL Salz",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "marinieren",
+              "label": "3",
+              "heading": "**3. Marinieren (15–20 Min., passiv)**",
+              "title": "Marinieren",
+              "duration": {
+                "min": "PT15M",
+                "max": "PT20M",
+                "source": "15–20 Min."
+              },
+              "attention": "passive",
+              "text": "Steaks mit 3 EL Fischsauce, 1 EL Zucker, ½ TL gemahlenem Pfeffer und der Hälfte der fein geschnittenen Schalotten und des Knoblauchs (1½ Schalotten, 2–3 Knoblauchzehen) vermengen — **nicht länger!** *30–60 Min. ist Wels-Praxis; Lachs wird in der Salzlösung an der Oberfläche mürbe — 15–20 Min. reichen für die Würze.*",
+              "action": "Steaks mit 3 EL Fischsauce, 1 EL Zucker, ½ TL gemahlenem Pfeffer und der Hälfte der fein geschnittenen Schalotten und des Knoblauchs (1½ Schalotten, 2–3 Knoblauchzehen) vermengen — **nicht länger!** *30–60 Min. ist Wels-Praxis; Lachs wird in der Salzlösung an der Oberfläche mürbe — 15–20 Min. reichen für die Würze.*",
+              "limits": [
+                "nicht länger!"
+              ],
+              "why": "30–60 Min. ist Wels-Praxis; Lachs wird in der Salzlösung an der Oberfläche mürbe — 15–20 Min. reichen für die Würze.",
+              "timers": [
+                {
+                  "label": "Marinieren",
+                  "duration": {
+                    "min": "PT30M",
+                    "max": "PT1H"
+                  },
+                  "text": "30–60 Min."
+                },
+                {
+                  "label": "Marinieren",
+                  "duration": {
+                    "min": "PT15M",
+                    "max": "PT20M"
+                  },
+                  "text": "15–20 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "fischsauce",
+                  "amount": {
+                    "text": "3 EL Fischsauce",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "1 EL Zucker",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "½ TL gemahlenem Pfeffer",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "schalotten",
+                  "amount": {
+                    "text": "1½ Schalotten",
+                    "value": 1.5,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauchzehen",
+                  "amount": {
+                    "text": "2–3 Knoblauchzehen",
+                    "value": 2.0,
+                    "unit": "Stück",
+                    "max": 3.0
+                  }
+                }
+              ],
+              "meta": "*nach Fisch vorbehandeln & sichern*",
+              "after": [
+                "step:fisch-vorbehandeln-sichern"
+              ]
+            },
+            {
+              "id": "reis-und-gemuese",
+              "label": "4",
+              "heading": "**4. Reis und Gemüse (ca. 25 Min., parallel)**",
+              "title": "Reis und Gemüse",
+              "duration": {
+                "typical": "PT25M",
+                "source": "ca. 25 Min.",
+                "estimated": true
+              },
+              "parallel": true,
+              "text": "Währenddessen 400 g Jasminreis kochen, Gemüse putzen (2 Pak Choi bzw. 1 Brokkoli).",
+              "action": "Währenddessen 400 g Jasminreis kochen, Gemüse putzen (2 Pak Choi bzw.",
+              "ingredients": [
+                {
+                  "ref": "jasminreis",
+                  "amount": {
+                    "text": "400 g Jasminreis",
+                    "value": 400.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "pak",
+                  "amount": {
+                    "text": "2 Pak",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*nach Fisch vorbehandeln & sichern · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Reis und Gemüse",
+                  "duration": {
+                    "typical": "PT25M"
+                  },
+                  "text": "ca. 25 Min."
+                }
+              ],
+              "after": [
+                "step:fisch-vorbehandeln-sichern"
+              ]
+            },
+            {
+              "id": "nuoc-mau-das-karamell",
+              "label": "5",
+              "heading": "**5. Nước màu — das Karamell (5 Min.)**",
+              "title": "Nước màu — das Karamell",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "2 EL Zucker mit 1 EL Öl im Schmortopf bei mittlerer Hitze schmelzen, nicht rühren, nur schwenken. Zielfarbe wie beim Thịt kho: tief bernstein Richtung Mahagoni. **Im Zielmoment die restlichen Schalotten und Knoblauchzehen (1½ bzw. 2–3) und 3–4 Ingwerscheiben zugeben** — das kühlt das Karamell schlagartig ab und stoppt die Bräunung exakt am richtigen Punkt.",
+              "action": "2 EL Zucker mit 1 EL Öl im Schmortopf bei mittlerer Hitze schmelzen, nicht rühren, nur schwenken.",
+              "limits": [
+                "Im Zielmoment die restlichen Schalotten und Knoblauchzehen (1½ bzw. 2–3) und 3–4 Ingwerscheiben zugeben"
+              ],
+              "ingredients": [
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "2 EL Zucker",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "1 EL Öl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "ingwer",
+                  "amount": {
+                    "text": "3–4 Ingwerscheiben",
+                    "value": 3.0,
+                    "unit": "Stück",
+                    "max": 4.0
+                  }
+                }
+              ],
+              "meta": "*nach Marinieren · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:marinieren"
+              ]
+            },
+            {
+              "id": "anlegen-simmern",
+              "label": "6",
+              "heading": "**6. Anlegen & Simmern (8–16 Min.)**",
+              "title": "Anlegen & Simmern",
+              "duration": {
+                "min": "PT8M",
+                "max": "PT16M",
+                "source": "8–16 Min."
+              },
+              "text": "Fischsteaks einschichtig einlegen (etwas von den Aromaten unter den Fisch schieben — Anti-Anbrenn-Schicht), Marinadenreste dazu, \\~200 ml Kokoswasser angießen, bis der Fisch etwa halbhoch bedeckt ist — nicht mehr. Aufkochen, dann nur noch leise simmern. **Nicht wenden**, alle 3 Min. mit Sauce begießen. Simmerzeit je Dicke, nach gemessener Dicke (siehe „Fisch vorbehandeln & sichern“):\n| Dicke | Simmerzeit |\n|---|---|\n| 2,5 cm | 8–10 Min. |\n| 3 cm | 10–12 Min. |\n| 4 cm | 14–16 Min. |\n*Thermometer-Check am dicksten Steak: bei **50–52 °C** herausnehmen, nicht bei 60. Durch Nachziehen und das Glasieren landet der Kern bei \\~57–60 °C.*",
+              "action": "Fischsteaks einschichtig einlegen (etwas von den Aromaten unter den Fisch schieben — Anti-Anbrenn-Schicht), Marinadenreste dazu, \\~200 ml Kokoswasser angießen, bis der Fisch etwa halbhoch bedeckt ist — nicht mehr.",
+              "limits": [
+                "Nicht wenden",
+                "50–52 °C"
+              ],
+              "why": "herausnehmen, nicht bei 60. Durch Nachziehen und das Glasieren landet der Kern bei \\~57–60 °C.",
+              "cues": [
+                "bis der Fisch etwa halbhoch bedeckt ist"
+              ],
+              "timers": [
+                {
+                  "label": "Anlegen & Simmern",
+                  "duration": {
+                    "min": "PT8M",
+                    "max": "PT10M"
+                  },
+                  "text": "8–10 Min."
+                },
+                {
+                  "label": "Anlegen & Simmern",
+                  "duration": {
+                    "min": "PT10M",
+                    "max": "PT12M"
+                  },
+                  "text": "10–12 Min."
+                },
+                {
+                  "label": "Anlegen & Simmern",
+                  "duration": {
+                    "min": "PT14M",
+                    "max": "PT16M"
+                  },
+                  "text": "14–16 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "50–52 °C",
+                  "min": 50,
+                  "max": 52
+                },
+                {
+                  "kind": "kern",
+                  "text": "57–60 °C",
+                  "min": 57,
+                  "max": 60
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "kokoswasser",
+                  "amount": {
+                    "text": "200 ml Kokoswasser",
+                    "value": 200.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*Herd · fertig bei 50–52 °C Kern*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei 50–52 °C Kern",
+                "value": 50
+              },
+              "attention": "attended"
+            },
+            {
+              "id": "sauce-reduzieren",
+              "label": "7",
+              "heading": "**7. Sauce reduzieren (8–10 Min.)**",
+              "title": "Sauce reduzieren",
+              "duration": {
+                "min": "PT8M",
+                "max": "PT10M",
+                "source": "8–10 Min."
+              },
+              "text": "Fisch heraus, Kinderportion, Sauce reduzieren — dabeibleiben! Steaks mit einem breiten Wender **vollständig aus dem Topf heben** und auf einen Teller legen (locker mit Folie abdecken). Kinderportion jetzt abnehmen (siehe unten). **Für mehr Sauce (Learning 07/2026): jetzt zusätzlich 100–150 ml Kokoswasser und 1 EL Fischsauce angießen** — flache Fischscheiben lassen beim Simmern nur wenig Flüssigkeit zu, sonst bleibt nach der Reduktion kaum Sauce übrig. **Dann optional 1–2 aufgeschlitzte Chilis für die Erwachsenen in die Sauce geben** — Reduzieren konzentriert Capsaicin (Thịt-kho-Learning), deshalb zwingend erst nach der Kinderportion; eingekochte Schärfe trägt besser als nur Chili am Tisch. Sauce offen bei mittlerer Hitze sirupartig einreduzieren, bis sie glasiert und nur noch den Topfboden bedeckt. **Erst jetzt mit 1–2 EL Fischsauce abschmecken** — vor der Reduktion würde man gegen ein Salzniveau justieren, das sich noch verschiebt. *Der Grat zwischen glasiert und angebrannt ist schmal — diese Minuten nicht verlassen (auch Delightful Plate warnt genau vor dieser Phase).*",
+              "action": "Fisch heraus, Kinderportion, Sauce reduzieren — dabeibleiben!",
+              "limits": [
+                "vollständig aus dem Topf heben",
+                "Für mehr Sauce (Learning 07/2026): jetzt zusätzlich 100–150 ml Kokoswasser und 1 EL Fischsauce angießen",
+                "Dann optional 1–2 aufgeschlitzte Chilis für die Erwachsenen in die Sauce geben",
+                "Erst jetzt mit 1–2 EL Fischsauce abschmecken"
+              ],
+              "why": "Der Grat zwischen glasiert und angebrannt ist schmal — diese Minuten nicht verlassen (auch Delightful Plate warnt genau vor dieser Phase).",
+              "cues": [
+                "bis sie glasiert und nur noch den Topfboden bedeckt"
+              ],
+              "ingredients": [
+                {
+                  "ref": "kokoswasser",
+                  "amount": {
+                    "text": "100–150 ml Kokoswasser",
+                    "value": 100.0,
+                    "unit": "ml",
+                    "max": 150.0
+                  }
+                },
+                {
+                  "ref": "fischsauce",
+                  "amount": {
+                    "text": "1 EL Fischsauce",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "chilis",
+                  "amount": {
+                    "text": "1–2 aufgeschlitzte Chilis",
+                    "value": 1.0,
+                    "unit": "Stück",
+                    "max": 2.0
+                  }
+                },
+                {
+                  "ref": "fischsauce",
+                  "amount": {
+                    "text": "1–2 EL Fischsauce",
+                    "value": 1.0,
+                    "unit": "EL",
+                    "max": 2.0
+                  }
+                }
+              ],
+              "meta": "*Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Sauce reduzieren",
+                  "duration": {
+                    "min": "PT8M",
+                    "max": "PT10M"
+                  },
+                  "text": "8–10 Min."
+                }
+              ]
+            },
+            {
+              "id": "glasieren",
+              "label": "8",
+              "heading": "**8. Glasieren (2–3 Min.)**",
+              "title": "Glasieren",
+              "duration": {
+                "min": "PT2M",
+                "max": "PT3M",
+                "source": "2–3 Min."
+              },
+              "text": "Fisch zurück in die Glasur legen, Hitze niedrig, nur noch begießen bis die Steaks glänzend überzogen sind. Nicht wenden.",
+              "action": "Fisch zurück in die Glasur legen, Hitze niedrig, nur noch begießen bis die Steaks glänzend überzogen sind.",
+              "cues": [
+                "bis die Steaks glänzend überzogen sind"
+              ],
+              "ingredients": [],
+              "meta": "*Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "finish",
+              "label": "9",
+              "heading": "**9. Finish (ca. 3 Min.)**",
+              "title": "Finish",
+              "duration": {
+                "typical": "PT3M",
+                "source": "ca. 3 Min.",
+                "estimated": true
+              },
+              "text": "Vom Herd, reichlich grob gemörserten schwarzen Pfeffer (½–1 TL) und das Grün von 1 Bund Frühlingszwiebeln darüber. Mit Reis, Pickle und blanchiertem Grüngemüse servieren; frische Chili nach Wunsch zusätzlich am Tisch.",
+              "action": "Vom Herd, reichlich grob gemörserten schwarzen Pfeffer (½–1 TL) und das Grün von 1 Bund Frühlingszwiebeln darüber.",
+              "ingredients": [
+                {
+                  "ref": "fruehlingszwiebeln",
+                  "amount": {
+                    "text": "1 Bund Frühlingszwiebeln",
+                    "value": 1.0,
+                    "unit": "Bund"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "½–1 TL",
+                    "value": 0.5,
+                    "unit": "TL",
+                    "max": 1.0
+                  },
+                  "reuse": true
+                }
+              ],
+              "meta": "*nach Glasieren, Schnell-Pickle, Reis und Gemüse*",
+              "attention": "active",
+              "after": [
+                "step:glasieren",
+                "step:schnell-pickle",
+                "step:reis-und-gemuese"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "kochtag",
+            "text": "Pickle ansetzen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT75M"
+            },
+            "source": "T−75"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Fisch salzen, 5 Min., abspülen, sehr gut trocknen, Bauchlappen binden, Dicke messen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT65M"
+            },
+            "source": "T−65"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Fisch marinieren (20 Min.); Reis + Gemüse parallel",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT55M"
+            },
+            "source": "T−55",
+            "steps": [
+              "marinieren"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Karamell, Aromaten rein (Karamell-Stopp)",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT32M"
+            },
+            "source": "T−32"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Fisch anlegen, aufkochen, dann leise simmern — nicht wenden, alle 3 Min. begießen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT27M"
+            },
+            "source": "T−27"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Fisch herausheben (Kern 50–52 °C), Kinderportion abnehmen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT15M"
+            },
+            "source": "T−15"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Ggf. Chilis rein, Sauce offen reduzieren, danach mit Fischsauce abschmecken",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT14M"
+            },
+            "source": "T−14"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Fisch zurück in die Glasur, nur begießen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT4M"
+            },
+            "source": "T−4"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Pfeffer, Frühlingszwiebeln, servieren",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT0M"
+            },
+            "source": "T−0"
+          }
+        ]
+      },
+      "note": "*Beispiel für 3 cm dicke Steaks (bei anderer Dicke Simmerzeit aus der Tabelle in „Anlegen & Simmern“ einsetzen und T−27 entsprechend verschieben):*"
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Hinweis",
+      "level": 2,
+      "markdown": "- Kinderportion **vor** dem finalen Pfeffern, Reduzieren und vor jeder Chili-Zugabe entnehmen — also direkt beim Herausheben in „Sauce reduzieren“ (Sauce ist dann milder und weniger konzentriert salzig). Etwas Sauce vor dem Reduzieren abschöpfen und über die Kinderportion geben.\n- Am Teller Haut, Garn/Zahnstocher und Gräten entfernen und Fleisch zerpflücken — bei Lachssteaks sind es nur die Mittelgräte und wenige große Rippengräten, trotzdem jedes Stück prüfen.\n- Noch sicherer: ein kleines hautloses, grätenfrei gezupftes Lachsfiletstück in den letzten \\~5 Min. der Simmerphase mit einlegen.\n- Chili berührt die Kinderportion nie: in den Topf erst nach deren Entnahme (siehe „Sauce reduzieren“), ansonsten nur separat am Tisch.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "learnings",
+      "title": "Learnings",
+      "cooked": "07/2026",
+      "summary": "**Gekocht 07/2026.** Lachs war ziemlich gut, Rezept hat rund funktioniert (Vorbehandlung, Karamell, Garzeiten — kein Zerfall). Schwachpunkt: Nach dem Reduzieren blieb deutlich weniger Sauce übrig als beim Thịt kho — dabei ist die Sauce bei beiden kho-Gerichten das Beste am Teller. Ursache ist Geometrie, kein Fehler: flache Fischscheiben „halbhoch\" bedecken heißt schlicht wenig Flüssigkeit im Topf (Schweinebauch-Würfel stapeln höher). Fix im Rezept ergänzt: in Schritt 6 zusätzlich \\~100–150 ml Kokoswasser mitreduzieren. Nächstes Mal Pangasius-Steaks probieren (Tipp von Freunden aus Vietnam: bleibt fester und zieht die Sauce mehr auf — als cá tra ohnehin der Originalfisch des Gerichts).",
+      "details": "### Details\n\n- **Saucen-Menge:** Der limitierende Faktor ist die „halbhoch bedecken\"-Regel in Schritt 5 — bei flachen Steaks passt kaum Flüssigkeit in den Topf, und die Reduktion halbiert das nochmal. Lösung nicht: mehr Flüssigkeit in der Simmerphase (verändert Garverhalten, Fisch schwimmt auf). Sondern: nach dem Herausheben des Fischs zusätzlich 100–150 ml Kokoswasser + 1 EL Fischsauce angießen und mitreduzieren — der Fisch ist da schon raus, es kostet nur 2–3 Min. mehr Reduktionszeit. Schritt 6 und Einkaufsliste entsprechend angepasst.\n- **Pangasius statt Lachs (nächster Durchgang):** Empfehlung von Freunden aus Vietnam — bleibt beim Schmoren fester und saugt die Sauce besser auf. Passt zur ursprünglichen Beschaffungs-Analyse: Pangasius *ist* cá tra, der klassische Fisch für cá kho tộ (die Beschaffungsnotiz nannte das „Wels\"). Wichtig: **Steaks quer mit Haut**, nicht die dünnen TK-Filets (die zerfallen — deshalb standen sie auf der Nicht-Liste). Beschaffung: Asialaden nach TK-Pangasius-Steaks fragen, alternativ Buhara.\n- **Lachs-Fazit:** Funktioniert gut als Variante (cá hồi kho), kein Zerfall dank Binden + nicht wenden + 50–52 °C-Ausstieg. Bleibt aber zweite Wahl hinter festeren, kollagenreicheren Fischen."
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Süd-Stil mit Kokoswasser** (statt Nord-Stil mit Galgant/Tomate/1,5 h): kanonischer „tộ\"-Stil, gleiche süß-salzig-umami-Linie wie unser Thịt-kho-Erfolg. Pures Kokoswasser statt Coco Rico-Limo (US-Diaspora-Abkürzung) — kontrollierbarer bei sitzender Karamelltechnik.\n- **Lachs statt Wels/Pangasius:** Verfügbarkeits-Entscheidung (Wels war nicht da), nicht erste Wahl — cá hồi kho ist in vietnamesischen Quellen aber etabliert. **Warum Wels strukturell besser wäre:** festes Muskelfleisch mit viel Kollagen hält 25–40 Min. Schmoren aus und gibt der Karamellsauce Körper; Lachs hat kurze Muskelsegmente mit dünnem Bindegewebe, flockt früh und tritt Albumin aus. Dazu oxidiert Lachsfett (stark mehrfach ungesättigt) bei langem Erhitzen → tranige Noten gegen die Karamell-Fischsauce-Linie. Nicht der Fettgehalt ist das Problem (cá thu kho mit Makrele ist Klassiker), sondern Zerfall + Oxidation.\n- **Garzeit-Korrektur (wichtig, alter Ansatz war falsch):** Die erste Fassung interpolierte zwischen Vicky Pham (2,5-cm-Welssteaks, 20 Min. gesamt) und Delightful Plate (4–5 cm Lachs, 30–45 Min. inkl. Reduktion) **über die Dicke** — und ignorierte die hier wichtigere Variable, die **Artentoleranz**. 20 Min. simmern + 10–12 Min. Reduktion sind \\~32 Min. Hitze, also mehr, als Pham dem deutlich robusteren Wels gibt. Zusätzlich steigt die Kerntemperatur während der offenen Reduktion weiter, d. h. 60 °C *vor* dieser Phase landen am Ende klar darüber. Deshalb jetzt: kürzer simmern (dickenabhängig), Fisch **vor** der Reduktion herausheben, Sauce allein einkochen, Fisch nur zum Glasieren zurück. Delightful Plate schmort Lachs übrigens in purem Wasser — wir bleiben beim Kokoswasser (Süd-Stil, Thịt-kho-Linie).\n- **Preise (Recherche 07/2026, Fischpreis-Übersicht simfisch.de):** Wels/Waller \\~16 €/kg ganz bzw. \\~22 €/kg Filet, Lachs \\~19 €/kg ganz bzw. \\~24 €/kg Filet, Seeteufel \\~33 €/kg ganz. Der Wechsel Lachs→Wels wäre also praktisch kostenneutral gewesen — das Preisargument spricht nicht für Lachs. Bei Koteletts liegt der Preis näher am Ganzfisch- als am Filetwert, dafür sind \\~25–30 % Gräte/Haut im Gewicht (1 kg Koteletts ≈ 700 g Fleisch). Direktvermarkter-Welszuchten liegen mit \\~9–10 €/kg (ausgenommen) deutlich darunter — für Wiederholungen prüfen.\n- **Salz-Vorbehandlung:** Salzen + Abspülen so bei Hungry Huy („generously salt, then rinse\"); Delightful Plate salzt Lachs nur leicht ohne Abspülen. Zitrone/Limette ist Anti-Schleim-Standard für Wels, in keiner der fünf Referenzen für Lachs gefordert → optional.\n- **Karamell-Stopp mit Aromaten:** von RunAwayRice explizit als Technik beschrieben („add the minced shallots and garlic to cool the caramel instantly and stop it from cooking further\"); Helen Le und Vicky Pham verfahren identisch. Zielfarbe laut RunAwayRice/Vicky Pham: dark amber.\n- **Kein Tontopf gekauft:** mehrere vietnamesische Autorinnen kochen selbst in Pfanne/Topf und nutzen den Tontopf nur zum Servieren; kein belegter Geschmacksvorteil. Falls das Gericht Wiederholungstäter wird: glasierter Sandtopf (sa guo, \\~15–35 €) nachrüstbar.\n- Referenzen: [Vicky Pham — Cá kho tộ](https://vickypham.com/blog/vietnamese-caramelized-catfish-ca-kho-to/) · [Helen Le](https://helenrecipes.com/recipe-34-ca-kho-vietnamese-caramelized-fish/) · [Hungry Huy](https://www.hungryhuy.com/ca-kho-to-recipe-vietnamese-braised-fish/) · [Delightful Plate — Lachs-Variante](https://delightfulplate.com/vietnamese-style-caramelized-salmon/) · [Delightful Plate — Nord-Stil (Abgrenzung)](https://delightfulplate.com/ca-kho-vietnamese-caramelized-fish/) · [RunAwayRice — Karamell-Stopp-Technik](https://runawayrice.com/main-dishes/braised-fish-in-clay-pot-ca-kho-to/) · [simfisch.de — Fischpreise 2026](https://www.simfisch.de/fischpreise-zander-hecht-forelle/)",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T18:32:01Z",
+    "sourceHash": "0f9ac2c3285a509b",
+    "quantities": [
+      {
+        "ingredient": "lachssteaks",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "3 Lachssteaks"
+        }
+      },
+      {
+        "ingredient": "fischsauce",
+        "total": {
+          "text": "5–6 EL",
+          "value": 5.0,
+          "max": 6.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "3 EL Fischsauce + 1 EL Fischsauce + 1–2 EL Fischsauce"
+        }
+      },
+      {
+        "ingredient": "kokoswasser",
+        "total": {
+          "text": "300–350 ml",
+          "value": 300.0,
+          "max": 350.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "200 ml Kokoswasser + 100–150 ml Kokoswasser"
+        }
+      },
+      {
+        "ingredient": "jasminreis",
+        "total": {
+          "text": "400 g",
+          "value": 400.0,
+          "max": 400.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "400 g Jasminreis"
+        }
+      },
+      {
+        "ingredient": "schalotten",
+        "total": {
+          "text": "1½",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1½ Schalotten"
+        }
+      },
+      {
+        "ingredient": "knoblauchzehen",
+        "total": {
+          "text": "2–3",
+          "value": 2.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2–3 Knoblauchzehen"
+        }
+      },
+      {
+        "ingredient": "ingwer",
+        "total": {
+          "text": "3–4",
+          "value": 3.0,
+          "max": 4.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "3–4 Ingwerscheiben"
+        }
+      },
+      {
+        "ingredient": "fruehlingszwiebeln",
+        "total": {
+          "text": "1 Bund",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Bund",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Bund Frühlingszwiebeln"
+        }
+      },
+      {
+        "ingredient": "zitrone",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "karotten",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 Karotten"
+        }
+      },
+      {
+        "ingredient": "radieschen",
+        "total": {
+          "text": "1 Bund",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Bund",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Bund Radieschen"
+        }
+      },
+      {
+        "ingredient": "pak",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 Pak"
+        }
+      },
+      {
+        "ingredient": "chilis",
+        "total": {
+          "text": "1–2",
+          "value": 1.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1–2 aufgeschlitzte Chilis"
+        }
+      },
+      {
+        "ingredient": "zucker",
+        "total": {
+          "text": "4 EL",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 EL Zucker + 1 EL Zucker + 2 EL Zucker"
+        }
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": "½ TL",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "½ TL gemahlenem Pfeffer"
+        }
+      },
+      {
+        "ingredient": "reisessig",
+        "total": {
+          "text": "3 EL",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "3 EL Reisessig"
+        }
+      },
+      {
+        "ingredient": "kuechengarn",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "oel",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 EL Öl"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "½ TL (+ EL ungemischt)",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "½ TL Salz"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 EL Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Buhara Seafood",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "lachssteaks",
+            "name": "Lachssteaks à \\~330 g, quer mit Haut",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": true,
+            "buy": {
+              "text": "3"
+            },
+            "note": "(gesamt \\~1 kg, 11 €) — gekauft; Wels war nicht verfügbar"
+          }
+        ]
+      },
+      {
+        "store": "Asialaden",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "fischsauce",
+            "name": "Fischsauce",
+            "need": {
+              "text": "5–6 EL",
+              "value": 5.0,
+              "max": 6.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "5–6 EL",
+            "inStock": false,
+            "note": "gesamt \\~6 EL nötig: 3 EL Marinade, 1 EL Extra-Sauce, 1–2 EL Abschmecken"
+          },
+          {
+            "ingredient": "kokoswasser",
+            "name": "Kokoswasser, pur/ungesüßt",
+            "need": {
+              "text": "300–350 ml",
+              "value": 300.0,
+              "max": 350.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "300–350 ml",
+            "inStock": false,
+            "buy": {
+              "text": "330 ml"
+            },
+            "note": "1 kleine Packung — \\~200 ml zum Schmoren und 100–150 ml für die Extra-Sauce in der Reduktion, siehe „Sauce reduzieren“"
+          },
+          {
+            "ingredient": "jasminreis",
+            "name": "Jasminreis",
+            "need": {
+              "text": "400 g",
+              "value": 400.0,
+              "max": 400.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "400 g",
+            "inStock": false,
+            "buy": {
+              "text": "400 g"
+            },
+            "note": "falls nicht vorrätig"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "schalotten",
+            "name": "Schalotten",
+            "need": {
+              "text": "1½",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1½",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            }
+          },
+          {
+            "ingredient": "knoblauchzehen",
+            "name": "Knoblauchzehen",
+            "need": {
+              "text": "2–3",
+              "value": 2.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2–3",
+            "inStock": false,
+            "buy": {
+              "text": "5"
+            }
+          },
+          {
+            "ingredient": "ingwer",
+            "name": "Ingwer",
+            "need": {
+              "text": "3–4",
+              "value": 3.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3–4",
+            "inStock": false,
+            "buy": {
+              "text": "1 Stück"
+            },
+            "note": "daumengroß"
+          },
+          {
+            "ingredient": "fruehlingszwiebeln",
+            "name": "Frühlingszwiebeln",
+            "need": {
+              "text": "1 Bund",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Bund",
+              "approx": false
+            },
+            "display": "1 Bund",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            }
+          },
+          {
+            "ingredient": "zitrone",
+            "name": "Zitrone",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "für die Fisch-Vorbehandlung"
+          },
+          {
+            "ingredient": "karotten",
+            "name": "Karotten",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "Schnell-Pickle, bewährt vom Thịt kho"
+          },
+          {
+            "ingredient": "radieschen",
+            "name": "Radieschen",
+            "need": {
+              "text": "1 Bund",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Bund",
+              "approx": false
+            },
+            "display": "1 Bund",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            },
+            "note": "Schnell-Pickle, bewährt vom Thịt kho"
+          },
+          {
+            "ingredient": "pak",
+            "name": "Pak Choi oder 1 Kopf Brokkoli",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "blanchiertes Grüngemüse als Beilage"
+          },
+          {
+            "ingredient": "chilis",
+            "name": "frische rote Chilis",
+            "need": {
+              "text": "1–2",
+              "value": 1.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1–2",
+            "inStock": false,
+            "buy": {
+              "text": "1–2"
+            },
+            "optional": true,
+            "note": "Erwachsenen-Schärfe: erst NACH Entnahme der Kinderportion in die Reduktion, siehe „Sauce reduzieren“"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "zucker",
+            "name": "Zucker",
+            "need": {
+              "text": "4 EL",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "4 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "4 EL gesamt: Marinade, Karamell, Pickle"
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Pfeffer, schwarz, ganz",
+            "need": {
+              "text": "½ TL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "½ TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "wird frisch grob gemörsert"
+          },
+          {
+            "ingredient": "reisessig",
+            "name": "Reisessig",
+            "need": {
+              "text": "3 EL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "3 EL",
+            "inStock": false,
+            "buy": {
+              "text": "3 EL"
+            },
+            "pantry": true,
+            "note": "Pickle"
+          },
+          {
+            "ingredient": "kuechengarn",
+            "name": "Küchengarn oder Zahnstocher",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true,
+            "note": "Bauchlappen der Lachssteaks schließen, siehe „Fisch vorbehandeln & sichern“"
+          },
+          {
+            "ingredient": "oel",
+            "name": "Öl, neutral",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "½ TL (+ EL ungemischt)",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "½ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}

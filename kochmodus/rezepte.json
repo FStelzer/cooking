@@ -21,6 +21,13 @@
   "cooked": true
  },
  {
+  "path": "../gerichte/ca-kho-to.json",
+  "title": "Cá kho tộ — vietnamesischer Karamell-Schmorfisch (4 Portionen)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": true
+ },
+ {
   "path": "../gerichte/thit-kho-trung.json",
   "title": "Thịt kho trứng — vietnamesisches Karamell-Schweinefleisch mit Eiern (4 Portionen)",
   "group": "gerichte",
