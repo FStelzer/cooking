@@ -98,10 +98,10 @@ im Renderer):
 | E | Pro Gang: nummerierte Schritte der Quelle = Steps | fail |
 | F | Zeitplan: jedes Segment der Quelle (Bullets, `T−`-Tabelle) ist ein verbatim-Eintrag; Report: Einträge mit Treffer | fail |
 | G | Erzeuger vor Verbraucher über die Phasen, Haltbarkeit (`hold`) eingehalten | fail |
-| H | Service-Zeitplan: Koch doppelt belegt (pro Schritt, passive zählen nicht), Ofen-Temperaturen, Herd-Kapazität (5 Felder), Aufgaben nach Servierzeit, Constraints | warn |
+| H | Service-Zeitplan, pro Varianten-Kombination: Koch doppelt belegt (pro Schritt, passive zählen nicht; eine passive Wartezeit am Ende hält die nächste Einheit nicht auf), Ofen-Temperaturen, Herd-Kapazität (5 Felder), Aufgaben nach Servierzeit (Arbeit in der Servier-Phase des eigenen Gangs: gegen den nächsten Gang), Constraints | warn |
 | K | `derived` aktuell (Hash); jeder Original-Posten der Einkaufsliste findet eine Zutat; Menge gegen die Ableitung (Gebinde zählt als passend) | fail/info |
 | L | `## Mengen-Check`-Tabelle gegen die Ableitung | info |
-| P | Kritischer Pfad über die Schritt-Kanten gegen „gesamt …“ im Kopf, sonst Vorschlag | warn |
+| P | Kritischer Pfad über die Schritt-Kanten gegen „gesamt …“ im Kopf (in Kalendertagen nur die Obergrenze), sonst Vorschlag | warn |
 
 Daneben: `tools/test_parse.py` (Regeln gegen die Gerüste in REZEPTFORMAT.md),
 `tools/test_kochmodus.mjs`, `tools/smoke_kochmodus.mjs`. `schema/beispiele/*.json` sind
@@ -122,12 +122,7 @@ eingefrorene Hand-Annotationen als Paritäts-Soll für `cli diff`, keine Quelle.
   Spickzettel und `schwangerschaft/leitfaden.md`. Offen: Gesamtzeit-Kopfzeilen nach Check P
   nachtragen (Bò lúc lắc \~2:25, Dal \~0:45, Brötchen); Ermessensfelder (L5) beim
   Bearbeiten markieren.
-- **Technik:** Check P vergleicht bei mehrtägigen Rezepten (Mezze „gesamt 3 Tage“,
-  Bratensauce „\~2 Tage“) den Pfad über die Schritt-Kanten mit der Kalenderdauer und warnt
-  dann immer; die Tagesgrenzen aus dem Zeitplan fehlen im Pfad.
-- **Technik:** Check H modelliert bei Uhrzeit-Menüs das Ende der Servier-Phase nicht
-  (Aufgaben, die in die nächste Phase laufen, bleiben unbemerkt); Check D und P teilen
-  sich die Vorgänger-Regel nicht; Zeitplan-Grammatik steht in Parser und Check F doppelt.
+- **Technik:** Check D und P teilen sich die Vorgänger-Regel nicht; Zeitplan-Grammatik steht in Parser und Check F doppelt.
 - **Später (aus dem ursprünglichen PRD):** Ebenen-Schalter (Warum/Rettung ein- und
   ausblenden), Technik-Bibliothek mit Detailschritten, mehrere Rezepte zu einem Plan im
   Kochmodus, Kühlschrank-/TK-Platz als Ressource.

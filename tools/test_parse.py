@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from tools.recipes.parse import duration_range, parse_recipe  # noqa: E402
-from tools.recipes.timing import check_p, critical_path  # noqa: E402
+from tools.recipes.timing import check_p, critical_path, service_times  # noqa: E402
 
 SPEC = (ROOT / "REZEPTFORMAT.md").read_text(encoding="utf-8")
 BLOCKS = re.findall(r"```markdown\n(.*?)```", SPEC, re.S)
@@ -244,6 +244,42 @@ Abtropfen lassen.
 dd, _ = parse_recipe(DAYS, "test/tage")
 t("Check P: Gesamtzeit in Kalendertagen prüft nur die Obergrenze", lambda: (
     assert_(any("Kalendertagen" in r for r in check_p(dd)[1]) and not any("kürzer" in r for r in check_p(dd)[1]), check_p(dd)[1]),))
+ORDER = """# Test (2 Portionen)
+
+## Einkaufsliste
+
+### Aldi / REWE
+- [ ] 1 kg Joghurt
+
+## Zubereitung
+
+**Labneh (Vortag):**
+
+**1. Zuerst salzen (10 Min.)**
+*jederzeit*
+1 kg Joghurt salzen.
+
+**2. Abtropfen (60 Min., passiv)**
+Abtropfen lassen.
+
+**Dip (Vortag):**
+
+**3. Dip rühren (5 Min.)**
+*jederzeit*
+Rühren.
+
+## Zeitplan
+
+| Zeit | Schritt |
+|---|---|
+| T−2:00 | Zuerst salzen, Abtropfen, Labneh · Dip rühren |
+"""
+od, _ = parse_recipe(ORDER, "test/reihenfolge")
+_, osegs = service_times(od)
+oseg = {g.step: g.start for g in osegs}
+t("Check H: Schritte in Rezeptreihenfolge, passive Wartezeit schiebt die nächste Einheit nicht", lambda: (
+    assert_(oseg["zuerst-salzen"] < oseg["abtropfen"], oseg),
+    assert_(oseg["dip-ruehren"] == oseg["zuerst-salzen"] + 600, oseg)))
 print(f"{n} Tests ok")
 if lint.msgs or mlint.msgs:
     print("Lint (Gericht):", *lint.msgs, sep="\n  ") if lint.msgs else None

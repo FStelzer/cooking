@@ -153,6 +153,7 @@ def service_times(recipe: dict) -> tuple[dict, list[Seg]]:
     tasks = {t["id"]: t for t in iter_tasks(recipe)}
     out, segs = {}, []
     step_task = {st["id"]: t["id"] for t in tasks.values() for st in t["steps"]}
+    step_pos = {st["id"]: i for i, st in enumerate(st for t in tasks.values() for st in t["steps"])}
     for sec in sections(recipe, "schedule"):
         phases = {p["id"]: p for p in sec["schedule"]["phases"]}
         phase_cursor: dict[str, int] = {}
@@ -166,17 +167,23 @@ def service_times(recipe: dict) -> tuple[dict, list[Seg]]:
                 t0 = max(secs(ph["at"]) or 0, phase_cursor.get(e["phase"], -10**9))  # ohne eigene Zeit: nach dem vorigen Eintrag der Phase
             else:
                 continue
-            cur = t0
+            # Schritte in Rezeptreihenfolge (die Einträge listen sie sortiert); die Hände sind frei, sobald der
+            # letzte aktive Schritt einer Einheit fertig ist — eine passive Wartezeit am Ende läuft nebenher
+            # weiter und schiebt die nächste Einheit nicht (Kanten gelieren, während die Panna Cotta entsteht).
+            free = t0
             units = [(tid, tasks[tid]["steps"]) for tid in e.get("tasks", [])]
-            units += [(step_task[s], [x for x in tasks[step_task[s]]["steps"] if x["id"] == s]) for s in e.get("steps", []) if s in step_task]
+            units += [(step_task[s], [x for x in tasks[step_task[s]]["steps"] if x["id"] == s])
+                      for s in sorted((s for s in e.get("steps", []) if s in step_task), key=step_pos.get)]
             for tid, steps in units:
-                begin = cur
+                begin = cur = free
                 for x in steps:
-                    segs.append(Seg(tid, x["id"], cur, cur + _dur(x), e, x.get("attention") == "passive" or bool(x.get("parallel"))))
+                    passive = x.get("attention") == "passive" or bool(x.get("parallel"))
+                    segs.append(Seg(tid, x["id"], cur, cur + _dur(x), e, passive))
                     cur += _dur(x)
+                    if not passive: free = cur
                 start = min(out[tid][0], begin) if tid in out else begin
                 out[tid] = (start, max(out[tid][1] if tid in out else -10**9, cur), e)
-            phase_cursor[e["phase"]] = cur
+            phase_cursor[e["phase"]] = free
     return out, segs
 
 
@@ -219,6 +226,20 @@ def check_g(recipe: dict) -> tuple[list[str], list[str]]:
 
 # ---------------------------------------------------------------- H (warn)
 def check_h(recipe: dict) -> tuple[list[str], list[str]]:
+    """Mit Varianten pro Wahl-Kombination: Zeitpläne mit `only` schließen sich aus und dürfen sich nicht
+    gegenseitig „doppelt belegen“. Gleiche Befunde aus mehreren Kombinationen erscheinen einmal."""
+    if not recipe.get("variants"):
+        return _check_h(recipe)
+    out: list[str] = []
+    for sel in V.selections(recipe["variants"]):
+        for r in _check_h(V.view(recipe, sel))[1]:
+            tagged = f"{r} [{V.selection_key(sel)}]" if r.startswith("H ⚠") else r
+            if r not in {x.split(" [")[0] if x.startswith("H ⚠") else x for x in out}:
+                out.append(tagged)
+    return [], out
+
+
+def _check_h(recipe: dict) -> tuple[list[str], list[str]]:
     reps = []
     st, segs = service_times(recipe)
     tasks = {t["id"]: t for t in iter_tasks(recipe)}
@@ -253,10 +274,17 @@ def check_h(recipe: dict) -> tuple[list[str], list[str]]:
     phase_of = {p["id"]: p for sec in sections(recipe, "schedule") for p in sec["schedule"]["phases"]}
     for tid, (t0, t1, e) in st.items():
         c = e.get("course")
+        if c not in serve:
+            continue
         ph = phase_of.get(e["phase"], {})
-        if ph.get("clock") and c in serve and secs(ph.get("at")) == serve[c]:
-            continue  # Uhrzeit-Phase des Gangs: „ab 19:15“, Servieren ist ihr letzter Eintrag
-        if c in serve and t1 > serve[c]:
+        if secs(ph.get("at")) == serve[c]:
+            # Servier-Phase des eigenen Gangs („Gang 2 (+0:20)“, „19:15 Uhr“): Servieren ist ihr Ende —
+            # Grenze ist der Beginn des nächsten Gangs
+            nxt = min((v for v in serve.values() if v > serve[c]), default=None)
+            nc = next((k for k, v in serve.items() if v == nxt), None)
+            if nxt is not None and t1 > nxt:
+                reps.append(f"H ⚠ {tid} endet {fmt(t1)} und läuft in Gang {nc} ({fmt(nxt)}) hinein")
+        elif t1 > serve[c]:
             reps.append(f"H ⚠ {tid} endet {fmt(t1)}, Gang {c} wird {fmt(serve[c])} serviert")
     # explizite Constraints (nur wenn beide Ereignisse verzeitet)
     ev = {}
