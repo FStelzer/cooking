@@ -1,0 +1,2585 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "schwangerschaft/mezze-teller",
+  "kind": "dish",
+  "title": "Libanesischer Mezze-Teller — Hummus, Moutabal, Muhammara, Labneh & Kafta (Schwangerschafts-Version, 4 Personen)",
+  "status": "done",
+  "yields": {
+    "text": "Schwangerschafts-Version, 4 Personen"
+  },
+  "intro": "*Aktive Zeit \\~2 Std., gesamt 2 Tage. Verteilt auf 2 Tage, viel davon passiv (Einweichen, Labneh, Muhammara durchziehen). Aktive Zeit gesamt \\~2 Std.: Tag 1 \\~15 Min., Tag 2 vormittags \\~45 Min., Mezze-Abend \\~60 Min. Equipment: Stabmixer mit hohem Becher, feines Sieb + Passiertuch, Bunsenbrenner, Backblech, Gasgrill oder schwere Pfanne, Fleischthermometer (Kafta), flache Metallspieße optional.*\n\n> **Kopie von [`gerichte/mezze-libanesisch.md`](/gerichte/mezze-libanesisch.md)**, umgebaut nach\n> [Leitfaden](/schwangerschaft/leitfaden.md): Die vier Dips bleiben 1:1 (alles gegart bzw. aus\n> pasteurisiertem Joghurt), die beiden Teigtaschen (600 g Weißmehl, frittiert/gebacken) fliegen\n> raus, stattdessen **gegrillte Kafta** als Protein und Rohkost als Dip-Träger; Brot nur als\n> kleines Vollkorn-Fladen. Dips zugleich Snack-Vorrat für die Zwischenmahlzeiten. Das Original\n> mit Fatayer und Sambousek bleibt für später.\n\nMezze-Abend als **Teller statt Tafel**: Vielzahl kleiner Komponenten, aber alles außer der\nKafta ist kalt und vorbereitbar — der Abend selbst ist Grillen, Anrichten, fertig. Die\nAroma-Achsen bleiben wie im Original: geröstete Nuss/Granatapfel (Muhammara), Milchsäure\n(Labneh), Rauch (Aubergine), plus jetzt gegrilltes Fleisch mit Baharat (Kafta).\n\n**Abgrenzung zum Shawarma-Teller** (`schwangerschaft/shawarma-teller.md`): Dort stehen Toum,\nTahinsauce, Tabbouleh, Blumenkohl harra und mariniertes Hähnchen. Hier **kein** Petersiliensalat,\n**keine** Knoblauchemulsion, kein Hähnchen. Kombination zum großen Menü siehe Notiz unten.",
+  "times": {
+    "text": "Aktive Zeit ~2 Std., gesamt 2 Tage",
+    "active": {
+      "typical": "PT2H",
+      "source": "2 Std."
+    },
+    "total": {
+      "typical": "P2D",
+      "source": "2 Tage"
+    }
+  },
+  "equipment": [
+    "Stabmixer mit hohem Becher",
+    "feines Sieb + Passiertuch",
+    "Bunsenbrenner",
+    "Backblech",
+    "Gasgrill oder schwere Pfanne",
+    "Fleischthermometer (Kafta)",
+    "flache Metallspieße optional"
+  ],
+  "ingredients": [
+    {
+      "id": "tahina",
+      "name": "Tahina",
+      "store": "Türkischer/arabischer Laden",
+      "note": "1 großes Glas, mind. 300 g; Verbrauch \\~200 g — libanesische/palästinensische Marke; Fallback: online bestellen, nicht die bittere Supermarkt-Tahina"
+    },
+    {
+      "id": "granatapfelsirup",
+      "name": "Granatapfelsirup",
+      "store": "Türkischer/arabischer Laden",
+      "buy": {
+        "text": "1 Flasche"
+      },
+      "note": "Dibs rumman; Fallback: online — nicht ersetzbar"
+    },
+    {
+      "id": "za",
+      "name": "Za'atar",
+      "store": "Türkischer/arabischer Laden",
+      "buy": {
+        "text": "1 Packung"
+      },
+      "note": "Fallback: online"
+    },
+    {
+      "id": "baharat",
+      "name": "Baharat",
+      "store": "Türkischer/arabischer Laden",
+      "note": "7-Gewürz, 1 kleine Dose; Fallback: selbst mischen — je ½ TL Piment, Zimt, gem. Koriander, Kumin, Pfeffer, ¼ TL Nelke + Muskat"
+    },
+    {
+      "id": "aleppo-pfeffer",
+      "name": "Aleppo-Pfeffer oder Pul biber",
+      "store": "Türkischer/arabischer Laden",
+      "buy": {
+        "text": "1 Packung"
+      },
+      "note": "Fallback: online oder türkisches Regal im REWE"
+    },
+    {
+      "id": "oliven",
+      "name": "Oliven, gemischt",
+      "store": "Türkischer/arabischer Laden",
+      "buy": {
+        "text": "200 g"
+      },
+      "note": "Fallback: REWE"
+    },
+    {
+      "id": "auberginen",
+      "name": "große Auberginen",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "note": "\\~700 g"
+    },
+    {
+      "id": "spitzpaprika",
+      "name": "rote Spitzpaprika",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "note": "Abkürzung: 1 Glas geröstete Paprika, \\~220 g Abtropfgewicht"
+    },
+    {
+      "id": "zitronen",
+      "name": "Zitronen",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "4"
+      }
+    },
+    {
+      "id": "knoblauch",
+      "name": "Knoblauch",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Knolle"
+      }
+    },
+    {
+      "id": "zwiebel",
+      "name": "Zwiebel",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "Kafta"
+    },
+    {
+      "id": "petersilie",
+      "name": "glatte Petersilie",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      },
+      "note": "großer Bund; ½ in die Kafta, Rest Deko"
+    },
+    {
+      "id": "salatgurke",
+      "name": "Salatgurke",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "Rohkost zum Dippen"
+    },
+    {
+      "id": "karotten",
+      "name": "Karotten",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3"
+      },
+      "note": "Rohkost"
+    },
+    {
+      "id": "radieschen",
+      "name": "Radieschen",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      },
+      "note": "Rohkost"
+    },
+    {
+      "id": "paprika",
+      "name": "rote Paprika",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "Rohkost"
+    },
+    {
+      "id": "kohlrabi",
+      "name": "Kohlrabi",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "Rohkost"
+    },
+    {
+      "id": "staudensellerie",
+      "name": "Staudensellerie",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2 Stangen"
+      },
+      "note": "Rohkost"
+    },
+    {
+      "id": "granatapfel",
+      "name": "Granatapfel",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "optional": true,
+      "note": "Kerne als Deko auf Moutabal/Muhammara"
+    },
+    {
+      "id": "tomaten",
+      "name": "Tomaten",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "optional": true,
+      "note": "+ ½ Salatgurke für einen kleinen Beilagensalat zur Kafta"
+    },
+    {
+      "id": "lammhack",
+      "name": "Lammhack oder Rinderhack *",
+      "store": "Aldi / REWE",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "600 g"
+      },
+      "note": "\\~20 % Fett; **frisch am Kochtag***"
+    },
+    {
+      "id": "joghurt",
+      "name": "griechischer Joghurt",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "1 kg"
+      },
+      "note": "10 % Fett, pasteurisiert — Standardware → wird zu \\~450–500 g Labneh"
+    },
+    {
+      "id": "vollkorn-fladen",
+      "name": "Vollkorn-Fladen",
+      "store": "Aldi / REWE",
+      "group": "Brot",
+      "buy": {
+        "text": "4"
+      },
+      "note": "Vollkorn-Pita oder kleine Vollkorn-Fladen"
+    },
+    {
+      "id": "kichererbsen",
+      "name": "getrocknete Kichererbsen",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "500 g"
+      },
+      "note": "Packung; Verbrauch 200 g"
+    },
+    {
+      "id": "natron",
+      "name": "Natron",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 Päckchen"
+      }
+    },
+    {
+      "id": "walnusskerne",
+      "name": "Walnusskerne",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "100 g"
+      }
+    },
+    {
+      "id": "semmelbroesel",
+      "name": "Semmelbrösel",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "note": "kleine Packung; Verbrauch \\~40 g; alternativ altbackenes Brot"
+    },
+    {
+      "id": "kreuzkuemmel",
+      "name": "Kreuzkümmel, gemahlen",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "piment",
+      "name": "Piment, gemahlen",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "und Zimt — nur falls Baharat selbst gemischt wird"
+    },
+    {
+      "id": "olivenoel",
+      "name": "Gutes Olivenöl",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Gesamtverbrauch \\~150 ml"
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "pfeffer",
+      "name": "Schwarzer Pfeffer",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Zusammenstellung",
+      "level": 2,
+      "markdown": "1. **Hummus** — das Technikprojekt des Abends: aus getrockneten Kichererbsen, Natron-Methode nach Ottolenghi, warm mit viel Tahina und Eiswasser gemixt.\n2. **Moutabal** — Aubergine über der Flamme verkohlt (der Rauch *ist* das Gericht), cremig mit Tahina.\n3. **Muhammara** — Paprika, Walnuss, Granatapfelsirup, Aleppo-Pfeffer. Süß-säuerlich-nussig, der stärkste Kontrast auf dem Tisch.\n4. **Labneh mit Za'atar** — praktisch null aktive Arbeit für eine eigenständige Komponente.\n5. **Kafta** — Lamm- oder Rinderhack mit Zwiebel, Petersilie und Baharat, vom Gasgrill oder aus der Pfanne, **durchgegart**. Das Protein, das der Leitfaden zu jeder KH-Portion verlangt.\n\n**Dazu:** Rohkost in Menge (der eigentliche Dip-Träger), Oliven, 1 kleines Vollkorn-Fladen pro Person.\n\n**Nicht dabei (bewusst):** Fatayer bi sabanekh und Sambousek bi jibneh — beide im Original,\nbeide Weißmehl. *Kofta bil tahini* (Kafta im Ofen in Tahina-Sauce) wäre die ausgebaute Variante\ndes Proteins und steht als eigener Punkt im [Ideen-Backlog](/ideen.md)."
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Türkischer/arabischer Laden — NOCH NICHT IDENTIFIZIERT.** Einzige echte Beschaffungshürde. Falls bis zum Einkaufstag keiner gefunden ist: **alles auf der Liste hat einen dokumentierten Fallback**, notfalls online — Tahina, Granatapfelsirup, Za'atar, Sumach, Baharat und Aleppo-Pfeffer sind problemlos per Versand zu bekommen und lange haltbar.\n- **Tahina ist der größte Hebel des ganzen Projekts:** sie steckt in Hummus *und* Moutabal und dominiert beide. Supermarktware ist oft bitter → libanesische/palästinensische Marke, großes Glas.\n- **Granatapfelsirup** ist für Muhammara nicht ersetzbar — die fruchtige Säure ist das Definierende. Die Menge (1½ EL auf \\~400 g Dip, also \\~1 TL pro Person) ist GDM-unkritisch.\n- **Hack für die Kafta:** Lamm (klassisch) oder Rind mit \\~20 % Fett — mageres Hack wird trocken. REWE Center hat Lammhack nicht immer → vorher fragen oder Rind nehmen; gemischt Lamm/Rind ist libanesischer Alltag. **Am Kochtag kaufen** oder tiefgefroren — Hack ist das Listerien-/Salmonellen-kritischste Lebensmittel auf der Liste, deshalb kurze Kühlkette und komplett durchgaren.\n- **Vollkorn-Fladen:** REWE führt Vollkorn-Pita bzw. Vollkorn-Fladenbrot im Brotregal (Fallback: dünne Vollkorn-Wraps/Yufka Vollkorn). Klein dimensionieren — 1 pro Person, halbiert servieren.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan (2 Tage)",
+      "schedule": {
+        "id": "zeitplan-2-tage",
+        "label": "Zeitplan (2 Tage)",
+        "phases": [
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
+          },
+          {
+            "id": "vortag",
+            "label": "Vortag",
+            "day": -1
+          },
+          {
+            "id": "vormittags",
+            "label": "Vormittags",
+            "day": 0,
+            "part": "morning"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "kochtag",
+            "text": "Ofen auf 220 °C. Auberginen mit dem Brenner verkohlen, im Ofen fertig garen, dann abtropfen lassen. Gasgrill vorheizen (falls Kafta vom Grill)",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT60M"
+            },
+            "source": "T−60",
+            "steps": [
+              "verkohlen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Kichererbsen mit etwas Kochwasser erhitzen → **warm** zu Hummus mixen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT45M"
+            },
+            "source": "T−45",
+            "steps": [
+              "hummus-mixen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Moutabal mischen (fertig rühren). Labneh anrichten, Muhammara abschmecken, Hummus anrichten (Mulde, Öl, Topping). Rohkost schneiden",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT30M"
+            },
+            "source": "T−30",
+            "steps": [
+              "hummus-anrichten",
+              "labneh-anrichten",
+              "moutabal-mischen",
+              "muhammara-abschmecken"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Kafta garen (grillen/braten), **Kerntemperatur prüfen**, kurz ruhen lassen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT15M"
+            },
+            "source": "T−15",
+            "steps": [
+              "kafta-garen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Fladen, Rohkost, Oliven: Fladen kurz in den Ofen, alles auf den Tisch",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT5M"
+            },
+            "source": "T−5",
+            "steps": [
+              "fladen-rohkost-oliven"
+            ]
+          },
+          {
+            "phase": "vortag",
+            "text": "Abend, \\~15 Min. aktiv"
+          },
+          {
+            "phase": "vortag",
+            "text": "Einweichen: Kichererbsen (200 g) in reichlich kaltem Wasser mit ¾ TL Natron einweichen (mind. 12 Std.).",
+            "steps": [
+              "einweichen"
+            ]
+          },
+          {
+            "phase": "vortag",
+            "text": "Labneh salzen, Labneh abtropfen: Joghurt (1 kg) mit 1 TL Salz verrühren, ins Passiertuch, im Sieb über einer Schüssel in den Kühlschrank → Labneh.",
+            "steps": [
+              "labneh-abtropfen",
+              "labneh-salzen"
+            ]
+          },
+          {
+            "phase": "vormittags",
+            "text": "Tag 2 — vormittags/mittags, \\~45 Min. aktiv"
+          },
+          {
+            "phase": "vormittags",
+            "text": "Kochen: Kichererbsen kochen (läuft nebenher, 30–60 Min. — Details unter Zubereitung/Hummus). Abkühlen lassen, **im Kochwasser** in den Kühlschrank.",
+            "steps": [
+              "kochen"
+            ]
+          },
+          {
+            "phase": "vormittags",
+            "text": "Paprika rösten → Muhammara komplett fertigstellen (Walnüsse rösten, Muhammara mixen; zieht bis abends durch).",
+            "steps": [
+              "muhammara-mixen",
+              "paprika-roesten",
+              "walnuesse-roesten"
+            ]
+          },
+          {
+            "phase": "vormittags",
+            "text": "Kafta-Masse anrühren, Kafta formen, abgedeckt in den Kühlschrank (hält die Form besser, wenn sie mind. 1 Std. kalt steht).",
+            "steps": [
+              "kafta-formen"
+            ]
+          },
+          {
+            "phase": "vormittags",
+            "text": "Labneh-Check: nach 12–24 Std. streichfähig → aus dem Tuch in eine Dose, kalt stellen."
+          }
+        ]
+      },
+      "note": "*Tag 2 — Mezze-Abend, \\~60 Min.:*"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "hummus",
+          "name": "Hummus",
+          "steps": [
+            {
+              "id": "einweichen",
+              "label": "1",
+              "heading": "**1. Einweichen (über Nacht, passiv)**",
+              "title": "Einweichen",
+              "duration": {
+                "min": "PT8H",
+                "max": "PT14H",
+                "source": "über Nacht"
+              },
+              "attention": "passive",
+              "text": "Tag 1: 200 g Kichererbsen in reichlich kaltem Wasser mit ¾ TL Natron mindestens 12 Std. einweichen.",
+              "action": "Tag 1: 200 g Kichererbsen in reichlich kaltem Wasser mit ¾ TL Natron mindestens 12 Std. einweichen.",
+              "ingredients": [
+                {
+                  "ref": "kichererbsen",
+                  "amount": {
+                    "text": "200 g Kichererbsen",
+                    "value": 200.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "natron",
+                  "amount": {
+                    "text": "¾ TL Natron",
+                    "value": 0.75,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "timers": [
+                {
+                  "label": "Einweichen",
+                  "duration": {
+                    "min": "PT8H",
+                    "max": "PT14H"
+                  },
+                  "text": "über Nacht"
+                }
+              ],
+              "after": []
+            },
+            {
+              "id": "kochen",
+              "label": "2",
+              "heading": "**2. Kochen (30–60 Min.)**",
+              "title": "Kochen",
+              "duration": {
+                "min": "PT30M",
+                "max": "PT1H",
+                "source": "30–60 Min."
+              },
+              "text": "Tag 2: Abgießen. Im 6L-Topf mit ½ TL Natron bei mittlerer Hitze 2–3 Min. **trocken** unter Rühren erhitzen (das Natron greift die Schalen an). Mit \\~1,5 L Wasser aufgießen, aufkochen. Schaum **und die aufschwimmenden Schalen** konsequent abschöpfen — das ist der halbe Cremigkeits-Gewinn. 30–60 Min. leise kochen, bis sich eine Kichererbse zwischen den Fingern mühelos zerdrücken lässt, eher Richtung zerfallend. Nicht salzen.",
+              "action": "Tag 2: Abgießen.",
+              "limits": [
+                "und die aufschwimmenden Schalen"
+              ],
+              "cues": [
+                "bis sich eine Kichererbse zwischen den Fingern mühelos zerdrücken lässt"
+              ],
+              "timers": [
+                {
+                  "label": "Kochen",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                },
+                {
+                  "label": "Kochen",
+                  "duration": {
+                    "min": "PT30M",
+                    "max": "PT1H"
+                  },
+                  "text": "30–60 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "natron",
+                  "amount": {
+                    "text": "½ TL Natron",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "1,5 L Wasser",
+                    "value": 1.5,
+                    "unit": "l"
+                  }
+                }
+              ],
+              "meta": "*nach Einweichen · Herd · fertig wenn sich eine Kichererbse zwischen den Fingern mühelos zerdrücken lässt*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "endCondition": {
+                "type": "visual",
+                "text": "wenn sich eine Kichererbse zwischen den Fingern mühelos zerdrücken lässt"
+              },
+              "attention": "attended",
+              "after": [
+                "step:einweichen"
+              ]
+            },
+            {
+              "id": "hummus-mixen",
+              "label": "3",
+              "heading": "**3. Hummus mixen (10 Min.)**",
+              "title": "Hummus mixen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Abend, warm! Kichererbsen mit etwas Kochwasser wieder heiß werden lassen, abgießen (2–3 EL zum Garnieren beiseite). Warm in den hohen Becher: Kichererbsen, 140 g Tahina, 2 EL Zitronensaft, 1–2 Knoblauchzehen, 1 TL Salz, Prise Kreuzkümmel. Mit dem Stabmixer mixen und dabei 60–100 ml Eiswasser nach und nach zugeben — 2–3 Minuten dranbleiben, bis die Masse hell, seidig und fast fluffig ist. **Kein Olivenöl in die Masse.**",
+              "action": "Abend, warm!",
+              "limits": [
+                "Kein Olivenöl in die Masse."
+              ],
+              "cues": [
+                "bis die Masse hell"
+              ],
+              "timers": [
+                {
+                  "label": "Hummus mixen",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "tahina",
+                  "amount": {
+                    "text": "140 g Tahina",
+                    "value": 140.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "2 EL Zitronensaft",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "1–2 Knoblauchzehen",
+                    "value": 1.0,
+                    "unit": "Stück",
+                    "max": 2.0
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*nach Kochen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:kochen"
+              ]
+            },
+            {
+              "id": "hummus-anrichten",
+              "label": "4",
+              "heading": "**4. Hummus anrichten (5 Min.)**",
+              "title": "Hummus anrichten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Abschmecken & anrichten: Zitrone/Salz nachjustieren. In flacher Schale mit dem Löffelrücken eine Mulde ziehen, 2 EL Olivenöl hinein, zurückbehaltene Kichererbsen und eine Prise Aleppo-Pfeffer oder Kreuzkümmel darüber.",
+              "action": "Abschmecken & anrichten: Zitrone/Salz nachjustieren.",
+              "ingredients": [
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "2 EL Olivenöl",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "aleppo-pfeffer",
+                  "amount": {
+                    "text": "eine Prise Aleppo-Pfeffer"
+                  }
+                }
+              ],
+              "attention": "active"
+            }
+          ],
+          "heading": "**Hummus (Vortag bis Abend, Ottolenghi-Methode, \\~500 g):**",
+          "phaseHint": "Vortag",
+          "produces": [
+            {
+              "id": "hummus",
+              "name": "Hummus"
+            }
+          ]
+        },
+        {
+          "id": "moutabal",
+          "name": "Moutabal",
+          "steps": [
+            {
+              "id": "verkohlen",
+              "label": "5",
+              "heading": "**5. Verkohlen (25 Min.)**",
+              "title": "Verkohlen",
+              "duration": {
+                "typical": "PT25M",
+                "source": "25 Min."
+              },
+              "text": "2 Auberginen mit dem Bunsenbrenner rundum abflämmen, bis die Haut überall schwarz und blasig ist — nicht zaghaft, der Rauch ist das Gericht. Dann bei 220 °C 15–20 Min. in den Ofen, bis sie komplett kollabiert und innen butterweich sind (der Brenner allein gart das Innere nicht durch).",
+              "action": "2 Auberginen mit dem Bunsenbrenner rundum abflämmen, bis die Haut überall schwarz und blasig ist — nicht zaghaft, der Rauch ist das Gericht.",
+              "cues": [
+                "bis die Haut überall schwarz und blasig ist",
+                "bis sie komplett kollabiert und innen butterweich sind (der Brenner allein gart das Innere nicht durch"
+              ],
+              "timers": [
+                {
+                  "label": "Verkohlen",
+                  "duration": {
+                    "min": "PT15M",
+                    "max": "PT20M"
+                  },
+                  "text": "15–20 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "220 °C",
+                  "value": 220
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "auberginen",
+                  "amount": {
+                    "text": "2 Auberginen",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Ofen 220 °C*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 220
+                }
+              ],
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "auberginen-abtropfen",
+              "label": "6",
+              "heading": "**6. Auberginen abtropfen (20–30 Min., passiv)**",
+              "title": "Auberginen abtropfen",
+              "duration": {
+                "min": "PT20M",
+                "max": "PT30M",
+                "source": "20–30 Min."
+              },
+              "attention": "passive",
+              "text": "Längs halbieren, Fruchtfleisch herausschaben (verkohlte Hautstücke penibel aussortieren), 20–30 Min. im Sieb abtropfen lassen — das Bitterwasser soll raus.",
+              "action": "Längs halbieren, Fruchtfleisch herausschaben (verkohlte Hautstücke penibel aussortieren), 20–30 Min. im Sieb abtropfen lassen — das Bitterwasser soll raus.",
+              "timers": [
+                {
+                  "label": "Auberginen abtropfen",
+                  "duration": {
+                    "min": "PT20M",
+                    "max": "PT30M"
+                  },
+                  "text": "20–30 Min."
+                }
+              ],
+              "ingredients": []
+            },
+            {
+              "id": "moutabal-mischen",
+              "label": "7",
+              "heading": "**7. Moutabal mischen (5 Min.)**",
+              "title": "Moutabal mischen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Mit der Gabel zerdrücken, **nicht mixen** — etwas Textur bleibt. 60 g Tahina, 2 EL Zitronensaft, 1 fein geriebene Knoblauchzehe und ½ TL Salz unterrühren. Abschmecken. Anrichten mit 1–2 EL Olivenöl, optional Granatapfelkerne.",
+              "action": "Mit der Gabel zerdrücken, **nicht mixen** — etwas Textur bleibt.",
+              "limits": [
+                "nicht mixen"
+              ],
+              "ingredients": [
+                {
+                  "ref": "tahina",
+                  "amount": {
+                    "text": "60 g Tahina",
+                    "value": 60.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "2 EL Zitronensaft",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "1 fein geriebene Knoblauchzehe",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "1–2 EL Olivenöl",
+                    "value": 1.0,
+                    "unit": "EL",
+                    "max": 2.0
+                  }
+                }
+              ],
+              "attention": "active"
+            }
+          ],
+          "heading": "**Moutabal (Abend, \\~400 g):**",
+          "phaseHint": "Abend",
+          "produces": [
+            {
+              "id": "moutabal",
+              "name": "Moutabal"
+            }
+          ]
+        },
+        {
+          "id": "muhammara",
+          "name": "Muhammara",
+          "steps": [
+            {
+              "id": "paprika-roesten",
+              "label": "8",
+              "heading": "**8. Paprika rösten (20 Min.)**",
+              "title": "Paprika rösten",
+              "duration": {
+                "typical": "PT20M",
+                "source": "20 Min."
+              },
+              "text": "2 Spitzpaprika unter dem Ofengrill (oder mit dem Brenner) rundum schwarz rösten, 10 Min. abgedeckt in einer Schüssel dämpfen, häuten und entkernen. **Nicht abwaschen** — das spült das Röstaroma weg. *Abkürzung: Glasware abtropfen und trocken tupfen; funktioniert, schmeckt aber flacher.*",
+              "action": "2 Spitzpaprika unter dem Ofengrill (oder mit dem Brenner) rundum schwarz rösten, 10 Min. abgedeckt in einer Schüssel dämpfen, häuten und entkernen.",
+              "limits": [
+                "Nicht abwaschen"
+              ],
+              "why": "Abkürzung: Glasware abtropfen und trocken tupfen; funktioniert, schmeckt aber flacher.",
+              "timers": [
+                {
+                  "label": "Paprika rösten",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "spitzpaprika",
+                  "amount": {
+                    "text": "2 Spitzpaprika",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "walnuesse-roesten",
+              "label": "9",
+              "heading": "**9. Walnüsse rösten (5 Min.)**",
+              "title": "Walnüsse rösten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "100 g Walnusskerne in der trockenen Pfanne rösten, bis sie duften. Abkühlen lassen.",
+              "action": "100 g Walnusskerne in der trockenen Pfanne rösten, bis sie duften.",
+              "cues": [
+                "bis sie duften"
+              ],
+              "ingredients": [
+                {
+                  "ref": "walnusskerne",
+                  "amount": {
+                    "text": "100 g Walnusskerne",
+                    "value": 100.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Walnüsse rösten",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
+              "after": []
+            },
+            {
+              "id": "muhammara-mixen",
+              "label": "10",
+              "heading": "**10. Muhammara mixen (5 Min.)**",
+              "title": "Muhammara mixen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Paprika, Walnüsse, 40 g Semmelbrösel, 1½ EL Granatapfelsirup, 1 TL Aleppo-Pfeffer, ½ TL Kreuzkümmel, ½ TL Salz, 1 Knoblauchzehe, 3 EL Olivenöl, 1 TL Zitronensaft mit dem Stabmixer **stoßweise** pulsen — Paste mit Biss, die Nüsse gemahlen, aber nicht zu Butter zerschlagen. Zu dick: Schluck Olivenöl. Bis abends kalt ziehen lassen.",
+              "action": "Paprika, Walnüsse, 40 g Semmelbrösel, 1½ EL Granatapfelsirup, 1 TL Aleppo-Pfeffer, ½ TL Kreuzkümmel, ½ TL Salz, 1 Knoblauchzehe, 3 EL Olivenöl, 1 TL Zitronensaft mit dem Stabmixer **stoßweise** pulsen — Paste mit Biss, die Nüsse gemahlen, aber nicht zu Butter zerschlagen.",
+              "ingredients": [
+                {
+                  "ref": "semmelbroesel",
+                  "amount": {
+                    "text": "40 g Semmelbrösel",
+                    "value": 40.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "granatapfelsirup",
+                  "amount": {
+                    "text": "1½ EL Granatapfelsirup",
+                    "value": 1.5,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "aleppo-pfeffer",
+                  "amount": {
+                    "text": "1 TL Aleppo-Pfeffer",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "kreuzkuemmel",
+                  "amount": {
+                    "text": "½ TL Kreuzkümmel",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "1 Knoblauchzehe",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "3 EL Olivenöl",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "1 TL Zitronensaft",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*nach Paprika rösten, Walnüsse rösten*",
+              "attention": "active",
+              "after": [
+                "step:paprika-roesten",
+                "step:walnuesse-roesten"
+              ]
+            },
+            {
+              "id": "muhammara-abschmecken",
+              "label": "11",
+              "heading": "**11. Muhammara abschmecken (5 Min.)**",
+              "title": "Muhammara abschmecken",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Abend: Balance süß (Sirup) – sauer (Sirup/Zitrone) – nussig prüfen, Salz nachziehen. Mit Olivenöl-Faden anrichten. *Bewusst am unteren Schärfe-Ende gewürzt — Aleppo-Pfeffer kommt für die Erwachsenen zusätzlich auf den Tisch.*",
+              "action": "Abend: Balance süß (Sirup) – sauer (Sirup/Zitrone) – nussig prüfen, Salz nachziehen.",
+              "why": "Bewusst am unteren Schärfe-Ende gewürzt — Aleppo-Pfeffer kommt für die Erwachsenen zusätzlich auf den Tisch.",
+              "ingredients": [],
+              "attention": "active"
+            }
+          ],
+          "heading": "**Muhammara (Vormittags, \\~400 g, Kühlschrank):**",
+          "phaseHint": "Vormittag",
+          "produces": [
+            {
+              "id": "muhammara",
+              "name": "Muhammara",
+              "storage": {
+                "place": "fridge"
+              }
+            }
+          ]
+        },
+        {
+          "id": "labneh-mit-za-atar",
+          "name": "Labneh mit Za'atar",
+          "steps": [
+            {
+              "id": "labneh-salzen",
+              "label": "12",
+              "heading": "**12. Labneh salzen (5 Min.)**",
+              "title": "Labneh salzen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "1 kg Joghurt mit 1 TL Salz verrühren (**vor** dem Abtropfen salzen — zieht Molke und würzt durch statt nur oberflächlich).",
+              "action": "1 kg Joghurt mit 1 TL Salz verrühren (**vor** dem Abtropfen salzen — zieht Molke und würzt durch statt nur oberflächlich).",
+              "ingredients": [
+                {
+                  "ref": "joghurt",
+                  "amount": {
+                    "text": "1 kg Joghurt",
+                    "value": 1.0,
+                    "unit": "kg"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "labneh-abtropfen",
+              "label": "13",
+              "heading": "**13. Labneh abtropfen (12–24 Std., passiv)**",
+              "title": "Labneh abtropfen",
+              "duration": {
+                "min": "PT12H",
+                "max": "PT24H",
+                "source": "12–24 Std."
+              },
+              "attention": "passive",
+              "text": "In das Passiertuch, im feinen Sieb über einer Schüssel 12–24 Std. im Kühlschrank abtropfen lassen. Nach 12 Std. prüfen: streichfähig wie Frischkäse = fertig; länger = fester.",
+              "action": "In das Passiertuch, im feinen Sieb über einer Schüssel 12–24 Std. im Kühlschrank abtropfen lassen.",
+              "timers": [
+                {
+                  "label": "Labneh abtropfen",
+                  "duration": {
+                    "min": "PT12H",
+                    "max": "PT24H"
+                  },
+                  "text": "12–24 Std."
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT12H",
+                    "source": "12 Std."
+                  },
+                  "text": "Nach 12 Std."
+                }
+              ],
+              "ingredients": []
+            },
+            {
+              "id": "labneh-anrichten",
+              "label": "14",
+              "heading": "**14. Labneh anrichten (5 Min.)**",
+              "title": "Labneh anrichten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Flach ausstreichen, Mulde, 2 EL Olivenöl, 1–2 TL Za'atar darüber. *Für das Kind einen Klecks ohne Za'atar abzweigen — pur mit Brot die mildeste Komponente des Abends.*",
+              "action": "Flach ausstreichen, Mulde, 2 EL Olivenöl, 1–2 TL Za'atar darüber.",
+              "why": "Für das Kind einen Klecks ohne Za'atar abzweigen — pur mit Brot die mildeste Komponente des Abends.",
+              "ingredients": [
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "2 EL Olivenöl",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "za",
+                  "amount": {
+                    "text": "1–2 TL Za",
+                    "value": 1.0,
+                    "unit": "TL",
+                    "max": 2.0
+                  }
+                }
+              ],
+              "attention": "active"
+            }
+          ],
+          "heading": "**Labneh mit Za'atar (Vortag, \\~450–500 g, Kühlschrank):**",
+          "phaseHint": "Vortag",
+          "produces": [
+            {
+              "id": "labneh-mit-za-atar",
+              "name": "Labneh mit Za'atar",
+              "storage": {
+                "place": "fridge"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kafta",
+          "name": "Kafta",
+          "steps": [
+            {
+              "id": "kafta-masse",
+              "label": "15",
+              "heading": "**15. Kafta-Masse (15 Min.)**",
+              "title": "Kafta-Masse",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "Tag 2 mittags: 1 Zwiebel sehr fein reiben oder hacken und im Sieb **kräftig ausdrücken** — Zwiebelwasser ist der Grund, warum Kafta vom Spieß rutscht. ½ Bund Petersilie fein schneiden. 600 g Lammhack (oder Rinderhack) mit Zwiebel, Petersilie, 1 fein geriebener Knoblauchzehe, 1½ TL Baharat, 1 TL Salz, ½ TL Pfeffer 2–3 Min. **mit den Händen kneten**, bis die Masse klebrig und homogen ist (das bindet ohne Ei und ohne Brösel). Kleine Probe in der Pfanne braten, abschmecken.",
+              "action": "Tag 2 mittags: 1 Zwiebel sehr fein reiben oder hacken und im Sieb **kräftig ausdrücken** — Zwiebelwasser ist der Grund, warum Kafta vom Spieß rutscht.",
+              "limits": [
+                "kräftig ausdrücken",
+                "mit den Händen kneten"
+              ],
+              "cues": [
+                "bis die Masse klebrig und homogen ist (das bindet ohne Ei und ohne Brösel"
+              ],
+              "timers": [
+                {
+                  "label": "Kafta-Masse",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "zwiebel",
+                  "amount": {
+                    "text": "1 Zwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "petersilie",
+                  "amount": {
+                    "text": "½ Bund Petersilie",
+                    "value": 0.5,
+                    "unit": "Bund"
+                  }
+                },
+                {
+                  "ref": "lammhack",
+                  "amount": {
+                    "text": "600 g Lammhack",
+                    "value": 600.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "1 fein geriebener Knoblauchzehe",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "baharat",
+                  "amount": {
+                    "text": "1½ TL Baharat",
+                    "value": 1.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "½ TL Pfeffer",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "kafta-formen",
+              "label": "16",
+              "heading": "**16. Kafta formen (15 Min. + 1 Std. passiv)**",
+              "title": "Kafta formen",
+              "duration": {
+                "typical": "PT1H15M",
+                "source": "15 Min. + 1 Std."
+              },
+              "attention": "passive",
+              "text": "In 12 Portionen à \\~50 g teilen. Mit nassen Händen zu \\~10 cm langen, 2–2,5 cm dicken Rollen formen — auf flache Metallspieße gedrückt (klassisch) oder ohne Spieß als Röllchen. Abgedeckt mind. 1 Std. kühlen; dann fallen sie beim Grillen nicht auseinander.",
+              "action": "In 12 Portionen à \\~50 g teilen.",
+              "ingredients": [],
+              "timers": [
+                {
+                  "label": "Kafta formen",
+                  "duration": {
+                    "typical": "PT1H15M"
+                  },
+                  "text": "15 Min. + 1 Std."
+                }
+              ]
+            },
+            {
+              "id": "kafta-garen",
+              "label": "17",
+              "heading": "**17. Kafta garen (8–10 Min.)**",
+              "title": "Kafta garen",
+              "duration": {
+                "min": "PT8M",
+                "max": "PT10M",
+                "source": "8–10 Min."
+              },
+              "text": "**Gasgrill:** Rost sauber und geölt, direkte Zone hoch vorgeheizt. Kafta auflegen, **2 Min. nicht bewegen**, dann alle 2 Min. um eine Vierteldrehung wenden — insgesamt 8–10 Min., bis rundum dunkel gebräunt. **Pfanne:** 1 EL Olivenöl in der schweren Pfanne stark erhitzen, in zwei Chargen 8–10 Min. rundum braten, Deckel in den letzten 2 Min. auflegen.",
+              "action": "**Gasgrill:** Rost sauber und geölt, direkte Zone hoch vorgeheizt.",
+              "limits": [
+                "2 Min. nicht bewegen"
+              ],
+              "timers": [
+                {
+                  "label": "Kafta garen",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                },
+                {
+                  "label": "Kafta garen",
+                  "duration": {
+                    "min": "PT8M",
+                    "max": "PT10M"
+                  },
+                  "text": "8–10 Min."
+                },
+                {
+                  "label": "Kafta garen",
+                  "duration": {
+                    "min": "PT8M",
+                    "max": "PT10M"
+                  },
+                  "text": "8–10 Min."
+                },
+                {
+                  "label": "Kafta garen",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "1 EL Olivenöl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Kafta formen · Grill · fertig bei ≥ 72 °C Kern*",
+              "claims": [
+                {
+                  "resource": "grill",
+                  "units": 1
+                }
+              ],
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei ≥ 72 °C Kern",
+                "value": 72
+              },
+              "attention": "active",
+              "after": [
+                "step:kafta-formen"
+              ]
+            }
+          ],
+          "heading": "**Kafta (Vormittags, \\~12 Stück, Kühlschrank):**",
+          "phaseHint": "Vormittag",
+          "produces": [
+            {
+              "id": "kafta",
+              "name": "Kafta",
+              "storage": {
+                "place": "fridge"
+              }
+            }
+          ]
+        },
+        {
+          "id": "dazu",
+          "name": "Dazu",
+          "steps": [
+            {
+              "id": "fladen-rohkost-oliven",
+              "label": "18",
+              "heading": "**18. Fladen, Rohkost, Oliven (15 Min.)**",
+              "title": "Fladen, Rohkost, Oliven",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "- **Rohkost:** 1 Gurke, 3 Karotten, 1 Bund Radieschen, 1 Paprika, 1 Kohlrabi, 2 Stangen Sellerie in Sticks/Hälften — großzügig, das ist der Hauptträger für die Dips.\n- **Vollkorn-Fladen:** 4 Fladen 3–4 Min. im Ofen aufwärmen, halbieren.\n- **Oliven** in eine kleine Schale — fertig.\n- **Optional Beilagensalat zur Kafta:** 2 Tomaten + ½ Gurke gewürfelt, Rest Petersilie, Zitrone, Salz, Schuss Olivenöl.",
+              "action": "- **Rohkost:** 1 Gurke, 3 Karotten, 1 Bund Radieschen, 1 Paprika, 1 Kohlrabi, 2 Stangen Sellerie in Sticks/Hälften — großzügig, das ist der Hauptträger für die Dips.\n- **Vollkorn-Fladen:** 4 Fladen 3–4 Min. im Ofen aufwärmen, halbieren.\n- **Oliven** in eine kleine Schale — fertig.\n- **Optional Beilagensalat zur Kafta:** 2 Tomaten + ½ Gurke gewürfelt, Rest Petersilie, Zitrone, Salz, Schuss Olivenöl.",
+              "timers": [
+                {
+                  "label": "Fladen, Rohkost, Oliven",
+                  "duration": {
+                    "min": "PT3M",
+                    "max": "PT4M"
+                  },
+                  "text": "3–4 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "salatgurke",
+                  "amount": {
+                    "text": "1 Gurke",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "karotten",
+                  "amount": {
+                    "text": "3 Karotten",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "radieschen",
+                  "amount": {
+                    "text": "1 Bund Radieschen",
+                    "value": 1.0,
+                    "unit": "Bund"
+                  }
+                },
+                {
+                  "ref": "paprika",
+                  "amount": {
+                    "text": "1 Paprika",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "kohlrabi",
+                  "amount": {
+                    "text": "1 Kohlrabi",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "staudensellerie",
+                  "amount": {
+                    "text": "2 Stangen Sellerie",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "vollkorn-fladen",
+                  "amount": {
+                    "text": "4 Fladen",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "tomaten",
+                  "amount": {
+                    "text": "2 Tomaten",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salatgurke",
+                  "amount": {
+                    "text": "½ Gurke",
+                    "value": 0.5,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            }
+          ],
+          "heading": "**Dazu (Abend, à la minute):**",
+          "phaseHint": "Abend",
+          "produces": [
+            {
+              "id": "dazu",
+              "name": "Dazu"
+            }
+          ],
+          "consumes": [
+            "product:kafta"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "*200 g getrocknete Kichererbsen · 1¼ TL ",
+      "level": "bold",
+      "markdown": "*200 g getrocknete Kichererbsen · 1¼ TL Natron · 140 g Tahina · 2–3 EL Zitronensaft · 1–2 Knoblauchzehen · 1 TL Salz · Prise Kreuzkümmel · 60–100 ml Eiswasser (oder 2–3 Eiswürfel)*"
+    },
+    {
+      "type": "markdown",
+      "title": "*2 große Auberginen (\\~700 g) · 60 g Tah",
+      "level": "bold",
+      "markdown": "*2 große Auberginen (\\~700 g) · 60 g Tahina · 2 EL Zitronensaft · 1 kleine Knoblauchzehe · ½ TL Salz · 1–2 EL Olivenöl obenauf · optional Granatapfelkerne*"
+    },
+    {
+      "type": "markdown",
+      "title": "*2 rote Spitzpaprika (oder 1 Glas geröst",
+      "level": "bold",
+      "markdown": "*2 rote Spitzpaprika (oder 1 Glas geröstete Paprika, abgetropft \\~220 g) · 100 g Walnusskerne · 40 g Semmelbrösel · 1½ EL Granatapfelsirup · 1 TL Aleppo-Pfeffer · ½ TL Kreuzkümmel · ½ TL Salz · 1 Knoblauchzehe · 3 EL Olivenöl · 1 TL Zitronensaft*"
+    },
+    {
+      "type": "markdown",
+      "title": "*1 kg griechischer Joghurt (10 %) · 1 TL",
+      "level": "bold",
+      "markdown": "*1 kg griechischer Joghurt (10 %) · 1 TL Salz · 2 EL Olivenöl · 1–2 TL Za'atar*"
+    },
+    {
+      "type": "markdown",
+      "title": "Gegrillt oder gebraten.",
+      "level": "bold",
+      "markdown": "Gegrillt oder gebraten."
+    },
+    {
+      "type": "markdown",
+      "title": "*600 g Lamm- oder Rinderhack (\\~20 % Fet",
+      "level": "bold",
+      "markdown": "*600 g Lamm- oder Rinderhack (\\~20 % Fett) · 1 mittlere Zwiebel · ½ Bund glatte Petersilie · 1 Knoblauchzehe · 1½ TL Baharat · 1 TL Salz · ½ TL schwarzer Pfeffer · ¼ TL Piment (falls Baharat gekauft und mild) · 1 EL Olivenöl (nur Pfanne)*"
+    },
+    {
+      "type": "markdown",
+      "title": "Gar-Check — Pflicht",
+      "level": "bold",
+      "markdown": "**Gar-Check — Pflicht:** Fleischthermometer flach in die dickste Rolle: **≥ 72 °C**, Saft klar, innen kein Rosa. Hackfleisch ist der eine Punkt dieses Abends, an dem „durch\" nicht verhandelbar ist. 3 Min. ruhen lassen, mit Zitronenspalten servieren."
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "- **Alles gegart oder pasteurisiert:** Kichererbsen, Aubergine, Paprika gekocht/geröstet; Joghurt aus dem Kühlregal ist pasteurisiert (Labneh daraus unkritisch); Kafta auf ≥ 72 °C. Roher Knoblauch ist kein Schwangerschaftsthema, nur eine Kinderfrage.\n- **KH-Träger sind Hummus und Fladen.** Hummus hat \\~15 g KH pro 100 g (Kichererbse + Tahina), aber niedrigen GI und viel Protein/Fett — der klassische „gute\" KH-Träger. Muhammara (\\~8 g/100 g, davon \\~2 g Sirup) und Moutabal (\\~5 g/100 g) sind fast frei, Labneh ebenso. **Portionshinweis pro Mahlzeit:** 3–4 EL Hummus (\\~80 g, \\~12 g KH) + ½–1 Vollkorn-Fladen (\\~15–30 g KH) + beliebig Rohkost, Moutabal, Labneh, Kafta → \\~30–45 g KH, immer mit Protein. Nicht die Rohkost weglassen und dafür mehr Brot — genau umgekehrt.\n- **Snack-Vorrat (Leitfaden-Regel 5):** Alle vier Dips halten 4–5 Tage im Kühlschrank (Hummus zieht nach, Knoblauch wird schärfer). 2 EL Hummus/Labneh mit Karotte, Gurke, Paprika ist die perfekte Zwischen- oder Spätmahlzeit — genau das ist der zweite Grund für dieses Rezept.\n- **Granatapfelsirup:** 1½ EL auf den ganzen Dip = \\~1 TL pro Person, etwa 4 g Zucker. Bleibt drin; die Muhammara wäre ohne ihn ein anderes Gericht.\n- **Nach dem Essen:** Spaziergang einplanen — Mezze-Teller sind ein langsames Essen, das lässt sich gut kombinieren.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "Von allen aktuellen Projekten das kinderfreundlichste — Dips, Brot, Oliven (bekannter Treffer) und Fleischröllchen sind praktisch garantiert. Konkret:\n\n- **Muhammara** ist das einzige Schärfethema und bewusst am unteren Ende gewürzt (1 TL Aleppo-Pfeffer auf \\~400 g = mild-fruchtig). Aleppo-Pfeffer steht **zusätzlich am Tisch** für die Erwachsenen.\n- **Kafta:** von Haus aus ohne Chili. Für das Kind 2–3 Stück aus derselben Masse formen, evtl. etwas kleiner (garen dann schneller — Thermometer). Zitronenspalte dazu, fertig.\n- **Beim Kafta-Formen mitmachen lassen** — Hackmasse verzeiht alles; danach Hände gründlich waschen (rohes Hack).\n- **Roher Knoblauch** in Hummus und Moutabal ist bewusst knapp dosiert (1–2 bzw. 1 Zehe) — beides wird über Nacht spürbar schärfer; Reste am Folgetag fürs Kind vorher probieren.\n- **Labneh ohne Za'atar** als Klecks abzweigen — mildeste Einstiegskomponente mit Brot.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "### Getroffene Entscheidungen (09/2026)\n\n- **Teigtaschen raus, Kafta rein:** 600 g Weißmehl für Fatayer + Sambousek sind der KH-Block des Originals; dafür fehlte dem Original-Abend Protein außer Käse und Kichererbse. Kafta kostet 15 Min. aktive Zeit, braucht nur Zutaten, die der Levante-Block sowieso beschafft, und streicht zugleich den „Teigtag\" — der Abend wird von 3 auf 2 Tage kürzer.\n- **Kafta statt Kofta bil tahini:** Die Ofen-Variante in Tahina-Sauce wäre reichhaltiger, aber dieselbe Tahina steckt schon in zwei Dips — dreimal Tahina auf einem Teller kippt. Bleibt eigener Backlog-Punkt für einen Abend ohne Hummus.\n- **Alle vier Dips bleiben, Mengen unverändert.** Sie sind zugleich der Wochen-Snack-Vorrat, deshalb nicht verkleinern.\n- **Rohkost hochskaliert** (6 Sorten statt 3): Sie übernimmt die Rolle, die im Original Brot und Teigtaschen hatten.\n- **Getrennt vom Shawarma-Teller.** Doppelt gekaufte Zutaten (Tahina, Baharat, Aleppo-Pfeffer) sind unkritisch — hält alles.\n\n### Quellen\n\n- **Hummus:** Ottolenghi/Tamimi (*Jerusalem*), Natron-Methode und Warm-Mixen mit Eiswasser ([Ottolenghi](https://ottolenghi.co.uk/pages/recipes/hummus-recipe) — 200 g getrocknete Kichererbsen, 120–150 g Tahina; hiesige Mengen daran kalibriert). Schalenentfernung → Cremigkeit: [America's Test Kitchen](https://www.americastestkitchen.com/how_tos/6634-for-creamier-hummus-skin-your-chickpeas). Kein Öl in die Masse: [Smitten Kitchen](https://smittenkitchen.com/2013/01/ethereally-smooth-hummus/).\n- **Muhammara:** Herkunft Aleppo, im libanesischen Mezze Standard, Granatapfelsirup nicht verhandelbar ([Wikipedia](https://en.wikipedia.org/wiki/Muhammara), [Grantourismo](https://grantourismotravels.com/mezze-recipes/)).\n- **Labneh:** vor dem Abtropfen salzen, 12–24 Std. ([Olive Wok Whisk — Mezze-Guide](https://www.olivewokwhisk.com/2026/05/mediterranean-mezze-guide.html)).\n- **Kafta:** Klassische libanesische Formel Hack + fein gehackte Zwiebel + Petersilie + Baharat/7-Gewürz, ohne Ei und Brösel, Zwiebel ausdrücken, Masse kühlen ([Maureen Abood — Kafta](https://maureenabood.com/kafta-recipe/), [Zaatar and Zaytoun — Kafta](https://zaatarandzaytoun.com/lebanese-kafta/)). Lamm klassisch, Rind oder gemischt verbreitet.\n- **Kerntemperatur Hack ≥ 72 °C:** BfR-Empfehlung für Hackfleisch („mindestens 70 °C für 2 Minuten im Kern\"), hier mit Puffer; in der Schwangerschaft laut Leitfaden nicht verhandelbar.\n- **KH-Werte:** USDA FoodData Central (Hummus \\~14–15 g/100 g, Kichererbsen gekocht \\~27 g/100 g, Aubergine \\~3 g/100 g) — Näherungen, das Messgerät entscheidet.\n- **Bewusst nicht dabei:** Fatayer, Sambousek (Weißmehl), Falafel (frittiert, nochmal Kichererbse), Kibbeh nayyeh (rohes Lamm — in der Schwangerschaft ohnehin tabu), Makdous und Shanklish (Vorlauf/Beschaffung). Kalte Ausweich-Alternative ohne Fleisch: **Loubieh bi zeit** (grüne Bohnen in Öl-Tomate) — İmam-bayıldı-Erfahrung überträgt sich direkt.",
+      "tags": [
+        "quellen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notiz: Kombination mit dem Shawarma-Teller",
+      "level": 2,
+      "markdown": "Bleiben zwei getrennte Abende. Für ein großes libanesisches Menü: Dips halbiert als Vorspiel,\nShawarma-Teller (`schwangerschaft/shawarma-teller.md`) als Hauptgang, dann die Kafta weglassen\n(zweimal Fleisch ist zu viel). Komponenten sind disjunkt; nur die Einkäufe (Tahina, Baharat,\nAleppo-Pfeffer, Zitronen) überschneiden sich — hält alles."
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T19:00:22Z",
+    "sourceHash": "1b87c6f9bb3570ee",
+    "quantities": [
+      {
+        "ingredient": "tahina",
+        "total": {
+          "text": "200 g",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "hummus": "140 g Tahina",
+          "moutabal": "60 g Tahina"
+        }
+      },
+      {
+        "ingredient": "granatapfelsirup",
+        "total": {
+          "text": "1½ EL",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "muhammara": "1½ EL Granatapfelsirup"
+        }
+      },
+      {
+        "ingredient": "za",
+        "total": {
+          "text": "1–2 TL",
+          "value": 1.0,
+          "max": 2.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "labneh-mit-za-atar": "1–2 TL Za"
+        }
+      },
+      {
+        "ingredient": "baharat",
+        "total": {
+          "text": "1½ TL",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "kafta": "1½ TL Baharat"
+        }
+      },
+      {
+        "ingredient": "aleppo-pfeffer",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "muhammara": "1 TL Aleppo-Pfeffer"
+        },
+        "unitless": [
+          "eine Prise Aleppo-Pfeffer"
+        ]
+      },
+      {
+        "ingredient": "oliven",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "auberginen",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "moutabal": "2 Auberginen"
+        }
+      },
+      {
+        "ingredient": "spitzpaprika",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "muhammara": "2 Spitzpaprika"
+        }
+      },
+      {
+        "ingredient": "zitronen",
+        "total": {
+          "text": "4 EL (+ TL ungemischt)",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "hummus": "2 EL Zitronensaft",
+          "moutabal": "2 EL Zitronensaft"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": "4–5",
+          "value": 4.0,
+          "max": 5.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "hummus": "1–2 Knoblauchzehen",
+          "moutabal": "1 fein geriebene Knoblauchzehe",
+          "muhammara": "1 Knoblauchzehe",
+          "kafta": "1 fein geriebener Knoblauchzehe"
+        }
+      },
+      {
+        "ingredient": "zwiebel",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "kafta": "1 Zwiebel"
+        }
+      },
+      {
+        "ingredient": "petersilie",
+        "total": {
+          "text": "½ Bund",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "Bund",
+          "approx": false
+        },
+        "perTask": {
+          "kafta": "½ Bund Petersilie"
+        }
+      },
+      {
+        "ingredient": "salatgurke",
+        "total": {
+          "text": "1½",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "dazu": "1 Gurke + ½ Gurke"
+        }
+      },
+      {
+        "ingredient": "karotten",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "dazu": "3 Karotten"
+        }
+      },
+      {
+        "ingredient": "radieschen",
+        "total": {
+          "text": "1 Bund",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Bund",
+          "approx": false
+        },
+        "perTask": {
+          "dazu": "1 Bund Radieschen"
+        }
+      },
+      {
+        "ingredient": "paprika",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "dazu": "1 Paprika"
+        }
+      },
+      {
+        "ingredient": "kohlrabi",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "dazu": "1 Kohlrabi"
+        }
+      },
+      {
+        "ingredient": "staudensellerie",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "dazu": "2 Stangen Sellerie"
+        }
+      },
+      {
+        "ingredient": "granatapfel",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "tomaten",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "dazu": "2 Tomaten"
+        }
+      },
+      {
+        "ingredient": "lammhack",
+        "total": {
+          "text": "600 g",
+          "value": 600.0,
+          "max": 600.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "kafta": "600 g Lammhack"
+        }
+      },
+      {
+        "ingredient": "joghurt",
+        "total": {
+          "text": "1000 g",
+          "value": 1000.0,
+          "max": 1000.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "labneh-mit-za-atar": "1 kg Joghurt"
+        }
+      },
+      {
+        "ingredient": "vollkorn-fladen",
+        "total": {
+          "text": "4",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "dazu": "4 Fladen"
+        }
+      },
+      {
+        "ingredient": "kichererbsen",
+        "total": {
+          "text": "200 g",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "hummus": "200 g Kichererbsen"
+        }
+      },
+      {
+        "ingredient": "natron",
+        "total": {
+          "text": "1¼ TL",
+          "value": 1.25,
+          "max": 1.25,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "hummus": "¾ TL Natron + ½ TL Natron"
+        }
+      },
+      {
+        "ingredient": "walnusskerne",
+        "total": {
+          "text": "100 g",
+          "value": 100.0,
+          "max": 100.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "muhammara": "100 g Walnusskerne"
+        }
+      },
+      {
+        "ingredient": "semmelbroesel",
+        "total": {
+          "text": "40 g",
+          "value": 40.0,
+          "max": 40.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "muhammara": "40 g Semmelbrösel"
+        }
+      },
+      {
+        "ingredient": "kreuzkuemmel",
+        "total": {
+          "text": "½ TL",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "muhammara": "½ TL Kreuzkümmel"
+        }
+      },
+      {
+        "ingredient": "piment",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "olivenoel",
+        "total": {
+          "text": "9–10 EL",
+          "value": 9.0,
+          "max": 10.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "hummus": "2 EL Olivenöl",
+          "moutabal": "1–2 EL Olivenöl",
+          "muhammara": "3 EL Olivenöl",
+          "labneh-mit-za-atar": "2 EL Olivenöl",
+          "kafta": "1 EL Olivenöl"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "4 TL",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "hummus": "1 TL Salz",
+          "moutabal": "½ TL Salz",
+          "muhammara": "½ TL Salz",
+          "labneh-mit-za-atar": "1 TL Salz",
+          "kafta": "1 TL Salz"
+        }
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": "½ TL",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "kafta": "½ TL Pfeffer"
+        }
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "1500 ml",
+          "value": 1500.0,
+          "max": 1500.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "hummus": "1,5 L Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Aldi / REWE",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "auberginen",
+            "name": "große Auberginen",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "\\~700 g"
+          },
+          {
+            "ingredient": "spitzpaprika",
+            "name": "rote Spitzpaprika",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "Abkürzung: 1 Glas geröstete Paprika, \\~220 g Abtropfgewicht"
+          },
+          {
+            "ingredient": "zitronen",
+            "name": "Zitronen",
+            "need": {
+              "text": "4 EL (+ TL ungemischt)",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "4 EL",
+            "inStock": false,
+            "buy": {
+              "text": "4"
+            }
+          },
+          {
+            "ingredient": "knoblauch",
+            "name": "Knoblauch",
+            "need": {
+              "text": "4–5",
+              "value": 4.0,
+              "max": 5.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "4–5",
+            "inStock": false,
+            "buy": {
+              "text": "1 Knolle"
+            }
+          },
+          {
+            "ingredient": "zwiebel",
+            "name": "Zwiebel",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "Kafta"
+          },
+          {
+            "ingredient": "petersilie",
+            "name": "glatte Petersilie",
+            "need": {
+              "text": "½ Bund",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Bund",
+              "approx": false
+            },
+            "display": "½ Bund",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            },
+            "note": "großer Bund; ½ in die Kafta, Rest Deko"
+          },
+          {
+            "ingredient": "salatgurke",
+            "name": "Salatgurke",
+            "need": {
+              "text": "1½",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1½",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "Rohkost zum Dippen"
+          },
+          {
+            "ingredient": "karotten",
+            "name": "Karotten",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            },
+            "note": "Rohkost"
+          },
+          {
+            "ingredient": "radieschen",
+            "name": "Radieschen",
+            "need": {
+              "text": "1 Bund",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Bund",
+              "approx": false
+            },
+            "display": "1 Bund",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            },
+            "note": "Rohkost"
+          },
+          {
+            "ingredient": "paprika",
+            "name": "rote Paprika",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "Rohkost"
+          },
+          {
+            "ingredient": "kohlrabi",
+            "name": "Kohlrabi",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "Rohkost"
+          },
+          {
+            "ingredient": "staudensellerie",
+            "name": "Staudensellerie",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2 Stangen"
+            },
+            "note": "Rohkost"
+          },
+          {
+            "ingredient": "granatapfel",
+            "name": "Granatapfel",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "optional": true,
+            "note": "Kerne als Deko auf Moutabal/Muhammara"
+          },
+          {
+            "ingredient": "tomaten",
+            "name": "Tomaten",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "optional": true,
+            "note": "+ ½ Salatgurke für einen kleinen Beilagensalat zur Kafta"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "lammhack",
+            "name": "Lammhack oder Rinderhack *",
+            "need": {
+              "text": "600 g",
+              "value": 600.0,
+              "max": 600.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "600 g",
+            "inStock": false,
+            "buy": {
+              "text": "600 g"
+            },
+            "note": "\\~20 % Fett; **frisch am Kochtag***"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "joghurt",
+            "name": "griechischer Joghurt",
+            "need": {
+              "text": "1000 g",
+              "value": 1000.0,
+              "max": 1000.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "1000 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 kg"
+            },
+            "note": "10 % Fett, pasteurisiert — Standardware → wird zu \\~450–500 g Labneh"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "kichererbsen",
+            "name": "getrocknete Kichererbsen",
+            "need": {
+              "text": "200 g",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "200 g",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            },
+            "note": "Packung; Verbrauch 200 g"
+          },
+          {
+            "ingredient": "natron",
+            "name": "Natron",
+            "need": {
+              "text": "1¼ TL",
+              "value": 1.25,
+              "max": 1.25,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1¼ TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Päckchen"
+            }
+          },
+          {
+            "ingredient": "walnusskerne",
+            "name": "Walnusskerne",
+            "need": {
+              "text": "100 g",
+              "value": 100.0,
+              "max": 100.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "100 g",
+            "inStock": false,
+            "buy": {
+              "text": "100 g"
+            }
+          },
+          {
+            "ingredient": "semmelbroesel",
+            "name": "Semmelbrösel",
+            "need": {
+              "text": "40 g",
+              "value": 40.0,
+              "max": 40.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "40 g",
+            "inStock": false,
+            "note": "kleine Packung; Verbrauch \\~40 g; alternativ altbackenes Brot"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Brot",
+        "items": [
+          {
+            "ingredient": "vollkorn-fladen",
+            "name": "Vollkorn-Fladen",
+            "need": {
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "4",
+            "inStock": false,
+            "buy": {
+              "text": "4"
+            },
+            "note": "Vollkorn-Pita oder kleine Vollkorn-Fladen"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "kreuzkuemmel",
+            "name": "Kreuzkümmel, gemahlen",
+            "need": {
+              "text": "½ TL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "½ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "piment",
+            "name": "Piment, gemahlen",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true,
+            "note": "und Zimt — nur falls Baharat selbst gemischt wird"
+          },
+          {
+            "ingredient": "olivenoel",
+            "name": "Gutes Olivenöl",
+            "need": {
+              "text": "9–10 EL",
+              "value": 9.0,
+              "max": 10.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "9–10 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "Gesamtverbrauch \\~150 ml"
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "4 TL",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "4 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Schwarzer Pfeffer",
+            "need": {
+              "text": "½ TL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "½ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "1500 ml",
+              "value": 1500.0,
+              "max": 1500.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "1500 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      },
+      {
+        "store": "Türkischer/arabischer Laden",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "tahina",
+            "name": "Tahina",
+            "need": {
+              "text": "200 g",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "200 g",
+            "inStock": false,
+            "note": "1 großes Glas, mind. 300 g; Verbrauch \\~200 g — libanesische/palästinensische Marke; Fallback: online bestellen, nicht die bittere Supermarkt-Tahina"
+          },
+          {
+            "ingredient": "granatapfelsirup",
+            "name": "Granatapfelsirup",
+            "need": {
+              "text": "1½ EL",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1½ EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Flasche"
+            },
+            "note": "Dibs rumman; Fallback: online — nicht ersetzbar"
+          },
+          {
+            "ingredient": "za",
+            "name": "Za'atar",
+            "need": {
+              "text": "1–2 TL",
+              "value": 1.0,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1–2 TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Packung"
+            },
+            "note": "Fallback: online"
+          },
+          {
+            "ingredient": "baharat",
+            "name": "Baharat",
+            "need": {
+              "text": "1½ TL",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1½ TL",
+            "inStock": false,
+            "note": "7-Gewürz, 1 kleine Dose; Fallback: selbst mischen — je ½ TL Piment, Zimt, gem. Koriander, Kumin, Pfeffer, ¼ TL Nelke + Muskat"
+          },
+          {
+            "ingredient": "aleppo-pfeffer",
+            "name": "Aleppo-Pfeffer oder Pul biber",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Packung"
+            },
+            "note": "Fallback: online oder türkisches Regal im REWE"
+          },
+          {
+            "ingredient": "oliven",
+            "name": "Oliven, gemischt",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "200 g"
+            },
+            "note": "Fallback: REWE"
+          }
+        ]
+      }
+    ]
+  }
+}

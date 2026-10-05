@@ -147,6 +147,13 @@
   "cooked": false
  },
  {
+  "path": "../schwangerschaft/mezze-teller.json",
+  "title": "Libanesischer Mezze-Teller — Hummus, Moutabal, Muhammara, Labneh & Kafta (Schwangerschafts-Version, 4 Personen)",
+  "group": "schwangerschaft",
+  "wip": false,
+  "cooked": false
+ },
+ {
   "path": "../schwangerschaft/pescado-a-la-sal.json",
   "title": "Pescado a la sal — Wolfsbarsch in der Salzkruste mit Salsa verde, Grillgemüse und Linsensalat (2 Erwachsene + Kind)",
   "group": "schwangerschaft",

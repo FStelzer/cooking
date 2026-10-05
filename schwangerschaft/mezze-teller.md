@@ -1,6 +1,6 @@
 # Libanesischer Mezze-Teller — Hummus, Moutabal, Muhammara, Labneh & Kafta (Schwangerschafts-Version, 4 Personen)
 
-*Verteilt auf 2 Tage, viel davon passiv (Einweichen, Labneh, Muhammara durchziehen). Aktive Zeit gesamt \~2 Std.: Tag 1 \~15 Min., Tag 2 vormittags \~45 Min., Mezze-Abend \~60 Min. Equipment: Stabmixer mit hohem Becher, feines Sieb + Passiertuch, Bunsenbrenner, Backblech, Gasgrill oder schwere Pfanne, Fleischthermometer (Kafta), flache Metallspieße optional.*
+*Aktive Zeit \~2 Std., gesamt 2 Tage. Verteilt auf 2 Tage, viel davon passiv (Einweichen, Labneh, Muhammara durchziehen). Aktive Zeit gesamt \~2 Std.: Tag 1 \~15 Min., Tag 2 vormittags \~45 Min., Mezze-Abend \~60 Min. Equipment: Stabmixer mit hohem Becher, feines Sieb + Passiertuch, Bunsenbrenner, Backblech, Gasgrill oder schwere Pfanne, Fleischthermometer (Kafta), flache Metallspieße optional.*
 
 > **Kopie von [`gerichte/mezze-libanesisch.md`](/gerichte/mezze-libanesisch.md)**, umgebaut nach
 > [Leitfaden](/schwangerschaft/leitfaden.md): Die vier Dips bleiben 1:1 (alles gegart bzw. aus
@@ -42,124 +42,166 @@ des Proteins und steht als eigener Punkt im [Ideen-Backlog](/ideen.md).
 
 ## Einkaufsliste
 
-### Türkischer / arabischer Laden (noch zu identifizieren — Fallbacks in Klammern)
+### Türkischer/arabischer Laden
 
-- [ ] Tahina, 1 großes Glas (mind. 300 g; Verbrauch \~200 g — libanesische/palästinensische Marke; Fallback: online bestellen, nicht die bittere Supermarkt-Tahina)
-- [ ] Granatapfelsirup (Dibs rumman), 1 Flasche (Fallback: online — nicht ersetzbar)
-- [ ] Za'atar, 1 Packung (Fallback: online)
-- [ ] 7-Gewürz/Baharat, 1 kleine Dose (Fallback: selbst mischen — je ½ TL Piment, Zimt, gem. Koriander, Kumin, Pfeffer, ¼ TL Nelke + Muskat)
-- [ ] Aleppo-Pfeffer oder Pul biber, 1 Packung (Fallback: online oder türkisches Regal im REWE)
-- [ ] Oliven, gemischt, \~200 g (Fallback: REWE)
+*Noch zu identifizieren — Fallbacks in Klammern.*
+
+- [ ] Tahina *(1 großes Glas, mind. 300 g; Verbrauch \~200 g — libanesische/palästinensische Marke; Fallback: online bestellen, nicht die bittere Supermarkt-Tahina)*
+- [ ] 1 Flasche Granatapfelsirup *(Dibs rumman; Fallback: online — nicht ersetzbar)*
+- [ ] 1 Packung Za'atar *(Fallback: online)*
+- [ ] Baharat *(7-Gewürz, 1 kleine Dose; Fallback: selbst mischen — je ½ TL Piment, Zimt, gem. Koriander, Kumin, Pfeffer, ¼ TL Nelke + Muskat)*
+- [ ] 1 Packung Aleppo-Pfeffer oder Pul biber *(Fallback: online oder türkisches Regal im REWE)*
+- [ ] 200 g Oliven, gemischt *(Fallback: REWE)*
 
 ### REWE / Aldi
 
 **Obst & Gemüse:**
+- [ ] 2 große Auberginen *(\~700 g)*
+- [ ] 2 rote Spitzpaprika *(Abkürzung: 1 Glas geröstete Paprika, \~220 g Abtropfgewicht)*
+- [ ] 4 Zitronen
+- [ ] 1 Knolle Knoblauch
+- [ ] 1 Zwiebel *(Kafta)*
+- [ ] 1 Bund glatte Petersilie *(großer Bund; ½ in die Kafta, Rest Deko)*
+- [ ] 1 Salatgurke *(Rohkost zum Dippen)*
+- [ ] 3 Karotten *(Rohkost)*
+- [ ] 1 Bund Radieschen *(Rohkost)*
+- [ ] 1 rote Paprika *(Rohkost)*
+- [ ] 1 Kohlrabi *(Rohkost)*
+- [ ] 2 Stangen Staudensellerie *(Rohkost)*
+- [ ] Optional: 1 Granatapfel *(Kerne als Deko auf Moutabal/Muhammara)*
+- [ ] Optional: 2 Tomaten *(+ ½ Salatgurke für einen kleinen Beilagensalat zur Kafta)*
 
-- [ ] Auberginen, 2 große (\~700 g)
-- [ ] Rote Spitzpaprika, 2 Stück (Abkürzung: 1 Glas geröstete Paprika, \~220 g Abtropfgewicht)
-- [ ] Zitronen, 4 Stück
-- [ ] Knoblauch, 1 Knolle
-- [ ] Zwiebeln, 1 Stück (Kafta)
-- [ ] Glatte Petersilie, 1 großer Bund (½ in die Kafta, Rest Deko)
-- [ ] Rohkost zum Dippen: 1 Gurke, 3 Karotten, 1 Bund Radieschen, 1 rote Paprika, 1 Kohlrabi, 2 Stangen Staudensellerie
-- [ ] Optional: 1 Granatapfel (Kerne als Deko auf Moutabal/Muhammara)
-- [ ] Optional: 2 Tomaten + ½ Salatgurke für einen kleinen Beilagensalat zur Kafta
+**Fleisch & Fisch:**
+- [ ] 600 g Lammhack oder Rinderhack *(\~20 % Fett) — **frisch am Kochtag***
 
-**Kühltheke / Fleisch:**
-
-- [ ] Lammhack oder Rinderhack (\~20 % Fett), 600 g — **frisch am Kochtag**
-
-**Milchprodukte:**
-
-- [ ] Griechischer Joghurt (10 % Fett, pasteurisiert — Standardware), 1 kg → wird zu \~450–500 g Labneh
+**Milchprodukte & Eier:**
+- [ ] 1 kg griechischer Joghurt *(10 % Fett, pasteurisiert — Standardware → wird zu \~450–500 g Labneh)*
 
 **Brot:**
+- [ ] 4 Vollkorn-Fladen *(Vollkorn-Pita oder kleine Vollkorn-Fladen)*
 
-- [ ] Vollkorn-Pita oder kleine Vollkorn-Fladen, 4 Stück
+**Trockenwaren:**
+- [ ] 500 g getrocknete Kichererbsen *(Packung; Verbrauch 200 g)*
+- [ ] 1 Päckchen Natron
+- [ ] 100 g Walnusskerne
+- [ ] Semmelbrösel *(kleine Packung; Verbrauch \~40 g; alternativ altbackenes Brot)*
 
-**Trockenwaren & Gewürze:**
+### Vorrat prüfen
 
-- [ ] Getrocknete Kichererbsen, 500 g (Packung; Verbrauch 200 g)
-- [ ] Natron, 1 Päckchen
-- [ ] Walnusskerne, 100 g
-- [ ] Semmelbrösel, kleine Packung (Verbrauch \~40 g; alternativ altbackenes Brot)
-- [ ] Kreuzkümmel, gemahlen (Vorrat prüfen)
-- [ ] Piment und Zimt, gemahlen (Vorrat prüfen — nur falls Baharat selbst gemischt wird)
-- [ ] Gutes Olivenöl (Gesamtverbrauch \~150 ml — Vorrat prüfen)
+- [ ] Kreuzkümmel, gemahlen
+- [ ] Piment, gemahlen *(und Zimt — nur falls Baharat selbst gemischt wird)*
+- [ ] Gutes Olivenöl *(Gesamtverbrauch \~150 ml)*
+- [ ] Salz
+- [ ] Schwarzer Pfeffer
 
 ## Zeitplan (2 Tage)
 
-### Tag 1 — Abend, \~15 Min. aktiv
+- Vortag: Abend, \~15 Min. aktiv · Einweichen: Kichererbsen (200 g) in reichlich kaltem Wasser mit ¾ TL Natron einweichen (mind. 12 Std.). · Labneh salzen, Labneh abtropfen: Joghurt (1 kg) mit 1 TL Salz verrühren, ins Passiertuch, im Sieb über einer Schüssel in den Kühlschrank → Labneh.
+- Vormittags: Tag 2 — vormittags/mittags, \~45 Min. aktiv · Kochen: Kichererbsen kochen (läuft nebenher, 30–60 Min. — Details unter Zubereitung/Hummus). Abkühlen lassen, **im Kochwasser** in den Kühlschrank. · Paprika rösten → Muhammara komplett fertigstellen (Walnüsse rösten, Muhammara mixen; zieht bis abends durch). · Kafta-Masse anrühren, Kafta formen, abgedeckt in den Kühlschrank (hält die Form besser, wenn sie mind. 1 Std. kalt steht). · Labneh-Check: nach 12–24 Std. streichfähig → aus dem Tuch in eine Dose, kalt stellen.
 
-- Kichererbsen (200 g) in reichlich kaltem Wasser mit ¾ TL Natron einweichen (mind. 12 Std.).
-- Joghurt (1 kg) mit 1 TL Salz verrühren, ins Passiertuch, im Sieb über einer Schüssel in den Kühlschrank → Labneh.
-
-### Tag 2 — vormittags/mittags, \~45 Min. aktiv
-
-1. **Kichererbsen kochen** (läuft nebenher, 30–60 Min. — Details unter Zubereitung/Hummus). Abkühlen lassen, **im Kochwasser** in den Kühlschrank.
-2. **Paprika rösten → Muhammara** komplett fertigstellen (zieht bis abends durch).
-3. **Kafta-Masse** anrühren, formen, abgedeckt in den Kühlschrank (hält die Form besser, wenn sie mind. 1 Std. kalt steht).
-4. Labneh-Check: nach 12–24 Std. streichfähig → aus dem Tuch in eine Dose, kalt stellen.
-
-### Tag 2 — Mezze-Abend, \~60 Min.
+*Tag 2 — Mezze-Abend, \~60 Min.:*
 
 | Zeit | Schritt |
 |---|---|
 | T−60 | Ofen auf 220 °C. Auberginen mit dem Brenner verkohlen, im Ofen fertig garen, dann abtropfen lassen. Gasgrill vorheizen (falls Kafta vom Grill) |
 | T−45 | Kichererbsen mit etwas Kochwasser erhitzen → **warm** zu Hummus mixen |
-| T−30 | Moutabal fertig rühren. Labneh, Muhammara, Hummus anrichten (Mulde, Öl, Topping). Rohkost schneiden |
-| T−15 | Kafta grillen/braten, **Kerntemperatur prüfen**, kurz ruhen lassen |
-| T−5 | Fladen kurz in den Ofen, alles auf den Tisch |
+| T−30 | Moutabal mischen (fertig rühren). Labneh anrichten, Muhammara abschmecken, Hummus anrichten (Mulde, Öl, Topping). Rohkost schneiden |
+| T−15 | Kafta garen (grillen/braten), **Kerntemperatur prüfen**, kurz ruhen lassen |
+| T−5 | Fladen, Rohkost, Oliven: Fladen kurz in den Ofen, alles auf den Tisch |
 
 ## Zubereitung
 
-### 1. Hummus (Ottolenghi-Methode, \~500 g)
+**Hummus (Vortag bis Abend, Ottolenghi-Methode, \~500 g):**
 
 *200 g getrocknete Kichererbsen · 1¼ TL Natron · 140 g Tahina · 2–3 EL Zitronensaft · 1–2 Knoblauchzehen · 1 TL Salz · Prise Kreuzkümmel · 60–100 ml Eiswasser (oder 2–3 Eiswürfel)*
 
-1. **Einweichen (Tag 1):** 200 g Kichererbsen in reichlich kaltem Wasser mit ¾ TL Natron mindestens 12 Std. einweichen.
-2. **Kochen (Tag 2):** Abgießen. Im 6L-Topf mit ½ TL Natron bei mittlerer Hitze 2–3 Min. **trocken** unter Rühren erhitzen (das Natron greift die Schalen an). Mit \~1,5 L Wasser aufgießen, aufkochen. Schaum **und die aufschwimmenden Schalen** konsequent abschöpfen — das ist der halbe Cremigkeits-Gewinn. 30–60 Min. leise kochen, bis sich eine Kichererbse zwischen den Fingern mühelos zerdrücken lässt, eher Richtung zerfallend. Nicht salzen.
-3. **Mixen (Abend, warm!):** Kichererbsen mit etwas Kochwasser wieder heiß werden lassen, abgießen (2–3 EL zum Garnieren beiseite). Warm in den hohen Becher: Kichererbsen, 140 g Tahina, 2 EL Zitronensaft, 1–2 Knoblauchzehen, 1 TL Salz, Prise Kreuzkümmel. Mit dem Stabmixer mixen und dabei 60–100 ml Eiswasser nach und nach zugeben — 2–3 Minuten dranbleiben, bis die Masse hell, seidig und fast fluffig ist. **Kein Olivenöl in die Masse.**
-4. **Abschmecken & anrichten:** Zitrone/Salz nachjustieren. In flacher Schale mit dem Löffelrücken eine Mulde ziehen, 2 EL Olivenöl hinein, zurückbehaltene Kichererbsen und eine Prise Aleppo-Pfeffer oder Kreuzkümmel darüber.
+**1. Einweichen (über Nacht, passiv)**
+*jederzeit*
+Tag 1: 200 g Kichererbsen in reichlich kaltem Wasser mit ¾ TL Natron mindestens 12 Std. einweichen.
 
-### 2. Moutabal (\~400 g)
+**2. Kochen (30–60 Min.)**
+*nach Einweichen · Herd · fertig wenn sich eine Kichererbse zwischen den Fingern mühelos zerdrücken lässt*
+Tag 2: Abgießen. Im 6L-Topf mit ½ TL Natron bei mittlerer Hitze 2–3 Min. **trocken** unter Rühren erhitzen (das Natron greift die Schalen an). Mit \~1,5 L Wasser aufgießen, aufkochen. Schaum **und die aufschwimmenden Schalen** konsequent abschöpfen — das ist der halbe Cremigkeits-Gewinn. 30–60 Min. leise kochen, bis sich eine Kichererbse zwischen den Fingern mühelos zerdrücken lässt, eher Richtung zerfallend. Nicht salzen.
+
+**3. Hummus mixen (10 Min.)**
+*nach Kochen · Herd*
+Abend, warm! Kichererbsen mit etwas Kochwasser wieder heiß werden lassen, abgießen (2–3 EL zum Garnieren beiseite). Warm in den hohen Becher: Kichererbsen, 140 g Tahina, 2 EL Zitronensaft, 1–2 Knoblauchzehen, 1 TL Salz, Prise Kreuzkümmel. Mit dem Stabmixer mixen und dabei 60–100 ml Eiswasser nach und nach zugeben — 2–3 Minuten dranbleiben, bis die Masse hell, seidig und fast fluffig ist. **Kein Olivenöl in die Masse.**
+
+**4. Hummus anrichten (5 Min.)**
+Abschmecken & anrichten: Zitrone/Salz nachjustieren. In flacher Schale mit dem Löffelrücken eine Mulde ziehen, 2 EL Olivenöl hinein, zurückbehaltene Kichererbsen und eine Prise Aleppo-Pfeffer oder Kreuzkümmel darüber.
+
+**Moutabal (Abend, \~400 g):**
 
 *2 große Auberginen (\~700 g) · 60 g Tahina · 2 EL Zitronensaft · 1 kleine Knoblauchzehe · ½ TL Salz · 1–2 EL Olivenöl obenauf · optional Granatapfelkerne*
 
-1. **Verkohlen:** 2 Auberginen mit dem Bunsenbrenner rundum abflämmen, bis die Haut überall schwarz und blasig ist — nicht zaghaft, der Rauch ist das Gericht. Dann bei 220 °C 15–20 Min. in den Ofen, bis sie komplett kollabiert und innen butterweich sind (der Brenner allein gart das Innere nicht durch).
-2. **Abtropfen:** Längs halbieren, Fruchtfleisch herausschaben (verkohlte Hautstücke penibel aussortieren), 20–30 Min. im Sieb abtropfen lassen — das Bitterwasser soll raus.
-3. **Mischen:** Mit der Gabel zerdrücken, **nicht mixen** — etwas Textur bleibt. 60 g Tahina, 2 EL Zitronensaft, 1 fein geriebene Knoblauchzehe und ½ TL Salz unterrühren. Abschmecken. Anrichten mit 1–2 EL Olivenöl, optional Granatapfelkerne.
+**5. Verkohlen (25 Min.)**
+*jederzeit · Ofen 220 °C*
+2 Auberginen mit dem Bunsenbrenner rundum abflämmen, bis die Haut überall schwarz und blasig ist — nicht zaghaft, der Rauch ist das Gericht. Dann bei 220 °C 15–20 Min. in den Ofen, bis sie komplett kollabiert und innen butterweich sind (der Brenner allein gart das Innere nicht durch).
 
-### 3. Muhammara (\~400 g)
+**6. Auberginen abtropfen (20–30 Min., passiv)**
+Längs halbieren, Fruchtfleisch herausschaben (verkohlte Hautstücke penibel aussortieren), 20–30 Min. im Sieb abtropfen lassen — das Bitterwasser soll raus.
+
+**7. Moutabal mischen (5 Min.)**
+Mit der Gabel zerdrücken, **nicht mixen** — etwas Textur bleibt. 60 g Tahina, 2 EL Zitronensaft, 1 fein geriebene Knoblauchzehe und ½ TL Salz unterrühren. Abschmecken. Anrichten mit 1–2 EL Olivenöl, optional Granatapfelkerne.
+
+**Muhammara (Vormittags, \~400 g, Kühlschrank):**
 
 *2 rote Spitzpaprika (oder 1 Glas geröstete Paprika, abgetropft \~220 g) · 100 g Walnusskerne · 40 g Semmelbrösel · 1½ EL Granatapfelsirup · 1 TL Aleppo-Pfeffer · ½ TL Kreuzkümmel · ½ TL Salz · 1 Knoblauchzehe · 3 EL Olivenöl · 1 TL Zitronensaft*
 
-1. **Paprika rösten:** 2 Spitzpaprika unter dem Ofengrill (oder mit dem Brenner) rundum schwarz rösten, 10 Min. abgedeckt in einer Schüssel dämpfen, häuten und entkernen. **Nicht abwaschen** — das spült das Röstaroma weg. *Abkürzung: Glasware abtropfen und trocken tupfen; funktioniert, schmeckt aber flacher.*
-2. **Walnüsse:** 100 g in der trockenen Pfanne rösten, bis sie duften. Abkühlen lassen.
-3. **Mixen:** Paprika, Walnüsse, 40 g Semmelbrösel, 1½ EL Granatapfelsirup, 1 TL Aleppo-Pfeffer, ½ TL Kreuzkümmel, ½ TL Salz, 1 Knoblauchzehe, 3 EL Olivenöl, 1 TL Zitronensaft mit dem Stabmixer **stoßweise** pulsen — Paste mit Biss, die Nüsse gemahlen, aber nicht zu Butter zerschlagen. Zu dick: Schluck Olivenöl. Bis abends kalt ziehen lassen.
-4. **Abschmecken (Abend):** Balance süß (Sirup) – sauer (Sirup/Zitrone) – nussig prüfen, Salz nachziehen. Mit Olivenöl-Faden anrichten. *Bewusst am unteren Schärfe-Ende gewürzt — Aleppo-Pfeffer kommt für die Erwachsenen zusätzlich auf den Tisch.*
+**8. Paprika rösten (20 Min.)**
+*jederzeit*
+2 Spitzpaprika unter dem Ofengrill (oder mit dem Brenner) rundum schwarz rösten, 10 Min. abgedeckt in einer Schüssel dämpfen, häuten und entkernen. **Nicht abwaschen** — das spült das Röstaroma weg. *Abkürzung: Glasware abtropfen und trocken tupfen; funktioniert, schmeckt aber flacher.*
 
-### 4. Labneh mit Za'atar (\~450–500 g)
+**9. Walnüsse rösten (5 Min.)**
+*jederzeit · Herd*
+100 g Walnusskerne in der trockenen Pfanne rösten, bis sie duften. Abkühlen lassen.
+
+**10. Muhammara mixen (5 Min.)**
+*nach Paprika rösten, Walnüsse rösten*
+Paprika, Walnüsse, 40 g Semmelbrösel, 1½ EL Granatapfelsirup, 1 TL Aleppo-Pfeffer, ½ TL Kreuzkümmel, ½ TL Salz, 1 Knoblauchzehe, 3 EL Olivenöl, 1 TL Zitronensaft mit dem Stabmixer **stoßweise** pulsen — Paste mit Biss, die Nüsse gemahlen, aber nicht zu Butter zerschlagen. Zu dick: Schluck Olivenöl. Bis abends kalt ziehen lassen.
+
+**11. Muhammara abschmecken (5 Min.)**
+Abend: Balance süß (Sirup) – sauer (Sirup/Zitrone) – nussig prüfen, Salz nachziehen. Mit Olivenöl-Faden anrichten. *Bewusst am unteren Schärfe-Ende gewürzt — Aleppo-Pfeffer kommt für die Erwachsenen zusätzlich auf den Tisch.*
+
+**Labneh mit Za'atar (Vortag, \~450–500 g, Kühlschrank):**
 
 *1 kg griechischer Joghurt (10 %) · 1 TL Salz · 2 EL Olivenöl · 1–2 TL Za'atar*
 
-1. 1 kg Joghurt mit 1 TL Salz verrühren (**vor** dem Abtropfen salzen — zieht Molke und würzt durch statt nur oberflächlich).
-2. In das Passiertuch, im feinen Sieb über einer Schüssel 12–24 Std. im Kühlschrank abtropfen lassen. Nach 12 Std. prüfen: streichfähig wie Frischkäse = fertig; länger = fester.
-3. Anrichten: flach ausstreichen, Mulde, 2 EL Olivenöl, 1–2 TL Za'atar darüber. *Für das Kind einen Klecks ohne Za'atar abzweigen — pur mit Brot die mildeste Komponente des Abends.*
+**12. Labneh salzen (5 Min.)**
+*jederzeit*
+1 kg Joghurt mit 1 TL Salz verrühren (**vor** dem Abtropfen salzen — zieht Molke und würzt durch statt nur oberflächlich).
 
-### 5. Kafta (\~12 Stück, gegrillt oder gebraten)
+**13. Labneh abtropfen (12–24 Std., passiv)**
+In das Passiertuch, im feinen Sieb über einer Schüssel 12–24 Std. im Kühlschrank abtropfen lassen. Nach 12 Std. prüfen: streichfähig wie Frischkäse = fertig; länger = fester.
+
+**14. Labneh anrichten (5 Min.)**
+Flach ausstreichen, Mulde, 2 EL Olivenöl, 1–2 TL Za'atar darüber. *Für das Kind einen Klecks ohne Za'atar abzweigen — pur mit Brot die mildeste Komponente des Abends.*
+
+**Kafta (Vormittags, \~12 Stück, Kühlschrank):**
+
+Gegrillt oder gebraten.
 
 *600 g Lamm- oder Rinderhack (\~20 % Fett) · 1 mittlere Zwiebel · ½ Bund glatte Petersilie · 1 Knoblauchzehe · 1½ TL Baharat · 1 TL Salz · ½ TL schwarzer Pfeffer · ¼ TL Piment (falls Baharat gekauft und mild) · 1 EL Olivenöl (nur Pfanne)*
 
-1. **Masse (Tag 2 mittags):** 1 Zwiebel sehr fein reiben oder hacken und im Sieb **kräftig ausdrücken** — Zwiebelwasser ist der Grund, warum Kafta vom Spieß rutscht. ½ Bund Petersilie fein schneiden. 600 g Hack mit Zwiebel, Petersilie, 1 fein geriebener Knoblauchzehe, 1½ TL Baharat, 1 TL Salz, ½ TL Pfeffer 2–3 Min. **mit den Händen kneten**, bis die Masse klebrig und homogen ist (das bindet ohne Ei und ohne Brösel). Kleine Probe in der Pfanne braten, abschmecken.
-2. **Formen:** In 12 Portionen à \~50 g teilen. Mit nassen Händen zu \~10 cm langen, 2–2,5 cm dicken Rollen formen — auf flache Metallspieße gedrückt (klassisch) oder ohne Spieß als Röllchen. Abgedeckt mind. 1 Std. kühlen; dann fallen sie beim Grillen nicht auseinander.
-3. **Garen — Gasgrill:** Rost sauber und geölt, direkte Zone hoch vorgeheizt. Kafta auflegen, **2 Min. nicht bewegen**, dann alle 2 Min. um eine Vierteldrehung wenden — insgesamt 8–10 Min., bis rundum dunkel gebräunt. **Pfanne:** 1 EL Olivenöl in der schweren Pfanne stark erhitzen, in zwei Chargen 8–10 Min. rundum braten, Deckel in den letzten 2 Min. auflegen.
-4. **Gar-Check — Pflicht:** Fleischthermometer flach in die dickste Rolle: **≥ 72 °C**, Saft klar, innen kein Rosa. Hackfleisch ist der eine Punkt dieses Abends, an dem „durch" nicht verhandelbar ist. 3 Min. ruhen lassen, mit Zitronenspalten servieren.
+**15. Kafta-Masse (15 Min.)**
+*jederzeit*
+Tag 2 mittags: 1 Zwiebel sehr fein reiben oder hacken und im Sieb **kräftig ausdrücken** — Zwiebelwasser ist der Grund, warum Kafta vom Spieß rutscht. ½ Bund Petersilie fein schneiden. 600 g Lammhack (oder Rinderhack) mit Zwiebel, Petersilie, 1 fein geriebener Knoblauchzehe, 1½ TL Baharat, 1 TL Salz, ½ TL Pfeffer 2–3 Min. **mit den Händen kneten**, bis die Masse klebrig und homogen ist (das bindet ohne Ei und ohne Brösel). Kleine Probe in der Pfanne braten, abschmecken.
 
-### Dazu
+**16. Kafta formen (15 Min. + 1 Std. passiv)**
+In 12 Portionen à \~50 g teilen. Mit nassen Händen zu \~10 cm langen, 2–2,5 cm dicken Rollen formen — auf flache Metallspieße gedrückt (klassisch) oder ohne Spieß als Röllchen. Abgedeckt mind. 1 Std. kühlen; dann fallen sie beim Grillen nicht auseinander.
 
+**17. Kafta garen (8–10 Min.)**
+*nach Kafta formen · Grill · fertig bei ≥ 72 °C Kern*
+**Gasgrill:** Rost sauber und geölt, direkte Zone hoch vorgeheizt. Kafta auflegen, **2 Min. nicht bewegen**, dann alle 2 Min. um eine Vierteldrehung wenden — insgesamt 8–10 Min., bis rundum dunkel gebräunt. **Pfanne:** 1 EL Olivenöl in der schweren Pfanne stark erhitzen, in zwei Chargen 8–10 Min. rundum braten, Deckel in den letzten 2 Min. auflegen.
+
+**Gar-Check — Pflicht:** Fleischthermometer flach in die dickste Rolle: **≥ 72 °C**, Saft klar, innen kein Rosa. Hackfleisch ist der eine Punkt dieses Abends, an dem „durch" nicht verhandelbar ist. 3 Min. ruhen lassen, mit Zitronenspalten servieren.
+
+**Dazu (Abend, à la minute):**
+
+**18. Fladen, Rohkost, Oliven (15 Min.)**
+*jederzeit*
 - **Rohkost:** 1 Gurke, 3 Karotten, 1 Bund Radieschen, 1 Paprika, 1 Kohlrabi, 2 Stangen Sellerie in Sticks/Hälften — großzügig, das ist der Hauptträger für die Dips.
-- **Vollkorn-Fladen:** 4 Stück 3–4 Min. im Ofen aufwärmen, halbieren.
+- **Vollkorn-Fladen:** 4 Fladen 3–4 Min. im Ofen aufwärmen, halbieren.
 - **Oliven** in eine kleine Schale — fertig.
 - **Optional Beilagensalat zur Kafta:** 2 Tomaten + ½ Gurke gewürfelt, Rest Petersilie, Zitrone, Salz, Schuss Olivenöl.
 
