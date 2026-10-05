@@ -1,0 +1,2650 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "schwangerschaft/tandoori-haehnchen",
+  "kind": "dish",
+  "title": "Tandoori-Hähnchen vom Gasgrill mit Dal tadka & Baingan bharta (4 Portionen)",
+  "status": "done",
+  "yields": {
+    "text": "4 Portionen",
+    "value": 4.0,
+    "unit": "Portionen"
+  },
+  "intro": "*Aktive Zeit \\~2 Std., gesamt über Nacht + \\~2 Std. (\\~1,5 Std. am Kochtag + 30 Min. am Vortag (Marinade) + Marinieren über Nacht). Equipment: Gasgrill mit Haube (Zwei-Zonen) oder Ofen + Küchenbrenner, Fleischthermometer, 6L-Topf (Dal), Pfanne (Bharta-Masala), kleine Pfanne (Tadka), Bunsenbrenner (Aubergine).*\n\nFollow-up zum [Paneer-Projekt](/gerichte/paneer-projekt.md) mit dessen Learning eingebaut: **Schärfe nicht am Teller nachrüsten, sondern zwei Versionen parallel führen** — die milde Kinder-Abzweigung wird bei allen drei Komponenten *vor* dem Chili abgenommen, der Rest wird richtig gewürzt. Tandoori-Hähnchen aus der Joghurt-Marinade mit Röstkanten vom Grill, dazu Dal tadka (die „richtige\" KH-Beilage: Hülsenfrucht, niedriger GI, Protein) und Baingan bharta, die über der Flamme verkohlte Aubergine — dieselbe Technik wie beim Moutabal, indisch gewürzt. Kein Naan, kein Reis; optional ein kleines Vollkorn-Roti.\n\n**Von Haus aus schwangerschaftstauglich** ([Leitfaden](/schwangerschaft/leitfaden.md)): Hähnchen auf ≥ 75 °C, Joghurt pasteurisiert, kein Alkohol, kein Ei. Der Dal ist der Grund, warum dieses Gericht im GDM-Ordner steht — 150 g Dal liefern \\~20 g langsame KH mit 8 g Protein.",
+  "times": {
+    "text": "Aktive Zeit ~2 Std., gesamt über Nacht + ~2 Std.",
+    "active": {
+      "typical": "PT2H",
+      "source": "2 Std."
+    },
+    "total": {
+      "min": "PT8H",
+      "max": "PT14H",
+      "source": "über Nacht"
+    }
+  },
+  "equipment": [
+    "Gasgrill mit Haube (Zwei-Zonen) oder Ofen + Küchenbrenner",
+    "Fleischthermometer",
+    "6L-Topf (Dal)",
+    "Pfanne (Bharta-Masala)",
+    "kleine Pfanne (Tadka)",
+    "Bunsenbrenner (Aubergine)"
+  ],
+  "ingredients": [
+    {
+      "id": "haehnchenschenkel",
+      "name": "Hähnchenschenkel oder Keulen mit Knochen",
+      "store": "REWE Center",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "1,5 kg"
+      },
+      "note": "8 Keulen oder 6 Oberschenkel + 4 Unterkeulen"
+    },
+    {
+      "id": "joghurt",
+      "name": "griechischer Joghurt 10 %",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "500 g"
+      },
+      "note": "250 g Marinade, 250 g Raita; pasteurisiert — Standardware"
+    },
+    {
+      "id": "ghee",
+      "name": "Ghee",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "1 Glas"
+      },
+      "note": "Verbrauch \\~4 EL — oder Butterschmalz / 60 g Butter"
+    },
+    {
+      "id": "auberginen",
+      "name": "große Auberginen",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "note": "\\~900 g"
+    },
+    {
+      "id": "tomaten",
+      "name": "reife Tomaten",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "500 g"
+      },
+      "note": "200 g Dal, 300 g Bharta"
+    },
+    {
+      "id": "zwiebeln",
+      "name": "mittlere Zwiebeln",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3"
+      },
+      "note": "1 Dal, 1 Bharta, 1 rote zum Servieren"
+    },
+    {
+      "id": "knoblauch",
+      "name": "Knoblauch",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2 Knollen"
+      },
+      "note": "\\~18 Zehen Verbrauch — siehe Mengen-Check"
+    },
+    {
+      "id": "ingwer",
+      "name": "cm Ingwer",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "8"
+      }
+    },
+    {
+      "id": "zitronen",
+      "name": "Zitronen",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3"
+      },
+      "note": "Marinade, Dal, Bharta, Spalten"
+    },
+    {
+      "id": "koriandergruen",
+      "name": "Koriandergrün",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      }
+    },
+    {
+      "id": "salatgurke",
+      "name": "Salatgurke",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "½"
+      },
+      "note": "Raita"
+    },
+    {
+      "id": "weizen-vollkornmehl",
+      "name": "Weizen-Vollkornmehl",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "200 g"
+      },
+      "optional": true,
+      "note": "Roti; oder Atta online"
+    },
+    {
+      "id": "toor",
+      "name": "Toor Dal",
+      "store": "Online",
+      "buy": {
+        "text": "500 g"
+      },
+      "note": "500 g–1 kg; Verbrauch 200 g; Fallback ohne Vorlauf: 200 g rote Linsen, REWE"
+    },
+    {
+      "id": "kashmiri-chilipulver",
+      "name": "Kashmiri-Chilipulver",
+      "store": "Online",
+      "note": "nur Erwachsenen-Marinade und Tadka; Fallback: ½ Menge Cayenne + ½ Paprika"
+    },
+    {
+      "id": "atta",
+      "name": "Atta",
+      "store": "Online",
+      "optional": true,
+      "note": "Vollkorn-Chapati-Mehl"
+    },
+    {
+      "id": "senfoel",
+      "name": "Senföl",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "oder neutrales Öl; 3 EL Marinade, 2 EL Bharta"
+    },
+    {
+      "id": "paprika",
+      "name": "Paprika edelsüß",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "2 TL Marinade, ½ TL Dal"
+    },
+    {
+      "id": "garam",
+      "name": "Garam Masala",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "2 TL, ½ TL, ½ TL"
+    },
+    {
+      "id": "koriander",
+      "name": "Koriander gemahlen",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "kreuzkuemmel",
+      "name": "Kreuzkümmel",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "gemahlen und ganz"
+    },
+    {
+      "id": "kurkuma",
+      "name": "Kurkuma",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "kasuri",
+      "name": "Kasuri Methi",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "2 TL Marinade, 1 TL Dal — Vorrat vom Paneer-Projekt; falls leer: online"
+    },
+    {
+      "id": "chilis",
+      "name": "getrocknete rote Chilis",
+      "store": "Vorrat",
+      "buy": {
+        "text": "2–3"
+      },
+      "pantry": true,
+      "note": "Tadka Erwachsene"
+    },
+    {
+      "id": "hing",
+      "name": "Hing",
+      "store": "Vorrat",
+      "optional": true,
+      "pantry": true,
+      "note": "Asafoetida; Dal — indischer Laden/online, winzige Dose hält Jahre"
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "pfeffer",
+      "name": "Schwarzer Pfeffer",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Komponenten",
+      "level": 2,
+      "markdown": "1. **Tandoori-Hähnchen** — 1,5 kg Schenkel/Keulen mit Knochen, ohne Haut, zweistufig mariniert (Salz-Zitrone-Ingwer-Knoblauch, dann Joghurt-Gewürz), Zwei-Zonen-Grill.\n2. **Dal tadka** — 200 g Toor Dal (Fallback rote Linsen), mit Kurkuma, Zwiebel, Tomate weichgekocht; zum Schluss das Tadka aus Ghee, Kreuzkümmel, Knoblauch, Chili. Varianten und Hauptgericht-Skalierung: [Dal-Baukasten](/schwangerschaft/dal-baukasten.md).\n3. **Baingan bharta** — 2 große Auberginen (\\~900 g) verkohlt, Zwiebel-Tomaten-Knoblauch-Masala.\n4. **Dazu:** Gurken-Raita (kühlt, bindet), Zitronenspalten, rote Zwiebel in Ringen; optional 1 kleines Vollkorn-Roti pro Person."
+    },
+    {
+      "type": "markdown",
+      "title": "Stil-Entscheidung",
+      "level": 2,
+      "markdown": "- **Schenkel und Keulen mit Knochen, ohne Haut:** Tandoori wird klassisch ohne Haut mariniert — die Marinade muss ans Fleisch. Der Knochen hält es saftig und erlaubt 40 Min. indirekte Hitze für die Röstkanten.\n- **Farbe ohne Schärfe:** Kashmiri-Chili ist in allen Quellen der Farbgeber („low heat, imparts red color\"). Wir gehen den Paneer-Weg: **Paprika edelsüß für alle** (gleiche Funktion, liegt im Schrank), **Kashmiri-Chili zusätzlich nur in die Erwachsenen-Charge**. Kein Lebensmittelfarbstoff (das Restaurant-Rot ist Farbe, nicht Chili).\n- **Zweistufige Marinade** (Salz-Zitrone-Ingwer-Knoblauch 30–60 Min., dann Joghurt): Meathead/AmazingRibs macht ein Trockensalzen vorweg, Swasthi eine einstufige Marinade. Der Vorlauf würzt das Fleisch durch, bevor der Joghurt-Mantel dran ist — kostet 30 Min. Wartezeit am Vortag, sonst nichts.\n- **Griechischer Joghurt 10 % statt „hung curd\":** ist bereits abgetropft dick. Marinade muss „not of dripping consistency\" sein — mit 10 %-Joghurt ist sie das.\n- **Kasuri Methi** ist der Restaurant-Ton in Marinade *und* Dal — Vorrat vom Paneer-Projekt prüfen (TRS, 100 g). Ohne geht, verliert den letzten Schliff.\n- **Dal: Toor Dal (Kichererbsen-Linse, *arhar*)** ist der Klassiker für Dal tadka. Fallback **rote Linsen (Masoor)** aus dem REWE: 25 Min. statt 45–60, etwas cremiger — funktioniert, Dassana nennt die Mischung explizit.\n- **Bharta: Brenner + Ofen** statt offener Gasflamme auf dem Herd (Induktion/Ceran): dieselbe Moutabal-Technik wie im Mezze; auf dem Gasgrill direkt über der Flamme geht es auch (Haube zu, 15–20 Min. wenden).",
+      "tags": [
+        "stil"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **REWE Center:** 1,5 kg Hähnchenschenkel oder Keulen mit Knochen (Haut selbst abziehen — mit Küchenpapier greifen, geht in einem Zug). Auberginen, Tomaten, Zwiebeln, Knoblauch, Ingwer, Gurke, Koriandergrün, Zitronen, griechischer Joghurt 10 %.\n- **Toor Dal:** **realistisch nicht im Asialaden** (ostasiatisch sortiert, wie schon Kasuri Methi) — indischer/pakistanischer Laden im Raum Offenbach/Frankfurt oder online (TRS/Natco Toor Dal 500 g–1 kg, \\~3–5 €, hält ewig; mit dem Kasuri-Methi-Nachkauf bündeln). **Fallback ohne Vorlauf: rote Linsen (Masoor)** aus dem REWE — im Rezept eingebaut.\n- **Ghee:** REWE Center hat meist ein Glas (indisches Regal oder Bio); Fallback Butterschmalz oder Butter.\n- **Vollkorn-Roti (optional):** Atta (indisches Vollkornmehl) online oder Weizen-Vollkornmehl Type 1050/1600 aus dem REWE — funktioniert, wird etwas gröber.\n- **Gasgrill:** Grillrost sauber und geölt; Joghurt-Marinade klebt. Alternativ Ofen 240 °C (Swasthi-Route) mit Küchenbrenner für die Kanten.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "haehnchen",
+          "name": "Hähnchen",
+          "steps": [
+            {
+              "id": "enthaeuten-einschneiden",
+              "label": "1",
+              "heading": "**1. Enthäuten & einschneiden (10 Min.)**",
+              "title": "Enthäuten & einschneiden",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "1,5 kg Schenkel/Keulen enthäuten (Haut + Abschnitte einfrieren → Brühe). Mit einem scharfen Messer je **2–3 tiefe Schnitte bis zum Knochen** — die Marinade muss rein.",
+              "action": "1,5 kg Schenkel/Keulen enthäuten (Haut + Abschnitte einfrieren → Brühe).",
+              "limits": [
+                "2–3 tiefe Schnitte bis zum Knochen"
+              ],
+              "cues": [
+                "bis zum Knochen"
+              ],
+              "ingredients": [
+                {
+                  "ref": "haehnchenschenkel",
+                  "amount": {
+                    "text": "1,5 kg Schenkel/Keulen",
+                    "value": 1.5,
+                    "unit": "kg"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "erste-marinade",
+              "label": "2",
+              "heading": "**2. Erste Marinade (30–60 Min., passiv)**",
+              "title": "Erste Marinade",
+              "duration": {
+                "min": "PT30M",
+                "max": "PT1H",
+                "source": "30–60 Min."
+              },
+              "attention": "passive",
+              "text": "4 Knoblauchzehen + 4 cm Ingwer zu Paste reiben (\\~2 EL). Mit **2 EL Zitronensaft, 1½ TL Salz, ½ TL Kurkuma** verrühren, in die Schnitte einmassieren. 30–60 Min. bei Raumtemperatur ziehen lassen — das Salz zieht ein, bevor der Joghurt-Mantel es bremst.",
+              "action": "4 Knoblauchzehen + 4 cm Ingwer zu Paste reiben (\\~2 EL).",
+              "limits": [
+                "2 EL Zitronensaft, 1½ TL Salz, ½ TL Kurkuma"
+              ],
+              "timers": [
+                {
+                  "label": "Erste Marinade",
+                  "duration": {
+                    "min": "PT30M",
+                    "max": "PT1H"
+                  },
+                  "text": "30–60 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "4 Knoblauchzehen",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "ingwer",
+                  "amount": {
+                    "text": "4 cm Ingwer",
+                    "value": 4.0,
+                    "unit": "cm"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "2 EL Zitronensaft",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1½ TL Salz",
+                    "value": 1.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "kurkuma",
+                  "amount": {
+                    "text": "½ TL Kurkuma",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "joghurt-marinade",
+              "label": "3",
+              "heading": "**3. Joghurt-Marinade (5 Min.)**",
+              "title": "Joghurt-Marinade",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "**250 g griechischer Joghurt 10 %** mit **2 TL Garam Masala, 3 TL Koriander gemahlen, 1 TL Kreuzkümmel gemahlen, 2 TL Paprika edelsüß, 2 TL Kasuri Methi** (zwischen den Handflächen zerrieben), **¼ TL schwarzer Pfeffer, 3 EL Senföl oder neutralem Öl** verrühren. Sie soll dick am Löffel haften, nicht tropfen.",
+              "action": "**250 g griechischer Joghurt 10 %** mit **2 TL Garam Masala, 3 TL Koriander gemahlen, 1 TL Kreuzkümmel gemahlen, 2 TL Paprika edelsüß, 2 TL Kasuri Methi** (zwischen den Handflächen zerrieben), **¼ TL schwarzer Pfeffer, 3 EL Senföl oder neutralem Öl** verrühren.",
+              "limits": [
+                "250 g griechischer Joghurt 10 %",
+                "2 TL Garam Masala, 3 TL Koriander gemahlen, 1 TL Kreuzkümmel gemahlen, 2 TL Paprika edelsüß, 2 TL Kasuri Methi",
+                "¼ TL schwarzer Pfeffer, 3 EL Senföl oder neutralem Öl"
+              ],
+              "ingredients": [
+                {
+                  "ref": "joghurt",
+                  "amount": {
+                    "text": "250 g griechischer Joghurt 10",
+                    "value": 250.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "garam",
+                  "amount": {
+                    "text": "2 TL Garam Masala",
+                    "value": 2.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "koriander",
+                  "amount": {
+                    "text": "3 TL Koriander gemahlen",
+                    "value": 3.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "kreuzkuemmel",
+                  "amount": {
+                    "text": "1 TL Kreuzkümmel",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "paprika",
+                  "amount": {
+                    "text": "2 TL Paprika edelsüß",
+                    "value": 2.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "kasuri",
+                  "amount": {
+                    "text": "2 TL Kasuri Methi",
+                    "value": 2.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "¼ TL schwarzer Pfeffer",
+                    "value": 0.25,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "senfoel",
+                  "amount": {
+                    "text": "3 EL Senföl",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "kinder-abzweigung",
+              "label": "4",
+              "heading": "**4. Kinder-Abzweigung (2 Min.)**",
+              "title": "Kinder-Abzweigung",
+              "duration": {
+                "typical": "PT2M",
+                "source": "2 Min."
+              },
+              "text": "Jetzt: **2 Keulen** (oder 1 Oberschenkel + 1 Unterkeule) in eine kleine Dose, mit \\~⅕ der Marinade (\\~4 EL) einreiben, Deckel drauf. Das ist die milde Charge — fertig.",
+              "action": "Jetzt: **2 Keulen** (oder 1 Oberschenkel + 1 Unterkeule) in eine kleine Dose, mit \\~⅕ der Marinade (\\~4 EL) einreiben, Deckel drauf.",
+              "limits": [
+                "2 Keulen"
+              ],
+              "ingredients": [],
+              "meta": "*nach Erste Marinade, Joghurt-Marinade*",
+              "attention": "active",
+              "after": [
+                "step:erste-marinade",
+                "step:joghurt-marinade"
+              ]
+            },
+            {
+              "id": "erwachsenen-charge",
+              "label": "5",
+              "heading": "**5. Erwachsenen-Charge (5 Min.)**",
+              "title": "Erwachsenen-Charge",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "In die restliche Marinade **2 TL Kashmiri-Chilipulver** rühren (Fallback: 1 TL Paprika + ½–1 TL Cayenne — Cayenne ist deutlich schärfer, vorsichtig). Restliches Fleisch darin wenden, in die Schnitte drücken.",
+              "action": "In die restliche Marinade **2 TL Kashmiri-Chilipulver** rühren (Fallback: 1 TL Paprika + ½–1 TL Cayenne — Cayenne ist deutlich schärfer, vorsichtig).",
+              "limits": [
+                "2 TL Kashmiri-Chilipulver"
+              ],
+              "ingredients": [
+                {
+                  "ref": "kashmiri-chilipulver",
+                  "amount": {
+                    "text": "2 TL Kashmiri-Chilipulver",
+                    "value": 2.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "paprika",
+                  "amount": {
+                    "text": "1 TL Paprika",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "marinieren",
+              "label": "6",
+              "heading": "**6. Marinieren (über Nacht, passiv)**",
+              "title": "Marinieren",
+              "duration": {
+                "min": "PT8H",
+                "max": "PT14H",
+                "source": "über Nacht"
+              },
+              "attention": "passive",
+              "text": "Beide Dosen **über Nacht, mind. 8, gern 24 Std.** in den Kühlschrank.",
+              "action": "Beide Dosen **über Nacht, mind.",
+              "limits": [
+                "über Nacht, mind. 8, gern 24 Std."
+              ],
+              "timers": [
+                {
+                  "label": "Marinieren",
+                  "duration": {
+                    "typical": "PT24H"
+                  },
+                  "text": "24 Std."
+                }
+              ],
+              "ingredients": []
+            }
+          ],
+          "heading": "**Hähnchen (Vortag, 30 Min. aktiv + über Nacht, Kühlschrank):**",
+          "phaseHint": "Vortag",
+          "produces": [
+            {
+              "id": "haehnchen",
+              "name": "Hähnchen",
+              "storage": {
+                "place": "fridge"
+              }
+            }
+          ]
+        },
+        {
+          "id": "dal-tadka",
+          "name": "Dal tadka",
+          "steps": [
+            {
+              "id": "dal-kochen",
+              "label": "7",
+              "heading": "**7. Dal kochen (45–60 Min.)**",
+              "title": "Dal kochen",
+              "duration": {
+                "min": "PT45M",
+                "max": "PT1H",
+                "source": "45–60 Min."
+              },
+              "text": "200 g Toor Dal waschen, bis das Wasser klar ist; 30 Min. in warmem Wasser einweichen (verkürzt die Kochzeit). Abgießen, im 6L-Topf mit **800 ml Wasser, ½ TL Kurkuma, 1 fein gewürfelten Zwiebel, 200 g gewürfelten Tomaten, 2 cm Ingwer gerieben** und optional **1 Prise Hing** aufkochen. Schaum abschöpfen, Deckel halb auf, **45–60 Min.** sanft kochen, bis die Linsen zerfallen und sich mit dem Schneebesen zu einer groben Creme rühren lassen. Wasser nachgießen, wenn es zu dick wird — Ziel: dicke Suppe, nicht Brei. **Rote Linsen: 25 Min. ohne Einweichen**, 700 ml Wasser. Jetzt erst salzen: **1 TL Salz**, abschmecken.",
+              "action": "200 g Toor Dal waschen, bis das Wasser klar ist; 30 Min. in warmem Wasser einweichen (verkürzt die Kochzeit).",
+              "limits": [
+                "800 ml Wasser, ½ TL Kurkuma, 1 fein gewürfelten Zwiebel, 200 g gewürfelten Tomaten, 2 cm Ingwer gerieben",
+                "1 Prise Hing",
+                "45–60 Min.",
+                "Rote Linsen: 25 Min. ohne Einweichen",
+                "1 TL Salz"
+              ],
+              "cues": [
+                "bis das Wasser klar ist",
+                "bis die Linsen zerfallen und sich mit dem Schneebesen zu einer groben Creme rühren lassen"
+              ],
+              "timers": [
+                {
+                  "label": "Dal kochen",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "30 Min."
+                },
+                {
+                  "label": "Dal kochen",
+                  "duration": {
+                    "min": "PT45M",
+                    "max": "PT1H"
+                  },
+                  "text": "45–60 Min."
+                },
+                {
+                  "label": "Dal kochen",
+                  "duration": {
+                    "typical": "PT25M"
+                  },
+                  "text": "25 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "toor",
+                  "amount": {
+                    "text": "200 g Toor Dal",
+                    "value": 200.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "800 ml Wasser",
+                    "value": 800.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "kurkuma",
+                  "amount": {
+                    "text": "½ TL Kurkuma",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "zwiebeln",
+                  "amount": {
+                    "text": "1 fein gewürfelten Zwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "tomaten",
+                  "amount": {
+                    "text": "200 g gewürfelten Tomaten",
+                    "value": 200.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "ingwer",
+                  "amount": {
+                    "text": "2 cm Ingwer",
+                    "value": 2.0,
+                    "unit": "cm"
+                  }
+                },
+                {
+                  "ref": "hing",
+                  "amount": {
+                    "text": "1 Prise Hing",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "700 ml Wasser",
+                    "value": 700.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd · fertig wenn die Linsen zerfallen*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "endCondition": {
+                "type": "visual",
+                "text": "wenn die Linsen zerfallen"
+              },
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "dal-teilen",
+              "label": "8",
+              "heading": "**8. Dal teilen (2 Min.)**",
+              "title": "Dal teilen",
+              "duration": {
+                "typical": "PT2M",
+                "source": "2 Min."
+              },
+              "text": "\\~¼ des Dals (\\~250 ml) in einen kleinen Topf → **Kinder-Dal**. Rest bleibt im großen Topf.",
+              "action": "\\~¼ des Dals (\\~250 ml) in einen kleinen Topf → **Kinder-Dal**.",
+              "ingredients": [],
+              "attention": "active"
+            },
+            {
+              "id": "tadka-erwachsene",
+              "label": "9",
+              "heading": "**9. Tadka Erwachsene (5 Min.)**",
+              "title": "Tadka Erwachsene",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "In der kleinen Pfanne **2 EL Ghee** heiß, **1 TL Kreuzkümmel ganz** 20 Sek. knistern lassen, **4 Knoblauchzehen** in Scheiben goldgelb (nicht braun), **2–3 getrocknete rote Chilis** (Kerne raus für weniger Schärfe) 20 Sek., Pfanne vom Herd, **½ TL Kashmiri-Chili + ½ TL Paprika edelsüß + 1 Prise Hing** einrühren (im heißen Fett blühen sie auf, verbrennen aber schnell — deshalb vom Herd). Sofort über den großen Dal gießen, es zischt. **1 TL Kasuri Methi** zerrieben, **½ TL Garam Masala**, 1 TL Zitronensaft, 2 EL Koriandergrün.",
+              "action": "In der kleinen Pfanne **2 EL Ghee** heiß, **1 TL Kreuzkümmel ganz** 20 Sek. knistern lassen, **4 Knoblauchzehen** in Scheiben goldgelb (nicht braun), **2–3 getrocknete rote Chilis** (Kerne raus für weniger Schärfe) 20 Sek., Pfanne vom Herd, **½ TL Kashmiri-Chili + ½ TL Paprika edelsüß + 1 Prise Hing** einrühren (im heißen Fett blühen sie auf, verbrennen aber schnell — deshalb vom Herd).",
+              "limits": [
+                "2 EL Ghee",
+                "1 TL Kreuzkümmel ganz",
+                "4 Knoblauchzehen",
+                "2–3 getrocknete rote Chilis",
+                "½ TL Kashmiri-Chili + ½ TL Paprika edelsüß + 1 Prise Hing",
+                "1 TL Kasuri Methi",
+                "½ TL Garam Masala"
+              ],
+              "timers": [
+                {
+                  "label": "Tadka Erwachsene",
+                  "duration": {
+                    "typical": "PT20S"
+                  },
+                  "text": "20 Sek."
+                },
+                {
+                  "label": "Tadka Erwachsene",
+                  "duration": {
+                    "typical": "PT20S"
+                  },
+                  "text": "20 Sek."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "ghee",
+                  "amount": {
+                    "text": "2 EL Ghee",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "kreuzkuemmel",
+                  "amount": {
+                    "text": "1 TL Kreuzkümmel",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "4 Knoblauchzehen",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "chilis",
+                  "amount": {
+                    "text": "2–3 getrocknete rote Chilis",
+                    "value": 2.0,
+                    "unit": "Stück",
+                    "max": 3.0
+                  }
+                },
+                {
+                  "ref": "chilis",
+                  "amount": {
+                    "text": "½ TL Kashmiri-Chili",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "paprika",
+                  "amount": {
+                    "text": "½ TL Paprika edelsüß",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "hing",
+                  "amount": {
+                    "text": "1 Prise Hing",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                },
+                {
+                  "ref": "kasuri",
+                  "amount": {
+                    "text": "1 TL Kasuri Methi",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "garam",
+                  "amount": {
+                    "text": "½ TL Garam Masala",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "1 TL Zitronensaft",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "koriandergruen",
+                  "amount": {
+                    "text": "2 EL Koriandergrün",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "tadka-kind",
+              "label": "10",
+              "heading": "**10. Tadka Kind (3 Min.)**",
+              "title": "Tadka Kind",
+              "duration": {
+                "typical": "PT3M",
+                "source": "3 Min."
+              },
+              "text": "**1 EL Ghee**, **½ TL Kreuzkümmel**, **1–2 Knoblauchzehen** in Scheiben goldgelb, Prise Paprika — **kein Chili** — über den kleinen Topf. Prise Garam Masala, Spritzer Zitrone. Beide Töpfe warm halten; Dal wird beim Stehen dicker — mit heißem Wasser wieder einstellen.",
+              "action": "**1 EL Ghee**, **½ TL Kreuzkümmel**, **1–2 Knoblauchzehen** in Scheiben goldgelb, Prise Paprika — **kein Chili** — über den kleinen Topf.",
+              "limits": [
+                "1 EL Ghee",
+                "½ TL Kreuzkümmel",
+                "1–2 Knoblauchzehen",
+                "kein Chili"
+              ],
+              "ingredients": [
+                {
+                  "ref": "ghee",
+                  "amount": {
+                    "text": "1 EL Ghee",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "kreuzkuemmel",
+                  "amount": {
+                    "text": "½ TL Kreuzkümmel",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "1–2 Knoblauchzehen",
+                    "value": 1.0,
+                    "unit": "Stück",
+                    "max": 2.0
+                  }
+                }
+              ],
+              "meta": "*nach Dal teilen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:dal-teilen"
+              ]
+            }
+          ],
+          "heading": "**Dal tadka (Kochtag, 60–75 Min., größtenteils passiv):**",
+          "produces": [
+            {
+              "id": "dal-tadka",
+              "name": "Dal tadka"
+            }
+          ]
+        },
+        {
+          "id": "baingan-bharta",
+          "name": "Baingan bharta",
+          "steps": [
+            {
+              "id": "verkohlen",
+              "label": "11",
+              "heading": "**11. Verkohlen (30 Min.)**",
+              "title": "Verkohlen",
+              "duration": {
+                "typical": "PT30M",
+                "source": "30 Min."
+              },
+              "text": "2 Auberginen (\\~900 g) mehrfach mit dem Messer einstechen, in 4 der Löcher je **1 Knoblauchzehe** stecken (4 Zehen gesamt), dünn mit Öl einreiben. **Bunsenbrenner:** rundum abflämmen, bis die Haut überall schwarz und blasig ist. Dann **220 °C Ofen 20–25 Min.**, bis sie komplett kollabieren (der Brenner allein gart nicht durch). **Gasgrill-Alternative:** direkt über hoher Flamme, Haube zu, 15–20 Min., alle 5 Min. wenden, bis sie zusammenfallen.",
+              "action": "2 Auberginen (\\~900 g) mehrfach mit dem Messer einstechen, in 4 der Löcher je **1 Knoblauchzehe** stecken (4 Zehen gesamt), dünn mit Öl einreiben.",
+              "limits": [
+                "1 Knoblauchzehe",
+                "220 °C Ofen 20–25 Min."
+              ],
+              "cues": [
+                "bis die Haut überall schwarz und blasig ist",
+                "bis sie komplett kollabieren (der Brenner allein gart nicht durch",
+                "bis sie zusammenfallen"
+              ],
+              "timers": [
+                {
+                  "label": "Verkohlen",
+                  "duration": {
+                    "min": "PT20M",
+                    "max": "PT25M"
+                  },
+                  "text": "20–25 Min."
+                },
+                {
+                  "label": "Verkohlen",
+                  "duration": {
+                    "min": "PT15M",
+                    "max": "PT20M"
+                  },
+                  "text": "15–20 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "220 °C",
+                  "value": 220
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "auberginen",
+                  "amount": {
+                    "text": "2 Auberginen",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "1 Knoblauchzehe",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Ofen 220 °C*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 220
+                }
+              ],
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "schaelen",
+              "label": "12",
+              "heading": "**12. Schälen (15 Min.)**",
+              "title": "Schälen",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "10 Min. abgedeckt dämpfen lassen, dann Haut abziehen, verkohlte Stücke aussortieren, Fleisch mit den weichen Knoblauchzehen grob hacken (nicht pürieren — Bharta hat Textur). Kurz im Sieb abtropfen lassen.",
+              "action": "10 Min. abgedeckt dämpfen lassen, dann Haut abziehen, verkohlte Stücke aussortieren, Fleisch mit den weichen Knoblauchzehen grob hacken (nicht pürieren — Bharta hat Textur).",
+              "timers": [
+                {
+                  "label": "Schälen",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
+              "ingredients": [],
+              "attention": "active"
+            },
+            {
+              "id": "masala",
+              "label": "13",
+              "heading": "**13. Masala (15 Min.)**",
+              "title": "Masala",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "**2 EL Öl** (Senföl ideal) in der Pfanne, **1 TL Kreuzkümmel ganz** knistern, **1 fein gewürfelte Zwiebel** 6–8 Min. goldbraun. **3 Knoblauchzehen + 2 cm Ingwer** gerieben, 1 Min. **300 g gewürfelte Tomaten, ¼ TL Kurkuma, 1 TL Koriander gemahlen, ¾ TL Salz** — 8–10 Min. einkochen, bis das Öl sich am Rand absetzt.",
+              "action": "**2 EL Öl** (Senföl ideal) in der Pfanne, **1 TL Kreuzkümmel ganz** knistern, **1 fein gewürfelte Zwiebel** 6–8 Min. goldbraun.",
+              "limits": [
+                "2 EL Öl",
+                "1 TL Kreuzkümmel ganz",
+                "1 fein gewürfelte Zwiebel",
+                "3 Knoblauchzehen + 2 cm Ingwer",
+                "300 g gewürfelte Tomaten, ¼ TL Kurkuma, 1 TL Koriander gemahlen, ¾ TL Salz"
+              ],
+              "cues": [
+                "bis das Öl sich am Rand absetzt"
+              ],
+              "timers": [
+                {
+                  "label": "Masala",
+                  "duration": {
+                    "min": "PT6M",
+                    "max": "PT8M"
+                  },
+                  "text": "6–8 Min."
+                },
+                {
+                  "label": "Masala",
+                  "duration": {
+                    "typical": "PT1M"
+                  },
+                  "text": "1 Min."
+                },
+                {
+                  "label": "Masala",
+                  "duration": {
+                    "min": "PT8M",
+                    "max": "PT10M"
+                  },
+                  "text": "8–10 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "kreuzkuemmel",
+                  "amount": {
+                    "text": "1 TL Kreuzkümmel",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "zwiebeln",
+                  "amount": {
+                    "text": "1 fein gewürfelte Zwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "3 Knoblauchzehen",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "ingwer",
+                  "amount": {
+                    "text": "2 cm Ingwer",
+                    "value": 2.0,
+                    "unit": "cm"
+                  }
+                },
+                {
+                  "ref": "tomaten",
+                  "amount": {
+                    "text": "300 g gewürfelte Tomaten",
+                    "value": 300.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "kurkuma",
+                  "amount": {
+                    "text": "¼ TL Kurkuma",
+                    "value": 0.25,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "koriander",
+                  "amount": {
+                    "text": "1 TL Koriander gemahlen",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "¾ TL Salz",
+                    "value": 0.75,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "bharta-fertigstellen",
+              "label": "14",
+              "heading": "**14. Bharta fertigstellen (8 Min.)**",
+              "title": "Bharta fertigstellen",
+              "duration": {
+                "typical": "PT8M",
+                "source": "8 Min."
+              },
+              "text": "Teilen & fertigstellen: **\\~3 EL Masala** in eine kleine Schale → mit **¼ der Aubergine** mischen = **Kinder-Bharta**, Prise Garam Masala, Spritzer Zitrone. In die Pfanne **½ TL Kashmiri-Chili** rühren, restliche Aubergine dazu, 5 Min. unter Rühren braten, bis alles zusammenkommt. **½ TL Garam Masala, 1 EL Zitronensaft, 2 EL Koriandergrün.** Abschmecken — Bharta will Salz und Säure.",
+              "action": "Teilen & fertigstellen: **\\~3 EL Masala** in eine kleine Schale → mit **¼ der Aubergine** mischen = **Kinder-Bharta**, Prise Garam Masala, Spritzer Zitrone.",
+              "limits": [
+                "\\~3 EL Masala",
+                "¼ der Aubergine",
+                "½ TL Kashmiri-Chili",
+                "½ TL Garam Masala, 1 EL Zitronensaft, 2 EL Koriandergrün."
+              ],
+              "timers": [
+                {
+                  "label": "Bharta fertigstellen",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "auberginen",
+                  "amount": {
+                    "text": "¼ der Aubergine",
+                    "value": 0.25,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "chilis",
+                  "amount": {
+                    "text": "½ TL Kashmiri-Chili",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "garam",
+                  "amount": {
+                    "text": "½ TL Garam Masala",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "1 EL Zitronensaft",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "koriandergruen",
+                  "amount": {
+                    "text": "2 EL Koriandergrün",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Schälen, Masala · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:schaelen",
+                "step:masala"
+              ]
+            }
+          ],
+          "heading": "**Baingan bharta (Kochtag, 50 Min., 25 davon passiv):**",
+          "produces": [
+            {
+              "id": "baingan-bharta",
+              "name": "Baingan bharta"
+            }
+          ]
+        },
+        {
+          "id": "raita-beilagen",
+          "name": "Raita & Beilagen",
+          "steps": [
+            {
+              "id": "raita-beilagen",
+              "label": "15",
+              "heading": "**15. Raita & Beilagen (10 Min.)**",
+              "title": "Raita & Beilagen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "**250 g Joghurt** mit **½ geriebener, ausgedrückter Salatgurke, ½ TL geröstetem Kreuzkümmel gemahlen, ½ TL Salz** verrühren, kalt stellen. 1 rote Zwiebel in feine Ringe, 10 Min. in Eiswasser. 1 Zitrone in Spalten.",
+              "action": "**250 g Joghurt** mit **½ geriebener, ausgedrückter Salatgurke, ½ TL geröstetem Kreuzkümmel gemahlen, ½ TL Salz** verrühren, kalt stellen.",
+              "limits": [
+                "250 g Joghurt",
+                "½ geriebener, ausgedrückter Salatgurke, ½ TL geröstetem Kreuzkümmel gemahlen, ½ TL Salz"
+              ],
+              "timers": [
+                {
+                  "label": "Raita & Beilagen",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "joghurt",
+                  "amount": {
+                    "text": "250 g Joghurt",
+                    "value": 250.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "salatgurke",
+                  "amount": {
+                    "text": "½ geriebener, ausgedrückter Salatgurke",
+                    "value": 0.5,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "kreuzkuemmel",
+                  "amount": {
+                    "text": "½ TL geröstetem Kreuzkümmel",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "zwiebeln",
+                  "amount": {
+                    "text": "1 rote Zwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "1 Zitrone",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "vollkorn-roti",
+              "label": "16",
+              "heading": "**16. Vollkorn-Roti (20 Min.)**",
+              "title": "Vollkorn-Roti",
+              "duration": {
+                "typical": "PT20M",
+                "source": "20 Min."
+              },
+              "text": "Optional, 6 Stück: 200 g Vollkornmehl + ½ TL Salz + \\~130 ml warmes Wasser 5 Min. zu glattem Teig kneten, 15 Min. ruhen, 6 Kugeln dünn (\\~15 cm) ausrollen, in trockener, sehr heißer Pfanne 30–40 Sek. pro Seite, bis Blasen kommen; direkt über der Gasflamme oder mit dem Brenner kurz aufpuffen lassen. In ein Tuch stapeln.",
+              "action": "Optional, 6 Stück: 200 g Vollkornmehl + ½ TL Salz + \\~130 ml warmes Wasser 5 Min. zu glattem Teig kneten, 15 Min. ruhen, 6 Kugeln dünn (\\~15 cm) ausrollen, in trockener, sehr heißer Pfanne 30–40 Sek. pro Seite, bis Blasen kommen; direkt über der Gasflamme oder mit dem Brenner kurz aufpuffen lassen.",
+              "timers": [
+                {
+                  "label": "Vollkorn-Roti",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                },
+                {
+                  "label": "Vollkorn-Roti",
+                  "duration": {
+                    "typical": "PT15M"
+                  },
+                  "text": "15 Min."
+                },
+                {
+                  "label": "Vollkorn-Roti",
+                  "duration": {
+                    "min": "PT30S",
+                    "max": "PT40S"
+                  },
+                  "text": "30–40 Sek."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "weizen-vollkornmehl",
+                  "amount": {
+                    "text": "200 g Vollkornmehl",
+                    "value": 200.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "130 ml warmes Wasser",
+                    "value": 130.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": []
+            }
+          ],
+          "heading": "**Raita & Beilagen (Kochtag):**",
+          "produces": [
+            {
+              "id": "raita-beilagen",
+              "name": "Raita & Beilagen"
+            }
+          ]
+        },
+        {
+          "id": "haehnchen-grillen",
+          "name": "Hähnchen grillen",
+          "steps": [
+            {
+              "id": "grill-vorheizen",
+              "label": "17",
+              "heading": "**17. Grill vorheizen (15 Min.)**",
+              "title": "Grill vorheizen",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "Eine Seite Brenner hoch, andere aus/niedrig → **indirekte Zone \\~200 °C Haubenthermometer.** Rost der indirekten Zone ölen. Fleisch 30 Min. vorher aus dem Kühlschrank; grobe Marinade abstreifen, was haftet, bleibt dran.",
+              "action": "Eine Seite Brenner hoch, andere aus/niedrig → **indirekte Zone \\~200 °C Haubenthermometer.** Rost der indirekten Zone ölen.",
+              "limits": [
+                "indirekte Zone \\~200 °C Haubenthermometer."
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "200 °C",
+                  "value": 200
+                }
+              ],
+              "ingredients": [],
+              "meta": "*jederzeit · Grill*",
+              "claims": [
+                {
+                  "resource": "grill",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "indirekt-garen",
+              "label": "18",
+              "heading": "**18. Indirekt garen (35–40 Min., passiv)**",
+              "title": "Indirekt garen",
+              "duration": {
+                "min": "PT35M",
+                "max": "PT40M",
+                "source": "35–40 Min."
+              },
+              "attention": "passive",
+              "text": "Fleisch in die **indirekte Zone**, Haube zu, **35–40 Min.**, nach 20 Min. wenden. Kinder-Keulen mit an den Rand — sie garen genauso, nur ohne Chili. Der Joghurt bildet eine Kruste, die das Fleisch schützt.",
+              "action": "Fleisch in die **indirekte Zone**, Haube zu, **35–40 Min.**, nach 20 Min. wenden.",
+              "limits": [
+                "indirekte Zone",
+                "35–40 Min."
+              ],
+              "timers": [
+                {
+                  "label": "Indirekt garen",
+                  "duration": {
+                    "min": "PT35M",
+                    "max": "PT40M"
+                  },
+                  "text": "35–40 Min."
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT20M",
+                    "source": "20 Min."
+                  },
+                  "text": "Fleisch in die **indirekte Zone**, Haube zu, **35–40 Min.**, nach 20 Min."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Grill vorheizen, Marinieren · Grill*",
+              "claims": [
+                {
+                  "resource": "grill",
+                  "units": 1
+                }
+              ],
+              "after": [
+                "step:grill-vorheizen",
+                "step:marinieren"
+              ]
+            },
+            {
+              "id": "roestkanten",
+              "label": "19",
+              "heading": "**19. Röstkanten (8 Min.)**",
+              "title": "Röstkanten",
+              "duration": {
+                "typical": "PT8M",
+                "source": "8 Min."
+              },
+              "text": "Stücke für **3–4 Min. pro Seite in die direkte Zone**, bis die Kruste dunkel gefleckt ist (Joghurt-Zucker karamellisiert, verkohlt aber schnell — dranbleiben). Wer mag: mit 1 TL Ghee bepinseln.",
+              "action": "Stücke für **3–4 Min. pro Seite in die direkte Zone**, bis die Kruste dunkel gefleckt ist (Joghurt-Zucker karamellisiert, verkohlt aber schnell — dranbleiben).",
+              "limits": [
+                "3–4 Min. pro Seite in die direkte Zone"
+              ],
+              "cues": [
+                "bis die Kruste dunkel gefleckt ist (Joghurt-Zucker karamellisiert"
+              ],
+              "timers": [
+                {
+                  "label": "Röstkanten",
+                  "duration": {
+                    "min": "PT3M",
+                    "max": "PT4M"
+                  },
+                  "text": "3–4 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "ghee",
+                  "amount": {
+                    "text": "1 TL Ghee",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*Grill*",
+              "claims": [
+                {
+                  "resource": "grill",
+                  "units": 1
+                }
+              ],
+              "attention": "active"
+            },
+            {
+              "id": "gar-check",
+              "label": "20",
+              "heading": "**20. Gar-Check (5 Min.)**",
+              "title": "Gar-Check",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Pflicht: Thermometer am Knochen entlang in den dicksten Oberschenkel: **≥ 75 °C**; bei Keulen mit Knochen ist 80–85 °C texturmäßig sogar besser (wie beim Poulet au vinaigre). Saft klar, kein Rosa am Knochen. **Jedes Stück der Kinder-Charge separat messen** — kleine Stücke sind schneller, große langsamer. 5 Min. ruhen.",
+              "action": "Pflicht: Thermometer am Knochen entlang in den dicksten Oberschenkel: **≥ 75 °C**; bei Keulen mit Knochen ist 80–85 °C texturmäßig sogar besser (wie beim Poulet au vinaigre).",
+              "limits": [
+                "≥ 75 °C",
+                "Jedes Stück der Kinder-Charge separat messen"
+              ],
+              "timers": [
+                {
+                  "label": "Gar-Check",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "≥ 75 °C",
+                  "value": 75
+                },
+                {
+                  "kind": "ziel",
+                  "text": "80–85 °C",
+                  "min": 80,
+                  "max": 85
+                }
+              ],
+              "ingredients": [],
+              "meta": "*fertig bei ≥ 75 °C Kern*",
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei ≥ 75 °C Kern",
+                "value": 75
+              },
+              "attention": "active"
+            },
+            {
+              "id": "anrichten",
+              "label": "21",
+              "heading": "**21. Anrichten (ca. 5 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "ca. 5 Min.",
+                "estimated": true
+              },
+              "text": "Pro Teller: 2 Stücke Hähnchen, **\\~150 g Dal** (eine gute Kelle), 3 EL Bharta, 2 EL Raita, Zwiebelringe, Zitronenspalte, Koriander. Optional ein Roti. Kinderteller: die milde Keule, Kinder-Dal, Kinder-Bharta, Raita.",
+              "action": "Pro Teller: 2 Stücke Hähnchen, **\\~150 g Dal** (eine gute Kelle), 3 EL Bharta, 2 EL Raita, Zwiebelringe, Zitronenspalte, Koriander.",
+              "limits": [
+                "\\~150 g Dal"
+              ],
+              "ingredients": [
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "2 EL Raita, Zwiebelringe, Zitronenspalte",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Gar-Check, Tadka Erwachsene, Tadka Kind, Bharta fertigstellen, Raita & Beilagen*",
+              "attention": "active",
+              "after": [
+                "step:gar-check",
+                "step:tadka-erwachsene",
+                "step:tadka-kind",
+                "step:bharta-fertigstellen",
+                "step:raita-beilagen"
+              ]
+            }
+          ],
+          "heading": "**Hähnchen grillen (Kochtag, Zwei-Zonen, 40–50 Min.):**",
+          "produces": [
+            {
+              "id": "haehnchen-grillen",
+              "name": "Hähnchen grillen"
+            }
+          ],
+          "consumes": [
+            "product:haehnchen"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Ofen-Alternative (Swasthi-Route)",
+      "level": "bold",
+      "markdown": "**Ofen-Alternative (Swasthi-Route):** 240 °C Ober-/Unterhitze, Fleisch auf einem Gitter über einem Blech, **15 Min., wenden, weitere 12–15 Min.**, dann 3–4 Min. Grillfunktion oder mit dem Küchenbrenner die Kanten anrösten. Thermometer wie oben."
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
+          },
+          {
+            "id": "vorabend",
+            "label": "Vorabend",
+            "day": -1,
+            "part": "evening"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "kochtag",
+            "text": "Dal aufsetzen (läuft nebenher). Auberginen abflämmen, in den Ofen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT120M"
+            },
+            "source": "T−2:00"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Auberginen schälen, hacken. Bharta-Masala kochen, teilen, fertigstellen. Raita. Roti-Teig (optional)",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT90M"
+            },
+            "source": "T−1:30",
+            "steps": [
+              "schaelen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Fleisch aus dem Kühlschrank. Grill vorheizen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT60M"
+            },
+            "source": "T−1:00",
+            "steps": [
+              "grill-vorheizen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Fleisch indirekt auf den Grill",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT50M"
+            },
+            "source": "T−0:50"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Dal teilen, beide Tadkas machen. Roti ausbacken",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT30M"
+            },
+            "source": "T−0:30",
+            "steps": [
+              "dal-teilen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Fleisch in die direkte Zone, Kanten rösten, **messen**",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT12M"
+            },
+            "source": "T−0:12"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Ruhen. Zwiebelringe abtropfen, Zitronen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT5M"
+            },
+            "source": "T−0:05"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Anrichten",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT0M"
+            },
+            "source": "T−0",
+            "steps": [
+              "anrichten"
+            ]
+          },
+          {
+            "phase": "vorabend",
+            "text": "30 Min. + Wartezeit"
+          },
+          {
+            "phase": "vorabend",
+            "text": "Enthäuten & einschneiden, erste Marinade → 30–60 Min.",
+            "steps": [
+              "enthaeuten-einschneiden",
+              "erste-marinade"
+            ]
+          },
+          {
+            "phase": "vorabend",
+            "text": "Joghurt-Marinade, Kinder-Abzweigung, Erwachsenen-Charge (Chili in den Rest) → Kühlschrank (Marinieren)",
+            "steps": [
+              "erwachsenen-charge",
+              "joghurt-marinade",
+              "kinder-abzweigung"
+            ]
+          },
+          {
+            "phase": "vorabend",
+            "text": "Toor Dal kann schon eingeweicht werden (im Kühlschrank, bis 12 Std.)"
+          }
+        ]
+      }
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "- **Dal ist die Beilage, nicht Reis oder Naan — mit Absicht.** 150 g gekochter Toor/Masoor Dal ≈ 20 g KH bei niedrigem GI (Hülsenfrucht, \\~30 laut internationalen GI-Tabellen) + 8 g Protein + Ballaststoffe; die gleiche Menge Basmati wären 40 g schnelle KH. Optional 1 Vollkorn-Roti (\\~33 g Mehl ≈ 20 g KH, GI mittel). **Portion pro Mahlzeit: 150 g Dal + 0–1 Roti = 20–40 g KH**, gepaart mit viel Protein (Hähnchen, Joghurt) und Fett (Ghee) — genau die gedämpfte Kombination aus dem Leitfaden. Wer 2 Rotis will: dann 100 g Dal.\n- **Durchgegart:** Hähnchen ≥ 75 °C am Knochen, jedes Stück gemessen (siehe „Gar-Check“). Joghurt aus dem Kühlregal ist pasteurisiert; nach 24 Std. mit rohem Fleisch in Kontakt gewesen → Restmarinade **nicht** als Sauce verwenden (klassisch nicht üblich, hier zusätzlich ausgeschlossen).\n- **Kein Alkohol, kein Ei, keine kritischen Zutaten.** Hing/Asafoetida ist in Kochmengen unbedenklich; wer sicher sein will, lässt es weg (macht wenig Unterschied).\n- **Senföl:** in der EU als „nur zur äußerlichen Anwendung\" deklariert (Erucasäure) — 3 EL auf 1,5 kg Fleisch sind unbedenklich, aber wer Bedenken hat, nimmt neutrales Öl; Geschmacksverlust gering.\n- **Nach dem Essen:** Spaziergang; Dal-Reste am nächsten Tag sind die ideale Zwischenmahlzeit (Leitfaden-Regel 5).",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Drei Abzweigungen, alle vor dem Chili** (Schritte 1d, 2b/2d, 3d) — das Paneer-Learning in Reinform: Die Erwachsenen-Versionen werden dadurch *nicht* verwässert, die Kinder-Versionen sind vollwertig gewürzt (Garam Masala, Kreuzkümmel, Knoblauch), nur ohne Schärfe.\n- **Kinder-Keulen kennzeichnen** (anderer Grillplatz, Zahnstocher) — nach dem Grillen sehen alle gleich aus.\n- **Raita** ist der Rettungsanker, falls doch etwas zu kräftig ist; Roti zum Tunken.\n- **Mitmachen:** Roti ausrollen und aufpuffen sehen; Aubergine „schwarz brennen\" nur zuschauen (Brenner).",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Vorbereiten:** Dal und Bharta lassen sich komplett am Vortag machen (beide werden durchgezogen besser); Tadka trotzdem frisch, das ist der Punkt. Dann bleibt am Kochtag nur Grillen — 1 Std.\n- **Reste:** Dal 3 Tage, friert gut; Bharta 3 Tage; Hähnchen vom Knochen gezupft in Raita = Wrap-Füllung für den nächsten Tag (für Schwangere: durchhitzen).\n- **Kein Grill/Winter:** Ofen-Route ist vollwertig; der Küchenbrenner liefert die Kanten. Rauch nach Swasthi (*Dhungar*: glühendes Holzkohlestück mit ½ TL Ghee 5 Min. unter Deckel zum Fleisch) ist ein netter Trick — mit dem Gasgrill nicht nötig.\n- **Skalierung:** Marinade reicht für bis zu 2 kg Fleisch; Dal ×1,5 für Reste (lohnt).\n- **Variante nach der Schwangerschaft:** Nichts zu ändern — das Rezept ist ohne Kompromiss gebaut; höchstens Naan statt Roti.",
+      "tags": [
+        "notizen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Tandoori-Marinade und Ofen-Route:** [Swasthi — Tandoori Chicken (Smoky Restaurant Style)](https://www.indianhealthyrecipes.com/tandoori-chicken-recipe/): ¾ kg Fleisch, \\~120 g hung curd, 1 EL Ingwer-Knoblauch-Paste, 1 TL Garam Masala, 1–2 TL Kashmiri, 1½ TL Koriander, ½ TL Kreuzkümmel, ¼ TL Kurkuma, 1 TL Kasuri Methi, 1 EL Zitrone, 1½ EL Öl; 6 Std. bis über Nacht; Ofen 240 °C 12–15 + 12–15 Min. + Grill; **Kerntemperatur 75 °C**; Kashmiri ausdrücklich „low heat chili that imparts red color\". Unsere Mengen sind auf 1,5 kg skaliert (×2) und beim Salz etwas höher (1½ TL statt 1 TL/kg) — weil die erste Marinade separat salzt.\n- **Zweistufig + Grill indirekt:** [Meathead / AmazingRibs — The Meathead Method: Tandoori Chicken](https://pitmaster.amazingribs.com/forum/excerpts-from-meathead-s-next-book/1717203-the-meathead-method-tandoori-chicken): Trockensalzen 1 Std. vor der Joghurt-Marinade, 12–24 Std. marinieren, indirekt bei \\~205 °C \\~45 Min. (ganzes Huhn), Joghurt als „heat shield\", Rauchpaprika statt Kashmiri für Farbe. Unser Paprika-für-alle/Kashmiri-für-Erwachsene folgt dieser Logik.\n- **Dal tadka:** [Dassana — Restaurant Style Dal Tadka](https://www.vegrecipesofindia.com/restaurant-style-dal-tadka/): 200 g Toor, 3–3,5 cups Wasser, **45–60 Min. im Topf**, Zwiebel/Tomate/Ingwer/Kurkuma/Hing mitgekocht; Tadka 3 EL Ghee, 1 TL Kreuzkümmel, 5–6 Knoblauchzehen, 2–3 getrocknete Chilis, Hing, 1 TL Kasuri Methi, ½ TL Kashmiri „oder Paprika\"; ½ TL Garam Masala am Ende. [Swasthi — Dal Tadka](https://www.indianhealthyrecipes.com/dal-tadka/): 200 g Toor (oder Toor/Moong/Chana-Mix), 30 Min. einweichen → 20–30 Min., Senfsamen/Curryblätter „nicht nordindisch-Restaurant\" → weggelassen. Wir folgen Dassanas realistischer Kochzeit und ihrer Tadka-Formel.\n- **Baingan bharta:** [Swasthi — Baingan Bharta](https://www.indianhealthyrecipes.com/baingan-bharta/): 500 g Aubergine für 2–3 Portionen (→ 900 g für 4), Knoblauch in Einschnitte stecken, Ofen 240 °C Grill 20–25 Min. oder Flamme 12–14 Min., Masala 100 g Zwiebel / 200 g Tomate / ½ TL Kashmiri / ¼–½ TL Garam Masala, Senföl empfohlen. [Dassana — Baingan Bharta](https://www.vegrecipesofindia.com/baingan-bharta-recipe/): puristischer (Zwiebel, Knoblauch, Tomate, Chili, Koriander), Ofen 180 °C 25–35 Min. „ohne Rauchgeschmack\" — deshalb bei uns Brenner/Grill für den Rauch.\n- **Chili-Position / Kinder-Abzweigung:** In allen drei Gerichten sitzt die Schärfe in Kashmiri/Chilipulver bzw. grünen und getrockneten Chilis, die jeweils spät dazukommen — beide Quellen markieren sie als „optional/may omit\". Die saubere Trennung vor dem Chili ist damit ohne Rezeptverbiegung möglich; grüne Chili haben wir überall weggelassen (Schärfe kommt aus Kashmiri/Trockenchili, kontrollierbarer).\n- **GI Hülsenfrüchte:** International Tables of Glycemic Index (Atkinson et al., 2008/2021): Linsen GI \\~30, Basmati \\~55–60, Weizen-Roti \\~60. Näherungen — Messgerät entscheidet (Leitfaden).\n- **Kasuri Methi / Toor Dal Bezug:** TRS/Natco via Amazon.de oder asia4friends.de, Verfügbarkeit 07/2026 beim Paneer-Projekt geprüft.",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T19:02:45Z",
+    "sourceHash": "d0b0f176e6fb5b35",
+    "quantities": [
+      {
+        "ingredient": "haehnchenschenkel",
+        "total": {
+          "text": "1500 g",
+          "value": 1500.0,
+          "max": 1500.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "1,5 kg Schenkel/Keulen"
+        }
+      },
+      {
+        "ingredient": "joghurt",
+        "total": {
+          "text": "500 g",
+          "value": 500.0,
+          "max": 500.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "250 g griechischer Joghurt 10",
+          "raita-beilagen": "250 g Joghurt"
+        }
+      },
+      {
+        "ingredient": "ghee",
+        "total": {
+          "text": "3 EL (+ TL ungemischt)",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "dal-tadka": "2 EL Ghee + 1 EL Ghee"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "auberginen",
+        "total": {
+          "text": "2¼",
+          "value": 2.25,
+          "max": 2.25,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "baingan-bharta": "2 Auberginen + ¼ der Aubergine"
+        }
+      },
+      {
+        "ingredient": "tomaten",
+        "total": {
+          "text": "500 g",
+          "value": 500.0,
+          "max": 500.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "dal-tadka": "200 g gewürfelten Tomaten",
+          "baingan-bharta": "300 g gewürfelte Tomaten"
+        }
+      },
+      {
+        "ingredient": "zwiebeln",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "dal-tadka": "1 fein gewürfelten Zwiebel",
+          "baingan-bharta": "1 fein gewürfelte Zwiebel",
+          "raita-beilagen": "1 rote Zwiebel"
+        }
+      },
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": "13–14",
+          "value": 13.0,
+          "max": 14.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "4 Knoblauchzehen",
+          "dal-tadka": "4 Knoblauchzehen + 1–2 Knoblauchzehen",
+          "baingan-bharta": "1 Knoblauchzehe + 3 Knoblauchzehen"
+        }
+      },
+      {
+        "ingredient": "ingwer",
+        "total": {
+          "text": "8 cm",
+          "value": 8.0,
+          "max": 8.0,
+          "unit": "cm",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "4 cm Ingwer",
+          "dal-tadka": "2 cm Ingwer",
+          "baingan-bharta": "2 cm Ingwer"
+        }
+      },
+      {
+        "ingredient": "zitronen",
+        "total": {
+          "text": "5 EL (+ Stück, TL ungemischt)",
+          "value": 5.0,
+          "max": 5.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "2 EL Zitronensaft",
+          "baingan-bharta": "1 EL Zitronensaft",
+          "haehnchen-grillen": "2 EL Raita, Zwiebelringe, Zitronenspalte"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "koriandergruen",
+        "total": {
+          "text": "4 EL",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "dal-tadka": "2 EL Koriandergrün",
+          "baingan-bharta": "2 EL Koriandergrün"
+        }
+      },
+      {
+        "ingredient": "salatgurke",
+        "total": {
+          "text": "½",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "raita-beilagen": "½ geriebener, ausgedrückter Salatgurke"
+        }
+      },
+      {
+        "ingredient": "weizen-vollkornmehl",
+        "total": {
+          "text": "200 g",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "raita-beilagen": "200 g Vollkornmehl"
+        }
+      },
+      {
+        "ingredient": "toor",
+        "total": {
+          "text": "200 g",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "dal-tadka": "200 g Toor Dal"
+        }
+      },
+      {
+        "ingredient": "kashmiri-chilipulver",
+        "total": {
+          "text": "2 TL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "2 TL Kashmiri-Chilipulver"
+        }
+      },
+      {
+        "ingredient": "atta",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "senfoel",
+        "total": {
+          "text": "3 EL",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "3 EL Senföl"
+        }
+      },
+      {
+        "ingredient": "paprika",
+        "total": {
+          "text": "3½ TL",
+          "value": 3.5,
+          "max": 3.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "2 TL Paprika edelsüß + 1 TL Paprika",
+          "dal-tadka": "½ TL Paprika edelsüß"
+        }
+      },
+      {
+        "ingredient": "garam",
+        "total": {
+          "text": "3 TL",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "2 TL Garam Masala",
+          "dal-tadka": "½ TL Garam Masala",
+          "baingan-bharta": "½ TL Garam Masala"
+        }
+      },
+      {
+        "ingredient": "koriander",
+        "total": {
+          "text": "4 TL",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "3 TL Koriander gemahlen",
+          "baingan-bharta": "1 TL Koriander gemahlen"
+        }
+      },
+      {
+        "ingredient": "kreuzkuemmel",
+        "total": {
+          "text": "4 TL",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "1 TL Kreuzkümmel",
+          "dal-tadka": "1 TL Kreuzkümmel + ½ TL Kreuzkümmel",
+          "baingan-bharta": "1 TL Kreuzkümmel",
+          "raita-beilagen": "½ TL geröstetem Kreuzkümmel"
+        }
+      },
+      {
+        "ingredient": "kurkuma",
+        "total": {
+          "text": "1¼ TL",
+          "value": 1.25,
+          "max": 1.25,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "½ TL Kurkuma",
+          "dal-tadka": "½ TL Kurkuma",
+          "baingan-bharta": "¼ TL Kurkuma"
+        }
+      },
+      {
+        "ingredient": "kasuri",
+        "total": {
+          "text": "3 TL",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "2 TL Kasuri Methi",
+          "dal-tadka": "1 TL Kasuri Methi"
+        }
+      },
+      {
+        "ingredient": "chilis",
+        "total": {
+          "text": "2–3 (+ TL ungemischt)",
+          "value": 2.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "dal-tadka": "2–3 getrocknete rote Chilis"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "hing",
+        "total": {
+          "text": "2 Prise",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Prise",
+          "approx": false
+        },
+        "perTask": {
+          "dal-tadka": "1 Prise Hing + 1 Prise Hing"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "4¼ TL",
+          "value": 4.25,
+          "max": 4.25,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "1½ TL Salz",
+          "dal-tadka": "1 TL Salz",
+          "baingan-bharta": "¾ TL Salz",
+          "raita-beilagen": "½ TL Salz + ½ TL Salz"
+        }
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": "¼ TL",
+          "value": 0.25,
+          "max": 0.25,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "haehnchen": "¼ TL schwarzer Pfeffer"
+        }
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "1630 ml",
+          "value": 1630.0,
+          "max": 1630.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "dal-tadka": "800 ml Wasser + 700 ml Wasser",
+          "raita-beilagen": "130 ml warmes Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Online",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "toor",
+            "name": "Toor Dal",
+            "need": {
+              "text": "200 g",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "200 g",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            },
+            "note": "500 g–1 kg; Verbrauch 200 g; Fallback ohne Vorlauf: 200 g rote Linsen, REWE"
+          },
+          {
+            "ingredient": "kashmiri-chilipulver",
+            "name": "Kashmiri-Chilipulver",
+            "need": {
+              "text": "2 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "2 TL",
+            "inStock": false,
+            "note": "nur Erwachsenen-Marinade und Tadka; Fallback: ½ Menge Cayenne + ½ Paprika"
+          },
+          {
+            "ingredient": "atta",
+            "name": "Atta",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "optional": true,
+            "note": "Vollkorn-Chapati-Mehl"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "auberginen",
+            "name": "große Auberginen",
+            "need": {
+              "text": "2¼",
+              "value": 2.25,
+              "max": 2.25,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2¼",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "\\~900 g"
+          },
+          {
+            "ingredient": "tomaten",
+            "name": "reife Tomaten",
+            "need": {
+              "text": "500 g",
+              "value": 500.0,
+              "max": 500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "500 g",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            },
+            "note": "200 g Dal, 300 g Bharta"
+          },
+          {
+            "ingredient": "zwiebeln",
+            "name": "mittlere Zwiebeln",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            },
+            "note": "1 Dal, 1 Bharta, 1 rote zum Servieren"
+          },
+          {
+            "ingredient": "knoblauch",
+            "name": "Knoblauch",
+            "need": {
+              "text": "13–14",
+              "value": 13.0,
+              "max": 14.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "13–14",
+            "inStock": false,
+            "buy": {
+              "text": "2 Knollen"
+            },
+            "note": "\\~18 Zehen Verbrauch — siehe Mengen-Check"
+          },
+          {
+            "ingredient": "ingwer",
+            "name": "cm Ingwer",
+            "need": {
+              "text": "8 cm",
+              "value": 8.0,
+              "max": 8.0,
+              "unit": "cm",
+              "approx": false
+            },
+            "display": "8 cm",
+            "inStock": false,
+            "buy": {
+              "text": "8"
+            }
+          },
+          {
+            "ingredient": "zitronen",
+            "name": "Zitronen",
+            "need": {
+              "text": "5 EL (+ Stück, TL ungemischt)",
+              "value": 5.0,
+              "max": 5.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "5 EL",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            },
+            "note": "Marinade, Dal, Bharta, Spalten"
+          },
+          {
+            "ingredient": "koriandergruen",
+            "name": "Koriandergrün",
+            "need": {
+              "text": "4 EL",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "4 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            }
+          },
+          {
+            "ingredient": "salatgurke",
+            "name": "Salatgurke",
+            "need": {
+              "text": "½",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "½",
+            "inStock": false,
+            "buy": {
+              "text": "½"
+            },
+            "note": "Raita"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "haehnchenschenkel",
+            "name": "Hähnchenschenkel oder Keulen mit Knochen",
+            "need": {
+              "text": "1500 g",
+              "value": 1500.0,
+              "max": 1500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "1500 g",
+            "inStock": false,
+            "buy": {
+              "text": "1,5 kg"
+            },
+            "note": "8 Keulen oder 6 Oberschenkel + 4 Unterkeulen"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "joghurt",
+            "name": "griechischer Joghurt 10 %",
+            "need": {
+              "text": "500 g",
+              "value": 500.0,
+              "max": 500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "500 g",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            },
+            "note": "250 g Marinade, 250 g Raita; pasteurisiert — Standardware"
+          },
+          {
+            "ingredient": "ghee",
+            "name": "Ghee",
+            "need": {
+              "text": "3 EL (+ TL ungemischt)",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "3 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Glas"
+            },
+            "note": "Verbrauch \\~4 EL — oder Butterschmalz / 60 g Butter"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "weizen-vollkornmehl",
+            "name": "Weizen-Vollkornmehl",
+            "need": {
+              "text": "200 g",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "200 g",
+            "inStock": false,
+            "buy": {
+              "text": "200 g"
+            },
+            "optional": true,
+            "note": "Roti; oder Atta online"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "senfoel",
+            "name": "Senföl",
+            "need": {
+              "text": "3 EL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "3 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "oder neutrales Öl; 3 EL Marinade, 2 EL Bharta"
+          },
+          {
+            "ingredient": "paprika",
+            "name": "Paprika edelsüß",
+            "need": {
+              "text": "3½ TL",
+              "value": 3.5,
+              "max": 3.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "3½ TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "2 TL Marinade, ½ TL Dal"
+          },
+          {
+            "ingredient": "garam",
+            "name": "Garam Masala",
+            "need": {
+              "text": "3 TL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "3 TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "2 TL, ½ TL, ½ TL"
+          },
+          {
+            "ingredient": "koriander",
+            "name": "Koriander gemahlen",
+            "need": {
+              "text": "4 TL",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "4 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "kreuzkuemmel",
+            "name": "Kreuzkümmel",
+            "need": {
+              "text": "4 TL",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "4 TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "gemahlen und ganz"
+          },
+          {
+            "ingredient": "kurkuma",
+            "name": "Kurkuma",
+            "need": {
+              "text": "1¼ TL",
+              "value": 1.25,
+              "max": 1.25,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1¼ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "kasuri",
+            "name": "Kasuri Methi",
+            "need": {
+              "text": "3 TL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "3 TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "2 TL Marinade, 1 TL Dal — Vorrat vom Paneer-Projekt; falls leer: online"
+          },
+          {
+            "ingredient": "chilis",
+            "name": "getrocknete rote Chilis",
+            "need": {
+              "text": "2–3 (+ TL ungemischt)",
+              "value": 2.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2–3",
+            "inStock": false,
+            "buy": {
+              "text": "2–3"
+            },
+            "pantry": true,
+            "note": "Tadka Erwachsene"
+          },
+          {
+            "ingredient": "hing",
+            "name": "Hing",
+            "need": {
+              "text": "2 Prise",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Prise",
+              "approx": false
+            },
+            "display": "2 Prise",
+            "inStock": false,
+            "optional": true,
+            "pantry": true,
+            "note": "Asafoetida; Dal — indischer Laden/online, winzige Dose hält Jahre"
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "4¼ TL",
+              "value": 4.25,
+              "max": 4.25,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "4¼ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Schwarzer Pfeffer",
+            "need": {
+              "text": "¼ TL",
+              "value": 0.25,
+              "max": 0.25,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "¼ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "1630 ml",
+              "value": 1630.0,
+              "max": 1630.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "1630 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}

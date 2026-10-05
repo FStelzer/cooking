@@ -1,6 +1,6 @@
 # Tandoori-Hähnchen vom Gasgrill mit Dal tadka & Baingan bharta (4 Portionen)
 
-*Aktive Zeit \~1,5 Std. am Kochtag + 30 Min. am Vortag (Marinade) + Marinieren über Nacht. Equipment: Gasgrill mit Haube (Zwei-Zonen) oder Ofen + Küchenbrenner, Fleischthermometer, 6L-Topf (Dal), Pfanne (Bharta-Masala), kleine Pfanne (Tadka), Bunsenbrenner (Aubergine).*
+*Aktive Zeit \~2 Std., gesamt über Nacht + \~2 Std. (\~1,5 Std. am Kochtag + 30 Min. am Vortag (Marinade) + Marinieren über Nacht). Equipment: Gasgrill mit Haube (Zwei-Zonen) oder Ofen + Küchenbrenner, Fleischthermometer, 6L-Topf (Dal), Pfanne (Bharta-Masala), kleine Pfanne (Tadka), Bunsenbrenner (Aubergine).*
 
 Follow-up zum [Paneer-Projekt](/gerichte/paneer-projekt.md) mit dessen Learning eingebaut: **Schärfe nicht am Teller nachrüsten, sondern zwei Versionen parallel führen** — die milde Kinder-Abzweigung wird bei allen drei Komponenten *vor* dem Chili abgenommen, der Rest wird richtig gewürzt. Tandoori-Hähnchen aus der Joghurt-Marinade mit Röstkanten vom Grill, dazu Dal tadka (die „richtige" KH-Beilage: Hülsenfrucht, niedriger GI, Protein) und Baingan bharta, die über der Flamme verkohlte Aubergine — dieselbe Technik wie beim Moutabal, indisch gewürzt. Kein Naan, kein Reis; optional ein kleines Vollkorn-Roti.
 
@@ -35,123 +35,162 @@ Follow-up zum [Paneer-Projekt](/gerichte/paneer-projekt.md) mit dessen Learning 
 
 ### REWE Center
 
-**Kühltheke / Fleisch:**
-- [ ] 1,5 kg Hähnchenschenkel oder Keulen mit Knochen (8 Keulen oder 6 Oberschenkel + 4 Unterkeulen)
+**Fleisch & Fisch:**
+- [ ] 1,5 kg Hähnchenschenkel oder Keulen mit Knochen *(8 Keulen oder 6 Oberschenkel + 4 Unterkeulen)*
 
-**Milchprodukte:**
-- [ ] 500 g griechischer Joghurt 10 % (250 g Marinade + 250 g Raita; pasteurisiert — Standardware)
-- [ ] Ghee, 1 Glas (Verbrauch \~4 EL) — oder Butterschmalz / 60 g Butter
+**Milchprodukte & Eier:**
+- [ ] 500 g griechischer Joghurt 10 % *(250 g Marinade, 250 g Raita; pasteurisiert — Standardware)*
+- [ ] Ghee, 1 Glas *(Verbrauch \~4 EL — oder Butterschmalz / 60 g Butter)*
 
-**Obst / Gemüse:**
-- [ ] 2 große Auberginen (\~900 g)
-- [ ] 500 g reife Tomaten (200 g Dal + 300 g Bharta)
-- [ ] 3 mittlere Zwiebeln (1 Dal, 1 Bharta, 1 rote zum Servieren)
-- [ ] 2 Knollen Knoblauch (\~18 Zehen Verbrauch — siehe Mengen-Check)
-- [ ] \~8 cm Ingwer
-- [ ] 3 Zitronen (Marinade, Dal, Bharta, Spalten)
+**Obst & Gemüse:**
+- [ ] 2 große Auberginen *(\~900 g)*
+- [ ] 500 g reife Tomaten *(200 g Dal, 300 g Bharta)*
+- [ ] 3 mittlere Zwiebeln *(1 Dal, 1 Bharta, 1 rote zum Servieren)*
+- [ ] 2 Knollen Knoblauch *(\~18 Zehen Verbrauch — siehe Mengen-Check)*
+- [ ] 8 cm Ingwer
+- [ ] 3 Zitronen *(Marinade, Dal, Bharta, Spalten)*
 - [ ] 1 Bund Koriandergrün
-- [ ] ½ Salatgurke (Raita)
+- [ ] ½ Salatgurke *(Raita)*
 
 **Trockenwaren:**
-- [ ] 200 g Toor Dal *(Fallback: 200 g rote Linsen, REWE)*
-- [ ] 200 g Weizen-Vollkornmehl (optional, Roti)
-- [ ] 3 EL Senföl oder neutrales Öl (Marinade) + 2 EL Öl (Bharta) — Vorrat prüfen
+- [ ] Optional: 200 g Weizen-Vollkornmehl *(Roti; oder Atta online)*
 
-**Gewürze (Bestand prüfen):**
-- [ ] Paprika edelsüß (2 TL Marinade + ½ TL Dal)
-- [ ] Kashmiri-Chilipulver *(nur Erwachsenen-Marinade + Tadka; Fallback: ½ Menge Cayenne + ½ Paprika)*
-- [ ] Garam Masala (2 TL + ½ TL + ½ TL)
-- [ ] Koriander gemahlen, Kreuzkümmel gemahlen, Kreuzkümmel ganz, Kurkuma
-- [ ] Kasuri Methi (2 TL Marinade + 1 TL Dal) — Vorrat vom Paneer-Projekt
-- [ ] 2–3 getrocknete rote Chilis (Tadka Erwachsene)
-- [ ] Asafoetida/Hing (optional, Dal — indischer Laden/online, winzige Dose hält Jahre)
+### Online
 
-### Indischer Laden / online (bündeln)
+*Indischer Laden / online — bündeln.*
 
-- [ ] Toor Dal, 500 g–1 kg
-- [ ] Kasuri Methi, falls Vorrat leer
-- [ ] Kashmiri-Chilipulver
-- [ ] Atta (Vollkorn-Chapati-Mehl), optional
+- [ ] 500 g Toor Dal *(500 g–1 kg; Verbrauch 200 g; Fallback ohne Vorlauf: 200 g rote Linsen, REWE)*
+- [ ] Kashmiri-Chilipulver *(nur Erwachsenen-Marinade und Tadka; Fallback: ½ Menge Cayenne + ½ Paprika)*
+- [ ] Optional: Atta *(Vollkorn-Chapati-Mehl)*
+
+### Vorrat prüfen
+
+- [ ] Senföl *(oder neutrales Öl; 3 EL Marinade, 2 EL Bharta)*
+- [ ] Paprika edelsüß *(2 TL Marinade, ½ TL Dal)*
+- [ ] Garam Masala *(2 TL, ½ TL, ½ TL)*
+- [ ] Koriander gemahlen
+- [ ] Kreuzkümmel *(gemahlen und ganz)*
+- [ ] Kurkuma
+- [ ] Kasuri Methi *(2 TL Marinade, 1 TL Dal — Vorrat vom Paneer-Projekt; falls leer: online)*
+- [ ] 2–3 getrocknete rote Chilis *(Tadka Erwachsene)*
+- [ ] Optional: Hing *(Asafoetida; Dal — indischer Laden/online, winzige Dose hält Jahre)*
+- [ ] Salz
+- [ ] Schwarzer Pfeffer
 
 ## Zubereitung
 
-### 1. Hähnchen marinieren (Vortag, 30 Min. aktiv + über Nacht)
+**Hähnchen (Vortag, 30 Min. aktiv + über Nacht, Kühlschrank):**
 
-**1a. Vorbereiten:** 1,5 kg Schenkel/Keulen enthäuten (Haut + Abschnitte einfrieren → Brühe). Mit einem scharfen Messer je **2–3 tiefe Schnitte bis zum Knochen** — die Marinade muss rein.
+**1. Enthäuten & einschneiden (10 Min.)**
+*jederzeit*
+1,5 kg Schenkel/Keulen enthäuten (Haut + Abschnitte einfrieren → Brühe). Mit einem scharfen Messer je **2–3 tiefe Schnitte bis zum Knochen** — die Marinade muss rein.
 
-**1b. Erste Marinade (30–60 Min.):** 4 Knoblauchzehen + 4 cm Ingwer zu Paste reiben (\~2 EL). Mit **2 EL Zitronensaft, 1½ TL Salz, ½ TL Kurkuma** verrühren, in die Schnitte einmassieren. 30–60 Min. bei Raumtemperatur ziehen lassen — das Salz zieht ein, bevor der Joghurt-Mantel es bremst.
+**2. Erste Marinade (30–60 Min., passiv)**
+4 Knoblauchzehen + 4 cm Ingwer zu Paste reiben (\~2 EL). Mit **2 EL Zitronensaft, 1½ TL Salz, ½ TL Kurkuma** verrühren, in die Schnitte einmassieren. 30–60 Min. bei Raumtemperatur ziehen lassen — das Salz zieht ein, bevor der Joghurt-Mantel es bremst.
 
-**1c. Joghurt-Marinade:** **250 g griechischer Joghurt 10 %** mit **2 TL Garam Masala, 3 TL Koriander gemahlen, 1 TL Kreuzkümmel gemahlen, 2 TL Paprika edelsüß, 2 TL Kasuri Methi** (zwischen den Handflächen zerrieben), **¼ TL schwarzer Pfeffer, 3 EL Senföl oder neutralem Öl** verrühren. Sie soll dick am Löffel haften, nicht tropfen.
+**3. Joghurt-Marinade (5 Min.)**
+*jederzeit*
+**250 g griechischer Joghurt 10 %** mit **2 TL Garam Masala, 3 TL Koriander gemahlen, 1 TL Kreuzkümmel gemahlen, 2 TL Paprika edelsüß, 2 TL Kasuri Methi** (zwischen den Handflächen zerrieben), **¼ TL schwarzer Pfeffer, 3 EL Senföl oder neutralem Öl** verrühren. Sie soll dick am Löffel haften, nicht tropfen.
 
-**1d. Kinder-Abzweigung — jetzt:** **2 Keulen** (oder 1 Oberschenkel + 1 Unterkeule) in eine kleine Dose, mit \~⅕ der Marinade (\~4 EL) einreiben, Deckel drauf. Das ist die milde Charge — fertig.
+**4. Kinder-Abzweigung (2 Min.)**
+*nach Erste Marinade, Joghurt-Marinade*
+Jetzt: **2 Keulen** (oder 1 Oberschenkel + 1 Unterkeule) in eine kleine Dose, mit \~⅕ der Marinade (\~4 EL) einreiben, Deckel drauf. Das ist die milde Charge — fertig.
 
-**1e. Erwachsenen-Charge:** In die restliche Marinade **2 TL Kashmiri-Chilipulver** rühren (Fallback: 1 TL Paprika + ½–1 TL Cayenne — Cayenne ist deutlich schärfer, vorsichtig). Restliches Fleisch darin wenden, in die Schnitte drücken. Beide Dosen **über Nacht, mind. 8, gern 24 Std.** in den Kühlschrank.
+**5. Erwachsenen-Charge (5 Min.)**
+In die restliche Marinade **2 TL Kashmiri-Chilipulver** rühren (Fallback: 1 TL Paprika + ½–1 TL Cayenne — Cayenne ist deutlich schärfer, vorsichtig). Restliches Fleisch darin wenden, in die Schnitte drücken.
 
-### 2. Dal tadka (Kochtag, 60–75 Min., größtenteils passiv)
+**6. Marinieren (über Nacht, passiv)**
+Beide Dosen **über Nacht, mind. 8, gern 24 Std.** in den Kühlschrank.
 
-**2a. Kochen:** 200 g Toor Dal waschen, bis das Wasser klar ist; 30 Min. in warmem Wasser einweichen (verkürzt die Kochzeit). Abgießen, im 6L-Topf mit **800 ml Wasser, ½ TL Kurkuma, 1 fein gewürfelten Zwiebel, 200 g gewürfelten Tomaten, 2 cm Ingwer gerieben** und optional **1 Prise Hing** aufkochen. Schaum abschöpfen, Deckel halb auf, **45–60 Min.** sanft kochen, bis die Linsen zerfallen und sich mit dem Schneebesen zu einer groben Creme rühren lassen. Wasser nachgießen, wenn es zu dick wird — Ziel: dicke Suppe, nicht Brei. **Rote Linsen: 25 Min. ohne Einweichen**, 700 ml Wasser. Jetzt erst salzen: **1 TL Salz**, abschmecken.
+**Dal tadka (Kochtag, 60–75 Min., größtenteils passiv):**
 
-**2b. Teilen:** \~¼ des Dals (\~250 ml) in einen kleinen Topf → **Kinder-Dal**. Rest bleibt im großen Topf.
+**7. Dal kochen (45–60 Min.)**
+*jederzeit · Herd · fertig wenn die Linsen zerfallen*
+200 g Toor Dal waschen, bis das Wasser klar ist; 30 Min. in warmem Wasser einweichen (verkürzt die Kochzeit). Abgießen, im 6L-Topf mit **800 ml Wasser, ½ TL Kurkuma, 1 fein gewürfelten Zwiebel, 200 g gewürfelten Tomaten, 2 cm Ingwer gerieben** und optional **1 Prise Hing** aufkochen. Schaum abschöpfen, Deckel halb auf, **45–60 Min.** sanft kochen, bis die Linsen zerfallen und sich mit dem Schneebesen zu einer groben Creme rühren lassen. Wasser nachgießen, wenn es zu dick wird — Ziel: dicke Suppe, nicht Brei. **Rote Linsen: 25 Min. ohne Einweichen**, 700 ml Wasser. Jetzt erst salzen: **1 TL Salz**, abschmecken.
 
-**2c. Tadka Erwachsene:** In der kleinen Pfanne **2 EL Ghee** heiß, **1 TL Kreuzkümmel ganz** 20 Sek. knistern lassen, **4 Knoblauchzehen** in Scheiben goldgelb (nicht braun), **2–3 getrocknete rote Chilis** (Kerne raus für weniger Schärfe) 20 Sek., Pfanne vom Herd, **½ TL Kashmiri-Chili + ½ TL Paprika edelsüß + 1 Prise Hing** einrühren (im heißen Fett blühen sie auf, verbrennen aber schnell — deshalb vom Herd). Sofort über den großen Dal gießen, es zischt. **1 TL Kasuri Methi** zerrieben, **½ TL Garam Masala**, 1 TL Zitronensaft, 2 EL Koriandergrün.
+**8. Dal teilen (2 Min.)**
+\~¼ des Dals (\~250 ml) in einen kleinen Topf → **Kinder-Dal**. Rest bleibt im großen Topf.
 
-**2d. Tadka Kind:** **1 EL Ghee**, **½ TL Kreuzkümmel**, **1–2 Knoblauchzehen** in Scheiben goldgelb, Prise Paprika — **kein Chili** — über den kleinen Topf. Prise Garam Masala, Spritzer Zitrone.
+**9. Tadka Erwachsene (5 Min.)**
+*Herd*
+In der kleinen Pfanne **2 EL Ghee** heiß, **1 TL Kreuzkümmel ganz** 20 Sek. knistern lassen, **4 Knoblauchzehen** in Scheiben goldgelb (nicht braun), **2–3 getrocknete rote Chilis** (Kerne raus für weniger Schärfe) 20 Sek., Pfanne vom Herd, **½ TL Kashmiri-Chili + ½ TL Paprika edelsüß + 1 Prise Hing** einrühren (im heißen Fett blühen sie auf, verbrennen aber schnell — deshalb vom Herd). Sofort über den großen Dal gießen, es zischt. **1 TL Kasuri Methi** zerrieben, **½ TL Garam Masala**, 1 TL Zitronensaft, 2 EL Koriandergrün.
+
+**10. Tadka Kind (3 Min.)**
+*nach Dal teilen · Herd*
+**1 EL Ghee**, **½ TL Kreuzkümmel**, **1–2 Knoblauchzehen** in Scheiben goldgelb, Prise Paprika — **kein Chili** — über den kleinen Topf. Prise Garam Masala, Spritzer Zitrone.
 
 Beide Töpfe warm halten; Dal wird beim Stehen dicker — mit heißem Wasser wieder einstellen.
 
-### 3. Baingan bharta (Kochtag, 50 Min., 25 davon passiv)
+**Baingan bharta (Kochtag, 50 Min., 25 davon passiv):**
 
-**3a. Verkohlen:** 2 Auberginen (\~900 g) mehrfach mit dem Messer einstechen, in 4 der Löcher je **1 Knoblauchzehe** stecken (4 Zehen gesamt), dünn mit Öl einreiben. **Bunsenbrenner:** rundum abflämmen, bis die Haut überall schwarz und blasig ist. Dann **220 °C Ofen 20–25 Min.**, bis sie komplett kollabieren (der Brenner allein gart nicht durch). **Gasgrill-Alternative:** direkt über hoher Flamme, Haube zu, 15–20 Min., alle 5 Min. wenden, bis sie zusammenfallen.
+**11. Verkohlen (30 Min.)**
+*jederzeit · Ofen 220 °C*
+2 Auberginen (\~900 g) mehrfach mit dem Messer einstechen, in 4 der Löcher je **1 Knoblauchzehe** stecken (4 Zehen gesamt), dünn mit Öl einreiben. **Bunsenbrenner:** rundum abflämmen, bis die Haut überall schwarz und blasig ist. Dann **220 °C Ofen 20–25 Min.**, bis sie komplett kollabieren (der Brenner allein gart nicht durch). **Gasgrill-Alternative:** direkt über hoher Flamme, Haube zu, 15–20 Min., alle 5 Min. wenden, bis sie zusammenfallen.
 
-**3b. Schälen:** 10 Min. abgedeckt dämpfen lassen, dann Haut abziehen, verkohlte Stücke aussortieren, Fleisch mit den weichen Knoblauchzehen grob hacken (nicht pürieren — Bharta hat Textur). Kurz im Sieb abtropfen lassen.
+**12. Schälen (15 Min.)**
+10 Min. abgedeckt dämpfen lassen, dann Haut abziehen, verkohlte Stücke aussortieren, Fleisch mit den weichen Knoblauchzehen grob hacken (nicht pürieren — Bharta hat Textur). Kurz im Sieb abtropfen lassen.
 
-**3c. Masala:** **2 EL Öl** (Senföl ideal) in der Pfanne, **1 TL Kreuzkümmel ganz** knistern, **1 fein gewürfelte Zwiebel** 6–8 Min. goldbraun. **3 Knoblauchzehen + 2 cm Ingwer** gerieben, 1 Min. **300 g gewürfelte Tomaten, ¼ TL Kurkuma, 1 TL Koriander gemahlen, ¾ TL Salz** — 8–10 Min. einkochen, bis das Öl sich am Rand absetzt.
+**13. Masala (15 Min.)**
+*jederzeit · Herd*
+**2 EL Öl** (Senföl ideal) in der Pfanne, **1 TL Kreuzkümmel ganz** knistern, **1 fein gewürfelte Zwiebel** 6–8 Min. goldbraun. **3 Knoblauchzehen + 2 cm Ingwer** gerieben, 1 Min. **300 g gewürfelte Tomaten, ¼ TL Kurkuma, 1 TL Koriander gemahlen, ¾ TL Salz** — 8–10 Min. einkochen, bis das Öl sich am Rand absetzt.
 
-**3d. Teilen & fertigstellen:** **\~3 EL Masala** in eine kleine Schale → mit **¼ der Aubergine** mischen = **Kinder-Bharta**, Prise Garam Masala, Spritzer Zitrone. In die Pfanne **½ TL Kashmiri-Chili** rühren, restliche Aubergine dazu, 5 Min. unter Rühren braten, bis alles zusammenkommt. **½ TL Garam Masala, 1 EL Zitronensaft, 2 EL Koriandergrün.** Abschmecken — Bharta will Salz und Säure.
+**14. Bharta fertigstellen (8 Min.)**
+*nach Schälen, Masala · Herd*
+Teilen & fertigstellen: **\~3 EL Masala** in eine kleine Schale → mit **¼ der Aubergine** mischen = **Kinder-Bharta**, Prise Garam Masala, Spritzer Zitrone. In die Pfanne **½ TL Kashmiri-Chili** rühren, restliche Aubergine dazu, 5 Min. unter Rühren braten, bis alles zusammenkommt. **½ TL Garam Masala, 1 EL Zitronensaft, 2 EL Koriandergrün.** Abschmecken — Bharta will Salz und Säure.
 
-### 4. Raita & Beilagen (10 Min.)
+**Raita & Beilagen (Kochtag):**
 
+**15. Raita & Beilagen (10 Min.)**
+*jederzeit*
 **250 g Joghurt** mit **½ geriebener, ausgedrückter Salatgurke, ½ TL geröstetem Kreuzkümmel gemahlen, ½ TL Salz** verrühren, kalt stellen. 1 rote Zwiebel in feine Ringe, 10 Min. in Eiswasser. 1 Zitrone in Spalten.
 
-**Optional Vollkorn-Roti (6 Stück, 20 Min.):** 200 g Vollkornmehl + ½ TL Salz + \~130 ml warmes Wasser 5 Min. zu glattem Teig kneten, 15 Min. ruhen, 6 Kugeln dünn (\~15 cm) ausrollen, in trockener, sehr heißer Pfanne 30–40 Sek. pro Seite, bis Blasen kommen; direkt über der Gasflamme oder mit dem Brenner kurz aufpuffen lassen. In ein Tuch stapeln.
+**16. Vollkorn-Roti (20 Min.)**
+*jederzeit · Herd*
+Optional, 6 Stück: 200 g Vollkornmehl + ½ TL Salz + \~130 ml warmes Wasser 5 Min. zu glattem Teig kneten, 15 Min. ruhen, 6 Kugeln dünn (\~15 cm) ausrollen, in trockener, sehr heißer Pfanne 30–40 Sek. pro Seite, bis Blasen kommen; direkt über der Gasflamme oder mit dem Brenner kurz aufpuffen lassen. In ein Tuch stapeln.
 
-### 5. Hähnchen grillen (Zwei-Zonen, 40–50 Min.)
+**Hähnchen grillen (Kochtag, Zwei-Zonen, 40–50 Min.):**
 
-**5a. Grill vorheizen:** eine Seite Brenner hoch, andere aus/niedrig → **indirekte Zone \~200 °C Haubenthermometer.** Rost der indirekten Zone ölen. Fleisch 30 Min. vorher aus dem Kühlschrank; grobe Marinade abstreifen, was haftet, bleibt dran.
+**17. Grill vorheizen (15 Min.)**
+*jederzeit · Grill*
+Eine Seite Brenner hoch, andere aus/niedrig → **indirekte Zone \~200 °C Haubenthermometer.** Rost der indirekten Zone ölen. Fleisch 30 Min. vorher aus dem Kühlschrank; grobe Marinade abstreifen, was haftet, bleibt dran.
 
-**5b. Indirekt garen:** Fleisch in die **indirekte Zone**, Haube zu, **35–40 Min.**, nach 20 Min. wenden. Kinder-Keulen mit an den Rand — sie garen genauso, nur ohne Chili. Der Joghurt bildet eine Kruste, die das Fleisch schützt.
+**18. Indirekt garen (35–40 Min., passiv)**
+*nach Grill vorheizen, Marinieren · Grill*
+Fleisch in die **indirekte Zone**, Haube zu, **35–40 Min.**, nach 20 Min. wenden. Kinder-Keulen mit an den Rand — sie garen genauso, nur ohne Chili. Der Joghurt bildet eine Kruste, die das Fleisch schützt.
 
-**5c. Röstkanten:** Stücke für **3–4 Min. pro Seite in die direkte Zone**, bis die Kruste dunkel gefleckt ist (Joghurt-Zucker karamellisiert, verkohlt aber schnell — dranbleiben). Wer mag: mit 1 TL Ghee bepinseln.
+**19. Röstkanten (8 Min.)**
+*Grill*
+Stücke für **3–4 Min. pro Seite in die direkte Zone**, bis die Kruste dunkel gefleckt ist (Joghurt-Zucker karamellisiert, verkohlt aber schnell — dranbleiben). Wer mag: mit 1 TL Ghee bepinseln.
 
-**5d. Gar-Check — Pflicht:** Thermometer am Knochen entlang in den dicksten Oberschenkel: **≥ 75 °C**; bei Keulen mit Knochen ist 80–85 °C texturmäßig sogar besser (wie beim Poulet au vinaigre). Saft klar, kein Rosa am Knochen. **Jedes Stück der Kinder-Charge separat messen** — kleine Stücke sind schneller, große langsamer. 5 Min. ruhen.
+**20. Gar-Check (5 Min.)**
+*fertig bei ≥ 75 °C Kern*
+Pflicht: Thermometer am Knochen entlang in den dicksten Oberschenkel: **≥ 75 °C**; bei Keulen mit Knochen ist 80–85 °C texturmäßig sogar besser (wie beim Poulet au vinaigre). Saft klar, kein Rosa am Knochen. **Jedes Stück der Kinder-Charge separat messen** — kleine Stücke sind schneller, große langsamer. 5 Min. ruhen.
 
 **Ofen-Alternative (Swasthi-Route):** 240 °C Ober-/Unterhitze, Fleisch auf einem Gitter über einem Blech, **15 Min., wenden, weitere 12–15 Min.**, dann 3–4 Min. Grillfunktion oder mit dem Küchenbrenner die Kanten anrösten. Thermometer wie oben.
 
-### 6. Anrichten
-
+**21. Anrichten (ca. 5 Min.)**
+*nach Gar-Check, Tadka Erwachsene, Tadka Kind, Bharta fertigstellen, Raita & Beilagen*
 Pro Teller: 2 Stücke Hähnchen, **\~150 g Dal** (eine gute Kelle), 3 EL Bharta, 2 EL Raita, Zwiebelringe, Zitronenspalte, Koriander. Optional ein Roti. Kinderteller: die milde Keule, Kinder-Dal, Kinder-Bharta, Raita.
 
 ## Zeitplan
 
-**Vortag (abends, 30 Min. + Wartezeit):**
-- Fleisch enthäuten, einschneiden, erste Marinade → 30–60 Min.
-- Joghurt-Marinade, Kinder-Charge abzweigen, Chili in den Rest → Kühlschrank
-- Toor Dal kann schon eingeweicht werden (im Kühlschrank, bis 12 Std.)
+- Vorabend: 30 Min. + Wartezeit · Enthäuten & einschneiden, erste Marinade → 30–60 Min. · Joghurt-Marinade, Kinder-Abzweigung, Erwachsenen-Charge (Chili in den Rest) → Kühlschrank (Marinieren) · Toor Dal kann schon eingeweicht werden (im Kühlschrank, bis 12 Std.)
 
-**Kochtag:**
-- **–2:00** Dal aufsetzen (läuft nebenher). Auberginen abflämmen, in den Ofen
-- **–1:30** Auberginen schälen, hacken. Bharta-Masala kochen, teilen, fertigstellen. Raita. Roti-Teig (optional)
-- **–1:00** Fleisch aus dem Kühlschrank. Grill vorheizen
-- **–0:50** Fleisch indirekt auf den Grill
-- **–0:30** Dal teilen, beide Tadkas machen. Roti ausbacken
-- **–0:12** Fleisch in die direkte Zone, Kanten rösten, **messen**
-- **–0:05** Ruhen. Zwiebelringe abtropfen, Zitronen
-- **0:00** Anrichten
+| Zeit | Schritt |
+|---|---|
+| T−2:00 | Dal aufsetzen (läuft nebenher). Auberginen abflämmen, in den Ofen |
+| T−1:30 | Auberginen schälen, hacken. Bharta-Masala kochen, teilen, fertigstellen. Raita. Roti-Teig (optional) |
+| T−1:00 | Fleisch aus dem Kühlschrank. Grill vorheizen |
+| T−0:50 | Fleisch indirekt auf den Grill |
+| T−0:30 | Dal teilen, beide Tadkas machen. Roti ausbacken |
+| T−0:12 | Fleisch in die direkte Zone, Kanten rösten, **messen** |
+| T−0:05 | Ruhen. Zwiebelringe abtropfen, Zitronen |
+| T−0 | Anrichten |
 
 ## Schwangerschaft & GDM
 
 - **Dal ist die Beilage, nicht Reis oder Naan — mit Absicht.** 150 g gekochter Toor/Masoor Dal ≈ 20 g KH bei niedrigem GI (Hülsenfrucht, \~30 laut internationalen GI-Tabellen) + 8 g Protein + Ballaststoffe; die gleiche Menge Basmati wären 40 g schnelle KH. Optional 1 Vollkorn-Roti (\~33 g Mehl ≈ 20 g KH, GI mittel). **Portion pro Mahlzeit: 150 g Dal + 0–1 Roti = 20–40 g KH**, gepaart mit viel Protein (Hähnchen, Joghurt) und Fett (Ghee) — genau die gedämpfte Kombination aus dem Leitfaden. Wer 2 Rotis will: dann 100 g Dal.
-- **Durchgegart:** Hähnchen ≥ 75 °C am Knochen, jedes Stück gemessen (Schritt 5d). Joghurt aus dem Kühlregal ist pasteurisiert; nach 24 Std. mit rohem Fleisch in Kontakt gewesen → Restmarinade **nicht** als Sauce verwenden (klassisch nicht üblich, hier zusätzlich ausgeschlossen).
+- **Durchgegart:** Hähnchen ≥ 75 °C am Knochen, jedes Stück gemessen (siehe „Gar-Check“). Joghurt aus dem Kühlregal ist pasteurisiert; nach 24 Std. mit rohem Fleisch in Kontakt gewesen → Restmarinade **nicht** als Sauce verwenden (klassisch nicht üblich, hier zusätzlich ausgeschlossen).
 - **Kein Alkohol, kein Ei, keine kritischen Zutaten.** Hing/Asafoetida ist in Kochmengen unbedenklich; wer sicher sein will, lässt es weg (macht wenig Unterschied).
 - **Senföl:** in der EU als „nur zur äußerlichen Anwendung" deklariert (Erucasäure) — 3 EL auf 1,5 kg Fleisch sind unbedenklich, aber wer Bedenken hat, nimmt neutrales Öl; Geschmacksverlust gering.
 - **Nach dem Essen:** Spaziergang; Dal-Reste am nächsten Tag sind die ideale Zwischenmahlzeit (Leitfaden-Regel 5).
