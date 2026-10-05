@@ -57,7 +57,7 @@ für Testläufe (Gang 2, Parfait) die jeweiligen Posten einzeln herauspicken.*
 
 ### Online / Weinhandel / Specialty-Röster (vorab bestellen)
 
-- [ ] Verjus, 500 ml — Gang 2 (110 ml) + optional Jus Gang 3 (150 ml) *(Weinhandel oder online, \~8–12 €; vielseitig: Vinaigretten, Poulet au vinaigre)*
+- [ ] 500 ml Verjus — Gang 2 (110 ml) + optional Jus Gang 3 (150 ml) *(Weinhandel oder online, \~8–12 €; vielseitig: Vinaigretten, Poulet au vinaigre)*
 - [ ] Espressobohnen **entkoffeiniert**, 250 g, Specialty-Röster (Swiss-Water- oder CO2-Verfahren, dunklere Röstung) — Gang 4 *(billiger Decaf schmeckt flach/sauer — zeigt sich vor allem im Shakerato)*
 - [ ] Instant-Espressopulver **entkoffeiniert**, klein — Gang 4 *(Nescafé Gold/Lavazza Dek; Fallback: 1 TL sehr fein gemahlener Decaf)*
 
@@ -74,52 +74,54 @@ für Testläufe (Gang 2, Parfait) die jeweiligen Posten einzeln herauspicken.*
 ### REWE Center
 
 **Obst & Gemüse:**
-- [ ] Cherry-/Datteltomaten, 150 g — Concassé Gang 1
-- [ ] Limetten, 4 Stück — Gang 1 + 2
-- [ ] Zitronen, 2 Stück — Gang 3 (Püree + Lamm-Abrieb)
+- [ ] 150 g Cherry-/Datteltomaten — Concassé Gang 1
+- [ ] 4 Stück Limetten — Gang 1 + 2
+- [ ] 2 Stück Zitronen — Gang 3 (Püree + Lamm-Abrieb)
 - [ ] Mango, reif, 1 Stück — Gang 2
 - [ ] Ingwer, kleines Stück — Gang 2
-- [ ] Schalotten, 3 Stück — Gang 2
+- [ ] 3 Stück Schalotten — Gang 2
 - [ ] Zwiebel (150 g) + 1 Karotte — Jus Gang 3
 - [ ] Knollensellerie, 1 große Knolle (\~1,2 kg) — Gang 3: Püree + Chips + Jus
-- [ ] Rosenkohl, 700 g — Gang 3
-- [ ] Knoblauch, 1 Knolle — Gang 3
+- [ ] 700 g Rosenkohl — Gang 3
+- [ ] 1 Knolle Knoblauch — Gang 3
 - [ ] Petersilie, Schnittlauch, Thymian, Rosmarin (je 1 Bund/Töpfchen) — Gang 2 + 3
-- [ ] Basilikum, 1 Töpfchen — Garnitur Gang 1
+- [ ] 1 Töpfchen Basilikum — Garnitur Gang 1
 
 **Kühltheke / Milchprodukte:**
-- [ ] Butter, 500 g (2 × 250 g) — Gang 2 (\~220 g) + Gang 3 (\~90 g) + Gang 4 (30 g)
+- [ ] 500 g (2 × 250 g) Butter — Gang 2 (\~220 g) + Gang 3 (\~90 g) + Gang 4 (30 g)
 - [ ] Ziegenfrischkäse, **mild, pasteurisiert**, 150 g — Gang 2 *(z. B. Chavroux; Petit Billy falls da — kräftig-rustikale Sorten (Caprinsäure) dominieren den feinen Kaisergranat; Etikett auf pasteurisierte Milch prüfen)*
-- [ ] Sahne, 500 ml — Gang 4 (300 ml) + Beurre-blanc-Stabilisierung
-- [ ] Vollmilch, 1 L — Püree Gang 3
+- [ ] 500 ml Sahne — Gang 4 (300 ml) + Beurre-blanc-Stabilisierung
+- [ ] 1 L Vollmilch — Püree Gang 3
 - [ ] Eier, 6 Stück — Gang 4 (4 Eigelb; Eiweiß-Verwertung einplanen)
 
 **Trockenwaren:**
-- [ ] Walnüsse, 100 g — Gang 2 (Praline 30 g + Crumble 50 g)
-- [ ] Agar-Agar, 1 Päckchen — Gang 2 *(Bio-/Backregal; Fallback: Chutney-Variante ohne Agar)*
+- [ ] 100 g Walnüsse — Gang 2 (Praline 30 g + Crumble 50 g)
+- [ ] 1 Päckchen Agar-Agar — Gang 2 *(Bio-/Backregal; Fallback: Chutney-Variante ohne Agar)*
 - [ ] Kakaonibs, klein — Gang 4 *(Bio-Regal; Fallback: Zartbitter 70 %+ gehackt)*
-- [ ] Dextrose (Traubenzucker), 25 g — Gang 4 *(Vorrat aus `eis/` prüfen)*
-- [ ] Brauner Zucker, 500 g — Gang 4 *(falls kein Vorrat)*
+- [ ] 25 g Dextrose (Traubenzucker) — Gang 4 *(Vorrat aus `eis/` prüfen)*
+- [ ] 500 g Brauner Zucker — Gang 4 *(falls kein Vorrat)*
 
 **Getränke / Spirituosen:**
 - [ ] Rotwein, kräftig, 1 Flasche — Jus Gang 3 (300 ml, wird in Schüben trocken reduziert) *(alkoholfreie Option: 150 ml Verjus + 150 ml Wasser)*
 - [ ] Wodka, kleine Flasche — **nur Espresso-Martini-Schuss** Gang 4 (\~15 ml pro Trinker) *(neutraler 40%er reicht)*
 - [ ] Kahlúa o. ä. Kaffeelikör, klein — **nur Schuss** Gang 4 (\~10 ml pro Trinker)
-- [ ] Frittieröl, 1–2 L — Chips Gang 3
+- [ ] 1–2 L Frittieröl — Chips Gang 3
 
 **Gewürze:**
-- [ ] Selleriesalz, 1 Glas — Gang 1
+- [ ] 1 Glas Selleriesalz — Gang 1
 - [ ] Weißer Pfeffer, ganz — Gang 1 + 2 *(falls kein Vorrat — kein schwarzer: sichtbare Punkte)*
 
 ### Vorrat prüfen
 
+- [x] 2 kg Tomaten — Gang 1 *(für das Tomatenwasser, erledigt 09/2026)*
 - [x] Tomatenwasser — Gang 1: **beide Klärwege (Püree-Block + klares Wasser) liegen seit 09/2026 im Gefrierfach**
 - [ ] Worcestershire-Sauce — Gang 1
 - [ ] Mildes Chiliöl — Gang 1 *(oder selbst ansetzen → Chili-Öl-Drill in `technik/mini-projekte.md`)*
 - [ ] Weißweinessig — Gang 2
 - [ ] Butterschmalz — Gang 2 + 3
-- [ ] Gelatine, 1 Blatt — Gang 3, nur als Option für die Block-Bindung
+- [ ] 1 Blatt Gelatine — Gang 3, nur als Option für die Block-Bindung
 - [ ] Zucker (auch für 1:1-Zuckersirup, Shakerato), Panko oder Mehl, Honig, Muskat, Tomatenmark, Lorbeer — Kleinmengen
+- [x] Salz, Öl (neutral, zum Anbraten)
 
 ## Rezepte
 
@@ -129,57 +131,80 @@ für Testläufe (Gang 2, Parfait) die jeweiligen Posten einzeln herauspicken.*
 09/2026** | Am Abend: \~15 Min. | Pro Portion: 60–70 ml | Equipment:
 Passiertuch (doppelt), feines Sieb, Gefrierbeutel*
 
-**Saison-Teil (erledigt — zur Referenz fürs nächste Jahr):**
+**Tomatenwasser-Basis (Saison-Teil, erledigt 09/2026, Gefrierfach):**
 
-1. 2 kg vollreife Tomaten (fleischige Salatsorten + \~500 g aromatische
-   Cherry-/Datteltomaten) grob würfeln, mit 7 g Salz (3,5 g/kg) mischen.
-2. Nur **kurz pulsierend** mixen — grob-pulpig, nicht fein! Zu feines Mixen
-   zermahlt die Kerne (Bitterstoffe) und erzeugt Trübstoffe, die durchs Tuch gehen.
-   *(Bewusst wenig Salz: es wandert komplett ins Wasser — 5 g/kg ergäbe bereits
-   \~1,4 % Salzgehalt; final wird im November hochgesalzen, nicht umgekehrt.)*
-3. **Weg A — Gefrierklärung (Empfehlung, im Testlauf bestätigen):** Die Hälfte
-   des gesalzenen Rohpürees (\~1 kg) direkt flach im Gefrierbeutel einfrieren.
-   Klärung passiert erst im November beim Auftauen (Schritt 5) — Eiskristalle
-   schließen die Zellen auf: kristallklarer + höhere Ausbeute.
-4. **Weg B — klassisch:** Die andere Hälfte über Nacht (12 h) im doppelten
-   Passiertuch über einer Schüssel im Kühlschrank abtropfen lassen — **nicht
-   pressen, nicht rühren** (wird trüb). Ausbeute \~300–400 ml/kg. Das klare
-   Wasser randvoll (Oxidation) einfrieren.
+**1. Tomaten salzen (ca. 15 Min.)**
+*jederzeit*
+2 kg vollreife Tomaten (fleischige Salatsorten + \~500 g aromatische
+Cherry-/Datteltomaten) grob würfeln, mit 7 g Salz (3,5 g/kg) mischen.
 
-**Im November — Vortage:**
+**2. Kurz mixen**
+Nur **kurz pulsierend** mixen — grob-pulpig, nicht fein! Zu feines Mixen
+zermahlt die Kerne (Bitterstoffe) und erzeugt Trübstoffe, die durchs Tuch gehen.
+*(Bewusst wenig Salz: es wandert komplett ins Wasser — 5 g/kg ergäbe bereits
+\~1,4 % Salzgehalt; final wird im November hochgesalzen, nicht umgekehrt.)*
 
-5. **Weg A:** Gefrorenen Püree-Block **2 Tage vor dem Abend** ins doppelte
-   Passiertuch über ein Sieb legen und im Kühlschrank 24–48 h auftauen lassen —
-   es tropft kristallklares Tomatenwasser ab (Drip-Thaw). Nicht drücken.
-   **Weg B:** Beutel am Vortag langsam im Kühlschrank auftauen, **nicht
-   schütteln**; vorsichtig vom Sediment dekantieren, notfalls durch
-   Kaffeefilter nachfiltern.
+**3. Weg A: Püree einfrieren**
+**Weg A — Gefrierklärung (Empfehlung, im Testlauf bestätigen):** Die Hälfte des
+gesalzenen Rohpürees (\~1 kg) direkt flach im Gefrierbeutel einfrieren. Klärung
+passiert erst im November beim Auftauen (Schritt 5) — Eiskristalle schließen die
+Zellen auf: kristallklarer + höhere Ausbeute.
 
-**Am Abend:**
+**4. Weg B: abtropfen und einfrieren (12 h, passiv)**
+*nach Kurz mixen*
+**Weg B — klassisch:** Die andere Hälfte über Nacht (12 h) im doppelten
+Passiertuch über einer Schüssel im Kühlschrank abtropfen lassen — **nicht
+pressen, nicht rühren** (wird trüb). Ausbeute \~300–400 ml/kg. Das klare Wasser
+randvoll (Oxidation) einfrieren.
 
-6. Grundwürzung **1–2 h vor Service** auf \~350 ml Tomatenwasser: 6–8 Tropfen
-   Worcestershire (**tropfenweise — trübt!**), 2 Prisen Selleriesalz (\~0,5 g),
-   1 Umdrehung weißer Pfeffer. Kalt ziehen lassen — dabei setzen sich die
-   Worcestershire-Schwebstoffe am Boden ab.
-   **Vorher \~60 ml für die Kinder-Portion abzweigen** (nur Mini-Prise Salz).
-7. **Bei Serviertemperatur abschmecken, nie bei Raumtemperatur:** Kälte dämpft
-   Umami und Salz-Wahrnehmung deutlich — kalt muss es einen Tick kräftiger
-   gewürzt sein, als sich „richtig“ anfühlt. Wirkt es ungewürzt fad/blass:
-   normal, erst würzen, dann urteilen.
-8. Concassé: 100 g Cherry-/Datteltomaten kreuzweise einritzen, 10–15 Sek.
-   blanchieren, Eiswasser, häuten, entkernen, 3–4-mm-Würfel. **Erst kurz vor
-   dem Servieren** mit 1 Prise Salz würzen (zieht sonst Wasser).
-9. Kurz vor dem Ausgießen: 10 ml Limettensaft **vorsichtig oben einrühren**
-   (das abgesetzte Sediment am Boden nicht aufwirbeln), abschmecken, ggf. auf
-   max. 15 ml erhöhen (Bún-chả-Learning: Säure dominiert schnell — vorsichtig).
-10. Anrichten: vorgekühlte Gläser/Espressotassen (kein Eis — verwässert),
-    je 1 TL Concassé, 60–70 ml Tomatenwasser angießen — vom Sediment weg,
-    der letzte Schluck bleibt im Gefäß. Pro Erwachsenen-Glas
-    2–3 Tropfen mildes Chiliöl (schwimmt als glänzende Perlen — Schärfe kurz
-    und präzise). Basilikumspitze oder zartes Selleriegrün aufsetzen;
-    alternativ 2 Tropfen Kräuteröl (→ `technik/mini-projekte.md`, größter
-    Optik-Hebel). *(Der früher optionale Fino-Sherry ist gestrichen —
-    Schwangerschaft, und das Dritt-Feedback votierte ohnehin für „rein“.)*
+**Tomatenwasser auftauen (2 Tage vor dem Abend, Kühlschrank):**
+
+**5. Auftauen und klären (24–48 h, passiv)**
+*jederzeit · 2 Tage vor dem Gang*
+**Weg A:** Gefrorenen Püree-Block **2 Tage vor dem Abend** ins doppelte
+Passiertuch über ein Sieb legen und im Kühlschrank 24–48 h auftauen lassen — es
+tropft kristallklares Tomatenwasser ab (Drip-Thaw). Nicht drücken. **Weg B:**
+Beutel am Vortag langsam im Kühlschrank auftauen, **nicht schütteln**;
+vorsichtig vom Sediment dekantieren, notfalls durch Kaffeefilter nachfiltern.
+
+**Tomatenwasser würzen und anrichten (am Abend):**
+
+**6. Grundwürzung (ca. 5 Min.)**
+*1–2 h vor Service*
+Grundwürzung **1–2 h vor Service** auf \~350 ml Tomatenwasser: 6–8 Tropfen
+Worcestershire (**tropfenweise — trübt!**), 2 Prisen Selleriesalz (\~0,5 g), 1
+Umdrehung weißer Pfeffer. Kalt ziehen lassen — dabei setzen sich die
+Worcestershire-Schwebstoffe am Boden ab. **Vorher \~60 ml für die Kinder-Portion
+abzweigen** (nur Mini-Prise Salz).
+
+**7. Kalt abschmecken (ca. 3 Min.)**
+**Bei Serviertemperatur abschmecken, nie bei Raumtemperatur:** Kälte dämpft
+Umami und Salz-Wahrnehmung deutlich — kalt muss es einen Tick kräftiger gewürzt
+sein, als sich „richtig“ anfühlt. Wirkt es ungewürzt fad/blass: normal, erst
+würzen, dann urteilen.
+
+**8. Concassé (ca. 15 Min.)**
+*jederzeit · Herd · ergibt Concassé*
+Concassé: 100 g Cherry-/Datteltomaten kreuzweise einritzen, 10–15 Sek.
+blanchieren, Eiswasser, häuten, entkernen, 3–4-mm-Würfel. **Erst kurz vor dem
+Servieren** mit 1 Prise Salz würzen (zieht sonst Wasser).
+
+**9. Limette einrühren (ca. 2 Min.)**
+*nach Kalt abschmecken*
+Kurz vor dem Ausgießen: 10 ml Limettensaft **vorsichtig oben einrühren** (das
+abgesetzte Sediment am Boden nicht aufwirbeln), abschmecken, ggf. auf max. 15 ml
+erhöhen (Bún-chả-Learning: Säure dominiert schnell — vorsichtig).
+
+**10. Anrichten (ca. 5 Min.)**
+*nach Limette einrühren, Concassé · Technik: technik/mini-projekte.md#kraeuteroel*
+Anrichten: vorgekühlte Gläser/Espressotassen (kein Eis — verwässert), je 1 TL
+Concassé, 60–70 ml Tomatenwasser angießen — vom Sediment weg, der letzte Schluck
+bleibt im Gefäß. Pro Erwachsenen-Glas 2–3 Tropfen mildes Chiliöl (schwimmt als
+glänzende Perlen — Schärfe kurz und präzise). Basilikumspitze oder zartes
+Selleriegrün aufsetzen; alternativ 2 Tropfen Kräuteröl (→
+`technik/mini-projekte.md`, größter Optik-Hebel). *(Der früher optionale
+Fino-Sherry ist gestrichen — Schwangerschaft, und das Dritt-Feedback votierte
+ohnehin für „rein“.)*
 
 **Kind (3 J.):** eigenes Glas aus der Abzweigung (Schritt 6) — ohne Chiliöl
 und Worcestershire, mit Concassé und Basilikum. Oder auslassen.
@@ -226,86 +251,130 @@ Rotgarnelen sind eine andere Art und schmecken anders.
 
 **Mango-Gel (bis 2 Tage vorher, ideal am Vortag — Agar nässt ab Tag 3):**
 
-1. Fruchtfleisch von 1 reifer Mango (\~300 g) mit 1–2 EL Zucker, 5 g fein
-   geriebenem Ingwer und 2 EL Wasser 5–10 Min. weich kochen. Glatt mixen,
-   durch das feine Sieb streichen → \~250 ml Masse. Abkühlen lassen.
-   **Kein Chili** — der Gel-Rest wird Kinder-Dessert (s. unten).
-2. 2 g Agar-Agar (Feinwaage — 0,8 %, ±0,5 g verändert die Textur deutlich!)
-   in die **kalte** Masse einmixen (Stabmixer, gegen Klümpchen), dann unter
-   Rühren aufkochen und 2–3 Min. sprudelnd kochen (volle Hydratation).
-3. Vom Herd: Saft von ½ Limette + 1 Prise Salz einrühren — **Säure erst nach
-   dem Kochen** (mitgekocht schwächt sie das Agar-Gel). Das Gel soll solo
-   süß-sauer-hell schmecken, nicht bonbonsüß.
-4. Flach ausgießen, 1–2 h kalt fest werden lassen. Würfeln, 1–3 Min. glatt
-   mixen, durch das feine Sieb → Spritzflasche, kühl lagern. Vor dem Anrichten
-   kurz durchschütteln, falls sich Flüssigkeit abgesetzt hat.
-   *(Fallback ohne Agar: Masse dick einkochen und glatt mixen — Chutney-Nocken
-   statt präziser Punkte.)*
+**1. Mango kochen (5–10 Min.)**
+*Herd*
+Fruchtfleisch von 1 reifer Mango (\~300 g) mit 1–2 EL Zucker, 5 g fein
+geriebenem Ingwer und 2 EL Wasser 5–10 Min. weich kochen. Glatt mixen, durch das
+feine Sieb streichen → \~250 ml Masse. Abkühlen lassen. **Kein Chili** — der
+Gel-Rest wird Kinder-Dessert (s. unten).
 
-**Walnusscrumble (Vortag):**
+**2. Agar einmixen und aufkochen (ca. 4–6 Min.)**
+*Herd*
+2 g Agar-Agar (Feinwaage — 0,8 %, ±0,5 g verändert die Textur deutlich!) in die
+**kalte** Masse einmixen (Stabmixer, gegen Klümpchen), dann unter Rühren
+aufkochen und 2–3 Min. sprudelnd kochen (volle Hydratation).
 
-5. 50 g Walnüsse grob gehackt mit 20 g Butter, 20 g Panko, ½ TL Honig und
-   1 Prise Salz mischen, bei 160 °C (oder in der Pfanne) goldbraun und
-   **vollständig trocken** rösten. Komplett auskühlen lassen, luftdicht bei
-   **Raumtemperatur** lagern — nicht im Kühlschrank (Kondensfeuchte).
+**3. Säure einrühren (ca. 2 Min.)**
+Vom Herd: Saft von ½ Limette + 1 Prise Salz einrühren — **Säure erst nach dem
+Kochen** (mitgekocht schwächt sie das Agar-Gel). Das Gel soll solo
+süß-sauer-hell schmecken, nicht bonbonsüß.
+
+**4. Gel fest werden lassen und mixen (1–2 h, passiv)**
+Flach ausgießen, 1–2 h kalt fest werden lassen. Würfeln, 1–3 Min. glatt mixen,
+durch das feine Sieb → Spritzflasche, kühl lagern. Vor dem Anrichten kurz
+durchschütteln, falls sich Flüssigkeit abgesetzt hat. *(Fallback ohne Agar:
+Masse dick einkochen und glatt mixen — Chutney-Nocken statt präziser Punkte.)*
+
+**Walnusscrumble (Vortag, Raumtemperatur):**
+
+**5. Crumble rösten (ca. 10–15 Min.)**
+*jederzeit · Ofen 160 °C*
+50 g Walnüsse grob gehackt mit 20 g Butter, 20 g Panko, ½ TL Honig und 1 Prise
+Salz mischen, bei 160 °C (oder in der Pfanne) goldbraun und **vollständig
+trocken** rösten. Komplett auskühlen lassen, luftdicht bei **Raumtemperatur**
+lagern — nicht im Kühlschrank (Kondensfeuchte).
 
 **Ziegenkäse-Pralinen (Vortag formen, Wälzen erst am Abend):**
 
-6. 120 g **milden, pasteurisierten** Ziegenfrischkäse (s. Einkaufsliste) mit
-   1 TL Honig (nicht mehr — Masse wird klebrig, Süße kommt am Teller vom Gel)
-   und Pfeffer verkneten. 5 Kugeln à \~25 g formen — 10–15 Min. anfrieren
-   macht das Rollen sauber. Kalt lagern.
-7. Wälzmischung bereitstellen: 30 g Walnüsse fein gehackt + 2 EL fein gehackte
-   Kräuter (Petersilie, Schnittlauch, etwas Thymian).
-8. **Erst ≤30 Min. vor dem Anrichten** wälzen (Panade zieht sonst Feuchtigkeit),
-   dann Zimmertemperatur annehmen lassen. Noch sicherer: gar nicht wälzen,
-   Praline aufs Crumble-Bett setzen und Wälzmischung darüber streuen.
+**6. Pralinen formen (ca. 10 Min.)**
+*jederzeit*
+120 g **milden, pasteurisierten** Ziegenfrischkäse (s. Einkaufsliste) mit 1 TL
+Honig (nicht mehr — Masse wird klebrig, Süße kommt am Teller vom Gel) und
+Pfeffer verkneten. 5 Kugeln à \~25 g formen — 10–15 Min. anfrieren macht das
+Rollen sauber. Kalt lagern.
 
-**Kaisergranat vorbereiten (Vortag auftauen, am Tag auslösen):**
+**7. Wälzmischung (ca. 5 Min.)**
+Wälzmischung bereitstellen: 30 g Walnüsse fein gehackt + 2 EL fein gehackte
+Kräuter (Petersilie, Schnittlauch, etwas Thymian).
 
-9. 12 Kaisergranat **über Nacht im Kühlschrank** auftauen (nie warm, nie im
-   Wasser — laugt aus).
-10. Am Tag: Köpfe abdrehen; Schwanz mit der Küchenschere an der Bauchseite
-    längs aufschneiden, Fleisch herausheben, den dunklen Darmfaden ziehen.
-    Köpfe und Schalen einfrieren — beste Basis für eine Bisque
-    (→ `gerichte/hummerbisque.md`).
-11. Schwänze sehr gründlich trockentupfen und **1–2 h offen auf
-    Gitter/Küchenpapier im Kühlschrank antrocknen** — Feuchtigkeit ist der
-    Feind der Kruste, TK-Ware zieht besonders Wasser.
+**8. Pralinen wälzen (ca. 5 Min.)**
+*jederzeit · ≤ 30 Min. vor dem Anrichten · ergibt Pralinen gewälzt · hält bis 30 Min.*
+**Erst ≤30 Min. vor dem Anrichten** wälzen (Panade zieht sonst Feuchtigkeit),
+dann Zimmertemperatur annehmen lassen. Noch sicherer: gar nicht wälzen, Praline
+aufs Crumble-Bett setzen und Wälzmischung darüber streuen.
 
-**Verjus-Limetten-Beurre-blanc (\~20 Min. vor dem Gang):**
+**Kaisergranat vorbereiten (Vortag auftauen, am Tag auslösen, Kühlschrank):**
 
-12. 2 Schalotten (\~60 g) fein würfeln, mit 110 ml Verjus und 25 ml
-    Weißweinessig auf \~3 EL sirupös einreduzieren. *(Verjus ersetzt Weißwein +
-    Noilly Prat 1:1 — gleiche Säure- und Fruchtrolle, kein Alkohol. Fallback
-    ohne Verjus: 60 ml Weißweinessig + 60 ml Wasser + 1 TL Zucker.)*
-13. 2 EL Sahne einkochen — stabilisiert die Emulsion spürbar
-    (→ Beurre-blanc-Baustein in `technik/mini-projekte.md`).
-14. Bei kleinster Hitze 170 g eiskalte Butter würfelweise einschlagen — nächstes
-    Stück erst, wenn das vorige emulgiert ist. **Nie über \~58 °C, nie kochen**
-    (Thermometer!). Durch das feine Sieb passieren, salzen.
-    Ergibt \~240 ml → 5 Spiegel à 35–40 ml + Reserve.
-15. Warm halten bei 50–55 °C (Wasserbad; oder vorgewärmte Thermoskanne — hält
-    bis 2 h). **Erst unmittelbar vor dem Anrichten**, vom Herd: Abrieb 1 Limette
-    + 2 TL Saft einrühren, tropfenweise bis max. 3 TL abschmecken — Zitrus-Öle
-    sind hitzeflüchtig, und Limette ist aggressiver als Zitrone.
-    *(Gebrochen? → Emulsions-Notfall in `technik/abschmecken.md`.)*
+**9. Kaisergranat auftauen (über Nacht, passiv)**
+*jederzeit*
+12 Kaisergranat **über Nacht im Kühlschrank** auftauen (nie warm, nie im Wasser
+— laugt aus).
+
+**10. Kaisergranat auslösen (20 Min. Schwänze auslösen)**
+Am Tag: Köpfe abdrehen; Schwanz mit der Küchenschere an der Bauchseite längs
+aufschneiden, Fleisch herausheben, den dunklen Darmfaden ziehen. Köpfe und
+Schalen einfrieren — beste Basis für eine Bisque (→ `gerichte/hummerbisque.md`).
+
+**11. Schwänze antrocknen (ca. 5 Min.)**
+*ergibt Schwänze angetrocknet · hält 1–2 h*
+Schwänze sehr gründlich trockentupfen und **1–2 h offen auf Gitter/Küchenpapier
+im Kühlschrank antrocknen** — Feuchtigkeit ist der Feind der Kruste, TK-Ware
+zieht besonders Wasser.
+
+**Verjus-Limetten-Beurre-blanc (\~20 Min. vor dem Gang, hält bis 2 h warm bei 50–55 °C):**
+
+**12. Reduktion (ca. 6–8 Min.)**
+*jederzeit · Herd*
+2 Schalotten (\~60 g) fein würfeln, mit 110 ml Verjus und 25 ml Weißweinessig
+auf \~3 EL sirupös einreduzieren. *(Verjus ersetzt Weißwein + Noilly Prat 1:1 —
+gleiche Säure- und Fruchtrolle, kein Alkohol. Fallback ohne Verjus: 60 ml
+Weißweinessig + 60 ml Wasser + 1 TL Zucker.)*
+
+**13. Sahne einkochen (ca. 1 Min.)**
+*Herd · Technik: technik/mini-projekte.md#beurre-blanc*
+2 EL Sahne einkochen — stabilisiert die Emulsion spürbar (→
+Beurre-blanc-Baustein in `technik/mini-projekte.md`).
+
+**14. Butter montieren (ca. 5–7 Min.)**
+*Herd*
+Bei kleinster Hitze 170 g eiskalte Butter würfelweise einschlagen — nächstes
+Stück erst, wenn das vorige emulgiert ist. **Nie über \~58 °C, nie kochen**
+(Thermometer!). Durch das feine Sieb passieren, salzen. Ergibt \~240 ml → 5
+Spiegel à 35–40 ml + Reserve.
+
+**15. Warm halten und Limette (ca. 2 Min.)**
+*Technik: technik/abschmecken.md#emulsions-notfall*
+Warm halten bei 50–55 °C (Wasserbad; oder vorgewärmte Thermoskanne — hält bis 2
+h). **Erst unmittelbar vor dem Anrichten**, vom Herd: Abrieb 1 Limette + 2 TL
+Saft einrühren, tropfenweise bis max. 3 TL abschmecken — Zitrus-Öle sind
+hitzeflüchtig, und Limette ist aggressiver als Zitrone. *(Gebrochen? →
+Emulsions-Notfall in `technik/abschmecken.md`.)*
 
 **Kaisergranat braten (à la minute):**
 
-16. Teller vorwärmen (nicht heiß — Praline!). Schwänze **erst direkt vor dem
-    Braten** salzen.
-17. 2 Pfannen mit je 1 EL Butterschmalz sehr heiß werden lassen (leicht
-    rauchend). 5–6 Schwänze pro Pfanne mit Abstand — zwei Pfannen parallel
-    schlagen zwei Chargen, Kaisergranat verzeiht kein Warten.
-18. 45–60 Sek. braten ohne zu bewegen (Röstfarbe), wenden, je 15 g Butter
-    zugeben und 45–60 Sek. arrosieren. **Bei 60–62 °C Kern raus** (Fühler längs
-    in den dicksten Teil) → Carryover auf \~63–65 °C: durchgehend opak,
-    fest-saftig — das ist „durchgegart“ im Sinne der Schwangerschafts-Regel und
-    zugleich der Punkt, an dem Kaisergranat am besten ist. Über \~70 °C wird er
-    gummiartig, also Thermometer statt Uhr.
+**16. Teller vorwärmen, Schwänze salzen (ca. 2 Min.)**
+*nach Schwänze antrocknen*
+Teller vorwärmen (nicht heiß — Praline!). Schwänze **erst direkt vor dem
+Braten** salzen.
 
-**Anrichten:** Knapper Spiegel Beurre blanc (35–40 ml), 2 Schwänze (Bratseite
+**17. Pfannen aufheizen (ca. 3 Min.)**
+*2 Pfannen*
+2 Pfannen mit je 1 EL Butterschmalz sehr heiß werden lassen (leicht rauchend).
+5–6 Schwänze pro Pfanne mit Abstand — zwei Pfannen parallel schlagen zwei
+Chargen, Kaisergranat verzeiht kein Warten.
+
+**18. Braten und arrosieren (ca. 2–3 Min.)**
+*2 Pfannen · fertig bei Bei 60–62 °C Kern raus*
+45–60 Sek. braten ohne zu bewegen (Röstfarbe), wenden, je 15 g Butter zugeben
+und 45–60 Sek. arrosieren. **Bei 60–62 °C Kern raus** (Fühler längs in den
+dicksten Teil) → Carryover auf \~63–65 °C: durchgehend opak, fest-saftig — das
+ist „durchgegart“ im Sinne der Schwangerschafts-Regel und zugleich der Punkt, an
+dem Kaisergranat am besten ist. Über \~70 °C wird er gummiartig, also
+Thermometer statt Uhr.
+
+**19. Anrichten (ca. 3 Min.)**
+*nach Braten und arrosieren, Warm halten und Limette, Pralinen wälzen*
+Knapper Spiegel Beurre blanc (35–40 ml), 2 Schwänze (Bratseite
 oben) hineinsetzen. 3–5 Punkte Mango-Gel **neben/an den Rand des Spiegels**
 spritzen — im Saucenspiegel verlaufen sie. Am Tellerrand Crumble-Häufchen,
 Praline daraufsetzen, evtl. Kräuterspitzen.
@@ -363,106 +432,157 @@ Sahnesauce. Sellerie-Chips als zweites Crunch-Element. November = volle
 Rosenkohl-Saison. Nebeneffekt: Der Abend ist entspannt — kein Rückwärtsgaren,
 keine Ofen-Kollision, Gang 3 ist zu 90 % vom Vortag.
 
-**Schmoren + Jus (T-1, ergibt \~800 g gezupftes Fleisch + \~250–300 ml Jus):**
+**Lammschulter und Jus (T-1, ergibt \~800 g gezupftes Fleisch + \~250–300 ml Jus, Kühlschrank):**
 
-1. Ofen 220 °C: 500 g Lammknochen dünn mit Öl bepinseln, einlagig aufs Blech,
-   20–30 Min. **goldbraun** rösten — nicht tiefdunkel! Anders als beim
-   Schweinefond (→ `technik/dunkle-bratensauce.md`): Lammknochen werden dunkel
-   geröstet **bitter**. Die Saucen-Grammatik von dort (Reduktion in Schüben,
-   Gewürze ans Ende, Montage) gilt trotzdem.
-2. Lammschulter (2–2,2 kg mit Knochen) trockentupfen, Fettdeckel auf \~5 mm
-   parieren (Parüren zu den Knochen), rundum mit 2,5–3 TL Salz (\~15–18 g)
-   würzen — gern schon am T-2 als Dry-Brine unabgedeckt im Kühlschrank. Im
-   Bräter in 1 EL Öl bei hoher Hitze rundum tief braun anbraten (\~10 Min.),
-   herausnehmen.
-3. Im selben Bräter 150 g Zwiebel, 100 g Karotte und 100 g Sellerie (von der
-   Püree-Knolle) grob gewürfelt tief braun anrösten. 1 EL (15 g) Tomatenmark
-   zugeben, 1–2 Min. mitrösten, **ständig rühren** (verbrannt = bitter).
-4. Mit 100 ml Rotwein ablöschen und **fast trocken** einkochen. Zweimal
-   wiederholen (insgesamt 300 ml) — in Etappen reduziert dominiert die
-   Wein-Säure nicht, und der Alkohol ist praktisch komplett verkocht, bevor
-   Flüssigkeit dazukommt (Schwangerschaft: das ist der Grund, warum der Wein
-   hier bleiben darf). *(Null-Risiko-Option: 150 ml Verjus + 150 ml Wasser
-   statt Wein, gleich reduziert — Jus wird etwas flacher.)*
-5. Knochen und Schulter in den Bräter, kaltes Wasser bis \~⅔ Höhe der Schulter
-   angießen (\~1–1,5 L), 1 Lorbeerblatt, 2 Zweige Thymian, 4 angedrückte
-   Knoblauchzehen. Aufkochen, Schaum abschöpfen, Deckel drauf, im Ofen bei
-   **150 °C 3–3,5 Std.** schmoren, bis das Fleisch vom Knochen fällt (Gabel
-   dreht sich ohne Widerstand). Nach der Hälfte einmal wenden.
-6. Schulter herausheben, 10 Min. abkühlen lassen, dann **warm** zupfen: Haut,
-   Fett, Sehnen und Knochen raus, Fleisch grob in 1–2-cm-Stücke zerpflücken
-   (nicht zu fein — Struktur bleibt). Mit 4–5 EL passierter, noch unreduzierter
-   Schmorflüssigkeit, Abrieb ½ Zitrone, 1 EL gehackter Petersilie, ½ TL fein
-   gehacktem Rosmarin, Pfeffer und Salz abschmecken — **kräftig**: der Block
-   wird kalt gegessen probiert, aber warm serviert, und die Jus kommt dazu.
-7. Kastenform mit Frischhaltefolie auslegen (Überstand), Fleisch einfüllen und
-   **fest** andrücken (\~4 cm hoch). Folie darüberschlagen, zweite Kastenform
-   hineinsetzen, mit 2–3 Dosen beschweren, über Nacht kalt stellen. Die
-   Gelatine der Schmorflüssigkeit bindet den Block.
-   *(Option, falls der Block beim ersten Mal zerfällt: 1 Blatt Gelatine in den
-   4–5 EL Fond auflösen — notieren, nicht vorsorglich.)*
-8. Schmorflüssigkeit durch feines Sieb + Passiertuch passieren, über Nacht kalt
-   stellen, **Fettdeckel abheben** (Schulter gibt viel Fett ab — der Deckel ist
-   das wichtigste Werkzeug gegen ein schweres Menü).
-9. Am Tag auf \~250–300 ml **sanft** reduzieren — zu heftiges Reduzieren macht
-   bitter und trüb. **Kein Salz bis zum Schluss** (Konzentration!).
+**1. Knochen rösten (20–30 Min.)**
+*jederzeit · Ofen 220 °C*
+Ofen 220 °C: 500 g Lammknochen dünn mit Öl bepinseln, einlagig aufs Blech, 20–30
+Min. **goldbraun** rösten — nicht tiefdunkel! Anders als beim Schweinefond (→
+`technik/dunkle-bratensauce.md`): Lammknochen werden dunkel geröstet **bitter**.
+Die Saucen-Grammatik von dort (Reduktion in Schüben, Gewürze ans Ende, Montage)
+gilt trotzdem.
+
+**2. Schulter salzen und anbraten (ca. 15 Min.)**
+*jederzeit · Herd*
+Lammschulter (2–2,2 kg mit Knochen) trockentupfen, Fettdeckel auf \~5 mm
+parieren (Parüren zu den Knochen), rundum mit 2,5–3 TL Salz (\~15–18 g) würzen —
+gern schon am T-2 als Dry-Brine unabgedeckt im Kühlschrank. Im Bräter in 1 EL Öl
+bei hoher Hitze rundum tief braun anbraten (\~10 Min.), herausnehmen.
+
+**3. Röstgemüse (ca. 10 Min.)**
+*Herd*
+Im selben Bräter 150 g Zwiebel, 100 g Karotte und 100 g Sellerie (von der
+Püree-Knolle) grob gewürfelt tief braun anrösten. 1 EL (15 g) Tomatenmark
+zugeben, 1–2 Min. mitrösten, **ständig rühren** (verbrannt = bitter).
+
+**4. Rotwein-Reduktion (ca. 15 Min.)**
+*Herd*
+Mit 100 ml Rotwein ablöschen und **fast trocken** einkochen. Zweimal wiederholen
+(insgesamt 300 ml) — in Etappen reduziert dominiert die Wein-Säure nicht, und
+der Alkohol ist praktisch komplett verkocht, bevor Flüssigkeit dazukommt
+(Schwangerschaft: das ist der Grund, warum der Wein hier bleiben darf).
+*(Null-Risiko-Option: 150 ml Verjus + 150 ml Wasser statt Wein, gleich reduziert
+— Jus wird etwas flacher.)*
+
+**5. Schmoren (3–3,5 Std., passiv)**
+*nach Knochen rösten, Rotwein-Reduktion · Ofen 150 °C · fertig bei Gabel dreht sich ohne Widerstand*
+Knochen und Schulter in den Bräter, kaltes Wasser bis \~⅔ Höhe der Schulter
+angießen (\~1–1,5 L), 1 Lorbeerblatt, 2 Zweige Thymian, 4 angedrückte
+Knoblauchzehen. Aufkochen, Schaum abschöpfen, Deckel drauf, im Ofen bei **150 °C
+3–3,5 Std.** schmoren, bis das Fleisch vom Knochen fällt (Gabel dreht sich ohne
+Widerstand). Nach der Hälfte einmal wenden.
+
+**6. Zupfen und würzen (ca. 25 Min.)**
+Schulter herausheben, 10 Min. abkühlen lassen, dann **warm** zupfen: Haut, Fett,
+Sehnen und Knochen raus, Fleisch grob in 1–2-cm-Stücke zerpflücken (nicht zu
+fein — Struktur bleibt). Mit 4–5 EL passierter, noch unreduzierter
+Schmorflüssigkeit, Abrieb ½ Zitrone, 1 EL gehackter Petersilie, ½ TL fein
+gehacktem Rosmarin, Pfeffer und Salz abschmecken — **kräftig**: der Block wird
+kalt gegessen probiert, aber warm serviert, und die Jus kommt dazu.
+
+**7. Pressen (ca. 10 Min.)**
+*ergibt Lammblock · mind. 8 h*
+Kastenform mit Frischhaltefolie auslegen (Überstand), Fleisch einfüllen und
+**fest** andrücken (\~4 cm hoch). Folie darüberschlagen, zweite Kastenform
+hineinsetzen, mit 2–3 Dosen beschweren, über Nacht kalt stellen. Die Gelatine
+der Schmorflüssigkeit bindet den Block. *(Option, falls der Block beim ersten
+Mal zerfällt: 1 Blatt Gelatine in den 4–5 EL Fond auflösen — notieren, nicht
+vorsorglich.)*
+
+**8. Passieren und entfetten (ca. 10 Min.)**
+*nach Zupfen und würzen*
+Schmorflüssigkeit durch feines Sieb + Passiertuch passieren, über Nacht kalt
+stellen, **Fettdeckel abheben** (Schulter gibt viel Fett ab — der Deckel ist das
+wichtigste Werkzeug gegen ein schweres Menü).
+
+**9. Jus reduzieren (ca. 30 Min.)**
+*Herd*
+Am Tag auf \~250–300 ml **sanft** reduzieren — zu heftiges Reduzieren macht
+bitter und trüb. **Kein Salz bis zum Schluss** (Konzentration!).
 
 **Selleriepüree (am Nachmittag, hält warm):**
 
-10. 600 g Knollensellerie **großzügig** schälen (Außenschicht und grünliche
-   Stellen sind die Bitter-Quelle), 2-cm-Würfel. Mit 500 ml Vollmilch und
-   ½ TL Salz 20–25 Min. sanft köcheln bis sehr weich — gelegentlich rühren,
-   Milch brennt gern an.
-11. Abgießen und die **Garmilch auffangen**. Sellerie 2 Min. ausdampfen lassen
-    (gegen Wässrigkeit), dann mit 45 g Butter und nur schluckweise 100–150 ml
-    Garmilch glatt mixen (Stabmixer — bei Sellerie darf man aggressiv mixen,
-    er kleistert nicht wie Kartoffel).
-12. Durch das feine Sieb streichen — **der** Schritt für seidige
-    Sterne-Textur. Mit Salz, 1 kleinen Prise Muskat und 1 TL Zitronensaft
-    abschmecken. Abgedeckt warmhalten, vor dem Anrichten ggf. kurz remixen.
+**10. Sellerie kochen (20–25 Min.)**
+*jederzeit · Herd*
+600 g Knollensellerie **großzügig** schälen (Außenschicht und grünliche Stellen
+sind die Bitter-Quelle), 2-cm-Würfel. Mit 500 ml Vollmilch und ½ TL Salz 20–25
+Min. sanft köcheln bis sehr weich — gelegentlich rühren, Milch brennt gern an.
 
-**Rosenkohl zweierlei + Sellerie-Chips (Nachmittag):**
+**11. Püree mixen (ca. 8 Min.)**
+Abgießen und die **Garmilch auffangen**. Sellerie 2 Min. ausdampfen lassen
+(gegen Wässrigkeit), dann mit 45 g Butter und nur schluckweise 100–150 ml
+Garmilch glatt mixen (Stabmixer — bei Sellerie darf man aggressiv mixen, er
+kleistert nicht wie Kartoffel).
 
-13. 700 g Rosenkohl: Strunk keilförmig ausschneiden, äußere Blätter lösen,
-    Strunk nachschneiden, weiterzupfen — Fleißarbeit, \~30 Min. einplanen.
-    Feste Herzen anderweitig verwenden (z. B. fürs Personal-Abendessen).
-14. Hälfte der Blätter 30–60 Sek. in kräftig gesalzenem Wasser (12 g Salz/L)
-    blanchieren, sofort in Eiswasser, gut abtropfen — fixiert das Knallgrün,
-    kann Stunden vorher passieren.
-15. Chips frittieren (1–2 Std. vor Service, eine Öl-Session, \~1 L Öl im Topf,
-    Thermometer): zuerst 150 g Sellerie-Scheiben von der Mandoline (1,5–2 mm,
-    gut trockengetupft — nicht wässern nötig) bei 170–180 °C 2–3 Min. bis
-    **hellgold** (färben nach dem Rausnehmen nach!, schrumpfen um \~70 % —
-    großzügig hobeln). Dann die restlichen Rosenkohlblätter (**knochentrocken**,
-    sonst spritzt es) in kleinen Chargen \~30 Sek. bei 175 °C — dunkelgrün und
-    knusprig, nicht braun (bitter).
-16. Beide Chips-Sorten **offen** auf Küchenpapier an warmem, trockenem Ort
-    lagern (z. B. ausgeschalteter Ofen, Tür einen Spalt auf) — niemals
-    abdecken (Dampf = zäh). Halten 1–2 Std. **Salzen erst kurz vor dem
-    Servieren.** *(Ofen-Fallback für beide: 150–160 °C, 15–25 Min., einlagig —
-    einfacher, aber weniger kross.)*
+**12. Püree passieren (ca. 8 Min.)**
+Durch das feine Sieb streichen — **der** Schritt für seidige Sterne-Textur. Mit
+Salz, 1 kleinen Prise Muskat und 1 TL Zitronensaft abschmecken. Abgedeckt
+warmhalten, vor dem Anrichten ggf. kurz remixen.
 
-**Lammblöcke & Service:**
+**Rosenkohl zweierlei und Sellerie-Chips (Nachmittag):**
 
-17. Block \~1 Std. vor Gang 3 aus dem Kühlschrank (temperiert wärmt schneller
-    durch), an der Folie aus der Form heben, in 5 Scheiben à \~4 cm schneiden
-    (≈ 4 × 4 × 10 cm, \~150 g). Kanten glatt — das ist der Look.
-18. Nach Gang 2: Ofen von 80 °C (Teller) auf **140 °C** stellen, Teller solange
-    gestapelt daneben (halten die Wärme). Pfanne mit 1 EL Butterschmalz
-    mittel-hoch, Blöcke **in 2 Chargen** allseitig je 1–2 Min. knusprig braten
-    (Edelstahl: nicht überladen, Chargen-Learning aus Bulgogi/Bò lúc lắc; die
-    Schnittflächen zuerst, sie halten den Block zusammen).
-19. Blöcke auf Gitter + Blech, Thermometer in den dicksten, im **140 °C Ofen
-    12–18 Min.** bis **≥ 70 °C Kern** — nach Thermometer, nicht nach Uhr. Das
-    ist die Schwangerschafts-Grenze (Listerien nach Lagerung) und zugleich der
-    Punkt, an dem der Block innen wieder saftig-warm ist.
-20. Parallel: blanchierte Rosenkohlblätter in 20 g aufschäumender Butter
-    1–2 Min. schwenken (nur erwärmen), 1 Prise Salz, kleiner Spritzer Zitrone.
-    Jus erwärmen, salzen, vom Herd 25 g eiskalte Butter einschwenken
-    (montieren), danach nicht mehr kochen; übrige Menge in Eiswürfelform
-    einfrieren. Chips salzen.
+**13. Rosenkohlblätter lösen (30 Min. einplanen)**
+*jederzeit*
+700 g Rosenkohl: Strunk keilförmig ausschneiden, äußere Blätter lösen, Strunk
+nachschneiden, weiterzupfen — Fleißarbeit, \~30 Min. einplanen. Feste Herzen
+anderweitig verwenden (z. B. fürs Personal-Abendessen).
 
-**Anrichten:** Püree-Spiegel oder -Nocke, Lammblock daraufgesetzt, grüne
+**14. Blätter blanchieren (ca. 10 Min.)**
+*Herd*
+Hälfte der Blätter 30–60 Sek. in kräftig gesalzenem Wasser (12 g Salz/L)
+blanchieren, sofort in Eiswasser, gut abtropfen — fixiert das Knallgrün, kann
+Stunden vorher passieren.
+
+**15. Chips frittieren (ca. 25 Min.)**
+*nach Rosenkohlblätter lösen · 1–2 Std. vor Service · Herd*
+Chips frittieren (1–2 Std. vor Service, eine Öl-Session, \~1 L Öl im Topf,
+Thermometer): zuerst 150 g Sellerie-Scheiben von der Mandoline (1,5–2 mm, gut
+trockengetupft — nicht wässern nötig) bei 170–180 °C 2–3 Min. bis **hellgold**
+(färben nach dem Rausnehmen nach!, schrumpfen um \~70 % — großzügig hobeln).
+Dann die restlichen Rosenkohlblätter (**knochentrocken**, sonst spritzt es) in
+kleinen Chargen \~30 Sek. bei 175 °C — dunkelgrün und knusprig, nicht braun
+(bitter).
+
+**16. Chips lagern (ca. 3 Min.)**
+*ergibt Chips · hält bis 2 h*
+Beide Chips-Sorten **offen** auf Küchenpapier an warmem, trockenem Ort lagern
+(z. B. ausgeschalteter Ofen, Tür einen Spalt auf) — niemals abdecken (Dampf =
+zäh). Halten 1–2 Std. **Salzen erst kurz vor dem Servieren.** *(Ofen-Fallback
+für beide: 150–160 °C, 15–25 Min., einlagig — einfacher, aber weniger kross.)*
+
+**Lammblöcke und Service (am Abend):**
+
+**17. Block temperieren und schneiden (ca. 10 Min.)**
+*jederzeit · 1 Std. vor Gang 3*
+Block \~1 Std. vor Gang 3 aus dem Kühlschrank (temperiert wärmt schneller
+durch), an der Folie aus der Form heben, in 5 Scheiben à \~4 cm schneiden (≈ 4 ×
+4 × 10 cm, \~150 g). Kanten glatt — das ist der Look.
+
+**18. Blöcke anbraten (ca. 8 Min.)**
+*Ofen 140 °C · Herd*
+Nach Gang 2: Ofen von 80 °C (Teller) auf **140 °C** stellen, Teller solange
+gestapelt daneben (halten die Wärme). Pfanne mit 1 EL Butterschmalz mittel-hoch,
+Blöcke **in 2 Chargen** allseitig je 1–2 Min. knusprig braten (Edelstahl: nicht
+überladen, Chargen-Learning aus Bulgogi/Bò lúc lắc; die Schnittflächen zuerst,
+sie halten den Block zusammen).
+
+**19. Durchwärmen (12–18 Min.)**
+*Ofen 140 °C · fertig bei ≥ 70 °C Kern*
+Blöcke auf Gitter + Blech, Thermometer in den dicksten, im **140 °C Ofen 12–18
+Min.** bis **≥ 70 °C Kern** — nach Thermometer, nicht nach Uhr. Das ist die
+Schwangerschafts-Grenze (Listerien nach Lagerung) und zugleich der Punkt, an dem
+der Block innen wieder saftig-warm ist.
+
+**20. Blätter, Jus, Chips (ca. 8 Min.)**
+*nach Blöcke anbraten · 2 Pfannen*
+Parallel: blanchierte Rosenkohlblätter in 20 g aufschäumender Butter 1–2 Min.
+schwenken (nur erwärmen), 1 Prise Salz, kleiner Spritzer Zitrone. Jus erwärmen,
+salzen, vom Herd 25 g eiskalte Butter einschwenken (montieren), danach nicht
+mehr kochen; übrige Menge in Eiswürfelform einfrieren. Chips salzen.
+
+**21. Anrichten (ca. 3 Min.)**
+*nach Durchwärmen, Blätter, Jus, Chips*
+Püree-Spiegel oder -Nocke, Lammblock daraufgesetzt, grüne
 Blätter und Chips-Blätter gemischt darüber/daneben, Sellerie-Chips
 aufgestellt, Jus angegossen (nicht über die Chips — weichen auf).
 
@@ -539,58 +659,78 @@ oder gefroren schneidet und 3–4 Min. auf dem Teller wartet, bevor der Schuss
 kommt. Zu hart im Testlauf → **eine** Stellschraube: Dextrose 25 → 40 g
 (Schokoladeneis-Learning), nicht gleichzeitig Zucker oder Espresso ändern.
 
-**Kaffee-Crumble (Vortag):**
+**Kaffee-Crumble (Vortag, Raumtemperatur):**
 
-1. 40 g Mehl, 30 g weiche Butter, 25 g brauner Zucker, 1 TL fein gemahlener
-   Decaf-Espresso, 20 g Kakaonibs und 1 Prise Salz krümelig verreiben (Nibs
-   von Anfang an mit — sie sind schon geröstet und leiden nicht). 160 °C,
-   12–15 Min., einmal durchrühren. Auskühlen lassen (härtet nach), luftdicht
-   bei Raumtemperatur. **Nie einfrieren oder kühlen** — zieht Feuchtigkeit.
+**1. Kaffee-Crumble (ca. 20–25 Min.)**
+*jederzeit · Ofen 160 °C*
+40 g Mehl, 30 g weiche Butter, 25 g brauner Zucker, 1 TL fein gemahlener
+Decaf-Espresso, 20 g Kakaonibs und 1 Prise Salz krümelig verreiben (Nibs von
+Anfang an mit — sie sind schon geröstet und leiden nicht). 160 °C, 12–15 Min.,
+einmal durchrühren. Auskühlen lassen (härtet nach), luftdicht bei
+Raumtemperatur. **Nie einfrieren oder kühlen** — zieht Feuchtigkeit.
 
-**Parfait (1–2 Tage vorher):**
+**Parfait (1–2 Tage vorher, Gefrierfach):**
 
-2. 4 Eigelb, 70 g Zucker, 25 g Dextrose, 90 ml ausgekühlten doppelt starken
-   Decaf-Espresso, 2 TL entkoffeiniertes Instant-Espressopulver und 2 g Salz
-   (\~⅓ TL) in einer Schüssel über dem Wasserbad „zur Rose“ dick-cremig
-   aufschlagen: **75–82 °C** (Thermometer — ab 70 °C pasteurisiert, über 84 °C
-   gerinnt es). Espresso von Anfang an mit: so bindet er ein, statt später
-   Volumen zu kosten.
-3. Vom Wasserbad nehmen und kaltschlagen, bis die Masse unter \~30 °C ist
-   (Handrührer, 5–8 Min.) — warme Masse schmilzt gleich die Sahne.
-4. 300 ml Sahne zu **weichen Spitzen** schlagen — ausdrücklich nicht steif
-   (beim Falten kommt Scherung dazu, übersteift wird’s buttrig-körnig).
-5. ⅓ der Eigelbmasse in die Sahne rühren (Konsistenzen angleichen), dann den
-   Rest mit dem Teigschaber locker unterheben — zügig, nicht rühren.
-6. In die mit Folie ausgelegte 20-cm-Kastenform, glattstreichen, Folie
-   auflegen. **Mind. über Nacht** bei voller Gefrierleistung. Die ungefrorene
-   Masse darf ruhig einen Tick zu süß/zu kräftig schmecken: Kälte dämpft
-   beides.
+**2. Pâte à bombe (ca. 12 Min.)**
+*jederzeit · Herd · fertig bei 75–82 °C*
+4 Eigelb, 70 g Zucker, 25 g Dextrose, 90 ml ausgekühlten doppelt starken
+Decaf-Espresso, 2 TL entkoffeiniertes Instant-Espressopulver und 2 g Salz (\~⅓
+TL) in einer Schüssel über dem Wasserbad „zur Rose“ dick-cremig aufschlagen:
+**75–82 °C** (Thermometer — ab 70 °C pasteurisiert, über 84 °C gerinnt es).
+Espresso von Anfang an mit: so bindet er ein, statt später Volumen zu kosten.
 
-**Service (à la minute):**
+**3. Kaltschlagen (5–8 Min.)**
+Vom Wasserbad nehmen und kaltschlagen, bis die Masse unter \~30 °C ist
+(Handrührer, 5–8 Min.) — warme Masse schmilzt gleich die Sahne.
 
-7. Parfait **10–15 Min. vor dem Dessert** in den Kühlschrank (temperieren).
-   Dessertteller ins Gefrierfach (15 Min. reichen) — **Teller mit leichter
-   Vertiefung** (Coup-Teller / tiefer Teller mit breitem Rand): auf komplett
-   flachem Teller läuft der Schuss sofort an den Rand. Decaf-Espresso für die
-   Schüsse **erst jetzt** brühen (\~30 ml pro Person) — die Crema ist das
-   Schaummittel, abgestandener Espresso schäumt nicht. Zuckersirup (1:1,
-   Zucker in gleich viel heißem Wasser gelöst, abgekühlt) bereithalten.
-8. Parfait an der Folie aus der Form heben. Messer in heißem Wasser erwärmen,
-   abwischen, 2,5–3-cm-Scheiben schneiden, nach jedem Schnitt Messer neu
-   erwärmen. Scheiben auf die gefrosteten Teller, Crumble als Streifen
-   daneben/darunter, 3 Kaffeebohnen. *(GDM-Portion: Scheibe \~2 cm, das sind
-   \~15 g Zucker + \~5 g aus dem Crumble.)*
-9. **Shake 1 — Espresso-Shakerato (alkoholfrei), pro Person:** 30 ml frischer
-   Decaf-Espresso + 10 ml Zuckersirup auf 3–4 Eiswürfel, 15–20 Sek. **hart**
-   shaken, bis der Shaker beschlägt, durch das feine Sieb abseihen — dichter,
-   heller Schaum.
-   **Shake 2 — Espresso-Martini, pro Trinker:** 15 ml Wodka + 10 ml Kahlúa +
-   15 ml frischer Decaf-Espresso (optional 2 ml Zuckersirup — IBA-klassisch,
-   hilft dem Schaum), gleiche Technik. Für 3 Trinker also 45/30/45 ml in einem
-   Shake.
-10. **Am Tisch** je 20–25 ml über die Scheibe gießen — aus leichter Höhe, das
-    fördert den Schaum obendrauf („Crema“). Sofort essen: der Rand schmilzt
-    bewusst cremig an, aber nicht trödeln.
+**4. Sahne schlagen (ca. 4 Min.)**
+*jederzeit*
+300 ml Sahne zu **weichen Spitzen** schlagen — ausdrücklich nicht steif (beim
+Falten kommt Scherung dazu, übersteift wird’s buttrig-körnig).
+
+**5. Unterheben (ca. 3 Min.)**
+*nach Kaltschlagen, Sahne schlagen*
+⅓ der Eigelbmasse in die Sahne rühren (Konsistenzen angleichen), dann den Rest
+mit dem Teigschaber locker unterheben — zügig, nicht rühren.
+
+**6. Einfrieren (**Mind. über Nacht**, passiv)**
+*ergibt Parfait · mind. 8 h*
+In die mit Folie ausgelegte 20-cm-Kastenform, glattstreichen, Folie auflegen.
+**Mind. über Nacht** bei voller Gefrierleistung. Die ungefrorene Masse darf
+ruhig einen Tick zu süß/zu kräftig schmecken: Kälte dämpft beides.
+
+**Dessert-Service (à la minute):**
+
+**7. Temperieren und Teller frosten (10–15 Min. vor dem Dessert)**
+*jederzeit · 10–15 Min. vor dem Gang*
+Parfait **10–15 Min. vor dem Dessert** in den Kühlschrank (temperieren).
+Dessertteller ins Gefrierfach (15 Min. reichen) — **Teller mit leichter
+Vertiefung** (Coup-Teller / tiefer Teller mit breitem Rand): auf komplett
+flachem Teller läuft der Schuss sofort an den Rand. Decaf-Espresso für die
+Schüsse **erst jetzt** brühen (\~30 ml pro Person) — die Crema ist das
+Schaummittel, abgestandener Espresso schäumt nicht. Zuckersirup (1:1, Zucker in
+gleich viel heißem Wasser gelöst, abgekühlt) bereithalten.
+
+**8. Schneiden (ca. 5 Min.)**
+Parfait an der Folie aus der Form heben. Messer in heißem Wasser erwärmen,
+abwischen, 2,5–3-cm-Scheiben schneiden, nach jedem Schnitt Messer neu erwärmen.
+Scheiben auf die gefrosteten Teller, Crumble als Streifen daneben/darunter, 3
+Kaffeebohnen. *(GDM-Portion: Scheibe \~2 cm, das sind \~15 g Zucker + \~5 g aus
+dem Crumble.)*
+
+**9. Shaken (ca. 5 Min.)**
+**Shake 1 — Espresso-Shakerato (alkoholfrei), pro Person:** 30 ml frischer
+Decaf-Espresso + 10 ml Zuckersirup auf 3–4 Eiswürfel, 15–20 Sek. **hart**
+shaken, bis der Shaker beschlägt, durch das feine Sieb abseihen — dichter,
+heller Schaum. **Shake 2 — Espresso-Martini, pro Trinker:** 15 ml Wodka + 10 ml
+Kahlúa + 15 ml frischer Decaf-Espresso (optional 2 ml Zuckersirup —
+IBA-klassisch, hilft dem Schaum), gleiche Technik. Für 3 Trinker also 45/30/45
+ml in einem Shake.
+
+**10. Am Tisch (ca. 2 Min.)**
+**Am Tisch** je 20–25 ml über die Scheibe gießen — aus leichter Höhe, das
+fördert den Schaum obendrauf („Crema“). Sofort essen: der Rand schmilzt bewusst
+cremig an, aber nicht trödeln.
 
 **Kind (3 J.):** bewusst kein Ableger — eigenes Dessert: Rest Mango-Gel aus
 Gang 2 (fällt reichlich an) + Kugel Vanilleeis (gekauft), optional
@@ -619,30 +759,23 @@ Walnusscrumble-Reste.
 ## Zeitplan-Skelett (Abend, grob — Feinschliff nach Testläufen)
 
 **Vortage:**
-- T-2: **Tomaten-Püree-Block (Weg A) aus dem Gefrierfach ins Passiertuch
-  (Drip-Thaw braucht 24–48 h!)** · Parfait einfrieren · Lammschulter salzen
-  (Dry-Brine, optional) · Lammknochen ggf. schon rösten
-- T-1: **Lammschulter schmoren (3–3,5 h), zupfen, pressen; Schmorflüssigkeit
-  passieren und kalt stellen** · Mango-Gel · beide Crumbles · Ziegenkäse-
-  Pralinen formen (ungewälzt) · Kaisergranat im Kühlschrank auftauen · Weg B:
+- Saison-Teil (erledigt 09/2026): Tomaten salzen · Kurz mixen · Weg A: Püree einfrieren · Weg B: abtropfen und einfrieren
+- T-2: **Auftauen und klären: Tomaten-Püree-Block (Weg A) aus dem Gefrierfach ins Passiertuch
+  (Drip-Thaw braucht 24–48 h!)** · Parfait (herstellen, einfrieren) · Lammschulter salzen
+  (Dry-Brine, optional) · Knochen rösten (ggf. schon)
+- T-1: **Lammschulter und Jus: schmoren (3–3,5 h), zupfen, pressen; Schmorflüssigkeit
+  passieren und kalt stellen** · Mango-Gel · Walnusscrumble und Kaffee-Crumble · Ziegenkäse-Pralinen formen, Wälzmischung (ungewälzt) · Kaisergranat auftauen (im Kühlschrank) · Weg B:
   Tomatenwasser in den Kühlschrank zum Auftauen
 
 **Am Tag:**
-- Vormittags: Fettdeckel von der Schmorflüssigkeit, Jus auf 250–300 ml
-  reduzieren · Kaisergranat auslösen, Schalen einfrieren
-- Nachmittags: Rosenkohlblätter lösen, Hälfte blanchieren · Selleriepüree ·
-  Chips frittieren (Sellerie, dann Rosenkohl — halten 1–2 h) · Kaisergranat
-  offen antrocknen · Lammblock 1 h vor Gang 3 aus dem Kühlschrank, schneiden ·
+- Vormittags: Jus reduzieren (Fettdeckel ab, auf 250–300 ml) · Kaisergranat auslösen, Schalen einfrieren · Concassé
+- Nachmittags: Rosenkohlblätter lösen, Blätter blanchieren · Selleriepüree ·
+  Chips frittieren, Chips lagern (Sellerie, dann Rosenkohl — halten 1–2 h) · Schwänze antrocknen · Block temperieren und schneiden (1 h vor Gang 3) ·
   Ofen 80 °C für Teller
-- Gang 1 (0:00): Tomatenwasser abschmecken, anrichten — kein Herd nötig
-  (Grundwürzung schon 1–2 h vorher)
-- Gang 2 (+0:20): Beurre blanc montieren, Kaisergranat à la minute (\~8 Min.
-  aktiv)
-- Gang 3 (+0:55): Ofen auf 140 °C, Blöcke anbraten, 12–18 Min. Ofen bis
-  ≥ 70 °C Kern (Thermometer-Alarm) · parallel Rosenkohl schwenken, Jus
-  montieren, Chips salzen
-- Gang 4 (+1:45): Parfait 10–15 Min. vorher in den Kühlschrank, Scheiben
-  schneiden, Espresso brühen, Shakerato und Martini am Tisch shaken
+- Gang 1 (0:00): Grundwürzung (1–2 h vor dem Gang) · Kalt abschmecken, Limette einrühren, Anrichten — kein Herd nötig
+- Gang 2 (+0:20): Pralinen wälzen (≤ 30 Min. vor dem Anrichten) · Verjus-Limetten-Beurre-blanc (\~20 Min. vor dem Gang) · Kaisergranat braten, Anrichten (\~8 Min. aktiv)
+- Gang 3 (+0:55): Ofen auf 140 °C, Blöcke anbraten, Durchwärmen 12–18 Min. bis ≥ 70 °C Kern (Thermometer-Alarm) · parallel Blätter, Jus, Chips · Anrichten
+- Gang 4 (+1:45): Dessert-Service: Temperieren und Teller frosten (10–15 Min. vorher), Schneiden, Shaken, Am Tisch
 
 **Ofen-Plan (entschärft):** Chips werden frittiert, das Lamm ist geschmort —
 der Ofen macht am Abend nur 80 °C (Teller) und dann 140 °C (Blöcke
