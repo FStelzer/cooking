@@ -264,27 +264,28 @@ Rotgarnelen sind eine andere Art und schmecken anders.
 **Kaisergranat vorbereiten (Vortag auftauen, am Tag auslösen):**
 
 9. 12 Kaisergranat **über Nacht im Kühlschrank** auftauen (nie warm, nie im
-   Wasser — laugt aus). Köpfe abdrehen; Schwanz mit der Küchenschere an der
-   Bauchseite längs aufschneiden, Fleisch herausheben, den dunklen Darmfaden
-   ziehen. Köpfe und Schalen einfrieren — beste Basis für eine Bisque
-   (→ `gerichte/hummerbisque.md`).
-10. Schwänze sehr gründlich trockentupfen und **1–2 h offen auf
+   Wasser — laugt aus).
+10. Am Tag: Köpfe abdrehen; Schwanz mit der Küchenschere an der Bauchseite
+    längs aufschneiden, Fleisch herausheben, den dunklen Darmfaden ziehen.
+    Köpfe und Schalen einfrieren — beste Basis für eine Bisque
+    (→ `gerichte/hummerbisque.md`).
+11. Schwänze sehr gründlich trockentupfen und **1–2 h offen auf
     Gitter/Küchenpapier im Kühlschrank antrocknen** — Feuchtigkeit ist der
     Feind der Kruste, TK-Ware zieht besonders Wasser.
 
 **Verjus-Limetten-Beurre-blanc (\~20 Min. vor dem Gang):**
 
-11. 2 Schalotten (\~60 g) fein würfeln, mit 110 ml Verjus und 25 ml
+12. 2 Schalotten (\~60 g) fein würfeln, mit 110 ml Verjus und 25 ml
     Weißweinessig auf \~3 EL sirupös einreduzieren. *(Verjus ersetzt Weißwein +
     Noilly Prat 1:1 — gleiche Säure- und Fruchtrolle, kein Alkohol. Fallback
     ohne Verjus: 60 ml Weißweinessig + 60 ml Wasser + 1 TL Zucker.)*
-12. 2 EL Sahne einkochen — stabilisiert die Emulsion spürbar
+13. 2 EL Sahne einkochen — stabilisiert die Emulsion spürbar
     (→ Beurre-blanc-Baustein in `technik/mini-projekte.md`).
-13. Bei kleinster Hitze 170 g eiskalte Butter würfelweise einschlagen — nächstes
+14. Bei kleinster Hitze 170 g eiskalte Butter würfelweise einschlagen — nächstes
     Stück erst, wenn das vorige emulgiert ist. **Nie über \~58 °C, nie kochen**
     (Thermometer!). Durch das feine Sieb passieren, salzen.
     Ergibt \~240 ml → 5 Spiegel à 35–40 ml + Reserve.
-14. Warm halten bei 50–55 °C (Wasserbad; oder vorgewärmte Thermoskanne — hält
+15. Warm halten bei 50–55 °C (Wasserbad; oder vorgewärmte Thermoskanne — hält
     bis 2 h). **Erst unmittelbar vor dem Anrichten**, vom Herd: Abrieb 1 Limette
     + 2 TL Saft einrühren, tropfenweise bis max. 3 TL abschmecken — Zitrus-Öle
     sind hitzeflüchtig, und Limette ist aggressiver als Zitrone.
@@ -292,12 +293,12 @@ Rotgarnelen sind eine andere Art und schmecken anders.
 
 **Kaisergranat braten (à la minute):**
 
-15. Teller vorwärmen (nicht heiß — Praline!). Schwänze **erst direkt vor dem
+16. Teller vorwärmen (nicht heiß — Praline!). Schwänze **erst direkt vor dem
     Braten** salzen.
-16. 2 Pfannen mit je 1 EL Butterschmalz sehr heiß werden lassen (leicht
+17. 2 Pfannen mit je 1 EL Butterschmalz sehr heiß werden lassen (leicht
     rauchend). 5–6 Schwänze pro Pfanne mit Abstand — zwei Pfannen parallel
     schlagen zwei Chargen, Kaisergranat verzeiht kein Warten.
-17. 45–60 Sek. braten ohne zu bewegen (Röstfarbe), wenden, je 15 g Butter
+18. 45–60 Sek. braten ohne zu bewegen (Röstfarbe), wenden, je 15 g Butter
     zugeben und 45–60 Sek. arrosieren. **Bei 60–62 °C Kern raus** (Fühler längs
     in den dicksten Teil) → Carryover auf \~63–65 °C: durchgehend opak,
     fest-saftig — das ist „durchgegart“ im Sinne der Schwangerschafts-Regel und
@@ -402,42 +403,40 @@ keine Ofen-Kollision, Gang 3 ist zu 90 % vom Vortag.
    4–5 EL Fond auflösen — notieren, nicht vorsorglich.)*
 8. Schmorflüssigkeit durch feines Sieb + Passiertuch passieren, über Nacht kalt
    stellen, **Fettdeckel abheben** (Schulter gibt viel Fett ab — der Deckel ist
-   das wichtigste Werkzeug gegen ein schweres Menü). Am Tag auf \~250–300 ml
-   **sanft** reduzieren — zu heftiges Reduzieren macht bitter und trüb. **Kein
-   Salz bis zum Schluss** (Konzentration!). Am Abend erwärmen, salzen, vom Herd
-   25 g eiskalte Butter einschwenken (montieren), danach nicht mehr kochen.
-   Übrige Menge in Eiswürfelform einfrieren.
+   das wichtigste Werkzeug gegen ein schweres Menü).
+9. Am Tag auf \~250–300 ml **sanft** reduzieren — zu heftiges Reduzieren macht
+   bitter und trüb. **Kein Salz bis zum Schluss** (Konzentration!).
 
 **Selleriepüree (am Nachmittag, hält warm):**
 
-9. 600 g Knollensellerie **großzügig** schälen (Außenschicht und grünliche
+10. 600 g Knollensellerie **großzügig** schälen (Außenschicht und grünliche
    Stellen sind die Bitter-Quelle), 2-cm-Würfel. Mit 500 ml Vollmilch und
    ½ TL Salz 20–25 Min. sanft köcheln bis sehr weich — gelegentlich rühren,
    Milch brennt gern an.
-10. Abgießen und die **Garmilch auffangen**. Sellerie 2 Min. ausdampfen lassen
+11. Abgießen und die **Garmilch auffangen**. Sellerie 2 Min. ausdampfen lassen
     (gegen Wässrigkeit), dann mit 45 g Butter und nur schluckweise 100–150 ml
     Garmilch glatt mixen (Stabmixer — bei Sellerie darf man aggressiv mixen,
     er kleistert nicht wie Kartoffel).
-11. Durch das feine Sieb streichen — **der** Schritt für seidige
+12. Durch das feine Sieb streichen — **der** Schritt für seidige
     Sterne-Textur. Mit Salz, 1 kleinen Prise Muskat und 1 TL Zitronensaft
     abschmecken. Abgedeckt warmhalten, vor dem Anrichten ggf. kurz remixen.
 
 **Rosenkohl zweierlei + Sellerie-Chips (Nachmittag):**
 
-12. 700 g Rosenkohl: Strunk keilförmig ausschneiden, äußere Blätter lösen,
+13. 700 g Rosenkohl: Strunk keilförmig ausschneiden, äußere Blätter lösen,
     Strunk nachschneiden, weiterzupfen — Fleißarbeit, \~30 Min. einplanen.
     Feste Herzen anderweitig verwenden (z. B. fürs Personal-Abendessen).
-13. Hälfte der Blätter 30–60 Sek. in kräftig gesalzenem Wasser (12 g Salz/L)
+14. Hälfte der Blätter 30–60 Sek. in kräftig gesalzenem Wasser (12 g Salz/L)
     blanchieren, sofort in Eiswasser, gut abtropfen — fixiert das Knallgrün,
     kann Stunden vorher passieren.
-14. Chips frittieren (1–2 Std. vor Service, eine Öl-Session, \~1 L Öl im Topf,
+15. Chips frittieren (1–2 Std. vor Service, eine Öl-Session, \~1 L Öl im Topf,
     Thermometer): zuerst 150 g Sellerie-Scheiben von der Mandoline (1,5–2 mm,
     gut trockengetupft — nicht wässern nötig) bei 170–180 °C 2–3 Min. bis
     **hellgold** (färben nach dem Rausnehmen nach!, schrumpfen um \~70 % —
     großzügig hobeln). Dann die restlichen Rosenkohlblätter (**knochentrocken**,
     sonst spritzt es) in kleinen Chargen \~30 Sek. bei 175 °C — dunkelgrün und
     knusprig, nicht braun (bitter).
-15. Beide Chips-Sorten **offen** auf Küchenpapier an warmem, trockenem Ort
+16. Beide Chips-Sorten **offen** auf Küchenpapier an warmem, trockenem Ort
     lagern (z. B. ausgeschalteter Ofen, Tür einen Spalt auf) — niemals
     abdecken (Dampf = zäh). Halten 1–2 Std. **Salzen erst kurz vor dem
     Servieren.** *(Ofen-Fallback für beide: 150–160 °C, 15–25 Min., einlagig —
@@ -445,21 +444,23 @@ keine Ofen-Kollision, Gang 3 ist zu 90 % vom Vortag.
 
 **Lammblöcke & Service:**
 
-16. Block \~1 Std. vor Gang 3 aus dem Kühlschrank (temperiert wärmt schneller
+17. Block \~1 Std. vor Gang 3 aus dem Kühlschrank (temperiert wärmt schneller
     durch), an der Folie aus der Form heben, in 5 Scheiben à \~4 cm schneiden
     (≈ 4 × 4 × 10 cm, \~150 g). Kanten glatt — das ist der Look.
-17. Nach Gang 2: Ofen von 80 °C (Teller) auf **140 °C** stellen, Teller solange
+18. Nach Gang 2: Ofen von 80 °C (Teller) auf **140 °C** stellen, Teller solange
     gestapelt daneben (halten die Wärme). Pfanne mit 1 EL Butterschmalz
     mittel-hoch, Blöcke **in 2 Chargen** allseitig je 1–2 Min. knusprig braten
     (Edelstahl: nicht überladen, Chargen-Learning aus Bulgogi/Bò lúc lắc; die
     Schnittflächen zuerst, sie halten den Block zusammen).
-18. Blöcke auf Gitter + Blech, Thermometer in den dicksten, im **140 °C Ofen
+19. Blöcke auf Gitter + Blech, Thermometer in den dicksten, im **140 °C Ofen
     12–18 Min.** bis **≥ 70 °C Kern** — nach Thermometer, nicht nach Uhr. Das
     ist die Schwangerschafts-Grenze (Listerien nach Lagerung) und zugleich der
     Punkt, an dem der Block innen wieder saftig-warm ist.
-19. Parallel: blanchierte Rosenkohlblätter in 20 g aufschäumender Butter
+20. Parallel: blanchierte Rosenkohlblätter in 20 g aufschäumender Butter
     1–2 Min. schwenken (nur erwärmen), 1 Prise Salz, kleiner Spritzer Zitrone.
-    Jus montieren (Schritt 8). Chips salzen.
+    Jus erwärmen, salzen, vom Herd 25 g eiskalte Butter einschwenken
+    (montieren), danach nicht mehr kochen; übrige Menge in Eiswürfelform
+    einfrieren. Chips salzen.
 
 **Anrichten:** Püree-Spiegel oder -Nocke, Lammblock daraufgesetzt, grüne
 Blätter und Chips-Blätter gemischt darüber/daneben, Sellerie-Chips
