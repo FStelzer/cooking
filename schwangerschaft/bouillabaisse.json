@@ -1,16 +1,14 @@
 {
   "$schema": "../schema/recipe.schema.json",
   "schemaVersion": "0.1",
-  "id": "gerichte/bouillabaisse",
+  "id": "schwangerschaft/bouillabaisse",
   "kind": "dish",
-  "title": "Bouillabaisse mit Fenchel-Orange-Salat (2 Erwachsene + Kind)",
+  "title": "Bouillabaisse mit Fenchel-Orange-Salat (Schwangerschafts-Version, 2 Erwachsene + Kind)",
   "status": "done",
   "yields": {
-    "text": "2 Erwachsene + Kind",
-    "value": 2.0,
-    "unit": "Erwachsene"
+    "text": "Schwangerschafts-Version, 2 Erwachsene + Kind"
   },
-  "intro": "*Aktive Zeit \\~2 Std. am Vortag (Fond & Rouille) + \\~30 Min. am Kochtag, gesamt über Nacht. Equipment: 6L-Topf, zweiter Topf zum Passieren, feines Sieb + Passiertuch, Mörser, Schneebesen, Mandoline (Salat).*\n\nMediterrane Fischsuppe mit Safran, Weißwein und Pastis, dazu klassische\nEigelb-Rouille und ein sizilianischer Fenchel-Orange-Salat, dessen Aromen die\nBrühe spiegeln. Aufteilung: Vortag Fond ansetzen (wird über Nacht besser),\nam Kochtag in \\~25 Minuten servieren.",
+  "intro": "*Aktive Zeit \\~2 Std. am Vortag (Fond & Rouille) + \\~30 Min. am Kochtag, gesamt über Nacht. Equipment: 6L-Topf, zweiter Topf zum Passieren, feines Sieb + Passiertuch, Mörser, Kartoffelpresse oder Stampfer, Schneebesen, Mandoline (Salat).*\n\n> **Kopie von [`gerichte/bouillabaisse.md`](/gerichte/bouillabaisse.md)**, angepasst nach\n> [Leitfaden](/schwangerschaft/leitfaden.md): kein Weißwein, kein Pastis, Rouille als\n> Kartoffel-Emulsion statt Eigelb, Kapern statt Sardellen im Salat — und vor allem eine\n> **neue Fischliste**, weil Heilbutt und Seeteufel (alle drei Varianten des Originals) auf der\n> BfR-Quecksilberliste stehen. Das Original bleibt die Referenz für nach der Schwangerschaft.\n\nMediterrane Fischsuppe mit Safran, dazu Kartoffel-Rouille nach provenzalischer Art und ein\nsizilianischer Fenchel-Orange-Salat, dessen Aromen die Brühe spiegeln. Aufteilung: Vortag Fond\nansetzen (wird über Nacht besser), am Kochtag in \\~25 Minuten servieren. Die Anisnote, die im\nOriginal der Pastis liefert, kommt hier aus Fenchelsamen, Sternanis und Orangenzeste — die\nältere provenzalische Form, bevor Pastis überhaupt Standard wurde.",
   "times": {
     "text": "Aktive Zeit ~2 Std. am Vortag (Fond & Rouille) + ~30 Min. am Kochtag, gesamt über Nacht",
     "active": {
@@ -28,6 +26,7 @@
     "zweiter Topf zum Passieren",
     "feines Sieb + Passiertuch",
     "Mörser",
+    "Kartoffelpresse oder Stampfer",
     "Schneebesen",
     "Mandoline (Salat)"
   ],
@@ -40,11 +39,11 @@
       "buy": {
         "text": "1,5 kg"
       },
-      "note": "mit Köpfen, ohne Kiemen"
+      "note": "mit Köpfen, ohne Kiemen; kein Seeteufel/Heilbutt"
     },
     {
-      "id": "heilbutt",
-      "name": "Heilbutt oder Seeteufel",
+      "id": "kabeljau-ruecken",
+      "name": "Kabeljau-Rücken oder Dorade",
       "store": "Buhara Seafood",
       "group": "Fleisch & Fisch",
       "buy": {
@@ -138,7 +137,7 @@
       "store": "REWE Center",
       "group": "Obst & Gemüse",
       "buy": {
-        "text": "4"
+        "text": "5"
       },
       "note": "Rouille"
     },
@@ -177,7 +176,7 @@
       "buy": {
         "text": "3"
       },
-      "note": "1 für einen daumengroßen Streifen Zeste im Fond, 2 mittelgroße Navel für den Salat"
+      "note": "1 für 2 daumengroße Streifen Zeste im Fond, 2 mittelgroße Navel für den Salat — oder 1 Orange + 1 Pink Grapefruit, weniger Zucker, siehe GDM-Sektion"
     },
     {
       "id": "zitrone",
@@ -197,25 +196,14 @@
       "note": "oder das Fenchelgrün verwenden"
     },
     {
-      "id": "kartoffel",
-      "name": "kleine mehligkochende Kartoffel",
+      "id": "kartoffeln",
+      "name": "mehligkochende Kartoffeln",
       "store": "REWE Center",
       "group": "Obst & Gemüse",
       "buy": {
-        "text": "1"
+        "text": "200 g"
       },
-      "optional": true,
-      "note": "\\~80 g, für mehr Stand in der Rouille"
-    },
-    {
-      "id": "eier",
-      "name": "sehr frisches Ei",
-      "store": "REWE Center",
-      "group": "Milchprodukte & Eier",
-      "buy": {
-        "text": "1"
-      },
-      "note": "nur das Eigelb, roh verarbeitet"
+      "note": "Rouille, Kartoffel-Basis ohne Ei"
     },
     {
       "id": "dosentomaten",
@@ -238,14 +226,14 @@
       "note": "Taggiasca oder Kalamata"
     },
     {
-      "id": "sardellenfilets",
-      "name": "Sardellenfilets",
+      "id": "kapern",
+      "name": "Kapern",
       "store": "REWE Center",
       "group": "Trockenwaren",
       "buy": {
-        "text": "2–3"
+        "text": "1 EL"
       },
-      "note": "oder 1 EL Kapern"
+      "note": "ersetzen die Sardellen"
     },
     {
       "id": "pistazien",
@@ -259,23 +247,15 @@
       "note": "grob gehackt"
     },
     {
-      "id": "weisswein",
-      "name": "trockener Weißwein",
+      "id": "vollkorn-sauerteigbrot",
+      "name": "Scheiben Vollkorn-Sauerteigbrot",
       "store": "REWE Center",
-      "group": "Getränke",
+      "group": "Trockenwaren",
       "buy": {
-        "text": "200 ml"
-      }
-    },
-    {
-      "id": "pastis",
-      "name": "kleine Flasche Pastis/Pernod",
-      "store": "REWE Center",
-      "group": "Getränke",
-      "buy": {
-        "text": "1"
+        "text": "3"
       },
-      "note": "gebraucht: 2 EL — Rest hält ewig, klassischer Küchen-Anis"
+      "optional": true,
+      "note": "KH-Beilage, 1 pro Person, siehe GDM-Sektion"
     },
     {
       "id": "safran",
@@ -293,8 +273,9 @@
       "store": "REWE Center",
       "group": "Würzmittel & Gewürze",
       "buy": {
-        "text": "1 TL"
-      }
+        "text": "1½ TL"
+      },
+      "note": "1 TL Fond, ½ TL für die Anisnote in der Reduktion"
     },
     {
       "id": "sternanis",
@@ -323,6 +304,16 @@
         "text": "1 EL"
       },
       "pantry": true
+    },
+    {
+      "id": "weissweinessig",
+      "name": "Weißweinessig",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1 EL"
+      },
+      "pantry": true,
+      "note": "ersetzt den Wein beim Ablöschen"
     },
     {
       "id": "pfefferkoerner",
@@ -372,7 +363,7 @@
       "type": "markdown",
       "title": "Fisch-Optionen",
       "level": 2,
-      "markdown": "**Erste Anlaufstelle: Buhara Seafood** (vorher anrufen — Karkassen und\nWunsch-Filets bestellen); Fallback Selgros (TK). In dieser Reihenfolge fragen:\n\n| Variante | Fisch | Anmerkung |\n|---|---|---|\n| **A – Premium** | Seeteufel + Petersfisch (St. Pierre) + Gambas | Authentisch mediterran, selten verfügbar |\n| **B – Empfehlung** | Heilbutt + Wolfsbarsch-Filet + Gambas | Zuverlässig gräten-frei, hält Garzeit gut aus |\n| **C – Plan B** | Kabeljau-Rückenfilet (dickes Mittelstück) + Seeteufel + Gambas | Solider Backup |\n\n**Bonus:** 200–300 g Vongole (Venusmuscheln), falls frisch verfügbar.\n\n**Beim Bestellen wichtig:**\n\n- Fischkarkassen (1,5 kg, mit Köpfen, **ohne Kiemen** — machen den Fond bitter)\n- Keine fetten Fische wie Lachs/Makrele in den Karkassen\n- Filets pinzetten-geprüft bestellen (wegen Kind)\n- Knurrhahn-/Drachenkopf-Karkassen wären der Jackpot"
+      "markdown": "**Erste Anlaufstelle: Buhara Seafood** (vorher anrufen — Karkassen und Wunsch-Filets bestellen);\nFallback Selgros (TK). Alle genannten Fische sind laut BfR für Schwangere unkritisch. In dieser\nReihenfolge fragen:\n\n| Variante | Fester Fisch (zuerst in den Topf) | Zarter Fisch | Anmerkung |\n|---|---|---|---|\n| **A – Empfehlung** | Kabeljau-Rückenfilet (dickes Mittelstück) | Wolfsbarsch-Filet | Kabeljau-Loins sind zuverlässig grätenfrei, halten die Garzeit gut |\n| **B – Mediterran** | Dorade (Filet, Haut ab) | Wolfsbarsch oder Petersfisch (St. Pierre) | Authentischer im Aroma, Dorade zerfällt etwas schneller — Garzeit im Blick |\n| **C – Plan B** | Kabeljau oder Seelachs | Dorade | Solider Backup, alles bei Buhara oder TK bei Selgros |\n\n**Bonus:** 200–300 g Vongole (Venusmuscheln), falls frisch verfügbar — nur vollständig durchgekocht\nund nur die geöffneten essen.\n\n**Nicht nehmen (Schwangerschaft):** Heilbutt, Seeteufel, Rotbarsch, Thunfisch, Schwertfisch, Aal.\nDas gilt auch für die **Karkassen** — Seeteufel-Köpfe sind sonst ein klassischer Fond-Tipp.\n\n**Beim Bestellen wichtig:**\n\n- Fischkarkassen (1,5 kg, mit Köpfen, **ohne Kiemen** — machen den Fond bitter), von Kabeljau,\n  Dorade, Wolfsbarsch, Knurrhahn, Seelachs\n- Keine fetten Fische wie Lachs/Makrele in den Karkassen\n- Filets pinzetten-geprüft bestellen (wegen Kind)\n- Knurrhahn-/Drachenkopf-Karkassen wären der Jackpot"
     },
     {
       "type": "shopping",
@@ -508,23 +499,31 @@
               "attention": "active"
             },
             {
-              "id": "mit-weisswein-abloeschen",
+              "id": "abloeschen-ohne-wein",
               "label": "4",
-              "heading": "**4. Mit Weißwein ablöschen (3 Min.)**",
-              "title": "Mit Weißwein ablöschen",
+              "heading": "**4. Ablöschen ohne Wein (2 Min.)**",
+              "title": "Ablöschen ohne Wein",
               "duration": {
-                "typical": "PT3M",
-                "source": "3 Min."
+                "typical": "PT2M",
+                "source": "2 Min."
               },
-              "text": "200 ml Weißwein angießen, den Bratsatz lösen und den Wein fast vollständig einkochen lassen — er bringt Säure und Tiefe, keine Weinnote.",
-              "action": "200 ml Weißwein angießen, den Bratsatz lösen und den Wein fast vollständig einkochen lassen — er bringt Säure und Tiefe, keine Weinnote.",
+              "text": "100 ml Wasser mit 1 EL Weißweinessig angießen, den Bratsatz lösen und fast vollständig einkochen lassen. Der Essig bringt die Säure, die im Original der Wein liefert; die Tiefe kommt später aus den Karkassen und der Reduktion.",
+              "action": "100 ml Wasser mit 1 EL Weißweinessig angießen, den Bratsatz lösen und fast vollständig einkochen lassen.",
               "ingredients": [
                 {
-                  "ref": "weisswein",
+                  "ref": "wasser",
                   "amount": {
-                    "text": "200 ml Weißwein",
-                    "value": 200.0,
+                    "text": "100 ml Wasser",
+                    "value": 100.0,
                     "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "weissweinessig",
+                  "amount": {
+                    "text": "1 EL Weißweinessig",
+                    "value": 1.0,
+                    "unit": "EL"
                   }
                 }
               ],
@@ -593,7 +592,7 @@
                 "source": "ca. 10 Min.",
                 "estimated": true
               },
-              "text": "Mit ca. 2,5 L kaltem Wasser auffüllen (alles knapp bedeckt). Dazu: 1 TL Fenchelsamen, 1 TL Pfefferkörner, 1 Sternanis, 2 Lorbeerblätter, 5 Zweige Thymian, die Petersilienstiele (Blätter fürs Anrichten aufheben), 1 daumengroßer Streifen Orangenzeste, 1 TL Salz. Aufkochen, dann auf kleinste Stufe.",
+              "text": "Mit ca. 2,5 L kaltem Wasser auffüllen (alles knapp bedeckt). Dazu: 1 TL Fenchelsamen, 1 TL Pfefferkörner, 1 Sternanis, 2 Lorbeerblätter, 5 Zweige Thymian, die Petersilienstiele (Blätter fürs Anrichten aufheben), Orangenzeste (2 daumengroße Streifen), 1 TL Salz. Aufkochen, dann auf kleinste Stufe.",
               "action": "Mit ca.",
               "ingredients": [
                 {
@@ -642,14 +641,6 @@
                     "text": "5 Zweige Thymian",
                     "value": 5.0,
                     "unit": "Zweige"
-                  }
-                },
-                {
-                  "ref": "orangen",
-                  "amount": {
-                    "text": "1 daumengroßer Streifen Orangenzeste",
-                    "value": 1.0,
-                    "unit": "Stück"
                   }
                 },
                 {
@@ -712,22 +703,19 @@
               "attention": "active"
             },
             {
-              "id": "reduzieren-pastis",
+              "id": "reduzieren-anisnote",
               "label": "10",
-              "heading": "**10. Reduzieren & Pastis (25 Min.)**",
-              "title": "Reduzieren & Pastis",
+              "heading": "**10. Reduzieren & Anisnote (25 Min.)**",
+              "title": "Reduzieren & Anisnote",
               "duration": {
                 "typical": "PT25M",
                 "source": "25 Min."
               },
-              "text": "Auf ca. 1,5 L einreduzieren — intensiv wie konzentrierte Fischessenz.\n**2 EL Pastis in den letzten 10 Minuten der Reduktion** zugeben (so verkocht der Alkohol weitgehend und die Anisnote verbindet sich mit Fenchel und Sternanis, statt obenauf zu liegen). Abschmecken.",
+              "text": "Auf ca. 1,5 L einreduzieren — intensiv wie konzentrierte Fischessenz. **Statt Pastis:** ½ TL Fenchelsamen im Mörser anstoßen und in den letzten 10 Minuten der Reduktion mitziehen lassen, dann durch ein kleines Sieb abfangen. Abschmecken — die Brühe darf jetzt schon kräftig gesalzen sein, der Fisch am Kochtag salzt nicht nach.",
               "action": "Auf ca.",
-              "limits": [
-                "2 EL Pastis in den letzten 10 Minuten der Reduktion"
-              ],
               "timers": [
                 {
-                  "label": "Reduzieren & Pastis",
+                  "label": "Reduzieren & Anisnote",
                   "duration": {
                     "typical": "PT10M"
                   },
@@ -736,11 +724,11 @@
               ],
               "ingredients": [
                 {
-                  "ref": "pastis",
+                  "ref": "fenchelsamen",
                   "amount": {
-                    "text": "2 EL Pastis",
-                    "value": 2.0,
-                    "unit": "EL"
+                    "text": "½ TL Fenchelsamen",
+                    "value": 0.5,
+                    "unit": "TL"
                   }
                 }
               ],
@@ -834,26 +822,53 @@
             {
               "id": "rouille-zubereiten",
               "label": "13",
-              "heading": "**13. Rouille zubereiten (ca. 25 Min.)**",
+              "heading": "**13. Rouille zubereiten (ca. 45 Min.)**",
               "title": "Rouille zubereiten",
               "duration": {
-                "typical": "PT25M",
-                "source": "ca. 25 Min.",
+                "typical": "PT45M",
+                "source": "ca. 45 Min.",
                 "estimated": true
               },
-              "text": "Klassisch, mit Eigelb: 1. 0,5 g Safran in 1 EL warmem Wasser ziehen lassen (10 Min). 2. 4 Knoblauchzehen mit ½ TL Salz im Mörser zu feiner Paste verarbeiten. 3. In einer Schüssel: 1 Eigelb, Knoblauchpaste und Safranwasser verrühren.    150 ml Olivenöl **tropfenweise** einarbeiten wie bei Mayonnaise — erst    langsam, dann im dünnen Strahl, bis eine dichte, rostfarbene Creme steht. 4. Mit 1 EL Zitronensaft, Cayenne und Salz abschmecken. Abgedeckt kalt stellen    (hält 1–2 Tage — rohes Eigelb, nicht länger). 5. *Mehr Stand gewünscht (z. B. für Crouton-Auflage): 1 kleine weichgekochte,    gut ausgedämpfte Kartoffel durch die Presse dazu — macht sie stabiler und    milder. Bricht die Emulsion: 1 TL warmes Wasser in sauberer Schüssel, die    gebrochene Masse löffelweise wieder einschlagen.*",
-              "action": "Klassisch, mit Eigelb: 1.",
-              "why": "Mehr Stand gewünscht (z. B. für Crouton-Auflage): 1 kleine weichgekochte,    gut ausgedämpfte Kartoffel durch die Presse dazu — macht sie stabiler und    milder. Bricht die Emulsion: 1 TL warmes Wasser in sauberer Schüssel, die    gebrochene Masse löffelweise wieder einschlagen.",
+              "text": "Kartoffel-Basis, ohne Ei: 1. 200 g mehligkochende Kartoffeln schälen, würfeln, in Salzwasser weichkochen (\\~20 Min).    Abgießen, im offenen Topf **gut ausdämpfen lassen** — je trockener, desto besser bindet die    Rouille. 2. 0,5 g Safran in 1 EL warmem Wasser ziehen lassen (10 Min). 3. 5 Knoblauchzehen mit ½ TL Salz im Mörser zu feiner Paste verarbeiten. Die noch warmen    Kartoffeln dazu und **glatt stampfen oder durch die Presse drücken** — keine Küchenmaschine    und kein Stabmixer, sonst wird sie gummig. 4. Safranwasser einrühren. 150 ml Olivenöl **tropfenweise** mit dem Schneebesen einarbeiten wie    bei Mayonnaise — erst langsam, dann im dünnen Strahl, bis eine dichte, rostfarbene Creme steht. 5. Mit 1 EL Zitronensaft, 1 Prise Cayenne und Salz abschmecken. Abgedeckt kalt stellen —    **hält 3 Tage** (kein rohes Ei). Vor dem Servieren 30 Min. Zimmertemperatur, dann nochmal    glatt rühren; ist sie zu fest, 1 TL warmen Fond einarbeiten.",
+              "action": "Kartoffel-Basis, ohne Ei: 1.",
+              "limits": [
+                "gut ausdämpfen lassen",
+                "glatt stampfen oder durch die Presse drücken",
+                "hält 3 Tage"
+              ],
               "timers": [
+                {
+                  "label": "Rouille zubereiten",
+                  "duration": {
+                    "typical": "PT20M",
+                    "estimated": true
+                  },
+                  "text": "\\~20 Min"
+                },
                 {
                   "label": "Rouille zubereiten",
                   "duration": {
                     "typical": "PT10M"
                   },
                   "text": "10 Min"
+                },
+                {
+                  "label": "Rouille zubereiten",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "30 Min."
                 }
               ],
               "ingredients": [
+                {
+                  "ref": "kartoffeln",
+                  "amount": {
+                    "text": "200 g mehligkochende Kartoffeln",
+                    "value": 200.0,
+                    "unit": "g"
+                  }
+                },
                 {
                   "ref": "safran",
                   "amount": {
@@ -873,8 +888,8 @@
                 {
                   "ref": "knoblauchzehen",
                   "amount": {
-                    "text": "4 Knoblauchzehen",
-                    "value": 4.0,
+                    "text": "5 Knoblauchzehen",
+                    "value": 5.0,
                     "unit": "Stück"
                   }
                 },
@@ -884,14 +899,6 @@
                     "text": "½ TL Salz",
                     "value": 0.5,
                     "unit": "TL"
-                  }
-                },
-                {
-                  "ref": "eier",
-                  "amount": {
-                    "text": "1 Eigelb",
-                    "value": 1.0,
-                    "unit": "Stück"
                   }
                 },
                 {
@@ -911,26 +918,34 @@
                   }
                 }
               ],
-              "meta": "*jederzeit*",
-              "attention": "active",
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
               "after": []
             }
           ],
-          "heading": "**Rouille (Vortag, hält 1–2 Tage, Kühlschrank):**",
+          "heading": "**Rouille (Vortag, hält 3 Tage, Kühlschrank):**",
           "phaseHint": "Vortag",
           "produces": [
             {
               "id": "rouille",
               "name": "Rouille",
               "hold": {
-                "min": "P1D",
-                "max": "P2D",
-                "source": "Vortag, hält 1–2 Tage, Kühlschrank"
+                "max": "P3D",
+                "source": "Vortag, hält 3 Tage, Kühlschrank"
               },
               "storage": {
                 "place": "fridge"
               }
             }
+          ],
+          "consumes": [
+            "product:fond"
           ]
         },
         {
@@ -947,16 +962,16 @@
                 "source": "ca. 15 Min.",
                 "estimated": true
               },
-              "text": "Die Filets — 250 g Heilbutt oder Seeteufel, 250 g Wolfsbarsch oder Petersfisch — mit Pinzette nochmal auf Restgräten kontrollieren — **besonders für das Kind**. In mundgerechte Stücke (ca. 4×4 cm) schneiden. 300 g Gambas: Schwanz dranlassen, Rest pellen. Muscheln (300 g Vongole) waschen, geöffnete Exemplare wegwerfen.",
-              "action": "Die Filets — 250 g Heilbutt oder Seeteufel, 250 g Wolfsbarsch oder Petersfisch — mit Pinzette nochmal auf Restgräten kontrollieren — **besonders für das Kind**.",
+              "text": "Die Filets — 250 g Kabeljau-Rücken oder Dorade, 250 g Wolfsbarsch oder Petersfisch — mit Pinzette nochmal auf Restgräten kontrollieren — **besonders für das Kind**. In mundgerechte Stücke (ca. 4×4 cm) schneiden. 300 g Gambas: Schwanz dranlassen, Rest pellen. Muscheln (300 g Vongole) waschen, bereits geöffnete Exemplare wegwerfen.",
+              "action": "Die Filets — 250 g Kabeljau-Rücken oder Dorade, 250 g Wolfsbarsch oder Petersfisch — mit Pinzette nochmal auf Restgräten kontrollieren — **besonders für das Kind**.",
               "limits": [
                 "besonders für das Kind"
               ],
               "ingredients": [
                 {
-                  "ref": "heilbutt",
+                  "ref": "kabeljau-ruecken",
                   "amount": {
-                    "text": "250 g Heilbutt oder Seeteufel",
+                    "text": "250 g Kabeljau-Rücken oder Dorade",
                     "value": 250.0,
                     "unit": "g"
                   }
@@ -1017,21 +1032,23 @@
             {
               "id": "fisch-garen",
               "label": "16",
-              "heading": "**16. Fisch garen (12 Min.)**",
+              "heading": "**16. Fisch garen (ca. 12 Min.)**",
               "title": "Fisch garen",
               "duration": {
                 "typical": "PT12M",
-                "source": "12 Min."
+                "source": "ca. 12 Min.",
+                "estimated": true
               },
-              "text": "Gestaffelt garen:\n| Schritt | Zeit | Was |\n|---|---|---|\n| Erst | 6 Min | Heilbutt/Seeteufel (festerer Fisch) |\n| Dann | 3 Min | Wolfsbarsch/Petersfisch (zarter) |\n| Zuletzt | 3 Min | Gambas + Muscheln | Geschlossen gebliebene Muscheln wegwerfen.",
-              "action": "Gestaffelt garen:\n| Schritt | Zeit | Was |\n|---|---|---|\n| Erst | 6 Min | Heilbutt/Seeteufel (festerer Fisch) |\n| Dann | 3 Min | Wolfsbarsch/Petersfisch (zarter) |\n| Zuletzt | 3 Min | Gambas + Muscheln | Geschlossen gebliebene Muscheln wegwerfen.",
+              "text": "Gestaffelt — alles durch:\n| Schritt | Zeit | Was |\n|---|---|---|\n| Erst | 5–6 Min | Kabeljau bzw. Dorade (fester Fisch) |\n| Dann | 3 Min | Wolfsbarsch/Petersfisch (zarter) |\n| Zuletzt | 3–4 Min | Gambas + Muscheln |",
+              "action": "Gestaffelt — alles durch:\n| Schritt | Zeit | Was |\n|---|---|---|\n| Erst | 5–6 Min | Kabeljau bzw.",
               "timers": [
                 {
                   "label": "Fisch garen",
                   "duration": {
-                    "typical": "PT6M"
+                    "min": "PT5M",
+                    "max": "PT6M"
                   },
-                  "text": "6 Min"
+                  "text": "5–6 Min"
                 },
                 {
                   "label": "Fisch garen",
@@ -1043,9 +1060,10 @@
                 {
                   "label": "Fisch garen",
                   "duration": {
-                    "typical": "PT3M"
+                    "min": "PT3M",
+                    "max": "PT4M"
                   },
-                  "text": "3 Min"
+                  "text": "3–4 Min"
                 }
               ],
               "ingredients": [],
@@ -1056,7 +1074,7 @@
                   "units": 1
                 }
               ],
-              "attention": "attended",
+              "attention": "active",
               "after": [
                 "step:bruehe-erhitzen",
                 "step:fisch-vorbereiten"
@@ -1140,9 +1158,10 @@
                 "typical": "PT5M",
                 "source": "5 Min."
               },
-              "text": "**2 Orangen filetieren:** oben und unten kappen, Schale samt weißer Haut wegschneiden. Über einer Schüssel zwischen den Häuten die Filets herauslösen. **Saft auffangen!**",
-              "action": "**2 Orangen filetieren:** oben und unten kappen, Schale samt weißer Haut wegschneiden.",
+              "text": "**2 Orangen filetieren** (oder eine Orange und eine Pink Grapefruit): oben und unten kappen, Schale samt weißer Haut wegschneiden. Über einer Schüssel zwischen den Häuten die Filets herauslösen.\n**Saft auffangen!**",
+              "action": "**2 Orangen filetieren** (oder eine Orange und eine Pink Grapefruit): oben und unten kappen, Schale samt weißer Haut wegschneiden.",
               "limits": [
+                "2 Orangen filetieren",
                 "Saft auffangen!"
               ],
               "ingredients": [
@@ -1205,7 +1224,7 @@
                 "typical": "PT3M",
                 "source": "3 Min."
               },
-              "text": "Aufgefangener Orangensaft + Saft von ½ Zitrone + 3–4 EL Olivenöl + Salz + Pfeffer verquirlen. 2–3 Sardellenfilets sehr fein hacken und einrühren (salzige Tiefe; Alternative: Kapern grob gehackt).",
+              "text": "Aufgefangener Orangensaft + Saft von ½ Zitrone + 3–4 EL Olivenöl + Salz + Pfeffer verquirlen. 1 EL Kapern grob hacken und einrühren — sie liefern die salzige Tiefe, die im Original die Sardellen bringen.",
               "action": "Aufgefangener Orangensaft + Saft von ½ Zitrone + 3–4 EL Olivenöl + Salz + Pfeffer verquirlen.",
               "ingredients": [
                 {
@@ -1226,12 +1245,11 @@
                   }
                 },
                 {
-                  "ref": "sardellenfilets",
+                  "ref": "kapern",
                   "amount": {
-                    "text": "2–3 Sardellenfilets",
-                    "value": 2.0,
-                    "unit": "Stück",
-                    "max": 3.0
+                    "text": "1 EL Kapern",
+                    "value": 1.0,
+                    "unit": "EL"
                   }
                 }
               ],
@@ -1314,19 +1332,25 @@
       "type": "markdown",
       "title": "> ⚠️ Nur **knapp unter dem Sieden** halt",
       "level": "bold",
-      "markdown": "> ⚠️ Nur **knapp unter dem Sieden** halten, nicht sprudelnd kochen — sonst\n> wird die Brühe trüb und der Fisch zerfällt."
+      "markdown": "> ⚠️ Nur **knapp unter dem Sieden** halten, nicht sprudelnd kochen — sonst wird die Brühe trüb\n> und der Fisch zerfällt."
+    },
+    {
+      "type": "markdown",
+      "title": "Garprobe",
+      "level": "bold",
+      "markdown": "**Garprobe:** Das dickste Kabeljaustück muss sich in undurchsichtige Blätter teilen lassen,\nGambas komplett opak und gekrümmt, Muscheln weit geöffnet — geschlossen gebliebene wegwerfen.\nLieber 1 Minute länger als glasig: „à point\" ist hier nicht das Ziel."
     },
     {
       "type": "markdown",
       "title": "> Klassischer sizilianischer *Insalata d",
       "level": "bold",
-      "markdown": "> Klassischer sizilianischer *Insalata di Finocchi e Arance*. Die Aromen\n> spiegeln die Brühe — verbindet Vorspeise und Hauptgang harmonisch."
+      "markdown": "> Klassischer sizilianischer *Insalata di Finocchi e Arance*. Die Aromen spiegeln die Brühe —\n> verbindet Vorspeise und Hauptgang harmonisch."
     },
     {
       "type": "markdown",
       "title": "Timing",
       "level": "bold",
-      "markdown": "**Timing:** Kochtag, während die Brühe langsam erhitzt (15 Min aktive Zeit,\ndann 5–10 Min ziehen lassen)."
+      "markdown": "**Timing:** Kochtag, während die Brühe langsam erhitzt (15 Min aktive Zeit, dann 5–10 Min ziehen\nlassen)."
     },
     {
       "type": "schedule",
@@ -1402,9 +1426,18 @@
     },
     {
       "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "**Was geändert wurde und warum** (Details im [Leitfaden](/schwangerschaft/leitfaden.md)):\n\n| Original | Hier | Grund |\n|---|---|---|\n| Heilbutt / Seeteufel in allen Fischvarianten | Kabeljau, Wolfsbarsch, Dorade, Petersfisch | Methylquecksilber (BfR-Liste) |\n| 200 ml Weißwein zum Ablöschen | 100 ml Wasser + 1 EL Weißweinessig | Alkohol — nach 40 Min. Kochen bleibt laut USDA noch \\~35 % im Topf |\n| 2 EL Pastis in der Reduktion | ½ TL Fenchelsamen extra + 2 Zesten | Alkohol; Anisnote bleibt |\n| Rouille mit rohem Eigelb | Kartoffel-Emulsion (Reine Sammut) | Salmonellen; hält obendrein 3 statt 1–2 Tage |\n| Sardellen im Dressing | 1 EL Kapern | Salzgereift, nicht erhitzt — konservativ weggelassen |\n| Muscheln optional | Optional, aber nur weit geöffnet und durchgekocht | Listerien/Vibrionen in rohen oder halbgaren Muscheln |\n\n**Kohlenhydrate pro Portion** (Näherungswerte, USDA FoodData Central):\n\n| Komponente | KH |\n|---|---|\n| Brühe + Gemüse | \\~5–7 g |\n| Kartoffel-Rouille (1–2 EL) | \\~5 g |\n| Salat mit 1 Orange pro Person | \\~8 g |\n| **Gesamt ohne Brot** | **\\~18–20 g** |\n| + 1 Scheibe Vollkorn-Sauerteig (\\~50 g) | +12 g |\n\nDas ist eine bewusst kleine KH-Mahlzeit mit viel Protein (Fisch, Gambas) und Fett (Rouille,\nOlivenöl) — genau die Kombination, die den Blutzucker dämpft. **Nicht weglassen:** die eine\nScheibe Vollkornbrot oder alternativ die Rouille als KH-Quelle — Leitfaden-Regel 1 (Beilage\nschrumpfen, nicht streichen). Wer die Werte streng halten muss: 1 Orange + 1 Pink Grapefruit\nstatt 2 Orangen (Grapefruit hat \\~⅓ weniger Zucker und passt zur Brühe sogar besser), Rouille auf\n1–2 TL pro Teller. Nach dem Essen ein Spaziergang — die Suppe verträgt Wartezeit, der Salat nicht.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
       "title": "Kinder-Anpassung",
       "level": 2,
-      "markdown": "- **Suppe:** Mini-Schüssel mit klarer Brühe und kleinen Fischstücken, Rouille\n  daneben (selbst entscheiden lassen). Alkohol: Wein und Pastis kochen 25–40\n  Min. offen mit bzw. ein — die Restmenge in einer Kinderportion ist\n  vernachlässigbar; wer ganz sicher gehen will, zweigt die Kinderbrühe vor\n  der Pastis-Zugabe (siehe „Reduzieren & Pastis“) ab.\n- **Rouille enthält rohes Eigelb** — beim Kleinkind sparsam bzw. nach eigenem\n  Ermessen; sehr frische Eier verwenden.\n- **Salat:** separate Schale mit Fenchel + Orangenstücken + mildem Dressing\n  (weniger Zitrone, ohne Sardellen). Oliven nach Gusto — bekannter Treffer.\n- **Gambas/Muscheln:** Schwänze und Schalen vorm Servieren entfernen, jedes\n  Fischstück nochmal auf Gräten prüfen.",
+      "markdown": "- **Suppe:** Mini-Schüssel mit klarer Brühe und kleinen Fischstücken, Rouille daneben (selbst\n  entscheiden lassen). Kein Alkohol im Gericht, die Rouille ist ohne rohes Ei — beides diesmal\n  ohne Vorbehalt kindertauglich.\n- **Salat:** separate Schale mit Fenchel + Orangenstücken + mildem Dressing (weniger Zitrone,\n  ohne Kapern). Oliven nach Gusto — bekannter Treffer.\n- **Gambas/Muscheln:** Schwänze und Schalen vorm Servieren entfernen, jedes Fischstück nochmal\n  auf Gräten prüfen.",
       "tags": [
         "kind"
       ]
@@ -1413,7 +1446,7 @@
       "type": "markdown",
       "title": "Notizen",
       "level": 2,
-      "markdown": "- **Safran:** bei 1,5 g nicht knausern — Billigware funktioniert kaum, La\n  Mancha oder iranisch. Bei schlechtem Safran fehlt der Suppe das Rückgrat.\n- **Fisch:** was der Händler heute am frischsten hat, schlägt jede\n  Empfehlung. Explizit fragen.\n- **Olivenöl:** gutes extra vergine; in der Rouille schmeckt man jeden\n  Tropfen — dort ein mildes wählen, sonst kippt sie bitter.\n- **Reste:** pure Brühe (ohne Fisch) 3 Tage im Kühlschrank, friert sehr gut\n  ein (Eiswürfelformen → Basis für später; auch der Oktopus-Schmorsud-Trick\n  funktioniert umgekehrt). Mit Fisch: nur 1 Tag, danach gummig. Rouille:\n  1–2 Tage (rohes Ei). Salat: nicht aufbewahren, Fenchel wird wässrig.",
+      "markdown": "- **Safran:** bei 1,5 g nicht knausern — Billigware funktioniert kaum, La Mancha oder iranisch.\n  Bei schlechtem Safran fehlt der Suppe das Rückgrat.\n- **Fisch:** was der Händler heute am frischsten hat, schlägt jede Empfehlung — aber innerhalb\n  der Unbedenklichkeitsliste. Explizit fragen und bei unbekannten Namen nachschlagen.\n- **Olivenöl:** gutes extra vergine; in der Rouille schmeckt man jeden Tropfen — dort ein mildes\n  wählen, sonst kippt sie bitter.\n- **Reste:** pure Brühe (ohne Fisch) 3 Tage im Kühlschrank, friert sehr gut ein (Eiswürfelformen\n  → Basis für später). Mit Fisch: nur 1 Tag, danach gummig, und für Schwangere aufgewärmt\n  vollständig durchhitzen. Rouille: 3 Tage. Salat: nicht aufbewahren, Fenchel wird wässrig.",
       "tags": [
         "notizen"
       ]
@@ -1422,15 +1455,15 @@
       "type": "markdown",
       "title": "Quellen & Entscheidungen",
       "level": 2,
-      "markdown": "- **Re-Klassifizierung 07/2026:** Das Rezept war ursprünglich als\n  schwangerschafts-sichere Version angelegt (ohne Alkohol, Kartoffel-Rouille\n  nach Reine Sammut, *Cuisine de Provence*, keine Sardellen, KH-Tracking).\n  Jetzt zurückgebaut auf die klassische Form: Weißwein zum Ablöschen, Pastis\n  in der Reduktion, Rouille als Eigelb-Emulsion, Sardellen im Salat-Dressing.\n  Die Kartoffel bleibt als dokumentierte Stand-Option in der Rouille —\n  beide Formen sind provenzalisch belegt.\n- **Pastis in die Reduktion statt am Ende:** verkocht den Alkohol weitgehend\n  und integriert die Anisnote — roh zugegossen liegt sie obenauf.\n- **Karkassen ohne Kiemen, max. 45 Min:** Standard-Fischfond-Regeln gegen\n  Bitterkeit und Trübung.",
+      "markdown": "- **Basis ist das aktuelle Original** [`gerichte/bouillabaisse.md`](/gerichte/bouillabaisse.md);\n  die Schwangerschafts-Änderungen entsprechen der ersten Fassung dieses Rezepts aus 05/2026, die\n  damals aus demselben Grund so gebaut war — nur die Fischliste ist neu, weil die damalige Version\n  Heilbutt und Seeteufel noch für unkritisch hielt.\n- **Kartoffel-Rouille** nach Reine Sammut, *Cuisine de Provence* — die ältere provenzalische\n  Form (Kartoffel oder eingeweichtes Brot als Basis), beide Formen sind belegt; hier als\n  Ei-freie Variante gewählt.\n- **Fischauswahl** nach BfR-FAQ „Methylquecksilber — warum Schwangere und Stillende manche\n  Fischarten meiden sollten\" (04/2026; verlinkt im Leitfaden): Heilbutt, Seeteufel, Rotbarsch,\n  Thunfisch, Schwertfisch, Hai, Aal meiden; Kabeljau, Seelachs, Wolfsbarsch, Dorade, Forelle,\n  Garnelen unkritisch.\n- **Alkohol-Restgehalt:** USDA Table of Nutrient Retention Factors — nach 30 Min. Kochen\n  \\~35 %, nach 2,5 Std. \\~5 % der zugegebenen Menge. Bei 40 Min. Fond + 25 Min. Reduktion wäre\n  vom Wein noch ein spürbarer Rest übrig; deshalb weglassen statt „verkochen\".\n- **Karkassen ohne Kiemen, max. 45 Min:** Standard-Fischfond-Regeln gegen Bitterkeit und Trübung.",
       "tags": [
         "quellen"
       ]
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T18:53:13Z",
-    "sourceHash": "147d5a5493b43669",
+    "generatedAt": "2026-10-05T18:53:14Z",
+    "sourceHash": "2ca1e11316d49a6a",
     "quantities": [
       {
         "ingredient": "fischkarkassen",
@@ -1446,7 +1479,7 @@
         }
       },
       {
-        "ingredient": "heilbutt",
+        "ingredient": "kabeljau-ruecken",
         "total": {
           "text": "250 g",
           "value": 250.0,
@@ -1455,7 +1488,7 @@
           "approx": false
         },
         "perTask": {
-          "fischeinlage": "250 g Heilbutt oder Seeteufel"
+          "fischeinlage": "250 g Kabeljau-Rücken oder Dorade"
         }
       },
       {
@@ -1566,14 +1599,14 @@
       {
         "ingredient": "knoblauchzehen",
         "total": {
-          "text": "4",
-          "value": 4.0,
-          "max": 4.0,
+          "text": "5",
+          "value": 5.0,
+          "max": 5.0,
           "unit": "Stück",
           "approx": false
         },
         "perTask": {
-          "rouille": "4 Knoblauchzehen"
+          "rouille": "5 Knoblauchzehen"
         }
       },
       {
@@ -1612,14 +1645,13 @@
       {
         "ingredient": "orangen",
         "total": {
-          "text": "3",
-          "value": 3.0,
-          "max": 3.0,
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
           "unit": "Stück",
           "approx": false
         },
         "perTask": {
-          "fond": "1 daumengroßer Streifen Orangenzeste",
           "fenchel-orange-salat": "2 Orangen"
         }
       },
@@ -1645,23 +1677,16 @@
         "perTask": {}
       },
       {
-        "ingredient": "kartoffel",
+        "ingredient": "kartoffeln",
         "total": {
-          "text": ""
-        },
-        "perTask": {}
-      },
-      {
-        "ingredient": "eier",
-        "total": {
-          "text": "1",
-          "value": 1.0,
-          "max": 1.0,
-          "unit": "Stück",
+          "text": "200 g",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "g",
           "approx": false
         },
         "perTask": {
-          "rouille": "1 Eigelb"
+          "rouille": "200 g mehligkochende Kartoffeln"
         }
       },
       {
@@ -1691,16 +1716,16 @@
         }
       },
       {
-        "ingredient": "sardellenfilets",
+        "ingredient": "kapern",
         "total": {
-          "text": "2–3",
-          "value": 2.0,
-          "max": 3.0,
-          "unit": "Stück",
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
           "approx": false
         },
         "perTask": {
-          "fenchel-orange-salat": "2–3 Sardellenfilets"
+          "fenchel-orange-salat": "1 EL Kapern"
         }
       },
       {
@@ -1717,30 +1742,11 @@
         }
       },
       {
-        "ingredient": "weisswein",
+        "ingredient": "vollkorn-sauerteigbrot",
         "total": {
-          "text": "200 ml",
-          "value": 200.0,
-          "max": 200.0,
-          "unit": "ml",
-          "approx": false
+          "text": ""
         },
-        "perTask": {
-          "fond": "200 ml Weißwein"
-        }
-      },
-      {
-        "ingredient": "pastis",
-        "total": {
-          "text": "2 EL",
-          "value": 2.0,
-          "max": 2.0,
-          "unit": "EL",
-          "approx": false
-        },
-        "perTask": {
-          "fond": "2 EL Pastis"
-        }
+        "perTask": {}
       },
       {
         "ingredient": "safran",
@@ -1759,14 +1765,14 @@
       {
         "ingredient": "fenchelsamen",
         "total": {
-          "text": "1 TL",
-          "value": 1.0,
-          "max": 1.0,
+          "text": "1½ TL",
+          "value": 1.5,
+          "max": 1.5,
           "unit": "TL",
           "approx": false
         },
         "perTask": {
-          "fond": "1 TL Fenchelsamen"
+          "fond": "1 TL Fenchelsamen + ½ TL Fenchelsamen"
         }
       },
       {
@@ -1808,6 +1814,19 @@
         },
         "perTask": {
           "fond": "1 EL Tomatenmark"
+        }
+      },
+      {
+        "ingredient": "weissweinessig",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "fond": "1 EL Weißweinessig"
         }
       },
       {
@@ -1867,14 +1886,14 @@
       {
         "ingredient": "wasser",
         "total": {
-          "text": "2500 ml (+ EL ungemischt)",
-          "value": 2500.0,
-          "max": 2500.0,
+          "text": "2600 ml (+ EL ungemischt)",
+          "value": 2600.0,
+          "max": 2600.0,
           "unit": "ml",
           "approx": false
         },
         "perTask": {
-          "fond": "2,5 L kaltem Wasser"
+          "fond": "100 ml Wasser + 2,5 L kaltem Wasser"
         },
         "unitMixed": true
       }
@@ -1899,11 +1918,11 @@
             "buy": {
               "text": "1,5 kg"
             },
-            "note": "mit Köpfen, ohne Kiemen"
+            "note": "mit Köpfen, ohne Kiemen; kein Seeteufel/Heilbutt"
           },
           {
-            "ingredient": "heilbutt",
-            "name": "Heilbutt oder Seeteufel",
+            "ingredient": "kabeljau-ruecken",
+            "name": "Kabeljau-Rücken oder Dorade",
             "need": {
               "text": "250 g",
               "value": 250.0,
@@ -2064,16 +2083,16 @@
             "ingredient": "knoblauchzehen",
             "name": "Knoblauchzehen",
             "need": {
-              "text": "4",
-              "value": 4.0,
-              "max": 4.0,
+              "text": "5",
+              "value": 5.0,
+              "max": 5.0,
               "unit": "Stück",
               "approx": false
             },
-            "display": "4",
+            "display": "5",
             "inStock": false,
             "buy": {
-              "text": "4"
+              "text": "5"
             },
             "note": "Rouille"
           },
@@ -2125,18 +2144,18 @@
             "ingredient": "orangen",
             "name": "Orangen, bio",
             "need": {
-              "text": "3",
-              "value": 3.0,
-              "max": 3.0,
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
               "unit": "Stück",
               "approx": false
             },
-            "display": "3",
+            "display": "2",
             "inStock": false,
             "buy": {
               "text": "3"
             },
-            "note": "1 für einen daumengroßen Streifen Zeste im Fond, 2 mittelgroße Navel für den Salat"
+            "note": "1 für 2 daumengroße Streifen Zeste im Fond, 2 mittelgroße Navel für den Salat — oder 1 Orange + 1 Pink Grapefruit, weniger Zucker, siehe GDM-Sektion"
           },
           {
             "ingredient": "zitrone",
@@ -2166,41 +2185,21 @@
             "note": "oder das Fenchelgrün verwenden"
           },
           {
-            "ingredient": "kartoffel",
-            "name": "kleine mehligkochende Kartoffel",
+            "ingredient": "kartoffeln",
+            "name": "mehligkochende Kartoffeln",
             "need": {
-              "text": ""
-            },
-            "display": "",
-            "inStock": false,
-            "buy": {
-              "text": "1"
-            },
-            "optional": true,
-            "note": "\\~80 g, für mehr Stand in der Rouille"
-          }
-        ]
-      },
-      {
-        "store": "REWE Center",
-        "group": "Milchprodukte & Eier",
-        "items": [
-          {
-            "ingredient": "eier",
-            "name": "sehr frisches Ei",
-            "need": {
-              "text": "1",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "Stück",
+              "text": "200 g",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "g",
               "approx": false
             },
-            "display": "1",
+            "display": "200 g",
             "inStock": false,
             "buy": {
-              "text": "1"
+              "text": "200 g"
             },
-            "note": "nur das Eigelb, roh verarbeitet"
+            "note": "Rouille, Kartoffel-Basis ohne Ei"
           }
         ]
       },
@@ -2243,21 +2242,21 @@
             "note": "Taggiasca oder Kalamata"
           },
           {
-            "ingredient": "sardellenfilets",
-            "name": "Sardellenfilets",
+            "ingredient": "kapern",
+            "name": "Kapern",
             "need": {
-              "text": "2–3",
-              "value": 2.0,
-              "max": 3.0,
-              "unit": "Stück",
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
               "approx": false
             },
-            "display": "2–3",
+            "display": "1 EL",
             "inStock": false,
             "buy": {
-              "text": "2–3"
+              "text": "1 EL"
             },
-            "note": "oder 1 EL Kapern"
+            "note": "ersetzen die Sardellen"
           },
           {
             "ingredient": "pistazien",
@@ -2276,6 +2275,20 @@
             },
             "optional": true,
             "note": "grob gehackt"
+          },
+          {
+            "ingredient": "vollkorn-sauerteigbrot",
+            "name": "Scheiben Vollkorn-Sauerteigbrot",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            },
+            "optional": true,
+            "note": "KH-Beilage, 1 pro Person, siehe GDM-Sektion"
           }
         ]
       },
@@ -2304,17 +2317,18 @@
             "ingredient": "fenchelsamen",
             "name": "Fenchelsamen",
             "need": {
-              "text": "1 TL",
-              "value": 1.0,
-              "max": 1.0,
+              "text": "1½ TL",
+              "value": 1.5,
+              "max": 1.5,
               "unit": "TL",
               "approx": false
             },
-            "display": "1 TL",
+            "display": "1½ TL",
             "inStock": false,
             "buy": {
-              "text": "1 TL"
-            }
+              "text": "1½ TL"
+            },
+            "note": "1 TL Fond, ½ TL für die Anisnote in der Reduktion"
           },
           {
             "ingredient": "sternanis",
@@ -2331,45 +2345,6 @@
             "buy": {
               "text": "1"
             }
-          }
-        ]
-      },
-      {
-        "store": "REWE Center",
-        "group": "Getränke",
-        "items": [
-          {
-            "ingredient": "weisswein",
-            "name": "trockener Weißwein",
-            "need": {
-              "text": "200 ml",
-              "value": 200.0,
-              "max": 200.0,
-              "unit": "ml",
-              "approx": false
-            },
-            "display": "200 ml",
-            "inStock": false,
-            "buy": {
-              "text": "200 ml"
-            }
-          },
-          {
-            "ingredient": "pastis",
-            "name": "kleine Flasche Pastis/Pernod",
-            "need": {
-              "text": "2 EL",
-              "value": 2.0,
-              "max": 2.0,
-              "unit": "EL",
-              "approx": false
-            },
-            "display": "2 EL",
-            "inStock": false,
-            "buy": {
-              "text": "1"
-            },
-            "note": "gebraucht: 2 EL — Rest hält ewig, klassischer Küchen-Anis"
           }
         ]
       },
@@ -2411,6 +2386,24 @@
               "text": "1 EL"
             },
             "pantry": true
+          },
+          {
+            "ingredient": "weissweinessig",
+            "name": "Weißweinessig",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 EL"
+            },
+            "pantry": true,
+            "note": "ersetzt den Wein beim Ablöschen"
           },
           {
             "ingredient": "pfefferkoerner",
@@ -2484,13 +2477,13 @@
             "ingredient": "wasser",
             "name": "Wasser",
             "need": {
-              "text": "2500 ml (+ EL ungemischt)",
-              "value": 2500.0,
-              "max": 2500.0,
+              "text": "2600 ml (+ EL ungemischt)",
+              "value": 2600.0,
+              "max": 2600.0,
               "unit": "ml",
               "approx": false
             },
-            "display": "2500 ml",
+            "display": "2600 ml",
             "inStock": false,
             "pantry": true
           }

@@ -119,6 +119,13 @@
   "cooked": false
  },
  {
+  "path": "../schwangerschaft/bouillabaisse.json",
+  "title": "Bouillabaisse mit Fenchel-Orange-Salat (Schwangerschafts-Version, 2 Erwachsene + Kind)",
+  "group": "schwangerschaft",
+  "wip": false,
+  "cooked": false
+ },
+ {
   "path": "../schwangerschaft/dal-baukasten.json",
   "title": "Dal-Baukasten — Grundrezept Masoor/Toor Dal + vier Varianten (4 Portionen als Hauptgericht)",
   "group": "schwangerschaft",

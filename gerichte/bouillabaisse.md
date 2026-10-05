@@ -166,7 +166,7 @@ Klassisch, mit Eigelb:
    milder. Bricht die Emulsion: 1 TL warmes Wasser in sauberer Schüssel, die
    gebrochene Masse löffelweise wieder einschlagen.*
 
-**Servieren (Kochtag, à la minute):**
+**Fischeinlage (Kochtag, à la minute):**
 
 **14. Fisch vorbereiten (ca. 15 Min.)**
 *jederzeit*
