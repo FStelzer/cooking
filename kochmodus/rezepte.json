@@ -35,6 +35,13 @@
   "cooked": true
  },
  {
+  "path": "../gerichte/bun-cha.json",
+  "title": "Bún chả (Hanoi-Style) — gegrilltes Schweinefleisch in warmem Nước chấm (4 Portionen)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": true
+ },
+ {
   "path": "../gerichte/ca-kho-to.json",
   "title": "Cá kho tộ — vietnamesischer Karamell-Schmorfisch (4 Portionen)",
   "group": "gerichte",

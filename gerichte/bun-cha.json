@@ -1,0 +1,1603 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/bun-cha",
+  "kind": "dish",
+  "title": "Bún chả (Hanoi-Style) — gegrilltes Schweinefleisch in warmem Nước chấm (4 Portionen)",
+  "status": "done",
+  "yields": {
+    "text": "4 Portionen",
+    "value": 4.0,
+    "unit": "Portionen"
+  },
+  "intro": "*Aktive Zeit \\~1,5 Std. (überwiegend Schnippelei) + 1–3 Std. Marinieren (oder über Nacht) + \\~20 Min. Grillzeit, gesamt \\~3–5 Std. Equipment: Gasgrill, Grillkorb, kleiner Topf für die Sauce, großer Topf für Nudeln.*\n\nNord-vietnamesisches Mittagsgericht und nach Phở das Wahrzeichen Hanois: **zwei** Sorten gegrilltes Schwein — gewürzte Hackbällchen (*chả*) und marinierte Schweinebauchscheiben (*thịt*) — schwimmen in einer **lauwarmen, stark verdünnten Nước-chấm-Schale**. Daneben: kalte Reisfadennudeln (*bún*), ein Berg Kräuter und Salat, Kohlrabi-Karotten-Pickle. Jeder taucht selbst zusammen, statt eine fertige Bowl zu essen.\n\nZwei Dinge unterscheiden das vom bisherigen Vietnam-Repertoire:\n- Die Nord-Sauce ist **brühig und mild** — man muss sie löffelweise trinken können. Deutlich mehr Wasser als die spitze Süd-Version, ausbalanciert salzig/sauer/süß.\n- Die Marinade ist bewusst schlank: **kein Zitronengras, kein Fünf-Gewürz.** Fischsauce, Nước màu (dunkles Karamell), Schalotte, Knoblauch, viel schwarzer Pfeffer, etwas Austernsauce. Die Karamell-Technik aus dem [Thịt kho](thit-kho-trung.md) wird direkt übernommen.",
+  "times": {
+    "text": "Aktive Zeit ~1,5 Std. (überwiegend Schnippelei) + 1–3 Std. Marinieren (oder über Nacht) + ~20 Min. Grillzeit, gesamt ~3–5 Std.",
+    "active": {
+      "min": "PT8H",
+      "max": "PT14H",
+      "source": "über Nacht"
+    },
+    "total": {
+      "min": "PT3H",
+      "max": "PT5H",
+      "source": "3–5 Std."
+    }
+  },
+  "equipment": [
+    "Gasgrill",
+    "Grillkorb",
+    "kleiner Topf für die Sauce",
+    "großer Topf für Nudeln"
+  ],
+  "ingredients": [
+    {
+      "id": "bun-nudeln",
+      "name": "Bún-Nudeln, getrocknet",
+      "store": "Asialaden",
+      "buy": {
+        "text": "400 g"
+      },
+      "note": "dünne, **runde** Reisfadennudeln — nicht die flachen Bánh-phở"
+    },
+    {
+      "id": "fischsauce",
+      "name": "Fischsauce",
+      "store": "Asialaden",
+      "buy": {
+        "text": "1 Flasche"
+      },
+      "note": "Gesamtverbrauch **180 ml** — siehe Mengen-Check"
+    },
+    {
+      "id": "reisessig",
+      "name": "Reisessig",
+      "store": "Asialaden",
+      "note": "Gesamtverbrauch \\~125 ml"
+    },
+    {
+      "id": "austernsauce",
+      "name": "Austernsauce",
+      "store": "Asialaden",
+      "buy": {
+        "text": "1 Glas"
+      },
+      "note": "Verbrauch 1 EL; kleines Glas, hält ewig"
+    },
+    {
+      "id": "thai-basilikum",
+      "name": "Thai-Basilikum",
+      "store": "Asialaden",
+      "buy": {
+        "text": "1 Bund"
+      },
+      "note": "unsicher — vorher anrufen; falls nicht da: ersatzlos streichen, Minze und Koriander tragen den Kräuterteller allein"
+    },
+    {
+      "id": "fruehlingszwiebeln",
+      "name": "Frühlingszwiebeln",
+      "store": "Asialaden",
+      "buy": {
+        "text": "1 Bund"
+      },
+      "optional": true,
+      "note": "oft besser als REWE"
+    },
+    {
+      "id": "schweinehack",
+      "name": "Schweinehack, **20–25 % Fett**",
+      "store": "REWE Center",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "500–600 g"
+      },
+      "note": "Fettanteil prüfen! Standard-„gemischtes Hack\" ist ok, reines mageres Schweinehack wird trocken — im Zweifel an der Theke Nacken durchdrehen lassen"
+    },
+    {
+      "id": "schweinebauch",
+      "name": "Schweinebauch ohne Knochen, ohne Schwarte, in **\\~5 mm dünnen Scheiben**",
+      "store": "REWE Center",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "500 g"
+      },
+      "note": "an der Theke schneiden lassen; sonst am Stück kaufen und 30 Min. anfrieren, dann selbst schneiden"
+    },
+    {
+      "id": "kohlrabi",
+      "name": "Kohlrabi",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "\\~300 g"
+    },
+    {
+      "id": "karotten",
+      "name": "Karotten",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      }
+    },
+    {
+      "id": "salatgurke",
+      "name": "Salatgurke",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      }
+    },
+    {
+      "id": "kopfsalat",
+      "name": "Kopfsalat",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "oder Buttersalat"
+    },
+    {
+      "id": "minze",
+      "name": "Minze",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      }
+    },
+    {
+      "id": "koriander",
+      "name": "Koriander",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      }
+    },
+    {
+      "id": "limetten",
+      "name": "Limetten",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "4"
+      },
+      "note": "Gesamtverbrauch: 2–3 für die Sauce, Spalten für den Tisch"
+    },
+    {
+      "id": "schalotten",
+      "name": "Schalotten",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3"
+      }
+    },
+    {
+      "id": "knoblauch",
+      "name": "Knoblauch",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Knolle"
+      },
+      "note": "Gesamtverbrauch 7 Zehen — siehe Mengen-Check"
+    },
+    {
+      "id": "chilis",
+      "name": "frische rote Chilis",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1–2"
+      },
+      "note": "nur für die Erwachsenen-Schalen"
+    },
+    {
+      "id": "zucker",
+      "name": "Zucker",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "\\~190 g gesamt: Karamell, Marinade, Sauce, Pickle"
+    },
+    {
+      "id": "pfeffer",
+      "name": "Schwarzer Pfeffer, ganze Körner",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "wird großzügig gebraucht — frisch mahlen"
+    },
+    {
+      "id": "oel",
+      "name": "Neutrales Öl",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "markdown",
+      "title": "Vortag oder Kochtag früh",
+      "level": "bold",
+      "markdown": "**Vortag oder Kochtag früh:** \\~45 Min."
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Bún chả (Hanoi-Style) — gegrilltes Schweinefleisch in warmem Nước chấm (4 Portionen)",
+          "steps": [
+            {
+              "id": "nuoc-mau",
+              "label": "1",
+              "heading": "**1. Nước màu (5 Min.)**",
+              "title": "Nước màu",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "3 EL Zucker mit 1 EL Wasser im kleinen Topf zu tief bernsteinfarbenem Karamell schmelzen — Technik exakt wie beim [Thịt kho, Karamell](thit-kho-trung.md) („dunkler als man sich traut\"). Mit 2 EL heißem Wasser ablöschen (Vorsicht, spritzt), zu flüssigem Karamell verrühren, abkühlen lassen. Ergibt \\~3 EL — 2 EL für die Marinade, Rest aufheben.",
+              "action": "3 EL Zucker mit 1 EL Wasser im kleinen Topf zu tief bernsteinfarbenem Karamell schmelzen — Technik exakt wie beim [Thịt kho, Karamell](thit-kho-trung.md) („dunkler als man sich traut\").",
+              "ingredients": [
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "3 EL Zucker",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "1 EL Wasser",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "2 EL heißem Wasser",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "marinade-fleisch",
+              "label": "2",
+              "heading": "**2. Marinade & Fleisch (20 Min.)**",
+              "title": "Marinade & Fleisch",
+              "duration": {
+                "typical": "PT20M",
+                "source": "20 Min."
+              },
+              "text": "Marinade verrühren: 4 EL Fischsauce, 2 EL Nước màu, 1 EL Zucker, 1 EL Austernsauce, 3 Schalotten und 4 Knoblauchzehen sehr fein gehackt, 1 EL Öl. **Noch kein Pfeffer.**\n- Die Hälfte unter das Schweinehack (500–600 g) mischen und die Masse 3–4 Min. kräftig **schlagen/kneten, bis sie klebrig-federnd ist** — das ist die zentrale Anti-Zerfall-Maßnahme für den Grill.\n- **Jetzt \\~150 g Hackmasse für das Kind abnehmen** (siehe Kinder-Anpassung), dann den Rest mit 1,5–2 TL frisch gemahlenem Pfeffer (großzügig!) fertig kneten.\n- Andere Hälfte der Marinade mit den Schweinebauchscheiben (500 g) vermengen, ebenfalls pfeffern.",
+              "action": "Marinade verrühren: 4 EL Fischsauce, 2 EL Nước màu, 1 EL Zucker, 1 EL Austernsauce, 3 Schalotten und 4 Knoblauchzehen sehr fein gehackt, 1 EL Öl.",
+              "limits": [
+                "Noch kein Pfeffer.",
+                "schlagen/kneten, bis sie klebrig-federnd ist",
+                "Jetzt \\~150 g Hackmasse für das Kind abnehmen"
+              ],
+              "cues": [
+                "bis sie klebrig-federnd ist"
+              ],
+              "timers": [
+                {
+                  "label": "Marinade & Fleisch",
+                  "duration": {
+                    "min": "PT3M",
+                    "max": "PT4M"
+                  },
+                  "text": "3–4 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "fischsauce",
+                  "amount": {
+                    "text": "4 EL Fischsauce",
+                    "value": 4.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "1 EL Zucker",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "austernsauce",
+                  "amount": {
+                    "text": "1 EL Austernsauce",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "schalotten",
+                  "amount": {
+                    "text": "3 Schalotten",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "4 Knoblauchzehen",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "1 EL Öl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "1,5–2 TL frisch gemahlenem Pfeffer",
+                    "value": 1.5,
+                    "unit": "TL",
+                    "max": 2.0
+                  }
+                },
+                {
+                  "ref": "schweinehack",
+                  "amount": {
+                    "text": "500–600 g",
+                    "value": 500.0,
+                    "unit": "g",
+                    "max": 600.0
+                  }
+                },
+                {
+                  "ref": "schweinebauch",
+                  "amount": {
+                    "text": "500 g",
+                    "value": 500.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nach Nước màu*",
+              "attention": "active",
+              "after": [
+                "step:nuoc-mau"
+              ]
+            },
+            {
+              "id": "marinieren",
+              "label": "3",
+              "heading": "**3. Marinieren (1–3 Std., passiv)**",
+              "title": "Marinieren",
+              "duration": {
+                "min": "PT1H",
+                "max": "PT3H",
+                "source": "1–3 Std."
+              },
+              "attention": "passive",
+              "text": "Beides abgedeckt kalt stellen: 1–3 Std., besser über Nacht.",
+              "action": "Beides abgedeckt kalt stellen: 1–3 Std., besser über Nacht.",
+              "timers": [
+                {
+                  "label": "Marinieren",
+                  "duration": {
+                    "min": "PT1H",
+                    "max": "PT3H"
+                  },
+                  "text": "1–3 Std."
+                }
+              ],
+              "ingredients": []
+            },
+            {
+              "id": "pickle",
+              "label": "4",
+              "heading": "**4. Pickle (10 Min. + 1 Std. passiv)**",
+              "title": "Pickle",
+              "duration": {
+                "typical": "PT1H10M",
+                "source": "10 Min. + 1 Std."
+              },
+              "attention": "passive",
+              "text": "Kohlrabi (\\~300 g) schälen, in dünne Scheiben/Viertelscheiben hobeln (Mandoline), beide Karotten (2 Karotten) ebenso. Mit ½ TL Salz vermengen, 10 Min. stehen lassen, ausdrücken. Lake: 45 ml Reisessig, 1,5 EL Zucker, 3 EL Wasser, Prise Salz. Mindestens 1 Std. ziehen lassen — hält im Kühlschrank problemlos bis zum nächsten Tag. *Kohlrabi (su hào) ist hier kein Papaya-Notbehelf, sondern nord-vietnamesischer Standard.*",
+              "action": "Kohlrabi (\\~300 g) schälen, in dünne Scheiben/Viertelscheiben hobeln (Mandoline), beide Karotten (2 Karotten) ebenso.",
+              "why": "Kohlrabi (su hào) ist hier kein Papaya-Notbehelf, sondern nord-vietnamesischer Standard.",
+              "cues": [
+                "bis zum nächsten Tag"
+              ],
+              "timers": [
+                {
+                  "label": "Pickle",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                },
+                {
+                  "label": "Pickle",
+                  "duration": {
+                    "typical": "PT1H"
+                  },
+                  "text": "1 Std."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "karotten",
+                  "amount": {
+                    "text": "2 Karotten",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "reisessig",
+                  "amount": {
+                    "text": "45 ml Reisessig",
+                    "value": 45.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "1,5 EL Zucker",
+                    "value": 1.5,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "3 EL Wasser",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "kohlrabi",
+                  "amount": {
+                    "text": "300 g",
+                    "value": 300.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "after": []
+            },
+            {
+              "id": "sauce-basis",
+              "label": "5",
+              "heading": "**5. Sauce-Basis (10 Min.)**",
+              "title": "Sauce-Basis",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Im kleinen Topf 850 ml Wasser, 120 ml Fischsauce, 80–100 g Zucker (erst 80 g — nach dem Limetten-Zugeben in „Sauce fertigstellen & Anrichten“ abschmecken und ggf. nachsüßen) und 80 ml Reisessig erwärmen, bis der Zucker gelöst ist. **Wassermenge ist markenabhängig** (siehe Learnings): 850 ml passen zu Red Boat; kräftig-salzige Saucen wie Chin-su (Lachs) brauchen eher 1.050 ml. Im Zweifel mit 850 ml starten und schluckweise verdünnen, bis sie wirklich löffelweise trinkbar ist. **Noch ohne Limette, Knoblauch, Chili** — das kommt frisch vor dem Servieren. Zielprofil: wie eine leichte, süß-salzig-saure Brühe, löffelweise trinkbar. Wirkt sie pur zu mild, ist sie richtig — das Fleisch und der Pickle salzen/säuern nach.",
+              "action": "Im kleinen Topf 850 ml Wasser, 120 ml Fischsauce, 80–100 g Zucker (erst 80 g — nach dem Limetten-Zugeben in „Sauce fertigstellen & Anrichten“ abschmecken und ggf. nachsüßen) und 80 ml Reisessig erwärmen, bis der Zucker gelöst ist.",
+              "limits": [
+                "Wassermenge ist markenabhängig",
+                "Noch ohne Limette, Knoblauch, Chili"
+              ],
+              "cues": [
+                "bis der Zucker gelöst ist",
+                "bis sie wirklich löffelweise trinkbar ist"
+              ],
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "850 ml Wasser",
+                    "value": 850.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "fischsauce",
+                  "amount": {
+                    "text": "120 ml Fischsauce",
+                    "value": 120.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "80–100 g Zucker",
+                    "value": 80.0,
+                    "unit": "g",
+                    "max": 100.0
+                  }
+                },
+                {
+                  "ref": "reisessig",
+                  "amount": {
+                    "text": "80 ml Reisessig",
+                    "value": 80.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "fleisch-formen",
+              "label": "6",
+              "heading": "**6. Fleisch formen (15 Min.)**",
+              "title": "Fleisch formen",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "Aus der Hackmasse flache Taler formen, **\\~5 cm Durchmesser, 1,5 cm dick** — flach, kein Kugelformat (gart gleichmäßiger, mehr Röstfläche). Ergibt \\~12 Stück plus 3–4 Kinder-Taler. Bauchscheiben ggf. in 5–6 cm Stücke schneiden. Beides 20 Min. Zimmertemperatur annehmen lassen.",
+              "action": "Aus der Hackmasse flache Taler formen, **\\~5 cm Durchmesser, 1,5 cm dick** — flach, kein Kugelformat (gart gleichmäßiger, mehr Röstfläche).",
+              "limits": [
+                "\\~5 cm Durchmesser, 1,5 cm dick"
+              ],
+              "timers": [
+                {
+                  "label": "Fleisch formen",
+                  "duration": {
+                    "typical": "PT20M"
+                  },
+                  "text": "20 Min."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Marinieren*",
+              "attention": "active",
+              "after": [
+                "step:marinieren"
+              ]
+            },
+            {
+              "id": "nudeln-kraeuterteller",
+              "label": "7",
+              "heading": "**7. Nudeln & Kräuterteller (20 Min., parallel)**",
+              "title": "Nudeln & Kräuterteller",
+              "duration": {
+                "typical": "PT20M",
+                "source": "20 Min."
+              },
+              "parallel": true,
+              "text": "Parallel zum Grill-Vorheizen: 400 g Bún nach Packung kochen (meist 4–6 Min.), **kalt abschrecken**, gut abtropfen, zimmerwarm auf einer Platte anrichten. Kräuterteller: 1 Kopfsalat in Blättern, 1 Bund Minze, 1 Bund Koriander, 1 Bund Thai-Basilikum als ganze Zweige, 1 Salatgurke in Stiften. Alles nur gewaschen, nichts gezupft — man reißt bei Tisch selbst.",
+              "action": "Parallel zum Grill-Vorheizen: 400 g Bún nach Packung kochen (meist 4–6 Min.), **kalt abschrecken**, gut abtropfen, zimmerwarm auf einer Platte anrichten.",
+              "limits": [
+                "kalt abschrecken"
+              ],
+              "timers": [
+                {
+                  "label": "Nudeln & Kräuterteller",
+                  "duration": {
+                    "min": "PT4M",
+                    "max": "PT6M"
+                  },
+                  "text": "4–6 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "kopfsalat",
+                  "amount": {
+                    "text": "1 Kopfsalat",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "minze",
+                  "amount": {
+                    "text": "1 Bund Minze",
+                    "value": 1.0,
+                    "unit": "Bund"
+                  }
+                },
+                {
+                  "ref": "koriander",
+                  "amount": {
+                    "text": "1 Bund Koriander",
+                    "value": 1.0,
+                    "unit": "Bund"
+                  }
+                },
+                {
+                  "ref": "thai-basilikum",
+                  "amount": {
+                    "text": "1 Bund Thai-Basilikum",
+                    "value": 1.0,
+                    "unit": "Bund"
+                  }
+                },
+                {
+                  "ref": "salatgurke",
+                  "amount": {
+                    "text": "1 Salatgurke",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "grillen",
+              "label": "8",
+              "heading": "**8. Grillen (\\~20 Min.)**",
+              "title": "Grillen",
+              "duration": {
+                "typical": "PT20M",
+                "source": "\\~20 Min.",
+                "estimated": true
+              },
+              "text": "Gasgrill mit Haube, **zwei Zonen**: eine Seite volle Hitze, eine Seite aus/niedrig.\n- Bällchen in den **geölten Grillkorb** (fallen sonst durch bzw. reißen beim Wenden). Über direkter Hitze angrillen, **im 30-Sekunden-Takt wenden** — der Zucker in der Marinade verbrennt schnell, es soll dunkel karamellisieren, nicht verkohlen. Nach 4–5 Min. mit guter Farbe in die indirekte Zone, Haube zu, 5–8 Min. fertig ziehen (Kern 70 °C+ / nicht mehr rosa).\n- Bauchscheiben direkt auf den Rost über die heiße Zone, 1–2 Min. pro Seite bis an den Rändern verkrustet und das Fett rendert. Tropfendes Fett + geschlossene Haube liefern einen Teil des Straßen-Aromas.\n- Kinder-Taler einfach mitgrillen (gleiche Garzeit) — die Masse ist bereits mild abgezweigt, eine räumliche Trennung auf dem Rost ist nicht nötig.\n*Ausbaustufe für Durchgang 2: Räucherbox mit mildem Obstholz (Kirsche/Apfel) auf den Brenner — kein Hickory/Mesquite, das überfährt die Sauce. Erster Durchgang bewusst ohne, um eine Referenz zu haben.*",
+              "action": "Gasgrill mit Haube, **zwei Zonen**: eine Seite volle Hitze, eine Seite aus/niedrig.\n- Bällchen in den **geölten Grillkorb** (fallen sonst durch bzw. reißen beim Wenden).",
+              "limits": [
+                "zwei Zonen",
+                "geölten Grillkorb",
+                "im 30-Sekunden-Takt wenden"
+              ],
+              "why": "Ausbaustufe für Durchgang 2: Räucherbox mit mildem Obstholz (Kirsche/Apfel) auf den Brenner — kein Hickory/Mesquite, das überfährt die Sauce. Erster Durchgang bewusst ohne, um eine Referenz zu haben.",
+              "timers": [
+                {
+                  "label": "Grillen",
+                  "duration": {
+                    "min": "PT5M",
+                    "max": "PT8M"
+                  },
+                  "text": "5–8 Min."
+                },
+                {
+                  "label": "Grillen",
+                  "duration": {
+                    "min": "PT1M",
+                    "max": "PT2M"
+                  },
+                  "text": "1–2 Min."
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "min": "PT4M",
+                    "max": "PT5M",
+                    "source": "4–5 Min."
+                  },
+                  "text": "Nach 4–5 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "kern",
+                  "text": "70 °C",
+                  "value": 70
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Fleisch formen · Grill*",
+              "claims": [
+                {
+                  "resource": "grill",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:fleisch-formen"
+              ]
+            },
+            {
+              "id": "sauce-fertigstellen-anrichten",
+              "label": "9",
+              "heading": "**9. Sauce fertigstellen & Anrichten (5 Min.)**",
+              "title": "Sauce fertigstellen & Anrichten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Sauce-Basis auf **lauwarm** bringen (\\~50–60 °C, nicht heiß), Saft von 2 Limetten und 3 Zehen fein gehackten Knoblauch einrühren, abschmecken — die dritte Limette nur, wenn Säure wirklich fehlt (beim ersten Durchgang war Säure eher die dominante Note). Pro Erwachsenem eine große Schale (\\~300 ml) füllen, gehackte Chili nur in die Erwachsenen-Schalen. Gegrilltes Fleisch **direkt in die Schalen** geben, ein paar Löffel Pickle dazu — es zieht 2–3 Min., während alle sich setzen. Nudeln, Kräuterteller und restlicher Pickle in die Tischmitte.",
+              "action": "Sauce-Basis auf **lauwarm** bringen (\\~50–60 °C, nicht heiß), Saft von 2 Limetten und 3 Zehen fein gehackten Knoblauch einrühren, abschmecken — die dritte Limette nur, wenn Säure wirklich fehlt (beim ersten Durchgang war Säure eher die dominante Note).",
+              "limits": [
+                "direkt in die Schalen"
+              ],
+              "timers": [
+                {
+                  "label": "Sauce fertigstellen & Anrichten",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "halten",
+                  "text": "50–60 °C",
+                  "min": 50,
+                  "max": 60
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "limetten",
+                  "amount": {
+                    "text": "2 Limetten",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "3 Zehen fein gehackten Knoblauch",
+                    "value": 3.0,
+                    "unit": "Zehen"
+                  }
+                }
+              ],
+              "meta": "*nach Grillen, Sauce-Basis, Pickle, Nudeln & Kräuterteller · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:grillen",
+                "step:sauce-basis",
+                "step:pickle",
+                "step:nudeln-kraeuterteller"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Kochtag",
+      "level": "bold",
+      "markdown": "**Kochtag:** \\~1 Std. vor dem Essen."
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
+          },
+          {
+            "id": "vortag",
+            "label": "Vortag",
+            "day": -1
+          }
+        ],
+        "entries": [
+          {
+            "phase": "kochtag",
+            "text": "Bällchen formen, Nudeln kochen, Kräuterteller, Grill vorheizen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT60M"
+            },
+            "source": "T−1:00"
+          },
+          {
+            "phase": "kochtag",
+            "text": "Grillen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT30M"
+            },
+            "source": "T−0:30",
+            "steps": [
+              "grillen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Direkt vor dem Essen: Sauce lauwarm + Limette/Knoblauch/Chili, Fleisch in die Schalen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT5M"
+            },
+            "source": "T−0:05"
+          },
+          {
+            "phase": "vortag",
+            "text": "Nước màu, Marinade, Fleisch marinieren, Pickle, Sauce-Basis *(oder Kochtag früh)*",
+            "steps": [
+              "marinieren",
+              "nuoc-mau",
+              "pickle"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "Strukturell das kinderfreundlichste Gericht des Backlogs: Bällchen, Nudeln, Gurke, alles selbst zusammenstellbar, nichts von Haus aus scharf.\n\n- **Hackmasse:** \\~150 g **vor dem Pfeffern** abnehmen (siehe „Marinade & Fleisch“), daraus 3–4 kleine Taler.\n- **Eigene Sauce-Schale** (\\~150 ml): 120 ml warmes Wasser, 1 TL Zucker, 1 TL Fischsauce, Spritzer Limette — deutlich wässriger und süßer als die Erwachsenen-Version, **kein Chili, kein roher Knoblauch**. Chili kommt ausschließlich in die Erwachsenen-Schalen.\n- **Praxis-Erfahrung (08/2026):** Auch die milde Sauce kam beim Dreijährigen nicht an — Nudeln + Gurke/Pickle + Fleisch „trocken\" wurden dafür problemlos gegessen. Die Kinder-Schale anbieten, aber nicht drauf bauen; das Gericht funktioniert fürs Kind auch komplett ohne Sauce.\n- Bauchscheiben sind mild genug zum Mitessen; der Pfeffer sitzt vor allem in den Erwachsenen-Bällchen.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Variante: Bún thịt nướng (Süd-Stil)",
+      "level": 2,
+      "markdown": "Hier verbucht statt als eigenes Rezept, weil sich der Einkauf zu \\~90 % deckt. Delta zum Hanoi-Stil:\n\n- **Marinade:** wie oben, plus **2 Stängel Zitronengras** (nur das Zarte, sehr fein gehackt) und **1 EL Honig** statt des Nước màu. Nur **eine** Fleischsorte: Nacken oder Bauch in Scheiben, keine Bällchen.\n- **Sauce als Dressing, nicht als Bad:** klassisches Nước chấm, deutlich konzentrierter — 3 EL Fischsauce, 3 EL Limettensaft, 2 EL Zucker, 6 EL Wasser, 1 Knoblauchzehe, Chili. Kalt, **über** die Bowl gegossen.\n- **Serviert als Bowl:** Nudeln unten, Kräuter und Gurke, Fleisch obenauf, geröstete gehackte **Erdnüsse** darüber (einziger Zusatzposten auf der Einkaufsliste).\n\n→ Sinnvoll als zweiter Durchgang, wenn die Grillmechanik sitzt."
+    },
+    {
+      "type": "learnings",
+      "title": "Learnings",
+      "cooked": "08/2026",
+      "summary": "**Gekocht 08/2026.** Grundsätzlich lecker, aber nicht auf Thịt-kho-Niveau — Hauptschwäche war die Sauce: über die Mahlzeit hinweg ermüdend, weil zu intensiv. Die Rezept-Wassermenge war zu knapp bemessen und die nötige Verdünnung ist stark **markenabhängig**: Chin-su (Lachs-Version) brauchte +300 ml Wasser, selbst Red Boat +100 ml — Schritt 4 entsprechend auf 850 ml angehoben, mit Hinweis für kräftige Marken (\\~1.050 ml). Nach dem Verdünnen war die Balance okay, aber Säure leicht dominant → Limette jetzt vorsichtiger dosiert (erst 2, dritte nur nach Abschmecken). Der Dreijährige mochte auch die milde Kinder-Sauce gar nicht, hat aber Nudeln + Gemüse + Fleisch pur gern gegessen. Geschmacks-Split bei den Fleischsorten: mir schmeckten die Frikadellen am besten, Frau & Kind bevorzugten den Schweinebauch.",
+      "details": "### Sauce: Verdünnung & Fischsaucen-Marke\n\n- Direkter A/B-Vergleich beim Kochen: **Chin-su (Lachs)** deutlich kräftiger/salziger als **Red Boat** — mit den ursprünglichen 750 ml Wasser bei beiden zu intensiv, Chin-su brauchte insgesamt \\~1.050 ml, Red Boat \\~850 ml.\n- Kern-Learning fürs ganze Nước-chấm-Genre: Wassermengen aus Rezepten nie blind übernehmen, die Fischsauce bestimmt die Ratio. Immer probieren, ob die Sauce wirklich „löffelweise trinkbar\" ist — genau das war hier das Zielprofil und es wurde zunächst verfehlt.\n- Auch nach dem Verdünnen blieb die Sauce auf Schalen-Volumen (\\~300 ml) ermüdend. Fürs nächste Mal überlegen: kleinere Schalen (\\~200 ml) und lieber nachschenken.\n\n### Balance\n\nEndergebnis bei beiden Saucen relativ ausgeglichen (salzig/süß/sauer/scharf), Säure aber etwas dominant. Fix im Rezept: Limettensaft in Schritt 8 gestaffelt (2 Limetten, dritte nur bei Bedarf).\n\n### Fleisch\n\nFrikadellen (chả) und Schweinebauch kamen beide gut an, mit klarem Split: mir die Frikadellen am liebsten, Frau & Kind der Bauch. Beide Sorten bleiben gesetzt — genau dafür sind sie konstitutiv."
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Nord-Stil, nicht Süd:** Bún chả ist per Definition Hanoi — das Merkmal ist die lauwarme, brühige Sauce, in der das Fleisch liegt, gegenüber der spitzen Süd-Version als Dressing ([Savour the Pho](https://savourthepho.com/bun-cha-hanoi/) hebt das explizit hervor: „brothy and balanced rather than sharp\", Marinade ohne Zitronengras und Fünf-Gewürz).\n- **Zwei Fleischsorten sind konstitutiv**, nicht optional — Bällchen *und* Bauchscheiben ([Vicky Pham](https://vickypham.com/blog/bun-cha-hanoi/), [Grantourismo](https://grantourismotravels.com/vietnamese-bun-cha-recipe/), [Beyond Sweet and Savory](https://beyondsweetandsavory.com/vietnamese-grilled-pork-patties-with-vermicelli-bun-cha-hanoi/)).\n- **Marinade-Verhältnisse** angelehnt an Beyond Sweet and Savory (pro \\~450 g Fleisch: 2 EL Fischsauce, 2 EL Zucker, Schalotte, Knoblauch, Pfeffer), auf 1–1,1 kg Gesamtfleisch skaliert und ein Teil des Zuckers durch Nước màu ersetzt.\n- **Sauce-Verdünnung** verifiziert an Grantourismo (50 ml Fischsauce auf 200 ml Wasser + je 50 ml Essig und Limette, warm angesetzt) — Wasser-zu-Fischsauce grob 6:1, hier auf \\~1,1 L für vier große Schalen skaliert und die Limettenmenge zugunsten von Wasser reduziert. *Vorsicht bei Vicky Phams Mengen: die dort abrufbare Version ist eine Süd-lastige Variante (Zitronengras, Coconut Soda) — als Ratio-Quelle für Hanoi nicht verwendet.*\n- **Holzkohle vs. Gas:** Mehrere Quellen sagen ausdrücklich, dass Pfanne oder Ofen das Aroma nicht erreichen ([Beyond Sweet and Savory](https://beyondsweetandsavory.com/vietnamese-grilled-pork-patties-with-vermicelli-bun-cha-hanoi/): „won't give you that authentic experience\"), halten Gasgrill oder Grillpfanne aber für gangbar ([Whiskey & Booch](https://www.whiskeyandbooch.com/blog/bun-cha)). Deshalb: Gasgrill mit Zwei-Zonen-Führung als Basis — keine Illusionen über Gleichwertigkeit.\n- **Masse klebrig kneten** als Anti-Zerfall-Maßnahme ist in mehreren Quellen der zentrale Tipp ([My Viet Kitchen](https://myvietkitchen.com/bun-cha-ha-noi-recipe/), Savour the Pho).\n- **Grillkorb und Wenden im 30-Sekunden-Takt** bei direkter Hitze ([PattyPlates](https://pattyplates.com/authentic-hanoi-bun-cha-vietnamese-grilled-pork-with-vermicelli/)).\n- **Zusammengelegt mit Bún thịt nướng** (früher Backlog Nr. 2): identische Einkaufsliste bis auf Zitronengras und Erdnüsse — zwei getrennte Rezeptdateien wären Redundanz.\n\n**Entschiedene offene Fragen (07/2026):**\n\n- **Räucherchips:** Erster Durchgang **pur auf Gas** — erst Referenz schaffen, dann ggf. Obstholz-Räucherbox als Ausbaustufe (dokumentiert in Schritt 7). Nicht auf der Einkaufsliste.\n- **Hack:** Fertig kaufen, aber Fettanteil prüfen (20–25 %); im Zweifel Nacken an der Theke durchdrehen lassen — als Hinweis auf der Einkaufsliste.\n- **Nem rán:** Nicht im ersten Durchgang — eigenes Projekt, würde den Abend verdoppeln.\n- **Kräuter:** Thai-Basilikum auf der Liste mit Anruf-Hinweis; **Perilla gestrichen** (realistisch nicht zu bekommen, kein Beinbruch).\n- **Nước màu:** Ja, selbst ansetzen — Technik sitzt seit dem Thịt kho, Verweis statt Wiederholung.",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-05T18:47:19Z",
+    "sourceHash": "c01d700dd3f75676",
+    "quantities": [
+      {
+        "ingredient": "bun-nudeln",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "fischsauce",
+        "total": {
+          "text": "4 EL (+ ml ungemischt)",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "4 EL Fischsauce"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "reisessig",
+        "total": {
+          "text": "125 ml",
+          "value": 125.0,
+          "max": 125.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "45 ml Reisessig + 80 ml Reisessig"
+        }
+      },
+      {
+        "ingredient": "austernsauce",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 EL Austernsauce"
+        }
+      },
+      {
+        "ingredient": "thai-basilikum",
+        "total": {
+          "text": "1 Bund",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Bund",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Bund Thai-Basilikum"
+        }
+      },
+      {
+        "ingredient": "fruehlingszwiebeln",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "schweinehack",
+        "total": {
+          "text": "500–600 g",
+          "value": 500.0,
+          "max": 600.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "500–600 g"
+        }
+      },
+      {
+        "ingredient": "schweinebauch",
+        "total": {
+          "text": "500 g",
+          "value": 500.0,
+          "max": 500.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "500 g"
+        }
+      },
+      {
+        "ingredient": "kohlrabi",
+        "total": {
+          "text": "300 g",
+          "value": 300.0,
+          "max": 300.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "300 g"
+        }
+      },
+      {
+        "ingredient": "karotten",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 Karotten"
+        }
+      },
+      {
+        "ingredient": "salatgurke",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Salatgurke"
+        }
+      },
+      {
+        "ingredient": "kopfsalat",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Kopfsalat"
+        }
+      },
+      {
+        "ingredient": "minze",
+        "total": {
+          "text": "1 Bund",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Bund",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Bund Minze"
+        }
+      },
+      {
+        "ingredient": "koriander",
+        "total": {
+          "text": "1 Bund",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Bund",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Bund Koriander"
+        }
+      },
+      {
+        "ingredient": "limetten",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 Limetten"
+        }
+      },
+      {
+        "ingredient": "schalotten",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "3 Schalotten"
+        }
+      },
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": "4 (+ Zehen ungemischt)",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "4 Knoblauchzehen"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "chilis",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "zucker",
+        "total": {
+          "text": "5½ EL (+ g ungemischt)",
+          "value": 5.5,
+          "max": 5.5,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "3 EL Zucker + 1 EL Zucker + 1,5 EL Zucker"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": "1½–2 TL",
+          "value": 1.5,
+          "max": 2.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1,5–2 TL frisch gemahlenem Pfeffer"
+        }
+      },
+      {
+        "ingredient": "oel",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 EL Öl"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "½ TL",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "½ TL Salz"
+        }
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "6 EL (+ ml ungemischt)",
+          "value": 6.0,
+          "max": 6.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 EL Wasser + 2 EL heißem Wasser + 3 EL Wasser"
+        },
+        "unitMixed": true
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Asialaden",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "bun-nudeln",
+            "name": "Bún-Nudeln, getrocknet",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "400 g"
+            },
+            "note": "dünne, **runde** Reisfadennudeln — nicht die flachen Bánh-phở"
+          },
+          {
+            "ingredient": "fischsauce",
+            "name": "Fischsauce",
+            "need": {
+              "text": "4 EL (+ ml ungemischt)",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "4 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Flasche"
+            },
+            "note": "Gesamtverbrauch **180 ml** — siehe Mengen-Check"
+          },
+          {
+            "ingredient": "reisessig",
+            "name": "Reisessig",
+            "need": {
+              "text": "125 ml",
+              "value": 125.0,
+              "max": 125.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "125 ml",
+            "inStock": false,
+            "note": "Gesamtverbrauch \\~125 ml"
+          },
+          {
+            "ingredient": "austernsauce",
+            "name": "Austernsauce",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Glas"
+            },
+            "note": "Verbrauch 1 EL; kleines Glas, hält ewig"
+          },
+          {
+            "ingredient": "thai-basilikum",
+            "name": "Thai-Basilikum",
+            "need": {
+              "text": "1 Bund",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Bund",
+              "approx": false
+            },
+            "display": "1 Bund",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            },
+            "note": "unsicher — vorher anrufen; falls nicht da: ersatzlos streichen, Minze und Koriander tragen den Kräuterteller allein"
+          },
+          {
+            "ingredient": "fruehlingszwiebeln",
+            "name": "Frühlingszwiebeln",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            },
+            "optional": true,
+            "note": "oft besser als REWE"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "kohlrabi",
+            "name": "Kohlrabi",
+            "need": {
+              "text": "300 g",
+              "value": 300.0,
+              "max": 300.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "300 g",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "\\~300 g"
+          },
+          {
+            "ingredient": "karotten",
+            "name": "Karotten",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            }
+          },
+          {
+            "ingredient": "salatgurke",
+            "name": "Salatgurke",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            }
+          },
+          {
+            "ingredient": "kopfsalat",
+            "name": "Kopfsalat",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "oder Buttersalat"
+          },
+          {
+            "ingredient": "minze",
+            "name": "Minze",
+            "need": {
+              "text": "1 Bund",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Bund",
+              "approx": false
+            },
+            "display": "1 Bund",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            }
+          },
+          {
+            "ingredient": "koriander",
+            "name": "Koriander",
+            "need": {
+              "text": "1 Bund",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Bund",
+              "approx": false
+            },
+            "display": "1 Bund",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            }
+          },
+          {
+            "ingredient": "limetten",
+            "name": "Limetten",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "4"
+            },
+            "note": "Gesamtverbrauch: 2–3 für die Sauce, Spalten für den Tisch"
+          },
+          {
+            "ingredient": "schalotten",
+            "name": "Schalotten",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            }
+          },
+          {
+            "ingredient": "knoblauch",
+            "name": "Knoblauch",
+            "need": {
+              "text": "4 (+ Zehen ungemischt)",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "4",
+            "inStock": false,
+            "buy": {
+              "text": "1 Knolle"
+            },
+            "note": "Gesamtverbrauch 7 Zehen — siehe Mengen-Check"
+          },
+          {
+            "ingredient": "chilis",
+            "name": "frische rote Chilis",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "buy": {
+              "text": "1–2"
+            },
+            "note": "nur für die Erwachsenen-Schalen"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "schweinehack",
+            "name": "Schweinehack, **20–25 % Fett**",
+            "need": {
+              "text": "500–600 g",
+              "value": 500.0,
+              "max": 600.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "500–600 g",
+            "inStock": false,
+            "buy": {
+              "text": "500–600 g"
+            },
+            "note": "Fettanteil prüfen! Standard-„gemischtes Hack\" ist ok, reines mageres Schweinehack wird trocken — im Zweifel an der Theke Nacken durchdrehen lassen"
+          },
+          {
+            "ingredient": "schweinebauch",
+            "name": "Schweinebauch ohne Knochen, ohne Schwarte, in **\\~5 mm dünnen Scheiben**",
+            "need": {
+              "text": "500 g",
+              "value": 500.0,
+              "max": 500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "500 g",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            },
+            "note": "an der Theke schneiden lassen; sonst am Stück kaufen und 30 Min. anfrieren, dann selbst schneiden"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "zucker",
+            "name": "Zucker",
+            "need": {
+              "text": "5½ EL (+ g ungemischt)",
+              "value": 5.5,
+              "max": 5.5,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "5½ EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "\\~190 g gesamt: Karamell, Marinade, Sauce, Pickle"
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Schwarzer Pfeffer, ganze Körner",
+            "need": {
+              "text": "1½–2 TL",
+              "value": 1.5,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1½–2 TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "wird großzügig gebraucht — frisch mahlen"
+          },
+          {
+            "ingredient": "oel",
+            "name": "Neutrales Öl",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "½ TL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "½ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "6 EL (+ ml ungemischt)",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "6 EL",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}
