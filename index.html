@@ -145,7 +145,7 @@
         var h1 = document.querySelector('.markdown-section h1');
         if (!h1 || h1.querySelector('.kochmodus-btn')) return;
         var base = file.replace(/^\/+/, '').replace(/\.md$/, '');
-        var candidates = ['schema/beispiele/' + base.split('/').pop() + '.json', base + '.json'];
+        var candidates = [base + '.json', 'schema/beispiele/' + base.split('/').pop() + '.json'];
         (function probe(i) {
           if (i >= candidates.length) return;
           fetch(candidates[i], { method: 'HEAD' }).then(function (r) {

@@ -40,7 +40,7 @@ try {
   assert.equal(await page.locator(".dock .tm").count(), 1, "migrierter Timer fehlt im Dock");
   await page.click('.dock [data-tact="stop"]');
   assert.match(await page.locator("#title").innerText(), /Thịt kho/);
-  const k4 = page.locator('.row[data-step="karamell"]');
+  const k4 = page.locator('.row[data-step="karamell-der-entscheidende-schritt"]');
   assert.match(await k4.innerText(), /3 EL Zucker/);
   assert.equal(await k4.locator("textarea").count(), 0, "Notiz darf in der Zeile nicht sichtbar sein");
   // Sheet: Volltext einmal, Kurzansicht fett, Hervorhebung, Details, keine Notiz
@@ -61,7 +61,7 @@ try {
   await page.click('button[data-view="kochen"]');
   // Skalieren ×2 ersetzt inline
   await page.click('button[data-factor="2"]');
-  assert.match(await page.locator('.row[data-step="karamell"]').innerText(), /6 EL Zucker mit 2 EL Wasser/);
+  assert.match(await page.locator('.row[data-step="karamell-der-entscheidende-schritt"]').innerText(), /6 EL Zucker mit 2 EL Wasser/);
   assert.match(await page.locator("#meta").innerText(), /8 Portionen/);
   await page.click('button[data-factor="1"]');
   // Timer aus dem Sheet starten, Dock zeigt ihn, überlebt Reload
@@ -69,11 +69,11 @@ try {
   await page.click('#sheet [data-start="0"]');
   assert.equal(await page.locator(".dock .tm").count(), 1);
   await page.click("#sheet .close");
-  await page.check('.row[data-step="blanchieren"] input[data-done]');
+  await page.check('.row[data-step="fleisch-vorbereiten-blanchieren"] input[data-done]');
   await page.reload();
   await page.waitForSelector(".row[data-step]");
   assert.equal(await page.locator(".dock .tm").count(), 1, "Timer überlebt Reload nicht");
-  assert.ok(await page.locator('.row[data-step="blanchieren"] input[data-done]').isChecked());
+  assert.ok(await page.locator('.row[data-step="fleisch-vorbereiten-blanchieren"] input[data-done]').isChecked());
   assert.match(await page.locator("#progress").innerText(), /1 von 9/);
   // Notizen-Ansicht + Export (nach Reload)
   await page.click('button[data-view="notizen"]');
@@ -127,7 +127,7 @@ try {
     await page.waitForSelector(".row[data-step]");
     await page.click('button[data-view="kochen"]');
     await page.screenshot({ path: SHOT });
-    await page.locator('.row[data-step="karamell"] [data-open]').click();
+    await page.locator('.row[data-step="karamell-der-entscheidende-schritt"] [data-open]').click();
     await page.waitForSelector("#sheet.open");
     await page.screenshot({ path: SHOT.replace(/\.png$/, "-sheet.png") });
   }

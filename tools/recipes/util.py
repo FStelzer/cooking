@@ -134,7 +134,7 @@ def verbatim_strings(recipe: dict) -> list[str]:
             for task in sec["tasks"]:
                 out += [task.get("heading", ""), task.get("intro", "")]
                 for step in task["steps"]:
-                    out += [step.get("heading", ""), step["text"]]
+                    out += [step.get("heading", ""), step.get("meta", ""), step["text"]]
         elif t == "learnings":
             out += [sec["summary"], sec.get("details", "")]
         elif t == "todo":

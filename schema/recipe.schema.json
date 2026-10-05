@@ -844,6 +844,10 @@
           "items": {
             "$ref": "#/$defs/claim"
           }
+        },
+        "meta": {
+          "type": "string",
+          "description": "Kursive Meta-Zeile unter der Überschrift, verbatim (Quelle von after/start/claims/endCondition/technique)"
         }
       }
     },

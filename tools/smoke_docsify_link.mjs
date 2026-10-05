@@ -16,7 +16,7 @@ try {
   await page.goto(`http://127.0.0.1:${PORT}/#/gerichte/thit-kho-trung`);
   await page.waitForSelector(".markdown-section h1 .kochmodus-btn", { timeout: 20000 });
   const href = await page.locator(".kochmodus-btn").getAttribute("href");
-  assert.equal(href, "kochmodus/?r=../schema/beispiele/thit-kho-trung.json");
+  assert.equal(href, "kochmodus/?r=../gerichte/thit-kho-trung.json");
   await page.goto(`http://127.0.0.1:${PORT}/#/gerichte/bulgogi`);
   await page.waitForSelector(".markdown-section h1");
   await page.waitForTimeout(800);

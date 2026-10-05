@@ -24,8 +24,9 @@ SECTION_TAGS = [("kind", "kind"), ("schwangerschaft", "schwangerschaft"), ("besc
                 ("profi-tipps", "profi-tipps"), ("fehlerbild", "fehlerbild")]
 DOSE_UNITS = ("kg", "g", "ml", "l", "EL", "TL", "Prisen", "Prise", "Tropfen", "Zweige", "Zweig", "Blatt", "Umdrehung", "Schuss",
               "Stück", "Zehen", "Zehe", "Bund", "Päckchen", "Dose", "Dosen", "Glas", "Scheiben", "Scheibe", "Eigelb", "Eiweiß")
-QTY_WORDS = ("reichlich", "etwas", "einen Schuss", "ein Schuss", "eine Prise", "einige")
-RESCUE_START = ("Fallback", "Rettung", "Gebrochen", "Zu ", "Falls", "Option,", "Notfall")
+QTY_WORDS = ("reichlich", "etwas", "einen Schuss", "einem Schuss", "ein Schuss", "eine Prise", "einige", "großzügig")
+RESCUE_START = ("Fallback", "Rettung", "Gebrochen", "Falls", "Option", "Notfall", "Noch sicherer")
+RESCUE_COND = re.compile(r"^(Ist|Wird|Wenn|Sollte|Falls)\b[^.]*,")
 DUR_UNITS = r"(?:Min\.?|Minuten|Sek\.?|Sekunden|Std\.?|Stunden|h\b)"
 
 NUMW = r"(?:\d+(?:[,.]\d+)?|½|¼|¾|⅓)"
@@ -46,6 +47,19 @@ def slugify(s: str) -> str:
         s = s.replace(a, b)
     s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
     return s or "x"
+
+
+def head_noun(name: str) -> str:
+    """Erstes Hauptwort: Adjektive (klein geschrieben oder „Schwarzer“ vor Großwort) überspringen."""
+    words = [w for w in re.sub(r"[^\wäöüÄÖÜß/-]", " ", re.sub(r"[*_`]", "", name)).split() if w]
+    caps = [w for w in words if w[0].isupper()]
+    for i, w in enumerate(caps):
+        nxt = caps[i + 1] if i + 1 < len(caps) else None
+        if nxt and re.search(r"(er|es|e|en)$", w.lower()) and words.index(nxt) == words.index(w) + 1:
+            continue
+        return max(w.split("/"), key=lambda x: len(x.strip("-"))).strip("-")
+    w = (caps or words or [name])[0]
+    return max(w.split("/"), key=lambda x: len(x.strip("-"))).strip("-")
 
 
 def num(s: str) -> float:
@@ -95,8 +109,7 @@ def parse_head(head: str, lint: Lint) -> dict:
         lint.add("Kopf", "keine H1 gefunden")
         return {"title": "?"}
     out["title"] = m["title"].strip()
-    if m["wip"]:
-        out["status"] = "wip"
+    out["status"] = "wip" if m["wip"] else "done"
     y = re.search(r"\(([^()]*?)\)\s*$", out["title"])
     if y:
         yt = y.group(1)
@@ -167,11 +180,13 @@ def parse_shopping(text: str, lint: Lint) -> list[dict]:
             optional, core = True, re.sub(r"(?i)^optional:\s*", "", core)
         for part in re.split(r"\s\+\s", core):
             part = part.strip()
-            pm = re.match(rf"^(?P<qty>(?:ca\.\s?|\\?~)?{RANGE}(?:\s?(?:kg|g|ml|L|l|EL|TL|Stück|St\.|Blatt|Bund|Töpfchen|Päckchen|Glas|Dose|Flasche|Knolle|Zehen))?)\s+(?P<name>.+)$", part)
+            paren0 = re.search(r"\(([^()]*)\)", part)
+            part_np = re.sub(r"\s*\([^()]*\)", "", part).strip()
+            pm = re.match(rf"^(?P<qty>(?:ca\.\s?|\\?~)?{RANGE}(?:\s?(?:kg|g|ml|L|l|EL|TL|Stück|St\.|Blatt|Bund|Töpfchen|Päckchen|Glas|Dose|Flasche|Knolle|Zehen))?)\s+(?P<name>.+)$", part_np)
             if pm:
                 buy, name = pm["qty"].strip(), pm["name"].strip()
             else:
-                nm = re.match(rf"^(?P<name>[^,]+),\s*(?P<qty>.+)$", part)
+                nm = re.match(rf"^(?P<name>[^,]+),\s*(?P<qty>.+)$", part_np)
                 if nm and not re.search(r"\d|½|¼|¾", nm["qty"]):
                     # Aufzählung ohne Mengen („Zucker, Salz, Pfeffer“) → mehrere Zutaten
                     names = [x.strip() for x in part.split(",") if x.strip()]
@@ -185,12 +200,10 @@ def parse_shopping(text: str, lint: Lint) -> list[dict]:
                         if courses: ing["courses"] = sorted(set(courses))
                         ings.append(ing)
                     continue
-                buy, name = (nm["qty"].strip(), nm["name"].strip()) if nm else (None, part)
-            paren = re.search(r"\(([^()]*)\)", name)
-            extra = paren.group(1) if paren else None
-            name = re.sub(r"\s*\([^()]*\)", "", name).strip(" ,")
-            first = re.sub(r"[^\wäöüÄÖÜß-]", " ", name).split()
-            iid = slugify(next((w for w in first if w[0].isupper()), first[0] if first else name))
+                buy, name = (nm["qty"].strip(), nm["name"].strip()) if nm else (None, part_np)
+            extra = paren0.group(1) if paren0 else None
+            name = name.strip(" ,")
+            iid = slugify(head_noun(name))
             if iid in seen:
                 lint.add("Einkaufsliste", f"doppelte Zutat '{iid}' ({name})")
                 continue
@@ -269,21 +282,30 @@ def parse_meta(meta: str, lint: Lint, where: str) -> dict:
     return out
 
 
-def annotate_text(step: dict, text: str, ingredients: list[dict], lint: Lint, where: str):
+def annotate_text(step: dict, text: str, ingredients: list[dict], lint: Lint, where: str, seen_doses: set | None = None):
     """Annotationen aus dem Schritttext (alles Zitate)."""
     step["text"] = text
     step["action"] = sentence_prefixes(text)[0]
     # Fett = Grenze
-    limits = [m.group(1) for m in re.finditer(r"\*\*([^*]+)\*\*", text)]
+    limits = [m.group(1) for m in re.finditer(r"\*\*([^*]+)\*\*", text) if len(m.group(1).split()) >= 2]
     if limits: step["limits"] = limits
     # Kursiv am Ende = Warum / Rettung
     im = re.search(r"\*(?!\*)\(?([^*]+?)\)?\*\s*$", text)
     if im:
         why, rescue = [], []
         for s in re.split(r"(?<=[.!?])\s+", im.group(1).strip()):
-            (rescue if s.startswith(RESCUE_START) else why).append(s)
+            if s.startswith(("Vorsicht", "Achtung")):
+                step.setdefault("limits", []).append(s)
+            elif s.startswith(RESCUE_START) or " dann " in s or "→" in s or RESCUE_COND.match(s):
+                rescue.append(s)
+            else:
+                why.append(s)
         if why: step["why"] = " ".join(why)
         if rescue: step["rescue"] = " ".join(rescue)
+    # Konditionale Rettung auch außerhalb der Kursivschrift („Ist sie zu salzig, …“)
+    if "rescue" not in step:
+        cond = [x for x in re.split(r"(?<=[.!?])\s+", text) if RESCUE_COND.match(x.strip("*"))]
+        if cond: step["rescue"] = " ".join(x.strip() for x in cond)
     # „bis …“ = Erkennungszeichen
     cues = [m.group(0).strip() for m in re.finditer(r"\bbis (?:das|der|die|die|es|sie|er|alle|zum|zur|sich|auf)\b[^.;,*)—]+", text)]
     if cues: step["cues"] = cues
@@ -308,7 +330,7 @@ def annotate_text(step: dict, text: str, ingredients: list[dict], lint: Lint, wh
         temps.append(t)
     if temps: step["temps"] = temps
     # Dosierungen
-    step["ingredients"] = find_doses(text, ingredients, lint, where)
+    step["ingredients"] = find_doses(text, ingredients, lint, where, seen_doses if seen_doses is not None else set())
 
 
 def sentence_at(text: str, pos: int) -> str:
@@ -331,27 +353,33 @@ DOSE_RE = re.compile(
 )
 
 
-def find_doses(text: str, ingredients: list[dict], lint: Lint, where: str) -> list[dict]:
+def find_doses(text: str, ingredients: list[dict], lint: Lint, where: str, seen_doses: set) -> list[dict]:
     idx = ingredient_index(ingredients)
     out, seen_counts = [], {}
     plain = text
+    im = re.search(r"\*(?!\*)\(?[^*]+?\)?\*\s*$", plain)  # kursiver Schluss (Warum/Rettung) enthält keine Dosierung
+    skip_from = im.start() if im else len(plain)
     for m in DOSE_RE.finditer(plain):
-        if m["times"]:
+        if m["times"] or m.start() >= skip_from:
             continue
-        words = m["words"]
-        wl = [w.strip("*").lower() for w in words.split()]
-        hit = next(((w, iid) for w, iid in idx for cand in wl if cand.startswith(w) or w.startswith(cand) and len(cand) >= 5), None)
+        ahead = re.match(r"(?:[\wäöüÄÖÜß*/-]+\s*){1,4}", plain[m.start("words"):])
+        if not ahead:
+            continue
+        toks = list(re.finditer(r"[\wäöüÄÖÜß*/-]+", ahead.group(0)))
+        hit, end_tok = None, None
+        for tok in toks:
+            cand = tok.group(0).strip("*").lower()
+            hit = next(((w, iid) for w, iid in idx if cand.startswith(w) or (w.startswith(cand) and len(cand) >= 5)), None)
+            if hit:
+                end_tok = tok; break
         if not hit:
             continue
-        # Span = Zahl … bis einschließlich des Zutatenworts
-        end_word = next(w for w in words.split() if w.strip("*").lower().startswith(hit[0]) or hit[0].startswith(w.strip("*").lower()))
-        span = plain[m.start(): m.start(words, ) + words.index(end_word) + len(end_word)] if False else None
         span_start = m.start("je") if m["je"] else m.start("lo")
-        span_end = m.start("words") + words.index(end_word) + len(end_word)
+        span_end = m.start("words") + end_tok.end()
         span = plain[span_start:span_end]
         lo = num(m["lo"]); hi = num(m["hi"]) if m["hi"] else None
         unit = m["unit"] or "Stück"
-        if unit in ("Prisen",): unit = "Prise"
+        if unit == "Prisen": unit = "Prise"
         amount = {"text": span, "value": lo, "unit": unit}
         if hi is not None: amount["max"] = hi
         if m["je"]: amount["per"] = "Pfanne"
@@ -362,9 +390,11 @@ def find_doses(text: str, ingredients: list[dict], lint: Lint, where: str) -> li
         if n > 1:
             seen_counts[span] = seen_counts.get(span, 0) + 1
             dose["occurrence"] = seen_counts[span]
-        prev = next((d for d in out if d["ref"] == hit[1] and d["amount"].get("value") == lo), None)
-        if prev or any(d["ref"] == hit[1] and d["amount"].get("value") == lo for d in getattr(find_doses, "_earlier", [])):
+        key = (hit[1], lo, hi)
+        article = re.search(r"\b(die|den|das|der|dem)\s+$", plain[:span_start], re.I)
+        if key in seen_doses and article:
             dose["reuse"] = True
+        seen_doses.add(key)
         out.append(dose)
     # Mengenwörter ohne Zahl
     for qw in QTY_WORDS:
@@ -418,6 +448,7 @@ def parse_body(text: str, scope: str, ingredients: list[dict], lint: Lint, cours
     cur_meta: str | None = None
     first_block = True
     tasks_pos: list[int] = []
+    seen_doses: set = set()
 
     def new_task(name: str, heading: str | None, paren: str | None):
         prod, phase = product_from_label(name, paren)
@@ -438,8 +469,9 @@ def parse_body(text: str, scope: str, ingredients: list[dict], lint: Lint, cours
         txt = "\n".join(cur_text).strip()
         txt = re.sub(r"(?<![\n])\n(?![\n\-*>|])", " ", txt)  # umbrochene Zeilen zusammenziehen, Listen behalten
         where = f"{scope}/Schritt {cur_step['label']}"
-        annotate_text(cur_step, txt, ingredients, lint, where)
+        annotate_text(cur_step, txt, ingredients, lint, where, seen_doses)
         if cur_meta:
+            cur_step["meta"] = f"*{cur_meta}*"
             meta = parse_meta(cur_meta, lint, where)
             cur_step["_meta"] = meta
             for k in ("parallel", "attention", "claims", "endCondition", "technique"):
@@ -448,6 +480,14 @@ def parse_body(text: str, scope: str, ingredients: list[dict], lint: Lint, cours
                 cur_task["produces"] = [product_from_label(meta["_produces"], meta.get("_hold"))[0]]
         if "duration" not in cur_step:
             lint.add(where, "keine Dauer in der Überschrift")
+        if "attention" not in cur_step:
+            heat = any(c["resource"] in ("hob", "oven", "grill") for c in cur_step.get("claims", []))
+            watch = re.search(r"köcheln|kochen|schmoren|reduzieren|einkochen|rösten|backen|ziehen lassen|garen|blanchieren|sprudeln", txt, re.I)
+            cur_step["attention"] = "attended" if heat and watch else "active"
+        # Überschrift-Dauer als Timer, wenn der Schritt nebenher läuft und der Text keinen Timer nennt
+        if cur_step.get("duration") and not cur_step.get("timers") and (cur_step["attention"] != "active" or cur_step.get("parallel")):
+            d = {k: v for k, v in cur_step["duration"].items() if k in ("min", "max", "typical")}
+            cur_step["timers"] = [{"label": cur_step["title"], "duration": d, "text": cur_step["duration"].get("source", "")}]
         cur_task["steps"].append(cur_step)
         cur_step, cur_text, cur_meta = None, [], None
 
@@ -523,12 +563,19 @@ def parse_body(text: str, scope: str, ingredients: list[dict], lint: Lint, cours
 
 
 def resolve_refs(tasks: list[dict], lint: Lint, scope: str, course_id: str | None):
-    by_title = {}
-    for t in tasks:
-        for st in t["steps"]:
-            by_title[slugify(st["title"])] = st["id"]
-            by_title[st["title"].lower()] = st["id"]
-    ids = set(by_title.values())
+    slugs = [st["id"] for t in tasks for st in t["steps"]]
+
+    class _ByTitle(dict):
+        """Exakter Slug oder eindeutiger Präfix („nach Karamell“ → karamell-der-entscheidende-schritt)."""
+        def get(self, key, default=None):
+            k = slugify(key) if key else key
+            if k in slugs:
+                return k
+            hits = [x for x in slugs if x.startswith(k + "-") or x.startswith(k)]
+            return hits[0] if len(hits) == 1 else default
+
+    by_title = _ByTitle()
+    ids = set(slugs)
     if len(ids) < sum(len(t["steps"]) for t in tasks):
         lint.add(scope, "doppelte Schritt-Titel (Slugs kollidieren)")
     prod_names = [(p["name"], t) for t in tasks for p in t.get("produces", [])]

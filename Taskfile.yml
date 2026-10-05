@@ -113,10 +113,16 @@ tasks:
     cmds:
       - python3 -m http.server 3000
 
-  validate:
-    desc: Rezeptformat — Checks A–D, K gegen alle Beispiel-JSONs (tools/recipes)
+  build:
+    desc: Rezeptformat — Markdown nach REZEPTFORMAT.md → JSON daneben (alle Rezepte mit JSON, oder CLI_ARGS)
     cmds:
-      - python3 -m tools.recipes.cli check schema/beispiele/*.json
+      - python3 -m tools.recipes.cli build {{.CLI_ARGS | default "$(ls {gerichte,menues,desserts,backen,eis,schwangerschaft}/*.json 2>/dev/null | sed 's/\.json$/.md/')"}}
+
+  validate:
+    desc: Rezeptformat — Checks A–L gegen alle gebauten JSONs; Parität gegen schema/beispiele
+    cmds:
+      - python3 -m tools.recipes.cli check $(ls {gerichte,menues,desserts,backen,eis,schwangerschaft}/*.json 2>/dev/null)
+      - python3 -m tools.recipes.cli build --check $(ls {gerichte,menues,desserts,backen,eis,schwangerschaft}/*.json 2>/dev/null | sed 's/\.json$/.md/')
 
   test-kochmodus:
     desc: Kochmodus — Node-Tests der reinen Funktionen (lib.js)

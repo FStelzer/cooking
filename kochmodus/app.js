@@ -2,7 +2,7 @@ import { escapeTilde, fmtAmount, fmtClock, highlight, isoSeconds, noteMarkdown, 
          scaleAmount, scaleStepText, textWithAction, timerChoices } from "./lib.js";
 
 const params = new URLSearchParams(location.search);
-const RECIPE_URL = params.get("r") || "../schema/beispiele/thit-kho-trung.json";
+const RECIPE_URL = params.get("r") || "../gerichte/thit-kho-trung.json";
 const $ = (sel, el = document) => el.querySelector(sel);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const md = (s) => marked.parse(escapeTilde(s || ""));

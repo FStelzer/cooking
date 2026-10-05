@@ -13,8 +13,11 @@ python3 -m tools.recipes.cli check schema/beispiele/*.json      # Checks A–D
 python3 -m tools.recipes.cli check schema/beispiele/x.json -v   # mit Reports
 python3 -m tools.recipes.cli derive schema/beispiele/x.json      # derived-Block (Einkaufsliste, Mengen) schreiben
 python3 -m tools.recipes.cli shopping schema/beispiele/x.json    # Einkaufsliste als Markdown
-python3 -m tools.recipes.cli diff a.json b.json                 # Feld-Diff zweier Konvertierungen (Check I)
-task validate            # Checks über alle Beispiele
+python3 -m tools.recipes.cli diff a.json b.json                 # Feld-Diff zweier Konvertierungen (Check I / M)
+python3 -m tools.recipes.cli build gerichte/x.md                # Markdown (REZEPTFORMAT.md) → gerichte/x.json
+python3 -m tools.recipes.cli lint gerichte/x.md                 # Parser-Hinweise
+task build               # alle Rezepte mit JSON neu bauen
+task validate            # Checks über alle gebauten JSONs + Aktualität (build --check)
 task test-kochmodus      # Node-Tests der Kochmodus-Funktionen (kochmodus/lib.js)
 task smoke-kochmodus     # Playwright-Rauchtest im Container (podman)
 task serve               # dann http://localhost:3000/kochmodus/?r=schema/beispiele/thit-kho-trung.json
@@ -28,6 +31,7 @@ Einzige Abhängigkeit: `jsonschema` (siehe `tools/requirements.txt`).
 |---|---|
 | 2026-10-05 | Plan freigegeben. AP0 (Festlegungen, Werkzeug-Skelett) und AP1 (Schema v0.1, thit-kho Minimum + Anreicherung) umgesetzt. Checks A–D grün, Mutationstest 11/11 erkannt. |
 | 2026-10-05 | AP2 umgesetzt: `tools/recipes/shopping.py` berechnet `derived.quantities` und `derived.shopping`, `cli derive` schreibt sie ins JSON (reproduzierbar bis auf `generatedAt`, Hash-Prüfung gegen veraltete Blöcke), `cli shopping` rendert Markdown im heutigen Format, Check K vergleicht mit der Original-Einkaufsliste. |
+| 2026-10-05 | **Phase 3/4 begonnen: Konvention + Parser.** `REZEPTFORMAT.md` (eigenständige Spezifikation mit Gerüsten), `tools/recipes/parse.py` (deterministisch, 13 Regel-Tests gegen die Gerüste), `cli build/lint`, `task build/validate` auf die gebauten JSONs neben den `.md`. **AP-C:** `gerichte/thit-kho-trung.md` auf die Konvention normalisiert (Inhalt unverändert: Token-Multiset identisch, nur Einkaufsliste nach Läden gruppiert, Meta-Zeilen, zwei Schätz-Dauern); `gerichte/thit-kho-trung.json` wird gebaut, Checks A–L grün, K 16/16. Parität gegen die Hand-Annotation: 86 % gesamt, **96 % auf Inhaltsfeldern** (Dosierungen 23/23, Rettung, Grenzen 8/9, Warum 8/9); beabsichtigte Unterschiede: Slugs aus Titeln, umgebaute Überschriften, Laden-Zuordnung, Schätz-Dauern, Kurzansicht = erster Satz. Nicht ableitbar und akzeptiert: Erkennungszeichen jenseits von „bis …", `attended` nur per Heuristik. |
 | 2026-10-05 | **November-Menü vollständig modelliert** (User: „damit man es ehrlich testen kann"). Alle vier Gänge als Tasks/Produkte/Schritte: 60 Schritte (58 nummeriert + 2 Anrichten), 84 Dosierungen, 22 Produkte, 23 Erzeuger→Verbraucher-Paare, 28 Zeitplan-Einträge (5 abgeleitet), 53 Zutaten. Konvertierung als versioniertes Skript `tools/convert/menue_november.py` (Verbatim-Schnitt + Hand-Annotation). Zwei Format-Anpassungen am Markdown (Schritte, die über mehrere Tage liefen, aufgetrennt; Inhalt unverändert, eigener Commit). Kochen-Ansicht ordnet nach Ablauf, optional nach Gang. |
 | 2026-10-05 | **Phase 2b, AP4 umgesetzt** (Entscheidungspunkt auf User-Entscheidung übersprungen: erst ein großes Menü ist der echte Test, bei bekannten Rezepten entsteht kaum Feedback). Schema v0.2: Menü/Gänge/Zeitplan/Ressourcen/Constraints. `menue-november.json`: Rahmen, Gang 2 vollständig (8 Tasks, 7 Produkte, 18 Steps), Stubs für 1/3/4, 50 Zutaten, 8 Phasen + 24 Einträge. `timing.py` mit Checks E–H, L. Kochmodus menüfähig mit Plan-Raster. Siehe Messwerte AP4. |
 | 2026-10-05 | **Durchstich** gebaut: `kochmodus/` (statische Seite, vanilla JS, `marked` vom CDN wie Docsify). Ansichten Kochen (Kurzansicht + Details mit Hervorhebung, Abhaken, Timer mit Endzeit im localStorage, Ereignisse, Notiz pro Schritt, Export im `learnings.notes[]`-Format, Voraussetzungen aus `after`), Einkauf (aus `derived.shopping`, abhakbar, skaliert) und Lesen (Sektionen in Dokumentreihenfolge). Skalieren ersetzt Spans inline (L11) mit Rundung nach Einheit (`kochmodus/lib.js`). 10 Node-Tests, Playwright-Rauchtest im Container grün. **Nächster Schritt: Thịt kho damit kochen, dann Entscheidungspunkt vor Phase 2b.** |
@@ -94,6 +98,11 @@ Einzige Abhängigkeit: `jsonschema` (siehe `tools/requirements.txt`).
   Rezept. Der Kochmodus erfasst **eine allgemeine Notiz** pro Rezept/Menü (User-
   Entscheidung 10/2026: Notizen pro Schritt lohnen nicht, das Einarbeiten ist ohnehin
   Rezeptarbeit) und exportiert sie als Markdown-Block unter `## Learnings`.
+- **L17 Konvention ist die Schreibsyntax.** `REZEPTFORMAT.md` beschreibt alles, was der
+  Parser liest; Abhängigkeiten über Titel, nie über Nummern; Slugs aus Titeln; JSON
+  neben der `.md`, per `task build` erzeugt und committed. Die handannotierten
+  `schema/beispiele/*.json` bleiben eingefrorenes Soll für die Parität (`cli diff`),
+  werden aber nicht mehr gegen die Quelle validiert.
 - **L16 Konvertierungsskripte.** Für große Dateien liegt die Konvertierung als
   Python-Skript unter `tools/convert/` (verbatim-Schnitt der Prosa plus Hand-
   Annotation der Modellierung). Die JSON-Datei ist das Ergebnis, das Skript die
