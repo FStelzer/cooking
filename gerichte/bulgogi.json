@@ -462,13 +462,7 @@
                 "step:schneiden",
                 "step:marinade-mixen"
               ]
-            }
-          ]
-        },
-        {
-          "id": "beilagen-waehrend-der-marinierzeit",
-          "name": "Beilagen während der Marinierzeit",
-          "steps": [
+            },
             {
               "id": "reis",
               "label": "5",
@@ -962,16 +956,15 @@
                 "step:salat"
               ]
             }
-          ],
-          "heading": "**Beilagen während der Marinierzeit (\\~40 Min. aktiv, gut vorzubereiten):**",
-          "produces": [
-            {
-              "id": "beilagen-waehrend-der-marinierzeit",
-              "name": "Beilagen während der Marinierzeit"
-            }
           ]
         }
       ]
+    },
+    {
+      "type": "markdown",
+      "title": "Beilagen während der Marinierzeit",
+      "level": "bold",
+      "markdown": "**Beilagen während der Marinierzeit:** \\~40 Min. aktiv, gut vorzubereiten."
     },
     {
       "type": "schedule",
@@ -1105,8 +1098,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T18:30:33Z",
-    "sourceHash": "7251d187d59d89eb",
+    "generatedAt": "2026-10-05T18:35:20Z",
+    "sourceHash": "a3418df5e2715290",
     "quantities": [
       {
         "ingredient": "gochujang",
@@ -1118,7 +1111,7 @@
           "approx": false
         },
         "perTask": {
-          "beilagen-waehrend-der-marinierzeit": "1 EL Gochujang"
+          "main": "1 EL Gochujang"
         }
       },
       {
@@ -1131,7 +1124,7 @@
           "approx": false
         },
         "perTask": {
-          "beilagen-waehrend-der-marinierzeit": "2 EL Doenjang"
+          "main": "2 EL Doenjang"
         }
       },
       {
@@ -1144,7 +1137,7 @@
           "approx": false
         },
         "perTask": {
-          "beilagen-waehrend-der-marinierzeit": "1 EL Gochugaru"
+          "main": "1 EL Gochugaru"
         }
       },
       {
@@ -1157,7 +1150,7 @@
           "approx": false
         },
         "perTask": {
-          "beilagen-waehrend-der-marinierzeit": "400 g Kurzkornreis"
+          "main": "400 g Kurzkornreis"
         }
       },
       {
@@ -1170,8 +1163,7 @@
           "approx": false
         },
         "perTask": {
-          "main": "2 Frühlingszwiebeln",
-          "beilagen-waehrend-der-marinierzeit": "1 fein geschnittene Frühlingszwiebel + 4 Frühlingszwiebeln + 1 Frühlingszwiebel"
+          "main": "2 Frühlingszwiebeln + 1 fein geschnittene Frühlingszwiebel + 4 Frühlingszwiebeln + 1 Frühlingszwiebel"
         }
       },
       {
@@ -1238,8 +1230,7 @@
           "approx": false
         },
         "perTask": {
-          "main": "5 Knoblauchzehen",
-          "beilagen-waehrend-der-marinierzeit": "1 sehr fein gehackte Knoblauchzehe"
+          "main": "5 Knoblauchzehen + 1 sehr fein gehackte Knoblauchzehe"
         }
       },
       {
@@ -1278,7 +1269,7 @@
           "approx": false
         },
         "perTask": {
-          "beilagen-waehrend-der-marinierzeit": "2 Kopfsalate"
+          "main": "2 Kopfsalate"
         }
       },
       {
@@ -1291,7 +1282,7 @@
           "approx": false
         },
         "perTask": {
-          "beilagen-waehrend-der-marinierzeit": "1 Salatgurke"
+          "main": "1 Salatgurke"
         }
       },
       {
@@ -1304,8 +1295,7 @@
           "approx": false
         },
         "perTask": {
-          "main": "3½ EL Sojasauce",
-          "beilagen-waehrend-der-marinierzeit": "1 EL Sojasauce + 1 EL Sojasauce"
+          "main": "3½ EL Sojasauce + 1 EL Sojasauce + 1 EL Sojasauce"
         }
       },
       {
@@ -1332,7 +1322,7 @@
           "approx": false
         },
         "perTask": {
-          "beilagen-waehrend-der-marinierzeit": "1 TL Sesam + ½ TL Sesam + 1 TL Sesam + 2 TL Sesam"
+          "main": "1 TL Sesam + ½ TL Sesam + 1 TL Sesam + 2 TL Sesam"
         }
       },
       {
@@ -1345,8 +1335,7 @@
           "approx": false
         },
         "perTask": {
-          "main": "2½ EL brauner Zucker",
-          "beilagen-waehrend-der-marinierzeit": "1 EL braunem Zucker"
+          "main": "2½ EL brauner Zucker + 1 EL braunem Zucker"
         },
         "unitMixed": true
       },
@@ -1360,7 +1349,7 @@
           "approx": false
         },
         "perTask": {
-          "beilagen-waehrend-der-marinierzeit": "3 EL Reisessig + 1 EL Reisessig"
+          "main": "3 EL Reisessig + 1 EL Reisessig"
         }
       },
       {
@@ -1373,7 +1362,7 @@
           "approx": false
         },
         "perTask": {
-          "beilagen-waehrend-der-marinierzeit": "1 TL Honig + 1 TL Honig"
+          "main": "1 TL Honig + 1 TL Honig"
         }
       },
       {
@@ -1399,7 +1388,7 @@
           "approx": false
         },
         "perTask": {
-          "beilagen-waehrend-der-marinierzeit": "1 EL neutrales Öl"
+          "main": "1 EL neutrales Öl"
         }
       },
       {
@@ -1412,7 +1401,7 @@
           "approx": false
         },
         "perTask": {
-          "beilagen-waehrend-der-marinierzeit": "1 TL Salz"
+          "main": "1 TL Salz"
         }
       },
       {
@@ -1425,7 +1414,7 @@
           "approx": false
         },
         "perTask": {
-          "beilagen-waehrend-der-marinierzeit": "2 EL Wasser"
+          "main": "2 EL Wasser"
         },
         "unitMixed": true
       }

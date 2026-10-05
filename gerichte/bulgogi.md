@@ -81,7 +81,7 @@ Angefrorenes Fleisch **quer zur Faser** in 2–3 mm dünne Scheiben hobeln (Mand
 *nach Schneiden, Marinade mixen*
 Mit der Marinade, 2 Frühlingszwiebeln in Ringen und optional ½ Karotte in feinen Stiften gründlich vermengen, abgedeckt **2–3 Std.** kalt stellen. *Das erprobte Fenster. Nicht über Nacht: die Birnen-Protease arbeitet auf 2–3-mm-Scheiben schnell — länger wird die Textur mehlig-weich statt zart.*
 
-**Beilagen während der Marinierzeit (\~40 Min. aktiv, gut vorzubereiten):**
+**Beilagen während der Marinierzeit:** \~40 Min. aktiv, gut vorzubereiten.
 
 **5. Reis (ca. 30 Min., parallel)**
 *jederzeit · Herd*
