@@ -452,7 +452,7 @@
     },
     {
       "id": "hob",
-      "count": 4
+      "count": 5
     },
     {
       "id": "cook",
@@ -2959,8 +2959,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T14:33:54Z",
-    "sourceHash": "d047da8519287215",
+    "generatedAt": "2026-10-05T17:04:25Z",
+    "sourceHash": "75ee8b7dc8555e27",
     "quantities": [
       {
         "ingredient": "jakobsmuscheln",

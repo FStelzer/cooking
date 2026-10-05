@@ -235,7 +235,7 @@ def check_h(recipe: dict) -> tuple[list[str], list[str]]:
             if a[0] == b[0] and a[3] < b[4] and b[3] < a[4]:
                 if a[0] == "oven" and a[1] != b[1]:
                     reps.append(f"H ⚠ Ofen: {a[5]} bei {a[1]} °C und {b[5]} bei {b[1]} °C überlappen")
-                if a[0] == "hob" and a[2] + b[2] > cook.get("hob", 4):
+                if a[0] == "hob" and a[2] + b[2] > cook.get("hob", 5):
                     reps.append(f"H ⚠ Herd: {a[5]} + {b[5]} brauchen {a[2] + b[2]} Platten")
     # Gang-Abstände vs. Task-Spannen
     serve = {c["ref"]: secs(c["serve"]) or 0 for c in recipe.get("courses", [])}

@@ -1039,12 +1039,12 @@ def parse_recipe(md: str, recipe_id: str) -> tuple[dict, Lint]:
             recipe["courses"] = [{"ref": cid, "n": int(cid[5:]), "name": re.sub(r"^\d+\.\s*", "", names[cid]), "serve": last[cid]["at"], "source": last[cid]["label"]}
                                  for cid in names if cid in last]
             recipe["anchor"] = anchor
-            recipe["resources"] = [{"id": "oven", "count": 1}, {"id": "hob", "count": 4}, {"id": "cook", "count": 1}]
+            recipe["resources"] = [{"id": "oven", "count": 1}, {"id": "hob", "count": 5}, {"id": "cook", "count": 1}]
         elif is_menu:
             recipe["courses"] = [{"ref": p["id"], "n": int(p["id"][5:]), "name": p["label"].split(" (")[0], "serve": p["at"], "source": p["label"]}
                                  for p in sched["phases"] if p["id"].startswith("gang-")]
             recipe["anchor"] = {"label": "Gang 1 serviert"}
-            recipe["resources"] = [{"id": "oven", "count": 1}, {"id": "hob", "count": 4}, {"id": "cook", "count": 1}]
+            recipe["resources"] = [{"id": "oven", "count": 1}, {"id": "hob", "count": 5}, {"id": "cook", "count": 1}]
     if is_menu and not recipe.get("courses"):
         recipe["courses"] = [{"ref": c["id"], "n": int(c["id"][5:]), "name": c["title"], "serve": "PT0M"} for s in sections if s.get("type") == "courses" for c in s["courses"]]
         recipe["anchor"] = {"label": "Service"}

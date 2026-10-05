@@ -50,8 +50,11 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
   \~1,1 kg Custard-Masse in einem Durchgang bewährt (Eis-Rezepte auf \~1 l
   Ausbeute auslegen; mehr braucht zwei Chargen)
 - Standard Pfannen (Edelstahl, beschichtet — keine Gusseisenpfanne), Kleinkram
-- **Induktionsherd** — bei Maximalhitze in Edelstahl nach dem ersten scharfen
-  Anbraten leicht zurückregeln (Bò lúc lắc 10/2026: kein Einbrennen mehr)
+- **Induktionsherd, 5 Felder:** zwei kleine links, ein großes in der Mitte, zwei
+  mittelgroße rechts, die sich zur Bräterzone koppeln lassen (für Bräter oder lange
+  Pfannen). Schwere Pfanne für Maximalhitze aufs große Mittelfeld. Bei Maximalhitze in
+  Edelstahl nach dem ersten scharfen Anbraten leicht zurückregeln (Bò lúc lắc 10/2026:
+  kein Einbrennen mehr)
 
 ### Fehlt / Wäre gut zu haben
 - **Küchenmaschine mit Knethaken** — Brötchen-Rezept (`backen/`) ist auf Handarbeit

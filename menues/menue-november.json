@@ -627,7 +627,7 @@
     },
     {
       "id": "hob",
-      "count": 4
+      "count": 5
     },
     {
       "id": "cook",
@@ -4169,8 +4169,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T14:33:54Z",
-    "sourceHash": "9e08aeb241f187f3",
+    "generatedAt": "2026-10-05T17:04:25Z",
+    "sourceHash": "ccfd93c1474c54b9",
     "quantities": [
       {
         "ingredient": "verjus",
