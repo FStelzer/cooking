@@ -69,12 +69,32 @@ try {
   await page.click('#sheet [data-start="0"]');
   assert.equal(await page.locator(".dock .tm").count(), 1);
   await page.click("#sheet .close");
-  await page.check('.row[data-step="fleisch-vorbereiten-blanchieren"] input[data-done]');
+  // Schritt mit mehr Inhalt: Haken in der Liste öffnet die Details, abgehakt wird im Sheet
+  await page.click('.row[data-step="fleisch-vorbereiten-blanchieren"] input[data-done]');
+  await page.waitForSelector("#sheet.open");
+  assert.ok(!(await page.locator('.row[data-step="fleisch-vorbereiten-blanchieren"] input[data-done]').isChecked()), "Liste hakt nicht direkt ab");
+  assert.match(await page.locator('.row[data-step="fleisch-vorbereiten-blanchieren"] .more').innerText(), /weitere/);
+  await page.check("#sheet .donebar input");
+  // Blättern im Sheet (Knopf und Pfeiltaste)
+  assert.match(await page.locator("#sheet .nav small").innerText(), /^1\/9$/);
+  await page.click('#sheet [data-nav="1"]');
+  assert.match(await page.locator("#sheet .nav small").innerText(), /^2\/9$/);
+  await page.keyboard.press("ArrowLeft");
+  assert.match(await page.locator("#sheet .nav small").innerText(), /^1\/9$/);
+  await page.click("#sheet .close");
   await page.reload();
   await page.waitForSelector(".row[data-step]");
   assert.equal(await page.locator(".dock .tm").count(), 1, "Timer überlebt Reload nicht");
   assert.ok(await page.locator('.row[data-step="fleisch-vorbereiten-blanchieren"] input[data-done]').isChecked());
   assert.match(await page.locator("#progress").innerText(), /1 von 9/);
+  // Neu kochen: nach Bestätigung sind Haken und Timer weg
+  page.once("dialog", (d) => d.dismiss());
+  await page.click("#reset");
+  assert.match(await page.locator("#progress").innerText(), /1 von 9/, "Abbrechen lässt alles stehen");
+  page.once("dialog", (d) => d.accept());
+  await page.click("#reset");
+  assert.match(await page.locator("#progress").innerText(), /0 von 9/);
+  assert.equal(await page.locator(".dock .tm").count(), 0, "Timer zurückgesetzt");
   // Notizen-Ansicht + Export (nach Reload)
   await page.click('button[data-view="notizen"]');
   const out = await page.locator("#mdOut").inputValue();

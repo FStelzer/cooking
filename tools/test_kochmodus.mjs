@@ -2,7 +2,7 @@
 import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
 import { escapeTilde, fmtAmount, fmtClock, highlight, isoSeconds, noteMarkdown, normalizeState, remainderAfterAction, textWithAction,
-         scaleAmount, scaleStepText, timerChoices, isActive, selection, selectionKey, variantText } from "../kochmodus/lib.js";
+         scaleAmount, scaleStepText, timerChoices, moreCount, resetState, isActive, selection, selectionKey, variantText } from "../kochmodus/lib.js";
 
 const r = JSON.parse(readFileSync(new URL("../schema/beispiele/thit-kho-trung.json", import.meta.url), "utf8"));
 const ing = Object.fromEntries(r.ingredients.map((i) => [i.id, i]));
@@ -96,5 +96,13 @@ t("Varianten: Menge tauschen, Klammer ohne Menge filtern, Dosierungen mitziehen"
   const d = variantText(txt, st, { mehl: "dinkel" });
   assert.equal(d.text, '<mark class="variant">40 g Wasser</mark> dazu. Nach 30, 60 und 90 Min. <mark class="variant">(Dinkel: 25, 50, 75)</mark> falten.');
   assert.equal(scaleStepText(d.text, { ingredients: d.ingredients }, 2, {}), '<mark class="variant">80 g Wasser</mark> dazu. Nach 30, 60 und 90 Min. <mark class="variant">(Dinkel: 25, 50, 75)</mark> falten.');
+});
+t("Mehr-Hinweis zählt Handgriffe nach der Kurzansicht, nicht den kursiven Schluss", () => {
+  assert.equal(moreCount({ text: "Reis waschen und garen.", action: "Reis waschen und garen." }), 0);
+  assert.equal(moreCount({ text: "Pfanne heiß machen. 1 EL Öl hinein, warten. Würfel einlegen, nicht bewegen. *Sonst dünstet es.*", action: "Pfanne heiß machen." }), 2);
+});
+t("Neu kochen: Haken, Timer, Einkauf weg; Notiz, Faktor, Wahl bleiben", () => {
+  const s = resetState({ done: { a: true }, timers: [{ id: 1 }], shop: { x: true }, note: "n", factor: 2, order: "gang", variant: { mehl: "dinkel" } });
+  assert.deepEqual(s, { done: {}, timers: [], shop: {}, note: "n", factor: 2, order: "gang", variant: { mehl: "dinkel" } });
 });
 console.log(`${n} Tests ok`);

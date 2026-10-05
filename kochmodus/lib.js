@@ -138,6 +138,14 @@ export function remainderAfterAction(text, step) {
   return text.startsWith(a) ? text.slice(a.length).trim() : text;
 }
 
+// Wie viele Handgriffe stehen nach der Kurzansicht noch im Schritt? Sätze des Rests, ohne den kursiven Schluss
+// (Warum/Rettung) — damit die Übersicht nicht suggeriert, der erste Satz sei schon alles.
+export function moreCount(step) {
+  const rest = remainderAfterAction(step.text || "", step).replace(/\*(?!\*)[^*]+\*\s*$/, "").trim();
+  if (!rest) return 0;
+  return rest.split(/(?<=[.!?:])\s+(?=[A-ZÄÖÜ0-9*½¼¾])|\n+/).filter((x) => x.replace(/[*_\s—-]/g, "").length > 12).length;
+}
+
 // Gespeicherten Zustand auf die aktuelle Form bringen (alte Fassungen, kaputte Werte).
 export function normalizeState(raw) {
   const s = raw && typeof raw === "object" ? raw : {};
@@ -156,6 +164,11 @@ export function normalizeState(raw) {
 
 // ---- Varianten (AP6): Auswahl pro Dimension, Filter, Inline-Alternativen ----
 // Auswahl: { mehl: "dinkel", weg: "kombi" }; fehlende Dimensionen fallen auf den Default.
+// „Neu kochen“: Haken, Timer und Einkaufs-Haken weg; Notiz, Faktor, Reihenfolge und Varianten-Wahl bleiben.
+export function resetState(state) {
+  return { ...state, done: {}, timers: [], shop: {} };
+}
+
 export function selection(recipe, chosen = {}) {
   return Object.fromEntries((recipe.variants || []).map((d) => [d.id, d.choices.some((c) => c.id === chosen[d.id]) ? chosen[d.id] : d.default]));
 }

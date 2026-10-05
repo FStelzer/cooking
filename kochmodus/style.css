@@ -116,4 +116,9 @@ textarea{width:100%;border:1px solid var(--line);border-radius:8px;background:va
 .variants label.var{display:inline-flex;align-items:center;gap:8px;font-weight:700}
 .variants select{font:inherit;font-weight:700;min-height:40px;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
 mark.variant{background:var(--why);outline:1px solid var(--line);border-radius:3px;padding:0 2px}
+.row .more{font-size:14px;font-weight:700;color:var(--c);margin-top:4px}
+.sheet-head .nav{display:inline-flex;align-items:center;gap:4px}
+.sheet-head .nav button{min-width:44px;min-height:44px;border:1px solid var(--line);border-radius:8px;background:var(--surface);font-size:22px;font-weight:700;cursor:pointer}
+.sheet-head .nav button:disabled{opacity:.35;cursor:default}
+.sheet-head .nav small{min-width:3.2em;text-align:center;font-weight:700}
 

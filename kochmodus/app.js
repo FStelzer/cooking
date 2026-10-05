@@ -1,4 +1,4 @@
-import { escapeTilde, fmtAmount, fmtClock, highlight, isActive, isoSeconds, noteMarkdown, normalizeState,
+import { escapeTilde, fmtAmount, fmtClock, highlight, isActive, isoSeconds, moreCount, noteMarkdown, normalizeState, resetState,
          scaleAmount, scaleStepText, selection, selectionKey, textWithAction, timerChoices, variantText } from "./lib.js";
 
 const params = new URLSearchParams(location.search);
@@ -61,7 +61,7 @@ function stepRow(s, course = null, task = null) {
     <div class="body" data-open="${s.id}">
       <div class="t">${esc(s.label)}. ${mdInline(title)}</div>
       ${meta ? `<div class="m">${esc(meta)}</div>` : ""}
-      <div class="a md">${md(scaled(s.action, s))}</div>${runBadge(s)}
+      <div class="a md">${md(scaled(s.action, s))}</div>${(n => n ? `<div class="more">+ ${n} weitere${n === 1 ? "r Handgriff" : " Handgriffe"} ›</div>` : "")(moreCount(s))}${runBadge(s)}
     </div></div>`;
 }
 function plainRow(key, text, extra = "") {
@@ -244,18 +244,42 @@ function renderSheet() {
   if (s.technique) details.push(["Technik", s.technique]);
   for (const p of task.produces || []) if (task.steps[task.steps.length - 1].id === s.id) details.push(["Ergibt", `${p.name}${p.hold?.source ? " — " + p.hold.source : ""}${p.storage?.note ? " (" + p.storage.note + ")" : ""}`]);
   if (task.consumes?.length && task.steps[0].id === s.id) details.push(["Braucht", task.consumes.map((c) => c.replace("product:", "")).join(", ")]);
+  const seq = visibleOrder(), pos = seq.indexOf(s.id);
+  const nav = pos < 0 ? "" : `<div class="nav"><button data-nav="-1" aria-label="Vorheriger Schritt" ${pos > 0 ? "" : "disabled"}>‹</button><small>${pos + 1}/${seq.length}</small><button data-nav="1" aria-label="Nächster Schritt" ${pos < seq.length - 1 ? "" : "disabled"}>›</button></div>`;
   sheet.innerHTML = `
-    <div class="sheet-head"><h2 id="sheetTitle"><span class="lbl">${esc(lbl)}</span>${mdInline(s.title || task.name)}</h2><button class="close" aria-label="Schließen">✕</button></div>
+    <div class="sheet-head"><h2 id="sheetTitle"><span class="lbl">${esc(lbl)}</span>${mdInline(s.title || task.name)}</h2>${nav}<button class="close" aria-label="Schließen">✕</button></div>
     <div class="md fulltext">${md(body)}</div>
     ${details.length ? `<dl class="details">${details.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${mdInline(v)}</dd>`).join("")}</dl>` : ""}
     ${s.events?.length ? `<h3>Zwischendurch</h3><ul>${s.events.map((e) => `<li>⏱ ${fmtClock(isoSeconds(e.at.typical || e.at.min))}: ${mdInline(e.text)}</li>`).join("")}</ul>` : ""}
     ${timers.length ? `<h3>Timer</h3><div class="tbtns">${timers.map((t) => `<button class="tbtn" data-start="${t.i}" data-secs="${t.secs}" data-label="${esc(t.label)}">▶ ${esc(t.label)}<small>${fmtClock(t.secs)}</small></button>`).join("")}</div>` : ""}
     <label class="donebar"><input type="checkbox" class="chk" data-done="${s.id}" ${state.done[s.id] ? "checked" : ""}><b>${state.done[s.id] ? "Erledigt" : "Als erledigt abhaken"}</b></label>`;
 }
+// Reihenfolge, wie die Hauptansicht sie gerade zeigt (Ablauf, nach Gang, Plan …); Dubletten nur einmal
+function visibleOrder() {
+  const ids = [...main.querySelectorAll("[data-open]")].map((el) => el.dataset.open);
+  return [...new Set(ids.length ? ids : steps().map((x) => x.step.id))];
+}
+function stepNav(dir) {
+  const seq = visibleOrder(), next = seq[seq.indexOf(openId) + dir];
+  if (next) { openId = next; renderSheet(); sheet.scrollTop = 0; }
+}
+// Wischen im Detailblatt: links = nächster Schritt, rechts = vorheriger (nur klar horizontale Gesten)
+let touch0 = null;
+sheet.addEventListener("touchstart", (e) => { const t = e.touches[0]; touch0 = { x: t.clientX, y: t.clientY }; }, { passive: true });
+sheet.addEventListener("touchend", (e) => {
+  if (!touch0) return;
+  const t = e.changedTouches[0], dx = t.clientX - touch0.x, dy = t.clientY - touch0.y; touch0 = null;
+  if (Math.abs(dx) > 70 && Math.abs(dx) > 2 * Math.abs(dy)) stepNav(dx < 0 ? 1 : -1);
+}, { passive: true });
 function openSheet(id) { openId = id; renderSheet(); sheet.classList.add("open"); backdrop.classList.add("open"); sheet.scrollTop = 0; }
 function closeSheet() { openId = null; sheet.classList.remove("open"); backdrop.classList.remove("open"); renderMain(); }
 backdrop.onclick = closeSheet;
-document.addEventListener("keydown", (e) => { if (e.key === "Escape" && openId) closeSheet(); });
+document.addEventListener("keydown", (e) => {
+  if (!openId) return;
+  if (e.key === "Escape") closeSheet();
+  else if (e.key === "ArrowRight") stepNav(1);
+  else if (e.key === "ArrowLeft") stepNav(-1);
+});
 
 // ---- Timer (Dock, überlebt Reload via Endzeit) -----------------------------
 const remaining = (t) => (t.paused ? t.left : t.end - Date.now());
@@ -329,6 +353,11 @@ document.addEventListener("visibilitychange", () => { if (document.visibilitySta
 // ---- Ereignisse -------------------------------------------------------------
 document.addEventListener("click", (e) => {
   if (e.target.closest(".close")) return closeSheet();
+  const nv = e.target.closest("[data-nav]"); if (nv) { stepNav(+nv.dataset.nav); return; }
+  if (e.target.id === "reset") {
+    if (confirm("Alle Haken, Timer und Einkaufs-Haken dieses Rezepts zurücksetzen?\nNotiz, Menge und Varianten-Wahl bleiben.")) { state = resetState(state); save(); renderAll(); toast("Zurückgesetzt — bereit zum Kochen"); }
+    return;
+  }
   const st = e.target.closest("[data-start]"); if (st) { startTimer(stepOf(openId), st.dataset.label, +st.dataset.secs); return; }
   const o = e.target.closest("[data-open]"); if (o && !sheet.contains(o)) { openSheet(o.dataset.open); return; }
   const ta = e.target.closest("[data-tact]"); if (ta) { timerAction(ta.closest("[data-tid]").dataset.tid, ta.dataset.tact); return; }
@@ -344,7 +373,12 @@ document.addEventListener("click", (e) => {
 });
 document.addEventListener("change", (e) => {
   const t = e.target;
-  if (t.dataset.done) { if (t.checked) state.done[t.dataset.done] = true; else delete state.done[t.dataset.done]; save(); renderAll(); }
+  if (t.dataset.done) {
+    // Schritt mit mehr als der Kurzansicht: Haken in der Liste öffnet erst die Details, abgehakt wird dort
+    const st = stepOf(t.dataset.done);
+    if (t.checked && st && !sheet.contains(t) && moreCount(st)) { t.checked = false; openSheet(st.id); return; }
+    if (t.checked) state.done[t.dataset.done] = true; else delete state.done[t.dataset.done]; save(); renderAll();
+  }
   else if (t.dataset.shop) { state.shop[t.dataset.shop] = t.checked; save(); t.closest("li").classList.toggle("have", t.checked); }
   else if (t.id === "factor") { state.factor = +t.value || 1; save(); renderAll(); }
   else if (t.dataset.variant) { state.variant = { ...state.variant, [t.dataset.variant]: t.value }; save(); renderAll(); }
