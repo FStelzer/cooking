@@ -9,6 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from tools.recipes.parse import parse_recipe  # noqa: E402
+from tools.recipes.timing import critical_path  # noqa: E402
 
 SPEC = (ROOT / "REZEPTFORMAT.md").read_text(encoding="utf-8")
 BLOCKS = re.findall(r"```markdown\n(.*?)```", SPEC, re.S)
@@ -74,6 +75,8 @@ t("Timer, Ereignis, Temperatur", lambda: (
 t("Zeitplan-Tabelle: Einträge relativ zum Anker", lambda: (
     assert_((sch := next(s for s in r["sections"] if s["type"] == "schedule"))["schedule"]["entries"][0]["at"] == {"ref": "anchor", "offset": "-PT150M"}),
     assert_(sch["schedule"]["entries"][1]["steps"] == ["reduzieren"] or "reduzieren" in str(sch["schedule"]["entries"][1]))))
+t("Kritischer Pfad: Kanten, Vorgänger, „letzte … von“ läuft am Ende mit", lambda: (
+    assert_(critical_path(r)[0] == 105 * 60 and critical_path(r)[2] == ["blanchieren", "schmoren", "reduzieren", "servieren"], critical_path(r))))
 t("Learnings: cooked, Sektionen mit Tags", lambda: (
     assert_(next(s for s in r["sections"] if s["type"] == "learnings")["cooked"] == "07/2026"),
     assert_(next(s for s in r["sections"] if s["title"] == "Kinder-Anpassung")["tags"] == ["kind"])))

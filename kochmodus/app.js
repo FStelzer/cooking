@@ -263,7 +263,12 @@ function visibleOrder() {
 }
 function stepNav(dir) {
   const seq = visibleOrder(), next = seq[seq.indexOf(openId) + dir];
-  if (next) { openId = next; renderMain(); renderSheet(); sheet.scrollTop = 0; scrollToCurrent(); }
+  if (next) { openId = next; markCurrent(); renderSheet(); sheet.scrollTop = 0; scrollToCurrent(); }
+}
+// Offenen Schritt in der Liste markieren, ohne die ganze Ansicht neu zu rendern (stepRow setzt die Klasse beim Rendern)
+function markCurrent() {
+  main.querySelectorAll(".row.current").forEach((r) => r.classList.remove("current"));
+  if (openId) main.querySelectorAll(`.row[data-step="${CSS.escape(openId)}"]`).forEach((r) => r.classList.add("current"));
 }
 // Wischen im Detailblatt: links = nächster Schritt, rechts = vorheriger (nur klar horizontale Gesten)
 let touch0 = null;
@@ -277,15 +282,20 @@ sheet.addEventListener("touchend", (e) => {
 const split = () => matchMedia("(min-width: 900px)").matches;
 function scrollToCurrent() { if (split()) main.querySelector(".row.current")?.scrollIntoView({ block: "nearest", behavior: "smooth" }); }
 function openSheet(id) {
-  openId = id; document.body.classList.add("sheet-open"); renderMain(); renderSheet();
+  openId = id; document.body.classList.add("sheet-open"); markCurrent(); renderSheet();
   sheet.classList.add("open"); backdrop.classList.add("open"); sheet.scrollTop = 0;
 }
 function closeSheet() { openId = null; document.body.classList.remove("sheet-open"); sheet.classList.remove("open"); backdrop.classList.remove("open"); renderMain(); }
 backdrop.onclick = closeSheet;
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Enter" && (e.target.id === "qmin" || e.target.id === "qlabel")) { const m = +$("#qmin").value; if (m > 0) startQuick(Math.round(m * 60)); return; }
+  if (e.key === "Enter" && (e.target.id === "qmin" || e.target.id === "qlabel")) {
+    const s = customSecs();
+    if (s > 0) startQuick(s); else { toast("Minuten eingeben oder eine Vorwahl tippen"); $("#qmin")?.focus(); }
+    return;
+  }
   if (e.key === "Escape" && $("#quick")) { $("#quick").remove(); return; }
   if (!openId) return;
+  if (e.target.matches?.("textarea, select, input:not([type=checkbox])")) return;  // Pfeiltasten und Escape gehören dem Eingabefeld
   if (e.key === "Escape") closeSheet();
   else if (e.key === "ArrowRight") stepNav(1);
   else if (e.key === "ArrowLeft") stepNav(-1);
@@ -314,6 +324,7 @@ function quickHtml() {
     <div class="qcustom"><input id="qmin" type="number" min="0.5" step="0.5" placeholder="Min." aria-label="Minuten"><button data-quick="custom" class="btn primary">Start</button></div>
   </div>`;
 }
+const customSecs = () => Math.round((+$("#qmin")?.value || 0) * 60);
 function startQuick(secs) {
   const label = $("#qlabel").value.trim() || `Timer ${fmtClock(secs)}`;
   $("#quick")?.remove(); startTimer(null, label, secs);
@@ -377,10 +388,15 @@ document.addEventListener("visibilitychange", () => { if (document.visibilitySta
 // ---- Ereignisse -------------------------------------------------------------
 document.addEventListener("click", (e) => {
   if (e.target.closest(".close")) return closeSheet();
-  if (e.target.closest("#addTimer")) { if (!$("#quick")) { document.body.insertAdjacentHTML("beforeend", quickHtml()); $("#qlabel").focus(); } else $("#quick").remove(); return; }
+  if (e.target.closest("#addTimer")) {
+    // Fokus nur mit Maus/Tastatur — auf dem Handy schöbe die Bildschirmtastatur sich über die Vorwahlen
+    if (!$("#quick")) { document.body.insertAdjacentHTML("beforeend", quickHtml()); if (matchMedia("(pointer: fine)").matches) $("#qlabel").focus(); }
+    else $("#quick").remove();
+    return;
+  }
   if (e.target.closest(".qclose")) { $("#quick")?.remove(); return; }
   const q = e.target.closest("[data-quick]");
-  if (q) { const secs = q.dataset.quick === "custom" ? Math.round((+$("#qmin").value || 0) * 60) : +q.dataset.quick; if (secs > 0) startQuick(secs); return; }
+  if (q) { const secs = q.dataset.quick === "custom" ? customSecs() : +q.dataset.quick; if (secs > 0) startQuick(secs); return; }
   const nv = e.target.closest("[data-nav]"); if (nv) { stepNav(+nv.dataset.nav); return; }
   if (e.target.id === "reset") {
     if (confirm("Alle Haken, Timer und Einkaufs-Haken dieses Rezepts zurücksetzen?\nNotiz, Menge und Varianten-Wahl bleiben.")) { state = resetState(state); save(); renderAll(); toast("Zurückgesetzt — bereit zum Kochen"); }
@@ -431,13 +447,26 @@ async function renderPicker() {
 
 // ---- Start -------------------------------------------------------------------
 if ("serviceWorker" in navigator && location.protocol !== "file:") navigator.serviceWorker.register("sw.js").catch(() => {});
+const fromLast = RECIPE_URL && RECIPE_URL === lastRecipe && !params.get("r");
+const sameOrigin = (u) => { try { return new URL(u, location.href).origin === location.origin; } catch { return false; } };
 (async () => {
   if (!RECIPE_URL) return renderPicker();
   try { recipe = await (await fetch(RECIPE_URL)).json(); }
-  catch (err) { main.innerHTML = `<p class="empty">Rezept konnte nicht geladen werden: <code>${esc(RECIPE_URL)}</code> (${esc(err.message)})</p>`; return; }
-  try { localStorage.setItem("km:last", RECIPE_URL); } catch {}
+  catch (err) {
+    // Zuletzt geöffnetes Rezept nicht ladbar: Liste zeigen; umbenannt/gelöscht (kein reiner Netzfehler) → vergessen
+    if (fromLast) {
+      if (!(err instanceof TypeError)) try { localStorage.removeItem("km:last"); } catch {}
+      return renderPicker();
+    }
+    main.innerHTML = `<p class="empty">Rezept konnte nicht geladen werden: <code>${esc(RECIPE_URL)}</code> (${esc(err.message)})</p>`; return;
+  }
   for (const i of recipe.ingredients || []) ingById[i.id] = i;
   state = loadState(recipe.id);
   if (isMenu() && schedule() && !state.viewSeen) view = "plan";
   renderAll();
+  // Erst merken, wenn es sich rendern ließ — und nur Rezepte dieser Seite (der Start ohne ?r= lädt es ungefragt)
+  if (sameOrigin(RECIPE_URL)) try { localStorage.setItem("km:last", RECIPE_URL); } catch {}
+  // Erster Besuch: das Rezept kam, bevor der Service Worker die Seite übernahm — einmal durch ihn holen, damit es offline da ist
+  const sw = navigator.serviceWorker;
+  if (sw && !sw.controller) sw.addEventListener("controllerchange", () => fetch(RECIPE_URL).catch(() => {}), { once: true });
 })();

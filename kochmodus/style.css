@@ -137,7 +137,7 @@ mark.variant{background:var(--why);outline:1px solid var(--line);border-radius:3
   .backdrop.open{display:none}
 }
 .tolist{display:inline-block;font-weight:700;color:var(--c);text-decoration:none;margin-bottom:4px}
-body.picker .toolbar,body.picker .bar,body.picker .tolist,body.picker #variants{display:none}
+body.picker .toolbar,body.picker .bar,body.picker .tolist,body.picker #variants,body.picker .dock{display:none}
 a.pick{display:block;padding:12px 14px;margin-bottom:8px;background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--c);border-radius:8px;color:var(--ink);text-decoration:none;font-weight:700}
 
 @media (min-width:900px){.quick{left:10px;transform:none}}

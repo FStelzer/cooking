@@ -344,15 +344,24 @@ def critical_path(recipe: dict) -> tuple[int, int, list[str]]:
         ref = (st.get("start") or {}).get("ref", "")
         if ref.startswith("step:") and ref.endswith(":end") and ref[5:-4] in steps:
             off = st["start"].get("offset", {})
-            base = fin(ref[5:-4], seen + (sid,)) + (secs(off.get("min") or off.get("typical")) or 0)
+            # Offset passend zu _dur (typical, sonst min = kürzeste Dauer) wählen: „letzte 20–30 Min.“ ist
+            # offset {min: -30, max: -20} bei Dauer 20–30 — kurze Dauer + spätester Start endet mit dem Anker
+            base = fin(ref[5:-4], seen + (sid,)) + (secs(off.get("typical") or off.get("max") or off.get("min")) or 0)
             if base > t0: t0, prev[sid] = base, ref[5:-4]
+        elif ref.startswith("step:") and ref.endswith(":start") and ref[5:-6] in steps:
+            # „≤ 30 Min. vor dem Anrichten“: frühestens erlaubter Start relativ zum Beginn des Ankerschritts
+            x = ref[5:-6]
+            off = st["start"].get("offset", {})
+            base = max(0, fin(x, seen + (sid,)) - _dur(steps[x]) + (secs(off.get("min") or off.get("typical")) or 0))
+            if base > t0: t0, prev[sid] = base, x
         end[sid] = t0 + _dur(st)
         return end[sid]
     for sid in order: fin(sid)
     if not end: return 0, 0, []
     last = max(end, key=end.get)
     path = [last]
-    while path[-1] in prev: path.append(prev[path[-1]])
+    while path[-1] in prev and prev[path[-1]] not in path:  # Zyklus über start-Refs (Check D sieht nur after)
+        path.append(prev[path[-1]])
     active = sum(_dur(s) for s in steps.values() if s.get("attention") != "passive" and not s.get("parallel"))
     return end[last], active, path[::-1]
 
@@ -367,7 +376,8 @@ def check_p(recipe: dict) -> tuple[list[str], list[str]]:
     fmt = lambda x: f"{x // 3600}:{x % 3600 // 60:02d}"
     reps = [f"P kritischer Pfad {fmt(length)} ({len(path)} Schritte: {' → '.join(path)}), aktiv {fmt(active)}"]
     tot = (recipe.get("times") or {}).get("total") or {}
-    lo, hi = secs(tot.get("min") or tot.get("typical")), secs(tot.get("max") or tot.get("typical"))
+    lo = secs(tot.get("min") or tot.get("typical") or tot.get("max"))  # Schema erlaubt auch nur min oder nur max
+    hi = secs(tot.get("max") or tot.get("typical") or tot.get("min"))
     if lo is not None:
         if length > hi * 1.15:
             reps.append(f"P ⚠ Pfad {fmt(length)} länger als „gesamt {tot.get('source', '')}“ — Dauern oder Kanten prüfen")

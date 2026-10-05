@@ -131,7 +131,8 @@ def parse_head(head: str, lint: Lint) -> dict:
         tm = re.search(r"Aktive Zeit\s*(?:\\?~)?(.+?),\s*gesamt\s*(?:\\?~)?(.*)$", first)
         if tm:
             a, t = duration_range(tm.group(1)), duration_range(tm.group(2))
-            end = tm.start(2) + (DUR_RE.search(tm.group(2)).end() if t else 0)
+            tend = DUR_RE.search(tm.group(2)) or re.search(r"über Nacht", tm.group(2))  # „gesamt über Nacht“ hat keine Zahl
+            end = tm.start(2) + (tend.end() if t and tend else 0)
             out["times"] = {"text": first[tm.start(): end].strip(" *")}
             if a: out["times"]["active"] = a
             if t: out["times"]["total"] = t

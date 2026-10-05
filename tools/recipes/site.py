@@ -13,6 +13,7 @@ MM/JJJJ der Kurzfassung (undatiert zuerst), dann nach Titel ohne Akzente.
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import sys
 import unicodedata
@@ -98,10 +99,14 @@ def learnings_block(claude_md: str) -> str:
 
 def recipe_index() -> str:
     """Alle Rezepte mit gebautem JSON, Ordnung wie die Sidebar: Rezeptliste der Kochmodus-App (offline-fähig)."""
-    import json
-    items = [{"path": "../" + rel(f.with_suffix(".json")), "title": title_of(f).removeprefix("🚧").lstrip(" "),
-              "group": d.name, "wip": is_wip(title_of(f)), "cooked": is_cooked(f)}
-             for d in recipe_dirs() for f in md_files(d) if f.with_suffix(".json").exists()]
+    items = []
+    for d in recipe_dirs():
+        for f in md_files(d):
+            if not f.with_suffix(".json").exists():
+                continue
+            title = title_of(f)
+            items.append({"path": "../" + rel(f.with_suffix(".json")), "title": title.removeprefix("🚧").lstrip(" "),
+                          "group": d.name, "wip": is_wip(title), "cooked": is_cooked(f)})
     return json.dumps(items, ensure_ascii=False, indent=1) + "\n"
 
 
@@ -112,7 +117,7 @@ def main(argv: list[str] | None = None) -> int:
     a = p.parse_args(argv)
     target = ROOT / {"sidebar": "_sidebar.md", "learnings": "CLAUDE.md", "index": "kochmodus/rezepte.json"}[a.what]
     old = target.read_text(encoding="utf-8") if target.exists() else ""
-    new = {"sidebar": sidebar, "index": recipe_index}.get(a.what, lambda: learnings_block(old))()
+    new = {"sidebar": sidebar, "index": recipe_index, "learnings": lambda: learnings_block(old)}[a.what]()
     if a.check:
         print(f"{target.name}: {'aktuell' if new == old else 'VERALTET (task ' + a.what + ')'}")
         return int(new != old)
