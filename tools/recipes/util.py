@@ -147,7 +147,8 @@ def annotation_quotes(recipe: dict) -> list[tuple[str, str]]:
     return q
 
 
-_ABBREV = {"z", "b", "ca", "bzw", "ggf", "evtl", "min", "std", "sek", "nr", "st", "inkl", "max", "vgl", "u", "a", "s", "o"}
+_ABBREV = {"z", "b", "ca", "bzw", "ggf", "evtl", "nr", "st", "inkl", "max", "vgl", "u", "a", "s", "o"}
+_TIME_ABBREV = {"min", "std", "sek"}  # Satzende, wenn danach ein Großbuchstabe folgt („… 20 Min. Danach …“)
 _SENT_END = re.compile(r"[.!?]\s+(?=[A-ZÄÖÜ0-9„\"*(½¼¾])")
 
 
@@ -159,6 +160,8 @@ def sentence_ends(text: str) -> list[int]:
         before = text[:m.start()]
         word = re.findall(r"[\wäöüÄÖÜß]+$", before.rstrip("*)"))
         if word and word[-1].lower() in _ABBREV:
+            continue
+        if word and word[-1].lower() in _TIME_ABBREV and not text[m.end()].isupper():
             continue
         ends.append(m.start() + 1)
     ends.append(len(text.rstrip()))

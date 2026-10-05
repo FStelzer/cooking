@@ -46,6 +46,8 @@ def display_text(amount: dict, ingredient: dict | None = None, metric: bool = Fa
         return amount["text"]
     raw = _fmt(v) if mx in (None, v) else f"{_fmt(v)}–{_fmt(mx)}"
     raw_u = f"{raw} {u}" if u and u != "Stück" else raw
+    if amount.get("approx"):
+        raw_u = "~" + raw_u
     d = amount.get("display")
     if d:
         dv = _fmt(d["value"]) if d.get("max") in (None, d["value"]) else f"{_fmt(d['value'])}–{_fmt(d['max'])}"

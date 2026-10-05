@@ -8,7 +8,7 @@ from __future__ import annotations
 import re
 from collections import OrderedDict
 
-from .util import iter_steps, normalize
+from .util import iter_steps, iter_tasks, normalize
 
 
 def _words(s: str) -> set[str]:
@@ -82,16 +82,23 @@ def diff(a: dict, b: dict) -> list[str]:
             t.add(f"ingredients.{f}", ia["id"], ia.get(f), ib.get(f))
         t.add("ingredients.note", ia["id"], normalize(ia.get("note", "")), normalize(ib.get("note", "")))
 
-    sa = {s["label"]: (task, s) for task, s in iter_steps(a)}
-    sb = {s["label"]: (task, s) for task, s in iter_steps(b)}
+    def keyed(r):
+        out = OrderedDict()
+        for ti, task in enumerate(iter_tasks(r)):
+            for st in task["steps"]:
+                out[(ti, st["label"])] = (task, st)
+        return out
+
+    sa, sb = keyed(a), keyed(b)
     t.add("steps.count", "-", len(sa), len(sb))
     t.add("tasks.ids", "-", [tk["id"] for tk, _ in iter_steps(a)][:1], [tk["id"] for tk, _ in iter_steps(b)][:1])
-    for label, (ta, xa) in sa.items():
-        if label not in sb:
-            t.add("steps.matched", label, True, False, same=False)
+    for key, (ta, xa) in sa.items():
+        label = key[1]
+        if key not in sb:
+            t.add("steps.matched", f"{ta['id']}/{label}", True, False, same=False)
             continue
-        tb, xb = sb[label]
-        w = f"Schritt {label}"
+        tb, xb = sb[key]
+        w = f"Schritt {ta['id']}/{label}"
         t.add("steps.id", w, xa["id"], xb["id"])
         t.add("steps.text", w, normalize(xa["text"]), normalize(xb["text"]))
         t.add("steps.heading", w, normalize(xa.get("heading", "")), normalize(xb.get("heading", "")))
@@ -130,7 +137,7 @@ def diff(a: dict, b: dict) -> list[str]:
     t.add("learnings.cooked", "-", la.get("cooked"), lb.get("cooked"))
     t.add("learnings.summary", "-", normalize(la.get("summary", "")), normalize(lb.get("summary", "")))
     t.add("learnings.details", "-", normalize(la.get("details", "")), normalize(lb.get("details", "")))
-    smap = {xa["id"]: sb[l][1]["id"] for l, (_, xa) in sa.items() if l in sb}
+    smap = {xa["id"]: sb[k][1]["id"] for k, (_, xa) in sa.items() if k in sb}
     na = sorted((smap.get(n["ref"].split(":", 1)[1], n["ref"]), normalize(n["text"])[:40]) for n in la.get("notes", []))
     nb = sorted((n["ref"].split(":", 1)[1], normalize(n["text"])[:40]) for n in lb.get("notes", []))
     t.add("learnings.notes.refs", "-", sorted(x[0] for x in na), sorted(x[0] for x in nb))

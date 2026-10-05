@@ -657,7 +657,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T08:27:30Z",
+    "generatedAt": "2026-10-05T08:35:07Z",
     "sourceHash": "975651683432d1a4",
     "quantities": [
       {
@@ -666,6 +666,7 @@
           "text": "900–1000 g",
           "value": 900,
           "max": 1000,
+          "approx": false,
           "unit": "g"
         },
         "perTask": {
@@ -678,6 +679,7 @@
           "text": "6",
           "value": 6,
           "max": 6,
+          "approx": false,
           "unit": "Stück"
         },
         "perTask": {
@@ -690,6 +692,7 @@
           "text": "5 EL",
           "value": 5,
           "max": 5,
+          "approx": false,
           "unit": "EL"
         },
         "perTask": {
@@ -702,6 +705,7 @@
           "text": "4–5 EL",
           "value": 4,
           "max": 5,
+          "approx": false,
           "unit": "EL"
         },
         "perTask": {
@@ -714,6 +718,7 @@
           "text": "4",
           "value": 4,
           "max": 4,
+          "approx": false,
           "unit": "Stück"
         },
         "perTask": {
@@ -726,6 +731,7 @@
           "text": "4",
           "value": 4,
           "max": 4,
+          "approx": false,
           "unit": "Stück"
         },
         "perTask": {
@@ -738,6 +744,7 @@
           "text": "500–600 ml",
           "value": 500,
           "max": 600,
+          "approx": false,
           "unit": "ml"
         },
         "unitless": [
@@ -763,6 +770,7 @@
           "text": "400 g",
           "value": 400,
           "max": 400,
+          "approx": false,
           "unit": "g"
         },
         "perTask": {
@@ -775,6 +783,7 @@
           "text": "½",
           "value": 0.5,
           "max": 0.5,
+          "approx": false,
           "unit": "Stück"
         },
         "perTask": {
@@ -787,6 +796,7 @@
           "text": "2",
           "value": 2,
           "max": 2,
+          "approx": false,
           "unit": "Stück"
         },
         "perTask": {
@@ -799,6 +809,7 @@
           "text": "1",
           "value": 1,
           "max": 1,
+          "approx": false,
           "unit": "Stück"
         },
         "perTask": {
@@ -811,6 +822,7 @@
           "text": "3 EL",
           "value": 3,
           "max": 3,
+          "approx": false,
           "unit": "EL"
         },
         "perTask": {
@@ -823,6 +835,7 @@
           "text": "1 Prise",
           "value": 1,
           "max": 1,
+          "approx": false,
           "unit": "Prise"
         },
         "perTask": {
@@ -835,6 +848,7 @@
           "text": "2–3",
           "value": 2,
           "max": 3,
+          "approx": false,
           "unit": "Stück"
         },
         "perTask": {
@@ -857,6 +871,7 @@
           "text": "1 EL",
           "value": 1,
           "max": 1,
+          "approx": false,
           "unit": "EL"
         },
         "perTask": {
@@ -865,24 +880,6 @@
       }
     ],
     "shopping": [
-      {
-        "store": "Asialaden",
-        "group": "Getränke",
-        "items": [
-          {
-            "ingredient": "kokoswasser",
-            "name": "Kokoswasser",
-            "text": "500–600 ml Kokoswasser *(ungesüßt)*",
-            "need": {
-              "text": "500–600 ml",
-              "value": 500,
-              "max": 600,
-              "unit": "ml"
-            },
-            "checked": false
-          }
-        ]
-      },
       {
         "store": "Asialaden",
         "group": "Trockenwaren",
@@ -895,6 +892,7 @@
               "text": "400 g",
               "value": 400,
               "max": 400,
+              "approx": false,
               "unit": "g"
             },
             "checked": false
@@ -913,6 +911,7 @@
               "text": "4–5 EL",
               "value": 4,
               "max": 5,
+              "approx": false,
               "unit": "EL"
             },
             "checked": false
@@ -925,7 +924,27 @@
               "text": "3 EL",
               "value": 3,
               "max": 3,
+              "approx": false,
               "unit": "EL"
+            },
+            "checked": false
+          }
+        ]
+      },
+      {
+        "store": "Asialaden",
+        "group": "Getränke",
+        "items": [
+          {
+            "ingredient": "kokoswasser",
+            "name": "Kokoswasser",
+            "text": "500–600 ml Kokoswasser *(ungesüßt)*",
+            "need": {
+              "text": "500–600 ml",
+              "value": 500,
+              "max": 600,
+              "approx": false,
+              "unit": "ml"
             },
             "checked": false
           }
@@ -943,25 +962,8 @@
               "text": "900–1000 g",
               "value": 900,
               "max": 1000,
+              "approx": false,
               "unit": "g"
-            },
-            "checked": false
-          }
-        ]
-      },
-      {
-        "store": "Aldi / REWE",
-        "group": "Milchprodukte & Eier",
-        "items": [
-          {
-            "ingredient": "eier",
-            "name": "Eier",
-            "text": "6 Eier",
-            "need": {
-              "text": "6",
-              "value": 6,
-              "max": 6,
-              "unit": "Stück"
             },
             "checked": false
           }
@@ -979,6 +981,7 @@
               "text": "4",
               "value": 4,
               "max": 4,
+              "approx": false,
               "unit": "Stück"
             },
             "checked": false
@@ -991,6 +994,7 @@
               "text": "4",
               "value": 4,
               "max": 4,
+              "approx": false,
               "unit": "Stück"
             },
             "checked": false
@@ -1003,6 +1007,7 @@
               "text": "½",
               "value": 0.5,
               "max": 0.5,
+              "approx": false,
               "unit": "Stück"
             },
             "checked": false
@@ -1015,6 +1020,7 @@
               "text": "2",
               "value": 2,
               "max": 2,
+              "approx": false,
               "unit": "Stück"
             },
             "checked": false,
@@ -1029,6 +1035,7 @@
               "text": "1",
               "value": 1,
               "max": 1,
+              "approx": false,
               "unit": "Stück"
             },
             "checked": false,
@@ -1043,6 +1050,7 @@
               "text": "2–3",
               "value": 2,
               "max": 3,
+              "approx": false,
               "unit": "Stück"
             },
             "checked": false
@@ -1062,6 +1070,25 @@
       },
       {
         "store": "Aldi / REWE",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "eier",
+            "name": "Eier",
+            "text": "6 Eier",
+            "need": {
+              "text": "6",
+              "value": 6,
+              "max": 6,
+              "approx": false,
+              "unit": "Stück"
+            },
+            "checked": false
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
         "group": "Trockenwaren",
         "items": [
           {
@@ -1072,6 +1099,7 @@
               "text": "5 EL",
               "value": 5,
               "max": 5,
+              "approx": false,
               "unit": "EL"
             },
             "checked": false
@@ -1100,6 +1128,7 @@
               "text": "1 Prise",
               "value": 1,
               "max": 1,
+              "approx": false,
               "unit": "Prise"
             },
             "checked": false,
@@ -1113,6 +1142,7 @@
               "text": "1 EL",
               "value": 1,
               "max": 1,
+              "approx": false,
               "unit": "EL"
             },
             "checked": false,

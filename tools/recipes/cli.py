@@ -27,6 +27,9 @@ def cmd_check(paths: list[str], verbose: bool) -> int:
                 errs.append(f"Quelle fehlt: {source_path(recipe)}")
             else:
                 src = read_source(recipe)
+                if "derived" not in recipe:
+                    recipe = dict(recipe, derived=derive(recipe))
+                    reps.append("K derived-Block fehlt — für die Prüfung im Speicher berechnet (`cli derive` schreibt ihn)")
                 for fn in (check_b, check_c, lambda r, s: check_d(r), check_k):
                     e, r = fn(recipe, src)
                     errs += e
@@ -70,7 +73,7 @@ def cmd_diff(a: str, b: str) -> int:
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="tools.recipes.cli")
     sub = ap.add_subparsers(dest="cmd", required=True)
-    c = sub.add_parser("check", help="Checks A–D gegen die Quelle laufen lassen")
+    c = sub.add_parser("check", help="Checks A–D und K gegen die Quelle laufen lassen")
     c.add_argument("paths", nargs="+")
     c.add_argument("-v", "--verbose", action="store_true")
     d = sub.add_parser("derive", help="derived-Block (Einkaufsliste, Mengen) berechnen und ins JSON schreiben")
