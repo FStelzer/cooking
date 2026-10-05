@@ -9,104 +9,18 @@ tasks:
   sidebar:
     desc: Generiere _sidebar.md aus den Markdown-Dateien in Unterordnern (🚧-Titel → Sektion "in arbeit")
     cmds:
-      - |
-        {
-          get_title() {
-            t=$(awk '/^# /{sub(/^# +/, ""); print; exit}' "$1")
-            [ -z "$t" ] && t=$(basename "$1" .md)
-            printf '%s' "$t"
-          }
-          # Ideen-Backlog zuoberst (Einstiegspunkt)
-          echo "- [Ideen-Backlog](/ideen.md)"
-          # Rezepte in Arbeit: H1-Titel beginnt mit 🚧
-          wip=""
-          for dir in */; do
-            dir="${dir%/}"
-            case "$dir" in
-              .*) continue ;;
-            esac
-            for f in "$dir"/*.md; do
-              [ -e "$f" ] || continue
-              case "$(get_title "$f")" in
-                "🚧"*) wip="$wip $f" ;;
-              esac
-            done
-          done
-          if [ -n "$wip" ]; then
-            echo "- **🚧 in arbeit**"
-            for f in $wip; do
-              title=$(get_title "$f")
-              title="${title#"🚧"}"; title="${title# }"
-              echo "  - [${title}](/${f})"
-            done
-          fi
-          # Kategorien (ohne 🚧-Rezepte)
-          for dir in */; do
-            dir="${dir%/}"
-            case "$dir" in
-              .*) continue ;;
-            esac
-            files=""
-            for f in "$dir"/*.md; do
-              [ -e "$f" ] || continue
-              case "$(get_title "$f")" in
-                "🚧"*) continue ;;
-              esac
-              files="$files $f"
-            done
-            [ -z "$files" ] && continue
-            echo "- **${dir}**"
-            for f in $files; do
-              # ✅-Präfix für gekochte Rezepte (= ## Learnings-Sektion vorhanden)
-              if grep -q '^## Learnings' "$f"; then
-                echo "  - [✅ $(get_title "$f")](/${f})"
-              else
-                echo "  - [$(get_title "$f")](/${f})"
-              fi
-            done
-          done
-        } > _sidebar.md
+      - python3 -m tools.recipes.site sidebar
 
   learnings:
     desc: Generiere den "Bisherige Projekte"-Block in CLAUDE.md aus den ## Learnings-Sektionen der Rezepte
     cmds:
-      - |
-        tmp=$(mktemp) gen=$(mktemp)
-        for f in */*.md; do
-          case "$f" in
-            _*) continue ;;
-          esac
-          awk -v path="$f" '
-            /^# / { if (!title) { title = $0; sub(/^# +/, "", title); sub(/^🚧 */, "", title) } }
-            /^## Learnings/ { inlearn = 1; next }
-            inlearn && /^##/ { exit }
-            inlearn { body = body $0 "\n" }
-            END {
-              sub(/^\n+/, "", body); sub(/\n+$/, "", body)
-              if (body == "") exit
-              # Sortierschlüssel: erstes MM/JJJJ in der Kurzfassung, sonst 0000-00 (undatiert zuerst)
-              key = "0000-00"
-              if (match(body, /[0-9][0-9]\/[0-9][0-9][0-9][0-9]/)) {
-                d = substr(body, RSTART, RLENGTH)
-                key = substr(d, 4, 4) "-" substr(d, 1, 2)
-              }
-              n = split(body, lines, "\n")
-              out = "- ✅ **" title "** (siehe `" path "`)"
-              for (i = 1; i <= n; i++) out = out "\n" (lines[i] == "" ? "" : "  " lines[i])
-              gsub(/\n/, "\x01", out)
-              print key "\t" out
-            }
-          ' "$f"
-        done | sort > "$tmp"
-        while IFS="$(printf '\t')" read -r _key entry; do
-          printf '%s\n\n' "$entry" | tr '\001' '\n'
-        done < "$tmp" > "$gen"
-        awk -v gen="$gen" '
-          /<!-- learnings:start -->/ { print; print ""; while ((getline line < gen) > 0) print line; skip = 1; next }
-          /<!-- learnings:end -->/ { skip = 0 }
-          !skip
-        ' CLAUDE.md > CLAUDE.md.new && mv CLAUDE.md.new CLAUDE.md
-        rm -f "$tmp" "$gen"
+      - python3 -m tools.recipes.site learnings
+
+  hooks:
+    desc: Pre-Commit-Hook aktivieren (.githooks/pre-commit → task validate vor jedem Commit)
+    cmds:
+      - git config core.hooksPath .githooks
+      - echo "core.hooksPath = .githooks — 'task validate' läuft jetzt vor jedem Commit (git commit --no-verify überspringt)"
 
   serve:
     desc: Lokalen Python-Webserver auf Port 3000 starten (Kochmodus unter /kochmodus/)
@@ -119,10 +33,13 @@ tasks:
       - python3 -m tools.recipes.cli build {{.CLI_ARGS | default "$(ls {gerichte,menues,desserts,backen,eis,schwangerschaft}/*.json 2>/dev/null | sed 's/\.json$/.md/')"}}
 
   validate:
-    desc: Rezeptformat — Checks A–L gegen alle gebauten JSONs; Parität gegen schema/beispiele
+    desc: Rezeptformat — Parser-Tests, Checks A–L gegen alle gebauten JSONs, JSON/Sidebar/Learnings aktuell? (Pre-Commit-Gate, s. task hooks)
     cmds:
+      - python3 tools/test_parse.py
       - python3 -m tools.recipes.cli check $(ls {gerichte,menues,desserts,backen,eis,schwangerschaft}/*.json 2>/dev/null)
       - python3 -m tools.recipes.cli build --check $(ls {gerichte,menues,desserts,backen,eis,schwangerschaft}/*.json 2>/dev/null | sed 's/\.json$/.md/')
+      - python3 -m tools.recipes.site sidebar --check
+      - python3 -m tools.recipes.site learnings --check
 
   test-kochmodus:
     desc: Kochmodus — Node-Tests der reinen Funktionen (lib.js)

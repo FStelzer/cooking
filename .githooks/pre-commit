@@ -1,0 +1,13 @@
+#!/bin/sh
+# Pre-Commit: Rezeptformat-Gate (Parser-Tests, Checks A–L, JSON/Sidebar/Learnings aktuell).
+# Aktivieren: `task hooks` (setzt core.hooksPath auf .githooks). Überspringen: git commit --no-verify
+cd "$(git rev-parse --show-toplevel)" || exit 1
+if ! command -v task >/dev/null 2>&1; then
+  echo "pre-commit: 'task' nicht gefunden, Gate übersprungen" >&2
+  exit 0
+fi
+task validate >/dev/null 2>&1 && exit 0
+echo "pre-commit: 'task validate' schlägt fehl — Ausgabe:" >&2
+task validate 2>&1 | tail -20 >&2
+echo "Beheben (meist: task build / task sidebar / task learnings), oder git commit --no-verify" >&2
+exit 1

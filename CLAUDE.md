@@ -201,13 +201,17 @@ schreiben (rendert als normales `~`). Tabellenzellen sind unkritisch
   Titel steht eine Status-Alertbox (`> [!NOTE]` … "Status: In Arbeit"). Solche
   Stubs enthalten Idee, grobe Richtung, Beschaffungs-Einschätzung und offene
   Fragen — noch keine Einkaufsliste/Zubereitung.
-- **Strukturiertes Rezeptformat (in Arbeit, Stand 10/2026):** `SCHEMA.md` (Leit-
-  entscheidungen, Konvertierungs-Anleitung, Checks, Entscheidungslog),
-  `schema/` (JSON Schema + handkonvertierte Beispiele), `tools/recipes/` (Python-
-  Validator: `task validate`), `kochmodus/` (statische Kochmodus-Seite:
-  `task serve` → `/kochmodus/`). Markdown bleibt Quelle; Einkaufsliste und
-  Mengen-Check sollen mittelfristig generiert werden. Keine `.md` unter `schema/`,
-  `tools/`, `kochmodus/` (Sidebar-Generator).
+- **Strukturiertes Rezeptformat (Stand 10/2026):** `REZEPTFORMAT.md` ist die
+  Schreibkonvention (Schritte `**N. Titel (Dauer)**`, Meta-Zeile, Einkaufsliste nach
+  Laden); `task build` erzeugt daraus per Parser das JSON **neben der `.md`**
+  (`gerichte/x.json`, wird committed), `cli lint` zeigt Parser-Lücken, `task validate`
+  ist das Gate (Parser-Tests, Checks A–L, JSON/Sidebar/Learnings aktuell) und läuft
+  per Pre-Commit-Hook (`task hooks` einmalig aktivieren; kein CI). Hintergrund in
+  `SCHEMA.md` (Leitentscheidungen, Checks, Log), `schema/` (JSON Schema + eingefrorene
+  Hand-Beispiele als Parität-Soll), `kochmodus/` (Kochmodus-Seite: `task serve` →
+  `/kochmodus/`; Docsify zeigt den Knopf, sobald ein JSON neben der `.md` liegt).
+  Einkaufsliste und Mengen-Check im Markdown bleiben, bis die generierte Liste in
+  Docsify angezeigt wird. Keine `.md` unter `schema/`, `tools/`, `kochmodus/`.
 - **Sidebar wird generiert:** `_sidebar.md` NIE von Hand editieren, sondern
   `task sidebar` laufen lassen. Der Generator setzt den Link auf `ideen.md`
   zuoberst, gruppiert 🚧-Rezepte automatisch in die Sektion „🚧 in arbeit" und
@@ -349,15 +353,18 @@ hier bewusst keine Aufzählung (Drift-Vermeidung).
 
 ## Workflow: Neues Rezept erarbeiten
 
-Vorgehensweise für neue Rezepte in diesem Repo:
+Vorgehensweise für neue Rezepte in diesem Repo (Einstieg: Skill `/rezept neu <Quelle
+oder Idee>`; Bestand auf die Konvention bringen: `/rezept normalisieren <datei.md>`):
 
 1. **Idee & Kontext:** Grobe Idee beschreiben (z.B. "Pho für 2+1, winterlich").
    Claude prüft gegen Equipment, Einkaufsquellen, Vorlieben und bisherige Learnings.
 2. **Recherche & Abwägung:** Varianten diskutieren, Quellen nennen,
    realistische Einschätzung der Beschaffbarkeit und des Aufwands.
-3. **Rezept-Entwurf:** Vollständiges Rezept mit Einkaufsliste, Zeitplan,
-   Mengen-Check (Gesamtverbrauch pro Zutat!) und Kinder-Anpassungen.
-4. **Review & Feinschliff:** Kritische Prüfung, ggf. Vereinfachungen.
+3. **Rezept-Entwurf:** Vollständiges Rezept nach `REZEPTFORMAT.md` mit Einkaufsliste,
+   Zeitplan, Mengen-Check (Gesamtverbrauch pro Zutat!) und Kinder-Anpassungen.
+4. **Review & Feinschliff:** Kritische Prüfung, ggf. Vereinfachungen. Dann
+   `python3 -m tools.recipes.cli lint <datei.md>` (Lücken), `task build -- <datei.md>`
+   (JSON daneben), `task validate`, `task sidebar`; JSON mit committen.
 5. **Nach dem Kochen:** `## Learnings`-Sektion in der Rezeptdatei ergänzen
    (Kurzfassung vor den `###`-Details), dann `task learnings` laufen lassen —
    der Block in CLAUDE.md wird generiert, nicht von Hand gepflegt.
