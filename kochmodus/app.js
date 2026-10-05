@@ -33,7 +33,7 @@ const stepOf = (id) => steps().find((x) => x.step.id === id)?.step;
 const labelOf = (ref) => stepOf(ref.replace(/^step:/, ""))?.label;
 const scaled = (text, step) => scaleStepText(text, step, factor(), ingById);
 function hasNote(id) { return !!state.notes[id]?.trim(); }
-function courseTitle(c) { return c ? c.title.replace(/^\d+\.\s*/, "") : "Menü"; }
+function courseTitle(c) { return c ? (recipe.courses?.find((x) => x.ref === c.id)?.name || c.title.replace(/^\d+\.\s*/, "")) : "Menü"; }
 function schedule() { return recipe.sections.find((s) => s.type === "schedule"); }
 
 // ---- Ansichten -------------------------------------------------------------
