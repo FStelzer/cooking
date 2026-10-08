@@ -1,6 +1,6 @@
 # Vollkornbrötchen auf Vorrat — Weizen als Leitrezept, Dinkel und Weizen-Roggen als Varianten (12 Stück)
 
-*Aktive Zeit \~1¼ Std., gesamt 3 Tage (Standardweg Übernacht: Do-Abend Poolish, Fr-Abend Teig, Sa-Morgen backen; vorgebackene aus dem Frost auch später). Do-Abend \~20 Min. Arbeit (Poolish, Kochstück), Fr-Abend \~2¾ Std., davon \~45 Min. Arbeit. Samstagmorgen: 1 Std. vom Aufstehen bis zum Frühstück, davon \~10 Min. Arbeit. Vorgebackene aus dem Frost aufbacken: 25 Min. inkl. Vorheizen. Equipment: Küchenwaage (1 g), Fleischthermometer, Teigkarte, Backpapier, 2 Backbleche, Rasierklinge oder sehr scharfes glattes Messer, Sprühflasche oder kleine Metallschale, Küchenmaschine mit Knethaken (Bosch MUM5; Variante Hand: ohne).*
+*Aktive Zeit \~1¼ Std., gesamt \~26 Std. (Standardweg Übernacht: Fr-Morgen Poolish, Fr-Abend Teig, Sa-Morgen backen; vorgebackene aus dem Frost auch später). Fr-Morgen \~15 Min. Arbeit (Poolish, Kochstück — das Kochstück auch schon Do-Abend), Fr-Abend \~2¾ Std., davon \~45 Min. Arbeit. Samstagmorgen: 1 Std. vom Aufstehen bis zum Frühstück, davon \~10 Min. Arbeit. Vorgebackene aus dem Frost aufbacken: 25 Min. inkl. Vorheizen. Equipment: Küchenwaage (1 g), Fleischthermometer, Teigkarte, Backpapier, 2 Backbleche, Rasierklinge oder sehr scharfes glattes Messer, Sprühflasche oder kleine Metallschale, Küchenmaschine mit Knethaken (Bosch MUM5; Variante Hand: ohne).*
 
 *Varianten: Mehl = Weizen | Weizen-Roggen | Dinkel · Weg = Übernacht | Direkt backen | Einfrieren · Kneten = Maschine | Hand*
 
@@ -110,11 +110,11 @@ Ergibt 12 Teiglinge à \~100 g (Dinkel \~95 g). **Fett gedruckt = Leitrezept Wei
 
 ## Zubereitung
 
-### Vorabend (20 Min.)
+### Vorstufen (20 Min.)
 
 **1. Poolish ansetzen (12–16 Std., passiv)**
 *jederzeit*
-0,2 g Frischhefe (ein erbsengroßes Stück) in 150 g Wasser (\~20 °C) zerdrücken, 150 g Weizenvollkornmehl (Dinkel: 150 g Dinkelvollkornmehl) einrühren, bis kein trockenes Mehl mehr sichtbar ist. Abdecken, **12–16 Std. bei \~20 °C**. Warme Küche (> 24 °C): 10–12 Std. (Übernacht: Do 21:00 ansetzen, Fr \~7:00 nach 10 Std. in den Kühlschrank bis zum Teigbeginn — dort hält er bis \~24 Std.) *Eilvariante: 2 g Hefe, 3–4 Std. bei 24–26 °C — weniger Aroma, funktioniert.*
+0,2 g Frischhefe (ein erbsengroßes Stück) in 150 g Wasser (\~20 °C) zerdrücken, 150 g Weizenvollkornmehl (Dinkel: 150 g Dinkelvollkornmehl) einrühren, bis kein trockenes Mehl mehr sichtbar ist. Abdecken, **12–16 Std. bei \~20 °C**. Warme Küche (> 24 °C): 10–12 Std. (Übernacht: Fr \~6:30 mit Wasser von \~24 °C ansetzen, dann ist er zum Teigbeginn \~18:15 nach knapp 12 Std. reif; kühle Küche < 20 °C: 0,3 g Hefe. Ist er schon am Nachmittag reif, in den Kühlschrank bis zum Teigbeginn.) *Eilvariante: 2 g Hefe, 3–4 Std. bei 24–26 °C — weniger Aroma, funktioniert.*
 
 **2. Kochstück kochen (ca. 10 Min.)**
 *jederzeit · Herd*
@@ -128,7 +128,7 @@ Ergibt 12 Teiglinge à \~100 g (Dinkel \~95 g). **Fett gedruckt = Leitrezept Wei
 
 **4. Autolyse (45 Min., passiv)**
 *nach Poolish ansetzen, Kochstück kochen, Quellstück ansetzen*
-In der Rührschüssel der Küchenmaschine (Hand: große Schüssel): 390 g Weizenvollkornmehl (Weizen-Roggen: 300 g Weizenvollkornmehl + 90 g Roggenvollkornmehl, Dinkel: 390 g Dinkelvollkornmehl), 80 g Wasser (Weizen-Roggen: 90 g, Dinkel: 40 g) von \~28 °C, den kompletten Poolish, das komplette Kochstück und das komplette Quellstück **nur so lange mischen, bis kein trockenes Mehl mehr sichtbar ist** — mit Knethaken 1–2 Min. auf Stufe 1 (Hand: Teigkarte und nasse Hände, 2–3 Min.); darf klumpig aussehen. Mit Maschine das Wasser nur \~25 °C warm nehmen, der Knethaken bringt später 2–3 °C Reibungswärme. Kommen Poolish und Kochstück beide kalt aus dem Kühlschrank (Übernacht), das Wasser \~32 °C (Maschine: \~30 °C) warm nehmen. Abdecken, 45 Min. ruhen lassen (Dinkel: 30 Min.). *Kein Kneten — das Mehl arbeitet allein.*
+In der Rührschüssel der Küchenmaschine (Hand: große Schüssel): 390 g Weizenvollkornmehl (Weizen-Roggen: 300 g Weizenvollkornmehl + 90 g Roggenvollkornmehl, Dinkel: 390 g Dinkelvollkornmehl), 80 g Wasser (Weizen-Roggen: 90 g, Dinkel: 40 g) von \~28 °C, den kompletten Poolish, das komplette Kochstück und das komplette Quellstück **nur so lange mischen, bis kein trockenes Mehl mehr sichtbar ist** — mit Knethaken 1–2 Min. auf Stufe 1 (Hand: Teigkarte und nasse Hände, 2–3 Min.); darf klumpig aussehen. Mit Maschine das Wasser nur \~25 °C warm nehmen, der Knethaken bringt später 2–3 °C Reibungswärme. Musste auch der Poolish in den Kühlschrank, das Wasser \~32 °C (Maschine: \~30 °C) warm nehmen. Abdecken, 45 Min. ruhen lassen (Dinkel: 30 Min.). *Kein Kneten — das Mehl arbeitet allein.*
 
 **5. Kneten mit Maschine (ca. 13 Min.)**
 *nur Maschine · nach Autolyse*
@@ -249,8 +249,7 @@ Ofen auf **220 °C Ober-/Unterhitze** vorheizen (10–15 Min., kein Blech, Rost 
 
 *Für ein Frühstück um 8:15 Uhr*
 
-- T-2: Do 21:00 Poolish ansetzen · Kochstück kochen · Kochstück nach dem Erkalten kühlen (20 Min.)
-- Vortag: Fr 7:00 Poolish in den Kühlschrank (1 Min.) · 18:00 Quellstück ansetzen · 18:15 Autolyse (Wasser warm, Zutaten kalt) · 19:00 Kneten mit Maschine bzw. Slap & Fold, Temperatur messen · 19:15 Kurze Stockgare (bis 20:15, Hand bis 20:25) · 20:15 Vorformen, Rundschleifen, Topping · 20:45 Kühlschrankgare über Nacht
+- Vortag: Fr 6:30 Poolish ansetzen · Kochstück kochen (oder schon Do-Abend) · Kochstück nach dem Erkalten kühlen (15 Min.) · 18:00 Quellstück ansetzen · 18:15 Autolyse · 19:00 Kneten mit Maschine bzw. Slap & Fold, Temperatur messen · 19:15 Kurze Stockgare (bis 20:15, Hand bis 20:25) · 20:15 Vorformen, Rundschleifen, Topping · 20:45 Kühlschrankgare über Nacht
 - 7:00 Uhr: Vorheizen und akklimatisieren: Ofen an, Teiglinge raus (2 Min.)
 - 7:35 Uhr: Fingertest, Einschneiden, Einschießen und Schwaden, Vorbacken und fertig backen (5 Min. Arbeit)
 - 7:50 Uhr: 8 Vorback-Brötchen raus, Auskühlen und einfrieren (Gefrierfach ab \~9:00)
