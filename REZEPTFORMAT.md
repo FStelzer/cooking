@@ -433,6 +433,6 @@ Docsify zeigen weiter den vollen Text.
 - Ein Zeitplan pro Weg ist erlaubt (`## Zeitplan Backtag`, `## Zeitplan aus dem Frost`).
   Bei einem Gericht setzt `*Für einen Teigbeginn um 9:00 Uhr*` den Anker dieses Zeitplans.
 - Einkaufsliste und Mengen-Check werden pro Kombination vorgerechnet
-  (`derived.variants[]`). Varianten-Ideen, die nur im Text stehen (Schnellkochtopf,
-  Küchenmaschine), bleiben Text.
+  (`derived.variants[]`). Varianten-Ideen, die nur im Text stehen (Schnellkochtopf),
+  bleiben Text.
 

@@ -37,6 +37,11 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
   Warmhalten
 - Bräter/Schmortopf (für Osso Buco-Style Gerichte)
 - Stabmixer
+- **Küchenmaschine Bosch MUM58W20** (seit 10/2026; Serie 4/MUM5, 1000 W, 7 Stufen,
+  Planetenrührwerk, 3,9 l Edelstahlschüssel, max. 2,7 kg Teig): Knethaken,
+  Rühr- und Schlagbesen, Mixer-Aufsatz (1,25 l), Durchlaufschnitzler (Gemüse
+  schneiden/raspeln). Hefeteig auf Stufe 1–2; sehr kleine Teigmengen (\~600 g)
+  greift der Haken schlecht → halbe Brötchen-Charge lieber von Hand
 - Fleischthermometer
 - Zucker-/Fett-Topfthermometer (Clip-Thermometer für Karamell, Frittieröl, Crème anglaise)
 - Mandoline / Gemüsehobel
@@ -57,10 +62,8 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
   (Bò lúc lắc 10/2026: kein Einbrennen mehr)
 
 ### Fehlt / Wäre gut zu haben
-- **Küchenmaschine mit Knethaken** — Brötchen-Rezept (`backen/`) ist auf Handarbeit
-  gebaut (weniger Wasser, Dehnen & Falten); eine Maschine macht die höhere
-  Hydration der Original-Führung erst praktikabel. Kein Vakuumierer vorhanden,
-  Gefrierfach ohne Platz für ein ganzes Blech (→ Anfrieren in Schüben).
+- **Vakuumierer** — nicht vorhanden; Gefrierfach ohne Platz für ein ganzes Blech
+  (→ Anfrieren in Schüben, doppelt einbeuteln).
 - **Schwere Gusseisenpfanne** — Plan B gegen das Einbrenn-Thema bei Maximalhitze
   (Bulgogi); mehrfach nützlich (Steaks, Smashburger). Bei Bò lúc lắc hat der
   Chargen-/Deglaze-Fix in Edelstahl gereicht (10/2026); bei Bulgogi noch validieren.
