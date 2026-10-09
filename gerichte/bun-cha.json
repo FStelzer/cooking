@@ -884,8 +884,8 @@
             "phase": "vortag",
             "text": "Nước màu, Marinade, Fleisch marinieren, Pickle, Sauce-Basis *(oder Kochtag früh)*",
             "steps": [
-              "marinieren",
               "nuoc-mau",
+              "marinieren",
               "pickle"
             ]
           }
@@ -925,8 +925,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T18:47:19Z",
-    "sourceHash": "c01d700dd3f75676",
+    "generatedAt": "2026-10-09T10:03:58Z",
+    "sourceHash": "298f26cb1357ea23",
     "quantities": [
       {
         "ingredient": "bun-nudeln",

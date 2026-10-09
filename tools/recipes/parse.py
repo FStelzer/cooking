@@ -883,8 +883,11 @@ def match_entry(e: dict, tasks_all: list[tuple[str | None, dict]], lint: Lint) -
         take([(cid, st["id"]) for cid, st in steps if len(st["title"].split()) == 1 and len(st["title"]) > 3
               and (low == st["title"].lower() or low.endswith(" " + st["title"].lower())
                    or re.match(re.escape(st["title"].lower()) + r"\s\d", low))], "step", seg)
-    if hits_s: e["steps"] = sorted(hits_s)
-    if hits_t: e["tasks"] = sorted(hits_t)
+    # Rezeptreihenfolge, nicht alphabetisch: Kochen-Ablauf und Wischen folgen dieser Liste
+    step_pos = {st["id"]: i for i, (_, st) in enumerate(steps)}
+    task_pos = {t["id"]: i for i, (_, t) in enumerate(tasks_all)}
+    if hits_s: e["steps"] = sorted(hits_s, key=step_pos.get)
+    if hits_t: e["tasks"] = sorted(hits_t, key=task_pos.get)
     if course: e["course"] = course
 
 

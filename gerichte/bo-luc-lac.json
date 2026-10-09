@@ -909,9 +909,9 @@
             },
             "source": "T−0:50",
             "steps": [
-              "dip-und-salat",
+              "sauce-anruehren",
               "essig-zwiebeln-ansetzen",
-              "sauce-anruehren"
+              "dip-und-salat"
             ]
           },
           {
@@ -923,8 +923,8 @@
             },
             "source": "T−0:35",
             "steps": [
-              "aromaten-schneiden",
-              "reis-aufsetzen"
+              "reis-aufsetzen",
+              "aromaten-schneiden"
             ]
           },
           {
@@ -1029,8 +1029,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T19:24:50Z",
-    "sourceHash": "34b52995bc7a8349",
+    "generatedAt": "2026-10-09T10:03:58Z",
+    "sourceHash": "cd2a525ad004e19b",
     "quantities": [
       {
         "ingredient": "rindfleisch",

@@ -62,6 +62,19 @@ function courseTitle(c) { return c ? (recipe.courses?.find((x) => x.ref === c.id
 function schedules() { return recipe.sections.filter((s) => s.type === "schedule" && live(s.schedule)); }
 function schedule() { return schedules()[0]; }
 const liveEntries = (sch) => sch.entries.filter(live);
+// Schritte eines Zeitplan-Eintrags: genannte Schritte und Tasks vereinigt, Schritte zuerst, ohne Dubletten
+function entrySteps(e, byId, byTask) {
+  const seen = new Set(), xs = [];
+  for (const x of [...(e.steps || []).map((id) => byId[id]), ...(e.tasks || []).flatMap((t) => byTask[t] || [])]) {
+    if (x && !seen.has(x.step.id)) { seen.add(x.step.id); xs.push(x); }
+  }
+  return xs;
+}
+function stepIndex() {
+  const all = steps(), byId = Object.fromEntries(all.map((x) => [x.step.id, x])), byTask = {};
+  for (const x of all) (byTask[x.task.id] ||= []).push(x);
+  return { all, byId, byTask };
+}
 
 // ---- Ansichten -------------------------------------------------------------
 // Kürzeste Restzeit der laufenden Timer eines Schritts (null = keiner)
@@ -112,19 +125,14 @@ function renderKochen() {
     main.innerHTML = html; return;
   }
   // Ablauf (Default): Reihenfolge = Zeitplan (Phasen → Einträge → Schritte); Gänge mischen sich.
-  const all = steps(), byId = Object.fromEntries(all.map((x) => [x.step.id, x]));
-  const byTask = {}; for (const x of all) (byTask[x.task.id] ||= []).push(x);
+  const { all, byId, byTask } = stepIndex();
   const placed = new Set();
   for (const p of sec.schedule.phases) {
     const es = liveEntries(sec.schedule).filter((e) => e.phase === p.id);
     if (!es.length) continue;
     html += `<section class="phase"><h2>${esc(p.label)}</h2>`;
     for (const e of es) {
-      // Eintrag nennt Schritte und/oder Tasks: Vereinigung, Schritte zuerst, ohne Dubletten
-      const seen = new Set(), xs = [];
-      for (const x of [...(e.steps || []).map((id) => byId[id]), ...(e.tasks || []).flatMap((t) => byTask[t] || [])]) {
-        if (x && !seen.has(x.step.id)) { seen.add(x.step.id); xs.push(x); }
-      }
+      const xs = entrySteps(e, byId, byTask);
       if (!xs.length) { html += plainRow(`e:${p.id}:${e.text}`, e.text, e.course ? courseTitle(courses().find((c) => c.id === e.course)) : ""); continue; }
       html += `<p class="entry-head">${mdInline(e.text)}${e.derived ? ' <span class="fine">(abgeleitet)</span>' : ""}</p>`;
       for (const x of xs) { placed.add(x.step.id); html += stepRow(x.step, x.course, x.task); }
@@ -142,11 +150,9 @@ function renderPlan() {
 }
 function planHtml(sec) {
   const sch = { ...sec.schedule, entries: liveEntries(sec.schedule) }, lanes = [{ id: null, name: "Menü" }, ...courses().map((c) => ({ id: c.id, name: courseTitle(c) }))];
-  const allTasks = Object.fromEntries(tasksOf(recipe).map(({ task }) => [task.id, task]));
-  const done = (e) => {
-    const ids = [...(e.steps || []), ...(e.tasks || []).flatMap((t) => (allTasks[t]?.steps || []).map((s) => s.id))];
-    return ids.length && ids.every((id) => state.done[id]);
-  };
+  const { byId, byTask } = stepIndex();
+  const ids = (e) => entrySteps(e, byId, byTask).map((x) => x.step.id);
+  const done = (e) => { const xs = ids(e); return xs.length && xs.every((id) => state.done[id]); };
   let h = `<div class="gantt-scroll"><div class="gantt" style="--cols:${sch.phases.length}"><div class="ph corner"></div>`;
   h += sch.phases.map((p) => `<div class="ph">${esc(p.label)}</div>`).join("");
   for (const lane of lanes) {
@@ -154,8 +160,9 @@ function planHtml(sec) {
     for (const p of sch.phases) {
       const es = sch.entries.filter((e) => e.phase === p.id && (e.course || null) === lane.id);
       h += `<div class="cell">` + es.map((e) => {
-        const first = (e.tasks || []).map((t) => allTasks[t]?.steps[0]?.id).find(Boolean) || (e.steps || [])[0];
-        return `<button class="chip ${done(e) ? "done" : ""} ${e.derived ? "derived" : ""} ${first ? "" : "plain"}" ${first ? `data-open="${first}"` : ""}>
+        // Chip öffnet den ersten Schritt; data-steps nennt alle, damit Wischen keinen auslässt
+        const xs = ids(e), first = xs[0];
+        return `<button class="chip ${done(e) ? "done" : ""} ${e.derived ? "derived" : ""} ${first ? "" : "plain"}" ${first ? `data-open="${first}" data-steps="${xs.join(" ")}"` : ""}>
           <span class="t">${mdInline(e.text)}</span>${e.at ? `<span class="m">${esc(e.at.offset.replace(/^([+-]?)PT/, "$1").toLowerCase())} zu ${esc(e.at.ref.split(":")[1])}</span>` : ""}</button>`;
       }).join("") + `</div>`;
     }
@@ -277,9 +284,10 @@ function renderSheet() {
     ${choices.length ? `<h3>Timer</h3><div class="tbtns">${choices.map((t) => `<button class="tbtn" data-start="${t.i}" data-secs="${t.secs}" data-label="${esc(t.label)}">▶ ${esc(t.label)}<small>${fmtClock(t.secs)}</small></button>`).join("")}</div>` : ""}
     <label class="donebar"><input type="checkbox" class="chk" data-done="${s.id}" ${state.done[s.id] ? "checked" : ""}><b>${state.done[s.id] ? "Erledigt" : "Als erledigt abhaken"}</b></label>`;
 }
-// Reihenfolge, wie die Hauptansicht sie gerade zeigt (Ablauf, nach Gang, Plan …); Dubletten nur einmal
+// Reihenfolge, wie die Hauptansicht sie gerade zeigt (Ablauf, nach Gang, Plan …); Dubletten nur einmal.
+// Plan-Chips stehen für mehrere Schritte (data-steps) — gewischt wird durch jeden davon.
 function visibleOrder() {
-  const ids = [...main.querySelectorAll("[data-open]")].map((el) => el.dataset.open);
+  const ids = [...main.querySelectorAll("[data-open]")].flatMap((el) => el.dataset.steps?.split(" ") || [el.dataset.open]);
   return [...new Set(ids.length ? ids : steps().map((x) => x.step.id))];
 }
 function stepNav(dir) {

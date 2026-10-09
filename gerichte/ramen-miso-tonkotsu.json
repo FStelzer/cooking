@@ -3098,8 +3098,8 @@
             "text": "13:00 Miso-Tare anrühren (Sesam rösten, mörsern; Tare mischen, Tare abschmecken). Kühlschrank.",
             "steps": [
               "gang-2-sesam-roesten",
-              "gang-2-tare-abschmecken",
-              "gang-2-tare-mischen"
+              "gang-2-tare-mischen",
+              "gang-2-tare-abschmecken"
             ],
             "course": "gang-2"
           },
@@ -3123,9 +3123,9 @@
             "phase": "vortag",
             "text": "21:30 Wok-Fett sichern: Wok-Fett abheben. Abkühlen und lagern: Brühe im Eiswasser-Bad abkühlen, Kühlschrank.",
             "steps": [
-              "gang-2-abkuehlen-und-lagern",
+              "gang-2-wok-fett-sichern",
               "gang-2-fett-abheben",
-              "gang-2-wok-fett-sichern"
+              "gang-2-abkuehlen-und-lagern"
             ],
             "course": "gang-2"
           },
@@ -3142,8 +3142,8 @@
             "text": "Eier kochen (3× 6:30, 3× 9:30), Schocken + pellen: Eiswasser, pellen; Eier marinieren: in die kalte Marinade, Kühlschrank. Feste Eier markieren.",
             "steps": [
               "gang-2-eier-kochen",
-              "gang-2-eier-marinieren",
-              "gang-2-schocken-pellen"
+              "gang-2-schocken-pellen",
+              "gang-2-eier-marinieren"
             ],
             "course": "gang-2"
           },
@@ -3151,10 +3151,10 @@
             "phase": "uhr-14-00",
             "text": "Hack braten (2 Chargen), Hack-Aromaten, Glasieren, Durchgaren-Check, Lagern: Kühlschrank.",
             "steps": [
-              "gang-2-durchgaren-check",
-              "gang-2-glasieren",
-              "gang-2-hack-aromaten",
               "gang-2-hack-braten",
+              "gang-2-hack-aromaten",
+              "gang-2-glasieren",
+              "gang-2-durchgaren-check",
               "gang-2-lagern"
             ],
             "course": "gang-2"
@@ -3163,11 +3163,11 @@
             "phase": "uhr-15-00",
             "text": "Gemüse: Zwiebel für den Wok (3 × 60 g), Wok-Aromaten (3 × 1 TL), Frühlingszwiebeln: ins Eiswasser, Sprossen: abbrausen (3 × 100 g + 100 g), Butter: Butterwürfel.",
             "steps": [
-              "gang-2-butter",
-              "gang-2-fruehlingszwiebeln",
               "gang-2-sprossen",
-              "gang-2-wok-aromaten",
-              "gang-2-zwiebel-fuer-den-wok"
+              "gang-2-zwiebel-fuer-den-wok",
+              "gang-2-fruehlingszwiebeln",
+              "gang-2-butter",
+              "gang-2-wok-aromaten"
             ],
             "course": "gang-2"
           },
@@ -3175,8 +3175,8 @@
             "phase": "uhr-16-30",
             "text": "Klopfen: Gurken klopfen, entkernen; Entwässern: salzen (20 Min); Dressing an; Ziehen lassen: Kühlschrank (max. 1 h vor dem Servieren).",
             "steps": [
-              "gang-1-entwaessern",
               "gang-1-klopfen",
+              "gang-1-entwaessern",
               "gang-1-ziehen-lassen"
             ],
             "course": "gang-1"
@@ -3444,10 +3444,10 @@
             "phase": "uhr-11-30",
             "text": "Eier-Marinade: aufkochen; Eier kochen (3× 6:30, 3× 9:30), Schocken + pellen, Eier marinieren, Kühlschrank.",
             "steps": [
-              "gang-2-eier-kochen",
               "gang-2-eier-marinade",
-              "gang-2-eier-marinieren",
-              "gang-2-schocken-pellen"
+              "gang-2-eier-kochen",
+              "gang-2-schocken-pellen",
+              "gang-2-eier-marinieren"
             ],
             "course": "gang-2"
           },
@@ -3456,8 +3456,8 @@
             "text": "Sesam rösten, Tare mischen, Tare abschmecken (Miso-Tare, falls nicht am Vortag).",
             "steps": [
               "gang-2-sesam-roesten",
-              "gang-2-tare-abschmecken",
-              "gang-2-tare-mischen"
+              "gang-2-tare-mischen",
+              "gang-2-tare-abschmecken"
             ],
             "course": "gang-2"
           },
@@ -3465,8 +3465,8 @@
             "phase": "uhr-14-00",
             "text": "Hack braten (2 Chargen), Glasieren, Lagern: Kühlschrank.",
             "steps": [
-              "gang-2-glasieren",
               "gang-2-hack-braten",
+              "gang-2-glasieren",
               "gang-2-lagern"
             ],
             "course": "gang-2"
@@ -3475,11 +3475,11 @@
             "phase": "uhr-15-00",
             "text": "Gemüse und Wok-Portionen vorbereiten: Zwiebel für den Wok, Wok-Aromaten, Frühlingszwiebeln, Sprossen, Butter: Butterwürfel.",
             "steps": [
-              "gang-2-butter",
-              "gang-2-fruehlingszwiebeln",
               "gang-2-sprossen",
-              "gang-2-wok-aromaten",
-              "gang-2-zwiebel-fuer-den-wok"
+              "gang-2-zwiebel-fuer-den-wok",
+              "gang-2-fruehlingszwiebeln",
+              "gang-2-butter",
+              "gang-2-wok-aromaten"
             ],
             "course": "gang-2"
           },
@@ -3495,9 +3495,9 @@
             "phase": "uhr-16-30",
             "text": "Klopfen, Entwässern, Dressing: Gurken klopfen, salzen, marinieren (Ziehen lassen).",
             "steps": [
-              "gang-1-dressing",
-              "gang-1-entwaessern",
               "gang-1-klopfen",
+              "gang-1-entwaessern",
+              "gang-1-dressing",
               "gang-1-ziehen-lassen"
             ],
             "course": "gang-1"
@@ -3507,8 +3507,8 @@
             "text": "Sprossen (GDM-Extraportion blanchieren), Mais: rösten, Eier schneiden: halbieren.",
             "steps": [
               "gang-2-eier-schneiden",
-              "gang-2-mais",
-              "gang-2-sprossen"
+              "gang-2-sprossen",
+              "gang-2-mais"
             ],
             "course": "gang-2"
           },
@@ -3516,8 +3516,8 @@
             "phase": "uhr-17-40",
             "text": "Mise en Place: Topping-Station. Nudelwasser: aufsetzen.",
             "steps": [
-              "gang-2-mise-en-place",
-              "gang-2-nudelwasser"
+              "gang-2-nudelwasser",
+              "gang-2-mise-en-place"
             ],
             "course": "gang-2"
           },
@@ -3587,8 +3587,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T19:32:56Z",
-    "sourceHash": "c4a97d7f43d8a781",
+    "generatedAt": "2026-10-09T10:03:58Z",
+    "sourceHash": "20af892aba32170c",
     "select": {
       "ablauf": "vortag"
     },

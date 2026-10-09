@@ -2653,9 +2653,9 @@
             "phase": "2-tage-vorher",
             "text": "Kartoffelbaumkuchen: Schichten, backen, pressen, kalt stellen (zieht gut durch)",
             "steps": [
+              "gang-3-schichten",
               "gang-3-backen",
-              "gang-3-pressen",
-              "gang-3-schichten"
+              "gang-3-pressen"
             ],
             "tasks": [
               "kartoffelbaumkuchen"
@@ -2674,8 +2674,8 @@
             "phase": "vortag",
             "text": "Sellerie für Consommé raspeln und Kaltextraktion ansetzen",
             "steps": [
-              "gang-1-kaltextraktion-ansetzen",
-              "gang-1-raspeln"
+              "gang-1-raspeln",
+              "gang-1-kaltextraktion-ansetzen"
             ],
             "course": "gang-1"
           },
@@ -2884,8 +2884,8 @@
             "phase": "uhr-19-35",
             "text": "Sauce-Basis erwärmen, teilen: Kinder-Portion mit Butter montieren",
             "steps": [
-              "gang-3-montieren",
-              "gang-3-teilen"
+              "gang-3-teilen",
+              "gang-3-montieren"
             ],
             "course": "gang-3"
           },
@@ -2959,8 +2959,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T18:41:05Z",
-    "sourceHash": "1e18f9d8dca7110c",
+    "generatedAt": "2026-10-09T10:03:58Z",
+    "sourceHash": "9ea30d43bac8610f",
     "quantities": [
       {
         "ingredient": "jakobsmuscheln",

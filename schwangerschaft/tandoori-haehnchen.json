@@ -1757,9 +1757,9 @@
             "phase": "vorabend",
             "text": "Joghurt-Marinade, Kinder-Abzweigung, Erwachsenen-Charge (Chili in den Rest) → Kühlschrank (Marinieren)",
             "steps": [
-              "erwachsenen-charge",
               "joghurt-marinade",
-              "kinder-abzweigung"
+              "kinder-abzweigung",
+              "erwachsenen-charge"
             ]
           },
           {
@@ -1807,8 +1807,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T19:02:45Z",
-    "sourceHash": "d0b0f176e6fb5b35",
+    "generatedAt": "2026-10-09T10:03:58Z",
+    "sourceHash": "48a81004fc0dfebf",
     "quantities": [
       {
         "ingredient": "haehnchenschenkel",

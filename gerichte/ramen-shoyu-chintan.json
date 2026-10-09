@@ -1498,8 +1498,8 @@
             "phase": "uhr-13-30",
             "text": "Rollen und Anbraten: Chashu vorbereiten, anbraten",
             "steps": [
-              "anbraten",
-              "rollen"
+              "rollen",
+              "anbraten"
             ]
           },
           {
@@ -1535,8 +1535,8 @@
             "phase": "uhr-15-30",
             "text": "Kombu: in die Brühe; Abkühlen: Chashu fertig, Marinade aufbewahren",
             "steps": [
-              "abkuehlen",
-              "kombu"
+              "kombu",
+              "abkuehlen"
             ]
           },
           {
@@ -1614,8 +1614,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T19:29:42Z",
-    "sourceHash": "9a2ad5c59e9763d1",
+    "generatedAt": "2026-10-09T10:03:58Z",
+    "sourceHash": "1e22d549edf6207e",
     "quantities": [
       {
         "ingredient": "ramen-nudeln",

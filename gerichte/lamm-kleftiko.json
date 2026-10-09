@@ -762,8 +762,8 @@
             "phase": "vorabend",
             "text": "Spicken und marinieren (TK-Fleisch: schon 1–2 Tage vorher in den Kühlschrank)",
             "steps": [
-              "marinieren",
-              "spicken"
+              "spicken",
+              "marinieren"
             ]
           },
           {
@@ -805,8 +805,8 @@
             "phase": "uhr-17-35",
             "text": "Ruhe & Finish; Horiatiki-Salat",
             "steps": [
-              "horiatiki-salat",
-              "ruhe-finish"
+              "ruhe-finish",
+              "horiatiki-salat"
             ]
           },
           {
@@ -852,8 +852,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T18:44:11Z",
-    "sourceHash": "43be339ef609d79b",
+    "generatedAt": "2026-10-09T10:03:58Z",
+    "sourceHash": "2a010d8e6ba5c787",
     "quantities": [
       {
         "ingredient": "rigani",

@@ -2558,9 +2558,9 @@
             "phase": "vortag",
             "text": "20:15 Vorformen, Rundschleifen, Topping",
             "steps": [
+              "vorformen",
               "rundschleifen",
-              "topping",
-              "vorformen"
+              "topping"
             ]
           },
           {
@@ -2581,8 +2581,8 @@
             "phase": "uhr-07-35",
             "text": "Fingertest, Einschneiden, Einschießen und Schwaden, Vorbacken und fertig backen (5 Min. Arbeit)",
             "steps": [
-              "einschiessen-und-schwaden",
               "einschneiden",
+              "einschiessen-und-schwaden",
               "vorbacken-und-fertig-backen"
             ]
           },
@@ -2845,8 +2845,8 @@
               "weg=direkt-backen"
             ],
             "steps": [
-              "backen",
-              "stueckgare"
+              "stueckgare",
+              "backen"
             ]
           }
         ],
@@ -3010,8 +3010,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-08T15:06:55Z",
-    "sourceHash": "6a95cc58bd58371a",
+    "generatedAt": "2026-10-09T10:03:58Z",
+    "sourceHash": "5911a700f97cc468",
     "select": {
       "mehl": "weizen",
       "weg": "uebernacht",

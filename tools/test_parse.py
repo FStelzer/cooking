@@ -280,6 +280,9 @@ oseg = {g.step: g.start for g in osegs}
 t("Check H: Schritte in Rezeptreihenfolge, passive Wartezeit schiebt die nächste Einheit nicht", lambda: (
     assert_(oseg["zuerst-salzen"] < oseg["abtropfen"], oseg),
     assert_(oseg["dip-ruehren"] == oseg["zuerst-salzen"] + 600, oseg)))
+oentry = next(s for s in od["sections"] if s["type"] == "schedule")["schedule"]["entries"][0]
+t("Zeitplan-Eintrag: Schritte in Rezeptreihenfolge, nicht alphabetisch", lambda: (
+    assert_(oentry["steps"] == ["zuerst-salzen", "abtropfen", "dip-ruehren"], oentry)))
 print(f"{n} Tests ok")
 if lint.msgs or mlint.msgs:
     print("Lint (Gericht):", *lint.msgs, sep="\n  ") if lint.msgs else None

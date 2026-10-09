@@ -3881,8 +3881,8 @@
             "phase": "t-1",
             "text": "**Lammschulter und Jus: schmoren (3–3,5 h), zupfen, pressen; Schmorflüssigkeit passieren und kalt stellen**",
             "steps": [
-              "gang-3-pressen",
-              "gang-3-schmoren"
+              "gang-3-schmoren",
+              "gang-3-pressen"
             ],
             "tasks": [
               "lammschulter-und-jus"
@@ -3904,8 +3904,8 @@
               "gang-4-kaffee-crumble"
             ],
             "tasks": [
-              "kaffee-crumble",
-              "walnusscrumble"
+              "walnusscrumble",
+              "kaffee-crumble"
             ],
             "course": "gang-4"
           },
@@ -3959,8 +3959,8 @@
             "phase": "nachmittags",
             "text": "Rosenkohlblätter lösen, Blätter blanchieren",
             "steps": [
-              "gang-3-blaetter-blanchieren",
-              "gang-3-rosenkohlblaetter-loesen"
+              "gang-3-rosenkohlblaetter-loesen",
+              "gang-3-blaetter-blanchieren"
             ],
             "course": "gang-3"
           },
@@ -4018,9 +4018,9 @@
             "phase": "gang-1",
             "text": "Kalt abschmecken, Limette einrühren, Anrichten — kein Herd nötig",
             "steps": [
-              "gang-1-anrichten",
               "gang-1-kalt-abschmecken",
-              "gang-1-limette-einruehren"
+              "gang-1-limette-einruehren",
+              "gang-1-anrichten"
             ],
             "course": "gang-1"
           },
@@ -4085,10 +4085,10 @@
             "phase": "gang-4",
             "text": "Dessert-Service: Temperieren und Teller frosten (10–15 Min. vorher), Schneiden, Shaken, Am Tisch",
             "steps": [
-              "gang-4-am-tisch",
+              "gang-4-temperieren-und-teller-frosten",
               "gang-4-schneiden",
               "gang-4-shaken",
-              "gang-4-temperieren-und-teller-frosten"
+              "gang-4-am-tisch"
             ],
             "tasks": [
               "dessert-service"
@@ -4160,8 +4160,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T18:41:05Z",
-    "sourceHash": "22b3c1774ff94bdc",
+    "generatedAt": "2026-10-09T10:03:58Z",
+    "sourceHash": "ce17bb2986545a4e",
     "quantities": [
       {
         "ingredient": "verjus",

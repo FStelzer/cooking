@@ -954,8 +954,8 @@
             "phase": "uhr-14-00",
             "text": "Fleisch einlegen; 30 Min. abschäumen, dann Aromaten",
             "steps": [
-              "abschaeumen",
-              "fleisch-einlegen"
+              "fleisch-einlegen",
+              "abschaeumen"
             ]
           },
           {
@@ -963,8 +963,8 @@
             "text": "Nebenher bis 16:00: Frittaten, Schnittlauchsauce, Gurkensalat",
             "steps": [
               "frittaten",
-              "gurkensalat",
-              "schnittlauchsauce"
+              "schnittlauchsauce",
+              "gurkensalat"
             ]
           },
           {
@@ -1027,8 +1027,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T18:41:05Z",
-    "sourceHash": "60687dd21690437e",
+    "generatedAt": "2026-10-09T10:03:58Z",
+    "sourceHash": "7c15181a82417dc9",
     "quantities": [
       {
         "ingredient": "tafelspitz",

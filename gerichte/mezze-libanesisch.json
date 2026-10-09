@@ -425,8 +425,8 @@
             },
             "source": "T−75",
             "steps": [
-              "im-ofen-fertig-garen",
-              "verkohlen"
+              "verkohlen",
+              "im-ofen-fertig-garen"
             ]
           },
           {
@@ -447,8 +447,8 @@
             },
             "source": "T−60",
             "steps": [
-              "hummus-anrichten",
-              "hummus-mixen"
+              "hummus-mixen",
+              "hummus-anrichten"
             ]
           },
           {
@@ -472,9 +472,9 @@
             },
             "source": "T−40",
             "steps": [
-              "labneh-anrichten",
               "moutabal-mischen",
-              "muhammara-abschmecken"
+              "muhammara-abschmecken",
+              "labneh-anrichten"
             ]
           },
           {
@@ -525,8 +525,8 @@
             "phase": "t-2",
             "text": "Labneh salzen, Labneh abtropfen: Joghurt (1 kg) mit 1 TL Salz verrühren, ins Passiertuch, im Sieb über einer Schüssel in den Kühlschrank → Labneh.",
             "steps": [
-              "labneh-abtropfen",
-              "labneh-salzen"
+              "labneh-salzen",
+              "labneh-abtropfen"
             ]
           },
           {
@@ -558,19 +558,19 @@
             "phase": "t-1",
             "text": "Währenddessen: Mürbteig (Sambousek-Teig: reiben, 30 Min. Ruhe) und beide Füllungen vorbereiten (Zwiebel salzen, Spinat ausdrücken, Füllung mischen, Käsefüllung).",
             "steps": [
-              "fuellung-mischen",
-              "muerbteig",
+              "zwiebel-salzen",
               "spinat-ausdruecken",
-              "zwiebel-salzen"
+              "fuellung-mischen",
+              "muerbteig"
             ]
           },
           {
             "phase": "t-1",
             "text": "Paprika rösten → Muhammara komplett fertigstellen (Walnüsse rösten, Muhammara mixen; wird über Nacht besser).",
             "steps": [
-              "muhammara-mixen",
               "paprika-roesten",
-              "walnuesse-roesten"
+              "walnuesse-roesten",
+              "muhammara-mixen"
             ]
           },
           {
@@ -2125,8 +2125,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T19:32:43Z",
-    "sourceHash": "0d8e417709b553aa",
+    "generatedAt": "2026-10-09T10:03:58Z",
+    "sourceHash": "2b34bd3a666ef608",
     "quantities": [
       {
         "ingredient": "tahina",
