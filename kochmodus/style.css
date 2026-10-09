@@ -131,6 +131,15 @@ mark.variant{background:var(--why);outline:1px solid var(--line);border-radius:3
 .quick .qcustom{display:flex;gap:8px}.quick .qcustom input{flex:1}
 
 .row.current{outline:3px solid var(--focus);outline-offset:1px}
+/* Detailblatt: nur senkrecht scrollen — kein Pinch-/Doppeltipp-Zoom, kein seitliches Verrutschen; Wischen bleibt */
+.sheet{touch-action:pan-y;overscroll-behavior:contain}
+/* Handy: Detailblatt als Vollbild statt Overlay, die Liste dahinter steht still (Tablet hochkant: Overlay, quer: Split) */
+@media (max-width:699px){
+  body.sheet-open{overflow:hidden}
+  .sheet.open{inset:0;transform:none;width:100%;max-height:none;border-radius:0}
+  .sheet-head{padding-top:calc(12px + env(safe-area-inset-top,0px))}
+  .backdrop.open{display:none}
+}
 @media (min-width:900px){
   body.sheet-open .wrap{max-width:none;margin:0 min(46vw,600px) 0 0;padding-left:24px}
   .sheet.open{left:auto;right:0;transform:none;top:0;bottom:56px;width:min(46vw,600px);max-height:none;border-radius:0;border-top:0;border-left:6px solid var(--c);padding-bottom:24px;box-shadow:-8px 0 24px rgba(0,0,0,.12)}

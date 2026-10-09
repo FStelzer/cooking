@@ -143,12 +143,29 @@ try {
   // Varianten: Auswahl blendet Schritte ein/aus, tauscht Mengen, wechselt Einkauf und Zeitpläne, überlebt Reload
   await page.goto(`http://127.0.0.1:${PORT}/kochmodus/?r=../backen/vollkornbroetchen.json`);
   await page.waitForSelector(".row[data-step]");
-  assert.equal(await page.locator("select[data-variant]").count(), 2, "zwei Dimensionen: Mehl, Weg");
-  assert.equal(await page.locator('.row[data-step="einfrieren"]').count(), 1);
-  assert.equal(await page.locator('.row[data-step="stueckgare"]').count(), 0, "Weg B ausgeblendet");
+  assert.equal(await page.locator("select[data-variant]").count(), 3, "drei Dimensionen: Mehl, Weg, Kneten");
+  assert.equal(await page.locator('.row[data-step="kuehlschrankgare-ueber-nacht"]').count(), 1, "Standard: Übernacht");
+  assert.equal(await page.locator('.row[data-step="stueckgare"]').count(), 0, "Direkt backen ausgeblendet");
+  // Plan: Wischen geht durch jeden Schritt eines Eintrags (07:35 = Einschneiden, Einschießen, Vorbacken)
+  await page.click('button[data-view="plan"]');
+  const planSteps = await page.locator(".chip[data-steps]").evaluateAll((cs) => [...new Set(cs.flatMap((c) => c.dataset.steps.split(" ")))]);
+  await page.locator(".chip[data-open]").first().click();
+  await page.waitForSelector("#sheet.open");
+  const sheetBox = await page.locator("#sheet").boundingBox();
+  assert.ok(sheetBox.y === 0 && sheetBox.width === 390 && sheetBox.height >= 844, `Handy: Blatt als Vollbild (${JSON.stringify(sheetBox)})`);
+  assert.ok(!(await page.locator("#backdrop").isVisible()), "kein Abdunkeln im Vollbild");
+  const seen = [await page.locator("#sheetTitle").innerText()];
+  while (await page.locator('#sheet [data-nav="1"]').isEnabled()) { await page.click('#sheet [data-nav="1"]'); seen.push(await page.locator("#sheetTitle").innerText()); }
+  assert.equal(seen.length, planSteps.length, "Wischen zählt alle Plan-Schritte");
+  for (const t of ["Einschneiden", "Einschießen und Schwaden", "Vorbacken und fertig backen", "Vorformen", "Topping"]) assert.ok(seen.some((x) => x.endsWith(t)), `Wischen erreicht „${t}“`);
+  assert.ok(seen.findIndex((x) => x.endsWith("Einschneiden")) < seen.findIndex((x) => x.endsWith("Einschießen und Schwaden")), "Rezeptreihenfolge");
+  await page.goBack();  // Zurück-Taste schließt das Blatt, die Seite bleibt
+  await page.waitForFunction(() => !document.querySelector("#sheet").classList.contains("open"));
+  assert.match(page.url(), /vollkornbroetchen/);
+  await page.click('button[data-view="kochen"]');
   await page.selectOption('select[data-variant="mehl"]', "dinkel");
   await page.selectOption('select[data-variant="weg"]', "direkt-backen");
-  assert.equal(await page.locator('.row[data-step="einfrieren"]').count(), 0, "Weg A ausgeblendet");
+  assert.equal(await page.locator('.row[data-step="kuehlschrankgare-ueber-nacht"]').count(), 0, "Übernacht ausgeblendet");
   assert.equal(await page.locator('.row[data-step="stueckgare"]').count(), 1);
   assert.match(await page.locator('.row[data-step="autolyse"]').innerText(), /390 g Dinkelvollkornmehl, 40 g Wasser/);
   await page.click('button[data-view="einkauf"]');
@@ -156,7 +173,7 @@ try {
   assert.ok(shop.includes("Dinkelvollkornmehl") && !shop.includes("Weizenvollkornmehl"), "Einkauf der Dinkel-Variante");
   await page.reload(); await page.waitForSelector("select[data-variant]");
   assert.equal(await page.locator('select[data-variant="mehl"]').inputValue(), "dinkel", "Wahl überlebt Reload");
-  await page.selectOption('select[data-variant="weg"]', "kombi");
+  await page.selectOption('select[data-variant="weg"]', "einfrieren");
   await page.click('button[data-view="plan"]');
   assert.deepEqual(await page.locator("#main > h2").allInnerTexts(), ["Zeitplan Backtag", "Zeitplan aus dem Frost"]);
   await page.click('button[data-view="lesen"]');
@@ -216,6 +233,16 @@ try {
   await page.reload(); await page.waitForSelector(".row[data-step]");
   assert.match(await page.locator("#title").innerText(), /Bò lúc lắc/, "offline geladen");
   await page.context().setOffline(false);
+  // Rezept geändert, während die Seite offen ist: Rückkehr in den Vordergrund holt den neuen Stand, Haken bleiben
+  const doneBefore = await page.locator("#progress").innerText();
+  await page.context().route("**/gerichte/bo-luc-lac.json", async (route) => {
+    const res = await route.fetch(), j = await res.json();
+    j.title = "Bò lúc lắc NEU"; await route.fulfill({ response: res, json: j });
+  });
+  await page.evaluate(() => { Date.now = ((n) => () => n() + 60000)(Date.now); document.dispatchEvent(new Event("visibilitychange")); });
+  await page.waitForFunction(() => document.querySelector("#title").textContent.includes("NEU"));
+  assert.equal(await page.locator("#progress").innerText(), doneBefore, "Haken überleben das Auffrischen");
+  await page.context().unroute("**/gerichte/bo-luc-lac.json");
   // Alle Rezepte der Liste: laden, Titel ohne `\~`, Kochen-Ansicht zeigt Schritte
   const all = JSON.parse(await readFile(path.join(ROOT, "kochmodus/rezepte.json"), "utf8"));
   for (const r of all) {
@@ -243,4 +270,4 @@ try {
   server.close();
 }
 if (errors.length) { console.log("Browser-Fehler:\n  " + errors.join("\n  ")); process.exit(1); }
-console.log(`Rauchtest ok: thit-kho (9 Schritte, Sheet, Notiz, Skalierung, Timer, Export, Einkauf, Lesen) + Menü (Plan 9×5, 32 Chips, 60 Schritte, 55 Posten) + Varianten (Brötchen: Ein-/Ausblenden, Mengen, Einkauf, Zeitpläne) + App (Liste, zuletzt geöffnet, Schnell-Timer, Split, offline) + alle ${allCount} Rezepte laden`);
+console.log(`Rauchtest ok: thit-kho (9 Schritte, Sheet, Notiz, Skalierung, Timer, Export, Einkauf, Lesen) + Menü (Plan 9×5, 32 Chips, 60 Schritte, 55 Posten) + Varianten (Brötchen: Ein-/Ausblenden, Mengen, Einkauf, Zeitpläne, Wischen durch alle Plan-Schritte) + App (Liste, zuletzt geöffnet, Schnell-Timer, Split, Vollbild + Zurück, offline, Auffrischen) + alle ${allCount} Rezepte laden`);

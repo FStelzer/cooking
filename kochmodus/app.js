@@ -11,8 +11,8 @@ const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "
 const md = (s) => marked.parse(escapeTilde(s || ""));
 const mdInline = (s) => marked.parseInline(escapeTilde(s || ""));
 
-let recipe, state, view = "kochen", openId = null;
-const ingById = {};
+let recipe, recipeText = "", state, view = "kochen", openId = null;
+let ingById = {};
 const main = $("#main"), sheet = $("#sheet"), backdrop = $("#backdrop"), dock = $("#dock");
 
 // ---- Zustand (localStorage: „km:<Rezept-ID>“, „km:timers“, „km:last“) ------------------
@@ -310,12 +310,16 @@ sheet.addEventListener("touchend", (e) => {
 // Breite Bildschirme (Tablet quer, Desktop): Detailblatt rechts neben der Liste statt darüber (CSS: body.sheet-open)
 const split = () => matchMedia("(min-width: 900px)").matches;
 function scrollToCurrent() { if (split()) main.querySelector(".row.current")?.scrollIntoView({ block: "nearest", behavior: "smooth" }); }
+// Zurück-Taste schließt das Blatt (auf dem Handy ist es Vollbild): ein Verlaufseintrag pro Öffnen, nicht pro Schritt
 function openSheet(id) {
+  if (!openId) history.pushState({ km: "sheet" }, "");
   openId = id; document.body.classList.add("sheet-open"); markCurrent(); renderSheet();
   sheet.classList.add("open"); backdrop.classList.add("open"); sheet.scrollTop = 0;
 }
 function closeSheet() { openId = null; document.body.classList.remove("sheet-open"); sheet.classList.remove("open"); backdrop.classList.remove("open"); renderMain(); }
-backdrop.onclick = closeSheet;
+function requestClose() { if (history.state?.km === "sheet") history.back(); else closeSheet(); }
+window.addEventListener("popstate", () => { if (openId) closeSheet(); });
+backdrop.onclick = requestClose;
 document.addEventListener("keydown", (e) => {
   if (e.key === "Enter" && (e.target.id === "qmin" || e.target.id === "qlabel")) {
     const s = customSecs();
@@ -325,7 +329,7 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && $("#quick")) { $("#quick").remove(); return; }
   if (!openId) return;
   if (e.target.matches?.("textarea, select, input:not([type=checkbox])")) return;  // Pfeiltasten und Escape gehören dem Eingabefeld
-  if (e.key === "Escape") closeSheet();
+  if (e.key === "Escape") requestClose();
   else if (e.key === "ArrowRight") stepNav(1);
   else if (e.key === "ArrowLeft") stepNav(-1);
 });
@@ -418,7 +422,8 @@ document.addEventListener("visibilitychange", () => { if (document.visibilitySta
 
 // ---- Ereignisse -------------------------------------------------------------
 document.addEventListener("click", (e) => {
-  if (e.target.closest(".close")) return closeSheet();
+  if (e.target.closest(".close")) return requestClose();
+  if (e.target.id === "reload") return location.reload();
   if (e.target.closest("#addTimer")) {
     // Fokus nur mit Maus/Tastatur — auf dem Handy schöbe die Bildschirmtastatur sich über die Vorwahlen
     if (!$("#quick")) { document.body.insertAdjacentHTML("beforeend", quickHtml()); if (matchMedia("(pointer: fine)").matches) $("#qlabel").focus(); }
@@ -480,7 +485,51 @@ async function renderPicker() {
 }
 
 // ---- Start -------------------------------------------------------------------
-if ("serviceWorker" in navigator && location.protocol !== "file:") navigator.serviceWorker.register("sw.js").catch(() => {});
+const LOAD_MS = 10000;  // länger als das SW-Warten aufs Netz (4 s), damit ein Cache-Stand vorher antworten kann
+async function fetchRecipe(url) {
+  const ctl = new AbortController(), t = setTimeout(() => ctl.abort(), LOAD_MS);
+  try {
+    const res = await fetch(url, { signal: ctl.signal });
+    if (!res.ok) throw Object.assign(new Error(`HTTP ${res.status}`), { status: res.status });
+    return { text: await res.text(), offline: res.headers.get("x-km-offline") === "1" };
+  } catch (err) {
+    throw err.name === "AbortError" ? new Error(`keine Antwort nach ${LOAD_MS / 1000} s`) : err;
+  } finally { clearTimeout(t); }
+}
+function applyRecipe({ text, offline }) {
+  const r = JSON.parse(text);
+  recipe = r; recipeText = text; ingById = {};
+  for (const i of recipe.ingredients || []) ingById[i.id] = i;
+  $("#status").textContent = offline ? "Offline-Stand · Lokal gespeichert" : "Lokal gespeichert";
+}
+function fail(html) { main.innerHTML = `<p class="empty">${html}</p><p><button class="btn" id="reload">Neu laden</button></p>`; }
+// Seite war im Hintergrund (Handy): Rezept neu holen und nur bei Änderung neu zeichnen — Haken, Timer, Notiz bleiben
+let lastCheck = Date.now();
+async function refreshRecipe() {
+  navigator.serviceWorker?.getRegistration().then((r) => r?.update()).catch(() => {});  // neue App-Version suchen
+  if (!recipe || Date.now() - lastCheck < 30000) return;
+  lastCheck = Date.now();
+  let got;
+  try { got = await fetchRecipe(RECIPE_URL); } catch { return; }
+  if (got.offline || got.text === recipeText) return;
+  try { applyRecipe(got); } catch { return; }
+  if (openId && !stepOf(openId)) requestClose();
+  renderAll(); toast("Rezept aktualisiert");
+}
+document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") refreshRecipe(); });
+window.addEventListener("pageshow", (e) => { if (e.persisted) refreshRecipe(); });
+
+const sw = "serviceWorker" in navigator && location.protocol !== "file:" ? navigator.serviceWorker : null;
+if (sw) {
+  // Neue App-Version übernimmt die Seite: einmal neu laden, damit Seite und Skripte zusammenpassen (Zustand liegt in
+  // localStorage). Erster Besuch (noch kein SW): nur das Rezept einmal durch ihn holen, damit es offline da ist.
+  const updating = !!sw.controller;
+  sw.addEventListener("controllerchange", () => {
+    if (updating) location.reload(); else if (RECIPE_URL) fetch(RECIPE_URL).catch(() => {});
+  }, { once: true });
+  sw.register("sw.js").catch(() => {});
+}
+if (history.state?.km === "sheet") history.replaceState(null, "");  // nach Reload ist kein Blatt offen
 const fromLast = RECIPE_URL && RECIPE_URL === lastRecipe && !params.get("r");
 const sameOrigin = (u) => { try { return new URL(u, location.href).origin === location.origin; } catch { return false; } };
 (async () => {
@@ -490,9 +539,7 @@ const sameOrigin = (u) => { try { return new URL(u, location.href).origin === lo
     main.innerHTML = `<p class="empty">Nur Rezepte dieser Seite können geöffnet werden: <code>${esc(RECIPE_URL)}</code></p>`; return;
   }
   try {
-    const res = await fetch(RECIPE_URL);
-    if (!res.ok) throw Object.assign(new Error(`HTTP ${res.status}`), { status: res.status });
-    recipe = await res.json();
+    applyRecipe(await fetchRecipe(RECIPE_URL));
   } catch (err) {
     // Zuletzt geöffnetes Rezept nicht ladbar: Liste zeigen. Vergessen nur, wenn es das Rezept nicht mehr gibt (404) —
     // offline (Netzfehler, 503 vom Service Worker) bleibt die Erinnerung
@@ -500,15 +547,12 @@ const sameOrigin = (u) => { try { return new URL(u, location.href).origin === lo
       if (err.status === 404) store.del("km:last");
       return renderPicker();
     }
-    main.innerHTML = `<p class="empty">Rezept konnte nicht geladen werden: <code>${esc(RECIPE_URL)}</code> (${esc(err.message)})</p>`; return;
+    return fail(`Rezept konnte nicht geladen werden: <code>${esc(RECIPE_URL)}</code> (${esc(err.message)})`);
   }
-  for (const i of recipe.ingredients || []) ingById[i.id] = i;
+  if (typeof marked === "undefined") return fail("Die Markdown-Bibliothek (marked) wurde nicht geladen — Netz prüfen, dann neu laden.");
   state = loadState(recipe.id);
   if (isMenu() && schedule()) view = "plan";
-  renderAll();
+  try { renderAll(); } catch (err) { return fail(`Anzeige fehlgeschlagen: ${esc(err.message)}`); }
   // Erst merken, wenn es sich rendern ließ — und nur Rezepte dieser Seite (der Start ohne ?r= lädt es ungefragt)
   try { localStorage.setItem("km:last", RECIPE_URL); } catch {}
-  // Erster Besuch: das Rezept kam, bevor der Service Worker die Seite übernahm — einmal durch ihn holen, damit es offline da ist
-  const sw = navigator.serviceWorker;
-  if (sw && !sw.controller) sw.addEventListener("controllerchange", () => fetch(RECIPE_URL).catch(() => {}), { once: true });
 })();

@@ -67,8 +67,11 @@ Sidebar-Generator liest `*/*.md`).
   Wahl), `km:timers` rezeptübergreifend mit absoluter Endzeit (überlebt Reload), `km:last`.
   Statische Seite, installierbar, offline über den Service Worker: App-Hülle als ein
   Cache pro Version (Hash der Hülle, von `task build` gesetzt, atomar installiert), Rezepte
-  in einem eigenen Cache, Netz zuerst. Beim Entwickeln mit `task serve`: nach Änderungen
-  an der App `task build` und zweimal neu laden (oder in den DevTools „Update on reload“). Kein Alarm bei gesperrtem Bildschirm (ohne Push-Server
+  in einem eigenen Cache, Netz zuerst. Beides am HTTP-Cache des Browsers vorbei (Hülle
+  `cache: "reload"`, Daten `no-cache`) — sonst mischte ein neuer SW alte und neue Skripte.
+  Kommt die Seite in den Vordergrund, holt sie das Rezept neu und zeichnet nur bei Änderung
+  neu; übernimmt eine neue App-Version, lädt sie sich einmal selbst neu. Laden mit Timeout
+  und Fehlermeldung statt endlosem „Lade Rezept …“. Kein Alarm bei gesperrtem Bildschirm (ohne Push-Server
   nicht verlässlich), dafür „Bildschirm wach halten“.
 - **L15 Gates lokal.** `task validate` als Pre-Commit-Hook, kein CI.
 
