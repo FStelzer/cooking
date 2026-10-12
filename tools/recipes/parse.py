@@ -69,8 +69,9 @@ def iso(value: float, unit: str) -> str:
     if u.startswith("std") or u == "h":
         h = int(value); m = int(round((value - h) * 60))
         return f"PT{h}H{m}M" if m else f"PT{h}H"
-    m = int(round(value))
-    return f"PT{m // 60}H{m % 60}M" if m >= 60 and m % 60 else (f"PT{m // 60}H" if m >= 60 else f"PT{m}M")
+    secs = int(round(value * 60))  # „2,5 Min.“ → PT2M30S, nicht auf ganze Minuten runden
+    h, m, sec = secs // 3600, secs % 3600 // 60, secs % 60
+    return "PT" + (f"{h}H" if h else "") + (f"{m}M" if m else "") + (f"{sec}S" if sec else "") if secs else "PT0M"
 
 
 def iso_seconds(d: str) -> float:

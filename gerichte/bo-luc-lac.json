@@ -660,7 +660,7 @@
                 {
                   "label": "Chargen braten",
                   "duration": {
-                    "min": "PT2M",
+                    "min": "PT1M30S",
                     "max": "PT2M"
                   },
                   "text": "1½–2 Min."
@@ -972,8 +972,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:12:15Z",
-    "sourceHash": "1725cd2884b9cae4",
+    "generatedAt": "2026-10-12T15:13:20Z",
+    "sourceHash": "a80fff6dcb6b8ba2",
     "quantities": [
       {
         "ingredient": "rindfleisch",

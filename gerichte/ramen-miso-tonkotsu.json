@@ -2131,7 +2131,7 @@
                           "label": "Nudelwasser",
                           "duration": {
                             "min": "PT2M",
-                            "max": "PT2M",
+                            "max": "PT2M30S",
                             "estimated": true
                           },
                           "text": "\\~2-2,5 Min"
@@ -2224,7 +2224,7 @@
                         {
                           "label": "Wok-Durchgänge",
                           "duration": {
-                            "typical": "PT4M",
+                            "typical": "PT3M30S",
                             "estimated": true
                           },
                           "text": "\\~3,5 Min"
@@ -3446,8 +3446,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:12:15Z",
-    "sourceHash": "4513ec619b479e8b",
+    "generatedAt": "2026-10-12T15:13:20Z",
+    "sourceHash": "add0c22ea5515e06",
     "select": {
       "ablauf": "vortag"
     },
