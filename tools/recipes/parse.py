@@ -957,6 +957,8 @@ def parse_schedule(title: str, text: str, tasks_all: list[tuple[str | None, dict
             d = duration_range(m.group(1) + " " + m.group(2))
             e["at"] = {"ref": f"course:{e.get('course', 'gang-1')}:serve", "offset": "-" + (d.get("typical") or d["max"])}
             e["source"] = m.group(0).strip("()")
+    # Spalten chronologisch: die Tabelle (Kochtag) wird vor den Bullets (Vorabend) gelesen; innerhalb eines Tages Dokument-Reihenfolge
+    phases.sort(key=lambda p: p.get("day", 0))
     sched = {"id": slugify(title), "label": title, "phases": phases, "entries": entries}
     if sched_only: sched["only"] = sched_only
     if anchor: sched["_anchor"] = anchor

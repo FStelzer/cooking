@@ -1644,16 +1644,16 @@
         "label": "Zeitplan",
         "phases": [
           {
-            "id": "kochtag",
-            "label": "Kochtag",
-            "day": 0,
-            "part": "service"
-          },
-          {
             "id": "vorabend",
             "label": "Vorabend",
             "day": -1,
             "part": "evening"
+          },
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
           }
         ],
         "entries": [
@@ -1807,8 +1807,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-09T10:03:58Z",
-    "sourceHash": "48a81004fc0dfebf",
+    "generatedAt": "2026-10-12T15:04:24Z",
+    "sourceHash": "be3d079056bca503",
     "quantities": [
       {
         "ingredient": "haehnchenschenkel",

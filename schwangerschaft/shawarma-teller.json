@@ -1244,16 +1244,16 @@
         "label": "Zeitplan",
         "phases": [
           {
-            "id": "kochtag",
-            "label": "Kochtag",
-            "day": 0,
-            "part": "service"
-          },
-          {
             "id": "vorabend",
             "label": "Vorabend",
             "day": -1,
             "part": "evening"
+          },
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
           }
         ],
         "entries": [
@@ -1396,8 +1396,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T18:56:45Z",
-    "sourceHash": "3eadfa738bc3eeb0",
+    "generatedAt": "2026-10-12T15:04:24Z",
+    "sourceHash": "c981be2129e552f0",
     "quantities": [
       {
         "ingredient": "7-gewuerz",

@@ -399,12 +399,6 @@
         "label": "Zeitplan (3 Tage)",
         "phases": [
           {
-            "id": "kochtag",
-            "label": "Kochtag",
-            "day": 0,
-            "part": "service"
-          },
-          {
             "id": "t-2",
             "label": "T-2",
             "day": -2
@@ -413,6 +407,12 @@
             "id": "t-1",
             "label": "T-1",
             "day": -1
+          },
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
           }
         ],
         "entries": [
@@ -2125,8 +2125,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-09T10:03:58Z",
-    "sourceHash": "2b34bd3a666ef608",
+    "generatedAt": "2026-10-12T15:04:24Z",
+    "sourceHash": "727e2675af720819",
     "quantities": [
       {
         "ingredient": "tahina",

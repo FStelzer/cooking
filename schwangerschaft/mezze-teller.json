@@ -350,15 +350,15 @@
         "label": "Zeitplan (2 Tage)",
         "phases": [
           {
+            "id": "vortag",
+            "label": "Vortag",
+            "day": -1
+          },
+          {
             "id": "kochtag",
             "label": "Kochtag",
             "day": 0,
             "part": "service"
-          },
-          {
-            "id": "vortag",
-            "label": "Vortag",
-            "day": -1
           },
           {
             "id": "vormittags",
@@ -1628,8 +1628,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-09T10:03:58Z",
-    "sourceHash": "bf127e38f4c136e9",
+    "generatedAt": "2026-10-12T15:04:24Z",
+    "sourceHash": "15cd9e41b2f13961",
     "quantities": [
       {
         "ingredient": "tahina",

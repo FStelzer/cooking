@@ -3587,7 +3587,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-09T10:03:58Z",
+    "generatedAt": "2026-10-12T15:04:24Z",
     "sourceHash": "20af892aba32170c",
     "select": {
       "ablauf": "vortag"

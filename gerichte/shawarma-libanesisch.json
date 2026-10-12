@@ -1425,16 +1425,16 @@
         "label": "Zeitplan Pfanne",
         "phases": [
           {
-            "id": "kochtag",
-            "label": "Kochtag",
-            "day": 0,
-            "part": "service"
-          },
-          {
             "id": "vorabend",
             "label": "Vorabend",
             "day": -1,
             "part": "evening"
+          },
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
           }
         ],
         "entries": [
@@ -1634,8 +1634,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T18:55:44Z",
-    "sourceHash": "6d2ad0bdbdb4388c",
+    "generatedAt": "2026-10-12T15:04:24Z",
+    "sourceHash": "49bd67c55c626db6",
     "select": {
       "garmethode": "pfanne"
     },

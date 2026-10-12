@@ -838,15 +838,15 @@
         "label": "Zeitplan",
         "phases": [
           {
+            "id": "vortag",
+            "label": "Vortag",
+            "day": -1
+          },
+          {
             "id": "kochtag",
             "label": "Kochtag",
             "day": 0,
             "part": "service"
-          },
-          {
-            "id": "vortag",
-            "label": "Vortag",
-            "day": -1
           }
         ],
         "entries": [
@@ -925,8 +925,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-09T10:03:58Z",
-    "sourceHash": "298f26cb1357ea23",
+    "generatedAt": "2026-10-12T15:04:24Z",
+    "sourceHash": "fd0710a30592ab98",
     "quantities": [
       {
         "ingredient": "bun-nudeln",

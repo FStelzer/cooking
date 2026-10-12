@@ -53,7 +53,18 @@ function tasksOf(r, course = null) {
 }
 function steps() { return tasksOf(recipe).flatMap(({ course, task }) => task.steps.map((step) => ({ course, task, step }))); }
 const stepOf = (id) => steps().find((x) => x.step.id === id)?.step;
-const labelOf = (ref) => stepOf(ref.replace(/^step:/, ""))?.label; // ausgeblendete Vorgänger fallen weg
+// Anzeige-Nummer: blendet die Variante Schritte aus, laufen die sichtbaren pro Rezept/Gang lückenlos durch (16 → 17 statt 16 → 21)
+function stepNumbers() {
+  const nums = {};
+  for (const scope of [recipe, ...courses()]) {
+    const tasks = scope.sections.filter((s) => s.type === "tasks").flatMap((s) => s.tasks);
+    const all = tasks.flatMap((t) => t.steps), vis = tasks.filter(live).flatMap((t) => t.steps.filter(live));
+    vis.forEach((st, i) => { nums[st.id] = vis.length < all.length ? String(i + 1) : st.label; });
+  }
+  return nums;
+}
+const num = (s) => stepNumbers()[s.id] ?? s.label;
+const labelOf = (ref) => { const s = stepOf(ref.replace(/^step:/, "")); return s && num(s); }; // ausgeblendete Vorgänger fallen weg
 function scaled(text, step) {
   const v = variantText(text, step, sel());
   return scaleStepText(v.text, { ...step, ingredients: v.ingredients }, factor(), ingById);
@@ -93,9 +104,9 @@ function stepRow(s, course = null, task = null) {
   const meta = [course ? courseTitle(course) : "", dur, deps].filter(Boolean).join(" · ");
   const title = s.title || (task && task.name !== recipe.title ? task.name : "");
   return `<div class="row ${state.done[s.id] ? "done" : ""} ${s.after && !s.after.length ? "free" : ""} ${s.id === openId ? "current" : ""}" data-step="${s.id}">
-    <input type="checkbox" class="chk" data-done="${s.id}" aria-label="${esc(title || s.label)} erledigt" ${state.done[s.id] ? "checked" : ""}>
+    <input type="checkbox" class="chk" data-done="${s.id}" aria-label="${esc(title || num(s))} erledigt" ${state.done[s.id] ? "checked" : ""}>
     <div class="body" data-open="${s.id}">
-      <div class="t">${esc(s.label)}. ${mdInline(title)}</div>
+      <div class="t">${esc(num(s))}. ${mdInline(title)}</div>
       ${meta ? `<div class="m">${esc(meta)}</div>` : ""}
       <div class="a md">${md(scaled(s.action, s))}</div>${(n => n ? `<div class="more">+ ${n} weitere${n === 1 ? "r Handgriff" : " Handgriffe"} ›</div>` : "")(moreCount(s))}${runBadge(s)}
     </div></div>`;
@@ -261,7 +272,7 @@ function renderSheet() {
   if (!ctx) return;
   const { step: s, task, course } = ctx;
   const choices = (s.timers || []).flatMap((t, i) => timerChoices(t.duration).map((secs) => ({ i, label: t.label, secs })));
-  const lbl = [course ? courseTitle(course) : null, task.name !== recipe.title ? task.name.replace(/\\~/g, "~") : null, `Schritt ${s.label}`].filter(Boolean).join(" · ");
+  const lbl = [course ? courseTitle(course) : null, task.name !== recipe.title ? task.name.replace(/\\~/g, "~") : null, `Schritt ${num(s)}`].filter(Boolean).join(" · ");
   const scaledStep = { ...s, action: scaled(s.action, s) };
   const body = highlight(textWithAction(scaled(s.text, s), scaledStep), s);
   const details = [];
@@ -340,7 +351,7 @@ function startTimer(step, label, secs) {  // step = null: Schnell-Timer ohne Sch
   unlockAudio();
   timers.push({ id: Math.random().toString(36).slice(2, 9), label, end: Date.now() + secs * 1000, paused: false, left: 0,
                 recipe: recipe?.id ?? null, recipeTitle: shortTitle(recipe?.title), step: step?.id ?? null,
-                stepText: step ? `${step.label}. ${step.title || ""}`.trim() : "" });
+                stepText: step ? `${num(step)}. ${step.title || ""}`.trim() : "" });
   timersChanged(); toast(`Timer läuft: ${label}`);
 }
 function timerAction(id, act) {
