@@ -586,7 +586,7 @@
                 "typical": "PT15M",
                 "source": "15 Min."
               },
-              "text": "Durch feines Sieb + Mulltuch abseihen. Ergebnis: \\~1,8-2L klare Brühe.",
+              "text": "Durch feines Sieb + Mulltuch abseihen. Ergebnis: \\~1,8-2L klare Brühe.\n\n> **Wichtig:** Nicht salzen!",
               "action": "Durch feines Sieb + Mulltuch abseihen.",
               "ingredients": [],
               "meta": "*nach Simmern*",
@@ -603,7 +603,8 @@
               "id": "bruehe-haehnchen-chintan",
               "name": "Brühe — Hähnchen-Chintan"
             }
-          ]
+          ],
+          "intro": "*Zutaten:*\n- 1 Suppenhuhn (\\~1,1kg) + 800g Hähnchenflügel\n- 1 Zwiebel, halbiert (mit Schale)\n- 1 Stange Lauch, grob geschnitten\n- 1 Knoblauchknolle, quer halbiert\n- 5cm Ingwer in Scheiben\n- 2 Möhren\n- **1-2 getrocknete Shiitake** (NICHT 4-5, gibt sonst zu intensive Pilznote)\n- 1 Stück Kombu \\~10x10cm (oder \\~10-15g zerkleinert)\n- 3-3,5L Wasser"
         },
         {
           "id": "shoyu-tare",
@@ -694,7 +695,7 @@
                 "source": "10 Min."
               },
               "attention": "passive",
-              "text": "Hitze aus, 5g Katsuobushi rein, 10 Min ziehen. Abseihen.",
+              "text": "Hitze aus, 5g Katsuobushi rein, 10 Min ziehen. Abseihen.\n\n> **Dosierung:** \\~3 EL Tare auf 400ml Brühe. Für Kleinkind 1,5 EL.",
               "action": "Hitze aus, 5g Katsuobushi rein, 10 Min ziehen.",
               "timers": [
                 {
@@ -727,7 +728,8 @@
                 "place": "fridge"
               }
             }
-          ]
+          ],
+          "intro": "*Zutaten:*\n- 150ml japanische Sojasauce\n- 50ml Mirin\n- 50ml Sake\n- 1 EL Zucker\n- 1 Stück Kombu \\~5x5cm (oder \\~3-5g zerkleinert)\n- \\~5g Katsuobushi\n- **KEINE getrocknete Shiitake** (siehe Learnings — verstärkt Pilznote unnötig)"
         },
         {
           "id": "chiyu-goldenes-aroma-oel",
@@ -742,7 +744,7 @@
                 "typical": "PT15M",
                 "source": "15 Min."
               },
-              "text": "\\~100ml Hühnerfett, 4-5 fein gehackte Knoblauchzehen und die Frühlingszwiebel-Enden in kleinen Topf, mittlere Hitze, 10-15 Min bis goldbraun (NICHT schwarz!). Abseihen.",
+              "text": "\\~100ml Hühnerfett, 4-5 fein gehackte Knoblauchzehen und die Frühlingszwiebel-Enden in kleinen Topf, mittlere Hitze, 10-15 Min bis goldbraun (NICHT schwarz!). Abseihen.\n\n> **Dosierung:** 1 TL pro Schüssel.",
               "action": "\\~100ml Hühnerfett, 4-5 fein gehackte Knoblauchzehen und die Frühlingszwiebel-Enden in kleinen Topf, mittlere Hitze, 10-15 Min bis goldbraun (NICHT schwarz!).",
               "timers": [
                 {
@@ -785,7 +787,8 @@
               "id": "chiyu-goldenes-aroma-oel",
               "name": "Chiyu — goldenes Aroma-Öl"
             }
-          ]
+          ],
+          "intro": "*Zutaten:*\n- \\~100ml abgeschöpftes Hühnerfett (oder neutrales Öl)\n- 4-5 Knoblauchzehen, fein gehackt\n- Grüne Frühlingszwiebel-Enden"
         },
         {
           "id": "chashu",
@@ -859,7 +862,7 @@
                 "source": "1,5–2 Std."
               },
               "attention": "passive",
-              "text": "Marinade (100ml Sojasauce, 50ml Sake, 50ml Mirin, 300ml Wasser, 3 EL Zucker, 4 Knoblauchzehen, 4cm Ingwer, 1 Frühlingszwiebel) in kleinen Topf (gerade passend), aufkochen, Fleisch rein, Hitze runter, **Deckel drauf**, 1,5-2h sanft simmern. Alle 30 Min wenden.",
+              "text": "Marinade (100ml Sojasauce, 50ml Sake, 50ml Mirin, 300ml Wasser, 3 EL Zucker, 4 Knoblauchzehen, 4cm Ingwer, 1 Frühlingszwiebel) in kleinen Topf (gerade passend), aufkochen, Fleisch rein, Hitze runter, **Deckel drauf**, 1,5-2h sanft simmern. Alle 30 Min wenden.\n\n> **Wichtig:** Fleisch muss **nicht** komplett bedeckt sein — 1/2 bis 2/3 reicht. Bei zu wenig: Backpapier-Cartouche direkt aufs Fleisch legen.",
               "action": "Marinade (100ml Sojasauce, 50ml Sake, 50ml Mirin, 300ml Wasser, 3 EL Zucker, 4 Knoblauchzehen, 4cm Ingwer, 1 Frühlingszwiebel) in kleinen Topf (gerade passend), aufkochen, Fleisch rein, Hitze runter, **Deckel drauf**, 1,5-2h sanft simmern.",
               "limits": [
                 "Deckel drauf"
@@ -1021,7 +1024,8 @@
               "id": "chashu",
               "name": "Chashu"
             }
-          ]
+          ],
+          "intro": "*Zutaten:*\n- 500-700g Schweinebauch ohne Knochen\n- 100ml Sojasauce\n- 50ml Sake\n- 50ml Mirin\n- 300ml Wasser\n- 3 EL Zucker\n- 4 Knoblauchzehen, angedrückt\n- 4cm Ingwer in Scheiben\n- 1 Frühlingszwiebel"
         },
         {
           "id": "ajitsuke-tamago",
@@ -1131,6 +1135,7 @@
               }
             }
           ],
+          "intro": "*Zutaten:*\n- 6 Eier\n- \\~300ml abgekühlte Chashu-Marinade",
           "consumes": [
             "product:chashu"
           ]
@@ -1189,7 +1194,7 @@
                 "source": "ca. 15 Min.",
                 "estimated": true
               },
-              "text": "**Mise en Place** komplett bereitstellen, Schüsseln mit heißem Wasser vorwärmen. Pro Schüssel: 1. 3 EL Tare (Kleinkind: 1,5 EL) 2. 1 TL Chiyu (Kleinkind: weglassen) 3. \\~400ml heiße Brühe, mit Stäbchen umrühren 4. Nudeln kochen (\\~150g frisch bzw. \\~100g trocken pro Erwachsenem, Kleinkind \\~die Hälfte; Packungszeit -10 Sek), in Sieb **kräftig ausschütteln**, in Schüssel 5. Toppings: 2-3 Chashu, halbes Ei (längs!), Frühlingszwiebeln, Pilze, Nori\n**Sofort servieren!**",
+              "text": "**Mise en Place** komplett bereitstellen, Schüsseln mit heißem Wasser vorwärmen.\n\nPro Schüssel: 1. 3 EL Tare (Kleinkind: 1,5 EL) 2. 1 TL Chiyu (Kleinkind: weglassen) 3. \\~400ml heiße Brühe, mit Stäbchen umrühren 4. Nudeln kochen (\\~150g frisch bzw. \\~100g trocken pro Erwachsenem, Kleinkind \\~die Hälfte; Packungszeit -10 Sek), in Sieb **kräftig ausschütteln**, in Schüssel 5. Toppings: 2-3 Chashu, halbes Ei (längs!), Frühlingszwiebeln, Pilze, Nori\n\n**Sofort servieren!**",
               "action": "**Mise en Place** komplett bereitstellen, Schüsseln mit heißem Wasser vorwärmen.",
               "limits": [
                 "Mise en Place",
@@ -1248,60 +1253,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "markdown",
-      "title": "*Zutaten:*",
-      "level": "bold",
-      "markdown": "*Zutaten:*\n- 1 Suppenhuhn (\\~1,1kg) + 800g Hähnchenflügel\n- 1 Zwiebel, halbiert (mit Schale)\n- 1 Stange Lauch, grob geschnitten\n- 1 Knoblauchknolle, quer halbiert\n- 5cm Ingwer in Scheiben\n- 2 Möhren\n- **1-2 getrocknete Shiitake** (NICHT 4-5, gibt sonst zu intensive Pilznote)\n- 1 Stück Kombu \\~10x10cm (oder \\~10-15g zerkleinert)\n- 3-3,5L Wasser"
-    },
-    {
-      "type": "markdown",
-      "title": "Wichtig",
-      "level": "bold",
-      "markdown": "**Wichtig:** Nicht salzen!"
-    },
-    {
-      "type": "markdown",
-      "title": "*Zutaten:*",
-      "level": "bold",
-      "markdown": "*Zutaten:*\n- 150ml japanische Sojasauce\n- 50ml Mirin\n- 50ml Sake\n- 1 EL Zucker\n- 1 Stück Kombu \\~5x5cm (oder \\~3-5g zerkleinert)\n- \\~5g Katsuobushi\n- **KEINE getrocknete Shiitake** (siehe Learnings — verstärkt Pilznote unnötig)"
-    },
-    {
-      "type": "markdown",
-      "title": "Dosierung",
-      "level": "bold",
-      "markdown": "**Dosierung:** \\~3 EL Tare auf 400ml Brühe. Für Kleinkind 1,5 EL."
-    },
-    {
-      "type": "markdown",
-      "title": "*Zutaten:*",
-      "level": "bold",
-      "markdown": "*Zutaten:*\n- \\~100ml abgeschöpftes Hühnerfett (oder neutrales Öl)\n- 4-5 Knoblauchzehen, fein gehackt\n- Grüne Frühlingszwiebel-Enden"
-    },
-    {
-      "type": "markdown",
-      "title": "Dosierung",
-      "level": "bold",
-      "markdown": "**Dosierung:** 1 TL pro Schüssel."
-    },
-    {
-      "type": "markdown",
-      "title": "*Zutaten:*",
-      "level": "bold",
-      "markdown": "*Zutaten:*\n- 500-700g Schweinebauch ohne Knochen\n- 100ml Sojasauce\n- 50ml Sake\n- 50ml Mirin\n- 300ml Wasser\n- 3 EL Zucker\n- 4 Knoblauchzehen, angedrückt\n- 4cm Ingwer in Scheiben\n- 1 Frühlingszwiebel"
-    },
-    {
-      "type": "markdown",
-      "title": "Wichtig",
-      "level": "bold",
-      "markdown": "**Wichtig:** Fleisch muss **nicht** komplett bedeckt sein — 1/2 bis 2/3 reicht. Bei zu wenig: Backpapier-Cartouche direkt aufs Fleisch legen."
-    },
-    {
-      "type": "markdown",
-      "title": "*Zutaten:*",
-      "level": "bold",
-      "markdown": "*Zutaten:*\n- 6 Eier\n- \\~300ml abgekühlte Chashu-Marinade"
     },
     {
       "type": "schedule",
@@ -1614,8 +1565,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:04:24Z",
-    "sourceHash": "1e22d549edf6207e",
+    "generatedAt": "2026-10-12T15:09:47Z",
+    "sourceHash": "27791bbde8d5f405",
     "quantities": [
       {
         "ingredient": "ramen-nudeln",

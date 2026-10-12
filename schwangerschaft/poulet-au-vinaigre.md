@@ -78,7 +78,7 @@ Hitze auf mittel. Die 4 Schalotten + die 4 Knoblauchzehen ins Fett, 2–3 Min. g
 *Ofen 165 °C · fertig bei 85–90 °C Kern*
 **350 ml Hühnerbrühe** und die 300 g Tomatenwürfel dazu, 2 Lorbeerblätter, 4 Zweige Thymian, aufkochen. Schenkel **mit der Haut nach oben** einlegen — die Haut soll aus der Flüssigkeit ragen, sonst wird sie labberig. **Ohne Deckel** in den Ofen bei 165 °C, **35–40 Min.**
 
-**Gar-Check:** Thermometer neben dem Knochen in den dicksten Oberschenkel: **Ziel 85–90 °C** — bei dunklem Fleisch ist das kein Übergaren, sondern der Punkt, an dem das Bindegewebe zu Gelatine wird und das Fleisch seidig vom Knochen fällt. Die Schwangerschafts-Untergrenze von 75 °C ist damit weit überschritten. Kein Rosa am Knochen, Saft klar.
+> **Gar-Check:** Thermometer neben dem Knochen in den dicksten Oberschenkel: **Ziel 85–90 °C** — bei dunklem Fleisch ist das kein Übergaren, sondern der Punkt, an dem das Bindegewebe zu Gelatine wird und das Fleisch seidig vom Knochen fällt. Die Schwangerschafts-Untergrenze von 75 °C ist damit weit überschritten. Kein Rosa am Knochen, Saft klar.
 
 **6. Bohnen (ca. 10 Min., parallel)**
 *letzte 20 Min. von Aufgießen & schmoren · Herd*

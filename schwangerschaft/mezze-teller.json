@@ -728,7 +728,8 @@
               "id": "hummus",
               "name": "Hummus"
             }
-          ]
+          ],
+          "intro": "*200 g getrocknete Kichererbsen · 1¼ TL Natron · 140 g Tahina · 2–3 EL Zitronensaft · 1–2 Knoblauchzehen · 1 TL Salz · Prise Kreuzkümmel · 60–100 ml Eiswasser (oder 2–3 Eiswürfel)*"
         },
         {
           "id": "moutabal",
@@ -896,7 +897,8 @@
               "id": "moutabal",
               "name": "Moutabal"
             }
-          ]
+          ],
+          "intro": "*2 große Auberginen (\\~700 g) · 60 g Tahina · 2 EL Zitronensaft · 1 kleine Knoblauchzehe · ½ TL Salz · 1–2 EL Olivenöl obenauf · optional Granatapfelkerne*"
         },
         {
           "id": "muhammara",
@@ -1093,7 +1095,8 @@
                 "place": "fridge"
               }
             }
-          ]
+          ],
+          "intro": "*2 rote Spitzpaprika (oder 1 Glas geröstete Paprika, abgetropft \\~220 g) · 100 g Walnusskerne · 40 g Semmelbrösel · 1½ EL Granatapfelsirup · 1 TL Aleppo-Pfeffer · ½ TL Kreuzkümmel · ½ TL Salz · 1 Knoblauchzehe · 3 EL Olivenöl · 1 TL Zitronensaft*"
         },
         {
           "id": "labneh-mit-za-atar",
@@ -1210,7 +1213,8 @@
                 "place": "fridge"
               }
             }
-          ]
+          ],
+          "intro": "*1 kg griechischer Joghurt (10 %) · 1 TL Salz · 2 EL Olivenöl · 1–2 TL Za'atar*"
         },
         {
           "id": "kafta",
@@ -1339,10 +1343,11 @@
                 "max": "PT10M",
                 "source": "8–10 Min."
               },
-              "text": "**Gasgrill:** Rost sauber und geölt, direkte Zone hoch vorgeheizt. Kafta auflegen, **2 Min. nicht bewegen**, dann alle 2 Min. um eine Vierteldrehung wenden — insgesamt 8–10 Min., bis rundum dunkel gebräunt. **Pfanne:** 1 EL Olivenöl in der schweren Pfanne stark erhitzen, in zwei Chargen 8–10 Min. rundum braten, Deckel in den letzten 2 Min. auflegen.",
+              "text": "**Gasgrill:** Rost sauber und geölt, direkte Zone hoch vorgeheizt. Kafta auflegen, **2 Min. nicht bewegen**, dann alle 2 Min. um eine Vierteldrehung wenden — insgesamt 8–10 Min., bis rundum dunkel gebräunt. **Pfanne:** 1 EL Olivenöl in der schweren Pfanne stark erhitzen, in zwei Chargen 8–10 Min. rundum braten, Deckel in den letzten 2 Min. auflegen.\n\n> **Gar-Check — Pflicht:** Fleischthermometer flach in die dickste Rolle: **≥ 72 °C**, Saft klar, innen kein Rosa. Hackfleisch ist der eine Punkt dieses Abends, an dem „durch\" nicht verhandelbar ist. 3 Min. ruhen lassen, mit Zitronenspalten servieren.",
               "action": "**Gasgrill:** Rost sauber und geölt, direkte Zone hoch vorgeheizt.",
               "limits": [
-                "2 Min. nicht bewegen"
+                "2 Min. nicht bewegen",
+                "≥ 72 °C"
               ],
               "timers": [
                 {
@@ -1374,6 +1379,20 @@
                     "typical": "PT2M"
                   },
                   "text": "2 Min."
+                },
+                {
+                  "label": "Kafta garen",
+                  "duration": {
+                    "typical": "PT3M"
+                  },
+                  "text": "3 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "≥ 72 °C",
+                  "value": 72
                 }
               ],
               "ingredients": [
@@ -1414,7 +1433,8 @@
                 "place": "fridge"
               }
             }
-          ]
+          ],
+          "intro": "Gegrillt oder gebraten.\n\n*600 g Lamm- oder Rinderhack (\\~20 % Fett) · 1 mittlere Zwiebel · ½ Bund glatte Petersilie · 1 Knoblauchzehe · 1½ TL Baharat · 1 TL Salz · ½ TL schwarzer Pfeffer · ¼ TL Piment (falls Baharat gekauft und mild) · 1 EL Olivenöl (nur Pfanne)*"
         },
         {
           "id": "dazu",
@@ -1553,48 +1573,6 @@
     },
     {
       "type": "markdown",
-      "title": "*200 g getrocknete Kichererbsen · 1¼ TL ",
-      "level": "bold",
-      "markdown": "*200 g getrocknete Kichererbsen · 1¼ TL Natron · 140 g Tahina · 2–3 EL Zitronensaft · 1–2 Knoblauchzehen · 1 TL Salz · Prise Kreuzkümmel · 60–100 ml Eiswasser (oder 2–3 Eiswürfel)*"
-    },
-    {
-      "type": "markdown",
-      "title": "*2 große Auberginen (\\~700 g) · 60 g Tah",
-      "level": "bold",
-      "markdown": "*2 große Auberginen (\\~700 g) · 60 g Tahina · 2 EL Zitronensaft · 1 kleine Knoblauchzehe · ½ TL Salz · 1–2 EL Olivenöl obenauf · optional Granatapfelkerne*"
-    },
-    {
-      "type": "markdown",
-      "title": "*2 rote Spitzpaprika (oder 1 Glas geröst",
-      "level": "bold",
-      "markdown": "*2 rote Spitzpaprika (oder 1 Glas geröstete Paprika, abgetropft \\~220 g) · 100 g Walnusskerne · 40 g Semmelbrösel · 1½ EL Granatapfelsirup · 1 TL Aleppo-Pfeffer · ½ TL Kreuzkümmel · ½ TL Salz · 1 Knoblauchzehe · 3 EL Olivenöl · 1 TL Zitronensaft*"
-    },
-    {
-      "type": "markdown",
-      "title": "*1 kg griechischer Joghurt (10 %) · 1 TL",
-      "level": "bold",
-      "markdown": "*1 kg griechischer Joghurt (10 %) · 1 TL Salz · 2 EL Olivenöl · 1–2 TL Za'atar*"
-    },
-    {
-      "type": "markdown",
-      "title": "Gegrillt oder gebraten.",
-      "level": "bold",
-      "markdown": "Gegrillt oder gebraten."
-    },
-    {
-      "type": "markdown",
-      "title": "*600 g Lamm- oder Rinderhack (\\~20 % Fet",
-      "level": "bold",
-      "markdown": "*600 g Lamm- oder Rinderhack (\\~20 % Fett) · 1 mittlere Zwiebel · ½ Bund glatte Petersilie · 1 Knoblauchzehe · 1½ TL Baharat · 1 TL Salz · ½ TL schwarzer Pfeffer · ¼ TL Piment (falls Baharat gekauft und mild) · 1 EL Olivenöl (nur Pfanne)*"
-    },
-    {
-      "type": "markdown",
-      "title": "Gar-Check — Pflicht",
-      "level": "bold",
-      "markdown": "**Gar-Check — Pflicht:** Fleischthermometer flach in die dickste Rolle: **≥ 72 °C**, Saft klar, innen kein Rosa. Hackfleisch ist der eine Punkt dieses Abends, an dem „durch\" nicht verhandelbar ist. 3 Min. ruhen lassen, mit Zitronenspalten servieren."
-    },
-    {
-      "type": "markdown",
       "title": "Schwangerschaft & GDM",
       "level": 2,
       "markdown": "- **Alles gegart oder pasteurisiert:** Kichererbsen, Aubergine, Paprika gekocht/geröstet; Joghurt aus dem Kühlregal ist pasteurisiert (Labneh daraus unkritisch); Kafta auf ≥ 72 °C. Roher Knoblauch ist kein Schwangerschaftsthema, nur eine Kinderfrage.\n- **KH-Träger sind Hummus und Fladen.** Hummus hat \\~15 g KH pro 100 g (Kichererbse + Tahina), aber niedrigen GI und viel Protein/Fett — der klassische „gute\" KH-Träger. Muhammara (\\~8 g/100 g, davon \\~2 g Sirup) und Moutabal (\\~5 g/100 g) sind fast frei, Labneh ebenso. **Portionshinweis pro Mahlzeit:** 3–4 EL Hummus (\\~80 g, \\~12 g KH) + ½–1 Vollkorn-Fladen (\\~15–30 g KH) + beliebig Rohkost, Moutabal, Labneh, Kafta → \\~30–45 g KH, immer mit Protein. Nicht die Rohkost weglassen und dafür mehr Brot — genau umgekehrt.\n- **Snack-Vorrat (Leitfaden-Regel 5):** Alle vier Dips halten 4–5 Tage im Kühlschrank (Hummus zieht nach, Knoblauch wird schärfer). 2 EL Hummus/Labneh mit Karotte, Gurke, Paprika ist die perfekte Zwischen- oder Spätmahlzeit — genau das ist der zweite Grund für dieses Rezept.\n- **Granatapfelsirup:** 1½ EL auf den ganzen Dip = \\~1 TL pro Person, etwa 4 g Zucker. Bleibt drin; die Muhammara wäre ohne ihn ein anderes Gericht.\n- **Nach dem Essen:** Spaziergang einplanen — Mezze-Teller sind ein langsames Essen, das lässt sich gut kombinieren.",
@@ -1628,8 +1606,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:04:24Z",
-    "sourceHash": "15cd9e41b2f13961",
+    "generatedAt": "2026-10-12T15:09:48Z",
+    "sourceHash": "44345b3794e21ad2",
     "quantities": [
       {
         "ingredient": "tahina",

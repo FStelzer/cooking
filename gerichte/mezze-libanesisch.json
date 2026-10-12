@@ -832,7 +832,8 @@
               "id": "hummus",
               "name": "Hummus"
             }
-          ]
+          ],
+          "intro": "*200 g getrocknete Kichererbsen · 1¼ TL Natron · 140 g Tahina · 2–3 EL Zitronensaft · 1–2 Knoblauchzehen · 1 TL Salz · Prise Kreuzkümmel · 60–100 ml Eiswasser (oder 2–3 Eiswürfel)*"
         },
         {
           "id": "moutabal",
@@ -1000,7 +1001,8 @@
               "id": "moutabal",
               "name": "Moutabal"
             }
-          ]
+          ],
+          "intro": "*2 große Auberginen (\\~700 g) · 60 g Tahina · 2 EL Zitronensaft · 1 kleine Knoblauchzehe · ½ TL Salz · 1–2 EL Olivenöl obenauf · optional Granatapfelkerne*"
         },
         {
           "id": "muhammara",
@@ -1197,7 +1199,8 @@
                 "place": "fridge"
               }
             }
-          ]
+          ],
+          "intro": "*2 rote Spitzpaprika (oder 1 Glas geröstete Paprika, abgetropft \\~220 g) · 100 g Walnusskerne · 40 g Semmelbrösel · 1½ EL Granatapfelsirup · 1 TL Aleppo-Pfeffer · ½ TL Kreuzkümmel · ½ TL Salz · 1 Knoblauchzehe · 3 EL Olivenöl · 1 TL Zitronensaft*"
         },
         {
           "id": "labneh-mit-za-atar",
@@ -1314,7 +1317,8 @@
                 "place": "fridge"
               }
             }
-          ]
+          ],
+          "intro": "*1 kg griechischer Joghurt (10 %) · 1 TL Salz · 2 EL Olivenöl · 1–2 TL Za'atar*"
         },
         {
           "id": "fatayer-bi-sabanekh",
@@ -1648,7 +1652,8 @@
               "id": "fatayer-bi-sabanekh",
               "name": "Fatayer bi sabanekh"
             }
-          ]
+          ],
+          "intro": "\\~18 Stück, gebacken.\n\n**Teig:** *300 g Mehl · 1 TL Trockenhefe · ½ TL Salz · ½ TL Zucker · 2 EL Olivenöl · \\~170 ml lauwarmes Wasser*"
         },
         {
           "id": "sambousek-bi-jibneh",
@@ -1933,7 +1938,8 @@
               "id": "sambousek-bi-jibneh",
               "name": "Sambousek bi jibneh"
             }
-          ]
+          ],
+          "intro": "\\~20 Stück, frittiert.\n\n**Teig:** *300 g Mehl · 1 TL Salz · ½ TL Zucker · 70 g weiche Butter (oder 60 ml neutrales Öl) · \\~140 ml warmes Wasser*"
         },
         {
           "id": "dazu",
@@ -2041,57 +2047,9 @@
     },
     {
       "type": "markdown",
-      "title": "*200 g getrocknete Kichererbsen · 1¼ TL ",
-      "level": "bold",
-      "markdown": "*200 g getrocknete Kichererbsen · 1¼ TL Natron · 140 g Tahina · 2–3 EL Zitronensaft · 1–2 Knoblauchzehen · 1 TL Salz · Prise Kreuzkümmel · 60–100 ml Eiswasser (oder 2–3 Eiswürfel)*"
-    },
-    {
-      "type": "markdown",
-      "title": "*2 große Auberginen (\\~700 g) · 60 g Tah",
-      "level": "bold",
-      "markdown": "*2 große Auberginen (\\~700 g) · 60 g Tahina · 2 EL Zitronensaft · 1 kleine Knoblauchzehe · ½ TL Salz · 1–2 EL Olivenöl obenauf · optional Granatapfelkerne*"
-    },
-    {
-      "type": "markdown",
-      "title": "*2 rote Spitzpaprika (oder 1 Glas geröst",
-      "level": "bold",
-      "markdown": "*2 rote Spitzpaprika (oder 1 Glas geröstete Paprika, abgetropft \\~220 g) · 100 g Walnusskerne · 40 g Semmelbrösel · 1½ EL Granatapfelsirup · 1 TL Aleppo-Pfeffer · ½ TL Kreuzkümmel · ½ TL Salz · 1 Knoblauchzehe · 3 EL Olivenöl · 1 TL Zitronensaft*"
-    },
-    {
-      "type": "markdown",
-      "title": "*1 kg griechischer Joghurt (10 %) · 1 TL",
-      "level": "bold",
-      "markdown": "*1 kg griechischer Joghurt (10 %) · 1 TL Salz · 2 EL Olivenöl · 1–2 TL Za'atar*"
-    },
-    {
-      "type": "markdown",
-      "title": "\\~18 Stück, gebacken.",
-      "level": "bold",
-      "markdown": "\\~18 Stück, gebacken."
-    },
-    {
-      "type": "markdown",
-      "title": "Teig",
-      "level": "bold",
-      "markdown": "**Teig:** *300 g Mehl · 1 TL Trockenhefe · ½ TL Salz · ½ TL Zucker · 2 EL Olivenöl · \\~170 ml lauwarmes Wasser*"
-    },
-    {
-      "type": "markdown",
       "title": "Füllung",
       "level": "bold",
       "markdown": "**Füllung:** *450 g frischer Spinat (oder 300 g TK, aufgetaut) · 1 große Zwiebel · 1½ EL Sumach · 2 EL Zitronensaft · 2 EL Olivenöl · Salz, Pfeffer · optional 2 EL geröstete Pinienkerne*"
-    },
-    {
-      "type": "markdown",
-      "title": "\\~20 Stück, frittiert.",
-      "level": "bold",
-      "markdown": "\\~20 Stück, frittiert."
-    },
-    {
-      "type": "markdown",
-      "title": "Teig",
-      "level": "bold",
-      "markdown": "**Teig:** *300 g Mehl · 1 TL Salz · ½ TL Zucker · 70 g weiche Butter (oder 60 ml neutrales Öl) · \\~140 ml warmes Wasser*"
     },
     {
       "type": "markdown",
@@ -2125,8 +2083,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:04:24Z",
-    "sourceHash": "727e2675af720819",
+    "generatedAt": "2026-10-12T15:09:47Z",
+    "sourceHash": "d12d72e874c13976",
     "quantities": [
       {
         "ingredient": "tahina",

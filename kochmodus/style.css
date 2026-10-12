@@ -57,6 +57,8 @@ mark.cue{background:var(--cue)} mark.limit{background:var(--limit)} mark.why{bac
 h2{font-family:var(--head);font-weight:800;font-size:22px;margin:22px 0 8px}
 h3{font-family:var(--head);font-size:17px;margin:18px 0 6px}
 .md p{margin:.4em 0}.md ul{padding-left:1.2em}
+.md blockquote{margin:.6em 0;padding:4px 10px;border-left:4px solid var(--line);background:var(--surface);border-radius:0 6px 6px 0}
+.md.intro{border-left:4px solid var(--c);padding:2px 0 2px 10px;margin:0 0 10px;color:var(--muted)}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-bottom:8px}
 ul.shop{list-style:none;padding:0;margin:0}
 ul.shop li{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--line)}

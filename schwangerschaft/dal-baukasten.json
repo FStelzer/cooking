@@ -1350,7 +1350,8 @@
           ],
           "only": [
             "variante=palak"
-          ]
+          ],
+          "intro": "*Grundrezept Schritt 1–4 unverändert (Masoor, oder 150 g Masoor + 150 g Toor nach Dassana). Zusätzlich: 400 g frischer Blattspinat, 2 cm Ingwer in Julienne.*"
         },
         {
           "id": "variante-b-chana-dal-mit-kuerbis",
@@ -1866,7 +1867,8 @@
           ],
           "only": [
             "variante=chana"
-          ]
+          ],
+          "intro": "*Ersetzt Schritt 1 komplett; Masala und Tadka angepasst. 300 g Chana Dal, 400 g Kürbiswürfel, Senfsamen, Curryblätter optional.*"
         },
         {
           "id": "variante-c-kokos-dal-kerala-stil-parippu-curry",
@@ -2191,7 +2193,7 @@
                 "source": "ca. 2 Min.",
                 "estimated": true
               },
-              "text": "**1 EL Kokosöl, ¼ TL Senfsamen, 4 Curryblätter, 1 Schalotte** in Scheiben, kein Chili → kleiner Topf.",
+              "text": "**1 EL Kokosöl, ¼ TL Senfsamen, 4 Curryblätter, 1 Schalotte** in Scheiben, kein Chili → kleiner Topf.\n\n> **Dazu** passt statt Kachumber ein **Gurken-Joghurt** (Raita) besser, Roti oder — nach der Schwangerschaft — Reis.",
               "action": "**1 EL Kokosöl, ¼ TL Senfsamen, 4 Curryblätter, 1 Schalotte** in Scheiben, kein Chili → kleiner Topf.",
               "limits": [
                 "1 EL Kokosöl, ¼ TL Senfsamen, 4 Curryblätter, 1 Schalotte"
@@ -2249,7 +2251,8 @@
           ],
           "only": [
             "variante=kokos"
-          ]
+          ],
+          "intro": "*Anderes Profil: kein Knoblauch, keine Tomate, keine Zwiebel-Masala — stattdessen Kokospaste und ein Curryblatt-Senf-Tadka. 300 g gelbe Moong (Fallback Masoor), 100 g frische Kokosnuss oder 200 ml Kokosmilch, 4–5 Schalotten.*"
         },
         {
           "id": "variante-d-dal-makhani-wochenend-fassung",
@@ -2694,11 +2697,12 @@
                 "typical": "PT5M",
                 "source": "5 Min."
               },
-              "text": "Optional: 1 Stück Holzkohle mit dem Bunsenbrenner glühend machen, in eine kleine Metallschale mitten ins Dal setzen, **½ TL Ghee** darauf träufeln (raucht sofort), Deckel drauf, **3–4 Min.**, Schale entfernen. Das Restaurant-Raucharoma ohne Tandoor.",
+              "text": "Optional: 1 Stück Holzkohle mit dem Bunsenbrenner glühend machen, in eine kleine Metallschale mitten ins Dal setzen, **½ TL Ghee** darauf träufeln (raucht sofort), Deckel drauf, **3–4 Min.**, Schale entfernen. Das Restaurant-Raucharoma ohne Tandoor.\n\n> Portion **kleiner als beim Grundrezept** (\\~220–250 g) — Butter und Sahne machen es energiedicht. Koriander darüber, Zwiebelringe, Roti.",
               "action": "Optional: 1 Stück Holzkohle mit dem Bunsenbrenner glühend machen, in eine kleine Metallschale mitten ins Dal setzen, **½ TL Ghee** darauf träufeln (raucht sofort), Deckel drauf, **3–4 Min.**, Schale entfernen.",
               "limits": [
                 "½ TL Ghee",
-                "3–4 Min."
+                "3–4 Min.",
+                "kleiner als beim Grundrezept"
               ],
               "timers": [
                 {
@@ -2740,7 +2744,8 @@
           ],
           "only": [
             "variante=makhani"
-          ]
+          ],
+          "intro": "*Ersetzt das Grundrezept komplett. 250 g Urad ganz + 60 g Kidneybohnen (\\~4:1 wie Swasthi), 60 g Butter, 80 ml Sahne — bewusst unter Restaurant-Niveau, aber nicht „light\": das Gericht heißt Butter-Dal.*"
         },
         {
           "id": "dazu-macht-das-hauptgericht-komplett",
@@ -3085,42 +3090,6 @@
       ]
     },
     {
-      "type": "markdown",
-      "title": "*Grundrezept Schritt 1–4 unverändert (Ma",
-      "level": "bold",
-      "markdown": "*Grundrezept Schritt 1–4 unverändert (Masoor, oder 150 g Masoor + 150 g Toor nach Dassana). Zusätzlich: 400 g frischer Blattspinat, 2 cm Ingwer in Julienne.*"
-    },
-    {
-      "type": "markdown",
-      "title": "*Ersetzt Schritt 1 komplett; Masala und ",
-      "level": "bold",
-      "markdown": "*Ersetzt Schritt 1 komplett; Masala und Tadka angepasst. 300 g Chana Dal, 400 g Kürbiswürfel, Senfsamen, Curryblätter optional.*"
-    },
-    {
-      "type": "markdown",
-      "title": "*Anderes Profil: kein Knoblauch, keine T",
-      "level": "bold",
-      "markdown": "*Anderes Profil: kein Knoblauch, keine Tomate, keine Zwiebel-Masala — stattdessen Kokospaste und ein Curryblatt-Senf-Tadka. 300 g gelbe Moong (Fallback Masoor), 100 g frische Kokosnuss oder 200 ml Kokosmilch, 4–5 Schalotten.*"
-    },
-    {
-      "type": "markdown",
-      "title": "> **Dazu** passt statt Kachumber ein **G",
-      "level": "bold",
-      "markdown": "> **Dazu** passt statt Kachumber ein **Gurken-Joghurt** (Raita) besser, Roti oder — nach der Schwangerschaft — Reis."
-    },
-    {
-      "type": "markdown",
-      "title": "*Ersetzt das Grundrezept komplett. 250 g",
-      "level": "bold",
-      "markdown": "*Ersetzt das Grundrezept komplett. 250 g Urad ganz + 60 g Kidneybohnen (\\~4:1 wie Swasthi), 60 g Butter, 80 ml Sahne — bewusst unter Restaurant-Niveau, aber nicht „light\": das Gericht heißt Butter-Dal.*"
-    },
-    {
-      "type": "markdown",
-      "title": "> Portion **kleiner als beim Grundrezept",
-      "level": "bold",
-      "markdown": "> Portion **kleiner als beim Grundrezept** (\\~220–250 g) — Butter und Sahne machen es energiedicht. Koriander darüber, Zwiebelringe, Roti."
-    },
-    {
       "type": "schedule",
       "title": "Zeitplan Grundrezept (\\~50 Min.)",
       "schedule": {
@@ -3253,8 +3222,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:04:24Z",
-    "sourceHash": "72b4adc93c763edc",
+    "generatedAt": "2026-10-12T15:09:48Z",
+    "sourceHash": "32fabd3caf6d396b",
     "select": {
       "variante": "grundrezept",
       "beilage": "kachumber"

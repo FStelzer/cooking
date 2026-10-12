@@ -1658,7 +1658,7 @@
                         "source": "ca. 3 Min.",
                         "estimated": true
                       },
-                      "text": "Sauce-Basis erwärmen, dann die Kinder-Portion abzweigen.",
+                      "text": "Sauce-Basis erwärmen, dann die Kinder-Portion abzweigen.\n\n> **JETZT KINDER-PORTION ABZWEIGEN:** Ca. 100ml der Sauce in ein separates Töpfchen geben. Mit Salz abschmecken, warmhalten. Diese Version ist alkoholfrei!",
                       "action": "Sauce-Basis erwärmen, dann die Kinder-Portion abzweigen.",
                       "ingredients": [],
                       "meta": "*nach Fond aufgießen · Herd*",
@@ -1999,15 +1999,6 @@
                     "product:kartoffelbaumkuchen"
                   ]
                 }
-              ]
-            },
-            {
-              "type": "markdown",
-              "title": "> **JETZT KINDER-PORTION ABZWEIGEN:** Ca",
-              "level": "bold",
-              "markdown": "> **JETZT KINDER-PORTION ABZWEIGEN:** Ca. 100ml der Sauce in ein separates Töpfchen geben. Mit Salz abschmecken, warmhalten. Diese Version ist alkoholfrei!",
-              "tags": [
-                "kind"
               ]
             },
             {
@@ -2486,7 +2477,7 @@
                         "source": "ca. 5 Min.",
                         "estimated": true
                       },
-                      "text": "Je eine Scheibe auf Teller legen. Birnen-Kompott daneben anrichten. Restliches Salzkaramell in Fäden darüber ziehen. Mit gehackten Pekannüssen (restliche 50g) bestreuen. Ein paar Kristalle Fleur de Sel direkt auf das Parfait geben — das Knuspern auf der Zunge zusammen mit dem kalten Eis ist eine Geschmacksexplosion!\n*Optional für extra Crunch: 2-3 Amarettini oder Spekulatius grob zerbröseln und darüber streuen.*",
+                      "text": "Je eine Scheibe auf Teller legen. Birnen-Kompott daneben anrichten. Restliches Salzkaramell in Fäden darüber ziehen. Mit gehackten Pekannüssen (restliche 50g) bestreuen. Ein paar Kristalle Fleur de Sel direkt auf das Parfait geben — das Knuspern auf der Zunge zusammen mit dem kalten Eis ist eine Geschmacksexplosion!\n\n*Optional für extra Crunch: 2-3 Amarettini oder Spekulatius grob zerbröseln und darüber streuen.*",
                       "action": "Je eine Scheibe auf Teller legen.",
                       "rescue": "Optional für extra Crunch: 2-3 Amarettini oder Spekulatius grob zerbröseln und darüber streuen.",
                       "ingredients": [],
@@ -2959,8 +2950,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:04:24Z",
-    "sourceHash": "9ea30d43bac8610f",
+    "generatedAt": "2026-10-12T15:09:48Z",
+    "sourceHash": "f91f40fe0de7308c",
     "quantities": [
       {
         "ingredient": "jakobsmuscheln",

@@ -157,9 +157,9 @@ Haltbar ca. 6 Monate. Zielgröße pro Mahlzeit: **60–75 ml Reduktion.**
 - Muldenvolumen einmal bestimmen: eine Mulde mit Wasser füllen und abwiegen
   (1 g ≈ 1 ml), Wert hier notieren: ___ ml.
 
-**Dosierung:** 60–75 ml Reduktion + 200–250 ml Wasser = ca. 250–300 ml kräftige
-Sauce für eine Mahlzeit (2 Erw. + 1 Kind). Mehr Wasser ergibt Brühen- statt
-Saucen-Stärke — lieber knapp anrühren und bei Bedarf verlängern.
+> **Dosierung:** 60–75 ml Reduktion + 200–250 ml Wasser = ca. 250–300 ml kräftige
+> Sauce für eine Mahlzeit (2 Erw. + 1 Kind). Mehr Wasser ergibt Brühen- statt
+> Saucen-Stärke — lieber knapp anrühren und bei Bedarf verlängern.
 
 ### Aus dem Vorrat: Sauce in 10 Minuten
 

@@ -1222,7 +1222,8 @@
                         "place": "fridge"
                       }
                     }
-                  ]
+                  ],
+                  "intro": "*Zutaten:*\n- 2-3 halbierte Schweinefüße (\\~2-2,5 kg)\n- 1,5-2 kg Schweinehalsknochen\n- optional 200-300 g Rückenspeck\n- 1 Gemüsezwiebel, geschält, halbiert\n- 1 Lauchstange, grob geschnitten\n- 1 Knoblauchknolle, quer halbiert\n- 5 cm Ingwer in Scheiben\n- 5-6 L Wasser (plus 2-3 L kochendes Nachfüllwasser über die Kochzeit)"
                 },
                 {
                   "id": "miso-tare-die-wuerzbasis",
@@ -1375,8 +1376,17 @@
                         "typical": "PT2M",
                         "source": "2 Min."
                       },
-                      "text": "1 TL Tare in 60 ml heißem Wasser auflösen und probieren — so schmeckt sie später verdünnt. Zu flach → 1 EL Aka Miso mehr. Zu salzig → 1 EL Shiro Miso mehr (Shiro ist milder). Abgedeckt in den Kühlschrank; sie wird über Nacht runder.",
+                      "text": "1 TL Tare in 60 ml heißem Wasser auflösen und probieren — so schmeckt sie später verdünnt. Zu flach → 1 EL Aka Miso mehr. Zu salzig → 1 EL Shiro Miso mehr (Shiro ist milder). Abgedeckt in den Kühlschrank; sie wird über Nacht runder.\n\n> **Dosierung:** 2,5 EL pro Erwachsenen-Schüssel, 1-1,5 EL pro Kinder-Schüssel (siehe Wok-Durchgänge). Nicht kochen — nur die 20 Sek. Anrösten im Wok, dann sofort Brühe drauf.",
                       "action": "1 TL Tare in 60 ml heißem Wasser auflösen und probieren — so schmeckt sie später verdünnt.",
+                      "timers": [
+                        {
+                          "label": "Tare abschmecken",
+                          "duration": {
+                            "typical": "PT20S"
+                          },
+                          "text": "20 Sek."
+                        }
+                      ],
                       "ingredients": [
                         {
                           "ref": "wasser",
@@ -1416,7 +1426,8 @@
                         "place": "fridge"
                       }
                     }
-                  ]
+                  ],
+                  "intro": "*Zutaten (für 6 Schüsseln, ergibt \\~300 g, Rest hält 2 Wochen im Kühlschrank):*\n- 5 EL (\\~90 g) Shiro Miso (hell)\n- 3 EL (\\~55 g) Aka Miso (dunkel)\n- 3 EL (45 ml) Sojasauce\n- 1 EL (15 ml) Reisessig + 1 EL (15 ml) Wasser *(ersetzen 2 EL Sake — die Tare wird nur 20 Sek. angeröstet, der Alkohol würde nicht verkochen)*\n- 2 EL (30 ml) Mirin\n- 1 EL (15 ml) geröstetes Sesamöl\n- 3 EL (\\~30 g) weiße Sesamsamen\n- 2 Knoblauchzehen, fein gerieben\n- 2 cm Ingwer, fein gerieben"
                 },
                 {
                   "id": "niku-miso-soboro-das-fleisch-topping",
@@ -1672,7 +1683,8 @@
                         "place": "fridge"
                       }
                     }
-                  ]
+                  ],
+                  "intro": "*Zutaten:*\n- 600 g Schweinehack\n- 1 EL (15 ml) geröstetes Sesamöl\n- 1 EL geriebener Knoblauch + Ingwer (je \\~½ EL)\n- **Glasur (vormischen):** 2 EL (\\~36 g) Shiro Miso, 1 EL (15 ml) Sojasauce, 1 EL (15 ml) Wasser, 1 EL Zucker"
                 },
                 {
                   "id": "ajitsuke-tamago-marinierte-eier",
@@ -1893,7 +1905,8 @@
                         "place": "fridge"
                       }
                     }
-                  ]
+                  ],
+                  "intro": "*Zutaten:*\n- 6 Eier (M), aus dem Kühlschrank\n- **Blitz-Marinade:** 100 ml Sojasauce, 100 ml Wasser, 30 ml Mirin, 1 EL Zucker"
                 },
                 {
                   "id": "gemuese-toppings",
@@ -2231,7 +2244,7 @@
                         "source": "ca. 15 Min.",
                         "estimated": true
                       },
-                      "text": "Sapporo-Wok-Choreografie (3 Durchgänge à 2 Schüsseln). **Gefäß:** Die größte Edelstahlpfanne mit hohem Rand (28-30 cm) oder der 6L-Topf — ein echter Wok wäre ideal, geht aber auch so. Der Topf mit der kochenden Brühe steht direkt daneben, die Kelle (\\~150 ml) liegt bereit. Alles griffbereit, bevor der erste Durchgang startet:\n- 6 Schüsseln mit heißem Wasser vorgewärmt, Wasser erst unmittelbar vor dem Füllen ausschütten\n- Brühe **kochend**, Nudelwasser **sprudelnd**\n- Tare, Wok-Fett, Aromaten (3 Portionen), Zwiebelwürfel (3 × 60 g), Sprossen (3 × 100 g), Niku-Miso kalt, Eier halbiert, Mais geröstet, Frühlingszwiebeln, Butterwürfel, Rayu, Doubanjiang\n- Timer, Küchenschere (Kinder), Schneebesen",
+                      "text": "Sapporo-Wok-Choreografie (3 Durchgänge à 2 Schüsseln). **Gefäß:** Die größte Edelstahlpfanne mit hohem Rand (28-30 cm) oder der 6L-Topf — ein echter Wok wäre ideal, geht aber auch so. Der Topf mit der kochenden Brühe steht direkt daneben, die Kelle (\\~150 ml) liegt bereit.\n\nAlles griffbereit, bevor der erste Durchgang startet:\n- 6 Schüsseln mit heißem Wasser vorgewärmt, Wasser erst unmittelbar vor dem Füllen ausschütten\n- Brühe **kochend**, Nudelwasser **sprudelnd**\n- Tare, Wok-Fett, Aromaten (3 Portionen), Zwiebelwürfel (3 × 60 g), Sprossen (3 × 100 g), Niku-Miso kalt, Eier halbiert, Mais geröstet, Frühlingszwiebeln, Butterwürfel, Rayu, Doubanjiang\n- Timer, Küchenschere (Kinder), Schneebesen",
                       "action": "Sapporo-Wok-Choreografie (3 Durchgänge à 2 Schüsseln).",
                       "ingredients": [],
                       "meta": "*nach Lagern, Eier schneiden, Sprossen, Zwiebel für den Wok, Frühlingszwiebeln, Mais, Butter, Wok-Aromaten, Tare abschmecken, Wok-Fett sichern, Fett abheben*",
@@ -2260,8 +2273,8 @@
                         "source": "ca. 12 Min.",
                         "estimated": true
                       },
-                      "text": "3 × ein Durchgang (\\~3,5 Min, für 2 Erwachsenen-Schüsseln):\n| Zeit | Nudel-Topf | Wok-Pfanne |\n|---|---|---|\n| 0:00 | 2 × 150 g Nudeln ins sprudelnde Wasser, 10 Sek. rühren, Timer | 1,5 EL Wok-Fett auf **höchster Stufe** schmelzen, bis es leicht raucht |\n| 0:30 | | 1 TL Knoblauch/Ingwer 10 Sek., dann 60 g Zwiebelwürfel 30 Sek. |\n| 1:00 | | 100 g Sprossen dazu, 1-2 Min scharf braten — sie sollen an den Rändern Farbe nehmen, nicht dämpfen |\n| 2:00 | | 4-5 EL Niku-Miso (kalt) dazu, 20 Sek. durchschwenken |\n| 2:20 | | **5 EL Tare** (+ optional 1 TL Doubanjiang) in die Mitte, **20 Sek.** anrösten, bis das Miso duftet — keine Sekunde länger, es setzt sofort an |\n| 2:40 | | **900 ml kochende Brühe** (6 Kellen) drauf, aufkochen, 30-60 Sek. sprudeln, dabei den Boden mit dem Wender lösen |\n| \\~3:00 | Nudeln abgießen, kräftig ausschütteln, in die 2 Schüsseln, falten | |\n| 3:15 | | Wok-Inhalt gleichmäßig über die Nudeln verteilen (Kelle: erst Brühe, dann die Einlage obendrauf) |\n| 3:30 | Toppings: 2 Ei-Hälften, 1 EL Mais, Frühlingszwiebeln, **1 Butterwürfel** auf den Mais; Erwachsene: Rayu am Tisch | Pfanne mit 50 ml Brühe ablöschen, Bodensatz lösen, auf die 2 Schüsseln verteilen; bei dunklen Stellen kurz auswischen |\n*Reihenfolge der Durchgänge:* 1. **Kinder** (2 Schüsseln): 2 × 75-100 g Nudeln, nur **2-3 EL Tare gesamt**, 600 ml Brühe, 60 g Sprossen, 3 EL Niku-Miso, kein Doubanjiang. Nudeln mit der Küchenschere in der Schüssel kürzen, 1 Eiswürfel in die Brühe. Die Kinder-Schüsseln müssen ohnehin 5 Min abkühlen — deshalb zuerst. 2. **GDM-Schüssel + 1 Erwachsener:** 75 g + 150 g Nudeln, 5 EL Tare, 900 ml Brühe. GDM-Schüssel: **4-5 EL Niku-Miso**, die blanchierte Sprossen-Extraportion obendrauf, **ganzes festes Ei**, Mais weglassen oder 1 EL, Butter normal (Fett + Protein dämpfen die Blutzuckerspitze). Am Tisch: Toppings und Brühe zuerst, Nudeln zuletzt. Die konkrete Nudelmenge ist eine Schätzung — das Messgerät und die Ernährungsberatung entscheiden, nicht das Rezept. 3. **Die übrigen 2 Erwachsenen:** Standard-Durchgang wie in der Tabelle.",
-                      "action": "3 × ein Durchgang (\\~3,5 Min, für 2 Erwachsenen-Schüsseln):\n| Zeit | Nudel-Topf | Wok-Pfanne |\n|---|---|---|\n| 0:00 | 2 × 150 g Nudeln ins sprudelnde Wasser, 10 Sek. rühren, Timer | 1,5 EL Wok-Fett auf **höchster Stufe** schmelzen, bis es leicht raucht |\n| 0:30 | | 1 TL Knoblauch/Ingwer 10 Sek., dann 60 g Zwiebelwürfel 30 Sek. |\n| 1:00 | | 100 g Sprossen dazu, 1-2 Min scharf braten — sie sollen an den Rändern Farbe nehmen, nicht dämpfen |\n| 2:00 | | 4-5 EL Niku-Miso (kalt) dazu, 20 Sek. durchschwenken |\n| 2:20 | | **5 EL Tare** (+ optional 1 TL Doubanjiang) in die Mitte, **20 Sek.** anrösten, bis das Miso duftet — keine Sekunde länger, es setzt sofort an |\n| 2:40 | | **900 ml kochende Brühe** (6 Kellen) drauf, aufkochen, 30-60 Sek. sprudeln, dabei den Boden mit dem Wender lösen |\n| \\~3:00 | Nudeln abgießen, kräftig ausschütteln, in die 2 Schüsseln, falten | |\n| 3:15 | | Wok-Inhalt gleichmäßig über die Nudeln verteilen (Kelle: erst Brühe, dann die Einlage obendrauf) |\n| 3:30 | Toppings: 2 Ei-Hälften, 1 EL Mais, Frühlingszwiebeln, **1 Butterwürfel** auf den Mais; Erwachsene: Rayu am Tisch | Pfanne mit 50 ml Brühe ablöschen, Bodensatz lösen, auf die 2 Schüsseln verteilen; bei dunklen Stellen kurz auswischen |\n*Reihenfolge der Durchgänge:* 1.",
+                      "text": "3 × ein Durchgang (\\~3,5 Min, für 2 Erwachsenen-Schüsseln):\n\n| Zeit | Nudel-Topf | Wok-Pfanne |\n|---|---|---|\n| 0:00 | 2 × 150 g Nudeln ins sprudelnde Wasser, 10 Sek. rühren, Timer | 1,5 EL Wok-Fett auf **höchster Stufe** schmelzen, bis es leicht raucht |\n| 0:30 | | 1 TL Knoblauch/Ingwer 10 Sek., dann 60 g Zwiebelwürfel 30 Sek. |\n| 1:00 | | 100 g Sprossen dazu, 1-2 Min scharf braten — sie sollen an den Rändern Farbe nehmen, nicht dämpfen |\n| 2:00 | | 4-5 EL Niku-Miso (kalt) dazu, 20 Sek. durchschwenken |\n| 2:20 | | **5 EL Tare** (+ optional 1 TL Doubanjiang) in die Mitte, **20 Sek.** anrösten, bis das Miso duftet — keine Sekunde länger, es setzt sofort an |\n| 2:40 | | **900 ml kochende Brühe** (6 Kellen) drauf, aufkochen, 30-60 Sek. sprudeln, dabei den Boden mit dem Wender lösen |\n| \\~3:00 | Nudeln abgießen, kräftig ausschütteln, in die 2 Schüsseln, falten | |\n| 3:15 | | Wok-Inhalt gleichmäßig über die Nudeln verteilen (Kelle: erst Brühe, dann die Einlage obendrauf) |\n| 3:30 | Toppings: 2 Ei-Hälften, 1 EL Mais, Frühlingszwiebeln, **1 Butterwürfel** auf den Mais; Erwachsene: Rayu am Tisch | Pfanne mit 50 ml Brühe ablöschen, Bodensatz lösen, auf die 2 Schüsseln verteilen; bei dunklen Stellen kurz auswischen |\n\n*Reihenfolge der Durchgänge:* 1. **Kinder** (2 Schüsseln): 2 × 75-100 g Nudeln, nur **2-3 EL Tare gesamt**, 600 ml Brühe, 60 g Sprossen, 3 EL Niku-Miso, kein Doubanjiang. Nudeln mit der Küchenschere in der Schüssel kürzen, 1 Eiswürfel in die Brühe. Die Kinder-Schüsseln müssen ohnehin 5 Min abkühlen — deshalb zuerst. 2. **GDM-Schüssel + 1 Erwachsener:** 75 g + 150 g Nudeln, 5 EL Tare, 900 ml Brühe. GDM-Schüssel: **4-5 EL Niku-Miso**, die blanchierte Sprossen-Extraportion obendrauf, **ganzes festes Ei**, Mais weglassen oder 1 EL, Butter normal (Fett + Protein dämpfen die Blutzuckerspitze). Am Tisch: Toppings und Brühe zuerst, Nudeln zuletzt. Die konkrete Nudelmenge ist eine Schätzung — das Messgerät und die Ernährungsberatung entscheiden, nicht das Rezept. 3. **Die übrigen 2 Erwachsenen:** Standard-Durchgang wie in der Tabelle.\n\n> **Ehrlicher Hinweis zum Timing:** Die ersten Schüsseln stehen 6-8 Min, bis die letzten fertig sind. Für die Kinder ist das gewollt, für die Erwachsenen bedeutet es: gestaffelt essen, wie in einem Ramen-Laden — oder eine zweite Person übernimmt den Nudel-Topf, dann sind es 2,5 Min pro Durchgang. Nudeln in wartender Brühe quellen; deshalb Durchgang 2 und 3 nicht künstlich verzögern und nie Schüsseln „vorfüllen\".\n\n> **Fallback — Schüssel-Methode (wenn der Wok-Sprint nicht drin ist):** 2,5 EL Tare (Kinder 1 EL) in die vorgewärmte Schüssel, 1 kleine Kelle heiße Brühe drauf, mit dem Schneebesen klumpenfrei rühren, mit \\~420 ml **kochender** Brühe auffüllen, Nudeln rein, dann 2-3 EL heißes Niku-Miso, blanchierte Sprossen (alle 400 g blanchieren), Mais, Ei, Frühlingszwiebeln, Butter. Weniger Röstaroma, aber alle 6 Schüsseln in 4 Minuten.",
+                      "action": "3 × ein Durchgang (\\~3,5 Min, für 2 Erwachsenen-Schüsseln):",
                       "limits": [
                         "höchster Stufe",
                         "5 EL Tare",
@@ -2274,7 +2287,8 @@
                       ],
                       "cues": [
                         "bis es leicht raucht |\n| 0:30 | | 1 TL Knoblauch/Ingwer 10 Sek",
-                        "bis das Miso duftet"
+                        "bis das Miso duftet",
+                        "bis die letzten fertig sind"
                       ],
                       "timers": [
                         {
@@ -2342,6 +2356,28 @@
                             "typical": "PT5M"
                           },
                           "text": "5 Min"
+                        },
+                        {
+                          "label": "Wok-Durchgänge",
+                          "duration": {
+                            "min": "PT6M",
+                            "max": "PT8M"
+                          },
+                          "text": "6-8 Min"
+                        },
+                        {
+                          "label": "Wok-Durchgänge",
+                          "duration": {
+                            "typical": "PT2M"
+                          },
+                          "text": "2,5 Min"
+                        },
+                        {
+                          "label": "Wok-Durchgänge",
+                          "duration": {
+                            "typical": "PT4M"
+                          },
+                          "text": "4 Min"
                         }
                       ],
                       "ingredients": [
@@ -2465,48 +2501,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": "markdown",
-              "title": "*Zutaten:*",
-              "level": "bold",
-              "markdown": "*Zutaten:*\n- 2-3 halbierte Schweinefüße (\\~2-2,5 kg)\n- 1,5-2 kg Schweinehalsknochen\n- optional 200-300 g Rückenspeck\n- 1 Gemüsezwiebel, geschält, halbiert\n- 1 Lauchstange, grob geschnitten\n- 1 Knoblauchknolle, quer halbiert\n- 5 cm Ingwer in Scheiben\n- 5-6 L Wasser (plus 2-3 L kochendes Nachfüllwasser über die Kochzeit)"
-            },
-            {
-              "type": "markdown",
-              "title": "*Zutaten (für 6 Schüsseln, ergibt \\~300 ",
-              "level": "bold",
-              "markdown": "*Zutaten (für 6 Schüsseln, ergibt \\~300 g, Rest hält 2 Wochen im Kühlschrank):*\n- 5 EL (\\~90 g) Shiro Miso (hell)\n- 3 EL (\\~55 g) Aka Miso (dunkel)\n- 3 EL (45 ml) Sojasauce\n- 1 EL (15 ml) Reisessig + 1 EL (15 ml) Wasser *(ersetzen 2 EL Sake — die Tare wird nur 20 Sek. angeröstet, der Alkohol würde nicht verkochen)*\n- 2 EL (30 ml) Mirin\n- 1 EL (15 ml) geröstetes Sesamöl\n- 3 EL (\\~30 g) weiße Sesamsamen\n- 2 Knoblauchzehen, fein gerieben\n- 2 cm Ingwer, fein gerieben"
-            },
-            {
-              "type": "markdown",
-              "title": "Dosierung",
-              "level": "bold",
-              "markdown": "**Dosierung:** 2,5 EL pro Erwachsenen-Schüssel, 1-1,5 EL pro Kinder-Schüssel (siehe Wok-Durchgänge). Nicht kochen — nur die 20 Sek. Anrösten im Wok, dann sofort Brühe drauf."
-            },
-            {
-              "type": "markdown",
-              "title": "*Zutaten:*",
-              "level": "bold",
-              "markdown": "*Zutaten:*\n- 600 g Schweinehack\n- 1 EL (15 ml) geröstetes Sesamöl\n- 1 EL geriebener Knoblauch + Ingwer (je \\~½ EL)\n- **Glasur (vormischen):** 2 EL (\\~36 g) Shiro Miso, 1 EL (15 ml) Sojasauce, 1 EL (15 ml) Wasser, 1 EL Zucker"
-            },
-            {
-              "type": "markdown",
-              "title": "*Zutaten:*",
-              "level": "bold",
-              "markdown": "*Zutaten:*\n- 6 Eier (M), aus dem Kühlschrank\n- **Blitz-Marinade:** 100 ml Sojasauce, 100 ml Wasser, 30 ml Mirin, 1 EL Zucker"
-            },
-            {
-              "type": "markdown",
-              "title": "Ehrlicher Hinweis zum Timing",
-              "level": "bold",
-              "markdown": "**Ehrlicher Hinweis zum Timing:** Die ersten Schüsseln stehen 6-8 Min, bis die letzten fertig sind. Für die Kinder ist das gewollt, für die Erwachsenen bedeutet es: gestaffelt essen, wie in einem Ramen-Laden — oder eine zweite Person übernimmt den Nudel-Topf, dann sind es 2,5 Min pro Durchgang. Nudeln in wartender Brühe quellen; deshalb Durchgang 2 und 3 nicht künstlich verzögern und nie Schüsseln „vorfüllen\"."
-            },
-            {
-              "type": "markdown",
-              "title": "Fallback — Schüssel-Methode (wenn der Wok-Sprint nicht drin ist)",
-              "level": "bold",
-              "markdown": "**Fallback — Schüssel-Methode (wenn der Wok-Sprint nicht drin ist):** 2,5 EL Tare (Kinder 1 EL) in die vorgewärmte Schüssel, 1 kleine Kelle heiße Brühe drauf, mit dem Schneebesen klumpenfrei rühren, mit \\~420 ml **kochender** Brühe auffüllen, Nudeln rein, dann 2-3 EL heißes Niku-Miso, blanchierte Sprossen (alle 400 g blanchieren), Mais, Ei, Frühlingszwiebeln, Butter. Weniger Röstaroma, aber alle 6 Schüsseln in 4 Minuten."
             }
           ],
           "intro": "*Vortag \\~1,5 h, Kochtag \\~2,5 h (Plan A); \\~3,5 h an einem Tag (Plan B). Equipment: 14L-Topf, 6L-Topf, große Edelstahlpfanne (Wok-Ersatz), Stabmixer, feines Sieb, Mörser, Fleischthermometer, Wasserkocher.*"
@@ -3587,8 +3581,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:04:24Z",
-    "sourceHash": "20af892aba32170c",
+    "generatedAt": "2026-10-12T15:09:47Z",
+    "sourceHash": "87c6033e76ea5ae8",
     "select": {
       "ablauf": "vortag"
     },

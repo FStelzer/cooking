@@ -672,10 +672,20 @@
                 "typical": "PT40M",
                 "source": "40 Min."
               },
-              "text": "KRITISCH: Sanft köcheln lassen, **ohne Deckel**. Regelmäßig grauen Schaum abschöpfen.",
+              "text": "KRITISCH: Sanft köcheln lassen, **ohne Deckel**. Regelmäßig grauen Schaum abschöpfen.\n\n> ⚠️ **Nicht länger als 45 Min köcheln**, sonst werden die Karkassen bitter.",
               "action": "KRITISCH: Sanft köcheln lassen, **ohne Deckel**.",
               "limits": [
-                "ohne Deckel"
+                "ohne Deckel",
+                "Nicht länger als 45 Min köcheln"
+              ],
+              "timers": [
+                {
+                  "label": "Köcheln",
+                  "duration": {
+                    "typical": "PT45M"
+                  },
+                  "text": "45 Min"
+                }
               ],
               "ingredients": [],
               "meta": "*Herd*",
@@ -685,16 +695,7 @@
                   "units": 1
                 }
               ],
-              "attention": "attended",
-              "timers": [
-                {
-                  "label": "Köcheln",
-                  "duration": {
-                    "typical": "PT40M"
-                  },
-                  "text": "40 Min."
-                }
-              ]
+              "attention": "attended"
             },
             {
               "id": "passieren",
@@ -841,8 +842,8 @@
                 "source": "ca. 25 Min.",
                 "estimated": true
               },
-              "text": "Klassisch, mit Eigelb: 1. 0,5 g Safran in 1 EL warmem Wasser ziehen lassen (10 Min). 2. 4 Knoblauchzehen mit ½ TL Salz im Mörser zu feiner Paste verarbeiten. 3. In einer Schüssel: 1 Eigelb, Knoblauchpaste und Safranwasser verrühren.    150 ml Olivenöl **tropfenweise** einarbeiten wie bei Mayonnaise — erst    langsam, dann im dünnen Strahl, bis eine dichte, rostfarbene Creme steht. 4. Mit 1 EL Zitronensaft, Cayenne und Salz abschmecken. Abgedeckt kalt stellen    (hält 1–2 Tage — rohes Eigelb, nicht länger). 5. *Mehr Stand gewünscht (z. B. für Crouton-Auflage): 1 kleine weichgekochte,    gut ausgedämpfte Kartoffel durch die Presse dazu — macht sie stabiler und    milder. Bricht die Emulsion: 1 TL warmes Wasser in sauberer Schüssel, die    gebrochene Masse löffelweise wieder einschlagen.*",
-              "action": "Klassisch, mit Eigelb: 1.",
+              "text": "Klassisch, mit Eigelb:\n\n1. 0,5 g Safran in 1 EL warmem Wasser ziehen lassen (10 Min). 2. 4 Knoblauchzehen mit ½ TL Salz im Mörser zu feiner Paste verarbeiten. 3. In einer Schüssel: 1 Eigelb, Knoblauchpaste und Safranwasser verrühren.    150 ml Olivenöl **tropfenweise** einarbeiten wie bei Mayonnaise — erst    langsam, dann im dünnen Strahl, bis eine dichte, rostfarbene Creme steht. 4. Mit 1 EL Zitronensaft, Cayenne und Salz abschmecken. Abgedeckt kalt stellen    (hält 1–2 Tage — rohes Eigelb, nicht länger). 5. *Mehr Stand gewünscht (z. B. für Crouton-Auflage): 1 kleine weichgekochte,    gut ausgedämpfte Kartoffel durch die Presse dazu — macht sie stabiler und    milder. Bricht die Emulsion: 1 TL warmes Wasser in sauberer Schüssel, die    gebrochene Masse löffelweise wieder einschlagen.*",
+              "action": "Klassisch, mit Eigelb:",
               "why": "Mehr Stand gewünscht (z. B. für Crouton-Auflage): 1 kleine weichgekochte,    gut ausgedämpfte Kartoffel durch die Presse dazu — macht sie stabiler und    milder. Bricht die Emulsion: 1 TL warmes Wasser in sauberer Schüssel, die    gebrochene Masse löffelweise wieder einschlagen.",
               "timers": [
                 {
@@ -999,8 +1000,11 @@
                 "typical": "PT10M",
                 "source": "10 Min."
               },
-              "text": "Fond aus dem Kühlschrank in breiten Topf, langsam erhitzen.",
+              "text": "Fond aus dem Kühlschrank in breiten Topf, langsam erhitzen.\n\n> ⚠️ Nur **knapp unter dem Sieden** halten, nicht sprudelnd kochen — sonst\n> wird die Brühe trüb und der Fisch zerfällt.",
               "action": "Fond aus dem Kühlschrank in breiten Topf, langsam erhitzen.",
+              "limits": [
+                "knapp unter dem Sieden"
+              ],
               "ingredients": [],
               "meta": "*nach Durchziehen · Herd*",
               "claims": [
@@ -1009,7 +1013,16 @@
                   "units": 1
                 }
               ],
-              "attention": "active",
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Brühe erhitzen",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
               "after": [
                 "step:durchziehen"
               ]
@@ -1023,8 +1036,8 @@
                 "typical": "PT12M",
                 "source": "12 Min."
               },
-              "text": "Gestaffelt garen:\n| Schritt | Zeit | Was |\n|---|---|---|\n| Erst | 6 Min | Heilbutt/Seeteufel (festerer Fisch) |\n| Dann | 3 Min | Wolfsbarsch/Petersfisch (zarter) |\n| Zuletzt | 3 Min | Gambas + Muscheln | Geschlossen gebliebene Muscheln wegwerfen.",
-              "action": "Gestaffelt garen:\n| Schritt | Zeit | Was |\n|---|---|---|\n| Erst | 6 Min | Heilbutt/Seeteufel (festerer Fisch) |\n| Dann | 3 Min | Wolfsbarsch/Petersfisch (zarter) |\n| Zuletzt | 3 Min | Gambas + Muscheln | Geschlossen gebliebene Muscheln wegwerfen.",
+              "text": "Gestaffelt garen:\n\n| Schritt | Zeit | Was |\n|---|---|---|\n| Erst | 6 Min | Heilbutt/Seeteufel (festerer Fisch) |\n| Dann | 3 Min | Wolfsbarsch/Petersfisch (zarter) |\n| Zuletzt | 3 Min | Gambas + Muscheln |\n\nGeschlossen gebliebene Muscheln wegwerfen.",
+              "action": "Gestaffelt garen:",
               "timers": [
                 {
                   "label": "Fisch garen",
@@ -1300,33 +1313,10 @@
               "id": "fenchel-orange-salat",
               "name": "Fenchel-Orange-Salat"
             }
-          ]
+          ],
+          "intro": "> Klassischer sizilianischer *Insalata di Finocchi e Arance*. Die Aromen\n> spiegeln die Brühe — verbindet Vorspeise und Hauptgang harmonisch.\n\n**Timing:** Kochtag, während die Brühe langsam erhitzt (15 Min aktive Zeit,\ndann 5–10 Min ziehen lassen)."
         }
       ]
-    },
-    {
-      "type": "markdown",
-      "title": "> ⚠️ **Nicht länger als 45 Min köcheln**",
-      "level": "bold",
-      "markdown": "> ⚠️ **Nicht länger als 45 Min köcheln**, sonst werden die Karkassen bitter."
-    },
-    {
-      "type": "markdown",
-      "title": "> ⚠️ Nur **knapp unter dem Sieden** halt",
-      "level": "bold",
-      "markdown": "> ⚠️ Nur **knapp unter dem Sieden** halten, nicht sprudelnd kochen — sonst\n> wird die Brühe trüb und der Fisch zerfällt."
-    },
-    {
-      "type": "markdown",
-      "title": "> Klassischer sizilianischer *Insalata d",
-      "level": "bold",
-      "markdown": "> Klassischer sizilianischer *Insalata di Finocchi e Arance*. Die Aromen\n> spiegeln die Brühe — verbindet Vorspeise und Hauptgang harmonisch."
-    },
-    {
-      "type": "markdown",
-      "title": "Timing",
-      "level": "bold",
-      "markdown": "**Timing:** Kochtag, während die Brühe langsam erhitzt (15 Min aktive Zeit,\ndann 5–10 Min ziehen lassen)."
     },
     {
       "type": "schedule",
@@ -1429,8 +1419,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:04:24Z",
-    "sourceHash": "147d5a5493b43669",
+    "generatedAt": "2026-10-12T15:09:47Z",
+    "sourceHash": "523c8042f7f583d9",
     "quantities": [
       {
         "ingredient": "fischkarkassen",

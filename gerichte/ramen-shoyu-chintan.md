@@ -121,7 +121,7 @@ Für Chiyu: Nach \~3h \~100ml klares Hühnerfett abschöpfen (Bedarf fürs Chiyu
 *nach Simmern*
 Durch feines Sieb + Mulltuch abseihen. Ergebnis: \~1,8-2L klare Brühe.
 
-**Wichtig:** Nicht salzen!
+> **Wichtig:** Nicht salzen!
 
 **Shoyu-Tare (am Tag, hält mehrere Tage, Kühlschrank):**
 
@@ -141,7 +141,7 @@ Durch feines Sieb + Mulltuch abseihen. Ergebnis: \~1,8-2L klare Brühe.
 **9. Tare ziehen lassen (10 Min., passiv)**
 Hitze aus, 5g Katsuobushi rein, 10 Min ziehen. Abseihen.
 
-**Dosierung:** \~3 EL Tare auf 400ml Brühe. Für Kleinkind 1,5 EL.
+> **Dosierung:** \~3 EL Tare auf 400ml Brühe. Für Kleinkind 1,5 EL.
 
 **Chiyu — goldenes Aroma-Öl (am Tag):**
 
@@ -154,7 +154,7 @@ Hitze aus, 5g Katsuobushi rein, 10 Min ziehen. Abseihen.
 *nach Fett abschöpfen · Herd*
 \~100ml Hühnerfett, 4-5 fein gehackte Knoblauchzehen und die Frühlingszwiebel-Enden in kleinen Topf, mittlere Hitze, 10-15 Min bis goldbraun (NICHT schwarz!). Abseihen.
 
-**Dosierung:** 1 TL pro Schüssel.
+> **Dosierung:** 1 TL pro Schüssel.
 
 **Chashu (am Tag):**
 
@@ -181,7 +181,7 @@ Optional rollen mit Küchengarn, oder am Stück lassen.
 *Herd*
 Marinade (100ml Sojasauce, 50ml Sake, 50ml Mirin, 300ml Wasser, 3 EL Zucker, 4 Knoblauchzehen, 4cm Ingwer, 1 Frühlingszwiebel) in kleinen Topf (gerade passend), aufkochen, Fleisch rein, Hitze runter, **Deckel drauf**, 1,5-2h sanft simmern. Alle 30 Min wenden.
 
-**Wichtig:** Fleisch muss **nicht** komplett bedeckt sein — 1/2 bis 2/3 reicht. Bei zu wenig: Backpapier-Cartouche direkt aufs Fleisch legen.
+> **Wichtig:** Fleisch muss **nicht** komplett bedeckt sein — 1/2 bis 2/3 reicht. Bei zu wenig: Backpapier-Cartouche direkt aufs Fleisch legen.
 
 **14. Abkühlen (ca. 30 Min., passiv)**
 In Marinade abkühlen lassen.

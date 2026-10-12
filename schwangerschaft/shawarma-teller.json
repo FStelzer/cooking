@@ -483,11 +483,40 @@
                 "typical": "PT15M",
                 "source": "15 Min."
               },
-              "text": "Moderate Menge: **1 Knolle**, nicht mehr. Toum ist eine reine Knoblauch-Öl-Zitronen-Emulsion **ohne Ei** — in der Schwangerschaft unkritisch.\n- 1 Knolle Knoblauch, geschält, Keime entfernt (\\~50–60 g Zehen)\n- 1 TL Salz\n- 3 EL Zitronensaft\n- 250 ml neutrales Öl (kein Olivenöl — wird bitter und bricht leichter)\n- 1 EL eiskaltes Wasser",
+              "text": "Moderate Menge: **1 Knolle**, nicht mehr. Toum ist eine reine Knoblauch-Öl-Zitronen-Emulsion **ohne Ei** — in der Schwangerschaft unkritisch.\n\n- 1 Knolle Knoblauch, geschält, Keime entfernt (\\~50–60 g Zehen)\n- 1 TL Salz\n- 3 EL Zitronensaft\n- 250 ml neutrales Öl (kein Olivenöl — wird bitter und bricht leichter)\n- 1 EL eiskaltes Wasser\n\n> **Technik (Stabmixer, gegen das Brechen):** Alles zusammen in ein **hohes, schmales Gefäß**, das kaum breiter ist als der Mixfuß. Stabmixer ganz auf den Boden aufsetzen, auf höchster Stufe starten und **30–60 Sek. unten lassen, ohne zu heben** — unten bildet sich die weiße Emulsion. Erst dann langsam (über \\~30 Sek.) nach oben ziehen, bis alles weiß und fluffig ist. Häufigster Fehler ist zu frühes Anheben. Falls es doch bricht: 1 EL der gebrochenen Masse mit 1 EL Eiswasser im sauberen Gefäß neu starten, Rest langsam wieder einarbeiten.\n\n> **Schärfe-Optionen:** Toum wird über Nacht im Kühlschrank runder und milder — auch deshalb am Vortag machen. Wer es von vornherein sanfter will: Zehen 60 Sek. in kochendes Wasser, eiskalt abschrecken, **gründlich trocken tupfen** (Wasser stört die Emulsion), dann wie beschrieben.",
               "action": "Moderate Menge: **1 Knolle**, nicht mehr.",
               "limits": [
                 "1 Knolle",
-                "ohne Ei"
+                "ohne Ei",
+                "hohes, schmales Gefäß",
+                "30–60 Sek. unten lassen, ohne zu heben",
+                "gründlich trocken tupfen"
+              ],
+              "rescue": "Falls es doch bricht: 1 EL der gebrochenen Masse mit 1 EL Eiswasser im sauberen Gefäß neu starten, Rest langsam wieder einarbeiten.",
+              "timers": [
+                {
+                  "label": "Toum",
+                  "duration": {
+                    "min": "PT30S",
+                    "max": "PT60S"
+                  },
+                  "text": "30–60 Sek."
+                },
+                {
+                  "label": "Toum",
+                  "duration": {
+                    "typical": "PT30S",
+                    "estimated": true
+                  },
+                  "text": "\\~30 Sek."
+                },
+                {
+                  "label": "Toum",
+                  "duration": {
+                    "typical": "PT60S"
+                  },
+                  "text": "60 Sek."
+                }
               ],
               "ingredients": [
                 {
@@ -561,12 +590,63 @@
                 "typical": "PT10M",
                 "source": "10 Min."
               },
-              "text": "Kaufen oder ansetzen — **erste Wahl: kaufen**, falls der orientalische Laden sie führt. Sonst:",
+              "text": "Kaufen oder ansetzen — **erste Wahl: kaufen**, falls der orientalische Laden sie führt. Sonst selbst ansetzen: 150 g rote Chilis entstielen, grob hacken, mit 1 TL Salz im schmalen Gefäß per Stabmixer zur groben Paste pulsen (nicht fein pürieren). 1 EL Essig + 1 EL Zitronensaft unterrühren. In ein sauberes Glas, Oberfläche mit 1 EL Olivenöl bedecken, 2–3 Tage bei Raumtemperatur anziehen lassen, dann kühlen. Hält Wochen.",
               "action": "Kaufen oder ansetzen — **erste Wahl: kaufen**, falls der orientalische Laden sie führt.",
               "limits": [
                 "erste Wahl: kaufen"
               ],
-              "ingredients": [],
+              "timers": [
+                {
+                  "label": "Shatta",
+                  "duration": {
+                    "min": "P2D",
+                    "max": "P3D"
+                  },
+                  "text": "2–3 Tage"
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "chilis",
+                  "amount": {
+                    "text": "150 g rote Chilis",
+                    "value": 150.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "weissweinessig",
+                  "amount": {
+                    "text": "1 EL Essig",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "1 EL Zitronensaft",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "1 EL Olivenöl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
               "meta": "*jederzeit*",
               "attention": "active",
               "after": []
@@ -789,7 +869,8 @@
                 "place": "fridge"
               }
             }
-          ]
+          ],
+          "intro": "Verhältnis **4 Teile Kräuter : 1 Teil Bulgur** — der Bulgur ist Textur, nicht Basis. **Kein Koriander.**"
         },
         {
           "id": "blumenkohl-harra",
@@ -1031,7 +1112,8 @@
               "id": "blumenkohl-harra",
               "name": "Blumenkohl harra"
             }
-          ]
+          ],
+          "intro": "Dieselbe Idee wie Batata harra — geröstet, dann in Knoblauch-Koriander-Öl geschwenkt —, nur mit Blumenkohl statt Kartoffel: fast keine KH, gleiche Röstaromen, und er braucht weniger Ofenzeit."
         },
         {
           "id": "haehnchen-braten",
@@ -1207,36 +1289,6 @@
       ]
     },
     {
-      "type": "markdown",
-      "title": "Technik (Stabmixer, gegen das Brechen)",
-      "level": "bold",
-      "markdown": "**Technik (Stabmixer, gegen das Brechen):** Alles zusammen in ein **hohes, schmales Gefäß**, das kaum breiter ist als der Mixfuß. Stabmixer ganz auf den Boden aufsetzen, auf höchster Stufe starten und **30–60 Sek. unten lassen, ohne zu heben** — unten bildet sich die weiße Emulsion. Erst dann langsam (über \\~30 Sek.) nach oben ziehen, bis alles weiß und fluffig ist. Häufigster Fehler ist zu frühes Anheben. Falls es doch bricht: 1 EL der gebrochenen Masse mit 1 EL Eiswasser im sauberen Gefäß neu starten, Rest langsam wieder einarbeiten."
-    },
-    {
-      "type": "markdown",
-      "title": "Schärfe-Optionen",
-      "level": "bold",
-      "markdown": "**Schärfe-Optionen:** Toum wird über Nacht im Kühlschrank runder und milder — auch deshalb am Vortag machen. Wer es von vornherein sanfter will: Zehen 60 Sek. in kochendes Wasser, eiskalt abschrecken, **gründlich trocken tupfen** (Wasser stört die Emulsion), dann wie beschrieben."
-    },
-    {
-      "type": "markdown",
-      "title": "> **Shatta-Selbstansatz (10 Min. + 2–3 T",
-      "level": "bold",
-      "markdown": "> **Shatta-Selbstansatz (10 Min. + 2–3 Tage Reifung):** 150 g rote Chilis entstielen, grob hacken, mit 1 TL Salz im schmalen Gefäß per Stabmixer zur groben Paste pulsen (nicht fein pürieren). 1 EL Essig + 1 EL Zitronensaft unterrühren. In ein sauberes Glas, Oberfläche mit 1 EL Olivenöl bedecken, 2–3 Tage bei Raumtemperatur anziehen lassen, dann kühlen. Hält Wochen."
-    },
-    {
-      "type": "markdown",
-      "title": "Verhältnis **4 Teile Kräuter : 1 Teil Bu",
-      "level": "bold",
-      "markdown": "Verhältnis **4 Teile Kräuter : 1 Teil Bulgur** — der Bulgur ist Textur, nicht Basis. **Kein Koriander.**"
-    },
-    {
-      "type": "markdown",
-      "title": "Dieselbe Idee wie Batata harra — geröste",
-      "level": "bold",
-      "markdown": "Dieselbe Idee wie Batata harra — geröstet, dann in Knoblauch-Koriander-Öl geschwenkt —, nur mit Blumenkohl statt Kartoffel: fast keine KH, gleiche Röstaromen, und er braucht weniger Ofenzeit."
-    },
-    {
       "type": "schedule",
       "title": "Zeitplan",
       "schedule": {
@@ -1396,8 +1448,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:04:24Z",
-    "sourceHash": "c981be2129e552f0",
+    "generatedAt": "2026-10-12T15:09:48Z",
+    "sourceHash": "a07829cd6cd163cd",
     "quantities": [
       {
         "ingredient": "7-gewuerz",
@@ -1507,15 +1559,16 @@
       {
         "ingredient": "zitronen",
         "total": {
-          "text": "9 EL (+ Stück ungemischt)",
-          "value": 9.0,
-          "max": 9.0,
+          "text": "10 EL (+ Stück ungemischt)",
+          "value": 10.0,
+          "max": 10.0,
           "unit": "EL",
           "approx": false
         },
         "perTask": {
           "haehnchen": "3 EL Zitronensaft",
           "toum": "3 EL Zitronensaft",
+          "shatta-ansatz": "1 EL Zitronensaft",
           "tahinsauce": "3 EL Zitronensaft"
         },
         "unitMixed": true
@@ -1611,9 +1664,15 @@
       {
         "ingredient": "chilis",
         "total": {
-          "text": ""
+          "text": "150 g",
+          "value": 150.0,
+          "max": 150.0,
+          "unit": "g",
+          "approx": false
         },
-        "perTask": {}
+        "perTask": {
+          "shatta-ansatz": "150 g rote Chilis"
+        }
       },
       {
         "ingredient": "vollkorn-fladen",
@@ -1646,13 +1705,14 @@
       {
         "ingredient": "olivenoel",
         "total": {
-          "text": "10 EL",
-          "value": 10.0,
-          "max": 10.0,
+          "text": "11 EL",
+          "value": 11.0,
+          "max": 11.0,
           "unit": "EL",
           "approx": false
         },
         "perTask": {
+          "shatta-ansatz": "1 EL Olivenöl",
           "tabbouleh": "4 EL Olivenöl",
           "blumenkohl-harra": "2 EL Olivenöl + 3 EL Olivenöl + 1 EL Olivenöl"
         }
@@ -1660,14 +1720,15 @@
       {
         "ingredient": "weissweinessig",
         "total": {
-          "text": "1 EL",
-          "value": 1.0,
-          "max": 1.0,
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
           "unit": "EL",
           "approx": false
         },
         "perTask": {
-          "haehnchen": "1 EL Weißweinessig"
+          "haehnchen": "1 EL Weißweinessig",
+          "shatta-ansatz": "1 EL Essig"
         }
       },
       {
@@ -1738,15 +1799,16 @@
       {
         "ingredient": "salz",
         "total": {
-          "text": "3 TL",
-          "value": 3.0,
-          "max": 3.0,
+          "text": "4 TL",
+          "value": 4.0,
+          "max": 4.0,
           "unit": "TL",
           "approx": false
         },
         "perTask": {
           "haehnchen": "1,5 TL Salz",
           "toum": "1 TL Salz",
+          "shatta-ansatz": "1 TL Salz",
           "blumenkohl-harra": "½ TL Salz"
         }
       },
@@ -1780,13 +1842,13 @@
             "ingredient": "zitronen",
             "name": "Zitronen",
             "need": {
-              "text": "9 EL (+ Stück ungemischt)",
-              "value": 9.0,
-              "max": 9.0,
+              "text": "10 EL (+ Stück ungemischt)",
+              "value": 10.0,
+              "max": 10.0,
               "unit": "EL",
               "approx": false
             },
-            "display": "9 EL",
+            "display": "10 EL",
             "inStock": false,
             "buy": {
               "text": "7"
@@ -1909,9 +1971,13 @@
             "ingredient": "chilis",
             "name": "frische rote Chilis",
             "need": {
-              "text": ""
+              "text": "150 g",
+              "value": 150.0,
+              "max": 150.0,
+              "unit": "g",
+              "approx": false
             },
-            "display": "",
+            "display": "150 g",
             "inStock": false,
             "buy": {
               "text": "150 g"
@@ -2022,13 +2088,13 @@
             "ingredient": "olivenoel",
             "name": "Olivenöl",
             "need": {
-              "text": "10 EL",
-              "value": 10.0,
-              "max": 10.0,
+              "text": "11 EL",
+              "value": 11.0,
+              "max": 11.0,
               "unit": "EL",
               "approx": false
             },
-            "display": "10 EL",
+            "display": "11 EL",
             "inStock": false,
             "pantry": true,
             "note": "\\~150 ml gebraucht"
@@ -2037,13 +2103,13 @@
             "ingredient": "weissweinessig",
             "name": "Weißweinessig oder Apfelessig",
             "need": {
-              "text": "1 EL",
-              "value": 1.0,
-              "max": 1.0,
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
               "unit": "EL",
               "approx": false
             },
-            "display": "1 EL",
+            "display": "2 EL",
             "inStock": false,
             "pantry": true,
             "note": "2–3 EL"
@@ -2122,13 +2188,13 @@
             "ingredient": "salz",
             "name": "Salz",
             "need": {
-              "text": "3 TL",
-              "value": 3.0,
-              "max": 3.0,
+              "text": "4 TL",
+              "value": 4.0,
+              "max": 4.0,
               "unit": "TL",
               "approx": false
             },
-            "display": "3 TL",
+            "display": "4 TL",
             "inStock": false,
             "pantry": true
           },

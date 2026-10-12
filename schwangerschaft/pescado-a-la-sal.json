@@ -404,7 +404,7 @@
                 "typical": "PT10M",
                 "source": "10 Min."
               },
-              "text": "Ofen auf **200 °C Ober-/Unterhitze** vorheizen (Umluft 180 °C). Den Wolfsbarsch (1,2–1,5 kg, oder Dorade) innen und außen unter kaltem Wasser abspülen, **gründlich trocken tupfen** — auch die Bauchhöhle. Restliche Kiemenreste entfernen (bitter). **Nicht salzen, nicht einschneiden** — jeder Schnitt ist eine Tür fürs Salz. Bauchhöhle füllen mit: 1 Zitrone in Scheiben, dem Fenchelgrün, 4 Zweigen Thymian, 2 angedrückten Knoblauchzehen, ein paar Petersilienstielen. Nicht überstopfen — die Bauchlappen sollen anliegen.",
+              "text": "Ofen auf **200 °C Ober-/Unterhitze** vorheizen (Umluft 180 °C). Den Wolfsbarsch (1,2–1,5 kg, oder Dorade) innen und außen unter kaltem Wasser abspülen, **gründlich trocken tupfen** — auch die Bauchhöhle. Restliche Kiemenreste entfernen (bitter). **Nicht salzen, nicht einschneiden** — jeder Schnitt ist eine Tür fürs Salz.\n\nBauchhöhle füllen mit: 1 Zitrone in Scheiben, dem Fenchelgrün, 4 Zweigen Thymian, 2 angedrückten Knoblauchzehen, ein paar Petersilienstielen. Nicht überstopfen — die Bauchlappen sollen anliegen.",
               "action": "Ofen auf **200 °C Ober-/Unterhitze** vorheizen (Umluft 180 °C).",
               "limits": [
                 "200 °C Ober-/Unterhitze",
@@ -471,7 +471,7 @@
                 "typical": "PT10M",
                 "source": "10 Min."
               },
-              "text": "3–4 Eiweiß (\\~120 g) in einer großen Schüssel mit dem Schneebesen schaumig, nicht steif schlagen. 2 kg grobes Meersalz dazu, mit den Händen mischen, dann **\\~80–100 ml Wasser** schluckweise einarbeiten, bis die Masse wie **nasser Strandsand** zusammenhält, wenn man sie drückt — nicht nass, nicht rieselnd. Tiefes Blech oder Bräter (der Fisch muss mit 2 cm Rand rundum reinpassen; ein 14L-Topf ist zu hoch, das große Ofenblech mit Backpapier geht) mit **1 cm Salzmasse** als Bett ausstreichen, etwas größer als der Fisch. Fisch drauflegen. Rest der Masse darüber verteilen und **1,5–2 cm dick** fest andrücken, Seiten geschlossen. **Kopf und Schwanzflosse dürfen herausschauen** — die Schwanzflosse ist die Garprobe (siehe „Garprobe & Ruhen“). Mit dem Messerrücken die Fisch-Silhouette in die Kruste ritzen, dann findet man später die Bauchlinie.",
+              "text": "3–4 Eiweiß (\\~120 g) in einer großen Schüssel mit dem Schneebesen schaumig, nicht steif schlagen. 2 kg grobes Meersalz dazu, mit den Händen mischen, dann **\\~80–100 ml Wasser** schluckweise einarbeiten, bis die Masse wie **nasser Strandsand** zusammenhält, wenn man sie drückt — nicht nass, nicht rieselnd.\n\nTiefes Blech oder Bräter (der Fisch muss mit 2 cm Rand rundum reinpassen; ein 14L-Topf ist zu hoch, das große Ofenblech mit Backpapier geht) mit **1 cm Salzmasse** als Bett ausstreichen, etwas größer als der Fisch. Fisch drauflegen. Rest der Masse darüber verteilen und **1,5–2 cm dick** fest andrücken, Seiten geschlossen. **Kopf und Schwanzflosse dürfen herausschauen** — die Schwanzflosse ist die Garprobe (siehe „Garprobe & Ruhen“). Mit dem Messerrücken die Fisch-Silhouette in die Kruste ritzen, dann findet man später die Bauchlinie.",
               "action": "3–4 Eiweiß (\\~120 g) in einer großen Schüssel mit dem Schneebesen schaumig, nicht steif schlagen.",
               "limits": [
                 "\\~80–100 ml Wasser",
@@ -675,7 +675,7 @@
                 "typical": "PT5M",
                 "source": "5 Min."
               },
-              "text": "**Garprobe, zwei Wege:** 1. **Thermometer** (verbindlich): durch die Kiemenöffnung oder eine kleine Lücke in der Kruste hinter dem Kopf **schräg ins dickste Rückenfilet** stechen, nicht bis an die Wirbelsäule. **Ziel ≥ 63 °C.** Bei 60–62 °C: 3 Min. länger. Beim Ruhen steigt die Temperatur noch um 2–3 °C. 2. **Schwanzflosse ziehen** (spanische Tradition): löst sie sich mit sanftem Zug leicht aus der Haut, ist der Fisch gar. Nur als Vorcheck — messen trotzdem.\n**5 Min. ruhen lassen** in der Kruste (fertig garen, Saft setzt sich).",
+              "text": "**Garprobe, zwei Wege:** 1. **Thermometer** (verbindlich): durch die Kiemenöffnung oder eine kleine Lücke in der Kruste hinter dem Kopf **schräg ins dickste Rückenfilet** stechen, nicht bis an die Wirbelsäule. **Ziel ≥ 63 °C.** Bei 60–62 °C: 3 Min. länger. Beim Ruhen steigt die Temperatur noch um 2–3 °C. 2. **Schwanzflosse ziehen** (spanische Tradition): löst sie sich mit sanftem Zug leicht aus der Haut, ist der Fisch gar. Nur als Vorcheck — messen trotzdem.\n\n**5 Min. ruhen lassen** in der Kruste (fertig garen, Saft setzt sich).",
               "action": "**Garprobe, zwei Wege:** 1.",
               "limits": [
                 "schräg ins dickste Rückenfilet",
@@ -929,7 +929,7 @@
                 "source": "ca. 10 Min.",
                 "estimated": true
               },
-              "text": "Am Tisch oder am Herd: Blech auf den Tisch (Untersetzer!). Mit dem Löffelrücken entlang der geritzten Bauchlinie **kräftig klopfen**, bis die Kruste bricht; obere Platte in Stücken abheben, Salzreste vom Fisch wegpinseln (Backpinsel oder Küchenpapier). **Haut vom Kopf zum Schwanz abziehen** — kommt mit den Schuppen in einem Stück. Oberes Filet mit zwei Löffeln entlang der Mittellinie vom Rückgrat lösen und abheben, Bauchgräten mitnehmen. Rückgrat samt Kopf abheben, unteres Filet freilegen, Haut unten drin lassen.",
+              "text": "Am Tisch oder am Herd: Blech auf den Tisch (Untersetzer!). Mit dem Löffelrücken entlang der geritzten Bauchlinie **kräftig klopfen**, bis die Kruste bricht; obere Platte in Stücken abheben, Salzreste vom Fisch wegpinseln (Backpinsel oder Küchenpapier). **Haut vom Kopf zum Schwanz abziehen** — kommt mit den Schuppen in einem Stück. Oberes Filet mit zwei Löffeln entlang der Mittellinie vom Rückgrat lösen und abheben, Bauchgräten mitnehmen. Rückgrat samt Kopf abheben, unteres Filet freilegen, Haut unten drin lassen.\n\n> **Wichtig fürs Kind (und alle):** Filets auf dem Teller nochmal mit den Fingern auf Gräten prüfen — Wolfsbarsch hat feine Rückengräten am Filetrand.",
               "action": "Am Tisch oder am Herd: Blech auf den Tisch (Untersetzer!).",
               "limits": [
                 "kräftig klopfen",
@@ -985,15 +985,6 @@
             }
           ]
         }
-      ]
-    },
-    {
-      "type": "markdown",
-      "title": "Wichtig fürs Kind (und alle)",
-      "level": "bold",
-      "markdown": "**Wichtig fürs Kind (und alle):** Filets auf dem Teller nochmal mit den Fingern auf Gräten prüfen — Wolfsbarsch hat feine Rückengräten am Filetrand.",
-      "tags": [
-        "kind"
       ]
     },
     {
@@ -1124,8 +1115,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:04:24Z",
-    "sourceHash": "3ac0a66ee0673c10",
+    "generatedAt": "2026-10-12T15:09:48Z",
+    "sourceHash": "c8436cc6de092653",
     "select": {
       "garen": "ofen"
     },

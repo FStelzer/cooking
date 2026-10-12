@@ -102,17 +102,15 @@ Moderate Menge, nach der Stub-Warnung („roher Knoblauch heftiger als erwartet"
 - 250 ml neutrales Öl (kein Olivenöl — wird bitter und bricht leichter)
 - 1 EL eiskaltes Wasser
 
-**Technik (Stabmixer, gegen das Brechen):** Alles zusammen in ein **hohes, schmales Gefäß**, das kaum breiter ist als der Mixfuß. Stabmixer ganz auf den Boden aufsetzen, auf höchster Stufe starten und **30–60 Sek. unten lassen, ohne zu heben** — unten bildet sich die weiße Emulsion. Erst dann langsam (über \~30 Sek.) nach oben ziehen, bis alles weiß und fluffig ist. Häufigster Fehler ist zu frühes Anheben. Falls es doch bricht: 1 EL der gebrochenen Masse mit 1 EL Eiswasser im sauberen Gefäß neu starten, Rest langsam wieder einarbeiten.
+> **Technik (Stabmixer, gegen das Brechen):** Alles zusammen in ein **hohes, schmales Gefäß**, das kaum breiter ist als der Mixfuß. Stabmixer ganz auf den Boden aufsetzen, auf höchster Stufe starten und **30–60 Sek. unten lassen, ohne zu heben** — unten bildet sich die weiße Emulsion. Erst dann langsam (über \~30 Sek.) nach oben ziehen, bis alles weiß und fluffig ist. Häufigster Fehler ist zu frühes Anheben. Falls es doch bricht: 1 EL der gebrochenen Masse mit 1 EL Eiswasser im sauberen Gefäß neu starten, Rest langsam wieder einarbeiten.
 
-**Schärfe-Optionen:** Toum wird über Nacht im Kühlschrank runder und milder — auch deshalb am Vortag machen. Wer es von vornherein sanfter will: Zehen 60 Sek. in kochendes Wasser, eiskalt abschrecken, **gründlich trocken tupfen** (Wasser stört die Emulsion), dann wie beschrieben — kostet etwas von der rohen Aggressivität, die Emulsion funktioniert trotzdem.
+> **Schärfe-Optionen:** Toum wird über Nacht im Kühlschrank runder und milder — auch deshalb am Vortag machen. Wer es von vornherein sanfter will: Zehen 60 Sek. in kochendes Wasser, eiskalt abschrecken, **gründlich trocken tupfen** (Wasser stört die Emulsion), dann wie beschrieben — kostet etwas von der rohen Aggressivität, die Emulsion funktioniert trotzdem.
 
 **Shatta-Ansatz (2–3 Tage vorher, hält Wochen, Kühlschrank):**
 
 **5. Shatta (10 Min.)**
 *jederzeit*
-Kaufen oder ansetzen — **erste Wahl: kaufen**, falls der orientalische Laden sie führt. Sonst:
-
-> **Shatta-Selbstansatz (10 Min. + 2–3 Tage Reifung):** 150 g rote Chilis entstielen, grob hacken, mit 1 TL Salz im schmalen Gefäß per Stabmixer zur groben Paste pulsen (nicht fein pürieren). 1 EL Essig + 1 EL Zitronensaft unterrühren. In ein sauberes Glas, Oberfläche mit Olivenöl bedecken, 2–3 Tage bei Raumtemperatur anziehen lassen, dann kühlen. Hält Wochen. Ab Tag 1 verwendbar, wird mit Reifung runder.
+Kaufen oder ansetzen — **erste Wahl: kaufen**, falls der orientalische Laden sie führt. Sonst selbst ansetzen: 150 g rote Chilis entstielen, grob hacken, mit 1 TL Salz im schmalen Gefäß per Stabmixer zur groben Paste pulsen (nicht fein pürieren). 1 EL Essig + 1 EL Zitronensaft unterrühren. In ein sauberes Glas, Oberfläche mit Olivenöl bedecken, 2–3 Tage bei Raumtemperatur anziehen lassen, dann kühlen. Hält Wochen. Ab Tag 1 verwendbar, wird mit Reifung runder.
 
 **Tahinsauce (Kochtag):**
 

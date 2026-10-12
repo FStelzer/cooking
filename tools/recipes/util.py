@@ -215,8 +215,8 @@ def annotation_quotes(recipe: dict) -> list[tuple[str, str]]:
 
 def sentence_prefixes(text: str) -> list[str]:
     """Alle Präfixe aus ganzen Sätzen (Kandidaten für action)."""
-    ends = [m.start() + 1 for m in _SENT_END.finditer(text)] + [len(text.rstrip())]
-    return [text[:e].strip() for e in ends]
+    ends = [m.start() + 1 for m in _SENT_END.finditer(text)] + [m.start() for m in re.finditer(r"\n\n", text)] + [len(text.rstrip())]
+    return [text[:e].strip() for e in sorted(set(ends))]  # Absatzgrenze beendet den Satz (Zitat, Liste, Tabelle danach)
 
 
 def slugify(s: str) -> str:

@@ -214,6 +214,7 @@ function renderSections(r, level) {
     else if (sec.type === "shopping") html += shoppingHtml();
     else if (sec.type === "tasks") for (const task of sec.tasks) {
       if (task.heading) html += `<div class="md">${md(task.heading)}</div>`;
+      if (task.intro) html += `<div class="md">${md(task.intro)}</div>`;
       for (const s of task.steps) html += `<div class="card"><div class="md">${md(s.heading || `**${s.label}. ${s.title || ""}**`)}${md(highlight(scaleStepText(s.text, s, factor(), ingById), s))}</div></div>`;
     } else if (sec.type === "courses") for (const c of sec.courses) {
       html += `<h${level + 1}>${mdInline(c.title)}</h${level + 1}>` + (c.intro ? `<div class="md">${md(c.intro)}</div>` : "") + renderSections(c, level + 2);
@@ -289,6 +290,7 @@ function renderSheet() {
   const nav = pos < 0 ? "" : `<div class="nav"><button data-nav="-1" aria-label="Vorheriger Schritt" ${pos > 0 ? "" : "disabled"}>‹</button><small>${pos + 1}/${seq.length}</small><button data-nav="1" aria-label="Nächster Schritt" ${pos < seq.length - 1 ? "" : "disabled"}>›</button></div>`;
   sheet.innerHTML = `
     <div class="sheet-head"><h2 id="sheetTitle"><span class="lbl">${esc(lbl)}</span>${mdInline(s.title || task.name)}</h2>${nav}<button class="close" aria-label="Schließen">✕</button></div>
+    ${task.intro && task.steps[0].id === s.id ? `<div class="md intro">${md(task.intro)}${factor() !== 1 ? `<p class="fine">Mengen hier unskaliert (×1).</p>` : ""}</div>` : ""}
     <div class="md fulltext">${md(body)}</div>
     ${details.length ? `<dl class="details">${details.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${mdInline(v)}</dd>`).join("")}</dl>` : ""}
     ${s.events?.length ? `<h3>Zwischendurch</h3><ul>${s.events.map((e) => `<li>⏱ ${fmtClock(isoSeconds(e.at.typical || e.at.min))}: ${mdInline(e.text)}</li>`).join("")}</ul>` : ""}

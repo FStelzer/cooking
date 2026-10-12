@@ -283,6 +283,57 @@ t("Check H: Schritte in Rezeptreihenfolge, passive Wartezeit schiebt die nächst
 oentry = next(s for s in od["sections"] if s["type"] == "schedule")["schedule"]["entries"][0]
 t("Zeitplan-Eintrag: Schritte in Rezeptreihenfolge, nicht alphabetisch", lambda: (
     assert_(oentry["steps"] == ["zuerst-salzen", "abtropfen", "dip-ruehren"], oentry)))
+NOTES = """# Test (2 Portionen)
+
+## Einkaufsliste
+
+### Aldi / REWE
+- [ ] 1 kg Joghurt
+- [ ] Butter, 100 g
+
+## Zubereitung
+
+**Dip (Vortag):**
+
+Verhältnis **2 : 1** — Joghurt trägt.
+
+**1. Dip rühren (5 Min.)**
+*jederzeit*
+1 kg Joghurt glatt rühren.
+
+> **Technik:** Kräftig rühren, sonst bleibt er klumpig. Wer es reicher will: 100 g Butter unterziehen.
+
+**Kochtag:** \\~1 Std. vor dem Essen.
+
+**2. Anrichten (5 Min.)**
+*nach Dip rühren*
+Anrichten.
+
+**Gar-Check:** Thermometer in die dickste Stelle, Ziel 75 °C — ohne das kein Servieren, auch nicht beim Kind, auch nicht ausnahmsweise.
+
+## Zeitplan
+
+- Vorabend: Dip rühren
+
+| Zeit | Schritt |
+|---|---|
+| T−0:10 | Anrichten |
+"""
+no, nolint = parse_recipe(NOTES, "test/hinweise")
+nsteps, ntask = steps_of(no), next(s for s in no["sections"] if s["type"] == "tasks")["tasks"][0]
+t("Zitat nach einem Schritt gehört zum Schritt, Mengen darin zählen nicht", lambda: (
+    assert_("> **Technik:**" in nsteps["dip-ruehren"]["text"], nsteps["dip-ruehren"]["text"]),
+    assert_([d["ref"] for d in nsteps["dip-ruehren"]["ingredients"]] == ["joghurt"], nsteps["dip-ruehren"]["ingredients"])))
+t("Text vor dem ersten Schritt einer Komponente wird ihr intro", lambda: (
+    assert_(ntask.get("intro", "").startswith("Verhältnis"), ntask),
+    assert_(not any(s["type"] == "markdown" and s["title"].startswith("Verhältnis") for s in no["sections"]))))
+t("**Label:** nach Leerzeile bleibt Überleitung; lange Überleitung nach einem Schritt gibt einen Hinweis", lambda: (
+    assert_(any(s["type"] == "markdown" and s["title"] == "Kochtag" for s in no["sections"])),
+    assert_("Gar-Check" not in nsteps["anrichten"]["text"]),
+    assert_(any("Gar-Check" in m and "Zitat" in m for m in nolint.msgs), nolint.msgs),
+    assert_(not any("Kochtag" in m and "Zitat" in m for m in nolint.msgs), nolint.msgs)))
+t("Zeitplan-Spalten chronologisch, auch wenn die Tabelle (Kochtag) gelesen wird, bevor die Bullets (Vorabend) es werden", lambda: (
+    assert_([p["id"] for p in next(s for s in no["sections"] if s["type"] == "schedule")["schedule"]["phases"]] == ["vorabend", "kochtag"]),))
 print(f"{n} Tests ok")
 if lint.msgs or mlint.msgs:
     print("Lint (Gericht):", *lint.msgs, sep="\n  ") if lint.msgs else None

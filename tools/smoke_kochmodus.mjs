@@ -167,7 +167,7 @@ try {
   await page.selectOption('select[data-variant="weg"]', "direkt-backen");
   assert.equal(await page.locator('.row[data-step="kuehlschrankgare-ueber-nacht"]').count(), 0, "Übernacht ausgeblendet");
   assert.equal(await page.locator('.row[data-step="stueckgare"]').count(), 1);
-  assert.match(await page.locator('.row[data-step="autolyse"]').innerText(), /390 g Dinkelvollkornmehl, 40 g Wasser/);
+  assert.match(await page.locator('.row[data-step="autolyse"]').innerText(), /390 g Dinkelvollkornmehl, 30 g Wasser/);
   await page.click('button[data-view="einkauf"]');
   const shop = await page.locator("#main").innerText();
   assert.ok(shop.includes("Dinkelvollkornmehl") && !shop.includes("Weizenvollkornmehl"), "Einkauf der Dinkel-Variante");
@@ -177,7 +177,7 @@ try {
   await page.click('button[data-view="plan"]');
   assert.deepEqual(await page.locator("#main > h2").allInnerTexts(), ["Zeitplan Backtag", "Zeitplan aus dem Frost"]);
   await page.click('button[data-view="lesen"]');
-  assert.ok((await page.locator("#main").innerText()).includes("(Weizen-Roggen: 90 g, Dinkel: 40 g)"), "Lesen zeigt alle Varianten");
+  assert.ok((await page.locator("#main").innerText()).includes("(Weizen-Roggen: 70 g, Dinkel: 30 g"), "Lesen zeigt alle Varianten");
   // App: ohne ?r= das zuletzt geöffnete Rezept (eben: Brötchen), ?liste=1 = Rezeptliste
   await page.goto(`http://127.0.0.1:${PORT}/kochmodus/`);
   await page.waitForSelector(".row[data-step]");

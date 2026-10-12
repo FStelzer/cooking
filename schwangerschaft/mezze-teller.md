@@ -199,7 +199,7 @@ In 12 Portionen à \~50 g teilen. Mit nassen Händen zu \~10 cm langen, 2–2,5 
 *nach Kafta formen · Grill · fertig bei ≥ 72 °C Kern*
 **Gasgrill:** Rost sauber und geölt, direkte Zone hoch vorgeheizt. Kafta auflegen, **2 Min. nicht bewegen**, dann alle 2 Min. um eine Vierteldrehung wenden — insgesamt 8–10 Min., bis rundum dunkel gebräunt. **Pfanne:** 1 EL Olivenöl in der schweren Pfanne stark erhitzen, in zwei Chargen 8–10 Min. rundum braten, Deckel in den letzten 2 Min. auflegen.
 
-**Gar-Check — Pflicht:** Fleischthermometer flach in die dickste Rolle: **≥ 72 °C**, Saft klar, innen kein Rosa. Hackfleisch ist der eine Punkt dieses Abends, an dem „durch" nicht verhandelbar ist. 3 Min. ruhen lassen, mit Zitronenspalten servieren.
+> **Gar-Check — Pflicht:** Fleischthermometer flach in die dickste Rolle: **≥ 72 °C**, Saft klar, innen kein Rosa. Hackfleisch ist der eine Punkt dieses Abends, an dem „durch" nicht verhandelbar ist. 3 Min. ruhen lassen, mit Zitronenspalten servieren.
 
 **Dazu (Abend, à la minute):**
 

@@ -533,7 +533,7 @@
                 "max": "PT16M",
                 "source": "8–16 Min."
               },
-              "text": "Fischsteaks einschichtig einlegen (etwas von den Aromaten unter den Fisch schieben — Anti-Anbrenn-Schicht), Marinadenreste dazu, \\~200 ml Kokoswasser angießen, bis der Fisch etwa halbhoch bedeckt ist — nicht mehr. Aufkochen, dann nur noch leise simmern. **Nicht wenden**, alle 3 Min. mit Sauce begießen. Simmerzeit je Dicke, nach gemessener Dicke (siehe „Fisch vorbehandeln & sichern“):\n| Dicke | Simmerzeit |\n|---|---|\n| 2,5 cm | 8–10 Min. |\n| 3 cm | 10–12 Min. |\n| 4 cm | 14–16 Min. |\n*Thermometer-Check am dicksten Steak: bei **50–52 °C** herausnehmen, nicht bei 60. Durch Nachziehen und das Glasieren landet der Kern bei \\~57–60 °C.*",
+              "text": "Fischsteaks einschichtig einlegen (etwas von den Aromaten unter den Fisch schieben — Anti-Anbrenn-Schicht), Marinadenreste dazu, \\~200 ml Kokoswasser angießen, bis der Fisch etwa halbhoch bedeckt ist — nicht mehr. Aufkochen, dann nur noch leise simmern. **Nicht wenden**, alle 3 Min. mit Sauce begießen. Simmerzeit je Dicke, nach gemessener Dicke (siehe „Fisch vorbehandeln & sichern“):\n\n| Dicke | Simmerzeit |\n|---|---|\n| 2,5 cm | 8–10 Min. |\n| 3 cm | 10–12 Min. |\n| 4 cm | 14–16 Min. |\n\n*Thermometer-Check am dicksten Steak: bei **50–52 °C** herausnehmen, nicht bei 60. Durch Nachziehen und das Glasieren landet der Kern bei \\~57–60 °C.*",
               "action": "Fischsteaks einschichtig einlegen (etwas von den Aromaten unter den Fisch schieben — Anti-Anbrenn-Schicht), Marinadenreste dazu, \\~200 ml Kokoswasser angießen, bis der Fisch etwa halbhoch bedeckt ist — nicht mehr.",
               "limits": [
                 "Nicht wenden",
@@ -884,8 +884,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:04:24Z",
-    "sourceHash": "0f9ac2c3285a509b",
+    "generatedAt": "2026-10-12T15:09:47Z",
+    "sourceHash": "654187bfee7c5855",
     "quantities": [
       {
         "ingredient": "lachssteaks",

@@ -166,7 +166,7 @@ Stücke für **3–4 Min. pro Seite in die direkte Zone**, bis die Kruste dunkel
 *fertig bei ≥ 75 °C Kern*
 Pflicht: Thermometer am Knochen entlang in den dicksten Oberschenkel: **≥ 75 °C**; bei Keulen mit Knochen ist 80–85 °C texturmäßig sogar besser (wie beim Poulet au vinaigre). Saft klar, kein Rosa am Knochen. **Jedes Stück der Kinder-Charge separat messen** — kleine Stücke sind schneller, große langsamer. 5 Min. ruhen.
 
-**Ofen-Alternative (Swasthi-Route):** 240 °C Ober-/Unterhitze, Fleisch auf einem Gitter über einem Blech, **15 Min., wenden, weitere 12–15 Min.**, dann 3–4 Min. Grillfunktion oder mit dem Küchenbrenner die Kanten anrösten. Thermometer wie oben.
+> **Ofen-Alternative (Swasthi-Route):** 240 °C Ober-/Unterhitze, Fleisch auf einem Gitter über einem Blech, **15 Min., wenden, weitere 12–15 Min.**, dann 3–4 Min. Grillfunktion oder mit dem Küchenbrenner die Kanten anrösten. Thermometer wie oben.
 
 **21. Anrichten (ca. 5 Min.)**
 *nach Gar-Check, Tadka Erwachsene, Tadka Kind, Bharta fertigstellen, Raita & Beilagen*

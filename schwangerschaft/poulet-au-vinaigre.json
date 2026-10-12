@@ -419,7 +419,7 @@
                 "typical": "PT6M",
                 "source": "6 Min."
               },
-              "text": "Hitze auf mittel. Die 4 Schalotten + die 4 Knoblauchzehen ins Fett, 2–3 Min. glasig, nicht bräunen. 2 EL Tomatenmark dazu, 1 Min. mitrösten.\n**120 ml Weißweinessig** angießen — es dampft heftig, Fenster auf — und unter Rühren **auf etwa ⅓ einkochen, bis es sirupartig wird** (\\~3 Min.). Das ist der Schritt, der aus stechend „rund\" macht; nicht abkürzen.",
+              "text": "Hitze auf mittel. Die 4 Schalotten + die 4 Knoblauchzehen ins Fett, 2–3 Min. glasig, nicht bräunen. 2 EL Tomatenmark dazu, 1 Min. mitrösten.\n\n**120 ml Weißweinessig** angießen — es dampft heftig, Fenster auf — und unter Rühren **auf etwa ⅓ einkochen, bis es sirupartig wird** (\\~3 Min.). Das ist der Schritt, der aus stechend „rund\" macht; nicht abkürzen.",
               "action": "Hitze auf mittel.",
               "limits": [
                 "120 ml Weißweinessig",
@@ -511,13 +511,14 @@
                 "typical": "PT40M",
                 "source": "40 Min."
               },
-              "text": "**350 ml Hühnerbrühe** und die 300 g Tomatenwürfel dazu, 2 Lorbeerblätter, 4 Zweige Thymian, aufkochen. Schenkel **mit der Haut nach oben** einlegen — die Haut soll aus der Flüssigkeit ragen, sonst wird sie labberig. **Ohne Deckel** in den Ofen bei 165 °C, **35–40 Min.**",
+              "text": "**350 ml Hühnerbrühe** und die 300 g Tomatenwürfel dazu, 2 Lorbeerblätter, 4 Zweige Thymian, aufkochen. Schenkel **mit der Haut nach oben** einlegen — die Haut soll aus der Flüssigkeit ragen, sonst wird sie labberig. **Ohne Deckel** in den Ofen bei 165 °C, **35–40 Min.**\n\n> **Gar-Check:** Thermometer neben dem Knochen in den dicksten Oberschenkel: **Ziel 85–90 °C** — bei dunklem Fleisch ist das kein Übergaren, sondern der Punkt, an dem das Bindegewebe zu Gelatine wird und das Fleisch seidig vom Knochen fällt. Die Schwangerschafts-Untergrenze von 75 °C ist damit weit überschritten. Kein Rosa am Knochen, Saft klar.",
               "action": "**350 ml Hühnerbrühe** und die 300 g Tomatenwürfel dazu, 2 Lorbeerblätter, 4 Zweige Thymian, aufkochen.",
               "limits": [
                 "350 ml Hühnerbrühe",
                 "mit der Haut nach oben",
                 "Ohne Deckel",
-                "35–40 Min."
+                "35–40 Min.",
+                "Ziel 85–90 °C"
               ],
               "timers": [
                 {
@@ -534,6 +535,17 @@
                   "kind": "ofen",
                   "text": "165 °C",
                   "value": 165
+                },
+                {
+                  "kind": "ziel",
+                  "text": "85–90 °C",
+                  "min": 85,
+                  "max": 90
+                },
+                {
+                  "kind": "ziel",
+                  "text": "75 °C",
+                  "value": 75
                 }
               ],
               "ingredients": [
@@ -724,7 +736,7 @@
                 "typical": "PT8M",
                 "source": "8 Min."
               },
-              "text": "Bräter aus dem Ofen, Schenkel auf eine vorgewärmte Platte, im ausgeschalteten Ofen bei offener Tür warm halten. Lorbeer und Thymian herausfischen, Knoblauchzehen mit der Gabel an der Topfwand zerdrücken und einrühren. Sauce auf dem Herd bei starker Hitze **auf \\~300 ml einkochen** (3–5 Min. — sie soll einen Löffelrücken überziehen). **100 g Crème fraîche** einrühren, einmal aufwallen lassen, dann vom Herd und **1 EL kalte Butter** einschwenken. Abschmecken: Salz, Pfeffer, und — wichtig — ist die Säure zu leise geworden, **1 TL frischen Essig** zugeben (die Sauce soll deutlich säuerlich sein, das ist ihr Name). 2 EL gehackten Estragon unterrühren.",
+              "text": "Bräter aus dem Ofen, Schenkel auf eine vorgewärmte Platte, im ausgeschalteten Ofen bei offener Tür warm halten. Lorbeer und Thymian herausfischen, Knoblauchzehen mit der Gabel an der Topfwand zerdrücken und einrühren.\n\nSauce auf dem Herd bei starker Hitze **auf \\~300 ml einkochen** (3–5 Min. — sie soll einen Löffelrücken überziehen). **100 g Crème fraîche** einrühren, einmal aufwallen lassen, dann vom Herd und **1 EL kalte Butter** einschwenken. Abschmecken: Salz, Pfeffer, und — wichtig — ist die Säure zu leise geworden, **1 TL frischen Essig** zugeben (die Sauce soll deutlich säuerlich sein, das ist ihr Name). 2 EL gehackten Estragon unterrühren.",
               "action": "Bräter aus dem Ofen, Schenkel auf eine vorgewärmte Platte, im ausgeschalteten Ofen bei offener Tür warm halten.",
               "limits": [
                 "auf \\~300 ml einkochen",
@@ -812,12 +824,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "markdown",
-      "title": "Gar-Check",
-      "level": "bold",
-      "markdown": "**Gar-Check:** Thermometer neben dem Knochen in den dicksten Oberschenkel: **Ziel 85–90 °C** — bei dunklem Fleisch ist das kein Übergaren, sondern der Punkt, an dem das Bindegewebe zu Gelatine wird und das Fleisch seidig vom Knochen fällt. Die Schwangerschafts-Untergrenze von 75 °C ist damit weit überschritten. Kein Rosa am Knochen, Saft klar."
     },
     {
       "type": "schedule",
@@ -956,8 +962,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:04:24Z",
-    "sourceHash": "e7b558a4a3c0496d",
+    "generatedAt": "2026-10-12T15:09:48Z",
+    "sourceHash": "54ec9b189110f31f",
     "quantities": [
       {
         "ingredient": "haehnchenschenkel",

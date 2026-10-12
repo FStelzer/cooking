@@ -306,7 +306,7 @@
                 "typical": "PT20M",
                 "source": "20 Min."
               },
-              "text": "Marinade verrühren: 4 EL Fischsauce, 2 EL Nước màu, 1 EL Zucker, 1 EL Austernsauce, 3 Schalotten und 4 Knoblauchzehen sehr fein gehackt, 1 EL Öl. **Noch kein Pfeffer.**\n- Die Hälfte unter das Schweinehack (500–600 g) mischen und die Masse 3–4 Min. kräftig **schlagen/kneten, bis sie klebrig-federnd ist** — das ist die zentrale Anti-Zerfall-Maßnahme für den Grill.\n- **Jetzt \\~150 g Hackmasse für das Kind abnehmen** (siehe Kinder-Anpassung), dann den Rest mit 1,5–2 TL frisch gemahlenem Pfeffer (großzügig!) fertig kneten.\n- Andere Hälfte der Marinade mit den Schweinebauchscheiben (500 g) vermengen, ebenfalls pfeffern.",
+              "text": "Marinade verrühren: 4 EL Fischsauce, 2 EL Nước màu, 1 EL Zucker, 1 EL Austernsauce, 3 Schalotten und 4 Knoblauchzehen sehr fein gehackt, 1 EL Öl. **Noch kein Pfeffer.**\n\n- Die Hälfte unter das Schweinehack (500–600 g) mischen und die Masse 3–4 Min. kräftig **schlagen/kneten, bis sie klebrig-federnd ist** — das ist die zentrale Anti-Zerfall-Maßnahme für den Grill.\n- **Jetzt \\~150 g Hackmasse für das Kind abnehmen** (siehe Kinder-Anpassung), dann den Rest mit 1,5–2 TL frisch gemahlenem Pfeffer (großzügig!) fertig kneten.\n- Andere Hälfte der Marinade mit den Schweinebauchscheiben (500 g) vermengen, ebenfalls pfeffern.",
               "action": "Marinade verrühren: 4 EL Fischsauce, 2 EL Nước màu, 1 EL Zucker, 1 EL Austernsauce, 3 Schalotten und 4 Knoblauchzehen sehr fein gehackt, 1 EL Öl.",
               "limits": [
                 "Noch kein Pfeffer.",
@@ -699,8 +699,8 @@
                 "source": "\\~20 Min.",
                 "estimated": true
               },
-              "text": "Gasgrill mit Haube, **zwei Zonen**: eine Seite volle Hitze, eine Seite aus/niedrig.\n- Bällchen in den **geölten Grillkorb** (fallen sonst durch bzw. reißen beim Wenden). Über direkter Hitze angrillen, **im 30-Sekunden-Takt wenden** — der Zucker in der Marinade verbrennt schnell, es soll dunkel karamellisieren, nicht verkohlen. Nach 4–5 Min. mit guter Farbe in die indirekte Zone, Haube zu, 5–8 Min. fertig ziehen (Kern 70 °C+ / nicht mehr rosa).\n- Bauchscheiben direkt auf den Rost über die heiße Zone, 1–2 Min. pro Seite bis an den Rändern verkrustet und das Fett rendert. Tropfendes Fett + geschlossene Haube liefern einen Teil des Straßen-Aromas.\n- Kinder-Taler einfach mitgrillen (gleiche Garzeit) — die Masse ist bereits mild abgezweigt, eine räumliche Trennung auf dem Rost ist nicht nötig.\n*Ausbaustufe für Durchgang 2: Räucherbox mit mildem Obstholz (Kirsche/Apfel) auf den Brenner — kein Hickory/Mesquite, das überfährt die Sauce. Erster Durchgang bewusst ohne, um eine Referenz zu haben.*",
-              "action": "Gasgrill mit Haube, **zwei Zonen**: eine Seite volle Hitze, eine Seite aus/niedrig.\n- Bällchen in den **geölten Grillkorb** (fallen sonst durch bzw. reißen beim Wenden).",
+              "text": "Gasgrill mit Haube, **zwei Zonen**: eine Seite volle Hitze, eine Seite aus/niedrig.\n\n- Bällchen in den **geölten Grillkorb** (fallen sonst durch bzw. reißen beim Wenden). Über direkter Hitze angrillen, **im 30-Sekunden-Takt wenden** — der Zucker in der Marinade verbrennt schnell, es soll dunkel karamellisieren, nicht verkohlen. Nach 4–5 Min. mit guter Farbe in die indirekte Zone, Haube zu, 5–8 Min. fertig ziehen (Kern 70 °C+ / nicht mehr rosa).\n- Bauchscheiben direkt auf den Rost über die heiße Zone, 1–2 Min. pro Seite bis an den Rändern verkrustet und das Fett rendert. Tropfendes Fett + geschlossene Haube liefern einen Teil des Straßen-Aromas.\n- Kinder-Taler einfach mitgrillen (gleiche Garzeit) — die Masse ist bereits mild abgezweigt, eine räumliche Trennung auf dem Rost ist nicht nötig.\n\n*Ausbaustufe für Durchgang 2: Räucherbox mit mildem Obstholz (Kirsche/Apfel) auf den Brenner — kein Hickory/Mesquite, das überfährt die Sauce. Erster Durchgang bewusst ohne, um eine Referenz zu haben.*",
+              "action": "Gasgrill mit Haube, **zwei Zonen**: eine Seite volle Hitze, eine Seite aus/niedrig.",
               "limits": [
                 "zwei Zonen",
                 "geölten Grillkorb",
@@ -925,8 +925,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:04:24Z",
-    "sourceHash": "fd0710a30592ab98",
+    "generatedAt": "2026-10-12T15:09:47Z",
+    "sourceHash": "8d03aedf595fe83c",
     "quantities": [
       {
         "ingredient": "bun-nudeln",

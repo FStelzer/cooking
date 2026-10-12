@@ -248,7 +248,7 @@ Am Kochtag im 6L-Topf aufkochen, 1 Min sprudeln lassen, nochmal 15 Sek. mixen, d
 **15. Tare abschmecken (2 Min.)**
 1 TL Tare in 60 ml heißem Wasser auflösen und probieren — so schmeckt sie später verdünnt. Zu flach → 1 EL Aka Miso mehr. Zu salzig → 1 EL Shiro Miso mehr (Shiro ist milder). Abgedeckt in den Kühlschrank; sie wird über Nacht runder.
 
-**Dosierung:** 2,5 EL pro Erwachsenen-Schüssel, 1-1,5 EL pro Kinder-Schüssel (siehe Wok-Durchgänge). Nicht kochen — nur die 20 Sek. Anrösten im Wok, dann sofort Brühe drauf.
+> **Dosierung:** 2,5 EL pro Erwachsenen-Schüssel, 1-1,5 EL pro Kinder-Schüssel (siehe Wok-Durchgänge). Nicht kochen — nur die 20 Sek. Anrösten im Wok, dann sofort Brühe drauf.
 
 **Niku-Miso / Soboro — das Fleisch-Topping (Kochtag früh, hält 3 Tage, Kühlschrank):**
 
@@ -369,9 +369,9 @@ Alles griffbereit, bevor der erste Durchgang startet:
 2. **GDM-Schüssel + 1 Erwachsener:** 75 g + 150 g Nudeln, 5 EL Tare, 900 ml Brühe. GDM-Schüssel: **4-5 EL Niku-Miso**, die blanchierte Sprossen-Extraportion obendrauf, **ganzes festes Ei**, Mais weglassen oder 1 EL, Butter normal (Fett + Protein dämpfen die Blutzuckerspitze). Am Tisch: Toppings und Brühe zuerst, Nudeln zuletzt. Die konkrete Nudelmenge ist eine Schätzung — das Messgerät und die Ernährungsberatung entscheiden, nicht das Rezept.
 3. **Die übrigen 2 Erwachsenen:** Standard-Durchgang wie in der Tabelle.
 
-**Ehrlicher Hinweis zum Timing:** Die ersten Schüsseln stehen 6-8 Min, bis die letzten fertig sind. Für die Kinder ist das gewollt, für die Erwachsenen bedeutet es: gestaffelt essen, wie in einem Ramen-Laden — oder eine zweite Person übernimmt den Nudel-Topf, dann sind es 2,5 Min pro Durchgang. Nudeln in wartender Brühe quellen; deshalb Durchgang 2 und 3 nicht künstlich verzögern und nie Schüsseln „vorfüllen".
+> **Ehrlicher Hinweis zum Timing:** Die ersten Schüsseln stehen 6-8 Min, bis die letzten fertig sind. Für die Kinder ist das gewollt, für die Erwachsenen bedeutet es: gestaffelt essen, wie in einem Ramen-Laden — oder eine zweite Person übernimmt den Nudel-Topf, dann sind es 2,5 Min pro Durchgang. Nudeln in wartender Brühe quellen; deshalb Durchgang 2 und 3 nicht künstlich verzögern und nie Schüsseln „vorfüllen".
 
-**Fallback — Schüssel-Methode (wenn der Wok-Sprint nicht drin ist):** 2,5 EL Tare (Kinder 1 EL) in die vorgewärmte Schüssel, 1 kleine Kelle heiße Brühe drauf, mit dem Schneebesen klumpenfrei rühren, mit \~420 ml **kochender** Brühe auffüllen, Nudeln rein, dann 2-3 EL heißes Niku-Miso, blanchierte Sprossen (alle 400 g blanchieren), Mais, Ei, Frühlingszwiebeln, Butter. Weniger Röstaroma, aber alle 6 Schüsseln in 4 Minuten.
+> **Fallback — Schüssel-Methode (wenn der Wok-Sprint nicht drin ist):** 2,5 EL Tare (Kinder 1 EL) in die vorgewärmte Schüssel, 1 kleine Kelle heiße Brühe drauf, mit dem Schneebesen klumpenfrei rühren, mit \~420 ml **kochender** Brühe auffüllen, Nudeln rein, dann 2-3 EL heißes Niku-Miso, blanchierte Sprossen (alle 400 g blanchieren), Mais, Ei, Frühlingszwiebeln, Butter. Weniger Röstaroma, aber alle 6 Schüsseln in 4 Minuten.
 
 ### 3. Dessert: Yuzu Panna Cotta & Frucht-Kanten
 

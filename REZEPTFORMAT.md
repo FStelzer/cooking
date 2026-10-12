@@ -199,6 +199,18 @@ Prosa-Zeile. Fette Zeilen **mit Text dahinter** (`**Teller-Logik:** …`,
 `**Kind (3 J.):** …`, `**Beilagen während der Marinierzeit:** \~40 Min. aktiv.`) sind
 Prosa-Blöcke, keine Komponenten.
 
+**Was zu welchem Schritt gehört** — drei Fälle, die gleich aussehen können:
+
+| Fall | Form | Landet |
+|---|---|---|
+| Hinweis zum Schritt (Technik, Gar-Check, Dosierung am Tisch, Fallback, Alternative) | Zitat direkt nach dem Schritt: `> **Technik:** …` | im Schritt (Kochmodus zeigt ihn als Kasten). Mengen in Zitaten zählen **nicht** in die Einkaufsliste — eine echte Anleitung mit Mengen (z. B. „Sonst selbst ansetzen: 150 g Chilis …“) gehört als normaler Text in den Schritt |
+| Einleitung einer Komponente (Verhältnis, Zutaten-Übersicht, Ziel) | Text zwischen Komponenten-Zeile und ihrem ersten Schritt | `intro` der Komponente, im Kochmodus über ihrem ersten Schritt |
+| Überleitung (`**Kochtag:** \~1 Std. vor dem Essen.`, `**Beilagen nebenher:** …`), `**Kind (3 J.):** …`, `> **Profi-Tipps:**` | eigener Absatz `**Label:** …` nach Leerzeile | Prosa-Block außerhalb der Schritte, nur unter „Lesen“ |
+
+Faustregel: Muss man es **beim Ausführen dieses Schritts** lesen, ist es ein Zitat. Ein
+langer `**Label:** …`-Absatz direkt nach einem Schritt ist meist ein vergessenes
+Zitat — `cli lint` weist darauf hin.
+
 **Schritte** haben immer diese Form:
 
 ```markdown

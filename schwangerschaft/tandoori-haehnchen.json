@@ -874,7 +874,7 @@
                 "typical": "PT3M",
                 "source": "3 Min."
               },
-              "text": "**1 EL Ghee**, **½ TL Kreuzkümmel**, **1–2 Knoblauchzehen** in Scheiben goldgelb, Prise Paprika — **kein Chili** — über den kleinen Topf. Prise Garam Masala, Spritzer Zitrone. Beide Töpfe warm halten; Dal wird beim Stehen dicker — mit heißem Wasser wieder einstellen.",
+              "text": "**1 EL Ghee**, **½ TL Kreuzkümmel**, **1–2 Knoblauchzehen** in Scheiben goldgelb, Prise Paprika — **kein Chili** — über den kleinen Topf. Prise Garam Masala, Spritzer Zitrone.\n\nBeide Töpfe warm halten; Dal wird beim Stehen dicker — mit heißem Wasser wieder einstellen.",
               "action": "**1 EL Ghee**, **½ TL Kreuzkümmel**, **1–2 Knoblauchzehen** in Scheiben goldgelb, Prise Paprika — **kein Chili** — über den kleinen Topf.",
               "limits": [
                 "1 EL Ghee",
@@ -1544,11 +1544,12 @@
                 "typical": "PT5M",
                 "source": "5 Min."
               },
-              "text": "Pflicht: Thermometer am Knochen entlang in den dicksten Oberschenkel: **≥ 75 °C**; bei Keulen mit Knochen ist 80–85 °C texturmäßig sogar besser (wie beim Poulet au vinaigre). Saft klar, kein Rosa am Knochen. **Jedes Stück der Kinder-Charge separat messen** — kleine Stücke sind schneller, große langsamer. 5 Min. ruhen.",
+              "text": "Pflicht: Thermometer am Knochen entlang in den dicksten Oberschenkel: **≥ 75 °C**; bei Keulen mit Knochen ist 80–85 °C texturmäßig sogar besser (wie beim Poulet au vinaigre). Saft klar, kein Rosa am Knochen. **Jedes Stück der Kinder-Charge separat messen** — kleine Stücke sind schneller, große langsamer. 5 Min. ruhen.\n\n> **Ofen-Alternative (Swasthi-Route):** 240 °C Ober-/Unterhitze, Fleisch auf einem Gitter über einem Blech, **15 Min., wenden, weitere 12–15 Min.**, dann 3–4 Min. Grillfunktion oder mit dem Küchenbrenner die Kanten anrösten. Thermometer wie oben.",
               "action": "Pflicht: Thermometer am Knochen entlang in den dicksten Oberschenkel: **≥ 75 °C**; bei Keulen mit Knochen ist 80–85 °C texturmäßig sogar besser (wie beim Poulet au vinaigre).",
               "limits": [
                 "≥ 75 °C",
-                "Jedes Stück der Kinder-Charge separat messen"
+                "Jedes Stück der Kinder-Charge separat messen",
+                "15 Min., wenden, weitere 12–15 Min."
               ],
               "timers": [
                 {
@@ -1557,6 +1558,29 @@
                     "typical": "PT5M"
                   },
                   "text": "5 Min."
+                },
+                {
+                  "label": "Gar-Check",
+                  "duration": {
+                    "typical": "PT15M"
+                  },
+                  "text": "15 Min."
+                },
+                {
+                  "label": "Gar-Check",
+                  "duration": {
+                    "min": "PT12M",
+                    "max": "PT15M"
+                  },
+                  "text": "12–15 Min."
+                },
+                {
+                  "label": "Gar-Check",
+                  "duration": {
+                    "min": "PT3M",
+                    "max": "PT4M"
+                  },
+                  "text": "3–4 Min."
                 }
               ],
               "temps": [
@@ -1570,6 +1594,11 @@
                   "text": "80–85 °C",
                   "min": 80,
                   "max": 85
+                },
+                {
+                  "kind": "ziel",
+                  "text": "240 °C",
+                  "value": 240
                 }
               ],
               "ingredients": [],
@@ -1629,12 +1658,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "markdown",
-      "title": "Ofen-Alternative (Swasthi-Route)",
-      "level": "bold",
-      "markdown": "**Ofen-Alternative (Swasthi-Route):** 240 °C Ober-/Unterhitze, Fleisch auf einem Gitter über einem Blech, **15 Min., wenden, weitere 12–15 Min.**, dann 3–4 Min. Grillfunktion oder mit dem Küchenbrenner die Kanten anrösten. Thermometer wie oben."
     },
     {
       "type": "schedule",
@@ -1807,8 +1830,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:04:24Z",
-    "sourceHash": "be3d079056bca503",
+    "generatedAt": "2026-10-12T15:09:48Z",
+    "sourceHash": "9ff336c59f30770e",
     "quantities": [
       {
         "ingredient": "haehnchenschenkel",

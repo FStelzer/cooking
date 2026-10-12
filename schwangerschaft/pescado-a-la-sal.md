@@ -109,7 +109,7 @@ Während der Fisch backt: 1½ Bund Petersilie (nur Blätter) mit optional einer 
 *nach Garprobe & Ruhen*
 Am Tisch oder am Herd: Blech auf den Tisch (Untersetzer!). Mit dem Löffelrücken entlang der geritzten Bauchlinie **kräftig klopfen**, bis die Kruste bricht; obere Platte in Stücken abheben, Salzreste vom Fisch wegpinseln (Backpinsel oder Küchenpapier). **Haut vom Kopf zum Schwanz abziehen** — kommt mit den Schuppen in einem Stück. Oberes Filet mit zwei Löffeln entlang der Mittellinie vom Rückgrat lösen und abheben, Bauchgräten mitnehmen. Rückgrat samt Kopf abheben, unteres Filet freilegen, Haut unten drin lassen.
 
-**Wichtig fürs Kind (und alle):** Filets auf dem Teller nochmal mit den Fingern auf Gräten prüfen — Wolfsbarsch hat feine Rückengräten am Filetrand.
+> **Wichtig fürs Kind (und alle):** Filets auf dem Teller nochmal mit den Fingern auf Gräten prüfen — Wolfsbarsch hat feine Rückengräten am Filetrand.
 
 **10. Anrichten (ca. 3 Min.)**
 *nach Aufklopfen & Tranchieren, Linsen, Grillgemüse, Salsa verde*

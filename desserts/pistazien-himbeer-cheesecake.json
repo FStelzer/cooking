@@ -228,7 +228,7 @@
                 "typical": "PT10M",
                 "source": "10 Min."
               },
-              "text": "300 g Kekse fein mahlen (Stabmixer/Mixer oder Beutel + Nudelholz). 125 g Butter schmelzen, mit Keksbröseln, 60 ml Milch und optional 1 EL weißer Schokocreme verrühren. In die mit Backpapier ausgelegte Form geben und mit einem Glasboden fest andrücken. In den Kühlschrank.",
+              "text": "300 g Kekse fein mahlen (Stabmixer/Mixer oder Beutel + Nudelholz). 125 g Butter schmelzen, mit Keksbröseln, 60 ml Milch und optional 1 EL weißer Schokocreme verrühren. In die mit Backpapier ausgelegte Form geben und mit einem Glasboden fest andrücken. In den Kühlschrank.\n\n> Die 60 ml Milch sind ungewöhnlich (klassisch: nur Butter). Sie machen den\n> Boden weicher und weniger krümelig — passend zu einem no-bake-Kuchen, den man\n> mit der Gabel isst. Wer einen knackigen Boden will: Milch weglassen und\n> 150 g Butter nehmen.",
               "action": "300 g Kekse fein mahlen (Stabmixer/Mixer oder Beutel + Nudelholz).",
               "ingredients": [
                 {
@@ -253,7 +253,8 @@
                     "text": "60 ml Milch",
                     "value": 60.0,
                     "unit": "ml"
-                  }
+                  },
+                  "occurrence": 1
                 }
               ],
               "meta": "*jederzeit*",
@@ -381,7 +382,7 @@
                 "source": "1 Std."
               },
               "attention": "passive",
-              "text": "Komplett durchkühlen lassen (\\~1 Std.). Nicht abkürzen: Kommt der Fil auf eine warme Fruchtschicht, verläuft die Grenze und die Sahne fällt zusammen.",
+              "text": "Komplett durchkühlen lassen (\\~1 Std.).\n\nNicht abkürzen: Kommt der Fil auf eine warme Fruchtschicht, verläuft die Grenze und die Sahne fällt zusammen.",
               "action": "Komplett durchkühlen lassen (\\~1 Std.).",
               "timers": [
                 {
@@ -612,12 +613,6 @@
       ]
     },
     {
-      "type": "markdown",
-      "title": "> Die 60 ml Milch sind ungewöhnlich (kla",
-      "level": "bold",
-      "markdown": "> Die 60 ml Milch sind ungewöhnlich (klassisch: nur Butter). Sie machen den\n> Boden weicher und weniger krümelig — passend zu einem no-bake-Kuchen, den man\n> mit der Gabel isst. Wer einen knackigen Boden will: Milch weglassen und\n> 150 g Butter nehmen."
-    },
-    {
       "type": "learnings",
       "title": "Learnings",
       "cooked": "08/2026",
@@ -635,8 +630,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:04:24Z",
-    "sourceHash": "c5cb9d599786928f",
+    "generatedAt": "2026-10-12T15:09:47Z",
+    "sourceHash": "6a8a718b74eef8ee",
     "quantities": [
       {
         "ingredient": "mascarpone",

@@ -266,7 +266,7 @@
                 "source": "15–30 Min."
               },
               "attention": "passive",
-              "text": "Mit Schnitt nach unten 15–30 Min. auf Küchenpapier entwässern lassen. Abtupfen, nicht abspülen.",
+              "text": "Mit Schnitt nach unten 15–30 Min. auf Küchenpapier entwässern lassen. Abtupfen, nicht abspülen.\n\n> **Salz-Budget:** Das Gericht wird an drei Stellen gesalzen (Aubergine,\n> Füllung, Angießflüssigkeit) und der Sud kocht danach stark ein. Bei jedem\n> Schritt für sich zurückhaltend bleiben — aber am Ende, kalt, konsequent\n> nachsalzen (siehe „Servieren“). Beides gilt gleichzeitig; siehe Learnings.",
               "action": "Mit Schnitt nach unten 15–30 Min. auf Küchenpapier entwässern lassen.",
               "timers": [
                 {
@@ -597,7 +597,7 @@
                 "source": "ca. 10 Min.",
                 "estimated": true
               },
-              "text": "Hier wird final abgeschmeckt: **Erst im lauwarmen/kalten Zustand endgültig salzen und säuern.** Kalt nimmt man salzig und süß schwächer wahr als heiß; was warm aus dem Ofen „rund\" schmeckt, ist lauwarm flach. Also: Sud probieren, Salz nachziehen, deutlich mehr Zitrone als man vermutet. Mit Schmorsud beträufeln, restliche Petersilie, Saft der restlichen ½ Zitrone. Dazu 500 g Joghurt — **besser als pur: 1 geriebene rohe Knoblauchzehe + Salz im Joghurt**, das bringt die meiste Wucht pro Aufwand. Fladenbrot oder Baguette zum Tunken — der Sud ist wie beim Oktopus Gold. Optional Bulgur-Pilav aus 250 g grobem Bulgur. Erwachsene: Pul Biber großzügig.",
+              "text": "Hier wird final abgeschmeckt: **Erst im lauwarmen/kalten Zustand endgültig salzen und säuern.** Kalt nimmt man salzig und süß schwächer wahr als heiß; was warm aus dem Ofen „rund\" schmeckt, ist lauwarm flach. Also: Sud probieren, Salz nachziehen, deutlich mehr Zitrone als man vermutet.\n\nMit Schmorsud beträufeln, restliche Petersilie, Saft der restlichen ½ Zitrone. Dazu 500 g Joghurt — **besser als pur: 1 geriebene rohe Knoblauchzehe + Salz im Joghurt**, das bringt die meiste Wucht pro Aufwand. Fladenbrot oder Baguette zum Tunken — der Sud ist wie beim Oktopus Gold. Optional Bulgur-Pilav aus 250 g grobem Bulgur. Erwachsene: Pul Biber großzügig.",
               "action": "Hier wird final abgeschmeckt: **Erst im lauwarmen/kalten Zustand endgültig salzen und säuern.** Kalt nimmt man salzig und süß schwächer wahr als heiß; was warm aus dem Ofen „rund\" schmeckt, ist lauwarm flach.",
               "limits": [
                 "Erst im lauwarmen/kalten Zustand endgültig salzen und säuern.",
@@ -645,12 +645,6 @@
     },
     {
       "type": "markdown",
-      "title": "> **Salz-Budget:** Das Gericht wird an d",
-      "level": "bold",
-      "markdown": "> **Salz-Budget:** Das Gericht wird an drei Stellen gesalzen (Aubergine,\n> Füllung, Angießflüssigkeit) und der Sud kocht danach stark ein. Bei jedem\n> Schritt für sich zurückhaltend bleiben — aber am Ende, kalt, konsequent\n> nachsalzen (siehe „Servieren“). Beides gilt gleichzeitig; siehe Learnings."
-    },
-    {
-      "type": "markdown",
       "title": "Kinder-Anpassung",
       "level": 2,
       "markdown": "- Von Haus aus null Schärfe — Pul Biber nur pro Teller.\n- Kein Alkohol im Gericht.\n- Weiche süße Zwiebel-Tomaten-Füllung mit Joghurt und Brot ist zugänglich;\n  falls die Auberginen-Textur nicht ankommt, ist Füllung + Sud + Brot allein\n  schon eine valide Kinderportion.",
@@ -676,8 +670,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:04:24Z",
-    "sourceHash": "ab57f073bd62be44",
+    "generatedAt": "2026-10-12T15:09:47Z",
+    "sourceHash": "afbfb6238888415d",
     "quantities": [
       {
         "ingredient": "auberginen",

@@ -387,6 +387,8 @@ def annotate_text(step: dict, text: str, ingredients: list[dict], lint: Lint, wh
     if temps: step["temps"] = temps
     # Dosierungen; Inline-Alternativen („80 g Wasser (Dinkel: 40 g)“) werden für die Grund-Dosierung maskiert
     alts, masked = [], text
+    # Zitate sind Hinweise (Alternativen, Fallbacks, Dosierung am Tisch): Mengen darin zählen nicht als Verbrauch
+    masked = re.sub(r"(?m)^>.*$", lambda m: " " * len(m.group(0)), masked)
     if (pat := lint.alt) is not None:
         for m in pat.finditer(text):
             alts.append(m)
@@ -677,6 +679,7 @@ def parse_body(text: str, scope: str, ingredients: list[dict], lint: Lint, cours
         line = lines[i]
         stripped = line.strip()
         if stripped == "" or stripped == "---":
+            if cur_step is not None and cur_text and cur_text[-1] != "": cur_text.append("")  # Absatzgrenze im Schritt behalten (zwei Zitate ≠ eins)
             i += 1; continue
         sm = STEP_RE.match(stripped)
         if sm:
@@ -722,8 +725,10 @@ def parse_body(text: str, scope: str, ingredients: list[dict], lint: Lint, cours
                 cur_task["heading"] += "\n\n" + lines[k].strip()
                 i = k
             i += 1; continue
-        if cur_step is not None and not stripped.startswith("> ") and not (LABEL_TEXT_RE.match(stripped) and lines[i - 1].strip() == ""):
+        # Zitate (`> **Technik:** …`) sind Hinweise zum laufenden Schritt; `**Label:** …` nach Leerzeile ist eine Überleitung
+        if cur_step is not None and not stripped.startswith("> **Profi-Tipps") and not (LABEL_TEXT_RE.match(stripped) and lines[i - 1].strip() == ""):
             cur_text.append(line); i += 1; continue
+        after_step = cur_step["label"] if cur_step is not None else None
         flush_step()
         # Prosa-Block: bis zur Leerzeile
         j = i
@@ -732,8 +737,12 @@ def parse_body(text: str, scope: str, ingredients: list[dict], lint: Lint, cours
         block = "\n".join(lines[i:j]).strip()
         if first_block and ITALIC_RE.match(block.replace("\n", " ")) and intro is None:
             intro = block
+        elif cur_task is not None and not cur_task["steps"] and not block.startswith("> **Profi-Tipps"):
+            cur_task["intro"] = (cur_task.get("intro", "") + "\n\n" + block).strip()  # Einleitung der Komponente vor ihrem ersten Schritt
         else:
             lt = LABEL_TEXT_RE.match(block.split("\n")[0])
+            if after_step and lt and len(lt["text"]) > 80 and not ITALIC_RE.match(lt["text"].strip()):  # kurze Überleitungen und Zutaten-Übersichten sind gewollt
+                lint.add(f"{scope}/nach Schritt {after_step}", f"'**{lt['label'].strip()}:** …' steht als Überleitung außerhalb des Schritts — Hinweis zum Schritt? Dann als Zitat '> **{lt['label'].strip()}:** …'")
             title = lt["label"].strip() if lt else ("Profi-Tipps" if block.startswith("> **Profi-Tipps") else block.split("\n")[0][:40])
             tag = next((t for key, t in SECTION_TAGS if key in title.lower()), None)
             sec = {"type": "markdown", "title": title, "level": "bold", "markdown": block}

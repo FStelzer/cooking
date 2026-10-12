@@ -663,10 +663,20 @@
                 "typical": "PT40M",
                 "source": "40 Min."
               },
-              "text": "KRITISCH: Sanft köcheln lassen, **ohne Deckel**. Regelmäßig grauen Schaum abschöpfen.",
+              "text": "KRITISCH: Sanft köcheln lassen, **ohne Deckel**. Regelmäßig grauen Schaum abschöpfen.\n\n> ⚠️ **Nicht länger als 45 Min köcheln**, sonst werden die Karkassen bitter.",
               "action": "KRITISCH: Sanft köcheln lassen, **ohne Deckel**.",
               "limits": [
-                "ohne Deckel"
+                "ohne Deckel",
+                "Nicht länger als 45 Min köcheln"
+              ],
+              "timers": [
+                {
+                  "label": "Köcheln",
+                  "duration": {
+                    "typical": "PT45M"
+                  },
+                  "text": "45 Min"
+                }
               ],
               "ingredients": [],
               "meta": "*Herd*",
@@ -676,16 +686,7 @@
                   "units": 1
                 }
               ],
-              "attention": "attended",
-              "timers": [
-                {
-                  "label": "Köcheln",
-                  "duration": {
-                    "typical": "PT40M"
-                  },
-                  "text": "40 Min."
-                }
-              ]
+              "attention": "attended"
             },
             {
               "id": "passieren",
@@ -829,8 +830,8 @@
                 "source": "ca. 45 Min.",
                 "estimated": true
               },
-              "text": "Kartoffel-Basis, ohne Ei: 1. 200 g mehligkochende Kartoffeln schälen, würfeln, in Salzwasser weichkochen (\\~20 Min).    Abgießen, im offenen Topf **gut ausdämpfen lassen** — je trockener, desto besser bindet die    Rouille. 2. 0,5 g Safran in 1 EL warmem Wasser ziehen lassen (10 Min). 3. 5 Knoblauchzehen mit ½ TL Salz im Mörser zu feiner Paste verarbeiten. Die noch warmen    Kartoffeln dazu und **glatt stampfen oder durch die Presse drücken** — keine Küchenmaschine    und kein Stabmixer, sonst wird sie gummig. 4. Safranwasser einrühren. 150 ml Olivenöl **tropfenweise** mit dem Schneebesen einarbeiten wie    bei Mayonnaise — erst langsam, dann im dünnen Strahl, bis eine dichte, rostfarbene Creme steht. 5. Mit 1 EL Zitronensaft, 1 Prise Cayenne und Salz abschmecken. Abgedeckt kalt stellen —    **hält 3 Tage** (kein rohes Ei). Vor dem Servieren 30 Min. Zimmertemperatur, dann nochmal    glatt rühren; ist sie zu fest, 1 TL warmen Fond einarbeiten.",
-              "action": "Kartoffel-Basis, ohne Ei: 1.",
+              "text": "Kartoffel-Basis, ohne Ei:\n\n1. 200 g mehligkochende Kartoffeln schälen, würfeln, in Salzwasser weichkochen (\\~20 Min).    Abgießen, im offenen Topf **gut ausdämpfen lassen** — je trockener, desto besser bindet die    Rouille. 2. 0,5 g Safran in 1 EL warmem Wasser ziehen lassen (10 Min). 3. 5 Knoblauchzehen mit ½ TL Salz im Mörser zu feiner Paste verarbeiten. Die noch warmen    Kartoffeln dazu und **glatt stampfen oder durch die Presse drücken** — keine Küchenmaschine    und kein Stabmixer, sonst wird sie gummig. 4. Safranwasser einrühren. 150 ml Olivenöl **tropfenweise** mit dem Schneebesen einarbeiten wie    bei Mayonnaise — erst langsam, dann im dünnen Strahl, bis eine dichte, rostfarbene Creme steht. 5. Mit 1 EL Zitronensaft, 1 Prise Cayenne und Salz abschmecken. Abgedeckt kalt stellen —    **hält 3 Tage** (kein rohes Ei). Vor dem Servieren 30 Min. Zimmertemperatur, dann nochmal    glatt rühren; ist sie zu fest, 1 TL warmen Fond einarbeiten.",
+              "action": "Kartoffel-Basis, ohne Ei:",
               "limits": [
                 "gut ausdämpfen lassen",
                 "glatt stampfen oder durch die Presse drücken",
@@ -1014,8 +1015,11 @@
                 "typical": "PT10M",
                 "source": "10 Min."
               },
-              "text": "Fond aus dem Kühlschrank in breiten Topf, langsam erhitzen.",
+              "text": "Fond aus dem Kühlschrank in breiten Topf, langsam erhitzen.\n\n> ⚠️ Nur **knapp unter dem Sieden** halten, nicht sprudelnd kochen — sonst wird die Brühe trüb\n> und der Fisch zerfällt.",
               "action": "Fond aus dem Kühlschrank in breiten Topf, langsam erhitzen.",
+              "limits": [
+                "knapp unter dem Sieden"
+              ],
               "ingredients": [],
               "meta": "*nach Durchziehen · Herd*",
               "claims": [
@@ -1024,7 +1028,16 @@
                   "units": 1
                 }
               ],
-              "attention": "active",
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Brühe erhitzen",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
               "after": [
                 "step:durchziehen"
               ]
@@ -1039,8 +1052,8 @@
                 "source": "ca. 12 Min.",
                 "estimated": true
               },
-              "text": "Gestaffelt — alles durch:\n| Schritt | Zeit | Was |\n|---|---|---|\n| Erst | 5–6 Min | Kabeljau bzw. Dorade (fester Fisch) |\n| Dann | 3 Min | Wolfsbarsch/Petersfisch (zarter) |\n| Zuletzt | 3–4 Min | Gambas + Muscheln |",
-              "action": "Gestaffelt — alles durch:\n| Schritt | Zeit | Was |\n|---|---|---|\n| Erst | 5–6 Min | Kabeljau bzw.",
+              "text": "Gestaffelt — alles durch:\n\n| Schritt | Zeit | Was |\n|---|---|---|\n| Erst | 5–6 Min | Kabeljau bzw. Dorade (fester Fisch) |\n| Dann | 3 Min | Wolfsbarsch/Petersfisch (zarter) |\n| Zuletzt | 3–4 Min | Gambas + Muscheln |\n\n> **Garprobe:** Das dickste Kabeljaustück muss sich in undurchsichtige Blätter teilen lassen,\n> Gambas komplett opak und gekrümmt, Muscheln weit geöffnet — geschlossen gebliebene wegwerfen.\n> Lieber 1 Minute länger als glasig: „à point\" ist hier nicht das Ziel.",
+              "action": "Gestaffelt — alles durch:",
               "timers": [
                 {
                   "label": "Fisch garen",
@@ -1064,6 +1077,13 @@
                     "max": "PT4M"
                   },
                   "text": "3–4 Min"
+                },
+                {
+                  "label": "Fisch garen",
+                  "duration": {
+                    "typical": "PT1M"
+                  },
+                  "text": "1 Min"
                 }
               ],
               "ingredients": [],
@@ -1318,39 +1338,10 @@
               "id": "fenchel-orange-salat",
               "name": "Fenchel-Orange-Salat"
             }
-          ]
+          ],
+          "intro": "> Klassischer sizilianischer *Insalata di Finocchi e Arance*. Die Aromen spiegeln die Brühe —\n> verbindet Vorspeise und Hauptgang harmonisch.\n\n**Timing:** Kochtag, während die Brühe langsam erhitzt (15 Min aktive Zeit, dann 5–10 Min ziehen\nlassen)."
         }
       ]
-    },
-    {
-      "type": "markdown",
-      "title": "> ⚠️ **Nicht länger als 45 Min köcheln**",
-      "level": "bold",
-      "markdown": "> ⚠️ **Nicht länger als 45 Min köcheln**, sonst werden die Karkassen bitter."
-    },
-    {
-      "type": "markdown",
-      "title": "> ⚠️ Nur **knapp unter dem Sieden** halt",
-      "level": "bold",
-      "markdown": "> ⚠️ Nur **knapp unter dem Sieden** halten, nicht sprudelnd kochen — sonst wird die Brühe trüb\n> und der Fisch zerfällt."
-    },
-    {
-      "type": "markdown",
-      "title": "Garprobe",
-      "level": "bold",
-      "markdown": "**Garprobe:** Das dickste Kabeljaustück muss sich in undurchsichtige Blätter teilen lassen,\nGambas komplett opak und gekrümmt, Muscheln weit geöffnet — geschlossen gebliebene wegwerfen.\nLieber 1 Minute länger als glasig: „à point\" ist hier nicht das Ziel."
-    },
-    {
-      "type": "markdown",
-      "title": "> Klassischer sizilianischer *Insalata d",
-      "level": "bold",
-      "markdown": "> Klassischer sizilianischer *Insalata di Finocchi e Arance*. Die Aromen spiegeln die Brühe —\n> verbindet Vorspeise und Hauptgang harmonisch."
-    },
-    {
-      "type": "markdown",
-      "title": "Timing",
-      "level": "bold",
-      "markdown": "**Timing:** Kochtag, während die Brühe langsam erhitzt (15 Min aktive Zeit, dann 5–10 Min ziehen\nlassen)."
     },
     {
       "type": "schedule",
@@ -1462,8 +1453,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:04:24Z",
-    "sourceHash": "2ca1e11316d49a6a",
+    "generatedAt": "2026-10-12T15:09:48Z",
+    "sourceHash": "72d1584d1cff334d",
     "quantities": [
       {
         "ingredient": "fischkarkassen",

@@ -38,6 +38,9 @@ Lies zuerst, in dieser Reihenfolge, und halte dich daran:
    - Mengen im Schritt als `Zahl Einheit Zutat` mit dem Zutatenwort aus der
      Einkaufsliste. Jede Zutat der Liste kommt in mindestens einem Schritt vor.
    - Komponenten-Zeilen mit Zeitangabe, wenn es mehrere Stränge gibt.
+   - Hinweise zum Schritt (Technik, Gar-Check, Fallback) als Zitat `> **Label:** …`
+     direkt nach dem Schritt — ein freistehender `**Label:** …`-Absatz ist eine
+     Überleitung und fehlt im Kochmodus (REZEPTFORMAT.md §5).
    - Einkaufsliste nach Läden und Warengruppen, Gebinde statt Bedarf, `— Gang N`
      bei Menüs; Kleinmengen unter `### Vorrat prüfen`.
    - `## Kinder-Anpassung`, bei Schwangerschaft `## Schwangerschaft & GDM`,
@@ -62,6 +65,8 @@ Erklärungen, Tipps, Learnings — alles bleibt wörtlich. Geändert wird nur di
   „nach dem Anbraten", „≤ 30 Min. vor dem Anrichten").
 - Mengen, die nur in der Einkaufsliste stehen, in den Schritt ziehen, der sie
   verwendet („900 g Schweinebauch würfeln").
+- Freistehende `**Label:** …`-Absätze nach einem Schritt, die beim Ausführen
+  gelesen werden müssen, zu Zitaten machen (`> **Label:** …`); Lint weist darauf hin.
 - Komponenten-Labels mit Zeitangabe nach der Zeit-Grammatik; Kurzansicht-Regel
   (erster Satz = Handlung) prüfen und nur den Satzbau anfassen, nie den Sinn.
 - Einkaufsliste nach Läden und Warengruppen; Kleinmengen nach `### Vorrat prüfen`;

@@ -198,9 +198,9 @@ Gestaffelt — alles durch:
 | Dann | 3 Min | Wolfsbarsch/Petersfisch (zarter) |
 | Zuletzt | 3–4 Min | Gambas + Muscheln |
 
-**Garprobe:** Das dickste Kabeljaustück muss sich in undurchsichtige Blätter teilen lassen,
-Gambas komplett opak und gekrümmt, Muscheln weit geöffnet — geschlossen gebliebene wegwerfen.
-Lieber 1 Minute länger als glasig: „à point" ist hier nicht das Ziel.
+> **Garprobe:** Das dickste Kabeljaustück muss sich in undurchsichtige Blätter teilen lassen,
+> Gambas komplett opak und gekrümmt, Muscheln weit geöffnet — geschlossen gebliebene wegwerfen.
+> Lieber 1 Minute länger als glasig: „à point" ist hier nicht das Ziel.
 
 **17. Anrichten (ca. 5 Min.)**
 *nach Fisch garen, Rouille zubereiten*
