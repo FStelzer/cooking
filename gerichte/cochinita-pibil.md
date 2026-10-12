@@ -2,17 +2,19 @@
 
 *Aktive Zeit \~1,5 Std. (Großteil: Tortillas), gesamt über Nacht + \~5 Std. (Vorabend 20 Min., dann \~4 Std. Ofen). Equipment: Bräter/Schmortopf mit Deckel, Stabmixer, Mörser, Küchenbrenner (Bananenblätter). Achtung Vorlauf: Online-Bestellung 1–2 Wochen vorher!*
 
-Yukatekischer Klassiker: Schweineschulter über Nacht in Recado rojo (Achiote) und Bitterorangen-Ersatz mariniert, in Bananenblättern bei 150 °C geschmort, bis sie zerfällt, im eigenen Saft gezupft. Dazu die zwei Pflicht-Begleiter — eingelegte rote Zwiebeln und Habanero-Salsa (separat!) — und frische, selbstgemachte Mais-Tortillas.
+Yukatekischer Klassiker: Schweineschulter über Nacht in Recado rojo (Achiote) und Bitterorangen-Ersatz mariniert, in Bananenblättern bei 150 °C geschmort, bis sie zerfällt, im eigenen Saft gezupft. Dazu die Pflicht-Begleiter — eingelegte rote Zwiebeln und Habanero-Salsa (separat!), seit 10/2026 plus Chiltomate als milde zweite Salsa — und frische, selbstgemachte Mais-Tortillas.
 
 ## Beschaffung
 
 - **Online-Bestellung (Mexhaus, 1–2 Wochen Vorlauf, deckt alles Mexikanische ab):**
   - **Achiote-Paste El Yucateco, 2× 100 g** (\~2,50 €/Stück; das Rezept braucht 100 g — der zweite Block ist bewusst Vorrat). El Yucateco vor La Anita — Letztere enthält künstliche Farbstoffe und färbt unnatürlich pink. Ziegelform, hält kühl monatelang. *Verfügbarkeit der 100-g-Blöcke schwankt (Stand 07/2026 zeitweise ausverkauft) — Alternativen im selben Shop: Lol-Tun oder Pepe Comala, je 500 g / \~12–14 €.*
   - **Masa harina (nixtamalisiert), 1 kg** — z.B. Naturelo (\~8 €, Stand 07/2026 lieferbar); Maseca gibt es alternativ auch bei Kaufland. Rezept braucht 500 g.
+  - **Tortillapresse** (\~15–25 €, Gusseisen oder Holz, Ø 19–20 cm): seit dem ersten Durchgang (10/2026) klare Empfehlung — mit dem Topfboden gepresst werden die Tortillas zu dick, brauchen länger in der Pfanne und brennen eher an. Nützt für jedes weitere mexikanische Projekt (Tacos, Quesadillas, Tostadas).
   - Optional als Backup: haltbare Mais-Tortillas (qualitativ klar unter selbstgemacht).
   - Optional als Habanero-Backup (falls REWE keine frischen hat): getrocknete Habaneros (\~6 €/30 g) oder eine El-Yucateco-Habanero-Sauce für den Tisch — beides klar unter frisch geröstet, aber besser als der Chili-Notnagel.
 - **Asialaden (vorher anrufen):** TK-Bananenblätter, 450–500-g-Packung — Chance gut, Rest ist wieder einfrierbar. Fallback: Backpapier + Deckel. **Keine Alufolie direkt am Fleisch** — saure (und salzige) Lebensmittel lösen Aluminium aus der Folie ([BfR-Empfehlung](https://www.bfr.bund.de/assets/01_Ver%C3%B6ffentlichungen/Fragen_und_Antworten_zu_Aluminium_in_Lebensmitteln_und_verbrauchernahen_Produkten.pdf)). Als äußere Lage *über* Blättern oder Backpapier ist Folie unkritisch.
 - **REWE Center:** Schweineschulter ohne Schwarte, Fettdeckel dranlassen. **Realistisch nur ohne Knochen (1,5–1,7 kg)** — dort wird nichts vor Ort zerlegt, „mit Knochen vorbestellen" ist Wunschdenken. Wer die Knochen-Version will (1,8–2 kg, etwas mehr Geschmack): Selgros — aber Trade-off Anfahrt beachten; der Unterschied ist beim Schmoren in der kompletten Marinade überschaubar, ohne Knochen ist der ehrliche Plan A. Habanero gibt es bei REWE gelegentlich frisch — Plan B: Mexhaus-Backup (siehe oben), Plan C: normale rote Chilis + Limette (aromatisch klar schwächer).
+- **Pfanne für die Tortillas:** Traditionell ein Comal (flache Gusseisen- oder Stahlplatte). Edelstahl und beschichtet funktionieren, aber in beiden brannten 10/2026 punktuell Stellen an, die sich schwer lösen ließen. Eine schwere Gusseisenpfanne wäre hier der dritte Anwendungsfall nach Bulgogi und Steaks/Smashburger (siehe CLAUDE.md) — kein Muss, die Hauptfixes sind dünner pressen und mittlere Hitze (Schritt „Tortillas“).
 - **Keine Bitterorangen nötig:** Sterling-Ersatzmischung aus Orange + Limette + Grapefruit (siehe Liste).
 
 ## Einkaufsliste
@@ -23,7 +25,7 @@ Yukatekischer Klassiker: Schweineschulter über Nacht in Recado rojo (Achiote) u
 
 - [ ] 200 g Achiote-Paste *(El Yucateco, 2 × 100 g: 1× fürs Rezept, 1× Vorrat; Ausweich-Marken siehe Beschaffung)*
 - [ ] 1 kg Masa harina, nixtamalisiert *(z. B. Naturelo) — Rezept braucht 500 g*
-- [ ] Optional: Tortillapresse *(\~15–25 €, wenn öfter mexikanisch geplant — Zip-Beutel + Topfboden geht auch)*
+- [ ] Tortillapresse, Ø 19–20 cm *(\~15–25 €, einmalig — Topfboden presst zu dick, siehe Beschaffung)*
 - [ ] Optional: Habanero-Backup *(getrocknet oder El-Yucateco-Sauce), falls REWE-Habaneros ausfallen*
 
 ### Asialaden
@@ -41,8 +43,11 @@ Yukatekischer Klassiker: Schweineschulter über Nacht in Recado rojo (Achiote) u
 - [ ] 5 Limetten *(2 Marinade, 1–2 Zwiebel-Lake, 1 Salsa)*
 - [ ] 1 Grapefruit *(½ Marinade, ½ Lake — liefert die Bitterorangen-Bitterkeit, nicht weglassen)*
 - [ ] 3 rote Zwiebeln
+- [ ] 1 weiße Zwiebel *(¼ für die Chiltomate)*
+- [ ] 450 g Tomaten, reif *(Rispen- oder Roma-Tomaten, für die Chiltomate)*
+- [ ] 1 Bund Koriander *(Chiltomate)*
 - [ ] 1 Knolle Knoblauch *(6–8 Zehen Marinade, 2 Salsa)*
-- [ ] 2–3 frische Habaneros *(Fallbacks siehe Beschaffung: Mexhaus-Backup → rote Chilis)*
+- [ ] 3–4 frische Habaneros *(2–3 Salsa tamulada, 1 Chiltomate; Fallbacks siehe Beschaffung: Mexhaus-Backup → rote Chilis)*
 
 **Sonstiges:**
 - [ ] Einweg-Handschuhe *(Annatto färbt extrem — auch Bretter/Kleidung schützen)*
@@ -91,15 +96,28 @@ Bei Std. 1–1,5 des Schmorens: 3 rote Zwiebeln in 3-mm-Ringe, kochendes Wasser 
 
 **8. Salsa tamulada (10 Min.)**
 *jederzeit · Herd*
-Bei Std. 3: 2–3 Habaneros (+ 2 Knoblauchzehen) in der Pfanne rundum rösten bis fleckig-angekohlt, im Mörser mit Salz zerdrücken, mit Saft von 1 Limette aufgießen (oder ½ Orange + ½ Limette — näher an naranja agria, so macht es Meatwave). **Kommt ausschließlich separat auf den Tisch.** *2–3 Habaneros nicht weiter eindampfen — das Original rechnet 20 Chilis auf ½ Tasse Saft; die Salsa ist als vollwertige scharfe Komponente für die Erwachsenen gedacht, nicht als Deko.*
+Bei Std. 3: 2–3 Habaneros (+ 2 Knoblauchzehen) in der Pfanne rundum rösten bis fleckig-angekohlt, im Mörser mit Salz zerdrücken, mit Saft von 1 Limette aufgießen (oder ½ Orange + ½ Limette — näher an naranja agria, so macht es Meatwave). **Kommt ausschließlich separat auf den Tisch.** *2–3 Habaneros nicht weiter eindampfen — das Original rechnet 20 Chilis auf ½ Tasse Saft; die Salsa ist als vollwertige scharfe Komponente für die Erwachsenen gedacht, nicht als Deko. Sie bleibt „pica pica“ (10/2026, Urteil eines Mexikaners: super, aber sehr scharf): Kerne und Häutchen zu entfernen ändert wenig, weil Habaneros auch im Fruchtfleisch scharf sind. Wer sie zahmer will, nimmt 1–2 Habaneros und röstet 1 Tomate mit — die eigentliche milde Option ist aber die Chiltomate.*
 
-**9. Tortillas (ca. 60 Min., parallel)**
+**9. Chiltomate (ca. 20 Min.)**
 *jederzeit · Herd*
-Bei Std. 3, insgesamt \~60 Min. inkl. Ruhe: 500 g Masa harina mit \~600–650 ml warmem (\~40 °C) Wasser zu Knetmasse-Konsistenz verkneten — *die Hydration ist markenabhängig: Maseca/Naturelo liegen etwa bei diesem Verhältnis, Masienda-Mehl nimmt deutlich mehr (dort 120 g : 200 ml). Wasser schrittweise, Ziel: weiche Play-Doh-Konsistenz.* 15–30 Min. abgedeckt ruhen (Masienda: \~15 Min. reichen). Golfball-Kugeln (\~45 g) zwischen aufgeschnittenem Zip-Beutel flach pressen (Presse oder Topfboden), in trockener heißer Pfanne backen: \~30 Sek., wenden, \~30 Sek., nochmal wenden — beim dritten Kontakt sollen sie puffen. In einem Tuch warm stapeln. Ergibt \~22–26 Stück; fürs Abendessen reichen \~12–14, den Rest trotzdem backen und für die Reste-Mahlzeiten kurz in der Pfanne auffrischen (roher Teig trocknet über Nacht aus). *Reißen die Ränder beim Pressen: Teig ist zu trocken, Wasser nachkneten.*
+Milde zweite Salsa, der yukatekische Standard-Begleiter neben der Tamulada. 450 g Tomaten, ¼ weiße Zwiebel und 1 Habanero (ganz) in der trockenen heißen Pfanne bei mittlerer Hitze 10–12 Min. rösten, einmal wenden, bis die Haut stellenweise schwarz ist (alternativ unter dem Backofengrill). Abkühlen lassen. Tomaten grob zerdrücken (Mörser oder 2–3 Pulse im Mixer — stückig lassen), Zwiebel fein hacken, mit 3 EL gehacktem Koriander und ½ TL Salz mischen. **Jetzt die Kinderportion abnehmen.** Habanero entkernen, fein hacken und **erst die Hälfte** unterrühren, abschmecken, dann ggf. mehr. Mit einem Spritzer Limette abrunden. *Lauwarm oder raumtemperiert servieren; hält 2 Tage im Kühlschrank.*
 
-**10. Zupfen & Servieren (ca. 20 Min.)**
-*nach Schmoren, Cebollas encurtidas, Salsa tamulada, Tortillas*
-Fleisch aus den Blättern, ggf. Knochen entfernen, grob zerzupfen und **den gesamten Schmorsaft wieder unterheben** (wirkt er dünn: kurz einreduzieren). 10–15 Min. ruhen lassen. Tisch: Fleisch, Tortilla-Stapel, Zwiebeln, Salsa separat.
+**10. Tortillas (ca. 60 Min., parallel)**
+*jederzeit · 2 Pfannen*
+Bei Std. 3, insgesamt \~60 Min. inkl. Ruhe: 500 g Masa harina mit \~600–650 ml warmem (\~40 °C) Wasser zu Knetmasse-Konsistenz verkneten — *die Hydration ist markenabhängig: Maseca/Naturelo liegen etwa bei diesem Verhältnis, Masienda-Mehl nimmt deutlich mehr (dort 120 g : 200 ml). Wasser schrittweise, Ziel: weiche Play-Doh-Konsistenz.* 15–30 Min. abgedeckt ruhen (Masienda: \~15 Min. reichen).
+
+- **Kugeln \~38 g** (etwas kleiner als ein Golfball) — kleinere Kugeln lassen sich dünner pressen.
+- **Dünn pressen, auf \~1,5–2 mm:** zwischen aufgeschnittenem Zip-Beutel in der Tortillapresse, Beutel dabei einmal um 90° drehen und nachpressen. Ohne Presse: flachen schweren Topf mit dem ganzen Körpergewicht drücken, Fladen drehen, zweimal pressen. *10/2026 waren die Topf-gepressten Tortillas zu dick — sie brauchten länger, puffen schlechter und brannten eher an.*
+- **Zwei Pfannen parallel** auf **mittlerer bis mittelhoher Hitze** (Induktion \~6–7 von 9, nicht Maximalhitze), trocken, ohne Fett. Erst 4–6 Fladen vorpressen und zwischen Beutelfolie stapeln, dann im Takt backen.
+- \~30 Sek., wenden, \~45 Sek., nochmal wenden — beim dritten Kontakt sollen sie puffen (dickere Fladen: je 15 Sek. länger). Leicht mit dem Pfannenwender oder einem Tuch andrücken hilft beim Puffen.
+- **Zwischen den Fladen die Pfanne mit trockenem Küchenpapier auswischen** — lose Masa-Krümel verkohlen sonst und backen sich als schwarze Punkte fest. Brennen trotzdem Stellen an: Hitze eine Stufe runter.
+- In einem Tuch warm stapeln.
+
+Ergibt \~28–30 Stück; fürs Abendessen reichen \~14–16, den Rest trotzdem backen und für die Reste-Mahlzeiten kurz in der Pfanne auffrischen (roher Teig trocknet über Nacht aus). *Reißen die Ränder beim Pressen: Teig ist zu trocken, Wasser nachkneten. Pfanne danach: mit Wasser und 1 EL Natron aufkochen, 10 Min. stehen lassen — die Masa-Reste lösen sich dann mit dem Spatel.*
+
+**11. Zupfen & Servieren (ca. 20 Min.)**
+*nach Schmoren, Cebollas encurtidas, Salsa tamulada, Chiltomate, Tortillas*
+Fleisch aus den Blättern, ggf. Knochen entfernen, grob zerzupfen und **den gesamten Schmorsaft wieder unterheben** (wirkt er dünn: kurz einreduzieren). 10–15 Min. ruhen lassen. Tisch: Fleisch, Tortilla-Stapel, Zwiebeln, Chiltomate, Salsa tamulada separat.
 
 ## Zeitplan (Essen um 18:00)
 
@@ -109,7 +127,7 @@ Fleisch aus den Blättern, ggf. Knochen entfernen, grob zerzupfen und **den gesa
 - 13:00 Uhr: Ofen auf 150 °C, Blätter vorbereiten, Paket bauen
 - 13:30 Uhr: Schmoren: Bräter in den Ofen — null Arbeit
 - 15:00 Uhr: Cebollas encurtidas: Zwiebeln blanchieren + einlegen
-- 16:30 Uhr: Tortillas: Masa anrühren (15–30 Min. Ruhe), parallel Salsa tamulada rösten
+- 16:30 Uhr: Tortillas: Masa anrühren (15–30 Min. Ruhe), parallel Salsa tamulada und Chiltomate rösten
 - 17:00 Uhr: Tortillas backen (\~45 Min., läuft nebenher weiter)
 - 17:30 Uhr: Zupfen & Servieren: Fleisch prüfen (= 4 Std.), zupfen, Saft unterheben, ruhen
 - 18:00 Uhr: Servieren
@@ -118,11 +136,21 @@ Fleisch aus den Blättern, ggf. Knochen entfernen, grob zerzupfen und **den gesa
 
 ## Kinder-Hinweis
 
-Schärfetrennung ist strukturell eingebaut: das Fleisch selbst ist völlig mild. Habanero existiert nur in der separaten Salsa; vom eingelegten Zwiebel-Anteil eine chilifreie Portion fürs Kind abzweigen. Kind isst pures Fleisch + Zwiebeln im Taco.
+Schärfetrennung ist strukturell eingebaut: das Fleisch selbst ist völlig mild. Habanero existiert nur in den separaten Salsas; vom eingelegten Zwiebel-Anteil eine chilifreie Portion fürs Kind abzweigen. Von der Chiltomate die Kinderportion abnehmen, **bevor** der Habanero dazukommt — dann ist sie eine milde Tomatensalsa. Kind isst pures Fleisch + Zwiebeln (+ Chiltomate) im Taco.
 
 ## Reste
 
 Ergibt bewusst \~2 Mahlzeiten (aus 1,5–2 kg Schulter werden \~1–1,2 kg gezupftes Fleisch). Im Schmorsaft portioniert einfrieren. Verwendung: Quesadillas, Tostadas/Panuchos, Tortas, Reis-Bowl.
+
+## Learnings
+
+**Gekocht 10/2026.** Wirklich sehr lecker — eine Art mexikanisches Pulled Pork; Fleisch und Zwiebeln waren einfach und haben auf Anhieb funktioniert. Frische Tortillas ebenfalls sehr lecker, aber mit dem Topfboden gepresst zu dick: Sie brauchten länger und brannten in Edelstahl wie beschichtet punktuell an (Pfanne danach schwer zu reinigen), zügig und gut war schwer hinzubekommen. Fix im Rezept: kleinere Kugeln, Tortillapresse, mittlere Hitze, zwei Pfannen parallel, Pfanne zwischendurch auswischen. Salsa tamulada viel besser als jede gekaufte scharfe Sauce, aber extrem scharf („pica pica“) trotz entfernter Kerne → Chiltomate als milde zweite Salsa ergänzt.
+
+### Details
+
+- **Tortillas:** Das Nadelöhr war die Dicke, nicht der Teig. Dickere Fladen brauchen länger auf der Hitze, und genau in dieser Zeit verkohlen lose Masa-Krümel und dünne Randstellen. Gusseisen (Comal) wäre die klassische Unterlage und verzeiht mehr, Hauptfixes sind aber dünner pressen und eine Stufe weniger Hitze.
+- **Salsa tamulada:** Schärfe ist bei Habanero über das Fruchtfleisch verteilt — Entkernen hilft wenig. Die Salsa bleibt so; die Antwort ist eine zweite, milde Salsa daneben, keine entschärfte erste.
+- **Fleisch und Zwiebeln:** unverändert gut, nichts anzupassen.
 
 ## Quellen & Entscheidungen
 
@@ -132,5 +160,6 @@ Ergibt bewusst \~2 Mahlzeiten (aus 1,5–2 kg Schulter werden \~1–1,2 kg gezup
 - **Marinierfenster 8–24 Std.:** Shaw: „up to a day"; Bayless mariniert in der Ofenversion gar nicht erst — nach unten also unkritisch, über Nacht ist der traditionelle Standard, länger bringt keinen Mehrwert.
 - **Masa-Hydration ist markenabhängig:** Masienda dokumentiert 120 g : 200 ml (≈1:1,67) für ihr Heirloom-Mehl; Maseca-artige Mehle (auch Naturelo) brauchen spürbar weniger (\~1:1,2–1,3). Deshalb Wasser schrittweise und nach Konsistenz, nicht nach Zahl.
 - **Alufolie-Verbot am Fleisch:** BfR rät von Kontakt saurer/salziger Lebensmittel mit unbeschichtetem Aluminium ab (erhöhte Aluminium-Freisetzung); als trockene Außenlage über Blättern/Backpapier unbedenklich.
+- **Chiltomate als zweite Salsa (10/2026):** geröstete Tomaten, Zwiebel und Habanero — der yukatekische Alltagsbegleiter zu Cochinita, Panuchos und Salbutes; Mengen und Technik nach Pati Jinich, Habanero dosiert nach Abnahme der Kinderportion.
 - **Tortillas selbst machen:** frische, puffende Nixtamal-Tortillas sind der größte einzelne Qualitätssprung des Tellers (gekaufte frische kosten online \~6 €/10 St.; Regalware ist deutlich schwächer). Passt zum Learning „perfekt ausgeführte simple Komponente > komplexe Optimierung".
-- Referenzen: [Rick Bayless — Cochinita Pibil (Grill, from scratch)](https://www.rickbayless.com/recipe/cochinita-pibil/) · [Rick Bayless — Slow-Cooked Achiote Pork](https://www.rickbayless.com/recipe/slow-cooked-achiote-pork/) · [Hank Shaw nach David Sterling „Yucatán"](https://honest-food.net/javelina-recipe-cochinita-pibil/) · [Yucatán Today](https://yucatantoday.com/en/blog/cochinita-pibil-recipe) · [Salsa tamulada](https://meatwave.com/recipes/chile-tamulado-yucatan-roasted-habanero-salsa-recipe) · [Cebollas encurtidas (Blanchier-Trick)](https://www.mexconnect.com/articles/2354-yucatan-style-pickled-onions-cebollas-encurtidas-estilo-yucateca/) · [Masienda — Tortilla-Technik](https://masienda.com/blogs/learn/recipe-tortillas-masa-harina/) · [BfR — Aluminium in Lebensmitteln (FAQ)](https://www.bfr.bund.de/assets/01_Ver%C3%B6ffentlichungen/Fragen_und_Antworten_zu_Aluminium_in_Lebensmitteln_und_verbrauchernahen_Produkten.pdf) · Bezug: [Mexhaus — El Yucateco](https://www.mexhaus.de/en/offers/achiote-paste/annatto-paste-el-yucateco-100-g) (Preise/Verfügbarkeit Stand 07/2026)
+- Referenzen: [Rick Bayless — Cochinita Pibil (Grill, from scratch)](https://www.rickbayless.com/recipe/cochinita-pibil/) · [Rick Bayless — Slow-Cooked Achiote Pork](https://www.rickbayless.com/recipe/slow-cooked-achiote-pork/) · [Hank Shaw nach David Sterling „Yucatán"](https://honest-food.net/javelina-recipe-cochinita-pibil/) · [Yucatán Today](https://yucatantoday.com/en/blog/cochinita-pibil-recipe) · [Pati Jinich — Basic Yucatecan Tomato Sauce (Chiltomate)](https://patijinich.com/basic-yucatecan-tomato-sauce/) · [Salsa tamulada](https://meatwave.com/recipes/chile-tamulado-yucatan-roasted-habanero-salsa-recipe) · [Cebollas encurtidas (Blanchier-Trick)](https://www.mexconnect.com/articles/2354-yucatan-style-pickled-onions-cebollas-encurtidas-estilo-yucateca/) · [Masienda — Tortilla-Technik](https://masienda.com/blogs/learn/recipe-tortillas-masa-harina/) · [BfR — Aluminium in Lebensmitteln (FAQ)](https://www.bfr.bund.de/assets/01_Ver%C3%B6ffentlichungen/Fragen_und_Antworten_zu_Aluminium_in_Lebensmitteln_und_verbrauchernahen_Produkten.pdf) · Bezug: [Mexhaus — El Yucateco](https://www.mexhaus.de/en/offers/achiote-paste/annatto-paste-el-yucateco-100-g) (Preise/Verfügbarkeit Stand 07/2026)

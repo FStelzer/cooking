@@ -67,6 +67,9 @@ Anpassen bestehender bitte folgenden Kontext berücksichtigen.
 - **Schwere Gusseisenpfanne** — Plan B gegen das Einbrenn-Thema bei Maximalhitze
   (Bulgogi); mehrfach nützlich (Steaks, Smashburger). Bei Bò lúc lắc hat der
   Chargen-/Deglaze-Fix in Edelstahl gereicht (10/2026); bei Bulgogi noch validieren.
+  Dritter Anwendungsfall: Mais-Tortillas als Comal-Ersatz (Cochinita 10/2026 —
+  in Edelstahl und beschichtet punktuell angebrannt, schwer zu reinigen).
+- **Tortillapresse** — empfohlen seit Cochinita 10/2026 (Topfboden presst zu dick).
 
 ## Einkaufsquellen
 
@@ -348,10 +351,13 @@ Hand editieren, Learnings gehören in die Rezeptdatei.
   Dessert nach einem fetten Hauptgang immer sauer/kalt/leicht statt cremig.
 
 - ✅ **Vollkornbrötchen auf Vorrat — Weizen als Leitrezept, Dinkel und Weizen-Roggen als Varianten (12 Stück)** (siehe `backen/vollkornbroetchen.md`)
-  **Gebacken 09/2026 (Weizen rein, von Hand).** Fluffig und geschmacklich gut, vor allem mit Sonnenblumenkernen — die Rezeptbasis (Poolish + Kochstück + Quellstück) stimmt. Schwächen: von Hand zu kurz geknetet, Teig sehr klebrig, Rundschleifen hat nicht funktioniert → etwas flache, verlaufene Brötchen. Fix in diese Fassung eingebaut: Hauptteig-Wasser für Handarbeit von 120 g auf 80 g gesenkt, Kneten durch Slap & Fold plus 3× Dehnen & Falten ersetzt, 10 Min. Zwischengare vor dem Schleifen, Teigkarten-Technik für weichen Teig — beim nächsten Mal zu validieren.
+  **Gebacken 2× — 09/2026 (Weizen, von Hand), 10/2026 (Weizen, Maschine, Übernacht).** Beide Male lecker und fluffig, vor allem mit Sonnenblumenkernen — die Rezeptbasis (Poolish + Kochstück + Quellstück) stimmt. 09/2026 von Hand: zu kurz geknetet, Teig sehr klebrig, Rundschleifen misslungen → flache Brötchen; Fix: weniger Wasser, Slap & Fold plus 3× Dehnen & Falten, Zwischengare. 10/2026 mit Maschine: Rundschleifen besser (rund, Schluss unten), aber der Teig klebte flächig an der Schüsselwand, der Haken knetete kaum, die Teigtemperatur blieb bei 22,5 °C und die Teiglinge waren morgens untergar → Krume ohne Poren, nur 11 Brötchen. Fix in dieser Fassung: Bassinage (40 g Wasser erst nach der Kleberbildung), Kochstück auf \~35 °C anwärmen, Stockgare 75 Min. nach Volumen, 45–60 Min. akklimatisieren, Teig wiegen und durch 12 teilen — beim nächsten Mal zu validieren.
 
 - ✅ **Bò lúc lắc — vietnamesisches „Shaking Beef" mit Brunnenkresse-Salat (4 Portionen)** (siehe `gerichte/bo-luc-lac.md`)
   **Gekocht 3× (zuletzt 10/2026 mit diesem Rezept und dem Kochmodus).** Der Einbrenn-Fix hat hervorragend gehalten: trockene Marinade, kleine Chargen, Sauce erst zum Schluss — keine schwarze Kruste mehr in der Edelstahlpfanne. Zusätzlich auf dem Induktionsherd pro Charge: Hitze hoch, scharf anbraten, leicht runterdrehen, deglasieren, wieder hoch für die nächste Charge; das steht jetzt in „Chargen braten“. Damit ist Plan B (Gusseisenpfanne) für dieses Gericht nicht nötig.
+
+- ✅ **Cochinita Pibil — Schweineschulter in Achiote-Orangen-Marinade (4 Portionen + Reste)** (siehe `gerichte/cochinita-pibil.md`)
+  **Gekocht 10/2026.** Wirklich sehr lecker — eine Art mexikanisches Pulled Pork; Fleisch und Zwiebeln waren einfach und haben auf Anhieb funktioniert. Frische Tortillas ebenfalls sehr lecker, aber mit dem Topfboden gepresst zu dick: Sie brauchten länger und brannten in Edelstahl wie beschichtet punktuell an (Pfanne danach schwer zu reinigen), zügig und gut war schwer hinzubekommen. Fix im Rezept: kleinere Kugeln, Tortillapresse, mittlere Hitze, zwei Pfannen parallel, Pfanne zwischendurch auswischen. Salsa tamulada viel besser als jede gekaufte scharfe Sauce, aber extrem scharf („pica pica“) trotz entfernter Kerne → Chiltomate als milde zweite Salsa ergänzt.
 
 <!-- learnings:end -->
 

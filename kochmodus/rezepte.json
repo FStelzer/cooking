@@ -60,7 +60,7 @@
   "title": "Cochinita Pibil — Schweineschulter in Achiote-Orangen-Marinade (4 Portionen + Reste)",
   "group": "gerichte",
   "wip": false,
-  "cooked": false
+  "cooked": true
  },
  {
   "path": "../gerichte/hummerbisque.json",

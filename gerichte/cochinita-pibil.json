@@ -10,7 +10,7 @@
     "value": 4.0,
     "unit": "Portionen"
   },
-  "intro": "*Aktive Zeit \\~1,5 Std. (Großteil: Tortillas), gesamt über Nacht + \\~5 Std. (Vorabend 20 Min., dann \\~4 Std. Ofen). Equipment: Bräter/Schmortopf mit Deckel, Stabmixer, Mörser, Küchenbrenner (Bananenblätter). Achtung Vorlauf: Online-Bestellung 1–2 Wochen vorher!*\n\nYukatekischer Klassiker: Schweineschulter über Nacht in Recado rojo (Achiote) und Bitterorangen-Ersatz mariniert, in Bananenblättern bei 150 °C geschmort, bis sie zerfällt, im eigenen Saft gezupft. Dazu die zwei Pflicht-Begleiter — eingelegte rote Zwiebeln und Habanero-Salsa (separat!) — und frische, selbstgemachte Mais-Tortillas.",
+  "intro": "*Aktive Zeit \\~1,5 Std. (Großteil: Tortillas), gesamt über Nacht + \\~5 Std. (Vorabend 20 Min., dann \\~4 Std. Ofen). Equipment: Bräter/Schmortopf mit Deckel, Stabmixer, Mörser, Küchenbrenner (Bananenblätter). Achtung Vorlauf: Online-Bestellung 1–2 Wochen vorher!*\n\nYukatekischer Klassiker: Schweineschulter über Nacht in Recado rojo (Achiote) und Bitterorangen-Ersatz mariniert, in Bananenblättern bei 150 °C geschmort, bis sie zerfällt, im eigenen Saft gezupft. Dazu die Pflicht-Begleiter — eingelegte rote Zwiebeln und Habanero-Salsa (separat!), seit 10/2026 plus Chiltomate als milde zweite Salsa — und frische, selbstgemachte Mais-Tortillas.",
   "times": {
     "text": "Aktive Zeit ~1,5 Std. (Großteil: Tortillas), gesamt über Nacht + ~5 Std.",
     "active": {
@@ -52,8 +52,10 @@
       "id": "tortillapresse",
       "name": "Tortillapresse",
       "store": "Online",
-      "optional": true,
-      "note": "\\~15–25 €, wenn öfter mexikanisch geplant — Zip-Beutel + Topfboden geht auch"
+      "buy": {
+        "text": "Ø 19–20 cm"
+      },
+      "note": "\\~15–25 €, einmalig — Topfboden presst zu dick, siehe Beschaffung"
     },
     {
       "id": "habanero-backup",
@@ -122,6 +124,36 @@
       }
     },
     {
+      "id": "zwiebel",
+      "name": "weiße Zwiebel",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "¼ für die Chiltomate"
+    },
+    {
+      "id": "tomaten",
+      "name": "Tomaten, reif",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "450 g"
+      },
+      "note": "Rispen- oder Roma-Tomaten, für die Chiltomate"
+    },
+    {
+      "id": "koriander",
+      "name": "Koriander",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      },
+      "note": "Chiltomate"
+    },
+    {
       "id": "knoblauch",
       "name": "Knoblauch",
       "store": "REWE Center",
@@ -137,9 +169,9 @@
       "store": "REWE Center",
       "group": "Obst & Gemüse",
       "buy": {
-        "text": "2–3"
+        "text": "3–4"
       },
-      "note": "Fallbacks siehe Beschaffung: Mexhaus-Backup → rote Chilis"
+      "note": "2–3 Salsa tamulada, 1 Chiltomate; Fallbacks siehe Beschaffung: Mexhaus-Backup → rote Chilis"
     },
     {
       "id": "einweg-handschuhe",
@@ -203,7 +235,7 @@
       "type": "markdown",
       "title": "Beschaffung",
       "level": 2,
-      "markdown": "- **Online-Bestellung (Mexhaus, 1–2 Wochen Vorlauf, deckt alles Mexikanische ab):**\n  - **Achiote-Paste El Yucateco, 2× 100 g** (\\~2,50 €/Stück; das Rezept braucht 100 g — der zweite Block ist bewusst Vorrat). El Yucateco vor La Anita — Letztere enthält künstliche Farbstoffe und färbt unnatürlich pink. Ziegelform, hält kühl monatelang. *Verfügbarkeit der 100-g-Blöcke schwankt (Stand 07/2026 zeitweise ausverkauft) — Alternativen im selben Shop: Lol-Tun oder Pepe Comala, je 500 g / \\~12–14 €.*\n  - **Masa harina (nixtamalisiert), 1 kg** — z.B. Naturelo (\\~8 €, Stand 07/2026 lieferbar); Maseca gibt es alternativ auch bei Kaufland. Rezept braucht 500 g.\n  - Optional als Backup: haltbare Mais-Tortillas (qualitativ klar unter selbstgemacht).\n  - Optional als Habanero-Backup (falls REWE keine frischen hat): getrocknete Habaneros (\\~6 €/30 g) oder eine El-Yucateco-Habanero-Sauce für den Tisch — beides klar unter frisch geröstet, aber besser als der Chili-Notnagel.\n- **Asialaden (vorher anrufen):** TK-Bananenblätter, 450–500-g-Packung — Chance gut, Rest ist wieder einfrierbar. Fallback: Backpapier + Deckel. **Keine Alufolie direkt am Fleisch** — saure (und salzige) Lebensmittel lösen Aluminium aus der Folie ([BfR-Empfehlung](https://www.bfr.bund.de/assets/01_Ver%C3%B6ffentlichungen/Fragen_und_Antworten_zu_Aluminium_in_Lebensmitteln_und_verbrauchernahen_Produkten.pdf)). Als äußere Lage *über* Blättern oder Backpapier ist Folie unkritisch.\n- **REWE Center:** Schweineschulter ohne Schwarte, Fettdeckel dranlassen. **Realistisch nur ohne Knochen (1,5–1,7 kg)** — dort wird nichts vor Ort zerlegt, „mit Knochen vorbestellen\" ist Wunschdenken. Wer die Knochen-Version will (1,8–2 kg, etwas mehr Geschmack): Selgros — aber Trade-off Anfahrt beachten; der Unterschied ist beim Schmoren in der kompletten Marinade überschaubar, ohne Knochen ist der ehrliche Plan A. Habanero gibt es bei REWE gelegentlich frisch — Plan B: Mexhaus-Backup (siehe oben), Plan C: normale rote Chilis + Limette (aromatisch klar schwächer).\n- **Keine Bitterorangen nötig:** Sterling-Ersatzmischung aus Orange + Limette + Grapefruit (siehe Liste).",
+      "markdown": "- **Online-Bestellung (Mexhaus, 1–2 Wochen Vorlauf, deckt alles Mexikanische ab):**\n  - **Achiote-Paste El Yucateco, 2× 100 g** (\\~2,50 €/Stück; das Rezept braucht 100 g — der zweite Block ist bewusst Vorrat). El Yucateco vor La Anita — Letztere enthält künstliche Farbstoffe und färbt unnatürlich pink. Ziegelform, hält kühl monatelang. *Verfügbarkeit der 100-g-Blöcke schwankt (Stand 07/2026 zeitweise ausverkauft) — Alternativen im selben Shop: Lol-Tun oder Pepe Comala, je 500 g / \\~12–14 €.*\n  - **Masa harina (nixtamalisiert), 1 kg** — z.B. Naturelo (\\~8 €, Stand 07/2026 lieferbar); Maseca gibt es alternativ auch bei Kaufland. Rezept braucht 500 g.\n  - **Tortillapresse** (\\~15–25 €, Gusseisen oder Holz, Ø 19–20 cm): seit dem ersten Durchgang (10/2026) klare Empfehlung — mit dem Topfboden gepresst werden die Tortillas zu dick, brauchen länger in der Pfanne und brennen eher an. Nützt für jedes weitere mexikanische Projekt (Tacos, Quesadillas, Tostadas).\n  - Optional als Backup: haltbare Mais-Tortillas (qualitativ klar unter selbstgemacht).\n  - Optional als Habanero-Backup (falls REWE keine frischen hat): getrocknete Habaneros (\\~6 €/30 g) oder eine El-Yucateco-Habanero-Sauce für den Tisch — beides klar unter frisch geröstet, aber besser als der Chili-Notnagel.\n- **Asialaden (vorher anrufen):** TK-Bananenblätter, 450–500-g-Packung — Chance gut, Rest ist wieder einfrierbar. Fallback: Backpapier + Deckel. **Keine Alufolie direkt am Fleisch** — saure (und salzige) Lebensmittel lösen Aluminium aus der Folie ([BfR-Empfehlung](https://www.bfr.bund.de/assets/01_Ver%C3%B6ffentlichungen/Fragen_und_Antworten_zu_Aluminium_in_Lebensmitteln_und_verbrauchernahen_Produkten.pdf)). Als äußere Lage *über* Blättern oder Backpapier ist Folie unkritisch.\n- **REWE Center:** Schweineschulter ohne Schwarte, Fettdeckel dranlassen. **Realistisch nur ohne Knochen (1,5–1,7 kg)** — dort wird nichts vor Ort zerlegt, „mit Knochen vorbestellen\" ist Wunschdenken. Wer die Knochen-Version will (1,8–2 kg, etwas mehr Geschmack): Selgros — aber Trade-off Anfahrt beachten; der Unterschied ist beim Schmoren in der kompletten Marinade überschaubar, ohne Knochen ist der ehrliche Plan A. Habanero gibt es bei REWE gelegentlich frisch — Plan B: Mexhaus-Backup (siehe oben), Plan C: normale rote Chilis + Limette (aromatisch klar schwächer).\n- **Pfanne für die Tortillas:** Traditionell ein Comal (flache Gusseisen- oder Stahlplatte). Edelstahl und beschichtet funktionieren, aber in beiden brannten 10/2026 punktuell Stellen an, die sich schwer lösen ließen. Eine schwere Gusseisenpfanne wäre hier der dritte Anwendungsfall nach Bulgogi und Steaks/Smashburger (siehe CLAUDE.md) — kein Muss, die Hauptfixes sind dünner pressen und mittlere Hitze (Schritt „Tortillas“).\n- **Keine Bitterorangen nötig:** Sterling-Ersatzmischung aus Orange + Limette + Grapefruit (siehe Liste).",
       "tags": [
         "beschaffung"
       ]
@@ -619,12 +651,12 @@
                 "typical": "PT10M",
                 "source": "10 Min."
               },
-              "text": "Bei Std. 3: 2–3 Habaneros (+ 2 Knoblauchzehen) in der Pfanne rundum rösten bis fleckig-angekohlt, im Mörser mit Salz zerdrücken, mit Saft von 1 Limette aufgießen (oder ½ Orange + ½ Limette — näher an naranja agria, so macht es Meatwave). **Kommt ausschließlich separat auf den Tisch.** *2–3 Habaneros nicht weiter eindampfen — das Original rechnet 20 Chilis auf ½ Tasse Saft; die Salsa ist als vollwertige scharfe Komponente für die Erwachsenen gedacht, nicht als Deko.*",
+              "text": "Bei Std. 3: 2–3 Habaneros (+ 2 Knoblauchzehen) in der Pfanne rundum rösten bis fleckig-angekohlt, im Mörser mit Salz zerdrücken, mit Saft von 1 Limette aufgießen (oder ½ Orange + ½ Limette — näher an naranja agria, so macht es Meatwave). **Kommt ausschließlich separat auf den Tisch.** *2–3 Habaneros nicht weiter eindampfen — das Original rechnet 20 Chilis auf ½ Tasse Saft; die Salsa ist als vollwertige scharfe Komponente für die Erwachsenen gedacht, nicht als Deko. Sie bleibt „pica pica“ (10/2026, Urteil eines Mexikaners: super, aber sehr scharf): Kerne und Häutchen zu entfernen ändert wenig, weil Habaneros auch im Fruchtfleisch scharf sind. Wer sie zahmer will, nimmt 1–2 Habaneros und röstet 1 Tomate mit — die eigentliche milde Option ist aber die Chiltomate.*",
               "action": "Bei Std.",
               "limits": [
                 "Kommt ausschließlich separat auf den Tisch."
               ],
-              "why": "2–3 Habaneros nicht weiter eindampfen — das Original rechnet 20 Chilis auf ½ Tasse Saft; die Salsa ist als vollwertige scharfe Komponente für die Erwachsenen gedacht, nicht als Deko.",
+              "why": "2–3 Habaneros nicht weiter eindampfen — das Original rechnet 20 Chilis auf ½ Tasse Saft; die Salsa ist als vollwertige scharfe Komponente für die Erwachsenen gedacht, nicht als Deko. Sie bleibt „pica pica“ (10/2026, Urteil eines Mexikaners: super, aber sehr scharf): Kerne und Häutchen zu entfernen ändert wenig, weil Habaneros auch im Fruchtfleisch scharf sind. Wer sie zahmer will, nimmt 1–2 Habaneros und röstet 1 Tomate mit — die eigentliche milde Option ist aber die Chiltomate.",
               "ingredients": [
                 {
                   "ref": "habaneros",
@@ -689,9 +721,91 @@
               "after": []
             },
             {
-              "id": "tortillas",
+              "id": "chiltomate",
               "label": "9",
-              "heading": "**9. Tortillas (ca. 60 Min., parallel)**",
+              "heading": "**9. Chiltomate (ca. 20 Min.)**",
+              "title": "Chiltomate",
+              "duration": {
+                "typical": "PT20M",
+                "source": "ca. 20 Min.",
+                "estimated": true
+              },
+              "text": "Milde zweite Salsa, der yukatekische Standard-Begleiter neben der Tamulada. 450 g Tomaten, ¼ weiße Zwiebel und 1 Habanero (ganz) in der trockenen heißen Pfanne bei mittlerer Hitze 10–12 Min. rösten, einmal wenden, bis die Haut stellenweise schwarz ist (alternativ unter dem Backofengrill). Abkühlen lassen. Tomaten grob zerdrücken (Mörser oder 2–3 Pulse im Mixer — stückig lassen), Zwiebel fein hacken, mit 3 EL gehacktem Koriander und ½ TL Salz mischen. **Jetzt die Kinderportion abnehmen.** Habanero entkernen, fein hacken und **erst die Hälfte** unterrühren, abschmecken, dann ggf. mehr. Mit einem Spritzer Limette abrunden. *Lauwarm oder raumtemperiert servieren; hält 2 Tage im Kühlschrank.*",
+              "action": "Milde zweite Salsa, der yukatekische Standard-Begleiter neben der Tamulada.",
+              "limits": [
+                "Jetzt die Kinderportion abnehmen.",
+                "erst die Hälfte"
+              ],
+              "why": "Lauwarm oder raumtemperiert servieren; hält 2 Tage im Kühlschrank.",
+              "cues": [
+                "bis die Haut stellenweise schwarz ist (alternativ unter dem Backofengrill"
+              ],
+              "timers": [
+                {
+                  "label": "Chiltomate",
+                  "duration": {
+                    "min": "PT10M",
+                    "max": "PT12M"
+                  },
+                  "text": "10–12 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "tomaten",
+                  "amount": {
+                    "text": "450 g Tomaten",
+                    "value": 450.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "zwiebel",
+                  "amount": {
+                    "text": "¼ weiße Zwiebel",
+                    "value": 0.25,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "habaneros",
+                  "amount": {
+                    "text": "1 Habanero",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "koriander",
+                  "amount": {
+                    "text": "3 EL gehacktem Koriander",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "tortillas",
+              "label": "10",
+              "heading": "**10. Tortillas (ca. 60 Min., parallel)**",
               "title": "Tortillas",
               "duration": {
                 "typical": "PT1H",
@@ -699,9 +813,16 @@
                 "estimated": true
               },
               "parallel": true,
-              "text": "Bei Std. 3, insgesamt \\~60 Min. inkl. Ruhe: 500 g Masa harina mit \\~600–650 ml warmem (\\~40 °C) Wasser zu Knetmasse-Konsistenz verkneten — *die Hydration ist markenabhängig: Maseca/Naturelo liegen etwa bei diesem Verhältnis, Masienda-Mehl nimmt deutlich mehr (dort 120 g : 200 ml). Wasser schrittweise, Ziel: weiche Play-Doh-Konsistenz.* 15–30 Min. abgedeckt ruhen (Masienda: \\~15 Min. reichen). Golfball-Kugeln (\\~45 g) zwischen aufgeschnittenem Zip-Beutel flach pressen (Presse oder Topfboden), in trockener heißer Pfanne backen: \\~30 Sek., wenden, \\~30 Sek., nochmal wenden — beim dritten Kontakt sollen sie puffen. In einem Tuch warm stapeln. Ergibt \\~22–26 Stück; fürs Abendessen reichen \\~12–14, den Rest trotzdem backen und für die Reste-Mahlzeiten kurz in der Pfanne auffrischen (roher Teig trocknet über Nacht aus). *Reißen die Ränder beim Pressen: Teig ist zu trocken, Wasser nachkneten.*",
+              "text": "Bei Std. 3, insgesamt \\~60 Min. inkl. Ruhe: 500 g Masa harina mit \\~600–650 ml warmem (\\~40 °C) Wasser zu Knetmasse-Konsistenz verkneten — *die Hydration ist markenabhängig: Maseca/Naturelo liegen etwa bei diesem Verhältnis, Masienda-Mehl nimmt deutlich mehr (dort 120 g : 200 ml). Wasser schrittweise, Ziel: weiche Play-Doh-Konsistenz.* 15–30 Min. abgedeckt ruhen (Masienda: \\~15 Min. reichen).\n- **Kugeln \\~38 g** (etwas kleiner als ein Golfball) — kleinere Kugeln lassen sich dünner pressen.\n- **Dünn pressen, auf \\~1,5–2 mm:** zwischen aufgeschnittenem Zip-Beutel in der Tortillapresse, Beutel dabei einmal um 90° drehen und nachpressen. Ohne Presse: flachen schweren Topf mit dem ganzen Körpergewicht drücken, Fladen drehen, zweimal pressen. *10/2026 waren die Topf-gepressten Tortillas zu dick — sie brauchten länger, puffen schlechter und brannten eher an.*\n- **Zwei Pfannen parallel** auf **mittlerer bis mittelhoher Hitze** (Induktion \\~6–7 von 9, nicht Maximalhitze), trocken, ohne Fett. Erst 4–6 Fladen vorpressen und zwischen Beutelfolie stapeln, dann im Takt backen.\n- \\~30 Sek., wenden, \\~45 Sek., nochmal wenden — beim dritten Kontakt sollen sie puffen (dickere Fladen: je 15 Sek. länger). Leicht mit dem Pfannenwender oder einem Tuch andrücken hilft beim Puffen.\n- **Zwischen den Fladen die Pfanne mit trockenem Küchenpapier auswischen** — lose Masa-Krümel verkohlen sonst und backen sich als schwarze Punkte fest. Brennen trotzdem Stellen an: Hitze eine Stufe runter.\n- In einem Tuch warm stapeln. Ergibt \\~28–30 Stück; fürs Abendessen reichen \\~14–16, den Rest trotzdem backen und für die Reste-Mahlzeiten kurz in der Pfanne auffrischen (roher Teig trocknet über Nacht aus). *Reißen die Ränder beim Pressen: Teig ist zu trocken, Wasser nachkneten. Pfanne danach: mit Wasser und 1 EL Natron aufkochen, 10 Min. stehen lassen — die Masa-Reste lösen sich dann mit dem Spatel.*",
               "action": "Bei Std.",
-              "why": "Reißen die Ränder beim Pressen: Teig ist zu trocken, Wasser nachkneten.",
+              "limits": [
+                "Kugeln \\~38 g",
+                "Zwei Pfannen parallel",
+                "mittlerer bis mittelhoher Hitze",
+                "Zwischen den Fladen die Pfanne mit trockenem Küchenpapier auswischen"
+              ],
+              "why": "Reißen die Ränder beim Pressen: Teig ist zu trocken, Wasser nachkneten. Pfanne danach: mit Wasser und 1 EL Natron aufkochen, 10 Min.",
+              "rescue": "stehen lassen — die Masa-Reste lösen sich dann mit dem Spatel.",
               "timers": [
                 {
                   "label": "Tortillas",
@@ -738,10 +859,24 @@
                 {
                   "label": "Tortillas",
                   "duration": {
-                    "typical": "PT30S",
+                    "typical": "PT45S",
                     "estimated": true
                   },
-                  "text": "\\~30 Sek."
+                  "text": "\\~45 Sek."
+                },
+                {
+                  "label": "Tortillas",
+                  "duration": {
+                    "typical": "PT15S"
+                  },
+                  "text": "15 Sek."
+                },
+                {
+                  "label": "Tortillas",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
                 }
               ],
               "temps": [
@@ -761,11 +896,11 @@
                   }
                 }
               ],
-              "meta": "*jederzeit · Herd*",
+              "meta": "*jederzeit · 2 Pfannen*",
               "claims": [
                 {
                   "resource": "hob",
-                  "units": 1
+                  "units": 2
                 }
               ],
               "attention": "attended",
@@ -773,15 +908,15 @@
             },
             {
               "id": "zupfen-servieren",
-              "label": "10",
-              "heading": "**10. Zupfen & Servieren (ca. 20 Min.)**",
+              "label": "11",
+              "heading": "**11. Zupfen & Servieren (ca. 20 Min.)**",
               "title": "Zupfen & Servieren",
               "duration": {
                 "typical": "PT20M",
                 "source": "ca. 20 Min.",
                 "estimated": true
               },
-              "text": "Fleisch aus den Blättern, ggf. Knochen entfernen, grob zerzupfen und **den gesamten Schmorsaft wieder unterheben** (wirkt er dünn: kurz einreduzieren). 10–15 Min. ruhen lassen. Tisch: Fleisch, Tortilla-Stapel, Zwiebeln, Salsa separat.",
+              "text": "Fleisch aus den Blättern, ggf. Knochen entfernen, grob zerzupfen und **den gesamten Schmorsaft wieder unterheben** (wirkt er dünn: kurz einreduzieren). 10–15 Min. ruhen lassen. Tisch: Fleisch, Tortilla-Stapel, Zwiebeln, Chiltomate, Salsa tamulada separat.",
               "action": "Fleisch aus den Blättern, ggf.",
               "limits": [
                 "den gesamten Schmorsaft wieder unterheben"
@@ -797,12 +932,13 @@
                 }
               ],
               "ingredients": [],
-              "meta": "*nach Schmoren, Cebollas encurtidas, Salsa tamulada, Tortillas*",
+              "meta": "*nach Schmoren, Cebollas encurtidas, Salsa tamulada, Chiltomate, Tortillas*",
               "attention": "active",
               "after": [
                 "step:schmoren",
                 "step:cebollas-encurtidas",
                 "step:salsa-tamulada",
+                "step:chiltomate",
                 "step:tortillas"
               ]
             }
@@ -935,7 +1071,7 @@
           },
           {
             "phase": "uhr-16-30",
-            "text": "Tortillas: Masa anrühren (15–30 Min. Ruhe), parallel Salsa tamulada rösten",
+            "text": "Tortillas: Masa anrühren (15–30 Min. Ruhe), parallel Salsa tamulada und Chiltomate rösten",
             "steps": [
               "salsa-tamulada",
               "tortillas"
@@ -967,7 +1103,7 @@
       "type": "markdown",
       "title": "Kinder-Hinweis",
       "level": 2,
-      "markdown": "Schärfetrennung ist strukturell eingebaut: das Fleisch selbst ist völlig mild. Habanero existiert nur in der separaten Salsa; vom eingelegten Zwiebel-Anteil eine chilifreie Portion fürs Kind abzweigen. Kind isst pures Fleisch + Zwiebeln im Taco.",
+      "markdown": "Schärfetrennung ist strukturell eingebaut: das Fleisch selbst ist völlig mild. Habanero existiert nur in den separaten Salsas; vom eingelegten Zwiebel-Anteil eine chilifreie Portion fürs Kind abzweigen. Von der Chiltomate die Kinderportion abnehmen, **bevor** der Habanero dazukommt — dann ist sie eine milde Tomatensalsa. Kind isst pures Fleisch + Zwiebeln (+ Chiltomate) im Taco.",
       "tags": [
         "kind"
       ]
@@ -979,18 +1115,25 @@
       "markdown": "Ergibt bewusst \\~2 Mahlzeiten (aus 1,5–2 kg Schulter werden \\~1–1,2 kg gezupftes Fleisch). Im Schmorsaft portioniert einfrieren. Verwendung: Quesadillas, Tostadas/Panuchos, Tortas, Reis-Bowl."
     },
     {
+      "type": "learnings",
+      "title": "Learnings",
+      "cooked": "10/2026",
+      "summary": "**Gekocht 10/2026.** Wirklich sehr lecker — eine Art mexikanisches Pulled Pork; Fleisch und Zwiebeln waren einfach und haben auf Anhieb funktioniert. Frische Tortillas ebenfalls sehr lecker, aber mit dem Topfboden gepresst zu dick: Sie brauchten länger und brannten in Edelstahl wie beschichtet punktuell an (Pfanne danach schwer zu reinigen), zügig und gut war schwer hinzubekommen. Fix im Rezept: kleinere Kugeln, Tortillapresse, mittlere Hitze, zwei Pfannen parallel, Pfanne zwischendurch auswischen. Salsa tamulada viel besser als jede gekaufte scharfe Sauce, aber extrem scharf („pica pica“) trotz entfernter Kerne → Chiltomate als milde zweite Salsa ergänzt.",
+      "details": "### Details\n\n- **Tortillas:** Das Nadelöhr war die Dicke, nicht der Teig. Dickere Fladen brauchen länger auf der Hitze, und genau in dieser Zeit verkohlen lose Masa-Krümel und dünne Randstellen. Gusseisen (Comal) wäre die klassische Unterlage und verzeiht mehr, Hauptfixes sind aber dünner pressen und eine Stufe weniger Hitze.\n- **Salsa tamulada:** Schärfe ist bei Habanero über das Fruchtfleisch verteilt — Entkernen hilft wenig. Die Salsa bleibt so; die Antwort ist eine zweite, milde Salsa daneben, keine entschärfte erste.\n- **Fleisch und Zwiebeln:** unverändert gut, nichts anzupassen."
+    },
+    {
       "type": "markdown",
       "title": "Quellen & Entscheidungen",
       "level": 2,
-      "markdown": "- **Fertigpaste statt Recado von den Annattosamen weg:** selbst Bayless nutzt sie in der Alltagsversion; Samen sind steinhart und der Aufwand lohnt beim Erstversuch nicht. Qualitäts-Mittelweg: Paste mit frisch gerösteten Gewürzen auffrischen (Sterling-Gewürzprofil: Piment statt Bayless' Zimt).\n- **Zitrusmix nach Sterling/Shaw** (Orange + Limette + Grapefruit ≈ naranja agria) statt Bayless' reiner Limette.\n- **150 °C / 3,5–4 Std. gedeckt** — der Konsens-Sweet-Spot; die heißen Schnellversionen (175–220 °C) haben kaum Marge gegen Austrocknen. Einordnung: Bayless gart 1,4 kg mit Knochen bei 150 °C in 2½–3 Std., Shaw gibt für bis \\~1,8 kg 150 °C / 3–4 Std. an — unsere 1,5–2 kg liegen also im oberen Bereich des Fensters, daher der Puffer im Zeitplan (ohne Knochen tendenziell eher 3,5 als 4 Std.).\n- **Marinierfenster 8–24 Std.:** Shaw: „up to a day\"; Bayless mariniert in der Ofenversion gar nicht erst — nach unten also unkritisch, über Nacht ist der traditionelle Standard, länger bringt keinen Mehrwert.\n- **Masa-Hydration ist markenabhängig:** Masienda dokumentiert 120 g : 200 ml (≈1:1,67) für ihr Heirloom-Mehl; Maseca-artige Mehle (auch Naturelo) brauchen spürbar weniger (\\~1:1,2–1,3). Deshalb Wasser schrittweise und nach Konsistenz, nicht nach Zahl.\n- **Alufolie-Verbot am Fleisch:** BfR rät von Kontakt saurer/salziger Lebensmittel mit unbeschichtetem Aluminium ab (erhöhte Aluminium-Freisetzung); als trockene Außenlage über Blättern/Backpapier unbedenklich.\n- **Tortillas selbst machen:** frische, puffende Nixtamal-Tortillas sind der größte einzelne Qualitätssprung des Tellers (gekaufte frische kosten online \\~6 €/10 St.; Regalware ist deutlich schwächer). Passt zum Learning „perfekt ausgeführte simple Komponente > komplexe Optimierung\".\n- Referenzen: [Rick Bayless — Cochinita Pibil (Grill, from scratch)](https://www.rickbayless.com/recipe/cochinita-pibil/) · [Rick Bayless — Slow-Cooked Achiote Pork](https://www.rickbayless.com/recipe/slow-cooked-achiote-pork/) · [Hank Shaw nach David Sterling „Yucatán\"](https://honest-food.net/javelina-recipe-cochinita-pibil/) · [Yucatán Today](https://yucatantoday.com/en/blog/cochinita-pibil-recipe) · [Salsa tamulada](https://meatwave.com/recipes/chile-tamulado-yucatan-roasted-habanero-salsa-recipe) · [Cebollas encurtidas (Blanchier-Trick)](https://www.mexconnect.com/articles/2354-yucatan-style-pickled-onions-cebollas-encurtidas-estilo-yucateca/) · [Masienda — Tortilla-Technik](https://masienda.com/blogs/learn/recipe-tortillas-masa-harina/) · [BfR — Aluminium in Lebensmitteln (FAQ)](https://www.bfr.bund.de/assets/01_Ver%C3%B6ffentlichungen/Fragen_und_Antworten_zu_Aluminium_in_Lebensmitteln_und_verbrauchernahen_Produkten.pdf) · Bezug: [Mexhaus — El Yucateco](https://www.mexhaus.de/en/offers/achiote-paste/annatto-paste-el-yucateco-100-g) (Preise/Verfügbarkeit Stand 07/2026)",
+      "markdown": "- **Fertigpaste statt Recado von den Annattosamen weg:** selbst Bayless nutzt sie in der Alltagsversion; Samen sind steinhart und der Aufwand lohnt beim Erstversuch nicht. Qualitäts-Mittelweg: Paste mit frisch gerösteten Gewürzen auffrischen (Sterling-Gewürzprofil: Piment statt Bayless' Zimt).\n- **Zitrusmix nach Sterling/Shaw** (Orange + Limette + Grapefruit ≈ naranja agria) statt Bayless' reiner Limette.\n- **150 °C / 3,5–4 Std. gedeckt** — der Konsens-Sweet-Spot; die heißen Schnellversionen (175–220 °C) haben kaum Marge gegen Austrocknen. Einordnung: Bayless gart 1,4 kg mit Knochen bei 150 °C in 2½–3 Std., Shaw gibt für bis \\~1,8 kg 150 °C / 3–4 Std. an — unsere 1,5–2 kg liegen also im oberen Bereich des Fensters, daher der Puffer im Zeitplan (ohne Knochen tendenziell eher 3,5 als 4 Std.).\n- **Marinierfenster 8–24 Std.:** Shaw: „up to a day\"; Bayless mariniert in der Ofenversion gar nicht erst — nach unten also unkritisch, über Nacht ist der traditionelle Standard, länger bringt keinen Mehrwert.\n- **Masa-Hydration ist markenabhängig:** Masienda dokumentiert 120 g : 200 ml (≈1:1,67) für ihr Heirloom-Mehl; Maseca-artige Mehle (auch Naturelo) brauchen spürbar weniger (\\~1:1,2–1,3). Deshalb Wasser schrittweise und nach Konsistenz, nicht nach Zahl.\n- **Alufolie-Verbot am Fleisch:** BfR rät von Kontakt saurer/salziger Lebensmittel mit unbeschichtetem Aluminium ab (erhöhte Aluminium-Freisetzung); als trockene Außenlage über Blättern/Backpapier unbedenklich.\n- **Chiltomate als zweite Salsa (10/2026):** geröstete Tomaten, Zwiebel und Habanero — der yukatekische Alltagsbegleiter zu Cochinita, Panuchos und Salbutes; Mengen und Technik nach Pati Jinich, Habanero dosiert nach Abnahme der Kinderportion.\n- **Tortillas selbst machen:** frische, puffende Nixtamal-Tortillas sind der größte einzelne Qualitätssprung des Tellers (gekaufte frische kosten online \\~6 €/10 St.; Regalware ist deutlich schwächer). Passt zum Learning „perfekt ausgeführte simple Komponente > komplexe Optimierung\".\n- Referenzen: [Rick Bayless — Cochinita Pibil (Grill, from scratch)](https://www.rickbayless.com/recipe/cochinita-pibil/) · [Rick Bayless — Slow-Cooked Achiote Pork](https://www.rickbayless.com/recipe/slow-cooked-achiote-pork/) · [Hank Shaw nach David Sterling „Yucatán\"](https://honest-food.net/javelina-recipe-cochinita-pibil/) · [Yucatán Today](https://yucatantoday.com/en/blog/cochinita-pibil-recipe) · [Pati Jinich — Basic Yucatecan Tomato Sauce (Chiltomate)](https://patijinich.com/basic-yucatecan-tomato-sauce/) · [Salsa tamulada](https://meatwave.com/recipes/chile-tamulado-yucatan-roasted-habanero-salsa-recipe) · [Cebollas encurtidas (Blanchier-Trick)](https://www.mexconnect.com/articles/2354-yucatan-style-pickled-onions-cebollas-encurtidas-estilo-yucateca/) · [Masienda — Tortilla-Technik](https://masienda.com/blogs/learn/recipe-tortillas-masa-harina/) · [BfR — Aluminium in Lebensmitteln (FAQ)](https://www.bfr.bund.de/assets/01_Ver%C3%B6ffentlichungen/Fragen_und_Antworten_zu_Aluminium_in_Lebensmitteln_und_verbrauchernahen_Produkten.pdf) · Bezug: [Mexhaus — El Yucateco](https://www.mexhaus.de/en/offers/achiote-paste/annatto-paste-el-yucateco-100-g) (Preise/Verfügbarkeit Stand 07/2026)",
       "tags": [
         "quellen"
       ]
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-05T18:43:06Z",
-    "sourceHash": "50228fa34f9d8924",
+    "generatedAt": "2026-10-12T07:21:24Z",
+    "sourceHash": "3269768767023f71",
     "quantities": [
       {
         "ingredient": "achiote-paste",
@@ -1105,6 +1248,45 @@
         }
       },
       {
+        "ingredient": "zwiebel",
+        "total": {
+          "text": "¼",
+          "value": 0.25,
+          "max": 0.25,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "¼ weiße Zwiebel"
+        }
+      },
+      {
+        "ingredient": "tomaten",
+        "total": {
+          "text": "450 g",
+          "value": 450.0,
+          "max": 450.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "450 g Tomaten"
+        }
+      },
+      {
+        "ingredient": "koriander",
+        "total": {
+          "text": "3 EL",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "3 EL gehacktem Koriander"
+        }
+      },
+      {
         "ingredient": "knoblauch",
         "total": {
           "text": "8–9",
@@ -1120,14 +1302,14 @@
       {
         "ingredient": "habaneros",
         "total": {
-          "text": "2–3",
-          "value": 2.0,
-          "max": 3.0,
+          "text": "3–4",
+          "value": 3.0,
+          "max": 4.0,
           "unit": "Stück",
           "approx": false
         },
         "perTask": {
-          "main": "2–3 Habaneros"
+          "main": "2–3 Habaneros + 1 Habanero"
         }
       },
       {
@@ -1271,8 +1453,10 @@
             },
             "display": "",
             "inStock": false,
-            "optional": true,
-            "note": "\\~15–25 €, wenn öfter mexikanisch geplant — Zip-Beutel + Topfboden geht auch"
+            "buy": {
+              "text": "Ø 19–20 cm"
+            },
+            "note": "\\~15–25 €, einmalig — Topfboden presst zu dick, siehe Beschaffung"
           },
           {
             "ingredient": "habanero-backup",
@@ -1378,6 +1562,57 @@
             }
           },
           {
+            "ingredient": "zwiebel",
+            "name": "weiße Zwiebel",
+            "need": {
+              "text": "¼",
+              "value": 0.25,
+              "max": 0.25,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "¼",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "¼ für die Chiltomate"
+          },
+          {
+            "ingredient": "tomaten",
+            "name": "Tomaten, reif",
+            "need": {
+              "text": "450 g",
+              "value": 450.0,
+              "max": 450.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "450 g",
+            "inStock": false,
+            "buy": {
+              "text": "450 g"
+            },
+            "note": "Rispen- oder Roma-Tomaten, für die Chiltomate"
+          },
+          {
+            "ingredient": "koriander",
+            "name": "Koriander",
+            "need": {
+              "text": "3 EL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "3 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            },
+            "note": "Chiltomate"
+          },
+          {
             "ingredient": "knoblauch",
             "name": "Knoblauch",
             "need": {
@@ -1398,18 +1633,18 @@
             "ingredient": "habaneros",
             "name": "frische Habaneros",
             "need": {
-              "text": "2–3",
-              "value": 2.0,
-              "max": 3.0,
+              "text": "3–4",
+              "value": 3.0,
+              "max": 4.0,
               "unit": "Stück",
               "approx": false
             },
-            "display": "2–3",
+            "display": "3–4",
             "inStock": false,
             "buy": {
-              "text": "2–3"
+              "text": "3–4"
             },
-            "note": "Fallbacks siehe Beschaffung: Mexhaus-Backup → rote Chilis"
+            "note": "2–3 Salsa tamulada, 1 Chiltomate; Fallbacks siehe Beschaffung: Mexhaus-Backup → rote Chilis"
           }
         ]
       },

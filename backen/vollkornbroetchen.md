@@ -1,16 +1,16 @@
 # Vollkornbrötchen auf Vorrat — Weizen als Leitrezept, Dinkel und Weizen-Roggen als Varianten (12 Stück)
 
-*Aktive Zeit \~1¼ Std., gesamt \~26 Std. (Standardweg Übernacht: Fr-Morgen Poolish, Fr-Abend Teig, Sa-Morgen backen; vorgebackene aus dem Frost auch später). Fr-Morgen \~15 Min. Arbeit (Poolish, Kochstück — das Kochstück auch schon Do-Abend), Fr-Abend \~2¾ Std., davon \~45 Min. Arbeit. Samstagmorgen: 1 Std. vom Aufstehen bis zum Frühstück, davon \~10 Min. Arbeit. Vorgebackene aus dem Frost aufbacken: 25 Min. inkl. Vorheizen. Equipment: Küchenwaage (1 g), Fleischthermometer, Teigkarte, Backpapier, 2 Backbleche, Rasierklinge oder sehr scharfes glattes Messer, Sprühflasche oder kleine Metallschale, Küchenmaschine mit Knethaken (Bosch MUM5; Variante Hand: ohne).*
+*Aktive Zeit \~1¼ Std., gesamt \~26 Std. (Standardweg Übernacht: Fr-Morgen Poolish, Fr-Abend Teig, Sa-Morgen backen; vorgebackene aus dem Frost auch später). Fr-Morgen \~15 Min. Arbeit (Poolish, Kochstück — das Kochstück auch schon Do-Abend), Fr-Abend \~3 Std., davon \~45 Min. Arbeit. Samstagmorgen: 1 Std. vom Aufstehen bis zum Frühstück, davon \~10 Min. Arbeit. Vorgebackene aus dem Frost aufbacken: 25 Min. inkl. Vorheizen. Equipment: Küchenwaage (1 g), Fleischthermometer, Teigkarte, Backpapier, 2 Backbleche, Rasierklinge oder sehr scharfes glattes Messer, Sprühflasche oder kleine Metallschale, Küchenmaschine mit Knethaken (Bosch MUM5; Variante Hand: ohne).*
 
-*Varianten: Mehl = Weizen | Weizen-Roggen | Dinkel · Weg = Übernacht | Direkt backen | Einfrieren · Kneten = Maschine | Hand*
+*Varianten: Mehl = Weizen | Weizen-Roggen | Dinkel | Weizen hell · Weg = Übernacht | Direkt backen | Einfrieren · Kneten = Maschine | Hand*
 
-100-%-Vollkornbrötchen mit drei Vorstufen — **Poolish** (Aroma, Frische, weniger Kleie-Bitterkeit), **Kochstück** (saftige Krume über Tage) und **Flohsamen-Quellstück** (Stabilität beim Einfrieren) — — abends geformt, über Nacht im Kühlschrank gegart und morgens alle zusammen gebacken: ein Teil frisch auf den Frühstückstisch, der Rest nur vorgebacken in den Frost und an Werktagen in 10 Min. aufgebacken. Ein Ablauf, drei Mehl-Varianten (Weizen, Weizen + 15 % Roggen, Dinkel), drei Wege nach dem Formen (Übernachtgare mit Vorbacken, direkt backen, roh einfrieren), zwei Arten zu kneten (Küchenmaschine oder von Hand).
+100-%-Vollkornbrötchen mit drei Vorstufen — **Poolish** (Aroma, Frische, weniger Kleie-Bitterkeit), **Kochstück** (saftige Krume über Tage) und **Flohsamen-Quellstück** (Stabilität beim Einfrieren) — — abends geformt, über Nacht im Kühlschrank gegart und morgens alle zusammen gebacken: ein Teil frisch auf den Frühstückstisch, der Rest nur vorgebacken in den Frost und an Werktagen in 10 Min. aufgebacken. Ein Ablauf, drei Vollkorn-Varianten (Weizen, Weizen + 15 % Roggen, Dinkel) plus „Weizen hell“ mit 30 % Type 1050 für eine offenere Krume, drei Wege nach dem Formen (Übernachtgare mit Vorbacken, direkt backen, roh einfrieren), zwei Arten zu kneten (Küchenmaschine oder von Hand).
 
 **Leitrezept ist Weizen:** einmal gebacken (09/2026), fluffig und lecker, vor allem mit Sonnenblumenkernen — aber von Hand zu kurz geknetet, der Teig sehr klebrig, das Rundschleifen missraten, deshalb etwas flache Brötchen. Diese Fassung zieht daraus die Konsequenzen: **weniger Wasser für die Handversion, Kneten durch Dehnen & Falten ersetzt, Zwischengare vor dem Schleifen.**
 
-**Seit 10/2026 mit Küchenmaschine (Bosch MUM58W20) als Standardweg — noch ungetestet.** Die Maschine knetet, was die Hand nicht schafft: voll entwickelter Kleber nach \~12 Min., Fenstertest schon vor der Stockgare. Dafür verträgt der Teig etwas mehr Wasser (+20 g, Reserve bis +20 g), aber bewusst nicht die vollen 95 % der Import-Rezepte — geformt wird weiterhin von Hand, und zu weicher Teig war beim Schleifen das zweite Problem. Die Handführung bleibt als Variante „Hand“ erhalten (validiert, und für die halbe Menge die bessere Wahl).
+**Seit 10/2026 mit Küchenmaschine (Bosch MUM58W20) als Standardweg — einmal gebacken (10/2026), Kneten und Teigtemperatur danach nachgeschärft.** Die Maschine knetet, was die Hand nicht schafft — aber nur, wenn der Haken den Teig greift. Beim ersten Mal klebte der zu weiche Teig flächig an der Schüsselwand, der Haken drehte leer, die Teigtemperatur blieb bei 22,5 °C stehen. Deshalb jetzt **Bassinage**: fester starten, 40 g Wasser erst nach der Kleberbildung schluckweise nachgeben — gleiche Endmenge (100 g), aber ein Teig, der sich durchkneten lässt. Und weil der Knethaken keine Wärme liefert, wird **das Kochstück angewärmt** — mit 300 g die größte kalte Masse im Teig. Die Handführung bleibt als Variante „Hand“ erhalten (validiert, und für die halbe Menge die bessere Wahl).
 
-**Seit 10/2026 ist die Übernachtgare der Standardweg — ebenfalls ungetestet.** Morgens frische Brötchen ohne frühes Aufstehen: Die geformten Teiglinge gehen über Nacht im Kühlschrank und kommen kalt in den Ofen; morgens heizt man nur vor. Dafür halbe Hefe und kürzere Stockgare, damit die Nacht nicht übergärt. Von den 12 kommen 4 fertig gebacken auf den Tisch, 8 nach dem Vorbacken in den Frost (Aufteilung frei wählbar). Der alte Weg „roh einfrieren“ bleibt als Variante, ist für Frühstück aber unpraktisch (2,5–3,5 Std. Gare am Morgen).
+**Seit 10/2026 ist die Übernachtgare der Standardweg — einmal gebacken (10/2026), Gare danach verlängert.** Morgens frische Brötchen ohne frühes Aufstehen: Die geformten Teiglinge gehen über Nacht im Kühlschrank und kommen kalt in den Ofen; morgens heizt man nur vor. Dafür halbe Hefe und kürzere Stockgare, damit die Nacht nicht übergärt. Beim ersten Mal kippte das in die andere Richtung — kalter Teig plus 60 Min. Stockgare ergab morgens untergare, dichte Brötchen —, deshalb jetzt warmer Teig, 75 Min. Stockgare nach Volumen und längeres Akklimatisieren. Von den 12 kommen 4 fertig gebacken auf den Tisch, 8 nach dem Vorbacken in den Frost (Aufteilung frei wählbar). Der alte Weg „roh einfrieren“ bleibt als Variante, ist für Frühstück aber unpraktisch (2,5–3,5 Std. Gare am Morgen).
 
 ## Warum drei Vorstufen — die Begriffe kurz
 
@@ -21,12 +21,12 @@
 
 ## Welche Variante?
 
-| | **Weizen (Leitrezept)** | **Weizen + 15 % Roggen** | **Dinkel** |
-|---|---|---|---|
-| Handling | stabiler Kleber, verzeiht alles außer zu kurzem Kneten | etwas klebriger, weniger elastisch | schwacher Kleber — **überkneten schmiert unwiderruflich**, lieber zu kurz |
-| Ergebnis | höchstes Volumen, lockere Krume, neutral-getreidig | saftiger, herzhafter, beste Frischhaltung, etwas weniger Volumen | nussig-mild, dichtere Krume, trocknet ohne Kochstück schnell |
-| GDM | Vollkorn ✓ | niedrigster glykämischer Index der drei | Vollkorn ✓ |
-| Empfehlung | erste und zweite Charge — Technik festigen | dritte Charge, sobald das Formen sitzt | wenn Dinkelgeschmack gewünscht; am wenigsten fehlertolerant |
+| | **Weizen (Leitrezept)** | **Weizen + 15 % Roggen** | **Dinkel** | **Weizen hell (70 % Vollkorn)** |
+|---|---|---|---|---|
+| Handling | stabiler Kleber, verzeiht alles außer zu kurzem Kneten | etwas klebriger, weniger elastisch | schwacher Kleber — **überkneten schmiert unwiderruflich**, lieber zu kurz | am wenigsten klebrig, spannt beim Schleifen am besten |
+| Ergebnis | höchstes Volumen der Vollkorn-Varianten, lockere, aber feinporige Krume, neutral-getreidig | saftiger, herzhafter, beste Frischhaltung, etwas weniger Volumen | nussig-mild, dichtere Krume, trocknet ohne Kochstück schnell | offenere Krume mit echten Poren, mehr Volumen, „Bäckerbrötchen“-näher |
+| GDM | Vollkorn ✓ | niedrigster glykämischer Index der vier | Vollkorn ✓ | höherer GI — nur halbes Brötchen mit Protein, siehe GDM-Abschnitt |
+| Empfehlung | Standard — Technik festigen | sobald das Formen sitzt | wenn Dinkelgeschmack gewünscht; am wenigsten fehlertolerant | wenn Luftigkeit wichtiger ist als 100 % Vollkorn; ungetestet |
 
 ## Beschaffung
 
@@ -41,7 +41,8 @@
 ### Aldi / REWE
 
 **Trockenwaren:**
-- [ ] 1 kg Weizenvollkornmehl, fein — nur Weizen, Weizen-Roggen *(Bedarf 600 g; Roggen-Variante 510 g)*
+- [ ] 1 kg Weizenvollkornmehl, fein — nur Weizen, Weizen-Roggen, Weizen hell *(Bedarf 600 g; Roggen-Variante 510 g, Weizen hell 420 g)*
+- [ ] 1 kg Weizenmehl Type 1050 — nur Weizen hell *(Bedarf 180 g)*
 - [ ] Roggenvollkornmehl, 1 Packung — nur Weizen-Roggen *(Bedarf 90 g)*
 - [ ] 1 kg Dinkelvollkornmehl, fein — nur Dinkel *(Bedarf 600 g, statt Weizen)*
 - [ ] 1 Glas Honig *(Bedarf 12 g)*
@@ -70,41 +71,46 @@
 
 ## Mengen — alle Varianten auf einen Blick
 
-Ergibt 12 Teiglinge à \~100 g (Dinkel \~95 g). **Fett gedruckt = Leitrezept Weizen, mit Maschine.**
+Ergibt 12 Teiglinge à \~95–100 g (Teig nach dem Kneten wiegen und durch 12 teilen — an Schüssel und Händen bleiben \~40–80 g). **Fett gedruckt = Leitrezept Weizen, mit Maschine.**
 
-| Stufe | Zutat | **Weizen** | Weizen + Roggen | Dinkel |
-|---|---|---|---|---|
-| **Poolish** (Vorabend) | Vollkornmehl der Sorte (Roggen-Variante: Weizen) | **150 g** | 150 g | 150 g |
-| | Wasser, \~20 °C | **150 g** | 150 g | 150 g |
-| | Frischhefe | **0,2 g (erbsengroß)** | 0,2 g | 0,2 g |
-| **Kochstück** (Vorabend) | Vollkornmehl der Sorte (Roggen-Variante: Weizen) | **60 g** | 60 g | 60 g |
-| | Wasser | **240 g** | 240 g | 240 g |
-| | Salz | **13 g** | 13 g | 13 g |
-| **Quellstück** (Backtag) | Flohsamenschalen | **6 g** | 6 g | 6 g |
-| | Wasser | **60 g** | 60 g | 60 g |
-| **Hauptteig** | Vollkornmehl | **390 g Weizen** | 300 g Weizen + 90 g Roggen | 390 g Dinkel |
-| | Wasser zur Autolyse (beide Wege), \~28 °C (Maschine: \~25 °C) | **80 g** | 90 g | 40 g |
-| | + Wasser beim Kneten — **Maschine** | **20 g + bis 20 g Reserve** | 20 g + bis 20 g Reserve | 10 g + bis 10 g Reserve |
-| | + Reservewasser — Hand (beim 2. Falten) | 20–30 g | 20–30 g | 20 g |
-| | Frischhefe: Übernacht / Direkt backen / Einfrieren | **6 g / 6 g / 12 g** | 6 / 6 / 12 g | 6 / 6 / 12 g |
-| | Honig | **12 g** | 12 g | 12 g |
-| | Butter, weich | **18 g** | 18 g | 18 g |
-| | Optional: inaktives Backmalz | 6 g | 6 g | 6 g |
-| | Optional: Brotgewürz | — | 4–6 g | — |
-| **Führung** | Autolyse | **45 Min.** | 45 Min. | 30 Min. |
-| | Kneten Maschine: Stufe 1 + Stufe 2 | **5 + 6–8 Min.** | 5 + 6–8 Min. | 4 + 2–3 Min. |
-| | Kneten Hand: Slap & Fold | 5 Min. | 5 Min. | 3 Min. |
-| | Teigtemperatur nach dem Kneten | **25–26 °C** | 25–26 °C | 24–25 °C |
-| | **Übernacht:** Stockgare Maschine (1× Falten) / Hand (3× Falten) | **60 / 75 Min.** | 60 / 75 Min. | 50 / 60 Min. |
-| | **Übernacht:** Volumen am Ende der Stockgare | **\~1,5-fach** | \~1,4-fach | \~1,3-fach |
-| | **Übernacht:** Kühlschrankgare 4–6 °C | **10–11 Std.** (8–14 Std. Spielraum) | 10–11 Std. | 9–10 Std. |
-| | **Übernacht:** 8 vorbacken / 4 fertig backen | **13–14 / 18–20 Min.** | 13–14 / 18–20 Min. | 12–13 / 17–19 Min. |
-| | Stockgare Maschine (2× Falten) — Direkt backen, Einfrieren | 90 Min. | 90 Min. | 75 Min. |
-| | Stockgare Hand (3× Falten) — Direkt backen, Einfrieren | 90–120 Min. | 90–120 Min. | 75–90 Min. |
-| | Volumen am Ende der Stockgare — Direkt backen, Einfrieren | \~doppelt | \~1,8-fach | \~1,5-fach |
-| | Stückgare bei Direkt backen | 60–75 Min. | 60–75 Min. | 50–60 Min. |
+| Stufe | Zutat | **Weizen** | Weizen + Roggen | Dinkel | Weizen hell |
+|---|---|---|---|---|---|
+| **Poolish** (Vorabend) | Vollkornmehl der Sorte (Roggen-Variante, Weizen hell: Weizen) | **150 g** | 150 g | 150 g | 150 g |
+| | Wasser, \~20 °C | **150 g** | 150 g | 150 g | 150 g |
+| | Frischhefe | **0,2 g (erbsengroß)** | 0,2 g | 0,2 g | 0,2 g |
+| **Kochstück** (Vorabend) | Vollkornmehl der Sorte (Roggen-Variante, Weizen hell: Weizen) | **60 g** | 60 g | 60 g | 60 g |
+| | Wasser | **240 g** | 240 g | 240 g | 240 g |
+| | Salz | **13 g** | 13 g | 13 g | 13 g |
+| | vor dem Teig anwärmen auf | **\~35 °C** | \~35 °C | \~35 °C | \~35 °C |
+| **Quellstück** (Backtag) | Flohsamenschalen | **6 g** | 6 g | 6 g | 6 g |
+| | Wasser | **60 g** | 60 g | 60 g | 60 g |
+| **Hauptteig** | Mehl | **390 g Weizenvollkorn** | 300 g Weizenvollkorn + 90 g Roggenvollkorn | 390 g Dinkelvollkorn | 210 g Weizenvollkorn + 180 g Type 1050 |
+| | Wasser zur Autolyse (beide Wege), \~30 °C | **60 g** | 70 g | 30 g | 45 g |
+| | + Wasser beim Kneten — **Maschine** (Bassinage, in 4 Schlucken) | **40 g** | 40 g | 20 g | 40 g |
+| | + Wasser beim Kneten — Hand (mit der Hefe) | 20 g | 20 g | 10 g | 20 g |
+| | + Reservewasser — Hand (beim 2. Falten) | 20–30 g | 20–30 g | 20 g | 10–20 g |
+| | Frischhefe: Übernacht / Direkt backen / Einfrieren | **6 g / 6 g / 12 g** | 6 / 6 / 12 g | 6 / 6 / 12 g | 6 / 6 / 12 g |
+| | Honig | **12 g** | 12 g | 12 g | 12 g |
+| | Butter, weich | **18 g** | 18 g | 18 g | 18 g |
+| | Optional: inaktives Backmalz | 6 g | 6 g | 6 g | 6 g |
+| | Optional: Brotgewürz | — | 4–6 g | — | — |
+| **Führung** | Autolyse, warm (\~26–28 °C) | **45 Min.** | 45 Min. | 30 Min. | 45 Min. |
+| | Kneten Maschine: Stufe 1 + Stufe 2 (inkl. Bassinage) | **5 + 8–10 Min.** | 5 + 8–10 Min. | 4 + 3–4 Min. | 5 + 7–9 Min. |
+| | Kneten Hand: Slap & Fold | 5 Min. | 5 Min. | 3 Min. | 5 Min. |
+| | Teigtemperatur nach dem Kneten | **25–26 °C** | 25–26 °C | 24–25 °C | 25–26 °C |
+| | **Übernacht:** Stockgare Maschine (2× Falten) / Hand (3× Falten) — nach Volumen | **75 / 90 Min.** | 75 / 90 Min. | 60 / 70 Min. | 75 / 90 Min. |
+| | **Übernacht:** Volumen am Ende der Stockgare | **\~1,6-fach** | \~1,5-fach | \~1,4-fach | \~1,6-fach |
+| | **Übernacht:** Kühlschrankgare 4–6 °C | **10–11 Std.** (8–14 Std. Spielraum) | 10–11 Std. | 9–10 Std. | 10–11 Std. |
+| | **Übernacht:** Akklimatisieren morgens | **45–60 Min.** | 45–60 Min. | 40–50 Min. | 45–60 Min. |
+| | **Übernacht:** 8 vorbacken / 4 fertig backen | **13–14 / 18–20 Min.** | 13–14 / 18–20 Min. | 12–13 / 17–19 Min. | 13–14 / 18–20 Min. |
+| | Stockgare Maschine (2× Falten) — Direkt backen, Einfrieren | 90 Min. | 90 Min. | 75 Min. | 90 Min. |
+| | Stockgare Hand (3× Falten) — Direkt backen, Einfrieren | 90–120 Min. | 90–120 Min. | 75–90 Min. | 90–120 Min. |
+| | Volumen am Ende der Stockgare — Direkt backen, Einfrieren | \~doppelt | \~1,8-fach | \~1,5-fach | \~doppelt |
+| | Stückgare bei Direkt backen | 60–75 Min. | 60–75 Min. | 50–60 Min. | 60–75 Min. |
 
-**Zur Wassermenge:** Die Import-Rezepte rechneten mit 120 g Hauptteig-Wasser (Weizen) für die Küchenmaschine. Von Hand war genau das der Fehler (09/2026): 95 % Gesamt-Hydration klebt so, dass man zu früh aufhört zu kneten und beim Schleifen keine Spannung bekommt. Mit 80 g liegt die Gesamt-Hydration bei \~88 % — davon sind 300 g Wasser in Kochstück und Quellstück gebunden, frei im Teig sind also \~65 %, was sich von Hand wie ein normaler weicher Brötchenteig anfühlt. **Reservewasser erst nach dem zweiten Falten zugeben, wenn der Teig fest wirkt — nie vorher.** **Mit Maschine** startet der Teig bei 100 g (\~92 % gesamt) und darf über die Reserve bis 120 g gehen — die Maschine entwickelt den Kleber auch bei weicherem Teig, die Grenze setzt das Formen von Hand. Erst ausprobieren, ob 100 g sich gut schleifen lassen, dann beim nächsten Mal in 10-g-Schritten hoch. Das Autolyse-Wasser ist für beide Wege gleich, die Maschine bekommt ihren Aufschlag erst beim Kneten. Bäckerprozente: Salz 2,2 %, Fett 3 %, Honig 2 %.
+**Zur Wassermenge:** Die Import-Rezepte rechneten mit 120 g Hauptteig-Wasser (Weizen) für die Küchenmaschine. Von Hand war genau das der Fehler (09/2026): 95 % Gesamt-Hydration klebt so, dass man zu früh aufhört zu kneten und beim Schleifen keine Spannung bekommt. Mit 80 g liegt die Gesamt-Hydration bei \~88 % — davon sind 300 g Wasser in Kochstück und Quellstück gebunden, frei im Teig sind also \~65 %, was sich von Hand wie ein normaler weicher Brötchenteig anfühlt. **Reservewasser erst nach dem zweiten Falten zugeben, wenn der Teig fest wirkt — nie vorher.** **Mit Maschine** endet der Teig bei 100 g (\~92 % gesamt) — aber nicht auf einmal: Beim ersten Maschinen-Durchgang (10/2026) mit 80 g in der Autolyse und 20 g zu Knetbeginn klebte der Teig flächig an der Schüsselwand, der Haken drehte leer, und nach 5 Extra-Minuten hatte sich weder der Kleber entwickelt noch die Temperatur bewegt. Deshalb **Bassinage**: Die Autolyse bekommt nur 60 g, der feste Teig wickelt sich um den Haken und baut Kleber auf, und die restlichen 40 g laufen erst danach schluckweise ein. Mehr als 100 g erst, wenn das sicher klappt (siehe Notizen). Bäckerprozente: Salz 2,2 %, Fett 3 %, Honig 2 %.
+
+**Zur Teigtemperatur:** Das Autolyse-Wasser ist mit 60 g zu wenig, um den Teig zu steuern — die große kalte Masse ist das Kochstück (300 g, aus dem Kühlschrank \~6 °C). Mit kaltem Kochstück und 25-°C-Wasser lag der Teig 10/2026 bei 22,5 °C statt 25–26 °C, und weil der Knethaken bei klebendem Teig keine Reibungswärme liefert, blieb er dort. Die Hefe arbeitet bei 22 °C spürbar langsamer → untergar, dichte Krume. Deshalb: **Kochstück vor dem Teig auf \~35 °C anwärmen** (das bringt rechnerisch die fehlenden \~3 °C), Wasser \~30 °C, Autolyse warm stellen.
 
 **Halbe Menge (6 Stück):** alle Mengen × 0,5. Zwei Sonderfälle: Poolish-Hefe 0,1 g ist nicht abwiegbar → Eilvariante mit 1 g Hefe, 3–4 Std. warm (24–26 °C); und das Kochstück im kleinsten Topf kochen, sonst brennt es an, bevor es eindickt. Die halbe Menge lieber **von Hand** kneten: \~600 g Teig greift der Knethaken in der 3,9-l-Schüssel nur schlecht, er schiebt ihn eher herum.
 
@@ -118,33 +124,39 @@ Ergibt 12 Teiglinge à \~100 g (Dinkel \~95 g). **Fett gedruckt = Leitrezept Wei
 
 **2. Kochstück kochen (ca. 10 Min.)**
 *jederzeit · Herd*
-60 g Weizenvollkornmehl (Dinkel: 60 g Dinkelvollkornmehl), 240 g Wasser und 13 g Salz **kalt** in einem kleinen Topf mit dem Schneebesen glatt rühren (sonst Klumpen). Bei mittlerer Hitze unter ständigem Rühren erhitzen — nach 2–4 Min. dickt es plötzlich puddingartig ein. **1 Min. weiterrühren**, vom Herd, in eine Schüssel umfüllen, Frischhaltefolie **direkt auf die Oberfläche** (keine Haut), abkühlen, dann in den Kühlschrank. Hält 2 Tage, wird kalt verarbeitet. *Zu lange gekocht = klumpig = trockene Krume; nur bis zum Eindicken plus eine Minute.*
+60 g Weizenvollkornmehl (Dinkel: 60 g Dinkelvollkornmehl), 240 g Wasser und 13 g Salz **kalt** in einem kleinen Topf mit dem Schneebesen glatt rühren (sonst Klumpen). Bei mittlerer Hitze unter ständigem Rühren erhitzen — nach 2–4 Min. dickt es plötzlich puddingartig ein. **1 Min. weiterrühren**, vom Herd, in eine Schüssel umfüllen, Frischhaltefolie **direkt auf die Oberfläche** (keine Haut), abkühlen, dann in den Kühlschrank. Hält 2 Tage; vor dem Teig wird es angewärmt (siehe „Quellstück ansetzen“). *Zu lange gekocht = klumpig = trockene Krume; nur bis zum Eindicken plus eine Minute.*
 
 ### Backtag — Teig (\~3 Std., davon \~30 Min. Arbeit)
 
 **3. Quellstück ansetzen (15 Min., passiv)**
 *jederzeit*
-30 Min. vor Teigbeginn: 6 g Flohsamenschalen mit 60 g Wasser verrühren, 15 Min. stehen lassen — es entsteht ein festes Gel. *Beim Weg Direkt backen kann es entfallen; dann das Hauptteig-Wasser um 30 g erhöhen (die 60 g Gel-Wasser fallen weg, insgesamt also 30 g weniger). Bei Übernacht mitmachen — es hält auch die vorgebackenen Brötchen im Frost saftig.*
+30 Min. vor Teigbeginn: 6 g Flohsamenschalen mit 60 g Wasser verrühren, 15 Min. stehen lassen — es entsteht ein festes Gel. **Gleichzeitig das Kochstück anwärmen:** in der Mikrowelle in 20-Sek.-Intervallen (dazwischen umrühren) oder im warmen Wasserbad auf **\~35 °C** (Fleischthermometer) — nicht heißer als 40 °C, sonst schadet es später der Hefe. *Das Kochstück ist mit 300 g die größte kalte Masse im Teig; kalt aus dem Kühlschrank drückt es den Teig auf 22 °C (10/2026), und kein Autolyse-Wasser gleicht das aus.* *Beim Weg Direkt backen kann es entfallen; dann das Hauptteig-Wasser um 30 g erhöhen (die 60 g Gel-Wasser fallen weg, insgesamt also 30 g weniger). Bei Übernacht mitmachen — es hält auch die vorgebackenen Brötchen im Frost saftig.*
 
 **4. Autolyse (45 Min., passiv)**
 *nach Poolish ansetzen, Kochstück kochen, Quellstück ansetzen*
-In der Rührschüssel der Küchenmaschine (Hand: große Schüssel): 390 g Weizenvollkornmehl (Weizen-Roggen: 300 g Weizenvollkornmehl + 90 g Roggenvollkornmehl, Dinkel: 390 g Dinkelvollkornmehl), 80 g Wasser (Weizen-Roggen: 90 g, Dinkel: 40 g) von \~28 °C, den kompletten Poolish, das komplette Kochstück und das komplette Quellstück **nur so lange mischen, bis kein trockenes Mehl mehr sichtbar ist** — mit Knethaken 1–2 Min. auf Stufe 1 (Hand: Teigkarte und nasse Hände, 2–3 Min.); darf klumpig aussehen. Mit Maschine das Wasser nur \~25 °C warm nehmen, der Knethaken bringt später 2–3 °C Reibungswärme. Musste auch der Poolish in den Kühlschrank, das Wasser \~32 °C (Maschine: \~30 °C) warm nehmen. Abdecken, 45 Min. ruhen lassen (Dinkel: 30 Min.). *Kein Kneten — das Mehl arbeitet allein.*
+In der Rührschüssel der Küchenmaschine (Hand: große Schüssel): 390 g Weizenvollkornmehl (Weizen-Roggen: 300 g Weizenvollkornmehl + 90 g Roggenvollkornmehl, Dinkel: 390 g Dinkelvollkornmehl, Weizen hell: 210 g Weizenvollkornmehl + 180 g Weizenmehl Type 1050), 60 g Wasser (Weizen-Roggen: 70 g, Dinkel: 30 g, Weizen hell: 45 g) von \~30 °C, den kompletten Poolish, das komplette angewärmte Kochstück und das komplette Quellstück **nur so lange mischen, bis kein trockenes Mehl mehr sichtbar ist** — mit Knethaken 1–2 Min. auf Stufe 1 (Hand: Teigkarte und nasse Hände, 2–3 Min.); darf klumpig und eher fest aussehen, das restliche Wasser kommt beim Kneten. Musste der Poolish in den Kühlschrank, das Wasser \~38 °C warm nehmen. Abdecken und **warm** ruhen lassen (\~26–28 °C — Backofen aus, nur Licht an, Tür einen Spalt offen), 45 Min. (Dinkel: 30 Min.). **Am Ende Temperatur stechen: Ziel 25–27 °C**; darunter das Wasser beim Kneten \~35 °C warm nehmen. *Kein Kneten — das Mehl arbeitet allein.*
 
-**5. Kneten mit Maschine (ca. 13 Min.)**
+**5. Kneten mit Maschine (ca. 15 Min.)**
 *nur Maschine · nach Autolyse*
-6 g Frischhefe (Einfrieren: 12 g) zerbröseln und mit 12 g Honig (und ggf. 6 g Backmalz, 4–6 g Brotgewürz) und 20 g Wasser (Dinkel: 10 g) auf den Teig geben. **5 Min. Stufe 1** (Dinkel: 4 Min.) — einmal anhalten und den Teig vom Schüsselrand und Haken schaben. Dann 18 g weiche Butter in Flocken zugeben und **6–8 Min. Stufe 2** (Dinkel: 2–3 Min., ab Minute 2 alle 30 Sek. prüfen) kneten, bis sich der Teig weitgehend vom Schüsselboden löst und glatt glänzt. **Reservewasser:** fühlt sich der Teig in den ersten 2 Min. auf Stufe 2 fest an, bis 20 g Wasser (Dinkel: 10 g) **schluckweise** am Rand einlaufen lassen und erst nachgießen, wenn das vorige aufgenommen ist. **Fenstertest jetzt:** ein walnussgroßes Stück langsam auseinanderziehen — Weizen gibt ein fast durchsichtiges Häutchen mit Kleiepunkten (sonst 1–2 Min. weiter auf Stufe 2); Dinkel reißt früher, „dünn und dehnbar“ reicht, **nie nachkneten**. *Höher als Stufe 2 nicht nötig — mehr Tempo bringt bei Vollkorn vor allem Wärme.*
+6 g Frischhefe (Einfrieren: 12 g) zerbröseln und mit 12 g Honig (und ggf. 6 g Backmalz, 4–6 g Brotgewürz) auf den Teig geben — **noch kein Wasser**. **5 Min. Stufe 1** (Dinkel: 4 Min.), einmal anhalten und Rand und Haken abschaben. Dann **Stufe 2, bis sich der Teig um den Haken wickelt** und an der Schüsselwand nur noch punktuell haftet (\~3–4 Min.; Dinkel: 2 Min.). **Bassinage:** jetzt 40 g Wasser (Dinkel: 20 g) von \~30 °C in **4 Schlucken** am Rand einlaufen lassen, auf Stufe 2 weiterkneten — den nächsten Schluck erst, wenn der vorige eingearbeitet ist und der Teig wieder am Haken hängt (je \~1 Min.). Dann 18 g weiche Butter in Flocken zugeben und **2–3 Min. Stufe 2** (Dinkel: 1 Min.), bis sie eingearbeitet ist und der Teig glänzt.
+
+**Zwei Prüfpunkte** — wichtiger als die Uhr:
+- **Temperatur zwischendurch stechen — sie muss steigen** (1–2 °C über die Knetzeit). Bleibt sie stehen, dreht der Haken leer: anhalten, den Teig vom Rand lösen und als Klumpen auf den Haken setzen, ggf. 1 Min. Stufe 3. Klebt er auch dann flächig an der Wand: auf die geölte Arbeitsfläche kippen und **2–3 Min. Slap & Fold** (siehe Hand-Variante) — das rettet den Kleber.
+- **Fenstertest am Ende:** ein walnussgroßes Stück langsam auseinanderziehen — Weizen gibt ein fast durchsichtiges Häutchen mit Kleiepunkten (sonst 1–2 Min. weiter auf Stufe 2); Dinkel reißt früher, „dünn und dehnbar“ reicht, **nie nachkneten**.
+
+*Mehr als Stufe 2–3 bringt nichts. Die Endmenge Wasser ist dieselbe wie früher (100 g) — nur die Reihenfolge ist neu: ein fester Teig, den der Haken greifen kann, bekommt sein Wasser erst, wenn das Klebergerüst steht.*
 
 **6. Slap & Fold (5 Min.)**
 *nur Hand · nach Autolyse*
-Hefe einarbeiten — Slap & Fold statt Kneten: 6 g Frischhefe (Einfrieren: 12 g) zerbröseln, mit 12 g Honig (und ggf. 6 g Backmalz, 4–6 g Brotgewürz) auf den Teig geben. Teig auf die **unbemehlte** Arbeitsfläche kippen. **Slap & Fold:** Teig mit beiden Händen an einer Seite hochheben, mit Schwung auf die Fläche schlagen, den hängenden Teil über den liegenden falten, um 90° drehen, wiederholen — **3 Min.**, dann 18 g weiche Butter darauf und **weitere 2 Min.**, bis sie eingearbeitet ist. Der Teig klebt anfangs stark — **nicht mehlen, nasse Hände und Teigkarte**. Nach 5 Min. hält er beim Hochheben schon kurz zusammen; mehr muss er hier nicht können, den Rest macht das Falten. **Dinkel: nur 3 Min. gesamt** (Butter nach 2 Min.), sobald der Teig glänzt und schmiert sofort aufhören.
+Hefe einarbeiten — Slap & Fold statt Kneten: 6 g Frischhefe (Einfrieren: 12 g) zerbröseln, in 20 g Wasser (Dinkel: 10 g) von \~30 °C auflösen und mit 12 g Honig (und ggf. 6 g Backmalz, 4–6 g Brotgewürz) auf den Teig geben, mit nassen Händen einkneifen. Teig auf die **unbemehlte** Arbeitsfläche kippen. **Slap & Fold:** Teig mit beiden Händen an einer Seite hochheben, mit Schwung auf die Fläche schlagen, den hängenden Teil über den liegenden falten, um 90° drehen, wiederholen — **3 Min.**, dann 18 g weiche Butter darauf und **weitere 2 Min.**, bis sie eingearbeitet ist. Der Teig klebt anfangs stark — **nicht mehlen, nasse Hände und Teigkarte**. Nach 5 Min. hält er beim Hochheben schon kurz zusammen; mehr muss er hier nicht können, den Rest macht das Falten. **Dinkel: nur 3 Min. gesamt** (Butter nach 2 Min.), sobald der Teig glänzt und schmiert sofort aufhören.
 
 **7. Temperatur messen (1 Min.)**
 *nach Kneten mit Maschine, Slap & Fold*
-Teigtemperatur mit dem Fleischthermometer messen: Ziel **25–26 °C** (Dinkel: 24–25 °C). Unter 24 °C → Stockgare um 20 Min. verlängern; über 27 °C → um 15 Min. kürzen, Dinkel dann kühl stellen. *Mit Maschine ist „zu warm“ das wahrscheinlichere Problem — beim nächsten Mal das Autolyse-Wasser entsprechend kühler nehmen.*
+Teigtemperatur mit dem Fleischthermometer messen: Ziel **25–26 °C** (Dinkel: 24–25 °C). **Unter 24 °C:** die Stockgare an einen warmen Ort (\~28 °C, Backofen nur mit Licht) und **nach Volumen statt nach Uhr** gehen lassen — sie dauert dann 20–40 Min. länger; genau das hat 10/2026 gefehlt (22,5 °C, Stockgare nach Uhr → morgens untergar). Über 27 °C → Stockgare um 15 Min. kürzen, Dinkel dann kühl stellen.
 
-**8. Kurze Stockgare (60–75 Min., passiv)**
+**8. Kurze Stockgare (75–90 Min., passiv)**
 *nur Übernacht · nach Temperatur messen*
-Teig in eine leicht geölte Schüssel, abdecken, bei \~24 °C **60 Min.** (Hand: 75 Min.; Dinkel: 50 Min., Hand 60 Min.) gehen lassen — **bewusst kürzer**, die Gare läuft über Nacht im Kühlschrank weiter. **Dehnen & Falten** (nasse Hände, eine Seite hochziehen bis zum Widerstand, über die Mitte legen, Schüssel vierteldrehen, viermal — 20 Sek.): **1× nach 30 Min.** (Hand: 3× nach 20, 40 und 60 Min., Fenstertest nach dem 3. Falten). Fertig bei \~1,5-fachem Volumen (Weizen-Roggen: \~1,4-fach, Dinkel: \~1,3-fach) mit ersten Blasen am Rand — **nicht verdoppeln lassen**. *Lieber eine Spur zu früh als zu spät: Eine zu lange Stockgare rächt sich morgens als übergare, flache Brötchen.*
+Teig in eine leicht geölte Schüssel, abdecken, bei \~24–26 °C **75 Min.** (Hand: 90 Min.; Dinkel: 60 Min., Hand 70 Min.) gehen lassen — kürzer als bei Direkt backen, die Gare läuft über Nacht im Kühlschrank weiter. **Dehnen & Falten** (nasse Hände, eine Seite hochziehen bis zum Widerstand, über die Mitte legen, Schüssel vierteldrehen, viermal — 20 Sek.): **2× nach 25 und 50 Min.** (Hand: 3× nach 20, 40 und 60 Min., Fenstertest nach dem 3. Falten). **Maßgeblich ist das Volumen, nicht die Uhr:** fertig bei \~1,6-fachem Volumen (Weizen-Roggen: \~1,5-fach, Dinkel: \~1,4-fach), gewölbte Oberfläche mit Blasen am Rand und an der Schüsselwand — **nicht verdoppeln lassen**. Tipp: Teig in eine gerade Dose mit Markierung setzen, dann ist das Volumen ablesbar. *10/2026 waren 60 Min. bei 22,5 °C zu wenig: die Teiglinge kamen morgens untergar aus dem Kühlschrank, die Krume blieb dicht ohne Poren.*
 
 **9. Stockgare mit 2× Falten (90 Min., passiv)**
 *nur Maschine, Direkt backen, Einfrieren · nach Temperatur messen*
@@ -156,7 +168,7 @@ Teig in eine leicht geölte Schüssel, abdecken, bei \~24 °C 90–120 Min. gehe
 
 **11. Vorformen (10 Min. + 10 Min. Zwischengare)**
 *nach Kurze Stockgare, Stockgare mit 2× Falten, Stockgare mit 3× Falten*
-Abstechen und Vorformen: Arbeitsfläche **dünn** bemehlen, Teig mit der Teigkarte aus der Schüssel kippen — nicht drücken, das Gas soll bleiben. In **12 Stücke à \~100 g** (Dinkel: \~95 g) schneiden; wiegen lohnt sich, dann sind alle gleichzeitig gar. **Vorformen:** jedes Stück mit nassen Händen einmal von allen Seiten zur Mitte falten, mit der Faltseite nach unten ablegen. **Alle 12 abgedeckt 10 Min. entspannen lassen.** *Das ist neu gegenüber dem ersten Versuch: frisch geteilter Teig zieht sich zusammen und reißt beim Schleifen — entspannter Teig lässt sich spannen.*
+Abstechen und Vorformen: Arbeitsfläche **dünn** bemehlen, Teig mit der Teigkarte aus der Schüssel kippen — nicht drücken, das Gas soll bleiben. Den ganzen Teig wiegen und **durch 12 teilen** (\~95–100 g; an Schüssel und Händen bleiben \~40–80 g hängen — 10/2026 reichte es mit festen 100 g nur für 11). Stücke abwiegen, dann sind alle gleichzeitig gar. **Vorformen:** jedes Stück mit nassen Händen einmal von allen Seiten zur Mitte falten, mit der Faltseite nach unten ablegen. **Alle 12 abgedeckt 10 Min. entspannen lassen.** *Das ist neu gegenüber dem ersten Versuch: frisch geteilter Teig zieht sich zusammen und reißt beim Schleifen — entspannter Teig lässt sich spannen.*
 
 **12. Rundschleifen (10 Min.)**
 Rundschleifen — der wichtigste Handgriff. **Ziel:** eine Kugel mit straffer, glatter Haut oben und einem **Schluss** (zusammengezogener „Nabel") unten. Die gespannte Haut hält das Gas wie ein Ballon — so geht das Brötchen nach oben statt in die Breite.
@@ -166,6 +178,8 @@ Rundschleifen — der wichtigste Handgriff. **Ziel:** eine Kugel mit straffer, g
 3. Hand locker gewölbt über den Teig, Fingerspitzen und Handballen auf der Fläche, in kleinen Kreisen bewegen und dabei leicht zu sich heranziehen. **10–20 Kreise**, bis die Oberfläche glatt und prall ist. Reißt die Haut: aufhören, das war zu viel.
 4. **Für sehr weichen Teig (so war es beim ersten Mal):** statt zu kreisen den Teigling mit der Teigkarte von der Seite untergreifen und 6–8-mal über die Fläche zu sich ziehen — die Karte spannt die Haut, ohne dass die Hand klebt. Klebt er trotzdem: Hände anfeuchten, nicht mehlen. Rutscht er ohne Spannung: Mehl von der Fläche wischen.
 5. Umdrehen und prüfen: unten ein zusammengezogener Punkt = Schluss.
+
+*Erwartung: Eine glatte, glänzende Haut wie bei Weizenbrötchen gibt es bei 100 % Vollkorn nicht — die Kleie macht die Oberfläche immer etwas rau. Entscheidend ist, dass der Teigling prall wirkt und beim Antippen nachgibt, ohne zu verlaufen. Bleibt er klebrig und schlaff (10/2026), lag es meist am Kneten, nicht am Schleifen — siehe Prüfpunkte in „Kneten mit Maschine“.*
 
 **13. Topping (ca. 5 Min.)**
 Oberseite mit feuchter Hand betupfen und in 60 g Sonnenblumenkerne (oder andere Saaten) drücken. **Ablegen:** Schluss nach unten, mindestens 4 cm Abstand, auf Backpapier. *Wer sich das Schleifen noch nicht zutraut: Schluss nach oben ablegen und nicht einschneiden — der Schluss reißt rustikal auf und verzeiht weniger Spannung.*
@@ -180,9 +194,9 @@ Oberseite mit feuchter Hand betupfen und in 60 g Sonnenblumenkerne (oder andere 
 *nur Übernacht · nach Topping*
 Die Teiglinge schon beim Topping auf **zwei Bögen Backpapier** setzen, so zugeschnitten, dass beide zusammen aufs Blech passen: **8 auf den einen** (die Vorback-Charge), **4 auf den anderen** (fürs Frühstück) — Schluss nach unten, 4 cm Abstand. Die Bögen auf Bretter, Tabletts oder ein Blech legen, **luftdicht abdecken** (großer Gefrierbeutel, Duschhaube, umgedrehte flache Kiste) — offen bilden sie eine trockene Haut, die beim Backen nicht mehr aufgeht. Sofort in die **kälteste Zone** des Kühlschranks (hinten unten, nicht die Tür; Ziel 4–6 °C). **10–11 Std.** (Dinkel: 9–10 Std.); 8–14 Std. funktionieren, je kälter der Kühlschrank, desto mehr Spielraum. *Hier gärt die Hefe langsam weiter, und Enzyme bauen Stärke zu Zucker ab — mehr Aroma und eine kräftigere Kruste als bei der Direktführung.*
 
-**15. Vorheizen und akklimatisieren (30–40 Min., passiv)**
+**15. Vorheizen und akklimatisieren (45–60 Min., passiv)**
 *nur Übernacht · nach Kühlschrankgare über Nacht*
-Morgens als Erstes: Ofen mit zweitem Blech auf mittlerer Schiene auf **250 °C Ober-/Unterhitze**, Metallschale auf den Ofenboden. Gleichzeitig die Teiglinge **abgedeckt** aus dem Kühlschrank auf die Arbeitsfläche. Nach 30–40 Min. **Fingertest** (siehe unten) — kalter Teig reagiert träger, die Delle darf also etwas langsamer zurückkommen als bei warmem. Springt sie sofort zurück: 15–30 Min. länger draußen lassen (Ofen auf 230 °C runter, damit er nicht unnötig heizt; zum Einschießen wieder 250 °C). Bleibt sie stehen: sofort backen, nicht einschneiden. *Die Teiglinge kommen noch kühl in den Ofen — das ist gewollt: kalter Teig lässt sich sauberer einschneiden und hält die Form.*
+Morgens als Erstes: Ofen mit zweitem Blech auf mittlerer Schiene auf **250 °C Ober-/Unterhitze**, Metallschale auf den Ofenboden. Gleichzeitig die Teiglinge **abgedeckt** aus dem Kühlschrank auf die Arbeitsfläche, an einen warmen Platz (neben den Ofen). Nach 45 Min. **Fingertest** (siehe unten) — kalter Teig reagiert träger, die Delle darf also etwas langsamer zurückkommen als bei warmem. Springt sie sofort zurück (so war es 10/2026): 15–30 Min. länger draußen lassen (Ofen auf 230 °C runter, damit er nicht unnötig heizt; zum Einschießen wieder 250 °C) — lieber 75 Min. akklimatisieren als untergar backen. Bleibt sie stehen: sofort backen, nicht einschneiden. *Die Teiglinge kommen noch kühl in den Ofen — das ist gewollt: kalter Teig lässt sich sauberer einschneiden und hält die Form.*
 
 
 **16. Einfrieren (20 Min. + 2–3 Std. passiv)**
@@ -247,14 +261,14 @@ Ofen auf **220 °C Ober-/Unterhitze** vorheizen (10–15 Min., kein Blech, Rost 
 
 *nur Übernacht*
 
-*Für ein Frühstück um 8:15 Uhr*
+*Für ein Frühstück um 8:30 Uhr*
 
-- Vortag: Fr 6:30 Poolish ansetzen · Kochstück kochen (oder schon Do-Abend) · Kochstück nach dem Erkalten kühlen (15 Min.) · 18:00 Quellstück ansetzen · 18:15 Autolyse · 19:00 Kneten mit Maschine bzw. Slap & Fold, Temperatur messen · 19:15 Kurze Stockgare (bis 20:15, Hand bis 20:25) · 20:15 Vorformen, Rundschleifen, Topping · 20:45 Kühlschrankgare über Nacht
+- Vortag: Fr 6:30 Poolish ansetzen · Kochstück kochen (oder schon Do-Abend) · Kochstück nach dem Erkalten kühlen (15 Min.) · 17:45 Quellstück ansetzen, Kochstück anwärmen · 18:15 Autolyse (warm) · 19:00 Kneten mit Maschine bzw. Slap & Fold, Temperatur messen · 19:15 Kurze Stockgare (bis \~20:30 nach Volumen, Hand bis \~20:45) · 20:30 Vorformen, Rundschleifen, Topping · 21:00 Kühlschrankgare über Nacht
 - 7:00 Uhr: Vorheizen und akklimatisieren: Ofen an, Teiglinge raus (2 Min.)
-- 7:35 Uhr: Fingertest, Einschneiden, Einschießen und Schwaden, Vorbacken und fertig backen (5 Min. Arbeit)
-- 7:50 Uhr: 8 Vorback-Brötchen raus, Auskühlen und einfrieren (Gefrierfach ab \~9:00)
-- 7:55 Uhr: 4 Frühstücks-Brötchen fertig, auskühlen
-- 8:15 Uhr: Frühstück
+- 7:50 Uhr: Fingertest, Einschneiden, Einschießen und Schwaden, Vorbacken und fertig backen (5 Min. Arbeit)
+- 8:05 Uhr: 8 Vorback-Brötchen raus, Auskühlen und einfrieren (Gefrierfach ab \~9:15)
+- 8:10 Uhr: 4 Frühstücks-Brötchen fertig, auskühlen
+- 8:30 Uhr: Frühstück
 
 ## Zeitplan Aufbacken
 
@@ -273,9 +287,9 @@ Ofen auf **220 °C Ober-/Unterhitze** vorheizen (10–15 Min., kein Blech, Rost 
 *Für einen Teigbeginn um 9:00 Uhr*
 
 - Vorabend (20:00 Uhr): Poolish ansetzen · Kochstück kochen · Kochstück nach dem Erkalten kühlen (20 Min.)
-- 9:00 Uhr: Quellstück ansetzen (2 Min.)
+- 9:00 Uhr: Quellstück ansetzen, Kochstück anwärmen (5 Min.)
 - 9:15 Uhr: Autolyse (Weizen 45 Min.; 3 Min. Arbeit)
-- 10:00 Uhr: *nur Maschine* Hefe, Honig, Butter mit der Maschine einkneten, Temperatur messen (14 Min.)
+- 10:00 Uhr: *nur Maschine* Hefe, Honig, Wasser (Bassinage), Butter mit der Maschine einkneten, Temperatur messen (15 Min.)
 - 10:15 Uhr: *nur Maschine* Stockgare (bis 11:45), Dehnen & Falten 10:45 / 11:15 (2 × 1 Min.)
 - 10:00 Uhr: *nur Hand* Hefe, Honig, Butter per Slap & Fold einarbeiten, Temperatur messen (6 Min.)
 - 10:05 Uhr: *nur Hand* Stockgare (bis 12:00), Dehnen & Falten 10:35 / 11:05 / 11:35 (3 × 1 Min.)
@@ -300,9 +314,9 @@ Ofen auf **220 °C Ober-/Unterhitze** vorheizen (10–15 Min., kein Blech, Rost 
 
 | Beobachtung | Wahrscheinliche Ursache | Nächstes Mal |
 |---|---|---|
-| **Brötchen laufen breit, flach** (unser 1. Versuch) | Teig zu weich (zu viel Wasser für Handarbeit), zu wenig Struktur (zu kurz geknetet / zu wenig Falten), zu wenig Spannung beim Schleifen | Maschine: Fenstertest vor der Stockgare bestehen lassen, Reservewasser weglassen; Hand: Handmenge Wasser (80 g), 3× Dehnen & Falten; beide: Zwischengare vor dem Schleifen, Teigkarten-Technik; Dinkel zusätzlich: Teigtemperatur prüfen, ggf. überknetet |
+| **Brötchen laufen breit, flach** (unser 1. Versuch) | Teig zu weich (zu viel Wasser für Handarbeit), zu wenig Struktur (zu kurz geknetet / zu wenig Falten), zu wenig Spannung beim Schleifen | Maschine: Bassinage, Fenstertest vor der Stockgare bestehen lassen; Hand: Handmenge Wasser (80 g), 3× Dehnen & Falten; beide: Zwischengare vor dem Schleifen, Teigkarten-Technik; Dinkel zusätzlich: Teigtemperatur prüfen, ggf. überknetet |
 | **Teig klebt so, dass Formen unmöglich ist** | Hydration zu hoch für Handarbeit; zu früh geformt; Mehl statt Wasser an den Händen | Reservewasser weglassen, Zwischengare einhalten, nasse Hände beim Falten / trockene beim Schleifen; Roggen-Variante klebt von Natur aus mehr |
-| Brötchen dicht, wenig Volumen | Zu wenig Struktur (Fenstertest nicht bestanden) oder Stockgare/Stückgare zu kurz | 4. Falten, Volumen abwarten, Fingertest ernst nehmen |
+| Brötchen dicht, wenig Volumen, fluffig aber ohne Poren (10/2026) | Untergar: Teig zu kalt (< 24 °C) und Stockgare nach Uhr statt nach Volumen; zu wenig Struktur (Haken hat nicht geknetet) | Kochstück anwärmen, Autolyse warm, Stockgare bis zum Zielvolumen; Bassinage; Fingertest ernst nehmen. Danach: Quellstück weglassen, Variante Weizen hell |
 | Krume dicht und feucht, klitschig | Zu kurz gebacken oder zu früh angeschnitten | 96 °C Kern, 20 Min. auskühlen |
 | Krume trocken, bröselig | Kochstück zu lange gekocht (klumpig), grobes Mehl oder zu wenig Wasser | Kochstück nur bis zum Eindicken + 1 Min.; feines Mehl; Reservewasser beim 2. Falten |
 | Bitterer Nachgeschmack | Grobes oder altes Mehl (Vollkorn wird ranzig), Poolish zu kurz | Frisches, feines Mehl; Poolish volle 14–16 Std. |
@@ -310,13 +324,15 @@ Ofen auf **220 °C Ober-/Unterhitze** vorheizen (10–15 Min., kein Blech, Rost 
 | Kruste matt, dick, kein Ausbund | Zu wenig Dampf, Ofen/Blech nicht heiß genug | 30–40 Min. vorheizen, 80 ml schwaden |
 | Oberfläche reißt beim Schleifen | Zu viel Spannung oder Teig zu trocken | Weniger Kreise, Reservewasser nutzen |
 | **Übernacht:** Teiglinge morgens flach, Delle bleibt stehen, Brötchen laufen breit | Übergar: Stockgare zu lang, Kühlschrank zu warm (> 7 °C) oder zu viel Hefe | Stockgare beim nächsten Mal 15 Min. kürzer oder Hefe 4 g; Kühlschranktemperatur messen, kälteste Zone nutzen |
-| **Übernacht:** Teiglinge morgens kaum gewachsen, Delle springt sofort zurück | Untergar: Kühlschrank sehr kalt (< 4 °C), Teig zu kühl in die Nacht gegangen | Länger akklimatisieren (bis 60 Min.); nächstes Mal Teigtemperatur 26 °C, Stockgare 15 Min. länger |
+| **Übernacht:** Teiglinge morgens kaum gewachsen, Delle springt sofort zurück (10/2026) | Untergar: Teig zu kühl in die Nacht gegangen (Stockgare nicht bis zum Zielvolumen), Kühlschrank sehr kalt (< 4 °C) | Jetzt bis 75 Min. akklimatisieren; nächstes Mal Teigtemperatur 25–26 °C, Stockgare nach Volumen |
 | **Übernacht:** trockene, matte Haut, Brötchen reißen seitlich | Im Kühlschrank nicht luftdicht abgedeckt | Großer Beutel oder Duschhaube, Teiglinge vor dem Abdecken leicht besprühen |
 | Aufgebackene Brötchen zu dunkel oder hart | Zu lange vorgebacken oder zu lange aufgebacken | Vorbacken nach 13 Min. beenden (hell!), Aufbacken auf 7–8 Min. |
 | Aufgebackene Brötchen innen klitschig | Beim Vorbacken Kern unter 94 °C oder warm eingefroren | Kern messen, vollständig auskühlen lassen |
 | Poolish riecht stechend nach Alkohol/Aceton | Zu warm oder zu lange gestanden | Trotzdem verwenden, nächstes Mal kürzer/kühler |
 | **Dinkel:** Teig wird plötzlich glänzend, weich, zieht Fäden | Überknetet — nicht rückgängig zu machen; mit Maschine das größte Risiko dieser Variante | Maschine: Stufe 2 nur 2–3 Min., ab Minute 2 alle 30 Sek. prüfen, lieber zu kurz; Hand: Slap & Fold auf 3 Min. begrenzen; Struktur über Falten |
-| **Maschine:** Teig löst sich nach 8 Min. Stufe 2 nicht vom Schüsselboden, klebt am Haken | Zu viel Wasser (Reserve zu früh/zu viel) oder sehr feines, wenig saugfähiges Mehl | Nicht weiterkneten (wird nur warm), Reserve beim nächsten Mal weglassen; Struktur über die 2 Falten |
+| **Maschine:** Teig klebt flächig an der Schüsselwand, Haken dreht leer, Temperatur steigt nicht (10/2026) | Teig zu weich für den Haken — alles Wasser schon vor der Kleberbildung drin | Bassinage (40 g erst nach dem Wickeln um den Haken); Teig vom Rand auf den Haken setzen, 1 Min. Stufe 3; notfalls 2–3 Min. Slap & Fold auf der geölten Fläche |
+| **Teig kalt** (< 24 °C nach dem Kneten) (10/2026: 22,5 °C) | Kochstück kalt aus dem Kühlschrank, keine Reibungswärme | Kochstück auf \~35 °C anwärmen, Autolyse warm; Stockgare warm und nach Volumen |
+| **Weniger als 12 Brötchen** | Teigverlust an Schüssel und Händen | Teig wiegen, durch 12 teilen |
 | **Maschine:** Teigtemperatur über 27 °C | Reibungswärme bei langer Knetzeit | Stockgare kürzen, nächstes Mal Autolyse-Wasser \~20 °C |
 
 ## Schwangerschaft & GDM
@@ -328,6 +344,7 @@ Geprüft gegen den [Leitfaden](/schwangerschaft/leitfaden.md):
 - **Frühstück ist die empfindlichste Mahlzeit** → **ein halbes Brötchen (\~15 g KH) mit Protein und Fett**: Ei, Käse (pasteurisiert), Labneh aus dem Mezze-Rezept, Frischkäse mit Lachs *durchgegart* — nicht Marmelade oder Honig. Und messen: die individuelle Reaktion auf Vollkorn variiert.
 - **Zutaten-Ampel:** alles gebacken, keine Treffer. Saaten unkritisch.
 - Ideal als Vorrat für die Pflicht-Zwischenmahlzeiten: ein halbes Brötchen mit Käse als Spätmahlzeit.
+- **Variante Weizen hell (70 % Vollkorn):** 30 % Type 1050 heben den glykämischen Index spürbar — 1050 ist zwar ballaststoffreicher als 405/550, aber kein Vollkorn. In der Schwangerschaft das Leitrezept (100 % Vollkorn) bevorzugen; Weizen hell höchstens als halbes Brötchen mit Protein und mit Messen.
 
 ## Kind
 
@@ -335,18 +352,21 @@ Unproblematisch — mild, weich, kein Gewürz. Sonnenblumenkerne sind für einen
 
 ## Learnings
 
-**Gebacken 09/2026 (Weizen rein, von Hand).** Fluffig und geschmacklich gut, vor allem mit Sonnenblumenkernen — die Rezeptbasis (Poolish + Kochstück + Quellstück) stimmt. Schwächen: von Hand zu kurz geknetet, Teig sehr klebrig, Rundschleifen hat nicht funktioniert → etwas flache, verlaufene Brötchen. Fix in diese Fassung eingebaut: Hauptteig-Wasser für Handarbeit von 120 g auf 80 g gesenkt, Kneten durch Slap & Fold plus 3× Dehnen & Falten ersetzt, 10 Min. Zwischengare vor dem Schleifen, Teigkarten-Technik für weichen Teig — beim nächsten Mal zu validieren.
+**Gebacken 2× — 09/2026 (Weizen, von Hand), 10/2026 (Weizen, Maschine, Übernacht).** Beide Male lecker und fluffig, vor allem mit Sonnenblumenkernen — die Rezeptbasis (Poolish + Kochstück + Quellstück) stimmt. 09/2026 von Hand: zu kurz geknetet, Teig sehr klebrig, Rundschleifen misslungen → flache Brötchen; Fix: weniger Wasser, Slap & Fold plus 3× Dehnen & Falten, Zwischengare. 10/2026 mit Maschine: Rundschleifen besser (rund, Schluss unten), aber der Teig klebte flächig an der Schüsselwand, der Haken knetete kaum, die Teigtemperatur blieb bei 22,5 °C und die Teiglinge waren morgens untergar → Krume ohne Poren, nur 11 Brötchen. Fix in dieser Fassung: Bassinage (40 g Wasser erst nach der Kleberbildung), Kochstück auf \~35 °C anwärmen, Stockgare 75 Min. nach Volumen, 45–60 Min. akklimatisieren, Teig wiegen und durch 12 teilen — beim nächsten Mal zu validieren.
 
 ### Details
 
-- **Warum es klebte:** Die Import-Rezepte waren mit Küchenmaschine gedacht (5 + 6–8 Min. Knethaken), dort ist 95 % Gesamt-Hydration bei Vollkorn mit Kochstück normal. Von Hand hört man bei so einem Teig zu früh auf — er fühlt sich nie „fertig" an. Weniger Wasser plus Falten statt Kneten ist die Standard-Antwort der Hand-Bäcker (Geißler, Tartine-Methode).
-- **Rundschleifen:** Zwei Ursachen fürs Misslingen — zu weicher Teig und kein Entspannen nach dem Teilen. Beides jetzt im Ablauf (Stockgare, Vorformen).
+- **Warum es 09/2026 klebte:** Die Import-Rezepte waren mit Küchenmaschine gedacht (5 + 6–8 Min. Knethaken), dort ist 95 % Gesamt-Hydration bei Vollkorn mit Kochstück normal. Von Hand hört man bei so einem Teig zu früh auf — er fühlt sich nie „fertig" an. Weniger Wasser plus Falten statt Kneten ist die Standard-Antwort der Hand-Bäcker (Geißler, Tartine-Methode).
+- **Rundschleifen:** 09/2026 zwei Ursachen fürs Misslingen — zu weicher Teig und kein Entspannen nach dem Teilen. Beides seither im Ablauf; 10/2026 hat das Schleifen geklappt (rund, Schluss unten), die Oberfläche blieb aber rau-klebrig statt gespannt — Folge des unterentwickelten Klebers, nicht der Technik.
+- **Maschine 10/2026:** 100 g Wasser (80 Autolyse + 20 beim Kneten, ohne Reserve). Der Teig löste sich nie von der Wand, trotz mehrfachem Abschaben und deutlich längerem Kneten. Die Temperatur stand die ganze Zeit bei 22,5 °C, auch nach 5 Extra-Minuten — der Haken hat den Teig nicht gedehnt, sondern ist durchgedreht. Die frühere Annahme im Rezept („mit Maschine ist zu warm das wahrscheinlichere Problem“) war für diesen Teig falsch.
+- **Krume 10/2026:** fluffig, aber kaum Poren. Hauptursache Untergare (kalter Teig, Stockgare nach Uhr, Fingertest morgens: Delle sprang zurück), Nebenursache schwacher Kleber. 100 % Vollkorn mit Kochstück und Flohsamen wird nie eine großporige Krume haben — aber deutlich lockerer als diesmal geht es.
 - **Topping-Favorit:** Sonnenblumenkerne. Als Standard gesetzt.
-- **Offen:** Ob die Frost-Charge nach 3 Wochen noch genug Trieb hat, ist noch nicht validiert. Nächster Versuch (ab 10/2026): Weg Übernacht mit Maschine — Hefemenge, Stockgare und Kühlschrankzeit sind abgeleitete Startwerte. Seit 10/2026 Küchenmaschine vorhanden — die Maschinen-Führung (100 g Wasser + Reserve) ist beim nächsten Backen erstmals zu validieren.
+- **Offen:** Bassinage, angewärmtes Kochstück und die längere Gare sind noch nicht validiert. Ob die Frost-Charge nach 3–4 Wochen noch gut aufbackt, ebenfalls nicht.
 
 ## Quellen & Entscheidungen
 
-- **Übernachtgare und Vorbacken (10/2026):** Kalte Stückgare geformter Brötchen über Nacht ist Standard bei Lutz Geißler (ploetzblog.de, Brötchen mit Übernachtgare), Vorbacken bis zur festen, hellen Kruste das Prinzip der Bäckerei-Aufbackware. Die konkreten Werte hier (6 g Hefe, 60 Min. Stockgare, 10–11 Std. bei 4–6 °C, 13–14 Min. vorbacken) sind für dieses Rezept abgeleitet und ungetestet.
+- **Bassinage und Teigtemperatur (10/2026):** Bassinage (Wasser erst nach der Kleberbildung schluckweise nachgeben) ist die Standardtechnik für weiche Teige in der Maschine (Geißler, ploetzblog.de; Hamelman, „Bread“). Die Teigtemperatur über die Komponenten-Temperaturen zu steuern ist Bäckerhandwerk („Schüttwasserberechnung“). Hier ist das Kochstück der Hebel, weil das Schüttwasser zu gering ist — die \~35 °C sind aus der gemessenen Lücke (22,5 statt 25,5 °C) überschlagen, nicht getestet.
+- **Übernachtgare und Vorbacken (10/2026):** Kalte Stückgare geformter Brötchen über Nacht ist Standard bei Lutz Geißler (ploetzblog.de, Brötchen mit Übernachtgare), Vorbacken bis zur festen, hellen Kruste das Prinzip der Bäckerei-Aufbackware. Die konkreten Werte hier (6 g Hefe, Stockgare bis \~1,6-fach, 10–11 Std. bei 4–6 °C, 13–14 Min. vorbacken) sind für dieses Rezept abgeleitet; der erste Durchgang 10/2026 mit 60 Min. bei kaltem Teig war untergar, Stockgare seither 75 Min. nach Volumen.
 
 - **Methodik (Poolish + Kochstück für Vollkorn, Dinkel-Führung, Teigtemperatur, Dehnen & Falten statt intensivem Kneten):** Lutz Geißler, [ploetzblog.de](https://www.ploetzblog.de) und „Brotbackbuch Nr. 1"; Peter Reinhart, „Whole Grain Breads" (Vorteig-plus-Brühstück-Prinzip für 100 % Vollkorn).
 - **Hydration:** \~80 % freies Wasser ist bei feinem Weizenvollkorn mit Maschine üblich (±5 % je nach Mehl). Für Handarbeit hier bewusst auf \~65 % frei / \~88 % gesamt gesenkt — eigene Erfahrung 09/2026, siehe Learnings.
@@ -357,7 +377,7 @@ Unproblematisch — mild, weich, kein Gewürz. Sonnenblumenkerne sind für einen
 ## Notizen
 
 - **Maschine oder Hand?** Maschine ist der Standard (voll entwickelter Kleber, weniger Abhängigkeit vom Gefühl). Von Hand kneten bei der halben Menge (zu wenig Teig für den Knethaken) oder wenn die Maschine belegt ist — die Handführung ist 09/2026 validiert.
-- **Wassermenge mit Maschine ausreizen:** Lassen sich die Brötchen mit 100 g gut schleifen, beim nächsten Mal 110 g, dann 120 g (Original der Import-Rezepte). Mehr Wasser = saftiger und lockerer, aber schwerer zu formen.
+- **Stellschrauben für eine offenere Krume — in dieser Reihenfolge, je Durchgang nur eine neue:** (1) Teigtemperatur, Bassinage und Gare nach Volumen (in dieser Fassung). (2) Quellstück beim Weg Übernacht weglassen — die vorgebackenen Brötchen sind im Frost robust, das Flohsamen-Gel macht die Krume eher gummiartig-feinporig und die Oberfläche klebrig (Hauptteig-Wasser dann nicht erhöhen). (3) Wasser über die Bassinage auf 110 g, dann 120 g (Original der Import-Rezepte) — mehr Wasser = lockerer, aber schwerer zu formen, und nur sinnvoll, wenn der Haken den Teig sicher greift. (4) Variante Weizen hell.
 - **Ohne Quellstück (nur Direkt backen):** 6 g Flohsamenschalen und 60 g Wasser weglassen, Hauptteig-Wasser um 30 g erhöhen. Bei Übernacht und Einfrieren immer mit.
 - **Dinkel-Variante — was anders ist, kompakt:** schwacher, dehnbarer Kleber → Autolyse 30 Min., Maschine 4 + 2–3 Min. bzw. Slap & Fold max. 3 Min., Teig 24–25 °C, Stockgare 75 Min. mit Falten nach 25/50 (Hand: 75–90 Min., 25/50/75), Volumen nur 1,5-fach, Stückgare kürzer, eher untergar in den Ofen (guter Ofentrieb, übergar fällt zusammen). Belohnung: nussiger Geschmack, den Weizen nicht hat.
 - **Brötchen für Gäste am Nachmittag:** Direkt backen mit halber Menge am Samstagabend Poolish, Sonntag 9 Uhr los, 13:30 warme Brötchen.
