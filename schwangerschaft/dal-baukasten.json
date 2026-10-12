@@ -3132,7 +3132,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:20Z",
+    "generatedAt": "2026-10-12T15:17:54Z",
     "sourceHash": "d3d7bb92c1a8b269",
     "select": {
       "variante": "grundrezept",
@@ -3222,14 +3222,24 @@
       {
         "ingredient": "zitronen",
         "total": {
-          "text": "1 EL (+ Stück ungemischt)",
-          "value": 1.0,
-          "max": 1.0,
-          "unit": "EL",
-          "approx": false
+          "text": "½ + 1 EL",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "Stück",
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "1 EL Zitronensaft"
+          "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "1 EL Zitronensaft",
+          "dazu-macht-das-hauptgericht-komplett": "½ Zitrone"
         },
         "unitMixed": true
       },
@@ -3250,14 +3260,23 @@
       {
         "ingredient": "ghee",
         "total": {
-          "text": "1 TL (+ EL ungemischt)",
-          "value": 1.0,
-          "max": 1.0,
-          "unit": "TL",
-          "approx": false
+          "text": "5 EL + 1 TL",
+          "value": 5.0,
+          "max": 5.0,
+          "unit": "EL",
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "1 TL Ghee"
+          "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "1 TL Ghee + 2 EL Ghee + 2 EL Ghee + 1 EL Ghee"
         },
         "unitMixed": true
       },
@@ -3357,42 +3376,69 @@
       {
         "ingredient": "koriander",
         "total": {
-          "text": "1 TL (+ EL ungemischt)",
+          "text": "1 EL + 1 TL",
           "value": 1.0,
           "max": 1.0,
-          "unit": "TL",
-          "approx": false
+          "unit": "EL",
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "1 TL Koriander gemahlen"
+          "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "1 TL Koriander gemahlen + 1 EL Koriander"
         },
         "unitMixed": true
       },
       {
         "ingredient": "garam",
         "total": {
-          "text": "½ TL (+ Prise ungemischt)",
+          "text": "½ TL + 1 Prise",
           "value": 0.5,
           "max": 0.5,
           "unit": "TL",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "½ TL Garam Masala"
+          "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "½ TL Garam Masala + 1 Prise Garam Masala"
         },
         "unitMixed": true
       },
       {
         "ingredient": "paprika",
         "total": {
-          "text": "½ TL (+ Prise ungemischt)",
+          "text": "½ TL + 1 Prise",
           "value": 0.5,
           "max": 0.5,
           "unit": "TL",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "½ TL Paprika edelsüß"
+          "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "½ TL Paprika edelsüß + 1 Prise Paprika edelsüß"
         },
         "unitMixed": true
       },
@@ -3596,13 +3642,22 @@
             "ingredient": "zitronen",
             "name": "Zitronen",
             "need": {
-              "text": "1 EL (+ Stück ungemischt)",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "EL",
-              "approx": false
+              "text": "½ + 1 EL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "1 EL",
+            "display": "½ + 1 EL",
             "inStock": false,
             "buy": {
               "text": "2"
@@ -3635,13 +3690,22 @@
             "ingredient": "ghee",
             "name": "Ghee",
             "need": {
-              "text": "1 TL (+ EL ungemischt)",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "TL",
-              "approx": false
+              "text": "5 EL + 1 TL",
+              "value": 5.0,
+              "max": 5.0,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "1 TL",
+            "display": "5 EL + 1 TL",
             "inStock": false,
             "buy": {
               "text": "1 Glas"
@@ -3744,13 +3808,22 @@
             "ingredient": "koriander",
             "name": "Koriander gemahlen",
             "need": {
-              "text": "1 TL (+ EL ungemischt)",
+              "text": "1 EL + 1 TL",
               "value": 1.0,
               "max": 1.0,
-              "unit": "TL",
-              "approx": false
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "1 TL",
+            "display": "1 EL + 1 TL",
             "inStock": false,
             "pantry": true
           },
@@ -3758,13 +3831,22 @@
             "ingredient": "garam",
             "name": "Garam Masala",
             "need": {
-              "text": "½ TL (+ Prise ungemischt)",
+              "text": "½ TL + 1 Prise",
               "value": 0.5,
               "max": 0.5,
               "unit": "TL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
+                  "approx": false
+                }
+              ]
             },
-            "display": "½ TL",
+            "display": "½ TL + 1 Prise",
             "inStock": false,
             "pantry": true
           },
@@ -3772,13 +3854,22 @@
             "ingredient": "paprika",
             "name": "Paprika edelsüß",
             "need": {
-              "text": "½ TL (+ Prise ungemischt)",
+              "text": "½ TL + 1 Prise",
               "value": 0.5,
               "max": 0.5,
               "unit": "TL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
+                  "approx": false
+                }
+              ]
             },
-            "display": "½ TL",
+            "display": "½ TL + 1 Prise",
             "inStock": false,
             "pantry": true
           },
@@ -3945,14 +4036,23 @@
           {
             "ingredient": "ghee",
             "total": {
-              "text": "1 TL (+ EL ungemischt)",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "TL",
-              "approx": false
+              "text": "5 EL + 1 TL",
+              "value": 5.0,
+              "max": 5.0,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "1 TL Ghee"
+              "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "1 TL Ghee + 2 EL Ghee + 2 EL Ghee + 1 EL Ghee"
             },
             "unitMixed": true
           },
@@ -4065,42 +4165,69 @@
           {
             "ingredient": "koriander",
             "total": {
-              "text": "1 TL (+ EL ungemischt)",
+              "text": "1 EL + 1 TL",
               "value": 1.0,
               "max": 1.0,
-              "unit": "TL",
-              "approx": false
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "1 TL Koriander gemahlen"
+              "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "1 TL Koriander gemahlen + 1 EL Koriander"
             },
             "unitMixed": true
           },
           {
             "ingredient": "garam",
             "total": {
-              "text": "½ TL (+ Prise ungemischt)",
+              "text": "½ TL + 1 Prise",
               "value": 0.5,
               "max": 0.5,
               "unit": "TL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "½ TL Garam Masala"
+              "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "½ TL Garam Masala + 1 Prise Garam Masala"
             },
             "unitMixed": true
           },
           {
             "ingredient": "paprika",
             "total": {
-              "text": "½ TL (+ Prise ungemischt)",
+              "text": "½ TL + 1 Prise",
               "value": 0.5,
               "max": 0.5,
               "unit": "TL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "½ TL Paprika edelsüß"
+              "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "½ TL Paprika edelsüß + 1 Prise Paprika edelsüß"
             },
             "unitMixed": true
           },
@@ -4327,13 +4454,22 @@
                 "ingredient": "ghee",
                 "name": "Ghee",
                 "need": {
-                  "text": "1 TL (+ EL ungemischt)",
-                  "value": 1.0,
-                  "max": 1.0,
-                  "unit": "TL",
-                  "approx": false
+                  "text": "5 EL + 1 TL",
+                  "value": 5.0,
+                  "max": 5.0,
+                  "unit": "EL",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 TL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "TL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "1 TL",
+                "display": "5 EL + 1 TL",
                 "inStock": false,
                 "buy": {
                   "text": "1 Glas"
@@ -4453,13 +4589,22 @@
                 "ingredient": "koriander",
                 "name": "Koriander gemahlen",
                 "need": {
-                  "text": "1 TL (+ EL ungemischt)",
+                  "text": "1 EL + 1 TL",
                   "value": 1.0,
                   "max": 1.0,
-                  "unit": "TL",
-                  "approx": false
+                  "unit": "EL",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 TL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "TL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "1 TL",
+                "display": "1 EL + 1 TL",
                 "inStock": false,
                 "pantry": true
               },
@@ -4467,13 +4612,22 @@
                 "ingredient": "garam",
                 "name": "Garam Masala",
                 "need": {
-                  "text": "½ TL (+ Prise ungemischt)",
+                  "text": "½ TL + 1 Prise",
                   "value": 0.5,
                   "max": 0.5,
                   "unit": "TL",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 Prise",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "Prise",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "½ TL",
+                "display": "½ TL + 1 Prise",
                 "inStock": false,
                 "pantry": true
               },
@@ -4481,13 +4635,22 @@
                 "ingredient": "paprika",
                 "name": "Paprika edelsüß",
                 "need": {
-                  "text": "½ TL (+ Prise ungemischt)",
+                  "text": "½ TL + 1 Prise",
                   "value": 0.5,
                   "max": 0.5,
                   "unit": "TL",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 Prise",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "Prise",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "½ TL",
+                "display": "½ TL + 1 Prise",
                 "inStock": false,
                 "pantry": true
               },
@@ -4645,14 +4808,24 @@
           {
             "ingredient": "zitronen",
             "total": {
-              "text": "1 EL (+ Stück ungemischt)",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "EL",
-              "approx": false
+              "text": "½ + 1 EL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "variante-a-dal-palak-spinat-dal": "1 EL Zitrone"
+              "variante-a-dal-palak-spinat-dal": "1 EL Zitrone",
+              "dazu-macht-das-hauptgericht-komplett": "½ Zitrone"
             },
             "unitMixed": true
           },
@@ -4685,14 +4858,24 @@
           {
             "ingredient": "ghee",
             "total": {
-              "text": "1 TL (+ EL ungemischt)",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "TL",
-              "approx": false
+              "text": "5 EL + 1 TL",
+              "value": 5.0,
+              "max": 5.0,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "1 TL Ghee"
+              "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "1 TL Ghee + 2 EL Ghee",
+              "variante-a-dal-palak-spinat-dal": "2 EL Ghee + 1 EL Ghee"
             },
             "unitMixed": true
           },
@@ -5019,13 +5202,22 @@
                 "ingredient": "zitronen",
                 "name": "Zitronen",
                 "need": {
-                  "text": "1 EL (+ Stück ungemischt)",
-                  "value": 1.0,
-                  "max": 1.0,
-                  "unit": "EL",
-                  "approx": false
+                  "text": "½ + 1 EL",
+                  "value": 0.5,
+                  "max": 0.5,
+                  "unit": "Stück",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 EL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "EL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "1 EL",
+                "display": "½ + 1 EL",
                 "inStock": false,
                 "buy": {
                   "text": "2"
@@ -5075,13 +5267,22 @@
                 "ingredient": "ghee",
                 "name": "Ghee",
                 "need": {
-                  "text": "1 TL (+ EL ungemischt)",
-                  "value": 1.0,
-                  "max": 1.0,
-                  "unit": "TL",
-                  "approx": false
+                  "text": "5 EL + 1 TL",
+                  "value": 5.0,
+                  "max": 5.0,
+                  "unit": "EL",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 TL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "TL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "1 TL",
+                "display": "5 EL + 1 TL",
                 "inStock": false,
                 "buy": {
                   "text": "1 Glas"
@@ -5394,14 +5595,24 @@
           {
             "ingredient": "ghee",
             "total": {
-              "text": "1 TL (+ EL ungemischt)",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "TL",
-              "approx": false
+              "text": "5 EL + 1 TL",
+              "value": 5.0,
+              "max": 5.0,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "1 TL Ghee"
+              "grundrezept-dal-tadka-als-hauptgericht-masoor-oder-toor": "1 TL Ghee + 2 EL Ghee",
+              "variante-a-dal-palak-spinat-dal": "2 EL Ghee + 1 EL Ghee"
             },
             "unitMixed": true
           },
@@ -5777,13 +5988,22 @@
                 "ingredient": "ghee",
                 "name": "Ghee",
                 "need": {
-                  "text": "1 TL (+ EL ungemischt)",
-                  "value": 1.0,
-                  "max": 1.0,
-                  "unit": "TL",
-                  "approx": false
+                  "text": "5 EL + 1 TL",
+                  "value": 5.0,
+                  "max": 5.0,
+                  "unit": "EL",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 TL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "TL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "1 TL",
+                "display": "5 EL + 1 TL",
                 "inStock": false,
                 "buy": {
                   "text": "1 Glas"
@@ -6093,14 +6313,24 @@
           {
             "ingredient": "zitronen",
             "total": {
-              "text": "1 EL (+ Stück ungemischt)",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "EL",
-              "approx": false
+              "text": "½ + 1 EL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "variante-b-chana-dal-mit-kuerbis": "1 EL Zitrone"
+              "variante-b-chana-dal-mit-kuerbis": "1 EL Zitrone",
+              "dazu-macht-das-hauptgericht-komplett": "½ Zitrone"
             },
             "unitMixed": true
           },
@@ -6133,14 +6363,23 @@
           {
             "ingredient": "ghee",
             "total": {
-              "text": "1 TL (+ EL ungemischt)",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "TL",
-              "approx": false
+              "text": "5 EL + 1 TL",
+              "value": 5.0,
+              "max": 5.0,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "variante-b-chana-dal-mit-kuerbis": "1 TL Ghee"
+              "variante-b-chana-dal-mit-kuerbis": "1 TL Ghee + 2 EL Ghee + 2 EL Ghee + 1 EL Ghee"
             },
             "unitMixed": true
           },
@@ -6273,14 +6512,23 @@
           {
             "ingredient": "koriander",
             "total": {
-              "text": "1 TL (+ EL ungemischt)",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "TL",
-              "approx": false
+              "text": "2 EL + 1 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "variante-b-chana-dal-mit-kuerbis": "1 TL Koriander gemahlen"
+              "variante-b-chana-dal-mit-kuerbis": "1 TL Koriander gemahlen + 2 EL Koriander"
             },
             "unitMixed": true
           },
@@ -6572,13 +6820,22 @@
                 "ingredient": "zitronen",
                 "name": "Zitronen",
                 "need": {
-                  "text": "1 EL (+ Stück ungemischt)",
-                  "value": 1.0,
-                  "max": 1.0,
-                  "unit": "EL",
-                  "approx": false
+                  "text": "½ + 1 EL",
+                  "value": 0.5,
+                  "max": 0.5,
+                  "unit": "Stück",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 EL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "EL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "1 EL",
+                "display": "½ + 1 EL",
                 "inStock": false,
                 "buy": {
                   "text": "2"
@@ -6628,13 +6885,22 @@
                 "ingredient": "ghee",
                 "name": "Ghee",
                 "need": {
-                  "text": "1 TL (+ EL ungemischt)",
-                  "value": 1.0,
-                  "max": 1.0,
-                  "unit": "TL",
-                  "approx": false
+                  "text": "5 EL + 1 TL",
+                  "value": 5.0,
+                  "max": 5.0,
+                  "unit": "EL",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 TL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "TL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "1 TL",
+                "display": "5 EL + 1 TL",
                 "inStock": false,
                 "buy": {
                   "text": "1 Glas"
@@ -6720,13 +6986,22 @@
                 "ingredient": "koriander",
                 "name": "Koriander gemahlen",
                 "need": {
-                  "text": "1 TL (+ EL ungemischt)",
-                  "value": 1.0,
-                  "max": 1.0,
-                  "unit": "TL",
-                  "approx": false
+                  "text": "2 EL + 1 TL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "EL",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 TL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "TL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "1 TL",
+                "display": "2 EL + 1 TL",
                 "inStock": false,
                 "pantry": true
               },
@@ -6928,14 +7203,23 @@
           {
             "ingredient": "ghee",
             "total": {
-              "text": "1 TL (+ EL ungemischt)",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "TL",
-              "approx": false
+              "text": "5 EL + 1 TL",
+              "value": 5.0,
+              "max": 5.0,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "variante-b-chana-dal-mit-kuerbis": "1 TL Ghee"
+              "variante-b-chana-dal-mit-kuerbis": "1 TL Ghee + 2 EL Ghee + 2 EL Ghee + 1 EL Ghee"
             },
             "unitMixed": true
           },
@@ -7081,14 +7365,23 @@
           {
             "ingredient": "koriander",
             "total": {
-              "text": "1 TL (+ EL ungemischt)",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "TL",
-              "approx": false
+              "text": "2 EL + 1 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "variante-b-chana-dal-mit-kuerbis": "1 TL Koriander gemahlen"
+              "variante-b-chana-dal-mit-kuerbis": "1 TL Koriander gemahlen + 2 EL Koriander"
             },
             "unitMixed": true
           },
@@ -7416,13 +7709,22 @@
                 "ingredient": "ghee",
                 "name": "Ghee",
                 "need": {
-                  "text": "1 TL (+ EL ungemischt)",
-                  "value": 1.0,
-                  "max": 1.0,
-                  "unit": "TL",
-                  "approx": false
+                  "text": "5 EL + 1 TL",
+                  "value": 5.0,
+                  "max": 5.0,
+                  "unit": "EL",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 TL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "TL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "1 TL",
+                "display": "5 EL + 1 TL",
                 "inStock": false,
                 "buy": {
                   "text": "1 Glas"
@@ -7525,13 +7827,22 @@
                 "ingredient": "koriander",
                 "name": "Koriander gemahlen",
                 "need": {
-                  "text": "1 TL (+ EL ungemischt)",
-                  "value": 1.0,
-                  "max": 1.0,
-                  "unit": "TL",
-                  "approx": false
+                  "text": "2 EL + 1 TL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "EL",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 TL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "TL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "1 TL",
+                "display": "2 EL + 1 TL",
                 "inStock": false,
                 "pantry": true
               },
@@ -7813,14 +8124,23 @@
           {
             "ingredient": "kokosoel",
             "total": {
-              "text": "1 TL (+ EL ungemischt)",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "TL",
-              "approx": false
+              "text": "3 EL + 1 TL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "variante-c-kokos-dal-kerala-stil-parippu-curry": "1 TL Kokosöl"
+              "variante-c-kokos-dal-kerala-stil-parippu-curry": "1 TL Kokosöl + 2 EL Kokosöl + 1 EL Kokosöl"
             },
             "unitMixed": true
           },
@@ -8032,13 +8352,22 @@
                 "ingredient": "kokosoel",
                 "name": "Kokosöl",
                 "need": {
-                  "text": "1 TL (+ EL ungemischt)",
-                  "value": 1.0,
-                  "max": 1.0,
-                  "unit": "TL",
-                  "approx": false
+                  "text": "3 EL + 1 TL",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "EL",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 TL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "TL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "1 TL",
+                "display": "3 EL + 1 TL",
                 "inStock": false,
                 "buy": {
                   "text": "2 EL"
@@ -8554,14 +8883,23 @@
           {
             "ingredient": "kokosoel",
             "total": {
-              "text": "1 TL (+ EL ungemischt)",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "TL",
-              "approx": false
+              "text": "3 EL + 1 TL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "variante-c-kokos-dal-kerala-stil-parippu-curry": "1 TL Kokosöl"
+              "variante-c-kokos-dal-kerala-stil-parippu-curry": "1 TL Kokosöl + 2 EL Kokosöl + 1 EL Kokosöl"
             },
             "unitMixed": true
           },
@@ -8773,13 +9111,22 @@
                 "ingredient": "kokosoel",
                 "name": "Kokosöl",
                 "need": {
-                  "text": "1 TL (+ EL ungemischt)",
-                  "value": 1.0,
-                  "max": 1.0,
-                  "unit": "TL",
-                  "approx": false
+                  "text": "3 EL + 1 TL",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "EL",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 TL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "TL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "1 TL",
+                "display": "3 EL + 1 TL",
                 "inStock": false,
                 "buy": {
                   "text": "2 EL"
@@ -9140,14 +9487,24 @@
           {
             "ingredient": "ingwer",
             "total": {
-              "text": "1 EL (+ cm ungemischt)",
+              "text": "1 EL + 2 cm",
               "value": 1.0,
               "max": 1.0,
               "unit": "EL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "2 cm",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "cm",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "variante-d-dal-makhani-wochenend-fassung": "1 EL Ingwer-Knoblauch-Paste"
+              "variante-d-dal-makhani-wochenend-fassung": "1 EL Ingwer-Knoblauch-Paste",
+              "dazu-macht-das-hauptgericht-komplett": "2 cm Ingwer"
             },
             "unitMixed": true
           },
@@ -9220,14 +9577,23 @@
           {
             "ingredient": "ghee",
             "total": {
-              "text": "1½ TL (+ EL ungemischt)",
-              "value": 1.5,
-              "max": 1.5,
-              "unit": "TL",
-              "approx": false
+              "text": "2 EL + 1½ TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1½ TL",
+                  "value": 1.5,
+                  "max": 1.5,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "variante-d-dal-makhani-wochenend-fassung": "1 TL Ghee + ½ TL Ghee"
+              "variante-d-dal-makhani-wochenend-fassung": "1 TL Ghee + 2 EL Ghee + ½ TL Ghee"
             },
             "unitMixed": true
           },
@@ -9248,14 +9614,23 @@
           {
             "ingredient": "butter",
             "total": {
-              "text": "60 g (+ EL ungemischt)",
+              "text": "60 g + 1 EL",
               "value": 60.0,
               "max": 60.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "variante-d-dal-makhani-wochenend-fassung": "30 g Butter + 20 g Butter + 10 g Butter"
+              "variante-d-dal-makhani-wochenend-fassung": "30 g Butter + 1 EL Butter + 20 g Butter + 10 g Butter"
             },
             "unitMixed": true
           },
@@ -9610,13 +9985,22 @@
                 "ingredient": "ingwer",
                 "name": "Ingwer",
                 "need": {
-                  "text": "1 EL (+ cm ungemischt)",
+                  "text": "1 EL + 2 cm",
                   "value": 1.0,
                   "max": 1.0,
                   "unit": "EL",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "2 cm",
+                      "value": 2.0,
+                      "max": 2.0,
+                      "unit": "cm",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "1 EL",
+                "display": "1 EL + 2 cm",
                 "inStock": false,
                 "buy": {
                   "text": "\\~5 cm"
@@ -9716,13 +10100,22 @@
                 "ingredient": "ghee",
                 "name": "Ghee",
                 "need": {
-                  "text": "1½ TL (+ EL ungemischt)",
-                  "value": 1.5,
-                  "max": 1.5,
-                  "unit": "TL",
-                  "approx": false
+                  "text": "2 EL + 1½ TL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "EL",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1½ TL",
+                      "value": 1.5,
+                      "max": 1.5,
+                      "unit": "TL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "1½ TL",
+                "display": "2 EL + 1½ TL",
                 "inStock": false,
                 "buy": {
                   "text": "1 Glas"
@@ -9751,13 +10144,22 @@
                 "ingredient": "butter",
                 "name": "Butter",
                 "need": {
-                  "text": "60 g (+ EL ungemischt)",
+                  "text": "60 g + 1 EL",
                   "value": 60.0,
                   "max": 60.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 EL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "EL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "60 g",
+                "display": "60 g + 1 EL",
                 "inStock": false,
                 "buy": {
                   "text": "80 g"
@@ -10136,14 +10538,23 @@
           {
             "ingredient": "ghee",
             "total": {
-              "text": "1½ TL (+ EL ungemischt)",
-              "value": 1.5,
-              "max": 1.5,
-              "unit": "TL",
-              "approx": false
+              "text": "2 EL + 1½ TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1½ TL",
+                  "value": 1.5,
+                  "max": 1.5,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "variante-d-dal-makhani-wochenend-fassung": "1 TL Ghee + ½ TL Ghee"
+              "variante-d-dal-makhani-wochenend-fassung": "1 TL Ghee + 2 EL Ghee + ½ TL Ghee"
             },
             "unitMixed": true
           },
@@ -10177,14 +10588,23 @@
           {
             "ingredient": "butter",
             "total": {
-              "text": "60 g (+ EL ungemischt)",
+              "text": "60 g + 1 EL",
               "value": 60.0,
               "max": 60.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "variante-d-dal-makhani-wochenend-fassung": "30 g Butter + 20 g Butter + 10 g Butter"
+              "variante-d-dal-makhani-wochenend-fassung": "30 g Butter + 1 EL Butter + 20 g Butter + 10 g Butter"
             },
             "unitMixed": true
           },
@@ -10617,13 +11037,22 @@
                 "ingredient": "ghee",
                 "name": "Ghee",
                 "need": {
-                  "text": "1½ TL (+ EL ungemischt)",
-                  "value": 1.5,
-                  "max": 1.5,
-                  "unit": "TL",
-                  "approx": false
+                  "text": "2 EL + 1½ TL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "EL",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1½ TL",
+                      "value": 1.5,
+                      "max": 1.5,
+                      "unit": "TL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "1½ TL",
+                "display": "2 EL + 1½ TL",
                 "inStock": false,
                 "buy": {
                   "text": "1 Glas"
@@ -10669,13 +11098,22 @@
                 "ingredient": "butter",
                 "name": "Butter",
                 "need": {
-                  "text": "60 g (+ EL ungemischt)",
+                  "text": "60 g + 1 EL",
                   "value": 60.0,
                   "max": 60.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 EL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "EL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "60 g",
+                "display": "60 g + 1 EL",
                 "inStock": false,
                 "buy": {
                   "text": "80 g"

@@ -1302,7 +1302,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:21Z",
+    "generatedAt": "2026-10-12T15:17:54Z",
     "sourceHash": "f3e2c50981e9a65f",
     "select": {
       "weg": "vorrats-fond"
@@ -1350,14 +1350,24 @@
       {
         "ingredient": "zwiebeln",
         "total": {
-          "text": "400 g (+ Stück ungemischt)",
-          "value": 400.0,
-          "max": 400.0,
-          "unit": "g",
-          "approx": false
+          "text": "½ + 400 g",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "Stück",
+          "approx": false,
+          "plus": [
+            {
+              "text": "400 g",
+              "value": 400.0,
+              "max": 400.0,
+              "unit": "g",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "variante-a-vorrats-fond": "400 g Zwiebeln"
+          "variante-a-vorrats-fond": "400 g Zwiebeln",
+          "aus-dem-vorrat-sauce-in-10-minuten": "½ Zwiebel"
         },
         "unitMixed": true
       },
@@ -1443,14 +1453,24 @@
       {
         "ingredient": "butterschmalz",
         "total": {
-          "text": "20 g (+ TL ungemischt)",
+          "text": "20 g + 1 TL",
           "value": 20.0,
           "max": 20.0,
           "unit": "g",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "variante-a-vorrats-fond": "20 g"
+          "variante-a-vorrats-fond": "20 g",
+          "aus-dem-vorrat-sauce-in-10-minuten": "1 TL Schmalz"
         },
         "unitMixed": true
       },
@@ -1654,13 +1674,22 @@
             "ingredient": "zwiebeln",
             "name": "Zwiebeln",
             "need": {
-              "text": "400 g (+ Stück ungemischt)",
-              "value": 400.0,
-              "max": 400.0,
-              "unit": "g",
-              "approx": false
+              "text": "½ + 400 g",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "400 g",
+                  "value": 400.0,
+                  "max": 400.0,
+                  "unit": "g",
+                  "approx": false
+                }
+              ]
             },
-            "display": "400 g",
+            "display": "½ + 400 g",
             "inStock": false,
             "buy": {
               "text": "1 kg"
@@ -1785,13 +1814,22 @@
             "ingredient": "butterschmalz",
             "name": "Butterschmalz",
             "need": {
-              "text": "20 g (+ TL ungemischt)",
+              "text": "20 g + 1 TL",
               "value": 20.0,
               "max": 20.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "20 g",
+            "display": "20 g + 1 TL",
             "inStock": false,
             "buy": {
               "text": "1 Glas"

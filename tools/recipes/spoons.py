@@ -30,7 +30,9 @@ def spoon_equivalent(value: float, unit: str | None, metric: bool = False) -> tu
 
 
 def display_text(amount: dict, ingredient: dict | None = None, metric: bool = False) -> str:
-    """Reiner Text (kein Markdown); nutzt amount.display, sonst Heuristik."""
+    """Reiner Text (kein Markdown); nutzt amount.display, sonst Heuristik. `plus` (nicht umrechenbare Teilmengen) wird angehängt."""
+    if amount.get("plus"):
+        return " + ".join(display_text(a, ingredient, metric) for a in [{k: v for k, v in amount.items() if k != "plus"}, *amount["plus"]])
     v, mx, u = amount.get("value"), amount.get("max"), amount.get("unit")
     if v is None:
         return amount["text"]

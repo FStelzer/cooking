@@ -394,7 +394,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:21Z",
+    "generatedAt": "2026-10-12T15:17:54Z",
     "sourceHash": "aee3f4ef0ae7a323",
     "quantities": [
       {
@@ -478,14 +478,23 @@
       {
         "ingredient": "salz",
         "total": {
-          "text": "½ TL (+ Prise ungemischt)",
+          "text": "½ TL + 1 Prise",
           "value": 0.5,
           "max": 0.5,
           "unit": "TL",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "main": "½ TL Salz"
+          "main": "½ TL Salz + 1 Prise Salz"
         },
         "unitMixed": true
       },
@@ -613,13 +622,22 @@
             "ingredient": "salz",
             "name": "Salz",
             "need": {
-              "text": "½ TL (+ Prise ungemischt)",
+              "text": "½ TL + 1 Prise",
               "value": 0.5,
               "max": 0.5,
               "unit": "TL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
+                  "approx": false
+                }
+              ]
             },
-            "display": "½ TL",
+            "display": "½ TL + 1 Prise",
             "inStock": false,
             "pantry": true,
             "note": "½ TL und 1 Prise für den Eischnee"

@@ -15,6 +15,7 @@ export function fmtRange(lo, hi) {
 }
 
 export function fmtAmount(a) {
+  if (a.plus?.length) return [{ ...a, plus: undefined }, ...a.plus].map(fmtAmount).join(" + "); // nicht umrechenbare Teilmengen (derived)
   if (a.value == null) return a.text || "";
   let s = fmtRange(a.value, a.max);
   if (a.unit && a.unit !== "Stück") s += ` ${a.unit}`;
@@ -36,6 +37,7 @@ export function scaleAmount(a, factor, ingredient) {
   if (mode === "note") return a;
   const out = { ...a, value: roundFor(a.value * factor, a.unit, mode) };
   if (a.max != null) out.max = roundFor(a.max * factor, a.unit, mode);
+  if (a.plus) out.plus = a.plus.map((x) => scaleAmount(x, factor, ingredient));
   return out;
 }
 

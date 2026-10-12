@@ -876,7 +876,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:20Z",
+    "generatedAt": "2026-10-12T15:17:54Z",
     "sourceHash": "57d45e2b5788508f",
     "quantities": [
       {
@@ -1104,14 +1104,23 @@
       {
         "ingredient": "salz",
         "total": {
-          "text": "½ TL (+ EL ungemischt)",
-          "value": 0.5,
-          "max": 0.5,
-          "unit": "TL",
-          "approx": false
+          "text": "1 EL + ½ TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false,
+          "plus": [
+            {
+              "text": "½ TL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "main": "½ TL Salz"
+          "main": "½ TL Salz + 1 EL Salz"
         },
         "unitMixed": true
       },
@@ -1441,13 +1450,22 @@
             "ingredient": "salz",
             "name": "Salz",
             "need": {
-              "text": "½ TL (+ EL ungemischt)",
-              "value": 0.5,
-              "max": 0.5,
-              "unit": "TL",
-              "approx": false
+              "text": "1 EL + ½ TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "½ TL",
+                  "value": 0.5,
+                  "max": 0.5,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "½ TL",
+            "display": "1 EL + ½ TL",
             "inStock": false,
             "pantry": true
           },

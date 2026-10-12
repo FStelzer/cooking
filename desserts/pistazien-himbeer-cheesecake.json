@@ -630,7 +630,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:20Z",
+    "generatedAt": "2026-10-12T15:17:54Z",
     "sourceHash": "9cacf88cde284361",
     "quantities": [
       {
@@ -812,14 +812,23 @@
       {
         "ingredient": "speisestaerke",
         "total": {
-          "text": "1 EL (+ TL ungemischt)",
+          "text": "1 EL + 1 TL",
           "value": 1.0,
           "max": 1.0,
           "unit": "EL",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "main": "1 EL Speisestärke"
+          "main": "1 EL Speisestärke + 1 TL Stärke"
         },
         "unitMixed": true
       },
@@ -1125,23 +1134,30 @@
             },
             "display": "1 EL",
             "inStock": false,
-            "pantry": true,
-            "note": "1–2 EL"
+            "pantry": true
           },
           {
             "ingredient": "speisestaerke",
             "name": "Speisestärke",
             "need": {
-              "text": "1 EL (+ TL ungemischt)",
+              "text": "1 EL + 1 TL",
               "value": 1.0,
               "max": 1.0,
               "unit": "EL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "1 EL",
+            "display": "1 EL + 1 TL",
             "inStock": false,
-            "pantry": true,
-            "note": "1 EL"
+            "pantry": true
           },
           {
             "ingredient": "milch",

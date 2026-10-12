@@ -955,7 +955,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:20Z",
+    "generatedAt": "2026-10-12T15:17:54Z",
     "sourceHash": "ec94e2af7dae0c6f",
     "quantities": [
       {
@@ -987,14 +987,30 @@
       {
         "ingredient": "butter",
         "total": {
-          "text": "60 g (+ EL, TL ungemischt)",
+          "text": "60 g + 1 EL + 1 TL",
           "value": 60.0,
           "max": 60.0,
           "unit": "g",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "main": "30 g Butter + 30 g Butter"
+          "main": "30 g Butter + 30 g Butter + 1 TL Butter + 1 EL kalte Butter"
         },
         "unitMixed": true
       },
@@ -1105,16 +1121,15 @@
       {
         "ingredient": "weissweinessig",
         "total": {
-          "text": "120 ml (+ TL ungemischt)",
-          "value": 120.0,
-          "max": 120.0,
+          "text": "125 ml",
+          "value": 125.0,
+          "max": 125.0,
           "unit": "ml",
           "approx": false
         },
         "perTask": {
-          "main": "120 ml Weißweinessig"
-        },
-        "unitMixed": true
+          "main": "120 ml Weißweinessig + 1 TL frischen Essig"
+        }
       },
       {
         "ingredient": "huehnerbruehe",
@@ -1374,13 +1389,29 @@
             "ingredient": "butter",
             "name": "Butter",
             "need": {
-              "text": "60 g (+ EL, TL ungemischt)",
+              "text": "60 g + 1 EL + 1 TL",
               "value": 60.0,
               "max": 60.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "60 g",
+            "display": "60 g + 1 EL + 1 TL",
             "inStock": false,
             "buy": {
               "text": "80 g"
@@ -1420,13 +1451,13 @@
             "ingredient": "weissweinessig",
             "name": "gereifter Weißweinessig",
             "need": {
-              "text": "120 ml (+ TL ungemischt)",
-              "value": 120.0,
-              "max": 120.0,
+              "text": "125 ml",
+              "value": 125.0,
+              "max": 125.0,
               "unit": "ml",
               "approx": false
             },
-            "display": "120 ml",
+            "display": "125 ml",
             "inStock": false,
             "buy": {
               "text": "120 ml"

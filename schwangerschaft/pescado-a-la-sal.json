@@ -1100,7 +1100,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:20Z",
+    "generatedAt": "2026-10-12T15:17:54Z",
     "sourceHash": "bf60cfad869bf7fe",
     "select": {
       "garen": "ofen"
@@ -1122,14 +1122,23 @@
       {
         "ingredient": "zitronen",
         "total": {
-          "text": "1½ (+ EL ungemischt)",
+          "text": "1½ + 1 EL",
           "value": 1.5,
           "max": 1.5,
           "unit": "Stück",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "main": "1 Zitrone + ½ Zitrone"
+          "main": "1 Zitrone + ½ Zitrone + 1 EL Zitronensaft"
         },
         "unitMixed": true
       },
@@ -1273,14 +1282,23 @@
       {
         "ingredient": "linsen",
         "total": {
-          "text": "200 g (+ EL ungemischt)",
+          "text": "200 g + 3–4 EL",
           "value": 200.0,
           "max": 200.0,
           "unit": "g",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "3–4 EL",
+              "value": 3.0,
+              "max": 4.0,
+              "unit": "EL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "main": "200 g Linsen"
+          "main": "200 g Linsen + 3–4 EL lauwarmer Linsensalat"
         },
         "unitMixed": true
       },
@@ -1300,19 +1318,18 @@
       {
         "ingredient": "olivenoel",
         "total": {
-          "text": "6 EL (+ ml ungemischt)",
-          "value": 6.0,
-          "max": 6.0,
-          "unit": "EL",
+          "text": "210 ml",
+          "value": 210.0,
+          "max": 210.0,
+          "unit": "ml",
           "approx": false
         },
         "perTask": {
-          "main": "3 EL Olivenöl + 3 EL Olivenöl"
+          "main": "3 EL Olivenöl + 3 EL Olivenöl + 120 ml Olivenöl"
         },
         "unitless": [
           "etwas Olivenöl"
-        ],
-        "unitMixed": true
+        ]
       },
       {
         "ingredient": "weissweinessig",
@@ -1363,14 +1380,23 @@
       {
         "ingredient": "salz",
         "total": {
-          "text": "1 TL (+ cm ungemischt)",
+          "text": "1 TL + 1 cm",
           "value": 1.0,
           "max": 1.0,
           "unit": "TL",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 cm",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "cm",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "main": "½ TL Salz + ½ TL Salz"
+          "main": "½ TL Salz + 1 cm Salzmasse + ½ TL Salz"
         },
         "unitMixed": true
       },
@@ -1420,13 +1446,22 @@
             "ingredient": "zitronen",
             "name": "Zitronen",
             "need": {
-              "text": "1½ (+ EL ungemischt)",
+              "text": "1½ + 1 EL",
               "value": 1.5,
               "max": 1.5,
               "unit": "Stück",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "1½",
+            "display": "1½ + 1 EL",
             "inStock": false,
             "buy": {
               "text": "2"
@@ -1631,13 +1666,22 @@
             "ingredient": "linsen",
             "name": "Linsen",
             "need": {
-              "text": "200 g (+ EL ungemischt)",
+              "text": "200 g + 3–4 EL",
               "value": 200.0,
               "max": 200.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "3–4 EL",
+                  "value": 3.0,
+                  "max": 4.0,
+                  "unit": "EL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "200 g",
+            "display": "200 g + 3–4 EL",
             "inStock": false,
             "buy": {
               "text": "200 g"
@@ -1672,13 +1716,13 @@
             "ingredient": "olivenoel",
             "name": "gutes Olivenöl",
             "need": {
-              "text": "6 EL (+ ml ungemischt)",
-              "value": 6.0,
-              "max": 6.0,
-              "unit": "EL",
+              "text": "210 ml",
+              "value": 210.0,
+              "max": 210.0,
+              "unit": "ml",
               "approx": false
             },
-            "display": "6 EL",
+            "display": "210 ml",
             "inStock": false,
             "buy": {
               "text": "250 ml"
@@ -1754,13 +1798,22 @@
             "ingredient": "salz",
             "name": "Salz",
             "need": {
-              "text": "1 TL (+ cm ungemischt)",
+              "text": "1 TL + 1 cm",
               "value": 1.0,
               "max": 1.0,
               "unit": "TL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 cm",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "cm",
+                  "approx": false
+                }
+              ]
             },
-            "display": "1 TL",
+            "display": "1 TL + 1 cm",
             "inStock": false,
             "pantry": true
           },
@@ -1804,14 +1857,23 @@
           {
             "ingredient": "zitronen",
             "total": {
-              "text": "1½ (+ EL ungemischt)",
+              "text": "1½ + 1 EL",
               "value": 1.5,
               "max": 1.5,
               "unit": "Stück",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "main": "1 Zitrone + ½ Zitrone"
+              "main": "1 Zitrone + ½ Zitrone + 1 EL Zitronensaft"
             },
             "unitMixed": true
           },
@@ -1955,14 +2017,23 @@
           {
             "ingredient": "linsen",
             "total": {
-              "text": "200 g (+ EL ungemischt)",
+              "text": "200 g + 3–4 EL",
               "value": 200.0,
               "max": 200.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "3–4 EL",
+                  "value": 3.0,
+                  "max": 4.0,
+                  "unit": "EL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "main": "200 g Linsen"
+              "main": "200 g Linsen + 3–4 EL lauwarmer Linsensalat"
             },
             "unitMixed": true
           },
@@ -1982,19 +2053,18 @@
           {
             "ingredient": "olivenoel",
             "total": {
-              "text": "6 EL (+ ml ungemischt)",
-              "value": 6.0,
-              "max": 6.0,
-              "unit": "EL",
+              "text": "210 ml",
+              "value": 210.0,
+              "max": 210.0,
+              "unit": "ml",
               "approx": false
             },
             "perTask": {
-              "main": "3 EL Olivenöl + 3 EL Olivenöl"
+              "main": "3 EL Olivenöl + 3 EL Olivenöl + 120 ml Olivenöl"
             },
             "unitless": [
               "etwas Olivenöl"
-            ],
-            "unitMixed": true
+            ]
           },
           {
             "ingredient": "weissweinessig",
@@ -2045,14 +2115,23 @@
           {
             "ingredient": "salz",
             "total": {
-              "text": "1 TL (+ cm ungemischt)",
+              "text": "1 TL + 1 cm",
               "value": 1.0,
               "max": 1.0,
               "unit": "TL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 cm",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "cm",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "main": "½ TL Salz + ½ TL Salz"
+              "main": "½ TL Salz + 1 cm Salzmasse + ½ TL Salz"
             },
             "unitMixed": true
           },
@@ -2102,13 +2181,22 @@
                 "ingredient": "zitronen",
                 "name": "Zitronen",
                 "need": {
-                  "text": "1½ (+ EL ungemischt)",
+                  "text": "1½ + 1 EL",
                   "value": 1.5,
                   "max": 1.5,
                   "unit": "Stück",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 EL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "EL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "1½",
+                "display": "1½ + 1 EL",
                 "inStock": false,
                 "buy": {
                   "text": "2"
@@ -2313,13 +2401,22 @@
                 "ingredient": "linsen",
                 "name": "Linsen",
                 "need": {
-                  "text": "200 g (+ EL ungemischt)",
+                  "text": "200 g + 3–4 EL",
                   "value": 200.0,
                   "max": 200.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "3–4 EL",
+                      "value": 3.0,
+                      "max": 4.0,
+                      "unit": "EL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "200 g",
+                "display": "200 g + 3–4 EL",
                 "inStock": false,
                 "buy": {
                   "text": "200 g"
@@ -2354,13 +2451,13 @@
                 "ingredient": "olivenoel",
                 "name": "gutes Olivenöl",
                 "need": {
-                  "text": "6 EL (+ ml ungemischt)",
-                  "value": 6.0,
-                  "max": 6.0,
-                  "unit": "EL",
+                  "text": "210 ml",
+                  "value": 210.0,
+                  "max": 210.0,
+                  "unit": "ml",
                   "approx": false
                 },
-                "display": "6 EL",
+                "display": "210 ml",
                 "inStock": false,
                 "buy": {
                   "text": "250 ml"
@@ -2436,13 +2533,22 @@
                 "ingredient": "salz",
                 "name": "Salz",
                 "need": {
-                  "text": "1 TL (+ cm ungemischt)",
+                  "text": "1 TL + 1 cm",
                   "value": 1.0,
                   "max": 1.0,
                   "unit": "TL",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 cm",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "cm",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "1 TL",
+                "display": "1 TL + 1 cm",
                 "inStock": false,
                 "pantry": true
               },

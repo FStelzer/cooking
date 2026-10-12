@@ -3446,7 +3446,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:20Z",
+    "generatedAt": "2026-10-12T15:17:54Z",
     "sourceHash": "add0c22ea5515e06",
     "select": {
       "ablauf": "vortag"
@@ -3582,16 +3582,26 @@
       {
         "ingredient": "sesamoel",
         "total": {
-          "text": "5 EL (+ TL ungemischt)",
+          "text": "5 EL + 1 TL",
           "value": 5.0,
           "max": 5.0,
           "unit": "EL",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
           "gang-1": "2 EL Sesamöl + 1 EL geröstetem Sesam",
           "miso-tare-die-wuerzbasis": "1 EL Sesamöl",
-          "niku-miso-soboro-das-fleisch-topping": "½ EL Sesamöl + ½ EL Sesamöl"
+          "niku-miso-soboro-das-fleisch-topping": "½ EL Sesamöl + ½ EL Sesamöl",
+          "gemuese-toppings": "1 TL Sesamöl"
         },
         "perCourse": {
           "gang-1": {
@@ -3640,21 +3650,30 @@
       {
         "ingredient": "doubanjiang",
         "total": {
-          "text": "1 TL (+ EL ungemischt)",
-          "value": 1.0,
-          "max": 1.0,
-          "unit": "TL",
-          "approx": false
+          "text": "3 EL + 1 TL",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "EL",
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "nudeln-und-anrichten": "1 TL Doubanjiang"
+          "nudeln-und-anrichten": "1 TL Doubanjiang + 3 EL Niku-Miso, kein Doubanjiang"
         },
         "perCourse": {
           "gang-2": {
-            "text": "1 TL",
-            "value": 1.0,
-            "max": 1.0,
-            "unit": "TL"
+            "text": "3 EL",
+            "value": 3.0,
+            "max": 3.0,
+            "unit": "EL"
           }
         },
         "unitMixed": true
@@ -3846,17 +3865,35 @@
       {
         "ingredient": "knoblauch",
         "total": {
-          "text": "8 (+ EL, TL ungemischt)",
+          "text": "8 + 1 EL + 1 TL",
           "value": 8.0,
           "max": 8.0,
           "unit": "Stück",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
           "gang-1": "2 gepresste Knoblauchzehen",
           "die-tonkotsu-bruehe-das-weisse-gold": "1 halbierte Knoblauchknolle",
           "miso-tare-die-wuerzbasis": "2 geriebene Knoblauchzehen",
-          "gemuese-toppings": "3 Knoblauchzehen"
+          "niku-miso-soboro-das-fleisch-topping": "1 EL geriebenen Knoblauch/Ingwer",
+          "gemuese-toppings": "3 Knoblauchzehen",
+          "nudeln-und-anrichten": "1 TL Knoblauch/Ingwer"
         },
         "perCourse": {
           "gang-1": {
@@ -3942,21 +3979,31 @@
       {
         "ingredient": "butter",
         "total": {
-          "text": "1 TL (+ Stück ungemischt)",
-          "value": 1.0,
-          "max": 1.0,
-          "unit": "TL",
-          "approx": false
+          "text": "2 + 1 TL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "gemuese-toppings": "1 TL Butter"
+          "gemuese-toppings": "1 TL Butter",
+          "nudeln-und-anrichten": "1 Butterwürfel + 1 EL, Butter"
         },
         "perCourse": {
           "gang-2": {
-            "text": "1 TL",
-            "value": 1.0,
-            "max": 1.0,
-            "unit": "TL"
+            "text": "2",
+            "value": 2.0,
+            "max": 2.0,
+            "unit": "Stück"
           }
         },
         "unitMixed": true
@@ -4076,69 +4123,79 @@
       {
         "ingredient": "sojasauce",
         "total": {
-          "text": "8 EL (+ ml ungemischt)",
-          "value": 8.0,
-          "max": 8.0,
-          "unit": "EL",
+          "text": "220 ml",
+          "value": 220.0,
+          "max": 220.0,
+          "unit": "ml",
           "approx": false
         },
         "perTask": {
           "gang-1": "4 EL Sojasauce",
           "miso-tare-die-wuerzbasis": "3 EL Sojasauce",
-          "niku-miso-soboro-das-fleisch-topping": "1 EL Sojasauce"
+          "niku-miso-soboro-das-fleisch-topping": "1 EL Sojasauce",
+          "ajitsuke-tamago-marinierte-eier": "100 ml Sojasauce"
         },
         "perCourse": {
-          "gang-1": {
-            "text": "4 EL",
-            "value": 4.0,
-            "max": 4.0,
-            "unit": "EL"
-          },
           "gang-2": {
-            "text": "4 EL",
-            "value": 4.0,
-            "max": 4.0,
-            "unit": "EL"
+            "text": "160 ml",
+            "value": 160.0,
+            "max": 160.0,
+            "unit": "ml"
+          },
+          "gang-1": {
+            "text": "60 ml",
+            "value": 60.0,
+            "max": 60.0,
+            "unit": "ml"
           }
-        },
-        "unitMixed": true
+        }
       },
       {
         "ingredient": "mirin",
         "total": {
-          "text": "2 EL (+ ml ungemischt)",
-          "value": 2.0,
-          "max": 2.0,
-          "unit": "EL",
+          "text": "60 ml",
+          "value": 60.0,
+          "max": 60.0,
+          "unit": "ml",
           "approx": false
         },
         "perTask": {
-          "miso-tare-die-wuerzbasis": "2 EL Mirin"
+          "miso-tare-die-wuerzbasis": "2 EL Mirin",
+          "ajitsuke-tamago-marinierte-eier": "30 ml Mirin"
         },
         "perCourse": {
           "gang-2": {
-            "text": "2 EL",
-            "value": 2.0,
-            "max": 2.0,
-            "unit": "EL"
+            "text": "60 ml",
+            "value": 60.0,
+            "max": 60.0,
+            "unit": "ml"
           }
-        },
-        "unitMixed": true
+        }
       },
       {
         "ingredient": "zucker",
         "total": {
-          "text": "5 EL (+ g ungemischt)",
+          "text": "5 EL + 60 g",
           "value": 5.0,
           "max": 5.0,
           "unit": "EL",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "60 g",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "g",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
           "gang-1": "1 EL Zucker",
           "niku-miso-soboro-das-fleisch-topping": "1 EL Zucker",
           "ajitsuke-tamago-marinierte-eier": "1 EL Zucker",
-          "frucht-kanten": "2 EL Zucker"
+          "frucht-kanten": "2 EL Zucker",
+          "panna-cotta": "60 g Zucker"
         },
         "perCourse": {
           "gang-1": {
@@ -4165,14 +4222,24 @@
       {
         "ingredient": "salz",
         "total": {
-          "text": "1 TL (+ Prise ungemischt)",
+          "text": "1 TL + 1 Prise",
           "value": 1.0,
           "max": 1.0,
           "unit": "TL",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "gang-1": "1 TL Salz"
+          "gang-1": "1 TL Salz",
+          "gemuese-toppings": "1 Prise Salz"
         },
         "perCourse": {
           "gang-1": {
@@ -4208,24 +4275,25 @@
       {
         "ingredient": "wasser",
         "total": {
-          "text": "9410–10410 ml (+ EL ungemischt)",
-          "value": 9410.0,
-          "max": 10410.0,
+          "text": "9440–10440 ml",
+          "value": 9440.0,
+          "max": 10440.0,
           "unit": "ml",
           "approx": false
         },
         "perTask": {
           "die-tonkotsu-bruehe-das-weisse-gold": "5-6 L kaltes Wasser",
-          "miso-tare-die-wuerzbasis": "60 ml heißem Wasser",
+          "miso-tare-die-wuerzbasis": "1 EL Wasser + 60 ml heißem Wasser",
+          "niku-miso-soboro-das-fleisch-topping": "1 EL Wasser",
           "ajitsuke-tamago-marinierte-eier": "100 ml Wasser",
           "nudeln-und-anrichten": "4 L Wasser",
           "frucht-kanten": "250 ml Wasser"
         },
         "perCourse": {
           "gang-2": {
-            "text": "9160–10160 ml",
-            "value": 9160.0,
-            "max": 10160.0,
+            "text": "9190–10190 ml",
+            "value": 9190.0,
+            "max": 10190.0,
             "unit": "ml"
           },
           "gang-3": {
@@ -4234,8 +4302,7 @@
             "max": 250.0,
             "unit": "ml"
           }
-        },
-        "unitMixed": true
+        }
       }
     ],
     "shopping": [
@@ -4315,13 +4382,22 @@
             "ingredient": "sesamoel",
             "name": "Geröstetes Sesamöl",
             "need": {
-              "text": "5 EL (+ TL ungemischt)",
+              "text": "5 EL + 1 TL",
               "value": 5.0,
               "max": 5.0,
               "unit": "EL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "5 EL",
+            "display": "5 EL + 1 TL",
             "inStock": false
           },
           {
@@ -4353,13 +4429,22 @@
             "ingredient": "doubanjiang",
             "name": "Doubanjiang",
             "need": {
-              "text": "1 TL (+ EL ungemischt)",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "TL",
-              "approx": false
+              "text": "3 EL + 1 TL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "1 TL",
+            "display": "3 EL + 1 TL",
             "inStock": false,
             "optional": true,
             "note": "Tobanjan, fermentierte Chili-Bohnenpaste, kleines Glas. 1 TL in den Erwachsenen-Wok-Durchgängen — die klassische Schärfe- und Tiefen-Ergänzung in Sapporo-Miso. Hält ewig, taugt für Mapo Tofu und alle Schmorsachen."
@@ -4557,13 +4642,29 @@
             "ingredient": "knoblauch",
             "name": "Knoblauch",
             "need": {
-              "text": "8 (+ EL, TL ungemischt)",
+              "text": "8 + 1 EL + 1 TL",
               "value": 8.0,
               "max": 8.0,
               "unit": "Stück",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "8",
+            "display": "8 + 1 EL + 1 TL",
             "inStock": false,
             "buy": {
               "text": "2 Knollen"
@@ -4630,13 +4731,22 @@
             "ingredient": "butter",
             "name": "Gute Butter",
             "need": {
-              "text": "1 TL (+ Stück ungemischt)",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "TL",
-              "approx": false
+              "text": "2 + 1 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "1 TL",
+            "display": "2 + 1 TL",
             "inStock": false,
             "note": "z.B. Süßrahm"
           },
@@ -4752,13 +4862,13 @@
             "ingredient": "sojasauce",
             "name": "Sojasauce",
             "need": {
-              "text": "8 EL (+ ml ungemischt)",
-              "value": 8.0,
-              "max": 8.0,
-              "unit": "EL",
+              "text": "220 ml",
+              "value": 220.0,
+              "max": 220.0,
+              "unit": "ml",
               "approx": false
             },
-            "display": "8 EL",
+            "display": "220 ml",
             "inStock": false,
             "pantry": true,
             "note": "falls leer vom letzten Mal. Achtung: Durch Gurken-Marinade etwas mehr Sojasauce nötig!"
@@ -4767,13 +4877,13 @@
             "ingredient": "mirin",
             "name": "Mirin",
             "need": {
-              "text": "2 EL (+ ml ungemischt)",
-              "value": 2.0,
-              "max": 2.0,
-              "unit": "EL",
+              "text": "60 ml",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "ml",
               "approx": false
             },
-            "display": "2 EL",
+            "display": "60 ml",
             "inStock": false,
             "pantry": true,
             "note": "Kein Sake — in Tare und Glasur durch Reisessig/Wasser ersetzt. Mirin-Würzsauce mit \\~0,9 % Alkohol ist okay."
@@ -4782,13 +4892,22 @@
             "ingredient": "zucker",
             "name": "Zucker",
             "need": {
-              "text": "5 EL (+ g ungemischt)",
+              "text": "5 EL + 60 g",
               "value": 5.0,
               "max": 5.0,
               "unit": "EL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "60 g",
+                  "value": 60.0,
+                  "max": 60.0,
+                  "unit": "g",
+                  "approx": false
+                }
+              ]
             },
-            "display": "5 EL",
+            "display": "5 EL + 60 g",
             "inStock": false,
             "pantry": true
           },
@@ -4796,13 +4915,22 @@
             "ingredient": "salz",
             "name": "Salz",
             "need": {
-              "text": "1 TL (+ Prise ungemischt)",
+              "text": "1 TL + 1 Prise",
               "value": 1.0,
               "max": 1.0,
               "unit": "TL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
+                  "approx": false
+                }
+              ]
             },
-            "display": "1 TL",
+            "display": "1 TL + 1 Prise",
             "inStock": false,
             "pantry": true
           },
@@ -4825,13 +4953,13 @@
             "ingredient": "wasser",
             "name": "Wasser",
             "need": {
-              "text": "9410–10410 ml (+ EL ungemischt)",
-              "value": 9410.0,
-              "max": 10410.0,
+              "text": "9440–10440 ml",
+              "value": 9440.0,
+              "max": 10440.0,
               "unit": "ml",
               "approx": false
             },
-            "display": "9410–10410 ml",
+            "display": "9440–10440 ml",
             "inStock": false,
             "pantry": true
           }
@@ -4975,16 +5103,26 @@
           {
             "ingredient": "sesamoel",
             "total": {
-              "text": "5 EL (+ TL ungemischt)",
+              "text": "5 EL + 1 TL",
               "value": 5.0,
               "max": 5.0,
               "unit": "EL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "gang-1": "2 EL Sesamöl + 1 EL geröstetem Sesam",
               "miso-tare-die-wuerzbasis": "1 EL Sesamöl",
-              "niku-miso-soboro-das-fleisch-topping": "½ EL Sesamöl + ½ EL Sesamöl"
+              "niku-miso-soboro-das-fleisch-topping": "½ EL Sesamöl + ½ EL Sesamöl",
+              "gemuese-toppings": "1 TL Sesamöl"
             },
             "perCourse": {
               "gang-1": {
@@ -5033,21 +5171,30 @@
           {
             "ingredient": "doubanjiang",
             "total": {
-              "text": "1 TL (+ EL ungemischt)",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "TL",
-              "approx": false
+              "text": "3 EL + 1 TL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "nudeln-und-anrichten": "1 TL Doubanjiang"
+              "nudeln-und-anrichten": "1 TL Doubanjiang + 3 EL Niku-Miso, kein Doubanjiang"
             },
             "perCourse": {
               "gang-2": {
-                "text": "1 TL",
-                "value": 1.0,
-                "max": 1.0,
-                "unit": "TL"
+                "text": "3 EL",
+                "value": 3.0,
+                "max": 3.0,
+                "unit": "EL"
               }
             },
             "unitMixed": true
@@ -5239,17 +5386,35 @@
           {
             "ingredient": "knoblauch",
             "total": {
-              "text": "8 (+ EL, TL ungemischt)",
+              "text": "8 + 1 EL + 1 TL",
               "value": 8.0,
               "max": 8.0,
               "unit": "Stück",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "gang-1": "2 gepresste Knoblauchzehen",
               "die-tonkotsu-bruehe-das-weisse-gold": "1 halbierte Knoblauchknolle",
               "miso-tare-die-wuerzbasis": "2 geriebene Knoblauchzehen",
-              "gemuese-toppings": "3 Knoblauchzehen"
+              "niku-miso-soboro-das-fleisch-topping": "1 EL geriebenen Knoblauch/Ingwer",
+              "gemuese-toppings": "3 Knoblauchzehen",
+              "nudeln-und-anrichten": "1 TL Knoblauch/Ingwer"
             },
             "perCourse": {
               "gang-1": {
@@ -5335,21 +5500,31 @@
           {
             "ingredient": "butter",
             "total": {
-              "text": "1 TL (+ Stück ungemischt)",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "TL",
-              "approx": false
+              "text": "2 + 1 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "gemuese-toppings": "1 TL Butter"
+              "gemuese-toppings": "1 TL Butter",
+              "nudeln-und-anrichten": "1 Butterwürfel + 1 EL, Butter"
             },
             "perCourse": {
               "gang-2": {
-                "text": "1 TL",
-                "value": 1.0,
-                "max": 1.0,
-                "unit": "TL"
+                "text": "2",
+                "value": 2.0,
+                "max": 2.0,
+                "unit": "Stück"
               }
             },
             "unitMixed": true
@@ -5469,69 +5644,79 @@
           {
             "ingredient": "sojasauce",
             "total": {
-              "text": "8 EL (+ ml ungemischt)",
-              "value": 8.0,
-              "max": 8.0,
-              "unit": "EL",
+              "text": "220 ml",
+              "value": 220.0,
+              "max": 220.0,
+              "unit": "ml",
               "approx": false
             },
             "perTask": {
               "gang-1": "4 EL Sojasauce",
               "miso-tare-die-wuerzbasis": "3 EL Sojasauce",
-              "niku-miso-soboro-das-fleisch-topping": "1 EL Sojasauce"
+              "niku-miso-soboro-das-fleisch-topping": "1 EL Sojasauce",
+              "ajitsuke-tamago-marinierte-eier": "100 ml Sojasauce"
             },
             "perCourse": {
-              "gang-1": {
-                "text": "4 EL",
-                "value": 4.0,
-                "max": 4.0,
-                "unit": "EL"
-              },
               "gang-2": {
-                "text": "4 EL",
-                "value": 4.0,
-                "max": 4.0,
-                "unit": "EL"
+                "text": "160 ml",
+                "value": 160.0,
+                "max": 160.0,
+                "unit": "ml"
+              },
+              "gang-1": {
+                "text": "60 ml",
+                "value": 60.0,
+                "max": 60.0,
+                "unit": "ml"
               }
-            },
-            "unitMixed": true
+            }
           },
           {
             "ingredient": "mirin",
             "total": {
-              "text": "2 EL (+ ml ungemischt)",
-              "value": 2.0,
-              "max": 2.0,
-              "unit": "EL",
+              "text": "60 ml",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "ml",
               "approx": false
             },
             "perTask": {
-              "miso-tare-die-wuerzbasis": "2 EL Mirin"
+              "miso-tare-die-wuerzbasis": "2 EL Mirin",
+              "ajitsuke-tamago-marinierte-eier": "30 ml Mirin"
             },
             "perCourse": {
               "gang-2": {
-                "text": "2 EL",
-                "value": 2.0,
-                "max": 2.0,
-                "unit": "EL"
+                "text": "60 ml",
+                "value": 60.0,
+                "max": 60.0,
+                "unit": "ml"
               }
-            },
-            "unitMixed": true
+            }
           },
           {
             "ingredient": "zucker",
             "total": {
-              "text": "5 EL (+ g ungemischt)",
+              "text": "5 EL + 60 g",
               "value": 5.0,
               "max": 5.0,
               "unit": "EL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "60 g",
+                  "value": 60.0,
+                  "max": 60.0,
+                  "unit": "g",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "gang-1": "1 EL Zucker",
               "niku-miso-soboro-das-fleisch-topping": "1 EL Zucker",
               "ajitsuke-tamago-marinierte-eier": "1 EL Zucker",
-              "frucht-kanten": "2 EL Zucker"
+              "frucht-kanten": "2 EL Zucker",
+              "panna-cotta": "60 g Zucker"
             },
             "perCourse": {
               "gang-1": {
@@ -5558,14 +5743,24 @@
           {
             "ingredient": "salz",
             "total": {
-              "text": "1 TL (+ Prise ungemischt)",
+              "text": "1 TL + 1 Prise",
               "value": 1.0,
               "max": 1.0,
               "unit": "TL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
-              "gang-1": "1 TL Salz"
+              "gang-1": "1 TL Salz",
+              "gemuese-toppings": "1 Prise Salz"
             },
             "perCourse": {
               "gang-1": {
@@ -5601,24 +5796,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "9410–10410 ml (+ EL ungemischt)",
-              "value": 9410.0,
-              "max": 10410.0,
+              "text": "9440–10440 ml",
+              "value": 9440.0,
+              "max": 10440.0,
               "unit": "ml",
               "approx": false
             },
             "perTask": {
               "die-tonkotsu-bruehe-das-weisse-gold": "5-6 L kaltes Wasser",
-              "miso-tare-die-wuerzbasis": "60 ml heißem Wasser",
+              "miso-tare-die-wuerzbasis": "1 EL Wasser + 60 ml heißem Wasser",
+              "niku-miso-soboro-das-fleisch-topping": "1 EL Wasser",
               "ajitsuke-tamago-marinierte-eier": "100 ml Wasser",
               "nudeln-und-anrichten": "4 L Wasser",
               "frucht-kanten": "250 ml Wasser"
             },
             "perCourse": {
               "gang-2": {
-                "text": "9160–10160 ml",
-                "value": 9160.0,
-                "max": 10160.0,
+                "text": "9190–10190 ml",
+                "value": 9190.0,
+                "max": 10190.0,
                 "unit": "ml"
               },
               "gang-3": {
@@ -5627,8 +5823,7 @@
                 "max": 250.0,
                 "unit": "ml"
               }
-            },
-            "unitMixed": true
+            }
           }
         ],
         "shopping": [
@@ -5708,13 +5903,22 @@
                 "ingredient": "sesamoel",
                 "name": "Geröstetes Sesamöl",
                 "need": {
-                  "text": "5 EL (+ TL ungemischt)",
+                  "text": "5 EL + 1 TL",
                   "value": 5.0,
                   "max": 5.0,
                   "unit": "EL",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 TL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "TL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "5 EL",
+                "display": "5 EL + 1 TL",
                 "inStock": false
               },
               {
@@ -5746,13 +5950,22 @@
                 "ingredient": "doubanjiang",
                 "name": "Doubanjiang",
                 "need": {
-                  "text": "1 TL (+ EL ungemischt)",
-                  "value": 1.0,
-                  "max": 1.0,
-                  "unit": "TL",
-                  "approx": false
+                  "text": "3 EL + 1 TL",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "EL",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 TL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "TL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "1 TL",
+                "display": "3 EL + 1 TL",
                 "inStock": false,
                 "optional": true,
                 "note": "Tobanjan, fermentierte Chili-Bohnenpaste, kleines Glas. 1 TL in den Erwachsenen-Wok-Durchgängen — die klassische Schärfe- und Tiefen-Ergänzung in Sapporo-Miso. Hält ewig, taugt für Mapo Tofu und alle Schmorsachen."
@@ -5950,13 +6163,29 @@
                 "ingredient": "knoblauch",
                 "name": "Knoblauch",
                 "need": {
-                  "text": "8 (+ EL, TL ungemischt)",
+                  "text": "8 + 1 EL + 1 TL",
                   "value": 8.0,
                   "max": 8.0,
                   "unit": "Stück",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 EL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "EL",
+                      "approx": false
+                    },
+                    {
+                      "text": "1 TL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "TL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "8",
+                "display": "8 + 1 EL + 1 TL",
                 "inStock": false,
                 "buy": {
                   "text": "2 Knollen"
@@ -6023,13 +6252,22 @@
                 "ingredient": "butter",
                 "name": "Gute Butter",
                 "need": {
-                  "text": "1 TL (+ Stück ungemischt)",
-                  "value": 1.0,
-                  "max": 1.0,
-                  "unit": "TL",
-                  "approx": false
+                  "text": "2 + 1 TL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "Stück",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 TL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "TL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "1 TL",
+                "display": "2 + 1 TL",
                 "inStock": false,
                 "note": "z.B. Süßrahm"
               },
@@ -6145,13 +6383,13 @@
                 "ingredient": "sojasauce",
                 "name": "Sojasauce",
                 "need": {
-                  "text": "8 EL (+ ml ungemischt)",
-                  "value": 8.0,
-                  "max": 8.0,
-                  "unit": "EL",
+                  "text": "220 ml",
+                  "value": 220.0,
+                  "max": 220.0,
+                  "unit": "ml",
                   "approx": false
                 },
-                "display": "8 EL",
+                "display": "220 ml",
                 "inStock": false,
                 "pantry": true,
                 "note": "falls leer vom letzten Mal. Achtung: Durch Gurken-Marinade etwas mehr Sojasauce nötig!"
@@ -6160,13 +6398,13 @@
                 "ingredient": "mirin",
                 "name": "Mirin",
                 "need": {
-                  "text": "2 EL (+ ml ungemischt)",
-                  "value": 2.0,
-                  "max": 2.0,
-                  "unit": "EL",
+                  "text": "60 ml",
+                  "value": 60.0,
+                  "max": 60.0,
+                  "unit": "ml",
                   "approx": false
                 },
-                "display": "2 EL",
+                "display": "60 ml",
                 "inStock": false,
                 "pantry": true,
                 "note": "Kein Sake — in Tare und Glasur durch Reisessig/Wasser ersetzt. Mirin-Würzsauce mit \\~0,9 % Alkohol ist okay."
@@ -6175,13 +6413,22 @@
                 "ingredient": "zucker",
                 "name": "Zucker",
                 "need": {
-                  "text": "5 EL (+ g ungemischt)",
+                  "text": "5 EL + 60 g",
                   "value": 5.0,
                   "max": 5.0,
                   "unit": "EL",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "60 g",
+                      "value": 60.0,
+                      "max": 60.0,
+                      "unit": "g",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "5 EL",
+                "display": "5 EL + 60 g",
                 "inStock": false,
                 "pantry": true
               },
@@ -6189,13 +6436,22 @@
                 "ingredient": "salz",
                 "name": "Salz",
                 "need": {
-                  "text": "1 TL (+ Prise ungemischt)",
+                  "text": "1 TL + 1 Prise",
                   "value": 1.0,
                   "max": 1.0,
                   "unit": "TL",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 Prise",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "Prise",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "1 TL",
+                "display": "1 TL + 1 Prise",
                 "inStock": false,
                 "pantry": true
               },
@@ -6218,13 +6474,13 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "9410–10410 ml (+ EL ungemischt)",
-                  "value": 9410.0,
-                  "max": 10410.0,
+                  "text": "9440–10440 ml",
+                  "value": 9440.0,
+                  "max": 10440.0,
                   "unit": "ml",
                   "approx": false
                 },
-                "display": "9410–10410 ml",
+                "display": "9440–10440 ml",
                 "inStock": false,
                 "pantry": true
               }

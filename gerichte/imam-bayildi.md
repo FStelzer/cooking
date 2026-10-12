@@ -118,8 +118,8 @@ Tomate, kräftig gesalzen.
 Ofen auf 180 °C Ober-/Unterhitze (Umluft 160 °C). Auberginen dicht
 nebeneinander in den Bräter, Taschen aufklappen und großzügig füllen (ruhig
 überhäufen). Restliche 100 g Tomaten in Scheiben obendrauf, dazu je ein
-Streifen der übrigen Spitzpaprika (klassische Optik). Restliches Olivenöl
-(\~5 EL / 75 ml) über die Auberginen gießen. Dann die Schmorflüssigkeit
+Streifen der übrigen Spitzpaprika (klassische Optik). Die restlichen
+5 EL Olivenöl (75 ml) über die Auberginen gießen. Dann die Schmorflüssigkeit
 anrühren — 150 ml Wasser + Saft ½ Zitrone + Prise Zucker + kleine Prise Salz
 im Messbecher, Salz und Zucker darin auflösen — und **am Rand des Bräters
 angießen, nicht über die Füllung** (spült sie sonst aus den Taschen). Die

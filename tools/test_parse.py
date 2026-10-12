@@ -334,6 +334,30 @@ t("**Label:** nach Leerzeile bleibt Überleitung; lange Überleitung nach einem 
     assert_(not any("Kochtag" in m and "Zitat" in m for m in nolint.msgs), nolint.msgs)))
 t("Zeitplan-Spalten chronologisch, auch wenn die Tabelle (Kochtag) gelesen wird, bevor die Bullets (Vorabend) es werden", lambda: (
     assert_([p["id"] for p in next(s for s in no["sections"] if s["type"] == "schedule")["schedule"]["phases"]] == ["vorabend", "kochtag"]),))
+MIX = """# Test (2 Portionen)
+
+## Einkaufsliste
+
+### Aldi / REWE
+- [ ] Fischsauce
+- [ ] Zucker
+- [ ] Knoblauch
+
+## Zubereitung
+
+**1. Marinade (5 Min.)**
+4 EL Fischsauce, 3 EL Zucker und 4 Knoblauchzehen verrühren.
+
+**2. Sauce (5 Min.)**
+120 ml Fischsauce, 80–100 g Zucker und 3 Zehen Knoblauch erwärmen.
+"""
+from tools.recipes.shopping import derive  # noqa: E402
+mx, _ = parse_recipe(MIX, "test/mischung")
+mq = {q["ingredient"]: q["total"] for q in derive(mx)["quantities"]}
+t("Mengen-Summe: EL + ml → ml, Zehen = Stück, EL + g bleibt als plus stehen statt verworfen", lambda: (
+    assert_(mq["fischsauce"]["value"] == 180 and mq["fischsauce"]["unit"] == "ml", mq["fischsauce"]),
+    assert_(mq["knoblauch"]["value"] == 7, mq["knoblauch"]),
+    assert_(mq["zucker"]["text"] == "80–100 g + 3 EL", mq["zucker"])))
 print(f"{n} Tests ok")
 if lint.msgs or mlint.msgs:
     print("Lint (Gericht):", *lint.msgs, sep="\n  ") if lint.msgs else None

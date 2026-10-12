@@ -1584,7 +1584,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:20Z",
+    "generatedAt": "2026-10-12T15:17:54Z",
     "sourceHash": "5faeef8bab15106e",
     "quantities": [
       {
@@ -1692,15 +1692,25 @@
       {
         "ingredient": "zitronen",
         "total": {
-          "text": "4 EL (+ TL ungemischt)",
+          "text": "4 EL + 1 TL",
           "value": 4.0,
           "max": 4.0,
           "unit": "EL",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
           "hummus": "2 EL Zitronensaft",
-          "moutabal": "2 EL Zitronensaft"
+          "moutabal": "2 EL Zitronensaft",
+          "muhammara": "1 TL Zitronensaft"
         },
         "unitMixed": true
       },
@@ -2059,13 +2069,22 @@
             "ingredient": "zitronen",
             "name": "Zitronen",
             "need": {
-              "text": "4 EL (+ TL ungemischt)",
+              "text": "4 EL + 1 TL",
               "value": 4.0,
               "max": 4.0,
               "unit": "EL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "4 EL",
+            "display": "4 EL + 1 TL",
             "inStock": false,
             "buy": {
               "text": "4"

@@ -196,7 +196,7 @@ function shoppingHtml() {
     html += `<ul class="shop">` + g.items.map((it) => {
       const have = it.inStock || state.shop[it.ingredient];
       const need = f === 1 ? it.display : fmtAmount(scaleAmount(it.need, f, ingById[it.ingredient]));
-      const note = it.note ? ` <span class="fine">${mdInline(it.note.replace(/^\*\(?|\)?\*$/g, ""))}</span>` : "";
+      const note = it.note ? ` <span class="fine">(${mdInline(it.note.replace(/^\*\(?|\)?\*$/g, ""))})</span>` : "";
       const crs = (ingById[it.ingredient]?.courses || []).map((c) => c.replace("gang-", "G")).join("+");
       return `<li class="${have ? "have" : ""}"><input type="checkbox" class="chk" data-shop="${it.ingredient}" ${have ? "checked" : ""}>
         <span>${it.optional ? "Optional: " : ""}${esc(it.buy?.text || need || "")} ${esc(it.name)}${needNote(it.buy?.text, need)}${crs ? ` <span class="fine">(${crs})</span>` : ""}${note}</span></li>`;

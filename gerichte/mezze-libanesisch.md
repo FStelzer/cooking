@@ -83,7 +83,7 @@ Vegetarischer Mezze-Abend, bewusst als **eigenständige Richtung** gebaut und ni
 ### Vorrat prüfen
 
 - [ ] Kreuzkümmel, gemahlen
-- [ ] Gutes Olivenöl *(Gesamtverbrauch \~150 ml!)*
+- [ ] Gutes Olivenöl *(Gesamtverbrauch \~220 ml!)*
 - [ ] Zucker
 - [ ] Salz
 - [ ] Pfeffer
@@ -312,7 +312,7 @@ Die Klassiker-Falle in diesem Repo — deshalb hier explizit summiert:
 | **Tahina** | 140 g | 60 g | — | — | — | **\~200 g** → großes Glas (≥300 g) |
 | **Zitronensaft** | 2–3 EL | 2 EL | 1 TL | 2 EL | Spalten zum Servieren | **\~8 EL ≈ 3 Zitronen** → 4 kaufen |
 | **Knoblauch** | 1–2 Zehen | 1 Zehe | 1 Zehe | — | — | **3–4 Zehen** (bewusst wenig — s. Kinder-Anpassung) |
-| **Olivenöl** | 2 EL obenauf | 1–2 EL obenauf | 3 EL | 2 EL Teig + 2 EL Füllung | 2 EL Labneh + 2 EL Brotchips | **\~150 ml** |
+| **Olivenöl** | 2 EL obenauf | 1–2 EL obenauf | 3 EL | 2 EL Teig + 2 EL Füllung | 2 EL Labneh + 2 EL Brotchips | **\~220 ml** |
 | **Mehl** | — | — | — | 300 g | 300 g (Sambousek) | **600 g** |
 | **Ei** | — | — | — | Eigelb (Streiche) | Eiweiß (Käsefüllung) | **1 Ei, beide Hälften genutzt** |
 | **Natron** | ¾ TL (Einweichen) + ½ TL (Kochen) | — | — | — | — | **1¼ TL** |

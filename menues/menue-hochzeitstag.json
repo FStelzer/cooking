@@ -2934,7 +2934,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:20Z",
+    "generatedAt": "2026-10-12T15:17:54Z",
     "sourceHash": "9ba2c5e8bfff7960",
     "quantities": [
       {
@@ -3222,16 +3222,26 @@
       {
         "ingredient": "butter",
         "total": {
-          "text": "260 g (+ EL ungemischt)",
+          "text": "260 g + 1 EL",
           "value": 260.0,
           "max": 260.0,
           "unit": "g",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
           "blumenkohlpueree": "60g Butter",
           "zitronen-haselnussbutter": "100g Butter",
           "glasierte-karotten": "40g Butter",
+          "sauce-basis": "1 EL Butter",
           "kirsch-jus": "30g kalte Butter",
           "salzkaramell": "30g Butter"
         },
@@ -3337,21 +3347,33 @@
       {
         "ingredient": "zucker",
         "total": {
-          "text": "1 EL (+ g ungemischt)",
-          "value": 1.0,
-          "max": 1.0,
-          "unit": "EL",
-          "approx": false
+          "text": "250 g + 1 EL",
+          "value": 250.0,
+          "max": 250.0,
+          "unit": "g",
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "glasierte-karotten": "1 EL Zucker"
+          "glasierte-karotten": "1 EL Zucker",
+          "salzkaramell": "120g Zucker",
+          "parfait": "80g Zucker",
+          "birnen-kompott": "50g Zucker"
         },
         "perCourse": {
-          "gang-3": {
-            "text": "1 EL",
-            "value": 1.0,
-            "max": 1.0,
-            "unit": "EL"
+          "gang-4": {
+            "text": "250 g",
+            "value": 250.0,
+            "max": 250.0,
+            "unit": "g"
           }
         },
         "unitMixed": true
@@ -3538,15 +3560,16 @@
       {
         "ingredient": "wasser",
         "total": {
-          "text": "750 ml (+ EL ungemischt)",
-          "value": 750.0,
-          "max": 750.0,
+          "text": "795 ml",
+          "value": 795.0,
+          "max": 795.0,
           "unit": "ml",
           "approx": false
         },
         "perTask": {
           "consomme": "600ml kaltem Wasser",
-          "glasierte-karotten": "150ml Wasser"
+          "glasierte-karotten": "150ml Wasser",
+          "birnen-kompott": "3 EL Wasser"
         },
         "perCourse": {
           "gang-1": {
@@ -3560,9 +3583,14 @@
             "value": 150.0,
             "max": 150.0,
             "unit": "ml"
+          },
+          "gang-4": {
+            "text": "45 ml",
+            "value": 45.0,
+            "max": 45.0,
+            "unit": "ml"
           }
-        },
-        "unitMixed": true
+        }
       }
     ],
     "shopping": [
@@ -3820,13 +3848,22 @@
             "ingredient": "butter",
             "name": "Butter",
             "need": {
-              "text": "260 g (+ EL ungemischt)",
+              "text": "260 g + 1 EL",
               "value": 260.0,
               "max": 260.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "260 g",
+            "display": "260 g + 1 EL",
             "inStock": false,
             "buy": {
               "text": "400g"
@@ -3906,13 +3943,22 @@
             "ingredient": "zucker",
             "name": "Zucker, fein",
             "need": {
-              "text": "1 EL (+ g ungemischt)",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "EL",
-              "approx": false
+              "text": "250 g + 1 EL",
+              "value": 250.0,
+              "max": 250.0,
+              "unit": "g",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "1 EL",
+            "display": "250 g + 1 EL",
             "inStock": false,
             "buy": {
               "text": "1kg"
@@ -4114,13 +4160,13 @@
             "ingredient": "wasser",
             "name": "Wasser",
             "need": {
-              "text": "750 ml (+ EL ungemischt)",
-              "value": 750.0,
-              "max": 750.0,
+              "text": "795 ml",
+              "value": 795.0,
+              "max": 795.0,
               "unit": "ml",
               "approx": false
             },
-            "display": "750 ml",
+            "display": "795 ml",
             "inStock": false,
             "pantry": true
           }

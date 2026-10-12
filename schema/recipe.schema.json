@@ -654,6 +654,13 @@
           "type": "integer",
           "minimum": 1,
           "description": "Vervielfacher für „je …“-Angaben: Gesamt = value × times"
+        },
+        "plus": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/amount"
+          },
+          "description": "Nur in derived: weitere Teilmengen in nicht umrechenbarer Einheit (3 EL Zucker + 80–100 g); text enthält sie schon"
         }
       },
       "dependentRequired": {

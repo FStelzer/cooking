@@ -7,7 +7,7 @@
 // - Am HTTP-Cache des Browsers vorbei: Der Server schickt kein Cache-Control, der Browser cacht heuristisch. Ohne
 //   `reload` konnte ein neuer SW altes app.js mit neuem lib.js mischen (Seite hing auf „Lade Rezept …"), ohne
 //   `no-cache` kam ein frisch gebautes Rezept-JSON veraltet an.
-const VERSION = "km-36effbbac8";
+const VERSION = "km-b1094cad97";
 const DATA = "km-daten";
 const SHELL = ["index.html", "app.js", "lib.js", "style.css", "manifest.webmanifest",
                "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png", "icons/apple-touch-icon.png"];

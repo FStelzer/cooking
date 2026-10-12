@@ -2943,7 +2943,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:20Z",
+    "generatedAt": "2026-10-12T15:17:54Z",
     "sourceHash": "0c726485e1b5532d",
     "select": {
       "mehl": "weizen",
@@ -3060,15 +3060,25 @@
       {
         "ingredient": "wasser",
         "total": {
-          "text": "550 g (+ ml ungemischt)",
+          "text": "550 g + 50–80 ml",
           "value": 550.0,
           "max": 550.0,
           "unit": "g",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "50–80 ml",
+              "value": 50.0,
+              "max": 80.0,
+              "unit": "ml",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
           "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-          "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 60 g Wasser + 40 g Wasser"
+          "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 60 g Wasser + 40 g Wasser",
+          "backen-alle-wege": "50–80 ml heißes Wasser"
         },
         "unitMixed": true
       }
@@ -3213,13 +3223,22 @@
             "ingredient": "wasser",
             "name": "Wasser",
             "need": {
-              "text": "550 g (+ ml ungemischt)",
+              "text": "550 g + 50–80 ml",
               "value": 550.0,
               "max": 550.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
-            "display": "550 g",
+            "display": "550 g + 50–80 ml",
             "inStock": false,
             "pantry": true
           }
@@ -3367,15 +3386,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "530 g (+ ml ungemischt)",
+              "text": "530 g + 50–80 ml",
               "value": 530.0,
               "max": 530.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 60 g Wasser + 20 g Wasser"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 60 g Wasser + 20 g Wasser",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -3520,13 +3549,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "530 g (+ ml ungemischt)",
+                  "text": "530 g + 50–80 ml",
                   "value": 530.0,
                   "max": 530.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "530 g",
+                "display": "530 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -3674,15 +3712,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "550 g (+ ml ungemischt)",
+              "text": "550 g + 50–80 ml",
               "value": 550.0,
               "max": 550.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 60 g Wasser + 40 g Wasser"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 60 g Wasser + 40 g Wasser",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -3827,13 +3875,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "550 g (+ ml ungemischt)",
+                  "text": "550 g + 50–80 ml",
                   "value": 550.0,
                   "max": 550.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "550 g",
+                "display": "550 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -3981,15 +4038,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "530 g (+ ml ungemischt)",
+              "text": "530 g + 50–80 ml",
               "value": 530.0,
               "max": 530.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 60 g Wasser + 20 g Wasser"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 60 g Wasser + 20 g Wasser",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -4134,13 +4201,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "530 g (+ ml ungemischt)",
+                  "text": "530 g + 50–80 ml",
                   "value": 530.0,
                   "max": 530.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "530 g",
+                "display": "530 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -4288,15 +4364,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "550 g (+ ml ungemischt)",
+              "text": "550 g + 50–80 ml",
               "value": 550.0,
               "max": 550.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 60 g Wasser + 40 g Wasser"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 60 g Wasser + 40 g Wasser",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -4441,13 +4527,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "550 g (+ ml ungemischt)",
+                  "text": "550 g + 50–80 ml",
                   "value": 550.0,
                   "max": 550.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "550 g",
+                "display": "550 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -4595,15 +4690,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "530 g (+ ml ungemischt)",
+              "text": "530 g + 50–80 ml",
               "value": 530.0,
               "max": 530.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 60 g Wasser + 20 g Wasser"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 60 g Wasser + 20 g Wasser",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -4748,13 +4853,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "530 g (+ ml ungemischt)",
+                  "text": "530 g + 50–80 ml",
                   "value": 530.0,
                   "max": 530.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "530 g",
+                "display": "530 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -4928,15 +5042,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "560 g (+ ml ungemischt)",
+              "text": "560 g + 50–80 ml",
               "value": 560.0,
               "max": 560.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 70 g + 40 g Wasser"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 70 g + 40 g Wasser",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -5113,13 +5237,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "560 g (+ ml ungemischt)",
+                  "text": "560 g + 50–80 ml",
                   "value": 560.0,
                   "max": 560.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "560 g",
+                "display": "560 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -5293,15 +5426,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "540 g (+ ml ungemischt)",
+              "text": "540 g + 50–80 ml",
               "value": 540.0,
               "max": 540.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 70 g + 20 g Wasser"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 70 g + 20 g Wasser",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -5478,13 +5621,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "540 g (+ ml ungemischt)",
+                  "text": "540 g + 50–80 ml",
                   "value": 540.0,
                   "max": 540.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "540 g",
+                "display": "540 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -5658,15 +5810,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "560 g (+ ml ungemischt)",
+              "text": "560 g + 50–80 ml",
               "value": 560.0,
               "max": 560.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 70 g + 40 g Wasser"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 70 g + 40 g Wasser",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -5843,13 +6005,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "560 g (+ ml ungemischt)",
+                  "text": "560 g + 50–80 ml",
                   "value": 560.0,
                   "max": 560.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "560 g",
+                "display": "560 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -6023,15 +6194,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "540 g (+ ml ungemischt)",
+              "text": "540 g + 50–80 ml",
               "value": 540.0,
               "max": 540.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 70 g + 20 g Wasser"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 70 g + 20 g Wasser",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -6208,13 +6389,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "540 g (+ ml ungemischt)",
+                  "text": "540 g + 50–80 ml",
                   "value": 540.0,
                   "max": 540.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "540 g",
+                "display": "540 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -6388,15 +6578,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "560 g (+ ml ungemischt)",
+              "text": "560 g + 50–80 ml",
               "value": 560.0,
               "max": 560.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 70 g + 40 g Wasser"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 70 g + 40 g Wasser",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -6573,13 +6773,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "560 g (+ ml ungemischt)",
+                  "text": "560 g + 50–80 ml",
                   "value": 560.0,
                   "max": 560.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "560 g",
+                "display": "560 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -6753,15 +6962,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "540 g (+ ml ungemischt)",
+              "text": "540 g + 50–80 ml",
               "value": 540.0,
               "max": 540.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 70 g + 20 g Wasser"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 70 g + 20 g Wasser",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -6938,13 +7157,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "540 g (+ ml ungemischt)",
+                  "text": "540 g + 50–80 ml",
                   "value": 540.0,
                   "max": 540.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "540 g",
+                "display": "540 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -7092,15 +7320,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "500 g (+ ml ungemischt)",
+              "text": "500 g + 50–80 ml",
               "value": 500.0,
               "max": 500.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 30 g + 20 g"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 30 g + 20 g",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -7245,13 +7483,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "500 g (+ ml ungemischt)",
+                  "text": "500 g + 50–80 ml",
                   "value": 500.0,
                   "max": 500.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "500 g",
+                "display": "500 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -7399,15 +7646,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "490 g (+ ml ungemischt)",
+              "text": "490 g + 50–80 ml",
               "value": 490.0,
               "max": 490.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 30 g + 10 g"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 30 g + 10 g",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -7552,13 +7809,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "490 g (+ ml ungemischt)",
+                  "text": "490 g + 50–80 ml",
                   "value": 490.0,
                   "max": 490.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "490 g",
+                "display": "490 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -7706,15 +7972,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "500 g (+ ml ungemischt)",
+              "text": "500 g + 50–80 ml",
               "value": 500.0,
               "max": 500.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 30 g + 20 g"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 30 g + 20 g",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -7859,13 +8135,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "500 g (+ ml ungemischt)",
+                  "text": "500 g + 50–80 ml",
                   "value": 500.0,
                   "max": 500.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "500 g",
+                "display": "500 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -8013,15 +8298,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "490 g (+ ml ungemischt)",
+              "text": "490 g + 50–80 ml",
               "value": 490.0,
               "max": 490.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 30 g + 10 g"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 30 g + 10 g",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -8166,13 +8461,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "490 g (+ ml ungemischt)",
+                  "text": "490 g + 50–80 ml",
                   "value": 490.0,
                   "max": 490.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "490 g",
+                "display": "490 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -8320,15 +8624,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "500 g (+ ml ungemischt)",
+              "text": "500 g + 50–80 ml",
               "value": 500.0,
               "max": 500.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 30 g + 20 g"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 30 g + 20 g",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -8473,13 +8787,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "500 g (+ ml ungemischt)",
+                  "text": "500 g + 50–80 ml",
                   "value": 500.0,
                   "max": 500.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "500 g",
+                "display": "500 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -8627,15 +8950,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "490 g (+ ml ungemischt)",
+              "text": "490 g + 50–80 ml",
               "value": 490.0,
               "max": 490.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 30 g + 10 g"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 30 g + 10 g",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -8780,13 +9113,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "490 g (+ ml ungemischt)",
+                  "text": "490 g + 50–80 ml",
                   "value": 490.0,
                   "max": 490.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "490 g",
+                "display": "490 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -8947,15 +9289,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "535 g (+ ml ungemischt)",
+              "text": "535 g + 50–80 ml",
               "value": 535.0,
               "max": 535.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 45 g + 40 g Wasser"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 45 g + 40 g Wasser",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -9117,13 +9469,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "535 g (+ ml ungemischt)",
+                  "text": "535 g + 50–80 ml",
                   "value": 535.0,
                   "max": 535.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "535 g",
+                "display": "535 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -9284,15 +9645,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "515 g (+ ml ungemischt)",
+              "text": "515 g + 50–80 ml",
               "value": 515.0,
               "max": 515.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 45 g + 20 g Wasser"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 45 g + 20 g Wasser",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -9454,13 +9825,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "515 g (+ ml ungemischt)",
+                  "text": "515 g + 50–80 ml",
                   "value": 515.0,
                   "max": 515.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "515 g",
+                "display": "515 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -9621,15 +10001,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "535 g (+ ml ungemischt)",
+              "text": "535 g + 50–80 ml",
               "value": 535.0,
               "max": 535.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 45 g + 40 g Wasser"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 45 g + 40 g Wasser",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -9791,13 +10181,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "535 g (+ ml ungemischt)",
+                  "text": "535 g + 50–80 ml",
                   "value": 535.0,
                   "max": 535.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "535 g",
+                "display": "535 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -9958,15 +10357,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "515 g (+ ml ungemischt)",
+              "text": "515 g + 50–80 ml",
               "value": 515.0,
               "max": 515.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 45 g + 20 g Wasser"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 45 g + 20 g Wasser",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -10128,13 +10537,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "515 g (+ ml ungemischt)",
+                  "text": "515 g + 50–80 ml",
                   "value": 515.0,
                   "max": 515.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "515 g",
+                "display": "515 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -10295,15 +10713,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "535 g (+ ml ungemischt)",
+              "text": "535 g + 50–80 ml",
               "value": 535.0,
               "max": 535.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 45 g + 40 g Wasser"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 45 g + 40 g Wasser",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -10465,13 +10893,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "535 g (+ ml ungemischt)",
+                  "text": "535 g + 50–80 ml",
                   "value": 535.0,
                   "max": 535.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "535 g",
+                "display": "535 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }
@@ -10632,15 +11069,25 @@
           {
             "ingredient": "wasser",
             "total": {
-              "text": "515 g (+ ml ungemischt)",
+              "text": "515 g + 50–80 ml",
               "value": 515.0,
               "max": 515.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "50–80 ml",
+                  "value": 50.0,
+                  "max": 80.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "vorstufen-20-min": "150 g Wasser + 240 g Wasser",
-              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 45 g + 20 g Wasser"
+              "backtag-teig-3-std-davon-30-min-arbeit": "60 g Wasser + 45 g + 20 g Wasser",
+              "backen-alle-wege": "50–80 ml heißes Wasser"
             },
             "unitMixed": true
           }
@@ -10802,13 +11249,22 @@
                 "ingredient": "wasser",
                 "name": "Wasser",
                 "need": {
-                  "text": "515 g (+ ml ungemischt)",
+                  "text": "515 g + 50–80 ml",
                   "value": 515.0,
                   "max": 515.0,
                   "unit": "g",
-                  "approx": false
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "50–80 ml",
+                      "value": 50.0,
+                      "max": 80.0,
+                      "unit": "ml",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "515 g",
+                "display": "515 g + 50–80 ml",
                 "inStock": false,
                 "pantry": true
               }

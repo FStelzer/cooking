@@ -125,7 +125,7 @@ Beide Töpfe warm halten; Dal wird beim Stehen dicker — mit heißem Wasser wie
 
 **11. Verkohlen (30 Min.)**
 *jederzeit · Ofen 220 °C*
-2 Auberginen (\~900 g) mehrfach mit dem Messer einstechen, in 4 der Löcher je **1 Knoblauchzehe** stecken (4 Zehen gesamt), dünn mit Öl einreiben. **Bunsenbrenner:** rundum abflämmen, bis die Haut überall schwarz und blasig ist. Dann **220 °C Ofen 20–25 Min.**, bis sie komplett kollabieren (der Brenner allein gart nicht durch). **Gasgrill-Alternative:** direkt über hoher Flamme, Haube zu, 15–20 Min., alle 5 Min. wenden, bis sie zusammenfallen.
+2 Auberginen (\~900 g) mehrfach mit dem Messer einstechen, **4 Knoblauchzehen** in 4 der Löcher stecken (je eine), dünn mit Öl einreiben. **Bunsenbrenner:** rundum abflämmen, bis die Haut überall schwarz und blasig ist. Dann **220 °C Ofen 20–25 Min.**, bis sie komplett kollabieren (der Brenner allein gart nicht durch). **Gasgrill-Alternative:** direkt über hoher Flamme, Haube zu, 15–20 Min., alle 5 Min. wenden, bis sie zusammenfallen.
 
 **12. Schälen (15 Min.)**
 10 Min. abgedeckt dämpfen lassen, dann Haut abziehen, verkohlte Stücke aussortieren, Fleisch mit den weichen Knoblauchzehen grob hacken (nicht pürieren — Bharta hat Textur). Kurz im Sieb abtropfen lassen.

@@ -24,7 +24,9 @@ GROUP_ORDER = ["Obst & Gemüse", "Fleisch & Fisch", "Milchprodukte & Eier", "Tro
                "Würzmittel & Gewürze", "Getränke", "Tiefkühl", "Sonstiges"]
 STORE_RANK = {s: i for i, s in enumerate(STORE_ORDER)}
 GROUP_RANK = {g: i for i, g in enumerate(GROUP_ORDER)}
-TO_BASE = {"kg": ("g", 1000), "l": ("ml", 1000)}
+TO_BASE = {"kg": ("g", 1000), "l": ("ml", 1000), "Zehe": (COUNT_UNIT, 1), "Zehen": (COUNT_UNIT, 1)}  # Knoblauch: „4 Knoblauchzehen“ + „3 Zehen“
+SPOON_TO_ML = {"EL": 15, "TL": 5}
+PURE_QTY = re.compile(rf"\s*(?:ca\.\s?|\\?~)?{NUMW}(?:\s?[–-]\s?{NUMW})?\s?(?:EL|TL)\s*")  # nur Löffel-Dosierungen; „\~700 g“ an „2 Auberginen“ ist Größenangabe und bleibt
 
 
 def _base(value: float | None, unit: str | None, hint: dict | None = None) -> tuple[float | None, str]:
@@ -74,8 +76,8 @@ def derive(recipe: dict) -> dict:
 
 def _derive(recipe: dict) -> dict:
     ings = {i["id"]: i for i in recipe.get("ingredients", [])}
-    acc = {i: {"value": None, "max": None, "unit": None, "approx": False, "mixed": set(), "unitless": [], "perTask": {}, "perCourse": {}}
-           for i in ings}
+    # pro Zutat Teilsummen je Einheit (Reihenfolge = erstes Auftreten); gemischt wird erst danach (_merge_units)
+    acc = {i: {"buckets": {}, "unitless": [], "perTask": {}, "perCourse": {}} for i in ings}
     for course, task in iter_tasks_with_course(recipe):
       for step in task["steps"]:
         for si in step["ingredients"]:
@@ -90,32 +92,34 @@ def _derive(recipe: dict) -> dict:
             hint, n = ings[si["ref"]].get("unitHint"), am.get("times", 1)
             v, u = _base(am["value"] * n, am.get("unit"), hint)
             mx, _ = _base(am.get("max", am["value"]) * n, am.get("unit"), hint)
-            if a["value"] is None:
-                a["unit"] = u
-            elif a["unit"] != u:
-                a["mixed"].add(u)
-                continue
-            a["value"] = (a["value"] or 0) + v
-            a["max"] = (a["max"] or 0) + mx
-            a["approx"] = a["approx"] or bool(am.get("approx"))
+            b = a["buckets"].setdefault(u, {"value": 0, "max": 0, "approx": False, "course": {}})
+            b["value"] += v; b["max"] += mx
+            b["approx"] = b["approx"] or bool(am.get("approx"))
             a["perTask"].setdefault(task["id"], []).append(am["text"] + (f" ×{n}" if n > 1 else ""))
             if course:
-                pc = a["perCourse"].setdefault(course, [0, 0])
+                pc = b["course"].setdefault(course, [0, 0])
                 pc[0] += v; pc[1] += mx
 
     quantities, groups = {}, {}
     for iid, a in acc.items():
-        total = {"text": fmt_amount(a["value"], a["max"], a["unit"], a["approx"])}
-        if a["value"] is not None:
-            total.update(value=a["value"], max=a["max"], unit=a["unit"], approx=a["approx"])
+        parts = _merge_units(a["buckets"], COUNT_UNIT)
+        if parts:
+            u, b = parts[0]
+            total = {"text": fmt_amount(b["value"], b["max"], u, b["approx"]), "value": b["value"], "max": b["max"], "unit": u, "approx": b["approx"]}
+            if len(parts) > 1:  # nicht umrechenbar (EL Zucker + g Zucker): zusätzlich ausweisen, nie verwerfen
+                total["plus"] = [{"text": fmt_amount(x["value"], x["max"], xu, x["approx"]), "value": x["value"], "max": x["max"], "unit": xu, "approx": x["approx"]}
+                                 for xu, x in parts[1:]]
+                total["text"] += "".join(" + " + x["text"] for x in total["plus"])
+        else:
+            total = {"text": fmt_amount(None, None, None, False)}
         q = {"ingredient": iid, "total": total, "perTask": {t: " + ".join(xs) for t, xs in a["perTask"].items()}}
-        if a["perCourse"]:
-            q["perCourse"] = {c: {"text": fmt_amount(lo, hi, a["unit"]), "value": lo, "max": hi, "unit": a["unit"]} for c, (lo, hi) in a["perCourse"].items()}
+        if parts and parts[0][1]["course"]:
+            u = parts[0][0]
+            q["perCourse"] = {c: {"text": fmt_amount(lo, hi, u), "value": lo, "max": hi, "unit": u} for c, (lo, hi) in parts[0][1]["course"].items()}
         if a["unitless"]:
             q["unitless"] = a["unitless"]
-        if a["mixed"]:
+        if len(parts) > 1:
             q["unitMixed"] = True
-            total["text"] += " (+ " + ", ".join(sorted(a["mixed"])) + " ungemischt)"
         quantities[iid] = q
         ing = ings[iid]
         item = {"ingredient": iid, "name": ing["name"], "need": total,
@@ -123,12 +127,29 @@ def _derive(recipe: dict) -> dict:
         for k in ("buy", "priority", "optional", "pantry", "note"):
             if ing.get(k) is not None:
                 item[k] = ing[k]
+        if PURE_QTY.fullmatch(item.get("note", "")):  # „2–3 EL“: alte Handrechnung, die berechnete Menge ersetzt sie
+            del item["note"]
         groups.setdefault((ing["store"], ing.get("group")), []).append(item)
 
     return {
         "quantities": list(quantities.values()),
         "shopping": [{"store": s, "group": g, "items": groups[(s, g)]} for s, g in sorted(groups, key=_group_key)],
     }
+
+
+def _merge_units(buckets: dict, prefer: str | None = None) -> list[tuple[str, dict]]:
+    """Teilsummen je Einheit zusammenführen: Löffel → ml, sobald ml dabei ist (4 EL + 120 ml = 180 ml);
+    Rest bleibt getrennt."""
+    bs = {u: dict(b, course=dict(b["course"])) for u, b in buckets.items()}
+    if "ml" in bs:
+        for sp, f in SPOON_TO_ML.items():
+            if sp in bs:
+                b, ml = bs.pop(sp), bs["ml"]
+                ml["value"] += b["value"] * f; ml["max"] += b["max"] * f; ml["approx"] |= b["approx"]
+                for c, (lo, hi) in b["course"].items():
+                    pc = ml["course"].setdefault(c, [0, 0]); pc[0] += lo * f; pc[1] += hi * f
+    # Stück zuerst (Kaufeinheit bei Obst/Gemüse: „8 + 1 EL“ Knoblauch), sonst größte Teilmenge zuerst (5 EL + 1 TL)
+    return sorted(bs.items(), key=lambda kv: (kv[0] != prefer, -kv[1]["value"] * SPOON_TO_ML.get(kv[0], 1)))
 
 
 def _item_line(it: dict) -> str:

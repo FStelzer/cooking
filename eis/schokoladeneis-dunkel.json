@@ -518,7 +518,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:20Z",
+    "generatedAt": "2026-10-12T15:17:54Z",
     "sourceHash": "a3364c05a8229423",
     "quantities": [
       {
@@ -764,8 +764,7 @@
             },
             "display": "¼ TL",
             "inStock": false,
-            "pantry": true,
-            "note": "¼ TL"
+            "pantry": true
           },
           {
             "ingredient": "wasser",

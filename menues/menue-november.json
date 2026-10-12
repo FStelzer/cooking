@@ -4114,7 +4114,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:20Z",
+    "generatedAt": "2026-10-12T15:17:54Z",
     "sourceHash": "e411f0597e668957",
     "quantities": [
       {
@@ -4261,21 +4261,32 @@
       {
         "ingredient": "limetten",
         "total": {
-          "text": "10 ml (+ Stück ungemischt)",
-          "value": 10.0,
-          "max": 10.0,
-          "unit": "ml",
-          "approx": false
+          "text": "1½ + 10 ml",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "Stück",
+          "approx": false,
+          "plus": [
+            {
+              "text": "10 ml",
+              "value": 10.0,
+              "max": 10.0,
+              "unit": "ml",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "tomatenwasser-wuerzen-und-anrichten": "10 ml Limettensaft"
+          "tomatenwasser-wuerzen-und-anrichten": "10 ml Limettensaft",
+          "mango-gel": "½ Limette",
+          "verjus-limetten-beurre-blanc": "1 Limette"
         },
         "perCourse": {
-          "gang-1": {
-            "text": "10 ml",
-            "value": 10.0,
-            "max": 10.0,
-            "unit": "ml"
+          "gang-2": {
+            "text": "1½",
+            "value": 1.5,
+            "max": 1.5,
+            "unit": "Stück"
           }
         },
         "unitMixed": true
@@ -4283,14 +4294,24 @@
       {
         "ingredient": "zitronen",
         "total": {
-          "text": "½ (+ TL ungemischt)",
+          "text": "½ + 1 TL",
           "value": 0.5,
           "max": 0.5,
           "unit": "Stück",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "lammschulter-und-jus": "½ Zitrone"
+          "lammschulter-und-jus": "½ Zitrone",
+          "selleriepueree": "1 TL Zitronensaft"
         },
         "perCourse": {
           "gang-3": {
@@ -4615,24 +4636,30 @@
       {
         "ingredient": "sahne",
         "total": {
-          "text": "2 EL (+ ml ungemischt)",
-          "value": 2.0,
-          "max": 2.0,
-          "unit": "EL",
+          "text": "330 ml",
+          "value": 330.0,
+          "max": 330.0,
+          "unit": "ml",
           "approx": false
         },
         "perTask": {
-          "verjus-limetten-beurre-blanc": "2 EL Sahne"
+          "verjus-limetten-beurre-blanc": "2 EL Sahne",
+          "parfait": "300 ml Sahne"
         },
         "perCourse": {
+          "gang-4": {
+            "text": "300 ml",
+            "value": 300.0,
+            "max": 300.0,
+            "unit": "ml"
+          },
           "gang-2": {
-            "text": "2 EL",
-            "value": 2.0,
-            "max": 2.0,
-            "unit": "EL"
+            "text": "30 ml",
+            "value": 30.0,
+            "max": 30.0,
+            "unit": "ml"
           }
-        },
-        "unitMixed": true
+        }
       },
       {
         "ingredient": "vollmilch",
@@ -5037,21 +5064,32 @@
       {
         "ingredient": "zucker",
         "total": {
-          "text": "1–2 EL (+ g, ml ungemischt)",
-          "value": 1.0,
-          "max": 2.0,
-          "unit": "EL",
-          "approx": false
+          "text": "70 g + 27–42 ml",
+          "value": 70.0,
+          "max": 70.0,
+          "unit": "g",
+          "approx": false,
+          "plus": [
+            {
+              "text": "27–42 ml",
+              "value": 27.0,
+              "max": 42.0,
+              "unit": "ml",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "mango-gel": "1–2 EL Zucker"
+          "mango-gel": "1–2 EL Zucker",
+          "parfait": "70 g Zucker",
+          "dessert-service": "10 ml Zuckersirup + 2 ml Zuckersirup"
         },
         "perCourse": {
-          "gang-2": {
-            "text": "1–2 EL",
-            "value": 1.0,
-            "max": 2.0,
-            "unit": "EL"
+          "gang-4": {
+            "text": "70 g",
+            "value": 70.0,
+            "max": 70.0,
+            "unit": "g"
           }
         },
         "unitMixed": true
@@ -5165,15 +5203,38 @@
       {
         "ingredient": "salz",
         "total": {
-          "text": "21 g (+ Prise, TL ungemischt)",
+          "text": "21 g + 3–3½ TL + 5 Prise",
           "value": 21.0,
           "max": 21.0,
           "unit": "g",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "3–3½ TL",
+              "value": 3.0,
+              "max": 3.5,
+              "unit": "TL",
+              "approx": false
+            },
+            {
+              "text": "5 Prise",
+              "value": 5.0,
+              "max": 5.0,
+              "unit": "Prise",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
           "tomatenwasser-basis": "7 g Salz",
+          "tomatenwasser-wuerzen-und-anrichten": "1 Prise Salz",
+          "mango-gel": "1 Prise Salz",
+          "walnusscrumble": "1 Prise Salz",
+          "lammschulter-und-jus": "2,5–3 TL Salz",
+          "selleriepueree": "½ TL Salz",
           "rosenkohl-zweierlei-und-sellerie-chips": "12 g Salz/L",
+          "lammbloecke-und-service": "1 Prise Salz",
+          "kaffee-crumble": "1 Prise Salz",
           "parfait": "2 g Salz"
         },
         "perCourse": {
@@ -5222,14 +5283,24 @@
       {
         "ingredient": "wasser",
         "total": {
-          "text": "2 EL (+ g ungemischt)",
+          "text": "2 EL + 12 g",
           "value": 2.0,
           "max": 2.0,
           "unit": "EL",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "12 g",
+              "value": 12.0,
+              "max": 12.0,
+              "unit": "g",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "mango-gel": "2 EL Wasser"
+          "mango-gel": "2 EL Wasser",
+          "rosenkohl-zweierlei-und-sellerie-chips": "12 g"
         },
         "perCourse": {
           "gang-2": {
@@ -5391,13 +5462,22 @@
             "ingredient": "limetten",
             "name": "Limetten",
             "need": {
-              "text": "10 ml (+ Stück ungemischt)",
-              "value": 10.0,
-              "max": 10.0,
-              "unit": "ml",
-              "approx": false
+              "text": "1½ + 10 ml",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "10 ml",
+                  "value": 10.0,
+                  "max": 10.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
-            "display": "10 ml",
+            "display": "1½ + 10 ml",
             "inStock": false,
             "buy": {
               "text": "4 Stück"
@@ -5407,13 +5487,22 @@
             "ingredient": "zitronen",
             "name": "Zitronen",
             "need": {
-              "text": "½ (+ TL ungemischt)",
+              "text": "½ + 1 TL",
               "value": 0.5,
               "max": 0.5,
               "unit": "Stück",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "½",
+            "display": "½ + 1 TL",
             "inStock": false,
             "buy": {
               "text": "2 Stück"
@@ -5649,13 +5738,13 @@
             "ingredient": "sahne",
             "name": "Sahne",
             "need": {
-              "text": "2 EL (+ ml ungemischt)",
-              "value": 2.0,
-              "max": 2.0,
-              "unit": "EL",
+              "text": "330 ml",
+              "value": 330.0,
+              "max": 330.0,
+              "unit": "ml",
               "approx": false
             },
-            "display": "2 EL",
+            "display": "330 ml",
             "inStock": false,
             "buy": {
               "text": "500 ml"
@@ -5993,13 +6082,22 @@
             "ingredient": "zucker",
             "name": "Zucker",
             "need": {
-              "text": "1–2 EL (+ g, ml ungemischt)",
-              "value": 1.0,
-              "max": 2.0,
-              "unit": "EL",
-              "approx": false
+              "text": "70 g + 27–42 ml",
+              "value": 70.0,
+              "max": 70.0,
+              "unit": "g",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "27–42 ml",
+                  "value": 27.0,
+                  "max": 42.0,
+                  "unit": "ml",
+                  "approx": false
+                }
+              ]
             },
-            "display": "1–2 EL",
+            "display": "70 g + 27–42 ml",
             "inStock": false,
             "pantry": true
           },
@@ -6077,13 +6175,29 @@
             "ingredient": "salz",
             "name": "Salz",
             "need": {
-              "text": "21 g (+ Prise, TL ungemischt)",
+              "text": "21 g + 3–3½ TL + 5 Prise",
               "value": 21.0,
               "max": 21.0,
               "unit": "g",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "3–3½ TL",
+                  "value": 3.0,
+                  "max": 3.5,
+                  "unit": "TL",
+                  "approx": false
+                },
+                {
+                  "text": "5 Prise",
+                  "value": 5.0,
+                  "max": 5.0,
+                  "unit": "Prise",
+                  "approx": false
+                }
+              ]
             },
-            "display": "21 g",
+            "display": "21 g + 3–3½ TL + 5 Prise",
             "inStock": false,
             "pantry": true
           },
@@ -6105,13 +6219,22 @@
             "ingredient": "wasser",
             "name": "Wasser",
             "need": {
-              "text": "2 EL (+ g ungemischt)",
+              "text": "2 EL + 12 g",
               "value": 2.0,
               "max": 2.0,
               "unit": "EL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "12 g",
+                  "value": 12.0,
+                  "max": 12.0,
+                  "unit": "g",
+                  "approx": false
+                }
+              ]
             },
-            "display": "2 EL",
+            "display": "2 EL + 12 g",
             "inStock": false,
             "pantry": true
           }

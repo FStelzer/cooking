@@ -1251,7 +1251,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:20Z",
+    "generatedAt": "2026-10-12T15:17:54Z",
     "sourceHash": "cbd2968a346e9441",
     "quantities": [
       {
@@ -1612,16 +1612,16 @@
       {
         "ingredient": "wasser",
         "total": {
-          "text": "5 EL (+ ml ungemischt)",
-          "value": 5.0,
-          "max": 5.0,
-          "unit": "EL",
+          "text": "175 ml",
+          "value": 175.0,
+          "max": 175.0,
+          "unit": "ml",
           "approx": false
         },
         "perTask": {
-          "paneer": "5 EL Wasser"
-        },
-        "unitMixed": true
+          "paneer": "5 EL Wasser",
+          "saucen": "100 ml heißem Wasser"
+        }
       }
     ],
     "shopping": [
@@ -2103,13 +2103,13 @@
             "ingredient": "wasser",
             "name": "Wasser",
             "need": {
-              "text": "5 EL (+ ml ungemischt)",
-              "value": 5.0,
-              "max": 5.0,
-              "unit": "EL",
+              "text": "175 ml",
+              "value": 175.0,
+              "max": 175.0,
+              "unit": "ml",
               "approx": false
             },
-            "display": "5 EL",
+            "display": "175 ml",
             "inStock": false,
             "pantry": true
           }

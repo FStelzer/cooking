@@ -478,7 +478,7 @@
                 "source": "45–60 Min."
               },
               "attention": "passive",
-              "text": "Ofen auf 180 °C Ober-/Unterhitze (Umluft 160 °C). Auberginen dicht nebeneinander in den Bräter, Taschen aufklappen und großzügig füllen (ruhig überhäufen). Restliche 100 g Tomaten in Scheiben obendrauf, dazu je ein Streifen der übrigen Spitzpaprika (klassische Optik). Restliches Olivenöl (\\~5 EL / 75 ml) über die Auberginen gießen. Dann die Schmorflüssigkeit anrühren — 150 ml Wasser + Saft ½ Zitrone + Prise Zucker + kleine Prise Salz im Messbecher, Salz und Zucker darin auflösen — und **am Rand des Bräters angießen, nicht über die Füllung** (spült sie sonst aus den Taschen). Die 150 ml kochen stark ein, deshalb hier sparsam salzen und später über den Sud korrigieren. Deckel/Folie drauf, 45–60 Min. schmoren, letzte 10–15 Min. offen — dabei kurz prüfen: Der Boden darf nie trocken laufen, notfalls einen Schluck Wasser nach. *Ziel: Auberginen konfiert-weich, unten eine glänzende, leicht gebundene Öl-Tomaten-Sauce. Es soll leise blubbern — niedrig und lang schlägt heiß und kurz.*",
+              "text": "Ofen auf 180 °C Ober-/Unterhitze (Umluft 160 °C). Auberginen dicht nebeneinander in den Bräter, Taschen aufklappen und großzügig füllen (ruhig überhäufen). Restliche 100 g Tomaten in Scheiben obendrauf, dazu je ein Streifen der übrigen Spitzpaprika (klassische Optik). Die restlichen 5 EL Olivenöl (75 ml) über die Auberginen gießen. Dann die Schmorflüssigkeit anrühren — 150 ml Wasser + Saft ½ Zitrone + Prise Zucker + kleine Prise Salz im Messbecher, Salz und Zucker darin auflösen — und **am Rand des Bräters angießen, nicht über die Füllung** (spült sie sonst aus den Taschen). Die 150 ml kochen stark ein, deshalb hier sparsam salzen und später über den Sud korrigieren. Deckel/Folie drauf, 45–60 Min. schmoren, letzte 10–15 Min. offen — dabei kurz prüfen: Der Boden darf nie trocken laufen, notfalls einen Schluck Wasser nach. *Ziel: Auberginen konfiert-weich, unten eine glänzende, leicht gebundene Öl-Tomaten-Sauce. Es soll leise blubbern — niedrig und lang schlägt heiß und kurz.*",
               "action": "Ofen auf 180 °C Ober-/Unterhitze (Umluft 160 °C).",
               "limits": [
                 "am Rand des Bräters angießen, nicht über die Füllung"
@@ -524,6 +524,14 @@
                   }
                 },
                 {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "5 EL Olivenöl",
+                    "value": 5.0,
+                    "unit": "EL"
+                  }
+                },
+                {
                   "ref": "wasser",
                   "amount": {
                     "text": "150 ml Wasser",
@@ -538,15 +546,6 @@
                     "value": 0.5,
                     "unit": "Stück"
                   }
-                },
-                {
-                  "ref": "olivenoel",
-                  "amount": {
-                    "text": "5 EL",
-                    "value": 5.0,
-                    "unit": "EL"
-                  },
-                  "reuse": true
                 }
               ],
               "meta": "*nach Rösten, Füllung · Ofen 180 °C*",
@@ -670,8 +669,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:20Z",
-    "sourceHash": "afbfb6238888415d",
+    "generatedAt": "2026-10-12T15:17:54Z",
+    "sourceHash": "199961bce2343a1d",
     "quantities": [
       {
         "ingredient": "auberginen",
@@ -807,14 +806,14 @@
       {
         "ingredient": "olivenoel",
         "total": {
-          "text": "7 EL",
-          "value": 7.0,
-          "max": 7.0,
+          "text": "12 EL",
+          "value": 12.0,
+          "max": 12.0,
           "unit": "EL",
           "approx": false
         },
         "perTask": {
-          "main": "3 EL Olivenöl + 4 EL Olivenöl"
+          "main": "3 EL Olivenöl + 4 EL Olivenöl + 5 EL Olivenöl"
         }
       },
       {
@@ -1095,13 +1094,13 @@
             "ingredient": "olivenoel",
             "name": "gutes Olivenöl",
             "need": {
-              "text": "7 EL",
-              "value": 7.0,
-              "max": 7.0,
+              "text": "12 EL",
+              "value": 12.0,
+              "max": 12.0,
               "unit": "EL",
               "approx": false
             },
-            "display": "7 EL",
+            "display": "12 EL",
             "inStock": false,
             "buy": {
               "text": "200 ml"

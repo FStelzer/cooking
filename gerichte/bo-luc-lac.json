@@ -972,7 +972,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:20Z",
+    "generatedAt": "2026-10-12T15:17:54Z",
     "sourceHash": "a80fff6dcb6b8ba2",
     "quantities": [
       {
@@ -1173,44 +1173,61 @@
       {
         "ingredient": "salz",
         "total": {
-          "text": "1¾ TL (+ Prise ungemischt)",
+          "text": "1¾ TL + 1 Prise",
           "value": 1.75,
           "max": 1.75,
           "unit": "TL",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "main": "¾ TL Salz + 1 TL Salz"
+          "main": "¾ TL Salz + 1 Prise Salz + 1 TL Salz"
         },
         "unitMixed": true
       },
       {
         "ingredient": "pfeffer",
         "total": {
-          "text": "1½ TL (+ Stück ungemischt)",
-          "value": 1.5,
-          "max": 1.5,
-          "unit": "TL",
-          "approx": false
+          "text": "3 + 1½ TL",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false,
+          "plus": [
+            {
+              "text": "1½ TL",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "main": "1 TL grob gemahlenem schwarzem Pfeffer + ½ TL grob gemahlenen Pfeffer"
+          "main": "1 TL grob gemahlenem schwarzem Pfeffer + 3 Umdrehungen Pfeffer + ½ TL grob gemahlenen Pfeffer"
         },
         "unitMixed": true
       },
       {
         "ingredient": "wasser",
         "total": {
-          "text": "4 EL (+ ml ungemischt)",
-          "value": 4.0,
-          "max": 4.0,
-          "unit": "EL",
+          "text": "90 ml",
+          "value": 90.0,
+          "max": 90.0,
+          "unit": "ml",
           "approx": false
         },
         "perTask": {
-          "main": "2 EL Wasser + 2 EL Wasser"
-        },
-        "unitMixed": true
+          "main": "2 EL Wasser + 2 EL Wasser + 30 ml Wasser"
+        }
       }
     ],
     "shopping": [
@@ -1476,20 +1493,28 @@
             },
             "display": "3 TL",
             "inStock": false,
-            "pantry": true,
-            "note": "3 TL"
+            "pantry": true
           },
           {
             "ingredient": "salz",
             "name": "Salz",
             "need": {
-              "text": "1¾ TL (+ Prise ungemischt)",
+              "text": "1¾ TL + 1 Prise",
               "value": 1.75,
               "max": 1.75,
               "unit": "TL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
+                  "approx": false
+                }
+              ]
             },
-            "display": "1¾ TL",
+            "display": "1¾ TL + 1 Prise",
             "inStock": false,
             "pantry": true
           },
@@ -1497,13 +1522,22 @@
             "ingredient": "pfeffer",
             "name": "Pfeffer, schwarz, aus der Mühle",
             "need": {
-              "text": "1½ TL (+ Stück ungemischt)",
-              "value": 1.5,
-              "max": 1.5,
-              "unit": "TL",
-              "approx": false
+              "text": "3 + 1½ TL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1½ TL",
+                  "value": 1.5,
+                  "max": 1.5,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "1½ TL",
+            "display": "3 + 1½ TL",
             "inStock": false,
             "pantry": true,
             "note": "grob"
@@ -1512,13 +1546,13 @@
             "ingredient": "wasser",
             "name": "Wasser",
             "need": {
-              "text": "4 EL (+ ml ungemischt)",
-              "value": 4.0,
-              "max": 4.0,
-              "unit": "EL",
+              "text": "90 ml",
+              "value": 90.0,
+              "max": 90.0,
+              "unit": "ml",
               "approx": false
             },
-            "display": "4 EL",
+            "display": "90 ml",
             "inStock": false,
             "pantry": true
           }

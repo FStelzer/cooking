@@ -684,7 +684,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:20Z",
+    "generatedAt": "2026-10-12T15:17:54Z",
     "sourceHash": "adc32a25123129af",
     "quantities": [
       {
@@ -827,16 +827,15 @@
       {
         "ingredient": "olivenoel",
         "total": {
-          "text": "50 ml (+ EL ungemischt)",
-          "value": 50.0,
-          "max": 50.0,
+          "text": "125 ml",
+          "value": 125.0,
+          "max": 125.0,
           "unit": "ml",
           "approx": false
         },
         "perTask": {
-          "main": "50 ml Olivenöl"
-        },
-        "unitMixed": true
+          "main": "50 ml Olivenöl + 2 EL Olivenöl + 3 EL Olivenöl"
+        }
       },
       {
         "ingredient": "rotweinessig",
@@ -1124,13 +1123,13 @@
             "ingredient": "olivenoel",
             "name": "gutes Olivenöl",
             "need": {
-              "text": "50 ml (+ EL ungemischt)",
-              "value": 50.0,
-              "max": 50.0,
+              "text": "125 ml",
+              "value": 125.0,
+              "max": 125.0,
               "unit": "ml",
               "approx": false
             },
-            "display": "50 ml",
+            "display": "125 ml",
             "inStock": false,
             "buy": {
               "text": "150 ml"

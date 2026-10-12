@@ -927,10 +927,10 @@
                 "typical": "PT30M",
                 "source": "30 Min."
               },
-              "text": "2 Auberginen (\\~900 g) mehrfach mit dem Messer einstechen, in 4 der Löcher je **1 Knoblauchzehe** stecken (4 Zehen gesamt), dünn mit Öl einreiben. **Bunsenbrenner:** rundum abflämmen, bis die Haut überall schwarz und blasig ist. Dann **220 °C Ofen 20–25 Min.**, bis sie komplett kollabieren (der Brenner allein gart nicht durch). **Gasgrill-Alternative:** direkt über hoher Flamme, Haube zu, 15–20 Min., alle 5 Min. wenden, bis sie zusammenfallen.",
-              "action": "2 Auberginen (\\~900 g) mehrfach mit dem Messer einstechen, in 4 der Löcher je **1 Knoblauchzehe** stecken (4 Zehen gesamt), dünn mit Öl einreiben.",
+              "text": "2 Auberginen (\\~900 g) mehrfach mit dem Messer einstechen, **4 Knoblauchzehen** in 4 der Löcher stecken (je eine), dünn mit Öl einreiben. **Bunsenbrenner:** rundum abflämmen, bis die Haut überall schwarz und blasig ist. Dann **220 °C Ofen 20–25 Min.**, bis sie komplett kollabieren (der Brenner allein gart nicht durch). **Gasgrill-Alternative:** direkt über hoher Flamme, Haube zu, 15–20 Min., alle 5 Min. wenden, bis sie zusammenfallen.",
+              "action": "2 Auberginen (\\~900 g) mehrfach mit dem Messer einstechen, **4 Knoblauchzehen** in 4 der Löcher stecken (je eine), dünn mit Öl einreiben.",
               "limits": [
-                "1 Knoblauchzehe",
+                "4 Knoblauchzehen",
                 "220 °C Ofen 20–25 Min."
               ],
               "cues": [
@@ -975,8 +975,8 @@
                 {
                   "ref": "knoblauch",
                   "amount": {
-                    "text": "1 Knoblauchzehe",
-                    "value": 1.0,
+                    "text": "4 Knoblauchzehen",
+                    "value": 4.0,
                     "unit": "Stück"
                   }
                 }
@@ -1776,8 +1776,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:21Z",
-    "sourceHash": "70bf4977b7090629",
+    "generatedAt": "2026-10-12T15:17:54Z",
+    "sourceHash": "74d6373413c798ac",
     "quantities": [
       {
         "ingredient": "haehnchenschenkel",
@@ -1809,14 +1809,24 @@
       {
         "ingredient": "ghee",
         "total": {
-          "text": "3 EL (+ TL ungemischt)",
+          "text": "3 EL + 1 TL",
           "value": 3.0,
           "max": 3.0,
           "unit": "EL",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "dal-tadka": "2 EL Ghee + 1 EL Ghee"
+          "dal-tadka": "2 EL Ghee + 1 EL Ghee",
+          "haehnchen-grillen": "1 TL Ghee"
         },
         "unitMixed": true
       },
@@ -1865,16 +1875,16 @@
       {
         "ingredient": "knoblauch",
         "total": {
-          "text": "13–14",
-          "value": 13.0,
-          "max": 14.0,
+          "text": "16–17",
+          "value": 16.0,
+          "max": 17.0,
           "unit": "Stück",
           "approx": false
         },
         "perTask": {
           "haehnchen": "4 Knoblauchzehen",
           "dal-tadka": "4 Knoblauchzehen + 1–2 Knoblauchzehen",
-          "baingan-bharta": "1 Knoblauchzehe + 3 Knoblauchzehen"
+          "baingan-bharta": "4 Knoblauchzehen + 3 Knoblauchzehen"
         }
       },
       {
@@ -1895,15 +1905,33 @@
       {
         "ingredient": "zitronen",
         "total": {
-          "text": "5 EL (+ Stück, TL ungemischt)",
-          "value": 5.0,
-          "max": 5.0,
-          "unit": "EL",
-          "approx": false
+          "text": "1 + 5 EL + 1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false,
+          "plus": [
+            {
+              "text": "5 EL",
+              "value": 5.0,
+              "max": 5.0,
+              "unit": "EL",
+              "approx": false
+            },
+            {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
           "haehnchen": "2 EL Zitronensaft",
+          "dal-tadka": "1 TL Zitronensaft",
           "baingan-bharta": "1 EL Zitronensaft",
+          "raita-beilagen": "1 Zitrone",
           "haehnchen-grillen": "2 EL Raita, Zwiebelringe, Zitronenspalte"
         },
         "unitMixed": true
@@ -2085,14 +2113,24 @@
       {
         "ingredient": "chilis",
         "total": {
-          "text": "2–3 (+ TL ungemischt)",
+          "text": "2–3 + 1 TL",
           "value": 2.0,
           "max": 3.0,
           "unit": "Stück",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "dal-tadka": "2–3 getrocknete rote Chilis"
+          "dal-tadka": "2–3 getrocknete rote Chilis + ½ TL Kashmiri-Chili",
+          "baingan-bharta": "½ TL Kashmiri-Chili"
         },
         "unitMixed": true
       },
@@ -2261,13 +2299,13 @@
             "ingredient": "knoblauch",
             "name": "Knoblauch",
             "need": {
-              "text": "13–14",
-              "value": 13.0,
-              "max": 14.0,
+              "text": "16–17",
+              "value": 16.0,
+              "max": 17.0,
               "unit": "Stück",
               "approx": false
             },
-            "display": "13–14",
+            "display": "16–17",
             "inStock": false,
             "buy": {
               "text": "2 Knollen"
@@ -2294,13 +2332,29 @@
             "ingredient": "zitronen",
             "name": "Zitronen",
             "need": {
-              "text": "5 EL (+ Stück, TL ungemischt)",
-              "value": 5.0,
-              "max": 5.0,
-              "unit": "EL",
-              "approx": false
+              "text": "1 + 5 EL + 1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "5 EL",
+                  "value": 5.0,
+                  "max": 5.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "5 EL",
+            "display": "1 + 5 EL + 1 TL",
             "inStock": false,
             "buy": {
               "text": "3"
@@ -2390,13 +2444,22 @@
             "ingredient": "ghee",
             "name": "Ghee",
             "need": {
-              "text": "3 EL (+ TL ungemischt)",
+              "text": "3 EL + 1 TL",
               "value": 3.0,
               "max": 3.0,
               "unit": "EL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "3 EL",
+            "display": "3 EL + 1 TL",
             "inStock": false,
             "buy": {
               "text": "1 Glas"
@@ -2540,13 +2603,22 @@
             "ingredient": "chilis",
             "name": "getrocknete rote Chilis",
             "need": {
-              "text": "2–3 (+ TL ungemischt)",
+              "text": "2–3 + 1 TL",
               "value": 2.0,
               "max": 3.0,
               "unit": "Stück",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "2–3",
+            "display": "2–3 + 1 TL",
             "inStock": false,
             "buy": {
               "text": "2–3"

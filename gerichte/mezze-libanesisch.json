@@ -344,7 +344,7 @@
       "name": "Gutes Olivenöl",
       "store": "Vorrat",
       "pantry": true,
-      "note": "Gesamtverbrauch \\~150 ml!"
+      "note": "Gesamtverbrauch \\~220 ml!"
     },
     {
       "id": "zucker",
@@ -2083,8 +2083,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:20Z",
-    "sourceHash": "d12d72e874c13976",
+    "generatedAt": "2026-10-12T15:17:54Z",
+    "sourceHash": "b712d307f8dc5ccc",
     "quantities": [
       {
         "ingredient": "tahina",
@@ -2211,15 +2211,25 @@
       {
         "ingredient": "zitronen",
         "total": {
-          "text": "6 EL (+ TL ungemischt)",
+          "text": "6 EL + 1 TL",
           "value": 6.0,
           "max": 6.0,
           "unit": "EL",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
           "hummus": "2 EL Zitronensaft",
           "moutabal": "2 EL Zitronensaft",
+          "muhammara": "1 TL Zitronensaft",
           "fatayer-bi-sabanekh": "2 EL Zitronensaft"
         },
         "unitMixed": true
@@ -2497,14 +2507,24 @@
       {
         "ingredient": "kreuzkuemmel",
         "total": {
-          "text": "1 Prise (+ TL ungemischt)",
-          "value": 1.0,
-          "max": 1.0,
-          "unit": "Prise",
-          "approx": false
+          "text": "½ TL + 1 Prise",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "TL",
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "hummus": "1 Prise Kreuzkümmel"
+          "hummus": "1 Prise Kreuzkümmel",
+          "muhammara": "½ TL Kreuzkümmel"
         },
         "unitMixed": true
       },
@@ -2568,18 +2588,17 @@
       {
         "ingredient": "wasser",
         "total": {
-          "text": "1810 ml (+ EL ungemischt)",
-          "value": 1810.0,
-          "max": 1810.0,
+          "text": "1825 ml",
+          "value": 1825.0,
+          "max": 1825.0,
           "unit": "ml",
           "approx": false
         },
         "perTask": {
           "hummus": "1,5 L Wasser",
-          "fatayer-bi-sabanekh": "170 ml lauwarmes Wasser",
+          "fatayer-bi-sabanekh": "170 ml lauwarmes Wasser + 1 EL Wasser",
           "sambousek-bi-jibneh": "140 ml warmes Wasser"
-        },
-        "unitMixed": true
+        }
       }
     ],
     "shopping": [
@@ -2625,13 +2644,22 @@
             "ingredient": "zitronen",
             "name": "Zitronen",
             "need": {
-              "text": "6 EL (+ TL ungemischt)",
+              "text": "6 EL + 1 TL",
               "value": 6.0,
               "max": 6.0,
               "unit": "EL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "6 EL",
+            "display": "6 EL + 1 TL",
             "inStock": false,
             "buy": {
               "text": "4"
@@ -3005,13 +3033,22 @@
             "ingredient": "kreuzkuemmel",
             "name": "Kreuzkümmel, gemahlen",
             "need": {
-              "text": "1 Prise (+ TL ungemischt)",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "Prise",
-              "approx": false
+              "text": "½ TL + 1 Prise",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
+                  "approx": false
+                }
+              ]
             },
-            "display": "1 Prise",
+            "display": "½ TL + 1 Prise",
             "inStock": false,
             "pantry": true
           },
@@ -3028,7 +3065,7 @@
             "display": "14–15 EL",
             "inStock": false,
             "pantry": true,
-            "note": "Gesamtverbrauch \\~150 ml!"
+            "note": "Gesamtverbrauch \\~220 ml!"
           },
           {
             "ingredient": "zucker",
@@ -3072,13 +3109,13 @@
             "ingredient": "wasser",
             "name": "Wasser",
             "need": {
-              "text": "1810 ml (+ EL ungemischt)",
-              "value": 1810.0,
-              "max": 1810.0,
+              "text": "1825 ml",
+              "value": 1825.0,
+              "max": 1825.0,
               "unit": "ml",
               "approx": false
             },
-            "display": "1810 ml",
+            "display": "1825 ml",
             "inStock": false,
             "pantry": true
           }

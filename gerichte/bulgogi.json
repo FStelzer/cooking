@@ -1082,7 +1082,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:20Z",
+    "generatedAt": "2026-10-12T15:17:54Z",
     "sourceHash": "02253b99941604aa",
     "quantities": [
       {
@@ -1167,14 +1167,23 @@
       {
         "ingredient": "rindfleisch",
         "total": {
-          "text": "800 g (+ Stück ungemischt)",
-          "value": 800.0,
-          "max": 800.0,
-          "unit": "g",
-          "approx": false
+          "text": "1 + 800 g",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false,
+          "plus": [
+            {
+              "text": "800 g",
+              "value": 800.0,
+              "max": 800.0,
+              "unit": "g",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "main": "800 g Fleisch"
+          "main": "800 g Fleisch + 1 Löffel Reis, Fleisch"
         },
         "unitMixed": true
       },
@@ -1285,14 +1294,23 @@
       {
         "ingredient": "sesamoel",
         "total": {
-          "text": "1½ EL (+ TL ungemischt)",
+          "text": "1½ EL + 4 TL",
           "value": 1.5,
           "max": 1.5,
           "unit": "EL",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "4 TL",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "main": "1½ EL geröstetes Sesamöl"
+          "main": "1½ EL geröstetes Sesamöl + 1 TL geröstetes Sesamöl + 1 TL geröstetes Sesamöl + 2 TL geröstetes Sesamöl"
         },
         "unitMixed": true
       },
@@ -1312,14 +1330,23 @@
       {
         "ingredient": "zucker",
         "total": {
-          "text": "3½ EL (+ TL ungemischt)",
+          "text": "3½ EL + 2 TL",
           "value": 3.5,
           "max": 3.5,
           "unit": "EL",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "2 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "main": "2½ EL brauner Zucker + 1 EL braunem Zucker"
+          "main": "2½ EL brauner Zucker + 1 EL braunem Zucker + 2 TL brauner Zucker"
         },
         "unitMixed": true
       },
@@ -1391,16 +1418,15 @@
       {
         "ingredient": "wasser",
         "total": {
-          "text": "2 EL (+ TL, ml ungemischt)",
-          "value": 2.0,
-          "max": 2.0,
-          "unit": "EL",
+          "text": "90–95 ml",
+          "value": 90.0,
+          "max": 95.0,
+          "unit": "ml",
           "approx": false
         },
         "perTask": {
-          "main": "2 EL Wasser"
-        },
-        "unitMixed": true
+          "main": "2 EL Wasser + 1–2 TL Wasser + 1 TL Wasser + 50 ml Wasser"
+        }
       }
     ],
     "shopping": [
@@ -1670,13 +1696,22 @@
             "ingredient": "rindfleisch",
             "name": "Rindfleisch, Entrecôte/Ribeye **am Stück**",
             "need": {
-              "text": "800 g (+ Stück ungemischt)",
-              "value": 800.0,
-              "max": 800.0,
-              "unit": "g",
-              "approx": false
+              "text": "1 + 800 g",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "800 g",
+                  "value": 800.0,
+                  "max": 800.0,
+                  "unit": "g",
+                  "approx": false
+                }
+              ]
             },
-            "display": "800 g",
+            "display": "1 + 800 g",
             "inStock": false,
             "buy": {
               "text": "800 g"
@@ -1708,13 +1743,22 @@
             "ingredient": "sesamoel",
             "name": "Sesamöl, geröstet",
             "need": {
-              "text": "1½ EL (+ TL ungemischt)",
+              "text": "1½ EL + 4 TL",
               "value": 1.5,
               "max": 1.5,
               "unit": "EL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "4 TL",
+                  "value": 4.0,
+                  "max": 4.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "1½ EL",
+            "display": "1½ EL + 4 TL",
             "inStock": false,
             "pantry": true,
             "note": "\\~3 EL gesamt"
@@ -1738,13 +1782,22 @@
             "ingredient": "zucker",
             "name": "Brauner Zucker",
             "need": {
-              "text": "3½ EL (+ TL ungemischt)",
+              "text": "3½ EL + 2 TL",
               "value": 3.5,
               "max": 3.5,
               "unit": "EL",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "2 TL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "3½ EL",
+            "display": "3½ EL + 2 TL",
             "inStock": false,
             "pantry": true,
             "note": "\\~4 EL gesamt"
@@ -1825,13 +1878,13 @@
             "ingredient": "wasser",
             "name": "Wasser",
             "need": {
-              "text": "2 EL (+ TL, ml ungemischt)",
-              "value": 2.0,
-              "max": 2.0,
-              "unit": "EL",
+              "text": "90–95 ml",
+              "value": 90.0,
+              "max": 95.0,
+              "unit": "ml",
               "approx": false
             },
-            "display": "2 EL",
+            "display": "90–95 ml",
             "inStock": false,
             "pantry": true
           }

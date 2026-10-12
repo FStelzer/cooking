@@ -1027,7 +1027,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:20Z",
+    "generatedAt": "2026-10-12T15:17:54Z",
     "sourceHash": "7c15181a82417dc9",
     "quantities": [
       {
@@ -1255,16 +1255,15 @@
       {
         "ingredient": "oel",
         "total": {
-          "text": "150 ml (+ EL ungemischt)",
-          "value": 150.0,
-          "max": 150.0,
+          "text": "195–210 ml",
+          "value": 195.0,
+          "max": 210.0,
           "unit": "ml",
           "approx": false
         },
         "perTask": {
-          "main": "150 ml Öl"
-        },
-        "unitMixed": true
+          "main": "150 ml Öl + 2–3 EL Öl + 1 EL Öl"
+        }
       },
       {
         "ingredient": "dijon-senf",
@@ -1684,13 +1683,13 @@
             "ingredient": "oel",
             "name": "neutrales Öl",
             "need": {
-              "text": "150 ml (+ EL ungemischt)",
-              "value": 150.0,
-              "max": 150.0,
+              "text": "195–210 ml",
+              "value": 195.0,
+              "max": 210.0,
               "unit": "ml",
               "approx": false
             },
-            "display": "150 ml",
+            "display": "195–210 ml",
             "inStock": false,
             "buy": {
               "text": "200 ml"

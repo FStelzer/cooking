@@ -76,6 +76,11 @@ t("Gemischter Bruch: 1½ EL ×2 → 3 EL, ×0,5 → ¾ EL; 1,5 wird „1½“", 
   assert.equal(scaleStepText("1½ EL Fischsauce dazu", st, 0.5, {}), "¾ EL Fischsauce dazu");
   assert.equal(fmtAmount({ value: 1.5, unit: "EL" }), "1½ EL");
 });
+t("Einkauf: nicht umrechenbare Teilmengen (plus) werden mitformatiert und mitskaliert", () => {
+  const need = { value: 5.5, unit: "EL", plus: [{ value: 80, max: 100, unit: "g" }] };
+  assert.equal(fmtAmount(need), "5½ EL + 80–100 g");
+  assert.equal(fmtAmount(scaleAmount(need, 2, {})), "11 EL + 160–200 g");
+});
 t("Varianten: Auswahl mit Default, only = oder je Dimension, und über Dimensionen", () => {
   const rec = { variants: [{ id: "mehl", default: "weizen", choices: [{ id: "weizen" }, { id: "dinkel" }] }, { id: "weg", default: "einfrieren", choices: [{ id: "einfrieren" }, { id: "kombi" }] }] };
   const sel = selection(rec, { mehl: "dinkel", weg: "quatsch" });

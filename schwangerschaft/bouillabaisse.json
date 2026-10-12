@@ -1446,7 +1446,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:20Z",
+    "generatedAt": "2026-10-12T15:17:54Z",
     "sourceHash": "28f8e2fb8fdd421b",
     "quantities": [
       {
@@ -1642,14 +1642,24 @@
       {
         "ingredient": "zitrone",
         "total": {
-          "text": "1 EL (+ Stück ungemischt)",
-          "value": 1.0,
-          "max": 1.0,
-          "unit": "EL",
-          "approx": false
+          "text": "½ + 1 EL",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "Stück",
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "rouille": "1 EL Zitronensaft"
+          "rouille": "1 EL Zitronensaft",
+          "fenchel-orange-salat": "½ Zitrone"
         },
         "unitMixed": true
       },
@@ -1775,17 +1785,17 @@
       {
         "ingredient": "olivenoel",
         "total": {
-          "text": "6–7 EL (+ ml ungemischt)",
-          "value": 6.0,
-          "max": 7.0,
-          "unit": "EL",
+          "text": "240–255 ml",
+          "value": 240.0,
+          "max": 255.0,
+          "unit": "ml",
           "approx": false
         },
         "perTask": {
           "fond": "3 EL Olivenöl",
+          "rouille": "150 ml Olivenöl",
           "fenchel-orange-salat": "3–4 EL Olivenöl"
-        },
-        "unitMixed": true
+        }
       },
       {
         "ingredient": "tomatenmark",
@@ -1870,16 +1880,16 @@
       {
         "ingredient": "wasser",
         "total": {
-          "text": "2600 ml (+ EL ungemischt)",
-          "value": 2600.0,
-          "max": 2600.0,
+          "text": "2615 ml",
+          "value": 2615.0,
+          "max": 2615.0,
           "unit": "ml",
           "approx": false
         },
         "perTask": {
-          "fond": "100 ml Wasser + 2,5 L kaltem Wasser"
-        },
-        "unitMixed": true
+          "fond": "100 ml Wasser + 2,5 L kaltem Wasser",
+          "rouille": "1 EL warmem Wasser"
+        }
       }
     ],
     "shopping": [
@@ -2145,13 +2155,22 @@
             "ingredient": "zitrone",
             "name": "Zitrone",
             "need": {
-              "text": "1 EL (+ Stück ungemischt)",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "EL",
-              "approx": false
+              "text": "½ + 1 EL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "1 EL",
+            "display": "½ + 1 EL",
             "inStock": false,
             "buy": {
               "text": "1"
@@ -2340,13 +2359,13 @@
             "ingredient": "olivenoel",
             "name": "Olivenöl extra vergine",
             "need": {
-              "text": "6–7 EL (+ ml ungemischt)",
-              "value": 6.0,
-              "max": 7.0,
-              "unit": "EL",
+              "text": "240–255 ml",
+              "value": 240.0,
+              "max": 255.0,
+              "unit": "ml",
               "approx": false
             },
-            "display": "6–7 EL",
+            "display": "240–255 ml",
             "inStock": false,
             "buy": {
               "text": "250 ml"
@@ -2461,13 +2480,13 @@
             "ingredient": "wasser",
             "name": "Wasser",
             "need": {
-              "text": "2600 ml (+ EL ungemischt)",
-              "value": 2600.0,
-              "max": 2600.0,
+              "text": "2615 ml",
+              "value": 2615.0,
+              "max": 2615.0,
               "unit": "ml",
               "approx": false
             },
-            "display": "2600 ml",
+            "display": "2615 ml",
             "inStock": false,
             "pantry": true
           }

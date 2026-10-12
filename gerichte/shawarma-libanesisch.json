@@ -1628,7 +1628,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:13:20Z",
+    "generatedAt": "2026-10-12T15:17:54Z",
     "sourceHash": "2b2355a0cc59e4dc",
     "select": {
       "garmethode": "pfanne"
@@ -1749,35 +1749,45 @@
       {
         "ingredient": "zitronen",
         "total": {
-          "text": "10 EL (+ Stück ungemischt)",
-          "value": 10.0,
-          "max": 10.0,
-          "unit": "EL",
-          "approx": false
+          "text": "1 + 10 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false,
+          "plus": [
+            {
+              "text": "10 EL",
+              "value": 10.0,
+              "max": 10.0,
+              "unit": "EL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
           "haehnchen": "3 EL Zitronensaft",
           "toum": "3 EL Zitronensaft",
           "shatta-ansatz": "1 EL Zitronensaft",
-          "tahinsauce": "3 EL Zitronensaft"
+          "tahinsauce": "3 EL Zitronensaft",
+          "tabbouleh": "1 Zitrone"
         },
         "unitMixed": true
       },
       {
         "ingredient": "knoblauch",
         "total": {
-          "text": "6 (+ Zehe, Zehen ungemischt)",
-          "value": 6.0,
-          "max": 6.0,
+          "text": "10",
+          "value": 10.0,
+          "max": 10.0,
           "unit": "Stück",
           "approx": false
         },
         "perTask": {
           "haehnchen": "4 Knoblauchzehen",
           "toum": "1 Knolle Knoblauch",
-          "tahinsauce": "1 kleine Knoblauchzehe"
-        },
-        "unitMixed": true
+          "tahinsauce": "1 kleine Knoblauchzehe",
+          "batata-harra": "3 Zehen Knoblauch + 1 Zehe Knoblauch"
+        }
       },
       {
         "ingredient": "kartoffeln",
@@ -1867,17 +1877,17 @@
       {
         "ingredient": "oel",
         "total": {
-          "text": "3 EL (+ ml ungemischt)",
-          "value": 3.0,
-          "max": 3.0,
-          "unit": "EL",
+          "text": "295 ml",
+          "value": 295.0,
+          "max": 295.0,
+          "unit": "ml",
           "approx": false
         },
         "perTask": {
           "haehnchen": "2 EL neutrales Öl",
+          "toum": "250 ml neutrales Öl",
           "garmethode-a-pfanne": "1 EL neutrales Öl"
-        },
-        "unitMixed": true
+        }
       },
       {
         "ingredient": "olivenoel",
@@ -2004,13 +2014,22 @@
             "ingredient": "zitronen",
             "name": "Zitronen",
             "need": {
-              "text": "10 EL (+ Stück ungemischt)",
-              "value": 10.0,
-              "max": 10.0,
-              "unit": "EL",
-              "approx": false
+              "text": "1 + 10 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "10 EL",
+                  "value": 10.0,
+                  "max": 10.0,
+                  "unit": "EL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "10 EL",
+            "display": "1 + 10 EL",
             "inStock": false,
             "buy": {
               "text": "7"
@@ -2021,13 +2040,13 @@
             "ingredient": "knoblauch",
             "name": "Knoblauch",
             "need": {
-              "text": "6 (+ Zehe, Zehen ungemischt)",
-              "value": 6.0,
-              "max": 6.0,
+              "text": "10",
+              "value": 10.0,
+              "max": 10.0,
               "unit": "Stück",
               "approx": false
             },
-            "display": "6",
+            "display": "10",
             "inStock": false,
             "buy": {
               "text": "3 Knollen"
@@ -2202,13 +2221,13 @@
             "ingredient": "oel",
             "name": "neutrales Öl",
             "need": {
-              "text": "3 EL (+ ml ungemischt)",
-              "value": 3.0,
-              "max": 3.0,
-              "unit": "EL",
+              "text": "295 ml",
+              "value": 295.0,
+              "max": 295.0,
+              "unit": "ml",
               "approx": false
             },
-            "display": "3 EL",
+            "display": "295 ml",
             "inStock": false,
             "buy": {
               "text": "750 ml"
@@ -2248,8 +2267,7 @@
             },
             "display": "2 EL",
             "inStock": false,
-            "pantry": true,
-            "note": "2–3 EL"
+            "pantry": true
           },
           {
             "ingredient": "paprikapulver",
@@ -2589,35 +2607,45 @@
           {
             "ingredient": "zitronen",
             "total": {
-              "text": "10 EL (+ Stück ungemischt)",
-              "value": 10.0,
-              "max": 10.0,
-              "unit": "EL",
-              "approx": false
+              "text": "1 + 10 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "10 EL",
+                  "value": 10.0,
+                  "max": 10.0,
+                  "unit": "EL",
+                  "approx": false
+                }
+              ]
             },
             "perTask": {
               "haehnchen": "3 EL Zitronensaft",
               "toum": "3 EL Zitronensaft",
               "shatta-ansatz": "1 EL Zitronensaft",
-              "tahinsauce": "3 EL Zitronensaft"
+              "tahinsauce": "3 EL Zitronensaft",
+              "tabbouleh": "1 Zitrone"
             },
             "unitMixed": true
           },
           {
             "ingredient": "knoblauch",
             "total": {
-              "text": "6 (+ Zehe, Zehen ungemischt)",
-              "value": 6.0,
-              "max": 6.0,
+              "text": "10",
+              "value": 10.0,
+              "max": 10.0,
               "unit": "Stück",
               "approx": false
             },
             "perTask": {
               "haehnchen": "4 Knoblauchzehen",
               "toum": "1 Knolle Knoblauch",
-              "tahinsauce": "1 kleine Knoblauchzehe"
-            },
-            "unitMixed": true
+              "tahinsauce": "1 kleine Knoblauchzehe",
+              "batata-harra": "3 Zehen Knoblauch + 1 Zehe Knoblauch"
+            }
           },
           {
             "ingredient": "kartoffeln",
@@ -2707,16 +2735,16 @@
           {
             "ingredient": "oel",
             "total": {
-              "text": "2 EL (+ ml ungemischt)",
-              "value": 2.0,
-              "max": 2.0,
-              "unit": "EL",
+              "text": "280 ml",
+              "value": 280.0,
+              "max": 280.0,
+              "unit": "ml",
               "approx": false
             },
             "perTask": {
-              "haehnchen": "2 EL neutrales Öl"
-            },
-            "unitMixed": true
+              "haehnchen": "2 EL neutrales Öl",
+              "toum": "250 ml neutrales Öl"
+            }
           },
           {
             "ingredient": "olivenoel",
@@ -2843,13 +2871,22 @@
                 "ingredient": "zitronen",
                 "name": "Zitronen",
                 "need": {
-                  "text": "10 EL (+ Stück ungemischt)",
-                  "value": 10.0,
-                  "max": 10.0,
-                  "unit": "EL",
-                  "approx": false
+                  "text": "1 + 10 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Stück",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "10 EL",
+                      "value": 10.0,
+                      "max": 10.0,
+                      "unit": "EL",
+                      "approx": false
+                    }
+                  ]
                 },
-                "display": "10 EL",
+                "display": "1 + 10 EL",
                 "inStock": false,
                 "buy": {
                   "text": "7"
@@ -2860,13 +2897,13 @@
                 "ingredient": "knoblauch",
                 "name": "Knoblauch",
                 "need": {
-                  "text": "6 (+ Zehe, Zehen ungemischt)",
-                  "value": 6.0,
-                  "max": 6.0,
+                  "text": "10",
+                  "value": 10.0,
+                  "max": 10.0,
                   "unit": "Stück",
                   "approx": false
                 },
-                "display": "6",
+                "display": "10",
                 "inStock": false,
                 "buy": {
                   "text": "3 Knollen"
@@ -3041,13 +3078,13 @@
                 "ingredient": "oel",
                 "name": "neutrales Öl",
                 "need": {
-                  "text": "2 EL (+ ml ungemischt)",
-                  "value": 2.0,
-                  "max": 2.0,
-                  "unit": "EL",
+                  "text": "280 ml",
+                  "value": 280.0,
+                  "max": 280.0,
+                  "unit": "ml",
                   "approx": false
                 },
-                "display": "2 EL",
+                "display": "280 ml",
                 "inStock": false,
                 "buy": {
                   "text": "750 ml"
@@ -3087,8 +3124,7 @@
                 },
                 "display": "2 EL",
                 "inStock": false,
-                "pantry": true,
-                "note": "2–3 EL"
+                "pantry": true
               },
               {
                 "ingredient": "paprikapulver",
