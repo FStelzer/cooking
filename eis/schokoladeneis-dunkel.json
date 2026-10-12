@@ -354,22 +354,6 @@
               },
               "text": "Die 150 g gehackte Schokolade in eine Schüssel geben, die heiße Crème durch ein feines Sieb darüber gießen (fängt eventuelle Ei-Flöckchen ab). 1 Min. stehen lassen, dann mit dem Stabmixer 30 Sek. glatt emulgieren — der Mixer bleibt dabei unter der Oberfläche, damit keine Luft eingeschlagen wird.",
               "action": "Die 150 g gehackte Schokolade in eine Schüssel geben, die heiße Crème durch ein feines Sieb darüber gießen (fängt eventuelle Ei-Flöckchen ab).",
-              "timers": [
-                {
-                  "label": "Schokolade emulgieren",
-                  "duration": {
-                    "typical": "PT1M"
-                  },
-                  "text": "1 Min."
-                },
-                {
-                  "label": "Schokolade emulgieren",
-                  "duration": {
-                    "typical": "PT30S"
-                  },
-                  "text": "30 Sek."
-                }
-              ],
               "ingredients": [
                 {
                   "ref": "zartbitterschokolade",
@@ -534,8 +518,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:47Z",
-    "sourceHash": "0184c44a3e7a189a",
+    "generatedAt": "2026-10-12T15:12:15Z",
+    "sourceHash": "a3364c05a8229423",
     "quantities": [
       {
         "ingredient": "vollmilch",

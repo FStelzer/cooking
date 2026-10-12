@@ -505,15 +505,6 @@
               },
               "text": "40 ml Cognac angießen und flambieren (Dunstabzug aus, Armlänge Abstand; alternativ 1 Min. verkochen lassen). Mit 200 ml Weißwein ablöschen, Bratensatz lösen, fast vollständig einkochen.",
               "action": "40 ml Cognac angießen und flambieren (Dunstabzug aus, Armlänge Abstand; alternativ 1 Min. verkochen lassen).",
-              "timers": [
-                {
-                  "label": "Flambieren & Ablöschen",
-                  "duration": {
-                    "typical": "PT1M"
-                  },
-                  "text": "1 Min."
-                }
-              ],
               "ingredients": [
                 {
                   "ref": "cognac",
@@ -556,16 +547,6 @@
                     "typical": "PT10M"
                   },
                   "text": "10 Min."
-                }
-              ],
-              "events": [
-                {
-                  "at": {
-                    "typical": "PT45M",
-                    "source": "\\~45 Min.",
-                    "estimated": true
-                  },
-                  "text": "*Nach \\~45 Min."
                 }
               ],
               "ingredients": [
@@ -627,16 +608,6 @@
               "limits": [
                 "alle harten Scherenpanzer und dicken Kopfpanzerteile entfernen",
                 "kräftig und geduldig ausdrücken"
-              ],
-              "timers": [
-                {
-                  "label": "Mixen & Passieren",
-                  "duration": {
-                    "min": "PT20S",
-                    "max": "PT30S"
-                  },
-                  "text": "20–30 Sek."
-                }
               ],
               "ingredients": [],
               "attention": "active"
@@ -772,8 +743,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:47Z",
-    "sourceHash": "0798cb14bd9e2a11",
+    "generatedAt": "2026-10-12T15:12:15Z",
+    "sourceHash": "c350c454f7af362d",
     "quantities": [
       {
         "ingredient": "hummer",

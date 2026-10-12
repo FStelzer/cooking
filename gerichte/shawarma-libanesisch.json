@@ -503,31 +503,6 @@
                 "gründlich trocken tupfen"
               ],
               "rescue": "Falls es doch bricht: 1 EL der gebrochenen Masse mit 1 EL Eiswasser im sauberen Gefäß neu starten, Rest langsam wieder einarbeiten.",
-              "timers": [
-                {
-                  "label": "Toum",
-                  "duration": {
-                    "min": "PT30S",
-                    "max": "PT60S"
-                  },
-                  "text": "30–60 Sek."
-                },
-                {
-                  "label": "Toum",
-                  "duration": {
-                    "typical": "PT30S",
-                    "estimated": true
-                  },
-                  "text": "\\~30 Sek."
-                },
-                {
-                  "label": "Toum",
-                  "duration": {
-                    "typical": "PT60S"
-                  },
-                  "text": "60 Sek."
-                }
-              ],
               "ingredients": [
                 {
                   "ref": "knoblauch",
@@ -604,16 +579,6 @@
               "action": "Kaufen oder ansetzen — **erste Wahl: kaufen**, falls der orientalische Laden sie führt.",
               "limits": [
                 "erste Wahl: kaufen"
-              ],
-              "timers": [
-                {
-                  "label": "Shatta",
-                  "duration": {
-                    "min": "P2D",
-                    "max": "P3D"
-                  },
-                  "text": "2–3 Tage"
-                }
               ],
               "ingredients": [
                 {
@@ -1160,14 +1125,6 @@
                     "max": "PT3M"
                   },
                   "text": "2–3 Min."
-                },
-                {
-                  "label": "Portionen braten",
-                  "duration": {
-                    "min": "PT2M",
-                    "max": "PT3M"
-                  },
-                  "text": "2–3 Min."
                 }
               ],
               "ingredients": [
@@ -1399,13 +1356,6 @@
                 "bis die Oberfläche knusprig und fleckig gebräunt ist"
               ],
               "timers": [
-                {
-                  "label": "Wickeln & Pressen",
-                  "duration": {
-                    "typical": "PT5S"
-                  },
-                  "text": "5 Sek."
-                },
                 {
                   "label": "Wickeln & Pressen",
                   "duration": {
@@ -1678,8 +1628,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:48Z",
-    "sourceHash": "9c9bec811cbc1d6d",
+    "generatedAt": "2026-10-12T15:12:15Z",
+    "sourceHash": "2b2355a0cc59e4dc",
     "select": {
       "garmethode": "pfanne"
     },

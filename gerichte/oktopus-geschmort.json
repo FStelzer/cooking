@@ -266,13 +266,6 @@
                     "max": "PT4M"
                   },
                   "text": "3–4 Min."
-                },
-                {
-                  "label": "Schmoransatz",
-                  "duration": {
-                    "typical": "PT1M"
-                  },
-                  "text": "1 Min."
                 }
               ],
               "ingredients": [
@@ -691,8 +684,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:47Z",
-    "sourceHash": "bbc521f058b42b9e",
+    "generatedAt": "2026-10-12T15:12:15Z",
+    "sourceHash": "adc32a25123129af",
     "quantities": [
       {
         "ingredient": "oktopus",

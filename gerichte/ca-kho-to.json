@@ -352,24 +352,6 @@
                 "nicht länger!"
               ],
               "why": "30–60 Min. ist Wels-Praxis; Lachs wird in der Salzlösung an der Oberfläche mürbe — 15–20 Min. reichen für die Würze.",
-              "timers": [
-                {
-                  "label": "Marinieren",
-                  "duration": {
-                    "min": "PT30M",
-                    "max": "PT1H"
-                  },
-                  "text": "30–60 Min."
-                },
-                {
-                  "label": "Marinieren",
-                  "duration": {
-                    "min": "PT15M",
-                    "max": "PT20M"
-                  },
-                  "text": "15–20 Min."
-                }
-              ],
               "ingredients": [
                 {
                   "ref": "fischsauce",
@@ -414,6 +396,16 @@
                 }
               ],
               "meta": "*nach Fisch vorbehandeln & sichern*",
+              "timers": [
+                {
+                  "label": "Marinieren",
+                  "duration": {
+                    "min": "PT15M",
+                    "max": "PT20M"
+                  },
+                  "text": "15–20 Min."
+                }
+              ],
               "after": [
                 "step:fisch-vorbehandeln-sichern"
               ]
@@ -884,8 +876,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:47Z",
-    "sourceHash": "654187bfee7c5855",
+    "generatedAt": "2026-10-12T15:12:15Z",
+    "sourceHash": "57d45e2b5788508f",
     "quantities": [
       {
         "ingredient": "lachssteaks",

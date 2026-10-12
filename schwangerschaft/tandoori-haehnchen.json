@@ -749,22 +749,6 @@
                 "1 TL Kasuri Methi",
                 "½ TL Garam Masala"
               ],
-              "timers": [
-                {
-                  "label": "Tadka Erwachsene",
-                  "duration": {
-                    "typical": "PT20S"
-                  },
-                  "text": "20 Sek."
-                },
-                {
-                  "label": "Tadka Erwachsene",
-                  "duration": {
-                    "typical": "PT20S"
-                  },
-                  "text": "20 Sek."
-                }
-              ],
               "ingredients": [
                 {
                   "ref": "ghee",
@@ -1063,13 +1047,6 @@
                 {
                   "label": "Masala",
                   "duration": {
-                    "typical": "PT1M"
-                  },
-                  "text": "1 Min."
-                },
-                {
-                  "label": "Masala",
-                  "duration": {
                     "min": "PT8M",
                     "max": "PT10M"
                   },
@@ -1349,14 +1326,6 @@
                     "typical": "PT15M"
                   },
                   "text": "15 Min."
-                },
-                {
-                  "label": "Vollkorn-Roti",
-                  "duration": {
-                    "min": "PT30S",
-                    "max": "PT40S"
-                  },
-                  "text": "30–40 Sek."
                 }
               ],
               "ingredients": [
@@ -1558,29 +1527,6 @@
                     "typical": "PT5M"
                   },
                   "text": "5 Min."
-                },
-                {
-                  "label": "Gar-Check",
-                  "duration": {
-                    "typical": "PT15M"
-                  },
-                  "text": "15 Min."
-                },
-                {
-                  "label": "Gar-Check",
-                  "duration": {
-                    "min": "PT12M",
-                    "max": "PT15M"
-                  },
-                  "text": "12–15 Min."
-                },
-                {
-                  "label": "Gar-Check",
-                  "duration": {
-                    "min": "PT3M",
-                    "max": "PT4M"
-                  },
-                  "text": "3–4 Min."
                 }
               ],
               "temps": [
@@ -1830,8 +1776,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:48Z",
-    "sourceHash": "9ff336c59f30770e",
+    "generatedAt": "2026-10-12T15:12:16Z",
+    "sourceHash": "70bf4977b7090629",
     "quantities": [
       {
         "ingredient": "haehnchenschenkel",

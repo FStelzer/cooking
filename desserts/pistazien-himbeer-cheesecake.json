@@ -485,15 +485,6 @@
               },
               "text": "100–120 ml Sahne aufkochen, vom Herd nehmen, 200 g gehackte weiße Schokolade einrühren und 1 Min. stehen lassen, dann glattrühren. Auf \\~30 °C abkühlen lassen (handwarm) und über den Fil gießen. Zu heiß gegossen schmilzt sie die Oberfläche des Fils an.",
               "action": "100–120 ml Sahne aufkochen, vom Herd nehmen, 200 g gehackte weiße Schokolade einrühren und 1 Min. stehen lassen, dann glattrühren.",
-              "timers": [
-                {
-                  "label": "Weiße Ganache",
-                  "duration": {
-                    "typical": "PT1M"
-                  },
-                  "text": "1 Min."
-                }
-              ],
               "temps": [
                 {
                   "kind": "ziel",
@@ -528,6 +519,15 @@
                 }
               ],
               "attention": "attended",
+              "timers": [
+                {
+                  "label": "Weiße Ganache",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
               "after": []
             },
             {
@@ -630,8 +630,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:47Z",
-    "sourceHash": "6a8a718b74eef8ee",
+    "generatedAt": "2026-10-12T15:12:15Z",
+    "sourceHash": "9cacf88cde284361",
     "quantities": [
       {
         "ingredient": "mascarpone",

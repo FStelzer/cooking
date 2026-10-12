@@ -583,13 +583,6 @@
                 {
                   "label": "Cebollas encurtidas",
                   "duration": {
-                    "typical": "PT1M"
-                  },
-                  "text": "1 Min."
-                },
-                {
-                  "label": "Cebollas encurtidas",
-                  "duration": {
                     "typical": "PT3H"
                   },
                   "text": "3 Std."
@@ -847,36 +840,6 @@
                     "estimated": true
                   },
                   "text": "\\~15 Min."
-                },
-                {
-                  "label": "Tortillas",
-                  "duration": {
-                    "typical": "PT30S",
-                    "estimated": true
-                  },
-                  "text": "\\~30 Sek."
-                },
-                {
-                  "label": "Tortillas",
-                  "duration": {
-                    "typical": "PT45S",
-                    "estimated": true
-                  },
-                  "text": "\\~45 Sek."
-                },
-                {
-                  "label": "Tortillas",
-                  "duration": {
-                    "typical": "PT15S"
-                  },
-                  "text": "15 Sek."
-                },
-                {
-                  "label": "Tortillas",
-                  "duration": {
-                    "typical": "PT10M"
-                  },
-                  "text": "10 Min."
                 }
               ],
               "temps": [
@@ -1132,8 +1095,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:47Z",
-    "sourceHash": "50e9025732574325",
+    "generatedAt": "2026-10-12T15:12:15Z",
+    "sourceHash": "8f4cbfc73cd6d972",
     "quantities": [
       {
         "ingredient": "achiote-paste",

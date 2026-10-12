@@ -339,13 +339,6 @@
                     "typical": "PT20M"
                   },
                   "text": "20 Min."
-                },
-                {
-                  "label": "Milch kochen",
-                  "duration": {
-                    "typical": "PT1M"
-                  },
-                  "text": "1 Min."
                 }
               ],
               "ingredients": [
@@ -640,13 +633,6 @@
                 {
                   "label": "Matar anbraten",
                   "duration": {
-                    "typical": "PT30S"
-                  },
-                  "text": "30 Sek."
-                },
-                {
-                  "label": "Matar anbraten",
-                  "duration": {
                     "min": "PT8M",
                     "max": "PT10M"
                   },
@@ -731,13 +717,6 @@
                 "bis die Tomaten zerfallen und sich Fett am Rand absetzt"
               ],
               "timers": [
-                {
-                  "label": "Tomaten einkochen",
-                  "duration": {
-                    "typical": "PT1M"
-                  },
-                  "text": "1 Min."
-                },
                 {
                   "label": "Tomaten einkochen",
                   "duration": {
@@ -1272,8 +1251,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:47Z",
-    "sourceHash": "f2dec378af4e8b47",
+    "generatedAt": "2026-10-12T15:12:15Z",
+    "sourceHash": "cbd2968a346e9441",
     "quantities": [
       {
         "ingredient": "vollmilch",

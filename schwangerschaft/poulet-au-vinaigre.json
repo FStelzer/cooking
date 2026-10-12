@@ -292,15 +292,6 @@
               },
               "text": "4 Schalotten in feine Streifen, 4 Knoblauchzehen andrücken (ganz lassen). 300 g Tomaten kreuzweise einritzen, 30 Sek. in kochendes Wasser, häuten, entkernen, grob würfeln (Dose: abtropfen, grob würfeln). Ofen auf 165 °C Ober-/Unterhitze vorheizen.",
               "action": "4 Schalotten in feine Streifen, 4 Knoblauchzehen andrücken (ganz lassen).",
-              "timers": [
-                {
-                  "label": "Vorbereiten",
-                  "duration": {
-                    "typical": "PT30S"
-                  },
-                  "text": "30 Sek."
-                }
-              ],
               "temps": [
                 {
                   "kind": "ofen",
@@ -342,6 +333,15 @@
                 }
               ],
               "attention": "attended",
+              "timers": [
+                {
+                  "label": "Vorbereiten",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
               "after": []
             },
             {
@@ -436,13 +436,6 @@
                     "max": "PT3M"
                   },
                   "text": "2–3 Min."
-                },
-                {
-                  "label": "Schalotten & Essig",
-                  "duration": {
-                    "typical": "PT1M"
-                  },
-                  "text": "1 Min."
                 },
                 {
                   "label": "Schalotten & Essig",
@@ -962,8 +955,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:48Z",
-    "sourceHash": "54ec9b189110f31f",
+    "generatedAt": "2026-10-12T15:12:16Z",
+    "sourceHash": "ec94e2af7dae0c6f",
     "quantities": [
       {
         "ingredient": "haehnchenschenkel",

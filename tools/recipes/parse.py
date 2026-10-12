@@ -73,6 +73,12 @@ def iso(value: float, unit: str) -> str:
     return f"PT{m // 60}H{m % 60}M" if m >= 60 and m % 60 else (f"PT{m // 60}H" if m >= 60 else f"PT{m}M")
 
 
+def iso_seconds(d: str) -> float:
+    """„PT1H30M“ → 5400."""
+    m = re.fullmatch(r"PT(?:([\d.]+)H)?(?:([\d.]+)M)?(?:([\d.]+)S)?", d)
+    return float(m.group(1) or 0) * 3600 + float(m.group(2) or 0) * 60 + float(m.group(3) or 0) if m else 0
+
+
 def in_minutes(value: float, unit: str) -> float:
     u = unit.lower()
     return value * 1440 if u.startswith("tag") else value / 60 if u.startswith("sek") else value * 60 if u.startswith("std") or u.startswith("stund") or u == "h" else value
@@ -362,9 +368,17 @@ def annotate_text(step: dict, text: str, ingredients: list[dict], lint: Lint, wh
     # „bis …“ = Erkennungszeichen
     cues = [m.group(0).strip() for m in re.finditer(r"\bbis (?:das|der|die|die|es|sie|er|alle|zum|zur|sich|auf)\b[^.;,*)—]+", text)]
     if cues: step["cues"] = cues
-    # Timer, Ereignisse, Temperaturen
+    # Zitate sind Hinweise (Alternativen, Fallbacks, Dosierung am Tisch), Inline-Alternativen („(Dinkel: 4 Min.)“)
+    # gelten nur für eine Wahl: beide liefern weder Verbrauch noch Timer
+    alts, masked = [], re.sub(r"(?m)^>.*$", lambda m: " " * len(m.group(0)), text)
+    if (pat := lint.alt) is not None:
+        for m in pat.finditer(text):
+            alts.append(m)
+            masked = masked[:m.start()] + " " * (m.end() - m.start()) + masked[m.end():]
+    # Timer, Ereignisse, Temperaturen — der kursive Schluss (Warum/Rettung) und Kurzes (≤ 60 Sek., zählt man im Kopf) geben keinen Timer
     timers, events = [], []
-    for m in DUR_RE.finditer(text):
+    tail = re.search(r"\*(?!\*)\(?[^*]+?\)?\*\s*$", masked)
+    for m in DUR_RE.finditer(masked[:tail.start()] if tail else masked):
         before = text[max(0, m.start() - 6): m.start()]
         d = duration_range(m.group(0))
         if re.search(r"[Nn]ach\s*$", before):
@@ -372,8 +386,10 @@ def annotate_text(step: dict, text: str, ingredients: list[dict], lint: Lint, wh
         elif re.search(r"(hält|haltbar|bis zu|bis|≤|<|mind\.|mindestens|höchstens|max\.|maximal|alle|seit)\s*$", text[max(0, m.start() - 12): m.start()]) \
                 or re.match(r"\s*(vor\b|vorher|früher|später|lang haltbar)", text[m.end(): m.end() + 14]):
             continue  # Haltbarkeit, Vorlauf, Obergrenze — keine Garzeit, also kein Timer
-        else:
-            timers.append({"label": step.get("title", "Timer"), "duration": {k: v for k, v in d.items() if k != "source"}, "text": m.group(0).strip()})
+        elif iso_seconds(d.get("max") or d.get("typical") or d["min"]) > 60:
+            dur = {k: v for k, v in d.items() if k != "source"}
+            if all(t["duration"] != dur for t in timers):  # dieselbe Dauer nur einmal
+                timers.append({"label": step.get("title", "Timer"), "duration": dur, "text": m.group(0).strip()})
     if timers: step["timers"] = timers
     if events: step["events"] = events
     temps = []
@@ -385,14 +401,7 @@ def annotate_text(step: dict, text: str, ingredients: list[dict], lint: Lint, wh
         else: t["value"] = int(m["lo"])
         temps.append(t)
     if temps: step["temps"] = temps
-    # Dosierungen; Inline-Alternativen („80 g Wasser (Dinkel: 40 g)“) werden für die Grund-Dosierung maskiert
-    alts, masked = [], text
-    # Zitate sind Hinweise (Alternativen, Fallbacks, Dosierung am Tisch): Mengen darin zählen nicht als Verbrauch
-    masked = re.sub(r"(?m)^>.*$", lambda m: " " * len(m.group(0)), masked)
-    if (pat := lint.alt) is not None:
-        for m in pat.finditer(text):
-            alts.append(m)
-            masked = masked[:m.start()] + " " * (m.end() - m.start()) + masked[m.end():]
+    # Dosierungen aus dem maskierten Text (s. o.: ohne Zitate und Inline-Alternativen)
     step["ingredients"] = find_doses(masked, ingredients, lint, where, seen_doses if seen_doses is not None else set(), original=text)
     if alts:
         step["alts"] = [variant_alt(m, text, step["ingredients"], ingredients, lint, where) for m in alts]

@@ -325,15 +325,6 @@
               "cues": [
                 "bis der Zucker gelöst ist"
               ],
-              "timers": [
-                {
-                  "label": "Sauce anrühren",
-                  "duration": {
-                    "typical": "PT30S"
-                  },
-                  "text": "30 Sek"
-                }
-              ],
               "ingredients": [
                 {
                   "ref": "sojasauce",
@@ -404,15 +395,6 @@
                 "1½ EL Reisessig, 1 TL Zucker, 1 Prise Salz, 3 Umdrehungen Pfeffer und 2 EL Wasser"
               ],
               "why": "Andrea Nguyens Dressing — die Säure gegen das reiche Fleisch. Ein Teil davon wird am Ende über die Kresse gegeben.",
-              "timers": [
-                {
-                  "label": "Essig-Zwiebeln ansetzen",
-                  "duration": {
-                    "typical": "PT1M"
-                  },
-                  "text": "1 Min."
-                }
-              ],
               "ingredients": [
                 {
                   "ref": "zwiebel",
@@ -464,6 +446,15 @@
                 }
               ],
               "meta": "*jederzeit*",
+              "timers": [
+                {
+                  "label": "Essig-Zwiebeln ansetzen",
+                  "duration": {
+                    "typical": "PT20M"
+                  },
+                  "text": "5 Min. + 15 Min."
+                }
+              ],
               "after": []
             },
             {
@@ -673,29 +664,6 @@
                     "max": "PT2M"
                   },
                   "text": "1½–2 Min."
-                },
-                {
-                  "label": "Chargen braten",
-                  "duration": {
-                    "min": "PT45S",
-                    "max": "PT60S"
-                  },
-                  "text": "45–60 Sek."
-                },
-                {
-                  "label": "Chargen braten",
-                  "duration": {
-                    "min": "PT30S",
-                    "max": "PT60S"
-                  },
-                  "text": "30–60 Sek."
-                },
-                {
-                  "label": "Chargen braten",
-                  "duration": {
-                    "typical": "PT45S"
-                  },
-                  "text": "45 Sek"
                 }
               ],
               "temps": [
@@ -761,31 +729,6 @@
               ],
               "cues": [
                 "bis es duftet"
-              ],
-              "timers": [
-                {
-                  "label": "Glasieren",
-                  "duration": {
-                    "typical": "PT45S"
-                  },
-                  "text": "45 Sek."
-                },
-                {
-                  "label": "Glasieren",
-                  "duration": {
-                    "min": "PT15S",
-                    "max": "PT20S"
-                  },
-                  "text": "15–20 Sek."
-                },
-                {
-                  "label": "Glasieren",
-                  "duration": {
-                    "min": "PT30S",
-                    "max": "PT60S"
-                  },
-                  "text": "30–60 Sek."
-                }
               ],
               "ingredients": [
                 {
@@ -1029,8 +972,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:47Z",
-    "sourceHash": "cd2a525ad004e19b",
+    "generatedAt": "2026-10-12T15:12:15Z",
+    "sourceHash": "1725cd2884b9cae4",
     "quantities": [
       {
         "ingredient": "rindfleisch",

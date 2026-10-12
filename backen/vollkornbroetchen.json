@@ -300,21 +300,6 @@
                     "max": "PT12H"
                   },
                   "text": "10–12 Std."
-                },
-                {
-                  "label": "Poolish ansetzen",
-                  "duration": {
-                    "typical": "PT12H"
-                  },
-                  "text": "12 Std."
-                },
-                {
-                  "label": "Poolish ansetzen",
-                  "duration": {
-                    "min": "PT3H",
-                    "max": "PT4H"
-                  },
-                  "text": "3–4 Std."
                 }
               ],
               "temps": [
@@ -432,22 +417,6 @@
               "why": "Zu lange gekocht = klumpig = trockene Krume; nur bis zum Eindicken plus eine Minute.",
               "cues": [
                 "bis zum Eindicken plus eine Minute"
-              ],
-              "timers": [
-                {
-                  "label": "Kochstück kochen",
-                  "duration": {
-                    "typical": "PT1M"
-                  },
-                  "text": "1 Min."
-                },
-                {
-                  "label": "Kochstück kochen",
-                  "duration": {
-                    "typical": "P2D"
-                  },
-                  "text": "2 Tage"
-                }
               ],
               "events": [
                 {
@@ -626,24 +595,9 @@
                 {
                   "label": "Autolyse",
                   "duration": {
-                    "min": "PT2M",
-                    "max": "PT3M"
-                  },
-                  "text": "2–3 Min."
-                },
-                {
-                  "label": "Autolyse",
-                  "duration": {
                     "typical": "PT45M"
                   },
                   "text": "45 Min."
-                },
-                {
-                  "label": "Autolyse",
-                  "duration": {
-                    "typical": "PT30M"
-                  },
-                  "text": "30 Min."
                 }
               ],
               "temps": [
@@ -889,13 +843,6 @@
                 {
                   "label": "Kneten mit Maschine",
                   "duration": {
-                    "typical": "PT4M"
-                  },
-                  "text": "4 Min."
-                },
-                {
-                  "label": "Kneten mit Maschine",
-                  "duration": {
                     "min": "PT3M",
                     "max": "PT4M",
                     "estimated": true
@@ -908,36 +855,6 @@
                     "typical": "PT2M"
                   },
                   "text": "2 Min."
-                },
-                {
-                  "label": "Kneten mit Maschine",
-                  "duration": {
-                    "typical": "PT1M",
-                    "estimated": true
-                  },
-                  "text": "\\~1 Min."
-                },
-                {
-                  "label": "Kneten mit Maschine",
-                  "duration": {
-                    "min": "PT2M",
-                    "max": "PT3M"
-                  },
-                  "text": "2–3 Min."
-                },
-                {
-                  "label": "Kneten mit Maschine",
-                  "duration": {
-                    "typical": "PT1M"
-                  },
-                  "text": "1 Min."
-                },
-                {
-                  "label": "Kneten mit Maschine",
-                  "duration": {
-                    "typical": "PT1M"
-                  },
-                  "text": "1 Min."
                 },
                 {
                   "label": "Kneten mit Maschine",
@@ -1131,13 +1048,6 @@
                     "typical": "PT2M"
                   },
                   "text": "2 Min."
-                },
-                {
-                  "label": "Slap & Fold",
-                  "duration": {
-                    "typical": "PT3M"
-                  },
-                  "text": "3 Min."
                 }
               ],
               "events": [
@@ -1392,51 +1302,9 @@
                 {
                   "label": "Kurze Stockgare",
                   "duration": {
-                    "typical": "PT1H30M"
-                  },
-                  "text": "90 Min."
-                },
-                {
-                  "label": "Kurze Stockgare",
-                  "duration": {
-                    "typical": "PT1H"
-                  },
-                  "text": "60 Min."
-                },
-                {
-                  "label": "Kurze Stockgare",
-                  "duration": {
-                    "typical": "PT1H10M"
-                  },
-                  "text": "70 Min."
-                },
-                {
-                  "label": "Kurze Stockgare",
-                  "duration": {
-                    "typical": "PT20S"
-                  },
-                  "text": "20 Sek."
-                },
-                {
-                  "label": "Kurze Stockgare",
-                  "duration": {
                     "typical": "PT50M"
                   },
                   "text": "50 Min."
-                },
-                {
-                  "label": "Kurze Stockgare",
-                  "duration": {
-                    "typical": "PT1H"
-                  },
-                  "text": "60 Min."
-                },
-                {
-                  "label": "Kurze Stockgare",
-                  "duration": {
-                    "typical": "PT1H"
-                  },
-                  "text": "60 Min."
                 }
               ],
               "temps": [
@@ -1523,23 +1391,9 @@
                 {
                   "label": "Stockgare mit 2× Falten",
                   "duration": {
-                    "typical": "PT1H15M"
-                  },
-                  "text": "75 Min."
-                },
-                {
-                  "label": "Stockgare mit 2× Falten",
-                  "duration": {
                     "typical": "PT1H"
                   },
                   "text": "60 Min."
-                },
-                {
-                  "label": "Stockgare mit 2× Falten",
-                  "duration": {
-                    "typical": "PT20S"
-                  },
-                  "text": "20 Sek."
                 },
                 {
                   "label": "Stockgare mit 2× Falten",
@@ -1632,24 +1486,9 @@
                 {
                   "label": "Stockgare mit 3× Falten",
                   "duration": {
-                    "min": "PT1H15M",
-                    "max": "PT1H30M"
-                  },
-                  "text": "75–90 Min."
-                },
-                {
-                  "label": "Stockgare mit 3× Falten",
-                  "duration": {
                     "typical": "PT1H30M"
                   },
                   "text": "90 Min."
-                },
-                {
-                  "label": "Stockgare mit 3× Falten",
-                  "duration": {
-                    "typical": "PT20S"
-                  },
-                  "text": "20 Sek."
                 },
                 {
                   "label": "Stockgare mit 3× Falten",
@@ -1838,14 +1677,6 @@
                 {
                   "label": "Kühlschrankgare über Nacht",
                   "duration": {
-                    "min": "PT9H",
-                    "max": "PT10H"
-                  },
-                  "text": "9–10 Std."
-                },
-                {
-                  "label": "Kühlschrankgare über Nacht",
-                  "duration": {
                     "min": "PT8H",
                     "max": "PT14H"
                   },
@@ -2022,14 +1853,6 @@
                     "max": "PT1H15M"
                   },
                   "text": "60–75 Min."
-                },
-                {
-                  "label": "Stückgare",
-                  "duration": {
-                    "min": "PT50M",
-                    "max": "PT1H"
-                  },
-                  "text": "50–60 Min."
                 }
               ],
               "temps": [
@@ -2257,14 +2080,6 @@
                 {
                   "label": "Vorbacken und fertig backen",
                   "duration": {
-                    "min": "PT5S",
-                    "max": "PT10S"
-                  },
-                  "text": "5–10 Sek."
-                },
-                {
-                  "label": "Vorbacken und fertig backen",
-                  "duration": {
                     "min": "PT3M",
                     "max": "PT4M"
                   },
@@ -2293,14 +2108,6 @@
                     "max": "PT6M"
                   },
                   "text": "5–6 Min."
-                },
-                {
-                  "label": "Vorbacken und fertig backen",
-                  "duration": {
-                    "min": "PT1M",
-                    "max": "PT2M"
-                  },
-                  "text": "1–2 Min."
                 }
               ],
               "temps": [
@@ -2383,14 +2190,6 @@
                     "typical": "PT10M"
                   },
                   "text": "10 Min."
-                },
-                {
-                  "label": "Backen",
-                  "duration": {
-                    "min": "PT5S",
-                    "max": "PT10S"
-                  },
-                  "text": "5–10 Sek."
                 },
                 {
                   "label": "Backen",
@@ -2534,13 +2333,6 @@
                 {
                   "label": "Aufbacken",
                   "duration": {
-                    "typical": "PT2S"
-                  },
-                  "text": "2 Sek."
-                },
-                {
-                  "label": "Aufbacken",
-                  "duration": {
                     "min": "PT8M",
                     "max": "PT10M"
                   },
@@ -2552,13 +2344,6 @@
                     "typical": "PT5M"
                   },
                   "text": "5 Min."
-                },
-                {
-                  "label": "Aufbacken",
-                  "duration": {
-                    "typical": "PT8M"
-                  },
-                  "text": "8 Min."
                 }
               ],
               "temps": [
@@ -3158,8 +2943,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:47Z",
-    "sourceHash": "f0980e22fcad9082",
+    "generatedAt": "2026-10-12T15:12:15Z",
+    "sourceHash": "0c726485e1b5532d",
     "select": {
       "mehl": "weizen",
       "weg": "uebernacht",

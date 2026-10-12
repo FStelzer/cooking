@@ -757,21 +757,6 @@
                 {
                   "label": "Grillgemüse",
                   "duration": {
-                    "typical": "PT15M"
-                  },
-                  "text": "15 Min."
-                },
-                {
-                  "label": "Grillgemüse",
-                  "duration": {
-                    "min": "PT2M",
-                    "max": "PT3M"
-                  },
-                  "text": "2–3 Min."
-                },
-                {
-                  "label": "Grillgemüse",
-                  "duration": {
                     "min": "PT2M",
                     "max": "PT3M"
                   },
@@ -1115,8 +1100,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:48Z",
-    "sourceHash": "c8436cc6de092653",
+    "generatedAt": "2026-10-12T15:12:16Z",
+    "sourceHash": "bf60cfad869bf7fe",
     "select": {
       "garen": "ofen"
     },

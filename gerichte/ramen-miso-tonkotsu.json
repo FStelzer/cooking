@@ -1069,15 +1069,6 @@
                         "3 L",
                         "Nicht salzen"
                       ],
-                      "timers": [
-                        {
-                          "label": "Abseihen + Emulsion",
-                          "duration": {
-                            "typical": "PT30S"
-                          },
-                          "text": "30 Sek."
-                        }
-                      ],
                       "ingredients": [],
                       "attention": "active"
                     },
@@ -1175,22 +1166,6 @@
                       },
                       "text": "Am Kochtag im 6L-Topf aufkochen, 1 Min sprudeln lassen, nochmal 15 Sek. mixen, dann auf kleiner Flamme **kochend** halten (Miso-Ramen wird sehr heiß serviert).",
                       "action": "Am Kochtag im 6L-Topf aufkochen, 1 Min sprudeln lassen, nochmal 15 Sek. mixen, dann auf kleiner Flamme **kochend** halten (Miso-Ramen wird sehr heiß serviert).",
-                      "timers": [
-                        {
-                          "label": "Brühe aufkochen",
-                          "duration": {
-                            "typical": "PT1M"
-                          },
-                          "text": "1 Min"
-                        },
-                        {
-                          "label": "Brühe aufkochen",
-                          "duration": {
-                            "typical": "PT15S"
-                          },
-                          "text": "15 Sek."
-                        }
-                      ],
                       "ingredients": [],
                       "meta": "*nur Vortag · nach Abkühlen und lagern · Herd*",
                       "claims": [
@@ -1203,6 +1178,15 @@
                         "ablauf=vortag"
                       ],
                       "attention": "attended",
+                      "timers": [
+                        {
+                          "label": "Brühe aufkochen",
+                          "duration": {
+                            "typical": "PT15M"
+                          },
+                          "text": "ca. 15 Min."
+                        }
+                      ],
                       "after": [
                         "step:gang-2-abkuehlen-und-lagern"
                       ]
@@ -1251,13 +1235,6 @@
                             "max": "PT4M"
                           },
                           "text": "3-4 Min"
-                        },
-                        {
-                          "label": "Sesam rösten",
-                          "duration": {
-                            "typical": "PT20S"
-                          },
-                          "text": "20 Sek."
                         }
                       ],
                       "ingredients": [
@@ -1378,15 +1355,6 @@
                       },
                       "text": "1 TL Tare in 60 ml heißem Wasser auflösen und probieren — so schmeckt sie später verdünnt. Zu flach → 1 EL Aka Miso mehr. Zu salzig → 1 EL Shiro Miso mehr (Shiro ist milder). Abgedeckt in den Kühlschrank; sie wird über Nacht runder.\n\n> **Dosierung:** 2,5 EL pro Erwachsenen-Schüssel, 1-1,5 EL pro Kinder-Schüssel (siehe Wok-Durchgänge). Nicht kochen — nur die 20 Sek. Anrösten im Wok, dann sofort Brühe drauf.",
                       "action": "1 TL Tare in 60 ml heißem Wasser auflösen und probieren — so schmeckt sie später verdünnt.",
-                      "timers": [
-                        {
-                          "label": "Tare abschmecken",
-                          "duration": {
-                            "typical": "PT20S"
-                          },
-                          "text": "20 Sek."
-                        }
-                      ],
                       "ingredients": [
                         {
                           "ref": "wasser",
@@ -1522,15 +1490,6 @@
                       "action": "Beide Chargen zurück in die Pfanne, Hitze auf mittel, 1 EL geriebenen Knoblauch/Ingwer 30 Sek. mitbraten, bis es duftet.",
                       "cues": [
                         "bis es duftet"
-                      ],
-                      "timers": [
-                        {
-                          "label": "Hack-Aromaten",
-                          "duration": {
-                            "typical": "PT30S"
-                          },
-                          "text": "30 Sek."
-                        }
                       ],
                       "ingredients": [
                         {
@@ -1772,13 +1731,6 @@
                             "typical": "PT30M"
                           },
                           "text": "30 Min"
-                        },
-                        {
-                          "label": "Eier kochen",
-                          "duration": {
-                            "typical": "PT30M"
-                          },
-                          "text": "30 Min"
                         }
                       ],
                       "ingredients": [
@@ -1943,13 +1895,6 @@
                             "typical": "PT2M"
                           },
                           "text": "2 Min"
-                        },
-                        {
-                          "label": "Sprossen",
-                          "duration": {
-                            "typical": "PT30S"
-                          },
-                          "text": "30 Sek."
                         }
                       ],
                       "events": [
@@ -2185,14 +2130,6 @@
                         {
                           "label": "Nudelwasser",
                           "duration": {
-                            "min": "PT10S",
-                            "max": "PT15S"
-                          },
-                          "text": "10-15 Sek."
-                        },
-                        {
-                          "label": "Nudelwasser",
-                          "duration": {
                             "min": "PT2M",
                             "max": "PT2M",
                             "estimated": true
@@ -2206,13 +2143,6 @@
                             "estimated": true
                           },
                           "text": "\\~4 Min."
-                        },
-                        {
-                          "label": "Nudelwasser",
-                          "duration": {
-                            "typical": "PT10S"
-                          },
-                          "text": "10 Sek."
                         }
                       ],
                       "ingredients": [
@@ -2302,27 +2232,6 @@
                         {
                           "label": "Wok-Durchgänge",
                           "duration": {
-                            "typical": "PT10S"
-                          },
-                          "text": "10 Sek."
-                        },
-                        {
-                          "label": "Wok-Durchgänge",
-                          "duration": {
-                            "typical": "PT10S"
-                          },
-                          "text": "10 Sek."
-                        },
-                        {
-                          "label": "Wok-Durchgänge",
-                          "duration": {
-                            "typical": "PT30S"
-                          },
-                          "text": "30 Sek."
-                        },
-                        {
-                          "label": "Wok-Durchgänge",
-                          "duration": {
                             "min": "PT1M",
                             "max": "PT2M"
                           },
@@ -2331,53 +2240,9 @@
                         {
                           "label": "Wok-Durchgänge",
                           "duration": {
-                            "typical": "PT20S"
-                          },
-                          "text": "20 Sek."
-                        },
-                        {
-                          "label": "Wok-Durchgänge",
-                          "duration": {
-                            "typical": "PT20S"
-                          },
-                          "text": "20 Sek."
-                        },
-                        {
-                          "label": "Wok-Durchgänge",
-                          "duration": {
-                            "min": "PT30S",
-                            "max": "PT60S"
-                          },
-                          "text": "30-60 Sek."
-                        },
-                        {
-                          "label": "Wok-Durchgänge",
-                          "duration": {
                             "typical": "PT5M"
                           },
                           "text": "5 Min"
-                        },
-                        {
-                          "label": "Wok-Durchgänge",
-                          "duration": {
-                            "min": "PT6M",
-                            "max": "PT8M"
-                          },
-                          "text": "6-8 Min"
-                        },
-                        {
-                          "label": "Wok-Durchgänge",
-                          "duration": {
-                            "typical": "PT2M"
-                          },
-                          "text": "2,5 Min"
-                        },
-                        {
-                          "label": "Wok-Durchgänge",
-                          "duration": {
-                            "typical": "PT4M"
-                          },
-                          "text": "4 Min"
                         }
                       ],
                       "ingredients": [
@@ -3581,8 +3446,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:47Z",
-    "sourceHash": "87c6033e76ea5ae8",
+    "generatedAt": "2026-10-12T15:12:15Z",
+    "sourceHash": "4513ec619b479e8b",
     "select": {
       "ablauf": "vortag"
     },

@@ -678,15 +678,6 @@
                 "ohne Deckel",
                 "Nicht länger als 45 Min köcheln"
               ],
-              "timers": [
-                {
-                  "label": "Köcheln",
-                  "duration": {
-                    "typical": "PT45M"
-                  },
-                  "text": "45 Min"
-                }
-              ],
               "ingredients": [],
               "meta": "*Herd*",
               "claims": [
@@ -695,7 +686,16 @@
                   "units": 1
                 }
               ],
-              "attention": "attended"
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Köcheln",
+                  "duration": {
+                    "typical": "PT40M"
+                  },
+                  "text": "40 Min."
+                }
+              ]
             },
             {
               "id": "passieren",
@@ -1045,13 +1045,6 @@
                     "typical": "PT6M"
                   },
                   "text": "6 Min"
-                },
-                {
-                  "label": "Fisch garen",
-                  "duration": {
-                    "typical": "PT3M"
-                  },
-                  "text": "3 Min"
                 },
                 {
                   "label": "Fisch garen",
@@ -1419,8 +1412,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:47Z",
-    "sourceHash": "523c8042f7f583d9",
+    "generatedAt": "2026-10-12T15:12:15Z",
+    "sourceHash": "fe877de532345733",
     "quantities": [
       {
         "ingredient": "fischkarkassen",

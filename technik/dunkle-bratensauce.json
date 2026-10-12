@@ -977,15 +977,6 @@
               "cues": [
                 "bis es dunkel wird und nussig riecht"
               ],
-              "timers": [
-                {
-                  "label": "Tomatenmark rösten",
-                  "duration": {
-                    "typical": "PT1M"
-                  },
-                  "text": "1 Min"
-                }
-              ],
               "ingredients": [
                 {
                   "ref": "tomatenmark",
@@ -1006,7 +997,16 @@
               "only": [
                 "weg=schnell"
               ],
-              "attention": "attended"
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Tomatenmark rösten",
+                  "duration": {
+                    "typical": "PT1M"
+                  },
+                  "text": "1 Min."
+                }
+              ]
             },
             {
               "id": "bier-einkochen",
@@ -1302,8 +1302,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:48Z",
-    "sourceHash": "153260526505b3e1",
+    "generatedAt": "2026-10-12T15:12:16Z",
+    "sourceHash": "f3e2c50981e9a65f",
     "select": {
       "weg": "vorrats-fond"
     },

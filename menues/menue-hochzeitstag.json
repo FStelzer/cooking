@@ -1123,13 +1123,6 @@
                             "typical": "PT90S"
                           },
                           "text": "90 Sek"
-                        },
-                        {
-                          "label": "Muscheln braten",
-                          "duration": {
-                            "typical": "PT60S"
-                          },
-                          "text": "60 Sek"
                         }
                       ],
                       "ingredients": [],
@@ -1544,15 +1537,6 @@
                       },
                       "text": "1 Schalotte fein würfeln, in 1 EL Butter glasig anschwitzen. 200g abgetropfte Kirschen dazugeben, 1 Min mitbraten.",
                       "action": "1 Schalotte fein würfeln, in 1 EL Butter glasig anschwitzen.",
-                      "timers": [
-                        {
-                          "label": "Schalotte anschwitzen",
-                          "duration": {
-                            "typical": "PT1M"
-                          },
-                          "text": "1 Min"
-                        }
-                      ],
                       "ingredients": [
                         {
                           "ref": "schalotten",
@@ -2950,8 +2934,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:48Z",
-    "sourceHash": "f91f40fe0de7308c",
+    "generatedAt": "2026-10-12T15:12:15Z",
+    "sourceHash": "9ba2c5e8bfff7960",
     "quantities": [
       {
         "ingredient": "jakobsmuscheln",

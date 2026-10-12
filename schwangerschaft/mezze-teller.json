@@ -1364,28 +1364,6 @@
                     "max": "PT10M"
                   },
                   "text": "8–10 Min."
-                },
-                {
-                  "label": "Kafta garen",
-                  "duration": {
-                    "min": "PT8M",
-                    "max": "PT10M"
-                  },
-                  "text": "8–10 Min."
-                },
-                {
-                  "label": "Kafta garen",
-                  "duration": {
-                    "typical": "PT2M"
-                  },
-                  "text": "2 Min."
-                },
-                {
-                  "label": "Kafta garen",
-                  "duration": {
-                    "typical": "PT3M"
-                  },
-                  "text": "3 Min."
                 }
               ],
               "temps": [
@@ -1606,8 +1584,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:48Z",
-    "sourceHash": "44345b3794e21ad2",
+    "generatedAt": "2026-10-12T15:12:16Z",
+    "sourceHash": "5faeef8bab15106e",
     "quantities": [
       {
         "ingredient": "tahina",

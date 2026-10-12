@@ -1201,15 +1201,6 @@
                 "kräftig ausschütteln",
                 "Sofort servieren!"
               ],
-              "timers": [
-                {
-                  "label": "Anrichten",
-                  "duration": {
-                    "typical": "PT10S"
-                  },
-                  "text": "10 Sek"
-                }
-              ],
               "ingredients": [
                 {
                   "ref": "eier",
@@ -1229,6 +1220,15 @@
                 }
               ],
               "attention": "attended",
+              "timers": [
+                {
+                  "label": "Anrichten",
+                  "duration": {
+                    "typical": "PT15M"
+                  },
+                  "text": "ca. 15 Min."
+                }
+              ],
               "after": [
                 "step:abseihen",
                 "step:tare",
@@ -1565,8 +1565,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:47Z",
-    "sourceHash": "27791bbde8d5f405",
+    "generatedAt": "2026-10-12T15:12:15Z",
+    "sourceHash": "3a1ca979725cac1b",
     "quantities": [
       {
         "ingredient": "ramen-nudeln",

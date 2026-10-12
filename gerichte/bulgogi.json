@@ -286,14 +286,6 @@
                     "typical": "PT15M"
                   },
                   "text": "15 Min."
-                },
-                {
-                  "label": "Fleisch anfrieren",
-                  "duration": {
-                    "typical": "PT25M",
-                    "estimated": true
-                  },
-                  "text": "\\~25 Min."
                 }
               ],
               "ingredients": [
@@ -863,14 +855,6 @@
                     "max": "PT2M"
                   },
                   "text": "1–2 Min."
-                },
-                {
-                  "label": "In Chargen braten",
-                  "duration": {
-                    "typical": "PT1M",
-                    "estimated": true
-                  },
-                  "text": "\\~1 Min."
                 }
               ],
               "ingredients": [
@@ -1098,8 +1082,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:47Z",
-    "sourceHash": "f760d47e25887c14",
+    "generatedAt": "2026-10-12T15:12:15Z",
+    "sourceHash": "02253b99941604aa",
     "quantities": [
       {
         "ingredient": "gochujang",

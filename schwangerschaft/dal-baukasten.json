@@ -692,28 +692,6 @@
                 {
                   "label": "Masala",
                   "duration": {
-                    "typical": "PT20S"
-                  },
-                  "text": "20 Sek."
-                },
-                {
-                  "label": "Masala",
-                  "duration": {
-                    "min": "PT8M",
-                    "max": "PT10M"
-                  },
-                  "text": "8–10 Min."
-                },
-                {
-                  "label": "Masala",
-                  "duration": {
-                    "typical": "PT1M"
-                  },
-                  "text": "1 Min."
-                },
-                {
-                  "label": "Masala",
-                  "duration": {
                     "min": "PT8M",
                     "max": "PT10M"
                   },
@@ -892,29 +870,6 @@
                 "½ TL Kashmiri-Chili + 1 Prise Hing",
                 "1 TL Kasuri Methi",
                 "½ TL Garam Masala, 1 EL Zitronensaft, 3 EL Koriandergrün"
-              ],
-              "timers": [
-                {
-                  "label": "Tadka Erwachsene",
-                  "duration": {
-                    "typical": "PT20S"
-                  },
-                  "text": "20 Sek."
-                },
-                {
-                  "label": "Tadka Erwachsene",
-                  "duration": {
-                    "typical": "PT20S"
-                  },
-                  "text": "20 Sek."
-                },
-                {
-                  "label": "Tadka Erwachsene",
-                  "duration": {
-                    "typical": "PT5S"
-                  },
-                  "text": "5 Sek"
-                }
               ],
               "ingredients": [
                 {
@@ -1167,13 +1122,6 @@
                 "1 TL Kasuri Methi, ½ TL Garam Masala, 1 EL Zitrone."
               ],
               "timers": [
-                {
-                  "label": "Palak-Tadka Erwachsene",
-                  "duration": {
-                    "typical": "PT30S"
-                  },
-                  "text": "30 Sek."
-                },
                 {
                   "label": "Palak-Tadka Erwachsene",
                   "duration": {
@@ -1555,14 +1503,6 @@
                 {
                   "label": "Chana-Masala",
                   "duration": {
-                    "min": "PT8M",
-                    "max": "PT10M"
-                  },
-                  "text": "8–10 Min."
-                },
-                {
-                  "label": "Chana-Masala",
-                  "duration": {
                     "typical": "PT5M"
                   },
                   "text": "5 Min."
@@ -1909,14 +1849,6 @@
                     "max": "PT25M"
                   },
                   "text": "20–25 Min."
-                },
-                {
-                  "label": "Moong kochen",
-                  "duration": {
-                    "min": "PT15M",
-                    "max": "PT20M"
-                  },
-                  "text": "15–20 Min."
                 }
               ],
               "ingredients": [
@@ -2394,23 +2326,9 @@
                 {
                   "label": "Makhani-Masala",
                   "duration": {
-                    "typical": "PT30S"
-                  },
-                  "text": "30 Sek."
-                },
-                {
-                  "label": "Makhani-Masala",
-                  "duration": {
                     "typical": "PT8M"
                   },
                   "text": "8 Min."
-                },
-                {
-                  "label": "Makhani-Masala",
-                  "duration": {
-                    "typical": "PT1M"
-                  },
-                  "text": "1 Min."
                 },
                 {
                   "label": "Makhani-Masala",
@@ -2938,14 +2856,6 @@
                     "typical": "PT15M"
                   },
                   "text": "15 Min."
-                },
-                {
-                  "label": "Vollkorn-Roti",
-                  "duration": {
-                    "min": "PT30S",
-                    "max": "PT40S"
-                  },
-                  "text": "30–40 Sek."
                 }
               ],
               "ingredients": [
@@ -3222,8 +3132,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:48Z",
-    "sourceHash": "32fabd3caf6d396b",
+    "generatedAt": "2026-10-12T15:12:15Z",
+    "sourceHash": "d3d7bb92c1a8b269",
     "select": {
       "variante": "grundrezept",
       "beilage": "kachumber"

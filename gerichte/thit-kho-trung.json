@@ -362,15 +362,6 @@
               "cues": [
                 "bis das Karamell tief bernsteinfarben ist"
               ],
-              "timers": [
-                {
-                  "label": "Karamell — der entscheidende Schritt",
-                  "duration": {
-                    "typical": "PT5M"
-                  },
-                  "text": "5 Min"
-                }
-              ],
               "ingredients": [
                 {
                   "ref": "zucker",
@@ -416,15 +407,6 @@
               ],
               "cues": [
                 "bis alle Würfel karamellüberzogen und leicht angebraten sind"
-              ],
-              "timers": [
-                {
-                  "label": "Anbraten",
-                  "duration": {
-                    "typical": "PT30S"
-                  },
-                  "text": "30 Sek."
-                }
               ],
               "ingredients": [
                 {
@@ -732,8 +714,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:48Z",
-    "sourceHash": "1cfe704b4266336e",
+    "generatedAt": "2026-10-12T15:12:15Z",
+    "sourceHash": "eafe1e47a4d4006c",
     "quantities": [
       {
         "ingredient": "schweinebauch",

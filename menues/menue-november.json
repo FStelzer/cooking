@@ -914,16 +914,6 @@
                       "limits": [
                         "Erst kurz vor dem Servieren"
                       ],
-                      "timers": [
-                        {
-                          "label": "Concassé",
-                          "duration": {
-                            "min": "PT10S",
-                            "max": "PT15S"
-                          },
-                          "text": "10–15 Sek."
-                        }
-                      ],
                       "ingredients": [
                         {
                           "ref": "datteltomaten",
@@ -950,6 +940,15 @@
                         }
                       ],
                       "attention": "attended",
+                      "timers": [
+                        {
+                          "label": "Concassé",
+                          "duration": {
+                            "typical": "PT15M"
+                          },
+                          "text": "ca. 15 Min."
+                        }
+                      ],
                       "after": []
                     },
                     {
@@ -1914,24 +1913,6 @@
                       "limits": [
                         "Bei 60–62 °C Kern raus"
                       ],
-                      "timers": [
-                        {
-                          "label": "Braten und arrosieren",
-                          "duration": {
-                            "min": "PT45S",
-                            "max": "PT60S"
-                          },
-                          "text": "45–60 Sek."
-                        },
-                        {
-                          "label": "Braten und arrosieren",
-                          "duration": {
-                            "min": "PT45S",
-                            "max": "PT60S"
-                          },
-                          "text": "45–60 Sek."
-                        }
-                      ],
                       "temps": [
                         {
                           "kind": "kern",
@@ -2736,16 +2717,6 @@
                       },
                       "text": "Hälfte der Blätter 30–60 Sek. in kräftig gesalzenem Wasser (12 g Salz/L) blanchieren, sofort in Eiswasser, gut abtropfen — fixiert das Knallgrün, kann Stunden vorher passieren.",
                       "action": "Hälfte der Blätter 30–60 Sek. in kräftig gesalzenem Wasser (12 g Salz/L) blanchieren, sofort in Eiswasser, gut abtropfen — fixiert das Knallgrün, kann Stunden vorher passieren.",
-                      "timers": [
-                        {
-                          "label": "Blätter blanchieren",
-                          "duration": {
-                            "min": "PT30S",
-                            "max": "PT60S"
-                          },
-                          "text": "30–60 Sek."
-                        }
-                      ],
                       "ingredients": [
                         {
                           "ref": "salz",
@@ -2771,7 +2742,16 @@
                           "units": 1
                         }
                       ],
-                      "attention": "attended"
+                      "attention": "attended",
+                      "timers": [
+                        {
+                          "label": "Blätter blanchieren",
+                          "duration": {
+                            "typical": "PT10M"
+                          },
+                          "text": "ca. 10 Min."
+                        }
+                      ]
                     },
                     {
                       "id": "gang-3-chips-frittieren",
@@ -2793,14 +2773,6 @@
                             "max": "PT3M"
                           },
                           "text": "2–3 Min."
-                        },
-                        {
-                          "label": "Chips frittieren",
-                          "duration": {
-                            "typical": "PT30S",
-                            "estimated": true
-                          },
-                          "text": "\\~30 Sek."
                         }
                       ],
                       "temps": [
@@ -2878,14 +2850,6 @@
                             "max": "PT2H"
                           },
                           "text": "1–2 Std."
-                        },
-                        {
-                          "label": "Chips lagern",
-                          "duration": {
-                            "min": "PT15M",
-                            "max": "PT25M"
-                          },
-                          "text": "15–25 Min."
                         }
                       ],
                       "temps": [
@@ -3620,16 +3584,6 @@
                       "cues": [
                         "bis der Shaker beschlägt"
                       ],
-                      "timers": [
-                        {
-                          "label": "Shaken",
-                          "duration": {
-                            "min": "PT15S",
-                            "max": "PT20S"
-                          },
-                          "text": "15–20 Sek."
-                        }
-                      ],
                       "ingredients": [
                         {
                           "ref": "zucker",
@@ -4160,8 +4114,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:09:48Z",
-    "sourceHash": "ce17bb2986545a4e",
+    "generatedAt": "2026-10-12T15:12:15Z",
+    "sourceHash": "e411f0597e668957",
     "quantities": [
       {
         "ingredient": "verjus",
