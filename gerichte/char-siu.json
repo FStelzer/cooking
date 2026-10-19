@@ -1,0 +1,2343 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/char-siu",
+  "kind": "dish",
+  "title": "Char Siu — kantonesisches BBQ-Schwein mit kalten Sesamnudeln (4 Portionen + Reste)",
+  "status": "done",
+  "yields": {
+    "text": "4 Portionen + Reste",
+    "value": 4.0,
+    "unit": "Portionen"
+  },
+  "intro": "*Aktive Zeit \\~1,5 Std., gesamt über Nacht + \\~2,5 Std. am Kochtag (Vortag 20 Min., dann \\~1 Std. Ofen). Equipment: Backofen mit Grillfunktion, tiefes Blech + Ofengitter, Fleischthermometer, Silikonpinsel, Mandoline, großer Topf.*\n\nKantonesisches Siu-Mei-Grundrezept: Schweinenacken in dicken Streifen über Nacht in Hoisin, rotem fermentiertem Tofu (nam yu), Fünf-Gewürze-Pulver und zwei Sojasaucen mariniert, im Ofen über einem Wasserbad zweistufig gegart, mit heißer Maltose-Glasur mehrfach lackiert und zum Schluss unter dem Grill angeschwärzt — außen klebrig-karamellig mit dunklen Rändern, innen saftig und durch. Dazu kalte Nudeln mit gerösteter chinesischer Sesampaste, Chinkiang-Essig und viel knackiger Gurke, blanchierter Pak Choi mit Austernsauce, Chiliöl nur separat. Die Menge ist so gerechnet, dass \\~400 g Char Siu als Ramen-Topping fürs nächste Mal übrig bleiben.",
+  "times": {
+    "text": "Aktive Zeit ~1,5 Std., gesamt über Nacht + ~2,5 Std.",
+    "active": {
+      "typical": "PT1H30M",
+      "source": "1,5 Std."
+    },
+    "total": {
+      "min": "PT8H",
+      "max": "PT14H",
+      "source": "über Nacht"
+    }
+  },
+  "equipment": [
+    "Backofen mit Grillfunktion",
+    "tiefes Blech + Ofengitter",
+    "Fleischthermometer",
+    "Silikonpinsel",
+    "Mandoline",
+    "großer Topf"
+  ],
+  "ingredients": [
+    {
+      "id": "pak",
+      "name": "Pak Choi",
+      "store": "Asialaden",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "400 g"
+      },
+      "note": "Baby-Pak-Choi, alternativ REWE Center"
+    },
+    {
+      "id": "fruehlingszwiebeln",
+      "name": "Frühlingszwiebeln",
+      "store": "Asialaden",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      }
+    },
+    {
+      "id": "ramen-nudeln",
+      "name": "Ramen-Nudeln, getrocknet",
+      "store": "Asialaden",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "270 g"
+      },
+      "note": "1 Pkg. Hakubaku; Alternative: chinesische Weizennudeln, siehe Beschaffung"
+    },
+    {
+      "id": "tofu",
+      "name": "Tofu, rot fermentiert",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1 Glas"
+      },
+      "note": "nam yu, 300–350 g — Verbrauch 2 Würfel + 2 EL Lake; Fallback: rote Misopaste + Paprika"
+    },
+    {
+      "id": "maltose",
+      "name": "Maltose",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1 Becher"
+      },
+      "note": "500 g — Verbrauch 80 g; Fallback: Honig"
+    },
+    {
+      "id": "sesampaste",
+      "name": "Sesampaste, chinesisch, geröstet",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1 Glas"
+      },
+      "note": "Verbrauch 4 EL; Fallback: Tahina + gerösteter Sesam"
+    },
+    {
+      "id": "hoisinsauce",
+      "name": "Hoisinsauce",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1 Flasche"
+      },
+      "note": "Verbrauch 4 EL"
+    },
+    {
+      "id": "sojasauce",
+      "name": "Helle Sojasauce",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1 Flasche"
+      },
+      "note": "Verbrauch 5 EL — siehe Mengen-Check"
+    },
+    {
+      "id": "dunkle-sojasauce",
+      "name": "Dunkle Sojasauce",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1 Flasche"
+      },
+      "note": "Verbrauch 1 EL"
+    },
+    {
+      "id": "austernsauce",
+      "name": "Austernsauce",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1 Flasche"
+      },
+      "note": "Verbrauch 2 EL"
+    },
+    {
+      "id": "chinkiang-essig",
+      "name": "Chinkiang-Essig",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1 Flasche"
+      },
+      "note": "schwarzer Reisessig, Verbrauch 2½ EL"
+    },
+    {
+      "id": "fuenf-gewuerze-pulver",
+      "name": "Fünf-Gewürze-Pulver",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1 Tüte"
+      },
+      "note": "Verbrauch 1 TL; falls nicht im Vorrat"
+    },
+    {
+      "id": "chilioel",
+      "name": "Chiliöl",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1 Glas"
+      },
+      "note": "z. B. Lao Gan Ma Spicy Chili Crisp — nur für Erwachsene am Tisch"
+    },
+    {
+      "id": "schweinenacken",
+      "name": "Schweinenacken ohne Knochen, **am Stück**",
+      "store": "REWE Center",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "1,5 kg"
+      }
+    },
+    {
+      "id": "salatgurken",
+      "name": "Salatgurken",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      }
+    },
+    {
+      "id": "karotten",
+      "name": "Karotten",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      }
+    },
+    {
+      "id": "knoblauch",
+      "name": "Knoblauch",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Knolle"
+      },
+      "note": "Verbrauch 6 Zehen"
+    },
+    {
+      "id": "ingwer",
+      "name": "Ingwer",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Stück"
+      },
+      "note": "\\~40 g"
+    },
+    {
+      "id": "koriander",
+      "name": "Koriander",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      },
+      "optional": true
+    },
+    {
+      "id": "zucker",
+      "name": "Zucker",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "3 EL + 2 TL"
+    },
+    {
+      "id": "sesamoel",
+      "name": "Sesamöl, geröstet",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "\\~2½ EL gesamt"
+    },
+    {
+      "id": "sesam",
+      "name": "Sesam, geröstet",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "1 EL"
+    },
+    {
+      "id": "pfeffer",
+      "name": "Weißer Pfeffer",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "paprikapulver",
+      "name": "Paprikapulver, edelsüß",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Schweinenacken (REWE Center, zuverlässig):** 1,5 kg ohne Knochen **am Stück**, nicht als Steaks/Grillscheiben — die 4–5 cm dicken Streifen schneidet man selbst. Nacken ist der beste Haushalts-Cut: genug intramuskuläres Fett, um eine Kerntemperatur über 70 °C saftig zu überstehen (wichtig wegen der Schwangerschaft, siehe unten). Schweinebauch ohne Schwarte geht auch, wird fetter; Schulter/Schweinebauch-Mix ist CCD-Standard, für diesen Haushalt aber unnötig schwer.\n- **Asialaden — zuverlässig:** Hoisinsauce (Lee Kum Kee; gibt es notfalls auch bei REWE), helle und dunkle Sojasauce (Pearl River Bridge), Austernsauce, Chinkiang-Essig (schwarzer Reisessig), Fünf-Gewürze-Pulver, Chiliöl (Lao Gan Ma „Spicy Chili Crisp\" o. ä.), Trocken-Ramen (Hakubaku), Pak Choi.\n- **Asialaden — unsicher, ☎ vorher anrufen:**\n  - **Roter fermentierter Tofu** (*nam yu* 南乳, „Red Fermented Bean Curd\", Gläser à 300–350 g, z. B. Pearl River Bridge, Wangzhihe, Healthy Boy). In chinesisch geführten Läden meist da, in vietnamesisch/thailändisch geführten eher nicht. Etikett prüfen: Farbe soll von rotem Reis (*hong qu*, „red yeast rice\") kommen, nicht von Azofarbstoff. Hält geöffnet gekühlt Monate. **Fallback:** 1 EL rote Misopaste + 1 TL Paprikapulver edelsüß — so ersetzt Chinese Cooking Demystified die Umami- und Farbfunktion. Weißer fermentierter Tofu (*fu ru*) bringt dasselbe Umami, aber keine Farbe.\n  - **Maltose** (Malzzuckersirup, steinhart im Becher, meist 500 g). Nicht in jedem Laden. **Fallback:** Honig — glänzt etwas weniger, haftet schlechter und verbrennt unter dem Grill schneller (Grillzeit halbieren, siehe „Char unter dem Grill“).\n  - **Chinesische Sesampaste** (*zhi ma jiang* 芝麻酱, aus **gerösteten** Samen, dunkelbraun; z. B. Wangzhihe „Pure Sesame Paste\", Pearl River Bridge). **Nicht die Variante „with peanut butter\"** nehmen, wenn reine da ist. **Fallback:** Tahina (aus ungerösteten Samen, blass und milder) plus 2 EL selbst geröstete, im Mörser zerstoßene Sesamsamen plus 1 TL geröstetes Sesamöl extra — kommt nahe heran. Supermarkt-Tahina ist oft bitter; wenn schon, dann gute libanesische (siehe CLAUDE.md, Einkaufsquellen).\n- **Rote Farbe — ehrliche Abwägung:** Das Neonrot aus dem China-Imbiss ist Lebensmittelfarbe (in den USA Red 40 = **E129 Allurarot**). In der EU tragen Lebensmittel mit E129/E124 den Pflicht-Warnhinweis „kann Aktivität und Aufmerksamkeit bei Kindern beeinträchtigen\" — für einen Dreijährigen keine Option, geschmacklich bringt sie null. **Roter fermentierter Tofu** ist die traditionelle Farbquelle und bringt gleichzeitig Umami; er färbt allein aber eher rotbraun-mahagoni als knallrot. Adam Liaw sagt es klar: Das Rot entsteht zum größten Teil aus Bräunung und karamellisierter Glasur, nicht aus Farbstoff. **Rote-Bete-Pulver** ist hitzeinstabil (Betanin wird bei 180–220 °C braun) — bringt im Ofen nichts. **Paprikapulver edelsüß** (1 TL) verstärkt den Rotton hitzestabil und geschmacksneutral (CCD-Test). **Rotschimmelreis-Pulver** (*angkak*) wäre die „echte\" Farbe, in der Schwangerschaft aber bewusst nicht als Extra-Zutat (siehe GDM-Sektion). → Entscheidung: nam yu + 1 TL Paprika, keine Lebensmittelfarbe. Ergebnis: tief rotbraun mit schwarzen Karamellkanten, nicht pink.\n- **Shaoxing:** Viele Rezepte nehmen 1–2 EL Shaoxing in die Marinade. Wegen der Schwangerschaft hier bewusst **weggelassen** — siehe GDM-Sektion; nach der Geburt wieder rein (Zitat in „Marinade rühren“).\n- **Nudeln:** Die vorhandenen **Hakubaku-Trocken-Ramen** sind die beste verfügbare Wahl — Kansui hält sie auch kalt elastisch und bissfest. Alternative: getrocknete chinesische Weizennudeln mittlerer Dicke (Asialaden, „Chinese Plain Noodles\" o. ä.) — weicher, klassischer für *ma jiang mian*. Ein Paket Hakubaku = 270 g = genau der Bedarf.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "char-siu",
+          "name": "Char Siu",
+          "steps": [
+            {
+              "id": "marinade-ruehren",
+              "label": "1",
+              "heading": "**1. Marinade rühren (10 Min.)**",
+              "title": "Marinade rühren",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "2 Würfel roter fermentierter Tofu mit 2 EL Lake aus dem Glas in einer Schüssel mit der Gabel glatt zerdrücken. 4 Knoblauchzehen fein reiben. 30 g Ingwer fein reiben und durch ein Sieb oder in der Hand auspressen (ergibt \\~1 EL Saft, Fasern wegwerfen). Alles mit 4 EL Hoisinsauce, 2 EL heller Sojasauce, 1 EL Austernsauce, 1 EL dunkle Sojasauce, 3 EL Zucker, 1 TL Fünf-Gewürze-Pulver, ¼ TL weißem Pfeffer, 1 TL Salz, 1 TL Paprikapulver edelsüß und 1 TL geröstetem Sesamöl glatt rühren, bis der Zucker sich weitgehend gelöst hat. **Sofort 3 EL Marinade in ein kleines Schraubglas abfüllen** und kalt stellen — das ist die Glasur-Basis. *Ingwersaft statt geriebenem Ingwer: Fasern verbrennen unter dem Grill und kleben schwarz an.*\n\n> **Nach der Schwangerschaft:** 2 EL Shaoxing in die Marinade — gibt die typische weinig-runde Tiefe. Jetzt bewusst ohne, der fermentierte Tofu trägt das Umami allein gut.",
+              "action": "2 Würfel roter fermentierter Tofu mit 2 EL Lake aus dem Glas in einer Schüssel mit der Gabel glatt zerdrücken.",
+              "limits": [
+                "Sofort 3 EL Marinade in ein kleines Schraubglas abfüllen"
+              ],
+              "cues": [
+                "bis der Zucker sich weitgehend gelöst hat"
+              ],
+              "ingredients": [
+                {
+                  "ref": "tofu",
+                  "amount": {
+                    "text": "2 Würfel roter fermentierter Tofu",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "4 Knoblauchzehen",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "ingwer",
+                  "amount": {
+                    "text": "30 g Ingwer",
+                    "value": 30.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "hoisinsauce",
+                  "amount": {
+                    "text": "4 EL Hoisinsauce",
+                    "value": 4.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "sojasauce",
+                  "amount": {
+                    "text": "2 EL heller Sojasauce",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "austernsauce",
+                  "amount": {
+                    "text": "1 EL Austernsauce",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "dunkle-sojasauce",
+                  "amount": {
+                    "text": "1 EL dunkle Sojasauce",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "3 EL Zucker",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "fuenf-gewuerze-pulver",
+                  "amount": {
+                    "text": "1 TL Fünf-Gewürze-Pulver",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "¼ TL weißem Pfeffer",
+                    "value": 0.25,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "paprikapulver",
+                  "amount": {
+                    "text": "1 TL Paprikapulver",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "sesamoel",
+                  "amount": {
+                    "text": "1 TL geröstetem Sesamöl",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "fleisch-schneiden",
+              "label": "2",
+              "heading": "**2. Fleisch schneiden (10 Min.)**",
+              "title": "Fleisch schneiden",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "1,5 kg Schweinenacken längs zur Faser in Streifen von \\~5 cm Breite und 4–5 cm Dicke schneiden (ergibt 4–5 Streifen à 15–20 cm Länge). Fett nicht wegschneiden. Jeden Streifen rundum dicht mit einer Gabel einstechen. *Gleichmäßige Dicke ist wichtiger als die exakte Zahl — sonst sind die dünnen Streifen trocken, bevor die dicken 70 °C haben. Das Einstechen (Daddy Lau) lässt die Marinade tiefer ziehen.*",
+              "action": "1,5 kg Schweinenacken längs zur Faser in Streifen von \\~5 cm Breite und 4–5 cm Dicke schneiden (ergibt 4–5 Streifen à 15–20 cm Länge).",
+              "why": "Gleichmäßige Dicke ist wichtiger als die exakte Zahl — sonst sind die dünnen Streifen trocken, bevor die dicken 70 °C haben. Das Einstechen (Daddy Lau) lässt die Marinade tiefer ziehen.",
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "70 °C",
+                  "value": 70
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "schweinenacken",
+                  "amount": {
+                    "text": "1,5 kg Schweinenacken",
+                    "value": 1.5,
+                    "unit": "kg"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "marinieren",
+              "label": "3",
+              "heading": "**3. Marinieren (12–24 Std., passiv)**",
+              "title": "Marinieren",
+              "duration": {
+                "min": "PT12H",
+                "max": "PT24H",
+                "source": "12–24 Std."
+              },
+              "attention": "passive",
+              "text": "Streifen mit der restlichen Marinade in einen großen Gefrierbeutel geben, 2 Min. einmassieren, Luft herausdrücken, verschließen und über Nacht kalt stellen; abends und morgens einmal wenden. **Nicht länger als 24 Std.** *Länger macht die Salz-/Zucker-Lake die Randschicht schinkig-fest (Made With Lau: max. 24 Std.).*",
+              "action": "Streifen mit der restlichen Marinade in einen großen Gefrierbeutel geben, 2 Min. einmassieren, Luft herausdrücken, verschließen und über Nacht kalt stellen; abends und morgens einmal wenden.",
+              "limits": [
+                "Nicht länger als 24 Std."
+              ],
+              "why": "Länger macht die Salz-/Zucker-Lake die Randschicht schinkig-fest (Made With Lau: max. 24 Std.).",
+              "timers": [
+                {
+                  "label": "Marinieren",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                },
+                {
+                  "label": "Marinieren",
+                  "duration": {
+                    "typical": "PT24H"
+                  },
+                  "text": "24 Std."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Marinade rühren, Fleisch schneiden*",
+              "after": [
+                "step:marinade-ruehren",
+                "step:fleisch-schneiden"
+              ]
+            },
+            {
+              "id": "temperieren",
+              "label": "4",
+              "heading": "**4. Temperieren (45 Min., passiv)**",
+              "title": "Temperieren",
+              "duration": {
+                "typical": "PT45M",
+                "source": "45 Min."
+              },
+              "attention": "passive",
+              "text": "Beutel 45 Min. vor dem Garen aus dem Kühlschrank nehmen. *Kühlschrankkalte 5-cm-Streifen brauchen sonst so lange bis 70 °C Kern, dass die Glasur verbrennt.*",
+              "action": "Beutel 45 Min. vor dem Garen aus dem Kühlschrank nehmen.",
+              "why": "Kühlschrankkalte 5-cm-Streifen brauchen sonst so lange bis 70 °C Kern, dass die Glasur verbrennt.",
+              "temps": [
+                {
+                  "kind": "kern",
+                  "text": "70 °C",
+                  "value": 70
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Marinieren*",
+              "timers": [
+                {
+                  "label": "Temperieren",
+                  "duration": {
+                    "typical": "PT45M"
+                  },
+                  "text": "45 Min."
+                }
+              ],
+              "after": [
+                "step:marinieren"
+              ]
+            },
+            {
+              "id": "ofen-vorbereiten",
+              "label": "5",
+              "heading": "**5. Ofen vorbereiten (15 Min.)**",
+              "title": "Ofen vorbereiten",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "Backofen auf 220 °C Ober-/Unterhitze vorheizen (Umluft 200 °C), Rost in die Mitte. Tiefes Blech mit Alufolie auslegen, 500 ml Wasser hineingießen, Ofengitter darüberlegen. Die Streifen aus der Marinade heben, gut abtropfen lassen und mit 3–4 cm Abstand aufs Gitter legen. **Restliche Marinade im Beutel aufheben** (für einmaliges Bestreichen beim Wenden). *Das Wasser fängt die zuckrigen Tropfen ab — ohne qualmt und verkohlt das Blech; die Feuchtigkeit hält den Ofen zudem milder für die Oberfläche.*",
+              "action": "Backofen auf 220 °C Ober-/Unterhitze vorheizen (Umluft 200 °C), Rost in die Mitte.",
+              "limits": [
+                "Restliche Marinade im Beutel aufheben"
+              ],
+              "why": "Das Wasser fängt die zuckrigen Tropfen ab — ohne qualmt und verkohlt das Blech; die Feuchtigkeit hält den Ofen zudem milder für die Oberfläche.",
+              "temps": [
+                {
+                  "kind": "ofen",
+                  "text": "220 °C",
+                  "value": 220
+                },
+                {
+                  "kind": "ziel",
+                  "text": "200 °C",
+                  "value": 200
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "500 ml Wasser",
+                    "value": 500.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Ofen 220 °C*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 220
+                }
+              ],
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "vorgaren",
+              "label": "6",
+              "heading": "**6. Vorgaren (40–50 Min.)**",
+              "title": "Vorgaren",
+              "duration": {
+                "min": "PT40M",
+                "max": "PT50M",
+                "source": "40–50 Min."
+              },
+              "text": "Gitter samt Wasserblech in den Ofen, 10 Min. bei 220 °C, dann auf 180 °C zurückdrehen (Umluft 160 °C). Nach 25 Min. die Streifen wenden, mit der restlichen Marinade aus dem Beutel bestreichen, Blech um 180° drehen und Wasser prüfen — ist es fast verdampft, 250 ml Wasser nachgießen. Weitergaren, bis der dickste Streifen **63–65 °C Kern** zeigt (insgesamt meist 40–50 Min.). Bräunt es zu schnell, 10 °C runter. *Rohe Marinade nur hier verwenden — danach gart das Fleisch noch mindestens 20 Min., das ist sicher. Für die Glasur ausschließlich die vorher abgenommenen 3 EL.*\n\n> **Option Gasgrill:** Zwei-Zonen-Führung, eine Seite Brenner aus, Deckel zu, \\~180–200 °C Garraumtemperatur. Streifen auf die kalte Seite über eine Alu-Schale mit 300 ml Wasser, 40–50 Min. indirekt bis 63–65 °C Kern, einmal wenden. Glasieren ebenfalls indirekt; der Char dann 1–2 Min. pro Seite direkt über voller Flamme — **nicht weggehen**, Maltose kippt in Sekunden von karamellig zu schwarz. Bringt etwas echtes Raucharoma, ist aber der riskantere Weg.",
+              "action": "Gitter samt Wasserblech in den Ofen, 10 Min. bei 220 °C, dann auf 180 °C zurückdrehen (Umluft 160 °C).",
+              "limits": [
+                "63–65 °C Kern",
+                "nicht weggehen"
+              ],
+              "cues": [
+                "bis der dickste Streifen"
+              ],
+              "timers": [
+                {
+                  "label": "Vorgaren",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                },
+                {
+                  "label": "Vorgaren",
+                  "duration": {
+                    "min": "PT40M",
+                    "max": "PT50M"
+                  },
+                  "text": "40–50 Min."
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT25M",
+                    "source": "25 Min."
+                  },
+                  "text": "Nach 25 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ofen",
+                  "text": "220 °C",
+                  "value": 220
+                },
+                {
+                  "kind": "ziel",
+                  "text": "180 °C",
+                  "value": 180
+                },
+                {
+                  "kind": "ziel",
+                  "text": "160 °C",
+                  "value": 160
+                },
+                {
+                  "kind": "kern",
+                  "text": "63–65 °C",
+                  "min": 63,
+                  "max": 65
+                },
+                {
+                  "kind": "ziel",
+                  "text": "10 °C",
+                  "value": 10
+                },
+                {
+                  "kind": "ziel",
+                  "text": "180–200 °C",
+                  "min": 180,
+                  "max": 200
+                },
+                {
+                  "kind": "kern",
+                  "text": "63–65 °C",
+                  "min": 63,
+                  "max": 65
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "250 ml Wasser",
+                    "value": 250.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*nach Temperieren, Ofen vorbereiten · Ofen 220 °C · fertig bei 63–65 °C Kern*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 220
+                }
+              ],
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei 63–65 °C Kern",
+                "value": 63
+              },
+              "attention": "attended",
+              "after": [
+                "step:temperieren",
+                "step:ofen-vorbereiten"
+              ]
+            },
+            {
+              "id": "glasur-kochen",
+              "label": "7",
+              "heading": "**7. Glasur kochen (5 Min.)**",
+              "title": "Glasur kochen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "80 g Maltose im Becher kurz in heißes Wasser stellen (oder 15 Sek. Mikrowelle), bis sie sich mit einem nassen Löffel abstechen lässt. Mit den 3 EL reservierter Marinade und 1 EL Wasser in einem kleinen Topf unter Rühren aufkochen, bis alles flüssig und glänzend ist; auf kleinster Stufe warm halten. **Vor jedem Bestreichen kurz aufkochen.** *Heiße Glasur karamellisiert sofort und haftet; kalte läuft ab (Adam Liaw). Mit Honig: 4 EL Honig statt Maltose, sonst gleich.*",
+              "action": "80 g Maltose im Becher kurz in heißes Wasser stellen (oder 15 Sek.",
+              "limits": [
+                "Vor jedem Bestreichen kurz aufkochen."
+              ],
+              "why": "Heiße Glasur karamellisiert sofort und haftet; kalte läuft ab (Adam Liaw). Mit Honig: 4 EL Honig statt Maltose, sonst gleich.",
+              "cues": [
+                "bis sie sich mit einem nassen Löffel abstechen lässt"
+              ],
+              "ingredients": [
+                {
+                  "ref": "maltose",
+                  "amount": {
+                    "text": "80 g Maltose",
+                    "value": 80.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "1 EL Wasser",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Glasur kochen",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
+              "after": []
+            },
+            {
+              "id": "glasieren",
+              "label": "8",
+              "heading": "**8. Glasieren (10–15 Min.)**",
+              "title": "Glasieren",
+              "duration": {
+                "min": "PT10M",
+                "max": "PT15M",
+                "source": "10–15 Min."
+              },
+              "text": "Streifen oben dick mit heißer Glasur bestreichen, 5 Min. garen. Wenden, die zweite Seite bestreichen, 5 Min. Nochmals wenden und die Oberseite ein drittes Mal bestreichen; Kern prüfen — Ziel **68–70 °C**. Etwa 2 EL Glasur für den Schluss zurückbehalten. *Den GDM-Streifen (siehe Schwangerschaft & GDM) nur beim ersten Durchgang bestreichen.*",
+              "action": "Streifen oben dick mit heißer Glasur bestreichen, 5 Min. garen.",
+              "limits": [
+                "68–70 °C"
+              ],
+              "why": "Den GDM-Streifen (siehe Schwangerschaft & GDM) nur beim ersten Durchgang bestreichen.",
+              "timers": [
+                {
+                  "label": "Glasieren",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "kern",
+                  "text": "68–70 °C",
+                  "min": 68,
+                  "max": 70
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Vorgaren, Glasur kochen · Ofen 180 °C · fertig bei 68–70 °C Kern*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 180
+                }
+              ],
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei 68–70 °C Kern",
+                "value": 68
+              },
+              "attention": "attended",
+              "after": [
+                "step:vorgaren",
+                "step:glasur-kochen"
+              ]
+            },
+            {
+              "id": "char-unter-dem-grill",
+              "label": "9",
+              "heading": "**9. Char unter dem Grill (4–6 Min.)**",
+              "title": "Char unter dem Grill",
+              "duration": {
+                "min": "PT4M",
+                "max": "PT6M",
+                "source": "4–6 Min."
+              },
+              "text": "Ofen auf Grill/Oberhitze-Grill höchste Stufe (\\~250 °C) schalten, Gitter samt Blech eine Schiene höher (Oberseite \\~10–12 cm unter der Heizspirale). 2–3 Min. grillen, bis die Kanten blasig und stellenweise schwarz sind, wenden, weitere 2–3 Min. Kern: **72–75 °C** im dicksten Streifen. **Ofentür nicht verlassen** — jede Minute ansehen. *Die schwarzen Ränder sind gewollt (das „Char\" im Namen), flächig schwarz ist bitter. Mit Honig-Glasur nur 1–1,5 Min. pro Seite.*",
+              "action": "Ofen auf Grill/Oberhitze-Grill höchste Stufe (\\~250 °C) schalten, Gitter samt Blech eine Schiene höher (Oberseite \\~10–12 cm unter der Heizspirale).",
+              "limits": [
+                "72–75 °C",
+                "Ofentür nicht verlassen"
+              ],
+              "why": "Die schwarzen Ränder sind gewollt (das „Char\" im Namen), flächig schwarz ist bitter. Mit Honig-Glasur nur 1–1,5 Min. pro Seite.",
+              "cues": [
+                "bis die Kanten blasig und stellenweise schwarz sind"
+              ],
+              "timers": [
+                {
+                  "label": "Char unter dem Grill",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "250 °C",
+                  "value": 250
+                },
+                {
+                  "kind": "kern",
+                  "text": "72–75 °C",
+                  "min": 72,
+                  "max": 75
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Glasieren · Ofen 250 °C · fertig bei 72–75 °C Kern*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 250
+                }
+              ],
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei 72–75 °C Kern",
+                "value": 72
+              },
+              "attention": "active",
+              "after": [
+                "step:glasieren"
+              ]
+            },
+            {
+              "id": "ruhen",
+              "label": "10",
+              "heading": "**10. Ruhen (10 Min., passiv)**",
+              "title": "Ruhen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "attention": "passive",
+              "text": "Streifen auf ein Brett legen, nach 5 Min. mit den letzten 2 EL Glasur (kurz aufgekocht) bestreichen, weitere 5 Min. ruhen lassen. *Die letzte Schicht bleibt lackig-glänzend, weil sie nicht mehr gegart wird — das ist der Siu-Mei-Look.*",
+              "action": "Streifen auf ein Brett legen, nach 5 Min. mit den letzten 2 EL Glasur (kurz aufgekocht) bestreichen, weitere 5 Min. ruhen lassen.",
+              "why": "Die letzte Schicht bleibt lackig-glänzend, weil sie nicht mehr gegart wird — das ist der Siu-Mei-Look.",
+              "timers": [
+                {
+                  "label": "Ruhen",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT5M",
+                    "source": "5 Min."
+                  },
+                  "text": "Streifen auf ein Brett legen, nach 5 Min."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Char unter dem Grill*",
+              "after": [
+                "step:char-unter-dem-grill"
+              ]
+            },
+            {
+              "id": "ramen-reserve",
+              "label": "11",
+              "heading": "**11. Ramen-Reserve (ca. 5 Min.)**",
+              "title": "Ramen-Reserve",
+              "duration": {
+                "typical": "PT5M",
+                "source": "ca. 5 Min.",
+                "estimated": true
+              },
+              "text": "\\~400 g Char Siu (1–2 Streifen) **unaufgeschnitten** zur Seite legen, vollständig abkühlen lassen, eng in Frischhaltefolie wickeln. Hält 4 Tage im Kühlschrank; zum Einfrieren in Gefrierbeutel doppelt einbeuteln (2–3 Monate). *Am Stück bleibt es saftig; für Ramen kalt in 3–4 mm Scheiben schneiden und kurz mit dem Küchenbrenner abflämmen oder in der heißen Pfanne 20 Sek. pro Seite anrösten.*",
+              "action": "\\~400 g Char Siu (1–2 Streifen) **unaufgeschnitten** zur Seite legen, vollständig abkühlen lassen, eng in Frischhaltefolie wickeln.",
+              "why": "Am Stück bleibt es saftig; für Ramen kalt in 3–4 mm Scheiben schneiden und kurz mit dem Küchenbrenner abflämmen oder in der heißen Pfanne 20 Sek. pro Seite anrösten.",
+              "ingredients": [],
+              "meta": "*nach Ruhen*",
+              "attention": "active",
+              "after": [
+                "step:ruhen"
+              ]
+            }
+          ],
+          "heading": "**Char Siu (Vortag marinieren, am Kochtag \\~1,5 Std. inkl. Ruhen):**",
+          "phaseHint": "Vortag",
+          "produces": [
+            {
+              "id": "char-siu",
+              "name": "Char Siu"
+            }
+          ],
+          "intro": "Verhältnis nach Adam Liaw und Made With Lau, auf 1,5 kg Nacken: salzig-süß-fermentiert, keine Schärfe. 3 EL der Marinade werden **vor** dem Kontakt mit rohem Fleisch für die Glasur abgenommen."
+        },
+        {
+          "id": "kalte-sesamnudeln-beilagen",
+          "name": "Kalte Sesamnudeln & Beilagen",
+          "steps": [
+            {
+              "id": "gemuese-schneiden",
+              "label": "12",
+              "heading": "**12. Gemüse schneiden (15 Min. + 10 Min. passiv)**",
+              "title": "Gemüse schneiden",
+              "duration": {
+                "typical": "PT25M",
+                "source": "15 Min. + 10 Min."
+              },
+              "attention": "passive",
+              "text": "2 Salatgurken längs halbieren, Kerne mit einem Teelöffel herauskratzen, auf der Mandoline in 4–5 cm lange, streichholzdünne Stifte schneiden, mit ½ TL Salz mischen und 10 Min. in einem Sieb ziehen lassen, dann leicht ausdrücken. 2 Karotten schälen und ebenso in feine Stifte hobeln. 4 Frühlingszwiebeln in feine Ringe schneiden, das Grün getrennt halten. Optional ½ Bund Koriander grob zupfen. Alles kalt stellen. *Das Salzen zieht Wasser — sonst verwässert die Gurke das Dressing auf dem Teller.*",
+              "action": "2 Salatgurken längs halbieren, Kerne mit einem Teelöffel herauskratzen, auf der Mandoline in 4–5 cm lange, streichholzdünne Stifte schneiden, mit ½ TL Salz mischen und 10 Min. in einem Sieb ziehen lassen, dann leicht ausdrücken.",
+              "why": "Das Salzen zieht Wasser — sonst verwässert die Gurke das Dressing auf dem Teller.",
+              "timers": [
+                {
+                  "label": "Gemüse schneiden",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "salatgurken",
+                  "amount": {
+                    "text": "2 Salatgurken",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "karotten",
+                  "amount": {
+                    "text": "2 Karotten",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "fruehlingszwiebeln",
+                  "amount": {
+                    "text": "4 Frühlingszwiebeln",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "koriander",
+                  "amount": {
+                    "text": "½ Bund Koriander",
+                    "value": 0.5,
+                    "unit": "Bund"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "after": []
+            },
+            {
+              "id": "sesam-dressing",
+              "label": "13",
+              "heading": "**13. Sesam-Dressing (5 Min.)**",
+              "title": "Sesam-Dressing",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "4 EL chinesische Sesampaste im Glas gründlich aufrühren (das Öl setzt sich oben ab), dann in einer Schüssel mit 3 EL heller Sojasauce, 2½ EL Chinkiang-Essig, 2 TL Zucker, 1 EL geröstetem Sesamöl und 2 fein geriebenen Knoblauchzehen verrühren. 4–6 EL warmes Wasser esslöffelweise einrühren, bis das Dressing die Konsistenz von flüssiger Sahne hat. Abschmecken: soll deutlich salzig-säuerlich-nussig sein. *Die Paste zieht beim ersten Wasser kurz an und wird fest — weiterrühren, sie wird dann glatt. Tahina-Fallback: 4 EL Tahina + 2 EL gerösteter, gemörserter Sesam + 1 TL zusätzliches Sesamöl.*",
+              "action": "4 EL chinesische Sesampaste im Glas gründlich aufrühren (das Öl setzt sich oben ab), dann in einer Schüssel mit 3 EL heller Sojasauce, 2½ EL Chinkiang-Essig, 2 TL Zucker, 1 EL geröstetem Sesamöl und 2 fein geriebenen Knoblauchzehen verrühren.",
+              "why": "Tahina-Fallback: 4 EL Tahina + 2 EL gerösteter, gemörserter Sesam + 1 TL zusätzliches Sesamöl.",
+              "rescue": "Die Paste zieht beim ersten Wasser kurz an und wird fest — weiterrühren, sie wird dann glatt.",
+              "cues": [
+                "bis das Dressing die Konsistenz von flüssiger Sahne hat"
+              ],
+              "ingredients": [
+                {
+                  "ref": "sesampaste",
+                  "amount": {
+                    "text": "4 EL chinesische Sesampaste",
+                    "value": 4.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "sojasauce",
+                  "amount": {
+                    "text": "3 EL heller Sojasauce",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "chinkiang-essig",
+                  "amount": {
+                    "text": "2½ EL Chinkiang-Essig",
+                    "value": 2.5,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "2 TL Zucker",
+                    "value": 2.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "sesamoel",
+                  "amount": {
+                    "text": "1 EL geröstetem Sesamöl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "2 fein geriebenen Knoblauchzehen",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "4–6 EL warmes Wasser",
+                    "value": 4.0,
+                    "unit": "EL",
+                    "max": 6.0
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "pak-choi-blanchieren",
+              "label": "14",
+              "heading": "**14. Pak Choi blanchieren (5 Min.)**",
+              "title": "Pak Choi blanchieren",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Großen Topf mit 3 l Wasser und 1 TL Salz zum Kochen bringen (dasselbe Wasser danach für die Nudeln). 400 g Pak Choi längs halbieren (große Köpfe vierteln), gründlich waschen, 60–90 Sek. blanchieren, bis die Stiele gerade biegsam sind, mit der Schaumkelle herausheben, gut abtropfen lassen. Mit 1 EL Austernsauce und 1 TL geröstetem Sesamöl beträufeln. *Der Klassiker neben Siu Mei in jedem kantonesischen BBQ-Laden, und die warme Gemüsekomponente auf dem Teller.*",
+              "action": "Großen Topf mit 3 l Wasser und 1 TL Salz zum Kochen bringen (dasselbe Wasser danach für die Nudeln).",
+              "why": "Der Klassiker neben Siu Mei in jedem kantonesischen BBQ-Laden, und die warme Gemüsekomponente auf dem Teller.",
+              "cues": [
+                "bis die Stiele gerade biegsam sind"
+              ],
+              "timers": [
+                {
+                  "label": "Pak Choi blanchieren",
+                  "duration": {
+                    "min": "PT60S",
+                    "max": "PT90S"
+                  },
+                  "text": "60–90 Sek."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "3 l Wasser",
+                    "value": 3.0,
+                    "unit": "l"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "pak",
+                  "amount": {
+                    "text": "400 g Pak Choi",
+                    "value": 400.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "austernsauce",
+                  "amount": {
+                    "text": "1 EL Austernsauce",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "sesamoel",
+                  "amount": {
+                    "text": "1 TL geröstetem Sesamöl",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*≤ 30 Min. vor dem Anrichten · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "start": {
+                "ref": "step:anrichten:start",
+                "offset": {
+                  "min": "-PT30M",
+                  "max": "PT0M",
+                  "source": "≤ 30 Min. vor dem Anrichten"
+                }
+              }
+            },
+            {
+              "id": "nudeln-kochen",
+              "label": "15",
+              "heading": "**15. Nudeln kochen (ca. 8 Min.)**",
+              "title": "Nudeln kochen",
+              "duration": {
+                "typical": "PT8M",
+                "source": "ca. 8 Min.",
+                "estimated": true
+              },
+              "text": "270 g Ramen-Nudeln im selben sprudelnden Wasser nach Packungsangabe **voll** garen (Hakubaku \\~4–5 Min.; nicht al dente — kalt werden sie fester). Abgießen, sofort unter kaltem Wasser abbrausen, dabei mit den Händen durchrühren, bis sie ganz kalt und nicht mehr stärkig sind. Sehr gut abtropfen lassen und mit 1 EL geröstetem Sesamöl vermengen. *Ohne Abbrausen und Öl kleben kalte Nudeln in Minuten zum Block (Woks of Life).*",
+              "action": "270 g Ramen-Nudeln im selben sprudelnden Wasser nach Packungsangabe **voll** garen (Hakubaku \\~4–5 Min.; nicht al dente — kalt werden sie fester).",
+              "why": "Ohne Abbrausen und Öl kleben kalte Nudeln in Minuten zum Block (Woks of Life).",
+              "cues": [
+                "bis sie ganz kalt und nicht mehr stärkig sind"
+              ],
+              "timers": [
+                {
+                  "label": "Nudeln kochen",
+                  "duration": {
+                    "min": "PT4M",
+                    "max": "PT5M",
+                    "estimated": true
+                  },
+                  "text": "\\~4–5 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "ramen-nudeln",
+                  "amount": {
+                    "text": "270 g Ramen-Nudeln",
+                    "value": 270.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "sesamoel",
+                  "amount": {
+                    "text": "1 EL geröstetem Sesamöl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Pak Choi blanchieren · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:pak-choi-blanchieren"
+              ]
+            },
+            {
+              "id": "anrichten",
+              "label": "16",
+              "heading": "**16. Anrichten (ca. 10 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "text": "Char Siu quer zur Faser in 5 mm dünne Scheiben schneiden. Nudeln mit dem Dressing mischen (vorher die Kinderportion abnehmen, siehe Kinder-Anpassung), in Schalen verteilen, Gurken- und Karottenstifte großzügig obenauf, Frühlingszwiebelgrün, 1 EL Sesam und ggf. Koriander darüber. Char-Siu-Scheiben fächerförmig auf einen Teller, Pak Choi daneben. 2–4 TL Chiliöl im Glas mit Löffel auf den Tisch — **nur zum Selberdosieren**, nichts davon in die Schüssel.",
+              "action": "Char Siu quer zur Faser in 5 mm dünne Scheiben schneiden.",
+              "limits": [
+                "nur zum Selberdosieren"
+              ],
+              "ingredients": [
+                {
+                  "ref": "sesam",
+                  "amount": {
+                    "text": "1 EL Sesam",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "chilioel",
+                  "amount": {
+                    "text": "2–4 TL Chiliöl",
+                    "value": 2.0,
+                    "unit": "TL",
+                    "max": 4.0
+                  }
+                }
+              ],
+              "meta": "*nach Ruhen, Nudeln kochen, Pak Choi blanchieren, Sesam-Dressing, Gemüse schneiden*",
+              "attention": "active",
+              "after": [
+                "step:ruhen",
+                "step:nudeln-kochen",
+                "step:pak-choi-blanchieren",
+                "step:sesam-dressing",
+                "step:gemuese-schneiden"
+              ]
+            }
+          ],
+          "heading": "**Kalte Sesamnudeln & Beilagen (am Kochtag, während das Fleisch im Ofen ist):**",
+          "produces": [
+            {
+              "id": "kalte-sesamnudeln-beilagen",
+              "name": "Kalte Sesamnudeln & Beilagen"
+            }
+          ],
+          "intro": "Das Dressing ist bewusst kräftig — die Nudeln kommen kalt auf den Tisch, Kälte dämpft Salz und Säure.",
+          "consumes": [
+            "product:char-siu"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "vortag",
+            "label": "Vortag",
+            "day": -1
+          },
+          {
+            "id": "uhr-16-30",
+            "label": "16:30 Uhr (2h vorher)",
+            "day": 0,
+            "part": "service",
+            "at": "-PT2H",
+            "clock": "16:30"
+          },
+          {
+            "id": "uhr-16-45",
+            "label": "16:45 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT1H45M",
+            "clock": "16:45"
+          },
+          {
+            "id": "uhr-17-15",
+            "label": "17:15 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT1H15M",
+            "clock": "17:15"
+          },
+          {
+            "id": "uhr-18-00",
+            "label": "18:00 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT30M",
+            "clock": "18:00"
+          },
+          {
+            "id": "uhr-18-12",
+            "label": "18:12 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT18M",
+            "clock": "18:12"
+          },
+          {
+            "id": "uhr-18-18",
+            "label": "18:18 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT12M",
+            "clock": "18:18"
+          },
+          {
+            "id": "uhr-18-30",
+            "label": "18:30 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "PT0M",
+            "clock": "18:30"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "vortag",
+            "text": "Marinade rühren",
+            "steps": [
+              "marinade-ruehren"
+            ]
+          },
+          {
+            "phase": "vortag",
+            "text": "Fleisch schneiden",
+            "steps": [
+              "fleisch-schneiden"
+            ]
+          },
+          {
+            "phase": "vortag",
+            "text": "Marinieren (abends, \\~20 Min.)",
+            "steps": [
+              "marinieren"
+            ]
+          },
+          {
+            "phase": "uhr-16-30",
+            "text": "Temperieren: Fleisch aus dem Kühlschrank",
+            "steps": [
+              "temperieren"
+            ]
+          },
+          {
+            "phase": "uhr-16-45",
+            "text": "Ofen vorbereiten (220 °C, Wasserblech)",
+            "steps": [
+              "ofen-vorbereiten"
+            ]
+          },
+          {
+            "phase": "uhr-16-45",
+            "text": "Gemüse schneiden",
+            "steps": [
+              "gemuese-schneiden"
+            ]
+          },
+          {
+            "phase": "uhr-17-15",
+            "text": "Vorgaren starten (40–50 Min.)"
+          },
+          {
+            "phase": "uhr-17-15",
+            "text": "Sesam-Dressing",
+            "steps": [
+              "sesam-dressing"
+            ]
+          },
+          {
+            "phase": "uhr-17-15",
+            "text": "Glasur kochen",
+            "steps": [
+              "glasur-kochen"
+            ]
+          },
+          {
+            "phase": "uhr-18-00",
+            "text": "Glasieren (dreimal bestreichen)",
+            "steps": [
+              "glasieren"
+            ]
+          },
+          {
+            "phase": "uhr-18-12",
+            "text": "Char unter dem Grill",
+            "steps": [
+              "char-unter-dem-grill"
+            ]
+          },
+          {
+            "phase": "uhr-18-12",
+            "text": "Wasser für Pak Choi und Nudeln aufsetzen"
+          },
+          {
+            "phase": "uhr-18-18",
+            "text": "Ruhen",
+            "steps": [
+              "ruhen"
+            ]
+          },
+          {
+            "phase": "uhr-18-18",
+            "text": "Pak Choi blanchieren",
+            "steps": [
+              "pak-choi-blanchieren"
+            ]
+          },
+          {
+            "phase": "uhr-18-18",
+            "text": "Nudeln kochen",
+            "steps": [
+              "nudeln-kochen"
+            ]
+          },
+          {
+            "phase": "uhr-18-30",
+            "text": "Anrichten",
+            "steps": [
+              "anrichten"
+            ]
+          },
+          {
+            "phase": "uhr-18-30",
+            "text": "Ramen-Reserve",
+            "steps": [
+              "ramen-reserve"
+            ]
+          }
+        ],
+        "anchorOverride": {
+          "time": "18:30"
+        }
+      },
+      "note": "*Puffer: Hat der dickste Streifen um 18:00 noch keine 63 °C, Vorgaren verlängern und das Essen schieben — nie die Grillphase verlängern, um Kerntemperatur aufzuholen, dann verbrennt die Glasur.*"
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Char Siu ist komplett mild** (Fünf-Gewürze, Hoisin, kein Chili) — das Kind isst dasselbe Fleisch. Scheiben für einen Dreijährigen halbieren; die schwarzen Kanten ggf. abschneiden.\n- **Nudeln:** Vor dem Mischen \\~50 g Nudeln abnehmen und nur mit 1 TL heller Sojasauce, ½ TL Sesamöl und einem kleinen Klecks Dressing anmachen — das volle Dressing ist für Kinder sehr essiglastig. Chinkiang-Essig mögen manche Kinder aber gern; probieren lassen.\n- **Chiliöl** steht nur separat auf dem Tisch. Gurken- und Karottenstifte gern pur als Fingerfood.\n- **Sesam** ist ein Hauptallergen — beim Kind bekannt verträglich? Falls noch nie gegessen, erst kleine Menge.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "Geprüft gegen den [Leitfaden](/schwangerschaft/leitfaden.md), Stand 10/2026:\n\n- **Schwein durch, ≥ 70 °C:** Das Rezept zielt ohnehin auf **72–75 °C Kern** im dicksten Streifen (Woks of Life: 71 °C) — mit Nacken bleibt das saftig. Mit dem Thermometer den dicksten Streifen messen, nicht schätzen. Die Ramen-Reserve fürs Topping ist damit auch durch; beim Aufwärmen fürs Ramen heiß servieren.\n- **Kein Alkohol:** Shaoxing ist aus der Marinade gestrichen (siehe „Marinade rühren“). Hinweis: Roter fermentierter Tofu wird in Reiswein-Lake eingelegt; bei 2 Würfeln + 2 EL Lake auf 1,5 kg Fleisch, \\~1 Std. bei 180–220 °C gegart, ist das vernachlässigbar — wer null Toleranz will: Fallback rote Misopaste + Paprika.\n- **Rotschimmelreis (angkak) nicht zusätzlich als Farbe verwenden.** Er enthält Monakolin K (wirkt wie ein Statin) und kann das Mykotoxin Citrinin enthalten; Rotschimmelreis-Präparate sind für Schwangere mit Pflicht-Warnhinweis versehen (BfR, Verbraucherzentrale). Die Spur im fermentierten Tofu ist eine Würzmenge, kein Präparat — unkritisch; aber kein Extra-Pulver.\n- **Zucker — die Glasur ist das Thema:** Marinade (3 EL Zucker + Hoisin) und Glasur (80 g Maltose) bringen zusammen \\~150 g Zucker auf 1,5 kg Fleisch, davon tropft ein guter Teil ins Wasserblech. Grob geschätzt landen **8–12 g Zucker pro 150-g-Portion** auf dem Teller. Maltose ist dabei kein „besserer\" Zucker — sie besteht aus Glukose-Einheiten und hat einen sehr hohen glykämischen Index. Darum:\n  - **GDM-Streifen:** einen Streifen markieren (Zahnstocher) und **nur einmal** glasieren (erster Durchgang in „Glasieren“), keine Schlussglasur. Er bekommt trotzdem Farbe und Kruste aus der Marinade.\n  - Portion Fleisch normal groß (Protein ist der Puffer), schwarze Kanten ruhig mitessen.\n- **Nudeln: kleine Portion, viel Gemüse.** 50 g Trocken-Nudeln (≈ 35 g KH) für sie, dafür die doppelte Menge Gurke/Karotte und den Pak Choi als Hauptbeilage. Ramen sind Weißmehl; wer es glykämisch flacher will, kocht 50 g **Vollkornspaghetti** oder Soba (mit möglichst hohem Buchweizenanteil) in einem kleinen Topf extra — die Sesam-Soja-Sauce passt dazu genauso. Das Dressing selbst (2 TL Zucker auf 4 Portionen) ist unkritisch und bringt Fett und Protein mit.\n- **Reihenfolge auf dem Teller:** erst Gemüse und Fleisch, Nudeln zum Schluss — dämpft die Spitze. Danach Spaziergang.\n- Rohkost (Gurke, Karotte, Koriander) gründlich waschen. Sojasaucen, Hoisin, Austernsauce erhitzt bzw. in kleinen Mengen unkritisch; Salz im Blick behalten.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Marinade-Gerüst** nach [Adam Liaw — How to make authentic char siew](https://www.adamliaw.com/recipe/how-to-make-authentic-char-siew-cantonese-barbecue-pork) (1,5 kg Nacken/Bauch in 5-cm-Streifen; Hoisin, roter fermentierter Tofu + Lake, Fünf-Gewürze, Ingwersaft, Knoblauch, Soja, Zucker; Glasur aus Maltose/Zucker/Wasser, heiß gepinselt). Von ihm übernommen: Ingwer**saft**, heiße Glasur, Rot = Bräunung statt Farbstoff. Abweichung: Liaw gart nur 25 Min. bei 230 °C Umluft auf dünnere Streifen — bei 4–5 cm Dicke und Ziel ≥ 70 °C zu riskant für die Glasur, daher zweistufig.\n- **Oyster sauce, dunkle Soja, Einstechen, max. 24 Std.:** [Made With Lau — Char Siu](https://madewithlau.com/recipes/char-siu-chinese-bbq-pork) (Daddy Lau: nam yu für „natural redwood color\" und Umami, Lebensmittelfarbe optional; Basting-Schema mit Restmarinade, dann Honig, Schluss bei höherer Hitze). Seinen Rotwein + Shaoxing lassen wir weg (Schwangerschaft).\n- **Zweistufiger Ofen über Wasserblech, Glasur zum Schluss, Grill-Finish, 71 °C Kern:** [The Woks of Life — Char Siu](https://thewoksoflife.com/chinese-bbq-pork-cha-siu/) (475 °F/246 °C für 10 Min., dann 375 °F/190 °C; Wasser unter dem Gitter, nach 25 Min. wenden; 2 EL Marinade **vorab** für die Glasur abnehmen; kurz unter den Grill). Ihr Hinweis, dass durchgängig 246 °C in vielen Haushaltsöfen zu heiß ist, ist der Grund für das Zurückdrehen auf 180 °C.\n- **Maltose vs. Honig, Ersatz für nam yu, Paprika als Farbe, Nacken als Lieblings-Cut:** [Chinese Cooking Demystified — Char Siu](https://chinesecookingdemystified.substack.com/p/char-siu-bbq-pork) (Maltose = Glanz bei milderer Süße, Honig traditionell; rote Misopaste als Umami-Rückgrat; Paprika statt Rotschimmelreis ohne Geschmacksunterschied; Zwei-Zonen-Holzkohle-Methode mit Garen bis \\~67 °C). Ihre selbstgekochte Char-Siu-Sauce (Lushui-Basis mit Sternanis, Cassia, Shajiang) ist ein lohnendes Folgeprojekt — beim Erstversuch bewusst die schlankere Liaw/Lau-Marinade.\n- **Kerntemperatur 72–75 °C statt der 63–67 °C mancher Rezepte:** Schwangerschaft (Leitfaden: ≥ 70 °C). Nacken verträgt das dank Marmorierung; Schweinelende würde hier trocken.\n- **Kalte Sesamnudeln:** Struktur nach [The Woks of Life — Cold Sesame Noodles](https://thewoksoflife.com/cold-sesame-noodles/) (Nudeln voll garen, kalt abbrausen, sofort anmachen; Gurke/Karotte julienne). Das Dressing hier aber ohne Erdnussbutter und mit Chinkiang statt Reisessig — näher an der nordchinesisch-shanghainesischen *ma jiang mian*-Linie mit reiner gerösteter Sesampaste; Verhältnis Paste : Soja : Essig : Zucker ≈ 4 : 3 : 2½ : ⅔ angelehnt an [Rasa Malaysia — Cold Sesame Noodle](https://rasamalaysia.com/cold-sesame-noodle/). Unterschied Sesampaste/Tahina (geröstet vs. roh): [Barrel Leaf](https://www.barrelleaf.com/en/sesame-paste-vs-tahini).\n- **Lebensmittelfarbe gestrichen:** E129/E124 tragen in der EU den Kinder-Warnhinweis (VO (EG) 1333/2008, Anhang V); geschmacklich ohne Funktion.\n- **Rotschimmelreis:** [BfR — Nahrungsergänzungsmittel mit Rotschimmelreis nur nach ärztlicher Rücksprache](https://www.bfr.bund.de/cm/343/cholesterinsenkung-mit-folgen-nahrungsergaenzungsmittel-mit-rotschimmelreis-nur-nach-aerztlicher-ruecksprache-einnehmen.pdf) (Citrinin, Monakolin K) · [Verbraucherzentrale — Roter Reis](https://www.verbraucherzentrale.de/wissen/lebensmittel/nahrungsergaenzungsmittel/roter-reis-ganz-natuerlich-den-cholesterinspiegel-senken-43467) (Warnhinweis für Schwangere).\n- **Beschaffung:** Konkrete Verfügbarkeit von Maltose, nam yu und chinesischer Sesampaste im lokalen Asialaden ist **nicht verifiziert** — online fanden sich keine deutschen Händlerlisten; daher Anruf-Hinweis und für alle drei ein Fallback. Serious Eats (Kenji) ist per WebFetch nicht abrufbar und deshalb nicht herangezogen.",
+      "tags": [
+        "quellen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Ramen-Topping:** Die Reserve ersetzt beim nächsten Shoyu-Ramen ([Rezept](/gerichte/ramen-shoyu-chintan.md)) das Chashu — kalt dünn schneiden, mit dem Küchenbrenner kurz abflämmen (Aburi), die Glasur karamellisiert neu. Süßer und fünf-gewürziger als japanisches Chashu; passt eher zu Shoyu als zu Shio.\n- **Weitere Reste:** Char Siu Fried Rice (Eier, Erbsen, Frühlingszwiebel), Char Siu Bao (Folgeprojekt: Bosch-Maschine, Hefeteig), oder einfach kalt aufs Brot.\n- **Chiliöl selbst machen (Folgeprojekt, \\~15 Min.):** 4 EL Sichuan-Chiliflocken, 1 TL gemörserter Sichuanpfeffer, ½ TL Salz, 1 TL Sesam in eine hitzefeste Schüssel; 150 ml neutrales Öl mit 1 Sternanis, 1 Stück Cassia, 2 Scheiben Ingwer auf 120–130 °C erhitzen (Clip-Thermometer), Aromaten raus, Öl über die Flocken gießen. Hält Monate. Deutlich aromatischer als Lao Gan Ma, aber Sichuan-Chiliflocken im Asialaden unsicher.\n- **Wenn nam yu gefunden:** Das Glas reicht für \\~6 Durchgänge und ist außerdem die Basis für Nam-Yu-Erdnüsse, Nam-Yu-Schweinekoteletts und als Würze für gebratenes Wasserspinat-/Pak-Choi-Gemüse.\n- **Varianten-Ideen (ungetestet):** Schweinebauch statt Nacken (fetter, eher fürs Ramen); Liaws Schnellmethode (dünnere 3-cm-Streifen, 25 Min. bei 230 °C) für einen Wochentag — dann aber Kerntemperatur besonders genau prüfen.",
+      "tags": [
+        "notizen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-19T06:40:24Z",
+    "sourceHash": "accb29a4c44bf163",
+    "quantities": [
+      {
+        "ingredient": "pak",
+        "total": {
+          "text": "400 g",
+          "value": 400.0,
+          "max": 400.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "kalte-sesamnudeln-beilagen": "400 g Pak Choi"
+        }
+      },
+      {
+        "ingredient": "fruehlingszwiebeln",
+        "total": {
+          "text": "4",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "kalte-sesamnudeln-beilagen": "4 Frühlingszwiebeln"
+        }
+      },
+      {
+        "ingredient": "ramen-nudeln",
+        "total": {
+          "text": "270 g",
+          "value": 270.0,
+          "max": 270.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "kalte-sesamnudeln-beilagen": "270 g Ramen-Nudeln"
+        }
+      },
+      {
+        "ingredient": "tofu",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "char-siu": "2 Würfel roter fermentierter Tofu"
+        }
+      },
+      {
+        "ingredient": "maltose",
+        "total": {
+          "text": "80 g",
+          "value": 80.0,
+          "max": 80.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "char-siu": "80 g Maltose"
+        }
+      },
+      {
+        "ingredient": "sesampaste",
+        "total": {
+          "text": "4 EL",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "kalte-sesamnudeln-beilagen": "4 EL chinesische Sesampaste"
+        }
+      },
+      {
+        "ingredient": "hoisinsauce",
+        "total": {
+          "text": "4 EL",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "char-siu": "4 EL Hoisinsauce"
+        }
+      },
+      {
+        "ingredient": "sojasauce",
+        "total": {
+          "text": "5 EL",
+          "value": 5.0,
+          "max": 5.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "char-siu": "2 EL heller Sojasauce",
+          "kalte-sesamnudeln-beilagen": "3 EL heller Sojasauce"
+        }
+      },
+      {
+        "ingredient": "dunkle-sojasauce",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "char-siu": "1 EL dunkle Sojasauce"
+        }
+      },
+      {
+        "ingredient": "austernsauce",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "char-siu": "1 EL Austernsauce",
+          "kalte-sesamnudeln-beilagen": "1 EL Austernsauce"
+        }
+      },
+      {
+        "ingredient": "chinkiang-essig",
+        "total": {
+          "text": "2½ EL",
+          "value": 2.5,
+          "max": 2.5,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "kalte-sesamnudeln-beilagen": "2½ EL Chinkiang-Essig"
+        }
+      },
+      {
+        "ingredient": "fuenf-gewuerze-pulver",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "char-siu": "1 TL Fünf-Gewürze-Pulver"
+        }
+      },
+      {
+        "ingredient": "chilioel",
+        "total": {
+          "text": "2–4 TL",
+          "value": 2.0,
+          "max": 4.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "kalte-sesamnudeln-beilagen": "2–4 TL Chiliöl"
+        }
+      },
+      {
+        "ingredient": "schweinenacken",
+        "total": {
+          "text": "1500 g",
+          "value": 1500.0,
+          "max": 1500.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "char-siu": "1,5 kg Schweinenacken"
+        }
+      },
+      {
+        "ingredient": "salatgurken",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "kalte-sesamnudeln-beilagen": "2 Salatgurken"
+        }
+      },
+      {
+        "ingredient": "karotten",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "kalte-sesamnudeln-beilagen": "2 Karotten"
+        }
+      },
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": "6",
+          "value": 6.0,
+          "max": 6.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "char-siu": "4 Knoblauchzehen",
+          "kalte-sesamnudeln-beilagen": "2 fein geriebenen Knoblauchzehen"
+        }
+      },
+      {
+        "ingredient": "ingwer",
+        "total": {
+          "text": "30 g",
+          "value": 30.0,
+          "max": 30.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "char-siu": "30 g Ingwer"
+        }
+      },
+      {
+        "ingredient": "koriander",
+        "total": {
+          "text": "½ Bund",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "Bund",
+          "approx": false
+        },
+        "perTask": {
+          "kalte-sesamnudeln-beilagen": "½ Bund Koriander"
+        }
+      },
+      {
+        "ingredient": "zucker",
+        "total": {
+          "text": "3 EL + 2 TL",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "EL",
+          "approx": false,
+          "plus": [
+            {
+              "text": "2 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "char-siu": "3 EL Zucker",
+          "kalte-sesamnudeln-beilagen": "2 TL Zucker"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "sesamoel",
+        "total": {
+          "text": "2 EL + 2 TL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false,
+          "plus": [
+            {
+              "text": "2 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "char-siu": "1 TL geröstetem Sesamöl",
+          "kalte-sesamnudeln-beilagen": "1 EL geröstetem Sesamöl + 1 TL geröstetem Sesamöl + 1 EL geröstetem Sesamöl"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "sesam",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "kalte-sesamnudeln-beilagen": "1 EL Sesam"
+        }
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": "¼ TL",
+          "value": 0.25,
+          "max": 0.25,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "char-siu": "¼ TL weißem Pfeffer"
+        }
+      },
+      {
+        "ingredient": "paprikapulver",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "char-siu": "1 TL Paprikapulver"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "2½ TL",
+          "value": 2.5,
+          "max": 2.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "char-siu": "1 TL Salz",
+          "kalte-sesamnudeln-beilagen": "½ TL Salz + 1 TL Salz"
+        }
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "3825–3855 ml",
+          "value": 3825.0,
+          "max": 3855.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "char-siu": "500 ml Wasser + 250 ml Wasser + 1 EL Wasser",
+          "kalte-sesamnudeln-beilagen": "4–6 EL warmes Wasser + 3 l Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Asialaden",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "pak",
+            "name": "Pak Choi",
+            "need": {
+              "text": "400 g",
+              "value": 400.0,
+              "max": 400.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "400 g",
+            "inStock": false,
+            "buy": {
+              "text": "400 g"
+            },
+            "note": "Baby-Pak-Choi, alternativ REWE Center"
+          },
+          {
+            "ingredient": "fruehlingszwiebeln",
+            "name": "Frühlingszwiebeln",
+            "need": {
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "4",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            }
+          }
+        ]
+      },
+      {
+        "store": "Asialaden",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "ramen-nudeln",
+            "name": "Ramen-Nudeln, getrocknet",
+            "need": {
+              "text": "270 g",
+              "value": 270.0,
+              "max": 270.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "270 g",
+            "inStock": false,
+            "buy": {
+              "text": "270 g"
+            },
+            "note": "1 Pkg. Hakubaku; Alternative: chinesische Weizennudeln, siehe Beschaffung"
+          }
+        ]
+      },
+      {
+        "store": "Asialaden",
+        "group": "Würzmittel & Gewürze",
+        "items": [
+          {
+            "ingredient": "tofu",
+            "name": "Tofu, rot fermentiert",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "1 Glas"
+            },
+            "note": "nam yu, 300–350 g — Verbrauch 2 Würfel + 2 EL Lake; Fallback: rote Misopaste + Paprika"
+          },
+          {
+            "ingredient": "maltose",
+            "name": "Maltose",
+            "need": {
+              "text": "80 g",
+              "value": 80.0,
+              "max": 80.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "80 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 Becher"
+            },
+            "note": "500 g — Verbrauch 80 g; Fallback: Honig"
+          },
+          {
+            "ingredient": "sesampaste",
+            "name": "Sesampaste, chinesisch, geröstet",
+            "need": {
+              "text": "4 EL",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "4 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Glas"
+            },
+            "note": "Verbrauch 4 EL; Fallback: Tahina + gerösteter Sesam"
+          },
+          {
+            "ingredient": "hoisinsauce",
+            "name": "Hoisinsauce",
+            "need": {
+              "text": "4 EL",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "4 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Flasche"
+            },
+            "note": "Verbrauch 4 EL"
+          },
+          {
+            "ingredient": "sojasauce",
+            "name": "Helle Sojasauce",
+            "need": {
+              "text": "5 EL",
+              "value": 5.0,
+              "max": 5.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "5 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Flasche"
+            },
+            "note": "Verbrauch 5 EL — siehe Mengen-Check"
+          },
+          {
+            "ingredient": "dunkle-sojasauce",
+            "name": "Dunkle Sojasauce",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Flasche"
+            },
+            "note": "Verbrauch 1 EL"
+          },
+          {
+            "ingredient": "austernsauce",
+            "name": "Austernsauce",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Flasche"
+            },
+            "note": "Verbrauch 2 EL"
+          },
+          {
+            "ingredient": "chinkiang-essig",
+            "name": "Chinkiang-Essig",
+            "need": {
+              "text": "2½ EL",
+              "value": 2.5,
+              "max": 2.5,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2½ EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Flasche"
+            },
+            "note": "schwarzer Reisessig, Verbrauch 2½ EL"
+          },
+          {
+            "ingredient": "fuenf-gewuerze-pulver",
+            "name": "Fünf-Gewürze-Pulver",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Tüte"
+            },
+            "note": "Verbrauch 1 TL; falls nicht im Vorrat"
+          },
+          {
+            "ingredient": "chilioel",
+            "name": "Chiliöl",
+            "need": {
+              "text": "2–4 TL",
+              "value": 2.0,
+              "max": 4.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "2–4 TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Glas"
+            },
+            "note": "z. B. Lao Gan Ma Spicy Chili Crisp — nur für Erwachsene am Tisch"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "salatgurken",
+            "name": "Salatgurken",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            }
+          },
+          {
+            "ingredient": "karotten",
+            "name": "Karotten",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            }
+          },
+          {
+            "ingredient": "knoblauch",
+            "name": "Knoblauch",
+            "need": {
+              "text": "6",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "6",
+            "inStock": false,
+            "buy": {
+              "text": "1 Knolle"
+            },
+            "note": "Verbrauch 6 Zehen"
+          },
+          {
+            "ingredient": "ingwer",
+            "name": "Ingwer",
+            "need": {
+              "text": "30 g",
+              "value": 30.0,
+              "max": 30.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "30 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 Stück"
+            },
+            "note": "\\~40 g"
+          },
+          {
+            "ingredient": "koriander",
+            "name": "Koriander",
+            "need": {
+              "text": "½ Bund",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Bund",
+              "approx": false
+            },
+            "display": "½ Bund",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            },
+            "optional": true
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "schweinenacken",
+            "name": "Schweinenacken ohne Knochen, **am Stück**",
+            "need": {
+              "text": "1500 g",
+              "value": 1500.0,
+              "max": 1500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "1500 g",
+            "inStock": false,
+            "buy": {
+              "text": "1,5 kg"
+            }
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "zucker",
+            "name": "Zucker",
+            "need": {
+              "text": "3 EL + 2 TL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "2 TL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "3 EL + 2 TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "3 EL + 2 TL"
+          },
+          {
+            "ingredient": "sesamoel",
+            "name": "Sesamöl, geröstet",
+            "need": {
+              "text": "2 EL + 2 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "2 TL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "2 EL + 2 TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "\\~2½ EL gesamt"
+          },
+          {
+            "ingredient": "sesam",
+            "name": "Sesam, geröstet",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Weißer Pfeffer",
+            "need": {
+              "text": "¼ TL",
+              "value": 0.25,
+              "max": 0.25,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "¼ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "paprikapulver",
+            "name": "Paprikapulver, edelsüß",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "2½ TL",
+              "value": 2.5,
+              "max": 2.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "2½ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "3825–3855 ml",
+              "value": 3825.0,
+              "max": 3855.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "3825–3855 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}
