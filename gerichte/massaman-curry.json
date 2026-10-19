@@ -1,0 +1,2987 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/massaman-curry",
+  "kind": "dish",
+  "title": "Massaman Curry — Hähnchenkeule, Kartoffeln, Erdnüsse, Paste von Grund auf (4 Portionen)",
+  "status": "done",
+  "yields": {
+    "text": "4 Portionen",
+    "value": 4.0,
+    "unit": "Portionen"
+  },
+  "intro": "*Aktive Zeit \\~1 Std. am Kochtag, gesamt \\~2 Std. (plus Paste am Vortag: \\~1,5 Std., davon \\~1 Std. aktiv). Equipment: Bräter mit Deckel, Backofen, Mörser, Mixer-Aufsatz der Küchenmaschine, Pfanne, kleiner Topf, 2 Reistöpfe, Fleischthermometer, Einweghandschuhe.*\n\nDas „mildeste\" Thai-Curry und zugleich das gewürzlastigste: Zimt, Kardamom,\nNelke, Muskat und Kreuzkümmel aus dem persisch-muslimischen Erbe, dazu die\nThai-Basis aus gerösteten Schalotten, Knoblauch, Zitronengras und Galgant. Die\nBalance ist süß-sauer-salzig (Palmzucker, Tamarinde, Fischsauce) — in dieser\nReihenfolge der Gewichtung. Die Paste wird einmal in doppelter Menge gemacht:\neine Hälfte jetzt, die andere eingefroren für das nächste Curry. Das ist der\neigentliche Lerneffekt — dieselben Handgriffe (Chilis einweichen, Aromaten\nrösten, Gewürze rösten, mörsern/mixen, in gebrochener Kokoscreme rösten) tragen\njede rote, gelbe oder Panang-Paste danach.",
+  "times": {
+    "text": "Aktive Zeit ~1 Std. am Kochtag, gesamt ~2 Std.",
+    "active": {
+      "typical": "PT1H",
+      "source": "1 Std."
+    },
+    "total": {
+      "typical": "PT2H",
+      "source": "2 Std."
+    }
+  },
+  "equipment": [
+    "Bräter mit Deckel",
+    "Backofen",
+    "Mörser",
+    "Mixer-Aufsatz der Küchenmaschine",
+    "Pfanne",
+    "kleiner Topf",
+    "2 Reistöpfe",
+    "Fleischthermometer",
+    "Einweghandschuhe"
+  ],
+  "ingredients": [
+    {
+      "id": "galgant",
+      "name": "Galgant, frisch",
+      "store": "Asialaden",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "30 g"
+      },
+      "note": "oder TK-Galgant in Scheiben; Bedarf 25 g"
+    },
+    {
+      "id": "korianderwurzeln",
+      "name": "Korianderwurzeln",
+      "store": "Asialaden",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "15 g"
+      },
+      "note": "Thai-Koriander mit Wurzel, falls da — sonst Topf-Koriander von REWE"
+    },
+    {
+      "id": "chilis",
+      "name": "Chilis, groß und mild, getrocknet",
+      "store": "Asialaden",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "30 g"
+      },
+      "note": "prik chee fah haeng; Fallback Guajillo, siehe Beschaffung; Bedarf 25 g"
+    },
+    {
+      "id": "vogelaugenchilis",
+      "name": "Vogelaugenchilis, getrocknet",
+      "store": "Asialaden",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 Beutel"
+      },
+      "note": "klein und scharf; Bedarf 6 Stück"
+    },
+    {
+      "id": "tamarinde",
+      "name": "Tamarinde mit Kernen",
+      "store": "Asialaden",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "200–400 g"
+      },
+      "note": "Block, z. B. Cock; Bedarf 40 g, Rest hält ewig"
+    },
+    {
+      "id": "erdnuesse",
+      "name": "Erdnüsse, roh, ohne Haut",
+      "store": "Asialaden",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "200 g"
+      },
+      "note": "Bedarf 80 g"
+    },
+    {
+      "id": "kokosmilch",
+      "name": "Dosen Kokosmilch à 400 ml",
+      "store": "Asialaden",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "3"
+      },
+      "note": "ohne Emulgator, z. B. Chaokoh — nicht schütteln"
+    },
+    {
+      "id": "jasminreis",
+      "name": "Jasminreis",
+      "store": "Asialaden",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 kg"
+      },
+      "note": "Bedarf 200 g"
+    },
+    {
+      "id": "roestschalotten",
+      "name": "Röstschalotten",
+      "store": "Asialaden",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 Dose"
+      },
+      "optional": true,
+      "note": "Garnitur"
+    },
+    {
+      "id": "garnelenpaste",
+      "name": "Garnelenpaste",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1 Glas"
+      },
+      "note": "Kapi; Bedarf 10 g"
+    },
+    {
+      "id": "fischsauce",
+      "name": "Fischsauce",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1 Flasche"
+      },
+      "note": "z. B. Red Boat oder Tiparos; Bedarf \\~3 EL"
+    },
+    {
+      "id": "palmzucker",
+      "name": "Palmzucker",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1 Packung"
+      },
+      "note": "Bedarf 25 g"
+    },
+    {
+      "id": "reisessig",
+      "name": "Reisessig",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1 Flasche"
+      },
+      "note": "Bedarf 60 ml"
+    },
+    {
+      "id": "haehnchenkeulen",
+      "name": "Hähnchenkeulen mit Knochen",
+      "store": "REWE Center",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "1,5 kg"
+      },
+      "note": "4 ganze Keulen à 350–400 g"
+    },
+    {
+      "id": "schalotten",
+      "name": "Schalotten",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "500 g"
+      },
+      "note": "120 g Paste, 8 kleine ganze \\~250 g fürs Curry, 1 fürs Ajad"
+    },
+    {
+      "id": "knoblauch",
+      "name": "Knoblauch",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2 Knollen"
+      },
+      "note": "Bedarf 60 g ≈ 1 große Knolle"
+    },
+    {
+      "id": "staengel",
+      "name": "Stängel Zitronengras",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3"
+      }
+    },
+    {
+      "id": "kartoffeln",
+      "name": "Kartoffeln, festkochend",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "500 g"
+      }
+    },
+    {
+      "id": "koriander",
+      "name": "Koriander im Topf",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "note": "Garnitur + Wurzel-Fallback"
+    },
+    {
+      "id": "salatgurke",
+      "name": "Salatgurke",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      }
+    },
+    {
+      "id": "naturreis",
+      "name": "Naturreis",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 Packung"
+      },
+      "optional": true,
+      "note": "gern Vollkorn-Jasminreis; Schwangerschafts-Portion, Bedarf 50 g"
+    },
+    {
+      "id": "koriandersaat",
+      "name": "Koriandersaat",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "2 EL"
+    },
+    {
+      "id": "kreuzkuemmel",
+      "name": "Kreuzkümmel, ganz",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "2 TL"
+    },
+    {
+      "id": "kardamom",
+      "name": "Kardamom, grün",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "12 Kapseln"
+    },
+    {
+      "id": "nelken",
+      "name": "Nelken",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "6 Stück"
+    },
+    {
+      "id": "zimtstangen",
+      "name": "Zimtstangen",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "2 Stück, gern Kassia"
+    },
+    {
+      "id": "pfefferkoerner",
+      "name": "Weiße Pfefferkörner",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "1 TL"
+    },
+    {
+      "id": "muskatnuss",
+      "name": "Muskatnuss",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "ganz, zum Reiben"
+    },
+    {
+      "id": "macis",
+      "name": "Macis",
+      "store": "Vorrat",
+      "optional": true,
+      "pantry": true,
+      "note": "Muskatblüte; 1 TL"
+    },
+    {
+      "id": "lorbeerblaetter",
+      "name": "Lorbeerblätter",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "3 Stück"
+    },
+    {
+      "id": "oel",
+      "name": "Öl, neutral",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "2 EL"
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "zucker",
+      "name": "Zucker",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "2 TL fürs Ajad"
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Stil-Entscheidung",
+      "level": 2,
+      "markdown": "- **Mild gebaut, Schärfe als eigene Paste:** Die Currypaste nutzt nur große,\n  milde getrocknete Chilis (entkernt) — sie liefern Farbe und Fruchtigkeit,\n  kaum Schärfe. Für die Erwachsenen entsteht parallel eine kleine\n  **Schärfepaste** aus Vogelaugenchilis, die erst **nach** dem Abnehmen der\n  Kinderportion in gebrochener Kokoscreme geröstet und mitgeköchelt wird.\n  Das ist die Konsequenz aus dem Paneer-Learning (07/2026): Schärfe pro Teller\n  reicht nicht, sie muss in der Sauce ziehen und sich langsam aufbauen.\n- **Hähnchenkeule mit Knochen, ohne Haut:** Knochen und Sehnen geben der Sauce\n  Körper, die Keule verzeiht die \\~55 Min. Schmoren. Haut ab, weil sie im\n  Curry ohnehin weich wird und Kokos genug Fett mitbringt — das Miso-Tonkotsu-\n  Learning (zu fettig) spricht für jede Fett-Bremse, die nichts kostet.\n  Angebräunt wird trotzdem: Röstnoten im Bratensatz, den die Kokoscreme danach\n  löst.\n- **Aromaten im Ofen rösten statt über Holzkohle:** Thai-Köche rösten Schalotten\n  und Knoblauch in der Schale über Glut oder in der trockenen Pfanne, bis sie\n  außen verkohlt und innen weich sind. Der Ofen liefert dasselbe Ergebnis ohne\n  Rauch und ohne Einbrennen in der Edelstahlpfanne, und die Garnelenpaste röstet\n  im Backpapierpäckchen gleich mit (riecht dann nicht die ganze Wohnung voll).\n- **Kein Limettensaft:** Die Säure kommt nur aus Tamarinde — Limette macht das\n  Curry spitz statt rund (laut National Geographic der häufigste Fehler).",
+      "tags": [
+        "stil"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Asialaden vorher anrufen** und drei Engpass-Artikel abfragen:\n  1. **Große milde getrocknete Chilis** (Thai: *prik chee fah haeng*, oft als\n     „Dried Chilli, large\" etikettiert, 10–15 cm lang). Viele Asialäden haben\n     nur die kleinen scharfen chinesischen Chilis (*Chaotian*/Tianjin) — die sind\n     **kein** Ersatz, die Paste wäre für das Kind zu scharf. Fallback, der\n     funktioniert: **Guajillo** von Mexhaus (mild, fruchtig, kräftig rot,\n     ohnehin die Bezugsquelle aus dem Cochinita-Projekt) oder Kashmiri-Chilis\n     (indischer Laden/online). Notnagel: 2 EL Paprika edelsüß statt der Chilis —\n     Farbe ja, Tiefe nein.\n  2. **Galgant:** frisch ist Glückssache, **TK-Galgant in Scheiben** ist in\n     Asialäden Standard und für Paste gleichwertig. Getrockneter Galgant (in\n     Scheiben, 30 Min. einweichen) geht zur Not. **Ingwer ist kein Ersatz** —\n     anderes Aroma (scharf-warm statt kampferig-zitrisch).\n  3. **Korianderwurzeln:** Thai-Koriander mit Wurzel gibt es nur manchmal.\n     Fallback: **Topf-Koriander** (REWE/Aldi) — den Wurzelballen gut auswaschen,\n     die feinen Wurzeln plus die unteren 3 cm der Stängel nehmen (dann 25 g statt\n     15 g). Reine Stängel ohne Wurzel gehen auch, sind aber grasiger.\n- **Zuverlässig im Asialaden:** Garnelenpaste (*Kapi*, z. B. Pantai, Tra Chang),\n  Tamarinde im Block (mit Kernen, z. B. Cock), Palmzucker, Fischsauce,\n  Kokosmilch, Jasminreis, Reisessig, rohe Erdnüsse, Röstschalotten,\n  Vogelaugenchilis (getrocknet). Zitronengras gibt es frisch auch bei REWE\n  (2–3 Stängel pro Schale), im Asialaden zusätzlich TK.\n- **Kokosmilch:** Zutatenliste prüfen — Dosen **ohne Emulgator/Guarkernmehl**\n  (z. B. Chaokoh) trennen sich in der Dose in feste Creme und dünne Milch und\n  „brechen\" beim Erhitzen zuverlässig. Mit Stabilisatoren (häufig bei Aroy-D\n  Tetra und Supermarkt-Ware) bricht die Creme schlecht; dann hilft\n  zugegebenes Öl (siehe Schritt „Creme brechen\"). Dosen **nicht schütteln**\n  und am besten über Nacht kühl stellen — dann setzt sich die Creme sauber ab.\n- **Hähnchenkeulen:** ganze Keulen mit Knochen (REWE Center zuverlässig, Aldi\n  meist auch), \\~4 Stück à 350–400 g. Alternativ 8 Oberkeulen (gleichmäßiger,\n  mehr Fleisch pro Knochen).\n- **Mörser vs. Mixer — ehrliche Einschätzung:** Eine komplette Paste von\n  \\~350 g in einem normalen Haushalts-Mörser zu stampfen kostet 45–60 Min.\n  harte Arbeit; Zitronengras und Galgant sind faserig. Der **Mixer-Aufsatz der\n  Bosch MUM (1,25 l, Messer am Boden)** packt die doppelte Menge, aber nur mit\n  etwas Flüssigkeit und mehrmals Abschaben — bei einfacher Menge drehen die\n  Messer unter der Paste leer. Der Mixer schneidet, der Mörser quetscht; Thai-\n  Köche schwören auf den Mörser, weil Quetschen mehr Aromaöl freisetzt. Plan\n  hier: **Hybrid** — die Teile, an denen Mixer scheitern (Gewürze, Chilihaut),\n  im Mörser vorarbeiten, die Masse im Mixer glatt ziehen. Doppelte Menge ist\n  damit nicht nur Vorrat, sondern auch die Mindestmenge, mit der der Mixer\n  vernünftig arbeitet. Plan B: Stabmixer im hohen Becher.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "currypaste",
+          "name": "Currypaste",
+          "steps": [
+            {
+              "id": "chilis-einweichen",
+              "label": "1",
+              "heading": "**1. Chilis einweichen (5 Min. + 30 Min. passiv)**",
+              "title": "Chilis einweichen",
+              "duration": {
+                "typical": "PT35M",
+                "source": "5 Min. + 30 Min."
+              },
+              "attention": "passive",
+              "text": "25 g große milde Chilis und 6 Vogelaugenchilis (getrennt halten!) mit Handschuhen aufschneiden, Kerne und helle Scheidewände restlos entfernen. In der trockenen Pfanne bei mittlerer Hitze 20–30 Sek. anrösten, bis sie duften und leicht aufpuffen — **nicht schwärzen**, sonst bitter. Beide Sorten in getrennten Schälchen mit heißem Wasser bedecken und 30 Min. einweichen, bis sie lederweich sind. *Die Kerne tragen einen Großteil der Schärfe und bleiben im Mörser als harte Krümel — deshalb gründlich.*",
+              "action": "25 g große milde Chilis und 6 Vogelaugenchilis (getrennt halten!) mit Handschuhen aufschneiden, Kerne und helle Scheidewände restlos entfernen.",
+              "limits": [
+                "nicht schwärzen"
+              ],
+              "why": "Die Kerne tragen einen Großteil der Schärfe und bleiben im Mörser als harte Krümel — deshalb gründlich.",
+              "cues": [
+                "bis sie duften und leicht aufpuffen",
+                "bis sie lederweich sind"
+              ],
+              "timers": [
+                {
+                  "label": "Chilis einweichen",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "30 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "chilis",
+                  "amount": {
+                    "text": "25 g große milde Chilis",
+                    "value": 25.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "vogelaugenchilis",
+                  "amount": {
+                    "text": "6 Vogelaugenchilis",
+                    "value": 6.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "after": []
+            },
+            {
+              "id": "aromaten-roesten",
+              "label": "2",
+              "heading": "**2. Aromaten rösten (10 Min. + 25–30 Min. passiv)**",
+              "title": "Aromaten rösten",
+              "duration": {
+                "min": "PT35M",
+                "max": "PT40M",
+                "source": "10 Min. + 25–30 Min."
+              },
+              "attention": "passive",
+              "text": "120 g Schalotten und 60 g Knoblauch (Zehen) ungeschält, 3 Stängel Zitronengras (äußere harte Blätter ab, nur die unteren \\~12 cm, längs halbiert) und 25 g Galgant (in 5-mm-Scheiben; TK direkt gefroren) aufs Blech legen. 10 g Garnelenpaste flach in ein Backpapierpäckchen falten und dazulegen. Bei 200 °C Ober-/Unterhitze rösten: Zitronengras, Galgant und Garnelenpaste nach 12–15 Min. herausnehmen, Schalotten und Knoblauch nach 25–30 Min., bis die Schale stellenweise schwarz ist und sie auf Druck weich nachgeben. Abkühlen lassen, schälen. *Rösten nimmt Schalotten und Knoblauch die Schärfe und macht sie süß-rauchig — der Unterschied zwischen einer Paste, die nach Rohzwiebel schmeckt, und einer, die tief schmeckt.*",
+              "action": "120 g Schalotten und 60 g Knoblauch (Zehen) ungeschält, 3 Stängel Zitronengras (äußere harte Blätter ab, nur die unteren \\~12 cm, längs halbiert) und 25 g Galgant (in 5-mm-Scheiben; TK direkt gefroren) aufs Blech legen.",
+              "why": "Rösten nimmt Schalotten und Knoblauch die Schärfe und macht sie süß-rauchig — der Unterschied zwischen einer Paste, die nach Rohzwiebel schmeckt, und einer, die tief schmeckt.",
+              "cues": [
+                "bis die Schale stellenweise schwarz ist und sie auf Druck weich nachgeben"
+              ],
+              "events": [
+                {
+                  "at": {
+                    "min": "PT12M",
+                    "max": "PT15M",
+                    "source": "12–15 Min."
+                  },
+                  "text": "Bei 200 °C Ober-/Unterhitze rösten: Zitronengras, Galgant und Garnelenpaste nach 12–15 Min."
+                },
+                {
+                  "at": {
+                    "min": "PT25M",
+                    "max": "PT30M",
+                    "source": "25–30 Min."
+                  },
+                  "text": "herausnehmen, Schalotten und Knoblauch nach 25–30 Min., bis die Schale stellenweise schwarz ist und sie auf Druck weich nachgeben."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "200 °C",
+                  "value": 200
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "schalotten",
+                  "amount": {
+                    "text": "120 g Schalotten",
+                    "value": 120.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "60 g Knoblauch",
+                    "value": 60.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "staengel",
+                  "amount": {
+                    "text": "3 Stängel Zitronengras",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "galgant",
+                  "amount": {
+                    "text": "25 g Galgant",
+                    "value": 25.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "garnelenpaste",
+                  "amount": {
+                    "text": "10 g Garnelenpaste",
+                    "value": 10.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Ofen 200 °C*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 200
+                }
+              ],
+              "timers": [
+                {
+                  "label": "Aromaten rösten",
+                  "duration": {
+                    "min": "PT35M",
+                    "max": "PT40M"
+                  },
+                  "text": "10 Min. + 25–30 Min."
+                }
+              ],
+              "after": []
+            },
+            {
+              "id": "gewuerze-roesten",
+              "label": "3",
+              "heading": "**3. Gewürze rösten (ca. 5 Min.)**",
+              "title": "Gewürze rösten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "ca. 5 Min.",
+                "estimated": true
+              },
+              "text": "2 EL Koriandersaat, 2 TL Kreuzkümmel, 8 Kardamomkapseln, 6 Nelken, 1 Zimtstange (5 cm, grob zerbrochen) und 1 TL weiße Pfefferkörner in der trockenen Pfanne bei mittlerer Hitze 2–3 Min. unter ständigem Schwenken rösten, bis der Kreuzkümmel einen Ton dunkler wird und es kräftig duftet. Optional 1 TL Macis die letzten 30 Sek. mitrösten. Sofort aus der Pfanne auf einen Teller, abkühlen lassen. Kardamomkapseln öffnen, nur die Samen verwenden.",
+              "action": "2 EL Koriandersaat, 2 TL Kreuzkümmel, 8 Kardamomkapseln, 6 Nelken, 1 Zimtstange (5 cm, grob zerbrochen) und 1 TL weiße Pfefferkörner in der trockenen Pfanne bei mittlerer Hitze 2–3 Min. unter ständigem Schwenken rösten, bis der Kreuzkümmel einen Ton dunkler wird und es kräftig duftet.",
+              "cues": [
+                "bis der Kreuzkümmel einen Ton dunkler wird und es kräftig duftet"
+              ],
+              "timers": [
+                {
+                  "label": "Gewürze rösten",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "koriandersaat",
+                  "amount": {
+                    "text": "2 EL Koriandersaat",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "kreuzkuemmel",
+                  "amount": {
+                    "text": "2 TL Kreuzkümmel",
+                    "value": 2.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "kardamom",
+                  "amount": {
+                    "text": "8 Kardamomkapseln",
+                    "value": 8.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "nelken",
+                  "amount": {
+                    "text": "6 Nelken",
+                    "value": 6.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "zimtstangen",
+                  "amount": {
+                    "text": "1 Zimtstange",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "pfefferkoerner",
+                  "amount": {
+                    "text": "1 TL weiße Pfefferkörner",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "macis",
+                  "amount": {
+                    "text": "1 TL Macis",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "gewuerze-moersern",
+              "label": "4",
+              "heading": "**4. Gewürze mörsern (ca. 10 Min.)**",
+              "title": "Gewürze mörsern",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "text": "Die gerösteten Gewürze mit 1 TL Salz im Mörser sehr fein zerstoßen, ½ TL Muskatnuss frisch darüberreiben. Herausnehmen. Dann die eingeweichten großen Chilis gut ausdrücken (Einweichwasser aufheben), fein schneiden und im Mörser 3–5 Min. zu einer groben Paste stampfen. *Gewürze und Chilihaut sind genau die Teile, an denen der Mixer scheitert: ganze Koriandersaat bleibt im Mixer sandig, Chilihaut als Fetzen.*",
+              "action": "Die gerösteten Gewürze mit 1 TL Salz im Mörser sehr fein zerstoßen, ½ TL Muskatnuss frisch darüberreiben.",
+              "why": "Gewürze und Chilihaut sind genau die Teile, an denen der Mixer scheitert: ganze Koriandersaat bleibt im Mixer sandig, Chilihaut als Fetzen.",
+              "timers": [
+                {
+                  "label": "Gewürze mörsern",
+                  "duration": {
+                    "min": "PT3M",
+                    "max": "PT5M"
+                  },
+                  "text": "3–5 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "muskatnuss",
+                  "amount": {
+                    "text": "½ TL Muskatnuss",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*nach Gewürze rösten*",
+              "attention": "active",
+              "after": [
+                "step:gewuerze-roesten"
+              ]
+            },
+            {
+              "id": "paste-mixen",
+              "label": "5",
+              "heading": "**5. Paste mixen (ca. 15 Min.)**",
+              "title": "Paste mixen",
+              "duration": {
+                "typical": "PT15M",
+                "source": "ca. 15 Min.",
+                "estimated": true
+              },
+              "text": "Zitronengras quer zur Faser in 2-mm-Ringe schneiden, Galgant fein hacken, 15 g Korianderwurzeln waschen, Erde unter dem Fingernagel abschaben und hacken. Alles mit den gerösteten Schalotten, dem Knoblauch, der Garnelenpaste, der Chilipaste und den gemörserten Gewürzen in den Mixer-Aufsatz geben, 3 EL Einweichwasser dazu. In kurzen Intervallen auf höchster Stufe mixen, alle 20–30 Sek. stoppen und mit dem Teigschaber die Wände herunterschaben; nur bei Stillstand löffelweise Einweichwasser nachgeben (insgesamt **höchstens 5 EL**). Nach 3–5 Min. Laufzeit ist die Paste glatt mit feinen Fasern. *Zu wässrig ist kein Drama — das Wasser verdampft beim Rösten in der Kokoscreme, es verlängert nur das Rösten.*\n> **Technik:** Fasern zwischen den Fingern spürbar? Die Paste portionsweise\n> noch 5 Min. im Mörser nacharbeiten — das ist der Schliff, den Thai-Köche dem\n> Mörser zuschreiben. Plan B ohne Mixer: Stabmixer im hohen Becher, Zitronengras\n> und Galgant dann noch feiner vorschneiden.",
+              "action": "Zitronengras quer zur Faser in 2-mm-Ringe schneiden, Galgant fein hacken, 15 g Korianderwurzeln waschen, Erde unter dem Fingernagel abschaben und hacken.",
+              "limits": [
+                "höchstens 5 EL"
+              ],
+              "events": [
+                {
+                  "at": {
+                    "min": "PT3M",
+                    "max": "PT5M",
+                    "source": "3–5 Min."
+                  },
+                  "text": "Nach 3–5 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "korianderwurzeln",
+                  "amount": {
+                    "text": "15 g Korianderwurzeln",
+                    "value": 15.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nach Chilis einweichen, Aromaten rösten, Gewürze mörsern*",
+              "attention": "active",
+              "after": [
+                "step:chilis-einweichen",
+                "step:aromaten-roesten",
+                "step:gewuerze-moersern"
+              ]
+            },
+            {
+              "id": "schaerfepaste",
+              "label": "6",
+              "heading": "**6. Schärfepaste (ca. 5 Min.)**",
+              "title": "Schärfepaste",
+              "duration": {
+                "typical": "PT5M",
+                "source": "ca. 5 Min.",
+                "estimated": true
+              },
+              "text": "Die eingeweichten Vogelaugenchilis ausdrücken, mit ¼ TL Salz im Mörser fein stampfen und 2 TL der fertigen Currypaste untermischen. Ergibt \\~1,5 EL — reicht für zwei Curry- Durchgänge. *Getrennt von der Currypaste halten: Sie ist der einzige scharfe Baustein im ganzen Gericht.*",
+              "action": "Die eingeweichten Vogelaugenchilis ausdrücken, mit ¼ TL Salz im Mörser fein stampfen und 2 TL der fertigen Currypaste untermischen.",
+              "why": "Getrennt von der Currypaste halten: Sie ist der einzige scharfe Baustein im ganzen Gericht.",
+              "ingredients": [
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "¼ TL Salz",
+                    "value": 0.25,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*nach Paste mixen*",
+              "attention": "active",
+              "after": [
+                "step:paste-mixen"
+              ]
+            },
+            {
+              "id": "paste-einfrieren",
+              "label": "7",
+              "heading": "**7. Paste einfrieren (ca. 5 Min.)**",
+              "title": "Paste einfrieren",
+              "duration": {
+                "typical": "PT5M",
+                "source": "ca. 5 Min.",
+                "estimated": true
+              },
+              "text": "Currypaste wiegen und halbieren: \\~170 g in ein Glas für das Curry (Kühlschrank, hält 3–4 Tage), die zweite Hälfte in Mulden der Babybrei-Gefrierform verteilen, glatt streichen, Gewicht pro Mulde notieren. Schärfepaste halbieren, die eine Hälfte ins Glas zur Currypaste, die andere in eine Eiswürfelmulde. Gefroren auslösen, doppelt eingebeutelt beschriften — hält \\~3 Monate. *Muldenvolumen der Babybrei-Form ist noch nicht ausgemessen (CLAUDE.md) — beim Portionieren direkt nachtragen.*",
+              "action": "Currypaste wiegen und halbieren: \\~170 g in ein Glas für das Curry (Kühlschrank, hält 3–4 Tage), die zweite Hälfte in Mulden der Babybrei-Gefrierform verteilen, glatt streichen, Gewicht pro Mulde notieren.",
+              "why": "Muldenvolumen der Babybrei-Form ist noch nicht ausgemessen (CLAUDE.md) — beim Portionieren direkt nachtragen.",
+              "ingredients": [],
+              "meta": "*nach Paste mixen, Schärfepaste*",
+              "attention": "active",
+              "after": [
+                "step:paste-mixen",
+                "step:schaerfepaste"
+              ]
+            }
+          ],
+          "heading": "**Currypaste (Vortag oder bis 3 Monate vorher, tiefgekühlt; \\~1,5 Std.):**",
+          "phaseHint": "Vortag",
+          "produces": [
+            {
+              "id": "currypaste",
+              "name": "Currypaste"
+            }
+          ],
+          "intro": "Doppelte Menge, ergibt \\~340–360 g. Ein Curry für 4 braucht die Hälfte\n(\\~170 g, gut 10 EL). Die Paste ist bewusst mild; Salz steckt nur 1 TL drin,\ndamit beim Abschmecken die Fischsauce das Sagen hat."
+        },
+        {
+          "id": "gurken-ajad",
+          "name": "Gurken-Ajad",
+          "steps": [
+            {
+              "id": "ajad-lake",
+              "label": "8",
+              "heading": "**8. Ajad-Lake (ca. 5 Min.)**",
+              "title": "Ajad-Lake",
+              "duration": {
+                "typical": "PT5M",
+                "source": "ca. 5 Min.",
+                "estimated": true
+              },
+              "text": "60 ml Reisessig, 60 ml Wasser, 2 TL Zucker und ½ TL Salz in einem kleinen Topf aufkochen, bis sich alles gelöst hat, abkühlen lassen.",
+              "action": "60 ml Reisessig, 60 ml Wasser, 2 TL Zucker und ½ TL Salz in einem kleinen Topf aufkochen, bis sich alles gelöst hat, abkühlen lassen.",
+              "cues": [
+                "bis sich alles gelöst hat"
+              ],
+              "ingredients": [
+                {
+                  "ref": "reisessig",
+                  "amount": {
+                    "text": "60 ml Reisessig",
+                    "value": 60.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "60 ml Wasser",
+                    "value": 60.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "2 TL Zucker",
+                    "value": 2.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Ajad-Lake",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "ca. 5 Min."
+                }
+              ],
+              "after": []
+            }
+          ],
+          "heading": "**Gurken-Ajad (Lake am Vortag oder bis 1 Std. vorher, Kühlschrank):**",
+          "phaseHint": "Vortag",
+          "produces": [
+            {
+              "id": "gurken-ajad",
+              "name": "Gurken-Ajad",
+              "hold": {
+                "max": "PT1H",
+                "source": "Lake am Vortag oder bis 1 Std. vorher, Kühlschrank"
+              },
+              "storage": {
+                "place": "fridge"
+              }
+            }
+          ]
+        },
+        {
+          "id": "massaman-curry",
+          "name": "Massaman-Curry",
+          "steps": [
+            {
+              "id": "keulen-vorbereiten",
+              "label": "9",
+              "heading": "**9. Keulen vorbereiten (10 Min.)**",
+              "title": "Keulen vorbereiten",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "1,5 kg Hähnchenkeulen am Gelenk in Ober- und Unterkeule teilen (das Messer findet die Lücke, wenn man die Keule abknickt), Haut abziehen (an der Unterkeule mit Küchenpapier greifen), trockentupfen und rundum mit 1 TL Salz würzen. Kokosmilch-Dosen jetzt öffnen, **nicht schütteln**.",
+              "action": "1,5 kg Hähnchenkeulen am Gelenk in Ober- und Unterkeule teilen (das Messer findet die Lücke, wenn man die Keule abknickt), Haut abziehen (an der Unterkeule mit Küchenpapier greifen), trockentupfen und rundum mit 1 TL Salz würzen.",
+              "limits": [
+                "nicht schütteln"
+              ],
+              "ingredients": [
+                {
+                  "ref": "haehnchenkeulen",
+                  "amount": {
+                    "text": "1,5 kg Hähnchenkeulen",
+                    "value": 1.5,
+                    "unit": "kg"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "tamarinde-einweichen",
+              "label": "10",
+              "heading": "**10. Tamarinde einweichen (5 Min. + 15 Min. passiv)**",
+              "title": "Tamarinde einweichen",
+              "duration": {
+                "typical": "PT20M",
+                "source": "5 Min. + 15 Min."
+              },
+              "attention": "passive",
+              "text": "40 g Tamarinde vom Block in 150 ml heißem Wasser 15 Min. einweichen, dann mit den Fingern durchkneten und durch ein Sieb drücken; Fasern und Kerne wegwerfen. Das Tamarindenwasser ist dickflüssig wie Saft mit Fruchtfleisch, es sind \\~120 ml.",
+              "action": "40 g Tamarinde vom Block in 150 ml heißem Wasser 15 Min. einweichen, dann mit den Fingern durchkneten und durch ein Sieb drücken; Fasern und Kerne wegwerfen.",
+              "timers": [
+                {
+                  "label": "Tamarinde einweichen",
+                  "duration": {
+                    "typical": "PT15M"
+                  },
+                  "text": "15 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "tamarinde",
+                  "amount": {
+                    "text": "40 g Tamarinde",
+                    "value": 40.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "150 ml heißem Wasser",
+                    "value": 150.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "after": []
+            },
+            {
+              "id": "erdnuesse-roesten",
+              "label": "11",
+              "heading": "**11. Erdnüsse rösten (10 Min.)**",
+              "title": "Erdnüsse rösten",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "80 g Erdnüsse in der trockenen Pfanne bei mittlerer Hitze 6–8 Min. unter häufigem Schwenken goldbraun rösten, auf einem Teller abkühlen lassen. 40 g davon fürs Curry ganz lassen, 40 g grob hacken (Topping).",
+              "action": "80 g Erdnüsse in der trockenen Pfanne bei mittlerer Hitze 6–8 Min. unter häufigem Schwenken goldbraun rösten, auf einem Teller abkühlen lassen.",
+              "timers": [
+                {
+                  "label": "Erdnüsse rösten",
+                  "duration": {
+                    "min": "PT6M",
+                    "max": "PT8M"
+                  },
+                  "text": "6–8 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "erdnuesse",
+                  "amount": {
+                    "text": "80 g Erdnüsse",
+                    "value": 80.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "keulen-anbraeunen",
+              "label": "12",
+              "heading": "**12. Keulen anbräunen (15 Min.)**",
+              "title": "Keulen anbräunen",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "Den Bräter auf der Bräterzone stark erhitzen, 1 EL Öl hinein und die Hälfte der Keulen 3–4 Min. pro Seite goldbraun anbraten, herausnehmen; zweite Charge mit 1 EL Öl ebenso. 8 kleine Schalotten (\\~250 g, geschält, ganz) 3 Min. rundum anbräunen, zu den Keulen legen. Hitze auf mittel. *Durch muss hier nichts sein — es geht um Farbe und Bratensatz. Wird der Bratensatz schwarz statt braun: einen Schuss Wasser hinein und loskratzen.*",
+              "action": "Den Bräter auf der Bräterzone stark erhitzen, 1 EL Öl hinein und die Hälfte der Keulen 3–4 Min. pro Seite goldbraun anbraten, herausnehmen; zweite Charge mit 1 EL Öl ebenso.",
+              "why": "Durch muss hier nichts sein — es geht um Farbe und Bratensatz. Wird der Bratensatz schwarz statt braun: einen Schuss Wasser hinein und loskratzen.",
+              "timers": [
+                {
+                  "label": "Keulen anbräunen",
+                  "duration": {
+                    "min": "PT3M",
+                    "max": "PT4M"
+                  },
+                  "text": "3–4 Min."
+                },
+                {
+                  "label": "Keulen anbräunen",
+                  "duration": {
+                    "typical": "PT3M"
+                  },
+                  "text": "3 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "1 EL Öl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  },
+                  "occurrence": 1
+                },
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "1 EL Öl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  },
+                  "occurrence": 2
+                },
+                {
+                  "ref": "schalotten",
+                  "amount": {
+                    "text": "8 kleine Schalotten",
+                    "value": 8.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "einen Schuss Wasser"
+                  }
+                }
+              ],
+              "meta": "*nach Keulen vorbereiten · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:keulen-vorbereiten"
+              ]
+            },
+            {
+              "id": "creme-brechen",
+              "label": "13",
+              "heading": "**13. Creme brechen (5–10 Min.)**",
+              "title": "Creme brechen",
+              "duration": {
+                "min": "PT5M",
+                "max": "PT10M",
+                "source": "5–10 Min."
+              },
+              "text": "Von 3 Dosen Kokosmilch die feste Creme oben abschöpfen (\\~300 ml), davon 2 EL für den Schritt „Erwachsene schärfen\" beiseitestellen. Den Rest in den Bräter und bei mittlerer Hitze unter Rühren köcheln, bis die Creme dick wird, körnig aussieht und sich klares Öl am Rand absetzt (5–10 Min.). Die dünne Kokosmilch aus den Dosen für später bereithalten.\n> **Fallback:** Creme will nach 10 Min. nicht brechen (Emulgator in der Dose)?\n> 2 EL Öl zugeben und weiter — die Paste röstet dann im Öl statt im Kokosfett,\n> geschmacklich fast gleichwertig.",
+              "action": "Von 3 Dosen Kokosmilch die feste Creme oben abschöpfen (\\~300 ml), davon 2 EL für den Schritt „Erwachsene schärfen\" beiseitestellen.",
+              "cues": [
+                "bis die Creme dick wird"
+              ],
+              "timers": [
+                {
+                  "label": "Creme brechen",
+                  "duration": {
+                    "min": "PT5M",
+                    "max": "PT10M"
+                  },
+                  "text": "5–10 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "kokosmilch",
+                  "amount": {
+                    "text": "3 Dosen Kokosmilch",
+                    "value": 3.0,
+                    "unit": "Dosen"
+                  }
+                }
+              ],
+              "meta": "*nach Keulen anbräunen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:keulen-anbraeunen"
+              ]
+            },
+            {
+              "id": "paste-roesten",
+              "label": "14",
+              "heading": "**14. Paste rösten (8–12 Min.)**",
+              "title": "Paste rösten",
+              "duration": {
+                "min": "PT8M",
+                "max": "PT12M",
+                "source": "8–12 Min."
+              },
+              "text": "Die \\~170 g Currypaste ins Kokosfett geben und bei mittlerer Hitze unter ständigem Rühren rösten, bis das Wasser verdampft ist, die Paste einen Ton dunkler wird, sich rötliches Öl absetzt und es nach gerösteten Gewürzen statt nach roher Schalotte riecht. **Nicht anbrennen lassen** — setzt sie am Boden an, mit einem Schuss dünner Kokosmilch ablöschen und weiterrösten. *Dieser Schritt entscheidet über die Tiefe des Currys; selbstgemachte Paste braucht länger als Fertigpaste, weil mehr Wasser drin ist.*",
+              "action": "Die \\~170 g Currypaste ins Kokosfett geben und bei mittlerer Hitze unter ständigem Rühren rösten, bis das Wasser verdampft ist, die Paste einen Ton dunkler wird, sich rötliches Öl absetzt und es nach gerösteten Gewürzen statt nach roher Schalotte riecht.",
+              "limits": [
+                "Nicht anbrennen lassen"
+              ],
+              "why": "Dieser Schritt entscheidet über die Tiefe des Currys; selbstgemachte Paste braucht länger als Fertigpaste, weil mehr Wasser drin ist.",
+              "cues": [
+                "bis das Wasser verdampft ist"
+              ],
+              "ingredients": [],
+              "meta": "*nach Creme brechen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Paste rösten",
+                  "duration": {
+                    "min": "PT8M",
+                    "max": "PT12M"
+                  },
+                  "text": "8–12 Min."
+                }
+              ],
+              "after": [
+                "step:creme-brechen"
+              ]
+            },
+            {
+              "id": "schmoren",
+              "label": "15",
+              "heading": "**15. Schmoren (30 Min., passiv)**",
+              "title": "Schmoren",
+              "duration": {
+                "typical": "PT30M",
+                "source": "30 Min."
+              },
+              "attention": "passive",
+              "text": "Die Keulen samt ausgetretenem Saft zurück in den Bräter, in der Paste wenden. Die gesamte dünne Kokosmilch aus den Dosen und 200 ml Wasser angießen. 1 Zimtstange, 4 Kardamomkapseln (angedrückt), 3 Lorbeerblätter und die ganzen gerösteten Erdnüsse dazu. Aufkochen, dann bei kleiner Hitze mit halb aufgelegtem Deckel\n**nur leise simmern** — kleine Blasen, kein Sprudeln — 30 Min. Einmal die Keulen wenden. *Die Erdnüsse werden im Curry weich wie gekochte Bohnen — das ist Absicht, so machen es die Thai-Rezepte.*",
+              "action": "Die Keulen samt ausgetretenem Saft zurück in den Bräter, in der Paste wenden.",
+              "limits": [
+                "nur leise simmern"
+              ],
+              "why": "Die Erdnüsse werden im Curry weich wie gekochte Bohnen — das ist Absicht, so machen es die Thai-Rezepte.",
+              "timers": [
+                {
+                  "label": "Schmoren",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "30 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "200 ml Wasser",
+                    "value": 200.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "zimtstangen",
+                  "amount": {
+                    "text": "1 Zimtstange",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "kardamom",
+                  "amount": {
+                    "text": "4 Kardamomkapseln",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "lorbeerblaetter",
+                  "amount": {
+                    "text": "3 Lorbeerblätter",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*nach Paste rösten, Tamarinde einweichen, Erdnüsse rösten · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "after": [
+                "step:paste-roesten",
+                "step:tamarinde-einweichen",
+                "step:erdnuesse-roesten"
+              ]
+            },
+            {
+              "id": "kartoffeln-garen",
+              "label": "16",
+              "heading": "**16. Kartoffeln garen (5 Min. + 20 Min. passiv)**",
+              "title": "Kartoffeln garen",
+              "duration": {
+                "typical": "PT25M",
+                "source": "5 Min. + 20 Min."
+              },
+              "attention": "passive",
+              "text": "500 g Kartoffeln schälen, in 3–4 cm große Stücke schneiden und mit den angebräunten Schalotten in den Bräter geben, untertauchen. Ohne Deckel weiter simmern, bis die Kartoffeln weich sind und das Fleisch sich mit der Gabel leicht vom Knochen löst, \\~25 Min. Kerntemperatur an der dicksten Oberkeule nahe am Knochen messen: **mindestens 80 °C** (sicher ab 74 °C; zart wird Keule erst um 80–90 °C, weil dann das Bindegewebe schmilzt). Die Sauce soll am Ende sämig wie flüssige Sahne sein, mit einem rötlichen Fettfilm obenauf. *Zu dünn: die letzten 10 Min. offen etwas kräftiger köcheln. Zu dick: Wasser nachgeben.*",
+              "action": "500 g Kartoffeln schälen, in 3–4 cm große Stücke schneiden und mit den angebräunten Schalotten in den Bräter geben, untertauchen.",
+              "limits": [
+                "mindestens 80 °C"
+              ],
+              "why": "Zu dünn: die letzten 10 Min. offen etwas kräftiger köcheln. Zu dick: Wasser nachgeben.",
+              "cues": [
+                "bis die Kartoffeln weich sind und das Fleisch sich mit der Gabel leicht vom Knochen löst"
+              ],
+              "timers": [
+                {
+                  "label": "Kartoffeln garen",
+                  "duration": {
+                    "typical": "PT25M",
+                    "estimated": true
+                  },
+                  "text": "\\~25 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "80 °C",
+                  "value": 80
+                },
+                {
+                  "kind": "ziel",
+                  "text": "74 °C",
+                  "value": 74
+                },
+                {
+                  "kind": "ziel",
+                  "text": "80–90 °C",
+                  "min": 80,
+                  "max": 90
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "kartoffeln",
+                  "amount": {
+                    "text": "500 g Kartoffeln",
+                    "value": 500.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nach Schmoren · Herd · fertig bei ≥ 80 °C Kern*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei ≥ 80 °C Kern",
+                "value": 80
+              },
+              "after": [
+                "step:schmoren"
+              ]
+            },
+            {
+              "id": "abschmecken",
+              "label": "17",
+              "heading": "**17. Abschmecken (ca. 10 Min.)**",
+              "title": "Abschmecken",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "text": "In dieser Reihenfolge würzen: 25 g Palmzucker (fein gehackt) einrühren und lösen, dann 4 EL vom Tamarindenwasser, dann 2 EL Fischsauce. 5 Min. ziehen lassen, probieren. Nachjustieren in kleinen Schritten — erst Säure (noch bis zu 2 EL vom Tamarindenwasser), dann Salz (noch bis zu 1 EL Fischsauce). Ziel: süß und säuerlich vorn, salzig tragend dahinter, Zimt und Kardamom duften obenauf. Zimtstange und Lorbeer herausfischen. *Schmeckt es flach statt rund, fehlt fast immer Salz, nicht Zucker. Außerhalb der Schwangerschaft verträgt das Curry bis 40 g Palmzucker — klassische Rezepte sind deutlich süßer.*",
+              "action": "In dieser Reihenfolge würzen: 25 g Palmzucker (fein gehackt) einrühren und lösen, dann 4 EL vom Tamarindenwasser, dann 2 EL Fischsauce.",
+              "why": "Schmeckt es flach statt rund, fehlt fast immer Salz, nicht Zucker. Außerhalb der Schwangerschaft verträgt das Curry bis 40 g Palmzucker — klassische Rezepte sind deutlich süßer.",
+              "timers": [
+                {
+                  "label": "Abschmecken",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "palmzucker",
+                  "amount": {
+                    "text": "25 g Palmzucker",
+                    "value": 25.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "fischsauce",
+                  "amount": {
+                    "text": "2 EL Fischsauce",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "fischsauce",
+                  "amount": {
+                    "text": "1 EL Fischsauce",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Kartoffeln garen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:kartoffeln-garen"
+              ]
+            },
+            {
+              "id": "kinderportion-abnehmen",
+              "label": "18",
+              "heading": "**18. Kinderportion abnehmen (ca. 3 Min.)**",
+              "title": "Kinderportion abnehmen",
+              "duration": {
+                "typical": "PT3M",
+                "source": "ca. 3 Min.",
+                "estimated": true
+              },
+              "text": "2 Unterkeulen, 4–5 Kartoffelstücke, zwei der Schalotten und \\~250 ml vom Curry in einen kleinen Topf geben, warm halten. Die mitgeschmorten Erdnüsse aus der Kinderportion herausfischen oder mit der Gabel zerdrücken. **Erst danach schärfen.**",
+              "action": "2 Unterkeulen, 4–5 Kartoffelstücke, zwei der Schalotten und \\~250 ml vom Curry in einen kleinen Topf geben, warm halten.",
+              "limits": [
+                "Erst danach schärfen."
+              ],
+              "ingredients": [],
+              "meta": "*nach Abschmecken*",
+              "attention": "active",
+              "after": [
+                "step:abschmecken"
+              ]
+            },
+            {
+              "id": "erwachsene-schaerfen",
+              "label": "19",
+              "heading": "**19. Erwachsene schärfen (3 Min. + 10 Min. passiv)**",
+              "title": "Erwachsene schärfen",
+              "duration": {
+                "typical": "PT13M",
+                "source": "3 Min. + 10 Min."
+              },
+              "attention": "passive",
+              "text": "In einer kleinen Pfanne die 2 EL beiseitegestellte Kokoscreme 1–2 Min. brechen, 2 TL Schärfepaste darin 1 Min. rösten, mit einer Kelle Sauce aus dem Bräter lösen und alles zurück in den Bräter rühren. 10 Min. leise simmern lassen, dann probieren — die Schärfe baut sich beim Ziehen auf. Erst danach ggf. den Rest der Schärfepaste (bis 1 EL insgesamt) direkt einrühren und 5 Min. weiterziehen lassen.",
+              "action": "In einer kleinen Pfanne die 2 EL beiseitegestellte Kokoscreme 1–2 Min. brechen, 2 TL Schärfepaste darin 1 Min. rösten, mit einer Kelle Sauce aus dem Bräter lösen und alles zurück in den Bräter rühren.",
+              "timers": [
+                {
+                  "label": "Erwachsene schärfen",
+                  "duration": {
+                    "min": "PT1M",
+                    "max": "PT2M"
+                  },
+                  "text": "1–2 Min."
+                },
+                {
+                  "label": "Erwachsene schärfen",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                },
+                {
+                  "label": "Erwachsene schärfen",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Kinderportion abnehmen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "after": [
+                "step:kinderportion-abnehmen"
+              ]
+            }
+          ],
+          "heading": "**Massaman-Curry (Kochtag, \\~2 Std.; hält 3 Tage im Kühlschrank und schmeckt am zweiten Tag besser):**",
+          "produces": [
+            {
+              "id": "massaman-curry",
+              "name": "Massaman-Curry",
+              "hold": {
+                "max": "P3D",
+                "source": "Kochtag, \\~2 Std.; hält 3 Tage im Kühlschrank und schmeckt am zweiten Tag besser"
+              },
+              "storage": {
+                "place": "fridge"
+              }
+            }
+          ],
+          "consumes": [
+            "product:currypaste"
+          ]
+        },
+        {
+          "id": "beilagen-anrichten",
+          "name": "Beilagen & Anrichten",
+          "steps": [
+            {
+              "id": "naturreis",
+              "label": "20",
+              "heading": "**20. Naturreis (ca. 35 Min., parallel)**",
+              "title": "Naturreis",
+              "duration": {
+                "typical": "PT35M",
+                "source": "ca. 35 Min.",
+                "estimated": true
+              },
+              "parallel": true,
+              "text": "Nur für die Schwangerschafts-Portion: 50 g Naturreis waschen, mit 100 ml Wasser und 1 Prise Salz aufkochen, zugedeckt bei kleinster Hitze 30–35 Min. garen (Packungsangabe prüfen), 5 Min. ruhen lassen.",
+              "action": "Nur für die Schwangerschafts-Portion: 50 g Naturreis waschen, mit 100 ml Wasser und 1 Prise Salz aufkochen, zugedeckt bei kleinster Hitze 30–35 Min. garen (Packungsangabe prüfen), 5 Min. ruhen lassen.",
+              "timers": [
+                {
+                  "label": "Naturreis",
+                  "duration": {
+                    "min": "PT30M",
+                    "max": "PT35M"
+                  },
+                  "text": "30–35 Min."
+                },
+                {
+                  "label": "Naturreis",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "naturreis",
+                  "amount": {
+                    "text": "50 g Naturreis",
+                    "value": 50.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "100 ml Wasser",
+                    "value": 100.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 Prise Salz",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "jasminreis",
+              "label": "21",
+              "heading": "**21. Jasminreis (ca. 25 Min., parallel)**",
+              "title": "Jasminreis",
+              "duration": {
+                "typical": "PT25M",
+                "source": "ca. 25 Min.",
+                "estimated": true
+              },
+              "parallel": true,
+              "text": "200 g Jasminreis in kaltem Wasser waschen, bis das Wasser fast klar ist, mit 260 ml Wasser aufkochen, zugedeckt bei kleinster Hitze 12 Min. garen, vom Herd nehmen und 10 Min. ungeöffnet ruhen lassen.",
+              "action": "200 g Jasminreis in kaltem Wasser waschen, bis das Wasser fast klar ist, mit 260 ml Wasser aufkochen, zugedeckt bei kleinster Hitze 12 Min. garen, vom Herd nehmen und 10 Min. ungeöffnet ruhen lassen.",
+              "cues": [
+                "bis das Wasser fast klar ist"
+              ],
+              "timers": [
+                {
+                  "label": "Jasminreis",
+                  "duration": {
+                    "typical": "PT12M"
+                  },
+                  "text": "12 Min."
+                },
+                {
+                  "label": "Jasminreis",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "jasminreis",
+                  "amount": {
+                    "text": "200 g Jasminreis",
+                    "value": 200.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "260 ml Wasser",
+                    "value": 260.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "gurke-einlegen",
+              "label": "22",
+              "heading": "**22. Gurke einlegen (10 Min.)**",
+              "title": "Gurke einlegen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "1 Salatgurke längs halbieren, Kerne auskratzen, in 3 mm dünne Halbmonde schneiden. 1 Schalotte in feine Ringe schneiden. Beides mit der Lake mischen, 2 EL gezupften Koriander unterheben. *Länger als 1 Std. wird die Gurke labbrig; die Lake hält im Kühlschrank Tage.*",
+              "action": "1 Salatgurke längs halbieren, Kerne auskratzen, in 3 mm dünne Halbmonde schneiden.",
+              "why": "Länger als 1 Std. wird die Gurke labbrig; die Lake hält im Kühlschrank Tage.",
+              "ingredients": [
+                {
+                  "ref": "salatgurke",
+                  "amount": {
+                    "text": "1 Salatgurke",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "schalotten",
+                  "amount": {
+                    "text": "1 Schalotte",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "koriander",
+                  "amount": {
+                    "text": "2 EL gezupften Koriander",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*≤ 1 Std. vor dem Anrichten · nach Ajad-Lake*",
+              "attention": "active",
+              "after": [
+                "step:ajad-lake"
+              ],
+              "start": {
+                "ref": "step:anrichten:start",
+                "offset": {
+                  "min": "-PT1H",
+                  "max": "PT0M",
+                  "source": "≤ 1 Std. vor dem Anrichten"
+                }
+              }
+            },
+            {
+              "id": "anrichten",
+              "label": "23",
+              "heading": "**23. Anrichten (ca. 5 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "ca. 5 Min.",
+                "estimated": true
+              },
+              "text": "Curry in tiefe Teller oder Schalen, je 1 Ober- und 1 Unterkeule pro Erwachsenem, mit den gehackten Erdnüssen, Koriander und optional 2 EL Röstschalotten bestreuen. Reis und Ajad separat. Kind: Fleisch vom Knochen zupfen, auf Reis, mit fein gehackten Erdnüssen.",
+              "action": "Curry in tiefe Teller oder Schalen, je 1 Ober- und 1 Unterkeule pro Erwachsenem, mit den gehackten Erdnüssen, Koriander und optional 2 EL Röstschalotten bestreuen.",
+              "ingredients": [
+                {
+                  "ref": "roestschalotten",
+                  "amount": {
+                    "text": "2 EL Röstschalotten",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Erwachsene schärfen, Jasminreis, Naturreis, Gurke einlegen*",
+              "attention": "active",
+              "after": [
+                "step:erwachsene-schaerfen",
+                "step:jasminreis",
+                "step:naturreis",
+                "step:gurke-einlegen"
+              ]
+            }
+          ],
+          "heading": "**Beilagen & Anrichten (ab 40 Min. vor dem Essen):**",
+          "produces": [
+            {
+              "id": "beilagen-anrichten",
+              "name": "Beilagen & Anrichten"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Die Currypaste selbst ist mild** (nur entkernte große Chilis, keine\n  Vogelaugen) — die Kinderportion wird **vor** dem Schärfen abgenommen\n  (Schritt „Kinderportion abnehmen\"). Beim ersten Durchgang die Paste nach dem\n  Rösten einmal pur probieren: Brennt sie schon spürbar, beim nächsten Mal\n  weniger große Chilis oder Guajillo statt Thai-Chilis.\n- **Erdnüsse:** ganze Nüsse sind für unter Vierjährige ein Verschluck-Risiko —\n  auch die weich geschmorten. In der Kinderportion herausfischen oder\n  zerdrücken, als Topping nur fein gehackt.\n- **Unterkeulen** sind kindgerecht: Fleisch vom Knochen zupfen, mit Sauce und\n  zerdrückter Kartoffel auf Reis.\n- Das Gurken-Ajad ist von Haus aus ohne Chili — passt zum Kind, das\n  gern ausgefallene, säuerliche Dinge isst.\n- Kein Alkohol im Gericht.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "Passt ohne Sonderbehandlung (Leitfaden: ✅ mit kleinen Anpassungen, im Rezept\nschon eingebaut).\n\n- **Durchgegart:** Hähnchenkeule \\~55 Min. geschmort, Kern **≥ 80 °C** (Leitfaden\n  verlangt ≥ 70 °C). Garnelenpaste und Fischsauce werden mitgekocht —\n  unkritisch.\n- **Kein Alkohol, kein rohes Ei, kein Kombu, kein Quecksilber-Fisch.**\n  Gurke fürs Ajad gründlich waschen (Rohkost).\n- **Zucker:** Palmzucker im Rezept auf 25 g für 4 Portionen gesetzt (\\~6 g pro\n  Portion) — klassische Rezepte nehmen 40–80 g. Die Tamarinde trägt die\n  Balance, das Curry bleibt rund.\n- **Kohlenhydrate klein, mit Protein und Fett:** Teller der Schwangeren:\n  2–3 Kartoffelstücke (\\~80 g), **50 g Naturreis** (roh gewogen) statt\n  Jasminreis, dazu reichlich Hähnchen, Erdnüsse und Ajad. Das Kokosfett und die\n  Erdnüsse dämpfen den Anstieg. Nicht Low-Carb: Reis und Kartoffeln gehören\n  dazu, nur in kleiner Portion. Spaziergang nach dem Essen einplanen, Messwert\n  entscheidet.\n- **Muskat/Macis:** In Küchenmengen (½ TL in der doppelten Paste) unbedenklich;\n  nur große Mengen Muskat gelten in der Schwangerschaft als problematisch.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan (Essen um 18:30)",
+      "schedule": {
+        "id": "zeitplan-essen-um-18-30",
+        "label": "Zeitplan (Essen um 18:30)",
+        "phases": [
+          {
+            "id": "vortag",
+            "label": "Vortag",
+            "day": -1
+          },
+          {
+            "id": "uhr-16-30",
+            "label": "16:30 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT2H",
+            "clock": "16:30"
+          },
+          {
+            "id": "uhr-16-45",
+            "label": "16:45 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT1H45M",
+            "clock": "16:45"
+          },
+          {
+            "id": "uhr-17-00",
+            "label": "17:00 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT1H30M",
+            "clock": "17:00"
+          },
+          {
+            "id": "uhr-17-20",
+            "label": "17:20 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT1H10M",
+            "clock": "17:20"
+          },
+          {
+            "id": "uhr-17-50",
+            "label": "17:50 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT40M",
+            "clock": "17:50"
+          },
+          {
+            "id": "uhr-18-00",
+            "label": "18:00 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT30M",
+            "clock": "18:00"
+          },
+          {
+            "id": "uhr-18-15",
+            "label": "18:15 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT15M",
+            "clock": "18:15"
+          },
+          {
+            "id": "uhr-18-30",
+            "label": "18:30 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "PT0M",
+            "clock": "18:30"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "vortag",
+            "text": "Currypaste (Chilis einweichen, Aromaten rösten, Gewürze rösten, Gewürze mörsern, Paste mixen, Schärfepaste, Paste einfrieren)",
+            "steps": [
+              "chilis-einweichen",
+              "aromaten-roesten",
+              "gewuerze-roesten",
+              "gewuerze-moersern",
+              "paste-mixen",
+              "paste-einfrieren"
+            ],
+            "tasks": [
+              "currypaste"
+            ]
+          },
+          {
+            "phase": "vortag",
+            "text": "Ajad-Lake",
+            "steps": [
+              "ajad-lake"
+            ]
+          },
+          {
+            "phase": "vortag",
+            "text": "Kokosmilch-Dosen kühl stellen"
+          },
+          {
+            "phase": "uhr-16-30",
+            "text": "Keulen vorbereiten",
+            "steps": [
+              "keulen-vorbereiten"
+            ]
+          },
+          {
+            "phase": "uhr-16-30",
+            "text": "Tamarinde einweichen",
+            "steps": [
+              "tamarinde-einweichen"
+            ]
+          },
+          {
+            "phase": "uhr-16-30",
+            "text": "Erdnüsse rösten",
+            "steps": [
+              "erdnuesse-roesten"
+            ]
+          },
+          {
+            "phase": "uhr-16-45",
+            "text": "Keulen anbräunen",
+            "steps": [
+              "keulen-anbraeunen"
+            ]
+          },
+          {
+            "phase": "uhr-17-00",
+            "text": "Creme brechen, dann Paste rösten",
+            "steps": [
+              "creme-brechen",
+              "paste-roesten"
+            ]
+          },
+          {
+            "phase": "uhr-17-20",
+            "text": "Schmoren",
+            "steps": [
+              "schmoren"
+            ]
+          },
+          {
+            "phase": "uhr-17-50",
+            "text": "Kartoffeln garen",
+            "steps": [
+              "kartoffeln-garen"
+            ]
+          },
+          {
+            "phase": "uhr-17-50",
+            "text": "Naturreis aufsetzen"
+          },
+          {
+            "phase": "uhr-18-00",
+            "text": "Jasminreis aufsetzen"
+          },
+          {
+            "phase": "uhr-18-00",
+            "text": "Gurke einlegen",
+            "steps": [
+              "gurke-einlegen"
+            ]
+          },
+          {
+            "phase": "uhr-18-15",
+            "text": "Abschmecken",
+            "steps": [
+              "abschmecken"
+            ]
+          },
+          {
+            "phase": "uhr-18-15",
+            "text": "Kinderportion abnehmen",
+            "steps": [
+              "kinderportion-abnehmen"
+            ]
+          },
+          {
+            "phase": "uhr-18-15",
+            "text": "Erwachsene schärfen",
+            "steps": [
+              "erwachsene-schaerfen"
+            ]
+          },
+          {
+            "phase": "uhr-18-30",
+            "text": "Anrichten",
+            "steps": [
+              "anrichten"
+            ]
+          }
+        ],
+        "anchorOverride": {
+          "time": "18:30"
+        }
+      }
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Pastenzusammensetzung** als Schnittmenge aus der Suan-Dusit-Universität\n  (Bangkok; geröstete Schalotten/Knoblauch/Zitronengras/Galgant, eingeweichte\n  entkernte große Chilis, Korianderwurzel, Koriander, Kreuzkümmel, Kardamom,\n  Nelke, Zimt, Muskat **und** Macis, weißer Pfeffer, Kapi), dem Ian-Kittichai-\n  Rezept bei Grantourismo (Grammangaben, Kapi im Päckchen geröstet, Muskat) und\n  RecipeTin Eats (nach David Thompson und Sujet Saenkham; Aromaten trocken\n  geröstet, Chilis entkernt). Unsere Mengen liegen beim Chili am unteren Ende\n  (Dusit: 10 g für eine einfache Charge; Kittichai: 30 g für eine große) —\n  bewusst wegen des Kindes; die Schärfe kommt über die Schärfepaste zurück.\n- **Kapi drin, obwohl Thompson sie weglässt:** Laut Sekundärquellen nutzt David\n  Thompson in Massaman keine Garnelenpaste (und Kassia statt Zimt). Dusit,\n  Kittichai und die meisten Thai-Quellen nehmen sie; 5 g pro Curry geben\n  Umami-Tiefe ohne Fischigkeit. Kassia ist als Zimtstange gern gesehen.\n- **Kokoscreme brechen, Paste darin rösten:** Kernschritt bei Dusit, Hot Thai\n  Kitchen (Pailin Chongchitnant: Paste in einem Teil der Kokosmilch rösten, bis\n  sich das Öl trennt; ob das klappt, hängt von der Kokosmilch-Marke ab; beim\n  Ansetzen mit Kokosmilch ablöschen) und National Geographic. Import Food\n  beschreibt das Absetzen der Dose in dicke Creme und dünne Milch.\n- **Garzeit Hähnchen:** Hot Thai Kitchen nutzt Ober-/Unterkeulen mit Knochen\n  und Haut (\\~900 g auf 2 Tassen Kokosmilch, 5–6 EL Fertigpaste), Hungry in\n  Thailand simmert Unterkeulen \\~30 Min. und gibt dann die Kartoffeln dazu — wir\n  landen mit 30 + 25 Min. bei derselben Logik, plus Kerntemperatur als Kontrolle.\n- **Erdnüsse mitschmoren** (Dusit: köcheln, „bis die Erdnüsse weich sind\"),\n  zweite Hälfte als knuspriges Topping.\n- **Reihenfolge süß → sauer → salzig, keine Limette:** Dusit (Ziel: „salzig,\n  süß, sauer ausbalanciert, dunkelrot, Ölschicht obenauf\"), National\n  Geographic (Limette/Essig als häufiger Fehler; Massaman schmeckt am Tag\n  danach besser). Leela Punyaratabandhu nennt es ein „Wochenend-Curry\", das man\n  kocht, wenn man Zeit zum Babysitten hat.\n- **Gurken-Ajad** als klassischer Begleiter zu Massaman (Import Food); Zucker\n  hier auf 2 TL reduziert.\n- **Schnellkochtopf: bewusst nicht.** Hähnchenkeule ist nach 55 Min. auf dem Herd\n  zart, unter Druck würden Kartoffeln zerfallen und die Sauce könnte nicht\n  einkochen. Sinnvoll wäre er nur für die Rindfleisch-Variante (siehe Notizen).\n- Hot Thai Kitchen ist inzwischen hinter einer Bezahlschranke; die Angaben\n  oben stammen aus der Rezeptvorschau (Zutaten, erster Schritt), nicht aus dem\n  vollständigen Text.\n- Referenzen: [National Geographic — Deconstructing Massaman Curry (u. a. David Thompson, Leela Punyaratabandhu)](https://www.nationalgeographic.com/travel/article/deconstructing-massaman-curry-thailand-mellow-classic) · [Suan Dusit University — Massaman Curry (Paste + Curry)](https://sdusharing.dusit.ac.th/samrubthai/massaman-curry) · [Grantourismo — Authentic Beef Massaman (nach Ian Kittichai)](https://grantourismotravels.com/authentic-beef-massaman-curry-recipe) · [RecipeTin Eats — Massaman Curry (nach Thompson/Saenkham)](https://www.recipetineats.com/massaman-curry/) · [Hot Thai Kitchen — Massaman Curry (Pailin Chongchitnant)](https://hot-thai-kitchen.com/massaman-curry/) · [Import Food — Gaeng Masaman Gai + Ajad](https://importfood.com/recipes/recipe/145-thai-masaman-chicken-gaeng-masaman-gai) · [Hungry in Thailand — Massaman Chicken](https://hungryinthailand.com/thai-massaman-chicken-curry/) · [Viet World Kitchen — Massaman (Thompson röstet Aromaten)](https://www.vietworldkitchen.com/?p=208)",
+      "tags": [
+        "quellen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Zweites Curry aus dem Tiefkühler:** 170 g Paste (bzw. die notierten\n  Mulden) über Nacht im Kühlschrank auftauen; ab Schritt „Creme brechen\" wie\n  oben. Die eingefrorene Schärfepaste-Mulde gefroren direkt in die Pfanne.\n- **Rindfleisch-Variante:** 1,2 kg Rinderwade/Beinscheibe (oder Rinderbacke)\n  in 5-cm-Würfeln. Auf dem Herd 2–2,5 Std. simmern (Kittichai: 2 Std.), dann\n  Kartoffeln. Hier lohnt der **Schnellkochtopf**: anbraten separat im Bräter,\n  Paste dort rösten, dann alles in den Schnellkochtopf (Füllgrenze ⅔), 35 Min.\n  Hochdruck, natürlicher Druckabbau, danach Kartoffeln im Bräter offen garen.\n- **Paste als Grundfertigkeit:** Dieselbe Abfolge (einweichen, rösten, Gewürze\n  separat mörsern, Hybrid mixen) gilt für rote Currypaste — dort ohne die\n  „persischen\" Gewürze, mit mehr Chili, Kaffirlimettenschale und weniger\n  Schalotte.\n- **Muldenvolumen der Babybrei-Form** nach dem ersten Einfrieren in CLAUDE.md\n  nachtragen.",
+      "tags": [
+        "notizen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-19T06:40:25Z",
+    "sourceHash": "6720401336783285",
+    "quantities": [
+      {
+        "ingredient": "galgant",
+        "total": {
+          "text": "25 g",
+          "value": 25.0,
+          "max": 25.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "currypaste": "25 g Galgant"
+        }
+      },
+      {
+        "ingredient": "korianderwurzeln",
+        "total": {
+          "text": "15 g",
+          "value": 15.0,
+          "max": 15.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "currypaste": "15 g Korianderwurzeln"
+        }
+      },
+      {
+        "ingredient": "chilis",
+        "total": {
+          "text": "25 g",
+          "value": 25.0,
+          "max": 25.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "currypaste": "25 g große milde Chilis"
+        }
+      },
+      {
+        "ingredient": "vogelaugenchilis",
+        "total": {
+          "text": "6",
+          "value": 6.0,
+          "max": 6.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "currypaste": "6 Vogelaugenchilis"
+        }
+      },
+      {
+        "ingredient": "tamarinde",
+        "total": {
+          "text": "40 g",
+          "value": 40.0,
+          "max": 40.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "massaman-curry": "40 g Tamarinde"
+        }
+      },
+      {
+        "ingredient": "erdnuesse",
+        "total": {
+          "text": "80 g",
+          "value": 80.0,
+          "max": 80.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "massaman-curry": "80 g Erdnüsse"
+        }
+      },
+      {
+        "ingredient": "kokosmilch",
+        "total": {
+          "text": "3 Dosen",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Dosen",
+          "approx": false
+        },
+        "perTask": {
+          "massaman-curry": "3 Dosen Kokosmilch"
+        }
+      },
+      {
+        "ingredient": "jasminreis",
+        "total": {
+          "text": "200 g",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "beilagen-anrichten": "200 g Jasminreis"
+        }
+      },
+      {
+        "ingredient": "roestschalotten",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "beilagen-anrichten": "2 EL Röstschalotten"
+        }
+      },
+      {
+        "ingredient": "garnelenpaste",
+        "total": {
+          "text": "10 g",
+          "value": 10.0,
+          "max": 10.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "currypaste": "10 g Garnelenpaste"
+        }
+      },
+      {
+        "ingredient": "fischsauce",
+        "total": {
+          "text": "3 EL",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "massaman-curry": "2 EL Fischsauce + 1 EL Fischsauce"
+        }
+      },
+      {
+        "ingredient": "palmzucker",
+        "total": {
+          "text": "25 g",
+          "value": 25.0,
+          "max": 25.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "massaman-curry": "25 g Palmzucker"
+        }
+      },
+      {
+        "ingredient": "reisessig",
+        "total": {
+          "text": "60 ml",
+          "value": 60.0,
+          "max": 60.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "gurken-ajad": "60 ml Reisessig"
+        }
+      },
+      {
+        "ingredient": "haehnchenkeulen",
+        "total": {
+          "text": "1500 g",
+          "value": 1500.0,
+          "max": 1500.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "massaman-curry": "1,5 kg Hähnchenkeulen"
+        }
+      },
+      {
+        "ingredient": "schalotten",
+        "total": {
+          "text": "9 + 120 g",
+          "value": 9.0,
+          "max": 9.0,
+          "unit": "Stück",
+          "approx": false,
+          "plus": [
+            {
+              "text": "120 g",
+              "value": 120.0,
+              "max": 120.0,
+              "unit": "g",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "currypaste": "120 g Schalotten",
+          "massaman-curry": "8 kleine Schalotten",
+          "beilagen-anrichten": "1 Schalotte"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": "60 g",
+          "value": 60.0,
+          "max": 60.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "currypaste": "60 g Knoblauch"
+        }
+      },
+      {
+        "ingredient": "staengel",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "currypaste": "3 Stängel Zitronengras"
+        }
+      },
+      {
+        "ingredient": "kartoffeln",
+        "total": {
+          "text": "500 g",
+          "value": 500.0,
+          "max": 500.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "massaman-curry": "500 g Kartoffeln"
+        }
+      },
+      {
+        "ingredient": "koriander",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "beilagen-anrichten": "2 EL gezupften Koriander"
+        }
+      },
+      {
+        "ingredient": "salatgurke",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "beilagen-anrichten": "1 Salatgurke"
+        }
+      },
+      {
+        "ingredient": "naturreis",
+        "total": {
+          "text": "50 g",
+          "value": 50.0,
+          "max": 50.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "beilagen-anrichten": "50 g Naturreis"
+        }
+      },
+      {
+        "ingredient": "koriandersaat",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "currypaste": "2 EL Koriandersaat"
+        }
+      },
+      {
+        "ingredient": "kreuzkuemmel",
+        "total": {
+          "text": "2 TL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "currypaste": "2 TL Kreuzkümmel"
+        }
+      },
+      {
+        "ingredient": "kardamom",
+        "total": {
+          "text": "12",
+          "value": 12.0,
+          "max": 12.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "currypaste": "8 Kardamomkapseln",
+          "massaman-curry": "4 Kardamomkapseln"
+        }
+      },
+      {
+        "ingredient": "nelken",
+        "total": {
+          "text": "6",
+          "value": 6.0,
+          "max": 6.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "currypaste": "6 Nelken"
+        }
+      },
+      {
+        "ingredient": "zimtstangen",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "currypaste": "1 Zimtstange",
+          "massaman-curry": "1 Zimtstange"
+        }
+      },
+      {
+        "ingredient": "pfefferkoerner",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "currypaste": "1 TL weiße Pfefferkörner"
+        }
+      },
+      {
+        "ingredient": "muskatnuss",
+        "total": {
+          "text": "½ TL",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "currypaste": "½ TL Muskatnuss"
+        }
+      },
+      {
+        "ingredient": "macis",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "currypaste": "1 TL Macis"
+        }
+      },
+      {
+        "ingredient": "lorbeerblaetter",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "massaman-curry": "3 Lorbeerblätter"
+        }
+      },
+      {
+        "ingredient": "oel",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "massaman-curry": "1 EL Öl + 1 EL Öl"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "2¾ TL + 1 Prise",
+          "value": 2.75,
+          "max": 2.75,
+          "unit": "TL",
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "currypaste": "1 TL Salz + ¼ TL Salz",
+          "gurken-ajad": "½ TL Salz",
+          "massaman-curry": "1 TL Salz",
+          "beilagen-anrichten": "1 Prise Salz"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "zucker",
+        "total": {
+          "text": "2 TL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "gurken-ajad": "2 TL Zucker"
+        }
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "770 ml",
+          "value": 770.0,
+          "max": 770.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "gurken-ajad": "60 ml Wasser",
+          "massaman-curry": "150 ml heißem Wasser + 200 ml Wasser",
+          "beilagen-anrichten": "100 ml Wasser + 260 ml Wasser"
+        },
+        "unitless": [
+          "einen Schuss Wasser"
+        ]
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Asialaden",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "galgant",
+            "name": "Galgant, frisch",
+            "need": {
+              "text": "25 g",
+              "value": 25.0,
+              "max": 25.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "25 g",
+            "inStock": false,
+            "buy": {
+              "text": "30 g"
+            },
+            "note": "oder TK-Galgant in Scheiben; Bedarf 25 g"
+          },
+          {
+            "ingredient": "korianderwurzeln",
+            "name": "Korianderwurzeln",
+            "need": {
+              "text": "15 g",
+              "value": 15.0,
+              "max": 15.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "15 g",
+            "inStock": false,
+            "buy": {
+              "text": "15 g"
+            },
+            "note": "Thai-Koriander mit Wurzel, falls da — sonst Topf-Koriander von REWE"
+          }
+        ]
+      },
+      {
+        "store": "Asialaden",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "chilis",
+            "name": "Chilis, groß und mild, getrocknet",
+            "need": {
+              "text": "25 g",
+              "value": 25.0,
+              "max": 25.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "25 g",
+            "inStock": false,
+            "buy": {
+              "text": "30 g"
+            },
+            "note": "prik chee fah haeng; Fallback Guajillo, siehe Beschaffung; Bedarf 25 g"
+          },
+          {
+            "ingredient": "vogelaugenchilis",
+            "name": "Vogelaugenchilis, getrocknet",
+            "need": {
+              "text": "6",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "6",
+            "inStock": false,
+            "buy": {
+              "text": "1 Beutel"
+            },
+            "note": "klein und scharf; Bedarf 6 Stück"
+          },
+          {
+            "ingredient": "tamarinde",
+            "name": "Tamarinde mit Kernen",
+            "need": {
+              "text": "40 g",
+              "value": 40.0,
+              "max": 40.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "40 g",
+            "inStock": false,
+            "buy": {
+              "text": "200–400 g"
+            },
+            "note": "Block, z. B. Cock; Bedarf 40 g, Rest hält ewig"
+          },
+          {
+            "ingredient": "erdnuesse",
+            "name": "Erdnüsse, roh, ohne Haut",
+            "need": {
+              "text": "80 g",
+              "value": 80.0,
+              "max": 80.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "80 g",
+            "inStock": false,
+            "buy": {
+              "text": "200 g"
+            },
+            "note": "Bedarf 80 g"
+          },
+          {
+            "ingredient": "kokosmilch",
+            "name": "Dosen Kokosmilch à 400 ml",
+            "need": {
+              "text": "3 Dosen",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Dosen",
+              "approx": false
+            },
+            "display": "3 Dosen",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            },
+            "note": "ohne Emulgator, z. B. Chaokoh — nicht schütteln"
+          },
+          {
+            "ingredient": "jasminreis",
+            "name": "Jasminreis",
+            "need": {
+              "text": "200 g",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "200 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 kg"
+            },
+            "note": "Bedarf 200 g"
+          },
+          {
+            "ingredient": "roestschalotten",
+            "name": "Röstschalotten",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Dose"
+            },
+            "optional": true,
+            "note": "Garnitur"
+          }
+        ]
+      },
+      {
+        "store": "Asialaden",
+        "group": "Würzmittel & Gewürze",
+        "items": [
+          {
+            "ingredient": "garnelenpaste",
+            "name": "Garnelenpaste",
+            "need": {
+              "text": "10 g",
+              "value": 10.0,
+              "max": 10.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "10 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 Glas"
+            },
+            "note": "Kapi; Bedarf 10 g"
+          },
+          {
+            "ingredient": "fischsauce",
+            "name": "Fischsauce",
+            "need": {
+              "text": "3 EL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "3 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Flasche"
+            },
+            "note": "z. B. Red Boat oder Tiparos; Bedarf \\~3 EL"
+          },
+          {
+            "ingredient": "palmzucker",
+            "name": "Palmzucker",
+            "need": {
+              "text": "25 g",
+              "value": 25.0,
+              "max": 25.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "25 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 Packung"
+            },
+            "note": "Bedarf 25 g"
+          },
+          {
+            "ingredient": "reisessig",
+            "name": "Reisessig",
+            "need": {
+              "text": "60 ml",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "60 ml",
+            "inStock": false,
+            "buy": {
+              "text": "1 Flasche"
+            },
+            "note": "Bedarf 60 ml"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "schalotten",
+            "name": "Schalotten",
+            "need": {
+              "text": "9 + 120 g",
+              "value": 9.0,
+              "max": 9.0,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "120 g",
+                  "value": 120.0,
+                  "max": 120.0,
+                  "unit": "g",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "9 + 120 g",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            },
+            "note": "120 g Paste, 8 kleine ganze \\~250 g fürs Curry, 1 fürs Ajad"
+          },
+          {
+            "ingredient": "knoblauch",
+            "name": "Knoblauch",
+            "need": {
+              "text": "60 g",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "60 g",
+            "inStock": false,
+            "buy": {
+              "text": "2 Knollen"
+            },
+            "note": "Bedarf 60 g ≈ 1 große Knolle"
+          },
+          {
+            "ingredient": "staengel",
+            "name": "Stängel Zitronengras",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            }
+          },
+          {
+            "ingredient": "kartoffeln",
+            "name": "Kartoffeln, festkochend",
+            "need": {
+              "text": "500 g",
+              "value": 500.0,
+              "max": 500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "500 g",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            }
+          },
+          {
+            "ingredient": "koriander",
+            "name": "Koriander im Topf",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "note": "Garnitur + Wurzel-Fallback"
+          },
+          {
+            "ingredient": "salatgurke",
+            "name": "Salatgurke",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            }
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "haehnchenkeulen",
+            "name": "Hähnchenkeulen mit Knochen",
+            "need": {
+              "text": "1500 g",
+              "value": 1500.0,
+              "max": 1500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "1500 g",
+            "inStock": false,
+            "buy": {
+              "text": "1,5 kg"
+            },
+            "note": "4 ganze Keulen à 350–400 g"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "naturreis",
+            "name": "Naturreis",
+            "need": {
+              "text": "50 g",
+              "value": 50.0,
+              "max": 50.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "50 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 Packung"
+            },
+            "optional": true,
+            "note": "gern Vollkorn-Jasminreis; Schwangerschafts-Portion, Bedarf 50 g"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "koriandersaat",
+            "name": "Koriandersaat",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "kreuzkuemmel",
+            "name": "Kreuzkümmel, ganz",
+            "need": {
+              "text": "2 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "2 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "kardamom",
+            "name": "Kardamom, grün",
+            "need": {
+              "text": "12",
+              "value": 12.0,
+              "max": 12.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "12",
+            "inStock": false,
+            "pantry": true,
+            "note": "12 Kapseln"
+          },
+          {
+            "ingredient": "nelken",
+            "name": "Nelken",
+            "need": {
+              "text": "6",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "6",
+            "inStock": false,
+            "pantry": true,
+            "note": "6 Stück"
+          },
+          {
+            "ingredient": "zimtstangen",
+            "name": "Zimtstangen",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "pantry": true,
+            "note": "2 Stück, gern Kassia"
+          },
+          {
+            "ingredient": "pfefferkoerner",
+            "name": "Weiße Pfefferkörner",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "muskatnuss",
+            "name": "Muskatnuss",
+            "need": {
+              "text": "½ TL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "½ TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "ganz, zum Reiben"
+          },
+          {
+            "ingredient": "macis",
+            "name": "Macis",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "optional": true,
+            "pantry": true,
+            "note": "Muskatblüte; 1 TL"
+          },
+          {
+            "ingredient": "lorbeerblaetter",
+            "name": "Lorbeerblätter",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "pantry": true,
+            "note": "3 Stück"
+          },
+          {
+            "ingredient": "oel",
+            "name": "Öl, neutral",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "2¾ TL + 1 Prise",
+              "value": 2.75,
+              "max": 2.75,
+              "unit": "TL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "2¾ TL + 1 Prise",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "zucker",
+            "name": "Zucker",
+            "need": {
+              "text": "2 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "2 TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "2 TL fürs Ajad"
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "770 ml",
+              "value": 770.0,
+              "max": 770.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "770 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}
