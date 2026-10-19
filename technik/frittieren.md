@@ -3,6 +3,8 @@
 *Nachschlage-Seite. Setup: schwerer Topf (6L), max. zur Hälfte gefüllt —
 4–5 cm Öl reichen für Teigtaschen & Co. Fleischthermometer ist Pflicht.*
 
+Double-Fry ausführlich am Gericht: [Korean Fried Chicken](/gerichte/korean-fried-chicken.md).
+
 ## Temperaturen nach Anwendung
 
 | Anwendung | Öltemperatur | Zeit (Richtwert) |

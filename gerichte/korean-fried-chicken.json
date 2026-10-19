@@ -1,0 +1,2569 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/korean-fried-chicken",
+  "kind": "dish",
+  "title": "Korean Fried Chicken — doppelt frittierte Keule & Flügel mit zwei Saucen (4 Portionen)",
+  "status": "done",
+  "yields": {
+    "text": "4 Portionen",
+    "value": 4.0,
+    "unit": "Portionen"
+  },
+  "intro": "*Aktive Zeit \\~2 Std. (davon \\~70 Min. am Frittiertopf), gesamt \\~6 Std. bis über Nacht + \\~2 Std. (Vortag 45 Min., Durchziehen 4–24 Std., Kochtag \\~2 Std.). Equipment: 6-l-Topf zum Frittieren, Clip-Thermometer, Fleischthermometer, Spinne oder Schaumlöffel, 2 Kuchengitter mit Blech, Mandoline, 2 kleine Töpfe, große Schüssel.*\n\nKoreanisches Brathähnchen in der Chicken-Shop-Form: ausgelöste Hähnchenkeule in mundgerechten Stücken (*Dakgangjeong*-Schnitt) als Hauptmenge plus ein Teil Flügel, in einem dünnen Kartoffelstärke-Teig **zweimal frittiert** — erst bei \\~160 °C gar, nach einer Ruhepause bei 185 °C zur glasartig dünnen, splitternden Kruste. Erst unmittelbar vor dem Servieren in Sauce geschwenkt, und zwar in zwei parallelen Saucen: **Ganjang** (Soja-Knoblauch-Honig, mild — das Kind isst mit) und **Yangnyeom** (Gochujang-Ketchup-Reissirup, süß-scharf, für die Erwachsenen). Ein Teil bleibt ohne Sauce (*Huraideu*, „fried\") — das knusprigste Stück am Tisch und zugleich der GDM-Teller. Dazu Chicken-mu (eingelegter Rettich) und ein frischer Kohlsalat. Die Double-Fry-Technik ist übertragbar (Pommes, Karaage, Tonkatsu) — Grundlagen in [Frittieren](/technik/frittieren.md).",
+  "times": {
+    "text": "Aktive Zeit ~2 Std. (davon ~70 Min. am Frittiertopf), gesamt ~6 Std.",
+    "active": {
+      "typical": "PT2H",
+      "source": "2 Std."
+    },
+    "total": {
+      "min": "PT8H",
+      "max": "PT14H",
+      "source": "über Nacht"
+    }
+  },
+  "equipment": [
+    "6-l-Topf zum Frittieren",
+    "Clip-Thermometer",
+    "Fleischthermometer",
+    "Spinne oder Schaumlöffel",
+    "2 Kuchengitter mit Blech",
+    "Mandoline",
+    "2 kleine Töpfe",
+    "große Schüssel"
+  ],
+  "ingredients": [
+    {
+      "id": "gochujang",
+      "name": "Gochujang",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1 Becher"
+      },
+      "note": "Verbrauch 2½ EL; vom Bulgogi evtl. noch offen — prüfen"
+    },
+    {
+      "id": "reissirup",
+      "name": "Reissirup",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1 Flasche"
+      },
+      "note": "Jocheong/Ssal-yeot oder Oligo-Sirup; Verbrauch 3 EL; Fallback: Honig"
+    },
+    {
+      "id": "gochugaru",
+      "name": "Gochugaru",
+      "store": "Asialaden",
+      "group": "Würzmittel & Gewürze",
+      "buy": {
+        "text": "1 Tüte"
+      },
+      "optional": true,
+      "note": "nur für mehr Schärfe"
+    },
+    {
+      "id": "fruehlingszwiebeln",
+      "name": "Frühlingszwiebeln",
+      "store": "Asialaden",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      },
+      "note": "Verbrauch 3 Stück"
+    },
+    {
+      "id": "kurzkornreis",
+      "name": "Kurzkornreis",
+      "store": "Asialaden",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "200 g"
+      },
+      "optional": true,
+      "note": "falls nicht vorrätig"
+    },
+    {
+      "id": "haehnchenoberschenkel",
+      "name": "Hähnchenoberschenkel ohne Knochen, ohne Haut",
+      "store": "REWE Center",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "700 g"
+      }
+    },
+    {
+      "id": "haehnchenfluegel",
+      "name": "Hähnchenflügel",
+      "store": "REWE Center",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "600 g"
+      },
+      "note": "\\~7 Flügel; nach dem Abschneiden der Spitzen \\~500 g"
+    },
+    {
+      "id": "rettich",
+      "name": "Rettich, weiß",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "\\~500 g; Fallback: 2 Bund Radieschen"
+    },
+    {
+      "id": "spitzkohl",
+      "name": "kleiner Spitzkohl",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "Verbrauch \\~350 g; oder ¼ Weißkohl"
+    },
+    {
+      "id": "knoblauch",
+      "name": "große Knolle Knoblauch",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "Verbrauch 10 Zehen — siehe Mengen-Check"
+    },
+    {
+      "id": "ingwer",
+      "name": "Ingwer",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Stück"
+      },
+      "note": "daumengroß, Verbrauch 2½ TL gerieben"
+    },
+    {
+      "id": "kartoffelstaerke",
+      "name": "Kartoffelstärke",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 Packung"
+      },
+      "note": "400–500 g, „Kartoffelmehl\"; Verbrauch \\~155 g"
+    },
+    {
+      "id": "rapsoel",
+      "name": "Rapsöl, raffiniert",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "2 l"
+      },
+      "note": "oder Sonnenblumenöl high oleic"
+    },
+    {
+      "id": "mineralwasser",
+      "name": "Mineralwasser, stark sprudelnd",
+      "store": "REWE Center",
+      "group": "Getränke",
+      "buy": {
+        "text": "1 Flasche"
+      },
+      "note": "Verbrauch 250 ml, gut gekühlt"
+    },
+    {
+      "id": "sojasauce",
+      "name": "Sojasauce",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Verbrauch 4 EL + 1 TL — siehe Mengen-Check"
+    },
+    {
+      "id": "honig",
+      "name": "Honig",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "2 EL"
+    },
+    {
+      "id": "ketchup",
+      "name": "Ketchup",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "2 EL"
+    },
+    {
+      "id": "reisessig",
+      "name": "Reisessig",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "2½ EL + 1 TL"
+    },
+    {
+      "id": "branntweinessig",
+      "name": "Branntweinessig",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "100 ml, 5 % — für Chicken-mu"
+    },
+    {
+      "id": "sesamoel",
+      "name": "Sesamöl, geröstet",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "2½ TL"
+    },
+    {
+      "id": "sesam",
+      "name": "Sesam, geröstet",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "2 TL"
+    },
+    {
+      "id": "weizenmehl",
+      "name": "Weizenmehl",
+      "store": "Vorrat",
+      "buy": {
+        "text": "Type 405"
+      },
+      "pantry": true,
+      "note": "60 g"
+    },
+    {
+      "id": "backpulver",
+      "name": "Backpulver",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "1½ TL"
+    },
+    {
+      "id": "zucker",
+      "name": "Zucker",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "\\~55 g, fast alles in der Pickle-Lake"
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "\\~30 g gesamt"
+    },
+    {
+      "id": "pfeffer",
+      "name": "Pfeffer, schwarz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Stil-Entscheidung",
+      "level": 2,
+      "markdown": "**Dünner Teig statt nur Trockenstärke.** Es gibt zwei Schulen:\n\n- **Trockenstärke** (Korean Bapsang, Maangchis Boneless-Dakgangjeong): marinierte Stücke nur in Kartoffelstärke wälzen. Sehr knusprig, wenig Aufwand — aber die Kruste wird stellenweise mehlig-pudrig, hat Fehlstellen und nimmt die Sauce schneller auf.\n- **Dünner Teig** (ATK, Kenji López-Alt, die meisten Chicken-Shops): Stärke + wenig Mehl + kaltes Wasser, so dünn wie Farbe. Ergibt eine durchgehende, dünne, glasig-splitternde Hülle; ATK hat explizit getestet, dass der doppelt frittierte Teig die nasse Sauce besser aushält.\n\n**Hier: Hybrid** — erst hauchdünn trocken mit Stärke bestäuben (bindet die Oberflächenfeuchte, der Teig haftet lückenlos), dann durch einen **stärkelastigen Teig (Kartoffelstärke : Mehl = 2 : 1)** mit Backpulver und eiskaltem Sprudelwasser ziehen. Das Mehl gibt etwas Struktur und Bräunung, die Stärke die Glasigkeit; das Backpulver und die Kohlensäure machen die Kruste feinporig-blasig statt hart-kompakt.\n\n**Kein Wodka.** Kenjis Trick (Teil des Wassers durch Wodka ersetzen: bremst die Glutenbildung, verdampft schneller) entfällt — in der Schwangerschaft ohnehin, aber auch danach ist er hier weniger nötig: Bei zwei Teilen Stärke auf ein Teil Mehl ist kaum Gluten im Spiel, eiskaltes Wasser und kurzes Rühren reichen. Wer es nach der Schwangerschaft testen will: siehe Notizen.\n\n**Keule als Hauptmenge, Flügel als Erwachsenen-Anteil.** Ausgelöste Oberschenkel bleiben auch durchgegart saftig, garen in 3–4-cm-Stücken schnell und gleichmäßig und sind kindertauglich (kein Knochen). Flügel haben das beste Haut-zu-Fleisch-Verhältnis und sind das Chicken-Shop-Original — brauchen aber fast doppelt so lange im ersten Gang. Deshalb **getrennte Chargen**, nie gemischt.",
+      "tags": [
+        "stil"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Hähnchen (REWE Center):** „Hähnchenoberschenkel ohne Knochen\" bzw. Oberschenkelfilet, ohne Haut — liegt im REWE Center meist als Steak-Packung. Brust ist möglich, wird beim Durchgaren aber trocken; nur Notlösung. Hähnchenflügel sind im REWE Center zuverlässig (meist ganze Flügel, \\~80–90 g/Stück). Die Flügelspitzen abschneiden und einfrieren — die nächste Hähnchen-Chintan-Brühe freut sich.\n- **Gochujang (Asialaden):** Standard in jedem Asialaden. Vom Bulgogi ist vermutlich ein Becher offen — gekühlt hält er sehr lange; Mindesthaltbarkeit und Geruch prüfen. **Etikett lesen:** manche Marken enthalten etwas Ethanol (Konservierung) — siehe Schwangerschaft & GDM.\n- **Reissirup (Asialaden, ☎ vorher anrufen):** *Jocheong* oder *Ssal-yeot*, oft als „Rice Syrup\" von Beksul oder Chungjungone; koreanischer „Oligo-Sirup\" ist ebenso geeignet. Weniger süß als Honig, macht die Glasur glänzend und klebrig, ohne zu kristallisieren — Maangchi nennt Sirup + Ketchup die Pflicht für den echten Yangnyeom-Geschmack. **Fallback: 2 EL Honig** statt 3 EL Reissirup (Honig ist süßer).\n- **Gochugaru:** nur optional für mehr Schärfe in der Yangnyeom-Sauce; falls vom Bulgogi vorrätig.\n- **Rettich für Chicken-mu:** Koreanischer *Mu* ist kaum zu bekommen. **Plan A: weißer Rettich (Bierrettich) aus dem REWE** — im Herbst Saison und zuverlässig, etwas schärfer als Mu, aber die Lake zähmt das. Daikon im Asialaden ist ebenbürtig, falls er dort schöner aussieht. **Fallback: 2 Bund Radieschen** (beim Thịt kho als Daikon-Ersatz bewährt; werden in der Lake rosa).\n- **Kartoffelstärke, nicht „Speisestärke\":** Speisestärke ist in Deutschland meist Maisstärke. Kartoffelstärke (oft „Kartoffelmehl\") steht bei REWE im Backregal. Maisstärke funktioniert, wird aber etwas härter und weniger glasig.\n- **Öl:** raffiniertes Rapsöl oder Sonnenblumenöl (high oleic), 2 l. Nach dem Frittieren filtern und für Hähnchen/Pommes 3–4× weiterverwenden ([Frittieren — Öl](/technik/frittieren.md#öl-wahl-wiederverwendung-entsorgung)).",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "markdown",
+      "title": "Vortag (oder bis spätestens zum Morgen des Kochtags)",
+      "level": "bold",
+      "markdown": "**Vortag (oder bis spätestens zum Morgen des Kochtags):** \\~45 Min. aktiv."
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Korean Fried Chicken — doppelt frittierte Keule & Flügel mit zwei Saucen (4 Portionen)",
+          "steps": [
+            {
+              "id": "chicken-mu",
+              "label": "1",
+              "heading": "**1. Chicken-mu (15 Min. + 3 Std. passiv)**",
+              "title": "Chicken-mu",
+              "duration": {
+                "typical": "PT3H15M",
+                "source": "15 Min. + 3 Std."
+              },
+              "attention": "passive",
+              "text": "500 g Rettich schälen und in 1,5-cm-Würfel schneiden. 150 ml Wasser, 100 ml Branntweinessig, 50 g Zucker und 2 TL Salz verrühren, bis alles gelöst ist, über die Würfel in ein Glas oder eine Dose gießen (sie müssen bedeckt sein), verschließen, kalt stellen. Mindestens 3 Std., am besten über Nacht ziehen lassen. *Die Lake ist mit 1 : 1,5 : 0,5 (Essig : Wasser : Zucker) bewusst weniger süß als die klassische 1 : 1 : 1 — der Rettich soll den süßen Glasuren Säure und Frische entgegensetzen, nicht noch mehr Zucker liefern. Hält 1–2 Wochen gekühlt.*\n\n> **Radieschen-Fallback:** 2 Bund Radieschen halbieren (große vierteln), gleiche Lake, nur 2–3 Std. ziehen lassen — sie werden schneller weich.",
+              "action": "500 g Rettich schälen und in 1,5-cm-Würfel schneiden.",
+              "timers": [
+                {
+                  "label": "Chicken-mu",
+                  "duration": {
+                    "typical": "PT3H"
+                  },
+                  "text": "3 Std."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "rettich",
+                  "amount": {
+                    "text": "500 g Rettich",
+                    "value": 500.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "150 ml Wasser",
+                    "value": 150.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "branntweinessig",
+                  "amount": {
+                    "text": "100 ml Branntweinessig",
+                    "value": 100.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "50 g Zucker",
+                    "value": 50.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "2 TL Salz",
+                    "value": 2.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "after": []
+            },
+            {
+              "id": "fluegel-salzen",
+              "label": "2",
+              "heading": "**2. Flügel salzen (15 Min.)**",
+              "title": "Flügel salzen",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "600 g Hähnchenflügel im Gelenk teilen, die Spitzen abschneiden (einfrieren für Brühe) — bleiben \\~500 g Unterarm-Teile (*Flats*) und Mini-Keulen (*Drumettes*). Sehr gründlich trocken tupfen, mit 5 g Salz (knapp 1 TL) und ½ TL Backpulver gleichmäßig bestreuen und durchmischen. **Unbedeckt** auf einem Kuchengitter über einem Blech in den Kühlschrank. *Das Backpulver hebt den pH-Wert der Haut: sie bräunt schneller und wird blasig-knusprig; das offene Stehenlassen trocknet die Haut an (Prinzip nach Kenji López-Alt).*",
+              "action": "600 g Hähnchenflügel im Gelenk teilen, die Spitzen abschneiden (einfrieren für Brühe) — bleiben \\~500 g Unterarm-Teile (*Flats*) und Mini-Keulen (*Drumettes*).",
+              "why": "Das Backpulver hebt den pH-Wert der Haut: sie bräunt schneller und wird blasig-knusprig; das offene Stehenlassen trocknet die Haut an (Prinzip nach Kenji López-Alt).",
+              "ingredients": [
+                {
+                  "ref": "haehnchenfluegel",
+                  "amount": {
+                    "text": "600 g Hähnchenflügel",
+                    "value": 600.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "5 g Salz",
+                    "value": 5.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "backpulver",
+                  "amount": {
+                    "text": "½ TL Backpulver",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "keule-marinieren",
+              "label": "3",
+              "heading": "**3. Keule marinieren (15 Min.)**",
+              "title": "Keule marinieren",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "700 g Hähnchenoberschenkel von groben Fettstücken befreien und in 3–4-cm-Stücke schneiden (\\~35–40 g pro Stück, möglichst gleich groß). Mit 7 g Salz (gut 1 TL), 2 fein geriebenen Knoblauchzehen, 1 TL fein geriebenem Ingwer und ¼ TL Pfeffer gründlich vermengen, abgedeckt kalt stellen. *Kein Reiswein und keine Milch wie bei manchen Rezepten — der Oberschenkel braucht kein Zartmachen, und Reiswein entfällt in der Schwangerschaft.*",
+              "action": "700 g Hähnchenoberschenkel von groben Fettstücken befreien und in 3–4-cm-Stücke schneiden (\\~35–40 g pro Stück, möglichst gleich groß).",
+              "why": "Kein Reiswein und keine Milch wie bei manchen Rezepten — der Oberschenkel braucht kein Zartmachen, und Reiswein entfällt in der Schwangerschaft.",
+              "ingredients": [
+                {
+                  "ref": "haehnchenoberschenkel",
+                  "amount": {
+                    "text": "700 g Hähnchenoberschenkel",
+                    "value": 700.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "7 g Salz",
+                    "value": 7.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "2 fein geriebenen Knoblauchzehen",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "ingwer",
+                  "amount": {
+                    "text": "1 TL fein geriebenem Ingwer",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "¼ TL Pfeffer",
+                    "value": 0.25,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "durchziehen",
+              "label": "4",
+              "heading": "**4. Durchziehen (4–24 Std., passiv)**",
+              "title": "Durchziehen",
+              "duration": {
+                "min": "PT4H",
+                "max": "PT24H",
+                "source": "4–24 Std."
+              },
+              "attention": "passive",
+              "text": "Beides im Kühlschrank ziehen lassen, die Flügel offen, die Keule abgedeckt. *Unter 4 Std. geht auch (Minimum 1 Std.), dann sind die Flügel weniger trocken und die Haut wird etwas weniger blasig.*",
+              "action": "Beides im Kühlschrank ziehen lassen, die Flügel offen, die Keule abgedeckt.",
+              "why": "Unter 4 Std.",
+              "rescue": "geht auch (Minimum 1 Std.), dann sind die Flügel weniger trocken und die Haut wird etwas weniger blasig.",
+              "ingredients": [],
+              "meta": "*nach Flügel salzen, Keule marinieren*",
+              "timers": [
+                {
+                  "label": "Durchziehen",
+                  "duration": {
+                    "min": "PT4H",
+                    "max": "PT24H"
+                  },
+                  "text": "4–24 Std."
+                }
+              ],
+              "after": [
+                "step:fluegel-salzen",
+                "step:keule-marinieren"
+              ]
+            },
+            {
+              "id": "ganjang-sauce",
+              "label": "5",
+              "heading": "**5. Ganjang-Sauce (10 Min.)**",
+              "title": "Ganjang-Sauce",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "In einem kleinen Topf 1 EL Rapsöl bei mittlerer Hitze erwärmen, 5 fein gehackte Knoblauchzehen und 1 TL fein geriebenen Ingwer darin 1 Min. sanft anschwitzen, **nicht bräunen**. 3 EL Sojasauce, 2 EL Honig, 3 EL Wasser und 1 TL Reisessig dazugeben, aufkochen und bei mittlerer Hitze 3–4 Min. einkochen. ½ TL Kartoffelstärke in 1 EL Wasser glatt rühren, einrühren, 30 Sek. köcheln, bis die Sauce klar und sirupartig ist. Vom Herd nehmen, ½ TL Sesamöl einrühren. **Ziel: überzieht den Löffelrücken, ein gezogener Strich bleibt stehen.** *Die kleine Stärkebindung ersetzt einen Teil des Honigs als Bindemittel — so bleibt die Sauce dick genug, um die Kruste nicht zu durchweichen, ohne dass die Süße steigen muss. Hält gekühlt 3 Tage; wird kalt fest, beim Erwärmen wieder flüssig.*\n\n> **Zu dünn?** 1–2 Min. weiter einkochen. **Zu dick** (nach dem Kühlen): 1 TL Wasser beim Erwärmen.",
+              "action": "In einem kleinen Topf 1 EL Rapsöl bei mittlerer Hitze erwärmen, 5 fein gehackte Knoblauchzehen und 1 TL fein geriebenen Ingwer darin 1 Min. sanft anschwitzen, **nicht bräunen**.",
+              "limits": [
+                "nicht bräunen",
+                "Ziel: überzieht den Löffelrücken, ein gezogener Strich bleibt stehen.",
+                "Zu dünn?",
+                "Zu dick"
+              ],
+              "cues": [
+                "bis die Sauce klar und sirupartig ist"
+              ],
+              "timers": [
+                {
+                  "label": "Ganjang-Sauce",
+                  "duration": {
+                    "min": "PT3M",
+                    "max": "PT4M"
+                  },
+                  "text": "3–4 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "rapsoel",
+                  "amount": {
+                    "text": "1 EL Rapsöl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "5 fein gehackte Knoblauchzehen",
+                    "value": 5.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "ingwer",
+                  "amount": {
+                    "text": "1 TL fein geriebenen Ingwer",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "sojasauce",
+                  "amount": {
+                    "text": "3 EL Sojasauce",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "honig",
+                  "amount": {
+                    "text": "2 EL Honig",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "3 EL Wasser",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "reisessig",
+                  "amount": {
+                    "text": "1 TL Reisessig",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "kartoffelstaerke",
+                  "amount": {
+                    "text": "½ TL Kartoffelstärke",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "1 EL Wasser",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "sesamoel",
+                  "amount": {
+                    "text": "½ TL Sesamöl",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "yangnyeom-sauce",
+              "label": "6",
+              "heading": "**6. Yangnyeom-Sauce (10 Min.)**",
+              "title": "Yangnyeom-Sauce",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Im zweiten kleinen Topf 1 EL Rapsöl bei mittlerer Hitze erwärmen, 3 fein gehackte Knoblauchzehen und ½ TL fein geriebenen Ingwer 30–60 Sek. anschwitzen. 2½ EL Gochujang, 2 EL Ketchup, 3 EL Reissirup, 1 EL Sojasauce, 1 EL Reisessig und 2 EL Wasser einrühren, aufkochen, bei kleiner bis mittlerer Hitze 4–5 Min. unter Rühren köcheln, bis die Sauce glänzt und Blasen wirft. Für mehr Schärfe optional 1 TL Gochugaru mitköcheln. Vom Herd, 1 TL Sesamöl einrühren. **Gleiche Zielkonsistenz wie die Ganjang-Sauce.** *Maangchis Chicken-Shop-Formel (Gochujang + Ketchup + Sirup), hier mit weniger Sirup und mehr Säure. Hält gekühlt 1 Woche.*\n\n> **Ohne Reissirup:** 2 EL Honig statt 3 EL Reissirup.",
+              "action": "Im zweiten kleinen Topf 1 EL Rapsöl bei mittlerer Hitze erwärmen, 3 fein gehackte Knoblauchzehen und ½ TL fein geriebenen Ingwer 30–60 Sek. anschwitzen.",
+              "limits": [
+                "Gleiche Zielkonsistenz wie die Ganjang-Sauce."
+              ],
+              "cues": [
+                "bis die Sauce glänzt und Blasen wirft"
+              ],
+              "timers": [
+                {
+                  "label": "Yangnyeom-Sauce",
+                  "duration": {
+                    "min": "PT4M",
+                    "max": "PT5M"
+                  },
+                  "text": "4–5 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "rapsoel",
+                  "amount": {
+                    "text": "1 EL Rapsöl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "3 fein gehackte Knoblauchzehen",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "ingwer",
+                  "amount": {
+                    "text": "½ TL fein geriebenen Ingwer",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "gochujang",
+                  "amount": {
+                    "text": "2½ EL Gochujang",
+                    "value": 2.5,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "ketchup",
+                  "amount": {
+                    "text": "2 EL Ketchup",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "reissirup",
+                  "amount": {
+                    "text": "3 EL Reissirup",
+                    "value": 3.0,
+                    "unit": "EL"
+                  },
+                  "occurrence": 1
+                },
+                {
+                  "ref": "sojasauce",
+                  "amount": {
+                    "text": "1 EL Sojasauce",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "reisessig",
+                  "amount": {
+                    "text": "1 EL Reisessig",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "2 EL Wasser",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "gochugaru",
+                  "amount": {
+                    "text": "1 TL Gochugaru",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "sesamoel",
+                  "amount": {
+                    "text": "1 TL Sesamöl",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "kohlsalat-schneiden",
+              "label": "7",
+              "heading": "**7. Kohlsalat schneiden (10 Min.)**",
+              "title": "Kohlsalat schneiden",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "350 g Spitzkohl ohne Strunk auf der Mandoline in sehr feine Streifen hobeln, 5 Min. in eiskaltes Wasser legen, sehr gut trockenschleudern, kalt stellen. Dressing in einem Schraubglas schütteln: 1½ EL Reisessig, 1 TL Sojasauce, 1 TL Sesamöl, 1 TL Zucker, ¼ TL Salz, 1 TL Sesam und 1 Frühlingszwiebel in feinen Ringen. **Erst beim Anrichten mischen.** *Kann am Kochtag morgens gehobelt werden; mild, das Kind darf mit.*",
+              "action": "350 g Spitzkohl ohne Strunk auf der Mandoline in sehr feine Streifen hobeln, 5 Min. in eiskaltes Wasser legen, sehr gut trockenschleudern, kalt stellen.",
+              "limits": [
+                "Erst beim Anrichten mischen."
+              ],
+              "why": "Kann am Kochtag morgens gehobelt werden; mild, das Kind darf mit.",
+              "timers": [
+                {
+                  "label": "Kohlsalat schneiden",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "spitzkohl",
+                  "amount": {
+                    "text": "350 g Spitzkohl",
+                    "value": 350.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "reisessig",
+                  "amount": {
+                    "text": "1½ EL Reisessig",
+                    "value": 1.5,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "sojasauce",
+                  "amount": {
+                    "text": "1 TL Sojasauce",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "sesamoel",
+                  "amount": {
+                    "text": "1 TL Sesamöl",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "1 TL Zucker",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "¼ TL Salz",
+                    "value": 0.25,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "sesam",
+                  "amount": {
+                    "text": "1 TL Sesam",
+                    "value": 1.0,
+                    "unit": "TL"
+                  },
+                  "occurrence": 2
+                },
+                {
+                  "ref": "fruehlingszwiebeln",
+                  "amount": {
+                    "text": "1 Frühlingszwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "oel-aufheizen",
+              "label": "8",
+              "heading": "**8. Öl aufheizen (15 Min.)**",
+              "title": "Öl aufheizen",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "1,8 l Rapsöl in den 6-l-Topf geben (\\~4 cm hoch im 24-cm-Topf, **Topf höchstens halb voll** — das Öl steigt beim Einlegen) und das Clip-Thermometer so anklemmen, dass die Spitze im Öl, aber nicht am Boden steht. Auf großer Platte auf 165 °C bringen. Währenddessen Hähnchen aus dem Kühlschrank nehmen. Zwei Kuchengitter auf Blechen bereitstellen. **Kind aus der Küche, solange das Öl heiß ist** ([Frittieren — Sicherheit](/technik/frittieren.md#sicherheit-kurz-aber-ernst)). *Große Mittelplatte des Induktionsfelds; nach dem ersten Erreichen der Temperatur eine bis zwei Stufen zurück — Induktion regelt schnell, das Öl hinkt hinterher.*",
+              "action": "1,8 l Rapsöl in den 6-l-Topf geben (\\~4 cm hoch im 24-cm-Topf, **Topf höchstens halb voll** — das Öl steigt beim Einlegen) und das Clip-Thermometer so anklemmen, dass die Spitze im Öl, aber nicht am Boden steht.",
+              "limits": [
+                "Topf höchstens halb voll",
+                "Kind aus der Küche, solange das Öl heiß ist"
+              ],
+              "why": "Große Mittelplatte des Induktionsfelds; nach dem ersten Erreichen der Temperatur eine bis zwei Stufen zurück — Induktion regelt schnell, das Öl hinkt hinterher.",
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "165 °C",
+                  "value": 165
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "rapsoel",
+                  "amount": {
+                    "text": "1,8 l Rapsöl",
+                    "value": 1.8,
+                    "unit": "l"
+                  }
+                }
+              ],
+              "meta": "*nach Durchziehen · Herd · Technik: technik/frittieren.md#chargen-regel*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "technique": "technik/frittieren.md#chargen-regel",
+              "attention": "active",
+              "after": [
+                "step:durchziehen"
+              ]
+            },
+            {
+              "id": "teig-anruehren",
+              "label": "9",
+              "heading": "**9. Teig anrühren (5 Min.)**",
+              "title": "Teig anrühren",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Keulenstücke und Flügel sorgfältig trocken tupfen (getrennt halten) und beides mit insgesamt 30 g Kartoffelstärke hauchdünn bestäuben, überschüssige Stärke abklopfen. In einer großen Schüssel 120 g Kartoffelstärke, 60 g Weizenmehl, 1 TL Backpulver und ½ TL Salz mischen, dann 220–250 ml eiskaltes Mineralwasser mit dem Schneebesen **kurz** einrühren, bis keine Klümpchen mehr da sind. **Ziel: dünn wie flüssige Sahne** — überzieht den Finger als dünner, halb durchscheinender Film. *Stärke setzt sich ab: vor jeder Charge einmal durchrühren; wird der Teig über die Zeit dicker, 1–2 EL Wasser nachgeben. Die Schüssel gern in eine größere mit Eiswürfeln stellen.*",
+              "action": "Keulenstücke und Flügel sorgfältig trocken tupfen (getrennt halten) und beides mit insgesamt 30 g Kartoffelstärke hauchdünn bestäuben, überschüssige Stärke abklopfen.",
+              "limits": [
+                "Ziel: dünn wie flüssige Sahne"
+              ],
+              "why": "Stärke setzt sich ab: vor jeder Charge einmal durchrühren; wird der Teig über die Zeit dicker, 1–2 EL Wasser nachgeben. Die Schüssel gern in eine größere mit Eiswürfeln stellen.",
+              "ingredients": [
+                {
+                  "ref": "kartoffelstaerke",
+                  "amount": {
+                    "text": "30 g Kartoffelstärke",
+                    "value": 30.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "kartoffelstaerke",
+                  "amount": {
+                    "text": "120 g Kartoffelstärke",
+                    "value": 120.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "weizenmehl",
+                  "amount": {
+                    "text": "60 g Weizenmehl",
+                    "value": 60.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "backpulver",
+                  "amount": {
+                    "text": "1 TL Backpulver",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "mineralwasser",
+                  "amount": {
+                    "text": "220–250 ml eiskaltes Mineralwasser",
+                    "value": 220.0,
+                    "unit": "ml",
+                    "max": 250.0
+                  }
+                }
+              ],
+              "meta": "*nach Öl aufheizen*",
+              "attention": "active",
+              "after": [
+                "step:oel-aufheizen"
+              ]
+            },
+            {
+              "id": "erstfrittieren-keule",
+              "label": "10",
+              "heading": "**10. Erstfrittieren Keule (ca. 25 Min.)**",
+              "title": "Erstfrittieren Keule",
+              "duration": {
+                "typical": "PT25M",
+                "source": "ca. 25 Min.",
+                "estimated": true
+              },
+              "text": "700 g Keulenstücke in **3 Chargen** à \\~230 g frittieren: ein Drittel der Stücke durch den Teig ziehen, kurz abtropfen lassen und einzeln vom Körper weg ins 165 °C heiße Öl gleiten lassen. Die Temperatur fällt auf \\~145 °C — Hitze so führen, dass sie bei **150–160 °C** bleibt. Nach 30 Sek. mit der Spinne vorsichtig lösen (Teig klebt sonst aneinander), dann 5–6 Min. frittieren, gelegentlich wenden, bis die Kruste fest, hellgolden und gerade knusprig ist. Herausheben, auf dem Gitter abtropfen lassen. **Größtes Stück der ersten Charge anschneiden bzw. messen: ≥ 74 °C Kern.** Zwischen den Chargen das Öl wieder auf 165 °C kommen lassen (2–3 Min.) und Teigfetzen mit der Spinne abschöpfen (verbrennen sonst). *Der erste Gang gart, der zweite macht die Kruste — Farbe ist hier unerwünscht.*\n\n> **Chargen-Regel:** eine locker schwimmende Lage, nie stapeln; lieber eine Charge mehr ([Frittieren — Chargen-Regel](/technik/frittieren.md#chargen-regel)).",
+              "action": "700 g Keulenstücke in **3 Chargen** à \\~230 g frittieren: ein Drittel der Stücke durch den Teig ziehen, kurz abtropfen lassen und einzeln vom Körper weg ins 165 °C heiße Öl gleiten lassen.",
+              "limits": [
+                "3 Chargen",
+                "150–160 °C",
+                "Größtes Stück der ersten Charge anschneiden bzw. messen: ≥ 74 °C Kern."
+              ],
+              "cues": [
+                "bis die Kruste fest"
+              ],
+              "timers": [
+                {
+                  "label": "Erstfrittieren Keule",
+                  "duration": {
+                    "min": "PT5M",
+                    "max": "PT6M"
+                  },
+                  "text": "5–6 Min."
+                },
+                {
+                  "label": "Erstfrittieren Keule",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT30S",
+                    "source": "30 Sek."
+                  },
+                  "text": "Nach 30 Sek."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "165 °C",
+                  "value": 165
+                },
+                {
+                  "kind": "ziel",
+                  "text": "145 °C",
+                  "value": 145
+                },
+                {
+                  "kind": "ziel",
+                  "text": "150–160 °C",
+                  "min": 150,
+                  "max": 160
+                },
+                {
+                  "kind": "kern",
+                  "text": "≥ 74 °C",
+                  "value": 74
+                },
+                {
+                  "kind": "ziel",
+                  "text": "165 °C",
+                  "value": 165
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Teig anrühren · Herd · fertig bei ≥ 74 °C Kern*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei ≥ 74 °C Kern",
+                "value": 74
+              },
+              "attention": "active",
+              "after": [
+                "step:teig-anruehren"
+              ]
+            },
+            {
+              "id": "erstfrittieren-fluegel",
+              "label": "11",
+              "heading": "**11. Erstfrittieren Flügel (ca. 25 Min.)**",
+              "title": "Erstfrittieren Flügel",
+              "duration": {
+                "typical": "PT25M",
+                "source": "ca. 25 Min.",
+                "estimated": true
+              },
+              "text": "Die \\~500 g Flügelteile in **2 Chargen** à 6–7 Stück genauso durch den Teig ziehen und bei **150–160 °C** 9–10 Min. frittieren, gelegentlich wenden, bis sie hellgolden sind. Auf dem zweiten Gitter abtropfen lassen. **Kern an der dicksten Drumette nahe am Knochen messen: ≥ 74 °C**, gern 80 °C — Flügel sind voller Bindegewebe und werden bei höherer Kerntemperatur eher besser als trockener. *Flügel brauchen fast doppelt so lange wie die Keulenstücke, weil Knochen und Haut die Wärme bremsen — deshalb nie mit der Keule mischen.*",
+              "action": "Die \\~500 g Flügelteile in **2 Chargen** à 6–7 Stück genauso durch den Teig ziehen und bei **150–160 °C** 9–10 Min. frittieren, gelegentlich wenden, bis sie hellgolden sind.",
+              "limits": [
+                "2 Chargen",
+                "150–160 °C",
+                "Kern an der dicksten Drumette nahe am Knochen messen: ≥ 74 °C"
+              ],
+              "why": "Flügel brauchen fast doppelt so lange wie die Keulenstücke, weil Knochen und Haut die Wärme bremsen — deshalb nie mit der Keule mischen.",
+              "cues": [
+                "bis sie hellgolden sind"
+              ],
+              "timers": [
+                {
+                  "label": "Erstfrittieren Flügel",
+                  "duration": {
+                    "min": "PT9M",
+                    "max": "PT10M"
+                  },
+                  "text": "9–10 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "150–160 °C",
+                  "min": 150,
+                  "max": 160
+                },
+                {
+                  "kind": "ziel",
+                  "text": "≥ 74 °C",
+                  "value": 74
+                },
+                {
+                  "kind": "ziel",
+                  "text": "80 °C",
+                  "value": 80
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Erstfrittieren Keule · Herd · fertig bei ≥ 74 °C Kern*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei ≥ 74 °C Kern",
+                "value": 74
+              },
+              "attention": "active",
+              "after": [
+                "step:erstfrittieren-keule"
+              ]
+            },
+            {
+              "id": "ruhen",
+              "label": "12",
+              "heading": "**12. Ruhen (10–60 Min., passiv)**",
+              "title": "Ruhen",
+              "duration": {
+                "min": "PT10M",
+                "max": "PT1H",
+                "source": "10–60 Min."
+              },
+              "attention": "passive",
+              "text": "Alles auf den Gittern bei Raumtemperatur ruhen lassen, mindestens 10 Min., bis zu 1 Std.; Öl bei kleiner Stufe stehen lassen oder ausschalten. *In der Pause wandert Feuchtigkeit aus dem Inneren in die Kruste; der zweite, heiße Gang treibt genau diese Feuchtigkeit aus — dadurch hält die Kruste später der Sauce stand. Die Pause ist zugleich der Puffer: Küche aufräumen, Tisch decken. Länger als 1–2 Std. bei Raumtemperatur nicht (Lebensmittelsicherheit).*",
+              "action": "Alles auf den Gittern bei Raumtemperatur ruhen lassen, mindestens 10 Min., bis zu 1 Std.; Öl bei kleiner Stufe stehen lassen oder ausschalten.",
+              "why": "In der Pause wandert Feuchtigkeit aus dem Inneren in die Kruste; der zweite, heiße Gang treibt genau diese Feuchtigkeit aus — dadurch hält die Kruste später der Sauce stand. Die Pause ist zugleich der Puffer: Küche aufräumen, Tisch decken. Länger als 1–2 Std. bei Raumtemperatur nicht (Lebensmittelsicherheit).",
+              "ingredients": [],
+              "meta": "*nach Erstfrittieren Flügel*",
+              "timers": [
+                {
+                  "label": "Ruhen",
+                  "duration": {
+                    "min": "PT10M",
+                    "max": "PT1H"
+                  },
+                  "text": "10–60 Min."
+                }
+              ],
+              "after": [
+                "step:erstfrittieren-fluegel"
+              ]
+            },
+            {
+              "id": "reis-kochen",
+              "label": "13",
+              "heading": "**13. Reis kochen (ca. 30 Min., parallel)**",
+              "title": "Reis kochen",
+              "duration": {
+                "typical": "PT30M",
+                "source": "ca. 30 Min.",
+                "estimated": true
+              },
+              "parallel": true,
+              "text": "Optional: 200 g Kurzkornreis waschen, bis das Wasser klar ist, und nach Packung garen. *In Korea isst man Chicken eher ohne Reis (mit Bier und Mu) — der Reis ist hier für das Kind und den Hunger, nicht Pflicht; GDM siehe unten.*",
+              "action": "Optional: 200 g Kurzkornreis waschen, bis das Wasser klar ist, und nach Packung garen.",
+              "why": "In Korea isst man Chicken eher ohne Reis (mit Bier und Mu) — der Reis ist hier für das Kind und den Hunger, nicht Pflicht; GDM siehe unten.",
+              "cues": [
+                "bis das Wasser klar ist"
+              ],
+              "ingredients": [
+                {
+                  "ref": "kurzkornreis",
+                  "amount": {
+                    "text": "200 g Kurzkornreis",
+                    "value": 200.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Reis kochen",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "ca. 30 Min."
+                }
+              ],
+              "after": []
+            },
+            {
+              "id": "zweitfrittieren",
+              "label": "14",
+              "heading": "**14. Zweitfrittieren (ca. 15 Min.)**",
+              "title": "Zweitfrittieren",
+              "duration": {
+                "typical": "PT15M",
+                "source": "ca. 15 Min.",
+                "estimated": true
+              },
+              "text": "Öl auf **185 °C** bringen. Zuerst die Flügel in 2 Chargen je 2–3 Min., dann die Keulenstücke in 2 Chargen je 1½–2 Min. frittieren, bis die Kruste **tief goldbraun und hart-splitternd** ist (Probe: mit der Spinne antippen — klingt hohl und trocken). Zwischen den Chargen immer zurück auf 185 °C. Auf die Gitter heben. **Sofort \\~250 g der Keulenstücke** (die *Huraideu*-Portion) auf einem eigenen Teller mit 1 Prise Salz und etwas Pfeffer würzen. *Hier zählt die Rückkehr auf Temperatur mehr als die Zahl: unter 175 °C wird die Kruste fettig statt glasig.*",
+              "action": "Öl auf **185 °C** bringen.",
+              "limits": [
+                "185 °C",
+                "tief goldbraun und hart-splitternd",
+                "Sofort \\~250 g der Keulenstücke"
+              ],
+              "why": "Hier zählt die Rückkehr auf Temperatur mehr als die Zahl: unter 175 °C wird die Kruste fettig statt glasig.",
+              "cues": [
+                "bis die Kruste"
+              ],
+              "timers": [
+                {
+                  "label": "Zweitfrittieren",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                },
+                {
+                  "label": "Zweitfrittieren",
+                  "duration": {
+                    "min": "PT1M30S",
+                    "max": "PT2M"
+                  },
+                  "text": "1½–2 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "185 °C",
+                  "value": 185
+                },
+                {
+                  "kind": "ziel",
+                  "text": "185 °C",
+                  "value": 185
+                },
+                {
+                  "kind": "ziel",
+                  "text": "175 °C",
+                  "value": 175
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 Prise Salz",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "etwas Pfeffer"
+                  }
+                }
+              ],
+              "meta": "*nach Ruhen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:ruhen"
+              ]
+            },
+            {
+              "id": "schwenken-anrichten",
+              "label": "15",
+              "heading": "**15. Schwenken & Anrichten (ca. 5 Min.)**",
+              "title": "Schwenken & Anrichten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "ca. 5 Min.",
+                "estimated": true
+              },
+              "text": "Beide Saucen in ihren Töpfen bei kleiner Hitze erwärmen, bis sie gerade flüssig fließen — **nicht kochen**. Die übrigen \\~450 g Keulenstücke in einer großen, angewärmten Schüssel mit der Ganjang-Sauce 15–20 Sek. schwenken, bis alles dünn überzogen ist, auf eine Platte geben, mit ½ TL Sesam bestreuen. Schüssel auswischen, die Flügel ebenso mit der Yangnyeom-Sauce schwenken, mit ½ TL Sesam und 2 Frühlingszwiebeln in feinen Ringen bestreuen. Kohlsalat mit dem Dressing mischen, Chicken-mu abtropfen lassen. Alles sofort auf den Tisch: Ganjang-Platte, Yangnyeom-Platte, Huraideu-Teller, Kohlsalat, Chicken-mu, Reis. **Innerhalb von 10–15 Min. essen** — danach weicht auch die beste Kruste unter Sauce auf. *Zu viel Sauce ist der häufigste Fehler: Es soll nichts in der Schüssel zurückbleiben, das Huhn soll glänzen, nicht schwimmen. Restliche Sauce in Schälchen zum Dippen dazustellen.*\n\n> **Maximale Knusprigkeit:** Saucen gar nicht schwenken, sondern als Dip in Schälchen dazustellen — so bleibt jedes Stück knusprig, auch wenn der Abend länger dauert.",
+              "action": "Beide Saucen in ihren Töpfen bei kleiner Hitze erwärmen, bis sie gerade flüssig fließen — **nicht kochen**.",
+              "limits": [
+                "nicht kochen",
+                "Innerhalb von 10–15 Min. essen"
+              ],
+              "cues": [
+                "bis sie gerade flüssig fließen"
+              ],
+              "timers": [
+                {
+                  "label": "Schwenken & Anrichten",
+                  "duration": {
+                    "min": "PT10M",
+                    "max": "PT15M"
+                  },
+                  "text": "10–15 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "sesam",
+                  "amount": {
+                    "text": "½ TL Sesam",
+                    "value": 0.5,
+                    "unit": "TL"
+                  },
+                  "occurrence": 1
+                },
+                {
+                  "ref": "sesam",
+                  "amount": {
+                    "text": "½ TL Sesam",
+                    "value": 0.5,
+                    "unit": "TL"
+                  },
+                  "occurrence": 2
+                },
+                {
+                  "ref": "fruehlingszwiebeln",
+                  "amount": {
+                    "text": "2 Frühlingszwiebeln",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*nach Zweitfrittieren, Ganjang-Sauce, Yangnyeom-Sauce, Kohlsalat schneiden, Chicken-mu, Reis kochen*",
+              "attention": "active",
+              "after": [
+                "step:zweitfrittieren",
+                "step:ganjang-sauce",
+                "step:yangnyeom-sauce",
+                "step:kohlsalat-schneiden",
+                "step:chicken-mu",
+                "step:reis-kochen"
+              ]
+            },
+            {
+              "id": "oel-aufbereiten",
+              "label": "16",
+              "heading": "**16. Öl aufbereiten (10 Min.)**",
+              "title": "Öl aufbereiten",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Das vollständig abgekühlte Öl durch ein feines Sieb mit Passiertuch zurück in die Flaschen filtern, beschriften („Hähnchen, 1×\") und dunkel lagern. *3–4 weitere Einsätze für Hähnchen, Pommes oder Gemüse sind okay; wegwerfen, wenn es dunkel wird, schäumt oder ranzig riecht ([Frittieren — Öl](/technik/frittieren.md#öl-wahl-wiederverwendung-entsorgung)). Nie in den Abfluss.*",
+              "action": "Das vollständig abgekühlte Öl durch ein feines Sieb mit Passiertuch zurück in die Flaschen filtern, beschriften („Hähnchen, 1×\") und dunkel lagern.",
+              "why": "3–4 weitere Einsätze für Hähnchen, Pommes oder Gemüse sind okay; wegwerfen, wenn es dunkel wird, schäumt oder ranzig riecht ([Frittieren — Öl](/technik/frittieren.md#öl-wahl-wiederverwendung-entsorgung)). Nie in den Abfluss.",
+              "ingredients": [],
+              "meta": "*nach Schwenken & Anrichten*",
+              "attention": "active",
+              "after": [
+                "step:schwenken-anrichten"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Kochtag",
+      "level": "bold",
+      "markdown": "**Kochtag:** \\~2 Std. vor dem Essen."
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "vortag",
+            "label": "Vortag",
+            "day": -1
+          },
+          {
+            "id": "uhr-16-30",
+            "label": "16:30 Uhr (2h vorher)",
+            "day": 0,
+            "part": "service",
+            "at": "-PT2H",
+            "clock": "16:30"
+          },
+          {
+            "id": "uhr-16-50",
+            "label": "16:50 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT1H40M",
+            "clock": "16:50"
+          },
+          {
+            "id": "uhr-17-15",
+            "label": "17:15 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT1H15M",
+            "clock": "17:15"
+          },
+          {
+            "id": "uhr-17-40",
+            "label": "17:40 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT50M",
+            "clock": "17:40"
+          },
+          {
+            "id": "uhr-17-55",
+            "label": "17:55 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT35M",
+            "clock": "17:55"
+          },
+          {
+            "id": "uhr-18-05",
+            "label": "18:05 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT25M",
+            "clock": "18:05"
+          },
+          {
+            "id": "uhr-18-25",
+            "label": "18:25 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT5M",
+            "clock": "18:25"
+          },
+          {
+            "id": "uhr-20-30",
+            "label": "20:30 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "+PT2H",
+            "clock": "20:30"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "vortag",
+            "text": "Chicken-mu",
+            "steps": [
+              "chicken-mu"
+            ]
+          },
+          {
+            "phase": "vortag",
+            "text": "Flügel salzen",
+            "steps": [
+              "fluegel-salzen"
+            ]
+          },
+          {
+            "phase": "vortag",
+            "text": "Keule marinieren",
+            "steps": [
+              "keule-marinieren"
+            ]
+          },
+          {
+            "phase": "vortag",
+            "text": "Durchziehen",
+            "steps": [
+              "durchziehen"
+            ]
+          },
+          {
+            "phase": "vortag",
+            "text": "Ganjang-Sauce",
+            "steps": [
+              "ganjang-sauce"
+            ]
+          },
+          {
+            "phase": "vortag",
+            "text": "Yangnyeom-Sauce",
+            "steps": [
+              "yangnyeom-sauce"
+            ]
+          },
+          {
+            "phase": "uhr-16-30",
+            "text": "Kohlsalat schneiden",
+            "steps": [
+              "kohlsalat-schneiden"
+            ]
+          },
+          {
+            "phase": "uhr-16-30",
+            "text": "Öl aufheizen",
+            "steps": [
+              "oel-aufheizen"
+            ]
+          },
+          {
+            "phase": "uhr-16-30",
+            "text": "Teig anrühren",
+            "steps": [
+              "teig-anruehren"
+            ]
+          },
+          {
+            "phase": "uhr-16-50",
+            "text": "Erstfrittieren Keule",
+            "steps": [
+              "erstfrittieren-keule"
+            ]
+          },
+          {
+            "phase": "uhr-17-15",
+            "text": "Erstfrittieren Flügel",
+            "steps": [
+              "erstfrittieren-fluegel"
+            ]
+          },
+          {
+            "phase": "uhr-17-40",
+            "text": "Ruhen — Küche aufräumen, Tisch decken",
+            "steps": [
+              "ruhen"
+            ]
+          },
+          {
+            "phase": "uhr-17-55",
+            "text": "Reis kochen",
+            "steps": [
+              "reis-kochen"
+            ]
+          },
+          {
+            "phase": "uhr-18-05",
+            "text": "Zweitfrittieren",
+            "steps": [
+              "zweitfrittieren"
+            ]
+          },
+          {
+            "phase": "uhr-18-25",
+            "text": "Schwenken & Anrichten",
+            "steps": [
+              "schwenken-anrichten"
+            ]
+          },
+          {
+            "phase": "uhr-20-30",
+            "text": "Öl aufbereiten",
+            "steps": [
+              "oel-aufbereiten"
+            ]
+          }
+        ],
+        "anchorOverride": {
+          "time": "18:30"
+        }
+      },
+      "note": "*Vortag ist ideal, weil die Flügel dann über Nacht offen antrocknen. Geht auch am Morgen des Kochtags (Durchziehen dann \\~8 Std.). Chicken-mu braucht mindestens 3 Std. — notfalls um 15:00 ansetzen. Der Kochtag lässt sich entzerren: Erstfrittieren kann bis zu 1 Std. vorgezogen werden, das Zweitfrittieren muss direkt vor dem Essen sein.*"
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Kind isst die Ganjang-Keule** — Soja-Knoblauch-Honig, null Schärfe, der Knoblauch ist sanft gegart. Ein paar Huraideu-Stücke (pur) dazu, falls er Sauce nicht mag (beim Bún chả mochte er pures Fleisch lieber als die Kindersauce).\n- **Yangnyeom-Flügel sind nur für Erwachsene** (Gochujang). Flügel generell eher nicht für einen Dreijährigen: Knochen und kleine Knorpelstücke.\n- **Stücke halbieren und abkühlen lassen:** Zuckerglasur und Kruste halten die Hitze lange — innen ist das Huhn deutlich heißer, als es außen wirkt.\n- Chicken-mu ist süß-sauer und mild; bei seiner Vorliebe für Ausgefallenes (Oliven, Sojasauce) gute Chance. Kohlsalat ebenfalls mild.\n- **Kind aus der Küche, solange das Öl heiß ist** — auch während der Ruhepause steht ein Topf mit 1,8 l heißem Öl auf dem Herd.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "Geprüft gegen den [Leitfaden](/schwangerschaft/leitfaden.md):\n\n- **Durchgegart:** Erstfrittieren gart bis ≥ 74 °C Kern (Leitfaden: ≥ 70 °C), das Zweitfrittieren legt noch einmal drauf. Kerntemperatur in der ersten Charge jeder Sorte messen, nicht schätzen.\n- **Kein Alkohol:** Kein Reiswein/Mirin in Marinade und Saucen (Korean Bapsang nutzt beides), kein Wodka im Teig. **Gochujang** enthält je nach Marke etwas Ethanol als Konservierungsstoff (Etikett: „Ethanol\"/„Alkohol\", meist 1–2 %) — in 2½ EL Paste sind das Bruchteile eines Gramms, die zudem 4–5 Min. mitköcheln; unkritisch, aber wer ganz sicher sein will, nimmt eine Marke ohne Ethanol in der Zutatenliste.\n- **Kein rohes Ei:** Teig ohne Ei (Maangchis Variante mit Ei entfällt ohnehin), Kohlsalat mit Essig-Dressing statt Mayonnaise.\n- **Zucker und Stärke — hier liegt das GDM-Thema:** Dieses Gericht ist frittierter Stärketeig plus süße Glasur, also eher Ausnahme- als Rotationsessen. Stellschrauben, nach Wirkung sortiert:\n  1. **Huraideu (ohne Sauce) als Hauptanteil** des Tellers, dazu einige Ganjang-Stücke — die Ganjang-Sauce ist schon reduziert (2 EL Honig auf \\~450 g, Bindung über Stärke statt Zucker). Yangnyeom (3 EL Reissirup + Ketchup + Gochujang) nur probieren oder als Dip.\n  2. **Kein Reis** für die GDM-Portion — die Kruste *ist* die Kohlenhydrat-Beilage. Wer Reis will: höchstens 40 g roh.\n  3. **Kohlsalat und Chicken-mu großzügig** — Ballaststoffe und Säure dämpfen die Spitze; vom Chicken-mu wird nur ein kleiner Teil des Zuckers mitgegessen (er bleibt in der Lake).\n  4. Grob geschätzt: 250 g Hähnchen (Rohgewicht), davon 150 g Huraideu + 100 g Ganjang, ergibt \\~30–35 g KH (Teig \\~10 g pro 100 g Huhn, Ganjang-Glasur \\~8 g pro 100 g). Protein und Fett sind reichlich dabei — gute GDM-Struktur, wenn die Menge stimmt. Blutzuckermessung entscheidet.\n- **Frittierfett** ist in der Schwangerschaft kein Verbot, aber schwer — Portion begrenzen, danach ein Spaziergang.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Double-Fry-Temperaturen (\\~160 °C gar / 185 °C Kruste):** Konsens aus Sift & Simmer (166 °C / 177 °C, 3–4 + 3–4 Min. für Oberschenkelstücke, Kern 74 °C), ATK (175 °C → 190 °C, Flügel je \\~7 Min., 5 Min. Ruhe) und Korean Bapsang (165 °C, 3 + 1–2 Min. für kleine Stücke). Hier die niedrigere Erstfrittier-Temperatur, weil der erste Gang garen soll, ohne Farbe zu nehmen (so auch Maangchi: „first fry cooks through\"), und die höhere zweite für die Glasigkeit. Unsere Zeiten liegen wegen 3–4-cm-Stücken und des niedrigeren ersten Gangs etwas über Bapsang — Thermometer statt Uhr.\n- **Flügel getrennt und länger:** ATK und Maangchi frittieren Flügel 7–12 Min. pro Gang bei 175 °C; bei 150–160 °C sind 9–10 Min. im ersten Gang realistisch, der zweite kurz.\n- **Teig:** Kartoffelstärke-lastiger Teig mit Sprudelwasser und Backpulver nach Sift & Simmer (¾ Cup Stärke : ¼ Cup Mehl), konsistenz „dünn wie Farbe\" nach ATK/Kenji (ATK: Mehl + Stärke + Wasser, loser Teig hält die Sauce aus). Die vorgelagerte Trockenstärke nach Kenjis Zwei-Stufen-Coating. Wodka bewusst weggelassen (siehe Stil-Entscheidung).\n- **Backpulver + Salz auf die Flügel, offen im Kühlschrank:** Kenji López-Alts Wing-Technik (Serious Eats, per WebFetch nicht abrufbar — Inhalt über Sekundärquellen bestätigt) und Stellanspice (Dry Brine über Nacht).\n- **Marinade Keule (Salz, Knoblauch, Ingwer, Pfeffer):** Korean Bapsang; Reiswein und optionales Milchbad weggelassen.\n- **Yangnyeom-Sauce:** Struktur nach Maangchi (Gochujang + Ketchup + Reissirup + Essig + Knoblauch, „Sirup und Ketchup sind essenziell\"), Säure etwas höher und Sirup niedriger; Ingwer und Sesamöl nach Sift & Simmer bzw. ATK.\n- **Ganjang-Sauce:** Soja-Knoblauch-Honig nach Sift & Simmer (dort ½ Cup Soja + ¼ Cup Honig + 12 Zehen auf 500 g — deutlich salziger und süßer); hier auf 3 EL Soja + 2 EL Honig reduziert und mit etwas Stärke gebunden, damit die Sauce trotz weniger Zucker die Kruste nicht durchweicht.\n- **Sauce erst kurz vor dem Servieren, dünn schwenken:** ATK (schwenken, 2 Min. auf dem Gitter abbinden lassen), Maangchi (Kruste wird mit der Zeit weicher).\n- **Chicken-mu:** Maangchi (\\~⅓ Cup Zucker, ⅓ Cup + 1 EL Essig, 1 EL Salz, ¾ Cup Wasser auf 450 g, ≥ 2 Std.) und Drive Me Hungry (1 : 1 : 1, 24–48 Std.); hier weniger Zucker (GDM, und weil die Glasuren schon süß sind).\n- Referenzen: [Korean Bapsang — Dakgangjeong](https://www.koreanbapsang.com/dakgangjeong-sweet-crispy-chicken) · [Sift & Simmer — Korean Fried Chicken (zwei Saucen)](https://www.siftandsimmer.com/wprm_print/korean-fried-chicken) · [America's Test Kitchen — Korean Fried Chicken Wings](https://www.americastestkitchen.com/recipes/8885-korean-fried-chicken-wings) · [Maangchi — Korean Fried Chicken (Buch-Auszug bei WNYC)](https://wnyc.org/story/recipe-maangchis-korean-fried-chicken/) · [Maangchi — Boneless Dakgangjeong](https://www.maangchi.com/recipe/boneless-dakgangjeong) · [Maangchi — Chicken-mu](https://www.maangchi.com/recipe/chicken-mu) · [Drive Me Hungry — Korean Pickled Radish](https://drivemehungry.com/korean-pickled-radish) · [Stellanspice — Korean Fried Chicken](https://stellanspice.com/korean-fried-chicken)",
+      "tags": [
+        "quellen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Nach der Schwangerschaft — Wodka-Test:** 60 ml des Mineralwassers durch eiskalten Wodka ersetzen (Kenji). Der Effekt (weniger Gluten, schnelleres Verdampfen) ist bei diesem stärkelastigen Teig vermutlich klein — nur als A/B-Test mit einer Charge sinnvoll.\n- **Chicken-Shop-Kohlsalat:** In Korea kommt oft Weißkohl mit Ketchup-Mayo-Dressing dazu (1 EL Mayonnaise, 1 EL Ketchup, 1 TL Zucker auf 200 g Kohl) — nach der Schwangerschaft ausprobieren; die Essig-Sesam-Version oben ist frischer und passt besser gegen die süßen Glasuren.\n- **Mehr Flügel, weniger Keule:** Wer die ganze Ladung als Flügel will: \\~1,3 kg Flügel, 4 Chargen im ersten Gang (\\~45 Min. reine Frittierzeit) — der Abend wird länger. Die Keulen-Mehrheit ist auch eine Zeitentscheidung.\n- **Reste:** Knusprig wird es nicht mehr ganz, aber im 200-°C-Ofen auf dem Gitter (8–10 Min.) oder in der Heißluftfritteuse kommt die Kruste der Huraideu-Stücke gut zurück. Gesaucte Stücke kalt essen oder in der Pfanne mit etwas Wasser als Glasur-Hähnchen auf Reis.\n- **Erdnüsse:** Korean Bapsang streut gehackte Erdnüsse über Dakgangjeong — passt gut zur Yangnyeom-Platte, fürs Kind (3 J.) aber Verschluckungsgefahr, deshalb hier nicht standard.",
+      "tags": [
+        "notizen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-19T06:40:24Z",
+    "sourceHash": "c17127f2531c3f7a",
+    "quantities": [
+      {
+        "ingredient": "gochujang",
+        "total": {
+          "text": "2½ EL",
+          "value": 2.5,
+          "max": 2.5,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2½ EL Gochujang"
+        }
+      },
+      {
+        "ingredient": "reissirup",
+        "total": {
+          "text": "3 EL",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "3 EL Reissirup"
+        }
+      },
+      {
+        "ingredient": "gochugaru",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 TL Gochugaru"
+        }
+      },
+      {
+        "ingredient": "fruehlingszwiebeln",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Frühlingszwiebel + 2 Frühlingszwiebeln"
+        }
+      },
+      {
+        "ingredient": "kurzkornreis",
+        "total": {
+          "text": "200 g",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "200 g Kurzkornreis"
+        }
+      },
+      {
+        "ingredient": "haehnchenoberschenkel",
+        "total": {
+          "text": "700 g",
+          "value": 700.0,
+          "max": 700.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "700 g Hähnchenoberschenkel"
+        }
+      },
+      {
+        "ingredient": "haehnchenfluegel",
+        "total": {
+          "text": "600 g",
+          "value": 600.0,
+          "max": 600.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "600 g Hähnchenflügel"
+        }
+      },
+      {
+        "ingredient": "rettich",
+        "total": {
+          "text": "500 g",
+          "value": 500.0,
+          "max": 500.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "500 g Rettich"
+        }
+      },
+      {
+        "ingredient": "spitzkohl",
+        "total": {
+          "text": "350 g",
+          "value": 350.0,
+          "max": 350.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "350 g Spitzkohl"
+        }
+      },
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": "10",
+          "value": 10.0,
+          "max": 10.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 fein geriebenen Knoblauchzehen + 5 fein gehackte Knoblauchzehen + 3 fein gehackte Knoblauchzehen"
+        }
+      },
+      {
+        "ingredient": "ingwer",
+        "total": {
+          "text": "2½ TL",
+          "value": 2.5,
+          "max": 2.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 TL fein geriebenem Ingwer + 1 TL fein geriebenen Ingwer + ½ TL fein geriebenen Ingwer"
+        }
+      },
+      {
+        "ingredient": "kartoffelstaerke",
+        "total": {
+          "text": "150 g + ½ TL",
+          "value": 150.0,
+          "max": 150.0,
+          "unit": "g",
+          "approx": false,
+          "plus": [
+            {
+              "text": "½ TL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "main": "½ TL Kartoffelstärke + 30 g Kartoffelstärke + 120 g Kartoffelstärke"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "rapsoel",
+        "total": {
+          "text": "1830 ml",
+          "value": 1830.0,
+          "max": 1830.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 EL Rapsöl + 1 EL Rapsöl + 1,8 l Rapsöl"
+        }
+      },
+      {
+        "ingredient": "mineralwasser",
+        "total": {
+          "text": "220–250 ml",
+          "value": 220.0,
+          "max": 250.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "220–250 ml eiskaltes Mineralwasser"
+        }
+      },
+      {
+        "ingredient": "sojasauce",
+        "total": {
+          "text": "4 EL + 1 TL",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "EL",
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "main": "3 EL Sojasauce + 1 EL Sojasauce + 1 TL Sojasauce"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "honig",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 EL Honig"
+        }
+      },
+      {
+        "ingredient": "ketchup",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 EL Ketchup"
+        }
+      },
+      {
+        "ingredient": "reisessig",
+        "total": {
+          "text": "2½ EL + 1 TL",
+          "value": 2.5,
+          "max": 2.5,
+          "unit": "EL",
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "main": "1 TL Reisessig + 1 EL Reisessig + 1½ EL Reisessig"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "branntweinessig",
+        "total": {
+          "text": "100 ml",
+          "value": 100.0,
+          "max": 100.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "100 ml Branntweinessig"
+        }
+      },
+      {
+        "ingredient": "sesamoel",
+        "total": {
+          "text": "2½ TL",
+          "value": 2.5,
+          "max": 2.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "½ TL Sesamöl + 1 TL Sesamöl + 1 TL Sesamöl"
+        }
+      },
+      {
+        "ingredient": "sesam",
+        "total": {
+          "text": "2 TL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 TL Sesam + ½ TL Sesam + ½ TL Sesam"
+        }
+      },
+      {
+        "ingredient": "weizenmehl",
+        "total": {
+          "text": "60 g",
+          "value": 60.0,
+          "max": 60.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "60 g Weizenmehl"
+        }
+      },
+      {
+        "ingredient": "backpulver",
+        "total": {
+          "text": "1½ TL",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "½ TL Backpulver + 1 TL Backpulver"
+        }
+      },
+      {
+        "ingredient": "zucker",
+        "total": {
+          "text": "50 g + 1 TL",
+          "value": 50.0,
+          "max": 50.0,
+          "unit": "g",
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "main": "50 g Zucker + 1 TL Zucker"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "2¾ TL + 12 g + 1 Prise",
+          "value": 2.75,
+          "max": 2.75,
+          "unit": "TL",
+          "approx": false,
+          "plus": [
+            {
+              "text": "12 g",
+              "value": 12.0,
+              "max": 12.0,
+              "unit": "g",
+              "approx": false
+            },
+            {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "main": "2 TL Salz + 5 g Salz + 7 g Salz + ¼ TL Salz + ½ TL Salz + 1 Prise Salz"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": "¼ TL",
+          "value": 0.25,
+          "max": 0.25,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "¼ TL Pfeffer"
+        },
+        "unitless": [
+          "etwas Pfeffer"
+        ]
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "240 ml",
+          "value": 240.0,
+          "max": 240.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "150 ml Wasser + 3 EL Wasser + 1 EL Wasser + 2 EL Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Asialaden",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "fruehlingszwiebeln",
+            "name": "Frühlingszwiebeln",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            },
+            "note": "Verbrauch 3 Stück"
+          }
+        ]
+      },
+      {
+        "store": "Asialaden",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "kurzkornreis",
+            "name": "Kurzkornreis",
+            "need": {
+              "text": "200 g",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "200 g",
+            "inStock": false,
+            "buy": {
+              "text": "200 g"
+            },
+            "optional": true,
+            "note": "falls nicht vorrätig"
+          }
+        ]
+      },
+      {
+        "store": "Asialaden",
+        "group": "Würzmittel & Gewürze",
+        "items": [
+          {
+            "ingredient": "gochujang",
+            "name": "Gochujang",
+            "need": {
+              "text": "2½ EL",
+              "value": 2.5,
+              "max": 2.5,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2½ EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Becher"
+            },
+            "note": "Verbrauch 2½ EL; vom Bulgogi evtl. noch offen — prüfen"
+          },
+          {
+            "ingredient": "reissirup",
+            "name": "Reissirup",
+            "need": {
+              "text": "3 EL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "3 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Flasche"
+            },
+            "note": "Jocheong/Ssal-yeot oder Oligo-Sirup; Verbrauch 3 EL; Fallback: Honig"
+          },
+          {
+            "ingredient": "gochugaru",
+            "name": "Gochugaru",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Tüte"
+            },
+            "optional": true,
+            "note": "nur für mehr Schärfe"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "rettich",
+            "name": "Rettich, weiß",
+            "need": {
+              "text": "500 g",
+              "value": 500.0,
+              "max": 500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "500 g",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "\\~500 g; Fallback: 2 Bund Radieschen"
+          },
+          {
+            "ingredient": "spitzkohl",
+            "name": "kleiner Spitzkohl",
+            "need": {
+              "text": "350 g",
+              "value": 350.0,
+              "max": 350.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "350 g",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "Verbrauch \\~350 g; oder ¼ Weißkohl"
+          },
+          {
+            "ingredient": "knoblauch",
+            "name": "große Knolle Knoblauch",
+            "need": {
+              "text": "10",
+              "value": 10.0,
+              "max": 10.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "10",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "Verbrauch 10 Zehen — siehe Mengen-Check"
+          },
+          {
+            "ingredient": "ingwer",
+            "name": "Ingwer",
+            "need": {
+              "text": "2½ TL",
+              "value": 2.5,
+              "max": 2.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "2½ TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Stück"
+            },
+            "note": "daumengroß, Verbrauch 2½ TL gerieben"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "haehnchenoberschenkel",
+            "name": "Hähnchenoberschenkel ohne Knochen, ohne Haut",
+            "need": {
+              "text": "700 g",
+              "value": 700.0,
+              "max": 700.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "700 g",
+            "inStock": false,
+            "buy": {
+              "text": "700 g"
+            }
+          },
+          {
+            "ingredient": "haehnchenfluegel",
+            "name": "Hähnchenflügel",
+            "need": {
+              "text": "600 g",
+              "value": 600.0,
+              "max": 600.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "600 g",
+            "inStock": false,
+            "buy": {
+              "text": "600 g"
+            },
+            "note": "\\~7 Flügel; nach dem Abschneiden der Spitzen \\~500 g"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "kartoffelstaerke",
+            "name": "Kartoffelstärke",
+            "need": {
+              "text": "150 g + ½ TL",
+              "value": 150.0,
+              "max": 150.0,
+              "unit": "g",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "½ TL",
+                  "value": 0.5,
+                  "max": 0.5,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "150 g + ½ TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Packung"
+            },
+            "note": "400–500 g, „Kartoffelmehl\"; Verbrauch \\~155 g"
+          },
+          {
+            "ingredient": "rapsoel",
+            "name": "Rapsöl, raffiniert",
+            "need": {
+              "text": "1830 ml",
+              "value": 1830.0,
+              "max": 1830.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "1830 ml",
+            "inStock": false,
+            "buy": {
+              "text": "2 l"
+            },
+            "note": "oder Sonnenblumenöl high oleic"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Getränke",
+        "items": [
+          {
+            "ingredient": "mineralwasser",
+            "name": "Mineralwasser, stark sprudelnd",
+            "need": {
+              "text": "220–250 ml",
+              "value": 220.0,
+              "max": 250.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "220–250 ml",
+            "inStock": false,
+            "buy": {
+              "text": "1 Flasche"
+            },
+            "note": "Verbrauch 250 ml, gut gekühlt"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "sojasauce",
+            "name": "Sojasauce",
+            "need": {
+              "text": "4 EL + 1 TL",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "4 EL + 1 TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "Verbrauch 4 EL + 1 TL — siehe Mengen-Check"
+          },
+          {
+            "ingredient": "honig",
+            "name": "Honig",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "ketchup",
+            "name": "Ketchup",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "reisessig",
+            "name": "Reisessig",
+            "need": {
+              "text": "2½ EL + 1 TL",
+              "value": 2.5,
+              "max": 2.5,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "2½ EL + 1 TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "2½ EL + 1 TL"
+          },
+          {
+            "ingredient": "branntweinessig",
+            "name": "Branntweinessig",
+            "need": {
+              "text": "100 ml",
+              "value": 100.0,
+              "max": 100.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "100 ml",
+            "inStock": false,
+            "pantry": true,
+            "note": "100 ml, 5 % — für Chicken-mu"
+          },
+          {
+            "ingredient": "sesamoel",
+            "name": "Sesamöl, geröstet",
+            "need": {
+              "text": "2½ TL",
+              "value": 2.5,
+              "max": 2.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "2½ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "sesam",
+            "name": "Sesam, geröstet",
+            "need": {
+              "text": "2 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "2 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "weizenmehl",
+            "name": "Weizenmehl",
+            "need": {
+              "text": "60 g",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "60 g",
+            "inStock": false,
+            "buy": {
+              "text": "Type 405"
+            },
+            "pantry": true,
+            "note": "60 g"
+          },
+          {
+            "ingredient": "backpulver",
+            "name": "Backpulver",
+            "need": {
+              "text": "1½ TL",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1½ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "zucker",
+            "name": "Zucker",
+            "need": {
+              "text": "50 g + 1 TL",
+              "value": 50.0,
+              "max": 50.0,
+              "unit": "g",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "50 g + 1 TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "\\~55 g, fast alles in der Pickle-Lake"
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "2¾ TL + 12 g + 1 Prise",
+              "value": 2.75,
+              "max": 2.75,
+              "unit": "TL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "12 g",
+                  "value": 12.0,
+                  "max": 12.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                {
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "2¾ TL + 12 g + 1 Prise",
+            "inStock": false,
+            "pantry": true,
+            "note": "\\~30 g gesamt"
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Pfeffer, schwarz",
+            "need": {
+              "text": "¼ TL",
+              "value": 0.25,
+              "max": 0.25,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "¼ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "240 ml",
+              "value": 240.0,
+              "max": 240.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "240 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}
