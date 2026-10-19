@@ -585,7 +585,7 @@
                 "max": "PT30M",
                 "source": "25–30 Min."
               },
-              "text": "Locker abgedeckt ruhen lassen — Pflicht, sonst läuft der Saft beim Zupfen aus. Währenddessen Salat. Vor dem Servieren Jus abschmecken: nach 4 Std. kippt die Säure ins Milde — meist braucht es einen Spritzer frische Zitrone.",
+              "text": "Locker abgedeckt ruhen lassen — Pflicht, sonst läuft der Saft beim Zupfen aus. Währenddessen Salat. Vor dem Servieren Jus abschmecken: nach 4 Std. kippt die Säure ins Milde — ein Spritzer frische Zitrone reicht, erst wenig nehmen und probieren. Einreduzieren ist nicht nötig, das Päckchen liefert reichlich und konzentrierten Jus.",
               "action": "Locker abgedeckt ruhen lassen — Pflicht, sonst läuft der Saft beim Zupfen aus.",
               "events": [
                 {
@@ -865,7 +865,7 @@
       "type": "learnings",
       "title": "Learnings",
       "cooked": "10/2026",
-      "summary": "**Gekocht 10/2026.** Sehr lecker, hat wie geplant funktioniert. Statt einer großen Schulter gab es nur zwei Stücke à 1,2 kg (2,4 kg gesamt, über dem Plan von 1,8–2,2 kg) — die passten gerade so zusammen in den Bräter. Garzeit dafür nur \\~3 Std. bis 92 °C Kern statt der geplanten 4 Std.: kleinere Einzelstücke garen schneller, also bei geteiltem Fleisch ab 2,5 Std. messen (Hinweis in Schritt 5 ergänzt)."
+      "summary": "**Gekocht 10/2026.** Sehr lecker, hat wie geplant funktioniert. Statt einer großen Schulter gab es nur zwei Stücke à 1,2 kg (2,4 kg gesamt, über dem Plan von 1,8–2,2 kg) — die passten gerade so zusammen in den Bräter. Garzeit dafür nur \\~3 Std. bis 92 °C Kern statt der geplanten 4 Std.: kleinere Einzelstücke garen schneller, also bei geteiltem Fleisch ab 2,5 Std. messen (Hinweis in Schritt 5 ergänzt). Am Ende reichlich Jus im Bräter, der nicht einreduziert werden musste; Säure nur wenig nachgelegt."
     },
     {
       "type": "markdown",
@@ -878,8 +878,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-19T06:05:13Z",
-    "sourceHash": "cf6c46441f7e4e4c",
+    "generatedAt": "2026-10-19T06:10:18Z",
+    "sourceHash": "1f820c790706186d",
     "quantities": [
       {
         "ingredient": "rigani",

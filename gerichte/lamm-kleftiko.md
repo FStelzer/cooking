@@ -85,7 +85,7 @@ Null Arbeit: 160 °C, ganze Schulter/Keule \~4 Std. (Ziel: \~90–95 °C Kern). 
 Päckchen aufschneiden und aufklappen, Ofen auf 210 °C, Fleisch und Kartoffeln Farbe nehmen lassen. *(Feta-Fallback: jetzt Blöcke zugeben.)*
 
 **7. Ruhe & Finish (25–30 Min.)**
-Locker abgedeckt ruhen lassen — Pflicht, sonst läuft der Saft beim Zupfen aus. Währenddessen Salat. Vor dem Servieren Jus abschmecken: nach 4 Std. kippt die Säure ins Milde — meist braucht es einen Spritzer frische Zitrone.
+Locker abgedeckt ruhen lassen — Pflicht, sonst läuft der Saft beim Zupfen aus. Währenddessen Salat. Vor dem Servieren Jus abschmecken: nach 4 Std. kippt die Säure ins Milde — ein Spritzer frische Zitrone reicht, erst wenig nehmen und probieren. Einreduzieren ist nicht nötig, das Päckchen liefert reichlich und konzentrierten Jus.
 
 **8. Horiatiki-Salat (10 Min., parallel)**
 *nach Bräunen*
@@ -118,7 +118,7 @@ Aus \~2 kg mit Knochen bleiben realistisch 1–2 Portionen übrig: klassisch im 
 
 ## Learnings
 
-**Gekocht 10/2026.** Sehr lecker, hat wie geplant funktioniert. Statt einer großen Schulter gab es nur zwei Stücke à 1,2 kg (2,4 kg gesamt, über dem Plan von 1,8–2,2 kg) — die passten gerade so zusammen in den Bräter. Garzeit dafür nur \~3 Std. bis 92 °C Kern statt der geplanten 4 Std.: kleinere Einzelstücke garen schneller, also bei geteiltem Fleisch ab 2,5 Std. messen (Hinweis in Schritt 5 ergänzt).
+**Gekocht 10/2026.** Sehr lecker, hat wie geplant funktioniert. Statt einer großen Schulter gab es nur zwei Stücke à 1,2 kg (2,4 kg gesamt, über dem Plan von 1,8–2,2 kg) — die passten gerade so zusammen in den Bräter. Garzeit dafür nur \~3 Std. bis 92 °C Kern statt der geplanten 4 Std.: kleinere Einzelstücke garen schneller, also bei geteiltem Fleisch ab 2,5 Std. messen (Hinweis in Schritt 5 ergänzt). Am Ende reichlich Jus im Bräter, der nicht einreduziert werden musste; Säure nur wenig nachgelegt.
 
 ## Quellen & Entscheidungen
 
