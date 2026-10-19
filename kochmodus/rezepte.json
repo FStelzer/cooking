@@ -21,6 +21,13 @@
   "cooked": true
  },
  {
+  "path": "../gerichte/amatriciana.json",
+  "title": "Amatriciana — Guanciale, San-Marzano-Tomaten, Pecorino (3 Portionen)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": false
+ },
+ {
   "path": "../gerichte/bo-luc-lac.json",
   "title": "Bò lúc lắc — vietnamesisches „Shaking Beef\" mit Brunnenkresse-Salat (4 Portionen)",
   "group": "gerichte",
@@ -56,6 +63,27 @@
   "cooked": true
  },
  {
+  "path": "../gerichte/cacio-e-pepe.json",
+  "title": "Cacio e Pepe — Pecorino, Pfeffer, Nudelwasser (3 Portionen)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": false
+ },
+ {
+  "path": "../gerichte/carbonara.json",
+  "title": "Carbonara — Guanciale, Eigelb, Pecorino, Pfeffer (3 Portionen)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": false
+ },
+ {
+  "path": "../gerichte/char-siu.json",
+  "title": "Char Siu — kantonesisches BBQ-Schwein mit kalten Sesamnudeln (4 Portionen + Reste)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": false
+ },
+ {
   "path": "../gerichte/cochinita-pibil.json",
   "title": "Cochinita Pibil — Schweineschulter in Achiote-Orangen-Marinade (4 Portionen + Reste)",
   "group": "gerichte",
@@ -77,11 +105,25 @@
   "cooked": true
  },
  {
+  "path": "../gerichte/korean-fried-chicken.json",
+  "title": "Korean Fried Chicken — doppelt frittierte Keule & Flügel mit zwei Saucen (4 Portionen)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": false
+ },
+ {
   "path": "../gerichte/lamm-kleftiko.json",
   "title": "Lamm-Kleftiko — im Päckchen geschmortes Lamm mit Kartoffeln (4 Portionen + Reste)",
   "group": "gerichte",
   "wip": false,
   "cooked": true
+ },
+ {
+  "path": "../gerichte/massaman-curry.json",
+  "title": "Massaman Curry — Hähnchenkeule, Kartoffeln, Erdnüsse, Paste von Grund auf (4 Portionen)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": false
  },
  {
   "path": "../gerichte/mezze-libanesisch.json",
@@ -117,6 +159,13 @@
   "group": "gerichte",
   "wip": false,
   "cooked": true
+ },
+ {
+  "path": "../gerichte/schweinebraten-dunkelbier.json",
+  "title": "Schweinebraten mit Dunkelbiersauce — bayerischer Krustenbraten aus der Schulter mit Knödeln und warmem Speck-Krautsalat (4 Portionen + Reste)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": false
  },
  {
   "path": "../gerichte/shawarma-libanesisch.json",
