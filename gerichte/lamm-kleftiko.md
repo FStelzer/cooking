@@ -78,7 +78,7 @@ Ofen auf 160 °C Ober-/Unterhitze. Bräter mit Doppellage Backpapier kreuzweise 
 
 **5. Garen (4 Std., passiv)**
 *Ofen 160 °C · fertig wenn sich das Fleisch mühelos löst*
-Null Arbeit: 160 °C, ganze Schulter/Keule \~4 Std. (Ziel: \~90–95 °C Kern). Entscheidend ist der **Gabeltest**: löst sich das Fleisch nicht mühelos, wieder verschließen und +30 Min. — im Zweifel länger, nie heißer.
+Null Arbeit: 160 °C, ganze Schulter/Keule \~4 Std. (Ziel: \~90–95 °C Kern). Entscheidend ist der **Gabeltest**: löst sich das Fleisch nicht mühelos, wieder verschließen und +30 Min. — im Zweifel länger, nie heißer. Zwei kleinere Stücke (2× 1,2 kg) statt einer Schulter garen schneller: \~3 Std. bis 92 °C Kern (10/2026) — dann ab 2,5 Std. messen.
 
 **6. Bräunen (15–20 Min.)**
 *Ofen 210 °C*
@@ -115,6 +115,10 @@ Nichts anzupassen — keine Schärfe im Gericht, und die Oliven im Salat sind ei
 ## Reste
 
 Aus \~2 kg mit Knochen bleiben realistisch 1–2 Portionen übrig: klassisch im warmen Fladenbrot mit etwas Salat (Rick-Stein-Empfehlung), oder mit den restlichen Jus-Kartoffeln aufgebraten.
+
+## Learnings
+
+**Gekocht 10/2026.** Sehr lecker, hat wie geplant funktioniert. Statt einer großen Schulter gab es nur zwei Stücke à 1,2 kg (2,4 kg gesamt, über dem Plan von 1,8–2,2 kg) — die passten gerade so zusammen in den Bräter. Garzeit dafür nur \~3 Std. bis 92 °C Kern statt der geplanten 4 Std.: kleinere Einzelstücke garen schneller, also bei geteiltem Fleisch ab 2,5 Std. messen (Hinweis in Schritt 5 ergänzt).
 
 ## Quellen & Entscheidungen
 

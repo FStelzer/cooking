@@ -480,7 +480,7 @@
                 "source": "4 Std."
               },
               "attention": "passive",
-              "text": "Null Arbeit: 160 °C, ganze Schulter/Keule \\~4 Std. (Ziel: \\~90–95 °C Kern). Entscheidend ist der **Gabeltest**: löst sich das Fleisch nicht mühelos, wieder verschließen und +30 Min. — im Zweifel länger, nie heißer.",
+              "text": "Null Arbeit: 160 °C, ganze Schulter/Keule \\~4 Std. (Ziel: \\~90–95 °C Kern). Entscheidend ist der **Gabeltest**: löst sich das Fleisch nicht mühelos, wieder verschließen und +30 Min. — im Zweifel länger, nie heißer. Zwei kleinere Stücke (2× 1,2 kg) statt einer Schulter garen schneller: \\~3 Std. bis 92 °C Kern (10/2026) — dann ab 2,5 Std. messen.",
               "action": "Null Arbeit: 160 °C, ganze Schulter/Keule \\~4 Std.",
               "timers": [
                 {
@@ -497,6 +497,21 @@
                     "typical": "PT30M"
                   },
                   "text": "30 Min."
+                },
+                {
+                  "label": "Garen",
+                  "duration": {
+                    "typical": "PT3H",
+                    "estimated": true
+                  },
+                  "text": "\\~3 Std."
+                },
+                {
+                  "label": "Garen",
+                  "duration": {
+                    "typical": "PT2H30M"
+                  },
+                  "text": "2,5 Std."
                 }
               ],
               "temps": [
@@ -510,6 +525,11 @@
                   "text": "90–95 °C",
                   "min": 90,
                   "max": 95
+                },
+                {
+                  "kind": "kern",
+                  "text": "92 °C",
+                  "value": 92
                 }
               ],
               "ingredients": [],
@@ -842,6 +862,12 @@
       "markdown": "Aus \\~2 kg mit Knochen bleiben realistisch 1–2 Portionen übrig: klassisch im warmen Fladenbrot mit etwas Salat (Rick-Stein-Empfehlung), oder mit den restlichen Jus-Kartoffeln aufgebraten."
     },
     {
+      "type": "learnings",
+      "title": "Learnings",
+      "cooked": "10/2026",
+      "summary": "**Gekocht 10/2026.** Sehr lecker, hat wie geplant funktioniert. Statt einer großen Schulter gab es nur zwei Stücke à 1,2 kg (2,4 kg gesamt, über dem Plan von 1,8–2,2 kg) — die passten gerade so zusammen in den Bräter. Garzeit dafür nur \\~3 Std. bis 92 °C Kern statt der geplanten 4 Std.: kleinere Einzelstücke garen schneller, also bei geteiltem Fleisch ab 2,5 Std. messen (Hinweis in Schritt 5 ergänzt)."
+    },
+    {
       "type": "markdown",
       "title": "Quellen & Entscheidungen",
       "level": 2,
@@ -852,8 +878,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:17:54Z",
-    "sourceHash": "2a010d8e6ba5c787",
+    "generatedAt": "2026-10-19T06:05:13Z",
+    "sourceHash": "cf6c46441f7e4e4c",
     "quantities": [
       {
         "ingredient": "rigani",

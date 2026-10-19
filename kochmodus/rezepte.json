@@ -81,7 +81,7 @@
   "title": "Lamm-Kleftiko — im Päckchen geschmortes Lamm mit Kartoffeln (4 Portionen + Reste)",
   "group": "gerichte",
   "wip": false,
-  "cooked": false
+  "cooked": true
  },
  {
   "path": "../gerichte/mezze-libanesisch.json",

@@ -16,7 +16,7 @@
   - [✅ Cochinita Pibil — Schweineschulter in Achiote-Orangen-Marinade (4 Portionen + Reste)](/gerichte/cochinita-pibil.md)
   - [Hummerbisque (4 Portionen als Vorspeise)](/gerichte/hummerbisque.md)
   - [✅ İmam bayıldı — in Olivenöl geschmorte gefüllte Auberginen (4 Portionen)](/gerichte/imam-bayildi.md)
-  - [Lamm-Kleftiko — im Päckchen geschmortes Lamm mit Kartoffeln (4 Portionen + Reste)](/gerichte/lamm-kleftiko.md)
+  - [✅ Lamm-Kleftiko — im Päckchen geschmortes Lamm mit Kartoffeln (4 Portionen + Reste)](/gerichte/lamm-kleftiko.md)
   - [Libanesische Mezze — Hummus, Moutabal, Muhammara, Labneh, Fatayer & Sambousek (4 Personen als Hauptmahlzeit)](/gerichte/mezze-libanesisch.md)
   - [✅ Geschmorter Oktopus, griechische Art (4 Portionen)](/gerichte/oktopus-geschmort.md)
   - [✅ Paneer-Projekt — selbstgemachter Paneer mit Matar & Palak (4 Portionen, 2 Saucen)](/gerichte/paneer-projekt.md)

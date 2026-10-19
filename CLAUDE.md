@@ -359,6 +359,9 @@ Hand editieren, Learnings gehören in die Rezeptdatei.
 - ✅ **Cochinita Pibil — Schweineschulter in Achiote-Orangen-Marinade (4 Portionen + Reste)** (siehe `gerichte/cochinita-pibil.md`)
   **Gekocht 10/2026.** Wirklich sehr lecker — eine Art mexikanisches Pulled Pork; Fleisch und Zwiebeln waren einfach und haben auf Anhieb funktioniert. Frische Tortillas ebenfalls sehr lecker, aber mit dem Topfboden gepresst zu dick: Sie brauchten länger und brannten in Edelstahl wie beschichtet punktuell an (Pfanne danach schwer zu reinigen), zügig und gut war schwer hinzubekommen. Fix im Rezept: kleinere Kugeln, Tortillapresse, mittlere Hitze, zwei Pfannen parallel, Pfanne zwischendurch auswischen. Salsa tamulada viel besser als jede gekaufte scharfe Sauce, aber extrem scharf („pica pica“) trotz entfernter Kerne → Chiltomate als milde zweite Salsa ergänzt.
 
+- ✅ **Lamm-Kleftiko — im Päckchen geschmortes Lamm mit Kartoffeln (4 Portionen + Reste)** (siehe `gerichte/lamm-kleftiko.md`)
+  **Gekocht 10/2026.** Sehr lecker, hat wie geplant funktioniert. Statt einer großen Schulter gab es nur zwei Stücke à 1,2 kg (2,4 kg gesamt, über dem Plan von 1,8–2,2 kg) — die passten gerade so zusammen in den Bräter. Garzeit dafür nur \~3 Std. bis 92 °C Kern statt der geplanten 4 Std.: kleinere Einzelstücke garen schneller, also bei geteiltem Fleisch ab 2,5 Std. messen (Hinweis in Schritt 5 ergänzt).
+
 <!-- learnings:end -->
 
 ## Ideen für nächste Projekte
