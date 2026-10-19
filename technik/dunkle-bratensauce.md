@@ -6,6 +6,8 @@
 
 Die fast schwarze Sauce, die in bayerischen Biergärten zu Semmelknödel und Spätzle
 kommt. Referenz: Biergarten-Besuch 08/2026 — Kind war begeistert.
+Als ganzes Gericht mit Krustenbraten: [Schweinebraten mit Dunkelbiersauce](/gerichte/schweinebraten-dunkelbier.md)
+— dort entsteht die Sauce direkt im Bräter nach den Regeln dieser Seite.
 
 Zwei Wege zum selben Ergebnis: ein **Vorrats-Fond** (einmal Aufwand, danach 10 Minuten
 pro Mahlzeit) und eine **Schnellvariante mit Gastro-Konzentrat** (25 Minuten, ohne

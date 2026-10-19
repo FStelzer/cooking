@@ -10,7 +10,7 @@
     "value": 400.0,
     "unit": "ml"
   },
-  "intro": "*Aktive Zeit \\~1,5 Std. (Vorrats-Fond) bzw. 25 Min. (Schnell), gesamt \\~2 Tage bzw. 25 Min. Equipment: 14-L-Topf, 2 Backbleche, weite Pfanne oder Sauteuse, feines Sieb + Passiertuch, Gefrierformen.*\n\n*Varianten: Weg = Vorrats-Fond | Schnell*\n\nDie fast schwarze Sauce, die in bayerischen Biergärten zu Semmelknödel und Spätzle\nkommt. Referenz: Biergarten-Besuch 08/2026 — Kind war begeistert.\n\nZwei Wege zum selben Ergebnis: ein **Vorrats-Fond** (einmal Aufwand, danach 10 Minuten\npro Mahlzeit) und eine **Schnellvariante mit Gastro-Konzentrat** (25 Minuten, ohne\nVorbereitung). Beide enden im selben Finish-Schritt.\n\n---",
+  "intro": "*Aktive Zeit \\~1,5 Std. (Vorrats-Fond) bzw. 25 Min. (Schnell), gesamt \\~2 Tage bzw. 25 Min. Equipment: 14-L-Topf, 2 Backbleche, weite Pfanne oder Sauteuse, feines Sieb + Passiertuch, Gefrierformen.*\n\n*Varianten: Weg = Vorrats-Fond | Schnell*\n\nDie fast schwarze Sauce, die in bayerischen Biergärten zu Semmelknödel und Spätzle\nkommt. Referenz: Biergarten-Besuch 08/2026 — Kind war begeistert.\nAls ganzes Gericht mit Krustenbraten: [Schweinebraten mit Dunkelbiersauce](/gerichte/schweinebraten-dunkelbier.md)\n— dort entsteht die Sauce direkt im Bräter nach den Regeln dieser Seite.\n\nZwei Wege zum selben Ergebnis: ein **Vorrats-Fond** (einmal Aufwand, danach 10 Minuten\npro Mahlzeit) und eine **Schnellvariante mit Gastro-Konzentrat** (25 Minuten, ohne\nVorbereitung). Beide enden im selben Finish-Schritt.\n\n---",
   "times": {
     "text": "Aktive Zeit ~1,5 Std. (Vorrats-Fond) bzw. 25 Min. (Schnell), gesamt ~2 Tage",
     "active": {
@@ -1302,8 +1302,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:17:54Z",
-    "sourceHash": "f3e2c50981e9a65f",
+    "generatedAt": "2026-10-19T06:40:25Z",
+    "sourceHash": "c501cfbcd4704ab0",
     "select": {
       "weg": "vorrats-fond"
     },

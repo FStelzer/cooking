@@ -1,0 +1,3743 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/schweinebraten-dunkelbier",
+  "kind": "dish",
+  "title": "Schweinebraten mit Dunkelbiersauce — bayerischer Krustenbraten aus der Schulter mit Knödeln und warmem Speck-Krautsalat (4 Portionen + Reste)",
+  "status": "done",
+  "yields": {
+    "text": "4 Portionen + Reste",
+    "value": 4.0,
+    "unit": "Portionen"
+  },
+  "intro": "*Aktive Zeit \\~2 Std. (Vortag \\~45 Min., Kochtag \\~1,5 Std.), gesamt über Nacht + \\~5 Std. (davon \\~3 Std. Ofen ohne Arbeit). Equipment: Bräter, Fleischthermometer (am besten mit Kabelfühler), Cuttermesser mit frischer Klinge, Backblech mit Gitter, Alufolie, Küchenbrenner, 6-L-Topf, Mandoline, feine Kartoffelreibe, Kartoffelpresse, sauberes Küchentuch, feines Sieb, Pfanne.*\n\n*Varianten: Knödel = Kartoffelknödel | Semmelknödel*\n\nDer Sonntagsbraten aus dem Wirtshaus: Schweineschulter mit Schwarte, am Vortag mit\nder Schwarte nach unten im Wasser blanchiert, fein eingeschnitten, gesalzen und über\nNacht offen getrocknet; am Kochtag auf Knochen und Röstgemüse bei 160 °C bis 78–80 °C\nKern gebraten, dann bei voller Oberhitze aufgepoppt. Die Sauce entsteht im selben\nBräter nach den Regeln der [Dunklen Bratensauce](/technik/dunkle-bratensauce.md):\nFarbe aus der Röstung, Münchner Dunkel in kleinen Schüben fast trocken, Kümmel und\nMajoran erst am Ende, **nicht gebunden**. Dazu Kartoffelknödel (Semmelknödel als\nVariante) und ein lauwarmer Krautsalat mit Speck — die Säure ist der Gegenpol zu\nKruste und Bratenfett.\n\n**Die eine Fehlerquelle ist die Schwarte.** Bleibt sie zäh-ledrig statt blasig, war sie\nnass, ungesalzen, schief oder ins Fleisch eingeschnitten. Jeder Schritt unten, der\nnach Umständlichkeit aussieht (Vortag, offen trocknen, nicht begießen, Fleisch auf das\nGitter, Schwarte waagerecht unterlegen), zielt auf genau diesen Punkt.",
+  "times": {
+    "text": "Aktive Zeit ~2 Std. (Vortag ~45 Min., Kochtag ~1,5 Std.), gesamt über Nacht + ~5 Std.",
+    "active": {
+      "typical": "PT2H",
+      "source": "2 Std."
+    },
+    "total": {
+      "min": "PT8H",
+      "max": "PT14H",
+      "source": "über Nacht"
+    }
+  },
+  "equipment": [
+    "Bräter",
+    "Fleischthermometer (am besten mit Kabelfühler)",
+    "Cuttermesser mit frischer Klinge",
+    "Backblech mit Gitter",
+    "Alufolie",
+    "Küchenbrenner",
+    "6-L-Topf",
+    "Mandoline",
+    "feine Kartoffelreibe",
+    "Kartoffelpresse",
+    "sauberes Küchentuch",
+    "feines Sieb",
+    "Pfanne"
+  ],
+  "variants": [
+    {
+      "id": "knoedel",
+      "label": "Knödel",
+      "choices": [
+        {
+          "id": "kartoffelknoedel",
+          "label": "Kartoffelknödel"
+        },
+        {
+          "id": "semmelknoedel",
+          "label": "Semmelknödel"
+        }
+      ],
+      "default": "kartoffelknoedel"
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "schweineschulter",
+      "name": "Schweineschulter mit Schwarte, ohne Knochen",
+      "store": "Selgros",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "1,8–2,2 kg"
+      },
+      "note": "flach, nicht gerollt; Fallback: REWE-Center-Theke vorbestellen"
+    },
+    {
+      "id": "schweineknochen",
+      "name": "Schweineknochen, gesägt, fleischig",
+      "store": "Selgros",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "1 kg"
+      },
+      "optional": true,
+      "note": "Saucenkörper; Alternative: Fond-Reduktion aus dem Vorrat"
+    },
+    {
+      "id": "kartoffeln",
+      "name": "Kartoffeln, mehligkochend",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2 kg"
+      },
+      "only": [
+        "knoedel=kartoffelknoedel"
+      ],
+      "note": "Bedarf 1,5 kg"
+    },
+    {
+      "id": "weisskohl",
+      "name": "Weißkohl, klein",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "ca. 1 kg"
+    },
+    {
+      "id": "zwiebeln",
+      "name": "Zwiebeln",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "4"
+      },
+      "note": "2 Röstbasis, 1 Dressing, 1 Semmelknödel"
+    },
+    {
+      "id": "karotte",
+      "name": "Karotte, groß",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "ca. 150 g"
+    },
+    {
+      "id": "knollensellerie",
+      "name": "Knollensellerie, klein",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "ca. 150 g nötig"
+    },
+    {
+      "id": "knoblauch",
+      "name": "Knoblauch",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Knolle"
+      }
+    },
+    {
+      "id": "petersilie",
+      "name": "Petersilie, glatt",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "½ Bund"
+      },
+      "only": [
+        "knoedel=semmelknoedel"
+      ]
+    },
+    {
+      "id": "speck",
+      "name": "Speck, durchwachsen, geräuchert, am Stück",
+      "store": "REWE Center",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "120 g"
+      }
+    },
+    {
+      "id": "milch",
+      "name": "Milch",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "250 ml"
+      },
+      "only": [
+        "knoedel=semmelknoedel"
+      ]
+    },
+    {
+      "id": "eier",
+      "name": "Eier",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "3"
+      },
+      "only": [
+        "knoedel=semmelknoedel"
+      ]
+    },
+    {
+      "id": "knoedelbrot",
+      "name": "Knödelbrot",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "300 g"
+      },
+      "only": [
+        "knoedel=semmelknoedel"
+      ],
+      "note": "oder 5–6 Semmeln vom Vortag, selbst gewürfelt"
+    },
+    {
+      "id": "toastbrot",
+      "name": "Scheibe Toastbrot",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1"
+      },
+      "optional": true,
+      "only": [
+        "knoedel=kartoffelknoedel"
+      ],
+      "note": "Croutons für den Knödelkern"
+    },
+    {
+      "id": "bier",
+      "name": "Bier",
+      "store": "REWE Center",
+      "group": "Getränke",
+      "buy": {
+        "text": "0,5 l"
+      },
+      "note": "Münchner Dunkel; Schwangerschaft: alkoholfreies Dunkel, siehe Beschaffung; Bedarf 250 ml"
+    },
+    {
+      "id": "fond-reduktion",
+      "name": "Mulde Fond-Reduktion",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1"
+      },
+      "optional": true,
+      "pantry": true,
+      "note": "aus dem Vorrats-Fond der Bratensauce, 60–75 ml"
+    },
+    {
+      "id": "butterschmalz",
+      "name": "Butterschmalz",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "20 g"
+    },
+    {
+      "id": "butter",
+      "name": "Butter",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "\\~50 g"
+    },
+    {
+      "id": "rapsoel",
+      "name": "Rapsöl",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "tomatenmark",
+      "name": "Tomatenmark",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "weissweinessig",
+      "name": "Weißweinessig",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "\\~65 ml"
+    },
+    {
+      "id": "speisestaerke",
+      "name": "Speisestärke",
+      "store": "Vorrat",
+      "pantry": true,
+      "only": [
+        "knoedel=kartoffelknoedel"
+      ]
+    },
+    {
+      "id": "zucker",
+      "name": "Zucker",
+      "store": "Vorrat",
+      "optional": true,
+      "pantry": true,
+      "note": "1 TL fürs Dressing"
+    },
+    {
+      "id": "meersalz",
+      "name": "Meersalz, grob",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "für die Schwarte"
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "pfeffer",
+      "name": "Pfeffer",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "kuemmel",
+      "name": "Kümmel, ganz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "majoran",
+      "name": "Majoran, getrocknet",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "lorbeerblaetter",
+      "name": "Lorbeerblätter",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "muskatnuss",
+      "name": "Muskatnuss",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Schweineschulter mit Schwarte, ohne Knochen, 1,8–2,2 kg, flach und nicht gerollt:**\n  Gerollte oder gebundene Stücke haben eine gewölbte Schwarte, die nie gleichmäßig\n  aufpoppt. Plan A ist **Selgros** (Frischfleisch, Schulter mit Schwarte ist dort\n  Standardware, Knochen gibt es im selben Trip). REWE Center hat Schulter in der\n  Selbstbedienung erfahrungsgemäß **ohne** Schwarte (siehe Cochinita) — an der\n  Bedientheke ein paar Tage vorher **„Krustenbraten aus der Schulter“ vorbestellen**,\n  aber nicht fest damit rechnen. Schwarte beim Kauf prüfen: unverletzt, ohne tiefe\n  Schnitte ins Fleisch. Vorgeritzte Schwarte ist okay, wenn die Schnitte im Fett enden.\n  Vakuumware ist nasser, umso wichtiger ist das Trocknen über Nacht.\n- **Schweineknochen (optional, Selgros):** 1 kg fleischige, gesägte Knochen geben der\n  Bratensauce Körper und Gelatine. Ohne Selgros-Trip: eine Mulde Fond-Reduktion aus\n  dem [Vorrats-Fond](/technik/dunkle-bratensauce.md) übernimmt den Job. Ohne beides\n  wird die Sauce dünner, aber nicht schlecht.\n- **Bier — Münchner Dunkel, kein Schwarzbier** (zu röstig, kippt ins Bittere; siehe\n  Bratensauce). Mit Alkohol: Augustiner Dunkel, Ayinger Altbairisch Dunkel, König\n  Ludwig Dunkel (REWE Center). **In der Schwangerschaft: alkoholfreies Dunkel**, z. B.\n  Lammsbräu Bio Dunkel alkoholfrei. Verfügbarkeit im REWE Center unsicher —\n  Getränkemarkt, Bio-Markt oder online; eine dunkle Weiße (alkoholfrei) ist die\n  zweitbeste Wahl, sie liefert weniger Röstmalz. **Kein Malzbier** — unvergoren, viel\n  Zucker, schmeckt eingekocht nach Sirup.\n- **Speck:** durchwachsener, geräucherter Bauchspeck am Stück (REWE), selbst würfeln —\n  die fertigen Würfel sind oft nass und braten nicht knusprig.\n- **Kartoffeln mehligkochend** (Knödel brauchen die Stärke; festkochende zerfallen\n  nicht, binden aber auch nicht).",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "markdown",
+      "title": "Vortag",
+      "level": "bold",
+      "markdown": "**Vortag:** Schwarte vorbereiten, Knödel-Grundlage. \\~45 Min. aktiv."
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Schweinebraten mit Dunkelbiersauce — bayerischer Krustenbraten aus der Schulter mit Knödeln und warmem Speck-Krautsalat (4 Portionen + Reste)",
+          "steps": [
+            {
+              "id": "schwarte-blanchieren",
+              "label": "1",
+              "heading": "**1. Schwarte blanchieren (15 Min.)**",
+              "title": "Schwarte blanchieren",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "Im Bräter auf der gekoppelten Bräterzone ca. 1 l Wasser (2 cm hoch) aufkochen und die Schweineschulter (1,8–2,2 kg) mit der **Schwarte nach unten** hineinlegen; 10 Min. leise köcheln lassen, nur die Schwarte steht im Wasser. Herausnehmen, Wasser weggießen, Schwarte mit Küchenpapier trocken tupfen und 5 Min. abdampfen lassen. *Die Hitze zieht die Schwarte zusammen und macht sie weich — danach lässt sie sich sauber und gleichmäßig tief einschneiden, roh rutscht die Klinge.*\n> **Vorher:** Borsten mit dem Küchenbrenner abflämmen oder mit einem Einwegrasierer abnehmen.\n> **Sicherheit:** Nur die Schwarte wird heiß, der Fleischkern bleibt kalt. Trotzdem zügig weiterarbeiten und das Stück spätestens 30 Min. nach dem Blanchieren in den Kühlschrank stellen.",
+              "action": "Im Bräter auf der gekoppelten Bräterzone ca.",
+              "limits": [
+                "Schwarte nach unten"
+              ],
+              "timers": [
+                {
+                  "label": "Schwarte blanchieren",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                },
+                {
+                  "label": "Schwarte blanchieren",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "1 l Wasser",
+                    "value": 1.0,
+                    "unit": "l"
+                  }
+                },
+                {
+                  "ref": "schweineschulter",
+                  "amount": {
+                    "text": "1,8–2,2 kg",
+                    "value": 1.8,
+                    "unit": "kg",
+                    "max": 2.2
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "schwarte-einschneiden",
+              "label": "2",
+              "heading": "**2. Schwarte einschneiden (15 Min.)**",
+              "title": "Schwarte einschneiden",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "Schwarte mit dem Cuttermesser (frische Klinge) im Abstand von 1 cm rautenförmig oder in parallelen Streifen einschneiden: durch die Schwarte bis ins Fett, ca. 5 mm tief, **nie ins Fleisch**. *Schnitte bis ins Fleisch lassen beim Braten Fleischsaft auf die Schwarte steigen — dort entstehen gummiartige Stellen, die nicht aufpoppen.* Engere Schnitte geben feinere, leichter zu essende Kruste; 1 cm ist auch für das Kind gut kaubar.",
+              "action": "Schwarte mit dem Cuttermesser (frische Klinge) im Abstand von 1 cm rautenförmig oder in parallelen Streifen einschneiden: durch die Schwarte bis ins Fett, ca.",
+              "limits": [
+                "nie ins Fleisch"
+              ],
+              "ingredients": [],
+              "meta": "*nach Schwarte blanchieren*",
+              "attention": "active",
+              "after": [
+                "step:schwarte-blanchieren"
+              ]
+            },
+            {
+              "id": "salzen-und-trocknen",
+              "label": "3",
+              "heading": "**3. Salzen und trocknen (über Nacht, passiv)**",
+              "title": "Salzen und trocknen",
+              "duration": {
+                "min": "PT8H",
+                "max": "PT14H",
+                "source": "über Nacht"
+              },
+              "attention": "passive",
+              "text": "Fleischseiten und Unterseite mit 18 g Salz (1 gestrichener EL) einreiben, dann 10 g grobes Meersalz (2 TL) in die Schnitte der Schwarte reiben — **jede Stelle**, auch die Ränder. Fleisch mit der Schwarte nach oben auf ein Gitter über einem Teller setzen und **unbedeckt** über Nacht in den Kühlschrank stellen. *Ungesalzene Flecken bleiben flach und hart; die kalte, trockene Kühlschrankluft entzieht der Schwarte die Feuchtigkeit vom Blanchieren — trockene Schwarte poppt auf, nasse dämpft.*",
+              "action": "Fleischseiten und Unterseite mit 18 g Salz (1 gestrichener EL) einreiben, dann 10 g grobes Meersalz (2 TL) in die Schnitte der Schwarte reiben — **jede Stelle**, auch die Ränder.",
+              "limits": [
+                "jede Stelle"
+              ],
+              "why": "Ungesalzene Flecken bleiben flach und hart; die kalte, trockene Kühlschrankluft entzieht der Schwarte die Feuchtigkeit vom Blanchieren — trockene Schwarte poppt auf, nasse dämpft.",
+              "ingredients": [
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "18 g Salz",
+                    "value": 18.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "meersalz",
+                  "amount": {
+                    "text": "10 g grobes Meersalz",
+                    "value": 10.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nach Schwarte einschneiden*",
+              "timers": [
+                {
+                  "label": "Salzen und trocknen",
+                  "duration": {
+                    "min": "PT8H",
+                    "max": "PT14H"
+                  },
+                  "text": "über Nacht"
+                }
+              ],
+              "after": [
+                "step:schwarte-einschneiden"
+              ]
+            },
+            {
+              "id": "pellkartoffeln",
+              "label": "4",
+              "heading": "**4. Pellkartoffeln (ca. 35 Min.)**",
+              "title": "Pellkartoffeln",
+              "duration": {
+                "typical": "PT35M",
+                "source": "ca. 35 Min.",
+                "estimated": true
+              },
+              "text": "500 g Kartoffeln (ähnlich groß) mit Schale in Salzwasser 25–30 Min. weich garen, abgießen, im Topf 2 Min. ausdampfen lassen, noch warm pellen und offen abkühlen lassen, dann zugedeckt kalt stellen. *Kalte Pellkartoffeln vom Vortag sind trockener und binden den Teig mit weniger Stärke.*",
+              "action": "500 g Kartoffeln (ähnlich groß) mit Schale in Salzwasser 25–30 Min. weich garen, abgießen, im Topf 2 Min. ausdampfen lassen, noch warm pellen und offen abkühlen lassen, dann zugedeckt kalt stellen.",
+              "why": "Kalte Pellkartoffeln vom Vortag sind trockener und binden den Teig mit weniger Stärke.",
+              "timers": [
+                {
+                  "label": "Pellkartoffeln",
+                  "duration": {
+                    "min": "PT25M",
+                    "max": "PT30M"
+                  },
+                  "text": "25–30 Min."
+                },
+                {
+                  "label": "Pellkartoffeln",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "kartoffeln",
+                  "amount": {
+                    "text": "500 g Kartoffeln",
+                    "value": 500.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nur Kartoffelknödel · jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "only": [
+                "knoedel=kartoffelknoedel"
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "knoedelbrot",
+              "label": "5",
+              "heading": "**5. Knödelbrot (10 Min.)**",
+              "title": "Knödelbrot",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "300 g Knödelbrot in einer großen Schüssel locker ausbreiten und offen über Nacht stehen lassen. Wer Semmeln vom Vortag nimmt: in dünne Scheiben oder 1-cm-Würfel schneiden, ebenso trocknen. *Trockenes Brot saugt die Milch gleichmäßig auf, der Knödel wird locker statt pappig.*",
+              "action": "300 g Knödelbrot in einer großen Schüssel locker ausbreiten und offen über Nacht stehen lassen.",
+              "why": "Trockenes Brot saugt die Milch gleichmäßig auf, der Knödel wird locker statt pappig.",
+              "ingredients": [
+                {
+                  "ref": "knoedelbrot",
+                  "amount": {
+                    "text": "300 g Knödelbrot",
+                    "value": 300.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nur Semmelknödel · jederzeit*",
+              "only": [
+                "knoedel=semmelknoedel"
+              ],
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "wuerzen",
+              "label": "6",
+              "heading": "**6. Würzen (10 Min.)**",
+              "title": "Würzen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Schweineschulter 1 Std. vor dem Braten aus dem Kühlschrank nehmen. Nur die Fleischseiten (nicht die Schwarte) mit 2 Knoblauchzehen (gepresst), 1 TL Kümmel (gemörsert) und reichlich Pfeffer einreiben. Die Schwarte bleibt trocken — nicht abwischen, nicht befeuchten.",
+              "action": "Schweineschulter 1 Std. vor dem Braten aus dem Kühlschrank nehmen.",
+              "ingredients": [
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "2 Knoblauchzehen",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "kuemmel",
+                  "amount": {
+                    "text": "1 TL Kümmel",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "reichlich Pfeffer"
+                  }
+                }
+              ],
+              "meta": "*nach Salzen und trocknen*",
+              "attention": "active",
+              "after": [
+                "step:salzen-und-trocknen"
+              ]
+            },
+            {
+              "id": "roestbasis",
+              "label": "7",
+              "heading": "**7. Röstbasis (ca. 30 Min.)**",
+              "title": "Röstbasis",
+              "duration": {
+                "typical": "PT30M",
+                "source": "ca. 30 Min.",
+                "estimated": true
+              },
+              "text": "20 g Butterschmalz im Bräter auf der gekoppelten Bräterzone (Stufe ca. ⅔) erhitzen und 1 kg Schweineknochen einlagig 15–20 Min. rundum tief dunkelbraun rösten. 300 g Zwiebeln (2 Stück, mit Schale halbiert, Schnittfläche nach unten), 150 g Karotte und 150 g Knollensellerie (beides grob, 3–4 cm) sowie 2 Knoblauchzehen (angedrückt) dazugeben und 10 Min. weiterrösten, bis die Schnittflächen dunkelbraun sind. 15 g (1 EL) Tomatenmark unterrühren und 1 Min. mitrösten, bis es dunkel wird und nussig riecht. *Die Farbe der Sauce entsteht hier, nicht im Bier — lieber weiter rösten, als sich richtig anfühlt.*\n> **Ohne Knochen:** Gemüse direkt rösten, 12–15 Min.\n> **Induktion:** Nicht auf voller Stufe — Tomatenmark brennt in der Bodenmitte zuerst an. Regelmäßig umrühren.",
+              "action": "20 g Butterschmalz im Bräter auf der gekoppelten Bräterzone (Stufe ca. ⅔) erhitzen und 1 kg Schweineknochen einlagig 15–20 Min. rundum tief dunkelbraun rösten.",
+              "cues": [
+                "bis die Schnittflächen dunkelbraun sind",
+                "bis es dunkel wird und nussig riecht"
+              ],
+              "timers": [
+                {
+                  "label": "Röstbasis",
+                  "duration": {
+                    "min": "PT15M",
+                    "max": "PT20M"
+                  },
+                  "text": "15–20 Min."
+                },
+                {
+                  "label": "Röstbasis",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "butterschmalz",
+                  "amount": {
+                    "text": "20 g Butterschmalz",
+                    "value": 20.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "schweineknochen",
+                  "amount": {
+                    "text": "1 kg Schweineknochen",
+                    "value": 1.0,
+                    "unit": "kg"
+                  }
+                },
+                {
+                  "ref": "zwiebeln",
+                  "amount": {
+                    "text": "300 g Zwiebeln",
+                    "value": 300.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "karotte",
+                  "amount": {
+                    "text": "150 g Karotte",
+                    "value": 150.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "knollensellerie",
+                  "amount": {
+                    "text": "150 g Knollensellerie",
+                    "value": 150.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "2 Knoblauchzehen",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "tomatenmark",
+                  "amount": {
+                    "text": "15 g (1 EL) Tomatenmark",
+                    "value": 15.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "bier-einkochen",
+              "label": "8",
+              "heading": "**8. Bier einkochen (ca. 10 Min.)**",
+              "title": "Bier einkochen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "text": "3 × 50 ml Bier nacheinander angießen: jeweils den Bratensatz mit dem Holzspatel lösen und **fast trocken** einkochen, erst dann den nächsten Schub. Danach 400 ml Wasser angießen und einmal aufkochen. *Hopfenbitter konzentriert sich beim Reduzieren — drei kleine Schübe schlagen einen großen ([Bratensauce, vier Regeln](/technik/dunkle-bratensauce.md)).*",
+              "action": "3 × 50 ml Bier nacheinander angießen: jeweils den Bratensatz mit dem Holzspatel lösen und **fast trocken** einkochen, erst dann den nächsten Schub.",
+              "limits": [
+                "fast trocken"
+              ],
+              "why": "Hopfenbitter konzentriert sich beim Reduzieren — drei kleine Schübe schlagen einen großen ([Bratensauce, vier Regeln](/technik/dunkle-bratensauce.md)).",
+              "ingredients": [
+                {
+                  "ref": "bier",
+                  "amount": {
+                    "text": "50 ml Bier",
+                    "value": 50.0,
+                    "unit": "ml",
+                    "times": 3
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "400 ml Wasser",
+                    "value": 400.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*nach Röstbasis · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Bier einkochen",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "ca. 10 Min."
+                }
+              ],
+              "after": [
+                "step:roestbasis"
+              ]
+            },
+            {
+              "id": "braten",
+              "label": "9",
+              "heading": "**9. Braten (2,5–3 Std., passiv)**",
+              "title": "Braten",
+              "duration": {
+                "min": "PT2H30M",
+                "max": "PT3H",
+                "source": "2,5–3 Std."
+              },
+              "attention": "passive",
+              "text": "Ofen auf 160 °C Ober-/Unterhitze vorheizen. Schweineschulter mit der Schwarte nach oben auf Knochen und Gemüse setzen — die Schwarte muss **über** der Flüssigkeit liegen. Fühler des Fleischthermometers waagerecht von der Seite in die dickste Stelle stecken, Bräter offen auf die untere Schiene. Alle 45 Min. den Flüssigkeitsstand prüfen: ist der Boden fast trocken, 100–150 ml Wasser **seitlich** angießen. Fertig bei 78–80 °C Kern, das dauert bei 2 kg ca. 2,5–3 Std. *Die Schulter ist bei 75 °C sicher durch; 78–80 °C geben dem Bindegewebe der Schulter Zeit, weich zu werden, ohne dass das Fleisch trocken wird. Bei der Krustenphase steigt der Kern noch um 3–6 °C.*\n> **Nicht begießen:** Das traditionelle Übergießen der Schwarte mit Bratensaft oder Bier macht sie nass — genau das Gegenteil von dem, was der Vortag erreicht hat.\n> **Früher fertig?** Ofen auf 100 °C herunterschalten, der Braten hält so 30–45 Min. ohne weiter zu garen.",
+              "action": "Ofen auf 160 °C Ober-/Unterhitze vorheizen.",
+              "limits": [
+                "Früher fertig?"
+              ],
+              "timers": [
+                {
+                  "label": "Braten",
+                  "duration": {
+                    "typical": "PT45M"
+                  },
+                  "text": "45 Min."
+                },
+                {
+                  "label": "Braten",
+                  "duration": {
+                    "min": "PT2H30M",
+                    "max": "PT3H",
+                    "estimated": true
+                  },
+                  "text": "ca. 2,5–3 Std."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ofen",
+                  "text": "160 °C",
+                  "value": 160
+                },
+                {
+                  "kind": "kern",
+                  "text": "78–80 °C",
+                  "min": 78,
+                  "max": 80
+                },
+                {
+                  "kind": "ziel",
+                  "text": "75 °C",
+                  "value": 75
+                },
+                {
+                  "kind": "ziel",
+                  "text": "78–80 °C",
+                  "min": 78,
+                  "max": 80
+                },
+                {
+                  "kind": "kern",
+                  "text": "3–6 °C",
+                  "min": 3,
+                  "max": 6
+                },
+                {
+                  "kind": "ofen",
+                  "text": "100 °C",
+                  "value": 100
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "100–150 ml Wasser",
+                    "value": 100.0,
+                    "unit": "ml",
+                    "max": 150.0
+                  }
+                }
+              ],
+              "meta": "*nach Würzen, Bier einkochen · Ofen 160 °C · fertig bei 78–80 °C Kern*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 160
+                }
+              ],
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei 78–80 °C Kern",
+                "value": 78
+              },
+              "after": [
+                "step:wuerzen",
+                "step:bier-einkochen"
+              ]
+            },
+            {
+              "id": "kraut-hobeln",
+              "label": "10",
+              "heading": "**10. Kraut hobeln (15 Min.)**",
+              "title": "Kraut hobeln",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "1 Weißkohl (ca. 1 kg) vierteln, Strunk keilförmig herausschneiden und ca. 800 g quer in feinste Streifen hobeln (Mandoline oder Schneidscheibe des Durchlaufschnitzlers). Mit 1,5 TL Salz in einer großen Schüssel 2 Min. kräftig mit beiden Händen kneten, bis das Kraut weich wird und Saft zieht. Mindestens 20 Min. stehen lassen.",
+              "action": "1 Weißkohl (ca.",
+              "cues": [
+                "bis das Kraut weich wird und Saft zieht"
+              ],
+              "timers": [
+                {
+                  "label": "Kraut hobeln",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                },
+                {
+                  "label": "Kraut hobeln",
+                  "duration": {
+                    "typical": "PT20M"
+                  },
+                  "text": "20 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "weisskohl",
+                  "amount": {
+                    "text": "1 Weißkohl",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1,5 TL Salz",
+                    "value": 1.5,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "speck-dressing",
+              "label": "11",
+              "heading": "**11. Speck-Dressing (15 Min.)**",
+              "title": "Speck-Dressing",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "120 g Speck in 5-mm-Würfel schneiden und in einer Pfanne ohne Fett bei mittlerer Hitze ca. 8 Min. knusprig auslassen — **ganz durchbraten**. 1 Zwiebel (ca. 80 g, fein gewürfelt) und 1 TL Kümmel (ganz, grob gehackt) 2 Min. mitbraten. 60 ml Weißweinessig, 100 ml Wasser, 2 EL Rapsöl und optional 1 TL Zucker dazugeben, einmal aufkochen, kräftig pfeffern. Kraut leicht ausdrücken (Saft weggießen), das heiße Dressing samt Speck darübergießen, gut durchmischen und mindestens 30 Min. ziehen lassen; lauwarm servieren. *Heiß angegossen nimmt das Kraut das Dressing viel schneller auf als kalt — es wird weich, bleibt aber bissfest.*\n> **Abschmecken:** Vor dem Servieren probieren — er soll deutlich sauer sein, er muss gegen Kruste und Bratenfett ankommen. Fehlt Säure, 1 EL Weißweinessig nachlegen.",
+              "action": "120 g Speck in 5-mm-Würfel schneiden und in einer Pfanne ohne Fett bei mittlerer Hitze ca.",
+              "limits": [
+                "ganz durchbraten"
+              ],
+              "timers": [
+                {
+                  "label": "Speck-Dressing",
+                  "duration": {
+                    "typical": "PT8M",
+                    "estimated": true
+                  },
+                  "text": "ca. 8 Min."
+                },
+                {
+                  "label": "Speck-Dressing",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "speck",
+                  "amount": {
+                    "text": "120 g Speck",
+                    "value": 120.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "zwiebeln",
+                  "amount": {
+                    "text": "1 Zwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "kuemmel",
+                  "amount": {
+                    "text": "1 TL Kümmel",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "weissweinessig",
+                  "amount": {
+                    "text": "60 ml Weißweinessig",
+                    "value": 60.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "100 ml Wasser",
+                    "value": 100.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "rapsoel",
+                  "amount": {
+                    "text": "2 EL Rapsöl",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "1 TL Zucker",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*nach Kraut hobeln · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:kraut-hobeln"
+              ]
+            },
+            {
+              "id": "knoedelteig",
+              "label": "12",
+              "heading": "**12. Knödelteig (25 Min.)**",
+              "title": "Knödelteig",
+              "duration": {
+                "typical": "PT25M",
+                "source": "25 Min."
+              },
+              "text": "Die gepellten Kartoffeln vom Vortag durch die Kartoffelpresse in eine große Schüssel drücken. 1 kg Kartoffeln schälen, fein reiben und sofort portionsweise in einem Küchentuch über einer zweiten Schüssel **kräftig auspressen**. Das Kartoffelwasser 5 Min. stehen lassen, vorsichtig abgießen und die weiße Stärke am Boden zum Teig geben. Geriebene und gepresste Kartoffeln mit 2 TL Salz und 1 Prise Muskatnuss zügig verkneten; klebt der Teig an den Händen, 1–2 EL Speisestärke einarbeiten. Optional 1 Scheibe Toastbrot würfeln und in 15 g Butter goldbraun rösten. Mit nassen Händen 10 Knödel à ca. 110 g formen (je 3–4 Croutons in die Mitte), Oberfläche glatt und ohne Risse. *Rohe Kartoffelmasse wird grau, wenn sie steht — darum erst kurz vor dem Garen reiben und den Teig sofort verarbeiten; ein leichter Graustich ist nur optisch.*\n> **Probeknödel:** Einen Knödel zuerst garen. Zerfällt er, 1 EL Speisestärke mehr einkneten.",
+              "action": "Die gepellten Kartoffeln vom Vortag durch die Kartoffelpresse in eine große Schüssel drücken.",
+              "limits": [
+                "kräftig auspressen"
+              ],
+              "timers": [
+                {
+                  "label": "Knödelteig",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "kartoffeln",
+                  "amount": {
+                    "text": "1 kg Kartoffeln",
+                    "value": 1.0,
+                    "unit": "kg"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "2 TL Salz",
+                    "value": 2.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "muskatnuss",
+                  "amount": {
+                    "text": "1 Prise Muskatnuss",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                },
+                {
+                  "ref": "speisestaerke",
+                  "amount": {
+                    "text": "1–2 EL Speisestärke",
+                    "value": 1.0,
+                    "unit": "EL",
+                    "max": 2.0
+                  }
+                },
+                {
+                  "ref": "toastbrot",
+                  "amount": {
+                    "text": "1 Scheibe Toastbrot",
+                    "value": 1.0,
+                    "unit": "Scheibe"
+                  }
+                },
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "15 g Butter",
+                    "value": 15.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nur Kartoffelknödel · nach Pellkartoffeln*",
+              "only": [
+                "knoedel=kartoffelknoedel"
+              ],
+              "attention": "active",
+              "after": [
+                "step:pellkartoffeln"
+              ]
+            },
+            {
+              "id": "semmelknoedelteig",
+              "label": "13",
+              "heading": "**13. Semmelknödelteig (15 Min. + 15 Min. passiv)**",
+              "title": "Semmelknödelteig",
+              "duration": {
+                "typical": "PT30M",
+                "source": "15 Min. + 15 Min."
+              },
+              "attention": "passive",
+              "text": "20 g Butter in einer kleinen Pfanne zerlassen und 1 Zwiebel (ca. 80 g, fein gewürfelt) darin 5 Min. glasig dünsten. 250 ml Milch lauwarm erwärmen und über die 300 g Knödelbrot gießen, Zwiebel, 3 Eier, ½ Bund Petersilie (fein gehackt), 1 TL Salz und 1 Prise Muskatnuss dazugeben und mit den Händen locker vermengen — **nicht kneten**. 15 Min. durchziehen lassen, dann mit nassen Händen 8 Knödel formen und fest andrücken. *Gekneteter Teig wird zäh und dicht; nur so viel mischen, bis alles gebunden ist.*",
+              "action": "20 g Butter in einer kleinen Pfanne zerlassen und 1 Zwiebel (ca.",
+              "limits": [
+                "nicht kneten"
+              ],
+              "why": "Gekneteter Teig wird zäh und dicht; nur so viel mischen, bis alles gebunden ist.",
+              "timers": [
+                {
+                  "label": "Semmelknödelteig",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                },
+                {
+                  "label": "Semmelknödelteig",
+                  "duration": {
+                    "typical": "PT15M"
+                  },
+                  "text": "15 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "20 g Butter",
+                    "value": 20.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "zwiebeln",
+                  "amount": {
+                    "text": "1 Zwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "milch",
+                  "amount": {
+                    "text": "250 ml Milch",
+                    "value": 250.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "knoedelbrot",
+                  "amount": {
+                    "text": "300 g Knödelbrot",
+                    "value": 300.0,
+                    "unit": "g"
+                  },
+                  "reuse": true
+                },
+                {
+                  "ref": "eier",
+                  "amount": {
+                    "text": "3 Eier",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "petersilie",
+                  "amount": {
+                    "text": "½ Bund Petersilie",
+                    "value": 0.5,
+                    "unit": "Bund"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "muskatnuss",
+                  "amount": {
+                    "text": "1 Prise Muskatnuss",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                }
+              ],
+              "meta": "*nur Semmelknödel · nach Knödelbrot · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "only": [
+                "knoedel=semmelknoedel"
+              ],
+              "after": [
+                "step:knoedelbrot"
+              ]
+            },
+            {
+              "id": "kruste-aufpoppen",
+              "label": "14",
+              "heading": "**14. Kruste aufpoppen (15–25 Min.)**",
+              "title": "Kruste aufpoppen",
+              "duration": {
+                "min": "PT15M",
+                "max": "PT25M",
+                "source": "15–25 Min."
+              },
+              "text": "Schweineschulter aus dem Bräter auf das Gitter über dem Backblech setzen; den Bräter auf dem Herd lassen (Sauce). Schwarte trocken tupfen und das Fleisch mit zusammengeknüllter Alufolie so unterlegen, dass die Schwarte **waagerecht** liegt. 1 TL Rapsöl dünn aufpinseln und ½ TL Salz gleichmäßig aufstreuen. Ofen auf 240 °C Oberhitze (oder Grill auf mittlerer Stufe) hochschalten, Blech auf die mittlere Schiene und 15–25 Min. aufpoppen lassen, bis die ganze Schwarte blasig und hellbraun ist. **Ab Minute 10 alle 3–4 Min. schauen**, Blech bei ungleichmäßiger Farbe drehen; zu dunkle Stellen mit einem Stück Alufolie abdecken. *Schief liegende Schwarte bekommt oben zu viel und unten zu wenig Hitze — darum das Unterlegen.*\n> **Zäh gebliebene Stellen:** Mit dem Küchenbrenner aus 5–10 cm Abstand punktuell nacharbeiten, bis sie aufpoppen. Zu flach und hart insgesamt: Die Schwarte war nass oder ungesalzen — beim nächsten Mal länger offen trocknen.",
+              "action": "Schweineschulter aus dem Bräter auf das Gitter über dem Backblech setzen; den Bräter auf dem Herd lassen (Sauce).",
+              "limits": [
+                "Ab Minute 10 alle 3–4 Min. schauen"
+              ],
+              "cues": [
+                "bis die ganze Schwarte blasig und hellbraun ist",
+                "bis sie aufpoppen"
+              ],
+              "timers": [
+                {
+                  "label": "Kruste aufpoppen",
+                  "duration": {
+                    "min": "PT15M",
+                    "max": "PT25M"
+                  },
+                  "text": "15–25 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ofen",
+                  "text": "240 °C",
+                  "value": 240
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "rapsoel",
+                  "amount": {
+                    "text": "1 TL Rapsöl",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*nach Braten · Ofen 240 °C*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 240
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:braten"
+              ]
+            },
+            {
+              "id": "jus-abgiessen",
+              "label": "15",
+              "heading": "**15. Jus abgießen (10 Min.)**",
+              "title": "Jus abgießen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Den Inhalt des Bräters durch ein feines Sieb in einen hohen Messbecher gießen, Gemüse und Knochen dabei gut ausdrücken, dann wegwerfen. 5 Min. setzen lassen und das obenauf schwimmende Fett abschöpfen; 1 TL davon für das Finish aufheben. Den Bratensatz im Bräter **nicht** auswaschen.",
+              "action": "Den Inhalt des Bräters durch ein feines Sieb in einen hohen Messbecher gießen, Gemüse und Knochen dabei gut ausdrücken, dann wegwerfen.",
+              "timers": [
+                {
+                  "label": "Jus abgießen",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Braten*",
+              "attention": "active",
+              "after": [
+                "step:braten"
+              ]
+            },
+            {
+              "id": "sauce-reduzieren",
+              "label": "16",
+              "heading": "**16. Sauce reduzieren (ca. 15 Min.)**",
+              "title": "Sauce reduzieren",
+              "duration": {
+                "typical": "PT15M",
+                "source": "ca. 15 Min.",
+                "estimated": true
+              },
+              "text": "Bräter zurück auf die Bräterzone, hohe Hitze. 2 × 50 ml Bier nacheinander angießen, jeweils den Bratensatz lösen und fast trocken einkochen. Den entfetteten Jus zurückgießen, optional 60–75 ml Fond-Reduktion (1 Mulde) dazugeben und auf 350–400 ml einkochen, bei Bedarf mit Wasser auffüllen. *Der frische letzte Bier-Schub bringt die malzige Note zurück, die in 3 Std. Ofen verloren geht.*",
+              "action": "Bräter zurück auf die Bräterzone, hohe Hitze.",
+              "why": "Der frische letzte Bier-Schub bringt die malzige Note zurück, die in 3 Std. Ofen verloren geht.",
+              "ingredients": [
+                {
+                  "ref": "bier",
+                  "amount": {
+                    "text": "50 ml Bier",
+                    "value": 50.0,
+                    "unit": "ml",
+                    "times": 2
+                  }
+                },
+                {
+                  "ref": "fond-reduktion",
+                  "amount": {
+                    "text": "60–75 ml Fond-Reduktion",
+                    "value": 60.0,
+                    "unit": "ml",
+                    "max": 75.0
+                  }
+                }
+              ],
+              "meta": "*nach Jus abgießen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Sauce reduzieren",
+                  "duration": {
+                    "typical": "PT15M"
+                  },
+                  "text": "ca. 15 Min."
+                }
+              ],
+              "after": [
+                "step:jus-abgiessen"
+              ]
+            },
+            {
+              "id": "gewuerze-ziehen",
+              "label": "17",
+              "heading": "**17. Gewürze ziehen (5–10 Min.)**",
+              "title": "Gewürze ziehen",
+              "duration": {
+                "min": "PT5M",
+                "max": "PT10M",
+                "source": "5–10 Min."
+              },
+              "text": "Hitze auf klein, ¼–½ TL Kümmel (gemörsert), 1 TL Majoran und 1 Lorbeerblatt in die Sauce geben und 5–10 Min. knapp unter dem Siedepunkt ziehen lassen. Lorbeerblatt entfernen, Sauce in einen kleinen Topf umfüllen. *Kümmel und Majoran erst jetzt — lange mitgekocht werden sie muffig-heuig.*",
+              "action": "Hitze auf klein, ¼–½ TL Kümmel (gemörsert), 1 TL Majoran und 1 Lorbeerblatt in die Sauce geben und 5–10 Min. knapp unter dem Siedepunkt ziehen lassen.",
+              "why": "Kümmel und Majoran erst jetzt — lange mitgekocht werden sie muffig-heuig.",
+              "timers": [
+                {
+                  "label": "Gewürze ziehen",
+                  "duration": {
+                    "min": "PT5M",
+                    "max": "PT10M"
+                  },
+                  "text": "5–10 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "kuemmel",
+                  "amount": {
+                    "text": "¼–½ TL Kümmel",
+                    "value": 0.25,
+                    "unit": "TL",
+                    "max": 0.5
+                  }
+                },
+                {
+                  "ref": "majoran",
+                  "amount": {
+                    "text": "1 TL Majoran",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "lorbeerblaetter",
+                  "amount": {
+                    "text": "1 Lorbeerblatt",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*nach Sauce reduzieren · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:sauce-reduzieren"
+              ]
+            },
+            {
+              "id": "sauce-abschmecken",
+              "label": "18",
+              "heading": "**18. Sauce abschmecken (ca. 3 Min.)**",
+              "title": "Sauce abschmecken",
+              "duration": {
+                "typical": "PT3M",
+                "source": "ca. 3 Min.",
+                "estimated": true
+              },
+              "text": "Sauce mit Pfeffer, Salz (vorsichtig — der Bratensaft ist vom Salzen der Schwarte schon würzig) und bei Bedarf ½ TL Weißweinessig abschmecken. Vom Herd nehmen, 10–15 g Butter einschwenken und den aufgehobenen 1 TL Bratenfett obenauf geben (Biergarten-Weg). **Nicht binden.** *Ungleichmäßig, mit Fettaugen — so sieht echter Bratensaft aus; glatt und glänzend gebunden sieht er aus wie aus der Tüte.*",
+              "action": "Sauce mit Pfeffer, Salz (vorsichtig — der Bratensaft ist vom Salzen der Schwarte schon würzig) und bei Bedarf ½ TL Weißweinessig abschmecken.",
+              "limits": [
+                "Nicht binden."
+              ],
+              "why": "Ungleichmäßig, mit Fettaugen — so sieht echter Bratensaft aus; glatt und glänzend gebunden sieht er aus wie aus der Tüte.",
+              "ingredients": [
+                {
+                  "ref": "weissweinessig",
+                  "amount": {
+                    "text": "½ TL Weißweinessig",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "10–15 g Butter",
+                    "value": 10.0,
+                    "unit": "g",
+                    "max": 15.0
+                  }
+                }
+              ],
+              "meta": "*nach Gewürze ziehen · Technik: technik/dunkle-bratensauce.md#finish-beide-varianten*",
+              "technique": "technik/dunkle-bratensauce.md#finish-beide-varianten",
+              "attention": "active",
+              "after": [
+                "step:gewuerze-ziehen"
+              ]
+            },
+            {
+              "id": "knoedel-garen",
+              "label": "19",
+              "heading": "**19. Knödel garen (20–25 Min.)**",
+              "title": "Knödel garen",
+              "duration": {
+                "min": "PT20M",
+                "max": "PT25M",
+                "source": "20–25 Min."
+              },
+              "text": "Im 6-L-Topf 4 l Wasser mit 1 EL Salz aufkochen und auf leises Sieden herunterschalten. Die Knödel einlegen und offen 20–25 Min. (Semmelknödel: 18–20 Min.) gar ziehen lassen, **nicht sprudelnd kochen**. Sie sind gar, wenn sie oben schwimmen und sich beim Andrücken fest-federnd anfühlen. Mit der Schaumkelle herausheben und gut abtropfen lassen. *Sprudelndes Wasser reißt die Oberfläche auf, die Knödel werden wässrig oder zerfallen.*",
+              "action": "Im 6-L-Topf 4 l Wasser mit 1 EL Salz aufkochen und auf leises Sieden herunterschalten.",
+              "limits": [
+                "nicht sprudelnd kochen"
+              ],
+              "why": "Sprudelndes Wasser reißt die Oberfläche auf, die Knödel werden wässrig oder zerfallen.",
+              "timers": [
+                {
+                  "label": "Knödel garen",
+                  "duration": {
+                    "min": "PT20M",
+                    "max": "PT25M"
+                  },
+                  "text": "20–25 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "4 l Wasser",
+                    "value": 4.0,
+                    "unit": "l"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 EL Salz",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "alts": [
+                {
+                  "text": "(Semmelknödel: 18–20 Min.)",
+                  "options": [
+                    {
+                      "when": "knoedel=semmelknoedel",
+                      "text": "18–20 Min."
+                    }
+                  ]
+                }
+              ],
+              "meta": "*nach Knödelteig, Semmelknödelteig · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:knoedelteig",
+                "step:semmelknoedelteig"
+              ]
+            },
+            {
+              "id": "ruhen",
+              "label": "20",
+              "heading": "**20. Ruhen (10 Min., passiv)**",
+              "title": "Ruhen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "attention": "passive",
+              "text": "Braten aus dem Ofen nehmen und **unbedeckt** 10 Min. ruhen lassen. *Abdecken staut Dampf und macht die Kruste in Minuten weich.*",
+              "action": "Braten aus dem Ofen nehmen und **unbedeckt** 10 Min. ruhen lassen.",
+              "why": "Abdecken staut Dampf und macht die Kruste in Minuten weich.",
+              "timers": [
+                {
+                  "label": "Ruhen",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Kruste aufpoppen*",
+              "after": [
+                "step:kruste-aufpoppen"
+              ]
+            },
+            {
+              "id": "anrichten",
+              "label": "21",
+              "heading": "**21. Anrichten (ca. 5 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "ca. 5 Min.",
+                "estimated": true
+              },
+              "text": "Braten mit der Schwarte nach unten auf das Brett legen und mit einem langen Messer 1 cm dick schneiden, zuletzt mit Druck durch die Kruste — oder mit dem Brotmesser entlang der Einschnitte. Pro Teller 2 Scheiben, 1–2 Knödel, reichlich Sauce über Knödel und Fleisch (nicht über die Kruste), Krautsalat daneben.",
+              "action": "Braten mit der Schwarte nach unten auf das Brett legen und mit einem langen Messer 1 cm dick schneiden, zuletzt mit Druck durch die Kruste — oder mit dem Brotmesser entlang der Einschnitte.",
+              "ingredients": [],
+              "meta": "*nach Ruhen, Sauce abschmecken, Knödel garen, Speck-Dressing*",
+              "attention": "active",
+              "after": [
+                "step:ruhen",
+                "step:sauce-abschmecken",
+                "step:knoedel-garen",
+                "step:speck-dressing"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Kochtag",
+      "level": "bold",
+      "markdown": "**Kochtag:** Für ein Essen um 18:30 \\~1,5 Std. aktiv, verteilt auf den Nachmittag."
+    },
+    {
+      "type": "markdown",
+      "title": "Beilagen nebenher",
+      "level": "bold",
+      "markdown": "**Beilagen nebenher:** Kraut und Knödel laufen während der letzten Bratstunde."
+    },
+    {
+      "type": "markdown",
+      "title": "Endspurt",
+      "level": "bold",
+      "markdown": "**Endspurt:** Fleisch raus, Kruste, Sauce, Knödel — die nächsten 40 Min. laufen parallel."
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Kruste mit Vorsicht:** Hart-glasige Krustenstücke sind für ein Kind unter 4 Jahren\n  ein Verschluckrisiko. Nur gut aufgepoppte, blasige Stücke geben und klein brechen;\n  harte, flache Stellen ganz weglassen.\n- **Sauce:** Die Biergarten-Sauce kam bei ihm schon an (Bratensauce-Referenz). Ist\n  Kümmel ein Problem, für die ganze Sauce nur ¼ TL nehmen. Alkohol: siehe\n  Schwangerschaft — mit alkoholfreiem Dunkel ist das Thema für alle erledigt.\n- **Krautsalat:** Für das Kind vor dem Ziehen ein Schälchen mit Speck, aber wenig\n  Dressing abnehmen, oder nur die Speckwürfel zu Knödel und Sauce geben. Das Kraut\n  ist sonst recht sauer.\n- Fleisch klein schneiden, Knödel in Sauce zerdrücken — klassischer Kinderteller.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "Nach [Leitfaden](/schwangerschaft/leitfaden.md) direkt geeignet, mit drei\nStellschrauben:\n\n- **Fleisch durch:** Schulter mit 78–80 °C Kern plus Krustenphase liegt sicher über\n  den geforderten ≥ 70 °C. Der geräucherte Speck ist Rohpökelware — er wird im\n  Dressing komplett knusprig durchgebraten und ist damit unkritisch.\n- **Bier: alkoholfreies Dunkel ist die empfohlene Wahl.** „Alkoholfrei“ heißt in\n  Deutschland bis 0,5 % vol; nach dem Fast-trocken-Einkochen bleibt davon praktisch\n  nichts. Mit normalem Dunkel (5 % vol, 250 ml ≈ 12 ml reiner Alkohol) bleibt laut\n  den USDA-Retentionsdaten ein kleiner, nicht bezifferbarer Rest — das Einkochen bis\n  fast trocken senkt ihn stark, aber nicht auf null (Details in der\n  [Bratensauce](/technik/dunkle-bratensauce.md), Abschnitt „Kind & Alkohol“).\n- **Knödel klein, Kraut groß:** Beide Knödel sind schnelle Kohlenhydrate (helle\n  Stärke). Pro Mahlzeit **1 Knödel** (ca. 110 g, grob 20–25 g KH), dafür die doppelte\n  Portion Krautsalat und Fleisch — Protein, Fett und Ballaststoffe dämpfen die Spitze.\n  Den optionalen Zucker im Dressing weglassen. Die Sauce ist ungebunden, also ohne\n  Stärke — da ist nichts zu tun. Bei Semmelknödeln: Knödelbrot aus den\n  [Vollkornbrötchen](/backen/vollkornbroetchen.md) senkt die Glykämie etwas, der\n  Knödel wird dichter.\n- Ein Spaziergang nach dem Essen hilft hier besonders — Sonntagsbraten ist schwer.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "3-tage-vorher",
+            "label": "3 Tage vorher",
+            "day": -3
+          },
+          {
+            "id": "vortag",
+            "label": "Vortag",
+            "day": -1
+          },
+          {
+            "id": "uhr-13-30",
+            "label": "13:30 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT5H",
+            "clock": "13:30"
+          },
+          {
+            "id": "uhr-13-45",
+            "label": "13:45 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT4H45M",
+            "clock": "13:45"
+          },
+          {
+            "id": "uhr-14-30",
+            "label": "14:30 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT4H",
+            "clock": "14:30"
+          },
+          {
+            "id": "uhr-16-45",
+            "label": "16:45 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT1H45M",
+            "clock": "16:45"
+          },
+          {
+            "id": "uhr-17-15",
+            "label": "17:15 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT1H15M",
+            "clock": "17:15"
+          },
+          {
+            "id": "uhr-17-25",
+            "label": "17:25 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT1H5M",
+            "clock": "17:25"
+          },
+          {
+            "id": "uhr-17-40",
+            "label": "17:40 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT50M",
+            "clock": "17:40"
+          },
+          {
+            "id": "uhr-17-50",
+            "label": "17:50 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT40M",
+            "clock": "17:50"
+          },
+          {
+            "id": "uhr-18-05",
+            "label": "18:05 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT25M",
+            "clock": "18:05"
+          },
+          {
+            "id": "uhr-18-15",
+            "label": "18:15 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT15M",
+            "clock": "18:15"
+          },
+          {
+            "id": "uhr-18-20",
+            "label": "18:20 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT10M",
+            "clock": "18:20"
+          },
+          {
+            "id": "uhr-18-30",
+            "label": "18:30 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "PT0M",
+            "clock": "18:30"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "3-tage-vorher",
+            "text": "Schulter mit Schwarte und Knochen bei Selgros kaufen bzw. an der REWE-Center-Theke vorbestellen; alkoholfreies Dunkel besorgen"
+          },
+          {
+            "phase": "vortag",
+            "text": "Schwarte blanchieren",
+            "steps": [
+              "schwarte-blanchieren"
+            ]
+          },
+          {
+            "phase": "vortag",
+            "text": "Schwarte einschneiden",
+            "steps": [
+              "schwarte-einschneiden"
+            ]
+          },
+          {
+            "phase": "vortag",
+            "text": "Salzen und trocknen",
+            "steps": [
+              "salzen-und-trocknen"
+            ]
+          },
+          {
+            "phase": "vortag",
+            "text": "Pellkartoffeln",
+            "only": [
+              "knoedel=kartoffelknoedel"
+            ],
+            "steps": [
+              "pellkartoffeln"
+            ]
+          },
+          {
+            "phase": "vortag",
+            "text": "Knödelbrot",
+            "only": [
+              "knoedel=semmelknoedel"
+            ],
+            "steps": [
+              "knoedelbrot"
+            ]
+          },
+          {
+            "phase": "uhr-13-30",
+            "text": "Würzen, Fleisch temperieren lassen",
+            "steps": [
+              "wuerzen"
+            ]
+          },
+          {
+            "phase": "uhr-13-45",
+            "text": "Röstbasis",
+            "steps": [
+              "roestbasis"
+            ]
+          },
+          {
+            "phase": "uhr-13-45",
+            "text": "Bier einkochen",
+            "steps": [
+              "bier-einkochen"
+            ]
+          },
+          {
+            "phase": "uhr-14-30",
+            "text": "Braten (Ofen 160 °C, Kern ab 16:45 im Blick)",
+            "steps": [
+              "braten"
+            ]
+          },
+          {
+            "phase": "uhr-16-45",
+            "text": "Kraut hobeln",
+            "steps": [
+              "kraut-hobeln"
+            ]
+          },
+          {
+            "phase": "uhr-17-15",
+            "text": "Speck-Dressing",
+            "steps": [
+              "speck-dressing"
+            ]
+          },
+          {
+            "phase": "uhr-17-15",
+            "text": "Kerntemperatur prüfen, Braten fertig bei 78–80 °C"
+          },
+          {
+            "phase": "uhr-17-25",
+            "text": "Knödelteig",
+            "only": [
+              "knoedel=kartoffelknoedel"
+            ],
+            "steps": [
+              "knoedelteig"
+            ]
+          },
+          {
+            "phase": "uhr-17-25",
+            "text": "Semmelknödelteig",
+            "only": [
+              "knoedel=semmelknoedel"
+            ],
+            "steps": [
+              "semmelknoedelteig"
+            ]
+          },
+          {
+            "phase": "uhr-17-40",
+            "text": "Kruste aufpoppen",
+            "steps": [
+              "kruste-aufpoppen"
+            ]
+          },
+          {
+            "phase": "uhr-17-40",
+            "text": "Jus abgießen",
+            "steps": [
+              "jus-abgiessen"
+            ]
+          },
+          {
+            "phase": "uhr-17-50",
+            "text": "Sauce reduzieren",
+            "steps": [
+              "sauce-reduzieren"
+            ]
+          },
+          {
+            "phase": "uhr-17-50",
+            "text": "Knödel garen",
+            "steps": [
+              "knoedel-garen"
+            ]
+          },
+          {
+            "phase": "uhr-18-05",
+            "text": "Gewürze ziehen",
+            "steps": [
+              "gewuerze-ziehen"
+            ]
+          },
+          {
+            "phase": "uhr-18-05",
+            "text": "Ruhen",
+            "steps": [
+              "ruhen"
+            ]
+          },
+          {
+            "phase": "uhr-18-15",
+            "text": "Sauce abschmecken",
+            "steps": [
+              "sauce-abschmecken"
+            ]
+          },
+          {
+            "phase": "uhr-18-20",
+            "text": "Anrichten",
+            "steps": [
+              "anrichten"
+            ]
+          },
+          {
+            "phase": "uhr-18-30",
+            "text": "Essen"
+          }
+        ],
+        "anchorOverride": {
+          "time": "18:30"
+        }
+      }
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Reste:** Kalter Braten in dünnen Scheiben aufs Brot (mit Senf und Kraut) ist fast\n  besser als warm. Warm: Scheiben in etwas Sauce zugedeckt erwärmen; die Kruste\n  separat auf dem Gitter bei 220 °C 5–8 Min. wieder knusprig machen. Übrige\n  Kartoffel- oder Semmelknödel in Scheiben in Butter braten, mit Ei — „Knödel mit Ei“.\n- **Schnellkochtopf:** Bewusst nicht — die Kruste braucht trockene Ofenhitze, und die\n  Sauce lebt vom Bratensatz im Bräter.\n- **Schäufele (fränkisch)** wäre die Variante mit Schulterblatt am Knochen; die Schwarte\n  wölbt sich dort aber stärker und poppt ungleichmäßiger auf. Für den ersten Durchgang\n  die flache, knochenlose Schulter.",
+      "tags": [
+        "notizen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Schwarte am Vortag blanchieren, einschneiden, salzen, offen trocknen:** Kombination\n  aus zwei Schulen. Die bayerische Hausfrauen- und Wirtshausmethode legt den Braten mit\n  der Schwarte nach unten ins Wasser ([REWE — Schweinebraten](https://www.rewe.de/rezepte/schweinebraten/): übergießen, 10 Min. köcheln, dann\n  einschneiden; Küchengötter/GU: fingerhoch Wasser, Schwarte nach unten) — das macht\n  die Schwarte weich und schneidbar. Die angelsächsische Crackling-Schule\n  ([RecipeTin Eats — Pork Shoulder with Crackling](https://www.recipetineats.com/wprm_print/29119))\n  besteht auf trockener, überall gesalzener, waagerechter Schwarte und Schnitten, die\n  nicht ins Fleisch gehen (sonst „rubbery patches“). Das Blanchieren am Vortag holt\n  das Beste aus beiden: weiche Schwarte zum Schneiden, und eine ganze Nacht, um das\n  Wasser wieder loszuwerden.\n- **160 °C, Kern 78–80 °C, Kruste bei 220–250 °C/Grill zum Schluss:** Grillfürst nennt\n  für Krustenbraten aus der Schulter ca. 75 °C Kern bei 160–180 °C (2 kg ≈ 2,5–3 Std.)\n  und 10–20 Min. Krustenphase bei 220–250 °C bzw. Grill, Schwarte über der Flüssigkeit\n  ([Grillfürst — Kerntemperatur Krustenbraten](https://www.grillfuerst.de/magazin/kerntemperatur/schweinefleisch/krustenbraten/)).\n  RecipeTin gart bei 160 °C und poppt bei 250 °C auf; Neff (Backstübchen) gart bei\n  160 °C auf ca. 70 °C und krustet mit Grill bei 200 °C nach\n  ([Neff — Krustenbraten mit Schwarzbiersauce](https://www.neff-home.com/de/neff-entdecken/the-ingredient/rezepte/krustenbraten-schwein-schwarzbiersosse)).\n  Für die Schulter liegen wir bewusst etwas über 75 °C (Bindegewebe), und für die\n  Schwangerschaft ist das ohnehin auf der sicheren Seite. **Fleisch zum Aufpoppen auf\n  das Gitter** statt im Bräter: Die Sauce kann parallel auf dem Herd entstehen, und\n  kein Dampf aus dem Bräter steigt an die Schwarte.\n- **Nicht begießen, Bier nicht über den Braten:** Viele Rezepte begießen alle 20 Min.\n  bzw. gießen Bier in der letzten halben Stunde an\n  ([Küchengötter — Krustenschweinebraten mit Dunkelbiersauce](https://www.kuechengoetter.de/rezepte/krustenschweinebraten-mit-dunkelbiersauce-86776),\n  [erlebe.bayern — Bayerischer Schweinebraten mit Biersoße](https://erlebe.bayern/dam/jcr:dcc887d5-5d12-4824-9d64-7d9c6002e0ff/rezeptkarte-schweinebraten.pdf)).\n  Das widerspricht beiden Zielen: nasse Schwarte, und lang mitgeschmortes Bier wird\n  bitter. Stattdessen Bier in Schüben fast trocken — Regeln aus der\n  [Dunklen Bratensauce](/technik/dunkle-bratensauce.md).\n- **Sauce nicht binden:** Küchengötter: „Die Sauce wird traditionell nicht gebunden“;\n  erlebe.bayern und Neff binden (Saucenbinder/Stärke). Wir folgen der Bratensauce-Regel\n  — ungebunden, Fettaugen erlaubt — und sparen in der GDM-Zeit die Stärke.\n- **Kartoffelknödel als Standard, Semmelknödel als Variante:** Der Wirtshaus-Klassiker\n  in Altbayern ist Schweinsbraten mit Kartoffelknödel; sie nehmen ungebundene Sauce\n  am besten auf. Rezeptur halb und halb mit höherem Rohanteil (500 g gekocht, 1 kg\n  roh) zwischen [Küchengötter — Kartoffelklöße halb und halb](https://www.kuechengoetter.de/rezepte/download/Kartoffel-kloesse-halb-und-halb-86757.pdf)\n  und [Küchengötter — Bayerische Kartoffelknödel](https://www.kuechengoetter.de/rezepte/bayerische-kartoffelknoedel-63739)\n  (500 g gekocht auf 2 kg roh): halb-halb ist verzeihender, der höhere Rohanteil gibt\n  den typisch bayerischen, leicht glasigen Biss. Ohne Knödelhilfe (Natriumdisulfit) —\n  zügig arbeiten reicht. Semmelknödel sind einfacher und fast komplett am Vortag\n  vorzubereiten, aber der Kartoffelknödel ist hier der passendere Partner.\n- **Warmer Speck-Krautsalat:** Grundtechnik (Kraut salzen und kneten, Speck und\n  Zwiebel auslassen, Essig in die Pfanne, lauwarm übergießen) nach\n  [Küchengötter — Bayrischer Krautsalat mit Speck](https://www.kuechengoetter.de/rezepte/bayrischer-krautsalat-mit-speck-52413);\n  Säure etwas höher und mit Wasser verlängert, weil der Salat hier gegen Kruste und\n  Bratenfett arbeiten muss. erlebe.bayern serviert ebenfalls Krautsalat mit Speck zum\n  Braten.\n- **Bier:** Münchner Dunkel statt Schwarzbier (Neff nimmt Schwarzbier — für unsere\n  Sauce zu röstig, siehe Bratensauce). Alkoholfreie Option: z. B. Lammsbräu Bio Dunkel\n  alkoholfrei; Verfügbarkeit nicht verifiziert.\n- **Alkohol beim Kochen:** USDA Table of Nutrient Retention Factors (über die\n  Bratensauce und den Schwangerschafts-Leitfaden).",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-19T06:40:25Z",
+    "sourceHash": "aecf58cc0149a952",
+    "select": {
+      "knoedel": "kartoffelknoedel"
+    },
+    "quantities": [
+      {
+        "ingredient": "schweineschulter",
+        "total": {
+          "text": "1800–2200 g",
+          "value": 1800.0,
+          "max": 2200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1,8–2,2 kg"
+        }
+      },
+      {
+        "ingredient": "schweineknochen",
+        "total": {
+          "text": "1000 g",
+          "value": 1000.0,
+          "max": 1000.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 kg Schweineknochen"
+        }
+      },
+      {
+        "ingredient": "kartoffeln",
+        "total": {
+          "text": "1500 g",
+          "value": 1500.0,
+          "max": 1500.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "500 g Kartoffeln + 1 kg Kartoffeln"
+        }
+      },
+      {
+        "ingredient": "weisskohl",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Weißkohl"
+        }
+      },
+      {
+        "ingredient": "zwiebeln",
+        "total": {
+          "text": "1 + 300 g",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false,
+          "plus": [
+            {
+              "text": "300 g",
+              "value": 300.0,
+              "max": 300.0,
+              "unit": "g",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "main": "300 g Zwiebeln + 1 Zwiebel"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "karotte",
+        "total": {
+          "text": "150 g",
+          "value": 150.0,
+          "max": 150.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "150 g Karotte"
+        }
+      },
+      {
+        "ingredient": "knollensellerie",
+        "total": {
+          "text": "150 g",
+          "value": 150.0,
+          "max": 150.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "150 g Knollensellerie"
+        }
+      },
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": "4",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 Knoblauchzehen + 2 Knoblauchzehen"
+        }
+      },
+      {
+        "ingredient": "speck",
+        "total": {
+          "text": "120 g",
+          "value": 120.0,
+          "max": 120.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "120 g Speck"
+        }
+      },
+      {
+        "ingredient": "toastbrot",
+        "total": {
+          "text": "1 Scheibe",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Scheibe",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Scheibe Toastbrot"
+        }
+      },
+      {
+        "ingredient": "bier",
+        "total": {
+          "text": "250 ml",
+          "value": 250.0,
+          "max": 250.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "50 ml Bier ×3 + 50 ml Bier ×2"
+        }
+      },
+      {
+        "ingredient": "fond-reduktion",
+        "total": {
+          "text": "60–75 ml",
+          "value": 60.0,
+          "max": 75.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "60–75 ml Fond-Reduktion"
+        }
+      },
+      {
+        "ingredient": "butterschmalz",
+        "total": {
+          "text": "20 g",
+          "value": 20.0,
+          "max": 20.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "20 g Butterschmalz"
+        }
+      },
+      {
+        "ingredient": "butter",
+        "total": {
+          "text": "25–30 g",
+          "value": 25.0,
+          "max": 30.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "15 g Butter + 10–15 g Butter"
+        }
+      },
+      {
+        "ingredient": "rapsoel",
+        "total": {
+          "text": "2 EL + 1 TL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "main": "2 EL Rapsöl + 1 TL Rapsöl"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "tomatenmark",
+        "total": {
+          "text": "15 g",
+          "value": 15.0,
+          "max": 15.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "15 g (1 EL) Tomatenmark"
+        }
+      },
+      {
+        "ingredient": "weissweinessig",
+        "total": {
+          "text": "62½ ml",
+          "value": 62.5,
+          "max": 62.5,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "60 ml Weißweinessig + ½ TL Weißweinessig"
+        }
+      },
+      {
+        "ingredient": "speisestaerke",
+        "total": {
+          "text": "1–2 EL",
+          "value": 1.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1–2 EL Speisestärke"
+        }
+      },
+      {
+        "ingredient": "zucker",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 TL Zucker"
+        }
+      },
+      {
+        "ingredient": "meersalz",
+        "total": {
+          "text": "10 g",
+          "value": 10.0,
+          "max": 10.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "10 g grobes Meersalz"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "4 TL + 18 g + 1 EL",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "TL",
+          "approx": false,
+          "plus": [
+            {
+              "text": "18 g",
+              "value": 18.0,
+              "max": 18.0,
+              "unit": "g",
+              "approx": false
+            },
+            {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "main": "18 g Salz + 1,5 TL Salz + 2 TL Salz + ½ TL Salz + 1 EL Salz"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": ""
+        },
+        "perTask": {},
+        "unitless": [
+          "reichlich Pfeffer"
+        ]
+      },
+      {
+        "ingredient": "kuemmel",
+        "total": {
+          "text": "2¼–2½ TL",
+          "value": 2.25,
+          "max": 2.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 TL Kümmel + 1 TL Kümmel + ¼–½ TL Kümmel"
+        }
+      },
+      {
+        "ingredient": "majoran",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 TL Majoran"
+        }
+      },
+      {
+        "ingredient": "lorbeerblaetter",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Lorbeerblatt"
+        }
+      },
+      {
+        "ingredient": "muskatnuss",
+        "total": {
+          "text": "1 Prise",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Prise",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Prise Muskatnuss"
+        }
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "5600–5650 ml",
+          "value": 5600.0,
+          "max": 5650.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 l Wasser + 400 ml Wasser + 100–150 ml Wasser + 100 ml Wasser + 4 l Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Selgros",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "schweineschulter",
+            "name": "Schweineschulter mit Schwarte, ohne Knochen",
+            "need": {
+              "text": "1800–2200 g",
+              "value": 1800.0,
+              "max": 2200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "1800–2200 g",
+            "inStock": false,
+            "buy": {
+              "text": "1,8–2,2 kg"
+            },
+            "note": "flach, nicht gerollt; Fallback: REWE-Center-Theke vorbestellen"
+          },
+          {
+            "ingredient": "schweineknochen",
+            "name": "Schweineknochen, gesägt, fleischig",
+            "need": {
+              "text": "1000 g",
+              "value": 1000.0,
+              "max": 1000.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "1000 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 kg"
+            },
+            "optional": true,
+            "note": "Saucenkörper; Alternative: Fond-Reduktion aus dem Vorrat"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "kartoffeln",
+            "name": "Kartoffeln, mehligkochend",
+            "need": {
+              "text": "1500 g",
+              "value": 1500.0,
+              "max": 1500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "1500 g",
+            "inStock": false,
+            "buy": {
+              "text": "2 kg"
+            },
+            "note": "Bedarf 1,5 kg"
+          },
+          {
+            "ingredient": "weisskohl",
+            "name": "Weißkohl, klein",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "ca. 1 kg"
+          },
+          {
+            "ingredient": "zwiebeln",
+            "name": "Zwiebeln",
+            "need": {
+              "text": "1 + 300 g",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "300 g",
+                  "value": 300.0,
+                  "max": 300.0,
+                  "unit": "g",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "1 + 300 g",
+            "inStock": false,
+            "buy": {
+              "text": "4"
+            },
+            "note": "2 Röstbasis, 1 Dressing, 1 Semmelknödel"
+          },
+          {
+            "ingredient": "karotte",
+            "name": "Karotte, groß",
+            "need": {
+              "text": "150 g",
+              "value": 150.0,
+              "max": 150.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "150 g",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "ca. 150 g"
+          },
+          {
+            "ingredient": "knollensellerie",
+            "name": "Knollensellerie, klein",
+            "need": {
+              "text": "150 g",
+              "value": 150.0,
+              "max": 150.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "150 g",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "ca. 150 g nötig"
+          },
+          {
+            "ingredient": "knoblauch",
+            "name": "Knoblauch",
+            "need": {
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "4",
+            "inStock": false,
+            "buy": {
+              "text": "1 Knolle"
+            }
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "speck",
+            "name": "Speck, durchwachsen, geräuchert, am Stück",
+            "need": {
+              "text": "120 g",
+              "value": 120.0,
+              "max": 120.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "120 g",
+            "inStock": false,
+            "buy": {
+              "text": "120 g"
+            }
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "toastbrot",
+            "name": "Scheibe Toastbrot",
+            "need": {
+              "text": "1 Scheibe",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Scheibe",
+              "approx": false
+            },
+            "display": "1 Scheibe",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "optional": true,
+            "note": "Croutons für den Knödelkern"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Getränke",
+        "items": [
+          {
+            "ingredient": "bier",
+            "name": "Bier",
+            "need": {
+              "text": "250 ml",
+              "value": 250.0,
+              "max": 250.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "250 ml",
+            "inStock": false,
+            "buy": {
+              "text": "0,5 l"
+            },
+            "note": "Münchner Dunkel; Schwangerschaft: alkoholfreies Dunkel, siehe Beschaffung; Bedarf 250 ml"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "fond-reduktion",
+            "name": "Mulde Fond-Reduktion",
+            "need": {
+              "text": "60–75 ml",
+              "value": 60.0,
+              "max": 75.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "60–75 ml",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "optional": true,
+            "pantry": true,
+            "note": "aus dem Vorrats-Fond der Bratensauce, 60–75 ml"
+          },
+          {
+            "ingredient": "butterschmalz",
+            "name": "Butterschmalz",
+            "need": {
+              "text": "20 g",
+              "value": 20.0,
+              "max": 20.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "20 g",
+            "inStock": false,
+            "pantry": true,
+            "note": "20 g"
+          },
+          {
+            "ingredient": "butter",
+            "name": "Butter",
+            "need": {
+              "text": "25–30 g",
+              "value": 25.0,
+              "max": 30.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "25–30 g",
+            "inStock": false,
+            "pantry": true,
+            "note": "\\~50 g"
+          },
+          {
+            "ingredient": "rapsoel",
+            "name": "Rapsöl",
+            "need": {
+              "text": "2 EL + 1 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "2 EL + 1 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "tomatenmark",
+            "name": "Tomatenmark",
+            "need": {
+              "text": "15 g",
+              "value": 15.0,
+              "max": 15.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "15 g",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "weissweinessig",
+            "name": "Weißweinessig",
+            "need": {
+              "text": "62½ ml",
+              "value": 62.5,
+              "max": 62.5,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "62½ ml",
+            "inStock": false,
+            "pantry": true,
+            "note": "\\~65 ml"
+          },
+          {
+            "ingredient": "speisestaerke",
+            "name": "Speisestärke",
+            "need": {
+              "text": "1–2 EL",
+              "value": 1.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1–2 EL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "zucker",
+            "name": "Zucker",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "optional": true,
+            "pantry": true,
+            "note": "1 TL fürs Dressing"
+          },
+          {
+            "ingredient": "meersalz",
+            "name": "Meersalz, grob",
+            "need": {
+              "text": "10 g",
+              "value": 10.0,
+              "max": 10.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "10 g",
+            "inStock": false,
+            "pantry": true,
+            "note": "für die Schwarte"
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "4 TL + 18 g + 1 EL",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "TL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "18 g",
+                  "value": 18.0,
+                  "max": 18.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "4 TL + 18 g + 1 EL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Pfeffer",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "kuemmel",
+            "name": "Kümmel, ganz",
+            "need": {
+              "text": "2¼–2½ TL",
+              "value": 2.25,
+              "max": 2.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "2¼–2½ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "majoran",
+            "name": "Majoran, getrocknet",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "lorbeerblaetter",
+            "name": "Lorbeerblätter",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "muskatnuss",
+            "name": "Muskatnuss",
+            "need": {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            },
+            "display": "1 Prise",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "5600–5650 ml",
+              "value": 5600.0,
+              "max": 5650.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "5600–5650 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "key": "knoedel=semmelknoedel",
+        "select": {
+          "knoedel": "semmelknoedel"
+        },
+        "quantities": [
+          {
+            "ingredient": "schweineschulter",
+            "total": {
+              "text": "1800–2200 g",
+              "value": 1800.0,
+              "max": 2200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1,8–2,2 kg"
+            }
+          },
+          {
+            "ingredient": "schweineknochen",
+            "total": {
+              "text": "1000 g",
+              "value": 1000.0,
+              "max": 1000.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 kg Schweineknochen"
+            }
+          },
+          {
+            "ingredient": "weisskohl",
+            "total": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 Weißkohl"
+            }
+          },
+          {
+            "ingredient": "zwiebeln",
+            "total": {
+              "text": "2 + 300 g",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "300 g",
+                  "value": 300.0,
+                  "max": 300.0,
+                  "unit": "g",
+                  "approx": false
+                }
+              ]
+            },
+            "perTask": {
+              "main": "300 g Zwiebeln + 1 Zwiebel + 1 Zwiebel"
+            },
+            "unitMixed": true
+          },
+          {
+            "ingredient": "karotte",
+            "total": {
+              "text": "150 g",
+              "value": 150.0,
+              "max": 150.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "150 g Karotte"
+            }
+          },
+          {
+            "ingredient": "knollensellerie",
+            "total": {
+              "text": "150 g",
+              "value": 150.0,
+              "max": 150.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "150 g Knollensellerie"
+            }
+          },
+          {
+            "ingredient": "knoblauch",
+            "total": {
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "main": "2 Knoblauchzehen + 2 Knoblauchzehen"
+            }
+          },
+          {
+            "ingredient": "petersilie",
+            "total": {
+              "text": "½ Bund",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Bund",
+              "approx": false
+            },
+            "perTask": {
+              "main": "½ Bund Petersilie"
+            }
+          },
+          {
+            "ingredient": "speck",
+            "total": {
+              "text": "120 g",
+              "value": 120.0,
+              "max": 120.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "120 g Speck"
+            }
+          },
+          {
+            "ingredient": "milch",
+            "total": {
+              "text": "250 ml",
+              "value": 250.0,
+              "max": 250.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "perTask": {
+              "main": "250 ml Milch"
+            }
+          },
+          {
+            "ingredient": "eier",
+            "total": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "main": "3 Eier"
+            }
+          },
+          {
+            "ingredient": "knoedelbrot",
+            "total": {
+              "text": "300 g",
+              "value": 300.0,
+              "max": 300.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "300 g Knödelbrot"
+            }
+          },
+          {
+            "ingredient": "bier",
+            "total": {
+              "text": "250 ml",
+              "value": 250.0,
+              "max": 250.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "perTask": {
+              "main": "50 ml Bier ×3 + 50 ml Bier ×2"
+            }
+          },
+          {
+            "ingredient": "fond-reduktion",
+            "total": {
+              "text": "60–75 ml",
+              "value": 60.0,
+              "max": 75.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "perTask": {
+              "main": "60–75 ml Fond-Reduktion"
+            }
+          },
+          {
+            "ingredient": "butterschmalz",
+            "total": {
+              "text": "20 g",
+              "value": 20.0,
+              "max": 20.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "20 g Butterschmalz"
+            }
+          },
+          {
+            "ingredient": "butter",
+            "total": {
+              "text": "30–35 g",
+              "value": 30.0,
+              "max": 35.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "20 g Butter + 10–15 g Butter"
+            }
+          },
+          {
+            "ingredient": "rapsoel",
+            "total": {
+              "text": "2 EL + 1 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
+            },
+            "perTask": {
+              "main": "2 EL Rapsöl + 1 TL Rapsöl"
+            },
+            "unitMixed": true
+          },
+          {
+            "ingredient": "tomatenmark",
+            "total": {
+              "text": "15 g",
+              "value": 15.0,
+              "max": 15.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "15 g (1 EL) Tomatenmark"
+            }
+          },
+          {
+            "ingredient": "weissweinessig",
+            "total": {
+              "text": "62½ ml",
+              "value": 62.5,
+              "max": 62.5,
+              "unit": "ml",
+              "approx": false
+            },
+            "perTask": {
+              "main": "60 ml Weißweinessig + ½ TL Weißweinessig"
+            }
+          },
+          {
+            "ingredient": "zucker",
+            "total": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 TL Zucker"
+            }
+          },
+          {
+            "ingredient": "meersalz",
+            "total": {
+              "text": "10 g",
+              "value": 10.0,
+              "max": 10.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "10 g grobes Meersalz"
+            }
+          },
+          {
+            "ingredient": "salz",
+            "total": {
+              "text": "18 g + 3 TL + 1 EL",
+              "value": 18.0,
+              "max": 18.0,
+              "unit": "g",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "3 TL",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "TL",
+                  "approx": false
+                },
+                {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                }
+              ]
+            },
+            "perTask": {
+              "main": "18 g Salz + 1,5 TL Salz + 1 TL Salz + ½ TL Salz + 1 EL Salz"
+            },
+            "unitMixed": true
+          },
+          {
+            "ingredient": "pfeffer",
+            "total": {
+              "text": ""
+            },
+            "perTask": {},
+            "unitless": [
+              "reichlich Pfeffer"
+            ]
+          },
+          {
+            "ingredient": "kuemmel",
+            "total": {
+              "text": "2¼–2½ TL",
+              "value": 2.25,
+              "max": 2.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 TL Kümmel + 1 TL Kümmel + ¼–½ TL Kümmel"
+            }
+          },
+          {
+            "ingredient": "majoran",
+            "total": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 TL Majoran"
+            }
+          },
+          {
+            "ingredient": "lorbeerblaetter",
+            "total": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 Lorbeerblatt"
+            }
+          },
+          {
+            "ingredient": "muskatnuss",
+            "total": {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 Prise Muskatnuss"
+            }
+          },
+          {
+            "ingredient": "wasser",
+            "total": {
+              "text": "5600–5650 ml",
+              "value": 5600.0,
+              "max": 5650.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 l Wasser + 400 ml Wasser + 100–150 ml Wasser + 100 ml Wasser + 4 l Wasser"
+            }
+          }
+        ],
+        "shopping": [
+          {
+            "store": "Selgros",
+            "group": "Fleisch & Fisch",
+            "items": [
+              {
+                "ingredient": "schweineschulter",
+                "name": "Schweineschulter mit Schwarte, ohne Knochen",
+                "need": {
+                  "text": "1800–2200 g",
+                  "value": 1800.0,
+                  "max": 2200.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "1800–2200 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1,8–2,2 kg"
+                },
+                "note": "flach, nicht gerollt; Fallback: REWE-Center-Theke vorbestellen"
+              },
+              {
+                "ingredient": "schweineknochen",
+                "name": "Schweineknochen, gesägt, fleischig",
+                "need": {
+                  "text": "1000 g",
+                  "value": 1000.0,
+                  "max": 1000.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "1000 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 kg"
+                },
+                "optional": true,
+                "note": "Saucenkörper; Alternative: Fond-Reduktion aus dem Vorrat"
+              }
+            ]
+          },
+          {
+            "store": "REWE Center",
+            "group": "Obst & Gemüse",
+            "items": [
+              {
+                "ingredient": "weisskohl",
+                "name": "Weißkohl, klein",
+                "need": {
+                  "text": "1",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "1",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                },
+                "note": "ca. 1 kg"
+              },
+              {
+                "ingredient": "zwiebeln",
+                "name": "Zwiebeln",
+                "need": {
+                  "text": "2 + 300 g",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "Stück",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "300 g",
+                      "value": 300.0,
+                      "max": 300.0,
+                      "unit": "g",
+                      "approx": false
+                    }
+                  ]
+                },
+                "display": "2 + 300 g",
+                "inStock": false,
+                "buy": {
+                  "text": "4"
+                },
+                "note": "2 Röstbasis, 1 Dressing, 1 Semmelknödel"
+              },
+              {
+                "ingredient": "karotte",
+                "name": "Karotte, groß",
+                "need": {
+                  "text": "150 g",
+                  "value": 150.0,
+                  "max": 150.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "150 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                },
+                "note": "ca. 150 g"
+              },
+              {
+                "ingredient": "knollensellerie",
+                "name": "Knollensellerie, klein",
+                "need": {
+                  "text": "150 g",
+                  "value": 150.0,
+                  "max": 150.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "150 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                },
+                "note": "ca. 150 g nötig"
+              },
+              {
+                "ingredient": "knoblauch",
+                "name": "Knoblauch",
+                "need": {
+                  "text": "4",
+                  "value": 4.0,
+                  "max": 4.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "4",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Knolle"
+                }
+              },
+              {
+                "ingredient": "petersilie",
+                "name": "Petersilie, glatt",
+                "need": {
+                  "text": "½ Bund",
+                  "value": 0.5,
+                  "max": 0.5,
+                  "unit": "Bund",
+                  "approx": false
+                },
+                "display": "½ Bund",
+                "inStock": false,
+                "buy": {
+                  "text": "½ Bund"
+                }
+              }
+            ]
+          },
+          {
+            "store": "REWE Center",
+            "group": "Fleisch & Fisch",
+            "items": [
+              {
+                "ingredient": "speck",
+                "name": "Speck, durchwachsen, geräuchert, am Stück",
+                "need": {
+                  "text": "120 g",
+                  "value": 120.0,
+                  "max": 120.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "120 g",
+                "inStock": false,
+                "buy": {
+                  "text": "120 g"
+                }
+              }
+            ]
+          },
+          {
+            "store": "REWE Center",
+            "group": "Milchprodukte & Eier",
+            "items": [
+              {
+                "ingredient": "milch",
+                "name": "Milch",
+                "need": {
+                  "text": "250 ml",
+                  "value": 250.0,
+                  "max": 250.0,
+                  "unit": "ml",
+                  "approx": false
+                },
+                "display": "250 ml",
+                "inStock": false,
+                "buy": {
+                  "text": "250 ml"
+                }
+              },
+              {
+                "ingredient": "eier",
+                "name": "Eier",
+                "need": {
+                  "text": "3",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "3",
+                "inStock": false,
+                "buy": {
+                  "text": "3"
+                }
+              }
+            ]
+          },
+          {
+            "store": "REWE Center",
+            "group": "Trockenwaren",
+            "items": [
+              {
+                "ingredient": "knoedelbrot",
+                "name": "Knödelbrot",
+                "need": {
+                  "text": "300 g",
+                  "value": 300.0,
+                  "max": 300.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "300 g",
+                "inStock": false,
+                "buy": {
+                  "text": "300 g"
+                },
+                "note": "oder 5–6 Semmeln vom Vortag, selbst gewürfelt"
+              }
+            ]
+          },
+          {
+            "store": "REWE Center",
+            "group": "Getränke",
+            "items": [
+              {
+                "ingredient": "bier",
+                "name": "Bier",
+                "need": {
+                  "text": "250 ml",
+                  "value": 250.0,
+                  "max": 250.0,
+                  "unit": "ml",
+                  "approx": false
+                },
+                "display": "250 ml",
+                "inStock": false,
+                "buy": {
+                  "text": "0,5 l"
+                },
+                "note": "Münchner Dunkel; Schwangerschaft: alkoholfreies Dunkel, siehe Beschaffung; Bedarf 250 ml"
+              }
+            ]
+          },
+          {
+            "store": "Vorrat",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "fond-reduktion",
+                "name": "Mulde Fond-Reduktion",
+                "need": {
+                  "text": "60–75 ml",
+                  "value": 60.0,
+                  "max": 75.0,
+                  "unit": "ml",
+                  "approx": false
+                },
+                "display": "60–75 ml",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                },
+                "optional": true,
+                "pantry": true,
+                "note": "aus dem Vorrats-Fond der Bratensauce, 60–75 ml"
+              },
+              {
+                "ingredient": "butterschmalz",
+                "name": "Butterschmalz",
+                "need": {
+                  "text": "20 g",
+                  "value": 20.0,
+                  "max": 20.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "20 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "20 g"
+              },
+              {
+                "ingredient": "butter",
+                "name": "Butter",
+                "need": {
+                  "text": "30–35 g",
+                  "value": 30.0,
+                  "max": 35.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "30–35 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "\\~50 g"
+              },
+              {
+                "ingredient": "rapsoel",
+                "name": "Rapsöl",
+                "need": {
+                  "text": "2 EL + 1 TL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "EL",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 TL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "TL",
+                      "approx": false
+                    }
+                  ]
+                },
+                "display": "2 EL + 1 TL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "tomatenmark",
+                "name": "Tomatenmark",
+                "need": {
+                  "text": "15 g",
+                  "value": 15.0,
+                  "max": 15.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "15 g",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "weissweinessig",
+                "name": "Weißweinessig",
+                "need": {
+                  "text": "62½ ml",
+                  "value": 62.5,
+                  "max": 62.5,
+                  "unit": "ml",
+                  "approx": false
+                },
+                "display": "62½ ml",
+                "inStock": false,
+                "pantry": true,
+                "note": "\\~65 ml"
+              },
+              {
+                "ingredient": "zucker",
+                "name": "Zucker",
+                "need": {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "1 TL",
+                "inStock": false,
+                "optional": true,
+                "pantry": true,
+                "note": "1 TL fürs Dressing"
+              },
+              {
+                "ingredient": "meersalz",
+                "name": "Meersalz, grob",
+                "need": {
+                  "text": "10 g",
+                  "value": 10.0,
+                  "max": 10.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "10 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "für die Schwarte"
+              },
+              {
+                "ingredient": "salz",
+                "name": "Salz",
+                "need": {
+                  "text": "18 g + 3 TL + 1 EL",
+                  "value": 18.0,
+                  "max": 18.0,
+                  "unit": "g",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "3 TL",
+                      "value": 3.0,
+                      "max": 3.0,
+                      "unit": "TL",
+                      "approx": false
+                    },
+                    {
+                      "text": "1 EL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "EL",
+                      "approx": false
+                    }
+                  ]
+                },
+                "display": "18 g + 3 TL + 1 EL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "pfeffer",
+                "name": "Pfeffer",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "kuemmel",
+                "name": "Kümmel, ganz",
+                "need": {
+                  "text": "2¼–2½ TL",
+                  "value": 2.25,
+                  "max": 2.5,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "2¼–2½ TL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "majoran",
+                "name": "Majoran, getrocknet",
+                "need": {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "1 TL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "lorbeerblaetter",
+                "name": "Lorbeerblätter",
+                "need": {
+                  "text": "1",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "1",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "muskatnuss",
+                "name": "Muskatnuss",
+                "need": {
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
+                  "approx": false
+                },
+                "display": "1 Prise",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "wasser",
+                "name": "Wasser",
+                "need": {
+                  "text": "5600–5650 ml",
+                  "value": 5600.0,
+                  "max": 5650.0,
+                  "unit": "ml",
+                  "approx": false
+                },
+                "display": "5600–5650 ml",
+                "inStock": false,
+                "pantry": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
