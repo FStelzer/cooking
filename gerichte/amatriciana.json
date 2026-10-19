@@ -1,0 +1,1243 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/amatriciana",
+  "kind": "dish",
+  "title": "Amatriciana — Guanciale, San-Marzano-Tomaten, Pecorino (3 Portionen)",
+  "status": "done",
+  "yields": {
+    "text": "3 Portionen",
+    "value": 3.0,
+    "unit": "Portionen"
+  },
+  "intro": "*Aktive Zeit \\~30 Min., gesamt \\~35 Min. Equipment: weite Edelstahlpfanne (28 cm), Nudeltopf oder zweite weite Pfanne für die Pasta, kleine Pfanne, Microplane-Reibe, Schaumlöffel, Pastazange.*\n\n*Varianten: Wein = Ohne Wein | Mit Weißwein*\n\nDie Tomaten-Schwester der Gricia: Guanciale in Streifen ausgelassen, mit einem Schuss\nWeißwein abgelöscht (optional, laut Amatrice-Rezept erlaubt), dann San-Marzano-Tomaten im\nGuanciale-Fett zu einem dichten, glänzenden Sugo gekocht, Pasta darin fertig gegart und mit\nPecorino gebunden. **Kein Knoblauch, keine Zwiebel.** Die Chili-Schärfe kommt hier nicht in\ndie Pfanne, sondern als Chili-Guanciale-Öl auf die Erwachsenen-Teller. Technik zu Nudelwasser\nund Käse-Bindung: **[Pasta-Emulsion](/technik/pasta-emulsion.md)**.",
+  "times": {
+    "text": "Aktive Zeit ~30 Min., gesamt ~35 Min.",
+    "active": {
+      "typical": "PT30M",
+      "source": "30 Min."
+    },
+    "total": {
+      "typical": "PT35M",
+      "source": "35 Min."
+    }
+  },
+  "equipment": [
+    "weite Edelstahlpfanne (28 cm)",
+    "Nudeltopf oder zweite weite Pfanne für die Pasta",
+    "kleine Pfanne",
+    "Microplane-Reibe",
+    "Schaumlöffel",
+    "Pastazange"
+  ],
+  "variants": [
+    {
+      "id": "wein",
+      "label": "Wein",
+      "choices": [
+        {
+          "id": "ohne-wein",
+          "label": "Ohne Wein"
+        },
+        {
+          "id": "mit-weisswein",
+          "label": "Mit Weißwein"
+        }
+      ],
+      "default": "ohne-wein"
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "guanciale",
+      "name": "Guanciale, am Stück",
+      "store": "Online",
+      "buy": {
+        "text": "300–400 g"
+      },
+      "note": "italienischer Feinkostladen oder online; Verbrauch 90 g, Rest für die Carbonara; Fallback: Pancetta tesa am Stück, REWE Center"
+    },
+    {
+      "id": "pecorino",
+      "name": "Pecorino Romano DOP, am Stück",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "200–250 g"
+      },
+      "note": "1 Keil; Verbrauch 60 g"
+    },
+    {
+      "id": "tomaten",
+      "name": "Tomaten, geschält: San Marzano DOP",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 Dose"
+      },
+      "note": "400 g; Fallback: Mutti/Cirio Pelati"
+    },
+    {
+      "id": "pasta",
+      "name": "Pasta, bronzegezogen: Spaghetti, Bucatini oder Rigatoni",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "500 g"
+      },
+      "note": "Rummo/Garofalo/De Cecco; Verbrauch 250 g"
+    },
+    {
+      "id": "weisswein",
+      "name": "Weißwein, trocken **",
+      "store": "REWE Center",
+      "group": "Getränke",
+      "buy": {
+        "text": "1 Flasche"
+      },
+      "optional": true,
+      "only": [
+        "wein=mit-weisswein"
+      ],
+      "note": "Verbrauch 50 ml; nicht in der Schwangerschaft"
+    },
+    {
+      "id": "olivenoel",
+      "name": "Olivenöl, nativ extra",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Verbrauch 2 EL"
+    },
+    {
+      "id": "chilischoten",
+      "name": "Chilischoten, getrocknet",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Peperoncino; Verbrauch 1; oder ½ TL Chiliflocken"
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Verbrauch 10–11 g fürs Nudelwasser + Prise für den Sugo"
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Stil-Entscheidung",
+      "level": 2,
+      "markdown": "- **Amatrice vs. Rom.** Das Rezept des Comune di Amatrice (De.Co. 2015) und die EU-geschützte\n  „Amatriciana Tradizionale\" (STG, 2020) sind eindeutig: Guanciale, Tomate, Pecorino, Olivenöl,\n  Weißwein, Chili, Salz — **Knoblauch, Zwiebel und Pancetta sind ausgeschlossen**. In Rom\n  dagegen stehen in den klassischen Kochbüchern oft Zwiebeln drin, und viele Trattorien\n  servieren sie mit Bucatini oder Rigatoni statt Spaghetti. Hier: **Amatrice-Linie** (ohne\n  Zwiebel) — die Zwiebel macht den Sugo süßer und runder, verwischt aber genau den\n  Kontrast aus salzig-fettem Guanciale, säuerlicher Tomate und scharfem Pecorino, um den es\n  geht. Wer die römische Version testen will: ½ fein gewürfelte Zwiebel nach dem Herausnehmen\n  des Guanciale 5 Min. im Fett glasig dünsten, dann Tomaten.\n- **Guanciale knusprig herausnehmen, zum Schluss zurück** (so im Amatrice-Rezept): Er bleibt\n  außen knusprig statt im Sugo weich zu kochen; das Fett hat seinen Geschmack trotzdem an die\n  Tomaten abgegeben.\n- **Weißwein:** Im Amatrice-Rezept „ein Schuss\" zum Ablöschen, in der STG als Zutat gelistet —\n  aber kein Muss. In der Schwangerschaft fällt er weg (Variante „Ohne Wein\", Default); die\n  Säure der San Marzano trägt das Gericht auch allein.\n- **Tomaten:** Amatrice nimmt frische San-Marzano-Tomaten (6–7 Stück auf 500 g Pasta) oder\n  400 g geschälte. Außerhalb des Hochsommers ist die Dose besser als jede Supermarkt-Tomate.\n  Wir nehmen relativ zur Pasta etwas mehr Tomate (eine ganze 400-g-Dose auf 250 g) — der Sugo\n  wird dafür länger eingekocht.\n- **Pasta:** Spaghetti (Amatrice), Bucatini (Rom — schwierig zu essen, spritzen) oder\n  Rigatoni. Für den Dreijährigen: Spaghetti oder Rigatoni.",
+      "tags": [
+        "stil"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Guanciale:** siehe [Carbonara](/gerichte/carbonara.md), Abschnitt Beschaffung — kaum\n  im Supermarkt, REWE Center/Selgros nur sporadisch (anrufen), zuverlässig nur Feinkost oder\n  online am Stück. Ein 300–400-g-Stück reicht für Carbonara und Amatriciana. Fallback:\n  Pancetta tesa am Stück, kein Bacon.\n- **San-Marzano-Tomaten DOP (Dose):** Auf „Pomodoro San Marzano dell'Agro Sarnese-Nocerino\n  DOP\" mit Konsortium-Siegel und Nummer achten (Cirio, La Fiammante, Mutti u. a.; im REWE\n  Center meist eine, sonst italienischer Laden/online). Viele „San Marzano\"-Dosen ohne DOP\n  sind nur die Sorte, nicht die Herkunft. **Fallback:** gute ganze geschälte Tomaten\n  (Pelati) von Mutti oder Cirio — die Qualität der Dose wiegt mehr als das Siegel.\n- **Pecorino Romano DOP am Stück:** REWE Center/Selgros, nie vorgerieben.\n- **Getrocknete Chilischoten (Peperoncino):** italienische kleine getrocknete Schoten oder\n  Chiliflocken; Supermarkt.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "markdown",
+      "title": "Mise en place",
+      "level": "bold",
+      "markdown": "**Mise en place:** Käse, Guanciale und Tomaten vorbereiten, Wasser aufsetzen — dann läuft\nalles in einer Pfanne durch; die Pasta startet, sobald der Sugo köchelt."
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Amatriciana — Guanciale, San-Marzano-Tomaten, Pecorino (3 Portionen)",
+          "steps": [
+            {
+              "id": "pecorino-reiben",
+              "label": "1",
+              "heading": "**1. Pecorino reiben (6 Min.)**",
+              "title": "Pecorino reiben",
+              "duration": {
+                "typical": "PT6M",
+                "source": "6 Min."
+              },
+              "text": "Rinde vom Pecorino abschneiden, dann 60 g Pecorino mit der Microplane fein reiben. Ein Drittel davon in ein Schälchen fürs Anrichten abnehmen.",
+              "action": "Rinde vom Pecorino abschneiden, dann 60 g Pecorino mit der Microplane fein reiben.",
+              "ingredients": [
+                {
+                  "ref": "pecorino",
+                  "amount": {
+                    "text": "60 g Pecorino",
+                    "value": 60.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "guanciale-schneiden",
+              "label": "2",
+              "heading": "**2. Guanciale schneiden (5 Min.)**",
+              "title": "Guanciale schneiden",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Von 90 g Guanciale die Schwarte und die äußere Gewürzkruste abschneiden, dann in Streifen von \\~1 cm Breite, 0,5 cm Dicke und 3 cm Länge schneiden.",
+              "action": "Von 90 g Guanciale die Schwarte und die äußere Gewürzkruste abschneiden, dann in Streifen von \\~1 cm Breite, 0,5 cm Dicke und 3 cm Länge schneiden.",
+              "ingredients": [
+                {
+                  "ref": "guanciale",
+                  "amount": {
+                    "text": "90 g Guanciale",
+                    "value": 90.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "tomaten-vorbereiten",
+              "label": "3",
+              "heading": "**3. Tomaten vorbereiten (3 Min.)**",
+              "title": "Tomaten vorbereiten",
+              "duration": {
+                "typical": "PT3M",
+                "source": "3 Min."
+              },
+              "text": "400 g Tomaten aus der Dose in eine Schüssel geben und mit der Hand grob zerdrücken; harte Stielansätze und Hautreste herausnehmen, den Saft behalten. *Von Hand zerdrückt bleibt Textur — nicht pürieren, der Sugo soll stückig-glänzend sein.*",
+              "action": "400 g Tomaten aus der Dose in eine Schüssel geben und mit der Hand grob zerdrücken; harte Stielansätze und Hautreste herausnehmen, den Saft behalten.",
+              "why": "Von Hand zerdrückt bleibt Textur — nicht pürieren, der Sugo soll stückig-glänzend sein.",
+              "ingredients": [
+                {
+                  "ref": "tomaten",
+                  "amount": {
+                    "text": "400 g Tomaten",
+                    "value": 400.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "wasser-aufsetzen",
+              "label": "4",
+              "heading": "**4. Wasser aufsetzen (8 Min.)**",
+              "title": "Wasser aufsetzen",
+              "duration": {
+                "typical": "PT8M",
+                "source": "8 Min."
+              },
+              "text": "1,5 l Wasser im Nudeltopf (oder in der zweiten weiten Pfanne) aufsetzen und 10–11 g Salz zugeben (0,7 %).",
+              "action": "1,5 l Wasser im Nudeltopf (oder in der zweiten weiten Pfanne) aufsetzen und 10–11 g Salz zugeben (0,7 %).",
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "1,5 l Wasser",
+                    "value": 1.5,
+                    "unit": "l"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "10–11 g Salz",
+                    "value": 10.0,
+                    "unit": "g",
+                    "max": 11.0
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "guanciale-auslassen",
+              "label": "5",
+              "heading": "**5. Guanciale auslassen (10–12 Min.)**",
+              "title": "Guanciale auslassen",
+              "duration": {
+                "min": "PT10M",
+                "max": "PT12M",
+                "source": "10–12 Min."
+              },
+              "text": "Die Guanciale-Streifen mit 1 EL Olivenöl in die **kalte** weite Pfanne geben und auf mittlerer bis kleiner Hitze langsam auslassen, gelegentlich wenden, **bis das Fett klar in der Pfanne steht und die Streifen goldbraun mit knusprigen Rändern sind** (innen noch leicht nachgebend). *Das Öl hilft nur beim Start, damit nichts ansetzt, bevor das Fett fließt.*",
+              "action": "Die Guanciale-Streifen mit 1 EL Olivenöl in die **kalte** weite Pfanne geben und auf mittlerer bis kleiner Hitze langsam auslassen, gelegentlich wenden, **bis das Fett klar in der Pfanne steht und die Streifen goldbraun mit knusprigen Rändern sind** (innen noch leicht nachgebend).",
+              "limits": [
+                "bis das Fett klar in der Pfanne steht und die Streifen goldbraun mit knusprigen Rändern sind"
+              ],
+              "why": "Das Öl hilft nur beim Start, damit nichts ansetzt, bevor das Fett fließt.",
+              "cues": [
+                "bis das Fett klar in der Pfanne steht und die Streifen goldbraun mit knusprigen Rändern sind"
+              ],
+              "ingredients": [
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "1 EL Olivenöl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Guanciale schneiden · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:guanciale-schneiden"
+              ]
+            },
+            {
+              "id": "abloeschen",
+              "label": "6",
+              "heading": "**6. Ablöschen (1 Min.)**",
+              "title": "Ablöschen",
+              "duration": {
+                "typical": "PT1M",
+                "source": "1 Min."
+              },
+              "text": "Hitze kurz hochdrehen, mit 50 ml Weißwein ablöschen und unter Schwenken \\~1 Min. einkochen, bis es nicht mehr scharf nach Alkohol riecht und fast nur noch Fett in der Pfanne ist.",
+              "action": "Hitze kurz hochdrehen, mit 50 ml Weißwein ablöschen und unter Schwenken \\~1 Min. einkochen, bis es nicht mehr scharf nach Alkohol riecht und fast nur noch Fett in der Pfanne ist.",
+              "cues": [
+                "bis es nicht mehr scharf nach Alkohol riecht und fast nur noch Fett in der Pfanne ist"
+              ],
+              "ingredients": [
+                {
+                  "ref": "weisswein",
+                  "amount": {
+                    "text": "50 ml Weißwein",
+                    "value": 50.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*nur Mit Weißwein · nach Guanciale auslassen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "only": [
+                "wein=mit-weisswein"
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Ablöschen",
+                  "duration": {
+                    "typical": "PT1M"
+                  },
+                  "text": "1 Min."
+                }
+              ],
+              "after": [
+                "step:guanciale-auslassen"
+              ]
+            },
+            {
+              "id": "guanciale-herausnehmen",
+              "label": "7",
+              "heading": "**7. Guanciale herausnehmen (1 Min.)**",
+              "title": "Guanciale herausnehmen",
+              "duration": {
+                "typical": "PT1M",
+                "source": "1 Min."
+              },
+              "text": "Die Guanciale-Streifen mit dem Schaumlöffel auf einen Teller heben und warm stellen. Das Fett bleibt in der Pfanne; 1 EL davon in die kleine Pfanne für das Chili-Öl abnehmen.",
+              "action": "Die Guanciale-Streifen mit dem Schaumlöffel auf einen Teller heben und warm stellen.",
+              "ingredients": [],
+              "meta": "*nach Guanciale auslassen, Ablöschen*",
+              "attention": "active",
+              "after": [
+                "step:guanciale-auslassen",
+                "step:abloeschen"
+              ]
+            },
+            {
+              "id": "sugo-koecheln",
+              "label": "8",
+              "heading": "**8. Sugo köcheln (12–15 Min.)**",
+              "title": "Sugo köcheln",
+              "duration": {
+                "min": "PT12M",
+                "max": "PT15M",
+                "source": "12–15 Min."
+              },
+              "text": "Die zerdrückten Tomaten in das heiße Fett geben (**spritzt** — Deckel als Schild), aufkochen und auf mittlerer Hitze offen köcheln lassen, gelegentlich rühren, **bis der Sugo dick und glänzend ist und sich am Pfannenrand rötliches Fett absetzt**. Mit 1 Prise Salz vorsichtig abschmecken — Guanciale und Pecorino salzen nach.",
+              "action": "Die zerdrückten Tomaten in das heiße Fett geben (**spritzt** — Deckel als Schild), aufkochen und auf mittlerer Hitze offen köcheln lassen, gelegentlich rühren, **bis der Sugo dick und glänzend ist und sich am Pfannenrand rötliches Fett absetzt**.",
+              "limits": [
+                "bis der Sugo dick und glänzend ist und sich am Pfannenrand rötliches Fett absetzt"
+              ],
+              "cues": [
+                "bis der Sugo dick und glänzend ist und sich am Pfannenrand rötliches Fett absetzt"
+              ],
+              "ingredients": [
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 Prise Salz",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                }
+              ],
+              "meta": "*nach Guanciale herausnehmen, Tomaten vorbereiten · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Sugo köcheln",
+                  "duration": {
+                    "min": "PT12M",
+                    "max": "PT15M"
+                  },
+                  "text": "12–15 Min."
+                }
+              ],
+              "after": [
+                "step:guanciale-herausnehmen",
+                "step:tomaten-vorbereiten"
+              ]
+            },
+            {
+              "id": "pasta-kochen",
+              "label": "9",
+              "heading": "**9. Pasta kochen (9–12 Min.)**",
+              "title": "Pasta kochen",
+              "duration": {
+                "min": "PT9M",
+                "max": "PT12M",
+                "source": "9–12 Min."
+              },
+              "text": "Sobald der Sugo köchelt: 250 g Pasta ins sprudelnde Wasser, oft rühren, **Packungszeit minus 1–2 Min.** Nach 4 Min. 2 Tassen (\\~300 ml) Nudelwasser abschöpfen und beiseitestellen.",
+              "action": "Sobald der Sugo köchelt: 250 g Pasta ins sprudelnde Wasser, oft rühren, **Packungszeit minus 1–2 Min.** Nach 4 Min.",
+              "limits": [
+                "Packungszeit minus 1–2 Min."
+              ],
+              "timers": [
+                {
+                  "label": "Pasta kochen",
+                  "duration": {
+                    "min": "PT1M",
+                    "max": "PT2M"
+                  },
+                  "text": "1–2 Min."
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT4M",
+                    "source": "4 Min."
+                  },
+                  "text": "Sobald der Sugo köchelt: 250 g Pasta ins sprudelnde Wasser, oft rühren, **Packungszeit minus 1–2 Min.** Nach 4 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "pasta",
+                  "amount": {
+                    "text": "250 g Pasta",
+                    "value": 250.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nach Wasser aufsetzen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:wasser-aufsetzen"
+              ]
+            },
+            {
+              "id": "chili-oel",
+              "label": "10",
+              "heading": "**10. Chili-Öl (2 Min.)**",
+              "title": "Chili-Öl",
+              "duration": {
+                "typical": "PT2M",
+                "source": "2 Min."
+              },
+              "text": "1 Chilischote zerbröseln (Kerne nach Geschmack entfernen) und mit 1 EL Olivenöl zum abgenommenen Guanciale-Fett in die kleine Pfanne geben; bei kleiner Hitze 1 Min. ziehen lassen, bis das Öl rötlich wird und duftet — **nicht bräunen**. In ein Schälchen für den Tisch füllen.",
+              "action": "1 Chilischote zerbröseln (Kerne nach Geschmack entfernen) und mit 1 EL Olivenöl zum abgenommenen Guanciale-Fett in die kleine Pfanne geben; bei kleiner Hitze 1 Min. ziehen lassen, bis das Öl rötlich wird und duftet — **nicht bräunen**.",
+              "limits": [
+                "nicht bräunen"
+              ],
+              "cues": [
+                "bis das Öl rötlich wird und duftet"
+              ],
+              "ingredients": [
+                {
+                  "ref": "chilischoten",
+                  "amount": {
+                    "text": "1 Chilischote",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "1 EL Olivenöl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Guanciale herausnehmen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Chili-Öl",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                }
+              ],
+              "after": [
+                "step:guanciale-herausnehmen"
+              ]
+            },
+            {
+              "id": "mantecatura",
+              "label": "11",
+              "heading": "**11. Mantecatura (2–3 Min.)**",
+              "title": "Mantecatura",
+              "duration": {
+                "min": "PT2M",
+                "max": "PT3M",
+                "source": "2–3 Min."
+              },
+              "text": "Drei Viertel der Guanciale-Streifen zurück in den Sugo. Die Pasta mit der Zange direkt in den Sugo heben, 2–3 EL Nudelwasser dazu und auf mittlerer Hitze **1 Min. schwenken**, bis die Pasta fertig gegart ist und der Sugo sie glänzend überzieht. **Pfanne vom Herd, 30 Sek. warten**, dann die übrigen zwei Drittel des Pecorino darüberstreuen und kräftig schwenken; Nudelwasser löffelweise, falls es zu trocken wird. *Käse erst abseits der Hitze — sonst zieht er Fäden statt zu binden.*",
+              "action": "Drei Viertel der Guanciale-Streifen zurück in den Sugo.",
+              "limits": [
+                "1 Min. schwenken",
+                "Pfanne vom Herd, 30 Sek. warten"
+              ],
+              "why": "Käse erst abseits der Hitze — sonst zieht er Fäden statt zu binden.",
+              "cues": [
+                "bis die Pasta fertig gegart ist und der Sugo sie glänzend überzieht"
+              ],
+              "ingredients": [],
+              "meta": "*nach Pasta kochen, Sugo köcheln*",
+              "attention": "active",
+              "after": [
+                "step:pasta-kochen",
+                "step:sugo-koecheln"
+              ]
+            },
+            {
+              "id": "anrichten",
+              "label": "12",
+              "heading": "**12. Anrichten (1 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT1M",
+                "source": "1 Min."
+              },
+              "text": "Auf vorgewärmte Teller: Erwachsene \\~⅗, Schwangere \\~⅖ der Pfanne, Kind den Rest. Restliche Guanciale-Streifen und den beiseitegestellten Pecorino obendrauf. Das Chili-Öl kommt auf den Tisch — jeder Erwachsene nimmt ½–1 TL.",
+              "action": "Auf vorgewärmte Teller: Erwachsene \\~⅗, Schwangere \\~⅖ der Pfanne, Kind den Rest.",
+              "ingredients": [],
+              "meta": "*nach Mantecatura, Chili-Öl*",
+              "attention": "active",
+              "after": [
+                "step:mantecatura",
+                "step:chili-oel"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Keine Schärfe in der Pfanne:** Die Chili steckt nur im Chili-Öl auf dem Tisch. Der\n  Kinderteller bekommt einfach keins.\n- Tomate + Speck + Käse ist für einen Dreijährigen ein Heimspiel. Spaghetti einmal mit der\n  Schere kürzen, Guanciale-Streifen ggf. halbieren.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "Geprüft gegen den [Leitfaden](/schwangerschaft/leitfaden.md):\n\n- **Weißwein:** Im Original optional → in der Schwangerschaft weglassen (Variante „Ohne Wein\",\n  Default). Nach 1 Min. Einkochen und 15 Min. Sugo bliebe ein Teil des Alkohols im Gericht\n  (Leitfaden: nach 30 Min. Kochen noch \\~35 %). Ersatz ist nicht nötig.\n- **Guanciale** ist roher Pökelspeck → nur vollständig ausgebraten essen. Hier 10–12 Min. in\n  Streifen ausgelassen und am Ende im heißen Sugo — durchgegart, unkritisch. Nicht roh vom\n  Brett naschen.\n- **Pecorino Romano DOP:** lange gereifter Rohmilch-Hartkäse (Reibe-Pecorino ≥ 8 Monate) —\n  laut BZfE-Merkblatt *Gesund ins Leben* „unproblematisch\"; **Rinde sorgfältig ab, am Stück\n  kaufen, frisch reiben**, kein vorgeriebener Käse.\n- **Chili:** gegart, unkritisch (Leitfaden) — nur Sodbrennen ist ein Thema.\n- **GDM:** **70 g Pasta trocken** (\\~50 g KH), al dente. Der Sugo selbst ist KH-arm (400 g\n  Tomaten ≈ 12 g KH für alle). **Protein ist die Schwachstelle:** 90 g Guanciale ist fast nur\n  Fett, Pecorino liefert \\~5 g pro Portion. Deshalb Protein und Gemüse **davor**: z. B. ein\n  Salat mit weißen Bohnen (Cannellini, Zitrone, Olivenöl, Petersilie) oder ein kleines Stück\n  gebratene Hähnchenbrust bzw. Fisch als Secondo-Ersatz. Danach Spaziergang.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Amatrice-Rezept (Comune di Amatrice):** \\~500 g Spaghetti, 125 g Guanciale, Olivenöl, ein Schuss trockener Weißwein, 6–7 San-Marzano-Tomaten oder 400 g geschälte, ein Stück Chili, 100 g Pecorino; Guanciale mit Öl und Chili auslassen, ablöschen, herausnehmen, Tomaten wenige Minuten köcheln, Guanciale zurück, Pasta mit Pecorino — wiedergegeben bei [Scatti di Gusto — Come fare la vera Amatriciana](https://www.scattidigusto.it/2018/09/02/come-fare-la-vera-amatriciana/).\n- **STG „Amatriciana Tradizionale\" (2020):** Guanciale vom Typ Amatrice bzw. aus frischer Schweinebacke, Tomate (Passata/Pelati), Pecorino Amatriciano oder Pecorino Romano DOP aus dem Latium, Olivenöl, Weißwein, Salz, Chili, Pfeffer; **Knoblauch, Zwiebel, Pancetta verboten** — [Dissapore — Amatriciana STG, la ricetta ufficiale](https://www.dissapore.com/notizie/amatriciana-stg-la-ricetta-ufficiale-da-oggi-riconosciuta-dallue/); Disciplinare im Original: [MIPAAF-Provvedimento 13.3.2020 (PDF)](https://unionalimentari.com/wp-content/uploads/2024/09/MIPAAF-provv-13.3.2020-Amatriciana-Tradizionale-STGCOMPL.pdf), [ARSIAL-Entwurf (PDF)](https://www.arsial.it/app/uploads/DISCIPLINARE-DI-PRODUZIONE-per-Pubblica-Audizione.pdf).\n- **Rom vs. Amatrice (Zwiebel, Pasta-Form), Cracco-Knoblauch-Streit 2015:** [Wikipedia — Amatriciana sauce](https://en.wikipedia.org/wiki/Amatriciana_sauce); [Dissapore — Cracco, aglio nell'amatriciana](https://www.dissapore.com/grande-notizia/carlo-cracco-aglio-amatriciana-la-verita/).\n- **Chili vom Pfannen- auf den Tellerweg verlegt:** wegen des Kindes; im Amatrice-Rezept zieht ein Stück Chili im Fett mit. Für eine Version ohne Kind: ½ Chilischote mit dem Guanciale auslassen und vor dem Servieren entfernen.\n- **Mengen:** 250 g Pasta (120 + 70 + 60 g); Guanciale 90 g (Amatrice: 62 g auf 250 g — wir etwas großzügiger, weil ein Teil als Topping knusprig bleibt); Pecorino 60 g; 400 g Tomaten.\n- **Pasta-Marken, Salz, Mantecatura:** [Pasta-Emulsion](/technik/pasta-emulsion.md) mit Quellen dort.\n- **Schwangerschaft:** BZfE/Gesund ins Leben, [Listeriose und Toxoplasmose — Sicher essen in der Schwangerschaft](https://www.gesund-ins-leben.de/fileadmin/resources/import/pdf/0346_2017_web.pdf).",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-19T06:40:24Z",
+    "sourceHash": "51cfc8599b870b57",
+    "select": {
+      "wein": "ohne-wein"
+    },
+    "quantities": [
+      {
+        "ingredient": "guanciale",
+        "total": {
+          "text": "90 g",
+          "value": 90.0,
+          "max": 90.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "90 g Guanciale"
+        }
+      },
+      {
+        "ingredient": "pecorino",
+        "total": {
+          "text": "60 g",
+          "value": 60.0,
+          "max": 60.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "60 g Pecorino"
+        }
+      },
+      {
+        "ingredient": "tomaten",
+        "total": {
+          "text": "400 g",
+          "value": 400.0,
+          "max": 400.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "400 g Tomaten"
+        }
+      },
+      {
+        "ingredient": "pasta",
+        "total": {
+          "text": "250 g",
+          "value": 250.0,
+          "max": 250.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "250 g Pasta"
+        }
+      },
+      {
+        "ingredient": "olivenoel",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 EL Olivenöl + 1 EL Olivenöl"
+        }
+      },
+      {
+        "ingredient": "chilischoten",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Chilischote"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "10–11 g + 1 Prise",
+          "value": 10.0,
+          "max": 11.0,
+          "unit": "g",
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "main": "10–11 g Salz + 1 Prise Salz"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "1500 ml",
+          "value": 1500.0,
+          "max": 1500.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1,5 l Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Online",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "guanciale",
+            "name": "Guanciale, am Stück",
+            "need": {
+              "text": "90 g",
+              "value": 90.0,
+              "max": 90.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "90 g",
+            "inStock": false,
+            "buy": {
+              "text": "300–400 g"
+            },
+            "note": "italienischer Feinkostladen oder online; Verbrauch 90 g, Rest für die Carbonara; Fallback: Pancetta tesa am Stück, REWE Center"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "pecorino",
+            "name": "Pecorino Romano DOP, am Stück",
+            "need": {
+              "text": "60 g",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "60 g",
+            "inStock": false,
+            "buy": {
+              "text": "200–250 g"
+            },
+            "note": "1 Keil; Verbrauch 60 g"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "tomaten",
+            "name": "Tomaten, geschält: San Marzano DOP",
+            "need": {
+              "text": "400 g",
+              "value": 400.0,
+              "max": 400.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "400 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 Dose"
+            },
+            "note": "400 g; Fallback: Mutti/Cirio Pelati"
+          },
+          {
+            "ingredient": "pasta",
+            "name": "Pasta, bronzegezogen: Spaghetti, Bucatini oder Rigatoni",
+            "need": {
+              "text": "250 g",
+              "value": 250.0,
+              "max": 250.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "250 g",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            },
+            "note": "Rummo/Garofalo/De Cecco; Verbrauch 250 g"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "olivenoel",
+            "name": "Olivenöl, nativ extra",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "Verbrauch 2 EL"
+          },
+          {
+            "ingredient": "chilischoten",
+            "name": "Chilischoten, getrocknet",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "pantry": true,
+            "note": "Peperoncino; Verbrauch 1; oder ½ TL Chiliflocken"
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "10–11 g + 1 Prise",
+              "value": 10.0,
+              "max": 11.0,
+              "unit": "g",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "10–11 g + 1 Prise",
+            "inStock": false,
+            "pantry": true,
+            "note": "Verbrauch 10–11 g fürs Nudelwasser + Prise für den Sugo"
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "1500 ml",
+              "value": 1500.0,
+              "max": 1500.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "1500 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "key": "wein=mit-weisswein",
+        "select": {
+          "wein": "mit-weisswein"
+        },
+        "quantities": [
+          {
+            "ingredient": "guanciale",
+            "total": {
+              "text": "90 g",
+              "value": 90.0,
+              "max": 90.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "90 g Guanciale"
+            }
+          },
+          {
+            "ingredient": "pecorino",
+            "total": {
+              "text": "60 g",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "60 g Pecorino"
+            }
+          },
+          {
+            "ingredient": "tomaten",
+            "total": {
+              "text": "400 g",
+              "value": 400.0,
+              "max": 400.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "400 g Tomaten"
+            }
+          },
+          {
+            "ingredient": "pasta",
+            "total": {
+              "text": "250 g",
+              "value": 250.0,
+              "max": 250.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "250 g Pasta"
+            }
+          },
+          {
+            "ingredient": "weisswein",
+            "total": {
+              "text": "50 ml",
+              "value": 50.0,
+              "max": 50.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "perTask": {
+              "main": "50 ml Weißwein"
+            }
+          },
+          {
+            "ingredient": "olivenoel",
+            "total": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 EL Olivenöl + 1 EL Olivenöl"
+            }
+          },
+          {
+            "ingredient": "chilischoten",
+            "total": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 Chilischote"
+            }
+          },
+          {
+            "ingredient": "salz",
+            "total": {
+              "text": "10–11 g + 1 Prise",
+              "value": 10.0,
+              "max": 11.0,
+              "unit": "g",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
+                  "approx": false
+                }
+              ]
+            },
+            "perTask": {
+              "main": "10–11 g Salz + 1 Prise Salz"
+            },
+            "unitMixed": true
+          },
+          {
+            "ingredient": "wasser",
+            "total": {
+              "text": "1500 ml",
+              "value": 1500.0,
+              "max": 1500.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1,5 l Wasser"
+            }
+          }
+        ],
+        "shopping": [
+          {
+            "store": "Online",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "guanciale",
+                "name": "Guanciale, am Stück",
+                "need": {
+                  "text": "90 g",
+                  "value": 90.0,
+                  "max": 90.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "90 g",
+                "inStock": false,
+                "buy": {
+                  "text": "300–400 g"
+                },
+                "note": "italienischer Feinkostladen oder online; Verbrauch 90 g, Rest für die Carbonara; Fallback: Pancetta tesa am Stück, REWE Center"
+              }
+            ]
+          },
+          {
+            "store": "REWE Center",
+            "group": "Milchprodukte & Eier",
+            "items": [
+              {
+                "ingredient": "pecorino",
+                "name": "Pecorino Romano DOP, am Stück",
+                "need": {
+                  "text": "60 g",
+                  "value": 60.0,
+                  "max": 60.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "60 g",
+                "inStock": false,
+                "buy": {
+                  "text": "200–250 g"
+                },
+                "note": "1 Keil; Verbrauch 60 g"
+              }
+            ]
+          },
+          {
+            "store": "REWE Center",
+            "group": "Trockenwaren",
+            "items": [
+              {
+                "ingredient": "tomaten",
+                "name": "Tomaten, geschält: San Marzano DOP",
+                "need": {
+                  "text": "400 g",
+                  "value": 400.0,
+                  "max": 400.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "400 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Dose"
+                },
+                "note": "400 g; Fallback: Mutti/Cirio Pelati"
+              },
+              {
+                "ingredient": "pasta",
+                "name": "Pasta, bronzegezogen: Spaghetti, Bucatini oder Rigatoni",
+                "need": {
+                  "text": "250 g",
+                  "value": 250.0,
+                  "max": 250.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "250 g",
+                "inStock": false,
+                "buy": {
+                  "text": "500 g"
+                },
+                "note": "Rummo/Garofalo/De Cecco; Verbrauch 250 g"
+              }
+            ]
+          },
+          {
+            "store": "REWE Center",
+            "group": "Getränke",
+            "items": [
+              {
+                "ingredient": "weisswein",
+                "name": "Weißwein, trocken **",
+                "need": {
+                  "text": "50 ml",
+                  "value": 50.0,
+                  "max": 50.0,
+                  "unit": "ml",
+                  "approx": false
+                },
+                "display": "50 ml",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Flasche"
+                },
+                "optional": true,
+                "note": "Verbrauch 50 ml; nicht in der Schwangerschaft"
+              }
+            ]
+          },
+          {
+            "store": "Vorrat",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "olivenoel",
+                "name": "Olivenöl, nativ extra",
+                "need": {
+                  "text": "2 EL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "2 EL",
+                "inStock": false,
+                "pantry": true,
+                "note": "Verbrauch 2 EL"
+              },
+              {
+                "ingredient": "chilischoten",
+                "name": "Chilischoten, getrocknet",
+                "need": {
+                  "text": "1",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "1",
+                "inStock": false,
+                "pantry": true,
+                "note": "Peperoncino; Verbrauch 1; oder ½ TL Chiliflocken"
+              },
+              {
+                "ingredient": "salz",
+                "name": "Salz",
+                "need": {
+                  "text": "10–11 g + 1 Prise",
+                  "value": 10.0,
+                  "max": 11.0,
+                  "unit": "g",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 Prise",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "Prise",
+                      "approx": false
+                    }
+                  ]
+                },
+                "display": "10–11 g + 1 Prise",
+                "inStock": false,
+                "pantry": true,
+                "note": "Verbrauch 10–11 g fürs Nudelwasser + Prise für den Sugo"
+              },
+              {
+                "ingredient": "wasser",
+                "name": "Wasser",
+                "need": {
+                  "text": "1500 ml",
+                  "value": 1500.0,
+                  "max": 1500.0,
+                  "unit": "ml",
+                  "approx": false
+                },
+                "display": "1500 ml",
+                "inStock": false,
+                "pantry": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

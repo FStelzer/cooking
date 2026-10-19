@@ -1,0 +1,1242 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/carbonara",
+  "kind": "dish",
+  "title": "Carbonara — Guanciale, Eigelb, Pecorino, Pfeffer (3 Portionen)",
+  "status": "done",
+  "yields": {
+    "text": "3 Portionen",
+    "value": 3.0,
+    "unit": "Portionen"
+  },
+  "intro": "*Aktive Zeit \\~35 Min., gesamt \\~40 Min. Equipment: weite Edelstahlpfanne (28 cm), Nudeltopf (\\~3–4 l), Edelstahlschüssel, die stabil auf dem Nudeltopf sitzt (Wasserbad), Schneebesen, Clip-Thermometer, Microplane-Reibe, Mörser, Pastazange.*\n\n*Varianten: Ei = Schwangerschaft | Klassisch*\n\nRömische Carbonara ohne Sahne, ohne Knoblauch, ohne Zwiebel: Guanciale langsam ausgelassen,\nbis die Streifen außen knusprig und innen glasig-saftig sind; Eigelb, Pecorino und etwas\nParmigiano mit dem Guanciale-Fett zur Creme gerührt; die Pasta wird **in der Schüssel über\ndem Nudeltopf** (Wasserbad) mit Thermometer gebunden statt in der heißen Pfanne — das ist der\nganze Trick gegen Rührei. Zwei Wege: **„Schwangerschaft\"** (Default, solange sie gilt) gart das\nEigelb vorab als Sabayon auf 72 °C und rührt den Käse erst danach ein; **„Klassisch\"** bindet\nEigelb und Käse zusammen bei 60–63 °C. Hintergrund zu Emulsion, Käse und Nudelwasser:\n**[Pasta-Emulsion](/technik/pasta-emulsion.md)**.",
+  "times": {
+    "text": "Aktive Zeit ~35 Min., gesamt ~40 Min.",
+    "active": {
+      "typical": "PT35M",
+      "source": "35 Min."
+    },
+    "total": {
+      "typical": "PT40M",
+      "source": "40 Min."
+    }
+  },
+  "equipment": [
+    "weite Edelstahlpfanne (28 cm)",
+    "Nudeltopf (~3–4 l)",
+    "Edelstahlschüssel",
+    "die stabil auf dem Nudeltopf sitzt (Wasserbad)",
+    "Schneebesen",
+    "Clip-Thermometer",
+    "Microplane-Reibe",
+    "Mörser",
+    "Pastazange"
+  ],
+  "variants": [
+    {
+      "id": "ei",
+      "label": "Ei",
+      "choices": [
+        {
+          "id": "schwangerschaft",
+          "label": "Schwangerschaft"
+        },
+        {
+          "id": "klassisch",
+          "label": "Klassisch"
+        }
+      ],
+      "default": "schwangerschaft"
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "guanciale",
+      "name": "Guanciale, am Stück",
+      "store": "Online",
+      "buy": {
+        "text": "300–400 g"
+      },
+      "note": "italienischer Feinkostladen oder online; Verbrauch 120 g, Rest für die Amatriciana; Fallback: Pancetta tesa am Stück, REWE Center"
+    },
+    {
+      "id": "pecorino",
+      "name": "Pecorino Romano DOP, am Stück",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "200–250 g"
+      },
+      "note": "1 Keil; Verbrauch 60 g"
+    },
+    {
+      "id": "parmigiano",
+      "name": "Parmigiano Reggiano, am Stück",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "100 g"
+      },
+      "note": "Verbrauch 30 g"
+    },
+    {
+      "id": "eier",
+      "name": "Eier",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "6"
+      },
+      "note": "Größe M, Freiland oder Bio; Verbrauch 4 Eigelb"
+    },
+    {
+      "id": "pasta",
+      "name": "Pasta, bronzegezogen: Rigatoni oder Spaghetti",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "500 g"
+      },
+      "note": "Rummo/Garofalo/De Cecco; Verbrauch 250 g"
+    },
+    {
+      "id": "pfeffer",
+      "name": "Pfeffer, schwarz, ganze Körner",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Verbrauch 4 g ≈ 1½ TL"
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Verbrauch 9–10 g"
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Stil-Entscheidung",
+      "level": 2,
+      "markdown": "- **Nur Eigelb, kein ganzes Ei** (Luciano Monosilio, Rom): Eigelb bindet schneller und bei\n  niedrigerer Temperatur; Eiweiß dickt langsam an, bleibt leicht flüssig-glibberig und bringt\n  „Rührei-Geschmack\". Viele Trattorien nehmen 1 ganzes Ei auf 2–3 Eigelb, weil es die Sauce\n  leichter und günstiger macht — für die Sabayon-Variante wäre Eiweiß zudem ein\n  Unsicherheitsfaktor (stockt bei 62–65 °C). Die 4 Eiweiß einfrieren (Baiser, Financiers,\n  Klärung).\n- **Pecorino + ein Drittel Parmigiano:** Purist:innen nehmen nur Pecorino. Monosilio nimmt\n  sogar 1 : 2 Pecorino : Parmigiano, Pinna (Pecorino-Hersteller) und viele Römer \\~70 : 30.\n  Hier **2 : 1 Pecorino : Parmigiano** — der Pecorino gibt die Schärfe und das Salz, der\n  Parmigiano rundet und schmilzt gutmütiger. Und weil Guanciale **und** Pecorino salzen,\n  verhindert der Parmigiano, dass die Sauce kippt. Wer es kantiger will: 90 g nur Pecorino.\n- **Wasserbad statt Pfanne:** In der Pfanne entscheidet die Restwärme über Creme oder\n  Rührei — mit Wasserbad und Thermometer ist es eine Zahl. Monosilio arbeitet in der Schüssel\n  über dem Topf; Restaurant-Fassungen pasteurisieren das Eigelb vorab.\n- **Kein Rahm, kein Knoblauch, keine Zwiebel, kein Öl** — das Guanciale-Fett ist das Fett.\n- **Pasta:** Rigatoni (römische Trattoria) oder Spaghetti/Spaghettoni.",
+      "tags": [
+        "stil"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Guanciale (Schweinebacke, gepökelt, luftgetrocknet) — das Nadelöhr.** Im normalen\n  REWE/Aldi praktisch nie. Im REWE Center tauchen gelegentlich kleine Packungen (100 g,\n  z. T. bereits geschnitten oder gewürfelt, z. B. Villani) auf — **nicht verlässlich,\n  vorher anrufen**, und vorgeschnittenes Guanciale trocknet aus. Selgros führt zumindest\n  zeitweise Guanciale-Produkte (auch Metro: „Guanciale Sticks\" 1 kg) — auch dort anfragen.\n  **Zuverlässig:** italienischer Feinkostladen in Frankfurt/Offenbach oder online am Stück\n  (300–500 g Stücke, \\~25–35 €/kg; gekühlter Versand). Ein 400-g-Stück reicht für Carbonara\n  **und** [Amatriciana](/gerichte/amatriciana.md) und hält vakuumiert Wochen im Kühlschrank.\n- **Fallback: Pancetta tesa am Stück** (gerollte oder flache, ungeräucherte Bauch-Pancetta,\n  REWE Center Feinkosttheke oder Selgros). Weniger Fett, weniger Funk, aber nah dran. **Kein\n  Frühstücksspeck/Bacon** — Rauch schmeckt in dieser Sauce falsch.\n- **Pecorino Romano DOP am Stück** (REWE Center, Selgros) und **Parmigiano Reggiano am\n  Stück** (überall) — nie vorgerieben.\n- **Eier:** frisch, Größe M, Freiland oder Bio — das Eigelb ist hier Hauptdarsteller.\n- **Pasteurisiertes Flüssigeigelb** (für die Klassisch-Variante in der Schwangerschaft):\n  gibt es in Deutschland praktisch nur als Gastro-Ware im 1-kg-Tetrapak (z. B. Eifix,\n  Ovobest; im Gastro-Großhandel, bei Selgros **nicht bestätigt — anfragen**), nach dem\n  Öffnen 48 Std. haltbar. Für 4 Eigelb ist das unpraktisch; deshalb ist der Sabayon-Weg\n  hier der Default.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "markdown",
+      "title": "Mise en place",
+      "level": "bold",
+      "markdown": "**Mise en place:** Käse, Pfeffer und Guanciale sind fertig, bevor das Wasser kocht. In der\nSchwangerschafts-Variante kommt das Sabayon **vor** die Pasta — der Nudeltopf ist dafür das\nWasserbad."
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Carbonara — Guanciale, Eigelb, Pecorino, Pfeffer (3 Portionen)",
+          "steps": [
+            {
+              "id": "kaese-reiben",
+              "label": "1",
+              "heading": "**1. Käse reiben (8 Min.)**",
+              "title": "Käse reiben",
+              "duration": {
+                "typical": "PT8M",
+                "source": "8 Min."
+              },
+              "text": "Rinde von Pecorino und Parmigiano abschneiden, dann 60 g Pecorino und 30 g Parmigiano mit der Microplane fein in eine Schüssel reiben und mischen. Ein kleines Häufchen (10 g) in ein Schälchen fürs Anrichten abnehmen.",
+              "action": "Rinde von Pecorino und Parmigiano abschneiden, dann 60 g Pecorino und 30 g Parmigiano mit der Microplane fein in eine Schüssel reiben und mischen.",
+              "ingredients": [
+                {
+                  "ref": "pecorino",
+                  "amount": {
+                    "text": "60 g Pecorino",
+                    "value": 60.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "parmigiano",
+                  "amount": {
+                    "text": "30 g Parmigiano",
+                    "value": 30.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "pfeffer-roesten",
+              "label": "2",
+              "heading": "**2. Pfeffer rösten (3 Min.)**",
+              "title": "Pfeffer rösten",
+              "duration": {
+                "typical": "PT3M",
+                "source": "3 Min."
+              },
+              "text": "4 g Pfefferkörner (≈ 1½ TL) in einer kleinen trockenen Pfanne bei mittlerer Hitze 2 Min. rösten, bis sie duften, dann im Mörser grob zerstoßen. Die Hälfte kommt in die Creme, die andere Hälfte auf die Teller der Erwachsenen.",
+              "action": "4 g Pfefferkörner (≈ 1½ TL) in einer kleinen trockenen Pfanne bei mittlerer Hitze 2 Min. rösten, bis sie duften, dann im Mörser grob zerstoßen.",
+              "cues": [
+                "bis sie duften"
+              ],
+              "timers": [
+                {
+                  "label": "Pfeffer rösten",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "4 g Pfefferkörner",
+                    "value": 4.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "guanciale-schneiden",
+              "label": "3",
+              "heading": "**3. Guanciale schneiden (5 Min.)**",
+              "title": "Guanciale schneiden",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Von 120 g Guanciale die Schwarte und die äußere Pfeffer-/Gewürzkruste abschneiden (die Kruste ist oft ranzig-bitter), dann in **Streifen von \\~1 cm Breite, 0,5 cm Dicke und 3 cm Länge** schneiden. *Streifen statt Würfel: mehr Fläche zum Knusprigwerden, und innen bleibt Biss.*",
+              "action": "Von 120 g Guanciale die Schwarte und die äußere Pfeffer-/Gewürzkruste abschneiden (die Kruste ist oft ranzig-bitter), dann in **Streifen von \\~1 cm Breite, 0,5 cm Dicke und 3 cm Länge** schneiden.",
+              "limits": [
+                "Streifen von \\~1 cm Breite, 0,5 cm Dicke und 3 cm Länge"
+              ],
+              "why": "Streifen statt Würfel: mehr Fläche zum Knusprigwerden, und innen bleibt Biss.",
+              "ingredients": [
+                {
+                  "ref": "guanciale",
+                  "amount": {
+                    "text": "120 g Guanciale",
+                    "value": 120.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "guanciale-auslassen",
+              "label": "4",
+              "heading": "**4. Guanciale auslassen (12–15 Min.)**",
+              "title": "Guanciale auslassen",
+              "duration": {
+                "min": "PT12M",
+                "max": "PT15M",
+                "source": "12–15 Min."
+              },
+              "text": "Die Guanciale-Streifen in die **kalte**, trockene weite Pfanne geben (kein Öl) und auf mittlerer bis kleiner Hitze (Induktion \\~4 von 9) langsam auslassen, gelegentlich wenden,\n**bis das Fett glasig und flüssig in der Pfanne steht, die Ränder goldbraun-knusprig sind und die Streifen innen noch saftig nachgeben**. Mit dem Schaumlöffel auf einen Teller heben; das Fett (\\~3 EL) in der Pfanne lassen und die Pfanne vom Herd ziehen. *Zu heiß gestartet, versiegelt die Oberfläche, bevor das Fett schmilzt — außen hart, innen zäh-speckig.*",
+              "action": "Die Guanciale-Streifen in die **kalte**, trockene weite Pfanne geben (kein Öl) und auf mittlerer bis kleiner Hitze (Induktion \\~4 von 9) langsam auslassen, gelegentlich wenden,\n**bis das Fett glasig und flüssig in der Pfanne steht, die Ränder goldbraun-knusprig sind und die Streifen innen noch saftig nachgeben**.",
+              "limits": [
+                "bis das Fett glasig und flüssig in der Pfanne steht, die Ränder goldbraun-knusprig sind und die Streifen innen noch saftig nachgeben"
+              ],
+              "why": "Zu heiß gestartet, versiegelt die Oberfläche, bevor das Fett schmilzt — außen hart, innen zäh-speckig.",
+              "cues": [
+                "bis das Fett glasig und flüssig in der Pfanne steht"
+              ],
+              "ingredients": [],
+              "meta": "*nach Guanciale schneiden · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:guanciale-schneiden"
+              ]
+            },
+            {
+              "id": "wasser-aufsetzen",
+              "label": "5",
+              "heading": "**5. Wasser aufsetzen (8 Min.)**",
+              "title": "Wasser aufsetzen",
+              "duration": {
+                "typical": "PT8M",
+                "source": "8 Min."
+              },
+              "text": "1,5 l Wasser im Nudeltopf aufsetzen und 9–10 g Salz zugeben (0,6 %). Prüfen, dass die Edelstahlschüssel stabil auf dem Topfrand sitzt, ohne das Wasser zu berühren.",
+              "action": "1,5 l Wasser im Nudeltopf aufsetzen und 9–10 g Salz zugeben (0,6 %).",
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "1,5 l Wasser",
+                    "value": 1.5,
+                    "unit": "l"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "9–10 g Salz",
+                    "value": 9.0,
+                    "unit": "g",
+                    "max": 10.0
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "sabayon",
+              "label": "6",
+              "heading": "**6. Sabayon (6–8 Min.)**",
+              "title": "Sabayon",
+              "duration": {
+                "min": "PT6M",
+                "max": "PT8M",
+                "source": "6–8 Min."
+              },
+              "text": "Bevor die Pasta hineinkommt: Wasser auf **leises Simmern** zurückdrehen. 4 Eigelb, 60 ml heißes Wasser aus dem Topf und 2 EL vom Guanciale-Fett aus der Pfanne in die Edelstahlschüssel geben, auf den Topf setzen und **ununterbrochen schlagen**; Clip-Thermometer an den Schüsselrand, Fühler in die Masse. Bei **72 °C** (nach \\~3–4 Min.) beginnt die Haltezeit:\n**2 Min. zwischen 70 und 75 °C halten** — steigt es über 75 °C, Schüssel kurz abheben und weiterschlagen. Die Masse wird hell, dick und cremig wie eine Hollandaise-Basis. Dann Schüssel vom Topf nehmen. *Gebrochen/krisselig? Sofort 1 EL kaltes Wasser einschlagen, notfalls 10 Sek. Stabmixer — das rettet es fast immer.*\n\n> **Sicherheit:** Die Zahl ist der Grund für den Umweg — mindestens 2 Min. über 70 °C im\n> Inneren ist die Vorgabe von *Gesund ins Leben* für Salmonellen/Listerien. Das Wasser\n> verdünnt das Eigelb so weit, dass es bei 72 °C noch nicht stockt (dasselbe Prinzip wie\n> Sabayon und Crème anglaise).",
+              "action": "Bevor die Pasta hineinkommt: Wasser auf **leises Simmern** zurückdrehen.",
+              "limits": [
+                "leises Simmern",
+                "ununterbrochen schlagen",
+                "72 °C",
+                "2 Min. zwischen 70 und 75 °C halten"
+              ],
+              "timers": [
+                {
+                  "label": "Sabayon",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "min": "PT3M",
+                    "max": "PT4M",
+                    "source": "\\~3–4 Min.",
+                    "estimated": true
+                  },
+                  "text": "Bei **72 °C** (nach \\~3–4 Min.) beginnt die Haltezeit:\n**2 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "72 °C",
+                  "value": 72
+                },
+                {
+                  "kind": "ziel",
+                  "text": "75 °C",
+                  "value": 75
+                },
+                {
+                  "kind": "max",
+                  "text": "75 °C",
+                  "value": 75
+                },
+                {
+                  "kind": "max",
+                  "text": "70 °C",
+                  "value": 70
+                },
+                {
+                  "kind": "ziel",
+                  "text": "72 °C",
+                  "value": 72
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "eier",
+                  "amount": {
+                    "text": "4 Eigelb",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "60 ml heißes Wasser",
+                    "value": 60.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*nur Schwangerschaft · nach Wasser aufsetzen, Guanciale auslassen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "only": [
+                "ei=schwangerschaft"
+              ],
+              "attention": "active",
+              "after": [
+                "step:wasser-aufsetzen",
+                "step:guanciale-auslassen"
+              ]
+            },
+            {
+              "id": "kaese-einruehren",
+              "label": "7",
+              "heading": "**7. Käse einrühren (2 Min.)**",
+              "title": "Käse einrühren",
+              "duration": {
+                "typical": "PT2M",
+                "source": "2 Min."
+              },
+              "text": "Das Sabayon abseits des Herds 1 Min. weiterschlagen, bis es auf **≤ 62 °C** gefallen ist. Dann den geriebenen Käse (ohne das Häufchen fürs Anrichten) und die Hälfte des gerösteten Pfeffers einrühren, bis eine glatte, dicke Creme entsteht. Beiseitestellen; die Creme darf abkühlen. *Käse erst unter 65 °C — sonst klumpt er, siehe [Technik-Seite](/technik/pasta-emulsion.md).*",
+              "action": "Das Sabayon abseits des Herds 1 Min. weiterschlagen, bis es auf **≤ 62 °C** gefallen ist.",
+              "limits": [
+                "≤ 62 °C"
+              ],
+              "why": "Käse erst unter 65 °C — sonst klumpt er, siehe [Technik-Seite](/technik/pasta-emulsion.md).",
+              "cues": [
+                "bis es auf"
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "≤ 62 °C",
+                  "value": 62
+                },
+                {
+                  "kind": "ziel",
+                  "text": "65 °C",
+                  "value": 65
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nur Schwangerschaft · nach Sabayon*",
+              "only": [
+                "ei=schwangerschaft"
+              ],
+              "attention": "active",
+              "after": [
+                "step:sabayon"
+              ]
+            },
+            {
+              "id": "eicreme",
+              "label": "8",
+              "heading": "**8. Eicreme (3 Min.)**",
+              "title": "Eicreme",
+              "duration": {
+                "typical": "PT3M",
+                "source": "3 Min."
+              },
+              "text": "4 Eigelb mit dem geriebenen Käse (ohne das Häufchen fürs Anrichten), der Hälfte des gerösteten Pfeffers und 3 EL vom Guanciale-Fett (lauwarm, nicht heiß) in der Edelstahlschüssel zu einer dicken Creme verrühren. *Monosilio schlägt Eigelb und Fett zur „zabaione\"-Konsistenz, bevor der Käse dazukommt.*",
+              "action": "4 Eigelb mit dem geriebenen Käse (ohne das Häufchen fürs Anrichten), der Hälfte des gerösteten Pfeffers und 3 EL vom Guanciale-Fett (lauwarm, nicht heiß) in der Edelstahlschüssel zu einer dicken Creme verrühren.",
+              "why": "Monosilio schlägt Eigelb und Fett zur „zabaione\"-Konsistenz, bevor der Käse dazukommt.",
+              "ingredients": [
+                {
+                  "ref": "eier",
+                  "amount": {
+                    "text": "4 Eigelb",
+                    "value": 4.0,
+                    "unit": "Eigelb"
+                  }
+                }
+              ],
+              "meta": "*nur Klassisch · nach Käse reiben, Guanciale auslassen*",
+              "only": [
+                "ei=klassisch"
+              ],
+              "attention": "active",
+              "after": [
+                "step:kaese-reiben",
+                "step:guanciale-auslassen"
+              ]
+            },
+            {
+              "id": "pasta-kochen",
+              "label": "9",
+              "heading": "**9. Pasta kochen (9–12 Min.)**",
+              "title": "Pasta kochen",
+              "duration": {
+                "min": "PT9M",
+                "max": "PT12M",
+                "source": "9–12 Min."
+              },
+              "text": "Wasser wieder sprudelnd aufkochen, 250 g Pasta einlegen, oft rühren. **Packungszeit minus 1 Min.** Nach 4 Min. 2 Tassen (\\~300 ml) Nudelwasser abschöpfen und beiseitestellen. Klassisch: die Schüssel mit der Eicreme in den letzten 2 Min. auf den Topf setzen, damit sie handwarm wird (\\~35–40 °C).",
+              "action": "Wasser wieder sprudelnd aufkochen, 250 g Pasta einlegen, oft rühren.",
+              "limits": [
+                "Packungszeit minus 1 Min."
+              ],
+              "timers": [
+                {
+                  "label": "Pasta kochen",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT4M",
+                    "source": "4 Min."
+                  },
+                  "text": "**Packungszeit minus 1 Min.** Nach 4 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "halten",
+                  "text": "35–40 °C",
+                  "min": 35,
+                  "max": 40
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "pasta",
+                  "amount": {
+                    "text": "250 g Pasta",
+                    "value": 250.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nach Wasser aufsetzen, Käse einrühren, Eicreme · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:wasser-aufsetzen",
+                "step:kaese-einruehren",
+                "step:eicreme"
+              ]
+            },
+            {
+              "id": "mantecatura",
+              "label": "10",
+              "heading": "**10. Mantecatura (2–3 Min.)**",
+              "title": "Mantecatura",
+              "duration": {
+                "min": "PT2M",
+                "max": "PT3M",
+                "source": "2–3 Min."
+              },
+              "text": "Herd auf kleine Stufe, sodass das Wasser nur noch simmert. Pasta mit der Zange in die Schüssel mit der Eicreme heben, 2 EL Nudelwasser dazu, Schüssel auf den Topf setzen und **ohne Pause** mit Zange und Löffel durchheben; Clip-Thermometer am Schüsselrand, Fühler unten in der Sauce. Bei **60–63 °C** ist die Sauce cremig und überzieht jede Nudel — **sofort vom Topf**. Nudelwasser löffelweise, falls sie zu fest wird. Den Großteil der Guanciale-Streifen unterheben.\n\n> **Grenze:** Über \\~68 °C stockt das Eigelb trotz Wasser zu Rührei. Klassisch erreicht die\n> Sauce **nicht** die 70 °C, die in der Schwangerschaft gefordert sind.",
+              "action": "Herd auf kleine Stufe, sodass das Wasser nur noch simmert.",
+              "limits": [
+                "ohne Pause",
+                "60–63 °C",
+                "sofort vom Topf"
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "60–63 °C",
+                  "min": 60,
+                  "max": 63
+                },
+                {
+                  "kind": "max",
+                  "text": "68 °C",
+                  "value": 68
+                },
+                {
+                  "kind": "ziel",
+                  "text": "70 °C",
+                  "value": 70
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nur Klassisch · nach Pasta kochen, Eicreme*",
+              "only": [
+                "ei=klassisch"
+              ],
+              "attention": "active",
+              "after": [
+                "step:pasta-kochen",
+                "step:eicreme"
+              ]
+            },
+            {
+              "id": "mantecatura-sabayon",
+              "label": "11",
+              "heading": "**11. Mantecatura Sabayon (2 Min.)**",
+              "title": "Mantecatura Sabayon",
+              "duration": {
+                "typical": "PT2M",
+                "source": "2 Min."
+              },
+              "text": "Pasta mit der Zange in die Schüssel mit der Sabayon-Käse-Creme heben, 1 EL vom restlichen Guanciale-Fett und 2–3 EL Nudelwasser dazu und **kräftig** durchheben, bis die Sauce glänzt und jede Nudel überzieht. Ist sie zu lau, die Schüssel 30 Sek. auf den Topf setzen (≤ 65 °C). Nudelwasser löffelweise, bis sie fließt. Den Großteil der Guanciale-Streifen unterheben.",
+              "action": "Pasta mit der Zange in die Schüssel mit der Sabayon-Käse-Creme heben, 1 EL vom restlichen Guanciale-Fett und 2–3 EL Nudelwasser dazu und **kräftig** durchheben, bis die Sauce glänzt und jede Nudel überzieht.",
+              "rescue": "Ist sie zu lau, die Schüssel 30 Sek.",
+              "cues": [
+                "bis die Sauce glänzt und jede Nudel überzieht",
+                "bis sie fließt"
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "≤ 65 °C",
+                  "value": 65
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nur Schwangerschaft · nach Pasta kochen, Käse einrühren*",
+              "only": [
+                "ei=schwangerschaft"
+              ],
+              "attention": "active",
+              "after": [
+                "step:pasta-kochen",
+                "step:kaese-einruehren"
+              ]
+            },
+            {
+              "id": "anrichten",
+              "label": "12",
+              "heading": "**12. Anrichten (1 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT1M",
+                "source": "1 Min."
+              },
+              "text": "Sofort auf vorgewärmte Teller: Erwachsene \\~⅗, Schwangere \\~⅖ der Schüssel, Kind den Rest. Restliche Guanciale-Streifen und das Käse-Häufchen obendrauf; den restlichen Pfeffer nur auf die Erwachsenen-Teller.",
+              "action": "Sofort auf vorgewärmte Teller: Erwachsene \\~⅗, Schwangere \\~⅖ der Schüssel, Kind den Rest.",
+              "ingredients": [],
+              "meta": "*nach Mantecatura, Mantecatura Sabayon*",
+              "attention": "active",
+              "after": [
+                "step:mantecatura",
+                "step:mantecatura-sabayon"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Pfeffer nur auf den Erwachsenen-Tellern** — in der Creme steckt nur die halbe\n  Pfeffermenge, mild geröstet. Das Kind bekommt seine Portion ohne Extra-Pfeffer; Guanciale\n  und Käse sind salzig-herzhaft, die Sauce ist mild.\n- **Rohes Ei auch beim Kind mitdenken:** Kleinkinder gehören wie Schwangere zu den\n  empfindlichen Gruppen für Salmonellen. Mit der Sabayon-Variante ist das automatisch erledigt;\n  bei „Klassisch\" (nach der Schwangerschaft) eigene Abwägung — sehr frische Eier, Kühlkette.\n- Rigatoni sind für einen Dreijährigen einfacher als Spaghetti; Guanciale-Streifen ggf.\n  halbieren.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "Geprüft gegen den [Leitfaden](/schwangerschaft/leitfaden.md):\n\n- **Ei — der kritische Punkt, und die ehrliche Antwort:** Die klassische Carbonara erreicht\n  **keine** 70 °C: Die Sauce wird bei 60–65 °C gebunden, darüber stockt das Eigelb. Die\n  Leitfaden-Regel (≥ 70 °C, laut *Gesund ins Leben* mindestens 2 Min.) ist damit **nicht**\n  erfüllt — Klassisch ist in der Schwangerschaft gestrichen. **Lösung: Variante\n  „Schwangerschaft\"** — das Eigelb wird mit Wasser und Guanciale-Fett als Sabayon auf 72 °C\n  gebracht und 2 Min. bei 70–75 °C gehalten (Clip-Thermometer), erst danach kommt bei\n  ≤ 62 °C der Käse dazu. Das ist dieselbe Mechanik wie bei Hollandaise-Sabayon oder Crème\n  anglaise: verdünntes Eigelb stockt deutlich höher als pures. **Ungetestet:** Die Textur\n  wird etwas luftiger und weniger „klebrig-seidig\" als klassisch; beim ersten Mal kritisch\n  vergleichen.\n- **Alternative pasteurisiertes Eigelb:** Profi-Küchen machen genau das (Monosilio\n  pasteurisiert die Eigelbe im Restaurant vorab). Im Handel gibt es pasteurisiertes\n  Flüssigeigelb aber nur als 1-kg-Gastro-Tetrapak, 48 Std. nach Öffnen — nur sinnvoll, wenn\n  ohnehin mehr Eigelb gebraucht wird (Eis, Crème brûlée). Damit ginge dann auch die\n  Klassisch-Variante.\n- **Pecorino Romano und Parmigiano Reggiano** sind lange gereifte Rohmilch-Hartkäse: laut\n  BZfE-Merkblatt „unproblematisch\" — **Rinde sorgfältig ab, am Stück kaufen, frisch reiben**,\n  kein vorgeriebener Käse. In der Sauce wird der Käse nicht über \\~65 °C erhitzt, er muss also\n  von sich aus unbedenklich sein; als lange gereifter Hartkäse ist er das.\n- **Guanciale** ist roher Pökelspeck (Merkblatt: „Rohe Pökelfleischerzeugnisse … Räucherspeck\"\n  meiden). Hier wird er in dünnen Streifen 12–15 Min. bei Bratfett-Temperatur ausgelassen —\n  durch und durch weit über 70 °C, also vollständig durchgegart. „Glasig-saftig\" heißt\n  durchgegartes Fett, nicht roh. **Nicht** roh vom Brett naschen.\n- **GDM:** **70 g Pasta trocken** für die Schwangere (\\~50 g KH), al dente. Protein und Fett\n  sind reichlich da (Eigelb, Käse, Guanciale) — das dämpft die Spitze, kann sie aber\n  **verzögern**: nach einem fetten Pasta-Teller steigt der Zucker manchmal später als gewohnt,\n  also beim üblichen Messzeitpunkt nicht zu früh entwarnen. Davor einen großen grünen Salat\n  mit Zitrone und Olivenöl (Gemüse zuerst). Danach Spaziergang.\n- Nach dem Miso-Tonkotsu-Learning („zu fettig\") realistisch bleiben: Carbonara ist\n  reichhaltig. Kleine Portionen und Salat davor helfen allen am Tisch.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Monosilio (Luciano, Rom):** nur Eigelb, Guanciale in der kalt-leicht vorgewärmten Pfanne ohne Zusatzfett knusprig, Fett mit Eigelb zur Zabaione-Konsistenz, Pecorino : Parmigiano 1 : 2, viel Pfeffer, Mantecatura abseits der Hitze — [Scatti di Gusto — Carbonara, la cremosa ricetta romana](https://www.scattidigusto.it/2021/02/04/carbonara-la-cremosa-ricetta-romana-per-dimenticare-martha-stewart/) (350 g Spaghetti, 4 Eigelb, 150 g Guanciale, 150 g Käse); [Scatti di Gusto — la ricetta perfetta di Luciano Monosilio](https://www.scattidigusto.it/2018/04/05/carbonara-ricetta-perfetta-luciano-monosilio/) (2 Personen: 160 g Pasta, 2 Eigelb, 40 g Guanciale, 30 g Pecorino, 20 g Parmigiano).\n- **Wasserbad und Pasteurisierung in der Profi-Küche:** Gambero Rosso, [Carbonara — 10 regole, segreti e trucchi dei cuochi](https://www.gamberorosso.it/notizie/ristoranti/carbonara-ricetta-classica-romana-10-regole-segreti-e-trucchi-dei-cuochi) (Monosilio verwendet im Restaurant langsam pasteurisierte Eigelbe; andere Köche ziehen die Eicreme bis \\~64 °C) — per WebFetch nicht abrufbar, Inhalt aus Suchauszügen.\n- **Ei-Verhältnis und Pecorino-/Parmigiano-Mischung:** [Pinna Formaggi — Pasta alla Carbonara](https://www.pinnaformaggi.it/en/recipes/pasta-alla-carbonara/) (1 Ei + 3 Eigelb für 4, Creme abseits der Hitze); [America's Test Kitchen — Spaghetti Carbonara](https://www.americastestkitchen.com/recipes/13279-spaghetti-carbonara) (Schüssel-Methode, Nudelwasser als Puffer).\n- **Sicherheitsgrenze 70 °C / 2 Min.:** BZfE/Gesund ins Leben, [Listeriose und Toxoplasmose — Sicher essen in der Schwangerschaft](https://www.gesund-ins-leben.de/fileadmin/resources/import/pdf/0346_2017_web.pdf). Zum Vergleich: Industrielle Pasteurisierung von Flüssigeigelb läuft bei \\~61 °C für 3,5 Min. — das ist mit Haushalts-Thermometer und einer gerührten Sauce nicht reproduzierbar, deshalb hier die konservative Leitfaden-Regel.\n- **Pasteurisiertes Flüssigeigelb im Handel:** Gastro-Gebinde, z. B. [Eifix Eigelb flüssig 1 kg](https://shop.chefsculinar.at/en/food/dairy/eggs/eifix-eifix-egg-yolk-liquid-cage-free-eggs-1-kg-1-kg-pk-15698261) (pasteurisiert, nach Öffnen 48 Std.); ein Endkunden-Kleingebinde war nicht auffindbar.\n- **Mengen:** 250 g Pasta (120 + 70 + 60 g), 4 Eigelb (\\~1,6 pro 100 g Pasta — etwas mehr als Monosilios \\~1,1, weil Rigatoni mehr Sauce aufnehmen), 90 g Käse, 120 g Guanciale.\n- **Guanciale-Beschaffung:** [kaufDA — Guanciale, wo kaufen?](https://www.kaufda.de/insights/guanciale-wo-kaufen-infos-zu-haendlern-und-preis/) (REWE/Metro unregelmäßig, Feinkost), Angebotsübersicht [prospektangebote.de](https://www.prospektangebote.de/angebote/guanciale).",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-19T06:40:24Z",
+    "sourceHash": "51fe9878a1974539",
+    "select": {
+      "ei": "schwangerschaft"
+    },
+    "quantities": [
+      {
+        "ingredient": "guanciale",
+        "total": {
+          "text": "120 g",
+          "value": 120.0,
+          "max": 120.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "120 g Guanciale"
+        }
+      },
+      {
+        "ingredient": "pecorino",
+        "total": {
+          "text": "60 g",
+          "value": 60.0,
+          "max": 60.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "60 g Pecorino"
+        }
+      },
+      {
+        "ingredient": "parmigiano",
+        "total": {
+          "text": "30 g",
+          "value": 30.0,
+          "max": 30.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "30 g Parmigiano"
+        }
+      },
+      {
+        "ingredient": "eier",
+        "total": {
+          "text": "4",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "4 Eigelb"
+        }
+      },
+      {
+        "ingredient": "pasta",
+        "total": {
+          "text": "250 g",
+          "value": 250.0,
+          "max": 250.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "250 g Pasta"
+        }
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": "4 g",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "4 g Pfefferkörner"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "9–10 g",
+          "value": 9.0,
+          "max": 10.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "9–10 g Salz"
+        }
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "1560 ml",
+          "value": 1560.0,
+          "max": 1560.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1,5 l Wasser + 60 ml heißes Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Online",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "guanciale",
+            "name": "Guanciale, am Stück",
+            "need": {
+              "text": "120 g",
+              "value": 120.0,
+              "max": 120.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "120 g",
+            "inStock": false,
+            "buy": {
+              "text": "300–400 g"
+            },
+            "note": "italienischer Feinkostladen oder online; Verbrauch 120 g, Rest für die Amatriciana; Fallback: Pancetta tesa am Stück, REWE Center"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "pecorino",
+            "name": "Pecorino Romano DOP, am Stück",
+            "need": {
+              "text": "60 g",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "60 g",
+            "inStock": false,
+            "buy": {
+              "text": "200–250 g"
+            },
+            "note": "1 Keil; Verbrauch 60 g"
+          },
+          {
+            "ingredient": "parmigiano",
+            "name": "Parmigiano Reggiano, am Stück",
+            "need": {
+              "text": "30 g",
+              "value": 30.0,
+              "max": 30.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "30 g",
+            "inStock": false,
+            "buy": {
+              "text": "100 g"
+            },
+            "note": "Verbrauch 30 g"
+          },
+          {
+            "ingredient": "eier",
+            "name": "Eier",
+            "need": {
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "4",
+            "inStock": false,
+            "buy": {
+              "text": "6"
+            },
+            "note": "Größe M, Freiland oder Bio; Verbrauch 4 Eigelb"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "pasta",
+            "name": "Pasta, bronzegezogen: Rigatoni oder Spaghetti",
+            "need": {
+              "text": "250 g",
+              "value": 250.0,
+              "max": 250.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "250 g",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            },
+            "note": "Rummo/Garofalo/De Cecco; Verbrauch 250 g"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "pfeffer",
+            "name": "Pfeffer, schwarz, ganze Körner",
+            "need": {
+              "text": "4 g",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "4 g",
+            "inStock": false,
+            "pantry": true,
+            "note": "Verbrauch 4 g ≈ 1½ TL"
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "9–10 g",
+              "value": 9.0,
+              "max": 10.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "9–10 g",
+            "inStock": false,
+            "pantry": true,
+            "note": "Verbrauch 9–10 g"
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "1560 ml",
+              "value": 1560.0,
+              "max": 1560.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "1560 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "key": "ei=klassisch",
+        "select": {
+          "ei": "klassisch"
+        },
+        "quantities": [
+          {
+            "ingredient": "guanciale",
+            "total": {
+              "text": "120 g",
+              "value": 120.0,
+              "max": 120.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "120 g Guanciale"
+            }
+          },
+          {
+            "ingredient": "pecorino",
+            "total": {
+              "text": "60 g",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "60 g Pecorino"
+            }
+          },
+          {
+            "ingredient": "parmigiano",
+            "total": {
+              "text": "30 g",
+              "value": 30.0,
+              "max": 30.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "30 g Parmigiano"
+            }
+          },
+          {
+            "ingredient": "eier",
+            "total": {
+              "text": "4 Eigelb",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Eigelb",
+              "approx": false
+            },
+            "perTask": {
+              "main": "4 Eigelb"
+            }
+          },
+          {
+            "ingredient": "pasta",
+            "total": {
+              "text": "250 g",
+              "value": 250.0,
+              "max": 250.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "250 g Pasta"
+            }
+          },
+          {
+            "ingredient": "pfeffer",
+            "total": {
+              "text": "4 g",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "4 g Pfefferkörner"
+            }
+          },
+          {
+            "ingredient": "salz",
+            "total": {
+              "text": "9–10 g",
+              "value": 9.0,
+              "max": 10.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "9–10 g Salz"
+            }
+          },
+          {
+            "ingredient": "wasser",
+            "total": {
+              "text": "1500 ml",
+              "value": 1500.0,
+              "max": 1500.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1,5 l Wasser"
+            }
+          }
+        ],
+        "shopping": [
+          {
+            "store": "Online",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "guanciale",
+                "name": "Guanciale, am Stück",
+                "need": {
+                  "text": "120 g",
+                  "value": 120.0,
+                  "max": 120.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "120 g",
+                "inStock": false,
+                "buy": {
+                  "text": "300–400 g"
+                },
+                "note": "italienischer Feinkostladen oder online; Verbrauch 120 g, Rest für die Amatriciana; Fallback: Pancetta tesa am Stück, REWE Center"
+              }
+            ]
+          },
+          {
+            "store": "REWE Center",
+            "group": "Milchprodukte & Eier",
+            "items": [
+              {
+                "ingredient": "pecorino",
+                "name": "Pecorino Romano DOP, am Stück",
+                "need": {
+                  "text": "60 g",
+                  "value": 60.0,
+                  "max": 60.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "60 g",
+                "inStock": false,
+                "buy": {
+                  "text": "200–250 g"
+                },
+                "note": "1 Keil; Verbrauch 60 g"
+              },
+              {
+                "ingredient": "parmigiano",
+                "name": "Parmigiano Reggiano, am Stück",
+                "need": {
+                  "text": "30 g",
+                  "value": 30.0,
+                  "max": 30.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "30 g",
+                "inStock": false,
+                "buy": {
+                  "text": "100 g"
+                },
+                "note": "Verbrauch 30 g"
+              },
+              {
+                "ingredient": "eier",
+                "name": "Eier",
+                "need": {
+                  "text": "4 Eigelb",
+                  "value": 4.0,
+                  "max": 4.0,
+                  "unit": "Eigelb",
+                  "approx": false
+                },
+                "display": "4 Eigelb",
+                "inStock": false,
+                "buy": {
+                  "text": "6"
+                },
+                "note": "Größe M, Freiland oder Bio; Verbrauch 4 Eigelb"
+              }
+            ]
+          },
+          {
+            "store": "REWE Center",
+            "group": "Trockenwaren",
+            "items": [
+              {
+                "ingredient": "pasta",
+                "name": "Pasta, bronzegezogen: Rigatoni oder Spaghetti",
+                "need": {
+                  "text": "250 g",
+                  "value": 250.0,
+                  "max": 250.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "250 g",
+                "inStock": false,
+                "buy": {
+                  "text": "500 g"
+                },
+                "note": "Rummo/Garofalo/De Cecco; Verbrauch 250 g"
+              }
+            ]
+          },
+          {
+            "store": "Vorrat",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "pfeffer",
+                "name": "Pfeffer, schwarz, ganze Körner",
+                "need": {
+                  "text": "4 g",
+                  "value": 4.0,
+                  "max": 4.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "4 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "Verbrauch 4 g ≈ 1½ TL"
+              },
+              {
+                "ingredient": "salz",
+                "name": "Salz",
+                "need": {
+                  "text": "9–10 g",
+                  "value": 9.0,
+                  "max": 10.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "9–10 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "Verbrauch 9–10 g"
+              },
+              {
+                "ingredient": "wasser",
+                "name": "Wasser",
+                "need": {
+                  "text": "1500 ml",
+                  "value": 1500.0,
+                  "max": 1500.0,
+                  "unit": "ml",
+                  "approx": false
+                },
+                "display": "1500 ml",
+                "inStock": false,
+                "pantry": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

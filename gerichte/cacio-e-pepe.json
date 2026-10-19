@@ -1,0 +1,687 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/cacio-e-pepe",
+  "kind": "dish",
+  "title": "Cacio e Pepe — Pecorino, Pfeffer, Nudelwasser (3 Portionen)",
+  "status": "done",
+  "yields": {
+    "text": "3 Portionen",
+    "value": 3.0,
+    "unit": "Portionen"
+  },
+  "intro": "*Aktive Zeit \\~25 Min., gesamt \\~30 Min. Equipment: weiter Topf oder tiefe Pfanne Ø 24–28 cm für die Pasta, zweite weite Pfanne (Edelstahl, 28 cm), Microplane-Reibe, Mörser oder schwerer Topfboden, Clip-Thermometer, Pastazange, Messbecher.*\n\nDie Reifeprüfung der römischen Trilogie: drei Zutaten, kein Versteck. Pecorino Romano wird\nmit Nudelwasser zu einer Creme gerührt, grob zerstoßener, in der Pfanne gerösteter Pfeffer\nwird mit Nudelwasser aufgeblüht, und Pasta, Pfefferwasser und Käsecreme werden abseits\nder Hitze zu einer glänzenden, fließenden Sauce geschwenkt. Wer die Technik dahinter\n(Stärke, 65-°C-Grenze, Mantecatura, Fehlerdiagnose) nachschlagen will:\n**[Pasta-Emulsion](/technik/pasta-emulsion.md)**.",
+  "times": {
+    "text": "Aktive Zeit ~25 Min., gesamt ~30 Min.",
+    "active": {
+      "typical": "PT25M",
+      "source": "25 Min."
+    },
+    "total": {
+      "typical": "PT30M",
+      "source": "30 Min."
+    }
+  },
+  "equipment": [
+    "weiter Topf oder tiefe Pfanne Ø 24–28 cm für die Pasta",
+    "zweite weite Pfanne (Edelstahl",
+    "28 cm)",
+    "Microplane-Reibe",
+    "Mörser oder schwerer Topfboden",
+    "Clip-Thermometer",
+    "Pastazange",
+    "Messbecher"
+  ],
+  "ingredients": [
+    {
+      "id": "pecorino",
+      "name": "Pecorino Romano DOP, am Stück",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "200–250 g"
+      },
+      "note": "1 Keil; Verbrauch 100 g, Rest hält"
+    },
+    {
+      "id": "pasta",
+      "name": "Pasta, bronzegezogen: Tonnarelli oder Spaghetti",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "500 g"
+      },
+      "note": "Rummo/Garofalo/De Cecco; Verbrauch 250 g"
+    },
+    {
+      "id": "pfeffer",
+      "name": "Pfeffer, schwarz, ganze Körner",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Verbrauch 6 g ≈ 2 TL"
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "grobes Meersalz oder Kochsalz, Verbrauch 7–8 g"
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Stil-Entscheidung",
+      "level": 2,
+      "markdown": "- **Nur Pecorino Romano, keine Butter, kein Olivenöl, kein Parmigiano.** Viele Versionen\n  (auch in Rom) schummeln mit Butter oder einem Drittel Parmigiano, weil beides die Sauce\n  stabiler macht. Hier bewusst puristisch — mit konzentriertem Nudelwasser und einer\n  vorab angerührten Käsecreme braucht es keine Krücke, und das Ergebnis schmeckt\n  eindeutig nach Schaf und Pfeffer.\n- **Pfeffer geröstet und aufgeblüht** (Pappagallo, Dissapore, GialloZafferano): trocken\n  rösten bringt die ätherischen Öle nach vorn und nimmt die beißende Schärfe, das\n  Aufblühen in Nudelwasser verteilt das Aroma in der ganzen Sauce statt in einzelnen\n  Körnern.\n- **Käsecreme statt Käse in die Pfanne:** Der Käse wird mit Wasser ≤ 60 °C angerührt,\n  bevor er die heiße Pasta sieht — die sicherste Methode gegen Klumpen (Bressanini;\n  Bartolucci et al. 2025).\n- **Pasta:** Tonnarelli sind die römische Form (eckiger Querschnitt, viel Oberfläche),\n  Spaghetti gleichwertig, Rigatoni möglich.",
+      "tags": [
+        "stil"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Pecorino Romano DOP am Stück:** REWE Center führt in der Käsetheke bzw. im\n  SB-Kühlregal meist einen Keil (Locatelli, Pinna, Fulvi o. Ä.) — **nicht** den\n  vorgeriebenen Beutel. Selgros hat ihn sicher (größere Stücke). Etikett: „Pecorino\n  Romano DOP\" (nicht „Pecorino\" ohne Zusatz — das ist oft ein milder Toscano oder Sardo,\n  der anders schmilzt). Ein Keil von 200–250 g reicht für Cacio e Pepe und eine\n  Carbonara; in Papier + Dose im Kühlschrank hält er Wochen.\n- **Pasta:** bronzegezogen — Rummo, Garofalo oder De Cecco (REWE Center); Tonnarelli bzw.\n  Spaghetti alla chitarra gibt es von De Cecco/Rummo nicht überall → sonst Spaghetti Nr. 5\n  oder dicker („Spaghettoni\"). Details: [Pasta-Emulsion](/technik/pasta-emulsion.md).\n- **Pfeffer:** ganze schwarze Körner, frisch — Tellicherry oder Malabar, wenn verfügbar.\n  Vorgemahlener Pfeffer ist hier ein Totalausfall.\n- **Microplane-Reibe:** Falls noch nicht vorhanden, anschaffen (online, \\~15–25 €) — der\n  größte Einzelhebel für diese Trilogie und nützlich für Zitruszesten, Knoblauch,\n  Muskat, Parmesan.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "markdown",
+      "title": "Mise en place",
+      "level": "bold",
+      "markdown": "**Mise en place:** Reihenfolge ist alles — Pecorino und Pfeffer sind vor dem Wasser fertig,\ndanach geht es ohne Pause durch."
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Cacio e Pepe — Pecorino, Pfeffer, Nudelwasser (3 Portionen)",
+          "steps": [
+            {
+              "id": "pecorino-reiben",
+              "label": "1",
+              "heading": "**1. Pecorino reiben (8 Min.)**",
+              "title": "Pecorino reiben",
+              "duration": {
+                "typical": "PT8M",
+                "source": "8 Min."
+              },
+              "text": "Rinde vom Pecorino großzügig abschneiden, dann 100 g Pecorino mit der Microplane **fein wie Schnee** in eine Schüssel reiben. Ein kleines Häufchen (10 g) in ein Schälchen fürs Anrichten abnehmen, der Rest bleibt in der Schüssel. *Fein gerieben schmilzt er bei 55–60 °C in Sekunden, grob gerieben braucht er Hitze, bei der er schon klumpt.*",
+              "action": "Rinde vom Pecorino großzügig abschneiden, dann 100 g Pecorino mit der Microplane **fein wie Schnee** in eine Schüssel reiben.",
+              "limits": [
+                "fein wie Schnee"
+              ],
+              "why": "Fein gerieben schmilzt er bei 55–60 °C in Sekunden, grob gerieben braucht er Hitze, bei der er schon klumpt.",
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "55–60 °C",
+                  "min": 55,
+                  "max": 60
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "pecorino",
+                  "amount": {
+                    "text": "100 g Pecorino",
+                    "value": 100.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "pfeffer-roesten",
+              "label": "2",
+              "heading": "**2. Pfeffer rösten (4 Min.)**",
+              "title": "Pfeffer rösten",
+              "duration": {
+                "typical": "PT4M",
+                "source": "4 Min."
+              },
+              "text": "6 g Pfefferkörner (≈ 2 TL) in der trockenen weiten Pfanne bei mittlerer Hitze 2–3 Min. schwenken, bis sie duften und leicht zu knistern beginnen — **nicht rauchen lassen**. Im Mörser (oder unter einem schweren Topfboden) grob zerstoßen: Stücke, kein Pulver. Ein kleines Häufchen davon zum Anrichten beiseitestellen, den Rest zurück in die Pfanne. Pfanne vom Herd.",
+              "action": "6 g Pfefferkörner (≈ 2 TL) in der trockenen weiten Pfanne bei mittlerer Hitze 2–3 Min. schwenken, bis sie duften und leicht zu knistern beginnen — **nicht rauchen lassen**.",
+              "limits": [
+                "nicht rauchen lassen"
+              ],
+              "cues": [
+                "bis sie duften und leicht zu knistern beginnen"
+              ],
+              "timers": [
+                {
+                  "label": "Pfeffer rösten",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "6 g Pfefferkörner",
+                    "value": 6.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "wasser-aufsetzen",
+              "label": "3",
+              "heading": "**3. Wasser aufsetzen (8 Min.)**",
+              "title": "Wasser aufsetzen",
+              "duration": {
+                "typical": "PT8M",
+                "source": "8 Min."
+              },
+              "text": "1,5 l Wasser im weiten Topf (Ø 24–28 cm) zum Kochen bringen, dann 7–8 g Salz zugeben (0,5 %). *Wenig Wasser = viel Stärke pro Liter. Wenig Salz, weil Pecorino \\~5 % Salz mitbringt und das Wasser in der Pfanne einkocht.*",
+              "action": "1,5 l Wasser im weiten Topf (Ø 24–28 cm) zum Kochen bringen, dann 7–8 g Salz zugeben (0,5 %).",
+              "why": "Wenig Wasser = viel Stärke pro Liter. Wenig Salz, weil Pecorino \\~5 % Salz mitbringt und das Wasser in der Pfanne einkocht.",
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "1,5 l Wasser",
+                    "value": 1.5,
+                    "unit": "l"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "7–8 g Salz",
+                    "value": 7.0,
+                    "unit": "g",
+                    "max": 8.0
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Wasser aufsetzen",
+                  "duration": {
+                    "typical": "PT8M"
+                  },
+                  "text": "8 Min."
+                }
+              ],
+              "after": []
+            },
+            {
+              "id": "pasta-kochen",
+              "label": "4",
+              "heading": "**4. Pasta kochen (8–10 Min.)**",
+              "title": "Pasta kochen",
+              "duration": {
+                "min": "PT8M",
+                "max": "PT10M",
+                "source": "8–10 Min."
+              },
+              "text": "250 g Pasta einlegen, Spaghetti/Tonnarelli nach 1 Min. mit der Zange untertauchen. **Oft rühren** — in so wenig Wasser kleben sie sonst. Kochzeit: **Packungszeit minus 2 Min.** Nach 4 Min. 2 Tassen (\\~300 ml) Nudelwasser in einen Messbecher schöpfen und beiseitestellen.",
+              "action": "250 g Pasta einlegen, Spaghetti/Tonnarelli nach 1 Min. mit der Zange untertauchen.",
+              "limits": [
+                "Oft rühren",
+                "Packungszeit minus 2 Min."
+              ],
+              "timers": [
+                {
+                  "label": "Pasta kochen",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT1M",
+                    "source": "1 Min."
+                  },
+                  "text": "250 g Pasta einlegen, Spaghetti/Tonnarelli nach 1 Min."
+                },
+                {
+                  "at": {
+                    "typical": "PT4M",
+                    "source": "4 Min."
+                  },
+                  "text": "Kochzeit: **Packungszeit minus 2 Min.** Nach 4 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "pasta",
+                  "amount": {
+                    "text": "250 g Pasta",
+                    "value": 250.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nach Wasser aufsetzen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:wasser-aufsetzen"
+              ]
+            },
+            {
+              "id": "pecorino-creme",
+              "label": "5",
+              "heading": "**5. Pecorino-Creme (3 Min.)**",
+              "title": "Pecorino-Creme",
+              "duration": {
+                "typical": "PT3M",
+                "source": "3 Min."
+              },
+              "text": "Vom abgeschöpften Nudelwasser 60 ml in einen kalten Becher geben und auf **55–60 °C** abkühlen lassen (Thermometer, 1–2 Min.). Die 60 ml nach und nach zum geriebenen Käse in der Schüssel geben und mit Gabel oder kleinem Schneebesen zu einer **dicken, glatten Creme** rühren — Konsistenz wie Ricotta, keine Körner. *Zu dick? 1 TL Wasser mehr. Zu flüssig ist schlimmer als zu dick — sie wird in der Pfanne noch verdünnt.*",
+              "action": "Vom abgeschöpften Nudelwasser 60 ml in einen kalten Becher geben und auf **55–60 °C** abkühlen lassen (Thermometer, 1–2 Min.).",
+              "limits": [
+                "55–60 °C",
+                "dicken, glatten Creme"
+              ],
+              "why": "Zu dick? 1 TL Wasser mehr. Zu flüssig ist schlimmer als zu dick — sie wird in der Pfanne noch verdünnt.",
+              "timers": [
+                {
+                  "label": "Pecorino-Creme",
+                  "duration": {
+                    "min": "PT1M",
+                    "max": "PT2M"
+                  },
+                  "text": "1–2 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "55–60 °C",
+                  "min": 55,
+                  "max": 60
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Pecorino reiben · ≤ 10 Min. vor dem Anrichten*",
+              "attention": "active",
+              "after": [
+                "step:pecorino-reiben"
+              ],
+              "start": {
+                "ref": "step:anrichten:start",
+                "offset": {
+                  "min": "-PT10M",
+                  "max": "PT0M",
+                  "source": "≤ 10 Min. vor dem Anrichten"
+                }
+              }
+            },
+            {
+              "id": "pfeffer-aufbluehen",
+              "label": "6",
+              "heading": "**6. Pfeffer aufblühen (2 Min.)**",
+              "title": "Pfeffer aufblühen",
+              "duration": {
+                "typical": "PT2M",
+                "source": "2 Min."
+              },
+              "text": "1 Min. bevor die Pasta raus soll: die Pfanne mit dem Pfeffer wieder auf mittlere Hitze, 120 ml Nudelwasser (direkt aus dem Topf) angießen und 1 Min. sanft köcheln lassen, bis das Wasser nach Pfeffer duftet und leicht trüb-sämig ist.",
+              "action": "1 Min. bevor die Pasta raus soll: die Pfanne mit dem Pfeffer wieder auf mittlere Hitze, 120 ml Nudelwasser (direkt aus dem Topf) angießen und 1 Min. sanft köcheln lassen, bis das Wasser nach Pfeffer duftet und leicht trüb-sämig ist.",
+              "cues": [
+                "bis das Wasser nach Pfeffer duftet und leicht trüb-sämig ist"
+              ],
+              "ingredients": [],
+              "meta": "*nach Pfeffer rösten, Pasta kochen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Pfeffer aufblühen",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                }
+              ],
+              "after": [
+                "step:pfeffer-roesten",
+                "step:pasta-kochen"
+              ]
+            },
+            {
+              "id": "kinderportion-abzweigen",
+              "label": "7",
+              "heading": "**7. Kinderportion abzweigen (1 Min.)**",
+              "title": "Kinderportion abzweigen",
+              "duration": {
+                "typical": "PT1M",
+                "source": "1 Min."
+              },
+              "text": "Eine kleine Zange voll Pasta (\\~⅕, ca. 130 g gekocht) in eine vorgewärmte kleine Schüssel heben, 2 EL von der Käsecreme und 1 EL Nudelwasser dazu und kräftig durchrühren, bis die Nudeln glänzen. Höchstens 2–3 Krümel vom gerösteten Pfeffer darüber. Warm stellen (Schüssel auf den Topfrand).",
+              "action": "Eine kleine Zange voll Pasta (\\~⅕, ca.",
+              "cues": [
+                "bis die Nudeln glänzen"
+              ],
+              "ingredients": [],
+              "meta": "*nach Pfeffer aufblühen*",
+              "attention": "active",
+              "after": [
+                "step:pfeffer-aufbluehen"
+              ]
+            },
+            {
+              "id": "mantecatura",
+              "label": "8",
+              "heading": "**8. Mantecatura (2–3 Min.)**",
+              "title": "Mantecatura",
+              "duration": {
+                "min": "PT2M",
+                "max": "PT3M",
+                "source": "2–3 Min."
+              },
+              "text": "Die restliche Pasta mit der Zange direkt in die Pfefferpfanne heben (Wasser darf mit), auf mittlerer Hitze **1 Min. schwenken**, bis sich eine sämige Flüssigkeit am Boden bildet.\n**Pfanne vom Herd, 30–60 Sek. warten** (Thermometer im Pfannenboden ≤ 65 °C, besser 55–60 °C). Die restliche Pecorino-Creme auf die Pasta geben und **kräftig** schwenken und mit der Zange rühren; Nudelwasser **esslöffelweise** nachgeben, bis die Sauce glänzt und beim Kippen der Pfanne als Welle mitläuft (*all'onda*). *Klumpt es: Pfanne war zu heiß. Fettig- körnig: 1–2 EL Nudelwasser, kräftig schwenken — Diagnose-Tabelle auf der [Technik-Seite](/technik/pasta-emulsion.md).*\n\n> **Technik:** Lieber etwas zu flüssig vom Herd nehmen — die Sauce zieht auf dem Teller in\n> 30 Sek. an. Wird nur nachgewärmt, wenn sie kalt ist, dann aber nie wieder über 65 °C.",
+              "action": "Die restliche Pasta mit der Zange direkt in die Pfefferpfanne heben (Wasser darf mit), auf mittlerer Hitze **1 Min. schwenken**, bis sich eine sämige Flüssigkeit am Boden bildet.",
+              "limits": [
+                "1 Min. schwenken",
+                "Pfanne vom Herd, 30–60 Sek. warten"
+              ],
+              "rescue": "Wird nur nachgewärmt, wenn sie kalt ist, dann aber nie wieder über 65 °C.",
+              "cues": [
+                "bis sich eine sämige Flüssigkeit am Boden bildet",
+                "bis die Sauce glänzt und beim Kippen der Pfanne als Welle mitläuft ("
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "≤ 65 °C",
+                  "value": 65
+                },
+                {
+                  "kind": "ziel",
+                  "text": "55–60 °C",
+                  "min": 55,
+                  "max": 60
+                },
+                {
+                  "kind": "max",
+                  "text": "65 °C",
+                  "value": 65
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Kinderportion abzweigen, Pecorino-Creme*",
+              "attention": "active",
+              "after": [
+                "step:kinderportion-abzweigen",
+                "step:pecorino-creme"
+              ]
+            },
+            {
+              "id": "anrichten",
+              "label": "9",
+              "heading": "**9. Anrichten (1 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT1M",
+                "source": "1 Min."
+              },
+              "text": "Auf vorgewärmte (nicht heiße) Teller drehen: Erwachsene \\~⅗, Schwangere \\~⅖ der Pfanne (entspricht 120 g bzw. 70 g trocken). Den beiseitegestellten Käse und den beiseitegestellten gerösteten Pfeffer darüber. **Sofort essen** — Cacio e Pepe wartet nicht.",
+              "action": "Auf vorgewärmte (nicht heiße) Teller drehen: Erwachsene \\~⅗, Schwangere \\~⅖ der Pfanne (entspricht 120 g bzw.",
+              "limits": [
+                "Sofort essen"
+              ],
+              "ingredients": [],
+              "meta": "*nach Mantecatura*",
+              "attention": "active",
+              "after": [
+                "step:mantecatura"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Abzweigung vor dem Pfeffer** (Schritt „Kinderportion abzweigen\"): Das Kind bekommt\n  „Cacio\" ohne „Pepe\" — Pasta mit 2 EL Pecorino-Creme, nur ein paar Krümel geröstetem\n  Pfeffer. Geröstet ist Pfeffer deutlich milder als roh; wenn er es mag, beim nächsten\n  Mal etwas mehr.\n- Pecorino ist salzig und kräftig — ein Kind, das Oliven und Sojasauce liebt, kommt damit\n  meist gut klar. Spaghetti für einen Dreijährigen einmal mit der Schere kürzen.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "Geprüft gegen den [Leitfaden](/schwangerschaft/leitfaden.md):\n\n- **Pecorino Romano DOP** ist ein Rohmilch- (bzw. nur thermisierter) Hartkäse, für die\n  Reibe mindestens 8 Monate gereift. Das BZfE-Merkblatt des Netzwerks *Gesund ins Leben*\n  sagt dazu wörtlich: „Nur lange gereifter Hartkäse aus Rohmilch ist unproblematisch\",\n  und: Rinde sorgfältig abschneiden, Käse am Stück kaufen, Reibekäse direkt vor dem\n  Verzehr raspeln — **vorgefertigter Reibekäse steht auf der Meideliste.** Deshalb: Keil\n  kaufen, Rinde ab, frisch reiben, angebrochenes Stück in 2–3 Wochen verbrauchen. In der\n  Sauce wird der Käse **nicht** über \\~60 °C erhitzt — er muss also von sich aus\n  unbedenklich sein, und das ist er als lange gereifter Hartkäse.\n- **Keine weiteren Treffer:** kein Ei, kein Alkohol, kein Rohfleisch.\n- **GDM — Nudeln sind der einzige KH-Träger:** **70 g Pasta trocken** für die Schwangere\n  (\\~50 g KH). Al dente ist hier messbar wichtig: Spaghetti 5 Min. gekocht GI \\~38,\n  10 Min. \\~44, 20 Min. \\~61 (Foster-Powell 2002) — Packungszeit minus 2 Min. plus 1 Min.\n  in der Pfanne ist ideal.\n- **Protein und Gemüse dazu, und zwar zuerst:** Cacio e Pepe allein ist ein Teller Stärke\n  + Fett + etwas Käseprotein (\\~10 g Protein aus 30 g Pecorino). Davor einen großen\n  grünen Salat (Rucola, Puntarelle, Fenchel mit Zitrone und Olivenöl) plus eine\n  Proteinkomponente — z. B. eine Handvoll weiße Bohnen im Salat oder ein Stück\n  gebratene Hähnchenbrust. Gemüse und Protein vor der Pasta zu essen dämpft die\n  Blutzuckerspitze. Danach ein Spaziergang.\n- Wie immer: Das Messgerät entscheidet — Pasta reagiert individuell sehr unterschiedlich.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Käse-Wasser-Creme ≤ 65 °C, wenig Wasser, junger Pecorino:** Dario Bressanini, zusammengefasst bei [Scatti di Gusto — Cacio e pepe, la ricetta scientifica](https://www.scattidigusto.it/2018/09/21/cacio-e-pepe-scientifica/) (400 g Pasta / 140 g Pecorino / 10 g Pfeffer; Creme aus Pecorino und Wasser zu etwa gleichen Teilen unter 65 °C).\n- **Phasendiagramm, 65-°C-Grenze, Stärke-Anteil:** Bartolucci et al., [Phase behavior of Cacio e Pepe sauce (arXiv 2501.00536)](https://arxiv.org/html/2501.00536v3); Stärke-Gel-Trick als Plan B auf der [Technik-Seite](/technik/pasta-emulsion.md).\n- **Pfeffer rösten, mörsern, Creme mit halbem Schöpfer Nudelwasser, Mantecatura bei ausgeschalteter Flamme, Pasta 1 Min. früher:** [Dissapore — Spaghetti cacio e pepe, la ricetta originale](https://www.dissapore.com/ricette/spaghetti-cacio-e-pepe-ricetta-originale/) (100 g Pasta / 30 g Pecorino pro Person).\n- **Pfeffer in der Pfanne aufblühen:** [GialloZafferano-Blog — Cacio e pepe cremosa](https://blog.giallozafferano.it/ilchiccodimais/ricetta-cacio-e-pepe-cremosa-trucchi/) (Pfeffer 1 Min. rösten, Schöpfer Nudelwasser, 10 Sek.).\n- **Luca Pappagallo (Lo'Steria, Rom):** Pecorino nicht zu alt, Innen- und Randzone getrennt — [Gambero Rosso — Cacio e pepe, 10 regole](https://www.gamberorosso.it/notizie/cacio-e-pepe-ricetta-classica-romana-10-regole-segreti-e-trucchi-dei-cuochi/).\n- **Mengen:** 250 g Pasta für 2 Erwachsene + Kind (120 + 70 + 60 g); Pecorino 40 g pro 100 g Pasta (zwischen Dissapore 30 g und Bressanini 35 g, plus 10 g obendrauf); Pfeffer 6 g, davon geht ein Teil nicht an den Kinderteller.\n- **Keine Butter/kein Parmigiano:** bewusste Entscheidung, siehe Stil-Entscheidung. Falls die Emulsion beim ersten Mal scheitert, ist die Stellschraube die Temperatur, nicht das Rezept.\n- **Schwangerschaft:** BZfE/Gesund ins Leben, [Listeriose und Toxoplasmose — Sicher essen in der Schwangerschaft](https://www.gesund-ins-leben.de/fileadmin/resources/import/pdf/0346_2017_web.pdf); GI nach Kochzeit: Foster-Powell, Holt, Brand-Miller, Am J Clin Nutr 2002;76:5–56.",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-19T06:40:24Z",
+    "sourceHash": "99abc600c940e9e2",
+    "quantities": [
+      {
+        "ingredient": "pecorino",
+        "total": {
+          "text": "100 g",
+          "value": 100.0,
+          "max": 100.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "100 g Pecorino"
+        }
+      },
+      {
+        "ingredient": "pasta",
+        "total": {
+          "text": "250 g",
+          "value": 250.0,
+          "max": 250.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "250 g Pasta"
+        }
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": "6 g",
+          "value": 6.0,
+          "max": 6.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "6 g Pfefferkörner"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "7–8 g",
+          "value": 7.0,
+          "max": 8.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "7–8 g Salz"
+        }
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "1500 ml",
+          "value": 1500.0,
+          "max": 1500.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1,5 l Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "REWE Center",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "pecorino",
+            "name": "Pecorino Romano DOP, am Stück",
+            "need": {
+              "text": "100 g",
+              "value": 100.0,
+              "max": 100.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "100 g",
+            "inStock": false,
+            "buy": {
+              "text": "200–250 g"
+            },
+            "note": "1 Keil; Verbrauch 100 g, Rest hält"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "pasta",
+            "name": "Pasta, bronzegezogen: Tonnarelli oder Spaghetti",
+            "need": {
+              "text": "250 g",
+              "value": 250.0,
+              "max": 250.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "250 g",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            },
+            "note": "Rummo/Garofalo/De Cecco; Verbrauch 250 g"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "pfeffer",
+            "name": "Pfeffer, schwarz, ganze Körner",
+            "need": {
+              "text": "6 g",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "6 g",
+            "inStock": false,
+            "pantry": true,
+            "note": "Verbrauch 6 g ≈ 2 TL"
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "7–8 g",
+              "value": 7.0,
+              "max": 8.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "7–8 g",
+            "inStock": false,
+            "pantry": true,
+            "note": "grobes Meersalz oder Kochsalz, Verbrauch 7–8 g"
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "1500 ml",
+              "value": 1500.0,
+              "max": 1500.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "1500 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}
