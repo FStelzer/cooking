@@ -1,0 +1,6114 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "mealprep/burrito-baukasten",
+  "kind": "dish",
+  "title": "Burrito-Baukasten — drei Füllungen, als Burrito oder Bowl (3 Portionen)",
+  "status": "wip",
+  "yields": {
+    "text": "3 Portionen",
+    "value": 3.0,
+    "unit": "Portionen"
+  },
+  "statusNote": "> [!NOTE]\n> **Status: In Arbeit** — erstes Meal-Prep-Experiment, noch nicht gekocht. Zu prüfen:\n> Wie hält der Wrap drei Tage im Kühlschrank, und reicht die Mikrowelle auf der Arbeit\n> für einen durchgehend heißen Burrito? Wie satt machen 3 Portionen ohne Reis?",
+  "intro": "*Aktive Zeit \\~45 Min., gesamt \\~1–1¼ Std. (Pulled Pork: \\~1¾ Std., davon gut 1 Std. passiv im Schnellkochtopf). Equipment: große Edelstahlpfanne, kleiner Topf, elektrischer Schnellkochtopf (nur Pulled Pork), Kartoffelstampfer, 3 mikrowellenfeste Dosen, 3 kleine Dosen für Kaltes, Backpapier.*\n\n*Varianten: Füllung = Chipotle-Hähnchen | Picadillo | Pulled Pork · Format = Burrito | Bowl*\n\nSonntags eine Füllung, mittags Mo–Mi ein Burrito oder eine Bowl aus der Mikrowelle. Eine\nMechanik, drei Füllungen, zwei Formate: Gekocht wird immer **eine** Füllung plus Bohnen und\neingelegte Zwiebeln. Ob daraus Burritos oder Bowls werden, entscheidet sich erst beim\nPacken; man kann auch mischen (2 Burritos + 1 Bowl). Die Mengen sind auf eine Person und\ndrei Tage ausgelegt, ohne Einfrieren.\n\n**Die drei Meal-Prep-Regeln:**\n\n1. **Heiß innen, kalt außen.** In den Burrito bzw. die Bowl kommen nur Füllung, Bohnen und\n   Käse. Joghurt, Salsa, Zwiebeln und Salat liegen in einer kleinen Extra-Dose und kommen\n   erst nach dem Aufwärmen dazu. Mitgewärmt werden sie matschig und lauwarm.\n2. **Saftig, nicht nass.** Jede Füllung wird am Ende eingekocht, bis kaum noch Flüssigkeit\n   in der Pfanne steht. Sonst weicht der Wrap in drei Tagen durch.\n3. **Kein Reis als Standard.** Bohnen übernehmen Sättigung und Bindung, der Wrap ist der\n   einzige größere KH-Träger. Ein Burrito liegt so bei \\~40–45 g KH, eine Bowl bei\n   \\~15–20 g (Rechnung unter [Schwangerschaft & GDM](#schwangerschaft-amp-gdm)).",
+  "times": {
+    "text": "Aktive Zeit ~45 Min., gesamt ~1–1¼ Std.",
+    "active": {
+      "typical": "PT45M",
+      "source": "45 Min."
+    },
+    "total": {
+      "min": "PT1H",
+      "max": "PT1H15M",
+      "source": "1–1¼ Std."
+    }
+  },
+  "equipment": [
+    "große Edelstahlpfanne",
+    "kleiner Topf",
+    "elektrischer Schnellkochtopf (nur Pulled Pork)",
+    "Kartoffelstampfer",
+    "3 mikrowellenfeste Dosen",
+    "3 kleine Dosen für Kaltes",
+    "Backpapier"
+  ],
+  "variants": [
+    {
+      "id": "fuellung",
+      "label": "Füllung",
+      "choices": [
+        {
+          "id": "chipotle-haehnchen",
+          "label": "Chipotle-Hähnchen"
+        },
+        {
+          "id": "picadillo",
+          "label": "Picadillo"
+        },
+        {
+          "id": "pulled-pork",
+          "label": "Pulled Pork"
+        }
+      ],
+      "default": "chipotle-haehnchen"
+    },
+    {
+      "id": "format",
+      "label": "Format",
+      "choices": [
+        {
+          "id": "burrito",
+          "label": "Burrito"
+        },
+        {
+          "id": "bowl",
+          "label": "Bowl"
+        }
+      ],
+      "default": "burrito"
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "chipotles",
+      "name": "Chipotles in Adobo",
+      "store": "Online",
+      "buy": {
+        "text": "1 Dose"
+      },
+      "only": [
+        "fuellung=chipotle-haehnchen"
+      ],
+      "note": "z. B. La Costeña 200 g; REWE Center vorher prüfen, Fallback siehe Beschaffung"
+    },
+    {
+      "id": "zwiebeln",
+      "name": "Zwiebeln",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "note": "Hähnchen/Picadillo 1, Bohnen ½"
+    },
+    {
+      "id": "zwiebel",
+      "name": "Rote Zwiebel",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "eingelegt"
+    },
+    {
+      "id": "limetten",
+      "name": "Limetten",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "5"
+      },
+      "note": "2 Zwiebeln, 1 Kalt-Dosen, 2 Pulled-Pork-Marinade — ohne Pulled Pork reichen 3"
+    },
+    {
+      "id": "orange",
+      "name": "Orange",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "only": [
+        "fuellung=pulled-pork"
+      ]
+    },
+    {
+      "id": "grapefruit",
+      "name": "Grapefruit",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "only": [
+        "fuellung=pulled-pork"
+      ],
+      "note": "½ wird gebraucht; liefert die Bitterorangen-Note"
+    },
+    {
+      "id": "paprika",
+      "name": "Rote Paprika",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "only": [
+        "fuellung=picadillo"
+      ]
+    },
+    {
+      "id": "jalapeno",
+      "name": "Jalapeño",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "only": [
+        "fuellung=picadillo",
+        "fuellung=pulled-pork"
+      ]
+    },
+    {
+      "id": "romana-herzen",
+      "name": "Romana-Herzen",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Packung"
+      },
+      "note": "3 Stück"
+    },
+    {
+      "id": "koriander",
+      "name": "Koriander",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      },
+      "optional": true
+    },
+    {
+      "id": "haehnchenkeule",
+      "name": "Hähnchenkeule ohne Knochen und Haut",
+      "store": "Aldi / REWE",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "600 g"
+      },
+      "only": [
+        "fuellung=chipotle-haehnchen"
+      ],
+      "note": "„Hähnchenoberschenkel-Filet“"
+    },
+    {
+      "id": "rinderhack",
+      "name": "Rinderhack",
+      "store": "Aldi / REWE",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "500 g"
+      },
+      "only": [
+        "fuellung=picadillo"
+      ]
+    },
+    {
+      "id": "schweineschulter",
+      "name": "Schweineschulter ohne Knochen",
+      "store": "Aldi / REWE",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "900 g"
+      },
+      "only": [
+        "fuellung=pulled-pork"
+      ],
+      "note": "Nacken geht auch; Schulter evtl. nur im REWE Center"
+    },
+    {
+      "id": "cheddar",
+      "name": "Cheddar oder mittelalter Gouda, am Stück",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "100 g"
+      },
+      "note": "pasteurisiert — Standardware"
+    },
+    {
+      "id": "joghurt",
+      "name": "Griechischer Joghurt 10 %",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "150 g"
+      },
+      "note": "oder Schmand"
+    },
+    {
+      "id": "bohnen",
+      "name": "Schwarze Bohnen",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 Dose"
+      },
+      "note": "400 g, \\~240 g abgetropft"
+    },
+    {
+      "id": "tomaten",
+      "name": "Tomaten, gehackt",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 Dose"
+      },
+      "only": [
+        "fuellung=chipotle-haehnchen",
+        "fuellung=picadillo"
+      ],
+      "note": "400 g"
+    },
+    {
+      "id": "salsa",
+      "name": "Salsa, mittelscharf",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 Glas"
+      },
+      "note": "\\~200 g; roja oder verde; nicht die süße Dip-Salsa"
+    },
+    {
+      "id": "vollkorn-wraps",
+      "name": "Vollkorn-Wraps, groß",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 Packung"
+      },
+      "only": [
+        "format=burrito"
+      ],
+      "note": "25–30 cm; 6 Stück, reicht für zwei Runden"
+    },
+    {
+      "id": "oliven",
+      "name": "Grüne Oliven ohne Stein",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "40 g"
+      },
+      "only": [
+        "fuellung=picadillo"
+      ]
+    },
+    {
+      "id": "achiote-paste",
+      "name": "Achiote-Paste",
+      "store": "Vorrat",
+      "buy": {
+        "text": "50 g"
+      },
+      "pantry": true,
+      "only": [
+        "fuellung=pulled-pork"
+      ],
+      "note": "Vorratsblock vom Cochinita-Einkauf"
+    },
+    {
+      "id": "knoblauch",
+      "name": "Knoblauch",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "2–4 Zehen je nach Füllung + 1 für die Bohnen"
+    },
+    {
+      "id": "tomatenmark",
+      "name": "Tomatenmark",
+      "store": "Vorrat",
+      "pantry": true,
+      "only": [
+        "fuellung=picadillo"
+      ]
+    },
+    {
+      "id": "kreuzkuemmel",
+      "name": "Kreuzkümmel, gemahlen",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "oregano",
+      "name": "Oregano, getrocknet",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "gern mexikanischer"
+    },
+    {
+      "id": "zimt",
+      "name": "Zimt, gemahlen",
+      "store": "Vorrat",
+      "pantry": true,
+      "only": [
+        "fuellung=picadillo"
+      ]
+    },
+    {
+      "id": "oel",
+      "name": "Neutrales Öl",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "weissweinessig",
+      "name": "Weißweinessig",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "eingelegte Zwiebeln"
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "pfeffer",
+      "name": "Pfeffer",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "zucker",
+      "name": "Zucker",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "backpapier",
+      "name": "Backpapier",
+      "store": "Vorrat",
+      "pantry": true,
+      "only": [
+        "format=burrito"
+      ]
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Varianten",
+      "level": 2,
+      "markdown": "| | Chipotle-Hähnchen (Tinga-Stil) | Picadillo | Pulled Pork (Cochinita light) |\n|---|---|---|---|\n| **Was** | Hähnchenkeule in rauchiger Chipotle-Tomate geschmort, gezupft | Rinderhack mit Paprika, Tomate, Kreuzkümmel, Oliven | Schweineschulter mit Achiote und Zitrus im Schnellkochtopf |\n| **Zeit** | \\~50 Min., eine Pfanne | \\~40 Min., eine Pfanne, **die einfachste** | \\~1¾ Std., davon 75 Min. passiv |\n| **Schärfe** | mittel (2 Chipotles), rauchig | mild-mittel (1 Jalapeño) | mild-mittel (1 Jalapeño), Schärfe eher über Salsa |\n| **Beschaffung** | Chipotles in Adobo: Mexhaus (REWE Center unsicher) | Aldi/REWE komplett | Achiote: Vorratsblock aus dem Cochinita-Einkauf |\n| **Hält gekühlt** | 3 Tage | 3 Tage | 3 Tage |"
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Chipotles in Adobo** (Dose, z. B. La Costeña 200 g) nur für die Hähnchen-Füllung. Im\n  REWE Center gelegentlich im Mexiko-Regal, verlassen kann man sich nicht darauf. Sicher\n  bei Mexhaus, dann zusammen mit Achiote und Masa harina bestellen. Die Dose reicht für\n  4–5 Runden: Rest einzeln mit etwas Adobo in die **Eiswürfelform** einfrieren, dann im\n  Beutel lagern (braucht kaum Platz). *Fallback ohne Dose: 1 TL Chipotle-Pulver + 1 TL\n  geräuchertes Paprikapulver + 1 TL Weißweinessig. Schmeckt flacher, aber funktioniert.*\n- **Achiote-Paste** für das Pulled Pork: Vom Cochinita-Einkauf (2 × 100 g El Yucateco)\n  sollte ein Block übrig sein; gebraucht werden 50 g. Hält gekühlt monatelang.\n- **Wraps:** Große Weizen-Vollkorn-Wraps (25–30 cm, \\~60–65 g pro Stück) gibt es bei\n  REWE und Aldi. Unter 25 cm lässt sich ein voller Burrito kaum schließen. Low-Carb- oder\n  Protein-Wraps sind eine Option, wenn die KH weiter runter sollen; sie reißen beim Rollen\n  aber eher. **KH-Werte stark markenabhängig, Etikett prüfen.** Die Packung (meist 6 Stück)\n  reicht für zwei Runden.\n- **Schwarze Bohnen** in der Dose führen REWE und Aldi (Bio-Eigenmarke). Kidneybohnen gehen\n  als Ersatz, sind aber mehliger.\n- **Jalapeños** frisch gibt es bei REWE meistens. *Fallback: 1 milde grüne Chili oder\n  2 Scheiben Jalapeños aus dem Glas.*\n- **Dosen:** mikrowellenfeste Dosen mit Deckel (\\~750 ml) für Bowls; für Burritos reicht\n  eine flache Dose oder ein Gefrierbeutel. Kalt-Dosen \\~150 ml.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "fuellung-a-chipotle-haehnchen-tinga-stil",
+          "name": "Füllung A — Chipotle-Hähnchen (Tinga-Stil)",
+          "steps": [
+            {
+              "id": "tinga-basis",
+              "label": "1",
+              "heading": "**1. Tinga-Basis (ca. 10 Min.)**",
+              "title": "Tinga-Basis",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "text": "1 EL Öl in der großen Pfanne erhitzen, 1 Zwiebel in dünnen Halbringen bei mittlerer Hitze 6–7 Min. hellbraun braten. 3 Knoblauchzehen fein gehackt 1 Min. mitbraten. 2 Chipotles in Adobo fein gehackt, 1 EL Adobo-Sauce aus der Dose, 1 TL Oregano, ½ TL Kreuzkümmel und 1 Dose Tomaten (400 g) dazu, 100 ml Wasser angießen, aufkochen. Mit ½ TL Salz und 1 Prise Zucker würzen.\n> **Schärfe:** 2 Chipotles sind „mittel“. Mehr Rauch ohne mehr Schärfe gibt ein weiterer EL Adobo-Sauce statt einer dritten Chili. Erst nach dem Schmoren nachschärfen, die Schärfe kommt beim Einkochen noch durch.",
+              "action": "1 EL Öl in der großen Pfanne erhitzen, 1 Zwiebel in dünnen Halbringen bei mittlerer Hitze 6–7 Min. hellbraun braten.",
+              "timers": [
+                {
+                  "label": "Tinga-Basis",
+                  "duration": {
+                    "min": "PT6M",
+                    "max": "PT7M"
+                  },
+                  "text": "6–7 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "1 EL Öl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zwiebel",
+                  "amount": {
+                    "text": "1 Zwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "3 Knoblauchzehen",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "chipotles",
+                  "amount": {
+                    "text": "2 Chipotles in Adobo",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "oregano",
+                  "amount": {
+                    "text": "1 TL Oregano",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "kreuzkuemmel",
+                  "amount": {
+                    "text": "½ TL Kreuzkümmel",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "tomaten",
+                  "amount": {
+                    "text": "1 Dose Tomaten",
+                    "value": 1.0,
+                    "unit": "Dose"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "100 ml Wasser",
+                    "value": 100.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "1 Prise Zucker",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "haehnchen-schmoren",
+              "label": "2",
+              "heading": "**2. Hähnchen schmoren (25 Min., passiv)**",
+              "title": "Hähnchen schmoren",
+              "duration": {
+                "typical": "PT25M",
+                "source": "25 Min."
+              },
+              "attention": "passive",
+              "text": "600 g Hähnchenkeule ganz in die Sauce legen, Deckel auflegen und bei kleiner Hitze 25 Min. sanft schmoren, nach 12 Min. einmal wenden. Die Keulen sind fertig, wenn sie sich mit zwei Gabeln mühelos zerzupfen lassen.\n> **Gar-Check:** Bei Keule sind ≥ 80 °C Kern gewollt (nicht 74 °C): Erst dann löst sich das Bindegewebe und das Fleisch zerfasert.",
+              "action": "600 g Hähnchenkeule ganz in die Sauce legen, Deckel auflegen und bei kleiner Hitze 25 Min. sanft schmoren, nach 12 Min. einmal wenden.",
+              "timers": [
+                {
+                  "label": "Hähnchen schmoren",
+                  "duration": {
+                    "typical": "PT25M"
+                  },
+                  "text": "25 Min."
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT12M",
+                    "source": "12 Min."
+                  },
+                  "text": "sanft schmoren, nach 12 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "kern",
+                  "text": "≥ 80 °C",
+                  "value": 80
+                },
+                {
+                  "kind": "kern",
+                  "text": "74 °C",
+                  "value": 74
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "haehnchenkeule",
+                  "amount": {
+                    "text": "600 g Hähnchenkeule",
+                    "value": 600.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nach Tinga-Basis · Herd · fertig bei ≥ 80 °C Kern*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei ≥ 80 °C Kern",
+                "value": 80
+              },
+              "after": [
+                "step:tinga-basis"
+              ]
+            },
+            {
+              "id": "haehnchen-zupfen",
+              "label": "3",
+              "heading": "**3. Hähnchen zupfen (ca. 10 Min.)**",
+              "title": "Hähnchen zupfen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "text": "Die 600 g Hähnchenkeule herausnehmen, mit zwei Gabeln zerzupfen und zurück in die Pfanne geben. Offen bei mittlerer Hitze 5–8 Min. einkochen, bis die Sauce am Fleisch klebt und beim Durchziehen mit dem Löffel kaum noch nachläuft. Mit Salz abschmecken. *Zu nass ist der häufigste Meal-Prep-Fehler: Was jetzt in der Pfanne steht, weicht sonst den Wrap durch.*",
+              "action": "Die 600 g Hähnchenkeule herausnehmen, mit zwei Gabeln zerzupfen und zurück in die Pfanne geben.",
+              "why": "Zu nass ist der häufigste Meal-Prep-Fehler: Was jetzt in der Pfanne steht, weicht sonst den Wrap durch.",
+              "cues": [
+                "bis die Sauce am Fleisch klebt und beim Durchziehen mit dem Löffel kaum noch nachläuft"
+              ],
+              "timers": [
+                {
+                  "label": "Hähnchen zupfen",
+                  "duration": {
+                    "min": "PT5M",
+                    "max": "PT8M"
+                  },
+                  "text": "5–8 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "haehnchenkeule",
+                  "amount": {
+                    "text": "600 g Hähnchenkeule",
+                    "value": 600.0,
+                    "unit": "g"
+                  },
+                  "reuse": true
+                }
+              ],
+              "meta": "*nach Hähnchen schmoren · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:haehnchen-schmoren"
+              ]
+            }
+          ],
+          "heading": "### Füllung A — Chipotle-Hähnchen (Tinga-Stil)\n\n*nur Chipotle-Hähnchen*",
+          "produces": [
+            {
+              "id": "fuellung-a-chipotle-haehnchen-tinga-stil",
+              "name": "Füllung A — Chipotle-Hähnchen (Tinga-Stil)"
+            }
+          ],
+          "only": [
+            "fuellung=chipotle-haehnchen"
+          ],
+          "intro": "Rick Baylessʼ Tinga-Prinzip in einer Pfanne: Statt das Huhn separat zu pochieren, schmort\ndie Keule direkt in der Tomaten-Chipotle-Sauce, wird gezupft und mit der Sauce eingekocht.\nKeule statt Brust, weil sie nach drei Tagen und zweimal Erhitzen noch saftig ist."
+        },
+        {
+          "id": "fuellung-b-picadillo",
+          "name": "Füllung B — Picadillo",
+          "steps": [
+            {
+              "id": "hack-anbraten",
+              "label": "4",
+              "heading": "**4. Hack anbraten (ca. 10 Min.)**",
+              "title": "Hack anbraten",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "text": "1 EL Öl in der großen Pfanne auf dem großen Mittelfeld stark erhitzen, 500 g Rinderhack flach hineindrücken und 3–4 Min. **nicht rühren**, bis die Unterseite tief braun ist. Dann zerbröseln und weitere 2–3 Min. braten. 1 Zwiebel fein gewürfelt und 1 rote Paprika in 1-cm-Würfeln dazu, 4 Min. mitbraten.\n> **Technik:** Bräunung ist hier der Geschmack. Zieht das Hack Wasser, die Hitze ist zu niedrig oder die Pfanne zu klein: Wasser verdampfen lassen und dann erst weiterbraten.",
+              "action": "1 EL Öl in der großen Pfanne auf dem großen Mittelfeld stark erhitzen, 500 g Rinderhack flach hineindrücken und 3–4 Min.",
+              "limits": [
+                "nicht rühren"
+              ],
+              "cues": [
+                "bis die Unterseite tief braun ist"
+              ],
+              "timers": [
+                {
+                  "label": "Hack anbraten",
+                  "duration": {
+                    "min": "PT3M",
+                    "max": "PT4M"
+                  },
+                  "text": "3–4 Min."
+                },
+                {
+                  "label": "Hack anbraten",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                },
+                {
+                  "label": "Hack anbraten",
+                  "duration": {
+                    "typical": "PT4M"
+                  },
+                  "text": "4 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "1 EL Öl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "rinderhack",
+                  "amount": {
+                    "text": "500 g Rinderhack",
+                    "value": 500.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "zwiebel",
+                  "amount": {
+                    "text": "1 Zwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "paprika",
+                  "amount": {
+                    "text": "1 rote Paprika",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "picadillo-schmoren",
+              "label": "5",
+              "heading": "**5. Picadillo schmoren (15 Min.)**",
+              "title": "Picadillo schmoren",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "2 Knoblauchzehen fein gehackt, 1 Jalapeño entkernt und fein gehackt, 1 EL Tomatenmark, 1½ TL Kreuzkümmel, 1 TL Oregano und 1 Prise Zimt dazu, 1 Min. rösten. 1 Dose Tomaten (400 g) einrühren und offen bei mittlerer Hitze 10–12 Min. einkochen, bis kaum noch Flüssigkeit am Pfannenboden steht. 40 g grüne Oliven in Scheiben unterheben, mit ¾ TL Salz und reichlich Pfeffer abschmecken. *Zu mild? Vom Jalapeño die Kerne mitnehmen.*",
+              "action": "2 Knoblauchzehen fein gehackt, 1 Jalapeño entkernt und fein gehackt, 1 EL Tomatenmark, 1½ TL Kreuzkümmel, 1 TL Oregano und 1 Prise Zimt dazu, 1 Min. rösten.",
+              "why": "Zu mild? Vom Jalapeño die Kerne mitnehmen.",
+              "timers": [
+                {
+                  "label": "Picadillo schmoren",
+                  "duration": {
+                    "min": "PT10M",
+                    "max": "PT12M"
+                  },
+                  "text": "10–12 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "2 Knoblauchzehen",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "jalapeno",
+                  "amount": {
+                    "text": "1 Jalapeño",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "tomatenmark",
+                  "amount": {
+                    "text": "1 EL Tomatenmark",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "kreuzkuemmel",
+                  "amount": {
+                    "text": "1½ TL Kreuzkümmel",
+                    "value": 1.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "oregano",
+                  "amount": {
+                    "text": "1 TL Oregano",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "zimt",
+                  "amount": {
+                    "text": "1 Prise Zimt",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                },
+                {
+                  "ref": "tomaten",
+                  "amount": {
+                    "text": "1 Dose Tomaten",
+                    "value": 1.0,
+                    "unit": "Dose"
+                  }
+                },
+                {
+                  "ref": "oliven",
+                  "amount": {
+                    "text": "40 g grüne Oliven",
+                    "value": 40.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "¾ TL Salz",
+                    "value": 0.75,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "reichlich Pfeffer"
+                  }
+                }
+              ],
+              "meta": "*nach Hack anbraten · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:hack-anbraten"
+              ]
+            }
+          ],
+          "heading": "### Füllung B — Picadillo\n\n*nur Picadillo*",
+          "produces": [
+            {
+              "id": "fuellung-b-picadillo",
+              "name": "Füllung B — Picadillo"
+            }
+          ],
+          "only": [
+            "fuellung=picadillo"
+          ],
+          "intro": "Mexikanisches Hausmanns-Hack: gut gebräuntes Rind, Paprika, Tomate, Kreuzkümmel und ein\nHauch Zimt, dazu Oliven für Salz und Säure. Die Rosinen vieler Rezepte bleiben weg (Zucker)."
+        },
+        {
+          "id": "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light",
+          "name": "Füllung C — Pulled Pork aus dem Schnellkochtopf (Cochinita light)",
+          "steps": [
+            {
+              "id": "marinade-mixen",
+              "label": "6",
+              "heading": "**6. Marinade mixen (ca. 10 Min.)**",
+              "title": "Marinade mixen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "text": "50 g Achiote-Paste mit dem Saft von 1 Orange, 2 Limetten und ½ Grapefruit, 3 Knoblauchzehen, 1 Jalapeño (entkernt), ½ TL Kreuzkümmel, 1 TL Oregano, 1½ TL Salz und 100 ml Wasser mit dem Stabmixer glatt mixen. 900 g Schweineschulter in 5-cm-Würfel schneiden, dabei grobe Fettstränge entfernen, und im Innentopf mit der Marinade mischen.\n> **Technik:** Einweg-Handschuhe anziehen, Achiote färbt Hände und Bretter. Gesamtflüssigkeit \\~300 ml: genug, damit das Gerät Druck aufbaut, und Füllgrenze ⅔ ist weit weg.",
+              "action": "50 g Achiote-Paste mit dem Saft von 1 Orange, 2 Limetten und ½ Grapefruit, 3 Knoblauchzehen, 1 Jalapeño (entkernt), ½ TL Kreuzkümmel, 1 TL Oregano, 1½ TL Salz und 100 ml Wasser mit dem Stabmixer glatt mixen.",
+              "ingredients": [
+                {
+                  "ref": "achiote-paste",
+                  "amount": {
+                    "text": "50 g Achiote-Paste",
+                    "value": 50.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "orange",
+                  "amount": {
+                    "text": "1 Orange",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "limetten",
+                  "amount": {
+                    "text": "2 Limetten",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "grapefruit",
+                  "amount": {
+                    "text": "½ Grapefruit",
+                    "value": 0.5,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "3 Knoblauchzehen",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "jalapeno",
+                  "amount": {
+                    "text": "1 Jalapeño",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "kreuzkuemmel",
+                  "amount": {
+                    "text": "½ TL Kreuzkümmel",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "oregano",
+                  "amount": {
+                    "text": "1 TL Oregano",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1½ TL Salz",
+                    "value": 1.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "100 ml Wasser",
+                    "value": 100.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "schweineschulter",
+                  "amount": {
+                    "text": "900 g Schweineschulter",
+                    "value": 900.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "druckgaren",
+              "label": "7",
+              "heading": "**7. Druckgaren (75 Min., passiv)**",
+              "title": "Druckgaren",
+              "duration": {
+                "typical": "PT1H15M",
+                "source": "75 Min."
+              },
+              "attention": "passive",
+              "text": "Schnellkochtopf-Deckel schließen, Hochdruck 60 Min., dann 15 Min. natürlich ablassen. Das Fleisch muss bei leichtem Druck mit der Gabel zerfallen. *Zu fest? Weitere 10 Min. Hochdruck.*",
+              "action": "Schnellkochtopf-Deckel schließen, Hochdruck 60 Min., dann 15 Min. natürlich ablassen.",
+              "why": "Zu fest? Weitere 10 Min. Hochdruck.",
+              "timers": [
+                {
+                  "label": "Druckgaren",
+                  "duration": {
+                    "typical": "PT1H"
+                  },
+                  "text": "60 Min."
+                },
+                {
+                  "label": "Druckgaren",
+                  "duration": {
+                    "typical": "PT15M"
+                  },
+                  "text": "15 Min."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Marinade mixen*",
+              "after": [
+                "step:marinade-mixen"
+              ]
+            },
+            {
+              "id": "pulled-pork-zupfen",
+              "label": "8",
+              "heading": "**8. Pulled Pork zupfen (ca. 15 Min.)**",
+              "title": "Pulled Pork zupfen",
+              "duration": {
+                "typical": "PT15M",
+                "source": "ca. 15 Min.",
+                "estimated": true
+              },
+              "text": "Das Fleisch mit dem Schaumlöffel herausheben und mit zwei Gabeln zupfen. Die Garflüssigkeit in die große Pfanne gießen, das Fett oben grob abschöpfen und bei starker Hitze 8–10 Min. auf \\~100 ml einkochen. Das Fleisch untermischen und abschmecken; die Füllung soll glänzen, aber nicht schwimmen.\n> **Technik:** Einkochen in der Pfanne statt im Gerät: Die Sauté-Funktion ist zu schwach, um 300 ml in vertretbarer Zeit zu reduzieren.",
+              "action": "Das Fleisch mit dem Schaumlöffel herausheben und mit zwei Gabeln zupfen.",
+              "timers": [
+                {
+                  "label": "Pulled Pork zupfen",
+                  "duration": {
+                    "min": "PT8M",
+                    "max": "PT10M"
+                  },
+                  "text": "8–10 Min."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Druckgaren · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:druckgaren"
+              ]
+            }
+          ],
+          "heading": "### Füllung C — Pulled Pork aus dem Schnellkochtopf (Cochinita light)\n\n*nur Pulled Pork*",
+          "produces": [
+            {
+              "id": "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light",
+              "name": "Füllung C — Pulled Pork aus dem Schnellkochtopf (Cochinita light)"
+            }
+          ],
+          "only": [
+            "fuellung=pulled-pork"
+          ],
+          "intro": "Die Marinade der [Cochinita Pibil](/gerichte/cochinita-pibil.md) ohne Bananenblatt,\nÜbernacht-Marinieren und Ofen: Der Schnellkochtopf macht die Schulter in einer Stunde\nzupfbar. Kein Anbraten (Pibil wird auch im Original nicht angebraten), das Gerät läuft also\nnur auf Druck."
+        },
+        {
+          "id": "gemeinsam-bohnen-zwiebeln-abkuehlen",
+          "name": "Gemeinsam — Bohnen, Zwiebeln, Abkühlen",
+          "steps": [
+            {
+              "id": "zwiebeln-einlegen",
+              "label": "9",
+              "heading": "**9. Zwiebeln einlegen (5 Min., parallel)**",
+              "title": "Zwiebeln einlegen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "parallel": true,
+              "text": "1 rote Zwiebel in dünne Halbringe hobeln (Mandoline), mit dem Saft von 2 Limetten, 1 EL Weißweinessig und ½ TL Salz in einem Glas mischen. Mindestens 30 Min. ziehen lassen; sie halten gekühlt \\~1 Woche. *Technik wie bei der Cochinita, hier ohne Habanero.*",
+              "action": "1 rote Zwiebel in dünne Halbringe hobeln (Mandoline), mit dem Saft von 2 Limetten, 1 EL Weißweinessig und ½ TL Salz in einem Glas mischen.",
+              "why": "Technik wie bei der Cochinita, hier ohne Habanero.",
+              "timers": [
+                {
+                  "label": "Zwiebeln einlegen",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "30 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "zwiebel",
+                  "amount": {
+                    "text": "1 rote Zwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "limetten",
+                  "amount": {
+                    "text": "2 Limetten",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "weissweinessig",
+                  "amount": {
+                    "text": "1 EL Weißweinessig",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "bohnen",
+              "label": "10",
+              "heading": "**10. Bohnen (ca. 10 Min.)**",
+              "title": "Bohnen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "text": "1 EL Öl im kleinen Topf erhitzen, ½ Zwiebel fein gewürfelt 4 Min. glasig braten, 1 Knoblauchzehe gehackt und ½ TL Kreuzkümmel 30 Sek. mitrösten. 1 Dose schwarze Bohnen abgießen, dabei 50 ml der Flüssigkeit auffangen, beides in den Topf geben und 3 Min. köcheln. Mit dem Kartoffelstampfer grob zerdrücken (etwa die Hälfte bleibt ganz), mit ¼ TL Salz würzen. Die Masse soll streichfähig sein. *Sie ist der Kleber im Burrito, damit die Füllung beim Abbeißen nicht herausfällt.*",
+              "action": "1 EL Öl im kleinen Topf erhitzen, ½ Zwiebel fein gewürfelt 4 Min. glasig braten, 1 Knoblauchzehe gehackt und ½ TL Kreuzkümmel 30 Sek. mitrösten.",
+              "why": "Sie ist der Kleber im Burrito, damit die Füllung beim Abbeißen nicht herausfällt.",
+              "timers": [
+                {
+                  "label": "Bohnen",
+                  "duration": {
+                    "typical": "PT4M"
+                  },
+                  "text": "4 Min."
+                },
+                {
+                  "label": "Bohnen",
+                  "duration": {
+                    "typical": "PT3M"
+                  },
+                  "text": "3 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "1 EL Öl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zwiebel",
+                  "amount": {
+                    "text": "½ Zwiebel",
+                    "value": 0.5,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "1 Knoblauchzehe",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "kreuzkuemmel",
+                  "amount": {
+                    "text": "½ TL Kreuzkümmel",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "bohnen",
+                  "amount": {
+                    "text": "1 Dose schwarze Bohnen",
+                    "value": 1.0,
+                    "unit": "Dose"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "¼ TL Salz",
+                    "value": 0.25,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "abkuehlen",
+              "label": "11",
+              "heading": "**11. Abkühlen (30 Min., passiv)**",
+              "title": "Abkühlen",
+              "duration": {
+                "typical": "PT30M",
+                "source": "30 Min."
+              },
+              "attention": "passive",
+              "text": "Füllung und Bohnen getrennt flach auf Teller oder Bleche streichen und offen lauwarm abkühlen lassen, **höchstens 1 Std.** bei Raumtemperatur. Währenddessen 100 g Cheddar grob reiben.\n> **Technik:** Flach statt im Topf: Eine Füllungsmenge im Topf braucht Stunden, bis sie kalt ist, und bleibt lange im Keim-Temperaturbereich. Ziel nach USDA FSIS: gegarte Speisen innerhalb von 2 Std. in den Kühlschrank.",
+              "action": "Füllung und Bohnen getrennt flach auf Teller oder Bleche streichen und offen lauwarm abkühlen lassen, **höchstens 1 Std.** bei Raumtemperatur.",
+              "limits": [
+                "höchstens 1 Std."
+              ],
+              "cues": [
+                "bis sie kalt ist"
+              ],
+              "ingredients": [
+                {
+                  "ref": "cheddar",
+                  "amount": {
+                    "text": "100 g Cheddar",
+                    "value": 100.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nach Hähnchen zupfen, Picadillo schmoren, Pulled Pork zupfen, Bohnen*",
+              "timers": [
+                {
+                  "label": "Abkühlen",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "30 Min."
+                }
+              ],
+              "after": [
+                "step:haehnchen-zupfen",
+                "step:picadillo-schmoren",
+                "step:pulled-pork-zupfen",
+                "step:bohnen"
+              ]
+            },
+            {
+              "id": "kalt-dosen-packen",
+              "label": "12",
+              "heading": "**12. Kalt-Dosen packen (ca. 5 Min.)**",
+              "title": "Kalt-Dosen packen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "ca. 5 Min.",
+                "estimated": true
+              },
+              "text": "3 kleine Dosen füllen mit je 50 g griechischem Joghurt, 2 EL Salsa (6 EL insgesamt), 1 EL eingelegten Zwiebeln und einem Limettenschnitz (1 Limette, gedrittelt). Die Romana-Herzen (3 Stück) waschen, trocken schleudern und ungeschnitten in einem Beutel mit Küchenpapier kühlen; erst am jeweiligen Tag in Streifen schneiden. Optional 3–4 Stiele Koriander dazulegen.",
+              "action": "3 kleine Dosen füllen mit je 50 g griechischem Joghurt, 2 EL Salsa (6 EL insgesamt), 1 EL eingelegten Zwiebeln und einem Limettenschnitz (1 Limette, gedrittelt).",
+              "ingredients": [
+                {
+                  "ref": "joghurt",
+                  "amount": {
+                    "text": "je 50 g griechischem Joghurt",
+                    "value": 50.0,
+                    "unit": "g",
+                    "per": "Pfanne"
+                  }
+                },
+                {
+                  "ref": "salsa",
+                  "amount": {
+                    "text": "2 EL Salsa",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zwiebeln",
+                  "amount": {
+                    "text": "1 EL eingelegten Zwiebeln",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "limetten",
+                  "amount": {
+                    "text": "1 Limette",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "koriander",
+                  "amount": {
+                    "text": "3–4 Stiele Koriander",
+                    "value": 3.0,
+                    "unit": "Stück",
+                    "max": 4.0
+                  }
+                },
+                {
+                  "ref": "romana-herzen",
+                  "amount": {
+                    "text": "3 Stück",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*nach Zwiebeln einlegen*",
+              "attention": "active",
+              "after": [
+                "step:zwiebeln-einlegen"
+              ]
+            }
+          ],
+          "heading": "### Gemeinsam — Bohnen, Zwiebeln, Abkühlen",
+          "produces": [
+            {
+              "id": "gemeinsam-bohnen-zwiebeln-abkuehlen",
+              "name": "Gemeinsam — Bohnen, Zwiebeln, Abkühlen"
+            }
+          ]
+        },
+        {
+          "id": "format-burrito",
+          "name": "Format Burrito",
+          "steps": [
+            {
+              "id": "burritos-rollen",
+              "label": "13",
+              "heading": "**13. Burritos rollen (ca. 15 Min.)**",
+              "title": "Burritos rollen",
+              "duration": {
+                "typical": "PT15M",
+                "source": "ca. 15 Min.",
+                "estimated": true
+              },
+              "text": "3 Vollkorn-Wraps nacheinander in der trockenen Pfanne je 15–20 Sek. pro Seite anwärmen, damit sie beim Rollen nicht reißen. Jeden Wrap belegen: ⅓ der Bohnen als Streifen in die untere Hälfte, darauf ⅓ der Füllung und ⅓ vom Käse, je 30 g Cheddar; 5 cm Rand frei lassen. Untere Kante straff über die Füllung schlagen, Seiten einklappen und fest aufrollen. Jeden Burrito straff in 1 Blatt Backpapier wickeln (3 Blatt insgesamt) (Enden eindrehen), in Dose oder Beutel in den Kühlschrank. **Keine Alufolie:** Sie darf nicht in die Mikrowelle.\n> **Technik:** Pro Burrito \\~250 g Füllung ist das Maximum für einen 25-cm-Wrap. Wenn Füllung übrig bleibt: in eine der Kalt-Dosen, sie ist am nächsten Tag ein Topping.",
+              "action": "3 Vollkorn-Wraps nacheinander in der trockenen Pfanne je 15–20 Sek. pro Seite anwärmen, damit sie beim Rollen nicht reißen.",
+              "rescue": "Wenn Füllung übrig bleibt: in eine der Kalt-Dosen, sie ist am nächsten Tag ein Topping.",
+              "ingredients": [
+                {
+                  "ref": "vollkorn-wraps",
+                  "amount": {
+                    "text": "3 Vollkorn-Wraps",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "bohnen",
+                  "amount": {
+                    "text": "⅓ der Bohnen",
+                    "value": 0.33,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "cheddar",
+                  "amount": {
+                    "text": "je 30 g Cheddar",
+                    "value": 30.0,
+                    "unit": "g",
+                    "per": "Pfanne"
+                  }
+                },
+                {
+                  "ref": "backpapier",
+                  "amount": {
+                    "text": "1 Blatt Backpapier",
+                    "value": 1.0,
+                    "unit": "Blatt"
+                  }
+                }
+              ],
+              "meta": "*nach Abkühlen*",
+              "attention": "active",
+              "after": [
+                "step:abkuehlen"
+              ]
+            },
+            {
+              "id": "burrito-aufwaermen",
+              "label": "14",
+              "heading": "**14. Burrito aufwärmen (ca. 3 Min.)**",
+              "title": "Burrito aufwärmen",
+              "duration": {
+                "typical": "PT3M",
+                "source": "ca. 3 Min.",
+                "estimated": true
+              },
+              "text": "Den Burrito im Backpapier lassen, mit einem feuchten Küchenpapier umwickeln und bei 600–800 W 1 Min. erhitzen, wenden, weitere 1 Min., dann 1 Min. ruhen lassen. In der Mitte muss er dampfen. Papier ab, Kalt-Dose öffnen, Romana in Streifen dazu.\n> **Gar-Check:** Kalte Stellen sitzen in der Mitte. Wer kein Thermometer dabei hat: Den Burrito halbieren und noch 30 Sek. mit den Schnittflächen nach oben erhitzen. Das macht ihn sicher durchgehend heiß. *Zu zäh? Das Küchenpapier war zu trocken.*",
+              "action": "Den Burrito im Backpapier lassen, mit einem feuchten Küchenpapier umwickeln und bei 600–800 W 1 Min. erhitzen, wenden, weitere 1 Min., dann 1 Min. ruhen lassen.",
+              "why": "Zu zäh? Das Küchenpapier war zu trocken.",
+              "ingredients": [],
+              "meta": "*nur Burrito · nach Burritos rollen · fertig bei ≥ 74 °C Kern*",
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei ≥ 74 °C Kern",
+                "value": 74
+              },
+              "only": [
+                "format=burrito"
+              ],
+              "attention": "active",
+              "after": [
+                "step:burritos-rollen"
+              ]
+            }
+          ],
+          "heading": "### Format Burrito\n\n*nur Burrito*",
+          "produces": [
+            {
+              "id": "format-burrito",
+              "name": "Format Burrito"
+            }
+          ],
+          "only": [
+            "format=burrito"
+          ]
+        },
+        {
+          "id": "format-bowl",
+          "name": "Format Bowl",
+          "steps": [
+            {
+              "id": "bowls-fuellen",
+              "label": "15",
+              "heading": "**15. Bowls füllen (ca. 5 Min.)**",
+              "title": "Bowls füllen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "ca. 5 Min.",
+                "estimated": true
+              },
+              "text": "3 mikrowellenfeste Dosen nebeneinanderstellen, in jede ⅓ der Bohnen und ⅓ der Füllung nebeneinander (nicht geschichtet, so wird es gleichmäßiger heiß), je 30 g Cheddar darüber. Deckel drauf, in den Kühlschrank.\n> **Variante mit Reis:** Wer mehr Sättigung will: 120 g Naturreis (40 g roh pro Portion) separat kochen, flach abkühlen und als dritte Ecke in die Dosen. Gekochter Reis muss besonders zügig in den Kühlschrank. Alternativ Blumenkohlreis aus der TK-Truhe, mitgewärmt.",
+              "action": "3 mikrowellenfeste Dosen nebeneinanderstellen, in jede ⅓ der Bohnen und ⅓ der Füllung nebeneinander (nicht geschichtet, so wird es gleichmäßiger heiß), je 30 g Cheddar darüber.",
+              "ingredients": [
+                {
+                  "ref": "bohnen",
+                  "amount": {
+                    "text": "⅓ der Bohnen",
+                    "value": 0.33,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "cheddar",
+                  "amount": {
+                    "text": "je 30 g Cheddar",
+                    "value": 30.0,
+                    "unit": "g",
+                    "per": "Pfanne"
+                  }
+                }
+              ],
+              "meta": "*nach Abkühlen*",
+              "attention": "active",
+              "after": [
+                "step:abkuehlen"
+              ]
+            },
+            {
+              "id": "bowl-aufwaermen",
+              "label": "16",
+              "heading": "**16. Bowl aufwärmen (ca. 3 Min.)**",
+              "title": "Bowl aufwärmen",
+              "duration": {
+                "typical": "PT3M",
+                "source": "ca. 3 Min.",
+                "estimated": true
+              },
+              "text": "Deckel nur lose auflegen, bei 600–800 W 1½ Min. erhitzen, umrühren, weitere 1–1½ Min., bis alles dampft. Romana-Herz in Streifen schneiden und darauf, Joghurt, Salsa und Zwiebeln aus der Kalt-Dose darüber, Limette darüber auspressen.",
+              "action": "Deckel nur lose auflegen, bei 600–800 W 1½ Min. erhitzen, umrühren, weitere 1–1½ Min., bis alles dampft.",
+              "timers": [
+                {
+                  "label": "Bowl aufwärmen",
+                  "duration": {
+                    "typical": "PT1M30S"
+                  },
+                  "text": "1½ Min."
+                },
+                {
+                  "label": "Bowl aufwärmen",
+                  "duration": {
+                    "min": "PT1M",
+                    "max": "PT1M30S"
+                  },
+                  "text": "1–1½ Min."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nur Bowl · nach Bowls füllen · fertig bei ≥ 74 °C Kern*",
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei ≥ 74 °C Kern",
+                "value": 74
+              },
+              "only": [
+                "format=bowl"
+              ],
+              "attention": "active",
+              "after": [
+                "step:bowls-fuellen"
+              ]
+            }
+          ],
+          "heading": "### Format Bowl\n\n*nur Bowl*",
+          "produces": [
+            {
+              "id": "format-bowl",
+              "name": "Format Bowl"
+            }
+          ],
+          "only": [
+            "format=bowl"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- Das Rezept ist fürs Mittagessen auf der Arbeit gedacht, das Kind isst nicht mit.\n- Wenn sonntags doch alle davon essen: **Picadillo** vor dem Jalapeño abzweigen, also\n  nach „Hack anbraten“ eine Kelle abnehmen und mit 2 EL der Dosentomaten getrennt\n  einkochen. Oliven mag das Kind ohnehin. Pulled Pork ohne Jalapeño ist kindertauglich;\n  die Chipotle-Füllung nicht.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "Gedacht als 3 Portionen für eine Person. Isst die Schwangere mit, gilt der\n[Leitfaden](/schwangerschaft/leitfaden.md):\n\n- **KH-Rechnung pro Portion (Schätzwerte, Etiketten prüfen):** Vollkorn-Wrap 60–65 g\n  → \\~28–32 g KH · 80 g schwarze Bohnen abgetropft → \\~10–12 g KH (viel Ballaststoff,\n  niedriger GI) · Füllung → 3–6 g (Tomate, Zwiebel, Paprika). **Burrito \\~40–45 g,\n  Bowl \\~15–20 g.** Protein jeweils \\~40–50 g. Für die GDM-Mahlzeit eher die Bowl, ggf.\n  mit 40 g Naturreis; oder einen Low-Carb-Wrap.\n- **Reste in der Schwangerschaft:** Listerien vermehren sich auch im Kühlschrank. Deshalb\n  zügig abkühlen (Schritt „Abkühlen“), **innerhalb von 2 Tagen essen** (Mo/Di, nicht Mi)\n  und durchgehend dampfend heiß aufwärmen. Der Burrito-Halbier-Trick aus Schritt 14 ist\n  dafür Pflicht. Joghurt und Salsa aus der Kalt-Dose sind pasteurisiert bzw. erhitzt;\n  rohe Zwiebeln und Romana gründlich waschen.\n- **Zutaten:** Käse pasteurisiert (Standard-Cheddar/Gouda), Fleisch voll durchgegart\n  (Keule ≥ 80 °C, Hack durchgebraten, Schulter zerfällt). Kein Alkohol, kein rohes Ei.\n  Achiote, Chipotle und Salsa sind unkritisch.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Tinga:** Rick Bayless, *Chicken Tinga* (rickbayless.com, Rezeptsammlung).\n  Abweichung: Keule in der Sauce geschmort statt separat pochierter Brust, das spart einen\n  Topf und bleibt beim Aufwärmen saftiger.\n- **Picadillo:** angelehnt an mexikanische Hausrezepte (Bayless, *Mexican Everyday*):\n  Hack, Tomate, Kreuzkümmel, Zimt, Oliven. Kartoffeln und Rosinen bewusst weggelassen\n  (KH bzw. Zucker).\n- **Pulled Pork:** Marinade aus dem eigenen [Cochinita-Rezept](/gerichte/cochinita-pibil.md)\n  (Sterling-Zitrus-Mischung), auf \\~⅔ Fleischmenge skaliert. Druckzeit 60 Min. + natürliches\n  Ablassen ist der gängige Wert für 5-cm-Stücke Schweineschulter. Beim eigenen Gerät hat sich\n  Pulled Pork mehrfach bewährt; die Zeiten passen dazu.\n- **Haltbarkeit und Aufwärmen:** USDA FSIS, *Leftovers and Food Safety*\n  (fsis.usda.gov):\n  gekühlt 3–4 Tage, innerhalb von 2 Std. kühlen, auf 165 °F (74 °C) aufwärmen. Mittwoch\n  ist Tag 3, also im Rahmen.\n- **Schwangerschaft:** Netzwerk *Gesund ins Leben*: Speisen frisch zubereiten bzw. nach dem\n  Kochen rasch kühlen, bald verzehren und vor dem Essen durcherhitzen. Daraus die 2-Tage-Regel\n  oben (konservativ, keine offizielle Tagesgrenze).\n- **Warum kein Einfrieren:** Wäre möglich (Burritos frieren gut ein), aber Gefrierfach\n  knapp und gefroren zur Arbeit mitnehmen unpraktisch. Wird das zur Rotation, ist eine\n  Doppel-Charge mit 3 eingefrorenen Burritos die naheliegende Erweiterung.\n- **Warum Vollkorn-Wraps gekauft:** Selbstgemachte Weizen-Tortillas wären besser, kosten\n  aber 30–40 Min. extra. Der Rahmen hier ist bewusst ≤ 1–1¼ Std. am Sonntag.",
+      "tags": [
+        "quellen"
+      ]
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "kochtag",
+            "text": "Zwiebeln einlegen · Füllung starten (Tinga-Basis bzw. Hack anbraten)",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT75M"
+            },
+            "source": "T−1:15",
+            "steps": [
+              "hack-anbraten",
+              "zwiebeln-einlegen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Bohnen, während die Füllung schmort",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT50M"
+            },
+            "source": "T−0:50",
+            "steps": [
+              "bohnen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Füllung einkochen (Hähnchen zupfen bzw. Picadillo schmoren)",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT35M"
+            },
+            "source": "T−0:35",
+            "steps": [
+              "haehnchen-zupfen",
+              "picadillo-schmoren"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Abkühlen, Käse reiben · Kalt-Dosen packen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT30M"
+            },
+            "source": "T−0:30",
+            "steps": [
+              "abkuehlen",
+              "kalt-dosen-packen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Burritos rollen bzw. Bowls füllen, ab in den Kühlschrank",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT0M"
+            },
+            "source": "T−0:00",
+            "steps": [
+              "burritos-rollen",
+              "bowls-fuellen"
+            ]
+          }
+        ]
+      },
+      "note": "*Pulled Pork: Marinade mixen und Druckgaren 1¾ Std. vorher starten; Zwiebeln und Bohnen laufen in der passiven Druckzeit.*"
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-23T13:03:15Z",
+    "sourceHash": "8699d6cb79345bcf",
+    "select": {
+      "fuellung": "chipotle-haehnchen",
+      "format": "burrito"
+    },
+    "quantities": [
+      {
+        "ingredient": "chipotles",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "fuellung-a-chipotle-haehnchen-tinga-stil": "2 Chipotles in Adobo"
+        }
+      },
+      {
+        "ingredient": "zwiebeln",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL eingelegten Zwiebeln"
+        }
+      },
+      {
+        "ingredient": "zwiebel",
+        "total": {
+          "text": "2½",
+          "value": 2.5,
+          "max": 2.5,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "fuellung-a-chipotle-haehnchen-tinga-stil": "1 Zwiebel",
+          "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 rote Zwiebel + ½ Zwiebel"
+        }
+      },
+      {
+        "ingredient": "limetten",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "gemeinsam-bohnen-zwiebeln-abkuehlen": "2 Limetten + 1 Limette"
+        }
+      },
+      {
+        "ingredient": "romana-herzen",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "gemeinsam-bohnen-zwiebeln-abkuehlen": "3 Stück"
+        }
+      },
+      {
+        "ingredient": "koriander",
+        "total": {
+          "text": "3–4",
+          "value": 3.0,
+          "max": 4.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "gemeinsam-bohnen-zwiebeln-abkuehlen": "3–4 Stiele Koriander"
+        }
+      },
+      {
+        "ingredient": "haehnchenkeule",
+        "total": {
+          "text": "600 g",
+          "value": 600.0,
+          "max": 600.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "fuellung-a-chipotle-haehnchen-tinga-stil": "600 g Hähnchenkeule"
+        }
+      },
+      {
+        "ingredient": "cheddar",
+        "total": {
+          "text": "130 g",
+          "value": 130.0,
+          "max": 130.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "gemeinsam-bohnen-zwiebeln-abkuehlen": "100 g Cheddar",
+          "format-burrito": "je 30 g Cheddar"
+        }
+      },
+      {
+        "ingredient": "joghurt",
+        "total": {
+          "text": "50 g",
+          "value": 50.0,
+          "max": 50.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "gemeinsam-bohnen-zwiebeln-abkuehlen": "je 50 g griechischem Joghurt"
+        }
+      },
+      {
+        "ingredient": "bohnen",
+        "total": {
+          "text": "0,33 + 1 Dose",
+          "value": 0.33,
+          "max": 0.33,
+          "unit": "Stück",
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 Dose",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Dose",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 Dose schwarze Bohnen",
+          "format-burrito": "⅓ der Bohnen"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "tomaten",
+        "total": {
+          "text": "1 Dose",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Dose",
+          "approx": false
+        },
+        "perTask": {
+          "fuellung-a-chipotle-haehnchen-tinga-stil": "1 Dose Tomaten"
+        }
+      },
+      {
+        "ingredient": "salsa",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "gemeinsam-bohnen-zwiebeln-abkuehlen": "2 EL Salsa"
+        }
+      },
+      {
+        "ingredient": "vollkorn-wraps",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "format-burrito": "3 Vollkorn-Wraps"
+        }
+      },
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": "4",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "fuellung-a-chipotle-haehnchen-tinga-stil": "3 Knoblauchzehen",
+          "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 Knoblauchzehe"
+        }
+      },
+      {
+        "ingredient": "kreuzkuemmel",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "fuellung-a-chipotle-haehnchen-tinga-stil": "½ TL Kreuzkümmel",
+          "gemeinsam-bohnen-zwiebeln-abkuehlen": "½ TL Kreuzkümmel"
+        }
+      },
+      {
+        "ingredient": "oregano",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "fuellung-a-chipotle-haehnchen-tinga-stil": "1 TL Oregano"
+        }
+      },
+      {
+        "ingredient": "oel",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "fuellung-a-chipotle-haehnchen-tinga-stil": "1 EL Öl",
+          "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL Öl"
+        }
+      },
+      {
+        "ingredient": "weissweinessig",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL Weißweinessig"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "1¼ TL",
+          "value": 1.25,
+          "max": 1.25,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "fuellung-a-chipotle-haehnchen-tinga-stil": "½ TL Salz",
+          "gemeinsam-bohnen-zwiebeln-abkuehlen": "½ TL Salz + ¼ TL Salz"
+        }
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "zucker",
+        "total": {
+          "text": "1 Prise",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Prise",
+          "approx": false
+        },
+        "perTask": {
+          "fuellung-a-chipotle-haehnchen-tinga-stil": "1 Prise Zucker"
+        }
+      },
+      {
+        "ingredient": "backpapier",
+        "total": {
+          "text": "1 Blatt",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Blatt",
+          "approx": false
+        },
+        "perTask": {
+          "format-burrito": "1 Blatt Backpapier"
+        }
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "100 ml",
+          "value": 100.0,
+          "max": 100.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "fuellung-a-chipotle-haehnchen-tinga-stil": "100 ml Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Online",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "chipotles",
+            "name": "Chipotles in Adobo",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "1 Dose"
+            },
+            "note": "z. B. La Costeña 200 g; REWE Center vorher prüfen, Fallback siehe Beschaffung"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "zwiebeln",
+            "name": "Zwiebeln",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "Hähnchen/Picadillo 1, Bohnen ½"
+          },
+          {
+            "ingredient": "zwiebel",
+            "name": "Rote Zwiebel",
+            "need": {
+              "text": "2½",
+              "value": 2.5,
+              "max": 2.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2½",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "eingelegt"
+          },
+          {
+            "ingredient": "limetten",
+            "name": "Limetten",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "buy": {
+              "text": "5"
+            },
+            "note": "2 Zwiebeln, 1 Kalt-Dosen, 2 Pulled-Pork-Marinade — ohne Pulled Pork reichen 3"
+          },
+          {
+            "ingredient": "romana-herzen",
+            "name": "Romana-Herzen",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "buy": {
+              "text": "1 Packung"
+            },
+            "note": "3 Stück"
+          },
+          {
+            "ingredient": "koriander",
+            "name": "Koriander",
+            "need": {
+              "text": "3–4",
+              "value": 3.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3–4",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            },
+            "optional": true
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "haehnchenkeule",
+            "name": "Hähnchenkeule ohne Knochen und Haut",
+            "need": {
+              "text": "600 g",
+              "value": 600.0,
+              "max": 600.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "600 g",
+            "inStock": false,
+            "buy": {
+              "text": "600 g"
+            },
+            "note": "„Hähnchenoberschenkel-Filet“"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "cheddar",
+            "name": "Cheddar oder mittelalter Gouda, am Stück",
+            "need": {
+              "text": "130 g",
+              "value": 130.0,
+              "max": 130.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "130 g",
+            "inStock": false,
+            "buy": {
+              "text": "100 g"
+            },
+            "note": "pasteurisiert — Standardware"
+          },
+          {
+            "ingredient": "joghurt",
+            "name": "Griechischer Joghurt 10 %",
+            "need": {
+              "text": "50 g",
+              "value": 50.0,
+              "max": 50.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "50 g",
+            "inStock": false,
+            "buy": {
+              "text": "150 g"
+            },
+            "note": "oder Schmand"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "bohnen",
+            "name": "Schwarze Bohnen",
+            "need": {
+              "text": "0,33 + 1 Dose",
+              "value": 0.33,
+              "max": 0.33,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 Dose",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Dose",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "0,33 + 1 Dose",
+            "inStock": false,
+            "buy": {
+              "text": "1 Dose"
+            },
+            "note": "400 g, \\~240 g abgetropft"
+          },
+          {
+            "ingredient": "tomaten",
+            "name": "Tomaten, gehackt",
+            "need": {
+              "text": "1 Dose",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Dose",
+              "approx": false
+            },
+            "display": "1 Dose",
+            "inStock": false,
+            "buy": {
+              "text": "1 Dose"
+            },
+            "note": "400 g"
+          },
+          {
+            "ingredient": "salsa",
+            "name": "Salsa, mittelscharf",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Glas"
+            },
+            "note": "\\~200 g; roja oder verde; nicht die süße Dip-Salsa"
+          },
+          {
+            "ingredient": "vollkorn-wraps",
+            "name": "Vollkorn-Wraps, groß",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "buy": {
+              "text": "1 Packung"
+            },
+            "note": "25–30 cm; 6 Stück, reicht für zwei Runden"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "knoblauch",
+            "name": "Knoblauch",
+            "need": {
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "4",
+            "inStock": false,
+            "pantry": true,
+            "note": "2–4 Zehen je nach Füllung + 1 für die Bohnen"
+          },
+          {
+            "ingredient": "kreuzkuemmel",
+            "name": "Kreuzkümmel, gemahlen",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "oregano",
+            "name": "Oregano, getrocknet",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "gern mexikanischer"
+          },
+          {
+            "ingredient": "oel",
+            "name": "Neutrales Öl",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "weissweinessig",
+            "name": "Weißweinessig",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "eingelegte Zwiebeln"
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "1¼ TL",
+              "value": 1.25,
+              "max": 1.25,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1¼ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Pfeffer",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "zucker",
+            "name": "Zucker",
+            "need": {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            },
+            "display": "1 Prise",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "backpapier",
+            "name": "Backpapier",
+            "need": {
+              "text": "1 Blatt",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Blatt",
+              "approx": false
+            },
+            "display": "1 Blatt",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "100 ml",
+              "value": 100.0,
+              "max": 100.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "100 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "key": "format=bowl,fuellung=chipotle-haehnchen",
+        "select": {
+          "fuellung": "chipotle-haehnchen",
+          "format": "bowl"
+        },
+        "quantities": [
+          {
+            "ingredient": "chipotles",
+            "total": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-a-chipotle-haehnchen-tinga-stil": "2 Chipotles in Adobo"
+            }
+          },
+          {
+            "ingredient": "zwiebeln",
+            "total": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL eingelegten Zwiebeln"
+            }
+          },
+          {
+            "ingredient": "zwiebel",
+            "total": {
+              "text": "2½",
+              "value": 2.5,
+              "max": 2.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-a-chipotle-haehnchen-tinga-stil": "1 Zwiebel",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 rote Zwiebel + ½ Zwiebel"
+            }
+          },
+          {
+            "ingredient": "limetten",
+            "total": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "2 Limetten + 1 Limette"
+            }
+          },
+          {
+            "ingredient": "romana-herzen",
+            "total": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "3 Stück"
+            }
+          },
+          {
+            "ingredient": "koriander",
+            "total": {
+              "text": "3–4",
+              "value": 3.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "3–4 Stiele Koriander"
+            }
+          },
+          {
+            "ingredient": "haehnchenkeule",
+            "total": {
+              "text": "600 g",
+              "value": 600.0,
+              "max": 600.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-a-chipotle-haehnchen-tinga-stil": "600 g Hähnchenkeule"
+            }
+          },
+          {
+            "ingredient": "cheddar",
+            "total": {
+              "text": "130 g",
+              "value": 130.0,
+              "max": 130.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "100 g Cheddar",
+              "format-bowl": "je 30 g Cheddar"
+            }
+          },
+          {
+            "ingredient": "joghurt",
+            "total": {
+              "text": "50 g",
+              "value": 50.0,
+              "max": 50.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "je 50 g griechischem Joghurt"
+            }
+          },
+          {
+            "ingredient": "bohnen",
+            "total": {
+              "text": "0,33 + 1 Dose",
+              "value": 0.33,
+              "max": 0.33,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 Dose",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Dose",
+                  "approx": false
+                }
+              ]
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 Dose schwarze Bohnen",
+              "format-bowl": "⅓ der Bohnen"
+            },
+            "unitMixed": true
+          },
+          {
+            "ingredient": "tomaten",
+            "total": {
+              "text": "1 Dose",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Dose",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-a-chipotle-haehnchen-tinga-stil": "1 Dose Tomaten"
+            }
+          },
+          {
+            "ingredient": "salsa",
+            "total": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "2 EL Salsa"
+            }
+          },
+          {
+            "ingredient": "knoblauch",
+            "total": {
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-a-chipotle-haehnchen-tinga-stil": "3 Knoblauchzehen",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 Knoblauchzehe"
+            }
+          },
+          {
+            "ingredient": "kreuzkuemmel",
+            "total": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-a-chipotle-haehnchen-tinga-stil": "½ TL Kreuzkümmel",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "½ TL Kreuzkümmel"
+            }
+          },
+          {
+            "ingredient": "oregano",
+            "total": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-a-chipotle-haehnchen-tinga-stil": "1 TL Oregano"
+            }
+          },
+          {
+            "ingredient": "oel",
+            "total": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-a-chipotle-haehnchen-tinga-stil": "1 EL Öl",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL Öl"
+            }
+          },
+          {
+            "ingredient": "weissweinessig",
+            "total": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL Weißweinessig"
+            }
+          },
+          {
+            "ingredient": "salz",
+            "total": {
+              "text": "1¼ TL",
+              "value": 1.25,
+              "max": 1.25,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-a-chipotle-haehnchen-tinga-stil": "½ TL Salz",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "½ TL Salz + ¼ TL Salz"
+            }
+          },
+          {
+            "ingredient": "pfeffer",
+            "total": {
+              "text": ""
+            },
+            "perTask": {}
+          },
+          {
+            "ingredient": "zucker",
+            "total": {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-a-chipotle-haehnchen-tinga-stil": "1 Prise Zucker"
+            }
+          },
+          {
+            "ingredient": "wasser",
+            "total": {
+              "text": "100 ml",
+              "value": 100.0,
+              "max": 100.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-a-chipotle-haehnchen-tinga-stil": "100 ml Wasser"
+            }
+          }
+        ],
+        "shopping": [
+          {
+            "store": "Online",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "chipotles",
+                "name": "Chipotles in Adobo",
+                "need": {
+                  "text": "2",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "2",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Dose"
+                },
+                "note": "z. B. La Costeña 200 g; REWE Center vorher prüfen, Fallback siehe Beschaffung"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Obst & Gemüse",
+            "items": [
+              {
+                "ingredient": "zwiebeln",
+                "name": "Zwiebeln",
+                "need": {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "1 EL",
+                "inStock": false,
+                "buy": {
+                  "text": "2"
+                },
+                "note": "Hähnchen/Picadillo 1, Bohnen ½"
+              },
+              {
+                "ingredient": "zwiebel",
+                "name": "Rote Zwiebel",
+                "need": {
+                  "text": "2½",
+                  "value": 2.5,
+                  "max": 2.5,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "2½",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                },
+                "note": "eingelegt"
+              },
+              {
+                "ingredient": "limetten",
+                "name": "Limetten",
+                "need": {
+                  "text": "3",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "3",
+                "inStock": false,
+                "buy": {
+                  "text": "5"
+                },
+                "note": "2 Zwiebeln, 1 Kalt-Dosen, 2 Pulled-Pork-Marinade — ohne Pulled Pork reichen 3"
+              },
+              {
+                "ingredient": "romana-herzen",
+                "name": "Romana-Herzen",
+                "need": {
+                  "text": "3",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "3",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Packung"
+                },
+                "note": "3 Stück"
+              },
+              {
+                "ingredient": "koriander",
+                "name": "Koriander",
+                "need": {
+                  "text": "3–4",
+                  "value": 3.0,
+                  "max": 4.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "3–4",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Bund"
+                },
+                "optional": true
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Fleisch & Fisch",
+            "items": [
+              {
+                "ingredient": "haehnchenkeule",
+                "name": "Hähnchenkeule ohne Knochen und Haut",
+                "need": {
+                  "text": "600 g",
+                  "value": 600.0,
+                  "max": 600.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "600 g",
+                "inStock": false,
+                "buy": {
+                  "text": "600 g"
+                },
+                "note": "„Hähnchenoberschenkel-Filet“"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Milchprodukte & Eier",
+            "items": [
+              {
+                "ingredient": "cheddar",
+                "name": "Cheddar oder mittelalter Gouda, am Stück",
+                "need": {
+                  "text": "130 g",
+                  "value": 130.0,
+                  "max": 130.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "130 g",
+                "inStock": false,
+                "buy": {
+                  "text": "100 g"
+                },
+                "note": "pasteurisiert — Standardware"
+              },
+              {
+                "ingredient": "joghurt",
+                "name": "Griechischer Joghurt 10 %",
+                "need": {
+                  "text": "50 g",
+                  "value": 50.0,
+                  "max": 50.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "50 g",
+                "inStock": false,
+                "buy": {
+                  "text": "150 g"
+                },
+                "note": "oder Schmand"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Trockenwaren",
+            "items": [
+              {
+                "ingredient": "bohnen",
+                "name": "Schwarze Bohnen",
+                "need": {
+                  "text": "0,33 + 1 Dose",
+                  "value": 0.33,
+                  "max": 0.33,
+                  "unit": "Stück",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 Dose",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "Dose",
+                      "approx": false
+                    }
+                  ]
+                },
+                "display": "0,33 + 1 Dose",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Dose"
+                },
+                "note": "400 g, \\~240 g abgetropft"
+              },
+              {
+                "ingredient": "tomaten",
+                "name": "Tomaten, gehackt",
+                "need": {
+                  "text": "1 Dose",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Dose",
+                  "approx": false
+                },
+                "display": "1 Dose",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Dose"
+                },
+                "note": "400 g"
+              },
+              {
+                "ingredient": "salsa",
+                "name": "Salsa, mittelscharf",
+                "need": {
+                  "text": "2 EL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "2 EL",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Glas"
+                },
+                "note": "\\~200 g; roja oder verde; nicht die süße Dip-Salsa"
+              }
+            ]
+          },
+          {
+            "store": "Vorrat",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "knoblauch",
+                "name": "Knoblauch",
+                "need": {
+                  "text": "4",
+                  "value": 4.0,
+                  "max": 4.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "4",
+                "inStock": false,
+                "pantry": true,
+                "note": "2–4 Zehen je nach Füllung + 1 für die Bohnen"
+              },
+              {
+                "ingredient": "kreuzkuemmel",
+                "name": "Kreuzkümmel, gemahlen",
+                "need": {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "1 TL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "oregano",
+                "name": "Oregano, getrocknet",
+                "need": {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "1 TL",
+                "inStock": false,
+                "pantry": true,
+                "note": "gern mexikanischer"
+              },
+              {
+                "ingredient": "oel",
+                "name": "Neutrales Öl",
+                "need": {
+                  "text": "2 EL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "2 EL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "weissweinessig",
+                "name": "Weißweinessig",
+                "need": {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "1 EL",
+                "inStock": false,
+                "pantry": true,
+                "note": "eingelegte Zwiebeln"
+              },
+              {
+                "ingredient": "salz",
+                "name": "Salz",
+                "need": {
+                  "text": "1¼ TL",
+                  "value": 1.25,
+                  "max": 1.25,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "1¼ TL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "pfeffer",
+                "name": "Pfeffer",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "zucker",
+                "name": "Zucker",
+                "need": {
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
+                  "approx": false
+                },
+                "display": "1 Prise",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "wasser",
+                "name": "Wasser",
+                "need": {
+                  "text": "100 ml",
+                  "value": 100.0,
+                  "max": 100.0,
+                  "unit": "ml",
+                  "approx": false
+                },
+                "display": "100 ml",
+                "inStock": false,
+                "pantry": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "format=burrito,fuellung=picadillo",
+        "select": {
+          "fuellung": "picadillo",
+          "format": "burrito"
+        },
+        "quantities": [
+          {
+            "ingredient": "zwiebeln",
+            "total": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL eingelegten Zwiebeln"
+            }
+          },
+          {
+            "ingredient": "zwiebel",
+            "total": {
+              "text": "2½",
+              "value": 2.5,
+              "max": 2.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "1 Zwiebel",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 rote Zwiebel + ½ Zwiebel"
+            }
+          },
+          {
+            "ingredient": "limetten",
+            "total": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "2 Limetten + 1 Limette"
+            }
+          },
+          {
+            "ingredient": "paprika",
+            "total": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "1 rote Paprika"
+            }
+          },
+          {
+            "ingredient": "jalapeno",
+            "total": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "1 Jalapeño"
+            }
+          },
+          {
+            "ingredient": "romana-herzen",
+            "total": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "3 Stück"
+            }
+          },
+          {
+            "ingredient": "koriander",
+            "total": {
+              "text": "3–4",
+              "value": 3.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "3–4 Stiele Koriander"
+            }
+          },
+          {
+            "ingredient": "rinderhack",
+            "total": {
+              "text": "500 g",
+              "value": 500.0,
+              "max": 500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "500 g Rinderhack"
+            }
+          },
+          {
+            "ingredient": "cheddar",
+            "total": {
+              "text": "130 g",
+              "value": 130.0,
+              "max": 130.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "100 g Cheddar",
+              "format-burrito": "je 30 g Cheddar"
+            }
+          },
+          {
+            "ingredient": "joghurt",
+            "total": {
+              "text": "50 g",
+              "value": 50.0,
+              "max": 50.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "je 50 g griechischem Joghurt"
+            }
+          },
+          {
+            "ingredient": "bohnen",
+            "total": {
+              "text": "0,33 + 1 Dose",
+              "value": 0.33,
+              "max": 0.33,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 Dose",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Dose",
+                  "approx": false
+                }
+              ]
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 Dose schwarze Bohnen",
+              "format-burrito": "⅓ der Bohnen"
+            },
+            "unitMixed": true
+          },
+          {
+            "ingredient": "tomaten",
+            "total": {
+              "text": "1 Dose",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Dose",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "1 Dose Tomaten"
+            }
+          },
+          {
+            "ingredient": "salsa",
+            "total": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "2 EL Salsa"
+            }
+          },
+          {
+            "ingredient": "vollkorn-wraps",
+            "total": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "format-burrito": "3 Vollkorn-Wraps"
+            }
+          },
+          {
+            "ingredient": "oliven",
+            "total": {
+              "text": "40 g",
+              "value": 40.0,
+              "max": 40.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "40 g grüne Oliven"
+            }
+          },
+          {
+            "ingredient": "knoblauch",
+            "total": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "2 Knoblauchzehen",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 Knoblauchzehe"
+            }
+          },
+          {
+            "ingredient": "tomatenmark",
+            "total": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "1 EL Tomatenmark"
+            }
+          },
+          {
+            "ingredient": "kreuzkuemmel",
+            "total": {
+              "text": "2 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "1½ TL Kreuzkümmel",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "½ TL Kreuzkümmel"
+            }
+          },
+          {
+            "ingredient": "oregano",
+            "total": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "1 TL Oregano"
+            }
+          },
+          {
+            "ingredient": "zimt",
+            "total": {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "1 Prise Zimt"
+            }
+          },
+          {
+            "ingredient": "oel",
+            "total": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "1 EL Öl",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL Öl"
+            }
+          },
+          {
+            "ingredient": "weissweinessig",
+            "total": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL Weißweinessig"
+            }
+          },
+          {
+            "ingredient": "salz",
+            "total": {
+              "text": "1½ TL",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "¾ TL Salz",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "½ TL Salz + ¼ TL Salz"
+            }
+          },
+          {
+            "ingredient": "pfeffer",
+            "total": {
+              "text": ""
+            },
+            "perTask": {},
+            "unitless": [
+              "reichlich Pfeffer"
+            ]
+          },
+          {
+            "ingredient": "zucker",
+            "total": {
+              "text": ""
+            },
+            "perTask": {}
+          },
+          {
+            "ingredient": "backpapier",
+            "total": {
+              "text": "1 Blatt",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Blatt",
+              "approx": false
+            },
+            "perTask": {
+              "format-burrito": "1 Blatt Backpapier"
+            }
+          },
+          {
+            "ingredient": "wasser",
+            "total": {
+              "text": ""
+            },
+            "perTask": {}
+          }
+        ],
+        "shopping": [
+          {
+            "store": "Aldi / REWE",
+            "group": "Obst & Gemüse",
+            "items": [
+              {
+                "ingredient": "zwiebeln",
+                "name": "Zwiebeln",
+                "need": {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "1 EL",
+                "inStock": false,
+                "buy": {
+                  "text": "2"
+                },
+                "note": "Hähnchen/Picadillo 1, Bohnen ½"
+              },
+              {
+                "ingredient": "zwiebel",
+                "name": "Rote Zwiebel",
+                "need": {
+                  "text": "2½",
+                  "value": 2.5,
+                  "max": 2.5,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "2½",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                },
+                "note": "eingelegt"
+              },
+              {
+                "ingredient": "limetten",
+                "name": "Limetten",
+                "need": {
+                  "text": "3",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "3",
+                "inStock": false,
+                "buy": {
+                  "text": "5"
+                },
+                "note": "2 Zwiebeln, 1 Kalt-Dosen, 2 Pulled-Pork-Marinade — ohne Pulled Pork reichen 3"
+              },
+              {
+                "ingredient": "paprika",
+                "name": "Rote Paprika",
+                "need": {
+                  "text": "1",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "1",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                }
+              },
+              {
+                "ingredient": "jalapeno",
+                "name": "Jalapeño",
+                "need": {
+                  "text": "1",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "1",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                }
+              },
+              {
+                "ingredient": "romana-herzen",
+                "name": "Romana-Herzen",
+                "need": {
+                  "text": "3",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "3",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Packung"
+                },
+                "note": "3 Stück"
+              },
+              {
+                "ingredient": "koriander",
+                "name": "Koriander",
+                "need": {
+                  "text": "3–4",
+                  "value": 3.0,
+                  "max": 4.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "3–4",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Bund"
+                },
+                "optional": true
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Fleisch & Fisch",
+            "items": [
+              {
+                "ingredient": "rinderhack",
+                "name": "Rinderhack",
+                "need": {
+                  "text": "500 g",
+                  "value": 500.0,
+                  "max": 500.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "500 g",
+                "inStock": false,
+                "buy": {
+                  "text": "500 g"
+                }
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Milchprodukte & Eier",
+            "items": [
+              {
+                "ingredient": "cheddar",
+                "name": "Cheddar oder mittelalter Gouda, am Stück",
+                "need": {
+                  "text": "130 g",
+                  "value": 130.0,
+                  "max": 130.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "130 g",
+                "inStock": false,
+                "buy": {
+                  "text": "100 g"
+                },
+                "note": "pasteurisiert — Standardware"
+              },
+              {
+                "ingredient": "joghurt",
+                "name": "Griechischer Joghurt 10 %",
+                "need": {
+                  "text": "50 g",
+                  "value": 50.0,
+                  "max": 50.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "50 g",
+                "inStock": false,
+                "buy": {
+                  "text": "150 g"
+                },
+                "note": "oder Schmand"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Trockenwaren",
+            "items": [
+              {
+                "ingredient": "bohnen",
+                "name": "Schwarze Bohnen",
+                "need": {
+                  "text": "0,33 + 1 Dose",
+                  "value": 0.33,
+                  "max": 0.33,
+                  "unit": "Stück",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 Dose",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "Dose",
+                      "approx": false
+                    }
+                  ]
+                },
+                "display": "0,33 + 1 Dose",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Dose"
+                },
+                "note": "400 g, \\~240 g abgetropft"
+              },
+              {
+                "ingredient": "tomaten",
+                "name": "Tomaten, gehackt",
+                "need": {
+                  "text": "1 Dose",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Dose",
+                  "approx": false
+                },
+                "display": "1 Dose",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Dose"
+                },
+                "note": "400 g"
+              },
+              {
+                "ingredient": "salsa",
+                "name": "Salsa, mittelscharf",
+                "need": {
+                  "text": "2 EL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "2 EL",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Glas"
+                },
+                "note": "\\~200 g; roja oder verde; nicht die süße Dip-Salsa"
+              },
+              {
+                "ingredient": "vollkorn-wraps",
+                "name": "Vollkorn-Wraps, groß",
+                "need": {
+                  "text": "3",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "3",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Packung"
+                },
+                "note": "25–30 cm; 6 Stück, reicht für zwei Runden"
+              },
+              {
+                "ingredient": "oliven",
+                "name": "Grüne Oliven ohne Stein",
+                "need": {
+                  "text": "40 g",
+                  "value": 40.0,
+                  "max": 40.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "40 g",
+                "inStock": false,
+                "buy": {
+                  "text": "40 g"
+                }
+              }
+            ]
+          },
+          {
+            "store": "Vorrat",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "knoblauch",
+                "name": "Knoblauch",
+                "need": {
+                  "text": "3",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "3",
+                "inStock": false,
+                "pantry": true,
+                "note": "2–4 Zehen je nach Füllung + 1 für die Bohnen"
+              },
+              {
+                "ingredient": "tomatenmark",
+                "name": "Tomatenmark",
+                "need": {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "1 EL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "kreuzkuemmel",
+                "name": "Kreuzkümmel, gemahlen",
+                "need": {
+                  "text": "2 TL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "2 TL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "oregano",
+                "name": "Oregano, getrocknet",
+                "need": {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "1 TL",
+                "inStock": false,
+                "pantry": true,
+                "note": "gern mexikanischer"
+              },
+              {
+                "ingredient": "zimt",
+                "name": "Zimt, gemahlen",
+                "need": {
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
+                  "approx": false
+                },
+                "display": "1 Prise",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "oel",
+                "name": "Neutrales Öl",
+                "need": {
+                  "text": "2 EL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "2 EL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "weissweinessig",
+                "name": "Weißweinessig",
+                "need": {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "1 EL",
+                "inStock": false,
+                "pantry": true,
+                "note": "eingelegte Zwiebeln"
+              },
+              {
+                "ingredient": "salz",
+                "name": "Salz",
+                "need": {
+                  "text": "1½ TL",
+                  "value": 1.5,
+                  "max": 1.5,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "1½ TL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "pfeffer",
+                "name": "Pfeffer",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "zucker",
+                "name": "Zucker",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "backpapier",
+                "name": "Backpapier",
+                "need": {
+                  "text": "1 Blatt",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Blatt",
+                  "approx": false
+                },
+                "display": "1 Blatt",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "wasser",
+                "name": "Wasser",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "pantry": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "format=bowl,fuellung=picadillo",
+        "select": {
+          "fuellung": "picadillo",
+          "format": "bowl"
+        },
+        "quantities": [
+          {
+            "ingredient": "zwiebeln",
+            "total": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL eingelegten Zwiebeln"
+            }
+          },
+          {
+            "ingredient": "zwiebel",
+            "total": {
+              "text": "2½",
+              "value": 2.5,
+              "max": 2.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "1 Zwiebel",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 rote Zwiebel + ½ Zwiebel"
+            }
+          },
+          {
+            "ingredient": "limetten",
+            "total": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "2 Limetten + 1 Limette"
+            }
+          },
+          {
+            "ingredient": "paprika",
+            "total": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "1 rote Paprika"
+            }
+          },
+          {
+            "ingredient": "jalapeno",
+            "total": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "1 Jalapeño"
+            }
+          },
+          {
+            "ingredient": "romana-herzen",
+            "total": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "3 Stück"
+            }
+          },
+          {
+            "ingredient": "koriander",
+            "total": {
+              "text": "3–4",
+              "value": 3.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "3–4 Stiele Koriander"
+            }
+          },
+          {
+            "ingredient": "rinderhack",
+            "total": {
+              "text": "500 g",
+              "value": 500.0,
+              "max": 500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "500 g Rinderhack"
+            }
+          },
+          {
+            "ingredient": "cheddar",
+            "total": {
+              "text": "130 g",
+              "value": 130.0,
+              "max": 130.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "100 g Cheddar",
+              "format-bowl": "je 30 g Cheddar"
+            }
+          },
+          {
+            "ingredient": "joghurt",
+            "total": {
+              "text": "50 g",
+              "value": 50.0,
+              "max": 50.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "je 50 g griechischem Joghurt"
+            }
+          },
+          {
+            "ingredient": "bohnen",
+            "total": {
+              "text": "0,33 + 1 Dose",
+              "value": 0.33,
+              "max": 0.33,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 Dose",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Dose",
+                  "approx": false
+                }
+              ]
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 Dose schwarze Bohnen",
+              "format-bowl": "⅓ der Bohnen"
+            },
+            "unitMixed": true
+          },
+          {
+            "ingredient": "tomaten",
+            "total": {
+              "text": "1 Dose",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Dose",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "1 Dose Tomaten"
+            }
+          },
+          {
+            "ingredient": "salsa",
+            "total": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "2 EL Salsa"
+            }
+          },
+          {
+            "ingredient": "oliven",
+            "total": {
+              "text": "40 g",
+              "value": 40.0,
+              "max": 40.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "40 g grüne Oliven"
+            }
+          },
+          {
+            "ingredient": "knoblauch",
+            "total": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "2 Knoblauchzehen",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 Knoblauchzehe"
+            }
+          },
+          {
+            "ingredient": "tomatenmark",
+            "total": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "1 EL Tomatenmark"
+            }
+          },
+          {
+            "ingredient": "kreuzkuemmel",
+            "total": {
+              "text": "2 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "1½ TL Kreuzkümmel",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "½ TL Kreuzkümmel"
+            }
+          },
+          {
+            "ingredient": "oregano",
+            "total": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "1 TL Oregano"
+            }
+          },
+          {
+            "ingredient": "zimt",
+            "total": {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "1 Prise Zimt"
+            }
+          },
+          {
+            "ingredient": "oel",
+            "total": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "1 EL Öl",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL Öl"
+            }
+          },
+          {
+            "ingredient": "weissweinessig",
+            "total": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL Weißweinessig"
+            }
+          },
+          {
+            "ingredient": "salz",
+            "total": {
+              "text": "1½ TL",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-b-picadillo": "¾ TL Salz",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "½ TL Salz + ¼ TL Salz"
+            }
+          },
+          {
+            "ingredient": "pfeffer",
+            "total": {
+              "text": ""
+            },
+            "perTask": {},
+            "unitless": [
+              "reichlich Pfeffer"
+            ]
+          },
+          {
+            "ingredient": "zucker",
+            "total": {
+              "text": ""
+            },
+            "perTask": {}
+          },
+          {
+            "ingredient": "wasser",
+            "total": {
+              "text": ""
+            },
+            "perTask": {}
+          }
+        ],
+        "shopping": [
+          {
+            "store": "Aldi / REWE",
+            "group": "Obst & Gemüse",
+            "items": [
+              {
+                "ingredient": "zwiebeln",
+                "name": "Zwiebeln",
+                "need": {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "1 EL",
+                "inStock": false,
+                "buy": {
+                  "text": "2"
+                },
+                "note": "Hähnchen/Picadillo 1, Bohnen ½"
+              },
+              {
+                "ingredient": "zwiebel",
+                "name": "Rote Zwiebel",
+                "need": {
+                  "text": "2½",
+                  "value": 2.5,
+                  "max": 2.5,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "2½",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                },
+                "note": "eingelegt"
+              },
+              {
+                "ingredient": "limetten",
+                "name": "Limetten",
+                "need": {
+                  "text": "3",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "3",
+                "inStock": false,
+                "buy": {
+                  "text": "5"
+                },
+                "note": "2 Zwiebeln, 1 Kalt-Dosen, 2 Pulled-Pork-Marinade — ohne Pulled Pork reichen 3"
+              },
+              {
+                "ingredient": "paprika",
+                "name": "Rote Paprika",
+                "need": {
+                  "text": "1",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "1",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                }
+              },
+              {
+                "ingredient": "jalapeno",
+                "name": "Jalapeño",
+                "need": {
+                  "text": "1",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "1",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                }
+              },
+              {
+                "ingredient": "romana-herzen",
+                "name": "Romana-Herzen",
+                "need": {
+                  "text": "3",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "3",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Packung"
+                },
+                "note": "3 Stück"
+              },
+              {
+                "ingredient": "koriander",
+                "name": "Koriander",
+                "need": {
+                  "text": "3–4",
+                  "value": 3.0,
+                  "max": 4.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "3–4",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Bund"
+                },
+                "optional": true
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Fleisch & Fisch",
+            "items": [
+              {
+                "ingredient": "rinderhack",
+                "name": "Rinderhack",
+                "need": {
+                  "text": "500 g",
+                  "value": 500.0,
+                  "max": 500.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "500 g",
+                "inStock": false,
+                "buy": {
+                  "text": "500 g"
+                }
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Milchprodukte & Eier",
+            "items": [
+              {
+                "ingredient": "cheddar",
+                "name": "Cheddar oder mittelalter Gouda, am Stück",
+                "need": {
+                  "text": "130 g",
+                  "value": 130.0,
+                  "max": 130.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "130 g",
+                "inStock": false,
+                "buy": {
+                  "text": "100 g"
+                },
+                "note": "pasteurisiert — Standardware"
+              },
+              {
+                "ingredient": "joghurt",
+                "name": "Griechischer Joghurt 10 %",
+                "need": {
+                  "text": "50 g",
+                  "value": 50.0,
+                  "max": 50.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "50 g",
+                "inStock": false,
+                "buy": {
+                  "text": "150 g"
+                },
+                "note": "oder Schmand"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Trockenwaren",
+            "items": [
+              {
+                "ingredient": "bohnen",
+                "name": "Schwarze Bohnen",
+                "need": {
+                  "text": "0,33 + 1 Dose",
+                  "value": 0.33,
+                  "max": 0.33,
+                  "unit": "Stück",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 Dose",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "Dose",
+                      "approx": false
+                    }
+                  ]
+                },
+                "display": "0,33 + 1 Dose",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Dose"
+                },
+                "note": "400 g, \\~240 g abgetropft"
+              },
+              {
+                "ingredient": "tomaten",
+                "name": "Tomaten, gehackt",
+                "need": {
+                  "text": "1 Dose",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Dose",
+                  "approx": false
+                },
+                "display": "1 Dose",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Dose"
+                },
+                "note": "400 g"
+              },
+              {
+                "ingredient": "salsa",
+                "name": "Salsa, mittelscharf",
+                "need": {
+                  "text": "2 EL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "2 EL",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Glas"
+                },
+                "note": "\\~200 g; roja oder verde; nicht die süße Dip-Salsa"
+              },
+              {
+                "ingredient": "oliven",
+                "name": "Grüne Oliven ohne Stein",
+                "need": {
+                  "text": "40 g",
+                  "value": 40.0,
+                  "max": 40.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "40 g",
+                "inStock": false,
+                "buy": {
+                  "text": "40 g"
+                }
+              }
+            ]
+          },
+          {
+            "store": "Vorrat",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "knoblauch",
+                "name": "Knoblauch",
+                "need": {
+                  "text": "3",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "3",
+                "inStock": false,
+                "pantry": true,
+                "note": "2–4 Zehen je nach Füllung + 1 für die Bohnen"
+              },
+              {
+                "ingredient": "tomatenmark",
+                "name": "Tomatenmark",
+                "need": {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "1 EL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "kreuzkuemmel",
+                "name": "Kreuzkümmel, gemahlen",
+                "need": {
+                  "text": "2 TL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "2 TL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "oregano",
+                "name": "Oregano, getrocknet",
+                "need": {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "1 TL",
+                "inStock": false,
+                "pantry": true,
+                "note": "gern mexikanischer"
+              },
+              {
+                "ingredient": "zimt",
+                "name": "Zimt, gemahlen",
+                "need": {
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
+                  "approx": false
+                },
+                "display": "1 Prise",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "oel",
+                "name": "Neutrales Öl",
+                "need": {
+                  "text": "2 EL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "2 EL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "weissweinessig",
+                "name": "Weißweinessig",
+                "need": {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "1 EL",
+                "inStock": false,
+                "pantry": true,
+                "note": "eingelegte Zwiebeln"
+              },
+              {
+                "ingredient": "salz",
+                "name": "Salz",
+                "need": {
+                  "text": "1½ TL",
+                  "value": 1.5,
+                  "max": 1.5,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "1½ TL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "pfeffer",
+                "name": "Pfeffer",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "zucker",
+                "name": "Zucker",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "wasser",
+                "name": "Wasser",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "pantry": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "format=burrito,fuellung=pulled-pork",
+        "select": {
+          "fuellung": "pulled-pork",
+          "format": "burrito"
+        },
+        "quantities": [
+          {
+            "ingredient": "zwiebeln",
+            "total": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL eingelegten Zwiebeln"
+            }
+          },
+          {
+            "ingredient": "zwiebel",
+            "total": {
+              "text": "1½",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 rote Zwiebel + ½ Zwiebel"
+            }
+          },
+          {
+            "ingredient": "limetten",
+            "total": {
+              "text": "5",
+              "value": 5.0,
+              "max": 5.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "2 Limetten",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "2 Limetten + 1 Limette"
+            }
+          },
+          {
+            "ingredient": "orange",
+            "total": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "1 Orange"
+            }
+          },
+          {
+            "ingredient": "grapefruit",
+            "total": {
+              "text": "½",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "½ Grapefruit"
+            }
+          },
+          {
+            "ingredient": "jalapeno",
+            "total": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "1 Jalapeño"
+            }
+          },
+          {
+            "ingredient": "romana-herzen",
+            "total": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "3 Stück"
+            }
+          },
+          {
+            "ingredient": "koriander",
+            "total": {
+              "text": "3–4",
+              "value": 3.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "3–4 Stiele Koriander"
+            }
+          },
+          {
+            "ingredient": "schweineschulter",
+            "total": {
+              "text": "900 g",
+              "value": 900.0,
+              "max": 900.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "900 g Schweineschulter"
+            }
+          },
+          {
+            "ingredient": "cheddar",
+            "total": {
+              "text": "130 g",
+              "value": 130.0,
+              "max": 130.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "100 g Cheddar",
+              "format-burrito": "je 30 g Cheddar"
+            }
+          },
+          {
+            "ingredient": "joghurt",
+            "total": {
+              "text": "50 g",
+              "value": 50.0,
+              "max": 50.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "je 50 g griechischem Joghurt"
+            }
+          },
+          {
+            "ingredient": "bohnen",
+            "total": {
+              "text": "0,33 + 1 Dose",
+              "value": 0.33,
+              "max": 0.33,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 Dose",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Dose",
+                  "approx": false
+                }
+              ]
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 Dose schwarze Bohnen",
+              "format-burrito": "⅓ der Bohnen"
+            },
+            "unitMixed": true
+          },
+          {
+            "ingredient": "salsa",
+            "total": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "2 EL Salsa"
+            }
+          },
+          {
+            "ingredient": "vollkorn-wraps",
+            "total": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "format-burrito": "3 Vollkorn-Wraps"
+            }
+          },
+          {
+            "ingredient": "achiote-paste",
+            "total": {
+              "text": "50 g",
+              "value": 50.0,
+              "max": 50.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "50 g Achiote-Paste"
+            }
+          },
+          {
+            "ingredient": "knoblauch",
+            "total": {
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "3 Knoblauchzehen",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 Knoblauchzehe"
+            }
+          },
+          {
+            "ingredient": "kreuzkuemmel",
+            "total": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "½ TL Kreuzkümmel",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "½ TL Kreuzkümmel"
+            }
+          },
+          {
+            "ingredient": "oregano",
+            "total": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "1 TL Oregano"
+            }
+          },
+          {
+            "ingredient": "oel",
+            "total": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL Öl"
+            }
+          },
+          {
+            "ingredient": "weissweinessig",
+            "total": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL Weißweinessig"
+            }
+          },
+          {
+            "ingredient": "salz",
+            "total": {
+              "text": "2¼ TL",
+              "value": 2.25,
+              "max": 2.25,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "1½ TL Salz",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "½ TL Salz + ¼ TL Salz"
+            }
+          },
+          {
+            "ingredient": "pfeffer",
+            "total": {
+              "text": ""
+            },
+            "perTask": {}
+          },
+          {
+            "ingredient": "zucker",
+            "total": {
+              "text": ""
+            },
+            "perTask": {}
+          },
+          {
+            "ingredient": "backpapier",
+            "total": {
+              "text": "1 Blatt",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Blatt",
+              "approx": false
+            },
+            "perTask": {
+              "format-burrito": "1 Blatt Backpapier"
+            }
+          },
+          {
+            "ingredient": "wasser",
+            "total": {
+              "text": "100 ml",
+              "value": 100.0,
+              "max": 100.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "100 ml Wasser"
+            }
+          }
+        ],
+        "shopping": [
+          {
+            "store": "Aldi / REWE",
+            "group": "Obst & Gemüse",
+            "items": [
+              {
+                "ingredient": "zwiebeln",
+                "name": "Zwiebeln",
+                "need": {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "1 EL",
+                "inStock": false,
+                "buy": {
+                  "text": "2"
+                },
+                "note": "Hähnchen/Picadillo 1, Bohnen ½"
+              },
+              {
+                "ingredient": "zwiebel",
+                "name": "Rote Zwiebel",
+                "need": {
+                  "text": "1½",
+                  "value": 1.5,
+                  "max": 1.5,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "1½",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                },
+                "note": "eingelegt"
+              },
+              {
+                "ingredient": "limetten",
+                "name": "Limetten",
+                "need": {
+                  "text": "5",
+                  "value": 5.0,
+                  "max": 5.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "5",
+                "inStock": false,
+                "buy": {
+                  "text": "5"
+                },
+                "note": "2 Zwiebeln, 1 Kalt-Dosen, 2 Pulled-Pork-Marinade — ohne Pulled Pork reichen 3"
+              },
+              {
+                "ingredient": "orange",
+                "name": "Orange",
+                "need": {
+                  "text": "1",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "1",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                }
+              },
+              {
+                "ingredient": "grapefruit",
+                "name": "Grapefruit",
+                "need": {
+                  "text": "½",
+                  "value": 0.5,
+                  "max": 0.5,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "½",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                },
+                "note": "½ wird gebraucht; liefert die Bitterorangen-Note"
+              },
+              {
+                "ingredient": "jalapeno",
+                "name": "Jalapeño",
+                "need": {
+                  "text": "1",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "1",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                }
+              },
+              {
+                "ingredient": "romana-herzen",
+                "name": "Romana-Herzen",
+                "need": {
+                  "text": "3",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "3",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Packung"
+                },
+                "note": "3 Stück"
+              },
+              {
+                "ingredient": "koriander",
+                "name": "Koriander",
+                "need": {
+                  "text": "3–4",
+                  "value": 3.0,
+                  "max": 4.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "3–4",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Bund"
+                },
+                "optional": true
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Fleisch & Fisch",
+            "items": [
+              {
+                "ingredient": "schweineschulter",
+                "name": "Schweineschulter ohne Knochen",
+                "need": {
+                  "text": "900 g",
+                  "value": 900.0,
+                  "max": 900.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "900 g",
+                "inStock": false,
+                "buy": {
+                  "text": "900 g"
+                },
+                "note": "Nacken geht auch; Schulter evtl. nur im REWE Center"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Milchprodukte & Eier",
+            "items": [
+              {
+                "ingredient": "cheddar",
+                "name": "Cheddar oder mittelalter Gouda, am Stück",
+                "need": {
+                  "text": "130 g",
+                  "value": 130.0,
+                  "max": 130.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "130 g",
+                "inStock": false,
+                "buy": {
+                  "text": "100 g"
+                },
+                "note": "pasteurisiert — Standardware"
+              },
+              {
+                "ingredient": "joghurt",
+                "name": "Griechischer Joghurt 10 %",
+                "need": {
+                  "text": "50 g",
+                  "value": 50.0,
+                  "max": 50.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "50 g",
+                "inStock": false,
+                "buy": {
+                  "text": "150 g"
+                },
+                "note": "oder Schmand"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Trockenwaren",
+            "items": [
+              {
+                "ingredient": "bohnen",
+                "name": "Schwarze Bohnen",
+                "need": {
+                  "text": "0,33 + 1 Dose",
+                  "value": 0.33,
+                  "max": 0.33,
+                  "unit": "Stück",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 Dose",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "Dose",
+                      "approx": false
+                    }
+                  ]
+                },
+                "display": "0,33 + 1 Dose",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Dose"
+                },
+                "note": "400 g, \\~240 g abgetropft"
+              },
+              {
+                "ingredient": "salsa",
+                "name": "Salsa, mittelscharf",
+                "need": {
+                  "text": "2 EL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "2 EL",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Glas"
+                },
+                "note": "\\~200 g; roja oder verde; nicht die süße Dip-Salsa"
+              },
+              {
+                "ingredient": "vollkorn-wraps",
+                "name": "Vollkorn-Wraps, groß",
+                "need": {
+                  "text": "3",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "3",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Packung"
+                },
+                "note": "25–30 cm; 6 Stück, reicht für zwei Runden"
+              }
+            ]
+          },
+          {
+            "store": "Vorrat",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "achiote-paste",
+                "name": "Achiote-Paste",
+                "need": {
+                  "text": "50 g",
+                  "value": 50.0,
+                  "max": 50.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "50 g",
+                "inStock": false,
+                "buy": {
+                  "text": "50 g"
+                },
+                "pantry": true,
+                "note": "Vorratsblock vom Cochinita-Einkauf"
+              },
+              {
+                "ingredient": "knoblauch",
+                "name": "Knoblauch",
+                "need": {
+                  "text": "4",
+                  "value": 4.0,
+                  "max": 4.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "4",
+                "inStock": false,
+                "pantry": true,
+                "note": "2–4 Zehen je nach Füllung + 1 für die Bohnen"
+              },
+              {
+                "ingredient": "kreuzkuemmel",
+                "name": "Kreuzkümmel, gemahlen",
+                "need": {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "1 TL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "oregano",
+                "name": "Oregano, getrocknet",
+                "need": {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "1 TL",
+                "inStock": false,
+                "pantry": true,
+                "note": "gern mexikanischer"
+              },
+              {
+                "ingredient": "oel",
+                "name": "Neutrales Öl",
+                "need": {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "1 EL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "weissweinessig",
+                "name": "Weißweinessig",
+                "need": {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "1 EL",
+                "inStock": false,
+                "pantry": true,
+                "note": "eingelegte Zwiebeln"
+              },
+              {
+                "ingredient": "salz",
+                "name": "Salz",
+                "need": {
+                  "text": "2¼ TL",
+                  "value": 2.25,
+                  "max": 2.25,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "2¼ TL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "pfeffer",
+                "name": "Pfeffer",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "zucker",
+                "name": "Zucker",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "backpapier",
+                "name": "Backpapier",
+                "need": {
+                  "text": "1 Blatt",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Blatt",
+                  "approx": false
+                },
+                "display": "1 Blatt",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "wasser",
+                "name": "Wasser",
+                "need": {
+                  "text": "100 ml",
+                  "value": 100.0,
+                  "max": 100.0,
+                  "unit": "ml",
+                  "approx": false
+                },
+                "display": "100 ml",
+                "inStock": false,
+                "pantry": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "format=bowl,fuellung=pulled-pork",
+        "select": {
+          "fuellung": "pulled-pork",
+          "format": "bowl"
+        },
+        "quantities": [
+          {
+            "ingredient": "zwiebeln",
+            "total": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL eingelegten Zwiebeln"
+            }
+          },
+          {
+            "ingredient": "zwiebel",
+            "total": {
+              "text": "1½",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 rote Zwiebel + ½ Zwiebel"
+            }
+          },
+          {
+            "ingredient": "limetten",
+            "total": {
+              "text": "5",
+              "value": 5.0,
+              "max": 5.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "2 Limetten",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "2 Limetten + 1 Limette"
+            }
+          },
+          {
+            "ingredient": "orange",
+            "total": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "1 Orange"
+            }
+          },
+          {
+            "ingredient": "grapefruit",
+            "total": {
+              "text": "½",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "½ Grapefruit"
+            }
+          },
+          {
+            "ingredient": "jalapeno",
+            "total": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "1 Jalapeño"
+            }
+          },
+          {
+            "ingredient": "romana-herzen",
+            "total": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "3 Stück"
+            }
+          },
+          {
+            "ingredient": "koriander",
+            "total": {
+              "text": "3–4",
+              "value": 3.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "3–4 Stiele Koriander"
+            }
+          },
+          {
+            "ingredient": "schweineschulter",
+            "total": {
+              "text": "900 g",
+              "value": 900.0,
+              "max": 900.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "900 g Schweineschulter"
+            }
+          },
+          {
+            "ingredient": "cheddar",
+            "total": {
+              "text": "130 g",
+              "value": 130.0,
+              "max": 130.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "100 g Cheddar",
+              "format-bowl": "je 30 g Cheddar"
+            }
+          },
+          {
+            "ingredient": "joghurt",
+            "total": {
+              "text": "50 g",
+              "value": 50.0,
+              "max": 50.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "je 50 g griechischem Joghurt"
+            }
+          },
+          {
+            "ingredient": "bohnen",
+            "total": {
+              "text": "0,33 + 1 Dose",
+              "value": 0.33,
+              "max": 0.33,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 Dose",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Dose",
+                  "approx": false
+                }
+              ]
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 Dose schwarze Bohnen",
+              "format-bowl": "⅓ der Bohnen"
+            },
+            "unitMixed": true
+          },
+          {
+            "ingredient": "salsa",
+            "total": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "2 EL Salsa"
+            }
+          },
+          {
+            "ingredient": "achiote-paste",
+            "total": {
+              "text": "50 g",
+              "value": 50.0,
+              "max": 50.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "50 g Achiote-Paste"
+            }
+          },
+          {
+            "ingredient": "knoblauch",
+            "total": {
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "3 Knoblauchzehen",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 Knoblauchzehe"
+            }
+          },
+          {
+            "ingredient": "kreuzkuemmel",
+            "total": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "½ TL Kreuzkümmel",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "½ TL Kreuzkümmel"
+            }
+          },
+          {
+            "ingredient": "oregano",
+            "total": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "1 TL Oregano"
+            }
+          },
+          {
+            "ingredient": "oel",
+            "total": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL Öl"
+            }
+          },
+          {
+            "ingredient": "weissweinessig",
+            "total": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL Weißweinessig"
+            }
+          },
+          {
+            "ingredient": "salz",
+            "total": {
+              "text": "2¼ TL",
+              "value": 2.25,
+              "max": 2.25,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "1½ TL Salz",
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "½ TL Salz + ¼ TL Salz"
+            }
+          },
+          {
+            "ingredient": "pfeffer",
+            "total": {
+              "text": ""
+            },
+            "perTask": {}
+          },
+          {
+            "ingredient": "zucker",
+            "total": {
+              "text": ""
+            },
+            "perTask": {}
+          },
+          {
+            "ingredient": "wasser",
+            "total": {
+              "text": "100 ml",
+              "value": 100.0,
+              "max": 100.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "perTask": {
+              "fuellung-c-pulled-pork-aus-dem-schnellkochtopf-cochinita-light": "100 ml Wasser"
+            }
+          }
+        ],
+        "shopping": [
+          {
+            "store": "Aldi / REWE",
+            "group": "Obst & Gemüse",
+            "items": [
+              {
+                "ingredient": "zwiebeln",
+                "name": "Zwiebeln",
+                "need": {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "1 EL",
+                "inStock": false,
+                "buy": {
+                  "text": "2"
+                },
+                "note": "Hähnchen/Picadillo 1, Bohnen ½"
+              },
+              {
+                "ingredient": "zwiebel",
+                "name": "Rote Zwiebel",
+                "need": {
+                  "text": "1½",
+                  "value": 1.5,
+                  "max": 1.5,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "1½",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                },
+                "note": "eingelegt"
+              },
+              {
+                "ingredient": "limetten",
+                "name": "Limetten",
+                "need": {
+                  "text": "5",
+                  "value": 5.0,
+                  "max": 5.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "5",
+                "inStock": false,
+                "buy": {
+                  "text": "5"
+                },
+                "note": "2 Zwiebeln, 1 Kalt-Dosen, 2 Pulled-Pork-Marinade — ohne Pulled Pork reichen 3"
+              },
+              {
+                "ingredient": "orange",
+                "name": "Orange",
+                "need": {
+                  "text": "1",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "1",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                }
+              },
+              {
+                "ingredient": "grapefruit",
+                "name": "Grapefruit",
+                "need": {
+                  "text": "½",
+                  "value": 0.5,
+                  "max": 0.5,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "½",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                },
+                "note": "½ wird gebraucht; liefert die Bitterorangen-Note"
+              },
+              {
+                "ingredient": "jalapeno",
+                "name": "Jalapeño",
+                "need": {
+                  "text": "1",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "1",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                }
+              },
+              {
+                "ingredient": "romana-herzen",
+                "name": "Romana-Herzen",
+                "need": {
+                  "text": "3",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "3",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Packung"
+                },
+                "note": "3 Stück"
+              },
+              {
+                "ingredient": "koriander",
+                "name": "Koriander",
+                "need": {
+                  "text": "3–4",
+                  "value": 3.0,
+                  "max": 4.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "3–4",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Bund"
+                },
+                "optional": true
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Fleisch & Fisch",
+            "items": [
+              {
+                "ingredient": "schweineschulter",
+                "name": "Schweineschulter ohne Knochen",
+                "need": {
+                  "text": "900 g",
+                  "value": 900.0,
+                  "max": 900.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "900 g",
+                "inStock": false,
+                "buy": {
+                  "text": "900 g"
+                },
+                "note": "Nacken geht auch; Schulter evtl. nur im REWE Center"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Milchprodukte & Eier",
+            "items": [
+              {
+                "ingredient": "cheddar",
+                "name": "Cheddar oder mittelalter Gouda, am Stück",
+                "need": {
+                  "text": "130 g",
+                  "value": 130.0,
+                  "max": 130.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "130 g",
+                "inStock": false,
+                "buy": {
+                  "text": "100 g"
+                },
+                "note": "pasteurisiert — Standardware"
+              },
+              {
+                "ingredient": "joghurt",
+                "name": "Griechischer Joghurt 10 %",
+                "need": {
+                  "text": "50 g",
+                  "value": 50.0,
+                  "max": 50.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "50 g",
+                "inStock": false,
+                "buy": {
+                  "text": "150 g"
+                },
+                "note": "oder Schmand"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Trockenwaren",
+            "items": [
+              {
+                "ingredient": "bohnen",
+                "name": "Schwarze Bohnen",
+                "need": {
+                  "text": "0,33 + 1 Dose",
+                  "value": 0.33,
+                  "max": 0.33,
+                  "unit": "Stück",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 Dose",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "Dose",
+                      "approx": false
+                    }
+                  ]
+                },
+                "display": "0,33 + 1 Dose",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Dose"
+                },
+                "note": "400 g, \\~240 g abgetropft"
+              },
+              {
+                "ingredient": "salsa",
+                "name": "Salsa, mittelscharf",
+                "need": {
+                  "text": "2 EL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "2 EL",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Glas"
+                },
+                "note": "\\~200 g; roja oder verde; nicht die süße Dip-Salsa"
+              }
+            ]
+          },
+          {
+            "store": "Vorrat",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "achiote-paste",
+                "name": "Achiote-Paste",
+                "need": {
+                  "text": "50 g",
+                  "value": 50.0,
+                  "max": 50.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "50 g",
+                "inStock": false,
+                "buy": {
+                  "text": "50 g"
+                },
+                "pantry": true,
+                "note": "Vorratsblock vom Cochinita-Einkauf"
+              },
+              {
+                "ingredient": "knoblauch",
+                "name": "Knoblauch",
+                "need": {
+                  "text": "4",
+                  "value": 4.0,
+                  "max": 4.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "4",
+                "inStock": false,
+                "pantry": true,
+                "note": "2–4 Zehen je nach Füllung + 1 für die Bohnen"
+              },
+              {
+                "ingredient": "kreuzkuemmel",
+                "name": "Kreuzkümmel, gemahlen",
+                "need": {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "1 TL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "oregano",
+                "name": "Oregano, getrocknet",
+                "need": {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "1 TL",
+                "inStock": false,
+                "pantry": true,
+                "note": "gern mexikanischer"
+              },
+              {
+                "ingredient": "oel",
+                "name": "Neutrales Öl",
+                "need": {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "1 EL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "weissweinessig",
+                "name": "Weißweinessig",
+                "need": {
+                  "text": "1 EL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "1 EL",
+                "inStock": false,
+                "pantry": true,
+                "note": "eingelegte Zwiebeln"
+              },
+              {
+                "ingredient": "salz",
+                "name": "Salz",
+                "need": {
+                  "text": "2¼ TL",
+                  "value": 2.25,
+                  "max": 2.25,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "2¼ TL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "pfeffer",
+                "name": "Pfeffer",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "zucker",
+                "name": "Zucker",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "wasser",
+                "name": "Wasser",
+                "need": {
+                  "text": "100 ml",
+                  "value": 100.0,
+                  "max": 100.0,
+                  "unit": "ml",
+                  "approx": false
+                },
+                "display": "100 ml",
+                "inStock": false,
+                "pantry": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

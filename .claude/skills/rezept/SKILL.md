@@ -48,7 +48,7 @@ Lies zuerst, in dieser Reihenfolge, und halte dich daran:
      Rezepten `🚧 ` im Titel und eine `> [!NOTE]`-Statusbox.
    - Zeitplan für alles, was über einen Tag geht.
 5. **Datei anlegen** im passenden Ordner (`gerichte/`, `menues/`, `desserts/`,
-   `backen/`, `eis/`, `schwangerschaft/`). Dann `task sidebar`.
+   `backen/`, `eis/`, `mealprep/`, `schwangerschaft/`). Dann `task sidebar`.
 6. **Pflichtabschluss** (Abschnitt unten).
 
 ## Modus `normalisieren`

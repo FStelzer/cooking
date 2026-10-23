@@ -189,6 +189,13 @@
   "cooked": true
  },
  {
+  "path": "../mealprep/burrito-baukasten.json",
+  "title": "Burrito-Baukasten — drei Füllungen, als Burrito oder Bowl (3 Portionen)",
+  "group": "mealprep",
+  "wip": true,
+  "cooked": false
+ },
+ {
   "path": "../menues/menue-hochzeitstag.json",
   "title": "Degustationsmenü — Hochzeitstag (4 Personen)",
   "group": "menues",

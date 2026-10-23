@@ -33,6 +33,10 @@ und fliegt hier raus.
 - [Poulet au vinaigre (Lyon)](/schwangerschaft/poulet-au-vinaigre.md) — ohne Wein, Standard-REWE-Einkauf, unter 1¼ Std.
 - [Dal-Baukasten](/schwangerschaft/dal-baukasten.md) — Grundrezept + 4 Varianten, Rotationsgericht (Linsen als GDM-Anker)
 
+**Meal Prep (10/2026, Ordner `mealprep/`):**
+
+- [Burrito-Baukasten](/mealprep/burrito-baukasten.md) — 3 Füllungen (Chipotle-Hähnchen, Picadillo, Pulled Pork), als Burrito oder Bowl; Experiment, ☎ Chipotles in Adobo nur für Hähnchen
+
 ## Gekocht
 
 - ✅ [Dunkles Schokoladeneis (Crème-anglaise-Basis)](/eis/schokoladeneis-dunkel.md) — 09/2026, Leitrezept für den neuen Ordner `eis/`
@@ -104,6 +108,18 @@ und fliegt hier raus.
     anfragen, Fallback Dosenmuscheln + Clam Juice). Reichhaltig, null Schärfe —
     Kind kann direkt mitessen. Optional dazu: Sauerteig-/Weißbrot statt
     Bread Bowl.
+
+## Backlog — Meal Prep
+
+Rahmen wie im [Burrito-Baukasten](/mealprep/burrito-baukasten.md): 3 Portionen, gekühlt
+Mo–Mi, Mikrowelle, ≤ 1–1¼ Std. am Sonntag. Erst ausbauen, wenn die Burritos sich bewähren.
+
+1. **Dal als Mittagessen** — der [Dal-Baukasten](/schwangerschaft/dal-baukasten.md) wärmt
+   sich ideal auf; offen ist nur Portionierung und Beilage (Gemüse statt Roti).
+2. **Kofta mit Bulgur-Salat** — Lamm/Rind-Kofta aus dem Ofen, Bulgur-Kräuter-Salat und
+   Joghurt kalt daneben; nur die Kofta kommt in die Mikrowelle.
+3. **Chili con carne mit Bohnen** — ein Topf, wird am zweiten Tag besser; Picadillo-Logik
+   mit mehr Sauce, Toppings in die Kalt-Dose.
 
 ## Backlog — Eis
 

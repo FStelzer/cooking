@@ -200,12 +200,16 @@ schreiben (rendert als normales `~`). Tabellenzellen sind unkritisch
   selbst — Technik-Drills, Grundsaucen, einfache Basis-/Komponentenrezepte wie
   Pfannkuchen —, keine eigenständigen Gerichte-Projekte; z. B.
   `technik/abschmecken.md`, `technik/mini-projekte.md`. Sollten sich hier viele
-  Komponentenrezepte ansammeln, ggf. später in eigenen Ordner ausgliedern) und
+  Komponentenrezepte ansammeln, ggf. später in eigenen Ordner ausgliedern),
   `schwangerschaft/` (Rezepte, die während Schwangerschaft + Gestationsdiabetes
   ohne Sonderbehandlung passen; `leitfaden.md` dort ist Filter und
   Eignungstabelle. Kopien bestehender Rezepte heißen „… (Schwangerschafts-
   Version)" und verweisen aufs Original; Ideen dazu haben eine eigene Sektion
-  in `ideen.md`).
+  in `ideen.md`) und `mealprep/` (Sonntags vorkochen fürs Mittagessen auf der
+  Arbeit: 3 Portionen für Mo–Mi, gekühlt statt eingefroren, Aufwärmen in der
+  Mikrowelle ohne Zusatzarbeit, ≤ 1–1¼ Std. am Sonntag, eher wenig KH. Prinzip
+  „heiß innen, kalt außen": Joghurt/Salsa/Salat in eine separate Kalt-Dose;
+  Füllungen am Ende trocken einkochen. Einstieg: `burrito-baukasten.md`).
   Einkaufslisten leben direkt in den Rezepten (kein eigener Ordner mehr);
   `ideen.md` ist die Einstiegsseite der Docsify-Site.
 - **Rezepte in Arbeit (TODO):** H1-Titel beginnt mit `🚧 ` und direkt unter dem
