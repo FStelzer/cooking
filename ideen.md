@@ -2,50 +2,8 @@
 
 Lose Sammlung künftiger Projekte. Wird eine Idee konkret, bekommt sie eine
 🚧-Stub-Datei in `gerichte/` (erscheint dann in der Sidebar unter „in arbeit")
-und fliegt hier raus.
-
-## Ausgearbeitet — bereit zum Kochen
-
-- [Bún chả (Hanoi-Style)](/gerichte/bun-cha.md) — enthält Bún thịt nướng als Süd-Variante — 07/2026
-- [Cá kho tộ — karamellisierter Fisch](/gerichte/ca-kho-to.md) — 07/2026, Lachs bereits gekauft
-- [Cochinita Pibil](/gerichte/cochinita-pibil.md) — 07/2026, Achtung: Achiote/Bananenblätter 1–2 Wochen Bestellvorlauf
-- [Hähnchen-Shawarma, libanesisch](/gerichte/shawarma-libanesisch.md) — 07/2026
-- [Lamm-Kleftiko](/gerichte/lamm-kleftiko.md) — 07/2026
-- [Libanesische Mezze](/gerichte/mezze-libanesisch.md) — 07/2026
-- [Tafelspitz, sommerlich](/gerichte/tafelspitz.md) — 07/2026
-- [Char Siu mit kalten Sesamnudeln](/gerichte/char-siu.md) — 10/2026, ☎ Asialaden: Maltose, roter fermentierter Tofu, Sesampaste
-- [Massaman Curry mit selbstgemachter Paste](/gerichte/massaman-curry.md) — 10/2026, ☎ Asialaden: große milde Trockenchilis, Galgant
-- [Korean Fried Chicken (Keule + Flügel)](/gerichte/korean-fried-chicken.md) — 10/2026, zwei Saucen, ☎ Reissirup
-- [Schweinebraten mit Dunkelbiersauce (Krustenbraten)](/gerichte/schweinebraten-dunkelbier.md) — 10/2026, Schulter mit Schwarte vorbestellen
-- Römische Pasta-Trilogie — 10/2026, Technik: [Pasta-Emulsion](/technik/pasta-emulsion.md); Guanciale ist das Nadelöhr
-  - [Cacio e Pepe](/gerichte/cacio-e-pepe.md)
-  - [Carbonara](/gerichte/carbonara.md) — mit Schwangerschafts-Variante (Sabayon auf 72 °C)
-  - [Amatriciana](/gerichte/amatriciana.md)
-- [Pistazien-Himbeer-Cheesecake (no-bake)](/desserts/pistazien-himbeer-cheesecake.md) — 07/2026, Pistaziencreme ist Vorlauf-/Kostenposten
-
-**Schwangerschafts-Versionen (09/2026, Ordner `schwangerschaft/`):**
-
-- [Bouillabaisse (Schwangerschafts-Version)](/schwangerschaft/bouillabaisse.md) — neue Fischliste, ohne Wein/Pastis, Kartoffel-Rouille
-- [Mezze-Teller mit Kafta (Schwangerschafts-Version)](/schwangerschaft/mezze-teller.md) — Dips 1:1, Teigtaschen raus, Kafta rein
-- [Shawarma-Teller (Schwangerschafts-Version)](/schwangerschaft/shawarma-teller.md) — Teller statt Wrap, Blumenkohl harra
-- [Tandoori-Hähnchen vom Gasgrill + Dal tadka + Baingan bharta](/schwangerschaft/tandoori-haehnchen.md) — Kinder-Abzweigung vor dem Chili
-- [Pescado a la sal — Wolfsbarsch in der Salzkruste](/schwangerschaft/pescado-a-la-sal.md) — Buhara vorher anrufen (1,2–1,5 kg, mit Schuppen)
-- [Poulet au vinaigre (Lyon)](/schwangerschaft/poulet-au-vinaigre.md) — ohne Wein, Standard-REWE-Einkauf, unter 1¼ Std.
-- [Dal-Baukasten](/schwangerschaft/dal-baukasten.md) — Grundrezept + 4 Varianten, Rotationsgericht (Linsen als GDM-Anker)
-
-**Meal Prep (10/2026, Ordner `mealprep/`):**
-
-- [Burrito-Baukasten](/mealprep/burrito-baukasten.md) — 3 Füllungen (Chipotle-Hähnchen, Picadillo, Pulled Pork), als Burrito oder Bowl; Experiment, ☎ Chipotles in Adobo nur für Hähnchen
-
-## Gekocht
-
-- ✅ [Dunkles Schokoladeneis (Crème-anglaise-Basis)](/eis/schokoladeneis-dunkel.md) — 09/2026, Leitrezept für den neuen Ordner `eis/`
-- ✅ [Bò lúc lắc — vietnamesisches „Shaking Beef"](/gerichte/bo-luc-lac.md) — 2× gekocht vor 09/2026, Rezept 09/2026 ausgearbeitet (Einbrenn-Fix eingebaut, zu validieren)
-- ✅ [Vollkornbrötchen auf Vorrat](/backen/vollkornbroetchen.md) — Weizen 09/2026 gebacken, Rezept 09/2026 vereinheitlicht (Handkneten-Fix, zu validieren)
-- ✅ [Bulgogi — koreanisches „Feuerfleisch"](/gerichte/bulgogi.md) — 2× gekocht vor 08/2026, Rezept 08/2026 rekonstruiert
-- ✅ [Paneer-Projekt — Matar & Palak](/gerichte/paneer-projekt.md) — 07/2026
-- ✅ [Geschmorter Oktopus, griechische Art](/gerichte/oktopus-geschmort.md) — 07/2026
-- ✅ [Thịt kho trứng](/gerichte/thit-kho-trung.md) — 07/2026
+und fliegt hier raus. Ausgearbeitete und gekochte Rezepte stehen in der Sidebar
+(„🚧 in arbeit“ bzw. ✅ gekocht), nicht mehr hier.
 
 ## Backlog
 
@@ -55,7 +13,6 @@ und fliegt hier raus.
 
 2. **Griechisches Stifado** — stundenlang geschmortes Rind mit Perlzwiebeln,
    Zimt und Rotwein; dazu kalter Tomaten-Gurken-Feta-Salat und Brot.
-   (Der Kleftiko-Teil dieser Idee ist bereits in Arbeit.)
 
 3. **Hainanese Chicken Rice** — Huhn sanft in Ingwer-Brühe pochiert, Reis in der
    Brühe gekocht, dazu Gurke und drei Saucen (Ingwer-Frühlingszwiebel, süße Soja,
@@ -116,9 +73,7 @@ Mo–Mi, Mikrowelle, ≤ 1–1¼ Std. am Sonntag. Erst ausbauen, wenn die Burrit
 
 1. **Dal als Mittagessen** — der [Dal-Baukasten](/schwangerschaft/dal-baukasten.md) wärmt
    sich ideal auf; offen ist nur Portionierung und Beilage (Gemüse statt Roti).
-2. **Kofta mit Bulgur-Salat** — Lamm/Rind-Kofta aus dem Ofen, Bulgur-Kräuter-Salat und
-   Joghurt kalt daneben; nur die Kofta kommt in die Mikrowelle.
-3. **Chili con carne mit Bohnen** — ein Topf, wird am zweiten Tag besser; Picadillo-Logik
+2. **Chili con carne mit Bohnen** — ein Topf, wird am zweiten Tag besser; Picadillo-Logik
    mit mehr Sauce, Toppings in die Kalt-Dose.
 
 ## Backlog — Eis
@@ -141,7 +96,7 @@ sofern nicht anders vermerkt. Wird eine Sorte konkret → 🚧-Stub in `eis/`.
    (klarer als Espresso-Zugabe). Koffein → nicht in der Schwangerschaft.
 6. **Frozen Yogurt mit Beeren** — griechischer Joghurt + Beerenpüree, Süße über
    wenig Zucker/Erythrit; einzige Sorte, die als GDM-taugliches Dessert
-   (Backlog Schwangerschaft Nr. 8) durchgehen könnte.
+   (Backlog Schwangerschaft: „Dessert ohne Zuckerlast“) durchgehen könnte.
 
 ## Backlog — Schwangerschaft & Gestationsdiabetes
 
@@ -155,9 +110,7 @@ Quecksilber-Fische. Wird eine Idee konkret → 🚧-Stub in `schwangerschaft/`.
 de Veau* (Liaison auf ≥ 75 °C ziehen, kein Wein nötig), *Adobo*
 (Reis klein). **Nicht geeignet:** Vitello tonnato (Thunfisch + rohes Ei
 in der Mayo — zwei Treffer), Ceviche (roher Fisch), Hainanese
-Chicken Rice (Reis ist das Gericht). Die Pasta-Trilogie ist inzwischen
-ausgearbeitet und hat je eine `Schwangerschaft & GDM`-Sektion (Carbonara mit
-Sabayon-Variante auf 72 °C, Nudelportion klein).
+Chicken Rice (Reis ist das Gericht).
 
 1. **Mizutaki (Hakata-Style Hühner-Hotpot)** — Hähnchenteile 2–3 Std. zu einer
    milchig-weißen, kollagenreichen Brühe gekocht (14L-Topf, Selgros-Karkassen +
@@ -183,33 +136,21 @@ Sabayon-Variante auf 72 °C, Nudelportion klein).
    die klassische Austern-Beilage entfällt (roh). Kind hat Wraps bereits
    akzeptiert. Doenjang + Ssamjang aus dem Asialaden.
 
-4. **Kofta bil tahini** — Lamm-/Rind-Kofta im Ofen in Tahina-Zitronen-Sauce
-   gebacken, dazu geröstete Blumenkohl-Röschen und Gurken-Joghurt. Schließt
-   die Lücke „Protein zu den Mezze-Dips" und braucht nur, was der
-   Levante-Block sowieso beschafft (gute Tahina!). Kein Fladenbrot, komplett
-   durchgegart. Kombiniert mit der Mezze-Teller-Kopie ein voller Abend.
-
-5. **Griechischer Ofen-Abend: Psari plaki + Gigantes plaki + Horta** — Dorade
+4. **Griechischer Ofen-Abend: Psari plaki + Gigantes plaki + Horta** — Dorade
    oder Kabeljau auf Tomaten-Zwiebel-Fenchel im Ofen, dicke weiße Bohnen in
    Tomatensauce (Hülsenfrucht als KH-Träger), gekochtes Blattgemüse mit
    Zitrone und Öl, Feta (pasteurisiert). Setzt die Oktopus-/Kleftiko-Linie
    ohne Wein und Kartoffel fort; Kind kennt Oliven und Feta.
 
-6. **Shakshuka / Menemen mit festen Eiern** — Paprika-Tomaten-Basis, Eier
-   darin **komplett** stocken lassen (Deckel; Eigelb fest, kein Runny-Yolk),
-   Labneh oder Feta obenauf, 1 Scheibe Vollkornbrot statt Fladen. Das
-   GDM-Frühstücksproblem (empfindlichste Mahlzeit) als Wochenend-Gericht;
-   Menemen-Variante ohne Knoblauch als mildere Kinder-Pfanne.
-
-7. **Frühstücks- und Snack-Baukasten (technik/)** — kein Gericht, sondern
+5. **Frühstücks- und Snack-Baukasten (technik/)** — kein Gericht, sondern
     ein Spickzettel: Skyr/griechischer Joghurt + Nüsse + Beeren,
     Haferkleie-Porridge mit Protein (Hafer bei GDM gut belegt — messen!),
-    Eier-Varianten, hartgekochte Eier, Käsewürfel (pasteurisiert), Edamame,
+    Eier-Varianten (Wochenend-Version: [Shakshuka](/schwangerschaft/shakshuka.md)), hartgekochte Eier, Käsewürfel (pasteurisiert), Edamame,
     Rohkost mit Mezze-Dips als Spätmahlzeit. Zwei bis drei Zwischenmahlzeiten
     pro Tag sind laut Leitlinie Teil der Therapie — ohne Vorrat läuft das
     auf Kekse hinaus.
 
-8. **Dessert ohne Zuckerlast** — Panna cotta mit griechischem Joghurt und
+6. **Dessert ohne Zuckerlast** — Panna cotta mit griechischem Joghurt und
     Beeren, Mascarpone-Beeren-Gratin, dunkle Schokoladen-Ganache-Mousse
     (Sahne-basiert, ohne rohes Ei), gebackener Ricotta mit Zitrone. Süße über
     Beeren/wenig Honig oder Erythrit; Portionsgröße klein, immer nach einer

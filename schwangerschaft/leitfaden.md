@@ -103,7 +103,9 @@ Von Haus aus nach diesem Leitfaden gebaut (kein Kompromiss-Umbau nötig):
 [Tandoori-Hähnchen + Dal tadka + Baingan bharta](/schwangerschaft/tandoori-haehnchen.md) ·
 [Pescado a la sal](/schwangerschaft/pescado-a-la-sal.md) ·
 [Poulet au vinaigre](/schwangerschaft/poulet-au-vinaigre.md) ·
-[Dal-Baukasten](/schwangerschaft/dal-baukasten.md) (Rotationsgericht, Grundrezept + Varianten).
+[Dal-Baukasten](/schwangerschaft/dal-baukasten.md) (Rotationsgericht, Grundrezept + Varianten) ·
+[Kofta bil tahini](/schwangerschaft/kofta-bil-tahini.md) (mit Meal-Prep-Abzweig) ·
+[Shakshuka mit festen Eiern](/schwangerschaft/shakshuka.md) (Wochenend-Frühstück, Menemen fürs Kind).
 
 Neue Ideen für diesen Ordner: siehe [Ideen-Backlog](/ideen.md), Sektion „Backlog — Schwangerschaft & Gestationsdiabetes".
 

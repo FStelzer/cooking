@@ -30,7 +30,7 @@ Tahinsauce, Tabbouleh, Blumenkohl harra und mariniertes Hähnchen. Hier **kein**
 
 **Nicht dabei (bewusst):** Fatayer bi sabanekh und Sambousek bi jibneh — beide im Original,
 beide Weißmehl. *Kofta bil tahini* (Kafta im Ofen in Tahina-Sauce) wäre die ausgebaute Variante
-des Proteins und steht als eigener Punkt im [Ideen-Backlog](/ideen.md).
+des Proteins und ist inzwischen ein eigenes Rezept: [Kofta bil tahini](/schwangerschaft/kofta-bil-tahini.md).
 
 ## Beschaffung
 
@@ -236,7 +236,7 @@ Von allen aktuellen Projekten das kinderfreundlichste — Dips, Brot, Oliven (be
 ### Getroffene Entscheidungen (09/2026)
 
 - **Teigtaschen raus, Kafta rein:** 600 g Weißmehl für Fatayer + Sambousek sind der KH-Block des Originals; dafür fehlte dem Original-Abend Protein außer Käse und Kichererbse. Kafta kostet 15 Min. aktive Zeit, braucht nur Zutaten, die der Levante-Block sowieso beschafft, und streicht zugleich den „Teigtag" — der Abend wird von 3 auf 2 Tage kürzer.
-- **Kafta statt Kofta bil tahini:** Die Ofen-Variante in Tahina-Sauce wäre reichhaltiger, aber dieselbe Tahina steckt schon in zwei Dips — dreimal Tahina auf einem Teller kippt. Bleibt eigener Backlog-Punkt für einen Abend ohne Hummus.
+- **Kafta statt Kofta bil tahini:** Die Ofen-Variante in Tahina-Sauce wäre reichhaltiger, aber dieselbe Tahina steckt schon in zwei Dips — dreimal Tahina auf einem Teller kippt. Eigenes Rezept für einen Abend ohne Hummus: [Kofta bil tahini](/schwangerschaft/kofta-bil-tahini.md).
 - **Alle vier Dips bleiben, Mengen unverändert.** Sie sind zugleich der Wochen-Snack-Vorrat, deshalb nicht verkleinern.
 - **Rohkost hochskaliert** (6 Sorten statt 3): Sie übernimmt die Rolle, die im Original Brot und Teigtaschen hatten.
 - **Getrennt vom Shawarma-Teller.** Doppelt gekaufte Zutaten (Tahina, Baharat, Aleppo-Pfeffer) sind unkritisch — hält alles.
