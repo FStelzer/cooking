@@ -68,8 +68,7 @@ Koreanisches Brathähnchen in der Chicken-Shop-Form: ausgelöste Hähnchenkeule 
 - [ ] Sojasauce *(Verbrauch 4 EL + 1 TL — siehe Mengen-Check)*
 - [ ] Honig *(2 EL)*
 - [ ] Ketchup *(2 EL)*
-- [ ] Reisessig *(2½ EL + 1 TL)*
-- [ ] Branntweinessig *(100 ml, 5 % — für Chicken-mu)*
+- [ ] Reisessig *(120 ml Chicken-mu + 2½ EL + 1 TL Saucen/Dressing — kein Sushi-Essig)*
 - [ ] Sesamöl, geröstet *(2½ TL)*
 - [ ] Sesam, geröstet *(2 TL)*
 - [ ] Weizenmehl, Type 405 *(60 g)*
@@ -84,7 +83,8 @@ Koreanisches Brathähnchen in der Chicken-Shop-Form: ausgelöste Hähnchenkeule 
 
 **1. Chicken-mu (15 Min. + 3 Std. passiv)**
 *jederzeit*
-500 g Rettich schälen und in 1,5-cm-Würfel schneiden. 150 ml Wasser, 100 ml Branntweinessig, 50 g Zucker und 2 TL Salz verrühren, bis alles gelöst ist, über die Würfel in ein Glas oder eine Dose gießen (sie müssen bedeckt sein), verschließen, kalt stellen. Mindestens 3 Std., am besten über Nacht ziehen lassen. *Die Lake ist mit 1 : 1,5 : 0,5 (Essig : Wasser : Zucker) bewusst weniger süß als die klassische 1 : 1 : 1 — der Rettich soll den süßen Glasuren Säure und Frische entgegensetzen, nicht noch mehr Zucker liefern. Hält 1–2 Wochen gekühlt.*
+500 g Rettich schälen und in 1,5-cm-Würfel schneiden. 150 ml Wasser, 120 ml Reisessig, 50 g Zucker und 2 TL Salz verrühren, bis alles gelöst ist, über die Würfel in ein Glas oder eine Dose gießen (sie müssen bedeckt sein), verschließen, kalt stellen. Mindestens 3 Std., am besten über Nacht ziehen lassen. *Die Lake ist mit 1 : 1,5 : 0,5 (Essig 5 % : Wasser : Zucker) bewusst weniger süß als die klassische 1 : 1 : 1 — der Rettich soll den süßen Glasuren Säure und Frische entgegensetzen, nicht noch mehr Zucker liefern. Hält 1–2 Wochen gekühlt.*
+> **Essig:** Reisessig hat meist nur 4–4,5 % Säure, deshalb 120 ml statt der 100 ml der Quellen (die mit 5-%-Branntweinessig rechnen). **Kein Sushi-Essig**, der ist schon gezuckert und gesalzen. Branntweinessig (5 %) geht genauso: dann 100 ml.
 
 > **Radieschen-Fallback:** 2 Bund Radieschen halbieren (große vierteln), gleiche Lake, nur 2–3 Std. ziehen lassen — sie werden schneller weich.
 
@@ -98,7 +98,8 @@ Koreanisches Brathähnchen in der Chicken-Shop-Form: ausgelöste Hähnchenkeule 
 
 **4. Durchziehen (4–24 Std., passiv)**
 *nach Flügel salzen, Keule marinieren*
-Beides im Kühlschrank ziehen lassen, die Flügel offen, die Keule abgedeckt. *Unter 4 Std. geht auch (Minimum 1 Std.), dann sind die Flügel weniger trocken und die Haut wird etwas weniger blasig.*
+Beides im Kühlschrank ziehen lassen, die Flügel offen, die Keule abgedeckt. Geplant ist über Nacht vom Vortag bis zum Frittieren (\~20–24 Std.), das ist ideal. *Je länger die Flügel offen stehen, desto trockener und blasig-knuspriger wird die Haut.*
+> **Kurzfristig:** Wer erst am Kochtag anfängt, kommt auch mit weniger aus. Minimum 1 Std., ab 4 Std. ist der Effekt weitgehend da. Unter 4 Std. wird die Flügelhaut nur etwas weniger blasig.
 
 **5. Ganjang-Sauce (10 Min.)**
 *jederzeit · Herd*
@@ -230,8 +231,7 @@ Geprüft gegen den [Leitfaden](/schwangerschaft/leitfaden.md):
 | Kartoffelstärke | — | 30 g Bestäuben + 120 g | ½ TL | — | — | — | — | **\~152 g** |
 | Weizenmehl | — | 60 g | — | — | — | — | — | **60 g** |
 | Backpulver | ½ TL (Flügel) | 1 TL | — | — | — | — | — | **1½ TL** |
-| Reisessig | — | — | 1 TL | 1 EL | 1½ EL | — | — | **2½ EL + 1 TL** |
-| Branntweinessig | — | — | — | — | — | 100 ml | — | **100 ml** |
+| Reisessig | — | — | 1 TL | 1 EL | 1½ EL | 120 ml | — | **120 ml + 2½ EL + 1 TL** |
 | Sesamöl | — | — | ½ TL | 1 TL | 1 TL | — | — | **2½ TL** |
 | Sesam | — | — | — | — | 1 TL | — | 2 × ½ TL | **2 TL** |
 | Honig | — | — | 2 EL | — | — | — | — | **2 EL** |
