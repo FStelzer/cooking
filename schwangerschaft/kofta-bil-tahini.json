@@ -1,0 +1,2142 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "schwangerschaft/kofta-bil-tahini",
+  "kind": "dish",
+  "title": "Kofta bil tahini — Ofen-Kofta in Tahina-Zitronen-Sauce mit Blumenkohl und Gurken-Joghurt (4 Portionen + 3 Meal-Prep-Boxen)",
+  "status": "wip",
+  "yields": {
+    "text": "4 Portionen + 3 Meal-Prep-Boxen",
+    "value": 4.0,
+    "unit": "Portionen"
+  },
+  "statusNote": "> [!NOTE]\n> **Status: In Arbeit** — ausgearbeitet 10/2026, noch nicht gekocht. Zu prüfen: Hält die\n> Tahinasauce im Ofen die Konsistenz (nicht zu fest, nicht gebrochen)? Reicht ein Ofen für\n> Blumenkohl und zwei Kofta-Bleche im Sonntags-Zeitrahmen? Wie schmecken die Meal-Prep-Kofta\n> am dritten Tag aus der Mikrowelle?",
+  "intro": "*Aktive Zeit \\~1 Std., gesamt \\~2 Std. inkl. Boxen packen Equipment: Ofen mit 2 Blechen, große Auflaufform (\\~30 × 20 cm), kleiner Topf, kleine Pfanne, Reibe, Schüssel mit Schneebesen, Fleischthermometer, 3 mikrowellenfeste Dosen + 3 kleine Kalt-Dosen.*\n\nPalästinensischer und libanesischer Familienklassiker: gewürzte Hack-Kofta im Ofen\nvorgebacken, dann mit einer lockeren Tahina-Zitronen-Sauce übergossen und weiter gebacken,\nbis die Sauce cremig andickt und am Rand bräunt. Obendrauf Pinienkerne aus der Pfanne,\nPetersilie und Sumach. Reichhaltig, nussig, säuerlich — und von Haus aus nach dem\n[Leitfaden](/schwangerschaft/leitfaden.md) gebaut: alles durchgegart, Protein im Zentrum,\nKH als kleine Portion grober Bulgur.\n\n**Ein Sonntag, zwei Ergebnisse:** Die Kofta-Masse wird doppelt angesetzt. Gut die Hälfte\ngeht abends in der Sauce auf den Tisch, der Rest wird **ohne Sauce** auf einem eigenen Blech\ngebacken und kommt mit Blumenkohl, Bulgur-Kräuter-Salat und Gurken-Joghurt in drei\nMeal-Prep-Boxen für Mo–Mi (Rahmen wie im [Burrito-Baukasten](/mealprep/burrito-baukasten.md):\ngekühlt, Mikrowelle, heiß innen, kalt außen).",
+  "times": {
+    "text": "Aktive Zeit ~1 Std., gesamt ~2 Std.",
+    "active": {
+      "typical": "PT1H",
+      "source": "1 Std."
+    },
+    "total": {
+      "typical": "PT2H",
+      "source": "2 Std."
+    }
+  },
+  "equipment": [
+    "Ofen mit 2 Blechen",
+    "große Auflaufform (~30 × 20 cm)",
+    "kleiner Topf",
+    "kleine Pfanne",
+    "Reibe",
+    "Schüssel mit Schneebesen",
+    "Fleischthermometer",
+    "3 mikrowellenfeste Dosen + 3 kleine Kalt-Dosen"
+  ],
+  "ingredients": [
+    {
+      "id": "blumenkohl",
+      "name": "Blumenkohl",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "note": "mittelgroß, je \\~800 g; einer abends, einer für die Boxen"
+    },
+    {
+      "id": "zwiebeln",
+      "name": "Zwiebeln",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3"
+      },
+      "note": "2 in die Kofta, 1 in die Form"
+    },
+    {
+      "id": "tomaten",
+      "name": "Tomaten",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "5"
+      },
+      "note": "3 in die Form, 2 in den Bulgursalat"
+    },
+    {
+      "id": "salatgurken",
+      "name": "Salatgurken",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "note": "1½ gebraucht: 1 Gurken-Joghurt, ½ Bulgursalat"
+    },
+    {
+      "id": "petersilie",
+      "name": "glatte Petersilie",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2 Bund"
+      },
+      "note": "1 Kofta, ½ Bulgursalat, ½ Garnitur"
+    },
+    {
+      "id": "zitronen",
+      "name": "Zitronen",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "5"
+      },
+      "note": "2½ Sauce, 1 Bulgursalat, 1 in Spalten zum Servieren, ½ Reserve"
+    },
+    {
+      "id": "knoblauch",
+      "name": "Knoblauch",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Knolle"
+      },
+      "note": "4 Zehen"
+    },
+    {
+      "id": "lammhack",
+      "name": "Lammhack oder Rinderhack",
+      "store": "Aldi / REWE",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "1,1 kg"
+      },
+      "note": "\\~20 % Fett, auch gemischt — **frisch am Kochtag**; REWE Center, Lamm vorher anfragen"
+    },
+    {
+      "id": "joghurt",
+      "name": "griechischer Joghurt",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "1 kg"
+      },
+      "note": "2 × 500 g; 10 % Fett, pasteurisiert — Standardware"
+    },
+    {
+      "id": "bulgur",
+      "name": "grober Bulgur",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "250 g"
+      },
+      "note": "Pilavlık; Fallback mittelfeiner Bulgur aus dem REWE"
+    },
+    {
+      "id": "pinienkerne",
+      "name": "Pinienkerne",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "30 g"
+      }
+    },
+    {
+      "id": "tahina",
+      "name": "Tahina",
+      "store": "Online",
+      "note": "1 Glas, mind. 300 g; Verbrauch \\~180 g — libanesische/palästinensische Marke"
+    },
+    {
+      "id": "sumach",
+      "name": "Sumach",
+      "store": "Online",
+      "note": "kleine Packung; Fallback: abgeriebene Zitronenschale"
+    },
+    {
+      "id": "baharat",
+      "name": "Baharat",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Fallback selbst mischen: je ½ TL Piment, Zimt, gemahlener Koriander, Kreuzkümmel, Pfeffer, ¼ TL Nelke + Muskat"
+    },
+    {
+      "id": "kreuzkuemmel",
+      "name": "Kreuzkümmel, gemahlen",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "minze",
+      "name": "Getrocknete Minze",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "olivenoel",
+      "name": "Olivenöl",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "butter",
+      "name": "Butter",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "pfeffer",
+      "name": "Schwarzer Pfeffer",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Stil-Entscheidung",
+      "level": 2,
+      "markdown": "- **Blumenkohl statt Kartoffeln.** Klassisch liegen Kartoffelscheiben mit in der Form\n  (Arab Table, Falasteeni Foodie). Hier übernimmt gerösteter Blumenkohl auf einem eigenen\n  Blech die Rolle: Röstaromen, saugt die Sauce auf, fast keine KH. Die KH-Portion kommt als\n  grober Bulgur, der einen deutlich niedrigeren GI hat als Kartoffeln.\n- **Tahinasauce mit etwas Joghurt.** Reine Tahina-Zitrone-Wasser-Sauce (Ottolenghi) wird im\n  Ofen leicht stumpf und fest. Ein Anteil Joghurt (wie bei Falasteeni Foodie) macht sie runder,\n  milder fürs Kind und bleibt cremig. **Locker anrühren** — wie Sahne, nicht wie Hummus — weil\n  Tahina beim Backen weiter andickt.\n- **Zweistufig backen:** Kofta erst bei 220 °C ohne Sauce anbräunen (Kruste, Fett tritt aus),\n  dann Sauce drüber und bei 200 °C fertig backen. Direkt in roher Sauce gegart bleiben sie grau.\n- **Kofta-Masse = die Kafta aus dem [Mezze-Teller](/schwangerschaft/mezze-teller.md):**\n  ausgedrückte Zwiebel, Petersilie, Baharat, kräftig geknetet, ohne Ei und Brösel. Hier als\n  flache Ovale statt Spieß-Rollen — die liegen in der Form flach unter der Sauce.",
+      "tags": [
+        "stil"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Tahina ist der größte Hebel** (wie im Mezze-Block): libanesische/palästinensische Marke,\n  großes Glas. Supermarkt-Tahina ist oft bitter und schmeckt in einer Sauce, die *nur* Tahina\n  ist, sofort durch. Der türkische/arabische Laden ist noch nicht identifiziert → Fallback\n  online. Ein angebrochenes Glas aus dem Mezze-Einkauf reicht, wenn noch \\~200 g drin sind.\n- **Hack:** Lamm (klassisch) oder Rind mit \\~20 % Fett, gern gemischt. Lammhack hat das\n  REWE Center nicht immer → vorher fragen oder an der Theke Lammschulter durchdrehen lassen;\n  sonst Rinderhack. **Am Kochtag kaufen**, kurze Kühlkette — Hack ist auf dieser Liste der\n  kritischste Posten.\n- **Baharat, Sumach, Pinienkerne:** Baharat-Selbstmischung steht in der Einkaufsliste;\n  Sumach gibt es inzwischen in vielen REWE-Gewürzregalen, sonst online. Pinienkerne sind\n  teuer — 30 g reichen.\n- **Grober Bulgur** (*pilavlık*): REWE führt meist nur mittelfeinen Bulgur; der geht auch,\n  quillt aber weicher. Grober kommt aus dem türkischen Laden.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "kofta",
+          "name": "Kofta",
+          "steps": [
+            {
+              "id": "kofta-masse",
+              "label": "1",
+              "heading": "**1. Kofta-Masse (20 Min.)**",
+              "title": "Kofta-Masse",
+              "duration": {
+                "typical": "PT20M",
+                "source": "20 Min."
+              },
+              "text": "2 Zwiebeln sehr fein reiben und im Sieb mit den Händen **kräftig ausdrücken** — das Zwiebelwasser lässt Kofta sonst zerfallen. 1 Bund Petersilie fein schneiden, 2 Knoblauchzehen fein reiben. 1,1 kg Lammhack (oder Rinderhack) mit Zwiebel, Petersilie, Knoblauch, 2½ TL Baharat, 2 TL Salz und 1 TL Pfeffer in einer großen Schüssel 2–3 Min. **mit den Händen kneten**, bis die Masse klebrig und homogen ist. Ein walnussgroßes Stück in der kleinen Pfanne durchbraten und probieren, ggf. nachsalzen.\n> **Hygiene:** Hände, Brett und Schüssel danach heiß spülen — rohes Hack ist in der Schwangerschaft der kritische Punkt in der Küche, nicht das fertige Gericht.",
+              "action": "2 Zwiebeln sehr fein reiben und im Sieb mit den Händen **kräftig ausdrücken** — das Zwiebelwasser lässt Kofta sonst zerfallen.",
+              "limits": [
+                "kräftig ausdrücken",
+                "mit den Händen kneten"
+              ],
+              "cues": [
+                "bis die Masse klebrig und homogen ist"
+              ],
+              "timers": [
+                {
+                  "label": "Kofta-Masse",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "zwiebeln",
+                  "amount": {
+                    "text": "2 Zwiebeln",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "petersilie",
+                  "amount": {
+                    "text": "1 Bund Petersilie",
+                    "value": 1.0,
+                    "unit": "Bund"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "2 Knoblauchzehen",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "lammhack",
+                  "amount": {
+                    "text": "1,1 kg Lammhack",
+                    "value": 1.1,
+                    "unit": "kg"
+                  }
+                },
+                {
+                  "ref": "baharat",
+                  "amount": {
+                    "text": "2½ TL Baharat",
+                    "value": 2.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "2 TL Salz",
+                    "value": 2.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "1 TL Pfeffer",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "kofta-formen",
+              "label": "2",
+              "heading": "**2. Kofta formen (15 Min. + 30 Min. passiv)**",
+              "title": "Kofta formen",
+              "duration": {
+                "typical": "PT45M",
+                "source": "15 Min. + 30 Min."
+              },
+              "attention": "passive",
+              "text": "Masse in \\~22 Portionen à 50 g teilen (Waage: einmal 50 g abwiegen, Rest nach Augenmaß). Mit nassen Händen zu flachen Ovalen formen, \\~8 cm lang und 2 cm dick. 12 Stück in die Auflaufform legen, 10 Stück auf ein Blech mit Backpapier. Abgedeckt mind. 30 Min. kühlen; dann halten sie die Form.",
+              "action": "Masse in \\~22 Portionen à 50 g teilen (Waage: einmal 50 g abwiegen, Rest nach Augenmaß).",
+              "ingredients": [],
+              "meta": "*nach Kofta-Masse*",
+              "timers": [
+                {
+                  "label": "Kofta formen",
+                  "duration": {
+                    "typical": "PT45M"
+                  },
+                  "text": "15 Min. + 30 Min."
+                }
+              ],
+              "after": [
+                "step:kofta-masse"
+              ]
+            }
+          ],
+          "heading": "**Kofta (am Kochtag, roh mind. 30 Min. kühlen):**",
+          "produces": [
+            {
+              "id": "kofta",
+              "name": "Kofta",
+              "hold": {
+                "min": "PT30M",
+                "source": "am Kochtag, roh mind. 30 Min. kühlen"
+              }
+            }
+          ],
+          "intro": "Masse für \\~22 Stück à 50 g: 12 gehen abends in die Sauce, 10 in die Boxen."
+        },
+        {
+          "id": "blumenkohl",
+          "name": "Blumenkohl",
+          "steps": [
+            {
+              "id": "blumenkohl-roesten",
+              "label": "3",
+              "heading": "**3. Blumenkohl rösten (10 Min. + 25–30 Min. passiv)**",
+              "title": "Blumenkohl rösten",
+              "duration": {
+                "min": "PT35M",
+                "max": "PT40M",
+                "source": "10 Min. + 25–30 Min."
+              },
+              "attention": "passive",
+              "text": "Ofen auf 220 °C Umluft vorheizen. 2 Blumenkohl in mundgerechte Röschen teilen (Strunk schälen und in Scheiben mitrösten), mit 4 EL Olivenöl, 1 TL Kreuzkümmel und 1 TL Salz mischen und auf 2 Bleche mit Backpapier verteilen — **nicht stapeln**, sonst dämpfen sie. 25–30 Min. rösten, nach 15 Min. einmal wenden und die Bleche tauschen, bis die Ränder tief gebräunt sind. Herausnehmen; der Ofen bleibt auf 220 °C für die Kofta.",
+              "action": "Ofen auf 220 °C Umluft vorheizen.",
+              "limits": [
+                "nicht stapeln"
+              ],
+              "cues": [
+                "bis die Ränder tief gebräunt sind"
+              ],
+              "timers": [
+                {
+                  "label": "Blumenkohl rösten",
+                  "duration": {
+                    "min": "PT25M",
+                    "max": "PT30M"
+                  },
+                  "text": "25–30 Min."
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT15M",
+                    "source": "15 Min."
+                  },
+                  "text": "rösten, nach 15 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ofen",
+                  "text": "220 °C",
+                  "value": 220
+                },
+                {
+                  "kind": "ofen",
+                  "text": "220 °C",
+                  "value": 220
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "blumenkohl",
+                  "amount": {
+                    "text": "2 Blumenkohl",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "4 EL Olivenöl",
+                    "value": 4.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "kreuzkuemmel",
+                  "amount": {
+                    "text": "1 TL Kreuzkümmel",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Ofen 220 °C*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 220
+                }
+              ],
+              "after": []
+            }
+          ],
+          "heading": "**Blumenkohl (während die Kofta kühlen, Raumtemperatur bis zum Packen):**",
+          "produces": [
+            {
+              "id": "blumenkohl",
+              "name": "Blumenkohl",
+              "storage": {
+                "place": "room"
+              }
+            }
+          ],
+          "consumes": [
+            "product:kofta",
+            "product:ofen"
+          ]
+        },
+        {
+          "id": "bulgur-kaltes",
+          "name": "Bulgur & Kaltes",
+          "steps": [
+            {
+              "id": "bulgur-kochen",
+              "label": "4",
+              "heading": "**4. Bulgur kochen (ca. 20 Min., parallel)**",
+              "title": "Bulgur kochen",
+              "duration": {
+                "typical": "PT20M",
+                "source": "ca. 20 Min.",
+                "estimated": true
+              },
+              "parallel": true,
+              "text": "1 EL Butter im kleinen Topf schmelzen, 250 g groben Bulgur 1 Min. darin rösten, mit 450 ml Wasser und ½ TL Salz aufkochen. Deckel drauf, bei kleinster Hitze 12 Min. garen, vom Herd nehmen und 10 Min. mit Deckel quellen lassen. Mit der Gabel auflockern und **teilen:** die Hälfte warm halten (abends), die andere Hälfte flach auf einem Teller auskühlen lassen (Bulgursalat).",
+              "action": "1 EL Butter im kleinen Topf schmelzen, 250 g groben Bulgur 1 Min. darin rösten, mit 450 ml Wasser und ½ TL Salz aufkochen.",
+              "timers": [
+                {
+                  "label": "Bulgur kochen",
+                  "duration": {
+                    "typical": "PT12M"
+                  },
+                  "text": "12 Min."
+                },
+                {
+                  "label": "Bulgur kochen",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "1 EL Butter",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "bulgur",
+                  "amount": {
+                    "text": "250 g groben Bulgur",
+                    "value": 250.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "450 ml Wasser",
+                    "value": 450.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "gurken-joghurt",
+              "label": "5",
+              "heading": "**5. Gurken-Joghurt (10 Min.)**",
+              "title": "Gurken-Joghurt",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "1 Salatgurke grob raspeln, mit ½ TL Salz mischen, 5 Min. ziehen lassen und kräftig ausdrücken. Mit 400 g griechischem Joghurt, 1 TL getrockneter Minze und 1 EL Olivenöl verrühren. **Kinderportion abnehmen:** 3 EL in ein Schälchen. Dann 1 Knoblauchzehe fein reiben und unter den Rest rühren, abschmecken.",
+              "action": "1 Salatgurke grob raspeln, mit ½ TL Salz mischen, 5 Min. ziehen lassen und kräftig ausdrücken.",
+              "timers": [
+                {
+                  "label": "Gurken-Joghurt",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "salatgurken",
+                  "amount": {
+                    "text": "1 Salatgurke",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "joghurt",
+                  "amount": {
+                    "text": "400 g griechischem Joghurt",
+                    "value": 400.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "minze",
+                  "amount": {
+                    "text": "1 TL getrockneter Minze",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "1 EL Olivenöl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "1 Knoblauchzehe",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "bulgursalat",
+              "label": "6",
+              "heading": "**6. Bulgursalat (10 Min.)**",
+              "title": "Bulgursalat",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "2 Tomaten und ½ Salatgurke fein würfeln, ½ Bund Petersilie fein hacken. Mit dem ausgekühlten Bulgur, Saft von 1 Zitrone, 2 EL Olivenöl, ½ TL Salz und reichlich Pfeffer mischen. Kalt stellen — der Salat ist nur für die Boxen.",
+              "action": "2 Tomaten und ½ Salatgurke fein würfeln, ½ Bund Petersilie fein hacken.",
+              "ingredients": [
+                {
+                  "ref": "tomaten",
+                  "amount": {
+                    "text": "2 Tomaten",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salatgurken",
+                  "amount": {
+                    "text": "½ Salatgurke",
+                    "value": 0.5,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "petersilie",
+                  "amount": {
+                    "text": "½ Bund Petersilie",
+                    "value": 0.5,
+                    "unit": "Bund"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "1 Zitrone",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "2 EL Olivenöl",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "reichlich Pfeffer"
+                  }
+                }
+              ],
+              "meta": "*nach Bulgur kochen*",
+              "attention": "active",
+              "after": [
+                "step:bulgur-kochen"
+              ]
+            }
+          ],
+          "heading": "**Bulgur & Kaltes (parallel, Kühlschrank bis zum Servieren):**",
+          "produces": [
+            {
+              "id": "bulgur-kaltes",
+              "name": "Bulgur & Kaltes",
+              "storage": {
+                "place": "fridge"
+              }
+            }
+          ]
+        },
+        {
+          "id": "tahinasauce",
+          "name": "Tahinasauce",
+          "steps": [
+            {
+              "id": "tahinasauce",
+              "label": "7",
+              "heading": "**7. Tahinasauce (5 Min.)**",
+              "title": "Tahinasauce",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "180 g Tahina mit dem Saft von 2½ Zitronen (\\~75 ml), 1 fein geriebenen Knoblauchzehe und ¾ TL Salz verrühren — sie wird erst fest und körnig, das ist normal. Dann unter Rühren 200–250 ml kaltes Wasser in Schüben zugeben, bis sie hell, glatt und **so flüssig wie Sahne** ist. 120 g griechischen Joghurt unterrühren. **6 EL Sauce für die Boxen** in ein Glas abfüllen und kalt stellen.\n> **Konsistenz:** Läuft sie vom Löffel wie flüssige Sahne, ist sie richtig. Dicker angerührt wird sie im Ofen pastös und trocken.",
+              "action": "180 g Tahina mit dem Saft von 2½ Zitronen (\\~75 ml), 1 fein geriebenen Knoblauchzehe und ¾ TL Salz verrühren — sie wird erst fest und körnig, das ist normal.",
+              "limits": [
+                "so flüssig wie Sahne",
+                "6 EL Sauce für die Boxen"
+              ],
+              "cues": [
+                "bis sie hell"
+              ],
+              "ingredients": [
+                {
+                  "ref": "tahina",
+                  "amount": {
+                    "text": "180 g Tahina",
+                    "value": 180.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "2½ Zitronen",
+                    "value": 2.5,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "1 fein geriebenen Knoblauchzehe",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "¾ TL Salz",
+                    "value": 0.75,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "200–250 ml kaltes Wasser",
+                    "value": 200.0,
+                    "unit": "ml",
+                    "max": 250.0
+                  }
+                },
+                {
+                  "ref": "joghurt",
+                  "amount": {
+                    "text": "120 g griechischen Joghurt",
+                    "value": 120.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            }
+          ],
+          "heading": "**Tahinasauce (direkt vor dem Überbacken angerührt):**",
+          "produces": [
+            {
+              "id": "tahinasauce",
+              "name": "Tahinasauce"
+            }
+          ],
+          "consumes": [
+            "product:ofen"
+          ]
+        },
+        {
+          "id": "ofen",
+          "name": "Ofen",
+          "steps": [
+            {
+              "id": "form-belegen",
+              "label": "8",
+              "heading": "**8. Form belegen (5 Min.)**",
+              "title": "Form belegen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "1 Zwiebel in dünne Ringe schneiden und zwischen die 12 Kofta in der Auflaufform streuen, 3 Tomaten in Scheiben obenauf legen, 1 EL Olivenöl darüberträufeln.",
+              "action": "1 Zwiebel in dünne Ringe schneiden und zwischen die 12 Kofta in der Auflaufform streuen, 3 Tomaten in Scheiben obenauf legen, 1 EL Olivenöl darüberträufeln.",
+              "ingredients": [
+                {
+                  "ref": "zwiebeln",
+                  "amount": {
+                    "text": "1 Zwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "tomaten",
+                  "amount": {
+                    "text": "3 Tomaten",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "1 EL Olivenöl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Kofta formen*",
+              "attention": "active",
+              "after": [
+                "step:kofta-formen"
+              ]
+            },
+            {
+              "id": "kofta-vorbacken",
+              "label": "9",
+              "heading": "**9. Kofta vorbacken (12–15 Min., passiv)**",
+              "title": "Kofta vorbacken",
+              "duration": {
+                "min": "PT12M",
+                "max": "PT15M",
+                "source": "12–15 Min."
+              },
+              "attention": "passive",
+              "text": "Form und Blech mit den 10 Meal-Prep-Kofta zusammen bei 220 °C Umluft 12–15 Min. backen, bis die Kofta außen gebräunt sind.",
+              "action": "Form und Blech mit den 10 Meal-Prep-Kofta zusammen bei 220 °C Umluft 12–15 Min. backen, bis die Kofta außen gebräunt sind.",
+              "cues": [
+                "bis die Kofta außen gebräunt sind"
+              ],
+              "timers": [
+                {
+                  "label": "Kofta vorbacken",
+                  "duration": {
+                    "min": "PT12M",
+                    "max": "PT15M"
+                  },
+                  "text": "12–15 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "220 °C",
+                  "value": 220
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Form belegen, Blumenkohl rösten · Ofen 220 °C*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 220
+                }
+              ],
+              "after": [
+                "step:form-belegen",
+                "step:blumenkohl-roesten"
+              ]
+            },
+            {
+              "id": "meal-prep-kofta-pruefen",
+              "label": "10",
+              "heading": "**10. Meal-Prep-Kofta prüfen (ca. 2 Min.)**",
+              "title": "Meal-Prep-Kofta prüfen",
+              "duration": {
+                "typical": "PT2M",
+                "source": "ca. 2 Min.",
+                "estimated": true
+              },
+              "text": "Das Blech mit den 10 Kofta herausnehmen und die dickste mit dem Thermometer messen: **≥ 72 °C**, innen kein Rosa. Sonst 3–4 Min. weiterbacken. Fertig gegarte Kofta flach auf dem Blech abkühlen lassen.",
+              "action": "Das Blech mit den 10 Kofta herausnehmen und die dickste mit dem Thermometer messen: **≥ 72 °C**, innen kein Rosa.",
+              "limits": [
+                "≥ 72 °C"
+              ],
+              "timers": [
+                {
+                  "label": "Meal-Prep-Kofta prüfen",
+                  "duration": {
+                    "min": "PT3M",
+                    "max": "PT4M"
+                  },
+                  "text": "3–4 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "≥ 72 °C",
+                  "value": 72
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Kofta vorbacken · fertig bei ≥ 72 °C Kern*",
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei ≥ 72 °C Kern",
+                "value": 72
+              },
+              "attention": "active",
+              "after": [
+                "step:kofta-vorbacken"
+              ]
+            },
+            {
+              "id": "mit-tahina-ueberbacken",
+              "label": "11",
+              "heading": "**11. Mit Tahina überbacken (12–15 Min., passiv)**",
+              "title": "Mit Tahina überbacken",
+              "duration": {
+                "min": "PT12M",
+                "max": "PT15M",
+                "source": "12–15 Min."
+              },
+              "attention": "passive",
+              "text": "Ofen auf 200 °C herunterschalten. Ausgetretenes Fett in der Form mit Küchenpapier abtupfen, dann die restliche Tahinasauce gleichmäßig über Kofta und Tomaten gießen, sodass alles knapp bedeckt ist. 12–15 Min. backen, bis die Sauce am Rand Blasen wirft und leicht goldene Flecken bekommt.\n> **Gar-Check — Pflicht:** Thermometer seitlich in eine Kofta in der Mitte der Form: **≥ 72 °C**. Unter der Sauce sieht man das nicht. *Zu fest geworden? 2–3 EL heißes Wasser am Rand einrühren.*",
+              "action": "Ofen auf 200 °C herunterschalten.",
+              "limits": [
+                "≥ 72 °C"
+              ],
+              "why": "Zu fest geworden? 2–3 EL heißes Wasser am Rand einrühren.",
+              "cues": [
+                "bis die Sauce am Rand Blasen wirft und leicht goldene Flecken bekommt"
+              ],
+              "timers": [
+                {
+                  "label": "Mit Tahina überbacken",
+                  "duration": {
+                    "min": "PT12M",
+                    "max": "PT15M"
+                  },
+                  "text": "12–15 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ofen",
+                  "text": "200 °C",
+                  "value": 200
+                },
+                {
+                  "kind": "ziel",
+                  "text": "≥ 72 °C",
+                  "value": 72
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Kofta vorbacken, Tahinasauce · Ofen 200 °C · fertig bei ≥ 72 °C Kern*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 200
+                }
+              ],
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei ≥ 72 °C Kern",
+                "value": 72
+              },
+              "after": [
+                "step:kofta-vorbacken",
+                "step:tahinasauce"
+              ]
+            },
+            {
+              "id": "pinienkerne",
+              "label": "12",
+              "heading": "**12. Pinienkerne (ca. 4 Min.)**",
+              "title": "Pinienkerne",
+              "duration": {
+                "typical": "PT4M",
+                "source": "ca. 4 Min.",
+                "estimated": true
+              },
+              "text": "1 EL Butter in der kleinen Pfanne aufschäumen, 30 g Pinienkerne darin bei mittlerer Hitze unter ständigem Schwenken goldbraun rösten. Sofort auf einen Teller geben — sie verbrennen in Sekunden.",
+              "action": "1 EL Butter in der kleinen Pfanne aufschäumen, 30 g Pinienkerne darin bei mittlerer Hitze unter ständigem Schwenken goldbraun rösten.",
+              "ingredients": [
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "1 EL Butter",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "pinienkerne",
+                  "amount": {
+                    "text": "30 g Pinienkerne",
+                    "value": 30.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*letzte 5 Min. von Mit Tahina überbacken · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Pinienkerne",
+                  "duration": {
+                    "typical": "PT4M"
+                  },
+                  "text": "ca. 4 Min."
+                }
+              ],
+              "start": {
+                "ref": "step:mit-tahina-ueberbacken:end",
+                "offset": {
+                  "min": "-PT5M",
+                  "max": "-PT5M",
+                  "source": "letzte 5 Min. von Mit Tahina überbacken"
+                }
+              }
+            },
+            {
+              "id": "anrichten",
+              "label": "13",
+              "heading": "**13. Anrichten (ca. 5 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "ca. 5 Min.",
+                "estimated": true
+              },
+              "text": "Form 5 Min. ruhen lassen. Pinienkerne samt Butter darüber, ½ Bund Petersilie grob gezupft und 1 TL Sumach darüberstreuen. Mit dem halben Blumenkohl, dem warmen Bulgur, Gurken-Joghurt und 1 Zitrone in Spalten servieren. Portion pro Erwachsenem: 3–4 Kofta, \\~3 EL Bulgur, viel Blumenkohl.",
+              "action": "Form 5 Min. ruhen lassen.",
+              "timers": [
+                {
+                  "label": "Anrichten",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "petersilie",
+                  "amount": {
+                    "text": "½ Bund Petersilie",
+                    "value": 0.5,
+                    "unit": "Bund"
+                  }
+                },
+                {
+                  "ref": "sumach",
+                  "amount": {
+                    "text": "1 TL Sumach",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "1 Zitrone",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "bulgur",
+                  "amount": {
+                    "text": "3 EL Bulgur",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Mit Tahina überbacken, Pinienkerne, Bulgur kochen, Gurken-Joghurt*",
+              "attention": "active",
+              "after": [
+                "step:mit-tahina-ueberbacken",
+                "step:pinienkerne",
+                "step:bulgur-kochen",
+                "step:gurken-joghurt"
+              ]
+            }
+          ],
+          "heading": "**Ofen (Abendessen und Meal-Prep-Kofta zusammen):**",
+          "phaseHint": "Abend",
+          "produces": [
+            {
+              "id": "ofen",
+              "name": "Ofen"
+            }
+          ],
+          "consumes": [
+            "product:blumenkohl",
+            "product:kofta",
+            "product:tahinasauce"
+          ]
+        },
+        {
+          "id": "meal-prep",
+          "name": "Meal Prep",
+          "steps": [
+            {
+              "id": "boxen-abkuehlen",
+              "label": "14",
+              "heading": "**14. Boxen abkühlen (30 Min., passiv)**",
+              "title": "Boxen abkühlen",
+              "duration": {
+                "typical": "PT30M",
+                "source": "30 Min."
+              },
+              "attention": "passive",
+              "text": "10 Kofta und den zweiten Blumenkohl flach auf Blech bzw. Teller abkühlen lassen, **höchstens 1 Std.** bei Raumtemperatur, dann packen.\n> **Technik:** Flach statt im Topf, wie im Burrito-Baukasten: Gegarte Speisen sollen nach USDA FSIS innerhalb von 2 Std. im Kühlschrank sein.",
+              "action": "10 Kofta und den zweiten Blumenkohl flach auf Blech bzw.",
+              "limits": [
+                "höchstens 1 Std."
+              ],
+              "ingredients": [],
+              "meta": "*nach Meal-Prep-Kofta prüfen, Blumenkohl rösten*",
+              "timers": [
+                {
+                  "label": "Boxen abkühlen",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "30 Min."
+                }
+              ],
+              "after": [
+                "step:meal-prep-kofta-pruefen",
+                "step:blumenkohl-roesten"
+              ]
+            },
+            {
+              "id": "boxen-packen",
+              "label": "15",
+              "heading": "**15. Boxen packen (ca. 10 Min.)**",
+              "title": "Boxen packen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "ca. 10 Min.",
+                "estimated": true
+              },
+              "text": "In jede der 3 mikrowellenfesten Dosen 3–4 Kofta und ein Drittel vom gerösteten Blumenkohl nebeneinander legen, je 2 EL der abgefüllten Tahinasauce über die Kofta geben. Bulgursalat und den restlichen Gurken-Joghurt auf die 3 Kalt-Dosen verteilen (\\~3 EL Joghurt je Dose). Alles in den Kühlschrank.",
+              "action": "In jede der 3 mikrowellenfesten Dosen 3–4 Kofta und ein Drittel vom gerösteten Blumenkohl nebeneinander legen, je 2 EL der abgefüllten Tahinasauce über die Kofta geben.",
+              "ingredients": [
+                {
+                  "ref": "tahina",
+                  "amount": {
+                    "text": "je 2 EL der abgefüllten Tahinasauce",
+                    "value": 2.0,
+                    "unit": "EL",
+                    "per": "Pfanne"
+                  }
+                },
+                {
+                  "ref": "joghurt",
+                  "amount": {
+                    "text": "3 EL Joghurt",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Boxen abkühlen, Bulgursalat, Gurken-Joghurt*",
+              "attention": "active",
+              "after": [
+                "step:boxen-abkuehlen",
+                "step:bulgursalat",
+                "step:gurken-joghurt"
+              ]
+            },
+            {
+              "id": "box-aufwaermen",
+              "label": "16",
+              "heading": "**16. Box aufwärmen (ca. 3 Min.)**",
+              "title": "Box aufwärmen",
+              "duration": {
+                "typical": "PT3M",
+                "source": "ca. 3 Min.",
+                "estimated": true
+              },
+              "text": "Deckel lose auflegen, 1 EL Wasser über die Kofta träufeln, bei 600–800 W 1½ Min. erhitzen, Kofta wenden, weitere 1–1½ Min., bis alles dampft. Bulgursalat und Gurken-Joghurt aus der Kalt-Dose kalt daneben essen.\n> **Gar-Check:** Eine Kofta durchschneiden — sie muss in der Mitte dampfen. *Tahinasauce dick geworden? Mit dem Löffel und etwas Wasser glattrühren, sie wird beim Abkühlen immer fester.*",
+              "action": "Deckel lose auflegen, 1 EL Wasser über die Kofta träufeln, bei 600–800 W 1½ Min. erhitzen, Kofta wenden, weitere 1–1½ Min., bis alles dampft.",
+              "why": "Tahinasauce dick geworden? Mit dem Löffel und etwas Wasser glattrühren, sie wird beim Abkühlen immer fester.",
+              "timers": [
+                {
+                  "label": "Box aufwärmen",
+                  "duration": {
+                    "typical": "PT1M30S"
+                  },
+                  "text": "1½ Min."
+                },
+                {
+                  "label": "Box aufwärmen",
+                  "duration": {
+                    "min": "PT1M",
+                    "max": "PT1M30S"
+                  },
+                  "text": "1–1½ Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "1 EL Wasser",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Boxen packen · fertig bei ≥ 74 °C Kern*",
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei ≥ 74 °C Kern",
+                "value": 74
+              },
+              "attention": "active",
+              "after": [
+                "step:boxen-packen"
+              ]
+            }
+          ],
+          "heading": "**Meal Prep (Sonntagabend packen, Mo–Mi gekühlt):**",
+          "produces": [
+            {
+              "id": "meal-prep",
+              "name": "Meal Prep"
+            }
+          ],
+          "consumes": [
+            "product:blumenkohl",
+            "product:kofta",
+            "product:tahinasauce"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "kochtag",
+            "text": "Kofta-Masse · Kofta formen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT105M"
+            },
+            "source": "T−1:45",
+            "steps": [
+              "kofta-masse",
+              "kofta-formen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Blumenkohl rösten · Bulgur kochen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT75M"
+            },
+            "source": "T−1:15",
+            "steps": [
+              "blumenkohl-roesten",
+              "bulgur-kochen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Gurken-Joghurt · Bulgursalat · Tahinasauce",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT50M"
+            },
+            "source": "T−0:50",
+            "steps": [
+              "gurken-joghurt",
+              "bulgursalat",
+              "tahinasauce"
+            ],
+            "tasks": [
+              "tahinasauce"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Form belegen · Kofta vorbacken",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT40M"
+            },
+            "source": "T−0:40",
+            "steps": [
+              "form-belegen",
+              "kofta-vorbacken"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Meal-Prep-Kofta prüfen · Mit Tahina überbacken",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT20M"
+            },
+            "source": "T−0:20",
+            "steps": [
+              "meal-prep-kofta-pruefen",
+              "mit-tahina-ueberbacken"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Pinienkerne · Anrichten",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT5M"
+            },
+            "source": "T−0:05",
+            "steps": [
+              "pinienkerne",
+              "anrichten"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Mild by design:** kein Chili im ganzen Gericht. Baharat ist warm (Zimt, Piment), nicht scharf.\n- **Roher Knoblauch** steckt nur im Gurken-Joghurt und (wenig) in der Tahinasauce. Die\n  Kinderportion Joghurt wird vor dem Knoblauch abgenommen (Schritt „Gurken-Joghurt“); die\n  Tahinasauce ist nach dem Überbacken durchgegart und mild.\n- **Teller fürs Kind:** 2 Kofta, aufgeschnitten, Sauce daneben zum Tunken statt darüber,\n  Blumenkohl-Röschen, 1–2 EL Bulgur, Joghurt. Zitronenspalte und Oliven dazu, falls es\n  welche will.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "Nach dem [Leitfaden](/schwangerschaft/leitfaden.md):\n\n- **Durchgegart:** Kofta ≥ 72 °C Kern (beide Bleche gemessen), aufgewärmt ≥ 74 °C.\n  Joghurt aus dem Kühlregal ist pasteurisiert, Tahina ist geröstete Sesampaste (unkritisch).\n  Kein Alkohol, kein rohes Ei — die Masse bindet über das Kneten.\n- **KH pro Erwachsenen-Teller (Schätzwerte):** \\~30 g Bulgur roh (gut 3 EL gekocht)\n  → \\~18–20 g KH · Blumenkohl 250 g → \\~6 g · Tomate/Zwiebel/Sauce → \\~5 g · Gurken-Joghurt\n  → \\~4 g. **Gesamt \\~35 g KH** bei \\~40 g Protein und viel Fett — genau die kleine,\n  gedämpfte KH-Portion. Grober Bulgur hat einen niedrigen GI (\\~45–50); trotzdem messen.\n- **Meal-Prep-Box:** \\~40 g Bulgur roh im Salat → \\~25 g KH, Rest wie oben, \\~35 g gesamt.\n  Isst die Schwangere die Boxen: **innerhalb von 2 Tagen** (Mo/Di) und dampfend heiß\n  aufwärmen. Der Bulgursalat ist gegart und kalt; Tomate, Gurke und Petersilie gründlich\n  waschen.\n- Nach dem Abendessen ein Spaziergang.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Kombination mit dem Mezze-Teller:** Im [Mezze-Teller](/schwangerschaft/mezze-teller.md)\n  ist bewusst Kafta vom Grill gewählt, weil dort schon Hummus und Moutabal Tahina tragen.\n  Kofta bil tahini passt besser zu einem Abend *ohne* Hummus — dazu eher Labneh, Muhammara und\n  Rohkost.\n- **Ohne Meal Prep (nur Abendessen):** Hack auf 600 g, 1 Zwiebel und ½ Bund Petersilie in die\n  Masse, 1 Blumenkohl, 120 g Bulgur; Sauce und Gurken-Joghurt unverändert (die 6 EL nicht\n  abfüllen, Rest des Joghurts ist Snack-Vorrat).\n- **Nach der Schwangerschaft:** Kofta dürfen bei 65–68 °C Kern herausgenommen werden und bleiben\n  saftiger; Lamm verträgt das gut.",
+      "tags": [
+        "notizen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Aufbau Kofta + Kartoffel in der Form, Sauce in zwei Stufen:** [Arab Table via NPR —\n  Baked Kafta with Tahini Sauce](https://www.npr.org/6650548) (175 °C, 45 Min. Kafta über\n  Kartoffeln, dann Sauce bis zur Sahne-Konsistenz \\~30 Min.). Unsere höhere Temperatur und\n  kürzere Zeit, weil ohne Kartoffeln nichts lange garen muss.\n- **Joghurt in der Tahinasauce, 200 °C, Sauce 10–15 Min. nachbacken:**\n  [Falasteeni Foodie](https://falasteenifoodie.com/wprm_print/24505) (palästinensisch,\n  Tahina + Joghurt + Wasser + Zitrone; Hinweis, dass Tahina beim Abkühlen andickt und\n  beim Aufwärmen Wasser braucht) und [Foodess — Lamb Kofta in Tahini Sauce](https://foodess.com/wprm_print/lamb-kofta-in-tahini-sauce)\n  (200 °C, 25 Min. + 10–15 Min. mit Sauce).\n- **Reine Tahina-Zitrone-Wasser-Sauce, Kofta vorher scharf angebraten:** Ottolenghi-Variante\n  ([umami.recipes](https://www.umami.recipes/recipe/TT1Qzd9unsN7vgoWDVlC)). Anbraten in der\n  Pfanne bei 22 Kofta in Chargen verworfen — der Ofen bei 220 °C bräunt zuverlässig genug.\n- **Kofta-Masse:** eigene Kafta aus dem [Mezze-Teller](/schwangerschaft/mezze-teller.md),\n  auf 1,1 kg hochgerechnet.\n- **Haltbarkeit und Aufwärmen:** USDA FSIS, *Leftovers and Food Safety* — innerhalb von 2 Std.\n  kühlen, 3–4 Tage gekühlt, auf 74 °C erhitzen. 2-Tage-Regel für die Schwangere wie im\n  Burrito-Baukasten (konservativ, keine offizielle Grenze).\n- **GI Bulgur:** International Tables of Glycemic Index (Atkinson et al., Diabetes Care 2008),\n  Bulgur gekocht \\~46–48.",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-23T14:05:53Z",
+    "sourceHash": "555b3dcc33d54b63",
+    "quantities": [
+      {
+        "ingredient": "blumenkohl",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "blumenkohl": "2 Blumenkohl"
+        }
+      },
+      {
+        "ingredient": "zwiebeln",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "kofta": "2 Zwiebeln",
+          "ofen": "1 Zwiebel"
+        }
+      },
+      {
+        "ingredient": "tomaten",
+        "total": {
+          "text": "5",
+          "value": 5.0,
+          "max": 5.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "bulgur-kaltes": "2 Tomaten",
+          "ofen": "3 Tomaten"
+        }
+      },
+      {
+        "ingredient": "salatgurken",
+        "total": {
+          "text": "1½",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "bulgur-kaltes": "1 Salatgurke + ½ Salatgurke"
+        }
+      },
+      {
+        "ingredient": "petersilie",
+        "total": {
+          "text": "2 Bund",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Bund",
+          "approx": false
+        },
+        "perTask": {
+          "kofta": "1 Bund Petersilie",
+          "bulgur-kaltes": "½ Bund Petersilie",
+          "ofen": "½ Bund Petersilie"
+        }
+      },
+      {
+        "ingredient": "zitronen",
+        "total": {
+          "text": "4½",
+          "value": 4.5,
+          "max": 4.5,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "bulgur-kaltes": "1 Zitrone",
+          "tahinasauce": "2½ Zitronen",
+          "ofen": "1 Zitrone"
+        }
+      },
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": "4",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "kofta": "2 Knoblauchzehen",
+          "bulgur-kaltes": "1 Knoblauchzehe",
+          "tahinasauce": "1 fein geriebenen Knoblauchzehe"
+        }
+      },
+      {
+        "ingredient": "lammhack",
+        "total": {
+          "text": "1100 g",
+          "value": 1100.0,
+          "max": 1100.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "kofta": "1,1 kg Lammhack"
+        }
+      },
+      {
+        "ingredient": "joghurt",
+        "total": {
+          "text": "520 g + 3 EL",
+          "value": 520.0,
+          "max": 520.0,
+          "unit": "g",
+          "approx": false,
+          "plus": [
+            {
+              "text": "3 EL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "EL",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "bulgur-kaltes": "400 g griechischem Joghurt",
+          "tahinasauce": "120 g griechischen Joghurt",
+          "meal-prep": "3 EL Joghurt"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "bulgur",
+        "total": {
+          "text": "250 g + 3 EL",
+          "value": 250.0,
+          "max": 250.0,
+          "unit": "g",
+          "approx": false,
+          "plus": [
+            {
+              "text": "3 EL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "EL",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "bulgur-kaltes": "250 g groben Bulgur",
+          "ofen": "3 EL Bulgur"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "pinienkerne",
+        "total": {
+          "text": "30 g",
+          "value": 30.0,
+          "max": 30.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "ofen": "30 g Pinienkerne"
+        }
+      },
+      {
+        "ingredient": "tahina",
+        "total": {
+          "text": "180 g + 2 EL",
+          "value": 180.0,
+          "max": 180.0,
+          "unit": "g",
+          "approx": false,
+          "plus": [
+            {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "tahinasauce": "180 g Tahina",
+          "meal-prep": "je 2 EL der abgefüllten Tahinasauce"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "sumach",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "ofen": "1 TL Sumach"
+        }
+      },
+      {
+        "ingredient": "baharat",
+        "total": {
+          "text": "2½ TL",
+          "value": 2.5,
+          "max": 2.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "kofta": "2½ TL Baharat"
+        }
+      },
+      {
+        "ingredient": "kreuzkuemmel",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "blumenkohl": "1 TL Kreuzkümmel"
+        }
+      },
+      {
+        "ingredient": "minze",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "bulgur-kaltes": "1 TL getrockneter Minze"
+        }
+      },
+      {
+        "ingredient": "olivenoel",
+        "total": {
+          "text": "8 EL",
+          "value": 8.0,
+          "max": 8.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "blumenkohl": "4 EL Olivenöl",
+          "bulgur-kaltes": "1 EL Olivenöl + 2 EL Olivenöl",
+          "ofen": "1 EL Olivenöl"
+        }
+      },
+      {
+        "ingredient": "butter",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "bulgur-kaltes": "1 EL Butter",
+          "ofen": "1 EL Butter"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "5¼ TL",
+          "value": 5.25,
+          "max": 5.25,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "kofta": "2 TL Salz",
+          "blumenkohl": "1 TL Salz",
+          "bulgur-kaltes": "½ TL Salz + ½ TL Salz + ½ TL Salz",
+          "tahinasauce": "¾ TL Salz"
+        }
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "kofta": "1 TL Pfeffer"
+        },
+        "unitless": [
+          "reichlich Pfeffer"
+        ]
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "665–715 ml",
+          "value": 665.0,
+          "max": 715.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "bulgur-kaltes": "450 ml Wasser",
+          "tahinasauce": "200–250 ml kaltes Wasser",
+          "meal-prep": "1 EL Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Online",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "tahina",
+            "name": "Tahina",
+            "need": {
+              "text": "180 g + 2 EL",
+              "value": 180.0,
+              "max": 180.0,
+              "unit": "g",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "2 EL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "EL",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "180 g + 2 EL",
+            "inStock": false,
+            "note": "1 Glas, mind. 300 g; Verbrauch \\~180 g — libanesische/palästinensische Marke"
+          },
+          {
+            "ingredient": "sumach",
+            "name": "Sumach",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "note": "kleine Packung; Fallback: abgeriebene Zitronenschale"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "blumenkohl",
+            "name": "Blumenkohl",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "mittelgroß, je \\~800 g; einer abends, einer für die Boxen"
+          },
+          {
+            "ingredient": "zwiebeln",
+            "name": "Zwiebeln",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            },
+            "note": "2 in die Kofta, 1 in die Form"
+          },
+          {
+            "ingredient": "tomaten",
+            "name": "Tomaten",
+            "need": {
+              "text": "5",
+              "value": 5.0,
+              "max": 5.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "5",
+            "inStock": false,
+            "buy": {
+              "text": "5"
+            },
+            "note": "3 in die Form, 2 in den Bulgursalat"
+          },
+          {
+            "ingredient": "salatgurken",
+            "name": "Salatgurken",
+            "need": {
+              "text": "1½",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1½",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "1½ gebraucht: 1 Gurken-Joghurt, ½ Bulgursalat"
+          },
+          {
+            "ingredient": "petersilie",
+            "name": "glatte Petersilie",
+            "need": {
+              "text": "2 Bund",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Bund",
+              "approx": false
+            },
+            "display": "2 Bund",
+            "inStock": false,
+            "buy": {
+              "text": "2 Bund"
+            },
+            "note": "1 Kofta, ½ Bulgursalat, ½ Garnitur"
+          },
+          {
+            "ingredient": "zitronen",
+            "name": "Zitronen",
+            "need": {
+              "text": "4½",
+              "value": 4.5,
+              "max": 4.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "4½",
+            "inStock": false,
+            "buy": {
+              "text": "5"
+            },
+            "note": "2½ Sauce, 1 Bulgursalat, 1 in Spalten zum Servieren, ½ Reserve"
+          },
+          {
+            "ingredient": "knoblauch",
+            "name": "Knoblauch",
+            "need": {
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "4",
+            "inStock": false,
+            "buy": {
+              "text": "1 Knolle"
+            },
+            "note": "4 Zehen"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "lammhack",
+            "name": "Lammhack oder Rinderhack",
+            "need": {
+              "text": "1100 g",
+              "value": 1100.0,
+              "max": 1100.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "1100 g",
+            "inStock": false,
+            "buy": {
+              "text": "1,1 kg"
+            },
+            "note": "\\~20 % Fett, auch gemischt — **frisch am Kochtag**; REWE Center, Lamm vorher anfragen"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "joghurt",
+            "name": "griechischer Joghurt",
+            "need": {
+              "text": "520 g + 3 EL",
+              "value": 520.0,
+              "max": 520.0,
+              "unit": "g",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "3 EL",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "EL",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "520 g + 3 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 kg"
+            },
+            "note": "2 × 500 g; 10 % Fett, pasteurisiert — Standardware"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "bulgur",
+            "name": "grober Bulgur",
+            "need": {
+              "text": "250 g + 3 EL",
+              "value": 250.0,
+              "max": 250.0,
+              "unit": "g",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "3 EL",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "EL",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "250 g + 3 EL",
+            "inStock": false,
+            "buy": {
+              "text": "250 g"
+            },
+            "note": "Pilavlık; Fallback mittelfeiner Bulgur aus dem REWE"
+          },
+          {
+            "ingredient": "pinienkerne",
+            "name": "Pinienkerne",
+            "need": {
+              "text": "30 g",
+              "value": 30.0,
+              "max": 30.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "30 g",
+            "inStock": false,
+            "buy": {
+              "text": "30 g"
+            }
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "baharat",
+            "name": "Baharat",
+            "need": {
+              "text": "2½ TL",
+              "value": 2.5,
+              "max": 2.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "2½ TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "Fallback selbst mischen: je ½ TL Piment, Zimt, gemahlener Koriander, Kreuzkümmel, Pfeffer, ¼ TL Nelke + Muskat"
+          },
+          {
+            "ingredient": "kreuzkuemmel",
+            "name": "Kreuzkümmel, gemahlen",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "minze",
+            "name": "Getrocknete Minze",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "olivenoel",
+            "name": "Olivenöl",
+            "need": {
+              "text": "8 EL",
+              "value": 8.0,
+              "max": 8.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "8 EL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "butter",
+            "name": "Butter",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "5¼ TL",
+              "value": 5.25,
+              "max": 5.25,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "5¼ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Schwarzer Pfeffer",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "665–715 ml",
+              "value": 665.0,
+              "max": 715.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "665–715 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}

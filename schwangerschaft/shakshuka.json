@@ -1,0 +1,1504 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "schwangerschaft/shakshuka",
+  "kind": "dish",
+  "title": "Shakshuka mit festen Eiern und Feta — plus milde Menemen-Pfanne fürs Kind (2 Erwachsene + Kind)",
+  "status": "wip",
+  "yields": {
+    "text": "2 Erwachsene + Kind",
+    "value": 2.0,
+    "unit": "Erwachsene"
+  },
+  "statusNote": "> [!NOTE]\n> **Status: In Arbeit** — ausgearbeitet 10/2026, noch nicht gekocht. Zu prüfen: Werden die\n> Eier unter dem Deckel durchgehend fest, ohne dass das Eiweiß gummiartig wird? Wie\n> reagiert der Blutzucker auf das Frühstück (Sauce + ½ Brötchen)?",
+  "intro": "*Aktive Zeit \\~35 Min., gesamt \\~45 Min. Equipment: große Edelstahlpfanne (28 cm) mit Deckel, kleine beschichtete Pfanne, Fleischthermometer.*\n\nWochenend-Frühstück aus Nordafrika und der Levante: Zwiebel und Paprika weich geschmort,\nmit Tomate, Kreuzkümmel und Paprikapulver dick eingekocht, die Eier direkt darin gegart.\nDazu Feta oder Labneh, Kräuter, ein halbes Vollkornbrötchen zum Tunken.\n\n**Warum als Schwangerschaftsrezept:** Das Frühstück ist bei Gestationsdiabetes meist die\nempfindlichste Mahlzeit ([Leitfaden](/schwangerschaft/leitfaden.md), Regel 4) — wenig KH,\nviel Protein. Shakshuka liefert genau das: Gemüse statt Brot als Basis, 2–3 Eier pro\nErwachsenem. Der Haken ist das Ei: Klassisch bleibt das Eigelb flüssig, in der Schwangerschaft\nmuss es **ganz fest** werden. Das verändert das Gericht spürbar (kein Eigelb, das in die\nSauce läuft), deshalb gleicht hier mehr Würze und ein salziges Topping aus.\n\n**Fürs Kind** läuft parallel eine kleine Menemen-Pfanne: die türkische Schwester des\nGerichts, mit Rührei statt ganzer Eier, ohne Knoblauch und Kreuzkümmel.",
+  "times": {
+    "text": "Aktive Zeit ~35 Min., gesamt ~45 Min.",
+    "active": {
+      "typical": "PT35M",
+      "source": "35 Min."
+    },
+    "total": {
+      "typical": "PT45M",
+      "source": "45 Min."
+    }
+  },
+  "equipment": [
+    "große Edelstahlpfanne (28 cm) mit Deckel",
+    "kleine beschichtete Pfanne",
+    "Fleischthermometer"
+  ],
+  "ingredients": [
+    {
+      "id": "paprika",
+      "name": "rote Paprika",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3"
+      },
+      "note": "2½ gebraucht: 2 Shakshuka, ½ Menemen; Rest als Rohkost"
+    },
+    {
+      "id": "zwiebel",
+      "name": "Zwiebel",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      }
+    },
+    {
+      "id": "knoblauchzehen",
+      "name": "Knoblauchzehen",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3"
+      }
+    },
+    {
+      "id": "strauchtomate",
+      "name": "Strauchtomate",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "Menemen"
+    },
+    {
+      "id": "petersilie",
+      "name": "glatte Petersilie",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      },
+      "note": "oder Koriander"
+    },
+    {
+      "id": "eier",
+      "name": "Eier",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "10"
+      },
+      "note": "7 gebraucht: 5 Shakshuka, 2 Menemen"
+    },
+    {
+      "id": "feta",
+      "name": "Feta",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "150 g"
+      },
+      "note": "pasteurisiert; 100 g Shakshuka, 2 EL Menemen"
+    },
+    {
+      "id": "tomaten",
+      "name": "gehackte Tomaten",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "400 g"
+      },
+      "note": "1 Dose"
+    },
+    {
+      "id": "harissa",
+      "name": "Tube Harissa",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1"
+      },
+      "optional": true,
+      "note": "nur Erwachsene, am Tisch"
+    },
+    {
+      "id": "roggenvollkornbrot",
+      "name": "Roggenvollkornbrot",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1"
+      },
+      "optional": true,
+      "note": "nur ohne Brötchen-Vorrat"
+    },
+    {
+      "id": "vollkornbroetchen",
+      "name": "Vollkornbrötchen",
+      "store": "Vorrat",
+      "buy": {
+        "text": "2"
+      },
+      "pantry": true,
+      "note": "Gefrierfach"
+    },
+    {
+      "id": "oliven",
+      "name": "Schwarze Oliven",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Kind"
+    },
+    {
+      "id": "tomatenmark",
+      "name": "Tomatenmark",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "kreuzkuemmel",
+      "name": "Kreuzkümmel, gemahlen",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "paprikapulver",
+      "name": "Paprikapulver edelsüß",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "za",
+      "name": "Za'atar",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "optional, Topping"
+    },
+    {
+      "id": "olivenoel",
+      "name": "Olivenöl",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "butter",
+      "name": "Butter",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "pfeffer",
+      "name": "Schwarzer Pfeffer",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Stil-Entscheidung",
+      "level": 2,
+      "markdown": "- **Sauce dick einkochen, bevor die Eier hineinkommen.** Eine wässrige Sauce verlängert die\n  Garzeit der Eier und kocht das Eiweiß aus. Ziel: Ein Löffel zieht eine Spur, die sich nur\n  langsam schließt.\n- **Eigelb anstechen.** Ein ganzes Eigelb wird erst spät fest, das Eiweiß ist bis dahin zäh.\n  Mit einer Gabelspitze leicht anstechen und ein wenig ins Eiweiß ziehen — dann stockt das Ei\n  gleichmäßig in \\~10 Min., und es sieht trotzdem nach Shakshuka aus.\n- **Niedrige Hitze, Deckel drauf.** Der Dampf gart die Oberseite; Hitze darf nur leise\n  blubbern lassen.\n- **Kein Zucker.** Solomonov (*Zahav*) gibt eine Prise Zucker gegen die Tomatensäure. Hier\n  bleibt er weg (GDM), die Paprika bringt genug Süße.\n- **Schärfe nur am Tisch:** Harissa auf dem Erwachsenen-Teller, nicht in der Pfanne.",
+      "tags": [
+        "stil"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Alles Aldi/REWE.** Gute Dosentomaten machen den Unterschied (gehackt, z. B. Mutti Polpa\n  oder geschälte San Marzano, mit der Hand zerdrückt).\n- **Feta:** Schafs-/Ziegenkäse-Feta in Lake, **pasteurisiert** (steht auf dem Etikett;\n  Standardware ist es). Alternative: Labneh aus dem [Mezze-Teller](/schwangerschaft/mezze-teller.md)\n  oder gekauft.\n- **Harissa:** Tube oder Glas aus dem REWE-Gewürz-/Weltküche-Regal.\n- **Brot:** ½ [Vollkornbrötchen](/backen/vollkornbroetchen.md) aus dem Gefrierfach pro Person;\n  sonst 1 Scheibe Roggenvollkornbrot.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "shakshuka",
+          "name": "Shakshuka",
+          "steps": [
+            {
+              "id": "gemuese-schneiden",
+              "label": "1",
+              "heading": "**1. Gemüse schneiden (10 Min.)**",
+              "title": "Gemüse schneiden",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "1 Zwiebel halbieren und in feine Streifen schneiden. 2 rote Paprika entkernen und in 1 cm breite, 4 cm lange Streifen schneiden, 3 Knoblauchzehen in dünne Scheiben. Für die Menemen ½ rote Paprika und 1 Strauchtomate fein würfeln und beiseitestellen.",
+              "action": "1 Zwiebel halbieren und in feine Streifen schneiden.",
+              "ingredients": [
+                {
+                  "ref": "zwiebel",
+                  "amount": {
+                    "text": "1 Zwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "paprika",
+                  "amount": {
+                    "text": "2 rote Paprika",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauchzehen",
+                  "amount": {
+                    "text": "3 Knoblauchzehen",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "paprika",
+                  "amount": {
+                    "text": "½ rote Paprika",
+                    "value": 0.5,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "strauchtomate",
+                  "amount": {
+                    "text": "1 Strauchtomate",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "gemuese-schmoren",
+              "label": "2",
+              "heading": "**2. Gemüse schmoren (10–12 Min.)**",
+              "title": "Gemüse schmoren",
+              "duration": {
+                "min": "PT10M",
+                "max": "PT12M",
+                "source": "10–12 Min."
+              },
+              "text": "3 EL Olivenöl in der großen Pfanne auf dem großen Mittelfeld bei mittlerer Hitze erwärmen. Zwiebel und Paprika mit ½ TL Salz 10–12 Min. weich schmoren, gelegentlich rühren, bis sie zusammengefallen und süß sind — **nicht bräunen**. Knoblauch in den letzten 2 Min. mitgaren.",
+              "action": "3 EL Olivenöl in der großen Pfanne auf dem großen Mittelfeld bei mittlerer Hitze erwärmen.",
+              "limits": [
+                "nicht bräunen"
+              ],
+              "cues": [
+                "bis sie zusammengefallen und süß sind"
+              ],
+              "timers": [
+                {
+                  "label": "Gemüse schmoren",
+                  "duration": {
+                    "min": "PT10M",
+                    "max": "PT12M"
+                  },
+                  "text": "10–12 Min."
+                },
+                {
+                  "label": "Gemüse schmoren",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "3 EL Olivenöl",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*nach Gemüse schneiden · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:gemuese-schneiden"
+              ]
+            },
+            {
+              "id": "tomaten-einkochen",
+              "label": "3",
+              "heading": "**3. Tomaten einkochen (10–12 Min.)**",
+              "title": "Tomaten einkochen",
+              "duration": {
+                "min": "PT10M",
+                "max": "PT12M",
+                "source": "10–12 Min."
+              },
+              "text": "1 TL Kreuzkümmel, 1½ TL Paprikapulver und 1 EL Tomatenmark einrühren und 1 Min. rösten. 400 g gehackte Tomaten und 50 ml Wasser dazu, bei mittlerer Hitze offen 10–12 Min. einkochen, bis die Sauce dick ist und ein Löffel eine Spur zieht, die sich nur langsam schließt. Mit Salz und reichlich Pfeffer abschmecken — kräftig, die festen Eier brauchen eine würzige Sauce.",
+              "action": "1 TL Kreuzkümmel, 1½ TL Paprikapulver und 1 EL Tomatenmark einrühren und 1 Min. rösten.",
+              "cues": [
+                "bis die Sauce dick ist und ein Löffel eine Spur zieht"
+              ],
+              "timers": [
+                {
+                  "label": "Tomaten einkochen",
+                  "duration": {
+                    "min": "PT10M",
+                    "max": "PT12M"
+                  },
+                  "text": "10–12 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "kreuzkuemmel",
+                  "amount": {
+                    "text": "1 TL Kreuzkümmel",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "paprikapulver",
+                  "amount": {
+                    "text": "1½ TL Paprikapulver",
+                    "value": 1.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "tomatenmark",
+                  "amount": {
+                    "text": "1 EL Tomatenmark",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "tomaten",
+                  "amount": {
+                    "text": "400 g gehackte Tomaten",
+                    "value": 400.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "50 ml Wasser",
+                    "value": 50.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "reichlich Pfeffer"
+                  }
+                }
+              ],
+              "meta": "*nach Gemüse schmoren · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:gemuese-schmoren"
+              ]
+            },
+            {
+              "id": "eier-stocken",
+              "label": "4",
+              "heading": "**4. Eier stocken (10–12 Min.)**",
+              "title": "Eier stocken",
+              "duration": {
+                "min": "PT10M",
+                "max": "PT12M",
+                "source": "10–12 Min."
+              },
+              "text": "Hitze auf klein. Mit einem Löffel 5 Mulden in die Sauce drücken und 5 Eier einzeln hineinschlagen, jedes leicht salzen. Das Eigelb mit einer Gabelspitze anstechen und etwas ins Eiweiß ziehen. Deckel auflegen und 10–12 Min. leise köcheln lassen, bis Eiweiß und Eigelb vollständig fest sind.\n> **Gar-Check — Pflicht:** Mit einem Messer in ein Eigelb drücken: kein flüssiger Kern, schnittfest wie beim hart gekochten Ei. Mit dem Thermometer im Eigelb: **≥ 70 °C**. Nicht fest? Deckel wieder drauf, 2–3 Min. nachgaren. *Zu trocken am Pfannenboden? 2 EL Wasser am Rand angießen, bevor der Deckel wieder drauf kommt.*",
+              "action": "Hitze auf klein.",
+              "limits": [
+                "≥ 70 °C"
+              ],
+              "why": "Zu trocken am Pfannenboden? 2 EL Wasser am Rand angießen, bevor der Deckel wieder drauf kommt.",
+              "timers": [
+                {
+                  "label": "Eier stocken",
+                  "duration": {
+                    "min": "PT10M",
+                    "max": "PT12M"
+                  },
+                  "text": "10–12 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "≥ 70 °C",
+                  "value": 70
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "eier",
+                  "amount": {
+                    "text": "5 Eier",
+                    "value": 5.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*nach Tomaten einkochen · Herd · fertig wenn das Eigelb schnittfest ist*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "endCondition": {
+                "type": "visual",
+                "text": "wenn das Eigelb schnittfest ist"
+              },
+              "attention": "attended",
+              "after": [
+                "step:tomaten-einkochen"
+              ]
+            },
+            {
+              "id": "toppings",
+              "label": "5",
+              "heading": "**5. Toppings (ca. 2 Min.)**",
+              "title": "Toppings",
+              "duration": {
+                "typical": "PT2M",
+                "source": "ca. 2 Min.",
+                "estimated": true
+              },
+              "text": "100 g Feta grob über die Pfanne bröseln. ½ Bund Petersilie grob hacken und darüberstreuen, 1 EL Olivenöl darüberträufeln, optional 1 TL Za'atar. In der Pfanne auf den Tisch.",
+              "action": "100 g Feta grob über die Pfanne bröseln.",
+              "ingredients": [
+                {
+                  "ref": "feta",
+                  "amount": {
+                    "text": "100 g Feta",
+                    "value": 100.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "petersilie",
+                  "amount": {
+                    "text": "½ Bund Petersilie",
+                    "value": 0.5,
+                    "unit": "Bund"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "1 EL Olivenöl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "za",
+                  "amount": {
+                    "text": "1 TL Za",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*nach Eier stocken*",
+              "attention": "active",
+              "after": [
+                "step:eier-stocken"
+              ]
+            }
+          ],
+          "heading": "**Shakshuka (2 Erwachsene, direkt servieren):**",
+          "produces": [
+            {
+              "id": "shakshuka",
+              "name": "Shakshuka"
+            }
+          ],
+          "consumes": [
+            "product:menemen"
+          ]
+        },
+        {
+          "id": "menemen",
+          "name": "Menemen",
+          "steps": [
+            {
+              "id": "menemen",
+              "label": "6",
+              "heading": "**6. Menemen (ca. 8 Min., parallel)**",
+              "title": "Menemen",
+              "duration": {
+                "typical": "PT8M",
+                "source": "ca. 8 Min.",
+                "estimated": true
+              },
+              "parallel": true,
+              "text": "1 TL Butter in der kleinen Pfanne bei mittlerer Hitze schmelzen, die ½ rote Paprika 3 Min. weich dünsten. Die Strauchtomate dazu und 2 Min. einkochen, bis sie fast trocken ist. 2 Eier mit 1 Prise Salz verquirlen, dazugeben und unter langsamem Rühren 2–3 Min. stocken lassen, bis das Rührei **vollständig fest** ist, aber noch saftig glänzt. 2 EL Feta darüberbröseln und 3–4 schwarze Oliven, halbiert, darauflegen.",
+              "action": "1 TL Butter in der kleinen Pfanne bei mittlerer Hitze schmelzen, die ½ rote Paprika 3 Min. weich dünsten.",
+              "limits": [
+                "vollständig fest"
+              ],
+              "cues": [
+                "bis sie fast trocken ist",
+                "bis das Rührei"
+              ],
+              "timers": [
+                {
+                  "label": "Menemen",
+                  "duration": {
+                    "typical": "PT3M"
+                  },
+                  "text": "3 Min."
+                },
+                {
+                  "label": "Menemen",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                },
+                {
+                  "label": "Menemen",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "1 TL Butter",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "paprika",
+                  "amount": {
+                    "text": "½ rote Paprika",
+                    "value": 0.5,
+                    "unit": "Stück"
+                  },
+                  "reuse": true
+                },
+                {
+                  "ref": "eier",
+                  "amount": {
+                    "text": "2 Eier",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 Prise Salz",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                },
+                {
+                  "ref": "feta",
+                  "amount": {
+                    "text": "2 EL Feta",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "oliven",
+                  "amount": {
+                    "text": "3–4 schwarze Oliven",
+                    "value": 3.0,
+                    "unit": "Stück",
+                    "max": 4.0
+                  }
+                }
+              ],
+              "meta": "*letzte 10 Min. von Eier stocken · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "start": {
+                "ref": "step:eier-stocken:end",
+                "offset": {
+                  "min": "-PT10M",
+                  "max": "-PT10M",
+                  "source": "letzte 10 Min. von Eier stocken"
+                }
+              }
+            }
+          ],
+          "heading": "**Menemen (Kind, parallel):**",
+          "produces": [
+            {
+              "id": "menemen",
+              "name": "Menemen"
+            }
+          ]
+        },
+        {
+          "id": "brot",
+          "name": "Brot",
+          "steps": [
+            {
+              "id": "brot-aufbacken",
+              "label": "7",
+              "heading": "**7. Brot aufbacken (10 Min., parallel)**",
+              "title": "Brot aufbacken",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "parallel": true,
+              "text": "2 Vollkornbrötchen aus dem Gefrierfach bei 180 °C 8–10 Min. aufbacken, halbieren. Ohne Brötchen-Vorrat stattdessen 3 Scheiben Roggenvollkornbrot toasten.",
+              "action": "2 Vollkornbrötchen aus dem Gefrierfach bei 180 °C 8–10 Min. aufbacken, halbieren.",
+              "timers": [
+                {
+                  "label": "Brot aufbacken",
+                  "duration": {
+                    "min": "PT8M",
+                    "max": "PT10M"
+                  },
+                  "text": "8–10 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "180 °C",
+                  "value": 180
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "vollkornbroetchen",
+                  "amount": {
+                    "text": "2 Vollkornbrötchen",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "roggenvollkornbrot",
+                  "amount": {
+                    "text": "3 Scheiben Roggenvollkornbrot",
+                    "value": 3.0,
+                    "unit": "Scheiben"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Ofen 180 °C*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 180
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "anrichten",
+              "label": "8",
+              "heading": "**8. Anrichten (ca. 3 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT3M",
+                "source": "ca. 3 Min.",
+                "estimated": true
+              },
+              "text": "Pro Erwachsenem die Hälfte der Eier mit reichlich Sauce und eine Brötchenhälfte zum Tunken, dazu je 1 TL Harissa auf den Tellerrand. Kind: Menemen mit einer Brötchenhälfte; die vierte Hälfte ist Reserve.",
+              "action": "Pro Erwachsenem die Hälfte der Eier mit reichlich Sauce und eine Brötchenhälfte zum Tunken, dazu je 1 TL Harissa auf den Tellerrand.",
+              "ingredients": [
+                {
+                  "ref": "harissa",
+                  "amount": {
+                    "text": "je 1 TL Harissa",
+                    "value": 1.0,
+                    "unit": "TL",
+                    "per": "Pfanne"
+                  }
+                }
+              ],
+              "meta": "*nach Toppings, Menemen, Brot aufbacken*",
+              "attention": "active",
+              "after": [
+                "step:toppings",
+                "step:menemen",
+                "step:brot-aufbacken"
+              ]
+            }
+          ],
+          "heading": "**Brot (parallel):**",
+          "produces": [
+            {
+              "id": "brot",
+              "name": "Brot"
+            }
+          ],
+          "consumes": [
+            "product:menemen"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Menemen** (Schritt „Menemen“) ist die eigene, milde Pfanne: ohne Knoblauch, ohne\n  Kreuzkümmel, ohne Paprikapulver; Rührei statt ganzer Eier ist für Dreijährige oft\n  ohnehin einfacher. Oliven und Feta mag das Kind.\n- Will es lieber von der großen Pfanne: Die Shakshuka-Sauce selbst ist mild (kein Chili),\n  nur Kreuzkümmel und Knoblauch sind präsent. Ein Ei mit wenig Sauce probieren lassen.\n- Harissa bleibt ausschließlich auf den Erwachsenen-Tellern.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "Nach dem [Leitfaden](/schwangerschaft/leitfaden.md):\n\n- **Eier ganz durch:** Eigelb schnittfest, ≥ 70 °C (Schritt „Eier stocken“). Ein flüssiges\n  Eigelb ist in der Schwangerschaft wegen Salmonellen tabu — das ist die eine Abweichung vom\n  Original, und sie ist nicht verhandelbar. Das Menemen-Rührei ebenfalls vollständig fest.\n- **Feta/Labneh pasteurisiert** (Etikett). Kein Alkohol, kein rohes Fleisch.\n- **KH pro Erwachsenem (Schätzwerte):** Sauce \\~18–20 g (Zwiebel, 2 Paprika, 400 g Tomaten,\n  Tomatenmark — auf 2 Personen; viel davon Ballaststoff) · ½ Vollkornbrötchen \\~15 g\n  → **\\~35 g KH** bei \\~20 g Protein aus 2–3 Eiern plus Feta. Morgens empfindlich gemessen?\n  Erst das Brot halbieren oder weglassen, nicht die Sauce — und eher 3 Eier.\n- **Leitfaden-Regel 6:** Nach dem Frühstück eine Runde spazieren gehen.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Sauce vorbereiten:** Schritte „Gemüse schmoren“ und „Tomaten einkochen“ gehen am Vorabend;\n  Sauce gekühlt aufbewahren, morgens in der Pfanne erhitzen, bis sie blubbert, dann die Eier.\n  Spart 20 Min. am Morgen.\n- **Doppelte Sauce** friert gut ein (Babybrei-Gefrierform oder Dose) — Basis für ein zweites\n  Wochenende.\n- **Nach der Schwangerschaft:** Eigelb nicht anstechen, 6–8 Min. mit Deckel, Eiweiß fest,\n  Eigelb flüssig (Ottolenghi-Standard).\n- **Ausbau:** Mit Merguez-Scheiben (durchgebraten) oder Spinat in der Sauce wird es eine\n  Abendmahlzeit.",
+      "tags": [
+        "notizen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Sauce-Aufbau (Zwiebel/Paprika 10 Min. ohne Bräunung, Tomaten um ⅓ einkochen):**\n  Michael Solomonov, *Zahav* — Adaption bei [Star Tribune](https://m.startribune.com/recipe-shakshuka/475596673/)\n  und [Food Network](https://www.foodnetwork.com/recipes/packages/comfort-foods/easy-comfort-food-recipes/how-to-make-michael-solomonovs-shakshouka).\n  Zucker bewusst gestrichen.\n- **Eier mit Deckel 10–12 Min. sanft garen:** Ottolenghi (*Plenty*), Adaption bei\n  [IJN](https://www.ijn.com/wprm_print/yotam-ottolenghis-shakshuka). Dort enden die Eier\n  „gerade gestockt“; wir gehen bis „ganz fest“ und stechen das Eigelb an, damit es in der\n  gleichen Zeit gart.\n- **Garzeiten variieren** stark mit Pfanne und Hitze ([David Lebovitz](https://www.davidlebovitz.com/wprm_print/shakshuka)) —\n  daher das Abbruchkriterium Eigelb schnittfest bzw. ≥ 70 °C statt der Uhr.\n- **Menemen:** türkischer Hausstil (Paprika, Tomate, Ei gerührt, Butter oder Öl); Knoblauch\n  und Zwiebel sind in der Türkei ein Dauerstreit — hier fürs Kind beides weg.\n- **Ei-Temperatur:** Leitfaden (BfR / *Gesund ins Leben*): Eier in der Schwangerschaft nur\n  durchgegart, Eigelb fest.",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-10-23T14:07:14Z",
+    "sourceHash": "c4866813aa96471d",
+    "quantities": [
+      {
+        "ingredient": "paprika",
+        "total": {
+          "text": "2½",
+          "value": 2.5,
+          "max": 2.5,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "shakshuka": "2 rote Paprika + ½ rote Paprika"
+        }
+      },
+      {
+        "ingredient": "zwiebel",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "shakshuka": "1 Zwiebel"
+        }
+      },
+      {
+        "ingredient": "knoblauchzehen",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "shakshuka": "3 Knoblauchzehen"
+        }
+      },
+      {
+        "ingredient": "strauchtomate",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "shakshuka": "1 Strauchtomate"
+        }
+      },
+      {
+        "ingredient": "petersilie",
+        "total": {
+          "text": "½ Bund",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "Bund",
+          "approx": false
+        },
+        "perTask": {
+          "shakshuka": "½ Bund Petersilie"
+        }
+      },
+      {
+        "ingredient": "eier",
+        "total": {
+          "text": "7",
+          "value": 7.0,
+          "max": 7.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "shakshuka": "5 Eier",
+          "menemen": "2 Eier"
+        }
+      },
+      {
+        "ingredient": "feta",
+        "total": {
+          "text": "100 g + 2 EL",
+          "value": 100.0,
+          "max": 100.0,
+          "unit": "g",
+          "approx": false,
+          "plus": [
+            {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "shakshuka": "100 g Feta",
+          "menemen": "2 EL Feta"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "tomaten",
+        "total": {
+          "text": "400 g",
+          "value": 400.0,
+          "max": 400.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "shakshuka": "400 g gehackte Tomaten"
+        }
+      },
+      {
+        "ingredient": "harissa",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "brot": "je 1 TL Harissa"
+        }
+      },
+      {
+        "ingredient": "roggenvollkornbrot",
+        "total": {
+          "text": "3 Scheiben",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Scheiben",
+          "approx": false
+        },
+        "perTask": {
+          "brot": "3 Scheiben Roggenvollkornbrot"
+        }
+      },
+      {
+        "ingredient": "vollkornbroetchen",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "brot": "2 Vollkornbrötchen"
+        }
+      },
+      {
+        "ingredient": "oliven",
+        "total": {
+          "text": "3–4",
+          "value": 3.0,
+          "max": 4.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "menemen": "3–4 schwarze Oliven"
+        }
+      },
+      {
+        "ingredient": "tomatenmark",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "shakshuka": "1 EL Tomatenmark"
+        }
+      },
+      {
+        "ingredient": "kreuzkuemmel",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "shakshuka": "1 TL Kreuzkümmel"
+        }
+      },
+      {
+        "ingredient": "paprikapulver",
+        "total": {
+          "text": "1½ TL",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "shakshuka": "1½ TL Paprikapulver"
+        }
+      },
+      {
+        "ingredient": "za",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "shakshuka": "1 TL Za"
+        }
+      },
+      {
+        "ingredient": "olivenoel",
+        "total": {
+          "text": "4 EL",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "shakshuka": "3 EL Olivenöl + 1 EL Olivenöl"
+        }
+      },
+      {
+        "ingredient": "butter",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "menemen": "1 TL Butter"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "½ TL + 1 Prise",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "TL",
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "shakshuka": "½ TL Salz",
+          "menemen": "1 Prise Salz"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": ""
+        },
+        "perTask": {},
+        "unitless": [
+          "reichlich Pfeffer"
+        ]
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "50 ml",
+          "value": 50.0,
+          "max": 50.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "shakshuka": "50 ml Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Aldi / REWE",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "paprika",
+            "name": "rote Paprika",
+            "need": {
+              "text": "2½",
+              "value": 2.5,
+              "max": 2.5,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2½",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            },
+            "note": "2½ gebraucht: 2 Shakshuka, ½ Menemen; Rest als Rohkost"
+          },
+          {
+            "ingredient": "zwiebel",
+            "name": "Zwiebel",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            }
+          },
+          {
+            "ingredient": "knoblauchzehen",
+            "name": "Knoblauchzehen",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            }
+          },
+          {
+            "ingredient": "strauchtomate",
+            "name": "Strauchtomate",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "Menemen"
+          },
+          {
+            "ingredient": "petersilie",
+            "name": "glatte Petersilie",
+            "need": {
+              "text": "½ Bund",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Bund",
+              "approx": false
+            },
+            "display": "½ Bund",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            },
+            "note": "oder Koriander"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "eier",
+            "name": "Eier",
+            "need": {
+              "text": "7",
+              "value": 7.0,
+              "max": 7.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "7",
+            "inStock": false,
+            "buy": {
+              "text": "10"
+            },
+            "note": "7 gebraucht: 5 Shakshuka, 2 Menemen"
+          },
+          {
+            "ingredient": "feta",
+            "name": "Feta",
+            "need": {
+              "text": "100 g + 2 EL",
+              "value": 100.0,
+              "max": 100.0,
+              "unit": "g",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "2 EL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "EL",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "100 g + 2 EL",
+            "inStock": false,
+            "buy": {
+              "text": "150 g"
+            },
+            "note": "pasteurisiert; 100 g Shakshuka, 2 EL Menemen"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "tomaten",
+            "name": "gehackte Tomaten",
+            "need": {
+              "text": "400 g",
+              "value": 400.0,
+              "max": 400.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "400 g",
+            "inStock": false,
+            "buy": {
+              "text": "400 g"
+            },
+            "note": "1 Dose"
+          },
+          {
+            "ingredient": "harissa",
+            "name": "Tube Harissa",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "optional": true,
+            "note": "nur Erwachsene, am Tisch"
+          },
+          {
+            "ingredient": "roggenvollkornbrot",
+            "name": "Roggenvollkornbrot",
+            "need": {
+              "text": "3 Scheiben",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Scheiben",
+              "approx": false
+            },
+            "display": "3 Scheiben",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "optional": true,
+            "note": "nur ohne Brötchen-Vorrat"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "vollkornbroetchen",
+            "name": "Vollkornbrötchen",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "pantry": true,
+            "note": "Gefrierfach"
+          },
+          {
+            "ingredient": "oliven",
+            "name": "Schwarze Oliven",
+            "need": {
+              "text": "3–4",
+              "value": 3.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3–4",
+            "inStock": false,
+            "pantry": true,
+            "note": "Kind"
+          },
+          {
+            "ingredient": "tomatenmark",
+            "name": "Tomatenmark",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "kreuzkuemmel",
+            "name": "Kreuzkümmel, gemahlen",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "paprikapulver",
+            "name": "Paprikapulver edelsüß",
+            "need": {
+              "text": "1½ TL",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1½ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "za",
+            "name": "Za'atar",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "optional, Topping"
+          },
+          {
+            "ingredient": "olivenoel",
+            "name": "Olivenöl",
+            "need": {
+              "text": "4 EL",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "4 EL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "butter",
+            "name": "Butter",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "½ TL + 1 Prise",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "½ TL + 1 Prise",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Schwarzer Pfeffer",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "50 ml",
+              "value": 50.0,
+              "max": 50.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "50 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}

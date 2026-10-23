@@ -224,6 +224,13 @@
   "cooked": false
  },
  {
+  "path": "../schwangerschaft/kofta-bil-tahini.json",
+  "title": "Kofta bil tahini — Ofen-Kofta in Tahina-Zitronen-Sauce mit Blumenkohl und Gurken-Joghurt (4 Portionen + 3 Meal-Prep-Boxen)",
+  "group": "schwangerschaft",
+  "wip": true,
+  "cooked": false
+ },
+ {
   "path": "../schwangerschaft/mezze-teller.json",
   "title": "Libanesischer Mezze-Teller — Hummus, Moutabal, Muhammara, Labneh & Kafta (Schwangerschafts-Version, 4 Personen)",
   "group": "schwangerschaft",
@@ -242,6 +249,13 @@
   "title": "Poulet au vinaigre (Lyon) — Hähnchenschenkel in Essig-Tomaten-Sauce mit grünen Bohnen (4 Portionen)",
   "group": "schwangerschaft",
   "wip": false,
+  "cooked": false
+ },
+ {
+  "path": "../schwangerschaft/shakshuka.json",
+  "title": "Shakshuka mit festen Eiern und Feta — plus milde Menemen-Pfanne fürs Kind (2 Erwachsene + Kind)",
+  "group": "schwangerschaft",
+  "wip": true,
   "cooked": false
  },
  {

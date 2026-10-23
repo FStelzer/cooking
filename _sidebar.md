@@ -2,6 +2,8 @@
 - **🚧 in arbeit**
   - [Burrito-Baukasten — drei Füllungen, als Burrito oder Bowl (3 Portionen)](/mealprep/burrito-baukasten.md)
   - [Menü November — Tomatenwasser / Kaisergranat / Schmorlamm / Espresso-Parfait](/menues/menue-november.md)
+  - [Kofta bil tahini — Ofen-Kofta in Tahina-Zitronen-Sauce mit Blumenkohl und Gurken-Joghurt (4 Portionen + 3 Meal-Prep-Boxen)](/schwangerschaft/kofta-bil-tahini.md)
+  - [Shakshuka mit festen Eiern und Feta — plus milde Menemen-Pfanne fürs Kind (2 Erwachsene + Kind)](/schwangerschaft/shakshuka.md)
 - **backen**
   - [✅ Vollkornbrötchen auf Vorrat — Weizen als Leitrezept, Dinkel und Weizen-Roggen als Varianten (12 Stück)](/backen/vollkornbroetchen.md)
 - **desserts**
