@@ -11,7 +11,7 @@
     "unit": "Portionen"
   },
   "statusNote": "> [!NOTE]\n> **Status: In Arbeit** — erstes Meal-Prep-Experiment, noch nicht gekocht. Zu prüfen:\n> Wie hält der Wrap drei Tage im Kühlschrank, und reicht die Mikrowelle auf der Arbeit\n> für einen durchgehend heißen Burrito? Wie satt machen 3 Portionen ohne Reis?",
-  "intro": "*Aktive Zeit \\~45 Min., gesamt \\~1–1¼ Std. (Pulled Pork: \\~1¾ Std., davon gut 1 Std. passiv im Schnellkochtopf). Equipment: große Edelstahlpfanne, kleiner Topf, elektrischer Schnellkochtopf (nur Pulled Pork), Kartoffelstampfer, 3 mikrowellenfeste Dosen, 3 kleine Dosen für Kaltes, Backpapier.*\n\n*Varianten: Füllung = Chipotle-Hähnchen | Picadillo | Pulled Pork · Format = Burrito | Bowl*\n\nSonntags eine Füllung, mittags Mo–Mi ein Burrito oder eine Bowl aus der Mikrowelle. Eine\nMechanik, drei Füllungen, zwei Formate: Gekocht wird immer **eine** Füllung plus Bohnen und\neingelegte Zwiebeln. Ob daraus Burritos oder Bowls werden, entscheidet sich erst beim\nPacken; man kann auch mischen (2 Burritos + 1 Bowl). Die Mengen sind auf eine Person und\ndrei Tage ausgelegt, ohne Einfrieren.\n\n**Die drei Meal-Prep-Regeln:**\n\n1. **Heiß innen, kalt außen.** In den Burrito bzw. die Bowl kommen nur Füllung, Bohnen und\n   Käse. Joghurt, Salsa, Zwiebeln und Salat liegen in einer kleinen Extra-Dose und kommen\n   erst nach dem Aufwärmen dazu. Mitgewärmt werden sie matschig und lauwarm.\n2. **Saftig, nicht nass.** Jede Füllung wird am Ende eingekocht, bis kaum noch Flüssigkeit\n   in der Pfanne steht. Sonst weicht der Wrap in drei Tagen durch.\n3. **Kein Reis als Standard.** Bohnen übernehmen Sättigung und Bindung, der Wrap ist der\n   einzige größere KH-Träger. Ein Burrito liegt so bei \\~40–45 g KH, eine Bowl bei\n   \\~15–20 g (Rechnung unter [Schwangerschaft & GDM](#schwangerschaft-amp-gdm)).",
+  "intro": "*Aktive Zeit \\~45 Min., gesamt \\~1–1¼ Std. (Pulled Pork: \\~1¾ Std., davon gut 1 Std. passiv im Schnellkochtopf). Equipment: große Edelstahlpfanne, kleiner Topf, elektrischer Schnellkochtopf (nur Pulled Pork), Kartoffelstampfer, 3 mikrowellenfeste Dosen, 3 kleine Dosen für Kaltes, Backpapier.*\n\n*Varianten: Füllung = Chipotle-Hähnchen | Picadillo | Pulled Pork · Format = Burrito | Bowl*\n\nSonntags eine Füllung, mittags Mo–Mi ein Burrito oder eine Bowl aus der Mikrowelle. Eine\nMechanik, drei Füllungen, zwei Formate: Gekocht wird immer **eine** Füllung plus Bohnen und\neingelegte Zwiebeln. Ob daraus Burritos oder Bowls werden, entscheidet sich erst beim\nPacken; man kann auch mischen (2 Burritos + 1 Bowl). Die Mengen sind auf eine Person und\ndrei Tage ausgelegt, ohne Einfrieren.\n\n**Die drei Meal-Prep-Regeln:**\n\n1. **Heiß innen, kalt außen.** Mitgewärmt werden Joghurt und Salat matschig und lauwarm,\n   deshalb liegen sie getrennt. **Burrito:** innen Bohnen, Füllung, Käse und die\n   eingelegten Zwiebeln (die vertragen das Aufwärmen und bleiben sauer). Außen ein Dip aus\n   Joghurt und Salsa und ein kleiner Romana-Salat. Der Burrito wird **nicht** wieder\n   aufgerollt: halbieren, tunken oder einen Löffel Dip in die Schnittfläche geben.\n   **Bowl:** Füllung, Bohnen, Käse warm, alles Kalte kommt nach dem Aufwärmen obendrauf.\n2. **Saftig, nicht nass.** Jede Füllung wird am Ende eingekocht, bis kaum noch Flüssigkeit\n   in der Pfanne steht. Sonst weicht der Wrap in drei Tagen durch.\n3. **Kein Reis als Standard.** Bohnen übernehmen Sättigung und Bindung, der Wrap ist der\n   einzige größere KH-Träger. Ein Burrito liegt so bei \\~40–45 g KH, eine Bowl bei\n   \\~15–20 g (Rechnung unter [Schwangerschaft & GDM](#schwangerschaft-amp-gdm)).",
   "times": {
     "text": "Aktive Zeit ~45 Min., gesamt ~1–1¼ Std.",
     "active": {
@@ -1288,31 +1288,22 @@
                 "source": "ca. 5 Min.",
                 "estimated": true
               },
-              "text": "3 kleine Dosen füllen mit je 50 g griechischem Joghurt, 2 EL Salsa (6 EL insgesamt), 1 EL eingelegten Zwiebeln und einem Limettenschnitz (1 Limette, gedrittelt). Die Romana-Herzen (3 Stück) waschen, trocken schleudern und ungeschnitten in einem Beutel mit Küchenpapier kühlen; erst am jeweiligen Tag in Streifen schneiden. Optional 3–4 Stiele Koriander dazulegen.",
-              "action": "3 kleine Dosen füllen mit je 50 g griechischem Joghurt, 2 EL Salsa (6 EL insgesamt), 1 EL eingelegten Zwiebeln und einem Limettenschnitz (1 Limette, gedrittelt).",
+              "text": "150 g griechischen Joghurt mit 6 EL Salsa zu einem Dip verrühren und auf 3 kleine Dosen verteilen, in jede einen Limettenschnitz (1 Limette, gedrittelt). Nur für Bowls kommt zusätzlich je 1 EL eingelegte Zwiebeln in die Dose; beim Burrito gehen die Zwiebeln in den Wrap (Schritt „Burritos rollen“). Die Romana-Herzen (3 Stück) waschen, trocken schleudern und ungeschnitten in einem Beutel mit Küchenpapier kühlen; erst am jeweiligen Tag in Streifen schneiden. Optional 3–4 Stiele Koriander dazulegen.",
+              "action": "150 g griechischen Joghurt mit 6 EL Salsa zu einem Dip verrühren und auf 3 kleine Dosen verteilen, in jede einen Limettenschnitz (1 Limette, gedrittelt).",
               "ingredients": [
                 {
                   "ref": "joghurt",
                   "amount": {
-                    "text": "je 50 g griechischem Joghurt",
-                    "value": 50.0,
-                    "unit": "g",
-                    "per": "Pfanne"
+                    "text": "150 g griechischen Joghurt",
+                    "value": 150.0,
+                    "unit": "g"
                   }
                 },
                 {
                   "ref": "salsa",
                   "amount": {
-                    "text": "2 EL Salsa",
-                    "value": 2.0,
-                    "unit": "EL"
-                  }
-                },
-                {
-                  "ref": "zwiebeln",
-                  "amount": {
-                    "text": "1 EL eingelegten Zwiebeln",
-                    "value": 1.0,
+                    "text": "6 EL Salsa",
+                    "value": 6.0,
                     "unit": "EL"
                   }
                 },
@@ -1322,6 +1313,15 @@
                     "text": "1 Limette",
                     "value": 1.0,
                     "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "zwiebeln",
+                  "amount": {
+                    "text": "je 1 EL eingelegte Zwiebeln",
+                    "value": 1.0,
+                    "unit": "EL",
+                    "per": "Pfanne"
                   }
                 },
                 {
@@ -1371,9 +1371,9 @@
                 "source": "ca. 15 Min.",
                 "estimated": true
               },
-              "text": "3 Vollkorn-Wraps nacheinander in der trockenen Pfanne je 15–20 Sek. pro Seite anwärmen, damit sie beim Rollen nicht reißen. Jeden Wrap belegen: ⅓ der Bohnen als Streifen in die untere Hälfte, darauf ⅓ der Füllung und ⅓ vom Käse, je 30 g Cheddar; 5 cm Rand frei lassen. Untere Kante straff über die Füllung schlagen, Seiten einklappen und fest aufrollen. Jeden Burrito straff in 1 Blatt Backpapier wickeln (3 Blatt insgesamt) (Enden eindrehen), in Dose oder Beutel in den Kühlschrank. **Keine Alufolie:** Sie darf nicht in die Mikrowelle.\n> **Technik:** Pro Burrito \\~250 g Füllung ist das Maximum für einen 25-cm-Wrap. Wenn Füllung übrig bleibt: in eine der Kalt-Dosen, sie ist am nächsten Tag ein Topping.",
+              "text": "3 Vollkorn-Wraps nacheinander in der trockenen Pfanne je 15–20 Sek. pro Seite anwärmen, damit sie beim Rollen nicht reißen. Jeden Wrap belegen: ⅓ der Bohnen als Streifen in die untere Hälfte, darauf ⅓ der Füllung, je 30 g Cheddar und je 1 EL eingelegte Zwiebeln, gut abgetropft; 5 cm Rand frei lassen. Untere Kante straff über die Füllung schlagen, Seiten einklappen und fest aufrollen. Jeden Burrito straff in 1 Blatt Backpapier wickeln (3 Blatt insgesamt) (Enden eindrehen), in Dose oder Beutel in den Kühlschrank. **Keine Alufolie:** Sie darf nicht in die Mikrowelle.\n> **Technik:** Pro Burrito \\~250 g Füllung ist das Maximum für einen 25-cm-Wrap. Wenn Füllung übrig bleibt: in eine eigene kleine Dose und am jeweiligen Tag mitwärmen, als Nachschlag zum Tunken.",
               "action": "3 Vollkorn-Wraps nacheinander in der trockenen Pfanne je 15–20 Sek. pro Seite anwärmen, damit sie beim Rollen nicht reißen.",
-              "rescue": "Wenn Füllung übrig bleibt: in eine der Kalt-Dosen, sie ist am nächsten Tag ein Topping.",
+              "rescue": "Wenn Füllung übrig bleibt: in eine eigene kleine Dose und am jeweiligen Tag mitwärmen, als Nachschlag zum Tunken.",
               "ingredients": [
                 {
                   "ref": "vollkorn-wraps",
@@ -1397,6 +1397,15 @@
                     "text": "je 30 g Cheddar",
                     "value": 30.0,
                     "unit": "g",
+                    "per": "Pfanne"
+                  }
+                },
+                {
+                  "ref": "zwiebeln",
+                  "amount": {
+                    "text": "je 1 EL eingelegte Zwiebeln",
+                    "value": 1.0,
+                    "unit": "EL",
                     "per": "Pfanne"
                   }
                 },
@@ -1425,10 +1434,19 @@
                 "source": "ca. 3 Min.",
                 "estimated": true
               },
-              "text": "Den Burrito im Backpapier lassen, mit einem feuchten Küchenpapier umwickeln und bei 600–800 W 1 Min. erhitzen, wenden, weitere 1 Min., dann 1 Min. ruhen lassen. In der Mitte muss er dampfen. Papier ab, Kalt-Dose öffnen, Romana in Streifen dazu.\n> **Gar-Check:** Kalte Stellen sitzen in der Mitte. Wer kein Thermometer dabei hat: Den Burrito halbieren und noch 30 Sek. mit den Schnittflächen nach oben erhitzen. Das macht ihn sicher durchgehend heiß. *Zu zäh? Das Küchenpapier war zu trocken.*",
+              "text": "Den Burrito im Backpapier lassen, mit einem feuchten Küchenpapier umwickeln und bei 600–800 W 1 Min. erhitzen, wenden, weitere 1 Min., dann 1 Min. ruhen lassen. In der Mitte muss er dampfen. Papier ab und den Burrito quer halbieren. Zum Essen jeden Bissen in den Joghurt-Salsa-Dip aus der Kalt-Dose tunken oder einen Löffel Dip in die offene Schnittfläche geben; nicht aufrollen. 1 Romana-Herz in Streifen schneiden, mit dem Limettenschnitz beträufeln und als kleinen Salat daneben essen.\n> **Gar-Check:** Kalte Stellen sitzen in der Mitte. Wer kein Thermometer dabei hat: Den Burrito schon vor dem Ruhen halbieren und noch 30 Sek. mit den Schnittflächen nach oben erhitzen. Das macht ihn sicher durchgehend heiß. *Zu zäh? Das Küchenpapier war zu trocken.*",
               "action": "Den Burrito im Backpapier lassen, mit einem feuchten Küchenpapier umwickeln und bei 600–800 W 1 Min. erhitzen, wenden, weitere 1 Min., dann 1 Min. ruhen lassen.",
               "why": "Zu zäh? Das Küchenpapier war zu trocken.",
-              "ingredients": [],
+              "ingredients": [
+                {
+                  "ref": "romana-herzen",
+                  "amount": {
+                    "text": "1 Romana-Herz",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
               "meta": "*nur Burrito · nach Burritos rollen · fertig bei ≥ 74 °C Kern*",
               "endCondition": {
                 "type": "temperature",
@@ -1506,7 +1524,7 @@
                 "source": "ca. 3 Min.",
                 "estimated": true
               },
-              "text": "Deckel nur lose auflegen, bei 600–800 W 1½ Min. erhitzen, umrühren, weitere 1–1½ Min., bis alles dampft. Romana-Herz in Streifen schneiden und darauf, Joghurt, Salsa und Zwiebeln aus der Kalt-Dose darüber, Limette darüber auspressen.",
+              "text": "Deckel nur lose auflegen, bei 600–800 W 1½ Min. erhitzen, umrühren, weitere 1–1½ Min., bis alles dampft. 1 Romana-Herz in Streifen schneiden und darauflegen, Joghurt-Salsa-Dip und Zwiebeln aus der Kalt-Dose darüber, den Limettenschnitz darüber auspressen.",
               "action": "Deckel nur lose auflegen, bei 600–800 W 1½ Min. erhitzen, umrühren, weitere 1–1½ Min., bis alles dampft.",
               "timers": [
                 {
@@ -1525,7 +1543,16 @@
                   "text": "1–1½ Min."
                 }
               ],
-              "ingredients": [],
+              "ingredients": [
+                {
+                  "ref": "romana-herzen",
+                  "amount": {
+                    "text": "1 Romana-Herz",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
               "meta": "*nur Bowl · nach Bowls füllen · fertig bei ≥ 74 °C Kern*",
               "endCondition": {
                 "type": "temperature",
@@ -1666,8 +1693,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-23T13:03:15Z",
-    "sourceHash": "8699d6cb79345bcf",
+    "generatedAt": "2026-10-23T13:24:57Z",
+    "sourceHash": "f7e889e77f069c8c",
     "select": {
       "fuellung": "chipotle-haehnchen",
       "format": "burrito"
@@ -1689,14 +1716,15 @@
       {
         "ingredient": "zwiebeln",
         "total": {
-          "text": "1 EL",
-          "value": 1.0,
-          "max": 1.0,
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
           "unit": "EL",
           "approx": false
         },
         "perTask": {
-          "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL eingelegten Zwiebeln"
+          "gemeinsam-bohnen-zwiebeln-abkuehlen": "je 1 EL eingelegte Zwiebeln",
+          "format-burrito": "je 1 EL eingelegte Zwiebeln"
         }
       },
       {
@@ -1729,14 +1757,15 @@
       {
         "ingredient": "romana-herzen",
         "total": {
-          "text": "3",
-          "value": 3.0,
-          "max": 3.0,
+          "text": "4",
+          "value": 4.0,
+          "max": 4.0,
           "unit": "Stück",
           "approx": false
         },
         "perTask": {
-          "gemeinsam-bohnen-zwiebeln-abkuehlen": "3 Stück"
+          "gemeinsam-bohnen-zwiebeln-abkuehlen": "3 Stück",
+          "format-burrito": "1 Romana-Herz"
         }
       },
       {
@@ -1782,14 +1811,14 @@
       {
         "ingredient": "joghurt",
         "total": {
-          "text": "50 g",
-          "value": 50.0,
-          "max": 50.0,
+          "text": "150 g",
+          "value": 150.0,
+          "max": 150.0,
           "unit": "g",
           "approx": false
         },
         "perTask": {
-          "gemeinsam-bohnen-zwiebeln-abkuehlen": "je 50 g griechischem Joghurt"
+          "gemeinsam-bohnen-zwiebeln-abkuehlen": "150 g griechischen Joghurt"
         }
       },
       {
@@ -1832,14 +1861,14 @@
       {
         "ingredient": "salsa",
         "total": {
-          "text": "2 EL",
-          "value": 2.0,
-          "max": 2.0,
+          "text": "6 EL",
+          "value": 6.0,
+          "max": 6.0,
           "unit": "EL",
           "approx": false
         },
         "perTask": {
-          "gemeinsam-bohnen-zwiebeln-abkuehlen": "2 EL Salsa"
+          "gemeinsam-bohnen-zwiebeln-abkuehlen": "6 EL Salsa"
         }
       },
       {
@@ -2016,13 +2045,13 @@
             "ingredient": "zwiebeln",
             "name": "Zwiebeln",
             "need": {
-              "text": "1 EL",
-              "value": 1.0,
-              "max": 1.0,
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
               "unit": "EL",
               "approx": false
             },
-            "display": "1 EL",
+            "display": "2 EL",
             "inStock": false,
             "buy": {
               "text": "2"
@@ -2067,13 +2096,13 @@
             "ingredient": "romana-herzen",
             "name": "Romana-Herzen",
             "need": {
-              "text": "3",
-              "value": 3.0,
-              "max": 3.0,
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
               "unit": "Stück",
               "approx": false
             },
-            "display": "3",
+            "display": "4",
             "inStock": false,
             "buy": {
               "text": "1 Packung"
@@ -2147,13 +2176,13 @@
             "ingredient": "joghurt",
             "name": "Griechischer Joghurt 10 %",
             "need": {
-              "text": "50 g",
-              "value": 50.0,
-              "max": 50.0,
+              "text": "150 g",
+              "value": 150.0,
+              "max": 150.0,
               "unit": "g",
               "approx": false
             },
-            "display": "50 g",
+            "display": "150 g",
             "inStock": false,
             "buy": {
               "text": "150 g"
@@ -2213,13 +2242,13 @@
             "ingredient": "salsa",
             "name": "Salsa, mittelscharf",
             "need": {
-              "text": "2 EL",
-              "value": 2.0,
-              "max": 2.0,
+              "text": "6 EL",
+              "value": 6.0,
+              "max": 6.0,
               "unit": "EL",
               "approx": false
             },
-            "display": "2 EL",
+            "display": "6 EL",
             "inStock": false,
             "buy": {
               "text": "1 Glas"
@@ -2422,7 +2451,7 @@
               "approx": false
             },
             "perTask": {
-              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL eingelegten Zwiebeln"
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "je 1 EL eingelegte Zwiebeln"
             }
           },
           {
@@ -2455,14 +2484,15 @@
           {
             "ingredient": "romana-herzen",
             "total": {
-              "text": "3",
-              "value": 3.0,
-              "max": 3.0,
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
               "unit": "Stück",
               "approx": false
             },
             "perTask": {
-              "gemeinsam-bohnen-zwiebeln-abkuehlen": "3 Stück"
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "3 Stück",
+              "format-bowl": "1 Romana-Herz"
             }
           },
           {
@@ -2508,14 +2538,14 @@
           {
             "ingredient": "joghurt",
             "total": {
-              "text": "50 g",
-              "value": 50.0,
-              "max": 50.0,
+              "text": "150 g",
+              "value": 150.0,
+              "max": 150.0,
               "unit": "g",
               "approx": false
             },
             "perTask": {
-              "gemeinsam-bohnen-zwiebeln-abkuehlen": "je 50 g griechischem Joghurt"
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "150 g griechischen Joghurt"
             }
           },
           {
@@ -2558,14 +2588,14 @@
           {
             "ingredient": "salsa",
             "total": {
-              "text": "2 EL",
-              "value": 2.0,
-              "max": 2.0,
+              "text": "6 EL",
+              "value": 6.0,
+              "max": 6.0,
               "unit": "EL",
               "approx": false
             },
             "perTask": {
-              "gemeinsam-bohnen-zwiebeln-abkuehlen": "2 EL Salsa"
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "6 EL Salsa"
             }
           },
           {
@@ -2767,13 +2797,13 @@
                 "ingredient": "romana-herzen",
                 "name": "Romana-Herzen",
                 "need": {
-                  "text": "3",
-                  "value": 3.0,
-                  "max": 3.0,
+                  "text": "4",
+                  "value": 4.0,
+                  "max": 4.0,
                   "unit": "Stück",
                   "approx": false
                 },
-                "display": "3",
+                "display": "4",
                 "inStock": false,
                 "buy": {
                   "text": "1 Packung"
@@ -2847,13 +2877,13 @@
                 "ingredient": "joghurt",
                 "name": "Griechischer Joghurt 10 %",
                 "need": {
-                  "text": "50 g",
-                  "value": 50.0,
-                  "max": 50.0,
+                  "text": "150 g",
+                  "value": 150.0,
+                  "max": 150.0,
                   "unit": "g",
                   "approx": false
                 },
-                "display": "50 g",
+                "display": "150 g",
                 "inStock": false,
                 "buy": {
                   "text": "150 g"
@@ -2913,13 +2943,13 @@
                 "ingredient": "salsa",
                 "name": "Salsa, mittelscharf",
                 "need": {
-                  "text": "2 EL",
-                  "value": 2.0,
-                  "max": 2.0,
+                  "text": "6 EL",
+                  "value": 6.0,
+                  "max": 6.0,
                   "unit": "EL",
                   "approx": false
                 },
-                "display": "2 EL",
+                "display": "6 EL",
                 "inStock": false,
                 "buy": {
                   "text": "1 Glas"
@@ -3071,14 +3101,15 @@
           {
             "ingredient": "zwiebeln",
             "total": {
-              "text": "1 EL",
-              "value": 1.0,
-              "max": 1.0,
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
               "unit": "EL",
               "approx": false
             },
             "perTask": {
-              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL eingelegten Zwiebeln"
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "je 1 EL eingelegte Zwiebeln",
+              "format-burrito": "je 1 EL eingelegte Zwiebeln"
             }
           },
           {
@@ -3137,14 +3168,15 @@
           {
             "ingredient": "romana-herzen",
             "total": {
-              "text": "3",
-              "value": 3.0,
-              "max": 3.0,
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
               "unit": "Stück",
               "approx": false
             },
             "perTask": {
-              "gemeinsam-bohnen-zwiebeln-abkuehlen": "3 Stück"
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "3 Stück",
+              "format-burrito": "1 Romana-Herz"
             }
           },
           {
@@ -3190,14 +3222,14 @@
           {
             "ingredient": "joghurt",
             "total": {
-              "text": "50 g",
-              "value": 50.0,
-              "max": 50.0,
+              "text": "150 g",
+              "value": 150.0,
+              "max": 150.0,
               "unit": "g",
               "approx": false
             },
             "perTask": {
-              "gemeinsam-bohnen-zwiebeln-abkuehlen": "je 50 g griechischem Joghurt"
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "150 g griechischen Joghurt"
             }
           },
           {
@@ -3240,14 +3272,14 @@
           {
             "ingredient": "salsa",
             "total": {
-              "text": "2 EL",
-              "value": 2.0,
-              "max": 2.0,
+              "text": "6 EL",
+              "value": 6.0,
+              "max": 6.0,
               "unit": "EL",
               "approx": false
             },
             "perTask": {
-              "gemeinsam-bohnen-zwiebeln-abkuehlen": "2 EL Salsa"
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "6 EL Salsa"
             }
           },
           {
@@ -3431,13 +3463,13 @@
                 "ingredient": "zwiebeln",
                 "name": "Zwiebeln",
                 "need": {
-                  "text": "1 EL",
-                  "value": 1.0,
-                  "max": 1.0,
+                  "text": "2 EL",
+                  "value": 2.0,
+                  "max": 2.0,
                   "unit": "EL",
                   "approx": false
                 },
-                "display": "1 EL",
+                "display": "2 EL",
                 "inStock": false,
                 "buy": {
                   "text": "2"
@@ -3514,13 +3546,13 @@
                 "ingredient": "romana-herzen",
                 "name": "Romana-Herzen",
                 "need": {
-                  "text": "3",
-                  "value": 3.0,
-                  "max": 3.0,
+                  "text": "4",
+                  "value": 4.0,
+                  "max": 4.0,
                   "unit": "Stück",
                   "approx": false
                 },
-                "display": "3",
+                "display": "4",
                 "inStock": false,
                 "buy": {
                   "text": "1 Packung"
@@ -3593,13 +3625,13 @@
                 "ingredient": "joghurt",
                 "name": "Griechischer Joghurt 10 %",
                 "need": {
-                  "text": "50 g",
-                  "value": 50.0,
-                  "max": 50.0,
+                  "text": "150 g",
+                  "value": 150.0,
+                  "max": 150.0,
                   "unit": "g",
                   "approx": false
                 },
-                "display": "50 g",
+                "display": "150 g",
                 "inStock": false,
                 "buy": {
                   "text": "150 g"
@@ -3659,13 +3691,13 @@
                 "ingredient": "salsa",
                 "name": "Salsa, mittelscharf",
                 "need": {
-                  "text": "2 EL",
-                  "value": 2.0,
-                  "max": 2.0,
+                  "text": "6 EL",
+                  "value": 6.0,
+                  "max": 6.0,
                   "unit": "EL",
                   "approx": false
                 },
-                "display": "2 EL",
+                "display": "6 EL",
                 "inStock": false,
                 "buy": {
                   "text": "1 Glas"
@@ -3891,7 +3923,7 @@
               "approx": false
             },
             "perTask": {
-              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL eingelegten Zwiebeln"
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "je 1 EL eingelegte Zwiebeln"
             }
           },
           {
@@ -3950,14 +3982,15 @@
           {
             "ingredient": "romana-herzen",
             "total": {
-              "text": "3",
-              "value": 3.0,
-              "max": 3.0,
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
               "unit": "Stück",
               "approx": false
             },
             "perTask": {
-              "gemeinsam-bohnen-zwiebeln-abkuehlen": "3 Stück"
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "3 Stück",
+              "format-bowl": "1 Romana-Herz"
             }
           },
           {
@@ -4003,14 +4036,14 @@
           {
             "ingredient": "joghurt",
             "total": {
-              "text": "50 g",
-              "value": 50.0,
-              "max": 50.0,
+              "text": "150 g",
+              "value": 150.0,
+              "max": 150.0,
               "unit": "g",
               "approx": false
             },
             "perTask": {
-              "gemeinsam-bohnen-zwiebeln-abkuehlen": "je 50 g griechischem Joghurt"
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "150 g griechischen Joghurt"
             }
           },
           {
@@ -4053,14 +4086,14 @@
           {
             "ingredient": "salsa",
             "total": {
-              "text": "2 EL",
-              "value": 2.0,
-              "max": 2.0,
+              "text": "6 EL",
+              "value": 6.0,
+              "max": 6.0,
               "unit": "EL",
               "approx": false
             },
             "perTask": {
-              "gemeinsam-bohnen-zwiebeln-abkuehlen": "2 EL Salsa"
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "6 EL Salsa"
             }
           },
           {
@@ -4301,13 +4334,13 @@
                 "ingredient": "romana-herzen",
                 "name": "Romana-Herzen",
                 "need": {
-                  "text": "3",
-                  "value": 3.0,
-                  "max": 3.0,
+                  "text": "4",
+                  "value": 4.0,
+                  "max": 4.0,
                   "unit": "Stück",
                   "approx": false
                 },
-                "display": "3",
+                "display": "4",
                 "inStock": false,
                 "buy": {
                   "text": "1 Packung"
@@ -4380,13 +4413,13 @@
                 "ingredient": "joghurt",
                 "name": "Griechischer Joghurt 10 %",
                 "need": {
-                  "text": "50 g",
-                  "value": 50.0,
-                  "max": 50.0,
+                  "text": "150 g",
+                  "value": 150.0,
+                  "max": 150.0,
                   "unit": "g",
                   "approx": false
                 },
-                "display": "50 g",
+                "display": "150 g",
                 "inStock": false,
                 "buy": {
                   "text": "150 g"
@@ -4446,13 +4479,13 @@
                 "ingredient": "salsa",
                 "name": "Salsa, mittelscharf",
                 "need": {
-                  "text": "2 EL",
-                  "value": 2.0,
-                  "max": 2.0,
+                  "text": "6 EL",
+                  "value": 6.0,
+                  "max": 6.0,
                   "unit": "EL",
                   "approx": false
                 },
-                "display": "2 EL",
+                "display": "6 EL",
                 "inStock": false,
                 "buy": {
                   "text": "1 Glas"
@@ -4640,14 +4673,15 @@
           {
             "ingredient": "zwiebeln",
             "total": {
-              "text": "1 EL",
-              "value": 1.0,
-              "max": 1.0,
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
               "unit": "EL",
               "approx": false
             },
             "perTask": {
-              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL eingelegten Zwiebeln"
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "je 1 EL eingelegte Zwiebeln",
+              "format-burrito": "je 1 EL eingelegte Zwiebeln"
             }
           },
           {
@@ -4719,14 +4753,15 @@
           {
             "ingredient": "romana-herzen",
             "total": {
-              "text": "3",
-              "value": 3.0,
-              "max": 3.0,
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
               "unit": "Stück",
               "approx": false
             },
             "perTask": {
-              "gemeinsam-bohnen-zwiebeln-abkuehlen": "3 Stück"
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "3 Stück",
+              "format-burrito": "1 Romana-Herz"
             }
           },
           {
@@ -4772,14 +4807,14 @@
           {
             "ingredient": "joghurt",
             "total": {
-              "text": "50 g",
-              "value": 50.0,
-              "max": 50.0,
+              "text": "150 g",
+              "value": 150.0,
+              "max": 150.0,
               "unit": "g",
               "approx": false
             },
             "perTask": {
-              "gemeinsam-bohnen-zwiebeln-abkuehlen": "je 50 g griechischem Joghurt"
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "150 g griechischen Joghurt"
             }
           },
           {
@@ -4809,14 +4844,14 @@
           {
             "ingredient": "salsa",
             "total": {
-              "text": "2 EL",
-              "value": 2.0,
-              "max": 2.0,
+              "text": "6 EL",
+              "value": 6.0,
+              "max": 6.0,
               "unit": "EL",
               "approx": false
             },
             "perTask": {
-              "gemeinsam-bohnen-zwiebeln-abkuehlen": "2 EL Salsa"
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "6 EL Salsa"
             }
           },
           {
@@ -4976,13 +5011,13 @@
                 "ingredient": "zwiebeln",
                 "name": "Zwiebeln",
                 "need": {
-                  "text": "1 EL",
-                  "value": 1.0,
-                  "max": 1.0,
+                  "text": "2 EL",
+                  "value": 2.0,
+                  "max": 2.0,
                   "unit": "EL",
                   "approx": false
                 },
-                "display": "1 EL",
+                "display": "2 EL",
                 "inStock": false,
                 "buy": {
                   "text": "2"
@@ -5076,13 +5111,13 @@
                 "ingredient": "romana-herzen",
                 "name": "Romana-Herzen",
                 "need": {
-                  "text": "3",
-                  "value": 3.0,
-                  "max": 3.0,
+                  "text": "4",
+                  "value": 4.0,
+                  "max": 4.0,
                   "unit": "Stück",
                   "approx": false
                 },
-                "display": "3",
+                "display": "4",
                 "inStock": false,
                 "buy": {
                   "text": "1 Packung"
@@ -5156,13 +5191,13 @@
                 "ingredient": "joghurt",
                 "name": "Griechischer Joghurt 10 %",
                 "need": {
-                  "text": "50 g",
-                  "value": 50.0,
-                  "max": 50.0,
+                  "text": "150 g",
+                  "value": 150.0,
+                  "max": 150.0,
                   "unit": "g",
                   "approx": false
                 },
-                "display": "50 g",
+                "display": "150 g",
                 "inStock": false,
                 "buy": {
                   "text": "150 g"
@@ -5205,13 +5240,13 @@
                 "ingredient": "salsa",
                 "name": "Salsa, mittelscharf",
                 "need": {
-                  "text": "2 EL",
-                  "value": 2.0,
-                  "max": 2.0,
+                  "text": "6 EL",
+                  "value": 6.0,
+                  "max": 6.0,
                   "unit": "EL",
                   "approx": false
                 },
-                "display": "2 EL",
+                "display": "6 EL",
                 "inStock": false,
                 "buy": {
                   "text": "1 Glas"
@@ -5415,7 +5450,7 @@
               "approx": false
             },
             "perTask": {
-              "gemeinsam-bohnen-zwiebeln-abkuehlen": "1 EL eingelegten Zwiebeln"
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "je 1 EL eingelegte Zwiebeln"
             }
           },
           {
@@ -5487,14 +5522,15 @@
           {
             "ingredient": "romana-herzen",
             "total": {
-              "text": "3",
-              "value": 3.0,
-              "max": 3.0,
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
               "unit": "Stück",
               "approx": false
             },
             "perTask": {
-              "gemeinsam-bohnen-zwiebeln-abkuehlen": "3 Stück"
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "3 Stück",
+              "format-bowl": "1 Romana-Herz"
             }
           },
           {
@@ -5540,14 +5576,14 @@
           {
             "ingredient": "joghurt",
             "total": {
-              "text": "50 g",
-              "value": 50.0,
-              "max": 50.0,
+              "text": "150 g",
+              "value": 150.0,
+              "max": 150.0,
               "unit": "g",
               "approx": false
             },
             "perTask": {
-              "gemeinsam-bohnen-zwiebeln-abkuehlen": "je 50 g griechischem Joghurt"
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "150 g griechischen Joghurt"
             }
           },
           {
@@ -5577,14 +5613,14 @@
           {
             "ingredient": "salsa",
             "total": {
-              "text": "2 EL",
-              "value": 2.0,
-              "max": 2.0,
+              "text": "6 EL",
+              "value": 6.0,
+              "max": 6.0,
               "unit": "EL",
               "approx": false
             },
             "perTask": {
-              "gemeinsam-bohnen-zwiebeln-abkuehlen": "2 EL Salsa"
+              "gemeinsam-bohnen-zwiebeln-abkuehlen": "6 EL Salsa"
             }
           },
           {
@@ -5818,13 +5854,13 @@
                 "ingredient": "romana-herzen",
                 "name": "Romana-Herzen",
                 "need": {
-                  "text": "3",
-                  "value": 3.0,
-                  "max": 3.0,
+                  "text": "4",
+                  "value": 4.0,
+                  "max": 4.0,
                   "unit": "Stück",
                   "approx": false
                 },
-                "display": "3",
+                "display": "4",
                 "inStock": false,
                 "buy": {
                   "text": "1 Packung"
@@ -5898,13 +5934,13 @@
                 "ingredient": "joghurt",
                 "name": "Griechischer Joghurt 10 %",
                 "need": {
-                  "text": "50 g",
-                  "value": 50.0,
-                  "max": 50.0,
+                  "text": "150 g",
+                  "value": 150.0,
+                  "max": 150.0,
                   "unit": "g",
                   "approx": false
                 },
-                "display": "50 g",
+                "display": "150 g",
                 "inStock": false,
                 "buy": {
                   "text": "150 g"
@@ -5947,13 +5983,13 @@
                 "ingredient": "salsa",
                 "name": "Salsa, mittelscharf",
                 "need": {
-                  "text": "2 EL",
-                  "value": 2.0,
-                  "max": 2.0,
+                  "text": "6 EL",
+                  "value": 6.0,
+                  "max": 6.0,
                   "unit": "EL",
                   "approx": false
                 },
-                "display": "2 EL",
+                "display": "6 EL",
                 "inStock": false,
                 "buy": {
                   "text": "1 Glas"

@@ -17,9 +17,12 @@ drei Tage ausgelegt, ohne Einfrieren.
 
 **Die drei Meal-Prep-Regeln:**
 
-1. **Heiß innen, kalt außen.** In den Burrito bzw. die Bowl kommen nur Füllung, Bohnen und
-   Käse. Joghurt, Salsa, Zwiebeln und Salat liegen in einer kleinen Extra-Dose und kommen
-   erst nach dem Aufwärmen dazu. Mitgewärmt werden sie matschig und lauwarm.
+1. **Heiß innen, kalt außen.** Mitgewärmt werden Joghurt und Salat matschig und lauwarm,
+   deshalb liegen sie getrennt. **Burrito:** innen Bohnen, Füllung, Käse und die
+   eingelegten Zwiebeln (die vertragen das Aufwärmen und bleiben sauer). Außen ein Dip aus
+   Joghurt und Salsa und ein kleiner Romana-Salat. Der Burrito wird **nicht** wieder
+   aufgerollt: halbieren, tunken oder einen Löffel Dip in die Schnittfläche geben.
+   **Bowl:** Füllung, Bohnen, Käse warm, alles Kalte kommt nach dem Aufwärmen obendrauf.
 2. **Saftig, nicht nass.** Jede Füllung wird am Ende eingekocht, bis kaum noch Flüssigkeit
    in der Pfanne steht. Sonst weicht der Wrap in drei Tagen durch.
 3. **Kein Reis als Standard.** Bohnen übernehmen Sättigung und Bindung, der Wrap ist der
@@ -188,7 +191,7 @@ Füllung und Bohnen getrennt flach auf Teller oder Bleche streichen und offen la
 
 **12. Kalt-Dosen packen (ca. 5 Min.)**
 *nach Zwiebeln einlegen*
-3 kleine Dosen füllen mit je 50 g griechischem Joghurt, 2 EL Salsa (6 EL insgesamt), 1 EL eingelegten Zwiebeln und einem Limettenschnitz (1 Limette, gedrittelt). Die Romana-Herzen (3 Stück) waschen, trocken schleudern und ungeschnitten in einem Beutel mit Küchenpapier kühlen; erst am jeweiligen Tag in Streifen schneiden. Optional 3–4 Stiele Koriander dazulegen.
+150 g griechischen Joghurt mit 6 EL Salsa zu einem Dip verrühren und auf 3 kleine Dosen verteilen, in jede einen Limettenschnitz (1 Limette, gedrittelt). Nur für Bowls kommt zusätzlich je 1 EL eingelegte Zwiebeln in die Dose; beim Burrito gehen die Zwiebeln in den Wrap (Schritt „Burritos rollen“). Die Romana-Herzen (3 Stück) waschen, trocken schleudern und ungeschnitten in einem Beutel mit Küchenpapier kühlen; erst am jeweiligen Tag in Streifen schneiden. Optional 3–4 Stiele Koriander dazulegen.
 
 ### Format Burrito
 
@@ -196,13 +199,13 @@ Füllung und Bohnen getrennt flach auf Teller oder Bleche streichen und offen la
 
 **13. Burritos rollen (ca. 15 Min.)**
 *nach Abkühlen*
-3 Vollkorn-Wraps nacheinander in der trockenen Pfanne je 15–20 Sek. pro Seite anwärmen, damit sie beim Rollen nicht reißen. Jeden Wrap belegen: ⅓ der Bohnen als Streifen in die untere Hälfte, darauf ⅓ der Füllung und ⅓ vom Käse, je 30 g Cheddar; 5 cm Rand frei lassen. Untere Kante straff über die Füllung schlagen, Seiten einklappen und fest aufrollen. Jeden Burrito straff in 1 Blatt Backpapier wickeln (3 Blatt insgesamt) (Enden eindrehen), in Dose oder Beutel in den Kühlschrank. **Keine Alufolie:** Sie darf nicht in die Mikrowelle.
-> **Technik:** Pro Burrito \~250 g Füllung ist das Maximum für einen 25-cm-Wrap. Wenn Füllung übrig bleibt: in eine der Kalt-Dosen, sie ist am nächsten Tag ein Topping.
+3 Vollkorn-Wraps nacheinander in der trockenen Pfanne je 15–20 Sek. pro Seite anwärmen, damit sie beim Rollen nicht reißen. Jeden Wrap belegen: ⅓ der Bohnen als Streifen in die untere Hälfte, darauf ⅓ der Füllung, je 30 g Cheddar und je 1 EL eingelegte Zwiebeln, gut abgetropft; 5 cm Rand frei lassen. Untere Kante straff über die Füllung schlagen, Seiten einklappen und fest aufrollen. Jeden Burrito straff in 1 Blatt Backpapier wickeln (3 Blatt insgesamt) (Enden eindrehen), in Dose oder Beutel in den Kühlschrank. **Keine Alufolie:** Sie darf nicht in die Mikrowelle.
+> **Technik:** Pro Burrito \~250 g Füllung ist das Maximum für einen 25-cm-Wrap. Wenn Füllung übrig bleibt: in eine eigene kleine Dose und am jeweiligen Tag mitwärmen, als Nachschlag zum Tunken.
 
 **14. Burrito aufwärmen (ca. 3 Min.)**
 *nur Burrito · nach Burritos rollen · fertig bei ≥ 74 °C Kern*
-Den Burrito im Backpapier lassen, mit einem feuchten Küchenpapier umwickeln und bei 600–800 W 1 Min. erhitzen, wenden, weitere 1 Min., dann 1 Min. ruhen lassen. In der Mitte muss er dampfen. Papier ab, Kalt-Dose öffnen, Romana in Streifen dazu.
-> **Gar-Check:** Kalte Stellen sitzen in der Mitte. Wer kein Thermometer dabei hat: Den Burrito halbieren und noch 30 Sek. mit den Schnittflächen nach oben erhitzen. Das macht ihn sicher durchgehend heiß. *Zu zäh? Das Küchenpapier war zu trocken.*
+Den Burrito im Backpapier lassen, mit einem feuchten Küchenpapier umwickeln und bei 600–800 W 1 Min. erhitzen, wenden, weitere 1 Min., dann 1 Min. ruhen lassen. In der Mitte muss er dampfen. Papier ab und den Burrito quer halbieren. Zum Essen jeden Bissen in den Joghurt-Salsa-Dip aus der Kalt-Dose tunken oder einen Löffel Dip in die offene Schnittfläche geben; nicht aufrollen. 1 Romana-Herz in Streifen schneiden, mit dem Limettenschnitz beträufeln und als kleinen Salat daneben essen.
+> **Gar-Check:** Kalte Stellen sitzen in der Mitte. Wer kein Thermometer dabei hat: Den Burrito schon vor dem Ruhen halbieren und noch 30 Sek. mit den Schnittflächen nach oben erhitzen. Das macht ihn sicher durchgehend heiß. *Zu zäh? Das Küchenpapier war zu trocken.*
 
 ### Format Bowl
 
@@ -215,7 +218,7 @@ Den Burrito im Backpapier lassen, mit einem feuchten Küchenpapier umwickeln und
 
 **16. Bowl aufwärmen (ca. 3 Min.)**
 *nur Bowl · nach Bowls füllen · fertig bei ≥ 74 °C Kern*
-Deckel nur lose auflegen, bei 600–800 W 1½ Min. erhitzen, umrühren, weitere 1–1½ Min., bis alles dampft. Romana-Herz in Streifen schneiden und darauf, Joghurt, Salsa und Zwiebeln aus der Kalt-Dose darüber, Limette darüber auspressen.
+Deckel nur lose auflegen, bei 600–800 W 1½ Min. erhitzen, umrühren, weitere 1–1½ Min., bis alles dampft. 1 Romana-Herz in Streifen schneiden und darauflegen, Joghurt-Salsa-Dip und Zwiebeln aus der Kalt-Dose darüber, den Limettenschnitz darüber auspressen.
 
 ## Kinder-Anpassung
 
