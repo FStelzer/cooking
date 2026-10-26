@@ -106,10 +106,10 @@
  },
  {
   "path": "../gerichte/korean-fried-chicken.json",
-  "title": "Korean Fried Chicken — doppelt frittierte Keule & Flügel mit zwei Saucen (4 Portionen)",
+  "title": "Korean Fried Chicken — doppelt frittierte Flügel & Oberschenkel mit zwei Saucen (4 Portionen)",
   "group": "gerichte",
   "wip": false,
-  "cooked": false
+  "cooked": true
  },
  {
   "path": "../gerichte/lamm-kleftiko.json",

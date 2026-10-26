@@ -1,8 +1,8 @@
-# Korean Fried Chicken — doppelt frittierte Keule & Flügel mit zwei Saucen (4 Portionen)
+# Korean Fried Chicken — doppelt frittierte Flügel & Oberschenkel mit zwei Saucen (4 Portionen)
 
-*Aktive Zeit \~2 Std. (davon \~70 Min. am Frittiertopf), gesamt \~6 Std. bis über Nacht + \~2 Std. (Vortag 45 Min., Durchziehen 4–24 Std., Kochtag \~2 Std.). Equipment: 6-l-Topf zum Frittieren, Clip-Thermometer, Fleischthermometer, Spinne oder Schaumlöffel, 2 Kuchengitter mit Blech, Mandoline, 2 kleine Töpfe, große Schüssel.*
+*Aktive Zeit \~2¼ Std. (davon \~80 Min. am Frittiertopf), gesamt \~6 Std. bis über Nacht + \~2 Std. (Vortag 45 Min., Durchziehen 4–24 Std., Kochtag \~2 Std.). Equipment: 6-l-Topf zum Frittieren, Clip-Thermometer, Fleischthermometer, Spinne oder Schaumlöffel, 2 Kuchengitter mit Blech, Mandoline, 2 kleine Töpfe, große Schüssel.*
 
-Koreanisches Brathähnchen in der Chicken-Shop-Form: ausgelöste Hähnchenkeule in mundgerechten Stücken (*Dakgangjeong*-Schnitt) als Hauptmenge plus ein Teil Flügel, in einem dünnen Kartoffelstärke-Teig **zweimal frittiert** — erst bei \~160 °C gar, nach einer Ruhepause bei 185 °C zur glasartig dünnen, splitternden Kruste. Erst unmittelbar vor dem Servieren in Sauce geschwenkt, und zwar in zwei parallelen Saucen: **Ganjang** (Soja-Knoblauch-Honig, mild — das Kind isst mit) und **Yangnyeom** (Gochujang-Ketchup-Reissirup, süß-scharf, für die Erwachsenen). Ein Teil bleibt ohne Sauce (*Huraideu*, „fried") — das knusprigste Stück am Tisch und zugleich der GDM-Teller. Dazu Chicken-mu (eingelegter Rettich) und ein frischer Kohlsalat. Die Double-Fry-Technik ist übertragbar (Pommes, Karaage, Tonkatsu) — Grundlagen in [Frittieren](/technik/frittieren.md).
+Koreanisches Brathähnchen in der Chicken-Shop-Form: Hähnchenflügel (Drumettes, Flats und Spitzen) als Hauptmenge plus eine kleine Portion ausgelöster Oberschenkel in mundgerechten Stücken (*Dakgangjeong*-Schnitt) fürs Kind, in einem dünnen Kartoffelstärke-Teig **zweimal frittiert** — erst bei \~160 °C gar, nach einer Ruhepause bei 185 °C zur glasartig dünnen, splitternden Kruste. Erst unmittelbar vor dem Servieren in Sauce geschwenkt, und zwar in zwei parallelen Saucen: **Ganjang** (Soja-Knoblauch-Honig, mild — das Kind isst mit) und **Yangnyeom** (Gochujang-Ketchup-Reissirup, süß-scharf, für die Erwachsenen). Ein Teil des Oberschenkels bleibt ohne Sauce (*Huraideu*, „fried") — das knusprigste Stück am Tisch und zugleich der GDM-Teller. Dazu Chicken-mu (eingelegter Rettich) und ein frischer Kohlsalat. Die Double-Fry-Technik ist übertragbar (Pommes, Karaage, Tonkatsu) — Grundlagen in [Frittieren](/technik/frittieren.md).
 
 ## Stil-Entscheidung
 
@@ -15,11 +15,12 @@ Koreanisches Brathähnchen in der Chicken-Shop-Form: ausgelöste Hähnchenkeule 
 
 **Kein Wodka.** Kenjis Trick (Teil des Wassers durch Wodka ersetzen: bremst die Glutenbildung, verdampft schneller) entfällt — in der Schwangerschaft ohnehin, aber auch danach ist er hier weniger nötig: Bei zwei Teilen Stärke auf ein Teil Mehl ist kaum Gluten im Spiel, eiskaltes Wasser und kurzes Rühren reichen. Wer es nach der Schwangerschaft testen will: siehe Notizen.
 
-**Keule als Hauptmenge, Flügel als Erwachsenen-Anteil.** Ausgelöste Oberschenkel bleiben auch durchgegart saftig, garen in 3–4-cm-Stücken schnell und gleichmäßig und sind kindertauglich (kein Knochen). Flügel haben das beste Haut-zu-Fleisch-Verhältnis und sind das Chicken-Shop-Original — brauchen aber fast doppelt so lange im ersten Gang. Deshalb **getrennte Chargen**, nie gemischt.
+**Flügel als Hauptmenge, Oberschenkel nur fürs Kind und Huraideu** (seit 10/2026, vorher umgekehrt). Beim ersten Durchgang waren die Flügel-Drumettes saftiger und besser als die ausgelösten Keulenstücke, und auch die mitfrittierten Flügelspitzen waren sehr gut. Flügel haben das beste Haut-zu-Fleisch-Verhältnis, sind das Chicken-Shop-Original und brauchen keine Vorarbeit außer Teilen. Die Oberschenkel-Portion bleibt klein, weil das Kind knochenlose Stücke braucht. Flügel brauchen fast doppelt so lange im ersten Gang wie Oberschenkelstücke, deshalb **getrennte Chargen**, nie gemischt.
 
 ## Beschaffung
 
-- **Hähnchen (REWE Center):** „Hähnchenoberschenkel ohne Knochen" bzw. Oberschenkelfilet, ohne Haut — liegt im REWE Center meist als Steak-Packung. Brust ist möglich, wird beim Durchgaren aber trocken; nur Notlösung. Hähnchenflügel sind im REWE Center zuverlässig (meist ganze Flügel, \~80–90 g/Stück). Die Flügelspitzen abschneiden und einfrieren — die nächste Hähnchen-Chintan-Brühe freut sich.
+- **Hähnchenflügel (REWE Center):** zuverlässig, meist ganze Flügel (\~80–90 g/Stück). Die Spitzen werden mitfrittiert, nicht für Brühe eingefroren — sie haben mehr Fleisch als gedacht und werden chipsartig knusprig.
+- **Oberschenkel (REWE Center):** Oberschenkelfilet ohne Knochen war 10/2026 nicht zu finden. **Keine ganzen Keulen kaufen und auslösen:** Der Unterschenkel ist voller zäher Sehnen, die sich kaum sauber entfernen lassen. Stattdessen **Hähnchen-Oberkeulen mit Knochen** kaufen (\~600 g, 3–4 Stück): Die Oberkeule hat nur einen geraden Knochen und kaum Sehnen, das Auslösen dauert \~1 Min. pro Stück (siehe Schritt 3). Brust ist möglich, wird beim Durchgaren aber trocken; nur Notlösung.
 - **Gochujang (Asialaden):** Standard in jedem Asialaden. Vom Bulgogi ist vermutlich ein Becher offen — gekühlt hält er sehr lange; Mindesthaltbarkeit und Geruch prüfen. **Etikett lesen:** manche Marken enthalten etwas Ethanol (Konservierung) — siehe Schwangerschaft & GDM.
 - **Reissirup (Asialaden, ☎ vorher anrufen):** *Jocheong* oder *Ssal-yeot*, oft als „Rice Syrup" von Beksul oder Chungjungone; koreanischer „Oligo-Sirup" ist ebenso geeignet. Weniger süß als Honig, macht die Glasur glänzend und klebrig, ohne zu kristallisieren — Maangchi nennt Sirup + Ketchup die Pflicht für den echten Yangnyeom-Geschmack. **Fallback: 2 EL Honig** statt 3 EL Reissirup (Honig ist süßer).
 - **Gochugaru:** nur optional für mehr Schärfe in der Yangnyeom-Sauce; falls vom Bulgogi vorrätig.
@@ -47,13 +48,13 @@ Koreanisches Brathähnchen in der Chicken-Shop-Form: ausgelöste Hähnchenkeule 
 ### REWE Center
 
 **Fleisch & Fisch:**
-- [ ] 700 g Hähnchenoberschenkel ohne Knochen, ohne Haut
-- [ ] 600 g Hähnchenflügel *(\~7 Flügel; nach dem Abschneiden der Spitzen \~500 g)*
+- [ ] 1 kg Hähnchenflügel *(\~12 ganze Flügel)*
+- [ ] 600 g Hähnchen-Oberkeulen mit Knochen *(3–4 Stück; nicht ganze Keulen — oder 400 g Oberschenkelfilet ohne Knochen, falls es das gibt)*
 
 **Obst & Gemüse:**
 - [ ] 1 Rettich, weiß *(\~500 g; Fallback: 2 Bund Radieschen)*
 - [ ] 1 kleiner Spitzkohl *(Verbrauch \~350 g; oder ¼ Weißkohl)*
-- [ ] 1 große Knolle Knoblauch *(Verbrauch 10 Zehen — siehe Mengen-Check)*
+- [ ] 1 große Knolle Knoblauch *(Verbrauch 12 Zehen — siehe Mengen-Check)*
 - [ ] 1 Stück Ingwer *(daumengroß, Verbrauch 2½ TL gerieben)*
 
 **Trockenwaren:**
@@ -65,14 +66,14 @@ Koreanisches Brathähnchen in der Chicken-Shop-Form: ausgelöste Hähnchenkeule 
 
 ### Vorrat prüfen
 
-- [ ] Sojasauce *(Verbrauch 4 EL + 1 TL — siehe Mengen-Check)*
-- [ ] Honig *(2 EL)*
+- [ ] Sojasauce *(Verbrauch 5½ EL + 1 TL — siehe Mengen-Check)*
+- [ ] Honig *(3 EL)*
 - [ ] Ketchup *(2 EL)*
-- [ ] Reisessig *(120 ml Chicken-mu + 2½ EL + 1 TL Saucen/Dressing — kein Sushi-Essig)*
-- [ ] Sesamöl, geröstet *(2½ TL)*
+- [ ] Reisessig *(120 ml Chicken-mu + 2½ EL + 1½ TL Saucen/Dressing — kein Sushi-Essig)*
+- [ ] Sesamöl, geröstet *(2¾ TL)*
 - [ ] Sesam, geröstet *(2 TL)*
 - [ ] Weizenmehl, Type 405 *(60 g)*
-- [ ] Backpulver *(1½ TL)*
+- [ ] Backpulver *(2 TL)*
 - [ ] Zucker *(\~55 g, fast alles in der Pickle-Lake)*
 - [ ] Salz *(\~30 g gesamt)*
 - [ ] Pfeffer, schwarz
@@ -88,22 +89,22 @@ Koreanisches Brathähnchen in der Chicken-Shop-Form: ausgelöste Hähnchenkeule 
 
 > **Radieschen-Fallback:** 2 Bund Radieschen halbieren (große vierteln), gleiche Lake, nur 2–3 Std. ziehen lassen — sie werden schneller weich.
 
-**2. Flügel salzen (15 Min.)**
+**2. Flügel salzen (20 Min.)**
 *jederzeit*
-600 g Hähnchenflügel im Gelenk teilen, die Spitzen abschneiden (einfrieren für Brühe) — bleiben \~500 g Unterarm-Teile (*Flats*) und Mini-Keulen (*Drumettes*). Sehr gründlich trocken tupfen, mit 5 g Salz (knapp 1 TL) und ½ TL Backpulver gleichmäßig bestreuen und durchmischen. **Unbedeckt** auf einem Kuchengitter über einem Blech in den Kühlschrank. *Das Backpulver hebt den pH-Wert der Haut: sie bräunt schneller und wird blasig-knusprig; das offene Stehenlassen trocknet die Haut an (Prinzip nach Kenji López-Alt).*
+1 kg Hähnchenflügel in beiden Gelenken teilen — ergibt je \~12 Mini-Keulen (*Drumettes*), Unterarm-Teile (*Flats*) und Spitzen. Die Spitzen kommen mit dazu. Alles sehr gründlich trocken tupfen, mit 10 g Salz (knapp 2 TL) und 1 TL Backpulver gleichmäßig bestreuen und durchmischen. **Unbedeckt** auf einem Kuchengitter über einem Blech in den Kühlschrank. *Das Backpulver hebt den pH-Wert der Haut: sie bräunt schneller und wird blasig-knusprig; das offene Stehenlassen trocknet die Haut an (Prinzip nach Kenji López-Alt).*
 
-**3. Keule marinieren (15 Min.)**
+**3. Oberschenkel marinieren (15 Min.)**
 *jederzeit*
-700 g Hähnchenoberschenkel von groben Fettstücken befreien und in 3–4-cm-Stücke schneiden (\~35–40 g pro Stück, möglichst gleich groß). Mit 7 g Salz (gut 1 TL), 2 fein geriebenen Knoblauchzehen, 1 TL fein geriebenem Ingwer und ¼ TL Pfeffer gründlich vermengen, abgedeckt kalt stellen. *Kein Reiswein und keine Milch wie bei manchen Rezepten — der Oberschenkel braucht kein Zartmachen, und Reiswein entfällt in der Schwangerschaft.*
+600 g Hähnchen-Oberkeulen auslösen: Haut abziehen, Stück mit der Innenseite nach oben legen, entlang des Knochens der Länge nach bis auf den Knochen einschneiden, das Fleisch rundum vom Knochen schaben, Knochen an beiden Gelenkenden abschneiden. Bleiben \~400 g Fleisch (Knochen und Haut einfrieren für Brühe). Von groben Fettstücken befreien und in 3–4-cm-Stücke schneiden (\~35–40 g pro Stück, möglichst gleich groß). Mit 4 g Salz (knapp 1 TL), 1 fein geriebenen Knoblauchzehe, ½ TL fein geriebenem Ingwer und ⅛ TL Pfeffer gründlich vermengen, abgedeckt kalt stellen. *Kein Reiswein und keine Milch wie bei manchen Rezepten — der Oberschenkel braucht kein Zartmachen, und Reiswein entfällt in der Schwangerschaft.*
 
 **4. Durchziehen (4–24 Std., passiv)**
-*nach Flügel salzen, Keule marinieren*
-Beides im Kühlschrank ziehen lassen, die Flügel offen, die Keule abgedeckt. Geplant ist über Nacht vom Vortag bis zum Frittieren (\~20–24 Std.), das ist ideal. *Je länger die Flügel offen stehen, desto trockener und blasig-knuspriger wird die Haut.*
+*nach Flügel salzen, Oberschenkel marinieren*
+Beides im Kühlschrank ziehen lassen, die Flügel offen, den Oberschenkel abgedeckt. Geplant ist über Nacht vom Vortag bis zum Frittieren (\~20–24 Std.), das ist ideal. *Je länger die Flügel offen stehen, desto trockener und blasig-knuspriger wird die Haut.*
 > **Kurzfristig:** Wer erst am Kochtag anfängt, kommt auch mit weniger aus. Minimum 1 Std., ab 4 Std. ist der Effekt weitgehend da. Unter 4 Std. wird die Flügelhaut nur etwas weniger blasig.
 
 **5. Ganjang-Sauce (10 Min.)**
 *jederzeit · Herd*
-In einem kleinen Topf 1 EL Rapsöl bei mittlerer Hitze erwärmen, 5 fein gehackte Knoblauchzehen und 1 TL fein geriebenen Ingwer darin 1 Min. sanft anschwitzen, **nicht bräunen**. 3 EL Sojasauce, 2 EL Honig, 3 EL Wasser und 1 TL Reisessig dazugeben, aufkochen und bei mittlerer Hitze 3–4 Min. einkochen. ½ TL Kartoffelstärke in 1 EL Wasser glatt rühren, einrühren, 30 Sek. köcheln, bis die Sauce klar und sirupartig ist. Vom Herd nehmen, ½ TL Sesamöl einrühren. **Ziel: überzieht den Löffelrücken, ein gezogener Strich bleibt stehen.** *Die kleine Stärkebindung ersetzt einen Teil des Honigs als Bindemittel — so bleibt die Sauce dick genug, um die Kruste nicht zu durchweichen, ohne dass die Süße steigen muss. Hält gekühlt 3 Tage; wird kalt fest, beim Erwärmen wieder flüssig.*
+In einem kleinen Topf 1 EL Rapsöl bei mittlerer Hitze erwärmen, 8 fein gehackte Knoblauchzehen und 1½ TL fein geriebenen Ingwer darin 1 Min. sanft anschwitzen, **nicht bräunen**. 4½ EL Sojasauce, 3 EL Honig, 4½ EL Wasser und 1½ TL Reisessig dazugeben, aufkochen und bei mittlerer Hitze 4–5 Min. einkochen. ¾ TL Kartoffelstärke in 1½ EL Wasser glatt rühren, einrühren, 30 Sek. köcheln, bis die Sauce klar und sirupartig ist. Vom Herd nehmen, ¾ TL Sesamöl einrühren. **Ziel: überzieht den Löffelrücken, ein gezogener Strich bleibt stehen.** *1,5-fache Menge, weil die Ganjang-Sauce jetzt Oberschenkel und die Hälfte der Flügel überzieht. Die kleine Stärkebindung ersetzt einen Teil des Honigs als Bindemittel — so bleibt die Sauce dick genug, um die Kruste nicht zu durchweichen, ohne dass die Süße steigen muss. Hält gekühlt 3 Tage; wird kalt fest, beim Erwärmen wieder flüssig.*
 
 > **Zu dünn?** 1–2 Min. weiter einkochen. **Zu dick** (nach dem Kühlen): 1 TL Wasser beim Erwärmen.
 
@@ -125,17 +126,19 @@ Im zweiten kleinen Topf 1 EL Rapsöl bei mittlerer Hitze erwärmen, 3 fein gehac
 
 **9. Teig anrühren (5 Min.)**
 *nach Öl aufheizen*
-Keulenstücke und Flügel sorgfältig trocken tupfen (getrennt halten) und beides mit insgesamt 30 g Kartoffelstärke hauchdünn bestäuben, überschüssige Stärke abklopfen. In einer großen Schüssel 120 g Kartoffelstärke, 60 g Weizenmehl, 1 TL Backpulver und ½ TL Salz mischen, dann 220–250 ml eiskaltes Mineralwasser mit dem Schneebesen **kurz** einrühren, bis keine Klümpchen mehr da sind. **Ziel: dünn wie flüssige Sahne** — überzieht den Finger als dünner, halb durchscheinender Film. *Stärke setzt sich ab: vor jeder Charge einmal durchrühren; wird der Teig über die Zeit dicker, 1–2 EL Wasser nachgeben. Die Schüssel gern in eine größere mit Eiswürfeln stellen.*
+Oberschenkelstücke und Flügelteile sorgfältig trocken tupfen (getrennt halten) und beides mit insgesamt 30 g Kartoffelstärke hauchdünn bestäuben, überschüssige Stärke abklopfen. In einer großen Schüssel 120 g Kartoffelstärke, 60 g Weizenmehl, 1 TL Backpulver und ½ TL Salz mischen, dann 220–250 ml eiskaltes Mineralwasser mit dem Schneebesen **kurz** einrühren, bis keine Klümpchen mehr da sind. **Ziel: dünn wie flüssige Sahne** — überzieht den Finger als dünner, halb durchscheinender Film. *Stärke setzt sich ab: vor jeder Charge einmal durchrühren; wird der Teig über die Zeit dicker, 1–2 EL Wasser nachgeben. Die Schüssel gern in eine größere mit Eiswürfeln stellen.*
 
-**10. Erstfrittieren Keule (ca. 25 Min.)**
+> **Teig knapp?** Die Flügel brauchen mehr Teig als die alte Keulen-Menge: 40 g Kartoffelstärke, 20 g Mehl und \~80 ml eiskaltes Mineralwasser nachrühren.
+
+**10. Erstfrittieren Oberschenkel (ca. 15 Min.)**
 *nach Teig anrühren · Herd · fertig bei ≥ 74 °C Kern*
-700 g Keulenstücke in **3 Chargen** à \~230 g frittieren: ein Drittel der Stücke durch den Teig ziehen, kurz abtropfen lassen und einzeln vom Körper weg ins 165 °C heiße Öl gleiten lassen. Die Temperatur fällt auf \~145 °C — Hitze so führen, dass sie bei **150–160 °C** bleibt. Nach 30 Sek. mit der Spinne vorsichtig lösen (Teig klebt sonst aneinander), dann 5–6 Min. frittieren, gelegentlich wenden, bis die Kruste fest, hellgolden und gerade knusprig ist. Herausheben, auf dem Gitter abtropfen lassen. **Größtes Stück der ersten Charge anschneiden bzw. messen: ≥ 74 °C Kern.** Zwischen den Chargen das Öl wieder auf 165 °C kommen lassen (2–3 Min.) und Teigfetzen mit der Spinne abschöpfen (verbrennen sonst). *Der erste Gang gart, der zweite macht die Kruste — Farbe ist hier unerwünscht.*
+400 g Oberschenkelstücke in **2 Chargen** à \~200 g frittieren: die Hälfte der Stücke durch den Teig ziehen, kurz abtropfen lassen und einzeln vom Körper weg ins 165 °C heiße Öl gleiten lassen. Die Temperatur fällt auf \~145 °C — Hitze so führen, dass sie bei **150–160 °C** bleibt. Nach 30 Sek. mit der Spinne vorsichtig lösen (Teig klebt sonst aneinander), dann 5–6 Min. frittieren, gelegentlich wenden, bis die Kruste fest, hellgolden und gerade knusprig ist. Herausheben, auf dem Gitter abtropfen lassen. **Größtes Stück der ersten Charge anschneiden bzw. messen: ≥ 74 °C Kern.** Vor der zweiten Charge das Öl wieder auf 165 °C kommen lassen (2–3 Min.) und Teigfetzen mit der Spinne abschöpfen (verbrennen sonst). *Der erste Gang gart, der zweite macht die Kruste — Farbe ist hier unerwünscht.*
 
 > **Chargen-Regel:** eine locker schwimmende Lage, nie stapeln; lieber eine Charge mehr ([Frittieren — Chargen-Regel](/technik/frittieren.md#chargen-regel)).
 
-**11. Erstfrittieren Flügel (ca. 25 Min.)**
-*nach Erstfrittieren Keule · Herd · fertig bei ≥ 74 °C Kern*
-Die \~500 g Flügelteile in **2 Chargen** à 6–7 Stück genauso durch den Teig ziehen und bei **150–160 °C** 9–10 Min. frittieren, gelegentlich wenden, bis sie hellgolden sind. Auf dem zweiten Gitter abtropfen lassen. **Kern an der dicksten Drumette nahe am Knochen messen: ≥ 74 °C**, gern 80 °C — Flügel sind voller Bindegewebe und werden bei höherer Kerntemperatur eher besser als trockener. *Flügel brauchen fast doppelt so lange wie die Keulenstücke, weil Knochen und Haut die Wärme bremsen — deshalb nie mit der Keule mischen.*
+**11. Erstfrittieren Flügel (ca. 40 Min.)**
+*nach Erstfrittieren Oberschenkel · Herd · fertig bei ≥ 74 °C Kern*
+1 kg Flügelteile in **3 Chargen** (je \~8 Drumettes/Flats + 4 Spitzen) genauso durch den Teig ziehen und bei **150–160 °C** 9–10 Min. frittieren, gelegentlich wenden, bis sie hellgolden sind. Die Spitzen dürfen die volle Zeit drinbleiben, sie werden dabei chipsartig. Zwischen den Chargen zurück auf 165 °C, Teigfetzen abschöpfen. Auf dem zweiten Gitter abtropfen lassen. **Kern an der dicksten Drumette nahe am Knochen messen: ≥ 74 °C**, gern 80 °C — Flügel sind voller Bindegewebe und werden bei höherer Kerntemperatur eher besser als trockener. *Flügel brauchen fast doppelt so lange wie die Oberschenkelstücke, weil Knochen und Haut die Wärme bremsen — deshalb nie mischen.*
 
 **12. Ruhen (10–60 Min., passiv)**
 *nach Erstfrittieren Flügel*
@@ -145,13 +148,15 @@ Alles auf den Gittern bei Raumtemperatur ruhen lassen, mindestens 10 Min., bis z
 *jederzeit · Herd*
 Optional: 200 g Kurzkornreis waschen, bis das Wasser klar ist, und nach Packung garen. *In Korea isst man Chicken eher ohne Reis (mit Bier und Mu) — der Reis ist hier für das Kind und den Hunger, nicht Pflicht; GDM siehe unten.*
 
-**14. Zweitfrittieren (ca. 15 Min.)**
+**14. Zweitfrittieren (ca. 25 Min.)**
 *nach Ruhen · Herd*
-Öl auf **185 °C** bringen. Zuerst die Flügel in 2 Chargen je 2–3 Min., dann die Keulenstücke in 2 Chargen je 1½–2 Min. frittieren, bis die Kruste **tief goldbraun und hart-splitternd** ist (Probe: mit der Spinne antippen — klingt hohl und trocken). Zwischen den Chargen immer zurück auf 185 °C. Auf die Gitter heben. **Sofort \~250 g der Keulenstücke** (die *Huraideu*-Portion) auf einem eigenen Teller mit 1 Prise Salz und etwas Pfeffer würzen. *Hier zählt die Rückkehr auf Temperatur mehr als die Zahl: unter 175 °C wird die Kruste fettig statt glasig.*
+Öl auf **185–190 °C** bringen. Zuerst die Flügel in 3 Chargen je 3–4 Min., dann die Oberschenkelstücke in 1 Charge 2½–3 Min. frittieren, bis die Kruste **tief goldbraun und hart-splitternd** ist (Probe: mit der Spinne antippen — klingt hohl und trocken). **Nach Farbe herausnehmen, nicht nach Uhr:** hellgolden ist zu früh. Die Spitzen bräunen am schnellsten — sie zuerst herausfischen. Vor jeder Charge zurück auf 185–190 °C. Auf die Gitter heben. **Sofort \~200 g der Oberschenkelstücke** (die *Huraideu*-Portion) auf einem eigenen Teller mit 1 Prise Salz und etwas Pfeffer würzen. *Keine Angst vor dem Übergaren: In der Ruhepause ist das Innere deutlich abgekühlt, der zweite Gang arbeitet nur an der Kruste (Sift & Simmer frittiert Oberschenkelstücke im zweiten Gang 3–4 Min.). Und die Rückkehr auf Temperatur zählt mehr als die Zahl: unter 175 °C wird die Kruste fettig statt glasig, und Farbe kommt nur bei voller Hitze.*
+
+> **Farbe:** Frisches Öl bräunt deutlich schwächer als einmal benutztes — beim ersten Einsatz bleibt Frittiertes heller. Mit dem gefilterten Öl vom letzten Mal („Hähnchen, 1×") wird die Kruste von selbst dunkler. Reicht das zusammen mit der längeren Zeit nicht: als nächster Hebel im Teig Stärke : Mehl von 2 : 1 auf 1 : 1 verschieben (90 g : 90 g), denn Mehl bräunt, Kartoffelstärke bleibt hell. Immer nur einen Hebel pro Durchgang ändern.
 
 **15. Schwenken & Anrichten (ca. 5 Min.)**
 *nach Zweitfrittieren, Ganjang-Sauce, Yangnyeom-Sauce, Kohlsalat schneiden, Chicken-mu, Reis kochen*
-Beide Saucen in ihren Töpfen bei kleiner Hitze erwärmen, bis sie gerade flüssig fließen — **nicht kochen**. Die übrigen \~450 g Keulenstücke in einer großen, angewärmten Schüssel mit der Ganjang-Sauce 15–20 Sek. schwenken, bis alles dünn überzogen ist, auf eine Platte geben, mit ½ TL Sesam bestreuen. Schüssel auswischen, die Flügel ebenso mit der Yangnyeom-Sauce schwenken, mit ½ TL Sesam und 2 Frühlingszwiebeln in feinen Ringen bestreuen. Kohlsalat mit dem Dressing mischen, Chicken-mu abtropfen lassen. Alles sofort auf den Tisch: Ganjang-Platte, Yangnyeom-Platte, Huraideu-Teller, Kohlsalat, Chicken-mu, Reis. **Innerhalb von 10–15 Min. essen** — danach weicht auch die beste Kruste unter Sauce auf. *Zu viel Sauce ist der häufigste Fehler: Es soll nichts in der Schüssel zurückbleiben, das Huhn soll glänzen, nicht schwimmen. Restliche Sauce in Schälchen zum Dippen dazustellen.*
+Beide Saucen in ihren Töpfen bei kleiner Hitze erwärmen, bis sie gerade flüssig fließen — **nicht kochen**. Die übrigen \~200 g Oberschenkelstücke und die Hälfte der Flügelteile in einer großen, angewärmten Schüssel mit der Ganjang-Sauce 15–20 Sek. schwenken, bis alles dünn überzogen ist, auf eine Platte geben (Oberschenkel auf eine Seite, die gehören dem Kind), mit ½ TL Sesam bestreuen. Schüssel auswischen, die zweite Hälfte der Flügel ebenso mit der Yangnyeom-Sauce schwenken, mit ½ TL Sesam und 2 Frühlingszwiebeln in feinen Ringen bestreuen. Kohlsalat mit dem Dressing mischen, Chicken-mu abtropfen lassen. Alles sofort auf den Tisch: Ganjang-Platte, Yangnyeom-Platte, Huraideu-Teller, Kohlsalat, Chicken-mu, Reis. **Innerhalb von 10–15 Min. essen** — danach weicht auch die beste Kruste unter Sauce auf. *Zu viel Sauce ist der häufigste Fehler: Es soll nichts in der Schüssel zurückbleiben, das Huhn soll glänzen, nicht schwimmen. Restliche Sauce in Schälchen zum Dippen dazustellen.*
 
 > **Maximale Knusprigkeit:** Saucen gar nicht schwenken, sondern als Dip in Schälchen dazustellen — so bleibt jedes Stück knusprig, auch wenn der Abend länger dauert.
 
@@ -163,13 +168,13 @@ Das vollständig abgekühlte Öl durch ein feines Sieb mit Passiertuch zurück i
 
 *Für ein Essen um 18:30 Uhr*
 
-- Vortag: Chicken-mu · Flügel salzen · Keule marinieren · Durchziehen · Ganjang-Sauce · Yangnyeom-Sauce
+- Vortag: Chicken-mu · Flügel salzen · Oberschenkel marinieren · Durchziehen · Ganjang-Sauce · Yangnyeom-Sauce
 - 16:30 Uhr (2h vorher): Kohlsalat schneiden · Öl aufheizen · Teig anrühren
-- 16:50 Uhr: Erstfrittieren Keule
-- 17:15 Uhr: Erstfrittieren Flügel
-- 17:40 Uhr: Ruhen — Küche aufräumen, Tisch decken
-- 17:55 Uhr: Reis kochen
-- 18:05 Uhr: Zweitfrittieren
+- 16:50 Uhr: Erstfrittieren Oberschenkel
+- 17:05 Uhr: Erstfrittieren Flügel
+- 17:45 Uhr: Ruhen — Küche aufräumen, Tisch decken
+- 17:50 Uhr: Reis kochen
+- 18:00 Uhr: Zweitfrittieren
 - 18:25 Uhr: Schwenken & Anrichten
 - 20:30 Uhr: Öl aufbereiten
 
@@ -177,8 +182,8 @@ Das vollständig abgekühlte Öl durch ein feines Sieb mit Passiertuch zurück i
 
 ## Kinder-Anpassung
 
-- **Kind isst die Ganjang-Keule** — Soja-Knoblauch-Honig, null Schärfe, der Knoblauch ist sanft gegart. Ein paar Huraideu-Stücke (pur) dazu, falls er Sauce nicht mag (beim Bún chả mochte er pures Fleisch lieber als die Kindersauce).
-- **Yangnyeom-Flügel sind nur für Erwachsene** (Gochujang). Flügel generell eher nicht für einen Dreijährigen: Knochen und kleine Knorpelstücke.
+- **Kind isst den Ganjang-Oberschenkel** — Soja-Knoblauch-Honig, null Schärfe, der Knoblauch ist sanft gegart. Ein paar Huraideu-Stücke (pur) dazu, falls er Sauce nicht mag (beim Bún chả mochte er pures Fleisch lieber als die Kindersauce).
+- **Yangnyeom-Flügel sind nur für Erwachsene** (Gochujang). Von den Ganjang-Flügeln höchstens eine Drumette unter Aufsicht (ein großer Knochen); Flats und Spitzen nicht — zwei dünne Knochen und kleine Knorpelstücke.
 - **Stücke halbieren und abkühlen lassen:** Zuckerglasur und Kruste halten die Hitze lange — innen ist das Huhn deutlich heißer, als es außen wirkt.
 - Chicken-mu ist süß-sauer und mild; bei seiner Vorliebe für Ausgefallenes (Oliven, Sojasauce) gute Chance. Kohlsalat ebenfalls mild.
 - **Kind aus der Küche, solange das Öl heiß ist** — auch während der Ruhepause steht ein Topf mit 1,8 l heißem Öl auf dem Herd.
@@ -191,11 +196,21 @@ Geprüft gegen den [Leitfaden](/schwangerschaft/leitfaden.md):
 - **Kein Alkohol:** Kein Reiswein/Mirin in Marinade und Saucen (Korean Bapsang nutzt beides), kein Wodka im Teig. **Gochujang** enthält je nach Marke etwas Ethanol als Konservierungsstoff (Etikett: „Ethanol"/„Alkohol", meist 1–2 %) — in 2½ EL Paste sind das Bruchteile eines Gramms, die zudem 4–5 Min. mitköcheln; unkritisch, aber wer ganz sicher sein will, nimmt eine Marke ohne Ethanol in der Zutatenliste.
 - **Kein rohes Ei:** Teig ohne Ei (Maangchis Variante mit Ei entfällt ohnehin), Kohlsalat mit Essig-Dressing statt Mayonnaise.
 - **Zucker und Stärke — hier liegt das GDM-Thema:** Dieses Gericht ist frittierter Stärketeig plus süße Glasur, also eher Ausnahme- als Rotationsessen. Stellschrauben, nach Wirkung sortiert:
-  1. **Huraideu (ohne Sauce) als Hauptanteil** des Tellers, dazu einige Ganjang-Stücke — die Ganjang-Sauce ist schon reduziert (2 EL Honig auf \~450 g, Bindung über Stärke statt Zucker). Yangnyeom (3 EL Reissirup + Ketchup + Gochujang) nur probieren oder als Dip.
+  1. **Huraideu (ohne Sauce) als Hauptanteil** des Tellers, dazu einige Ganjang-Stücke — die Ganjang-Sauce ist schon reduziert (3 EL Honig auf \~700 g, Bindung über Stärke statt Zucker). Yangnyeom (3 EL Reissirup + Ketchup + Gochujang) nur probieren oder als Dip.
   2. **Kein Reis** für die GDM-Portion — die Kruste *ist* die Kohlenhydrat-Beilage. Wer Reis will: höchstens 40 g roh.
   3. **Kohlsalat und Chicken-mu großzügig** — Ballaststoffe und Säure dämpfen die Spitze; vom Chicken-mu wird nur ein kleiner Teil des Zuckers mitgegessen (er bleibt in der Lake).
-  4. Grob geschätzt: 250 g Hähnchen (Rohgewicht), davon 150 g Huraideu + 100 g Ganjang, ergibt \~30–35 g KH (Teig \~10 g pro 100 g Huhn, Ganjang-Glasur \~8 g pro 100 g). Protein und Fett sind reichlich dabei — gute GDM-Struktur, wenn die Menge stimmt. Blutzuckermessung entscheidet.
+  4. Grob geschätzt: 250 g Hähnchen (Rohgewicht ohne Knochen), davon 150 g Huraideu + 100 g Ganjang, ergibt \~30–35 g KH (Teig \~10 g pro 100 g Huhn, Ganjang-Glasur \~8 g pro 100 g). Protein und Fett sind reichlich dabei — gute GDM-Struktur, wenn die Menge stimmt. Blutzuckermessung entscheidet.
 - **Frittierfett** ist in der Schwangerschaft kein Verbot, aber schwer — Portion begrenzen, danach ein Spaziergang.
+
+## Learnings
+
+**Gekocht 10/2026.** Beide Saucen ziemlich lecker, vor allem die milde Ganjang-Sauce war sehr aromatisch. Hähnchen sehr knusprig, wie es sein soll, und saftig — Double Fry, Teig und Saucen sitzen. Die Flügel-Drumettes waren saftiger und besser als die Keulenstücke; auch die mitfrittierten Flügelspitzen hatten einiges an Fleisch und waren sehr gut. Oberschenkelfilet ohne Knochen war nicht zu bekommen, das Auslösen ganzer Keulen hinterließ viele schwer entfernbare Sehnen. Schwachpunkt: Farbe nur goldbraun statt tief goldbraun, aus Sorge vor dem Übergaren nicht länger frittiert. Fix im Rezept: Flügel (mit Spitzen) als Hauptmenge, nur eine kleine Oberschenkel-Portion aus Oberkeulen mit Knochen fürs Kind; Zweitfrittieren bei 185–190 °C nach Farbe statt nach Uhr (3–4 Min. Flügel, 2½–3 Min. Oberschenkel); Öl wiederverwenden, weil frisches Öl schwächer bräunt — beim nächsten Mal zu validieren.
+
+### Details
+
+- **Hähnchenteile:** Die Sehnen sitzen vor allem im Unterschenkel, deshalb nie ganze Keulen auslösen. Die Oberkeule mit Knochen ist schnell ausgelöst und reicht für die kleine Kinder- und Huraideu-Portion.
+- **Farbe:** Das Übergar-Risiko im zweiten Gang war überschätzt — nach der Ruhepause ist das Innere abgekühlt, und die alten 1½–2 Min. für die Keulenstücke lagen unter den Quellen (Sift & Simmer: 3–4 Min.). Frisches Öl beim ersten Einsatz bräunt zusätzlich schwächer. Falls es mit Zeit und gebrauchtem Öl immer noch zu hell bleibt: als nächsten Hebel mehr Mehl im Teig (Stärke : Mehl 1 : 1).
+- **Saucen:** unverändert gut. Ganjang auf 1,5-fache Menge, weil sie jetzt auch die Hälfte der Flügel überzieht.
 
 ## Quellen & Entscheidungen
 
@@ -203,7 +218,7 @@ Geprüft gegen den [Leitfaden](/schwangerschaft/leitfaden.md):
 - **Flügel getrennt und länger:** ATK und Maangchi frittieren Flügel 7–12 Min. pro Gang bei 175 °C; bei 150–160 °C sind 9–10 Min. im ersten Gang realistisch, der zweite kurz.
 - **Teig:** Kartoffelstärke-lastiger Teig mit Sprudelwasser und Backpulver nach Sift & Simmer (¾ Cup Stärke : ¼ Cup Mehl), konsistenz „dünn wie Farbe" nach ATK/Kenji (ATK: Mehl + Stärke + Wasser, loser Teig hält die Sauce aus). Die vorgelagerte Trockenstärke nach Kenjis Zwei-Stufen-Coating. Wodka bewusst weggelassen (siehe Stil-Entscheidung).
 - **Backpulver + Salz auf die Flügel, offen im Kühlschrank:** Kenji López-Alts Wing-Technik (Serious Eats, per WebFetch nicht abrufbar — Inhalt über Sekundärquellen bestätigt) und Stellanspice (Dry Brine über Nacht).
-- **Marinade Keule (Salz, Knoblauch, Ingwer, Pfeffer):** Korean Bapsang; Reiswein und optionales Milchbad weggelassen.
+- **Marinade Oberschenkel (Salz, Knoblauch, Ingwer, Pfeffer):** Korean Bapsang; Reiswein und optionales Milchbad weggelassen.
 - **Yangnyeom-Sauce:** Struktur nach Maangchi (Gochujang + Ketchup + Reissirup + Essig + Knoblauch, „Sirup und Ketchup sind essenziell"), Säure etwas höher und Sirup niedriger; Ingwer und Sesamöl nach Sift & Simmer bzw. ATK.
 - **Ganjang-Sauce:** Soja-Knoblauch-Honig nach Sift & Simmer (dort ½ Cup Soja + ¼ Cup Honig + 12 Zehen auf 500 g — deutlich salziger und süßer); hier auf 3 EL Soja + 2 EL Honig reduziert und mit etwas Stärke gebunden, damit die Sauce trotz weniger Zucker die Kruste nicht durchweicht.
 - **Sauce erst kurz vor dem Servieren, dünn schwenken:** ATK (schwenken, 2 Min. auf dem Gitter abbinden lassen), Maangchi (Kruste wird mit der Zeit weicher).
@@ -214,7 +229,7 @@ Geprüft gegen den [Leitfaden](/schwangerschaft/leitfaden.md):
 
 - **Nach der Schwangerschaft — Wodka-Test:** 60 ml des Mineralwassers durch eiskalten Wodka ersetzen (Kenji). Der Effekt (weniger Gluten, schnelleres Verdampfen) ist bei diesem stärkelastigen Teig vermutlich klein — nur als A/B-Test mit einer Charge sinnvoll.
 - **Chicken-Shop-Kohlsalat:** In Korea kommt oft Weißkohl mit Ketchup-Mayo-Dressing dazu (1 EL Mayonnaise, 1 EL Ketchup, 1 TL Zucker auf 200 g Kohl) — nach der Schwangerschaft ausprobieren; die Essig-Sesam-Version oben ist frischer und passt besser gegen die süßen Glasuren.
-- **Mehr Flügel, weniger Keule:** Wer die ganze Ladung als Flügel will: \~1,3 kg Flügel, 4 Chargen im ersten Gang (\~45 Min. reine Frittierzeit) — der Abend wird länger. Die Keulen-Mehrheit ist auch eine Zeitentscheidung.
+- **Nur Flügel:** Ohne Kind am Tisch kann der Oberschenkel ganz entfallen — dann \~1,4 kg Flügel, 4 Chargen im ersten Gang (\~50 Min. reine Frittierzeit), Huraideu aus Drumettes.
 - **Reste:** Knusprig wird es nicht mehr ganz, aber im 200-°C-Ofen auf dem Gitter (8–10 Min.) oder in der Heißluftfritteuse kommt die Kruste der Huraideu-Stücke gut zurück. Gesaucte Stücke kalt essen oder in der Pfanne mit etwas Wasser als Glasur-Hähnchen auf Reis.
 - **Erdnüsse:** Korean Bapsang streut gehackte Erdnüsse über Dakgangjeong — passt gut zur Yangnyeom-Platte, fürs Kind (3 J.) aber Verschluckungsgefahr, deshalb hier nicht standard.
 
@@ -225,21 +240,21 @@ Geprüft gegen den [Leitfaden](/schwangerschaft/leitfaden.md):
 
 | Zutat | Marinade/Salzen | Teig | Ganjang | Yangnyeom | Kohlsalat | Chicken-mu | Anrichten | **Gesamt** |
 |---|---|---|---|---|---|---|---|---|
-| Sojasauce | — | — | 3 EL | 1 EL | 1 TL | — | — | **4 EL + 1 TL** |
-| Knoblauch | 2 Zehen | — | 5 Zehen | 3 Zehen | — | — | — | **10 Zehen** |
-| Ingwer, gerieben | 1 TL | — | 1 TL | ½ TL | — | — | — | **2½ TL** |
-| Kartoffelstärke | — | 30 g Bestäuben + 120 g | ½ TL | — | — | — | — | **\~152 g** |
+| Sojasauce | — | — | 4½ EL | 1 EL | 1 TL | — | — | **5½ EL + 1 TL** |
+| Knoblauch | 1 Zehe | — | 8 Zehen | 3 Zehen | — | — | — | **12 Zehen** |
+| Ingwer, gerieben | ½ TL | — | 1½ TL | ½ TL | — | — | — | **2½ TL** |
+| Kartoffelstärke | — | 30 g Bestäuben + 120 g | ¾ TL | — | — | — | — | **\~153 g** |
 | Weizenmehl | — | 60 g | — | — | — | — | — | **60 g** |
-| Backpulver | ½ TL (Flügel) | 1 TL | — | — | — | — | — | **1½ TL** |
-| Reisessig | — | — | 1 TL | 1 EL | 1½ EL | 120 ml | — | **120 ml + 2½ EL + 1 TL** |
-| Sesamöl | — | — | ½ TL | 1 TL | 1 TL | — | — | **2½ TL** |
+| Backpulver | 1 TL (Flügel) | 1 TL | — | — | — | — | — | **2 TL** |
+| Reisessig | — | — | 1½ TL | 1 EL | 1½ EL | 120 ml | — | **120 ml + 2½ EL + 1½ TL** |
+| Sesamöl | — | — | ¾ TL | 1 TL | 1 TL | — | — | **2¾ TL** |
 | Sesam | — | — | — | — | 1 TL | — | 2 × ½ TL | **2 TL** |
-| Honig | — | — | 2 EL | — | — | — | — | **2 EL** |
+| Honig | — | — | 3 EL | — | — | — | — | **3 EL** |
 | Reissirup | — | — | — | 3 EL | — | — | — | **3 EL** |
 | Zucker | — | — | — | — | 1 TL | 50 g | — | **\~55 g** |
-| Salz | 5 g + 7 g | ½ TL | — | — | ¼ TL | 2 TL | 1 Prise | **\~30 g** |
+| Salz | 10 g + 4 g | ½ TL | — | — | ¼ TL | 2 TL | 1 Prise | **\~30 g** |
 | Rapsöl | — | — | 1 EL | 1 EL | — | — | — | **+ 1,8 l Frittieren ≈ 2 l** |
 | Frühlingszwiebeln | — | — | — | — | 1 | — | 2 | **3 Stück** |
-| Wasser | — | 220–250 ml Mineralwasser | 3 EL + 1 EL | 2 EL | — | 150 ml | — | — |
+| Wasser | — | 220–250 ml Mineralwasser | 4½ EL + 1½ EL | 2 EL | — | 150 ml | — | — |
 
 </details>
