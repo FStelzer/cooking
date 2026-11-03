@@ -39,15 +39,16 @@ Yukatekischer Klassiker: Schweineschulter über Nacht in Recado rojo (Achiote) u
 - [ ] 1,5–1,7 kg Schweineschulter ohne Knochen, ohne Schwarte *(mit Knochen 1,8–2 kg → nur via Selgros, siehe Beschaffung)*
 
 **Obst & Gemüse:**
-- [ ] 4 Orangen *(2 Marinade, 1–2 Zwiebel-Lake, ggf. ½ Salsa)*
+- [ ] 4 Orangen *(2 Marinade, 1–2 Zwiebel-Lake, ggf. ½ Salsa tamulada)*
 - [ ] 5 Limetten *(2 Marinade, 1–2 Zwiebel-Lake, 1 Salsa)*
 - [ ] 1 Grapefruit *(½ Marinade, ½ Lake — liefert die Bitterorangen-Bitterkeit, nicht weglassen)*
 - [ ] 3 rote Zwiebeln
-- [ ] 1 weiße Zwiebel *(¼ für die Chiltomate)*
-- [ ] 450 g Tomaten, reif *(Rispen- oder Roma-Tomaten, für die Chiltomate)*
+- [ ] 1 weiße Zwiebel *(¼ Chiltomate, ggf. ¼ Salsa tamulada)*
+- [ ] 450 g Roma-Tomaten, reif *(für die Chiltomate; fleischiger als Rispentomaten)*
+- [ ] Optional: 1 orange Spitzpaprika *(mehr Masse für die Salsa tamulada; Alternative: 1 Möhre)*
 - [ ] 1 Bund Koriander *(Chiltomate)*
-- [ ] 1 Knolle Knoblauch *(6–8 Zehen Marinade, 2 Salsa)*
-- [ ] 3–4 frische Habaneros *(2–3 Salsa tamulada, 1 Chiltomate; Fallbacks siehe Beschaffung: Mexhaus-Backup → rote Chilis)*
+- [ ] 1 Knolle Knoblauch *(6–8 Zehen Marinade, 3 Salsa)*
+- [ ] 2 frische Habaneros *(1 Salsa tamulada, 1 Chiltomate; für Original-Schärfe 2–3 in die Tamulada; Fallbacks siehe Beschaffung: Mexhaus-Backup → rote Chilis)*
 
 **Sonstiges:**
 - [ ] Einweg-Handschuhe *(Annatto färbt extrem — auch Bretter/Kleidung schützen)*
@@ -96,11 +97,11 @@ Bei Std. 1–1,5 des Schmorens: 3 rote Zwiebeln in 3-mm-Ringe, kochendes Wasser 
 
 **8. Salsa tamulada (10 Min.)**
 *jederzeit · Herd*
-Bei Std. 3: 2–3 Habaneros (+ 2 Knoblauchzehen) in der Pfanne rundum rösten bis fleckig-angekohlt, im Mörser mit Salz zerdrücken, mit Saft von 1 Limette aufgießen (oder ½ Orange + ½ Limette — näher an naranja agria, so macht es Meatwave). **Kommt ausschließlich separat auf den Tisch.** *2–3 Habaneros nicht weiter eindampfen — das Original rechnet 20 Chilis auf ½ Tasse Saft; die Salsa ist als vollwertige scharfe Komponente für die Erwachsenen gedacht, nicht als Deko. Sie bleibt „pica pica“ (10/2026, Urteil eines Mexikaners: super, aber sehr scharf): Kerne und Häutchen zu entfernen ändert wenig, weil Habaneros auch im Fruchtfleisch scharf sind. Wer sie zahmer will, nimmt 1–2 Habaneros und röstet 1 Tomate mit — die eigentliche milde Option ist aber die Chiltomate.*
+Bei Std. 3: 1 Habanero und 3 Knoblauchzehen in der trockenen Pfanne rundum rösten, bis sie fleckig angekohlt sind. Im Mörser mit ¼ TL Salz zerdrücken und mit dem Saft von 1 Limette aufgießen (oder ½ Orange + ½ Limette — näher an naranja agria, so macht es Meatwave). **Kommt ausschließlich separat auf den Tisch.** *1 Habanero reicht für die Erwachsenen völlig (3× gekocht): Die Salsa bleibt „pica pica“ (10/2026, Urteil eines Mexikaners: super, aber sehr scharf). Kerne und Häutchen zu entfernen ändert wenig, weil Habaneros auch im Fruchtfleisch scharf sind. Wer Schärfe will, wie sie das Original hat, nimmt 2–3 Habaneros.* *Mehr Masse ohne mehr Schärfe (ungetestet, beim nächsten Mal validieren): Mehr Limette macht die Salsa nur saurer und flüssiger. Besser ist neutrales Volumen. Bevorzugt: 1 orange Spitzpaprika (\~150 g) auf dem Gasgrill oder unter dem Backofengrill rundum schwarz rösten, 10 Min. abgedeckt schwitzen lassen, häuten, entkernen. ¼ weiße Zwiebel (in 1-cm-Scheiben) mit Habanero und Knoblauch in der Pfanne mitrösten. Paprika und Zwiebel grob hacken und im Mörser mit der Habanero-Paste zerdrücken, zum Saft von 1 Limette zusätzlich den von ½ Orange dazugeben, mit \~¼ TL Salz nachsalzen. Die Röstnote bleibt so erhalten. Alternative ist die orange Habanero-Salsa mit Möhre: 1 Möhre (\~80 g) und ¼ weiße Zwiebel in 100 ml Wasser in 8–10 Minuten weich köcheln, bis das Wasser fast verdampft ist, und anschließend mit Habanero, Knoblauch, Salz und Zitrus mit dem Stabmixer glatt mixen. Für den Mixer reichen 3 mm dünne Scheiben, Julienne bringt nichts. Für den Mörser die Möhre fein raspeln, so wird sie weich genug zum Zerdrücken. Die Möhre gibt Süße und Farbe, aber weniger Röstaroma. Beide Varianten ergeben etwa das Dreifache an Menge bei derselben Schärfe pro Löffel.*
 
-**9. Chiltomate (ca. 20 Min.)**
+**9. Chiltomate (ca. 25 Min.)**
 *jederzeit · Herd*
-Milde zweite Salsa, der yukatekische Standard-Begleiter neben der Tamulada. 450 g Tomaten, ¼ weiße Zwiebel und 1 Habanero (ganz) in der trockenen heißen Pfanne bei mittlerer Hitze 10–12 Min. rösten, einmal wenden, bis die Haut stellenweise schwarz ist (alternativ unter dem Backofengrill). Abkühlen lassen. Tomaten grob zerdrücken (Mörser oder 2–3 Pulse im Mixer — stückig lassen), Zwiebel fein hacken, mit 3 EL gehacktem Koriander und ½ TL Salz mischen. **Jetzt die Kinderportion abnehmen.** Habanero entkernen, fein hacken und **erst die Hälfte** unterrühren, abschmecken, dann ggf. mehr. Mit einem Spritzer Limette abrunden. *Lauwarm oder raumtemperiert servieren; hält 2 Tage im Kühlschrank.*
+Milde zweite Salsa, der yukatekische Standard-Begleiter neben der Tamulada. 450 g Roma-Tomaten längs halbieren. In der trockenen heißen Pfanne bei mittlerer bis hoher Hitze mit ¼ weißer Zwiebel (in 1-cm-Scheiben) und 1 Habanero (ganz) zuerst auf der Schnittfläche 6–8 Min. rösten, bis sie gebräunt ist, dann wenden und die Hautseite 3–4 Min. rösten, bis sie stellenweise schwarz ist. *Auf der Schnittfläche verdampft schon in der Pfanne Wasser, und die Bräunung gibt Geschmack. Ganze große Rispentomaten bleiben beim Rösten geschlossen und geben ihren Saft erst beim Zerdrücken ab, deshalb wird die Salsa dann suppig.* Abkühlen lassen. Tomaten grob zerdrücken (Mörser oder 2–3 Pulse im Mixer — stückig lassen) und **10 Min. im Sieb abtropfen lassen**. Den Saft in der Pfanne auf 2–3 EL sirupartig einkochen und wieder unterrühren. Zwiebel fein hacken, mit 3 EL gehacktem Koriander unter die Tomaten mischen. **Jetzt die Kinderportion abnehmen.** Habanero entkernen, fein hacken und **erst die Hälfte** unterrühren, abschmecken, dann ggf. mehr. **Erst kurz vor dem Servieren** mit ½ TL Salz (auf beide Portionen verteilt) und einem Spritzer Limette abschmecken. Salz zieht weiter Wasser, wenn die Salsa danach noch steht. *Wer es cremiger mag: \~⅓ der abgetropften Tomaten mit der gerösteten Zwiebel und 1 EL neutralem Öl mit dem Stabmixer glatt mixen und unter den stückigen Rest heben; das bindet, und die frische Note bleibt. Lauwarm oder raumtemperiert servieren; hält 2 Tage im Kühlschrank.*
 
 **10. Tortillas (ca. 60 Min., parallel)**
 *jederzeit · 2 Pfannen*
@@ -144,13 +145,18 @@ Ergibt bewusst \~2 Mahlzeiten (aus 1,5–2 kg Schulter werden \~1–1,2 kg gezup
 
 ## Learnings
 
-**Gekocht 10/2026.** Wirklich sehr lecker — eine Art mexikanisches Pulled Pork; Fleisch und Zwiebeln waren einfach und haben auf Anhieb funktioniert. Frische Tortillas ebenfalls sehr lecker, aber mit dem Topfboden gepresst zu dick: Sie brauchten länger und brannten in Edelstahl wie beschichtet punktuell an (Pfanne danach schwer zu reinigen), zügig und gut war schwer hinzubekommen. Fix im Rezept: kleinere Kugeln, Tortillapresse, mittlere Hitze, zwei Pfannen parallel, Pfanne zwischendurch auswischen. Salsa tamulada viel besser als jede gekaufte scharfe Sauce, aber extrem scharf („pica pica“) trotz entfernter Kerne → Chiltomate als milde zweite Salsa ergänzt.
+**Gekocht 3× (10–11/2026).** Wirklich sehr lecker — eine Art mexikanisches Pulled Pork; Fleisch und Zwiebeln waren einfach und haben auf Anhieb funktioniert. Frische Tortillas ebenfalls sehr lecker, aber mit dem Topfboden gepresst zu dick: Sie brauchten länger und brannten in Edelstahl wie beschichtet punktuell an (Pfanne danach schwer zu reinigen), zügig und gut war schwer hinzubekommen. Fix im Rezept: kleinere Kugeln, Tortillapresse, mittlere Hitze, zwei Pfannen parallel, Pfanne zwischendurch auswischen. Salsa tamulada viel besser als jede gekaufte scharfe Sauce, aber extrem scharf („pica pica“) trotz entfernter Kerne → Chiltomate als milde zweite Salsa ergänzt. Durchgänge 2–3: Chiltomate sehr lecker, aber suppig (Fix: Roma halbiert rösten, abtropfen, spät salzen); Tamulada mit 1 Habanero scharf genug, Spitzpaprika als Masse-Hinweis ergänzt.
 
 ### Details
 
 - **Tortillas:** Das Nadelöhr war die Dicke, nicht der Teig. Dickere Fladen brauchen länger auf der Hitze, und genau in dieser Zeit verkohlen lose Masa-Krümel und dünne Randstellen. Gusseisen (Comal) wäre die klassische Unterlage und verzeiht mehr, Hauptfixes sind aber dünner pressen und eine Stufe weniger Hitze.
 - **Salsa tamulada:** Schärfe ist bei Habanero über das Fruchtfleisch verteilt — Entkernen hilft wenig. Die Salsa bleibt so; die Antwort ist eine zweite, milde Salsa daneben, keine entschärfte erste.
 - **Fleisch und Zwiebeln:** unverändert gut, nichts anzupassen.
+
+### Durchgänge 2 und 3 (10–11/2026)
+
+- **Chiltomate:** sehr lecker, wird aber schnell suppig. Große Rispentomaten blieben beim Rösten ganz und gaben den Saft erst beim Zerdrücken ab. Fix in Schritt 9: Roma-Tomaten halbiert auf der Schnittfläche rösten, nach dem Zerdrücken abtropfen und den Saft einkochen, erst kurz vor dem Servieren salzen, optional ⅓ glatt mixen — beim nächsten Mal zu validieren.
+- **Salsa tamulada:** 1 Habanero (mit 2–3 Knoblauchzehen, 1 Limette) reicht von der Schärfe her völlig, ist dann aber wenig Masse. Spitzpaprika- bzw. Möhren-Hinweis in Schritt 8 ergänzt, noch ungetestet.
 
 ## Quellen & Entscheidungen
 
