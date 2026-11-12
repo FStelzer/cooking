@@ -369,6 +369,19 @@ Hand editieren, Learnings gehören in die Rezeptdatei.
 - ✅ **Cochinita Pibil — Schweineschulter in Achiote-Orangen-Marinade (4 Portionen + Reste)** (siehe `gerichte/cochinita-pibil.md`)
   **Gekocht 3× (10–11/2026).** Wirklich sehr lecker — eine Art mexikanisches Pulled Pork; Fleisch und Zwiebeln waren einfach und haben auf Anhieb funktioniert. Frische Tortillas ebenfalls sehr lecker, aber mit dem Topfboden gepresst zu dick: Sie brauchten länger und brannten in Edelstahl wie beschichtet punktuell an (Pfanne danach schwer zu reinigen), zügig und gut war schwer hinzubekommen. Fix im Rezept: kleinere Kugeln, Tortillapresse, mittlere Hitze, zwei Pfannen parallel, Pfanne zwischendurch auswischen. Salsa tamulada viel besser als jede gekaufte scharfe Sauce, aber extrem scharf („pica pica“) trotz entfernter Kerne → Chiltomate als milde zweite Salsa ergänzt. Durchgänge 2–3: Chiltomate sehr lecker, aber suppig (Fix: Roma halbiert rösten, abtropfen, spät salzen); Tamulada mit 1 Habanero scharf genug, Spitzpaprika als Masse-Hinweis ergänzt.
 
+- ✅ **Kofta bil tahini — Ofen-Kofta in Tahina-Zitronen-Sauce mit Blumenkohl und Gurken-Joghurt (4 Portionen, optional + 3 Meal-Prep-Boxen)** (siehe `schwangerschaft/kofta-bil-tahini.md`)
+  **Gekocht 11/2026 (mit Meal Prep).** Sehr lecker, kommt wieder — eher ohne die
+  Extra-Portionen, deshalb ist *Abendessen* jetzt der Default und Meal Prep eine Variante.
+  Zeitlich aufwendiger als die angegebenen \~2 Std., und die Schrittfolge passte nicht: Neu
+  startet der Blumenkohl zuerst, dann werden die Kofta geformt und gehen ohne Kühlpause in
+  den Ofen, Sauce und Joghurt entstehen währenddessen. Die Bulgur-Teilung war nicht
+  offensichtlich (alles wurde Salat, die Hälfte abends gegessen) → Bulgur gibt es jetzt nur als
+  Salat, der Boxen-Anteil wird zuerst abgefüllt. Sauce war zu dünn: \~220 ml Wasser plus nicht
+  abgetupftes Bratfett in der vollen Form → jetzt 150 ml (bis 200 ml nach Bedarf), Ziel
+  Crème-fraîche-Konsistenz, und die Kofta backen auf dem Blech vor, damit das Fett dort bleibt.
+  Neue Reihenfolge, Wassermenge und das Umsetzen vom Blech in die Form sind beim nächsten Mal
+  zu prüfen.
+
 <!-- learnings:end -->
 
 ## Ideen für nächste Projekte
