@@ -382,6 +382,16 @@ Hand editieren, Learnings gehören in die Rezeptdatei.
   Neue Reihenfolge, Wassermenge und das Umsetzen vom Blech in die Form sind beim nächsten Mal
   zu prüfen.
 
+- ✅ **Shakshuka mit festen Eiern und Feta (2 Erwachsene + Kind)** (siehe `schwangerschaft/shakshuka.md`)
+  **Gekocht 11/2026 (mit Menemen fürs Kind).** Shakshuka hat allen sehr gut geschmeckt — ein
+  Erfolg, kommt wieder. Die Menemen war ganz okay, aber auch beim Kind nur mäßig erfolgreich
+  (gegessen vor allem wegen Feta und Oliven) → das Kind isst jetzt standardmäßig von der
+  Shakshuka-Pfanne, Menemen ist nur noch Variante. Die Sauce war für die 28-cm-Pfanne etwas
+  knapp und zu stückig, um Mulden zu drücken; mit nachgegossenen passierten Tomaten ging es →
+  jetzt fest 200 g passierte Tomaten statt 50 ml Wasser, schmalere und kürzere Paprikastreifen,
+  grob stampfen. Bis die Eier ganz durch waren, dauerte es länger als geplant → 15–18 Min.
+  statt 10–12, Eier zimmerwarm. Sauce-Menge, Konsistenz und Garzeit beim nächsten Mal prüfen.
+
 <!-- learnings:end -->
 
 ## Ideen für nächste Projekte

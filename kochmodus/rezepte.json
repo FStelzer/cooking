@@ -253,10 +253,10 @@
  },
  {
   "path": "../schwangerschaft/shakshuka.json",
-  "title": "Shakshuka mit festen Eiern und Feta — plus milde Menemen-Pfanne fürs Kind (2 Erwachsene + Kind)",
+  "title": "Shakshuka mit festen Eiern und Feta (2 Erwachsene + Kind)",
   "group": "schwangerschaft",
-  "wip": true,
-  "cooked": false
+  "wip": false,
+  "cooked": true
  },
  {
   "path": "../schwangerschaft/shawarma-teller.json",

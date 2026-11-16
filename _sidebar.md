@@ -2,7 +2,6 @@
 - **🚧 in arbeit**
   - [Burrito-Baukasten — drei Füllungen, als Burrito oder Bowl (3 Portionen)](/mealprep/burrito-baukasten.md)
   - [Menü November — Tomatenwasser / Kaisergranat / Schmorlamm / Espresso-Parfait](/menues/menue-november.md)
-  - [Shakshuka mit festen Eiern und Feta — plus milde Menemen-Pfanne fürs Kind (2 Erwachsene + Kind)](/schwangerschaft/shakshuka.md)
 - **backen**
   - [✅ Vollkornbrötchen auf Vorrat — Weizen als Leitrezept, Dinkel und Weizen-Roggen als Varianten (12 Stück)](/backen/vollkornbroetchen.md)
 - **desserts**
@@ -44,6 +43,7 @@
   - [Libanesischer Mezze-Teller — Hummus, Moutabal, Muhammara, Labneh & Kafta (Schwangerschafts-Version, 4 Personen)](/schwangerschaft/mezze-teller.md)
   - [Pescado a la sal — Wolfsbarsch in der Salzkruste mit Salsa verde, Grillgemüse und Linsensalat (2 Erwachsene + Kind)](/schwangerschaft/pescado-a-la-sal.md)
   - [Poulet au vinaigre (Lyon) — Hähnchenschenkel in Essig-Tomaten-Sauce mit grünen Bohnen (4 Portionen)](/schwangerschaft/poulet-au-vinaigre.md)
+  - [✅ Shakshuka mit festen Eiern und Feta (2 Erwachsene + Kind)](/schwangerschaft/shakshuka.md)
   - [Hähnchen-Shawarma-Teller, libanesisch — mit Toum, Tabbouleh und Blumenkohl harra (Schwangerschafts-Version, 4 Portionen)](/schwangerschaft/shawarma-teller.md)
   - [Tandoori-Hähnchen vom Gasgrill mit Dal tadka & Baingan bharta (4 Portionen)](/schwangerschaft/tandoori-haehnchen.md)
 - **technik**
