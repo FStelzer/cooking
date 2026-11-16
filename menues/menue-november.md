@@ -1,4 +1,4 @@
-# 🚧 Menü November — Tomatenwasser / Kaisergranat / Schmorlamm / Espresso-Parfait
+# 🚧 Menü November — Tomatenwasser / Kaisergranat / Ochsenbacke / Espresso-Parfait
 
 > [!NOTE]
 > **Status: In Arbeit** — alle vier Rezepte sind vollständig ausgearbeitet
@@ -17,10 +17,10 @@
 > Fertigsauce, 6–8 Tropfen) unkritisch. **Gang 2:** Kaisergranat statt glasiger
 > Jakobsmuschel — wird ohnehin durchgegart serviert (63–65 °C Kern), Beurre
 > blanc für alle auf Verjus statt Wein/Noilly, Ziegenfrischkäse pasteurisiert.
-> **Gang 3:** geschmorte, gepresste Lammschulter statt rosa Karree — geschmort
-> und am Abend auf ≥ 70 °C Kern durchgewärmt; Rotwein in der Jus wird in
-> Schüben bis fast trocken reduziert, bevor Flüssigkeit dazukommt (Verjus-
-> Option im Rezept). **Gang 4:** kein Alkohol in der Parfait-Masse, die Pâte à
+> **Gang 3:** geschmorte Ochsenbacke statt rosa Karree (11/2026 statt der
+> zwischenzeitlich geplanten Lammschulter) — am Abend in der Jus auf ≥ 70 °C Kern
+> glasiert; Jus **ohne Alkohol** (Verjus + roter Traubensaft statt Rotwein, auch
+> kein verkochter Wein). **Gang 4:** kein Alkohol in der Parfait-Masse, die Pâte à
 > bombe wird auf 75–82 °C gezogen (pasteurisiert, kein rohes Ei), durchgehend
 > Decaf; Schuss am Tisch als Espresso-Shakerato (alkoholfrei) oder
 > Espresso-Martini. **GDM:** Menü ist praktisch stärkefrei; KH nur in den
@@ -33,21 +33,21 @@
 |---|------|-----------|
 | 1 | **Amuse: Klares Tomatenwasser „feine Bloody Mary“** — Concassé-Einlage, kurze präzise Schärfe | Statement-Einstieg: klar, kalt, kurzer Kick |
 | 2 | **Kaisergranat, Verjus-Limetten-Beurre-blanc, Mango-Gel, Ziegenkäse-Praline** | Sanfte Pause nach dem Statement: süß, cremig, säure-balanciert |
-| 3 | **Geschmorte, gepresste Lammschulter, Selleriepüree, Rosenkohl zweierlei, Lammjus** | Erdig, herzhaft, Jus statt Sahne — knuspriger Block, zartes Inneres |
+| 3 | **Geschmorte Ochsenbacke, Selleriepüree, Rosenkohl zweierlei, Jus ohne Alkohol** | Erdig, herzhaft, Jus statt Sahne — glänzend glasierte, löffelzarte Backe, Crunch von den Chips |
 | 4 | **Espresso-Parfait (Decaf) mit Schuss am Tisch** — Espresso-Martini oder Shakerato | Kräftiges Finale + Show-Moment |
 
 **Bögen & Balance-Checks:**
 - Selleriesalz im Amuse ↔ Selleriepüree im Hauptgang (bewusster Bogen)
 - Schärfe nur in Gang 1, **kurz und präzise** (Tropfen Chiliöl) — kein lingerndes
   Brennen vor dem feinen Kaisergranat
-- Fett-Verteilung: Beurre blanc (2) und Parfait (4) sind reich, Schmorlamm (3)
-  ist fetter als Karree → Amuse klar/fettfrei, Püree mit Milch, Jus entfettet
-  und nur montiert, Lammblock knusprig ausgebraten statt in Sauce
+- Fett-Verteilung: Beurre blanc (2) und Parfait (4) sind reich → Ochsenbacke (3)
+  ist mager (Kollagen statt Fett), Amuse klar/fettfrei, Püree mit Milch, Jus
+  entfettet und nur montiert
 - Säure-Führung in Gang 2: die **Beurre blanc führt die Limette**, das Mango-Gel
   bleibt fruchtig-mild — nicht beide Komponenten sauer abschmecken
 - Keine Frucht-/Exotik-Doppelung: Mango nur in Gang 2, Dessert Kaffee
 - Alkohol nur noch im optionalen Espresso-Martini-Schuss (Gang 4) — Menü ist
-  sonst komplett alkoholfrei
+  sonst komplett alkoholfrei, auch die Jus (kein verkochter Wein)
 - Farbe: Knallgrüne Rosenkohlblätter brechen den sonst beigen Hauptgang
 
 ## Einkaufsliste
@@ -57,7 +57,7 @@ für Testläufe (Gang 2, Parfait) die jeweiligen Posten einzeln herauspicken.*
 
 ### Online / Weinhandel / Specialty-Röster (vorab bestellen)
 
-- [ ] 500 ml Verjus — Gang 2 (110 ml) + optional Jus Gang 3 (150 ml) *(Weinhandel oder online, \~8–12 €; vielseitig: Vinaigretten, Poulet au vinaigre)*
+- [ ] 500 ml Verjus — Gang 2 (110 ml) + Jus Gang 3 (\~160 ml) *(Weinhandel oder online, \~8–12 €; vielseitig: Vinaigretten, Poulet au vinaigre)*
 - [ ] Espressobohnen **entkoffeiniert**, 250 g, Specialty-Röster (Swiss-Water- oder CO2-Verfahren, dunklere Röstung) — Gang 4 *(billiger Decaf schmeckt flach/sauer — zeigt sich vor allem im Shakerato)*
 - [ ] Instant-Espressopulver **entkoffeiniert**, klein — Gang 4 *(Nescafé Gold/Lavazza Dek; Fallback: 1 TL sehr fein gemahlener Decaf)*
 
@@ -65,10 +65,10 @@ für Testläufe (Gang 2, Parfait) die jeweiligen Posten einzeln herauspicken.*
 
 - [ ] Kaisergranat, **TK roh, ganz**, 12 Stück (\~1 kg, Größe 10–15 St./kg) — Gang 2 *(Etikett: Nephrops norvegicus; nicht vorgekocht, keine argentinischen Rotgarnelen. Fallback: Selgros TK)*
 
-### Selgros (ein Trip; Lamm ggf. vorbestellen)
+### Selgros (ein Trip; Ochsenbacken vorher anfragen)
 
-- [ ] Lammschulter **mit Knochen**, 2–2,2 kg — Gang 3 *(Alternative: türkischer Metzger, s. Offen)*
-- [ ] Lammknochen, gesägt, 500 g — Jus Gang 3
+- [ ] Ochsenbacken, 1,6–2 kg (5–6 Stück) — Gang 3 *(frisch bevorzugt, TK okay; Alternative: Metzger auf Bestellung)*
+- [ ] Rinderknochen, gesägt, 1 kg — Jus Gang 3
 - [ ] Kaisergranat TK — nur als Fallback, falls Buhara nicht liefert
 
 ### REWE Center
@@ -76,7 +76,7 @@ für Testläufe (Gang 2, Parfait) die jeweiligen Posten einzeln herauspicken.*
 **Obst & Gemüse:**
 - [ ] 150 g Cherry-/Datteltomaten — Concassé Gang 1
 - [ ] 4 Stück Limetten — Gang 1 + 2
-- [ ] 2 Stück Zitronen — Gang 3 (Püree + Lamm-Abrieb)
+- [ ] 1 Stück Zitrone — Gang 3 (Püree + Rosenkohlblätter)
 - [ ] Mango, reif, 1 Stück — Gang 2
 - [ ] Ingwer, kleines Stück — Gang 2
 - [ ] 3 Stück Schalotten — Gang 2
@@ -84,7 +84,7 @@ für Testläufe (Gang 2, Parfait) die jeweiligen Posten einzeln herauspicken.*
 - [ ] Knollensellerie, 1 große Knolle (\~1,2 kg) — Gang 3: Püree + Chips + Jus
 - [ ] 700 g Rosenkohl — Gang 3
 - [ ] 1 Knolle Knoblauch — Gang 3
-- [ ] Petersilie, Schnittlauch, Thymian, Rosmarin (je 1 Bund/Töpfchen) — Gang 2 + 3
+- [ ] Petersilie, Schnittlauch, Thymian (je 1 Bund/Töpfchen) — Gang 2 + 3
 - [ ] 1 Töpfchen Basilikum — Garnitur Gang 1
 
 **Kühltheke / Milchprodukte:**
@@ -102,7 +102,7 @@ für Testläufe (Gang 2, Parfait) die jeweiligen Posten einzeln herauspicken.*
 - [ ] 500 g Brauner Zucker — Gang 4 *(falls kein Vorrat)*
 
 **Getränke / Spirituosen:**
-- [ ] Rotwein, kräftig, 1 Flasche — Jus Gang 3 (300 ml, wird in Schüben trocken reduziert) *(alkoholfreie Option: 150 ml Verjus + 150 ml Wasser)*
+- [ ] Roter Traubensaft (Direktsaft, ohne Zuckerzusatz), 1 Flasche — Jus Gang 3 (150 ml)
 - [ ] Wodka, kleine Flasche — **nur Espresso-Martini-Schuss** Gang 4 (\~15 ml pro Trinker) *(neutraler 40%er reicht)*
 - [ ] Kahlúa o. ä. Kaffeelikör, klein — **nur Schuss** Gang 4 (\~10 ml pro Trinker)
 - [ ] 1–2 L Frittieröl — Chips Gang 3
@@ -119,7 +119,6 @@ für Testläufe (Gang 2, Parfait) die jeweiligen Posten einzeln herauspicken.*
 - [ ] Mildes Chiliöl — Gang 1 *(oder selbst ansetzen → Chili-Öl-Drill in `technik/mini-projekte.md`)*
 - [ ] Weißweinessig — Gang 2
 - [ ] Butterschmalz — Gang 2 + 3
-- [ ] 1 Blatt Gelatine — Gang 3, nur als Option für die Block-Bindung
 - [ ] Zucker (auch für 1:1-Zuckersirup, Shakerato), Panko oder Mehl, Honig, Muskat, Tomatenmark, Lorbeer — Kleinmengen
 - [x] Salz, Öl (neutral, zum Anbraten)
 
@@ -294,8 +293,8 @@ Pfeffer verkneten. 5 Kugeln à \~25 g formen — 10–15 Min. anfrieren macht da
 Rollen sauber. Kalt lagern.
 
 **7. Wälzmischung (ca. 5 Min.)**
-Wälzmischung bereitstellen: 30 g Walnüsse fein gehackt + 2 EL fein gehackte
-Kräuter (Petersilie, Schnittlauch, etwas Thymian).
+Wälzmischung bereitstellen: 30 g Walnüsse fein gehackt + 1 EL fein gehackte
+Petersilie, 1 EL fein geschnittener Schnittlauch und ½ TL Thymianblättchen.
 
 **8. Pralinen wälzen (ca. 5 Min.)**
 *jederzeit · ≤ 30 Min. vor dem Anrichten · ergibt Pralinen gewälzt · hält bis 30 Min.*
@@ -412,93 +411,98 @@ Chili). Beurre blanc ist alkoholfrei → Mini-Spiegel ist unkritisch.
 
 ---
 
-### 3. Geschmorte, gepresste Lammschulter, Selleriepüree, Rosenkohl zweierlei, Lammjus
+### 3. Geschmorte Ochsenbacke, Selleriepüree, Rosenkohl zweierlei, Jus ohne Alkohol
 
-*T-1: \~1 h aktiv + 3–3,5 h Schmoren (passiv) + Pressen über Nacht | Am Tag:
-\~2 Std. verteilt (Püree, Rosenkohl, Chips, Jus reduzieren), \~20 Min. à la
-minute | Pro Portion: 1 Block (\~150 g, Kind ½) | Equipment: Bräter mit
-Deckel, 2 Kastenformen 20 cm (eine als Gewicht), Fleischthermometer,
-Mandoline, Passiertuch, Topf zum Frittieren*
+*T-1: \~1 h aktiv + 3,5–4 h Schmoren (passiv) + über Nacht in der Schmorflüssigkeit
+kalt | Am Tag: \~2 Std. verteilt (Entfetten, Jus, Püree, Rosenkohl, Chips), \~25 Min.
+à la minute | Pro Portion: \~150 g gegarte Backe (Kind ½) | Equipment: Bräter mit
+Deckel, ofenfeste Form, Fleischthermometer, Mandoline, Passiertuch, Topf zum
+Frittieren*
 
-**Teller-Logik:** Lammschulter am Vortag geschmort, gezupft und in der
-Kastenform gepresst; am Abend werden Blöcke rundum knusprig gebraten und im
-Ofen auf ≥ 70 °C Kern durchgewärmt — Restaurant-Format („pressed lamb
-shoulder“), sauber zu tellern, und die Schwangerschafts-Regel „durch“ ist
-damit automatisch erfüllt, ohne dass irgendwer trockenes Fleisch bekommt.
-Schmorflüssigkeit und Jus sind **ein** Prozess. Selleriepüree bewusst leicht
-(Milch statt Sahne — Fett-Bilanz, Schmorlamm ist fetter als Karree), Rosenkohl
-zweigleisig (kross UND knallgrün geht nicht im selben Blatt), Jus statt
-Sahnesauce. Sellerie-Chips als zweites Crunch-Element. November = volle
-Rosenkohl-Saison. Nebeneffekt: Der Abend ist entspannt — kein Rückwärtsgaren,
-keine Ofen-Kollision, Gang 3 ist zu 90 % vom Vortag.
+**Teller-Logik:** Ochsenbacke wird am Vortag im Ganzen geschmort und kühlt **in
+der Schmorflüssigkeit** aus. Am Abend wird sie portioniert, im Ofen mit der Jus
+glasiert und auf ≥ 70 °C Kern gebracht. Damit ist die Schwangerschafts-Regel „durch“
+erfüllt, ohne dass das Fleisch austrocknet. Backe ist mager, aber extrem
+kollagenreich: Sie wird „löffelzart“ und glänzend, ohne dass viel Fett auf dem Teller
+landet. Zwischen Beurre blanc (Gang 2) und Parfait (Gang 4) ist das die leichtere
+Wahl als die ursprünglich geplante Lammschulter. **Die Jus ist komplett alkoholfrei**
+(Verjus + roter Traubensaft statt Rotwein): kein Alkohol im Gericht, auch kein
+verkochter. Schmorflüssigkeit und Jus sind **ein** Prozess. Selleriepüree bewusst
+leicht (Milch statt Sahne), Rosenkohl zweigleisig (kross UND knallgrün geht nicht im
+selben Blatt), Sellerie- und Rosenkohl-Chips liefern den Crunch. November = volle
+Rosenkohl-Saison. Nebeneffekt: Der Abend ist entspannt — kein Anbraten, nur Ofen mit
+Thermometer; Gang 3 ist zu 90 % vom Vortag.
 
-**Lammschulter und Jus (T-1, ergibt \~800 g gezupftes Fleisch + \~250–300 ml Jus, Kühlschrank):**
+**Ochsenbacken und Jus (T-1, ergibt 5 Portionen à \~150 g + \~300 ml Jus, Kühlschrank):**
 
-**1. Knochen rösten (20–30 Min.)**
+**1. Knochen rösten (30–40 Min.)**
 *jederzeit · Ofen 220 °C*
-Ofen 220 °C: 500 g Lammknochen dünn mit Öl bepinseln, einlagig aufs Blech, 20–30
-Min. **goldbraun** rösten — nicht tiefdunkel! Anders als beim Schweinefond (→
-`technik/dunkle-bratensauce.md`): Lammknochen werden dunkel geröstet **bitter**.
-Die Saucen-Grammatik von dort (Reduktion in Schüben, Gewürze ans Ende, Montage)
-gilt trotzdem.
+Ofen 220 °C: 1 kg Rinderknochen (gesägt) dünn mit Öl bepinseln, einlagig aufs Blech,
+30–40 Min. **tief dunkelbraun** rösten. Rinderknochen vertragen den dunklen Röstgrad
+(anders als Lamm), die Saucen-Grammatik aus `technik/dunkle-bratensauce.md` gilt
+(Reduktion in Schüben, Gewürze ans Ende, Montage). Fett vom Blech abgießen, den
+Bratsatz mit 100 ml Wasser loskratzen und aufheben (kommt in Schritt 5 dazu).
 
-**2. Schulter salzen und anbraten (ca. 15 Min.)**
+**2. Backen parieren und anbraten (ca. 25 Min.)**
 *jederzeit · Herd*
-Lammschulter (2–2,2 kg mit Knochen) trockentupfen, Fettdeckel auf \~5 mm
-parieren (Parüren zu den Knochen), rundum mit 2,5–3 TL Salz (\~15–18 g) würzen —
-gern schon am T-2 als Dry-Brine unabgedeckt im Kühlschrank. Im Bräter in 1 EL Öl
-bei hoher Hitze rundum tief braun anbraten (\~10 Min.), herausnehmen.
+1,6–2 kg Ochsenbacken (5–6 Stück) von groben Fett- und Sehnenauflagen befreien. Die
+feine Silberhaut bleibt dran: Sie hält die Backe beim Schmoren zusammen und lässt sich
+gegart in Sekunden abziehen. Trockentupfen, rundum mit 2 TL Salz (\~12 g) würzen —
+gern schon am T-2 als Dry-Brine unabgedeckt im Kühlschrank. Bräter auf der gekoppelten
+Bräterzone, 1 EL Öl, bei hoher Hitze **in 2 Chargen** rundum tief braun anbraten
+(\~3–4 Min. pro Seite), herausnehmen.
 
 **3. Röstgemüse (ca. 10 Min.)**
 *Herd*
 Im selben Bräter 150 g Zwiebel, 100 g Karotte und 100 g Sellerie (von der
-Püree-Knolle) grob gewürfelt tief braun anrösten. 1 EL (15 g) Tomatenmark
-zugeben, 1–2 Min. mitrösten, **ständig rühren** (verbrannt = bitter).
+Püree-Knolle) grob gewürfelt tief braun anrösten. 2 EL (30 g) Tomatenmark zugeben,
+1–2 Min. mitrösten, **ständig rühren** (verbrannt = bitter). Mehr Tomatenmark als
+im Weinrezept üblich: Es ersetzt einen Teil der Tiefe, die sonst der Rotwein bringt.
 
-**4. Rotwein-Reduktion (ca. 15 Min.)**
+**4. Verjus-Traubensaft-Reduktion (ca. 15 Min.)**
 *Herd*
-Mit 100 ml Rotwein ablöschen und **fast trocken** einkochen. Zweimal wiederholen
-(insgesamt 300 ml) — in Etappen reduziert dominiert die Wein-Säure nicht, und
-der Alkohol ist praktisch komplett verkocht, bevor Flüssigkeit dazukommt
-(Schwangerschaft: das ist der Grund, warum der Wein hier bleiben darf).
-*(Null-Risiko-Option: 150 ml Verjus + 150 ml Wasser statt Wein, gleich reduziert
-— Jus wird etwas flacher.)*
+150 ml Verjus und 150 ml roten Traubensaft (Direktsaft, ohne Zuckerzusatz) mischen.
+In drei Schüben à 100 ml ablöschen, Bratsatz loskratzen und jeweils bei **mittlerer**
+Hitze sirupös-glänzend, fast trocken einkochen. Der Traubensaft bringt Farbe, Körper
+und Frucht, der Verjus die Säure: zusammen die Rolle des Rotweins, ganz ohne Alkohol.
+Kein alkoholfreier Wein (enthält bis 0,5 %).
 
-**5. Schmoren (3–3,5 Std., passiv)**
-*nach Knochen rösten, Rotwein-Reduktion · Ofen 150 °C · fertig bei Gabel dreht sich ohne Widerstand*
-Knochen und Schulter in den Bräter, kaltes Wasser bis \~⅔ Höhe der Schulter
-angießen (\~1–1,5 L), 1 Lorbeerblatt, 2 Zweige Thymian, 4 angedrückte
-Knoblauchzehen. Aufkochen, Schaum abschöpfen, Deckel drauf, im Ofen bei **150 °C
-3–3,5 Std.** schmoren, bis das Fleisch vom Knochen fällt (Gabel dreht sich ohne
-Widerstand). Nach der Hälfte einmal wenden.
+> **Achtung:** Der Zucker im Traubensaft karamellisiert schneller als Wein — nicht auf
+> voller Hitze reduzieren, bei Sirup-Konsistenz kommt der nächste Schub. GDM: \~24 g
+> Zucker auf die ganze Jus, ≈ 4–5 g pro Teller.
 
-**6. Zupfen und würzen (ca. 25 Min.)**
-Schulter herausheben, 10 Min. abkühlen lassen, dann **warm** zupfen: Haut, Fett,
-Sehnen und Knochen raus, Fleisch grob in 1–2-cm-Stücke zerpflücken (nicht zu
-fein — Struktur bleibt). Mit 4–5 EL passierter, noch unreduzierter
-Schmorflüssigkeit, Abrieb ½ Zitrone, 1 EL gehackter Petersilie, ½ TL fein
-gehacktem Rosmarin, Pfeffer und Salz abschmecken — **kräftig**: der Block wird
-kalt gegessen probiert, aber warm serviert, und die Jus kommt dazu.
+**5. Schmoren (3,5–4 Std., passiv)**
+*nach Knochen rösten, Verjus-Traubensaft-Reduktion · Ofen 140 °C · fertig wenn die Gabel sich ohne Widerstand dreht*
+Knochen und Backen in den Bräter, die 100 ml Blech-Bratsatz dazu, kaltes Wasser
+angießen, bis die Backen knapp bedeckt sind (\~1,5 L). 1 Lorbeerblatt, 3 Zweige
+Thymian und 4 angedrückte Knoblauchzehen dazu. Aufkochen, Schaum abschöpfen, Deckel
+drauf, im Ofen bei **140 °C 3,5–4 Std.** schmoren. Nach der Hälfte die Backen wenden.
+Fertig, wenn sich eine Gabel ohne Widerstand dreht — die Backe soll aber noch ihre
+Form halten, nicht zerfallen.
 
-**7. Pressen (ca. 10 Min.)**
-*ergibt Lammblock · mind. 8 h*
-Kastenform mit Frischhaltefolie auslegen (Überstand), Fleisch einfüllen und
-**fest** andrücken (\~4 cm hoch). Folie darüberschlagen, zweite Kastenform
-hineinsetzen, mit 2–3 Dosen beschweren, über Nacht kalt stellen. Die Gelatine
-der Schmorflüssigkeit bindet den Block. *(Option, falls der Block beim ersten
-Mal zerfällt: 1 Blatt Gelatine in den 4–5 EL Fond auflösen — notieren, nicht
-vorsorglich.)*
+**6. In der Flüssigkeit abkühlen (ca. 1 Std. + über Nacht, passiv)**
+Knochen herausheben und abtropfen lassen, die Backen bleiben **in der
+Schmorflüssigkeit** und kühlen darin ab (höchstens 1–1,5 Std. bei Raumtemperatur,
+dann abgedeckt in den Kühlschrank). So ziehen sie Flüssigkeit zurück, statt
+auszutrocknen — der wichtigste Saftigkeits-Hebel bei Backe.
 
-**8. Passieren und entfetten (ca. 10 Min.)**
-*nach Zupfen und würzen*
-Schmorflüssigkeit durch feines Sieb + Passiertuch passieren, über Nacht kalt
-stellen, **Fettdeckel abheben** (Schulter gibt viel Fett ab — der Deckel ist das
-wichtigste Werkzeug gegen ein schweres Menü).
+**7. Entfetten und portionieren (ca. 20 Min.)**
+Am Tag: den kalten Fettdeckel komplett abheben. Backen aus dem Gelee heben, die
+Silberhaut und verbliebene Sehnenplatten abziehen, dann mit einem scharfen Messer in
+5 Portionen à \~150 g schneiden (große Backen gegen die Faser halbieren, Kind ½
+Portion). Saubere Kanten — das ist der Look. Abgedeckt kalt stellen.
 
-**9. Jus reduzieren (ca. 30 Min.)**
+**8. Passieren (ca. 10 Min.)**
 *Herd*
-Am Tag auf \~250–300 ml **sanft** reduzieren — zu heftiges Reduzieren macht
-bitter und trüb. **Kein Salz bis zum Schluss** (Konzentration!).
+Das Gelee leicht erwärmen, bis es flüssig ist, und durch feines Sieb + Passiertuch
+passieren. Das Gemüse nur leicht andrücken (Pressen trübt).
+
+**9. Jus reduzieren (ca. 40 Min.)**
+*Herd · ergibt Jus*
+Die passierte Flüssigkeit (\~1,2–1,5 L) **sanft** auf \~300 ml reduzieren — zu
+heftiges Reduzieren macht bitter und trüb. **Kein Salz bis zum Schluss**
+(Konzentration!). 100 ml davon zum Glasieren abnehmen, den Rest (\~200 ml) für den
+Teller beiseitestellen.
 
 **Selleriepüree (am Nachmittag, hält warm):**
 
@@ -550,71 +554,65 @@ Beide Chips-Sorten **offen** auf Küchenpapier an warmem, trockenem Ort lagern
 zäh). Halten 1–2 Std. **Salzen erst kurz vor dem Servieren.** *(Ofen-Fallback
 für beide: 150–160 °C, 15–25 Min., einlagig — einfacher, aber weniger kross.)*
 
-**Lammblöcke und Service (am Abend):**
+**Ochsenbacke und Service (am Abend):**
 
-**17. Block temperieren und schneiden (ca. 10 Min.)**
-*jederzeit · 1 Std. vor Gang 3*
-Block \~1 Std. vor Gang 3 aus dem Kühlschrank (temperiert wärmt schneller
-durch), an der Folie aus der Form heben, in 5 Scheiben à \~4 cm schneiden (≈ 4 ×
-4 × 10 cm, \~150 g). Kanten glatt — das ist der Look.
+**17. Backen temperieren (ca. 5 Min.)**
+*nach Entfetten und portionieren, Jus reduzieren · 1 Std. vor Gang 3*
+Die 5 Portionen \~1 Std. vor Gang 3 aus dem Kühlschrank nehmen (temperiert wärmen sie
+schneller durch), einlagig und eng in eine ofenfeste Form setzen, mit 100 ml Jus
+begießen und mit Alufolie abdecken.
 
-**18. Blöcke anbraten (ca. 8 Min.)**
-*Ofen 140 °C · Herd*
-Nach Gang 2: Ofen von 80 °C (Teller) auf **140 °C** stellen, Teller solange
-gestapelt daneben (halten die Wärme). Pfanne mit 1 EL Butterschmalz mittel-hoch,
-Blöcke **in 2 Chargen** allseitig je 1–2 Min. knusprig braten (Edelstahl: nicht
-überladen, Chargen-Learning aus Bulgogi/Bò lúc lắc; die Schnittflächen zuerst,
-sie halten den Block zusammen).
-
-**19. Durchwärmen (12–18 Min.)**
+**18. Glasieren und durchwärmen (20–25 Min.)**
 *Ofen 140 °C · fertig bei ≥ 70 °C Kern*
-Blöcke auf Gitter + Blech, Thermometer in den dicksten, im **140 °C Ofen 12–18
-Min.** bis **≥ 70 °C Kern** — nach Thermometer, nicht nach Uhr. Das ist die
-Schwangerschafts-Grenze (Listerien nach Lagerung) und zugleich der Punkt, an dem
-der Block innen wieder saftig-warm ist.
+Nach Gang 2: Ofen von 80 °C (Teller) auf **140 °C** stellen, die Teller solange
+gestapelt daneben (halten die Wärme). Form abgedeckt 10 Min. in den Ofen, dann die
+Folie ab und alle 5 Min. mit der Jus aus der Form übergießen, bis die Backen glänzend
+lackiert sind und **≥ 70 °C Kern** erreichen (Thermometer in die dickste Portion,
+\~20–25 Min. insgesamt). Nach Thermometer, nicht nach Uhr: Das ist die
+Schwangerschafts-Grenze (Listerien nach Lagerung). Wird die Glasur zu dick, 1–2 EL
+Wasser in die Form geben.
 
-**20. Blätter, Jus, Chips (ca. 8 Min.)**
-*nach Blöcke anbraten · 2 Pfannen*
+**19. Blätter, Jus, Chips (ca. 8 Min.)**
+*nach Backen temperieren · 2 Pfannen*
 Parallel: blanchierte Rosenkohlblätter in 20 g aufschäumender Butter 1–2 Min.
-schwenken (nur erwärmen), 1 Prise Salz, kleiner Spritzer Zitrone. Jus erwärmen,
-salzen, vom Herd 25 g eiskalte Butter einschwenken (montieren), danach nicht
-mehr kochen; übrige Menge in Eiswürfelform einfrieren. Chips salzen.
+schwenken (nur erwärmen), 1 Prise Salz, kleiner Spritzer Zitrone. Die übrigen
+\~200 ml Jus erwärmen, mit 1–2 TL Verjus und Salz abschmecken, vom Herd 25 g eiskalte
+Butter einschwenken (montieren), danach nicht mehr kochen; übrige Menge in
+Eiswürfelform einfrieren. Chips salzen.
 
-**21. Anrichten (ca. 3 Min.)**
-*nach Durchwärmen, Blätter, Jus, Chips*
-Püree-Spiegel oder -Nocke, Lammblock daraufgesetzt, grüne
-Blätter und Chips-Blätter gemischt darüber/daneben, Sellerie-Chips
-aufgestellt, Jus angegossen (nicht über die Chips — weichen auf).
+**20. Anrichten (ca. 3 Min.)**
+*nach Glasieren und durchwärmen, Blätter, Jus, Chips*
+Püree-Spiegel oder -Nocke, die glasierte Backe daraufsetzen, grüne Blätter und
+Chips-Blätter gemischt darüber/daneben, Sellerie-Chips aufstellen, Jus angießen
+(nicht über die Chips — weichen auf).
 
-**Kind (3 J.):** halber Block — weich, mild, nichts Scharfes. Dazu Püree und
-weiche grüne Blätter; Jus ist unkritisch (nicht scharf, Wein verkocht).
-Funktioniert ohne Extra-Version.
+**Kind (3 J.):** ½ Portion Backe — butterzart, mild, nichts Scharfes. Dazu Püree und
+weiche grüne Blätter; die Jus ist alkoholfrei und unkritisch. Funktioniert ohne
+Extra-Version.
 
 > **Profi-Tipps:**
-> - Der Röstgrad-Unterschied ist das wichtigste Jus-Learning: Schweineknochen
->   „fast schwarz“, **Lammknochen nur goldbraun** — sonst bitter.
-> - Der Block ist der Grund, warum dieser Gang am Abend keinen Stress macht:
->   alles Handwerk passiert am Vortag, der Abend ist Anbraten + Ofen mit
->   Thermometer-Alarm.
-> - Fettdeckel der Schmorflüssigkeit konsequent abheben — Lammschulter ist
->   deutlich fetter als Karree, und die Jus soll klar und leicht bleiben.
+> - Backe **in der Schmorflüssigkeit** auskühlen lassen: Heiß herausgenommen
+>   trocknen die Fasern aus, im Gelee bleiben sie saftig.
+> - Silberhaut erst nach dem Schmoren abziehen — roh ist das mühsame Messerarbeit,
+>   gegart geht es in Sekunden.
+> - Röstgrad: Rinderknochen dürfen dunkel werden, Lammknochen nicht (bitter).
+> - Fettdeckel trotzdem konsequent abheben: Backe ist mager, die Knochen und das
+>   Anbratfett geben aber genug ab, und die Jus soll klar und leicht bleiben.
 > - Chips-Regel: alles, was knuspern soll, bleibt bis zur letzten Sekunde
 >   offen, trocken und ungesalzen.
 
 **Offen (Testlauf / Beschaffung):**
-- [ ] **Lammquelle klären:** Selgros (Schulter + Knochen in einem Trip) vs.
-      türkischen Metzger identifizieren — der ist in CLAUDE.md ohnehin als
-      Lücke markiert und meist die beste Lammquelle (Qualität, Preis, Knochen
-      auf Zuruf). Dieser Gang wäre der Anlass.
-- [ ] Block-Bindung: hält der Block beim Anbraten? Sonst Gelatine-Option
-      (Schritt 7) fürs nächste Mal notieren.
+- [ ] **Backen-Quelle klären:** Selgros anrufen (frisch oder TK? Stückgröße schwankt
+      stark, 250–600 g) vs. Metzger auf Bestellung. Frisch bevorzugt; TK 24 h im
+      Kühlschrank auftauen.
+- [ ] Jus-Balance: Verjus/Traubensaft 1:1 zu fruchtig-süß? Dann mehr Verjus, weniger
+      Saft und mehr Tomatenmark. Am besten beim Testlauf mit einer Backe probieren.
+- [ ] Glasier-Zeit bis ≥ 70 °C Kern kalibrieren (20–25 Min. geschätzt).
 - [ ] Bitter-Balance: Rosenkohl ist milder als der ursprünglich geplante
       Chicorée — fehlt dem Menü der herbe Gegenpol? Auf Testteller: evtl.
       wenige rohe Radicchio-Streifen für Farbe + Bitterkick. *(Tendenz laut
       Dritt-Feedback: unnötig — die frittierten Blätter bringen selbst genug
       Röst-/Bitternoten. Erst pur testen.)*
-- [ ] Rotwein-Reduktion vs. Verjus-Option in der Jus — Default bleibt Wein
-      (trocken reduziert), bei Unbehagen Verjus
 
 ---
 
@@ -761,25 +759,25 @@ Walnusscrumble-Reste.
 **Vortage:**
 - Saison-Teil (erledigt 09/2026): Tomaten salzen · Kurz mixen · Weg A: Püree einfrieren · Weg B: abtropfen und einfrieren
 - T-2: **Auftauen und klären: Tomaten-Püree-Block (Weg A) aus dem Gefrierfach ins Passiertuch
-  (Drip-Thaw braucht 24–48 h!)** · Parfait (herstellen, einfrieren) · Lammschulter salzen
+  (Drip-Thaw braucht 24–48 h!)** · Parfait (herstellen, einfrieren) · Ochsenbacken salzen
   (Dry-Brine, optional) · Knochen rösten (ggf. schon)
-- T-1: **Lammschulter und Jus: schmoren (3–3,5 h), zupfen, pressen; Schmorflüssigkeit
-  passieren und kalt stellen** · Mango-Gel · Walnusscrumble und Kaffee-Crumble · Ziegenkäse-Pralinen formen, Wälzmischung (ungewälzt) · Kaisergranat auftauen (im Kühlschrank) · Weg B:
+- T-1: **Ochsenbacken und Jus: anbraten, schmoren (3,5–4 h), in der Flüssigkeit
+  abkühlen lassen, über Nacht kalt stellen** · Mango-Gel · Walnusscrumble und Kaffee-Crumble · Ziegenkäse-Pralinen formen, Wälzmischung (ungewälzt) · Kaisergranat auftauen (im Kühlschrank) · Weg B:
   Tomatenwasser in den Kühlschrank zum Auftauen
 
 **Am Tag:**
-- Vormittags: Jus reduzieren (Fettdeckel ab, auf 250–300 ml) · Kaisergranat auslösen, Schalen einfrieren · Concassé
+- Vormittags: Entfetten und portionieren · Passieren · Jus reduzieren (auf \~300 ml) · Kaisergranat auslösen, Schalen einfrieren · Concassé
 - Nachmittags: Rosenkohlblätter lösen, Blätter blanchieren · Selleriepüree ·
-  Chips frittieren, Chips lagern (Sellerie, dann Rosenkohl — halten 1–2 h) · Schwänze antrocknen · Block temperieren und schneiden (1 h vor Gang 3) ·
+  Chips frittieren, Chips lagern (Sellerie, dann Rosenkohl — halten 1–2 h) · Schwänze antrocknen · Backen temperieren (1 h vor Gang 3) ·
   Ofen 80 °C für Teller
 - Gang 1 (0:00): Grundwürzung (1–2 h vor dem Gang) · Kalt abschmecken, Limette einrühren, Anrichten — kein Herd nötig
 - Gang 2 (+0:20): Pralinen wälzen (≤ 30 Min. vor dem Anrichten) · Verjus-Limetten-Beurre-blanc (\~20 Min. vor dem Gang) · Kaisergranat braten, Anrichten (\~8 Min. aktiv)
-- Gang 3 (+0:55): Ofen auf 140 °C, Blöcke anbraten, Durchwärmen 12–18 Min. bis ≥ 70 °C Kern (Thermometer-Alarm) · parallel Blätter, Jus, Chips · Anrichten
+- Gang 3 (+0:55): Ofen auf 140 °C, Glasieren und durchwärmen 20–25 Min. bis ≥ 70 °C Kern (Thermometer-Alarm) · parallel Blätter, Jus, Chips · Anrichten
 - Gang 4 (+1:45): Dessert-Service: Temperieren und Teller frosten (10–15 Min. vorher), Schneiden, Shaken, Am Tisch
 
-**Ofen-Plan (entschärft):** Chips werden frittiert, das Lamm ist geschmort —
-der Ofen macht am Abend nur 80 °C (Teller) und dann 140 °C (Blöcke
-durchwärmen). Der frühere Konflikt Karree/Chips/Teller existiert nicht mehr.
+**Ofen-Plan (entschärft):** Chips werden frittiert, die Backe ist geschmort —
+der Ofen macht am Abend nur 80 °C (Teller) und dann 140 °C (Backen
+glasieren). Der frühere Konflikt Karree/Chips/Teller existiert nicht mehr.
 
 ## To-do gesamt
 
@@ -791,9 +789,9 @@ durchwärmen). Der frühere Konflikt Karree/Chips/Teller existiert nicht mehr.
 - [ ] Testlauf Parfait (alkoholfrei mit 25 g Dextrose: Textur; Decaf-Qualität;
       Shakerato-Schaum; Schuss-Menge)
 - [ ] Probelauf Tomatenwasser: Weg A vs. Weg B verkosten
-- [ ] Lammquelle klären (Selgros vs. türkischen Metzger finden — Repo-Lücke);
-      Schulter mit Knochen 2–2,2 kg
-- [ ] Block-Bindung beim ersten Anbraten beobachten (Gelatine-Option)
+- [ ] Ochsenbacken-Quelle klären (Selgros anrufen: frisch/TK, Stückgröße; sonst
+      Metzger auf Bestellung), 1,6–2 kg + 1 kg Rinderknochen
+- [ ] Testlauf Jus ohne Alkohol (Verjus/Traubensaft-Balance) mit einer Backe
 - [x] Kinder-Dessert: **Rest Mango-Gel (Gang 2) + Kugel Vanilleeis (gekauft)**,
       optional Walnusscrumble-Reste. Dafür: kein Chili im Mango-Gel.
 - [ ] Nach den Testläufen: Abend-Zeitplan ausformulieren (absolute Uhrzeiten
@@ -815,12 +813,13 @@ durchwärmen). Der frühere Konflikt Karree/Chips/Teller existiert nicht mehr.
 - Garpunkt Schalentiere: [FDA — Safe Minimum Internal Temperatures](https://www.fda.gov/food/buy-store-serve-safe-food/safe-minimum-internal-temperatures) (63 °C / 145 °F für Fisch und Schalentiere, „opak“); Kaisergranat wird über \~70 °C gummiartig — deshalb Ausstieg bei 60–62 °C mit Carryover
 - Artbezeichnung: Kaisergranat = *Nephrops norvegicus* (auch „Langustine“, „Scampi“); argentinische Rotgarnele (*Pleoticus muelleri*) ist ein anderes Tier
 
-**Gang 3 — Lamm:**
-- Gepresste Lammschulter: Great British Chefs, „pressed lamb shoulder“ (mehrere Varianten — Prinzip: schmoren, zupfen, in Form pressen, kalt schneiden, anbraten); intern Schmor-Grundlagen aus [Lamm-Kleftiko](/gerichte/lamm-kleftiko.md)
-- Lammjus (Röstgrad, Mengen): [tobiaskocht — Lammjus](https://www.tobiaskocht.com/kochrezept/lamm-jus.html), [eat.de — Lammsoße mit Knochen](https://eat.de/rezept/lammsosse-mit-knochen-zubereiten/), [ichkoche.at — Lammjus](https://www.ichkoche.at/lammjus-rezept-1544)
+**Gang 3 — Ochsenbacke:**
+- Geschmorte Ochsenbacke (140 °C, \~3,5 Std., in der Sauce auskühlen, am nächsten Tag entfetten und einkochen): [lecker.de — Geschmorte Ochsenbäcken](https://www.lecker.de/geschmorte-ochsenbaecken-131526.html); Silberhaut/Sehnen: [Grillfürst — Geschmorte Ochsenbäckchen](https://www.grillfuerst.de/magazin/grillrezepte/geschmorte-ochsenbaeckchen/)
+- Jus ohne Alkohol (Traubensaft + Säure, Verjus als 1:1-Ersatz): [Tasting Table — How To Braise Meat Without Wine](https://www.tastingtable.com/1889849/how-to-braise-without-wine/), [Chowhound — Alcohol-Free Substitutes For Red Wine](https://www.chowhound.com/1947125/best-alcohol-free-red-wine-susbtitutes-recipes); Röstgrad und Saucen-Grammatik intern aus `technik/dunkle-bratensauce.md`
+- Wechsel Lamm → Ochsenbacke (11/2026): Lamm gab es gerade erst ([Lamm-Kleftiko](/gerichte/lamm-kleftiko.md), 10/2026); Backe ist magerer als Lammschulter oder Short Ribs und entlastet die Fett-Bilanz des Menüs
 - Selleriepüree in Milch: [küchegemacht — Selleriepüree](https://kuechegemacht.de/rezepte/selleriepueree-rezept/)
 - Rosenkohl-Chips frittiert: [Saveur — Fried Brussels Sprout Chips](https://www.saveur.com/article/Recipes/Fried-Brussel-Sprout-Chips-with-Sweet-Chili-Sauce)
-- Schwangerschaft: Kerntemperatur ≥ 70 °C, Alkohol-Restgehalt beim Kochen → [Leitfaden](/schwangerschaft/leitfaden.md)
+- Schwangerschaft: Kerntemperatur ≥ 70 °C, kein Alkohol in der Jus → [Leitfaden](/schwangerschaft/leitfaden.md)
 
 **Gang 4 — Parfait:**
 - Pâte à bombe & Falttechnik: [Kitchen Projects #34 — All About Parfait (Nicola Lamb)](https://kitchenprojects.substack.com/p/kitchen-project-34-all-about-parfait)
@@ -831,12 +830,12 @@ durchwärmen). Der frühere Konflikt Karree/Chips/Teller existiert nicht mehr.
 
 **Zentrale Entscheidungen:**
 - **Umbau statt Sonderportionen (09/2026):** Schwangerschaft + GDM der Frau
-  → Kaisergranat statt Jakobsmuschel (durchgegart ohne Verlust), Schmor-Block
+  → Kaisergranat statt Jakobsmuschel (durchgegart ohne Verlust), Schmorgericht
   statt Karree (durch ≥ 70 °C, entlastet zugleich den Abend), Alkohol nur noch
   im optionalen Schuss (das Konzept trug das schon), Verjus-Beurre-blanc und
   Decaf durchgehend für alle.
 - **Schmoren und Jus als ein Prozess:** Schmorflüssigkeit = Jus. Spart den
-  separaten Fond und gibt der Jus die Schulter mit.
+  separaten Fond und gibt der Jus die Gelatine der Backe mit.
 - **Chips frittiert statt Ofen:** krosser, hält länger, Ofen bleibt frei.
 - **Zucker im Parfait 70 g + 25 g Dextrose:** Kälte dämpft Süße
   überproportional; ohne Alkohol übernimmt die Dextrose die Gefrierpunkt-
@@ -854,17 +853,18 @@ durchwärmen). Der frühere Konflikt Karree/Chips/Teller existiert nicht mehr.
 |---|---|---|---|---|---|
 | Butter | — | \~220 g (Beurre blanc 170 + Crumble 20 + Arrosieren 2 × 15) | \~90 g (Püree 45 + Jus 25 + Blätter 20) | 30 g (Crumble) | **\~340 g → 500 g kaufen** |
 | Limetten | ½–1 (Saft 10–15 ml) | 1 (Beurre blanc) + ½ (Gel) + 1 Reserve | — | — | **4 Stück** |
-| Zitronen | — | — | 1 TL Saft (Püree) + Abrieb ½ (Block) + Spritzer (Blätter) | — | **2 Stück** |
-| Verjus | — | 110 ml | optional 150 ml (statt Rotwein) | — | **110–260 ml → 500 ml** |
+| Zitronen | — | — | 1 TL Saft (Püree) + Spritzer (Blätter) | — | **1 Stück** |
+| Verjus | — | 110 ml | 150 ml (Reduktion) + 1–2 TL (Abschmecken) | — | **\~270 ml → 500 ml** |
 | Weißweinessig | — | 25 ml | — | — | **25 ml (Vorrat)** |
-| Rotwein | — | — | 300 ml (in Schüben trocken reduziert) | — | **1 Flasche** |
+| Roter Traubensaft | — | — | 150 ml (Reduktion) | — | **1 Flasche** |
 | Sahne | — | 2 EL (Stabilisierung) | — | 300 ml | **\~330 ml → 500 ml kaufen** |
 | Decaf-Espresso | — | — | — | 90 ml Masse + \~30 ml pro Schuss (5 P. ≈ 150 ml) + 1 TL gemahlen | **\~250 ml gebrüht, 2–3 Chargen; 250 g Bohnen reichen weit** |
 | Wodka | — | — | — | 15 ml pro Trinker (3 → 45 ml) | **\~50 ml + Testlauf → kleine Flasche** |
 | Kahlúa | — | — | — | 10 ml pro Trinker (3 → 30 ml) | **\~35 ml + Testlauf → kleine Flasche** |
 | Zucker / Dextrose | — | 1–2 EL (Gel) | — | 70 g + 25 g Dextrose (Masse) + 25 g brauner (Crumble) + Sirup \~20 g | **\~150 g Zucker, 25 g Dextrose** |
 | Kaisergranat | — | 12 Stück (\~1 kg): 2 × 4 Erw. + 1 Kind + 2–3 Reserve/Test | — | — | **12 Stück TK** |
-| Lamm | — | — | Schulter 2–2,2 kg mit Knochen + 500 g Knochen | — | **\~2,7 kg** |
+| Ochsenbacke | — | — | 1,6–2 kg roh (5 Portionen à \~150 g gegart) | — | **1,6–2 kg** |
+| Rinderknochen | — | — | 1 kg (Jus) | — | **1 kg** |
 | Knollensellerie | — | — | 600 g Püree + 150 g Chips + 100 g Schmoransatz + Schälverlust | — | **1 Knolle \~1,2 kg** |
 | Walnüsse | — | 30 g Praline + 50 g Crumble | — | — | **80 g** |
 | Eier | — | — | — | 4 Eigelb | **6 kaufen** |

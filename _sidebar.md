@@ -1,7 +1,7 @@
 - [Ideen-Backlog](/ideen.md)
 - **🚧 in arbeit**
   - [Burrito-Baukasten — drei Füllungen, als Burrito oder Bowl (3 Portionen)](/mealprep/burrito-baukasten.md)
-  - [Menü November — Tomatenwasser / Kaisergranat / Schmorlamm / Espresso-Parfait](/menues/menue-november.md)
+  - [Menü November — Tomatenwasser / Kaisergranat / Ochsenbacke / Espresso-Parfait](/menues/menue-november.md)
 - **backen**
   - [✅ Vollkornbrötchen auf Vorrat — Weizen als Leitrezept, Dinkel und Weizen-Roggen als Varianten (12 Stück)](/backen/vollkornbroetchen.md)
 - **desserts**

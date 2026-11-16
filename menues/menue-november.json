@@ -3,9 +3,9 @@
   "schemaVersion": "0.1",
   "id": "menues/menue-november",
   "kind": "menu",
-  "title": "Menü November — Tomatenwasser / Kaisergranat / Schmorlamm / Espresso-Parfait",
+  "title": "Menü November — Tomatenwasser / Kaisergranat / Ochsenbacke / Espresso-Parfait",
   "status": "wip",
-  "statusNote": "> [!NOTE]\n> **Status: In Arbeit** — alle vier Rezepte sind vollständig ausgearbeitet\n> (Stand 08/2026, recherchiert; **Umbau 09/2026 für Schwangerschaft + GDM**,\n> s. Box unten), aber Testläufe stehen aus: Gang 2 (Kaisergranat-Garpunkt +\n> Verjus-Beurre-blanc), Parfait (alkoholfrei, Decaf, Textur), Tomatenwasser\n> (Weg A gegen Weg B verkosten). Abend-Zeitplan ist bewusst nur ein Skelett —\n> Feinschliff nach den Testläufen. 4–5 Personen (2 Erw. + Gäste + Kind 3 J.).\n> Tomatenwasser liegt seit 09/2026 in beiden Klärwegen im Gefrierfach.\n\n> [!NOTE]\n> **Schwangerschaft + Gestationsdiabetes (Umbau 09/2026):** Die Frau isst mit,\n> deshalb ist das ganze Menü umgebaut statt Sonderportionen — geprüft gegen den\n> [Leitfaden](/schwangerschaft/leitfaden.md), keine Kopie in `schwangerschaft/`.\n> **Gang 1:** Sherry gestrichen; Worcestershire (fermentierte, pasteurisierte\n> Fertigsauce, 6–8 Tropfen) unkritisch. **Gang 2:** Kaisergranat statt glasiger\n> Jakobsmuschel — wird ohnehin durchgegart serviert (63–65 °C Kern), Beurre\n> blanc für alle auf Verjus statt Wein/Noilly, Ziegenfrischkäse pasteurisiert.\n> **Gang 3:** geschmorte, gepresste Lammschulter statt rosa Karree — geschmort\n> und am Abend auf ≥ 70 °C Kern durchgewärmt; Rotwein in der Jus wird in\n> Schüben bis fast trocken reduziert, bevor Flüssigkeit dazukommt (Verjus-\n> Option im Rezept). **Gang 4:** kein Alkohol in der Parfait-Masse, die Pâte à\n> bombe wird auf 75–82 °C gezogen (pasteurisiert, kein rohes Ei), durchgehend\n> Decaf; Schuss am Tisch als Espresso-Shakerato (alkoholfrei) oder\n> Espresso-Martini. **GDM:** Menü ist praktisch stärkefrei; KH nur in den\n> Mango-Gel-Punkten und im Dessert (kleine Scheibe + Crumble \\~20 g KH) → nach\n> dem Essen messen.",
+  "statusNote": "> [!NOTE]\n> **Status: In Arbeit** — alle vier Rezepte sind vollständig ausgearbeitet\n> (Stand 08/2026, recherchiert; **Umbau 09/2026 für Schwangerschaft + GDM**,\n> s. Box unten), aber Testläufe stehen aus: Gang 2 (Kaisergranat-Garpunkt +\n> Verjus-Beurre-blanc), Parfait (alkoholfrei, Decaf, Textur), Tomatenwasser\n> (Weg A gegen Weg B verkosten). Abend-Zeitplan ist bewusst nur ein Skelett —\n> Feinschliff nach den Testläufen. 4–5 Personen (2 Erw. + Gäste + Kind 3 J.).\n> Tomatenwasser liegt seit 09/2026 in beiden Klärwegen im Gefrierfach.\n\n> [!NOTE]\n> **Schwangerschaft + Gestationsdiabetes (Umbau 09/2026):** Die Frau isst mit,\n> deshalb ist das ganze Menü umgebaut statt Sonderportionen — geprüft gegen den\n> [Leitfaden](/schwangerschaft/leitfaden.md), keine Kopie in `schwangerschaft/`.\n> **Gang 1:** Sherry gestrichen; Worcestershire (fermentierte, pasteurisierte\n> Fertigsauce, 6–8 Tropfen) unkritisch. **Gang 2:** Kaisergranat statt glasiger\n> Jakobsmuschel — wird ohnehin durchgegart serviert (63–65 °C Kern), Beurre\n> blanc für alle auf Verjus statt Wein/Noilly, Ziegenfrischkäse pasteurisiert.\n> **Gang 3:** geschmorte Ochsenbacke statt rosa Karree (11/2026 statt der\n> zwischenzeitlich geplanten Lammschulter) — am Abend in der Jus auf ≥ 70 °C Kern\n> glasiert; Jus **ohne Alkohol** (Verjus + roter Traubensaft statt Rotwein, auch\n> kein verkochter Wein). **Gang 4:** kein Alkohol in der Parfait-Masse, die Pâte à\n> bombe wird auf 75–82 °C gezogen (pasteurisiert, kein rohes Ei), durchgehend\n> Decaf; Schuss am Tisch als Espresso-Shakerato (alkoholfrei) oder\n> Espresso-Martini. **GDM:** Menü ist praktisch stärkefrei; KH nur in den\n> Mango-Gel-Punkten und im Dessert (kleine Scheibe + Crumble \\~20 g KH) → nach\n> dem Essen messen.",
   "yields": {
     "text": "?"
   },
@@ -57,23 +57,23 @@
       "note": "\\~1 kg, Größe 10–15 St./kg; Etikett: Nephrops norvegicus; nicht vorgekocht, keine argentinischen Rotgarnelen. Fallback: Selgros TK"
     },
     {
-      "id": "lammschulter",
-      "name": "Lammschulter **mit Knochen**",
+      "id": "ochsenbacken",
+      "name": "Ochsenbacken",
       "store": "Selgros",
       "buy": {
-        "text": "2–2,2 kg"
+        "text": "1,6–2 kg"
       },
       "courses": [
         "gang-3"
       ],
-      "note": "Alternative: türkischer Metzger, s. Offen"
+      "note": "5–6 Stück; frisch bevorzugt, TK okay; Alternative: Metzger auf Bestellung"
     },
     {
-      "id": "lammknochen",
-      "name": "Lammknochen",
+      "id": "rinderknochen",
+      "name": "Rinderknochen",
       "store": "Selgros",
       "buy": {
-        "text": "gesägt, 500 g"
+        "text": "gesägt, 1 kg"
       },
       "courses": [
         "gang-3"
@@ -112,12 +112,12 @@
       ]
     },
     {
-      "id": "zitronen",
-      "name": "Zitronen",
+      "id": "zitrone",
+      "name": "Zitrone",
       "store": "REWE Center",
       "group": "Obst & Gemüse",
       "buy": {
-        "text": "2 Stück"
+        "text": "1 Stück"
       },
       "courses": [
         "gang-3"
@@ -237,15 +237,6 @@
     {
       "id": "thymian",
       "name": "Thymian",
-      "store": "REWE Center",
-      "group": "Obst & Gemüse",
-      "courses": [
-        "gang-2"
-      ]
-    },
-    {
-      "id": "rosmarin",
-      "name": "Rosmarin",
       "store": "REWE Center",
       "group": "Obst & Gemüse",
       "courses": [
@@ -392,17 +383,17 @@
       "note": "falls kein Vorrat"
     },
     {
-      "id": "rotwein",
-      "name": "Rotwein",
+      "id": "traubensaft",
+      "name": "Roter Traubensaft",
       "store": "REWE Center",
       "group": "Getränke",
       "buy": {
-        "text": "kräftig, 1 Flasche"
+        "text": "1 Flasche"
       },
       "courses": [
         "gang-3"
       ],
-      "note": "alkoholfreie Option: 150 ml Verjus + 150 ml Wasser; Jus Gang 3 (300 ml, wird in Schüben trocken reduziert)"
+      "note": "Direktsaft, ohne Zuckerzusatz; Jus Gang 3 (150 ml)"
     },
     {
       "id": "wodka",
@@ -521,18 +512,6 @@
       "pantry": true
     },
     {
-      "id": "gelatine",
-      "name": "Gelatine",
-      "store": "Vorrat",
-      "buy": {
-        "text": "1 Blatt"
-      },
-      "courses": [
-        "gang-3"
-      ],
-      "pantry": true
-    },
-    {
       "id": "zucker",
       "name": "Zucker",
       "store": "Vorrat",
@@ -639,7 +618,7 @@
       "type": "markdown",
       "title": "Menüfolge & Dramaturgie",
       "level": 2,
-      "markdown": "| # | Gang | Charakter |\n|---|------|-----------|\n| 1 | **Amuse: Klares Tomatenwasser „feine Bloody Mary“** — Concassé-Einlage, kurze präzise Schärfe | Statement-Einstieg: klar, kalt, kurzer Kick |\n| 2 | **Kaisergranat, Verjus-Limetten-Beurre-blanc, Mango-Gel, Ziegenkäse-Praline** | Sanfte Pause nach dem Statement: süß, cremig, säure-balanciert |\n| 3 | **Geschmorte, gepresste Lammschulter, Selleriepüree, Rosenkohl zweierlei, Lammjus** | Erdig, herzhaft, Jus statt Sahne — knuspriger Block, zartes Inneres |\n| 4 | **Espresso-Parfait (Decaf) mit Schuss am Tisch** — Espresso-Martini oder Shakerato | Kräftiges Finale + Show-Moment |\n\n**Bögen & Balance-Checks:**\n- Selleriesalz im Amuse ↔ Selleriepüree im Hauptgang (bewusster Bogen)\n- Schärfe nur in Gang 1, **kurz und präzise** (Tropfen Chiliöl) — kein lingerndes\n  Brennen vor dem feinen Kaisergranat\n- Fett-Verteilung: Beurre blanc (2) und Parfait (4) sind reich, Schmorlamm (3)\n  ist fetter als Karree → Amuse klar/fettfrei, Püree mit Milch, Jus entfettet\n  und nur montiert, Lammblock knusprig ausgebraten statt in Sauce\n- Säure-Führung in Gang 2: die **Beurre blanc führt die Limette**, das Mango-Gel\n  bleibt fruchtig-mild — nicht beide Komponenten sauer abschmecken\n- Keine Frucht-/Exotik-Doppelung: Mango nur in Gang 2, Dessert Kaffee\n- Alkohol nur noch im optionalen Espresso-Martini-Schuss (Gang 4) — Menü ist\n  sonst komplett alkoholfrei\n- Farbe: Knallgrüne Rosenkohlblätter brechen den sonst beigen Hauptgang"
+      "markdown": "| # | Gang | Charakter |\n|---|------|-----------|\n| 1 | **Amuse: Klares Tomatenwasser „feine Bloody Mary“** — Concassé-Einlage, kurze präzise Schärfe | Statement-Einstieg: klar, kalt, kurzer Kick |\n| 2 | **Kaisergranat, Verjus-Limetten-Beurre-blanc, Mango-Gel, Ziegenkäse-Praline** | Sanfte Pause nach dem Statement: süß, cremig, säure-balanciert |\n| 3 | **Geschmorte Ochsenbacke, Selleriepüree, Rosenkohl zweierlei, Jus ohne Alkohol** | Erdig, herzhaft, Jus statt Sahne — glänzend glasierte, löffelzarte Backe, Crunch von den Chips |\n| 4 | **Espresso-Parfait (Decaf) mit Schuss am Tisch** — Espresso-Martini oder Shakerato | Kräftiges Finale + Show-Moment |\n\n**Bögen & Balance-Checks:**\n- Selleriesalz im Amuse ↔ Selleriepüree im Hauptgang (bewusster Bogen)\n- Schärfe nur in Gang 1, **kurz und präzise** (Tropfen Chiliöl) — kein lingerndes\n  Brennen vor dem feinen Kaisergranat\n- Fett-Verteilung: Beurre blanc (2) und Parfait (4) sind reich → Ochsenbacke (3)\n  ist mager (Kollagen statt Fett), Amuse klar/fettfrei, Püree mit Milch, Jus\n  entfettet und nur montiert\n- Säure-Führung in Gang 2: die **Beurre blanc führt die Limette**, das Mango-Gel\n  bleibt fruchtig-mild — nicht beide Komponenten sauer abschmecken\n- Keine Frucht-/Exotik-Doppelung: Mango nur in Gang 2, Dessert Kaffee\n- Alkohol nur noch im optionalen Espresso-Martini-Schuss (Gang 4) — Menü ist\n  sonst komplett alkoholfrei, auch die Jus (kein verkochter Wein)\n- Farbe: Knallgrüne Rosenkohlblätter brechen den sonst beigen Hauptgang"
     },
     {
       "type": "shopping",
@@ -1460,8 +1439,8 @@
                         "source": "ca. 5 Min.",
                         "estimated": true
                       },
-                      "text": "Wälzmischung bereitstellen: 30 g Walnüsse fein gehackt + 2 EL fein gehackte Kräuter (Petersilie, Schnittlauch, etwas Thymian).",
-                      "action": "Wälzmischung bereitstellen: 30 g Walnüsse fein gehackt + 2 EL fein gehackte Kräuter (Petersilie, Schnittlauch, etwas Thymian).",
+                      "text": "Wälzmischung bereitstellen: 30 g Walnüsse fein gehackt + 1 EL fein gehackte Petersilie, 1 EL fein geschnittener Schnittlauch und ½ TL Thymianblättchen.",
+                      "action": "Wälzmischung bereitstellen: 30 g Walnüsse fein gehackt + 1 EL fein gehackte Petersilie, 1 EL fein geschnittener Schnittlauch und ½ TL Thymianblättchen.",
                       "ingredients": [
                         {
                           "ref": "walnuesse",
@@ -1472,9 +1451,27 @@
                           }
                         },
                         {
+                          "ref": "petersilie",
+                          "amount": {
+                            "text": "1 EL fein gehackte Petersilie",
+                            "value": 1.0,
+                            "unit": "EL"
+                          }
+                        },
+                        {
+                          "ref": "schnittlauch",
+                          "amount": {
+                            "text": "1 EL fein geschnittener Schnittlauch",
+                            "value": 1.0,
+                            "unit": "EL"
+                          }
+                        },
+                        {
                           "ref": "thymian",
                           "amount": {
-                            "text": "etwas Thymian"
+                            "text": "½ TL Thymianblättchen",
+                            "value": 0.5,
+                            "unit": "TL"
                           }
                         }
                       ],
@@ -2065,13 +2062,13 @@
         {
           "id": "gang-3",
           "kind": "course",
-          "title": "3. Geschmorte, gepresste Lammschulter, Selleriepüree, Rosenkohl zweierlei, Lammjus",
+          "title": "3. Geschmorte Ochsenbacke, Selleriepüree, Rosenkohl zweierlei, Jus ohne Alkohol",
           "sections": [
             {
               "type": "markdown",
               "title": "Teller-Logik",
               "level": "bold",
-              "markdown": "**Teller-Logik:** Lammschulter am Vortag geschmort, gezupft und in der\nKastenform gepresst; am Abend werden Blöcke rundum knusprig gebraten und im\nOfen auf ≥ 70 °C Kern durchgewärmt — Restaurant-Format („pressed lamb\nshoulder“), sauber zu tellern, und die Schwangerschafts-Regel „durch“ ist\ndamit automatisch erfüllt, ohne dass irgendwer trockenes Fleisch bekommt.\nSchmorflüssigkeit und Jus sind **ein** Prozess. Selleriepüree bewusst leicht\n(Milch statt Sahne — Fett-Bilanz, Schmorlamm ist fetter als Karree), Rosenkohl\nzweigleisig (kross UND knallgrün geht nicht im selben Blatt), Jus statt\nSahnesauce. Sellerie-Chips als zweites Crunch-Element. November = volle\nRosenkohl-Saison. Nebeneffekt: Der Abend ist entspannt — kein Rückwärtsgaren,\nkeine Ofen-Kollision, Gang 3 ist zu 90 % vom Vortag.",
+              "markdown": "**Teller-Logik:** Ochsenbacke wird am Vortag im Ganzen geschmort und kühlt **in\nder Schmorflüssigkeit** aus. Am Abend wird sie portioniert, im Ofen mit der Jus\nglasiert und auf ≥ 70 °C Kern gebracht. Damit ist die Schwangerschafts-Regel „durch“\nerfüllt, ohne dass das Fleisch austrocknet. Backe ist mager, aber extrem\nkollagenreich: Sie wird „löffelzart“ und glänzend, ohne dass viel Fett auf dem Teller\nlandet. Zwischen Beurre blanc (Gang 2) und Parfait (Gang 4) ist das die leichtere\nWahl als die ursprünglich geplante Lammschulter. **Die Jus ist komplett alkoholfrei**\n(Verjus + roter Traubensaft statt Rotwein): kein Alkohol im Gericht, auch kein\nverkochter. Schmorflüssigkeit und Jus sind **ein** Prozess. Selleriepüree bewusst\nleicht (Milch statt Sahne), Rosenkohl zweigleisig (kross UND knallgrün geht nicht im\nselben Blatt), Sellerie- und Rosenkohl-Chips liefern den Crunch. November = volle\nRosenkohl-Saison. Nebeneffekt: Der Abend ist entspannt — kein Anbraten, nur Ofen mit\nThermometer; Gang 3 ist zu 90 % vom Vortag.",
               "tags": [
                 "teller-logik"
               ]
@@ -2081,29 +2078,32 @@
               "title": "Zubereitung",
               "tasks": [
                 {
-                  "id": "lammschulter-und-jus",
-                  "name": "Lammschulter und Jus",
+                  "id": "ochsenbacken-und-jus",
+                  "name": "Ochsenbacken und Jus",
                   "steps": [
                     {
                       "id": "gang-3-knochen-roesten",
                       "label": "1",
-                      "heading": "**1. Knochen rösten (20–30 Min.)**",
+                      "heading": "**1. Knochen rösten (30–40 Min.)**",
                       "title": "Knochen rösten",
                       "duration": {
-                        "min": "PT20M",
-                        "max": "PT30M",
-                        "source": "20–30 Min."
+                        "min": "PT30M",
+                        "max": "PT40M",
+                        "source": "30–40 Min."
                       },
-                      "text": "Ofen 220 °C: 500 g Lammknochen dünn mit Öl bepinseln, einlagig aufs Blech, 20–30 Min. **goldbraun** rösten — nicht tiefdunkel! Anders als beim Schweinefond (→ `technik/dunkle-bratensauce.md`): Lammknochen werden dunkel geröstet **bitter**. Die Saucen-Grammatik von dort (Reduktion in Schüben, Gewürze ans Ende, Montage) gilt trotzdem.",
-                      "action": "Ofen 220 °C: 500 g Lammknochen dünn mit Öl bepinseln, einlagig aufs Blech, 20–30 Min.",
+                      "text": "Ofen 220 °C: 1 kg Rinderknochen (gesägt) dünn mit Öl bepinseln, einlagig aufs Blech, 30–40 Min. **tief dunkelbraun** rösten. Rinderknochen vertragen den dunklen Röstgrad (anders als Lamm), die Saucen-Grammatik aus `technik/dunkle-bratensauce.md` gilt (Reduktion in Schüben, Gewürze ans Ende, Montage). Fett vom Blech abgießen, den Bratsatz mit 100 ml Wasser loskratzen und aufheben (kommt in Schritt 5 dazu).",
+                      "action": "Ofen 220 °C: 1 kg Rinderknochen (gesägt) dünn mit Öl bepinseln, einlagig aufs Blech, 30–40 Min.",
+                      "limits": [
+                        "tief dunkelbraun"
+                      ],
                       "timers": [
                         {
                           "label": "Knochen rösten",
                           "duration": {
-                            "min": "PT20M",
-                            "max": "PT30M"
+                            "min": "PT30M",
+                            "max": "PT40M"
                           },
-                          "text": "20–30 Min."
+                          "text": "30–40 Min."
                         }
                       ],
                       "temps": [
@@ -2115,11 +2115,19 @@
                       ],
                       "ingredients": [
                         {
-                          "ref": "lammknochen",
+                          "ref": "rinderknochen",
                           "amount": {
-                            "text": "500 g Lammknochen",
-                            "value": 500.0,
-                            "unit": "g"
+                            "text": "1 kg Rinderknochen",
+                            "value": 1.0,
+                            "unit": "kg"
+                          }
+                        },
+                        {
+                          "ref": "wasser",
+                          "amount": {
+                            "text": "100 ml Wasser",
+                            "value": 100.0,
+                            "unit": "ml"
                           }
                         }
                       ],
@@ -2134,35 +2142,47 @@
                       "after": []
                     },
                     {
-                      "id": "gang-3-schulter-salzen-und-anbraten",
+                      "id": "gang-3-backen-parieren-und-anbraten",
                       "label": "2",
-                      "heading": "**2. Schulter salzen und anbraten (ca. 15 Min.)**",
-                      "title": "Schulter salzen und anbraten",
+                      "heading": "**2. Backen parieren und anbraten (ca. 25 Min.)**",
+                      "title": "Backen parieren und anbraten",
                       "duration": {
-                        "typical": "PT15M",
-                        "source": "ca. 15 Min.",
+                        "typical": "PT25M",
+                        "source": "ca. 25 Min.",
                         "estimated": true
                       },
-                      "text": "Lammschulter (2–2,2 kg mit Knochen) trockentupfen, Fettdeckel auf \\~5 mm parieren (Parüren zu den Knochen), rundum mit 2,5–3 TL Salz (\\~15–18 g) würzen — gern schon am T-2 als Dry-Brine unabgedeckt im Kühlschrank. Im Bräter in 1 EL Öl bei hoher Hitze rundum tief braun anbraten (\\~10 Min.), herausnehmen.",
-                      "action": "Lammschulter (2–2,2 kg mit Knochen) trockentupfen, Fettdeckel auf \\~5 mm parieren (Parüren zu den Knochen), rundum mit 2,5–3 TL Salz (\\~15–18 g) würzen — gern schon am T-2 als Dry-Brine unabgedeckt im Kühlschrank.",
+                      "text": "1,6–2 kg Ochsenbacken (5–6 Stück) von groben Fett- und Sehnenauflagen befreien. Die feine Silberhaut bleibt dran: Sie hält die Backe beim Schmoren zusammen und lässt sich gegart in Sekunden abziehen. Trockentupfen, rundum mit 2 TL Salz (\\~12 g) würzen — gern schon am T-2 als Dry-Brine unabgedeckt im Kühlschrank. Bräter auf der gekoppelten Bräterzone, 1 EL Öl, bei hoher Hitze **in 2 Chargen** rundum tief braun anbraten (\\~3–4 Min. pro Seite), herausnehmen.",
+                      "action": "1,6–2 kg Ochsenbacken (5–6 Stück) von groben Fett- und Sehnenauflagen befreien.",
+                      "limits": [
+                        "in 2 Chargen"
+                      ],
                       "timers": [
                         {
-                          "label": "Schulter salzen und anbraten",
+                          "label": "Backen parieren und anbraten",
                           "duration": {
-                            "typical": "PT10M",
+                            "min": "PT3M",
+                            "max": "PT4M",
                             "estimated": true
                           },
-                          "text": "\\~10 Min."
+                          "text": "\\~3–4 Min."
                         }
                       ],
                       "ingredients": [
                         {
+                          "ref": "ochsenbacken",
+                          "amount": {
+                            "text": "1,6–2 kg Ochsenbacken",
+                            "value": 1.6,
+                            "unit": "kg",
+                            "max": 2.0
+                          }
+                        },
+                        {
                           "ref": "salz",
                           "amount": {
-                            "text": "2,5–3 TL Salz",
-                            "value": 2.5,
-                            "unit": "TL",
-                            "max": 3.0
+                            "text": "2 TL Salz",
+                            "value": 2.0,
+                            "unit": "TL"
                           }
                         },
                         {
@@ -2171,15 +2191,6 @@
                             "text": "1 EL Öl",
                             "value": 1.0,
                             "unit": "EL"
-                          }
-                        },
-                        {
-                          "ref": "lammschulter",
-                          "amount": {
-                            "text": "2–2,2 kg",
-                            "value": 2.0,
-                            "unit": "kg",
-                            "max": 2.2
                           }
                         }
                       ],
@@ -2190,7 +2201,7 @@
                           "units": 1
                         }
                       ],
-                      "attention": "active",
+                      "attention": "attended",
                       "after": []
                     },
                     {
@@ -2203,7 +2214,7 @@
                         "source": "ca. 10 Min.",
                         "estimated": true
                       },
-                      "text": "Im selben Bräter 150 g Zwiebel, 100 g Karotte und 100 g Sellerie (von der Püree-Knolle) grob gewürfelt tief braun anrösten. 1 EL (15 g) Tomatenmark zugeben, 1–2 Min. mitrösten, **ständig rühren** (verbrannt = bitter).",
+                      "text": "Im selben Bräter 150 g Zwiebel, 100 g Karotte und 100 g Sellerie (von der Püree-Knolle) grob gewürfelt tief braun anrösten. 2 EL (30 g) Tomatenmark zugeben, 1–2 Min. mitrösten, **ständig rühren** (verbrannt = bitter). Mehr Tomatenmark als im Weinrezept üblich: Es ersetzt einen Teil der Tiefe, die sonst der Rotwein bringt.",
                       "action": "Im selben Bräter 150 g Zwiebel, 100 g Karotte und 100 g Sellerie (von der Püree-Knolle) grob gewürfelt tief braun anrösten.",
                       "limits": [
                         "ständig rühren"
@@ -2246,8 +2257,8 @@
                         {
                           "ref": "tomatenmark",
                           "amount": {
-                            "text": "1 EL (15 g) Tomatenmark",
-                            "value": 1.0,
+                            "text": "2 EL (30 g) Tomatenmark",
+                            "value": 2.0,
                             "unit": "EL"
                           }
                         }
@@ -2262,29 +2273,32 @@
                       "attention": "attended"
                     },
                     {
-                      "id": "gang-3-rotwein-reduktion",
+                      "id": "gang-3-verjus-traubensaft-reduktion",
                       "label": "4",
-                      "heading": "**4. Rotwein-Reduktion (ca. 15 Min.)**",
-                      "title": "Rotwein-Reduktion",
+                      "heading": "**4. Verjus-Traubensaft-Reduktion (ca. 15 Min.)**",
+                      "title": "Verjus-Traubensaft-Reduktion",
                       "duration": {
                         "typical": "PT15M",
                         "source": "ca. 15 Min.",
                         "estimated": true
                       },
-                      "text": "Mit 100 ml Rotwein ablöschen und **fast trocken** einkochen. Zweimal wiederholen (insgesamt 300 ml) — in Etappen reduziert dominiert die Wein-Säure nicht, und der Alkohol ist praktisch komplett verkocht, bevor Flüssigkeit dazukommt (Schwangerschaft: das ist der Grund, warum der Wein hier bleiben darf).\n*(Null-Risiko-Option: 150 ml Verjus + 150 ml Wasser statt Wein, gleich reduziert — Jus wird etwas flacher.)*",
-                      "action": "Mit 100 ml Rotwein ablöschen und **fast trocken** einkochen.",
-                      "limits": [
-                        "fast trocken"
-                      ],
-                      "why": "Null-Risiko-Option: 150 ml Verjus + 150 ml Wasser statt Wein, gleich reduziert — Jus wird etwas flacher.",
+                      "text": "150 ml Verjus und 150 ml roten Traubensaft (Direktsaft, ohne Zuckerzusatz) mischen. In drei Schüben à 100 ml ablöschen, Bratsatz loskratzen und jeweils bei **mittlerer** Hitze sirupös-glänzend, fast trocken einkochen. Der Traubensaft bringt Farbe, Körper und Frucht, der Verjus die Säure: zusammen die Rolle des Rotweins, ganz ohne Alkohol. Kein alkoholfreier Wein (enthält bis 0,5 %).\n\n> **Achtung:** Der Zucker im Traubensaft karamellisiert schneller als Wein — nicht auf\n> voller Hitze reduzieren, bei Sirup-Konsistenz kommt der nächste Schub. GDM: \\~24 g\n> Zucker auf die ganze Jus, ≈ 4–5 g pro Teller.",
+                      "action": "150 ml Verjus und 150 ml roten Traubensaft (Direktsaft, ohne Zuckerzusatz) mischen.",
                       "ingredients": [
                         {
-                          "ref": "rotwein",
+                          "ref": "verjus",
                           "amount": {
-                            "text": "100 ml Rotwein",
-                            "value": 100.0,
-                            "unit": "ml",
-                            "times": 3
+                            "text": "150 ml Verjus",
+                            "value": 150.0,
+                            "unit": "ml"
+                          }
+                        },
+                        {
+                          "ref": "traubensaft",
+                          "amount": {
+                            "text": "150 ml roten Traubensaft",
+                            "value": 150.0,
+                            "unit": "ml"
                           }
                         }
                       ],
@@ -2298,7 +2312,7 @@
                       "attention": "attended",
                       "timers": [
                         {
-                          "label": "Rotwein-Reduktion",
+                          "label": "Verjus-Traubensaft-Reduktion",
                           "duration": {
                             "typical": "PT15M"
                           },
@@ -2309,40 +2323,49 @@
                     {
                       "id": "gang-3-schmoren",
                       "label": "5",
-                      "heading": "**5. Schmoren (3–3,5 Std., passiv)**",
+                      "heading": "**5. Schmoren (3,5–4 Std., passiv)**",
                       "title": "Schmoren",
                       "duration": {
-                        "min": "PT3H",
-                        "max": "PT3H30M",
-                        "source": "3–3,5 Std."
+                        "min": "PT3H30M",
+                        "max": "PT4H",
+                        "source": "3,5–4 Std."
                       },
                       "attention": "passive",
-                      "text": "Knochen und Schulter in den Bräter, kaltes Wasser bis \\~⅔ Höhe der Schulter angießen (\\~1–1,5 L), 1 Lorbeerblatt, 2 Zweige Thymian, 4 angedrückte Knoblauchzehen. Aufkochen, Schaum abschöpfen, Deckel drauf, im Ofen bei **150 °C 3–3,5 Std.** schmoren, bis das Fleisch vom Knochen fällt (Gabel dreht sich ohne Widerstand). Nach der Hälfte einmal wenden.",
-                      "action": "Knochen und Schulter in den Bräter, kaltes Wasser bis \\~⅔ Höhe der Schulter angießen (\\~1–1,5 L), 1 Lorbeerblatt, 2 Zweige Thymian, 4 angedrückte Knoblauchzehen.",
+                      "text": "Knochen und Backen in den Bräter, die 100 ml Blech-Bratsatz dazu, kaltes Wasser angießen, bis die Backen knapp bedeckt sind (\\~1,5 L). 1 Lorbeerblatt, 3 Zweige Thymian und 4 angedrückte Knoblauchzehen dazu. Aufkochen, Schaum abschöpfen, Deckel drauf, im Ofen bei **140 °C 3,5–4 Std.** schmoren. Nach der Hälfte die Backen wenden. Fertig, wenn sich eine Gabel ohne Widerstand dreht — die Backe soll aber noch ihre Form halten, nicht zerfallen.",
+                      "action": "Knochen und Backen in den Bräter, die 100 ml Blech-Bratsatz dazu, kaltes Wasser angießen, bis die Backen knapp bedeckt sind (\\~1,5 L).",
                       "limits": [
-                        "150 °C 3–3,5 Std."
+                        "140 °C 3,5–4 Std."
                       ],
                       "cues": [
-                        "bis das Fleisch vom Knochen fällt (Gabel dreht sich ohne Widerstand"
+                        "bis die Backen knapp bedeckt sind (\\~1"
                       ],
                       "timers": [
                         {
                           "label": "Schmoren",
                           "duration": {
-                            "min": "PT3H",
-                            "max": "PT3H30M"
+                            "min": "PT3H30M",
+                            "max": "PT4H"
                           },
-                          "text": "3–3,5 Std."
+                          "text": "3,5–4 Std."
                         }
                       ],
                       "temps": [
                         {
                           "kind": "ofen",
-                          "text": "150 °C",
-                          "value": 150
+                          "text": "140 °C",
+                          "value": 140
                         }
                       ],
                       "ingredients": [
+                        {
+                          "ref": "wasser",
+                          "amount": {
+                            "text": "100 ml Blech-Bratsatz dazu, kaltes Wasser",
+                            "value": 100.0,
+                            "unit": "ml"
+                          },
+                          "reuse": true
+                        },
                         {
                           "ref": "lorbeer",
                           "amount": {
@@ -2354,8 +2377,8 @@
                         {
                           "ref": "thymian",
                           "amount": {
-                            "text": "2 Zweige Thymian",
-                            "value": 2.0,
+                            "text": "3 Zweige Thymian",
+                            "value": 3.0,
                             "unit": "Zweige"
                           }
                         },
@@ -2368,122 +2391,102 @@
                           }
                         }
                       ],
-                      "meta": "*nach Knochen rösten, Rotwein-Reduktion · Ofen 150 °C · fertig bei Gabel dreht sich ohne Widerstand*",
+                      "meta": "*nach Knochen rösten, Verjus-Traubensaft-Reduktion · Ofen 140 °C · fertig wenn die Gabel sich ohne Widerstand dreht*",
                       "claims": [
                         {
                           "resource": "oven",
-                          "temp": 150
+                          "temp": 140
                         }
                       ],
                       "endCondition": {
                         "type": "visual",
-                        "text": "bei Gabel dreht sich ohne Widerstand"
+                        "text": "wenn die Gabel sich ohne Widerstand dreht"
                       },
                       "after": [
                         "step:gang-3-knochen-roesten",
-                        "step:gang-3-rotwein-reduktion"
+                        "step:gang-3-verjus-traubensaft-reduktion"
                       ]
                     },
                     {
-                      "id": "gang-3-zupfen-und-wuerzen",
+                      "id": "gang-3-in-der-fluessigkeit-abkuehlen",
                       "label": "6",
-                      "heading": "**6. Zupfen und würzen (ca. 25 Min.)**",
-                      "title": "Zupfen und würzen",
+                      "heading": "**6. In der Flüssigkeit abkühlen (ca. 1 Std. + über Nacht, passiv)**",
+                      "title": "In der Flüssigkeit abkühlen",
                       "duration": {
-                        "typical": "PT25M",
-                        "source": "ca. 25 Min.",
-                        "estimated": true
+                        "min": "PT8H",
+                        "max": "PT14H",
+                        "source": "über Nacht"
                       },
-                      "text": "Schulter herausheben, 10 Min. abkühlen lassen, dann **warm** zupfen: Haut, Fett, Sehnen und Knochen raus, Fleisch grob in 1–2-cm-Stücke zerpflücken (nicht zu fein — Struktur bleibt). Mit 4–5 EL passierter, noch unreduzierter Schmorflüssigkeit, Abrieb ½ Zitrone, 1 EL gehackter Petersilie, ½ TL fein gehacktem Rosmarin, Pfeffer und Salz abschmecken — **kräftig**: der Block wird kalt gegessen probiert, aber warm serviert, und die Jus kommt dazu.",
-                      "action": "Schulter herausheben, 10 Min. abkühlen lassen, dann **warm** zupfen: Haut, Fett, Sehnen und Knochen raus, Fleisch grob in 1–2-cm-Stücke zerpflücken (nicht zu fein — Struktur bleibt).",
+                      "attention": "passive",
+                      "text": "Knochen herausheben und abtropfen lassen, die Backen bleiben **in der Schmorflüssigkeit** und kühlen darin ab (höchstens 1–1,5 Std. bei Raumtemperatur, dann abgedeckt in den Kühlschrank). So ziehen sie Flüssigkeit zurück, statt auszutrocknen — der wichtigste Saftigkeits-Hebel bei Backe.",
+                      "action": "Knochen herausheben und abtropfen lassen, die Backen bleiben **in der Schmorflüssigkeit** und kühlen darin ab (höchstens 1–1,5 Std. bei Raumtemperatur, dann abgedeckt in den Kühlschrank).",
+                      "limits": [
+                        "in der Schmorflüssigkeit"
+                      ],
+                      "ingredients": [],
                       "timers": [
                         {
-                          "label": "Zupfen und würzen",
+                          "label": "In der Flüssigkeit abkühlen",
                           "duration": {
-                            "typical": "PT10M"
+                            "min": "PT8H",
+                            "max": "PT14H"
                           },
-                          "text": "10 Min."
+                          "text": "über Nacht"
                         }
-                      ],
-                      "ingredients": [
-                        {
-                          "ref": "zitronen",
-                          "amount": {
-                            "text": "½ Zitrone",
-                            "value": 0.5,
-                            "unit": "Stück"
-                          }
-                        },
-                        {
-                          "ref": "petersilie",
-                          "amount": {
-                            "text": "1 EL gehackter Petersilie",
-                            "value": 1.0,
-                            "unit": "EL"
-                          }
-                        },
-                        {
-                          "ref": "rosmarin",
-                          "amount": {
-                            "text": "½ TL fein gehacktem Rosmarin",
-                            "value": 0.5,
-                            "unit": "TL"
-                          }
-                        }
-                      ],
-                      "attention": "active"
-                    },
-                    {
-                      "id": "gang-3-pressen",
-                      "label": "7",
-                      "heading": "**7. Pressen (ca. 10 Min.)**",
-                      "title": "Pressen",
-                      "duration": {
-                        "typical": "PT10M",
-                        "source": "ca. 10 Min.",
-                        "estimated": true
-                      },
-                      "text": "Kastenform mit Frischhaltefolie auslegen (Überstand), Fleisch einfüllen und\n**fest** andrücken (\\~4 cm hoch). Folie darüberschlagen, zweite Kastenform hineinsetzen, mit 2–3 Dosen beschweren, über Nacht kalt stellen. Die Gelatine der Schmorflüssigkeit bindet den Block. *(Option, falls der Block beim ersten Mal zerfällt: 1 Blatt Gelatine in den 4–5 EL Fond auflösen — notieren, nicht vorsorglich.)*",
-                      "action": "Kastenform mit Frischhaltefolie auslegen (Überstand), Fleisch einfüllen und\n**fest** andrücken (\\~4 cm hoch).",
-                      "rescue": "Option, falls der Block beim ersten Mal zerfällt: 1 Blatt Gelatine in den 4–5 EL Fond auflösen — notieren, nicht vorsorglich.",
-                      "ingredients": [],
-                      "meta": "*ergibt Lammblock · mind. 8 h*",
-                      "attention": "active"
-                    },
-                    {
-                      "id": "gang-3-passieren-und-entfetten",
-                      "label": "8",
-                      "heading": "**8. Passieren und entfetten (ca. 10 Min.)**",
-                      "title": "Passieren und entfetten",
-                      "duration": {
-                        "typical": "PT10M",
-                        "source": "ca. 10 Min.",
-                        "estimated": true
-                      },
-                      "text": "Schmorflüssigkeit durch feines Sieb + Passiertuch passieren, über Nacht kalt stellen, **Fettdeckel abheben** (Schulter gibt viel Fett ab — der Deckel ist das wichtigste Werkzeug gegen ein schweres Menü).",
-                      "action": "Schmorflüssigkeit durch feines Sieb + Passiertuch passieren, über Nacht kalt stellen, **Fettdeckel abheben** (Schulter gibt viel Fett ab — der Deckel ist das wichtigste Werkzeug gegen ein schweres Menü).",
-                      "limits": [
-                        "Fettdeckel abheben"
-                      ],
-                      "ingredients": [],
-                      "meta": "*nach Zupfen und würzen*",
-                      "attention": "active",
-                      "after": [
-                        "step:gang-3-zupfen-und-wuerzen"
                       ]
+                    },
+                    {
+                      "id": "gang-3-entfetten-und-portionieren",
+                      "label": "7",
+                      "heading": "**7. Entfetten und portionieren (ca. 20 Min.)**",
+                      "title": "Entfetten und portionieren",
+                      "duration": {
+                        "typical": "PT20M",
+                        "source": "ca. 20 Min.",
+                        "estimated": true
+                      },
+                      "text": "Am Tag: den kalten Fettdeckel komplett abheben. Backen aus dem Gelee heben, die Silberhaut und verbliebene Sehnenplatten abziehen, dann mit einem scharfen Messer in 5 Portionen à \\~150 g schneiden (große Backen gegen die Faser halbieren, Kind ½ Portion). Saubere Kanten — das ist der Look. Abgedeckt kalt stellen.",
+                      "action": "Am Tag: den kalten Fettdeckel komplett abheben.",
+                      "ingredients": [],
+                      "attention": "active"
+                    },
+                    {
+                      "id": "gang-3-passieren",
+                      "label": "8",
+                      "heading": "**8. Passieren (ca. 10 Min.)**",
+                      "title": "Passieren",
+                      "duration": {
+                        "typical": "PT10M",
+                        "source": "ca. 10 Min.",
+                        "estimated": true
+                      },
+                      "text": "Das Gelee leicht erwärmen, bis es flüssig ist, und durch feines Sieb + Passiertuch passieren. Das Gemüse nur leicht andrücken (Pressen trübt).",
+                      "action": "Das Gelee leicht erwärmen, bis es flüssig ist, und durch feines Sieb + Passiertuch passieren.",
+                      "cues": [
+                        "bis es flüssig ist"
+                      ],
+                      "ingredients": [],
+                      "meta": "*Herd*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "attention": "active"
                     },
                     {
                       "id": "gang-3-jus-reduzieren",
                       "label": "9",
-                      "heading": "**9. Jus reduzieren (ca. 30 Min.)**",
+                      "heading": "**9. Jus reduzieren (ca. 40 Min.)**",
                       "title": "Jus reduzieren",
                       "duration": {
-                        "typical": "PT30M",
-                        "source": "ca. 30 Min.",
+                        "typical": "PT40M",
+                        "source": "ca. 40 Min.",
                         "estimated": true
                       },
-                      "text": "Am Tag auf \\~250–300 ml **sanft** reduzieren — zu heftiges Reduzieren macht bitter und trüb. **Kein Salz bis zum Schluss** (Konzentration!).",
-                      "action": "Am Tag auf \\~250–300 ml **sanft** reduzieren — zu heftiges Reduzieren macht bitter und trüb.",
+                      "text": "Die passierte Flüssigkeit (\\~1,2–1,5 L) **sanft** auf \\~300 ml reduzieren — zu heftiges Reduzieren macht bitter und trüb. **Kein Salz bis zum Schluss** (Konzentration!). 100 ml davon zum Glasieren abnehmen, den Rest (\\~200 ml) für den Teller beiseitestellen.",
+                      "action": "Die passierte Flüssigkeit (\\~1,2–1,5 L) **sanft** auf \\~300 ml reduzieren — zu heftiges Reduzieren macht bitter und trüb.",
                       "limits": [
                         "Kein Salz bis zum Schluss"
                       ],
@@ -2491,7 +2494,7 @@
                         "bis zum Schluss"
                       ],
                       "ingredients": [],
-                      "meta": "*Herd*",
+                      "meta": "*Herd · ergibt Jus*",
                       "claims": [
                         {
                           "resource": "hob",
@@ -2503,23 +2506,19 @@
                         {
                           "label": "Jus reduzieren",
                           "duration": {
-                            "typical": "PT30M"
+                            "typical": "PT40M"
                           },
-                          "text": "ca. 30 Min."
+                          "text": "ca. 40 Min."
                         }
                       ]
                     }
                   ],
-                  "heading": "**Lammschulter und Jus (T-1, ergibt \\~800 g gezupftes Fleisch + \\~250–300 ml Jus, Kühlschrank):**",
+                  "heading": "**Ochsenbacken und Jus (T-1, ergibt 5 Portionen à \\~150 g + \\~300 ml Jus, Kühlschrank):**",
                   "phaseHint": "T-1",
                   "produces": [
                     {
-                      "id": "lammblock",
-                      "name": "Lammblock",
-                      "hold": {
-                        "min": "PT8H",
-                        "source": "mind. 8 h"
-                      }
+                      "id": "jus",
+                      "name": "Jus"
                     }
                   ]
                 },
@@ -2643,7 +2642,7 @@
                           }
                         },
                         {
-                          "ref": "zitronen",
+                          "ref": "zitrone",
                           "amount": {
                             "text": "1 TL Zitronensaft",
                             "value": 1.0,
@@ -2732,7 +2731,8 @@
                             "text": "12 g",
                             "value": 12.0,
                             "unit": "g"
-                          }
+                          },
+                          "reuse": true
                         }
                       ],
                       "meta": "*Herd*",
@@ -2879,25 +2879,28 @@
                   ]
                 },
                 {
-                  "id": "lammbloecke-und-service",
-                  "name": "Lammblöcke und Service",
+                  "id": "ochsenbacke-und-service",
+                  "name": "Ochsenbacke und Service",
                   "steps": [
                     {
-                      "id": "gang-3-block-temperieren-und-schneiden",
+                      "id": "gang-3-backen-temperieren",
                       "label": "17",
-                      "heading": "**17. Block temperieren und schneiden (ca. 10 Min.)**",
-                      "title": "Block temperieren und schneiden",
+                      "heading": "**17. Backen temperieren (ca. 5 Min.)**",
+                      "title": "Backen temperieren",
                       "duration": {
-                        "typical": "PT10M",
-                        "source": "ca. 10 Min.",
+                        "typical": "PT5M",
+                        "source": "ca. 5 Min.",
                         "estimated": true
                       },
-                      "text": "Block \\~1 Std. vor Gang 3 aus dem Kühlschrank (temperiert wärmt schneller durch), an der Folie aus der Form heben, in 5 Scheiben à \\~4 cm schneiden (≈ 4 × 4 × 10 cm, \\~150 g). Kanten glatt — das ist der Look.",
-                      "action": "Block \\~1 Std. vor Gang 3 aus dem Kühlschrank (temperiert wärmt schneller durch), an der Folie aus der Form heben, in 5 Scheiben à \\~4 cm schneiden (≈ 4 × 4 × 10 cm, \\~150 g).",
+                      "text": "Die 5 Portionen \\~1 Std. vor Gang 3 aus dem Kühlschrank nehmen (temperiert wärmen sie schneller durch), einlagig und eng in eine ofenfeste Form setzen, mit 100 ml Jus begießen und mit Alufolie abdecken.",
+                      "action": "Die 5 Portionen \\~1 Std. vor Gang 3 aus dem Kühlschrank nehmen (temperiert wärmen sie schneller durch), einlagig und eng in eine ofenfeste Form setzen, mit 100 ml Jus begießen und mit Alufolie abdecken.",
                       "ingredients": [],
-                      "meta": "*jederzeit · 1 Std. vor Gang 3*",
+                      "meta": "*nach Entfetten und portionieren, Jus reduzieren · 1 Std. vor Gang 3*",
                       "attention": "active",
-                      "after": [],
+                      "after": [
+                        "step:gang-3-entfetten-und-portionieren",
+                        "step:gang-3-jus-reduzieren"
+                      ],
                       "start": {
                         "ref": "course:gang-3:serve",
                         "offset": {
@@ -2907,29 +2910,41 @@
                       }
                     },
                     {
-                      "id": "gang-3-bloecke-anbraten",
+                      "id": "gang-3-glasieren-und-durchwaermen",
                       "label": "18",
-                      "heading": "**18. Blöcke anbraten (ca. 8 Min.)**",
-                      "title": "Blöcke anbraten",
+                      "heading": "**18. Glasieren und durchwärmen (20–25 Min.)**",
+                      "title": "Glasieren und durchwärmen",
                       "duration": {
-                        "typical": "PT8M",
-                        "source": "ca. 8 Min.",
-                        "estimated": true
+                        "min": "PT20M",
+                        "max": "PT25M",
+                        "source": "20–25 Min."
                       },
-                      "text": "Nach Gang 2: Ofen von 80 °C (Teller) auf **140 °C** stellen, Teller solange gestapelt daneben (halten die Wärme). Pfanne mit 1 EL Butterschmalz mittel-hoch, Blöcke **in 2 Chargen** allseitig je 1–2 Min. knusprig braten (Edelstahl: nicht überladen, Chargen-Learning aus Bulgogi/Bò lúc lắc; die Schnittflächen zuerst, sie halten den Block zusammen).",
-                      "action": "Nach Gang 2: Ofen von 80 °C (Teller) auf **140 °C** stellen, Teller solange gestapelt daneben (halten die Wärme).",
+                      "text": "Nach Gang 2: Ofen von 80 °C (Teller) auf **140 °C** stellen, die Teller solange gestapelt daneben (halten die Wärme). Form abgedeckt 10 Min. in den Ofen, dann die Folie ab und alle 5 Min. mit der Jus aus der Form übergießen, bis die Backen glänzend lackiert sind und **≥ 70 °C Kern** erreichen (Thermometer in die dickste Portion, \\~20–25 Min. insgesamt). Nach Thermometer, nicht nach Uhr: Das ist die Schwangerschafts-Grenze (Listerien nach Lagerung). Wird die Glasur zu dick, 1–2 EL Wasser in die Form geben.",
+                      "action": "Nach Gang 2: Ofen von 80 °C (Teller) auf **140 °C** stellen, die Teller solange gestapelt daneben (halten die Wärme).",
                       "limits": [
                         "140 °C",
-                        "in 2 Chargen"
+                        "≥ 70 °C Kern"
+                      ],
+                      "rescue": "Wird die Glasur zu dick, 1–2 EL Wasser in die Form geben.",
+                      "cues": [
+                        "bis die Backen glänzend lackiert sind und"
                       ],
                       "timers": [
                         {
-                          "label": "Blöcke anbraten",
+                          "label": "Glasieren und durchwärmen",
                           "duration": {
-                            "min": "PT1M",
-                            "max": "PT2M"
+                            "typical": "PT10M"
                           },
-                          "text": "1–2 Min."
+                          "text": "10 Min."
+                        },
+                        {
+                          "label": "Glasieren und durchwärmen",
+                          "duration": {
+                            "min": "PT20M",
+                            "max": "PT25M",
+                            "estimated": true
+                          },
+                          "text": "\\~20–25 Min."
                         }
                       ],
                       "temps": [
@@ -2942,62 +2957,6 @@
                           "kind": "ziel",
                           "text": "140 °C",
                           "value": 140
-                        }
-                      ],
-                      "ingredients": [
-                        {
-                          "ref": "butterschmalz",
-                          "amount": {
-                            "text": "1 EL Butterschmalz",
-                            "value": 1.0,
-                            "unit": "EL"
-                          }
-                        }
-                      ],
-                      "meta": "*Ofen 140 °C · Herd*",
-                      "claims": [
-                        {
-                          "resource": "oven",
-                          "temp": 140
-                        },
-                        {
-                          "resource": "hob",
-                          "units": 1
-                        }
-                      ],
-                      "attention": "active"
-                    },
-                    {
-                      "id": "gang-3-durchwaermen",
-                      "label": "19",
-                      "heading": "**19. Durchwärmen (12–18 Min.)**",
-                      "title": "Durchwärmen",
-                      "duration": {
-                        "min": "PT12M",
-                        "max": "PT18M",
-                        "source": "12–18 Min."
-                      },
-                      "text": "Blöcke auf Gitter + Blech, Thermometer in den dicksten, im **140 °C Ofen 12–18 Min.** bis **≥ 70 °C Kern** — nach Thermometer, nicht nach Uhr. Das ist die Schwangerschafts-Grenze (Listerien nach Lagerung) und zugleich der Punkt, an dem der Block innen wieder saftig-warm ist.",
-                      "action": "Blöcke auf Gitter + Blech, Thermometer in den dicksten, im **140 °C Ofen 12–18 Min.** bis **≥ 70 °C Kern** — nach Thermometer, nicht nach Uhr.",
-                      "limits": [
-                        "140 °C Ofen 12–18 Min.",
-                        "≥ 70 °C Kern"
-                      ],
-                      "timers": [
-                        {
-                          "label": "Durchwärmen",
-                          "duration": {
-                            "min": "PT12M",
-                            "max": "PT18M"
-                          },
-                          "text": "12–18 Min."
-                        }
-                      ],
-                      "temps": [
-                        {
-                          "kind": "ziel",
-                          "text": "140 °C",
-                          "value": 140
                         },
                         {
                           "kind": "kern",
@@ -3005,7 +2964,17 @@
                           "value": 70
                         }
                       ],
-                      "ingredients": [],
+                      "ingredients": [
+                        {
+                          "ref": "wasser",
+                          "amount": {
+                            "text": "1–2 EL Wasser",
+                            "value": 1.0,
+                            "unit": "EL",
+                            "max": 2.0
+                          }
+                        }
+                      ],
                       "meta": "*Ofen 140 °C · fertig bei ≥ 70 °C Kern*",
                       "claims": [
                         {
@@ -3018,19 +2987,19 @@
                         "text": "bei ≥ 70 °C Kern",
                         "value": 70
                       },
-                      "attention": "active"
+                      "attention": "attended"
                     },
                     {
                       "id": "gang-3-blaetter-jus-chips",
-                      "label": "20",
-                      "heading": "**20. Blätter, Jus, Chips (ca. 8 Min.)**",
+                      "label": "19",
+                      "heading": "**19. Blätter, Jus, Chips (ca. 8 Min.)**",
                       "title": "Blätter, Jus, Chips",
                       "duration": {
                         "typical": "PT8M",
                         "source": "ca. 8 Min.",
                         "estimated": true
                       },
-                      "text": "Parallel: blanchierte Rosenkohlblätter in 20 g aufschäumender Butter 1–2 Min. schwenken (nur erwärmen), 1 Prise Salz, kleiner Spritzer Zitrone. Jus erwärmen, salzen, vom Herd 25 g eiskalte Butter einschwenken (montieren), danach nicht mehr kochen; übrige Menge in Eiswürfelform einfrieren. Chips salzen.",
+                      "text": "Parallel: blanchierte Rosenkohlblätter in 20 g aufschäumender Butter 1–2 Min. schwenken (nur erwärmen), 1 Prise Salz, kleiner Spritzer Zitrone. Die übrigen \\~200 ml Jus erwärmen, mit 1–2 TL Verjus und Salz abschmecken, vom Herd 25 g eiskalte Butter einschwenken (montieren), danach nicht mehr kochen; übrige Menge in Eiswürfelform einfrieren. Chips salzen.",
                       "action": "Parallel: blanchierte Rosenkohlblätter in 20 g aufschäumender Butter 1–2 Min. schwenken (nur erwärmen), 1 Prise Salz, kleiner Spritzer Zitrone.",
                       "timers": [
                         {
@@ -3060,6 +3029,15 @@
                           }
                         },
                         {
+                          "ref": "verjus",
+                          "amount": {
+                            "text": "1–2 TL Verjus",
+                            "value": 1.0,
+                            "unit": "TL",
+                            "max": 2.0
+                          }
+                        },
+                        {
                           "ref": "butter",
                           "amount": {
                             "text": "25 g eiskalte Butter",
@@ -3068,7 +3046,7 @@
                           }
                         }
                       ],
-                      "meta": "*nach Blöcke anbraten · 2 Pfannen*",
+                      "meta": "*nach Backen temperieren · 2 Pfannen*",
                       "claims": [
                         {
                           "resource": "hob",
@@ -3077,41 +3055,41 @@
                       ],
                       "attention": "attended",
                       "after": [
-                        "step:gang-3-bloecke-anbraten"
+                        "step:gang-3-backen-temperieren"
                       ]
                     },
                     {
                       "id": "gang-3-anrichten",
-                      "label": "21",
-                      "heading": "**21. Anrichten (ca. 3 Min.)**",
+                      "label": "20",
+                      "heading": "**20. Anrichten (ca. 3 Min.)**",
                       "title": "Anrichten",
                       "duration": {
                         "typical": "PT3M",
                         "source": "ca. 3 Min.",
                         "estimated": true
                       },
-                      "text": "Püree-Spiegel oder -Nocke, Lammblock daraufgesetzt, grüne Blätter und Chips-Blätter gemischt darüber/daneben, Sellerie-Chips aufgestellt, Jus angegossen (nicht über die Chips — weichen auf).",
-                      "action": "Püree-Spiegel oder -Nocke, Lammblock daraufgesetzt, grüne Blätter und Chips-Blätter gemischt darüber/daneben, Sellerie-Chips aufgestellt, Jus angegossen (nicht über die Chips — weichen auf).",
+                      "text": "Püree-Spiegel oder -Nocke, die glasierte Backe daraufsetzen, grüne Blätter und Chips-Blätter gemischt darüber/daneben, Sellerie-Chips aufstellen, Jus angießen (nicht über die Chips — weichen auf).",
+                      "action": "Püree-Spiegel oder -Nocke, die glasierte Backe daraufsetzen, grüne Blätter und Chips-Blätter gemischt darüber/daneben, Sellerie-Chips aufstellen, Jus angießen (nicht über die Chips — weichen auf).",
                       "ingredients": [],
-                      "meta": "*nach Durchwärmen, Blätter, Jus, Chips*",
+                      "meta": "*nach Glasieren und durchwärmen, Blätter, Jus, Chips*",
                       "attention": "active",
                       "after": [
-                        "step:gang-3-durchwaermen",
+                        "step:gang-3-glasieren-und-durchwaermen",
                         "step:gang-3-blaetter-jus-chips"
                       ]
                     }
                   ],
-                  "heading": "**Lammblöcke und Service (am Abend):**",
+                  "heading": "**Ochsenbacke und Service (am Abend):**",
                   "phaseHint": "am Abend",
                   "produces": [
                     {
-                      "id": "lammbloecke-und-service",
-                      "name": "Lammblöcke und Service"
+                      "id": "ochsenbacke-und-service",
+                      "name": "Ochsenbacke und Service"
                     }
                   ],
                   "consumes": [
                     "product:chips",
-                    "product:lammblock"
+                    "product:jus"
                   ]
                 }
               ]
@@ -3120,7 +3098,7 @@
               "type": "markdown",
               "title": "Kind (3 J.)",
               "level": "bold",
-              "markdown": "**Kind (3 J.):** halber Block — weich, mild, nichts Scharfes. Dazu Püree und\nweiche grüne Blätter; Jus ist unkritisch (nicht scharf, Wein verkocht).\nFunktioniert ohne Extra-Version.",
+              "markdown": "**Kind (3 J.):** ½ Portion Backe — butterzart, mild, nichts Scharfes. Dazu Püree und\nweiche grüne Blätter; die Jus ist alkoholfrei und unkritisch. Funktioniert ohne\nExtra-Version.",
               "tags": [
                 "kind"
               ]
@@ -3129,7 +3107,7 @@
               "type": "markdown",
               "title": "Profi-Tipps",
               "level": "bold",
-              "markdown": "> **Profi-Tipps:**\n> - Der Röstgrad-Unterschied ist das wichtigste Jus-Learning: Schweineknochen\n>   „fast schwarz“, **Lammknochen nur goldbraun** — sonst bitter.\n> - Der Block ist der Grund, warum dieser Gang am Abend keinen Stress macht:\n>   alles Handwerk passiert am Vortag, der Abend ist Anbraten + Ofen mit\n>   Thermometer-Alarm.\n> - Fettdeckel der Schmorflüssigkeit konsequent abheben — Lammschulter ist\n>   deutlich fetter als Karree, und die Jus soll klar und leicht bleiben.\n> - Chips-Regel: alles, was knuspern soll, bleibt bis zur letzten Sekunde\n>   offen, trocken und ungesalzen.",
+              "markdown": "> **Profi-Tipps:**\n> - Backe **in der Schmorflüssigkeit** auskühlen lassen: Heiß herausgenommen\n>   trocknen die Fasern aus, im Gelee bleiben sie saftig.\n> - Silberhaut erst nach dem Schmoren abziehen — roh ist das mühsame Messerarbeit,\n>   gegart geht es in Sekunden.\n> - Röstgrad: Rinderknochen dürfen dunkel werden, Lammknochen nicht (bitter).\n> - Fettdeckel trotzdem konsequent abheben: Backe ist mager, die Knochen und das\n>   Anbratfett geben aber genug ab, und die Jus soll klar und leicht bleiben.\n> - Chips-Regel: alles, was knuspern soll, bleibt bis zur letzten Sekunde\n>   offen, trocken und ungesalzen.",
               "tags": [
                 "profi-tipps"
               ]
@@ -3140,25 +3118,25 @@
               "intro": "**Offen (Testlauf / Beschaffung):**",
               "items": [
                 {
-                  "text": "**Lammquelle klären:** Selgros (Schulter + Knochen in einem Trip) vs. türkischen Metzger identifizieren — der ist in CLAUDE.md ohnehin als Lücke markiert und meist die beste Lammquelle (Qualität, Preis, Knochen auf Zuruf). Dieser Gang wäre der Anlass.",
+                  "text": "**Backen-Quelle klären:** Selgros anrufen (frisch oder TK? Stückgröße schwankt stark, 250–600 g) vs. Metzger auf Bestellung. Frisch bevorzugt; TK 24 h im Kühlschrank auftauen.",
                   "checked": false
                 },
                 {
-                  "text": "Block-Bindung: hält der Block beim Anbraten? Sonst Gelatine-Option (Schritt 7) fürs nächste Mal notieren.",
+                  "text": "Jus-Balance: Verjus/Traubensaft 1:1 zu fruchtig-süß? Dann mehr Verjus, weniger Saft und mehr Tomatenmark. Am besten beim Testlauf mit einer Backe probieren.",
+                  "checked": false
+                },
+                {
+                  "text": "Glasier-Zeit bis ≥ 70 °C Kern kalibrieren (20–25 Min. geschätzt).",
                   "checked": false
                 },
                 {
                   "text": "Bitter-Balance: Rosenkohl ist milder als der ursprünglich geplante Chicorée — fehlt dem Menü der herbe Gegenpol? Auf Testteller: evtl. wenige rohe Radicchio-Streifen für Farbe + Bitterkick. *(Tendenz laut Dritt-Feedback: unnötig — die frittierten Blätter bringen selbst genug Röst-/Bitternoten. Erst pur testen.)*",
                   "checked": false
-                },
-                {
-                  "text": "Rotwein-Reduktion vs. Verjus-Option in der Jus — Default bleibt Wein (trocken reduziert), bei Unbehagen Verjus",
-                  "checked": false
                 }
               ]
             }
           ],
-          "intro": "*T-1: \\~1 h aktiv + 3–3,5 h Schmoren (passiv) + Pressen über Nacht | Am Tag:\n\\~2 Std. verteilt (Püree, Rosenkohl, Chips, Jus reduzieren), \\~20 Min. à la\nminute | Pro Portion: 1 Block (\\~150 g, Kind ½) | Equipment: Bräter mit\nDeckel, 2 Kastenformen 20 cm (eine als Gewicht), Fleischthermometer,\nMandoline, Passiertuch, Topf zum Frittieren*"
+          "intro": "*T-1: \\~1 h aktiv + 3,5–4 h Schmoren (passiv) + über Nacht in der Schmorflüssigkeit\nkalt | Am Tag: \\~2 Std. verteilt (Entfetten, Jus, Püree, Rosenkohl, Chips), \\~25 Min.\nà la minute | Pro Portion: \\~150 g gegarte Backe (Kind ½) | Equipment: Bräter mit\nDeckel, ofenfeste Form, Fleischthermometer, Mandoline, Passiertuch, Topf zum\nFrittieren*"
         },
         {
           "id": "gang-4",
@@ -3821,7 +3799,7 @@
           },
           {
             "phase": "t-2",
-            "text": "Lammschulter salzen (Dry-Brine, optional)"
+            "text": "Ochsenbacken salzen (Dry-Brine, optional)"
           },
           {
             "phase": "t-2",
@@ -3833,13 +3811,13 @@
           },
           {
             "phase": "t-1",
-            "text": "**Lammschulter und Jus: schmoren (3–3,5 h), zupfen, pressen; Schmorflüssigkeit passieren und kalt stellen**",
+            "text": "**Ochsenbacken und Jus: anbraten, schmoren (3,5–4 h), in der Flüssigkeit abkühlen lassen, über Nacht kalt stellen**",
             "steps": [
               "gang-3-schmoren",
-              "gang-3-pressen"
+              "gang-3-in-der-fluessigkeit-abkuehlen"
             ],
             "tasks": [
-              "lammschulter-und-jus"
+              "ochsenbacken-und-jus"
             ],
             "course": "gang-3"
           },
@@ -3886,7 +3864,23 @@
           },
           {
             "phase": "vormittags",
-            "text": "Jus reduzieren (Fettdeckel ab, auf 250–300 ml)",
+            "text": "Entfetten und portionieren",
+            "steps": [
+              "gang-3-entfetten-und-portionieren"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "vormittags",
+            "text": "Passieren",
+            "steps": [
+              "gang-3-passieren"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "vormittags",
+            "text": "Jus reduzieren (auf \\~300 ml)",
             "steps": [
               "gang-3-jus-reduzieren"
             ],
@@ -3945,9 +3939,9 @@
           },
           {
             "phase": "nachmittags",
-            "text": "Block temperieren und schneiden (1 h vor Gang 3)",
+            "text": "Backen temperieren (1 h vor Gang 3)",
             "steps": [
-              "gang-3-block-temperieren-und-schneiden"
+              "gang-3-backen-temperieren"
             ],
             "course": "gang-3"
           },
@@ -4012,10 +4006,9 @@
           },
           {
             "phase": "gang-3",
-            "text": "Ofen auf 140 °C, Blöcke anbraten, Durchwärmen 12–18 Min. bis ≥ 70 °C Kern (Thermometer-Alarm)",
+            "text": "Ofen auf 140 °C, Glasieren und durchwärmen 20–25 Min. bis ≥ 70 °C Kern (Thermometer-Alarm)",
             "steps": [
-              "gang-3-bloecke-anbraten",
-              "gang-3-durchwaermen"
+              "gang-3-glasieren-und-durchwaermen"
             ],
             "course": "gang-3"
           },
@@ -4051,7 +4044,7 @@
           }
         ]
       },
-      "note": "**Ofen-Plan (entschärft):** Chips werden frittiert, das Lamm ist geschmort —\nder Ofen macht am Abend nur 80 °C (Teller) und dann 140 °C (Blöcke\ndurchwärmen). Der frühere Konflikt Karree/Chips/Teller existiert nicht mehr."
+      "note": "**Ofen-Plan (entschärft):** Chips werden frittiert, die Backe ist geschmort —\nder Ofen macht am Abend nur 80 °C (Teller) und dann 140 °C (Backen\nglasieren). Der frühere Konflikt Karree/Chips/Teller existiert nicht mehr."
     },
     {
       "type": "todo",
@@ -4082,11 +4075,11 @@
           "checked": false
         },
         {
-          "text": "Lammquelle klären (Selgros vs. türkischen Metzger finden — Repo-Lücke); Schulter mit Knochen 2–2,2 kg",
+          "text": "Ochsenbacken-Quelle klären (Selgros anrufen: frisch/TK, Stückgröße; sonst Metzger auf Bestellung), 1,6–2 kg + 1 kg Rinderknochen",
           "checked": false
         },
         {
-          "text": "Block-Bindung beim ersten Anbraten beobachten (Gelatine-Option)",
+          "text": "Testlauf Jus ohne Alkohol (Verjus/Traubensaft-Balance) mit einer Backe",
           "checked": false
         },
         {
@@ -4107,33 +4100,41 @@
       "type": "markdown",
       "title": "Quellen & Entscheidungen",
       "level": 2,
-      "markdown": "**Gang 1 — Tomatenwasser:**\n- Drip-Thaw-Klärung: [Chef's Garden — Tomato Water](https://chefs-garden.com/recipes/tomato-water-drip-thaw-clarification/)\n- Klassische Klärung, Salz/kg: [LCBO — Tomato Water](https://www.lcbo.com/en/recipe/tomato-water/200705069), [7hauben — Tomatenwasser (Jens Rittmeyer)](https://www.7hauben.com/rezept/tomatenwasser/)\n- Klare Bloody-Mary-Würzung: [Looye — „Ghost of Mary“](https://www.looye.com/en/recipes/clear-bloody-mary), [Cocktails Distilled — Clarified Bloody Mary](https://cocktailsdistilled.com/clarify-bloody-mary/)\n- Kälte dämpft Umami: [Mashed — Ideal Soup Temperature (Chemical Senses 2016)](https://www.mashed.com/707361/science-says-this-is-the-ideal-temperature-for-soup/)\n\n**Gang 2 — Kaisergranat:**\n- Agar-Fluid-Gel (0,8 %, Säure nach dem Kochen): [Amazing Food Made Easy — Agar](https://www.amazingfoodmadeeasy.com/info/modernist-ingredients/more/agar-agar), [eathealthy365 — Fruit Fluid Gel](https://eathealthy365.com/how-to-make-a-basic-fruit-fluid-gel/)\n- Beurre blanc (Ratio, Ausbeute, Temperaturfenster): [Serious Eats — Beurre Blanc](https://www.seriouseats.com/beurre-blanc-recipe), [CooksInfo — Beurre Blanc](https://www.cooksinfo.com/beurre-blanc); Verjus als Wein-Ersatz ist Standard in der alkoholfreien Saucenküche (gleiche Säure/Frucht, kein Ethanol)\n- Garpunkt Schalentiere: [FDA — Safe Minimum Internal Temperatures](https://www.fda.gov/food/buy-store-serve-safe-food/safe-minimum-internal-temperatures) (63 °C / 145 °F für Fisch und Schalentiere, „opak“); Kaisergranat wird über \\~70 °C gummiartig — deshalb Ausstieg bei 60–62 °C mit Carryover\n- Artbezeichnung: Kaisergranat = *Nephrops norvegicus* (auch „Langustine“, „Scampi“); argentinische Rotgarnele (*Pleoticus muelleri*) ist ein anderes Tier\n\n**Gang 3 — Lamm:**\n- Gepresste Lammschulter: Great British Chefs, „pressed lamb shoulder“ (mehrere Varianten — Prinzip: schmoren, zupfen, in Form pressen, kalt schneiden, anbraten); intern Schmor-Grundlagen aus [Lamm-Kleftiko](/gerichte/lamm-kleftiko.md)\n- Lammjus (Röstgrad, Mengen): [tobiaskocht — Lammjus](https://www.tobiaskocht.com/kochrezept/lamm-jus.html), [eat.de — Lammsoße mit Knochen](https://eat.de/rezept/lammsosse-mit-knochen-zubereiten/), [ichkoche.at — Lammjus](https://www.ichkoche.at/lammjus-rezept-1544)\n- Selleriepüree in Milch: [küchegemacht — Selleriepüree](https://kuechegemacht.de/rezepte/selleriepueree-rezept/)\n- Rosenkohl-Chips frittiert: [Saveur — Fried Brussels Sprout Chips](https://www.saveur.com/article/Recipes/Fried-Brussel-Sprout-Chips-with-Sweet-Chili-Sauce)\n- Schwangerschaft: Kerntemperatur ≥ 70 °C, Alkohol-Restgehalt beim Kochen → [Leitfaden](/schwangerschaft/leitfaden.md)\n\n**Gang 4 — Parfait:**\n- Pâte à bombe & Falttechnik: [Kitchen Projects #34 — All About Parfait (Nicola Lamb)](https://kitchenprojects.substack.com/p/kitchen-project-34-all-about-parfait)\n- PAC/Gefrierpunkt (Dextrose \\~190 vs. Saccharose 100): [Eisfunke — Freezing Point Depression](https://www.eisfunke.com/notes/freezing-point-depression); Dextrose-Stellschraube intern aus [Schokoladeneis](/eis/schokoladeneis-dunkel.md)\n- Espresso-Martini-Schaum: [The Double Strainer — Espresso Martini Guide](https://www.thedoublestrainer.com/post/espresso-martini-the-complete-recipe-technique-and-foam-troubleshooting-guide)\n- Caffè shakerato: italienischer Standard (Espresso + Zuckersirup auf Eis, hart geshakt, ohne Eis serviert) — keine Einzelquelle nötig\n- Kakaonib-Streusel: [Videri Chocolate Factory — Cocoa Nib Streusel](https://viderichocolatefactory.com/blog/recipie-cocoa-nib-streusel)\n\n**Zentrale Entscheidungen:**\n- **Umbau statt Sonderportionen (09/2026):** Schwangerschaft + GDM der Frau\n  → Kaisergranat statt Jakobsmuschel (durchgegart ohne Verlust), Schmor-Block\n  statt Karree (durch ≥ 70 °C, entlastet zugleich den Abend), Alkohol nur noch\n  im optionalen Schuss (das Konzept trug das schon), Verjus-Beurre-blanc und\n  Decaf durchgehend für alle.\n- **Schmoren und Jus als ein Prozess:** Schmorflüssigkeit = Jus. Spart den\n  separaten Fond und gibt der Jus die Schulter mit.\n- **Chips frittiert statt Ofen:** krosser, hält länger, Ofen bleibt frei.\n- **Zucker im Parfait 70 g + 25 g Dextrose:** Kälte dämpft Süße\n  überproportional; ohne Alkohol übernimmt die Dextrose die Gefrierpunkt-\n  Senkung des früheren Wodka/Kahlúa-Anteils — teilweise, nicht ganz, deshalb\n  temperieren.\n- **Ein kombinierter Einkauf statt Listen pro Gang:** Export-Buttons der Site\n  hängen an `## Einkaufsliste` + Laden-Gruppen; Gang-Zuordnung steht am Posten.",
+      "markdown": "**Gang 1 — Tomatenwasser:**\n- Drip-Thaw-Klärung: [Chef's Garden — Tomato Water](https://chefs-garden.com/recipes/tomato-water-drip-thaw-clarification/)\n- Klassische Klärung, Salz/kg: [LCBO — Tomato Water](https://www.lcbo.com/en/recipe/tomato-water/200705069), [7hauben — Tomatenwasser (Jens Rittmeyer)](https://www.7hauben.com/rezept/tomatenwasser/)\n- Klare Bloody-Mary-Würzung: [Looye — „Ghost of Mary“](https://www.looye.com/en/recipes/clear-bloody-mary), [Cocktails Distilled — Clarified Bloody Mary](https://cocktailsdistilled.com/clarify-bloody-mary/)\n- Kälte dämpft Umami: [Mashed — Ideal Soup Temperature (Chemical Senses 2016)](https://www.mashed.com/707361/science-says-this-is-the-ideal-temperature-for-soup/)\n\n**Gang 2 — Kaisergranat:**\n- Agar-Fluid-Gel (0,8 %, Säure nach dem Kochen): [Amazing Food Made Easy — Agar](https://www.amazingfoodmadeeasy.com/info/modernist-ingredients/more/agar-agar), [eathealthy365 — Fruit Fluid Gel](https://eathealthy365.com/how-to-make-a-basic-fruit-fluid-gel/)\n- Beurre blanc (Ratio, Ausbeute, Temperaturfenster): [Serious Eats — Beurre Blanc](https://www.seriouseats.com/beurre-blanc-recipe), [CooksInfo — Beurre Blanc](https://www.cooksinfo.com/beurre-blanc); Verjus als Wein-Ersatz ist Standard in der alkoholfreien Saucenküche (gleiche Säure/Frucht, kein Ethanol)\n- Garpunkt Schalentiere: [FDA — Safe Minimum Internal Temperatures](https://www.fda.gov/food/buy-store-serve-safe-food/safe-minimum-internal-temperatures) (63 °C / 145 °F für Fisch und Schalentiere, „opak“); Kaisergranat wird über \\~70 °C gummiartig — deshalb Ausstieg bei 60–62 °C mit Carryover\n- Artbezeichnung: Kaisergranat = *Nephrops norvegicus* (auch „Langustine“, „Scampi“); argentinische Rotgarnele (*Pleoticus muelleri*) ist ein anderes Tier\n\n**Gang 3 — Ochsenbacke:**\n- Geschmorte Ochsenbacke (140 °C, \\~3,5 Std., in der Sauce auskühlen, am nächsten Tag entfetten und einkochen): [lecker.de — Geschmorte Ochsenbäcken](https://www.lecker.de/geschmorte-ochsenbaecken-131526.html); Silberhaut/Sehnen: [Grillfürst — Geschmorte Ochsenbäckchen](https://www.grillfuerst.de/magazin/grillrezepte/geschmorte-ochsenbaeckchen/)\n- Jus ohne Alkohol (Traubensaft + Säure, Verjus als 1:1-Ersatz): [Tasting Table — How To Braise Meat Without Wine](https://www.tastingtable.com/1889849/how-to-braise-without-wine/), [Chowhound — Alcohol-Free Substitutes For Red Wine](https://www.chowhound.com/1947125/best-alcohol-free-red-wine-susbtitutes-recipes); Röstgrad und Saucen-Grammatik intern aus `technik/dunkle-bratensauce.md`\n- Wechsel Lamm → Ochsenbacke (11/2026): Lamm gab es gerade erst ([Lamm-Kleftiko](/gerichte/lamm-kleftiko.md), 10/2026); Backe ist magerer als Lammschulter oder Short Ribs und entlastet die Fett-Bilanz des Menüs\n- Selleriepüree in Milch: [küchegemacht — Selleriepüree](https://kuechegemacht.de/rezepte/selleriepueree-rezept/)\n- Rosenkohl-Chips frittiert: [Saveur — Fried Brussels Sprout Chips](https://www.saveur.com/article/Recipes/Fried-Brussel-Sprout-Chips-with-Sweet-Chili-Sauce)\n- Schwangerschaft: Kerntemperatur ≥ 70 °C, kein Alkohol in der Jus → [Leitfaden](/schwangerschaft/leitfaden.md)\n\n**Gang 4 — Parfait:**\n- Pâte à bombe & Falttechnik: [Kitchen Projects #34 — All About Parfait (Nicola Lamb)](https://kitchenprojects.substack.com/p/kitchen-project-34-all-about-parfait)\n- PAC/Gefrierpunkt (Dextrose \\~190 vs. Saccharose 100): [Eisfunke — Freezing Point Depression](https://www.eisfunke.com/notes/freezing-point-depression); Dextrose-Stellschraube intern aus [Schokoladeneis](/eis/schokoladeneis-dunkel.md)\n- Espresso-Martini-Schaum: [The Double Strainer — Espresso Martini Guide](https://www.thedoublestrainer.com/post/espresso-martini-the-complete-recipe-technique-and-foam-troubleshooting-guide)\n- Caffè shakerato: italienischer Standard (Espresso + Zuckersirup auf Eis, hart geshakt, ohne Eis serviert) — keine Einzelquelle nötig\n- Kakaonib-Streusel: [Videri Chocolate Factory — Cocoa Nib Streusel](https://viderichocolatefactory.com/blog/recipie-cocoa-nib-streusel)\n\n**Zentrale Entscheidungen:**\n- **Umbau statt Sonderportionen (09/2026):** Schwangerschaft + GDM der Frau\n  → Kaisergranat statt Jakobsmuschel (durchgegart ohne Verlust), Schmorgericht\n  statt Karree (durch ≥ 70 °C, entlastet zugleich den Abend), Alkohol nur noch\n  im optionalen Schuss (das Konzept trug das schon), Verjus-Beurre-blanc und\n  Decaf durchgehend für alle.\n- **Schmoren und Jus als ein Prozess:** Schmorflüssigkeit = Jus. Spart den\n  separaten Fond und gibt der Jus die Gelatine der Backe mit.\n- **Chips frittiert statt Ofen:** krosser, hält länger, Ofen bleibt frei.\n- **Zucker im Parfait 70 g + 25 g Dextrose:** Kälte dämpft Süße\n  überproportional; ohne Alkohol übernimmt die Dextrose die Gefrierpunkt-\n  Senkung des früheren Wodka/Kahlúa-Anteils — teilweise, nicht ganz, deshalb\n  temperieren.\n- **Ein kombinierter Einkauf statt Listen pro Gang:** Export-Buttons der Site\n  hängen an `## Einkaufsliste` + Laden-Gruppen; Gang-Zuordnung steht am Posten.",
       "tags": [
         "quellen"
       ]
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:17:54Z",
-    "sourceHash": "e411f0597e668957",
+    "generatedAt": "2026-11-16T08:29:00Z",
+    "sourceHash": "feace4cbcb3e9568",
     "quantities": [
       {
         "ingredient": "verjus",
         "total": {
-          "text": "110 ml",
-          "value": 110.0,
-          "max": 110.0,
+          "text": "265–270 ml",
+          "value": 265.0,
+          "max": 270.0,
           "unit": "ml",
           "approx": false
         },
         "perTask": {
-          "verjus-limetten-beurre-blanc": "110 ml Verjus"
+          "verjus-limetten-beurre-blanc": "110 ml Verjus",
+          "ochsenbacken-und-jus": "150 ml Verjus",
+          "ochsenbacke-und-service": "1–2 TL Verjus"
         },
         "perCourse": {
           "gang-2": {
             "text": "110 ml",
             "value": 110.0,
             "max": 110.0,
+            "unit": "ml"
+          },
+          "gang-3": {
+            "text": "155–160 ml",
+            "value": 155.0,
+            "max": 160.0,
             "unit": "ml"
           }
         }
@@ -4188,43 +4189,43 @@
         }
       },
       {
-        "ingredient": "lammschulter",
+        "ingredient": "ochsenbacken",
         "total": {
-          "text": "2000–2200 g",
-          "value": 2000.0,
-          "max": 2200.0,
+          "text": "1600–2000 g",
+          "value": 1600.0,
+          "max": 2000.0,
           "unit": "g",
           "approx": false
         },
         "perTask": {
-          "lammschulter-und-jus": "2–2,2 kg"
+          "ochsenbacken-und-jus": "1,6–2 kg Ochsenbacken"
         },
         "perCourse": {
           "gang-3": {
-            "text": "2000–2200 g",
-            "value": 2000.0,
-            "max": 2200.0,
+            "text": "1600–2000 g",
+            "value": 1600.0,
+            "max": 2000.0,
             "unit": "g"
           }
         }
       },
       {
-        "ingredient": "lammknochen",
+        "ingredient": "rinderknochen",
         "total": {
-          "text": "500 g",
-          "value": 500.0,
-          "max": 500.0,
+          "text": "1000 g",
+          "value": 1000.0,
+          "max": 1000.0,
           "unit": "g",
           "approx": false
         },
         "perTask": {
-          "lammschulter-und-jus": "500 g Lammknochen"
+          "ochsenbacken-und-jus": "1 kg Rinderknochen"
         },
         "perCourse": {
           "gang-3": {
-            "text": "500 g",
-            "value": 500.0,
-            "max": 500.0,
+            "text": "1000 g",
+            "value": 1000.0,
+            "max": 1000.0,
             "unit": "g"
           }
         }
@@ -4292,36 +4293,25 @@
         "unitMixed": true
       },
       {
-        "ingredient": "zitronen",
+        "ingredient": "zitrone",
         "total": {
-          "text": "½ + 1 TL",
-          "value": 0.5,
-          "max": 0.5,
-          "unit": "Stück",
-          "approx": false,
-          "plus": [
-            {
-              "text": "1 TL",
-              "value": 1.0,
-              "max": 1.0,
-              "unit": "TL",
-              "approx": false
-            }
-          ]
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
         },
         "perTask": {
-          "lammschulter-und-jus": "½ Zitrone",
           "selleriepueree": "1 TL Zitronensaft"
         },
         "perCourse": {
           "gang-3": {
-            "text": "½",
-            "value": 0.5,
-            "max": 0.5,
-            "unit": "Stück"
+            "text": "1 TL",
+            "value": 1.0,
+            "max": 1.0,
+            "unit": "TL"
           }
-        },
-        "unitMixed": true
+        }
       },
       {
         "ingredient": "mango",
@@ -4397,7 +4387,7 @@
           "approx": false
         },
         "perTask": {
-          "lammschulter-und-jus": "150 g Zwiebel"
+          "ochsenbacken-und-jus": "150 g Zwiebel"
         },
         "perCourse": {
           "gang-3": {
@@ -4418,7 +4408,7 @@
           "approx": false
         },
         "perTask": {
-          "lammschulter-und-jus": "100 g Karotte"
+          "ochsenbacken-und-jus": "100 g Karotte"
         },
         "perCourse": {
           "gang-3": {
@@ -4439,7 +4429,7 @@
           "approx": false
         },
         "perTask": {
-          "lammschulter-und-jus": "100 g Sellerie",
+          "ochsenbacken-und-jus": "100 g Sellerie",
           "selleriepueree": "600 g Knollensellerie",
           "rosenkohl-zweierlei-und-sellerie-chips": "150 g Sellerie-Scheiben"
         },
@@ -4483,7 +4473,7 @@
           "approx": false
         },
         "perTask": {
-          "lammschulter-und-jus": "4 angedrückte Knoblauchzehen"
+          "ochsenbacken-und-jus": "4 angedrückte Knoblauchzehen"
         },
         "perCourse": {
           "gang-3": {
@@ -4504,10 +4494,10 @@
           "approx": false
         },
         "perTask": {
-          "lammschulter-und-jus": "1 EL gehackter Petersilie"
+          "ziegenkaese-pralinen": "1 EL fein gehackte Petersilie"
         },
         "perCourse": {
-          "gang-3": {
+          "gang-2": {
             "text": "1 EL",
             "value": 1.0,
             "max": 1.0,
@@ -4518,54 +4508,55 @@
       {
         "ingredient": "schnittlauch",
         "total": {
-          "text": ""
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
         },
-        "perTask": {}
+        "perTask": {
+          "ziegenkaese-pralinen": "1 EL fein geschnittener Schnittlauch"
+        },
+        "perCourse": {
+          "gang-2": {
+            "text": "1 EL",
+            "value": 1.0,
+            "max": 1.0,
+            "unit": "EL"
+          }
+        }
       },
       {
         "ingredient": "thymian",
         "total": {
-          "text": "2 Zweige",
-          "value": 2.0,
-          "max": 2.0,
+          "text": "3 Zweige + ½ TL",
+          "value": 3.0,
+          "max": 3.0,
           "unit": "Zweige",
-          "approx": false
+          "approx": false,
+          "plus": [
+            {
+              "text": "½ TL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
         },
         "perTask": {
-          "lammschulter-und-jus": "2 Zweige Thymian"
+          "ziegenkaese-pralinen": "½ TL Thymianblättchen",
+          "ochsenbacken-und-jus": "3 Zweige Thymian"
         },
         "perCourse": {
           "gang-3": {
-            "text": "2 Zweige",
-            "value": 2.0,
-            "max": 2.0,
+            "text": "3 Zweige",
+            "value": 3.0,
+            "max": 3.0,
             "unit": "Zweige"
           }
         },
-        "unitless": [
-          "etwas Thymian"
-        ]
-      },
-      {
-        "ingredient": "rosmarin",
-        "total": {
-          "text": "½ TL",
-          "value": 0.5,
-          "max": 0.5,
-          "unit": "TL",
-          "approx": false
-        },
-        "perTask": {
-          "lammschulter-und-jus": "½ TL fein gehacktem Rosmarin"
-        },
-        "perCourse": {
-          "gang-3": {
-            "text": "½ TL",
-            "value": 0.5,
-            "max": 0.5,
-            "unit": "TL"
-          }
-        }
+        "unitMixed": true
       },
       {
         "ingredient": "basilikum",
@@ -4588,7 +4579,7 @@
           "verjus-limetten-beurre-blanc": "170 g eiskalte Butter",
           "kaisergranat-braten": "je 15 g Butter",
           "selleriepueree": "45 g Butter",
-          "lammbloecke-und-service": "20 g aufschäumender Butter + 25 g eiskalte Butter",
+          "ochsenbacke-und-service": "20 g aufschäumender Butter + 25 g eiskalte Butter",
           "kaffee-crumble": "30 g weiche Butter"
         },
         "perCourse": {
@@ -4810,22 +4801,22 @@
         }
       },
       {
-        "ingredient": "rotwein",
+        "ingredient": "traubensaft",
         "total": {
-          "text": "300 ml",
-          "value": 300.0,
-          "max": 300.0,
+          "text": "150 ml",
+          "value": 150.0,
+          "max": 150.0,
           "unit": "ml",
           "approx": false
         },
         "perTask": {
-          "lammschulter-und-jus": "100 ml Rotwein ×3"
+          "ochsenbacken-und-jus": "150 ml roten Traubensaft"
         },
         "perCourse": {
           "gang-3": {
-            "text": "300 ml",
-            "value": 300.0,
-            "max": 300.0,
+            "text": "150 ml",
+            "value": 150.0,
+            "max": 150.0,
             "unit": "ml"
           }
         }
@@ -5029,15 +5020,14 @@
       {
         "ingredient": "butterschmalz",
         "total": {
-          "text": "2 EL",
-          "value": 2.0,
-          "max": 2.0,
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
           "unit": "EL",
           "approx": false
         },
         "perTask": {
-          "kaisergranat-braten": "je 1 EL Butterschmalz",
-          "lammbloecke-und-service": "1 EL Butterschmalz"
+          "kaisergranat-braten": "je 1 EL Butterschmalz"
         },
         "perCourse": {
           "gang-2": {
@@ -5045,21 +5035,8 @@
             "value": 1.0,
             "max": 1.0,
             "unit": "EL"
-          },
-          "gang-3": {
-            "text": "1 EL",
-            "value": 1.0,
-            "max": 1.0,
-            "unit": "EL"
           }
         }
-      },
-      {
-        "ingredient": "gelatine",
-        "total": {
-          "text": ""
-        },
-        "perTask": {}
       },
       {
         "ingredient": "zucker",
@@ -5161,20 +5138,20 @@
       {
         "ingredient": "tomatenmark",
         "total": {
-          "text": "1 EL",
-          "value": 1.0,
-          "max": 1.0,
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
           "unit": "EL",
           "approx": false
         },
         "perTask": {
-          "lammschulter-und-jus": "1 EL (15 g) Tomatenmark"
+          "ochsenbacken-und-jus": "2 EL (30 g) Tomatenmark"
         },
         "perCourse": {
           "gang-3": {
-            "text": "1 EL",
-            "value": 1.0,
-            "max": 1.0,
+            "text": "2 EL",
+            "value": 2.0,
+            "max": 2.0,
             "unit": "EL"
           }
         }
@@ -5189,7 +5166,7 @@
           "approx": false
         },
         "perTask": {
-          "lammschulter-und-jus": "1 Lorbeerblatt"
+          "ochsenbacken-und-jus": "1 Lorbeerblatt"
         },
         "perCourse": {
           "gang-3": {
@@ -5203,16 +5180,16 @@
       {
         "ingredient": "salz",
         "total": {
-          "text": "21 g + 3–3½ TL + 5 Prise",
+          "text": "21 g + 2½ TL + 5 Prise",
           "value": 21.0,
           "max": 21.0,
           "unit": "g",
           "approx": false,
           "plus": [
             {
-              "text": "3–3½ TL",
-              "value": 3.0,
-              "max": 3.5,
+              "text": "2½ TL",
+              "value": 2.5,
+              "max": 2.5,
               "unit": "TL",
               "approx": false
             },
@@ -5230,10 +5207,10 @@
           "tomatenwasser-wuerzen-und-anrichten": "1 Prise Salz",
           "mango-gel": "1 Prise Salz",
           "walnusscrumble": "1 Prise Salz",
-          "lammschulter-und-jus": "2,5–3 TL Salz",
+          "ochsenbacken-und-jus": "2 TL Salz",
           "selleriepueree": "½ TL Salz",
           "rosenkohl-zweierlei-und-sellerie-chips": "12 g Salz/L",
-          "lammbloecke-und-service": "1 Prise Salz",
+          "ochsenbacke-und-service": "1 Prise Salz",
           "kaffee-crumble": "1 Prise Salz",
           "parfait": "2 g Salz"
         },
@@ -5269,7 +5246,7 @@
           "approx": false
         },
         "perTask": {
-          "lammschulter-und-jus": "1 EL Öl"
+          "ochsenbacken-und-jus": "1 EL Öl"
         },
         "perCourse": {
           "gang-3": {
@@ -5283,34 +5260,31 @@
       {
         "ingredient": "wasser",
         "total": {
-          "text": "2 EL + 12 g",
-          "value": 2.0,
-          "max": 2.0,
-          "unit": "EL",
-          "approx": false,
-          "plus": [
-            {
-              "text": "12 g",
-              "value": 12.0,
-              "max": 12.0,
-              "unit": "g",
-              "approx": false
-            }
-          ]
+          "text": "145–160 ml",
+          "value": 145.0,
+          "max": 160.0,
+          "unit": "ml",
+          "approx": false
         },
         "perTask": {
           "mango-gel": "2 EL Wasser",
-          "rosenkohl-zweierlei-und-sellerie-chips": "12 g"
+          "ochsenbacken-und-jus": "100 ml Wasser",
+          "ochsenbacke-und-service": "1–2 EL Wasser"
         },
         "perCourse": {
+          "gang-3": {
+            "text": "115–130 ml",
+            "value": 115.0,
+            "max": 130.0,
+            "unit": "ml"
+          },
           "gang-2": {
-            "text": "2 EL",
-            "value": 2.0,
-            "max": 2.0,
-            "unit": "EL"
+            "text": "30 ml",
+            "value": 30.0,
+            "max": 30.0,
+            "unit": "ml"
           }
-        },
-        "unitMixed": true
+        }
       }
     ],
     "shopping": [
@@ -5322,13 +5296,13 @@
             "ingredient": "verjus",
             "name": "Verjus",
             "need": {
-              "text": "110 ml",
-              "value": 110.0,
-              "max": 110.0,
+              "text": "265–270 ml",
+              "value": 265.0,
+              "max": 270.0,
               "unit": "ml",
               "approx": false
             },
-            "display": "110 ml",
+            "display": "265–270 ml",
             "inStock": false,
             "buy": {
               "text": "500 ml"
@@ -5392,36 +5366,36 @@
         "group": null,
         "items": [
           {
-            "ingredient": "lammschulter",
-            "name": "Lammschulter **mit Knochen**",
+            "ingredient": "ochsenbacken",
+            "name": "Ochsenbacken",
             "need": {
-              "text": "2000–2200 g",
-              "value": 2000.0,
-              "max": 2200.0,
+              "text": "1600–2000 g",
+              "value": 1600.0,
+              "max": 2000.0,
               "unit": "g",
               "approx": false
             },
-            "display": "2000–2200 g",
+            "display": "1600–2000 g",
             "inStock": false,
             "buy": {
-              "text": "2–2,2 kg"
+              "text": "1,6–2 kg"
             },
-            "note": "Alternative: türkischer Metzger, s. Offen"
+            "note": "5–6 Stück; frisch bevorzugt, TK okay; Alternative: Metzger auf Bestellung"
           },
           {
-            "ingredient": "lammknochen",
-            "name": "Lammknochen",
+            "ingredient": "rinderknochen",
+            "name": "Rinderknochen",
             "need": {
-              "text": "500 g",
-              "value": 500.0,
-              "max": 500.0,
+              "text": "1000 g",
+              "value": 1000.0,
+              "max": 1000.0,
               "unit": "g",
               "approx": false
             },
-            "display": "500 g",
+            "display": "1000 g",
             "inStock": false,
             "buy": {
-              "text": "gesägt, 500 g"
+              "text": "gesägt, 1 kg"
             },
             "note": "Jus Gang 3"
           },
@@ -5484,28 +5458,19 @@
             }
           },
           {
-            "ingredient": "zitronen",
-            "name": "Zitronen",
+            "ingredient": "zitrone",
+            "name": "Zitrone",
             "need": {
-              "text": "½ + 1 TL",
-              "value": 0.5,
-              "max": 0.5,
-              "unit": "Stück",
-              "approx": false,
-              "plus": [
-                {
-                  "text": "1 TL",
-                  "value": 1.0,
-                  "max": 1.0,
-                  "unit": "TL",
-                  "approx": false
-                }
-              ]
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
             },
-            "display": "½ + 1 TL",
+            "display": "1 TL",
             "inStock": false,
             "buy": {
-              "text": "2 Stück"
+              "text": "1 Stück"
             }
           },
           {
@@ -5650,35 +5615,35 @@
             "ingredient": "schnittlauch",
             "name": "Schnittlauch",
             "need": {
-              "text": ""
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
             },
-            "display": "",
+            "display": "1 EL",
             "inStock": false
           },
           {
             "ingredient": "thymian",
             "name": "Thymian",
             "need": {
-              "text": "2 Zweige",
-              "value": 2.0,
-              "max": 2.0,
+              "text": "3 Zweige + ½ TL",
+              "value": 3.0,
+              "max": 3.0,
               "unit": "Zweige",
-              "approx": false
+              "approx": false,
+              "plus": [
+                {
+                  "text": "½ TL",
+                  "value": 0.5,
+                  "max": 0.5,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
             },
-            "display": "2 Zweige",
-            "inStock": false
-          },
-          {
-            "ingredient": "rosmarin",
-            "name": "Rosmarin",
-            "need": {
-              "text": "½ TL",
-              "value": 0.5,
-              "max": 0.5,
-              "unit": "TL",
-              "approx": false
-            },
-            "display": "½ TL",
+            "display": "3 Zweige + ½ TL",
             "inStock": false
           },
           {
@@ -5913,21 +5878,21 @@
         "group": "Getränke",
         "items": [
           {
-            "ingredient": "rotwein",
-            "name": "Rotwein",
+            "ingredient": "traubensaft",
+            "name": "Roter Traubensaft",
             "need": {
-              "text": "300 ml",
-              "value": 300.0,
-              "max": 300.0,
+              "text": "150 ml",
+              "value": 150.0,
+              "max": 150.0,
               "unit": "ml",
               "approx": false
             },
-            "display": "300 ml",
+            "display": "150 ml",
             "inStock": false,
             "buy": {
-              "text": "kräftig, 1 Flasche"
+              "text": "1 Flasche"
             },
-            "note": "alkoholfreie Option: 150 ml Verjus + 150 ml Wasser; Jus Gang 3 (300 ml, wird in Schüben trocken reduziert)"
+            "note": "Direktsaft, ohne Zuckerzusatz; Jus Gang 3 (150 ml)"
           },
           {
             "ingredient": "wodka",
@@ -6055,27 +6020,14 @@
             "ingredient": "butterschmalz",
             "name": "Butterschmalz",
             "need": {
-              "text": "2 EL",
-              "value": 2.0,
-              "max": 2.0,
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
               "unit": "EL",
               "approx": false
             },
-            "display": "2 EL",
+            "display": "1 EL",
             "inStock": false,
-            "pantry": true
-          },
-          {
-            "ingredient": "gelatine",
-            "name": "Gelatine",
-            "need": {
-              "text": ""
-            },
-            "display": "",
-            "inStock": false,
-            "buy": {
-              "text": "1 Blatt"
-            },
             "pantry": true
           },
           {
@@ -6147,13 +6099,13 @@
             "ingredient": "tomatenmark",
             "name": "Tomatenmark",
             "need": {
-              "text": "1 EL",
-              "value": 1.0,
-              "max": 1.0,
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
               "unit": "EL",
               "approx": false
             },
-            "display": "1 EL",
+            "display": "2 EL",
             "inStock": false,
             "pantry": true
           },
@@ -6175,16 +6127,16 @@
             "ingredient": "salz",
             "name": "Salz",
             "need": {
-              "text": "21 g + 3–3½ TL + 5 Prise",
+              "text": "21 g + 2½ TL + 5 Prise",
               "value": 21.0,
               "max": 21.0,
               "unit": "g",
               "approx": false,
               "plus": [
                 {
-                  "text": "3–3½ TL",
-                  "value": 3.0,
-                  "max": 3.5,
+                  "text": "2½ TL",
+                  "value": 2.5,
+                  "max": 2.5,
                   "unit": "TL",
                   "approx": false
                 },
@@ -6197,7 +6149,7 @@
                 }
               ]
             },
-            "display": "21 g + 3–3½ TL + 5 Prise",
+            "display": "21 g + 2½ TL + 5 Prise",
             "inStock": false,
             "pantry": true
           },
@@ -6219,22 +6171,13 @@
             "ingredient": "wasser",
             "name": "Wasser",
             "need": {
-              "text": "2 EL + 12 g",
-              "value": 2.0,
-              "max": 2.0,
-              "unit": "EL",
-              "approx": false,
-              "plus": [
-                {
-                  "text": "12 g",
-                  "value": 12.0,
-                  "max": 12.0,
-                  "unit": "g",
-                  "approx": false
-                }
-              ]
+              "text": "145–160 ml",
+              "value": 145.0,
+              "max": 160.0,
+              "unit": "ml",
+              "approx": false
             },
-            "display": "2 EL + 12 g",
+            "display": "145–160 ml",
             "inStock": false,
             "pantry": true
           }
