@@ -117,6 +117,11 @@ textarea{width:100%;border:1px solid var(--line);border-radius:8px;background:va
 .variants{display:flex;flex-wrap:wrap;gap:8px 16px;margin:0 0 14px}
 .variants label.var{display:inline-flex;align-items:center;gap:8px;font-weight:700}
 .variants select{font:inherit;font-weight:700;min-height:40px;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+.serve{align-items:center}
+.serve input[type=time]{font:inherit;font-weight:700;min-height:40px;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+.phase .span{margin:-4px 0 8px;color:var(--muted);font-size:14px}
+.gantt .ph small{display:block;font-family:var(--body);font-weight:400;font-size:11px;color:var(--muted);margin-top:2px}
+.over{color:var(--alarm);font-weight:700}
 mark.variant{background:var(--why);outline:1px solid var(--line);border-radius:3px;padding:0 2px}
 .row .more{font-size:14px;font-weight:700;color:var(--c);margin-top:4px}
 .sheet-head .nav{display:inline-flex;align-items:center;gap:4px}

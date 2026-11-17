@@ -2,7 +2,8 @@
 import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
 import { escapeTilde, fmtAmount, fmtClock, highlight, isoSeconds, noteMarkdown, normalizeState, remainderAfterAction, textWithAction,
-         scaleAmount, scaleStepText, timerChoices, moreCount, resetState, isActive, normalizeTimers, plainTitle, shortTitle, timerOrigin, selection, selectionKey, variantText } from "../kochmodus/lib.js";
+         scaleAmount, scaleStepText, timerChoices, moreCount, resetState, isActive, normalizeTimers, plainTitle, shortTitle, timerOrigin, selection, selectionKey, variantText,
+         fmtSpan, phaseLabel, shiftClock, stepSeconds, timeline } from "../kochmodus/lib.js";
 
 const r = JSON.parse(readFileSync(new URL("../schema/beispiele/thit-kho-trung.json", import.meta.url), "utf8"));
 const ing = Object.fromEntries(r.ingredients.map((i) => [i.id, i]));
@@ -68,7 +69,7 @@ t("Alter localStorage-Zustand: Timer-Felder fallen weg, Müll verworfen", () => 
   assert.equal("timers" in s, false, "Timer leben in km:timers, nicht im Rezept-Zustand");
   assert.equal(s.factor, 2); assert.equal(s.done.karamell, true); assert.deepEqual(s.shop, {});
   assert.equal(s.note, "");
-  assert.deepEqual(normalizeState({ timers: "quatsch", done: [], factor: -1 }), { done: {}, note: "", shop: {}, factor: 1, order: "ablauf", variant: {} });
+  assert.deepEqual(normalizeState({ timers: "quatsch", done: [], factor: -1 }), { done: {}, note: "", shop: {}, factor: 1, order: "ablauf", variant: {}, serve: null });
 });
 t("Gemischter Bruch: 1½ EL ×2 → 3 EL, ×0,5 → ¾ EL; 1,5 wird „1½“", () => {
   const st = { ingredients: [{ ref: "fischsauce", amount: { text: "1½ EL Fischsauce", value: 1.5, unit: "EL" } }] };
@@ -120,5 +121,36 @@ t("Timer rezeptübergreifend: Herkunft nur bei fremdem Rezept, Kurztitel", () =>
   assert.deepEqual(timerOrigin(t, "backen/vollkornbroetchen"), { foreign: true, text: "Bò lúc lắc · 8. Chargen braten" });
   assert.deepEqual(timerOrigin({ id: "q", end: 1, recipe: null, stepText: "" }, "x"), { foreign: false, text: "" }, "Schnell-Timer aus der Liste");
   assert.deepEqual(normalizeTimers([null, { id: 1 }, { id: 2, end: 5 }]), [{ id: 2, end: 5 }]);
+});
+t("Essenszeit: Uhrzeit verschieben, Dauer, Phasen-Label", () => {
+  assert.equal(shiftClock("19:00", -4 * 3600), "15:00");
+  assert.equal(shiftClock("23:30", 3600), "00:30", "über Mitternacht");
+  assert.equal(shiftClock("00:10", -1200), "23:50");
+  assert.equal(fmtSpan(1500), "25 Min."); assert.equal(fmtSpan(5400), "1 h 30"); assert.equal(fmtSpan(7200), "2 h");
+  assert.equal(stepSeconds({ duration: { min: "PT10M", max: "PT20M" } }), 600);
+  assert.equal(stepSeconds({ duration: { typical: "PT5M", min: "PT1M" } }), 300); assert.equal(stepSeconds({}), 0);
+  assert.equal(phaseLabel({ label: "17:30 Uhr (1,5h vorher)", at: "-PT1H30M", clock: "17:30" }, "18:00"), "16:30 Uhr (1,5h vorher)");
+  assert.equal(phaseLabel({ label: "Gang 2 (+0:20)", at: "+PT20M" }, "19:00"), "Gang 2 (+0:20) · 19:20 Uhr");
+  assert.equal(phaseLabel({ label: "T-1", day: -1 }, "19:00"), "T-1");
+  assert.equal(phaseLabel({ label: "17:30 Uhr", at: "-PT1H30M", clock: "17:30" }, null), "17:30 Uhr");
+  assert.equal(normalizeState({ serve: "18:30" }).serve, "18:30"); assert.equal(normalizeState({ serve: "25:00" }).serve, null);
+  assert.equal(resetState(normalizeState({ serve: "18:30", done: { a: true } })).serve, "18:30", "Neu kochen behält die Essenszeit");
+});
+t("Zeitplan-Rechnung: Einträge folgen aufeinander, passive Schritte schieben nicht, Phasen-Ende und aktive Arbeit", () => {
+  const st = (id, task, min, attention) => [id, { step: { id, duration: { typical: `PT${min}M` }, attention }, task: { id: task } }];
+  const ctx = Object.fromEntries([st("a", "x", 10), st("b", "x", 60, "passive"), st("c", "y", 5), st("d", "z", 15), st("e", "z", 20)]);
+  const sch = { phases: [{ id: "t-1", label: "T-1", day: -1 }, { id: "uhr", label: "18:00 Uhr", day: 0, part: "service", at: "-PT1H", clock: "18:00" },
+                         { id: "g2", label: "Gang 2", day: 0, part: "service", at: "+PT20M" }],
+                entries: [{ phase: "t-1", text: "Vortag", steps: ["d", "e"] }, { phase: "uhr", text: "X", steps: ["a", "b"] }, { phase: "uhr", text: "Y", steps: ["c"] },
+                          { phase: "g2", text: "vor dem Gang", steps: ["d"], at: { ref: "course:g2:serve", offset: "-PT30M" } }, { phase: "g2", text: "ohne Schritte" }] };
+  const { segs, win } = timeline(sch, ctx, { g2: 1200 });
+  const [x, y, z, , leer] = sch.entries.slice(1).map((e) => segs.get(e)).concat([segs.get(sch.entries[4])]);
+  assert.deepEqual(x.map((g) => [g.id, g.start, g.end, g.passive]), [["a", -3600, -3000, false], ["b", -3000, 600, true]]);
+  assert.deepEqual(y.map((g) => [g.start, g.end]), [[-3000, -2700]], "Y beginnt nach dem aktiven Schritt von X, nicht nach dem Schmoren");
+  assert.deepEqual(z.map((g) => [g.start, g.end, g.timed]), [[-600, 300, true]], "eigener Anker: 30 Min. vor Gang 2 (+0:20)");
+  assert.deepEqual(leer, []);
+  assert.deepEqual(win.uhr, { timed: true, start: -3600, end: -2700, active: 900 });
+  assert.deepEqual(win["t-1"], { timed: false, start: null, end: null, active: 2100 });
+  assert.equal(segs.get(sch.entries[0])[1].timed, false);
 });
 console.log(`${n} Tests ok`);

@@ -1,5 +1,5 @@
 import { escapeTilde, plainTitle, fmtAmount, fmtClock, highlight, isActive, isoSeconds, moreCount, normalizeState, normalizeTimers,
-         noteMarkdown, resetState, shortTitle, timerOrigin,
+         noteMarkdown, phaseLabel, fmtSpan, resetState, shiftClock, shortTitle, timeline, timerOrigin,
          scaleAmount, scaleStepText, selection, selectionKey, textWithAction, timerChoices, variantText } from "./lib.js";
 
 const params = new URLSearchParams(location.search);
@@ -63,8 +63,11 @@ function stepNumbers() {
   }
   return nums;
 }
-const num = (s) => stepNumbers()[s.id] ?? s.label;
-const labelOf = (ref) => { const s = stepOf(ref.replace(/^step:/, "")); return s && num(s); }; // ausgeblendete Vorgänger fallen weg
+// Im Menü mischen Ablauf und Plan die Gänge: dort trägt die Nummer den Gang („3.7“ = Gang 3, Schritt 7).
+// „Nach Gang“ zeigt die Gänge getrennt und bleibt bei der Nummer aus dem Rezepttext.
+const coursePrefix = (id) => { const m = /^gang-(\d+)-/.exec(id); return isMenu() && m ? m[1] + "." : ""; };
+const num = (s, prefixed = false) => (prefixed ? coursePrefix(s.id) : "") + (stepNumbers()[s.id] ?? s.label);
+const labelOf = (ref, prefixed = false) => { const s = stepOf(ref.replace(/^step:/, "")); return s && num(s, prefixed); }; // ausgeblendete Vorgänger fallen weg
 function scaled(text, step) {
   const v = variantText(text, step, sel());
   return scaleStepText(v.text, { ...step, ingredients: v.ingredients }, factor(), ingById);
@@ -73,18 +76,57 @@ function courseTitle(c) { return c ? (recipe.courses?.find((x) => x.ref === c.id
 function schedules() { return recipe.sections.filter((s) => s.type === "schedule" && live(s.schedule)); }
 function schedule() { return schedules()[0]; }
 const liveEntries = (sch) => sch.entries.filter(live);
-// Schritte eines Zeitplan-Eintrags: genannte Schritte und Tasks vereinigt, Schritte zuerst, ohne Dubletten
-function entrySteps(e, byId, byTask) {
-  const seen = new Set(), xs = [];
-  for (const x of [...(e.steps || []).map((id) => byId[id]), ...(e.tasks || []).flatMap((t) => byTask[t] || [])]) {
-    if (x && !seen.has(x.step.id)) { seen.add(x.step.id); xs.push(x); }
+// Schritte eines Zeitplan-Eintrags: e.steps ist vollständig und in Rezeptreihenfolge (Parser: namentlich schlägt
+// Komponente) — hier wird nichts mehr aus e.tasks ergänzt, sonst stünden Schritte doppelt und verdreht im Ablauf.
+function entrySteps(e, byId) {
+  return (e.steps || []).map((id) => byId[id]).filter(Boolean);
+}
+// ---- Essenszeit: Uhrzeiten des Zeitplans hängen an einer einstellbaren Zeit (Default: die des Rezepts) ----
+// Jeder Zeitplan (Varianten!) bringt seine eigene Vorgabe mit; die eigene Wahl gilt für alle.
+const defaultServe = (sec = schedule()) => sec?.schedule.anchorOverride?.time || recipe.anchor?.time || null;
+const serveTime = (sec = schedule()) => state.serve || defaultServe(sec);
+const hasTiming = () => { const sch = schedule()?.schedule; return !!sch && (sch.phases.some((p) => p.at != null) || sch.entries.some((e) => e.at)); };
+const clk = (secs, sec) => shiftClock(serveTime(sec), secs);
+function timelineOf(sec) {
+  const serve = Object.fromEntries((recipe.courses || []).map((c) => [c.ref, isoSeconds(c.serve) || 0]));
+  return timeline({ ...sec.schedule, entries: liveEntries(sec.schedule) }, stepIndex().byId, serve);
+}
+// „19:50–20:10“ für einen verzeiteten Schritt bzw. Eintrag; leer ohne Essenszeit
+const whenOf = (segs, sec) => {
+  const xs = (segs || []).filter((g) => g.timed);
+  if (!xs.length || !serveTime(sec)) return "";
+  const a = Math.min(...xs.map((g) => g.start)), b = Math.max(...xs.map((g) => g.end));
+  return b > a ? `${clk(a, sec)}–${clk(b, sec)}` : clk(a, sec);
+};
+// Zeile unter dem Phasen-Titel: bis wann die Phase dauert bzw. wie viel aktive Arbeit in ihr steckt
+function phaseSpan(p, sec, win) {
+  const w = win[p.id], sch = sec.schedule;
+  if (!w) return "";
+  if (!w.timed || !serveTime(sec)) return w.active ? `ca. ${fmtSpan(w.active)} aktive Arbeit` : "";
+  if (w.end == null || w.end <= w.start) return "";
+  const next = Math.min(...sch.phases.map((x) => (x.at != null && x.part === "service" ? isoSeconds(x.at) : null)).filter((t) => t != null && t > w.start));
+  return `bis ca. ${clk(w.end, sec)}` + (w.end > next ? ` <span class="over">— läuft in den nächsten Block (${clk(next, sec)})</span>` : "");
+}
+function renderServe() {
+  const el = $("#serve");
+  el.hidden = !hasTiming();
+  if (el.hidden) return;
+  const def = defaultServe(), st = serveTime(), sec = schedule();
+  let sum = "Uhrzeit eintragen — dann stehen im Plan und im Ablauf Uhrzeiten.";
+  if (st) {
+    const { segs } = timelineOf(sec), ends = [...segs.values()].flat().filter((g) => g.timed).map((g) => g.end);
+    const cs = isMenu() ? (recipe.courses || []).map((c) => `Gang ${c.n} ${clk(isoSeconds(c.serve) || 0)}`) : [];
+    const last = Math.max(0, ...ends, ...(recipe.courses || []).map((c) => isoSeconds(c.serve) || 0));
+    sum = [...cs, last > 0 ? `Ende ca. ${clk(last)}` : ""].filter(Boolean).join(" · ");
   }
-  return xs;
+  const reset = state.serve && def && state.serve !== def ? `<button class="btn" id="serveReset">↺ ${esc(def)}</button>` : "";
+  // Beim Tippen im Zeitfeld nur die Zusammenfassung erneuern, sonst verliert das Feld den Fokus
+  if (document.activeElement?.id === "serveTime") { $("#serveSum").innerHTML = esc(sum); $("#serveReset")?.remove(); el.querySelector("label").insertAdjacentHTML("afterend", reset); return; }
+  el.innerHTML = `<label class="var">${esc(recipe.anchor?.time ? recipe.anchor.label : "Essen")} um <input type="time" id="serveTime" value="${esc(st || "")}"></label>${reset}<span class="fine" id="serveSum">${esc(sum)}</span>`;
 }
 function stepIndex() {
-  const all = steps(), byId = Object.fromEntries(all.map((x) => [x.step.id, x])), byTask = {};
-  for (const x of all) (byTask[x.task.id] ||= []).push(x);
-  return { all, byId, byTask };
+  const all = steps(), byId = Object.fromEntries(all.map((x) => [x.step.id, x]));
+  return { all, byId };
 }
 
 // ---- Ansichten -------------------------------------------------------------
@@ -98,15 +140,16 @@ function runBadge(step) {
   if (rem === null) return "";
   return `<span class="run ${rem <= 0 ? "ring" : ""}" data-run="${step.id}">${rem <= 0 ? "Fertig" : fmtClock(rem / 1000)}</span>`;
 }
-function stepRow(s, course = null, task = null) {
+function stepRow(s, course = null, task = null, when = "") {
   const dur = s.duration ? `${s.duration.source || ""}${s.duration.estimated ? " (geschätzt)" : ""}` : "";
-  const deps = !s.after ? "" : s.after.length ? "nach " + s.after.map(labelOf).filter(Boolean).join(", ") : "jederzeit";
-  const meta = [course ? courseTitle(course) : "", dur, deps].filter(Boolean).join(" · ");
+  const pre = course != null; // mit Gang im Bild (Ablauf): Nummern mit Gang-Präfix
+  const deps = !s.after ? "" : s.after.length ? "nach " + s.after.map((r) => labelOf(r, pre)).filter(Boolean).join(", ") : "jederzeit";
+  const meta = [when, course ? courseTitle(course) : "", dur, deps].filter(Boolean).join(" · ");
   const title = s.title || (task && task.name !== recipe.title ? task.name : "");
   return `<div class="row ${state.done[s.id] ? "done" : ""} ${s.after && !s.after.length ? "free" : ""} ${s.id === openId ? "current" : ""}" data-step="${s.id}">
-    <input type="checkbox" class="chk" data-done="${s.id}" aria-label="${esc(title || num(s))} erledigt" ${state.done[s.id] ? "checked" : ""}>
+    <input type="checkbox" class="chk" data-done="${s.id}" aria-label="${esc(title || num(s, pre))} erledigt" ${state.done[s.id] ? "checked" : ""}>
     <div class="body" data-open="${s.id}">
-      <div class="t">${esc(num(s))}. ${mdInline(title)}</div>
+      <div class="t">${esc(num(s, pre))}${pre && coursePrefix(s.id) ? "" : "."} ${mdInline(title)}</div>
       ${meta ? `<div class="m">${esc(meta)}</div>` : ""}
       <div class="a md">${md(scaled(s.action, s))}</div>${(n => n ? `<div class="more">+ ${n} weitere${n === 1 ? "r Handgriff" : " Handgriffe"} ›</div>` : "")(moreCount(s))}${runBadge(s)}
     </div></div>`;
@@ -136,17 +179,18 @@ function renderKochen() {
     main.innerHTML = html; return;
   }
   // Ablauf (Default): Reihenfolge = Zeitplan (Phasen → Einträge → Schritte); Gänge mischen sich.
-  const { all, byId, byTask } = stepIndex();
-  const placed = new Set();
+  const { all, byId } = stepIndex();
+  const placed = new Set(), { segs, win } = timelineOf(sec);
   for (const p of sec.schedule.phases) {
     const es = liveEntries(sec.schedule).filter((e) => e.phase === p.id);
     if (!es.length) continue;
-    html += `<section class="phase"><h2>${esc(p.label)}</h2>`;
+    const span = phaseSpan(p, sec, win);
+    html += `<section class="phase"><h2>${esc(phaseLabel(p, serveTime(sec)))}</h2>${span ? `<p class="span">${span}</p>` : ""}`;
     for (const e of es) {
-      const xs = entrySteps(e, byId, byTask);
+      const xs = entrySteps(e, byId);
       if (!xs.length) { html += plainRow(`e:${p.id}:${e.text}`, e.text, e.course ? courseTitle(courses().find((c) => c.id === e.course)) : ""); continue; }
       html += `<p class="entry-head">${mdInline(e.text)}${e.derived ? ' <span class="fine">(abgeleitet)</span>' : ""}</p>`;
-      for (const x of xs) { placed.add(x.step.id); html += stepRow(x.step, x.course, x.task); }
+      for (const x of xs) { placed.add(x.step.id); html += stepRow(x.step, x.course, x.task, whenOf((segs.get(e) || []).filter((g) => g.id === x.step.id), sec)); }
     }
     html += `</section>`;
   }
@@ -161,20 +205,20 @@ function renderPlan() {
 }
 function planHtml(sec) {
   const sch = { ...sec.schedule, entries: liveEntries(sec.schedule) }, lanes = [{ id: null, name: "Menü" }, ...courses().map((c) => ({ id: c.id, name: courseTitle(c) }))];
-  const { byId, byTask } = stepIndex();
-  const ids = (e) => entrySteps(e, byId, byTask).map((x) => x.step.id);
+  const { byId } = stepIndex(), { segs, win } = timelineOf(sec);
+  const ids = (e) => entrySteps(e, byId).map((x) => x.step.id);
   const done = (e) => { const xs = ids(e); return xs.length && xs.every((id) => state.done[id]); };
   let h = `<div class="gantt-scroll"><div class="gantt" style="--cols:${sch.phases.length}"><div class="ph corner"></div>`;
-  h += sch.phases.map((p) => `<div class="ph">${esc(p.label)}</div>`).join("");
+  h += sch.phases.map((p) => { const span = phaseSpan(p, sec, win); return `<div class="ph">${esc(phaseLabel(p, serveTime(sec)))}${span ? `<small>${span}</small>` : ""}</div>`; }).join("");
   for (const lane of lanes) {
     h += `<div class="lane">${esc(lane.name)}</div>`;
-    for (const p of sch.phases) {
+    for (const [col, p] of sch.phases.entries()) {
       const es = sch.entries.filter((e) => e.phase === p.id && (e.course || null) === lane.id);
       h += `<div class="cell">` + es.map((e) => {
         // Chip öffnet den ersten Schritt; data-steps nennt alle, damit Wischen keinen auslässt
         const xs = ids(e), first = xs[0];
-        return `<button class="chip ${done(e) ? "done" : ""} ${e.derived ? "derived" : ""} ${first ? "" : "plain"}" ${first ? `data-open="${first}" data-steps="${xs.join(" ")}"` : ""}>
-          <span class="t">${mdInline(e.text)}</span>${e.at ? `<span class="m">${esc(e.at.offset.replace(/^([+-]?)PT/, "$1").toLowerCase())} zu ${esc(e.at.ref.split(":")[1])}</span>` : ""}</button>`;
+        return `<button class="chip ${done(e) ? "done" : ""} ${e.derived ? "derived" : ""} ${first ? "" : "plain"}" ${first ? `data-open="${first}" data-steps="${xs.join(" ")}" data-col="${col}"` : ""}>
+          <span class="t">${mdInline(e.text)}</span>${whenOf(segs.get(e), sec) ? `<span class="m">${whenOf(segs.get(e), sec)}</span>` : e.at ? `<span class="m">${esc(e.at.offset.replace(/^([+-]?)PT/, "$1").toLowerCase())} zu ${esc(e.at.ref.split(":")[1])}</span>` : ""}</button>`;
       }).join("") + `</div>`;
     }
   }
@@ -253,7 +297,7 @@ function renderVariants() {
 }
 function renderHeader() {
   $("#title").textContent = plainTitle(recipe.title);
-  renderVariants();
+  renderVariants(); renderServe();
   const y = recipe.yields?.value ? fmtAmount(scaleAmount({ value: recipe.yields.value, unit: recipe.yields.unit }, factor())) : recipe.yields?.text || "";
   $("#meta").textContent = [recipe.persons?.text || y, recipe.times?.text].filter(Boolean).join(" · ");
   const all = steps(), d = all.filter(({ step }) => state.done[step.id]).length;
@@ -273,12 +317,12 @@ function renderSheet() {
   if (!ctx) return;
   const { step: s, task, course } = ctx;
   const choices = (s.timers || []).flatMap((t, i) => timerChoices(t.duration).map((secs) => ({ i, label: t.label, secs })));
-  const lbl = [course ? courseTitle(course) : null, task.name !== recipe.title ? task.name.replace(/\\~/g, "~") : null, `Schritt ${num(s)}`].filter(Boolean).join(" · ");
+  const lbl = [course ? courseTitle(course) : null, task.name !== recipe.title ? task.name.replace(/\\~/g, "~") : null, `Schritt ${num(s, true)}`].filter(Boolean).join(" · ");
   const scaledStep = { ...s, action: scaled(s.action, s) };
   const body = highlight(textWithAction(scaled(s.text, s), scaledStep), s);
   const details = [];
   if (s.duration) details.push(["Dauer", `${s.duration.source || [s.duration.min, s.duration.max].filter(Boolean).join("–") || s.duration.typical}${s.duration.estimated ? " (geschätzt)" : ""}`]);
-  if (s.after) details.push(["Voraussetzung", s.after.length ? "Schritt " + s.after.map(labelOf).filter(Boolean).join(", ") : "keine — jederzeit möglich"]);
+  if (s.after) details.push(["Voraussetzung", s.after.length ? "Schritt " + s.after.map((r) => labelOf(r, true)).filter(Boolean).join(", ") : "keine — jederzeit möglich"]);
   if (s.start) details.push(["Zeitpunkt", `${s.start.offset.source || s.start.offset.min || s.start.offset.typical} (relativ zu ${esc(s.start.ref)})`]);
   if (s.temps?.length) details.push(["Temperatur", s.temps.map((t) => t.text).join(" · ")]);
   if (s.endCondition) details.push(["Fertig wenn", s.endCondition.text]);
@@ -300,7 +344,9 @@ function renderSheet() {
 // Reihenfolge, wie die Hauptansicht sie gerade zeigt (Ablauf, nach Gang, Plan …); Dubletten nur einmal.
 // Plan-Chips stehen für mehrere Schritte (data-steps) — gewischt wird durch jeden davon.
 function visibleOrder() {
-  const ids = [...main.querySelectorAll("[data-open]")].flatMap((el) => el.dataset.steps?.split(" ") || [el.dataset.open]);
+  // Plan: das Raster steht Gang für Gang im DOM — gewischt wird zeitlich, Phase für Phase (stabil: Gänge in ihrer Reihenfolge)
+  const els = [...main.querySelectorAll("[data-open]")].sort((a, b) => (+a.dataset.col || 0) - (+b.dataset.col || 0));
+  const ids = els.flatMap((el) => el.dataset.steps?.split(" ") || [el.dataset.open]);
   return [...new Set(ids.length ? ids : steps().map((x) => x.step.id))];
 }
 function stepNav(dir) {
@@ -459,6 +505,7 @@ document.addEventListener("click", (e) => {
   const v = e.target.closest("[data-view]"); if (v) { view = v.dataset.view; renderAll(); return; }
   const f = e.target.closest("[data-factor]"); if (f) { state.factor = +f.dataset.factor; save(); renderAll(); return; }
   const od = e.target.closest("[data-order]"); if (od) { state.order = od.dataset.order; save(); renderMain(); return; }
+  if (e.target.id === "serveReset") { state.serve = null; save(); document.activeElement?.blur(); renderAll(); return; }
   if (e.target.id === "copyMd") {
     const txt = exportMarkdown();
     (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => toast("Kopiert"))
@@ -475,6 +522,7 @@ document.addEventListener("change", (e) => {
     if (t.checked) state.done[t.dataset.done] = true; else delete state.done[t.dataset.done]; save(); renderAll();
   }
   else if (t.dataset.shop) { state.shop[t.dataset.shop] = t.checked; save(); t.closest("li").classList.toggle("have", t.checked); }
+  else if (t.id === "serveTime") { state.serve = t.value && t.value !== defaultServe() ? t.value : null; save(); renderAll(); }
   else if (t.id === "factor") { state.factor = +t.value || 1; save(); renderAll(); }
   else if (t.dataset.variant) { state.variant = { ...state.variant, [t.dataset.variant]: t.value }; save(); renderAll(); }
 });

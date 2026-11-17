@@ -120,6 +120,64 @@ export function fmtClock(secs) {
   return (h ? `${h}:` : "") + String(m).padStart(h ? 2 : 1, "0") + ":" + String(r).padStart(2, "0");
 }
 
+// ---- Zeitplan mit einstellbarer Essenszeit -------------------------------------
+// Dauer eines Schritts in Sekunden (typical, sonst min, sonst max) — wie Check H (timing.py: _dur)
+export function stepSeconds(step) {
+  const d = step?.duration || {};
+  return isoSeconds(d.typical) ?? isoSeconds(d.min) ?? isoSeconds(d.max) ?? 0;
+}
+// „19:00“ + Sekunden → „20:15“ (über Mitternacht hinweg)
+export function shiftClock(hhmm, secs) {
+  const [h, m] = hhmm.split(":").map(Number);
+  const t = (((h * 60 + m + Math.round(secs / 60)) % 1440) + 1440) % 1440;
+  return `${String(Math.floor(t / 60)).padStart(2, "0")}:${String(t % 60).padStart(2, "0")}`;
+}
+// 5400 → „1 h 30“, 1500 → „25 Min.“
+export function fmtSpan(secs) {
+  const m = Math.round(secs / 60);
+  return m < 60 ? `${m} Min.` : `${Math.floor(m / 60)} h${m % 60 ? " " + String(m % 60).padStart(2, "0") : ""}`;
+}
+// Phasen-Label mit verschobener Uhrzeit: „17:30 Uhr (1,5h vorher)“ → „17:00 Uhr (1,5h vorher)“,
+// „Gang 2 (+0:20)“ → „Gang 2 (+0:20) · 19:20 Uhr“. Ohne Essenszeit oder ohne Lage bleibt das Label.
+export function phaseLabel(phase, serveTime) {
+  if (!serveTime || phase.at == null) return phase.label;
+  const clock = shiftClock(serveTime, isoSeconds(phase.at) || 0);
+  return phase.clock ? phase.label.replace(/^\d{1,2}:\d{2}/, clock) : `${phase.label} · ${clock} Uhr`;
+}
+// Wann läuft was? Sekunden relativ zur Essenszeit, gerechnet wie Check H (timing.py: service_times):
+// Einträge einer Uhrzeit-Phase folgen aufeinander; aufeinanderfolgende Schritte derselben Komponente laufen
+// nacheinander; ein passiver Schritt (Schmoren, Kühlen) belegt die Hände nicht und schiebt nichts.
+//   ctxById: Schritt-ID → { step, task }; serve: Gang-ID → Servierzeit in Sekunden
+// Ergebnis: segs (Map Eintrag → [{ id, start, end, passive, timed }]) und pro Phase { timed, start, end, active }.
+// Phasen ohne Uhrzeit (T-1, Vormittags) haben nur `active`, die Summe der aktiven Arbeit.
+export function timeline(sch, ctxById, serve = {}) {
+  const phases = Object.fromEntries(sch.phases.map((p) => [p.id, p]));
+  const segs = new Map(), win = {}, cursor = {};
+  for (const e of sch.entries) {
+    const ph = phases[e.phase];
+    if (!ph) continue;
+    const phTimed = ph.at != null && ph.part === "service", timed = !!e.at || phTimed;
+    let t0 = cursor[e.phase] ?? 0;
+    if (e.at) t0 = (e.at.ref.startsWith("course:") ? serve[e.at.ref.split(":")[1]] || 0 : 0) + (isoSeconds(e.at.offset) || 0);
+    else if (phTimed) t0 = Math.max(isoSeconds(ph.at) || 0, cursor[e.phase] ?? -Infinity);
+    const w = (win[e.phase] ||= { timed: phTimed, start: phTimed ? isoSeconds(ph.at) || 0 : null, end: null, active: 0 });
+    let free = t0, cur = t0, last = null;
+    const out = [];
+    for (const id of e.steps || []) {
+      const c = ctxById[id];
+      if (!c) continue;
+      if (c.task.id !== last) { cur = free; last = c.task.id; }
+      const d = stepSeconds(c.step), passive = c.step.attention === "passive" || !!c.step.parallel;
+      out.push({ id, start: cur, end: cur + d, passive, timed });
+      cur += d;
+      if (!passive) { free = cur; w.active += d; }
+    }
+    segs.set(e, out);
+    if (!e.at) { cursor[e.phase] = free; if (phTimed) w.end = Math.max(w.end ?? free, free); }
+  }
+  return { segs, win };
+}
+
 // Export der allgemeinen Notiz als Markdown-Block zum Einfügen unter ## Learnings.
 export function noteMarkdown(recipeId, text, date) {
   return [`### Notizen aus dem Kochmodus (${date})`, "", `<!-- ${recipeId} -->`, "", text.trim(), ""].join("\n");
@@ -153,7 +211,8 @@ export function normalizeState(raw) {
   const obj = (v) => (v && typeof v === "object" && !Array.isArray(v) ? v : {});
   const factor = Number(s.factor);
   return { done: obj(s.done), note: typeof s.note === "string" ? s.note : "", shop: obj(s.shop), factor: factor > 0 ? factor : 1,
-           order: s.order === "gang" ? "gang" : "ablauf", variant: obj(s.variant) };
+           order: s.order === "gang" ? "gang" : "ablauf", variant: obj(s.variant),
+           serve: /^([01]\d|2[0-3]):[0-5]\d$/.test(s.serve) ? s.serve : null }; // eigene Essenszeit; null = die des Rezepts
 }
 
 // ---- Timer, rezeptübergreifend (localStorage „km:timers“) ----------------------
