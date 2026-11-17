@@ -371,8 +371,17 @@ So wird gelesen:
 - Gibt es einen Titel in mehreren Gängen (`Anrichten`), zählt in `Gang N`-Phasen der
   Gang der Phase, sonst der Gang des ersten Treffers im Eintrag; ohne Gang bleibt der
   Eintrag Text (Hinweis). Eindeutige Namen dürfen aus jedem Gang kommen.
-- Ein Schritt darf in mehreren Phasen stehen (`Knochen rösten (ggf. schon)` am T-2
-  und über „Lammschulter und Jus“ am T-1).
+- **Namentlich schlägt Komponente:** Nennt ein Eintrag einen Schritt beim Titel, gehört
+  der Schritt dorthin — der Eintrag, der nur seine Komponente nennt, nimmt ihn nicht mehr
+  mit (`Ochsenbacken` am T-1 bringt „Jus reduzieren“ nicht mit, wenn das unter
+  `Vormittags` steht). So lässt sich eine Komponente über mehrere Tage verteilen. Sauberer
+  ist trotzdem, sie an der Tagesgrenze in zwei Komponenten zu teilen.
+- Innerhalb eines Eintrags stehen die Schritte im Kochmodus in Rezeptreihenfolge — die
+  Nummern pro Gang also so vergeben, wie gekocht wird. In mehreren Phasen steht ein Schritt
+  nur, wenn er in beiden namentlich genannt ist; nennt man eine Komponente zweimal, gibt
+  es einen Hinweis.
+- Der Gang eines Eintrags ist der seiner Treffer (`Backen temperieren` unter `Gang 2`
+  gehört zu Gang 3); die Phase entscheidet nur bei Titeln, die es in mehreren Gängen gibt.
 
 Für ein einzelnes Gericht reicht eine Tabelle relativ zum Essen:
 

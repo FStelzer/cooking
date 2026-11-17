@@ -2950,7 +2950,13 @@
             "tasks": [
               "panna-cotta"
             ],
-            "course": "gang-3"
+            "course": "gang-3",
+            "steps": [
+              "gang-3-gelatine-einweichen",
+              "gang-3-sahne-erwaermen",
+              "gang-3-kaltruehren",
+              "gang-3-yuzu-abfuellen"
+            ]
           },
           {
             "phase": "vortag",
@@ -3271,7 +3277,12 @@
             "tasks": [
               "frucht-kanten"
             ],
-            "course": "gang-3"
+            "course": "gang-3",
+            "steps": [
+              "gang-3-beeren-einlegen",
+              "gang-3-agar-kochen",
+              "gang-3-kanten-gelieren"
+            ]
           },
           {
             "phase": "uhr-09-45",
@@ -3279,7 +3290,13 @@
             "tasks": [
               "panna-cotta"
             ],
-            "course": "gang-3"
+            "course": "gang-3",
+            "steps": [
+              "gang-3-gelatine-einweichen",
+              "gang-3-sahne-erwaermen",
+              "gang-3-kaltruehren",
+              "gang-3-yuzu-abfuellen"
+            ]
           },
           {
             "phase": "uhr-10-30",
@@ -3446,8 +3463,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:17:54Z",
-    "sourceHash": "add0c22ea5515e06",
+    "generatedAt": "2026-11-17T07:50:37Z",
+    "sourceHash": "c4b9d9478e61b4f1",
     "select": {
       "ablauf": "vortag"
     },

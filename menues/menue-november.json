@@ -873,7 +873,7 @@
                     }
                   ],
                   "heading": "**Tomatenwasser auftauen (2 Tage vor dem Abend, Kühlschrank):**",
-                  "phaseHint": "Abend",
+                  "phaseHint": "2 Tage vor dem Abend",
                   "produces": [
                     {
                       "id": "tomatenwasser-auftauen",
@@ -1569,7 +1569,7 @@
                     }
                   ],
                   "heading": "**Kaisergranat vorbereiten (Vorabend antauen und Köpfe ab, am Tag auslösen, Kühlschrank):**",
-                  "phaseHint": "am Tag",
+                  "phaseHint": "Vorabend",
                   "produces": [
                     {
                       "id": "schwaenze-angetrocknet",
@@ -3679,6 +3679,7 @@
                     }
                   ],
                   "heading": "**Parfait (1–2 Tage vorher, Gefrierfach):**",
+                  "phaseHint": "1–2 Tage vorher",
                   "produces": [
                     {
                       "id": "parfait",
@@ -4019,7 +4020,11 @@
             "phase": "t-2",
             "text": "**Brauner Fond (Knochen rösten, Röstgemüse, Reduktion, 2 Std. Schnellkochtopf, über Nacht kalt)**",
             "steps": [
-              "gang-3-knochen-roesten"
+              "gang-3-knochen-roesten",
+              "gang-3-roestgemuese",
+              "gang-3-verjus-traubensaft-reduktion",
+              "gang-3-fond-druckgaren",
+              "gang-3-fond-passieren-und-kuehlen"
             ],
             "tasks": [
               "brauner-fond"
@@ -4032,7 +4037,14 @@
             "tasks": [
               "parfait"
             ],
-            "course": "gang-4"
+            "course": "gang-4",
+            "steps": [
+              "gang-4-pate-a-bombe",
+              "gang-4-kaltschlagen",
+              "gang-4-sahne-schlagen",
+              "gang-4-unterheben",
+              "gang-4-einfrieren"
+            ]
           },
           {
             "phase": "t-2",
@@ -4042,6 +4054,7 @@
             "phase": "t-1",
             "text": "**Ochsenbacken: anbraten, im Fond schmoren (3,5–4 h), in der Flüssigkeit abkühlen lassen, über Nacht kalt stellen**",
             "steps": [
+              "gang-3-backen-parieren-und-anbraten",
               "gang-3-schmoren",
               "gang-3-in-der-fluessigkeit-abkuehlen"
             ],
@@ -4056,7 +4069,13 @@
             "tasks": [
               "mango-gel"
             ],
-            "course": "gang-2"
+            "course": "gang-2",
+            "steps": [
+              "gang-2-mango-kochen",
+              "gang-2-agar-einmixen-und-aufkochen",
+              "gang-2-saeure-einruehren",
+              "gang-2-gel-fest-werden-lassen-und-mixen"
+            ]
           },
           {
             "phase": "t-1",
@@ -4064,7 +4083,10 @@
             "tasks": [
               "kraeuteroel"
             ],
-            "course": "gang-1"
+            "course": "gang-1",
+            "steps": [
+              "gang-1-kraeuteroel-mixen"
+            ]
           },
           {
             "phase": "t-1",
@@ -4131,7 +4153,11 @@
             "tasks": [
               "karkassen-reduktion"
             ],
-            "course": "gang-2"
+            "course": "gang-2",
+            "steps": [
+              "gang-2-karkassen-roesten-und-auskochen",
+              "gang-2-karkassen-sud-reduzieren"
+            ]
           },
           {
             "phase": "vormittags",
@@ -4156,7 +4182,12 @@
             "tasks": [
               "selleriepueree"
             ],
-            "course": "gang-3"
+            "course": "gang-3",
+            "steps": [
+              "gang-3-sellerie-kochen",
+              "gang-3-pueree-mixen",
+              "gang-3-pueree-passieren"
+            ]
           },
           {
             "phase": "nachmittags",
@@ -4202,7 +4233,13 @@
             "tasks": [
               "verjus-limetten-beurre-blanc"
             ],
-            "course": "gang-2"
+            "course": "gang-2",
+            "steps": [
+              "gang-2-reduktion",
+              "gang-2-sahne-einkochen",
+              "gang-2-butter-montieren",
+              "gang-2-limette-einruehren"
+            ]
           },
           {
             "phase": "am-abend",
@@ -4231,6 +4268,9 @@
             "phase": "gang-2",
             "text": "Kaisergranat braten, Anrichten (\\~8 Min. aktiv)",
             "steps": [
+              "gang-2-teller-vorwaermen-schwaenze-salzen",
+              "gang-2-pfannen-aufheizen",
+              "gang-2-braten-und-arrosieren",
               "gang-2-anrichten"
             ],
             "tasks": [
@@ -4244,7 +4284,7 @@
             "steps": [
               "gang-3-backen-temperieren"
             ],
-            "course": "gang-2"
+            "course": "gang-3"
           },
           {
             "phase": "gang-3",
@@ -4353,8 +4393,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-11-16T08:52:42Z",
-    "sourceHash": "b72aaf436307e20e",
+    "generatedAt": "2026-11-17T07:50:37Z",
+    "sourceHash": "94bb1151f50edaba",
     "quantities": [
       {
         "ingredient": "verjus",

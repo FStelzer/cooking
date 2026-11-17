@@ -620,7 +620,9 @@ def product_from_label(name: str, paren: str | None) -> tuple[dict, str | None]:
             if m := TEMP_RE.search(paren): storage["temp"] = {"min": int(m["lo"]), "max": int(m["hi"] or m["lo"])}
         elif "raumtemperatur" in low: storage["place"] = "room"
         if storage: prod["storage"] = storage
-        pm = re.search(r"(Vortag|Vortage|am Abend|Abend|Nachmittag|Vormittag|am Tag|T-\d|à la minute|Saison[^,]*)", paren)
+        pm = (re.search(r"(\d+(?:–\d+)? Tage? vor dem Abend|Vorabend)", paren)  # sonst läse „… vor dem Abend“ als „Abend“
+              or re.search(r"(Vortag|Vortage|am Abend|Abend|Nachmittag|Vormittag|am Tag|T-\d|à la minute|Saison[^,]*)", paren)
+              or re.search(r"(\d+(?:–\d+)? Tage? vorher)", paren))
         if pm: phase = pm.group(1)
     return prod, phase
 
@@ -863,11 +865,13 @@ def match_entry(e: dict, tasks_all: list[tuple[str | None, dict]], lint: Lint) -
     Klammern entfernt): Task-Name = Segment, Ein-Wort-Titel = Segment, letztes Wort des Segments
     („Parfait einfrieren“) oder Segment-Anfang vor einer Zahl („Durchwärmen 12–18 Min.“). Alle Treffer eines
     Eintrags liegen im selben Gang: Gang-Phase gibt ihn vor, sonst der erste Treffer; mehrdeutige Titel
-    ohne Gang bleiben Text (Hinweis); eindeutige Namen dürfen aus jedem Gang kommen."""
+    ohne Gang bleiben Text (Hinweis); eindeutige Namen dürfen aus jedem Gang kommen. Der Gang des Eintrags
+    ist der seiner Treffer, wenn sie alle im selben liegen („Backen temperieren“ in der Phase „Gang 2“ gehört
+    zu Gang 3) — die Phase entscheidet nur bei mehrdeutigen Titeln."""
     phase_course = e["phase"] if e["phase"].startswith("gang-") else None
     course = phase_course
     steps = [(cid, st) for cid, t in tasks_all for st in t["steps"]]
-    hits_s: list[str] = []; hits_t: list[str] = []
+    hits_s: list[str] = []; hits_t: list[str] = []; hit_courses: set[str | None] = set()
     masked = ws_key(e["text"]).replace("**", "")
 
     def take(cands: list[tuple[str | None, str]], kind: str, what: str) -> None:
@@ -878,6 +882,7 @@ def match_entry(e: dict, tasks_all: list[tuple[str | None, dict]], lint: Lint) -
                 lint.add("Zeitplan", f"„{what}“ gibt es in mehreren Gängen — Eintrag '{e['text'][:40]}' bleibt Text"); return
         if not cands: return
         course = course or cands[0][0]
+        hit_courses.update(cid for cid, _ in cands)
         for _, x in cands:
             lst = hits_s if kind == "step" else hits_t
             if x not in lst: lst.append(x)
@@ -907,7 +912,31 @@ def match_entry(e: dict, tasks_all: list[tuple[str | None, dict]], lint: Lint) -
     task_pos = {t["id"]: i for i, (_, t) in enumerate(tasks_all)}
     if hits_s: e["steps"] = sorted(hits_s, key=step_pos.get)
     if hits_t: e["tasks"] = sorted(hits_t, key=task_pos.get)
+    if len(hit_courses) == 1: course = next(iter(hit_courses))
     if course: e["course"] = course
+
+
+def resolve_entries(entries: list[dict], tasks_all: list[tuple[str | None, dict]], lint: Lint) -> None:
+    """Namentlich schlägt Komponente: `steps` wird die vollständige Liste des Eintrags in Rezeptreihenfolge —
+    die namentlich genannten Schritte plus die seiner Komponenten (`tasks`), ohne jene, die ein anderer
+    Eintrag desselben Zeitplans namentlich nennt („Ochsenbacken“ am T-1 nimmt „Jus reduzieren“ nicht mit,
+    wenn das am Vormittag steht). Kochmodus und Check H lesen nur noch `steps`; `tasks` bleibt als Herkunft."""
+    task_steps = {t["id"]: [st["id"] for st in t["steps"]] for _, t in tasks_all}
+    pos = {st["id"]: i for i, st in enumerate(st for _, t in tasks_all for st in t["steps"])}
+    named: dict[str, list[dict]] = {}
+    for e in entries:
+        for s in e.get("steps", []): named.setdefault(s, []).append(e)
+    via_task: dict[str, int] = {}
+    for e in entries:
+        if not e.get("tasks"): continue
+        # Einträge einer anderen Varianten-Wahl schließen sich aus und nehmen einander nichts weg
+        elsewhere = lambda s: any(o is not e and o.get("only") in (None, e.get("only")) for o in named.get(s, []))
+        extra = [s for tid in e["tasks"] for s in task_steps.get(tid, []) if not elsewhere(s)]
+        for s in extra:
+            if s not in e.get("steps", []): via_task[s] = via_task.get(s, 0) + 1
+        if both := sorted(set(e.get("steps", [])) | set(extra), key=pos.get): e["steps"] = both
+    if twice := sorted((s for s, n in via_task.items() if n > 1), key=pos.get):
+        lint.add("Zeitplan", "Schritte liegen über ihre Komponente in mehreren Phasen (namentlich nennen oder Komponente teilen): " + ", ".join(twice))
 
 
 def parse_schedule(title: str, text: str, tasks_all: list[tuple[str | None, dict]], lint: Lint) -> tuple[dict, str | None]:
@@ -976,6 +1005,7 @@ def parse_schedule(title: str, text: str, tasks_all: list[tuple[str | None, dict
             d = duration_range(m.group(1) + " " + m.group(2))
             e["at"] = {"ref": f"course:{e.get('course', 'gang-1')}:serve", "offset": "-" + (d.get("typical") or d["max"])}
             e["source"] = m.group(0).strip("()")
+    resolve_entries(entries, tasks_all, lint)
     # Spalten chronologisch: die Tabelle (Kochtag) wird vor den Bullets (Vorabend) gelesen; innerhalb eines Tages Dokument-Reihenfolge
     phases.sort(key=lambda p: p.get("day", 0))
     sched = {"id": slugify(title), "label": title, "phases": phases, "entries": entries}

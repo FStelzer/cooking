@@ -1361,6 +1361,20 @@
             "text": "Fond",
             "tasks": [
               "fond"
+            ],
+            "steps": [
+              "karkassen-vorbereiten",
+              "mirepoix-anschwitzen",
+              "knoblauch-tomatenmark-anroesten",
+              "abloeschen-ohne-wein",
+              "tomaten-dazu",
+              "karkassen-einbauen",
+              "auffuellen",
+              "koecheln",
+              "passieren",
+              "reduzieren-anisnote",
+              "safran-einarbeiten",
+              "durchziehen"
             ]
           },
           {
@@ -1368,6 +1382,9 @@
             "text": "Rouille",
             "tasks": [
               "rouille"
+            ],
+            "steps": [
+              "rouille-zubereiten"
             ]
           },
           {
@@ -1389,6 +1406,13 @@
             "text": "Fenchel-Orange-Salat",
             "tasks": [
               "fenchel-orange-salat"
+            ],
+            "steps": [
+              "fenchel-hobeln",
+              "orangen-filetieren",
+              "zwiebel-waessern",
+              "dressing",
+              "salat-anrichten"
             ]
           },
           {
@@ -1446,8 +1470,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:17:54Z",
-    "sourceHash": "28f8e2fb8fdd421b",
+    "generatedAt": "2026-11-17T07:50:37Z",
+    "sourceHash": "55e52527f1701a76",
     "quantities": [
       {
         "ingredient": "fischkarkassen",

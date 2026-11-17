@@ -1764,6 +1764,7 @@
               "gewuerze-roesten",
               "gewuerze-moersern",
               "paste-mixen",
+              "schaerfepaste",
               "paste-einfrieren"
             ],
             "tasks": [
@@ -1900,8 +1901,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-19T06:40:25Z",
-    "sourceHash": "6720401336783285",
+    "generatedAt": "2026-11-17T07:50:37Z",
+    "sourceHash": "6a8ea4bf72832e80",
     "quantities": [
       {
         "ingredient": "galgant",

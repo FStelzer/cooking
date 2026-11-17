@@ -154,6 +154,7 @@ def service_times(recipe: dict) -> tuple[dict, list[Seg]]:
     out, segs = {}, []
     step_task = {st["id"]: t["id"] for t in tasks.values() for st in t["steps"]}
     step_pos = {st["id"]: i for i, st in enumerate(st for t in tasks.values() for st in t["steps"])}
+    step_by_id = {st["id"]: st for t in tasks.values() for st in t["steps"]}
     for sec in sections(recipe, "schedule"):
         phases = {p["id"]: p for p in sec["schedule"]["phases"]}
         phase_cursor: dict[str, int] = {}
@@ -171,9 +172,12 @@ def service_times(recipe: dict) -> tuple[dict, list[Seg]]:
             # letzte aktive Schritt einer Einheit fertig ist — eine passive Wartezeit am Ende läuft nebenher
             # weiter und schiebt die nächste Einheit nicht (Kanten gelieren, während die Panna Cotta entsteht).
             free = t0
-            units = [(tid, tasks[tid]["steps"]) for tid in e.get("tasks", [])]
-            units += [(step_task[s], [x for x in tasks[step_task[s]]["steps"] if x["id"] == s])
-                      for s in sorted((s for s in e.get("steps", []) if s in step_task), key=step_pos.get)]
+            # e["steps"] ist vollständig (Parser: resolve_entries); aufeinanderfolgende Schritte eines Tasks sind eine Einheit
+            units: list[tuple[str, list[dict]]] = []
+            for s_id in sorted((x for x in e.get("steps", []) if x in step_task), key=step_pos.get):
+                tid = step_task[s_id]
+                if not units or units[-1][0] != tid: units.append((tid, []))
+                units[-1][1].append(step_by_id[s_id])
             for tid, steps in units:
                 begin = cur = free
                 for x in steps:

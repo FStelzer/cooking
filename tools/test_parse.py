@@ -104,7 +104,11 @@ t("Menü: Zeitplan-Phasen, Zuordnung per Namen, Anker im Eintrag", lambda: (
     assert_(sch["schedule"]["phases"][2]["at"] == "PT0M" and sch["schedule"]["phases"][3]["at"] == "+PT20M"),
     assert_(next(e for e in sch["schedule"]["entries"] if e["text"] == "Mango-Gel")["tasks"] == ["mango-gel"]),
     assert_((bb := next(e for e in sch["schedule"]["entries"] if e["text"].startswith("Beurre blanc")))["at"] == {"ref": "course:gang-2:serve", "offset": "-PT20M"}, bb),
-    assert_(next(e for e in sch["schedule"]["entries"] if e["text"] == "Anrichten")["steps"] == ["anrichten"] or True)))
+    assert_(next(e for e in sch["schedule"]["entries"] if e["text"] == "Anrichten")["steps"] == ["gang-2-anrichten"])))
+MSCH = next(s for s in m["sections"] if s["type"] == "schedule")["schedule"]["entries"]
+t("Menü: namentlich schlägt Komponente — der Eintrag der Komponente lässt den woanders genannten Schritt aus", lambda: (
+    assert_((b2 := next(e for e in MSCH if e["text"].startswith("Beurre blanc")))["tasks"] == ["beurre-blanc"] and b2["steps"] == ["gang-2-reduktion", "gang-2-montieren"], b2),
+    assert_(next(e for e in MSCH if e["text"] == "Mango-Gel")["steps"] == ["gang-2-mango-kochen"])))
 CLOCK = """# Menü Test (2 Personen)
 
 ## Einkaufsliste
@@ -160,6 +164,7 @@ t("Uhrzeit-Zeitplan: Anker, Phasen, Ereignis, Klammer-Kontrolle", lambda: (
 t("Uhrzeit-Zeitplan: Gang serviert in seiner letzten Phase, gangübergreifende Einträge", lambda: (
     assert_([(x["ref"], x["serve"]) for x in c["courses"]] == [("gang-1", "PT0M"), ("gang-2", "+PT30M")], c["courses"]),
     assert_(next(e for e in csch["entries"] if e["text"] == "Ente starten")["course"] == "gang-2"),
+    assert_(next(e for e in csch["entries"] if e["text"] == "Consommé langsam erwärmen")["course"] == "gang-1"),
     assert_(next(e for e in csch["entries"] if e["text"] == "Consommé langsam erwärmen").get("tasks") is None)))
 t("Dosierung: Eigelb als Einheit, Umlaut-Plural", lambda: (
     assert_([(d["ref"], d["amount"]["text"]) for d in CS["gang-2-ente-starten"]["ingredients"]] == [("entenbrueste", "2 Entenbrüste"), ("eier", "4 Eigelb"), ("zucker", "80g Zucker")], CS["gang-2-ente-starten"]["ingredients"]),

@@ -618,6 +618,7 @@
             }
           ],
           "heading": "**Shatta-Ansatz (2–3 Tage vorher, hält Wochen, Kühlschrank):**",
+          "phaseHint": "2–3 Tage vorher",
           "produces": [
             {
               "id": "shatta-ansatz",
@@ -1405,8 +1406,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:17:54Z",
-    "sourceHash": "8915bbef149a2520",
+    "generatedAt": "2026-11-17T07:50:37Z",
+    "sourceHash": "9be25e74e71c13b4",
     "quantities": [
       {
         "ingredient": "7-gewuerz",

@@ -1614,6 +1614,7 @@
                     }
                   ],
                   "heading": "**Sauce-Basis (bis 2 Tage vorher, Kühlschrank):**",
+                  "phaseHint": "2 Tage vorher",
                   "produces": [
                     {
                       "id": "sauce-basis",
@@ -2102,6 +2103,7 @@
                     }
                   ],
                   "heading": "**Salzkaramell (3 Tage vorher, Kühlschrank; ergibt ca. 150ml):**",
+                  "phaseHint": "3 Tage vorher",
                   "produces": [
                     {
                       "id": "salzkaramell",
@@ -2306,6 +2308,7 @@
                     }
                   ],
                   "heading": "**Parfait (3 Tage vorher, mind. 6 h im Gefrierfach):**",
+                  "phaseHint": "3 Tage vorher",
                   "produces": [
                     {
                       "id": "parfait",
@@ -2614,7 +2617,15 @@
             "tasks": [
               "parfait"
             ],
-            "course": "gang-4"
+            "course": "gang-4",
+            "steps": [
+              "gang-4-pekannuesse-roesten",
+              "gang-4-eigelbmasse-aufschlagen",
+              "gang-4-kaltschlagen",
+              "gang-4-sahne-schlagen",
+              "gang-4-unterheben",
+              "gang-4-einfrieren"
+            ]
           },
           {
             "phase": "3-tage-vorher",
@@ -2622,7 +2633,11 @@
             "tasks": [
               "salzkaramell"
             ],
-            "course": "gang-4"
+            "course": "gang-4",
+            "steps": [
+              "gang-4-karamell-schmelzen",
+              "gang-4-sahne-einruehren"
+            ]
           },
           {
             "phase": "2-tage-vorher",
@@ -2643,7 +2658,11 @@
             "tasks": [
               "sauce-basis"
             ],
-            "course": "gang-3"
+            "course": "gang-3",
+            "steps": [
+              "gang-3-schalotte-anschwitzen",
+              "gang-3-fond-aufgiessen"
+            ]
           },
           {
             "phase": "vortag",
@@ -2712,7 +2731,12 @@
             "tasks": [
               "blumenkohlpueree"
             ],
-            "course": "gang-2"
+            "course": "gang-2",
+            "steps": [
+              "gang-2-blumenkohl-kochen",
+              "gang-2-puerieren",
+              "gang-2-abschmecken-und-warmhalten"
+            ]
           },
           {
             "phase": "uhr-16-00",
@@ -2934,8 +2958,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-12T15:17:54Z",
-    "sourceHash": "9ba2c5e8bfff7960",
+    "generatedAt": "2026-11-17T07:50:37Z",
+    "sourceHash": "7b982e5d151f5b6f",
     "quantities": [
       {
         "ingredient": "jakobsmuscheln",
