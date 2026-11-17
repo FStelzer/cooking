@@ -2860,8 +2860,9 @@
                         "source": "ca. 8 Min.",
                         "estimated": true
                       },
-                      "text": "Durch das feine Sieb streichen — **der** Schritt für seidige Sterne-Textur. Mit Salz, 1 kleinen Prise Muskat und 1 TL Zitronensaft abschmecken. Abgedeckt warmhalten, vor dem Anrichten ggf. kurz remixen.",
+                      "text": "Durch das feine Sieb streichen — **der** Schritt für seidige Sterne-Textur. Mit Salz, 1 kleinen Prise Muskat und 1 TL Zitronensaft abschmecken. Flach in eine Schale füllen, Folie direkt auf die Oberfläche (keine Haut), abkühlen lassen und in den Kühlschrank; 50 ml Garmilch daneben aufheben. *Nicht stundenlang warmhalten: Püree wird am Herd grau und zäh, und lauwarm ist es über Stunden der falsche Bereich — kalt stellen und zu Gang 3 durcherhitzen.*",
                       "action": "Durch das feine Sieb streichen — **der** Schritt für seidige Sterne-Textur.",
+                      "why": "Nicht stundenlang warmhalten: Püree wird am Herd grau und zäh, und lauwarm ist es über Stunden der falsche Bereich — kalt stellen und zu Gang 3 durcherhitzen.",
                       "ingredients": [
                         {
                           "ref": "muskat",
@@ -2883,14 +2884,14 @@
                       "attention": "active"
                     }
                   ],
-                  "heading": "**Selleriepüree (am Nachmittag, hält warm):**",
+                  "heading": "**Selleriepüree (am Nachmittag, Kühlschrank, zu Gang 3 erwärmen):**",
                   "phaseHint": "Nachmittag",
                   "produces": [
                     {
                       "id": "selleriepueree",
                       "name": "Selleriepüree",
                       "storage": {
-                        "place": "warm"
+                        "place": "fridge"
                       }
                     }
                   ]
@@ -3196,17 +3197,52 @@
                       "attention": "attended"
                     },
                     {
-                      "id": "gang-3-blaetter-jus-chips",
+                      "id": "gang-3-pueree-erwaermen",
                       "label": "21",
-                      "heading": "**21. Blätter, Jus, Chips (ca. 8 Min.)**",
+                      "heading": "**21. Püree erwärmen (ca. 8 Min.)**",
+                      "title": "Püree erwärmen",
+                      "duration": {
+                        "typical": "PT8M",
+                        "source": "ca. 8 Min.",
+                        "estimated": true
+                      },
+                      "text": "Sobald der Bräter simmert: das kalte Püree mit 2–3 EL Garmilch im kleinen Topf auf dem Mittelfeld bei kleiner Hitze unter Rühren erwärmen, bis es durchgehend dampft und blubbert (≥ 70 °C). Deckel drauf, vom Herd ziehen; direkt vor dem Anrichten kurz mit dem Stabmixer aufmixen.",
+                      "action": "Sobald der Bräter simmert: das kalte Püree mit 2–3 EL Garmilch im kleinen Topf auf dem Mittelfeld bei kleiner Hitze unter Rühren erwärmen, bis es durchgehend dampft und blubbert (≥ 70 °C).",
+                      "cues": [
+                        "bis es durchgehend dampft und blubbert (≥ 70 °C"
+                      ],
+                      "temps": [
+                        {
+                          "kind": "ziel",
+                          "text": "≥ 70 °C",
+                          "value": 70
+                        }
+                      ],
+                      "ingredients": [],
+                      "meta": "*nach Püree passieren · Herd*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "attention": "active",
+                      "after": [
+                        "step:gang-3-pueree-passieren"
+                      ]
+                    },
+                    {
+                      "id": "gang-3-blaetter-jus-chips",
+                      "label": "22",
+                      "heading": "**22. Blätter, Jus, Chips (ca. 8 Min.)**",
                       "title": "Blätter, Jus, Chips",
                       "duration": {
                         "typical": "PT8M",
                         "source": "ca. 8 Min.",
                         "estimated": true
                       },
-                      "text": "Parallel: blanchierte Rosenkohlblätter in 20 g aufschäumender Butter 1–2 Min. schwenken (nur erwärmen), 1 Prise Salz, kleiner Spritzer Zitrone. Die übrigen \\~200 ml Jus erwärmen, mit 1 TL Verjus, ½ TL Sherryessig (oder Rotweinessig) und — falls nötig — Salz abschmecken: Die Jus soll am Ende klar nach Fleisch schmecken, nicht nach Frucht. Vom Herd 25 g eiskalte Butter einschwenken (montieren), danach nicht mehr kochen; übrige Menge in Eiswürfelform einfrieren. Chips salzen.",
-                      "action": "Parallel: blanchierte Rosenkohlblätter in 20 g aufschäumender Butter 1–2 Min. schwenken (nur erwärmen), 1 Prise Salz, kleiner Spritzer Zitrone.",
+                      "text": "Während die Backen simmern: blanchierte Rosenkohlblätter in 20 g aufschäumender Butter 1–2 Min. schwenken (nur erwärmen), 1 Prise Salz, kleiner Spritzer Zitrone. Die übrigen \\~200 ml Jus erwärmen, mit 1 TL Verjus, ½ TL Sherryessig (oder Rotweinessig) und — falls nötig — Salz abschmecken: Die Jus soll am Ende klar nach Fleisch schmecken, nicht nach Frucht. Vom Herd 25 g eiskalte Butter einschwenken (montieren), danach nicht mehr kochen; übrige Menge in Eiswürfelform einfrieren. Chips salzen.",
+                      "action": "Während die Backen simmern: blanchierte Rosenkohlblätter in 20 g aufschäumender Butter 1–2 Min. schwenken (nur erwärmen), 1 Prise Salz, kleiner Spritzer Zitrone.",
                       "timers": [
                         {
                           "label": "Blätter, Jus, Chips",
@@ -3273,8 +3309,8 @@
                     },
                     {
                       "id": "gang-3-ochsenbacke-anrichten",
-                      "label": "22",
-                      "heading": "**22. Ochsenbacke anrichten (ca. 3 Min.)**",
+                      "label": "23",
+                      "heading": "**23. Ochsenbacke anrichten (ca. 3 Min.)**",
                       "title": "Ochsenbacke anrichten",
                       "duration": {
                         "typical": "PT3M",
@@ -3296,10 +3332,11 @@
                           }
                         }
                       ],
-                      "meta": "*nach Glasieren und durchwärmen, Blätter, Jus, Chips*",
+                      "meta": "*nach Glasieren und durchwärmen, Püree erwärmen, Blätter, Jus, Chips*",
                       "attention": "active",
                       "after": [
                         "step:gang-3-glasieren-und-durchwaermen",
+                        "step:gang-3-pueree-erwaermen",
                         "step:gang-3-blaetter-jus-chips"
                       ]
                     }
@@ -4000,20 +4037,20 @@
             "clock": "17:40"
           },
           {
-            "id": "uhr-18-15",
-            "label": "18:15 Uhr (45min vorher)",
+            "id": "uhr-18-10",
+            "label": "18:10 Uhr (50min vorher)",
             "day": 0,
             "part": "service",
-            "at": "-PT45M",
-            "clock": "18:15"
+            "at": "-PT50M",
+            "clock": "18:10"
           },
           {
-            "id": "uhr-18-40",
-            "label": "18:40 Uhr (20min vorher)",
+            "id": "uhr-18-30",
+            "label": "18:30 Uhr (30min vorher)",
             "day": 0,
             "part": "service",
-            "at": "-PT20M",
-            "clock": "18:40"
+            "at": "-PT30M",
+            "clock": "18:30"
           },
           {
             "id": "uhr-19-00",
@@ -4279,7 +4316,7 @@
           },
           {
             "phase": "uhr-15-00",
-            "text": "Püree passieren (warm halten)",
+            "text": "Püree passieren (danach kalt stellen)",
             "steps": [
               "gang-3-pueree-passieren"
             ],
@@ -4350,23 +4387,7 @@
             "course": "gang-2"
           },
           {
-            "phase": "uhr-18-15",
-            "text": "Blätter frittieren",
-            "steps": [
-              "gang-3-blaetter-frittieren"
-            ],
-            "course": "gang-3"
-          },
-          {
-            "phase": "uhr-18-15",
-            "text": "Chips lagern (halten bis 2 h)",
-            "steps": [
-              "gang-3-chips-lagern"
-            ],
-            "course": "gang-3"
-          },
-          {
-            "phase": "uhr-18-40",
+            "phase": "uhr-18-10",
             "text": "Kalt abschmecken",
             "steps": [
               "gang-1-kalt-abschmecken"
@@ -4374,15 +4395,31 @@
             "course": "gang-1"
           },
           {
-            "phase": "uhr-18-40",
-            "text": "Filtern",
+            "phase": "uhr-18-10",
+            "text": "Filtern (Kännchen zurück in den Kühlschrank)",
             "steps": [
               "gang-1-filtern"
             ],
             "course": "gang-1"
           },
           {
-            "phase": "uhr-18-40",
+            "phase": "uhr-18-30",
+            "text": "Blätter frittieren",
+            "steps": [
+              "gang-3-blaetter-frittieren"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "uhr-18-30",
+            "text": "Chips lagern (offen, halten bis 2 h — bis zum Teller sind es \\~1,5 h)",
+            "steps": [
+              "gang-3-chips-lagern"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "uhr-18-30",
             "text": "Backen temperieren (aus dem Kühlschrank in den Bräter, 1 Std. vor Gang 3)",
             "steps": [
               "gang-3-backen-temperieren"
@@ -4454,6 +4491,14 @@
             "text": "Glasieren und durchwärmen (\\~20 Min. auf dem Herd bis ≥ 70 °C Kern, Thermometer)",
             "steps": [
               "gang-3-glasieren-und-durchwaermen"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "uhr-19-50",
+            "text": "Püree erwärmen (parallel, Mittelfeld)",
+            "steps": [
+              "gang-3-pueree-erwaermen"
             ],
             "course": "gang-3"
           },
@@ -4574,8 +4619,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-11-17T07:57:46Z",
-    "sourceHash": "7aca00d1241ef455",
+    "generatedAt": "2026-11-17T08:06:25Z",
+    "sourceHash": "f31be86f243e1d8a",
     "quantities": [
       {
         "ingredient": "verjus",

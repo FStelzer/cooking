@@ -584,7 +584,7 @@ konzentriert sich mit. Schmeckt es dort schon kräftig gesalzen, nicht weiter
 reduzieren. 150 ml zum Glasieren abnehmen, den Rest (\~200 ml) für den Teller
 beiseitestellen.
 
-**Selleriepüree (am Nachmittag, hält warm):**
+**Selleriepüree (am Nachmittag, Kühlschrank, zu Gang 3 erwärmen):**
 
 **12. Sellerie kochen (20–25 Min.)**
 *jederzeit · Herd*
@@ -603,8 +603,11 @@ aggressiv mixen, er kleistert nicht wie Kartoffel).
 
 **14. Püree passieren (ca. 8 Min.)**
 Durch das feine Sieb streichen — **der** Schritt für seidige Sterne-Textur. Mit
-Salz, 1 kleinen Prise Muskat und 1 TL Zitronensaft abschmecken. Abgedeckt
-warmhalten, vor dem Anrichten ggf. kurz remixen.
+Salz, 1 kleinen Prise Muskat und 1 TL Zitronensaft abschmecken. Flach in eine
+Schale füllen, Folie direkt auf die Oberfläche (keine Haut), abkühlen lassen und
+in den Kühlschrank; 50 ml Garmilch daneben aufheben. *Nicht stundenlang
+warmhalten: Püree wird am Herd grau und zäh, und lauwarm ist es über Stunden
+der falsche Bereich — kalt stellen und zu Gang 3 durcherhitzen.*
 
 **Rosenkohl zweierlei (Nachmittag):**
 
@@ -653,9 +656,16 @@ zu dick, 1–2 EL Wasser zugeben. *Auf dem Herd statt im Ofen: Flüssigkeit und
 Deckel bringen den Kern schneller und gleichmäßiger auf Temperatur, und der Ofen
 bleibt für die Teller frei.*
 
-**21. Blätter, Jus, Chips (ca. 8 Min.)**
+**21. Püree erwärmen (ca. 8 Min.)**
+*nach Püree passieren · Herd*
+Sobald der Bräter simmert: das kalte Püree mit 2–3 EL Garmilch im kleinen Topf
+auf dem Mittelfeld bei kleiner Hitze unter Rühren erwärmen, bis es durchgehend
+dampft und blubbert (≥ 70 °C). Deckel drauf, vom Herd ziehen; direkt vor dem
+Anrichten kurz mit dem Stabmixer aufmixen.
+
+**22. Blätter, Jus, Chips (ca. 8 Min.)**
 *nach Backen temperieren · 2 Pfannen*
-Parallel: blanchierte Rosenkohlblätter in 20 g aufschäumender Butter 1–2 Min.
+Während die Backen simmern: blanchierte Rosenkohlblätter in 20 g aufschäumender Butter 1–2 Min.
 schwenken (nur erwärmen), 1 Prise Salz, kleiner Spritzer Zitrone. Die übrigen
 \~200 ml Jus erwärmen, mit 1 TL Verjus, ½ TL Sherryessig (oder Rotweinessig)
 und — falls nötig — Salz abschmecken: Die Jus soll am Ende klar nach Fleisch
@@ -663,8 +673,8 @@ schmecken, nicht nach Frucht. Vom Herd 25 g eiskalte Butter einschwenken
 (montieren), danach nicht mehr kochen; übrige Menge in Eiswürfelform einfrieren.
 Chips salzen.
 
-**22. Ochsenbacke anrichten (ca. 3 Min.)**
-*nach Glasieren und durchwärmen, Blätter, Jus, Chips*
+**23. Ochsenbacke anrichten (ca. 3 Min.)**
+*nach Glasieren und durchwärmen, Püree erwärmen, Blätter, Jus, Chips*
 Püree-Spiegel oder -Nocke, die glasierte Backe daraufsetzen, die Schnittfläche
 mit wenigen Salzflocken würzen. Grüne Blätter und frittierte Blätter gemischt
 darüber/daneben, Jus angießen (nicht über die Chips — weichen auf). Zuletzt
@@ -864,14 +874,14 @@ Gang 2 (fällt reichlich an) + Kugel Vanilleeis (gekauft).
 **Am Tag:**
 - 10:00 Uhr (9h vorher): Brot holen · Entfetten und portionieren · Passieren · Jus reduzieren (auf \~350 ml, bei \~450 ml Salz probieren)
 - 11:15 Uhr: Kaisergranat auslösen · Karkassen rösten und auskochen · Karkassen-Sud reduzieren · Concassé
-- 15:00 Uhr (4h vorher): Sellerie kochen · Püree mixen · Püree passieren (warm halten) · Rosenkohlblätter lösen · Blätter blanchieren
+- 15:00 Uhr (4h vorher): Sellerie kochen · Püree mixen · Püree passieren (danach kalt stellen) · Rosenkohlblätter lösen · Blätter blanchieren
 - 17:15 Uhr: Grundwürzung (1–2 h vor Gang 1) · Schwänze antrocknen (offen im Kühlschrank, 1–2 h) · Tischbutter aus dem Kühlschrank · Ofen 80 °C für Teller
 - 17:40 Uhr: Reduktion · Sahne einkochen · Butter montieren (Beurre blanc in die Thermoskanne, hält 2 h)
-- 18:15 Uhr (45min vorher): Blätter frittieren · Chips lagern (halten bis 2 h)
-- 18:40 Uhr (20min vorher): Kalt abschmecken · Filtern · Backen temperieren (aus dem Kühlschrank in den Bräter, 1 Std. vor Gang 3)
+- 18:10 Uhr (50min vorher): Kalt abschmecken · Filtern (Kännchen zurück in den Kühlschrank)
+- 18:30 Uhr (30min vorher): Blätter frittieren · Chips lagern (offen, halten bis 2 h — bis zum Teller sind es \~1,5 h) · Backen temperieren (aus dem Kühlschrank in den Bräter, 1 Std. vor Gang 3)
 - 19:00 Uhr — Gang 1: Limette einrühren · Tomatenwasser anrichten (kein Herd nötig)
 - 19:20 Uhr — Gang 2: Brot und Butter auf den Tisch · Teller vorwärmen, Schwänze salzen · Pfannen aufheizen · Limette in die Beurre blanc · Braten und arrosieren · Kaisergranat anrichten
-- 19:50 Uhr — Gang 3: Glasieren und durchwärmen (\~20 Min. auf dem Herd bis ≥ 70 °C Kern, Thermometer) · Blätter, Jus, Chips (parallel zum Glasieren) · Ochsenbacke anrichten (Meerrettich am Pass reiben)
+- 19:50 Uhr — Gang 3: Glasieren und durchwärmen (\~20 Min. auf dem Herd bis ≥ 70 °C Kern, Thermometer) · Püree erwärmen (parallel, Mittelfeld) · Blätter, Jus, Chips (parallel zum Glasieren) · Ochsenbacke anrichten (Meerrettich am Pass reiben)
 - 20:40 Uhr — Nach Gang 3: Temperieren und Teller frosten (Parfait in den Kühlschrank, Teller ins Gefrierfach)
 - 21:05 Uhr — Gang 4: Schneiden · Shaken · Am Tisch
 

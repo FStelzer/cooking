@@ -116,7 +116,7 @@ try {
   await page.waitForSelector(".gantt");
   assert.equal(await page.locator(".gantt .ph:not(.corner)").count(), 16, "16 Phasen erwartet (Saison, T-2, T-1, Vorabend, 12 Uhrzeiten)");
   assert.equal(await page.locator(".gantt .lane").count(), 5, "Menü + 4 Gänge");
-  assert.equal(await page.locator(".chip").count(), 55, "55 Zeitplan-Einträge");
+  assert.equal(await page.locator(".chip").count(), 56, "56 Zeitplan-Einträge");
   assert.equal(await page.locator(".chip.derived").count(), 0, "gebautes JSON: alle Einträge stehen im Markdown");
   await page.locator('.chip[data-open="gang-2-reduktion"]').click();
   await page.waitForSelector("#sheet.open");
@@ -127,7 +127,7 @@ try {
   await page.click("#sheet .close");
   await page.click('button[data-view="kochen"]');
   assert.equal(await page.locator(".phase").count(), 16, "16 Phasen in der Kochen-Ansicht");
-  assert.equal(await page.locator(".row[data-step]").count(), 61, "61 Schritte, jeder genau einmal im Ablauf");
+  assert.equal(await page.locator(".row[data-step]").count(), 62, "62 Schritte, jeder genau einmal im Ablauf");
   // Reihenfolge: innerhalb jedes Gangs steigen die Nummern über den ganzen Ablauf
   const nums = (await page.locator(".phase .row[data-step] .t").allInnerTexts()).map((x) => x.match(/^(\d+)\.(\d+) /).slice(1).map(Number));
   for (const g of [1, 2, 3, 4]) { const xs = nums.filter((x) => x[0] === g).map((x) => x[1]); assert.deepEqual(xs, [...xs].sort((a, b) => a - b), `Gang ${g} läuft im Ablauf in Rezeptreihenfolge`); }
@@ -290,4 +290,4 @@ try {
   server.close();
 }
 if (errors.length) { console.log("Browser-Fehler:\n  " + errors.join("\n  ")); process.exit(1); }
-console.log(`Rauchtest ok: thit-kho (9 Schritte, Sheet, Notiz, Skalierung, Timer, Export, Einkauf, Lesen) + Menü (Plan 16×5, 55 Chips, 61 Schritte in Rezeptreihenfolge, Essenszeit verstellbar, 59 Posten) + Varianten (Brötchen: Ein-/Ausblenden, Mengen, Einkauf, Zeitpläne, Wischen durch alle Plan-Schritte) + App (Liste, zuletzt geöffnet, Schnell-Timer, Split, Vollbild + Zurück, offline, Auffrischen) + alle ${allCount} Rezepte laden`);
+console.log(`Rauchtest ok: thit-kho (9 Schritte, Sheet, Notiz, Skalierung, Timer, Export, Einkauf, Lesen) + Menü (Plan 16×5, 56 Chips, 62 Schritte in Rezeptreihenfolge, Essenszeit verstellbar, 59 Posten) + Varianten (Brötchen: Ein-/Ausblenden, Mengen, Einkauf, Zeitpläne, Wischen durch alle Plan-Schritte) + App (Liste, zuletzt geöffnet, Schnell-Timer, Split, Vollbild + Zurück, offline, Auffrischen) + alle ${allCount} Rezepte laden`);
