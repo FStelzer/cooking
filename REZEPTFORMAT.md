@@ -350,6 +350,10 @@ Einträge mit ` · ` getrennt. Fette Zeilen wie `**Am Tag:**` gliedern nur.
   Anker. Die Klammer `(4h vorher)`, `(45min vorher)` ist optional und wird nur gegen
   die Uhrzeit geprüft. ` — Gäste da`, ` — Nach dem Amuse` hinter der Uhrzeit ist das
   Ereignis der Phase.
+- Die Uhrzeit ist die **Vorgabe**: Im Kochmodus lässt sich die Essenszeit verstellen, alle
+  Uhrzeit-Phasen wandern mit. Dazu rechnet er aus den Schrittdauern, bis wann eine Phase
+  dauert (Einträge einer Phase nacheinander, `passiv`-Schritte schieben nichts) und warnt,
+  wenn sie in die nächste hineinläuft — die Phasen also so legen, dass die Arbeit passt.
 - Ein Gang wird in der **letzten** Uhrzeit-Phase serviert, in der Einträge von ihm stehen
   („ab 19:15“). Einträge eines anderen Gangs dürfen in jeder Phase stehen (die Ente
   startet während des Amuse).

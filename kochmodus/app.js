@@ -144,7 +144,8 @@ function stepRow(s, course = null, task = null, when = "") {
   const dur = s.duration ? `${s.duration.source || ""}${s.duration.estimated ? " (geschätzt)" : ""}` : "";
   const pre = course != null; // mit Gang im Bild (Ablauf): Nummern mit Gang-Präfix
   const deps = !s.after ? "" : s.after.length ? "nach " + s.after.map((r) => labelOf(r, pre)).filter(Boolean).join(", ") : "jederzeit";
-  const meta = [when, course ? courseTitle(course) : "", dur, deps].filter(Boolean).join(" · ");
+  // Der Gang steht schon in der Nummer („3.19“) — der lange Gang-Titel nur, wo es kein Präfix gibt
+  const meta = [when, course && !coursePrefix(s.id) ? courseTitle(course) : "", dur, deps].filter(Boolean).join(" · ");
   const title = s.title || (task && task.name !== recipe.title ? task.name : "");
   return `<div class="row ${state.done[s.id] ? "done" : ""} ${s.after && !s.after.length ? "free" : ""} ${s.id === openId ? "current" : ""}" data-step="${s.id}">
     <input type="checkbox" class="chk" data-done="${s.id}" aria-label="${esc(title || num(s, pre))} erledigt" ${state.done[s.id] ? "checked" : ""}>

@@ -5,8 +5,9 @@
 > (Stand 08/2026, recherchiert; **Umbau 09/2026 für Schwangerschaft + GDM**,
 > s. Box unten), aber Testläufe stehen aus: Gang 2 (Kaisergranat-Garpunkt +
 > Verjus-Beurre-blanc), Parfait (alkoholfrei, Decaf, Textur), Tomatenwasser
-> (Weg A gegen Weg B verkosten). Abend-Zeitplan ist bewusst nur ein Skelett —
-> Feinschliff nach den Testläufen. 4–5 Personen (2 Erw. + Gäste + Kind 3 J.).
+> (Weg A gegen Weg B verkosten). Der Zeitplan hat seit 11/2026 Uhrzeiten (Vorgabe
+> 19:00 Uhr, im Kochmodus verstellbar), die Abstände sind gerechnet — Feinschliff
+> nach den Testläufen. 4–5 Personen (2 Erw. + Gäste + Kind 3 J.).
 > Tomatenwasser liegt seit 09/2026 in beiden Klärwegen im Gefrierfach.
 > **Review 11/2026:** Gang 2 auf drei Bausteine reduziert (Praline und Crumble
 > gestrichen, Karkassen-Reduktion in der Beurre blanc, neuer Auftau-Weg), Gang 3
@@ -211,31 +212,31 @@ vorsichtig abgießen. Der Rest hält \~1 Woche (Labneh, Eier, Fisch).*
 
 **Tomatenwasser würzen und anrichten (am Abend):**
 
-**7. Grundwürzung (ca. 5 Min.)**
+**7. Concassé (ca. 15 Min.)**
+*jederzeit · Herd · ergibt Concassé*
+Concassé: 100 g Cherry-/Datteltomaten kreuzweise einritzen, 10–15 Sek.
+blanchieren, Eiswasser, häuten, entkernen, 3–4-mm-Würfel. **Erst kurz vor dem
+Servieren** mit 1 Prise Salz würzen (zieht sonst Wasser).
+
+**8. Grundwürzung (ca. 5 Min.)**
 *1–2 h vor Service*
 Grundwürzung **1–2 h vor Service** auf \~350 ml Tomatenwasser: 6–8 Tropfen
 Worcestershire (**tropfenweise — trübt!**), 2 Prisen Selleriesalz (\~0,5 g), 1
 Umdrehung weißer Pfeffer. Kalt ziehen lassen. **Vorher \~60 ml für die
 Kinder-Portion abzweigen** (nur Mini-Prise Salz).
 
-**8. Kalt abschmecken (ca. 3 Min.)**
+**9. Kalt abschmecken (ca. 3 Min.)**
 **Bei Serviertemperatur abschmecken, nie bei Raumtemperatur:** Kälte dämpft
 Umami und Salz-Wahrnehmung deutlich — kalt muss es einen Tick kräftiger gewürzt
 sein, als sich „richtig“ anfühlt. Wirkt es ungewürzt fad/blass: normal, erst
 würzen, dann urteilen.
 
-**9. Filtern (ca. 5 Min.)**
+**10. Filtern (ca. 5 Min.)**
 Das gewürzte, kalte Tomatenwasser durch einen mit kaltem Wasser gespülten
 Kaffeefilter in ein gekühltes Kännchen laufen lassen — hält Worcestershire-
 Schwebstoffe und Pfeffer zurück, das Wasser ist wieder kristallklar. Zurück in
 den Kühlschrank. *Einmal filtern ersetzt das heikle Ausgießen „vom Sediment
 weg“ aus fünf Gläsern.*
-
-**10. Concassé (ca. 15 Min.)**
-*jederzeit · Herd · ergibt Concassé*
-Concassé: 100 g Cherry-/Datteltomaten kreuzweise einritzen, 10–15 Sek.
-blanchieren, Eiswasser, häuten, entkernen, 3–4-mm-Würfel. **Erst kurz vor dem
-Servieren** mit 1 Prise Salz würzen (zieht sonst Wasser).
 
 **11. Limette einrühren (ca. 2 Min.)**
 *nach Filtern*
@@ -243,7 +244,7 @@ Kurz vor dem Ausgießen: 10 ml Limettensaft (durch das feine Sieb, ohne
 Fruchtfleisch) ins Kännchen rühren, abschmecken, ggf. auf max. 15 ml erhöhen
 (Bún-chả-Learning: Säure dominiert schnell — vorsichtig).
 
-**12. Anrichten (ca. 5 Min.)**
+**12. Tomatenwasser anrichten (ca. 5 Min.)**
 *nach Limette einrühren, Concassé, Kräuteröl mixen*
 Anrichten: vorgekühlte Gläser/Espressotassen (kein Eis — verwässert), je 1 TL
 Concassé, 60–70 ml Tomatenwasser aus dem Kännchen angießen. Pro
@@ -252,7 +253,7 @@ Erwachsenen-Glas 2–3 Tropfen mildes Chiliöl und 2–3 Tropfen Kräuteröl auf
 Garnitur. *(Der früher optionale Fino-Sherry ist gestrichen — Schwangerschaft,
 und das Dritt-Feedback votierte ohnehin für „rein“.)*
 
-**Kind (3 J.):** eigenes Glas aus der Abzweigung (Schritt 7) — ohne Chiliöl
+**Kind (3 J.):** eigenes Glas aus der Abzweigung (Schritt 8) — ohne Chiliöl
 und Worcestershire, mit Concassé und Kräuteröl-Tropfen. Oder auslassen.
 
 > **Profi-Tipps:**
@@ -344,15 +345,9 @@ Am Tag: Schwanz mit der Küchenschere an der Bauchseite längs aufschneiden,
 Fleisch herausheben, den dunklen Darmfaden ziehen. Schalen zu den Köpfen geben
 (→ Karkassen-Reduktion).
 
-**7. Schwänze antrocknen (ca. 5 Min.)**
-*ergibt Schwänze angetrocknet · hält 1–2 h*
-Schwänze sehr gründlich trockentupfen und **1–2 h offen auf Gitter/Küchenpapier
-im Kühlschrank antrocknen** — Feuchtigkeit ist der Feind der Kruste, TK-Ware
-zieht besonders Wasser.
-
 **Karkassen-Reduktion (am Tag, nach dem Auslösen, Kühlschrank):**
 
-**8. Karkassen rösten und auskochen (ca. 35 Min.)**
+**7. Karkassen rösten und auskochen (ca. 35 Min.)**
 *nach Kaisergranat auslösen · Herd*
 Köpfe und Schalen der 12 Kaisergranat grob zerdrücken und in 1 EL Öl bei hoher
 Hitze 4–5 Min. rösten, bis sie duften und Farbe haben. 1 Schalotte (\~30 g, grob
@@ -360,11 +355,19 @@ gewürfelt) und 1 TL Tomatenmark 1 Min. mitrösten, mit 400 ml kaltem Wasser
 ablöschen und 20 Min. leise köcheln — nicht länger, sonst wird es dumpf. Durch
 das feine Sieb passieren, die Karkassen dabei gut ausdrücken.
 
-**9. Karkassen-Sud reduzieren (ca. 10 Min.)**
+**8. Karkassen-Sud reduzieren (ca. 10 Min.)**
 *Herd*
 Den Sud auf \~50 ml einkochen (kräftig, leicht sirupös). **Nicht salzen.** Kalt
 stellen. *Das ist die Tiefe, die sonst Wein und Noilly Prat liefern — die Sauce
 schmeckt damit nach dem Hauptprodukt.*
+
+**Schwänze trocknen (Nachmittag, 1–2 h vor Gang 2, Kühlschrank):**
+
+**9. Schwänze antrocknen (ca. 5 Min.)**
+*ergibt Schwänze angetrocknet · hält 1–2 h*
+Schwänze sehr gründlich trockentupfen und **1–2 h offen auf Gitter/Küchenpapier
+im Kühlschrank antrocknen** — Feuchtigkeit ist der Feind der Kruste, TK-Ware
+zieht besonders Wasser.
 
 **Verjus-Limetten-Beurre-blanc (vor Gang 1 fertigstellen, hält bis 2 h warm bei 50–55 °C):**
 
@@ -389,26 +392,26 @@ Spiegel à 35–40 ml + Reserve. In die mit heißem Wasser vorgewärmte Thermosk
 füllen (oder Wasserbad 50–55 °C) — so ist die Sauce fertig, bevor die Gäste
 sitzen, und Gang 2 besteht am Abend nur noch aus Braten und Anrichten.
 
-**13. Limette einrühren (ca. 2 Min.)**
-*Technik: technik/abschmecken.md#emulsions-notfall*
-**Erst unmittelbar vor dem Anrichten:** Sauce in ein vorgewärmtes Töpfchen
-gießen, Abrieb von 1 Limette + 2 TL Limettensaft einrühren, tropfenweise bis
-max. 3 TL abschmecken — Zitrus-Öle sind hitzeflüchtig, und Limette ist
-aggressiver als Zitrone. *(Gebrochen? → Emulsions-Notfall in
-`technik/abschmecken.md`.)*
-
 **Kaisergranat braten (à la minute):**
 
-**14. Teller vorwärmen, Schwänze salzen (ca. 2 Min.)**
+**13. Teller vorwärmen, Schwänze salzen (ca. 2 Min.)**
 *nach Schwänze antrocknen*
 Teller vorwärmen (warm, nicht heiß — die Gel-Punkte sollen stehen). Schwänze
 **erst direkt vor dem Braten** salzen.
 
-**15. Pfannen aufheizen (ca. 3 Min.)**
+**14. Pfannen aufheizen (ca. 3 Min.)**
 *2 Pfannen*
 2 Pfannen mit je 1 EL Butterschmalz sehr heiß werden lassen (leicht rauchend).
 5–6 Schwänze pro Pfanne mit Abstand — zwei Pfannen parallel schlagen zwei
 Chargen, Kaisergranat verzeiht kein Warten.
+
+**15. Limette in die Beurre blanc (ca. 2 Min.)**
+*Technik: technik/abschmecken.md#emulsions-notfall*
+**Erst jetzt, während die Pfannen aufheizen:** Beurre blanc aus der Thermoskanne in ein
+vorgewärmtes Töpfchen gießen, Abrieb von 1 Limette + 2 TL Limettensaft einrühren, tropfenweise bis
+max. 3 TL abschmecken — Zitrus-Öle sind hitzeflüchtig, und Limette ist
+aggressiver als Zitrone. *(Gebrochen? → Emulsions-Notfall in
+`technik/abschmecken.md`.)*
 
 **16. Braten und arrosieren (ca. 2 Min.)**
 *2 Pfannen · fertig wenn durchgehend opak*
@@ -424,8 +427,8 @@ ist.
 > (aufschneiden: durchgehend opak?). Mit dünnem Sofort-Fühler: bei 60–62 °C raus
 > → zieht auf 63–65 °C nach. Über \~70 °C wird er gummiartig.
 
-**17. Anrichten (ca. 3 Min.)**
-*nach Braten und arrosieren, Limette einrühren*
+**17. Kaisergranat anrichten (ca. 3 Min.)**
+*nach Braten und arrosieren, Limette in die Beurre blanc*
 Knapper Spiegel Beurre blanc (35–40 ml), 2 Schwänze (Bratseite oben)
 hineinsetzen. 3 Punkte Mango-Gel **neben/an den Rand des Spiegels** spritzen —
 im Saucenspiegel verlaufen sie. Wenige Schnittlauchspitzen anlegen. Sonst
@@ -532,7 +535,7 @@ lassen (höchstens 1 Std. bei Raumtemperatur), dann abgedeckt in den
 Kühlschrank. Ergibt \~1,3 L. *Das Ochsenschwanz-Fleisch ist jetzt butterzart —
 gezupft mit Salz der Lohn des Kochs oder ein Abendessen fürs Kind.*
 
-**Ochsenbacken (T-1, ergibt 5 Portionen à \~150 g + \~350 ml Jus, Kühlschrank):**
+**Ochsenbacken (T-1, über Nacht in der Schmorflüssigkeit, Kühlschrank):**
 
 **6. Backen parieren und anbraten (ca. 25 Min.)**
 *jederzeit · Herd*
@@ -557,6 +560,8 @@ Die Backen bleiben **in der Schmorflüssigkeit** und kühlen darin ab (höchsten
 1–1,5 Std. bei Raumtemperatur, dann abgedeckt in den Kühlschrank). So ziehen sie
 Flüssigkeit zurück, statt auszutrocknen — der wichtigste Saftigkeits-Hebel bei
 Backe.
+
+**Jus und Portionen (am Tag vormittags, ergibt 5 Portionen à \~150 g + \~350 ml Jus, Kühlschrank):**
 
 **9. Entfetten und portionieren (ca. 20 Min.)**
 Am Tag: den kalten Fettdeckel komplett abheben. Backen aus dem Gelee heben, die
@@ -658,7 +663,7 @@ schmecken, nicht nach Frucht. Vom Herd 25 g eiskalte Butter einschwenken
 (montieren), danach nicht mehr kochen; übrige Menge in Eiswürfelform einfrieren.
 Chips salzen.
 
-**22. Anrichten (ca. 3 Min.)**
+**22. Ochsenbacke anrichten (ca. 3 Min.)**
 *nach Glasieren und durchwärmen, Blätter, Jus, Chips*
 Püree-Spiegel oder -Nocke, die glasierte Backe daraufsetzen, die Schnittfläche
 mit wenigen Salzflocken würzen. Grüne Blätter und frittierte Blätter gemischt
@@ -739,19 +744,9 @@ Raumtemperatur — sonst schmilzt der Rand, während der Kern noch hart ist) ode
 gefroren schneidet und 3–4 Min. auf dem Teller wartet, bevor der Schuss kommt. Zu hart im Testlauf → **eine** Stellschraube: Dextrose 25 → 40 g
 (Schokoladeneis-Learning), nicht gleichzeitig Zucker oder Espresso ändern.
 
-**Kaffee-Crumble (Vortag, Raumtemperatur):**
-
-**1. Kaffee-Crumble (ca. 20–25 Min.)**
-*jederzeit · Ofen 160 °C*
-40 g Mehl, 30 g weiche Butter, 25 g brauner Zucker, 1 TL fein gemahlener
-Decaf-Espresso, 20 g Kakaonibs und 1 Prise Salz krümelig verreiben (Nibs von
-Anfang an mit — sie sind schon geröstet und leiden nicht). 160 °C, 12–15 Min.,
-einmal durchrühren. Auskühlen lassen (härtet nach), luftdicht bei
-Raumtemperatur. **Nie einfrieren oder kühlen** — zieht Feuchtigkeit.
-
 **Parfait (1–2 Tage vorher, Gefrierfach):**
 
-**2. Pâte à bombe (ca. 12 Min.)**
+**1. Pâte à bombe (ca. 12 Min.)**
 *jederzeit · Herd · fertig bei 75–82 °C*
 4 Eigelb, 70 g Zucker, 25 g Dextrose, 90 ml ausgekühlten doppelt starken
 Decaf-Espresso, 2 TL entkoffeiniertes Instant-Espressopulver und 1 g Salz (1
@@ -759,27 +754,37 @@ kräftige Prise) in einer Schüssel über dem Wasserbad „zur Rose“ dick-crem
 **75–82 °C** (Thermometer — ab 70 °C pasteurisiert, über 84 °C gerinnt es).
 Espresso von Anfang an mit: so bindet er ein, statt später Volumen zu kosten.
 
-**3. Kaltschlagen (5–8 Min.)**
+**2. Kaltschlagen (5–8 Min.)**
 Vom Wasserbad nehmen und kaltschlagen, bis die Masse unter \~30 °C ist
 (Handrührer, 5–8 Min.) — warme Masse schmilzt gleich die Sahne.
 
-**4. Sahne schlagen (ca. 4 Min.)**
+**3. Sahne schlagen (ca. 4 Min.)**
 *jederzeit*
 300 ml Sahne zu **weichen Spitzen** schlagen — ausdrücklich nicht steif (beim
 Falten kommt Scherung dazu, übersteift wird’s buttrig-körnig).
 
-**5. Unterheben (ca. 3 Min.)**
+**4. Unterheben (ca. 3 Min.)**
 *nach Kaltschlagen, Sahne schlagen*
 ⅓ der Eigelbmasse in die Sahne rühren (Konsistenzen angleichen), dann den Rest
 mit dem Teigschaber locker unterheben — zügig, nicht rühren.
 
-**6. Einfrieren (über Nacht, passiv)**
+**5. Einfrieren (über Nacht, passiv)**
 *ergibt Parfait · mind. 8 h*
 In die mit Folie ausgelegte 20-cm-Kastenform, glattstreichen, Folie auflegen.
 **Mind. über Nacht** bei voller Gefrierleistung. Die ungefrorene Masse darf
 ruhig einen Tick zu süß/zu kräftig schmecken: Kälte dämpft beides — beim Salz
 aber nur probieren, nicht nachlegen (1 g ist bewusst knapp, das bewährte
 Schokoladeneis liegt bei \~0,14 %).
+
+**Kaffee-Crumble (Vortag, Raumtemperatur):**
+
+**6. Kaffee-Crumble (ca. 20–25 Min.)**
+*jederzeit · Ofen 160 °C*
+40 g Mehl, 30 g weiche Butter, 25 g brauner Zucker, 1 TL fein gemahlener
+Decaf-Espresso, 20 g Kakaonibs und 1 Prise Salz krümelig verreiben (Nibs von
+Anfang an mit — sie sind schon geröstet und leiden nicht). 160 °C, 12–15 Min.,
+einmal durchrühren. Auskühlen lassen (härtet nach), luftdicht bei
+Raumtemperatur. **Nie einfrieren oder kühlen** — zieht Feuchtigkeit.
 
 **Dessert-Service (à la minute):**
 
@@ -841,29 +846,34 @@ Gang 2 (fällt reichlich an) + Kugel Vanilleeis (gekauft).
 - [ ] Shaker anschaffen oder Schraubglas? (Shaker ist billig und
       vielseitig — Kandidat für die Equipment-Liste)
 
-## Zeitplan-Skelett (Abend, grob — Feinschliff nach Testläufen)
+## Zeitplan
+
+*Für ein Dinner um 19:00 Uhr*
+
+*Die Uhrzeit ist nur die Vorgabe: Im Kochmodus lässt sich die Essenszeit verstellen, alle Zeiten wandern mit. Die Abstände sind aus den Schrittdauern gerechnet, noch nicht gekocht — Feinschliff nach den Testläufen.*
 
 **Vortage:**
 - Saison-Teil (erledigt 09/2026): Tomaten salzen · Kurz mixen · Weg A: Püree einfrieren · Weg B: abtropfen und einfrieren
-- T-2: **Auftauen und klären: Tomaten-Püree-Block (Weg A) aus dem Gefrierfach ins Passiertuch
-  (Drip-Thaw braucht 24–48 h!)** · Metzger-Abholung · **Brauner Fond (Knochen rösten, Röstgemüse,
-  Reduktion, 2 Std. Schnellkochtopf, über Nacht kalt)** · Parfait (herstellen, einfrieren) · Ochsenbacken salzen
-  (Dry-Brine, optional)
-- T-1: **Ochsenbacken: anbraten, im Fond schmoren (3,5–4 h), in der Flüssigkeit
-  abkühlen lassen, über Nacht kalt stellen** · Mango-Gel · Kräuteröl · Kaffee-Crumble · Weg B:
-  Tomatenwasser in den Kühlschrank zum Auftauen
+- T-2: Metzger-Abholung (vormittags) · Auftauen und klären: Tomaten-Püree-Block (Weg A) aus dem Gefrierfach ins Passiertuch
+  (Drip-Thaw braucht 24–48 h!) · Brauner Fond (Knochen rösten, Röstgemüse, Reduktion, 2,5 Std. Schnellkochtopf,
+  über Nacht kalt) · Parfait (herstellen, einfrieren) · Ochsenbacken salzen (Dry-Brine, optional)
+- T-1: Ochsenbacken (anbraten, im Fond schmoren 3,5–4 h, in der Flüssigkeit abkühlen lassen, über Nacht kalt stellen) ·
+  Mango-Gel · Kräuteröl · Kaffee-Crumble · Weg B: Tomatenwasser in den Kühlschrank zum Auftauen
 - Vorabend: Kaisergranat auftauen (20–30 Min. kaltes Wasser, Köpfe sofort ab, Schwänze in der Schale über Nacht im Kühlschrank)
 
 **Am Tag:**
-- Vormittags: Brot holen · Entfetten und portionieren · Passieren · Jus reduzieren (auf \~350 ml, bei \~450 ml Salz probieren) · Kaisergranat auslösen · Karkassen-Reduktion · Concassé
-- Nachmittags: Rosenkohlblätter lösen, Blätter blanchieren · Selleriepüree ·
-  Blätter frittieren, Chips lagern (halten 1–2 h) · Schwänze antrocknen · Grundwürzung (1–2 h vor dem Gang) ·
-  Tischbutter aus dem Kühlschrank · Ofen 80 °C für Teller
-- Am Abend: Verjus-Limetten-Beurre-blanc (vor Gang 1 fertig, in die Thermoskanne) · Kalt abschmecken, Filtern
-- Gang 1 (0:00): Limette einrühren, Anrichten — kein Herd nötig
-- Gang 2 (+0:20): Brot und Butter auf den Tisch · Kaisergranat braten, Anrichten (\~8 Min. aktiv) · Backen temperieren (1 Std. vor Gang 3, steht schon im Bräter bereit)
-- Gang 3 (+0:55): Glasieren und durchwärmen \~20 Min. auf dem Herd bis ≥ 70 °C Kern (Thermometer) · parallel Blätter, Jus, Chips · Anrichten, Meerrettich am Pass reiben
-- Gang 4 (+1:45): Dessert-Service: Temperieren und Teller frosten (20–30 Min. vorher, im Kühlschrank), Schneiden, Shaken, Am Tisch
+- 10:00 Uhr (9h vorher): Brot holen · Entfetten und portionieren · Passieren · Jus reduzieren (auf \~350 ml, bei \~450 ml Salz probieren)
+- 11:15 Uhr: Kaisergranat auslösen · Karkassen rösten und auskochen · Karkassen-Sud reduzieren · Concassé
+- 15:00 Uhr (4h vorher): Sellerie kochen · Püree mixen · Püree passieren (warm halten) · Rosenkohlblätter lösen · Blätter blanchieren
+- 17:15 Uhr: Grundwürzung (1–2 h vor Gang 1) · Schwänze antrocknen (offen im Kühlschrank, 1–2 h) · Tischbutter aus dem Kühlschrank · Ofen 80 °C für Teller
+- 17:40 Uhr: Reduktion · Sahne einkochen · Butter montieren (Beurre blanc in die Thermoskanne, hält 2 h)
+- 18:15 Uhr (45min vorher): Blätter frittieren · Chips lagern (halten bis 2 h)
+- 18:40 Uhr (20min vorher): Kalt abschmecken · Filtern · Backen temperieren (aus dem Kühlschrank in den Bräter, 1 Std. vor Gang 3)
+- 19:00 Uhr — Gang 1: Limette einrühren · Tomatenwasser anrichten (kein Herd nötig)
+- 19:20 Uhr — Gang 2: Brot und Butter auf den Tisch · Teller vorwärmen, Schwänze salzen · Pfannen aufheizen · Limette in die Beurre blanc · Braten und arrosieren · Kaisergranat anrichten
+- 19:50 Uhr — Gang 3: Glasieren und durchwärmen (\~20 Min. auf dem Herd bis ≥ 70 °C Kern, Thermometer) · Blätter, Jus, Chips (parallel zum Glasieren) · Ochsenbacke anrichten (Meerrettich am Pass reiben)
+- 20:40 Uhr — Nach Gang 3: Temperieren und Teller frosten (Parfait in den Kühlschrank, Teller ins Gefrierfach)
+- 21:05 Uhr — Gang 4: Schneiden · Shaken · Am Tisch
 
 **Ofen-Plan (entschärft):** Die Rosenkohlblätter werden frittiert, die Backe wird
 auf dem Herd glasiert — der Ofen macht am Abend nur 80 °C (Teller). **Herd-Plan
@@ -890,8 +900,8 @@ Rosenkohlblätter auf den kleinen Feldern links, Püree warm auf dem Mittelfeld.
       Vollkornbrötchen aus dem Vorrat
 - [x] Kinder-Dessert: **Rest Mango-Gel (Gang 2) + Kugel Vanilleeis (gekauft)**.
       Dafür: kein Chili im Mango-Gel.
-- [ ] Nach den Testläufen: Abend-Zeitplan ausformulieren (absolute Uhrzeiten
-      wie im Hochzeitstagsmenü)
+- [ ] Nach den Testläufen: Zeitplan-Abstände gegen die gestoppten Zeiten prüfen
+      (Uhrzeiten stehen seit 11/2026, bisher nur gerechnet)
 - [ ] Getränkebegleitung? (alkoholfrei mitdenken — Verjus-Schorle, Tomatenwasser-
       Rest; optional Wein für die Gäste)
 

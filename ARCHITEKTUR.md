@@ -46,7 +46,12 @@ Sidebar-Generator liest `*/*.md`).
 - **L7 Dauern als ISO 8601.** `PnD` = Kalendertage, `PTnH` = Uhrzeit-Stunden.
 - **L8 Graph ↔ Platzierung getrennt.** Tasks/Produkte/Hold/Claims sagen *was* und *wie
   lange*; Kanten (`after`, `start`) sagen *wovon abhängig*; Zeitpläne sagen, *wann der
-  Autor es tun will*. Kein Planer, nur Konfliktprüfung (Checks G, H, P).
+  Autor es tun will*. Kein Planer, nur Konfliktprüfung (Checks G, H, P). Ein Zeitplan-Eintrag
+  trägt in `steps` die vollständige Schrittliste in Rezeptreihenfolge (namentlich genannte
+  Schritte schlagen die Komponente, `tasks` ist nur Herkunft) — Kochmodus und Check H lesen
+  nur `steps`. Uhrzeiten sind relativ zum Anker gespeichert (`phase.at`); der Kochmodus
+  verschiebt sie mit der einstellbaren Essenszeit und rechnet „bis wann“ wie Check H
+  (`lib.js: timeline` ↔ `timing.py: service_times` — bewusst doppelt, klein halten).
 - **L9 Abgeleitetes rechnet Python.** Einkaufsliste und Mengen (`derived`) entstehen in
   `tools/recipes/shopping.py` aus `ingredients[]` und `step.ingredients[]` — pro
   Varianten-Kombination vorgerechnet. Der Browser zeigt an, wählt aus und skaliert, ohne

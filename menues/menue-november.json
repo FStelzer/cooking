@@ -5,7 +5,7 @@
   "kind": "menu",
   "title": "Menü November — Tomatenwasser / Kaisergranat / Ochsenbacke / Espresso-Parfait",
   "status": "wip",
-  "statusNote": "> [!NOTE]\n> **Status: In Arbeit** — alle vier Rezepte sind vollständig ausgearbeitet\n> (Stand 08/2026, recherchiert; **Umbau 09/2026 für Schwangerschaft + GDM**,\n> s. Box unten), aber Testläufe stehen aus: Gang 2 (Kaisergranat-Garpunkt +\n> Verjus-Beurre-blanc), Parfait (alkoholfrei, Decaf, Textur), Tomatenwasser\n> (Weg A gegen Weg B verkosten). Abend-Zeitplan ist bewusst nur ein Skelett —\n> Feinschliff nach den Testläufen. 4–5 Personen (2 Erw. + Gäste + Kind 3 J.).\n> Tomatenwasser liegt seit 09/2026 in beiden Klärwegen im Gefrierfach.\n> **Review 11/2026:** Gang 2 auf drei Bausteine reduziert (Praline und Crumble\n> gestrichen, Karkassen-Reduktion in der Beurre blanc, neuer Auftau-Weg), Gang 3\n> mit braunem Fond aus dem Schnellkochtopf, Meerrettich und nur noch\n> Rosenkohl-Chips, Glasieren auf dem Herd; Brot und Butter am Tisch.\n\n> [!NOTE]\n> **Schwangerschaft + Gestationsdiabetes (Umbau 09/2026):** Die Frau isst mit,\n> deshalb ist das ganze Menü umgebaut statt Sonderportionen — geprüft gegen den\n> [Leitfaden](/schwangerschaft/leitfaden.md), keine Kopie in `schwangerschaft/`.\n> **Gang 1:** Sherry gestrichen; Worcestershire (fermentierte, pasteurisierte\n> Fertigsauce, 6–8 Tropfen) unkritisch. **Gang 2:** Kaisergranat statt glasiger\n> Jakobsmuschel — wird ohnehin durchgegart serviert (63–65 °C Kern), Beurre\n> blanc für alle auf Verjus statt Wein/Noilly.\n> **Gang 3:** geschmorte Ochsenbacke statt rosa Karree (11/2026 statt der\n> zwischenzeitlich geplanten Lammschulter) — am Abend in der Jus auf ≥ 70 °C Kern\n> glasiert; Jus **ohne Alkohol** (Verjus + roter Traubensaft statt Rotwein, auch\n> kein verkochter Wein). **Gang 4:** kein Alkohol in der Parfait-Masse, die Pâte à\n> bombe wird auf 75–82 °C gezogen (pasteurisiert, kein rohes Ei), durchgehend\n> Decaf; Schuss am Tisch als Espresso-Shakerato (alkoholfrei) oder\n> Espresso-Martini. **GDM:** Menü ist praktisch stärkefrei; KH nur in den\n> Mango-Gel-Punkten, im Dessert (kleine Scheibe + Crumble \\~20 g KH) und im\n> Brot am Tisch (für sie eine dünne Scheibe Sauerteigbrot oder ein halbes\n> Vollkornbrötchen, \\~15 g KH, immer mit Butter) → nach dem Essen messen.",
+  "statusNote": "> [!NOTE]\n> **Status: In Arbeit** — alle vier Rezepte sind vollständig ausgearbeitet\n> (Stand 08/2026, recherchiert; **Umbau 09/2026 für Schwangerschaft + GDM**,\n> s. Box unten), aber Testläufe stehen aus: Gang 2 (Kaisergranat-Garpunkt +\n> Verjus-Beurre-blanc), Parfait (alkoholfrei, Decaf, Textur), Tomatenwasser\n> (Weg A gegen Weg B verkosten). Der Zeitplan hat seit 11/2026 Uhrzeiten (Vorgabe\n> 19:00 Uhr, im Kochmodus verstellbar), die Abstände sind gerechnet — Feinschliff\n> nach den Testläufen. 4–5 Personen (2 Erw. + Gäste + Kind 3 J.).\n> Tomatenwasser liegt seit 09/2026 in beiden Klärwegen im Gefrierfach.\n> **Review 11/2026:** Gang 2 auf drei Bausteine reduziert (Praline und Crumble\n> gestrichen, Karkassen-Reduktion in der Beurre blanc, neuer Auftau-Weg), Gang 3\n> mit braunem Fond aus dem Schnellkochtopf, Meerrettich und nur noch\n> Rosenkohl-Chips, Glasieren auf dem Herd; Brot und Butter am Tisch.\n\n> [!NOTE]\n> **Schwangerschaft + Gestationsdiabetes (Umbau 09/2026):** Die Frau isst mit,\n> deshalb ist das ganze Menü umgebaut statt Sonderportionen — geprüft gegen den\n> [Leitfaden](/schwangerschaft/leitfaden.md), keine Kopie in `schwangerschaft/`.\n> **Gang 1:** Sherry gestrichen; Worcestershire (fermentierte, pasteurisierte\n> Fertigsauce, 6–8 Tropfen) unkritisch. **Gang 2:** Kaisergranat statt glasiger\n> Jakobsmuschel — wird ohnehin durchgegart serviert (63–65 °C Kern), Beurre\n> blanc für alle auf Verjus statt Wein/Noilly.\n> **Gang 3:** geschmorte Ochsenbacke statt rosa Karree (11/2026 statt der\n> zwischenzeitlich geplanten Lammschulter) — am Abend in der Jus auf ≥ 70 °C Kern\n> glasiert; Jus **ohne Alkohol** (Verjus + roter Traubensaft statt Rotwein, auch\n> kein verkochter Wein). **Gang 4:** kein Alkohol in der Parfait-Masse, die Pâte à\n> bombe wird auf 75–82 °C gezogen (pasteurisiert, kein rohes Ei), durchgehend\n> Decaf; Schuss am Tisch als Espresso-Shakerato (alkoholfrei) oder\n> Espresso-Martini. **GDM:** Menü ist praktisch stärkefrei; KH nur in den\n> Mango-Gel-Punkten, im Dessert (kleine Scheibe + Crumble \\~20 g KH) und im\n> Brot am Tisch (für sie eine dünne Scheibe Sauerteigbrot oder ein halbes\n> Vollkornbrötchen, \\~15 g KH, immer mit Butter) → nach dem Essen messen.",
   "yields": {
     "text": "?"
   },
@@ -639,34 +639,35 @@
     {
       "ref": "gang-1",
       "n": 1,
-      "name": "Gang 1",
+      "name": "Klares Tomatenwasser „feine Bloody Mary“ (Amuse)",
       "serve": "PT0M",
-      "source": "Gang 1 (0:00)"
+      "source": "19:00 Uhr — Gang 1"
     },
     {
       "ref": "gang-2",
       "n": 2,
-      "name": "Gang 2",
+      "name": "Kaisergranat, Krustentier-Beurre-blanc & Mango-Gel",
       "serve": "+PT20M",
-      "source": "Gang 2 (+0:20)"
+      "source": "19:20 Uhr — Gang 2"
     },
     {
       "ref": "gang-3",
       "n": 3,
-      "name": "Gang 3",
-      "serve": "+PT55M",
-      "source": "Gang 3 (+0:55)"
+      "name": "Geschmorte Ochsenbacke, Selleriepüree, Rosenkohl zweierlei, Jus ohne Alkohol",
+      "serve": "+PT50M",
+      "source": "19:50 Uhr — Gang 3"
     },
     {
       "ref": "gang-4",
       "n": 4,
-      "name": "Gang 4",
-      "serve": "+PT1H45M",
-      "source": "Gang 4 (+1:45)"
+      "name": "Espresso-Parfait (Decaf) mit Schuss am Tisch — Espresso-Martini oder Shakerato",
+      "serve": "+PT2H5M",
+      "source": "21:05 Uhr — Gang 4"
     }
   ],
   "anchor": {
-    "label": "Gang 1 serviert"
+    "label": "Dinner",
+    "time": "19:00"
   },
   "resources": [
     {
@@ -994,9 +995,61 @@
                   "name": "Tomatenwasser würzen und anrichten",
                   "steps": [
                     {
-                      "id": "gang-1-grundwuerzung",
+                      "id": "gang-1-concasse",
                       "label": "7",
-                      "heading": "**7. Grundwürzung (ca. 5 Min.)**",
+                      "heading": "**7. Concassé (ca. 15 Min.)**",
+                      "title": "Concassé",
+                      "duration": {
+                        "typical": "PT15M",
+                        "source": "ca. 15 Min.",
+                        "estimated": true
+                      },
+                      "text": "Concassé: 100 g Cherry-/Datteltomaten kreuzweise einritzen, 10–15 Sek. blanchieren, Eiswasser, häuten, entkernen, 3–4-mm-Würfel. **Erst kurz vor dem Servieren** mit 1 Prise Salz würzen (zieht sonst Wasser).",
+                      "action": "Concassé: 100 g Cherry-/Datteltomaten kreuzweise einritzen, 10–15 Sek. blanchieren, Eiswasser, häuten, entkernen, 3–4-mm-Würfel.",
+                      "limits": [
+                        "Erst kurz vor dem Servieren"
+                      ],
+                      "ingredients": [
+                        {
+                          "ref": "datteltomaten",
+                          "amount": {
+                            "text": "100 g Cherry-/Datteltomaten",
+                            "value": 100.0,
+                            "unit": "g"
+                          }
+                        },
+                        {
+                          "ref": "salz",
+                          "amount": {
+                            "text": "1 Prise Salz",
+                            "value": 1.0,
+                            "unit": "Prise"
+                          }
+                        }
+                      ],
+                      "meta": "*jederzeit · Herd · ergibt Concassé*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "attention": "attended",
+                      "timers": [
+                        {
+                          "label": "Concassé",
+                          "duration": {
+                            "typical": "PT15M"
+                          },
+                          "text": "ca. 15 Min."
+                        }
+                      ],
+                      "after": []
+                    },
+                    {
+                      "id": "gang-1-grundwuerzung",
+                      "label": "8",
+                      "heading": "**8. Grundwürzung (ca. 5 Min.)**",
                       "title": "Grundwürzung",
                       "duration": {
                         "typical": "PT5M",
@@ -1049,8 +1102,8 @@
                     },
                     {
                       "id": "gang-1-kalt-abschmecken",
-                      "label": "8",
-                      "heading": "**8. Kalt abschmecken (ca. 3 Min.)**",
+                      "label": "9",
+                      "heading": "**9. Kalt abschmecken (ca. 3 Min.)**",
                       "title": "Kalt abschmecken",
                       "duration": {
                         "typical": "PT3M",
@@ -1064,8 +1117,8 @@
                     },
                     {
                       "id": "gang-1-filtern",
-                      "label": "9",
-                      "heading": "**9. Filtern (ca. 5 Min.)**",
+                      "label": "10",
+                      "heading": "**10. Filtern (ca. 5 Min.)**",
                       "title": "Filtern",
                       "duration": {
                         "typical": "PT5M",
@@ -1077,58 +1130,6 @@
                       "why": "Einmal filtern ersetzt das heikle Ausgießen „vom Sediment weg“ aus fünf Gläsern.",
                       "ingredients": [],
                       "attention": "active"
-                    },
-                    {
-                      "id": "gang-1-concasse",
-                      "label": "10",
-                      "heading": "**10. Concassé (ca. 15 Min.)**",
-                      "title": "Concassé",
-                      "duration": {
-                        "typical": "PT15M",
-                        "source": "ca. 15 Min.",
-                        "estimated": true
-                      },
-                      "text": "Concassé: 100 g Cherry-/Datteltomaten kreuzweise einritzen, 10–15 Sek. blanchieren, Eiswasser, häuten, entkernen, 3–4-mm-Würfel. **Erst kurz vor dem Servieren** mit 1 Prise Salz würzen (zieht sonst Wasser).",
-                      "action": "Concassé: 100 g Cherry-/Datteltomaten kreuzweise einritzen, 10–15 Sek. blanchieren, Eiswasser, häuten, entkernen, 3–4-mm-Würfel.",
-                      "limits": [
-                        "Erst kurz vor dem Servieren"
-                      ],
-                      "ingredients": [
-                        {
-                          "ref": "datteltomaten",
-                          "amount": {
-                            "text": "100 g Cherry-/Datteltomaten",
-                            "value": 100.0,
-                            "unit": "g"
-                          }
-                        },
-                        {
-                          "ref": "salz",
-                          "amount": {
-                            "text": "1 Prise Salz",
-                            "value": 1.0,
-                            "unit": "Prise"
-                          }
-                        }
-                      ],
-                      "meta": "*jederzeit · Herd · ergibt Concassé*",
-                      "claims": [
-                        {
-                          "resource": "hob",
-                          "units": 1
-                        }
-                      ],
-                      "attention": "attended",
-                      "timers": [
-                        {
-                          "label": "Concassé",
-                          "duration": {
-                            "typical": "PT15M"
-                          },
-                          "text": "ca. 15 Min."
-                        }
-                      ],
-                      "after": []
                     },
                     {
                       "id": "gang-1-limette-einruehren",
@@ -1159,10 +1160,10 @@
                       ]
                     },
                     {
-                      "id": "gang-1-anrichten",
+                      "id": "gang-1-tomatenwasser-anrichten",
                       "label": "12",
-                      "heading": "**12. Anrichten (ca. 5 Min.)**",
-                      "title": "Anrichten",
+                      "heading": "**12. Tomatenwasser anrichten (ca. 5 Min.)**",
+                      "title": "Tomatenwasser anrichten",
                       "duration": {
                         "typical": "PT5M",
                         "source": "ca. 5 Min.",
@@ -1218,7 +1219,7 @@
               "type": "markdown",
               "title": "Kind (3 J.)",
               "level": "bold",
-              "markdown": "**Kind (3 J.):** eigenes Glas aus der Abzweigung (Schritt 7) — ohne Chiliöl\nund Worcestershire, mit Concassé und Kräuteröl-Tropfen. Oder auslassen.",
+              "markdown": "**Kind (3 J.):** eigenes Glas aus der Abzweigung (Schritt 8) — ohne Chiliöl\nund Worcestershire, mit Concassé und Kräuteröl-Tropfen. Oder auslassen.",
               "tags": [
                 "kind"
               ]
@@ -1537,47 +1538,16 @@
                       "action": "Am Tag: Schwanz mit der Küchenschere an der Bauchseite längs aufschneiden, Fleisch herausheben, den dunklen Darmfaden ziehen.",
                       "ingredients": [],
                       "attention": "active"
-                    },
-                    {
-                      "id": "gang-2-schwaenze-antrocknen",
-                      "label": "7",
-                      "heading": "**7. Schwänze antrocknen (ca. 5 Min.)**",
-                      "title": "Schwänze antrocknen",
-                      "duration": {
-                        "typical": "PT5M",
-                        "source": "ca. 5 Min.",
-                        "estimated": true
-                      },
-                      "text": "Schwänze sehr gründlich trockentupfen und **1–2 h offen auf Gitter/Küchenpapier im Kühlschrank antrocknen** — Feuchtigkeit ist der Feind der Kruste, TK-Ware zieht besonders Wasser.",
-                      "action": "Schwänze sehr gründlich trockentupfen und **1–2 h offen auf Gitter/Küchenpapier im Kühlschrank antrocknen** — Feuchtigkeit ist der Feind der Kruste, TK-Ware zieht besonders Wasser.",
-                      "limits": [
-                        "1–2 h offen auf Gitter/Küchenpapier im Kühlschrank antrocknen"
-                      ],
-                      "timers": [
-                        {
-                          "label": "Schwänze antrocknen",
-                          "duration": {
-                            "min": "PT1H",
-                            "max": "PT2H"
-                          },
-                          "text": "1–2 h"
-                        }
-                      ],
-                      "ingredients": [],
-                      "meta": "*ergibt Schwänze angetrocknet · hält 1–2 h*",
-                      "attention": "active"
                     }
                   ],
                   "heading": "**Kaisergranat vorbereiten (Vorabend antauen und Köpfe ab, am Tag auslösen, Kühlschrank):**",
                   "phaseHint": "Vorabend",
                   "produces": [
                     {
-                      "id": "schwaenze-angetrocknet",
-                      "name": "Schwänze angetrocknet",
-                      "hold": {
-                        "min": "PT1H",
-                        "max": "PT2H",
-                        "source": "hält 1–2 h"
+                      "id": "kaisergranat-vorbereiten",
+                      "name": "Kaisergranat vorbereiten",
+                      "storage": {
+                        "place": "fridge"
                       }
                     }
                   ],
@@ -1591,8 +1561,8 @@
                   "steps": [
                     {
                       "id": "gang-2-karkassen-roesten-und-auskochen",
-                      "label": "8",
-                      "heading": "**8. Karkassen rösten und auskochen (ca. 35 Min.)**",
+                      "label": "7",
+                      "heading": "**7. Karkassen rösten und auskochen (ca. 35 Min.)**",
                       "title": "Karkassen rösten und auskochen",
                       "duration": {
                         "typical": "PT35M",
@@ -1678,8 +1648,8 @@
                     },
                     {
                       "id": "gang-2-karkassen-sud-reduzieren",
-                      "label": "9",
-                      "heading": "**9. Karkassen-Sud reduzieren (ca. 10 Min.)**",
+                      "label": "8",
+                      "heading": "**8. Karkassen-Sud reduzieren (ca. 10 Min.)**",
                       "title": "Karkassen-Sud reduzieren",
                       "duration": {
                         "typical": "PT10M",
@@ -1720,6 +1690,54 @@
                       "name": "Karkassen-Reduktion",
                       "storage": {
                         "place": "fridge"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "schwaenze-trocknen",
+                  "name": "Schwänze trocknen",
+                  "steps": [
+                    {
+                      "id": "gang-2-schwaenze-antrocknen",
+                      "label": "9",
+                      "heading": "**9. Schwänze antrocknen (ca. 5 Min.)**",
+                      "title": "Schwänze antrocknen",
+                      "duration": {
+                        "typical": "PT5M",
+                        "source": "ca. 5 Min.",
+                        "estimated": true
+                      },
+                      "text": "Schwänze sehr gründlich trockentupfen und **1–2 h offen auf Gitter/Küchenpapier im Kühlschrank antrocknen** — Feuchtigkeit ist der Feind der Kruste, TK-Ware zieht besonders Wasser.",
+                      "action": "Schwänze sehr gründlich trockentupfen und **1–2 h offen auf Gitter/Küchenpapier im Kühlschrank antrocknen** — Feuchtigkeit ist der Feind der Kruste, TK-Ware zieht besonders Wasser.",
+                      "limits": [
+                        "1–2 h offen auf Gitter/Küchenpapier im Kühlschrank antrocknen"
+                      ],
+                      "timers": [
+                        {
+                          "label": "Schwänze antrocknen",
+                          "duration": {
+                            "min": "PT1H",
+                            "max": "PT2H"
+                          },
+                          "text": "1–2 h"
+                        }
+                      ],
+                      "ingredients": [],
+                      "meta": "*ergibt Schwänze angetrocknet · hält 1–2 h*",
+                      "attention": "active"
+                    }
+                  ],
+                  "heading": "**Schwänze trocknen (Nachmittag, 1–2 h vor Gang 2, Kühlschrank):**",
+                  "phaseHint": "Nachmittag",
+                  "produces": [
+                    {
+                      "id": "schwaenze-angetrocknet",
+                      "name": "Schwänze angetrocknet",
+                      "hold": {
+                        "min": "PT1H",
+                        "max": "PT2H",
+                        "source": "hält 1–2 h"
                       }
                     }
                   ]
@@ -1889,41 +1907,6 @@
                           "text": "ca. 5–7 Min."
                         }
                       ]
-                    },
-                    {
-                      "id": "gang-2-limette-einruehren",
-                      "label": "13",
-                      "heading": "**13. Limette einrühren (ca. 2 Min.)**",
-                      "title": "Limette einrühren",
-                      "duration": {
-                        "typical": "PT2M",
-                        "source": "ca. 2 Min.",
-                        "estimated": true
-                      },
-                      "text": "**Erst unmittelbar vor dem Anrichten:** Sauce in ein vorgewärmtes Töpfchen gießen, Abrieb von 1 Limette + 2 TL Limettensaft einrühren, tropfenweise bis max. 3 TL abschmecken — Zitrus-Öle sind hitzeflüchtig, und Limette ist aggressiver als Zitrone. *(Gebrochen? → Emulsions-Notfall in `technik/abschmecken.md`.)*",
-                      "action": "**Erst unmittelbar vor dem Anrichten:** Sauce in ein vorgewärmtes Töpfchen gießen, Abrieb von 1 Limette + 2 TL Limettensaft einrühren, tropfenweise bis max.",
-                      "rescue": "Gebrochen? → Emulsions-Notfall in `technik/abschmecken.md`.",
-                      "ingredients": [
-                        {
-                          "ref": "limetten",
-                          "amount": {
-                            "text": "1 Limette",
-                            "value": 1.0,
-                            "unit": "Stück"
-                          }
-                        },
-                        {
-                          "ref": "limetten",
-                          "amount": {
-                            "text": "2 TL Limettensaft",
-                            "value": 2.0,
-                            "unit": "TL"
-                          }
-                        }
-                      ],
-                      "meta": "*Technik: technik/abschmecken.md#emulsions-notfall*",
-                      "technique": "technik/abschmecken.md#emulsions-notfall",
-                      "attention": "active"
                     }
                   ],
                   "heading": "**Verjus-Limetten-Beurre-blanc (vor Gang 1 fertigstellen, hält bis 2 h warm bei 50–55 °C):**",
@@ -1954,8 +1937,8 @@
                   "steps": [
                     {
                       "id": "gang-2-teller-vorwaermen-schwaenze-salzen",
-                      "label": "14",
-                      "heading": "**14. Teller vorwärmen, Schwänze salzen (ca. 2 Min.)**",
+                      "label": "13",
+                      "heading": "**13. Teller vorwärmen, Schwänze salzen (ca. 2 Min.)**",
                       "title": "Teller vorwärmen, Schwänze salzen",
                       "duration": {
                         "typical": "PT2M",
@@ -1976,8 +1959,8 @@
                     },
                     {
                       "id": "gang-2-pfannen-aufheizen",
-                      "label": "15",
-                      "heading": "**15. Pfannen aufheizen (ca. 3 Min.)**",
+                      "label": "14",
+                      "heading": "**14. Pfannen aufheizen (ca. 3 Min.)**",
                       "title": "Pfannen aufheizen",
                       "duration": {
                         "typical": "PT3M",
@@ -2004,6 +1987,41 @@
                           "units": 2
                         }
                       ],
+                      "attention": "active"
+                    },
+                    {
+                      "id": "gang-2-limette-in-die-beurre-blanc",
+                      "label": "15",
+                      "heading": "**15. Limette in die Beurre blanc (ca. 2 Min.)**",
+                      "title": "Limette in die Beurre blanc",
+                      "duration": {
+                        "typical": "PT2M",
+                        "source": "ca. 2 Min.",
+                        "estimated": true
+                      },
+                      "text": "**Erst jetzt, während die Pfannen aufheizen:** Beurre blanc aus der Thermoskanne in ein vorgewärmtes Töpfchen gießen, Abrieb von 1 Limette + 2 TL Limettensaft einrühren, tropfenweise bis max. 3 TL abschmecken — Zitrus-Öle sind hitzeflüchtig, und Limette ist aggressiver als Zitrone. *(Gebrochen? → Emulsions-Notfall in `technik/abschmecken.md`.)*",
+                      "action": "**Erst jetzt, während die Pfannen aufheizen:** Beurre blanc aus der Thermoskanne in ein vorgewärmtes Töpfchen gießen, Abrieb von 1 Limette + 2 TL Limettensaft einrühren, tropfenweise bis max.",
+                      "rescue": "Gebrochen? → Emulsions-Notfall in `technik/abschmecken.md`.",
+                      "ingredients": [
+                        {
+                          "ref": "limetten",
+                          "amount": {
+                            "text": "1 Limette",
+                            "value": 1.0,
+                            "unit": "Stück"
+                          }
+                        },
+                        {
+                          "ref": "limetten",
+                          "amount": {
+                            "text": "2 TL Limettensaft",
+                            "value": 2.0,
+                            "unit": "TL"
+                          }
+                        }
+                      ],
+                      "meta": "*Technik: technik/abschmecken.md#emulsions-notfall*",
+                      "technique": "technik/abschmecken.md#emulsions-notfall",
                       "attention": "active"
                     },
                     {
@@ -2062,10 +2080,10 @@
                       "attention": "active"
                     },
                     {
-                      "id": "gang-2-anrichten",
+                      "id": "gang-2-kaisergranat-anrichten",
                       "label": "17",
-                      "heading": "**17. Anrichten (ca. 3 Min.)**",
-                      "title": "Anrichten",
+                      "heading": "**17. Kaisergranat anrichten (ca. 3 Min.)**",
+                      "title": "Kaisergranat anrichten",
                       "duration": {
                         "typical": "PT3M",
                         "source": "ca. 3 Min.",
@@ -2086,11 +2104,11 @@
                           }
                         }
                       ],
-                      "meta": "*nach Braten und arrosieren, Limette einrühren*",
+                      "meta": "*nach Braten und arrosieren, Limette in die Beurre blanc*",
                       "attention": "active",
                       "after": [
                         "step:gang-2-braten-und-arrosieren",
-                        "step:gang-2-limette-einruehren"
+                        "step:gang-2-limette-in-die-beurre-blanc"
                       ]
                     }
                   ],
@@ -2627,7 +2645,24 @@
                           "text": "über Nacht"
                         }
                       ]
-                    },
+                    }
+                  ],
+                  "heading": "**Ochsenbacken (T-1, über Nacht in der Schmorflüssigkeit, Kühlschrank):**",
+                  "phaseHint": "T-1",
+                  "produces": [
+                    {
+                      "id": "ochsenbacken",
+                      "name": "Ochsenbacken",
+                      "storage": {
+                        "place": "fridge"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "jus-und-portionen",
+                  "name": "Jus und Portionen",
+                  "steps": [
                     {
                       "id": "gang-3-entfetten-und-portionieren",
                       "label": "9",
@@ -2703,8 +2738,8 @@
                       ]
                     }
                   ],
-                  "heading": "**Ochsenbacken (T-1, ergibt 5 Portionen à \\~150 g + \\~350 ml Jus, Kühlschrank):**",
-                  "phaseHint": "T-1",
+                  "heading": "**Jus und Portionen (am Tag vormittags, ergibt 5 Portionen à \\~150 g + \\~350 ml Jus, Kühlschrank):**",
+                  "phaseHint": "am Tag",
                   "produces": [
                     {
                       "id": "jus",
@@ -3237,10 +3272,10 @@
                       ]
                     },
                     {
-                      "id": "gang-3-anrichten",
+                      "id": "gang-3-ochsenbacke-anrichten",
                       "label": "22",
-                      "heading": "**22. Anrichten (ca. 3 Min.)**",
-                      "title": "Anrichten",
+                      "heading": "**22. Ochsenbacke anrichten (ca. 3 Min.)**",
+                      "title": "Ochsenbacke anrichten",
                       "duration": {
                         "typical": "PT3M",
                         "source": "ca. 3 Min.",
@@ -3369,13 +3404,234 @@
               "title": "Zubereitung",
               "tasks": [
                 {
+                  "id": "parfait",
+                  "name": "Parfait",
+                  "steps": [
+                    {
+                      "id": "gang-4-pate-a-bombe",
+                      "label": "1",
+                      "heading": "**1. Pâte à bombe (ca. 12 Min.)**",
+                      "title": "Pâte à bombe",
+                      "duration": {
+                        "typical": "PT12M",
+                        "source": "ca. 12 Min.",
+                        "estimated": true
+                      },
+                      "text": "4 Eigelb, 70 g Zucker, 25 g Dextrose, 90 ml ausgekühlten doppelt starken Decaf-Espresso, 2 TL entkoffeiniertes Instant-Espressopulver und 1 g Salz (1 kräftige Prise) in einer Schüssel über dem Wasserbad „zur Rose“ dick-cremig aufschlagen:\n**75–82 °C** (Thermometer — ab 70 °C pasteurisiert, über 84 °C gerinnt es). Espresso von Anfang an mit: so bindet er ein, statt später Volumen zu kosten.",
+                      "action": "4 Eigelb, 70 g Zucker, 25 g Dextrose, 90 ml ausgekühlten doppelt starken Decaf-Espresso, 2 TL entkoffeiniertes Instant-Espressopulver und 1 g Salz (1 kräftige Prise) in einer Schüssel über dem Wasserbad „zur Rose“ dick-cremig aufschlagen:\n**75–82 °C** (Thermometer — ab 70 °C pasteurisiert, über 84 °C gerinnt es).",
+                      "limits": [
+                        "75–82 °C"
+                      ],
+                      "temps": [
+                        {
+                          "kind": "ziel",
+                          "text": "75–82 °C",
+                          "min": 75,
+                          "max": 82
+                        },
+                        {
+                          "kind": "ziel",
+                          "text": "70 °C",
+                          "value": 70
+                        },
+                        {
+                          "kind": "max",
+                          "text": "84 °C",
+                          "value": 84
+                        }
+                      ],
+                      "ingredients": [
+                        {
+                          "ref": "eier",
+                          "amount": {
+                            "text": "4 Eigelb",
+                            "value": 4.0,
+                            "unit": "Stück"
+                          }
+                        },
+                        {
+                          "ref": "zucker",
+                          "amount": {
+                            "text": "70 g Zucker",
+                            "value": 70.0,
+                            "unit": "g"
+                          }
+                        },
+                        {
+                          "ref": "dextrose",
+                          "amount": {
+                            "text": "25 g Dextrose",
+                            "value": 25.0,
+                            "unit": "g"
+                          }
+                        },
+                        {
+                          "ref": "instant-espressopulver",
+                          "amount": {
+                            "text": "2 TL entkoffeiniertes Instant-Espressopulver",
+                            "value": 2.0,
+                            "unit": "TL"
+                          }
+                        },
+                        {
+                          "ref": "salz",
+                          "amount": {
+                            "text": "1 g Salz",
+                            "value": 1.0,
+                            "unit": "g"
+                          }
+                        }
+                      ],
+                      "meta": "*jederzeit · Herd · fertig bei 75–82 °C*",
+                      "claims": [
+                        {
+                          "resource": "hob",
+                          "units": 1
+                        }
+                      ],
+                      "endCondition": {
+                        "type": "temperature",
+                        "text": "bei 75–82 °C",
+                        "value": 75
+                      },
+                      "attention": "active",
+                      "after": []
+                    },
+                    {
+                      "id": "gang-4-kaltschlagen",
+                      "label": "2",
+                      "heading": "**2. Kaltschlagen (5–8 Min.)**",
+                      "title": "Kaltschlagen",
+                      "duration": {
+                        "min": "PT5M",
+                        "max": "PT8M",
+                        "source": "5–8 Min."
+                      },
+                      "text": "Vom Wasserbad nehmen und kaltschlagen, bis die Masse unter \\~30 °C ist (Handrührer, 5–8 Min.) — warme Masse schmilzt gleich die Sahne.",
+                      "action": "Vom Wasserbad nehmen und kaltschlagen, bis die Masse unter \\~30 °C ist (Handrührer, 5–8 Min.) — warme Masse schmilzt gleich die Sahne.",
+                      "cues": [
+                        "bis die Masse unter \\~30 °C ist (Handrührer"
+                      ],
+                      "timers": [
+                        {
+                          "label": "Kaltschlagen",
+                          "duration": {
+                            "min": "PT5M",
+                            "max": "PT8M"
+                          },
+                          "text": "5–8 Min."
+                        }
+                      ],
+                      "temps": [
+                        {
+                          "kind": "ziel",
+                          "text": "30 °C",
+                          "value": 30
+                        }
+                      ],
+                      "ingredients": [],
+                      "attention": "active"
+                    },
+                    {
+                      "id": "gang-4-sahne-schlagen",
+                      "label": "3",
+                      "heading": "**3. Sahne schlagen (ca. 4 Min.)**",
+                      "title": "Sahne schlagen",
+                      "duration": {
+                        "typical": "PT4M",
+                        "source": "ca. 4 Min.",
+                        "estimated": true
+                      },
+                      "text": "300 ml Sahne zu **weichen Spitzen** schlagen — ausdrücklich nicht steif (beim Falten kommt Scherung dazu, übersteift wird’s buttrig-körnig).",
+                      "action": "300 ml Sahne zu **weichen Spitzen** schlagen — ausdrücklich nicht steif (beim Falten kommt Scherung dazu, übersteift wird’s buttrig-körnig).",
+                      "limits": [
+                        "weichen Spitzen"
+                      ],
+                      "ingredients": [
+                        {
+                          "ref": "sahne",
+                          "amount": {
+                            "text": "300 ml Sahne",
+                            "value": 300.0,
+                            "unit": "ml"
+                          }
+                        }
+                      ],
+                      "meta": "*jederzeit*",
+                      "attention": "active",
+                      "after": []
+                    },
+                    {
+                      "id": "gang-4-unterheben",
+                      "label": "4",
+                      "heading": "**4. Unterheben (ca. 3 Min.)**",
+                      "title": "Unterheben",
+                      "duration": {
+                        "typical": "PT3M",
+                        "source": "ca. 3 Min.",
+                        "estimated": true
+                      },
+                      "text": "⅓ der Eigelbmasse in die Sahne rühren (Konsistenzen angleichen), dann den Rest mit dem Teigschaber locker unterheben — zügig, nicht rühren.",
+                      "action": "⅓ der Eigelbmasse in die Sahne rühren (Konsistenzen angleichen), dann den Rest mit dem Teigschaber locker unterheben — zügig, nicht rühren.",
+                      "ingredients": [],
+                      "meta": "*nach Kaltschlagen, Sahne schlagen*",
+                      "attention": "active",
+                      "after": [
+                        "step:gang-4-kaltschlagen",
+                        "step:gang-4-sahne-schlagen"
+                      ]
+                    },
+                    {
+                      "id": "gang-4-einfrieren",
+                      "label": "5",
+                      "heading": "**5. Einfrieren (über Nacht, passiv)**",
+                      "title": "Einfrieren",
+                      "duration": {
+                        "min": "PT8H",
+                        "max": "PT14H",
+                        "source": "über Nacht"
+                      },
+                      "attention": "passive",
+                      "text": "In die mit Folie ausgelegte 20-cm-Kastenform, glattstreichen, Folie auflegen.\n**Mind. über Nacht** bei voller Gefrierleistung. Die ungefrorene Masse darf ruhig einen Tick zu süß/zu kräftig schmecken: Kälte dämpft beides — beim Salz aber nur probieren, nicht nachlegen (1 g ist bewusst knapp, das bewährte Schokoladeneis liegt bei \\~0,14 %).",
+                      "action": "In die mit Folie ausgelegte 20-cm-Kastenform, glattstreichen, Folie auflegen.",
+                      "limits": [
+                        "Mind. über Nacht"
+                      ],
+                      "ingredients": [],
+                      "meta": "*ergibt Parfait · mind. 8 h*",
+                      "timers": [
+                        {
+                          "label": "Einfrieren",
+                          "duration": {
+                            "min": "PT8H",
+                            "max": "PT14H"
+                          },
+                          "text": "über Nacht"
+                        }
+                      ]
+                    }
+                  ],
+                  "heading": "**Parfait (1–2 Tage vorher, Gefrierfach):**",
+                  "phaseHint": "1–2 Tage vorher",
+                  "produces": [
+                    {
+                      "id": "parfait",
+                      "name": "Parfait",
+                      "hold": {
+                        "min": "PT8H",
+                        "source": "mind. 8 h"
+                      }
+                    }
+                  ]
+                },
+                {
                   "id": "kaffee-crumble",
                   "name": "Kaffee-Crumble",
                   "steps": [
                     {
                       "id": "gang-4-kaffee-crumble",
-                      "label": "1",
-                      "heading": "**1. Kaffee-Crumble (ca. 20–25 Min.)**",
+                      "label": "6",
+                      "heading": "**6. Kaffee-Crumble (ca. 20–25 Min.)**",
                       "title": "Kaffee-Crumble",
                       "duration": {
                         "min": "PT20M",
@@ -3466,227 +3722,6 @@
                       "name": "Kaffee-Crumble",
                       "storage": {
                         "place": "room"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "id": "parfait",
-                  "name": "Parfait",
-                  "steps": [
-                    {
-                      "id": "gang-4-pate-a-bombe",
-                      "label": "2",
-                      "heading": "**2. Pâte à bombe (ca. 12 Min.)**",
-                      "title": "Pâte à bombe",
-                      "duration": {
-                        "typical": "PT12M",
-                        "source": "ca. 12 Min.",
-                        "estimated": true
-                      },
-                      "text": "4 Eigelb, 70 g Zucker, 25 g Dextrose, 90 ml ausgekühlten doppelt starken Decaf-Espresso, 2 TL entkoffeiniertes Instant-Espressopulver und 1 g Salz (1 kräftige Prise) in einer Schüssel über dem Wasserbad „zur Rose“ dick-cremig aufschlagen:\n**75–82 °C** (Thermometer — ab 70 °C pasteurisiert, über 84 °C gerinnt es). Espresso von Anfang an mit: so bindet er ein, statt später Volumen zu kosten.",
-                      "action": "4 Eigelb, 70 g Zucker, 25 g Dextrose, 90 ml ausgekühlten doppelt starken Decaf-Espresso, 2 TL entkoffeiniertes Instant-Espressopulver und 1 g Salz (1 kräftige Prise) in einer Schüssel über dem Wasserbad „zur Rose“ dick-cremig aufschlagen:\n**75–82 °C** (Thermometer — ab 70 °C pasteurisiert, über 84 °C gerinnt es).",
-                      "limits": [
-                        "75–82 °C"
-                      ],
-                      "temps": [
-                        {
-                          "kind": "ziel",
-                          "text": "75–82 °C",
-                          "min": 75,
-                          "max": 82
-                        },
-                        {
-                          "kind": "ziel",
-                          "text": "70 °C",
-                          "value": 70
-                        },
-                        {
-                          "kind": "max",
-                          "text": "84 °C",
-                          "value": 84
-                        }
-                      ],
-                      "ingredients": [
-                        {
-                          "ref": "eier",
-                          "amount": {
-                            "text": "4 Eigelb",
-                            "value": 4.0,
-                            "unit": "Stück"
-                          }
-                        },
-                        {
-                          "ref": "zucker",
-                          "amount": {
-                            "text": "70 g Zucker",
-                            "value": 70.0,
-                            "unit": "g"
-                          }
-                        },
-                        {
-                          "ref": "dextrose",
-                          "amount": {
-                            "text": "25 g Dextrose",
-                            "value": 25.0,
-                            "unit": "g"
-                          }
-                        },
-                        {
-                          "ref": "instant-espressopulver",
-                          "amount": {
-                            "text": "2 TL entkoffeiniertes Instant-Espressopulver",
-                            "value": 2.0,
-                            "unit": "TL"
-                          }
-                        },
-                        {
-                          "ref": "salz",
-                          "amount": {
-                            "text": "1 g Salz",
-                            "value": 1.0,
-                            "unit": "g"
-                          }
-                        }
-                      ],
-                      "meta": "*jederzeit · Herd · fertig bei 75–82 °C*",
-                      "claims": [
-                        {
-                          "resource": "hob",
-                          "units": 1
-                        }
-                      ],
-                      "endCondition": {
-                        "type": "temperature",
-                        "text": "bei 75–82 °C",
-                        "value": 75
-                      },
-                      "attention": "active",
-                      "after": []
-                    },
-                    {
-                      "id": "gang-4-kaltschlagen",
-                      "label": "3",
-                      "heading": "**3. Kaltschlagen (5–8 Min.)**",
-                      "title": "Kaltschlagen",
-                      "duration": {
-                        "min": "PT5M",
-                        "max": "PT8M",
-                        "source": "5–8 Min."
-                      },
-                      "text": "Vom Wasserbad nehmen und kaltschlagen, bis die Masse unter \\~30 °C ist (Handrührer, 5–8 Min.) — warme Masse schmilzt gleich die Sahne.",
-                      "action": "Vom Wasserbad nehmen und kaltschlagen, bis die Masse unter \\~30 °C ist (Handrührer, 5–8 Min.) — warme Masse schmilzt gleich die Sahne.",
-                      "cues": [
-                        "bis die Masse unter \\~30 °C ist (Handrührer"
-                      ],
-                      "timers": [
-                        {
-                          "label": "Kaltschlagen",
-                          "duration": {
-                            "min": "PT5M",
-                            "max": "PT8M"
-                          },
-                          "text": "5–8 Min."
-                        }
-                      ],
-                      "temps": [
-                        {
-                          "kind": "ziel",
-                          "text": "30 °C",
-                          "value": 30
-                        }
-                      ],
-                      "ingredients": [],
-                      "attention": "active"
-                    },
-                    {
-                      "id": "gang-4-sahne-schlagen",
-                      "label": "4",
-                      "heading": "**4. Sahne schlagen (ca. 4 Min.)**",
-                      "title": "Sahne schlagen",
-                      "duration": {
-                        "typical": "PT4M",
-                        "source": "ca. 4 Min.",
-                        "estimated": true
-                      },
-                      "text": "300 ml Sahne zu **weichen Spitzen** schlagen — ausdrücklich nicht steif (beim Falten kommt Scherung dazu, übersteift wird’s buttrig-körnig).",
-                      "action": "300 ml Sahne zu **weichen Spitzen** schlagen — ausdrücklich nicht steif (beim Falten kommt Scherung dazu, übersteift wird’s buttrig-körnig).",
-                      "limits": [
-                        "weichen Spitzen"
-                      ],
-                      "ingredients": [
-                        {
-                          "ref": "sahne",
-                          "amount": {
-                            "text": "300 ml Sahne",
-                            "value": 300.0,
-                            "unit": "ml"
-                          }
-                        }
-                      ],
-                      "meta": "*jederzeit*",
-                      "attention": "active",
-                      "after": []
-                    },
-                    {
-                      "id": "gang-4-unterheben",
-                      "label": "5",
-                      "heading": "**5. Unterheben (ca. 3 Min.)**",
-                      "title": "Unterheben",
-                      "duration": {
-                        "typical": "PT3M",
-                        "source": "ca. 3 Min.",
-                        "estimated": true
-                      },
-                      "text": "⅓ der Eigelbmasse in die Sahne rühren (Konsistenzen angleichen), dann den Rest mit dem Teigschaber locker unterheben — zügig, nicht rühren.",
-                      "action": "⅓ der Eigelbmasse in die Sahne rühren (Konsistenzen angleichen), dann den Rest mit dem Teigschaber locker unterheben — zügig, nicht rühren.",
-                      "ingredients": [],
-                      "meta": "*nach Kaltschlagen, Sahne schlagen*",
-                      "attention": "active",
-                      "after": [
-                        "step:gang-4-kaltschlagen",
-                        "step:gang-4-sahne-schlagen"
-                      ]
-                    },
-                    {
-                      "id": "gang-4-einfrieren",
-                      "label": "6",
-                      "heading": "**6. Einfrieren (über Nacht, passiv)**",
-                      "title": "Einfrieren",
-                      "duration": {
-                        "min": "PT8H",
-                        "max": "PT14H",
-                        "source": "über Nacht"
-                      },
-                      "attention": "passive",
-                      "text": "In die mit Folie ausgelegte 20-cm-Kastenform, glattstreichen, Folie auflegen.\n**Mind. über Nacht** bei voller Gefrierleistung. Die ungefrorene Masse darf ruhig einen Tick zu süß/zu kräftig schmecken: Kälte dämpft beides — beim Salz aber nur probieren, nicht nachlegen (1 g ist bewusst knapp, das bewährte Schokoladeneis liegt bei \\~0,14 %).",
-                      "action": "In die mit Folie ausgelegte 20-cm-Kastenform, glattstreichen, Folie auflegen.",
-                      "limits": [
-                        "Mind. über Nacht"
-                      ],
-                      "ingredients": [],
-                      "meta": "*ergibt Parfait · mind. 8 h*",
-                      "timers": [
-                        {
-                          "label": "Einfrieren",
-                          "duration": {
-                            "min": "PT8H",
-                            "max": "PT14H"
-                          },
-                          "text": "über Nacht"
-                        }
-                      ]
-                    }
-                  ],
-                  "heading": "**Parfait (1–2 Tage vorher, Gefrierfach):**",
-                  "phaseHint": "1–2 Tage vorher",
-                  "produces": [
-                    {
-                      "id": "parfait",
-                      "name": "Parfait",
-                      "hold": {
-                        "min": "PT8H",
-                        "source": "mind. 8 h"
                       }
                     }
                   ]
@@ -3898,10 +3933,10 @@
     },
     {
       "type": "schedule",
-      "title": "Zeitplan-Skelett (Abend, grob — Feinschliff nach Testläufen)",
+      "title": "Zeitplan",
       "schedule": {
-        "id": "zeitplan-skelett-abend-grob-feinschliff-nach-testlaeufen",
-        "label": "Zeitplan-Skelett (Abend, grob — Feinschliff nach Testläufen)",
+        "id": "zeitplan",
+        "label": "Zeitplan",
         "phases": [
           {
             "id": "saison-teil-erledigt-09-2026",
@@ -3925,50 +3960,105 @@
             "part": "evening"
           },
           {
-            "id": "vormittags",
-            "label": "Vormittags",
-            "day": 0,
-            "part": "morning"
-          },
-          {
-            "id": "nachmittags",
-            "label": "Nachmittags",
-            "day": 0,
-            "part": "afternoon"
-          },
-          {
-            "id": "am-abend",
-            "label": "Am Abend",
-            "day": 0,
-            "part": "evening"
-          },
-          {
-            "id": "gang-1",
-            "label": "Gang 1 (0:00)",
+            "id": "uhr-10-00",
+            "label": "10:00 Uhr (9h vorher)",
             "day": 0,
             "part": "service",
-            "at": "PT0M"
+            "at": "-PT9H",
+            "clock": "10:00"
           },
           {
-            "id": "gang-2",
-            "label": "Gang 2 (+0:20)",
+            "id": "uhr-11-15",
+            "label": "11:15 Uhr",
             "day": 0,
             "part": "service",
-            "at": "+PT20M"
+            "at": "-PT7H45M",
+            "clock": "11:15"
           },
           {
-            "id": "gang-3",
-            "label": "Gang 3 (+0:55)",
+            "id": "uhr-15-00",
+            "label": "15:00 Uhr (4h vorher)",
             "day": 0,
             "part": "service",
-            "at": "+PT55M"
+            "at": "-PT4H",
+            "clock": "15:00"
           },
           {
-            "id": "gang-4",
-            "label": "Gang 4 (+1:45)",
+            "id": "uhr-17-15",
+            "label": "17:15 Uhr",
             "day": 0,
             "part": "service",
-            "at": "+PT1H45M"
+            "at": "-PT1H45M",
+            "clock": "17:15"
+          },
+          {
+            "id": "uhr-17-40",
+            "label": "17:40 Uhr",
+            "day": 0,
+            "part": "service",
+            "at": "-PT1H20M",
+            "clock": "17:40"
+          },
+          {
+            "id": "uhr-18-15",
+            "label": "18:15 Uhr (45min vorher)",
+            "day": 0,
+            "part": "service",
+            "at": "-PT45M",
+            "clock": "18:15"
+          },
+          {
+            "id": "uhr-18-40",
+            "label": "18:40 Uhr (20min vorher)",
+            "day": 0,
+            "part": "service",
+            "at": "-PT20M",
+            "clock": "18:40"
+          },
+          {
+            "id": "uhr-19-00",
+            "label": "19:00 Uhr — Gang 1",
+            "day": 0,
+            "part": "service",
+            "at": "PT0M",
+            "clock": "19:00",
+            "event": "Gang 1"
+          },
+          {
+            "id": "uhr-19-20",
+            "label": "19:20 Uhr — Gang 2",
+            "day": 0,
+            "part": "service",
+            "at": "+PT20M",
+            "clock": "19:20",
+            "event": "Gang 2"
+          },
+          {
+            "id": "uhr-19-50",
+            "label": "19:50 Uhr — Gang 3",
+            "day": 0,
+            "part": "service",
+            "at": "+PT50M",
+            "clock": "19:50",
+            "event": "Gang 3"
+          },
+          {
+            "id": "uhr-20-40",
+            "label": "20:40 Uhr — Nach Gang 3",
+            "day": 0,
+            "part": "service",
+            "at": "+PT1H40M",
+            "clock": "20:40",
+            "event": "Nach Gang 3"
+          },
+          {
+            "id": "uhr-21-05",
+            "label": "21:05 Uhr — Gang 4",
+            "day": 0,
+            "part": "service",
+            "at": "+PT2H5M",
+            "clock": "21:05",
+            "event": "Gang 4"
           }
         ],
         "entries": [
@@ -4006,7 +4096,11 @@
           },
           {
             "phase": "t-2",
-            "text": "**Auftauen und klären: Tomaten-Püree-Block (Weg A) aus dem Gefrierfach ins Passiertuch (Drip-Thaw braucht 24–48 h!)**",
+            "text": "Metzger-Abholung (vormittags)"
+          },
+          {
+            "phase": "t-2",
+            "text": "Auftauen und klären: Tomaten-Püree-Block (Weg A) aus dem Gefrierfach ins Passiertuch (Drip-Thaw braucht 24–48 h!)",
             "steps": [
               "gang-1-auftauen-und-klaeren"
             ],
@@ -4014,11 +4108,7 @@
           },
           {
             "phase": "t-2",
-            "text": "Metzger-Abholung"
-          },
-          {
-            "phase": "t-2",
-            "text": "**Brauner Fond (Knochen rösten, Röstgemüse, Reduktion, 2 Std. Schnellkochtopf, über Nacht kalt)**",
+            "text": "Brauner Fond (Knochen rösten, Röstgemüse, Reduktion, 2,5 Std. Schnellkochtopf, über Nacht kalt)",
             "steps": [
               "gang-3-knochen-roesten",
               "gang-3-roestgemuese",
@@ -4052,7 +4142,7 @@
           },
           {
             "phase": "t-1",
-            "text": "**Ochsenbacken: anbraten, im Fond schmoren (3,5–4 h), in der Flüssigkeit abkühlen lassen, über Nacht kalt stellen**",
+            "text": "Ochsenbacken (anbraten, im Fond schmoren 3,5–4 h, in der Flüssigkeit abkühlen lassen, über Nacht kalt stellen)",
             "steps": [
               "gang-3-backen-parieren-und-anbraten",
               "gang-3-schmoren",
@@ -4112,11 +4202,11 @@
             "course": "gang-2"
           },
           {
-            "phase": "vormittags",
+            "phase": "uhr-10-00",
             "text": "Brot holen"
           },
           {
-            "phase": "vormittags",
+            "phase": "uhr-10-00",
             "text": "Entfetten und portionieren",
             "steps": [
               "gang-3-entfetten-und-portionieren"
@@ -4124,7 +4214,7 @@
             "course": "gang-3"
           },
           {
-            "phase": "vormittags",
+            "phase": "uhr-10-00",
             "text": "Passieren",
             "steps": [
               "gang-3-passieren"
@@ -4132,7 +4222,7 @@
             "course": "gang-3"
           },
           {
-            "phase": "vormittags",
+            "phase": "uhr-10-00",
             "text": "Jus reduzieren (auf \\~350 ml, bei \\~450 ml Salz probieren)",
             "steps": [
               "gang-3-jus-reduzieren"
@@ -4140,7 +4230,7 @@
             "course": "gang-3"
           },
           {
-            "phase": "vormittags",
+            "phase": "uhr-11-15",
             "text": "Kaisergranat auslösen",
             "steps": [
               "gang-2-kaisergranat-ausloesen"
@@ -4148,19 +4238,23 @@
             "course": "gang-2"
           },
           {
-            "phase": "vormittags",
-            "text": "Karkassen-Reduktion",
-            "tasks": [
-              "karkassen-reduktion"
-            ],
-            "course": "gang-2",
+            "phase": "uhr-11-15",
+            "text": "Karkassen rösten und auskochen",
             "steps": [
-              "gang-2-karkassen-roesten-und-auskochen",
-              "gang-2-karkassen-sud-reduzieren"
-            ]
+              "gang-2-karkassen-roesten-und-auskochen"
+            ],
+            "course": "gang-2"
           },
           {
-            "phase": "vormittags",
+            "phase": "uhr-11-15",
+            "text": "Karkassen-Sud reduzieren",
+            "steps": [
+              "gang-2-karkassen-sud-reduzieren"
+            ],
+            "course": "gang-2"
+          },
+          {
+            "phase": "uhr-11-15",
             "text": "Concassé",
             "steps": [
               "gang-1-concasse"
@@ -4168,165 +4262,252 @@
             "course": "gang-1"
           },
           {
-            "phase": "nachmittags",
-            "text": "Rosenkohlblätter lösen, Blätter blanchieren",
+            "phase": "uhr-15-00",
+            "text": "Sellerie kochen",
             "steps": [
-              "gang-3-rosenkohlblaetter-loesen",
+              "gang-3-sellerie-kochen"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "uhr-15-00",
+            "text": "Püree mixen",
+            "steps": [
+              "gang-3-pueree-mixen"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "uhr-15-00",
+            "text": "Püree passieren (warm halten)",
+            "steps": [
+              "gang-3-pueree-passieren"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "uhr-15-00",
+            "text": "Rosenkohlblätter lösen",
+            "steps": [
+              "gang-3-rosenkohlblaetter-loesen"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "uhr-15-00",
+            "text": "Blätter blanchieren",
+            "steps": [
               "gang-3-blaetter-blanchieren"
             ],
             "course": "gang-3"
           },
           {
-            "phase": "nachmittags",
-            "text": "Selleriepüree",
-            "tasks": [
-              "selleriepueree"
-            ],
-            "course": "gang-3",
+            "phase": "uhr-17-15",
+            "text": "Grundwürzung (1–2 h vor Gang 1)",
             "steps": [
-              "gang-3-sellerie-kochen",
-              "gang-3-pueree-mixen",
-              "gang-3-pueree-passieren"
-            ]
+              "gang-1-grundwuerzung"
+            ],
+            "course": "gang-1"
           },
           {
-            "phase": "nachmittags",
-            "text": "Blätter frittieren, Chips lagern (halten 1–2 h)",
-            "steps": [
-              "gang-3-blaetter-frittieren",
-              "gang-3-chips-lagern"
-            ],
-            "course": "gang-3"
-          },
-          {
-            "phase": "nachmittags",
-            "text": "Schwänze antrocknen",
+            "phase": "uhr-17-15",
+            "text": "Schwänze antrocknen (offen im Kühlschrank, 1–2 h)",
             "steps": [
               "gang-2-schwaenze-antrocknen"
             ],
             "course": "gang-2"
           },
           {
-            "phase": "nachmittags",
-            "text": "Grundwürzung (1–2 h vor dem Gang)",
-            "steps": [
-              "gang-1-grundwuerzung"
-            ],
-            "course": "gang-1",
-            "at": {
-              "ref": "course:gang-1:serve",
-              "offset": "-PT2H"
-            },
-            "source": "1–2 h vor dem Gang"
-          },
-          {
-            "phase": "nachmittags",
+            "phase": "uhr-17-15",
             "text": "Tischbutter aus dem Kühlschrank"
           },
           {
-            "phase": "nachmittags",
+            "phase": "uhr-17-15",
             "text": "Ofen 80 °C für Teller"
           },
           {
-            "phase": "am-abend",
-            "text": "Verjus-Limetten-Beurre-blanc (vor Gang 1 fertig, in die Thermoskanne)",
-            "tasks": [
-              "verjus-limetten-beurre-blanc"
-            ],
-            "course": "gang-2",
+            "phase": "uhr-17-40",
+            "text": "Reduktion",
             "steps": [
-              "gang-2-reduktion",
-              "gang-2-sahne-einkochen",
-              "gang-2-butter-montieren",
-              "gang-2-limette-einruehren"
-            ]
+              "gang-2-reduktion"
+            ],
+            "course": "gang-2"
           },
           {
-            "phase": "am-abend",
-            "text": "Kalt abschmecken, Filtern",
+            "phase": "uhr-17-40",
+            "text": "Sahne einkochen",
             "steps": [
-              "gang-1-kalt-abschmecken",
+              "gang-2-sahne-einkochen"
+            ],
+            "course": "gang-2"
+          },
+          {
+            "phase": "uhr-17-40",
+            "text": "Butter montieren (Beurre blanc in die Thermoskanne, hält 2 h)",
+            "steps": [
+              "gang-2-butter-montieren"
+            ],
+            "course": "gang-2"
+          },
+          {
+            "phase": "uhr-18-15",
+            "text": "Blätter frittieren",
+            "steps": [
+              "gang-3-blaetter-frittieren"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "uhr-18-15",
+            "text": "Chips lagern (halten bis 2 h)",
+            "steps": [
+              "gang-3-chips-lagern"
+            ],
+            "course": "gang-3"
+          },
+          {
+            "phase": "uhr-18-40",
+            "text": "Kalt abschmecken",
+            "steps": [
+              "gang-1-kalt-abschmecken"
+            ],
+            "course": "gang-1"
+          },
+          {
+            "phase": "uhr-18-40",
+            "text": "Filtern",
+            "steps": [
               "gang-1-filtern"
             ],
             "course": "gang-1"
           },
           {
-            "phase": "gang-1",
-            "text": "Limette einrühren, Anrichten — kein Herd nötig",
-            "steps": [
-              "gang-1-limette-einruehren",
-              "gang-1-anrichten"
-            ],
-            "course": "gang-1"
-          },
-          {
-            "phase": "gang-2",
-            "text": "Brot und Butter auf den Tisch",
-            "course": "gang-2"
-          },
-          {
-            "phase": "gang-2",
-            "text": "Kaisergranat braten, Anrichten (\\~8 Min. aktiv)",
-            "steps": [
-              "gang-2-teller-vorwaermen-schwaenze-salzen",
-              "gang-2-pfannen-aufheizen",
-              "gang-2-braten-und-arrosieren",
-              "gang-2-anrichten"
-            ],
-            "tasks": [
-              "kaisergranat-braten"
-            ],
-            "course": "gang-2"
-          },
-          {
-            "phase": "gang-2",
-            "text": "Backen temperieren (1 Std. vor Gang 3, steht schon im Bräter bereit)",
+            "phase": "uhr-18-40",
+            "text": "Backen temperieren (aus dem Kühlschrank in den Bräter, 1 Std. vor Gang 3)",
             "steps": [
               "gang-3-backen-temperieren"
             ],
             "course": "gang-3"
           },
           {
-            "phase": "gang-3",
-            "text": "Glasieren und durchwärmen \\~20 Min. auf dem Herd bis ≥ 70 °C Kern (Thermometer)",
+            "phase": "uhr-19-00",
+            "text": "Limette einrühren",
+            "steps": [
+              "gang-1-limette-einruehren"
+            ],
+            "course": "gang-1"
+          },
+          {
+            "phase": "uhr-19-00",
+            "text": "Tomatenwasser anrichten (kein Herd nötig)",
+            "steps": [
+              "gang-1-tomatenwasser-anrichten"
+            ],
+            "course": "gang-1"
+          },
+          {
+            "phase": "uhr-19-20",
+            "text": "Brot und Butter auf den Tisch"
+          },
+          {
+            "phase": "uhr-19-20",
+            "text": "Teller vorwärmen, Schwänze salzen",
+            "steps": [
+              "gang-2-teller-vorwaermen-schwaenze-salzen"
+            ],
+            "course": "gang-2"
+          },
+          {
+            "phase": "uhr-19-20",
+            "text": "Pfannen aufheizen",
+            "steps": [
+              "gang-2-pfannen-aufheizen"
+            ],
+            "course": "gang-2"
+          },
+          {
+            "phase": "uhr-19-20",
+            "text": "Limette in die Beurre blanc",
+            "steps": [
+              "gang-2-limette-in-die-beurre-blanc"
+            ],
+            "course": "gang-2"
+          },
+          {
+            "phase": "uhr-19-20",
+            "text": "Braten und arrosieren",
+            "steps": [
+              "gang-2-braten-und-arrosieren"
+            ],
+            "course": "gang-2"
+          },
+          {
+            "phase": "uhr-19-20",
+            "text": "Kaisergranat anrichten",
+            "steps": [
+              "gang-2-kaisergranat-anrichten"
+            ],
+            "course": "gang-2"
+          },
+          {
+            "phase": "uhr-19-50",
+            "text": "Glasieren und durchwärmen (\\~20 Min. auf dem Herd bis ≥ 70 °C Kern, Thermometer)",
             "steps": [
               "gang-3-glasieren-und-durchwaermen"
             ],
             "course": "gang-3"
           },
           {
-            "phase": "gang-3",
-            "text": "parallel Blätter, Jus, Chips",
+            "phase": "uhr-19-50",
+            "text": "Blätter, Jus, Chips (parallel zum Glasieren)",
             "steps": [
               "gang-3-blaetter-jus-chips"
             ],
             "course": "gang-3"
           },
           {
-            "phase": "gang-3",
-            "text": "Anrichten, Meerrettich am Pass reiben",
+            "phase": "uhr-19-50",
+            "text": "Ochsenbacke anrichten (Meerrettich am Pass reiben)",
             "steps": [
-              "gang-3-anrichten"
+              "gang-3-ochsenbacke-anrichten"
             ],
             "course": "gang-3"
           },
           {
-            "phase": "gang-4",
-            "text": "Dessert-Service: Temperieren und Teller frosten (20–30 Min. vorher, im Kühlschrank), Schneiden, Shaken, Am Tisch",
+            "phase": "uhr-20-40",
+            "text": "Temperieren und Teller frosten (Parfait in den Kühlschrank, Teller ins Gefrierfach)",
             "steps": [
-              "gang-4-temperieren-und-teller-frosten",
-              "gang-4-schneiden",
-              "gang-4-shaken",
-              "gang-4-am-tisch"
+              "gang-4-temperieren-und-teller-frosten"
             ],
-            "tasks": [
-              "dessert-service"
+            "course": "gang-4"
+          },
+          {
+            "phase": "uhr-21-05",
+            "text": "Schneiden",
+            "steps": [
+              "gang-4-schneiden"
+            ],
+            "course": "gang-4"
+          },
+          {
+            "phase": "uhr-21-05",
+            "text": "Shaken",
+            "steps": [
+              "gang-4-shaken"
+            ],
+            "course": "gang-4"
+          },
+          {
+            "phase": "uhr-21-05",
+            "text": "Am Tisch",
+            "steps": [
+              "gang-4-am-tisch"
             ],
             "course": "gang-4"
           }
         ]
       },
-      "note": "**Ofen-Plan (entschärft):** Die Rosenkohlblätter werden frittiert, die Backe wird\nauf dem Herd glasiert — der Ofen macht am Abend nur 80 °C (Teller). **Herd-Plan\nGang 3:** Bräter mit den Backen auf der gekoppelten Bräterzone rechts, Jus und\nRosenkohlblätter auf den kleinen Feldern links, Püree warm auf dem Mittelfeld."
+      "note": "*Die Uhrzeit ist nur die Vorgabe: Im Kochmodus lässt sich die Essenszeit verstellen, alle Zeiten wandern mit. Die Abstände sind aus den Schrittdauern gerechnet, noch nicht gekocht — Feinschliff nach den Testläufen.*\n\n**Ofen-Plan (entschärft):** Die Rosenkohlblätter werden frittiert, die Backe wird\nauf dem Herd glasiert — der Ofen macht am Abend nur 80 °C (Teller). **Herd-Plan\nGang 3:** Bräter mit den Backen auf der gekoppelten Bräterzone rechts, Jus und\nRosenkohlblätter auf den kleinen Feldern links, Püree warm auf dem Mittelfeld."
     },
     {
       "type": "todo",
@@ -4373,7 +4554,7 @@
           "checked": true
         },
         {
-          "text": "Nach den Testläufen: Abend-Zeitplan ausformulieren (absolute Uhrzeiten wie im Hochzeitstagsmenü)",
+          "text": "Nach den Testläufen: Zeitplan-Abstände gegen die gestoppten Zeiten prüfen (Uhrzeiten stehen seit 11/2026, bisher nur gerechnet)",
           "checked": false
         },
         {
@@ -4393,8 +4574,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-11-17T07:50:37Z",
-    "sourceHash": "94bb1151f50edaba",
+    "generatedAt": "2026-11-17T07:57:46Z",
+    "sourceHash": "7aca00d1241ef455",
     "quantities": [
       {
         "ingredient": "verjus",
@@ -4594,7 +4775,7 @@
         "perTask": {
           "tomatenwasser-wuerzen-und-anrichten": "10 ml Limettensaft",
           "mango-gel": "½ Limette",
-          "verjus-limetten-beurre-blanc": "1 Limette + 2 TL Limettensaft"
+          "kaisergranat-braten": "1 Limette + 2 TL Limettensaft"
         },
         "perCourse": {
           "gang-2": {
@@ -5559,8 +5740,8 @@
           "selleriepueree": "½ TL Salz",
           "rosenkohl-zweierlei": "12 g Salz/L",
           "ochsenbacke-und-service": "1 Prise Salz",
-          "kaffee-crumble": "1 Prise Salz",
-          "parfait": "1 g Salz"
+          "parfait": "1 g Salz",
+          "kaffee-crumble": "1 Prise Salz"
         },
         "perCourse": {
           "gang-1": {
