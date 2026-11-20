@@ -1,0 +1,1352 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/zheng-dan",
+  "kind": "dish",
+  "title": "Zhēng Dàn — chinesischer gedämpfter Eier-Custard mit knusprigem Schweinehack (3 Portionen)",
+  "status": "done",
+  "yields": {
+    "text": "3 Portionen",
+    "value": 3.0,
+    "unit": "Portionen"
+  },
+  "intro": "*Aktive Zeit \\~32 Min., gesamt \\~40 Min. Equipment: 14-L-Topf mit Deckel + Metall-Untersetzer (oder umgedrehte kleine Schüssel), flache hitzefeste Schale oder Auflaufform (Ø 20–22 cm, mind. 4 cm hoch), Alufolie für die Hebeschlinge, großer Teller oder Alufolie zum Abdecken, feines Sieb, große Pfanne (Edelstahl), Küchenwaage, Fleischthermometer, optional Bunsenbrenner.*\n\nKantonesische Alltagsküche in Reinform: Eier werden mit handwarmer Hühnerbrühe gestreckt, durchs feine Sieb gestrichen und sanft gedämpft, bis ein spiegelglatter, porenfreier Herzhaft-Custard entsteht — Textur wie zarte Panna Cotta. Obendrauf kommt knusprig gebratenes Schweinehack mit Ingwer, Knoblauch und glänzender Soja-Austernsauce; daneben kurz gebratener Brokkoli für Crunch und Farbe. Rund 40 Minuten gesamt, 100 % REWE/Aldi, praktisch stärkefrei, komplett schwangerschaftstauglich — und für ein Kind, das Eier und Sojasauce liebt, ein sicherer Treffer.",
+  "times": {
+    "text": "Aktive Zeit ~32 Min., gesamt ~40 Min.",
+    "active": {
+      "typical": "PT32M",
+      "source": "32 Min."
+    },
+    "total": {
+      "typical": "PT40M",
+      "source": "40 Min."
+    }
+  },
+  "equipment": [
+    "14-L-Topf mit Deckel + Metall-Untersetzer (oder umgedrehte kleine Schüssel)",
+    "flache hitzefeste Schale oder Auflaufform (Ø 20–22 cm",
+    "mind. 4 cm hoch)",
+    "Alufolie für die Hebeschlinge",
+    "großer Teller oder Alufolie zum Abdecken",
+    "feines Sieb",
+    "große Pfanne (Edelstahl)",
+    "Küchenwaage",
+    "Fleischthermometer",
+    "optional Bunsenbrenner"
+  ],
+  "ingredients": [
+    {
+      "id": "eier",
+      "name": "Eier",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "6"
+      },
+      "note": "Größe M, \\~300 g netto"
+    },
+    {
+      "id": "schweinehack",
+      "name": "Schweinehack",
+      "store": "Aldi / REWE",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "300 g"
+      },
+      "note": "oder gemischtes Hack — frisch am Kochtag"
+    },
+    {
+      "id": "brokkoli",
+      "name": "Brokkoli",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "500 g"
+      },
+      "note": "1 großer Kopf"
+    },
+    {
+      "id": "fruehlingszwiebeln",
+      "name": "Frühlingszwiebeln",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      },
+      "note": "4 Stangen gebraucht"
+    },
+    {
+      "id": "ingwer",
+      "name": "Ingwer",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Stück"
+      },
+      "note": "\\~15 g"
+    },
+    {
+      "id": "knoblauch",
+      "name": "Knoblauch",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Knolle"
+      },
+      "note": "3 Zehen gebraucht"
+    },
+    {
+      "id": "huehnerbruehe",
+      "name": "Hühnerbrühe",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "500 ml"
+      },
+      "note": "450 ml Custard + 50 ml Hack-Sauce; Vorrat/TK oder 1 Glas Fond 400 ml + 100 ml Wasser"
+    },
+    {
+      "id": "sojasauce",
+      "name": "Sojasauce",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Verbrauch 2 EL"
+    },
+    {
+      "id": "austernsauce",
+      "name": "Austernsauce",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Verbrauch 1 EL; Fallback 1 TL Sojasauce + ½ TL Zucker"
+    },
+    {
+      "id": "sesamoel",
+      "name": "Geröstetes Sesamöl",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Verbrauch 2 TL"
+    },
+    {
+      "id": "speisestaerke",
+      "name": "Speisestärke",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Verbrauch 1 TL"
+    },
+    {
+      "id": "oel",
+      "name": "Neutrales Öl",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Verbrauch 2 EL"
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "pfeffer",
+      "name": "Pfeffer, weiß oder schwarz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "chilioel",
+      "name": "Mildes Chiliöl",
+      "store": "Vorrat",
+      "optional": true,
+      "pantry": true,
+      "note": "für die Erwachsenen am Tisch"
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Stil-Entscheidung",
+      "level": 2,
+      "markdown": "- **Verhältnis Ei : Brühe = 1 : 1,5 nach Gewicht (nicht nach Stückzahl) — bewusst fester als die Quellen.** Eier schwanken stark im Gewicht, deshalb wiegen. Made With Lau (4 Eier auf 2 Tassen Wasser, für festeren Custard 1,5 Tassen) und The Woks of Life (1 : 2 nach Volumen) liegen bei \\~1 : 1,8 bis 1 : 2,4. Hier 1 : 1,5 (300 g Ei ohne Schale → 450 ml Brühe): löffelzart, aber stabil genug, damit das Hack-Topping obenauf liegt statt einzusinken, und sicher durchgestockt. 1 : 2 wird seidiger, wässert aber beim Stehen schneller aus (siehe Notizen).\n- **Handwarme Hühnerbrühe (40–45 °C), kein Dashi.** Warme Flüssigkeit temperiert das Ei vor, sodass die Mitte fast gleichzeitig mit dem Rand stockt (kalt = Rand gummiartig, Mitte noch roh; zu heiß > 60 °C = Flocken beim Rühren). Hühnerbrühe statt japanischem Kombu-Dashi ist klassisch kantonesisch **und** komplett jod-/kombu-frei (Schwangerschaft).\n- **Hack separat knusprig braten statt im Ei mitdämpfen.** Die traditionelle *Ròusuì Zhēng Dàn* legt rohes Hack unter die Eiermasse — dann fehlt der Kontrast, und in der Schwangerschaft ist die Kerntemperatur von rohem Hack unter Custard schwerer zu kontrollieren. Knusprig gebratenes, leicht gebundenes Hack obendrauf liefert Maillard-Röstaromen, Texturkontrast und garantierte Gar-Sicherheit.\n- **Sanfter Dampf + abgedeckte Schale = keine Poren.** Starkes Kochen überhitzt die Eiproteine über \\~85 °C → sie ziehen sich zusammen, drücken Wasser aus und bilden eine schwammige Wabenstruktur. Die Abdeckung fängt Kondenswasser vom Topfdeckel ab, sonst entstehen Krater auf der Oberfläche.\n- **Kein Shaoxing-Reiswein.** Klassische Rezepte nutzen 1 EL Shaoxing im Hack; für die Schwangerschaft bewusst gestrichen — Ingwer, Knoblauch, Austernsauce und geröstetes Sesamöl tragen das Profil mühelos allein.",
+      "tags": [
+        "stil"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **100 % Aldi / REWE.** 6 frische Eier Größe M (geschält \\~300 g), 300 g Schweinehack (oder gemischtes Hack — etwas Fettanteil macht es knuspriger als mageres Rinderhack; am Kochtag kaufen), 1 Kopf Brokkoli (500 g), Frühlingszwiebeln, Ingwer, Knoblauch.\n- **Hühnerbrühe:** Eigener TK-Vorrat oder 1 Glas Geflügelfond (400 ml + 100 ml Wasser → 500 ml gesamt; ungesalzenen oder schwach gesalzenen Fond bevorzugen, sonst Salz im Ei halbieren).\n- **Austernsauce & geröstetes Sesamöl:** Standard im REWE Asia-Regal oder Vorrat (vom [Bò lúc lắc](/gerichte/bo-luc-lac.md) bzw. [Bulgogi](/gerichte/bulgogi.md)). *Fallback ohne Austernsauce:* 1 TL zusätzliche Sojasauce + ½ TL Zucker.\n- **Dämpf-Aufbau ohne Dampfgarer:** In den 14-L-Topf einen kleinen Metall-Untersetzer, Dämpfeinsatz oder eine umgedrehte hitzefeste Müslischale stellen; die flache Custardschale (Ø 20–22 cm, mind. 4 cm hoch — die Masse steht darin nur \\~2–2,5 cm hoch, tiefer gefüllt gart die Mitte ewig!) muss frei darin stehen und der Topfdeckel schließen. Der 6-L-Topf ist für diese Schale zu eng: Neben einer 22-cm-Schale bleibt kein Platz für die Finger. Vor dem ersten Mal kalt probestellen und die Hebeschlinge aus Alufolie testen.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "markdown",
+      "title": "Ablauf",
+      "level": "bold",
+      "markdown": "**Ablauf:** Erst das Dämpfwasser aufsetzen, dann Aromaten und Brokkoli schneiden. Sobald der Custard im Topf dämpft (15–18 Min. passiv), braten Brokkoli und Hack direkt hintereinander in derselben Pfanne — beides ist fertig, wenn der Custard aus der Ruhezeit kommt."
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Zhēng Dàn — chinesischer gedämpfter Eier-Custard mit knusprigem Schweinehack (3 Portionen)",
+          "steps": [
+            {
+              "id": "daempftopf-aufsetzen",
+              "label": "1",
+              "heading": "**1. Dämpftopf aufsetzen (3 Min.)**",
+              "title": "Dämpftopf aufsetzen",
+              "duration": {
+                "typical": "PT3M",
+                "source": "3 Min."
+              },
+              "text": "In den 14-L-Topf einen Metall-Untersetzer legen und \\~3 cm hoch Wasser einfüllen. Einen langen Streifen Alufolie dreifach zu einem \\~8 cm breiten Band falten und als Hebeschlinge quer über den Untersetzer legen, die Enden über den Topfrand hängen lassen. Zugedeckt zum Kochen bringen; der Wasserspiegel muss unter dem Boden der Custardschale bleiben. *Das Wasser muss kochen, bevor die Schale hineinkommt — erst dann stimmt die Garzeit.*",
+              "action": "In den 14-L-Topf einen Metall-Untersetzer legen und \\~3 cm hoch Wasser einfüllen.",
+              "rescue": "Das Wasser muss kochen, bevor die Schale hineinkommt — erst dann stimmt die Garzeit.",
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "3 cm hoch Wasser",
+                    "value": 3.0,
+                    "unit": "cm"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Dämpftopf aufsetzen",
+                  "duration": {
+                    "typical": "PT3M"
+                  },
+                  "text": "3 Min."
+                }
+              ],
+              "after": []
+            },
+            {
+              "id": "aromaten-und-gemuese",
+              "label": "2",
+              "heading": "**2. Aromaten und Gemüse (8 Min.)**",
+              "title": "Aromaten und Gemüse",
+              "duration": {
+                "typical": "PT8M",
+                "source": "8 Min."
+              },
+              "text": "500 g Brokkoli in kleine, mundgerechte Röschen teilen (Strunk schälen und in dünne Scheiben schneiden). 4 Frühlingszwiebeln in feine Ringe schneiden, **weiße und grüne Teile trennen**. 3 Knoblauchzehen fein hacken (ein Drittel für den Brokkoli, zwei Drittel fürs Hack), 15 g Ingwer schälen und fein hacken. In einer kleinen Tasse 50 ml Hühnerbrühe, 2 EL Sojasauce, 1 EL Austernsauce, 1 TL Speisestärke und 1 Prise weißen Pfeffer glatt rühren. *Die angerührte Würzsauce bindet das Hack in 30 Sekunden glänzend, damit nichts vom Custard herunterläuft.*",
+              "action": "500 g Brokkoli in kleine, mundgerechte Röschen teilen (Strunk schälen und in dünne Scheiben schneiden).",
+              "limits": [
+                "weiße und grüne Teile trennen"
+              ],
+              "why": "Die angerührte Würzsauce bindet das Hack in 30 Sekunden glänzend, damit nichts vom Custard herunterläuft.",
+              "ingredients": [
+                {
+                  "ref": "brokkoli",
+                  "amount": {
+                    "text": "500 g Brokkoli",
+                    "value": 500.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "fruehlingszwiebeln",
+                  "amount": {
+                    "text": "4 Frühlingszwiebeln",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "3 Knoblauchzehen",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "ingwer",
+                  "amount": {
+                    "text": "15 g Ingwer",
+                    "value": 15.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "huehnerbruehe",
+                  "amount": {
+                    "text": "50 ml Hühnerbrühe",
+                    "value": 50.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "sojasauce",
+                  "amount": {
+                    "text": "2 EL Sojasauce",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "austernsauce",
+                  "amount": {
+                    "text": "1 EL Austernsauce",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "speisestaerke",
+                  "amount": {
+                    "text": "1 TL Speisestärke",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "1 Prise weißen Pfeffer",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "eiermasse-anruehren",
+              "label": "3",
+              "heading": "**3. Eiermasse anrühren (5 Min.)**",
+              "title": "Eiermasse anrühren",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "450 ml Hühnerbrühe auf **40–45 °C** erwärmen (handwarm, Thermometer oder Fingerprobe — **nie über 55 °C**). 6 Eier in eine Schüssel aufschlagen und wiegen (sollten \\~300 g sein; bei deutlich anderem Gewicht die Brühe auf das 1,5-Fache des Eigewichts anpassen). Mit ½ TL Salz (bei salzigem Glasfond nur ¼ TL) und einer Gabel oder Stäbchen **sanft verrühren, nicht schaumig schlagen** — nur bis Eigelb und Eiweiß verbunden sind. Die 450 ml warme Brühe langsam einrühren. Mischung **zweimal durch das feine Sieb** in die flache Dämpfschale gießen. Verbleibende Oberflächenbläschen mit einem Löffel abnehmen (oder 2 Sek. kurz mit dem Bunsenbrenner über die Oberfläche fahren — platzt jede Blase sofort). Schale mit einem umgedrehten flachen Teller oder straffer Alufolie (mit 2 kleinen Einstichen) abdecken. *Schaum und Hagelschnüre machen Poren; die Abdeckung schützt vor tropfendem Kondenswasser.*",
+              "action": "450 ml Hühnerbrühe auf **40–45 °C** erwärmen (handwarm, Thermometer oder Fingerprobe — **nie über 55 °C**).",
+              "limits": [
+                "40–45 °C",
+                "nie über 55 °C",
+                "sanft verrühren, nicht schaumig schlagen",
+                "zweimal durch das feine Sieb"
+              ],
+              "why": "Schaum und Hagelschnüre machen Poren; die Abdeckung schützt vor tropfendem Kondenswasser.",
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "40–45 °C",
+                  "min": 40,
+                  "max": 45
+                },
+                {
+                  "kind": "max",
+                  "text": "55 °C",
+                  "value": 55
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "huehnerbruehe",
+                  "amount": {
+                    "text": "450 ml Hühnerbrühe",
+                    "value": 450.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "eier",
+                  "amount": {
+                    "text": "6 Eier",
+                    "value": 6.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "huehnerbruehe",
+                  "amount": {
+                    "text": "450 ml warme Brühe",
+                    "value": 450.0,
+                    "unit": "ml"
+                  },
+                  "reuse": true
+                }
+              ],
+              "meta": "*nach Aromaten und Gemüse*",
+              "attention": "active",
+              "after": [
+                "step:aromaten-und-gemuese"
+              ]
+            },
+            {
+              "id": "custard-daempfen",
+              "label": "4",
+              "heading": "**4. Custard dämpfen (15–18 Min., passiv)**",
+              "title": "Custard dämpfen",
+              "duration": {
+                "min": "PT15M",
+                "max": "PT18M",
+                "source": "15–18 Min."
+              },
+              "attention": "passive",
+              "text": "Sobald das Wasser im Topf kocht, die abgedeckte Schale vorsichtig auf die Folienschlinge und den Untersetzer setzen, die Schlingen-Enden nach innen klappen, Topfdeckel schließen und die Hitze sofort auf **kleine bis mittelkleine Stufe** herunterdrehen (leises, gleichmäßiges Simmern, kein wildes Sprudeln). **15–18 Min.** dämpfen. *Zu hohe Hitze überhitzt das Eiweiß über 85 °C → Wabenstruktur und wässriger Boden. Die Zeit gilt für \\~2–2,5 cm Füllhöhe; in einer kleineren, tiefer gefüllten Schale (über 3 cm) verlängert sie sich auf 20–22 Min.*",
+              "action": "Sobald das Wasser im Topf kocht, die abgedeckte Schale vorsichtig auf die Folienschlinge und den Untersetzer setzen, die Schlingen-Enden nach innen klappen, Topfdeckel schließen und die Hitze sofort auf **kleine bis mittelkleine Stufe** herunterdrehen (leises, gleichmäßiges Simmern, kein wildes Sprudeln).",
+              "limits": [
+                "kleine bis mittelkleine Stufe",
+                "15–18 Min."
+              ],
+              "why": "Die Zeit gilt für \\~2–2,5 cm Füllhöhe; in einer kleineren, tiefer gefüllten Schale (über 3 cm) verlängert sie sich auf 20–22 Min.",
+              "rescue": "Zu hohe Hitze überhitzt das Eiweiß über 85 °C → Wabenstruktur und wässriger Boden.",
+              "timers": [
+                {
+                  "label": "Custard dämpfen",
+                  "duration": {
+                    "min": "PT15M",
+                    "max": "PT18M"
+                  },
+                  "text": "15–18 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "max",
+                  "text": "85 °C",
+                  "value": 85
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Dämpftopf aufsetzen, Eiermasse anrühren · Herd · fertig bei 78–82 °C Kern*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei 78–82 °C Kern",
+                "value": 78
+              },
+              "after": [
+                "step:daempftopf-aufsetzen",
+                "step:eiermasse-anruehren"
+              ]
+            },
+            {
+              "id": "custard-ruhen-lassen",
+              "label": "5",
+              "heading": "**5. Custard ruhen lassen (3 Min., passiv)**",
+              "title": "Custard ruhen lassen",
+              "duration": {
+                "typical": "PT3M",
+                "source": "3 Min."
+              },
+              "attention": "passive",
+              "text": "Herd ausschalten und den Topf **geschlossen 3 Min. nachziehen** lassen. Dann Topfdeckel und Schalen-Abdeckung vorsichtig abheben (heißer Dampf!). Schale leicht anstoßen: Die Masse muss geschlossen wie Panna Cotta wackeln, ohne flüssige Stelle in der Mitte.\n\n> **Gar-Check — Pflicht (Schwangerschaft):** Fleischthermometer mittig in den Custard stechen: **Ziel 78–82 °C** (Mindestgrenze ≥ 75 °C, komplett gestockt). Unter 75 °C oder noch flüssig in der Mitte? Abdeckung wieder auflegen und 2–3 Min. weiterdämpfen.",
+              "action": "Herd ausschalten und den Topf **geschlossen 3 Min. nachziehen** lassen.",
+              "limits": [
+                "geschlossen 3 Min. nachziehen",
+                "Ziel 78–82 °C"
+              ],
+              "timers": [
+                {
+                  "label": "Custard ruhen lassen",
+                  "duration": {
+                    "typical": "PT3M"
+                  },
+                  "text": "3 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "78–82 °C",
+                  "min": 78,
+                  "max": 82
+                },
+                {
+                  "kind": "ziel",
+                  "text": "≥ 75 °C",
+                  "value": 75
+                },
+                {
+                  "kind": "ziel",
+                  "text": "75 °C",
+                  "value": 75
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Custard dämpfen*",
+              "after": [
+                "step:custard-daempfen"
+              ]
+            },
+            {
+              "id": "brokkoli-braten",
+              "label": "6",
+              "heading": "**6. Brokkoli braten (6 Min.)**",
+              "title": "Brokkoli braten",
+              "duration": {
+                "typical": "PT6M",
+                "source": "6 Min."
+              },
+              "text": "Während der Custard dämpft: 1 EL neutrales Öl in der großen Pfanne stark erhitzen. Die 500 g Brokkoli einlegen, 2 Min. scharf anrösten (Röstflecken), dann das erste Drittel vom gehackten Knoblauch, ½ TL Salz und 50 ml Wasser zugeben, Deckel auflegen und **2–3 Min. dämpfen**, bis der Brokkoli knallgrün und bissfest ist. Vom Herd nehmen, mit 1 TL geröstetem Sesamöl schwenken und auf einer vorgewärmten Platte beiseitestellen.",
+              "action": "Während der Custard dämpft: 1 EL neutrales Öl in der großen Pfanne stark erhitzen.",
+              "limits": [
+                "2–3 Min. dämpfen"
+              ],
+              "cues": [
+                "bis der Brokkoli knallgrün und bissfest ist"
+              ],
+              "timers": [
+                {
+                  "label": "Brokkoli braten",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                },
+                {
+                  "label": "Brokkoli braten",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "1 EL neutrales Öl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "brokkoli",
+                  "amount": {
+                    "text": "500 g Brokkoli",
+                    "value": 500.0,
+                    "unit": "g"
+                  },
+                  "reuse": true
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "50 ml Wasser",
+                    "value": 50.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "sesamoel",
+                  "amount": {
+                    "text": "1 TL geröstetem Sesamöl",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*nach Aromaten und Gemüse · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:aromaten-und-gemuese"
+              ]
+            },
+            {
+              "id": "hack-knusprig-braten",
+              "label": "7",
+              "heading": "**7. Hack knusprig braten (8 Min.)**",
+              "title": "Hack knusprig braten",
+              "duration": {
+                "typical": "PT8M",
+                "source": "8 Min."
+              },
+              "text": "Dieselbe Pfanne auswischen, 1 EL neutrales Öl auf dem großen Mittelfeld stark erhitzen. 300 g Schweinehack flach hineindrücken und **3 Min. nicht rühren**, bis die Unterseite tief knusprig braun ist. Zerbröseln und weitere 2–3 Min. vollständig durchbraten (**≥ 72 °C**, kein Rosa). Die weißen Frühlingszwiebelringe, den restlichen gehackten Knoblauch und den gehackten Ingwer 1 Min. mitbraten, bis es duftet. Die angerührte Würzsauce (aus Schritt 2) noch einmal aufrühren, angießen und 1 Min. köcheln lassen, bis sie dick-glänzend am Hack haftet.",
+              "action": "Dieselbe Pfanne auswischen, 1 EL neutrales Öl auf dem großen Mittelfeld stark erhitzen.",
+              "limits": [
+                "3 Min. nicht rühren",
+                "≥ 72 °C"
+              ],
+              "cues": [
+                "bis die Unterseite tief knusprig braun ist",
+                "bis es duftet",
+                "bis sie dick-glänzend am Hack haftet"
+              ],
+              "timers": [
+                {
+                  "label": "Hack knusprig braten",
+                  "duration": {
+                    "typical": "PT3M"
+                  },
+                  "text": "3 Min."
+                },
+                {
+                  "label": "Hack knusprig braten",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "≥ 72 °C",
+                  "value": 72
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "1 EL neutrales Öl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "schweinehack",
+                  "amount": {
+                    "text": "300 g Schweinehack",
+                    "value": 300.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nach Brokkoli braten · Herd · fertig bei ≥ 72 °C Kern*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei ≥ 72 °C Kern",
+                "value": 72
+              },
+              "attention": "attended",
+              "after": [
+                "step:brokkoli-braten"
+              ]
+            },
+            {
+              "id": "anrichten",
+              "label": "8",
+              "heading": "**8. Anrichten (2 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT2M",
+                "source": "2 Min."
+              },
+              "text": "Die Custardschale an der Folienschlinge aus dem Topf heben und auf einen Untersetzer stellen (auf dem Tisch direkt aus der Schale löffeln — hält länger warm und die Oberfläche bleibt heil). Das knusprige Hack samt glänzender Sauce mittig auf den Custard geben, die grünen Frühlingszwiebelringe und 1 TL geröstetes Sesamöl darüberträufeln. Den Brokkoli daneben servieren und optional ein paar Tropfen Chiliöl separat für die Erwachsenen auf den Tisch stellen.",
+              "action": "Die Custardschale an der Folienschlinge aus dem Topf heben und auf einen Untersetzer stellen (auf dem Tisch direkt aus der Schale löffeln — hält länger warm und die Oberfläche bleibt heil).",
+              "ingredients": [
+                {
+                  "ref": "sesamoel",
+                  "amount": {
+                    "text": "1 TL geröstetes Sesamöl",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*nach Custard ruhen lassen, Hack knusprig braten*",
+              "attention": "active",
+              "after": [
+                "step:custard-ruhen-lassen",
+                "step:hack-knusprig-braten"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "kochtag",
+            "text": "Dämpftopf aufsetzen · Aromaten und Gemüse",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT40M"
+            },
+            "source": "T−0:40",
+            "steps": [
+              "daempftopf-aufsetzen",
+              "aromaten-und-gemuese"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Eiermasse anrühren · Custard dämpfen starten",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT28M"
+            },
+            "source": "T−0:28",
+            "steps": [
+              "eiermasse-anruehren",
+              "custard-daempfen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Brokkoli braten",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT16M"
+            },
+            "source": "T−0:16",
+            "steps": [
+              "brokkoli-braten"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Hack knusprig braten",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT10M"
+            },
+            "source": "T−0:10",
+            "steps": [
+              "hack-knusprig-braten"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Custard ruhen lassen, Kerntemperatur prüfen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT5M"
+            },
+            "source": "T−0:05",
+            "steps": [
+              "custard-ruhen-lassen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Anrichten",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT2M"
+            },
+            "source": "T−0:02",
+            "steps": [
+              "anrichten"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Eines der kindertauglichsten Gerichte im Repo:** null Schärfe, weiche Eier-Textur, Sojasauce-Umami — trifft exakt die bekannten Vorlieben.\n- **Temperatur beachten:** Der Custard hält in der dicken Schale sehr lange Hitze → Kinderportion zuerst auf einen flachen Teller löffeln und kurz abkühlen lassen. Brokkoliröschen daneben.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "Geprüft gegen den [Leitfaden](/schwangerschaft/leitfaden.md) — **ohne Sonderbehandlung geeignet**:\n\n- **Ei-Sicherheit:** Durch die Messung in der Mitte (**78–82 °C**, mindestens 75 °C) ist das Ei vollständig gestockt und pasteurisiert — deutlich oberhalb der 70-°C-Grenze, ohne über 85 °C gummiartig zu werden.\n- **Keine weiteren Treffer:** Schweinehack vollständig durchgebraten (≥ 72 °C), **Hühnerbrühe statt Kombu-Dashi** (kein Jod-Risiko), **kein Shaoxing-Reiswein** (alkoholfrei), Austernsauce und Sojasauce werden mitgekocht.\n- **GDM — fast kohlenhydratfrei:** Pro Erwachsenem (2 Eier, \\~110 g Hack, 180 g Brokkoli, ⅓ Sauce) liefert der Teller **\\~8–10 g KH** (aus Brokkoli, ⅓ TL Stärke und Austernsauce) bei **\\~38–42 g Protein** und gesundem Fett. Da der Leitfaden kein striktes Low-Carb will, passt dazu eine **kleine Portion KH** nach Bedarf: z. B. 40 g trockener Naturreis (\\~30 g KH) oder ½ [Vollkornbrötchen](/backen/vollkornbroetchen.md) — oder abends bewusst leicht essen, wenn der Tag schon genug KH hatte.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Seidiger beim zweiten Mal:** Wenn 1 : 1,5 gut trägt, das Verhältnis der Quellen testen — 1 : 2 (300 g Ei → 600 ml Brühe, Füllhöhe \\~2,6 cm, Dämpfzeit eher 18–20 Min.). Der Gar-Check (≥ 75 °C) gilt unverändert.\n- **Einzel-Schälchen statt großer Schale:** Wer in 3 kleinen hitzefesten Schälchen (z. B. Ramen-/Suppenschalen, 3 cm Füllhöhe) dämpft, verkürzt die Dämpfzeit auf **10–12 Min.** und jeder bekommt eine eigene spiegelglatte Oberfläche.\n- **Fisch-/Garnelen-Variante:** Statt Schweinehack lassen sich 250 g grob gehackte, geschälte Garnelen (Buhara/TK) mit Ingwer, Frühlingszwiebel und derselben Würzsauce in 3 Min. in der Pfanne durchbraten (≥ 63 °C, durchgehend opak) und auf den Custard setzen.\n- **Oberfläche war trotzdem porig?** Zwei häufigste Ursachen: (1) Hitze im Topf zu hoch (sprudelnd statt leise simmern) — beim nächsten Mal eine Induktionsstufe tiefer; (2) Topfdeckel ohne Abdeckung auf der Schale → Tropfwasser.\n- **Reste:** Gedämpfter Custard schmeckt frisch am besten und verträgt Aufwärmen in der Mikrowelle schlecht (wässert aus) — deshalb bewusst auf 3 Portionen für einen Abend ausgelegt.",
+      "tags": [
+        "notizen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Warme Flüssigkeit, Sieben, sanfter Dampf:** [Made With Lau — Dad's Steamed Eggs](https://www.madewithlau.com/recipes/steamed-egg) (4 Eier auf 2 Tassen warmes Wasser von 35–45 °C, für festeren Custard 1,5 Tassen; nach dem Wiederaufkochen \\~8 Min. simmern, Wok-Deckel geschlossen) und [The Woks of Life — Steamed Eggs (蒸蛋)](https://thewoksoflife.com/steamed-egg/) (3 Eier, je gleiches Volumen Wasser und Brühe = 1 : 2, durchs Sieb in eine flache Form, 3 Min. starke Hitze + 14 Min. zugedeckt ruhen). **Eigene Abweichungen:** Verhältnis 1 : 1,5 nach Gewicht (fester als beide Quellen, trägt das Hack), abgedeckte Schale, längere Dämpfzeit wegen der größeren Menge (750 ml in einer Schale).\n- **Getrennt gebratenes Hack-Topping statt rohem Hack im Ei:** Bewusste Abweichung für Kruste/Kontrast und sichere Gar-Kontrolle in der Schwangerschaft (analog zum Picadillo-Anbraten im [Burrito-Baukasten](/mealprep/burrito-baukasten.md)).\n- **Temperaturfenster 78–82 °C:** Ei-Flüssigkeits-Mischungen (Custards) stocken bei 78–82 °C vollständig seidig und trennen ab \\~85 °C Wasser ab (Synerese; Harold McGee, *On Food and Cooking*). Damit deckt das optimale kulinarische Fenster die Schwangerschafts-Sicherheitsgrenze (≥ 70 °C) exakt ab.",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-11-20T14:28:09Z",
+    "sourceHash": "9e3cc839d57fbcdc",
+    "quantities": [
+      {
+        "ingredient": "eier",
+        "total": {
+          "text": "6",
+          "value": 6.0,
+          "max": 6.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "6 Eier"
+        }
+      },
+      {
+        "ingredient": "schweinehack",
+        "total": {
+          "text": "300 g",
+          "value": 300.0,
+          "max": 300.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "300 g Schweinehack"
+        }
+      },
+      {
+        "ingredient": "brokkoli",
+        "total": {
+          "text": "500 g",
+          "value": 500.0,
+          "max": 500.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "500 g Brokkoli"
+        }
+      },
+      {
+        "ingredient": "fruehlingszwiebeln",
+        "total": {
+          "text": "4",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "4 Frühlingszwiebeln"
+        }
+      },
+      {
+        "ingredient": "ingwer",
+        "total": {
+          "text": "15 g",
+          "value": 15.0,
+          "max": 15.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "15 g Ingwer"
+        }
+      },
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "3 Knoblauchzehen"
+        }
+      },
+      {
+        "ingredient": "huehnerbruehe",
+        "total": {
+          "text": "500 ml",
+          "value": 500.0,
+          "max": 500.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "50 ml Hühnerbrühe + 450 ml Hühnerbrühe"
+        }
+      },
+      {
+        "ingredient": "sojasauce",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 EL Sojasauce"
+        }
+      },
+      {
+        "ingredient": "austernsauce",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 EL Austernsauce"
+        }
+      },
+      {
+        "ingredient": "sesamoel",
+        "total": {
+          "text": "2 TL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 TL geröstetem Sesamöl + 1 TL geröstetes Sesamöl"
+        }
+      },
+      {
+        "ingredient": "speisestaerke",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 TL Speisestärke"
+        }
+      },
+      {
+        "ingredient": "oel",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 EL neutrales Öl + 1 EL neutrales Öl"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "½ TL Salz + ½ TL Salz"
+        }
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": "1 Prise",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Prise",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Prise weißen Pfeffer"
+        }
+      },
+      {
+        "ingredient": "chilioel",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "50 ml + 3 cm",
+          "value": 50.0,
+          "max": 50.0,
+          "unit": "ml",
+          "approx": false,
+          "plus": [
+            {
+              "text": "3 cm",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "cm",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "main": "3 cm hoch Wasser + 50 ml Wasser"
+        },
+        "unitMixed": true
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Aldi / REWE",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "brokkoli",
+            "name": "Brokkoli",
+            "need": {
+              "text": "500 g",
+              "value": 500.0,
+              "max": 500.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "500 g",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            },
+            "note": "1 großer Kopf"
+          },
+          {
+            "ingredient": "fruehlingszwiebeln",
+            "name": "Frühlingszwiebeln",
+            "need": {
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "4",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            },
+            "note": "4 Stangen gebraucht"
+          },
+          {
+            "ingredient": "ingwer",
+            "name": "Ingwer",
+            "need": {
+              "text": "15 g",
+              "value": 15.0,
+              "max": 15.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "15 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 Stück"
+            },
+            "note": "\\~15 g"
+          },
+          {
+            "ingredient": "knoblauch",
+            "name": "Knoblauch",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "buy": {
+              "text": "1 Knolle"
+            },
+            "note": "3 Zehen gebraucht"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "schweinehack",
+            "name": "Schweinehack",
+            "need": {
+              "text": "300 g",
+              "value": 300.0,
+              "max": 300.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "300 g",
+            "inStock": false,
+            "buy": {
+              "text": "300 g"
+            },
+            "note": "oder gemischtes Hack — frisch am Kochtag"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "eier",
+            "name": "Eier",
+            "need": {
+              "text": "6",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "6",
+            "inStock": false,
+            "buy": {
+              "text": "6"
+            },
+            "note": "Größe M, \\~300 g netto"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "huehnerbruehe",
+            "name": "Hühnerbrühe",
+            "need": {
+              "text": "500 ml",
+              "value": 500.0,
+              "max": 500.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "500 ml",
+            "inStock": false,
+            "buy": {
+              "text": "500 ml"
+            },
+            "note": "450 ml Custard + 50 ml Hack-Sauce; Vorrat/TK oder 1 Glas Fond 400 ml + 100 ml Wasser"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "sojasauce",
+            "name": "Sojasauce",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "Verbrauch 2 EL"
+          },
+          {
+            "ingredient": "austernsauce",
+            "name": "Austernsauce",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "Verbrauch 1 EL; Fallback 1 TL Sojasauce + ½ TL Zucker"
+          },
+          {
+            "ingredient": "sesamoel",
+            "name": "Geröstetes Sesamöl",
+            "need": {
+              "text": "2 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "2 TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "Verbrauch 2 TL"
+          },
+          {
+            "ingredient": "speisestaerke",
+            "name": "Speisestärke",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "Verbrauch 1 TL"
+          },
+          {
+            "ingredient": "oel",
+            "name": "Neutrales Öl",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "Verbrauch 2 EL"
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Pfeffer, weiß oder schwarz",
+            "need": {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            },
+            "display": "1 Prise",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "chilioel",
+            "name": "Mildes Chiliöl",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "optional": true,
+            "pantry": true,
+            "note": "für die Erwachsenen am Tisch"
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "50 ml + 3 cm",
+              "value": 50.0,
+              "max": 50.0,
+              "unit": "ml",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "3 cm",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "cm",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "50 ml + 3 cm",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}

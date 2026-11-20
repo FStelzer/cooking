@@ -42,6 +42,13 @@
   "cooked": false
  },
  {
+  "path": "../gerichte/brothy-beans.json",
+  "title": "Brothy Beans — weiße Bohnen in Parmesan-Kräuter-Brühe mit Blattgemüse (4 Portionen)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": false
+ },
+ {
   "path": "../gerichte/bulgogi.json",
   "title": "Bulgogi — koreanisches „Feuerfleisch\" mit Salat-Wraps (4 Portionen)",
   "group": "gerichte",
@@ -103,6 +110,13 @@
   "group": "gerichte",
   "wip": false,
   "cooked": true
+ },
+ {
+  "path": "../gerichte/karottensuppe-druckkaramellisiert.json",
+  "title": "Druck-karamellisierte Karottensuppe — Natron-Maillard im Schnellkochtopf mit knusprigen Kichererbsen (4 Portionen)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": false
  },
  {
   "path": "../gerichte/korean-fried-chicken.json",
@@ -187,6 +201,13 @@
   "group": "gerichte",
   "wip": false,
   "cooked": true
+ },
+ {
+  "path": "../gerichte/zheng-dan.json",
+  "title": "Zhēng Dàn — chinesischer gedämpfter Eier-Custard mit knusprigem Schweinehack (3 Portionen)",
+  "group": "gerichte",
+  "wip": false,
+  "cooked": false
  },
  {
   "path": "../mealprep/burrito-baukasten.json",

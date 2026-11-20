@@ -1,0 +1,1753 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/brothy-beans",
+  "kind": "dish",
+  "title": "Brothy Beans — weiße Bohnen in Parmesan-Kräuter-Brühe mit Blattgemüse (4 Portionen)",
+  "status": "done",
+  "yields": {
+    "text": "4 Portionen",
+    "value": 4.0,
+    "unit": "Portionen"
+  },
+  "intro": "*Aktive Zeit \\~35 Min., gesamt \\~1½ Std. Equipment: elektrischer Schnellkochtopf (6 L), große Pfanne (Edelstahl), Microplane-Reibe.*\n\n*Varianten: Begleitung = Mit Salsiccia | Vegetarisch*\n\nDas Gegenteil von Dosenbohnen abgießen: Getrocknete weiße Bohnen garen **ohne Einweichen** im Schnellkochtopf zusammen mit Zwiebel, Knoblauch, Rosmarin, Olivenöl und einer Parmigiano-Rinde. Das Kochwasser selbst wird dabei zur seidigen, tiefen Umami-Brühe — die Bohnenstärke emulgiert mit Olivenöl und Käserinde ganz ohne Sahne. Dazu angebratenes Blattgemüse (Grünkohl, Wirsing oder Spinat) und als Default grobe italienische Bratwurst/Salsiccia aus der Pfanne. Ein ruhiges, elegantes Alltagsessen aus REWE-Zutaten, fast komplett passiv und von Haus aus schwangerschafts- und GDM-tauglich.",
+  "times": {
+    "text": "Aktive Zeit ~35 Min., gesamt ~1½ Std.",
+    "active": {
+      "typical": "PT35M",
+      "source": "35 Min."
+    },
+    "total": {
+      "typical": "PT1H30M",
+      "source": "1½ Std."
+    }
+  },
+  "equipment": [
+    "elektrischer Schnellkochtopf (6 L)",
+    "große Pfanne (Edelstahl)",
+    "Microplane-Reibe"
+  ],
+  "variants": [
+    {
+      "id": "begleitung",
+      "label": "Begleitung",
+      "choices": [
+        {
+          "id": "mit-salsiccia",
+          "label": "Mit Salsiccia"
+        },
+        {
+          "id": "vegetarisch",
+          "label": "Vegetarisch"
+        }
+      ],
+      "default": "mit-salsiccia"
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "zwiebel",
+      "name": "Zwiebel",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "\\~120 g"
+    },
+    {
+      "id": "knoblauch",
+      "name": "Knoblauch",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Knolle"
+      },
+      "note": "6 Zehen: 5 Bohnen, 1 Pfanne"
+    },
+    {
+      "id": "gruenkohl",
+      "name": "Grünkohl, Wirsing oder frischer Blattspinat",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "250 g"
+      },
+      "note": "Grünkohl/Wirsing geputzt"
+    },
+    {
+      "id": "rosmarin",
+      "name": "Rosmarin",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      },
+      "note": "2 Zweige gebraucht"
+    },
+    {
+      "id": "bio-zitrone",
+      "name": "Bio-Zitrone",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "Abrieb + Saft"
+    },
+    {
+      "id": "salsiccia",
+      "name": "frische Salsiccia oder grobe Bratwurst",
+      "store": "Aldi / REWE",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "400 g"
+      },
+      "only": [
+        "begleitung=mit-salsiccia"
+      ],
+      "note": "roh, zum Ausdrücken"
+    },
+    {
+      "id": "parmigiano",
+      "name": "Parmigiano Reggiano DOP am Stück",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "150 g"
+      },
+      "note": "Rinde \\~25–30 g für die Brühe + 50 g frisch gerieben zum Anrichten"
+    },
+    {
+      "id": "bohnen",
+      "name": "getrocknete weiße Bohnen",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "400 g"
+      },
+      "note": "Cannellini oder kleine weiße Bohnen"
+    },
+    {
+      "id": "fenchelsamen",
+      "name": "Fenchelsamen",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "½ TL"
+    },
+    {
+      "id": "lorbeerblaetter",
+      "name": "Lorbeerblätter",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "2 Stück"
+    },
+    {
+      "id": "olivenoel",
+      "name": "Gutes Olivenöl",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Verbrauch \\~6 EL"
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "Verbrauch \\~2¾ TL"
+    },
+    {
+      "id": "pfeffer",
+      "name": "Pfeffer, schwarz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "chiliflocken",
+      "name": "Chiliflocken",
+      "store": "Vorrat",
+      "optional": true,
+      "pantry": true,
+      "note": "für die Erwachsenen am Tisch"
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Stil-Entscheidung",
+      "level": 2,
+      "markdown": "- **Getrocknete Bohnen, nicht Dose — ohne Einweichen.** Das Bohnenwasser (*aquafaba*-ähnlich stärkehaltig, aromatisiert durch Kräuter und Parmigiano-Rinde) *ist* die Sauce. Dosenbohnen liefern diese Brühe nicht. Im elektrischen Schnellkochtopf entfällt das Übernacht-Einweichen komplett: 40 Min. Hochdruck für Cannellini (kleine weiße Bohnen: 30 Min.) + 20 Min. natürliches Ablassen liefern gleichmäßig cremige Bohnen mit intakter Haut.\n- **Von Anfang an salzen.** Der Mythos „Salz macht Bohnen hart“ ist von *Serious Eats* und *Cook’s Illustrated* widerlegt: Natrium tauscht Calcium und Magnesium in den Bohnenschalen aus, macht die Häute weicher, verhindert Platzen und würzt die Bohnen bis in den Kern.\n- **Parmigiano-Rinde als Umami-Anker.** Die harte Rinde, die beim Reiben für [Cacio e Pepe](/gerichte/cacio-e-pepe.md) oder Carbonara ohnehin abfällt (und eingefroren ewig hält), gibt unter Druck Glutamat und Tiefe an die Brühe ab — genau das „klare, elegante Brühe mit Umami“-Profil ohne Kombu und ohne Pilze.\n- **Salsiccia und Blattgemüse separat in der Pfanne.** Die Sauté-Funktion des elektrischen Schnellkochtopfs ist zu schwach für ordentliche Bräunung. Während der Druck 20 Min. natürlich abfällt, entstehen Wurst und Gemüse entspannt nebenher in der Edelstahlpfanne.\n- **Natürliches Ablassen ist Pflicht:** Schnelles Abdampfen lässt stärkehaltigen Bohnenschaum ins Ventil schießen und bringt die Bohnen durch den plötzlichen Druckabfall zum Platzen.",
+      "tags": [
+        "stil"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Getrocknete weiße Bohnen:** 400 g Cannellini-Bohnen oder kleine weiße Bohnen (REWE Trockenwaren-/Hülsenfrüchteregal, oft Bio-Eigenmarke oder Müller’s Mühle). Die Sorte bestimmt die Garzeit: Cannellini 40 Min. Hochdruck, kleine weiße Bohnen (Navy/Haricot) nur 30 Min. — sonst werden sie Mus. **Keine weißen Riesenbohnen** (Gigantes brauchen deutlich länger, \\~50 Min. Hochdruck). Möglichst frische Charge wählen (langes Mindesthaltbarkeitsdatum = kürzere Garzeit).\n- **Parmigiano Reggiano am Stück:** 1 Keil (150–200 g, REWE) — die Rinde (von einem solchen Keil \\~25–30 g) kommt in den Topf, 50 g vom Inneren werden am Ende frisch gerieben. Weitere Rinden aus dem Gefrierfach dürfen gern dazu — mehr Rinde, mehr Tiefe.\n- **Blattgemüse:** 250 g Grünkohl (geputzt/gestreift), Wirsing oder frischer Blattspinat (REWE). Grünkohl und Wirsing behalten Biss; Spinat geht am schnellsten.\n- **Salsiccia / grobe Bratwurst:** Nur für *Mit Salsiccia* — 400 g frische, rohe italienische Salsiccia mit Fenchel (REWE Center Fleischtheke/Kühlregal) oder frische grobe Schweinsbratwurst (dann die Fenchelsamen in der Pfanne unbedingt mitnehmen).",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "markdown",
+      "title": "Ablauf",
+      "level": "bold",
+      "markdown": "**Ablauf:** Bohnen mit Aromaten und Parmigiano-Rinde in den Schnellkochtopf. Während der Topf 20 Min. natürlich abdampft, entstehen Wurst und Blattgemüse in der Pfanne."
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Brothy Beans — weiße Bohnen in Parmesan-Kräuter-Brühe mit Blattgemüse (4 Portionen)",
+          "steps": [
+            {
+              "id": "aromaten-vorbereiten",
+              "label": "1",
+              "heading": "**1. Aromaten vorbereiten (8 Min.)**",
+              "title": "Aromaten vorbereiten",
+              "duration": {
+                "typical": "PT8M",
+                "source": "8 Min."
+              },
+              "text": "400 g getrocknete weiße Bohnen in ein Sieb geben, verlesen (beschädigte Bohnen/Steinchen raus) und unter kaltem Wasser gründlich abspülen. 1 Zwiebel schälen und halbieren, 5 Knoblauchzehen schälen und mit der Messerklinge andrücken. Vom Parmigiano Reggiano die Rinde (\\~25–30 g) abschneiden, eventuelle Stempel-/Wachsreste dünn abschaben und kurz abspülen. *Kein Einweichen nötig — die Bohnen gehen direkt trocken-gewaschen in den Topf.*",
+              "action": "400 g getrocknete weiße Bohnen in ein Sieb geben, verlesen (beschädigte Bohnen/Steinchen raus) und unter kaltem Wasser gründlich abspülen.",
+              "why": "Kein Einweichen nötig — die Bohnen gehen direkt trocken-gewaschen in den Topf.",
+              "ingredients": [
+                {
+                  "ref": "bohnen",
+                  "amount": {
+                    "text": "400 g getrocknete weiße Bohnen",
+                    "value": 400.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "zwiebel",
+                  "amount": {
+                    "text": "1 Zwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "5 Knoblauchzehen",
+                    "value": 5.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "bohnen-druckgaren",
+              "label": "2",
+              "heading": "**2. Bohnen druckgaren (50 Min., passiv)**",
+              "title": "Bohnen druckgaren",
+              "duration": {
+                "typical": "PT50M",
+                "source": "50 Min."
+              },
+              "attention": "passive",
+              "text": "Die 400 g Bohnen mit 1,6 l kaltem Wasser, der halbierten Zwiebel, den 5 angedrückten Knoblauchzehen, 2 Zweigen Rosmarin, 2 Lorbeerblättern, der Parmigiano-Rinde, 3 EL Olivenöl und 2½ TL Salz in den Innentopf des Schnellkochtopfs geben. Deckel schließen, Ventil verriegeln und **40 Min. auf Hochdruck** garen (kleine weiße Bohnen statt Cannellini: **30 Min.**; zzgl. \\~10 Min. Druckaufbau). *Füllhöhe liegt bei ca. 2,3 l im 6-L-Topf — unter der ½-Füllgrenze für schäumende Hülsenfrüchte. Das Olivenöl bricht zusätzlich den Schaum. Die Bohnen saugen gut 500 ml auf; es bleibt rund 1 l Brühe für 4 Schalen.*\n\n> **Lektin-Sicherheit:** Rohe weiße Bohnen enthalten Phytohämagglutinin. 30–40 Min. Hochdruck (\\~116 °C) bauen Lektine vollständig ab — deutlich sicherer und schneller als langsames Köcheln.",
+              "action": "Die 400 g Bohnen mit 1,6 l kaltem Wasser, der halbierten Zwiebel, den 5 angedrückten Knoblauchzehen, 2 Zweigen Rosmarin, 2 Lorbeerblättern, der Parmigiano-Rinde, 3 EL Olivenöl und 2½ TL Salz in den Innentopf des Schnellkochtopfs geben.",
+              "limits": [
+                "40 Min. auf Hochdruck",
+                "30 Min."
+              ],
+              "timers": [
+                {
+                  "label": "Bohnen druckgaren",
+                  "duration": {
+                    "typical": "PT40M"
+                  },
+                  "text": "40 Min."
+                },
+                {
+                  "label": "Bohnen druckgaren",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "30 Min."
+                },
+                {
+                  "label": "Bohnen druckgaren",
+                  "duration": {
+                    "typical": "PT10M",
+                    "estimated": true
+                  },
+                  "text": "\\~10 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "116 °C",
+                  "value": 116
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "bohnen",
+                  "amount": {
+                    "text": "400 g Bohnen",
+                    "value": 400.0,
+                    "unit": "g"
+                  },
+                  "reuse": true
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "1,6 l kaltem Wasser",
+                    "value": 1.6,
+                    "unit": "l"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "5 angedrückten Knoblauchzehen",
+                    "value": 5.0,
+                    "unit": "Stück"
+                  },
+                  "reuse": true
+                },
+                {
+                  "ref": "rosmarin",
+                  "amount": {
+                    "text": "2 Zweigen Rosmarin",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "lorbeerblaetter",
+                  "amount": {
+                    "text": "2 Lorbeerblättern",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "3 EL Olivenöl",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "2½ TL Salz",
+                    "value": 2.5,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*nach Aromaten vorbereiten*",
+              "after": [
+                "step:aromaten-vorbereiten"
+              ]
+            },
+            {
+              "id": "druck-natuerlich-ablassen",
+              "label": "3",
+              "heading": "**3. Druck natürlich ablassen (20 Min., passiv)**",
+              "title": "Druck natürlich ablassen",
+              "duration": {
+                "typical": "PT20M",
+                "source": "20 Min."
+              },
+              "attention": "passive",
+              "text": "Nach Ablauf der Zeit das Gerät auf Warmhalten oder Aus schalten und den Druck **20 Min. natürlich abfallen lassen**, danach verbleibenden Restdruck vorsichtig ablassen. Deckel öffnen und eine Bohne zwischen zwei Fingern prüfen: Sie muss sich mühelos cremig zerdrücken lassen. *Zu kernig? Deckel wieder schließen, 5 Minuten nachdrücken und 10 Minuten natürlich ablassen — ältere Ernten brauchen gelegentlich länger.*",
+              "action": "Nach Ablauf der Zeit das Gerät auf Warmhalten oder Aus schalten und den Druck **20 Min. natürlich abfallen lassen**, danach verbleibenden Restdruck vorsichtig ablassen.",
+              "limits": [
+                "20 Min. natürlich abfallen lassen"
+              ],
+              "why": "Zu kernig? Deckel wieder schließen, 5 Minuten nachdrücken und 10 Minuten natürlich ablassen — ältere Ernten brauchen gelegentlich länger.",
+              "timers": [
+                {
+                  "label": "Druck natürlich ablassen",
+                  "duration": {
+                    "typical": "PT20M"
+                  },
+                  "text": "20 Min."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Bohnen druckgaren*",
+              "after": [
+                "step:bohnen-druckgaren"
+              ]
+            },
+            {
+              "id": "blattgemuese-schneiden",
+              "label": "4",
+              "heading": "**4. Blattgemüse schneiden (5 Min.)**",
+              "title": "Blattgemüse schneiden",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "250 g Grünkohl oder Wirsing waschen, dicke Mittelrippen herausschneiden und die Blätter in 2 cm breite Streifen schneiden (bei Blattspinat nur waschen und grob zerzupfen). 1 Knoblauchzehe in feine Scheiben schneiden. 50 g Parmigiano Reggiano (ohne Rinde) fein mit der Microplane reiben.",
+              "action": "250 g Grünkohl oder Wirsing waschen, dicke Mittelrippen herausschneiden und die Blätter in 2 cm breite Streifen schneiden (bei Blattspinat nur waschen und grob zerzupfen).",
+              "ingredients": [
+                {
+                  "ref": "gruenkohl",
+                  "amount": {
+                    "text": "250 g Grünkohl",
+                    "value": 250.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "1 Knoblauchzehe",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "parmigiano",
+                  "amount": {
+                    "text": "50 g Parmigiano",
+                    "value": 50.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "salsiccia-braten",
+              "label": "5",
+              "heading": "**5. Salsiccia braten (10 Min.)**",
+              "title": "Salsiccia braten",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "400 g Salsiccia (oder grobe Bratwurst) aus der Pelle drücken. 1 EL Olivenöl in der großen Pfanne auf mittlerer bis hoher Hitze erwärmen, das Brät in groben Stücken einlegen und **3–4 Min. nicht rühren**, bis die Unterseite tief goldbraun ist. Dann wenden, zerbröseln und weitere 4–5 Min. vollständig durchbraten (**kein Rosa mehr**, auch nicht im Inneren der größten Stücke). Mit einem Schaumlöffel auf einen Teller heben; das würzige Bratfett bleibt in der Pfanne.",
+              "action": "400 g Salsiccia (oder grobe Bratwurst) aus der Pelle drücken.",
+              "limits": [
+                "3–4 Min. nicht rühren",
+                "kein Rosa mehr"
+              ],
+              "cues": [
+                "bis die Unterseite tief goldbraun ist"
+              ],
+              "timers": [
+                {
+                  "label": "Salsiccia braten",
+                  "duration": {
+                    "min": "PT3M",
+                    "max": "PT4M"
+                  },
+                  "text": "3–4 Min."
+                },
+                {
+                  "label": "Salsiccia braten",
+                  "duration": {
+                    "min": "PT4M",
+                    "max": "PT5M"
+                  },
+                  "text": "4–5 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "salsiccia",
+                  "amount": {
+                    "text": "400 g Salsiccia",
+                    "value": 400.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "1 EL Olivenöl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nur Mit Salsiccia · letzte 15 Min. von Druck natürlich ablassen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "only": [
+                "begleitung=mit-salsiccia"
+              ],
+              "attention": "active",
+              "start": {
+                "ref": "step:druck-natuerlich-ablassen:end",
+                "offset": {
+                  "min": "-PT15M",
+                  "max": "-PT15M",
+                  "source": "letzte 15 Min. von Druck natürlich ablassen"
+                }
+              }
+            },
+            {
+              "id": "blattgemuese-schwenken",
+              "label": "6",
+              "heading": "**6. Blattgemüse schwenken (5–8 Min.)**",
+              "title": "Blattgemüse schwenken",
+              "duration": {
+                "min": "PT5M",
+                "max": "PT8M",
+                "source": "5–8 Min."
+              },
+              "text": "In derselben Pfanne im Bratfett (bei *Vegetarisch*: in 1 EL Olivenöl) bei mittlerer Hitze den geschnittenen Knoblauch und ½ TL Fenchelsamen 30 Sek. duften lassen (nicht bräunen). Die 250 g Blattgemüse zugeben, ¼ TL Salz darüber und unter Rühren zusammenfallen lassen: Spinat 1–2 Min. offen; Wirsing mit 3 EL heißem Wasser 3–4 Min. mit Deckel; krauser Grünkohl mit 5 EL heißem Wasser 6–8 Min. mit Deckel, bis er weich ist. *Das Gemüse behält so Farbe und Biss, statt in der heißen Bohnenbrühe grau zu werden.*",
+              "action": "In derselben Pfanne im Bratfett (bei *Vegetarisch*: in 1 EL Olivenöl) bei mittlerer Hitze den geschnittenen Knoblauch und ½ TL Fenchelsamen 30 Sek. duften lassen (nicht bräunen).",
+              "why": "Das Gemüse behält so Farbe und Biss, statt in der heißen Bohnenbrühe grau zu werden.",
+              "cues": [
+                "bis er weich ist"
+              ],
+              "timers": [
+                {
+                  "label": "Blattgemüse schwenken",
+                  "duration": {
+                    "min": "PT1M",
+                    "max": "PT2M"
+                  },
+                  "text": "1–2 Min."
+                },
+                {
+                  "label": "Blattgemüse schwenken",
+                  "duration": {
+                    "min": "PT3M",
+                    "max": "PT4M"
+                  },
+                  "text": "3–4 Min."
+                },
+                {
+                  "label": "Blattgemüse schwenken",
+                  "duration": {
+                    "min": "PT6M",
+                    "max": "PT8M"
+                  },
+                  "text": "6–8 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "1 EL Olivenöl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "fenchelsamen",
+                  "amount": {
+                    "text": "½ TL Fenchelsamen",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "¼ TL Salz",
+                    "value": 0.25,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "3 EL heißem Wasser",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "5 EL heißem Wasser",
+                    "value": 5.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Blattgemüse schneiden, Salsiccia braten · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:blattgemuese-schneiden",
+                "step:salsiccia-braten"
+              ]
+            },
+            {
+              "id": "bruehe-binden",
+              "label": "7",
+              "heading": "**7. Brühe binden (6 Min.)**",
+              "title": "Brühe binden",
+              "duration": {
+                "typical": "PT6M",
+                "source": "6 Min."
+              },
+              "text": "Rosmarinzweige, Lorbeerblätter, die weich gekochte Zwiebel (oder nach Geschmack mitzerdrücken) und die gummiartige Parmigiano-Rinde aus den Bohnen fischen. **Eine volle Kelle Bohnen** mit dem Löffelrücken an der Topfwand zerdrücken und zurück in die Brühe rühren — die Flüssigkeit wird sofort seidig-milchig. Das geschwenkte Blattgemüse (und bei *Mit Salsiccia* die gebratene Wurst) unterheben, 2 Min. ziehen lassen. Mit dem Saft von ½ Zitrone, Salz und reichlich schwarzem Pfeffer abschmecken. *Zu dick? Mit einem Schuss heißem Wasser auf „suppig-cremig“ einstellen — Bohnen ziehen beim Stehen stark nach.*",
+              "action": "Rosmarinzweige, Lorbeerblätter, die weich gekochte Zwiebel (oder nach Geschmack mitzerdrücken) und die gummiartige Parmigiano-Rinde aus den Bohnen fischen.",
+              "limits": [
+                "Eine volle Kelle Bohnen"
+              ],
+              "why": "Zu dick? Mit einem Schuss heißem Wasser auf „suppig-cremig“ einstellen — Bohnen ziehen beim Stehen stark nach.",
+              "timers": [
+                {
+                  "label": "Brühe binden",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "bio-zitrone",
+                  "amount": {
+                    "text": "½ Zitrone",
+                    "value": 0.5,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*nach Druck natürlich ablassen, Blattgemüse schwenken · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:druck-natuerlich-ablassen",
+                "step:blattgemuese-schwenken"
+              ]
+            },
+            {
+              "id": "anrichten",
+              "label": "8",
+              "heading": "**8. Anrichten (3 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT3M",
+                "source": "3 Min."
+              },
+              "text": "Bohnen samt reichlich Brühe in vorgewärmte tiefe Schalen schöpfen. Pro Schale ½ EL gutes Olivenöl (insgesamt 2 EL), feinen Abrieb von ½ Bio-Zitrone und die 50 g frisch geriebenen Parmigiano Reggiano darübergeben. Optional 1 Prise Chiliflocken pro Erwachsenen-Teller nach Geschmack auf den Tisch stellen.",
+              "action": "Bohnen samt reichlich Brühe in vorgewärmte tiefe Schalen schöpfen.",
+              "ingredients": [
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "½ EL gutes Olivenöl",
+                    "value": 0.5,
+                    "unit": "EL",
+                    "times": 4
+                  }
+                },
+                {
+                  "ref": "bio-zitrone",
+                  "amount": {
+                    "text": "½ Bio-Zitrone",
+                    "value": 0.5,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "parmigiano",
+                  "amount": {
+                    "text": "50 g frisch geriebenen Parmigiano",
+                    "value": 50.0,
+                    "unit": "g"
+                  },
+                  "reuse": true
+                },
+                {
+                  "ref": "chiliflocken",
+                  "amount": {
+                    "text": "1 Prise Chiliflocken",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                }
+              ],
+              "meta": "*nach Brühe binden*",
+              "attention": "active",
+              "after": [
+                "step:bruehe-binden"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "kochtag",
+            "text": "Aromaten vorbereiten",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT90M"
+            },
+            "source": "T−1:30",
+            "steps": [
+              "aromaten-vorbereiten"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Bohnen druckgaren starten",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT82M"
+            },
+            "source": "T−1:22",
+            "steps": [
+              "bohnen-druckgaren"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Druck natürlich ablassen · Blattgemüse schneiden",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT32M"
+            },
+            "source": "T−0:32",
+            "steps": [
+              "druck-natuerlich-ablassen",
+              "blattgemuese-schneiden"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Salsiccia braten *(nur Mit Salsiccia)*",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT27M"
+            },
+            "source": "T−0:27",
+            "steps": [
+              "salsiccia-braten"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Blattgemüse schwenken",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT17M"
+            },
+            "source": "T−0:17",
+            "steps": [
+              "blattgemuese-schwenken"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Brühe binden",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT9M"
+            },
+            "source": "T−0:09",
+            "steps": [
+              "bruehe-binden"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Anrichten",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT3M"
+            },
+            "source": "T−0:03",
+            "steps": [
+              "anrichten"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Komplett mild by design:** kein Chili, der Knoblauch aus dem Drucktopf ist butterweich und süßlich, Fenchelsamen sind dezent.\n- **Teller fürs Kind:** Bohnen und Salsiccia-Stückchen mit etwas Brühe und Parmigiano; Blattgemüse klein geschnitten — Wirsing oder Spinat ist fürs Kind die leichtere Wahl als krauser Grünkohl (oder ein paar Bohnen separat auf einen kleinen Teller zum Löffeln/Gabeln). Ein Stück Brot zum Tunken in die Brühe funktioniert fast immer.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "Geprüft gegen den [Leitfaden](/schwangerschaft/leitfaden.md) — **ohne Sonderbehandlung geeignet**:\n\n- **Hülsenfrüchte als optimaler KH-Träger:** Weiße Bohnen (Cannellini/Haricot) liegen in den internationalen GI-Tabellen je nach Sorte und Tabelle bei **GI \\~30–40** (Atkinson et al. 2008/2021; Einzelwerte nicht nachgeschlagen) — niedrig-glykämisch wie die Linsen im [Dal-Baukasten](/schwangerschaft/dal-baukasten.md). 100 g trockene Bohnen pro Portion liefern \\~45 g langsam verfügbare KH, \\~15 g Ballaststoffe und \\~22 g pflanzliches Protein.\n- **Protein & Fett:** Mit 100 g Salsiccia (\\~18 g Protein) + Parmigiano (\\~5 g) landet eine Portion bei **\\~45 g Protein** — die Blutzuckerkurve bleibt erfahrungsgemäß sehr flach. **GDM-Portion:** \\~¾ Schale Bohnen (\\~75 g trocken, \\~35 g KH — wie eine Portion im Dal-Baukasten) und dafür mehr Blattgemüse + Wurst; Brot weglassen oder auf ½ [Vollkornbrötchen](/backen/vollkornbroetchen.md) beschränken. Beim ersten Mal messen.\n- **Sicherheit:** Parmigiano Reggiano DOP ist lange gereifter Hartkäse (BZfE: unbedenklich, Rinde zum Reiben abschneiden, frisch reiben — die mitgekochte Rinde erreicht im Drucktopf \\~116 °C). Salsiccia komplett durchgebraten (zerbröselt, kein Rosa). Kein Alkohol, kein Kombu, kein rohes Ei.\n- **Reste:** Halten gekühlt 3–4 Tage (Schwangerschaft: 2 Tage, sprudelnd aufkochen) — am nächsten Tag durchgezogen noch besser; beim Aufwärmen einen Schuss Wasser zugeben.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Ohne Schnellkochtopf (Topf-Variante):** Bohnen über Nacht (8–12 Std.) in reichlich Wasser mit 1 EL Salz einweichen, abgießen, dann mit 1,6 l Wasser und den Aromaten im 6-L-Topf 60–90 Min. leise simmern, bis sie cremig sind.\n- **Parmigiano-Rinden sammeln:** Von jedem Stück Parmigiano/Pecorino die Rinde in einem Gefrierbeutel im TK sammeln — das macht dieses Gericht zum spontanen Vorrats-Abendessen.\n- **Varianten fürs Blattgemüse:** Im Sommer funktionieren Mangold oder geviertelte Kirschtomaten (in Schritt 6 kurz anbraten) genauso gut wie Grünkohl/Wirsing im Winter.\n- **No-Name-Schnellkochtopf:** Beim ersten Durchgang die exakte Garzeit notieren (40 Min. ist der sichere Startwert für Cannellini; falls die Bohnen sehr weich sind, beim nächsten Mal auf 35 Min. senken).\n- **Streng vegetarisch:** Parmigiano Reggiano enthält tierisches Lab — dann die Rinde weglassen und einen Hartkäse mit mikrobiellem Lab reiben.",
+      "tags": [
+        "notizen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **Salzen von Anfang an (Ionenaustausch, weichere Schalen, weniger Platzen):** J. Kenji López-Alt, *Serious Eats* (Bohnen-Salz-Mythos; Seite nicht abrufbar, aus dem Gedächtnis zitiert) & *Cook’s Illustrated*.\n- **Ungeweichte weiße Bohnen im Elektro-Schnellkochtopf (Cannellini 35–40 Min., kleine weiße Bohnen 25–30 Min. Hochdruck + 20 Min. Natural Release, ½-Füllgrenze):** *Serious Eats* / *DadCooksDinner* Pressure-Cooker-Bean-Tabellen; bewusst auf 40 Min. gesetzt wegen des leicht niedrigeren Drucks im No-Name-Gerät (wie im [Dal-Baukasten](/schwangerschaft/dal-baukasten.md)).\n- **Parmigiano-Rinde + Bohnen an der Topfwand zerdrücken + Olivenöl/Zitrone-Finish:** Toskanische Bohnen-Tradition (*fagioli all’olio*, *fagioli al fiasco*), populär als „Brothy Beans“ bei Alison Roman und Samin Nosrat.\n- **GI weiße Bohnen:** Atkinson et al., *International Tables of Glycemic Index and Glycemic Load Values* (Diabetes Care 2008; AJCN 2021): weiße Bohnen je nach Sorte \\~30–40 — Größenordnung aus dem Gedächtnis, Einzelwerte nicht nachgeschlagen.",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-11-20T14:28:09Z",
+    "sourceHash": "f34baa8cc22dc514",
+    "select": {
+      "begleitung": "mit-salsiccia"
+    },
+    "quantities": [
+      {
+        "ingredient": "zwiebel",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Zwiebel"
+        }
+      },
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": "6",
+          "value": 6.0,
+          "max": 6.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "5 Knoblauchzehen + 1 Knoblauchzehe"
+        }
+      },
+      {
+        "ingredient": "gruenkohl",
+        "total": {
+          "text": "250 g",
+          "value": 250.0,
+          "max": 250.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "250 g Grünkohl"
+        }
+      },
+      {
+        "ingredient": "rosmarin",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 Zweigen Rosmarin"
+        }
+      },
+      {
+        "ingredient": "bio-zitrone",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "½ Zitrone + ½ Bio-Zitrone"
+        }
+      },
+      {
+        "ingredient": "salsiccia",
+        "total": {
+          "text": "400 g",
+          "value": 400.0,
+          "max": 400.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "400 g Salsiccia"
+        }
+      },
+      {
+        "ingredient": "parmigiano",
+        "total": {
+          "text": "50 g",
+          "value": 50.0,
+          "max": 50.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "50 g Parmigiano"
+        }
+      },
+      {
+        "ingredient": "bohnen",
+        "total": {
+          "text": "400 g",
+          "value": 400.0,
+          "max": 400.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "400 g getrocknete weiße Bohnen"
+        }
+      },
+      {
+        "ingredient": "fenchelsamen",
+        "total": {
+          "text": "½ TL",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "½ TL Fenchelsamen"
+        }
+      },
+      {
+        "ingredient": "lorbeerblaetter",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 Lorbeerblättern"
+        }
+      },
+      {
+        "ingredient": "olivenoel",
+        "total": {
+          "text": "7 EL",
+          "value": 7.0,
+          "max": 7.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "3 EL Olivenöl + 1 EL Olivenöl + 1 EL Olivenöl + ½ EL gutes Olivenöl ×4"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "2¾ TL",
+          "value": 2.75,
+          "max": 2.75,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2½ TL Salz + ¼ TL Salz"
+        }
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "chiliflocken",
+        "total": {
+          "text": "1 Prise",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Prise",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Prise Chiliflocken"
+        }
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "1720 ml",
+          "value": 1720.0,
+          "max": 1720.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1,6 l kaltem Wasser + 3 EL heißem Wasser + 5 EL heißem Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Aldi / REWE",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "zwiebel",
+            "name": "Zwiebel",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "\\~120 g"
+          },
+          {
+            "ingredient": "knoblauch",
+            "name": "Knoblauch",
+            "need": {
+              "text": "6",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "6",
+            "inStock": false,
+            "buy": {
+              "text": "1 Knolle"
+            },
+            "note": "6 Zehen: 5 Bohnen, 1 Pfanne"
+          },
+          {
+            "ingredient": "gruenkohl",
+            "name": "Grünkohl, Wirsing oder frischer Blattspinat",
+            "need": {
+              "text": "250 g",
+              "value": 250.0,
+              "max": 250.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "250 g",
+            "inStock": false,
+            "buy": {
+              "text": "250 g"
+            },
+            "note": "Grünkohl/Wirsing geputzt"
+          },
+          {
+            "ingredient": "rosmarin",
+            "name": "Rosmarin",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            },
+            "note": "2 Zweige gebraucht"
+          },
+          {
+            "ingredient": "bio-zitrone",
+            "name": "Bio-Zitrone",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "Abrieb + Saft"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "salsiccia",
+            "name": "frische Salsiccia oder grobe Bratwurst",
+            "need": {
+              "text": "400 g",
+              "value": 400.0,
+              "max": 400.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "400 g",
+            "inStock": false,
+            "buy": {
+              "text": "400 g"
+            },
+            "note": "roh, zum Ausdrücken"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "parmigiano",
+            "name": "Parmigiano Reggiano DOP am Stück",
+            "need": {
+              "text": "50 g",
+              "value": 50.0,
+              "max": 50.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "50 g",
+            "inStock": false,
+            "buy": {
+              "text": "150 g"
+            },
+            "note": "Rinde \\~25–30 g für die Brühe + 50 g frisch gerieben zum Anrichten"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "bohnen",
+            "name": "getrocknete weiße Bohnen",
+            "need": {
+              "text": "400 g",
+              "value": 400.0,
+              "max": 400.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "400 g",
+            "inStock": false,
+            "buy": {
+              "text": "400 g"
+            },
+            "note": "Cannellini oder kleine weiße Bohnen"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "fenchelsamen",
+            "name": "Fenchelsamen",
+            "need": {
+              "text": "½ TL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "½ TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "lorbeerblaetter",
+            "name": "Lorbeerblätter",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "pantry": true,
+            "note": "2 Stück"
+          },
+          {
+            "ingredient": "olivenoel",
+            "name": "Gutes Olivenöl",
+            "need": {
+              "text": "7 EL",
+              "value": 7.0,
+              "max": 7.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "7 EL",
+            "inStock": false,
+            "pantry": true,
+            "note": "Verbrauch \\~6 EL"
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "2¾ TL",
+              "value": 2.75,
+              "max": 2.75,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "2¾ TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "Verbrauch \\~2¾ TL"
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Pfeffer, schwarz",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "chiliflocken",
+            "name": "Chiliflocken",
+            "need": {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            },
+            "display": "1 Prise",
+            "inStock": false,
+            "optional": true,
+            "pantry": true,
+            "note": "für die Erwachsenen am Tisch"
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "1720 ml",
+              "value": 1720.0,
+              "max": 1720.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "1720 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "key": "begleitung=vegetarisch",
+        "select": {
+          "begleitung": "vegetarisch"
+        },
+        "quantities": [
+          {
+            "ingredient": "zwiebel",
+            "total": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 Zwiebel"
+            }
+          },
+          {
+            "ingredient": "knoblauch",
+            "total": {
+              "text": "6",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "main": "5 Knoblauchzehen + 1 Knoblauchzehe"
+            }
+          },
+          {
+            "ingredient": "gruenkohl",
+            "total": {
+              "text": "250 g",
+              "value": 250.0,
+              "max": 250.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "250 g Grünkohl"
+            }
+          },
+          {
+            "ingredient": "rosmarin",
+            "total": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "main": "2 Zweigen Rosmarin"
+            }
+          },
+          {
+            "ingredient": "bio-zitrone",
+            "total": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "main": "½ Zitrone + ½ Bio-Zitrone"
+            }
+          },
+          {
+            "ingredient": "parmigiano",
+            "total": {
+              "text": "50 g",
+              "value": 50.0,
+              "max": 50.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "50 g Parmigiano"
+            }
+          },
+          {
+            "ingredient": "bohnen",
+            "total": {
+              "text": "400 g",
+              "value": 400.0,
+              "max": 400.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "400 g getrocknete weiße Bohnen"
+            }
+          },
+          {
+            "ingredient": "fenchelsamen",
+            "total": {
+              "text": "½ TL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "main": "½ TL Fenchelsamen"
+            }
+          },
+          {
+            "ingredient": "lorbeerblaetter",
+            "total": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "main": "2 Lorbeerblättern"
+            }
+          },
+          {
+            "ingredient": "olivenoel",
+            "total": {
+              "text": "6 EL",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "main": "3 EL Olivenöl + 1 EL Olivenöl + ½ EL gutes Olivenöl ×4"
+            }
+          },
+          {
+            "ingredient": "salz",
+            "total": {
+              "text": "2¾ TL",
+              "value": 2.75,
+              "max": 2.75,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "main": "2½ TL Salz + ¼ TL Salz"
+            }
+          },
+          {
+            "ingredient": "pfeffer",
+            "total": {
+              "text": ""
+            },
+            "perTask": {}
+          },
+          {
+            "ingredient": "chiliflocken",
+            "total": {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 Prise Chiliflocken"
+            }
+          },
+          {
+            "ingredient": "wasser",
+            "total": {
+              "text": "1720 ml",
+              "value": 1720.0,
+              "max": 1720.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1,6 l kaltem Wasser + 3 EL heißem Wasser + 5 EL heißem Wasser"
+            }
+          }
+        ],
+        "shopping": [
+          {
+            "store": "Aldi / REWE",
+            "group": "Obst & Gemüse",
+            "items": [
+              {
+                "ingredient": "zwiebel",
+                "name": "Zwiebel",
+                "need": {
+                  "text": "1",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "1",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                },
+                "note": "\\~120 g"
+              },
+              {
+                "ingredient": "knoblauch",
+                "name": "Knoblauch",
+                "need": {
+                  "text": "6",
+                  "value": 6.0,
+                  "max": 6.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "6",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Knolle"
+                },
+                "note": "6 Zehen: 5 Bohnen, 1 Pfanne"
+              },
+              {
+                "ingredient": "gruenkohl",
+                "name": "Grünkohl, Wirsing oder frischer Blattspinat",
+                "need": {
+                  "text": "250 g",
+                  "value": 250.0,
+                  "max": 250.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "250 g",
+                "inStock": false,
+                "buy": {
+                  "text": "250 g"
+                },
+                "note": "Grünkohl/Wirsing geputzt"
+              },
+              {
+                "ingredient": "rosmarin",
+                "name": "Rosmarin",
+                "need": {
+                  "text": "2",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "2",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Bund"
+                },
+                "note": "2 Zweige gebraucht"
+              },
+              {
+                "ingredient": "bio-zitrone",
+                "name": "Bio-Zitrone",
+                "need": {
+                  "text": "1",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "1",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                },
+                "note": "Abrieb + Saft"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Milchprodukte & Eier",
+            "items": [
+              {
+                "ingredient": "parmigiano",
+                "name": "Parmigiano Reggiano DOP am Stück",
+                "need": {
+                  "text": "50 g",
+                  "value": 50.0,
+                  "max": 50.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "50 g",
+                "inStock": false,
+                "buy": {
+                  "text": "150 g"
+                },
+                "note": "Rinde \\~25–30 g für die Brühe + 50 g frisch gerieben zum Anrichten"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Trockenwaren",
+            "items": [
+              {
+                "ingredient": "bohnen",
+                "name": "getrocknete weiße Bohnen",
+                "need": {
+                  "text": "400 g",
+                  "value": 400.0,
+                  "max": 400.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "400 g",
+                "inStock": false,
+                "buy": {
+                  "text": "400 g"
+                },
+                "note": "Cannellini oder kleine weiße Bohnen"
+              }
+            ]
+          },
+          {
+            "store": "Vorrat",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "fenchelsamen",
+                "name": "Fenchelsamen",
+                "need": {
+                  "text": "½ TL",
+                  "value": 0.5,
+                  "max": 0.5,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "½ TL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "lorbeerblaetter",
+                "name": "Lorbeerblätter",
+                "need": {
+                  "text": "2",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "2",
+                "inStock": false,
+                "pantry": true,
+                "note": "2 Stück"
+              },
+              {
+                "ingredient": "olivenoel",
+                "name": "Gutes Olivenöl",
+                "need": {
+                  "text": "6 EL",
+                  "value": 6.0,
+                  "max": 6.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "6 EL",
+                "inStock": false,
+                "pantry": true,
+                "note": "Verbrauch \\~6 EL"
+              },
+              {
+                "ingredient": "salz",
+                "name": "Salz",
+                "need": {
+                  "text": "2¾ TL",
+                  "value": 2.75,
+                  "max": 2.75,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "2¾ TL",
+                "inStock": false,
+                "pantry": true,
+                "note": "Verbrauch \\~2¾ TL"
+              },
+              {
+                "ingredient": "pfeffer",
+                "name": "Pfeffer, schwarz",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "chiliflocken",
+                "name": "Chiliflocken",
+                "need": {
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
+                  "approx": false
+                },
+                "display": "1 Prise",
+                "inStock": false,
+                "optional": true,
+                "pantry": true,
+                "note": "für die Erwachsenen am Tisch"
+              },
+              {
+                "ingredient": "wasser",
+                "name": "Wasser",
+                "need": {
+                  "text": "1720 ml",
+                  "value": 1720.0,
+                  "max": 1720.0,
+                  "unit": "ml",
+                  "approx": false
+                },
+                "display": "1720 ml",
+                "inStock": false,
+                "pantry": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

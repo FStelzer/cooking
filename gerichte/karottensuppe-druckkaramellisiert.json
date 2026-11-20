@@ -1,0 +1,2065 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/karottensuppe-druckkaramellisiert",
+  "kind": "dish",
+  "title": "Druck-karamellisierte Karottensuppe — Natron-Maillard im Schnellkochtopf mit knusprigen Kichererbsen (4 Portionen)",
+  "status": "done",
+  "yields": {
+    "text": "4 Portionen",
+    "value": 4.0,
+    "unit": "Portionen"
+  },
+  "intro": "*Aktive Zeit \\~50 Min., gesamt \\~1 Std. 5 Min. Equipment: elektrischer Schnellkochtopf (6 L), Ofen mit Backblech + Backpapier, kleiner Topf, große Pfanne (nur Mit Hähnchen), Stabmixer, feines Sieb (optional), Feinwaage oder Messlöffel, Fleischthermometer (nur Mit Hähnchen).*\n\n*Varianten: Protein = Mit Hähnchen | Vegetarisch*\n\nDie *Modernist-Cuisine*-Technik für den Dienstagabend: Karotten garen mit Butter und einer exakt abgemessenen Prise Natron (0,5 % des Karottengewichts) unter Druck. Das leicht alkalische Milieu bei \\~115–118 °C beschleunigt die Maillard-Reaktion massiv — ohne Ofen-Rösten und ohne Anbrennen entsteht in 25 Minuten eine nussige, röstig-süße Suppe, die nach langem Rösten schmeckt. Knusprige Ofen-Kichererbsen, Kräuter-Joghurt und (als Default) kurz gebratene Hähnchenbruststreifen machen daraus ein vollwertiges Abendessen mit Crunch, Kälte, Säure und reichlich Protein.",
+  "times": {
+    "text": "Aktive Zeit ~50 Min., gesamt ~1 Std.",
+    "active": {
+      "typical": "PT50M",
+      "source": "50 Min."
+    },
+    "total": {
+      "typical": "PT1H5M",
+      "source": "1 Std. 5 Min."
+    }
+  },
+  "equipment": [
+    "elektrischer Schnellkochtopf (6 L)",
+    "Ofen mit Backblech + Backpapier",
+    "kleiner Topf",
+    "große Pfanne (nur Mit Hähnchen)",
+    "Stabmixer",
+    "feines Sieb (optional)",
+    "Feinwaage oder Messlöffel",
+    "Fleischthermometer (nur Mit Hähnchen)"
+  ],
+  "variants": [
+    {
+      "id": "protein",
+      "label": "Protein",
+      "choices": [
+        {
+          "id": "mit-haehnchen",
+          "label": "Mit Hähnchen"
+        },
+        {
+          "id": "vegetarisch",
+          "label": "Vegetarisch"
+        }
+      ],
+      "default": "mit-haehnchen"
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "karotten",
+      "name": "Karotten",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 kg"
+      },
+      "note": "ergibt \\~800 g geschält"
+    },
+    {
+      "id": "zwiebel",
+      "name": "Zwiebel",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "\\~120 g"
+    },
+    {
+      "id": "ingwer",
+      "name": "Ingwer",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Stück"
+      },
+      "note": "\\~20 g"
+    },
+    {
+      "id": "zitronen",
+      "name": "Zitronen",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "note": "1 Saft in die Suppe, 1 Spalten zum Servieren und Joghurt"
+    },
+    {
+      "id": "petersilie",
+      "name": "glatte Petersilie oder Koriander",
+      "store": "Aldi / REWE",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      },
+      "note": "für Joghurt und Garnitur"
+    },
+    {
+      "id": "haehnchenbrustfilet",
+      "name": "Hähnchenbrustfilet",
+      "store": "Aldi / REWE",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "400 g"
+      },
+      "only": [
+        "protein=mit-haehnchen"
+      ]
+    },
+    {
+      "id": "butter",
+      "name": "Butter",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "80 g"
+      }
+    },
+    {
+      "id": "joghurt",
+      "name": "griechischer Joghurt",
+      "store": "Aldi / REWE",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "150 g"
+      },
+      "note": "10 % Fett, pasteurisiert"
+    },
+    {
+      "id": "kichererbsen",
+      "name": "Kichererbsen",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 Dose"
+      },
+      "note": "400 g, \\~240 g abgetropft"
+    },
+    {
+      "id": "huehnerbruehe",
+      "name": "Hühnerbrühe oder Gemüsebrühe",
+      "store": "Aldi / REWE",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "750 ml"
+      },
+      "note": "Vorrat/TK oder 2 Gläser Fond à 400 ml"
+    },
+    {
+      "id": "natron",
+      "name": "Natron",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "reines Natriumhydrogencarbonat, kein Backpulver — Verbrauch 4 g"
+    },
+    {
+      "id": "kreuzkuemmel",
+      "name": "Kreuzkümmel, gemahlen",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "paprika",
+      "name": "Paprika edelsüß",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "olivenoel",
+      "name": "Olivenöl",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "oel",
+      "name": "Neutrales Öl",
+      "store": "Vorrat",
+      "pantry": true,
+      "only": [
+        "protein=mit-haehnchen"
+      ]
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "pfeffer",
+      "name": "Schwarzer Pfeffer",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "chilioel",
+      "name": "Mildes Chiliöl",
+      "store": "Vorrat",
+      "optional": true,
+      "pantry": true,
+      "note": "für die Erwachsenen am Tisch"
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Stil-Entscheidung",
+      "level": 2,
+      "markdown": "- **0,5 % Natron — exakt abmessen, nicht schätzen.** Nathan Myhrvold (*Modernist Cuisine at Home*) nutzt exakt 0,5 % Natron bezogen auf das Netto-Karottengewicht (4 g ≈ ¾ TL auf 800 g geschälte Karotten). Das hebt den pH-Wert auf ca. 7,5 und lässt Zucker und Aminosäuren unter Druck rasant bräunen. Mehr als 0,7 % schmeckt seifig-metallisch; weniger bräunt kaum.\n- **Angepasst an den elektrischen 6-L-Schnellkochtopf:** Das Buchrezept kommt im Herd-Schnellkochtopf (15 psi / 1 bar, \\~120 °C) mit 113 g Butter und nur 30 g Wasser pro 500 g Karotten und 20 Min. aus — wenig Wasser ist dort die Pointe, die Karotten bräunen praktisch in Butter und eigenem Saft. Ein elektrischer No-Name-Schnellkochtopf arbeitet mit etwas geringerem Druck (\\~11–12 psi, \\~115–118 °C) und braucht etwas mehr Bodenflüssigkeit für den Druckaufbau. Deshalb hier **100 ml Wasser** und **25 Min. Hochdruck** — die Bräunung fällt milder aus als im Original (goldbraun bis bernstein statt tiefbraun). Die Butter liegt mit 80 g bewusst unter dem Buch (das wären \\~180 g auf 800 g Karotten) — alltagstauglicher, kostet aber etwas Röstaroma.\n- **Hühnerbrühe statt frisch gepresstem Karottensaft:** Im Original wird mit frisch entsaftetem, geklärtem Karottensaft aufgegossen — im Alltag ohne Entsafter unrealistisch. Kräftige Hühner- oder Gemüsebrühe bringt Tiefe statt noch mehr Süße; frischer Ingwer und reichlich Zitronensaft am Ende schneiden durch die alkalische Süße.\n- **Säure ist kein Optional-Finish, sondern Chemie-Ausgleich:** Durch das Natron startet die Suppe alkalisch und wirkt vor dem Abschmecken verblüffend flach-süß. Erst der Zitronensaft am Ende holt die Säure-Balance zurück und lässt die Röstaromen aufleuchten.\n- **Protein-Anker statt „nur Suppe“:** Pürierte Karottensuppe allein sättigt kurz und hebt den Blutzucker schnell. Mit gebratener Hähnchenbrust (Default), gerösteten Kichererbsen und griechischem Joghurt wird ein voller Abendessen-Teller daraus.",
+      "tags": [
+        "stil"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **100 % Aldi / REWE.** Normale Speisekarotten (1 kg, ergibt nach dem Schälen \\~800 g netto). Sehr dicke, alte Möhren haben einen holzigen Kern — den ggf. herausschneiden; mittlere Karotten einfach in Scheiben schneiden.\n- **Natron:** Kaiser-Natron oder Backnatron (reines Natriumhydrogencarbonat, Backregal) — **kein Backpulver** (enthält Säure und Stärke, verfehlt den pH-Effekt).\n- **Brühe:** 750 ml — Vorrat aus dem TK oder 2 Gläser Geflügel- bzw. Gemüsefond (je 400 ml; bei kräftigem Fond reicht 1 Glas + 350 ml Wasser). Keine stark gesalzenen Brühwürfel, sonst lässt sich das Salz schlechter steuern.\n- **Hähnchenbrust:** Nur für die Variante *Mit Hähnchen* (400 g).",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "markdown",
+      "title": "Ablauf",
+      "level": "bold",
+      "markdown": "**Ablauf:** Ofen vorheizen, Karotten vorbereiten und in den Schnellkochtopf geben — sobald der Druck läuft, entstehen parallel die gerösteten Kichererbsen im Ofen, der Kräuter-Joghurt, (falls gewählt) das Hähnchen in der Pfanne und zum Schluss die heiße Ingwer-Brühe."
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Druck-karamellisierte Karottensuppe — Natron-Maillard im Schnellkochtopf mit knusprigen Kichererbsen (4 Portionen)",
+          "steps": [
+            {
+              "id": "karotten-vorbereiten",
+              "label": "1",
+              "heading": "**1. Karotten vorbereiten (12 Min.)**",
+              "title": "Karotten vorbereiten",
+              "duration": {
+                "typical": "PT12M",
+                "source": "12 Min."
+              },
+              "text": "1 kg Karotten schälen, Enden abschneiden und in 1 cm dicke Scheiben schneiden (ergibt \\~800 g netto; sehr holzige Kerne dicker Karotten ggf. herausschneiden). 1 Zwiebel grob würfeln, 20 g Ingwer schälen und fein reiben. 4 g Natron (knapp ¾ TL) auf der Feinwaage abwiegen. *Gleichmäßige 1-cm-Scheiben garen und bräunen einheitlich — zu dünne zerfallen, zu dicke bleiben innen hell.*",
+              "action": "1 kg Karotten schälen, Enden abschneiden und in 1 cm dicke Scheiben schneiden (ergibt \\~800 g netto; sehr holzige Kerne dicker Karotten ggf. herausschneiden).",
+              "why": "Gleichmäßige 1-cm-Scheiben garen und bräunen einheitlich — zu dünne zerfallen, zu dicke bleiben innen hell.",
+              "ingredients": [
+                {
+                  "ref": "karotten",
+                  "amount": {
+                    "text": "1 kg Karotten",
+                    "value": 1.0,
+                    "unit": "kg"
+                  }
+                },
+                {
+                  "ref": "zwiebel",
+                  "amount": {
+                    "text": "1 Zwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "ingwer",
+                  "amount": {
+                    "text": "20 g Ingwer",
+                    "value": 20.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "natron",
+                  "amount": {
+                    "text": "4 g Natron",
+                    "value": 4.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "karotten-ansetzen",
+              "label": "2",
+              "heading": "**2. Karotten ansetzen (5 Min.)**",
+              "title": "Karotten ansetzen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "80 g Butter im Innentopf des Schnellkochtopfs auf Sauté-Stufe schmelzen (oder kurz in der Pfanne schmelzen und umfüllen). Die geschälten Karotten, die gewürfelte Zwiebel, 4 g Natron, 1 TL Salz und 100 ml Wasser zugeben und gründlich durchmischen, bis alle Scheiben mit Butter überzogen sind. *Die Butter schützt am Boden vor dem Anbrennen; wenig Wasser ist Absicht, denn je weniger Flüssigkeit, desto stärker bräunen die Karotten. Fallback: Kommt das Gerät nicht auf Druck oder meldet Anbrennen, 50 ml Wasser nachgießen, umrühren und neu starten.*\n\n> **Natron-Grenze:** Wirklich **nur 4 g (0,5 %)** auf 800 g Netto-Karotten. Niemals gehäuft aus dem Löffel kippen — zu viel Natron gibt einen dauerhaft seifigen Nachgeschmack.",
+              "action": "80 g Butter im Innentopf des Schnellkochtopfs auf Sauté-Stufe schmelzen (oder kurz in der Pfanne schmelzen und umfüllen).",
+              "limits": [
+                "nur 4 g (0,5 %)"
+              ],
+              "cues": [
+                "bis alle Scheiben mit Butter überzogen sind"
+              ],
+              "ingredients": [
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "80 g Butter",
+                    "value": 80.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "natron",
+                  "amount": {
+                    "text": "4 g Natron",
+                    "value": 4.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "100 ml Wasser",
+                    "value": 100.0,
+                    "unit": "ml"
+                  }
+                }
+              ],
+              "meta": "*nach Karotten vorbereiten*",
+              "attention": "active",
+              "after": [
+                "step:karotten-vorbereiten"
+              ]
+            },
+            {
+              "id": "druckgaren",
+              "label": "3",
+              "heading": "**3. Druckgaren (35 Min., passiv)**",
+              "title": "Druckgaren",
+              "duration": {
+                "typical": "PT35M",
+                "source": "35 Min."
+              },
+              "attention": "passive",
+              "text": "Deckel schließen, Ventil verriegeln und **25 Min. auf Hochdruck** garen (zzgl. \\~10 Min. Druckaufbau). Danach den Druck zügig ablassen (**Quick Release**, Tuch locker über das Ventil legen, nicht die Hand). Deckel öffnen: Die Karotten sind weich, goldbraun bis bernsteinfarben und duften intensiv süßlich-karamellig. *Karotten schäumen nicht wie Bohnen — schnelles Ablassen stoppt das Weitergaren auf den Punkt.*",
+              "action": "Deckel schließen, Ventil verriegeln und **25 Min. auf Hochdruck** garen (zzgl. \\~10 Min.",
+              "limits": [
+                "25 Min. auf Hochdruck",
+                "Quick Release"
+              ],
+              "why": "Karotten schäumen nicht wie Bohnen — schnelles Ablassen stoppt das Weitergaren auf den Punkt.",
+              "timers": [
+                {
+                  "label": "Druckgaren",
+                  "duration": {
+                    "typical": "PT25M"
+                  },
+                  "text": "25 Min."
+                },
+                {
+                  "label": "Druckgaren",
+                  "duration": {
+                    "typical": "PT10M",
+                    "estimated": true
+                  },
+                  "text": "\\~10 Min."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Karotten ansetzen*",
+              "after": [
+                "step:karotten-ansetzen"
+              ]
+            },
+            {
+              "id": "kichererbsen-roesten",
+              "label": "4",
+              "heading": "**4. Kichererbsen rösten (5 Min. + 25 Min. passiv)**",
+              "title": "Kichererbsen rösten",
+              "duration": {
+                "typical": "PT30M",
+                "source": "5 Min. + 25 Min."
+              },
+              "attention": "passive",
+              "text": "Ofen auf 200 °C Umluft vorheizen (am besten gleich zu Beginn einschalten). 1 Dose Kichererbsen abgießen, abspülen, 2 EL davon ungeröstet fürs Kind beiseitelegen und den Rest auf einem sauberen Küchentuch **gründlich trocken tupfen** (lose Häutchen abreiben). Mit 1 EL Olivenöl, ½ TL Kreuzkümmel, ½ TL Paprika edelsüß und ¼ TL Salz mischen, einlagig auf ein Backblech mit Backpapier verteilen und 20–25 Min. rösten, nach 10 Min. einmal durchschütteln, bis sie außen knusprig und leicht aufgeplatzt sind. *Feuchte Kichererbsen dämpfen statt zu knuspern — Trockentupfen ist der ganze Trick.*",
+              "action": "Ofen auf 200 °C Umluft vorheizen (am besten gleich zu Beginn einschalten).",
+              "limits": [
+                "gründlich trocken tupfen"
+              ],
+              "why": "Feuchte Kichererbsen dämpfen statt zu knuspern — Trockentupfen ist der ganze Trick.",
+              "cues": [
+                "bis sie außen knusprig und leicht aufgeplatzt sind"
+              ],
+              "timers": [
+                {
+                  "label": "Kichererbsen rösten",
+                  "duration": {
+                    "min": "PT20M",
+                    "max": "PT25M"
+                  },
+                  "text": "20–25 Min."
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT10M",
+                    "source": "10 Min."
+                  },
+                  "text": "rösten, nach 10 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ofen",
+                  "text": "200 °C",
+                  "value": 200
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "kichererbsen",
+                  "amount": {
+                    "text": "1 Dose Kichererbsen",
+                    "value": 1.0,
+                    "unit": "Dose"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "1 EL Olivenöl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "kreuzkuemmel",
+                  "amount": {
+                    "text": "½ TL Kreuzkümmel",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "paprika",
+                  "amount": {
+                    "text": "½ TL Paprika edelsüß",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "¼ TL Salz",
+                    "value": 0.25,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Ofen 200 °C*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 200
+                }
+              ],
+              "after": []
+            },
+            {
+              "id": "kraeuter-joghurt",
+              "label": "5",
+              "heading": "**5. Kräuter-Joghurt (5 Min.)**",
+              "title": "Kräuter-Joghurt",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "½ Bund Petersilie (oder Koriander) fein hacken, ein paar ganze Blätter zum Anrichten beiseitelegen. 150 g griechischen Joghurt mit der Hälfte der gehackten Kräuter, 1 TL Zitronensaft, 1 EL Olivenöl, ¼ TL Salz und etwas Pfeffer glatt rühren. *Der kalte, säuerliche Joghurt ist der Gegenpol zur warmen, süß-nussigen Suppe.*",
+              "action": "½ Bund Petersilie (oder Koriander) fein hacken, ein paar ganze Blätter zum Anrichten beiseitelegen.",
+              "why": "Der kalte, säuerliche Joghurt ist der Gegenpol zur warmen, süß-nussigen Suppe.",
+              "ingredients": [
+                {
+                  "ref": "petersilie",
+                  "amount": {
+                    "text": "½ Bund Petersilie",
+                    "value": 0.5,
+                    "unit": "Bund"
+                  }
+                },
+                {
+                  "ref": "joghurt",
+                  "amount": {
+                    "text": "150 g griechischen Joghurt",
+                    "value": 150.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "1 TL Zitronensaft",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "1 EL Olivenöl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "¼ TL Salz",
+                    "value": 0.25,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "etwas Pfeffer"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "haehnchen-braten",
+              "label": "6",
+              "heading": "**6. Hähnchen braten (12 Min.)**",
+              "title": "Hähnchen braten",
+              "duration": {
+                "typical": "PT12M",
+                "source": "12 Min."
+              },
+              "text": "400 g Hähnchenbrustfilet trocken tupfen, quer in 2 cm breite Streifen schneiden und mit ½ TL Salz, ½ TL Kreuzkümmel, ½ TL Paprika edelsüß und etwas Pfeffer würzen. 1 EL neutrales Öl in der großen Pfanne stark erhitzen und die Streifen einlagig bei mittelhoher Hitze 3–4 Min. pro Seite goldbraun und vollständig durchbraten (**≥ 74 °C Kern**, kein Rosa). Auf einem vorgewärmten Teller abgedeckt ruhen lassen. *In Streifen statt als ganze Brust sind sie in 7 Min. rundum gebräunt und sicher durchgegart.*",
+              "action": "400 g Hähnchenbrustfilet trocken tupfen, quer in 2 cm breite Streifen schneiden und mit ½ TL Salz, ½ TL Kreuzkümmel, ½ TL Paprika edelsüß und etwas Pfeffer würzen.",
+              "limits": [
+                "≥ 74 °C Kern"
+              ],
+              "why": "In Streifen statt als ganze Brust sind sie in 7 Min. rundum gebräunt und sicher durchgegart.",
+              "timers": [
+                {
+                  "label": "Hähnchen braten",
+                  "duration": {
+                    "min": "PT3M",
+                    "max": "PT4M"
+                  },
+                  "text": "3–4 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "kern",
+                  "text": "≥ 74 °C",
+                  "value": 74
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "haehnchenbrustfilet",
+                  "amount": {
+                    "text": "400 g Hähnchenbrustfilet",
+                    "value": 400.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "kreuzkuemmel",
+                  "amount": {
+                    "text": "½ TL Kreuzkümmel",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "paprika",
+                  "amount": {
+                    "text": "½ TL Paprika edelsüß",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "1 EL neutrales Öl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "etwas Pfeffer"
+                  }
+                }
+              ],
+              "meta": "*nur Mit Hähnchen · letzte 15 Min. von Druckgaren · Herd · fertig bei ≥ 74 °C Kern*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei ≥ 74 °C Kern",
+                "value": 74
+              },
+              "only": [
+                "protein=mit-haehnchen"
+              ],
+              "attention": "active",
+              "start": {
+                "ref": "step:druckgaren:end",
+                "offset": {
+                  "min": "-PT15M",
+                  "max": "-PT15M",
+                  "source": "letzte 15 Min. von Druckgaren"
+                }
+              }
+            },
+            {
+              "id": "bruehe-erhitzen",
+              "label": "7",
+              "heading": "**7. Brühe erhitzen (7 Min.)**",
+              "title": "Brühe erhitzen",
+              "duration": {
+                "typical": "PT7M",
+                "source": "7 Min."
+              },
+              "text": "750 ml Hühnerbrühe (oder Gemüsebrühe) mit den 20 g geriebenem Ingwer im kleinen Topf aufkochen und zugedeckt 5 Min. leise simmern lassen. *Mitgekocht verliert der Ingwer seine rohe Schärfe (wichtig fürs Kind), und die Brühe geht heiß in den Topf — die schwache Sauté-Funktion des Geräts müsste sonst die ganze Suppe aufheizen.*",
+              "action": "750 ml Hühnerbrühe (oder Gemüsebrühe) mit den 20 g geriebenem Ingwer im kleinen Topf aufkochen und zugedeckt 5 Min. leise simmern lassen.",
+              "why": "Mitgekocht verliert der Ingwer seine rohe Schärfe (wichtig fürs Kind), und die Brühe geht heiß in den Topf — die schwache Sauté-Funktion des Geräts müsste sonst die ganze Suppe aufheizen.",
+              "timers": [
+                {
+                  "label": "Brühe erhitzen",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "huehnerbruehe",
+                  "amount": {
+                    "text": "750 ml Hühnerbrühe",
+                    "value": 750.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "ingwer",
+                  "amount": {
+                    "text": "20 g geriebenem Ingwer",
+                    "value": 20.0,
+                    "unit": "g"
+                  },
+                  "reuse": true
+                }
+              ],
+              "meta": "*letzte 10 Min. von Druckgaren · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "start": {
+                "ref": "step:druckgaren:end",
+                "offset": {
+                  "min": "-PT10M",
+                  "max": "-PT10M",
+                  "source": "letzte 10 Min. von Druckgaren"
+                }
+              }
+            },
+            {
+              "id": "suppe-puerieren",
+              "label": "8",
+              "heading": "**8. Suppe pürieren (6 Min.)**",
+              "title": "Suppe pürieren",
+              "duration": {
+                "typical": "PT6M",
+                "source": "6 Min."
+              },
+              "text": "Die heiße Ingwer-Brühe direkt zu den karamellisierten Karotten in den Innentopf gießen (oder alles in einen hohen Topf umfüllen, falls der Stabmixer im Innentopf spritzt) und mit dem Stabmixer **2–3 Min. sehr fein pürieren**, bis die Suppe glänzt wie Samt. Saft von 1 Zitrone (erst die Hälfte, dann nachschmecken) einrühren und mit Salz und Pfeffer kräftig abschmecken. *Wirkt die Suppe vor der Zitrone seltsam flach und süß? Normal — das Natron schluckt Säure; Zitrone löffelweise nachlegen, bis das Aroma aufspringt. Zu dick? Mit heißem Wasser oder Brühe auf fließende Cremesuppe einstellen.*\n\n> **Sterne-Option (+5 Min.):** Wer es perfekt seidig will, streicht die pürierte Suppe einmal durch das feine Sieb — im Alltag nicht nötig, bei Gästen ein sichtbarer Unterschied.",
+              "action": "Die heiße Ingwer-Brühe direkt zu den karamellisierten Karotten in den Innentopf gießen (oder alles in einen hohen Topf umfüllen, falls der Stabmixer im Innentopf spritzt) und mit dem Stabmixer **2–3 Min. sehr fein pürieren**, bis die Suppe glänzt wie Samt.",
+              "limits": [
+                "2–3 Min. sehr fein pürieren"
+              ],
+              "cues": [
+                "bis die Suppe glänzt wie Samt",
+                "bis das Aroma aufspringt"
+              ],
+              "timers": [
+                {
+                  "label": "Suppe pürieren",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "1 Zitrone",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*nach Druckgaren, Brühe erhitzen*",
+              "attention": "active",
+              "after": [
+                "step:druckgaren",
+                "step:bruehe-erhitzen"
+              ]
+            },
+            {
+              "id": "anrichten",
+              "label": "9",
+              "heading": "**9. Anrichten (3 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT3M",
+                "source": "3 Min."
+              },
+              "text": "Suppe in vorgewärmte tiefe Teller schöpfen. Einen großen Klecks Kräuter-Joghurt in die Mitte setzen, die gerösteten Kichererbsen (und bei *Mit Hähnchen* die Hähnchenstreifen) halb auf die Suppe, halb an den Rand legen. Mit den restlichen Kräutern bestreuen, 1 Zitrone in Spalten und optional ein paar Tropfen Chiliöl für die Erwachsenen auf den Tisch stellen.",
+              "action": "Suppe in vorgewärmte tiefe Teller schöpfen.",
+              "ingredients": [
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "1 Zitrone",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*nach Suppe pürieren, Kichererbsen rösten, Kräuter-Joghurt, Hähnchen braten*",
+              "attention": "active",
+              "after": [
+                "step:suppe-puerieren",
+                "step:kichererbsen-roesten",
+                "step:kraeuter-joghurt",
+                "step:haehnchen-braten"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "kochtag",
+            "text": "Ofen vorheizen · Karotten vorbereiten",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT65M"
+            },
+            "source": "T−1:05",
+            "steps": [
+              "karotten-vorbereiten"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Karotten ansetzen, Druckgaren starten",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT53M"
+            },
+            "source": "T−0:53",
+            "steps": [
+              "karotten-ansetzen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Kichererbsen rösten",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT45M"
+            },
+            "source": "T−0:45",
+            "steps": [
+              "kichererbsen-roesten"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Kräuter-Joghurt",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT35M"
+            },
+            "source": "T−0:35",
+            "steps": [
+              "kraeuter-joghurt"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Hähnchen braten *(nur Mit Hähnchen)*",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT25M"
+            },
+            "source": "T−0:25",
+            "steps": [
+              "haehnchen-braten"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Brühe erhitzen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT20M"
+            },
+            "source": "T−0:20",
+            "steps": [
+              "bruehe-erhitzen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Druck ablassen, Suppe pürieren",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT12M"
+            },
+            "source": "T−0:12",
+            "steps": [
+              "suppe-puerieren"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Anrichten",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT3M"
+            },
+            "source": "T−0:03",
+            "steps": [
+              "anrichten"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Mild und süßlich by design:** kein Chili, kein roher Knoblauch — erfahrungsgemäß eine der leichtesten Gemüsesuppen für Dreijährige.\n- **Ingwer:** 20 g, 5 Min. in der Brühe mitgekocht, sind aromatisch und nicht mehr scharf; bei sehr empfindlichem Kind auf 10 g gehen.\n- **Kichererbsen:** Hart geröstete, runde Kichererbsen sind für Dreijährige ein Verschluck-Risiko — das Kind bekommt die 2 EL weichen, ungerösteten aus Schritt 4 (oder geröstete grob zerdrückt).\n- **Teller fürs Kind:** Suppe lauwarm (nicht kochend), weiche Kichererbsen und Hähnchenstreifen getrennt daneben zum Picken/Tunken, 1 Klecks Joghurt.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "Geprüft gegen den [Leitfaden](/schwangerschaft/leitfaden.md):\n\n- **Sicherheit:** Alle Zutaten sind vollständig durchgegart (Hähnchen ≥ 74 °C Kern, Suppe gekocht), Joghurt aus dem Kühlregal ist pasteurisiert, kein Alkohol, kein rohes Ei.\n- **GDM — ehrliche Einordnung:** Gekochte, pürierte Karotten haben einen deutlich höheren glykämischen Index als rohe Karotten oder Linsen (gekochte Karotten GI \\~35–49, püriert schneller verfügbar; 200 g Karotten liefern \\~14–16 g KH). Mit ¼ Dose Kichererbsen (\\~9 g KH, niedriger GI) und Joghurt (\\~2 g KH) liegt eine Schüssel bei **\\~25–28 g KH**.\n- **Deshalb ist *Mit Hähnchen* der Default:** \\~100 g Hähnchenbrust (\\~24 g Protein) + Joghurt + Kichererbsen + 20 g Butter in der Suppe bremsen die Blutzuckerspitze spürbar ab. Wer vegetarisch isst, sollte 1–2 hartgekochte Eier oder 80 g gebratenen Halloumi/Feta (pasteurisiert) ergänzen — nicht nur Brot dazu.\n- **Kein Weißbrot dazu** (wenn Brot gewünscht: höchstens ½ [Vollkornbrötchen](/backen/vollkornbroetchen.md)). Nach dem Essen ein Spaziergang; beim ersten Mal messen.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Schnellkochtopf-Zeit kalibrieren:** Falls die Karotten nach 25 Min. im eigenen No-Name-Gerät zwar weich, aber noch hell-orange statt goldbraun bis bernsteinfarben sind, beim nächsten Mal auf **30 Min.** gehen (bei kleinerem Druck läuft die Maillard-Reaktion langsamer).\n- **Kräuteröl-Upgrade:** Wer vom Menü oder Drill noch blanchiertes Kräuteröl aus den [Mini-Projekten](/technik/mini-projekte.md) im Kühlschrank hat, gibt 1 TL davon in Kreisen auf den Teller — leuchtendes Grün auf tiefem Orange ist maximaler Kontrast.\n- **Reste:** Suppe hält gekühlt 3 Tage (Schwangerschaft: 2 Tage, einmal sprudelnd aufkochen) und friert hervorragend ein. Kichererbsen separat bei Raumtemperatur lagern — in der Suppe werden sie weich.",
+      "tags": [
+        "notizen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "- **0,5 % Natron, Butter-Coating, Hochdruck-Karamellisierung:** Nathan Myhrvold & Maxime Bilet, *Modernist Cuisine at Home* — *Caramelized Carrot Soup* (500 g Karotten, 113 g ungesalzene Butter, 30 g Wasser, 0,5 % Natron → pH \\~7,5, 20 Min. bei \\~120 °C, dann Karottensaft; [modernistcuisine.com](https://modernistcuisine.com/recipes/caramelized-carrot-soup-no-centrifuge-necessary/), Mengen dort in der Rezeptkarte als Bild).\n- **Übertragung auf den Elektro-Schnellkochtopf:** Höhere Wassermenge (100 ml statt \\~50 ml) gegen Anbrennmeldung im 6-L-Gerät und +5 Min. Hochdruck (25 Min.) wegen des etwas geringeren Betriebsdrucks elektrischer Geräte (\\~11–12 psi statt 15 psi — analog zur Schnellkochtopf-Anpassung im [Dal-Baukasten](/schwangerschaft/dal-baukasten.md)).\n- **Brühe + Zitrone statt Karottensaft:** Bewusste Alltags-Vereinfachung für REWE-/Aldi-Zutaten ohne Entsafter; Zitrone gleicht die pH-Erhöhung durch das Natron aus.",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-11-20T14:28:09Z",
+    "sourceHash": "884cdeb224e300d7",
+    "select": {
+      "protein": "mit-haehnchen"
+    },
+    "quantities": [
+      {
+        "ingredient": "karotten",
+        "total": {
+          "text": "1000 g",
+          "value": 1000.0,
+          "max": 1000.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 kg Karotten"
+        }
+      },
+      {
+        "ingredient": "zwiebel",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Zwiebel"
+        }
+      },
+      {
+        "ingredient": "ingwer",
+        "total": {
+          "text": "20 g",
+          "value": 20.0,
+          "max": 20.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "20 g Ingwer"
+        }
+      },
+      {
+        "ingredient": "zitronen",
+        "total": {
+          "text": "2 + 1 TL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "main": "1 TL Zitronensaft + 1 Zitrone + 1 Zitrone"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "petersilie",
+        "total": {
+          "text": "½ Bund",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "Bund",
+          "approx": false
+        },
+        "perTask": {
+          "main": "½ Bund Petersilie"
+        }
+      },
+      {
+        "ingredient": "haehnchenbrustfilet",
+        "total": {
+          "text": "400 g",
+          "value": 400.0,
+          "max": 400.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "400 g Hähnchenbrustfilet"
+        }
+      },
+      {
+        "ingredient": "butter",
+        "total": {
+          "text": "80 g",
+          "value": 80.0,
+          "max": 80.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "80 g Butter"
+        }
+      },
+      {
+        "ingredient": "joghurt",
+        "total": {
+          "text": "150 g",
+          "value": 150.0,
+          "max": 150.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "150 g griechischen Joghurt"
+        }
+      },
+      {
+        "ingredient": "kichererbsen",
+        "total": {
+          "text": "1 Dose",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Dose",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Dose Kichererbsen"
+        }
+      },
+      {
+        "ingredient": "huehnerbruehe",
+        "total": {
+          "text": "750 ml",
+          "value": 750.0,
+          "max": 750.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "750 ml Hühnerbrühe"
+        }
+      },
+      {
+        "ingredient": "natron",
+        "total": {
+          "text": "8 g",
+          "value": 8.0,
+          "max": 8.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "4 g Natron + 4 g Natron"
+        }
+      },
+      {
+        "ingredient": "kreuzkuemmel",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "½ TL Kreuzkümmel + ½ TL Kreuzkümmel"
+        }
+      },
+      {
+        "ingredient": "paprika",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "½ TL Paprika edelsüß + ½ TL Paprika edelsüß"
+        }
+      },
+      {
+        "ingredient": "olivenoel",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 EL Olivenöl + 1 EL Olivenöl"
+        }
+      },
+      {
+        "ingredient": "oel",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 EL neutrales Öl"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "2 TL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 TL Salz + ¼ TL Salz + ¼ TL Salz + ½ TL Salz"
+        }
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": ""
+        },
+        "perTask": {},
+        "unitless": [
+          "etwas Pfeffer",
+          "etwas Pfeffer"
+        ]
+      },
+      {
+        "ingredient": "chilioel",
+        "total": {
+          "text": ""
+        },
+        "perTask": {}
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "100 ml",
+          "value": 100.0,
+          "max": 100.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "100 ml Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "Aldi / REWE",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "karotten",
+            "name": "Karotten",
+            "need": {
+              "text": "1000 g",
+              "value": 1000.0,
+              "max": 1000.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "1000 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 kg"
+            },
+            "note": "ergibt \\~800 g geschält"
+          },
+          {
+            "ingredient": "zwiebel",
+            "name": "Zwiebel",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "\\~120 g"
+          },
+          {
+            "ingredient": "ingwer",
+            "name": "Ingwer",
+            "need": {
+              "text": "20 g",
+              "value": 20.0,
+              "max": 20.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "20 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 Stück"
+            },
+            "note": "\\~20 g"
+          },
+          {
+            "ingredient": "zitronen",
+            "name": "Zitronen",
+            "need": {
+              "text": "2 + 1 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "2 + 1 TL",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "1 Saft in die Suppe, 1 Spalten zum Servieren und Joghurt"
+          },
+          {
+            "ingredient": "petersilie",
+            "name": "glatte Petersilie oder Koriander",
+            "need": {
+              "text": "½ Bund",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Bund",
+              "approx": false
+            },
+            "display": "½ Bund",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            },
+            "note": "für Joghurt und Garnitur"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "haehnchenbrustfilet",
+            "name": "Hähnchenbrustfilet",
+            "need": {
+              "text": "400 g",
+              "value": 400.0,
+              "max": 400.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "400 g",
+            "inStock": false,
+            "buy": {
+              "text": "400 g"
+            }
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "butter",
+            "name": "Butter",
+            "need": {
+              "text": "80 g",
+              "value": 80.0,
+              "max": 80.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "80 g",
+            "inStock": false,
+            "buy": {
+              "text": "80 g"
+            }
+          },
+          {
+            "ingredient": "joghurt",
+            "name": "griechischer Joghurt",
+            "need": {
+              "text": "150 g",
+              "value": 150.0,
+              "max": 150.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "150 g",
+            "inStock": false,
+            "buy": {
+              "text": "150 g"
+            },
+            "note": "10 % Fett, pasteurisiert"
+          }
+        ]
+      },
+      {
+        "store": "Aldi / REWE",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "kichererbsen",
+            "name": "Kichererbsen",
+            "need": {
+              "text": "1 Dose",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Dose",
+              "approx": false
+            },
+            "display": "1 Dose",
+            "inStock": false,
+            "buy": {
+              "text": "1 Dose"
+            },
+            "note": "400 g, \\~240 g abgetropft"
+          },
+          {
+            "ingredient": "huehnerbruehe",
+            "name": "Hühnerbrühe oder Gemüsebrühe",
+            "need": {
+              "text": "750 ml",
+              "value": 750.0,
+              "max": 750.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "750 ml",
+            "inStock": false,
+            "buy": {
+              "text": "750 ml"
+            },
+            "note": "Vorrat/TK oder 2 Gläser Fond à 400 ml"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "natron",
+            "name": "Natron",
+            "need": {
+              "text": "8 g",
+              "value": 8.0,
+              "max": 8.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "8 g",
+            "inStock": false,
+            "pantry": true,
+            "note": "reines Natriumhydrogencarbonat, kein Backpulver — Verbrauch 4 g"
+          },
+          {
+            "ingredient": "kreuzkuemmel",
+            "name": "Kreuzkümmel, gemahlen",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "paprika",
+            "name": "Paprika edelsüß",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "olivenoel",
+            "name": "Olivenöl",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "oel",
+            "name": "Neutrales Öl",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "2 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "2 TL",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Schwarzer Pfeffer",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "chilioel",
+            "name": "Mildes Chiliöl",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "optional": true,
+            "pantry": true,
+            "note": "für die Erwachsenen am Tisch"
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "100 ml",
+              "value": 100.0,
+              "max": 100.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "100 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "key": "protein=vegetarisch",
+        "select": {
+          "protein": "vegetarisch"
+        },
+        "quantities": [
+          {
+            "ingredient": "karotten",
+            "total": {
+              "text": "1000 g",
+              "value": 1000.0,
+              "max": 1000.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 kg Karotten"
+            }
+          },
+          {
+            "ingredient": "zwiebel",
+            "total": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 Zwiebel"
+            }
+          },
+          {
+            "ingredient": "ingwer",
+            "total": {
+              "text": "20 g",
+              "value": 20.0,
+              "max": 20.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "20 g Ingwer"
+            }
+          },
+          {
+            "ingredient": "zitronen",
+            "total": {
+              "text": "2 + 1 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
+            },
+            "perTask": {
+              "main": "1 TL Zitronensaft + 1 Zitrone + 1 Zitrone"
+            },
+            "unitMixed": true
+          },
+          {
+            "ingredient": "petersilie",
+            "total": {
+              "text": "½ Bund",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Bund",
+              "approx": false
+            },
+            "perTask": {
+              "main": "½ Bund Petersilie"
+            }
+          },
+          {
+            "ingredient": "butter",
+            "total": {
+              "text": "80 g",
+              "value": 80.0,
+              "max": 80.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "80 g Butter"
+            }
+          },
+          {
+            "ingredient": "joghurt",
+            "total": {
+              "text": "150 g",
+              "value": 150.0,
+              "max": 150.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "150 g griechischen Joghurt"
+            }
+          },
+          {
+            "ingredient": "kichererbsen",
+            "total": {
+              "text": "1 Dose",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Dose",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 Dose Kichererbsen"
+            }
+          },
+          {
+            "ingredient": "huehnerbruehe",
+            "total": {
+              "text": "750 ml",
+              "value": 750.0,
+              "max": 750.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "perTask": {
+              "main": "750 ml Hühnerbrühe"
+            }
+          },
+          {
+            "ingredient": "natron",
+            "total": {
+              "text": "8 g",
+              "value": 8.0,
+              "max": 8.0,
+              "unit": "g",
+              "approx": false
+            },
+            "perTask": {
+              "main": "4 g Natron + 4 g Natron"
+            }
+          },
+          {
+            "ingredient": "kreuzkuemmel",
+            "total": {
+              "text": "½ TL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "main": "½ TL Kreuzkümmel"
+            }
+          },
+          {
+            "ingredient": "paprika",
+            "total": {
+              "text": "½ TL",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "main": "½ TL Paprika edelsüß"
+            }
+          },
+          {
+            "ingredient": "olivenoel",
+            "total": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 EL Olivenöl + 1 EL Olivenöl"
+            }
+          },
+          {
+            "ingredient": "salz",
+            "total": {
+              "text": "1½ TL",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "perTask": {
+              "main": "1 TL Salz + ¼ TL Salz + ¼ TL Salz"
+            }
+          },
+          {
+            "ingredient": "pfeffer",
+            "total": {
+              "text": ""
+            },
+            "perTask": {},
+            "unitless": [
+              "etwas Pfeffer"
+            ]
+          },
+          {
+            "ingredient": "chilioel",
+            "total": {
+              "text": ""
+            },
+            "perTask": {}
+          },
+          {
+            "ingredient": "wasser",
+            "total": {
+              "text": "100 ml",
+              "value": 100.0,
+              "max": 100.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "perTask": {
+              "main": "100 ml Wasser"
+            }
+          }
+        ],
+        "shopping": [
+          {
+            "store": "Aldi / REWE",
+            "group": "Obst & Gemüse",
+            "items": [
+              {
+                "ingredient": "karotten",
+                "name": "Karotten",
+                "need": {
+                  "text": "1000 g",
+                  "value": 1000.0,
+                  "max": 1000.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "1000 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 kg"
+                },
+                "note": "ergibt \\~800 g geschält"
+              },
+              {
+                "ingredient": "zwiebel",
+                "name": "Zwiebel",
+                "need": {
+                  "text": "1",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Stück",
+                  "approx": false
+                },
+                "display": "1",
+                "inStock": false,
+                "buy": {
+                  "text": "1"
+                },
+                "note": "\\~120 g"
+              },
+              {
+                "ingredient": "ingwer",
+                "name": "Ingwer",
+                "need": {
+                  "text": "20 g",
+                  "value": 20.0,
+                  "max": 20.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "20 g",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Stück"
+                },
+                "note": "\\~20 g"
+              },
+              {
+                "ingredient": "zitronen",
+                "name": "Zitronen",
+                "need": {
+                  "text": "2 + 1 TL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "Stück",
+                  "approx": false,
+                  "plus": [
+                    {
+                      "text": "1 TL",
+                      "value": 1.0,
+                      "max": 1.0,
+                      "unit": "TL",
+                      "approx": false
+                    }
+                  ]
+                },
+                "display": "2 + 1 TL",
+                "inStock": false,
+                "buy": {
+                  "text": "2"
+                },
+                "note": "1 Saft in die Suppe, 1 Spalten zum Servieren und Joghurt"
+              },
+              {
+                "ingredient": "petersilie",
+                "name": "glatte Petersilie oder Koriander",
+                "need": {
+                  "text": "½ Bund",
+                  "value": 0.5,
+                  "max": 0.5,
+                  "unit": "Bund",
+                  "approx": false
+                },
+                "display": "½ Bund",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Bund"
+                },
+                "note": "für Joghurt und Garnitur"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Milchprodukte & Eier",
+            "items": [
+              {
+                "ingredient": "butter",
+                "name": "Butter",
+                "need": {
+                  "text": "80 g",
+                  "value": 80.0,
+                  "max": 80.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "80 g",
+                "inStock": false,
+                "buy": {
+                  "text": "80 g"
+                }
+              },
+              {
+                "ingredient": "joghurt",
+                "name": "griechischer Joghurt",
+                "need": {
+                  "text": "150 g",
+                  "value": 150.0,
+                  "max": 150.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "150 g",
+                "inStock": false,
+                "buy": {
+                  "text": "150 g"
+                },
+                "note": "10 % Fett, pasteurisiert"
+              }
+            ]
+          },
+          {
+            "store": "Aldi / REWE",
+            "group": "Trockenwaren",
+            "items": [
+              {
+                "ingredient": "kichererbsen",
+                "name": "Kichererbsen",
+                "need": {
+                  "text": "1 Dose",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Dose",
+                  "approx": false
+                },
+                "display": "1 Dose",
+                "inStock": false,
+                "buy": {
+                  "text": "1 Dose"
+                },
+                "note": "400 g, \\~240 g abgetropft"
+              },
+              {
+                "ingredient": "huehnerbruehe",
+                "name": "Hühnerbrühe oder Gemüsebrühe",
+                "need": {
+                  "text": "750 ml",
+                  "value": 750.0,
+                  "max": 750.0,
+                  "unit": "ml",
+                  "approx": false
+                },
+                "display": "750 ml",
+                "inStock": false,
+                "buy": {
+                  "text": "750 ml"
+                },
+                "note": "Vorrat/TK oder 2 Gläser Fond à 400 ml"
+              }
+            ]
+          },
+          {
+            "store": "Vorrat",
+            "group": null,
+            "items": [
+              {
+                "ingredient": "natron",
+                "name": "Natron",
+                "need": {
+                  "text": "8 g",
+                  "value": 8.0,
+                  "max": 8.0,
+                  "unit": "g",
+                  "approx": false
+                },
+                "display": "8 g",
+                "inStock": false,
+                "pantry": true,
+                "note": "reines Natriumhydrogencarbonat, kein Backpulver — Verbrauch 4 g"
+              },
+              {
+                "ingredient": "kreuzkuemmel",
+                "name": "Kreuzkümmel, gemahlen",
+                "need": {
+                  "text": "½ TL",
+                  "value": 0.5,
+                  "max": 0.5,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "½ TL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "paprika",
+                "name": "Paprika edelsüß",
+                "need": {
+                  "text": "½ TL",
+                  "value": 0.5,
+                  "max": 0.5,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "½ TL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "olivenoel",
+                "name": "Olivenöl",
+                "need": {
+                  "text": "2 EL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                "display": "2 EL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "salz",
+                "name": "Salz",
+                "need": {
+                  "text": "1½ TL",
+                  "value": 1.5,
+                  "max": 1.5,
+                  "unit": "TL",
+                  "approx": false
+                },
+                "display": "1½ TL",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "pfeffer",
+                "name": "Schwarzer Pfeffer",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "pantry": true
+              },
+              {
+                "ingredient": "chilioel",
+                "name": "Mildes Chiliöl",
+                "need": {
+                  "text": ""
+                },
+                "display": "",
+                "inStock": false,
+                "optional": true,
+                "pantry": true,
+                "note": "für die Erwachsenen am Tisch"
+              },
+              {
+                "ingredient": "wasser",
+                "name": "Wasser",
+                "need": {
+                  "text": "100 ml",
+                  "value": 100.0,
+                  "max": 100.0,
+                  "unit": "ml",
+                  "approx": false
+                },
+                "display": "100 ml",
+                "inStock": false,
+                "pantry": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -66,6 +66,31 @@ und fliegt hier raus. Ausgearbeitete und gekochte Rezepte stehen in der Sidebar
     Kind kann direkt mitessen. Optional dazu: Sauerteig-/Weißbrot statt
     Bread Bowl.
 
+12. **Chinesisches „Velveting“ + Dry-Frying (*Gān Biān*)** — Alltagsessen mit
+    simplen REWE-/Aldi-Zutaten: Hähnchenbrust oder Schweinefilet kurz in Natron
+    (\~½ TL/500 g, 15 Min.) + Stärke marinieren — hebt den pH-Wert, sodass selbst
+    mageres Fleisch bei 75 °C Kern zart und saftig bleibt (Kenji López-Alt).
+    Dazu grüne Bohnen trocken-heiß braten (*Dry-Frying*, Fuchsia Dunlop), bis
+    sie blasenwerfend-runzlig sind, mit Knoblauch, Ingwer und Sojasauce. Mild
+    by design (Chiliöl am Tisch); Kind liebt Sojasauce.
+
+13. **Öl-pochierter Fisch (Fisch-Confit)** — Alltagsessen (\~15 Min. aktiv):
+    Lachs oder Kabeljau (REWE Center / Buhara) in aromatisiertem Olivenöl
+    (Zitronenschale, Fenchelsamen, Thymian, Knoblauch) bei 70–80 °C im Ofen
+    oder Topf langsam auf **exakt 63 °C Kern** ziehen (Thermometer!). Selbst
+    komplett durchgegart bleibt die Textur butterzart statt faserig; das
+    aromatisierte Öl wird direkt zur Vinaigrette für einen warmen Linsen- oder
+    Bohnensalat.
+
+14. **Cajun Gumbo — dunkle Roux („Schokoladen-Roux“)** — Wochenendprojekt:
+    Mehl und Öl 30–45 Min. unter Rühren (Herd-Roux nach Paul Prudhomme /
+    Isaac Toups; entspannter im Ofen nach Alton Brown) bis zur Farbe von Zartbitterschokolade rösten (verliert
+    Bindekraft, gewinnt tiefes nussig-rauchiges Aroma). Mit „Holy Trinity“
+    (Zwiebel, Sellerie, grüne Paprika), eigener Hühnerbrühe (14L-Topf oder
+    Schnellkochtopf), Hähnchenkeulen und durchgegarter geräucherter Wurst
+    (Andouille-Ersatz: geräucherte Krakauer/Kabanossi/Mettwurst). 100 %
+    REWE/Aldi (Okra optional); Cayenne/Hot Sauce erst nach der Kinder-Abzweigung.
+
 ## Backlog — Meal Prep
 
 Rahmen wie im [Burrito-Baukasten](/mealprep/burrito-baukasten.md): 3 Portionen, gekühlt
@@ -98,6 +123,22 @@ sofern nicht anders vermerkt. Wird eine Sorte konkret → 🚧-Stub in `eis/`.
    wenig Zucker/Erythrit; einzige Sorte, die als GDM-taugliches Dessert
    (Backlog Schwangerschaft: „Dessert ohne Zuckerlast“) durchgehen könnte.
 
+## Backlog — Backen
+
+Wird eine Idee konkret → 🚧-Stub in `backen/`. Nutzt u. a. die neue Bosch MUM58W20
+(ab \~1 kg Teig).
+
+1. **High-Hydration Focaccia (80 % Wasser, 48 Std. kalt)** — kalte Langzeitgare,
+   Stretch & Fold, und vor dem Backen eine Wasser-Olivenöl-Salz-Emulsion
+   (Salzlake nach Samin Nosrat) in die Fingermulden gießen → glasig-krosse
+   Kruste, sehr offene Krume. Nur Mehl, Wasser, Hefe, Salz, Olivenöl; ideal
+   als Beilage zu Mezze oder Suppen.
+2. **Rough Puff / Blitzblätterteig für herzhafte Quiche oder Galette** —
+   Wochenend-Laminierprojekt (kalte Butterstücke einarbeiten, 4–6 Touren falten
+   und kühlen — deutlich entspannter als klassischer Tourierteig). Ziel-Füllung:
+   **Spinat-Feta** oder **Lachs** (z. B. mit Lauch/Dill) auf dünnem Boden mit
+   viel Ei-Sahne-Guss.
+
 ## Backlog — Schwangerschaft & Gestationsdiabetes
 
 Filter und Regeln: [Leitfaden](/schwangerschaft/leitfaden.md). Kurz: nicht
@@ -108,9 +149,13 @@ Quecksilber-Fische. Wird eine Idee konkret → 🚧-Stub in `schwangerschaft/`.
 **Aus dem allgemeinen Backlog hierher passend:** *Qing Zheng Yu*
 (Wolfsbarsch/Dorade sind unkritisch; Shaoxing weglassen), *Blanquette
 de Veau* (Liaison auf ≥ 75 °C ziehen, kein Wein nötig), *Adobo*
-(Reis klein). **Nicht geeignet:** Vitello tonnato (Thunfisch + rohes Ei
+(Reis klein), *Velveting + Dry-Frying* (Fleisch auf 75 °C durch, kaum KH),
+*Öl-pochierter Fisch* (Lachs/Kabeljau unkritisch, exakt 63 °C Kern, 0 g KH),
+*Cajun Gumbo* (kein Alkohol, Wurst durchgegart, Reis klein), *Rough-Puff-Quiche
+mit Spinat-Feta oder Lachs* (pasteurisierter Feta, durchgegart, dünner Boden +
+viel Ei — Portion testen). **Nicht geeignet:** Vitello tonnato (Thunfisch + rohes Ei
 in der Mayo — zwei Treffer), Ceviche (roher Fisch), Hainanese
-Chicken Rice (Reis ist das Gericht).
+Chicken Rice (Reis ist das Gericht), *Focaccia* (Weißmehl-KH-Träger).
 
 1. **Mizutaki (Hakata-Style Hühner-Hotpot)** — Hähnchenteile 2–3 Std. zu einer
    milchig-weißen, kollagenreichen Brühe gekocht (14L-Topf, Selgros-Karkassen +

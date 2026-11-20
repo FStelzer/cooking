@@ -12,6 +12,7 @@
   - [Amatriciana — Guanciale, San-Marzano-Tomaten, Pecorino (3 Portionen)](/gerichte/amatriciana.md)
   - [✅ Bò lúc lắc — vietnamesisches „Shaking Beef" mit Brunnenkresse-Salat (4 Portionen)](/gerichte/bo-luc-lac.md)
   - [Bouillabaisse mit Fenchel-Orange-Salat (2 Erwachsene + Kind)](/gerichte/bouillabaisse.md)
+  - [Brothy Beans — weiße Bohnen in Parmesan-Kräuter-Brühe mit Blattgemüse (4 Portionen)](/gerichte/brothy-beans.md)
   - [✅ Bulgogi — koreanisches „Feuerfleisch" mit Salat-Wraps (4 Portionen)](/gerichte/bulgogi.md)
   - [✅ Bún chả (Hanoi-Style) — gegrilltes Schweinefleisch in warmem Nước chấm (4 Portionen)](/gerichte/bun-cha.md)
   - [✅ Cá kho tộ — vietnamesischer Karamell-Schmorfisch (4 Portionen)](/gerichte/ca-kho-to.md)
@@ -21,6 +22,7 @@
   - [✅ Cochinita Pibil — Schweineschulter in Achiote-Orangen-Marinade (4 Portionen + Reste)](/gerichte/cochinita-pibil.md)
   - [Hummerbisque (4 Portionen als Vorspeise)](/gerichte/hummerbisque.md)
   - [✅ İmam bayıldı — in Olivenöl geschmorte gefüllte Auberginen (4 Portionen)](/gerichte/imam-bayildi.md)
+  - [Druck-karamellisierte Karottensuppe — Natron-Maillard im Schnellkochtopf mit knusprigen Kichererbsen (4 Portionen)](/gerichte/karottensuppe-druckkaramellisiert.md)
   - [✅ Korean Fried Chicken — doppelt frittierte Flügel & Oberschenkel mit zwei Saucen (4 Portionen)](/gerichte/korean-fried-chicken.md)
   - [✅ Lamm-Kleftiko — im Päckchen geschmortes Lamm mit Kartoffeln (4 Portionen + Reste)](/gerichte/lamm-kleftiko.md)
   - [Massaman Curry — Hähnchenkeule, Kartoffeln, Erdnüsse, Paste von Grund auf (4 Portionen)](/gerichte/massaman-curry.md)
@@ -33,6 +35,7 @@
   - [Hähnchen-Shawarma, libanesisch — mit Toum, Tabbouleh und Batata harra (4 Portionen)](/gerichte/shawarma-libanesisch.md)
   - [Tafelspitz, sommerlich — mit Frittatensuppe und kalten Saucen (4 Portionen + Reste)](/gerichte/tafelspitz.md)
   - [✅ Thịt kho trứng — vietnamesisches Karamell-Schweinefleisch mit Eiern (4 Portionen)](/gerichte/thit-kho-trung.md)
+  - [Zhēng Dàn — chinesischer gedämpfter Eier-Custard mit knusprigem Schweinehack (3 Portionen)](/gerichte/zheng-dan.md)
 - **menues**
   - [✅ Degustationsmenü — Hochzeitstag (4 Personen)](/menues/menue-hochzeitstag.md)
 - **schwangerschaft**
