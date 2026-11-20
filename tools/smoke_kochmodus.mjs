@@ -114,35 +114,35 @@ try {
   // Menü: Plan-Ansicht (Phasen × Gänge), Gang-Gruppierung, Stub-Hinweis
   await page.goto(`http://127.0.0.1:${PORT}/kochmodus/?r=../menues/menue-november.json`);
   await page.waitForSelector(".gantt");
-  assert.equal(await page.locator(".gantt .ph:not(.corner)").count(), 16, "16 Phasen erwartet (Saison, T-2, T-1, Vorabend, 12 Uhrzeiten)");
+  assert.equal(await page.locator(".gantt .ph:not(.corner)").count(), 18, "18 Phasen erwartet (Saison, T-2, T-1, Vorabend, 14 Uhrzeiten)");
   assert.equal(await page.locator(".gantt .lane").count(), 5, "Menü + 4 Gänge");
-  assert.equal(await page.locator(".chip").count(), 56, "56 Zeitplan-Einträge");
+  assert.equal(await page.locator(".chip").count(), 61, "61 Zeitplan-Einträge");
   assert.equal(await page.locator(".chip.derived").count(), 0, "gebautes JSON: alle Einträge stehen im Markdown");
   await page.locator('.chip[data-open="gang-2-reduktion"]').click();
   await page.waitForSelector("#sheet.open");
-  assert.match(await page.locator("#sheet .lbl").innerText(), /Kaisergranat.*Beurre-blanc.*Schritt 2\.10/, "Nummer mit Gang-Präfix");
-  // Wischen im Plan folgt der Zeit: nach der Reduktion (17:40) kommt Sahne einkochen, nicht der nächste Gang-2-Chip von vorn
+  assert.match(await page.locator("#sheet .lbl").innerText(), /Kaisergranat.*Beurre-blanc.*Schritt 2\.9/, "Nummer mit Gang-Präfix");
+  // Wischen im Plan folgt der Zeit: nach der Reduktion (17:15) kommt Kalt abschmecken (Gang 1, 18:00), nicht der nächste Gang-2-Chip
   await page.click('#sheet [data-nav="1"]');
-  assert.match(await page.locator("#sheetTitle").innerText(), /Sahne einkochen/);
+  assert.match(await page.locator("#sheetTitle").innerText(), /Kalt abschmecken/);
   await page.click("#sheet .close");
   await page.click('button[data-view="kochen"]');
-  assert.equal(await page.locator(".phase").count(), 16, "16 Phasen in der Kochen-Ansicht");
-  assert.equal(await page.locator(".row[data-step]").count(), 62, "62 Schritte, jeder genau einmal im Ablauf");
+  assert.equal(await page.locator(".phase").count(), 18, "18 Phasen in der Kochen-Ansicht");
+  assert.equal(await page.locator(".row[data-step]").count(), 63, "63 Schritte, jeder genau einmal im Ablauf");
   // Reihenfolge: innerhalb jedes Gangs steigen die Nummern über den ganzen Ablauf
   const nums = (await page.locator(".phase .row[data-step] .t").allInnerTexts()).map((x) => x.match(/^(\d+)\.(\d+) /).slice(1).map(Number));
   for (const g of [1, 2, 3, 4]) { const xs = nums.filter((x) => x[0] === g).map((x) => x[1]); assert.deepEqual(xs, [...xs].sort((a, b) => a - b), `Gang ${g} läuft im Ablauf in Rezeptreihenfolge`); }
-  assert.equal(await page.locator(".row.plain").count(), 7, "7 reine Text-Einträge (Metzger, Dry-Brine, Weg B, Brot holen, Tischbutter, Ofen, Brot und Butter)");
+  assert.equal(await page.locator(".row.plain").count(), 11, "11 reine Text-Einträge (Metzger, Dry-Brine, Weg B, Brot holen, Tischbutter, Puffer, Ofen, Mango-Gel, Gäste, Brot und Butter, Bräter aus dem Ofen)");
   assert.equal(await page.locator('.phase:has(h2:text("Ohne Platz"))').count(), 0, "alle Schritte im Zeitplan platziert");
   const order = await page.locator(".phase h2").allInnerTexts();
   assert.deepEqual(order.slice(0, 4), ["Saison-Teil (erledigt 09/2026)", "T-2", "T-1", "Vorabend"], order.join(", "));
-  const g2 = page.locator('.phase:has(h2:text("19:20 Uhr — Gang 2")) .row[data-step]').first();
-  assert.match(await g2.innerText(), /^2\.13 Teller vorwärmen, Schwänze salzen\n19:20–19:22 · /, "Gang 2 beginnt mit Schritt 2.13, mit Uhrzeit");
-  assert.match(await page.locator("#serveSum").innerText(), /^Gang 1 19:00 · Gang 2 19:20 · Gang 3 19:50 · Gang 4 21:05 · Ende ca\. 21:17$/);
+  const g2 = page.locator('.phase:has(h2:text("19:25 Uhr — Gang 2")) .row[data-step]').first();
+  assert.match(await g2.innerText(), /^2\.13 Teller vorwärmen, Schwänze salzen\n19:25–19:27 · /, "Gang 2 beginnt mit Schritt 2.13, mit Uhrzeit");
+  assert.match(await page.locator("#serveSum").innerText(), /^Gang 1 19:00 · Gang 2 19:25 · Gang 3 20:00 · Gang 4 21:20 · Ende ca\. 21:31$/);
   assert.match(await page.locator('.phase:has(h2:text("T-1")) .span').innerText(), /aktive Arbeit/);
   // Essenszeit verstellen: alle Uhrzeiten wandern mit, die Wahl überlebt den Reload, ↺ stellt die Vorgabe wieder her
   await page.fill("#serveTime", "18:00"); await page.locator("#serveTime").blur();
-  assert.match(await page.locator("#serveSum").innerText(), /^Gang 1 18:00 · Gang 2 18:20 .* Ende ca\. 20:17$/);
-  assert.equal(await page.locator('.phase h2:text("18:20 Uhr — Gang 2")').count(), 1);
+  assert.match(await page.locator("#serveSum").innerText(), /^Gang 1 18:00 · Gang 2 18:25 .* Ende ca\. 20:31$/);
+  assert.equal(await page.locator('.phase h2:text("18:25 Uhr — Gang 2")').count(), 1);
   assert.equal(await page.locator('.phase h2:text("09:00 Uhr (9h vorher)")').count(), 1);
   await page.reload(); await page.waitForSelector(".gantt");
   assert.equal(await page.locator("#serveTime").inputValue(), "18:00", "Essenszeit überlebt Reload");
@@ -157,7 +157,7 @@ try {
   assert.equal(await page.locator(".course").count(), 4, "Reihenfolge-Wahl überlebt Reload");
   await page.click('button[data-order="ablauf"]');
   await page.click('button[data-view="einkauf"]');
-  assert.equal(await page.locator("ul.shop li").count(), 59, "59 Zutaten in der generierten Einkaufsliste");
+  assert.equal(await page.locator("ul.shop li").count(), 63, "63 Zutaten in der generierten Einkaufsliste");
   await page.click('button[data-view="lesen"]');
   assert.ok((await page.locator("#main h2").allInnerTexts()).includes("Rezepte"));
   // Varianten: Auswahl blendet Schritte ein/aus, tauscht Mengen, wechselt Einkauf und Zeitpläne, überlebt Reload
@@ -290,4 +290,4 @@ try {
   server.close();
 }
 if (errors.length) { console.log("Browser-Fehler:\n  " + errors.join("\n  ")); process.exit(1); }
-console.log(`Rauchtest ok: thit-kho (9 Schritte, Sheet, Notiz, Skalierung, Timer, Export, Einkauf, Lesen) + Menü (Plan 16×5, 56 Chips, 62 Schritte in Rezeptreihenfolge, Essenszeit verstellbar, 59 Posten) + Varianten (Brötchen: Ein-/Ausblenden, Mengen, Einkauf, Zeitpläne, Wischen durch alle Plan-Schritte) + App (Liste, zuletzt geöffnet, Schnell-Timer, Split, Vollbild + Zurück, offline, Auffrischen) + alle ${allCount} Rezepte laden`);
+console.log(`Rauchtest ok: thit-kho (9 Schritte, Sheet, Notiz, Skalierung, Timer, Export, Einkauf, Lesen) + Menü (Plan 18×5, 61 Chips, 63 Schritte in Rezeptreihenfolge, Essenszeit verstellbar, 63 Posten) + Varianten (Brötchen: Ein-/Ausblenden, Mengen, Einkauf, Zeitpläne, Wischen durch alle Plan-Schritte) + App (Liste, zuletzt geöffnet, Schnell-Timer, Split, Vollbild + Zurück, offline, Auffrischen) + alle ${allCount} Rezepte laden`);
