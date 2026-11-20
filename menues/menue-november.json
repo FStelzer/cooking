@@ -1176,10 +1176,19 @@
                         "source": "ca. 5 Min.",
                         "estimated": true
                       },
-                      "text": "Das gewürzte, kalte Tomatenwasser durch einen mit kaltem Wasser gespülten Kaffeefilter in ein gekühltes Kännchen laufen lassen — hält Worcestershire- Schwebstoffe und Pfeffer zurück, das Wasser ist wieder kristallklar. Zurück in den Kühlschrank. *Einmal filtern ersetzt das heikle Ausgießen „vom Sediment weg“ aus fünf Gläsern.*",
+                      "text": "Das gewürzte, kalte Tomatenwasser durch einen mit kaltem Wasser gespülten Kaffeefilter in ein gekühltes Kännchen laufen lassen — hält Worcestershire- Schwebstoffe und Pfeffer zurück, das Wasser ist wieder kristallklar. Zurück in den Kühlschrank. Parallel 15 ml Limettensaft durch einen zweiten, kleinen Kaffeefilter tropfen lassen und kalt stellen (für Schritt 11 — falls der Testlauf gezeigt hat, dass ungefilterter Saft trübt). *Einmal filtern ersetzt das heikle Ausgießen „vom Sediment weg“ aus fünf Gläsern.*",
                       "action": "Das gewürzte, kalte Tomatenwasser durch einen mit kaltem Wasser gespülten Kaffeefilter in ein gekühltes Kännchen laufen lassen — hält Worcestershire- Schwebstoffe und Pfeffer zurück, das Wasser ist wieder kristallklar.",
                       "why": "Einmal filtern ersetzt das heikle Ausgießen „vom Sediment weg“ aus fünf Gläsern.",
-                      "ingredients": [],
+                      "ingredients": [
+                        {
+                          "ref": "limetten",
+                          "amount": {
+                            "text": "15 ml Limettensaft",
+                            "value": 15.0,
+                            "unit": "ml"
+                          }
+                        }
+                      ],
                       "attention": "active"
                     },
                     {
@@ -1192,7 +1201,7 @@
                         "source": "ca. 2 Min.",
                         "estimated": true
                       },
-                      "text": "Kurz vor dem Ausgießen: 10 ml Limettensaft (durch das feine Sieb, ohne Fruchtfleisch) ins Kännchen rühren, abschmecken, ggf. auf max. 15 ml erhöhen (Bún-chả-Learning: Säure dominiert schnell — vorsichtig).\n\n> **Klarheit:** Frischer Limettensaft ist von Natur aus trüb, auch nach dem\n> Sieb — er kann das kristallklare Wasser leicht opalisieren lassen. Empfehlung:\n> den Saft vorher durch einen kleinen Kaffeefilter tropfen lassen (ein paar\n> Minuten, also schon beim Filtern in Schritt 10 ansetzen). Im Testlauf prüfen;\n> Alternativen: die leichte Trübung bewusst akzeptieren oder gegen klaren Verjus\n> plus einen Hauch Limetten-Zeste testen.",
+                      "text": "Kurz vor dem Ausgießen: 10 ml Limettensaft (durch das feine Sieb, ohne Fruchtfleisch) ins Kännchen rühren, abschmecken, ggf. auf max. 15 ml erhöhen (Bún-chả-Learning: Säure dominiert schnell — vorsichtig).\n\n> **Klarheit:** Frischer Limettensaft ist von Natur aus trüb, auch nach dem\n> Sieb — er kann das kristallklare Wasser leicht opalisieren lassen. Empfehlung:\n> den Saft vorher durch einen kleinen Kaffeefilter tropfen lassen (dauert ein\n> paar Minuten und passiert deshalb schon in Schritt 10). Im Testlauf prüfen;\n> Alternativen: die leichte Trübung bewusst akzeptieren oder gegen klaren Verjus\n> plus einen Hauch Limetten-Zeste testen.",
                       "action": "Kurz vor dem Ausgießen: 10 ml Limettensaft (durch das feine Sieb, ohne Fruchtfleisch) ins Kännchen rühren, abschmecken, ggf. auf max.",
                       "ingredients": [
                         {
@@ -2073,7 +2082,7 @@
                         "source": "ca. 2 Min.",
                         "estimated": true
                       },
-                      "text": "Teller aus dem **50–55 °C** warmen Ofen nehmen — handwarm, **nicht 80 °C**: Auf heißen Tellern bricht die Beurre blanc am Rand und der Kaisergranat gart nach. Schwänze **erst direkt vor dem Braten** salzen.",
+                      "text": "Teller aus dem **50–55 °C** warmen Ofen nehmen — handwarm, **nicht 80 °C**: Auf heißen Tellern bricht die Beurre blanc am Rand und der Kaisergranat gart nach.\n**Sofort danach den leeren Ofen auf 135 °C hochdrehen:** Er heizt vor, während gebraten und angerichtet wird, und der Bräter für Gang 3 kommt beim Servieren in den schon heißen Ofen. Schwänze **erst direkt vor dem Braten** salzen.",
                       "action": "Teller aus dem **50–55 °C** warmen Ofen nehmen — handwarm, **nicht 80 °C**: Auf heißen Tellern bricht die Beurre blanc am Rand und der Kaisergranat gart nach.",
                       "limits": [
                         "50–55 °C",
@@ -2091,6 +2100,11 @@
                           "kind": "halten",
                           "text": "80 °C",
                           "value": 80
+                        },
+                        {
+                          "kind": "ofen",
+                          "text": "135 °C",
+                          "value": 135
                         }
                       ],
                       "ingredients": [],
@@ -2235,14 +2249,14 @@
                         "source": "ca. 3 Min.",
                         "estimated": true
                       },
-                      "text": "Knapper Spiegel Beurre blanc (35–40 ml), 2 Schwänze (Bratseite oben) hineinsetzen. 3 Punkte Mango-Gel **neben/an den Rand des Spiegels** spritzen — im Saucenspiegel verlaufen sie. Wenige Schnittlauchspitzen anlegen. Sonst nichts. **Beim Hinaustragen:** Ofen auf 135 °C stellen und den zugedeckten Bräter mit den Backen hineinschieben (Gang 3, Schritt 20).",
+                      "text": "Knapper Spiegel Beurre blanc (35–40 ml), 2 Schwänze (Bratseite oben) hineinsetzen. 3 Punkte Mango-Gel **neben/an den Rand des Spiegels** spritzen — im Saucenspiegel verlaufen sie. Wenige Schnittlauchspitzen anlegen. Sonst nichts. **Beim Hinaustragen:** den zugedeckten Bräter mit den Backen in den auf 135 °C vorgeheizten Ofen schieben (Gang 3, Schritt 20).",
                       "action": "Knapper Spiegel Beurre blanc (35–40 ml), 2 Schwänze (Bratseite oben) hineinsetzen.",
                       "limits": [
                         "neben/an den Rand des Spiegels"
                       ],
                       "temps": [
                         {
-                          "kind": "ofen",
+                          "kind": "ziel",
                           "text": "135 °C",
                           "value": 135
                         }
@@ -3310,8 +3324,8 @@
                         "source": "25–30 Min."
                       },
                       "attention": "passive",
-                      "text": "**Direkt beim Servieren von Gang 2:** die Teller von Gang 2 sind aus dem Ofen, Ofen auf 135 °C stellen und den zugedeckten Bräter hineinschieben. Während Gang 2 gegessen wird, ziehen die Backen ohne Aufsicht durch. Zu Beginn von Gang 3 herausholen und in der dicksten Portion messen: **≥ 70 °C Kern** (Thermometer). Nach Thermometer, nicht nach Uhr: Das ist die Schwangerschafts-Grenze (Listerien nach Lagerung). Fehlen noch Grade, den Bräter zugedeckt auf die Bräterzone stellen und leise simmern, bis sie erreicht sind — erst dann glasieren. Danach den Ofen auf **65–70 °C** herunterstellen, die Tür 1–2 Min. offen lassen (er kommt von 135 °C) und die Hauptgangteller hineinstellen. *Im Ofen statt auf dem Herd: Eine 4–5 cm dicke Portion braucht im flachen Jus-Bad auf dem Herd eher 20–30 als 12–15 Min. — im Ofen passiert das nebenbei, und am Herd bleibt für Gang 3 nur noch das Glasieren.*",
-                      "action": "**Direkt beim Servieren von Gang 2:** die Teller von Gang 2 sind aus dem Ofen, Ofen auf 135 °C stellen und den zugedeckten Bräter hineinschieben.",
+                      "text": "**Direkt beim Servieren von Gang 2:** den zugedeckten Bräter in den Ofen schieben — er heizt seit dem Herausnehmen der Teller (Gang 2, Schritt 13) auf 135 °C vor. Während Gang 2 gegessen wird, ziehen die Backen ohne Aufsicht durch. Zu Beginn von Gang 3 herausholen und in der dicksten Portion messen: **≥ 70 °C Kern** (Thermometer). Nach Thermometer, nicht nach Uhr: Das ist die Schwangerschafts-Grenze (Listerien nach Lagerung). Fehlen noch Grade, den Bräter zugedeckt auf die Bräterzone stellen und leise simmern, bis sie erreicht sind — erst dann glasieren. Danach den Ofen auf **65–70 °C** herunterstellen, die Tür 1–2 Min. offen lassen (er kommt von 135 °C) und die Hauptgangteller hineinstellen. *Im Ofen statt auf dem Herd: Eine 4–5 cm dicke Portion braucht im flachen Jus-Bad auf dem Herd eher 20–30 als 12–15 Min. — im Ofen passiert das nebenbei, und am Herd bleibt für Gang 3 nur noch das Glasieren.*",
+                      "action": "**Direkt beim Servieren von Gang 2:** den zugedeckten Bräter in den Ofen schieben — er heizt seit dem Herausnehmen der Teller (Gang 2, Schritt 13) auf 135 °C vor.",
                       "limits": [
                         "≥ 70 °C Kern",
                         "65–70 °C"
@@ -3332,7 +3346,7 @@
                       ],
                       "temps": [
                         {
-                          "kind": "ofen",
+                          "kind": "ziel",
                           "text": "135 °C",
                           "value": 135
                         },
@@ -3538,7 +3552,7 @@
                           }
                         }
                       ],
-                      "meta": "*nach Backen temperieren · 2 Pfannen*",
+                      "meta": "*nach Backen durchwärmen · 2 Pfannen*",
                       "claims": [
                         {
                           "resource": "hob",
@@ -3547,7 +3561,7 @@
                       ],
                       "attention": "attended",
                       "after": [
-                        "step:gang-3-backen-temperieren"
+                        "step:gang-3-backen-durchwaermen"
                       ]
                     },
                     {
@@ -3635,7 +3649,7 @@
                   "checked": false
                 },
                 {
-                  "text": "Durchwärmen im Ofen: reichen 25–30 Min. bei 135 °C im zugedeckten Bräter für ≥ 70 °C Kern? (Ofen startet bei 50–55 °C; sonst Bräter schon beim Aufheizen der Pfannen für Gang 2 hineinschieben oder kurz auf dem Herd nachziehen)",
+                  "text": "Durchwärmen im Ofen: reichen 25–30 Min. bei 135 °C im zugedeckten Bräter für ≥ 70 °C Kern? (Ofen heizt ab Gang 2, Schritt 13 vor; sonst Bräter schon beim Aufheizen der Pfannen hineinschieben oder kurz auf dem Herd nachziehen)",
                   "checked": false
                 },
                 {
@@ -4109,7 +4123,7 @@
                         "source": "ca. 4 Min.",
                         "estimated": true
                       },
-                      "text": "Direkt nach dem Schneiden frischen Decaf-Espresso beziehen (Kapsel: 3–4 kurze Bezüge, \\~90 Sek.) und **beide Shakes unmittelbar hintereinander in den 2 getrennten Gefäßen** shaken — kein Ausspülen, beide Schäume sind frisch, das Parfait wartet nur kurz.\n**Shake 1 — Espresso-Shakerato (alkoholfrei), pro Person:** 30 ml frischer Decaf-Espresso + 5 ml Zuckersirup auf 3–4 Eiswürfel, 15–20 Sek. **hart** shaken, bis der Shaker beschlägt, durch das feine Sieb abseihen — dichter, heller Schaum. *Bewusst nur 5 ml Sirup: Der Schuss ist der bittere Gegenpol zur süßen, sahnigen Scheibe; schäumt er im Testlauf zu schwach, auf 8 ml gehen.* **Shake 2 — Espresso-Martini, pro Trinker:** 15 ml Wodka + 10 ml Kahlúa + 15 ml frischer Decaf-Espresso (optional 2 ml Zuckersirup — IBA-klassisch, hilft dem Schaum), gleiche Technik. Für 3 Trinker also 45/30/45 ml in einem Shake.",
+                      "text": "Direkt nach dem Schneiden frischen Decaf-Espresso beziehen (Kapsel: 3–4 kurze Bezüge, \\~90 Sek.) und **beide Shakes unmittelbar hintereinander in den 2 getrennten Gefäßen** shaken — kein Ausspülen, beide Schäume sind frisch, das Parfait wartet nur kurz.\n**Shake 1 — Espresso-Shakerato (alkoholfrei), pro Person:** 30 ml frischer Decaf-Espresso + 5 ml Zuckersirup auf 3–4 Eiswürfel, 15–20 Sek. **hart** shaken, bis der Shaker beschlägt, durch das feine Sieb abseihen — dichter, heller Schaum. *Bewusst nur 5 ml Sirup: Der Schuss ist der bittere Gegenpol zur süßen, sahnigen Scheibe; schäumt er im Testlauf zu schwach, auf 8 ml gehen.* **Shake 2 — Espresso-Martini, pro Trinker:** 15 ml Wodka + 10 ml Kahlúa + 15 ml frischer Decaf-Espresso (optional 2 ml Zuckersirup — IBA-klassisch, hilft dem Schaum), gleiche Technik. Für 3 Trinker also 45/30/45 ml in einem Shake. **Shakerato nur für 1 Person:** 40 ml Espresso + 6–7 ml Sirup auf höchstens 3 feste Eiswürfel — von der kleinen Menge bleiben sonst 10–15 ml an Eis und Shakerwand, und es reicht nicht für Guss plus Glas (kostet dieselbe eine Kapsel).",
                       "action": "Direkt nach dem Schneiden frischen Decaf-Espresso beziehen (Kapsel: 3–4 kurze Bezüge, \\~90 Sek.) und **beide Shakes unmittelbar hintereinander in den 2 getrennten Gefäßen** shaken — kein Ausspülen, beide Schäume sind frisch, das Parfait wartet nur kurz.",
                       "limits": [
                         "beide Shakes unmittelbar hintereinander in den 2 getrennten Gefäßen"
@@ -4167,6 +4181,14 @@
                             "text": "2 ml Zuckersirup",
                             "value": 2.0,
                             "unit": "ml"
+                          }
+                        },
+                        {
+                          "ref": "eiswuerfel",
+                          "amount": {
+                            "text": "3 feste Eiswürfel",
+                            "value": 3.0,
+                            "unit": "Stück"
                           }
                         }
                       ],
@@ -4823,7 +4845,7 @@
           },
           {
             "phase": "uhr-19-25",
-            "text": "Backen durchwärmen (direkt beim Servieren: zugedeckter Bräter bei 135 °C in den Ofen)",
+            "text": "Backen durchwärmen (direkt beim Servieren: zugedeckter Bräter in den auf 135 °C vorgeheizten Ofen)",
             "steps": [
               "gang-3-backen-durchwaermen"
             ],
@@ -4899,7 +4921,7 @@
           }
         ]
       },
-      "note": "*Die Uhrzeit ist nur die Vorgabe: Im Kochmodus lässt sich die Essenszeit verstellen, alle Zeiten wandern mit. Die Abstände sind aus den Schrittdauern gerechnet, noch nicht gekocht — Feinschliff nach den Testläufen.*\n\n**Takt am Abend:** Gerechnet mit realistischen Essenszeiten — Gang 1 steht\n\\~19:07 auf dem Tisch, Gang 2 \\~19:35 (mit Brot und Sauce wird 20–25 Min.\ngegessen), Gang 3 \\~20:15–20:20, Gang 4 \\~21:30. Zwischen Gang 2 und 3 liegen\nam Herd nur noch \\~15 Min. Arbeit.\n\n**Ofen-Plan:** Der Ofen hat am Abend drei Aufgaben nacheinander: ab 18:35 Uhr\n**50–55 °C** für die Teller von Gang 2 (nicht 80 °C, nicht stundenlang), beim\nServieren von Gang 2 **135 °C** für den zugedeckten Bräter (Durchwärmen der\nBacken, 25–30 Min.), zu Beginn von Gang 3 herunter auf **65–70 °C** für die\nHauptgangteller (Tür kurz offen lassen) und bei Bedarf 2 Min. für die Chips.\nFrittiert wird nachmittags auf dem Herd. **Herd-Plan Gang 3:** Püree zuerst auf\ndem Mittelfeld erwärmen, aufmixen und parken; dann Bräter zum Glasieren auf die\ngekoppelte Bräterzone rechts, Jus und Rosenkohlblätter auf den kleinen Feldern\nlinks.\n\n**Logistik (November):** Balkon oder Keller taugen bei 2–7 °C als\nZweitkühlschrank — für den geschlossenen Bräter (T-1 über Nacht), den Fond\n(T-2), das Püree zum Abkühlen und die Getränke. Thermometer hinlegen; über 7 °C\ngehört alles in den Kühlschrank. Der Kühlschrank selbst bleibt so frei für\nKaisergranat, Jus, Tomatenwasser und Parfait-Temperieren. Gefrierfach: vorab\nprüfen, ob 5 Coup-Teller hineinpassen (Gang 4), und rechtzeitig Eiswürfel\nvorfrieren."
+      "note": "*Die Uhrzeit ist nur die Vorgabe: Im Kochmodus lässt sich die Essenszeit verstellen, alle Zeiten wandern mit. Die Abstände sind aus den Schrittdauern gerechnet, noch nicht gekocht — Feinschliff nach den Testläufen.*\n\n**Takt am Abend:** Gerechnet mit realistischen Essenszeiten — Gang 1 steht\n\\~19:07 auf dem Tisch, Gang 2 \\~19:35 (mit Brot und Sauce wird 20–25 Min.\ngegessen), Gang 3 \\~20:15–20:20, Gang 4 \\~21:30. Zwischen Gang 2 und 3 liegen\nam Herd nur noch \\~15 Min. Arbeit.\n\n**Ofen-Plan:** Der Ofen hat am Abend drei Aufgaben nacheinander: ab 18:35 Uhr\n**50–55 °C** für die Teller von Gang 2 (nicht 80 °C, nicht stundenlang); sobald\ndie Teller draußen sind, vorheizen auf **135 °C** für den zugedeckten Bräter, der\nbeim Servieren von Gang 2 hineinkommt (Durchwärmen der Backen, 25–30 Min.), zu Beginn von Gang 3 herunter auf **65–70 °C** für die\nHauptgangteller (Tür kurz offen lassen) und bei Bedarf 2 Min. für die Chips.\nFrittiert wird nachmittags auf dem Herd. **Herd-Plan Gang 3:** Püree zuerst auf\ndem Mittelfeld erwärmen, aufmixen und parken; dann Bräter zum Glasieren auf die\ngekoppelte Bräterzone rechts, Jus und Rosenkohlblätter auf den kleinen Feldern\nlinks.\n\n**Logistik (November):** Balkon oder Keller taugen bei 2–7 °C als\nZweitkühlschrank — für den geschlossenen Bräter (T-1 über Nacht), den Fond\n(T-2), das Püree zum Abkühlen und die Getränke. Thermometer hinlegen; über 7 °C\ngehört alles in den Kühlschrank. Der Kühlschrank selbst bleibt so frei für\nKaisergranat, Jus, Tomatenwasser und Parfait-Temperieren. Gefrierfach: vorab\nprüfen, ob 5 Coup-Teller hineinpassen (Gang 4), und rechtzeitig Eiswürfel\nvorfrieren."
     },
     {
       "type": "todo",
@@ -4970,8 +4992,8 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-11-20T12:41:14Z",
-    "sourceHash": "732c420521b8ba42",
+    "generatedAt": "2026-11-20T12:59:38Z",
+    "sourceHash": "a43a5c5778406e7a",
     "quantities": [
       {
         "ingredient": "verjus",
@@ -5154,23 +5176,23 @@
       {
         "ingredient": "limetten",
         "total": {
-          "text": "1½ + 20 ml",
+          "text": "1½ + 35 ml",
           "value": 1.5,
           "max": 1.5,
           "unit": "Stück",
           "approx": false,
           "plus": [
             {
-              "text": "20 ml",
-              "value": 20.0,
-              "max": 20.0,
+              "text": "35 ml",
+              "value": 35.0,
+              "max": 35.0,
               "unit": "ml",
               "approx": false
             }
           ]
         },
         "perTask": {
-          "tomatenwasser-wuerzen-und-anrichten": "10 ml Limettensaft",
+          "tomatenwasser-wuerzen-und-anrichten": "15 ml Limettensaft + 10 ml Limettensaft",
           "mango-gel": "½ Limette",
           "kaisergranat-braten": "1 Limette + 2 TL Limettensaft"
         },
@@ -5979,20 +6001,20 @@
       {
         "ingredient": "eiswuerfel",
         "total": {
-          "text": "3–4",
-          "value": 3.0,
-          "max": 4.0,
+          "text": "6–7",
+          "value": 6.0,
+          "max": 7.0,
           "unit": "Stück",
           "approx": false
         },
         "perTask": {
-          "dessert-service": "3–4 Eiswürfel"
+          "dessert-service": "3–4 Eiswürfel + 3 feste Eiswürfel"
         },
         "perCourse": {
           "gang-4": {
-            "text": "3–4",
-            "value": 3.0,
-            "max": 4.0,
+            "text": "6–7",
+            "value": 6.0,
+            "max": 7.0,
             "unit": "Stück"
           }
         }
@@ -6415,22 +6437,22 @@
             "ingredient": "limetten",
             "name": "Limetten",
             "need": {
-              "text": "1½ + 20 ml",
+              "text": "1½ + 35 ml",
               "value": 1.5,
               "max": 1.5,
               "unit": "Stück",
               "approx": false,
               "plus": [
                 {
-                  "text": "20 ml",
-                  "value": 20.0,
-                  "max": 20.0,
+                  "text": "35 ml",
+                  "value": 35.0,
+                  "max": 35.0,
                   "unit": "ml",
                   "approx": false
                 }
               ]
             },
-            "display": "1½ + 20 ml",
+            "display": "1½ + 35 ml",
             "inStock": false,
             "buy": {
               "text": "4 Stück"
@@ -7078,13 +7100,13 @@
             "ingredient": "eiswuerfel",
             "name": "Eiswürfel",
             "need": {
-              "text": "3–4",
-              "value": 3.0,
-              "max": 4.0,
+              "text": "6–7",
+              "value": 6.0,
+              "max": 7.0,
               "unit": "Stück",
               "approx": false
             },
-            "display": "3–4",
+            "display": "6–7",
             "inStock": false,
             "buy": {
               "text": "3–4 Formen voll oder 1 Beutel"

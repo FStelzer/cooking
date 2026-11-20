@@ -248,7 +248,9 @@ würzen, dann urteilen.
 Das gewürzte, kalte Tomatenwasser durch einen mit kaltem Wasser gespülten
 Kaffeefilter in ein gekühltes Kännchen laufen lassen — hält Worcestershire-
 Schwebstoffe und Pfeffer zurück, das Wasser ist wieder kristallklar. Zurück in
-den Kühlschrank. *Einmal filtern ersetzt das heikle Ausgießen „vom Sediment
+den Kühlschrank. Parallel 15 ml Limettensaft durch einen zweiten, kleinen
+Kaffeefilter tropfen lassen und kalt stellen (für Schritt 11 — falls der
+Testlauf gezeigt hat, dass ungefilterter Saft trübt). *Einmal filtern ersetzt das heikle Ausgießen „vom Sediment
 weg“ aus fünf Gläsern.*
 
 **11. Limette einrühren (ca. 2 Min.)**
@@ -259,8 +261,8 @@ Fruchtfleisch) ins Kännchen rühren, abschmecken, ggf. auf max. 15 ml erhöhen
 
 > **Klarheit:** Frischer Limettensaft ist von Natur aus trüb, auch nach dem
 > Sieb — er kann das kristallklare Wasser leicht opalisieren lassen. Empfehlung:
-> den Saft vorher durch einen kleinen Kaffeefilter tropfen lassen (ein paar
-> Minuten, also schon beim Filtern in Schritt 10 ansetzen). Im Testlauf prüfen;
+> den Saft vorher durch einen kleinen Kaffeefilter tropfen lassen (dauert ein
+> paar Minuten und passiert deshalb schon in Schritt 10). Im Testlauf prüfen;
 > Alternativen: die leichte Trübung bewusst akzeptieren oder gegen klaren Verjus
 > plus einen Hauch Limetten-Zeste testen.
 
@@ -446,7 +448,9 @@ Krustentier-Aroma bleibt frisch. (Ohne passende Kanne: Wasserbad 50–55 °C.)*
 *nach Schwänze antrocknen*
 Teller aus dem **50–55 °C** warmen Ofen nehmen — handwarm, **nicht 80 °C**: Auf
 heißen Tellern bricht die Beurre blanc am Rand und der Kaisergranat gart nach.
-Schwänze **erst direkt vor dem Braten** salzen.
+**Sofort danach den leeren Ofen auf 135 °C hochdrehen:** Er heizt vor, während
+gebraten und angerichtet wird, und der Bräter für Gang 3 kommt beim Servieren
+in den schon heißen Ofen. Schwänze **erst direkt vor dem Braten** salzen.
 
 **14. Pfannen aufheizen (ca. 3 Min.)**
 *2 Pfannen*
@@ -482,8 +486,8 @@ ist.
 Knapper Spiegel Beurre blanc (35–40 ml), 2 Schwänze (Bratseite oben)
 hineinsetzen. 3 Punkte Mango-Gel **neben/an den Rand des Spiegels** spritzen —
 im Saucenspiegel verlaufen sie. Wenige Schnittlauchspitzen anlegen. Sonst
-nichts. **Beim Hinaustragen:** Ofen auf 135 °C stellen und den zugedeckten
-Bräter mit den Backen hineinschieben (Gang 3, Schritt 20).
+nichts. **Beim Hinaustragen:** den zugedeckten Bräter mit den Backen in den
+auf 135 °C vorgeheizten Ofen schieben (Gang 3, Schritt 20).
 
 **Kind (3 J.):** 1 Schwanz + etwas Mango-Gel funktioniert direkt (Gel ist ohne
 Chili). Beurre blanc ist alkoholfrei → Mini-Spiegel ist unkritisch.
@@ -722,8 +726,9 @@ Wasser angießen, Deckel drauf.
 
 **20. Backen durchwärmen (25–30 Min., passiv)**
 *nach Backen temperieren · Ofen 135 °C · fertig bei ≥ 70 °C Kern*
-**Direkt beim Servieren von Gang 2:** die Teller von Gang 2 sind aus dem Ofen,
-Ofen auf 135 °C stellen und den zugedeckten Bräter hineinschieben. Während Gang
+**Direkt beim Servieren von Gang 2:** den zugedeckten Bräter in den Ofen
+schieben — er heizt seit dem Herausnehmen der Teller (Gang 2, Schritt 13) auf
+135 °C vor. Während Gang
 2 gegessen wird, ziehen die Backen ohne Aufsicht durch. Zu Beginn von Gang 3
 herausholen und in der dicksten Portion messen: **≥ 70 °C Kern** (Thermometer).
 Nach Thermometer, nicht nach Uhr: Das ist die Schwangerschafts-Grenze (Listerien
@@ -751,7 +756,7 @@ lackiert. **Nicht weggehen** — der Traubensaft-Zucker in der Jus setzt schnell
 an. Wird die Glasur zu dick, 1–2 EL Wasser zugeben.
 
 **23. Blätter, Jus, Chips (ca. 8 Min.)**
-*nach Backen temperieren · 2 Pfannen*
+*nach Backen durchwärmen · 2 Pfannen*
 Parallel zum Glasieren: blanchierte Rosenkohlblätter in 20 g aufschäumender Butter 1–2 Min.
 schwenken (nur erwärmen), 1 Prise Salz, kleiner Spritzer Zitrone. Die übrigen
 \~200 ml Jus erwärmen, mit 1 TL Verjus, ½ TL Sherryessig (oder Rotweinessig)
@@ -799,8 +804,8 @@ Funktioniert ohne Extra-Version.
 - [ ] Salz: Mit 4–5 g an den Backen die Jus bei 350 ml noch untersalzen
       (Schritt 11)? Backe innen nicht zu fad?
 - [ ] Durchwärmen im Ofen: reichen 25–30 Min. bei 135 °C im zugedeckten Bräter
-      für ≥ 70 °C Kern? (Ofen startet bei 50–55 °C; sonst Bräter schon beim
-      Aufheizen der Pfannen für Gang 2 hineinschieben oder kurz auf dem Herd
+      für ≥ 70 °C Kern? (Ofen heizt ab Gang 2, Schritt 13 vor; sonst Bräter
+      schon beim Aufheizen der Pfannen hineinschieben oder kurz auf dem Herd
       nachziehen)
 - [ ] Chips: nach \~4 Std. offen und trocken gelagert noch kross? Auffrischen
       2 Min. im Ofen nötig?
@@ -945,7 +950,10 @@ heller Schaum. *Bewusst nur 5 ml Sirup: Der Schuss ist der bittere Gegenpol zur
 süßen, sahnigen Scheibe; schäumt er im Testlauf zu schwach, auf 8 ml gehen.* **Shake 2 — Espresso-Martini, pro Trinker:** 15 ml Wodka + 10 ml
 Kahlúa + 15 ml frischer Decaf-Espresso (optional 2 ml Zuckersirup —
 IBA-klassisch, hilft dem Schaum), gleiche Technik. Für 3 Trinker also 45/30/45
-ml in einem Shake.
+ml in einem Shake. **Shakerato nur für 1 Person:** 40 ml Espresso + 6–7 ml
+Sirup auf höchstens 3 feste Eiswürfel — von der kleinen Menge bleiben sonst
+10–15 ml an Eis und Shakerwand, und es reicht nicht für Guss plus Glas (kostet
+dieselbe eine Kapsel).
 
 **10. Am Tisch (ca. 2 Min.)**
 **Am Tisch** je 20–25 ml über die Scheibe gießen — aus leichter Höhe, das
@@ -1011,7 +1019,7 @@ Gang 2 (fällt reichlich an) + Kugel Vanilleeis (gekauft).
 - 18:15 Uhr (45min vorher): Schwänze antrocknen (1 Std. offen im Kühlschrank) · Sahne einkochen · Butter montieren (in die kleine, mit 55–60 °C vorgewärmte Thermoskanne)
 - 18:35 Uhr (25min vorher): Puffer — Küche aufräumen · Ofen auf 50–55 °C, Teller für Gang 2 hinein · Spritzflasche mit dem Mango-Gel aus dem Kühlschrank · Gäste empfangen
 - 19:00 Uhr — Gang 1: Limette einrühren · Tomatenwasser anrichten (kein Herd nötig)
-- 19:25 Uhr — Gang 2: Brot und Butter auf den Tisch · Teller vorwärmen, Schwänze salzen · Pfannen aufheizen · Limette in die Beurre blanc · Braten und arrosieren · Kaisergranat anrichten · Backen durchwärmen (direkt beim Servieren: zugedeckter Bräter bei 135 °C in den Ofen)
+- 19:25 Uhr — Gang 2: Brot und Butter auf den Tisch · Teller vorwärmen, Schwänze salzen · Pfannen aufheizen · Limette in die Beurre blanc · Braten und arrosieren · Kaisergranat anrichten · Backen durchwärmen (direkt beim Servieren: zugedeckter Bräter in den auf 135 °C vorgeheizten Ofen)
 - 20:00 Uhr — Gang 3: Bräter aus dem Ofen, Kerntemperatur ≥ 70 °C prüfen, Ofen auf 65–70 °C für die Teller · Püree erwärmen (sofort aufmixen, zugedeckt parken) · Glasieren (4–5 Min. offen) · Blätter, Jus, Chips (parallel zum Glasieren, Chips ggf. 2 Min. in den Ofen) · Ochsenbacke anrichten (Meerrettich am Pass reiben)
 - 20:55 Uhr — Nach Gang 3: Temperieren und Teller frosten (Parfait in den Kühlschrank, Teller ins Gefrierfach, 2 Shaker und Zutaten bereitstellen)
 - 21:20 Uhr — Gang 4: Schneiden (Teller zuerst mit Crumble und Bohnen bestücken) · Shaken (Espresso frisch beziehen, beide Shakes in 2 Gefäßen) · Am Tisch (gießen, Rest im Glas daneben)
@@ -1022,9 +1030,9 @@ gegessen), Gang 3 \~20:15–20:20, Gang 4 \~21:30. Zwischen Gang 2 und 3 liegen
 am Herd nur noch \~15 Min. Arbeit.
 
 **Ofen-Plan:** Der Ofen hat am Abend drei Aufgaben nacheinander: ab 18:35 Uhr
-**50–55 °C** für die Teller von Gang 2 (nicht 80 °C, nicht stundenlang), beim
-Servieren von Gang 2 **135 °C** für den zugedeckten Bräter (Durchwärmen der
-Backen, 25–30 Min.), zu Beginn von Gang 3 herunter auf **65–70 °C** für die
+**50–55 °C** für die Teller von Gang 2 (nicht 80 °C, nicht stundenlang); sobald
+die Teller draußen sind, vorheizen auf **135 °C** für den zugedeckten Bräter, der
+beim Servieren von Gang 2 hineinkommt (Durchwärmen der Backen, 25–30 Min.), zu Beginn von Gang 3 herunter auf **65–70 °C** für die
 Hauptgangteller (Tür kurz offen lassen) und bei Bedarf 2 Min. für die Chips.
 Frittiert wird nachmittags auf dem Herd. **Herd-Plan Gang 3:** Püree zuerst auf
 dem Mittelfeld erwärmen, aufmixen und parken; dann Bräter zum Glasieren auf die
