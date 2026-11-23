@@ -369,6 +369,18 @@ Hand editieren, Learnings gehören in die Rezeptdatei.
 - ✅ **Cochinita Pibil — Schweineschulter in Achiote-Orangen-Marinade (4 Portionen + Reste)** (siehe `gerichte/cochinita-pibil.md`)
   **Gekocht 3× (10–11/2026).** Wirklich sehr lecker — eine Art mexikanisches Pulled Pork; Fleisch und Zwiebeln waren einfach und haben auf Anhieb funktioniert. Frische Tortillas ebenfalls sehr lecker, aber mit dem Topfboden gepresst zu dick: Sie brauchten länger und brannten in Edelstahl wie beschichtet punktuell an (Pfanne danach schwer zu reinigen), zügig und gut war schwer hinzubekommen. Fix im Rezept: kleinere Kugeln, Tortillapresse, mittlere Hitze, zwei Pfannen parallel, Pfanne zwischendurch auswischen. Salsa tamulada viel besser als jede gekaufte scharfe Sauce, aber extrem scharf („pica pica“) trotz entfernter Kerne → Chiltomate als milde zweite Salsa ergänzt. Durchgänge 2–3: Chiltomate sehr lecker, aber suppig (Fix: Roma halbiert rösten, abtropfen, spät salzen); Tamulada mit 1 Habanero scharf genug, Spitzpaprika als Masse-Hinweis ergänzt.
 
+- ✅ **Druck-karamellisierte Karottensuppe — Natron-Maillard im Schnellkochtopf mit knusprigen Kichererbsen (4 Portionen)** (siehe `gerichte/karottensuppe-druckkaramellisiert.md`)
+  **Gekocht 11/2026.** Das Aroma beim Öffnen des Schnellkochtopfs war großartig, die fertige
+  Suppe dann aber relativ flach — die Technik funktioniert, der Geschmack ging auf dem Weg zum
+  Teller verloren. Viel Zitrone hat das nicht behoben; zusammen mit dem säuerlichen Joghurt war
+  es am Ende eher zu sauer. Vermutete Ursachen: zu dünne Hühnerbrühe und zu viel davon (750 ml
+  auf 800 g Karotten verdünnen das Röstaroma), dazu der Rezept-Hinweis „flach → mehr Zitrone",
+  der in die falsche Richtung gesteuert hat. Die Karotten hätten außerdem noch ein paar Minuten
+  mehr Bräunung vertragen. Fix im Rezept: nur noch 500 ml kräftige Brühe (Glas-Fond von 800 auf
+  500 ml einkochen), 30 statt 25 Min. Hochdruck, Abschmecken in der Reihenfolge Salz → Säure
+  (höchstens 2 EL Zitronensaft) → erst dann verdünnen, kein Zitronensaft mehr im Joghurt — beim
+  nächsten Mal zu prüfen.
+
 - ✅ **Kofta bil tahini — Ofen-Kofta in Tahina-Zitronen-Sauce mit Blumenkohl und Gurken-Joghurt (4 Portionen, optional + 3 Meal-Prep-Boxen)** (siehe `schwangerschaft/kofta-bil-tahini.md`)
   **Gekocht 11/2026 (mit Meal Prep).** Sehr lecker, kommt wieder — eher ohne die
   Extra-Portionen, deshalb ist *Abendessen* jetzt der Default und Meal Prep eine Variante.

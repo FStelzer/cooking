@@ -22,7 +22,7 @@
   - [✅ Cochinita Pibil — Schweineschulter in Achiote-Orangen-Marinade (4 Portionen + Reste)](/gerichte/cochinita-pibil.md)
   - [Hummerbisque (4 Portionen als Vorspeise)](/gerichte/hummerbisque.md)
   - [✅ İmam bayıldı — in Olivenöl geschmorte gefüllte Auberginen (4 Portionen)](/gerichte/imam-bayildi.md)
-  - [Druck-karamellisierte Karottensuppe — Natron-Maillard im Schnellkochtopf mit knusprigen Kichererbsen (4 Portionen)](/gerichte/karottensuppe-druckkaramellisiert.md)
+  - [✅ Druck-karamellisierte Karottensuppe — Natron-Maillard im Schnellkochtopf mit knusprigen Kichererbsen (4 Portionen)](/gerichte/karottensuppe-druckkaramellisiert.md)
   - [✅ Korean Fried Chicken — doppelt frittierte Flügel & Oberschenkel mit zwei Saucen (4 Portionen)](/gerichte/korean-fried-chicken.md)
   - [✅ Lamm-Kleftiko — im Päckchen geschmortes Lamm mit Kartoffeln (4 Portionen + Reste)](/gerichte/lamm-kleftiko.md)
   - [Massaman Curry — Hähnchenkeule, Kartoffeln, Erdnüsse, Paste von Grund auf (4 Portionen)](/gerichte/massaman-curry.md)
