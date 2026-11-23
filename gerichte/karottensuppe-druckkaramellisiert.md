@@ -18,7 +18,7 @@ Die *Modernist-Cuisine*-Technik für den Dienstagabend: Karotten garen mit Butte
 
 - **100 % Aldi / REWE.** Normale Speisekarotten (1 kg, ergibt nach dem Schälen \~800 g netto). Sehr dicke, alte Möhren haben einen holzigen Kern — den ggf. herausschneiden; mittlere Karotten einfach in Scheiben schneiden.
 - **Natron:** Kaiser-Natron oder Backnatron (reines Natriumhydrogencarbonat, Backregal) — **kein Backpulver** (enthält Säure und Stärke, verfehlt den pH-Effekt).
-- **Brühe:** 500 ml **kräftige** Brühe (selbst gekocht, geliert im Kühlschrank) — oder 2 Gläser Geflügel- bzw. Gemüsefond (je 400 ml), die in Schritt 7 auf \~500 ml eingekocht werden. Glas-Fond ist unverdünnt zu dünn für diese Suppe. Keine stark gesalzenen Brühwürfel, sonst lässt sich das Salz schlechter steuern (und beim Einkochen konzentriert sich das Salz mit).
+- **Brühe:** 500 ml **kräftige** Brühe (selbst gekocht, geliert im Kühlschrank) — oder 2 Gläser Geflügel- bzw. Gemüsefond (je 400 ml), die in Schritt 7 auf \~500 ml eingekocht werden. Glas-Fond ist unverdünnt zu dünn für diese Suppe. Keine stark gesalzenen Brühwürfel, sonst lässt sich das Salz schlechter steuern (und beim Einkochen konzentriert sich das Salz mit). Löslicher Instant-Fond aus dem Glas war 11/2026 zu dünn. **Nächster Versuch: Lacroix Fond-Paste (Portionsbecher, Geflügel oder Gemüse)** — bei Gemüse und Rind bewährt. Für 500 ml nach Packung anrühren, eher am kräftigen Ende dosieren und **nicht** einkochen (Paste ist bereits gesalzen); dafür in Schritt 2 nur ½ TL Salz an die Karotten und beim Abschmecken vorsichtig nachsalzen.
 - **Hähnchenbrust:** Nur für die Variante *Mit Hähnchen* (400 g).
 
 ## Einkaufsliste
@@ -132,11 +132,11 @@ Geprüft gegen den [Leitfaden](/schwangerschaft/leitfaden.md):
 **Gekocht 11/2026.** Das Aroma beim Öffnen des Schnellkochtopfs war großartig, die fertige
 Suppe dann aber relativ flach — die Technik funktioniert, der Geschmack ging auf dem Weg zum
 Teller verloren. Viel Zitrone hat das nicht behoben; zusammen mit dem säuerlichen Joghurt war
-es am Ende eher zu sauer. Vermutete Ursachen: zu dünne Hühnerbrühe und zu viel davon (750 ml
+es am Ende eher zu sauer. Vermutete Ursachen: zu dünne Hühnerbrühe (löslicher Instant-Fond aus dem Glas) und zu viel davon (750 ml
 auf 800 g Karotten verdünnen das Röstaroma), dazu der Rezept-Hinweis „flach → mehr Zitrone",
 der in die falsche Richtung gesteuert hat. Die Karotten hätten außerdem noch ein paar Minuten
 mehr Bräunung vertragen. Fix im Rezept: nur noch 500 ml kräftige Brühe (Glas-Fond von 800 auf
-500 ml einkochen), 30 statt 25 Min. Hochdruck, Abschmecken in der Reihenfolge Salz → Säure
+500 ml einkochen; nächstes Mal Lacroix Fond-Paste testen), 30 statt 25 Min. Hochdruck, Abschmecken in der Reihenfolge Salz → Säure
 (höchstens 2 EL Zitronensaft) → erst dann verdünnen, kein Zitronensaft mehr im Joghurt — beim
 nächsten Mal zu prüfen.
 

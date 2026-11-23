@@ -373,11 +373,11 @@ Hand editieren, Learnings gehören in die Rezeptdatei.
   **Gekocht 11/2026.** Das Aroma beim Öffnen des Schnellkochtopfs war großartig, die fertige
   Suppe dann aber relativ flach — die Technik funktioniert, der Geschmack ging auf dem Weg zum
   Teller verloren. Viel Zitrone hat das nicht behoben; zusammen mit dem säuerlichen Joghurt war
-  es am Ende eher zu sauer. Vermutete Ursachen: zu dünne Hühnerbrühe und zu viel davon (750 ml
+  es am Ende eher zu sauer. Vermutete Ursachen: zu dünne Hühnerbrühe (löslicher Instant-Fond aus dem Glas) und zu viel davon (750 ml
   auf 800 g Karotten verdünnen das Röstaroma), dazu der Rezept-Hinweis „flach → mehr Zitrone",
   der in die falsche Richtung gesteuert hat. Die Karotten hätten außerdem noch ein paar Minuten
   mehr Bräunung vertragen. Fix im Rezept: nur noch 500 ml kräftige Brühe (Glas-Fond von 800 auf
-  500 ml einkochen), 30 statt 25 Min. Hochdruck, Abschmecken in der Reihenfolge Salz → Säure
+  500 ml einkochen; nächstes Mal Lacroix Fond-Paste testen), 30 statt 25 Min. Hochdruck, Abschmecken in der Reihenfolge Salz → Säure
   (höchstens 2 EL Zitronensaft) → erst dann verdünnen, kein Zitronensaft mehr im Joghurt — beim
   nächsten Mal zu prüfen.
 
