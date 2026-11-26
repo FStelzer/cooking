@@ -1,0 +1,1427 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/chicken-adobo",
+  "kind": "dish",
+  "title": "Filipino Chicken Adobo — Hähnchenoberkeulen in Soja-Essig-Knoblauch-Sauce (4 Portionen)",
+  "status": "wip",
+  "yields": {
+    "text": "4 Portionen",
+    "value": 4.0,
+    "unit": "Portionen"
+  },
+  "statusNote": "> [!NOTE]\n> **Status: In Arbeit** — ausgearbeitet 11/2026, noch nicht gekocht. Zu prüfen: Essig-Soja-Balance mit dem tatsächlich gekauften Essig, Salzigkeit nach dem Reduzieren (70 ml Sojasauce, Fleisch ungesalzen), Grillzeit der Haut.",
+  "intro": "*Aktive Zeit \\~30 Min., gesamt \\~1 Std. 10 Min. Equipment: Bräter/Schmortopf mit Deckel, kleiner Topf mit Deckel für den Reis, zweiter Topf für Pak Choi, Backblech, Fleischthermometer.*\n\nDas philippinische Nationalgericht und eines der besten Aufwand-Reward-Verhältnisse überhaupt: Hähnchen wird in Essig, Sojasauce, sehr viel Knoblauch, Lorbeer und ganzen Pfefferkörnern geschmort, bis die Sauce zu einer glänzenden, säuerlich-salzigen Glasur eingekocht ist. Ein Topf, kein Vorbereiten, null Schärfe. Dazu Reis, der die Sauce aufnimmt, ein kalter Tomaten-Gurken-Salat als Gegenpol und kurz gegarter Pak Choi.",
+  "times": {
+    "text": "Aktive Zeit ~30 Min., gesamt ~1 Std.",
+    "active": {
+      "typical": "PT30M",
+      "source": "30 Min."
+    },
+    "total": {
+      "typical": "PT1H10M",
+      "source": "1 Std. 10 Min."
+    }
+  },
+  "equipment": [
+    "Bräter/Schmortopf mit Deckel",
+    "kleiner Topf mit Deckel für den Reis",
+    "zweiter Topf für Pak Choi",
+    "Backblech",
+    "Fleischthermometer"
+  ],
+  "ingredients": [
+    {
+      "id": "knoblauch",
+      "name": "große Knolle Knoblauch",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "12 Zehen; sonst 2 kleine Knollen"
+    },
+    {
+      "id": "tomaten",
+      "name": "Tomaten",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "400 g"
+      },
+      "note": "reif, fest"
+    },
+    {
+      "id": "salatgurke",
+      "name": "Salatgurke",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      }
+    },
+    {
+      "id": "zwiebel",
+      "name": "kleine rote Zwiebel",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      }
+    },
+    {
+      "id": "pak",
+      "name": "Pak Choi",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "400 g"
+      },
+      "note": "2–3 Stück"
+    },
+    {
+      "id": "haehnchenoberkeulen",
+      "name": "Hähnchenoberkeulen mit Haut und Knochen",
+      "store": "REWE Center",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "1,3 kg"
+      },
+      "note": "8 Stück"
+    },
+    {
+      "id": "basmatireis",
+      "name": "Basmatireis",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "200 g"
+      }
+    },
+    {
+      "id": "reisessig",
+      "name": "Reisessig",
+      "store": "Vorrat",
+      "buy": {
+        "text": "150 ml"
+      },
+      "pantry": true,
+      "note": "ungewürzt; oder Apfelessig"
+    },
+    {
+      "id": "sojasauce",
+      "name": "Sojasauce",
+      "store": "Vorrat",
+      "buy": {
+        "text": "70 ml"
+      },
+      "pantry": true
+    },
+    {
+      "id": "lorbeerblaetter",
+      "name": "Lorbeerblätter",
+      "store": "Vorrat",
+      "buy": {
+        "text": "4"
+      },
+      "pantry": true
+    },
+    {
+      "id": "pfefferkoerner",
+      "name": "schwarze Pfefferkörner",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1 TL"
+      },
+      "pantry": true
+    },
+    {
+      "id": "oel",
+      "name": "neutrales Öl",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1 EL"
+      },
+      "pantry": true
+    },
+    {
+      "id": "sesamoel",
+      "name": "Sesamöl",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1 TL"
+      },
+      "pantry": true,
+      "note": "Pak Choi, optional"
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Stil-Entscheidung",
+      "level": 2,
+      "markdown": "- **Oberkeulen mit Haut und Knochen**, separat im Bräter angebraten: dunkles Fleisch verträgt 40 Min. Schmoren, Haut und Knochen geben der Sauce Körper. Das Anbraten ist nicht in jeder Familienversion üblich, bringt aber Röstaroma und rendert Fett aus, das sonst die Sauce fettig macht.\n- **Essig : Sojasauce ≈ 1,7 : 1** (120 ml : 70 ml), Fleisch ungesalzen. Die Quellen streuen von 1 : 1 bis 2 : 1 (siehe Quellen). Entscheidend ist das Salz: 70 ml japanische Sojasauce bringen \\~12 g Salz mit, und die Sauce wird auf \\~150–200 ml eingekocht — ohne Zucker als Puffer kippt das schnell ins nur Salzige. Deshalb Sojasauce am unteren Ende, kein Salz ans Fleisch, und zum Schluss bei Bedarf frischen Essig.\n- **Kein Zucker.** Viele moderne Rezepte runden mit braunem Zucker ab; für die Schwangerschaft mit GDM bleibt er weg, die Süße kommt aus dem weich geschmorten Knoblauch. Wer nach dem Reduzieren eine Kante spürt: 1 TL Zucker am Tisch-Topf ist erlaubt, aber erst abschmecken.\n- **Sauce stark reduzieren, Haut unter dem Grill nachkrossen.** Geschmorte Haut ist weich; 3–4 Min. Grill machen sie wieder straff. Erst wird die Sauce fertig reduziert, dann gegrillt (der Grill braucht die volle Aufmerksamkeit), und angerichtet wird mit der Haut nach oben **auf** der Sauce statt in ihr.\n- **Basmati statt Jasminreis:** niedrigerer glykämischer Index, trotzdem locker genug für die Sauce. Kokos-Adobo (*adobo sa gata*) ist eine eigene, reichhaltigere Variante — siehe Notizen.",
+      "tags": [
+        "stil"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Hähnchenoberkeulen mit Haut und Knochen:** REWE Center oder REWE/Aldi (oft als „Hähnchen-Oberkeulen“ in der 1-kg-Schale). Ganze Schenkel gehen auch, dann im Gelenk teilen.\n- **Essig:** Original ist philippinischer Zuckerrohr- oder Kokosessig (z. B. Datu Puti) — im lokalen Asialaden **nicht zu erwarten**, nur mitnehmen, wenn er zufällig da ist. Gleichwertiger Standard: ungewürzter **Reisessig** (Vorrat/Asialaden) oder Apfelessig. Kein Branntweinessig (zu scharf), kein gewürzter Sushi-Essig (gezuckert).\n- **Sojasauce:** die vorhandene japanische (Kikkoman o. Ä.) funktioniert. Philippinische Sojasauce (Silver Swan) ist salziger und dünner — dann 55 ml statt 70 ml.\n- **Pak Choi:** REWE Center, sonst Asialaden. Fallback: Spitzkohl in Streifen oder Brokkoli.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Filipino Chicken Adobo — Hähnchenoberkeulen in Soja-Essig-Knoblauch-Sauce (4 Portionen)",
+          "steps": [
+            {
+              "id": "haehnchen-vorbereiten",
+              "label": "1",
+              "heading": "**1. Hähnchen vorbereiten (5 Min.)**",
+              "title": "Hähnchen vorbereiten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "8 Hähnchenoberkeulen (1,3 kg) sehr trocken tupfen, **nicht salzen**. 12 Zehen Knoblauch schälen und mit der Messerseite andrücken. *Die Sojasauce salzt allein — sie wird am Ende auf die Hälfte eingekocht.*",
+              "action": "8 Hähnchenoberkeulen (1,3 kg) sehr trocken tupfen, **nicht salzen**.",
+              "limits": [
+                "nicht salzen"
+              ],
+              "why": "Die Sojasauce salzt allein — sie wird am Ende auf die Hälfte eingekocht.",
+              "ingredients": [
+                {
+                  "ref": "haehnchenoberkeulen",
+                  "amount": {
+                    "text": "8 Hähnchenoberkeulen",
+                    "value": 8.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "12 Zehen Knoblauch",
+                    "value": 12.0,
+                    "unit": "Zehen"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "after": []
+            },
+            {
+              "id": "anbraten",
+              "label": "2",
+              "heading": "**2. Anbraten (10 Min.)**",
+              "title": "Anbraten",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "1 EL Öl im Bräter bei mittelhoher Hitze erhitzen und die Oberkeulen in zwei Chargen **mit der Haut nach unten** 4–5 Min. braten, bis die Haut goldbraun ist und sich von selbst löst; nicht wenden, herausnehmen. Fett bis auf \\~1 EL abgießen.",
+              "action": "1 EL Öl im Bräter bei mittelhoher Hitze erhitzen und die Oberkeulen in zwei Chargen **mit der Haut nach unten** 4–5 Min. braten, bis die Haut goldbraun ist und sich von selbst löst; nicht wenden, herausnehmen.",
+              "limits": [
+                "mit der Haut nach unten"
+              ],
+              "cues": [
+                "bis die Haut goldbraun ist und sich von selbst löst",
+                "bis auf \\~1 EL abgießen"
+              ],
+              "timers": [
+                {
+                  "label": "Anbraten",
+                  "duration": {
+                    "min": "PT4M",
+                    "max": "PT5M"
+                  },
+                  "text": "4–5 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "1 EL Öl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Hähnchen vorbereiten · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:haehnchen-vorbereiten"
+              ]
+            },
+            {
+              "id": "sauce-ansetzen",
+              "label": "3",
+              "heading": "**3. Sauce ansetzen (5 Min.)**",
+              "title": "Sauce ansetzen",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Die 12 Zehen Knoblauch im verbliebenen Fett bei mittlerer Hitze 1 Min. anschwitzen, dann 120 ml Reisessig, 70 ml Sojasauce und 150 ml Wasser angießen, 4 Lorbeerblätter und 1 TL Pfefferkörner dazugeben. Aufkochen und **3 Min. offen kochen lassen, ohne zu rühren**. *Philippinische Küchenregel: Der Essig soll erst „auskochen“, bevor gerührt oder zugedeckt wird — die stechende Spitze verfliegt.*",
+              "action": "Die 12 Zehen Knoblauch im verbliebenen Fett bei mittlerer Hitze 1 Min. anschwitzen, dann 120 ml Reisessig, 70 ml Sojasauce und 150 ml Wasser angießen, 4 Lorbeerblätter und 1 TL Pfefferkörner dazugeben.",
+              "limits": [
+                "3 Min. offen kochen lassen, ohne zu rühren"
+              ],
+              "why": "Philippinische Küchenregel: Der Essig soll erst „auskochen“, bevor gerührt oder zugedeckt wird — die stechende Spitze verfliegt.",
+              "timers": [
+                {
+                  "label": "Sauce ansetzen",
+                  "duration": {
+                    "typical": "PT3M"
+                  },
+                  "text": "3 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "knoblauch",
+                  "amount": {
+                    "text": "12 Zehen Knoblauch",
+                    "value": 12.0,
+                    "unit": "Zehen"
+                  },
+                  "reuse": true
+                },
+                {
+                  "ref": "reisessig",
+                  "amount": {
+                    "text": "120 ml Reisessig",
+                    "value": 120.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "sojasauce",
+                  "amount": {
+                    "text": "70 ml Sojasauce",
+                    "value": 70.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "150 ml Wasser",
+                    "value": 150.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "lorbeerblaetter",
+                  "amount": {
+                    "text": "4 Lorbeerblätter",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "pfefferkoerner",
+                  "amount": {
+                    "text": "1 TL Pfefferkörner",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*nach Anbraten · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:anbraten"
+              ]
+            },
+            {
+              "id": "schmoren",
+              "label": "4",
+              "heading": "**4. Schmoren (30 Min., passiv)**",
+              "title": "Schmoren",
+              "duration": {
+                "typical": "PT30M",
+                "source": "30 Min."
+              },
+              "attention": "passive",
+              "text": "Oberkeulen mit der Haut nach unten einlegen, Deckel auf, bei kleiner Hitze 15 Min. leise simmern lassen. Nach 15 Min. wenden (Haut nach oben) und weitere 15 Min. zugedeckt simmern.\n\n> **Gar-Check:** Thermometer neben dem Knochen: 85–90 °C. Das ist bei Oberkeulen kein Übergaren, sondern der Punkt, an dem das Bindegewebe weich wird.",
+              "action": "Oberkeulen mit der Haut nach unten einlegen, Deckel auf, bei kleiner Hitze 15 Min. leise simmern lassen.",
+              "timers": [
+                {
+                  "label": "Schmoren",
+                  "duration": {
+                    "typical": "PT15M"
+                  },
+                  "text": "15 Min."
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT15M",
+                    "source": "15 Min."
+                  },
+                  "text": "Nach 15 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "85–90 °C",
+                  "min": 85,
+                  "max": 90
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Sauce ansetzen · Herd · fertig bei ≥ 85 °C Kern*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei ≥ 85 °C Kern",
+                "value": 85
+              },
+              "after": [
+                "step:sauce-ansetzen"
+              ]
+            },
+            {
+              "id": "reis-kochen",
+              "label": "5",
+              "heading": "**5. Reis kochen (5 Min. + 20 Min. passiv)**",
+              "title": "Reis kochen",
+              "duration": {
+                "typical": "PT25M",
+                "source": "5 Min. + 20 Min."
+              },
+              "attention": "passive",
+              "text": "200 g Basmatireis in einem Sieb waschen, bis das Wasser klar bleibt, mit 300 ml Wasser und 1 Prise Salz aufkochen. Deckel auf, kleinste Hitze, 12 Min. garen, dann vom Herd nehmen und 10 Min. zugedeckt ruhen lassen.",
+              "action": "200 g Basmatireis in einem Sieb waschen, bis das Wasser klar bleibt, mit 300 ml Wasser und 1 Prise Salz aufkochen.",
+              "cues": [
+                "bis das Wasser klar bleibt"
+              ],
+              "timers": [
+                {
+                  "label": "Reis kochen",
+                  "duration": {
+                    "typical": "PT12M"
+                  },
+                  "text": "12 Min."
+                },
+                {
+                  "label": "Reis kochen",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "basmatireis",
+                  "amount": {
+                    "text": "200 g Basmatireis",
+                    "value": 200.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "300 ml Wasser",
+                    "value": 300.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 Prise Salz",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "after": []
+            },
+            {
+              "id": "salat",
+              "label": "6",
+              "heading": "**6. Salat (10 Min., parallel)**",
+              "title": "Salat",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "parallel": true,
+              "text": "400 g Tomaten in Spalten, 1 Salatgurke in halbe Scheiben und 1 kleine rote Zwiebel in feine Ringe schneiden, mit 1 EL Reisessig und ½ TL Salz mischen. Kalt stellen. *Kalt, sauer, knackig — der Gegenpol zur dunklen, salzigen Sauce.*",
+              "action": "400 g Tomaten in Spalten, 1 Salatgurke in halbe Scheiben und 1 kleine rote Zwiebel in feine Ringe schneiden, mit 1 EL Reisessig und ½ TL Salz mischen.",
+              "why": "Kalt, sauer, knackig — der Gegenpol zur dunklen, salzigen Sauce.",
+              "ingredients": [
+                {
+                  "ref": "tomaten",
+                  "amount": {
+                    "text": "400 g Tomaten",
+                    "value": 400.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "salatgurke",
+                  "amount": {
+                    "text": "1 Salatgurke",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "zwiebel",
+                  "amount": {
+                    "text": "1 kleine rote Zwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "reisessig",
+                  "amount": {
+                    "text": "1 EL Reisessig",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "timers": [
+                {
+                  "label": "Salat",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
+              "after": []
+            },
+            {
+              "id": "pak-choi-vorbereiten",
+              "label": "7",
+              "heading": "**7. Pak Choi vorbereiten (5 Min., parallel)**",
+              "title": "Pak Choi vorbereiten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "parallel": true,
+              "text": "400 g Pak Choi waschen, große Stücke längs vierteln, kleine halbieren. Einen Topf Salzwasser zum Kochen bringen und zugedeckt bei kleiner Hitze bereithalten. *Geviertelt garen Stiele und Blätter gleichmäßiger; das Wasser muss kochen, bevor das Finish beginnt.*",
+              "action": "400 g Pak Choi waschen, große Stücke längs vierteln, kleine halbieren.",
+              "why": "Geviertelt garen Stiele und Blätter gleichmäßiger; das Wasser muss kochen, bevor das Finish beginnt.",
+              "ingredients": [
+                {
+                  "ref": "pak",
+                  "amount": {
+                    "text": "400 g Pak Choi",
+                    "value": 400.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Pak Choi vorbereiten",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
+              "after": []
+            },
+            {
+              "id": "reduzieren",
+              "label": "8",
+              "heading": "**8. Reduzieren (10–12 Min.)**",
+              "title": "Reduzieren",
+              "duration": {
+                "min": "PT10M",
+                "max": "PT12M",
+                "source": "10–12 Min."
+              },
+              "text": "Oberkeulen mit der Haut nach oben auf das Backblech setzen, Ofengrill auf höchste Stufe vorheizen. Die Sauce im offenen Bräter bei starker Hitze auf etwa die Hälfte einkochen, bis sie leicht sirupartig ist und glänzt, dann **vom Herd ziehen**. Abschmecken: zu salzig → 2–3 EL Wasser; zu flach oder nur salzig → 1 TL bis 1 EL Reisessig.\n\n> **Fett:** Schwimmt viel Fett auf der Sauce, vor dem Reduzieren mit einem Löffel abnehmen. Ein dünner Film gehört dazu.",
+              "action": "Oberkeulen mit der Haut nach oben auf das Backblech setzen, Ofengrill auf höchste Stufe vorheizen.",
+              "limits": [
+                "vom Herd ziehen"
+              ],
+              "cues": [
+                "bis sie leicht sirupartig ist und glänzt"
+              ],
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "2–3 EL Wasser",
+                    "value": 2.0,
+                    "unit": "EL",
+                    "max": 3.0
+                  }
+                },
+                {
+                  "ref": "reisessig",
+                  "amount": {
+                    "text": "1 EL Reisessig",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Schmoren · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Reduzieren",
+                  "duration": {
+                    "min": "PT10M",
+                    "max": "PT12M"
+                  },
+                  "text": "10–12 Min."
+                }
+              ],
+              "after": [
+                "step:schmoren"
+              ]
+            },
+            {
+              "id": "pak-choi-garen",
+              "label": "9",
+              "heading": "**9. Pak Choi garen (ca. 4 Min.)**",
+              "title": "Pak Choi garen",
+              "duration": {
+                "typical": "PT4M",
+                "source": "ca. 4 Min.",
+                "estimated": true
+              },
+              "text": "Den Pak Choi ins sprudelnd kochende Salzwasser geben und 2–3 Min. garen, bis die Stiele gerade weich sind. Abgießen, mit 1 TL Sesamöl beträufeln und zugedeckt warm halten.",
+              "action": "Den Pak Choi ins sprudelnd kochende Salzwasser geben und 2–3 Min. garen, bis die Stiele gerade weich sind.",
+              "cues": [
+                "bis die Stiele gerade weich sind"
+              ],
+              "timers": [
+                {
+                  "label": "Pak Choi garen",
+                  "duration": {
+                    "min": "PT2M",
+                    "max": "PT3M"
+                  },
+                  "text": "2–3 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "sesamoel",
+                  "amount": {
+                    "text": "1 TL Sesamöl",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*letzte 5 Min. von Reduzieren · nach Pak Choi vorbereiten · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:pak-choi-vorbereiten"
+              ],
+              "start": {
+                "ref": "step:reduzieren:end",
+                "offset": {
+                  "min": "-PT5M",
+                  "max": "-PT5M",
+                  "source": "letzte 5 Min. von Reduzieren"
+                }
+              }
+            },
+            {
+              "id": "haut-grillen",
+              "label": "10",
+              "heading": "**10. Haut grillen (ca. 4 Min.)**",
+              "title": "Haut grillen",
+              "duration": {
+                "typical": "PT4M",
+                "source": "ca. 4 Min.",
+                "estimated": true
+              },
+              "text": "Blech auf die zweite Schiene von oben schieben und die Haut 3–4 Min. grillen, bis sie Blasen wirft und dunkel goldbraun ist. **Danebenstehen und nichts anderes tun** — Sauce und Pak Choi sind fertig, zwischen perfekt und verbrannt liegt unter dem Grill eine Minute.",
+              "action": "Blech auf die zweite Schiene von oben schieben und die Haut 3–4 Min. grillen, bis sie Blasen wirft und dunkel goldbraun ist.",
+              "limits": [
+                "Danebenstehen und nichts anderes tun"
+              ],
+              "cues": [
+                "bis sie Blasen wirft und dunkel goldbraun ist"
+              ],
+              "timers": [
+                {
+                  "label": "Haut grillen",
+                  "duration": {
+                    "min": "PT3M",
+                    "max": "PT4M"
+                  },
+                  "text": "3–4 Min."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Reduzieren, Pak Choi garen · Ofen 250 °C*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 250
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:reduzieren",
+                "step:pak-choi-garen"
+              ]
+            },
+            {
+              "id": "anrichten",
+              "label": "11",
+              "heading": "**11. Anrichten (ca. 3 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT3M",
+                "source": "ca. 3 Min.",
+                "estimated": true
+              },
+              "text": "Reis auf die Teller geben, Sauce und weichen Knoblauch über den Reis löffeln und die Oberkeulen **mit der krossen Haut nach oben** daraufsetzen — nicht mehr in der Sauce wenden, sonst weicht die Haut sofort wieder auf. Pak Choi und Salat daneben. Lorbeerblätter liegen lassen oder herausnehmen.",
+              "action": "Reis auf die Teller geben, Sauce und weichen Knoblauch über den Reis löffeln und die Oberkeulen **mit der krossen Haut nach oben** daraufsetzen — nicht mehr in der Sauce wenden, sonst weicht die Haut sofort wieder auf.",
+              "limits": [
+                "mit der krossen Haut nach oben"
+              ],
+              "ingredients": [],
+              "meta": "*nach Haut grillen, Reis kochen, Salat*",
+              "attention": "active",
+              "after": [
+                "step:haut-grillen",
+                "step:reis-kochen",
+                "step:salat"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "kochtag",
+            "text": "Hähnchen vorbereiten, Anbraten",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT70M"
+            },
+            "source": "T−1:10",
+            "steps": [
+              "haehnchen-vorbereiten",
+              "anbraten"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Sauce ansetzen, dann Schmoren",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT55M"
+            },
+            "source": "T−0:55",
+            "steps": [
+              "sauce-ansetzen",
+              "schmoren"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Reis kochen, Salat, Pak Choi vorbereiten",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT40M"
+            },
+            "source": "T−0:40",
+            "steps": [
+              "reis-kochen",
+              "salat",
+              "pak-choi-vorbereiten"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Hähnchen aufs Blech, Grill vorheizen, Reduzieren",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT20M"
+            },
+            "source": "T−0:20",
+            "steps": [
+              "reduzieren"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Pak Choi garen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT13M"
+            },
+            "source": "T−0:13",
+            "steps": [
+              "pak-choi-garen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Sauce vom Herd, Haut grillen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT8M"
+            },
+            "source": "T−0:08",
+            "steps": [
+              "haut-grillen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Anrichten",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT3M"
+            },
+            "source": "T−0:03",
+            "steps": [
+              "anrichten"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Mild by design** — keine Schärfe, viel Sojasauce: trifft die Vorlieben. Die reduzierte Sauce ist aber salzig und säuerlich; fürs Kind nur 1 EL über den Reis und das Fleisch vom Knochen lösen.\n- **Pfefferkörner** vor dem Servieren von der Kinderportion absammeln — ein zerbissenes Korn ist für einen Dreijährigen scharf.\n- Der weich geschmorte Knoblauch ist mild und süßlich; anbieten.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "- **Schwangerschaft: ✅ direkt.** Kein Alkohol, kein rohes Ei, Hähnchen bei 85–90 °C weit über der 75-°C-Grenze. Tomaten, Gurke und Zwiebel für den Salat gründlich waschen.\n- **GDM:** Die Sauce ist zuckerfrei. KH-Träger ist nur der Reis: 50 g roh ≈ 38 g KH pro Portion. GDM-Teller: **40 g Reis roh (\\~110 g gekocht)**, dafür doppelt Pak Choi und Salat; mit zwei Oberkeulen steht reichlich Protein und Fett daneben. Wer es genauer nehmen will, kocht eine kleine Portion Basmati-Naturreis separat. Messen — die Reaktion auf Reis ist individuell.\n- **Salz:** Sojasauce reduziert sich stark ein; für sie die Sauce sparsam dosieren.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Wird am zweiten Tag besser:** Adobo ist ein klassisches Vorrats- und Reste-Essen, der Essig konserviert. Reste gekühlt 2 Tage (Schwangerschaft: dampfend heiß aufwärmen). Guter Kandidat für `mealprep/`.\n- **Schnellkochtopf (ungetestet):** Anbraten wie beschrieben im Bräter, dann alles mit nur 80 ml Wasser 10 Min. Hochdruck + 10 Min. natürlicher Druckabbau; die Sauce anschließend im Bräter oder in einer Pfanne reduzieren. Spart kaum Zeit — lohnt eher bei doppelter Menge.\n- **Variante *adobo sa gata*:** beim Reduzieren zusätzlich 200 ml Kokosmilch mit einkochen — cremiger, runder, schwerer.\n- **Variante Schwein:** 1 kg Schweinebauch oder -schulter in 4-cm-Würfeln, 60–75 Min. schmoren; Essig und Sojasauce bleiben gleich.",
+      "tags": [
+        "notizen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "Recherche 11/2026 über Websuche; die Rezepte wurden nicht im Volltext nachgekocht oder gegengelesen, die Zahlen stammen aus den Suchauszügen.\n\n- [Hot Thai Kitchen — Chicken Adobo](https://hot-thai-kitchen.com/?p=3900): 6 Oberkeulen mit Haut und Knochen, ¼ Tasse Sojasauce, ⅓ Tasse Zuckerrohressig (\\~1,3 : 1); Zuckerrohressig sei milder als Branntweinessig.\n- [Cooking Classy — Chicken Adobo](https://www.cookingclassy.com/?p=47181): je ½ Tasse Zuckerrohr- oder Reisessig und Sojasauce auf 6 Oberkeulen (1 : 1) — Beleg für Reisessig als Ersatz.\n- [Rasa Malaysia — Classic Chicken Adobo](https://rasamalaysia.com/classic-chicken-adobo-recipe/): 1 : 1; für „trockenes“ Adobo die Sauce fast vollständig einkochen.\n- [Christie at Home — Chicken Adobo](https://christieathome.com/blog/chicken-adobo/): 2 : 1 Essig zu Sojasauce; Essig zugeben und zunächst nicht rühren.\n- [RecipeTin Eats — Filipino Chicken Adobo](https://www.recipetineats.com/filipino-chicken-adobo/): weit verbreitete Version mit braunem Zucker und stark reduzierter Glasur — hier bewusst ohne Zucker.\n- **Eigene Entscheidungen:** Verhältnis 1,7 : 1 mit 70 ml Sojasauce und ungesalzenem Fleisch (nach Review 11/2026 von 80 ml + ½ TL Salz gesenkt), kein Zucker, Grill-Finish für die Haut, Basmati statt Jasminreis, Pak Choi als zweite Beilage. Wasser- und Reduktionsmengen sind Schätzungen und beim ersten Kochen zu prüfen.",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-11-26T15:04:29Z",
+    "sourceHash": "0d3cba1b25c88a10",
+    "quantities": [
+      {
+        "ingredient": "knoblauch",
+        "total": {
+          "text": "12",
+          "value": 12.0,
+          "max": 12.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "12 Zehen Knoblauch"
+        }
+      },
+      {
+        "ingredient": "tomaten",
+        "total": {
+          "text": "400 g",
+          "value": 400.0,
+          "max": 400.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "400 g Tomaten"
+        }
+      },
+      {
+        "ingredient": "salatgurke",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Salatgurke"
+        }
+      },
+      {
+        "ingredient": "zwiebel",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 kleine rote Zwiebel"
+        }
+      },
+      {
+        "ingredient": "pak",
+        "total": {
+          "text": "400 g",
+          "value": 400.0,
+          "max": 400.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "400 g Pak Choi"
+        }
+      },
+      {
+        "ingredient": "haehnchenoberkeulen",
+        "total": {
+          "text": "8",
+          "value": 8.0,
+          "max": 8.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "8 Hähnchenoberkeulen"
+        }
+      },
+      {
+        "ingredient": "basmatireis",
+        "total": {
+          "text": "200 g",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "200 g Basmatireis"
+        }
+      },
+      {
+        "ingredient": "reisessig",
+        "total": {
+          "text": "150 ml",
+          "value": 150.0,
+          "max": 150.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "120 ml Reisessig + 1 EL Reisessig + 1 EL Reisessig"
+        }
+      },
+      {
+        "ingredient": "sojasauce",
+        "total": {
+          "text": "70 ml",
+          "value": 70.0,
+          "max": 70.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "70 ml Sojasauce"
+        }
+      },
+      {
+        "ingredient": "lorbeerblaetter",
+        "total": {
+          "text": "4",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "4 Lorbeerblätter"
+        }
+      },
+      {
+        "ingredient": "pfefferkoerner",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 TL Pfefferkörner"
+        }
+      },
+      {
+        "ingredient": "oel",
+        "total": {
+          "text": "1 EL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 EL Öl"
+        }
+      },
+      {
+        "ingredient": "sesamoel",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 TL Sesamöl"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "½ TL + 1 Prise",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "TL",
+          "approx": false,
+          "plus": [
+            {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "main": "1 Prise Salz + ½ TL Salz"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "480–495 ml",
+          "value": 480.0,
+          "max": 495.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "150 ml Wasser + 300 ml Wasser + 2–3 EL Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "REWE Center",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "knoblauch",
+            "name": "große Knolle Knoblauch",
+            "need": {
+              "text": "12",
+              "value": 12.0,
+              "max": 12.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "12",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "12 Zehen; sonst 2 kleine Knollen"
+          },
+          {
+            "ingredient": "tomaten",
+            "name": "Tomaten",
+            "need": {
+              "text": "400 g",
+              "value": 400.0,
+              "max": 400.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "400 g",
+            "inStock": false,
+            "buy": {
+              "text": "400 g"
+            },
+            "note": "reif, fest"
+          },
+          {
+            "ingredient": "salatgurke",
+            "name": "Salatgurke",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            }
+          },
+          {
+            "ingredient": "zwiebel",
+            "name": "kleine rote Zwiebel",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            }
+          },
+          {
+            "ingredient": "pak",
+            "name": "Pak Choi",
+            "need": {
+              "text": "400 g",
+              "value": 400.0,
+              "max": 400.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "400 g",
+            "inStock": false,
+            "buy": {
+              "text": "400 g"
+            },
+            "note": "2–3 Stück"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "haehnchenoberkeulen",
+            "name": "Hähnchenoberkeulen mit Haut und Knochen",
+            "need": {
+              "text": "8",
+              "value": 8.0,
+              "max": 8.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "8",
+            "inStock": false,
+            "buy": {
+              "text": "1,3 kg"
+            },
+            "note": "8 Stück"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "basmatireis",
+            "name": "Basmatireis",
+            "need": {
+              "text": "200 g",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "200 g",
+            "inStock": false,
+            "buy": {
+              "text": "200 g"
+            }
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "reisessig",
+            "name": "Reisessig",
+            "need": {
+              "text": "150 ml",
+              "value": 150.0,
+              "max": 150.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "150 ml",
+            "inStock": false,
+            "buy": {
+              "text": "150 ml"
+            },
+            "pantry": true,
+            "note": "ungewürzt; oder Apfelessig"
+          },
+          {
+            "ingredient": "sojasauce",
+            "name": "Sojasauce",
+            "need": {
+              "text": "70 ml",
+              "value": 70.0,
+              "max": 70.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "70 ml",
+            "inStock": false,
+            "buy": {
+              "text": "70 ml"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "lorbeerblaetter",
+            "name": "Lorbeerblätter",
+            "need": {
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "4",
+            "inStock": false,
+            "buy": {
+              "text": "4"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "pfefferkoerner",
+            "name": "schwarze Pfefferkörner",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 TL"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "oel",
+            "name": "neutrales Öl",
+            "need": {
+              "text": "1 EL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "1 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 EL"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "sesamoel",
+            "name": "Sesamöl",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 TL"
+            },
+            "pantry": true,
+            "note": "Pak Choi, optional"
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "½ TL + 1 Prise",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "TL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "1 Prise",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "Prise",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "½ TL + 1 Prise",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "480–495 ml",
+              "value": 480.0,
+              "max": 495.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "480–495 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}
