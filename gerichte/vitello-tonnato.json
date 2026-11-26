@@ -1,0 +1,1450 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/vitello-tonnato",
+  "kind": "dish",
+  "title": "Vitello tonnato — rosa Kalbsnuss mit Thunfisch-Kapern-Sauce (4 Portionen als Hauptgang, 6–8 als Vorspeise)",
+  "status": "wip",
+  "yields": {
+    "text": "4 Portionen als Hauptgang, 6–8 als Vorspeise",
+    "value": 4.0,
+    "unit": "Portionen"
+  },
+  "statusNote": "> [!NOTE]\n> **Status: In Arbeit** — ausgearbeitet 11/2026, noch nicht gekocht. **Nicht während der Schwangerschaft** (Thunfisch, rosa Kalb, Sardellen) — Rezept für danach oder für Gäste. Zu prüfen: Garzeit bei 80 °C im eigenen Ofen, Konsistenz und Bindung der Sauce ohne Mayonnaise, Salzigkeit (8 g Salz am Fleisch), Schneiden ohne Aufschnittmaschine.",
+  "intro": "*Aktive Zeit \\~50 Min., gesamt \\~24 Std. (Vortag \\~3 Std., am Tag ab 2,5 Std. vor dem Essen). Equipment: schwere Pfanne, Backblech mit Gitter, Fleischthermometer, Küchenmaschine mit Mixer-Aufsatz (oder Stabmixer mit hohem Becher), Schneebesen, kleiner Topf, langes scharfes Messer.*\n\nPiemonteser Klassiker und das Gegenteil von Last-Minute-Küche: Das Kalb wird am Vortag gegart und durchgekühlt, die Sauce am Vortag gemixt — am Tag selbst wird nur noch aufgeschnitten und nappiert, dann zieht die Platte durch. Hauchdünne, rosa Kalbsscheiben unter einer samtigen Sauce aus Thunfisch, Sardellen, Kapern und Zitrone: salzig, säuerlich, voller Umami, komplett kalt serviert.",
+  "times": {
+    "text": "Aktive Zeit ~50 Min., gesamt ~24 Std.",
+    "active": {
+      "typical": "PT50M",
+      "source": "50 Min."
+    },
+    "total": {
+      "typical": "PT24H",
+      "source": "24 Std."
+    }
+  },
+  "equipment": [
+    "schwere Pfanne",
+    "Backblech mit Gitter",
+    "Fleischthermometer",
+    "Küchenmaschine mit Mixer-Aufsatz (oder Stabmixer mit hohem Becher)",
+    "Schneebesen",
+    "kleiner Topf",
+    "langes scharfes Messer"
+  ],
+  "ingredients": [
+    {
+      "id": "zitronen",
+      "name": "Zitronen",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "note": "1 für die Sauce, 1 in Spalten"
+    },
+    {
+      "id": "rucola",
+      "name": "Rucola",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "80 g"
+      }
+    },
+    {
+      "id": "kalbsnuss",
+      "name": "Kalbsnuss am Stück",
+      "store": "REWE Center",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "1 kg"
+      },
+      "note": "pariert; vorbestellen, Fallback Selgros"
+    },
+    {
+      "id": "eier",
+      "name": "Eier",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "3"
+      }
+    },
+    {
+      "id": "thunfisch",
+      "name": "Thunfisch in Olivenöl",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "220 g"
+      },
+      "note": "Abtropfgewicht; 2 Gläser/Dosen — 2 EL vom Öl werden gebraucht"
+    },
+    {
+      "id": "sardellenfilets",
+      "name": "Sardellenfilets in Öl",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 Glas"
+      },
+      "note": "5 Filets"
+    },
+    {
+      "id": "kapern",
+      "name": "kleine Kapern in Lake",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 Glas"
+      },
+      "note": "3 EL"
+    },
+    {
+      "id": "kapernaepfel",
+      "name": "Kapernäpfel",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1 Glas"
+      },
+      "note": "12 Stück"
+    },
+    {
+      "id": "ciabatta",
+      "name": "Ciabatta",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "1"
+      }
+    },
+    {
+      "id": "olivenoel",
+      "name": "mildes Olivenöl",
+      "store": "Vorrat",
+      "buy": {
+        "text": "3 EL"
+      },
+      "pantry": true
+    },
+    {
+      "id": "oel",
+      "name": "neutrales Öl",
+      "store": "Vorrat",
+      "buy": {
+        "text": "65 ml"
+      },
+      "pantry": true,
+      "note": "1 EL Anbraten, 50 ml Sauce"
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1½ TL"
+      },
+      "pantry": true,
+      "note": "8 g fürs Fleisch"
+    },
+    {
+      "id": "weisser-pfeffer",
+      "name": "Weißer Pfeffer",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "pfeffer",
+      "name": "Pfeffer",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "schwarz, aus der Mühle"
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Stil-Entscheidung",
+      "level": 2,
+      "markdown": "- **Niedrigtemperatur-Ofen statt Pochieren.** Das Original zieht das Kalb im Gemüsesud gar und lässt es darin erkalten. Hier: rundum kurz anbraten, dann bei 80 °C im Ofen auf **58 °C Kern** — gleichmäßig rosa von Rand zu Rand, saftiger, „sous-vide-artig“ ohne Gerät. Preis dafür: kein Pochiersud zum Verdünnen der Sauce (→ Wasser) und etwas Röstaroma am Rand, das das Original nicht hat.\n- **Sauce mit hartgekochtem Eigelb, ohne Mayonnaise.** Die verbreitete Version rührt Thunfisch in Mayonnaise; die ältere Piemonteser Form bindet mit gekochtem Eigelb und Olivenöl. Sie schmeckt klarer nach Thunfisch und Kapern, ist weniger schwer und enthält kein rohes Ei. Hartgekochtes Eigelb emulgiert schwächer als rohes — deshalb der Standmixer-Aufsatz der Küchenmaschine und neutrales Öl für die Emulsion; das Olivenöl wird am Ende von Hand eingerührt (im Mixer wird es bitter).\n- **Kalbsnuss** (oder Kalbsrolle/Semerrolle, ital. *girello*): mager, kompakt, gleichmäßig rund — lässt sich dünn schneiden. Keine Schulter (zu viel Bindegewebe für rosa).\n- **Über Nacht kühlen, 30 Min. anfrieren, dann schneiden.** Ohne Aufschnittmaschine entscheidet die Festigkeit des Fleischs über die Scheibendicke (Trick aus dem Bulgogi).\n- **Sauce am Vortag:** Sie braucht Stunden, bis sich Sardelle, Kaper und Thunfisch verbinden; frisch gemixt schmeckt sie spitz.\n- **Nappiert durchziehen lassen und temperieren:** 60–90 Min. im Kühlschrank, dann 20 Min. bei Raumtemperatur. Am Tag also \\~2,5 Std. vor dem Essen anfangen — aktiv sind davon nur 25 Min.",
+      "tags": [
+        "stil"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Kalbsnuss am Stück, \\~1 kg, pariert:** REWE Center an der Theke **vorbestellen** (Kalb am Stück liegt nicht verlässlich aus). Sichere Quelle: Selgros (Kalbsnuss, Kalbsoberschale oder Kalbsrolle). Form zählt mehr als der Name: ein gleichmäßig dickes, längliches Stück, Ø 8–10 cm.\n- **Thunfisch:** Die Sauce steht und fällt damit. Filets in **Olivenöl** aus dem Glas oder einer guten Dose (z. B. Ortiz, Callipo, Rio Mare Filetti) — kein Thunfisch in Wasser oder Sonnenblumenöl, keine „Stückchen“. REWE Center/Feinkostregal; notfalls online.\n- **Sardellenfilets in Öl**, kleine Kapern (*nonpareilles*) in Lake (Salzkapern gehen, müssen aber 15 Min. gewässert werden), Kapernäpfel mit Stiel für die Garnitur: REWE Center.\n- **Olivenöl:** mild und fruchtig (ligurischer Typ), nur 3 EL — es wird von Hand eingerührt. Das Öl aus einem guten Thunfischglas wird mitverwendet.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "kalb",
+          "name": "Kalb",
+          "steps": [
+            {
+              "id": "salzen",
+              "label": "1",
+              "heading": "**1. Salzen (5 Min. + 60 Min. passiv)**",
+              "title": "Salzen",
+              "duration": {
+                "typical": "PT1H5M",
+                "source": "5 Min. + 60 Min."
+              },
+              "attention": "passive",
+              "text": "Kalbsnuss (1 kg) trocken tupfen, rundum mit 1½ TL Salz (8 g) einreiben und 1 Std. bei Raumtemperatur liegen lassen. Ofen auf 80 °C Ober-/Unterhitze vorheizen, Gitter auf das Backblech setzen. *Bewusst etwas unter 1 % Salz — Thunfisch, Sardellen und Kapern in der Sauce salzen kräftig mit.*",
+              "action": "Kalbsnuss (1 kg) trocken tupfen, rundum mit 1½ TL Salz (8 g) einreiben und 1 Std. bei Raumtemperatur liegen lassen.",
+              "why": "Bewusst etwas unter 1 % Salz — Thunfisch, Sardellen und Kapern in der Sauce salzen kräftig mit.",
+              "timers": [
+                {
+                  "label": "Salzen",
+                  "duration": {
+                    "typical": "PT1H"
+                  },
+                  "text": "1 Std."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ofen",
+                  "text": "80 °C",
+                  "value": 80
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1½ TL Salz",
+                    "value": 1.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "kalbsnuss",
+                  "amount": {
+                    "text": "1 kg",
+                    "value": 1.0,
+                    "unit": "kg"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "after": []
+            },
+            {
+              "id": "anbraten",
+              "label": "2",
+              "heading": "**2. Anbraten (6 Min.)**",
+              "title": "Anbraten",
+              "duration": {
+                "typical": "PT6M",
+                "source": "6 Min."
+              },
+              "text": "Kalbsnuss nochmals trocken tupfen und in 1 EL neutralem Öl in der schweren Pfanne bei hoher Hitze rundum je 1 Min. anbraten, auch die Enden — **nur Farbe, nicht garen**. *Tötet Oberflächenkeime ab und bringt Röstaroma; der Kern bleibt roh.*",
+              "action": "Kalbsnuss nochmals trocken tupfen und in 1 EL neutralem Öl in der schweren Pfanne bei hoher Hitze rundum je 1 Min. anbraten, auch die Enden — **nur Farbe, nicht garen**.",
+              "limits": [
+                "nur Farbe, nicht garen"
+              ],
+              "why": "Tötet Oberflächenkeime ab und bringt Röstaroma; der Kern bleibt roh.",
+              "ingredients": [
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "1 EL neutralem Öl",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                }
+              ],
+              "meta": "*nach Salzen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Anbraten",
+                  "duration": {
+                    "typical": "PT6M"
+                  },
+                  "text": "6 Min."
+                }
+              ],
+              "after": [
+                "step:salzen"
+              ]
+            },
+            {
+              "id": "niedrigtemperatur-garen",
+              "label": "3",
+              "heading": "**3. Niedrigtemperatur-Garen (2–2,5 Std., passiv)**",
+              "title": "Niedrigtemperatur-Garen",
+              "duration": {
+                "min": "PT2H",
+                "max": "PT2H30M",
+                "source": "2–2,5 Std."
+              },
+              "attention": "passive",
+              "text": "Kalbsnuss auf das Gitter setzen, Thermometer in die Mitte der dicksten Stelle stecken und im Ofen bei 80 °C garen, bis der Kern **58 °C** erreicht. Nach 90 Min. das erste Mal ablesen.\n\n> **Garpunkt:** 58 °C = gleichmäßig rosa, saftig. Bei 80 °C Ofentemperatur zieht das Fleisch kaum nach (1–2 °C). Wer es weniger rosa mag: 60–62 °C. Über 65 °C wird Kalbsnuss trocken und grau.\n\n> **Ofen-Check:** Viele Öfen halten 80 °C ungenau. Steigt der Kern in der ersten Stunde schneller als auf 40 °C, läuft der Ofen zu heiß — auf 70 °C herunterdrehen.",
+              "action": "Kalbsnuss auf das Gitter setzen, Thermometer in die Mitte der dicksten Stelle stecken und im Ofen bei 80 °C garen, bis der Kern **58 °C** erreicht.",
+              "limits": [
+                "58 °C"
+              ],
+              "cues": [
+                "bis der Kern"
+              ],
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT1H30M",
+                    "source": "90 Min."
+                  },
+                  "text": "Nach 90 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ofen",
+                  "text": "80 °C",
+                  "value": 80
+                },
+                {
+                  "kind": "kern",
+                  "text": "58 °C",
+                  "value": 58
+                },
+                {
+                  "kind": "ziel",
+                  "text": "58 °C",
+                  "value": 58
+                },
+                {
+                  "kind": "ziel",
+                  "text": "80 °C",
+                  "value": 80
+                },
+                {
+                  "kind": "ziel",
+                  "text": "1–2 °C",
+                  "min": 1,
+                  "max": 2
+                },
+                {
+                  "kind": "ziel",
+                  "text": "60–62 °C",
+                  "min": 60,
+                  "max": 62
+                },
+                {
+                  "kind": "max",
+                  "text": "65 °C",
+                  "value": 65
+                },
+                {
+                  "kind": "halten",
+                  "text": "80 °C",
+                  "value": 80
+                },
+                {
+                  "kind": "ziel",
+                  "text": "40 °C",
+                  "value": 40
+                },
+                {
+                  "kind": "ofen",
+                  "text": "70 °C",
+                  "value": 70
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Anbraten · Ofen 80 °C · fertig bei 58 °C Kern*",
+              "claims": [
+                {
+                  "resource": "oven",
+                  "temp": 80
+                }
+              ],
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei 58 °C Kern",
+                "value": 58
+              },
+              "timers": [
+                {
+                  "label": "Niedrigtemperatur-Garen",
+                  "duration": {
+                    "min": "PT2H",
+                    "max": "PT2H30M"
+                  },
+                  "text": "2–2,5 Std."
+                }
+              ],
+              "after": [
+                "step:anbraten"
+              ]
+            },
+            {
+              "id": "kuehlen",
+              "label": "4",
+              "heading": "**4. Kühlen (über Nacht, passiv)**",
+              "title": "Kühlen",
+              "duration": {
+                "min": "PT8H",
+                "max": "PT14H",
+                "source": "über Nacht"
+              },
+              "attention": "passive",
+              "text": "Kalbsnuss 20 Min. auf dem Gitter ausdampfen lassen, dann straff in Frischhaltefolie wickeln und über Nacht in den Kühlschrank legen. *Straff gewickelt wird das Stück rund und fest — Voraussetzung fürs dünne Schneiden.*",
+              "action": "Kalbsnuss 20 Min. auf dem Gitter ausdampfen lassen, dann straff in Frischhaltefolie wickeln und über Nacht in den Kühlschrank legen.",
+              "why": "Straff gewickelt wird das Stück rund und fest — Voraussetzung fürs dünne Schneiden.",
+              "timers": [
+                {
+                  "label": "Kühlen",
+                  "duration": {
+                    "typical": "PT20M"
+                  },
+                  "text": "20 Min."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Niedrigtemperatur-Garen*",
+              "after": [
+                "step:niedrigtemperatur-garen"
+              ]
+            }
+          ],
+          "heading": "**Kalb (Vortag, über Nacht im Kühlschrank):**",
+          "phaseHint": "Vortag",
+          "produces": [
+            {
+              "id": "kalb",
+              "name": "Kalb",
+              "storage": {
+                "place": "fridge"
+              }
+            }
+          ]
+        },
+        {
+          "id": "tonnato-sauce",
+          "name": "Tonnato-Sauce",
+          "steps": [
+            {
+              "id": "eier-kochen",
+              "label": "5",
+              "heading": "**5. Eier kochen (12 Min.)**",
+              "title": "Eier kochen",
+              "duration": {
+                "typical": "PT12M",
+                "source": "12 Min."
+              },
+              "text": "3 Eier in kochendes Wasser legen und 10 Min. hart kochen, abschrecken, schälen und die Eigelbe auslösen. Das Eiweiß wird nicht gebraucht.",
+              "action": "3 Eier in kochendes Wasser legen und 10 Min. hart kochen, abschrecken, schälen und die Eigelbe auslösen.",
+              "timers": [
+                {
+                  "label": "Eier kochen",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "eier",
+                  "amount": {
+                    "text": "3 Eier",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "sauce-mixen",
+              "label": "6",
+              "heading": "**6. Sauce mixen (12 Min.)**",
+              "title": "Sauce mixen",
+              "duration": {
+                "typical": "PT12M",
+                "source": "12 Min."
+              },
+              "text": "220 g Thunfisch abtropfen lassen und dabei 2 EL vom Öl aus dem Glas auffangen. Thunfisch, die 3 Eigelbe, 5 Sardellenfilets, 2 EL abgetropfte Kapern, 3 EL Zitronensaft und 60 ml kaltes Wasser im Mixer-Aufsatz der Küchenmaschine fein pürieren. Bei laufendem Mixer 50 ml neutrales Öl durch die Deckelöffnung einlaufen lassen, bis die Sauce glatt und cremig ist. In eine Schüssel umfüllen und **von Hand** mit dem Schneebesen das aufgefangene Thunfisch-Öl und 2 EL mildes Olivenöl unterrühren. Abschmecken: 1 Prise weißer Pfeffer, erst danach salzen — meist ist kein Salz nötig. Abgedeckt kalt stellen.\n\n> **Warum zwei Öle:** Natives Olivenöl wird unter den Scherkräften eines Mixers spürbar bitter. Deshalb emulgiert der Mixer mit neutralem Öl, das Olivenöl kommt zum Schluss von Hand dazu — Geschmack ohne Bitternote.\n\n> **Kapern:** Kapern aus der Lake nur abtropfen. Salzkapern **15 Min. wässern** und abspülen, sonst ist die Sauce versalzen.\n\n> **Mit dem Stabmixer:** geht im hohen Becher, aber das Öl nicht im Strahl, sondern in 3–4 Portionen zugeben und jeweils einmixen.\n\n> **Konsistenz:** Wie flüssige Sahne, die langsam vom Löffel läuft — sie zieht im Kühlschrank nach. Zu dick: esslöffelweise Wasser einrühren. Zu flach: Zitrone. Zu fischig-spitz: ruhen lassen, das gibt sich über Nacht.",
+              "action": "220 g Thunfisch abtropfen lassen und dabei 2 EL vom Öl aus dem Glas auffangen.",
+              "limits": [
+                "von Hand",
+                "15 Min. wässern"
+              ],
+              "cues": [
+                "bis die Sauce glatt und cremig ist"
+              ],
+              "ingredients": [
+                {
+                  "ref": "thunfisch",
+                  "amount": {
+                    "text": "220 g Thunfisch",
+                    "value": 220.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "sardellenfilets",
+                  "amount": {
+                    "text": "5 Sardellenfilets",
+                    "value": 5.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "kapern",
+                  "amount": {
+                    "text": "2 EL abgetropfte Kapern",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "3 EL Zitronensaft",
+                    "value": 3.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "60 ml kaltes Wasser",
+                    "value": 60.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "oel",
+                  "amount": {
+                    "text": "50 ml neutrales Öl",
+                    "value": 50.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "2 EL mildes Olivenöl",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "weisser-pfeffer",
+                  "amount": {
+                    "text": "1 Prise weißer Pfeffer",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                }
+              ],
+              "meta": "*nach Eier kochen*",
+              "attention": "active",
+              "after": [
+                "step:eier-kochen"
+              ]
+            }
+          ],
+          "heading": "**Tonnato-Sauce (Vortag, hält 2 Tage im Kühlschrank):**",
+          "phaseHint": "Vortag",
+          "produces": [
+            {
+              "id": "tonnato-sauce",
+              "name": "Tonnato-Sauce",
+              "hold": {
+                "max": "P2D",
+                "source": "Vortag, hält 2 Tage im Kühlschrank"
+              },
+              "storage": {
+                "place": "fridge"
+              }
+            }
+          ]
+        },
+        {
+          "id": "aufschnitt",
+          "name": "Aufschnitt",
+          "steps": [
+            {
+              "id": "anfrieren",
+              "label": "7",
+              "heading": "**7. Anfrieren (30 Min., passiv)**",
+              "title": "Anfrieren",
+              "duration": {
+                "typical": "PT30M",
+                "source": "30 Min."
+              },
+              "attention": "passive",
+              "text": "Kalbsnuss in der Folie 30 Min. ins Gefrierfach legen, eine große Platte in den Kühlschrank stellen. *Der Rand wird fest, das Messer rutscht nicht — die Scheiben werden deutlich dünner.*",
+              "action": "Kalbsnuss in der Folie 30 Min. ins Gefrierfach legen, eine große Platte in den Kühlschrank stellen.",
+              "why": "Der Rand wird fest, das Messer rutscht nicht — die Scheiben werden deutlich dünner.",
+              "timers": [
+                {
+                  "label": "Anfrieren",
+                  "duration": {
+                    "typical": "PT30M"
+                  },
+                  "text": "30 Min."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Kühlen*",
+              "after": [
+                "step:kuehlen"
+              ]
+            },
+            {
+              "id": "aufschneiden",
+              "label": "8",
+              "heading": "**8. Aufschneiden (10 Min.)**",
+              "title": "Aufschneiden",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Kalbsnuss auswickeln und mit dem langen Messer quer zur Faser in 2–3 mm dünne Scheiben schneiden, mit langen, ziehenden Schnitten ohne Druck. Sauce aus dem Kühlschrank nehmen, durchrühren und die Konsistenz prüfen.",
+              "action": "Kalbsnuss auswickeln und mit dem langen Messer quer zur Faser in 2–3 mm dünne Scheiben schneiden, mit langen, ziehenden Schnitten ohne Druck.",
+              "ingredients": [],
+              "meta": "*nach Anfrieren*",
+              "attention": "active",
+              "after": [
+                "step:anfrieren"
+              ]
+            },
+            {
+              "id": "nappieren",
+              "label": "9",
+              "heading": "**9. Nappieren (10 Min.)**",
+              "title": "Nappieren",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Scheiben leicht überlappend auf der kalten Platte auslegen und mit der Sauce so überziehen, dass der Rand des Fleischs sichtbar bleibt. Mit Frischhaltefolie abdecken.",
+              "action": "Scheiben leicht überlappend auf der kalten Platte auslegen und mit der Sauce so überziehen, dass der Rand des Fleischs sichtbar bleibt.",
+              "ingredients": [],
+              "meta": "*nach Aufschneiden, Sauce mixen*",
+              "attention": "active",
+              "after": [
+                "step:aufschneiden",
+                "step:sauce-mixen"
+              ]
+            },
+            {
+              "id": "durchziehen",
+              "label": "10",
+              "heading": "**10. Durchziehen (60–90 Min., passiv)**",
+              "title": "Durchziehen",
+              "duration": {
+                "min": "PT1H",
+                "max": "PT1H30M",
+                "source": "60–90 Min."
+              },
+              "attention": "passive",
+              "text": "Die abgedeckte Platte 60–90 Min. in den Kühlschrank stellen. **20 Min. vor dem Essen herausnehmen** und bei Raumtemperatur stehen lassen. *Die Sauce zieht ins Fleisch, und angefrorenes Fleisch direkt aus dem Kühlschrank schmeckt nach nichts — kalt serviert heißt kühl, nicht eiskalt.*",
+              "action": "Die abgedeckte Platte 60–90 Min. in den Kühlschrank stellen.",
+              "limits": [
+                "20 Min. vor dem Essen herausnehmen"
+              ],
+              "why": "Die Sauce zieht ins Fleisch, und angefrorenes Fleisch direkt aus dem Kühlschrank schmeckt nach nichts — kalt serviert heißt kühl, nicht eiskalt.",
+              "timers": [
+                {
+                  "label": "Durchziehen",
+                  "duration": {
+                    "min": "PT1H",
+                    "max": "PT1H30M"
+                  },
+                  "text": "60–90 Min."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Nappieren*",
+              "after": [
+                "step:nappieren"
+              ]
+            },
+            {
+              "id": "anrichten",
+              "label": "11",
+              "heading": "**11. Anrichten (5 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Mit 1 EL Kapern, 12 Kapernäpfeln und 1 Prise Pfeffer aus der Mühle bestreuen. 80 g Rucola mit 2 TL mildem Olivenöl und 1 TL Zitronensaft anmachen und danebensetzen, 1 Zitrone in Spalten und 1 Ciabatta in Scheiben dazu reichen.",
+              "action": "Mit 1 EL Kapern, 12 Kapernäpfeln und 1 Prise Pfeffer aus der Mühle bestreuen.",
+              "ingredients": [
+                {
+                  "ref": "kapern",
+                  "amount": {
+                    "text": "1 EL Kapern",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "kapernaepfel",
+                  "amount": {
+                    "text": "12 Kapernäpfeln",
+                    "value": 12.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "1 Prise Pfeffer",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                },
+                {
+                  "ref": "rucola",
+                  "amount": {
+                    "text": "80 g Rucola",
+                    "value": 80.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "2 TL mildem Olivenöl",
+                    "value": 2.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "1 TL Zitronensaft",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "1 Zitrone",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "ciabatta",
+                  "amount": {
+                    "text": "1 Ciabatta",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*nach Durchziehen*",
+              "attention": "active",
+              "after": [
+                "step:durchziehen"
+              ]
+            }
+          ],
+          "heading": "**Aufschnitt (am Tag, ca. 2,5 Std. vor dem Essen):**",
+          "phaseHint": "am Tag",
+          "produces": [
+            {
+              "id": "aufschnitt",
+              "name": "Aufschnitt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "vortag",
+            "label": "Vortag",
+            "day": -1
+          },
+          {
+            "id": "am-tag",
+            "label": "Am Tag",
+            "day": 0
+          }
+        ],
+        "entries": [
+          {
+            "phase": "vortag",
+            "text": "Kalb",
+            "tasks": [
+              "kalb"
+            ],
+            "steps": [
+              "salzen",
+              "anbraten",
+              "niedrigtemperatur-garen",
+              "kuehlen"
+            ]
+          },
+          {
+            "phase": "vortag",
+            "text": "Tonnato-Sauce",
+            "tasks": [
+              "tonnato-sauce"
+            ],
+            "steps": [
+              "eier-kochen",
+              "sauce-mixen"
+            ]
+          },
+          {
+            "phase": "am-tag",
+            "text": "Anfrieren",
+            "steps": [
+              "anfrieren"
+            ]
+          },
+          {
+            "phase": "am-tag",
+            "text": "Aufschneiden",
+            "steps": [
+              "aufschneiden"
+            ]
+          },
+          {
+            "phase": "am-tag",
+            "text": "Nappieren",
+            "steps": [
+              "nappieren"
+            ]
+          },
+          {
+            "phase": "am-tag",
+            "text": "Durchziehen",
+            "steps": [
+              "durchziehen"
+            ]
+          },
+          {
+            "phase": "am-tag",
+            "text": "Anrichten",
+            "steps": [
+              "anrichten"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Kein Schärfethema.** Kind isst Oliven und Sojasauce — die salzig-umamige Sauce hat gute Chancen. Erst wenig Sauce neben das Fleisch statt darüber.\n- Rosa Kalb bei 58 °C ist für ein gesundes Kleinkind eine Abwägung, die die Eltern treffen: wer vorsichtig sein will, brät 2–3 Scheiben kurz in der Pfanne durch.\n- Kapernäpfel halbieren (Größe), Thunfisch wegen Quecksilber für Kleinkinder nur gelegentlich — eine kleine Portion Sauce ist unkritisch.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "- **Schwangerschaft: ❌ — nicht anpassbar, ohne das Gericht aufzugeben.** Drei Treffer aus dem [Leitfaden](/schwangerschaft/leitfaden.md): **Thunfisch** (Methylquecksilber, auch aus der Dose — er *ist* die Sauce), **rosa Kalb bei 58 °C** (Toxoplasmose/Listerien; verlangt wären ≥ 70 °C, dann ist die Nuss trocken) und **nicht erhitzte Sardellen**. Das Eigelb ist hier hartgekocht und wäre unkritisch.\n- **GDM:** wäre ideal — praktisch kohlenhydratfrei bis auf das Brot. Hilft nur nichts.\n- **Für später vormerken:** erstes Gäste-Essen nach der Geburt, als Vorspeise für 6–8 oder als Sommer-Hauptgang.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Mengen als Vorspeise:** 1 kg Kalbsnuss ergibt nach Garverlust \\~800 g, also 6–8 Vorspeisen à 100–130 g oder 4 Hauptgänge à 200 g.\n- **Haltbarkeit:** Fleisch am Stück gekühlt 3 Tage, Sauce 2 Tage. Aufgeschnitten und nappiert am selben Tag essen.\n- **Reste:** Tonnato-Sauce ist ein hervorragender Dip für Rohkost, zu gekochten Eiern oder kalten Kartoffeln; Fleischreste auf Brot mit Sauce und Rucola (*tramezzino*).\n- **Variante klassisch pochiert:** Kalb in einem Sud aus 2 l Wasser, 1 Karotte, 1 Stange Sellerie, 1 Zwiebel, 2 Lorbeerblättern und 200 ml Weißwein bei 80–85 °C auf 60 °C Kern ziehen und im Sud erkalten lassen; die Sauce mit dem Sud statt mit Wasser verdünnen.\n- **Das übrige Eiweiß** der 3 Eier: gehackt über einen Salat.",
+      "tags": [
+        "notizen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "Recherche 11/2026 über Websuche; die Rezepte wurden nicht im Volltext gegengelesen.\n\n- **Zuschnitt und Garpunkt:** Italienische Quellen nennen *girello* als traditionellen Zuschnitt (kompakt, gut zu schneiden) und empfehlen ein Stichthermometer; die Kerntemperaturen streuen von „nicht über 58–60 °C“ bis 65–70 °C — u. a. [Dissapore — Vitello tonnato, la ricetta tipica piemontese](https://www.dissapore.com/ricette/vitello-tonnato/), [Dissapore — 5 errori](https://www.dissapore.com/grande-notizia/vitello-tonnato-5-errori-da-non-fare/), [Ricette dal Mondo](https://www.ricettedalmondo.it/vitello-tonnato.html), [Sky TG24 — ricetta originale](https://tg24.sky.it/lifestyle/ricette/vitello-tonnato-ricetta-originale). Hier das untere Ende (58 °C) für durchgehend rosa.\n- **Ohne Mayonnaise:** Mehrere der Quellen betonen, dass die traditionelle Piemonteser Sauce keine Mayonnaise enthält; Thunfisch, Sardellen und Kapern sind die Basis. Fleisch vor dem Schneiden vollständig durchkühlen.\n- **Nicht durch die Recherche belegt, sondern Küchenwissen bzw. eigene Entscheidung:** die Bindung mit hartgekochtem Eigelb (verbreitete „alla maniera antica“-Variante — in den Suchauszügen nicht bestätigt), die Mengen der Sauce und die Öl-Aufteilung (neutral im Mixer, Olivenöl von Hand — nach Review 11/2026), 80 °C Ofentemperatur und die Zeit von 2–2,5 Std., das Anfrieren vor dem Schneiden. Beim ersten Kochen prüfen und hier nachtragen.",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-11-26T14:57:33Z",
+    "sourceHash": "4934a28ad937e3f9",
+    "quantities": [
+      {
+        "ingredient": "zitronen",
+        "total": {
+          "text": "1 + 3 EL + 1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false,
+          "plus": [
+            {
+              "text": "3 EL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "EL",
+              "approx": false
+            },
+            {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "tonnato-sauce": "3 EL Zitronensaft",
+          "aufschnitt": "1 TL Zitronensaft + 1 Zitrone"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "rucola",
+        "total": {
+          "text": "80 g",
+          "value": 80.0,
+          "max": 80.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "aufschnitt": "80 g Rucola"
+        }
+      },
+      {
+        "ingredient": "kalbsnuss",
+        "total": {
+          "text": "1000 g",
+          "value": 1000.0,
+          "max": 1000.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "kalb": "1 kg"
+        }
+      },
+      {
+        "ingredient": "eier",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "tonnato-sauce": "3 Eier"
+        }
+      },
+      {
+        "ingredient": "thunfisch",
+        "total": {
+          "text": "220 g",
+          "value": 220.0,
+          "max": 220.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "tonnato-sauce": "220 g Thunfisch"
+        }
+      },
+      {
+        "ingredient": "sardellenfilets",
+        "total": {
+          "text": "5",
+          "value": 5.0,
+          "max": 5.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "tonnato-sauce": "5 Sardellenfilets"
+        }
+      },
+      {
+        "ingredient": "kapern",
+        "total": {
+          "text": "3 EL",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "tonnato-sauce": "2 EL abgetropfte Kapern",
+          "aufschnitt": "1 EL Kapern"
+        }
+      },
+      {
+        "ingredient": "kapernaepfel",
+        "total": {
+          "text": "12",
+          "value": 12.0,
+          "max": 12.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "aufschnitt": "12 Kapernäpfeln"
+        }
+      },
+      {
+        "ingredient": "ciabatta",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "aufschnitt": "1 Ciabatta"
+        }
+      },
+      {
+        "ingredient": "olivenoel",
+        "total": {
+          "text": "2 EL + 2 TL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false,
+          "plus": [
+            {
+              "text": "2 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "tonnato-sauce": "2 EL mildes Olivenöl",
+          "aufschnitt": "2 TL mildem Olivenöl"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "oel",
+        "total": {
+          "text": "65 ml",
+          "value": 65.0,
+          "max": 65.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "kalb": "1 EL neutralem Öl",
+          "tonnato-sauce": "50 ml neutrales Öl"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "1½ TL",
+          "value": 1.5,
+          "max": 1.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "kalb": "1½ TL Salz"
+        }
+      },
+      {
+        "ingredient": "weisser-pfeffer",
+        "total": {
+          "text": "1 Prise",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Prise",
+          "approx": false
+        },
+        "perTask": {
+          "tonnato-sauce": "1 Prise weißer Pfeffer"
+        }
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": "1 Prise",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Prise",
+          "approx": false
+        },
+        "perTask": {
+          "aufschnitt": "1 Prise Pfeffer"
+        }
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "60 ml",
+          "value": 60.0,
+          "max": 60.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "tonnato-sauce": "60 ml kaltes Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "REWE Center",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "zitronen",
+            "name": "Zitronen",
+            "need": {
+              "text": "1 + 3 EL + 1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "3 EL",
+                  "value": 3.0,
+                  "max": 3.0,
+                  "unit": "EL",
+                  "approx": false
+                },
+                {
+                  "text": "1 TL",
+                  "value": 1.0,
+                  "max": 1.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "1 + 3 EL + 1 TL",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "1 für die Sauce, 1 in Spalten"
+          },
+          {
+            "ingredient": "rucola",
+            "name": "Rucola",
+            "need": {
+              "text": "80 g",
+              "value": 80.0,
+              "max": 80.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "80 g",
+            "inStock": false,
+            "buy": {
+              "text": "80 g"
+            }
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "kalbsnuss",
+            "name": "Kalbsnuss am Stück",
+            "need": {
+              "text": "1000 g",
+              "value": 1000.0,
+              "max": 1000.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "1000 g",
+            "inStock": false,
+            "buy": {
+              "text": "1 kg"
+            },
+            "note": "pariert; vorbestellen, Fallback Selgros"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "eier",
+            "name": "Eier",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            }
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "thunfisch",
+            "name": "Thunfisch in Olivenöl",
+            "need": {
+              "text": "220 g",
+              "value": 220.0,
+              "max": 220.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "220 g",
+            "inStock": false,
+            "buy": {
+              "text": "220 g"
+            },
+            "note": "Abtropfgewicht; 2 Gläser/Dosen — 2 EL vom Öl werden gebraucht"
+          },
+          {
+            "ingredient": "sardellenfilets",
+            "name": "Sardellenfilets in Öl",
+            "need": {
+              "text": "5",
+              "value": 5.0,
+              "max": 5.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "5",
+            "inStock": false,
+            "buy": {
+              "text": "1 Glas"
+            },
+            "note": "5 Filets"
+          },
+          {
+            "ingredient": "kapern",
+            "name": "kleine Kapern in Lake",
+            "need": {
+              "text": "3 EL",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "3 EL",
+            "inStock": false,
+            "buy": {
+              "text": "1 Glas"
+            }
+          },
+          {
+            "ingredient": "kapernaepfel",
+            "name": "Kapernäpfel",
+            "need": {
+              "text": "12",
+              "value": 12.0,
+              "max": 12.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "12",
+            "inStock": false,
+            "buy": {
+              "text": "1 Glas"
+            },
+            "note": "12 Stück"
+          },
+          {
+            "ingredient": "ciabatta",
+            "name": "Ciabatta",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            }
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "olivenoel",
+            "name": "mildes Olivenöl",
+            "need": {
+              "text": "2 EL + 2 TL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "2 TL",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "TL",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "2 EL + 2 TL",
+            "inStock": false,
+            "buy": {
+              "text": "3 EL"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "oel",
+            "name": "neutrales Öl",
+            "need": {
+              "text": "65 ml",
+              "value": 65.0,
+              "max": 65.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "65 ml",
+            "inStock": false,
+            "buy": {
+              "text": "65 ml"
+            },
+            "pantry": true,
+            "note": "1 EL Anbraten, 50 ml Sauce"
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "1½ TL",
+              "value": 1.5,
+              "max": 1.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1½ TL",
+            "inStock": false,
+            "buy": {
+              "text": "1½ TL"
+            },
+            "pantry": true,
+            "note": "8 g fürs Fleisch"
+          },
+          {
+            "ingredient": "weisser-pfeffer",
+            "name": "Weißer Pfeffer",
+            "need": {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            },
+            "display": "1 Prise",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Pfeffer",
+            "need": {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            },
+            "display": "1 Prise",
+            "inStock": false,
+            "pantry": true,
+            "note": "schwarz, aus der Mühle"
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "60 ml",
+              "value": 60.0,
+              "max": 60.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "60 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}
