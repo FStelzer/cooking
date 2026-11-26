@@ -1,0 +1,1253 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/lachs-confit-linsensalat",
+  "kind": "dish",
+  "title": "Lachs-Confit — in Olivenöl pochierter Lachs mit warmem Linsensalat (4 Portionen)",
+  "status": "wip",
+  "yields": {
+    "text": "4 Portionen",
+    "value": 4.0,
+    "unit": "Portionen"
+  },
+  "statusNote": "> [!NOTE]\n> **Status: In Arbeit** — ausgearbeitet 11/2026, noch nicht gekocht. Zu prüfen: Zeit bis 63 °C Kern (Schätzung 20–25 Min. ab dem Einlegen), ob sich 75–80 °C Öltemperatur auf der Induktion ruhig halten lassen, Ölmenge für den tatsächlichen Topf, Textur bei 63 °C.",
+  "intro": "*Aktive Zeit \\~25 Min., gesamt \\~55 Min. Equipment: Topf oder Sauteuse Ø 20–22 cm (die Filets sollen in einer Lage eng nebeneinander liegen), Clip-Thermometer, Fleischthermometer, Topf für die Linsen, Mandoline, feines Sieb.*\n\nAlltagsessen mit einer einzigen Technik: Lachs gart nicht in der Pfanne, sondern vollständig von aromatisiertem Olivenöl bedeckt bei sehr niedriger Temperatur. Das Öl überträgt die Wärme gleichmäßig und verhindert jedes Austrocknen — der Fisch bleibt auch **komplett durchgegart** saftig und blättrig statt faserig. Das Öl nimmt dabei Zitrone, Fenchel, Thymian und Knoblauch auf und wird direkt zur Vinaigrette für einen warmen Linsensalat mit rohem Fenchel.",
+  "times": {
+    "text": "Aktive Zeit ~25 Min., gesamt ~55 Min.",
+    "active": {
+      "typical": "PT25M",
+      "source": "25 Min."
+    },
+    "total": {
+      "typical": "PT55M",
+      "source": "55 Min."
+    }
+  },
+  "equipment": [
+    "Topf oder Sauteuse Ø 20–22 cm (die Filets sollen in einer Lage eng nebeneinander liegen)",
+    "Clip-Thermometer",
+    "Fleischthermometer",
+    "Topf für die Linsen",
+    "Mandoline",
+    "feines Sieb"
+  ],
+  "ingredients": [
+    {
+      "id": "bio-zitrone",
+      "name": "Bio-Zitrone",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      }
+    },
+    {
+      "id": "fenchelknolle",
+      "name": "Fenchelknolle",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      },
+      "note": "klein, \\~250 g, mit Grün"
+    },
+    {
+      "id": "schalotte",
+      "name": "Schalotte",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      }
+    },
+    {
+      "id": "knoblauchzehen",
+      "name": "Knoblauchzehen",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "3"
+      }
+    },
+    {
+      "id": "thymian",
+      "name": "Thymian",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "4 Zweige"
+      }
+    },
+    {
+      "id": "petersilie",
+      "name": "Petersilie",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      }
+    },
+    {
+      "id": "lachsfilet",
+      "name": "Lachsfilet ohne Haut",
+      "store": "REWE Center",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "600 g"
+      },
+      "note": "4 Stücke à \\~150 g, gleich dick; für 2+1 reichen 3 Stücke"
+    },
+    {
+      "id": "belugalinsen",
+      "name": "Belugalinsen",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "250 g"
+      },
+      "note": "oder Puy-Linsen"
+    },
+    {
+      "id": "olivenoel",
+      "name": "Olivenöl",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "500 ml"
+      },
+      "note": "750-ml-Flasche, mild"
+    },
+    {
+      "id": "fenchelsamen",
+      "name": "Fenchelsamen",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1 TL"
+      },
+      "pantry": true
+    },
+    {
+      "id": "lorbeerblatt",
+      "name": "Lorbeerblatt",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1"
+      },
+      "pantry": true
+    },
+    {
+      "id": "rotweinessig",
+      "name": "Rotweinessig",
+      "store": "Vorrat",
+      "buy": {
+        "text": "2 EL"
+      },
+      "pantry": true
+    },
+    {
+      "id": "dijonsenf",
+      "name": "Dijonsenf",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1 TL"
+      },
+      "pantry": true
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true,
+      "note": "1 TL für den Fisch, 1 TL für die Linsen, ½ TL für den Salat"
+    },
+    {
+      "id": "pfeffer",
+      "name": "Schwarzer Pfeffer",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Stil-Entscheidung",
+      "level": 2,
+      "markdown": "- **Lachs** statt Kabeljau: fetter, verzeiht mehr und zeigt den Confit-Effekt am deutlichsten. Kabeljau als Variante in den Notizen.\n- **Kerntemperatur 63 °C**, mit Thermometer. Restaurant-Confit liegt bei 45–50 °C (glasig) — das ist für die Schwangerschaft tabu. 63 °C ist der gängige „durch“-Wert für Fisch; im Ölbad bleibt der Lachs dabei deutlich saftiger als bei jeder Pfannen- oder Ofenmethode. Ehrlich: Er ist dann fest und blättrig, nicht mehr cremig-glasig, und es tritt etwas weißes Eiweiß aus (das Vorsalzen reduziert das).\n- **Auf dem Herd mit Clip-Thermometer, nicht im Ofen.** Die naheliegende Ofen-Version (warmes Öl über den Fisch, 100 °C) rechnet sich nicht: 500 ml Öl mit 70 °C fallen durch 600 g zimmerwarmen Fisch und eine kalte Form sofort auf \\~30–35 °C, und ein 100-°C-Ofen braucht dann geschätzt 35–45 Min. bis 63 °C Kern — die Ofen-Rezepte der Quellen zielen auf glasige 48–55 °C. Auf der Induktion lässt sich das Öl in wenigen Minuten wieder auf 75–80 °C bringen und dort halten; die Zeit wird planbar.\n- **Öl 75–80 °C:** heiß genug, dass 63 °C Kern in vertretbarer Zeit erreicht werden, kühl genug, dass der Rand nicht trocken gart.\n- **Vorsalzen 15–20 Min.:** würzt durch und festigt die Oberfläche.\n- **Linsen in gesalzenem Wasser:** Beluga oder Puy — bleiben körnig, zerfallen nicht. Dass Salz Linsen hart macht, ist ein Mythos; ungesalzen gekocht bleiben sie innen fad, und das lässt sich im Salat nicht mehr nachholen.\n- **Vinaigrette ölbetont, Säure zum Schluss:** 5 EL Öl auf 2 EL Essig; Zitrone erst nach dem Abschmecken mit Salz (Learning Karottensuppe 11/2026: „flach“ heißt meist Salz, nicht Säure).",
+      "tags": [
+        "stil"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Lachsfilet ohne Haut, 4 Stücke à \\~150 g**, möglichst gleich dick (3 cm, aus der Mitte): REWE Center Fischtheke oder Buhara Seafood. TK-Lachs geht — über Nacht im Kühlschrank auftauen, sehr trocken tupfen.\n- **Für 2 Erwachsene + Kind reichen 3 Filets (450 g)** — dann bleibt nichts übrig, was in der Schwangerschaft nicht aufgehoben werden soll. Dann aber einen Topf mit Ø 18–20 cm nehmen: In Ø 22 cm bräuchten 3 Filets \\~700 ml Öl, um bedeckt zu sein. Mit 4 Filets ist das vierte für den Nicht-Schwangeren am nächsten Tag (kalt, zerzupft über Salat).\n- **Olivenöl:** ein mildes, ordentliches Standard-Olivenöl (nativ extra, 750-ml-Flasche); kein teures Spitzenöl, es wird erwärmt. Sehr pfeffrige Öle dominieren den Fisch.\n- **Linsen:** Belugalinsen gibt es bei REWE/Aldi (Bio-Regal); Puy-Linsen („Le-Puy“ oder „grüne französische Linsen“) im REWE Center.\n- **Zitrone:** Bio, unbehandelt — die Schale kommt ins Öl.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "main",
+          "name": "Lachs-Confit — in Olivenöl pochierter Lachs mit warmem Linsensalat (4 Portionen)",
+          "steps": [
+            {
+              "id": "lachs-vorsalzen",
+              "label": "1",
+              "heading": "**1. Lachs vorsalzen (5 Min. + 15 Min. passiv)**",
+              "title": "Lachs vorsalzen",
+              "duration": {
+                "typical": "PT20M",
+                "source": "5 Min. + 15 Min."
+              },
+              "attention": "passive",
+              "text": "Lachsfilet (600 g, 4 Stücke) trocken tupfen, rundum mit 1 TL Salz bestreuen und bei Raumtemperatur 15–20 Min. liegen lassen. *Raumtemperatur verkürzt die Garzeit und macht sie gleichmäßiger.*",
+              "action": "Lachsfilet (600 g, 4 Stücke) trocken tupfen, rundum mit 1 TL Salz bestreuen und bei Raumtemperatur 15–20 Min. liegen lassen.",
+              "why": "Raumtemperatur verkürzt die Garzeit und macht sie gleichmäßiger.",
+              "timers": [
+                {
+                  "label": "Lachs vorsalzen",
+                  "duration": {
+                    "min": "PT15M",
+                    "max": "PT20M"
+                  },
+                  "text": "15–20 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "lachsfilet",
+                  "amount": {
+                    "text": "600 g",
+                    "value": 600.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "after": []
+            },
+            {
+              "id": "oel-aromatisieren",
+              "label": "2",
+              "heading": "**2. Öl aromatisieren (8 Min.)**",
+              "title": "Öl aromatisieren",
+              "duration": {
+                "typical": "PT8M",
+                "source": "8 Min."
+              },
+              "text": "500 ml Olivenöl im Topf mit der in Streifen abgeschälten Schale von 1 Zitrone, 1 TL Fenchelsamen, 4 Zweigen Thymian und 3 angedrückten Knoblauchzehen bei kleiner Hitze auf **70 °C** erwärmen (Clip-Thermometer), dann vom Herd ziehen und ziehen lassen. **Nicht über 80 °C** — das Öl soll ziehen, nicht braten.",
+              "action": "500 ml Olivenöl im Topf mit der in Streifen abgeschälten Schale von 1 Zitrone, 1 TL Fenchelsamen, 4 Zweigen Thymian und 3 angedrückten Knoblauchzehen bei kleiner Hitze auf **70 °C** erwärmen (Clip-Thermometer), dann vom Herd ziehen und ziehen lassen.",
+              "limits": [
+                "70 °C",
+                "Nicht über 80 °C"
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "70 °C",
+                  "value": 70
+                },
+                {
+                  "kind": "max",
+                  "text": "80 °C",
+                  "value": 80
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "olivenoel",
+                  "amount": {
+                    "text": "500 ml Olivenöl",
+                    "value": 500.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "bio-zitrone",
+                  "amount": {
+                    "text": "1 Zitrone",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "fenchelsamen",
+                  "amount": {
+                    "text": "1 TL Fenchelsamen",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "thymian",
+                  "amount": {
+                    "text": "4 Zweigen Thymian",
+                    "value": 4.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "knoblauchzehen",
+                  "amount": {
+                    "text": "3 angedrückten Knoblauchzehen",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "timers": [
+                {
+                  "label": "Öl aromatisieren",
+                  "duration": {
+                    "typical": "PT8M"
+                  },
+                  "text": "8 Min."
+                }
+              ],
+              "after": []
+            },
+            {
+              "id": "linsen-kochen",
+              "label": "3",
+              "heading": "**3. Linsen kochen (5 Min. + 22 Min. passiv)**",
+              "title": "Linsen kochen",
+              "duration": {
+                "typical": "PT27M",
+                "source": "5 Min. + 22 Min."
+              },
+              "attention": "passive",
+              "text": "250 g Belugalinsen abspülen und mit 750 ml kaltem Wasser, 1 Lorbeerblatt und 1 TL Salz aufkochen, bei kleiner Hitze 20–25 Min. simmern, bis sie weich sind, aber Biss haben. Abgießen, Lorbeer entfernen, zurück in den warmen Topf geben und zugedeckt warm halten.",
+              "action": "250 g Belugalinsen abspülen und mit 750 ml kaltem Wasser, 1 Lorbeerblatt und 1 TL Salz aufkochen, bei kleiner Hitze 20–25 Min. simmern, bis sie weich sind, aber Biss haben.",
+              "cues": [
+                "bis sie weich sind"
+              ],
+              "timers": [
+                {
+                  "label": "Linsen kochen",
+                  "duration": {
+                    "min": "PT20M",
+                    "max": "PT25M"
+                  },
+                  "text": "20–25 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "belugalinsen",
+                  "amount": {
+                    "text": "250 g Belugalinsen",
+                    "value": 250.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "750 ml kaltem Wasser",
+                    "value": 750.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "lorbeerblatt",
+                  "amount": {
+                    "text": "1 Lorbeerblatt",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 TL Salz",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "after": []
+            },
+            {
+              "id": "lachs-confieren",
+              "label": "4",
+              "heading": "**4. Lachs confieren (20–25 Min.)**",
+              "title": "Lachs confieren",
+              "duration": {
+                "min": "PT20M",
+                "max": "PT25M",
+                "source": "20–25 Min."
+              },
+              "text": "Lachs nochmals trocken tupfen und in einer Lage auf die Zitronenschalen und Thymianzweige ins warme Öl legen, sodass er bedeckt ist und nicht direkt auf dem Topfboden liegt. Das Öl fällt dabei auf \\~35 °C. Auf kleiner Stufe in 6–8 Min. wieder auf **75–80 °C** bringen (Clip-Thermometer im Öl, nicht am Boden) und dort halten — notfalls den Topf halb vom Feld ziehen, **nie über 85 °C**. Beim Aufheizen den Topf ein- bis zweimal sanft schwenken: Öl zirkuliert kaum, am Boden wird es sonst deutlich heißer, als das Thermometer oben anzeigt. 8 Min. nach Erreichen der 75 °C das erste Mal den Kern messen, dann alle 2–3 Min.\n\n> **Gar-Check — Pflicht (Schwangerschaft):** Fleischthermometer waagerecht in die dickste Stelle des dicksten Filets: **63 °C**. Dünnere Stücke sind früher fertig — herausheben und auf einem warmen Teller abdecken.\n\n> **Nicht ganz bedeckt?** Etwas Öl nachgießen oder die Filets nach der Hälfte der Zeit einmal wenden. Lieber ein kleinerer Topf als mehr Öl.",
+              "action": "Lachs nochmals trocken tupfen und in einer Lage auf die Zitronenschalen und Thymianzweige ins warme Öl legen, sodass er bedeckt ist und nicht direkt auf dem Topfboden liegt.",
+              "limits": [
+                "75–80 °C",
+                "nie über 85 °C",
+                "63 °C",
+                "Nicht ganz bedeckt?"
+              ],
+              "timers": [
+                {
+                  "label": "Lachs confieren",
+                  "duration": {
+                    "min": "PT6M",
+                    "max": "PT8M"
+                  },
+                  "text": "6–8 Min."
+                },
+                {
+                  "label": "Lachs confieren",
+                  "duration": {
+                    "typical": "PT8M"
+                  },
+                  "text": "8 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "35 °C",
+                  "value": 35
+                },
+                {
+                  "kind": "ziel",
+                  "text": "75–80 °C",
+                  "min": 75,
+                  "max": 80
+                },
+                {
+                  "kind": "max",
+                  "text": "85 °C",
+                  "value": 85
+                },
+                {
+                  "kind": "ziel",
+                  "text": "75 °C",
+                  "value": 75
+                },
+                {
+                  "kind": "ziel",
+                  "text": "63 °C",
+                  "value": 63
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Lachs vorsalzen, Öl aromatisieren · Herd · fertig bei 63 °C Kern*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei 63 °C Kern",
+                "value": 63
+              },
+              "attention": "active",
+              "after": [
+                "step:lachs-vorsalzen",
+                "step:oel-aromatisieren"
+              ]
+            },
+            {
+              "id": "fenchel-und-kraeuter-schneiden",
+              "label": "5",
+              "heading": "**5. Fenchel und Kräuter schneiden (8 Min., parallel)**",
+              "title": "Fenchel und Kräuter schneiden",
+              "duration": {
+                "typical": "PT8M",
+                "source": "8 Min."
+              },
+              "parallel": true,
+              "text": "1 Fenchelknolle halbieren, den harten Strunk keilförmig herausschneiden und die Hälften auf der Mandoline hauchdünn hobeln. Das Fenchelgrün und ½ Bund Petersilie grob hacken, 1 Schalotte sehr fein würfeln. Die abgeschälte Zitrone auspressen.",
+              "action": "1 Fenchelknolle halbieren, den harten Strunk keilförmig herausschneiden und die Hälften auf der Mandoline hauchdünn hobeln.",
+              "ingredients": [
+                {
+                  "ref": "fenchelknolle",
+                  "amount": {
+                    "text": "1 Fenchelknolle",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "petersilie",
+                  "amount": {
+                    "text": "½ Bund Petersilie",
+                    "value": 0.5,
+                    "unit": "Bund"
+                  }
+                },
+                {
+                  "ref": "schalotte",
+                  "amount": {
+                    "text": "1 Schalotte",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*jederzeit*",
+              "attention": "active",
+              "timers": [
+                {
+                  "label": "Fenchel und Kräuter schneiden",
+                  "duration": {
+                    "typical": "PT8M"
+                  },
+                  "text": "8 Min."
+                }
+              ],
+              "after": []
+            },
+            {
+              "id": "vinaigrette-ruehren",
+              "label": "6",
+              "heading": "**6. Vinaigrette rühren (3 Min.)**",
+              "title": "Vinaigrette rühren",
+              "duration": {
+                "typical": "PT3M",
+                "source": "3 Min."
+              },
+              "text": "Lachs mit einem Pfannenwender aus dem Öl heben und auf einem warmen Teller abgedeckt abtropfen lassen. 5 EL vom warmen Confit-Olivenöl durch das feine Sieb in eine große Schüssel geben und mit 2 EL Rotweinessig, 1 TL Dijonsenf, der gewürfelten Schalotte, ½ TL Salz und reichlich Pfeffer verrühren.",
+              "action": "Lachs mit einem Pfannenwender aus dem Öl heben und auf einem warmen Teller abgedeckt abtropfen lassen.",
+              "ingredients": [
+                {
+                  "ref": "rotweinessig",
+                  "amount": {
+                    "text": "2 EL Rotweinessig",
+                    "value": 2.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "dijonsenf",
+                  "amount": {
+                    "text": "1 TL Dijonsenf",
+                    "value": 1.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "½ TL Salz",
+                    "value": 0.5,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "reichlich Pfeffer"
+                  }
+                }
+              ],
+              "meta": "*nach Lachs confieren, Fenchel und Kräuter schneiden*",
+              "attention": "active",
+              "after": [
+                "step:lachs-confieren",
+                "step:fenchel-und-kraeuter-schneiden"
+              ]
+            },
+            {
+              "id": "linsensalat-mischen",
+              "label": "7",
+              "heading": "**7. Linsensalat mischen (3 Min.)**",
+              "title": "Linsensalat mischen",
+              "duration": {
+                "typical": "PT3M",
+                "source": "3 Min."
+              },
+              "text": "Die warmen Linsen in der Vinaigrette wenden, Fenchel, Fenchelgrün und Petersilie unterheben. Abschmecken in dieser Reihenfolge: erst Salz (Linsen schlucken viel), dann 1–2 TL Zitronensaft.",
+              "action": "Die warmen Linsen in der Vinaigrette wenden, Fenchel, Fenchelgrün und Petersilie unterheben.",
+              "ingredients": [],
+              "meta": "*nach Vinaigrette rühren, Linsen kochen*",
+              "attention": "active",
+              "after": [
+                "step:vinaigrette-ruehren",
+                "step:linsen-kochen"
+              ]
+            },
+            {
+              "id": "anrichten",
+              "label": "8",
+              "heading": "**8. Anrichten (ca. 3 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT3M",
+                "source": "ca. 3 Min.",
+                "estimated": true
+              },
+              "text": "Linsensalat auf warme Teller geben, je ein Stück Lachs daraufsetzen und in große Blätter brechen. Mit wenig Confit-Öl beträufeln und Pfeffer darübermahlen; den restlichen Zitronensaft zum Nachsäuern an den Tisch stellen.",
+              "action": "Linsensalat auf warme Teller geben, je ein Stück Lachs daraufsetzen und in große Blätter brechen.",
+              "ingredients": [],
+              "meta": "*nach Linsensalat mischen*",
+              "attention": "active",
+              "after": [
+                "step:linsensalat-mischen"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "kochtag",
+            "text": "Lachs vorsalzen, Öl aromatisieren",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT55M"
+            },
+            "source": "T−0:55",
+            "steps": [
+              "lachs-vorsalzen",
+              "oel-aromatisieren"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Linsen kochen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT40M"
+            },
+            "source": "T−0:40",
+            "steps": [
+              "linsen-kochen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Lachs confieren",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT35M"
+            },
+            "source": "T−0:35",
+            "steps": [
+              "lachs-confieren"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Fenchel und Kräuter schneiden (sobald das Öl stabil bei 75–80 °C steht)",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT28M"
+            },
+            "source": "T−0:28",
+            "steps": [
+              "fenchel-und-kraeuter-schneiden"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Vinaigrette rühren, Linsensalat mischen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT9M"
+            },
+            "source": "T−0:09",
+            "steps": [
+              "vinaigrette-ruehren",
+              "linsensalat-mischen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Anrichten",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT3M"
+            },
+            "source": "T−0:03",
+            "steps": [
+              "anrichten"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Isst direkt mit** — mild, kein Chili, keine Schärfe. Lachs in Flocken, vorher auf Gräten abtasten.\n- Linsen fürs Kind vor dem Mischen abnehmen und nur mit etwas Öl und Salz anmachen, falls die Senf-Essig-Vinaigrette zu sauer ist. Roher Fenchel ist Geschmackssache — anbieten, sonst Gurkenscheiben.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "- **Schwangerschaft: ✅ direkt**, mit Thermometer. Lachs ist kein Quecksilber-Fisch (Leitfaden: unkritisch). 63 °C Kern = vollständig durchgegart; das Niedrigtemperatur-Confit bei 45–50 °C ist in dieser Zeit **nicht** geeignet. Kein Alkohol (Rotweinessig ist unkritisch), kein rohes Ei. Fenchel und Petersilie gründlich waschen.\n- **GDM:** Der Fisch hat 0 g KH. Linsen: 62 g roh pro Portion ≈ 30 g KH, niedrig-glykämisch, mit \\~15 g Protein und vielen Ballaststoffen — genau der empfohlene KH-Träger. Zusammen mit 150 g Lachs eine vollständige Mahlzeit ohne Brot. Wer mehr KH braucht: eine Scheibe Vollkornbrot dazu.\n- **Reste:** Für die Schwangere keine Lachs-Reste aufheben — erneutes Durcherhitzen ruiniert ihn, kalt ist er tabu. Deshalb passend einkaufen (3 Filets für 2+1) oder das übrige Filet dem Nicht-Schwangeren überlassen. Linsensalat hält gekühlt bis zum nächsten Tag.\n- **Rest-Öl in der Schwangerschaft nur erhitzt** verwenden (zum Braten), nicht kalt als Vinaigrette — siehe Notizen.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Rest-Öl:** durch das feine Sieb gießen, Knoblauch und Kräuter wegwerfen, den wässrigen Bodensatz (Fischsaft) im Topf zurücklassen. Im Schraubglas im Kühlschrank **höchstens 2–3 Tage** — Knoblauch und Fischsaft in Öl sind kein Vorrat (Verderb, im ungünstigen Fall *Clostridium botulinum*). Länger nur eingefroren (Eiswürfelform). Schmeckt nach Fisch und Fenchel: zum Braten von Fisch oder Kartoffeln, für Bohnen.\n- **Variante Kabeljau + weiße Bohnen (ungetestet):** Kabeljau-Rückenfilet 20 Min. vorsalzen (2 TL Salz, danach abspülen und trocknen), gleiche Führung, 63 °C; zerfällt leichter — mit der Palette herausheben. Statt Linsen 2 Gläser weiße Bohnen im eigenen Sud erwärmen und wie die Linsen anmachen.\n- **Variante Ofen (ungetestet, langsamer):** Auflaufform im Ofen bei 120 °C mit vorheizen, Öl auf 80 °C erwärmen, geschätzt 35–40 Min. bis 63 °C. Spart Öl (eine Form 20 × 15 cm braucht nur \\~350 ml), ist aber schlechter planbar.\n- **Nach der Schwangerschaft:** Öl bei 55–60 °C halten, Kern 48–50 °C für die klassische, fast cremige Confit-Textur (dann nur mit sehr frischem Fisch).",
+      "tags": [
+        "notizen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "Recherche 11/2026 über Websuche; die Rezepte wurden nicht im Volltext gegengelesen, die Zahlen stammen aus den Suchauszügen. Die Quellen streuen stark und nennen kaum Kerntemperaturen.\n\n- **Herd-Methode mit Öltemperatur:** [California Olive Ranch — Salmon fillet poached in olive oil](https://www.californiaoliveranch.com/recipes/salmon-fillet-poached-in-olive-oil) (Öl auf \\~63 °C, 12 Min. auf dem Herd) und [olive magazine — Confit salmon](https://www.olivemagazine.com/recipes/fish-and-seafood/confit-salmon-with-lemon-and-parsley-salsa) (Öl vorwärmen, 15–20 Min. je nach Dicke) — beide für ein glasigeres Ergebnis; für 63 °C Kern hier 75–80 °C Öl.\n- **Ofen-Versionen (nicht übernommen):** [Woolworths](https://woolworths.com.au/shop/articles/easy-guide-to-confit-salmon) (100 °C, 20 Min.), [Food Network / Michael Symon](https://www.foodnetwork.com/recipes/michael-symon/poached-salmon-recipe-1942262) (225 °F ≈ 107 °C, 15 Min.), [The Healthy Foodie](https://thehealthyfoodie.com/salmon-confit/) (170 °F ≈ 77 °C, 20 Min.). Die erste Fassung dieses Rezepts hatte daraus 100 °C und 18–25 Min. abgeleitet; im Review 11/2026 verworfen (Wärmebilanz, siehe Stil-Entscheidung).\n- **Garstufen Lachs:** [Food52](https://food52.com/blog/24903) nennt 43 °C sehr roh, 49 °C medium-rare, 54 °C medium. Die 63 °C (145 °F) sind der übliche Lebensmittelsicherheits-Wert für Fisch und die Vorgabe aus dem Backlog-Eintrag.\n- **Eigene Entscheidungen, ungetestet:** 75–80 °C Öl und 20–25 Min., Ölmenge 500 ml, Fenchel-Linsen-Salat mit Confit-Öl-Vinaigrette, Haltbarkeit des Rest-Öls (konservativ). Das Thermometer entscheidet, nicht die Uhr.",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-11-26T15:04:29Z",
+    "sourceHash": "a8a57388bd54959e",
+    "quantities": [
+      {
+        "ingredient": "bio-zitrone",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Zitrone"
+        }
+      },
+      {
+        "ingredient": "fenchelknolle",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Fenchelknolle"
+        }
+      },
+      {
+        "ingredient": "schalotte",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Schalotte"
+        }
+      },
+      {
+        "ingredient": "knoblauchzehen",
+        "total": {
+          "text": "3",
+          "value": 3.0,
+          "max": 3.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "3 angedrückten Knoblauchzehen"
+        }
+      },
+      {
+        "ingredient": "thymian",
+        "total": {
+          "text": "4",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "4 Zweigen Thymian"
+        }
+      },
+      {
+        "ingredient": "petersilie",
+        "total": {
+          "text": "½ Bund",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "Bund",
+          "approx": false
+        },
+        "perTask": {
+          "main": "½ Bund Petersilie"
+        }
+      },
+      {
+        "ingredient": "lachsfilet",
+        "total": {
+          "text": "600 g",
+          "value": 600.0,
+          "max": 600.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "600 g"
+        }
+      },
+      {
+        "ingredient": "belugalinsen",
+        "total": {
+          "text": "250 g",
+          "value": 250.0,
+          "max": 250.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "main": "250 g Belugalinsen"
+        }
+      },
+      {
+        "ingredient": "olivenoel",
+        "total": {
+          "text": "500 ml",
+          "value": 500.0,
+          "max": 500.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "500 ml Olivenöl"
+        }
+      },
+      {
+        "ingredient": "fenchelsamen",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 TL Fenchelsamen"
+        }
+      },
+      {
+        "ingredient": "lorbeerblatt",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 Lorbeerblatt"
+        }
+      },
+      {
+        "ingredient": "rotweinessig",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "2 EL Rotweinessig"
+        }
+      },
+      {
+        "ingredient": "dijonsenf",
+        "total": {
+          "text": "1 TL",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 TL Dijonsenf"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "2½ TL",
+          "value": 2.5,
+          "max": 2.5,
+          "unit": "TL",
+          "approx": false
+        },
+        "perTask": {
+          "main": "1 TL Salz + 1 TL Salz + ½ TL Salz"
+        }
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": ""
+        },
+        "perTask": {},
+        "unitless": [
+          "reichlich Pfeffer"
+        ]
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "750 ml",
+          "value": 750.0,
+          "max": 750.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "main": "750 ml kaltem Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "REWE Center",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "bio-zitrone",
+            "name": "Bio-Zitrone",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            }
+          },
+          {
+            "ingredient": "fenchelknolle",
+            "name": "Fenchelknolle",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "note": "klein, \\~250 g, mit Grün"
+          },
+          {
+            "ingredient": "schalotte",
+            "name": "Schalotte",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            }
+          },
+          {
+            "ingredient": "knoblauchzehen",
+            "name": "Knoblauchzehen",
+            "need": {
+              "text": "3",
+              "value": 3.0,
+              "max": 3.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "3",
+            "inStock": false,
+            "buy": {
+              "text": "3"
+            }
+          },
+          {
+            "ingredient": "thymian",
+            "name": "Thymian",
+            "need": {
+              "text": "4",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "4",
+            "inStock": false,
+            "buy": {
+              "text": "4 Zweige"
+            }
+          },
+          {
+            "ingredient": "petersilie",
+            "name": "Petersilie",
+            "need": {
+              "text": "½ Bund",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Bund",
+              "approx": false
+            },
+            "display": "½ Bund",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            }
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "lachsfilet",
+            "name": "Lachsfilet ohne Haut",
+            "need": {
+              "text": "600 g",
+              "value": 600.0,
+              "max": 600.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "600 g",
+            "inStock": false,
+            "buy": {
+              "text": "600 g"
+            },
+            "note": "4 Stücke à \\~150 g, gleich dick; für 2+1 reichen 3 Stücke"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "belugalinsen",
+            "name": "Belugalinsen",
+            "need": {
+              "text": "250 g",
+              "value": 250.0,
+              "max": 250.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "250 g",
+            "inStock": false,
+            "buy": {
+              "text": "250 g"
+            },
+            "note": "oder Puy-Linsen"
+          },
+          {
+            "ingredient": "olivenoel",
+            "name": "Olivenöl",
+            "need": {
+              "text": "500 ml",
+              "value": 500.0,
+              "max": 500.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "500 ml",
+            "inStock": false,
+            "buy": {
+              "text": "500 ml"
+            },
+            "note": "750-ml-Flasche, mild"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "fenchelsamen",
+            "name": "Fenchelsamen",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 TL"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "lorbeerblatt",
+            "name": "Lorbeerblatt",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "rotweinessig",
+            "name": "Rotweinessig",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "buy": {
+              "text": "2 EL"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "dijonsenf",
+            "name": "Dijonsenf",
+            "need": {
+              "text": "1 TL",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "1 TL",
+            "inStock": false,
+            "buy": {
+              "text": "1 TL"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "2½ TL",
+              "value": 2.5,
+              "max": 2.5,
+              "unit": "TL",
+              "approx": false
+            },
+            "display": "2½ TL",
+            "inStock": false,
+            "pantry": true,
+            "note": "1 TL für den Fisch, 1 TL für die Linsen, ½ TL für den Salat"
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Schwarzer Pfeffer",
+            "need": {
+              "text": ""
+            },
+            "display": "",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "750 ml",
+              "value": 750.0,
+              "max": 750.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "750 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}
