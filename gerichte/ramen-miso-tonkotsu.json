@@ -3463,7 +3463,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-11-17T07:50:37Z",
+    "generatedAt": "2026-11-26T14:43:23Z",
     "sourceHash": "c4b9d9478e61b4f1",
     "select": {
       "ablauf": "vortag"

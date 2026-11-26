@@ -99,6 +99,10 @@ lohnt · ❌ nicht sinnvoll anpassbar (Problem *ist* das Gericht).
 | [Brothy Beans](/gerichte/brothy-beans.md) | Weiße Bohnen niedrig-glykämisch (GI \~30–40), viel Protein + Ballaststoffe; GDM-Portion \~¾ Schale, Brot weglassen oder klein | Parmigiano-Rinde unter Druck mitgekocht, Reibekäse frisch vom Stück (ohne Rinde); Salsiccia zerbröselt durchgebraten; kein Alkohol | ✅ direkt |
 | [Zhēng Dàn — gedämpfter Eier-Custard](/gerichte/zheng-dan.md) | Fast stärkefrei (\~8–10 g KH ohne Reis) + \~40 g Protein → kleine KH-Beilage nach Bedarf (z. B. 40 g Naturreis) | Custard mittig auf 78–82 °C gemessen (≥ 75 °C), Hack ≥ 72 °C, Hühnerbrühe statt Kombu, kein Shaoxing | ✅ direkt |
 | [Druck-karamellisierte Karottensuppe](/gerichte/karottensuppe-druckkaramellisiert.md) | Pürierte Karotten haben moderaten GI (\~25–28 g KH/Teller) → Default *Mit Hähnchen* + Kichererbsen/Joghurt als Protein-Puffer; kein Weißbrot, messen | Hähnchen ≥ 74 °C, Joghurt pasteurisiert, kein Alkohol | ✅ als Default (*Mit Hähnchen*) |
+| [Chicken Adobo](/gerichte/chicken-adobo.md) | Sauce ohne Zucker; Reis ist der einzige KH-Träger → 40 g Basmati roh, doppelt Pak Choi und Salat | Oberkeulen 85–90 °C Kern, kein Alkohol; Salz im Blick (reduzierte Sojasauce, deshalb nur 70 ml und Fleisch ungesalzen) | ✅ direkt |
+| [Blanquette de Veau](/gerichte/blanquette-de-veau.md) | Reis 30–40 g roh; Mehlbindung \~9 g + Karotten/Zwiebeln \~8 g KH pro Portion; viel Protein und Fett | Kalb durchgegart, kein Wein, Liaison mit Thermometer auf 80 °C (≥ 75 °C) | ✅ direkt |
+| [Lachs-Confit mit Linsensalat](/gerichte/lachs-confit-linsensalat.md) | Fisch 0 g KH, Linsen \~30 g KH pro Portion, niedrig-glykämisch | Lachs unkritisch, **63 °C Kern mit Thermometer** (kein glasiges 45–50-°C-Confit); Lachs-Reste nicht aufheben, Rest-Öl nur erhitzt und höchstens 2–3 Tage | ✅ direkt |
+| [Vitello tonnato](/gerichte/vitello-tonnato.md) | Praktisch KH-frei | Thunfisch (Quecksilber) ist die Sauce, Kalb rosa bei 58 °C, Sardellen nicht erhitzt | ❌ Rezept für nach der Geburt |
 
 ## Eigene Rezepte in diesem Ordner
 

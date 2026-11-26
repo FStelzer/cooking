@@ -1302,7 +1302,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-10-19T06:40:25Z",
+    "generatedAt": "2026-11-26T14:43:24Z",
     "sourceHash": "c501cfbcd4704ab0",
     "select": {
       "weg": "vorrats-fond"

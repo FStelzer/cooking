@@ -28,6 +28,13 @@
   "cooked": false
  },
  {
+  "path": "../gerichte/blanquette-de-veau.json",
+  "title": "Blanquette de Veau — Kalbsragout in heller Samtsauce mit Perlzwiebeln und Champignons (4 Portionen + Reste)",
+  "group": "gerichte",
+  "wip": true,
+  "cooked": false
+ },
+ {
   "path": "../gerichte/bo-luc-lac.json",
   "title": "Bò lúc lắc — vietnamesisches „Shaking Beef\" mit Brunnenkresse-Salat (4 Portionen)",
   "group": "gerichte",
@@ -91,6 +98,13 @@
   "cooked": false
  },
  {
+  "path": "../gerichte/chicken-adobo.json",
+  "title": "Filipino Chicken Adobo — Hähnchenoberkeulen in Soja-Essig-Knoblauch-Sauce (4 Portionen)",
+  "group": "gerichte",
+  "wip": true,
+  "cooked": false
+ },
+ {
   "path": "../gerichte/cochinita-pibil.json",
   "title": "Cochinita Pibil — Schweineschulter in Achiote-Orangen-Marinade (4 Portionen + Reste)",
   "group": "gerichte",
@@ -124,6 +138,13 @@
   "group": "gerichte",
   "wip": false,
   "cooked": true
+ },
+ {
+  "path": "../gerichte/lachs-confit-linsensalat.json",
+  "title": "Lachs-Confit — in Olivenöl pochierter Lachs mit warmem Linsensalat (4 Portionen)",
+  "group": "gerichte",
+  "wip": true,
+  "cooked": false
  },
  {
   "path": "../gerichte/lamm-kleftiko.json",
@@ -201,6 +222,13 @@
   "group": "gerichte",
   "wip": false,
   "cooked": true
+ },
+ {
+  "path": "../gerichte/vitello-tonnato.json",
+  "title": "Vitello tonnato — rosa Kalbsnuss mit Thunfisch-Kapern-Sauce (4 Portionen als Hauptgang, 6–8 als Vorspeise)",
+  "group": "gerichte",
+  "wip": true,
+  "cooked": false
  },
  {
   "path": "../gerichte/zheng-dan.json",

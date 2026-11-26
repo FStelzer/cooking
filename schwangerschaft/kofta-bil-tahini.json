@@ -2104,7 +2104,7 @@
     }
   ],
   "derived": {
-    "generatedAt": "2026-11-12T11:39:17Z",
+    "generatedAt": "2026-11-26T14:43:24Z",
     "sourceHash": "ad766d01dd3fe876",
     "select": {
       "umfang": "abendessen"

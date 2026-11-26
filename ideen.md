@@ -7,82 +7,60 @@ und fliegt hier raus. Ausgearbeitete und gekochte Rezepte stehen in der Sidebar
 
 ## Backlog
 
-1. **Vitello tonnato** — Kalbsnuss sanft gegart (gern sous-vide-artig langsam),
-   komplett kalt serviert mit Thunfisch-Kapern-Sauce. Sehr high reward für sehr
-   wenig Arbeit, mittags vorbereiten und abends nur aufschneiden. Kein Schärfethema.
-
-2. **Griechisches Stifado** — stundenlang geschmortes Rind mit Perlzwiebeln,
+1. **Griechisches Stifado** — stundenlang geschmortes Rind mit Perlzwiebeln,
    Zimt und Rotwein; dazu kalter Tomaten-Gurken-Feta-Salat und Brot.
 
-3. **Hainanese Chicken Rice** — Huhn sanft in Ingwer-Brühe pochiert, Reis in der
+2. **Hainanese Chicken Rice** — Huhn sanft in Ingwer-Brühe pochiert, Reis in der
    Brühe gekocht, dazu Gurke und drei Saucen (Ingwer-Frühlingszwiebel, süße Soja,
    Chili — letztere einfach separat). Wird lauwarm/zimmerwarm gegessen, ideal bei
    Hitze. Aktive Arbeit minimal, Reward enorm.
 
-4. **Filipino Chicken Adobo** — Hähnchenschenkel in Soja, Essig, Knoblauch und
-   Lorbeer geschmort, ca. 1 Std., ein Topf, fast keine Vorbereitung. Dazu Reis
-   und ein kalter Tomaten-Salat. Soja-lastig, null Schärfe von Haus aus.
-
-5. **Indisches Curry, scharfe Erwachsenen-Version** — Follow-up zum
+3. **Indisches Curry, scharfe Erwachsenen-Version** — Follow-up zum
    Paneer-Projekt: gleiche Masala-Mechanik, aber mit Hähnchen oder Lamm statt
    Paneer und einer richtig gewürzten, langsam-aufbauend scharfen Sauce für
    die Erwachsenen (milde Abzweigung fürs Kind vor dem Schärfen abnehmen).
    Learning aus 07/2026: Schärfe pro Teller ersetzt die eingekochte Schärfe nicht.
 
-6. **Jiaozi & Guotie — Dumplings komplett selbst** — Teig nur aus Mehl und
+4. **Jiaozi & Guotie — Dumplings komplett selbst** — Teig nur aus Mehl und
    Wasser, füllen (klassisch Schwein-Lauch), falten, als Potsticker
    braten-dämpfen (knuspriger Boden, seidige Haube). Technik: Teig-Handling und
    Falttechnik; perfektes Mitmach-Projekt fürs Kind. Zutaten: REWE + Asialaden,
    nichts Exotisches.
 
-7. **Kantonesisch gedämpfter ganzer Fisch (Qing Zheng Yu)** — Wolfsbarsch oder
+5. **Kantonesisch gedämpfter ganzer Fisch (Qing Zheng Yu)** — Wolfsbarsch oder
    Dorade (Buhara) mit Ingwer und Frühlingszwiebel gedämpft, dann Soja-Würze
    und zischend heißes Öl darübergegossen. Puristisch, klar, elegant — exakt
    das Brühen-Geschmacksprofil als Fischgericht. Technik: Dämpfen (Teller auf
    Untersetzer im 14L-Topf, kein Dampfgarer nötig) + Ölguss. Null Schärfe.
 
-8. **Mapo Tofu (Sichuan)** — das ikonische Málà-Gericht: Doubanjiang und
+6. **Mapo Tofu (Sichuan)** — das ikonische Málà-Gericht: Doubanjiang und
    Sichuanpfeffer (beides Asialaden), betäubend-scharfes Profil als echte
    Horizonterweiterung. Caveat: die Schärfe IST das Gericht, eine milde
    Abzweigung nimmt ihm den Kern → Kind braucht an dem Abend ein eigenes Essen.
 
-9. **Blanquette de Veau** — Kalbsragout in heller Sauce: Fleisch nicht
-   angebraten, sondern sanft in aromatischer Brühe gegart. Technik: klassische
-   französische Saucen-Grammatik (helle Roux → Velouté → Liaison aus Eigelb und
-   Sahne). Elegant, seidig, komplett mild by design. Null Spezialzutaten;
-   Kalbschulter im REWE Center oder bei Selgros.
+7. **Ceviche mit Mango, mexikanischer Stil** — inspiriert von einer
+   fantastischen Mango-Ceviche in Mexiko: Limette, rote Zwiebel, Koriander,
+   Mango als süßer Kontrapunkt; Chili/Habanero separat. Technik: Säure-Garung
+   und Umgang mit rohem Fisch. Fisch von Buhara (vorher wegen sashimi-tauglicher
+   Qualität anfragen), sonst nur Standardzutaten. Kind isst Sushi → milde
+   Version machbar.
 
-10. **Ceviche mit Mango, mexikanischer Stil** — inspiriert von einer
-    fantastischen Mango-Ceviche in Mexiko: Limette, rote Zwiebel, Koriander,
-    Mango als süßer Kontrapunkt; Chili/Habanero separat. Technik: Säure-Garung
-    und Umgang mit rohem Fisch. Fisch von Buhara (vorher wegen sashimi-tauglicher
-    Qualität anfragen), sonst nur Standardzutaten. Kind isst Sushi → milde
-    Version machbar.
+8. **New England Clam Chowder** — nach USA-Reise vor Jahren schon einmal
+   nachgekocht, war super. Cremige Muschelsuppe mit Speck, Kartoffeln,
+   Sellerie; Muschelsud als Basis (frische Venusmuscheln/Vongole bei Buhara
+   anfragen, Fallback Dosenmuscheln + Clam Juice). Reichhaltig, null Schärfe —
+   Kind kann direkt mitessen. Optional dazu: Sauerteig-/Weißbrot statt
+   Bread Bowl.
 
-11. **New England Clam Chowder** — nach USA-Reise vor Jahren schon einmal
-    nachgekocht, war super. Cremige Muschelsuppe mit Speck, Kartoffeln,
-    Sellerie; Muschelsud als Basis (frische Venusmuscheln/Vongole bei Buhara
-    anfragen, Fallback Dosenmuscheln + Clam Juice). Reichhaltig, null Schärfe —
-    Kind kann direkt mitessen. Optional dazu: Sauerteig-/Weißbrot statt
-    Bread Bowl.
+9. **Chinesisches „Velveting“ + Dry-Frying (*Gān Biān*)** — Alltagsessen mit
+   simplen REWE-/Aldi-Zutaten: Hähnchenbrust oder Schweinefilet kurz in Natron
+   (\~½ TL/500 g, 15 Min.) + Stärke marinieren — hebt den pH-Wert, sodass selbst
+   mageres Fleisch bei 75 °C Kern zart und saftig bleibt (Kenji López-Alt).
+   Dazu grüne Bohnen trocken-heiß braten (*Dry-Frying*, Fuchsia Dunlop), bis
+   sie blasenwerfend-runzlig sind, mit Knoblauch, Ingwer und Sojasauce. Mild
+   by design (Chiliöl am Tisch); Kind liebt Sojasauce.
 
-12. **Chinesisches „Velveting“ + Dry-Frying (*Gān Biān*)** — Alltagsessen mit
-    simplen REWE-/Aldi-Zutaten: Hähnchenbrust oder Schweinefilet kurz in Natron
-    (\~½ TL/500 g, 15 Min.) + Stärke marinieren — hebt den pH-Wert, sodass selbst
-    mageres Fleisch bei 75 °C Kern zart und saftig bleibt (Kenji López-Alt).
-    Dazu grüne Bohnen trocken-heiß braten (*Dry-Frying*, Fuchsia Dunlop), bis
-    sie blasenwerfend-runzlig sind, mit Knoblauch, Ingwer und Sojasauce. Mild
-    by design (Chiliöl am Tisch); Kind liebt Sojasauce.
-
-13. **Öl-pochierter Fisch (Fisch-Confit)** — Alltagsessen (\~15 Min. aktiv):
-    Lachs oder Kabeljau (REWE Center / Buhara) in aromatisiertem Olivenöl
-    (Zitronenschale, Fenchelsamen, Thymian, Knoblauch) bei 70–80 °C im Ofen
-    oder Topf langsam auf **exakt 63 °C Kern** ziehen (Thermometer!). Selbst
-    komplett durchgegart bleibt die Textur butterzart statt faserig; das
-    aromatisierte Öl wird direkt zur Vinaigrette für einen warmen Linsen- oder
-    Bohnensalat.
-
-14. **Cajun Gumbo — dunkle Roux („Schokoladen-Roux“)** — Wochenendprojekt:
+10. **Cajun Gumbo — dunkle Roux („Schokoladen-Roux“)** — Wochenendprojekt:
     Mehl und Öl 30–45 Min. unter Rühren (Herd-Roux nach Paul Prudhomme /
     Isaac Toups; entspannter im Ofen nach Alton Brown) bis zur Farbe von Zartbitterschokolade rösten (verliert
     Bindekraft, gewinnt tiefes nussig-rauchiges Aroma). Mit „Holy Trinity“
@@ -147,15 +125,12 @@ durchgegart; kein Alkohol, kein rohes Ei, kein Kombu, keine
 Quecksilber-Fische. Wird eine Idee konkret → 🚧-Stub in `schwangerschaft/`.
 
 **Aus dem allgemeinen Backlog hierher passend:** *Qing Zheng Yu*
-(Wolfsbarsch/Dorade sind unkritisch; Shaoxing weglassen), *Blanquette
-de Veau* (Liaison auf ≥ 75 °C ziehen, kein Wein nötig), *Adobo*
-(Reis klein), *Velveting + Dry-Frying* (Fleisch auf 75 °C durch, kaum KH),
-*Öl-pochierter Fisch* (Lachs/Kabeljau unkritisch, exakt 63 °C Kern, 0 g KH),
-*Cajun Gumbo* (kein Alkohol, Wurst durchgegart, Reis klein), *Rough-Puff-Quiche
-mit Spinat-Feta oder Lachs* (pasteurisierter Feta, durchgegart, dünner Boden +
-viel Ei — Portion testen). **Nicht geeignet:** Vitello tonnato (Thunfisch + rohes Ei
-in der Mayo — zwei Treffer), Ceviche (roher Fisch), Hainanese
-Chicken Rice (Reis ist das Gericht), *Focaccia* (Weißmehl-KH-Träger).
+(Wolfsbarsch/Dorade sind unkritisch; Shaoxing weglassen), *Velveting +
+Dry-Frying* (Fleisch auf 75 °C durch, kaum KH), *Cajun Gumbo* (kein Alkohol,
+Wurst durchgegart, Reis klein), *Rough-Puff-Quiche mit Spinat-Feta oder Lachs*
+(pasteurisierter Feta, durchgegart, dünner Boden + viel Ei — Portion testen).
+**Nicht geeignet:** Ceviche (roher Fisch), Hainanese Chicken Rice (Reis ist
+das Gericht), *Focaccia* (Weißmehl-KH-Träger).
 
 1. **Mizutaki (Hakata-Style Hühner-Hotpot)** — Hähnchenteile 2–3 Std. zu einer
    milchig-weißen, kollagenreichen Brühe gekocht (14L-Topf, Selgros-Karkassen +

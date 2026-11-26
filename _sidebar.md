@@ -1,5 +1,9 @@
 - [Ideen-Backlog](/ideen.md)
 - **🚧 in arbeit**
+  - [Blanquette de Veau — Kalbsragout in heller Samtsauce mit Perlzwiebeln und Champignons (4 Portionen + Reste)](/gerichte/blanquette-de-veau.md)
+  - [Filipino Chicken Adobo — Hähnchenoberkeulen in Soja-Essig-Knoblauch-Sauce (4 Portionen)](/gerichte/chicken-adobo.md)
+  - [Lachs-Confit — in Olivenöl pochierter Lachs mit warmem Linsensalat (4 Portionen)](/gerichte/lachs-confit-linsensalat.md)
+  - [Vitello tonnato — rosa Kalbsnuss mit Thunfisch-Kapern-Sauce (4 Portionen als Hauptgang, 6–8 als Vorspeise)](/gerichte/vitello-tonnato.md)
   - [Burrito-Baukasten — drei Füllungen, als Burrito oder Bowl (3 Portionen)](/mealprep/burrito-baukasten.md)
   - [Menü November — Tomatenwasser / Kaisergranat / Ochsenbacke / Espresso-Parfait](/menues/menue-november.md)
 - **backen**
