@@ -1,0 +1,1979 @@
+{
+  "$schema": "../schema/recipe.schema.json",
+  "schemaVersion": "0.1",
+  "id": "gerichte/blanquette-de-veau",
+  "kind": "dish",
+  "title": "Blanquette de Veau — Kalbsragout in heller Samtsauce mit Perlzwiebeln und Champignons (4 Portionen + Reste)",
+  "status": "wip",
+  "yields": {
+    "text": "4 Portionen + Reste",
+    "value": 4.0,
+    "unit": "Portionen"
+  },
+  "statusNote": "> [!NOTE]\n> **Status: In Arbeit** — ausgearbeitet 11/2026, noch nicht gekocht. Zu prüfen: Garzeit des Fleischs je nach Zuschnitt (80–100 Min. sind geschätzt), Fond-Ausbeute (reichen \\~1,1 l für Sauce und Reis?), Saucenbindung mit 45 g Mehlschwitze auf 800 ml.",
+  "intro": "*Aktive Zeit \\~1 Std., gesamt \\~2 Std. 50 Min. Equipment: 6-L-Topf mit Deckel (erst Fond, dann Sauce), 2 große Schüsseln, kleine Pfanne oder Sauteuse mit Deckel, kleiner Topf mit Deckel für den Reis, feines Sieb, Schneebesen, Fleischthermometer.*\n\nDer Gegenentwurf zum braunen Schmorgericht: Das Kalb wird **nicht angebraten**, sondern sanft in einem aromatischen Sud gegart, der anschließend die Sauce wird. Die Technik ist die klassische französische Saucen-Grammatik in drei Stufen — helle Mehlschwitze (*roux blanc*), daraus eine *velouté* mit dem Garfond, am Ende die *liaison* aus Eigelb und Sahne. Ergebnis: elfenbeinfarben, seidig, mild, mit Zitrone als einzigem hellen Akzent. Alles bleibt weiß, deshalb auch die Garnitur: Perlzwiebeln und Champignons werden ohne Farbe gegart.",
+  "times": {
+    "text": "Aktive Zeit ~1 Std., gesamt ~2 Std.",
+    "active": {
+      "typical": "PT1H",
+      "source": "1 Std."
+    },
+    "total": {
+      "typical": "PT2H50M",
+      "source": "2 Std. 50 Min."
+    }
+  },
+  "equipment": [
+    "6-L-Topf mit Deckel (erst Fond",
+    "dann Sauce)",
+    "2 große Schüsseln",
+    "kleine Pfanne oder Sauteuse mit Deckel",
+    "kleiner Topf mit Deckel für den Reis",
+    "feines Sieb",
+    "Schneebesen",
+    "Fleischthermometer"
+  ],
+  "ingredients": [
+    {
+      "id": "karotten",
+      "name": "Karotten",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "500 g"
+      },
+      "note": "5 mittelgroße: 2 für den Fond, 3 als Garnitur"
+    },
+    {
+      "id": "lauch",
+      "name": "Lauch",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Stange"
+      }
+    },
+    {
+      "id": "staudensellerie",
+      "name": "Staudensellerie",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Stange"
+      }
+    },
+    {
+      "id": "zwiebel",
+      "name": "Zwiebel",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1"
+      }
+    },
+    {
+      "id": "perlzwiebeln",
+      "name": "Perlzwiebeln",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "250 g"
+      },
+      "note": "oder kleine Schalotten"
+    },
+    {
+      "id": "champignons",
+      "name": "kleine weiße Champignons",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "200 g"
+      }
+    },
+    {
+      "id": "petersilie",
+      "name": "Petersilie",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "1 Bund"
+      }
+    },
+    {
+      "id": "thymian",
+      "name": "Thymian",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "4 Zweige"
+      }
+    },
+    {
+      "id": "zitronen",
+      "name": "Zitronen",
+      "store": "REWE Center",
+      "group": "Obst & Gemüse",
+      "buy": {
+        "text": "2"
+      },
+      "note": "bis zu 3 EL Saft — eine reicht oft nicht"
+    },
+    {
+      "id": "kalbsschulter",
+      "name": "Kalbsschulter ohne Knochen",
+      "store": "REWE Center",
+      "group": "Fleisch & Fisch",
+      "buy": {
+        "text": "1,2 kg"
+      },
+      "note": "vorbestellen; Fallback Selgros"
+    },
+    {
+      "id": "sahne",
+      "name": "Sahne",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "150 g"
+      },
+      "note": "200-g-Becher"
+    },
+    {
+      "id": "eier",
+      "name": "Eier",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "2"
+      },
+      "note": "nur das Eigelb"
+    },
+    {
+      "id": "butter",
+      "name": "Butter",
+      "store": "REWE Center",
+      "group": "Milchprodukte & Eier",
+      "buy": {
+        "text": "80 g"
+      }
+    },
+    {
+      "id": "basmatireis",
+      "name": "Basmatireis",
+      "store": "REWE Center",
+      "group": "Trockenwaren",
+      "buy": {
+        "text": "200 g"
+      },
+      "note": "oder Langkornreis"
+    },
+    {
+      "id": "mehl",
+      "name": "Mehl",
+      "store": "Vorrat",
+      "buy": {
+        "text": "45 g"
+      },
+      "pantry": true,
+      "note": "Type 405"
+    },
+    {
+      "id": "nelken",
+      "name": "Nelken",
+      "store": "Vorrat",
+      "buy": {
+        "text": "2"
+      },
+      "pantry": true
+    },
+    {
+      "id": "lorbeerblaetter",
+      "name": "Lorbeerblätter",
+      "store": "Vorrat",
+      "buy": {
+        "text": "2"
+      },
+      "pantry": true
+    },
+    {
+      "id": "pfefferkoerner",
+      "name": "weiße Pfefferkörner",
+      "store": "Vorrat",
+      "buy": {
+        "text": "6"
+      },
+      "pantry": true
+    },
+    {
+      "id": "pfeffer",
+      "name": "Weißer Pfeffer, gemahlen",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "muskat",
+      "name": "Muskat",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "salz",
+      "name": "Salz",
+      "store": "Vorrat",
+      "pantry": true
+    },
+    {
+      "id": "zucker",
+      "name": "Prise Zucker",
+      "store": "Vorrat",
+      "buy": {
+        "text": "1"
+      },
+      "pantry": true
+    },
+    {
+      "id": "wasser",
+      "name": "Wasser",
+      "store": "Vorrat",
+      "pantry": true
+    }
+  ],
+  "sections": [
+    {
+      "type": "markdown",
+      "title": "Stil-Entscheidung",
+      "level": 2,
+      "markdown": "- **Kalbsschulter**, in großen Würfeln (5 cm): genug Bindegewebe für eine Sauce mit Körper, bleibt saftig. Brust/Tendron wäre gelatinöser, ist aber fetter und schwerer zu bekommen.\n- **Blanchieren ja:** Kalt aufsetzen, aufkochen, abgießen, abspülen. Ohne diesen Schritt trübt ausgeflocktes Eiweiß den Fond grau — und Farbe ist hier das halbe Gericht.\n- **Kein Wein.** Viele Rezepte kommen ohnehin ohne aus; die Säure liefert Zitrone am Ende. Damit ist das Gericht ohne Umbau schwangerschaftstauglich.\n- **Liaison auf 80 °C ziehen statt „nur nicht kochen“.** Die klassische Warnung (nach der Liaison nicht mehr kochen) gilt für reine Ei-Sahne-Bindungen. Hier steckt die Liaison in einer mehlgebundenen Velouté — Stärke schützt das Eigelb vor dem Ausflocken, 80 °C sind unkritisch und bringen die Sauce sicher über die 75-°C-Grenze des Leitfadens.\n- **Erst die Einlage in der Velouté erhitzen, dann die Liaison** — und alles im großen 6-L-Topf. Fleisch und Garnitur stehen bis zu einer Stunde herum; kämen sie erst nach der Liaison in die Sauce, fiele die Temperatur auf \\~55–60 °C und ließe sich nicht mehr gefahrlos hochziehen. Sauce plus Einlage sind zusammen knapp 3 l — ein kleiner Saucentopf liefe über.\n- **Champignon-Sud vor der Liaison:** 1 EL Zitronensaft auf 1 l mehlgebundene Sauce ist unkritisch (klassische Rezepte geben die Zitrone sogar direkt in die Liaison); der Sud wandert deshalb einfach mit der Einlage in den Topf.\n- **Champignons zurückhaltend** (200 g, klein, weiß gegart): Sie gehören zum Kanon, sollen aber Garnitur bleiben — der Haushalt ist kein Pilz-Fan. Weglassen ist erlaubt; dann 100 g mehr Karotten.\n- **Beilage Reis, im Fond gegart** — klassisch ist Pilawreis. Kein Risotto (kommt zu Hause nicht an); Bandnudeln sind die Alternative.\n- **Kein Instant-Fond nötig:** Das Gericht kocht seinen Fond selbst (Learning Karottensuppe 11/2026).",
+      "tags": [
+        "stil"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Beschaffung",
+      "level": 2,
+      "markdown": "- **Kalbsschulter ohne Knochen, 1,2 kg:** REWE Center an der Theke — Kalb ist dort nicht immer als Schulter vorrätig, **2–3 Tage vorher bestellen**. Sichere Quelle: Selgros (Kalbsschulter oder Kalbsgulasch am Stück). Fertig geschnittenes „Kalbsgulasch“ geht, ist aber oft zu klein gewürfelt → Garzeit ab 50 Min. prüfen.\n- **Perlzwiebeln, frisch:** im REWE Center nicht verlässlich. Gleichwertiger Ersatz: kleine Schalotten, geschält und längs halbiert. Keine eingelegten Perlzwiebeln aus dem Glas (sauer).\n- **Champignons:** kleine, fest geschlossene weiße — braune färben die Sauce.\n- **Sahne:** normale Schlagsahne (30 %). Crème fraîche geht ebenfalls und ist etwas säuerlicher.",
+      "tags": [
+        "beschaffung"
+      ]
+    },
+    {
+      "type": "shopping",
+      "title": "Einkaufsliste"
+    },
+    {
+      "type": "tasks",
+      "title": "Zubereitung",
+      "tasks": [
+        {
+          "id": "fleisch-und-fond",
+          "name": "Fleisch und Fond",
+          "steps": [
+            {
+              "id": "blanchieren",
+              "label": "1",
+              "heading": "**1. Blanchieren (15 Min.)**",
+              "title": "Blanchieren",
+              "duration": {
+                "typical": "PT15M",
+                "source": "15 Min."
+              },
+              "text": "Kalbsschulter (1,2 kg) in 5 cm große Würfel schneiden, im 6-L-Topf mit kaltem Wasser bedecken, aufkochen und 2 Min. sprudeln lassen. Abgießen, Fleisch und Topf kalt abspülen. *Entfernt ausgeflocktes Eiweiß — der Fond bleibt hell und klar.*",
+              "action": "Kalbsschulter (1,2 kg) in 5 cm große Würfel schneiden, im 6-L-Topf mit kaltem Wasser bedecken, aufkochen und 2 Min. sprudeln lassen.",
+              "why": "Entfernt ausgeflocktes Eiweiß — der Fond bleibt hell und klar.",
+              "timers": [
+                {
+                  "label": "Blanchieren",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "kalbsschulter",
+                  "amount": {
+                    "text": "1,2 kg",
+                    "value": 1.2,
+                    "unit": "kg"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "fond-ansetzen",
+              "label": "2",
+              "heading": "**2. Fond ansetzen (10 Min.)**",
+              "title": "Fond ansetzen",
+              "duration": {
+                "typical": "PT10M",
+                "source": "10 Min."
+              },
+              "text": "Fleisch zurück in den Topf geben und mit 1,8 l kaltem Wasser bedecken, 2 TL Salz (10 g) zugeben und langsam zum Simmern bringen. Währenddessen 2 Karotten schälen und halbieren, 1 Stange Lauch (nur das Weiße und Hellgrüne) längs halbieren und waschen, 1 Stange Staudensellerie halbieren, 1 Zwiebel schälen und mit 2 Nelken spicken. Vom Bund Petersilie die Blätter abzupfen und kühl stellen. Gemüse, 4 Zweige Thymian, 2 Lorbeerblätter, die Petersilienstiele und 6 weiße Pfefferkörner in den Topf geben.",
+              "action": "Fleisch zurück in den Topf geben und mit 1,8 l kaltem Wasser bedecken, 2 TL Salz (10 g) zugeben und langsam zum Simmern bringen.",
+              "ingredients": [
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "1,8 l kaltem Wasser",
+                    "value": 1.8,
+                    "unit": "l"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "2 TL Salz",
+                    "value": 2.0,
+                    "unit": "TL"
+                  }
+                },
+                {
+                  "ref": "karotten",
+                  "amount": {
+                    "text": "2 Karotten",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "lauch",
+                  "amount": {
+                    "text": "1 Stange Lauch",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "staudensellerie",
+                  "amount": {
+                    "text": "1 Stange Staudensellerie",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "zwiebel",
+                  "amount": {
+                    "text": "1 Zwiebel",
+                    "value": 1.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "nelken",
+                  "amount": {
+                    "text": "2 Nelken",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "thymian",
+                  "amount": {
+                    "text": "4 Zweige Thymian",
+                    "value": 4.0,
+                    "unit": "Zweige"
+                  }
+                },
+                {
+                  "ref": "lorbeerblaetter",
+                  "amount": {
+                    "text": "2 Lorbeerblätter",
+                    "value": 2.0,
+                    "unit": "Stück"
+                  }
+                },
+                {
+                  "ref": "pfefferkoerner",
+                  "amount": {
+                    "text": "6 weiße Pfefferkörner",
+                    "value": 6.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*nach Blanchieren · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:blanchieren"
+              ]
+            },
+            {
+              "id": "sanft-garen",
+              "label": "3",
+              "heading": "**3. Sanft garen (80–100 Min., passiv)**",
+              "title": "Sanft garen",
+              "duration": {
+                "min": "PT1H20M",
+                "max": "PT1H40M",
+                "source": "80–100 Min."
+              },
+              "attention": "passive",
+              "text": "Bei kleinster Hitze mit halb aufgelegtem Deckel leise simmern lassen — **nur einzelne Blasen, nie sprudelnd**. In den ersten 10 Min. Schaum abschöpfen. Nach 60 Min. das erste Mal prüfen.\n\n> **Garpunkt:** Zart, aber die Würfel halten ihre Form. Die Zeit hängt vom Zuschnitt ab — große Schulterwürfel bei sehr leisem Simmern brauchen eher 100 Min. und mehr. Die Sauce wartet, das Fleisch nicht: erst passieren, wenn es wirklich zart ist.",
+              "action": "Bei kleinster Hitze mit halb aufgelegtem Deckel leise simmern lassen — **nur einzelne Blasen, nie sprudelnd**.",
+              "limits": [
+                "nur einzelne Blasen, nie sprudelnd"
+              ],
+              "timers": [
+                {
+                  "label": "Sanft garen",
+                  "duration": {
+                    "typical": "PT10M"
+                  },
+                  "text": "10 Min."
+                }
+              ],
+              "events": [
+                {
+                  "at": {
+                    "typical": "PT1H",
+                    "source": "60 Min."
+                  },
+                  "text": "Nach 60 Min."
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Fond ansetzen · Herd · fertig wenn eine Gabel ohne Widerstand ins Fleisch gleitet*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "endCondition": {
+                "type": "visual",
+                "text": "wenn eine Gabel ohne Widerstand ins Fleisch gleitet"
+              },
+              "after": [
+                "step:fond-ansetzen"
+              ]
+            },
+            {
+              "id": "karotten-mitgaren",
+              "label": "4",
+              "heading": "**4. Karotten mitgaren (25 Min., parallel)**",
+              "title": "Karotten mitgaren",
+              "duration": {
+                "typical": "PT25M",
+                "source": "25 Min."
+              },
+              "parallel": true,
+              "text": "3 Karotten schälen, in 4 cm lange Stücke schneiden und dicke Stücke längs vierteln. **Nach Garprobe, nicht nach Uhr** in den Fond geben: sobald die Gabel nur noch leichten Widerstand im Fleisch spürt (meist nach 60–75 Min.). Mitgaren, bis sie weich sind, aber nicht zerfallen.",
+              "action": "3 Karotten schälen, in 4 cm lange Stücke schneiden und dicke Stücke längs vierteln.",
+              "limits": [
+                "Nach Garprobe, nicht nach Uhr"
+              ],
+              "cues": [
+                "bis sie weich sind"
+              ],
+              "events": [
+                {
+                  "at": {
+                    "min": "PT1H",
+                    "max": "PT1H15M",
+                    "source": "60–75 Min."
+                  },
+                  "text": "**Nach Garprobe, nicht nach Uhr** in den Fond geben: sobald die Gabel nur noch leichten Widerstand im Fleisch spürt (meist nach 60–75 Min.)."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "karotten",
+                  "amount": {
+                    "text": "3 Karotten",
+                    "value": 3.0,
+                    "unit": "Stück"
+                  }
+                }
+              ],
+              "meta": "*letzte 25 Min. von Sanft garen*",
+              "attention": "active",
+              "timers": [
+                {
+                  "label": "Karotten mitgaren",
+                  "duration": {
+                    "typical": "PT25M"
+                  },
+                  "text": "25 Min."
+                }
+              ],
+              "start": {
+                "ref": "step:sanft-garen:end",
+                "offset": {
+                  "min": "-PT25M",
+                  "max": "-PT25M",
+                  "source": "letzte 25 Min. von Sanft garen"
+                }
+              }
+            }
+          ],
+          "heading": "**Fleisch und Fond (ca. 2 Std. 45 Min. vor dem Essen):**",
+          "produces": [
+            {
+              "id": "fleisch-und-fond",
+              "name": "Fleisch und Fond"
+            }
+          ]
+        },
+        {
+          "id": "garnitur",
+          "name": "Garnitur",
+          "steps": [
+            {
+              "id": "perlzwiebeln-glasieren",
+              "label": "5",
+              "heading": "**5. Perlzwiebeln glasieren (20 Min., parallel)**",
+              "title": "Perlzwiebeln glasieren",
+              "duration": {
+                "typical": "PT20M",
+                "source": "20 Min."
+              },
+              "parallel": true,
+              "text": "Von 250 g Perlzwiebeln den Wurzelansatz knapp abschneiden, 1 Min. in kochendes Wasser legen, abschrecken und aus der Schale drücken. In der kleinen Pfanne mit 15 g Butter, 100 ml Wasser, 1 Prise Salz und 1 Prise Zucker zugedeckt bei kleiner Hitze 12–15 Min. garen, dann offen einkochen, bis die Flüssigkeit verdampft ist und die Zwiebeln glänzen — **ohne Farbe**. In eine Schüssel geben.",
+              "action": "Von 250 g Perlzwiebeln den Wurzelansatz knapp abschneiden, 1 Min. in kochendes Wasser legen, abschrecken und aus der Schale drücken.",
+              "limits": [
+                "ohne Farbe"
+              ],
+              "cues": [
+                "bis die Flüssigkeit verdampft ist und die Zwiebeln glänzen"
+              ],
+              "timers": [
+                {
+                  "label": "Perlzwiebeln glasieren",
+                  "duration": {
+                    "min": "PT12M",
+                    "max": "PT15M"
+                  },
+                  "text": "12–15 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "perlzwiebeln",
+                  "amount": {
+                    "text": "250 g Perlzwiebeln",
+                    "value": 250.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "15 g Butter",
+                    "value": 15.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "100 ml Wasser",
+                    "value": 100.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 Prise Salz",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                },
+                {
+                  "ref": "zucker",
+                  "amount": {
+                    "text": "1 Prise Zucker",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                }
+              ],
+              "meta": "*jederzeit · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": []
+            },
+            {
+              "id": "champignons-garen",
+              "label": "6",
+              "heading": "**6. Champignons garen (8 Min., parallel)**",
+              "title": "Champignons garen",
+              "duration": {
+                "typical": "PT8M",
+                "source": "8 Min."
+              },
+              "parallel": true,
+              "text": "200 g Champignons putzen und vierteln, in derselben Pfanne mit 10 g Butter, 1 EL Zitronensaft, 50 ml Wasser und 1 Prise Salz zugedeckt 5 Min. garen. Samt Sud zu den Perlzwiebeln geben. *Zitrone und Deckel halten die Pilze weiß; der Sud kommt mit in die Sauce.*",
+              "action": "200 g Champignons putzen und vierteln, in derselben Pfanne mit 10 g Butter, 1 EL Zitronensaft, 50 ml Wasser und 1 Prise Salz zugedeckt 5 Min. garen.",
+              "why": "Zitrone und Deckel halten die Pilze weiß; der Sud kommt mit in die Sauce.",
+              "timers": [
+                {
+                  "label": "Champignons garen",
+                  "duration": {
+                    "typical": "PT5M"
+                  },
+                  "text": "5 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "champignons",
+                  "amount": {
+                    "text": "200 g Champignons",
+                    "value": 200.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "10 g Butter",
+                    "value": 10.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "1 EL Zitronensaft",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "wasser",
+                  "amount": {
+                    "text": "50 ml Wasser",
+                    "value": 50.0,
+                    "unit": "ml"
+                  }
+                },
+                {
+                  "ref": "salz",
+                  "amount": {
+                    "text": "1 Prise Salz",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                }
+              ],
+              "meta": "*nach Perlzwiebeln glasieren · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:perlzwiebeln-glasieren"
+              ]
+            }
+          ],
+          "heading": "**Garnitur (während das Fleisch gart):**",
+          "produces": [
+            {
+              "id": "garnitur",
+              "name": "Garnitur"
+            }
+          ]
+        },
+        {
+          "id": "sauce-und-finish",
+          "name": "Sauce und Finish",
+          "steps": [
+            {
+              "id": "fond-passieren",
+              "label": "7",
+              "heading": "**7. Fond passieren (5 Min.)**",
+              "title": "Fond passieren",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Fleisch und die Karottenstücke der Garnitur mit der Schaumkelle in eine Schüssel heben, eine Kelle Fond darübergeben und abdecken. Den Fond durch das feine Sieb in eine zweite Schüssel gießen, Suppengemüse und Kräuter wegwerfen. 800 ml Fond für die Sauce und 300 ml für den Reis abmessen, den 6-L-Topf kurz ausspülen — er wird der Saucentopf.\n\n> **Zu wenig Fond?** Zuerst die 800 ml für die Sauce sichern, den Reis mit Wasser auffüllen. Übriger Fond ist eine fertige Kalbsbrühe — einfrieren.",
+              "action": "Fleisch und die Karottenstücke der Garnitur mit der Schaumkelle in eine Schüssel heben, eine Kelle Fond darübergeben und abdecken.",
+              "limits": [
+                "Zu wenig Fond?"
+              ],
+              "ingredients": [],
+              "meta": "*nach Sanft garen, Karotten mitgaren*",
+              "attention": "active",
+              "after": [
+                "step:sanft-garen",
+                "step:karotten-mitgaren"
+              ]
+            },
+            {
+              "id": "reis-kochen",
+              "label": "8",
+              "heading": "**8. Reis kochen (5 Min. + 20 Min. passiv)**",
+              "title": "Reis kochen",
+              "duration": {
+                "typical": "PT25M",
+                "source": "5 Min. + 20 Min."
+              },
+              "attention": "passive",
+              "text": "200 g Basmatireis waschen und im Sieb **gut abtropfen lassen**, in 10 g Butter 1 Min. unter Rühren anschwitzen, mit 300 ml Fond aufgießen und aufkochen. Deckel auf, kleinste Hitze, 12 Min. garen, dann vom Herd nehmen und zugedeckt ruhen lassen, bis angerichtet wird (mindestens 10 Min.).",
+              "action": "200 g Basmatireis waschen und im Sieb **gut abtropfen lassen**, in 10 g Butter 1 Min. unter Rühren anschwitzen, mit 300 ml Fond aufgießen und aufkochen.",
+              "limits": [
+                "gut abtropfen lassen"
+              ],
+              "timers": [
+                {
+                  "label": "Reis kochen",
+                  "duration": {
+                    "typical": "PT12M"
+                  },
+                  "text": "12 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "basmatireis",
+                  "amount": {
+                    "text": "200 g Basmatireis",
+                    "value": 200.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "10 g Butter",
+                    "value": 10.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nach Fond passieren · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "after": [
+                "step:fond-passieren"
+              ]
+            },
+            {
+              "id": "veloute",
+              "label": "9",
+              "heading": "**9. Velouté (20 Min.)**",
+              "title": "Velouté",
+              "duration": {
+                "typical": "PT20M",
+                "source": "20 Min."
+              },
+              "text": "45 g Butter im ausgespülten 6-L-Topf bei mittlerer Hitze schmelzen, 45 g Mehl einrühren und 2 Min. unter Rühren anschwitzen, **ohne Farbe**. Vom Herd ziehen, 800 ml heißen Fond in drei Portionen mit dem Schneebesen einrühren, jeweils glatt rühren. Aufkochen und 15 Min. bei kleiner Hitze offen simmern lassen, gelegentlich rühren. *Die 15 Min. kochen den Mehlgeschmack aus — nicht abkürzen. Die Sauce soll einen Löffelrücken überziehen.*",
+              "action": "45 g Butter im ausgespülten 6-L-Topf bei mittlerer Hitze schmelzen, 45 g Mehl einrühren und 2 Min. unter Rühren anschwitzen, **ohne Farbe**.",
+              "limits": [
+                "ohne Farbe"
+              ],
+              "why": "Die 15 Min. kochen den Mehlgeschmack aus — nicht abkürzen. Die Sauce soll einen Löffelrücken überziehen.",
+              "timers": [
+                {
+                  "label": "Velouté",
+                  "duration": {
+                    "typical": "PT2M"
+                  },
+                  "text": "2 Min."
+                },
+                {
+                  "label": "Velouté",
+                  "duration": {
+                    "typical": "PT15M"
+                  },
+                  "text": "15 Min."
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "butter",
+                  "amount": {
+                    "text": "45 g Butter",
+                    "value": 45.0,
+                    "unit": "g"
+                  }
+                },
+                {
+                  "ref": "mehl",
+                  "amount": {
+                    "text": "45 g Mehl",
+                    "value": 45.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nach Fond passieren · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "attended",
+              "after": [
+                "step:fond-passieren"
+              ]
+            },
+            {
+              "id": "einlage-erhitzen",
+              "label": "10",
+              "heading": "**10. Einlage erhitzen (ca. 8 Min.)**",
+              "title": "Einlage erhitzen",
+              "duration": {
+                "typical": "PT8M",
+                "source": "ca. 8 Min.",
+                "estimated": true
+              },
+              "text": "Fleisch und Karotten samt ihrem Fond sowie Perlzwiebeln und Champignons samt Sud in die simmernde Velouté geben und bei kleiner Hitze 6–8 Min. erhitzen, bis alles durch und durch heiß ist und die Sauce wieder leise simmert. Währenddessen tiefe Teller vorwärmen (Ofen 60 °C oder heißes Wasser). *Fleisch und Garnitur haben bis zu einer Stunde gestanden. Sie müssen heiß sein, **bevor** die Liaison kommt — danach darf nicht mehr kräftig nachgeheizt werden.*",
+              "action": "Fleisch und Karotten samt ihrem Fond sowie Perlzwiebeln und Champignons samt Sud in die simmernde Velouté geben und bei kleiner Hitze 6–8 Min. erhitzen, bis alles durch und durch heiß ist und die Sauce wieder leise simmert.",
+              "why": "die Liaison kommt — danach darf nicht mehr kräftig nachgeheizt werden.",
+              "timers": [
+                {
+                  "label": "Einlage erhitzen",
+                  "duration": {
+                    "min": "PT6M",
+                    "max": "PT8M"
+                  },
+                  "text": "6–8 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ofen",
+                  "text": "60 °C",
+                  "value": 60
+                }
+              ],
+              "ingredients": [],
+              "meta": "*nach Velouté, Perlzwiebeln glasieren, Champignons garen · Herd*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "attention": "active",
+              "after": [
+                "step:veloute",
+                "step:perlzwiebeln-glasieren",
+                "step:champignons-garen"
+              ]
+            },
+            {
+              "id": "liaison",
+              "label": "11",
+              "heading": "**11. Liaison (5 Min.)**",
+              "title": "Liaison",
+              "duration": {
+                "typical": "PT5M",
+                "source": "5 Min."
+              },
+              "text": "Topf vom Herd ziehen und 1–2 Min. ausdampfen lassen, bis nichts mehr blubbert (\\~82–85 °C). Währenddessen 2 Eigelb mit 150 g Sahne in einer Schüssel verquirlen und eine Kelle heiße Sauce einrühren (angleichen). Die Mischung in den Topf gießen, vorsichtig unterrühren und messen: **80 °C** 1 Min. halten. Liegt die Sauce darunter, bei kleiner Hitze unter ständigem Rühren kurz nachheizen — **nicht sprudelnd kochen**. *Direkt in die simmernde Sauce (\\~95 °C) gerührt, läge die Mischung bei \\~90 °C — über der Gerinnungsgrenze.*\n\n> **Messen:** Thermometer frei in die gerührte Sauce zwischen die Fleischstücke halten, nicht an den Topfboden — dort ist es heißer als in der Sauce. Die 80 °C sind die Sicherheitsmarge über der 75-°C-Grenze des Leitfadens.\n\n> **Geronnen?** Kleine Flöckchen: sofort vom Herd und kräftig rühren. Durch die Mehlbindung passiert das erst deutlich über 85 °C.",
+              "action": "Topf vom Herd ziehen und 1–2 Min. ausdampfen lassen, bis nichts mehr blubbert (\\~82–85 °C).",
+              "limits": [
+                "80 °C",
+                "nicht sprudelnd kochen"
+              ],
+              "timers": [
+                {
+                  "label": "Liaison",
+                  "duration": {
+                    "min": "PT1M",
+                    "max": "PT2M"
+                  },
+                  "text": "1–2 Min."
+                }
+              ],
+              "temps": [
+                {
+                  "kind": "ziel",
+                  "text": "82–85 °C",
+                  "min": 82,
+                  "max": 85
+                },
+                {
+                  "kind": "ziel",
+                  "text": "80 °C",
+                  "value": 80
+                },
+                {
+                  "kind": "ziel",
+                  "text": "95 °C",
+                  "value": 95
+                },
+                {
+                  "kind": "ziel",
+                  "text": "90 °C",
+                  "value": 90
+                },
+                {
+                  "kind": "ziel",
+                  "text": "80 °C",
+                  "value": 80
+                },
+                {
+                  "kind": "max",
+                  "text": "85 °C",
+                  "value": 85
+                }
+              ],
+              "ingredients": [
+                {
+                  "ref": "eier",
+                  "amount": {
+                    "text": "2 Eigelb",
+                    "value": 2.0,
+                    "unit": "Eigelb"
+                  }
+                },
+                {
+                  "ref": "sahne",
+                  "amount": {
+                    "text": "150 g Sahne",
+                    "value": 150.0,
+                    "unit": "g"
+                  }
+                }
+              ],
+              "meta": "*nach Einlage erhitzen · Herd · fertig bei ≥ 75 °C*",
+              "claims": [
+                {
+                  "resource": "hob",
+                  "units": 1
+                }
+              ],
+              "endCondition": {
+                "type": "temperature",
+                "text": "bei ≥ 75 °C",
+                "value": 75
+              },
+              "attention": "attended",
+              "after": [
+                "step:einlage-erhitzen"
+              ]
+            },
+            {
+              "id": "abschmecken",
+              "label": "12",
+              "heading": "**12. Abschmecken (ca. 3 Min.)**",
+              "title": "Abschmecken",
+              "duration": {
+                "typical": "PT3M",
+                "source": "ca. 3 Min.",
+                "estimated": true
+              },
+              "text": "Vom Herd nehmen und mit 1 EL Zitronensaft, 1 Prise Muskat, 1 Prise weißem Pfeffer und Salz abschmecken — erst Salz, dann Säure. Die Blätter von ½ Bund Petersilie hacken.\n\n> **Abschmecken:** Die Sauce darf deutlich nach Zitrone schmecken — ohne Säure wirkt sie nur mehlig-sahnig. Maximal 2 EL insgesamt.",
+              "action": "Vom Herd nehmen und mit 1 EL Zitronensaft, 1 Prise Muskat, 1 Prise weißem Pfeffer und Salz abschmecken — erst Salz, dann Säure.",
+              "ingredients": [
+                {
+                  "ref": "zitronen",
+                  "amount": {
+                    "text": "1 EL Zitronensaft",
+                    "value": 1.0,
+                    "unit": "EL"
+                  }
+                },
+                {
+                  "ref": "muskat",
+                  "amount": {
+                    "text": "1 Prise Muskat",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                },
+                {
+                  "ref": "pfeffer",
+                  "amount": {
+                    "text": "1 Prise weißem Pfeffer",
+                    "value": 1.0,
+                    "unit": "Prise"
+                  }
+                },
+                {
+                  "ref": "petersilie",
+                  "amount": {
+                    "text": "½ Bund Petersilie",
+                    "value": 0.5,
+                    "unit": "Bund"
+                  }
+                }
+              ],
+              "meta": "*nach Liaison*",
+              "attention": "active",
+              "after": [
+                "step:liaison"
+              ]
+            },
+            {
+              "id": "anrichten",
+              "label": "13",
+              "heading": "**13. Anrichten (ca. 3 Min.)**",
+              "title": "Anrichten",
+              "duration": {
+                "typical": "PT3M",
+                "source": "ca. 3 Min.",
+                "estimated": true
+              },
+              "text": "Blanquette in die vorgewärmten tiefen Teller geben, mit der gehackten Petersilie bestreuen, Reis daneben.",
+              "action": "Blanquette in die vorgewärmten tiefen Teller geben, mit der gehackten Petersilie bestreuen, Reis daneben.",
+              "ingredients": [],
+              "meta": "*nach Abschmecken, Reis kochen*",
+              "attention": "active",
+              "after": [
+                "step:abschmecken",
+                "step:reis-kochen"
+              ]
+            }
+          ],
+          "heading": "**Sauce und Finish (ca. 50 Min. vor dem Essen):**",
+          "produces": [
+            {
+              "id": "sauce-und-finish",
+              "name": "Sauce und Finish"
+            }
+          ],
+          "consumes": [
+            "product:garnitur"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "schedule",
+      "title": "Zeitplan",
+      "schedule": {
+        "id": "zeitplan",
+        "label": "Zeitplan",
+        "phases": [
+          {
+            "id": "kochtag",
+            "label": "Kochtag",
+            "day": 0,
+            "part": "service"
+          }
+        ],
+        "entries": [
+          {
+            "phase": "kochtag",
+            "text": "Blanchieren, Fond ansetzen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT170M"
+            },
+            "source": "T−2:50",
+            "steps": [
+              "blanchieren",
+              "fond-ansetzen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Sanft garen (läuft allein)",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT145M"
+            },
+            "source": "T−2:25",
+            "steps": [
+              "sanft-garen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Perlzwiebeln glasieren, Champignons garen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT110M"
+            },
+            "source": "T−1:50",
+            "steps": [
+              "perlzwiebeln-glasieren",
+              "champignons-garen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Karotten mitgaren (nach Garprobe, nicht nach Uhr)",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT75M"
+            },
+            "source": "T−1:15",
+            "steps": [
+              "karotten-mitgaren"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Fond passieren, Reis kochen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT50M"
+            },
+            "source": "T−0:50",
+            "steps": [
+              "fond-passieren",
+              "reis-kochen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Velouté",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT40M"
+            },
+            "source": "T−0:40",
+            "steps": [
+              "veloute"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Einlage erhitzen, Teller vorwärmen",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT20M"
+            },
+            "source": "T−0:20",
+            "steps": [
+              "einlage-erhitzen"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Liaison",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT11M"
+            },
+            "source": "T−0:11",
+            "steps": [
+              "liaison"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Abschmecken",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT6M"
+            },
+            "source": "T−0:06",
+            "steps": [
+              "abschmecken"
+            ]
+          },
+          {
+            "phase": "kochtag",
+            "text": "Anrichten",
+            "at": {
+              "ref": "anchor",
+              "offset": "-PT3M"
+            },
+            "source": "T−0:03",
+            "steps": [
+              "anrichten"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "markdown",
+      "title": "Kinder-Anpassung",
+      "level": 2,
+      "markdown": "- **Isst direkt mit** — mild, cremig, keine Schärfe, kein Alkohol. Fleisch klein schneiden, Sauce über den Reis.\n- Champignons und Perlzwiebeln ggf. herauslassen; Karotten sind der sichere Treffer.\n- Die Zitronennote der Sauce ist dezent; fürs Kind vor dem letzten Nachsäuern eine Kelle abnehmen, falls die Erwachsenen-Sauce kräftiger wird.",
+      "tags": [
+        "kind"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Schwangerschaft & GDM",
+      "level": 2,
+      "markdown": "- **Schwangerschaft: ✅ direkt.** Kalb ist nach 80–100 Min. Simmern vollständig durchgegart (weit über 70 °C). Kein Wein. Die Liaison wird mit dem Thermometer auf 80 °C gezogen und 1 Min. gehalten (Leitfaden: ≥ 75 °C) — das Eigelb ist damit durchgegart. Sahne und Butter sind pasteurisiert. Champignons gegart.\n- **GDM:** KH-Träger sind Reis (50 g roh ≈ 38 g KH) und die Mehlbindung (\\~9 g pro Portion), dazu Karotten und Zwiebeln (\\~8 g). GDM-Teller: **30–40 g Reis roh**, dafür mehr Fleisch und Gemüse; mit viel Protein und Fett in der Sauce wird der Anstieg gedämpft. Alternative Beilage: gedämpfter Brokkoli oder grüne Bohnen statt Reis, dann die KH an anderer Stelle des Tages einplanen. Messen.\n- **Aufgewärmte Reste:** Sauce langsam auf ≥ 75 °C erhitzen, dabei rühren.",
+      "tags": [
+        "schwangerschaft"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Notizen",
+      "level": 2,
+      "markdown": "- **Vorbereiten:** Fleisch und Fond (Blanchieren bis Fond passieren) lassen sich am Vortag kochen; Fleisch im Fond kühlen, damit es nicht austrocknet. Velouté und Liaison immer frisch — aufgewärmte Liaison-Saucen verlieren Glanz.\n- **Schnellkochtopf (ungetestet):** blanchiertes Fleisch mit Suppengemüse und nur 1,2 l Wasser 25 Min. Hochdruck, natürlicher Druckabbau. Karotten der Garnitur dann separat 10 Min. im Fond simmern. Der Fond wird trüber als beim sanften Simmern.\n- **Variante mit Wein (nach der Schwangerschaft):** 150 ml trockenen Weißwein in Schritt 2 mit angießen, Wasser auf 1,65 l reduzieren.\n- **Reste:** halten gekühlt 2 Tage; die Sauce dickt nach — beim Aufwärmen mit einem Schuss Fond oder Wasser lockern.",
+      "tags": [
+        "notizen"
+      ]
+    },
+    {
+      "type": "markdown",
+      "title": "Quellen & Entscheidungen",
+      "level": 2,
+      "markdown": "Recherche 11/2026 über Websuche; die Rezepte wurden nicht im Volltext gegengelesen, die Spannen stammen aus den Suchauszügen.\n\n- **Mengengerüst:** Französische Referenzen für 1,2 kg Kalb (Schulter, Tendron oder Flanke) nennen je 30–50 g Butter und Mehl für die Roux, 2–3 Eigelb und rund 200 g Crème fraîche, Zitronensaft in der Liaison — u. a. [Guide Michelin, Blanquette à l'ancienne von Pierre Négrevergne](https://guide.michelin.com/fr/fr/article/dining-in/recette-la-blanquette-de-veau-a-l-ancienne-de-pierre-negrevergne), [Meilleur du Chef](https://www.meilleurduchef.com/fr/recette/blanquette-veau.html), [Futura (Ferrandi-Stil)](https://www.futura-sciences.com/sante/recettes/cuisine-blanquette-veau-facon-style-ferrandi-317/). Hier: 45 g/45 g auf 800 ml Fond, 2 Eigelb, 150 g Sahne.\n- **Technik-Regeln** (Roux nicht bräunen, Liaison mit einer Kelle Sauce angleichen, danach nicht mehr kochen): dieselben Quellen; Einordnung des Gerichts: [Wikipedia — Blanquette de veau](https://en.wikipedia.org/wiki/Blanquette_de_veau).\n- **Eigene Entscheidungen, nicht aus den Quellen belegt:** Liaison auf 80 °C (Stärke stabilisiert Eigelb — Prinzip wie bei Crème pâtissière; Zielwert an den Leitfaden angepasst), Reihenfolge Einlage erhitzen → Liaison im 6-L-Topf (nach Review 11/2026), Reis im Fond, Wassermenge 1,8 l und Fond-Ausbeute, Champignon-Menge, Schnellkochtopf-Zeiten. Alles beim ersten Kochen zu prüfen.",
+      "tags": [
+        "quellen"
+      ]
+    }
+  ],
+  "derived": {
+    "generatedAt": "2026-11-26T15:04:29Z",
+    "sourceHash": "57aca015bc082569",
+    "quantities": [
+      {
+        "ingredient": "karotten",
+        "total": {
+          "text": "5",
+          "value": 5.0,
+          "max": 5.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "fleisch-und-fond": "2 Karotten + 3 Karotten"
+        }
+      },
+      {
+        "ingredient": "lauch",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "fleisch-und-fond": "1 Stange Lauch"
+        }
+      },
+      {
+        "ingredient": "staudensellerie",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "fleisch-und-fond": "1 Stange Staudensellerie"
+        }
+      },
+      {
+        "ingredient": "zwiebel",
+        "total": {
+          "text": "1",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "fleisch-und-fond": "1 Zwiebel"
+        }
+      },
+      {
+        "ingredient": "perlzwiebeln",
+        "total": {
+          "text": "250 g",
+          "value": 250.0,
+          "max": 250.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "garnitur": "250 g Perlzwiebeln"
+        }
+      },
+      {
+        "ingredient": "champignons",
+        "total": {
+          "text": "200 g",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "garnitur": "200 g Champignons"
+        }
+      },
+      {
+        "ingredient": "petersilie",
+        "total": {
+          "text": "½ Bund",
+          "value": 0.5,
+          "max": 0.5,
+          "unit": "Bund",
+          "approx": false
+        },
+        "perTask": {
+          "sauce-und-finish": "½ Bund Petersilie"
+        }
+      },
+      {
+        "ingredient": "thymian",
+        "total": {
+          "text": "4 Zweige",
+          "value": 4.0,
+          "max": 4.0,
+          "unit": "Zweige",
+          "approx": false
+        },
+        "perTask": {
+          "fleisch-und-fond": "4 Zweige Thymian"
+        }
+      },
+      {
+        "ingredient": "zitronen",
+        "total": {
+          "text": "2 EL",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "EL",
+          "approx": false
+        },
+        "perTask": {
+          "garnitur": "1 EL Zitronensaft",
+          "sauce-und-finish": "1 EL Zitronensaft"
+        }
+      },
+      {
+        "ingredient": "kalbsschulter",
+        "total": {
+          "text": "1200 g",
+          "value": 1200.0,
+          "max": 1200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "fleisch-und-fond": "1,2 kg"
+        }
+      },
+      {
+        "ingredient": "sahne",
+        "total": {
+          "text": "150 g",
+          "value": 150.0,
+          "max": 150.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "sauce-und-finish": "150 g Sahne"
+        }
+      },
+      {
+        "ingredient": "eier",
+        "total": {
+          "text": "2 Eigelb",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Eigelb",
+          "approx": false
+        },
+        "perTask": {
+          "sauce-und-finish": "2 Eigelb"
+        }
+      },
+      {
+        "ingredient": "butter",
+        "total": {
+          "text": "80 g",
+          "value": 80.0,
+          "max": 80.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "garnitur": "15 g Butter + 10 g Butter",
+          "sauce-und-finish": "10 g Butter + 45 g Butter"
+        }
+      },
+      {
+        "ingredient": "basmatireis",
+        "total": {
+          "text": "200 g",
+          "value": 200.0,
+          "max": 200.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "sauce-und-finish": "200 g Basmatireis"
+        }
+      },
+      {
+        "ingredient": "mehl",
+        "total": {
+          "text": "45 g",
+          "value": 45.0,
+          "max": 45.0,
+          "unit": "g",
+          "approx": false
+        },
+        "perTask": {
+          "sauce-und-finish": "45 g Mehl"
+        }
+      },
+      {
+        "ingredient": "nelken",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "fleisch-und-fond": "2 Nelken"
+        }
+      },
+      {
+        "ingredient": "lorbeerblaetter",
+        "total": {
+          "text": "2",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "fleisch-und-fond": "2 Lorbeerblätter"
+        }
+      },
+      {
+        "ingredient": "pfefferkoerner",
+        "total": {
+          "text": "6",
+          "value": 6.0,
+          "max": 6.0,
+          "unit": "Stück",
+          "approx": false
+        },
+        "perTask": {
+          "fleisch-und-fond": "6 weiße Pfefferkörner"
+        }
+      },
+      {
+        "ingredient": "pfeffer",
+        "total": {
+          "text": "1 Prise",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Prise",
+          "approx": false
+        },
+        "perTask": {
+          "sauce-und-finish": "1 Prise weißem Pfeffer"
+        }
+      },
+      {
+        "ingredient": "muskat",
+        "total": {
+          "text": "1 Prise",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Prise",
+          "approx": false
+        },
+        "perTask": {
+          "sauce-und-finish": "1 Prise Muskat"
+        }
+      },
+      {
+        "ingredient": "salz",
+        "total": {
+          "text": "2 TL + 2 Prise",
+          "value": 2.0,
+          "max": 2.0,
+          "unit": "TL",
+          "approx": false,
+          "plus": [
+            {
+              "text": "2 Prise",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Prise",
+              "approx": false
+            }
+          ]
+        },
+        "perTask": {
+          "fleisch-und-fond": "2 TL Salz",
+          "garnitur": "1 Prise Salz + 1 Prise Salz"
+        },
+        "unitMixed": true
+      },
+      {
+        "ingredient": "zucker",
+        "total": {
+          "text": "1 Prise",
+          "value": 1.0,
+          "max": 1.0,
+          "unit": "Prise",
+          "approx": false
+        },
+        "perTask": {
+          "garnitur": "1 Prise Zucker"
+        }
+      },
+      {
+        "ingredient": "wasser",
+        "total": {
+          "text": "1950 ml",
+          "value": 1950.0,
+          "max": 1950.0,
+          "unit": "ml",
+          "approx": false
+        },
+        "perTask": {
+          "fleisch-und-fond": "1,8 l kaltem Wasser",
+          "garnitur": "100 ml Wasser + 50 ml Wasser"
+        }
+      }
+    ],
+    "shopping": [
+      {
+        "store": "REWE Center",
+        "group": "Obst & Gemüse",
+        "items": [
+          {
+            "ingredient": "karotten",
+            "name": "Karotten",
+            "need": {
+              "text": "5",
+              "value": 5.0,
+              "max": 5.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "5",
+            "inStock": false,
+            "buy": {
+              "text": "500 g"
+            },
+            "note": "5 mittelgroße: 2 für den Fond, 3 als Garnitur"
+          },
+          {
+            "ingredient": "lauch",
+            "name": "Lauch",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1 Stange"
+            }
+          },
+          {
+            "ingredient": "staudensellerie",
+            "name": "Staudensellerie",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1 Stange"
+            }
+          },
+          {
+            "ingredient": "zwiebel",
+            "name": "Zwiebel",
+            "need": {
+              "text": "1",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "1",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            }
+          },
+          {
+            "ingredient": "perlzwiebeln",
+            "name": "Perlzwiebeln",
+            "need": {
+              "text": "250 g",
+              "value": 250.0,
+              "max": 250.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "250 g",
+            "inStock": false,
+            "buy": {
+              "text": "250 g"
+            },
+            "note": "oder kleine Schalotten"
+          },
+          {
+            "ingredient": "champignons",
+            "name": "kleine weiße Champignons",
+            "need": {
+              "text": "200 g",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "200 g",
+            "inStock": false,
+            "buy": {
+              "text": "200 g"
+            }
+          },
+          {
+            "ingredient": "petersilie",
+            "name": "Petersilie",
+            "need": {
+              "text": "½ Bund",
+              "value": 0.5,
+              "max": 0.5,
+              "unit": "Bund",
+              "approx": false
+            },
+            "display": "½ Bund",
+            "inStock": false,
+            "buy": {
+              "text": "1 Bund"
+            }
+          },
+          {
+            "ingredient": "thymian",
+            "name": "Thymian",
+            "need": {
+              "text": "4 Zweige",
+              "value": 4.0,
+              "max": 4.0,
+              "unit": "Zweige",
+              "approx": false
+            },
+            "display": "4 Zweige",
+            "inStock": false,
+            "buy": {
+              "text": "4 Zweige"
+            }
+          },
+          {
+            "ingredient": "zitronen",
+            "name": "Zitronen",
+            "need": {
+              "text": "2 EL",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "EL",
+              "approx": false
+            },
+            "display": "2 EL",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "bis zu 3 EL Saft — eine reicht oft nicht"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Fleisch & Fisch",
+        "items": [
+          {
+            "ingredient": "kalbsschulter",
+            "name": "Kalbsschulter ohne Knochen",
+            "need": {
+              "text": "1200 g",
+              "value": 1200.0,
+              "max": 1200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "1200 g",
+            "inStock": false,
+            "buy": {
+              "text": "1,2 kg"
+            },
+            "note": "vorbestellen; Fallback Selgros"
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Milchprodukte & Eier",
+        "items": [
+          {
+            "ingredient": "sahne",
+            "name": "Sahne",
+            "need": {
+              "text": "150 g",
+              "value": 150.0,
+              "max": 150.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "150 g",
+            "inStock": false,
+            "buy": {
+              "text": "150 g"
+            },
+            "note": "200-g-Becher"
+          },
+          {
+            "ingredient": "eier",
+            "name": "Eier",
+            "need": {
+              "text": "2 Eigelb",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Eigelb",
+              "approx": false
+            },
+            "display": "2 Eigelb",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "note": "nur das Eigelb"
+          },
+          {
+            "ingredient": "butter",
+            "name": "Butter",
+            "need": {
+              "text": "80 g",
+              "value": 80.0,
+              "max": 80.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "80 g",
+            "inStock": false,
+            "buy": {
+              "text": "80 g"
+            }
+          }
+        ]
+      },
+      {
+        "store": "REWE Center",
+        "group": "Trockenwaren",
+        "items": [
+          {
+            "ingredient": "basmatireis",
+            "name": "Basmatireis",
+            "need": {
+              "text": "200 g",
+              "value": 200.0,
+              "max": 200.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "200 g",
+            "inStock": false,
+            "buy": {
+              "text": "200 g"
+            },
+            "note": "oder Langkornreis"
+          }
+        ]
+      },
+      {
+        "store": "Vorrat",
+        "group": null,
+        "items": [
+          {
+            "ingredient": "mehl",
+            "name": "Mehl",
+            "need": {
+              "text": "45 g",
+              "value": 45.0,
+              "max": 45.0,
+              "unit": "g",
+              "approx": false
+            },
+            "display": "45 g",
+            "inStock": false,
+            "buy": {
+              "text": "45 g"
+            },
+            "pantry": true,
+            "note": "Type 405"
+          },
+          {
+            "ingredient": "nelken",
+            "name": "Nelken",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "lorbeerblaetter",
+            "name": "Lorbeerblätter",
+            "need": {
+              "text": "2",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "2",
+            "inStock": false,
+            "buy": {
+              "text": "2"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "pfefferkoerner",
+            "name": "weiße Pfefferkörner",
+            "need": {
+              "text": "6",
+              "value": 6.0,
+              "max": 6.0,
+              "unit": "Stück",
+              "approx": false
+            },
+            "display": "6",
+            "inStock": false,
+            "buy": {
+              "text": "6"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "pfeffer",
+            "name": "Weißer Pfeffer, gemahlen",
+            "need": {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            },
+            "display": "1 Prise",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "muskat",
+            "name": "Muskat",
+            "need": {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            },
+            "display": "1 Prise",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "salz",
+            "name": "Salz",
+            "need": {
+              "text": "2 TL + 2 Prise",
+              "value": 2.0,
+              "max": 2.0,
+              "unit": "TL",
+              "approx": false,
+              "plus": [
+                {
+                  "text": "2 Prise",
+                  "value": 2.0,
+                  "max": 2.0,
+                  "unit": "Prise",
+                  "approx": false
+                }
+              ]
+            },
+            "display": "2 TL + 2 Prise",
+            "inStock": false,
+            "pantry": true
+          },
+          {
+            "ingredient": "zucker",
+            "name": "Prise Zucker",
+            "need": {
+              "text": "1 Prise",
+              "value": 1.0,
+              "max": 1.0,
+              "unit": "Prise",
+              "approx": false
+            },
+            "display": "1 Prise",
+            "inStock": false,
+            "buy": {
+              "text": "1"
+            },
+            "pantry": true
+          },
+          {
+            "ingredient": "wasser",
+            "name": "Wasser",
+            "need": {
+              "text": "1950 ml",
+              "value": 1950.0,
+              "max": 1950.0,
+              "unit": "ml",
+              "approx": false
+            },
+            "display": "1950 ml",
+            "inStock": false,
+            "pantry": true
+          }
+        ]
+      }
+    ]
+  }
+}
